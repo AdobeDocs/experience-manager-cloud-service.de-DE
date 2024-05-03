@@ -1,22 +1,22 @@
 ---
-title: Wie ruft man den Formulardatenmodelldienst mithilfe von APIs aus dem adaptiven Forms auf?
+title: Wie ruft man den Formulardatenmodell (FDM)-Dienst aus dem adaptiven Forms mithilfe von APIs auf?
 description: Hier wird die invokeWebServices-API beschrieben, mit deren Hilfe Sie Webservices aufrufen können, die in einem Feld eines adaptiven Formulars in WSDL geschrieben wurden.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 95%
+source-wordcount: '488'
+ht-degree: 78%
 
 ---
 
 
-# API zum Aufrufen des Formulardatenmodell-Service aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API zum Aufrufen des Formulardatenmodell (FDM)-Dienstes aus dem adaptiven Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Überblick {#overview}
 
-[!DNL AEM Forms] ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Services, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodell-Service aufzurufen, können Sie entweder eine Regel im visuellen Editor anlegen oder ein JavaScript mit der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regeleditors](rule-editor.md) angeben.
+[!DNL AEM Forms] ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie in einem Formulardatenmodell (FDM) konfigurierte Dienste aus einem Feld für adaptive Formulare aufrufen. Um einen Datenmodell-Service aufzurufen, können Sie entweder eine Regel im visuellen Editor anlegen oder ein JavaScript mit der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regeleditors](rule-editor.md) angeben.
 
 In diesem Dokument wird das Schreiben von JavaScript in der `guidelib.dataIntegrationUtils.executeOperation`-API für den Aufruf eines Service beschrieben.
 
@@ -60,7 +60,7 @@ Die API-Struktur gibt folgende Informationen zum Service-Vorgang an.
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Gibt den Repository-Pfad zum Formulardatenmodell an, einschließlich Name</td>
+   <td>Gibt den Repository-Pfad zum Formulardatenmodell (FDM) einschließlich seines Namens an</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -87,7 +87,7 @@ Die API-Struktur gibt folgende Informationen zum Service-Vorgang an.
 
 ## Beispielskript zum Aufrufen eines Service {#sample-script-to-invoke-a-service}
 
-Folgendes Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation`-API, um den `getAccountById`-Service-Vorgang aufzurufen, der im Formulardatenmodell `employeeAccount` konfiguriert ist.
+Das folgende Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation` API zum Aufrufen der `getAccountById` Dienstvorgang, der im `employeeAccount` Formulardatenmodell (FDM).
 
 Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das Argument `empId` und gibt den Mitarbeiternamen, die Kontonummer und den Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` befüllt und der Wert für das Argument `accountNumber` im Formularelement `account`.
 
@@ -119,7 +119,7 @@ Die Rückruffunktion kann über die Rückruffunktionen `success` und `failure` v
 
 ### Beispielskript mit Rückruffunktionen für Erfolg und Fehlschlag {#callback-function-success-failure}
 
-Folgendes Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation`-API, um den `GETOrder`-Service-Vorgang aufzurufen, der im Formulardatenmodell `employeeOrder` konfiguriert ist.
+Das folgende Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation` API zum Aufrufen der `GETOrder` Dienstvorgang, der im `employeeOrder` Formulardatenmodell (FDM).
 
 Der Vorgang `GETOrder` nimmt den Wert im Formularfeld `Order ID` als Eingabe für das `orderId`-Argument und gibt den Wert für die Bestellmenge in der Rückruffunktion `success` zurück.  Wenn die Rückruffunktion `success` nicht die Bestellmenge zurückgibt, zeigt die Rückruffunktion `failure` die Meldung `Error occured` an.
 

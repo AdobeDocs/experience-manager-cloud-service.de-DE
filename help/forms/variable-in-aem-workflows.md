@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine Variable erstellen, einen Wert für die 
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '1928'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1930'
+ht-degree: 99%
 
 ---
 
@@ -48,8 +48,8 @@ Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstelle
 Erstellen einer Variablen:
 
 1. Navigieren Sie in einer AEM-Instanz zu „Tools“ ![Hammersymbol](assets/hammer-icon.svg) > „Workflow“ > „Modelle“.
-1. Wählen Sie **[!UICONTROL Erstellen]** und geben Sie den Titel und optional einen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und wählen Sie **[!UICONTROL Bearbeiten]**.
-1. Wählen Sie das Variablensymbol im Sidekick des Workflow-Modells und wählen Sie dann **[!UICONTROL Variable hinzufügen]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** und geben Sie den Titel und optional einen Namen für das Workflow-Modell an. Wählen Sie das Modell und dann **[!UICONTROL Bearbeiten]** aus.
+1. Wählen Sie das Variablensymbol im Sidekick des Workflow-Modells und dann **[!UICONTROL Variable hinzufügen]** aus.
 
    ![Variable hinzufügen](assets/variables_add_variable_new.png)
 
@@ -58,7 +58,7 @@ Erstellen einer Variablen:
 
    * Primitiver Datentyp: Geben Sie einen optionalen Standardwert für die Variable an.
    * JSON oder XML – Geben Sie einen optionalen JSON- oder XML-Schema-Pfad an. Das System überprüft den Schemapfad, während es die in diesem Schema verfügbaren Eigenschaften einer anderen Variablen zuordnet und speichert.
-   * Formulardatenmodell – Geben Sie einen Pfad für ein Formulardatenmodell an.
+   * Formulardatenmodell (FDM) - Geben Sie einen Pfad für ein Formulardatenmodell an.
    * ArrayList – Geben Sie einen Untertyp für die Auflistung an.
 
 1. Geben Sie optional eine Beschreibung für die Variable ein und wählen Sie ![done_icon](assets/Smock_Checkmark_18_N.svg), um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
@@ -95,10 +95,10 @@ Sie können bestimmte Elemente einer JSON- oder XML-Typvariablen auch mittels JS
 So fügen Sie eine Zuordnung zwischen Variablen hinzu:
 
 1. Wählen Sie auf der Seite für das Bearbeiten des Workflows das Symbol „Schritte“, das im Sidekick des Workflow-Modells verfügbar ist.
-1. Ziehen Sie den Schritt **[!UICONTROL Variable festlegen]** in den Workflow-Editor, wählen Sie den jeweiligen Schritt und wählen Sie dann ![configure_icon](assets/Smock_Wrench_18_N.svg) (Konfigurieren) aus.
+1. Ziehen Sie den Schritt **[!UICONTROL Variable festlegen]** in den Workflow-Editor und legen Sie ihn dort ab, wählen Sie den Schritt aus und wählen Sie dann ![configure_icon](assets/Smock_Wrench_18_N.svg) (Konfigurieren) aus.
 1. Wählen Sie im Dialogfeld „Variable festlegen“ die Option **[!UICONTROL Zuordnung]** > **[!UICONTROL Zuordnung hinzufügen]** aus.
 1. Wählen Sie im Abschnitt **Variable zuordnen** die Variable aus, in der Daten gespeichert werden sollen, wählen Sie den Zuordnungsmodus aus und geben Sie einen Wert an, der in der Variablen gespeichert werden soll. Die Zuordnungsmodi variieren je nach Variablentyp.
-1. Ordnen Sie weitere Variablen zu, um einen aussagekräftigen Ausdruck zu erstellen. Wählen Sie ![done_icon](assets/Smock_Checkmark_18_N.svg), um die Änderungen zu speichern.
+1. Ordnen Sie weitere Variablen zu, um einen aussagekräftigen Ausdruck zu erstellen. Wählen Sie ![done_icon](assets/Smock_Checkmark_18_N.svg) aus, um die Änderungen zu speichern.
 
 ### Beispiel 1: Abfragen einer XML-Variablen, um den Wert für eine Zeichenfolgenvariable festzulegen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -198,7 +198,7 @@ Verwenden Sie die folgenden APIs im ECMA-Skript, um Werte für vorhandene Variab
 | Primitive (Long, Double, Boolesch, Datum und Zeichenfolge) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
 | Dokument | Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData().getMetaDataMap().get(&quot;docVar&quot;, Packages.com.adobe.aemfd.docmanager.Document.class); |
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
-| Formulardatenmodell | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
+| Formulardatenmodell (FDM) | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
 
@@ -269,9 +269,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## Bearbeiten einer Variablen {#edit-a-variable}
 
-1. Wählen Sie auf der Seite „Workflow bearbeiten“ das Symbol „Variablen“ im Sidekick des Workflow-Modells. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
-1. Wählen Sie das Symbol ![edit](assets/edit.svg) (Bearbeiten) neben dem Namen der Variablen, die Sie bearbeiten möchten.
-1. Bearbeiten Sie die Variableninformationen und wählen Sie ![done_icon](assets/Smock_Checkmark_18_N.svg), um die Änderungen zu speichern. Die Felder **[!UICONTROL Name]** und **[!UICONTROL Typ]** für eine Variable können Sie nicht bearbeiten.
+1. Wählen Sie auf der Seite „Workflow bearbeiten“ das Symbol „Variablen“ im Sidekick des Workflow-Modells aus. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
+1. Wählen Sie das Symbol ![edit](assets/edit.svg) (Bearbeiten) neben dem Namen der Variablen aus, die Sie bearbeiten möchten.
+1. Bearbeiten Sie die Variableninformationen und wählen Sie das Symbol ![done_icon](assets/Smock_Checkmark_18_N.svg) (Fertig) aus, um die Änderungen zu speichern. Die Felder **[!UICONTROL Name]** und **[!UICONTROL Typ]** für eine Variable können Sie nicht bearbeiten.
 
 ## Löschen einer Variablen {#delete-a-variable}
 
@@ -280,8 +280,8 @@ Bevor Sie eine Variable löschen, müssen Sie alle Verweise der Variablen aus de
 So löschen Sie eine Variable:
 
 1. Wählen Sie auf der Seite „Workflow bearbeiten“ das Symbol „Variablen“ im Sidekick des Workflow-Modells. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
-1. Wählen Sie das Symbol „Löschen“ neben dem Namen der Variablen, die Sie löschen möchten.
-1. Wählen Sie ![done_icon](assets/Smock_Checkmark_18_N.svg), um zu bestätigen, dass die Variable gelöscht werden soll.
+1. Wählen Sie das Symbol „Löschen“ neben dem Namen der Variablen aus, die Sie löschen möchten.
+1. Wählen Sie das Symbol ![done_icon](assets/Smock_Checkmark_18_N.svg) (Fertig) aus, um zu bestätigen, dass die Variable gelöscht werden soll; somit wird sie gelöscht.
 
 ## Verweise {#references}
 

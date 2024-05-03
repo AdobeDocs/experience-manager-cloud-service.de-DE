@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie ein adaptives Formular erstellen oder zu
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: ht
-source-wordcount: '3177'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '3184'
+ht-degree: 96%
 
 ---
 
@@ -204,22 +204,22 @@ Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die ü
 1. Wählen Sie je nach Ihren Anforderungen eine Sendeaktion aus und konfigurieren Sie sie. Detaillierte Informationen zu Sendeaktionen finden Sie unter [Sendeaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md)
 
 
-## Konfigurieren eines Schemas oder Formulardatenmodells für ein Formular auf einer AEM Sites-Seite oder in einem Experience Fragment {#configure-schema-or-data-model-for-form}
+## Konfigurieren eines Schema- oder Formulardatenmodells (FDM) für ein Formular auf einer AEM Sites-Seite oder in einem Experience Fragment {#configure-schema-or-data-model-for-form}
 
-Sie können das Formulardatenmodell verwenden, um ein Formular mit einer Datenquelle zu verbinden und Daten basierend auf Benutzeraktionen zu senden und zu empfangen. Sie können auch ein Formular mit einem JSON-Schema verbinden, um die gesendeten Daten in einem vordefinierten Format zu empfangen. Verbinden Sie Ihr Formular je nach Anforderung mit einem JSON-Schema oder Formulardatenmodell:
+Sie können das Formulardatenmodell (FDM) verwenden, um ein Formular mit einer Datenquelle zu verbinden, damit Daten basierend auf Benutzeraktionen gesendet und empfangen werden können. Sie können auch ein Formular mit einem JSON-Schema verbinden, um die gesendeten Daten in einem vordefinierten Format zu empfangen. Verbinden Sie basierend auf der Anforderung Ihr Formular mit einem JSON-Schema oder einem Formulardatenmodell (FDM):
 
 * [Erstellen Sie ein JSON-Schema und laden Sie es in Ihre Umgebung hoch](/help/forms/adaptive-form-json-schema-form-model.md) oder
-* [Erstellen Sie ein Formulardatenmodell](/help/forms/create-form-data-models.md)
+* [Formulardatenmodell (FDM) erstellen](/help/forms/create-form-data-models.md)
 
-So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formular:
+So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell (FDM) für Ihr Formular:
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Container für adaptive Formulare]**, der Ihr adaptives Formular enthält. Eine AEM Sites-Seite kann mehrere adaptive Formulare hosten. Wählen Sie daher sorgfältig den richtigen Container für adaptive Formulare aus.
 1. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg). Das Dialogfeld der Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um Datenmodelle für das adaptive Formular zu konfigurieren.](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. Wählen Sie ein JSON-Schema oder ein Formulardatenmodell aus und konfigurieren Sie es entsprechend Ihren Anforderungen. Detaillierte Informationen zu Sendeaktionen finden Sie unter [Sendeaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md).
+1. Wählen und konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell (FDM) entsprechend Ihren Anforderungen. Detaillierte Informationen zu Sendeaktionen finden Sie unter [Sendeaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md).
 
-   * Wenn Sie die Option **[!UICONTROL Formularmodell]** wählen, können Sie mit der Option **[!UICONTROL Formulardatenmodell auswählen]** ein vorkonfiguriertes Formulardatenmodell auswählen.
+   * Wenn Sie die **[!UICONTROL Formularmodell]** verwenden, verwenden Sie die **[!UICONTROL Formulardatenmodell auswählen]** -Option, um ein vorkonfiguriertes Formulardatenmodell (FDM) auszuwählen.
    * Wenn Sie die Option **[!UICONTROL Schema]** wählen, verwenden Sie die Option **[!UICONTROL Schema]**, um ein JSON-Schema für Ihr Formular auszuwählen.
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.

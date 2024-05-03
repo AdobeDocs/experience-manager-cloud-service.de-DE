@@ -1,12 +1,12 @@
 ---
 title: Übersetzen eines auf Kernkomponenten basierenden adaptiven Formulars?
-description: Erfahren Sie, wie Sie ein Formulardatenmodell in AEM Forms erstellen, das Modell mit Beispieldaten und -diensten testen und verschiedene Optionen für ein Modell konfigurieren.
+description: Erfahren Sie, wie Sie ein Formulardatenmodell (FDM) in AEM Forms erstellen, das Modell mit Beispieldaten und -diensten testen und verschiedene Optionen für ein Modell konfigurieren.
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '884'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 97%
 
 ---
 

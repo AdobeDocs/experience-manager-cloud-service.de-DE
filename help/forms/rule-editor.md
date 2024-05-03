@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
-workflow-type: ht
-source-wordcount: '6457'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '6468'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der Regeleditor ermöglicht es Geschäftsbenutzern und Entwicklern, Regeln für adaptive Formularobjekte zu erstellen. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies ermöglicht noch größere Effizienz für ein schnelles und korrektes Ausfüllen der Formulare.
 
@@ -140,15 +140,15 @@ Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ aus
 
 **[!UICONTROL Deaktivieren]**: Deaktiviert das angegebene Objekt.
 
-**[!UICONTROL Service aufrufen]** Ruft einen Service auf, der in einem Formulardatenmodell konfiguriert ist. Wenn Sie den Vorgang „Service aufrufen“ wählen, wird ein Feld angezeigt. Beim Antippen des Felds zeigt es sämtliche Services an, die in allen Formulardatenmodellen in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können. Siehe dazu die Beispielregel für den Aufruf von Formulardatenmodell-Services.
+**[!UICONTROL Aufrufdienst]** Ruft einen Dienst auf, der in einem Formulardatenmodell (FDM) konfiguriert ist. Wenn Sie den Vorgang „Service aufrufen“ wählen, wird ein Feld angezeigt. Beim Tippen auf das Feld werden alle Dienste angezeigt, die im gesamten Formulardatenmodell (FDM) auf Ihrer [!DNL Experience Manager] -Instanz. Bei der Auswahl eines Formulardatenmodell (FDM)-Dienstes werden weitere Felder angezeigt, in denen Sie Formularobjekte mit Eingabe- und Ausgabeparametern für den angegebenen Dienst zuordnen können. Siehe dazu die Beispielregel für den Aufruf von Formulardatenmodell-Services.
 
 Zusätzlich zum Formulardatenmodell-Service können Sie eine direkte WSDL-URL angeben, um einen Webservice aufzurufen. Ein Formulardatenmodell-Service hat jedoch viele Vorteile und stellt den empfohlenen Ansatz zum Aufrufen eines Service dar.
 
-Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
+Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
-**[!UICONTROL Wert festlegen]**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Als Objektwert können Sie eine Zeichenfolge, den Wert eines anderen Objekts, den mittels eines mathematischem Ausdrucks oder einer Funktion berechneten Wert, den Wert einer Eigenschaft eines Objekts oder den von einem konfigurierten Formulardatenmodell-Service ausgegebenen Wert festlegen. Wenn Sie die Option „Webservice“ wählen, werden sämtliche Services angezeigt, die in allen Formulardatenmodellen in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können.
+**[!UICONTROL Wert festlegen]**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Als Objektwert können Sie eine Zeichenfolge, den Wert eines anderen Objekts, den mittels eines mathematischem Ausdrucks oder einer Funktion berechneten Wert, den Wert einer Eigenschaft eines Objekts oder den von einem konfigurierten Formulardatenmodell-Service ausgegebenen Wert festlegen. Wenn Sie die Webdienstoption auswählen, werden alle im Formulardatenmodell (FDM) konfigurierten Dienste auf Ihrer [!DNL Experience Manager] -Instanz. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können.
 
-Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
+Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
 Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft für eines der folgenden Elemente festlegen:
 * visible (Boolescher Wert)
@@ -308,7 +308,7 @@ Eine typische Regel vom Typ „Validieren“ ist wie folgt strukturiert:
 
 ### [!UICONTROL Optionen festlegen] {#setoptionsof}
 
-Mit dem Regeltyp **[!UICONTROL Optionen festlegen]** können Sie Regeln definieren, um Kontrollkästchen dynamisch zum adaptiven Formular hinzuzufügen. Sie können ein Formulardatenmodell oder eine benutzerdefinierte Funktion verwenden, um die Regel zu definieren.
+Mit dem Regeltyp **[!UICONTROL Optionen festlegen]** können Sie Regeln definieren, um Kontrollkästchen dynamisch zum adaptiven Formular hinzuzufügen. Sie können ein Formulardatenmodell (FDM) oder eine benutzerdefinierte Funktion verwenden, um die Regel zu definieren.
 
 Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, wählen Sie **[!UICONTROL Funktionsausgabe]** in der Dropdown-Liste aus und ziehen Sie eine benutzerdefinierte Funktion mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Funktionen]**. Die in der benutzerdefinierten Funktion definierte Anzahl von Kontrollkästchen wird dem adaptiven Formular hinzugefügt.
 
@@ -316,7 +316,7 @@ Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, w�
 
 Informationen über das Erstellen einer benutzerdefinierten Funktion finden Sie unter [Benutzerdefinierte Funktionen im Regeleditor](#custom-functions).
 
-So definieren Sie eine auf einem Formulardatenmodell basierende Regel:
+So definieren Sie eine auf einem Formulardatenmodell (FDM) basierende Regel:
 
 1. Wählen Sie **[!UICONTROL Service-Ausgabe]** in der Dropdown-Liste aus.
 1. Wählen Sie das Datenmodellobjekt aus.
@@ -338,7 +338,7 @@ So starten Sie die Benutzeroberfläche des Regeleditors:
 
    Alle vorhandenen Regeln für die ausgewählten Formularobjekte werden in dieser Ansicht aufgelistet. Weitere Informationen zum Verwalten vorhandener Regeln finden Sie unter [Verwalten von Regeln](rule-editor.md#p-manage-rules-p).
 
-1. Wählen Sie **[!UICONTROL Erstellen]**, um eine neue Regel zu schreiben. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um eine neue Regel zu erstellen. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
 
    ![Benutzeroberfläche des Regeleditors](assets/rule-editor-ui1.png)
 
@@ -416,15 +416,15 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Schreiben Sie zuerst die Regel, mit der die Sichtbarkeit des Felds „Gehalt des Partners“ entsprechend der vom Benutzer über das Optionsfeld „Familienstand“ gewählten Option gesteuert wird.
 
-   Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die Komponente **[!UICONTROL Familienstand]** und dann ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie dann **[!UICONTROL Erstellen]**, um den Regeleditor zu starten.
+   Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die Komponente **[!UICONTROL Familienstand]** und ![edit-rules](assets/edit-rules-icon.svg) aus. Wählen Sie als Nächstes **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    Wenn Sie den Regeleditor starten, ist standardmäßig die Wenn-Regel ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall „Familienstand“), von dem aus Sie den Regeleditor gestartet haben, in der Wenn-Anweisung angegeben.
 
-   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie „Abbrechen“, um den Regeleditor zu beenden, und starten Sie ihn erneut über das gewünschte Formularobjekt.
+   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie „Abbrechen“ aus, um den Regeleditor zu beenden, und starten Sie ihn erneut über das gewünschte Formularobjekt.
 
-1. Wählen Sie die Dropdown-Liste **[!UICONTROL Status auswählen]** und wählen Sie dann **[!UICONTROL Ist gleich]**. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
+1. Wählen Sie die Dropdown-Liste **[!UICONTROL Status auswählen]** und **[!UICONTROL Ist gleich]** aus. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -442,7 +442,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Alternativ können Sie auch das Feld **[!UICONTROL Objekt ablegen oder hier auswählen]** und das Feld **[!UICONTROL Gehalt des Ehepartners]** aus dem Popup-Menü auswählen, in dem alle Formularobjekte im Formular aufgelistet sind.
+1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -450,7 +450,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-1. Wählen Sie **[!UICONTROL Fertig]**, um die Regel zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
 1. Wiederholen Sie die Schritte 1 bis 5, um eine weitere Regel zu definieren, mit der das Feld für das Gehalt der Partnerin bzw. des Partners ausgeblendet wird, wenn unter Familienstand „Ledig“ angegeben ist. Die Regel wird im Regeleditor wie folgt angezeigt.
 
@@ -464,13 +464,13 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Dies erreichen Sie, indem Sie für das Feld „Kreditanspruch“ Regeln vom Typ **[!UICONTROL Wert festlegen]** erstellen.
 
-   Wählen Sie im Autorenmodus das Feld **[!UICONTROL Kreditanspruch]** und wählen Sie dann ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie als Nächstes **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
+   Wählen Sie im Autorenmodus das Feld **[!UICONTROL Kreditanspruch]** und wählen Sie dann ![edit-rules](assets/edit-rules-icon.svg). Wählen Sie anschließend **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
 
 1. Wählen Sie in der Dropdown-Liste „Regeln“ die Regel **[!UICONTROL Wert festlegen]** aus.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]**. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
+1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -484,7 +484,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Wählen Sie als Nächstes den markierten Bereich um das Ausdrucksfeld aus und wählen Sie dann **[!UICONTROL Ausdruck erweitern]**.
+1. Wählen Sie als Nächstes etwas im hervorgehobenen Bereich um das Ausdrucksfeld und wählen Sie dann **[!UICONTROL Ausdruck erweitern]** aus.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -498,7 +498,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    Erstellen Sie als Nächstes eine Bedingung, bei der bei Rückgabe von „True“ der Ausdruck ausgeführt wird.
 
-1. Wählen Sie **[!UICONTROL Bedingung hinzufügen]**, um eine Wenn-Anweisung hinzuzufügen.
+1. Wählen Sie **[!UICONTROL Bedingung hinzufügen]** aus, um eine Wenn-Anweisung hinzuzufügen.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -644,13 +644,13 @@ So erstellen Sie eine Client-Bibliothek und fügen sie dem CRX-Repository hinzu:
 Nachdem Sie Ihre Client-Bibliothek im CRX-Repository hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Sie ermöglicht die Verwendung der benutzerdefinierten Funktion als Regel im Formular. So fügen Sie die Client-Bibliothek in Ihrem adaptiven Formular hinzu:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie dann **[!UICONTROL Öffnen]**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie dann ![field-leve](assets/select_parent_icon.svg) > **[!UICONTROL Container eines adaptiven Formulars]** und dann ![cmppr](assets/configure-icon.svg).
+Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular und dann **[!UICONTROL Öffnen]** aus.
+1. Wählen Sie im Bearbeitungsmodus eine Komponente und dann ![field-level](assets/select_parent_icon.svg) > **[!UICONTROL Container für ein adaptives Formular]** und anschließend ![cmppr](assets/configure-icon.svg) aus.
 1. Fügen Sie in der Seitenleiste unter „Name der Client-Bibliothek“ Ihre Client-Bibliothek hinzu. (In diesem Beispiel wäre das `customfunction`.)
 
    ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](assets/clientlib.png)
 
-1. Wählen Sie das numerische Eingabefeld aus und wählen Sie dann ![edit-rules](assets/edit-rules-icon.svg), um den Regeleditor zu öffnen.
+1. Wählen Sie das numerische Eingabefeld und dann ![edit-rules](assets/edit-rules-icon.svg) aus, um den Regeleditor zu öffnen.
 1. Wählen Sie **[!UICONTROL Regel erstellen]** aus. Erstellen Sie mithilfe der unten gezeigten Optionen eine Regel zum Speichern des Quadratwerts der Eingabe im Ausgabefeld des Formulars.
 
    [![Verwendung benutzerdefinierter Funktionen zum Erstellen einer Regel](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
@@ -659,7 +659,7 @@ Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus un
 
    >[!NOTE]
    >
-   > Informationen zum Aufrufen eines Formulardatenmodells aus dem Regeleditor mithilfe benutzerdefinierter Funktionen [finden Sie hier ](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > So rufen Sie ein Formulardatenmodell (FDM) über den Regeleditor mit benutzerdefinierten Funktionen auf: [hier sehen](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Unterstützte Typen von Funktionsdeklarationen {#function-declaration-supported-types}
 
@@ -726,13 +726,13 @@ var c = {
 
 ## Verwalten von Regeln {#manage-rules}
 
-Wenn Sie ein Formularobjekt auswählen und dann ![edit-rules1](assets/edit-rules-icon.svg) wählen, werden alle vorhandenen Regeln für dieses Objekt aufgelistet. Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
+Wenn Sie das Objekt und dann ![edit-rules1](assets/edit-rules-icon.svg) auswählen, werden alle vorhandenen Regeln für ein Formularobjekt aufgelistet. Sie können den Titel und eine Vorschau der Regelzusammenfassung anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
 ![List-rules](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln ausführen:
 
-* **Anzeigen/Reduzieren**: Die Inhaltsspalte in der Regelliste zeigt den Regelinhalt an. Wenn in der Standardansicht nicht der gesamte Regelinhalt sichtbar ist, wählen Sie ![expand-rule-content](assets/Smock_ChevronDown.svg), um die Ansicht zu erweitern.
+* **Anzeigen/Reduzieren**: Die Inhaltsspalte in der Regelliste zeigt den Regelinhalt an. Wenn in der Standardansicht nicht der gesamte Regelinhalt sichtbar ist, wählen Sie ![expand-rule-content](assets/Smock_ChevronDown.svg) aus, um die Ansicht zu erweitern.
 
 * **Anordnung ändern**: Jede neue Regel, die Sie erstellen, wird am unteren Rand der Regelliste gestapelt. Die Regeln werden von oben nach unten ausgeführt. Die Regel oben wird zuerst ausgeführt, gefolgt von anderen Regeln desselben Typs. Wenn beispielsweise eine Wenn-, Anzeigen-, Aktivieren- und eine weitere Wenn-Regel an den ersten vier Positionen der Liste stehen, werden zuerst die zuoberst stehende Wenn-Regel und dann die Wenn-Regel an der vierten Position ausgeführt. Danach werden die Anzeigen- und die Aktivieren-Regel ausgeführt.
 Sie können die Position einer Regel in der Reihenfolge ändern, indem Sie auf ![sort-rules](assets/sort-rules.svg) für die Regel tippen oder die Regel an die gewünschte Stelle in der Liste ziehen und dort ablegen.
@@ -741,7 +741,7 @@ Sie können die Position einer Regel in der Reihenfolge ändern, indem Sie auf !
 
 * **Löschen**: Um eine Regel zu löschen, wählen Sie die Regel aus und dann **[!UICONTROL Löschen]**.
 
-* **Aktivieren/Deaktivieren**: Wenn Sie die Verwendung einer Regel vorübergehend aussetzen müssen, können Sie eine oder mehrere Regeln auswählen und in der Aktionsleiste **[!UICONTROL Deaktivieren]** wählen, um sie zu deaktivieren. Wenn eine Regel deaktiviert ist, wird sie zur Laufzeit nicht ausgeführt. Um eine deaktivierte Regel wieder zu aktivieren, können Sie sie auswählen und in der Aktionssymbolleiste „Aktivieren“ wählen. Die Statusspalte der Regel zeigt an, ob die Regel aktiviert oder deaktiviert ist.
+* **Aktivieren/Deaktivieren**: Wenn Sie die Verwendung einer Regel vorübergehend aussetzen müssen, können Sie eine oder mehrere Regeln auswählen und in der Aktionsleiste **[!UICONTROL Deaktivieren]** wählen, um sie zu deaktivieren. Wenn eine Regel deaktiviert ist, wird sie zur Laufzeit nicht ausgeführt. Um eine deaktivierte Regel zu aktivieren, können Sie sie auswählen und dann in der Aktionssymbolleiste „Aktivieren“ auswählen. Die Statusspalte der Regel zeigt an, ob die Regel aktiviert oder deaktiviert ist.
 
 ![Regel deaktivieren](assets/disablerule.png)
 
@@ -761,13 +761,13 @@ Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Wählen Sie ein anderes Formularobjekt, in das Sie die Regel einfügen möchten, und wählen Sie dann **[!UICONTROL Einfügen]**. Darüber hinaus können Sie die Regel bearbeiten, um Änderungen daran vorzunehmen.
+1. Wählen Sie ein anderes Formularobjekt aus, in das Sie die Regel einfügen möchten, und wählen Sie dann **[!UICONTROL Einfügen]** aus. Darüber hinaus können Sie die Regel bearbeiten, um Änderungen daran vorzunehmen.
 
    >[!NOTE]
    >
    >Sie können eine Regel nur dann in ein anderes Formularobjekt einfügen, wenn dieses Formularobjekt das Ereignis der kopierten Regel unterstützt. So unterstützt beispielsweise eine Schaltfläche das Klickereignis. Sie können eine Regel, die ein Klickereignis enthält, in eine Schaltfläche, nicht jedoch in ein Kontrollkästchen einfügen.
 
-1. Wählen Sie **[!UICONTROL Fertig]**, um die Regel zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
 ## Verschachtelte Ausdrücke {#nestedexpressions}
 
@@ -777,7 +777,7 @@ Das folgende Beispiel zeigt eine verschachtelte Regel, die dem Benutzer eine Mel
 
 ![Komplexer Ausdruck](assets/complexexpression.png)
 
-Sie können Bedingungen innerhalb einer Regel auch mittels Drag-and-Drop ziehen, um sie zu bearbeiten. Wählen Sie den Griff (![handle](assets/drag-handle.svg)) vor einer Bedingung aus und bewegen Sie den Mauszeiger darüber. Sobald sich der Zeiger wie unten gezeigt in das Handsymbol verwandelt, ziehen Sie die Bedingung per Drag &amp; Drop an eine beliebige Stelle innerhalb der Regel. Die Regelstruktur ändert sich.
+Sie können Bedingungen innerhalb einer Regel auch mittels Drag-and-Drop ziehen, um sie zu bearbeiten. Wählen Sie den Ziehgriff vor einer Bedingung aus und bewegen Sie den Mauszeiger über den Griff (![handle](assets/drag-handle.svg)). Sobald sich der Zeiger wie unten gezeigt in das Handsymbol verwandelt, ziehen Sie die Bedingung per Drag &amp; Drop an eine beliebige Stelle innerhalb der Regel. Die Regelstruktur ändert sich.
 
 ![Drag-and-Drop](assets/drag-and-drop.png)
 
@@ -817,7 +817,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Aufrufen des Formulardatenmodell-Service {#invoke}
 
-Stellen Sie sich einen Webservice `GetInterestRates` vor, der den Darlehensbetrag, die Beschäftigungsdauer und die Kreditwürdigkeit des Antragstellers als Eingabe entgegennimmt und einen Darlehensplan einschließlich EMI-Betrag und Zinssatz zurückgibt. Sie erstellen ein Formulardatenmodell, indem Sie den Webservice als Datenquelle verwenden. Sie fügen dem Formularmodell Datenmodellobjekte und einen `get`-Service hinzu. Der Service wird auf der Registerkarte „Services“ des Formulardatenmodells angezeigt. Erstellen Sie dann ein adaptives Formular, das Felder aus Datenmodellobjekten enthält, um Benutzereingaben für Darlehensbetrag, Beschäftigungsdauer und Kreditwürdigkeit zu erfassen. Fügen Sie eine Schaltfläche hinzu, die den Webservice auslöst, um Plandetails abzurufen. Die Ausgabe wird in den entsprechenden Feldern befüllt.
+Stellen Sie sich einen Webservice `GetInterestRates` vor, der den Darlehensbetrag, die Beschäftigungsdauer und die Kreditwürdigkeit des Antragstellers als Eingabe entgegennimmt und einen Darlehensplan einschließlich EMI-Betrag und Zinssatz zurückgibt. Sie erstellen ein Formulardatenmodell (FDM) mit dem Webdienst als Datenquelle. Sie fügen dem Formularmodell Datenmodellobjekte und einen `get`-Service hinzu. Der Dienst wird auf der Registerkarte &quot;Dienste&quot;des Formulardatenmodells (FDM) angezeigt. Erstellen Sie dann ein adaptives Formular, das Felder aus Datenmodellobjekten enthält, um Benutzereingaben für Darlehensbetrag, Beschäftigungsdauer und Kreditwürdigkeit zu erfassen. Fügen Sie eine Schaltfläche hinzu, die den Webservice auslöst, um Plandetails abzurufen. Die Ausgabe wird in den entsprechenden Feldern befüllt.
 
 Die folgende Regel zeigt, wie Sie die Aktion „Service aufrufen“ konfigurieren, um das Beispielszenario durchzuführen.
 

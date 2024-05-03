@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
-workflow-type: ht
-source-wordcount: '3242'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '3243'
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Sie können [!DNL Adobe Sign] für ein vorhandenes adaptives Formular aktivieren
 
 Erstellen eines signaturfähigen adaptiven Formulars:
 
-1. Gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
+1. Gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Adaptives Formular]** aus. Eine Liste von Vorlagen wird angezeigt. Wählen Sie eine Vorlage aus und dann **[!UICONTROL Weiter]**.
 1. Auf der Registerkarte **[!UICONTROL Standard]**:
 
@@ -184,7 +184,7 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
    >[!NOTE]
    >
-   > Wenn ein adaptives Formular mithilfe eines Formulardatenmodells erstellt wird, wird das Feld „Vereinbarungs-ID“ im Dialogfeld angezeigt.
+   > Wenn ein adaptives Formular mithilfe eines Formulardatenmodells (FDM) erstellt wird, wird das Feld &quot;Vereinbarung-ID&quot;im Dialogfeld angezeigt.
 
 1. [Fügen Sie dem adaptiven Formular Empfängerinnen und Empfänger hinzu](working-with-adobe-sign.md#addsignerstoanadaptiveform) und wählen Sie das Symbol „Fertig“ ![Speichern](assets/save_icon.svg), um die Änderungen zu speichern.
 

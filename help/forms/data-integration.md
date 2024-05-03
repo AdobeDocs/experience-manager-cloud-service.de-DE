@@ -4,10 +4,10 @@ description: Rufen Sie Daten von einem adaptiven Formular oder einem AEM-Workflo
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '537'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 68%
 
 ---
 
@@ -32,32 +32,32 @@ Ein verteiltes, modulares System hat seine eigenen Vorteile, aber die Herausford
 
 ![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms]-Datenintegration ermöglicht die Konfiguration und Verbindung verschiedener Datenquellen mit [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Datendarstellung der Geschäftsbereiche und Services für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell ermöglicht Ihnen:
+[!DNL AEM Forms]-Datenintegration ermöglicht die Konfiguration und Verbindung verschiedener Datenquellen mit [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Datendarstellung der Geschäftsbereiche und Services für sämtliche verbundenen Datenquellen erstellen. Die einheitliche Darstellung wird als Formulardatenmodell (FDM) bezeichnet, eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell (FDM) werden als Datenmodellobjekte bezeichnet. Mit einem Formulardatenmodell (FDM) können Sie:
 
 * Zugreifen auf Datenmodellobjekte, Eigenschaften und Services aus verbundenen Datenquellen.
 * Erstellen benutzerdefinierter Datenmodellobjekten und -eigenschaften.
 * Erstellen von Verknüpfungen zwischen Datenmodellobjekten innerhalb und zwischen Datenquellen.
 * Aufrufen von Services für Datenmodellobjekte zum Abfragen von Daten aus und Schreiben von Daten in Datenquellen.
 
-Wenn Sie ein Formulardatenmodell erstellt haben, können Sie es für Folgendes verwenden:
+Nachdem Sie ein Formulardatenmodell (FDM) erstellt haben, können Sie es wie folgt verwenden:
 
-* Erstellen adaptiver Formulare auf Grundlage eines Formulardatenmodells
+* Adaptive Forms basierend auf einem Formulardatenmodell (FDM) erstellen
 * Vorbefüllen adaptiver Formulare aus konfigurierten Datenquellen
 * Aufrufen von Datenquellen-Serivices/-vorgängen mithilfe von Regeln für adaptive Formulare
 * Schreiben von Daten übermittelten adaptiven Formulardaten in Datenquellen
 
 ## Erste Schritte mit der Datenintegration {#get-started-with-data-integration}
 
-Der erste Schritt zur Implementierung der Datenintegration zum Senden des adaptiven Formulars an eine Datenbank besteht darin, Datenquellen zu identifizieren und zu konfigurieren, in denen Informationen gespeichert werden, die Sie in adaptiven Formularen verwenden möchten. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Services aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare auf Grundlage eines Formulardatenmodells erstellen, bei dem adaptive Formularfelder an die entsprechenden Datenquelleneigenschaften gebunden sind.
+Der erste Schritt zur Implementierung der Datenintegration zum Senden des adaptiven Formulars an eine Datenbank besteht darin, Datenquellen zu identifizieren und zu konfigurieren, in denen Informationen gespeichert werden, die Sie in adaptiven Formularen verwenden möchten. Als Nächstes erstellen Sie ein Formulardatenmodell (FDM), das Datenmodellobjekte, Eigenschaften und Dienste aus einer oder mehreren Datenquellen verwendet. Sie können adaptive Forms auf Grundlage eines Formulardatenmodells (FDM) erstellen, bei dem Felder für adaptive Formulare an die entsprechenden Datenquelleneigenschaften gebunden sind.
 
-Mit [!DNL AEM Forms] können Sie auch ein von Datenquellen unabhängiges Formulardatenmodell erstellen und später Datenmodellobjekte und Eigenschaften im Formulardatenmodell mit der Datenquelle verknüpfen oder sie daran binden. Dadurch werden alle Abhängigkeiten von Datenquellen entfernt, während Sie an einem Formulardatenmodell arbeiten.
+[!DNL AEM Forms] Sie können auch ein Formulardatenmodell (FDM) erstellen, das unabhängig von Datenquellen ist, und Datenmodellobjekte und -eigenschaften im Formulardatenmodell (FDM) später mit der Datenquelle verknüpfen oder verknüpfen. Dadurch werden alle Abhängigkeiten von Datenquellen entfernt, während Sie an einem Formulardatenmodell (FDM) arbeiten.
 
 Lesen Sie folgende Informationen für die ersten Schritte mit der Datenintegration, um sie zu verstehen und zu implementieren:
 
 * [Konfigurieren von Datenquellen](configure-data-sources.md)
-* [Erstellen des Formulardatenmodells](create-form-data-models.md)
-* [Arbeiten mit einem Formulardatenmodell](work-with-form-data-model.md)
-* [Verwenden eines Formulardatenmodells](using-form-data-model.md)
+* [Formulardatenmodell (FDM) erstellen](create-form-data-models.md)
+* [Arbeiten mit dem Formulardatenmodell (FDM)](work-with-form-data-model.md)
+* [Formulardatenmodell (FDM) verwenden](using-form-data-model.md)
 
 >[!NOTE]
 >

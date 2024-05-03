@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '5444'
-ht-degree: 88%
+source-wordcount: '5453'
+ht-degree: 86%
 
 ---
 
@@ -30,7 +30,7 @@ Der Regeleditor bietet eine intuitive und vereinfachte Benutzeroberfläche zum S
 * Einen Wert für ein Objekt festlegen
 * Den Wert eines Objekts validieren
 * Funktionen zur Berechnung des Werts eines Objekts ausführen
-* Aufrufen eines Formulardatenmodell-Service und Durchführen eines Vorgangs
+* Rufen Sie einen Formulardatenmodell (FDM)-Dienst auf und führen Sie einen Vorgang aus
 * Festlegen einer Eigenschaft eines Objekts
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -147,15 +147,15 @@ Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ aus
 
 **[!UICONTROL Deaktivieren]**: Deaktiviert das angegebene Objekt.
 
-**[!UICONTROL Service aufrufen]** Ruft einen Service auf, der in einem Formulardatenmodell konfiguriert ist. Wenn Sie den Vorgang „Service aufrufen“ wählen, wird ein Feld angezeigt. Beim Antippen des Felds zeigt es sämtliche Services an, die in allen Formulardatenmodellen in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können. Siehe dazu die Beispielregel für den Aufruf von Formulardatenmodell-Services.
+**[!UICONTROL Aufrufdienst]** Ruft einen Dienst auf, der in einem Formulardatenmodell (FDM) konfiguriert ist. Wenn Sie den Vorgang „Service aufrufen“ wählen, wird ein Feld angezeigt. Beim Tippen auf das Feld werden alle Dienste angezeigt, die im gesamten Formulardatenmodell (FDM) auf Ihrer [!DNL Experience Manager] -Instanz. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können. Siehe Beispielregel zum Aufrufen von Formulardatenmodell (FDM)-Diensten.
 
 Zusätzlich zum Formulardatenmodell-Service können Sie eine direkte WSDL-URL angeben, um einen Webservice aufzurufen. Ein Formulardatenmodell-Service hat jedoch viele Vorteile und stellt den empfohlenen Ansatz zum Aufrufen eines Service dar.
 
-Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
+Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
-**[!UICONTROL Wert festlegen]**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Als Objektwert können Sie eine Zeichenfolge, den Wert eines anderen Objekts, den mittels eines mathematischem Ausdrucks oder einer Funktion berechneten Wert, den Wert einer Eigenschaft eines Objekts oder den von einem konfigurierten Formulardatenmodell-Service ausgegebenen Wert festlegen. Wenn Sie die Option „Webservice“ wählen, werden sämtliche Services angezeigt, die in allen Formulardatenmodellen in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können.
+**[!UICONTROL Wert festlegen]**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Als Objektwert können Sie eine Zeichenfolge, den Wert eines anderen Objekts, den mittels eines mathematischem Ausdrucks oder einer Funktion berechneten Wert, den Wert einer Eigenschaft eines Objekts oder den von einem konfigurierten Formulardatenmodell-Service ausgegebenen Wert festlegen. Wenn Sie die Webdienstoption auswählen, werden alle im Formulardatenmodell (FDM) konfigurierten Dienste auf Ihrer [!DNL Experience Manager] -Instanz. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können.
 
-Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
+Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
 Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft für eines der folgenden Elemente festlegen:
 * visible (Boolescher Wert)
@@ -571,7 +571,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Benutzerdefinierte Funktionen im Regeleditor {#custom-functions}
 
-Neben den vordefinierten Funktionen wie *Summe der* die unter **Funktionsausgabe** können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die JavaScript ECMAScript 2019-Syntax für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
+Neben den vordefinierten Funktionen wie *Summe der* die unter **Funktionsausgabe** können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die JavaScript ECMAScript 2019-Syntax für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in adaptiven Formularen](/help/forms/create-and-use-custom-functions.md).
 
 <!--
 
@@ -838,7 +838,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Aufrufen des Formulardatenmodell-Service {#invoke}
 
-Stellen Sie sich einen Webservice `GetInterestRates` vor, der den Darlehensbetrag, die Beschäftigungsdauer und die Kreditwürdigkeit des Antragstellers als Eingabe entgegennimmt und einen Darlehensplan einschließlich EMI-Betrag und Zinssatz zurückgibt. Sie erstellen ein Formulardatenmodell, indem Sie den Webservice als Datenquelle verwenden. Sie fügen dem Formularmodell Datenmodellobjekte und einen `get`-Service hinzu. Der Service wird auf der Registerkarte „Services“ des Formulardatenmodells angezeigt. Erstellen Sie dann ein adaptives Formular, das Felder aus Datenmodellobjekten enthält, um Benutzereingaben für Darlehensbetrag, Beschäftigungsdauer und Kreditwürdigkeit zu erfassen. Fügen Sie eine Schaltfläche hinzu, die den Webservice auslöst, um Plandetails abzurufen. Die Ausgabe wird in den entsprechenden Feldern befüllt.
+Stellen Sie sich einen Webservice `GetInterestRates` vor, der den Darlehensbetrag, die Beschäftigungsdauer und die Kreditwürdigkeit des Antragstellers als Eingabe entgegennimmt und einen Darlehensplan einschließlich EMI-Betrag und Zinssatz zurückgibt. Sie erstellen ein Formulardatenmodell (FDM) mit dem Webdienst als Datenquelle. Sie fügen dem Formularmodell Datenmodellobjekte und einen `get`-Service hinzu. Der Dienst wird auf der Registerkarte &quot;Dienste&quot;des Formulardatenmodells (FDM) angezeigt. Erstellen Sie dann ein adaptives Formular, das Felder aus Datenmodellobjekten enthält, um Benutzereingaben für Darlehensbetrag, Beschäftigungsdauer und Kreditwürdigkeit zu erfassen. Fügen Sie eine Schaltfläche hinzu, die den Webservice auslöst, um Plandetails abzurufen. Die Ausgabe wird in den entsprechenden Feldern befüllt.
 
 Die folgende Regel zeigt, wie Sie die Aktion „Service aufrufen“ konfigurieren, um das Beispielszenario durchzuführen.
 

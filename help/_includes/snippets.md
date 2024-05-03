@@ -1,6 +1,6 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: ht
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [Verbinden eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Verbinden eines adaptiven Formulars mit Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Verbinden eines adaptiven Formulars mit Microsoft Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Verbinden eines adaptiven Formulars mit Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Verbinden eines adaptiven Formulars mit Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Verwenden von Adobe Sign in einem adaptiven AEM-Formular](/help/forms/working-with-adobe-sign.md)
 * [Hinzufügen eines neuen Gebietsschemas für ein adaptives Formular](/help/forms/supporting-new-language-localization-core-components.md)
 * [Senden von Daten adaptiver Formulare an eine Datenbank](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=de)
@@ -51,7 +51,7 @@ ht-degree: 100%
 * [AEM-Workflow aufrufen](/help/forms/configure-submit-action-workflow.md)
 * [An Power Automate senden](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An Workfront Fusion senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/aem-forms-salesforce-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Siehe auch {#see-more-forms-eds}

@@ -3,10 +3,10 @@ title: Wie können Metadaten für AEM Forms verwaltet werden?
 description: Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: ht
-source-wordcount: '1733'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '1735'
+ht-degree: 99%
 
 ---
 
@@ -71,7 +71,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
      <li>PDF-Formular, PDF-Formular (Acroform) oder PDF-Formular (Signiert)</li> 
      <li>Dokument, Dokument (Signiert)</li> 
      <li>Adaptives Formular</li> 
-     <li>Formulardatenmodell</li>
+     <li>Formulardatenmodell (FDM)</li>
      <li>Ressource</li> 
     </ul> </td> 
   </tr> 
@@ -162,7 +162,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
    <td>Adaptives Formular</td> 
    <td><p>Gibt an, welches Formularmodell beim Verfassen des adaptiven Formulars verwendet wird. Diese Eigenschaft kann folgende Werte haben:</p> 
     <ul> 
-      <li>Formulardatenmodell </li>
+      <li>Formulardatenmodell (FDM)</li>
       <li>Schema: Ein XML- oder JSON-Schema</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

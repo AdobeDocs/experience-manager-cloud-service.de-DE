@@ -1,18 +1,18 @@
 ---
-title: Erstellen eines Formulardatenmodells
+title: Erstellen eines Formulardatenmodells (FDM)
 description: Erfahren Sie, wie Sie ein Formulardatenmodell (FDM) erstellen und Daten mithilfe eines adaptiven Formulars oder eines AEM-Workflows an eine Datenquelle senden oder abrufen.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '1512'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '1543'
+ht-degree: 63%
 
 ---
 
-# Erstellen eines Formulardatenmodells {#create-form-data-model}
+# Formulardatenmodell (FDM) erstellen {#create-form-data-model}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -22,27 +22,27 @@ ht-degree: 100%
 
 ![Datenintegration](do-not-localize/data-integeration.png)
 
-Die [!DNL Experience Manager Forms]-Datenintegration bietet eine intuitive Benutzeroberfläche zum Erstellen von und Arbeiten mit Formulardatenmodellen. Ein Formulardatenmodell stützt sich auf Datenquellen für den Austausch von Daten. Sie können jedoch ein Formulardatenmodell mit oder ohne Datenquelle erstellen. Je nachdem, ob Sie Datenquellen konfiguriert haben, gibt es zwei Möglichkeiten, ein Formulardatenmodell zu erstellen:
+Die [!DNL Experience Manager Forms]-Datenintegration bietet eine intuitive Benutzeroberfläche zum Erstellen von und Arbeiten mit Formulardatenmodellen. Ein Formulardatenmodell (FDM) nutzt Datenquellen für den Datenaustausch. Sie können jedoch ein Formulardatenmodell (FDM) mit oder ohne Datenquelle erstellen. Je nachdem, ob Sie Datenquellen konfiguriert haben, gibt es zwei Möglichkeiten, ein Formulardatenmodell zu erstellen:
 
-* **Vorkonfigurierte Datenquellen verwenden**: Wenn Sie Datenquellen wie in [Konfigurieren von Datenquellen](configure-data-sources.md) konfiguriert haben, können Sie diese beim Erstellen eines Formulardatenmodells auswählen. Es stellt alle Datenmodellobjekte, Eigenschaften und Services aus den ausgewählten Datenquellen zur Verwendung im Formulardatenmodell zur Verfügung.
+* **Verwenden vorkonfigurierter Datenquellen**: Wenn Sie die Datenquellen wie unter [Datenquellen konfigurieren](configure-data-sources.md)können Sie sie beim Erstellen eines Formulardatenmodells (FDM) auswählen. Dadurch werden alle Datenmodellobjekte, Eigenschaften und Dienste aus den ausgewählten Datenquellen zur Verwendung im Formulardatenmodell (FDM) bereitgestellt.
 
-* **Ohne Datenquellen**: Wenn Sie für Ihr Formulardatenmodell keine Datenquellen konfiguriert haben, können Sie es auch ohne Datenquellen erstellen. Sie können das Formulardatenmodell verwenden, um adaptive Formulare <!--and interactive communication--> zu verfassen und sie anhand von Beispieldaten zu testen. Wenn Datenquellen verfügbar sind, können Sie das Formulardatenmodell an Datenquellen binden, die automatisch in den zugehörigen adaptiven Formularen reflektiert werden<!--and interactive communications-->.
+* **Ohne Datenquellen**: Wenn Sie keine Datenquellen für Ihr Formulardatenmodell (FDM) konfiguriert haben, können Sie es dennoch ohne Datenquellen erstellen. Sie können das Formulardatenmodell (FDM) verwenden, um adaptive Forms zu erstellen <!--and interactive communication--> und testen Sie sie anhand von Beispieldaten. Wenn Datenquellen verfügbar sind, können Sie das Formulardatenmodell (FDM) an Datenquellen binden, die sich automatisch in der zugehörigen adaptiven Forms widerspiegeln<!--and interactive communications-->.
 
 >[!NOTE]
 >
->Sie müssen Mitglied der beiden Gruppen **fdm-author** und **forms-user** sein, um Formulardatenmodelle erstellen und verwenden zu können. Wenden Sie sich an Ihren [!DNL Experience Manager]-Administrator, um Mitglied der Gruppen zu werden.
+>Sie müssen Mitglied von beiden sein **fdm-author** und **forms-user** Gruppen, um Formulardatenmodell (FDM) erstellen und verwenden zu können. Wenden Sie sich an Ihren [!DNL Experience Manager]-Administrator, um Mitglied der Gruppen zu werden.
 
-## Erstellen von Formulardatenmodellen {#data-sources}
+## Formulardatenmodell (FDM) erstellen {#data-sources}
 
-Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im Formulardatenmodell verwenden möchten, und zwar wie in [Konfigurieren von Datenquellen](configure-data-sources.md) beschrieben. Gehen Sie folgendermaßen vor, um ein Formulardatenmodell basierend auf konfigurierten Datenquellen zu erstellen:
+Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im Formulardatenmodell (FDM) verwenden möchten, wie unter [Datenquellen konfigurieren](configure-data-sources.md). Führen Sie die folgenden Schritte aus, um ein Formulardatenmodell (FDM) basierend auf konfigurierten Datenquellen zu erstellen:
 
 1. Gehen Sie in der [!DNL Experience Manager]-Autorinstanz zu **[!UICONTROL Forms > Datenintegration]**.
 1. Wählen Sie **[!UICONTROL Erstellen > Formulardatenmodell]**.
 1. Im Dialogfeld „Formulardatenmodell erstellen“:
 
-   * Geben Sie einen Namen für das Formulardatenmodell an.
-   * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
-   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und dann den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
+   * Geben Sie einen Namen für das Formulardatenmodell (FDM) an.
+   * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell (FDM) an.
+   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und dann den Konfigurationsknoten aus, in dem sich die Cloud-Services für die Datenquellen befinden, die verwendet werden sollen. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
 
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 
@@ -61,45 +61,45 @@ Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im For
 
    D. **[!UICONTROL Dienste]**: Inhaltsbereich, in dem hinzugefügte Datenquellenvorgänge oder -Services angezeigt werden.
 
-   E. **[!UICONTROL Symbolleiste]**: Tools zum Arbeiten mit einem Formulardatenmodell. Die Symbolleiste zeigt mehr Optionen, abhängig vom ausgewählten Objekt im Formulardatenmodell.
+   E. **[!UICONTROL Symbolleiste]** Tools zum Arbeiten mit dem Formulardatenmodell (FDM) . In der Symbolleiste werden je nach ausgewähltem Objekt im Formulardatenmodell (FDM) weitere Optionen angezeigt.
 
    F. **[!UICONTROL Ausgewählte hinzufügen]**: Fügt dem Formulardatenmodell ausgewählte Datenmodellobjekte und Services hinzu.
 
-Weitere Informationen zum Formulardatenmodelleditor und dazu, wie Sie mit ihm das Formulardatenmodell bearbeiten und konfigurieren können, finden Sie unter [Arbeiten mit einem Formulardatenmodell](work-with-form-data-model.md).
+Weitere Informationen zum Formulardatenmodell-Editor und dazu, wie Sie damit Formulardatenmodell (FDM) bearbeiten und konfigurieren können, finden Sie unter [Arbeiten mit dem Formulardatenmodell](work-with-form-data-model.md).
 
 ## Aktualisieren von Datenquellen {#update}
 
-Führen Sie folgende Schritte aus, um Datenquellen zu einem vorhandenen Formulardatenmodell hinzuzufügen oder sie zu aktualisieren.
+Gehen Sie wie folgt vor, um Datenquellen zu einem vorhandenen Formulardatenmodell (FDM) hinzuzufügen oder zu aktualisieren.
 
-1. Navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]**, wählen Sie das Formulardatenmodell aus, dem Sie Datenquellen hinzufügen oder in dem Sie sie aktualisieren möchten, und wählen Sie dann **[!UICONTROL Eigenschaften]**.
+1. Navigieren Sie zu **[!UICONTROL Forms > Datenintegrationen]**, wählen Sie das Formulardatenmodell (FDM) aus, dem Sie Datenquellen hinzufügen oder aktualisieren möchten, und wählen Sie **[!UICONTROL Eigenschaften]**.
 1. Wechseln Sie in den Eigenschaften des Formulardatenmodells zur Registerkarte **[!UICONTROL Quelle aktualisieren]**.
 
    Auf der Registerkarte **[!UICONTROL Quelle aktualisieren]**:
 
-   * Klicken Sie auf das Symbol „Durchsuchen“ im Feld **[!UICONTROL Kontextabhängige Konfiguration]** und wählen Sie einen Konfigurationsknoten aus, in dem sich die Cloud-Konfiguration für die hinzuzufügende Datenquelle befindet. Wenn Sie keinen Knoten auswählen, werden die Cloud-Konfigurationen, die sich nur im Knoten `global` befinden, aufgelistet, wenn Sie auf **[!UICONTROL Quellen hinzufügen]** klicken.
+   * Klicken Sie auf das Symbol „Durchsuchen“ im Feld **[!UICONTROL Kontextabhängige Konfiguration]** und wählen Sie einen Konfigurationsknoten aus, in dem sich die Cloud-Konfiguration für die hinzuzufügende Datenquelle befindet. Wenn Sie keinen Knoten auswählen, werden nur Cloud-Konfigurationen im Knoten `global` aufgelistet, wenn Sie **[!UICONTROL Quellen hinzufügen]** auswählen.
 
-   * Um eine neue Datenquelle hinzuzufügen, wählen Sie **[!UICONTROL Quellen hinzufügen]** und d die Datannenquellen aus, die dem Formulardatenmodell hinzugefügt werden sollen. Alle in `global` konfigurierten Datenquellen und ggf. der ausgewählte Konfigurationsknoten werden angezeigt.
+   * Um eine neue Datenquelle hinzuzufügen, wählen Sie **[!UICONTROL Quellen hinzufügen]** und wählen Sie die Datenquellen aus, die dem Formulardatenmodell (FDM) hinzugefügt werden sollen. Alle in `global` konfigurierten Datenquellen und ggf. der ausgewählte Konfigurationsknoten werden angezeigt.
 
-   * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]** für die Datenquelle und wählen Sie diese aus der Liste der verfügbaren Datenquellen aus.
-   * Um eine vorhandene Datenquelle zu löschen, wählen Sie das Symbol **[!UICONTROL Löschen]** für die Datenquelle. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
+   * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, wählen Sie das Symbol **[!UICONTROL Bearbeiten]** für die Datenquelle und dann diese Datenquelle aus der Liste der verfügbaren Datenquellen aus.
+   * Um eine vorhandene Datenquelle zu löschen, wählen Sie das Symbol **[!UICONTROL Löschen]** für die Datenquelle aus. Das Symbol Löschen ist deaktiviert, wenn im Formulardatenmodell (FDM) ein Datenmodellobjekt in der Datenquelle hinzugefügt wird.
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. Klicken Sie zum Speichern der Aktualisierungen auf **[!UICONTROL Speichern und schließen]**.
+1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus, um die Aktualisierungen zu speichern.
 
 >[!NOTE]
 >
->Nachdem Sie neue Datenquellen hinzugefügt oder vorhandene Datenquellen in einem Formulardatenmodell aktualisiert haben, müssen Sie die Bindungsreferenzen in adaptiven Formularen<!--and interactive communications--> aktualisieren, die das aktualisierte Formulardatenmodell verwenden.
+>Nachdem Sie neue Datenquellen hinzugefügt oder vorhandene Datenquellen in einem Formulardatenmodell (FDM) aktualisiert haben, stellen Sie sicher, dass Sie die Bindungsverweise in Adaptive Forms entsprechend aktualisieren.<!--and interactive communications--> , die das aktualisierte Formulardatenmodell (FDM) verwenden.
 
 ## Kontextabhängige Konfigurationen für bestimmte Ausführungsmodi {#runmode-specific-context-aware-config}
 
-Das [!UICONTROL Formulardatenmodell] nutzt [kontextabhängige Konfigurationen von Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=de), um verschiedene Datenquellenparameter für die Verbindung mit Datenquellen für verschiedene [!DNL Experience Manager]-Ausführungsmodi zu unterstützen.
+[!UICONTROL Formulardatenmodell (FDM)] nutzt [Kontextabhängige Konfigurationen von Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=de) zur Unterstützung verschiedener Datenquellenparameter für die Verbindung mit Datenquellen für verschiedene [!DNL Experience Manager] Ausführungsmodi.
 
-Wenn das [!UICONTROL Formulardatenmodell] Cloud-Konfigurationen zum Speichern von Parametern verwendet, die beim Einchecken und Bereitstellen über die Versionskontrolle (Cloud Manager GIT-Repository) eine Cloud-Konfiguration mit denselben Parametern für alle Ausführungsmodi (Entwicklung, Staging und Produktion) erstellen. Für Anwendungsfälle, in denen unterschiedliche Datensätze für Test- und Produktionsumgebungen benötigt werden, verwenden wir jedoch Datenquellenparameter (z. B. die Datenquellen-URL) für unterschiedliche [!DNL Experience Manager]-Ausführungsmodi.
+Wann [!UICONTROL Formulardatenmodell (FDM)] verwendet Cloud-Konfigurationen zum Speichern von Parametern, die beim Einchecken und Bereitstellen über die Quell-Code-Verwaltung (Cloud Manager GIT-Repository) eine Cloud-Konfiguration mit denselben Parametern für alle Ausführungsmodi (Entwicklung, Staging und Produktion) erstellen. Für Anwendungsfälle, in denen unterschiedliche Datensätze für Test- und Produktionsumgebungen benötigt werden, verwenden wir jedoch Datenquellenparameter (z. B. die Datenquellen-URL) für unterschiedliche [!DNL Experience Manager]-Ausführungsmodi.
 
-Dazu müssen Sie eine OSGi-Konfiguration erstellen, die Datenquellenparameter-Wert-Paare enthält. Dadurch wird dasselbe Paar aus der [!UICONTROL Formulardatenmodell]-Cloud-Konfiguration zur Laufzeit überschrieben. Da die OSGi-Konfigurationen diese Ausführungsmodi standardmäßig unterstützen, können Sie einen Datenquellenparameter basierend auf dem Ausführungsmodus in andere Werte überschreiben.
+Dazu müssen Sie eine OSGi-Konfiguration erstellen, die Datenquellenparameter-Wert-Paare enthält. Dadurch wird dasselbe Paar aus [!UICONTROL Formulardatenmodell (FDM)] Cloud-Konfiguration zur Laufzeit. Da die OSGi-Konfigurationen diese Ausführungsmodi standardmäßig unterstützen, können Sie einen Datenquellenparameter basierend auf dem Ausführungsmodus in andere Werte überschreiben.
 
-So aktivieren Sie bereitstellungsspezifische Cloud-Konfigurationen im [!UICONTROL Formulardatenmodell]:
+So aktivieren Sie bereitstellungsspezifische Cloud-Konfigurationen in [!UICONTROL Formulardatenmodell (FDM)]:
 
 1. Erstellen Sie die Cloud-Konfiguration auf der lokalen Entwicklungsinstanz. Ausführliche Anweisungen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md).
 
@@ -136,11 +136,11 @@ Wenn dieser Projektarchetyp über die CM-Pipeline bereitgestellt wird, liefert d
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben jetzt ein Formulardatenmodell, dem Datenquellen hinzugefügt wurden. Als Nächstes können Sie das Formulardatenmodell bearbeiten, um Datenmodellobjekte und -Services hinzuzufügen und zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten hinzuzufügen, Eigenschaften zu bearbeiten, benutzerdefinierte Datenmodellobjekte und -eigenschaften hinzuzufügen, Beispieldaten zu generieren und so weiter.
+Sie verfügen jetzt über ein Formulardatenmodell (FDM) mit hinzugefügten Datenquellen. Als Nächstes können Sie das Formulardatenmodell (FDM) bearbeiten, um Datenmodellobjekte und -dienste hinzuzufügen und zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten hinzuzufügen, Eigenschaften zu bearbeiten, benutzerdefinierte Datenmodellobjekte und Eigenschaften hinzuzufügen, Beispieldaten zu generieren usw.
 
 Weitere Informationen finden Sie unter [Arbeiten mit einem Formulardatenmodell](work-with-form-data-model.md).
 
 
 >[!MORELIKETHIS]
 >
->* [Verwenden eines Formulardatenmodells](/help/forms/using-form-data-model.md)
+>* [Formulardatenmodell (FDM) verwenden](/help/forms/using-form-data-model.md)

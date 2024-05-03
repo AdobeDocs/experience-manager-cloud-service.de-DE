@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren von Datenquellen
-description: Erfahren Sie, wie Sie RESTful-Webservices, SOAP-basierte Webservices und OData-Services als Datenquellen konfigurieren und diese zum Erstellen von Formulardatenmodellen verwenden.
+description: Erfahren Sie, wie Sie RESTful-Webdienste, SOAP-basierte Webdienste und OData-Dienste als Datenquellen für ein Formulardatenmodell (FDM) konfigurieren.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '2121'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '2129'
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ Sie können relationale Datenbanken mithilfe der [!DNL Experience Manager] Web-K
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration zu speichern.
 
-Jetzt können Sie die konfigurierte relationale Datenbank mit Ihrem Formulardatenmodell verwenden.
+Jetzt können Sie die konfigurierte relationale Datenbank mit Ihrem Formulardatenmodell (FDM) verwenden.
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -84,7 +84,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -95,7 +95,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -178,13 +178,13 @@ Einige der von RESTful Services Open API Specifikation Version 3.0 nicht unterst
 
 Weitere Informationen finden Sie unter [OpenAPI 3.0-Spezifikation](https://swagger.io/specification/v3/).
 
-### HTTP-Client-Konfiguration des Formulardatenmodells zur Leistungsoptimierung {#fdm-http-client-configuration}
+### HTTP-Clientkonfiguration für Formulardatenmodell (FDM) zur Leistungsoptimierung {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] bildet bei der Integration mit RESTful-Web-Diensten ein Formulardatenmodell, da die Datenquelle HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
 
 Legen Sie die folgenden Eigenschaften der Konfiguration für das **[!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle]** zum Angeben des regulären Ausdrucks fest:
 
-* Verwenden Sie die `http.connection.max.per.route`-Eigenschaft zum Festlegen der maximal zulässigen Anzahl von Verbindungen zwischen dem Formulardatenmodell und RESTful-Webservices. Der Standardwert ist 20 Verbindungen.
+* Verwenden Sie die `http.connection.max.per.route` -Eigenschaft zum Festlegen der maximal zulässigen Anzahl von Verbindungen zwischen Formulardatenmodell (FDM) und RESTful-Webdiensten. Der Standardwert ist 20 Verbindungen.
 
 * Verwenden Sie die `http.connection.max`-Eigenschaft, um die maximale Anzahl zulässiger Verbindungen für jede Route anzugeben. Der Standardwert ist 40 Verbindungen.
 
@@ -212,7 +212,7 @@ Folgende JSON-Datei zeigt ein Beispiel:
 
 1. Führen Sie im Dialog [!UICONTROL Formular-Datenmodell HTTP-Client-Konfiguration für REST-Datenquelle] folgende Schritte aus:
 
-   * Geben Sie die maximal zulässige Anzahl von Verbindungen zwischen dem Formulardatenmodell und RESTful-Webservices im Feld **[!UICONTROL Verbindungslimit insgesamt]** an. Der Standardwert ist 20 Verbindungen.
+   * Geben Sie die maximal zulässige Anzahl von Verbindungen zwischen dem Formulardatenmodell (FDM) und den RESTful-Webdiensten im **[!UICONTROL Verbindungsgrenze insgesamt]** -Feld. Der Standardwert ist 20 Verbindungen.
 
    * Geben Sie die maximal zulässige Anzahl von Verbindungen für jede Route im Feld **[!UICONTROL Verbindungslimit pro Route]** an. Der Standardwert ist zwei Verbindungen.
 
@@ -228,7 +228,7 @@ SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Service
 
 Um den SOAP-basierten Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie die WSDL-URL für den Webservice. Gehen Sie dann wie folgt vor:
 
-1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
@@ -266,7 +266,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
 >[!NOTE]
 >
-> Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
+> Formulardatenmodell (FDM) unterstützt [OData Version 4](https://www.odata.org/documentation/).
 >Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft®® Dynamics 365], online oder lokal finden Sie unter [[!DNL Microsoft® Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
@@ -315,7 +315,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell erstellen oder, falls Sie bereits ein Formulardatenmodell ohne eine Datenquelle erstellt haben, können Sie es den schon konfigurierten Datenquellen zuordnen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](create-form-data-models.md).
+Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell (FDM) erstellen oder ein Formulardatenmodell (FDM) ohne Datenquelle bereits erstellt haben, können Sie es mit den konfigurierten Datenquellen verknüpfen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](create-form-data-models.md).
 
 
 <!--

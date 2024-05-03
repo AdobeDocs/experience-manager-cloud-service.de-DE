@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen
-keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell
+keywords: wie Sie die Sendeaktion für ein adaptives Formular auswählen, ein adaptives Formular mit der Sharepoint-Liste verbinden, ein adaptives Formular mit der SharePoint-Dokumentbibliothek verbinden, ein adaptives Formular mit dem Formulardatenmodell verbinden (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
+workflow-type: tm+mt
+source-wordcount: '678'
+ht-degree: 83%
 
 ---
 
@@ -27,7 +27,7 @@ Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die ü
 * Müheloses Senden von Formulardaten per E-Mail.
 * Starten von Microsoft® Power Automate-Abläufen oder AEM-Workflows beim Senden der Daten.
 * Sie können die Formulardaten direkt an Microsoft® SharePoint Server, Microsoft® Azure Blob Storage oder Microsoft® OneDrive übertragen.
-* Nahtloses Senden von Daten an eine konfigurierte Datenquelle mit dem Formulardatenmodell.
+* Senden Sie die Daten nahtlos mit dem Formulardatenmodell (FDM) an eine konfigurierte Datenquelle.
 * Bequemes Senden von Daten an einen REST-Endpunkt.
 
 Sie können [standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md). Sie können die Übermittlungsaktionen auch für organisationsspezifische Anforderungen anpassen.
@@ -62,7 +62,7 @@ Detaillierte Informationen zur folgenden Übermittlungsaktion finden Sie unter:
 * [Power Automate-Fluss aufrufen](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An SharePoint senden](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion aufrufen](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Mit Formulardatenmodell senden](/help/forms/using-form-data-model.md)
+* [Senden mit Formulardatenmodell (FDM)](/help/forms/using-form-data-model.md)
 * [An Azure Blob Storage senden](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
@@ -70,7 +70,7 @@ Detaillierte Informationen zur folgenden Übermittlungsaktion finden Sie unter:
 
 Sie können ein adaptives Formular auch an andere Speicherkonfigurationen senden:
 
-* [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/aem-forms-salesforce-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 Sie können [die standardmäßigen Übermittlungsaktionen anpassen](custom-submit-action-form.md). Darüber hinaus können Sie die Übermittlungsaktionen an bestimmte Unternehmensanforderungen anpassen.
@@ -94,11 +94,11 @@ Refer to [configure the send email submit action for an Adaptive Form](/help/for
 
 >[!CAUTION]
 >
->If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
+>If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model (FDM)) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
 
 >[!CAUTION]
 >
->If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
+>If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model(FDM)) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
 ## Submit to Microsoft® SharePoint {#submit-to-sharedrive}
 
@@ -106,11 +106,11 @@ The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive For
 
 Integration of AEM Adaptive Form with Microsoft® SharePoint enables the submission, retrieval, or storage of data, files, and other relevant information within the SharePoint storage. To learn how to configure submit to SharePoint submit action for an Adaptive Form, [click here.](/help/forms/configure-submit-action-sharepoint.md) 
 
-## Submit using Form Data Model {#submit-using-form-data-model}
+## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
-The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
+The **[!UICONTROL Submit using Form Data Model (FDM)]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-When a user submits a form based on a form data model, you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+When a user submits a form based on a form data model (FDM), you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -212,7 +212,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Absicherung benutzerdefinierte Fehlerseiten wie 400.jsp, 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Senden eines Formulars die Fehler-Codes 400, 404 oder 500 auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden. Sie können JSP-Seiten auch für andere HTTP-Fehler-Codes erstellen.
 
-Wenn Sie ein Formulardatenmodell oder ein Schema-basiertes adaptives Formular mit XML- oder JSON-Daten ausfüllen, die konform zu einem Schema sind, bei dem Daten keine `<afData>`-, `<afBoundData>`- und `</afUnboundData>`-Tags enthalten, gehen die Daten der ungebundenen Felder des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
+Wenn Sie ein Formulardatenmodell (FDM) oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten im Voraus ausfüllen, wenden Sie sich an ein Schema, das keine Daten enthält `<afData>`, `<afBoundData>`, und `</afUnboundData>` -Tags verwenden, gehen die Daten von nicht gebundenen Feldern des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell (FDM) sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

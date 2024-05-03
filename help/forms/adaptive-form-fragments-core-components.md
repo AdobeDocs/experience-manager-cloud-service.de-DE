@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1797'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | Dieser Artikel |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=de) |
 
-Zwar wurde jedes Formular für einen bestimmten Zweck entwickelt, aber in den meisten Formularen gibt es gängige Segmente für persönliche Angaben wie Name und Anschrift, Familienmitglieder und Einkommen. Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
+Zwar wurde jedes Formular für einen bestimmten Zweck entwickelt, aber in den meisten Formularen gibt es gängige Segmente für persönliche Angaben wie Name und Anschrift, Familienmitglieder und Einkommen. Eine Formularentwicklerin bzw. ein Formularentwickler muss diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
 
 Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
 
@@ -56,17 +56,17 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Pane
      > In adaptiven Formularen können Sie ein einzelnes Formularfragment (basierend auf Kernkomponenten) mehrmals verwenden. Es unterstützt sowohl auf nichts basierende als auch schemabasierte Formularfragmente.
 
    * **Schema**: Das Fragment wird mithilfe eines XML- oder JSON-Schemas erstellt, das auf AEM Forms hochgeladen wurde. Sie können ein XML- oder JSON-Schema als Formularmodell hochladen oder aus den verfügbaren Schemata wählen. Wenn Sie ein XML-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie einen „complexType“ im ausgewählten Schema aus der Dropdown-Liste **[!UICONTROL XML-Schema – komplexer Typ]** auswählen. Wenn Sie ein JSON-Schema auswählen, können Sie auch ein adaptives Formularfragment erstellen, indem Sie eine Schemadefinition im ausgewählten Schema aus der Dropdown-Liste **[!UICONTROL JSON-Schemadefinitionen]** auswählen.
-   * **Formulardatenmodell**: Gibt an, dass das Fragment mit einem Formulardatenmodell erstellt werden soll. Sie können ein adaptives Formularfragment auf Grundlage eines einzelnen Datenmodellobjekts in einem Formulardatenmodell erstellen. Erweitern Sie die Dropdown-Liste mit Definitionen für Formulardatenmodelle. Hier sind sämtliche Datenmodellobjekte im angegebenen Formulardatenmodell aufgelistet. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
+   * **Formulardatenmodell**: Gibt an, dass das Fragment mithilfe eines Formulardatenmodells (FDM) erstellt wird. Sie können ein adaptives Formularfragment erstellen, das auf nur einem Datenmodellobjekt in einem Formulardatenmodell (FDM) basiert. Erweitern Sie die Dropdown-Liste &quot;Formulardatenmodell (FDM)-Definitionen&quot;. Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell (FDM) auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
 
-   ![Formulardatenmodell](assets/create-af-3.png)
+   ![Formulardatenmodell (FDM)](assets/create-af-3.png)
 
 
 
 1. Klicken Sie auf **Erstellen** und dann auf **Öffnen**, um das Fragment mit einer Standardvorlage im Bearbeitungsmodus zu öffnen. Im Bearbeitungsmodus können Sie dem Fragment eine beliebige Komponente des adaptiven Formulars hinzufügen.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, wobei die ursprünglichen Eigenschaften des verbundenen XDP oder XSD beibehalten werden.
 
-Wenn das auf einem Schema- oder Formulardatenmodell basierende adaptive Formularfragment erstellt ist, werden Formulardatenmodelle oder Schemaelemente auf der Registerkarte „Datenquellen“ des Inhalts-Browsers im Editor für adaptive Formulare angezeigt. Sie können per Drag-and-Drop Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus dem zugehörigen Schema beibehalten werden.
+Sobald das auf einem Schema oder Formulardatenmodell (FDM) basierende adaptive Formularfragment erstellt wurde, werden Formulardatenmodell (FDM) oder Schemaelemente auf der Registerkarte Datenquellen des Inhaltsbrowsers im Editor für adaptive Formulare angezeigt. Sie können per Drag-and-Drop Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus dem zugehörigen Schema beibehalten werden.
 
 
 ## Hinzufügen eines Fragments zu einem adaptiven Formular {#insert-a-fragment-in-an-adaptive-form}
@@ -113,7 +113,7 @@ Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. ein Frag
 
 ### Mehrfaches Verwenden eines Formularfragments in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
 
-Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails permanent für die Kommunikation zu erfassen und aktive Adressen in einem Kreditantragsformular darzustellen.
+Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Es ist beispielsweise möglich, ein Adressformularfragment zu verwenden, um Adressangaben zum ständigen Wohnsitz, zur Kommunikation und zum aktuellen Wohnsitz in einem Kreditantragsformular zu erfassen.
 
 ![Verwenden mehrerer Fragmente im adaptiven Formular](/help/forms/assets/using-multiple-fragment-af.gif)
 
@@ -183,7 +183,7 @@ Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit ad
 * Stellen Sie sicher, dass der Fragmentname eindeutig ist. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
 * Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld, das ein anderes XDP-Fragment enthält, als Fragment speichern, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei XSD-basierten adaptiven Formularen wird das resultierende Fragment an den Schemastamm gebunden.
 * Wenn Sie ein adaptives Formularfragment erstellen, wird ein Fragmentknoten erstellt, der dem Knoten „guideContainer“ für ein adaptives Formular in CRXDE Lite ähnelt.
-* Ein Fragment, das ein anderes Formulardatenmodell verwendet, wird in einem adaptiven Formular nicht unterstützt. Zum Beispiel wird in einem XSD-basierten adaptiven Formular ein XDP-basiertes Fragment nicht unterstützt und umgekehrt.
+* Ein Fragment in einem adaptiven Formular, das ein anderes Formulardatenmodell (FDM) verwendet, wird nicht unterstützt. Zum Beispiel wird in einem XSD-basierten adaptiven Formular ein XDP-basiertes Fragment nicht unterstützt und umgekehrt.
 * Adaptive Formularfragmente sind in der AEM-Inhaltssuche auf der Registerkarte „Adaptive Formularfragmente“ verfügbar.
 * Alle Ausdrücke, Skripte oder Stile in einem eigenständigen adaptiven Formularfragment bleiben erhalten, wenn es als Verweis eingefügt oder in ein adaptives Formular eingebettet wird.
 * Adaptive Formularfragmente, die als Verweis eingefügt wurden, können nicht in einem adaptiven Formular bearbeitet werden. Sie bearbeiten stattdessen entweder das eigenständige adaptive Formularfragment oder betten das Fragment in das adaptive Formular ein.

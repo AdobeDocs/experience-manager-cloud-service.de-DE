@@ -4,10 +4,10 @@ description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
-workflow-type: ht
-source-wordcount: '2723'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2726'
+ht-degree: 98%
 
 ---
 
@@ -249,7 +249,7 @@ Sie können jetzt die lokale Entwicklungsumgebung zum Rendern des Datensatzdokum
 
 Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurationsaktualisierungen und Überlagerungen bereitzustellen, benutzerdefinierte adaptive Formularkomponenten zu erstellen sowie zu testen und benutzerdefinierten Code im lokalen [!DNL Experience Manager Forms]-SDK zu erstellen. Nach dem lokalen Test können Sie das Projekt in [!DNL Experience Manager Forms] as a Cloud Service-Produktions- und -Nichtproduktionsumgebungen bereitstellen. Beim Bereitstellen des Projekts werden auch die folgenden AEM Forms-Assets bereitgestellt:
 
-| Designs | Vorlagen | Formulardatenmodelle |
+| Designs | Vorlagen | Formulardatenmodell (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Allgemein | Microsoft® Dynamics 365 |
 | Tranquil | Leer | Salesforce |
@@ -259,7 +259,7 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 
 >[!NOTE]
 >
-> Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service zu erhalten und zu verwenden.
+> Richten Sie AEM auf Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365 und Salesforce-Formulardatenmodell (FDM) mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 > Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
@@ -399,7 +399,7 @@ Sichern von Assets und Verschieben vom vorhandenen SDK in eine neue SDK-Umgebung
 
 ### Erstellen Sie eine Sicherung Ihres vorhandenen Inhalts {#create-backup-of-your-existing-content}
 
-Sichern Sie adaptive Formulare, Vorlagen, Formulardatenmodell, Design, Konfigurationen und benutzerdefinierten Code. Sie können folgende Aktion ausführen, um eine Sicherung zu erstellen:
+Sichern Sie Ihre adaptive Forms, Vorlagen, das Formulardatenmodell (FDM), Ihr Design, Ihre Konfigurationen und Ihren benutzerdefinierten Code. Sie können folgende Aktion ausführen, um eine Sicherung zu erstellen:
 
 1. Adaptive Formulare, Designs und PDF-Formulare [herunterladen](import-export-forms-templates.md#manage-forms-and-related-assets).
 1. Vorlagen für adaptive Formulare exportieren.

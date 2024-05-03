@@ -5,16 +5,16 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '1193'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 94%
 
 ---
 
 # Importieren und Exportieren von adaptiven Formularen und AEM Forms-Assets {#importing-and-exporting-assets-to-aem-forms}
 
-Sie können adaptive Formulare und zugehörige Assets wie Designs für adaptive Formulare, Formulardatenmodelle, Vorlagen für adaptive Formulare, Dokumentfragmente und PDF-Formulare zwischen einzelnen [!DNL AEM Forms]-Instanzen verschieben. Sie können Assets in CRX-Paket- oder binäre Dateiformate importieren und exportieren.
+Sie können Adaptive Forms und zugehörige Assets wie Themen für adaptive Formulare, Formulardatenmodell (FDM), Vorlagen für adaptive Formulare, Dokumentfragmente und PDF forms zwischen [!DNL AEM Forms] Instanzen. Sie können Assets in CRX-Paket- oder binäre Dateiformate importieren und exportieren.
 
 Wenn Sie ein adaptives Formular exportieren, werden die Content-Richtlinien und Vorlagen nicht exportiert. Verwenden Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#how-rolling-deployments-work), um diese Assets zu exportieren.
 
@@ -27,7 +27,7 @@ So laden Sie Formulare oder zugehörige Assets herunter:
 1. Wählen Sie die Assets aus und wählen Sie dann das Symbol **[!UICONTROL Herunterladen]**.
 1. Wählen Sie unter „Asset(s) herunterladen“ eine der folgenden Optionen und wählen Sie dann **[!UICONTROL Herunterladen]**.
 
-   * **Als CRX-Paket herunterladen:** Verwenden Sie die Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer [!DNL AEM Forms]-Instanz in eine andere. Es werden alle Assets und Ordner als CRX-Paket heruntergeladen, einschließlich der in AEM erstellten Formulare (adaptive Formulare und adaptive Formularfragmente), Formularsätze, Formulardatenmodelle, Formularvorlagen, PDF-Dokumente und referenzierten Ressourcen (XSDs und Bilder).
+   * **Als CRX-Paket herunterladen:** Verwenden Sie diese Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer [!DNL AEM Forms]-Instanz in eine andere. Sie lädt alle Assets und Ordner als CRX-Paket herunter, einschließlich der in AEM (Adaptive Forms und Adaptive Form Fragments) erstellten Formulare, Formularsätze, Formulardatenmodell (FDM), Formularvorlagen, PDF-Dokumente und referenzierten Ressourcen (XSDs und Bilder).
 Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass auch referenzierte Assets mit heruntergeladen werden. Beispiel: Sie haben ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket auch die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
 
    * **Assets als Binärdateien herunterladen:** Verwenden Sie diese Option nur zum Herunterladen von Formularvorlagen (XDP), PDF-Formularen (PDF), Dokumenten (PDF) und Ressourcen (Bilder, Schemata, Stylesheets). Sie können diese Assets mit externen Anwendungen bearbeiten. Assets, die Binärdateien wie Bilder, PDFs und andere unterstützte Formate enthalten, werden als .zip-Datei heruntergeladen.
@@ -49,7 +49,7 @@ So laden Sie ein Formular oder ein referenziertes Asset hoch:
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]**. Ein Dialogfeld wird angezeigt.
 1. Navigieren Sie im Dialogfeld zum Paket oder Archiv, das importiert werden soll, und wählen Sie es aus. Sie können auch andere unterstützte Dateitypen auswählen. Wählen Sie **[!UICONTROL Öffnen]**. Der ausgewählte Ordner- oder Dateiname darf keine Sonderzeichen enthalten.
 
-   Überprüfen Sie im Dialogfeld die Details der Assets, die hochgeladen werden, und wählen Sie **[!UICONTROL Hochladen]**.
+   Überprüfen Sie im Dialogfeld die Details der Assets, die hochgeladen werden, und wählen Sie **[!UICONTROL Hochladen]** aus.
 
    Wenn Sie ein vorhandenes Formular-Asset hochladen, wird das Asset aktualisiert.
 
@@ -169,7 +169,7 @@ Sie können AEM Package Manager verwenden, um Workflow-Programme zu exportieren.
 
 Sie können Ordner verwenden, um Assets zu gruppieren und zu organisieren. Wenn Sie Dokumente und Assets in einem Ordner organisieren, können Sie die Dateien gruppieren und somit die Verwaltung vereinfachen. Sie können einen Ordner auswählen und ihn herunterladen oder löschen. Um einen Ordner zu erstellen, führen Sie die folgenden Schritte aus:
 
-### Erstellen von Ordnern {#create-a-folder}
+### Erstellen eines Ordners {#create-a-folder}
 
 1. Melden Sie sich bei Ihrer [!DNL AEM Forms]-Instanz an.
 1. Wählen Sie das Symbol „Experience Manager“ ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Symbol „Navigation“ ![Kompass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.

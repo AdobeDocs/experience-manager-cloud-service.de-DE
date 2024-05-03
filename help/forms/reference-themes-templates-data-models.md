@@ -3,10 +3,10 @@ title: Wie lassen sich Referenz-Designs und -vorlagen für AEM Forms erhalten?
 description: AEM Forms bietet Beispiel-Designs für adaptive Formulare, Vorlagen und Formulardaten, damit Sie Vorlagen schneller erstellen können.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '778'
+ht-degree: 89%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 100%
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/creating-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-AEM Forms as a Cloud Service bietet mehrere Referenz-Designs, Vorlagen und Formulardatenmodelle, damit Sie schnell mit der Erstellung adaptiver Formulare beginnen können. Sie können das [Referenzinhaltspaket vom Software-Verteilungs-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) herunterladen und den [Package Manager](/help/implementing/developing/tools/package-manager.md) verwenden, um das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in Ihrer Produktions-, Entwicklungs- oder lokalen Entwicklungsumgebung zu installieren, um diese Referenz-Assets in Ihre Umgebung zu bringen.
+AEM Forms as a Cloud Service bietet mehrere Referenzthemen, Vorlagen und Formulardatenmodell (FDM), damit Sie schnell mit der Erstellung von Adaptive Forms beginnen können. Sie können das [Referenzinhaltspaket vom Software-Verteilungs-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) herunterladen und den [Package Manager](/help/implementing/developing/tools/package-manager.md) verwenden, um das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in Ihrer Produktions-, Entwicklungs- oder lokalen Entwicklungsumgebung zu installieren, um diese Referenz-Assets in Ihre Umgebung zu bringen.
 
-Die im Referenzinhaltspaket enthaltenen Designs, Vorlagen und Formulardatenmodelle sind:
+Die Designs, Vorlagen und das Formulardatenmodell (FDM), die im Referenzinhaltspaket enthalten sind, sind:
 
 
-| Designs | Vorlagen | Formulardatenmodelle |
+| Designs | Vorlagen | Formulardatenmodell (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Allgemein | Microsoft Dynamics 365 |
 | Tranquil | Leer | Salesforce |
@@ -112,16 +112,16 @@ Mit [Vorlagen](/help/forms/themes.md) können Sie die anfängliche Formularstruk
 Die einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungsformulars. Sie können es auch verwenden, um eine Vorschau der Funktionalität von Foundation-Komponenten adaptiver Formulare anzuzeigen. Es bietet ein Assistenten-Layout für eine abschnittsweise Darstellung der Daten. Verwenden Sie die leere Vorlage, um ein adaptives Formular auf einer leeren Arbeitsfläche zu erstellen.
 
 
-## Referenzformular-Datenmodelle {#reference-models}
+## Referenz-Formulardatenmodell (FDM) {#reference-models}
 
 Die adaptiven Formulare können dann mit Microsoft Dynamics 365- und Salesforce-Servern interagieren, um Geschäftsabläufe zu ermöglichen. Beispiel:
 
 * Schreiben von Daten in Microsoft Dynamics 365 und Salesforce bei der Übermittlung von adaptiven Formularen.
-* Schreiben von Daten in Microsoft Dynamics 365 und Salesforce durch benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
+* Schreiben Sie Daten in Microsoft Dynamics 365 und Salesforce über benutzerdefinierte Entitäten, die im Formulardatenmodell (FDM) definiert sind, und umgekehrt.
 * Abfragen des Microsoft Dynamics 365- und Salesforce-Servers nach Daten und Vorausfüllen der adaptiven Formulare.
 * Lesen von Daten von Microsoft Dynamics 365- und Salesforce-Servern.
 
-Sie können die folgenden Formulardatenmodelle erhalten, indem Sie das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) installieren:
+Sie können das folgende Formulardatenmodell (FDM) durch Installation der [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce

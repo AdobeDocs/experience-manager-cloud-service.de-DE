@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 99%
          + [Verbinden von AEM Forms mit einer Datenbank oder Datenquelle](/help/forms/data-integration.md)
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung über den OAuth 2.0-Client-Anmeldedatenfluss](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung über den OAuth 2.0-Client-Anmeldedatenfluss](/help/forms/aem-forms-salesforce-integration.md)
          + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
          + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 99%
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
             + [Erstellen und Verwenden benutzerdefinierter Funktionen](/help/forms/create-and-use-custom-functions.md)
             + [Hinzufügen von Regeln zu einem adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/rule-editor-core-components.md)
+            + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}

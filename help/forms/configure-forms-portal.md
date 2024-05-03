@@ -3,10 +3,10 @@ title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden können.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '1785'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1786'
+ht-degree: 98%
 
 ---
 
@@ -83,14 +83,14 @@ So importieren Sie vordefinierte Formularportal-Komponenten in AEM Forms as a Cl
 
 ## Konfigurieren von Azure Storage für adaptive Formulare {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare in [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit [!DNL Azure]-Server interagieren, um Unternehmens-Workflows zu ermöglichen.
+[[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare in [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Forms zu erstellen, die mit [!DNL Azure] -Server, um geschäftliche Workflows zu aktivieren.
 
 ### Erstellen der Azure-Speicherkonfiguration {#create-azure-storage-configuration}
 
 Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf das [!DNL Azure]-Speicherkonto zu autorisieren.
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
-1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie dann **[!UICONTROL Erstellen]**.
+1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie anschließend die Option **[!UICONTROL Erstellen]** aus.
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
 1. Geben Sie den Namen des [!DNL Azure]-Speicherkontos im Feld **[!UICONTROL Azure-Speicherkonto]** an.
 

@@ -4,10 +4,10 @@ description: Sie können Kernkomponenten für adaptive Formulare auf einer AEM S
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '2067'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2071'
+ht-degree: 97%
 
 ---
 
@@ -110,12 +110,12 @@ Im Dialogfeld [!UICONTROL Container für adaptive Formulare bearbeiten] können 
    * **Vorbefüllungsdienst**: Sie können den Vorbefüllungsdienst verwenden, um Felder eines adaptiven Formulars mit vorhandenen Daten automatisch auszufüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Informationen zum Vorbefüllungsdienst finden Sie unter [Vorausfüllen von Feldern in adaptiven Formularen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=de#configuring-prefill-service-using-configuration-manager)
    * **Kategorie der Client-Bibliothek**: Geben Sie die [JavaScript-Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=de#custom-functions) an, die in Ausdrücken verwendet und von adaptiven Formularen unterstützt werden.
 * **Datenmodell**: Ein Datenmodell ermöglicht Ihnen die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein adaptives Formular. Wählen Sie das **[!UICONTROL Formulardatenmodell]**, wenn das adaptive Formular, das Sie erstellen, das Abrufen und Schreiben von Daten aus und in mehrere Datenquellen beinhaltet.
-   * **Formulardatenmodell**: Mit einem Formulardatenmodell kann ein adaptives Formular mit unterschiedlichen Datenquellen kommunizieren. Informationen zum Konfigurieren einer Datenquelle finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md).
+   * **Formulardatenmodell**: Mit einem Formulardatenmodell (FDM) kann ein adaptives Formular mit unterschiedlichen Datenquellen kommunizieren. Informationen zum Konfigurieren einer Datenquelle finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md).
    * **Schema**: Das Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können das [Schema mit einem adaptiven Formular verknüpfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=de) und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. 
 
      >[!NOTE]
      >
-     > Nach dem Konfigurieren des Formulardatenmodells können Sie das verknüpfte Formularmodell nicht ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell verknüpfte Schema zu ändern.
+     > Nach dem Konfigurieren des Formulardatenmodells (FDM) können Sie das zugeordnete Formularmodell nicht ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell (FDM) verknüpfte Schema zu ändern.
 
 * **Registerkarte „Übermittlung“**
 
@@ -125,7 +125,7 @@ Im Dialogfeld [!UICONTROL Container für adaptive Formulare bearbeiten] können 
       * **Übermittlungsaktion**: Eine Übermittlungsaktion wird ausgelöst, wenn in einem adaptiven Formular auf die Schaltfläche „Senden“ geklickt wird. Sie können die [Übermittlungsaktion in einem adaptiven Formular konfigurieren](/help/forms/configuring-submit-actions.md). Adaptive Forms stellt die folgenden Übermittlungsaktionen standardmäßig bereit:
          * An REST-Endpunkt übermitteln
          * E-Mail senden
-         * Senden mit Formulardatenmodell
+         * Senden mit Formulardatenmodell (FDM)
          * AEM-Workflow aufrufen
          * An SharePoint senden
          * An OneDrive senden

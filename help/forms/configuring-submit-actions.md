@@ -3,10 +3,10 @@ title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
-workflow-type: ht
-source-wordcount: '3901'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '3914'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Eine Übermittlungsaktion wird ausgelöst, wenn Benutzende in einem adaptiven Fo
 
 * [An REST-Endpunkt übermitteln](#submit-to-rest-endpoint)
 * [E-Mail senden](#send-email)
-* [Senden mit Formulardatenmodell](#submit-using-form-data-model)
+* [Senden im Formulardatenmodus (FDM) l](#submit-using-form-data-model)
 * [AEM-Workflow aufrufen](#invoke-an-aem-workflow)
 * [An SharePoint senden](#submit-to-sharedrive)
 * [An OneDrive senden](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Senden mit Formulardatenmodell {#submit-using-form-data-model}
+## Senden mit Formulardatenmodell (FDM) {#submit-using-form-data-model}
 
-Die Übermittlungsaktion **[!UICONTROL Senden mit Formulardatenmodell]** schreibt gesendete Daten eines adaptiven Formulars für das angegebene Datenmodellobjekt in die Datenquelle eines Formulardatenmodells. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
+Die **[!UICONTROL Senden mit Formulardatenmodell]** Mit der Übermittlungsaktion werden gesendete adaptive Formulardaten für das angegebene Datenmodellobjekt in einem Formulardatenmodell (FDM) in seine Datenquelle geschrieben. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
 
-Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell und einem Datensatzdokument (Document of Record) an die Datenquelle senden. Weitere Informationen zum Formulardatenmodell finden Sie unter [[!DNL AEM Forms] Datenintegration](data-integration.md).
+Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell (FDM) und einem Datensatzdokument (DoR) an die Datenquelle senden. Weitere Informationen zum Formulardatenmodell (FDM) finden Sie unter [[!DNL AEM Forms] Datenintegration](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -172,7 +172,7 @@ Bevor Sie die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verwen
 
 ## An SharePoint senden {#submit-to-sharedrive}
 
-Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
+Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden. 
 
 Mit dem Senden an SharePoint haben Sie folgende Möglichkeiten:
 * [Verbinden eines adaptiven Formulars mit der SharePoint-Dokumentbibliothek](#connect-af-sharepoint-doc-library)
@@ -240,10 +240,10 @@ Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-So verwenden Sie die Sendeaktion [!UICONTROL An SharePoint-Liste senden] in einem adaptiven Formular:
+So verwenden Sie die Sendeaktion [!UICONTROL An SharePoint senden] in einem adaptiven Formular:
 
-1. [SharePoint-Listenkonfiguration erstellen](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
-1. [Sendeaktion mit Formulardatenmodell in einem adaptiven Formular verwenden](#use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
+1. [Erstellen einer SharePoint-Listenkonfiguration](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
+1. [Verwenden des Sendevorgangs mit dem Formulardatenmodell (FDM) in einem adaptiven Formular](#use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit der konfigurierten Microsoft® SharePoint verbunden.
 
 #### Erstellen einer Microsoft SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
 
@@ -267,16 +267,16 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
 
 
-#### Verwenden der Sendeaktion mit einem Fomulardatenmodell in einem adaptiven Formular {#use-submit-using-fdm}
+#### Verwenden des Sendevorgangs mit dem Formulardatenmodell (FDM) in einem adaptiven Formular {#use-submit-using-fdm}
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Listenspeicherkonfiguration in einem adaptiven Formular zu verwenden:
 
-1. [Erstellen eines Formulardatenmodells mit der Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
-1. [Konfigurieren des Formulardatenmodells zum Abrufen und Senden von Daten](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Erstellen eines Formulardatenmodells (FDM) mithilfe der Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
+1. [Konfigurieren des Formulardatenmodells (FDM) zum Abrufen und Senden von Daten](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
-1. [Konfigurieren einer Übermittlungsaktion mit einem Formulardatenmodell](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Konfigurieren einer Sendeaktion mit einem Formulardatenmodell (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Listenspeicher gespeichert.
+Wenn Sie das Formular absenden, werden die Daten im angegebenen Microsoft® Sharepoint-Listenspeicher gespeichert.
 
 >[!NOTE]
 >
@@ -462,7 +462,7 @@ Der Autor kann eine benutzerdefinierte JavaScript-Bibliothek für jedes adaptive
 
 Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Absicherung benutzerdefinierte Fehlerseiten wie 400.jsp, 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Senden eines Formulars die Fehler-Codes 400, 404 oder 500 auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden. Sie können JSP-Seiten auch für andere HTTP-Fehler-Codes erstellen.
 
-Wenn Sie ein Formulardatenmodell oder ein Schema-basiertes adaptives Formular mit XML- oder JSON-Daten ausfüllen, die konform zu einem Schema sind, bei dem Daten keine `<afData>`-, `<afBoundData>`- und `</afUnboundData>`-Tags enthalten, gehen die Daten der ungebundenen Felder des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
+Wenn Sie ein Formulardatenmodell (FDM) oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten im Voraus ausfüllen, wenden Sie sich an ein Schema, das keine Daten enthält `<afData>`, `<afBoundData>`, und `</afUnboundData>` -Tags verwenden, gehen die Daten von nicht gebundenen Feldern des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell (FDM) sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

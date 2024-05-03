@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '2465'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2468'
+ht-degree: 97%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 100%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. [!DNL AEM Forms] bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen und Verarbeiten von adaptiven Formularen. Sie können adaptive Formulare auf der Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
-* **Verwendung eines Formulardatenmodell**
-  [Datenintegration](data-integration.md) ermöglicht die Integration von Entitäten und Services aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Wählen Sie das Formulardatenmodell, wenn Sie ein adaptives Formular erstellen, für das Daten aus mehreren Datenquellen abgerufen und in sie geschrieben werden sollen.
+* **Verwenden eines Formulardatenmodells (FDM)**
+  [Datenintegration](data-integration.md) ermöglicht Ihnen die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell (FDM), das Sie zum Erstellen von Adaptive Forms verwenden können. Wählen Sie das Formulardatenmodell (FDM) aus, wenn das adaptive Formular, das Sie erstellen, das Abrufen und Schreiben von Daten aus und in mehrere Datenquellen umfasst.
 
 * **Verwenden einer XDP-Formularvorlage** Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA- oder XDP-basierten Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Validierungen, Ereignisse, Eigenschaften und Muster.
 
@@ -305,7 +305,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie sie bearbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A. **Konfigurieren**: Wenn Sie **[!UICONTROL Konfigurieren]** auswählen, werden in der Seitenleiste die Komponenteneigenschaften sichtbar. Durch das Konfigurieren dieser Eigenschaften können Sie das Benutzererlebnis beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzende mithilfe der Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und sie für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
+A. **Konfigurieren**: Wenn Sie **[!UICONTROL Konfigurieren]** auswählen, werden die Komponenteneigenschaften in der Seitenleiste sichtbar. Durch das Konfigurieren dieser Eigenschaften können Sie das Benutzererlebnis beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzende mithilfe der Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und sie für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
 
 B. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an anderen Positionen im Formular einzufügen. Wenn Sie eine Komponente einfügen, erhält die eingefügte Komponente einen neuen Elementnamen, behält jedoch die Eigenschaften der kopierten Komponente bei.
 

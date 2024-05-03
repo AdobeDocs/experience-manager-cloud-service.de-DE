@@ -6,10 +6,10 @@ role: User
 feature: Adaptive Forms, FAQ
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '986'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 89%
 
 ---
 
@@ -76,15 +76,15 @@ Nein, der Überprüfungsschritt ist in [!DNL Forms] as a Cloud Service nicht ver
 * **Kann ich zu einem adaptiven Formular Diagramme hinzufügen?**
 Ja, Sie können zu adaptiven Formularen Diagramme hinzufügen. Adaptive Formulare beinhalten eine Diagrammkomponente. Darüber können Sie Diagramme in adaptive Formulare einfügen.
 
-* **Kann ich ein Formulardatenmodell mit einem relationalen Datenbankmodell verbinden?**
-Sie können ein Formulardatenmodell mit [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] und Experience Manager-Benutzerprofilen als Datenquelle verbinden. Die Verbindung eines Formulardatenmodells mit einer relationalen Datenbank wird nicht unterstützt.
+* **Kann ich ein Formulardatenmodell (FDM) mit einem relationalen Datenbankmodell verbinden?**
+Sie können ein Formulardatenmodell (FDM) mit [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]und das Benutzerprofil des Experience Managers als Datenquellen. Es wird nicht unterstützt, ein Formulardatenmodell (FDM) mit einer relationalen Datenbank zu verbinden.
 
-* **Kann ich benutzerdefinierte Zertifikate zur Authentifikation mit dem Formulardatenmodell verwenden?**
-Das Formulardatenmodell stellt keine Methode zur Verwendung benutzerdefinierter Zertifikate für die Authentifizierung bereit. Die benutzerdefinierten Zertifikate wie x509 und 2-Wege-SSL werden daher nicht unterstützt.
+* **Kann ich benutzerdefinierte Zertifikate mit dem Formulardatenmodell (FDM) zur Authentifizierung verwenden?**
+Das Formulardatenmodell (FDM) bietet keine Methode zur Verwendung benutzerdefinierter Zertifikate für die Authentifizierung. Die benutzerdefinierten Zertifikate wie x509 und 2-Wege-SSL werden daher nicht unterstützt.
 
 * **Kann ich Übermittlungsaktionen des Formularportals für adaptive Formulare verwenden?**
 
-  Sie können Ihr vorhandenes adaptives Formular dahingehend ändern, dass die Übermittlungsaktionen [An REST-Endpunkt übermitteln](configuring-submit-actions.md#submit-to-rest-endpoint), [E-Mail senden](configuring-submit-actions.md#send-email), [Senden mit Formulardatenmodell](configuring-submit-actions.md#submit-using-form-data-model) und [AEM-Workflow aufrufen](configuring-submit-actions.md#invoke-an-aem-workflow) verwendet werden. Formularportal und Formularportal-Übermittlungsaktionen sind noch nicht verfügbar. Behalten Sie die monatlichen Versionshinweise hinsichtlich einer Verfügbarkeit dieser Funktionen im Auge.
+  Sie können Ihre vorhandene adaptive Forms zur Verwendung ändern [An REST-Endpunkt übermitteln](configuring-submit-actions.md#submit-to-rest-endpoint), [E-Mail senden](configuring-submit-actions.md#send-email), [Senden mit Formulardatenmodell (FDM)](configuring-submit-actions.md#submit-using-form-data-model), und [Aufrufen eines AEM Workflows](configuring-submit-actions.md#invoke-an-aem-workflow) Übermittlungsaktionen. Formularportal und Formularportal-Übermittlungsaktionen sind noch nicht verfügbar. Behalten Sie die monatlichen Versionshinweise hinsichtlich einer Verfügbarkeit dieser Funktionen im Auge.
 
 * **Kann ich die [!DNL AEM Forms]-Mobile-App mit [!DNL AEM Forms] as a Cloud Service verwenden?**
 
