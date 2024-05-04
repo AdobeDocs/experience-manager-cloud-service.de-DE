@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 86%
+source-wordcount: '2341'
+ht-degree: 84%
 
 ---
 
@@ -190,6 +190,17 @@ Sie können den Vorbefüllungsdienst für Formulardatenmodelle verwenden, um Fel
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Eigenschaften zu speichern.
 
+
+## Wie benennen Sie ein AEM adaptives Formular um? {#rename-an-AEM-Adaptive-Form}
+
+So benennen Sie ein adaptives Formular um:
+
+1. Wählen Sie ein adaptives Formular in Ihrer AEM Forms-Benutzeroberfläche aus.
+1. Klicken Sie auf **Eigenschaften** in der oberen Leiste.
+1. Ändern des Formularnamens im **Titel** Registerkarte, wie in der Abbildung unten dargestellt.
+1. Klicken Sie auf **Speichern und schließen**.
+
+![Umbenennen eines AEM adaptiven Formulars](/help/forms/assets/change-af-name.png)
 
 <!--
 

@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 82%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 Benutzer können die Build-Pipeline nicht ausführen. Die Pipeline schlägt nach einiger Zeit fehl.
 
 Um das Problem zu beheben, öffnen Sie Cloud Manager, wählen Sie die Option **[!UICONTROL Aktualisieren]** für Ihre Umgebung aus und führen Sie die Pipeline aus.
+
+
+## Bundles befinden sich nicht im aktiven Status {#bundles-inactive-state}
+
+Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
+
+1. Starten Sie AEM und warten Sie, bis es vollständig gestartet wird, bis alle Pakete bereit sind.
+1. Beenden Sie AEM (Strg + C).
+1. Platzieren der Forms `.far` im Installationsordner.
+1. Starten Sie den AEM neu.

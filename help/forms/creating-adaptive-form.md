@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 88%
+source-wordcount: '1560'
+ht-degree: 85%
 
 ---
 
@@ -205,6 +205,16 @@ Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive F
 >
 > Sie können auch ein adaptives Formular als Vorlage speichern. Weitere Informationen finden Sie unter [Erstellen einer Vorlage mit einem adaptiven Formular](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
+## Wie benennen Sie ein AEM adaptives Formular um? {#rename-an-AEM-Adaptive-Form}
+
+So benennen Sie ein adaptives Formular um:
+
+1. Wählen Sie ein adaptives Formular in Ihrer AEM Forms-Benutzeroberfläche aus.
+1. Klicken Sie auf **Eigenschaften** in der oberen Leiste.
+1. Ändern des Formularnamens im **Titel** Registerkarte, wie in der Abbildung unten dargestellt.
+1. Klicken Sie auf **Speichern und schließen**.
+
+![Umbenennen eines AEM adaptiven Formulars](/help/forms/assets/change-af-name.png)
 
 ## Siehe auch {#see-also}
 
