@@ -1,16 +1,16 @@
 ---
-title: Authoring – Konzepte
-description: Erfahren Sie mehr über die Konzepte des Authoring in AEM mithilfe der Autoren-, Vorschau- und Veröffentlichungsumgebungen.
+title: Authoring-Konzepte
+description: Erfahren Sie mehr über die Konzepte zum Authoring in AEM mit Autoren-, Vorschau- und Veröffentlichungsumgebungen.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Authoring – Konzepte {#authoring-concepts}
+# Authoring-Konzepte {#authoring-concepts}
 
 Eine AEM-Installation besteht im Allgemeinen aus mindestens zwei Umgebungen:
 

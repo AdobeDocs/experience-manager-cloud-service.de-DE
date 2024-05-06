@@ -3,7 +3,7 @@ title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1273'
 ht-degree: 100%
 

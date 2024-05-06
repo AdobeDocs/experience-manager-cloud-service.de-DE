@@ -3,7 +3,7 @@ title: Bearbeiten der Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2268'
 ht-degree: 100%
 

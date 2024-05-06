@@ -3,9 +3,9 @@ title: Lizenz-Dashboard
 description: Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen, die für Ihre Organisation oder Ihren Mandanten verfügbar sind, einfach einsehen können.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '661'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor, um auf Ihr Lizenz-Dashboard zuzugreifen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** Console, wechseln Sie zur **Lizenz** Registerkarte.
+1. Wechseln Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** zur Registerkarte **Lizenz**.
 
 ![Lizenz-Dashboard](assets/license-dashboard.png)
 

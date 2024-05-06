@@ -4,9 +4,9 @@ description: Mithilfe von Designs können Sie ein adaptives Formular formatieren
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2754'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -143,25 +143,25 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
 
    >[!NOTE]
    >
-   > * Das Attribut name dient zur eindeutigen Identifizierung des Designs und der angegebene Name wird im **Stil** des **Assistent zum Erstellen von Formularen**.
-   > * Sie können je nach Wahl einen Namen für Ihr Design auswählen, beispielsweise `mytheme` oder `customtheme`. In diesem Fall haben wir jedoch den Namen als `aem-forms-wknd-theme`.
+   > * Das Attribut „name“ wird verwendet, um das Design eindeutig zu identifizieren, und der festgelegte Name wird auf der Registerkarte **Stil** des **Assistenten für die Formularerstellung** angezeigt. 
+   > * Sie können abhängig von Ihrer Wahl einen Namen für Ihr Design festlegen, beispielsweise `mytheme` oder `customtheme`. In diesem Fall haben wir jedoch `aem-forms-wknd-theme` als Namen angegeben.
 
 1. Öffnen Sie die Datei `package-lock.json`, um sie zu bearbeiten.
-1. Legen Sie die Werte für die `name` und `version` -Attribute. Stellen Sie sicher, dass die Werte für `name` und `version` -Attributen in `Package-lock`.json-Datei mit den Dateien in `Package.json` -Datei.
+1. Legen Sie die Werte für die Attribute `name` und `version` fest. Stellen Sie sicher, dass die Werte für die Attribute `name` und `version` in der Datei `Package-lock`.json mit denen in der Datei `Package.json` übereinstimmen.
 
    ![Abbildung der Namensänderung des Canvas-Designs](/help/forms/assets/changename_canvastheme-package-lock.png)
 
-1. (Optional) Öffnen Sie die `ReadMe` -Datei zum Bearbeiten und aktualisieren Sie den Namen des Designs.
+1. (Optional) Öffnen Sie die `ReadMe`-Datei zum Bearbeiten und aktualisieren Sie den Namen des Designs.
 
    ![Abbildung der Namensänderung des Canvas-Designs](/help/forms/assets/changename_canvastheme-readme-file.png)
 
 1. Speichern und schließen Sie die Dateien.
 
-**Überlegungen beim Festlegen des Designnamens**
+**Überlegungen beim Festlegen des Design-Namens**
 
-* Sie müssen die `@aemforms` aus dem Designnamen in `Package.json` Datei und `Package-lock.json` -Datei. Falls Sie die `@aemforms` von Ihrem benutzerdefinierten Designnamen aus, führt dies zum Fehler der Frontend-Pipeline während der Designbereitstellung.
-* Es wird empfohlen, das Design zu aktualisieren `version` in `Package.json` Datei und `Package-lock.json` -Datei, um Änderungen und Verbesserungen im Zeitverlauf für Ihr Design genau widerzuspiegeln.
-* Für wichtige Informationen zur Verwendung, zu Installationsanweisungen und anderen relevanten Details wird empfohlen, den Namen des Designs im Abschnitt `ReadMe` -Datei.
+* Sie müssen `@aemforms` aus dem Design-Namen in den Dateien `Package.json` und `Package-lock.json` entfernen. Wird `@aemforms` nicht aus dem benutzerdefinierten Design-Namen entfernt, führt dies während der Design-Bereitstellung zu einem Front-End-Pipeline-Fehler.
+* Es wird empfohlen, das Design `version` in den Dateien `Package.json` und `Package-lock.json` zu aktualisieren, damit für Ihr Design die im Laufe der Zeit durchgeführten Änderungen und Verbesserungen genau widergespiegelt werden.
+* Hinsichtlich wichtiger Informationen zur Verwendung, Installationsanweisungen und anderer relevanter Details wird empfohlen, den Namen des Designs in der `ReadMe`-Datei zu aktualisieren.
 
 #### 3. Anpassen eines Designs {#customize-the-theme}
 

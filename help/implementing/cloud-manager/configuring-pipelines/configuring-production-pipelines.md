@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1338'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Sobald Sie mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] Ihr Progra
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
+1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
 1. Gehen Sie von der Seite **Programmübersicht** zur Karte **Pipelines**, klicken Sie auf **Hinzufügen** und wählen Sie dann **Produktions-Pipeline hinzufügen** aus.
 

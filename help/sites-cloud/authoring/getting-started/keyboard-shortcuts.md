@@ -3,7 +3,7 @@ title: Tastaturbefehle für Konsolen
 description: Mit diesen Tastaturbefehlen sparen Sie Zeit beim Authoring
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
 ht-degree: 100%
 

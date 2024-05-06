@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren,
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1371'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingericht
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
+1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
 1. Rufen Sie die Karte **Pipelines** über den Startbildschirm von Cloud Manager auf. Klicken Sie auf **+Hinzufügen** und wählen Sie **Produktionsfremde Pipeline hinzufügen** aus.
 

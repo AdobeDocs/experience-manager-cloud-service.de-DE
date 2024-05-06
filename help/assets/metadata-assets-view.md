@@ -5,9 +5,9 @@ role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1783'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Metadaten sind Daten oder Beschreibungen zu den Daten. Beispielsweise können Ih
 
 Mit Metadaten können Sie Assets genauer einteilen. Außerdem erweisen sie sich als nützlich, wenn die Menge digitaler Daten ansteigt. Es ist möglich, einige Hundert Dateien zu verwalten, die nur auf den Dateinamen, den Miniaturbildern und dem Speicherbedarf basieren. Dieser Ansatz ist jedoch nicht skalierbar. Er reicht nicht aus, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Assets steigt.
 
-Mit dem Hinzufügen von Metadaten steigt der Wert eines digitalen Assets, da das Asset folgendermaßen aussieht:
+Durch das Hinzufügen von Metadaten steigt der Wert eines digitalen Assets, da sich das Asset in den folgenden Punkten verändert:
 
 * besser zugänglich – Systeme und Benutzer können es leicht finden.
 * einfacher zu verwalten – Sie können Assets mit denselben Eigenschaften einfacher finden und Änderungen auf sie anwenden.
@@ -153,19 +153,19 @@ So weisen Sie ein Metadatenformular einem Ordner zu:
 
    ![Metadatenformular aus Ordnereigenschaften](assets/metadata-from-folder-props.png)
 
-### Metadatenformular aus Ordnern entfernen {#remove-metadata-form-folder}
+### Entfernen eines Metadatenformulars aus Ordnern {#remove-metadata-form-folder}
 
-Nachdem Sie ein Metadatenformular einem oder mehreren Ordnern zugewiesen haben, können Sie mit Experience Manager Assets auch das Metadatenformular aus den ausgewählten Ordnern entfernen.
+Nachdem Sie ein Metadatenformular einem oder mehreren Ordnern zugewiesen haben, können Sie mit Experience Manager Assets auch ein Metadatenformular aus den ausgewählten Ordnern entfernen.
 
 So entfernen Sie ein Metadatenformular aus einem Ordner:
 
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Metadatenformulare]** und wählen Sie ein Metadatenformular aus.
 
-1. Klicks **[!UICONTROL Aus Ordner entfernen]**. Die Liste der zugewiesenen Ordner für die Anzeige des Metadatenformulars.
+1. Klicken Sie auf **[!UICONTROL Aus Ordner(n) entfernen]**. Die Liste der zugewiesenen Ordner für das Metadatenformular wird angezeigt.
 
 1. Wählen Sie den Ordner aus und klicken Sie auf **[!UICONTROL Entfernen]**. Sie können auch mehrere Ordner aus der Liste auswählen.
 
-Sie können auch zur Seite mit den Ordnerdetails navigieren und **[!UICONTROL Systemzugeordnete Metadatenformulare]** aus dem **[!UICONTROL Metadaten-Forms]** -Feld, um das zugewiesene Metadatenformular aus einem Ordner zu entfernen.
+Sie können auch zur Seite mit den Ordnerdetails navigieren und im Feld **[!UICONTROL Metadatenformulare]** die Option **[!UICONTROL Systemzugeordnete Metadatenformulare]** auswählen, um das zugewiesene Metadatenformular aus einem Ordner zu entfernen.
 
 ## Nächste Schritte {#next-steps}
 

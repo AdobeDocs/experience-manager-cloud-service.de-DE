@@ -3,9 +3,9 @@ title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1197'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Sobald Sie [Ihre Produktions-Pipeline einschließlich Repository, Umgebung und T
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, tippen oder klicken Sie auf das Programm, für das Sie Code bereitstellen möchten.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das Sie den Code bereitstellen möchten.
 
 1. Klicken Sie auf **Bereitstellen** aus der Aktionsaufforderung auf dem Bildschirm **Übersicht**, um den Implementierungsprozess zu starten.
 

@@ -3,9 +3,9 @@ title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2365'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,9 +41,9 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin od
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, tippen oder klicken Sie auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das eine Umgebung hinzugefügt werden soll.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** Console, klicken Sie auf **Umgebung hinzufügen** auf **Umgebungen** -Karte, um eine Umgebung hinzuzufügen.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
 
    ![Karte „Umgebung“](assets/no-environments.png)
 
@@ -123,9 +123,9 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
 ## Umgebungsdetails {#viewing-environment}
 
-Aus dem **Übersicht** -Seite können Sie auf zwei Arten auf die Details einer Umgebung zugreifen.
+Auf der Seite **Übersicht** haben Sie zwei Möglichkeiten, um auf die Details zu einer Umgebung zuzugreifen.
 
-1. Aus dem **Übersicht** klicken Sie auf die **Umgebungen** im seitlichen Navigationsbereich.
+1. Klicken Sie auf der Seite **Übersicht** im seitlichen Bedienfeld auf die Registerkarte **Umgebungen**.
 
    ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
 
@@ -302,11 +302,11 @@ Darüber hinaus können Sie sich auch über die Registerkarte **Umgebungen** der
 
 ## Verwalten von benutzerdefinierten Domain-Namen {#manage-cdn}
 
-Benutzerdefinierte Domänennamen werden in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt.
+Benutzerdefinierte Domain-Namen werden in Cloud Manager for Sites-Programmen sowohl für Veröffentlichungs- als auch für Vorschau-Services unterstützt.
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Dokument . [Einführung in benutzerdefinierte Domänennamen.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>Weitere Informationen finden Sie unter [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -316,8 +316,8 @@ Um IP-Zulassungslisten zu verwalten, gehen Sie zur Registerkarte **Umgebungen** 
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungsdienst in einer Umgebung verknüpft.
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungs-Service in einer Umgebung verknüpft.
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Dokument . [Einführung in IP-Zulassungslisten.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Weitere Informationen finden Sie unter [Einführung in IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

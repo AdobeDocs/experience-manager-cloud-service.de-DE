@@ -3,9 +3,9 @@ title: Bearbeiten des Seiteninhalts
 description: Nachdem die Seite erstellt wurde, können Sie den Inhalt bearbeiten, um die erforderlichen Aktualisierungen vorzunehmen
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

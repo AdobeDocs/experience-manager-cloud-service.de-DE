@@ -3,9 +3,9 @@ title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,8 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 >Sie müssen Mitglied der [**Implementierungs-Manager**-Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) sein, um Umgebungsvariablen hinzufügen oder ändern zu können.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auswählen, wählen Sie die zu verwaltende Konsole aus.
-1. Wählen Sie in der Seitennavigationsleiste die **Umgebungen** für das ausgewählte Programm und wählen Sie dann die Umgebung aus, für die Sie eine Umgebungsvariable erstellen möchten.
+1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus, das Sie verwalten möchten.
+1. Wählen Sie in der seitlichen Navigationsleiste das Fenster **Umgebungen** für das ausgewählte Programm und dann die Umgebung aus, für die eine Umgebungsvariable erstellt werden soll.
 1. Wählen Sie in den Details der Umgebung die Registerkarte **Konfiguration** und dann **Hinzufügen** aus, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
    * Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, wird die Schaltfläche **Konfiguration hinzufügen** in der Mitte der Seite angezeigt. Sie können diese Schaltfläche oder **Hinzufügen** verwenden, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
 
@@ -73,8 +73,8 @@ Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Sc
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie dasjenige aus, das Sie verwalten möchten.
-1. Wählen Sie im Navigationsfenster die **Umgebungen** für das ausgewählte Programm und wählen Sie dann die Umgebung aus, für die Sie eine Umgebungsvariable ändern möchten.
-1. Wählen Sie in den Details der Umgebung die Registerkarte **Konfiguration** aus und wählen Sie oben rechts **Hinzufügen/Aktualisieren** aus, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
+1. Wählen Sie im Bedienfeld „Navigation“ das Fenster **Umgebungen** für das ausgewählte Programm und dann die Umgebung aus, für die eine Umgebungsvariable geändert werden soll.
+1. Wählen Sie in den Details der Umgebung die Registerkarte **Konfiguration** und dann oben rechts **Hinzufügen/Aktualisieren** aus, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
 1. Verwenden Sie die Schaltfläche mit den Auslassungspunkten in der letzten Spalte der Zeile der Variablen, die Sie ändern möchten, und wählen Sie **Bearbeiten** oder **Löschen** aus.
 
    ![Variable bearbeiten oder löschen](assets/edit-delete-variable.png)

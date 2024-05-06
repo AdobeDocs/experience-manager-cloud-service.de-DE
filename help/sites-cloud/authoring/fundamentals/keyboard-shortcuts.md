@@ -3,7 +3,7 @@ title: Tastaturbefehle für die Seitenbearbeitung
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
 ht-degree: 100%
 

@@ -2,9 +2,9 @@
 title: Bereitstellungsprozess – Übersicht
 description: Bereitstellungsprozess – Übersicht
 source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Dieser Abschnitt behandelt wichtige Artikel zu folgenden Themen:
 
 Nachdem die automatische Bereitstellung abgeschlossen ist:
 
-* Gewährte Zugriffsrechte - Adobe erstellt eine Organisation innerhalb des Adobe Identity Management-Systems (IMS).
+* Gewährte Zugriffsrechte – Adobe erstellt eine Organisation in Adobe Identity Management System (IMS).
 * Der entsprechende Administrator hat standardmäßig Administratorberechtigungen.
 * Der Administrator kann über Admin Console Benutzer und Rollen für weitere Team-Mitglieder hinzufügen.
 * Prüfen Sie rollenbasierte Berechtigungen für Benutzer und weisen Sie in Cloud Manager welche zu.

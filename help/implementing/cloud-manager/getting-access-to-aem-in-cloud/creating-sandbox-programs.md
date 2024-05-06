@@ -3,9 +3,9 @@ title: Erstellen von Sandbox-Programmen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '434'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Pro
 
 1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** Konsole, tippen oder klicken Sie auf **Programm hinzufügen** in der oberen rechten Ecke des Bildschirms.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** oben rechts auf **Programm hinzufügen**.
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
@@ -65,10 +65,10 @@ Sie können die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung 
 
    ![Link „Zugriff auf AEM“](assets/create-program5.png)
 
-1. Sobald die in der Entwicklung bereitgestellte Nicht-Produktions-Pipeline abgeschlossen ist, führt der Assistent im Aktionsaufruf Sie dazu, entweder auf die AEM Entwicklungsumgebung zuzugreifen oder Code in der Entwicklungsumgebung bereitzustellen.
+1. Sobald die Bereitstellung der produktionsfremden Pipeline in der Entwicklungsumgebung abgeschlossen ist, führt Sie der Assistent in den Guides für Aktionsaufrufe entweder zum Zugriff auf die AEM-Entwicklungsumgebung oder zur Code-Bereitstellung in der Entwicklungsumgebung.
 
    ![Bereitstellen einer Sandbox](assets/create-program-setup-deploy.png)
 
 >[!TIP]
 >
->Lesen Sie das Dokument . [Navigieren zur Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md) Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der **Eigene Programme** Konsole.
+>Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der Konsole **Meine Programme** finden Sie unter [Navigation in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md).

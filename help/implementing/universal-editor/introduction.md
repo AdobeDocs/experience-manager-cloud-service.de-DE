@@ -3,9 +3,9 @@ title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1066'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -82,13 +82,13 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bes
 
 ## Einschränkungen {#limitations}
 
-Beachten Sie bei der Erkundung des universellen Editors und der weiteren Implementierung in Ihren eigenen Projekten folgende Einschränkungen:
+Beachten Sie bei der Erkundung des universellen Editors und später bei seiner Implementierung in Ihre eigenen Projekte folgende Einschränkungen:
 
-* maximal 25 AEM Ressourcen (Inhaltsfragmente, Seiten, Experience Fragments, Assets usw.) sollte als Instrumentierung auf einer einzelnen Seite Verweise sein.
-* AEM as a Cloud Service ist das einzige unterstützte AEM Backend.
-* AEM as a Cloud Service Version `2023.8.13099` oder höher erforderlich ist.
-* Inhaltsautoren müssen über eigene Experience Cloud-Konten verfügen.
-* Chrome und Edge werden als Browser unterstützt
+* Maximal sollten 25 AEM-Ressourcen (Inhaltsfragmente, Seiten, Experience Fragments, Assets usw.) als Instrumentierung auf einer einzelnen Seite referenziert werden.
+* AEM as a Cloud Service ist das einzige unterstützte AEM-Back-End.
+* Es ist AEM as a Cloud Service Version `2023.8.13099` oder höher erforderlich.
+* Inhaltsautorinnen und Inhaltsautoren müssen über eigene Experience Cloud-Konten verfügen.
+* Chrome und Edge werden als Browser unterstützt.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

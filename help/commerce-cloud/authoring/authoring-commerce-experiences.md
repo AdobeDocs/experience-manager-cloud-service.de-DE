@@ -3,9 +3,9 @@ title: Authoring von Commerce-Erlebnissen
 description: Erfahren Sie, wie Sie Commerce-bezogene Erlebnisse effizient erstellen und verwalten können, indem Sie auf Produktdaten und Inhalte zugreifen, ohne den Kontext verlassen zu müssen.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Das Konfigurationsdialogfeld dieser Komponente erfordert 1:n Kategorien. CIF ver
 
 ## Seiteneditor {#page-editor}
 
-Der Seiteneditor in AEM wird um Funktionen erweitert, mit denen Sie auf die Echtzeit-Produktdaten und zugehörigen Produktinhalte zugreifen können.
+Der Seiteneditor in AEM wird um Funktionen erweitert, mit denen Sie auf die Echtzeit-Produktdaten und die zugehörigen Produktinhalte zugreifen können.
 
 ### Zugreifen auf Produktdaten {#access-product-data}
 
@@ -77,7 +77,7 @@ Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch ein
 
 ### Zugreifen auf zugehörige Produktinhalte {#associated-content}
 
-Wenn der Editor 1:n-Produkte auf einer Seite erkennt, zeigt der Seitenbereich automatisch die Registerkarte &quot;Zugehörige Commerce-Inhalte&quot;an. Auf dieser Registerkarte können Autoren schnell auf AEM-Inhalt zugreifen, der mit dem Produkt getaggt wurde (weitere Informationen finden Sie unter [Anreichern von Produktdaten mit zugehörigem AEM-Inhalt](./enrich-product-associated-content.md)). Auf dieser Registerkarte finden Sie Dropdown-Listen, mit denen nach Content-Typ und bestimmten Produkten gefiltert werden kann, wenn sich mehrere Produkte auf der Seite befinden. Die Verwendung des Inhalts funktioniert wie die Verwendung von Inhalt auf der Registerkarte „Elemente“.
+Wenn der Editor 1:n Produkte auf einer Seite erkennt, wird im Seitenbereich automatisch die Registerkarte „Zugehörige Commerce-Inhalte“ angezeigt. Auf dieser Registerkarte können Autorinnen und Autoren schnell auf AEM-Inhalte zugreifen, die mit dem Produkt getaggt wurden. Weitere Informationen finden Sie unter [Anreichern von Produktdaten mit zugehörigen AEM-Inhalten](./enrich-product-associated-content.md). Auf dieser Registerkarte finden Sie Dropdown-Listen, mit denen nach Content-Typ und bestimmten Produkten gefiltert werden kann, wenn sich mehrere Produkte auf der Seite befinden. Die Verwendung des Inhalts funktioniert wie die Verwendung von Inhalt auf der Registerkarte „Elemente“.
 
 ![Seitenbereich für Produktdaten](../assets/authoring/associated-commerce-content-tab.png)
 

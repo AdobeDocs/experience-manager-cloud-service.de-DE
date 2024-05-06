@@ -3,7 +3,7 @@ title: Arbeiten mit Seitenversionen
 description: Erfahren Sie, wie Sie verschiedene Versionen Ihrer Seiten erstellen, vergleichen und wiederherstellen können.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1516'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2943'
 ht-degree: 100%
 

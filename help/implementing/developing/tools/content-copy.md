@@ -3,9 +3,9 @@ title: Das Inhaltskopie-Tool
 description: Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen auf AEM as a Cloud Service in niedrigere Umgebungen zu Testzwecken kopieren.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie im seitlichen Navigationsfenster zum **Content Sets** Registerkarte aus **Übersicht** Seite.
+1. Navigieren Sie im seitlichen Navigationsbedienfeld über die Seite **Übersicht** zur Registerkarte **Content-Sets**.
 
 1. Klicken Sie oben rechts im Bildschirm auf **Inhaltssatz hinzufügen**.
 

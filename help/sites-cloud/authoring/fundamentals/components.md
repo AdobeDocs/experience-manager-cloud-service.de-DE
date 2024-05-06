@@ -3,7 +3,7 @@ title: Komponenten
 description: Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
 ht-degree: 100%
 

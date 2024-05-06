@@ -3,7 +3,7 @@ title: Verwenden des Rich-Text-Editors in [!DNL Adobe Experience Manager] , um I
 description: Verwenden des Rich-Text-Editors, um Inhalte zu erstellen [!DNL Experience Manager] .
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
 ht-degree: 100%
 

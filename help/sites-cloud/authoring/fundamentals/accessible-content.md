@@ -3,7 +3,7 @@ title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manag
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '13685'
 ht-degree: 100%
 

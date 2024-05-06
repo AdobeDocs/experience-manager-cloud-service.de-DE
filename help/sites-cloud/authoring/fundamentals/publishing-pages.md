@@ -3,7 +3,7 @@ title: Veröffentlichen von Seiten
 description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen oder Ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1927'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Verwenden von Tags
 description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
 ht-degree: 100%
 

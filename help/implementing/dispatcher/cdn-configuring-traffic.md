@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 source-git-commit: f9eeafbf128b4581c983e19bcd5ad2294a5e3a9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1199'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,14 +16,14 @@ AEM as a Cloud Service bietet eine Reihe von Funktionen, die auf der Ebene [Adob
 
 * [Anforderungsumwandlungen](#request-transformations) – Änderung von Aspekten eingehender Anfragen, einschließlich Kopfzeilen, Pfaden und Parametern.
 * [Reaktionsumwandlungen](#response-transformations) – Änderung von Kopfzeilen, die sich auf dem Weg zurück zum Client befinden (z. B. einen Webbrowser).
-* [Clientseitige Umleitungen](#client-side-redirectors) - Trigger einer Browser-Umleitung. Diese Funktion ist noch nicht allgemein verfügbar, steht aber frühen Anwendern zur Verfügung.
+* [Client-seitige Umleitungen](#client-side-redirectors) – Auslöser einer Browser-Umleitung. Diese Funktion ist noch nicht allgemein verfügbar, steht aber für Early-Adopter zur Verfügung. 
 * [Ursprungs-Auswahlen](#origin-selectors) – Proxy zu einem anderen Ursprungs-Backend.
 
 Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF), die steuern, welcher Traffic vom CDN erlaubt oder verweigert wird. Diese Funktion wurde bereits veröffentlicht. Weitere Informationen dazu finden Sie auf der Seite [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
 
 Wenn das CDN nicht in der Lage ist, seinen Ursprung zu erreichen, können Sie außerdem eine Regel schreiben, die auf eine selbstgehostete benutzerdefinierte Fehlerseite verweist (die dann gerendert wird). Weitere Informationen hierzu finden Sie im Artikel [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei einschließlich der Traffic-Filterregeln 100 KB nicht überschreiten darf.
+Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich Traffic-Filterregeln, 100 KB nicht überschreiten darf.
 
 ## Reihenfolge der Auswertung {#order-of-evaluation}
 
@@ -35,20 +35,20 @@ Funktionell werden die verschiedenen oben erwähnten Funktionen in der folgenden
 
 Bevor Sie Traffic im CDN konfigurieren können, müssen Sie Folgendes tun:
 
-* Erstellen Sie diesen Ordner und die Dateistruktur im Ordner der obersten Ebene Ihres Git-Projekts:
+* Erstellen Sie diesen Ordner und die Dateistruktur im obersten Ordner Ihres Git-Projekts:
 
 ```
 config/
      cdn.yaml
 ```
 
-* Die `cdn.yaml` -Konfigurationsdatei sollte sowohl Metadaten als auch die Regeln enthalten, die in den folgenden Beispielen beschrieben werden. Die `kind` -Parameter auf `CDN` und die Version auf die Schemaversion eingestellt werden sollte, die derzeit `1`.
+* Die Konfigurationsdatei `cdn.yaml` sollte sowohl Metadaten als auch die Regeln enthalten, die in den nachfolgenden Beispielen beschrieben sind. Der Parameter `kind` sollte auf `CDN` und die Version auf die Schemaversion eingestellt sein (derzeit `1`). 
 
 * Erstellen Sie eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager. Siehe [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 **Anmerkungen**
 
-* RDEs unterstützen die Konfigurations-Pipeline derzeit nicht.
+* RDEs unterstützen derzeit nicht die Konfigurations-Pipeline.
 * Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
 
 ## Syntax {#configuration-syntax}
@@ -307,7 +307,7 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 | **forwardAuthorization** (optional, Standardeinstellung ist „false“) | Wenn die Eigenschaft auf „true“ gesetzt ist, wird die „Autorisierung“-Kopfzeile aus der Client-Anforderung an das Backend übergeben, andernfalls wird die Kopfzeile „Autorisierung“ entfernt. |
 | **timeout** (optional, in Sekunden, Standardeinstellung ist „60“) | Anzahl der Sekunden, die das CDN darauf warten soll, dass ein Backend-Server das erste Byte eines HTTP-Antworttextes bereitstellt. Dieser Wert wird auch als Timeout zwischen Bytes zum Backend-Server verwendet. |
 
-## Clientseitige Umleitungen {#client-side-redirectors}
+## Client-seitige Umleitungen {#client-side-redirectors}
 
 >[!NOTE]
 >Diese Funktion ist noch nicht allgemein verfügbar.  Um dem Early-Adopter-Programm beizutreten, senden Sie eine E-Mail an `aemcs-cdn-config-adopter@adobe.com` und beschreiben Sie Ihren Anwendungsfall.
@@ -316,7 +316,7 @@ Sie können Regeln für die Client-seitige Weiterleitung für 301, 302 und ähnl
 
 Sowohl absolute als auch relative Speicherorte mit festen Werten sind zulässig.
 
-Beachten Sie, dass die kumulative Größe der Konfigurationsdatei einschließlich der Traffic-Filterregeln 100 KB nicht überschreiten darf.
+Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich Traffic-Filterregeln, 100 KB nicht überschreiten darf.
 
 Konfigurationsbeispiel:
 

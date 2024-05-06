@@ -3,9 +3,9 @@ title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1031'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen. Beachten Sie, 
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** Konsole, tippen oder klicken Sie auf **Programm hinzufügen** in der oberen rechten Ecke des Bildschirms.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** oben rechts auf dem Bildschirm auf **Programm hinzufügen**.
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
@@ -119,8 +119,8 @@ Sobald die [Anforderungen](#sla-requirements) für die Aktivierung von 99,99 % S
 
 >[!TIP]
 >
->Lesen Sie das Dokument . [Navigieren zur Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md) Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der **Eigene Programme** Konsole.
+>Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der Konsole **Meine Programme** finden Sie unter [Navigation in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md).
 
 >[!NOTE]
 >
->Im Gegensatz zu einem [Sandbox-Programm](introduction-sandbox-programs.md#auto-creation) erfordert ein Produktionsprogramm, dass der Benutzer das Projekt in der entsprechenden Cloud Manager-Rolle erstellt und über die Self-Service-Benutzeroberfläche eine Umgebung hinzufügt.
+>Im Gegensatz zu einem [Sandbox-Programm](introduction-sandbox-programs.md#auto-creation) erfordert ein Produktionsprogramm, dass die Person das Projekt in der entsprechenden Cloud Manager-Rolle erstellt und über die Self-Service-Benutzeroberfläche eine Umgebung hinzufügt.

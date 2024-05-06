@@ -3,9 +3,9 @@ title: Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen
 description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '695'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhez
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, tippen oder klicken Sie auf das Programm, dessen Details Sie im Ruhezustand anzeigen möchten.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, das in den Ruhezustand versetzt werden soll, um dessen Details anzuzeigen.
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
@@ -65,7 +65,7 @@ In der Developer Console können Sie auch auf den Link **Umgebungen** in den Bre
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, tippen oder klicken Sie auf das Programm, dessen Ruhezustand Sie deaktivieren möchten, um dessen Details anzuzeigen.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das der Ruhezustand aufgehoben werden soll, um dessen Details anzuzeigen.
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 

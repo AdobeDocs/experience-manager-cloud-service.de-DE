@@ -3,9 +3,9 @@ title: Überprüfen des Domain-Namenstatus
 description: Erfahren Sie, wie Sie feststellen können, ob Ihr benutzerdefinierter Domain-Name von Cloud Manager erfolgreich verifiziert wurde.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '651'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Sie können den Status Ihres benutzerdefinierten Domain-Namens in Cloud Manager 
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, wählen Sie das Programm aus.
+1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
 1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 

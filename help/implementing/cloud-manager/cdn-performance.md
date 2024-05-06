@@ -3,9 +3,9 @@ title: CDN-Leistungs-Dashboard
 description: Erfahren Sie, wie Cloud Manager die Leistung des Inhaltsbereitstellungsnetzwerks (Content Delivery Network, CDN) bewertet und was Sie über das Dashboard lernen können.
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Das CDN-Dashboard ist auf der Übersichtsseite jedes Programms verfügbar.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Im **[Eigene Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** -Konsole, tippen oder klicken Sie auf das Programm, dessen CDN-Dashboard Sie anzeigen möchten.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, dessen CDN-Dashboard angezeigt werden soll.
 
    ![Seite „Meine Programme“](assets/my-programs.png)
 
