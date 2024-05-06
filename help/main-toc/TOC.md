@@ -716,7 +716,7 @@ ht-degree: 99%
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
    + Transaktionsberichte {#using-communications}
       + [Abrechenbare APIs für Transaktionsberichte](/help/forms/transaction-reports-billable-apis.md)
-      + [Eine Transaktion für eine benutzerdefinierte Implementierung aufzeichnen](/help/forms/record-transaction-custom-implementation.md)
+      + [Aufzeichnen einer Transaktion für eine benutzerdefinierte Implementierung](/help/forms/record-transaction-custom-implementation.md)
    + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
       + [API-Referenz für adaptive Formulare](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Kommunikations-API-Referenz zu AEM Forms Cloud Service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1068,7 +1068,7 @@ ht-degree: 99%
       + Universeller Editor {#universal-editor}
          + [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md)
          + [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank-Beispielanwendung](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank-Beispiel-App](/help/implementing/universal-editor/securbank.md)
          + [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md)
          + [Entwicklerübersicht für den universellen Editor](/help/implementing/universal-editor/developer-overview.md)
          + [Attribute und Elementtypen](/help/implementing/universal-editor/attributes-types.md)
