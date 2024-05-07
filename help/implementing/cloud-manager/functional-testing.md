@@ -2,10 +2,10 @@
 title: Funktionstests
 description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Bereitstellungsprozess von AEM as a Cloud Service integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
+workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -45,9 +45,9 @@ Das folgende Diagramm bietet einen detaillierten Überblick über die verfügbar
 
 |                               | Komponententests | Benutzerdefinierte<br/> Funktionstests | Benutzerdefinierte<br/> Benutzeroberflächentests | Kundenvalidierungen<br/> | Manuelle<br/> Tests |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Produktions-Pipeline** | Ja<br/>Blockieren<br/> | Ja<br/>Blockieren<br/>60 min Zeitüberschreitung | Ja<br/>Blockieren<br/>60 min Zeitüberschreitung | Nein | Nein |
-| **Produktionsfremde Pipeline** | Ja<br/>Blockieren<br/> | Opt-in<br/>Blockieren<br/>60 min Zeitüberschreitung | Opt-in<br/>Blockieren<br/>60 min Zeitüberschreitung | Nein | Nein |
-| **Interne Adobe-Validierung** | Ja<br/>Blockieren<br/> | Ja<br/>Blockieren<br/>60 min Zeitüberschreitung | Ja<br/>Blockieren<br/>60 min Zeitüberschreitung | Nein | Nein |
+| **Produktions-Pipeline** | Ja<br/>Blockieren<br/> | Ja<br/>Blockieren<br/>60 min Zeitüberschreitung | Ja<br/>Blockieren<br/>30 m Zeitüberschreitung | Nein | Nein |
+| **Produktionsfremde Pipeline** | Ja<br/>Blockieren<br/> | Opt-in<br/>Blockieren<br/>60 min Zeitüberschreitung | Opt-in<br/>Blockieren<br/>30 m Zeitüberschreitung | Nein | Nein |
+| **Interne Adobe-Validierung** | Ja<br/>Blockieren<br/> | Ja<br/>Blockieren<br/>60 min Zeitüberschreitung | Ja<br/>Blockieren<br/>30 m Zeitüberschreitung | Nein | Nein |
 | **Kunden-CI/CD** | Ja | Ja | Ja | Ja | Ja |
 | **Lokaler Entwickler für Kunden** | Ja | Ja | Ja | Ja | Ja |
 
