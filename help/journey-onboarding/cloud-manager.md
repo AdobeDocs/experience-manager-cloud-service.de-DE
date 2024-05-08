@@ -3,9 +3,9 @@ title: Zugreifen auf Cloud Manager
 description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Sie Ihre Projektressourcen einrichten können.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
-workflow-type: ht
-source-wordcount: '1044'
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
+workflow-type: tm+mt
+source-wordcount: '1040'
 ht-degree: 100%
 
 ---
@@ -109,8 +109,6 @@ Wenn in Ihrer Organisation bereits Programme vorhanden sind und Sie System-Admin
 Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie verifizieren, dass Ihnen das Produktprofil **Geschäftsinhaber** zugewiesen wurde.
 
 1. Wählen Sie Ihr Profil oben rechts im Fenster aus.
-
-   ![Benutzerprofil](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. Um die Ihren Benutzenden zugewiesenen Rollen anzuzeigen, wählen Sie **Benutzerrollen**.
 
