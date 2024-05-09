@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
-workflow-type: ht
-source-wordcount: '1631'
-ht-degree: 100%
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 97%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
->Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
+> Eine modernisierte OpenAPI-Implementierung der Content Fragment Management-API ist verfügbar. Die vollständige Dokumentation finden Sie unter [Content Fragment Management-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de). Es wird empfohlen, die neue OpenAPI-Implementierung zu verwenden. Die vorhandene Verwendung der Assets-HTTP-API für Inhaltsfragmente sollte in die neue OpenAPI für die Inhaltsfragmentverwaltung migriert werden.
 
 So greifen Sie auf die API zu:
 
