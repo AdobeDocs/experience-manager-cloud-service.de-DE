@@ -2,10 +2,10 @@
 title: Verwenden von Best Practices Analyzer
 description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft zu einem Upgrade erkennen können.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: ht
-source-wordcount: '2418'
-ht-degree: 100%
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 89%
 
 ---
 
@@ -51,6 +51,13 @@ Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heru
 >[!NOTE]
 >Laden Sie Best Practices Analyzer aus dem [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html)-Portal herunter.
 
+## Konnektivität der Quellumgebung {#source-environment-connectivity}
+
+Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Um den von BPA generierten Bericht automatisch erfolgreich in Cloud Acceleration Manager hochzuladen, müssen die folgenden Endpunkte über die Instanz verfügbar sein, die AEM ausgeführt wird:
+
+* Der Azure Blob Storage-Service: `casstorageprod.blob.core.windows.net`
+
+
 ## Anzeigen des Best Practices Analyzer-Berichts {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 und höher {#aem-later-versions}
@@ -63,33 +70,42 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
 1. Klicken Sie auf **Bericht generieren**, um Best Practices Analyzer auszuführen.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Während BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm verfolgen. Dabei wird die Anzahl der analysierten Elemente und gefundenen Ergebnisse angezeigt.
+1. Stellen Sie den BPA-Upload-Schlüssel bereit, um den generierten BPA-Bericht automatisch in hochzuladen. [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Um die Upload-Taste zu erhalten, navigieren Sie zum [Best Practices-Analyse in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>Sie haben die Möglichkeit, den automatischen Upload in CAM zu überspringen, indem Sie **Bericht-automatisches Hochladen in CAM überspringen**. Wenn Sie das Überspringen wählen, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertdatei herunterladen und dann die Datei in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
+
+1. Die **Erzeugen** wird aktiv, wenn ein gültiger Schlüssel bereitgestellt wird. Klicken Sie auf **Erzeugen** , um die Berichterstellung zu starten.
+
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. Während BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm verfolgen. Er zeigt den Fortschritt in Prozent an, der abgeschlossen wurde. Außerdem wird die Anzahl der analysierten Elemente sowie die Anzahl der gefundenen Ergebnisse angezeigt.
+
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>Der Zeitstempel für die Gültigkeit der BPA-Schlüssel wird oben rechts angezeigt. Sie sollten den BPA-Upload-Schlüssel verlängern, wenn er bald abläuft. Um den Schlüssel zu verlängern, können Sie auf **Verlängern** Navigieren Sie zu CAM, um den Schlüssel zu verlängern.
 
 1. Sobald der BPA-Bericht erstellt wurde, werden eine Zusammenfassung sowie die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Ergebnistyp und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie die Zahl anklicken, die dem Typ des Ergebnisses in der Tabelle entspricht.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   Mit der oben beschriebenen Aktion wird automatisch ein Bildlauf zur Position des Ergebnisses im Bericht durchgeführt.
+1. Sie können den Bericht im CSV-Format herunterladen, indem Sie auf **Exportieren in CSV**. Sie haben auch die Möglichkeit, den Bericht in der CAM anzuzeigen, indem Sie auf **Zu CAM wechseln**. Dadurch gelangen Sie zum [Best Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) Seite in CAM.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+Sie können BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
 
-1. Sie haben die Möglichkeit, den Bericht im CSV-Format herunterzuladen, indem Sie auf **In CSV exportieren** klicken, wie in der folgenden Abbildung dargestellt.
+![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >Sie können BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
+1. Wenn der Cache abläuft, haben Sie die Möglichkeit, den zuletzt erstellten Bericht in CAM anzuzeigen, indem Sie auf **Letzten erstellten Bericht im CAM anzeigen** oder die Erstellung eines neuen Berichts durch Klicken auf **Neuen Bericht erstellen**.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![image](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >Während der Berichterstellung wird der Fortschritt in Prozent angezeigt, wie in der Abbildung unten dargestellt.
-
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### Verwenden von Filtern im Bericht „Best Practices Analyzer“ {#bpa-filters}
 
