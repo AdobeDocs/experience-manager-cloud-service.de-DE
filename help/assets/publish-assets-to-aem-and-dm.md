@@ -2,7 +2,7 @@
 title: Quick Publish in AEM und Dynamic Media
 description: Mit der Funktion "Quick Publish"in der Assets-Ansicht können Sie Assets gleichzeitig oder separat in AEM und Dynamic Media veröffentlichen. Sie können Assets und Ordner auswählen und die Veröffentlichung in Dynamic Media oder AEM auswählen.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Sie können Assets beim Hochladen von Assets in einen Ordner in AEM und Dynamic 
 So veröffentlichen Sie Assets während des Uploads in einen Ordner, für den der Dynamic Media-Veröffentlichungsmodus auf **Bei Aktivierung**:
 
 1. Klicks **Hinzufügen von Assets** > **Durchsuchen** > **Dateien durchsuchen** , um zum entsprechenden Ordner zum Hochladen von Assets zu navigieren. Die **Veröffentlichungsoptionen** angezeigt. **DM-Veröffentlichungsmodus** as **Bei Aktivierung**.
-   ![Bild bei Aktivierung hochladen](/help/assets/assets/upload-upon-activation.png)
+   ![Bild bei Aktivierung hochladen](/help/assets/assets/upload-upon-activation1.png)
 2. Auswählen **Veröffentlichen in AEM und Dynamic Media** und klicken **Hochladen**. Die Assets werden gleichzeitig in AEM und Dynamic Media veröffentlicht. Informationen zum aktualisierten Veröffentlichungsstatus für diese Assets finden Sie unter [Status &quot;Veröffentlichen&quot;überprüfen](#check-publish-status).
 
 ### Dynamic Media-Veröffentlichungsmodus auf Sofort eingestellt {#dynamic-media-publish-mode-set-to-immediate}
