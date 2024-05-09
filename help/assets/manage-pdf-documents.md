@@ -4,10 +4,10 @@ description: Verwalten von PDF-Dokumenten in  [!DNL Adobe Experience Manager]  a
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 99%
 
 ---
 
@@ -147,3 +147,4 @@ Für die mehrseitige Vorschau anderer unterstützter Dokumentenformate führen S
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

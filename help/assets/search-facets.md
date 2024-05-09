@@ -4,10 +4,10 @@ description: Dieser Artikel beschreibt, wie Sie in Experience Manager Suchfacett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '2498'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '2505'
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Wählen Sie das Adobe Experience Manager-Logo und navigieren Sie dann zu **[!UICONTROL Tools > Allgemein > Suchformulare]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Suchformulare]** die Option **[!UICONTROL Asset-Admin-Suchleiste]** und dann das Symbol „Bearbeiten“.
 1. Ziehen Sie auf der Seite **[!UICONTROL Suchformular bearbeiten]** den Eintrag **[!UICONTROL Options-Eigenschaft]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
-1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Namen für die Eigenschaft ein. Um beispielsweise Assets auf Grundlage ihres Formats zu suchen, geben Sie einen benutzerfreundlichen Namen für die Bezeichnung ein, z. B. **[!UICONTROL Dateityp]**. Geben Sie im Eigenschaftsfeld die Eigenschaft an, anhand derer die Suche durchgeführt werden soll, wie beispielsweise `jcr:content/metadata/dc:format.`
+1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Namen für die Eigenschaft ein. Um beispielsweise Assets auf Grundlage ihres Formats zu suchen, geben Sie einen benutzerfreundlichen Namen für die Bezeichnung ein, z. B. **[!UICONTROL Dateityp]**. Geben Sie die Eigenschaft, anhand derer die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise `jcr:content/metadata/dc:format.`
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** den Pfad der JSON-Datei an, in der Sie die Knoten für die Optionen und entsprechende Schlüssel-Wert-Paare definiert haben.
@@ -117,7 +117,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
    Die verfügbaren Felder in der Options-Eigenschaft
 
 1. Geben Sie eine optionale Beschreibung in das Feld **Beschreibung** ein und klicken Sie auf **[!UICONTROL Fertig]**.
-1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat „Optionen“ wird zum Bereich **Suchen** hinzugefügt. Die Optionen für **[!UICONTROL Dateityp]** werden als Kontrollkästchen angezeigt.
+1. Navigieren Sie zum Bereich „Suchen“. Das Optionsprädikat wird zum Bereich **Suchen** hinzugefügt. Die Optionen für **[!UICONTROL Dateityp]** werden als Kontrollkästchen angezeigt.
 
 ## Hinzufügen eines Mehrwert-Eigenschaftsprädikats {#adding-a-multi-value-property-predicate}
 
@@ -354,6 +354,7 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 * [Verwalten von Metadaten](manage-metadata.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

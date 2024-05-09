@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '777'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 99%
 
 ---
 
@@ -24,31 +24,31 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 
 * **Auto-Upright**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und verzerrte Perspektiven in Bildern zu korrigieren. Beispielsweise, um Horizonte gerade auszurichten.
 
-   ![Auto-Ton](/help/assets/assets/content-automation-autotone.png)
+  ![Auto-Ton](/help/assets/assets/content-automation-autotone.png)
 
-   *Abbildung: Auto-Ton und automatische Ausrichtung können dazu beitragen, verzerrte Bilder zu verbessern.*
+  *Abbildung: Auto-Ton und automatische Ausrichtung können dazu beitragen, verzerrte Bilder zu verbessern.*
 
 * **Lightroom-Vorgaben**: Gibt Bildern einen benutzerdefinierten Look, indem über benutzerdefinierte Vorgaben ein konsistentes Erscheinungsbild erzielt wird.
 
-   ![Lightroom-Vorgabe](/help/assets/assets/content-automation-lrpresets.png)
+  ![Lightroom-Vorgabe](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Abbildung: Adobe Lightroom-Vorgabe zur konsistenten Verbesserung der Bildqualität für viele Bilder.*
+  *Abbildung: Adobe Lightroom-Vorgabe zur konsistenten Verbesserung der Bildqualität für viele Bilder.*
 
 * **Bild-Freistellen**: Wendet künstliche Intelligenz an, um eine Auswahl um sich abhebende Objekte zu erstellen und den Hintergrund mit einem einzigen Befehl zu entfernen.
 
-   ![Entfernen des Hintergrunds und Ausschneiden des Bildes aus einem Foto](/help/assets/assets/content-automation-backgroundremove.png)
+  ![Entfernen des Hintergrunds und Ausschneiden des Bildes aus einem Foto](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **Bildmaske**: Verwendet künstliche Intelligenz zum Erstellen von Masken um sich abhebende Objekte mit einem einzigen Befehl.
 
-   ![Bild mit KI maskieren](/help/assets/assets/content-automation-mask.png)
+  ![Bild mit KI maskieren](/help/assets/assets/content-automation-mask.png)
 
 * **Photoshop-Aktionen**: Wendet eine Reihe von [!DNL Adobe Photoshop]-Aufgaben auf eine Datei oder einen Satz von Dateien an.
 
-   ![Photoshop-Aktionen](/help/assets/assets/content-automation-psactions.png)
+  ![Photoshop-Aktionen](/help/assets/assets/content-automation-psactions.png)
 
 * **Intelligentes Ersetzen von Objekten**: Skalierte Personalisierung, indem Sie Bilder austauschen und dabei alle Effekte und Anpassungen beibehalten, die in einer PSD-Datei vorgenommen wurden.
 
-   ![Intelligentes Ersetzen von Objekten](/help/assets/assets/content-automation-objectreplace.png)
+  ![Intelligentes Ersetzen von Objekten](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Aktivieren der Inhaltsautomatisierung für ein AEM as a Cloud Service-Programm {#enable-content-automation}
 
@@ -115,10 +115,10 @@ Um die vorhandenen Assets zu verarbeiten, wählen Sie die Assets aus, klicken Si
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Konfigurieren und verwenden Sie Asset-Microservices über Verarbeitungsprofile](/help/assets/asset-microservices-configure-and-use.md).
 >* [Integrieren Sie [!DNL Experience Manager] mit [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Asset-Aufnahme und -Verarbeitung mit Asset-Microservices: Ein Überblick](/help/assets/asset-microservices-overview.md).
-

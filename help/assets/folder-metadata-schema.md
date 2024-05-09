@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
-source-wordcount: '1059'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '1066'
+ht-degree: 99%
 
 ---
 
@@ -187,3 +187,4 @@ Geben Sie Metadatenwerte in die verschiedenen Felder ein und wählen Sie **[!UIC
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: ht
-source-wordcount: '4976'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '4983'
+ht-degree: 99%
 
 ---
 
@@ -646,6 +646,7 @@ Sie können Anmerkungen zu Video-Assets hinzufügen. Während Videos mit Anmerku
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 96%
+source-wordcount: '2460'
+ht-degree: 99%
 
 ---
 
@@ -124,7 +124,7 @@ Der öffentliche Schlüssel (Zertifikat) authentifiziert Ihr Produktprofil in de
 
 1. Klicken Sie auf der Seite mit den Adobe IMS-Konfigurationen auf **[!UICONTROL Erstellen]**. Die Seite **[!UICONTROL Technische Konfiguration des Adobe IMS-Kontos]** wird geöffnet.
 
-1. Im **[!UICONTROL Zertifikat]** Registerkarte auswählen **[!UICONTROL Adobe Stock]** aus dem **[!UICONTROL Cloud-Lösung]** Dropdown-Liste.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Zertifikat]** die Option **[!UICONTROL Adobe Stock]** aus der Dropdown-Liste **[!UICONTROL Cloud-Lösung]** aus.
 
 1. Sie können für die Konfiguration ein Zertifikat erstellen oder ein vorhandenes Zertifikat wiederverwenden.
 
@@ -151,7 +151,7 @@ So generieren Sie die Anmeldedaten für das Service-Konto und die JWT-Payload:
 1. Melden Sie sich bei der Adobe Developer Console mit Berechtigungen als Systemadministrator an. Die Standard-URL lautet [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
-   Stellen Sie sicher, dass Sie die richtige IMS-Organisation (Lagerberechtigung) aus der Dropdown-Liste (Organisationsliste) ausgewählt haben.
+   Stellen Sie sicher, dass Sie die richtige IMS-Organisation (Stock-Berechtigungen) aus der Dropdown-Liste (Organisation) ausgewählt haben.
 
 1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]**. Für Ihre Organisation wird ein leeres Projekt mit einem systemgenerierten Namen erstellt.
 
@@ -171,7 +171,7 @@ So generieren Sie die Anmeldedaten für das Service-Konto und die JWT-Payload:
 
 1. Wählen Sie das Standardproduktprofil **[!UICONTROL Adobe Stock]** und klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**.
 
-1. Sobald die API konfiguriert ist, werden Sie zur Seite mit der API-Übersicht weitergeleitet. Von der linken Navigation unter **[!UICONTROL Anmeldeinformationen]**, klicken Sie auf die **[!UICONTROL Dienstkonto (JWT)]** -Option. Sie können hier die Anmeldedaten einsehen und weitere Aktionen durchführen, beispielsweise JWT-Token generieren, Anmeldedaten kopieren und Client-Geheimnisse abrufen.
+1. Sobald die API konfiguriert ist, werden Sie zur Seite mit der API-Übersicht weitergeleitet. Klicken Sie im linken Navigationsbereich unter **[!UICONTROL Anmeldeinformationen]** auf die Option **[!UICONTROL Service-Konto (JWT)]**. Sie können hier die Anmeldedaten einsehen und weitere Aktionen durchführen, beispielsweise JWT-Token generieren, Anmeldedaten kopieren und Client-Geheimnisse abrufen.
 
 1. Kopieren Sie auf der Registerkarte **[!UICONTROL Client-Anmeldedaten]** die **[!UICONTROL Client-ID]**.
 
@@ -220,7 +220,7 @@ So konfigurieren Sie den [!DNL Adobe Stock]-Cloud-Service:
 
    Wählen Sie die IMS-Konfiguration aus, die Sie beim [Konfigurieren des IMS-Kontos](#create-ims-account-configuration) erstellt haben.
 
-   Wählen Sie Ihr Gebietsschema aus der Dropdownliste aus.
+   Wählen Sie Ihr Gebietsschema aus der Dropdown-Liste aus.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
@@ -271,7 +271,7 @@ Sie können eine Benutzergruppe erstellen oder einer vorhandenen Benutzergruppe 
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Adobe Stock]**. Wählen Sie die [!DNL Adobe Stock]-Cloud-Konfiguration und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 
-1. Fügen Sie die erstellte Benutzergruppe zur [!DNL Adobe Stock] Konfiguration. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+1. Fügen Sie die erstellte Benutzergruppe zur [!DNL Adobe Stock]-Konfiguration hinzu. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
    ![assign-user](assets/aem-stock-adduser.png)
 
@@ -308,7 +308,7 @@ So aktivieren Sie die [!DNL Adobe Stock]-Cloud-Konfiguration:
 
 1. Klicken Sie oben rechts auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]**. Das Fenster **[!UICONTROL Benutzereinstellungen]** wird geöffnet.
 
-1. Wählen Sie die gewünschte **[!UICONTROL Stock-Konfiguration]** aus der Dropdownliste aus und klicken Sie auf **[!UICONTROL Accept]** , um die Konfiguration zu aktivieren.
+1. Wählen Sie die gewünschte **[!UICONTROL Stock-Konfiguration]** aus der Dropdown-Liste aus und klicken Sie auf **[!UICONTROL Akzeptieren]**, um die Konfiguration zu aktivieren.
 
    ![Benutzereinstellungen](assets/aem-stock-preferences.png)
 
@@ -379,7 +379,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 * **Die Funktion zur Einschränkung von Benutzern bei der Lizenzierung funktioniert nicht ordnungsgemäß**: Alle Benutzer mit `read`-Berechtigungen für die Stock-Konfiguration dürfen die [!DNL Adobe Stock]-Assets suchen und lizenzieren.
 
-* **Benutzer ohne Administratorrechte müssen die [!DNL Adobe Stock]-Cloud-Konfiguration manuell aktivieren**: Im Fenster **[!UICONTROL Benutzereinstellungen]** zeigt die **[!UICONTROL Stock-Konfiguration]** die [!DNL Adobe Stock]-Cloud-Konfiguration zwar als aktiviert an, aber sie funktioniert für Benutzer ohne Administratorrechte nicht. Der Benutzer muss auf die **[!UICONTROL Accept]** -Schaltfläche, um die Konfiguration &quot;Stock&quot;zu aktivieren. In Ermangelung dieses Schritts gibt das System eine Fehlermeldung beim Zugriff auf **[!UICONTROL Assets]** zurück.
+* **Benutzer ohne Administratorrechte müssen die [!DNL Adobe Stock]-Cloud-Konfiguration manuell aktivieren**: Im Fenster **[!UICONTROL Benutzereinstellungen]** zeigt die **[!UICONTROL Stock-Konfiguration]** die [!DNL Adobe Stock]-Cloud-Konfiguration zwar als aktiviert an, aber sie funktioniert für Benutzer ohne Administratorrechte nicht. Die Person muss auf die Schaltfläche **[!UICONTROL Akzeptieren]** klicken, um die Stock-Konfiguration zu aktivieren. In Ermangelung dieses Schritts gibt das System eine Fehlermeldung beim Zugriff auf **[!UICONTROL Assets]** zurück.
 
 * **Redaktionelle Bildwarnung wird nicht angezeigt**: Bei der Lizenzierung eines Bilds können Benutzer nicht prüfen, ob ein Bild ausschließlich der redaktionellen Verwendung dient. Um zu verhindern, dass Bilder falsch verwendet werden, können Administratoren den Zugriff auf redaktionelle Assets über die Admin Console deaktivieren.
 
@@ -471,6 +471,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

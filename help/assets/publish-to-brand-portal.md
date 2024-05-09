@@ -5,10 +5,10 @@ contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 9e09dc7a5226a2b8da7c796a8a8c4480b99eeb3b
-workflow-type: ht
-source-wordcount: '1280'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 99%
 
 ---
 
@@ -291,3 +291,4 @@ Weitere Informationen finden Sie in der [Dokumentation zu Brand Portal](https://
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

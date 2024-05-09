@@ -2,9 +2,9 @@
 title: Farb-Tags für Bilder
 description: Mit Adobe Experience Manager Assets können Sie zwischen Farben in einem Bild unterscheiden und diese automatisch als Tags anwenden. Sie können diese Tags dann verwenden, um Bilder zu suchen und zu filtern.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1244'
 ht-degree: 99%
 
 ---
@@ -169,7 +169,7 @@ So suchen Sie Bilder basierend auf Farben:
 
 1. Gehen Sie zu **[!UICONTROL Assets > Dateien]**.
 
-1. Auswählen **[!UICONTROL Filter]** aus der Dropdown-Liste.
+1. Wählen Sie **[!UICONTROL Filter]** in der Dropdown-Liste aus.
    ![Filtern von Assets](assets/filter-assets.png)
 
 1. Wählen Sie das [AEM Assets-Farbprädikat](#configure-search-predicate) aus.
@@ -196,3 +196,4 @@ So suchen Sie Bilder basierend auf Farben:
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

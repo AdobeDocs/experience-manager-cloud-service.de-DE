@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '4270'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '4277'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 In diesem Artikel wird das Verwalten und Bearbeiten von Assets in [!DNL Adobe Experience Manager Assets] beschrieben. Zum Verwalten von [!DNL Content Fragments], siehe [[!DNL Content Fragments]](content-fragments/content-fragments.md)-Assets.
 
-## Erstellen von Ordnern {#creating-folders}
+## Erstellen eines Ordners {#creating-folders}
 
 Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei [!DNL Experience Manager Assets] müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
@@ -270,7 +270,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
    * Mit **[!UICONTROL Löschen]** bestätigen Sie die Aktion.
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
-      * Wenn das Asset Verweise enthält, werden Sie durch eine Fehlermeldung darüber informiert, dass **[!UICONTROL Ein oder mehrere Assets referenziert werden]**. Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+      * Wenn das Asset Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **[!UICONTROL Es wird auf ein oder mehrere Assets verwiesen]**.  Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
 
    >[!NOTE]
    >
@@ -675,3 +675,4 @@ Weitere Informationen finden Sie unter [Durchsuchen von DAM-Assets mit dem Deskt
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

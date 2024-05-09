@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3869'
+source-wordcount: '3842'
 ht-degree: 99%
 
 ---
@@ -33,7 +33,7 @@ Die Funktion „Connected Assets“ unterstützt die oben genannten Anwendungsf�
 
 Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Sie können Dynamic Media-Bilder auch über Connected Assets auf den Web-Seiten Ihrer Site verwenden und die Dynamic Media-Funktionen wie intelligentes Zuschneiden und Bildvorgaben nutzen.
 
-Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und den Zugriff auf Remote-Assets im Site-Editor. Für alle anderen Anwendungsfälle, bei denen das gesamte Korpus der Assets auf den Sites verfügbar sein muss, sollten Sie in Erwägung ziehen, die Assets in großen Mengen zu migrieren, anstatt Connected Assets zu verwenden.
+Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und den Zugriff auf Remote-Assets im Site-Editor. Für alle anderen Anwendungsfälle, bei denen das gesamte Korpus der Assets auf den Sites verfügbar sein muss, sollten Sie in Erwägung ziehen, die Assets in Massen zu migrieren, anstatt Connected Assets zu verwenden.
 
 ### Voraussetzungen und unterstützte Bereitstellungen {#prerequisites}
 
@@ -71,7 +71,7 @@ Nachfolgend werden die verschiedenen Rollen, die an der Konfiguration beteiligt 
 
 ### Connected Assets-Architektur {#connected-assets-architecture}
 
-Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager[!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Bereitstellung nur mit einer Remote-DAM-Bereitstellung verbinden.
+Mit Experience Manager können Sie eine Remote-DAM-Bereitstellung als Quelle mit mehreren Experience Manager [!DNL Sites]-Bereitstellungen verbinden. Sie können jedoch eine [!DNL Sites]-Bereitstellung nur mit einer Remote-DAM-Bereitstellung verbinden.
 
 Ermitteln Sie die optimale Anzahl von Sites-Instanzen für das Verbinden mit einer entfernten DAM-Bereitstellung. Adobe empfiehlt, Sites-Instanzen schrittweise in die Bereitstellung einzubinden und zu testen, dass es keine Auswirkungen auf die Leistung des Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
 
@@ -233,7 +233,7 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
    ![Remote-Referenzen in der Seite Asset-Eigenschaften](assets/connected-assets-remote-reference.png)
 
 1. Die Referenzen für [!DNL Sites]-Seiten zeigen die Gesamtzahl der Referenzen für jede lokale [!DNL Sites] an. Es kann einige Zeit dauern, bis alle Referenzen gefunden und die Gesamtzahl der Referenzen angezeigt werden.
-1. Die Liste der Verweise ist interaktiv und DAM-Benutzer können auf einen Verweis klicken, um die verweisende Seite zu öffnen. Wenn Remote-Referenzen aus irgendeinem Grund nicht abgerufen werden können, wird eine Benachrichtigung angezeigt, die den Benutzer über den Fehler informiert.
+1. Die Liste der Verweise ist interaktiv, und DAM-Benutzende können auf einen Verweis klicken, um die verweisende Seite zu öffnen. Wenn Remote-Referenzen aus irgendeinem Grund nicht abgerufen werden können, wird eine Benachrichtigung angezeigt, die den Benutzer über den Fehler informiert.
 1. Benutzer können das Asset verschieben oder löschen. Beim Verschieben oder Löschen eines Assets wird die Gesamtzahl der Referenzen aller ausgewählten Assets/Ordner in einem Warndialogfeld angezeigt. Beim Löschen eines Assets, für das die Referenzen noch nicht abgerufen wurden, wird ein Warndialogfeld angezeigt.
 
    ![Warnung „Löschen erzwingen“](assets/delete-referenced-asset.png)
@@ -318,9 +318,9 @@ Sie können der [!DNL Sites]-Bereitstellung Assets hinzufügen, diese Assets kö
 * Um Erkenntnisse zur Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
 * Die Verwendung des Pfad-Browsers beim Verfassen von Komponenten wird in verbundenen Assets nicht unterstützt.
 
-* Sie können das Remote-Asset nicht in das [Dialogfeld „Konfiguration der Bildkomponente“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de#configure-dialog) ziehen. Sie können das Remote-Asset jedoch direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]** zu klicken.
+* Sie können das Remote-Asset nicht in das [Dialogfeld „Konfiguration der Bildkomponente“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de#configure-dialog) ziehen. Sie können jedoch das Remote-Asset direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]** zu klicken.
 
-### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
+### Berechtigungen und Asset-Management {#permissions-and-managing-assets}
 
 * Lokale Assets sind schreibgeschützte Kopien. [!DNL Experience Manager]-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
@@ -377,3 +377,4 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

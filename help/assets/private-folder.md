@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '614'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '621'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können in der Benutzeroberfläche von [!DNL Adobe Experience Manager Assets
 
 >[!NOTE]
 >
->Der private Ordner hat mindestens einen Benutzer mit der Rolle „Eigentümer“.
+>Der private Ordner hat mindestens ein Mitglied mit der Rolle „Eigentümer“.
 >
 >Um einen privaten Ordner zu erstellen, benötigen Sie `Read`- und `Modify`-Berechtigungen für den übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen. Wenn Sie kein Administrator sind, werden diese Berechtigungen für `/content/dam` nicht standardmäßig für Sie aktiviert. In diesem Fall brauchen Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe, bevor Sie versuchen, private Ordner zu erstellen oder Ordnereinstellungen anzuzeigen.
 
@@ -95,3 +95,4 @@ Sie können einen Ordner löschen, indem Sie ihn auswählen und die Option [!UIC
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
