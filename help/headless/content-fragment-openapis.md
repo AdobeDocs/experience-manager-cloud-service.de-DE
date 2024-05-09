@@ -1,15 +1,16 @@
 ---
 title: OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle
 description: Erfahren Sie mehr über die OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle.
-source-git-commit: a9e6df69c3753677053a3ecde6b5f04794f748dd
-workflow-type: ht
-source-wordcount: '75'
-ht-degree: 100%
+exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
+source-git-commit: 2921667598201b6087fab3ca5c1ef5b57c1fa18f
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 26%
 
 ---
 
 # OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle {#content-fragments-and-content-fragment-models-openapis}
 
-Mit OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle können Entwicklerinnen und Entwickler programmgesteuert mit in AEM gespeicherten Inhaltsfragmenten und Inhaltsfragmentmodellen interagieren und CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen) darin ausführen.
+Die modernisierte OpenAPI-Implementierung der Content Fragment Management API ermöglicht es Entwicklern, programmgesteuert Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen auf AEM Author durchzuführen, um in AEM gespeicherte Inhaltsfragmentmodelle und Inhaltsfragmente zu verwalten. Diese APIs unterstützen eine Reihe von Anwendungsfällen.
 
-Die APIs unterstützen eine Reihe von Anwendungsfällen. Umfassende Informationen finden Sie unter [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de).
+Die vorhandene Verwendung von [Assets-HTTP-API](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) für Inhaltsfragmente sollten in die neue OpenAPI für die Inhaltsfragmentverwaltung migriert werden. Die vollständige Dokumentation finden Sie unter [Content Fragment Management-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de).
