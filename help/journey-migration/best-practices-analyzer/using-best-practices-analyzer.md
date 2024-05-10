@@ -2,10 +2,10 @@
 title: Verwenden von Best Practices Analyzer
 description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft zu einem Upgrade erkennen können.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 89%
+source-wordcount: '2686'
+ht-degree: 88%
 
 ---
 
@@ -61,6 +61,11 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 ## Anzeigen des Best Practices Analyzer-Berichts {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 und höher {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Automatisch Best Practices Analyzer-Bericht in CAM hochladen"
+>abstract="Stellen Sie den BPA-Upload-Schlüssel bereit, um den erstellten BPA-Bericht automatisch in Cloud Acceleration Manager (CAM) hochzuladen."
 
 Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer-Bericht anzeigen können:
 
