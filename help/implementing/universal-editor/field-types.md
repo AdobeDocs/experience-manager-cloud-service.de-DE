@@ -2,9 +2,9 @@
 title: Modelldefinitionen, Felder und Komponententypen
 description: Erfahren Sie anhand von Beispielen mehr über die Felder und Komponententypen, die mit dem universellen Editor in der Eigenschaftenleiste bearbeitet werden können. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 100%
 
 ---
@@ -95,6 +95,7 @@ Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern v
 | [Boolesch](#boolean) | `boolean` |
 | [Kontrollkästchen-Gruppe](#checkbox-group) | `checkbox-group` |
 | [Container](#container) | `container` |
+| [Inhaltsfragment](#content-fragment) | `aem-content-fragment` |
 | [Datum und Uhrzeit](#date-time) | `date-time` |
 | [Mehrfachauswahl](#multiselect) | `multiselect` |
 | [Zahl](#number) | `number` |
