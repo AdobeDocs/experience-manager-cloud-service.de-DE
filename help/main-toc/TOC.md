@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
+source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
 workflow-type: tm+mt
-source-wordcount: '4917'
+source-wordcount: '4930'
 ht-degree: 99%
 
 ---
@@ -206,7 +206,7 @@ ht-degree: 99%
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
       + [Checkliste vor der Live-Schaltung](/help/journey-onboarding/go-live-checklist.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
-      + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
+      + [Überblick](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
       + [Erstellen eines Programms](/help/journey-sites/demos-add-on/create-program.md)
       + [Erstellen einer Demo-Site](/help/journey-sites/demos-add-on/create-site.md)
@@ -233,7 +233,7 @@ ht-degree: 99%
    + [Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Einführung zu Cloud Acceleration Manager {#introduction-cam}
-         + [Übersicht](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [Überblick](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [Vorteile](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Verwenden von Cloud Acceleration Manager {#using-cam}
          + [Erste Schritte mit Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -242,13 +242,13 @@ ht-degree: 99%
          + [Live-Schaltungs-Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Cloud-Umstellungs-Tools {#cloud-migration}
       + Best Practices Analyzer {#best-practices-analyzer}
-         + [Übersicht](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [Überblick](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Content Transformer {#content-transformer}
-         + [Übersicht](/help/journey-migration/content-transformer/overview.md)
+         + [Überblick](/help/journey-migration/content-transformer/overview.md)
          + [Verwenden des Content Transformers](/help/journey-migration/content-transformer/using.md)
       + Content Transfer Tool {#content-transfer-tool}
-         + [Übersicht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [Überblick](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -264,7 +264,7 @@ ht-degree: 99%
          + [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Fehlerbehebung im Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Legacy-Tool für die Benutzerzuordnung (veraltete Version){#legacy-user-mapping-tool}
-            + [Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Überblick](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Code-Refaktorierungs-Tools {#refactoring-tools}
@@ -605,6 +605,9 @@ ht-degree: 99%
       + [Migrieren von  [!DNL AEM 6.5 Forms]  oder früher zu  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
+   + Erste Schritte {#getting-started-forms}
+      + [Entwicklungsumgebung für Nutzungsszenarios und Setup](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + [Kreditantragsformular erstellen](/help/forms/create-adaptive-form-tutorial.md)
    + Integrieren von {#integrate} 
       + Dienste {#services}
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -840,7 +843,7 @@ ht-degree: 99%
       + [Fastly-Einrichtung](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Umleitungen](/help/edge/docs/redirects.md)
    + Erstellen von Formularen {#build-forms}
-      + [Übersicht](/help/edge/docs/forms/overview.md)
+      + [Überblick](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-edge-delivery-services-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
          + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -852,12 +855,12 @@ ht-degree: 99%
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
          + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
       + Funktionen {#advanced-features-edge-delivery-services-forms}
-         + [Formularfragmente verwenden](/help/edge/docs/forms/form-fragments.md)
+         + [Verwenden von Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
          + [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
-         + [Formular übersetzen](/help/edge/docs/forms/translate-forms.md)
-         + [Verwenden Sie reCAPTCHA zum Schutz Ihrer Formulare](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Übersetzen des Formulars](/help/edge/docs/forms/translate-forms.md)
+         + [Verwenden von reCAPTCHA zum Schutz von Formularen](/help/edge/docs/forms/recaptacha-forms.md)
          + [Benutzerdefinierte Komponenten](/help/edge/docs/forms/custom-components-forms.md)
-         + [Überwachung der tatsächlichen Verwendung von Formularen](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Verweise {#forms-references}
          + [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
    + Edge Delivery-Ressourcen {#resources}
@@ -982,7 +985,7 @@ ht-degree: 99%
          + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md)
       + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-         + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
+         + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
          + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Funktionstests {#functional-testing}
