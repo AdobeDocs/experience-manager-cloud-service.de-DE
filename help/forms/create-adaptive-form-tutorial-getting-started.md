@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '918'
 ht-degree: 6%
 
 ---
@@ -39,7 +39,7 @@ Am Ende des Tutorials können Sie:
 
 AEM Forms bietet Foundation-Komponenten und Kernkomponenten zum Erstellen von Formularen. Kernkomponenten sind der moderne und empfohlene Ansatz zum Erstellen neuer Formulare. Warum Kernkomponenten verwenden? Diese Komponenten sind einfach, Open-Source-Komponenten (verfügbar auf GitHub), bieten eine hervorragende Google Lighthouse- und Web-Vitals-Bewertung, sind barrierefrei und bieten alle bekannten Funktionen von AEM Sites (wie Versionierung und Lokalisierung). Darüber hinaus sind diese Komponenten einfacher zu gestalten. Sie können ihr Erscheinungsbild einfach gemäß den Branding-Richtlinien Ihres Unternehmens anpassen. Diese weisen keine Drittanbieterabhängigkeiten auf. Jeder Entwickler mit Kenntnissen in JavaScript und CSS kann diese Komponenten einfach anpassen.
 
-![Warum erstellen Sie Kernkomponenten-basierte adaptive Forms? Diese Komponenten sind einfach, einfacher zu gestalten, bieten hohe Lightthouse-Punktzahl, unterstützen Barrierefreiheitsstandards, leicht anpassbare Open-Source-Elemente, auf GitHub verfügbar, keine Abhängigkeit von Drittanbieter-Bibliotheken und verfügen über fast keine Lernkurve für AEM Entwickler und AEM Autoren. Darüber hinaus verfügen die AEM Forms-Kernkomponenten über alle Funktionen AEM WCM-Kernkomponenten.](/help/forms/assets/cc-core-components-benefits.png)
+![Warum erstellen Sie Kernkomponenten-basierte adaptive Forms? Diese Komponenten sind einfach, einfacher zu gestalten, bieten hohe Lightthouse-Punktzahl, unterstützen Barrierefreiheitsstandards, leicht anpassbare Open-Source-Elemente, auf GitHub verfügbar, keine Abhängigkeit von Drittanbieter-Bibliotheken und verfügen über fast keine Lernkurve für AEM Entwickler und AEM Autoren. Darüber hinaus verfügen die AEM Forms-Kernkomponenten über alle Funktionen AEM WCM-Kernkomponenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Anwendungsfall: Optimierte Eigenheimkreditvorqualifikation mit adaptiver Forms
 
@@ -79,10 +79,14 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
 1. [Hinzufügen des AEM Forms-Add-ons](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Laden Sie das AEM Forms-Add-on herunter und installieren Sie es, das mit der Version Ihres AEM SDK übereinstimmt, aus dem [Softwareverteilung](https://experience.adobe.com/#/downloads) Portal.
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++AEM Forms-Add-on installieren
+   +++AEM Forms-Add-on installieren:
 
-       Um das AEM Forms-Add-on zu installieren, beenden Sie AEM SDK, fügen Sie die AEM Forms-Add-on-Datei (.far) zum Ordner &quot;AEM SDK/crx-quickstart/install&quot;hinzu und starten Sie AEM SDK neu.
-   
+   So installieren Sie das AEM Forms Add-on:
+
+   1. Beenden Sie AEM SDK.
+   1. Fügen Sie die AEM Forms-Add-on-Datei (.far) zur `AEM SDK/crx-quickstart/install` Ordner,
+   1. Starten Sie AEM SDK neu.
+
 +++
 
 1. [Benutzerberechtigungen konfigurieren](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Erstellen Sie Benutzer mit Entwicklungs-, Authoring- und anderen Berechtigungen und fügen Sie diese Benutzer zu vordefinierten Formulargruppen hinzu.
@@ -90,7 +94,9 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
 
 1. [Adaptive Forms-Vorlagen hinzufügen](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Verwenden Sie AEM Archetypen 48 oder höher, um ein neues AEM-Projekt zu erstellen und es in Ihrem AEM SDK bereitzustellen. Das Projekt fügt Ihrem AEM SDK adaptive Forms-Vorlagen hinzu.
 
-   +++Adaptive Forms-Vorlagen hinzufügen
+   ![Adaptive Formularvorlagen](/help/forms/assets/adaptive-forms-templates.png)
+
+   +++ Adaptive Forms-Vorlagen zu Ihrem AEM SDK hinzufügen:
 
    1. Führen Sie den folgenden Befehl aus, um ein AEM Projekt zu erstellen.
 
@@ -108,13 +114,12 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
       mvn -PautoInstallPackage clean install
       ```
 
-+++
-
    Nach der Bereitstellung des AEM können Sie adaptive Forms-Vorlagen in Ihrer Umgebung sehen.
 
-   ![Adaptive Formularvorlagen](/help/forms/assets/adaptive-forms-templates.png)
++++
 
-Eine schrittweise Anleitung zum Einrichten Ihrer lokalen AEM Forms-Entwicklungsumgebung finden Sie unter [Einrichten einer lokalen Entwicklungsumgebung für AEM Forms](/help/forms/setup-local-development-environment.md)
+
+Detaillierte Anweisungen und eine schrittweise Anleitung zum Einrichten Ihrer lokalen AEM Forms-Entwicklungsumgebung finden Sie im Abschnitt [Einrichten einer lokalen Entwicklungsumgebung für AEM Forms](/help/forms/setup-local-development-environment.md) Artikel.
 
 
 
