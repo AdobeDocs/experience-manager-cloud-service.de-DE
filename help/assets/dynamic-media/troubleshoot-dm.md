@@ -2,11 +2,12 @@
 title: Fehlerbehebung bei Dynamic Media
 description: Erfahren Sie mehr über Tipps zur Fehlerbehebung, die Sie beim Arbeiten mit Bildern, Sets und Viewern in Dynamic Media ausprobieren können.
 contentOwner: Rick Brough
+feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: ht
-source-wordcount: '1146'
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+workflow-type: tm+mt
+source-wordcount: '1141'
 ht-degree: 100%
 
 ---
@@ -75,8 +76,8 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
   </tr>
   <tr>
    <td>Karussell-Hotspot verschiebt sich nach dem Wechsel zwischen Folien</td>
-   <td><p>Prüfen Sie, ob alle Folien dieselbe Größe haben.</p> </td>
-   <td><p>Verwenden Sie für das Karussell nur Bilder derselben Größe.</p> </td>
+   <td><p>Überprüfen Sie, ob alle Folien die gleiche Größe aufweisen.</p> </td>
+   <td><p>Verwenden Sie nur Bilder mit der gleichen Größe für das Karussell.</p> </td>
   </tr>
   <tr>
    <td>Bild wird im Viewer für Dynamic Media nicht als Vorschau angezeigt</td>
@@ -89,13 +90,13 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
    <td><p>Überprüfen Sie, ob alle Assets verarbeitet wurden.</p> </td>
   </tr>
   <tr>
-   <td>Banner wird in der Kartenansicht als <strong>Neu</strong> angezeigt, wenn das Asset noch nicht gestartet wurde</td>
+   <td>Banner wird in der Kartenansicht als <strong>Neu</strong> angezeigt, wenn die Verarbeitung des Assets noch nicht gestartet wurde</td>
    <td>Überprüfen Sie <code>jcr:content</code> &gt; <code>dam:assetState</code> für das Asset. Wenn <code>unprocessed</code>, dann wurde es nicht vom Workflow abgeholt</td>
-   <td>Warten Sie, bis das Asset vom Workflow ausgewählt wurde.</td>
+   <td>Warten Sie, bis das Asset vom Workflow abgerufen wurde.</td>
   </tr>
   <tr>
-   <td>Bilder oder Sets zeigen weder Viewer-URL noch eingebetteten Code an</td>
-   <td>Prüfen Sie, ob die Viewer-Vorgabe veröffentlicht wurde.</td>
+   <td>Bilder oder Sets zeigen weder die Viewer-URL noch den eingebetteten Code an</td>
+   <td>Überprüfen Sie, ob die Viewer-Vorgabe veröffentlicht wurde.</td>
    <td><p>Wechseln Sie zu <strong>Tools</strong> &gt; <strong>Assets</strong> &gt; <strong>Viewer-Vorgaben</strong> und veröffentlichen Sie die Viewer-Vorgabe.</p> </td>
   </tr>
  </tbody>
@@ -116,14 +117,14 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>Video kann nicht als Vorschau angezeigt werden</td>
    <td>
     <ul>
-     <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist (falls nicht unterstütztes Dateiformat). Falls nicht unterstützt, wird nur ein Bild angezeigt.</li>
-     <li>Das Videoprofil muss mehr als eine Kodierungsvorgabe enthalten, damit ein AVS-Set generiert werden kann (einzelne Kodierungen werden als Videoinhalt für MP4-Dateien behandelt, nicht unterstützte Dateien werden wie nicht verarbeitete Dateien behandelt).</li>
+     <li>Überprüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist (falls nicht unterstütztes Dateiformat). Falls nicht unterstützt, wird nur ein Bild angezeigt.</li>
+     <li>Das Videoprofil muss mehr als eine Kodierungsvorgabe enthalten, damit ein AVS-Set generiert werden kann (einzelne Kodierungen werden als Videoinhalt für MP4-Dateien behandelt; nicht unterstützte Dateien werden wie nicht verarbeitete Dateien behandelt).</li>
      <li>Überprüfen Sie anhand von <code>dam:scene7FileAvs</code> von <code>dam:scene7File</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
     </ul> </td>
    <td>
     <ol>
      <li>Weisen Sie dem Ordner ein Videoprofil zu.</li>
-     <li>Bearbeiten Sie das Videoprofil, damit es mehr als eine Kodierungsvorgabe enthält.</li>
+     <li>Bearbeiten Sie das Videoprofil so, dass es mehr als eine Kodierungsvorgabe enthält.</li>
      <li>Warten Sie, bis die Verarbeitung des Videos abgeschlossen ist.</li>
      <li>Stellen Sie sicher, dass der Workflow für die Dynamic Media-Videokodierung nicht ausgeführt wird, bevor Sie das Video erneut laden.<br/> </li>
      <li>Laden Sie das Video erneut hoch.</li>
@@ -139,11 +140,11 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>
     <ol>
      <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud Services ordnungsgemäß eingerichtet ist.</li>
-     <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li>
+     <li>Überprüfen Sie, ob der Ordner über ein Videoprofil verfügt. Überprüfen Sie außerdem das Videoprofil.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Die Videoverarbeitung dauert zu lang</td>
+   <td>Die Videoverarbeitung dauert zu lange</td>
    <td><p>So prüfen Sie, ob die Videokodierung noch läuft oder ob ein Fehler aufgetreten ist:</p>
     <ul>
      <li>Überprüfen Sie den Videostatus <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
@@ -170,7 +171,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
 
 Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
-### Problem- Viewer-Vorgaben werden nicht veröffentlicht {#viewers-not-published}
+### Problem: Viewer-Vorgaben werden nicht veröffentlicht {#viewers-not-published}
 
 **Vorgehensweise beim Debugging**
 

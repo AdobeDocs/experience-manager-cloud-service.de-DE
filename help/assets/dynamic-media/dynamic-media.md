@@ -2,12 +2,13 @@
 title: Arbeiten mit Dynamic Media
 description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
 contentOwner: Rick Brough
+feature: Dynamic Media,Asset Management
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 88%
+source-wordcount: '398'
+ht-degree: 100%
 
 ---
 
@@ -81,7 +82,7 @@ Assets mit aktivierter Dynamic Media-Funktion umfassen `pyramid.tiffs`.
 
 ### Änderung der Asset-Ansichten {#asset-views-change}
 
-Wenn Dynamic Media aktiviert ist, können Sie durch Klicken auf die `+` und `-` Schaltflächen. Sie können auch auswählen, ob Sie in einen bestimmten Bereich zoomen möchten. Zurück bringt Sie zur Originalversion und Sie können das Bild im Vollbildmodus anzeigen, indem Sie auf die diagonalen Pfeile klicken. Das aktivierte Dynamic Media sieht wie folgt aus:
+Wenn „Dynamische Medien“ aktiviert ist, können Sie durch Klicken auf die Schaltflächen `+` und `-` ein- bzw. auszoomen. Sie können auch durch Auswählen in einen bestimmten Bereich einzoomen. Durch „Wiederherstellen“ können Sie zur Originalansicht zurückkehren und durch Klicken auf die diagonalen Pfeile das Bild im Vollbildmodus anzeigen. Das aktivierte Dynamic Media sieht wie folgt aus:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

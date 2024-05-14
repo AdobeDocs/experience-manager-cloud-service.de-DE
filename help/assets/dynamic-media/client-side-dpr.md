@@ -2,12 +2,13 @@
 title: Verwenden der intelligenten Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (Device Pixel Ratio).
 description: Erfahren Sie, wie Sie das Client-seitige Gerätepixelverhältnis mit der intelligenten Bildbearbeitung in Adobe Experience Manager as a Cloud Service mit Dynamic Media verwenden.
 contentOwner: Rick Brough
+feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 Die aktuelle Lösung für die intelligente Bildbearbeitung verwendet Benutzeragenten-Zeichenfolgen, um den verwendeten Gerätetyp (Desktop, Tablet, Mobilgerät usw.) zu bestimmen.
 
-Die Funktionen zur Geräteerkennung – DPR auf Basis von Benutzeragenten-Zeichenfolgen – sind häufig ungenau, insbesondere bei Apple-Geräten. Außerdem muss jedes neue Gerät, das gestartet wird, validiert werden.
+Die Funktionen zur Geräteerkennung - die DPR basierend auf Benutzeragenten-Zeichenfolgen - sind häufig ungenau, insbesondere bei Apple-Geräten. Außerdem muss jedes neue Gerät, das gestartet wird, validiert werden.
 
 Client-seitiges DPR liefert 100 % genaue Werte und funktioniert für jedes Gerät, das gestartet wird, unabhängig davon, ob es sich um Apple oder ein anderes neues Gerät handelt.
 
@@ -73,4 +74,3 @@ Die folgenden JavaScript-Dateien im Download werden nur als Beispielreferenz ber
 >[!MORELIKETHIS]
 >
 >* [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
-

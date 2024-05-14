@@ -2,11 +2,12 @@
 title: Einrichten von Dynamic Media
 description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
 contentOwner: Rick Brough
+feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '172'
 ht-degree: 100%
 
 ---
@@ -42,4 +43,3 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
 >* Sobald Sie Adobe [!DNL Experience Manager] eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich in einer aktualisierten Instanz von [!DNL Experience Manager] befinden und Dynamic Media noch nicht verwendet haben, müssen Sie die Assets wahrscheinlich erneut verarbeiten, um Dynamic Media für sie verwenden zu können. Siehe [Neuverarbeitung von Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
-
