@@ -1,53 +1,53 @@
 ---
-title: Überwachung der tatsächlichen Verwendung (RUM) für Edge Delivery Services für AEM Forms as a Cloud Service
-description: Die Überwachung der tatsächlichen Verwendung (RUM) für Edge Delivery Services von AEM Forms as a Cloud Service umfasst die fortlaufende Verfolgung und Analyse von Benutzerinteraktionen mit Formularen.
+title: Real User Monitoring (RUM) für Edge Delivery Services for AEM as a Cloud Service
+description: Real Use Monitoring (RUM) für Edge Delivery Services for AEM Forms as a Cloud Service beinhaltet das fortlaufende Tracking und die Analyse von Benutzerinteraktionen mit Formularen.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
-# Überwachung der tatsächlichen Verwendung (RUM) für Edge Delivery Services für AEM Forms as a Cloud Service
+# Real User Monitoring (RUM) für Edge Delivery Services for AEM as a Cloud Service
 
-Mit der Real Use Monitoring (RUM) können Sie Einblicke in die Interaktion der Besucher mit Ihren Adobe Experience Manager (AEM)-Websites gewinnen. Dieses integrierte Tool bietet wertvolle Daten, um das Benutzerverhalten zu verstehen, Leistungsprobleme zu diagnostizieren und die Effektivität von Website-Experimenten zu messen. RUM geht über synthetische Tests hinaus, indem es Interaktionen mit der realen Nutzung erfasst und ein präziseres Bild der Leistung Ihrer Site liefert.
+Mit Real Use Monitoring (RUM) können Sie authentische Einblicke in die Interaktion der Besuchenden mit Ihren Adobe Experience Manager(AEM)-Websites gewinnen. Dieses integrierte Tool liefert wertvolle Daten, um das Benutzerverhalten zu verstehen, Leistungsprobleme zu diagnostizieren und die Effektivität von Website-Experimenten zu messen. RUM geht über synthetische Tests hinaus, indem Interaktionen mit der realen Nutzung erfasst werden und ein präziseres Bild der Leistung Ihrer Site geboten wird.
 
-RUM priorisiert jedoch die Privatsphäre der Besucher. Es werden Stichprobenverfahren verwendet, um Daten von einer repräsentativen Untergruppe von Benutzern zu sammeln und sicherzustellen, dass keine personenbezogenen Daten (PII) erfasst werden. Darüber hinaus wird RUM unter Berücksichtigung der Datenminimierung entwickelt und erfasst nur die wesentlichen Metriken, die für die Leistungsanalyse erforderlich sind. Mit diesem Ansatz können Sie Ihre AEM-Sites optimieren und gleichzeitig das Vertrauen der Benutzer wahren.
+RUM priorisiert jedoch die Privatsphäre von Besuchenden. Es werden Stichprobenverfahren verwendet, um Daten von einer repräsentativen Untergruppe von Benutzenden zu sammeln und sicherzustellen, dass keine personenbezogenen Daten erfasst werden. Darüber hinaus wurde RUM unter Berücksichtigung der Datenminimierung entwickelt und erfasst nur die wesentlichen Metriken, die für die Leistungsanalyse erforderlich sind. Mit diesem Ansatz können Sie Ihre AEM-Sites optimieren und gleichzeitig das Vertrauen der Benutzenden wahren.
 
 
 ## Voraussetzungen
 
-Sie können das Monitoring-Dashboard für Edge Delivery Services für AEM Forms as a Cloud Service anzeigen, indem Sie auf die folgende URL zugreifen:
+Sie können das Monitoring-Dashboard für Edge Delivery Services for AEM Forms as a Cloud Service anzeigen, indem Sie auf die folgende URL zugreifen:
 
 https://data.aem.live/?ext=forms
 
-![RUM-Anmeldebildschirm für Edge Delivery Services für Forms](/help/edge/assets/rum-login-screen.png)
+![RUM-Anmeldebildschirm für Edge Delivery Services for Forms](/help/edge/assets/rum-login-screen.png)
 
-Geben Sie Folgendes ein, um sich beim Monitoring-Dashboard für Edge Delivery Services von AEM Forms as a Cloud Service anzumelden:
+Geben Sie Folgendes ein, um sich auf dem Monitoring-Dashboard für Edge Delivery Services for AEM Forms as a Cloud Service anzumelden:
 
 * **URL**: Die URL ist spezifisch für die Benutzer-Site oder -Domain. Die Benutzenden haben die Möglichkeit, die Site oder Domain zu filtern, um das Dashboard gemäß ihren Anforderungen anzuzeigen.
 
-* **Domain-Schlüssel**: Die Benutzenden generieren den Domain-Schlüssel manuell. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Domain-Schlüssel für Ihre Formulare zu erhalten.
+* **Domain-Schlüssel**: Die Benutzenden generieren den Domain-Schlüssel manuell. Wenden Sie sich an den Adobe-Support, um Domain-Schlüssel für Ihre Formulare zu erhalten.
 
-### Überwachen des Dashboards für Edge Delivery Services für AEM Forms as a Cloud Service
+### Monitoring-Dashboard für Edge Delivery Services for AEM Forms as a Cloud Service
 
-Nach Eingabe der URL- und Domain-Schlüssel in den Anmeldebildschirm erhalten Sie Zugriff auf das Monitoring-Dashboard für Edge Delivery Services von AEM Forms as a Cloud Service.
+Nachdem Sie die URL und die Domain-Schlüssel auf dem Anmeldebildschirm eingegeben haben, erhalten Sie Zugriff auf das Monitoring-Dashboard für Edge Delivery Services for AEM Forms as a Cloud Service.
 
-Die folgende Abbildung zeigt das Dashboard für Edge Delivery Services für AEM Forms as a Cloud Service:
+Die folgende Abbildung zeigt das Dashboard für Edge Delivery Services for AEM Forms as a Cloud Service:
 
-![RUM-Dashboard für Forms](/help/edge/assets/rum-forms-dashboard.png)
+![RUM-Dashboard für Formulare](/help/edge/assets/rum-forms-dashboard.png)
 
-### Verschiedene Schlüsselmetriken des Dashboards für Forms {#different-metrics-rum-dashboard-forms}
+### Verschiedene Schlüsselmetriken des Dashboards für Formulare {#different-metrics-rum-dashboard-forms}
 
-Dieses Dashboard bietet wichtige Einblicke in die Interaktion der Besucher mit Formularen auf Ihrer Adobe Experience Manager (AEM)-Website. Durch die Überwachung dieser Metriken können Sie Bereiche zur Verbesserung identifizieren und Ihre Formulare für ein besseres Benutzererlebnis und Konversionsraten optimieren:
+Dieses Dashboard bietet wichtige Einblicke in die Interaktion der Besuchenden mit Formularen auf Ihrer Adobe Experience Manager(AEM)-Website. Durch die Überwachung dieser Metriken können Sie zu verbessernde Bereiche identifizieren und Ihre Formulare für ein besseres Anwendererlebnis und bessere Konversionsraten optimieren:
 
-* **Formularansichten**: Verfolgen Sie die Gesamtanzahl der angezeigten Formulare.
-* **Formularübermittlungen**: Tracking der Gesamtzahl abgeschlossener Übermittlungen
+* **Formularansichten**: Verfolgen Sie, wie oft Formulare insgesamt angezeigt werden
+* **Formularübermittlungen**: Verfolgen Sie die Gesamtzahl der abgeschlossenen Übermittlungen
 
 * **Largest Contentful Paint**: Es zeigt die Geschwindigkeit an, mit der die URL geladen wird, und gibt die Zeit an, die benötigt wird, um das größte Inhaltselement, das im Viewport sichtbar ist, ab dem Moment zu rendern, in dem die Benutzerin bzw. der Benutzer die URL anfordert. Dieses größte Inhaltselement kann z. B. ein Bild, ein Video oder ein großes Textelement auf Blockebene sein. Die Leistungsbewertungen für die Ladegeschwindigkeit von URLs werden wie folgt kategorisiert:
    * **Gut**: Wenn die Ladezeit 2,5 Sekunden oder weniger beträgt.
@@ -65,16 +65,16 @@ Dieses Dashboard bietet wichtige Einblicke in die Interaktion der Besucher mit F
    * **In Ordnung**: Wenn die Dauer mehr als 200 ms, aber höchstens 500 ms beträgt.
    * **Schlecht**: Wenn die Dauer 500 ms überschreitet.
 
-## Ausführbare Insights
+## Verwertbare Erkenntnisse
 
-Durch die Analyse dieser Metriken können Sie Möglichkeiten identifizieren:
+Durch die Analyse dieser Metriken können Sie Möglichkeiten für Folgendes identifizieren:
 
-* Vereinfachen Sie Formulare und reduzieren Sie die Anzahl der Felder.
-* Verbessern Sie die Formularklarheit mit klaren Anweisungen und Beschriftungen.
-* Optimieren Sie das Formularlayout für Mobilgerät.
+* Vereinfachen von Formularen und Reduzieren der Felderanzahl.
+* Verbessern der Formularklarheit mit klaren Anweisungen und Beschriftungen.
+* Optimieren des Formular-Layouts für die Reaktivität auf Mobilgeräten.
 * Beheben technischer Probleme, die das Laden von Formularen verlangsamen.
 
-Wenn Sie sich auf diese Bereiche konzentrieren, können Sie Formulare erstellen, die einfacher zu verwenden sind, und Besucher dazu ermutigen, sie auszufüllen, was letztendlich zu höheren Konversionsraten führt.
+Wenn Sie sich auf diese Bereiche konzentrieren, können Sie Formulare erstellen, die einfacher zu benutzen sind und die Besuchenden zum Ausfüllen anregen, was letztendlich zu höheren Konversionsraten führt.
 
 ## Siehe auch
 
