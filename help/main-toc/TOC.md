@@ -7,9 +7,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4930'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -606,8 +606,8 @@ ht-degree: 99%
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
    + Erste Schritte {#getting-started-forms}
-      + [Entwicklungsumgebung für Nutzungsszenarios und Setup](/help/forms/create-adaptive-form-tutorial-getting-started.md)
-      + [Kreditantragsformular erstellen](/help/forms/create-adaptive-form-tutorial.md)
+      + [Anwendungsfall und Einrichtung der Entwicklungsumgebung](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + [Erstellen des Kreditantragsformulars](/help/forms/create-adaptive-form-tutorial.md)
    + Integrieren von {#integrate} 
       + Dienste {#services}
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)

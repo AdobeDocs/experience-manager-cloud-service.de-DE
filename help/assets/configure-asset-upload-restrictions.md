@@ -3,9 +3,9 @@ title: Konfigurieren von Asset-Upload-Beschränkungen
 description: Konfigurieren Sie Adobe Experience Manager Assets, um die Art der Assets zu beschränken, die Benutzende basierend auf dem MIME-Typ hochladen können. Dadurch wird verhindert, dass versehentlich Dateien in unerwünschten Formaten oder böswillige Dateien hochgeladen werden.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

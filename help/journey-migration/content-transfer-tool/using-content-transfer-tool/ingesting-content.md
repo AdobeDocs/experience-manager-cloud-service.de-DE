@@ -3,9 +3,9 @@ title: Aufnehmen von Inhalten in Cloud Service
 description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ihrem Migrationssatz in eine Cloud Service-Zielinstanz aufnehmen können.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2905'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -216,7 +216,7 @@ Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht übersc
 
 In der Notiz `Node property value in MongoDB` in [Voraussetzungen für das Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) finden Sie weitere Informationen und einen Link zu einem Oak-Tool, mit dem Sie alle großen Knoten finden können. Sobald alle Knoten mit großen Größen beseitigt sind, führen Sie die Extraktion und Aufnahme erneut durch.
 
-Um diese Einschränkung möglichst zu vermeiden, führen Sie die [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) über die AEM-Instanz, und überprüfen Sie die darin dargestellten Ergebnisse, insbesondere die [&quot;Nicht unterstützte Repository-Struktur&quot;(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) Muster.
+Um diese Einschränkung möglicherweise zu vermeiden, führen Sie den [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) auf der AEM-Quellinstanz aus und überprüfen Sie die Ergebnisse, insbesondere das Muster [„Nicht unterstützte Repository-Struktur“ (Unsupported Repository Structure, URS)](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 

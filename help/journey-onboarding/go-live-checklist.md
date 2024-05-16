@@ -1,23 +1,23 @@
 ---
 title: Checkliste vor der Live-Schaltung
-description: Erfahren Sie mehr über alle Elemente, die vorhanden sein müssen, um eine erfolgreiche Live-Schaltung mit AEM as a Cloud Service zu ermöglichen
-source-git-commit: 4a03e2fe3519fd9e0d8d646526ea6c9cc6637f52
-workflow-type: tm+mt
+description: Erfahren Sie mehr über alle Elemente, die für eine erfolgreiche Live-Schaltung mit AEM as a Cloud Service vorhanden sein müssen.
+exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
+source-git-commit: 581f075483280e4b33574bfd4cc1cb01b5601440
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-
 # Checkliste vor der Live-Schaltung {#Go-Live-Checklist}
 
-Überprüfen Sie diese Aktivitätenliste, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Live-Schaltung durchführen.
+Überprüfen Sie diese Liste der Aktivitäten, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Live-Schaltung durchführen können.
 
 * Führen Sie eine End-to-End-Produktions-Pipeline mit Funktions- und Benutzeroberflächentests aus, um ein **immer aktuelles** AEM Produkterlebnis zu gewährleisten. Sehen Sie sich die folgenden Ressourcen an.
    * [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)
    * [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
-* Wenn Sie von AEM 6.5 migrieren, sollten Sie Inhalte in die Produktion migrieren und sicherstellen, dass beim Testen eine relevante Teilmenge verfügbar ist.
+* Wenn Sie von AEM 6.5 migrieren, sollten Sie Inhalte in die Produktion migrieren und sicherstellen, dass eine relevante Teilmenge während des Tests verfügbar ist.
    * Die Best Practices von DevOps für AEM sehen vor, dass der Code von der Entwicklungs- zur Produktionsumgebung nach oben verschoben wird, während die Inhalte von der Produktionsumgebung nach unten verschoben werden.
 * Planen der Periode zum Einfrieren von Code und Inhalten.
    * Siehe auch den Abschnitt [Zeitpläne für das Einfrieren von Code und Inhalten für die Migration](#code-content-freeze).
@@ -58,4 +58,4 @@ ht-degree: 85%
    * Regeln für Traffic-Filter mit Ratenbegrenzungen können ein effektives Werkzeug gegen DDoS-Angriffe sein. Eine spezielle Kategorie von Traffic-Filterregeln namens „WAF-Regeln“ erfordert eine gesonderte Lizenz.
    * Weitere Informationen finden Sie in der Dokumentation zu einigen [vorgeschlagenen Startregeln](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
-Sie können immer auf die Liste verweisen, falls Sie Ihre Aufgaben während der Live-Schaltung neu alibrieren müssen.
+Sie können jederzeit auf die Liste zurückgreifen, falls Sie Ihre Aufgaben während der Live-Schaltung neu kalibrieren müssen.

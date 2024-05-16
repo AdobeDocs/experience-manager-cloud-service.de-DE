@@ -4,9 +4,9 @@ description: Veröffentlichen eines AEM Forms Edge Delivery Services-Formulars
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
    | Formular |
    |---|
-   | [https://main—wefinance—wkndforms.hlx.page/inquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
    **Veröffentlichungs-URL**

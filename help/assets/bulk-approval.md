@@ -6,9 +6,9 @@ feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

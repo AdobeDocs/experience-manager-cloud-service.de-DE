@@ -6,9 +6,9 @@ feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1677'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete
 
 >[!NOTE]
 >
-> Eine modernisierte OpenAPI-Implementierung der Content Fragment Management-API ist verfügbar. Die vollständige Dokumentation finden Sie unter [Content Fragment Management-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de). Es wird empfohlen, die neue OpenAPI-Implementierung zu verwenden. Die vorhandene Verwendung der Assets-HTTP-API für Inhaltsfragmente sollte in die neue OpenAPI für die Inhaltsfragmentverwaltung migriert werden.
+> Eine modernisierte OpenAPI-Implementierung des API für die Verwaltung von Inhaltsfragmenten ist verfügbar. Eine vollständige Dokumentation finden Sie unter [API für die Verwaltung von Inhaltsfragmenten](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de). Es wird empfohlen, die neue OpenAPI-Implementierung zu verwenden. Die vorhandene Verwendung des Assets-HTTP-API für Inhaltsfragmente sollte in des neuen OpenAPI für die Inhaltsfragmentverwaltung migriert werden.
 
 So greifen Sie auf die API zu:
 

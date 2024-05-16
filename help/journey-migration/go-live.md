@@ -3,9 +3,9 @@ title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 4a03e2fe3519fd9e0d8d646526ea6c9cc6637f52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1239'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Die beiden oben genannten Punkte werden im Bericht von [Best Practice Analyzer](
 
 ## Checkliste vor der Live-Schaltung {#Go-Live-Checklist}
 
-Weitere Informationen finden Sie im [Go-Live-Checkliste](/help/journey-onboarding/go-live-checklist.md) Dokumentation.
+Weitere Informationen finden Sie in der Dokumentation [Checkliste vor der Live-Schaltung](/help/journey-onboarding/go-live-checklist.md).
 
 ## Wie geht es weiter {#what-is-next}
 

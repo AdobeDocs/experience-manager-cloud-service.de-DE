@@ -3,9 +3,9 @@ title: Verwenden von Best Practices Analyzer
 description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft zu einem Upgrade erkennen können.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2686'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heru
 
 ## Konnektivität der Quellumgebung {#source-environment-connectivity}
 
-Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Um den von BPA generierten Bericht automatisch erfolgreich in Cloud Acceleration Manager hochzuladen, müssen die folgenden Endpunkte über die Instanz verfügbar sein, die AEM ausgeführt wird:
+Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit der BPA-generierte Bericht erfolgreich automatisch in Cloud Acceleration Manager hochgeladen werden kann, müssen die folgenden Endpunkte auf der Instanz verfügbar sein, auf der AEM ausgeführt wird:
 
 * Der Azure Blob Storage-Service: `casstorageprod.blob.core.windows.net`
 
@@ -64,7 +64,7 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="Automatisch Best Practices Analyzer-Bericht in CAM hochladen"
+>title="Automatisches Hochladen des Best-Practices-Analyzer-Berichts in CAM"
 >abstract="Stellen Sie den BPA-Upload-Schlüssel bereit, um den erstellten BPA-Bericht automatisch in Cloud Acceleration Manager (CAM) hochzuladen."
 
 Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer-Bericht anzeigen können:
@@ -77,37 +77,37 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Stellen Sie den BPA-Upload-Schlüssel bereit, um den generierten BPA-Bericht automatisch in hochzuladen. [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Um die Upload-Taste zu erhalten, navigieren Sie zum [Best Practices-Analyse in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Geben Sie den BPA-Upload-Schlüssel an, um den generierten BPA-Bericht automatisch in [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md) hochzuladen. Um den Upload-Schlüssel zu erhalten, navigieren Sie zur [Best-Practices-Analyse in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
->Sie haben die Möglichkeit, den automatischen Upload in CAM zu überspringen, indem Sie **Bericht-automatisches Hochladen in CAM überspringen**. Wenn Sie das Überspringen wählen, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertdatei herunterladen und dann die Datei in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
+>Sie haben die Möglichkeit, das automatische Hochladen in CAM zu überspringen, indem Sie die Option für das Überspringen des automatischen Uploads in CAM **** wählen. Wenn Sie sich für das Überspringen entscheiden, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertedatei herunterladen und die Datei dann in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
 
-1. Die **Erzeugen** wird aktiv, wenn ein gültiger Schlüssel bereitgestellt wird. Klicken Sie auf **Erzeugen** , um die Berichterstellung zu starten.
+1. Die Schaltfläche **Generieren** wird aktiv, wenn ein gültiger Schlüssel angegeben wird. Klicken Sie auf **Erstellen**, um die Erstellung des Berichts einzuleiten.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 
-1. Während BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm verfolgen. Er zeigt den Fortschritt in Prozent an, der abgeschlossen wurde. Außerdem wird die Anzahl der analysierten Elemente sowie die Anzahl der gefundenen Ergebnisse angezeigt.
+1. Während BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm verfolgen. Der Fortschritt wird in Prozent angezeigt. Dabei wird auch die Anzahl der analysierten Elemente und gefundenen Ergebnisse angezeigt.
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
->Der Zeitstempel für die Gültigkeit der BPA-Schlüssel wird oben rechts angezeigt. Sie sollten den BPA-Upload-Schlüssel verlängern, wenn er bald abläuft. Um den Schlüssel zu verlängern, können Sie auf **Verlängern** Navigieren Sie zu CAM, um den Schlüssel zu verlängern.
+>Der Zeitstempel für den Ablauf des BPA-Upload-Schlüssels wird in der oberen rechten Ecke angezeigt. Sie sollten den BPA-Upload-Schlüssel erneuern, wenn er bald abläuft. Um den Schlüssel zu erneuern, können Sie auf **Erneuern** klicken, um zu CAM zu navigieren und den Schlüssel zu erneuern.
 
 1. Sobald der BPA-Bericht erstellt wurde, werden eine Zusammenfassung sowie die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Ergebnistyp und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie die Zahl anklicken, die dem Typ des Ergebnisses in der Tabelle entspricht.
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. Sie können den Bericht im CSV-Format herunterladen, indem Sie auf **Exportieren in CSV**. Sie haben auch die Möglichkeit, den Bericht in der CAM anzuzeigen, indem Sie auf **Zu CAM wechseln**. Dadurch gelangen Sie zum [Best Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) Seite in CAM.
+1. Sie haben die Möglichkeit, den Bericht in einem kommagetrennten Format (CSV) herunterzuladen, indem Sie auf **In CSV exportieren** klicken. Sie können den Bericht auch in CAM anzeigen, indem Sie auf die Option zum Wechsel zu CAM **** klicken. Dadurch gelangen Sie auf die Seite [Best-Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM.
 
 Sie können BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
 
 ![Bild](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 
-1. Wenn der Cache abläuft, haben Sie die Möglichkeit, den zuletzt erstellten Bericht in CAM anzuzeigen, indem Sie auf **Letzten erstellten Bericht im CAM anzeigen** oder die Erstellung eines neuen Berichts durch Klicken auf **Neuen Bericht erstellen**.
+1. Wenn der Cache abläuft, haben Sie die Möglichkeit, den zuletzt erstellten Bericht in CAM anzusehen, indem Sie auf die Option zur Anzeige des zuletzt erstellten Berichts **** klicken, oder eine neue Berichtserstellung einzuleiten, indem Sie auf die Option zum Erstellen eines neuen Berichts **** klicken.
 
 ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 

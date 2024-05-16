@@ -3,15 +3,15 @@ title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Bereitschaftsphase in Cloud Acceleration Manager {#readiness-phase-cam}
 
-Nachdem Sie ein Projekt im Cloud Acceleration Manager (CAM) erstellt haben, können Sie jetzt mit der Bewertung Ihrer aktuellen Adobe Experience Manager (AEM)-Implementierung in der Bereitschaftsphase beginnen.
+Nachdem Sie ein Projekt in Cloud Acceleration Manager (CAM) erstellt haben, können Sie jetzt mit der Bewertung Ihrer aktuellen Adobe Experience Manager-Implementierung (AEM) in der Bereitschaftsphase beginnen.
 
 Die Bereitschaftsphase umfasst:
 
@@ -35,9 +35,9 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
->title="Bericht &quot;Best Practices für Analyse&quot;"
->abstract="Der BPA-Bericht kann in die CAM hochgeladen werden, um eine Analyse der Migration auf AEM as a Cloud Service zu erstellen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Verwenden von Best Practices Analyzer"
+>title="Best-Practices-Analyse-Bericht"
+>abstract="Der BPA-Bericht kann in CAM hochgeladen werden, um eine Analyse der Migration zu AEM as a Cloud Service zu erstellen."
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Verwenden von Best Practices Analyzer"
 
 1. Klicken Sie in der Karte **Best Practices-Analyse** auf **Überprüfen**.
 
@@ -48,24 +48,24 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
    >[!NOTE]
    >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, empfiehlt Adobe, BPA in einer Autorenumgebung auszuführen. Die Umgebung sollte der Produktionsumgebung in den Bereichen Anpassungen, Konfigurationen, Inhalte und Benutzeranwendungen so nahe wie möglich kommen. Alternativ kann BPA in einem Klon der Autoren-Produktionsumgebung ausgeführt werden.
 
-   1. Navigieren Sie zum [Software-Verteilungs](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*)-Portal und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
+   1. Navigieren Sie zum [Software-Verteilungs](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html?fulltext=best*)-Portal und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
 
       >[!NOTE]
       >Lesen Sie [Verwenden von Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de#imp-considerations), um zu erfahren, wie Sie BPA ausführen.
 
-1. Klicken Sie in CAM auf **Upload-Schlüssel abrufen**, sodass Sie den Schlüssel erhalten, der für die Konfiguration Ihres Systems verwendet wird, um BPA-Berichte automatisch direkt in CAM hochzuladen.
+1. Klicken Sie in CAM auf **Upload-Schlüssel abrufen**, damit Sie den Schlüssel erhalten, mit dem Sie Ihr System so konfigurieren, dass BPA-Berichte automatisch direkt in CAM hochgeladen werden.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
    >Der Bericht kann nach wie vor manuell hochgeladen werden, aber mithilfe des Upload-Schlüssels wird der Vorgang optimiert. Beachten Sie, dass der Bericht nicht manuell hochgeladen werden kann, wenn Sie sich im Inkognito-Modus des Browsers befinden.
 
-1. Nachdem ein neuer Bericht hochgeladen wurde, können Sie den Bericht Best Practices Analysis in CAM sehen.
+1. Nachdem ein neuer Bericht hochgeladen wurde, können Sie den Best-Practices-Analyse-Bericht in CAM sehen.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
-   >Wenn mehrere, unterschiedliche Berichte hochgeladen werden, ist der Bericht, der detailliert angezeigt wird, immer derjenige, der das letzte Erstellungsdatum hat (nicht das Upload-Datum).
+   >Beim Hochladen mehrerer unterschiedlicher Berichte wird immer der Bericht mit dem jüngsten Erstellungsdatum (nicht Upload-Datum) detailliert angezeigt.
 
 1. Überprüfen und erkunden Sie das Dashboard zur Best-Practices-Analyse in CAM. Siehe [Überprüfen des Berichts zur Best Practices-Analyse](#analysis-report) für weitere Details.
 
@@ -78,7 +78,7 @@ Sie können in Cloud Acceleration Manager die Druckvorschau-Option auswählen, u
 
 Führen Sie dazu folgende Schritte durch:
 
-1. Klicken Sie auf **Druckvorschau** Aktion.
+1. Klicken Sie auf die Aktion **Druckvorschau**.
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
@@ -104,11 +104,11 @@ Gehen Sie wie folgt vor, um Berichte über die Trend-Linien-Option anzuzeigen:
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Aus dem **Ansicht** Dropdownliste, klicken Sie auf **Trendbericht**, wie in der folgenden Abbildung dargestellt.
+1. Klicken Sie in der Dropdown-Liste **Ansicht** auf **Trend-Linienbericht**, wie in der Abbildung unten gezeigt.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. Klicken **Trendbericht** öffnet die Trendansicht des Berichts.
+1. Wenn Sie auf **Trend-Linienbericht** klicken, wird die Trend-Linienansicht des Berichts geöffnet.
 
    ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
