@@ -2,7 +2,7 @@
 title: Quick Publish in AEM und Dynamic Media
 description: Mit der Funktion "Quick Publish"in der Assets-Ansicht können Sie Assets gleichzeitig oder separat in AEM und Dynamic Media veröffentlichen. Sie können Assets und Ordner auswählen und die Veröffentlichung in Dynamic Media oder AEM auswählen.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 9ad74a9c7ecd193446506cb883fff723c806f0a7
+source-git-commit: 8d360b9d3382350c8f78247919c3e3810fe9e58b
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
