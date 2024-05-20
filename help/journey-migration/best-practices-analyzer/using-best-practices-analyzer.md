@@ -3,7 +3,7 @@ title: Verwenden von Best Practices Analyzer
 description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft zu einem Upgrade erkennen können.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 100%
 
