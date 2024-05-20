@@ -191,7 +191,7 @@ ht-degree: 99%
    + [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service – Sicherheitsüberlegungen](/help/security/security-considerations.md)
    + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Best Practices für die Sling-Dienstbenutzerzuordnung und -Dienstbenutzerdefinition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + Einstieg {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
    + Onboarding-Tour {#journey}
