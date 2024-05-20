@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
-source-wordcount: '1747'
-ht-degree: 100%
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+workflow-type: tm+mt
+source-wordcount: '1742'
+ht-degree: 97%
 
 ---
 
@@ -29,17 +29,15 @@ ht-degree: 100%
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
-[!DNL AEM Forms] unterstützt reCAPTCHA in adaptiven Formularen. Sie können den reCAPTCHA-Service von Google verwenden, um CAPTCHA zu implementieren.
+AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
->[!NOTE]
->
->* [!DNL AEM Forms] unterstützt reCaptcha v2 und reCaptcha Enterprise. Es werden keine anderen Versionen unterstützt.
->* Im Offline-Modus der [!DNL AEM Forms]-App wird reCAPTCHA in adaptiven Formularen nicht unterstützt.
->
+* [Google reCAPTCHA](#configure-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## Konfigurieren des reCAPTCHA-Service von Google {#google-reCAPTCHA}
 
-Formularautorinnen und -autoren können den reCAPTCHA-Service von Google nutzen, um reCAPTCHA in adaptive Formulare zu implementieren. Er bietet erweiterte reCAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). Der reCAPTCHA-Service umfasst [!DNL reCAPTCHA v2] und [!DNL reCAPTCHA Enterprise], die Sie in [!DNL AEM Forms] integrieren können. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um Folgendes zu aktivieren:
+Formularautorinnen und -autoren können den reCAPTCHA-Service von Google nutzen, um reCAPTCHA in adaptive Formulare zu implementieren. Er bietet erweiterte reCAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms unterstützt [!DNL reCAPTCHA v2] und [!DNL reCAPTCHA Enterprise]. Jede andere Version wird nicht unterstützt. Beachten Sie außerdem, dass reCAPTCHA in Adaptive Forms im Offline-Modus nicht unterstützt wird auf [!DNL AEM Forms] App. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um Folgendes zu aktivieren:
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -90,19 +88,19 @@ Sobald der reCAPTCHA Enterprise-Dienst aktiviert ist, kann er in adaptiven Formu
 
 1. Konfigurieren Sie den Cloud Service für reCAPTCHA v2.
 
-   1. Navigieren Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. Navigieren Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **Cloud-Services**.
    1. Wählen Sie **[!UICONTROL reCAPTCHA]** aus. Die Konfigurationsseite öffnet sich. Wählen Sie den erstellten Konfigurations-Container aus und wählen Sie dann **[!UICONTROL Erstellen]**.
    1. Wählen Sie die Version als [!DNL reCAPTCHA v2] aus, geben Sie den Namen, den Site-Schlüssel und den geheimen Schlüssel für den reCAPTCHA-Service an (den Sie in Schritt 1 erhalten haben) und wählen Sie dann **[!UICONTROL Erstellen]**, um die Cloud-Service-Konfiguration zu erstellen.
-   1. Geben Sie im Dialogfeld „Komponente bearbeiten“ die Site- und Geheimschlüssel an, die Sie in Schritt 1 erhalten haben. Wählen Sie **[!UICONTROL Einstellungen speichern]** und wählen Sie dann **OK**, um die Konfiguration abzuschließen.
+   1. Geben Sie im Dialogfeld „Komponente bearbeiten“ die Site- und Geheimschlüssel an, die Sie in Schritt 1 erhalten haben. Wählen Sie **[!UICONTROL Einstellungen speichern]** und dann **OK** aus, um die Konfiguration abzuschließen.
 
    Sobald der reCAPTCHA-Service konfiguriert ist, kann er in adaptiven Formularen verwendet werden. Weitere Informationen finden Sie unter [Verwenden von CAPTCHA in adaptiven Formularen](#using-reCAPTCHA).
 
 <!--![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)-->
 
 
-## Verwenden von reCAPTCHA in adaptiven Formularen {#using-reCAPTCHA}
+## Verwenden von Google reCAPTCHA in adaptiven Formularen {#using-reCAPTCHA}
 
-So verwenden Sie reCAPTCHA in adaptiven Formularen:
+So verwenden Sie Google reCAPTCHA in einem adaptiven Formular:
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus.
 
@@ -117,7 +115,7 @@ So verwenden Sie reCAPTCHA in adaptiven Formularen:
    >* Die Verwendung von mehr als einer CAPTCHA-Komponente in einem adaptiven Formular wird nicht unterstützt. Es wird nicht empfohlen, CAPTCHA in einem Fragment oder in einem Bedienfeld zu verwenden, das für das verzögerte Laden konfiguriert wurde.
    >* reCaptcha ist zeitkritisch und läuft nach einigen Minuten ab. Daher wird empfohlen, die Captcha-Komponente unmittelbar vor der Sendeschaltfläche im adaptiven Formular zu platzieren.
 
-1. Wählen Sie die hinzugefügte Captcha-Komponente aus und wählen Sie dann ![cmppr](assets/cmppr.png), um ihre Eigenschaften zu bearbeiten.
+1. Wählen Sie die hinzugefügte Captcha-Komponente und dann ![cmppr](assets/cmppr.png) aus, um die zugehörigen Eigenschaften zu bearbeiten.
 1. Geben Sie einen Titel für das CAPTCHA-Widget an. Der Standardwert ist **CAPTCHA**. Wählen Sie **Titel ausblenden**, wenn der Titel nicht angezeigt werden soll.
 1. Wählen Sie aus der Dropdown-Liste **Captcha-Service** die Option **reCAPTCHA**, um den reCAPTCHA-Service zu aktivieren, wenn Sie ihn wie unter [reCAPTCHA-Service von Google](#google-reCAPTCHA) beschrieben konfiguriert haben.
 1. Wählen Sie eine Konfiguration aus der Dropdown-Liste „Einstellungen“ für **reCAPTCHA Enterprise** oder **reCAPTCHA v2**
@@ -220,7 +218,7 @@ So verwenden Sie reCAPTCHA in adaptiven Formularen:
 
 ### Ein- oder Ausblenden der CAPTCHA-Komponente auf Grundlage von Regeln {#show-hide-captcha}
 
-Sie können die CAPTCHA-Komponente auf Grundlage von Regeln, die Sie auf eine Komponente in einem adaptiven Formular anwenden, ein- oder ausblenden. Wählen Sie die Komponente aus, wählen Sie ![Regeln bearbeiten](assets/edit-rules-icon.svg) und dann **[!UICONTROL Erstellen]**, um eine Regel zu erstellen. Weitere Informationen zum Erstellen von Regeln finden Sie im [Regeleditor](rule-editor.md).
+Sie können die CAPTCHA-Komponente auf Grundlage von Regeln, die Sie auf eine Komponente in einem adaptiven Formular anwenden, ein- oder ausblenden. Wählen Sie erst die Komponente, dann ![Regeln bearbeiten](assets/edit-rules-icon.svg) und schließlich **[!UICONTROL Erstellen]** aus, um eine Regel zu erstellen. Weitere Informationen zum Erstellen von Regeln finden Sie im [Regeleditor](rule-editor.md).
 
 Beispielsweise darf die CAPTCHA-Komponente nur dann in einem adaptiven Formular angezeigt werden, wenn das Feld „Währungswert“ im Formular einen Wert von mehr als 25000 aufweist.
 
@@ -240,16 +238,16 @@ Sie können CAPTCHA in einem adaptiven Formular entweder beim Übermitteln des F
 
 So validieren Sie ein CAPTCHA beim Übermitteln eines adaptiven Formulars automatisch:
 
-1. Wählen Sie die CAPTCHA-Komponente und wählen Sie dann ![cmppr](assets/configure-icon.svg) aus, um die Komponenteneigenschaften anzuzeigen.
+1. Wählen Sie die CAPTCHA-Komponente und dann ![cmppr](assets/configure-icon.svg) aus, um die Komponenteneigenschaften anzuzeigen.
 1. Wählen Sie im Abschnitt **[!UICONTROL Validieren von CAPTCHA]** **[!UICONTROL CAPTCHA bei Formularübermittlung validieren]**.
 1. Wählen Sie ![Fertig](assets/save_icon.svg) aus, um die Komponenteneigenschaften zu speichern.
 
 #### Validieren von CAPTCHA mit Benutzeraktionen und -bedingungen {#validate-captcha-user-action}
 
-Validieren eines CAPTCHA basierend auf Bedingungen und Benutzeraktionen:
+So walidieren Sie ein CAPTCHA basierend auf Bedingungen und Benutzeraktionen:
 
-1. Klicken Sie auf die CAPTCHA-Komponente und wählen Sie ![cmppr](assets/configure-icon.svg) aus, um die Komponenteneigenschaften anzuzeigen.
-1. Wählen Sie im Abschnitt **[!UICONTROL Validieren von CAPTCHA]** die Option **[!UICONTROL CAPTCHA mit Benutzeraktion validieren]**.
+1. Wählen Sie die CAPTCHA-Komponente und dann ![cmppr](assets/configure-icon.svg) aus, um die Komponenteneigenschaften anzuzeigen.
+1. Wählen Sie im Abschnitt **[!UICONTROL CAPTCHA validieren]** die Option **[!UICONTROL CAPTCHA mit Benutzeraktion validieren]**.
 1. Wählen Sie ![Fertig](assets/save_icon.svg) aus, um die Komponenteneigenschaften zu speichern.
 
 [!DNL Experience Manager Forms] stellt die `ValidateCAPTCHA`-API zur Validierung von CAPTCHA unter Verwendung vordefinierter Bedingungen bereit. Sie können die API mit einer benutzerdefinierten Übermittlungsaktion oder durch Definieren von Regeln für Komponenten in einem adaptiven Formular aufrufen.
@@ -276,7 +274,7 @@ Führen Sie folgende Schritte aus, um die `ValidateCAPTCHA`-API zur Validierung 
 
 1. Fügen Sie das Skript, das die `ValidateCAPTCHA`-API enthält, zur benutzerdefinierten Übermittlungsaktion hinzu. Weitere Informationen zu benutzerdefinierten Übermittlungsaktionen finden Sie unter [Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Formulare](custom-submit-action-form.md).
 1. Wählen Sie den Namen der benutzerdefinierten Übermittlungsaktion aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** in den Eigenschaften für die **[!UICONTROL Übermittlung]** eines adaptiven Formulars.
-1. Wählen Sie **[!UICONTROL Absenden]** aus. CAPTCHA wird auf Grundlage der Bedingungen validiert, die in der `ValidateCAPTCHA`-API der benutzerdefinierten Übermittlungsaktion definiert sind.
+1. Wählen Sie **[!UICONTROL Übermitteln]** aus. CAPTCHA wird auf Grundlage der Bedingungen validiert, die in der `ValidateCAPTCHA`-API der benutzerdefinierten Übermittlungsaktion definiert sind.
 
 **Option 2: Verwenden Sie die [!DNL Experience Manager Forms] ValidateCAPTCHA-API, um CAPTCHA vor dem Übermitteln des Formulars bei einer Benutzeraktion zu validieren.**
 

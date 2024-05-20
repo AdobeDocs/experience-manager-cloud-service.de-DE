@@ -5,10 +5,10 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 23%
+source-wordcount: '891'
+ht-degree: 29%
 
 ---
 
@@ -16,15 +16,28 @@ ht-degree: 23%
 
 <span class="preview"> Diese Funktion ist im Rahmen des Programms für frühzeitige Anmeldung verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
-Das Turnstile Captcha von Cloudflare ist eine Sicherheitsmaßnahme, um Formulare und Sites vor automatisierten Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Es wird ein Kontrollkästchen bei der Formularübermittlung angezeigt, mit dem überprüft wird, ob es sich um menschliche Formulare handelt, bevor sie das Formular senden können. AEM Forms as a Cloud Service unterstützt das Turnstile Captcha in den adaptiven Forms-Kernkomponenten.
+CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
+
+AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
+
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
+## Integrieren der AEM Forms-Umgebung mit dem Turnstile Captcha
+
+Das Turnstile Captcha von Cloudflare ist eine Sicherheitsmaßnahme, um Formulare und Sites vor automatisierten Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Es wird ein Kontrollkästchen bei der Formularübermittlung angezeigt, mit dem überprüft wird, ob es sich um menschliche Formulare handelt, bevor sie das Formular senden können. AEM Forms as a Cloud Service unterstützt das Turnstile Captcha in den adaptiven Forms-Kernkomponenten.
+
+### Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
 
 Um die Turnstile für AEM Forms-Kernkomponenten zu konfigurieren, müssen Sie [Turnstile-Site-Schlüssel und geheimer Schlüssel](https://developers.cloudflare.com/turnstile/get-started/) von der Turnstile-Website aus.
 
-## Schritte zum Konfigurieren der Turnstile {#steps-to-configure-hcaptcha}
+### Turnstile konfigurieren {#steps-to-configure-hcaptcha}
 
 Führen Sie die folgenden Schritte aus, um AEM Forms mit dem Turnstile-Dienst zu integrieren:
 
@@ -57,7 +70,7 @@ Führen Sie die folgenden Schritte aus, um AEM Forms mit dem Turnstile-Dienst zu
 
    Sobald der Turnstile Captcha-Dienst konfiguriert ist, kann er in einer [Adaptives Formular basierend auf Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Verwenden von Turnstil in adaptiven Forms-Kernkomponenten {#using-turnstile-core-components}
+## Verwenden von Turnstile in einem adaptiven Formular {#using-turnstile-core-components}
 
 1. Öffnen Sie Ihre AEM Forms as a Cloud Service-Instanz.
 1. Gehen Sie zu **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
