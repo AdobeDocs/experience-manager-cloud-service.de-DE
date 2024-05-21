@@ -1,10 +1,10 @@
 ---
 title: Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition
-description: Erfahren Sie mehr über die Best Practices für die Sling-Dienst-Benutzerzuordnung und die Service-Benutzerdefinition
+description: Erfahren Sie mehr über die Best Practices für die Sling Service-Benutzerzuordnung und die Dienstbenutzerdefinition
 source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1884'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Dienstbenutzerzuordnung {#service-user-mapping}
 
-Um eine Zuordnung von Ihrem Dienst zu den entsprechenden Systembenutzern hinzuzufügen, müssen Sie eine Werkskonfiguration für die `ServiceUserMapper` -Dienst. Um diese modulare Konfiguration beizubehalten, können solche Konfigurationen mithilfe des Sling-Mechanismus &quot;change&quot;bereitgestellt werden (siehe [SLING-3578](https://issues.apache.org/jira/browse/SLING-3578) für weitere Details). Die empfohlene Methode zur Installation solcher Konfigurationen mit Ihrem Bundle besteht darin, sie zum Schnellstart-Bereitstellungsmodell hinzuzufügen, wie im folgenden Beispiel beschrieben:
+Um eine Zuordnung von Ihrem Dienst zu den entsprechenden Systembenutzenden hinzuzufügen, müssen Sie eine Werkskonfiguration für den Dienst `ServiceUserMapper` erstellen. Um die Modularität zu gewährleisten, können derartige Konfigurationen mithilfe des Sling-Änderungsmechanismus bereitgestellt werden (siehe [SLING-3578](https://issues.apache.org/jira/browse/SLING-3578) für weitere Details). Die empfohlene Methode zur Installation solcher Konfigurationen mit Ihrem Bundle besteht darin, sie zum Schnellstart-Bereitstellungsmodell hinzuzufügen, wie im folgenden Beispiel beschrieben:
 
 ```
 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mapping
@@ -26,207 +26,207 @@ org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mappin
 
 ### Zuordnungsformat {#mapping-format}
 
-Seit AEM 6.4 wird das Mapping-Format wie folgt definiert:
+Seit AEM 6.4 wird das Zuordnungsformat wie folgt definiert:
 
 >[!NOTE]
 >
->Die `userName` ist veraltet und sollte nicht mehr verwendet werden.
+>Die Variable `userName` ist veraltet und sollte nicht mehr verwendet werden.
 
 ```
 bundleId [:subserviceName] = userName | [principalNames]   
 ```
 
-`bundleId` und `subserviceName` den Dienst identifizieren, `userName/principalNames` den Dienstbenutzer identifizieren und `principalNames` ist eine kommagetrennte Liste.
+`bundleId` und `subserviceName` identifizieren den Dienst, `userName/principalNames` identifiziert die Person, die den Dienst benutzt, und `principalNames` ist eine durch Kommata getrennte Liste.
 
-Beachten Sie außerdem Folgendes: `principalNames` ist die Liste der Hauptnamen des Dienstbenutzers, die standardmäßig mit der ID übereinstimmen.
+Beachten Sie auch, dass `principalNames` die Liste der Dienstbenutzer-Prinzipalnamen ist, die standardmäßig mit der ID identisch sind.
 
 
 **Best Practice**
 
-* Namen von Unterdiensten für verschiedene Aufgaben - wenn die Dienste Ihres Bundles verschiedene Aufgaben ausführen, wird empfohlen, die Identität der Dienste anzugeben. `subserviceNames` um sie nach Aufgaben zu gruppieren
-* Wenn ein bestimmter Dienst verschiedene Vorgänge ausführt (z. B. das Lesen von Asset-Inhalten und Aktualisieren von Informationen unter einer Unterstruktur von `/var`), wird empfohlen, dies widerzuspiegeln, indem verschiedene Service-Prinzipale, die den einzelnen Vorgang widerspiegeln, wie z. B. die `dam-reader-service` mit Funktionen `assetreport-writer-service`
-* Jeder Dienst ist idealerweise an einen sehr spezifischen und begrenzten Satz von Vorgängen gebunden.
+* Namen von Unterdiensten für verschiedene Aufgaben – wenn die Dienste Ihres Bundles verschiedene Aufgaben ausführen, wird empfohlen, die `subserviceNames` zu identifizieren, um sie nach Aufgaben zu gruppieren
+* Wenn ein bestimmter Dienst verschiedene Operationen durchführt (z. B. das Lesen von Asset-Inhalten und das Aktualisieren von Informationen unterhalb einer Unterstruktur von `/var`), wird empfohlen, dies durch die Aggregation verschiedener Dienstprinzipale widerzuspiegeln, die die einzelnen Operationen widerspiegeln, wie z. B. die Aggregation des allgemeinen `dam-reader-service` mit Ihrem funktionsspezifischen `assetreport-writer-service`
+* Jeder Dienst ist idealerweise an einen sehr spezifischen und begrenzten Satz von Vorgängen gebunden
 * Das neue Format mit `[one,or,multiple,principalNames]` ist die empfohlene Methode zum Definieren von Dienstbenutzerzuordnungen ab AEM 6.4.
 
-Nachstehend finden Sie eine Liste von Gründen für die Formatänderung und warum Adobe empfiehlt, das Format anstelle der Versionszuordnung nur für eine einzelne Benutzer-ID zu verwenden:
+Nachstehend finden Sie eine Liste von Gründen für die Formatänderung und die Begründung, warum Adobe empfiehlt, das Format anstelle der Versionszuordnung nur für eine einzelne Benutzer-ID zu verwenden:
 
-* Möglichkeit der Wiederverwendung von Servicebenutzern durch Kombination von Kundenbedürfnissen und allgemeinen Aufgaben
+* Möglichkeit der Wiederverwendung von Dienstbenutzenden durch Kombination von besonderen Kundenbedürfnissen und allgemeinen Aufgaben
 * Vermeiden von doppelten Berechtigungen
 * Besseres Verständnis der effektiven Berechtigungen (und Aufgaben), die ein bestimmter Dienst tatsächlich ausführt
-* Keine explizite Gruppenmitgliedschaft von Dienstbenutzern erforderlich. Dies kann bei Änderung der Gruppenberechtigungen zu problematischen Nebenwirkungen führen
+* Keine Notwendigkeit einer expliziten Gruppenmitgliedschaft von Dienstbenutzenden. Dies kann bei Änderung der Gruppenberechtigungen zu problematischen Nebenwirkungen führen
 * Leistungsverbesserungen und Skalierbarkeit
 
 ## Zuordnungsauflösung und Dienstanmeldung {#mapping-resolution-and-service-login}
 
 ### Auflösung der Dienstzuordnung {#service-mapping-resolution}
 
-Die Abfolge von Aufrufen zur Auflösung des unten beschriebenen Service-Mappings:
+Die Abfolge der Aufrufe zum Auflösen der Dienstzuordnung wird im Folgenden beschrieben:
 
-1. Suche nach aktiven `principalNames` Zuordnung für die angegebene `bundleId` und `subserviceName`
-1. `principalNames` -Zuordnung für `bundleId` und null `subserviceName`
-1. `userName` -Zuordnung für `bundleId` und `subserviceName`
-1. `userName` Zuordnung für `bundleId` und null `subserviceName`
+1. Durchführen einer Suche nach aktiver `principalNames`-Zuordnung für die angegebene `bundleId` und den `subserviceName`
+1. `principalNames`-Zuordnung für die `bundleId` und einen leeren `subserviceName`
+1. `userName`-Zuordnung für die `bundleId` und den `subserviceName`
+1. `userName`-Zuordnung für die `bundleId` und einen leeren `subserviceName`
 1. Standardzuordnung
-1. Standardbenutzer
+1. Standardbenutzerin oder -benutzer
 
-### SlingRepository - Dienstanmeldung {#slingrepository-servicelogin}
+### SlingRepository – Dienstanmeldung {#slingrepository-servicelogin}
 
-Die Reihenfolge für den Erhalt eines Dienstes `Session/ResourceResolver` funktioniert wie folgt:
+Die Sequenz für das Erhalten eines `Session/ResourceResolver` für einen Dienst funktioniert wie folgt:
 
-1. Abrufen von Hauptnamen von `ServiceUserMapper` => Repository-Anmeldung vor der Authentifizierung, wie unten beschrieben
+1. Abrufen von Prinzipalnamen von `ServiceUserMapper` => Repository-Anmeldung vor der Authentifizierung, wie unten beschrieben
 1. Abrufen der Benutzer-ID von `ServiceUserMapper`
-1. Suchen Sie nach veralteter 1ServiceUserConfiguration` für die aktuelle Benutzer-ID.
-1. Standardmäßige Sling-Dienst-Anmeldung mit der Benutzer-ID (z. B. eine Sequenz von `createAdministrativeSession` und stellvertretend für die Dienstbenutzer-ID agieren)
+1. Suchen nach einer veralteten „ServiceUserConfiguration“ für die aktuelle Benutzer-ID
+1. Standardmäßige Sling Service-Anmeldung mit der Benutzer-ID (z. B. eine Sequenz von `createAdministrativeSession` und stellvertretend für die Dienstbenutzer-ID)
 
-Die neue Zuordnung mit den Prinzipalnamen führt zur folgenden vereinfachten Repository-Anmeldung:
+Die neue Zuordnung mit Prinzipalnamen führt zur folgenden vereinfachten Repository-Anmeldung:
 
-* Die Gruppe von Prinzipalnamen wird als die effektiven Prinzipale(s) behandelt, die zum Ausfüllen der `Subject`
+* Die Gruppe von Prinzipalnamen wird als die effektiven Prinzipale behandelt, die zum Ausfüllen des `Subject` verwendet werden sollen
 * Die Repository-Anmeldung kann somit vorauthentifiziert werden
-* Keine Gruppenmitgliedsauflösung
+* Keine Auflösung der Gruppenmitgliedschaft
 
   >[!NOTE]
   >
-  >Alle erforderlichen Berechtigungen müssen für die Dienstbenutzer deklariert werden. &#39;everyone&#39; und andere Gruppenberechtigungen werden nicht mehr vererbt.
+  >Alle erforderlichen Berechtigungen müssen für die Dienstbenutzenden deklariert werden. „Alle“ und andere Gruppenberechtigungen werden nicht mehr vererbt.
 
-* Keine zusätzliche Administratoranmeldung für den Dienst-`Session/ResourceResolver` erstellt werden.
+* Keine zusätzliche Admin-Anmeldung für die Erstellung des Dienst-`Session/ResourceResolver` notwendig.
 
 ### Veraltete ServiceUserConfiguration {#deprecated-serviceUserConfiguration}
 
-Beachten Sie, dass die Angabe eines einzelnen Benutzernamens in der Zuordnung dem vorhandenen entspricht. `ServiceUserConfiguration.simpleSubjectPopulation`. Mit dem neuen Format die Problemumgehung, die von der `ServiceUserConfiguration` kann direkt mit der Dienstbenutzerzuordnung angezeigt werden. Die `ServiceUserConfiguration` wurde daher für AEM nicht mehr unterstützt und alle bestehenden Verwendungen wurden ersetzt.
+Beachten Sie, dass die Angabe eines einzelnen Benutzernamens in der Zuordnung dem vorhandenen Format `ServiceUserConfiguration.simpleSubjectPopulation` entspricht. Mit dem neuen Format kann die Problemumgehung, die von der `ServiceUserConfiguration` bereitgestellt wird, direkt mit der Dienstbenutzerzuordnung wiedergegeben werden. `ServiceUserConfiguration` wird daher für AEM nicht mehr unterstützt und alle bestehenden Verwendungen wurden ersetzt.
 
-## Service-Benutzende {#service-users}
+## Dienstbenutzende {#service-users}
 
-### Wiederverwenden vorhandener Dienstbenutzer {#reusing-existing-service-users}
+### Wiederverwenden vorhandener Dienstbenutzender {#reusing-existing-service-users}
 
-Es wird empfohlen, vorhandene Dienstbenutzer erneut zu verwenden, wenn die folgenden Bedingungen erfüllt sind:
+Es wird empfohlen, vorhandene Dienstbenutzende erneut zu verwenden, wenn die folgenden Bedingungen erfüllt sind:
 
-* Ihre Anforderungen stimmen mit dem Zweck des vorhandenen Dienstbenutzers überein
-* Ihr Dienst erfordert eine gemeinsame Aufgabe, die von einem vorhandenen gemeinsamen Dienstbenutzer abgedeckt wird. In diesem Fall wird empfohlen, den Dienstbenutzer erneut zu verwenden, anstatt eine Duplizierung vorzunehmen
-* Ihr Dienst erfordert eine bestimmte Aufgabe, die von einem vorhandenen Dienstbenutzer abgedeckt wird. Wenn Sie sich diesbezüglich nicht sicher sind, fragen Sie das Feature Team, dem es gehört.
+* Ihre Anforderungen stimmen mit dem Kriterium der vorhandenen Dienstbenutzenden überein.
+* Der Dienst erfordert die Ausführung einer allgemeinen Aufgabe, die von vorhandenen allgemeinen Dienstbenutzenden abgedeckt wird. In diesem Fall wird empfohlen, Dienstbenutzende wiederzuverwenden, statt Duplikate zu erstellen.
+* Der Dienst erfordert eine bestimmte Aufgabe, die von vorhandenen Dienstbenutzenden abgedeckt wird. Wenn Sie sich diesbezüglich nicht sicher sind, fragen Sie das Funktions-Team, dem sie gehört.
 
-Verwenden Sie keine vorhandenen Dienstbenutzer erneut, wenn:
+Verwenden Sie vorhandene Dienstbenutzende nicht erneut, wenn:
 
-* Sie müssen ihre Berechtigungen in einer Weise ändern, dass sie nicht funktionieren.
-* Wenn Sie nur eine kleine Teilmenge der Berechtigungen benötigen, die sie bereitstellt, und sie einfach wiederverwenden würden, weil Ihre Funktion dadurch nicht funktioniert, weil sie eine echte Übereinstimmung darstellt
-* Wenn der Name eine völlig andere Absicht anzeigt, als Sie es benötigen. Wenn Sie ihn aufgrund seiner Funktionsweise auswählen, kann es zu Problemen auf der Straße kommen, da das Feature-Team, das Inhaber eines bestimmten Dienstes ist, die Berechtigungen ändern und Ihre Funktion beschädigen kann.
+* Sie die Berechtigungen auf eine davon unabhängige Weise ändern müssten, damit sie funktionieren.
+* Sie nur eine kleine Teilmenge der Berechtigungen benötigen, die sie bieten, und Sie sie einfach wiederverwenden würden, weil Ihre Funktion dadurch funktioniert und nicht, weil sie wirklich übereinstimmen.
+* der Name einen völlig anderen Zweck beschreibt, als Sie benötigen. Wenn Sie dies aus einem solchen Grund auswählen, kann es später zu Problemen kommen, wenn das Funktions-Team, dem ein bestimmter Dienst gehört, die Berechtigungen ändert und die Funktion somit nicht mehr funktioniert.
 
-### Erstellen eines Dienstbenutzers {#creating-a-service-user}
+### Erstellen von Dienstbenutzenden {#creating-a-service-user}
 
-Nachdem Sie überprüft haben, ob kein bestehender Dienstbenutzer in AEM für Ihren Anwendungsfall anwendbar ist und die entsprechenden RTC-Probleme genehmigt wurden, können Sie fortfahren und den neuen Benutzer zum Standardinhalt hinzufügen. Idealerweise ist ein Mitglied des erweiterten Sicherheitsteams an der RTC-Abstimmung beteiligt. Stellen Sie daher sicher, dass Sie auch die entsprechenden Interessengruppen einbeziehen.
+Nachdem Sie überprüft haben, dass keine Dienstbenutzerin und auch kein Dienstbenutzer in AEM Ihrem Anwendungsfall entspricht und die jeweiligen RTC-Ausgaben genehmigt wurden, können Sie die neue Benutzerin bzw. den neuen Benutzer zum Standardinhalt hinzufügen. Idealerweise ist ein Mitglied des erweiterten Sicherheits-Teams an der RTC-Abstimmung beteiligt. Stellen Sie daher sicher, dass Sie auch die entsprechenden Verantwortlichen einbeziehen.
 
 **Namenskonvention**
 
-Das AEM-Sicherheitsteam hat die folgende Benennungskonvention definiert, damit Dienstbenutzer neue Dienstbenutzer konsistent benennen und ihre Lesbarkeit und Wartbarkeit verbessern können.
+Das AEM-Sicherheits-Team hat die folgende Namenskonvention definiert, damit Dienstbenutzende neue Dienstbenutzende konsistent benennen und ihre Lesbarkeit und Wartbarkeit verbessern können.
 
-Ein Dienstbenutzername besteht aus 3 Elementen, die durch einen Bindestrich voneinander getrennt sind **&#39;-&#39;**:
+Ein Dienstbenutzername besteht aus 3 Elementen, die durch einen Bindestrich **&#39;-&#39;** voneinander getrennt sind:
 
-1. Die logische Entität/Funktion, auf die die Dienstvorgänge abzielen (Pfade vermeiden, die sich ändern können)
-1. Die Aufgabe, die die Dienste ausführen werden
-1. Verfolgen **&#39;service&#39;** um aus der ID und dem Prinzipalnamen leicht erkennen zu können, dass der Benutzer ein Dienstbenutzer ist
+1. Die logische Entität/Funktion, auf die die Dienstvorgänge abzielen (vermeiden Sie Pfade, die sich ändern können)
+1. Die Aufgabe, die die Dienste ausführen sollen
+1. Und abschließend **&#39;service&#39;**, um aus der ID und dem Prinzipalnamen leicht schlussfolgern zu können, dass die Benutzerin bzw. der Benutzer eine Dienstbenutzerin bzw. ein -benutzer ist
 
 **Best Practices**
 
-* Vermischen Sie nicht verschiedene Entitäten/Funktionen. Aufspaltung nach einzelnen Dienstbenutzern und Aggregieren dieser in der Zuordnung, wenn Ihr Dienst unterschiedliche Anforderungen hat
-* Beschränken Sie sich auf eine klar definierte Aufgabe pro Dienstbenutzer. Aufteilen, wenn Sie zu viele oder nicht verwandte Berechtigungen gewähren
-* Zeit verbringen, um die tatsächliche Notwendigkeit Ihres Dienstes zu ermitteln
-* Verbringen Sie Zeit mit der Suche nach einem guten, aussagekräftigen und selbsterklärenden Dienstbenutzernamen.
-* Fragen Sie nach Feedback und Review: Entwickler, die mit Ihrer Funktion nicht vertraut sind, sollten in der Lage sein, Ihre Absicht zu lesen und zu verstehen. Sie könnten in Zukunft beauftragt werden, sie zu beheben oder zu warten.
+* Vermischen Sie keine unterschiedlichen Entitäten/Funktionen. Teilen Sie sie auf einzelne Dienstbenutzende auf und fassen Sie sie in der Zuordnung zusammen, wenn Ihr Dienst unterschiedliche Anforderungen hat
+* Beschränken Sie sich auf eine klar definierte Aufgabe pro Dienstbenutzerin bzw. -benutzer. Teilen Sie sie auf unterschiedliche Dienstbenutzende auf, wenn Sie zu viele oder nicht verwandte Berechtigungen gewähren
+* Nehmen Sie sich ausreichend Zeit, um die tatsächliche Notwendigkeit Ihres Dienstes zu ermitteln
+* Nehmen Sie sich Zeit bei der Suche nach einem guten, aussagekräftigen und selbsterklärenden Namen für die Dienstbenutzerin bzw. den -benutzer.
+* Bitten Sie um Feedback und eine Überprüfung: Entwicklerinnen und Entwickler, die mit Ihrer Funktion nicht vertraut sind, sollten in der Lage sein, den Zweck zu erkennen und zu verstehen. Sie könnten in Zukunft beauftragt werden, Probleme zu beheben oder sie zu warten.
 
-Am Ende sollte der Dienstbenutzername Folgendes anzeigen:
+Am Ende sollte der Name der Dienstbenutzerin bzw. des -benutzers Folgendes anzeigen:
 
-* Verwendung und Wiederverwendbarkeit:
+* Vorgesehene Verwendung und Wiederverwendbarkeit:
 
    * Sehr allgemein: `content-writer-service`. Sichere Wiederverwendung in der Aggregation, wenn Ihre Dienste auch in der Lage sein müssen, alle Inhalte zu lesen
    * Sehr spezifisch: `asset-linkshare-service`. Es ist nicht so sicher, die Assets wiederzuverwenden, es sei denn, Ihr Dienst nutzt tatsächlich die Freigabe von Assets per Link.
 
-* Wie das Funktionssatz und die Einrichtung der Berechtigungen aussehen können:
+* Wie der Funktionsumfang und die Einrichtung der Berechtigungen aussehen können:
 
-   * Die logische Entität muss mit der Berechtigungseinrichtung übereinstimmen:
+   * Die logische Entität muss mit dem Setup der Berechtigung übereinstimmen:
 
-      * A `content-foo-service` sollten nur mit Vorgängen zu Inhalten verknüpft werden. Wenn Sie ihm Berechtigungen erteilen, mit anderen Entitäten wie Konfiguration oder Benutzern zu arbeiten, wäre dies falsch
-      * Ein bestimmter Dienst, z. B. `personalization-foo-service` sollten auch mit bestimmten Berechtigungen versehen werden. Wenn Sie schließlich Berechtigungen für alle Inhalte erteilen, ist dies nicht mehr spezifisch. Spiegeln Sie dies im Namen oder verwenden Sie einen allgemeinen Benutzer in der Aggregation erneut.
-      * Ein funktionsspezifischer Dienst wie `msm-xyz-service` sollte nur msm-bezogene Berechtigungen haben. Erweitern Sie die Berechtigungen nicht auf Funktionen, die nicht mit der Konfiguration von Communities oder Screens-Benutzern in Zusammenhang stehen.
+      * Ein `content-foo-service` sollte nur mit Vorgängen zu Inhalten verknüpft werden. Es wäre falsch, ihr Berechtigungen zu erteilen, mit anderen Entitäten wie Konfiguration oder Benutzenden zu arbeiten
+      * Ein bestimmter Dienst, z. B. `personalization-foo-service`, sollte auch mit bestimmten Berechtigungen versehen werden. Wenn Sie letztendlich Berechtigungen für alle Inhalte erteilen, ist dies nicht mehr spezifisch. Stellen Sie sicher, dass dies im Namen widergespiegelt wird, oder verwenden Sie eine allgemeine Benutzerin bzw. einen allgemeinen Benutzer in der Aggregation erneut.
+      * Ein funktionsspezifischer Dienst wie `msm-xyz-service` sollte nur msm-bezogene Berechtigungen enthalten. Erweitern Sie die Berechtigungen nicht auf Funktionen, die nicht mit der Konfiguration von Communities oder Screens-Benutzenden in Zusammenhang stehen.
 
    * Die Aufgabe muss mit den Berechtigungen übereinstimmen:
 
-      * A `foo-reader-service` sollten nur reguläre Elemente lesen können. Schreibberechtigungen nie gewähren
-      * A `foo-writer-service` kann erwartet werden, dass sie Schreibvorgänge ausführen. Es sollten jedoch keine Berechtigungen zum Lesen/Ändern von Zugriffssteuerungsinhalten gewährt werden
-      * A `foo-replicator-service` kann erwartet werden, dass `crx:replicate` gewährt.
+      * Ein `foo-reader-service` sollte nur in der Lage sein, reguläre Elemente zu lesen. Gewähren Sie niemals Schreibberechtigungen
+      * Es kann erwartet werden, dass ein `foo-writer-service` Schreiboperationen durchführt. Ihm sollten jedoch keine Berechtigungen zum Lesen/Ändern von Zugriffssteuerungsinhalten gewährt werden
+      * Ein `foo-replicator-service` sollte über Berechtigungen für `crx:replicate` verfügen.
 
 **Beispiele**
 
 Beispiele für `configuration-reader-service`:
 
-* Der Name gibt an, dass er sich auf Konfigurationen im Allgemeinen bezieht und nicht auf die Konfiguration einer bestimmten Funktion, z. B. die Konfiguration der DM-Integration. Ein Dienstbenutzer, der speziell für die Lesekonfiguration einer solchen Integration vorgesehen ist, sollte lieber benannt werden `dmconfig-reader-service` oder `s7config-reader-service`
+* Der Name gibt an, dass er sich auf Konfigurationen im Allgemeinen bezieht und nicht auf die Konfiguration einer bestimmten Funktion, z. B. die Konfiguration der DM-Integration. Dienstbenutzende, die speziell für die Lesekonfiguration einer solchen Integration vorgesehen sind, sollten lieber `dmconfig-reader-service` oder `s7config-reader-service` genannt werden
 
   >[!NOTE]
   >
-  >In der Benennung sind keine Pfadinformationen enthalten. Konfigurationen wurden verschoben von `/etc` nach `/conf`.
+  >In der Benennung sind keine Pfadinformationen enthalten. Konfigurationen wurden von `/etc` nach `/conf` verschoben.
 
-* Das task-element gibt an, dass Dienste, die an diesen Benutzer gebunden sind, nur Lesevorgänge ausführen.
+* Das Aufgabenelement „task-element“ gibt an, dass Dienste, die mit diesen Benutzenden verknüpft sind, nur Lesevorgänge ausführen können.
 
 Beispiele für `userproperties-copy-service`:
 
-* Dienste, die an diesen Dienstbenutzer gebunden sind, werden für Benutzer-/Gruppeneigenschaften wie Profile oder Voreinstellungen ausgeführt
-* Es ist speziell darauf ausgerichtet, diese Informationen zu kopieren, im Gegensatz zu einem Namen wie `userproperties-writer-service` , die jede Art von Schreibvorgängen einschließen würde. Daher ist es möglich, dass die Berechtigungseinrichtung für diese Kopieaufgaben nur das Hinzufügen von Elementen an einem Ort und das Entfernen von Elementen an einem anderen Ort ermöglicht.
+* Dienste, die an Dienstbenutzende gebunden sind, werden für Benutzer-/Gruppeneigenschaften wie Profile oder Voreinstellungen ausgeführt
+* Es ist speziell darauf ausgerichtet, diese Informationen zu kopieren, im Gegensatz zu einem Namen wie `userproperties-writer-service`, der jede Art von Schreibvorgängen einschließen würde. Daher ist es möglich, dass die Berechtigungseinrichtung für diese Kopieaufgaben nur das Hinzufügen von Elementen an einem Ort und das Entfernen von Elementen an einem anderen Ort ermöglicht.
 
 **Best Practices für die Einrichtung von Berechtigungen**
 
-* Verwenden Sie immer die Einrichtung der Prinzipal-basierten Zugriffssteuerung für Dienstbenutzer. Weitere Informationen finden Sie in den folgenden Beispielen:
+* Verwenden Sie immer die prinzipalbasierte Zugriffskontrolleinrichtung für Dienstbenutzende. Weitere Informationen finden Sie in den Beispielen unten:
 
-   * Markierungsdienstbenutzer und ihre Berechtigungen als unveränderlichen Anwendungsinhalt zulassen
+   * Lassen Sie das Markieren von Dienstbenutzenden und ihren Berechtigungen als unveränderlichen Anwendungsinhalt in der Skyline zu
    * Erstellen von Pfaden und Baumstrukturen nicht erforderlich
 
 * Nur Berechtigungen erteilen, niemals ablehnen
 * Begrenzen von Berechtigungen
 
    * Gewähren Sie nur die erforderlichen Mindestberechtigungen.
-   * Weitere Informationen finden Sie im [Zuordnen von Berechtigungen zu Elementen](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) und [Zuordnen von API-Aufrufen zu Berechtigungen](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html) Dokumentation
-   * Erteilen Sie keine Berechtigung für `jcr:all`. Das ist höchstwahrscheinlich nicht die Mindestmenge.
+   * Weitere Informationen finden Sie in der Dokumentation zum [Zuordnen von Berechtigungen zu Elementen](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) und [Zuordnen von API-Aufrufen zu Berechtigungen](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html)
+   * Erteilen Sie keine Berechtigung für `jcr:all`. Das ist höchstwahrscheinlich nicht der Mindestsatz.
 
-* Umfang reduzieren
+* Reduzieren des Umfangs
 
    * Platzieren von Zugriffskontrollrichtlinien in funktionsspezifischen Unterstrukturen
-   * Bei verteilten Artikeln: Verwenden Sie Einschränkungen zur Begrenzung des Umfangs (siehe [die Dokumentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) für die Liste der nativen Einschränkungen).
+   * Bei verteilten Elementen: Verwenden Sie Einschränkungen zur Begrenzung des Umfangs (siehe [die Dokumentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) für die Liste der nativen Einschränkungen).
 
-* Konsistenz sicherstellen
+* Sicherstellen der Konsistenz
 
-   * Berechtigungen mit der Entität und Aufgabe konsistent machen, die Sie im Dienstbenutzernamen verwendet haben
-   * Vermeiden Sie das Hinzufügen von Berechtigungen ohne Bezug. Es wäre beispielsweise seltsam, eine `workflow-administration-service` und gewähren ihr Berechtigungen zum Ausführen von Benutzerverwaltungsvorgängen unter `/home/users/screens` oder lesen Sie s7-config.
+   * Sorgen Sie dafür, dass Berechtigungen mit der Entität und Aufgabe konsistent sind, die Sie im Dienstbenutzernamen verwendet haben
+   * Vermeiden Sie das Hinzufügen von nicht verwandten Berechtigungen. Es wäre beispielsweise seltsam, einen `workflow-administration-service` zu haben und ihm Berechtigungen zum Ausführen von Benutzerverwaltungsvorgängen unter `/home/users/screens` oder zum Lesen von s7-config zu gewähren.
 
 * Vollständigkeit
 
-   * Vergewissern Sie sich, dass Ihr Dienst über alle Berechtigungen verfügt, die er zur Durchführung der Aufgaben benötigt, die er ausführen möchte. Ihr Dienst muss auch in Kundenumgebungen vorkonfiguriert funktionieren.
-   * Erwarten Sie nie, dass Kunden die Berechtigungseinrichtung erweitern (z. B. unten) `/apps`)
+   * Vergewissern Sie sich, dass Ihr Dienst über alle Berechtigungen verfügt, die er zur Durchführung der Aufgaben benötigt, die er ausführen soll. Ihr Dienst muss auch in Kundenumgebungen vorkonfiguriert funktionieren.
+   * Erwarten Sie nie, dass Kundinnen und Kunden die Berechtigungseinrichtung erweitern (Beispiel `/apps` unten)
 
 * Vermeiden von doppelten Berechtigungen
 
-   * Wiederverwenden von allgemeinen Dienstbenutzern
-   * Aggregieren Sie sie mit Ihren funktionsspezifischen Dienstbenutzern, die die zusätzlich benötigten spezifischen Berechtigungen bereitstellen.
+   * Wiederverwenden von allgemeinen Dienstbenutzenden
+   * Aggregieren Sie sie mit Ihren funktionsspezifischen Dienstbenutzenden, die die zusätzlich benötigten spezifischen Berechtigungen bereitstellen.
 
-* Teilen Sie die Einrichtung der Berechtigungen nicht auf verschiedene Funktionen auf. Die Notwendigkeit zeigt, dass Ihr Dienstbenutzer nicht genau definiert ist oder zu viele verschiedene Aufgaben ausführt
-* Platzieren Sie keine Service-Benutzer in Gruppen, da:
+* Teilen Sie die Berechtigungseinrichtung nicht auf verschiedene Funktionen auf. Dies würde implizieren, dass Ihre Dienstbenutzenden nicht genau definiert sind oder zu viele verschiedene Aufgaben ausführen
+* Platzieren Sie Dienstbenutzende nicht in Gruppen, da:
 
-   * Es kombiniert Implementierungsdetails von Dienstbenutzern mit &quot;öffentlichen&quot;Gruppen
-   * Sie haben keine Kontrolle über Berechtigungsänderungen (Risiko von Regressionen und Berechtigungseskalationen).
+   * dadurch Implementierungsdetails von Dienstbenutzenden mit „öffentlichen“ Gruppen gemischt werden
+   * Sie keine Kontrolle über Berechtigungsänderungen haben (Risiko von Regressionen und Berechtigungseskalationen).
    * Anmelde- und Bewertungsleistung
-   * Funktioniert nicht mit prinzipal-basiertem ac-Setup
+   * Funktioniert nicht mit prinzipalbasiertem ac-Setup
 
-* Der Zugriff auf den Benutzerstartknoten (oder einen darin enthaltenen Unterbaum), der keinen vorhersehbaren Pfad hat, wird in Repo Init mithilfe von home(`userId`). Siehe Sling-Repo-Init . [Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html) für Details.
-* RTC: Erstellen Sie ein dediziertes RTC-Problem, wenn Sie die Berechtigungen eines vorhandenen Dienstbenutzers ändern und sicherstellen, dass Sie es vom Sicherheitsteam überprüfen lassen.
+* Der Zugriff auf den Knoten „user-home“ (oder eine darin enthaltene Unterstruktur), der keinen vorhersehbaren Pfad hat, wird in Repo-Init durch die Verwendung von „home“ (`userId`) erreicht. Weitere Informationen finden Sie in der [Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html) zu Sling-Repo-Init.
+* RTC: Erstellen Sie ein dediziertes RTC-Problem, wenn Sie die Berechtigungen von vorhandenen Dienstbenutzenden ändern, und stellen Sie sicher, dass Sie es vom Sicherheits-Team überprüfen lassen.
 
-**Erstellung mit der Initialisierung des Repositorys**
+**Erstellung mit der Repository-Initialisierung**
 
-Immer verwenden `repo-init` , um Dienstbenutzer und ihre Berechtigungen zu definieren und beide im richtigen Abschnitt des Schnellstart-Funktionsmodells zu platzieren:
+Verwenden Sie immer `repo-init`, um Dienstbenutzende und ihre Berechtigungen zu definieren, und platzieren Sie beides im richtigen Abschnitt des Schnellstart-Funktionsmodells:
 
 **Best Practices**
 
-* Immer verwenden `repo-init` zum Erstellen des Dienstbenutzers
-* Geben Sie immer einen Zwischenpfad für die Erstellung eines Dienstbenutzers an
-* Alle integrierten Dienstbenutzer für AEM müssen sich unter `system/cq:services/internal`
-* Hängen Sie zusätzlich an den relativen Zwischenpfad an, um die Benutzer der Dienste nach Funktionen zu gruppieren: `system/cq:services/internal/<your-feature>`
-* Kunden-definierte Service-Benutzer müssen sich unten befinden `system/cq:services/<customer-intermediate-rel-path>` und niemals unterhalb der internen Baumstruktur
-* Verwendung **mit erzwungenem Pfad** anstelle von **mit Pfad** , wenn bereits ein Benutzer vorhanden war und an den neuen Speicherort verschoben werden muss, der die prinzipiell basierte Autorisierung unterstützt.
+* Systematisches Verwenden von `repo-init` zum Erstellen der Dienstbenutzenden
+* Systematische Angabe eines Zwischenpfads für jede Dienstbenutzererstellung
+* Alle integrierten Dienstbenutzenden für AEM müssen sich unterhalb von `system/cq:services/internal` befinden
+* Hängen Sie Folgendes zusätzlich an den relativen Zwischenpfad an, um die Dienstbenutzenden nach Funktionen zu gruppieren: `system/cq:services/internal/<your-feature>`
+* Kundendefinierte Dienstbenutzende müssen sich unterhalb von `system/cq:services/<customer-intermediate-rel-path>` und niemals unterhalb der internen Struktur befinden
+* Verwenden Sie **mit erzwungenem Pfad** anstelle von **mit Pfad**, wenn eine Benutzerin oder ein Benutzer bereits existiert und an den neuen Speicherort verschoben werden muss, der prinzipalbasierte Autorisierung unterstützt.
 
 **Beispiele**
 
@@ -251,9 +251,9 @@ set principal ACL for myfeature-ims-service
 end
 ```
 
-### Bereinigen von Dienstbenutzern und -berechtigungen {#cleanup-service-users-and-permissions}
+### Bereinigen von Dienstbenutzenden und Berechtigungen {#cleanup-service-users-and-permissions}
 
-Mit dem folgenden Befehl &quot;repo init&quot;können Sie nicht verwendete Dienstbenutzer und deren Berechtigungen bereinigen:
+Mit dem folgenden Repo-Init-Befehl können Sie nicht verwendete Dienstbenutzende und deren Berechtigungen bereinigen:
 
 ```
 # Remove the principal-based access control policy for principal my-feature-service
@@ -269,11 +269,11 @@ disable service user my-feature-service : "My feature is no longer used"
 delete service my-feature-service 
 ```
 
-### Testen von Dienstbenutzern {#testing-service-users}
+### Testen von Dienstbenutzenden {#testing-service-users}
 
-Es ist wichtig, serverseitige Tests für Dienstbenutzer und deren Einrichtung zu schreiben. Dies überprüft nicht nur, ob Ihr Setup wirklich funktioniert, sondern hilft Ihnen auch, Regressionen und unbeabsichtigte Fehler zu erkennen, wenn Sie den Inhalt oder die Service-Benutzer der Zugriffskontrolle ändern.
+Es ist wichtig, Server-seitige Tests für Dienstbenutzende und das Setup Ihrer Berechtigungen zu schreiben. Dadurch wird nicht nur überprüft, ob Ihr Setup wirklich funktioniert, sondern Sie können auch Regressionen und unbeabsichtigte Fehler erkennen, wenn Sie Zugriffskontrollinhalte oder Dienstbenutzende ändern.
 
-Die `com.adobe.granite.testing.clients` -Bibliothek bietet eine Vielzahl von Hilfsprogrammen, die das Schreiben von SSTs für Service-Benutzer erleichtern.
+Die `com.adobe.granite.testing.clients`-Bibliothek bietet eine Vielzahl von Dienstprogrammen, die das Schreiben von SSTs für Dienstbenutzende erleichtern.
 
 
 
