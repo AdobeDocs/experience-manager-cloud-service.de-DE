@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 98%
+source-wordcount: '2610'
+ht-degree: 80%
 
 ---
 
@@ -23,11 +23,11 @@ Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine option
 
 AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere IT-Testgates ermöglichen bereits die Erstellung und Automatisierung von benutzerdefinierten Tests mithilfe von AEM-APIs.
 
-UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Außerdem kann ein UI-Test-Projekt einfach durch die Verwendung von [den AEM Projektarchetyp.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
+UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Ein Projekt für UI-Tests kann auch einfach mithilfe [des AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erzeugt werden.
 
 Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automatisches Warten ermöglicht, was Zeit spart und die Produktivität beim Testen steigert. Cypress bietet außerdem eine einfache und intuitive Syntax, die auch für Testneulinge leicht zu erlernen und anzuwenden ist.
 
-UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit dem Schritt[&#128279;](/help/implementing/cloud-manager/deploy-code.md) **Testen der benutzerdefinierten Benutzeroberfläche** in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ausgeführt. Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
+UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit dem Schritt](/help/implementing/cloud-manager/deploy-code.md) [**Testen der benutzerdefinierten Benutzeroberfläche** in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ausgeführt. Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
 Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die UI-Tests ein Docker-Image mit Tests in einer beliebigen Sprache sein, sofern sie den unter [Erstellen von UI-Tests](#building-ui-tests) definierten Konventionen entsprechen.
 
@@ -45,7 +45,7 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benu
 
    * Verwenden Sie für Cypress den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 
-   * Verwenden Sie für JavaScript und WDIO den Beispiel-Code, der automatisch im Ordner `ui.tests` Ihres Cloud Manager-Repositorys generiert wird.
+   * Verwenden Sie für JavaScript und WDIO den automatisch im `ui.tests` Ordner Ihres Cloud Manager-Repositorys.
 
      >[!NOTE]
      >
@@ -146,7 +146,7 @@ Diese Ausführung weist das Maven Assembly Plug-in an, ein Archiv basierend auf 
 </assembly>
 ```
 
-Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu erstellen, und weist ihm den Klassifikator `ui-test-docker-context` zu. Darüber hinaus werden die Dateien, einschließlich der folgenden, aufgelistet, die im Archiv enthalten sein folgen müssen.
+Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu erstellen, und weist ihm den Klassifikator `ui-test-docker-context` zu. Außerdem werden die Dateien aufgelistet, die in das Archiv aufgenommen werden müssen, einschließlich der folgenden:
 
 * Eine `Dockerfile`, obligatorisch für das Erstellen des Docker-Images
 * Das Skript `wait-for-grid.sh`, dessen Zwecke unten beschrieben werden
@@ -170,7 +170,7 @@ Damit Cloud Manager Ihre Benutzeroberflächentests erstellen und ausführen kann
 
 Wenn diese Datei nicht vorhanden ist, werden die Erstellung und Ausführung der Benutzeroberflächentests übersprungen.
 
-Um eine `testing.properties`-Datei in das Build-Artefakt aufzunehmen, fügen Sie eine `include`-Anweisung in die `assembly-ui-test-docker-context.xml`-Datei ein.
+Um eine Datei `testing.properties` in das Build-Artefakt aufzunehmen, fügen Sie eine `include`-Anweisung in die Datei `assembly-ui-test-docker-context.xml` ein.
 
 ```xml
 [...]
@@ -184,7 +184,7 @@ Um eine `testing.properties`-Datei in das Build-Artefakt aufzunehmen, fügen Sie
 
 >[!NOTE]
 >
->Wenn Ihr Projekt diese Zeile nicht enthält, bearbeiten Sie die Datei, um UI-Tests zu aktivieren.
+>Falls Ihr Projekt diese Zeile nicht enthält, müssen Sie die Datei bearbeiten, um sich für Tests der Benutzeroberfläche anmelden zu können.
 >
 >Die Datei kann eine Zeile enthalten, in der empfohlen wird, sie nicht zu bearbeiten. Das liegt daran, dass die Datei in Ihr Projekt aufgenommen wurde, bevor Opt-in-Benutzeroberflächentests eingeführt wurden, und dass die Kundschaft die Datei nicht bearbeiten sollte. Dies kann ignoriert werden.
 
@@ -200,7 +200,7 @@ Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
   fi
   ```
 
-* In den von Adobe bereitgestellten Cypress- und Java-Selenium-Testbeispielen ist die Opt-in-Markierung bereits gesetzt.
+* Für die von Adobe bereitgestellten Cypress- und Java Selenium-Testbeispiele ist bereits die Opt-in-Markierung gesetzt.
 
 ## Schreiben von Benutzeroberflächentests {#writing-ui-tests}
 
@@ -211,7 +211,7 @@ In diesem Abschnitt werden die Konventionen beschrieben, denen das Docker-Image 
 Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image übergeben, abhängig von Ihrem Framework.
 
 | Variable | Beispiele | Beschreibung | Test-Framework |
-|---|---|---|---|
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Die URL des Selenium-Servers | Nur Selenium |
 | `SELENIUM_BROWSER` | `chrome` | Die vom Selenium-Server verwendete Browser-Implementierung | Nur Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | Die URL der AEM-Autoreninstanz | Alle |
@@ -219,15 +219,22 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 | `AEM_AUTHOR_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Autoreninstanz | Alle |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | Die URL der AEM-Veröffentlichungsinstanz | Alle |
 | `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Das Kennwort für die Anmeldung bei der AEM Veröffentlichungsinstanz | Alle |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Der Pfad, in dem der XML-Bericht der Testergebnisse gespeichert werden muss | Alle |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | Die URL, an die die Datei hochgeladen werden muss, damit sie für das Test-Framework verfügbar ist | Alle |
+| `PROXY_HOST` | `proxy-host` | Der Hostname des internen HTTP-Proxy, der vom Test-Framework verwendet werden soll | Alle außer Selenium |
+| `PROXY_HTTPS_PORT` | `8071` | Der Proxy-Server-Listening-Anschluss für HTTPS-Verbindungen (kann leer sein) | Alle außer Selenium |
+| `PROXY_HTTP_PORT` | `8070` | Der Proxy-Server-Listening-Anschluss für HTTP-Verbindungen (kann leer sein) | Alle außer Selenium |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | Der Pfad zum Zertifizierungsstellenzertifikat, das vom Test-Framework verwendet werden soll | Alle außer Selenium |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | Der HTTP-Konsistenzprüfungsanschluss des Proxyservers | Alle außer Selenium |
+| `PROXY_RETRY_ATTEMPTS` | `12` | Empfohlene Anzahl von Wiederholungsversuchen beim Warten auf Proxyserver-Bereitschaft | Alle außer Selenium |
+| `PROXY_RETRY_DELAY` | `5` | Empfohlene Verzögerung zwischen Wiederholungsversuchen beim Warten auf Proxyserver-Bereitschaft | Alle außer Selenium |
 
 Die Adobe-Testbeispiele bieten Hilfsfunktionen für den Zugriff auf die Konfigurationsparameter:
 
 * Cypress: Verwenden der Standardfunktion `Cypress.env('VARIABLE_NAME')`
-* JavaScript: Siehe das Modul [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js)
-* Java: Siehe die Klasse [Konfiguration](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 
+* JavaScript: Siehe [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) Modul
+* Java: Siehe [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Generieren von Testberichten {#generate-test-reports}
 
@@ -240,6 +247,8 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 >Das Ergebnis des Benutzeroberflächen-Testschritts wird nur anhand der Testberichte ausgewertet. Stellen Sie sicher, dass Sie den Bericht entsprechend Ihrer Testausführung generieren.
 >
 >Verwenden Sie Assertionen, anstatt einfach einen Fehler in STDERR zu protokollieren oder einen Exit-Code ungleich Null zurückzugeben, da Ihre Bereitstellungs-Pipeline sonst normal weiterlaufen kann.
+>
+>Wenn während der Testausführung ein HTTP-Proxy verwendet wurde, enthalten die Ergebnisse eine `request.log` -Datei.
 
 ### Voraussetzungen {#prerequisites}
 
@@ -307,6 +316,113 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Ber
 1. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück.
    * Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle.
    * Sie können dieses Handle in einem `<input>`-Element anstelle eines Dateipfads verwenden, um das Hochladen von Dateien in Ihrem Programm zu testen.
+
+## Druckgerätespezifische Details
+
+>[!NOTE]
+>
+>Dieser Abschnitt gilt nur, wenn Cypress die ausgewählte Testinfrastruktur ist.
+
+### Einrichten eines HTTP-Proxys
+
+Der Einstiegspunkt des Docker-Containers muss den Wert der `PROXY_HOST` Umgebungsvariable.
+
+Wenn dieser Wert leer ist, sind keine zusätzlichen Schritte erforderlich und die Tests sollten ohne HTTP-Proxy ausgeführt werden.
+
+Wenn es nicht leer ist, muss das Einstiegspunkt-Skript:
+
+1. Konfigurieren Sie eine HTTP-Proxy-Verbindung für die Ausführung von UI-Tests. Dies kann durch den Export der `HTTP_PROXY` Umgebungsvariable, die mithilfe der folgenden Werte erstellt wird:
+   * Proxy-Host, bereitgestellt von `PROXY_HOST` Variable
+   * Proxy-Port, der von bereitgestellt wird `PROXY_HTTPS_PORT` oder `PROXY_HTTP_PORT` (die Variable mit einem nicht leeren Wert wird verwendet)
+2. Legen Sie das Zertifizierungsstellenzertifikat fest, das beim Herstellen einer Verbindung zum HTTP-Proxy verwendet wird. Seine Lage wird durch `PROXY_CA_PATH` -Variable.
+   * Dies lässt sich durch Export erreichen `NODE_EXTRA_CA_CERTS` Umgebungsvariable.
+3. Warten Sie, bis der HTTP-Proxy bereit ist.
+   * Überprüfen der Bereitschaft der Umgebungsvariablen `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` und `PROXY_RETRY_DELAY` verwendet werden.
+   * Sie können mit einer cURL-Anfrage überprüfen, ob Sie cURL in Ihrer `Dockerfile`.
+
+Eine Beispielimplementierung finden Sie im Einstiegspunkt des Cypress-Beispieltestmoduls unter [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+
+## Details zu Playwright
+
+>[!NOTE]
+>
+> Dieser Abschnitt gilt nur, wenn Playwright die ausgewählte Testinfrastruktur ist.
+
+### Einrichten eines HTTP-Proxys
+
+>[!NOTE]
+>
+> In den vorgestellten Beispielen wird davon ausgegangen, dass Chrome als Projektbrowser verwendet wird.
+
+Ähnlich wie bei Cypress müssen Tests den HTTP-Proxy verwenden, wenn ein nicht leeres `PROXY_HOST` Umgebungsvariable bereitgestellt wird.
+
+Dazu müssen die folgenden Änderungen vorgenommen werden.
+
+#### Dockerfile
+
+Installieren Sie cURL und `libnss3-tools`, die `certutil.`
+
+```dockerfile
+RUN apt -y update \
+    && apt -y --no-install-recommends install curl libnss3-tools \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### Entrypoint-Skript
+
+Bash-Skript einschließen, das in jedem Fall `PROXY_HOST` -Umgebungsvariable bereitgestellt wird, führt Folgendes aus:
+
+1. Proxy-bezogene Variablen exportieren, z. B. `HTTP_PROXY` und `NODE_EXTRA_CA_CERTS`
+2. Verwendung `certutil` Installieren des Proxy-CA-Zertifikats für Chrom
+3. Warten Sie, bis der HTTP-Proxy bereit ist (oder beenden Sie ihn bei einem Fehler).
+
+Beispielimplementierung:
+
+```bash
+# setup proxy environment variables and CA certificate
+if [ -n "${PROXY_HOST:-}" ]; then
+  if [ -n "${PROXY_HTTPS_PORT:-}" ]; then
+    export HTTP_PROXY="https://${PROXY_HOST}:${PROXY_HTTPS_PORT}"
+  elif [ -n "${PROXY_HTTP_PORT:-}" ]; then
+    export HTTP_PROXY="http://${PROXY_HOST}:${PROXY_HTTP_PORT}"
+  fi
+  if [ -n "${PROXY_CA_PATH:-}" ]; then
+    echo "installing certificate"
+    mkdir -p $HOME/.pki/nssdb
+    certutil -d sql:$HOME/.pki/nssdb -A -t "CT,c,c" -n "EaaS Client Proxy Root" -i $PROXY_CA_PATH
+    export NODE_EXTRA_CA_CERTS=${PROXY_CA_PATH}
+  fi
+  if [ -n "${PROXY_OBSERVABILITY_PORT:-}" ] && [ -n "${HTTP_PROXY:-}" ]; then
+    echo "waiting for proxy"
+    curl --silent  --retry ${PROXY_RETRY_ATTEMPTS:-3} --retry-connrefused --retry-delay ${PROXY_RETRY_DELAY:-10} \
+      --proxy ${HTTP_PROXY} --proxy-cacert ${PROXY_CA_PATH:-""} \
+      ${PROXY_HOST}:${PROXY_OBSERVABILITY_PORT}
+    if [ $? -ne 0 ]; then
+      echo "proxy is not ready"
+      exit 1
+    fi
+  fi
+fi
+```
+
+#### Konfiguration von Playwright
+
+Ändern Sie die Konfiguration der Wiedergabeliste (z. B. in `playwright.config.js`), um einen Proxy zu verwenden, falls die Variable `HTTP_PROXY` Umgebungsvariable festgelegt ist.
+
+Beispielimplementierung:
+
+```javascript
+const proxyServer = process.env.HTTP_PROXY || ''
+```
+
+```javascript
+// enable proxy if set
+if (proxyServer !== '') {
+ cfg.use.proxy = {
+  server: proxyServer,
+ }
+}
+```
 
 ## Ausführen von lokalen Benutzeroberflächentests {#run-ui-tests-locally}
 

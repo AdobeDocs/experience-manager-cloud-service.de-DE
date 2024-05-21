@@ -2,10 +2,10 @@
 title: Funktionstests
 description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Bereitstellungsprozess von AEM as a Cloud Service integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
-workflow-type: ht
-source-wordcount: '1354'
-ht-degree: 100%
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 98%
 
 ---
 
@@ -93,6 +93,8 @@ Die Tests sind in einem Docker-Image verpackt, das so flexibel wie möglich ist 
 >[!NOTE]
 >
 >Benutzerdefinierte Benutzeroberflächentests werden in den Produktions- und Nicht-Produktions-(Opt-in)-Pipelines ausgeführt, die von den Implementierungen Ihrer AEM-Anwedungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie sind daher ein wichtiger Beitrag zur Gewährleistung eines ordnungsgemäßen Funktionierens Ihrer Anwendung und zur Erhöhung der Versionssicherheit. Die benutzerdefinierten Benutzeroberflächentests werden auch in internen Validierungs-Pipelines vor der Veröffentlichung für jeden Kunden und jede Kundin ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
+>
+>Nicht-Selenium-Container sollten Tests mithilfe eines HTTP-Proxys ausführen, der auf den Umgebungsvariablen in der Variablen [UI-Testabschnitt.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 Damit Pipeline-Ausführungen effizient bleiben, empfehlen wir, dass Sie sich auf Schlüsselfunktionen und die wichtigsten Benutzerinteraktionsabläufe konzentrieren. Es wird empfohlen, Testsuiten der vollständigen Benutzeroberfläche, die nicht zu diesen Qualitätstests passen, während des Kundenentwicklungsflusses als Teil der allgemeinen Kundenvalidierungs-Pipelines auszuführen.
 
