@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
-workflow-type: ht
-source-wordcount: '2381'
-ht-degree: 100%
+source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
+workflow-type: tm+mt
+source-wordcount: '2670'
+ht-degree: 88%
 
 ---
 
@@ -24,6 +24,7 @@ Dieser Editor bietet Folgendes:
 
 * [Automatisches Speichern](#saving-autosaving) zur Vermeidung von versehentlichen Verlusten von Bearbeitungen.
 * [Online-Upload von Assets als Inhaltsverweise](#reference-images), ohne sie zuerst in Asset DAM hochladen zu müssen.
+* [Generieren von Varianten](#generate-variations-ai) zur Verwendung der generativen KI, um die Inhaltserstellung auf der Grundlage von Eingabeaufforderungen zu beschleunigen.
 * [Vorschau](#preview-content-fragment) des vom Inhaltsfragment bereitgestellten gerenderten Erlebnisses.
 * Fähigkeit zum [Veröffentlichen](#publish-content-fragment) und [Aufheben der Veröffentlichung](#unpublish-content-fragment) über den Editor.
 * Fähigkeit zum [Anzeigen und Öffnen zugehöriger Sprachkopien](#view-language-copies) im Editor.
@@ -83,7 +84,7 @@ Im linken Bereich können Sie Folgendes sehen:
 
 * die Liste der **[Varianten](#variations)**, die für dieses Fragment erstellt wurden:
    * **Haupt** ist die Variante, die beim ersten Erstellen des Inhaltsfragments vorhanden ist. Sie können später weitere hinzufügen
-   * Sie können eine Variante auswählen und zur Bearbeitung öffnen
+   * Sie können Varianten generieren (#generate-variations) verwenden, um eine aufforderungsbasierte Vorlage zu verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
    * Sie können auch [eine Variante erstellen](#create-variation)
 * die **Felder** innerhalb des Fragments und dessen Varianten:
    * das Symbol zeigt den [Datentyp](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) an
@@ -119,6 +120,8 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 Über den Editor haben Sie folgende Möglichkeiten:
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
+
+* [Verwenden der Generate Variations AI](#generate-variations-ai) zur Verwendung von Generative AI, um eine aufforderungsbasierte Vorlage zu verwenden, die von Adobe für einen bestimmten Anwendungsfall erstellt wurde.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -156,14 +159,52 @@ So benennen Sie eine **Variante** um:
 
 1. Drücken Sie entweder auf die **Return-Taste** oder wechseln Sie in ein anderes Feld, um die Änderung automatisch zu speichern. Der Titel wird im Bereich **Varianten** auf der linken Seite aktualisiert.
 
+### Erstellen von Varianten mit GenAI mit Generate Variations {#generate-variations-ai}
+
+Verwenden Sie generative Varianten, um die Generative KI zu nutzen und so die Inhaltserstellung zu beschleunigen.
+
+So verwenden Sie die generativen Varianten im Inhaltsfragment-Editor:
+
+1. Öffnen Sie den Inhaltsfragment-Editor. In der Kopfzeile finden Sie den Einstiegspunkt zum Generieren von Varianten:
+
+![Generieren von Varianten im Inhaltsfragment-Editor](assets/cfm-generate-variations1.png)
+
+1. Generieren von Varianten wird auf der neuen Registerkarte geöffnet. In der linken Leiste können Sie die AEM Cloud-Instanz und das Inhaltsfragment sehen, für das Sie Inhalte erstellen. Wählen Sie die zu verwendende Eingabeaufforderung aus oder erstellen Sie eine neue Eingabeaufforderung.
+
+   >[!NOTE]
+   >
+   >Die verfügbaren Vorlagen für Adobe-Eingabeaufforderungen sind jetzt eingeschränkt, aber in zukünftigen Versionen werden mehr hinzugefügt.
+
+![Exportieren, um Varianten im Inhaltsfragment zu generieren](assets/cfm-generate-variations2.png)
+
+1. Erstellen Sie Inhalte, indem Sie die Eingabeaufforderungen ausfüllen. Das Inhaltsmodell aus dem Fragment wird automatisch verwendet, um Inhalte mithilfe von GenAI zu generieren.
+
+   >[!NOTE]
+   >
+   >Derzeit unterstützen wir nur Textfelder.
+
+![Exportieren, um Varianten im Inhaltsfragment zu generieren](assets/cfm-generate-variations3.png)
+
+1. Wählen Sie die gewünschte Variante aus und wählen Sie &quot;Exportvariante&quot;. Bestätigen Sie den Namen der Inhaltsfragmentvariante und wählen Sie eine der folgenden Optionen aus:
+
+   * **Export**: Exportieren Sie die Variante in das Inhaltsfragment und bleiben Sie in der Anwendung Variante generieren.
+   * **Exportieren und öffnen**: Exportieren Sie die Variante in das Inhaltsfragment und öffnen Sie eine neue Registerkarte, auf der das Inhaltsfragment mit der neuen Variante von GenAI angezeigt wird.
+
+   ![Exportieren, um Varianten im Inhaltsfragment zu generieren](assets/cfm-generate-variations4.png)
+
+1. Die erzeugten Varianten werden im Editor für Hauptinhaltsfragmente angezeigt.
+
+   ![Anzeigen von Varianten im Inhaltsfragment](assets/cfm-generate-variations5.png)
+
+Weitere Informationen zum Generieren von Varianten [here]{generative-ai/generate-variations.md}
 
 ### Löschen einer Variante {#delete-variation}
 
 So löschen Sie eine Variante Ihres Inhaltsfragments:
 
->[!NOTE]
->
->Die **Hauptvariante** kann nicht gelöscht werden.
+    >[!NOTE]
+    >
+    >Sie können **Main** nicht löschen.
 
 1. Wählen Sie die Variante aus.
 

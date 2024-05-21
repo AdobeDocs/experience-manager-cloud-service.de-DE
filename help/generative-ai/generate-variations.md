@@ -2,9 +2,9 @@
 title: Generieren von Varianten
 description: Erfahren Sie mehr über die Generierung von Varianten, auf die über AEM as a Cloud Service Zugriff und die Sidekick von Edge Delivery Services zugegriffen werden kann.
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3262'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ Sie können [Zugriff auf Varianten generieren](#access-generate-variations) von:
 
 * [innerhalb von Adobe Experience Manager (AEM as a Cloud Service)](#access-aemaacs)
 * [Sidekick von AEM Edge Delivery Services](#access-aem-sidekick)
+* [im Inhaltsfragmente-Editor](#authoring-content-fragments)
 
 >[!NOTE]
 >
@@ -47,7 +48,7 @@ Bevor Sie Varianten generieren verwenden, müssen Sie der [Adobe Generative AI-B
 
 [Verwendung von generierten Varianten](#generative-action-usage) ist an den Verbrauch generativer Aktionen gebunden.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Wenn Sie Varianten generieren (und den linken Bereich erweitern) öffnen, sehen Sie Folgendes:
 
@@ -291,7 +292,7 @@ Die folgende Abbildung zeigt die Vorteile, die dies bietet:
 
 ![Varianten generieren - Eingabeaufforderung mit Titel und Beschreibung, die separat formatiert sind](assets/generate-variations-prompt-formatted.png)
 
-## Eingabeaufforderung speichern {#save-prompt}
+## Speicher-Prompt {#save-prompt}
 
 Nach der Bearbeitung oder Erstellung von Eingabeaufforderungen können Sie diese für die zukünftige Verwendung speichern, entweder für Ihre IMS-Organisation oder für Sie selbst. Die gespeicherte Eingabeaufforderung wird als **Eingabevorlage** Karte.
 

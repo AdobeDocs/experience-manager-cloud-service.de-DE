@@ -1,10 +1,11 @@
 ---
 title: Versionshinweise für Generate Variations
 description: Versionshinweise für die Generierung von Varianten, auf die über AEM as a Cloud Service und die Sidekick von Edge Delivery Services zugegriffen werden kann
-source-git-commit: 8067da7fb65bee6c147f306712eb312323244357
+exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 11%
+source-wordcount: '225'
+ht-degree: 10%
 
 ---
 
@@ -17,6 +18,15 @@ Auf dieser Seite finden Sie die Versionshinweise für Generate Variations (Gener
 >Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Versionshinweise {#release-highlights}
+
+Die aktuelle Version ist Version 2.2.0.
+
+### 2.2.0 {#release-notes-2-2-0}
+
+* Implementierte Unterstützung für Inhaltsfragmente
+* Die Möglichkeit, Ergebnisse als CSV-Dateien von Favoriten herunterzuladen, wurde eingeführt.
+* Die Liste &quot;Letzte Elemente&quot;wurde um Zeitgruppen erweitert.
+* Lokalisierungsunterstützung wurde für mehrere Sprachen hinzugefügt
 
 Die aktuelle Version ist Version 2.0.0.
 
