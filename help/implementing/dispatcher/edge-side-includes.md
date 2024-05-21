@@ -2,9 +2,9 @@
 title: Edge Side Includes
 description: Das Adobe Managed CDN unterstützt jetzt Edge Side Includes (ESI), eine Markup-Sprache für die dynamische Webinhaltassembly auf Edge-Ebene.
 feature: Dispatcher
-source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
+source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ Die ESI-Syntax lautet wie folgt, wenn eine übergeordnete Seite `/content/page.h
 
 Siehe [ESI-Spezifikation](https://www.w3.org/TR/esi-lang/) für Details.
 
-### Überlegungen (#esi-syntax-considerations}
+### Überlegungen {#esi-syntax-considerations}
 
 * Die folgenden ESI-Tags werden unterstützt: include, comment, remove.
 * ESI-Tags werden beim CDN sequenziell und nicht gleichzeitig verarbeitet, sodass viele ESI-Tags auf einer Seite mit niedrigen TTLs die Latenz zum Erlebnis des Endbenutzers hinzufügen können.
