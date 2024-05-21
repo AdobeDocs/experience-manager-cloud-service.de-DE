@@ -677,7 +677,7 @@ ht-degree: 99%
             + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
          + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
             + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
-            + [Verwenden von Captcha in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [Verwenden von hCaptcha in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Verwenden von Turnstile in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Verwenden der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
             + [Anwenden einer Freihandsignatur](/help/forms/signing-forms-using-scribble.md)
