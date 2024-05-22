@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: fc97a51bb20bbf0d438d0f27a2246467a480eb71
+source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2668'
 ht-degree: 88%
 
 ---
@@ -196,7 +196,7 @@ So verwenden Sie die generativen Varianten im Inhaltsfragment-Editor:
 
    ![Anzeigen von Varianten im Inhaltsfragment](assets/cfm-generate-variations5.png)
 
-Weitere Informationen zum Generieren von Varianten [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+Weitere Informationen zum Generieren von Varianten [here](/help/generative-ai/generate-variations.md).
 
 ### Löschen einer Variante {#delete-variation}
 
