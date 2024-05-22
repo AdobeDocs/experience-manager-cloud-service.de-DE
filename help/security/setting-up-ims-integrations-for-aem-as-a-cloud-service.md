@@ -1,10 +1,10 @@
 ---
 title: Einrichten von IMS-Integrationen für AEM as a Cloud Service
-description: Erfahren Sie, wie Sie IMS-Integrationen für AEM as a Cloud Service einrichten.
+description: Erfahren Sie, wie Sie eine IMS-Integration für AEM as a Cloud Service einrichten
 source-git-commit: 6945980cac24d4413a84343b035a8380b04e7444
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 >
 >Automatisch bereitgestellte JWT-Konfigurationen sollten nicht manuell migriert werden, da sie automatisch von Adobe verarbeitet werden.
 
-Adobe Experience Manager (AEM) as a Cloud Service kann mit vielen anderen Adobe-Lösungen integriert werden. Zum Beispiel Adobe Target, Adobe Analytics und andere.
+Adobe Experience Manager (AEM) as a Cloud Service kann mit vielen anderen Adobe-Lösungen integriert werden. Zum Beispiel Adobe Target, Adobe Analytics und vielen weiteren.
 
 Die Integrationen verwenden eine IMS-Integration, die mit S2S OAuth konfiguriert ist.
 
@@ -25,19 +25,19 @@ Die Integrationen verwenden eine IMS-Integration, die mit S2S OAuth konfiguriert
 
 * Anschließend können Sie:
 
-   * Erstellen Sie eine (neue) [OAuth-Konfiguration](#creating-oauth-configuration)
+   * Eine (neue) [OAuth-Konfiguration](#creating-oauth-configuration) erstellen
 
-   * [Migrieren einer vorhandenen JWT-Konfiguration in eine OAuth-Konfiguration](#migrating-existing-JWT-configuration-to-oauth)
+   * [Eine vorhandene JWT-Konfiguration in eine OAuth-Konfiguration migrieren](#migrating-existing-JWT-configuration-to-oauth)
 
 >[!CAUTION]
 >
->Zuvor wurden Konfigurationen mit [JWT-Anmeldeinformationen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Zuvor wurden Konfigurationen mit [JWT-Anmeldedaten erstellt, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 >
 >Solche Konfigurationen können nicht mehr erstellt oder aktualisiert werden, können aber zu OAuth-Konfigurationen migriert werden.
 
 ## Anmeldedaten in der Developer Console {#credentials-in-the-developer-console}
 
-Als ersten Schritt müssen Sie die OAuth-Anmeldeinformationen in der Adobe Developer Console konfigurieren.
+Als ersten Schritt müssen Sie die OAuth-Anmeldedaten in der Adobe Developer Console konfigurieren.
 
 Weitere Informationen dazu finden Sie in der Dokumentation zur Developer Console, abhängig von Ihren Anforderungen:
 
@@ -45,59 +45,59 @@ Weitere Informationen dazu finden Sie in der Dokumentation zur Developer Console
 
    * [Server-zu-Server-Authentifizierung](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
-* Erstellen einer neuen OAuth-Berechtigung:
+* Erstellen von neuen OAuth-Anmeldedaten:
 
    * [OAuth-Implementierungshandbuch für Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
-* Migration einer vorhandenen JWT-Berechtigung in eine OAuth-Berechtigung:
+* Migration von vorhandenen JWT-Anmeldedaten zu OAuth-Anmeldedaten:
 
    * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
 
 Zum Beispiel:
 
-![OAuth-Berechtigung in der Developer Console](assets/ims-configuration-developer-console.png)
+![OAuth-Anmeldedaten in der Developer Console](assets/ims-configuration-developer-console.png)
 
-## OAuth-Konfiguration erstellen {#creating-oauth-configuration}
+## Erstellen einer OAuth-Konfiguration {#creating-oauth-configuration}
 
-So erstellen Sie eine neue Adobe IMS-Integration mit OAuth:
+So erstellen Sie eine neue Adobe IMS-Integration mithilfe von OAuth:
 
-1. Navigieren Sie in AEM zu **Instrumente**, **Sicherheit**, **Adobe IMS-Integration**.
+1. Navigieren Sie in AEM zu **Tools** > **Sicherheit** > **Adobe IMS-Integration**.
 
 1. Wählen Sie **Erstellen** aus.
 
-1. Führen Sie die Konfiguration basierend auf Details aus der [Entwicklerkonsole](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Zum Beispiel:
+1. Schließen Sie die Konfiguration basierend auf Details aus der [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) ab. Zum Beispiel:
 
-   ![OAuth-Konfiguration erstellen](assets/ims-create-oauth-configuration.png)
+   ![Erstellen einer OAuth-Konfiguration](assets/ims-create-oauth-configuration.png)
 
 1. **Speichern** Sie Ihre Änderungen.
 
 ## Migration einer vorhandenen JWT-Konfiguration zu einer OAuth-Konfiguration {#migrating-existing-JWT-configuration-to-oauth}
 
-So migrieren Sie eine vorhandene Adobe IMS-Integration basierend auf JWT-Anmeldeinformationen:
+So migrieren Sie eine vorhandene Adobe IMS-Integration basierend auf JWT-Anmeldedaten:
 
 >[!NOTE]
 >
 >Dieses Beispiel zeigt eine IMS-Konfiguration für Launch.
 
-1. Navigieren Sie in AEM zu **Instrumente**, **Sicherheit**, **Adobe IMS-Integration**.
+1. Navigieren Sie in AEM zu **Tools** > **Sicherheit** > **Adobe IMS-Integration**.
 
-1. Wählen Sie die zu migrierende JWT-Konfiguration aus. JWT-Konfigurationen sind mit einer Warnung gekennzeichnet **JWT-Anmeldeinformationen (nicht mehr unterstützt)**.
+1. Wählen Sie die zu migrierende JWT-Konfiguration aus. JWT-Konfigurationen sind mit einer Warnung gekennzeichnet: **JWT-Anmeldedaten (nicht mehr unterstützt)**.
 
-1. Auswählen **Eigenschaften**:
+1. Wählen Sie **Eigenschaften** aus.
 
-   ![JWT-Konfiguration auswählen](assets/ims-migrate-jwt-select-configuration.png)
+   ![Auswählen der JWT-Konfiguration](assets/ims-migrate-jwt-select-configuration.png)
 
 1. Die Konfiguration wird als schreibgeschützt geöffnet:
 
-   ![Konfigurationseigenschaften - schreibgeschützt](assets/ims-migrate-jwt-properties-read-only.png)
+   ![Konfigurationseigenschaften – Schreibgeschützt](assets/ims-migrate-jwt-properties-read-only.png)
 
-1. Auswählen **OAuth** aus dem **Authentifizierungstyp** Dropdown-Liste:
+1. Wählen Sie **OAuth** aus der Dropdown-Liste **Authentifizierungstyp** aus:
 
-   ![Authentifizierungstyp auswählen](assets/ims-migrate-jwt-authentication-type.png)
+   ![Auswählen des Authentifizierungstyps](assets/ims-migrate-jwt-authentication-type.png)
 
-1. Die verfügbaren Eigenschaften werden aktualisiert. Verwenden Sie Details aus der Developer Console, um sie abzuschließen:
+1. Die verfügbaren Eigenschaften werden aktualisiert. Verwenden Sie Details aus der Developer Console, um sie zu vervollständigen:
 
-   ![Vollständige OAuth-Details](assets/ims-migrate-jwt-complete-oauth-details.png)
+   ![Vervollständigen von OAuth-Details](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. Verwendung **Speichern und schließen** um Ihre Aktualisierungen beizubehalten.
-Wenn Sie zur Konsole zurückkehren, wird die **JWT-Anmeldeinformationen (nicht mehr unterstützt)** -Warnhinweis entfernt.
+1. Verwenden Sie **Speichern und schließen**, um Ihre Aktualisierungen beizubehalten.
+Wenn Sie zur Konsole zurückkehren, ist die Warnung **JWT-Anmeldedaten (nicht mehr unterstützt)** verschwunden.
