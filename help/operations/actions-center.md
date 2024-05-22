@@ -2,10 +2,10 @@
 title: Aktionszentrum
 description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+source-git-commit: ddf94262c047ea0210b0759176f51d1220ac9c67
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 93%
 
 ---
 
@@ -74,3 +74,4 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Blockierte Replikations-Warteschlange | Vorfall | Heben Sie die Blockierung der Warteschlange auf, indem Sie den Anweisungen in der [Replikations-Dokumentation](/help/operations/replication.md#troubleshooting) folgen |
 | Ungültige persistierte GraphQL-Abfrage | Vorfall | Korrigieren Sie die ungültige GraphQL-Abfrage, indem Sie auf die [Dokumentation zur Fehlerbehebung bei persistierten GraphQL-Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=de) verweisen |
 | Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. |
+| Traffic-Spitze beim Ursprung | Vorfall | Protect Sie Ihre Herkunft, indem Sie Regeln für Traffic-Filter mit Ratenbegrenzung konfigurieren, die bei der Warnung zur Herkunft einen Trigger erreichen, der unter den standardmäßigen Traffic-Spitzen liegt.  Siehe [Blockieren von DoS- und DoS-Angriffen mithilfe von Traffic-Regeln](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) in der Dokumentation zu Traffic-Filterregeln , in der auf ein Tutorial verwiesen wird. |
