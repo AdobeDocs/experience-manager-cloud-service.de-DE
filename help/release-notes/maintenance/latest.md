@@ -2,9 +2,9 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
+source-git-commit: d107f40c4bc43837db9d8fab3d06627d9e930620
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1574'
 ht-degree: 10%
 
 ---
@@ -68,7 +68,6 @@ Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsver
 * SITES-20238: [RTC] Pfizer MVP - Fügen Sie die CF-API hinzu, um CF-Pfade zu IDs aufzulösen, und umgekehrt.
 * SITES-21043: [CF][launches] Leistungsverbesserungen bei Seitenanschlüssen gegenüber Cloud Service.
 * SITES-21044: [CF][launches] Asynchrone Seitenportale bearbeiten die Payload-Implementierung in Cloud Service.
-* FORMS-9606: Zuvor konnten im Editor für adaptive Forms nur Feldwerte der Antwort eines Aufrufdienstes zugeordnet werden. Nun können Autoren jede Eigenschaft des Felds der Antwort des Aufrufdienstes zuordnen.
 * FORMS-7483: AEM Forms JSON Schema Parser unterstützt jetzt das JSON-Schema (2020-12).
 * FORMS-13209: Ein Handler ist enthalten, der die standardmäßigen Handler für die erfolgreiche Übermittlung von adaptiven Forms und für fehlgeschlagene Übermittlung außer Kraft setzt. Sie können diese Handler über den adaptiven Forms-Regeleditor konfigurieren.
 * FORMS-13612: Bildschirmlesehilfen lesen jetzt Fehlermeldungen, Kurzbeschreibungen und lange Beschreibungen für Felder im komponentenbasierten adaptiven Forms. Darüber hinaus wurde Unterstützung hinzugefügt, um Eingaben in adaptiven Formularen zu invalidieren, wenn das Formular Fehler enthält und nicht für die Übermittlung gültig ist.
