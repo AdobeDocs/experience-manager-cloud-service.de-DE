@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 37afa8f8233154999bf3e332fb91d8e19f5c0f56
 workflow-type: tm+mt
 source-wordcount: '4971'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -416,7 +416,7 @@ ht-degree: 99%
       + [Verwalten von Tags](/help/sites-cloud/administering/tags.md)
       + [Verwalten von Workflows](/help/sites-cloud/administering/workflows-administering.md)
    + Integration mit AEM as a Cloud Service {#integrations}
-      + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
+      + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integration mit der automatisierten Adobe Analytics-Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
