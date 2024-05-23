@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 index: false
 source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert
 >
 >[IMS-Integrationen sind jetzt mit S2S OAuth konfiguriert](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->Frühere Konfigurationen, wie auf dieser Seite beschrieben, wurden mit [JWT-Anmeldeinformationen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Frühere Konfigurationen, wie auf dieser Seite beschrieben, wurden mit [JWT-Berechtigungen erstellt, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >

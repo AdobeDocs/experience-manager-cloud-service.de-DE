@@ -1,19 +1,19 @@
 ---
 title: Integration mit Adobe Analytics
-description: Erfahren Sie, wie Sie Adobe Analytics mit AEM as a Cloud Service integrieren können, indem Sie die Touch-Benutzeroberfläche und Adobe Launch verwenden.
+description: Erfahren Sie, wie Sie Adobe Analytics mit AEM as a Cloud Service integrieren können, indem Sie die Touch-optimierte Benutzeroberfläche und Adobe Launch verwenden.
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '588'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
 
-Durch die Integration von Adobe Analytics und AEM as a Cloud Service können Sie die Aktivität Ihrer Webseite verfolgen. Die Integration setzt Folgendes voraus:
+Die Integration von Adobe Analytics in AEM as a Cloud Service ermöglicht es Ihnen, die Aktivitäten Ihrer Web-Seiten zu erfassen. Die Integration setzt Folgendes voraus:
 
 * Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM as a Cloud Service zu erstellen. Die IMS-Authentifizierung ist erforderlich, um Adobe Analytics mit AEM as a Cloud Service zu integrieren.
 * Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Experience Platform Launch](#analytics-launch). Weitere Informationen zu Adobe Experience Platform Launch finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=de).
@@ -47,15 +47,15 @@ Die im Konfigurationsfenster verfügbaren Felder lauten wie folgt:
 
 ### Adobe Analytics mit IMS-Authentifizierung {#configuration-parameters-ims}
 
-Die Integration von Adobe Experience Manager as a Cloud Service (AEMaaCS) mit Adobe Analytics über die Analytics Standard-API erfordert die Konfiguration von Adobe IMS (Identity Management-System).
+Die Integration von Adobe Experience Manager as a Cloud Service (AEMaaCS) mit Adobe Analytics über die Analytics Standard-API erfordert die Konfiguration von Adobe IMS (Identity Management System).
 
-Siehe [Einrichten von IMS-Integrationen für AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) , um zu erfahren, wie Sie die IMS-Konfiguration erstellen.
+Unter [Einrichten von IMS-Integrationen für AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) finden Sie Informationen zum Erstellen der IMS-Konfiguration.
 
 >[!NOTE]
 >
 >[IMS-Integrationen sind jetzt mit S2S OAuth konfiguriert](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->Frühere Konfigurationen wurden mit [JWT-Anmeldeinformationen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Frühere Konfigurationen erfolgten mit [JWT-Berechtigungen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
 

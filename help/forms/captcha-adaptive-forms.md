@@ -8,9 +8,9 @@ topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1742'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
 * [Google reCAPTCHA](#configure-recaptcha-service-by-google)
 * [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
-* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## Konfigurieren des reCAPTCHA-Service von Google {#google-reCAPTCHA}
 
-Formularautorinnen und -autoren können den reCAPTCHA-Service von Google nutzen, um reCAPTCHA in adaptive Formulare zu implementieren. Er bietet erweiterte reCAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms unterstützt [!DNL reCAPTCHA v2] und [!DNL reCAPTCHA Enterprise]. Jede andere Version wird nicht unterstützt. Beachten Sie außerdem, dass reCAPTCHA in Adaptive Forms im Offline-Modus nicht unterstützt wird auf [!DNL AEM Forms] App. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um Folgendes zu aktivieren:
+Formularautorinnen und -autoren können den reCAPTCHA-Service von Google nutzen, um reCAPTCHA in adaptive Formulare zu implementieren. Er bietet erweiterte reCAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms unterstützt [!DNL reCAPTCHA v2] und [!DNL reCAPTCHA Enterprise]. Es werden keine anderen Versionen unterstützt. Im Offline-Modus der [!DNL AEM Forms]-Anwendung wird reCAPTCHA in adaptiven Formularen nicht unterstützt. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um Folgendes zu aktivieren:
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -98,9 +98,9 @@ Sobald der reCAPTCHA Enterprise-Dienst aktiviert ist, kann er in adaptiven Formu
 <!--![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)-->
 
 
-## Verwenden von Google reCAPTCHA in adaptiven Formularen {#using-reCAPTCHA}
+## Verwenden von Google-reCAPTCHA in adaptiven Formularen {#using-reCAPTCHA}
 
-So verwenden Sie Google reCAPTCHA in einem adaptiven Formular:
+So verwenden Sie Google-reCAPTCHA in einem adaptiven Formular:
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus.
 
