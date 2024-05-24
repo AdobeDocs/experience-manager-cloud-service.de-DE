@@ -2,10 +2,10 @@
 title: Verwalten von Berichten in Assets-Ansicht
 description: Greifen Sie auf die Daten im Abschnitt „Berichte“ der Assets-Ansicht zu, um die Produkt- und Funktionsnutzung zu bewerten und Erkenntnisse zu wichtigen Erfolgsmetriken zu erhalten.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 88%
+source-wordcount: '817'
+ht-degree: 97%
 
 ---
 
@@ -59,11 +59,6 @@ Klicken Sie auf **[!UICONTROL Erkenntnisse]** im linken Navigationsbereich, um d
    ![Insights](assets/insights2.png)
    -->
 
-* **Asset-Anzahl nach Größe:** Segmentiert die gesamte Asset-Anzahl in Ihrer Assets-Ansichtsumgebung in unterschiedliche Größenbereiche, wodurch die Anzahl und der Prozentsatz der Assets in jedem Größenbereich hervorgehoben werden, die mithilfe eines Ringdiagramms dargestellt werden.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Asset-Anzahl nach Asset-Typ:** Segmentiert die Gesamtanzahl der Assets in Ihrer Assets-Ansichtsumgebung und hebt die Anzahl und den Prozentsatz der Assets anhand ihrer Dateitypen hervor, dargestellt durch Ringdiagramm.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 ## Erstellen eines Herunterladen-Berichts {#create-download-report}
 
 So erstellen Sie einen Herunterladen-Bericht:
@@ -82,7 +77,7 @@ So erstellen Sie einen Herunterladen-Bericht:
    >
    > Die Assets-Ansicht konvertiert alle lokalen Zeitzonen in die koordinierte Weltzeit (UTC).
 
-1. Im [!UICONTROL Spalten] die Spaltennamen, die Sie im Bericht anzeigen möchten.
+1. Wählen Sie auf der Registerkarte [!UICONTROL Spalten] die Spaltennamen aus, die Sie im Bericht anzeigen möchten.
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
