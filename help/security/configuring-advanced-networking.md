@@ -2,10 +2,10 @@
 title: Konfigurieren der erweiterten Netzwerkfunktionen für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
+source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
 workflow-type: tm+mt
-source-wordcount: '5093'
-ht-degree: 99%
+source-wordcount: '5388'
+ht-degree: 94%
 
 ---
 
@@ -132,7 +132,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Wenn Sie nicht standardmäßige Java™-Netzwerkbibliotheken verwenden, konfigurieren Sie mithilfe der oben genannten Eigenschaften Proxys für den gesamten Traffic.
 
-Nicht-HTTP/s-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, sollte auf eine Eigenschaft namens `AEM_PROXY_HOST` verweisen, zusammen mit dem zugeordneten Port. Beispiel:
+Nicht-HTTP/s-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, sollte auf eine Eigenschaft namens `AEM_PROXY_HOST` verweisen, zusammen mit dem zugeordneten Port. Zum Beispiel:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -278,7 +278,7 @@ Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastr
 
 HTTP- oder HTTPS-Traffic durchläuft einen vorkonfigurierten Proxy, wenn er standardmäßige Java™-Systemeigenschaften für Proxy-Konfigurationen verwendet.
 
-Nicht-HTTP/s-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, sollte auf eine Eigenschaft namens `AEM_PROXY_HOST` verweisen, zusammen mit dem zugeordneten Port. Beispiel:
+Nicht-HTTP/s-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, sollte auf eine Eigenschaft namens `AEM_PROXY_HOST` verweisen, zusammen mit dem zugeordneten Port. Zum Beispiel:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Überlegungen zum Debugging {#debugging-considerations}
 
-Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip), der die aufrufende IP-Adresse zurückgibt.
+Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
@@ -792,3 +792,17 @@ Das Verfahren ähnelt größtenteils den vorherigen Anweisungen. Wenn die Produk
 #### VPN {#vpn-regions}
 
 Das Verfahren ist fast identisch mit den Anweisungen für dedizierte Ausgangs-IP-Adressen. Der einzige Unterschied besteht darin, dass nicht nur die Eigenschaft „Region“ anders als die primäre Region konfiguriert werden kann, sondern dass auch das Feld `connections.gateway` optional konfiguriert werden kann. Die Konfiguration kann zu einem anderen VPN-Endpunkt weitergeleitet werden, der von Ihrer Organisation betrieben wird und geografisch näher an der neuen Region liegt.
+
+## Fehlerbehebung
+
+Beachten Sie, dass die folgenden Punkte als informative Richtlinien bereitgestellt werden und Best Practices für die Fehlerbehebung enthalten. Diese Empfehlungen sollen dazu beitragen, Probleme effektiv zu diagnostizieren und zu lösen.
+
+### Verbindungspools {#connection-pooling-advanced-networking}
+
+Verbindungspools sind eine Technik, die auf die Erstellung und Aufrechterhaltung eines Repositorys von Verbindungen zugeschnitten ist, die für die sofortige Verwendung durch jeden Thread bereit sind, der sie benötigt. Zahlreiche Verbindungspools finden Sie auf verschiedenen Online-Plattformen und -Ressourcen, jeweils mit ihren einzigartigen Vorteilen und Überlegungen. Wir empfehlen unseren Kunden, diese Methoden zu untersuchen, um die Methoden zu ermitteln, die am besten mit der Architektur ihres Systems kompatibel sind.
+
+Die Implementierung einer geeigneten Strategie zur Bündelung von Verbindungen ist eine proaktive Maßnahme, um eine gemeinsame Aufsicht über die Systemkonfiguration zu korrigieren, was häufig zu einer suboptimalen Leistung führt. Durch die ordnungsgemäße Einrichtung eines Verbindungspools kann Adobe Experience Manager (AEM) die Effizienz externer Aufrufe verbessern. Dies reduziert nicht nur den Ressourcenverbrauch, sondern verringert auch das Risiko von Dienstunterbrechungen und verringert die Wahrscheinlichkeit, dass bei der Kommunikation mit Upstream-Servern fehlgeschlagene Anfragen auftreten.
+
+Im Lichte dieser Informationen empfehlen wir Ihnen, Ihre aktuelle AEM-Konfiguration neu zu bewerten und die vorsätzliche Einbindung von Verbindungspools in Verbindung mit erweiterten Netzwerkeinstellungen in Betracht zu ziehen. Durch Implementierung dieser Maßnahmen soll verhindert werden, dass Proxys überlastet werden, wodurch die Wahrscheinlichkeit verringert wird, dass Anforderungen externe Endpunkte nicht erreichen.
+
+Auf der Grundlage dieser Informationen empfehlen wir Ihnen, Ihre aktuelle AEM zu überprüfen und die vorsätzliche Einbindung von Verbindungspools in Verbindung mit erweiterten Netzwerkeinstellungen in Erwägung zu ziehen. Durch die Verwaltung der Anzahl der parallelen Verbindungen und die Minimierung möglicher veralteter Verbindungen führen diese Maßnahmen zu einer Verringerung des Risikos, dass Proxy-Server ihre Verbindungsgrenzen erreichen. Diese strategische Implementierung soll daher die Wahrscheinlichkeit verringern, dass Anforderungen externe Endpunkte nicht erreichen.
