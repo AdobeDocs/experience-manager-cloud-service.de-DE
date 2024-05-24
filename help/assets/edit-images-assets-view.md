@@ -3,10 +3,10 @@ title: Bearbeiten von Bildern
 description: Bearbeiten Sie Bilder mit von  [!DNL Adobe Express]  unterstützten Optionen und speichern Sie aktualisierte Bilder als Versionen.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 2c32c94cbc99a91e93b394f315eb134a55b6cd9c
+source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -84,9 +84,9 @@ Mithilfe von Adobe Express können Sie schnell ein PNG-Bild in ein JPEG-Format k
 
 ### Einschränkungen {#limitations-adobe-express}
 
-* Unterstützte Bildauflösung: Minimum – 50 Pixel, Maximum – 6000 Pixel pro Dimension
+* Unterstützte Bildauflösung: Mindestens - 50 Pixel, Maximum - 6000 Pixel pro Dimension.
 
-* Maximale Dateigröße: 17 MB
+* Maximale Dateigröße: 17 MB.
 
 ## Bildbearbeitung mit dem integrierten Adobe Express-Editor {#edit-using-embedded-editor}
 
