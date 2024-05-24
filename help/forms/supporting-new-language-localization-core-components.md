@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formu
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 17%
+source-wordcount: '2028'
+ht-degree: 12%
 
 ---
 
@@ -270,7 +270,7 @@ Nehmen wir nun die `clientlib-it-custom-locale` -Bibliothek in Ihren AEM as a Cl
 
 
 
-### 5. Hinzufügen der Gebietsschemaunterstützung für das Wörterbuch
+### Gebietsschema-Unterstützung zum Wörterbuch hinzufügen
 
 Dieser Schritt gilt nur für andere Gebietsschemata als die folgenden häufig unterstützten Sprachen: Englisch (en), Deutsch (de), Spanisch (es), Französisch (fr), Italienisch (it), Brasilianisches Portugiesisch (pt-br), Chinesisch (vereinfacht - zh_cn), Chinesisch (traditionell - zh_tw), Japanisch (ja) und Koreanisch (ko_kr).
 
@@ -358,8 +358,6 @@ Sie sind nun alle so eingestellt, dass das neue Gebietsschema mit Ihrem adaptive
 Diese Schritte führen Sie durch die Vorschau eines adaptiven Formulars mit dem neu hinzugefügten Gebietsschema:
 
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Instanz an.
-
-1. Suchen Sie den Abschnitt &quot;Forms&quot;und navigieren Sie zu &quot;Forms und Dokumente&quot;.
 1. Gehen Sie zu **Formulare** > **Formulare und Dokumente**.
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **Wörterbuch hinzufügen**. Daraufhin wird der Assistent **Wörterbuch zum Übersetzungsprojekt hinzufügen** geöffnet.
 1. Geben Sie den **Projekttitel** an und wählen Sie die **Zielsprachen** aus dem Dropdown-Menü im Assistenten **Wörterbuch zum Übersetzungsprojekt hinzufügen**.
@@ -367,20 +365,6 @@ Diese Schritte führen Sie durch die Vorschau eines adaptiven Formulars mit dem 
 1. Gehen Sie zu **Formulare** > **Formulare und Dokumente**.
 1. Wählen Sie das adaptive Formular aus und wählen Sie die **Vorschau als HTML** -Option.
 1. Anhängen `&afAcceptLang=<locale-name>` zur Vorschau-URL und drücken Sie die Eingabetaste. Ersetzen `<locale-name>` mit Ihrem tatsächlichen Gebietsschema-Code. Das adaptive Formular wird in dem angegebenen Gebietsschema angezeigt.
-
-
-## Vorschau eines adaptiven Formulars mit dem neu hinzugefügten Gebietsschema {#use-added-locale-in-af}
-
-Führen Sie die folgenden Schritte aus, um die Vorschau eines adaptiven Formulars mit einem neu hinzugefügten Gebietsschema anzuzeigen:
-
-1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Instanz an.
-1. Gehen Sie zu **Formulare** > **Formulare und Dokumente**.
-1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **Wörterbuch hinzufügen**. Daraufhin wird der Assistent **Wörterbuch zum Übersetzungsprojekt hinzufügen** geöffnet.
-1. Geben Sie den **Projekttitel** an und wählen Sie die **Zielsprachen** aus dem Dropdown-Menü im Assistenten **Wörterbuch zum Übersetzungsprojekt hinzufügen**.
-1. Klicken auf **Fertig** und führen Sie das erstellte Übersetzungsprojekt aus.
-1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **Vorschau als HTML**.
-1. Fügen Sie `&afAcceptLang=<locale-name>` in der URL eines adaptiven Formulars hinzu.
-1. Aktualisieren Sie die Seite. Das adaptive Formular wird daraufhin im angegebenen Gebietsschema dargestellt.
 
 ## Best Practices zur Unterstützung neuer Lokalisierungen {#best-practices}
 
@@ -393,12 +377,11 @@ Führen Sie die folgenden Schritte aus, um die Vorschau eines adaptiven Formular
 
    * **Menschliche Übersetzung**: Exportieren Sie für menschliche Übersetzungs-Workflows das Wörterbuch mithilfe der Benutzeroberfläche unter `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Aktualisieren Sie das Wörterbuch für die neuen Felder und laden Sie die überarbeitete Version hoch.
 
-## Mehr anzeigen
-
-* [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
-* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## Siehe auch {#see-also}
 
 {{see-also}}
+
+* [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
+* [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
