@@ -2,8 +2,8 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
-workflow-type: ht
+source-git-commit: 0ed0178c2490919cefb46256e07c5b316c5f97ae
+workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 100%
 
@@ -547,7 +547,7 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 | *cache* | Der Status des Caches. Mögliche Werte sind HIT, MISS oder PASS |
 | *status* | Der HTTP-Status-Code als ganzzahliger Wert. |
 | *res_age* | Die Zeit in Sekunden, für die eine Antwort zwischengespeichert wurde (in allen Knoten). |
-| *pop* | das Rechenzentrum des CDN-Cache-Servers |
+| *pop* | das Rechenzentrum des CDN-Cache-Servers. |
 | *rules* | Die Namen aller übereinstimmenden [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) und WAF-Flags, die auch angeben, ob die Übereinstimmung zu einer Blockierung führte. Leer, wenn keine Regeln übereinstimmten. |
 
 
