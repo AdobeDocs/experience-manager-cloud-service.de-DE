@@ -2,10 +2,10 @@
 title: Konfigurieren der erweiterten Netzwerkfunktionen für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
+source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
 workflow-type: tm+mt
-source-wordcount: '5388'
-ht-degree: 94%
+source-wordcount: '5332'
+ht-degree: 95%
 
 ---
 
@@ -803,6 +803,4 @@ Verbindungspools sind eine Technik, die auf die Erstellung und Aufrechterhaltung
 
 Die Implementierung einer geeigneten Strategie zur Bündelung von Verbindungen ist eine proaktive Maßnahme, um eine gemeinsame Aufsicht über die Systemkonfiguration zu korrigieren, was häufig zu einer suboptimalen Leistung führt. Durch die ordnungsgemäße Einrichtung eines Verbindungspools kann Adobe Experience Manager (AEM) die Effizienz externer Aufrufe verbessern. Dies reduziert nicht nur den Ressourcenverbrauch, sondern verringert auch das Risiko von Dienstunterbrechungen und verringert die Wahrscheinlichkeit, dass bei der Kommunikation mit Upstream-Servern fehlgeschlagene Anfragen auftreten.
 
-Im Lichte dieser Informationen empfehlen wir Ihnen, Ihre aktuelle AEM-Konfiguration neu zu bewerten und die vorsätzliche Einbindung von Verbindungspools in Verbindung mit erweiterten Netzwerkeinstellungen in Betracht zu ziehen. Durch Implementierung dieser Maßnahmen soll verhindert werden, dass Proxys überlastet werden, wodurch die Wahrscheinlichkeit verringert wird, dass Anforderungen externe Endpunkte nicht erreichen.
-
-Auf der Grundlage dieser Informationen empfehlen wir Ihnen, Ihre aktuelle AEM zu überprüfen und die vorsätzliche Einbindung von Verbindungspools in Verbindung mit erweiterten Netzwerkeinstellungen in Erwägung zu ziehen. Durch die Verwaltung der Anzahl der parallelen Verbindungen und die Minimierung möglicher veralteter Verbindungen führen diese Maßnahmen zu einer Verringerung des Risikos, dass Proxy-Server ihre Verbindungsgrenzen erreichen. Diese strategische Implementierung soll daher die Wahrscheinlichkeit verringern, dass Anforderungen externe Endpunkte nicht erreichen.
+Aufgrund dieser Informationen empfiehlt Adobe, Ihre aktuelle AEM zu überprüfen und die vorsätzliche Einbindung von Verbindungspools in Verbindung mit erweiterten Netzwerkeinstellungen zu erwägen. Durch die Verwaltung der Anzahl der parallelen Verbindungen und die Minimierung der Möglichkeit veralteter Verbindungen führen diese Maßnahmen zu einer Verringerung des Risikos, dass Proxy-Server ihre Verbindungsgrenzen erreichen. Diese strategische Implementierung soll daher die Wahrscheinlichkeit verringern, dass Anforderungen externe Endpunkte nicht erreichen.
