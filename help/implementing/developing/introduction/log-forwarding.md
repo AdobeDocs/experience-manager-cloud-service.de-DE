@@ -1,11 +1,9 @@
 ---
 title: Protokollweiterleitung für AEM as a Cloud Service
 description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk und andere Protokollierungsanbieter in AEM as a Cloud Service
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '718'
 ht-degree: 3%
 
 ---
@@ -64,11 +62,47 @@ Dieser Artikel ist wie folgt organisiert:
          index: "AEMaaCS"
    ```
 
-   Der Standardknoten muss aus Kompatibilitätsgründen für die Zukunft einbezogen werden.
+   Die **kind** auf LogForwarding festgelegt sein, sollte die Version auf die Schemaversion (1) eingestellt werden.
 
-   Der &quot;type&quot;-Parameter sollte auf LogForwarding festgelegt werden. Die Version sollte auf die Schemaversion (1) eingestellt werden.
+   Token in der Konfiguration (z. B. `${{SPLUNK_TOKEN}}`) stellen Geheimnisse dar, die nicht in Git gespeichert werden sollten. Deklarieren Sie sie stattdessen als Cloud Manager  [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md) des Typs **secret**. Wählen Sie **Alle** als Dropdown-Wert für das Feld Dienst angewendet , sodass Protokolle an die Ebenen Autor, Veröffentlichung und Vorschau weitergeleitet werden können.
 
-   Token in der Konfiguration (z. B. `${{SPLUNK_TOKEN}}`) stellen Geheimnisse dar, die nicht in Git gespeichert werden sollten. Deklarieren Sie sie stattdessen als Cloud Manager  [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md) des Typs &quot;secret&quot;. Wählen Sie **Alle** als Dropdown-Wert für das Feld Dienst angewendet , sodass Protokolle an die Ebenen Autor, Veröffentlichung und Vorschau weitergeleitet werden können.
+   Es ist möglich, verschiedene Werte zwischen CDN-Protokollen und allem anderen (AEM- und Apache-Logs) festzulegen, indem eine zusätzliche **cdn** und/oder **aem** -Block nach **default** -Block, in dem Eigenschaften die im **default** -Block; nur die aktivierte Eigenschaft ist erforderlich. Ein möglicher Anwendungsfall könnte die Verwendung eines anderen Splunk-Index für CDN-Protokolle sein, wie im folgenden Beispiel gezeigt wird.
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder alles andere (AEM- und Apache-Protokolle) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. Erstellen Sie für andere Umgebungstypen als RDE (derzeit nicht unterstützt) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager.
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-Zu beachten:
+Für die Authentifizierung sollte ein SAS-Token verwendet werden. Sie sollte nicht auf der Seite Freigegebener Zugriffstoken, sondern auf der Signaturseite Freigegebener Zugriff erstellt und mit den folgenden Einstellungen konfiguriert werden:
 
-* Authentifizieren Sie sich mit dem SAS-Token, das eine minimale Gültigkeitsdauer haben sollte.
-* Das SAS-Token sollte auf der Kontoseite und nicht auf der Container-Seite erstellt werden.
+* Zulässige Dienste: Blob muss ausgewählt werden
+* Zulässige Ressourcen: Objekt muss ausgewählt sein
+* Zulässige Berechtigungen: Schreiben, Hinzufügen, Erstellen muss ausgewählt sein.
+* Ein gültiges Start- und Ablaufdatum/-zeit.
+
+Im Folgenden finden Sie einen Screenshot einer Beispiel-SAS-Token-Konfiguration:
+
+![Azure Blob SAS-Token-Konfiguration](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datadog {#datadog}
 
