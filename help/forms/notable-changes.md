@@ -5,14 +5,14 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '1317'
-ht-degree: 100%
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+workflow-type: tm+mt
+source-wordcount: '1325'
+ht-degree: 98%
 
 ---
 
-# Wesentliche Änderungen für bestehende Adobe Experience Manager 6.5 Forms-Benutzende  {#notable-changes-for-existing-AEM-Forms-users}
+# Unterschied zwischen AEM 6.5 Forms (AMS und On-Premise) und AEM Forms as a Cloud Service (AEM CS Forms) {#notable-changes-for-existing-AEM-Forms-users}
 
 Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Änderungen an bestehenden Funktionen im Vergleich zu On-Premise- und [!DNL Adobe-Managed Service]-Umgebungen von Adobe Experience Manager Forms. Die wichtigsten Unterschiede sind im Folgenden aufgeführt:
 
