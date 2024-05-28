@@ -2,9 +2,9 @@
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: ht
-source-wordcount: '921'
+source-git-commit: a9a428eb5329bc2aa3d86ac5e0c91f633516446c
+workflow-type: tm+mt
+source-wordcount: '828'
 ht-degree: 100%
 
 ---
@@ -24,22 +24,11 @@ Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwende
 
 Es gibt verschiedene Schritte für das Onboarding Ihrer AEM-App und ihre Instrumentierung für die Verwendung des universellen Editors.
 
-1. [Fordern Sie Zugriff auf den universellen Editor an.](#request-access)
 1. [Schließen Sie die Hauptbibliothek des universellen Editors ein.](#core-library)
 1. [Fügen Sie die erforderliche OSGi-Konfiguration hinzu.](#osgi-configurations)
 1. [Instrumentieren Sie die Seite.](#instrument-page)
 
 Dieses Dokument führt Sie durch diese Schritte.
-
-## Anfordern des Zugriffs auf den universellen Editor {#request-access}
-
-Zunächst müssen Sie den Zugriff auf den universellen Editor anfordern. Öffnen Sie die Seite [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), melden Sie sich an und validieren Sie, ob Sie Zugriff auf den universellen Editor haben.
-
-Wenn Sie keinen Zugriff haben, können Sie ihn über ein Formular anfordern, das auf derselben Seite verlinkt ist.
-
-![Anfordern des Zugriffs auf den universellen Editor](assets/request-access.png)
-
-Klicken Sie auf **Zugriff anfordern** und füllen Sie das Formular wie angewiesen aus, um Zugriff anzufordern. Eine Adobe-Kontaktperson wird Ihre Anfrage überprüfen und sich an Sie wenden, um Ihren Anwendungsfall zu besprechen.
 
 ## Einschließen der Hauptbibliothek des universellen Editors {#core-library}
 

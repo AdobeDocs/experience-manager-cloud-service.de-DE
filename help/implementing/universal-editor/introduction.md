@@ -2,10 +2,10 @@
 title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
-workflow-type: ht
-source-wordcount: '1066'
-ht-degree: 100%
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+workflow-type: tm+mt
+source-wordcount: '973'
+ht-degree: 96%
 
 ---
 
@@ -90,13 +90,6 @@ Beachten Sie bei der Erkundung des universellen Editors und später bei seiner I
 * Inhaltsautorinnen und Inhaltsautoren müssen über eigene Experience Cloud-Konten verfügen.
 * Chrome und Edge werden als Browser unterstützt.
 
-## Zusätzliche Ressourcen {#additional-resources}
+## Nächste Schritte {#next-steps}
 
-Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
-
-* [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und Inhaltsautoren ist, Inhalte mit dem universellen Editor zu erstellen.
-* [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) – Erfahren Sie, wie mit dem universellen Editor Inhalte veröffentlicht werden und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
-* [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
-* [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
-* [Attribute und Typen](attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
-* [Authentifizierung beim universellen Editor](authentication.md) – Erfahren Sie, wie beim universellen Editor authentifiziert wird.
+Lesen Sie das Dokument . [Anwendungsfälle und Lernpfade für universelle Editoren](/help/implementing/universal-editor/use-cases.md) um mehr über gängige Anwendungsfälle für den universellen Editor zu erfahren und die richtigen Dokumentationsressourcen zu finden, um Sie in Ihrem Projekt zu unterstützen.
