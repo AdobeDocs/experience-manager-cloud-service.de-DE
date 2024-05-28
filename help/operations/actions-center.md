@@ -2,10 +2,10 @@
 title: Aktionszentrum
 description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 88%
+source-wordcount: '842'
+ht-degree: 87%
 
 ---
 
@@ -76,3 +76,4 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Traffic-Spitze beim Ursprung | Vorfall | Protect Sie Ihre Herkunft, indem Sie Regeln für Traffic-Filter mit Ratenbegrenzung konfigurieren, die bei der Warnung zur Herkunft einen Trigger erreichen, der unter den standardmäßigen Traffic-Spitzen liegt.  Siehe [Blockieren von DoS- und DoS-Angriffen mithilfe von Traffic-Regeln](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) in der Dokumentation zu Traffic-Filterregeln , in der auf ein Tutorial verwiesen wird. |
 | Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. | High Connection Count | Proaktiv | Erfahren Sie mehr über Verbindungspools in [Dokumentation zu Verbindungspools zusammen mit erweiterter Vernetzung](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Veraltete Dienstbenutzerzuordnung | Proaktiv | Erfahren Sie, wie Sie das neuere Sling Service-Benutzerzuordnungsformat verwenden, wie in [Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| High Connection Count | Proaktiv | Erfahren Sie mehr über Verbindungspools im [Dokumentation zur erweiterten Vernetzung](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
