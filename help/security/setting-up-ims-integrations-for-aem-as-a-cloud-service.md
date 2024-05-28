@@ -2,9 +2,9 @@
 title: Einrichten von IMS-Integrationen für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie eine IMS-Integration für AEM as a Cloud Service einrichten
 source-git-commit: 6945980cac24d4413a84343b035a8380b04e7444
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '386'
+ht-degree: 100%
 
 ---
 
