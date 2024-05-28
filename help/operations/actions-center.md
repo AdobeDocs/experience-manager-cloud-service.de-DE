@@ -2,10 +2,10 @@
 title: Aktionszentrum
 description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: df10d8d210877e166312f66d5c4e74dbe771446a
+source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 92%
+source-wordcount: '829'
+ht-degree: 88%
 
 ---
 
@@ -60,18 +60,19 @@ Wie alle Support-Tickets wird es [auf der Registerkarte „Support-Fälle“ in 
 AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber nur eine Teilmenge wird im Aktionszentrum angezeigt, wie in der unten stehenden Tabelle dargestellt.
 
 | Benachrichtigungstyp | Beschreibung | Vorgehensweise bei der Konfiguration | Wird im Aktionszentrum angezeigt |
-|---|---|---|---|
+|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzerin bzw. Benutzer, die/der dem Produktprofil „Benachrichtigung bei Vorfällen – Cloud Service“ zugewiesen ist | X |
 | Proaktive Empfehlungen | Zu planende Optimierungen | Benutzerin bzw. Benutzer, die/der dem Produktprofil „proaktive Benachrichtigung – Cloud Service“ zugewiesen ist | X |
-| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), wie [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
+| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), wie [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Unterstützte Benachrichtigungstypen {#supported-notification-types}
 
 In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzeit im Aktionszentrum unterstützt werden. Benachrichtigungen sind derzeit auf Produktionsumgebungen beschränkt.
 
 | Benachrichtigungstyp | Verwandtes Produktprofil | Korrekturmaßnahmen |
-|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Blockierte Replikations-Warteschlange | Vorfall | Heben Sie die Blockierung der Warteschlange auf, indem Sie den Anweisungen in der [Replikations-Dokumentation](/help/operations/replication.md#troubleshooting) folgen |
 | Ungültige persistierte GraphQL-Abfrage | Vorfall | Korrigieren Sie die ungültige GraphQL-Abfrage, indem Sie auf die [Dokumentation zur Fehlerbehebung bei persistierten GraphQL-Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=de) verweisen |
-| Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. | High Connection Count | Proaktiv | Erfahren Sie mehr über Verbindungspools in [Dokumentation zu Verbindungspools zusammen mit erweiterter Vernetzung](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Traffic-Spitze beim Ursprung | Vorfall | Protect Sie Ihre Herkunft, indem Sie Regeln für Traffic-Filter mit Ratenbegrenzung konfigurieren, die bei der Warnung zur Herkunft einen Trigger erreichen, der unter den standardmäßigen Traffic-Spitzen liegt.  Siehe [Blockieren von DoS- und DoS-Angriffen mithilfe von Traffic-Regeln](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) in der Dokumentation zu Traffic-Filterregeln , in der auf ein Tutorial verwiesen wird. |
+| Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. | High Connection Count | Proaktiv | Erfahren Sie mehr über Verbindungspools in [Dokumentation zu Verbindungspools zusammen mit erweiterter Vernetzung](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Veraltete Dienstbenutzerzuordnung | Proaktiv | Erfahren Sie, wie Sie das neuere Sling Service-Benutzerzuordnungsformat verwenden, wie in [Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
