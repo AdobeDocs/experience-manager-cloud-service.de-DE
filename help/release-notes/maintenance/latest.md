@@ -3,9 +3,9 @@ title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 13a266e9611fd8eb427c7cc83e99092e66fd8bc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 16461 {#release-16461}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 16461, die am Dienstag, 27. Mai 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 16357.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 16461, die am 27. Mai 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 16357.
 
 Die Funktionsaktivierung in 2024.5.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
