@@ -3,9 +3,9 @@ title: Edge Side Includes
 description: Das von Adobe verwaltete CDN unterstützt jetzt Edge Side Includes (ESI), eine Markup-Sprache für die dynamische Zusammenführung von Web-Inhalten auf Edge-Ebene.
 feature: Dispatcher
 source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -44,8 +44,8 @@ Weitere Informationen finden Sie unter [ESI-Spezifikationen](https://www.w3.org/
 
 * Die folgenden ESI-Tags werden unterstützt: include, comment, remove.
 * ESI-Tags werden beim CDN sequenziell und nicht gleichzeitig verarbeitet, sodass viele ESI-Tags auf einer Seite mit niedrigen TTLs Latenz zum Erlebnis von Endbenutzenden hinzufügen können.
-* Die maximale ESI-Tiefe: Verarbeitung einschließen beträgt 5.
-* Die maximale Gesamt-ESI: einschließlich Verarbeitungsfragmente beträgt 256.
+* Die maximale Tiefe der „ESI include“-Verarbeitung beträgt 5.
+* Die maximale Gesamtanzahl an „ESI include“-Verarbeitungsfragmenten beträgt 256.
 
 
 ## Apache-Konfiguration {#esi-apache}
@@ -81,7 +81,7 @@ Die konfigurierten Eigenschaften weisen folgendes Verhalten auf:
 |-----------|--------------------------|
 | **no-gzip** | Wenn der Wert auf 1 gesetzt ist, wird die HTML-Seite unkomprimiert von Apache an das CDN übertragen. Dies ist für ESI erforderlich, da Inhalte unkomprimiert an das CDN gesendet werden müssen, damit das CDN die ESI-Tags sehen und auswerten kann.<br/><br/>Sowohl die übergeordnete Seite als auch die enthaltenen Snippets sollten no-gzip auf 1 setzen.<br/><br/>Diese Einstellung setzt jegliche Komprimierungseinstellung außer Kraft, die Apache entsprechend der `Accept-Encoding`-Werte der Anforderung sonst möglicherweise genutzt hätte. |
 | **x-aem-esi** | Wenn der Wert auf „Ein“ gesetzt ist, wertet das CDN die ESI-Tags der übergeordneten HTML-Seite aus. Standardmäßig ist die Kopfzeile nicht festgelegt. |
-| **x-aem-compress** | Wenn der Wert auf „Ein“ gesetzt ist, komprimiert das CDN den Inhalt aus dem CDN in den Browser. Da die Übertragung der übergeordneten Seite von Apache zu CDN unkomprimiert sein muss, damit ESI funktioniert (`no-gzip` auf 1 gesetzt ist, kann dies die Latenz verringern.<br/><br/>Wenn diese Kopfzeile nicht festgelegt ist und das CDN unkomprimierte Inhalte aus der Quelle abruft, würden Inhalte auch unkomprimiert für den Client bereitgestellt. Daher muss diese Kopfzeile festgelegt werden, wenn `no-gzip` auf 1 gesetzt ist (für ESI erforderlich) und es ist wünschenswert, komprimierte Inhalte aus dem CDN in den Browser zu verarbeiten. |
+| **x-aem-compress** | Wenn der Wert auf „Ein“ gesetzt ist, komprimiert das CDN den Inhalt aus dem CDN in den Browser. Da die Übertragung der übergeordneten Seite von Apache zum CDN unkomprimiert sein muss, damit ESI funktioniert (`no-gzip` auf 1 gesetzt), kann dies die Latenz verringern.<br/><br/>Wenn diese Kopfzeile nicht festgelegt ist und das CDN unkomprimierte Inhalte aus der Quelle abruft, würden Inhalte auch unkomprimiert für den Client bereitgestellt. Daher muss diese Kopfzeile festgelegt werden, wenn `no-gzip` auf 1 gesetzt ist (für ESI erforderlich) und Inhalte bereitgestellt werden sollen, die vom CDN für den Browser komprimiert wurden. |
 
 ## Sling Dynamic Include {#esi-sdi}
 
