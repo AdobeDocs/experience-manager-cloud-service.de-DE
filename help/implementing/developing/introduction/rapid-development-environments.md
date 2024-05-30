@@ -2,9 +2,9 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4294'
 ht-degree: 80%
 
 ---
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Paket nicht aufgelöst wird. In diesem Fall wird es „bereitgehalten“ und erst dann installiert, wenn die jeweiligen Anforderungen (in diesem Fall fehlende Importe) durch Installation von weiterem Code erfüllt werden.
 
-<u>Bereitstellen von Frontend-Code basierend auf Site-Designs und Site-Vorlagen</u>
+### Bereitstellen von Frontend-Code basierend auf Site-Designs und Site-Vorlagen {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->Diese Funktion ist noch nicht allgemein verfügbar, kann aber von Early-Adopters verwendet werden. Bitte wenden Sie sich an **aemcs-rde-support@adobe.com**, um dies auszuprobieren und Feedback zu hinterlassen.
+> Diese Funktion ist noch nicht verfügbar. Die Einführung erfolgt irgendwann im Juni.
+>
 
 RDEs unterstützen Frontend-Code, der auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Seitenvorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) basiert. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung zur Bereitstellung von Frontend-Paketen und nicht über die [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) von Cloud Manager, die für andere Umgebungstypen verwendet wird.
 
@@ -1011,8 +1012,6 @@ Beachten Sie außerdem die folgenden Überlegungen:
 
 * RDEs enthalten keine Vorschauebene
 * RDEs unterstützen derzeit nicht den Vorabversionskanal.
-* Die RDE-Unterstützung für das Anzeigen und Debuggen von Frontend-Code, der auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) basiert, ist zwar noch nicht allgemein zugänglich, kann aber von Early Adopters genutzt werden. Bitte wenden Sie sich an **aemcs-rde-support@adobe.com**, um dies auszuprobieren und Feedback zu hinterlassen.
-
 
 
 ## Wie viele RDEs benötige ich? {#how-many-rds-do-i-need}
