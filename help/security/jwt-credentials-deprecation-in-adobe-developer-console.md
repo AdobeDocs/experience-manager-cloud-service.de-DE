@@ -2,10 +2,10 @@
 title: Einstellung der JWT-Anmeldedaten in Adobe Developer Console
 description: Erhalten Sie weitere Informationen zu den Auswirkungen der Einstellung der JWT-Anmeldedaten in Adobe Developer Console auf AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b6e26ecaa73aaee37b6b824426dc0cd65d459502
+source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 62%
+source-wordcount: '479'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,9 @@ Mit der [Adobe Developer Console](https://developer.adobe.com/console) können K
 
 Dieser Artikel bietet zusätzliche Informationen dazu, wie Kundinnen und Kunden von AEM as a Cloud Service auf diese Einstellung reagieren sollten.
 
-Der Hauptvorteil besteht darin, dass AEM jetzt die neuen OAuth Server-zu-Server-Anmeldedaten für AEM as a Cloud Service unterstützt. Möglicherweise haben Sie eine E-Mail mit Anweisungen zur Migration Ihrer JWT-Anmeldeinformationen erhalten. Diese Migration kann jetzt durchgeführt werden.
+Die wichtigste Neuerung ist, dass AEM jetzt die neuen OAuth-Server-zu-Server-Anmeldedaten für AEM as a Cloud Service unterstützt. Möglicherweise haben Sie eine E-Mail mit Anweisungen zur Migration Ihrer JWT-Anmeldeinformationen erhalten. Diese Migration kann jetzt durchgeführt werden.
 
-In den folgenden Abschnitten werden die Szenarien aufgelistet, in denen Kunden ihre JWT-Anmeldeinformationen (Service Account) durch OAuth Server-zu-Server-Anmeldeinformationen ersetzen müssen (oder in einigen Fällen nicht), da AEM sie unterstützt. [Lesen von](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) , um die Anmeldeinformationen zu migrieren.
+In den folgenden Abschnitten werden die Szenarien aufgeführt, in denen Kundinnen und Kunden ihre Dienstkonten(JWT)-Anmeldedaten durch OAuth Server-zu-Server-Anmeldedaten ersetzen müssen (oder in einigen Fällen dies nicht tun sollten), jetzt da AEM sie unterstützt. [Hier finden Sie weitere Informationen dazu](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview), wie Sie die Anmeldedaten migrieren.
 
 >[!NOTE]
 >
@@ -29,20 +29,20 @@ In den folgenden Abschnitten werden die Szenarien aufgelistet, in denen Kunden i
 
 ## Integrieren von AEM mit anderen Adobe-Lösungen {#integrating-aem-with-other-adobe-solutions}
 
-**Aktion**: Migrieren Sie Ihre Konfiguration, da AEM jetzt OAuth-Anmeldeinformationen unterstützt.
+**Aktion**: Migrieren Sie Ihre Konfiguration, da AEM jetzt OAuth-Anmeldedaten unterstützt.
 
 **Relevante AEM-Versionen**: AEM as a Cloud Service
 
-AEM Kunden verwenden AEM, um Integrationen mit vielen anderen Adobe-Lösungen zu konfigurieren. Zum Beispiel Adobe Target, Adobe Analytics und andere.
+Kundinnen und Kunden von AEM können AEM verwenden, um Integrationen mit vielen anderen Adobe-Lösungen zu konfigurieren. Zum Beispiel Adobe Target, Adobe Analytics und vielen weiteren.
 
-Siehe [Einrichten von IMS-Integrationen für AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) Weitere Informationen finden Sie unter:
+Siehe [Einrichten von IMS-Integrationen für AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) für Details zu folgenden Vorgehensweisen:
 
-* Erstellen von Konfigurationen mit OAuth-Anmeldeinformationen
-* Migrieren von Konfigurationen, die mit JWT-Anmeldeinformationen erstellt wurden, um OAuth-Anmeldeinformationen zu verwenden
+* Erstellen von Konfigurationen mit OAuth-Anmeldedaten
+* Migrieren von Konfigurationen, die mit JWT-Anmeldedaten erstellt wurden, zur Verwendung von OAuth-Anmeldedaten
 
 ## Cloud Manager-APIs {#cloud-manager-apis}
 
-**Aktion**: Bestätigen Sie, wann diese von JWT- zu OAuth-Anmeldeinformationen migriert werden können.
+**Aktion**: Migrieren Sie Ihre JWT-Anmeldeinformationen zu OAuth-Anmeldeinformationen, die jetzt von Cloud Manager unterstützt werden.
 
 **Relevante AEM-Versionen**: AEM as a Cloud Service
 
@@ -54,6 +54,6 @@ Kundinnen und Kunden erstellen Adobe Developer Console-Projekte, damit sie die [
 
 **Relevante AEM-Versionen**: AEM as a Cloud Service.
 
-Wenn Cloud Manager AEM as a Cloud Service-Umgebungen bereitstellt, wird automatisch ein Adobe Developer Console-Projekt mit JWT-Anmeldedaten generiert. Dieses Projekt ist als schreibgeschützt markiert, wie im folgenden Screenshot dargestellt. Kunden können und sollten nicht versuchen, diese Projekte zu OAuth Server-zu-Server-Anmeldeinformationen zu migrieren. Stattdessen migriert Adobe diese Projekte allein, bevor die Anmeldeinformationen nicht mehr verwendet werden können.
+Wenn Cloud Manager AEM as a Cloud Service-Umgebungen bereitstellt, wird automatisch ein Adobe Developer Console-Projekt mit JWT-Anmeldedaten generiert. Dieses Projekt ist als schreibgeschützt markiert, wie im folgenden Screenshot dargestellt. Kundinnen und Kunden können und sollten nicht versuchen, diese Projekte auf OAuth-Server-zu-Server-Anmeldedaten zu migrieren. Stattdessen migriert Adobe diese Projekte selbstständig, bevor die Anmeldedaten nicht mehr verwendbar sind.
 
 ![Automatisch generierte Projekte](/help/security/assets/jwt-deprecation-autogen-projects.png)
