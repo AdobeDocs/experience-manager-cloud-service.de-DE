@@ -5,13 +5,13 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 source-git-commit: 7e8d4487ec545b5625d6401513df00d5c6240ee2
 workflow-type: tm+mt
 source-wordcount: '817'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Berichten {#manage-reports}
 
-Die Asset-Berichterstellung bietet Administratoren einen Einblick in die Aktivität der Adobe Experience Manager Assets-Ansichtsumgebung. Diese Daten liefern nützliche Informationen darüber, wie Benutzende mit Inhalten und dem Produkt interagieren. Alle Benutzenden können auf das Insights-Dashboard zugreifen, und diejenigen, die dem Produktprofil der Admins zugewiesen sind, können benutzerdefinierte Berichte erstellen.
+Das Asset-Reporting bietet Admins Einblicke in die Aktivitäten in der Ansichtsumgebung von Adobe Experience Manager Assets. Diese Daten liefern nützliche Informationen darüber, wie Benutzende mit Inhalten und dem Produkt interagieren. Alle Benutzenden können auf das Insights-Dashboard zugreifen, und diejenigen, die dem Produktprofil der Admins zugewiesen sind, können benutzerdefinierte Berichte erstellen.
 
 ## Zugreifen auf Berichte {#access-reports}
 
