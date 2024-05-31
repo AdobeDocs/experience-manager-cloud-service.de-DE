@@ -3,10 +3,10 @@ title: Aktuelle Funktionen früherer Entwickler von [!DNL Adobe Experience Manag
 description: Aktuelle Funktionen früherer Entwickler von [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 10%
+source-wordcount: '1731'
+ht-degree: 9%
 
 ---
 
@@ -20,8 +20,7 @@ Das AEM Forms Early Adopter Program bietet Ihnen die einmalige Möglichkeit, vor
 
 ## Wie kann ich dem Programm Early Adopter beitreten?
 
-Wenn Sie Interesse haben, an unserem Early Adopter-Programm für eine frühe Adopter-Innovation teilzunehmen, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an `aem-forms-ea@adobe.com` , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf jede spezifische Innovation anfordern.
-
+Wenn Sie Interesse haben, an unserem Early Adopter-Programm für eine frühe Adopter-Innovation teilzunehmen, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf jede spezifische Innovation anfordern.
 
 ## Frühe Innovationen für Adopter
 
@@ -154,6 +153,15 @@ Im Folgenden finden Sie eine Aufschlüsselung der Funktionen von Doc Assurance-A
 Insgesamt [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helfen Ihnen, die Dokumentsicherheit und die Einhaltung von Richtlinien zu verbessern, indem Sie eine zusätzliche Kontrollebene hinzufügen.
 
 
+### Forms Service-APIs
+
+Der Forms-Dienst generiert interaktive PDF forms für die Datenerfassung. Sie kann auch zum Importieren/Exportieren von Daten in/aus einem vorhandenen interaktiven PDF-Formular und zum Überprüfen gesendeter Daten verwendet werden. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
+
+* **Rendern von Forms**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und optional mit XML-Daten erstellt wurde. Dadurch wird im Wesentlichen ein ausfüllbares PDF-Formular erzeugt, das optional mit Daten vorausgefüllt ist.
+
+* **Datenextraktion und -import**: Importieren Sie Daten in ein vorhandenes PDF-Formular und extrahieren Sie Daten aus einem ausgefüllten PDF-Formular. Es werden sowohl XDP- als auch XML-Datenformate unterstützt, und der Import in Nicht-XFA-PDF forms (auch AcroForms genannt) unterstützt zusätzlich FDF- und XFDF-Daten.
+
+* **Datenvalidierung**: Validieren Sie die gesendeten Daten im XDP- oder XML-Format anhand einer mit AEM Forms Designer erstellten Vorlage.
 
 ## Siehe auch
 

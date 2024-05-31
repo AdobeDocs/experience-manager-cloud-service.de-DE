@@ -6,20 +6,15 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '3119'
+source-wordcount: '3521'
 ht-degree: 4%
 
 ---
 
 
-<span class="preview"> Dieser Artikel enthält Inhalte für einige Funktionen vor der Veröffentlichung. Auf diese Funktionen vor der Veröffentlichung kann nur über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features). Die Funktionen des Vorversionsprogramms sind:
-* Unterstützung optionaler Parameter in benutzerdefinierten Funktionen
-* Caching-Funktion für benutzerdefinierte Funktionen
-* Unterstützung für globale Objekte und Feldobjekte für benutzerdefinierte Funktionen
-* Unterstützung für moderne JavaScript-Funktionen wie let- und pfeile Funktionen (ES10-Unterstützung).
-Stellen Sie sicher, dass [Kernkomponente ist auf Version 3.0.8 festgelegt.](https://github.com/adobe/aem-core-forms-components) , um Funktionen vor der Veröffentlichung in benutzerdefinierten Funktionen zu verwenden. </span>
+<span class="preview"> Dieser Artikel enthält `Override form submission success and error handlers` als Vorab-Release-Funktion. Die Vorabversion-Funktion ist nur über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features).
 
 # Benutzerdefinierte Funktionen in Adaptive Forms (Kernkomponenten)
 
@@ -31,6 +26,10 @@ Stellen Sie sicher, dass [Kernkomponente ist auf Version 3.0.8 festgelegt.](http
 ## Einführung
 
 AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzer JavaScript-Funktionen zur Implementierung komplexer Geschäftsregeln definieren können. Diese benutzerdefinierten Funktionen erweitern die Funktionen von Formularen, indem sie die Manipulation und Verarbeitung der eingegebenen Daten zur Erfüllung bestimmter Anforderungen erleichtern. Sie ermöglichen auch eine dynamische Änderung des Formularverhaltens basierend auf vordefinierten Kriterien.
+
+>[!NOTE]
+>
+> Stellen Sie sicher, dass [Kernkomponente](https://github.com/adobe/aem-core-forms-components) auf die neueste Version eingestellt ist, um die neuesten Funktionen zu verwenden.
 
 ### Verwendung benutzerdefinierter Funktionen {#uses-of-custom-function}
 
@@ -157,7 +156,7 @@ Der Rückgabetyp gibt den Typ des Werts an, den die benutzerdefinierte Funktion 
 Die als privat deklarierte benutzerdefinierte Funktion wird nicht in der Liste der benutzerdefinierten Funktionen im Regeleditor eines adaptiven Formulars angezeigt. Standardmäßig sind benutzerdefinierte Funktionen öffentlich. Die Syntax zum Deklarieren der benutzerdefinierten Funktion als privat lautet `@private`.
 
 
-## Richtlinien beim Erstellen benutzerdefinierter Funktionen {#considerations}
+## Richtlinien beim Erstellen benutzerdefinierter Funktionen
 
 Um die benutzerdefinierten Funktionen im Regeleditor aufzulisten, können Sie eines der folgenden Formate verwenden:
 
@@ -217,7 +216,7 @@ Um benutzerdefinierte Funktionen im Regeleditor eines adaptiven Formulars aufzul
 
 Wenn der Benutzer der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügt, wird die benutzerdefinierte Funktion nicht im Regeleditor eines adaptiven Formulars aufgeführt.
 
-## Benutzerdefinierte Funktion erstellen {#create-custom-function}
+## Erstellen einer benutzerdefinierten Funktion {#create-custom-function}
 
 Erstellen Sie eine Client-Bibliothek, um benutzerdefinierte Funktionen im Regeleditor aufzurufen. Weitere Informationen finden Sie unter [Verwenden Client-seitiger Bibliotheken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=de#developing).
 
@@ -227,7 +226,7 @@ Schritte zum Erstellen benutzerdefinierter Funktionen:
 
 ### Erstellen einer Client-Bibliothek {#create-client-library}
 
-Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie die Client-Bibliothek hinzufügen. Um eine Client-Bibliothek zu erstellen, führen Sie die folgenden Schritte aus:
+Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie eine Client-Bibliothek hinzufügen. Um eine Client-Bibliothek zu erstellen, führen Sie die folgenden Schritte aus:
 
 1. [Klonen Sie Ihr AEM Forms as a Cloud Service-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
 1. Erstellen Sie einen Ordner unter dem Ordner `[AEM Forms as a Cloud Service repository folder]/apps/`. Erstellen Sie beispielsweise einen Ordner mit dem Namen `experience-league`.
@@ -282,7 +281,7 @@ Nachdem Sie Ihre Client-Bibliothek in Ihrer Forms CS-Umgebung bereitgestellt hab
 
 Sie können die benutzerdefinierte Funktion im [Regeleditor eines adaptiven Formulars](/help/forms/rule-editor-core-components.md) mithilfe der [JavaScript-Anmerkungen](##js-annotations).
 
-## Verwenden der benutzerdefinierten Funktion in einem adaptiven Formular
+## Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular
 
 In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor](/help/forms/rule-editor-core-components.md). Fügen Sie der JavaScript-Datei (`Function.js` ), um das Alter basierend auf dem Geburtsdatum (JJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()` , das das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
 
@@ -320,6 +319,43 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 >[!NOTE]
 >
 > Sie können auf Folgendes verweisen: [benutzerdefinierte Funktion](/help/forms/assets//customfunctions.zip) Ordner. Laden Sie diesen Ordner herunter und installieren Sie ihn in Ihrer AEM mithilfe der [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+
+
+### Festlegen von Dropdown-Listenoptionen mit benutzerdefinierten Funktionen
+
+Regel-Editor in Kernkomponenten unterstützt nicht die **Festlegen von Optionen für** -Eigenschaft zum Festlegen der Dropdown-Listenoptionen zur Laufzeit. Sie können die Optionen der Dropdown-Liste jedoch mit benutzerdefinierten Funktionen festlegen.
+
+Sehen Sie sich den folgenden Code an, um zu sehen, wie wir die Dropdown-Listenoptionen mithilfe benutzerdefinierter Funktionen festlegen können:
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+```
+
+Im obigen Code: `setEnums` wird verwendet, um `enum` -Eigenschaft und `setEnumNames` wird verwendet, um `enumNames` -Eigenschaft von Dropdown.
+
+Erstellen wir eine Regel für die `Next` -Schaltfläche, die den Wert der Dropdown-Listenoption festlegt, wenn der Benutzer auf die `Next` Schaltfläche:
+
+![Optionen für Dropdown-Listen](/help/forms/assets/drop-down-list-options.png)
+
+In der folgenden Abbildung sehen Sie, wo die Optionen der Dropdown-Liste beim Klicken auf die Schaltfläche Anzeigen eingestellt sind:
+
+![Dropdown-Optionen im Regeleditor](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
 
 ### Unterstützung für asynchrone Funktionen in benutzerdefinierten Funktionen {#support-of-async-functions}
 
@@ -362,7 +398,7 @@ Um seine Funktionsweise zu sehen, fügen wir eine Schaltfläche hinzu und erstel
 
 ![Erstellen einer Regel für die asynchrone Funktion](/help/forms/assets/rule-for-async-funct.png)
 
-In der Abbildung unten sehen Sie das Konsolenfenster, um zu veranschaulichen, dass der Benutzer beim Klicken auf die `Fetch` Schaltfläche, die benutzerdefinierte Funktion `callAsyncFunction` aufgerufen wird, was wiederum eine asynchrone Funktion aufruft `asyncFunction`. Inspect Sie das Konsolenfenster, um die Antwort anzuzeigen, wenn Sie auf die Schaltfläche klicken:
+In der Abbildung unten sehen Sie das Konsolenfenster, um zu veranschaulichen, dass der Benutzer beim Klicken auf die `Fetch` Schaltfläche, die benutzerdefinierte Funktion `callAsyncFunction` aufgerufen wird, was wiederum eine asynchrone Funktion aufruft `asyncFunction`. Inspect Sie das Konsolenfenster, um die Antwort auf die Schaltfläche anzuzeigen. Klicken Sie auf:
 
 ![Konsolenfenster](/help/forms/assets/async-custom-funct-console.png)
 
@@ -402,11 +438,11 @@ Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem F
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-Erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Formulare mit unterschiedlichen Anwendungsfällen verwenden.
+Erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Formular mit verschiedenen Anwendungsfällen verwenden.
 
 ![Kontaktformular](/help/forms/assets/contact-us-form.png)
 
-#### **Anwendungsfall**: Zeigen Sie ein Bedienfeld mit dem `SetProperty` Regel
++++ **Anwendungsfall**: Zeigen Sie ein Bedienfeld mit dem `SetProperty` Regel
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) Abschnitt, um das Formularfeld als `Required`.
 
@@ -448,7 +484,9 @@ Wenn Fehler in den Feldern der Variablen `personaldetails` angezeigt werden, wer
 
 ![Festlegen der Eigenschaftenformularvorschau](/help/forms/assets/set-property-panel.png)
 
-#### **Anwendungsfall**: Validieren Sie das Feld.
++++
+
++++ **Anwendungsfall**: Validieren Sie das Feld.
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) , um das Feld zu validieren.
 
@@ -487,7 +525,9 @@ Wenn der Benutzer eine gültige Telefonnummer und alle Felder in der `personalde
 
 ![Überprüfungsmuster für E-Mail-Adressen](/help/forms/assets/validate-form-preview-form.png)
 
-#### **Anwendungsfall**: Zurücksetzen eines Bedienfelds
++++
+
++++ **Anwendungsfall**: Zurücksetzen eines Bedienfelds
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) -Abschnitt, um das Bedienfeld zurückzusetzen.
 
@@ -519,10 +559,12 @@ Die folgende Abbildung zeigt, dass der Benutzer durch Klicken auf die `clear` -S
 
 ![Formular zurücksetzen](/help/forms/assets/custom-function-reset-form.png)
 
-#### **Anwendungsfall**: So zeigen Sie benutzerdefinierte Nachrichten auf Feldebene an und kennzeichnen das Feld als ungültig
++++
+
++++ **Anwendungsfall**: So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
 
 Sie können die `markFieldAsInvalid()` -Funktion, um ein Feld als ungültig zu definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festzulegen. Die `fieldIdentifier` Wert kann `fieldId`oder `field qualifiedName`oder `field dataRef`. Der Wert des Objekts mit dem Namen `option` kann `{useId: true}`, `{useQualifiedName: true}`oder `{useDataRef: true}`.
-Die Syntaxen, die zum Markieren des Felds als ungültig und zum Festlegen der benutzerdefinierten Nachricht verwendet werden, sind:
+Die Syntax, mit der ein Feld als ungültig markiert und eine benutzerdefinierte Nachricht festgelegt wird, lautet:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
@@ -560,8 +602,9 @@ Wenn der Benutzer mehr als 15 Zeichen in das Textfeld &quot;Kommentare&quot;eing
 
 ![Feld als gültiges Vorschauformular markieren](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-#### **Anwendungsfall**: Sendet geänderte Daten an den Server
++++ **Anwendungsfall**: Sendet geänderte Daten an den Server
 
 Die folgende Codezeile:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
@@ -592,7 +635,7 @@ Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abs
 
 Wenn der Benutzer in diesem Beispiel die `comments` Textfeld leer, das `NA` wird beim Senden des Formulars an den Server gesendet.
 
-Erstellen Sie nun eine Regel für die `Submit` -Schaltfläche zum Senden von Daten:
+Erstellen Sie nun eine Regel für die `Submit` -Schaltfläche, über die Daten gesendet werden:
 
 ![Daten senden](/help/forms/assets/custom-function-submit-data.png)
 
@@ -604,6 +647,262 @@ Sie können auch das Konsolenfenster überprüfen, um die an den Server gesendet
 
 ![Inspect-Daten im Konsolenfenster](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
+
++++ **Anwendungsfall**: Überschreiben des Erfolgs der Formularübermittlung und der Fehler-Handler
+
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) , um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Formularübermittlungsmeldungen in einem modalen Feld anzuzeigen:
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+In diesem Beispiel verwendet der Benutzer die Variable `customSubmitSuccessHandler` und `customSubmitErrorHandler` benutzerdefinierte Funktionen, werden die Erfolgs- und Fehlermeldungen in einem Modal angezeigt. Die JavaScript-Funktion `showModal(type, message)` wird verwendet, um dynamisch ein modales Dialogfeld auf einem Bildschirm zu erstellen und anzuzeigen.
+
+Erstellen Sie nun eine Regel für die erfolgreiche Formularübermittlung:
+
+![Formularübermittlung erfolgreich](/help/forms/assets/form-submission-success.png)
+
+In der unten stehenden Abbildung sehen Sie, wie die Erfolgsmeldung bei erfolgreicher Übermittlung des Formulars in einem Modal dargestellt wird:
+
+![Erfolgsmeldung zur Formularübermittlung](/help/forms/assets/form-submission-success-message.png)
+
+Erstellen Sie eine Regel für fehlgeschlagene Formularübermittlungen:
+
+![Formularübermittlung schlägt fehl](/help/forms/assets/form-submission-fail.png)
+
+In der folgenden Abbildung sehen Sie, dass die Fehlermeldung in einem Modal angezeigt wird, wenn die Formularübermittlung fehlschlägt:
+
+![Fehlermeldung bei Formularübermittlung](/help/forms/assets/form-submission-fail-message.png)
+
+Um den Erfolg und das Fehlschlagen der Formularübermittlung standardmäßig anzuzeigen, muss die `Default submit Form Success Handler` und `Default submit Form Error Handler` -Funktionen sind standardmäßig verfügbar.
+
+Falls der benutzerdefinierte Übermittlungs-Handler nicht wie erwartet in vorhandenen AEM Projekten oder Formularen ausgeführt werden kann, lesen Sie den Abschnitt [Fehlerbehebung](#troubleshooting) Abschnitt.
+
+<!--
+
++++
+
++++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
++++
+
++++ **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
++++
+
++++ **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## Caching-Unterstützung für benutzerdefinierte Funktionen
 
 Adaptive Forms implementiert Caching für benutzerdefinierte Funktionen, um die Reaktionszeit beim Abrufen der benutzerdefinierten Funktionsliste im Regeleditor zu verkürzen. Eine Nachricht als `Fetched following custom functions list from cache` im `error.log` -Datei.
@@ -612,15 +911,23 @@ Adaptive Forms implementiert Caching für benutzerdefinierte Funktionen, um die 
 
 Wenn die benutzerdefinierten Funktionen geändert werden, wird die Zwischenspeicherung invalidiert und analysiert.
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-Wenn die JavaScript-Datei mit dem Code für benutzerdefinierte Funktionen einen Fehler enthält, werden die benutzerdefinierten Funktionen nicht im Regeleditor eines adaptiven Formulars aufgeführt. Um die Liste der benutzerdefinierten Funktionen zu überprüfen, können Sie zum `error.log` -Datei für den Fehler. Im Fall eines Fehlers wird die Liste der benutzerdefinierten Funktionen leer angezeigt:
+* Wenn der benutzerdefinierte Übermittlungshandler nicht wie erwartet in bestehenden AEM Projekten oder Formularen ausgeführt werden kann, führen Sie die folgenden Schritte aus:
+   * Stellen Sie sicher, dass [Version der Kernkomponenten wird auf Version 3.0.18 und höher aktualisiert.](https://github.com/adobe/aem-core-forms-components). Für bestehende AEM Projekte und Formulare sind jedoch weitere Schritte erforderlich:
 
-![Fehlerprotokolldatei](/help/forms/assets/custom-function-list-error-file.png)
+   * Für das AEM Projekt sollte der Benutzer alle Instanzen von `submitForm('custom:submitSuccess', 'custom:submitError')` mit `submitForm()` und stellen das Projekt über die Cloud Manager-Pipeline bereit.
 
-Wenn kein Fehler auftritt, wird die benutzerdefinierte Funktion abgerufen und im `error.log` -Datei. Eine Nachricht als `Fetched following custom functions list` im `error.log` Datei:
+   * Wenn die benutzerdefinierten Übermittlungs-Handler für vorhandene Formulare nicht ordnungsgemäß funktionieren, muss der Benutzer die `submitForm` -Regel auf **Einsenden** -Schaltfläche mit dem Regeleditor. Diese Aktion ersetzt die vorhandene Regel aus `submitForm('custom:submitSuccess', 'custom:submitError')` mit `submitForm()` im Formular.
 
-![Fehlerprotokolldatei mit entsprechender benutzerdefinierter Funktion](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+* Wenn die JavaScript-Datei mit dem Code für benutzerdefinierte Funktionen einen Fehler enthält, werden die benutzerdefinierten Funktionen nicht im Regeleditor eines adaptiven Formulars aufgeführt. Um die Liste der benutzerdefinierten Funktionen zu überprüfen, können Sie zum `error.log` -Datei für den Fehler. Im Fall eines Fehlers wird die Liste der benutzerdefinierten Funktionen leer angezeigt:
+
+  ![Fehlerprotokolldatei](/help/forms/assets/custom-function-list-error-file.png)
+
+  Wenn kein Fehler auftritt, wird die benutzerdefinierte Funktion abgerufen und im `error.log` -Datei. Eine Nachricht als `Fetched following custom functions list` im `error.log` Datei:
+
+  ![Fehlerprotokolldatei mit entsprechender benutzerdefinierter Funktion](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## Überlegungen
 

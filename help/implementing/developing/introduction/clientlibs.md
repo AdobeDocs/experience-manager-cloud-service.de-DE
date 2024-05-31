@@ -2,10 +2,10 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
-ht-degree: 96%
+source-wordcount: '2497'
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung vo
 
 ## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
 
-Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, um eine Client-seitige Verarbeitung zu ermöglichen. Eine clientlib ist AEM Mechanismus zum Verweisen (bei Bedarf nach Kategorie) und zur Bereitstellung solcher Ressourcen.
+Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, um eine Client-seitige Verarbeitung zu ermöglichen. Eine Client-seitige Bibliothek (Clientlib) ist der Mechanismus von AEM, um auf diese Ressourcen zu verweisen (ggf. nach Kategorie) und sie bereitzustellen.
 
 AEM erfasst die CSS- und JavaScript-Elemente der Site in einer einzigen Datei an einem zentralen Speicherort, um sicherzustellen, dass in der HTML-Ausgabe nur eine Kopie einer Ressource enthalten ist. Dadurch wird die Effizienz der Bereitstellung gesteigert. Außerdem können diese Ressourcen über einen Proxy zentral im Repository verwaltet werden, sodass der Zugriff sicher bleibt.
 
 ## Frontend-Entwicklung für AEM as a Cloud Service {#fed-for-aemaacs}
 
-Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) Die Flexibilität des Archetyps ermöglicht es Ihnen, Ihre bevorzugten modernen Webtools zu verwenden, um diese Ressourcen zu erstellen und zu verwalten.
+Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) Die Flexibilität des Archetyps ermöglicht es Ihnen, Ihre bevorzugten modernen Webtools zu nutzen, um diese Ressourcen zu erstellen und zu verwalten.
 
 Der Archetyp kann die Ressourcen dann in einzelne CSS- und JS-Dateien kompilieren und sie automatisch in einen `cq:clientLibraryFolder` im Repository einbetten.
 
@@ -64,7 +64,7 @@ Wenn der Client-Bibliotheksordner eine oder mehrere Quelldateien enthält, werde
 Client-Bibliotheksordner enthalten die folgenden Elemente:
 
 * Die JS- und/oder CSS-Quelldateien
-* Statische Ressourcen, die CSS-Stile unterstützen, wie Symbole, Webfonts usw.
+* Statische Ressourcen, die CSS-Stile unterstützen, z. B. Symbole, Webfonts usw.
 * Eine Datei `js.txt` und/oder `css.txt`, die die Quelldateien angibt, die in den generierten JS- und/oder CSS Dateien zusammengeführt werden sollen
 
 ![Architektur Client-seitiger Bibliotheken](assets/clientlib-architecture.drawio.png)
@@ -88,7 +88,7 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
    * Typ: Boolean
    * Wert: `true`
 1. Wenn Sie statische Ressourcen verwalten müssen, erstellen Sie einen Unterordner mit dem Namen `resources` unter dem Client-Bibliotheksordner.
-   * Wenn Sie statische Ressourcen an einer anderen Stelle als im Ordner speichern `resources`, können sie nicht in einer Veröffentlichungsinstanz referenziert werden.
+   * Wenn Sie statische Ressourcen an einem anderen Ort als im Ordner `resources` speichern, können diese nicht in einer Veröffentlichungsinstanz referenziert werden.
 1. Fügen Sie die Quelldateien zum Bibliotheksordner hinzu.
    * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de).
    * Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
@@ -112,7 +112,7 @@ Sobald Ihr Client-Bibliotheksordner [wie erforderlich konfiguriert ist](#creatin
 * Sie verfügen über eine Client-seitige Bibliothek unter `/apps/myproject/clientlibs/foo`.
 * Sie verfügen über ein statisches Bild unter `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
-Die `allowProxy` -Eigenschaft können Sie Folgendes anfordern:
+Mit der `allowProxy`-Eigenschaft können Sie Folgendes anfordern:
 
 * Die Client-seitige Bibliothek über `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * Das statische Bild über `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
@@ -155,7 +155,7 @@ Die Komponente `/libs/cq/granite/components/dumplibs/dumplibs` generiert eine Se
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-Zu den Informationen gehören der Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie z. B. Kategorien und Abhängigkeiten. Nachfolgende Tabellen auf der Seite zeigen die Bibliotheken in jeder Kategorie und jedem Kanal.
+Die Informationen enthalten den Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie Kategorien und Abhängigkeiten. Nachfolgende Tabellen zeigen die Bibliotheken in jeder Kategorie und jedem Kanal an.
 
 ### Anzeigen der generierten Ausgabe {#see-generated-output}
 
@@ -170,7 +170,7 @@ Die Komponente `dumplibs` enthält einen Test-Selektor, der den für `ui:include
 
 ## Zusätzliche Funktionen für Client-Bibliotheksordner {#additional-features}
 
-Es gibt mehrere weitere Funktionen, die von Client-Bibliotheksordnern in AEM unterstützt werden. Diese sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
+Es gibt eine Reihe weiterer Funktionen, die von Client-Bibliothek-Ordnern in AEM unterstützt werden. Diese sind jedoch für AEM as a Cloud Service nicht erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
 
 >[!WARNING]
 >
@@ -279,18 +279,18 @@ AEM ist mit austauschbaren Präprozessoren kompatibel und bietet Unterstützung 
 
 Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.:
 
-* Definition von ScriptProcessors, die Skriptquellen verarbeiten können
-* Prozessoren sind mit Optionen konfigurierbar
-* Prozessoren können zur Minimierung, aber auch für nicht minimierte Fälle verwendet werden
-* Die Client-Bibliothek kann den zu verwendenden Prozessor festlegen
+* Es können ScriptProcessors zur Verarbeitung von Skriptquellen definiert werden.
+* Prozessoren sind mit Optionen konfigurierbar.
+* Prozessoren können zur Minimierung, aber auch für nicht minimierte Fälle verwendet werden.
+* Die Client-Bibliothek kann definieren, welcher Prozessor verwendet werden soll.
 
 >[!NOTE]
 >
->Standardmäßig verwendet AEM den YUI Compressor. In der [GitHub-Dokumentation zum YUI Compressor](https://github.com/yui/yuicompressor/issues) finden Sie eine Liste bekannter Probleme. Ein Wechsel zum GCC Compressor für bestimmte Client-Bibliotheken kann einige Probleme beheben, die mit YUI auftreten.
+>Standardmäßig verwendet AEM den YUI Compressor. In der [GitHub-Dokumentation zum YUI Compressor](https://github.com/yui/yuicompressor/issues) finden Sie eine Liste bekannter Probleme. Ein Wechsel zu GCC Compressor für bestimmte Client-Bibliotheken kann einige mit YUI verbundene Probleme beheben.
 
 >[!CAUTION]
 >
->Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Möglichkeiten der Präprozessoren verwenden.
+>Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Optionen der Präprozessoren verwenden.
 
 #### Nutzung {#usage}
 
@@ -339,13 +339,13 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Weitere Informationen zu GCC-Optionen finden Sie unter [GCC-Dokumentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 
 YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Rufen Sie Apache Felix Config Manager unter `http://<host>:<portY/system/console/configMgr` auf.
+1. Rufen Sie Apache Felix Config Manager unter `http://<host>:<port/system/console/configMgr` auf.
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
 1. Aktivieren Sie die Option **Minimieren** (wenn nicht bereits aktiviert).
 1. Setzen Sie den Wert **JS-Prozessor-Standardkonfigurationen** auf `min:gcc`.
