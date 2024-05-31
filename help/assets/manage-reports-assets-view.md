@@ -2,10 +2,10 @@
 title: Verwalten von Berichten in Assets-Ansicht
 description: Greifen Sie auf die Daten im Abschnitt „Berichte“ der Assets-Ansicht zu, um die Produkt- und Funktionsnutzung zu bewerten und Erkenntnisse zu wichtigen Erfolgsmetriken zu erhalten.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 0eea9b83d437c7e91daae08c33d94a83ba1db3f9
+source-git-commit: 7e8d4487ec545b5625d6401513df00d5c6240ee2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 90%
+source-wordcount: '817'
+ht-degree: 97%
 
 ---
 
@@ -58,11 +58,6 @@ Klicken Sie auf **[!UICONTROL Erkenntnisse]** im linken Navigationsbereich, um d
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **Asset-Anzahl nach Größe:** Segmentiert die Gesamtanzahl der Assets in Ihrer Assets View-Umgebung in unterschiedliche Größenbereiche, wodurch die Anzahl und der Prozentsatz der Assets in jedem Größenbereich hervorgehoben werden, dargestellt durch ein Ringdiagramm.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Asset-Anzahl nach Asset-Typ:** Segmentiert die Gesamtanzahl der Assets in Ihrer Assets-Ansichtsumgebung und hebt die Anzahl und den Prozentsatz der Assets anhand ihrer Dateitypen hervor, dargestellt durch Ringdiagramm.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 
 ## Erstellen eines Herunterladen-Berichts {#create-download-report}
 
