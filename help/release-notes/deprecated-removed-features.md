@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: ht
-source-wordcount: '2146'
-ht-degree: 100%
+source-git-commit: b071cf1d88e702dfdf38c18dc94488e94fc4bc21
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 98%
 
 ---
 
@@ -59,6 +59,8 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Mana
 | [!DNL Foundation] | Unterstützung für JST-Skriptvorlagen (OSGi-Bundle org.apache.sling.scripting.jst) | Nicht zutreffend | Entfernt |
 | [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | OSGi Http Whiteboard | März 2022 |
 | [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration | März 2023 |
+| [!DNL Foundation] | Unterstützung für die Funktion org.apache.sling.serviceusermapping in [Dienstbenutzer-ID abrufen](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | Nicht zutreffend | 30.08.24 |
+
 
 ## AEM-APIs {#aem-apis}
 
@@ -268,6 +270,17 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
     <td>15.5.2023</td>
     <td>15.6.2023</td>
   </tr>
+  <tr>
+    <td>org.slf4j.event	</td>
+    <td>Diese interne slf4j-API wird von AEM as a Cloud Service nicht unterstützt</td>
+    <td>11.4.2022</td>
+    <td>30.08.2024</td>
+  </tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>Die Verwendung dieser API wird in AEM as a Cloud Service nicht unterstützt.</td>
+    <td>17.05.2024</td>
+    <td>30.06.2024</td>
+  </tr>  
 </tbody>
 </table>
 </details>
