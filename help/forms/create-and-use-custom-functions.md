@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 4%
 
 ---
@@ -649,7 +649,7 @@ Sie können auch das Konsolenfenster überprüfen, um die an den Server gesendet
 
 
 
-#### Überschreiben von Erfolgs- und Fehlermeldungen bei der Formularübermittlung
+#### Überschreiben von Erfolgs- und Fehlermeldungen bei der Übermittlung für Ihr adaptives Formular
 
 Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) , um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Formularübermittlungsmeldungen in einem modalen Feld anzuzeigen:
 
