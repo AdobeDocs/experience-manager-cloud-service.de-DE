@@ -2,16 +2,16 @@
 title: Native AEM Assets-Integration mit Adobe Expreß
 description: Die native AEM Assets-Integration mit Adobe Expreß ermöglicht Ihnen den direkten Zugriff auf die in AEM Assets gespeicherten Assets über die Adobe Expreß-Benutzeroberfläche.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 8bbf9a2ba8f708a5a03d11bc0388d39b32d4c7b3
+source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 34%
+source-wordcount: '597'
+ht-degree: 25%
 
 ---
 
 # Native Integration mit Adobe Expreß {#native-integration-adobe-express}
 
-AEM Assets lässt sich nativ in Adobe Expreß integrieren, sodass Sie direkt über die Adobe Expreß-Benutzeroberfläche auf die in AEM Assets gespeicherten Assets zugreifen können. Sie können in AEM Assets verwaltete Inhalte auf der Express-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern. Die Integration bietet die folgenden Hauptvorteile:
+Dank der nativen Integration von AEM Assets mit Adobe Express können Sie über die Adobe Express-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen. Sie können in AEM Assets verwaltete Inhalte auf der Express-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern. Die Integration bietet die folgenden Hauptvorteile:
 
 * Verbesserte Wiederverwendung von Inhalten durch Bearbeiten und Speichern neuer Assets in AEM.
 
@@ -28,11 +28,15 @@ Führen Sie die folgenden Schritte aus, um mit der Verwendung von AEM Assets im 
 
 1. Öffnen Sie die Adobe Express-Web-Anwendung.
 
-1. Öffnen Sie eine neue leere Arbeitsfläche, indem Sie eine neue Vorlage oder ein Projekt laden oder ein Asset erstellen.
+2. Öffnen Sie eine neue leere Arbeitsfläche, indem Sie eine neue Vorlage oder ein Projekt laden oder ein Asset erstellen.
 
-1. Klicks **[!UICONTROL Assets]** im linken Navigationsbereich verfügbar. Adobe Expreß zeigt die Liste der Repositorys, auf die Sie Zugriff haben, zusammen mit der Liste der Assets und Ordner an, die auf der Stammebene verfügbar sind.
+3. Klicks **[!UICONTROL Assets]** im linken Navigationsbereich verfügbar. Adobe Expreß zeigt die Liste der Repositorys, auf die Sie Zugriff haben, zusammen mit der Liste der Assets und Ordner an, die auf der Stammebene verfügbar sind.
 
-1. Durchsuchen oder suchen Sie Assets in Ihrem Repository, um sie per Drag &amp; Drop auf die Arbeitsfläche zu ziehen. Sie können Assets mit verschiedenen verfügbaren Filtern filtern, wie Dateityp, MIME-Typ und Dimensionen.
+4. Durchsuchen oder suchen Sie Assets in Ihrem Repository, um sie per Drag &amp; Drop auf die Arbeitsfläche zu ziehen. Sie können Assets mit verschiedenen verfügbaren Filtern filtern, wie Dateityp, MIME-Typ und Dimensionen.
+
+   >[!NOTE]
+   >
+   >Die Filterung nach Dimension gilt nicht für Videos.
 
    ![Einschließen von Assets aus dem Assets-Add-on](assets/adobe-express-native-integration.png)
 
@@ -45,23 +49,38 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
    ![Speichern von Assets in AEM](assets/adobe-express-share.png)
 
-1. Auswählen **[!UICONTROL AEM Assets]** aus dem **[!UICONTROL Speicherung]** im rechten Bereich verfügbar. Adobe Expreß zeigt das Dialogfeld &quot;Hochladen&quot;an.
-1. Geben Sie einen Namen und ein Format für das Asset an. Sie können den Inhalt der Arbeitsfläche im PNG- oder JPEG-Format speichern.
+2. Wählen Sie im Bereich Speicherung im rechten Bereich Folgendes aus: **AEM Assets**. Adobe Expreß zeigt das Dialogfeld &quot;Hochladen&quot;an.
+3. Geben Sie einen Namen und ein Format für das Asset an. Sie können den Inhalt der Arbeitsfläche in den Formaten PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG speichern. Das Format passt sich automatisch an die Assets an.
 
-1. Klicken Sie auf das Ordnersymbol neben dem Feld **[!UICONTROL Speicherort]**, navigieren Sie zu dem Speicherort, an dem Sie das Asset speichern müssen, und klicken Sie auf **[!UICONTROL Auswählen]**. Der Name des Ordners wird im Feld **[!UICONTROL Speicherort]** angezeigt.
+   >[!NOTE]
+   >
+   >Wenn Sie &quot;Aktuelle Seite&quot;auswählen, wird die Datei im Zielordner gespeichert. Wenn Sie &quot;Alle Seiten&quot;auswählen, wird in Ihrem Ziel ein neuer Ordner für alle Nicht-PDF-Dateien erstellt und dort gespeichert, während PDF-Dateien als einzelne Datei im Zielordner gespeichert werden.
 
-   ![Speichern von Assets in AEM](assets/adobe-express-upload.png)
+4. Klicken Sie auf den Textbereich unter **Zielordner** , um einen Speicherort auszuwählen und die Assets zu speichern.
 
-1. Optional: Sie können Kampagnenmetadaten für Ihren Upload mit dem **[!UICONTROL Projekt- oder Kampagnenname]** -Feld. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Wenn Sie einen Namen eingeben, klicken Sie entweder auf eine andere Stelle im Dialogfeld oder drücken Sie die `,` (Komma) Schlüssel zur Registrierung des Namens.
+   ![Speichern von Assets in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-   Als Best Practice empfiehlt Adobe, Werte im Rest der Felder anzugeben und eine erweiterte Sucherfahrung für Ihre hochgeladenen Assets zu erstellen.
-1. Definieren Sie auf ähnliche Weise Werte für die **[!UICONTROL Schlüsselwörter]** und **[!UICONTROL Kanäle]** -Felder.
+5. Optional: Sie können Kampagnenmetadaten für Ihren Upload mit dem **Projekt- oder Kampagnenname** -Feld. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Um den Namen zu registrieren, geben Sie einfach den Namen ein und drücken Sie die Eingabetaste.
+Als Best Practice empfiehlt Adobe, Werte im Rest der Felder anzugeben und eine erweiterte Sucherfahrung für Ihre hochgeladenen Assets zu erstellen.
 
-1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Asset in AEM Assets hochzuladen.
+6. Definieren Sie auf ähnliche Weise Werte für die **[!UICONTROL Schlüsselwörter]** und **[!UICONTROL Kanäle]** -Felder.
+
+7. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Asset in AEM Assets hochzuladen.
 
 
 
 
 ## Einschränkungen {#limitations}
 
-Es gibt einen bekannten Fehler bei einigen Benutzern mit Zugriff auf mehr als ein Asset-Repository, wenn ein Dokument mit Assets aus mehreren Repositorys gespeichert wird.
+1. Für den Import und Export wird MP4 als Videodateityp unterstützt.
+
+2. Für den MP4-Videoimport:
+
+   a) Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn diese Grenze überschritten wird, wird eine Warnmeldung angezeigt.
+b) Die maximal unterstützte Auflösung beträgt 3840 x 3840 Pixel.
+c) Videos mit transparentem Hintergrund (Alphakanal) werden nicht unterstützt.
+
+3. Für den MP4-Videoexport:
+
+   a) Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn diese Grenze überschritten wird, wird eine Warnmeldung mit einem Problemumgehungsvorschlag angezeigt, wie in der Abbildung unten dargestellt
+   ![Warnhinweis mit Problemumgehung](/help/assets/assets/alert-with-workaround.png).
