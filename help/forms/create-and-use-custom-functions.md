@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3522'
 ht-degree: 4%
 
 ---
@@ -442,7 +442,7 @@ Erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Form
 
 ![Kontaktformular](/help/forms/assets/contact-us-form.png)
 
-+++ Anwendungsbeispiel: Anzeigen eines Bedienfelds mit dem `SetProperty` Regel
+#### Anwendungsfall: Anzeigen eines Bedienfelds mithilfe der SetProperty-Regel
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) Abschnitt, um das Formularfeld als `Required`.
 
