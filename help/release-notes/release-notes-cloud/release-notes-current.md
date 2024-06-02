@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32d8477f85edf7fc33a0558e886c5fbb4854f8e5
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 33%
+source-wordcount: '1767'
+ht-degree: 25%
 
 ---
 
@@ -89,11 +89,11 @@ Mit Experience Manager Assets können Sie jetzt schnell [Veröffentlichen von As
 
 Diese Version umfasst ein bedeutendes Upgrade des visuellen Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren. Sie haben nun die folgenden Möglichkeiten:
 
-* Erstellen Sie Regeln im Visual Rule Editor, um [Überschreiben der standardmäßigen Prozess-Übermittlungs-Erfolgs-/Fehler-Handler für Formulare](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* Erstellen Sie Regeln im Visual Rule Editor, um [Überschreiben von standardmäßigen Erfolgs-/Fehlermeldungen bei der Formularübermittlung](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * Im Regeleditor für adaptive Forms wurde die Möglichkeit hinzugefügt, [Auswahl verschiedener Feldtypen für den WHEN-Vorgang](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
-* Formularautoren können jetzt benutzerdefinierte Funktionen auf [Vorverarbeitung von Daten vor der Übermittlung](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* Formularautoren können jetzt benutzerdefinierte Funktionen auf [Vorverarbeitung von Daten vor der Übermittlung](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
 * Verwenden Sie die [**Als Entwurf speichern**](/help/forms/save-core-component-based-form-as-draft.md) Funktion zum Speichern teilweise ausgefüllter Formulare für die spätere Übermittlung. Dies ist in Szenarien nützlich, in denen Benutzer das Ausfüllen eines Formulars unterbrechen und später zu ihm zurückkehren müssen.
 
@@ -211,12 +211,10 @@ Treten Sie dem Programm für frühe Benutzer bei, damit Sie benachrichtigt werde
 
 Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), eine Markup-Sprache für die Zusammenstellung dynamischer Webinhalte auf Edge-Ebene. Durch die Einbeziehung von ESI-Snippets können Sie die gesamte HTML-Seite im CDN mit höheren TTLs zwischenspeichern und gleichzeitig diejenigen kleineren-Abschnitte, die höhere Cadence-Updates erfordern (niedrigere TTLs), öfter aus der Quelle abrufen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Datendienst für die Echtzeit-Benutzerüberwachung (RUM) (Early Adopter Program)
+#### Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) (Frühwarnprogramm)
 
-* **[Sie können den Datendienst Real User Monitoring (RUM) nutzen](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**, um die Client-seitige Sammlung für AEM as a Cloud Service zu aktivieren.
-Der Datendienst Real User Monitoring (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann jetzt außerdem die automatisierte Traffic-Berichterstellung aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
-
-  Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in der E-Mail den Domain-Namen für jede Umgebung an, für die Sie RUM aktivieren möchten. Das Produkt-Team von Adobe aktiviert dann den Datendienst Real User Monitoring (RUM) für Sie.
+* **Der Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) ist jetzt allgemein verfügbar (/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service).** Aktivierung der clientseitigen Datenerfassung für AEM as a Cloud Service.
+Der Real Use Monitoring Service , die clientseitige Sammlung, bietet eine präzisere Darstellung von Interaktionen und gewährleistet eine zuverlässige Messung der Website-Interaktion. Sie ermöglicht Kunden mit erweiterten Einblicken in ihren Seiten-Traffic und ihre Leistung. Es ist eine großartige Gelegenheit, mehr über Ihre Seitenleistung zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
 
 ## [!DNL Experience Manager]-Handbücher {#guides}
 

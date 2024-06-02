@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 4%
@@ -442,7 +442,7 @@ Erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Form
 
 ![Kontaktformular](/help/forms/assets/contact-us-form.png)
 
-+++ **Anwendungsfall**: Zeigen Sie ein Bedienfeld mit dem `SetProperty` Regel
++++ Anwendungsbeispiel: Anzeigen eines Bedienfelds mit dem `SetProperty` Regel
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) Abschnitt, um das Formularfeld als `Required`.
 
@@ -484,9 +484,8 @@ Wenn Fehler in den Feldern der Variablen `personaldetails` angezeigt werden, wer
 
 ![Festlegen der Eigenschaftenformularvorschau](/help/forms/assets/set-property-panel.png)
 
-+++
 
-+++ **Anwendungsfall**: Validieren Sie das Feld.
+#### Anwendungsfall: Validieren Sie das Feld.
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) , um das Feld zu validieren.
 
@@ -525,9 +524,9 @@ Wenn der Benutzer eine gültige Telefonnummer und alle Felder in der `personalde
 
 ![Überprüfungsmuster für E-Mail-Adressen](/help/forms/assets/validate-form-preview-form.png)
 
-+++
 
-+++ **Anwendungsfall**: Zurücksetzen eines Bedienfelds
+
+#### Anwendungsbeispiel: Bedienfeld zurücksetzen
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) -Abschnitt, um das Bedienfeld zurückzusetzen.
 
@@ -559,9 +558,9 @@ Die folgende Abbildung zeigt, dass der Benutzer durch Klicken auf die `clear` -S
 
 ![Formular zurücksetzen](/help/forms/assets/custom-function-reset-form.png)
 
-+++
 
-+++ **Anwendungsfall**: So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
+
+#### Anwendungsfall: So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
 
 Sie können die `markFieldAsInvalid()` -Funktion, um ein Feld als ungültig zu definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festzulegen. Die `fieldIdentifier` Wert kann `fieldId`oder `field qualifiedName`oder `field dataRef`. Der Wert des Objekts mit dem Namen `option` kann `{useId: true}`, `{useQualifiedName: true}`oder `{useDataRef: true}`.
 Die Syntax, mit der ein Feld als ungültig markiert und eine benutzerdefinierte Nachricht festgelegt wird, lautet:
@@ -602,9 +601,9 @@ Wenn der Benutzer mehr als 15 Zeichen in das Textfeld &quot;Kommentare&quot;eing
 
 ![Feld als gültiges Vorschauformular markieren](/help/forms/assets/custom-function-validfield-form.png)
 
-+++
 
-+++ **Anwendungsfall**: Sendet geänderte Daten an den Server
+
+#### Anwendungsfall: Senden veränderter Daten an den Server
 
 Die folgende Codezeile:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
@@ -647,9 +646,9 @@ Sie können auch das Konsolenfenster überprüfen, um die an den Server gesendet
 
 ![Inspect-Daten im Konsolenfenster](/help/forms/assets/custom-function-submit-data-console-data.png)
 
-+++
 
-+++ **Anwendungsfall**: Überschreiben des Erfolgs der Formularübermittlung und der Fehler-Handler
+
+#### Nutzungsszenario: Formularübermittlungserfolg und Fehler-Handler überschreiben
 
 Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) , um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Formularübermittlungsmeldungen in einem modalen Feld anzuzeigen:
 
@@ -760,9 +759,8 @@ Falls der benutzerdefinierte Übermittlungs-Handler nicht wie erwartet in vorhan
 
 <!--
 
-+++
 
-+++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+#### Use Case:  Perform actions in a specific instance of the repeatable panel 
 
 Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
 
@@ -793,9 +791,9 @@ Let us add a button labeled `Hide` to add a rule to hide a specific panel.
 Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
 
 
-+++
 
-+++ **Usecase**: Pre-fill the field with a value when the form loads
+
+#### **Usecase**: Pre-fill the field with a value when the form loads
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
 
@@ -820,9 +818,9 @@ Refer to the screenshot below, which demonstrates that when the form loads, the 
 
 ![Import Data Rule](/help/forms/assets/cg)
 
-+++
 
-+++ **Usecase**: Set focus on the specific field
+
+#### **Usecase**: Set focus on the specific field
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
 
