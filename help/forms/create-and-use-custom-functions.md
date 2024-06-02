@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ Erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Form
 
 ![Kontaktformular](/help/forms/assets/contact-us-form.png)
 
-#### Anwendungsfall: Anzeigen eines Bedienfelds mithilfe der SetProperty-Regel
+#### Anzeigen eines Bedienfelds mit der Regel &quot;SetProperty&quot;
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) Abschnitt, um das Formularfeld als `Required`.
 
@@ -486,7 +486,7 @@ Wenn Fehler in den Feldern der Variablen `personaldetails` angezeigt werden, wer
 ![Festlegen der Eigenschaftenformularvorschau](/help/forms/assets/set-property-panel.png)
 
 
-#### Anwendungsfall: Validieren Sie das Feld.
+#### Validieren Sie ein Feld.
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) , um das Feld zu validieren.
 
@@ -527,7 +527,7 @@ Wenn der Benutzer eine gültige Telefonnummer und alle Felder in der `personalde
 
 
 
-#### Anwendungsbeispiel: Bedienfeld zurücksetzen
+#### Zurücksetzen eines Bedienfelds
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) -Abschnitt, um das Bedienfeld zurückzusetzen.
 
@@ -561,7 +561,7 @@ Die folgende Abbildung zeigt, dass der Benutzer durch Klicken auf die `clear` -S
 
 
 
-#### Anwendungsfall: So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
+#### So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
 
 Sie können die `markFieldAsInvalid()` -Funktion, um ein Feld als ungültig zu definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festzulegen. Die `fieldIdentifier` Wert kann `fieldId`oder `field qualifiedName`oder `field dataRef`. Der Wert des Objekts mit dem Namen `option` kann `{useId: true}`, `{useQualifiedName: true}`oder `{useDataRef: true}`.
 Die Syntax, mit der ein Feld als ungültig markiert und eine benutzerdefinierte Nachricht festgelegt wird, lautet:
@@ -604,7 +604,7 @@ Wenn der Benutzer mehr als 15 Zeichen in das Textfeld &quot;Kommentare&quot;eing
 
 
 
-#### Anwendungsfall: Senden veränderter Daten an den Server
+#### Erfasste Daten vor dem Senden ändern
 
 Die folgende Codezeile:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
@@ -649,7 +649,7 @@ Sie können auch das Konsolenfenster überprüfen, um die an den Server gesendet
 
 
 
-#### Nutzungsszenario: Formularübermittlungserfolg und Fehler-Handler überschreiben
+#### Überschreiben von Erfolgs- und Fehlermeldungen bei der Formularübermittlung
 
 Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) , um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Formularübermittlungsmeldungen in einem modalen Feld anzuzeigen:
 
