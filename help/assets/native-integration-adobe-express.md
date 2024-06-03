@@ -2,10 +2,10 @@
 title: Native AEM Assets-Integration mit Adobe Expreß
 description: Die native AEM Assets-Integration mit Adobe Expreß ermöglicht Ihnen den direkten Zugriff auf die in AEM Assets gespeicherten Assets über die Adobe Expreß-Benutzeroberfläche.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
+source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 24%
+source-wordcount: '612'
+ht-degree: 20%
 
 ---
 
@@ -49,26 +49,19 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
    ![Speichern von Assets in AEM](assets/adobe-express-share.png)
 
-2. Wählen Sie im Bereich Speicherung im rechten Bereich Folgendes aus: **AEM Assets**. Adobe Expreß zeigt das Dialogfeld &quot;Hochladen&quot;an.
-3. Geben Sie einen Namen und ein Format für das Asset an. Sie können den Inhalt der Arbeitsfläche in den Formaten PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG speichern. Das Format passt sich automatisch an die Assets an.
-
-   >[!NOTE]
-   >
-   >Wenn Sie &quot;Aktuelle Seite&quot;auswählen, wird die Datei im Zielordner gespeichert. Wenn Sie &quot;Alle Seiten&quot;auswählen, wird in Ihrem Ziel ein neuer Ordner für alle Nicht-PDF-Dateien erstellt und dort gespeichert, während PDF-Dateien als einzelne Datei im Zielordner gespeichert werden.
-
-4. Klicken Sie auf den Textbereich unter **Zielordner** , um einen Speicherort auszuwählen und die Assets zu speichern.
+2. Wählen Sie im Bereich Speicherung im rechten Bereich die Option **AEM Assets**. Adobe Expreß zeigt das Dialogfeld &quot;Hochladen&quot;an.
+3. Wählen Sie entweder die **Aktuelle Seite** oder **Alle Seiten** Speichern . Auswählen **Aktuelle Seite** speichert die Datei jedoch im Zielordner, indem Sie **Alle Seiten** erstellt in Ihrem Ziel einen neuen Ordner für alle Nicht-PDF-Dateien und speichert sie als separate Dateien, während PDF-Dateien als einzelne Datei im Zielordner gespeichert werden.
+4. Geben Sie einen Namen und ein Format für das Asset an. Sie können den Inhalt der Arbeitsfläche in den Formaten PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG speichern. Das Format passt sich automatisch an die Assets an.
+5. Klicken Sie auf das Ordnersymbol unter **Zielordner** , um einen Speicherort auszuwählen und die Assets zu speichern.
 
    ![Speichern von Assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Optional: Sie können Kampagnenmetadaten für Ihren Upload mit dem **Projekt- oder Kampagnenname** -Feld. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Um den Namen zu registrieren, geben Sie einfach den Namen ein und drücken Sie die Eingabetaste.
+6. Optional: Sie können Kampagnenmetadaten für Ihren Upload mit dem **Projekt- oder Kampagnenname** -Feld. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Um den Namen zu registrieren, geben Sie einfach den Namen ein und drücken Sie die Eingabetaste.
 Als Best Practice empfiehlt Adobe, Werte im Rest der Felder anzugeben und eine erweiterte Sucherfahrung für Ihre hochgeladenen Assets zu erstellen.
 
-6. Definieren Sie auf ähnliche Weise Werte für die **[!UICONTROL Schlüsselwörter]** und **[!UICONTROL Kanäle]** -Felder.
+7. Definieren Sie auf ähnliche Weise Werte für die **[!UICONTROL Schlüsselwörter]** und **[!UICONTROL Kanäle]** -Felder.
 
-7. Klicks **[!UICONTROL Hochladen]** , um die Assets in AEM Assets hochzuladen.
-
-
-
+8. Klicks **[!UICONTROL Hochladen]** , um die Assets in AEM Assets hochzuladen.
 
 ## Einschränkungen {#limitations}
 
@@ -76,11 +69,13 @@ Als Best Practice empfiehlt Adobe, Werte im Rest der Felder anzugeben und eine e
 
 2. Für den MP4-Videoimport:
 
-   a) Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn diese Grenze überschritten wird, wird eine Warnmeldung angezeigt.
-b) Die maximal unterstützte Auflösung beträgt 3840 x 3840 Pixel.
-c) Videos mit transparentem Hintergrund (Alphakanal) werden nicht unterstützt.
+   1. Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn dieser Grenzwert überschritten wird, wird eine Warnmeldung angezeigt.
+   2. Die maximal unterstützte Auflösung beträgt 3840 x 3840 Pixel.
+   3. Videos mit transparentem Hintergrund (Alphakanal) werden nicht unterstützt.
 
 3. Für den MP4-Videoexport:
 
-   a) Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn diese Grenze überschritten wird, wird eine Warnmeldung mit einer Problemumgehung angezeigt, wie in der Abbildung unten dargestellt.
-   ![Warnhinweis mit Problemumgehung](/help/assets/assets/alert-with-workaround.png)
+   1. Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn dieser Grenzwert überschritten wird, wird ein Warnhinweis angezeigt, das Video auf 200 MB oder weniger zu reduzieren oder es nach dem Herunterladen manuell in den Zielordner von AEM Assets hochzuladen.
+
+
+
