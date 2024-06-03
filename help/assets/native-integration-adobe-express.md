@@ -2,7 +2,7 @@
 title: Native AEM Assets-Integration mit Adobe Expreß
 description: Die native AEM Assets-Integration mit Adobe Expreß ermöglicht Ihnen den direkten Zugriff auf die in AEM Assets gespeicherten Assets über die Adobe Expreß-Benutzeroberfläche.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 24%
@@ -58,7 +58,7 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
 4. Klicken Sie auf den Textbereich unter **Zielordner** , um einen Speicherort auszuwählen und die Assets zu speichern.
 
-   ![Speichern von Assets in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![Speichern von Assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Optional: Sie können Kampagnenmetadaten für Ihren Upload mit dem **Projekt- oder Kampagnenname** -Feld. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Um den Namen zu registrieren, geben Sie einfach den Namen ein und drücken Sie die Eingabetaste.
 Als Best Practice empfiehlt Adobe, Werte im Rest der Felder anzugeben und eine erweiterte Sucherfahrung für Ihre hochgeladenen Assets zu erstellen.
@@ -82,5 +82,5 @@ c) Videos mit transparentem Hintergrund (Alphakanal) werden nicht unterstützt.
 
 3. Für den MP4-Videoexport:
 
-   a) Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn diese Grenze überschritten wird, wird eine Warnmeldung mit einem Problemumgehungsvorschlag angezeigt, wie in der Abbildung unten dargestellt
-   ![Warnhinweis mit Problemumgehung](/help/assets/assets/alert-with-workaround.png).
+   a) Die maximal unterstützte Dateigröße beträgt 200 MB. Wenn diese Grenze überschritten wird, wird eine Warnmeldung mit einer Problemumgehung angezeigt, wie in der Abbildung unten dargestellt.
+   ![Warnhinweis mit Problemumgehung](/help/assets/assets/alert-with-workaround.png)
