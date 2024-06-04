@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 48%
+source-wordcount: '353'
+ht-degree: 46%
 
 ---
 
@@ -31,11 +31,13 @@ Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für dies
 
 ### Behobene Probleme {#fixed-issues-16544}
 
-* DXML-17171: AEM Guides: Der Kopieren und Einfügen von Themen mit einer Größe von mehr als 15 KB schlägt mit einem unerwarteten Fehler fehl.
-* DXML-17088: AEM Guides: Die Funktion zum Ändern des Dokumentstatus vom **Dateieigenschaften** nicht ordnungsgemäß funktioniert und Änderungen an der *Entwurf* state.
-* DXML-16931: AEM Handbücher: Verknüpfte Bilder aus den Themen werden nach der Versionserstellung nicht in der Grundlinie angezeigt.
-* DXML-16896: AEM Handbücher: Wiederverwendbare Inhaltsbedienfelder listen keine Elemente auf, wenn die **Benutzereinstellungen** werden festgelegt, um Dateien anzuzeigen, indem **Dateiname**.
 * GRANITE-51375: idp-sync gibt NPE aus, wenn kein Zwischenpfad angegeben ist.
+* GUIDES-17171: Beim Kopieren und Einfügen von Themen mit einer Größe von mehr als 15 KB tritt ein unerwarteter Fehler auf.
+* GUIDES-17088: Die Funktionalität zum Ändern des Dokumentstatus von der **Dateieigenschaften** nicht ordnungsgemäß funktioniert und Änderungen an der *Entwurf* state.
+* GUIDES-16931: Verknüpfte Bilder aus den Themen werden nach der Versionserstellung nicht in der Grundlinie angezeigt.
+* GUIDES-16896: Wiederverwendbare Inhaltsbedienfelder listen keine Elemente auf, wenn die **Benutzereinstellungen** werden festgelegt, um Dateien anzuzeigen, indem **Dateiname**.
+
+Weitere Informationen zu den neuen und verbesserten Funktionen und Problemen, die in den Experience Manager-Handbüchern behoben wurden, finden Sie in der [Roadmap für Experience Manager-Handbücher](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekannte Probleme {#known-issues-16544}
 
