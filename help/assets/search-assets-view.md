@@ -3,7 +3,7 @@ title: Erfahren Sie, wie man in der  [!DNL Assets view] Assets sucht und findet.
 description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und findet. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
+source-git-commit: f476088e13466e1c41368112fb161bcbeee2c5cd
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 100%
@@ -331,6 +331,6 @@ Um Feedback zur Kontextsuche zu geben, klicken Sie auf das ![Symbol für die Ko
 
 * Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
-* Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation über die Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
