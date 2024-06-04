@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 25%
+source-wordcount: '1865'
+ht-degree: 24%
 
 ---
 
@@ -218,7 +218,12 @@ Der Real Use Monitoring Service , die clientseitige Sammlung, bietet eine präzi
 
 ## [!DNL Experience Manager]-Handbücher {#guides}
 
-Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager-Handbücher finden Sie [here](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **Veröffentlichen eines Themas oder seiner Elemente in einem Experience Fragment**
+Jetzt können Sie mit Experience Manager-Handbüchern ein Thema oder dessen Elemente in einem Experience Fragment veröffentlichen. Ein Experience Fragment ist eine modulare Inhaltseinheit, die sowohl Inhalt als auch Layout integriert.  Experience Fragments sind hilfreich und helfen Ihnen bei der Erstellung konsistenter und ansprechender Erlebnisse.
+* **Möglichkeit, die Themen-Asset-Metadaten an die native PDF-Ausgabe zu übergeben**
+Sie können die Themen-Asset-Metadaten beim Generieren der nativen PDF-Ausgabe hinzufügen. Mit dieser Funktion können Sie bestimmte Metadaten für verschiedene Themen wie Thementitel und Autor zu den Kopf- und Fußzeilen der Themenseite hinzufügen.
+
+Weitere Informationen zu den neuen und verbesserten Funktionen und Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager-Handbücher](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
