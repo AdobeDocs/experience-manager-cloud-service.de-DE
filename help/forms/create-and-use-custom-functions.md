@@ -5,11 +5,10 @@ keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
+source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '4351'
 ht-degree: 4%
 
 ---
@@ -98,7 +97,7 @@ In der obigen Codezeile `Input1` ist ein optionaler Parameter ohne Standardwert.
 In der obigen Codezeile `Input1` ist ein optionaler Parameter ohne Standardwert. So deklarieren Sie einen optionalen Parameter mit dem Standardwert:
 `@param {array} [input1=<value>]`
 `input1` ist ein optionaler Parameter des Array-Typs, dessen Standardwert auf `value`.
-Stellen Sie sicher, dass der Parametertyp in geschweifte Klammern eingeschlossen ist. {} und der Parametername in eckigen Klammern eingeschlossen ist [].
+Stellen Sie sicher, dass der Parametertyp in geschweifte Klammern eingeschlossen ist. {} und der Parametername in eckigen Klammern eingeschlossen ist.
 
 Betrachten Sie das folgende Code-Snippet, bei dem input2 als optionaler Parameter definiert ist:
 
@@ -225,33 +224,124 @@ Schritte zum Erstellen benutzerdefinierter Funktionen:
 1. [Erstellen einer Client-Bibliothek](#create-client-library)
 1. [Clientbibliothek zu einem adaptiven Formular hinzufügen](#use-custom-function)
 
+
+### Voraussetzungen für die Erstellung einer benutzerdefinierten Funktion
+
+Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adaptiven Forms beginnen, stellen Sie Folgendes sicher:
+
+**Software:**
+
+* **Klartext-Editor (IDE)**: Obwohl jeder Nur-Text-Editor funktionieren kann, bietet eine integrierte Entwicklungsumgebung (IDE) wie Microsoft Visual Studio Code erweiterte Funktionen zur einfacheren Bearbeitung.
+
+* **Git:** Dieses Versionskontrollsystem ist für die Verwaltung von Code-Änderungen erforderlich. Wenn Sie es nicht installiert haben, laden Sie es von https://git-scm.com herunter.
+
 ### Erstellen einer Client-Bibliothek {#create-client-library}
 
 Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie eine Client-Bibliothek hinzufügen. Um eine Client-Bibliothek zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. [Klonen Sie Ihr AEM Forms as a Cloud Service-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
-1. Erstellen Sie einen Ordner unter dem Ordner `[AEM Forms as a Cloud Service repository folder]/apps/`. Erstellen Sie beispielsweise einen Ordner mit dem Namen `experience-league`.
-1. Navigieren Sie zu `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` und erstellen Sie eine `ClientLibraryFolder`. Erstellen Sie beispielsweise einen Client-Bibliotheksordner als `customclientlibs`.
-1. Hinzufügen einer Eigenschaft `categories` mit einem Zeichenfolgentyp -Wert. Weisen Sie beispielsweise den Wert zu `customfunctionscategory` der `categories` -Eigenschaft für `customclientlibs` Ordner.
+**Repository klonen**
+
+Klonen [as a Cloud Service AEM Forms-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git):
+
+1. Öffnen Sie die Befehlszeile oder ein Terminal-Fenster.
+
+1. Navigieren Sie zum gewünschten Speicherort auf Ihrem Computer, auf dem Sie das Repository speichern möchten.
+
+1. Führen Sie den folgenden Befehl aus, um das Repository zu klonen:
+
+   `git clone [Git Repository URL]`
+
+Mit diesem Befehl wird das Repository heruntergeladen und ein lokaler Ordner des geklonten Repositorys auf Ihrem Computer erstellt. In diesem Handbuch wird dieser Ordner als [AEMaaCS-Projektverzeichnis].
+
+**Client-Bibliotheksordner hinzufügen**
+
+Hinzufügen des neuen Client-Bibliotheksordners zum [AEMaaCS-Projektverzeichnis]führen Sie die folgenden Schritte aus:
+
+1. Öffnen Sie die [AEMaaCS-Projektverzeichnis] in einem Editor.
+
+   ![Ordnerstruktur für benutzerdefinierte Funktionen](/help/forms/assets/custom-library-folder-structure.png)
+
+1. Suchen `ui.apps`.
+1. Fügen Sie neuen Ordner hinzu. Fügen Sie beispielsweise einen Ordner mit dem Namen `experience-league`.
+1. Navigieren Sie zu `/experience-league/` und fügen Sie einen `ClientLibraryFolder`. Erstellen Sie beispielsweise einen Client-Bibliotheksordner mit dem Namen `customclientlibs`.
+
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**Hinzufügen von Dateien und Ordnern zum Ordner &quot;Client-Bibliothek&quot;**
+
+Fügen Sie dem hinzugefügten Client-Bibliotheksordner Folgendes hinzu:
+
+* .content.xml-Datei
+* js.txt-Datei
+* js-Ordner
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
+
+1. Im `.content.xml` die folgenden Codezeilen hinzufügen:
+
+   ```javascript
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   jcr:primaryType="cq:ClientLibraryFolder"
+   categories="[customfunctionscategory]"/>
+   ```
 
    >[!NOTE]
    >
    > Sie können einen beliebigen Namen für `client library folder` und `categories` -Eigenschaft.
 
-1. Erstellen Sie einen Ordner mit dem Namen `js`.
-1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js`.
-1. Fügen Sie eine JavaScript-Datei hinzu, z. B. `function.js`. Die Datei enthält den Code für die benutzerdefinierte Funktion.
-1. Speichern Sie die Datei `function.js`.
-1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js`.
-1. Hinzufügen einer Textdatei als `js.txt`. Die Datei enthält:
+1. Im `js.txt` die folgenden Codezeilen hinzufügen:
 
    ```javascript
-       #base=js
-       functions.js
+         #base=js
+       function.js
    ```
+1. Im `js` Ordner, fügen Sie die JavaScript-Datei als `function.js` , das die benutzerdefinierten Funktionen enthält:
 
-1. Speichern Sie die Datei `js.txt`.
-1. Fügen Sie die Änderungen mit den folgenden Befehlen hinzu, übertragen Sie sie und pushen Sie sie in das Repository:
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+   
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+   
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+   
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+   
+    return age;
+    }
+   ```
+1. Speichern Sie die Dateien.
+
+![Ordnerstruktur für benutzerdefinierte Funktionen](/help/forms/assets/custom-function-added-files.png)
+
+**Den neuen Ordner in filter.xml einschließen**:
+
+1. Navigieren Sie zur Datei `/ui.apps/src/main/content/META-INF/vault/filter.xml` in Ihrem [AEMaaCS-Projektverzeichnis].
+
+1. Öffnen Sie die Datei und fügen Sie die folgende Zeile am Ende ein:
+
+   `<filter root="/apps/experience-league" />`
+1. Speichern Sie die Datei.
+
+![Benutzerdefinierte Funktionsfilter XML](/help/forms/assets/custom-function-filterxml.png)
+
+**Bereitstellen des neu erstellten Client-Bibliotheksordners in Ihrer AEM-Umgebung**
+
+Stellen Sie das [AEMaaCS Projektverzeichnis] von AEM as a Cloud Service in Ihrer Cloud Service-Umgebung bereit. So stellen Sie es in Ihrer Cloud Service-Umgebung bereit:
+
+1. Übergeben Sie die Änderungen
+
+   1. Fügen Sie die Änderungen mit den folgenden Befehlen hinzu, übertragen Sie sie und pushen Sie sie in das Repository:
 
    ```javascript
        git add .
@@ -259,7 +349,11 @@ Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie eine Client-Bib
        git push
    ```
 
-1. [Pipeline ausführen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline) , um die benutzerdefinierte Funktion bereitzustellen.
+1. Stellen Sie den aktualisierten Code bereit:
+
+   1. Trigger einer Bereitstellung Ihres Codes über die vorhandene Vollstapelpipeline. Dadurch wird der aktualisierte Code automatisch erstellt und bereitgestellt.
+
+Wenn Sie noch keine Pipeline eingerichtet haben, lesen Sie das Handbuch zur [Einrichtung einer Pipeline für AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline).
 
 Sobald die Pipeline erfolgreich ausgeführt wurde, wird die in der Client-Bibliothek hinzugefügte benutzerdefinierte Funktion in Ihrer [Regeleditor für adaptive Formulare](/help/forms/rule-editor-core-components.md).
 
@@ -443,7 +537,7 @@ Erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Form
 
 ![Kontaktformular](/help/forms/assets/contact-us-form.png)
 
-#### Anzeigen eines Bedienfelds mit der Regel &quot;SetProperty&quot;
++++ **Anwendungsfall**: Zeigen Sie ein Bedienfeld mit dem `SetProperty` Regel
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) Abschnitt, um das Formularfeld als `Required`.
 
@@ -485,8 +579,9 @@ Wenn Fehler in den Feldern der Variablen `personaldetails` angezeigt werden, wer
 
 ![Festlegen der Eigenschaftenformularvorschau](/help/forms/assets/set-property-panel.png)
 
++++
 
-#### Validieren Sie ein Feld.
++++ **Anwendungsfall**: Validieren Sie das Feld.
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) , um das Feld zu validieren.
 
@@ -525,9 +620,9 @@ Wenn der Benutzer eine gültige Telefonnummer und alle Felder in der `personalde
 
 ![Überprüfungsmuster für E-Mail-Adressen](/help/forms/assets/validate-form-preview-form.png)
 
++++
 
-
-#### Zurücksetzen eines Bedienfelds
++++ **Anwendungsfall**: Zurücksetzen eines Bedienfelds
 
 Fügen Sie den folgenden Code in die benutzerdefinierte Funktion ein, wie im Abschnitt [create-custom-function](#create-custom-function) -Abschnitt, um das Bedienfeld zurückzusetzen.
 
@@ -559,9 +654,9 @@ Die folgende Abbildung zeigt, dass der Benutzer durch Klicken auf die `clear` -S
 
 ![Formular zurücksetzen](/help/forms/assets/custom-function-reset-form.png)
 
++++
 
-
-#### So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
++++ **Anwendungsfall**: So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
 
 Sie können die `markFieldAsInvalid()` -Funktion, um ein Feld als ungültig zu definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festzulegen. Die `fieldIdentifier` Wert kann `fieldId`oder `field qualifiedName`oder `field dataRef`. Der Wert des Objekts mit dem Namen `option` kann `{useId: true}`, `{useQualifiedName: true}`oder `{useDataRef: true}`.
 Die Syntax, mit der ein Feld als ungültig markiert und eine benutzerdefinierte Nachricht festgelegt wird, lautet:
@@ -602,9 +697,9 @@ Wenn der Benutzer mehr als 15 Zeichen in das Textfeld &quot;Kommentare&quot;eing
 
 ![Feld als gültiges Vorschauformular markieren](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-
-#### Erfasste Daten vor dem Senden ändern
++++ **Anwendungsfall**: Sendet geänderte Daten an den Server
 
 Die folgende Codezeile:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
@@ -647,9 +742,9 @@ Sie können auch das Konsolenfenster überprüfen, um die an den Server gesendet
 
 ![Inspect-Daten im Konsolenfenster](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
 
-
-#### Überschreiben von Erfolgs- und Fehlermeldungen bei der Übermittlung für Ihr adaptives Formular
++++ **Anwendungsfall**: Überschreiben des Erfolgs der Formularübermittlung und der Fehler-Handler
 
 Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) , um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Formularübermittlungsmeldungen in einem modalen Feld anzuzeigen:
 
@@ -758,19 +853,19 @@ Um den Erfolg und das Fehlschlagen der Formularübermittlung standardmäßig anz
 
 Falls der benutzerdefinierte Übermittlungs-Handler nicht wie erwartet in vorhandenen AEM Projekten oder Formularen ausgeführt werden kann, lesen Sie den Abschnitt [Fehlerbehebung](#troubleshooting) Abschnitt.
 
-<!--
++++
 
++++ **Anwendungsfall**: Führen Sie Aktionen in einer bestimmten Instanz des wiederholbaren Bedienfelds aus.
 
-#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+Regeln, die mit dem visuellen Regeleditor in einem wiederholbaren Bereich erstellt wurden, gelten für die letzte Instanz des wiederholbaren Bereichs. Um eine Regel für eine bestimmte Instanz des wiederholbaren Bereichs zu schreiben, können wir eine benutzerdefinierte Funktion verwenden.
 
-Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+Erstellen wir ein anderes Formular, um Informationen über Reisende zu sammeln, die zu einem Ziel fahren. Ein Reisende-Bedienfeld wird als wiederholbares Bedienfeld hinzugefügt, in dem der Benutzer Details für fünf Reisende mit der `Add Traveler` Schaltfläche.
 
-Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+![Informationen für Reisende](/help/forms/assets/traveler-info-form.png)
 
-Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) -Abschnitt, um Aktionen in einer bestimmten Instanz des wiederholbaren Bedienfelds auszuführen, die nicht der letzte ist:
 
 ```javascript
-
 /**
 * @name hidePanelInRepeatablePanel
 * @param {scope} globals
@@ -781,126 +876,126 @@ function hidePanelInRepeatablePanel(globals)
     // hides a panel inside second instance of repeatable panel
     globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
 }  
-
-```
- 
-In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
-Let us add a button labeled `Hide` to add a rule to hide a specific panel.
-
-![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
-
-
-
-
-#### **Usecase**: Pre-fill the field with a value when the form loads
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
-
-```javascript
-/**
- * @name importData
- * @param {scope} globals
- */
-function importData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount',200000]]));
-} 
 ```
 
-In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+In diesem Beispiel wird die `hidePanelInRepeatablePanel` Die benutzerdefinierte Funktion führt eine Aktion in einer bestimmten Instanz des wiederholbaren Bereichs durch. Im obigen Code: `travelerinfo` stellt den wiederholbaren Bereich dar. Die `repeatablePanel[1].traveler, {visible: false}` -Code blendet das Bedienfeld in der zweiten Instanz des wiederholbaren Bedienfelds aus.
 
-Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+Fügen wir eine Schaltfläche mit der Bezeichnung `Hide` und fügen Sie eine Regel hinzu, um die zweite Instanz eines wiederholbaren Bereichs auszublenden.
 
-![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+![Bereichsregel ausblenden](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+Im folgenden Video erfahren Sie, dass die Variable `Hide` auf geklickt wird, wird der Bereich in der zweiten wiederholbaren Instanz ausgeblendet:
 
-![Import Data Rule](/help/forms/assets/cg)
-
-
-
-#### **Usecase**: Set focus on the specific field
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
-
-```javascript
-/**
- * @name setFocus
- * @param {object} field
- * @param {scope} globals
- */
-function setFocus(field, globals)
-{
-    globals.functions.setFocus(field);
-}
-```
-
-Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
-
-Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
++++ **Usecase**: Füllen Sie das Feld beim Laden des Formulars mit einem Wert aus.
 
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) , um den vorausgefüllten Wert bei der Initialisierung des Formulars in ein Feld zu laden:
 
 ```javascript
 /**
- 
- * @name addInstance
+ * Tests import data
+ * @name testImportData
  * @param {scope} globals
  */
-function addInstance(globals)
+function testImportData(globals)
 {
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+    globals.functions.importData(Object.fromEntries([['amount','10000']]));
 } 
-
 ```
 
-Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+Im oben genannten Code wird die `testImportData` -Funktion die `Booking Amount` Textfeld, wenn das Formular geladen wird. Nehmen wir an, dass das Buchungsformular den Mindestbuchungsbetrag erfordert `10,000`.
 
-![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+Erstellen wir eine Regel bei der Formularinitialisierung, wobei der Wert im `Booking Amount` im Textfeld ein angegebener Wert eingefügt wird, wenn das Formular geladen wird:
 
-Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+![Datenregel importieren](/help/forms/assets/custom-function-import-data.png)
 
-![Add Panel](/help/forms/assets/customg)
+Im folgenden Screenshot sehen Sie, wie der Wert im `Booking Amount` Textfeld wird mit einem angegebenen Wert vorausgefüllt:
 
-Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+![Datenregelformular importieren](/help/forms/assets/custom-function-prefill-form.png)
+
++++
+
++++ **Usecase**: Fokus auf das spezifische Feld legen
+
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) , um den Fokus auf das angegebene Feld zu legen, wenn die `Submit` auf klicken.:
 
 ```javascript
-
 /**
- 
- * @name removeInstance
+ * @name testSetFocus
+ * @param {object} emailField
  * @param {scope} globals
  */
-function removeInstance(globals)
+    function testSetFocus(field, globals)
+    {
+        globals.functions.setFocus(field);
+    }
+```
+
+Fügen wir eine Regel zum `Submit` Schaltfläche zum Festlegen des Fokus auf `Email ID` Textfeld beim Klicken:
+
+![Festlegen der Fokusregel](/help/forms/assets/custom-function-set-focus.png)
+
+Siehe Screenshot unten, der zeigt, dass die Variable `Submit` auf klicken, wird der Fokus auf die `Email ID` -Feld:
+
+![Festlegen der Fokusregel](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> Sie können die optionale `$focusOption` , wenn Sie sich auf das nächste oder vorherige Feld relativ zum `email` -Feld.
+
++++
+
++++ **Usecase**: Fügen Sie wiederholbare Bedienfelder mithilfe der `dispatchEvent` property
+
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) -Abschnitt, um ein Bedienfeld hinzuzufügen, wenn die `Add Traveler` auf die Schaltfläche mit dem `dispatchEvent` Eigenschaft:
+
+```javascript
+/**
+ * Tests add instance with dispatchEvent
+ * @name testAddInstance
+ * @param {scope} globals
+ */
+function testAddInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
+}
+```
+
+Fügen wir eine Regel zum `Add Traveler` -Schaltfläche, um den wiederholbaren Bereich hinzuzufügen, wenn darauf geklickt wird:
+
+![Bereichsregel hinzufügen](/help/forms/assets/custom-function-add-panel.png)
+
+Siehe unten stehendes GIF, das zeigt, dass bei der `Add Traveler` auf klicken, wird das Bedienfeld mit dem `dispatchEvent` Eigenschaft:
+
+![Bedienfeld hinzufügen](/help/forms/assets/custom-function-add-panel.gif)
+
+Fügen Sie auf ähnliche Weise die folgende Codezeile hinzu, wie in der [create-custom-function](#create-custom-function) -Abschnitt, um ein Bedienfeld zu löschen, wenn die `Delete Traveler` auf die Schaltfläche mit dem `dispatchEvent` Eigenschaft:
+
+```javascript
+/**
+ 
+ * @name testRemoveInstance
+ * @param {scope} globals
+ */
+function testRemoveInstance(globals)
 {
     var repeatablePanel = globals.form.traveler;
     globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
 } 
-
 ```
-Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
 
-![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+Fügen wir eine Regel zum `Delete Traveler` Schaltfläche zum Löschen des wiederholbaren Bereichs beim Klicken:
 
-Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+![Bereichsregel löschen](/help/forms/assets/custom-function-delete-panel.png)
 
-![Delete Panel](/help/forms/assets/customg)
--->
+Siehe unten stehendes GIF, das zeigt, dass bei der `Delete Traveler` auf die Schaltfläche geklickt wird, wird das Reisende-Bedienfeld mithilfe der `dispatchEvent` Eigenschaft:
+
+![Bedienfeld löschen](/help/forms/assets/custom-function-delete-panel.gif)
+
 
 ## Caching-Unterstützung für benutzerdefinierte Funktionen
 
