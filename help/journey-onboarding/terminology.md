@@ -2,16 +2,18 @@
 title: Terminologie von AEM as a Cloud Service
 description: Bevor Sie sich bei AEMaaCS anmelden, sollten Sie einige Begriffe des Systems und seine grundlegende Struktur kennen.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Terminologie von AEM as a Cloud Service {#terminology}
 
-In diesem Teil des [Onboarding-Journey,](overview.md) Sie lernen die Terminologie AEM as a Cloud Service und seiner Grundstruktur kennen.
+In diesem Teil der [Onboarding-Tour](overview.md) lernen Sie die Terminologie von AEM as a Cloud Service und seine Grundstruktur kennen.
 
 ## Ziel {#objective}
 
@@ -19,7 +21,7 @@ Nachdem Sie nun durch das Lesen des Dokuments [Vorbereitung auf das Onboarding](
 
 AEM as a Cloud Service ist ein leistungsstarkes, flexibles Tool. Und wie bei jedem Tool, das Sie verwenden, sollten Sie auch hier den Aufbau und die zur Beschreibung genutzte Terminologie kennen. In diesem Dokument werden die wichtigste Begriffe erläutert, die Sie verstehen sollten, bevor Sie mit der Verwendung des Systems beginnen.
 
-Nach dem Lesen dieses Dokuments sollten Sie
+Nach dem Lesen dieses Dokuments wissen Sie Folgendes
 
 * Die verschiedenen Ebenen, aus denen AEMaaCS besteht.
 * Die Grundlagen der einzelnen Ebenen.
@@ -44,7 +46,7 @@ Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
    * Ein Assets-Programm für den WKND-Medienbereich
 * Die Programme WKND-Magazin und WKND-Medien verfügen beide über Entwicklungs-, Staging- und Produktions-**Umgebungen**.
 * **Repositorys** dienen der Speicherung des benutzerdefinierten Codes und der Programme für WKND-Magazin und WKND-Medien.
-* Verschiedene **Tools und Workflows** In allen Repositorys können Sie Code mithilfe von CI/CD-Pipelines bereitstellen, auf Protokolle zugreifen, auf AEM zugreifen usw.
+* Verschiedene **Tools und Workflows** arbeiten über die Repositorys hinweg, um Code über CI/CD-Pipelines bereitzustellen, auf Protokolle zuzugreifen, auf AEM zuzugreifen und so weiter.
 
 ## Wie geht es weiter {#what-is-next}
 
@@ -53,4 +55,4 @@ Nachdem Sie nun diesen Teil der AEM-Onboarding-Tour abgeschlossen haben, wissen 
 * Die verschiedenen Ebenen, aus denen AEMaaCS besteht.
 * Die Grundlagen der einzelnen Ebenen.
 
-Auf diesem Wissen aufbauen und Ihre AEM Onboarding-Journey fortsetzen, bevor Sie das Dokument zum nächsten Mal lesen [Zugriff auf die Admin Console](admin-console.md), wo Sie erfahren, wie Sie auf die Konsole zugreifen und Ihren Status als Systemadministrator überprüfen.
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM-Onboarding-Tour fort, indem Sie als Nächstes das Dokument [Zugriff auf die Admin Console](admin-console.md) lesen. Dort erfahren Sie, wie Sie auf die Konsole zugreifen und Ihren Status als System-Admin überprüfen können.

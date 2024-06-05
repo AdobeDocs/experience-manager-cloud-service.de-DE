@@ -1,13 +1,16 @@
 ---
 title: Verwalten von Seiten
 description: Erfahren Sie, wie Sie die Seiten Ihrer Website in AEM verwalten, einschließlich dem Verschieben, Kopieren und Löschen.
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
-workflow-type: ht
+exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 100%
 
 ---
-
 
 # Verwalten von Seiten {#managing-pages}
 
@@ -168,7 +171,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 ### Asynchrone Aktionen {#asynchronous-actions}
 
-Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass die Benutzenden die Bearbeitung in der Benutzeroberfläche ungehindert fortsetzen können.
+Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass Sie ungehindert mit der Erstellung in der Benutzeroberfläche fortfahren können.
 
 Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Aufträge](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Werkzeuge** > **Vorgänge** > **Aufträge** überprüft werden.
 
@@ -201,7 +204,7 @@ Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Auftr
 
 ### Sperren einer Seite {#locking-a-page}
 
-Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-cloud/authoring/page-editor/edit-content.md#locking-a-page). Informationen darüber, ob eine Seite gesperrt ist, werden ebenfalls an beiden Stellen angezeigt.
+Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite [eine Seite sperren/entsperren](/help/sites-cloud/authoring/page-editor/edit-content.md#locking-a-page). Informationen darüber, ob eine Seite gesperrt ist, werden ebenfalls an beiden Stellen angezeigt.
 
 ![Schaltfläche „Sperren“](/help/sites-cloud/authoring/assets/lock.png) ![Schaltfläche „Entsperren“](/help/sites-cloud/authoring/assets/unlock.png)
 

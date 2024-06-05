@@ -2,8 +2,10 @@
 title: Erste Schritte auf der Migrationstour zu Adobe Experience Manager as a Cloud Service
 description: Beginnen Sie Ihre Migrationstour, indem Sie sich mit den Grundlagen des Umstiegs auf Adobe Experience Manager as a Cloud Service vertraut machen.
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: a4e02b64fba591ff6bd4f24e37e01dbbaa7f91cf
-workflow-type: ht
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 100%
 

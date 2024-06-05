@@ -1,13 +1,15 @@
 ---
 title: Anwendungsfälle und Lernpfade für universelle Editoren
 description: Erfahren Sie mehr über die wichtigsten Anwendungsfälle des universellen Editors und wie Sie am besten über seine Verwendung und die Implementierung in Ihren eigenen Projekten erfahren.
-source-git-commit: 45418e5fd431980b48eda83811d5544154027d84
+exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 3%
 
 ---
-
 
 # Anwendungsfälle und Lernpfade für universelle Editoren {#use-cases-learning-paths}
 

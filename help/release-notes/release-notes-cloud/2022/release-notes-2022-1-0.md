@@ -2,10 +2,12 @@
 title: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -67,7 +69,7 @@ Sehen Sie sich das Video [Versionsübersicht Januar 2022](https://video.tv.adobe
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Dienst können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
 
    * Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
    * Generieren von Formularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Printstreams.
@@ -104,7 +106,7 @@ Die Version 2022.01.0 von Cloud Manager in AEM as a Cloud Service wurde am 20. 
 ### Neue Funktionen {#what-is-new-cm}
 
 * Cloud Manager [vermeidet die Neuerstellung der Code-Basis, wenn festgestellt wird, dass derselbe Git-Commit in mehreren Full-Stack-Pipeline-Ausführungen verwendet wird](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
-* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Bereitstellungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine Schaltfläche mit deaktiviertem Profil angezeigt.
+* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Bereitstellungs-Manager** erforderlich. Benutzenden ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
 * Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
 * Beim Generieren eines Git-Kennworts wird das Ablaufdatum angezeigt.
 
@@ -123,7 +125,7 @@ Das Content Transfer Tool 1.8.6 wurde am 03. Februar 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Inhaltsvalidierung - Benutzer können zuverlässig ermitteln, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Um diese Funktion zu verwenden, aktivieren Sie sie im `System Console` der Quell-AEM. Weitere Informationen finden Sie unter [Validieren von Inhaltsübertragungen – Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started).
+* Inhaltsvalidierung: Benutzende können zuverlässig feststellen, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Um diese Funktion verwenden zu können, aktivieren Sie sie in der `System Console` der AEM-Quellumgebung. Weitere Informationen finden Sie unter [Validieren von Inhaltsübertragungen – Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=de#getting-started).
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 

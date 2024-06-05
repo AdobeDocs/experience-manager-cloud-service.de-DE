@@ -2,9 +2,12 @@
 title: Grundlegendes zur Segmentierung
 description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
-source-wordcount: '538'
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '536'
 ht-degree: 100%
 
 ---

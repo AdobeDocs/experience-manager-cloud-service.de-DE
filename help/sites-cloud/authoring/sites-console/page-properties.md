@@ -2,10 +2,13 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2268'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +55,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn dies leer gelassen wird, wird der **Titel** verwendet.
    * **Navigationstitel**: Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen). Wenn dies leer gelassen wird, wird der **Titel** verwendet.
-   * **Beschriftung** - Ein Untertitel zur Verwendung auf der Seite.
+   * **Untertitel**: Ein Untertitel zur Verwendung auf der Seite.
    * **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
 
 * **Einschaltzeit/Ausschaltzeit**

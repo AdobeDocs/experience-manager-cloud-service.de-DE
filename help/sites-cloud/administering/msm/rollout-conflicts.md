@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi Site Manager verwa
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 63%
+source-wordcount: '919'
+ht-degree: 65%
 
 ---
 
@@ -27,7 +28,7 @@ Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Defin
 
 Das Standardverhalten von Adobe Experience Manager (AEM) ist, dass veröffentlichte Inhalte nicht betroffen sind. Wenn also eine Seite veröffentlicht wurde, die manuell in der Live Copy-Verzweigung erstellt wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout weiterhin veröffentlicht.
 
-Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch Veröffentlichungsaktionen als einzelnen Prozess zulassen.
+Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch die Veröffentlichung von Aktionen als individuellen Prozess ermöglichen.
 
 ### Beispiel-Szenario {#example-scenario}
 
@@ -54,7 +55,7 @@ In den folgenden Abschnitten ein Beispiel für eine neue Seite `b` wird verwende
 
 ## Rollout-Manager und Konfliktbehandlung {#rollout-manager-and-conflict-handling}
 
-Mit dem Rollout-Manager können Sie das Konfliktmanagement aktivieren oder deaktivieren.
+Mit dem Rollout-Manager können Sie das Konflikt-Management aktivieren oder deaktivieren.
 
 Dies erfolgt mithilfe der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) von **Day CQ WCM Rollout Manager**. Legen Sie den Wert **Konflikt mit manuell erstellten Seiten beheben** (`rolloutmgr.conflicthandling.enabled`) auf „true“ fest, wenn der Rollout-Manager Konflikte von einer Seite bewältigen soll, die in der Live Copy mit einem in der Blueprint vorhandenen Namen erstellt wurde.
 
@@ -66,7 +67,7 @@ AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von
 
 AEM bietet:
 
-* Der [standardmäßige Konflikt-Handler ist](#default-conflict-handler):
+* Den [standardmäßigen Konflikt-Handler](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * Die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren
 * Der Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können
@@ -76,8 +77,8 @@ AEM bietet:
 
 Der standardmäßige Konflikt-Handler ist `ResourceNameRolloutConflictHandler`.
 
-* Bei diesem Handler hat die Blueprint-Seite Vorrang.
-* Der Service-Rang für diesen Handler ist niedrig eingestellt. Das heißt, unter dem Standardwert für `service.ranking` -Eigenschaft, da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Mit diesem Handler hat die Blueprint-Seite Vorrang.
+* Der Service-Rang für diesen Handler ist niedrig eingestellt. Das heißt, unter dem Standardwert für `service.ranking` -Eigenschaft, da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
 Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Beispielsweise die Seite &quot;Live Copy&quot; `/b` wird innerhalb der Live Copy-Verzweigung nach `/b_msm_moved`.
 

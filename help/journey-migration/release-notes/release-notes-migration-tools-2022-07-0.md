@@ -3,10 +3,11 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.7.0
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 93%
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +24,7 @@ Best Practices Analyzer v2.1.30 wurde am 27. Juli 2022 veröffentlicht.
 ### Neue Funktionen {#what-is-new-bpa}
 
 * BPA kann jetzt die migrierbare Gesamtgröße des Lucene-Index ermitteln und in Berichten angeben. Diese entspricht der Gesamtgröße des Lucene-Index ohne `/oak:index/lucene` und `/oak:index/damAssetLucene`.
-* In BPA wurde ein neues Muster hinzugefügt, um die Verwendung benutzerdefinierter i18n-Wörterbücher zu erkennen und in Berichten zu erfassen. Translator.html ist nicht in AEM as a Cloud Service und benutzerdefinierten i18n-Wörterbuch verfügbar, das über die CI/CD-Pipeline von Cloud Manager aus bereitgestellt werden muss.
+* In BPA wurde ein neues Muster hinzugefügt, um die Verwendung benutzerdefinierter i18n-Wörterbücher zu erkennen und in Berichten zu erfassen. Translator.html ist nicht in AEM as a Cloud Service verfügbar und das benutzerdefinierte i18n-Wörterbuch muss aus Git über die Cloud Manager CI/CD-Pipeline bereitgestellt werden.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 

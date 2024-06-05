@@ -1,17 +1,20 @@
 ---
-title: Konfigurieren der Übersetzungsintegration für Headless Content
-description: Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
+title: Konfigurieren der Übersetzungsintegration für Headless-Inhalte
+description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1216'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren der Übersetzungsintegration {#configure-integration}
 
-Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
+Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -25,7 +28,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie den ersten Konfiguratio
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie eine AEM Integration mit Ihrem ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie eine AEM-Integration für Ihren ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
@@ -70,22 +73,22 @@ Nachdem das Connector-Paket für Ihren bevorzugten Übersetzungsdienst installie
 
 So erstellen Sie eine Übersetzungskonfiguration:
 
-1. Wählen Sie im globalen Navigationsmenü die Option **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
-1. Navigieren Sie zu der Stelle, an der Sie die Konfiguration in Ihrer Inhaltsstruktur erstellen möchten. Diese bezieht sich oft auf ein bestimmted Projekt oder kann global sein.
+1. Wählen Sie im globalen Navigationsmenü **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
+1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf ein bestimmted Projekt oder kann global sein.
    * In diesem Fall kann beispielsweise eine Konfiguration global vorgenommen werden, um sie auf alle Inhalte oder nur auf das WKND-Projekt anzuwenden.
 
    ![Speicherort der Übersetzungskonfiguration](assets/translation-configuration-location.png)
 
-1. Geben Sie die folgenden Informationen in die Felder ein und wählen Sie dann **Erstellen**.
+1. Geben Sie die folgenden Informationen in die Felder ein und wählen Sie dann **Erstellen** aus.
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus. Wählen Sie **Übersetzungsintegration** aus der Liste aus.
    1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Durch den **Titel** wird die Konfiguration in der **Cloud Services**-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
    1. Geben Sie optional einen **Namen** für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
 
    ![Erstellen einer Übersetzungskonfiguration](assets/create-translation-configuration.png)
 
-1. Auswählen **Erstellen** und **Konfiguration bearbeiten** angezeigt, in dem Sie die Konfigurationseigenschaften konfigurieren können.
+1. Wählen Sie **Erstellen** aus. Daraufhin wird das Fenster **Konfiguration bearbeiten** angezeigt, in dem Sie die Konfigurationseigenschaften konfigurieren können.
 
-1. Denken Sie daran, dass Inhaltsfragmente in AEM als Assets gespeichert werden. Wählen Sie die **Assets** Registerkarte.
+1. Denken Sie daran, dass Inhaltsfragmente in AEM als Assets gespeichert werden. Wählen Sie die Registerkarte **Assets** aus.
 
 ![Eigenschaften der Übersetzungskonfiguration](assets/translation-configuration.png)
 
@@ -102,7 +105,7 @@ So erstellen Sie eine Übersetzungskonfiguration:
    1. **Deaktivieren der Nur-Update-Übersetzung** – Wenn diese Option aktiviert ist, werden bei einer Aktualisierung des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die, die seit der letzten Übersetzung geändert wurden. Das Aktualisieren Ihres Übersetzungsprojekts wird später in der Tour erläutert.
    1. **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** – Aktivieren Sie diese Option, damit die Übersetzungskonfiguration Felder in den Inhaltsmodellen anhand der Markierung **Übersetzbar** erkennt.
 
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie **Speichern und schließen**.
 
 Sie haben jetzt den Connector für Ihren Übersetzungsdienst konfiguriert.
 
@@ -116,12 +119,12 @@ Gehen Sie dazu zum Sprachstamm Ihrer Inhalte. Für unsere Beispielzwecke ist die
 /content/dam/<your-project>/en
 ```
 
-1. Navigieren Sie zur globalen Navigation und navigieren Sie zu **Navigation** > **Assets** > **Dateien**.
-1. Wählen Sie in der Assets-Konsole den zu konfigurierenden Sprachstamm aus und wählen Sie **Eigenschaften**.
+1. Gehen Sie zur globalen Navigation und dann zu **Navigation** > **Assets** > **Dateien**.
+1. Wählen Sie in der Assets-Konsole den zu konfigurierenden Sprachstamm und anschließend **Eigenschaften** aus.
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
-1. under **Cloud Service-Konfigurationen** im **Konfiguration hinzufügen** Wählen Sie aus der Dropdown-Liste Ihren Connector aus. Sie sollte in der Dropdown-Liste angezeigt werden, wenn Sie das Paket als [weiter oben beschrieben.](#connect-translation-provider)
-1. under **Cloud Service-Konfigurationen** im **Konfiguration hinzufügen** -Dropdownliste, wählen Sie auch Ihre Konfiguration aus.
-1. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie unter **Cloud Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** Ihren Connector aus. Er sollte in der Dropdown-Liste erscheinen, wenn Sie das Paket [wie oben beschrieben](#connect-translation-provider) installiert haben.
+1. Wählen Sie unter **Cloud Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** auch Ihre Konfiguration aus.
+1. Wählen Sie **Speichern und schließen**.
 
 ![Wählen Sie Cloud-Service-Konfigurationen aus.](assets/select-cloud-service-configurations.png)
 
@@ -132,7 +135,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Inhalt übersetzen,](translation-rules.md) wo Sie erfahren, wie Sie Ihre Konfiguration bisher verwenden können, um Ihren Inhalt zu übersetzen.
+Bauen Sie auf diesem Wissen auf und setzen Sie die AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Inhalte übersetzen](translation-rules.md) lesen, in dem Sie erfahren, wie Sie Ihre bisherige Konfiguration verwenden können, um Ihre Inhalte tatsächlich zu übersetzen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

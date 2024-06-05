@@ -4,10 +4,12 @@ description: Erfahren Sie mehr über die erforderlichen besonderen Überlegungen
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: 29ffb48d23b4a2fe4973b005c98c5720b4196367
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +25,11 @@ Derzeit benötigen geschlossene Benutzergruppen (CUG) einige zusätzliche Schrit
 
 ## Migration von Gruppen
 
-Prinzipale (einschließlich Gruppen) werden automatisch in eine Migration nach Adobe Experience Manager as a Cloud Service eingeschlossen, wenn sie über die ACL dieses Inhalts mit den migrierten Inhalten verknüpft sind, und sie werden auch einbezogen, wenn sie in einer CUG-Richtlinie für diesen Inhalt referenziert werden.
+Prinzipale (einschließlich Gruppen) werden automatisch in eine Migration zu Adobe Experience Manager as a Cloud Service einbezogen, wenn sie über die ACL des migrierten Inhalts mit diesem verknüpft sind, und sie werden auch einbezogen, wenn sie in einer CUG-Richtlinie für diesen Inhalt referenziert werden.
 
 ## Geschlossene Benutzergruppen in der Migration
 
-Vor der Live-Schaltung sollte überprüft werden, ob die Gruppe und ihre Mitglieder vorhanden sind. Der Hauptbericht, der über die Ansicht &quot;Ingestions Job&quot;heruntergeladen wurde, kann verwendet werden, um zu sehen, ob die betreffende Gruppe enthalten war oder nicht, weil sie nicht in einer ACL oder einer CUG-Richtlinie enthalten war.
+Vor der Live-Schaltung sollte überprüft werden, ob die Gruppe und ihre Mitglieder vorhanden sind. Der Prinzipalbericht, der über die Ansicht „Aufnahmevorgänge“ geladen wurde, kann verwendet werden, um zu sehen, ob die betreffende Gruppe enthalten war oder nicht, weil sie nicht in einer ACL- oder CUG-Richtlinie enthalten war.
 
 Als Nächstes müssen Prozesse ausgelöst und Eigenschaften festgelegt werden, um CUGs zu aktivieren. Veröffentlichen Sie dazu alle Seiten erneut, die mit einer CUG-Richtlinie verknüpft sind. Dadurch wird die Veröffentlichungsinstanz so kalibriert, dass die Richtlinien nachverfolgt werden.
 

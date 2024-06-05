@@ -1,14 +1,17 @@
 ---
 title: Anpassen und Erweitern der Inhaltsfragment-Konsole und des Editors
 description: Erfahren Sie, wie Sie sowohl die Inhaltsfragment-Konsole als auch den Editor anpassen
-source-git-commit: 7eeb4fc7f6d5c74a0d3352f1b16f98617945cd88
+exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 26%
+source-wordcount: '87'
+ht-degree: 31%
 
 ---
 
-# Anpassen der Inhaltsfragment-Konsole und des Editors {#customizing-content-fragment-console-and-editor}
+# Anpassen von Inhaltsfragmentkonsole und Editor {#customizing-content-fragment-console-and-editor}
 
 Sowohl die Inhaltsfragmentkonsole als auch der Editor sind erweiterbar und können mit dem Adobe App Builder für Ihre Anforderungen angepasst werden.
 

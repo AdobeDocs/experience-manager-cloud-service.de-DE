@@ -2,8 +2,11 @@
 title: Erstellen von Sandbox-Programmen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 100%
 

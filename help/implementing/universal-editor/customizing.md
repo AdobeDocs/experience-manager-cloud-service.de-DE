@@ -2,10 +2,12 @@
 title: Anpassen und Erweitern des universellen Editors
 description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und anderen Funktionen, mit denen Sie die Benutzeroberfläche des universellen Editors anpassen können, um die Anforderungen Ihrer Inhaltsautorinnen und Inhaltsautoren zu unterstützen.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: bdd67fb383bf20399eacaf9b9c086ea8468ea742
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -18,14 +20,14 @@ Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und anderen Funktio
 
 Der universelle Editor ermöglicht zwei Arten der Anpassung an die Anforderungen Ihres Projekts.
 
-* [Anpassen des universellen Editors](#customizing) - Die Standardfunktionalität des universellen Editors kann über verschiedene Anpassungskonfigurationen angepasst werden.
-* [Erweitern der Benutzeroberfläche des universellen Editors](#extending) - Die Benutzeroberfläche des universellen Editors kann auch mit dem App Builder erweitert werden, um die Anforderungen Ihrer Projekte zu erfüllen.
+* [Anpassen des universellen Editors](#customizing) – Die Standardfunktionen des universellen Editors können über verschiedene Anpassungskonfigurationen angepasst werden.
+* [Erweitern der Benutzeroberfläche des universellen Editors](#extending) – Die Benutzeroberfläche des universellen Editors kann auch mit App Builder erweitert werden, damit sie die Anforderungen Ihrer Projekte erfüllt.
 
-Beide Typen werden in den folgenden Abschnitten beschrieben.
+Beide Arten werden in den folgenden Abschnitten beschrieben.
 
 ## Anpassen des universellen Editors {#customizing}
 
-Der universelle Editor bietet mehrere integrierte Optionen, um seine Funktionen anzupassen.
+Der universelle Editor bietet mehrere integrierte Optionen zur Anpassung seiner Funktionen.
 
 ### Deaktivieren der Veröffentlichung {#disable-publish}
 
@@ -104,11 +106,11 @@ Bedingungen können mithilfe des [JsonLogic-Schemas definiert werden.](https://j
  }
 ```
 
->[!TAB Bedingung falsch]
+>[!TAB Bedingung trifft nicht zu]
 
 ![Ausgeblendetes Textfeld](assets/hidden.png)
 
->[!TAB Bedingung wahr]
+>[!TAB Bedingung trifft zu]
 
 ![Eingeblendetes Textfeld](assets/shown.png)
 
@@ -116,18 +118,18 @@ Bedingungen können mithilfe des [JsonLogic-Schemas definiert werden.](https://j
 
 ## Erweitern der Benutzeroberfläche des universellen Editors {#extending}
 
-Als Adobe Experience Cloud-Dienst kann die Benutzeroberfläche des universellen Editors mit dem App Builder und dem Experience Manager erweitert werden.
+Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mit App Builder und Experience Manager erweitert werden.
 
-UI-Erweiterungen sind JavaScript-Anwendungen, die mit Adobe App Builder erstellt wurden und in Benutzeroberflächenanwendungen eingebettet werden können, die unter der einheitlichen Adobe Experience Cloud-Shell ausgeführt werden, z. B. im universellen Editor. Sie können Ihre eigenen Schaltflächen und Aktionen zum Kopfzeilenmenü und zur Eigenschaftenleiste hinzufügen und eigene Ereignisse für den universellen Editor erstellen.
+Benutzeroberflächenerweiterungen sind JavaScript-Anwendungen, die mit Adobe App Builder erstellt wurden und in Benutzeroberflächenanwendungen eingebettet werden können, die unter Unified Shell in Adobe Experience Cloud ausgeführt werden, z. B. im universellen Editor. Sie können Ihre eigenen Schaltflächen und Aktionen zum Kopfzeilenmenü und zur Eigenschaftenleiste hinzufügen und eigene Ereignisse für den universellen Editor erstellen.
 
 Weitere Informationen zu diesen Möglichkeiten finden Sie in den folgenden Ressourcen:
 
-1. [UI-Erweiterung](https://developer.adobe.com/uix/docs/) - Dies ist die Entwicklerdokumentation für die UI-Erweiterung.
-1. [Handbücher für die Benutzeroberflächen-Erweiterbarkeit](https://developer.adobe.com/uix/docs/guides/) - Schrittweise Anweisungen zur Entwicklung Ihrer eigenen Erweiterung
-1. [Erweiterungspunkte für den universellen Editor](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - Dokumentation zu universellen Editor-spezifischen Erweiterungspunkten
+1. [Erweiterbarkeit der Benutzeroberfläche](https://developer.adobe.com/uix/docs/) – Dies ist die Entwicklerdokumentation für die Benutzeroberflächenerweiterung.
+1. [Anleitung für die Erweiterung der Benutzeroberfläche](https://developer.adobe.com/uix/docs/guides/) – Schritt-für-Schritt-Anleitung zur Entwicklung Ihrer eigenen Erweiterung
+1. [Erweiterungspunkte für den universellen Editor](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) – Dokumentation zu den Erweiterungspunkten spezifisch für den universellen Editor
 
 >[!TIP]
 >
->Wenn Sie es vorziehen, anhand von Beispielen zu lernen, lesen Sie bitte den Abschnitt [Tutorial zur AEM Benutzeroberflächenerweiterbarkeit.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Obwohl es sich auf die Erweiterung der Inhaltsfragment-Konsole konzentriert, sind die Konzepte zur Implementierung einer UI-Erweiterung im universellen Editor identisch.
+>Wenn Sie es vorziehen, anhand von Beispielen zu lernen, sehen Sie sich bitte das folgende Tutorial an: [Tutorial zur Erweiterbarkeit der AEM-Benutzeroberfläche.](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Obwohl der Fokus des Tutorials auf der Erweiterung der Inhaltsfragment-Konsole liegt, ist das Konzept zur Implementierung einer Benutzeroberflächenerweiterung im universellen Editor identisch.
 
-[Verwenden von Extension Manager in AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) Sie können Ihre Erweiterungen auf Instanzbasis aktivieren oder deaktivieren, auf Erstanbietererweiterungen zugreifen, einschließlich der Erweiterungen für den universellen Editor und vieles mehr.
+Mit dem [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/) können Sie Ihre Erweiterungen auf Instanzbasis aktivieren oder deaktivieren, auf Erweiterungen von Adobe zugreifen, einschließlich der Erweiterungen für den universellen Editor, und vieles mehr.

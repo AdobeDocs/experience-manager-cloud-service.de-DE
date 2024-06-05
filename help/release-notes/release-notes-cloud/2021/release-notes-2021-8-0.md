@@ -2,10 +2,12 @@
 title: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 57%
+source-wordcount: '1011'
+ht-degree: 58%
 
 ---
 
@@ -78,7 +80,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Neue Kategorieauswahl-Benutzeroberfläche für verbesserte Benutzererfahrung, höhere Effizienz und bessere Unterstützung für komplexen Produktkatalog
+* Neue Benutzeroberfläche zur Kategorieauswahl für ein verbessertes Benutzererlebnis, höhere Effizienz und bessere Unterstützung bei komplexen Produktkatalogen
 
   ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
 

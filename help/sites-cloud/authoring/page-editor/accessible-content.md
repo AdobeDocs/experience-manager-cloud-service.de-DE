@@ -2,8 +2,11 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '13685'
 ht-degree: 100%
 
@@ -94,7 +97,7 @@ Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
 -->
 
-Bestimmte Arten von nichttextlichen Inhalten, für die Textalternativen erforderlich sind:
+Bestimmte Arten von nicht textlichem Inhalt, für den Textalternativen erforderlich sind:
 
 * Veranschaulichende Fotos: Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Es ist wichtig, über die Rolle des Fotos auf der Seite und die empfohlene Beschreibung des Bildinhalts nachzudenken, da die Hilfstechnologie den Elementtyp ankündigt (z. B. `graphic` oder `image`). Die Verwendung von `screenshot` oder `illustration` im Alternativtext kann die Klarheit erhöhen, dies hängt aber vom jeweiligen Kontext ab. Konsistenz ist ein wichtiger Faktor. Eine Entscheidung sollte für ein gesamtes Autoren-Team getroffen werden und für das gesamte Anwendererlebnis gelten.
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dies führt zu einer unnötigen Duplizierung von angrenzendem Text.
@@ -844,7 +847,7 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
 
 Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn zum Beispiel ein Link zu einer bestimmten Seite auf einer Seite **Veröffentlichungen** heißt, verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
 
-Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammenhang mit der Verwendung von Titelattributen, um sicherzustellen, dass ähnliche Links, die auf einer Seite präsentiert werden, eindeutige Informationen über das Ziel liefern (z. B. verweist „Weitere Information“ oft auf eine Reihe verschiedener Ziele):
+Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammenhang mit der Verwendung von Titelattributen, um sicherzustellen, dass ähnliche Links, die auf einer Seite präsentiert werden, eindeutige Informationen über das Ziel liefern (z. B. verweist „Weitere Informationen“ oft auf eine Reihe verschiedener Ziele):
 
 * Im Titelattribut enthaltener Text steht im Allgemeinen nur Personen, die eine Maus benutzen, als QuickInfo-Popup zur Verfügung und kann weder über die Tastatur noch über Mobilgeräte konsistent aufgerufen werden.
 * Bildschirmlesehilfen können Titelattribute vorlesen, diese Funktion ist jedoch möglicherweise nicht standardmäßig aktiviert, sodass Benutzende möglicherweise nicht wissen, dass ein Titelattribut vorhanden ist.

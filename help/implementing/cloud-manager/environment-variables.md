@@ -2,8 +2,11 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 100%
 

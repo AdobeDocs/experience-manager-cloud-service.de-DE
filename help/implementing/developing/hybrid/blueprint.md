@@ -2,10 +2,12 @@
 title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 96%
+source-wordcount: '2022'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +25,7 @@ Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework 
 >
 >Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Ebene aus Modulen, Komponenten und Diensten bereitgestellt werden.
 >
->**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen in diesem Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
+>**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen im vorliegenden Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
 
 >[!CAUTION]
 >
@@ -63,7 +65,7 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
-Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Ein Muster, das dynamische Komponenten verwendet, muss verwendet werden, um Komponenten nach der bereitgestellten Seitenmodellstruktur dynamisch zu instanziieren.
+Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
 ### Meta-Felder {#meta-fields}
 
@@ -146,7 +148,7 @@ Die `Page`-Komponente erweitert die `Container`-Komponente. Ein Container ist ei
 
 ### Responsives Raster {#responsive-grid}
 
-Die Komponente „Responsives Raster“ ist ein Container. Sie enthält eine bestimmte Variante des Modellanbieters, die die zugehörigen Spalten darstellt. Das responsive Raster und seine Spalten sind dafür verantwortlich, das äußere HTML-Element der Projektkomponente mit den spezifischen Klassennamen zu dekorieren, die im Modell enthalten sind.
+Die Komponente „Responsives Raster“ ist ein Container. Sie enthält eine bestimmte Variante des Modellanbieters, die die entsprechenden Spalten darstellt. Das responsive Raster und seine Spalten sind dafür verantwortlich, das äußere HTML-Element der Projektkomponente mit den spezifischen Klassennamen zu dekorieren, die im Modell enthalten sind.
 
 Die Komponente „Responsives Raster“ sollte vorab ihrem AEM-Gegenstück zugeordnet werden, da die Komponente komplex ist und selten angepasst wird.
 
@@ -259,7 +261,7 @@ Das folgende Fragment zeigt die typische HTML-Darstellung einer Seiteninhaltsstr
 
 ## Navigation und Routing {#navigation-and-routing}
 
-Die App ist für das Routing verantwortlich. Der Frontend-Entwickler muss zunächst eine Navigationskomponente implementieren (die einer AEM Navigationskomponente zugeordnet ist). Diese Komponente rendert URL-Links, die zusammen mit einer Reihe von Routen verwendet werden, welche Inhaltsfragmente ein- oder ausblenden.
+Die App ist für das Routing verantwortlich. Frontend-Entwickelnde müssen zunächst eine Navigationskomponente (die einer AEM-Navigationskomponente zugeordnet ist) implementieren. Diese Komponente rendert URL-Links, die zusammen mit einer Reihe von Routen verwendet werden, welche Inhaltsfragmente ein- oder ausblenden.
 
 Die zugrunde liegende [`PageModelManager`](#pagemodelmanager)-Bibliothek und ihr (standardmäßig aktiviertes) [`ModelRouter`](routing.md)-Modul sind für den Vorababruf und das Gewähren von Zugriff auf das mit einem bestimmten Ressourcenpfad verknüpfte Modell verantwortlich.
 

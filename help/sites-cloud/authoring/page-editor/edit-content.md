@@ -1,13 +1,16 @@
 ---
 title: Bearbeiten von Seiteninhalten mit dem AEM-Seiteneditor
 description: Der AEM-Seiteneditor ist ein leistungsstarkes Tool für die Erstellung von Inhalten.
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 100%
 
 ---
-
 
 # Bearbeiten von Seiteninhalten mit dem AEM-Seiteneditor {#edit-content}
 

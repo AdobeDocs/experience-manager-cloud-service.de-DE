@@ -2,10 +2,12 @@
 title: SPA-Editor – Überblick
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +23,11 @@ Sites, die mit gängigen SPA-Frameworks wie React und Angular erstellt wurden, l
 
 Um die Bearbeitung von SPA in AEM zu aktivieren, ist eine Zuordnung zwischen der JSON-Ausgabe der SPA und dem Inhaltsmodell im AEM-Repository erforderlich, um Änderungen am Inhalt zu speichern.
 
-Die SPA-Unterstützung in AEM führt eine dünne JS-Schicht ein, die mit dem SPA-JS-Code interagiert, wenn dieser in den Seiteneditor geladen wird, mit dem Ereignisse gesendet und die Position für die Bearbeitungssteuerelemente aktiviert werden können, um eine kontextbezogene Bearbeitung zu ermöglichen. Diese Funktion baut auf dem Content Services API-Endpoint-Konzept auf, da der Inhalt aus dem SPA über Content Services geladen werden muss.
+Die SPA-Unterstützung in AEM führt eine dünne JS-Schicht ein, die mit dem SPA-JS-Code interagiert, wenn dieser in den Seiteneditor geladen wird, mit dem Ereignisse gesendet und die Position für die Bearbeitungssteuerelemente aktiviert werden können, um eine kontextbezogene Bearbeitung zu ermöglichen. Diese Funktion baut auf dem Konzept des Content Services API-Endpunkts auf, da der Inhalt aus der SPA über Content Services geladen werden muss.
 
-Weitere Informationen zu SPA in AEM finden Sie unter:
+Weitere Informationen zu SPAs in AEM finden Sie hier:
 
-* [SPA-Blueprint](blueprint.md) für die technischen Anforderungen eines SPA.
+* [SPA-Blueprint](blueprint.md) für die technischen Anforderungen einer SPA.
 * [Erste Schritte mit SPAs in AEM mit React](getting-started-react.md) für eine schnelle Übersicht über eine einfache SPA mit React.
 * [Erste Schritte mit SPAs in AEM mit Angular](getting-started-angular.md) für eine schnelle Übersicht über eine einfache SPA mit Angular.
 
@@ -181,9 +183,9 @@ Das AEM SPA Editor SDK wird von Adobe vollständig unterstützt und ständig wei
 * Zielmodus
 * ContextHub
 * Inline-Bildbearbeitung
-* Konfigurationen bearbeiten (z. B. Listener)
+* Konfigurationen bearbeiten (z. B. Listener)
 * Rückgängig/Wiederholen
 * Seitenvergleich und Zeitverzerrung
-* Funktionen zum serverseitigen HTML-Neuschreiben, wie Link Checker, CDN-Rewriter-Dienst, URL-Verkürzung usw.
+* Funktionen, die Server-seitig HTML-Umschreibungen durchführen, wie Link Checker, CDN-Umschreibe-Service, URL-Verkürzung usw.
 * Entwicklermodus
 * AEM-Launches

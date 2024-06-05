@@ -2,8 +2,10 @@
 title: Entwickeln von Sites mit der Frontend-Pipeline
 description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess wird erheblich beschleunigt. In diesem Dokument werden einige besondere Überlegungen zum Frontend-Build-Prozess beschrieben, die berücksichtigt werden sein sollten.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 100%
 

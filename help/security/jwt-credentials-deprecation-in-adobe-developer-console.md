@@ -2,10 +2,12 @@
 title: Einstellung der JWT-Anmeldedaten in Adobe Developer Console
 description: Erhalten Sie weitere Informationen zu den Auswirkungen der Einstellung der JWT-Anmeldedaten in Adobe Developer Console auf AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +21,7 @@ Mit der [Adobe Developer Console](https://developer.adobe.com/console) können K
 
 Dieser Artikel bietet zusätzliche Informationen dazu, wie Kundinnen und Kunden von AEM as a Cloud Service auf diese Einstellung reagieren sollten.
 
-Die wichtigste Neuerung ist, dass AEM jetzt die neuen OAuth-Server-zu-Server-Anmeldedaten für AEM as a Cloud Service unterstützt. Möglicherweise haben Sie eine E-Mail mit Anweisungen zur Migration Ihrer JWT-Anmeldeinformationen erhalten. Diese Migration kann jetzt durchgeführt werden.
+Die wichtigste Neuerung ist, dass AEM jetzt die neuen OAuth-Server-zu-Server-Anmeldedaten für AEM as a Cloud Service unterstützt. Möglicherweise haben Sie eine E-Mail mit Anweisungen zum Migrieren Ihrer JWT-Anmeldedaten erhalten. Diese Migration kann jetzt durchgeführt werden.
 
 In den folgenden Abschnitten werden die Szenarien aufgeführt, in denen Kundinnen und Kunden ihre Dienstkonten(JWT)-Anmeldedaten durch OAuth Server-zu-Server-Anmeldedaten ersetzen müssen (oder in einigen Fällen dies nicht tun sollten), jetzt da AEM sie unterstützt. [Hier finden Sie weitere Informationen dazu](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview), wie Sie die Anmeldedaten migrieren.
 
@@ -42,7 +44,7 @@ Siehe [Einrichten von IMS-Integrationen für AEM as a Cloud Service](/help/secur
 
 ## Cloud Manager-APIs {#cloud-manager-apis}
 
-**Aktion**: Migrieren Sie Ihre JWT-Anmeldeinformationen zu OAuth-Anmeldeinformationen, die jetzt von Cloud Manager unterstützt werden.
+**Aktion**: Migrieren Sie Ihre JWT-Anmeldedaten zu OAuth-Anmeldedaten, die jetzt von Cloud Manager unterstützt werden.
 
 **Relevante AEM-Versionen**: AEM as a Cloud Service
 

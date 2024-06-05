@@ -2,8 +2,11 @@
 title: Java™-Funktionstests
 description: Erfahren Sie, wie Sie Java™-Funktionstests für AEM as a Cloud Service schreiben.
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 100%
 

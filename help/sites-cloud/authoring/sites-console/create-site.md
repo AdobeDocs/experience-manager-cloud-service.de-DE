@@ -1,11 +1,12 @@
 ---
 title: Erstellen einer neuen Site
 description: Erfahren Sie, wie Admins AEM verwenden, um mithilfe von Site-Vorlagen eine Site zu erstellen und den Stil und die Struktur Ihrer Site zu definieren.
-feature: Administering
-role: Admin
+feature: Administering, Authoring
+role: Admin, User
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 100%
 

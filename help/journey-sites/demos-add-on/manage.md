@@ -2,8 +2,10 @@
 title: Verwalten Ihrer Demo-Sites
 description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites helfen, und wie Sie diese entfernen können.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 100%
 

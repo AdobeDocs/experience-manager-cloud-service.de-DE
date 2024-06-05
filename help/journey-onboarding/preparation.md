@@ -2,10 +2,12 @@
 title: Onboarding-Vorbereitung
 description: Bevor der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin verstehen muss, bevor er sich beim System anmeldet.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,14 +19,14 @@ Da Sie nun wissen, was Sie im Onboarding-Prozess erwartet, nachdem Sie den Artik
 
 AEM as a Cloud Service ist ein leistungsstarkes und flexibles Werkzeug, für das zahlreiche Lösungen, Add-ons und Bereitstellungsmodelle verfügbar sind. Die Lösung, die Ihre Organisation nutzen darf, ist in Ihrem Vertrag mit Adobe definiert, der den Beginn des Onboarding-Prozesses regelt.
 
-Nach dem Lesen dieses Dokuments sollten Sie
+Nach dem Lesen dieses Dokuments wissen Sie Folgendes
 
 * Was in Ihrem Vertrag mit Adobe festgelegt ist.
 * Was Adobe vorsieht.
 * Wie sich der Vertrag auf den Onboarding-Prozess auswirkt.
 * Wie Sie sich auf Ihr Onboarding-Gespräch vorbereiten können.
 
-Machen Sie sich keine Gedanken, wenn Sie nicht mit allen auf dieser Seite verwendeten Begriffen vertraut sind. Die Begriffe werden im nächsten Teil der Tour erläutert.
+Machen Sie sich keine Sorgen, wenn Sie nicht mit allen auf dieser Seite verwendeten Begriffen vertraut sind. Die Begriffe werden im nächsten Teil der Tour erläutert.
 
 ## Video    {#video}
 
@@ -34,7 +36,7 @@ In diesem Video wird der in dieser Journey beschriebene Onboarding-Prozess zusam
 
 ## Ihr Vertrag {#contract}
 
-Das Onboarding von AEM as a Cloud Service beginnt mit einem unterzeichneten Vertrag zwischen Ihrer Organisation und Adobe. Der Grund dafür ist, dass der Vertrag mehrere wichtige Vereinbarungen zwischen der Adobe und Ihrer Organisation festlegt, z. B.:
+Das Onboarding von AEM as a Cloud Service beginnt mit einem unterzeichneten Vertrag zwischen Ihrer Organisation und Adobe. Der Grund dafür ist, dass der Vertrag mehrere wichtige Vereinbarungen zwischen Adobe und Ihrer Organisation festlegt, z. B.:
 
 * Welche Lösungen und Add-ons Ihre Organisation verwenden kann
 * Die Anzahl und Arten der Umgebungen, auf die Sie zugreifen können
@@ -73,7 +75,7 @@ Ziel des Gesprächs ist es, Ihnen die Möglichkeit zu geben, Fragen zu stellen, 
 
 Nach Abschluss der Umgebungsbereitstellung erhält der im Vertrag definierte Systemadmin eine Begrüßungs-E-Mail mit der Bestätigung, dass er Zugriff auf Adobe Experience Cloud erhalten hat. Wenn Sie diese Dokumentations-Journey lesen, sind Sie wahrscheinlich diese Person!
 
-Die E-Mail enthält detaillierte Informationen zu den ersten Schritten mit den Experience Cloud-Services und dem Cloud Manager-Self-Service-Portal. Außerdem enthält die E-Mail wichtige Informationen, wie z. B. wo Sie Support-Ressourcen, Foren, FAQs und vieles mehr finden. In der Liste der in der E-Mail bereitgestellten Ressourcen finden Sie außerdem Details zum Zugriff auf Ihre AEM Cloud-Umgebungen.
+Die E-Mail enthält detaillierte Informationen zu den ersten Schritten mit den Experience Cloud-Services und dem Cloud Manager-Self-Service-Portal. Zudem enthält die E-Mail wichtige Informationen, etwa wo Sie Support-Ressourcen, Foren, FAQs und vieles mehr finden. In der Liste der in der E-Mail bereitgestellten Ressourcen finden Sie außerdem Details zum Zugriff auf Ihre AEM Cloud-Umgebungen.
 
 >[!TIP]
 >
@@ -88,4 +90,4 @@ Sie sollten jetzt ein grundlegendes Verständnis haben von:
 * Wie sich der Vertrag auf den Onboarding-Prozess auswirkt.
 * Wie Sie sich auf Ihr Onboarding-Gespräch vorbereiten können.
 
-Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie AEM as a Cloud Service Struktur aus Sicht eines Systemadministrators strukturiert ist, und lernen einige wichtige Begriffe kennen. Fahren Sie mit dem nächsten Teil der Tour fort: [Terminologie von AEM as a Cloud Service](terminology.md).
+Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie die Struktur von AEM as a Cloud Service aus Sicht von Systemadmins aufgebaut ist, und sollten einige wichtige Begriffe kennenlernen. Fahren Sie mit dem nächsten Teil der Tour fort: [Terminologie von AEM as a Cloud Service](terminology.md).

@@ -2,8 +2,11 @@
 title: Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -30,7 +33,7 @@ Der Status Ihrer SSL-Zertifikate ist auf der SSL-Zertifikatsseite auf einen Blic
 
 Wenn ein Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Durch die Aktualisierung Ihrer Zertifikate mit den folgenden Schritten wird sichergestellt, dass Ihre Domain weiterhin wie gewünscht funktioniert.
 
-1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie die entsprechende Organisation aus
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 1. Gehen Sie auf der Seite **Umgebungen** zum Bildschirm **SSL-Zertifikate**.

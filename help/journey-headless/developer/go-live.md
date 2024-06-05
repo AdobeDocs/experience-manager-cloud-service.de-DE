@@ -2,8 +2,11 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live bereitstellen, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 100%
 
@@ -83,7 +86,7 @@ Damit Benutzerinnen und Benutzern bei der Nutzung des AEM Headless-Programms das
       * Überprüfen der Anzahl der Anwender, Anfragen sowie der Auslastung
 * Abrufen programm- und speicherplatzspezifischer Performance-Berichte
    * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
-   * Öffnen der oben genannten Berichte gefiltert nach App oder Bereich (z. B. Desktop-Version von Photoshop, Paywall)
+   * Öffnen der oben genannten Berichte, jedoch gefiltert nach Anwendung oder Speicherplatz. (z. B. Desktop-Version von Photoshop, Paywall).
    * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
    * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
 

@@ -2,7 +2,9 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 100%

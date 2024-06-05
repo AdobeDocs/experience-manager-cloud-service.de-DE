@@ -2,10 +2,12 @@
 title: Verwenden von Sling-Adaptern
 description: Mit Sling wird ein Adaptermuster zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der Adaptable-Schnittstelle verwendet werden
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 99%
+source-wordcount: '1324'
+ht-degree: 100%
 
 ---
 
@@ -42,7 +44,7 @@ Es gibt die folgenden Nutzungsszenarien:
 Es gibt verschiedene Gründe für die Rückgabe von Null, darunter die folgenden:
 
 * die Implementierung unterstützt den Zieltyp nicht
-* eine Adapter-Factory, die diesen Fall verarbeitet, ist nicht aktiv (z. B. aufgrund fehlender Dienstverweise).
+* eine Adapterfabrik, die diesen Fall verarbeitet, ist nicht aktiv (z. B. aufgrund fehlender Dienstverweise).
 * interne Bedingung fehlgeschlagen
 * Service ist nicht verfügbar
 
@@ -105,7 +107,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
-   <td>Eine Erweiterung der <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, mit dem die Eigenschaften dieses Knotens geändert werden können</td>
+   <td>Eine Erweiterung von <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, mit der Sie Eigenschaften auf diesem Knoten ändern können</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -253,7 +255,7 @@ Adaption von [**ResourceResolver**](https://developer.adobe.com/experience-manag
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
-   <td>Für das Externalisieren von absoluten URLs, auch ohne das Anforderungsobjekt<br /> </td>
+   <td>Für das Externalisieren absoluter URLs, auch ohne das Anforderungsobjekt<br /> </td>
   </tr>
  </tbody>
 </table>

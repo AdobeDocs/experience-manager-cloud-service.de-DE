@@ -2,8 +2,10 @@
 title: Die richtigen Mitarbeiter, die richtigen Rollen
 description: Erfahren Sie, wie Sie die richtigen Personen für Ihr Projekt auswählen und sie den richtigen Rollen zuweisen.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: ht
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 100%
 

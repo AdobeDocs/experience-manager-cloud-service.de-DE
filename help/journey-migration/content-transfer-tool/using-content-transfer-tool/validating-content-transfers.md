@@ -2,10 +2,12 @@
 title: Validieren von Inhaltsübertragungen
 description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer Tool
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 89%
+source-wordcount: '1074'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 89%
 
 ## Erste Schritte {#getting-started}
 
-Benutzer können zuverlässig ermitteln, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Diese Validierungsfunktion vergleicht einen Auszug aus den Pfaden aller Knoten, die an der Extraktion beteiligt waren, mit einem Auszug aus den Pfaden aller an der Aufnahme beteiligten Knoten. Wenn im Extraktions-Auszug Knotenpfade enthalten sind, die im Aufnahme-Auszug fehlen, gilt die Validierung als fehlgeschlagen, und es kann eine zusätzliche manuelle Validierung erforderlich sein.
+Benutzende können zuverlässig ermitteln, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Diese Validierungsfunktion vergleicht einen Auszug aus den Pfaden aller Knoten, die an der Extraktion beteiligt waren, mit einem Auszug aus den Pfaden aller an der Aufnahme beteiligten Knoten. Wenn im Extraktions-Auszug Knotenpfade enthalten sind, die im Aufnahme-Auszug fehlen, gilt die Validierung als fehlgeschlagen, und es kann eine zusätzliche manuelle Validierung erforderlich sein.
 
 >[!INFO]
 >
@@ -101,7 +103,7 @@ Migration validation took 33 minutes
 
 Dies ist ein Beispiel für eine erfolgreich durchgeführte Validierung, da im Aufnahmeauszug keine Einträge fehlten, die im Extraktionsauszug vorhanden waren.
 
-Hier sehen Sie, wie ein Validierungsbericht aussehen würde, wenn die Validierung fehlgeschlagen wäre (oder wenn eine Auffüllmigration durchgeführt wurde):
+Hier sehen Sie, wie ein Validierungsbericht aussehen würde, wenn die Validierung fehlgeschlagen ist (oder wenn eine Auffüllmigration durchgeführt wurde):
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
@@ -127,7 +129,7 @@ Migration validation took 0 minutes
 
 Das obige Fehlerbeispiel wurde durch Ausführen einer Aufnahme und anschließendes erneutes Ausführen derselben Aufnahme mit deaktiviertem Löschen erreicht, sodass während der Aufnahme keine Knoten beteiligt waren – alles war bereits auf dem Ziel vorhanden.
 
-Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die Benutzeroberfläche der **Aufnahmeaufträge** in Cloud Acceleration Manager aufgerufen werden. Klicken Sie dazu auf die drei Punkte (**...**) und klicken Sie dann auf **Validierungsbericht** in der Dropdown-Liste, um den Validierungsbericht anzuzeigen.
+Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die Benutzeroberfläche der **Aufnahmeaufträge** in Cloud Acceleration Manager aufgerufen werden. Klicken Sie dazu auf die drei Punkte (**…**) und dann in der Dropdown-Liste auf **Validierungsbericht**, um den Validierungsbericht anzuzeigen.
 
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -138,7 +140,7 @@ Weitere Informationen zur Prinzipalmigration und dazu, warum diese erforderlich 
 
 Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Prinzipalmigration verfügbar. Anhand dieser Informationen lässt sich überprüfen, welche Benutzenden und Gruppen erfolgreich migriert wurden, und ggf. feststellen, warum einige Benutzenden nicht migriert wurden.
 
-Gehen Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte (**...**) für diese Aufnahme und klicken Sie dann auf **Prinzipal-Zusammenfassung anzeigen** in der Dropdown-Liste.
+Gehen Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte (**…**) für diese Aufnahme und dann in der Dropdown-Liste auf **Prinzipalzusammenfassung anzeigen**.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -166,4 +168,4 @@ Zu den Pfaden, die wir derzeit aus den Auszügen ausschließen, gehören: `cqdam
 
 ### Geschlossene Benutzergruppen funktionieren nicht {#validating-cugs}
 
-Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen bei der Verwendung einer CUG-Richtlinie (Closed User Group, geschlossene Benutzergruppe).
+Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen bei der Verwendung einer CUG-Richtlinie (geschlossene Benutzergruppe).

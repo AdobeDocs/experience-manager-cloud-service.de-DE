@@ -2,8 +2,10 @@
 title: Beispiele für ContextHub-Store-Kandidaten
 description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können.
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 100%
 
@@ -19,11 +21,11 @@ ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lös
 
 >[!WARNING]
 >
->Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen. Verwenden Sie sie nicht direkt.
+>Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen. Verwenden Sie sie daher nicht direkt.
 
 ## Beispiel-Store-Kandidat „aem.segmentations“ {#aem-segmentation-sample-store-candidate}
 
-Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück.
+Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager ab.
 
 ### Quellpfad {#source-location-segmentation}
 

@@ -2,8 +2,10 @@
 title: Erste Schritte mit SPAs in AEM unter Verwendung von React
 description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie diese zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des React-Frameworks schnell mit Ihrer eigenen SPA zu arbeiten.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 100%
 
@@ -117,7 +119,7 @@ Eine vereinfachte Bildkomponente wird als Beispiel verwendet, aber alle Komponen
 
 ### index.js {#index-js}
 
-Der Einstiegspunkt in die SPA ist die hier gezeigte Datei `index.js`, die hier vereinfacht dargestellt ist, um sich auf den wichtigen Inhalt zu konzentrieren.
+Der Einstiegspunkt in die SPA ist die hier gezeigte Datei `index.js`, die sich auf den wichtigen Inhalt konzentriert.
 
 ```
 import ReactDOM from 'react-dom';
@@ -256,7 +258,7 @@ Weitere Informationen finden Sie im Dokument [SPA-Blueprint](blueprint.md).
 
 Regelmäßig müssen Komponenten in einer SPA Daten austauschen. Es gibt mehrere empfohlene Methoden, um dies zu erreichen, wie im Folgenden in der Reihenfolge zunehmender Komplexität aufgeführt.
 
-* **Option 1:** Zentralisieren Sie die Logik und senden Sie sie an die erforderlichen Komponenten, z. B. mithilfe von React Context.
+* **Option 1:** Zentralisieren Sie die Logik und senden Sie sie an die erforderlichen Komponenten, z. B. mithilfe von React Context.
 * **Option 2:** Geben Sie Komponentenstatus mithilfe einer Statusbibliothek wie Redux frei.
 * **Option 3:** Nutzen Sie die Objekthierarchie durch Anpassen und Erweitern der Container-Komponente.
 

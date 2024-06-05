@@ -2,8 +2,10 @@
 title: Technische Grundlagen von AEM
 description: Eine Übersicht über die technischen Grundlagen von AEM, einschließlich der Art und Weise, wie AEM und grundlegende Technologien wie JCR, Sling und OSGi strukturiert sind.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 100%
 
@@ -260,7 +262,7 @@ OSGi (Open Services Gateway Initiative) definiert eine Architektur für die Entw
 * Services, die innerhalb des Containers implementiert sind
 * einem Vertrag zwischen dem Container und Ihrem Programm
 
-Diese Services und Verträge bieten eine Architektur, die es einzelnen Elementen ermöglicht, sich dynamisch für die Zusammenarbeit zu entdecken.
+Diese Services und Verträge bieten eine Architektur, die es einzelnen Elementen ermöglicht, sich dynamisch gegenseitig zu entdecken und zusammenzuarbeiten.
 
 Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Steuerung dieser Bundles, ohne dass ein Neustart erforderlich ist.
 

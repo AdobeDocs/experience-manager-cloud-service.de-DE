@@ -2,8 +2,10 @@
 title: Benutzerzuordnung und Prinzipalmigration
 description: Überblick über Benutzerzuordnung und Prinzipalmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: bf1260f9a49012bbcb4138e0a5498d8dda451b6a
-workflow-type: ht
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 100%
 

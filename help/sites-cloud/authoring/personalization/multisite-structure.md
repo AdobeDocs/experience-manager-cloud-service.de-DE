@@ -1,11 +1,14 @@
 ---
 title: Strukturierung von Multisite-Management für zielgerichtete Inhalte
-description: Ein Diagramm zeigt, wie die Multisite-Unterstützung für zielgerichtete Inhalte strukturiert ist
+description: Im Diagramm ist der Aufbau der Multisite-Unterstützung für zielgerichtete Inhalte dargestellt.
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +20,12 @@ Gebiete werden unter **/content/campaigns/&lt;Marke>** eingeordnet und jede Mark
 
 ![Multisite-Struktur](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
-Zum Nachschlagen zielgerichteter Inhalte können die Seiten oder Sites einem Gebiet zugeordnet werden. Sollte kein Gebiet konfiguriert sein, bezieht sich AEM für diese Marke auf das primäre Gebiet.
+Seiten oder Sites können Gebieten zugeordnet werden, sodass sich Targeting-Inhalte nachschlagen lassen. Sollte kein Gebiet konfiguriert sein, bezieht sich AEM für diese Marke auf das primäre Gebiet.
 
 Im folgenden Diagramm finden Sie ein Beispiel dafür, wie die Logik im Falle der drei Sites Site1, Site2 und Site3 funktioniert.
 
 ![Site-übergreifende Multisite-Struktur](/help/sites-cloud/authoring/assets/multisite-structure-2.png)
 
-* site1 sucht basierend auf der Bereichszuordnung nach myarea1 für brand1 und other area2 für brand2.
+* site1 schlägt myarea1 für brand1 und otherarea2 für brand2 basierend auf der Bereichszuordnung nach.
 * Site2 bezieht sich für Marke1 auf MeinGebiet1 und für Marke2 auf das primäre Gebiet, da nur für Marke1 Gebiete zugewiesen wurden.
 * Site3 bezieht sich für Marke1 und für Marke2 auf das primäre Gebiet, weil für diese Site keine Gebietszuordnung vorgenommen wurde.

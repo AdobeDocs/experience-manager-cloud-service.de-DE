@@ -2,10 +2,13 @@
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +40,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 ![Die Projektekonsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Wählen Sie **Zeitleiste** und dann ein Projekt, um seine Zeitleiste anzuzeigen.
-* Auswählen **Auswählen** , um in den Auswahlmodus zu wechseln.
+* Wählen Sie **Auswählen** aus, um in den Auswahlmodus zu wechseln.
 * Klicken Sie auf **Erstellen**, um Projekte hinzuzufügen.
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
 * Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
@@ -178,4 +181,4 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 
 >[!NOTE]
 >
->Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten. Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **MyProject-Editor**, **MyProject-Beobachter** haben. Wird das Projekt jedoch gelöscht, werden diese Gruppen nicht automatisch gelöscht. Ein Administrator muss die Gruppen in **Instrumente** > **Sicherheit** > **Gruppen**.
+>Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten. Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **MyProject-Editor**, **MyProject-Beobachter** haben. Wird das Projekt jedoch gelöscht, werden diese Gruppen nicht automatisch gelöscht. Admins müssen die Gruppen unter **Tools** > **Sicherheit** > **Gruppen** manuell löschen.

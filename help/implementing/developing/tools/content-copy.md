@@ -2,8 +2,10 @@
 title: Das Inhaltskopie-Tool
 description: Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen auf AEM as a Cloud Service in niedrigere Umgebungen zu Testzwecken kopieren.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 100%
 

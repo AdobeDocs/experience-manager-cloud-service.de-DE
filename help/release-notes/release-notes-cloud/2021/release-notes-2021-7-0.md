@@ -2,10 +2,12 @@
 title: Versionshinweise für Version 2021.7.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2021.7.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1292'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -88,9 +90,9 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Dienst können Sie Dokumente im synchronen Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    * Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
-   * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
+   * Erzeugen Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
    * Erzeugen von PDF-Druckdateien aus einem XFA-Formular-PDF und aus einem Adobe Acrobat-Formular.
 
 * **Variablendaten-Externalizer**: Sie können Daten von AEM-Workflow-Variablen in einem externen Speichersystem speichern, das von Ihrer Organisation verwaltet wird.

@@ -2,10 +2,12 @@
 title: Einführung in Cloud Manager
 description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Programme, Umgebungen und Pipelines unterstützt.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +63,7 @@ Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch z
 
 >[!TIP]
 >
->Auch benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen sind verfügbar. Lesen Sie das Dokument . [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md) für weitere Details.
+>Es sind auch benutzerdefinierte Berechtigungsprofile mit konfigurierbaren Berechtigungen verfügbar. Weitere Informationen finden Sie im Dokument [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## Cloud Manager-Programme {#cloud-manager-programs}
 

@@ -1,13 +1,15 @@
 ---
 title: Deaktivieren der Serialisierung von ResourceResolvers über den Sling Model Exporter
 description: Deaktivieren der Serialisierung von ResourceResolvers über den Sling Model Exporter
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
-workflow-type: ht
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
 
 ---
-
 
 # Deaktivieren der Serialisierung von ResourceResolvers über den Sling Model Exporter {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
@@ -50,6 +52,3 @@ Adobe fordert alle Kundinnen und Kunden auf, ihre Anwendungsprotokolle und Codeb
 Es wird davon ausgegangen, dass diese erforderlichen Änderungen in den meisten Fällen unkompliziert sind, da die `ResourceResolver`-Objekte in der JSON-Ausgabe überhaupt nicht erforderlich sind, weil die dort enthaltenen Informationen normalerweise nicht für Frontend-Anwendungen erforderlich sind. Das bedeutet, dass es in den meisten Fällen ausreichen sollte, das `ResourceResolver`-Objekt von der Berücksichtigung durch Jackson auszuschließen (siehe die [Regeln](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
 Wenn ein Sling-Modell von diesem Problem betroffen ist, aber nicht geändert wird, wird die explizite Deaktivierung der Serialisierung des `ResourceResolver`-Objekts (wie von Adobe als 2. Schritt ausgeführt) eine Änderung in der JSON-Ausgabe erzwingen.
-
-
-

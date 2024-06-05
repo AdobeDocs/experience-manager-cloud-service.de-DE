@@ -2,10 +2,12 @@
 title: Struktur der AEM-UI
 description: Die Benutzeroberfläche von AEM basiert auf bestimmten Prinzipien und besteht aus mehreren Schlüsselelementen
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 98%
+source-wordcount: '887'
+ht-degree: 100%
 
 ---
 
@@ -148,9 +150,9 @@ AEM enthält verschiedene vorab implementierte Ebenen für die Seitenbearbeitung
 >
 >Ebenen sind ein leistungsstarkes Konzept, das die Ansicht der Benutzenden auf den Seiteninhalt und die Interaktion mit ihm beeinflusst. Stellen Sie bei der Entwicklung Ihrer eigenen Ebenen sicher, dass die Ebene beim Beenden bereinigt wird.
 
-### Ebenenumschalter {#layer-switcher}
+### Ebenenschalter {#layer-switcher}
 
-Mit dem Ebenenschalter können Sie die Ebene auswählen, die Sie verwenden möchten. Wenn er geschlossen ist, zeigt er die aktuell verwendete Ebene an.
+Mit dem Ebenenschalter können Sie die Ebene auswählen, die verwendet werden soll. Wenn er geschlossen ist, zeigt er die aktuell verwendete Ebene an.
 
 Der Ebenenumschalter ist als Dropdown-Menü in der Symbolleiste (am oberen Rand des Fensters im Editor-Frame) verfügbar.
 

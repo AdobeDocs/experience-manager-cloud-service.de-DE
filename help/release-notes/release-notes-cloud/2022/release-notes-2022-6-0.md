@@ -2,10 +2,12 @@
 title: Versionshinweise für Version 2022.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 86%
+source-wordcount: '633'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +49,7 @@ Eine Zusammenfassung der in der Version 2022.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen eins und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können festlegen, wie viele Farben innerhalb eines Bereichs von 1 bis 40 mit einem Bild versehen werden, damit Sie später anhand dieser Farben nach Bildern suchen können.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

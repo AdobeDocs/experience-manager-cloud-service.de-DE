@@ -3,8 +3,10 @@ title: Erstellen von Zugriffs-Token für Server-seitige APIs (Legacy)
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 
@@ -152,7 +154,7 @@ Nach dem Klicken auf die Schaltfläche wird ein neuer Satz von Anmeldeinformatio
 
 >[!NOTE]
 >
->Nachdem Sie auf die Schaltfläche **Service-Anmeldeinformationen aktualisieren** geklickt haben, bleiben die alten Anmeldeinformationen bis zu ihrem Ablauf registriert. Es steht jedoch immer nur der neueste Satz zur Anzeige in der Entwicklerkonsole zur Verfügung.
+> Nachdem Sie auf die Schaltfläche **Service-Anmeldeinformationen aktualisieren** geklickt haben, bleiben die alten Anmeldeinformationen bis zu ihrem Ablauf registriert. Es steht jedoch immer nur der neueste Satz zur Anzeige in der Entwicklerkonsole zur Verfügung.
 
 ## Widerruf der Service-Anmeldeinformationen {#service-credentials-revocation}
 

@@ -2,7 +2,9 @@
 title: Ereignisse des universellen Editors
 description: Erfahren Sie mehr über die verschiedenen Ereignisse, die der universelle Editor sendet und mit denen Sie auf Änderungen an Inhalten oder Benutzeroberfläche in Ihrer Remote-App reagieren können.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 3%

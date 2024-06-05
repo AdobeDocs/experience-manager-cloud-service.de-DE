@@ -2,8 +2,10 @@
 title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 100%
 
@@ -253,5 +255,5 @@ Da Sie nun das SPA-Bearbeitungserlebnis in AEM kennen und die Beziehung einer SP
 
 * [Erste Schritte mit SPAs in AEM unter Verwendung von React](getting-started-react.md) zeigt, wie unter Verwendung von React eine einfache SPA für die Zusammenarbeit mit dem SPA-Editor in AEM erstellt wird
 * [Erste Schritte mit SPAs in AEM unter Verwendung von Angular](getting-started-angular.md) zeigt, wie unter Verwendung von Angular eine einfache SPA für die Zusammenarbeit mit dem SPA-Editor in AEM erstellt wird
-* [SPA-Editor – Überblick](editor-overview.md) vertieft das Kommunikationsmodell zwischen AEM und der SPA.
+* In [SPA-Editor – Überblick](editor-overview.md) wird das Kommunikationsmodell zwischen AEM und der SPA vertieft.
 * [Entwickeln von SPAs für AEM](developing.md) beschreibt, wie Front-End-Entwickelnde damit beauftragt werden können, eine SPA für AEM zu entwickeln, und wie SPAs mit der Architektur von AEM interagieren.

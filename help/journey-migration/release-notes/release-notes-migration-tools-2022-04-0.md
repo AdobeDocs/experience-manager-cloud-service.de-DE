@@ -3,10 +3,11 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0
 feature: Release Information
 exl-id: 4941736b-82cd-4050-b3e9-aef250d5c4c7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '240'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +25,7 @@ Best Practices Analyzer 2.1.28 wurde am 22. April 2022 veröffentlicht.
 
 * Die Möglichkeit, die Verwendung nicht unterstützter Asset Manager-APIs zu erkennen und darüber zu berichten. Es gibt vier APIs, die in AEM as a Cloud Service nicht mehr unterstützt werden. Kunden sollten sicherstellen, dass sie diese APIs nicht mehr verwenden und die neue Methode zum Hochladen von Assets verwenden.
 
-* Die Möglichkeit, die Verwendung von Inhaltsfragmentvorlagen zu erkennen. Inhaltsfragmentvorlagen werden für die Erstellung neuer Inhaltsfragmente in AEM as a Cloud Service nicht mehr unterstützt. Kunden müssen Inhaltsfragmentmodelle erstellen, um Inhaltsfragmentvorlagen zu ersetzen.
+* Die Möglichkeit, die Verwendung von Inhaltsfragmentvorlagen zu erkennen. Inhaltsfragmentvorlagen werden für die Erstellung neuer Inhaltsfragmente in AEM as a Cloud Service nicht mehr unterstützt. Kundinnen und Kunden müssen Inhaltsfragmentmodelle erstellen, um Inhaltsfragmentvorlagen zu ersetzen.
 
 * Die Möglichkeit, Assets mit mehr als 100 untergeordneten Elementen unter dem Metadatenknoten des Assets im Repository zu erkennen. Es wird empfohlen, Metadatenknoten zu entfernen, die nicht erforderlich sind, um die Leistung beim Laden von Ordnern, die aus solchen Assets bestehen, zu verbessern.
 

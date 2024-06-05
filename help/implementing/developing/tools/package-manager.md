@@ -1,11 +1,11 @@
 ---
 title: Package Manager
 description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manager kennen.
-feature: Administering
+feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
-workflow-type: ht
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '3769'
 ht-degree: 100%
 
@@ -149,7 +149,7 @@ Wenn das Paket geändert wurde oder noch nie aufgebaut wurde, wird der Status al
 
 ## Paketeinstellungen {#package-settings}
 
-Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets, einschließlich der folgenden Einstellungen, anzuzeigen.
+Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets einschließlich der folgenden Einstellungen anzuzeigen.
 
 * [Allgemeine Einstellungen](#general-settings)
 * [Paketfilter](#package-filters)
@@ -304,7 +304,7 @@ Möglicherweise müssen Sie [das Paket neu aufbauen](#building-a-package), um se
 
 ### Neuverpacken eines Pakets {#rewrapping-a-package}
 
-Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Paketinhalt geändert wird.
+Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Inhalt des Pakets geändert wird.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
@@ -314,7 +314,7 @@ Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken
 
 1. Klicken Sie zum Speichern auf **Speichern**.
 
-1. Wenn Sie auf **Weiter** > **Neu verpacken** klicken, werden Sie über ein Dialogfeld zur Bestätigung aufgefordert.
+1. Wenn Sie auf **Weiter** > **Neu verpacken** klicken, erscheint ein Dialogfeld, das Sie zur Bestätigung auffordert.
 
 ### Anzeigen anderer Paketversionen {#other-versions}
 
@@ -324,7 +324,7 @@ Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeig
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Wenn Sie auf **Mehr** > **Andere Versionen** klicken, öffnet sich ein Dialogfeld mit einer Liste von anderen Versionen desselben Pakets mit Statusinformationen.
+1. Wenn Sie auf **Mehr** > **Andere Versionen** klicken, öffnet sich ein Dialogfeld mit einer Liste anderer Versionen desselben Pakets mit Statusinformationen.
 
 ### Anzeigen von Paketinhalten und Testen der Installation {#viewing-package-contents-and-testing-installation}
 
@@ -334,11 +334,11 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalt**. Package Manager listet den vollständigen Paketinhalt im Aktivitätsprotokoll auf.
+1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalte**. Package Manager listet dann den vollständigen Paketinhalt im Aktivitätsprotokoll auf.
 
-   ![Paketinhalt](assets/package-contents.png)
+   ![Paketinhalte](assets/package-contents.png)
 
-1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll die Ergebnisse so, als ob die Installation durchgeführt worden wäre.
+1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll so über die Ergebnisse, als ob die Installation durchgeführt worden wäre.
 
    ![Testen der Installation](assets/test-install.png)
 

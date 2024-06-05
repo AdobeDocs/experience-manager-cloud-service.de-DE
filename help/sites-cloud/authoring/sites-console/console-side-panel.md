@@ -1,13 +1,16 @@
 ---
 title: Seitliches Bedienfeld der Sites-Konsole
 description: Erfahren Sie, wie Sie das seitliche Bedienfeld in der AEM Sites-Konsole verwenden können, um Ihre Inhalte besser zu verstehen und darin zu navigieren.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 100%
 
 ---
-
 
 # Seitliches Bedienfeld der Sites-Konsole {#side-panel}
 

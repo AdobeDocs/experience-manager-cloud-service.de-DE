@@ -3,8 +3,11 @@ title: Verwalten von Pipelines
 description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschließlich Bearbeiten, Ausführen und Löschen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 100%
 

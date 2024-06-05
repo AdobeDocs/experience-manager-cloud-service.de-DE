@@ -2,10 +2,12 @@
 title: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -58,7 +60,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics für adaptive Forms**: Sie können jetzt das Verhalten sowohl der angemeldeten als auch der nicht angemeldeten (anonymen) Benutzer über Adobe Analytics for Adaptive Forms erfassen und verfolgen, um Benutzereinblicke zu sammeln. Es hilft, informierte, datenbasierte Entscheidungen zu treffen, um das Benutzererlebnis zu verbessern.
+* **Analytics für adaptive Forms**: Sie können jetzt das Verhalten sowohl der angemeldeten als auch der nicht angemeldeten (anonymen) Benutzer über Adobe Analytics for Adaptive Forms erfassen und verfolgen, um Benutzereinblicke zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Benutzererlebnis zu verbessern.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms-oct-2021}
 
@@ -66,10 +68,10 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Beta-Funktionen von [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Dienst können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
 
    * Erzeugen von Dokumenten durch Ausfüllen von Vorlagendateien (PDF und XDP) mit XML-Daten.
-   * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
+   * Erzeugen Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
 
 Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-Programm anzumelden.
 

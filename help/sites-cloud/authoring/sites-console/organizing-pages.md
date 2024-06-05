@@ -2,8 +2,11 @@
 title: Organisieren von Seiten
 description: Erfahren Sie, wie Sie Ihre Website mit AEM organisieren.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
 
@@ -74,7 +77,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technische Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-Beim Erstellen einer Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md).
+Beim Erstellen einer Seite [validiert AEM den Seitennamen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/implementing/developing/introduction/naming-conventions.md).
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -103,7 +106,7 @@ Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Ze
 
 ### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
 
 ![Beispiel für die Eingabe eines ungültigen Seitennamens](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 

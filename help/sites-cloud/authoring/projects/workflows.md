@@ -1,19 +1,22 @@
 ---
 title: Arbeiten mit Projekt-Workflows
-description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
+description: Standardmäßig sind zahlreiche vorkonfigurierte Projekt-Workflows verfügbar.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 96%
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Projekt-Workflows {#working-with-project-workflows}
 
-Folgende Projekt-Workflows sind im Lieferumfang enthalten:
+Folgende vorkonfigurierte Projekt-Workflows sind im Lieferumfang enthalten:
 
-* **Workflow für Projektbestätigung** - Mit diesem Workflow können Sie einem Benutzer Inhalte zuweisen, diese überprüfen und dann genehmigen.
+* **Projektgenehmigungs-Workflow** – Mit diesem Workflow können Sie Inhalte einer Benutzerin bzw. einem Benutzer zuzuweisen, prüfen und bestätigen.
 * **Launch anfragen** - Ein Workflow, der einen Launch anfordert.
 * **Einstiegsseite anfragen** - Dieser Workflow fragt eine Landingpage an.
 * **E-Mail anfordern** - Workflow zum Anfordern einer E-Mail.
@@ -27,16 +30,16 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 | Launch anfragen | x |  |
 | Einstiegsseite anfragen | x |  |
 | E-Mail anfragen | x | |
-| DAM-Sprachkopie erstellen&ast; |  | x |
-| DAM-Sprachkopie erstellen und übersetzen&ast; |   | x |
+| DAM-Sprachkopie erstellen&amp;ast; |  | x |
+| DAM-Sprachkopie erstellen und übersetzen&amp;ast; |   | x |
 
 >[!NOTE]
 >
->&ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-cloud/administering/translation/managing-projects.md).
+>&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-cloud/administering/translation/managing-projects.md).
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte ändern sich.
 
-Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Sprachkopie erstellen“ bzw. „DAM-Sprachkopie erstellen und übersetzen“). Informationen über alle ausstehenden Aufgaben in einem Projekt werden in der Kachel **Aufgaben** aufgelistet. Benachrichtigungen für Aufgaben, die ausgeführt werden müssen, werden neben dem Benutzersymbol angezeigt.
+Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Kopie erstellen und übersetzen“ und „DAM-Sprachkopie erstellen“). Informationen zu ausstehenden Aufgaben in einem Projekt finden Sie in der Kachel **Aufgaben**. Benachrichtigungen für Aufgaben, die ausgeführt werden müssen, werden neben dem Benutzersymbol angezeigt.
 
 Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 

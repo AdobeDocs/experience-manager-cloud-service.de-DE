@@ -2,10 +2,13 @@
 title: Benachrichtigungen
 description: Erfahren Sie, wie Sie mithilfe des Adobe Experience Cloud-Benachrichtigungssystems Informationen zu Pipeline-Bereitstellungen erhalten.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +37,9 @@ Die Registerkarte **Ankündigungen** enthält Ankündigungen zu Adobe-Produkten.
 
 Klicken Sie auf eine Benachrichtigung oder Mitteilung, um deren Details anzuzeigen. Benachrichtigungen, die mit Aktivitäten wie Pipeline-Bereitstellungen verknüpft sind, führen Sie zu den Details dieser Aktivität, beispielsweise dem Pipeline-Ausführungsfenster.
 
-Klicken Sie auf **Alle anzeigen** unten im Bedienfeld, um alle Ankündigungen in Ihrem Posteingang anzuzeigen.
+Klicken Sie auf die Option **Alles anzeigen** am Ende des Bedienfelds, um alle Benachrichtigungen in Ihrem Posteingang anzuzeigen.
 
-Klicken Sie auf **Alle als gelesen markieren** -Option am unteren Rand des Bedienfelds, um alle ungelesenen Benachrichtigungen als gelesen zu markieren und das Glockensymbol-Badging zu löschen.
+Klicken Sie auf die Option **Alle als gelesen markieren** am Ende des Bedienfelds, um alle ungelesenen Benachrichtigungen als gelesen zu markieren und das aktivierte Glockensymbol wieder zu deaktivieren.
 
 ## Konfiguration von Benachrichtigungen {#configuration}
 
@@ -54,7 +57,7 @@ Mit den Abonnements legen Sie fest, welche Benachrichtigungen Sie für welche Pr
 
 ![Abonnements für Benachrichtigungen](assets/notifications-subscriptions.png)
 
-Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte sowohl in der Anwendung als auch per E-Mail. Klicken Sie auf den Pfeil neben einem Produktnamen, um die detaillierten Optionen anzuzeigen und die Benachrichtigungstypen zu definieren, die Sie für dieses Produkt erhalten. Oder aktivieren oder deaktivieren Sie die Optionen auf Produktebene, um alle Optionen für das Produkt auszuwählen/abzuwählen.
+Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte in der Anwendung und per E-Mail. Klicken Sie auf den Pfeil neben einem Produktnamen, um die detaillierten Optionen anzuzeigen und die Benachrichtigungstypen zu definieren, die Sie für dieses Produkt erhalten möchten. Oder aktivieren oder deaktivieren Sie die Optionen auf Produktebene, um alle Optionen für das Produkt auszuwählen/abzuwählen.
 
 ![Anpassung des Benachrichtigungsabonnements](assets/notifications-subscriptions-customize.png)
 

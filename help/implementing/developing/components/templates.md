@@ -2,8 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 100%
 
@@ -502,7 +504,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
      `cq:allowedTemplates`
-Auf dem `jcr:content`-Knoten der gewünschten Verzweigung.
+Auf dem `jcr:content`-Knoten der erforderlichen Verzweigung.
 
    Beispielsweise mit dem Wert:
 

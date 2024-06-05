@@ -2,9 +2,11 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0“
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1939'
 ht-degree: 95%
 
 ---
@@ -82,7 +84,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
   Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf die Authoring-Instanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#manage-access-aem).
 
-* Das Erstellungsprotokoll enthält jetzt eine Liste der gefundenen Artefakte einschließlich übersprungener Inhaltspakete.
+* Das Erstellungsprotokoll enthält jetzt eine Liste der gefundenen Artefakte, einschließlich übersprungener Inhaltspakete.
 
 * Der Schritt Erstellen überprüft jetzt, ob alle erstellten Inhaltspakete alle obligatorischen Eigenschaften enthalten - Name, Gruppe und Version.
 

@@ -2,8 +2,11 @@
 title: Grundlagen zur Inhaltsmodellierung
 description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 100%
 
@@ -130,7 +133,7 @@ Zum Beispiel könnten bei Ihnen die folgenden Inhaltsfragmentmodelle definiert s
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Mitarbeitende…und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Angestellte …und dies sind alles Leute, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 

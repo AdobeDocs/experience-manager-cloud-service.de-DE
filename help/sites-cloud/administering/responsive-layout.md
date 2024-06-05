@@ -1,13 +1,16 @@
 ---
 title: Konfigurieren von Layout-Container und Layout-Modus
 description: Erfahren Sie, wie Sie Layout-Container und Layout-Modus konfigurieren, um responsive Layouts für Ihre Inhaltsautorinnen und Inhaltsautoren zu aktivieren.
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: ht
+exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 100%
 
 ---
-
 
 # Konfigurieren von Layout-Container und Layout-Modus {#configuring-layout-container-and-layout-mode}
 

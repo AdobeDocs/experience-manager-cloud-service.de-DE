@@ -2,8 +2,11 @@
 title: Konfigurieren von Übersetzungsregeln für Headless-Inhalte
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
 
@@ -15,7 +18,7 @@ Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalt
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour durch die AEM Headless-Übersetzung, [Übersetzungs-Integration konfigurieren](configure-connector.md), haben Sie gelernt, wie Sie Ihre Übersetzungs-Integration installieren und konfigurieren. Sie sollten jetzt:
+Im vorherigen Dokument der Tour durch die AEM Headless-Übersetzung, [Konfigurieren der Übersetzungsintegration](configure-connector.md), haben Sie gelernt, wie Sie Ihre Übersetzungs-Integration installieren und konfigurieren. Sie sollten jetzt:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.

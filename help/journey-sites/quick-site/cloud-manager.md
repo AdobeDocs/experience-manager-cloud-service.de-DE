@@ -2,10 +2,13 @@
 title: Grundlegendes zu Cloud Manager und dem Workflow von Quick Site Creation
 description: Erfahren Sie mehr über Cloud Manager und sie Verbindung zum neuen Prozess von Quick Site Creation.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 96%
+source-wordcount: '1113'
+ht-degree: 100%
 
 ---
 
@@ -117,7 +120,7 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Frontend-Entwicklung zu erleichtern.
 * Erfahren haben, dass der Frontend-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
 
-Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit der Journey zur AEM SchnellSite-Erstellung fort, indem Sie das Dokument erneut überprüfen. [Erstellen einer Site aus Vorlage,](create-site.md) Hier erfahren Sie, wie Sie mithilfe einer Vorlage schnell eine neue AEM erstellen.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie als Nächstes das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) durchgehen, in dem Sie lernen, wie Sie eine neue AEM-Site mithilfe einer Vorlage schnell erstellen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

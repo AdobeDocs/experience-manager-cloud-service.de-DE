@@ -2,10 +2,12 @@
 title: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 87%
+source-wordcount: '1545'
+ht-degree: 93%
 
 ---
 
@@ -93,11 +95,11 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* **Identitätsauthentifizierungs-Methode Amtlicher Lichtbildausweis in Adobe Sign-fähigen adaptiven Formularen verwenden**
+* **Verwenden der Identitätsauthentifizierungs-Methode mit amtlichem Lichtbildausweis in Adobe Sign-fähigen adaptiven Formularen**
 
-  Dank der fortschrittlichen maschinellen Lernalgorithmen ermöglicht der Adobe Sign-Prozess zur Identifikation von Behörden-IDs Unternehmen auf der ganzen Welt die Sicherstellung einer hochwertigen Authentifizierung ihrer Empfängeridentität. Jetzt können Sie die Methode der Identitätsauthentifizierung über amtliche Lichtbildausweise in Adobe Sign-fähigen adaptiven Formularen verwenden.
+  Dank fortschrittlicher Machine-Learning-Algorithmen ermöglicht der Adobe Sign-Prozess zur Identifizierung mit amtlichem Lichtbildausweis Unternehmen weltweit die hochwertige Authentifizierung ihrer Empfänger und Empfängerinnen. Jetzt können Sie die Methode der Identitätsauthentifizierung mit amtlichem Lichtbildausweis in Adobe Sign-fähigen adaptiven Formularen verwenden.
 
-  Öffentliche ID ist eine Premium-Identitätsauthentifizierungsmethode, die den Empfänger anweist, [das Bild eines staatlich ausgestellten Identitätsdokuments (Führerschein, nationale Kennung, Reisepass) hochladen](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html)und bewertet dann das Dokument, um seine Echtheit sicherzustellen.
+  Die Authentifizierung mit einem amtlichen Lichtbildausweis ist eine Premium-Identitätsauthentifizierungsmethode, die den Empfänger bzw. die Empfängerin anweist, [ein Bild eines von offizieller Stelle ausgestellten Ausweisdokuments (Führerschein, Personalausweis, Pass)](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html) hochzuladen, und dieses Dokument dann auf seine Echtheit hin untersucht.
 
 * **Unterstützung für die Verwendung von Formularsignierlebnissen für asynchrone Übermittlungen adaptiver Formulare**
 
@@ -109,7 +111,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * **Unterstützung für die Verwendung der Option „Literal“ zum Festlegen eines Werts für eine JSON-Typvariable**
 
-  Sie können die Option „Literal“ verwenden, um Werte für eine JSON-Typvariable im Schritt „set variable“ eines AEM-Workflows festzulegen. Mit der Literaloption können Sie eine JSON in Form einer Zeichenfolge angeben.
+  Sie können die Option „Literal“ verwenden, um Werte für eine JSON-Typvariable im Schritt „set variable“ eines AEM-Workflows festzulegen. Mit der Option „Literal“ können Sie ein JSON in Form einer Zeichenfolge angeben.
 
 * **Verwenden der lokalen Entwicklungsumgebung zum Erstellen des aufzuzeichnenden Dokuments (DoR)**
 
@@ -128,7 +130,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Unterstützung für Kategorie-UID - Dadurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Zeichenfolgen für Kategorie-IDs verwenden
+* Unterstützung der Kategorie-UID – Dadurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Zeichenfolgen als Kategorie-IDs verwenden
 
 * AEM-Erweiterung für PWA Studio inkl. Beispielintegration
 

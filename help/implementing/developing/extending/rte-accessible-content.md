@@ -3,8 +3,10 @@ title: Konfigurieren Sie den RTE, um barrierefreie Web-Seiten und Websites zu er
 description: Hier erfahren Sie, wie Sie den Rich-Text-Editor konfigurieren, um barrierefreie Websites in [!DNL Adobe Experience Manager] zu erstellen.
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
 

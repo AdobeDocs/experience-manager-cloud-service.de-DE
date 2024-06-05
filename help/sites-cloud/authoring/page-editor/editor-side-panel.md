@@ -1,13 +1,16 @@
 ---
 title: Seitliches Bedienfeld des Seiteneditors
 description: Erfahren Sie, wie Sie mit dem seitlichen Bedienfeld im AEM Sites-Editor Komponenten und Assets zu Ihrer Seite hinzufügen.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
 
 ---
-
 
 # Seitliches Bedienfeld des Seiteneditors {#side-panel}
 

@@ -2,9 +2,11 @@
 title: Überlagerungen für Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service nutzt das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen zu erweitern und anzupassen.
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '404'
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '384'
 ht-degree: 100%
 
 ---

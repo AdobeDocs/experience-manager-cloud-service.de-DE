@@ -1,10 +1,12 @@
 ---
 title: Arbeiten mit Ihren eigenen GitHub-Repositorys in Cloud Manager
 description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigenen GitHub-Repositorys einrichten.
-feature: Release Information
+feature: Cloud Manager, Developing
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
-workflow-type: ht
+solution: Experience Manager
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 100%
 

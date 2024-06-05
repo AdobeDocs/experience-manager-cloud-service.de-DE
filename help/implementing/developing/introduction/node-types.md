@@ -2,9 +2,11 @@
 title: AEM-Knotentypen
 description: AEM basiert auf Sling und verwendet ein JCR-Repository mit Knotentypen, die von beiden angeboten werden, aber AEM bietet auch eine Reihe von eigenen Knotentypen.
 exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '98'
 ht-degree: 100%
 
 ---

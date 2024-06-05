@@ -2,8 +2,10 @@
 title: ContextHub-Diagnosen
 description: ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten.
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
 

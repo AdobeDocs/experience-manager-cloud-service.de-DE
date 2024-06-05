@@ -2,10 +2,13 @@
 title: Launches
 description: Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +32,7 @@ Wenn ein neues Quartal beginnt, leiten Sie die Launch-Seiten weiter, damit Sie d
 
 Launches können auch:
 
-* Für mehrere Stammverzweigungen erstellt werden. Sie können zwar den Launch für die gesamte Site erstellen (und die Änderungen dort vornehmen), dies kann jedoch nicht praktikabel sein, da die gesamte Site kopiert werden muss. Wenn Hunderte oder sogar Tausende von Seiten beteiligt sind, wirken sich die Kopieraktion und später die für die Promotions-Aufgaben erforderlichen Vergleiche auf die Systemanforderungen und die Leistung aus.
+* Für mehrere Stammverzweigungen erstellt werden. Sie können zwar den Launch für die gesamte Site erstellen (und die Änderungen dort vornehmen), dies kann jedoch sehr umständlich sein, da die gesamte Site kopiert werden muss. Wenn Hunderte oder sogar Tausende von Seiten beteiligt sind, wirken sich die Kopieraktion und später die für die Promotions-Aufgaben erforderlichen Vergleiche auf die Systemanforderungen und die Leistung aus.
 * Verschachtelt werden (ein Launch innerhalb eines Launches), um Ihnen die Möglichkeit zu geben, einen Launch aus einem bestehenden Launch zu erstellen, sodass Autorinnen und Autoren sich die bereits vorgenommenen Änderungen zunutze machen können, anstatt dieselben Änderungen mehrfach für jeden Launch vornehmen zu müssen.
 
 In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-Konsole oder der [Konsole „Launches“](#the-launches-console) erstellen, bearbeiten und weiterleiten (und bei Bedarf [löschen](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)):
@@ -65,7 +68,6 @@ Launches ermöglichen Folgendes:
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
       * Die Markierung **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
       * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Datum der** Live-Schaltung **)** an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
-
         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, d. h. in Form einer Live Copy).
@@ -97,13 +99,13 @@ Launches ermöglichen Folgendes:
 
    ![Verweise auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Wählen Sie den entsprechenden Launch aus. Die Liste der möglichen Aktionen wird angezeigt:
+1. Wählen Sie den entsprechenden Launch aus. Die Liste der möglichen Aktionen wird daraufhin angezeigt:
 
    ![Aktionen für Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## Die Konsole „Launches“  {#the-launches-console}
 
-Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, auf die aufgelisteten Launches zu reagieren. Auf die Konsole kann wie folgt zugegriffen werden:
+Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, auf diese zu reagieren. Auf die Konsole kann wie folgt zugegriffen werden:
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 

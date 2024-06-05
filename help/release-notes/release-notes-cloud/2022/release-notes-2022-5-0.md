@@ -2,10 +2,12 @@
 title: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 77%
+source-wordcount: '800'
+ht-degree: 67%
 
 ---
 
@@ -49,7 +51,7 @@ Eine Zusammenfassung der in der Version 2022.5.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen eins und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können festlegen, wie viele Farben innerhalb eines Bereichs von 1 bis 40 mit einem Bild versehen werden, damit Sie später anhand dieser Farben nach Bildern suchen können.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -81,7 +83,7 @@ Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um
 
 * Die Option &quot;Struktur hinzufügen&quot;im Admin-Bildschirm des Replikationsagenten **Registerkarte &quot;Verteilen&quot;**, die zuvor als veraltet angekündigt wurde, wurde am 20. Juni 2022 oder bald danach entfernt. Pakete mit einer Baumstruktur mit Inhalten sollten stattdessen mithilfe von [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder mit dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) repliziert werden.
 
-* Die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen mit mehr als 10 MB (Knoten mit Eigenschaften, einschließlich Binärdateien) wird ab dem 12. September 2022 oder bald danach eingestellt und durchgesetzt. Stattdessen muss [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder der Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) verwendet werden, um derart große Inhaltspakete zu replizieren. Wenn versucht wird, derart große Inhaltspakete zu replizieren, wird ab Juli auf der Registerkarte **Verteilen** des Replikationsagenten eine Warnmeldung angezeigt. Ebenso erscheint eine Warnmeldung im AEM-Fehlerprotokoll, wenn die Replikations-API verwendet wird, um solche großen Inhaltspakete zu replizieren. Im September wurden die Warnungen durch Fehler ersetzt. Passen Sie Ihre Prozesse entsprechend an.
+* Die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen mit mehr als 10 MB (Knoten mit Eigenschaften, einschließlich Binärdateien) wird ab dem 12. September 2022 oder bald danach eingestellt und durchgesetzt. Stattdessen muss [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder der Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) verwendet werden, um derart große Inhaltspakete zu replizieren. Im Juli wird eine Warnmeldung im Bildschirm des Replikationsagenten-Administrators angezeigt. **Registerkarte &quot;Verteilen&quot;** wenn versucht wird, diese großen Inhaltspakete zu replizieren, und auch im AEM Fehlerprotokoll, wenn die Replikations-API zur Replikation dieser großen Inhaltspakete verwendet wird. Im September wurden die Warnungen durch Fehler ersetzt. Passen Sie Ihre Prozesse entsprechend an.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 

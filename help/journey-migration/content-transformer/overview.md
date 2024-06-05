@@ -2,9 +2,11 @@
 title: Übersicht über Content Transformer
 description: Erfahren Sie, wie Sie mit dem Content Transformer von BPA gemeldete inhaltsbezogene Probleme erkennen und beheben können.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
-source-wordcount: '388'
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '383'
 ht-degree: 100%
 
 ---

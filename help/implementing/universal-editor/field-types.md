@@ -2,8 +2,10 @@
 title: Modelldefinitionen, Felder und Komponententypen
 description: Erfahren Sie anhand von Beispielen mehr über die Felder und Komponententypen, die mit dem universellen Editor in der Eigenschaftenleiste bearbeitet werden können. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 100%
 

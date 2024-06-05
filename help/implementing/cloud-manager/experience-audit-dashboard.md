@@ -2,8 +2,11 @@
 title: Experience Audit-Dashboard
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und durch eine klare, informative Dashboard-Oberfläche sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 100%
 
@@ -52,25 +55,25 @@ Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. 
 
 1. Je nach Pipeline-Typ, der konfiguriert werden soll, befolgen Sie die Anweisungen für diese Vorgänge:
 
-   * Fügen Sie eine neue [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) hinzu, wenn Sie die Pfade definieren möchten, die von der Prüfung ausgewertet werden sollen.
-   * Fügen Sie eine neue [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) hinzu, wenn Sie die Prüfung in einer Front-End- oder Entwicklungs-Full-Stack-Pipeline aktivieren möchten.
-   * Sie können auch [eine vorhandene Pipeline bearbeiten](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
+   * Fügen Sie eine neue [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) hinzu, wenn Sie die Pfade definieren möchten, die von der Prüfung bewertet werden sollen.
+   * Fügen Sie eine neue [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) hinzu, wenn Sie die Prüfung für eine Frontend- oder Full-Stack-Entwicklungs-Pipeline aktivieren möchten.
+   * Oder Sie können [eine vorhandene Pipeline bearbeiten,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
 
-1. Wenn Sie eine produktionsfremde Pipeline hinzufügen oder bearbeiten, für die die Erlebnisprüfung verwendet werden soll, müssen Sie auf der Registerkarte **Quell-Code** das Kontrollkästchen **Erlebnisprüfung** aktivieren.
+1. Wenn Sie eine produktionsfremde Pipeline hinzufügen oder bearbeiten, für die Sie die Erlebnisprüfung verwenden möchten, müssen Sie das Kontrollkästchen **Erlebnisprüfung** auf der Registerkarte **Quell-Code** auswählen.
 
    ![Aktivieren der Erlebnisprüfung](assets/experience-audit-enable.jpg)
 
    * Dies ist nur für produktionsfremde Pipelines erforderlich.
-   * Die Registerkarte **Erlebnisprüfung** wird angezeigt, wenn das Kontrollkästchen aktiviert ist.
+   * Die Registerkarte **Erlebnisprüfung** wird beim Auswählen des Kontrollkästchens angezeigt.
 
-1. Für Produktions- und Nicht-Produktions-Pipelines definieren Sie die in der Erlebnisprüfung einzuschließenden Pfade auf der Registerkarte **Erlebnisprüfung**.
+1. Die Pfade für Produktions-Pipelines und produktionsfremde Pipelines, die in die Erlebnisprüfung aufgenommen werden sollen, werden auf der Registerkarte **Erlebnisprüfung** definiert.
 
    * Seitenpfade müssen mit `/` beginnen und sind relativ zu Ihrer Site.
-   * Wenn es sich beispielsweise bei Ihrer Site um `wknd.site` handelt und `https://wknd.site/us/en/about-us.html` in die Erlebnisprüfung aufgenommen werden soll, geben Sie den Pfad `/us/en/about-us.html` ein.
+   * Wenn Ihre Site beispielsweise `wknd.site` ist und Sie `https://wknd.site/us/en/about-us.html` in die Erlebnisprüfung aufnehmen möchten, geben Sie den Pfad `/us/en/about-us.html` ein.
 
    ![Definieren eines Pfads für die Erlebnisprüfung](assets/experience-audit-add-page.png)
 
-1. Wenn Sie auf **Seite hinzufügen** tippen oder klicken, wird der Pfad automatisch mit der Adresse Ihrer Umgebung aufgefüllt und der Pfadtabelle hinzugefügt.
+1. Wenn Sie auf **Seite hinzufügen** tippen oder klicken, wird der Pfad automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
 
    ![Speichern des Pfads zur Tabelle](assets/experience-audit-page-added.png)
 

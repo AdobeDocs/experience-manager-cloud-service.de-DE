@@ -1,13 +1,16 @@
 ---
 title: Erstellen von Seiten
 description: Erfahren Sie, wie Sie mithilfe der Sites-Konsole neue Seiten für Ihre Website erstellen.
-source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
-workflow-type: ht
+exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen von Seiten {#creating-pages}
 

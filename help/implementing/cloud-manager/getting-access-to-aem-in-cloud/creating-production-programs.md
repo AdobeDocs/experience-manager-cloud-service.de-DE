@@ -2,8 +2,11 @@
 title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 100%
 

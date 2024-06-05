@@ -2,7 +2,9 @@
 title: Versionshinweise für Version 2021.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0“
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 92%
@@ -88,7 +90,7 @@ Die Version 2021.1.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. J
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Authentifizierte API-Aufrufe von Server zu Server: Generieren Sie die entsprechenden Zugriffs-Tokens, um authentifizierte Server-zu-Server-API-Aufrufe zwischen Ihren externen Programmen und AEM as a Cloud Service-Umgebungen durchzuführen. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) oder im [Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
+* Authentifizierte API-Aufrufe von Server zu Server: Generieren Sie die entsprechenden Zugriffs-Tokens, um authentifizierte Server-zu-Server-API-Aufrufe zwischen Ihren externen Programmen und AEM as a Cloud Service-Umgebungen durchzuführen. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) oder im [Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication).
 
 ### SDK Build Analyzer {#sdk-build-analyzers}
 

@@ -2,10 +2,12 @@
 title: Grundlegendes zur Installation des Referenzdemo-Add-ons
 description: Erfahren Sie mehr über Cloud Manager und dessen Verwendung für die Installation des Add-ons.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 97%
+source-wordcount: '941'
+ht-degree: 100%
 
 ---
 
@@ -55,7 +57,7 @@ Cloud Manager wird verwendet, um die Cloud-Ressourcen zu verwalten, die Ihre AEM
 
 >[!TIP]
 >
->Ausführliche Informationen zu Cloud Manager finden Sie unter [Zusätzliche Ressourcen](#additional-resources) für Links zu weiteren Informationen.
+>Wenn Sie mehr über Cloud Manager erfahren möchten, finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) dieses Artikels Links zu weiteren Informationen.
 
 ### Programme {#programs}
 

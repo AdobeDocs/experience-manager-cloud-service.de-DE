@@ -4,10 +4,11 @@ description: Verschaffen Sie sich einen Überblick darüber, wie Inhalte für me
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +36,7 @@ Wenn Ihr Übersetzungsanbieter keinen Connector zur Integration mit AEM bereitst
 
 >[!NOTE]
 >
->Ihr Benutzer muss Mitglied der `project-administrators` -Gruppe, um die Sprachkopie-Funktionen zu verwenden.
+>Ihre Benutzerin bzw. Ihr Benutzer muss Mitglied der Gruppe `project-administrators` sein, um die Sprachkopie-Funktionen verwenden zu können.
 
 ## Best Practices {#best-practices}
 

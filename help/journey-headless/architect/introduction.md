@@ -2,10 +2,13 @@
 title: Inhaltsmodellierung für AEM als Headless-CMS – eine Einführung
 description: Eine Einführung in die Verwendung der Funktionen von Adobe Experience Manager as a Cloud Service als Headless-CMS zum Modellieren von Inhalten für Ihr Projekt.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 78%
+source-wordcount: '735'
+ht-degree: 100%
 
 ---
 
@@ -29,14 +32,14 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In einem Full-Stack-CMS befindet sich die Funktionalität zum Bearbeiten von Inhalten im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In einem Full-Stack-CMS befindet sich die Funktionalität zum Bearbeiten Ihrer Inhalte im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
 * Es gibt ein System, das gepflegt werden muss.
 * Inhalte werden zentral verwaltet.
 * Alle Services des Systems sind integriert.
 * Die Inhaltsbearbeitung ist nahtlos.
 
-Wenn also ein neuer Kanal hinzugefügt werden muss oder Unterstützung für neue Erlebnistypen erforderlich ist, kann eine (oder mehrere) neue Komponenten in den Stapel eingefügt werden und es gibt nur einen Ort, an dem Änderungen vorgenommen werden können.
+Wenn also ein neuer Kanal hinzugefügt werden muss oder Unterstützung für neue Erlebnistypen erforderlich ist, ist es möglich, eine neue Komponente (oder mehrere) in den Stack einzufügen. Dabei gibt es nur einen Ort, an dem Änderungen vorgenommen werden können.
 
 ![Hinzufügen eines neuen Kanals zum Stack](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -50,15 +53,15 @@ Wenn wir über ein Headless-CMS sprechen, verwaltet das CMS die Inhalte und stel
 
 ![Headless-CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-Die verbrauchenden Dienste, seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse, progressive Web-Apps (PWA) usw., übernehmen Inhalte aus dem Headless-CMS und bieten ihr eigenes Rendering. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
+Die verbrauchenden Dienste – seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse oder Progressive Web Apps (PWAs) usw. – nehmen Inhalte aus dem Headless-CMS auf und stellen ihr eigenes Rendering bereit. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
 
 Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitigt. Dadurch wird auch die Verantwortung für das Rendering der Inhalte auf die Services verlagert, die den Inhalt tatsächlich benötigen und oft besser für dieses Rendering geeignet sind.
 
 ## Inhaltsmodellierung {#content-modeling}
 
-Inhaltsmodellierung (auch als Datenmodellierung bezeichnet) ist Ihre Spezialität. Was muss also bei der Modellierung für Headless berücksichtigt werden?
+Inhaltsmodellierung (auch als Datenmodellierung bezeichnet) ist Ihre Spezialität. Was muss daher bei der Modellierung für Headless berücksichtigt werden?
 
-Damit die Headless-Anwendungen auf Ihre Inhalte zugreifen und etwas damit anfangen können, muss der Inhalt wirklich über eine vordefinierte Struktur verfügen. Es wäre möglich, Ihre Inhalte frei zu gestalten, aber das würde das Leben für die Anwendungen *sehr* kompliziert machen.
+Damit die Headless-Anwendungen auf Ihre Inhalte zugreifen und etwas damit anfangen können, müssen die Inhalte wirklich über eine vordefinierte Struktur verfügen. Es wäre möglich, Ihre Inhalte frei zu gestalten, aber das würde das Leben für die Anwendungen *sehr* kompliziert machen.
 
 Für AEM führen Sie als Inhaltsarchitekt die Inhaltsmodellierung durch, um eine Reihe von **Inhaltsfragmentmodellen** zu entwerfen. Diese definieren die Struktur, die verwendet wird, wenn Ihre Inhaltsautoren die **Inhaltsfragmente** erstellen, die die Inhalte enthalten.
 
@@ -66,7 +69,7 @@ Für AEM führen Sie als Inhaltsarchitekt die Inhaltsmodellierung durch, um eine
 
 Das ist eher ein Entwicklungsdetail – aber es könnte Sie interessieren, nur um die Geschichte zu vervollständigen.
 
-Nachdem Sie die Inhaltsfragmentmodelle erstellt haben und Ihre Autoren sie zum Generieren des Inhalts verwendet haben, müssen die Headless-Anwendungen auf diesen Inhalt zugreifen.
+Nachdem Sie die Inhaltsfragmentmodelle erstellt und Ihre Autorinnen oder Autoren sie zur Erstellung der Inhalte verwendet haben, müssen die Headless-Anwendungen auf diese Inhalte zugreifen.
 
 Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie mithilfe der AEM-GraphQL-API selektiv auf Ihre Inhaltsfragmente zugreifen, um nur die benötigten Inhalte zurückzugeben. Mithilfe der API kann ein Entwickler Abfragen formulieren, die bestimmte Inhalte auswählen. Dieser Auswahlprozess basiert auf *Ihren* Inhaltsfragmentmodellen.
 
@@ -84,6 +87,6 @@ Jetzt, da Sie die Konzepte und Terminologie gelernt haben, lautet der nächste S
 
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
 
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 
 * [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

@@ -2,8 +2,10 @@
 title: Query Builder-API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java™-API und eine REST-API verfügbar gemacht.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
 

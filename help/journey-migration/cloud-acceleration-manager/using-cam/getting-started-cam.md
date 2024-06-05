@@ -2,8 +2,10 @@
 title: Erste Schritte mit Cloud Acceleration Manager
 description: Auf dieser Seite erhalten Sie einen Überblick über die Verwendung und die ersten Schritte mit Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: ht
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 100%
 

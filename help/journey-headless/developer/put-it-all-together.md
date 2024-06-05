@@ -2,10 +2,13 @@
 title: So fügen Sie alles zusammen – Ihre Mobile App und Ihre Inhalte in AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihr AEM-Projekt, einschließlich Inhaltsfragmenten, Ihrer GraphQL-Aufrufe, Ihrer REST-API-Aufrufe und Ihres Programms für das Go-Live vorbereiten.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 99%
+source-wordcount: '1061'
+ht-degree: 100%
 
 ---
 
@@ -115,5 +118,5 @@ Setzen Sie Ihre AEM Headless-Tour fort, indem Sie sich das Dokument [So gehen Si
 * [AEM Headless-SDK für Server-seitig/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [AEM Headless-SDK für Java™](https://github.com/adobe/aem-headless-client-java)
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

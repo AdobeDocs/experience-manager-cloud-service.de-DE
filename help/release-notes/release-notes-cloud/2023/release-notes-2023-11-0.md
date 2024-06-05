@@ -2,7 +2,9 @@
 title: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 56%
@@ -25,7 +27,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) ist der Freitag, 30. November 2023. Die nächste Version mit neuen Funktionen (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) ist der Freitag, 30. November 2023. Die nächste Version (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -66,7 +68,7 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? E-Mail an senden **ae
 
 * **Verwendungsberichte in Insights**: Administratoren können jetzt die im Rahmen von Insights verfügbaren Speicherverwendungsberichte anzeigen.
 
-  ![Einblicke in die Speichernutzung](/help/assets/assets/storage-usage-insights.png)
+  ![Erkenntnisse zur Speichernutzung](/help/assets/assets/storage-usage-insights.png)
 
 * **Erste Homepage-Konfiguration durchsuchen**: Mit Experience Manager Assets können Sie jetzt das Starterlebnis für Ihre Organisation konfigurieren. Wenn Sie die Startseite als erste Suche festlegen, können Sie die Ausrichtung des Suchbalkens, das Hintergrundbild und das Logo Ihres Unternehmens konfigurieren.
 

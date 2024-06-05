@@ -2,8 +2,10 @@
 title: Handhabung großer Content-Repositorys
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 100%
 

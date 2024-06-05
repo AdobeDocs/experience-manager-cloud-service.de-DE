@@ -2,8 +2,10 @@
 title: Indizierung nach der Migration von Inhalten
 description: Erfahren Sie, wie der Migrationsprozess den aufgenommenen Inhalt auf der Cloud Service-Zielinstanz indiziert.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 58195fcb10312c89042f555665d4c8b3642f82ba
-workflow-type: ht
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -58,7 +60,7 @@ Die Indizierung der Cloud Service-Zielinstanz wird höchstwahrscheinlich erfolgr
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
-## Wie geht es weiter {#whats-next}
+## Wie es weitergeht: {#whats-next}
 
 Sobald die Cloud Service-Zielinstanz indiziert wurde, können Sie die Protokolle der Indizierungsvorgänge anzeigen und nach Details und Fehlern suchen.
 

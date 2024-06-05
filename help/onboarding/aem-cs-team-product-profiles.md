@@ -2,10 +2,12 @@
 title: AEM as a Cloud Service – Team- und Produktprofile
 description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +26,9 @@ AEM as a Cloud Service ist ein vollständig Cloud-natives Angebot, das AEM als S
 
 Ihre AEM as a Cloud Service-Team-Mitglieder werden während des Onboardings über die Admin Console einem oder mehreren der folgenden Produktprofile hinzugefügt und zugewiesen.
 
-* **AEM Administratoren**: Ein AEM Administrator wird in der Regel Entwicklern zugewiesen, insbesondere Entwicklern, die Zugriff auf beispielsweise die Entwicklungsumgebungen benötigen. Das Produktprofil „AEM-Administratoren“ wird verwendet, um Administratorberechtigungen in der zugehörigen AEM-Instanz zu gewähren.
+* **AEM-Admins**: Die Rolle als AEM-Admin wird in der Regel Entwicklerinnen bzw. Entwicklern zugewiesen, insbesondere jenen, die Zugriff beispielsweise auf die Entwicklungsumgebungen benötigen. Das Produktprofil „AEM-Administratoren“ wird verwendet, um Administratorberechtigungen in der zugehörigen AEM-Instanz zu gewähren.
 
-* **AEM-Benutzende**: AEM-Benutzende sind die Personen in Ihrer Organisation, die AEM as a Cloud Service im Allgemeinen zum Erstellen von Inhalten verwenden. Diese Benutzer müssen auf AEM zugreifen, um ihre Aufgaben zu erledigen. Das Produktprofil eines AEM-Benutzers bzw. einer AEM-Benutzerin wird üblicherweise einem AEM-Inhaltsautor bzw. einer AEM-Inhaltsautorin zugewiesen, der/die die Inhalte erstellt und überprüft. Bei diesen Inhalten kann es sich um z. B. Seiten, Assets oder Veröffentlichungen handeln. Diesen Team-Mitgliedern wird das unten gezeigte Produktprofil „AEM-Benutzer“ zugewiesen.
+* **AEM-Benutzende**: AEM-Benutzende sind die Personen in Ihrer Organisation, die AEM as a Cloud Service im Allgemeinen zum Erstellen von Inhalten verwenden. Diese Benutzenden benötigen Zugriff auf AEM, um ihre Aufgaben wahrnehmen zu können. Das Produktprofil eines AEM-Benutzers bzw. einer AEM-Benutzerin wird üblicherweise einem AEM-Inhaltsautor bzw. einer AEM-Inhaltsautorin zugewiesen, der/die die Inhalte erstellt und überprüft. Bei diesen Inhalten kann es sich um z. B. Seiten, Assets oder Veröffentlichungen handeln. Diesen Team-Mitgliedern wird das unten gezeigte Produktprofil „AEM-Benutzer“ zugewiesen.
 
 ![Produktprofile](/help/onboarding/assets/admin-console-profiles.png)
 
@@ -42,7 +44,7 @@ Ihre AEM as a Cloud Service-Team-Mitglieder werden während des Onboardings übe
 
 >[!TIP]
 >
->* Weitere Informationen zu AEM Produktprofilen finden Sie unter [Zuweisen AEM Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
+>* Weitere Informationen zu AEM-Produktprofilen finden Sie unter [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
 >* Weitere Informationen zum Onboarding-Prozess finden Sie in der [Onboarding-Tour](/help/journey-onboarding/overview.md).
 
 ## Cloud Manager-Produktprofile {#cloud-manager-product-profiles}
@@ -56,17 +58,17 @@ Cloud Manager verfügt über vorkonfigurierte Produktprofile, die man sich als r
 Jedem Produktprofil sind spezifische Berechtigungen zugeordnet.
 
 * **Geschäftsinhaber**
-   * In dieser Rolle können Sie ein neues Programm hinzufügen oder ein Programm bearbeiten, eine Umgebung hinzufügen oder aktualisieren, Code in AEM Umgebung bereitstellen oder Code-Qualitätsprüfungen durchführen.
-   * Dieser Anwender ist verantwortlich für die Definition von KPIs, die Genehmigung von Produktionbereitstellungen und das Überschreiben von gravierenden 3-Tier-Fehlern, falls erforderlich.
+   * In dieser Rolle haben Sie die Berechtigung, ein neues Programm hinzuzufügen oder ein Programm zu bearbeiten, eine Umgebung hinzuzufügen oder zu aktualisieren, Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
+   * Diese Person ist verantwortlich für die Definition von KPIs, die Genehmigung von Produktionbereitstellungen und das Überschreiben von gravierenden dreistufigen Fehlern, falls erforderlich.
 * **Bereitstellungs-Manager**
-   * In dieser Rolle sind Sie berechtigt, eine Umgebung hinzuzufügen oder zu aktualisieren, eine beliebige Pipeline auszuführen, Code für AEM Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
-   * Dieser Anwender verwaltet die Bereitstellungsvorgänge mit Cloud Manager, um Staging- und Produktionsbereitstellungen durchzuführen, CI/CD-Pipeline zu bearbeiten, kann bei Bedarf gravierende 3-Tier-Fehler genehmigen und hat Zugriff auf das Git-Repository.
+   * In dieser Rolle sind Sie berechtigt, eine Umgebung hinzuzufügen oder zu aktualisieren, eine beliebige Pipeline auszuführen und Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
+   * Diese Person verwaltet die Bereitstellungsvorgänge mit Cloud Manager, um Staging- und Produktionsbereitstellungen durchzuführen, CI/CD-Pipeline zu bearbeiten, kann bei Bedarf gravierende dreistufige Fehler genehmigen und hat Zugriff auf das Git-Repository.
 * **Entwickler**
-   * In dieser Rolle haben Sie die Berechtigung, persönliche Zugriffstoken für den Zugriff auf Git zu generieren.
-   * Dieser Anwender entwickelt und testet benutzerdefinierten Anwendungscode, verwendet Cloud Manager hauptsächlich zur Anzeige des Bereitstellungsstatus und für Code-Commits auf das Git-Repository zugreifen.
+   * In dieser Rolle sind Sie berechtigt, persönliche Zugriffs-Token für den Zugriff auf Git zu generieren.
+   * Diese Person entwickelt und testet benutzerdefinierten Anwendungs-Code, verwendet Cloud Manager hauptsächlich zur Anzeige des Bereitstellungsstatus und kann für Code-Commits auf das Git-Repository zugreifen.
 * **Programm-Manager**
-   * In dieser Rolle haben Sie die Berechtigung, Pipelines zu planen, die dreistufigen Quality Gates zu überschreiben und eine Produktionsgenehmigung zu erteilen.
-   * Dieser Anwender nutzt Cloud Manager, um die Einrichtung von Teams vorzunehmen, den Status zu überprüfen, KPIs einzusehen und ggf. gravierende 3-Tier-Fehler zu genehmigen.
+   * In dieser Rolle sind Sie berechtigt, Pipelines zu planen, die dreistufigen Qualitäts-Gates außer Kraft zu setzen und Produktionsgenehmigungen zu erteilen.
+   * Diese Person nutzt Cloud Manager, um die Einrichtung von Teams vorzunehmen, den Status zu überprüfen, KPIs einzusehen und ggf. gravierende dreistufige Fehler zu genehmigen.
 
 Benutzende können mehreren Produktprofilen zugewiesen werden. Wenn Sie beispielsweise einem Benutzer bzw. einer Benutzerin die beiden Rollen **Geschäftsinhaber** und **Bereitstellungs-Manager** zuweisen, erhält er/sie die Summe aller dieser Berechtigungen.
 

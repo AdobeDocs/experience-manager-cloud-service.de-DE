@@ -2,10 +2,13 @@
 title: Abrufen von Zugriffsinformationen zum Git-Repository
 description: Erfahren Sie, wie der Front-End-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 83%
+source-wordcount: '874'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ Wenn Sie auch in der Rolle eines Cloud Manager- oder AEM-Admins sowie einer Fron
 
 In diesem Artikel wird der nächste Schritt gemacht und gezeigt, wie der Front-End-Entwickler den Cloud Manager-Zugriff nutzt, um Anmeldeinformationen für den Zugriff auf das AEM-Git-Repository abzurufen.
 
-Da nun eine Site basierend auf einer Vorlage erstellt wird, eine Pipeline eingerichtet ist, der Frontend-Entwickler integriert ist und alle benötigten Informationen enthält, verschiebt dieser Artikel die Perspektive weg von den Administratoren und ausschließlich hin zur Frontend-Entwicklerrolle.
+Da nun eine Site basierend auf einer Vorlage erstellt wurde, eine Pipeline eingerichtet ist, die Frontend-Entwickelnden eingebunden wurden und alle benötigten Informationen haben, wird in diesem Artikel die Perspektive weg von den Admins und ausschließlich hin zur Frontend-Entwicklerrolle verschoben.
 
 ## Ziel {#objective}
 
@@ -76,9 +79,9 @@ Wenn Sie diese E-Mail nicht erhalten haben, wenden Sie sich an die Cloud Manager
 
 ## Zugreifen auf Cloud Manager {#access-cloud-manager}
 
-1. Melden Sie sich bei Adobe Experience Cloud an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oder klicken Sie auf den in der Begrüßungs-E-Mail angegebenen Link.
+1. Melden Sie sich bei Adobe Experience Cloud unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an oder klicken Sie auf den in der Begrüßungs-E-Mail angegebenen Link.
 
-1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie den vom Cloud Manager-Administrator zur Verfügung gestellten Zugriff aus. Wenn dies Ihr erstes Front-End-Projekt für AEMaaCS ist, ist wahrscheinlich nur ein Programm verfügbar.
+1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie das Programm aus, auf das Sie zugreifen müssen, wie von den Cloud Manager-Admins angegeben. Wenn dies Ihr erstes Front-End-Projekt für AEMaaCS ist, ist wahrscheinlich nur ein Programm verfügbar.
 
    ![Auswählen eines Programms in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +91,7 @@ Jetzt sehen Sie einen Überblick über Ihr Programm. Ihre Seite sieht anders aus
 
 ## Abrufen von Repository-Zugriffsinformationen {#repo-access}
 
-1. Im **Pipelines** auf der Seite &quot;Cloud Manager&quot;die **Zugriff auf Repo Info** Schaltfläche.
+1. Wählen Sie im Abschnitt **Pipelines** auf der Cloud Manager-Seite die Schaltfläche **Auf Repository-Informationen zugreifen** aus.
 
    ![Pipelines](assets/pipelines-repo-info.png)
 
@@ -96,13 +99,13 @@ Jetzt sehen Sie einen Überblick über Ihr Programm. Ihre Seite sieht anders aus
 
    ![Repo-Info](assets/repo-info.png)
 
-1. Wählen Sie die **Kennwort generieren** -Schaltfläche, um ein Kennwort für sich selbst zu erstellen.
+1. Wählen Sie die Schaltfläche **Passwort generieren**, um ein Passwort für sich selbst zu erstellen.
 
 1. Speichern Sie das generierte Passwort in einem sicheren Passwort-Manager. Das Passwort wird nicht wieder angezeigt.
 
 1. Kopieren Sie außerdem die Felder **Benutzername** und **Git-Befehlszeile**. Sie nutzen diese Informationen später, um auf das Repository zuzugreifen.
 
-1. Auswählen **Schließen**.
+1. Wählen Sie **Schließen** aus.
 
 ## Wie geht es weiter {#what-is-next}
 
@@ -111,7 +114,7 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Erfahren Sie ganz allgemein, was Cloud Manager ist.
 * Rufen Sie Ihre Anmeldeinformationen ab, um auf AEM-Git zuzugreifen, damit Sie Ihre Anpassungen übernehmen können.
 
-Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit der Journey zur AEM SchnellSite-Erstellung fort, indem Sie das Dokument erneut überprüfen. [Anpassen des Site-Designs,](customize-theme.md) Hier erfahren Sie, wie das Site-Design erstellt wird, wie es angepasst wird und wie es mit Live-AEM getestet wird.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie das Dokument [Anpassen des Sitedesigns](customize-theme.md) lesen. Hier erfahren Sie, wie das Sitedesign erstellt, angepasst und mit Live-AEM-Inhalten getestet werden kann.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

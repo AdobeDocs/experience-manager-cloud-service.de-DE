@@ -3,9 +3,10 @@ title: Erstellen von Umgebungen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihre ersten Umgebungen erstellen.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
-workflow-type: ht
-source-wordcount: '732'
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -50,7 +51,7 @@ Für die Zwecke dieser Onboarding-Tour erstellen Sie eine Entwicklungsumgebung, 
 
    * Die Option **Umgebung hinzufügen** ist auch auf der Registerkarte **Umgebungen** verfügbar.
 
-      ![Registerkarte Umgebungen](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![Registerkarte Umgebungen](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * Die Option **Umgebung hinzufügen** kann aufgrund fehlender Berechtigungen oder abhängig von den lizenzierten Ressourcen deaktiviert werden.
 
@@ -87,6 +88,5 @@ Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den In
 * [Verwaltung von Umgebungen](/help/implementing/cloud-manager/manage-environments.md): Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
 * [Verwenden von Adobe Cloud Manager-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de): Cloud Manager-Umgebungen bestehen aus Authoring-, Publishing- und Dispatcher-Services von AEM. Erfahren Sie, wie die verschiedene Umgebungen Rollen unterstützen und mit verschiedenen CI/CD-Pipelines interagieren können.
 * [Schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md): Weitere Informationen zur Verwendung eines RDE finden Sie in dieser Dokumentation.
-
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 

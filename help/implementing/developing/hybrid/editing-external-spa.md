@@ -2,10 +2,12 @@
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 97%
+source-wordcount: '2374'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +27,7 @@ Die Voraussetzungen sind einfach.
 * Erstellen Sie ein AEM-SPA-Projekt mithilfe des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de#available-properties).
    * Forms bildet die Grundlage des AEM-Projekts, das aktualisiert wird, um die externe SPA aufzunehmen.
    * Für die Beispiele in diesem Dokument verwendet Adobe das [WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de#spa-editor) als Ausgangspunkt.
-* Lassen Sie die funktionierende, externe React-SPA, die Sie integrieren möchten, zur Hand.
+* Halten Sie die funktionierende, externe React SPA bereit, die Sie integrieren möchten.
 
 ## Hochladen der SPA in das AEM-Projekt {#upload-spa-to-aem-project}
 
@@ -111,7 +113,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 
    ![Eigenschaften von Textkomponenten](assets/external-spa-text-properties.png)
 
-   Diese Werte werden als Eigenschaften an die erstellte `AEMText` React-Komponente und kann zum Rendern des Inhalts verwendet werden.
+   Diese Werte werden als Eigenschaften an die erstellte React-Komponente `AEMText` übergeben und können zum Rendern des Inhalts verwendet werden.
 
    ```javascript
    import React from 'react';
@@ -343,7 +345,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Fügen Sie Helfer innerhalb des SPA-Routings hinzu.
 
-   * Die erstellte Seite kann den erwarteten Inhalt noch nicht in AEM rendern. Dies liegt daran, dass der Router den Pfad `/test` erwartet, während der aktive Pfad in AEM `/wknd-spa-react/us/en/test` ist. Um den AEM-spezifischen Teil der URL aufzunehmen, müssen wir einige Helfer auf der SPA Seite hinzufügen.
+   * Die erstellte Seite kann den erwarteten Inhalt in AEM noch nicht rendern. Dies liegt daran, dass der Router den Pfad `/test` erwartet, während der aktive Pfad in AEM `/wknd-spa-react/us/en/test` ist. Um den AEM-spezifischen Teil der URL aufzunehmen, müssen wir einige Helfer auf der SPA Seite hinzufügen.
 
    ![Routing-Helfer](assets/external-spa-router-helper.png)
 
@@ -356,7 +358,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Überprüfen Sie die Bearbeitung der Seite in AEM.
 
-   * Stellen Sie das Projekt zur AEM bereit und navigieren Sie zum erstellten . `test` Seite. Der Seiteninhalt wird jetzt gerendert und die AEM-Komponenten können bearbeitet werden.
+   * Stellen Sie das Projekt in AEM bereit und navigieren Sie zu der erstellten `test`-Seite. Der Seiteninhalt wird jetzt gerendert und die AEM-Komponenten können bearbeitet werden.
 
 ## Framework-Einschränkungen {#framework-limitations}
 

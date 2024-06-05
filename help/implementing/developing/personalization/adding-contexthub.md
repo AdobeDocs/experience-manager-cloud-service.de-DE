@@ -2,8 +2,10 @@
 title: Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 100%
 
@@ -139,7 +141,7 @@ Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 
 >[!WARNING]
 >
->Die installierten Segmente werden als Referenzkonfigurationen bereitgestellt, damit Sie Ihre eigene Konfiguration für Ihr Projekt erstellen können. Verwenden Sie sie nicht direkt.
+>Die installierten Segmente werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen. Verwenden Sie sie daher nicht direkt.
 
 ## Debuggen von ContextHub {#debugging-contexthub}
 

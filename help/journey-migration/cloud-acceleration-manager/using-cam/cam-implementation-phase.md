@@ -2,10 +2,12 @@
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 96%
+source-wordcount: '620'
+ht-degree: 100%
 
 ---
 
@@ -89,7 +91,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Aktivitätskarte „Bereitstellung
 
 ## Verwenden der Karte „Inhaltstransfer“ {#content-transfer}
 
-Mit der Karte Inhaltstransfer können Sie den Inhaltstransfer von Ihrer aktuellen AEM auf AEM as a Cloud Service starten und verwalten.
+Mit der Karte „Inhaltstransfer“ können Sie den Inhaltstransfer von Ihrer aktuellen AEM-Instanz zu AEM as a Cloud Service starten und verwalten.
 
 In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstransfer“:
 
@@ -126,6 +128,6 @@ To estimate the size of the AEM Repository, you can run the Disk Usage report un
 
 You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`. -->
 
-## Wie geht es weiter {#whats-next}
+## Wie es weitergeht: {#whats-next}
 
 Nachdem Sie jetzt wissen, wie Sie sich bei Cloud Acceleration Manager anmelden und die Implementierungsphase nutzen, können Sie sich mit dem nächsten Schritt beschäftigen: der [Live-Schaltungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=de).

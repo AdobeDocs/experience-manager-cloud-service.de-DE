@@ -1,13 +1,15 @@
 ---
 title: SecurBank-Beispielanwendung für den universellen Editor
 description: Erfahren Sie mehr über den universellen Editor mit praxisnaher Erfahrung, indem Sie die SecurBank-App verwenden, die die Leistung, Flexibilität und Benutzerfreundlichkeit des universellen Editors demonstriert, um die Inhaltserstellung zu beschleunigen.
-source-git-commit: 4b7612f423e4e728911920793e9e0a03757c7c9d
+exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
 
 ---
-
 
 # SecurBank-Beispielanwendung für den universellen Editor {#securbank}
 

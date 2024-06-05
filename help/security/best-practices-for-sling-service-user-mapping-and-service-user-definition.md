@@ -1,13 +1,15 @@
 ---
 title: Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition
 description: Erfahren Sie mehr über die Best Practices für die Sling Service-Benutzerzuordnung und die Dienstbenutzerdefinition
-source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
-workflow-type: ht
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
 ---
-
 
 # Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -274,8 +276,3 @@ delete service my-feature-service
 Es ist wichtig, Server-seitige Tests für Dienstbenutzende und das Setup Ihrer Berechtigungen zu schreiben. Dadurch wird nicht nur überprüft, ob Ihr Setup wirklich funktioniert, sondern Sie können auch Regressionen und unbeabsichtigte Fehler erkennen, wenn Sie Zugriffskontrollinhalte oder Dienstbenutzende ändern.
 
 Die `com.adobe.granite.testing.clients`-Bibliothek bietet eine Vielzahl von Dienstprogrammen, die das Schreiben von SSTs für Dienstbenutzende erleichtern.
-
-
-
-
-

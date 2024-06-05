@@ -2,10 +2,12 @@
 title: Einführung in den universellen Editor
 description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und inwiefern er Entwickelnden ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -92,4 +94,4 @@ Beachten Sie bei der Erkundung des universellen Editors und später bei seiner I
 
 ## Nächste Schritte {#next-steps}
 
-Lesen Sie das Dokument . [Anwendungsfälle und Lernpfade für universelle Editoren](/help/implementing/universal-editor/use-cases.md) um mehr über gängige Anwendungsfälle für den universellen Editor zu erfahren und die richtigen Dokumentationsressourcen zu finden, um Sie in Ihrem Projekt zu unterstützen.
+Lesen Sie das Dokument [Anwendungsfälle und Lernpfade für den universellen Editor](/help/implementing/universal-editor/use-cases.md), um mehr über gängige Anwendungsfälle für den universellen Editor zu erfahren und die richtigen Dokumentationsressourcen zu finden, die Sie bei Ihrem Projekt unterstützen können.

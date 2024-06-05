@@ -2,10 +2,13 @@
 title: Authoring für AEM als Headless-CMS – eine Einführung
 description: Eine Einführung in die Verwendung der Funktionen von Adobe Experience Manager as a Cloud Service als Headless-CMS zur Erstellung von Inhalten für Ihr Projekt.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 95%
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
@@ -61,7 +64,7 @@ Das bedeutet, dass Ihre Inhalte eine breite Palette von Geräten in einer Vielza
 
 Die Inhaltsmodellierung (auch als Datenmodellierung bezeichnet) ist ein weiterer technischer Begriff. Warum sollte sie Sie als Autor interessieren?
 
-Damit die Headless-Anwendungen auf Ihre Inhalte zugreifen können und etwas damit anfangen können, muss Ihr Inhalt über eine vordefinierte Struktur verfügen. Es wäre möglich, Ihre Inhalte frei zu gestalten, aber das würde das Leben für die Anwendungen *sehr* kompliziert machen.
+Damit die Headless-Anwendungen auf Ihre Inhalte zugreifen und etwas damit anfangen können, müssen Ihre Inhalte wirklich über eine vordefinierte Struktur verfügen. Es wäre möglich, Ihre Inhalte frei zu gestalten, aber das würde das Leben für die Anwendungen *sehr* kompliziert machen.
 
 Grundsätzlich umfasst der Prozess der Definition der Struktur für Ihre Inhalte das Entwerfen eines Modells – das als Datenmodellierung bezeichnet wird.
 
@@ -85,7 +88,7 @@ Jetzt, da Sie die Konzepte und Terminologie gelernt haben, lautet der nächste S
    * [Grundlegendes zur CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
    * [Hier erfahren Sie, wie Sie Ihre Inhalte modellieren](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 
 * [AEM Headless-Inhaltsarchitekten-Tour](/help/journey-headless/architect/overview.md)
 

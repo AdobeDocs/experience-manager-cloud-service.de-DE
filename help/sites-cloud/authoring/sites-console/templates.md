@@ -2,8 +2,11 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '4524'
 ht-degree: 100%
 
@@ -67,9 +70,9 @@ Die in diesem Dokument beschriebenen Aufgaben werden jeweils mit der Rolle aufge
 
 ## Erstellen und Verwalten von Vorlagen {#creating-and-managing-templates}
 
-Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
+Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
-* Verwenden Sie die **Vorlagen**-Konsole. Dies ist im Abschnitt **Allgemein** der **Tools**-Konsole verfügbar.
+* Verwenden Sie die **Vorlagenkonsole**. Dies ist im Abschnitt **Allgemein** der **Tools**-Konsole verfügbar.
    * Oder direkt unter: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen Sie eine neue Vorlage](#creating-a-new-template-template-author), die anfangs leer ist.
@@ -143,7 +146,7 @@ Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 * Titel
    * Ein Titel, der zur Identifizierung der Vorlage verwendet wird, z. B. im Assistenten **Seite erstellen**.
 * Beschreibung
-   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden können.
+   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden kann.
 
 So zeigen Sie die Eigenschaften an bzw. bearbeiten sie:
 
@@ -226,7 +229,7 @@ Da beim Rendern einer Seite auf die Vorlage verwiesen wird, muss die vollständi
 1. Wählen Sie die **Inhaltsrichtlinien**, die mit veröffentlicht werden sollen.
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen – Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen | Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können verschiedene Aspekte definiert werden. Das Bearbeiten von Vorlagen ähnelt der Seitenbearbeitung.
 

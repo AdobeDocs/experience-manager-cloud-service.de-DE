@@ -2,8 +2,10 @@
 title: Aktivieren eines JSON-Exports für eine Komponente
 description: Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 100%
 
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der JSON-Export basiert auf [Sling-Modellen](https://sling.apache.org/documentation/bundles/models.html) und auf dem Framework des [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (der sich wiederum auf [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) stützt).
 

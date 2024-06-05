@@ -2,10 +2,13 @@
 title: Erfahren Sie mehr über Headless-Inhalte und ihre Übersetzung in AEM
 description: Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 90%
+source-wordcount: '737'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In einem Full-Stack-CMS befindet sich die Funktionalität zum Bearbeiten von Inhalten im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In einem Full-Stack-CMS befindet sich die Funktionalität zum Bearbeiten Ihrer Inhalte im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
 * Es gibt ein System, das gepflegt werden muss.
 * Inhalte werden zentral verwaltet.
@@ -47,7 +50,7 @@ Wenn wir über ein Headless-CMS sprechen, verwaltet das CMS die Inhalte und stel
 
 ![Headless-CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-Die verbrauchenden Dienste, seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse, progressive Web-Apps (PWA) usw., übernehmen Inhalte aus dem Headless-CMS und bieten ihr eigenes Rendering. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
+Die verbrauchenden Services – seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse oder Progressive Web-Apps (PWAs) – nehmen Inhalte aus dem Headless-CMS auf und stellen ihr eigenes Rendering bereit. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
 
 Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitigt. Dadurch wird auch die Verantwortung für das Rendering der Inhalte auf die Services verlagert, die den Inhalt tatsächlich benötigen und oft besser für dieses Rendering geeignet sind.
 
@@ -57,7 +60,7 @@ Zusätzlich zu den robusten Tools zum Erstellen, Verwalten und Bereitstellen her
 
 Die Leistungsfähigkeit von AEM ermöglicht es, Inhalte entweder „headless“, im Full Stack oder in beiden Modellen gleichzeitig bereitzustellen. Der Übersetzungsspezialisten kannn die gleichen Übersetzungs-Tools auf beide Inhaltstypen anwenden, sodass er einen einheitlichen Ansatz für die Übersetzung seiner Inhalte erhält.
 
-Auf der Journey erfahren Sie mehr darüber, wie AEM Inhalte übersetzt, aber auf hoher Ebene ist das Konzept einfach:
+Im weiteren Verlauf der Tour erfahren Sie mehr darüber, wie AEM Inhalte übersetzt, aber im Prinzip ist das Konzept ganz einfach:
 
 1. Eine Verbindung zu einem Übersetzungsdienst wird definiert, indem das Translation Integration Framework (TIF) konfiguriert wird.
 1. Mithilfe von Übersetzungsregeln wird festgelegt, welche Inhalte übersetzt werden sollen.

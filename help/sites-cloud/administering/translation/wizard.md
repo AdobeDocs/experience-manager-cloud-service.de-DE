@@ -4,10 +4,11 @@ description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkop
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -21,19 +22,19 @@ Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Ve
 
 >[!NOTE]
 >
->Der Benutzer muss Mitglied der `project-administrators` um eine Sprachkopie einer Site zu erstellen.
+>Benutzende müssen Mitglieder der Gruppe `project-administrators` sein, um eine Sprachkopie einer Site erstellen zu können.
 
 Sie können wie folgt auf diesen Assistenten zugreifen:
 
-1. Wählen Sie in der Sites-Konsole eine Seite aus und wählen Sie **Erstellen** und wählen **Sprachkopie**.
+1. Wählen Sie in der Sites-Konsole eine Seite, dann die Option **Erstellen** und anschließend **Sprachkopie** aus.
 
    ![Sprachkopie im Assistenten erstellen](../assets/language-copy-wizard.png)
 
-1. Der Assistent wird geöffnet. **Quelle auswählen** Schritt zum Hinzufügen/Entfernen von Seiten. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen. Wählen Sie die Seiten aus, die Sie einschließen möchten, und wählen Sie **Nächste**.
+1. Der Assistent öffnet sich mit dem Schritt **Quelle auswählen**, mit dem Sie Seiten hinzufügen/entfernen können. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen. Wählen Sie die Seiten aus, die Sie einschließen möchten, und wählen Sie **Weiter** aus.
 
    ![Hinzufügen von Seiten mit dem Assistenten](../assets/language-copy-wizard-add-pages.png)
 
-1. Die **Konfigurieren** Im Schritt des Assistenten können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen. Wählen Sie **Weiter** aus.
+1. Im Schritt **Konfigurieren** des Assistenten können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen. Wählen Sie **Weiter** aus.
 
    ![Konfigurationsschritt des Assistenten](../assets/language-copy-wizard-configure.png)
 
@@ -41,7 +42,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
    >
    >Standardmäßig gibt es nur eine Übersetzungs-Einstellung. Um die Auswahl anderer Einstellungen zu ermöglichen, müssen Sie zuerst die Cloud-Einstellungen konfigurieren. Siehe [Konfigurieren des Übersetzungsintegrations-Frameworks](integration-framework.md).
 
-1. Im **Übersetzen** Schritt des Assistenten können Sie zwischen der Erstellung der Struktur, der Erstellung eines Übersetzungsprojekts oder dem Hinzufügen zu einem vorhandenen Übersetzungsprojekt wählen.
+1. Im Schritt **Übersetzen** können Sie im Assistenten zwischen dem Erstellen der Struktur, dem Erstellen eines neuen Übersetzungsprojekts oder dem Hinzufügen zu einem vorhandenen Übersetzungsprojekt wählen.
 
    >[!NOTE]
    >
@@ -49,6 +50,6 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 
    ![Übersetzungsschritt des Assistenten](../assets/language-copy-wizard-translate.png)
 
-1. Mit der Schaltfläche **Erstellen** wird der Assistent beendet. Auswählen **Fertig** den Assistenten zu schließen oder **Öffnen** , um das resultierende Übersetzungsprojekt anzuzeigen.
+1. Mit der Schaltfläche **Erstellen** wird der Assistent beendet. Wählen Sie **Fertig**, um den Assistenten zu schließen, oder **Öffnen**, um das entsprechende Übersetzungsprojekt anzuzeigen.
 
    ![Assistenten beenden](../assets/language-copy-wizard-done.png)

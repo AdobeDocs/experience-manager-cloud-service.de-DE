@@ -1,13 +1,14 @@
 ---
 title: Beheben von Problemen mit MSM und häufig gestellte Fragen
-description: Erfahren Sie, wie Sie die häufigsten MSM-bezogenen Probleme beheben und Antworten auf die häufigsten MSM-bezogenen Fragen erhalten.
+description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben, und erhalten Antworten auf häufig gestellte Fragen zu MSM.
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 52%
+source-wordcount: '766'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 52%
 Wenn Sie ein Ihrer Ansicht nach falsches Verhalten oder einen Fehler in MSM feststellen, sollten Sie vor der detaillierten Fehlerbehebung Folgendes sicherstellen:
 
 * Überprüfen Sie die [Häufig gestellte Fragen zu MSM](#faq) weil Ihre Probleme oder Fragen möglicherweise bereits dort angesprochen werden.
-* Überprüfen Sie die [Artikel zu Best Practices für MSM](best-practices.md) da dort mehrere Tipps sowie Erläuterungen zu einigen falschen Vorstellungen angeboten werden.
+* Lesen Sie den [Artikel zu Best Practices für MSM](best-practices.md), in dem Tipps gegeben und einige Missverständnisse geklärt werden.
 
 ## Erweiterte Informationen zum Status Ihres Blueprints und Ihrer Live Copy {#advanced-info}
 
@@ -27,13 +28,11 @@ MSM enthält mehrere Servlets, die mit Selektoren in den Ressourcen-URLs angefor
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Verwenden Sie diesen Code auf einer Blueprint-Seite, um die Liste aller mit ihr verknüpften Live Copies mit zusätzlichen Live Copy-Statusinformationen abzurufen.
    * zum Beispiel:
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Verwenden Sie diesen Code auf Live Copy-Seiten, um erweiterte Informationen über die Verbindung mit den Blueprint-Seiten abzurufen. Wenn es sich bei der Seite nicht um eine Live Copy handelt, erhalten Sie kein Ergebnis.
    * zum Beispiel:
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Diese Servlets generieren DEBUG-Protokollmeldungen über den `com.day.cq.wcm.msm`-Logger, die ebenfalls hilfreich sein können.
@@ -50,7 +49,7 @@ Die Servlets haben berechnete Informationen auf Grundlage MSM-spezifischer Knote
       * `cq:isDeep` ist „true“, wenn die untergeordneten Seiten dieses Live Copy-Stamms in der Live Copy enthalten sind.
 * `cq:LiveRelationship`-Mixin-Typ
    * Jede Live Copy-Seite verfügt über einen solchen Mixin-Typ auf ihrem `jcr:content`-Knoten.
-   * Ist dies nicht der Fall, wurde die Seite irgendwann getrennt oder manuell über die Authoring-Oberfläche außerhalb einer Live Copy-Aktion erstellt (Erstellen oder Rollout).
+   * Ist dies nicht der Fall, wurde die Seite zu einem bestimmten Zeitpunkt getrennt oder manuell über die Autorenoberfläche außerhalb einer Live Copy-Aktion (Erstellen oder Rollout) erstellt.
 * `cq:LiveSyncCancelled`-Mixin-Typ
    * Wurde zu `jcr:content`-Knoten der Live Copy-Seiten hinzugefügt, die ausgesetzt wurden.
    * Wenn die Aussetzung auch für untergeordnete Seiten gilt, wird eine `cq:isCancelledForChildren`-Eigenschaft auf demselben Knoten auf „true“ festgelegt.
@@ -63,11 +62,11 @@ Das Wissen über diese Eigenschaften kann auch nützlich sein, damit Sie Ihr Rep
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 
-Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
+Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
 ### Warum werden einige Eigenschaften (z. B. Titel, Anmerkungen) während eines MSM-Rollouts nicht aktualisiert? {#missing-properties}
 
-MSM-Synchronisierungsaktionen sind hochgradig konfigurierbar. Welche Eigenschaften oder Komponenten bei Rollouts direkt geändert werden, hängt von den Eigenschaften dieser Konfigurationen ab.
+MSM-Synchronisierungsaktionen sind detailliert konfigurierbar. Welche Eigenschaften oder Komponenten während der Rollouts geändert werden, hängt unmittelbar von den Eigenschaften dieser Konfigurationen ab.
 
 Weitere Informationen zu diesem Thema finden Sie in [diesem Artikel](best-practices.md).
 
@@ -78,11 +77,11 @@ Es gibt keine **Rollout** Berechtigung, die für Adobe Experience Manager-Prinzi
 Stattdessen können Sie Folgendes tun:
 
 * Passen Sie die Benutzeroberfläche des Produkts an, um die Rollout-Aktionen für einen bestimmten Prinzipal auszublenden.
-* Entfernen Sie Schreibberechtigungen aus der Live Copy-Struktur für Autoren, die keine Rollout durchführen dürfen.
+* Entfernen Sie Schreibberechtigungen aus der Live Copy-Struktur für Autorinnen und Autoren, die keinen Rollout durchführen dürfen.
 
-### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“? {#moved-pages}
+### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_moved“? {#moved-pages}
 
-Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine Live Copy-Seite, falls sie noch nicht vorhanden ist. Beispiel: Das Rollout erfolgt zum ersten Mal oder die Live Copy-Seite wurde manuell gelöscht.
+Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine Live Copy-Seite, falls sie noch nicht vorhanden ist. Beispielsweise geschieht dies, wenn sie zum ersten Mal bereitgestellt wird oder die Live Copy-Seite manuell gelöscht wurde.
 
 In diesem letzteren Fall jedoch, wenn eine Seite ohne `cq:LiveRelationship` -Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite so umbenannt, bevor die Live Copy-Seite erstellt wird.
 
@@ -90,6 +89,6 @@ Standardmäßig erwartet der Rollout eine verknüpfte Live Copy-Seite, auf die d
 
 Wenn eine &quot;eigenständige&quot;Seite gefunden wird, wählt MSM, diese Seite umzubenennen, und erstellt eine separate, verknüpfte Live Copy-Seite.
 
-Eine solche eigenständige Seite in einer Live Copy-Unterstruktur ist normalerweise das Ergebnis einer **Trennen** oder die frühere Live Copy-Seite von einem Autor manuell gelöscht und dann mit demselben Namen neu erstellt wurde.
+Eine solche eigenständige Seite in einer Live Copy-Unterstruktur ist normalerweise das Ergebnis der Aktion **Trennen** oder die vorherige Live Copy-Seite wurde von einer Autorin oder einem Autor manuell gelöscht und dann mit demselben Namen neu erstellt.
 
-Verwenden Sie dazu die Live Copy **Aussetzen** anstelle von **Trennen**. Weitere Informationen über **Trennen** -Aktion finden Sie unter [diesen Artikel.](creating-live-copies.md)
+Um dies zu vermeiden, verwenden Sie die Funktion **Aussetzen** für die Live Copy anstelle von **Trennen**. Weitere Informationen zur Aktion **Trennen** finden Sie in [diesem Artikel.](creating-live-copies.md)

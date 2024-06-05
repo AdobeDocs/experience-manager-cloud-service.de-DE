@@ -4,8 +4,10 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor [!DNL Adobe Experience M
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '4303'
 ht-degree: 100%
 
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Konfigurieren der Rich-Text-Editor-Plug-ins {#configure-the-rich-text-editor-plug-ins}
 
-RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Funktionseigenschaft so konfigurieren, dass eine oder mehrere RTE-Funktionen aktiviert oder deaktiviert werden. In diesem Artikel wird beschrieben, wie Sie die RTE-Plug-ins spezifisch konfigurieren.
+RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Funktionseigenschaft bereitgestellt. Sie können die Funktionseigenschaft so konfigurieren, dass eine oder mehrere RTE-Funktionen aktiviert oder deaktiviert werden. In diesem Artikel wird beschrieben, wie Sie die RTE-Plug-ins spezifisch konfigurieren.
 
 Weitere Informationen zu den anderen RTE-Konfigurationen finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md).
 
@@ -392,7 +394,7 @@ Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 
 >[!CAUTION]
 >
->Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
+Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
 
 ## Konfigurieren von Sonderzeichen {#spchar}
 
@@ -402,7 +404,7 @@ Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeic
 
 >[!CAUTION]
 >
->Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer Auswahl neu.
+Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer Auswahl neu.
 
 ### Definieren einzelner Zeichen {#definesinglechar}
 
@@ -453,12 +455,10 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 1. Fügen Sie unter diesem Knoten (der entsprechend dem Sonderzeichenbereich benannt wurde) die folgenden beiden Eigenschaften hinzu:
 
    * **Name** `rangeStart`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
 
    * **Name** `rangeEnd`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
 
@@ -478,11 +478,11 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
 
 >[!NOTE]
 >
->Sie können Stile für Tabellen und Zellen nur für die klassische Benutzeroberfläche definieren.
+Sie können Stile für Tabellen und Zellen nur für die klassische Benutzeroberfläche definieren.
 
 >[!NOTE]
 >
->Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Es wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser kann es zu unterschiedlichen Ergebnissen kommen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
+Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Es wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser kann es zu unterschiedlichen Ergebnissen kommen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/table`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `table`:
@@ -493,13 +493,13 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
 
    >[!NOTE]
    >
-   >Wenn Sie nicht alle Tabellen-Features aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
+   Wenn Sie nicht alle Tabellen-Features aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
    >
-   >* **Typ** `String[]`
+   * **Typ** `String[]`
    >
-   >* **Wert(e):** Nach Bedarf einen oder beide der folgenden Werte:
-   >* `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
-   >* `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
+   * **Wert(e):** Nach Bedarf einen oder beide der folgenden Werte:
+   * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
+   * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
 1. Definieren Sie den Speicherort von CSS-Stylesheets, um diese zu referenzieren. Siehe [Festlegen des Stylesheet-Speicherorts](#locationofstylesheet), da dieser derselbe wie bei der Definition der [Textstile](#textstyles) ist. Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
 1. Erstellen Sie unter dem Knoten `table` die folgenden neuen Knoten (nach Bedarf):
@@ -561,7 +561,7 @@ Wenn das Plug-in „Rechtschreibprüfung“ aktiviert haben, verwendet der RTE W
 
 >[!NOTE]
 >
->Die Meldung „Rechtschreibprüfung fehlgeschlagen.“ wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist.
+Die Meldung „Rechtschreibprüfung fehlgeschlagen.“ wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist.
 
 Eine AEM-Standardinstallation umfasst die Wörterbücher für:
 
@@ -570,7 +570,7 @@ Eine AEM-Standardinstallation umfasst die Wörterbücher für:
 
 >[!NOTE]
 >
->Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden ReadMe-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
+Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden ReadMe-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
 Gehen Sie wie folgt vor, um bei Bedarf weitere Wörterbücher hinzuzufügen.
 
@@ -579,18 +579,18 @@ Gehen Sie wie folgt vor, um bei Bedarf weitere Wörterbücher hinzuzufügen.
 
    >[!CAUTION]
    >
-   >Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
+   Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
 
 1. Suchen Sie die *.aff- und die *.dic-Dateien. Der Dateiname sollte nur Kleinbuchstaben aufweisen. Zum Beispiel `de_de.aff` und `de_de.dic`.
 1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
->Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben.
+Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben.
 >
->Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste die Rechtschreibprüfung auswählen. Der RTE überprüft die Rechtschreibprüfung der Wörter und markiert falsch geschriebene Wörter.
+Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste die Rechtschreibprüfung auswählen. Der RTE überprüft die Rechtschreibprüfung der Wörter und markiert falsch geschriebene Wörter.
 >
->Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Wählen Sie erneut die Schaltfläche „Rechtschreibprüfung“ aus, um die Rechtschreibprüfung auszuführen.
+Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Wählen Sie erneut die Schaltfläche „Rechtschreibprüfung“ aus, um die Rechtschreibprüfung auszuführen.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undohistory}
 
@@ -626,7 +626,7 @@ Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Ei
 
 >[!NOTE]
 >
->Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
+Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/lists`. Erstellen Sie diese Knoten, falls sie nicht bereits vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie im `lists`-Knoten den `identSize`-Parameter:
@@ -659,13 +659,13 @@ Beim Hinzufügen von Links in [!DNL Experience Manager] können Sie die zu verwe
 
    >[!NOTE]
    >
-   >Der Knoten `../items/text` hat die Eigenschaft:
+   Der Knoten `../items/text` hat die Eigenschaft:
    >
-   >* **Name** `xtype`
-   >* **Typ** `String`
-   >* **Wert** `richtext`
+   * **Name** `xtype`
+   * **Typ** `String`
+   * **Wert** `richtext`
    >
-   >Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Zwei Beispiele sind `/apps/myProject>/components/text/dialog/items/text` und `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Zwei Beispiele sind `/apps/myProject>/components/text/dialog/items/text` und `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Erstellen Sie unter `htmlRules` einen neuen Knoten.
 
@@ -698,7 +698,7 @@ Beim Hinzufügen von Links in [!DNL Experience Manager] können Sie die zu verwe
       * **Typ** `String`
       * **Wert(e):** Ein oder mehrere Standardprotokolle
 
-   * Definition der Art, wie das Zielattribut eines Links verarbeitet werden soll Erstellen Sie einen Knoten:
+   * Definition der Art, wie das Zielattribut eines Links verarbeitet werden soll. Erstellen Sie einen Knoten:
 
       * **Name** `targetConfig`
       * **Typ** `nt:unstructured`

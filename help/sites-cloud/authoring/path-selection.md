@@ -1,13 +1,16 @@
 ---
 title: Pfadauswahl mit dem Pfad-Browser
 description: Erfahren Sie, wie Sie mit dem Pfad-Browser Ressourcen in AEM auswählen können.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 
 ---
-
 
 # Pfadauswahl {#path-selection}
 

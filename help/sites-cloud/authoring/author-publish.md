@@ -2,8 +2,11 @@
 title: Authoring- und Veröffentlichungskonzepte
 description: Erfahren Sie mehr über die Konzepte zum Authoring in AEM mit Autoren-, Vorschau- und Veröffentlichungsumgebungen.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
 

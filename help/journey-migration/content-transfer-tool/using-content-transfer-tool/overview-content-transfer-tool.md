@@ -1,11 +1,13 @@
 ---
 title: Übersicht über das Content Transfer Tool
-description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte von einer On-Premise-AEM-Instanz auf AEM as a Cloud Service übertragen können.
+description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte von einer On-Premise-AEM-Instanz auf AEM as a Cloud Service übertragen können
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 93%
+source-wordcount: '655'
+ht-degree: 100%
 
 ---
 
@@ -47,7 +49,7 @@ Beim Inhaltstransfer gibt es zwei Phasen:
 
 Ein Migrationssatz hat die folgenden Attribute:
 
-* Mit der neuen Version können Sie maximal zwanzig Migrationssätze in einem Projekt erstellen, das in Cloud Acceleration Manager erstellt wurde.
+* Mit der neuen Version können Sie maximal 20 Migrationssätze in einem Projekt erstellen, das in Cloud Acceleration Manager erstellt wurde.
 * Jeder Migrationssatz sollte einen eindeutigen Namen haben.
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
@@ -78,6 +80,6 @@ Der Ablauf eines Migrationssatzes kann in der Zeile für den Migrationssatz übe
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 
 
-## Wie geht es weiter {#whats-next}
+## Wie es weitergeht: {#whats-next}
 
 Nun, da Sie sich mit dem Content Transfer Tool und seiner Übersicht, die dieses Tool beschreibt, vertraut gemacht haben, können Sie vorhandene Inhalte von einer Quell-AEM-Instanz (On-Premise oder AMS) in die AEM Cloud Service-Zielinstanz verschieben. Lesen Sie dazu [Voraussetzungen für das Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).

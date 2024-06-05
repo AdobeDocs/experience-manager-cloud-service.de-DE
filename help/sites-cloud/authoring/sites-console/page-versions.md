@@ -2,8 +2,11 @@
 title: Arbeiten mit Seitenversionen
 description: Erfahren Sie, wie Sie verschiedene Versionen Ihrer Seiten erstellen, vergleichen und wiederherstellen können.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 100%
 
@@ -225,7 +228,7 @@ Timewarp ist ein [Modus](/help/sites-cloud/authoring/page-editor/introduction.md
 
 Timewarp bemüht sich nach Kräften, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität der kontinuierlichen Erstellung von Inhalten in AEM ist diese Reproduktion jedoch nicht immer möglich. Beachten Sie diese Einschränkungen bei der Verwendung von Timewarp.
 
-* **Timewarp arbeitet auf der Grundlage veröffentlichter Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Authoring-Umgebung an.
+* **Timewarp arbeitet auf der Grundlage veröffentlichter Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung an.
 * **Timewarp verwendet Seitenversionen**: Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite noch im Repository verfügbar sind.
 * **Entfernte Versionen wirken sich auf Timewarp**: Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen.
 * **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen wollen, müssen Sie dies manuell mit [Wiederherstellen](#revert-to-a-version) tun.

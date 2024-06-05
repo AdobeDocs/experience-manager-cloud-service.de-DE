@@ -2,9 +2,11 @@
 title: Decoration-Tag
 description: Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 100%
 
 ---

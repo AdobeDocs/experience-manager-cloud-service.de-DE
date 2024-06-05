@@ -2,10 +2,13 @@
 title: Programme und Programmtypen
 description: Erfahren Sie mehr über die Hierarchie von Cloud Manager und darüber, wie die verschiedenen Arten von Programmen in die Struktur passen und wie sie sich unterscheiden.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 
 Das Cloud Manager-Programm wird automatisch mit seinem eigenen Git-Repository bereitgestellt.
 
-Um auf das Git-Repository von Cloud Manager zugreifen zu können, müssen Benutzer einen Git-Client mit einem Befehlszeilen-Tool, einem eigenständigen visuellen Git-Client oder der IDE der Wahl des Benutzers wie Eclipse, IntelliJ oder NetBeans verwenden.
+Damit Benutzende auf das Git-Repository von Cloud Manager zugreifen können, müssen sie einen Git-Client mit einem Befehlszeilen-Tool, einen eigenständigen visuellen Git-Client oder die IDE der Benutzerin bzw. des Benutzers (wie Eclipse, IntelliJ oder NetBeans) verwenden.
 
 Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Weitere Informationen zum Verwalten von Git mithilfe der Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
@@ -53,7 +56,7 @@ Der einzige Unterschied besteht darin, dass das Remote-Git-Repository Teil von C
 
 ## Programmtypen {#program-types}
 
-Ein Benutzer kann **production** oder **Sandbox** Programm.
+Benutzende können ein **Produktionsprogramm** oder ein **Sandbox-Programm** erstellen.
 
 * Ein **Produktionsprogramm** wird erstellt, um Live-Traffic für Ihre Site zu ermöglichen.
    * Weitere Informationen finden Sie in der [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).

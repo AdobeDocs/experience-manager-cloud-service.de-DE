@@ -2,8 +2,11 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 100%
 

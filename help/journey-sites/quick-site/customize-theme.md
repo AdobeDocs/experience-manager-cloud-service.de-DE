@@ -2,10 +2,13 @@
 title: Anpassen des Site-Designs
 description: Erfahren Sie, wie das Site-Design erstellt wird, wie Sie es anpassen und wie Sie es mit AEM-Live-Inhalten testen können.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 94%
+source-wordcount: '954'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +67,7 @@ Sobald Sie sich mit der Struktur des Design-Projekts vertraut gemacht haben, sta
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Wenn der Proxy-Server gestartet wird, wird automatisch ein Browser mit `http://localhost:7001/` geöffnet. Auswählen **LOKAL ANMELDEN (NUR ADMINISTRATORAUFGABEN)** und melden Sie sich mit den vom AEM Administrator angegebenen Anmeldeinformationen des Proxybenutzers an.
+1. Wenn der Proxy-Server gestartet wird, wird automatisch ein Browser mit `http://localhost:7001/` geöffnet. Wählen Sie **LOKAL ANMELDEN (NUR ADMINISTRATORAUFGABEN)** aus und melden Sie sich mit den von den AEM-Admins für Sie bereitgestellten Anmeldeinformationen einer Proxy-Benutzerin bzw. eines -Benutzers an.
 
    ![Lokale Anmeldung](assets/sign-in-locally.png)
 
@@ -135,7 +138,7 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Verstehen, wie Sie Ihre Design-Anpassungen mit echten AEM-Inhalten über einen lokalen Proxy testen können.
 * Wissen, wie Sie Ihre Änderungen in das AEM Git-Repository übertragen.
 
-Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit der Journey zur AEM SchnellSite-Erstellung fort, indem Sie das Dokument erneut überprüfen. [Bereitstellen Ihres benutzerdefinierten Designs,](deploy-theme.md) Hier erfahren Sie, wie Sie das Design mithilfe der Frontend-Pipeline bereitstellen.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie das Dokument [Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md) durchgehen. Darin erfahren Sie, wie Sie das Design mithilfe der Frontend-Pipeline bereitstellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

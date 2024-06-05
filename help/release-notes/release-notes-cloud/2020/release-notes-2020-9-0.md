@@ -2,9 +2,11 @@
 title: Versionshinweise für Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0“
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '711'
 ht-degree: 94%
 
 ---
@@ -21,7 +23,7 @@ Die Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service wur
 
 ### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
-* Das JavaScript-SDK für den Single Page Application (SPA)-Editor [ist jetzt Open-Source-basiert](/help/implementing/developing/hybrid/reference-materials.md).
+* JavaScript-SDK für den SPA (Single Page Application) Editor [ist jetzt Open Source](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Version 1.3.0 der CIF-Kernkomponenten veröffentlicht. Siehe [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) für weitere Details.
+* Version 1.3.0 CIF Kernkomponenten veröffentlicht. Siehe [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) für weitere Details.
 
 * Es gibt nun eine Vorschaufunktion mit Produkt/Kategorie für Produkt- und Kategorievorlagen. So können Geschäftsbenutzer/Marketing-Experten in AEM die Produkt-/Kategorievorlagen mit echten Daten anzeigen.
 

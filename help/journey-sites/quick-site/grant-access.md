@@ -2,10 +2,13 @@
 title: Gewähren des Zugriffs für den Frontend-Entwickler
 description: Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf das Git-Repository und die Pipeline der AEM-Site haben.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 91%
+source-wordcount: '776'
+ht-degree: 100%
 
 ---
 
@@ -65,7 +68,7 @@ Zuerst müssen Sie den Frontend-Entwickler mithilfe der Admin Console als Benutz
 
    ![Produktprofile](assets/product-profiles.png)
 
-1. Um den Frontend-Entwickler den richtigen Profilen zuzuweisen, wählen Sie die **Benutzer** und dann die **Benutzer hinzufügen** Schaltfläche.
+1. Um die Frontend-Entwicklerin oder den Frontend-Entwickler den richtigen Profilen zuzuweisen, wählen Sie die Registerkarte **Benutzer** und dann die Schaltfläche **Benutzer hinzufügen** aus.
 
    ![Benutzer hinzufügen](assets/add-user.png)
 
@@ -73,11 +76,11 @@ Zuerst müssen Sie den Frontend-Entwickler mithilfe der Admin Console als Benutz
 
    ![Benutzer zu Team hinzufügen](assets/add-to-team.png)
 
-1. Im **Produkt** auswählen, das Pluszeichen auswählen und dann **Adobe Experience Manager as a Cloud Service** und weisen Sie die **Bereitstellungsmanager** und **Entwickler** Produktprofile an den Benutzer.
+1. Wählen Sie in der **Produktauswahl** das Pluszeichen und dann **Adobe Experience Manager as a Cloud Service** aus. Weisen Sie anschließend der Person die Produktprofile **Bereitstellungs-Manager** und **Entwickler** zu.
 
-   ![Teamprofile zuweisen](assets/assign-team.png)
+   ![Team-Profile zuweisen](assets/assign-team.png)
 
-1. Auswählen **Speichern** und eine Willkommens-E-Mail an den Frontend-Entwickler gesendet wird, den Sie als Benutzer hinzugefügt haben.
+1. Wählen Sie **Speichern** aus. Daraufhin wird eine Begrüßungs-E-Mail an die Frontend-Entwicklerin bzw. den Frontend-Entwickler gesendet, die bzw. den Sie mit der Benutzerrolle hinzugefügt haben.
 
 Der eingeladene Frontend-Entwickler kann jetzt auf Cloud Manager zugreifen, indem er auf den Link in der Begrüßungs-E-Mail klickt und sich mithilfe seiner Adobe ID anmeldet.
 

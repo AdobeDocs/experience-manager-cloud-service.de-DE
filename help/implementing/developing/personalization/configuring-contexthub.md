@@ -2,8 +2,10 @@
 title: Konfigurieren von ContextHub
 description: Erfahren Sie, wie Sie Context-Hub konfigurieren, ein Framework zum Speichern, Bearbeiten und Präsentieren von Kontextdaten.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 100%
 
@@ -53,7 +55,7 @@ Fügen Sie einen UI-Modus hinzu, um verwandte ContextHub-Module zu gruppieren. W
 1. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * UI-Modustitel: Der Titel, mit dem der UI-Modus identifiziert wird.
-   * Modussymbol: Die Auswahl für das zu verwendende [Coral-Benutzeroberflächen-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
+   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
    * Aktiviert: Wählen Sie diese Option aus, um den UI-Modus in der ContextHub-Symbolleiste anzuzeigen.
 
 1. Wählen Sie „Speichern“ aus.

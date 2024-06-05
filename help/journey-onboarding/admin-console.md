@@ -2,16 +2,18 @@
 title: Zugang zur Admin Console
 description: Sobald Sie mit den erforderlichen Vorbereitungsschritten für das Onboarding und die Grundlagen der AEMaaCS-Struktur vertraut sind, können Sie sich erstmals bei der Admin Console anmelden.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 84%
+source-wordcount: '1071'
+ht-degree: 100%
 
 ---
 
 # Zugang zur Admin Console {#accessing-admin-console}
 
-In diesem Teil des [Onboarding-Journey,](overview.md) Sie erfahren mehr über die erforderliche Vorbereitung, bevor Sie sich zum ersten Mal in das System einloggen können.
+In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie mehr über die erforderlichen Vorbereitungsmaßnahmen, bevor Sie sich erstmals in das System einloggen können.
 
 ## Ziel {#objective}
 
@@ -26,7 +28,7 @@ Als System-Admin sind Sie für die Benutzerverwaltung innerhalb Ihrer Organisati
 
 ## Die Admin Console {#admin-console}
 
-Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und Benutzende zu verwalten. Mit der Admin Console können Sie Benutzer an einem Ort erstellen und verwalten und nicht in Ihren einzelnen Lösungen.
+Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und Benutzende zu verwalten. Mit der Admin Console können Sie Benutzende an einem zentralen Ort anstatt in jeder einzelnen Lösung erstellen und verwalten.
 
 ## Adobe ID {#adobe-id}
 
@@ -40,7 +42,7 @@ Es gibt drei Arten von Adobe IDs:
 
 * **Enterprise ID**: Unternehmen wünschen in der Regel mehr Kontrolle über ihre Benutzerkonten. Nur System-Admins können Enterprise IDs erstellen, wobei die Organisation Eigentümerin dieser Konten ist und Adobe nur als Host dient.
 
-* **Federated ID**: Hierbei übernimmt die Organisation die volle Verantwortung und Kontrolle über ihre Konten. Dazu muss Ihr Unternehmen die Adobe Experience Cloud in Ihr SAML2 Single Sign-On (SSO)-System integrieren. Auf diese Weise können sich Benutzer beim SSO-System ihres Unternehmens anstatt bei einem von Adobe gehosteten Konto authentifizieren.
+* **Federated ID**: Hierbei übernimmt die Organisation die volle Verantwortung und Kontrolle über ihre Konten. Dazu muss Ihre Organisation Adobe Experience Cloud in ihr SAML2 Single Sign-on-System (SSO) integrieren. Auf diese Weise können sich Benutzer beim SSO-System ihres Unternehmens anstatt bei einem von Adobe gehosteten Konto authentifizieren.
 
 Als System-Admin können Sie sich dafür entscheiden, sich und Ihr Team mit persönlichen IDs auf AEM as a Cloud Service zu registrieren, bevor Enterprise IDs oder Federated IDs eingerichtet werden. Sobald Enterprise IDs oder Federated IDs eingerichtet sind, können Mitglieder zur Verwendung dieser IDs registriert werden.
 
@@ -50,11 +52,11 @@ Bevor Sie die Admin Console zum Verwalten von Benutzenden in Ihrem Team verwende
 
 1. Als System-Admin erhalten Sie im Rahmen des Onboarding-Prozesses mehrere E-Mails von Adobe. Suchen Sie nach der Begrüßungs-E-Mail mit Informationen zum Organisationsnamen, auf den Sie Zugriff erhalten haben.
 
-1. Klicken Sie auf **Erste Schritte** in Ihrer Begrüßungs-E-Mail klicken, um zur Admin Console zu navigieren. Wenn Sie die E-Mail nicht finden können, öffnen Sie einen Browser direkt zur Admin Console unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Klicken Sie in Ihrer Begrüßungs-E-Mail auf **Erste Schritte**, um zur Admin Console zu navigieren. Wenn Sie die E-Mail nicht finden können, navigieren Sie in einem Browser unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) direkt zur Admin Console.
 
    ![Begrüßungs-E-Mail](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Melden Sie sich mit Ihrer Adobe ID an. Nach erfolgreicher Anmeldung sehen Sie die **Übersicht** -Seite von Adobe Admin Console.
+1. Melden Sie sich mit Ihrer Adobe ID an. Nach erfolgreicher Anmeldung sehen Sie die Seite **Übersicht** der Adobe Admin Console.
 
    ![Die Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +68,7 @@ Bevor Sie die Admin Console zum Verwalten von Benutzenden in Ihrem Team verwende
 
    ![Überprüfen von Administratoren](/help/journey-onboarding/assets/get-started2.png)
 
-1. Nachdem Sie auf **Administratoren** aus dem **Benutzer** -Karte, können Sie suchen, indem Sie Ihre Adobe ID-E-Mail-Adresse, Ihren Benutzernamen, Vor- oder Nachnamen eingeben.
+1. Nachdem Sie in der Karte **Benutzer** auf **Administratoren** geklickt haben, können Sie eine Suche durchführen, indem Sie die E-Mail-Adresse Ihrer Adobe ID, Ihren Benutzernamen, Vor- oder Nachnamen eingeben.
 
    ![Suchen nach Benutzenden](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +84,7 @@ AEM as a Cloud Service wird vorkonfiguriert mit Adobe Identity Management System
 
 Durch die Verwendung von IMS kann die Anmeldung bei AEM as a Cloud Service und dem Rest von Adobe Experience Cloud gemeinsam ausgeführt werden. Unternehmen, die mehrere Adobe-Produkte besitzen, profitieren besonders davon, da sie in der Adobe Admin Console rollenbasierte Gruppen erstellen und dann über IMS Zugriff auf mehrere Produkte gewähren können, einschließlich AEM as a Cloud Service.
 
-Weitere Informationen zu Produktprofilen und der Zuweisung von Benutzern finden Sie im nächsten Teil dieser Onboarding-Journey.
+Weitere Informationen zu Produktprofilen und der Zuweisung von Benutzenden finden Sie im nächsten Teil dieser Onboarding-Tour.
 
 ## Kontaktaufnahme mit dem Adobe-Support {#support}
 
@@ -90,7 +92,7 @@ Sollten Sie Probleme haben, erhalten Sie über die Admin Console Zugang zum Adob
 
 ![Registerkarte „Support“](/help/journey-onboarding/assets/support-menu.png)
 
-Im Tab können Sie Fälle erstellen und verwalten, direkt mit Support-Mitarbeitern von Adobe-Kunden chatten und Sitzungen mit Experten planen. System- und Support-Administratoren müssen sich anmelden, um Zugriff auf die Funktionen zur Verwaltung von Support-Fällen und Expertensitzungen zu erhalten.
+Über die Registerkarte können Sie Fälle erstellen und verwalten, direkt mit dem Support-Personal von Adobe chatten und Sitzungen mit Expertinnen und Experten arrangieren. System- und Support-Administratoren müssen sich anmelden, um Zugriff auf die Funktionen zur Verwaltung von Support-Fällen und Expertensitzungen zu erhalten.
 
 ## Wie geht es weiter? {#whats-next}
 

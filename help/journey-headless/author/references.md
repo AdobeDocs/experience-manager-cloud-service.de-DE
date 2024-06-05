@@ -2,10 +2,13 @@
 title: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten
 description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung in die Notwendigkeit und die Mechanik verschachtelter Fragmente für Headless-CMS-Seitenbearbeitung.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +30,13 @@ Dieser Artikel baut auf diesen auf. Sie erfahren, wie Sie Verweise verwenden kö
    * Inhaltsreferenzen
    * Asset-/Medienverweise
    * Fragmentreferenzen
-   * Verbesserte Verweise aus einem Textblock
+   * Improvisierte Verweise aus einem Textblock
 
 ## Was sind Verweise {#what-are-references}
 
 Verweise sind lediglich ein Mechanismus zum Verbinden Ihrer Ressourcen, sei es mit anderen Inhalten, Assets (wie in Bildern) oder anderen Fragmenten. Obwohl sie sehr ähnlich sind, gibt es einige Unterschiede.
 
-Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und Fragmentverweise), während andere einfach als Verweis in einem Textblock hinzugefügt werden (Asset-Verweise und improvisierte Verweise).
+Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und Fragmentverweise), während andere einfach als Verweis in einem Textblock hinzugefügt werden (Asset-Verweise und improvisierte Verweise).
 
 ![Inhaltsfragmente – Verweise](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -58,7 +61,7 @@ Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Mitarbeiter...und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Angestellte …und dies sind alles Leute, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 
@@ -79,7 +82,7 @@ Als Autorin bzw. Autor sind Sie nicht für die Definition dieser Beziehungen ver
 
 ### Bearbeiten verschachtelter Fragmente {#author-nested-fragment}
 
-Die Bearbeitung von Fragmentverweisen ist relativ einfach (obwohl das Feld normalerweise nicht als **Fragmentverweis** bezeichnet wird). Sie können den Verweis entweder direkt eingeben oder (wahrscheinlicher) das Ordnersymbol auswählen, um einen Browser zu öffnen, in dem Sie navigieren und das gewünschte Fragment auswählen können.
+Die Bearbeitung von Fragmentverweisen ist relativ einfach (obwohl das Feld normalerweise nicht als **Fragmentverweis** bezeichnet wird). Sie können den Verweis entweder direkt eingeben oder (wahrscheinlicher) auf das Ordnersymbol klicken, um einen Browser zu öffnen, in dem Sie navigieren und das gewünschte Fragment auswählen können.
 
 ![Inhaltsfragmente – Verweise](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -96,7 +99,7 @@ Wenn Sie die Registerkarte **Baumstruktur** des Inhaltsfragment-Editors verwende
 
 ## Ad-hoc-Verweise {#adhoc-references}
 
-Verbesserte Verweise können als einfacher Link innerhalb eines Textblocks hinzugefügt werden:
+Improvisierte Verweise können als einfacher Link innerhalb eines Textblocks hinzugefügt werden:
 
 ![Inhaltsfragmente – Ad-hoc-Verweise](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
@@ -114,7 +117,7 @@ Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gema
 
       * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Erstellung von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
+   * [Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 

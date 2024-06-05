@@ -3,10 +3,13 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 89%
+source-wordcount: '1418'
+ht-degree: 100%
 
 ---
 
@@ -53,7 +56,7 @@ Eine produktionsfremde Pipeline dient hauptsächlich dazu, Code-Qualitätsprüfu
 Neben Produktion und produktionsfremd können Pipelines nach dem Typ des von ihnen bereitgestellten Codes unterschieden werden.
 
 * **[Full-Stack-Pipelines](#full-stack-pipeline)**: Gleichzeitiges Bereitstellen von Backend- und Frontend-Code-Builds mit einer oder mehreren AEM-Serveranwendungen zusammen mit HTTPD-/Dispatcher-Konfigurationen
-* **[Config Pipelines](#config-deployment-pipeline)** - Konfigurieren und Bereitstellen von Traffic-Filterregeln, einschließlich WAF-Regeln, innerhalb von Minuten
+* **[Konfigurations-Pipelines](#config-deployment-pipeline)**: Konfigurieren und Bereitstellen von Traffic-Filterregeln, einschließlich WAF-Regeln, innerhalb von Minuten
 * **[Frontend-Pipelines](#front-end)**: Bereitstellen von Frontend-Code-Builds mit einer oder mehreren Client-seitigen Benutzeroberflächenanwendungen
 * **[Web-Ebenen-Konfigurations-Pipelines](#web-tier-config-pipelines)**: Bereitstellung von HTTPD-/Dispatcher-Konfigurationen
 
@@ -61,7 +64,7 @@ Diese Typen werden später in diesem Dokument detailliert beschrieben.
 
 ### Grundlegendes zu CI/CD-Pipelines in Cloud Manager {#understand-pipelines}
 
-In der folgenden Tabelle sind die in Cloud Manager verfügbaren Pipelines und deren Verwendung zusammengefasst.
+In der folgenden Tabelle sind die in Cloud Manager verfügbaren Pipelines und deren Verwendungszwecke zusammengefasst.
 
 | Pipeline-Typ | Bereitstellung oder Code-Qualität | Quell-Code | Zweck | Anmerkungen |
 |--- |--- |--- |---|---|
@@ -111,11 +114,11 @@ Informationen zum Konfigurieren von Full-Stack-Pipelines finden Sie in den folge
 * [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Config Pipelines {#config-deployment-pipeline}
+## Konfigurations-Pipelines {#config-deployment-pipeline}
 
 Mit einer Konfigurations-Pipeline können Sie innerhalb von Minuten Traffic-Filterregeln, einschließlich WAF-Regeln, konfigurieren und bereitstellen.
 
-Siehe [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) , um zu erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+Unter [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md), erfahren Sie, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 
 ### Konfigurieren von Konfigurations-Pipelines {#configure-config-deployment}
 
@@ -157,7 +160,7 @@ Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzia
 
 ## Web-Stufen-Konfigurations-Pipelines {#web-tier-config-pipelines}
 
-Web-Stufen-Konfigurations-Pipelines ermöglichen die exklusive Bereitstellung der HTTPD-/Dispatcher-Konfiguration zu AEM Runtime, indem sie sie von anderen Code-Änderungen entkoppeln. Es handelt sich um eine optimierte Pipeline, die Benutzern, die nur Änderungen der Dispatcher-Konfiguration bereitstellen möchten, bereitstellt. Dies bedeutet, dass dies in nur wenigen Minuten geschehen kann.
+Web-Stufen-Konfigurations-Pipelines ermöglichen die exklusive Bereitstellung der HTTPD-/Dispatcher-Konfiguration zu AEM Runtime, indem sie sie von anderen Code-Änderungen entkoppeln. Es handelt sich um eine optimierte Pipeline, die Benutzenden, die nur Änderungen an der Dispatcher-Konfiguration bereitstellen möchten, eine beschleunigte Möglichkeit bietet, dies in nur wenigen Minuten zu tun.
 
 >[!TIP]
 >
@@ -168,8 +171,8 @@ Folgende Einschränkungen gelten.
 * Sie müssen AEM-Version `2021.12.6151.20211217T120950Z` oder neuer verwenden, um Web-Stufen-Konfigurations-Pipelines zu nutzen.
 * Sie müssen [in den flexiblen Modus der Dispatcher-Tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) wechseln, um Web-Stufen-Konfigurations-Pipelines nutzen zu können.
 * Eine Benutzerin bzw. ein Benutzer muss mit der Rolle **Bereitstellungs-Manager** angemeldet sein, um Pipelines konfigurieren oder ausführen zu können.
-* Es kann immer nur eine Web-Stufen-Konfigurations-Pipeline pro Umgebung geben.
-* Der Benutzer kann eine Web-Tier-Konfigurationspipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
+* Es kann immer nur eine Web-Ebenen-Konfigurations-Pipeline pro Umgebung geben.
+* Benutzende können eine Web-Ebenen-Konfigurations-Pipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
 * Die Web-Stufen-Struktur muss der im Dokument [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug) definierten flexiblen Modusstruktur entsprechen.
 
 Außerdem sollten Sie darauf achten, wie sich die [Full-Stack-Pipeline](#full-stack-pipeline) bei der Einführung einer Web-Stufen-Pipeline verhält.
@@ -178,17 +181,17 @@ Außerdem sollten Sie darauf achten, wie sich die [Full-Stack-Pipeline](#full-st
 * Sobald eine Web-Stufen-Konfigurations-Pipeline für eine Umgebung konfiguriert wurde, ignoriert die entsprechende Full-Stack-Pipeline (sofern vorhanden) die Dispatcher-Konfiguration während der Ausführung und Bereitstellung.
 * Nachdem eine Web-Stufen-Konfigurations-Pipeline gelöscht wurde, wird die zugehörige Full-Stack-Pipeline zurückgesetzt, um während der Ausführung Dispatcher-Konfigurationen bereitzustellen.
 
-Web-Stufen-Konfigurations-Pipelines können vom Typ Code-Qualitätsprüfung oder Bereitstellung sein.
+Web-Ebenen-Konfigurations-Pipelines können vom Typ Code-Qualitätsprüfung oder Bereitstellung sein.
 
-### Web-Tier-Pipelines konfigurieren {#configure-web-tier}
+### Konfigurieren von Web-Ebenen-Pipelines {#configure-web-tier}
 
-Informationen zum Konfigurieren von WebTier-Pipelines finden Sie in den folgenden Dokumenten:
+Informationen zum Konfigurieren von Web-Ebenen-Pipelines finden Sie in den folgenden Dokumenten:
 
 * [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
 
 ## Videoüberblick über Pipeline-Typen {#video}
 
-Ein kurzer Überblick über Pipeline-Typen erhalten Sie in diesem kurzen Video.
+Einen schnellen Überblick über Pipeline-Typen erhalten Sie in diesem kurzen Video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342363)

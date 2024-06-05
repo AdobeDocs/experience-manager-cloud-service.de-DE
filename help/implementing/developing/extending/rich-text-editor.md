@@ -3,8 +3,10 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experie
 description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experience Manager] as a Cloud Service zu erstellen.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 100%
 
@@ -145,7 +147,7 @@ Wenn der RTE im Touch-optimierten Dialogfeld verwendet wird, muss die Eigenschaf
 
 ## Aktivieren von RTE-Funktionen durch Aktivieren von Plug-ins {#enable-rte-functionalities-by-activating-plug-ins}
 
-RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Funktionen so konfigurieren, dass die verschiedenen Funktionen der einzelnen Plug-ins aktiviert oder deaktiviert werden.
+RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Funktionseigenschaft bereitgestellt. Sie können die Funktionen so konfigurieren, dass die verschiedenen Funktionen der einzelnen Plug-ins aktiviert oder deaktiviert werden.
 
 Ausführliche Konfigurationen des RTE-Plug-ins finden Sie unter [Aktivieren und Konfigurieren von RTE-Plug-ins](configure-rich-text-editor-plug-ins.md).
 

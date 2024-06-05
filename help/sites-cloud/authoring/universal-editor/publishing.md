@@ -2,8 +2,11 @@
 title: Veröffentlichen von Inhalten mit dem universellen Editor
 description: Erfahren Sie, wie Inhalte mit dem universellen Editor veröffentlicht werden und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
 

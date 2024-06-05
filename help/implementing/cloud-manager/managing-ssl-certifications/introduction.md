@@ -2,10 +2,13 @@
 title: Einführung – Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Cloud Manager Ihnen Self-Service-Tools zur Installation von SSL-Zertifikaten bereitstellt.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 99%
+source-wordcount: '664'
+ht-degree: 100%
 
 ---
 
@@ -49,7 +52,7 @@ AEM as a Cloud Service unterstützt nur sichere `https`-Sites.
 * Kunden mit mehreren benutzerdefinierten Domains möchten nicht jedes Mal, wenn sie eine Domain hinzufügen, ein Zertifikat hochladen.
 * Daher profitieren solche Kundinnen und Kunden von einem Zertifikat mit mehreren Domains.
 
-## Zertifikatanforderungen {#requirements}
+## Zertifikatsanforderungen {#requirements}
 
 * AEM as a Cloud Service akzeptiert nur OV- (Organisationsvalidierung) oder EV-Richtlinien (erweiterte Validierung). 
 * Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.

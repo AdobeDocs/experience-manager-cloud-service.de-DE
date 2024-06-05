@@ -2,8 +2,11 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Navigation in AEM und seiner grundlegenden Verwendung vertraut
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 100%
 

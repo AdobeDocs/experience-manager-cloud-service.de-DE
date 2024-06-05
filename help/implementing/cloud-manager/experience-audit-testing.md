@@ -2,8 +2,11 @@
 title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
 

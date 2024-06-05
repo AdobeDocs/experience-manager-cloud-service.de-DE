@@ -2,8 +2,10 @@
 title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
 
@@ -123,7 +125,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine `cq:movedTo`-Eigenschaft aufweisen und nicht für einen Inhaltsknoten verwendet werden. Ihre Anzahl beträgt null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil des Verschiebungs- oder des Zusammenführungsvorgangs aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
-Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Dies kann konfiguriert werden unter:
+Der Garbage Collector für Tags wird standardmäßig einmal täglich ausgeführt. Dies kann konfiguriert werden unter:
 
 `http://<host>:<port>/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector`
 

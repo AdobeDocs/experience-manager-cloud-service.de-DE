@@ -2,10 +2,13 @@
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu
 Im vorherigen Dokument der Tour zu AEM Quick Site Creation, [Erstellen einer Site aus einer Vorlage](create-site.md), haben Sie gelernt, wie Sie mit einer Site-Vorlage schnell eine AEM-Site erstellen können, die mithilfe von Frontend-Tools weiter angepasst werden kann. Jetzt sollten Sie:
 
 * Wissen, wie Sie AEM-Site-Vorlagen abrufen.
-* Erfahren Sie, wie Sie eine Site mit einer Vorlage erstellen.
+* Wissen, wie Sie mit einer Vorlage eine neue Site erstellen.
 * Erfahren haben, wie Sie die Vorlage von Ihrer neuen Site herunterladen, um sie für den Front-End-Entwickler bereitzustellen.
 
 Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie eine Frontend-Pipeline einrichten können, die der Frontend-Entwickler später zur Bereitstellung von Frontend-Anpassungen verwendet.
@@ -57,7 +60,7 @@ Auf diese Weise kann die Frontend-Entwicklung getrennt von und parallel zu jeder
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 
-1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie den zu verwaltenden Ordner aus. Wenn Sie gerade erst mit AEM as a Cloud Service beginnen, haben Sie wahrscheinlich nur ein Programm zur Verfügung.
+1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie dasjenige aus, das Sie verwalten möchten. Wenn Sie gerade erst mit AEM as a Cloud Service beginnen, haben Sie wahrscheinlich nur ein Programm zur Verfügung.
 
    ![Auswählen eines Programms in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -65,13 +68,13 @@ Jetzt sehen Sie einen Überblick über Ihr Programm. Ihre Seite sieht anders aus
 
 ![Übersicht über Cloud Manager](assets/cloud-manager-overview.png)
 
-Notieren Sie den Namen des Programms, auf das Sie zugegriffen haben, oder kopieren Sie die URL. Sie müssen dies später dem Frontend-Entwickler bereitstellen.
+Notieren Sie den Namen des Programms, auf das Sie zugegriffen haben, oder kopieren Sie die URL. Sie müssen dies später den Frontend-Entwickelnden bereitstellen.
 
 ## Erstellen einer Frontend-Pipeline {#create-front-end-pipeline}
 
 Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für die Frontend-Bereitstellung erstellen.
 
-1. Im **Pipelines** auf der Seite &quot;Cloud Manager&quot;die **Hinzufügen** Schaltfläche.
+1. Wählen Sie im Abschnitt **Pipelines** auf der Seite „Cloud Manager“ die Schaltfläche **Hinzufügen** aus.
 
    ![Pipelines](assets/pipelines-add.png)
 
@@ -83,7 +86,7 @@ Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für 
 
    ![Pipeline-Konfiguration hinzufügen](assets/add-pipeline-configuration.png)
 
-1. Klicken Sie auf **Weiter**.
+1. Wählen Sie **Weiter**.
 
 1. Auf der Registerkarte **Quell-Code**:
    * Wählen Sie **Code für das Frontend** als Typ des bereitzustellenden Codes aus.
@@ -92,7 +95,7 @@ Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für 
    * Festlegen, mit welcher **Git-Verzweigung** die Pipeline verknüpft werden soll.
    * Definieren des **Code-Verzeichnis**, wenn sich die Frontend-Entwicklung unter einem bestimmten Pfad im ausgewählten Repository befindet. Der Standardwert ist der Stamm des Repositorys, aber häufig befinden sich die Frontend-Entwicklung und das Backend unter verschiedenen Pfaden.
 
-   ![Quellcode-Informationen zum Hinzufügen einer Pipeline](assets/add-pipeline-source-code.png)
+   ![Quell-Code-Informationen zum Hinzufügen einer Pipeline](assets/add-pipeline-source-code.png)
 
 1. Wählen Sie **Speichern** aus.
 

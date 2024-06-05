@@ -2,14 +2,16 @@
 title: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '935'
 ht-degree: 27%
 
 ---
 
-# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 202278.0 {#release-notes}
+# Versionshinweise für 20278.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.7.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -23,13 +25,13 @@ Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.7.0) war der 8. August 2022.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.7.0) war der Dienstag, 8. August 2022.
 
 Die nächste Version (2022.8.0) ist für den 1. September 2022 geplant.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom Juli 2022 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2022.7.0 hinzugefügt wurden:
+Eine Zusammenfassung der in der Version 2022.7.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version Juli 2022:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
@@ -114,9 +116,9 @@ Sie können Adobe Experience Manager Assets jetzt konfigurieren für [den Typ de
 
 * AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Siehe [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
 
-## Adobe Learning Manager-Connectoren {#learn-manage}
+## Adobe Learning Manager Connectors {#learn-manage}
 
-* Der neue Adobe Learning Manager verfügt über Connectoren für Adobe Experience Manager Sites, Marketo Engage und Adobe Commerce. Weitere Informationen finden Sie unter [Benutzerhandbuch zu Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
+* Die neue Adobe Learning Manager verfügt über Connectoren für Adobe Experience Manager Sites, Marketo Engage und Adobe Commerce. Weitere Informationen finden Sie unter [Adobe Learning Manager-Benutzerhandbuch](https://helpx.adobe.com/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 

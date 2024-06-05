@@ -2,10 +2,13 @@
 title: Hinzufügen eines TXT-Eintrags
 description: Erfahren Sie, wie Sie einen TXT-Eintrag hinzufügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 91%
+source-wordcount: '323'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ Ein DNS-TXT-Eintrag autorisiert das Hosting einer Domain durch einen CDN-Service
 
 Sie müssen diese Anforderungen erfüllen, bevor Sie einen TXT-Eintrag hinzufügen.
 
-* Sie müssen in der Lage sein, die DNS-Einträge für die Domäne Ihres Unternehmens zu bearbeiten, oder sich an die entsprechende Person wenden können.
+* Sie müssen in der Lage sein, die DNS-Einträge für die Domain Ihres Unternehmens zu ändern oder sich ansonsten an eine entsprechende Person zu wenden, die dies kann.
 * Sie müssen Ihren Domain-Host oder Ihre Registrierungsstelle ermitteln, falls Sie sie noch nicht kennen.
 
 Wenn Sie die Domain-Überprüfung starten, erhalten Sie von Cloud Manager den Namen und den TXT-Wert, die zur Überprüfung verwendet werden sollen. Fügen Sie dem DNS-Server Ihrer Domain einen TXT-Eintrag mit dem angegebenen Namen und Wert hinzu.
@@ -46,4 +49,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->Es gibt mehrere [DNS-Suchwerkzeuge](https://www.ultratools.com/tools/dnsLookup) verfügbar. Google DoH kann verwendet werden, um TXT-Einträge zu suchen und zu erkennen, ob der TXT-Eintrag fehlt oder fehlerhaft ist.
+>Es sind mehrere [DNS-Suchwerkzeuge](https://www.ultratools.com/tools/dnsLookup) verfügbar. Google DoH kann verwendet werden, um TXT-Einträge zu suchen und zu erkennen, ob der TXT-Eintrag fehlt oder fehlerhaft ist.

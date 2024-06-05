@@ -2,10 +2,13 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 87%
+source-wordcount: '1653'
+ht-degree: 100%
 
 ---
 
@@ -13,11 +16,11 @@ ht-degree: 87%
 
 Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Unter [Grundlagen zur Segmentierung](segmentation.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 
-Je nach den Informationen, die Sie bereits über Ihre Site-Besucher gesammelt haben, und den Zielen, die Sie erreichen möchten, definieren Sie die Segmente und Strategien, die für Ihre zielgerichteten Inhalte erforderlich sind.
+Je nach den von Ihnen bereits zu den Besucherinnen und Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angestrebten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
 Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Hier festgelegte [Aktivitäten](activities.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
-AEM ermöglicht Ihnen die einfache Personalisierung der Benutzererlebnisse. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
+AEM ermöglicht Ihnen die einfache Personalisierung Ihrer Benutzererlebnisse. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
 ## Zugriff auf Segmente {#accessing-segments}
 
@@ -30,7 +33,7 @@ Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optione
 ## Segmenteditor {#segment-editor}
 
 <!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-Die **Segment-Editor** ermöglicht Ihnen die einfache Änderung eines Segments. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
+Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segments. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
 ![Segmenteditor](../assets/contexthub-segment-editor.png)
 
@@ -53,7 +56,7 @@ Die folgenden Container sind standardmäßig verfügbar und ermöglichen es Ihne
 
 ### Vergleiche {#comparisons}
 
-Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigenschaften zu bewerten. Sie können vom Komponenten-Browser in den Editor gezogen werden.
+Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigenschaften auszuwerten. Sie können vom Komponenten-Browser in den Editor gezogen werden.
 
 |  |  |
 |---|---|
@@ -88,11 +91,11 @@ Festlegen eines neuen Segments
 
 1. Nachdem Sie [auf die Segmente zugegriffen haben](#accessing-segments), [navigieren Sie zum Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten.
 
-1. Wählen Sie die **Erstellen** Schaltfläche und wählen Sie **Erstellen eines ContextHub-Segments**.
+1. Wählen Sie die Schaltfläche **Erstellen** und dann **ContextHub-Segments erstellen**.
 
    ![Segment hinzufügen](../assets/contexthub-create-segment.png)
 
-1. Im **Neues ContextHub-Segment**, geben Sie einen Titel für das Segment und ggf. einen Verstärkungswert ein und wählen Sie dann **Erstellen**.
+1. Geben Sie unter **Neues ContextHub-Segment** einen Titel für das Segment sowie bei Bedarf einen Verstärkungswert ein und wählen Sie **Erstellen** aus.
 
    ![Neues Segment](../assets/contexthub-new-segment.png)
 
@@ -101,7 +104,7 @@ Festlegen eines neuen Segments
    * Mindestwert: `0`
    * Höchstwert: `1000000`
 
-1. Bearbeiten Sie in der Segmentkonsole das erstellte Segment, um es im Segmenteditor zu öffnen.
+1. Bearbeiten Sie in der Segment-Konsole Ihr erstelltes Segment, um es im Segmenteditor zu öffnen.
 1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
 1. Wählen Sie die Konfigurationsoption des neuen Verweises oder Segments doppelt aus, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in Basel.
 
@@ -114,7 +117,7 @@ Festlegen eines neuen Segments
 
 ### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
-Mithilfe der UND- und ODER-Container-Komponenten können Sie komplexe Segmente in AEM erstellen. Dabei ist es hilfreich, einige grundlegende Punkte zu beachten:
+Mithilfe der UND- und ODER-Container-Komponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
 * Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
@@ -137,7 +140,7 @@ Sie können bei Bedarf mehrere UND- und ODER-Operatoren verschachteln.
 
 ### Verwenden von Skript-Referenzen {#using-script-references}
 
-Mithilfe der Komponente „Skript-Referenz“ kann die Auswertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als jede andere Komponente einer Segmentbedingung verwendet werden.
+Mithilfe der Komponente „Skript-Referenz“ kann die Auswertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es wie jede andere beliebige Komponente einer Segmentbedingung verwendet werden.
 
 #### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
 
@@ -184,8 +187,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Verweisen auf ein Skript {#referencing-a-script}
 
 1. Erstellen Sie ein ContextHub-Segment.
-1. Fügen Sie die Komponente **Skript-Referenz** an der gewünschten Stelle des Segments.
-1. Öffnen Sie das Dialogfeld „Bearbeiten“ der Komponente **Skript-Referenz**. Wenn [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte das Skript in der Dropdown-Liste **Skriptname** verfügbar sein.
+1. Fügen Sie die Komponente **Skript-Referenz** an der gewünschten Stelle des Segments hinzu.
+1. Öffnen Sie das Dialogfeld „Bearbeiten“ der Komponente **Skript-Referenz**. Sofern [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte das Skript in der Dropdown-Liste **Skriptname** verfügbar sein.
 
 ## Organisieren von Segmenten {#organizing-segments}
 
@@ -193,7 +196,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Erstellen eines neuen Ordners {#create-folder}
 
-1. Nachher [Zugriff auf Segmente](#accessing-segments), wählen Sie die **Erstellen** Schaltfläche und wählen Sie **Ordner**.
+1. Wählen Sie nach dem [Zugriff auf die Segmente](#accessing-segments) die Schaltfläche **Erstellen** und dann **Ordner** aus.
 
    ![Ordner hinzufügen](../assets/contexthub-create-segment.png)
 
@@ -212,18 +215,17 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 1. Der Ordner wird in der Liste der Segmente angezeigt.
    * Die Sortierung Ihrer Spalten beeinflusst, wo in der Liste der neue Ordner erscheint.
    * Sie können die Spaltenüberschriften auswählen, um die Sortierung anzupassen.
-
      ![Der neue Ordner](../assets/contexthub-folder.png)
 
 ### Ändern vorhandener Ordner {#modify-folders}
 
-1. Nachher [Zugriff auf Segmente](#accessing-segments), wählen Sie den Ordner aus, den Sie ändern möchten, um ihn auszuwählen.
+1. Wählen Sie nach dem [Zugriff auf die Segmente](#accessing-segments) den Ordner aus, den Sie ändern möchten.
 
    ![Ordner auswählen](../assets/contexthub-select-folder.png)
 
-1. Auswählen **Umbenennen** in der Symbolleiste, um den Ordner umzubenennen.
+1. Wählen Sie **Umbenennen** in der Symbolleiste aus, um den Ordner umzubenennen.
 
-1. Bereitstellung eines neuen **Ordnertitel** und wählen **Speichern**.
+1. Geben Sie einen neuen **Ordnertitel** an und wählen Sie **Speichern** aus.
 
    ![Ordner umbenennen](../assets/contexthub-rename-folder.png)
 
@@ -233,25 +235,25 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Löschen eines Ordners
 
-1. Nachher [Zugriff auf Segmente](#accessing-segments), wählen Sie den Ordner aus, den Sie ändern möchten, um ihn auszuwählen.
+1. Wählen Sie nach dem [Zugriff auf die Segmente](#accessing-segments) den Ordner aus, den Sie ändern möchten.
 
    ![Ordner auswählen](../assets/contexthub-select-folder.png)
 
-1. Auswählen **Löschen** in der Symbolleiste, um den Ordner zu löschen.
+1. Wählen Sie **Löschen** in der Symbolleiste aus, um den Ordner zu löschen.
 
 1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
 
    ![Löschen bestätigen](../assets/contexthub-confirm-segment-delete.png)
 
-   * Auswählen **Löschen** zur Bestätigung.
-   * Auswählen **Abbrechen** abbrechen.
+   * Wählen Sie zum Bestätigen **Löschen** aus.
+   * Wählen Sie zum Abbrechen **Abbrechen** aus.
 
 1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss deren Löschung bestätigt werden.
 
    ![Löschen von untergeordneten Elementen bestätigen](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Auswählen **Löschen erzwingen** zur Bestätigung.
-   * Auswählen **Abbrechen** abbrechen.
+   * Wählen Sie zum Bestätigen **Löschen erzwingen** aus.
+   * Wählen Sie zum Abbrechen **Abbrechen** aus.
 
 >[!NOTE]
 >
@@ -261,9 +263,9 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](contexthub.md) getestet werden.**
 
-1. Vorschau einer Seite
+1. Zeigen Sie eine Seite in einer Vorschau an.
 1. Klicken Sie auf das ContextHub-Symbol, um die ContextHub-Symbolleiste anzuzeigen.
-1. Wählen Sie eine Rolle aus, die mit dem von Ihnen erstellten Segment übereinstimmt.
+1. Wählen Sie eine Persona aus, die mit dem von Ihnen erstellten Segment übereinstimmt.
 1. Der ContextHub löst die entsprechenden Segmente für die ausgewählte Rolle auf.
 
 Beispielsweise basiert unsere einfache Segmentdefinition zur Identifizierung von Benutzern in Basel auf dem Standort des Benutzers. Das Laden einer spezifischen Rolle, die mit diesen Kriterien übereinstimmt, zeigt, ob das Segment erfolgreich aufgelöst wurde:

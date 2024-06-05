@@ -2,8 +2,11 @@
 title: Konfigurieren der Kontoumgebung
 description: Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
 

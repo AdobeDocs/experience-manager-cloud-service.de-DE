@@ -3,8 +3,10 @@ title: Methoden zum Erstellen von Inhalten in AEM
 description: Erfahren Sie mehr über die verschiedenen Möglichkeiten, Inhalte in AEM zu erstellen, und wie sich diese unterscheiden.
 feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
-source-git-commit: 9aba0fb61d7496cd1ae1860e22c3e7374be69148
-workflow-type: ht
+solution: Experience Manager Sites
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 100%
 

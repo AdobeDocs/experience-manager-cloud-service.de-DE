@@ -4,8 +4,9 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '4011'
 ht-degree: 100%
 

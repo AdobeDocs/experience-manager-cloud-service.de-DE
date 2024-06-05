@@ -5,10 +5,13 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 91%
+source-wordcount: '919'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ Wenn Sie bereits mit AEM Sites und Ihren Übersetzungsanforderungen vertraut sin
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene, komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende ein minimales vorheriges Thema oder AEM Wissen angeht.
+[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene, komplizierte Themen und Funktionen durch eine Darstellung, die mit AEM nicht vertrauten Leserinnen und Lesern hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
 Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
@@ -47,13 +50,13 @@ Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
 | Administrator | Verwaltet die grundlegende Einrichtung und Konfiguration von AEM | Der Übersetzungsspezialist arbeitet mit dem Administrator zusammen, um die für die Übersetzung erforderlichen Konfigurationsänderungen vorzunehmen, z. B. die Installation eines Übersetzungs-Connectors. |
 | Inhaltsarchitekt | Analysiert die Anforderungen für die Daten, die als Websites bereitgestellt werden müssen, und definiert die Struktur für diese Daten | Übersetzungsspezialisten arbeiten mit dem Inhaltsarchitekten zusammen, um die Organisation der Inhalte zu definieren, damit sie leicht übersetzt werden können. |
 
-Informationen in dieser Journey können für alle Personen nützlich sein, einige Informationen können jedoch für bestimmte Benutzerrollen überflüssig sein. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen](/help/journey-documentation/documentation-journeys.md#journeys).
+Die Informationen in dieser Tour können auch für andere Rollen nützlich sein, aber einige Informationen sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Die Sites-Übersetzungs-Tour {#the-journey}
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über das Übersetzen von Website-Inhalten in AEM und enthalten Links zu detaillierten technischen Dokumentationen.
 
-Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Daher empfiehlt Adobe, wenn Sie neu bei der Übersetzung in AEM sind, am Anfang zu beginnen und den Prozess sequenziell zu gestalten.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Übersetzungen in AEM für Sie also neu sind, empfehlen wir Ihnen, am Anfang zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|

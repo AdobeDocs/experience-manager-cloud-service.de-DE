@@ -2,9 +2,11 @@
 title: Zuordnung dynamischer Modelle zu Komponenten für SPAs
 description: In diesem Artikel wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK für AEM erfolgt.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '319'
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '315'
 ht-degree: 100%
 
 ---
@@ -27,7 +29,7 @@ Weitere Informationen finden Sie im npm-Paket: [@adobe/aem-spa-component-mapping
 
 Anwendungen mit einzelnen Seiten, die das JavaScript SPA SDK für AEM nutzen, sind modellgesteuert:
 
-1. Frontend-Komponenten registrieren sich im [Komponentenzuordnungs-Store](#componentmapping-module).
+1. Frontend-Komponenten registrieren sich selbst im [Komponentenzuordnungs-Store](#componentmapping-module).
 1. Anschließend durchläuft der [Container](blueprint.md#container), sobald ihm ein Modell vom [Modellanbieter](blueprint.md#the-model-provider) zur Verfügung gestellt wurde, seinen Modellinhalt (`:items`).
 
 1. Wenn es eine Seite gibt, erhalten ihre untergeordneten Elemente (`:children`) zuerst eine Komponentenklasse aus der [Komponentenzuordnung](blueprint.md#componentmapping) und instanziieren sie dann.

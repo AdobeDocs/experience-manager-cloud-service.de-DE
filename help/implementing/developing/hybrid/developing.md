@@ -2,16 +2,18 @@
 title: Entwickeln von SPAs für AEM
 description: Dieser Artikel enthält wichtige Fragen, die zu beachten sind, wenn Frontend-Entwicklerinnen bzw. -Entwickler damit beauftragt werden, eine SPA für AEM zu entwickeln. Er gibt auch einen Überblick über die Architektur der AEM bezüglich SPAs, die bei der Bereitstellung einer entwickelten SPA auf AEM zu beachten sind.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2035'
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '2028'
 ht-degree: 100%
 
 ---
 
 # Entwickeln von SPAs für AEM {#developing-spas-for-aem}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwicklungspersonen möchten Sites mit SPA-Frameworks erstellen und Autorinnen bzw. Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
+Single Page Applications (SPAs) können Nutzerinnen und Nutzern von Websites ein überzeugendes Erlebnis bieten. Entwicklungspersonen möchten Sites mit SPA-Frameworks erstellen und Autorinnen bzw. Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
 Dieser Artikel stellt wichtige Fragen vor, die bei der Beauftragung von Frontend-Entwicklungspersonen mit der Entwicklung einer SPA für AEM zu beachten sind, und gibt einen Überblick über die Architektur von AEM im Hinblick auf die Bereitstellung von SPAs auf AEM.
 

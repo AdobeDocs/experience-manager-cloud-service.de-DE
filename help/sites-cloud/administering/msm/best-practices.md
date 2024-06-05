@@ -4,8 +4,9 @@ description: Hier finden Sie Best Practices für die Einrichtung und Verwendung 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 100%
 
@@ -83,7 +84,7 @@ Beachten Sie beim Erstellen von Sprachstämmen Folgendes:
 
 * Während MSM selbst **keine Inhaltsübersetzung** anbietet, kann es mit Übersetzungs-Connectoren von Drittanbietern integriert werden, die dies tun. Beachten Sie Folgendes:
    * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene unterbinden. So verhindern Sie, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einem Blueprint überschrieben wird.
-      * Einige Übersetzungs-Connectoren von Dritten bieten eine automatisierte Verwaltung der MSM-Vererbung.
+      * Einige Übersetzungs-Connectoren von Drittanbietern bieten eine automatisierte Verwaltung der MSM-Vererbung.
       * Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
       * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
 

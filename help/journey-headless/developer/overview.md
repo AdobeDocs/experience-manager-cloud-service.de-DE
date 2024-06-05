@@ -3,10 +3,13 @@ title: Entwickler-Tour für AEM Headless CMS
 description: Erfahren Sie mehr über die Headless-Entwicklung mit Adobe Experience Manager (AEM) als Headless-CMS. Erfahren Sie, wie Sie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwenden können, um die Bereitstellung von Headless-Inhalten zu ermöglichen.
 landing-page-description: Gewinnen Sie ein Verständnis für die Bereitstellung und Implementierung von Headless-Inhalten. Erfahren Sie mehr über die Entwicklung einer Strategie für Ihr Unternehmen.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 95%
+source-wordcount: '1070'
+ht-degree: 100%
 
 ---
 
@@ -28,11 +31,11 @@ Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, 
 
 Die Headless-Implementierung von AEM verwendet Inhaltsfragmentmodelle und Inhaltsfragmente, um sich auf die Erstellung von strukturierten, kanalneutralen und wiederverwendbaren Inhaltsfragmenten und deren kanalübergreifende Bereitstellung zu konzentrieren. Um dies zu erreichen, wird auf die Seiten- und Komponentenverwaltung verzichtet, wie sie bei Full-Stack-Lösungen üblich ist. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
 
-Dieser Leitfaden führt Sie durch Headless-Implementierungsthemen in AEM, sodass Sie nach Abschluss Folgendes tun können:
+Dieses Handbuch führt Sie durch Themen der Headless-Implementierung in AEM, sodass Sie nach Abschluss über Folgendes verfügen:
 
 * Umfassendes Verständnis davon, was die Headless-Bereitstellung von Inhalten ist und welche Vorteile sie bietet
 * Kenntnisse der Headless-Funktionen von AEM und wie sie zusammenarbeiten, um Headless-Erlebnisse bereitzustellen
-* Führen Sie die ersten Schritte zur Implementierung Ihres ersten AEM Headless-Projekts aus.
+* Fähigkeit zur Durchführung der ersten Schritte zur Implementierung Ihres ersten AEM Headless-Projekts.
 
 >[!TIP]
 >
@@ -55,7 +58,7 @@ Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
 
 Wir werden auf dieser Tour viele Themen behandeln, die Ihnen das Grundwissen über Headless-Konzepte in AEM vermitteln.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, sollten Sie beachten, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Adobe empfiehlt, dass Sie am Anfang beginnen und nacheinander fortfahren.
+Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, sollten Sie beachten, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Adobe empfiehlt deswegen, am Anfang zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
@@ -89,7 +92,7 @@ Dokumentations-Touren zeigen Ihnen, wie AEM ein Geschäftsproblem löst, indem s
 
 In diesen zusätzlichen Touren finden Sie weitere Informationen darüber, wie die leistungsstarken Funktionen von AEM zusammenarbeiten.
 
-* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen, und technisch in AEM versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Anwendungen auf der Grundlage von AEM Headless behandelt wird.
 * [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 * [Headless-Autoren-Tour](/help/journey-headless/author/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können.
