@@ -665,7 +665,7 @@ ht-degree: 99%
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
-            + [Konvertieren adaptiver Forms basierend auf Foundation-Komponenten in komponentenbasierte Kernformulare mithilfe des Migrationsdienstprogrammwerkzeugs](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Konvertieren adaptiver Formulare basierend auf Foundation-Komponenten in auf Kernkomponenten basierenden Formularen mithilfe des Migrationsdienstprogramm-Tools](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Speichern eines adaptiven Formulars als Entwurf](/help/forms/save-core-component-based-form-as-draft.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
@@ -1185,9 +1185,9 @@ ht-degree: 99%
       + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Konfigurieren von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
-      + [Konfigurieren von CDN-Anmeldeinformationen und Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md)
+      + [Konfigurieren von CDN-Anmeldeinformationen und einer Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md)
-      + [Löschen des CDN-Cache](/help/implementing/dispatcher/cdn-cache-purge.md)
+      + [Bereinigen des CDN-Caches](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectoren {#connectors}
    + [Implementieren von AEM-Connectoren](/help/connectors/implement.md)

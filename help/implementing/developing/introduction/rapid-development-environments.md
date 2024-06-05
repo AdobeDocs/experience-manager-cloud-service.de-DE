@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '4294'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ RDEs ermöglichen es Entwicklern, Änderungen schnell bereitzustellen und zu üb
 Sobald die Änderungen in einer RDE getestet wurden, können sie über die Cloud Manager-Pipeline in einer regulären Cloud-Entwicklungsumgebung bereitgestellt werden.
 
 >[!NOTE]
-> Kontaktieren Sie die RDE-Entwickler auf unserer Website. [Dispatch-Kanal](https://discord.com/channels/1131492224371277874/1245304281184079872). Sie können Fragen stellen oder Feedback zu RDE-Themen geben.
+> Kontaktieren Sie die RDE-Entwickelnden über unseren [Discord-Kanal](https://discord.com/channels/1131492224371277874/1245304281184079872). Sie können Fragen stellen oder Feedback zu RDE-Themen geben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
@@ -146,11 +146,11 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
 
 Sehen Sie sich für weitere Informationen und Demonstrationen das Video-Tutorial [Einrichten eines RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=de) an.
 
-## Installieren der RDE-Befehlszeilenwerkzeuge (mit interaktivem Modus) {#installing-the-rde-command-line-tools-interactive}
+## Installieren der RDE-Befehlszeilen-Tools (im interaktiven Modus) {#installing-the-rde-command-line-tools-interactive}
 
 >[!NOTE]
 >
-> Dieser Einrichtungsprozess ist noch nicht verfügbar. Sie wird den vorherigen Prozess irgendwann im Juni ersetzen.
+> Dieser Setup-Prozess ist noch nicht verfügbar.  Er wird den vorherigen Prozess im Laufe des Juni ersetzen.
 > 
 
 Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, können Sie damit interagieren, indem Sie die Befehlszeilen-Tools wie in den folgenden Schritten beschrieben einrichten:
@@ -160,24 +160,24 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
 >Stellen Sie sicher, dass Sie die neueste Version von [Node und NPM installiert haben](https://nodejs.org/de/download/), damit Adobe I/O CLI und die zugehörigen Plugins richtig funktionieren.
 
 
-1. Installieren Sie die Adobe I/O CLI-Tools entsprechend diesem [Verfahren](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Installieren Sie die Adobe I/O CLI-Tools AEM RDE-Plug-in:
+1. Installieren Sie die Adobe I/O-CLI-Tools gemäß dem [hier](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) beschriebenen Verfahren.
+1. So installieren Sie das AEM-RDE-Plug-in für Adobe I/O-CLI-Tools:
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt dem Benutzer interaktiv eine Liste der Programme in seiner Organisation zur Verfügung und zeigt RDE-Umgebungen in diesem Programm an, aus denen er wählen kann.
+1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt Benutzenden interaktiv eine Liste der Programme in ihrer Organisation zur Verfügung und zeigt RDE-Umgebungen in diesem Programm an, aus denen gewählt werden kann.
 
    ```
    aio login
    aio aem:rde:setup
    ```
 
-   Der Einrichtungsschritt kann übersprungen werden, wenn der Zweck darin besteht, eine skriptgesteuerte Umgebung zu verwenden. In diesem Fall können die Werte für Organisation, Programm und Umgebung in jedem Befehl enthalten sein. [Weitere Informationen finden Sie unten unter Renderbefehle .](#rde-cli-commands).
+   Der Setup-Schritt kann übersprungen werden, wenn eine skriptgesteuerte Umgebung verwendet werden soll. In diesem Fall können die Werte für Organisation, Programm und Umgebung in jeden Befehl eingefügt werden. [Weitere Informationen finden Sie unten bei den RDE-Befehlen](#rde-cli-commands).
 
-### Interaktive Einrichtung
+### Das interaktive Setup
 
 Der Setup-Befehl fragt, ob die bereitgestellte Konfiguration lokal oder global gespeichert werden soll.
 
@@ -186,32 +186,32 @@ Setup the CLI configuration necessary to use the RDE commands.
 ? Do you want to store the information you enter in this setup procedure locally? (y/N)
 ```
 
-Auswählen `no` nach
-* Organisation, Programm und Umgebung global in Ihrer aio-Konfiguration speichern.
-* nur mit einem einzigen RDE arbeiten.
+Wählen Sie `no`, um
+* Organisation, Programm und Umgebung global in Ihrer aio-Konfiguration zu speichern
+* nur mit einer einzigen RDE zu arbeiten
 
-Auswählen `yes` nach
-* Organisation, Programm und Umgebung lokal im aktuellen Verzeichnis in einer `.aio` -Datei. Dies ist praktisch, wenn Sie die Datei in die Versionskontrolle übertragen möchten, sodass andere, die das Git-Repository klonen, sie verwenden können.
-* mit vielen RDEs arbeiten, sodass der Wechsel zu einem anderen Ordner stattdessen diese Konfiguration verwendet.
-* Verwenden Sie die Konfiguration in einem programmatischen Kontext wie ein Skript, das darauf verweisen kann.
+Wählen Sie `yes`, um
+* Organisation, Programm und Umgebung lokal im aktuellen Verzeichnis in einer `.aio`-Datei zu speichern. Dies ist praktisch, wenn Sie die Datei in die Versionskontrolle übertragen möchten, sodass andere, die das Git-Repository klonen, sie verwenden können.
+* mit vielen RDEs zu arbeiten, sodass beim Wechsel zu einem anderen Verzeichnis stattdessen diese Konfiguration verwendet wird
+* die Konfiguration in einem programmgesteuerten Kontext zu verwenden, z. B. in einem Skript, das darauf verweisen kann
 
 
-Sobald die lokale oder globale Konfiguration ausgewählt ist, versucht der Setup-Befehl, Ihre Organisations-ID aus Ihrer aktuellen Anmeldung zu lesen und die Programme des Unternehmens zu lesen. Falls die Organisation nicht gefunden werden kann, können Sie sie manuell eingeben und eine Anleitung eingeben.
+Sobald die lokale oder globale Konfiguration ausgewählt ist, versucht der Setup-Befehl, Ihre Organisations-ID aus Ihrer aktuellen Anmeldung und anschließend die Programme der Organisation zu lesen. Falls die Organisation nicht gefunden werden kann, können Sie sie mithilfe von Anweisungen manuell eingeben.
 
 ```
  Selected only organization: XYXYXYXYXYXYXYXXYY
  retrieving programs of your organization ...
 ```
 
-Nach dem Abrufen der Programme kann der Benutzer aus der Liste auswählen und auch filtern.
-Bei Auswahl des Programms wird eine Liste mit RDE-Umgebungen aufgeführt, aus denen Sie auswählen können.
-Wenn nur ein Programm und/oder eine RDE-Umgebung verfügbar ist, wird diese automatisch ausgewählt.
+Nach dem Abrufen der Programme können Benutzende aus der Liste auswählen und auch filtern.
+Nach der Auswahl des Programms wird eine Liste mit RDE-Umgebungen aufgeführt, aus denen Sie auswählen können.
+Wenn nur ein Programm und/oder nur eine RDE-Umgebung verfügbar ist, werden diese automatisch ausgewählt.
 
 Um den aktuellen Umgebungskontext anzuzeigen, führen Sie Folgendes aus:
 
 ```aio aem rde setup --show```
 
-Der Befehl antwortet mit einem Ergebnis ähnlich dem:
+Der Befehl antwortet mit einem Ergebnis ähnlich Folgendem:
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
@@ -269,10 +269,10 @@ Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnd
 
 >[!NOTE]
 >
-> Diese globalen Flags sind noch nicht verfügbar. Sie werden irgendwann im Juni eingeführt.
+> Diese globalen Flags sind noch nicht verfügbar. Sie werden im Laufe des Juni eingeführt.
 > 
 
-* Verwenden Sie für eine weniger ausführliche Ausgabe das Flag &quot;quiet&quot;:
+* Verwenden Sie für eine weniger ausführliche Ausgabe das Flag „leise“:
 
   `aio aem rde <command> --quiet`
 
@@ -282,13 +282,13 @@ Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnd
 
   `aio aem rde <command> --json`
 
-  Dadurch wird eine gültige JSON-Datei zurückgegeben, während die Konsolenausgabe unterdrückt wird. Siehe JSON-Beispiele weiter unten.
+  Dadurch wird eine gültige JSON-Datei zurückgegeben, während die Konsolenausgabe unterdrückt wird. Weitere Informationen finden Sie in den JSON-Beispielen weiter unten.
 
-* Um zu vermeiden, die RDE-Verbindungsinformationen mit dem Setup-Befehl oder einer beliebigen aio-Konfigurationserstellung zu konfigurieren, verwenden Sie die drei Flags für Organisation, Programm und Umgebung:
+* Um zu vermeiden, dass die RDE-Verbindungsinformationen mit dem Setup-Befehl oder einer beliebigen aio-Konfigurationserstellung konfigurieren werden, verwenden Sie die drei Flags für Organisation, Programm und Umgebung:
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  Dies erfordert weiterhin eine ```aio login``` durchgeführt werden.
+  Dies erfordert weiterhin die Durchführung eines ```aio login```.
 
 ### Bereitstellen in einer RDE {#deploying-to-rde}
 
@@ -414,7 +414,7 @@ Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Paket nicht aufg
 
 >[!NOTE]
 >
-> Diese Funktion ist noch nicht verfügbar. Die Einführung erfolgt irgendwann im Juni.
+> Diese Funktion ist noch nicht verfügbar.  Sie wird im Laufe des Juni eingeführt.
 >
 
 RDEs unterstützen Frontend-Code, der auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Seitenvorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) basiert. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung zur Bereitstellung von Frontend-Paketen und nicht über die [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) von Cloud Manager, die für andere Umgebungstypen verwendet wird.
@@ -518,27 +518,27 @@ Weitere Informationen und Demonstrationen finden Sie im Video-Tutorial [Verwendu
 
 >[!NOTE]
 >
-> Diese Funktion ist noch nicht verfügbar. Die Einführung erfolgt irgendwann im Juni.
+> Diese Funktion ist noch nicht verfügbar.  Sie wird im Laufe des Juni eingeführt.
 > 
 
-Wie andere Umgebungstypen können auch die Protokollebenen durch Ändern von OSGi-Konfigurationen festgelegt werden. Wie oben beschrieben, umfasst das Bereitstellungsmodell für RDEs jedoch eine Befehlszeile und keine Cloud Manager-Implementierung. Überprüfen Sie die [Protokollierungsdokumentation](/help/implementing/developing/introduction/logging.md) für weitere Informationen zum Anzeigen, Herunterladen und Interpretieren von Protokollen.
+Wie andere Umgebungstypen können auch die Protokollebenen durch Ändern von OSGi-Konfigurationen festgelegt werden. Wie oben beschrieben, verwendet das Bereitstellungsmodell für RDEs jedoch eine Befehlszeile und keine Cloud Manager-Implementierung. Weitere Informationen zum Anzeigen, Herunterladen und Interpretieren von Protokollen finden Sie in der [Protokollierungsdokumentation](/help/implementing/developing/introduction/logging.md).
 
-Die RDE-CLI verfügt auch über einen eigenen Protokollbefehl, mit dem schnell konfiguriert werden kann, welche Klassen und Pakete protokolliert werden sollen und auf welcher Protokollebene. Diese Konfigurationen können als temporär betrachtet werden, da sie die OSGi-Eigenschaften in der Versionskontrolle nicht ändern. Diese Funktion konzentriert sich auf das Verfolgen von Protokollen in Echtzeit, anstatt nach Protokollen aus der entfernten Vergangenheit zu suchen.
+Die RDE-CLI verfügt auch über einen eigenen Protokollbefehl, mit dem schnell konfiguriert werden kann, welche Klassen und Pakete auf welcher Protokollebene protokolliert werden sollen. Diese Konfigurationen können als temporär betrachtet werden, da sie die OSGi-Eigenschaften in der Versionskontrolle nicht ändern. Diese Funktion konzentriert sich auf das Verfolgen von Protokollen in Echtzeit, anstatt nach Protokollen aus der weit zurückliegenden Vergangenheit zu suchen.
 
-Das folgende Beispiel zeigt, wie die Autorenstufe verfolgt wird, wobei ein Paket auf eine Debug-Protokollebene und zwei Pakete (durch Leerzeichen getrennt) auf eine Info-Debug-Ebene eingestellt sind. Ausgabe, die eine **auth** -Paket hervorgehoben ist.
+Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket auf eine Debugging-Protokollebene und zwei Pakete (durch Leerzeichen getrennt) auf eine Info-Debugging-Ebene eingestellt sind. Eine Ausgabe, die ein **auth**-Paket enthält, ist hervorgehoben.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
 
-Siehe `aio aem:rde:logs --help` für den vollständigen Satz von Befehlszeilenoptionen.
+Weitere Informationen zum vollständigen Satz von Befehlszeilenoptionen finden Sie unter `aio aem:rde:logs --help`.
 
 Zu den Funktionen gehören:
 
-* Deklarieren der Protokollebenen auf einer Paket- oder Klassenebene
+* Deklarieren von Protokollebenen auf Paket- oder Klassenebene
 * Anpassen des Protokollausgabeformats
-* mit bis zu vier aktuellen Protokollkonfigurationen, jeweils in einem eigenen Terminal
-* spezifische Protokolle hervorheben
+* Nachverfolgen von bis zu vier aktuellen Protokollkonfigurationen, jeweils in einem eigenen Terminal
+* Hervorheben spezifischer Protokolle
 
-Beachten Sie, dass Protokolle im Speicher des RDE gespeichert werden und diese Protokolle recycelt werden und daher verworfen werden, wenn sie nicht versendet werden oder wenn das Netzwerk zu langsam ist.
+Beachten Sie, dass Protokolle im Speicher der RDE gespeichert werden. Diese Protokolle werden recycelt und daher verworfen, wenn sie nicht nachverfolgt werden oder wenn das Netzwerk zu langsam ist.
 
 
 ## Zurücksetzen {#reset-rde}
@@ -609,17 +609,17 @@ Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umge
 
 >[!NOTE]
 >
-> Diese Befehle sind noch nicht verfügbar. Sie werden irgendwann im Juni eingeführt.
+> Diese Befehle sind noch nicht verfügbar. Sie werden im Laufe des Juni eingeführt.
 > 
 
-Die meisten Befehle unterstützen die globale ```--json``` -Flag, das die Konsolenausgabe unterdrückt und gültige JSON zurückgibt, die in Skripten verarbeitet werden soll. Im Folgenden finden Sie einige unterstützte Befehle mit Beispielen für die JSON-Ausgabe.
+Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsolenausgabe unterdrückt und gültige JSON_Dateien zurückgibt, die in Skripten verarbeitet werden sollen. Im Folgenden finden Sie einige unterstützte Befehle mit Beispielen für die JSON-Ausgabe.
 
 ### Status
 
 <details>
-  <summary>Erweitern , um Statusbeispiele anzuzeigen</summary>
+  <summary>Erweitern, um Statusbeispiele anzuzeigen</summary>
 
-#### Ein sauberes RDE
+#### Eine saubere RDE
 
 ```$ aio aem rde status --json```
 
@@ -639,7 +639,7 @@ Die meisten Befehle unterstützen die globale ```--json``` -Flag, das die Konsol
 }
 ```
 
-#### Ein RDE mit einigen installierten Bundles
+#### Eine RDE mit einigen installierten Bundles
 
 ```$ aio aem rde status --json```
 
@@ -931,7 +931,7 @@ Die meisten Befehle unterstützen die globale ```--json``` -Flag, das die Konsol
 <details>
   <summary>Erweitern, um Beispiele zum Zurücksetzen anzuzeigen</summary>
 
-#### Feuer und Vergessen, Keine Wartezeit
+#### Fire-and-Forget, keine Wartezeit
 
 ```$ aio aem rde reset --no-wait --json```
 
@@ -959,7 +959,7 @@ Die meisten Befehle unterstützen die globale ```--json``` -Flag, das die Konsol
 ### Neu starten
 
 <details>
-  <summary>Erweitern, um Beispiele zum Neustart anzuzeigen</summary>
+  <summary>Erweitern, um Beispiele zum Neustarten anzuzeigen</summary>
 
 ```$ aio aem rde restart --json```
 
@@ -1050,7 +1050,7 @@ Informationen zu RDE in AEM as a Cloud Service finden Sie im Video-Tutorial, das
 
 ### Fehler wegen unzureichender Berechtigungen
 
-Zur Verwendung des RDE-Plug-ins müssen Sie Mitglied von Cloud Manager sein **Entwickler - Cloud Service** Produktprofil. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
+Um das RDE-Plug-in verwenden zu können, müssen Sie Mitglied des Cloud Manager-Produktprofils **Entwickler – Cloud Service** sein. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
 Andernfalls können Sie auch bestätigen, dass Sie über diese Entwicklerrolle verfügen, indem Sie sich bei der Entwicklerkonsole anmelden, indem Sie diesen Befehl ausführen:
 
@@ -1068,4 +1068,4 @@ Andernfalls können Sie auch bestätigen, dass Sie über diese Entwicklerrolle v
 
 `aio cloudmanager:list-programs`
 
-Dadurch sollten alle Programme unter Ihrer konfigurierten Organisation aufgelistet und Sie sollten sicherstellen, dass Ihnen die richtige Rolle zugewiesen ist.
+Dadurch sollten alle Programme unter Ihrer konfigurierten Organisation aufgelistet und bestätigt werden, dass Ihnen die richtige Rolle zugewiesen ist.
