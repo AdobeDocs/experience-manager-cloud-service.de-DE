@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6492'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Der Regeleditor bietet eine intuitive und vereinfachte Benutzeroberfläche zum S
 
 Benutzer, die der Gruppe der Formular-Hauptbenutzer hinzugefügt wurden, können Skripte erstellen und bestehende Skripte bearbeiten. Benutzer in der Gruppe [!DNL forms-users] können die Skripte verwenden, aber keine Skripte erstellen oder bearbeiten.
 
-## Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten
+## Der Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten
 
 {{rule-editor-diff}}
 

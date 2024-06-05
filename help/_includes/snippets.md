@@ -1,8 +1,8 @@
 ---
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -66,49 +66,49 @@ ht-degree: 61%
 * [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
 
 
-## Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten  {#rule-editor-diff}
+## Der Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten  {#rule-editor-diff}
 
-Die folgende Tabelle zeigt den Unterschied zwischen den in den Kernkomponenten des Regeleditors verfügbaren Funktionen und den Foundation-Komponenten des Regeleditors:
+Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den Kernkomponenten des Regeleditors und in den Foundation-Komponenten des Regeleditors verfügbar sind:
 
 <table>
   <tbody>
   <tr>
     <td><strong>Funktionen</strong></td>
-    <td><strong>Adaptive Form Foundation-Komponenten</strong></td>
-    <td><strong>Kernkomponenten für adaptive Formulare</strong></td>   
+    <td><strong>Foundation-Komponenten in adaptiven Formularen</strong></td>
+    <td><strong>Kernkomponenten in adaptiven Formularen</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Dropdown-Listenoptionen festlegen </td>
-    <td>Die Optionen der Dropdown-Liste werden mithilfe des Regeleditors <b>Festlegen von Optionen für</b> -Eigenschaft.</td>
+    <td>Optionen der Dropdown-Liste festlegen </td>
+    <td>Die Optionen der Dropdown-Liste werden mithilfe der Eigenschaft <b>Optionen festlegen von</b> des Regeleditors festgelegt.</td>
     <td>Die Dropdown-Optionen werden mithilfe der benutzerdefinierten Funktionen festgelegt. 
    </td>
    </tr>
      </tr>
    <tr>
-    <td>Ausführen mathematischer Vorgänge für das wiederholbare Bedienfeldfeld </td>
-    <td>OOTB-Math-Funktionen können auf wiederholbare Bereichsfelder angewendet werden, um Funktionen wie Summe, Durchschnitt auszuführen. </td>
-    <td>Mathematische Operationen für das wiederholbare Bedienfeldfeld können mit den benutzerdefinierten Funktionen durchgeführt werden.
+    <td>Mathematische Vorgänge für das wiederholbare Bedienfeldfeld ausführen </td>
+    <td>Vorkonfigurierte mathematische Funktionen können auf wiederholbare Bedienfelder angewendet werden, um Funktionen wie Summe und Durchschnitt auszuführen. </td>
+    <td>Mathematische Vorgänge für das wiederholbare Bedienfeld können mit den benutzerdefinierten Funktionen ausgeführt werden.
    </td>
    </tr>
       <tr>
-    <td>Feld/Bedienfeld/Formularregel in "Dann"validieren/zurücksetzen </td>
-    <td>Die Funktionen "Überprüfen und Zurücksetzen"unterstützen nur Formularobjekte im Regeleditor. 
+    <td>Feld/Bedienfeld/Formularregel in „Dann“ validieren/zurücksetzen </td>
+    <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen nur Formulare als Objekte im Regeleditor. 
    </td>
-    <td>Die Funktionen "Überprüfen und Zurücksetzen"unterstützen Formular-/Bedienfeld-/Feldobjekte im Regeleditor. 
+    <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen Formulare/Bedienfelde/Felder als Objekte im Regeleditor. 
    </td>
    </tr>
    <tr>
     <td>ES10-Unterstützung </td>
     <td>ES10 wird noch nicht unterstützt. </td>
-    <td>Unterstützung für moderne JavaScript-Funktionen wie let- und pfeile Funktionen (ES10-Unterstützung) in benutzerdefinierten Funktionen. 
+    <td>Unterstützung für moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen. 
    </td>
    </tr>
    </tr>
    <tr>
    <td>Dienstausgabeeigenschaft</td>
-   <td> Die Ausgabeeigenschaft des Dienstes wird im <b>Wert einstellen von</b> -Option des Regeleditors. </td>
-   <td>Die <b>Wert einstellen von</b> unterstützt nicht die <b>Dienstausgabe</b> -Eigenschaft zum Aufrufen von APIs im Regeleditor.
+   <td> Die Dienstausgabeeigenschaft wird in der Option <b>Wert einstellen für</b> des Regeleditors unterstützt. </td>
+   <td>Die Option <b>Wert einstellen für</b> unterstützt nicht die Eigenschaft <b>Dienstausgabe</b> für das Aufrufen von APIs im Regeleditor.
    </td>
    </tr>
    </tr>

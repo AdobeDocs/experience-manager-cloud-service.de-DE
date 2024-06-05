@@ -3,7 +3,7 @@ title: Verwalten von Berichten in Assets-Ansicht
 description: Greifen Sie auf die Daten im Abschnitt „Berichte“ der Assets-Ansicht zu, um die Produkt- und Funktionsnutzung zu bewerten und Erkenntnisse zu wichtigen Erfolgsmetriken zu erhalten.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 source-git-commit: 7e8d4487ec545b5625d6401513df00d5c6240ee2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
 ht-degree: 100%
 

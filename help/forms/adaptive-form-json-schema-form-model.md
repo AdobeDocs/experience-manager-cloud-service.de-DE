@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1389'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die wichtigsten Funktionen bei Verwendung eines JSON-Schemas sind wie folgt:
 * Die Struktur der JSON-Datei wird als Baumstruktur in der Registerkarte für die Content-Suche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der JSON-Hierarchie in das adaptive Formular ziehen.
 * Sie können das Formular mithilfe von JSON, das mit dem zugehörigen Schema konform ist, vorbefüllen.
 * Bei der Übermittlung werden die benutzerseitig eingegebenen Daten in einem JSON-Format gesendet, das dem zugehörigen Schema entspricht.
-* Sie können das Formular auch basierend auf dem JSON-Schema gemäß den Spezifikationen der [Version 2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* Sie können das Formular auch basierend auf dem JSON-Schema gemäß den Spezifikationen der [Version 2012-20](https://json-schema.org/draft/2020-12/release-notes) erstellen.
 
 Ein JSON-Schema besteht aus einfachen und komplexen Elementtypen. Die Elemente weisen Attribute auf, die dem Element Regeln hinzufügen. Wenn diese Elemente und Attribute in ein adaptives Formular gezogen werden, werden sie automatisch der entsprechenden Komponente des adaptiven Formulars zugeordnet.
 
@@ -450,9 +450,9 @@ Das adaptive Formular verwendet die im JSON-Schema verfügbaren Informationen, u
 
 >[!ENDTABS]
 
-Die wichtigsten Änderungen von den Spezifikationen des JSON-Schemas V4 zu Version 2020-12 sind:
-* Die ID wird als `$id`
-* deklariert als `$defs`
+Die wichtigsten Änderungen zwischen den Spezifikationen des JSON-Schemas v4 und des JSON-Schemas 2020-12 lauten wie folgt:
+* Die ID ist als `$id` deklariert.
+* Definitionen sind als `$defs` deklariert.
 
 ### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
 
@@ -898,7 +898,7 @@ Adaptive Formulare bieten keine Unterstützung für folgende JSON-Schemakonstruk
 * Union-Typen wie „any“ und „and“
 * „OneOf“, „AnyOf“, „AllOf“ und „NOT“;
 * Nur homogene Arrays werden unterstützt. Daher muss die Elementbeschränkung ein Objekt sein, kein Array.
-* URI-Referenzen in $ref
+* URI-Verweise in $ref
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 

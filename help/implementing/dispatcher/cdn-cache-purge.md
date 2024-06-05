@@ -1,40 +1,40 @@
 ---
-title: Löschen des CDN-Cache
-description: Erfahren Sie, wie Sie zwischengespeicherte Objekte aus dem Adobe CDN-Cache entfernen können, indem Sie das Bereinigungs-API-Token konfigurieren, das dann in API-Aufrufen verwendet werden kann.
+title: Bereinigen des CDN-Caches
+description: Erfahren Sie, wie Sie zwischengespeicherte Objekte aus dem Adobe-CDN-Cache entfernen können, indem Sie das Bereinigungs-API-Token konfigurieren, das dann in API-Aufrufen verwendet werden kann.
 feature: CDN Cache
 source-git-commit: bd8f534642848a656e5e54c425049c95cdb413f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '449'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Löschen des CDN-Cache {#cdn-purge-cache}
+# Bereinigen des CDN-Caches {#cdn-purge-cache}
 
 >[!NOTE]
->Diese Funktion ist noch nicht allgemein verfügbar.  Um dem Programm für frühe Anwender beizutreten, senden Sie eine E-Mail `aemcs-cdn-config-adopter@adobe.com`.
+>Diese Funktion ist noch nicht allgemein verfügbar.  Wenn Sie am Early-Adopter-Programm teilnehmen möchten, senden Sie eine E-Mail an `aemcs-cdn-config-adopter@adobe.com`.
 
-Durch die Bereinigung wird ein Objekt aus dem Adobe-CDN-Cache entfernt, was dazu führt, dass zukünftige Anforderungen als Cache-Versäumnis an die Quelle weitergeleitet werden, anstatt aus dem Cache bereitgestellt zu werden.
-AEM as a Cloud Service können Sie ein Bereinigungs-API-Token konfigurieren, das dann in API-Aufrufen verwendet werden kann. Lesen Sie die [Artikel &quot;Konfigurieren von CDN-Anmeldeinformationen und Authentifizierung&quot;](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) , um zu erfahren, wie Sie dieses Token mithilfe der Authentifizierungsrichtlinien der Cloud Manager-Konfigurationspipelineauthentifizierung konfigurieren.
+Durch die Bereinigung wird ein Objekt aus dem Adobe-CDN-Cache entfernt, was dazu führt, dass zukünftige Anfragen als Cache-Fehler an die Quelle weitergeleitet werden, anstatt aus dem Cache bereitgestellt zu werden.
+Mit AEM as a Cloud Service können Sie ein Bereinigungs-API-Token konfigurieren, das dann in API-Aufrufen verwendet werden kann. Lesen Sie den Artikel [Konfigurieren der CDN-Anmeldeinformationen und Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token), um zu erfahren, wie Sie dieses Token mithilfe der Authentifizierungsanweisungen der Cloud Manager-Konfigurations-Pipeline konfigurieren.
 
 Es werden drei Bereinigungsvarianten unterstützt:
 
-* [Einzelne URL-Bereinigung](#single-purge) - jeweils nur eine Ressource bereinigen.
-* [Bereinigen durch Ersatzschlüssel](#surrogate-key-purge) - mehrere Ressourcen gleichzeitig bereinigen.
-* [Vollständige Bereinigung](#full-purge) - Bereinigen Sie alle Ressourcen.
+* [Einzelne URL-Bereinigung](#single-purge): Es wird jeweils nur eine Ressource bereinigt.
+* [Bereinigung durch Ersatzschlüssel](#surrogate-key-purge): Es werden mehrere Ressourcen gleichzeitig bereinigt.
+* [Vollständige Bereinigung](#full-purge): Es werden alle Ressourcen bereinigt.
 
-Alle Bereinigungsvarianten weisen Folgendes auf:
+Alle Bereinigungsvarianten vereint Folgendes:
 
-* Die HTTP-Methode muss auf `PURGE`.
-* Die URL kann eine beliebige Domäne sein, die mit dem AEM-Dienst verknüpft ist, für den die Bereinigungsanforderung bestimmt ist.
-* Die `X-AEM-Purge-Key` muss in einem HTTP-Header angegeben werden.
+* Als HTTP-Methode muss `PURGE` festgelegt sein.
+* Die URL kann eine beliebige Domain sein, die mit dem AEM-Dienst verknüpft ist, für den die Bereinigungsanfrage bestimmt ist.
+* Der `X-AEM-Purge-Key` muss in einem HTTP-Header angegeben werden.
 
 >[!CAUTION]
->Das Löschen des CDN-Cache, insbesondere mit der Hard Flag, erhöht den Traffic an der Quelle und kann zu einem Ausfall führen, wenn er nicht ordnungsgemäß ausgeführt wird.
+>Die Bereinigung des CDN-Caches, insbesondere mit Hardflag, erhöht den Traffic an der Quelle und kann zu einem Ausfall führen, sofern die Ausführung nicht ordnungsgemäß erfolgt.
 
 ## Einzelne URL-Bereinigung {#single-purge}
 
-Sie können eine Ressource gleichzeitig wie folgt bereinigen:
+Sie können jeweils eine einzelne Ressource wie folgt bereinigen:
 
 ```
 curl
@@ -43,13 +43,13 @@ curl
 -H 'X-AEM-Purge: soft'
 ```
 
-Wie im obigen Beispiel gezeigt, können Sie **optional** angeben, ob das CDN eine **hard** Bereinigung (Standard) oder **soft** Bereinigen Sie die zwischengespeicherten Objekte.
+Wie im obigen Beispiel gezeigt, können Sie **optional** festlegen, ob das CDN die standardmäßige **endgültige** (harte) Bereinigung oder eine **vorläufige** (weiche) Bereinigung der zwischengespeicherten Objekte durchführen soll.
 
-Die standardmäßige Hard-Bereinigung macht den Inhalt für neue Anforderungen sofort unzugänglich, bis der Inhalt aus der Quelle abgerufen wird. Bei der Soft-Bereinigung werden Inhalte als veraltet markiert, sie werden jedoch trotzdem Clients bereitgestellt, sodass sie nicht warten müssen, bis der Inhalt von der Quelle abgerufen wird.
+Bei der standardmäßigen endgültigen Bereinigung wird der Inhalt sofort für neue Anfragen unzugänglich; er muss dann von der Quelle abgerufen werden. Bei der weichen Bereinigung werden Inhalte als veraltet markiert, sie werden jedoch trotzdem Clients bereitgestellt, sodass sie nicht warten müssen, bis der Inhalt von der Quelle abgerufen wird.
 
-## Bereinigung der Ersatzschlüssel {#surrogate-key-purge}
+## Bereinigung durch Ersatzschlüssel {#surrogate-key-purge}
 
-Ersatzschlüssel sind eindeutige Kennungen, mit denen Sie einen Satz von Inhalten bereinigen. Sie werden auf Inhalte angewendet, indem eine `Surrogate-Key` -Kopfzeile zur Antwort. Ein oder mehrere Ersatzschlüssel können in einem Bereinigungs-API-Aufruf referenziert werden.
+Ersatzschlüssel sind eindeutige Kennungen, mit denen Sie einen Satz von Inhalten bereinigen können. Sie werden auf Inhalte angewendet, indem der Antwort ein `Surrogate-Key`-Header hinzugefügt wird. Ein oder mehrere Ersatzschlüssel können in einem Bereinigungs-API-Aufruf referenziert werden.
 
 ```
 curl
@@ -59,7 +59,7 @@ curl
 -H "X-AEM-Purge: soft" #optional
 ```
 
-Die `Surrogate-Key`(s) durch Leerzeichen getrennt sind. Ähnlich wie bei der einzelnen URL-Bereinigung können Sie entweder eine Hard- oder eine Soft-Bereinigung konfigurieren.
+Die `Surrogate-Key`(s) werden durch Leerzeichen voneinander getrennt. Ähnlich wie bei der einzelnen URL-Bereinigung können Sie entweder eine endgültige oder vorläufige Bereinigung konfigurieren.
 
 ## Vollständige Bereinigung {#full-purge}
 
@@ -72,8 +72,8 @@ curl
 -H "X-AEM-Purge: all"
 ```
 
-Beachten Sie, dass `X-AEM-Purge` -Kopfzeile muss den Wert &quot;all&quot;enthalten.
+Beachten Sie, dass der `X-AEM-Purge`-Header den Wert „all“ enthalten muss.
 
 ## Interaktionen mit der Apache-/Dispatcher-Ebene {#apache-layer}
 
-Wie im Abschnitt [Artikel zum Ablauf der Inhaltsbereitstellung](/help/implementing/dispatcher/overview.md), ruft das CDN Inhalte aus der Apache-/Dispatcher-Ebene ab, wenn der Cache abgelaufen ist. Dies bedeutet, dass Sie vor dem Bereinigen einer Ressource im CDN sicherstellen sollten, dass auch eine neue Version des Inhalts beim Dispatcher verfügbar ist. Weitere Informationen finden Sie unter [Dispatcher-Cache-Invalidierung](/help/implementing/dispatcher/caching.md#disp).
+Wie im Artikel [Ablauf der Inhaltsbereitstellung](/help/implementing/dispatcher/overview.md) beschrieben, ruft das CDN Inhalte von der Apache-/Dispatcher-Ebene ab, wenn der Cache abgelaufen ist. Dies bedeutet, dass Sie vor dem Bereinigen einer Ressource im CDN sicherstellen sollten, dass auch eine neue Version des Inhalts beim Dispatcher verfügbar ist. Weitere Informationen finden Sie unter [Dispatcher-Cache-Invalidierung](/help/implementing/dispatcher/caching.md#disp).
