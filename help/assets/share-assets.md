@@ -4,10 +4,10 @@ description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigabe als L
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 85%
+source-wordcount: '1835'
+ht-degree: 86%
 
 ---
 
@@ -116,12 +116,12 @@ Die E-Mail-Vorlage kann mit Nur-Text oder HTML angepasst werden. Der standardmä
 
 | Platzhalter | Beschreibung |
 |---|-----|
-| ${emailSubject} | Betreff einer E-Mail |
-| ${emailInitiator} | E-Mail-ID des Benutzers, der die E-Mail erstellt hat |
-| ${emailMessage} | Email body |
-| ${pagePath} | URL des freigegebenen Links |
-| ${linkExpiry} | Ablaufdatum des freigegebenen Links |
-| ${host.prefix} | Ursprung der [!DNL Experience Manager] -Instanz, beispielsweise `http://www.adobe.com"` |
+| `${emailSubject}` | Betreff einer E-Mail |
+| `${emailInitiator}` | E-Mail-ID des Benutzers, der die E-Mail erstellt hat |
+| `${emailMessage}` | Email body |
+| `${pagePath}` | URL des freigegebenen Links |
+| `${linkExpiry}` | Ablaufdatum des freigegebenen Links |
+| `${host.prefix}` | Ursprung der [!DNL Experience Manager] -Instanz, beispielsweise `http://www.adobe.com"` |
 
 #### Beispiel für eine benutzerdefinierte E-Mail-Vorlage {#custom-email-template-example}
 
