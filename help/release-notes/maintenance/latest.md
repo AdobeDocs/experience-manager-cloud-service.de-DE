@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
+source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 43%
 
 ---
@@ -47,7 +47,7 @@ Keine
 
 ### Änderungshinweis {#change-notice-16544}
 
-Ab September 2024 deaktiviert AEM as a Cloud Service die Serialisierung von Resource Resolvers über das Sling Model Exporter-Framework. Siehe [die Dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) für weitere Details.
+Ab September 2024 deaktiviert AEM as a Cloud Service die Serialisierung von Resource Resolvers über das Sling Model Exporter-Framework. Siehe [die Dokumentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) für weitere Details.
 
 ### Eingestellte Funktionen und APIs {#deprecated-16544}
 
