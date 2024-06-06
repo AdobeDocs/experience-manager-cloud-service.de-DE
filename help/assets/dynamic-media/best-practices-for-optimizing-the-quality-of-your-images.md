@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 72%
@@ -25,9 +25,9 @@ Adobe Experience Manager umfasst mehr als 100 Bildbereitstellungsbefehle für Dy
 **Intelligente Bildbearbeitung:**
 
 * Die Aktivierung der intelligenten Bildbearbeitung in Dynamic Media ermöglicht eine automatische Optimierung von Bildformat, -größe und -qualität basierend auf den Funktionen des Client-Browsers.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Sie verbessert die Leistung bei der Bildbereitstellung durch die dynamische Anpassung dieser Parameter.
-* Sie können die intelligente Bildbearbeitung mit dem Tool zur Selbstbewertung bewerten [Momentaufnahme](https://snapshot.scene7.com/)
+* Sie können die intelligente Bildbearbeitung mit dem Tool zur Selbstbewertung bewerten [Momentaufnahme](https://snapshot.scene7.com/).
 
 **Bildformate:**
 
