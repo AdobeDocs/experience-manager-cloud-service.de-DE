@@ -1,17 +1,17 @@
 ---
-title: Laden von Dropdown-Listenoptionen aus der URL
+title: Dropdown-Listenoptionen von einer URL oder einem anderen Blatt für Edge Delivery Services von AEM Forms as a Cloud Service laden
 description: Die Dropdown-Listenoptionen sind in einer gesonderten Tabelle enthalten und werden dann über die angegebene URL in die primäre Tabelle importiert.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 91%
 
 ---
 
 
-# Laden von Dropdown-Listenoptionen aus der URL
+# Optionen aus einer URL oder einem anderen Blatt für Edge Delivery Services für AEM Forms as a Cloud Service
 
 Forms enthält häufig Dropdown-Menüs, aus denen Benutzende vordefinierte Optionen auswählen können. Diese Optionen werden normalerweise im Formular selbst definiert, aber die Verwaltung langer Listen kann umständlich sein. Dieses Handbuch beschreibt, wie Sie die Bearbeitung von Formularen verbessern können, indem Sie Dropdown-Optionen aus einer separaten Tabelle über eine URL laden.
 
