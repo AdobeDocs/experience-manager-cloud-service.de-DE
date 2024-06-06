@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
+source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 86%
+source-wordcount: '1942'
+ht-degree: 82%
 
 ---
 
@@ -44,12 +44,28 @@ Eine Zusammenfassung der in der Version 2024.5.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in Sites {#sites-new-features}
 
+#### AEM Übersetzungsintegration {#translation-integration}
+
+Inhaltsübersetzungsaktionen und -Workflows ermöglichen nun die Verfolgung relevanter Prozessschritte und -zustände aus externen Triggern. Die folgenden Ereignisse werden generiert. Benutzer können Ereignisse über die Adobe Developer-Konsole abonnieren.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) {#real-use-monitoring}
 
 * **[Der Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) ist jetzt allgemein verfügbar.](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** Aktivierung der clientseitigen Datenerfassung für AEM as a Cloud Service.
-Der Real Use Monitoring Service , die clientseitige Sammlung, bietet eine präzisere Darstellung von Interaktionen und gewährleistet eine zuverlässige Messung der Website-Interaktion. Sie ermöglicht Kunden mit erweiterten Einblicken in ihren Seiten-Traffic und ihre Leistung. Es ist eine großartige Gelegenheit, mehr über Ihre Seitenleistung zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
+Der Real Use Monitoring-Dienst, die clientseitige Sammlung, bietet eine präzisere Darstellung von Interaktionen und gewährleistet so eine zuverlässige Messung der Website-Interaktion. Sie ermöglicht Kunden mit erweiterten Einblicken in ihren Seiten-Traffic und ihre Leistung. Es ist eine großartige Gelegenheit, mehr über Ihre Seitenleistung zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
 
-### AEM Authoring für Edge Delivery Services
+#### AEM Authoring für Edge Delivery Services {#edge-enhancements}
 
 Verbesserte Stabilität und verschiedene Verbesserungen für ein besseres Authoring-Erlebnis.
 
@@ -128,7 +144,7 @@ Sind Sie bereit, eine dieser CAPTCHA-Lösungen in Ihre adaptiven Formulare zu in
 
 ### Forms-Dienst
 
-Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Er kann auch verwendet werden, um Daten in ein vorhandenes interaktives PDF-Formular zu importieren oder daraus zu exportieren und gesendete Daten zu validieren. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
+Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Sie kann auch zum Importieren oder Exportieren von Daten in und aus einem vorhandenen interaktiven PDF-Formular und zum Überprüfen gesendeter Daten verwendet werden. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
 
 * **Rendern von Formularen**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und (optional) mit XML-Daten erstellt wurde. Dadurch wird im Wesentlichen ein ausfüllbares PDF-Formular erzeugt, das optional mit Daten vorausgefüllt ist.
 * **Datenextraktion und -import**: Importieren Sie Daten in ein vorhandenes PDF-Formular und extrahieren Sie Daten aus einem ausgefüllten PDF-Formular. Es wird sowohl das XDP- als auch das XML-Datenformat unterstützt, und der Import in PDF-Formulare, die nicht im XFA-Format sind (auch AcroForms genannt), unterstützt zusätzlich FDF- und XFDF-Daten.
@@ -239,4 +255,3 @@ Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/h
 
 Informationen zu Versionen anderer Experience Cloud-Applikationen finden Sie hier . [here](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current).
 Wenn Sie monatliche E-Mail-Benachrichtigungen über Aktualisierungen der Experience Cloud-Versionshinweise erhalten möchten, abonnieren Sie das [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
-
