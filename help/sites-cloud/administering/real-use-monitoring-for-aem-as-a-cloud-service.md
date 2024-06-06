@@ -1,19 +1,19 @@
 ---
 title: Echtzeit-Nutzungsüberwachung für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Benutzererlebnis einer Website oder Anwendung in Echtzeit erfassen und analysieren können.
-source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
+exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
+source-git-commit: 948eb304c17ad86dcbab2b0685428ae51f38f488
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 22%
 
 ---
 
+# Real Use Monitoring Service für AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
 >Wir freuen uns, die [GA-Rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) für den Real Use Monitoring-Dienst, die clientseitige Datenerfassung. Es handelt sich um einen automatisierten Dienst, für den kein Kunde eingerichtet werden muss.
-
-# Real Use Monitoring Service für AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
