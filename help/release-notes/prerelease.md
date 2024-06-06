@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Javadocs werden in Maven Central veröffentlicht.
 
    Wie üblich können einzelne Projekte die Abhängigkeit verwenden.
 
-1. Stellen Sie auf Ihrem lokalen Server bereit.
+1. Die Bereitstellung erfolgt auf Ihrem lokalen Server.
 
 1. Nachdem Sie sich vergewissert haben, dass die Bereitstellung lokal wie erwartet funktioniert, übertragen Sie den Code auf einen Entwicklungszweig und verwenden Sie eine Nicht-Produktions-Pipeline von Cloud Manager, um ihn in einer Umgebung bereitzustellen, für die ein Abonnement für den Vorabversionskanal besteht.
 
