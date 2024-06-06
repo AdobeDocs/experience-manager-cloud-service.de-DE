@@ -1,14 +1,13 @@
 ---
 title: Verteilen und Freigeben von Assets, Ordnern und Sammlungen
 description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigabe als Link, Download und über [!DNL Brand Portal], [!DNL desktop app] und [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
-source-wordcount: '1647'
-ht-degree: 100%
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+workflow-type: tm+mt
+source-wordcount: '1847'
+ht-degree: 85%
 
 ---
 
@@ -86,7 +85,7 @@ Freigeben von Assets als öffentliche URL:
 1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** auch einen automatisch generierten Asset-Link enthält.
 1. Legen Sie das Ablaufdatum des freigegebenen Links nach Bedarf fest.
 1. Aktivieren oder deaktivieren Sie unter **[!UICONTROL Link-Einstellungen]** `Include Originals` bzw. `Include Renditions`, um eine oder beide einzubeziehen bzw. auszuschließen. Die Auswahl von mindestens einer Option ist obligatorisch.
-1. Die Namen der ausgewählten Assets werden in der rechten Spalte des Dialogfelds [!DNL Share Link] angezeigt.
+1. Die Namen der ausgewählten Assets werden in der rechten Spalte der [!DNL Share Link] Dialogfeld.
 1. Kopieren Sie diesen Link und teilen Sie ihn mit anderen Benutzern.
 
 ### Freigeben des Asset-Links per E-Mail-Benachrichtigung {#share-assets-link-through-email}
@@ -101,15 +100,51 @@ So geben Sie Assets per E-Mail frei:
    * Geben Sie im Feld **[!UICONTROL Betreff]** einen Betreff ein, um den Zweck der freigegebenen Assets anzugeben.
    * Geben Sie bei Bedarf eine Nachricht in das Feld **[!UICONTROL Nachricht]** ein.
    * Verwenden Sie im Feld **[!UICONTROL Ablauf]** die Datumsauswahl, um Ablaufdatum und -uhrzeit für den Link festzulegen.
-   * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Download der Originaldatei zulassen]**, damit die Empfänger die ursprüngliche Ausgabedarstellung herunterladen können.
+   * Aktivieren Sie die **[!UICONTROL Download der Originaldatei zulassen]** aktivieren, damit die Empfänger die ursprüngliche Ausgabedarstellung herunterladen können.
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link für die Benutzer freigegeben wurde. Die Benutzer erhalten eine E-Mail mit dem freigegebenen Link.
 
    ![Linkfreigabe-E-Mail](assets/link-sharing-email-notification.png)
 
-### Herunterladen von Assets über den Asset-Link
+### E-Mail-Vorlage anpassen {#customize-email-template}
 
-Jeder Benutzer, der Zugriff auf den freigegebenen Asset-Link hat, kann die in einem ZIP-Ordner gebündelten Assets herunterladen. Der Download-Prozess ist identisch, unabhängig davon, ob ein Benutzer auf den kopierten Asset-Link zugreift oder den über die E-Mail freigegebenen Asset-Link verwendet.
+Eine gut durchdachte Vorlage vermittelt Professionalität und Kompetenz und erhöht die Glaubwürdigkeit Ihrer Botschaft und Ihres Unternehmens. Die [!DNL Adobe Experience Manager] ermöglicht die Anpassung der E-Mail-Vorlage, die an die Empfänger gesendet wird, die die E-Mail mit dem freigegebenen Link erhalten. Darüber hinaus ermöglichen benutzerdefinierte E-Mail-Vorlagen die Personalisierung Ihres E-Mail-Inhalts, indem Sie Ihren Empfängern einen Namen geben und auf spezifische Details verweisen, die für sie relevant sind. Dieser persönliche Kontakt kann dazu führen, dass sich der Empfänger schätzt und die Interaktion verstärkt. Eine benutzerdefinierte Vorlage stellt sicher, dass Ihre E-Mails mit Ihrer Markenidentität, einschließlich Logos, Farben und Schriftarten, konsistent sind. Konsistenz stärkt die Markenerkennung und das Vertrauen der Empfänger.
+
+#### Format einer benutzerdefinierten E-Mail-Vorlage {#format-of-custom-email-template}
+
+Die E-Mail-Vorlage kann mit Nur-Text oder HTML angepasst werden. Der standardmäßige Link zur bearbeitbaren Vorlage finden Sie unter `/libs/settings/dam/adhocassetshare/en.txt`. Sie können die Vorlage überschreiben, indem Sie die Datei erstellen `/apps/settings/dam/adhocassetshare/en.txt`. Sie können die E-Mail-Vorlage beliebig oft ändern.
+
+| Platzhalter | Beschreibung |
+|---|-----|
+| ${emailSubject} | Betreff einer E-Mail |
+| ${emailInitiator} | E-Mail-ID des Benutzers, der die E-Mail erstellt hat |
+| ${emailMessage} | Email body |
+| ${pagePath} | URL des freigegebenen Links |
+| ${linkExpiry} | Ablaufdatum des freigegebenen Links |
+| ${host.prefix} | Ursprung der [!DNL Experience Manager] -Instanz, beispielsweise `http://www.adobe.com"` |
+
+#### Beispiel für eine benutzerdefinierte E-Mail-Vorlage {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### Herunterladen von Assets über den Asset-Link {#download-assets-using-asset-link}
+
+Jeder Benutzer, der Zugriff auf den freigegebenen Asset-Link hat, kann die in einem ZIP-Ordner gebündelten Assets herunterladen. Der Download-Prozess ist identisch, unabhängig davon, ob ein Benutzer auf den kopierten Asset-Link zugreift oder den Asset-Link verwendet, der über die E-Mail freigegeben wurde.
 
 * Klicken Sie auf den Asset-Link oder fügen Sie die URL in Ihren Browser ein. Die Benutzeroberfläche [!UICONTROL Linkfreigabe] wird geöffnet. Dort können Sie zur [!UICONTROL Kartenansicht] oder [!UICONTROL Listenansicht] wechseln.
 
@@ -266,7 +301,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Konfigurationen zur Verwendung von [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Es verbindet [!DNL Adobe Experience Manager Assets] mit den [!DNL Creative Cloud]-Desktop-Programmen [!DNL Adobe InDesign], [!DNL Adobe Photoshop] und [!DNL Adobe Illustrator]. Über das [!DNL Adobe Asset Link]-Bedienfeld können Kreativschaffende auf in [!DNL Assets] gespeicherte Inhalte zugreifen und diese bearbeiten, ohne die Kreativprogramme zu verlassen, mit denen sie am besten vertraut sind.
+Adobe Asset Link optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Verbindungen [!DNL Adobe Experience Manager Assets] mit [!DNL Creative Cloud] Desktop-Applikationen, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], und [!DNL Adobe Illustrator]. Über das [!DNL Adobe Asset Link]-Bedienfeld können Kreativschaffende auf in [!DNL Assets] gespeicherte Inhalte zugreifen und diese bearbeiten, ohne die Kreativprogramme zu verlassen, mit denen sie am besten vertraut sind.
 
 Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
