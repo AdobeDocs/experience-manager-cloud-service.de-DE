@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -62,8 +62,8 @@ Inhaltsübersetzungsaktionen und -Workflows ermöglichen nun die Verfolgung rele
 
 #### Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) {#real-use-monitoring}
 
-* **[Der Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) ist jetzt allgemein verfügbar.](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** Aktivierung der clientseitigen Datenerfassung für AEM as a Cloud Service.
-Der Real Use Monitoring-Dienst, die clientseitige Sammlung, bietet eine präzisere Darstellung von Interaktionen und gewährleistet so eine zuverlässige Messung der Website-Interaktion. Sie ermöglicht Kunden mit erweiterten Einblicken in ihren Seiten-Traffic und ihre Leistung. Es ist eine großartige Gelegenheit, mehr über Ihre Seitenleistung zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
+* **[Der Real Use Monitoring-Datendienst (RUM) ist jetzt allgemein verfügbar](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service.
+Der Real Use Monitoring-Dienst, die clientseitige Sammlung, bietet eine präzisere Darstellung von Interaktionen und gewährleistet so eine zuverlässige Messung der Website-Interaktion. Dadurch erhält die Kundschaft erweiterte Einblicke in ihren Seiten-Traffic und die Performance. Es ist eine großartige Möglichkeit, mehr über Ihre Seiten-Performance zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
 
 #### AEM Authoring für Edge Delivery Services {#edge-enhancements}
 
@@ -112,7 +112,7 @@ Mit Experience Manager Assets können Sie jetzt über die Asset-Ansicht schnell 
 
 Diese Version umfasst ein bedeutendes Upgrade des visuellen Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren. Sie haben nun die folgenden Möglichkeiten:
 
-* Erstellen Sie Regeln im Visual Rule Editor, um [Überschreiben von standardmäßigen Erfolgs-/Fehlermeldungen bei der Formularübermittlung](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Erstellen Sie Regeln im visuellen Regeleditor, um [Standard-Nachrichten zur erfolgreichen/fehlerhaften Formularübermittlung zu überschreiben](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * Im Regeleditor für adaptive Formulare wurde die Möglichkeit hinzugefügt, [verschiedene Feldtypen für den WHEN-Vorgang auszuwählen](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
@@ -237,11 +237,11 @@ Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help
 ## [!DNL Experience Manager] Guides {#guides}
 
 * **Veröffentlichen eines Themas oder seiner Elemente in einem Experience Fragment**
-Jetzt können Sie mit Experience Manager-Handbüchern ein Thema oder dessen Elemente in einem Experience Fragment veröffentlichen. Ein Experience Fragment ist eine modulare Inhaltseinheit, die sowohl Inhalt als auch Layout integriert.  Experience Fragments sind hilfreich und helfen Ihnen bei der Erstellung konsistenter und ansprechender Erlebnisse.
+Sie können jetzt mit Experience Manager Guides ein Thema oder dessen Elemente in einem Experience Fragment veröffentlichen. Ein Experience Fragment ist eine modulare Inhaltseinheit, die sowohl Inhalt als auch Layout integriert. Experience Fragments können Ihnen insbesondere beim Erstellen konsistenter und ansprechender Erlebnisse helfen.
 * **Möglichkeit, die Themen-Asset-Metadaten an die native PDF-Ausgabe zu übergeben**
-Sie können die Themen-Asset-Metadaten beim Generieren der nativen PDF-Ausgabe hinzufügen. Mit dieser Funktion können Sie bestimmte Metadaten für verschiedene Themen wie Thementitel und Autor zu den Kopf- und Fußzeilen der Themenseite hinzufügen.
+Sie können die Themen-Asset-Metadaten beim Generieren der nativen PDF-Ausgabe hinzufügen. Mit dieser Funktion können Sie bestimmte Metadaten für verschiedene Themen wie Thementitel und Autorin bzw. Autor zu den Kopf- und Fußzeilen der Themenseite hinzufügen.
 
-Weitere Informationen zu den neuen und verbesserten Funktionen und Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager-Handbücher](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
