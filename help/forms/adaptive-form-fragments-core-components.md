@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: c8172320a8c0372ea6947415a9c1c1be326f3828
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 89%
+source-wordcount: '1355'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 89%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | Dieser Artikel |
+| AEM as a Cloud Service (Kernkomponenten) | Dieser Artikel |
+| AEM as a Cloud Service (Foundation-Komponenten) | [Hier klicken](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=de) |
 
 Zwar wurde jedes Formular für einen bestimmten Zweck entwickelt, aber in den meisten Formularen gibt es gängige Segmente für persönliche Angaben wie Name und Anschrift, Familienmitglieder und Einkommen. Eine Formularentwicklerin bzw. ein Formularentwickler muss diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.

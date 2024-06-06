@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie neue Gebietsschemata für ein adaptives Formu
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
+source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 98%
@@ -369,7 +369,7 @@ Diese folgenden Schritte führen Sie durch die Vorschau eines adaptiven Formular
 ## Best Practices zur Unterstützung neuer Lokalisierungen {#best-practices}
 
 * Adobe empfiehlt, ein Übersetzungsprojekt erst nach dem Erstellen eines adaptiven Formulars durchzuführen. Dadurch wird der Lokalisierungsprozess optimiert.
-* Wenn die Komponenten &quot;Numerisches Feld&quot;und &quot;Datumsauswahl&quot;in ein bestimmtes Gebietsschema übersetzt werden, kann es zu Formatierungsproblemen kommen. Um dies zu reduzieren, muss eine **Sprache** wurde in das Dialogfeld &quot;Konfigurieren&quot;von [Komponente für Datumsauswahl](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) und [Numerische Box-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Wenn die Komponenten &quot;Numerisches Feld&quot;und &quot;Datumsauswahl&quot;in ein bestimmtes Gebietsschema übersetzt werden, kann es zu Formatierungsproblemen kommen. Um dies zu reduzieren, muss eine **Sprache** wurde in das Dialogfeld &quot;Konfigurieren&quot;von [Komponente für Datumsauswahl](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) und [Komponente &quot;Numerisches Feld&quot;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Umgang mit neuen Feldern:

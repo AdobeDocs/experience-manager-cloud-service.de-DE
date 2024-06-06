@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '5612'
+source-wordcount: '5627'
 ht-degree: 86%
 
 ---
@@ -15,8 +15,9 @@ ht-degree: 86%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| Foundation-Komponenten | [Hier klicken](/help/forms/rule-editor.md) |
-| Kernkomponenten | Dieser Artikel |
+| AEM as a Cloud Service (Kernkomponenten) | Dieser Artikel |
+| AEM as a Cloud Service (Foundation-Komponenten) | [Hier klicken](/help/forms/rule-editor.md) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de) |
 
 # Hinzufügen von Regeln zu einem adaptiven Formular (Kernkomponenten) {#adaptive-forms-rule-editor}
 
@@ -36,7 +37,7 @@ Der Regeleditor bietet eine intuitive und vereinfachte Benutzeroberfläche zum S
 
 Benutzer, die der Gruppe der Formular-Hauptbenutzer hinzugefügt wurden, können Skripte erstellen und bestehende Skripte bearbeiten. Benutzer in der Gruppe [!DNL forms-users] können die Skripte verwenden, aber keine Skripte erstellen oder bearbeiten.
 
-## Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten
+## Der Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten
 
 {{rule-editor-diff}}
 

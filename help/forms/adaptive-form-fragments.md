@@ -8,10 +8,10 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 97%
+source-wordcount: '2150'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,9 @@ ht-degree: 97%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service (Foundation-Komponenten) | Dieser Artikel |
+| AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=de) |
-| AEM as a Cloud Service | Dieser Artikel |
 
 Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, doch enthalten die meisten Formulare einige gängige Elemente (z. B. für persönliche Angaben wie Name und Anschrift, Angaben zu Familienstand, Einkommen usw.). Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird. Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
 
@@ -174,7 +175,7 @@ Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven For
 
 >[!NOTE]
 >
-> Wenn Sie nicht-basierte Formularfragmente mehrfach in einem adaptiven Formular verwenden, tritt ein Problem bei der Datensynchronisierung zwischen den Feldern der Fragmente auf. Sie können eine [Formularfragment der Kernkomponente](/help/forms/adaptive-form-fragments-core-components.md) das nicht an ein Formulardatenmodell (FDM) gebunden ist, mehrmals in einem Formular, ohne dass Probleme mit der Datensynchronisierung auftreten.
+> Wenn Sie nicht-basierte Formularfragmente mehrfach in einem adaptiven Formular verwenden, tritt ein Problem bei der Datensynchronisierung zwischen den Feldern der Fragmente auf. Sie können eine [Kernkomponente (basierend auf Formularfragmenten)](/help/forms/adaptive-form-fragments-core-components.md), die nicht an ein Formulardatenmodell (FDM) gebunden ist, mehrfach in einem Formular verwenden, ohne dass Probleme mit der Datensynchronisierung auftreten.
 
 ## Automatisches Zuordnen von Fragmenten für die Datenbindung {#auto-mapping-of-fragments-for-data-binding}
 
@@ -252,7 +253,7 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth�
 * Stellen Sie sicher, dass der Fragmentname eindeutig ist. Das Fragment kann nicht erstellt werden, wenn ein vorhandenes Fragment mit demselben Namen vorhanden ist.
 * Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld, das ein anderes XDP-Fragment enthält, als Fragment speichern, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei XSD-basierten adaptiven Formularen wird das resultierende Fragment an den Schemastamm gebunden.
 * Wenn Sie ein adaptives Formularfragment erstellen, wird ein Fragmentknoten erstellt, der dem Knoten „guideContainer“ für ein adaptives Formular in CRXDe Lite ähnelt.
-* Ein Fragment in einem adaptiven Formular, das ein anderes Formulardatenmodell (FDM) verwendet, wird nicht unterstützt. Zum Beispiel wird in einem XSD-basierten adaptiven Formular ein XDP-basiertes Fragment nicht unterstützt und umgekehrt.
+* Ein Fragment, das ein anderes Formulardatenmodell (FDM) verwendet, wird in einem adaptiven Formular nicht unterstützt. Zum Beispiel wird in einem XSD-basierten adaptiven Formular ein XDP-basiertes Fragment nicht unterstützt und umgekehrt.
 * Adaptive Formularfragmente sind in der AEM-Inhaltssuche auf der Registerkarte „Adaptive Formularfragmente“ verfügbar.
 * Alle Ausdrücke, Skripts oder Stile in einem eigenständigen adaptiven Formularfragment bleiben erhalten, wenn es als Verweis eingefügt oder in ein adaptives Formular eingebettet wird.
 * Adaptive Formularfragmente, die als Verweis eingefügt wurden, können nicht in einem adaptiven Formular bearbeitet werden. Sie bearbeiten stattdessen entweder das eigenständige adaptive Formularfragment oder betten das Fragment in das adaptive Formular ein.
