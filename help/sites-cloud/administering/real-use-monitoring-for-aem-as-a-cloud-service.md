@@ -1,7 +1,7 @@
 ---
 title: Echtzeit-Nutzungsüberwachung für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Benutzererlebnis einer Website oder Anwendung in Echtzeit erfassen und analysieren können.
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 22%
@@ -10,6 +10,7 @@ ht-degree: 22%
 
 
 >[!NOTE]
+>
 >Wir freuen uns, die [GA-Rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) für den Real Use Monitoring-Dienst, die clientseitige Datenerfassung. Es handelt sich um einen automatisierten Dienst, für den kein Kunde eingerichtet werden muss.
 
 # Real Use Monitoring Service für AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
@@ -113,6 +114,6 @@ Während Sie RUM-Daten analysieren, kann es Abweichungen bei Seitenansichten und
 
 1. **Wie kann ich mich abmelden?**
 
-Wir empfehlen dringend die Verwendung der Real Use Monitoring (RUM), da sie erhebliche Vorteile bietet und Ihnen die Möglichkeit bietet, Ihre digitalen Erlebnisse zu optimieren. Es kann wertvolle Einblicke bieten, die die Leistung von Websites verbessern können. Der Dienst ist so konzipiert, dass er nahtlos ist und keine Auswirkungen auf die Leistung Ihrer Website hat.
+   Wir empfehlen dringend die Verwendung der Real Use Monitoring (RUM), da sie erhebliche Vorteile bietet und Ihnen die Möglichkeit bietet, Ihre digitalen Erlebnisse zu optimieren. Es kann wertvolle Einblicke bieten, die die Leistung von Websites verbessern können. Der Dienst ist so konzipiert, dass er nahtlos ist und keine Auswirkungen auf die Leistung Ihrer Website hat.
 
-&quot;Opt-out&quot;bedeutet, diese Einblicke zu verpassen. Sollten Probleme auftreten, wenden Sie sich bitte an den Adobe Support.
+   &quot;Opt-out&quot;bedeutet, diese Einblicke zu verpassen. Sollten Probleme auftreten, wenden Sie sich bitte an den Adobe Support.
