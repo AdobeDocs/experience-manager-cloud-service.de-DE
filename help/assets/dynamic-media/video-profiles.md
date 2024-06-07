@@ -2,12 +2,12 @@
 title: Dynamic Media-Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
 contentOwner: Rick Brough
-feature: Asset Management,Video Profiles,Renditions
+feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3716'
+source-wordcount: '3744'
 ht-degree: 100%
 
 ---
@@ -20,11 +20,11 @@ Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
 * **Auflösung des hochgeladenen primären Videos**
 
-   Wenn das MP4-Video mit einer geringeren Auflösung (wie 240 p oder 360 p) aufgenommen wurde, kann es nicht in High Definition gestreamt werden.
+  Wenn das MP4-Video mit einer geringeren Auflösung (wie 240 p oder 360 p) aufgenommen wurde, kann es nicht in High Definition gestreamt werden.
 
 * **Größe des Video-Players**
 
-   Standardmäßig ist die „Breite“ im Profil „Adaptive Videoverschlüsselung“ auf „Automatisch“ festgelegt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
+  Standardmäßig ist die „Breite“ im Profil „Adaptive Videoverschlüsselung“ auf „Automatisch“ festgelegt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
 
 Siehe [Best Practices zur Videokodierung](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -57,7 +57,7 @@ In der folgenden Tabelle finden Sie die Best Practices für die Codierung von Pr
    <td><strong>Video-Bitrate (kBit/s)</strong></td>
    <td><strong>Video-Framerate (FPS)</strong></td>
    <td><strong>Audio-Codec</strong></td>
-   <td><strong>Audiobitrate   (Kbit/s)</strong></td>
+   <td><strong>Audio-Bitrate (kBit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -401,7 +401,7 @@ Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner](/help/assets/dynami
 
 * Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` hinzu und wählen Sie **[!UICONTROL Alle speichern]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
 
 ## Überwachen des Fortschritts eines Videoprofil-Verarbeitungsauftrags {#monitoring-the-progress-of-an-encoding-job}

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
 workflow-type: tm+mt
-source-wordcount: '5030'
+source-wordcount: '5034'
 ht-degree: 99%
 
 ---
@@ -507,6 +507,7 @@ ht-degree: 99%
       + Dynamic Media-Tour: Grundlagen {#dm-journey}
          + [Teil 1: Was ist Dynamic Media – Anwendungsfälle – Wie ein Asset durch das System fließt](/help/assets/dynamic-media/dm-journey-part1.md)
          + [Teil 2: Anatomie einer Dynamic Media-URL – Grundlagen von Bildvorgaben – Informationen zu Bildsets, Rotationssets und Sets mit gemischten Medien](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [Best Practices für Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Dynamic Media Newsletter-Archiv von Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Einrichten von Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
