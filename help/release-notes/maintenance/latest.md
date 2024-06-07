@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Keine
 
 ### Änderungshinweis {#change-notice-16544}
 
-Ab September 2024 deaktiviert AEM as a Cloud Service die Serialisierung von Resource Resolvers über das Sling Model Exporter-Framework. Siehe [die Dokumentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) für weitere Details.
+AEM as a Cloud Service deaktiviert ab September 2024 die Serialisierung von Ressourcen-Konfliktlösern über das Sling Model Exporter-Framework. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md).
 
 ### Eingestellte Funktionen und APIs {#deprecated-16544}
 

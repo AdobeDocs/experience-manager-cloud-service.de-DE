@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
 source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -22,19 +22,19 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.6.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2024.6.0 in AEM as a Cloud Service Version wurde am 6. Juni 2024 veröffentlicht. Die nächste Version ist für den 11. Juli 2024 geplant.
+Die Version 2024.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Juni 2024 veröffentlicht. Die nächste Version ist für den 11. Juli 2024 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Sie können jetzt [Verwenden Ihrer eigenen GitHub-Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md) als Quellen für Vollstapel- und Frontend-Pipelines.
-   * Darüber hinaus können Sie GitHub-Repositorys mit [Git-Untermodule,](/help/implementing/cloud-manager/managing-code/git-submodules.md) erhalten Sie eine verbesserte Kontrolle über die automatisch generierten Pipelines, die zur Überprüfung von Pull-Anforderungen verwendet werden, und können Verhalten für wichtige Metriken während der Codescan-Phase definieren.
-   * [Sie haben auch die Wahl](/help/implementing/cloud-manager/managing-code/github-check-config.md) Um den Berichtsverlauf auf GitHub beizubehalten, benennen Sie die Pipeline und legen Sie Pipeline-Variablen entsprechend Ihren Anforderungen fest.
-* [Wiederherstellung von Self-Service-Inhalten](/help/operations/restore.md) bietet Backup-Wiederherstellung für bis zu sieben Tage und Funktionen:
+* Die [Verwendung Ihrer eigenen GitHub-Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md) als Quellen für Full-Stack- und auch Frontend-Pipelines ist nun möglich.
+   * Darüber hinaus können Sie GitHub-Repositorys mit [Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md) nutzen. So haben Sie mehr Kontrolle über die automatisch generierten Pipelines, die zur Prüfung von Pull-Anfragen verwendet werden, und können das Verhalten für wichtige Metriken während der Codescan-Phase definieren.
+   * [Sie haben auch die Möglichkeit](/help/implementing/cloud-manager/managing-code/github-check-config.md), den Berichtsverlauf auf GitHub beizubehalten, die Pipeline zu benennen und Pipeline-Variablen entsprechend Ihren Anforderungen festzulegen.
+* Die [Wiederherstellung von Self-Service-Inhalten](/help/operations/restore.md) bietet eine Backup-Wiederherstellung für bis zu sieben Tage und außerdem:
    * Zeitpunktgenaue Backup-Wiederherstellung für die letzten 24 Stunden
    * Wiederherstellung zu einem festen Zeitpunkt für bis zu sieben Tage
-* [Neue OakPal-Regeln](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) wurden zur Überprüfung der Code-Qualität von Cloud Manager hinzugefügt.
-   * Jede neue Regel, die ab Juni 2024 hinzugefügt wurde, ist eine ununterbrochene Änderung.
-   * Sie werden dringend aufgefordert, diese so bald wie möglich zu beheben, da diese neuen Regeln dazu führen werden, dass Pipelines ab der Cloud Manager-Version vom August 2024 fehlschlagen.
+* Es wurden [neue OakPal-Regeln](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) zur Code-Qualitätsprüfung von Cloud Manager hinzugefügt.
+   * Jede neue Regel, die ab Juni 2024 hinzugefügt wurde, ist eine unterbrechungsfreie Änderung.
+   * Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da diese neuen Regeln dazu führen, dass Pipelines ab der Cloud Manager-Version August 2024 fehlschlagen.
 
 ## Early-Adopter-Programm {#early-adoption}
 
@@ -42,17 +42,17 @@ Um einige bevorstehende Funktionen testen zu können, müssen Sie Teil des Early
 
 ### Edge Delivery Services-Unterstützung in Cloud Manager {#edge-delivery-services}
 
-Wenn Sie Edge Delivery Services als Teil von Adobe Experience Manager Sites lizenziert haben, [Sie können Ihre Site jetzt mit Edge Delivery Services direkt in Cloud Manager integrieren.](/help/implementing/cloud-manager/edge-delivery-services.md) und mit einem geführten Self-Service-Erlebnis live gehen.
+Wenn Sie Edge Delivery Services als Teil von Adobe Experience Manager Sites lizenziert haben, [können Sie nun Ihre Site mit Edge Delivery Services direkt in Cloud Manager integrieren](/help/implementing/cloud-manager/edge-delivery-services.md) und mit einem geführten Self-Service-Erlebnis die Live-Schaltung vornehmen.
 
-Dies ermöglicht ein einheitliches Erlebnis für alle AEM Eigenschaften und gewährleistet die Konsistenz mit allen wichtigen Workflows, einschließlich Domain-Namensverwaltung, SSL-Zertifikatverwaltung und CDN-Zuordnungen.
+Dies ermöglicht ein einheitliches Erlebnis für alle AEM-Eigenschaften und gewährleistet die Konsistenz mit allen wichtigen Workflows, einschließlich Domain-Namensverwaltung, SSL-Zertifikatverwaltung und CDN-Zuordnungen.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-cmedgedelsvs-program-adopter@adobe.com` von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus.
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-cmedgedelsvs-program-adopter@adobe.com`.
 
 ### DV-Zertifikate (Domain Validated)
 
-Cloud Manager ermöglicht jetzt Folgendes: [Self-Service-Generierung und -Verwaltung von DV-SSL-Zertifikaten (domain validation).](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Dadurch erhalten Sie die schnellste, einfachste und kostengünstigste Lösung, um eine sichere Website für Ihr Online-Geschäft zu erstellen.
+Mit Cloud Manager können Sie jetzt [Self-Service-SSL-Zertifikate mit Domain-Validierung (DV) erstellen und verwalten.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Dadurch erhalten Sie die schnellste, einfachste und kostengünstigste Lösung, um eine sichere Website für Ihr Online-Business zu erstellen.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `Grp-aemcs-dv-dert-adopter@adobe.com` von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse aus.
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `Grp-aemcs-dv-dert-adopter@adobe.com`.
 
 ### Client-seitige Sammlung über Real User Monitoring (RUM) {#rum}
 
