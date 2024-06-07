@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 92%
@@ -62,7 +62,7 @@ Inhaltsübersetzungsaktionen und -Workflows ermöglichen nun die Verfolgung rele
 
 #### Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) {#real-use-monitoring}
 
-* **[Der Real Use Monitoring-Datendienst (RUM) ist jetzt allgemein verfügbar](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service.
+* **[Der Real Use Monitoring-Datendienst (RUM) ist jetzt allgemein verfügbar](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)** und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service.
 Der Real Use Monitoring-Dienst, die clientseitige Sammlung, bietet eine präzisere Darstellung von Interaktionen und gewährleistet so eine zuverlässige Messung der Website-Interaktion. Dadurch erhält die Kundschaft erweiterte Einblicke in ihren Seiten-Traffic und die Performance. Es ist eine großartige Möglichkeit, mehr über Ihre Seiten-Performance zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
 
 #### AEM Authoring für Edge Delivery Services {#edge-enhancements}
