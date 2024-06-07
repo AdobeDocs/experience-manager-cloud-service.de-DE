@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1942'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Eine Zusammenfassung der in der Version 2024.5.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in Sites {#sites-new-features}
 
-#### AEM Übersetzungsintegration {#translation-integration}
+#### AEM-Übersetzungsintegration {#translation-integration}
 
-Inhaltsübersetzungsaktionen und -Workflows ermöglichen nun die Verfolgung relevanter Prozessschritte und -zustände aus externen Triggern. Die folgenden Ereignisse werden generiert. Benutzer können Ereignisse über die Adobe Developer-Konsole abonnieren.
+Aktionen zur Übersetzung von Inhalten und Workflows lösen jetzt Ereignisse aus, damit Sie relevante Prozessschritte und Status aus externen Anwendungen verfolgen können. Die folgenden Ereignisse werden generiert. Benutzende können Ereignisse über die Adobe Developer Console abonnieren.
 
 * `TRANSLATION_JOB_CREATED`
 * `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
@@ -60,12 +60,12 @@ Inhaltsübersetzungsaktionen und -Workflows ermöglichen nun die Verfolgung rele
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Datendienst zur Überwachung der tatsächlichen Verwendung (RUM) {#real-use-monitoring}
+#### Real Use Monitoring-Datendienst (RUM) {#real-use-monitoring}
 
 * **[Der Real Use Monitoring-Datendienst (RUM) ist jetzt allgemein verfügbar](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)** und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service.
-Der Real Use Monitoring-Dienst, die clientseitige Sammlung, bietet eine präzisere Darstellung von Interaktionen und gewährleistet so eine zuverlässige Messung der Website-Interaktion. Dadurch erhält die Kundschaft erweiterte Einblicke in ihren Seiten-Traffic und die Performance. Es ist eine großartige Möglichkeit, mehr über Ihre Seiten-Performance zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
+Der Real User Monitoring-Dienst, die Client-seitige Erfassung, bietet eine präzisere Darstellung der Interaktionen und stellt eine zuverlässige Messung der Website-Interaktionen sicher. Dadurch erhält die Kundschaft erweiterte Einblicke in ihren Seiten-Traffic und die Performance. Es ist eine großartige Möglichkeit, mehr über Ihre Seiten-Performance zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
 
-#### AEM Authoring für Edge Delivery Services {#edge-enhancements}
+#### AEM-Authoring für Edge Delivery Services {#edge-enhancements}
 
 Verbesserte Stabilität und verschiedene Verbesserungen für ein besseres Authoring-Erlebnis.
 
@@ -144,7 +144,7 @@ Sind Sie bereit, eine dieser CAPTCHA-Lösungen in Ihre adaptiven Formulare zu in
 
 ### Forms-Dienst
 
-Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Sie kann auch zum Importieren oder Exportieren von Daten in und aus einem vorhandenen interaktiven PDF-Formular und zum Überprüfen gesendeter Daten verwendet werden. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
+Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Er kann auch verwendet werden, um Daten in ein vorhandenes interaktives PDF-Formular zu importieren oder daraus zu exportieren und um gesendete Daten zu validieren. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
 
 * **Rendern von Formularen**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und (optional) mit XML-Daten erstellt wurde. Dadurch wird im Wesentlichen ein ausfüllbares PDF-Formular erzeugt, das optional mit Daten vorausgefüllt ist.
 * **Datenextraktion und -import**: Importieren Sie Daten in ein vorhandenes PDF-Formular und extrahieren Sie Daten aus einem ausgefüllten PDF-Formular. Es wird sowohl das XDP- als auch das XML-Datenformat unterstützt, und der Import in PDF-Formulare, die nicht im XFA-Format sind (auch AcroForms genannt), unterstützt zusätzlich FDF- und XFDF-Daten.
@@ -253,5 +253,5 @@ Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/h
 
 ## Versionshinweise zu Experience Cloud {#experience-cloud}
 
-Informationen zu Versionen anderer Experience Cloud-Applikationen finden Sie hier . [here](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current).
-Wenn Sie monatliche E-Mail-Benachrichtigungen über Aktualisierungen der Experience Cloud-Versionshinweise erhalten möchten, abonnieren Sie das [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
+Informationen zu Versionen anderer Experience Cloud-Anwendungen finden Sie [hier](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current).
+Abonnieren Sie [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html), wenn Sie monatliche E-Mail-Benachrichtigungen über Aktualisierungen der Experience Cloud-Versionshinweise erhalten möchten.
