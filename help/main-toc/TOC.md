@@ -743,7 +743,7 @@ ht-degree: 99%
       + [Installation und Konfiguration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher- und CDN-Caching](/help/forms/troubleshooting-caching-performance.md)
       + [Neustarten des AEM SDK](/help/forms/restart-aem-sdk.md)
-      + [Beheben von Forms-Erstellungsfehlern](/help/forms/form-creation-failing.md)
+      + [Beheben von Fehlern bei der Formularerstellung](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Überblick über Screens as a Cloud Service {#overview}
       + [Einführung](/help/screens-cloud/introduction/introduction.md)
@@ -1011,7 +1011,7 @@ ht-degree: 99%
             + [Überblick über Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
             + [Java Funktionsprüfung](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
-         + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
+         + [Testen mit Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [Experience Audit-Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
       + [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1164,7 +1164,7 @@ ht-degree: 99%
       + [Erweitern Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
       + [Anpassen und Erweitern von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [Anpassen von Inhaltsfragmentkonsole und Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [Anpassen von Inhaltsfragmentkonsole und -editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + Verwalten von Suchformularen {#manage-search-forms}
          + [Konfigurieren von Suchformularen](/help/implementing/developing/extending/search-forms.md)
          + [Konfigurieren von Suchfiltern für den Posteingang](/help/implementing/developing/extending/configure-inbox-search-rail.md)
