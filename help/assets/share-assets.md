@@ -4,9 +4,9 @@ description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigabe als L
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 86%
 
 ---
@@ -121,7 +121,7 @@ Die E-Mail-Vorlage kann mit Nur-Text oder HTML angepasst werden. Der standardmä
 | `${emailMessage}` | Email body |
 | `${pagePath}` | URL des freigegebenen Links |
 | `${linkExpiry}` | Ablaufdatum des freigegebenen Links |
-| `${host.prefix}` | Ursprung der [!DNL Experience Manager] -Instanz, beispielsweise `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### Beispiel für eine benutzerdefinierte E-Mail-Vorlage {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### Herunterladen von Assets über den Asset-Link {#download-assets-using-asset-link}
 
