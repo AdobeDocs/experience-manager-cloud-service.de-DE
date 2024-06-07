@@ -4,7 +4,7 @@ description: Unterschiede und neue Funktionen – Adobe Experience Manager (AEM)
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 100%
@@ -208,7 +208,7 @@ Um schnelle Iterationen und Entwicklungen zu unterstützen, ist es auch möglich
 
 >[!NOTE]
 >
->Für weitere Informationen sehen Sie sich zunächst [Wiederherstellung von Inhalten](/help/operations/backup.md), [Indizierung](/help/operations/indexing.md) und [andere Wartungsaufgaben](/help/operations/maintenance.md) an.
+>Für weitere Informationen sehen Sie sich zunächst [Wiederherstellung von Inhalten](/help/operations/restore.md), [Indizierung](/help/operations/indexing.md) und [andere Wartungsaufgaben](/help/operations/maintenance.md) an.
 
 Bei AEM as a Cloud Service werden solche Vorgänge automatisiert, sodass eine Unterbrechung des Service nicht mehr erforderlich ist.
 

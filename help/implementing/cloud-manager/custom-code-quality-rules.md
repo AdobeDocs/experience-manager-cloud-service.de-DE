@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
 workflow-type: tm+mt
-source-wordcount: '4167'
-ht-degree: 100%
+source-wordcount: '4482'
+ht-degree: 93%
 
 ---
 
@@ -1135,7 +1135,6 @@ Das Überschreiben des Standardwerts kann Lesevorgänge von Seiten sehr stark ve
 
 Das erwartete Muster für vollständig benutzerdefinierte Indexnamen lautet: `[prefix].[indexName]-custom-[version]`. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
-
 ### Dieselbe Eigenschaft mit unterschiedlichen analysierten Werten in derselben Indexdefinition {#oakpal-same-property-different-analyzed-values}
 
 #### Nicht konformer Code {#non-compliant-code-same-property-different-analyzed-values}
@@ -1188,7 +1187,7 @@ Beispiel:
 
 Wenn die analysierte Eigenschaft nicht explizit festgelegt wurde, ist der Standardwert „false“.
 
-### Tags-Eigenschaft
+### Tags-Eigenschaft {#tags-property}
 
 * **Schlüssel**: IndexHasValidTagsProperty
 * **Typ**: Code Smell
@@ -1196,3 +1195,75 @@ Wenn die analysierte Eigenschaft nicht explizit festgelegt wurde, ist der Standa
 * **Seit**: Version 2023.1.0
 
 Achten Sie bei bestimmten Indizes darauf, die Tags-Eigenschaft und die aktuellen Werte beizubehalten. Das Hinzufügen neuer Werte zur Tags-Eigenschaft ist zwar zulässig, das Löschen vorhandener Werte (oder der Eigenschaft insgesamt) kann jedoch zu unerwarteten Ergebnissen führen.
+
+### Indexdefinitionsknoten dürfen nicht im Inhaltspaket der Benutzeroberfläche bereitgestellt werden {#oakpal-ui-content-package}
+
+* **Schlüssel**: IndexNotUnderUIContent
+* **Typ**: Verbesserung
+* **Schweregrad**: Gering
+* **Seit**: Version 2024.6.0
+
+AEM Cloud Service verbietet benutzerdefinierte Suchindex-Definitionen (Knoten des Typs `oak:QueryIndexDefinition`) im Inhaltspaket der Benutzeroberfläche bereitgestellt werden.
+
+>[!WARNING]
+>
+>Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Benutzerdefinierte Volltext-Indexdefinition des Typs damAssetLucene muss korrekt mit dem Präfix &#39;damAssetLucene&#39; versehen werden {#oakpal-dam-asset-lucene}
+
+* **Schlüssel**: CustomFulltextIndexesOfTheDamAssetCheck
+* **Typ**: Verbesserung
+* **Schweregrad**: Gering
+* **Seit**: Version 2024.6.0
+
+AEM Cloud Service verbietet benutzerdefinierte Volltext-Indexdefinitionen des Typs `damAssetLucene` mit allen anderen als `damAssetLucene`.
+
+>[!WARNING]
+>
+>Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Indexdefinitionsknoten dürfen keine Eigenschaften mit demselben Namen enthalten {#oakpal-index-property-name}
+
+* **Schlüssel**: DuplicateNameProperty
+* **Typ**: Verbesserung
+* **Schweregrad**: Gering
+* **Seit**: Version 2024.6.0
+
+AEM Cloud Service verbietet benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) von enthält Eigenschaften mit demselben Namen
+
+>[!WARNING]
+>
+>Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Das Anpassen bestimmter OOTB-Indexdefinitionen ist verboten {#oakpal-customizing-ootb-index}
+
+* **Schlüssel**: RestrictIndexCustomization
+* **Typ**: Verbesserung
+* **Schweregrad**: Gering
+* **Seit**: Version 2024.6.0
+
+AEM Cloud Service verbietet unbefugte Änderungen der folgenden OOTB-Indizes:
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Die Konfiguration der Tokenizer in Analyzern sollte mit dem Namen &#39;tokenizer&#39; erstellt werden {#oakpal-tokenizer}
+
+* **Schlüssel**: AnalyzerTokenizerConfigCheck
+* **Typ**: Verbesserung
+* **Schweregrad**: Gering
+* **Seit**: Version 2024.6.0
+
+AEM Cloud Service verbietet die Erstellung von Tokenizern mit falschen Namen in Analyzern. Tokenizer sollten immer als `tokenizer`.
+
+>[!WARNING]
+>
+>Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)

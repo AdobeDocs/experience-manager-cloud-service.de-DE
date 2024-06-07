@@ -1,49 +1,65 @@
 ---
-title: Zugriff auf Repositorys
-description: Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
+title: Zugriffsinformationen für Repository
+description: Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung von Cloud Manager auf Ihre von Adobe verwalteten Git-Repositorys zugreifen und diese verwalten können.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 100%
+source-wordcount: '400'
+ht-degree: 24%
 
 ---
 
 
-# Zugriff auf Repositorys {#accessing-repos}
+# Zugriffsinformationen für Repository {#accessing-repos}
 
-Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
+Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung von Cloud Manager auf Ihre von Adobe verwalteten Git-Repositorys zugreifen und diese verwalten können.
 
-## Verwenden der Self-Service-Repository-Kontoverwaltung {#self-service-repos}
+## Zugriff auf Repository-Informationen über die Übersichtsseite {#overview-page}
 
-Cloud Manager macht es Ihnen leicht, Ihre Repository-Informationen abzurufen, indem Sie die Schaltfläche **Zugriff auf Repo-Info** verwenden, die sich auf der Pipeline-Karte befindet.
+Cloud Manager erleichtert das Abrufen Ihrer Repository-Zugriffsinformationen für Adobe-verwaltete Repositorys mithilfe der **Zugriff auf Repo Info** auf der Pipeline-Karte verfügbar.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Navigieren Sie in der **Programmübersicht** zur Karte **Pipelines** und verwenden Sie die Schaltfläche **Zugriff auf Repo Info**, um auf Ihr Git-Repository zuzugreifen und es zu verwalten.
+1. Gehen Sie von Ihrer Seite **Programmübersicht** aus zur Karte **Pipelines**.
 
-   ![Schaltfläche „Zugriff auf Repo Info“ auf der Karte „Umgebungen“](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Schaltfläche „Zugriff auf Repo Info“ auf der Karte „Umgebungen“](assets/pipelines-card.png)
 
-1. Klicken Sie auf die Schaltfläche **Repo-Info anzeigen**, um ein Dialogfeld mit folgenden Inhalten zu öffnen:
+1. Tippen oder klicken Sie auf **Zugriff auf Repo Info** Schaltfläche zum Öffnen **Repository-Informationen** Dialogfeld und Ansicht:
 
-   * Die URL zum Git-Repository von Cloud Manager.
    * Der Git-Benutzername.
-   * Das Git-Kennwort, dessen Wert durch Klicken auf die Schaltfläche **Kennwort generieren** angezeigt wird.
+   * Das Git-Kennwort.
+   * Die URL zum Git-Repository von Cloud Manager.
+   * Vordefinierte Git-Befehle zum schnellen Hinzufügen einer Remote-Verbindung zu Ihrem Git-Repo- und Push-Code.
 
-   ![Repo-Info-Ansicht](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![Fenster &quot;Repository Info&quot;](assets/repository-info.png)
 
-Mithilfe dieser Anmeldeinformationen können Benutzende eine lokale Kopie des Repositorys klonen und Änderungen an diesem lokalen Repository vornehmen und etwaige Code-Änderungen wieder in das remote Code-Repository in Cloud Manager übertragen.
+1. Um auf das Kennwort zugreifen zu können, muss ein neues Kennwort generiert werden. Tippen oder klicken Sie dazu auf das **Kennwort generieren** Schaltfläche.
 
-Die Option **Zugriff auf Repo-Info** ist auch auf der Pipeline-Registerkarte **Produktionsfremd** der **Pipeline**-Karte verfügbar. 
+1. Kennworterstellung im **Seid ihr euch sicher?** Dialogfeld durch Tippen oder Klicken **Kennwort generieren**.
 
-![Die Schaltfläche „Zugriff auf Repo-Info“ auf produktionsfremden Registerkarten](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
+   ![Kennworterstellung bestätigen](assets/confirm-password-generation.png)
+
+1. Das Kennwort wird generiert und ist für das Kopieren im **Passwort** -Feld.
+
+   * Durch das Generieren eines Kennworts wird das vorherige Kennwort ungültig.
+   * Cloud Manager speichert das Kennwort nicht. Es liegt in Ihrer Verantwortung, dieses Kennwort sicher zu speichern.
+   * Da Cloud Manager das Kennwort nicht speichert, müssen Sie ein neues Kennwort neu generieren, wenn Sie das Kennwort verlieren.
+
+   ![Beispiel eines generierten Kennworts](assets/generated-password.png)
+
+Mithilfe dieser Anmeldeinformationen können Sie eine lokale Kopie des Repositorys klonen, Änderungen an diesem lokalen Repository vornehmen und Code-Änderungen nach Bedarf wieder in das Remote-Code-Repository in Cloud Manager übertragen.
 
 >[!NOTE]
 >
->Die Option **Zugriff auf Repo-Info** ist für Benutzende mit der Rolle **Entwickler** oder **Bereitstellungs-Manager** sichtbar.
+>* Die Option **Zugriff auf Repo-Info** ist für Benutzende mit der Rolle **Entwickler** oder **Bereitstellungs-Manager** sichtbar.
+>* Die **Zugriff auf Repo Info** -Schaltfläche zeigt nur die Repository-Zugriffsinformationen für von Adobe verwaltete Repositorys an. Zugriffsinformationen über [private Repositorys](private-repositories.md) ist nicht in Cloud Manager verfügbar.
+
+## Zugriff auf Repository-Informationen über das Fenster &quot;Repositorys&quot; {#repositories-window}
+
+Ein **Zugriff auf Repo Info** ist auch in der Symbolleiste der [**Repositorys** Fenster.](managing-repositories.md) Es werden dieselben Informationen zum Zugriff auf von Adobe verwaltete Repositorys angezeigt.
 
 ## Sperren eines Zugangskennworts {#revoke-password}
 
