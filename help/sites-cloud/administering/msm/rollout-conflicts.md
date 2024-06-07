@@ -6,41 +6,41 @@ role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Rollout-Konflikte {#msm-rollout-conflicts}
 
-Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einem abhängigen Live Copy-Zweig erstellt werden. Solche Konflikte müssen beim Rollout behandelt und gelöst werden.
+Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einem abhängigen Live Copy-Zweig erstellt werden. Solche Konflikte müssen beim Rollout gehandhabt und gelöst werden.
 
 ## Konfliktbehandlung {#conflict-handling}
 
-Wenn in Konflikt stehende Seiten vorhanden sind (in den Blueprint- und Live Copy-Verzweigungen), können Sie mit MSM definieren, wie diese verarbeitet werden sollen (oder auch wenn dies der Fall ist).
+Wenn Konfliktseiten (in den Blueprint- und Live Copy-Zweigen) vorhanden sind, ermöglicht Ihnen MSM die Definition, wie (oder ob überhaupt) dieser Konflikt gelöst werden soll.
 
 Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Definitionen Folgendes umfassen:
 
-* Welche Seite (Blueprint oder Live Copy) hat während des Rollouts Priorität
+* Welche Seite (Blueprint oder Live Copy) während des Rollouts Vorrang hat
 * Welche Seiten werden umbenannt und wie
-* Auswirkungen auf veröffentlichte Inhalte
+* Wie sich dies auf veröffentlichte Inhalte auswirkt
 
-Das Standardverhalten von Adobe Experience Manager (AEM) ist, dass veröffentlichte Inhalte nicht betroffen sind. Wenn also eine Seite veröffentlicht wurde, die manuell in der Live Copy-Verzweigung erstellt wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout weiterhin veröffentlicht.
+Das Standardverhalten des vorkonfigurierten Adobe Experience Manager (AEM) sieht vor, dass veröffentlichte Inhalte nicht beeinträchtigt werden. Wenn also eine Seite, die im Live Copy-Zweig manuell erstellt wurde, veröffentlicht worden ist, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout auch weiterhin veröffentlicht.
 
 Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch die Veröffentlichung von Aktionen als individuellen Prozess ermöglichen.
 
 ### Beispiel-Szenario {#example-scenario}
 
-In den folgenden Abschnitten ein Beispiel für eine neue Seite `b` wird verwendet, sowohl im Blueprint als auch in der Live Copy-Verzweigung (manuell erstellt), um die verschiedenen Methoden zur Konfliktbehebung zu veranschaulichen:
+In den folgenden Abschnitten wird ein Beispiel für eine neue Seite `b` verwendet, die sowohl im Blueprint als auch im Live Copy-Zweig (manuell) erstellt wurde, um die verschiedenen Methoden der Konfliktlösung zu veranschaulichen:
 
 * Blueprint: `/b`
 
-  eine Masterseite mit einer untergeordneten Seite, `bp-level-1`
+  Eine Hauptseite mit einer untergeordneten Seite, `bp-level-1`
 
 * Live Copy: `/b`
 
-  Eine Seite, die manuell in der Live Copy-Verzweigung mit einer untergeordneten Seite erstellt wurde, `lc-level-1`
+  Eine im Live Copy-Zweig manuell erstellte Seite; mit einer untergeordneten Seite, `lc-level-1`
 
    * Bei Veröffentlichung als `/b` aktiviert, zusammen mit der untergeordneten Seite
 
@@ -49,9 +49,9 @@ In den folgenden Abschnitten ein Beispiel für eine neue Seite `b` wird verwende
 |  | Blueprint vor dem Rollout | Live Copy vor dem Rollout | Vor dem Rollout veröffentlichen |
 |---|---|---|---|
 | Wert | `b` | `b` | `b` |
-| Kommentar | In der Blueprint-Verzweigung erstellt, bereit für den Rollout | Manuell in der Live Copy-Verzweigung erstellt | Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde |
+| Kommentar | In der Blueprint-Verzweigung erstellt, bereit für den Rollout | Manuell im Live Copy-Zweig erstellt | Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde |
 | Wert | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| Kommentar |  | Manuell in der Live Copy-Verzweigung erstellt | Enthält den Inhalt der Seite `child-level-1`, die in der Live Copy-Verzweigung manuell erstellt wurde |
+| Kommentar |  | Manuell im Live Copy-Zweig erstellt | Enthält den Inhalt der Seite `child-level-1`, die in der Live Copy-Verzweigung manuell erstellt wurde |
 
 ## Rollout-Manager und Konfliktbehandlung {#rollout-manager-and-conflict-handling}
 
@@ -63,14 +63,14 @@ AEM verfügt über ein [vordefiniertes Verhalten, wenn das Konflikt-Management d
 
 ## Konflikt-Handler {#conflict-handlers}
 
-AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist die übliche (nicht nur) Methode zur Lösung solcher Konflikte. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
+AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist die übliche (aber nicht die einzige) Methode, um solche Konflikte zu lösen. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
 
 AEM bietet:
 
 * Den [standardmäßigen Konflikt-Handler](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * Die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren
-* Der Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können
+* Den Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können
    * Der Service mit dem höchsten Ranking wird verwendet.
 
 ### Standard-Konflikt-Handler {#default-conflict-handler}
@@ -78,9 +78,9 @@ AEM bietet:
 Der standardmäßige Konflikt-Handler ist `ResourceNameRolloutConflictHandler`.
 
 * Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* Der Service-Rang für diesen Handler ist niedrig eingestellt. Das heißt, unter dem Standardwert für `service.ranking` -Eigenschaft, da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Das Service-Ranking für diesen Handler ist niedrig eingestellt. Das heißt, unterhalb des Standardwerts für die Eigenschaft `service.ranking`, weil man davon ausgeht, dass kundenspezifische Handler ein höheres Ranking benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
-Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Beispielsweise die Seite &quot;Live Copy&quot; `/b` wird innerhalb der Live Copy-Verzweigung nach `/b_msm_moved`.
+Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` wird beispielsweise innerhalb des Live Copy-Zweiges nach `/b_msm_moved` verschoben.
 
 * Live Copy: `/b`
 
@@ -99,7 +99,7 @@ Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Beispielsweise die Seite 
 |  | Blueprint nach dem Rollout | Live Copy nach dem Rollout | Live Copy nach dem Rollout | Nach dem Rollout veröffentlichen |
 |---|---|---|---|---|
 | Wert | `b` | `b` | `b_msm_moved` | `b` |
-| Kommentar |  | Enthält den Inhalt der Blueprint-Seite `b`, die beim Rollout verschoben wurde | Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde | Keine Änderung; enthält den Inhalt der Originalseite `b` die manuell in der Live Copy-Verzweigung erstellt wurde und jetzt aufgerufen wird `b_msm_moved` |
+| Kommentar |  | Enthält den Inhalt der Blueprint-Seite `b`, die beim Rollout verschoben wurde | Enthält den Inhalt der Seite `b`, die in der Live Copy-Verzweigung manuell erstellt wurde | Keine Änderung, enthält den Inhalt der Originalseite `b`, die manuell im Live Copy-Zweig erstellt wurde und jetzt `b_msm_moved` heißt |
 | Wert | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Kommentar |  |  | Keine Änderung | Keine Änderung |
 
@@ -112,7 +112,7 @@ Benutzerdefinierte Konflikt-Handler können:
 * gemäß Ihren Anforderungen benannt werden;
 * gemäß Ihren Anforderungen entwickelt/konfiguriert werden.
    * Sie können beispielsweise einen Handler entwickeln, der der Live Copy-Seite Vorrang einräumt.
-* Sie kann mithilfe der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md). Insbesondere gilt:
+* Er kann mithilfe der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) konfiguriert werden. Insbesondere:
    * Das **Service-Ranking** legt die Reihenfolge in Bezug auf die anderen Konflikt-Handler fest (`service.ranking`).
       * Der Standardwert ist `0`.
 
@@ -128,18 +128,18 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
 
 * Blueprint: `/b`
 
-  Es wird überhaupt nicht kopiert, aber ignoriert.
+  Wird überhaupt nicht kopiert, sondern ignoriert.
 
 * Live Copy: `/b`
 
-  Es bleibt gleich.
+  Bleibt gleich.
 
 #### Nach dem Rollout {#after-rollout-no-conflict}
 
 |  | Blueprint nach dem Rollout | Live Copy nach dem Rollout | Nach dem Rollout veröffentlichen |
 |---|---|---|---|
 | Wert | `b` | `b` | `b` |
-| Kommentar |  | Keine Änderung; hat den Inhalt der Seite `b` die manuell in der Live Copy-Verzweigung erstellt wurde | Keine Änderung; enthält den Inhalt der Seite `b` die manuell in der Live Copy-Verzweigung erstellt wurde |
+| Kommentar |  | Keine Änderung, enthält den Inhalt der Seite `b`, die im Live Copy-Zweig manuell erstellt wurde | Keine Änderung, enthält den Inhalt der Seite `b`, die im Live Copy-Zweig manuell erstellt wurde |
 | Wert | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | Kommentar |  | Keine Änderung | Keine Änderung |
 

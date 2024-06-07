@@ -1,6 +1,6 @@
 ---
 title: App Builder-Sicherheit
-description: Erfahren Sie mehr über App Builder-Anwendungssicherheit für AEM as a Cloud Service.
+description: Erfahren Sie mehr über die App Builder-Anwendungssicherheit für AEM as a Cloud Service.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -10,9 +10,9 @@ kt: 9460
 thumbnail: 339249.jpg
 exl-id: f0f3f254-0efa-4fab-b2fd-96571bbb719f
 source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '30'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 

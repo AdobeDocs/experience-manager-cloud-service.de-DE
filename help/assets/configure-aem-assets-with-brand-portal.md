@@ -6,9 +6,9 @@ feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1766'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -191,8 +191,8 @@ Neben dem Automatisierungs-Workflow zur Aktivierung von Brand Portal in Experien
 
 >[!NOTE]
 >
-> Sie können ab Juni 2024 keine neuen JWT-Anmeldeinformationen mehr erstellen. Von nun an werden nur noch OAuth-Anmeldeinformationen erstellt.
-> Weitere Informationen [Erstellen einer OAuth-Konfiguration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> Sie können ab Juni 2024 keine neuen JWT-Anmeldedaten mehr erstellen. Von nun an werden nur noch OAuth-Anmeldedaten erstellt. 
+> Weitere Informationen finden Sie unter [Erstellen einer OAuth-Konfiguration](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 Im folgenden Abschnitt wird die manuelle Konfiguration von Experience Manager Assets as a [!DNL Cloud Service] mit Brand Portal mithilfe der Adobe-Entwicklerkonsole beschrieben.
 
@@ -222,8 +222,8 @@ Um Experience Manager Assets mit Brand Portal zu konfigurieren, benötigen Sie F
 
 Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um Experience Manager Assets mit Brand Portal zu konfigurieren.
 
-1. [Konfigurieren der OAuth-Anmeldeinformationen in der Adobe Developer Console](#config-oauth)
-1. [Erstellen einer neuen Adobe IMS-Integration mit OAuth](#create-ims-account-configuration)
+1. [Konfigurieren der OAuth-Anmeldedaten in der Adobe Developer Console](#config-oauth)
+1. [Erstellen einer neuen Adobe IMS-Integration mithilfe von OAuth](#create-ims-account-configuration)
 1. [Konfigurieren von Cloud Service](#configure-cloud-service)
    <!--1. [Obtain public certificate](#public-certificate)-->
 <!--1. [Create service account (JWT) connection](#createnewintegration) 
@@ -357,13 +357,13 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 -->
 
-### Konfigurieren der OAuth-Anmeldeinformationen in der Adobe Developer Console {#config-oauth}
+### Konfigurieren der OAuth-Anmeldedaten in der Adobe Developer Console {#config-oauth}
 
-[Konfigurieren der OAuth-Anmeldeinformationen in der Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) und wählen Sie die Brand Portal-API aus.
+[Konfigurieren Sie die OAuth-Anmeldedaten in der Adobe Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) und wählen Sie die Brand Portal-API aus.
 
-### Neue Adobe IMS-Integration mit OAuth erstellen {#create-ims-account-configuration}
+### Erstellen einer neuen Adobe IMS-Integration mithilfe von OAuth {#create-ims-account-configuration}
 
-[Erstellen einer neuen Adobe IMS-Integration mit OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) und wählen Sie Brand Portal aus der Dropdown-Liste unter Cloud-Lösung aus.
+[Erstellen Sie eine neue Adobe IMS-Integration mit OAuth](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) und wählen Sie Brand Portal aus dem Dropdown-Menü unter „Cloud-Lösung“ aus.
 
 <!--
 Ensure that you have performed the following steps:
@@ -426,8 +426,8 @@ Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud-Service zu kon
 
 Sie können die Konfiguration jetzt testen, indem Sie den Verteilungsagenten überprüfen und Assets in Brand Portal veröffentlichen.
 
-**Zulassungsliste von Egress-IPs in SPS bei aktivierter sicherer Vorschau**
-Bei Verwendung von Dynamic Media-Scene7 mit [sichere Vorschau aktiviert](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) Für ein Unternehmen wird empfohlen, dass der Scene7-Unternehmensadministrator [Zulassungsliste der öffentlichen Ausgangs-IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) für die jeweiligen Regionen, die die Flash-Benutzeroberfläche von SPS (Scene7 Publishing System) verwenden.
+**Hinzufügen von Ausgangs-IPs zur Zulassungsliste in SPS bei aktivierter sicherer Vorschau**
+Bei Verwendung von Dynamic Media-Scene 7 (mit [aktivierter sicherer Vorschau](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) für Unternehmen) sollten Scene 7-Firmenadmins mithilfe der Flash-Benutzeroberfläche von SPS (Scene 7 Publishing System) [öffentliche Ausgangs-IPs der Zulassungsliste](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) für die entsprechenden Regionen hinzufügen.
 Die Egress-IPs lauten wie folgt:
 
 | **Region** | **Egress-IP** |

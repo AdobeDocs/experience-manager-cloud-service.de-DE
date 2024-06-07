@@ -1,13 +1,13 @@
 ---
 title: AEM-Modernisierungs-Tools
-description: Erfahren Sie mehr über die Suite der Dienstprogramme, die verwendet werden können, um ältere AEM-Funktionen in die modernen und unterstützten Funktionen AEM as a Cloud Service zu konvertieren.
+description: Erfahren Sie mehr über die Dienstprogramme, mit denen Sie veraltete AEM-Funktionen in die modernen und unterstützten Funktionen von AEM as a Cloud Service umwandeln können.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '148'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 

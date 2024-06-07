@@ -6,9 +6,9 @@ role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 75%
 
 Wenn Sie ein Ihrer Ansicht nach falsches Verhalten oder einen Fehler in MSM feststellen, sollten Sie vor der detaillierten Fehlerbehebung Folgendes sicherstellen:
 
-* Überprüfen Sie die [Häufig gestellte Fragen zu MSM](#faq) weil Ihre Probleme oder Fragen möglicherweise bereits dort angesprochen werden.
+* Lesen Sie die [häufig gestellten Fragen zu MSM](#faq) durch, da Ihre Probleme oder Fragen dort möglicherweise bereits angesprochen werden.
 * Lesen Sie den [Artikel zu Best Practices für MSM](best-practices.md), in dem Tipps gegeben und einige Missverständnisse geklärt werden.
 
 ## Erweiterte Informationen zum Status Ihres Blueprints und Ihrer Live Copy {#advanced-info}
@@ -43,7 +43,7 @@ Die Servlets haben berechnete Informationen auf Grundlage MSM-spezifischer Knote
 
 * `cq:LiveSync`-Mixin-Typ
    * Dieser wird auf `jcr:content`-Knoten festgelegt und definiert Live Copy-Stammseiten.
-   * Diese Seiten haben eine `cq:LiveSyncConfig` untergeordneter Knoten des Typs `cq:LiveCopy` , die grundlegende und obligatorische Informationen über die Live Copy über die folgenden Eigenschaften enthält:
+   * Diese Seiten haben einen `cq:LiveSyncConfig` untergeordneten Knoten des Typs `cq:LiveCopy`, der grundlegende und obligatorische Informationen über die Live Copy in den folgenden Eigenschaften enthält:
       * `cq:master` verweist auf die Blueprint-Seite der Live Copy.
       * `cq:rolloutConfigs` zeigt aktive Rollout-Konfigurationen an, die auf die Live Copy angewendet werden.
       * `cq:isDeep` ist „true“, wenn die untergeordneten Seiten dieses Live Copy-Stamms in der Live Copy enthalten sind.
@@ -56,7 +56,7 @@ Die Servlets haben berechnete Informationen auf Grundlage MSM-spezifischer Knote
 
 Die in diesen Eigenschaften enthaltenen Informationen sollten auf der Benutzeroberfläche angezeigt werden. Bei der Fehlerbehebung ist es jedoch hilfreich, das MSM-Verhalten direkt im Repository zu beobachten, wenn MSM-Aktionen auftreten.
 
-Das Wissen über diese Eigenschaften kann auch nützlich sein, damit Sie Ihr Repository abfragen und Seitensätze herausfinden können, die sich in bestimmten Status befinden. Beispiel:
+Die Kenntnis dieser Eigenschaften ist auch nützlich, um Abfragen an Ihr Repository zu senden und Seitensätze zu finden, die einen bestimmten Status aufweisen. Beispiel:
 
 * `select * from cq:LiveSync` gibt als Ergebnis alle Live Copy-Stammseiten zurück.
 
@@ -70,9 +70,9 @@ MSM-Synchronisierungsaktionen sind detailliert konfigurierbar. Welche Eigenschaf
 
 Weitere Informationen zu diesem Thema finden Sie in [diesem Artikel](best-practices.md).
 
-### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autoren entfernen? {#remove-rollout-permissions}
+### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autorinnen und Autoren entfernen? {#remove-rollout-permissions}
 
-Es gibt keine **Rollout** Berechtigung, die für Adobe Experience Manager-Prinzipale (Benutzer oder Gruppen) festgelegt oder entfernt werden kann.
+Es gibt keine **Rollout**-Berechtigung, die für AEM-Prinzipale (Benutzende oder Gruppen) festgelegt oder entfernt werden kann.
 
 Stattdessen können Sie Folgendes tun:
 
@@ -81,13 +81,13 @@ Stattdessen können Sie Folgendes tun:
 
 ### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_moved“? {#moved-pages}
 
-Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine Live Copy-Seite, falls sie noch nicht vorhanden ist. Beispielsweise geschieht dies, wenn sie zum ersten Mal bereitgestellt wird oder die Live Copy-Seite manuell gelöscht wurde.
+Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine Live Copy-Seite, falls diese noch nicht vorhanden ist. Beispielsweise geschieht dies, wenn sie zum ersten Mal bereitgestellt wird oder die Live Copy-Seite manuell gelöscht wurde.
 
-In diesem letzteren Fall jedoch, wenn eine Seite ohne `cq:LiveRelationship` -Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite so umbenannt, bevor die Live Copy-Seite erstellt wird.
+Wenn in letzterem Fall jedoch eine Seite ohne `cq:LiveRelationship`-Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite entsprechend umbenannt, bevor die Live Copy-Seite erstellt wird.
 
-Standardmäßig erwartet der Rollout eine verknüpfte Live Copy-Seite, auf die die Aktualisierungen der Blueprints bereitgestellt werden. Oder es erwartet überhaupt keine Seite, wenn eine Live Copy-Seite erstellt wird.
+Standardmäßig erwartet der Rollout eine verknüpfte Live Copy-Seite, auf die die Aktualisierungen der Blueprints bereitgestellt werden. Oder es wird überhaupt keine Seite erwartet, wenn eine Live Copy-Seite erstellt wird.
 
-Wenn eine &quot;eigenständige&quot;Seite gefunden wird, wählt MSM, diese Seite umzubenennen, und erstellt eine separate, verknüpfte Live Copy-Seite.
+Wenn eine eigenständige Seite gefunden wird, benennt MSM diese Seite um und erstellt eine separate, verknüpfte Live Copy-Seite.
 
 Eine solche eigenständige Seite in einer Live Copy-Unterstruktur ist normalerweise das Ergebnis der Aktion **Trennen** oder die vorherige Live Copy-Seite wurde von einer Autorin oder einem Autor manuell gelöscht und dann mit demselben Namen neu erstellt.
 

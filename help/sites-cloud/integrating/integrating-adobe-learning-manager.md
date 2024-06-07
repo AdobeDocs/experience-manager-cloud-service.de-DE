@@ -1,14 +1,14 @@
 ---
 title: Integration mit Adobe Learning Manager
-description: Erfahren Sie, wie Sie Adobe Learning Manager mit Adobe Experience Manager-Sites integrieren.
+description: Erfahren Sie, wie Sie Adobe Learning Manager mit Adobe Experience Manager-Sites integrieren können.
 feature: Integration
 role: Admin
 exl-id: 677c6d5a-0f8d-4012-96f3-e5491d66ef17
 solution: Experience Manager Sites
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '82'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

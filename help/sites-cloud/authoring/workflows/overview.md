@@ -6,15 +6,15 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Workflows {#working-with-workflows}
 
-AEM Workflows ermöglichen die Automatisierung einer Reihe von Schritten, die auf (einer oder mehreren) Seiten und/oder Assets ausgeführt werden.
+Mit AEM-Workflows können Sie eine Reihe von Schritten automatisieren, die für (eine oder mehrere) Seiten und/oder Assets durchgeführt werden.
 
 Beispielsweise muss beim Veröffentlichen ein Editor den Inhalt überprüfen, bevor eine oder ein Site-Admindie Seite aktiviert. Ein Workflow, der dieses Beispiel automatisiert, benachrichtigt jeden Teilnehmer, wenn es Zeit ist, die erforderlichen Arbeiten auszuführen:
 
