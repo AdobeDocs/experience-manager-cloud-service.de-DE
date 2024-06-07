@@ -6,7 +6,7 @@ exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
 source-wordcount: '1438'
-ht-degree: 71%
+ht-degree: 86%
 
 ---
 
@@ -37,21 +37,21 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Verfolgung von Formularübermittlungen"
->abstract="Dieses Diagramm stellt die Anzahl der Übermittlungen adaptiver Formulare während bestimmter Zeiträume dar. Die Zunahme der Übermittlungen könnte darauf hindeuten, dass das Formular immer beliebter wird oder dass mehr Daten von Benutzern erfasst werden müssen. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle Instanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Für Übermittlungsdaten anderer Instanzen greifen Sie einfach auf das Dashboard der jeweiligen Instanz zu."
+>abstract="Dieses Diagramm stellt die Anzahl der Übermittlungen adaptiver Formulare während bestimmter Zeiträume dar. Die Zunahme der Übermittlungen könnte darauf hindeuten, dass das Formular beliebter wird oder dass mehr Daten von Benutzerinnen und Benutzern erfasst werden müssen. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle Instanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Für Übermittlungsdaten anderer Instanzen greifen Sie einfach auf das Dashboard der jeweiligen Instanz zu."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
->title="Dokumentwiedergabe-Tracker"
->abstract="Dieses Diagramm stellt die Anzahl der Dokumentausgabeformate während bestimmter Zeiträume dar. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle Instanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Für Übermittlungsdaten anderer Instanzen greifen Sie einfach auf das Dashboard der jeweiligen Instanz zu."
+>title="Nachverfolgung von Dokument-Ausgabedarstellungen"
+>abstract="Dieses Diagramm stellt die Anzahl der Dokument-Ausgabedarstellungen während bestimmter Zeiträume dar. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle Instanz sind, sodass Sie Trends schnell analysieren und fundierte Entscheidungen treffen können. Für Übermittlungsdaten anderer Instanzen greifen Sie einfach auf das Dashboard der jeweiligen Instanz zu."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
->title="Verfolgung neuer Formulare"
->abstract="Das Diagramm enthält Informationen zur Anzahl neu erstellter Formulare in bestimmten Zeiträumen. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>title="Nachverfolgung neuer Formulare"
+>abstract="Das Diagramm enthält Informationen zur Anzahl der neu erstellten Formulare in bestimmten Zeiträumen. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Autoreninstanz sind. Um Daten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
->title="Verfolgung veröffentlichter Formulare"
+>title="Nachverfolgung veröffentlichter Formulare"
 >abstract="Das Diagramm enthält Informationen zur Anzahl der Formulare, die in bestimmten Zeiträumen erfolgreich veröffentlicht wurden. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
@@ -67,12 +67,12 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Forms Fragments-Tracker"
->abstract="Anhand dieses Diagramms können Sie sehen, wie viele Formularfragmente Sie in Ihren Formularen verwenden. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
+>title="Nachverfolgung von Formularfragmenten"
+>abstract="Anhand dieses Diagramms können Sie sehen, wie viele Formularfragmente Sie in ihren Formularen verwenden. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Zeitverfolgung für Formularfragmente im Durchschnitt"
+>title="Nachverfolgung der durchschnittlichen Zeit von Formularfragmenten"
 >abstract="Das Diagramm zeigt die durchschnittliche Zeit an, die zum Erstellen eines Formularfragments benötigt wurde, gemessen ab dem ersten Tag, an dem das Formularfragment zur Bearbeitung geöffnet wurde. **Hinweis:** Das Diagramm stellt Daten bereit, die spezifisch für die aktuelle AEM Forms-Veröffentlichungsinstanz sind. Um Konversionsdaten anderer Instanzen anzuzeigen, rufen Sie das Dashboard der jeweiligen Instanz auf."
 
 
