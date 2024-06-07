@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,11 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 16544, die am 4. Juni 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 16461.
 
 Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+>[!CAUTION]
+>
+>Verwenden Sie das hier referenzierte SDK, da eine Regression mit dem vorherigen SDK bestätigt wurde:
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### Verbesserungen {#enhancements-16544}
 
