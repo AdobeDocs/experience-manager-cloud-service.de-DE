@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Eine proaktive Funktion, mit der Sie auswählen können, welche Assets mit Dynam
 * **Selektive Veröffentlichung:**
 Nach der Synchronisierung Ihrer Assets können Sie durch die selektive Veröffentlichung steuern, welche Assets für Ihre Kunden sichtbar sind. Auf diese Weise können Sie steuern, welche genehmigten Assets tatsächlich über Ihre Kanäle bereitgestellt werden, und sicherstellen, dass Ihre Kunden nur die besten und relevantesten Inhalte sehen.
 
-Mithilfe dieser beiden Best Practices können Sie eine bessere Kontrolle, Verwaltung und Produktivität Ihrer Rich-Media-Inhalte erzielen. Möchten Sie mehr erfahren? Navigieren Sie zu [Konfigurieren der selektiven Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+Mithilfe dieser beiden Best Practices können Sie eine bessere Kontrolle, Verwaltung und Produktivität Ihrer Rich-Media-Inhalte erzielen.
+
+Möchten Sie mehr erfahren? Navigieren Sie zu [Konfigurieren der selektiven Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Vorbereiten von Assets für die Bereitstellung
@@ -135,7 +137,7 @@ Verwenden Sie beschreibende Dateinamen, die den Bildinhalt widerspiegeln. Zum Be
    * Verwenden Sie `myCompany-Silver-Wrist-Watch`
    * *vermeiden* `myCompany_Silver_Wrist_Watch` oder `myCompanySilverWristWatch`
 
-  Dies hilft Suchmaschinen dabei, den Bildkontext zu verstehen, und verbessert SEO. Beachten Sie außerdem, dass Google Bindestriche gegenüber Unterstrichen oder verketteten Wörtern für die Worttrennung bevorzugt.
+  Dies hilft Suchmaschinen dabei, den Bildkontext zu verstehen, und verbessert SEO. Google bevorzugt Bindestriche gegenüber Unterstrichen oder Leerzeichen in einem Dateinamen. Vermeiden Sie auch die Verkettung von Wörtern in einem Dateinamen.
 * **Benutzerdefinierte Domäne:**
 Implementieren Sie eine benutzerdefinierte Domäne, die Ihren Unternehmens- oder Markennamen enthält, um die Markenerkennung und das Vertrauen zu stärken. Zum Beispiel:
 
@@ -166,8 +168,8 @@ Dynamic Media bietet eine Reihe von Befehlen zum dynamischen Verbessern von Bild
 | Aufgabe | Vorgehensweise |
 | --- | --- |
 | **Hochladen und Veröffentlichen des Originalbilds** | ・ Laden Sie zunächst das Originalbild in Dynamic Media hoch.<br>・ Vergewissern Sie sich, dass sie veröffentlicht ist und über eine URL zugänglich ist.<br>・ In diesem Beispiel wird ein Lagerbild einer Uhr mit weißem Hintergrund (nennen wir es &quot;Bild X&quot;) in Dynamic Media hochgeladen.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
-| **Erstellen einer Maske** | ・ Entwickeln Sie eine Maske, die das Thema (den Bereich, in dem Sie Effekte anwenden möchten) und den Hintergrund (den Bereich, den Sie ändern möchten) definiert.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>・ Masken sind in der Regel Graustufenbilder, wobei Weiß den Betreff darstellt und Schwarz den Hintergrund. Sie können Masken mit Tools wie Adobe Photoshop erstellen.<br>Möchten Sie mehr erfahren? Navigieren Sie zu [Schnellmaske in Photoshop erstellen und bearbeiten](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>・ Erstellen Sie für &quot;Bild X&quot;eine Maske, die genau den Betreff beschreibt, den Sie erweitern möchten. Beispiel: eine Person, ein Objekt usw. |
-| **Anwenden von Dynamic Media-URL-Befehlen für Effekte** | Nachdem Sie Ihre Maske haben, verwenden Sie URL-Befehle, um Effekte wie Schlagschatten anzuwenden oder die Hintergrundfarbe auf &quot;Bild X&quot;zu ändern. Im Folgenden finden Sie zwei Beispiele:<br><br> ・ **Schlagschatteneffekt:**<br> Um einen Schlagschatteneffekt entlang der Betreffgrenze hinzuzufügen, bearbeiten Sie die URL wie folgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In dieser URL wird die `$shadow$` -Parameter erstellt den Schatteneffekt und `color=0,0,0` setzt die Schattenfarbe auf schwarz.<br>・ **Hintergrundfarbänderung:**<br> Um die Hintergrundfarbe zu ändern, verwenden Sie die URL mit einem anderen Wert für die Hintergrundfarbe:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In diesem Beispiel `color=255,255,255` setzt die Hintergrundfarbe auf Weiß. Bearbeiten Sie den Hintergrund für visuelle Auswirkungen in eine bestimmte Farbe. |
+| **Erstellen von Masken** | ・ Entwickeln Sie eine Maske, die das Thema (den Bereich, in dem Sie Effekte anwenden möchten) und den Hintergrund (den Bereich, den Sie ändern möchten) definiert.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>・ Masken sind in der Regel Graustufenbilder, wobei Weiß den Betreff darstellt und Schwarz den Hintergrund. Sie können Masken mit Tools wie Adobe Photoshop erstellen.<br>Möchten Sie mehr erfahren? Navigieren Sie zu [Schnellmaske in Photoshop erstellen und bearbeiten](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>・ Erstellen Sie für &quot;Bild X&quot;eine Maske, die genau den Betreff beschreibt, den Sie erweitern möchten. Beispiel: eine Person, ein Objekt usw. |
+| **Anwenden von Dynamic Media-URL-Befehlen für Effekte** | Nachdem Sie Ihre Maske haben, verwenden Sie URL-Befehle, um Effekte wie Schlagschatten anzuwenden oder die Hintergrundfarbe auf &quot;Bild X&quot;zu ändern. Im Folgenden finden Sie zwei Beispiele:<br><br> ・ **Schlagschatten-Effekt:**<br> Um einen Schlagschatteneffekt entlang der Betreffgrenze hinzuzufügen, bearbeiten Sie die URL wie folgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In dieser URL wird die `$shadow$` -Parameter erstellt den Schatteneffekt und `color=0,0,0` setzt die Schattenfarbe auf schwarz.<br>・ **Hintergrundfarbänderung:**<br> Um die Hintergrundfarbe zu ändern, verwenden Sie die URL mit einem anderen Wert für die Hintergrundfarbe:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In diesem Beispiel `color=255,255,0` setzt die Hintergrundfarbe auf Gelb. Bearbeiten Sie den Hintergrund für visuelle Auswirkungen in eine bestimmte Farbe. |
 
 #### Bildrahmen hinzufügen
 
@@ -176,7 +178,7 @@ Mit Dynamic Media können Sie Bilder direkt über URLs bearbeiten, wodurch es zu
 | Aufgabe | Vorgehensweise |
 | --- | --- |
 | **Weißer Rand** | Verwenden Sie die folgende URL, um einen weißen Rahmen hinzuzufügen:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10)<br>In dieser URL wird die `extend=10,10,10,10` gibt die Rahmengröße von zehn Pixel an allen Seiten an. |
-| **Weichzeichnen entlang der weißen Grenze** | Um einen Weichzeicheneffekt entlang des weißen Rands hinzuzufügen, können Sie die URL wie folgt bearbeiten:<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>In dieser URL wird die `effect=-1` -Parameter wendet den Weichzeicheneffekt an und `op_blur=60` steuert die Intensität der Weichzeichnung. |
+| **Weichzeichnen entlang des weißen Rands** | Um einen Weichzeicheneffekt entlang des weißen Rands hinzuzufügen, können Sie die URL wie folgt bearbeiten:<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>In dieser URL wird die `effect=-1` -Parameter wendet den Weichzeicheneffekt an und `op_blur=60` steuert die Intensität der Weichzeichnung. |
 | **Schlagschatteneffekt entlang der äußeren Grenze** | Verwenden Sie diese URL, um einen Schlagschatteneffekt entlang der äußeren Grenze hinzuzufügen:<br>https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0<br>Die `$shadow$` -Parameter erstellt den Schatteneffekt und `color=0,0,0` setzt die Schattenfarbe auf schwarz. |
 
 Experimentieren Sie mit diesen URLs, um die gewünschten visuellen Effekte zu erzielen.
@@ -188,10 +190,10 @@ Wenn Sie ein Logo oder Symbol auf einem vorhandenen Bild platzieren möchten, bi
 | Schritt | Vorgehensweise |
 | --- | --- |
 | **Hochladen und Veröffentlichen des Basisbilds** | Laden Sie zunächst das Basisbild hoch und veröffentlichen Sie es, auf dem Sie das Logo oder Symbol überlagern möchten. Sie können jedes Bild als Basis verwenden.<br>Hier ist beispielsweise ein Basisbild:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). |
-| **Logo oder Symbolbild hochladen und veröffentlichen** | Laden Sie anschließend das Bild hoch und veröffentlichen Sie es, das Sie über das Basisbild platzieren möchten. Dieses Bild sollte ein transparentes PNG mit dem Logo oder Symbol sein, das Sie überlagern möchten.<br>Hier ist das transparente PNG-Bild eines Sternobjekts mit Transparenzeffekten, das überlagert werden soll:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
+| **Hochladen und Veröffentlichen des Logos oder Symbolbilds** | Laden Sie anschließend das Bild hoch und veröffentlichen Sie es, das Sie über das Basisbild platzieren möchten. Dieses Bild sollte ein transparentes PNG mit dem Logo oder Symbol sein, das Sie überlagern möchten.<br>Hier ist das transparente PNG-Bild eines Sternobjekts mit Transparenzeffekten, das überlagert werden soll:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **Anwenden der Dynamic Media-URL** | Erstellen Sie jetzt eine Dynamic Media-URL, die das Basisbild mit dem Logo oder Symbolbild kombiniert. Sie können URL-Befehle verwenden, um diesen Effekt zu erzielen.<br>Die URL-Struktur sieht in etwa so aus:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>where<br>・ `hotspotRetailBaseImage` ist das Basisbild.<br>・ `starxp` ist das Logo-/Symbolbild.<br>・ `layer=1` gibt an, dass das Logo oder Symbol über dem Basisbild platziert werden soll.<br>・ `scale=1.25` passt die Größe des Logos/Symbols an.<br>・ `posN=0.33,-.25` bestimmt die Position des Logos/Symbols relativ zum Basisbild.<br>・ `fmt=png` stellt sicher, dass die Ausgabe im PNG-Format vorliegt. |
 
-Weitere Infos? Navigieren Sie zu [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) Weitere Informationen zu `src` und anderen Dynamic Media-Befehlen.
+Weitere Infos? Navigieren Sie zu [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) Weitere Informationen zu `src` und anderen Dynamic Media-URL-Befehlen.
 
 
 #### Überlagern von Werbetext
@@ -203,13 +205,13 @@ Im Folgenden finden Sie die Schritte zum Überlagern einer Werbetext-Nachricht a
 | **Hochladen und Veröffentlichen des Basisbilds** | Laden Sie zunächst das Basisbild hoch und veröffentlichen Sie es, für das Sie den Text überlagern möchten. Sie können jedes beliebige Bild verwenden. Hier finden Sie beispielsweise ein Beispiel für ein Basisbild:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
 | **Anwenden von Dynamic Media-Textoperatoren** | Mit Dynamic Media können Sie Textoperatoren anwenden, um dynamischen Text direkt auf das Bild zu überlagern. Die folgende Beispiel-URL zeigt diese Fähigkeit:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600) |
 
-#### Größenanpassung und Zuschneiden für verschiedene Anwendungsfälle
+#### Größenanpassung und Zuschnitt für verschiedene Anwendungsfälle
 
 ##### Grundlagen zur Bildgröße
 
 Die Bildgröße ändert die Abmessungen, Auflösung und Dateigröße eines Bildes. Im Folgenden finden Sie einige wichtige Punkte, die zu beachten sind:
 
-* **Pixel-Komposition:**
+* **Pixelzusammensetzung:**
 Digitale Bilder bestehen aus winzigen Punkten, die Pixel genannt werden. Wenn ein Bild erstellt wird, hat es eine bestimmte Anzahl Pixel. Bei der Größenanpassung werden Pixel hinzugefügt oder abgezogen, um die Abmessungen, Auflösung und Dateigröße des Bildes zu ändern.
 * **Seitenverhältnis:**
 Die Beibehaltung des Seitenverhältnisses (das Verhältnis zwischen Breite und Höhe) ist entscheidend, um Verzerrungen zu vermeiden. Unabhängig davon, ob Sie ein Bild vergrößern (Hochskalieren) oder verkleinern (Downskalieren), wird durch die Beibehaltung des Seitenverhältnisses die visuelle Konsistenz gewährleistet.
@@ -218,7 +220,7 @@ Die Größenanpassung kann sich auf die Bildqualität auswirken. Vermeiden Sie d
 
 ##### Zuschneiden versus Größenanpassung
 
-Die Größenanpassung und das Zuschneiden sind Verfahren in Dynamic Media, mit denen Sie Bilder für verschiedene Anwendungsfälle transformieren können, unabhängig davon, ob Miniaturansichten, Banner oder Produktanzeigebilder erstellt werden.
+Zuschneiden und Größenanpassung sind Verfahren in Dynamic Media, mit denen Sie Bilder für verschiedene Anwendungsfälle transformieren können, unabhängig davon, ob es um das Erstellen von Miniaturansichten, Produktanzeigebildern oder Bannern geht.
 
 * **Zuschneiden:**
 Umfasst das Entfernen eines Teils eines Bildes, um dessen Komposition und Framing zu ändern. Die Gesamtdimensionen werden nicht geändert, sondern auf einen bestimmten Bereich konzentriert.
@@ -232,10 +234,10 @@ Sehen wir uns einen Anwendungsfall an, der das folgende Bild des Wohnzimmers umf
 * **Miniaturansicht (200 Pixel x 200 Pixel):**
 Eine kleinere Version, die für schnelles Laden oder Anzeigen geeignet ist.
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;fit=crop)
-* **Miniaturansicht mit Zuschnitt (200 Pixel x 200 Pixel):**
+* **Miniaturansicht mit Zuschnitt (200 x 200 Pixel):**
 Zum Fokussieren auf den Sofa-Bereich geschnitten.
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
-* **Produktanzeigebild (800 x 600 Pixel):**
+* **Produktanzeigebild (800 Pixel x 600 Pixel):**
 Zum Anzeigen des Sofas zugeschnitten und in der Größe angepasst.
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
 * **Banner (1720 Pixel x 820 Pixel):**
@@ -249,15 +251,15 @@ Möchten Sie mehr über die Befehle erfahren, die in einer URL verfügbar sind? 
 
 **Geschäftsfall:** *Veröffentlichen Sie schnell ein Video für eine Marketing-Site.*
 
-* **Wählen Sie ein Videoprofil:**
+* **Wählen Sie ein Videoprofil aus:**
 Zunächst sollten Sie in Dynamic Media ein geeignetes Videoprofil auswählen. Sie können die *Adaptive Videokodierung* Profil, das in AEM Assets unter &quot;Videoprofile&quot;verfügbar ist. Diese vordefinierten Kodierungseinstellungen stellen sicher, dass Ihr Video für die Wiedergabe auf verschiedenen Geräten und unter verschiedenen Bandbreitenbedingungen optimiert ist. Alternativ können Sie Ihr eigenes Profil für adaptive Videos erstellen.
-* **Zuweisen des Profils:**
+* **Weisen Sie das Profil zu:**
 Weisen Sie das ausgewählte Videoprofil den Ordnern zu, in die das Video hochgeladen werden soll. Dieser Schritt stellt sicher, dass die richtigen Kodierungseinstellungen während des Upload-Prozesses angewendet werden.
-* **Hochladen des Originalvideos:**
+* **Laden Sie das Originalvideo hoch:**
 Laden Sie die Originalvideodatei hoch. Stellen Sie sicher, dass es sich um ein hochauflösendes Video mit guter Qualität handelt. Je besser das Quellvideo, desto besser das Endergebnis.
-* **Vorschau und Veröffentlichung:**
+* **Vorschau erstellen und veröffentlichen:**
 Zeigen Sie eine Vorschau des Videos an, um sicherzustellen, dass alles wie erwartet aussieht. Sobald Sie zufrieden sind, veröffentlichen Sie sie. Dadurch wird das Video für Ihre Zielgruppe verfügbar.
-* **Link oder Einbetten:**
+* **Link oder Einbettung:**
 Nach der Veröffentlichung haben Sie zwei Optionen.
    * **Direkte Verknüpfung:**
 Verwenden Sie die bereitgestellte URL, um direkt mit dem Video zu verknüpfen. Verknüpfen Sie ihn entsprechend auf Ihrer Marketing-Site.
@@ -301,13 +303,13 @@ Möchten Sie mehr erfahren? Navigieren Sie zu [DASH in Ihrem Dynamic Media-Konto
 
 Die Internationalisierung von Videos für den mehrsprachigen Gebrauch ist für das Erreichen eines globalen Publikums von entscheidender Bedeutung. Dynamic Media bietet Funktionen, die Ihnen bei der Erreichung dieses Ziels helfen können.
 
-* **Hochladen Ihrer Videos:**
+* **Videos hochladen:**
    * Erstellen Sie zunächst ein Videokodierungsprofil. Sie können entweder das vordefinierte Profil &quot;Adaptive Videoverschlüsselung&quot;im Lieferumfang von Dynamic Media verwenden oder Ihr eigenes benutzerdefiniertes Profil erstellen.
    * Verknüpfen Sie das Videoverarbeitungsprofil mit einem oder mehreren Ordnern, in die Sie die Primärvideos hochladen.
    * Laden Sie die Primärvideos in diese Ordner hoch. Dynamic Media kodiert sie basierend auf dem zugewiesenen Videoverarbeitungsprofil.
    * Dynamic Media unterstützt in erster Linie Kurzformvideos (bis zu 30 Minuten) mit einer Mindestauflösung größer als 25 × 25. Videodateien mit einer Größe von bis zu 15 GB können hochgeladen werden1.
 
-* **Videos verwalten:**
+* **Verwalten Sie Ihre Videos:**
    * Organisieren, Durchsuchen und Durchsuchen von Video-Assets in AEM
    * Vorschau erstellen und Video-Assets veröffentlichen
    * Zeigen Sie das Quellvideo und die kodierten Ausgabeformate zusammen mit den zugehörigen Miniaturen an.
@@ -346,5 +348,5 @@ Um das beste Web-optimierte Format zu gewährleisten, können Sie darauf vertrau
 
 Mithilfe der intelligenten Bildbearbeitung können Sie sicherstellen, dass Ihre Bilder möglichst effizient und auf die Browser-Umgebung des jeweiligen Benutzers zugeschnitten bereitgestellt werden. Dieser Ansatz vereinfacht den Prozess und kann zu einer verbesserten Leistung in Bezug auf die Ladezeiten von Bildern und das gesamte Benutzererlebnis führen.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
+Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
