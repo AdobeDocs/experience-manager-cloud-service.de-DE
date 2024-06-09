@@ -455,10 +455,12 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 1. Fügen Sie unter diesem Knoten (der entsprechend dem Sonderzeichenbereich benannt wurde) die folgenden beiden Eigenschaften hinzu:
 
    * **Name** `rangeStart`
+
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
 
    * **Name** `rangeEnd`
+
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
 
@@ -579,7 +581,7 @@ Gehen Sie wie folgt vor, um bei Bedarf weitere Wörterbücher hinzuzufügen.
 
    >[!CAUTION]
    >
-   Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
+   >Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
 
 1. Suchen Sie die *.aff- und die *.dic-Dateien. Der Dateiname sollte nur Kleinbuchstaben aufweisen. Zum Beispiel `de_de.aff` und `de_de.dic`.
 1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
