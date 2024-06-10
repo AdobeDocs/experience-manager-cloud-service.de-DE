@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für dies
 
 >[!CAUTION]
 >
->Verwenden Sie das hier referenzierte SDK, da eine Regression mit dem vorherigen SDK bestätigt wurde:
+>Bitte verwenden Sie das nachfolgend angegebene SDK, da eine Regression mit dem vorherigen SDK bestätigt wurde:
 >`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### Verbesserungen {#enhancements-16544}
