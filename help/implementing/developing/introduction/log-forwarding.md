@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 3%
+source-wordcount: '1163'
+ht-degree: 2%
 
 ---
 
@@ -27,6 +27,8 @@ Kunden, die über eine Lizenz für einen Protokollierungsanbieter verfügen oder
 
 Die Protokollweiterleitung wird auf Self-Service-Weise konfiguriert, indem eine Konfiguration in Git deklariert und über die Cloud Manager-Konfigurationspipeline für Entwicklungs-, Staging- und Produktionsumgebungstypen in Produktionsprogrammen (ohne Sandbox) bereitgestellt wird.
 
+Es gibt eine Option, dass die AEM- und Apache-/Dispatcher-Protokolle über AEM erweiterte Netzwerkinfrastruktur, wie z. B. dedizierte Egress-IP, weitergeleitet werden.
+
 Beachten Sie, dass die Netzwerkbandbreite, die mit an das Protokollierungsziel gesendeten Protokollen verknüpft ist, als Teil der Netzwerk-I/O-Nutzung Ihres Unternehmens betrachtet wird.
 
 
@@ -36,6 +38,7 @@ Dieser Artikel ist wie folgt organisiert:
 
 * Einrichtung - für alle Protokollierungsziele gemeinsam
 * Protokollieren von Zielkonfigurationen - jedes Ziel hat ein etwas anderes Format
+* Protokolleintragsformate - Informationen zu den Protokolleintragsformaten
 * Erweiterte Netzwerke - Senden von AEM- und Apache-/Dispatcher-Logs über eine dedizierte Ausfahrt oder über eine VPN-Verbindung
 
 
@@ -48,7 +51,7 @@ Dieser Artikel ist wie folgt organisiert:
         logForwarding.yaml
    ```
 
-1. logForwarding.yaml sollte Metadaten und eine Konfiguration ähnlich dem folgenden Format enthalten (wir verwenden Splunk als Beispiel).
+1. `logForwarding.yaml` sollte Metadaten und eine Konfiguration ähnlich dem folgenden Format enthalten (wir verwenden Splunk als Beispiel).
 
    ```
    kind: "LogForwarding"
@@ -64,7 +67,7 @@ Dieser Artikel ist wie folgt organisiert:
          index: "AEMaaCS"
    ```
 
-   Die **kind** auf LogForwarding festgelegt sein, sollte die Version auf die Schemaversion (1) eingestellt werden.
+   Die **kind** -Parameter auf `LogForwarding` sollte die Version auf die Schemaversion (1) eingestellt werden.
 
    Token in der Konfiguration (z. B. `${{SPLUNK_TOKEN}}`) stellen Geheimnisse dar, die nicht in Git gespeichert werden sollten. Deklarieren Sie sie stattdessen als Cloud Manager  [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md) des Typs **secret**. Wählen Sie **Alle** als Dropdown-Wert für das Feld Dienst angewendet , sodass Protokolle an die Ebenen Autor, Veröffentlichung und Vorschau weitergeleitet werden können.
 
@@ -134,14 +137,53 @@ data:
 
 Für die Authentifizierung sollte ein SAS-Token verwendet werden. Sie sollte nicht auf der Seite Freigegebener Zugriffstoken, sondern auf der Signaturseite Freigegebener Zugriff erstellt und mit den folgenden Einstellungen konfiguriert werden:
 
-* Zulässige Dienste: Blob muss ausgewählt werden
-* Zulässige Ressourcen: Objekt muss ausgewählt sein
+* Zulässige Dienste: Blob muss ausgewählt sein.
+* Zulässige Ressourcen: Objekt muss ausgewählt sein.
 * Zulässige Berechtigungen: Schreiben, Hinzufügen, Erstellen muss ausgewählt sein.
 * Ein gültiges Start- und Ablaufdatum/-zeit.
 
 Im Folgenden finden Sie einen Screenshot einer Beispiel-SAS-Token-Konfiguration:
 
 ![Azure Blob SAS-Token-Konfiguration](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
+#### Azure Blob Storage-CDN-Protokolle {#azureblob-cdn}
+
+Jeder der global verteilten Protokollierungsserver erzeugt alle paar Sekunden eine neue Datei unter der `aemcdn` Ordner. Nach der Erstellung wird die Datei nicht mehr an angehängt. Das Format des Dateinamens ist JJJ-MM-DDThh:mm:ss.sss-uniqueid.log. z. B. 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+
+Beispiel:
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+```
+
+Und 30 Sekunden später:
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+   2024-03-04T10:00:30.000-ghi.log
+   2024-03-04T10:00:30.000-jkl.log
+   2024-03-04T10:00:30.000-mno.log
+```
+
+Jede Datei enthält mehrere JSON-Protokolleinträge, die jeweils in einer separaten Zeile stehen. Die Protokolleintragsformate werden im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md)und jeder Protokolleintrag enthält auch die zusätzlichen Eigenschaften, die in der Variablen [Protokolleintragsformate](#log-format) unten.
+
+#### Andere Azure Blob Storage-Protokolle {#azureblob-other}
+
+Andere Protokolle als CDN-Protokolle werden unter einem Ordner mit der folgenden Namenskonvention angezeigt:
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
+Unter jedem Ordner wird eine einzelne Datei erstellt und an diese angehängt. Kunden sind für die Verarbeitung und Verwaltung dieser Datei verantwortlich, sodass sie nicht zu groß wird.
+
+Siehe Protokolleintragsformate im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md). Die Protokolleinträge enthalten auch die zusätzlichen Eigenschaften, die in der [Protokolleintragsformate](#log-formats) unten.
 
 
 ### Datadog {#datadog}
@@ -202,6 +244,24 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
+#### HTTPS-CDN-Protokolle {#https-cdn}
+
+Webanfragen (POSTs) werden kontinuierlich gesendet, mit einer JSON-Payload, die ein Array von Protokolleinträgen ist, wobei das Protokolleintragsformat im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md#cdn-log). Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-formats) unten.
+
+Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, der auf den Wert `aemcdn`.
+
+#### Andere HTTPS-Protokolle {#https-other}
+
+Für jeden Protokolleintrag wird eine separate Webanfrage (POST) mit den Protokolleintragsformaten gesendet, die im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md). Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-format) unten.
+
+Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, der auf einen der folgenden Werte festgelegt ist:
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
 ### Splunk {#splunk}
 
 ```
@@ -237,9 +297,38 @@ data:
    ```   
 -->
 
+## Protokolleintragsformate {#log-formats}
+
+Siehe Allgemein . [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md) für das Format der jeweiligen Protokolltypen (Dispatcher-Protokoll, CDN-Protokoll usw.).
+
+Da Protokolle aus mehreren Programmen und Umgebungen an dasselbe Protokollierungsziel weitergeleitet werden können, werden zusätzlich zur im Protokollartikel beschriebenen Ausgabe die folgenden Eigenschaften in jeden Protokolleintrag aufgenommen:
+
+* aem_env_id
+* aem_env_type
+* aem_program_id
+* aem_tier
+
+Beispielsweise könnten die Eigenschaften die folgenden Werte aufweisen:
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+```
+
 ## Erweiterte Netzwerkfunktionen {#advanced-networking}
 
-Wenn Sie organisatorische Anforderungen haben, um den Traffic zu Ihrem Protokollierungsziel zu sperren, können Sie die Protokollweiterleitung so konfigurieren, dass [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md). Sehen Sie sich die Muster für die drei folgenden erweiterten Netzwerktypen an, die eine optionale `port` -Parameter zusammen mit dem `host` -Parameter.
+>[!NOTE]
+>
+>Diese Funktion steht noch nicht für frühe Anwender bereit.
+
+
+Einige Unternehmen beschränken, welcher Traffic von den Protokollierungszielen empfangen werden kann.
+
+Für das CDN-Protokoll können Sie die IP-Adressen auf die Zulassungsliste setzen, wie unter [diesem Artikel](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Wenn die Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen (Nicht-Adobe-)Azure Blob Store senden, in den Logik geschrieben werden kann, um die Protokolle von einer dedizierten IP-Adresse an ihr endgültiges Ziel zu senden.
+
+Für andere Protokolle können Sie die Protokollweiterleitung so konfigurieren, dass [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md). Sehen Sie sich die Muster für die drei folgenden erweiterten Netzwerktypen an, die eine optionale `port` -Parameter zusammen mit dem `host` -Parameter.
 
 ### Flexibler Port-Ausgang {#flex-port}
 
@@ -249,7 +338,7 @@ Wenn der Protokolltraffic an einen anderen Port als 443 geleitet wird (z. B. 844
 {
     "portForwards": [
         {
-            "name": "mylogging.service.logger.com",
+            "name": "splunk-host.example.com",
             "portDest": 8443, # something other than 443
             "portOrig": 30443
         }    
@@ -265,7 +354,7 @@ version: "1"
 data:
   splunk:
     default:
-      host: "proxy.tunnel"
+      host: "${{AEM_PROXY_HOST}}"
       token: "${{SomeToken}}"
       port: 30443
       index: "index_name"
@@ -273,14 +362,15 @@ data:
 
 ### Dedizierte Ausgangs-IP {#dedicated-egress}
 
+
 Wenn der Log-Traffic aus einer dedizierten Egress-IP stammen muss, konfigurieren Sie erweiterte Netzwerke wie folgt:
 
 ```
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443, 
             "portOrig": 30443
         }    
     ]
@@ -290,15 +380,25 @@ Wenn der Log-Traffic aus einer dedizierten Egress-IP stammen muss, konfigurieren
 und konfigurieren Sie die YAML-Datei wie folgt:
 
 ```
+      
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "proxy.tunnel"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443    
 ```
 
 ### VPN {#vpn}
@@ -309,24 +409,29 @@ Wenn der Protokolltraffic einen VPN durchlaufen muss, konfigurieren Sie erweiter
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443,
             "portOrig": 30443
         }    
     ]
 }
-```
 
-und konfigurieren Sie die YAML-Datei wie folgt:
-
-```
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "mylogging.service.com"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443     
 ```
