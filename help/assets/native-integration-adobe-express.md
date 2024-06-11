@@ -2,10 +2,10 @@
 title: Native AEM Assets-Integration mit Adobe Expreß
 description: Die native AEM Assets-Integration mit Adobe Expreß ermöglicht Ihnen den direkten Zugriff auf die in AEM Assets gespeicherten Assets über die Adobe Expreß-Benutzeroberfläche.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
+source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 20%
+source-wordcount: '635'
+ht-degree: 18%
 
 ---
 
@@ -50,18 +50,19 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
    ![Speichern von Assets in AEM](assets/adobe-express-share.png)
 
 2. Wählen Sie im Bereich Speicherung im rechten Bereich die Option **AEM Assets**. Adobe Expreß zeigt das Dialogfeld &quot;Hochladen&quot;an.
-3. Wählen Sie entweder die **Aktuelle Seite** oder **Alle Seiten** Speichern . Auswählen **Aktuelle Seite** speichert die Datei jedoch im Zielordner, indem Sie **Alle Seiten** erstellt in Ihrem Ziel einen neuen Ordner für alle Nicht-PDF-Dateien und speichert sie als separate Dateien, während PDF-Dateien als einzelne Datei im Zielordner gespeichert werden.
-4. Geben Sie einen Namen und ein Format für das Asset an. Sie können den Inhalt der Arbeitsfläche in den Formaten PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG speichern. Das Format passt sich automatisch an die Assets an.
-5. Klicken Sie auf das Ordnersymbol unter **Zielordner** , um einen Speicherort auszuwählen und die Assets zu speichern.
+3. Wählen Sie entweder **Aktuelle Seite** oder **Alle Seiten**. Geben Sie einen Namen und ein Format für die zu exportierenden Assets an. Sie können den Inhalt der Arbeitsfläche in die Formate PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG exportieren. Das Format passt sich automatisch an die Assets auf der/den Leinwandseite(n) an.
+Auswählen **Aktuelle Seite** speichert das Asset auf der aktuellen Seite in Ihrem Zielordner. Wenn Sie **Alle Seiten** und das Exportformat nicht PDF ist, werden alle Leinwandseiten als separate Dateien in einem neuen Ordner in Ihrem Zielordner gespeichert. Wenn das Exportformat PDF ist, werden alle Leinwandseiten als einzelne PDF-Datei im Zielordner gespeichert.
+
+4. Klicken Sie auf das Ordnersymbol unter **Zielordner** , um einen Speicherort auszuwählen und die Assets zu speichern.
 
    ![Speichern von Assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. Optional: Sie können Kampagnenmetadaten für Ihren Upload mit dem **Projekt- oder Kampagnenname** -Feld. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Um den Namen zu registrieren, geben Sie einfach den Namen ein und drücken Sie die Eingabetaste.
+5. Optional: Sie können Kampagnenmetadaten für Ihren Upload mit dem **Projekt- oder Kampagnenname** -Feld. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Um den Namen zu registrieren, geben Sie einfach den Namen ein und drücken Sie die Eingabetaste.
 Als Best Practice empfiehlt Adobe, Werte im Rest der Felder anzugeben und eine erweiterte Sucherfahrung für Ihre hochgeladenen Assets zu erstellen.
 
-7. Definieren Sie auf ähnliche Weise Werte für die **[!UICONTROL Schlüsselwörter]** und **[!UICONTROL Kanäle]** -Felder.
+6. Definieren Sie auf ähnliche Weise Werte für die **[!UICONTROL Schlüsselwörter]** und **[!UICONTROL Kanäle]** -Felder.
 
-8. Klicks **[!UICONTROL Hochladen]** , um die Assets in AEM Assets hochzuladen.
+7. Klicks **[!UICONTROL Hochladen]** , um die Assets in AEM Assets hochzuladen.
 
 ## Einschränkungen {#limitations}
 
