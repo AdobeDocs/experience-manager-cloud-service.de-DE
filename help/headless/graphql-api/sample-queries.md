@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
-workflow-type: ht
-source-wordcount: '1754'
-ht-degree: 100%
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
+workflow-type: tm+mt
+source-wordcount: '1826'
+ht-degree: 97%
 
 ---
 
@@ -1794,6 +1794,20 @@ Diese Abfrage fragt Folgendes ab:
   }
 } 
 ```
+
+## Beispielabfragen für die Bereitstellung von DAM- und Dynamic Media-Assets {#sample-queries-delivery-DAM-DM}
+
+Für die Web-optimierte Bildbereitstellung (von DAM-Assets):
+
+* [Beispielabfrage für die Web-optimierte Bereitstellung von Bildern mit allen Parametern](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [Beispielabfrage für die Web-optimierte Bereitstellung von Bildern mit einem einzigen angegebenen Parameter](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+Bereitstellen der URL für ein Dynamic Media-Asset
+
+* Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - Bildreferenz](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - Mehrere Referenzen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## Die Struktur des Beispielinhaltsfragments (verwendet mit GraphQL) {#content-fragment-structure-graphql}
 
