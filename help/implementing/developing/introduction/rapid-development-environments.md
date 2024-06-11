@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '4294'
-ht-degree: 100%
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
+workflow-type: tm+mt
+source-wordcount: '4312'
+ht-degree: 99%
 
 ---
 
@@ -412,11 +412,6 @@ Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Paket nicht aufg
 
 ### Bereitstellen von Frontend-Code basierend auf Site-Designs und Site-Vorlagen {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> Diese Funktion ist noch nicht verfügbar.  Sie wird im Laufe des Juni eingeführt.
->
-
 RDEs unterstützen Frontend-Code, der auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Seitenvorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) basiert. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung zur Bereitstellung von Frontend-Paketen und nicht über die [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) von Cloud Manager, die für andere Umgebungstypen verwendet wird.
 
 Erstellen Sie wie gewohnt Ihr Frontend-Paket mit npm:
@@ -460,6 +455,10 @@ Logs:
 >Die Benennung der Dateien im Frontend-Paket muss den folgenden Benennungskonventionen entsprechen:
 > * „dist“-Ordner, für den Ordner des NPM-Build-Ausgabepakets
 > * „package.json“-Datei, für das NPM-Abhängigkeitspaket
+
+>[!TIP]
+>
+> Wenn Sie Ihre RDE vor April 2023 erstellt haben und beim ersten Versuch mit der Frontend-Funktion der Fehler &quot;UNEXPECTED_API_ERROR&quot;auftritt, versuchen Sie bitte, Ihre Umgebung zu löschen und erneut zu erstellen.
 
 ### Überprüfen des Status der RDE {#checking-rde-status}
 
