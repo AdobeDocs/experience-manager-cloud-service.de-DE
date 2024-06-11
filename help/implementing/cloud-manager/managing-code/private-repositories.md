@@ -1,10 +1,10 @@
 ---
 title: Hinzufügen privater Repositorys in Cloud Manager
 description: Erfahren Sie, wie Sie Cloud Manager für die Verwendung mit Ihren eigenen privaten GitHub-Repositorys einrichten.
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 68%
+source-wordcount: '836'
+ht-degree: 69%
 
 ---
 
@@ -118,7 +118,6 @@ Validierte private Repositorys können mit [Vollstapel- und Frontend-Pipelines.]
 
 Bei der Verwendung privater Repositorys mit Cloud Manager gelten bestimmte Einschränkungen.
 
-* Sie können private Repositorys nicht als direkte Repository-Quelle für die von Ihnen verwalteten Pipelines verwenden.
 * Sie können die Überprüfung der Pull-Anforderung nicht mithilfe der GitHub-Prüfung aus Cloud Manager anhalten.
    * Wenn das GitHub-Repository in Cloud Manager validiert wird, versucht Cloud Manager immer, die für dieses Repository erstellten Pull-Anforderungen zu validieren.
 * Wenn die Adobe GitHub-App aus Ihrer GitHub-Organisation entfernt wird, wird dadurch auch die Überprüfungsfunktion für Pull-Anfragen für alle Repositorys entfernt.

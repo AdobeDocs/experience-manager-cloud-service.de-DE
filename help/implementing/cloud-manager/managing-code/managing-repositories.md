@@ -2,10 +2,10 @@
 title: Verwalten von Repositorys in Cloud Manager
 description: Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager erstellen, anzeigen und löschen.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 395179c078d87a393adbc4072a9f4e5b5ca3de51
+source-git-commit: e467c8058531441524fedd37e14b82b7fb255c69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 33%
+source-wordcount: '624'
+ht-degree: 30%
 
 ---
 
@@ -38,7 +38,7 @@ Die **Repositorys** liefert Details zu Repositorys:
 
 * Der Repository-Typ
    * **Adobe** zeigt Adobe-verwaltete Repositorys an
-   * **Privat** zeigt an, dass von Ihnen verwaltete GitHub-Repositorys
+   * **GitHub** zeigt private GitHub-Repositorys an, die Sie verwalten
 * Zeitpunkt der Erstellung
 * Pipelines, die mit dem Repository verknüpft sind
 
@@ -75,7 +75,14 @@ Wenn Sie Ihre Repositorys im **Repositorys** -Fenster können Sie die Details zu
 
 Die **Repository-Informationen** wird mit den Details geöffnet. Weitere Informationen zum Zugriff auf Repository-Informationen finden Sie im Dokument . [Zugriff auf Repository-Informationen.](accessing-repos.md)
 
-## Verzweigungen überprüfen {#check-branches}
+## Verzweigungen überprüfen/Projekt erstellen {#check-branches}
+
+Die **Verzweigungen prüfen/Projekt erstellen** -Aktion führt je nach dem Status des Repositorys zwei Funktionen aus.
+
+* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt basierend auf [den AEM Projektarchetyp.](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Wenn das Beispielprojekt bereits im Repository erstellt wurde, prüft es den Status des Repositorys und seiner Verzweigungen und erstellt Berichte zurück, wenn das Beispielprojekt bereits vorhanden ist.
+
+![Aktion &quot;Verzweigungen überprüfen&quot;](assets/check-branches.png)
 
 ## Repository-URL kopieren {#copy-url}
 
