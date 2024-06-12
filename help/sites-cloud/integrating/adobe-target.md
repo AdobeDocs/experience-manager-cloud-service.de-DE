@@ -2,9 +2,9 @@
 title: Integrieren mit Adobe Target
 description: Integrieren mit Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '615'
+source-git-commit: 876de632163c4a0952e238ac89577fa9f064b900
+workflow-type: tm+mt
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -31,10 +31,13 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 * Experience Platform Launch ist das Tool zur Instrumentierung einer AEM-Site mit Target-Funktionen (JS-Bibliotheken). Daher erfolgt die Integration von AEM as a Cloud Service in Launch und Adobe Target Hand in Hand (siehe die Links unten).
 
-   * [Integration mit Adobe Target über Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=de)
-   * [Integrieren von Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de)
-   * [Integration von AEM mit Adobe Launch über Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de)
-   * [Grundlegendes zur AEM-Integration mit Adobe Experience Platform Launch, Analytics und Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de)
+<!--   
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+-->
+
+* [Integrieren von Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de)
+* [Integration von AEM mit Adobe Launch über Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de)
+* [Grundlegendes zur AEM-Integration mit Adobe Experience Platform Launch, Analytics und Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de)
 
 >[!NOTE]
 >
@@ -56,7 +59,7 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+>Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 >
 >Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration mit Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=de#securing-the-activity-settings-node).
 
