@@ -2,10 +2,11 @@
 title: Konfigurieren von CDN-Anmeldeinformationen und einer Authentifizierung
 description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und eine Authentifizierung konfigurieren, indem Sie Regeln in einer Konfigurationsdatei deklarieren und diese mithilfe der Cloud Manager-Konfigurations-Pipeline bereitstellen.
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
-workflow-type: ht
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
+workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -71,7 +72,7 @@ Die Syntax für den Wert `X-AEM-Edge-Key` enthält:
 
 ## API-Bereinigungs-Token {#purge-API-token}
 
-Kundinnen und Kunden können den CDN-Cache mithilfe eines deklarierten API-Bereinigungs-Tokens bereinigen. Das Token wird mit der unten stehenden Syntax deklariert.   Im Abschnitt [Allgemeine Einrichtung](#common-setup) erfahren Sie, wie Sie es bereitstellen.
+Kunden können [Bereinigen des CDN-Cache](/help/implementing/dispatcher/cdn-cache-purge.md) durch Verwendung eines deklarierten Bereinigungs-API-Tokens. Das Token wird mit der unten stehenden Syntax deklariert.   Im Abschnitt [Allgemeine Einrichtung](#common-setup) erfahren Sie, wie Sie es bereitstellen.
 
 ```
 kind: "CDN"
