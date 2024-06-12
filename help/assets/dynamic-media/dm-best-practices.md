@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets als Samml
 * **Organisieren von Assets mit Profilen:**
 Ein Verarbeitungsprofil automatisiert die Asset-Verarbeitung in angegebenen Ordnern und optimiert so die Organisation. Durch die Standardisierung von Metadaten, Dateinamen und Ordnerstrukturen können diese Profile konsistent und präzise angewendet werden, wenn sich Ihre digitale Asset-Sammlung erweitert.
 Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets mit Profilen](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### Bildqualität optimieren
 
