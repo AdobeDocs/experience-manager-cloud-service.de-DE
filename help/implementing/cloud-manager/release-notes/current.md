@@ -4,10 +4,10 @@ description: Dies sind die Versionshinweise für Cloud Manager 2024.6.0 in AEM a
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
-workflow-type: ht
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -26,8 +26,8 @@ Die Version 2024.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Ju
 
 ## Neue Funktionen {#what-is-new}
 
-* Die [Verwendung Ihrer eigenen GitHub-Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md) als Quellen für Full-Stack- und auch Frontend-Pipelines ist nun möglich.
-   * Darüber hinaus können Sie GitHub-Repositorys mit [Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md) nutzen. So haben Sie mehr Kontrolle über die automatisch generierten Pipelines, die zur Prüfung von Pull-Anfragen verwendet werden, und können das Verhalten für wichtige Metriken während der Codescan-Phase definieren.
+* Nun ist die [Verwendung Ihrer eigenen GitHub-Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md) als Quellen für sowohl Full-Stack- als auch Frontend-Pipelines möglich.
+   * Darüber hinaus können Sie GitHub-Repositorys mit [Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md) nutzen. So haben Sie mehr Kontrolle über die automatisch generierten Pipelines, die zur Prüfung von Pull-Anfragen verwendet werden, und können das Verhalten für wichtige Metriken während der Code-Scan-Phase definieren.
    * [Sie haben auch die Möglichkeit](/help/implementing/cloud-manager/managing-code/github-check-config.md), den Berichtsverlauf auf GitHub beizubehalten, die Pipeline zu benennen und Pipeline-Variablen entsprechend Ihren Anforderungen festzulegen.
 * Die [Wiederherstellung von Self-Service-Inhalten](/help/operations/restore.md) bietet eine Backup-Wiederherstellung für bis zu sieben Tage und außerdem:
    * Zeitpunktgenaue Backup-Wiederherstellung für die letzten 24 Stunden
@@ -54,11 +54,11 @@ Mit Cloud Manager können Sie jetzt [Self-Service-SSL-Zertifikate mit Domain-Val
 
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `Grp-aemcs-dv-dert-adopter@adobe.com`.
 
-### Client-seitige Sammlung über Real User Monitoring (RUM) {#rum}
+### Clientseitige Erfassung über die Echtzeit-Überwachung der Verwendung (RUM) {#rum}
 
-Sie können den [Datendienst Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) nutzen, um die Client-seitige Sammlung für AEM as a Cloud Service zu aktivieren.
+Sie können die [Datendienst zur Überwachung der tatsächlichen Verwendung (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) , um die clientseitige Erfassung für AEM as a Cloud Service zu aktivieren.
 
-Der Datendienst Real User Monitoring (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann die automatisierte Traffic-Berichterstellung jetzt für sie aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
+Der Real Use Monitoring (RUM) Data Service bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktion sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann die automatisierte Traffic-Berichterstellung jetzt für sie aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in Ihrer E-Mail den Domain-Namen für die Produktions-, Staging- und Entwicklungsumgebungen an.  Die Verfügbarkeit des Early-Adopter-Programms für diese Funktion ist begrenzt.
 
