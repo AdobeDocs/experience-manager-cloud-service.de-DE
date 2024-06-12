@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
-source-wordcount: '323'
-ht-degree: 100%
+source-git-commit: f1cae81b80f9871bffc683dcd230f4569dd05fa4
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-In [!DNL Adobe Experience Manager Assets] können Sie Bildern ein digitales Wasserzeichen hinzufügen. [!DNL Assets] unterstützt das Anwenden eines Bilds als Wasserzeichen für andere Bilddateien. Wasserzeichen können Benutzern dabei helfen, die Authentizität und das Urheberrecht von Assets zu überprüfen. Außerdem können Wasserzeichen dazu dienen, den Status eines Dokuments (wie vertraulich, Entwurf, Gültigkeit usw.) anzugeben.
+[!DNL Adobe Experience Manager Assets] ermöglicht das Hinzufügen eines digitalen Wasserzeichens zu Bildern und Videos. [!DNL Assets] unterstützt das Anwenden eines Bilds als Wasserzeichen für andere Bilddateien. Wasserzeichen können Benutzern dabei helfen, die Authentizität und das Urheberrecht von Assets zu überprüfen. Außerdem können Wasserzeichen dazu dienen, den Status eines Dokuments (wie vertraulich, Entwurf, Gültigkeit usw.) anzugeben.
 
 So konfigurieren Sie [!DNL Experience Manager] für Wasserzeichen-Assets:
 
