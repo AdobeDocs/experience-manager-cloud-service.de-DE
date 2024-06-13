@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die Inhaltsmodellierung für AEM-Authoring-Projek
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -345,7 +345,7 @@ Für einige Werte kann die semantische Bedeutung aus den Werten selbst abgeleite
 * **Bilder**: Wenn eine Referenz auf eine Ressource in AEM ein Asset mit einem MIME-Typ ist, der mit `image/` beginnt, wird die Referenz als `<picture><img src="${reference}"></picture>` gerendert.
 * **Links**: Wenn eine Referenz in AEM vorhanden ist, die kein Bild ist, oder wenn der Wert mit `https?://` oder `#` beginnt, wird die Referenz als `<a href="${reference}">${reference}</a>` gerendert.
 * **Rich-Text**: Wenn ein abgeschnittener Wert mit einem Absatz beginnt (`p`, `ul`, `ol`, `h1`-`h6` usw.), wird der Wert als Rich-Text gerendert.
-* **Klassennamen**: Die `classes`-Eigenschaft wird als Blockoptionen behandelt und in der Tabellenkopfzeile für [einfache Blöcke](#simple) bzw. als Werteliste für Elemente in einem [Container-Block](#container) gerendert.
+* **Klassennamen** - die `classes` -Eigenschaft wird als [Blockoptionen](/help/edge/developer/markup-sections-blocks.md#block-options) und in der Tabellenüberschrift für [einfache Blöcke,](#simple) oder als Werteliste für Elemente in einer [Container-Block.](#container)
 * **Wertelisten**: Wenn es sich bei einem Wert um eine Eigenschaft mit mehreren Werten handelt und der erste Wert keiner der vorherigen ist, werden alle Werte als kommagetrennte Liste verkettet.
 
 Alles andere wird als einfacher Text gerendert.
