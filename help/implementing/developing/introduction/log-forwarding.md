@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
+source-git-commit: e007f2e3713d334787446305872020367169e6a2
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1209'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 >
 >Diese Funktion wurde noch nicht veröffentlicht und einige Protokollierungsziele sind möglicherweise zum Zeitpunkt der Veröffentlichung nicht verfügbar. In der Zwischenzeit können Sie ein Support-Ticket öffnen, um Logs an weiterzuleiten. **Splunk**, wie im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md).
 
-Kunden, die über eine Lizenz für einen Protokollierungsanbieter verfügen oder ein Protokollierungsprodukt hosten, können AEM-, Apache-/Dispatcher- und CDN-Protokolle an die zugehörigen Protokollierungsziele weiterleiten lassen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
+Kunden, die über eine Lizenz für einen Protokollierungsanbieter verfügen oder ein Protokollierungsprodukt hosten, können AEM Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an die zugehörigen Protokollierungsziele weiterleiten lassen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
 
 * Azure Blob Storage
 * DataDog
@@ -71,7 +71,7 @@ Dieser Artikel ist wie folgt organisiert:
 
    Token in der Konfiguration (z. B. `${{SPLUNK_TOKEN}}`) stellen Geheimnisse dar, die nicht in Git gespeichert werden sollten. Deklarieren Sie sie stattdessen als Cloud Manager  [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md) des Typs **secret**. Wählen Sie **Alle** als Dropdown-Wert für das Feld Dienst angewendet , sodass Protokolle an die Ebenen Autor, Veröffentlichung und Vorschau weitergeleitet werden können.
 
-   Es ist möglich, verschiedene Werte zwischen CDN-Protokollen und allem anderen (AEM- und Apache-Logs) festzulegen, indem eine zusätzliche **cdn** und/oder **aem** -Block nach **default** -Block, in dem Eigenschaften die im **default** -Block; nur die aktivierte Eigenschaft ist erforderlich. Ein möglicher Anwendungsfall könnte die Verwendung eines anderen Splunk-Index für CDN-Protokolle sein, wie im folgenden Beispiel gezeigt wird.
+   Es ist möglich, verschiedene Werte zwischen CDN-Protokollen und AEM-Protokollen (einschließlich Apache/Dispatcher) festzulegen, indem eine zusätzliche **cdn** und/oder **aem** -Block nach **default** -Block, in dem Eigenschaften die im **default** -Block; nur die aktivierte Eigenschaft ist erforderlich. Ein möglicher Anwendungsfall könnte die Verwendung eines anderen Splunk-Index für CDN-Protokolle sein, wie im folgenden Beispiel gezeigt wird.
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ Dieser Artikel ist wie folgt organisiert:
             index: "AEMaaCS_CDN"   
    ```
 
-   Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder alles andere (AEM- und Apache-Protokolle) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
+   Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder AEM-Protokolle (einschließlich Apache/Dispatcher) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
 
    ```
       kind: "LogForwarding"
@@ -171,9 +171,9 @@ aemcdn/
 
 Jede Datei enthält mehrere JSON-Protokolleinträge, die jeweils in einer separaten Zeile stehen. Die Protokolleintragsformate werden im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md)und jeder Protokolleintrag enthält auch die zusätzlichen Eigenschaften, die in der Variablen [Protokolleintragsformate](#log-format) unten.
 
-#### Andere Azure Blob Storage-Protokolle {#azureblob-other}
+#### Azure Blob Storage-AEM {#azureblob-aem}
 
-Andere Protokolle als CDN-Protokolle werden unter einem Ordner mit der folgenden Namenskonvention angezeigt:
+AEM Protokolle (einschließlich Apache/Dispatcher) werden unter einem Ordner mit der folgenden Namenskonvention angezeigt:
 
 * aemaccess
 * aemerror
@@ -250,9 +250,14 @@ Webanfragen (POSTs) werden kontinuierlich gesendet, mit einer JSON-Payload, die 
 
 Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, der auf den Wert `aemcdn`.
 
-#### Andere HTTPS-Protokolle {#https-other}
+>[!NOTE]
+>
+> Bevor der erste CDN-Protokolleintrag gesendet wird, muss Ihr HTTP-Server erfolgreich eine einmalige Anfrage ausführen: eine an den Pfad gesendete Anfrage. ``wellknownpath`` muss antworten mit ``*``.
 
-Für jeden Protokolleintrag wird eine separate Webanfrage (POST) mit den Protokolleintragsformaten gesendet, die im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md). Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-format) unten.
+
+#### HTTPS-AEM {#https-aem}
+
+Für AEM Protokolle (einschließlich Apache/Dispatcher) werden Webanfragen (POSTs) kontinuierlich gesendet, mit einer JSON-Payload, die ein Array von Protokolleinträgen mit den verschiedenen Protokolleintragsformaten ist, wie im Abschnitt [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md). Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-format) unten.
 
 Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, der auf einen der folgenden Werte festgelegt ist:
 
@@ -299,7 +304,7 @@ data:
 
 ## Protokolleintragsformate {#log-formats}
 
-Siehe Allgemein . [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md) für das Format der jeweiligen Protokolltypen (Dispatcher-Protokoll, CDN-Protokoll usw.).
+Siehe Allgemein . [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md) für das Format der jeweiligen Protokolltypen (CDN-Protokolle und AEM-Protokolle, einschließlich Apache/Dispatcher).
 
 Da Protokolle aus mehreren Programmen und Umgebungen an dasselbe Protokollierungsziel weitergeleitet werden können, werden zusätzlich zur im Protokollartikel beschriebenen Ausgabe die folgenden Eigenschaften in jeden Protokolleintrag aufgenommen:
 
@@ -328,7 +333,7 @@ Einige Unternehmen beschränken, welcher Traffic von den Protokollierungszielen 
 
 Für das CDN-Protokoll können Sie die IP-Adressen auf die Zulassungsliste setzen, wie unter [diesem Artikel](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Wenn die Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen (Nicht-Adobe-)Azure Blob Store senden, in den Logik geschrieben werden kann, um die Protokolle von einer dedizierten IP-Adresse an ihr endgültiges Ziel zu senden.
 
-Für andere Protokolle können Sie die Protokollweiterleitung so konfigurieren, dass [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md). Sehen Sie sich die Muster für die drei folgenden erweiterten Netzwerktypen an, die eine optionale `port` -Parameter zusammen mit dem `host` -Parameter.
+Für AEM Protokolle (einschließlich Apache/Dispatcher) können Sie die Protokollweiterleitung so konfigurieren, dass sie ausgeführt wird [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md). Sehen Sie sich die Muster für die drei folgenden erweiterten Netzwerktypen an, die eine optionale `port` -Parameter zusammen mit dem `host` -Parameter.
 
 ### Flexibler Port-Ausgang {#flex-port}
 
