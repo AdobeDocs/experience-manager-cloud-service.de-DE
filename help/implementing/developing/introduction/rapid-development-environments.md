@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
-ht-degree: 94%
+source-wordcount: '4244'
+ht-degree: 93%
 
 ---
 
@@ -472,11 +472,6 @@ Weitere Informationen und Demonstrationen finden Sie im Video-Tutorial [Verwendu
 
 ## Protokolle {#rde-logging}
 
->[!NOTE]
->
-> Diese Funktion ist noch nicht verfügbar.  Sie wird im Laufe des Juni eingeführt.
-> 
-
 Wie andere Umgebungstypen können auch die Protokollebenen durch Ändern von OSGi-Konfigurationen festgelegt werden. Wie oben beschrieben, verwendet das Bereitstellungsmodell für RDEs jedoch eine Befehlszeile und keine Cloud Manager-Implementierung. Weitere Informationen zum Anzeigen, Herunterladen und Interpretieren von Protokollen finden Sie in der [Protokollierungsdokumentation](/help/implementing/developing/introduction/logging.md).
 
 Die RDE-CLI verfügt auch über einen eigenen Protokollbefehl, mit dem schnell konfiguriert werden kann, welche Klassen und Pakete auf welcher Protokollebene protokolliert werden sollen. Diese Konfigurationen können als temporär betrachtet werden, da sie die OSGi-Eigenschaften in der Versionskontrolle nicht ändern. Diese Funktion konzentriert sich auf das Verfolgen von Protokollen in Echtzeit, anstatt nach Protokollen aus der weit zurückliegenden Vergangenheit zu suchen.
@@ -484,6 +479,14 @@ Die RDE-CLI verfügt auch über einen eigenen Protokollbefehl, mit dem schnell k
 Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket auf eine Debugging-Protokollebene und zwei Pakete (durch Leerzeichen getrennt) auf eine Info-Debugging-Ebene eingestellt sind. Eine Ausgabe, die ein **auth**-Paket enthält, ist hervorgehoben.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>Wenn der Fehler angezeigt wird `RDECLI:UNEXPECTED_API_ERROR` Wenn Sie mit den Protokollbefehlen für den Autorendienst wiedergeben, setzen Sie Ihre Umgebung zurück und versuchen Sie es erneut. Dieser Fehler wird ausgegeben, wenn der neueste Reset-Vorgang vor Ende Mai 2024 ausgeführt wurde.
+>
+```
+>aio aem:rde:reset
+>```
 
 Weitere Informationen zum vollständigen Satz von Befehlszeilenoptionen finden Sie unter `aio aem:rde:logs --help`.
 
