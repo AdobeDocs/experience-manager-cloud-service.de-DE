@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: c6013984e1c47766964e6f8ece76e7793b59308f
+source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 75%
+source-wordcount: '1401'
+ht-degree: 59%
 
 ---
 
@@ -45,13 +45,13 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 ### Erstellen einer Blockdefinition und eines Modells {#create-block-model}
 
-1. Lokales Klonen des GitHub-Projekts, das Sie im [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) und öffnen Sie sie in einem Editor Ihrer Wahl.
+1&amp;period; Klonen Sie das GitHub-Projekt lokal, das Sie im [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) und öffnen Sie sie in einem Editor Ihrer Wahl.
 
-   * Zur Veranschaulichung wird hier Microsoft-Code verwendet.
+* Zur Veranschaulichung wird hier Microsoft-Code verwendet.
 
-   ![Klonen des Projekts](assets/create-block/clone.png)
+![Klonen des Projekts](assets/create-block/clone.png)
 
-1. Bearbeiten Sie die Datei `component-definition.json` im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
+2&amp;period; Bearbeiten Sie die `component-definition.json` -Datei im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Anführungsblock hinzu und speichern Sie die -Datei.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-1. Bearbeiten Sie die Datei `component-models.json` im Stammverzeichnis des Projekts, fügen Sie die folgende [Modelldefinition](/help/implementing/universal-editor/field-types.md#model-structure) für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
+3&amp;period; Bearbeiten Sie die `component-models.json` Datei im Stammverzeichnis des Projekts und fügen Sie Folgendes hinzu: [Modelldefinition](/help/implementing/universal-editor/field-types.md#model-structure) für Ihren neuen Anführungsblock und speichern Sie die Datei.
 
-   * Lesen Sie das Dokument . [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) für weitere Informationen darüber, was beim Erstellen von Inhaltsmodellen zu beachten ist.
+* Lesen Sie das Dokument . [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) für weitere Informationen darüber, was beim Erstellen von Inhaltsmodellen zu beachten ist.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-1. Bearbeiten Sie die Datei `component-filters.json` im Stammverzeichnis des Projekts, fügen Sie den Zitatblock zur [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt werden kann, und speichern Sie die Datei.
+4&amp;period; Bearbeiten Sie die `component-filters.json` -Datei im Stammverzeichnis des Projekts und fügen Sie den Anführungszeichenblock zum [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) , damit der Block zu einem beliebigen Abschnitt hinzugefügt werden kann, und speichern Sie die Datei.
 
 >[!BEGINTABS]
 
@@ -147,9 +147,9 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-1. Übertragen Sie diese Änderungen mithilfe von Git in Ihre `main`-Verzweigung.
+5&amp;period; Übertragen Sie diese Änderungen mithilfe von Git auf Ihre `main` -Verzweigung.
 
-   * Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
+* Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
 
 ### Erstellen von Inhalten mit dem Block {#create-content}
 
@@ -190,13 +190,13 @@ Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt ü
 
 Nachdem Sie nun über einen funktionierenden Zitatblock verfügen, können Sie ihn mit Stilen versehen.
 
-1. Kehren Sie zum Editor für Ihr Projekt zurück.
+1&amp;period; kehren Sie zum Editor für Ihr Projekt zurück.
 
-1. Erstellen Sie einen Ordner `quote`unter dem Ordner `blocks`. 
+2&amp;period; Erstellen Sie eine `quote` Ordner unter `blocks` Ordner.
 
-   ![Erstellen eines neuen Ordners](assets/create-block/new-folder.png)
+![Erstellen eines neuen Ordners](assets/create-block/new-folder.png)
 
-1. Fügen Sie im neuen `quote`-Ordner eine Datei `quote.js` hinzu, um die Blockdekoration zu implementieren, indem Sie das folgende JavaScript hinzufügen und die Datei speichern.
+3&amp;period; In der neuen `quote` Ordner, fügen Sie einen `quote.js` -Datei, um die Blockdekoration zu implementieren, indem Sie das folgende JavaScript hinzufügen und die -Datei speichern.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Fügen Sie im `quote`-Ordner eine Datei `quote.css` hinzu, um den Stil für den Block zu definieren, indem Sie den folgenden CSS-Code hinzufügen und die Datei speichern.
+4&amp;period; in der `quote` Ordner, fügen Sie einen `quote.css` -Datei, um die Formatierung für den Baustein zu definieren, indem Sie den folgenden CSS-Code hinzufügen und die Datei speichern.
 
 >[!BEGINTABS]
 
@@ -263,19 +263,19 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Übertragen Sie diese Änderungen mithilfe von Git auf Ihre `main`-Verzweigung.
+5&amp;period; Übertragen Sie diese Änderungen mithilfe von Git auf Ihre `main` -Verzweigung.
 
-   * Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
+* Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
 
-1. Kehren Sie zur Browser-Registerkarte des universellen Editors zurück, wo Sie die Seite Ihres Projekts bearbeitet haben, und laden Sie die Seite neu, um den formatierten Block anzuzeigen.
+6&amp;period; Kehren Sie zur Registerkarte Ihres Browsers im universellen Editor zurück, wo Sie die Seite Ihres Projekts bearbeitet haben, und laden Sie die Seite neu, um Ihren formatierten Block anzuzeigen.
 
-1. Sehen Sie sich den nun formatierten Zitatblock auf der Seite an.
+7&amp;period; siehe den jetzt formatierten Anführungsblock auf der Seite.
 
-   ![Der formatierte Zitatblock im universellen Editor](assets/create-block/quote-styled.png)
+![Der formatierte Zitatblock im universellen Editor](assets/create-block/quote-styled.png)
 
-1. Stellen Sie sicher, dass die Änderungen in die Produktion übertragen wurden. Navigieren Sie hierzu zur veröffentlichten Seite navigieren. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;period; Stellen Sie sicher, dass die Änderungen an die Produktion gesendet wurden, indem Sie zur veröffentlichten Seite navigieren. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.hlx.page`
 
-   ![Der veröffentlichte und formatierte Zitatblock](assets/create-block/quote-styled-published.png)
+![Der veröffentlichte und formatierte Zitatblock](assets/create-block/quote-styled-published.png)
 
 Herzlichen Glückwunsch! Sie verfügen nun über einen voll funktionierenden und formatierten Zitatblock. Sie können dieses Beispiel als Grundlage zur Erstellung Ihrer eigenen projektspezifischen Blöcke verwenden.
 
