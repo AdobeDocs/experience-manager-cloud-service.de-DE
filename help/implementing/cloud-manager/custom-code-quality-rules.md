@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4482'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -1203,24 +1203,24 @@ Achten Sie bei bestimmten Indizes darauf, die Tags-Eigenschaft und die aktuellen
 * **Schweregrad**: Gering
 * **Seit**: Version 2024.6.0
 
-AEM Cloud Service verbietet benutzerdefinierte Suchindex-Definitionen (Knoten des Typs `oak:QueryIndexDefinition`) im Inhaltspaket der Benutzeroberfläche bereitgestellt werden.
+AEM Cloud Service verbietet die Bereitstellung benutzerdefinierter Suchindex-Definitionen (Knoten vom Typ `oak:QueryIndexDefinition`) im Inhaltspaket der Benutzeroberfläche.
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.
 
-### Benutzerdefinierte Volltext-Indexdefinition des Typs damAssetLucene muss korrekt mit dem Präfix &#39;damAssetLucene&#39; versehen werden {#oakpal-dam-asset-lucene}
+### Die benutzerdefinierte Volltext-Indexdefinition des Typs „damAssetLucene“ muss korrekt mit dem Präfix „damAssetLucene“ versehen werden {#oakpal-dam-asset-lucene}
 
 * **Schlüssel**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Typ**: Verbesserung
 * **Schweregrad**: Gering
 * **Seit**: Version 2024.6.0
 
-AEM Cloud Service verbietet benutzerdefinierte Volltext-Indexdefinitionen des Typs `damAssetLucene` mit allen anderen als `damAssetLucene`.
+AEM Cloud Service verbietet es, benutzerdefinierte Volltext-Indexdefinitionen des Typs `damAssetLucene` mit anderen Präfixen als `damAssetLucene` zu versehen.
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.
 
 ### Indexdefinitionsknoten dürfen keine Eigenschaften mit demselben Namen enthalten {#oakpal-index-property-name}
 
@@ -1229,20 +1229,20 @@ AEM Cloud Service verbietet benutzerdefinierte Volltext-Indexdefinitionen des Ty
 * **Schweregrad**: Gering
 * **Seit**: Version 2024.6.0
 
-AEM Cloud Service verbietet benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) von enthält Eigenschaften mit demselben Namen
+AEM Cloud Service verbietet es, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) Eigenschaften mit demselben Namen enthalten.
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.
 
-### Das Anpassen bestimmter OOTB-Indexdefinitionen ist verboten {#oakpal-customizing-ootb-index}
+### Das Anpassen bestimmter vorkonfigurierter Indexdefinitionen ist verboten {#oakpal-customizing-ootb-index}
 
 * **Schlüssel**: RestrictIndexCustomization
 * **Typ**: Verbesserung
 * **Schweregrad**: Gering
 * **Seit**: Version 2024.6.0
 
-AEM Cloud Service verbietet unbefugte Änderungen der folgenden OOTB-Indizes:
+AEM Cloud Service verbietet unbefugte Änderungen der folgenden vorkonfigurierten Indizes:
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -1253,17 +1253,17 @@ AEM Cloud Service verbietet unbefugte Änderungen der folgenden OOTB-Indizes:
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.
 
-### Die Konfiguration der Tokenizer in Analyzern sollte mit dem Namen &#39;tokenizer&#39; erstellt werden {#oakpal-tokenizer}
+### Die Konfiguration der Tokenizer in Analyzern sollte mit dem Namen „tokenizer“ erstellt werden {#oakpal-tokenizer}
 
 * **Schlüssel**: AnalyzerTokenizerConfigCheck
 * **Typ**: Verbesserung
 * **Schweregrad**: Gering
 * **Seit**: Version 2024.6.0
 
-AEM Cloud Service verbietet die Erstellung von Tokenizern mit falschen Namen in Analyzern. Tokenizer sollten immer als `tokenizer`.
+AEM Cloud Service verbietet die Erstellung von Tokenizern mit falschen Namen in Analyzern. Tokenizer sollten immer als `tokenizer` definiert werden.
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines, die mit dem [Cloud Manager - Version August 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.

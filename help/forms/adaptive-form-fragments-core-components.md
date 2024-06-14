@@ -6,9 +6,9 @@ keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Fo
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,19 +31,19 @@ Sie können ein Fragment mehrmals zu einem Dokument hinzufügen und die Datenbin
 
 >[!NOTE]
 >
-> Mit dem [Konfigurationsdialogfeld und dem Design-Dialogfeld der Formularfragment-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment) können Sie Ihre Fragmente ganz einfach an die Bedürfnisse der Benutzenden anpassen.
+> Mit dem [Konfigurationsdialogfeld und dem Design-Dialogfeld der Formularfragment-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment) können Sie Ihre Fragmente ganz einfach an die Bedürfnisse der Benutzenden anpassen.
 
 ## Erstellen eines adaptiven Formularfragments {#create-a-fragment}
 
-Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein Bedienfeld in einem vorhandenen adaptiven Formular als Fragment speichern. So erstellen Sie ein Formularfragment:
+Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Panel in einem vorhandenen adaptiven Formular als Fragment speichern. So erstellen Sie ein Formularfragment:
 
 1. Melden Sie sich bei Ihrer AEM Forms-Instanz unter https://[*hostname*]:[*port*]/aem/forms.html an.
 1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
 
-   ![Adaptives Formularfragment erstellen](/help/forms/assets/adaptive-form-fragment.png)
+   ![Erstellen eines adaptiven Formularfragments](/help/forms/assets/adaptive-form-fragment.png)
 
 1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
-1. Wählen Sie eine Formularvorlage aus. Sie können ein Formularfragment für Kernkomponenten-basierte adaptive Forms- oder Foundation-Komponenten-basierte adaptive Forms erstellen. Um Formularfragmente für auf Kernkomponenten basierende Formulare zu erstellen, wählen Sie eine auf Kernkomponenten basierende Vorlage aus.
+1. Wählen Sie eine Formularvorlage aus. Sie können ein Formularfragment für auf Kernkomponenten basierende adaptive Formulare oder auf Foundation-Komponenten basierende adaptive Formulare erstellen. Um Formularfragmente für auf Kernkomponenten basierende Formulare zu erstellen, wählen Sie eine auf Kernkomponenten basierende Vorlage aus.
 
    Wenn Sie Formularfragmente für auf Kernkomponenten basierende Formulare erstellen, verwenden Sie die Option „Formular-Design auswählen“, um ein Kernkomponenten-basiertes Design auszuwählen.
 
@@ -64,7 +64,7 @@ Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein 
 
 1. Klicken Sie auf **Erstellen** und dann auf **Öffnen**, um das Fragment mit einer Standardvorlage im Bearbeitungsmodus zu öffnen. Im Bearbeitungsmodus können Sie dem Fragment eine beliebige Komponente des adaptiven Formulars hinzufügen.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Wenn Sie außerdem ein XML-Schema als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das Fragment ziehen. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Wenn Sie außerdem ein XML-Schema als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente per Drag-and-Drop auf das Fragment ziehen. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 Wenn das auf einem Schema oder Formulardatenmodell (FDM) basierende adaptive Formularfragment erstellt ist, werden Formulardatenmodelle (FDM) oder Schemaelemente auf der Registerkarte „Datenquellen“ des Inhalts-Browsers im Editor für adaptive Formulare angezeigt. Sie können per Drag-and-Drop Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus dem zugehörigen Schema beibehalten werden.
 
@@ -75,10 +75,10 @@ So fügen Sie einem adaptiven Formular ein adaptives Formularfragment hinzu:
 
 1. Öffnen Sie das adaptive Formular im Bearbeitungsmodus.
 1. Fügen Sie die **Adaptives Formularfragment**-Komponente in das Formular ein.
-1. Öffnen Sie das Dialogfeld Konfiguration von **Adaptives Formularfragment** -Komponente.
-1. Wählen Sie die **Fragmentverweis** im **Allgemein** Registerkarte. Je nach Formularmodell werden alle für Ihr Formular verfügbaren adaptiven Formularfragmente angezeigt.
+1. Öffnen Sie das Dialogfeld „Konfiguration“ der Komponente **Adaptives Formularfragment**.
+1. Wählen Sie den **Fragmentverweis** auf der Registerkarte **Allgemein** aus. Je nach Formularmodell werden alle für Ihr Formular verfügbaren adaptiven Formularfragmente angezeigt.
 
-1. Wählen Sie ein adaptives Formularfragment in der **Adaptives Formularfragment** -Komponente in Ihrem adaptiven Formular.
+1. Wählen Sie ein adaptives Formularfragment auf der Komponente **Adaptives Formularfragment** in Ihrem adaptiven Formular aus.
 
    ![Wählen Sie die Option „Adaptive Formularfragmente“ aus](/help/forms/assets/adaptive-form-fragment-basic.png)
 
@@ -110,7 +110,7 @@ Perform the following steps to show complete fragments in forms:
 
 ### Verwenden von Fragmenten innerhalb von Fragmenten {#using-fragments-within-fragments}
 
-Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. Sie können ein Fragment zu einem anderen Fragment hinzufügen und eine verschachtelte Fragmentstruktur haben.
+Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. ein Fragment in einem anderen Fragment hinzufügen, um eine verschachtelte Fragmentstruktur zu erstellen.
 
 ### Mehrfaches Verwenden eines Formularfragments in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
 

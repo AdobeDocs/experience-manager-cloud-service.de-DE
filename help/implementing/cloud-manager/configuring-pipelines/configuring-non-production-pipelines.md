@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 >[!NOTE]
 >
->Web-Ebene- und Konfigurations-Pipelines werden von privaten Repositorys nicht unterstützt. Lesen Sie das Dokument . [Hinzufügen privater Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) für Details und die vollständige Liste der Einschränkungen.
+>Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt. Details sowie eine vollständige Liste der Einschränkungen finden Sie im Dokument [Hinzufügen privater Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
 Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitstellungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
 

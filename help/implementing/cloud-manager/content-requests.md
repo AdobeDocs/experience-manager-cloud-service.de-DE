@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: a1b0d37b2f2f4e58b491651cb8e6504a6909393e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1381'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 68%
 
 ## Einführung {#introduction}
 
-Inhaltsanfragen sind Anfragen, die an AEM Sites (auch in Verbindung mit Edge Delivery Services für AEM Sites) oder ein vom Kunden bereitgestelltes Caching-System (z. B. ein Content Delivery Network) gesendet werden, um Inhalte oder Daten entweder im HTML-Format über Seitenansichten (z. B. Seiten und Experience Fragments) oder im JSON-Format über API-Aufrufe (Headless) bereitzustellen. Inhaltsanfragen werden entweder als Seitenansichten oder als fünf API-Aufrufe gezählt und an der Einfahrt des ersten Caching-Systems gemessen, um eine Inhaltsanfrage zu erhalten. Bestimmte HTTP-Anforderungen werden zum Zählen von Inhaltsanforderungen ein- oder ausgeschlossen. Die vollständige Liste der eingeschlossenen und ausgeschlossenen HTTP-Anfragen sowie deren technische Definitionen finden Sie in der Dokumentation.
+Inhaltsanfragen sind Anfragen, die an AEM Sites (auch in Verbindung mit Edge Delivery Services für AEM Sites) oder ein auf Kundenseite bereitgestelltes Caching-System (z. B. ein Content Delivery Network) gesendet werden, um Inhalte oder Daten entweder im HTML-Format über Seitenansichten (z. B. Seiten und Experience Fragments) oder im JSON-Format über API-Aufrufe (Headless) bereitzustellen. Inhaltsanfragen werden entweder als ein Seitenaufruf oder als fünf API-Aufrufe gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält.  Bestimmte HTTP-Anfragen werden beim Zählen von Inhaltsanfragen ein- oder ausgeschlossen. Die vollständige Liste der eingeschlossenen und ausgeschlossenen HTTP-Anfragen sowie deren technische Definitionen finden Sie in der Dokumentation.
 
 ## Grundlegendes zu Cloud Service-Inhaltsanfragen {#understanding-cloud-service-content-requests}
 
-Für Kunden, die das vordefinierte CDN verwenden, werden Inhaltsanforderungen von Cloud Services über die serverseitige Datenerfassung gemessen. Diese Sammlung wird über die Analyse des CDN-Protokolls aktiviert. Inhaltsanforderungen werden automatisch Server-seitig am Rande von Adobe Experience Manager as a Cloud Service erfasst, indem die Protokolldateien aus AEM as a Cloud Service CDN automatisiert analysiert werden. Dies geschieht durch Isolieren der Anfragen, die HTML zurückgeben `(text/html)` oder JSON `(application/json)` Inhalte aus dem CDN und basieren auf mehreren unten beschriebenen Aufnahme- und Ausschlussregeln. Eine Inhaltsanfrage erfolgt unabhängig davon, ob der zurückgegebene Inhalt von den CDN-Caches bereitgestellt wird oder ob er zurück an den Ursprung des CDN (AEM-Dispatcher) geht.
+Für Kundinnen und Kunden, die das vordefinierte CDN verwenden, werden Cloud Service-Inhaltsanfragen über die Server-seitige Datenerfassung gemessen. Diese Erfassung wird über die Analyse des CDN-Protokolls aktiviert.  Inhaltsanfragen werden automatisch Server-seitig am Edge von Adobe Experience Manager as a Cloud Service erfasst, indem die Protokolldateien aus dem AEM as a Cloud Service-CDN automatisiert analysiert werden. Dies geschieht durch Isolieren der Anfragen, die HTML- `(text/html)` oder JSON`(application/json)`-Inhalte aus dem CDN zurückgeben, und basierend auf verschiedenen Ein- und Ausschlussregeln, die im Folgenden erläutert werden. Eine Inhaltsanfrage erfolgt unabhängig davon, ob der zurückgegebene Inhalt von den CDN-Caches bereitgestellt wird oder ob er zurück an den Ursprung des CDN (AEM-Dispatcher) geht.
 
-Für Kunden, die ihr eigenes CDN verwenden, bietet die clientseitige Erfassung eine präzisere Darstellung der Interaktionen, sodass eine zuverlässige Messung der Website-Interaktion über die [Überwachung der tatsächlichen Verwendung](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) -Dienst. Dadurch erhalten Kundinnen und Kunden erweiterte Einblicke in ihren Seiten-Traffic und ihre Leistung. Es ist zwar für alle Kunden von Vorteil, bietet aber ein repräsentatives Spiegelbild der Benutzerinteraktionen, das eine zuverlässige Messung der Website-Interaktion ermöglicht, indem die Anzahl der Seitenansichten vom Client erfasst wird.
+Für Kundinnen und Kunden, die ihr eigenes CDN verwenden, bietet die Client-seitige Erfassung eine präzisere Darstellung der Interaktionen, sodass eine zuverlässige Messung der Website-Interaktion über den Dienst [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) sichergestellt wird. Dadurch erhalten Kundinnen und Kunden erweiterte Erkenntnisse zum Traffic und zur Performance ihrer Seiten. Es für alle Kundinnen und Kunden von Vorteil und bietet gleichzeitig ein repräsentatives Spiegelbild der Benutzerinteraktionen, das eine zuverlässige Messung der Website-Interaktion ermöglicht, indem die Anzahl der Seitenansichten auf Client-Seite erfasst wird.
 
-Für Kunden, die ihr eigenes CDN auf AEM as a Cloud Service, serverseitigen Berichterstellung setzen, ergeben sich Zahlen, die nicht mit den lizenzierten Inhaltsanforderungen verglichen werden können. Mit dem [Überwachung der tatsächlichen Verwendung](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), kann Adobe ein zuverlässiges Maß für die Interaktion mit Websites widerspiegeln.
+Für Kundinnen und Kunden, die ihr eigenes CDN auf AEM as a Cloud Service anwenden, führt die Server-seitige Berichterstellung zu Zahlen, die nicht mit den lizenzierten Inhaltsanfragen verglichen werden können. Mit [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) kann Adobe ein zuverlässiges Maß für die Interaktion mit Websites widerspiegeln.
 
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
-Inhaltsanforderungen können innerhalb der Analytics-Reporting-Tools eines Unternehmens Abweichungen aufweisen, wie in der folgenden Tabelle zusammengefasst. Im Allgemeinen *nicht* Verwenden Sie Analysetools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, um über die Anzahl der Inhaltsanforderungen für eine bestimmte Site zu berichten, einfach weil sie häufig davon abhängen, dass die Benutzerzustimmung ausgelöst wird, und daher ein erheblicher Teil des Traffics fehlt. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für die Berichterstellung zu Seitenansichten und der zugehörigen Leistung wird die [Adobe RUM-Datendienst](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) ist die von der Adobe empfohlene Option.
+Inhaltsanfragen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, die in dieser Tabelle zusammengefasst sind. Im Allgemeinen sollten Analyse-Tools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, *nicht verwendet werden*, um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten. Der Grund dafür ist, dass deren Auslösung häufig von der Zustimmung von Benutzerinnen und Benutzern abhängig ist, wodurch sie einen erheblichen Anteil des Traffics nicht erfassen. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für die Berichterstellung über Seitenansichten und die damit verbundene Leistung ist der [Adobe RUM-Datendienst](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) die von Adobe empfohlene Option.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
-| Zustimmung der Endbenutzenden | Analytics-Tools, die auf clientseitige Instrumentierung angewiesen sind, hängen häufig davon ab, dass die Benutzerzustimmung ausgelöst wird. Dies könnte den Großteil des Traffics ausmachen, der nicht erfasst wird. Für Kundinnen und Kunden, die Inhaltsanfragen selbst messen möchten, werden Analytics-Tools, die Daten Server-seitig erfassen, oder CDN-Berichte empfohlen. |
-| Tagging | Alle Seiten oder API-Aufrufe, die als Adobe Experience Manager-Inhaltsanfragen verfolgt werden, werden möglicherweise nicht mit Analytics-Tracking getaggt. |
+| Zustimmung der Endbenutzenden | Für Analytics-Tools, die auf eine Client-seitige Instrumentation angewiesen sind, ist die Auslösung häufig von einer Benutzerzustimmung abhängig. Dies könnte den Großteil des Traffics ausmachen, der nicht erfasst wird. Für Kundinnen und Kunden, die Inhaltsanfragen selbst messen möchten, werden Analytics-Tools, die Daten Server-seitig erfassen, oder CDN-Berichte empfohlen. |
+| Tagging | Alle Seiten oder API-Aufrufe, die als Adobe Experience Manager-Inhaltsanfragen erfasst werden, können nicht zum Analytics-Tracking getaggt werden. |
 | Tag-Management-Regeln | Die Einstellungen von Tag-Management-Regeln können auf einer Seite unterschiedliche Datenerfassungskonfigurationen zur Folge haben, was zu einigen Diskrepanzen beim Tracking von Inhaltsanfragen führt. |
 | Bots | Unbekannte Bots, die nicht vorab identifiziert und von AEM entfernt wurden, können zu Tracking-Diskrepanzen führen. |
 | Report Suites | Seiten, die Teil derselben AEM-Instanz und -Domain sind, können Daten an verschiedene Analytics Report Suites senden. |
@@ -47,7 +47,7 @@ Inhaltsanforderungen können innerhalb der Analytics-Reporting-Tools eines Unter
 
 Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Serverseitige Sammlungsregeln {#serverside-collection}
+## Regeln für die Server-seitige Sammlung {#serverside-collection}
 
 Es gibt Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Services, die die Site regelmäßig besuchen, um ihren Suchindex oder -Service zu aktualisieren.
 
@@ -72,7 +72,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | HTTP-Code 300–399 | Ausgeschlossen | Dies sind nützliche Anfragen, die entweder überprüfen, ob sich auf dem Server etwas geändert hat, oder die Anfrage an eine andere Ressource weiterleiten. Sie enthalten selbst keine Inhalte, daher sind sie nicht abrechenbar. |
 | Anfragen für /libs/* | Ausgeschlossen | AEM interne JSON-Anfragen, z. B. das CSRF-Token, das nicht abrechenbar ist. |
 | Traffic durch DDOS-Angriffe | Ausgeschlossen | DDOS-Schutz. AEM erkennt einige DDOS-Angriffe automatisch und blockiert sie. DDOS-Angriffe, die erkannt werden, sind nicht abrechenbar. |
-| as a Cloud Service New Relic-Überwachung AEM | Ausgeschlossen | Globale AEM as a Cloud Service-Überwachung. |
+| NewRelic-Überwachung für AEM as a Cloud Service | Ausgeschlossen | Globale AEM as a Cloud Service-Überwachung. |
 | URL für Kundinnen und Kunden zur Überwachung ihres Cloud Service-Programms | Ausgeschlossen | Empfohlene URL zur externen Überwachung der Verfügbarkeit.<br><br>`/system/probes/health` |
 | Pod-Warm-up-Service für AEM as a Cloud Service | Ausgeschlossen |
 | Agent: skyline-service-warmup/1.* |

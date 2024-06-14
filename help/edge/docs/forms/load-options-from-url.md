@@ -1,12 +1,12 @@
 ---
-title: Dropdown-Listenoptionen von einer URL oder einem anderen Blatt für Edge Delivery Services von AEM Forms as a Cloud Service laden
+title: 'Herunterladen von Dropdown-Listenoptionen über eine URL oder ein anderes Blatt für Edge Delivery Services für AEM Forms as a Cloud Service:'
 description: Die Dropdown-Listenoptionen sind in einer gesonderten Tabelle enthalten und werden dann über die angegebene URL in die primäre Tabelle importiert.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 

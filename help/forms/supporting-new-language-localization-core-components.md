@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -369,7 +369,7 @@ Diese folgenden Schritte führen Sie durch die Vorschau eines adaptiven Formular
 ## Best Practices zur Unterstützung neuer Lokalisierungen {#best-practices}
 
 * Adobe empfiehlt, ein Übersetzungsprojekt erst nach dem Erstellen eines adaptiven Formulars durchzuführen. Dadurch wird der Lokalisierungsprozess optimiert.
-* Wenn die Komponenten &quot;Numerisches Feld&quot;und &quot;Datumsauswahl&quot;in ein bestimmtes Gebietsschema übersetzt werden, kann es zu Formatierungsproblemen kommen. Um dies zu reduzieren, muss eine **Sprache** wurde in das Dialogfeld &quot;Konfigurieren&quot;von [Komponente für Datumsauswahl](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) und [Komponente &quot;Numerisches Feld&quot;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Wenn die Komponenten „Numerisches Feld“ und „Datumsauswahl“ in ein bestimmtes Gebietsschema übersetzt werden, kann es zu Formatierungsproblemen kommen. Um diese zu reduzieren, wurde eine Option **Sprache** in das Dialogfeld „Konfigurieren“ der [Komponente „Datumsauswahl“](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) und [Komponente „Numerisches Feld“](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab) eingefügt.
 
 
 * Umgang mit neuen Feldern:
