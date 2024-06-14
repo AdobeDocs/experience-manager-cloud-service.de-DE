@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '5034'
 ht-degree: 99%
@@ -823,14 +823,14 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [Überblick über Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md)
-   + AEM-basiertes Authoring {#aem-authoring}
-      + [Erstellen von Inhalten für Edge Delivery](/help/edge/aem-authoring/authoring.md)
-      + [Veröffentlichen von Inhalten für Edge Delivery](/help/edge/aem-authoring/publishing.md)
-      + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/aem-authoring/edge-dev-getting-started.md)
-      + [Erstellen von Bausteinen](/help/edge/aem-authoring/create-block.md)
-      + [Inhaltsmodellierung](/help/edge/aem-authoring/content-modeling.md)
-      + [Tabellendaten und Tabellen](/help/edge/aem-authoring/tabular-data.md)
-      + [Vorhandene Projekte und Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + WYSIWYG Authoring {#wysiwyg-authoring}
+      + [Erstellen von Inhalten für Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Veröffentlichen von Inhalten für Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
+      + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+      + [Erstellen von Bausteinen](/help/edge/wysiwyg-authoring/create-block.md)
+      + [Inhaltsmodellierung](/help/edge/wysiwyg-authoring/content-modeling.md)
+      + [Tabellendaten und Tabellen](/help/edge/wysiwyg-authoring/tabular-data.md)
+      + [Vorhandene Projekte und Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
    + Dokumentenbasiertes Authoring {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Massenmetadaten](/help/edge/docs/bulk-metadata.md)
