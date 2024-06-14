@@ -8,7 +8,7 @@ exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
 source-wordcount: '1648'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +24,21 @@ Adobe Experience Manager umfasst mehr als 100 Bildbereitstellungsbefehle für Dy
 
 **Intelligente Bildbearbeitung:**
 
-* Die Aktivierung der intelligenten Bildbearbeitung in Dynamic Media ermöglicht eine automatische Optimierung von Bildformat, -größe und -qualität basierend auf den Funktionen des Client-Browsers.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+* Die Aktivierung der intelligenten Bildbearbeitung in Dynamic Media ermöglicht eine automatische Optimierung von Format, Größe und Qualität eines Bildes auf Grundlage der Client-Browser-Funktionen.
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
 * Sie verbessert die Leistung bei der Bildbereitstellung durch die dynamische Anpassung dieser Parameter.
-* Sie können die intelligente Bildbearbeitung mit dem Tool zur Selbstbewertung bewerten [Momentaufnahme](https://snapshot.scene7.com/).
+* Sie können die intelligente Bildbearbeitung mit dem Tool zur Selbstbewertung [Snapshot](https://snapshot.scene7.com/) bewerten.
 
 **Bildformate:**
 
-* Explizite Verwendung vermeiden `fmt=webp` oder `fmt=avif` -Befehle in einer URL angeben, es sei denn, dies ist speziell für einen Anwendungsfall erforderlich.
+* Vermeiden Sie die Verwendung expliziter Befehle `fmt=webp` oder `fmt=avif` in einer URL, es sei denn, sie sind für einen Anwendungsfall speziell erforderlich.
 * Die intelligente Bildbearbeitung wählt automatisch das beste Format aus, was zu optimalen Bandbreiteneinsparungen führt.
 
 **Standardverhalten:**
 
-* Wenn in der URL kein Formatbefehl angegeben und die intelligente Bildbearbeitung nicht aktiviert ist, wird bei der Dynamic Media-Bildbereitstellung standardmäßig das JPEG-Format verwendet.
+* Wenn in der URL kein Formatbefehl angegeben und die intelligente Bildbearbeitung nicht aktiviert ist, wird bei der Bildbereitstellung von Dynamic Media standardmäßig das JPEG-Format verwendet.
 
-Indem Sie fundierte Entscheidungen über Bildformate treffen und die intelligente Bildbearbeitung aktivieren, können Sie die Leistung und das Benutzererlebnis erheblich beeinflussen.
+Indem Sie fundierte Entscheidungen bezüglich der Bildformate treffen und die intelligente Bildbearbeitung aktivieren, können Sie die Performance und das Anwendererlebnis erheblich beeinflussen.
 
 
 <!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
@@ -47,16 +47,16 @@ Indem Sie fundierte Entscheidungen über Bildformate treffen und die intelligent
 
 Wichtige Überlegungen zum Arbeiten mit Quellbildern:
 
-* **Quellbildformat:**
-   * Durch die Verwendung verlustfreier Formate wie PNG, TIFF oder PSD wird sichergestellt, dass die Bildqualität ohne Komprimierungsartefakte hoch bleibt.
-   * Diese Formate bewahren alle ursprünglichen Daten auf und eignen sich somit ideal für die Bearbeitung und Weiterverarbeitung.
+* **Format des Quellbilds:**
+   * Durch die Verwendung verlustfreier Formate wie PNG, TIFF oder PSD wird sichergestellt, dass die Bildqualität keine Komprimierungsartefakte enthält und hoch bleibt.
+   * In diesen Formaten bleiben alle ursprünglichen Daten erhalten, wodurch sie sich ideal für die Bearbeitung und Weiterverarbeitung eignen.
 * **Größe des Quellbilds:**
-   * Beginnend mit einem hochauflösenden Bild bietet mehr Details und Flexibilität.
-   * Wenn Bilder in unterschiedlichen Größen angezeigt werden müssen (z. B. geräteübergreifend oder über Bildschirmauflösungen hinweg), ermöglicht die Anzeige eines größeren Quellbilds eine bessere Skalierung.
-   * Für Bilder, die Zoom unterstützen (wie Produktfotos), zielen Sie auf Abmessungen von etwa 2.000 Pixel oder mehr auf der längsten Seite.
+   * Der Start mit einem hochauflösenden Bild bietet mehr Details und Flexibilität.
+   * Wenn Bilder in unterschiedlichen Größen angezeigt werden müssen (z. B. geräteübergreifend oder über Bildschirmauflösungen hinweg), ermöglicht die Anzeige eines größeren Quellbilds eine bessere Skalierung.
+   * Bei Bildern, die Zoomen unterstützen (wie Produktfotos), sollten Sie auf der längsten Seite Abmessungen von etwa 2.000 Pixel oder mehr anvisieren.
    * Logos oder Banner, die nicht vergrößert werden müssen, können in der für den vorgesehenen Zweck benötigten Größe hochgeladen werden.
 
-Wenn Sie diese sorgfältigen Entscheidungen auf Quellebene treffen, können Sie erheblich zur Gesamtqualität Ihres visuellen Inhalts beitragen.
+Wenn Sie diese umsichtigen Entscheidungen auf Quellebene treffen, können Sie erheblich zur Gesamtqualität Ihres visuellen Inhalts beitragen.
 
 <!-- REMOVED TOPIC AS PER CQDOC-21594
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
@@ -85,13 +85,13 @@ Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bi
 
 * Das Whitepaper [Best Practices für Adobe Dynamic Media Classic – Bildqualität und Scharfzeichnen](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
 
-* Sehen Sie sich das Video [Verwenden von Bildscharfzeichnung mit Experience Manager – Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media) an.
+* Sehen Sie sich das Video [Verwenden von Bildscharfzeichnung mit Experience Manager – Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media) an.
 
 Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Ausgabe oder bei beidem scharfzeichnen. Normalerweise ist es jedoch am besten, Bilder mit nur einer oder der anderen Methode scharfzuzeichnen, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
 Es gibt zwei Methoden zum Scharfzeichnen von Bildern:
 
-* Einfache Scharfzeichnung (`&op_sharpen`): Dies ähnelt dem in Photoshop verwendeten Scharfzeichnungsfilter und wendet einfache Scharfzeichnung auf die endgültige Ansicht des Bildes nach der dynamischen Skalierung an. Diese Methode kann aber nicht vom Benutzer konfiguriert werden. Es empfiehlt sich, die Verwendung von `&op_sharpen` sofern nicht erforderlich.
+* Einfache Scharfzeichnung (`&op_sharpen`): Dies ähnelt dem in Photoshop verwendeten Scharfzeichnungsfilter und wendet einfache Scharfzeichnung auf die endgültige Ansicht des Bildes nach der dynamischen Skalierung an. Diese Methode kann aber nicht vom Benutzer konfiguriert werden. Als Best Practice wird empfohlen, `&op_sharpen` nur zu verwenden, wenn es unbedingt erforderlich ist.
 * Unschärfemaske (`&op_USM`): Die Unschärfemaske ist ein dem Branchenstandard entsprechender Scharfzeichnungsfilter. Als Best Bractice wird empfohlen, Bilder anhand der folgenden Richtlinien mit der Unschärfemaske scharfzuzeichnen. Bei Verwendung der Unschärfemaske können Sie die drei folgenden Parameter steuern:
 
    * `&op_sharpen=`amount,radius,threshold
@@ -99,17 +99,17 @@ Es gibt zwei Methoden zum Scharfzeichnen von Bildern:
       * **[!UICONTROL amount]** (0-5, Stärke des Effekts)
       * **[!UICONTROL radius]** (0-250, Breite der „Scharfzeichnungslinien“ um das scharfgezeichnete Objekt, in Pixel gemessen)
 
-     Beachten Sie, dass die Parameter radius und amount einander gegenüberstehen. Eine Verringerung des Radius kann durch eine Erhöhung des Betrags kompensiert werden. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
+     Denken Sie daran, dass sich die Parameter „radius“ und „amount“ gegenseitig beeinflussen.  Wenn Sie „radius“ reduzieren, können Sie dies durch eine Erhöhung von „amount“ kompensieren.  Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
 
       * **[!UICONTROL threshold]** (0-255, Sensitivität des Effekts)
 
-     Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL threshold]** können Sie die übermäßige Scharfzeichnung von Bereichen mit ähnlichen Farben, wie Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein &quot;Rauschen&quot;zu erzeugen, trotzdem wird kontrastreichen Bereichen Kantenkontrast hinzugefügt, z. B. wo Wimpern auf die Haut treffen.
+     Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL threshold]** können Sie die übermäßige Scharfzeichnung von Bereichen mit ähnlichen Farben, wie Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird bei kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
 
      Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
 
       * Das Whitepaper [Best Practices für Adobe Dynamic Media Classic – Bildqualität und Scharfzeichnen](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
 
-      * Sehen Sie sich das Video [Verwenden von Bildscharfzeichnung mit Experience Manager – Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media) an.
+      * Sehen Sie sich das Video [Verwenden von Bildscharfzeichnung mit Experience Manager – Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media) an.
 
       * In Experience Manager können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
@@ -127,7 +127,7 @@ Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 ### Best Practices für JPEG-Komprimierung (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * Dieser Parameter steuert die Qualität der JPG-Kodierung. Ein höherer Wert führt zu einer höheren Bildqualität, aber auch zu einer größeren Datei. Ein niedrigerer Wert dagegen bedeutet eine niedrigere Bildqualität, aber auch eine kleinere Datei. Der Bereich für diesen Parameter liegt zwischen 0 und 100.
-* Um die Qualität zu optimieren, setzen Sie den Parameterwert nicht auf 100. Der Unterschied zwischen einer Einstellung von 90 oder 95 und 100 ist fast unwahrnehmbar. Und trotzdem erhöht 100 unnötig die Größe der Bilddatei. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt= value` auf 90 oder 95.
+* Um die Qualität zu optimieren, setzen Sie den Parameterwert nicht auf 100. Der Unterschied zwischen einer Einstellung von 90 oder 95 und 100 ist fast nicht wahrnehmbar.  Und trotzdem wird mit 100 die Größe der Bilddatei auf unnötige Weise erhöht. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt= value` auf 90 oder 95.
 * Erstellen Sie eine Bilddatei mit geringer Dateigröße bei akzeptabler Bildqualität, indem Sie `qlt= value` auf 80 setzen. Werte unter 70 bis 75 führen zu einer erheblichen Verschlechterung der Bildqualität.
 * Als Best Practice wird empfohlen, einen Kompromiss zu wählen: Setzen Sie `qlt= value` dazu auf 85.
 * Verwendung der Chroma-Markierung in `qlt=`
@@ -142,17 +142,17 @@ Verwenden Sie als Best Practice für die JPG-Komprimierung `&qlt=85,0`.
 Der Parameter `jpegSize` ist nützlich, wenn Sie garantieren möchten, dass ein Bild eine bestimmte Größe für die Bereitstellung an Geräten mit begrenztem Speicher nicht übersteigt.
 
 * Dieser Parameter wird in Kilobyte festgelegt (`jpegSize=&lt;size_in_kilobytes&gt;`). Damit wird die maximal zulässige Größe für die Bildbereitstellung definiert.
-* `&jpegSize=` interagiert mit dem JPG-Komprimierungsparameter `&qlt=`. Wenn die JPG-Antwort mit dem angegebenen JPG-Komprimierungsparameter (`&qlt=`) nicht den Wert von jpegSize überschreitet, wird das Bild mit dem definierten Wert für `&qlt=` zurückgegeben. Andernfalls `&qlt=` wird schrittweise reduziert, bis das Bild der maximal zulässigen Größe entspricht. Oder, bis das System feststellt, dass die Anpassung nicht möglich ist, und einen Fehler zurückgibt.
+* `&jpegSize=` interagiert mit dem JPG-Komprimierungsparameter `&qlt=`. Wenn die JPG-Antwort mit dem angegebenen JPG-Komprimierungsparameter (`&qlt=`) nicht den Wert von jpegSize überschreitet, wird das Bild mit dem definierten Wert für `&qlt=` zurückgegeben. Andernfalls wird `&qlt=` schrittweise reduziert, bis das Bild der maximal zulässigen Größe entspricht. Oder bis das System feststellt, dass die Anpassung nicht möglich ist, und einen Fehler zurückgibt.
 
 Legen Sie als Best Practice `&jpegSize=` fest und fügen Sie den Parameter `&qlt=` hinzu, wenn Sie JPG-Bilder an Geräte mit begrenztem Speicher bereitstellen.
 
 ## Zusammenfassung der Best Practices {#best-practices-summary}
 
-Um eine hohe Bildqualität und eine kleine Dateigröße zu erreichen, empfiehlt es sich, mit der folgenden Kombination von Parametern zu beginnen:
+Um eine hohe Bildqualität und kleine Dateien zu erreichen, wird als Best Practice empfohlen, mit der folgenden Kombination aus Parametern zu beginnen:
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 
-Diese Kombination von Einstellungen liefert unter den meisten Umständen hervorragende Ergebnisse.
+Diese Einstellungskombination sorgt in den meisten Fällen für hervorragende Ergebnisse.
 
 Wenn das Bild weiter optimiert werden muss, passen Sie die Parameter für die Scharfzeichnung (Unschärfemaske) schrittweise an, beginnend mit einem Radius von 0,2 oder 0,3. Erhöhen Sie dann den Wert schrittweise von 1,75 auf maximal 4 (entspricht 400 % in Photoshop). Prüfen Sie, ob das gewünschte Ergebnis erreicht wird.
 

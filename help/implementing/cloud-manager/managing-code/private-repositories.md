@@ -1,17 +1,17 @@
 ---
-title: Hinzufügen privater Repositorys in Cloud Manager
-description: Erfahren Sie, wie Sie Cloud Manager für die Verwendung mit Ihren eigenen privaten GitHub-Repositorys einrichten.
+title: Hinzufügen von privaten Repositorys in Cloud Manager
+description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigenen privaten GitHub-Repositorys einrichten.
 source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# Hinzufügen privater Repositorys in Cloud Manager {#private-repositories}
+# Hinzufügen von privaten Repositorys in Cloud Manager {#private-repositories}
 
-Wenn Sie Cloud Manager so konfigurieren, dass es mit Ihren eigenen privaten GitHub-Repositorys funktioniert, können Sie Ihren Code direkt in Ihrem GitHub-Repository über Cloud Manager validieren, sodass Sie Ihren Code nicht konsistent mit dem Adobe-Repository synchronisieren müssen.
+Indem Sie Cloud Manager für die Verwendung mit Ihren eigenen privaten GitHub-Repositorys konfigurieren, können Sie Ihren Code über Cloud Manager direkt in Ihrem GitHub-Repository validieren, sodass Sie ihn nicht ständig mit dem Adobe-Repository synchronisieren müssen.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ In der Spalte **Typ** können Sie ganz einfach die von Adobe bereitgestellten Re
 
 Wenn Sie zu einem späteren Zeitpunkt zum Repository zurückkehren müssen, um die Validierung abzuschließen, wählen Sie auf der Seite **Repositorys** die Schaltfläche mit den Auslassungspunkten in der Zeile mit dem soeben von Ihnen hinzugefügten GitHub-Repository und wählen Sie dann **Eigentümervalidierung** aus dem Dropdown-Menü.
 
-## Verwenden privater Repositorys mit Cloud Manager {#using}
+## Verwenden von privaten Repositorys mit Cloud Manager {#using}
 
 Nachdem das GitHub-Repository in Cloud Manager validiert wurde, ist die Integration abgeschlossen und Sie können das Repository mit Cloud Manager verwenden.
 
@@ -100,28 +100,28 @@ Wenn die Pull-Anfrage geschlossen oder zusammengeführt wird, wird die erstellte
 
 >[!TIP]
 >
->Siehe Dokument . [GitHub - Anmerkungen prüfen](github-annotations.md) für Details zu den Informationen, die über GitHub bereitgestellt werden, wenn Pull-Anfrageprüfungen ausgeführt werden.
+>Im Dokument [Anmerkungen zur GitHub-Prüfung](github-annotations.md) finden Sie Details zu den Informationen, die bei der Ausführung von Pull-Anfrageprüfungen über GitHub bereitgestellt werden.
 
 >[!TIP]
 >
->Sie können die automatisch erstellten Pipelines steuern, um jede Pull-Anforderung in ein privates Repository zu validieren. Lesen Sie das Dokument . [GitHub-Prüfkonfiguration für private Repositorys](github-check-config.md) für weitere Informationen.
+>Sie können die automatisch erstellten Pipelines so steuern, dass sie jede Pull-Anfrage an ein privates Repository validieren. Weitere Informationen finden Sie im Dokument [Konfiguration der GitHub-Prüfung für private Repositorys](github-check-config.md).
 
 ## Zuordnen von privaten Repositorys zu Pipelines {#pipelines}
 
-Validierte private Repositorys können mit [Vollstapel- und Frontend-Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Validierte private Repositorys können [Full-Stack- und Frontend-Pipelines zugeordnet werden.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
->Web-Ebene- und Konfigurations-Pipelines werden von privaten Repositorys nicht unterstützt.
+>Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt.
 
 ## Einschränkungen {#limitations}
 
-Bei der Verwendung privater Repositorys mit Cloud Manager gelten bestimmte Einschränkungen.
+Bei der Verwendung von privaten Repositorys mit Cloud Manager gelten bestimmte Einschränkungen.
 
-* Sie können die Überprüfung der Pull-Anforderung nicht mithilfe der GitHub-Prüfung aus Cloud Manager anhalten.
-   * Wenn das GitHub-Repository in Cloud Manager validiert wird, versucht Cloud Manager immer, die für dieses Repository erstellten Pull-Anforderungen zu validieren.
+* Sie können die Überprüfung der Pull-Anfrage nicht mithilfe der GitHub-Prüfung über Cloud Manager anhalten.
+   * Während der Validierung des GitHub-Repositorys versucht Cloud Manager immer, die für dieses Repository erstellten Pull-Anfragen zu validieren.
 * Wenn die Adobe GitHub-App aus Ihrer GitHub-Organisation entfernt wird, wird dadurch auch die Überprüfungsfunktion für Pull-Anfragen für alle Repositorys entfernt.
-* Web-Ebene- und Konfigurations-Pipelines werden von privaten Repositorys nicht unterstützt.
-* Bei Verwendung privater Repositorys in Produktions-Vollstapelpipelines wird kein Git-Tag erstellt und gesendet.
-* Pipelines, die private Repositorys und den On-Commit-Build-Trigger verwenden, werden nicht automatisch gestartet, wenn ein neuer Commit in die ausgewählte Verzweigung verschoben wird.
-* [Funktion zur Wiederverwendung von Artefakten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) gilt nicht für private Repositorys.
+* Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt.
+* Bei Verwendung privater Repositorys in Full-Stack-Produktions-Pipelines wird kein Git-Tag erstellt und gesendet.
+* Pipelines, die private Repositorys und den On-Commit-Build-Trigger verwenden, werden nicht automatisch gestartet, wenn ein neues Commit in die ausgewählte Verzweigung verschoben wird.
+* Die [Funktion zur Wiederverwendung von Artefakten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) gilt nicht für private Repositorys.

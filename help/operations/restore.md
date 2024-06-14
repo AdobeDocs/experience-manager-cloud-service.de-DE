@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus einer Sicherungskopie wiederherstellen können.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der Self-Service-Wiederherstellungsprozess von Cloud Manager kopiert Daten aus Adobe-Systemsicherungen und stellt sie in der Originalumgebung wieder her. Eine Wiederherstellung wird durchgeführt, um Daten, die verloren gegangen, beschädigt oder versehentlich gelöscht wurden, in ihren ursprünglichen Zustand zurückzuversetzen.
 
@@ -35,31 +35,31 @@ In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und Ihre 
 
 >[!WARNING]
 >
->* Diese Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt vorliegen.
->* Das Wiederherstellen einer Sicherung führt zum Verlust aktueller Daten zwischen dem Zeitpunkt der Sicherung und dem aktuellen Zeitpunkt. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt.
+>* Diese Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. 
+>* Das Wiederherstellen eines Backups führt zum Verlust der aktuellen Daten zwischen dem Zeitpunkt des Backups und dem aktuellen Zeitpunkt. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt.
 >* Bevor Sie eine Inhaltswiederherstellung starten, sollten Sie andere Optionen zur selektiven Inhaltswiederherstellung in Betracht ziehen.
 
-## Optionen zur Wiederherstellung selektiver Inhalte {#selective-options}
+## Optionen zur selektiven Inhaltswiederherstellung {#selective-options}
 
-Bevor Sie zur vollständigen Inhaltswiederherstellung zurückkehren, sollten Sie diese Optionen in Erwägung ziehen, um Ihre Inhalte leichter wiederherzustellen.
+Bevor Sie eine vollständige Inhaltswiederherstellung vornehmen, sollten Sie diese Optionen in Erwägung ziehen, um Ihre Inhalte leichter wiederherzustellen.
 
-* Wenn ein Paket für den gelöschten Pfad verfügbar ist, installieren Sie das Paket erneut mit der [Package Manager.](/help/implementing/developing/tools/package-manager.md)
-* Wenn der gelöschte Pfad eine Seite in Sites war, verwenden Sie die [Funktion &quot;Baum wiederherstellen&quot;.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* Wenn der gelöschte Pfad ein Asset-Ordner war und die Originaldateien verfügbar sind, laden Sie sie erneut über hoch. [die Konsole Assets .](/help/assets/add-assets.md)
-* Wenn es sich bei dem Inhalt zum Löschen um Assets handelt, sollten Sie Folgendes berücksichtigen: [Wiederherstellen früherer Versionen der Assets.](/help/assets/manage-digital-assets.md)
+* Wenn ein Paket für den gelöschten Pfad verfügbar ist, installieren Sie das Paket erneut mit dem [Paket-Manager](/help/implementing/developing/tools/package-manager.md).
+* Wenn der gelöschte Pfad eine Seite in Sites war, verwenden Sie die [Funktion „Baum wiederherstellen“](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Wenn der gelöschte Pfad ein Asset-Ordner war und die Originaldateien verfügbar sind, laden Sie sie erneut über [die Assets-Konsole](/help/assets/add-assets.md) hoch.
+* Wenn es sich bei dem gelöschten Inhalt um Assets handelt, sollten Sie das [Wiederherstellen früherer Versionen der Assets](/help/assets/manage-digital-assets.md) in Betracht ziehen.
 
 Wenn keine der oben genannten Optionen funktioniert und der Inhalt des gelöschten Pfads signifikant ist, führen Sie eine Inhaltswiederherstellung durch, wie in den folgenden Abschnitten beschrieben.
 
-## Benutzerrolle erstellen {#user-role}
+## Erstellen einer Benutzerrolle {#user-role}
 
-Standardmäßig ist kein Benutzer berechtigt, Inhaltswiederherstellungen in Entwicklungs-, Produktions- oder Staging-Umgebungen auszuführen. Gehen Sie wie folgt vor, um diese Berechtigung bestimmten Benutzern oder Gruppen zuzuweisen.
+Standardmäßig ist keine Benutzerin und kein Benutzer berechtigt, Inhaltswiederherstellungen in Entwicklungs-, Produktions- oder Staging-Umgebungen auszuführen. Gehen Sie wie folgt vor, um diese Berechtigung bestimmten Benutzenden oder Gruppen zuzuweisen.
 
 1. Erstellen Sie ein Produktprofil mit einem ausdrucksstarken Namen, der auf die Inhaltswiederherstellung verweist.
-1. Stellen Sie die **Programmzugriff** Berechtigung für das erforderliche Programm.
-1. Stellen Sie die **Inhaltswiederherstellung** -Berechtigung für die erforderliche Umgebung oder alle Umgebungen des Programms, je nach Anwendungsfall.
-1. Weisen Sie diesem Profil Benutzer zu.
+1. Stellen Sie die **Programmzugriff**-Berechtigung für das erforderliche Programm bereit.
+1. Stellen Sie die **Inhaltswiederherstellungs**-Berechtigung je nach Anwendungsfall für die erforderliche Umgebung oder alle Umgebungen des Programms bereit.
+1. Weisen Sie dem Profil Benutzende zu.
 
-Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md) Dokumentation.
+Weitere Informationen zum Verwalten von Berechtigungen finden Sie in der Dokumentation [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## Wiederherstellen von Inhalten {#restoring-content}
 
@@ -67,7 +67,7 @@ Bestimmen Sie zunächst den Zeitrahmen der Inhalte, die Sie wiederherstellen mö
 
 >[!NOTE]
 >
->Ein Benutzer muss [geeignete Berechtigungen](#user-role) , um einen Wiederherstellungsvorgang zu starten.
+>Benutzende müssen über [geeignete Berechtigungen](#user-role) verfügen, um einen Wiederherstellungsvorgang zu starten.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
