@@ -3,10 +3,10 @@ title: Bearbeiten von Videos
 description: Bearbeiten von Videos mit [!DNL Adobe Express] Unterstützte Optionen und aktualisierte Videos als Versionen speichern.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -83,7 +83,7 @@ Ihr Video ist als GIF-Format zum Download verfügbar. Sie können das bearbeitet
 
 * Nur Videos im MP4-Format werden zur Bearbeitung unterstützt.
 
-* Die maximal unterstützte Quelldateigröße beträgt 200 MB.
+* Die maximal unterstützte Quelldateigröße beträgt 1 GB.
 
 * Unterstützte Videos sind auf jeder Seite größer als 46 Pixel und kleiner als 3840 Pixel.
 
@@ -93,11 +93,11 @@ Ihr Video ist als GIF-Format zum Download verfügbar. Sie können das bearbeitet
 
 ### Nächste Schritte {#next-steps}
 
-* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
+* Stellen Sie mithilfe der [!UICONTROL Feedback] -Option in der Benutzeroberfläche der Ansicht &quot;Assets&quot;verfügbar.
 
-* Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation über die Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >
