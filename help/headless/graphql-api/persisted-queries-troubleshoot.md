@@ -3,7 +3,7 @@ title: Fehlerbehebung bei persistierten GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Probleme bei persistierten GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beheben können.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 61%
@@ -20,7 +20,7 @@ Um Ihnen bei der Fehlerbehebung und Lösung solcher Probleme zu helfen, wird auf
 
 Eine von GraphQL beibehaltene Abfrage kann fehlschlagen, wenn sie auf veralteten GraphQL-Typen basiert. Dies ist häufig auf eine Änderung der zugrunde liegenden Inhaltsfragmentmodelle zurückzuführen.
 
-Solche Fehler können aus verschiedenen Gründen auftreten. Wenn beispielsweise der Autor eines Inhaltsfragmentmodells (die Liste ist nicht vollständig):
+Solche Fehler können aus verschiedenen Gründen auftreten. Beispiele sind (die Liste ist nicht vollständig), wenn der Autor eines Inhaltsfragmentmodells:
 
 * ein Feld entfernt oder umbenennt
 * aktualisiert die **Modelltyp** definiert die für den Fragmentverweis zulässigen Modelle
