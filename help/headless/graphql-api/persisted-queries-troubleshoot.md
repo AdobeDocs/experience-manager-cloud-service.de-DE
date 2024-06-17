@@ -3,10 +3,10 @@ title: Fehlerbehebung bei persistierten GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Probleme bei persistierten GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beheben können.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
-workflow-type: ht
-source-wordcount: '351'
-ht-degree: 100%
+source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 61%
 
 ---
 
@@ -14,23 +14,22 @@ ht-degree: 100%
 
 Das [Aktionszentrum](/help/operations/actions-center.md) enthält den Warnhinweis **Fehler bei persistierter GraphQL-Abfrage**. Dies bedeutet, dass Sie immer dann informiert werden, wenn eine der persistierten GraphQL-Abfragen einen Fehler ausgibt.
 
-Um Ihnen bei der Fehlerbehebung und Lösung solcher Probleme zu helfen, erläutern wir die *häufigsten* Ursachen von Fehlern und die Schritte zu deren Behebung.
+Um Ihnen bei der Fehlerbehebung und Lösung solcher Probleme zu helfen, wird auf dieser Seite der Abschnitt *am häufigsten* Ursachen von Fehlern und Schritte zu deren Behebung.
 
 ## Änderungen am Inhaltsfragmentmodell {#changes-to-content-fragment-model}
 
-Eine persistierte GraphQL-Abfrage kann fehlschlagen, wenn sie auf veralteten GraphQL-Typen basiert. Dies ist häufig auf eine Änderung der zugrunde liegenden Inhaltsfragmentmodelle zurückzuführen.
+Eine von GraphQL beibehaltene Abfrage kann fehlschlagen, wenn sie auf veralteten GraphQL-Typen basiert. Dies ist häufig auf eine Änderung der zugrunde liegenden Inhaltsfragmentmodelle zurückzuführen.
 
-Dies kann aus verschiedenen Gründen geschehen. Zum Beispiel, wenn ein Inhaltsmodellautor oder eine -autorin:
+Solche Fehler können aus verschiedenen Gründen auftreten. Wenn beispielsweise der Autor eines Inhaltsfragmentmodells (die Liste ist nicht vollständig):
 
 * ein Feld entfernt oder umbenennt
-* die für einen Fragmentverweis definierten zulässigen Modelle aktualisiert
-* die Veröffentlichung eines Modells aufhebt, auf das andere Modelle verweisen
-* sonstige Aktionen und Gründe
+* aktualisiert die **Modelltyp** definiert die für den Fragmentverweis zulässigen Modelle
+* Veröffentlichung eines Modells rückgängig machen, auf das andere Modelle verweisen
 
-Gehen Sie zur Fehlerbehebung wie folgt vor:
+Um solche Fehler zu beheben, sollten Sie entweder:
 
-* Die persistierte Abfrage, die fehlschlägt, sollte aktualisiert werden, um die Änderung am Inhaltsfragmentmodell zu berücksichtigen,
-* oder die Änderung des Modells, durch die das Problem verursacht wurde, sollte zurückgesetzt werden
+* Aktualisieren Sie die beibehaltene Abfrage, die die am Inhaltsfragmentmodell vorgenommenen Änderungen nicht berücksichtigt
+* die Änderung des Modells zurücksetzen, durch das das Problem verursacht wurde
 
 ## GraphQL-Endpunkt nicht konfiguriert {#graphql-endpoint-not-configured}
 
@@ -48,7 +47,7 @@ Das Muster sollte `/graphql/execute.json/thePath` sein.
 
 In diesem Fall gibt die Abfrage den Fehler-Code `405` zurück.
 
-Dies gilt nicht spezifisch für GraphQL. Siehe KB-Artikel [405-Fehler Nicht zulässig](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html?lang=de).
+Ein solcher Fehler ist nicht speziell für GraphQL. Siehe KB-Artikel [405-Fehler Nicht zulässig](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Von Dispatcher blockiert {#blocked-dispatcher}
 
