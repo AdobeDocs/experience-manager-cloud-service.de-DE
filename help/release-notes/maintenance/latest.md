@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 80%
 
 ---
 
@@ -49,6 +49,11 @@ Weitere Informationen zu den neuen und verbesserten Funktionen und zu den Proble
 ### Bekannte Probleme {#known-issues-16544}
 
 * GRANITE-52573: Anfragen mit einem doppelten Schrägstrich `//` werden mit Status-Code 400 abgelehnt. Dieses Verhalten wird in einer nachfolgenden Wartungsversion wieder zurückgesetzt.
+
+>[!NOTE]
+> AEM Engineering hat eine Regression für die Funktionen von Launches identifiziert, die sich auf aktuelle AEM ab 16461 auswirkt. Aufgrund dieser Regression werden neue Launches (die erstellt wurden, nachdem neue Versionen angewendet wurden), die nicht tiefe Seiten enthalten, aufgrund fehlender Konfigurationen nicht ordnungsgemäß weitergeleitet.
+> Falls Ihre Umgebungen betroffen sind, steht dem Support ein Shell-Skript zur Verfügung, mit dem fehlende Konfigurationen identifiziert und aktualisiert werden können (interne Referenz SITES-22457).
+> Es wird eine längerfristige Korrektur bereitgestellt, die sicherstellt, dass neue Launches mit allen richtigen Konfigurationen erstellt werden. Bis dahin ist auch eine interne Patch-Version auf Anfrage verfügbar.
 
 ### Änderungshinweis {#change-notice-16544}
 
