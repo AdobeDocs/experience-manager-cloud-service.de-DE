@@ -2,8 +2,11 @@
 title: Erneutes Verarbeiten digitaler Assets
 description: Erfahren Sie mehr über verschiedene Methoden zur Neuverarbeitung digitaler Assets
 contentOwner: KK
-source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
-workflow-type: ht
+exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
+feature: Asset Processing
+role: User, Leader, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 100%
 
@@ -91,4 +94,3 @@ Sie können Assets in einem Ordner neu verarbeiten, der bereits über ein späte
 ### Workflows
 
 Lesen Sie mehr zu [Verarbeitungsprofilen und Nachbearbeitungs-Workflows](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=de).
-

@@ -3,8 +3,9 @@ title: „Benutzeroberfläche von [!DNL Assets view]“
 description: Grundlegendes zur Benutzeroberfläche von und Navigation in [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
 

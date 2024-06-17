@@ -2,11 +2,11 @@
 title: Überprüfen von Assets in Ordnern und Sammlungen
 description: Richten Sie Prüfungs-Workflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 contentOwner: AG
-feature: Collections,Collaboration
+feature: Collections, Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 

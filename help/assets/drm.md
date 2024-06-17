@@ -3,10 +3,10 @@ title: Digital Rights Management in [!DNL Assets]
 description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in [!DNL Experience Manager] as a [!DNL Cloud Service] verwalten.
 contentOwner: AG
 feature: Asset Management,DRM
-role: User,Admin
+role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 100%
 

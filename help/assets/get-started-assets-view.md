@@ -3,8 +3,9 @@ title: Erste Schritte mit  [!DNL Assets View]
 description: Wie Sie auf  [!DNL Assets View] zugreifen können, wie Sie sich anmelden, wie Sie Anwendungsfälle unterstützen und bekannte Probleme.
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
 

@@ -2,11 +2,11 @@
 title: Assets-HTTP-API
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets HTTP API,APIs
-role: Developer,Architect,Admin
+feature: Assets HTTP API
+role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 100%
 

@@ -1,12 +1,13 @@
 ---
-title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL (Assets – Inhaltsfragmente)
+title: Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL (Assets - Inhaltsfragmente)
 description: Lernen Sie die grundlegenden Konzepte zur Realisierung eines AEM Headless CMS unter Verwendung von Inhaltsfragmenten mit GraphQL für die Bereitstellung von Headless-Inhalten kennen.
-feature: Content Fragments, GraphQL API
+feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '730'
-ht-degree: 100%
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +50,7 @@ GraphQL ist:
 
   Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
 
-Mit der [AEM-GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Anwendungen verwendet werden.
+Mit der [AEM GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 
 ## AEM-GraphQL-API {#aem-graphql-api}
 

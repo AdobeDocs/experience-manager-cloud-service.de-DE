@@ -2,8 +2,10 @@
 title: Verwalten von Benachrichtigungen
 description: Überwachen Sie die Vorgänge, die mit den im Repository verfügbaren Assets oder Ordnern durchgeführt werden, mithilfe der Assets-Ansichtsbenachrichtigungen.
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+feature: Assets Essentials
+role: User, Leader
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 100%
 

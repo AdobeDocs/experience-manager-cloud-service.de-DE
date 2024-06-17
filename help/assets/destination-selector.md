@@ -2,11 +2,12 @@
 title: Zielauswahl für AEM as a Cloud Service
 description: Verwenden Sie die AEM-Zielauswahl, um Assets anzuzeigen und auszuwählen, die Sie als Kopie des ursprünglichen Assets verwenden können.
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
-workflow-type: ht
-source-wordcount: '1904'
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
+source-wordcount: '1887'
 ht-degree: 100%
 
 ---

@@ -2,10 +2,10 @@
 title: Konfigurieren von [!DNL Workfront for Experience Manager enhanced connector]
 description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
-workflow-type: ht
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Die Metadaten-Zuordnung zwischen Workfront-Projekten und AEM-Ordnern wird in AEM
 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
-1. Fügen Sie `jcr:read`-Berechtigungen zu `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für die Gruppe `wf-workfront-users` hinzu.
+1. Fügen Sie `jcr:read`-Berechtigungen zu `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für die Gruppe `wf-workfront-users` hinzu.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
 1. Wählen Sie das Formular für das Ordner-Metadatenschema aus, das Sie bearbeiten möchten, und klicken Sie auf „Bearbeiten“.
 1. Wählen Sie das Formularfeld des Ordner-Metadatenschemas aus, das Sie bearbeiten möchten, und wählen Sie im rechten Bereich die Registerkarte „Einstellungen“ aus.

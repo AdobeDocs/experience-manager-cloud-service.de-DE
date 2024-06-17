@@ -1,11 +1,12 @@
 ---
 title: Verwalten digitaler Assets
-description: Verschieben, Löschen, Kopieren, Umbenennen, Aktualisieren und Versionieren von Assets in  [!DNL Assets view].
-role: User,Leader
+description: Verschieben, Löschen, Kopieren, Umbenennen, Aktualisieren und Versionieren von Assets in [!DNL Assets view].
+role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
-workflow-type: ht
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 100%
 
@@ -29,7 +30,7 @@ Verwenden Sie [!DNL Assets view], um die folgenden Asset-Management-Aufgaben aus
 
 * ![download icon](assets/do-not-localize/download-icon.png) Lädt das ausgewählte Asset in Ihr lokales Dateisystem herunter.
 
-* ![Symbol „Zu Sammlung hinzufügen“](assets/do-not-localize/add-collection.svg) Fügt das ausgewählte Asset zu einer Sammlung hinzu
+* ![Symbol „Zu Sammlung hinzufügen“](assets/do-not-localize/add-collection.svg) Fügt das ausgewählte Asset zu einer Sammlung hinzu.
 
 * ![Symbol „Assets anheften“](assets/do-not-localize/pin-quick-access.svg) Heftet ein Asset an, um bei späterem Bedarf schneller darauf zugreifen zu können. Alle angehefteten Elemente werden im Dashboard „Mein Arbeitsbereich“ im Abschnitt **Schnellzugriff** angezeigt.
 
@@ -125,7 +126,7 @@ Sie können die folgenden Status für Assets festlegen:
 
 ### Festlegen eines Asset-Status {#set-asset-status}
 
-Festlegen eines Asset-Status
+Um einen Asstet-Status festzulegen:
 
 1. Wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Details]**.
 
@@ -166,11 +167,11 @@ Um das Metadatenfeld „Ablaufdatum“ zum Formular hinzuzufügen, ziehen Sie di
 
 ## Nächste Schritte {#next-steps}
 
-* [Sehen Sie sich ein Video zum Verwalten von Assets in der Assets-Ansicht an](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=de)
+* [Sehen Sie sich ein Video zum Verwalten von Assets in der Assets-Ansicht an](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets-essentials/basics/managing)
 
 * Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 

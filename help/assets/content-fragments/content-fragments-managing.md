@@ -2,8 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, entweder als Grundlage für Ihre Headless-Inhalte oder für die Erstellung von Seiten.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+feature: Content Fragments
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 100%
 
@@ -317,7 +319,7 @@ Zum Beispiel:
 
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
-Die Aktion **Mit aktueller Version vergleichen** ist in der [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
+Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
 
 Dadurch wird Folgendes geöffnet:
 

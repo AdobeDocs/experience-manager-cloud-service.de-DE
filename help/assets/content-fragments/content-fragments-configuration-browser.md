@@ -2,10 +2,12 @@
 title: Inhaltsfragmente – Konfigurations-Browser (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Content Fragments
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +31,7 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 
 Um die Funktion für Inhaltsfragmente zu aktivieren, müssen Sie die folgenden Schritte ausführen:
 
-* Aktivieren Sie die Verwendung der Inhaltsfragmentfunktionen im Konfigurations-Browser.
+* Aktivieren Sie die Verwendung der Inhaltsfragmentfunktionen im Konfigurationsbrowser.
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an.
 
 ### Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser {#enable-content-fragment-functionality-in-configuration-browser}
@@ -38,7 +40,7 @@ Um bestimmte [Inhaltsfragment-Funktionen](#creating-a-content-fragment-model) zu
 
 >[!NOTE]
 >
->Siehe [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Siehe [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 >[!NOTE]
 >

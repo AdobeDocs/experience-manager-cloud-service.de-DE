@@ -2,8 +2,10 @@
 title: Massenimport von Assets mithilfe der Assets-Ansicht
 description: Erfahren Sie, wie Sie Assets mit der neuen Assets-Benutzeroberfläche (Assets-Ansicht) per Massenimport importieren. Admins können damit eine große Anzahl von Assets aus einer Datenquelle in AEM Assets importieren.
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
-source-git-commit: cd4435247505e5067d09631b29a29e26d60eb09a
-workflow-type: ht
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 100%
 

@@ -2,8 +2,10 @@
 title: Zugehörige Inhalte (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie die Funktion der zugehörigen Inhalte für AEM-Inhaltsfragmente die Verbindung herstellt, damit Assets optional mit dem Fragment verwendet werden können.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: ht
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
 
