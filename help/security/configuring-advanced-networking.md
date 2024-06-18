@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder ei
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '5332'
-ht-degree: 100%
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
+workflow-type: tm+mt
+source-wordcount: '5744'
+ht-degree: 92%
 
 ---
 
@@ -238,7 +238,7 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Po
 
 >[!INFO]
 >
->Die Splunk-Weiterleitungsfunktion ist über eine dedizierte Ausgangs-IP-Adresse nicht möglich.
+>Wenn eine dedizierte Ausgangs-IP konfiguriert ist, verwendet die Splunk-Weiterleitung weiterhin die dynamischen Ausgangs-IPs. Die Splunk-Weiterleitung kann nicht für die Verwendung einer dedizierten Ausgangs-IP konfiguriert werden.
 
 ### Konfiguration der Benutzeroberfläche {#configuring-dedicated-egress-provision-ui}
 
@@ -806,3 +806,49 @@ Verbindungs-Pools sind eine Technik zur Erstellung und Aufrechterhaltung eines R
 Die Implementierung einer geeigneten Strategie zur Bündelung von Verbindungen ist eine proaktive Maßnahme, um ein gängiges Problem bei der Systemkonfiguration zu korrigieren, die zu einer suboptimalen Leistung führen. Durch die ordnungsgemäße Einrichtung eines Verbindungs-Pools kann Adobe Experience Manager (AEM) die Effizienz externer Aufrufe verbessern. Dies reduziert nicht nur den Ressourcenverbrauch, sondern verkleinert auch das Risiko von Dienstunterbrechungen sowie die Wahrscheinlichkeit fehlschlagender Anfragen bei der Kommunikation mit Upstream-Servern.
 
 Somit empfiehlt Adobe, Ihre aktuelle AEM-Konfiguration zu überprüfen und die gezielte Einrichtung von Verbindungs-Pools zusammen mit erweiterten Netzwerkeinstellungen zu erwägen. Durch die Verwaltung der Anzahl paralleler Verbindungen und die Reduzierung des Auftretens veralteter Verbindungen führen diese Maßnahmen zu einer Verringerung des Risikos, dass Proxy-Server ihre Verbindungsgrenzen erreichen. Diese strategische Implementierung soll somit die Wahrscheinlichkeit verringern, dass Anfragen externe Endpunkte nicht erreichen.
+
+#### Häufig gestellte Fragen zu Verbindungsbeschränkungen
+
+Bei der Verwendung von Advanced Networking ist die Anzahl der Verbindungen begrenzt, um die Stabilität in allen Umgebungen zu gewährleisten und zu verhindern, dass niedrigere Umgebungen die verfügbaren Verbindungen nicht ausschöpfen.
+
+Die Verbindungen sind auf 1000 pro AEM-Instanz beschränkt und Warnhinweise werden an Kunden gesendet, wenn die Zahl 750 erreicht.
+
+##### Wird die Verbindungsgrenze nur auf ausgehenden Traffic aus nicht standardmäßigen Ports oder auf den gesamten ausgehenden Traffic angewendet?
+
+Die Beschränkung gilt nur für Verbindungen, die Advanced Networking nutzen (Ausstieg auf nicht standardmäßigen Ports, Verwendung dedizierter Egress-IP oder VPN).
+
+##### Wir sehen keinen signifikanten Unterschied in der Anzahl der ausgehenden Verbindungen. Warum erhalten wir die Benachrichtigung jetzt?
+
+Wenn der Kunde dynamisch Verbindungen erstellt (z. B. eine oder mehrere Verbindungen für jede Anfrage), kann ein Anstieg des Traffics zu einer Spitze der Verbindungen führen.
+
+##### Ist es möglich, dass wir in der Vergangenheit eine ähnliche Situation erlebt haben, ohne darüber informiert zu werden?
+
+Warnhinweise werden nur gesendet, wenn die weiche Grenze erreicht ist.
+
+##### Was passiert, wenn die Höchstgrenze erreicht ist?
+
+Wenn die Grenze erreicht ist, werden neue Ausgangsverbindungen von AEM über Advanced Networking (Ausstieg auf nicht standardmäßigen Ports, mittels dedizierter Egress-IP oder VPN) entfernt, um sich vor einem DoS-Angriff zu schützen.
+
+##### Kann die Grenze angehoben werden?
+
+Nein, eine große Anzahl von Verbindungen kann erhebliche Leistungseinbußen verursachen und DoS über Pods und Umgebungen hinweg bereitstellen.
+
+##### Werden die Verbindungen nach einem bestimmten Zeitraum automatisch vom AEM geschlossen?
+
+Ja, Verbindungen werden auf JVM-Ebene und an verschiedenen Punkten in der Netzwerkinfrastruktur geschlossen. Dies wird jedoch für jeden Produktionsdienst zu spät sein. Verbindungen sollten explizit geschlossen werden, wenn sie nicht mehr benötigt werden, oder bei Verwendung von Verbindungspools zum Pool zurückgegeben werden. Andernfalls ist der Ressourcenverbrauch zu hoch und kann zu einer Erschöpfung der Ressourcen führen.
+
+##### Wenn die maximale Verbindungsgrenze erreicht ist, wirkt sich dies auf irgendwelche Lizenzen aus und verursacht zusätzliche Kosten?
+
+Nein, mit diesem Limit sind keine Lizenz oder Kosten verbunden. Es handelt sich um eine technische Begrenzung.
+
+##### Wie nahe kommen wir der Grenze? Wie hoch ist die Obergrenze?
+
+Der Warnhinweis wird ausgelöst, wenn Verbindungen größer als 750 sind. Die maximale Grenze beträgt 1000 Verbindungen pro AEM Instanz.
+
+##### Gilt diese Beschränkung für VPNs?
+
+Ja, das Limit gilt für Verbindungen, die Advanced Networking verwenden, einschließlich VPNs.
+
+##### Wenn wir eine dedizierte Ausgangs-IP verwenden, gilt diese Beschränkung weiterhin?
+
+Ja, die Beschränkung gilt weiterhin bei Verwendung einer dedizierten Ausgangs-IP.
