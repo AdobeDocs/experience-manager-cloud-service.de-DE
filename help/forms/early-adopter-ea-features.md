@@ -2,11 +2,12 @@
 title: Aktuelle Funktionen früherer Entwickler von [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 description: Aktuelle Funktionen früherer Entwickler von [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
-Role: developer, user
-source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
+Role: developer, user, author
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
+source-git-commit: f1ab365377af7a327dddcb9228b1a2f8610d49de
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +21,7 @@ Das AEM Forms Early Adopter Program bietet Ihnen die einmalige Möglichkeit, vor
 
 ## Wie kann ich dem Programm Early Adopter beitreten?
 
-Wenn Sie Interesse haben, an unserem Early Adopter-Programm für eine frühe Adopter-Innovation teilzunehmen, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf jede spezifische Innovation anfordern.
+Wenn Sie Interesse haben, an unserem Early Adopter-Programm für eine frühe Adopter-Innovation teilzunehmen, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
 
 ## Frühe Innovationen für Adopter
 
@@ -123,15 +124,15 @@ Bereit zum Start? [Adaptive Forms RTL-Dokumentation](/help/forms/supporting-new-
 
 ### Verbesserte Bot-Schutzmethoden
 
-AEM Forms hat seine Sicherheitsfunktionen verbessert, indem es zwei gängige CAPTCHA-Lösungen unterstützt: Cloudflare Turnstile und hCaptcha. Dies ergänzt die bereits verfügbare Google reCAPTCHA, die Benutzern mehr Auswahl und Flexibilität beim Schutz ihrer Formulare vor Bots und Spam-Einsendungen bietet.
+In AEM Forms wurden die Sicherheitsfunktionen verbessert, indem jetzt zwei gängige CAPTCHA-Lösungen unterstützt werden: Cloudflare Turnstile und hCaptcha. Dies ergänzt das bereits verfügbare Google reCAPTCHA und bietet Benutzenden mehr Auswahl und Flexibilität beim Schutz ihrer Formulare vor Bots und Spam-Übermittlungen.
 
-* **Cloudflare Turnstile**: Dieses reibungslose CAPTCHA überprüft Benutzer anhand einer einfachen Herausforderung, die keine explizite Interaktion erfordert. Es lässt sich nahtlos in Ihre Formulare integrieren und verbessert so das Benutzererlebnis.
-* **Captcha**: Diese datenschutzorientierte CAPTCHA bietet eine benutzerfreundliche Alternative mit dem Schwerpunkt Datenschutz. Ziel ist es, ein Gleichgewicht zwischen Sicherheit und Anwendererlebnis herzustellen.
-* **Google reCAPTCHA**: AEM Forms unterstützt weiterhin sowohl reCAPTCHA v2 als auch reCAPTCHA Enterprise und bietet eine zuverlässige und bewährte Lösung.
+* **Cloudflare Turnstile**: Dieses reibungslose CAPTCHA überprüft Benutzende anhand einer einfachen Aufgabe, die keine explizite Interaktion erfordert. Es lässt sich nahtlos in Ihre Formulare integrieren und verbessert so das Benutzererlebnis.
+* **hCaptcha**: Dieses datenschutzorientierte CAPTCHA bietet eine benutzerfreundliche Alternative mit dem Schwerpunkt auf Datenschutz. Ziel ist es, ein Gleichgewicht zwischen Sicherheit und Benutzererlebnis herzustellen.
+* **Google reCAPTCHA**: AEM Forms unterstützt weiterhin sowohl reCAPTCHA v2 als auch reCAPTCHA Enterprise und bietet damit eine zuverlässige und bewährte Lösung.
 
 Durch die Bereitstellung mehrerer CAPTCHA-Optionen haben Sie in AEM Forms die Möglichkeit, die Lösung auszuwählen, die Ihren spezifischen Anforderungen am besten entspricht.
 
-Sind Sie bereit, eine dieser CAPTCHA-Lösungen in Ihre adaptive Forms zu integrieren? In unserer Dokumentation finden Sie detaillierte Anweisungen zu jedem Thema: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), und [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Sind Sie bereit, eine dieser CAPTCHA-Lösungen in Ihre adaptiven Formulare zu integrieren? In unserer Dokumentation finden Sie detaillierte Anweisungen zu jedem Thema: [Cloudflare Turnstile](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) und [Google reCAPTCHA](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### Doc Assurance-APIs
 
@@ -155,11 +156,11 @@ Insgesamt [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-fo
 
 ### Forms Service-APIs
 
-Der Forms-Dienst generiert interaktive PDF forms für die Datenerfassung. Sie kann auch zum Importieren/Exportieren von Daten in/aus einem vorhandenen interaktiven PDF-Formular und zum Überprüfen gesendeter Daten verwendet werden. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
+Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Sie kann auch zum Importieren/Exportieren von Daten in/aus einem vorhandenen interaktiven PDF-Formular und zum Überprüfen gesendeter Daten verwendet werden. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
 
-* **Rendern von Forms**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und optional mit XML-Daten erstellt wurde. Dadurch wird im Wesentlichen ein ausfüllbares PDF-Formular erzeugt, das optional mit Daten vorausgefüllt ist.
+* **Rendern von Formularen**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und (optional) mit XML-Daten erstellt wurde. Dadurch wird im Wesentlichen ein ausfüllbares PDF-Formular erzeugt, das optional mit Daten vorausgefüllt ist.
 
-* **Datenextraktion und -import**: Importieren Sie Daten in ein vorhandenes PDF-Formular und extrahieren Sie Daten aus einem ausgefüllten PDF-Formular. Es werden sowohl XDP- als auch XML-Datenformate unterstützt, und der Import in Nicht-XFA-PDF forms (auch AcroForms genannt) unterstützt zusätzlich FDF- und XFDF-Daten.
+* **Datenextraktion und -import**: Importieren Sie Daten in ein vorhandenes PDF-Formular und extrahieren Sie Daten aus einem ausgefüllten PDF-Formular. Es wird sowohl das XDP- als auch das XML-Datenformat unterstützt, und der Import in PDF-Formulare, die nicht im XFA-Format sind (auch AcroForms genannt), unterstützt zusätzlich FDF- und XFDF-Daten.
 
 * **Datenvalidierung**: Validieren Sie die gesendeten Daten im XDP- oder XML-Format anhand einer mit AEM Forms Designer erstellten Vorlage.
 
