@@ -10,10 +10,11 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -68,7 +69,7 @@ Nach der Synchronisierung Ihrer Assets können Sie durch die selektive Veröffen
 
 Mithilfe dieser beiden Best Practices können Sie eine bessere Kontrolle, Verwaltung und Produktivität Ihrer Rich-Media-Inhalte erzielen.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Konfigurieren der selektiven Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Konfigurieren der selektiven Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Vorbereiten von Assets für die Bereitstellung
@@ -81,16 +82,16 @@ Verwenden Sie für eine effiziente Asset-Organisation, die Workflows optimiert, 
 
 * **Organisieren von Assets in Ordnern:**
 Die effektive Organisation von Assets besteht darin, sie in Ordner zu kategorisieren, ähnlich wie bei der Dateiorganisation auf einem Computer. Ordnungsgemäße Benennung, Strukturierung von Unterordnern und Dateiverwaltung innerhalb dieser Ordner sind für eine effiziente Asset-Verarbeitung von entscheidender Bedeutung. Durch die Implementierung systematischer Benennungskonventionen und Metadatenpraktiken wird die Nützlichkeit Ihres digitalen Asset-Repositorys maximiert.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets in Ordnern](/help/assets/organize-assets.md#organize-using-folders).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets in Ordnern](/help/assets/organize-assets.md#organize-using-folders).
 * **Organisieren Sie Assets mithilfe von Tags:**
 Das Tagging von Assets verbessert die Suchbarkeit, Sammlungserstellung und Suchranking. Adobe Senseis KI verwendet einen selbstlernenden Algorithmus für präzises Tagging, der den schnellen Abruf von Assets ermöglicht. Adobe Sensei erkennt und weist relevante Tags, einschließlich benutzerdefinierter Tags, Assets zu, vereinfacht die Asset-Verwaltung durch automatisches, beschreibendes Tagging.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets mit Tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets mit Tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organisieren von Assets als Sammlungen:**
 Dynamic Media und Experience Manager Assets ermöglichen die effiziente Erstellung, Bearbeitung und Freigabe von Asset-Sammlungen für Benutzer. Sie können verschiedene Sammlungstypen einrichten, einschließlich statische Listen und dynamische, suchbasierte Kompilierungen. Diese Sammlungstypen können an verschiedenen Standorten mit anpassbaren Zugriffs- und Bearbeitungsrechten freigegeben werden.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets als Sammlungen](/help/assets/manage-collections.md).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets als Sammlungen](/help/assets/manage-collections.md).
 * **Organisieren von Assets mit Profilen:**
 Ein Verarbeitungsprofil automatisiert die Asset-Verarbeitung in angegebenen Ordnern und optimiert so die Organisation. Durch die Standardisierung von Metadaten, Dateinamen und Ordnerstrukturen können diese Profile konsistent und präzise angewendet werden, wenn sich Ihre digitale Asset-Sammlung erweitert.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets mit Profilen](/help/assets/organize-assets.md#organize-to-use-profiles).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets mit Profilen](/help/assets/organize-assets.md#organize-to-use-profiles).
 
 
 
@@ -100,11 +101,11 @@ Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets mit Profi
 
 Die Verbesserung der Bildqualität erfordert eine sorgfältige Berücksichtigung verschiedener Faktoren. Dies kann ein zeitintensiver Prozess sein. Es gibt jedoch einige bewährte Vorgehensweisen, die Ihnen dabei helfen können, wünschenswerte Ergebnisse zu erzielen. Zu diesen Best Practices gehören u. a. das Abrufen einer optimalen Bildgröße, das Scharfzeichnen von Bildern und die besten zu verwendenden Bildformate.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practices zur Optimierung der Bildqualität](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practices zur Optimierung der Bildqualität](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
 Da die Wahrnehmung der Bildqualität von Mensch zu Mensch variiert, ist manchmal ein systematischer Experimentationsansatz unerlässlich, um erwünschte Ergebnisse zu erzielen. Adobe Experience Manager unterstützt diesen Prozess mit mehr als 100 Dynamic Media-Befehlen zur Bildverbesserung.
 
-Möchten Sie mehr erfahren? Watch [Dynamic Media-Schnappschuss](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 Minuten, 17 Sekunden).
+Möchten Sie mehr erfahren?  Watch [Dynamic Media-Schnappschuss](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 Minuten, 17 Sekunden).
 
 Um die Auswirkungen dieser verschiedenen Befehle auf die Bildqualität zu bewerten, können Sie ein Bild in Dynamic Media hochladen, die Benutzeroberfläche des Tools unter der angegebenen URL verwenden und die Befehle anwenden, die Sie ausprobieren möchten.
 
@@ -126,7 +127,7 @@ Smartes Zuschneiden ist ein Feature-Tool in Dynamic Media, das Adobe Sensei, Ado
 
 Es empfiehlt sich, ein Bildprofil mit smartem Zuschneiden zu erstellen. Im Profil können Sie verschiedene Bildschirmgrößen definieren und Adobe Sensei den Rest erledigen lassen. So stellen Sie sicher, dass Ihre Bilder und Videos immer für das Gerät des Viewers optimiert sind.
 
-Möchten Sie mehr erfahren? Watch [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden) und [Verwenden von smartem Zuschneiden für Dynamic Media für Videos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 Minuten, 22 Sekunden).
+Möchten Sie mehr erfahren?  Watch [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden) und [Verwenden von smartem Zuschneiden für Dynamic Media für Videos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 Minuten, 22 Sekunden).
 
 ### Verbessern der SEO-Ranglisten
 
@@ -142,21 +143,20 @@ Verwenden Sie beschreibende Dateinamen, die den Bildinhalt widerspiegeln. Zum Be
   Dies hilft Suchmaschinen dabei, den Bildkontext zu verstehen, und verbessert SEO. Google bevorzugt Bindestriche gegenüber Unterstrichen oder Leerzeichen in einem Dateinamen. Vermeiden Sie auch die Verkettung von Wörtern in einem Dateinamen.
 * **Benutzerdefinierte Domäne:**
 Implementieren Sie eine benutzerdefinierte Domäne, die Ihren Unternehmens- oder Markennamen enthält, um die Markenerkennung und das Vertrauen zu stärken. Zum Beispiel:
-
    * Verwenden Sie `http://images.mycompany.com/is/image/companyname/`
    * *vermeiden* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO-freundliche Ordnerstruktur:**
 Organisieren Sie Ihre Bilder in einer Ordnerstruktur, die Ihren Firmennamen oder Ihre Marke enthält, um eine bessere Indizierung zu erzielen, z. B. `http://images.mycompany.com/is/image/companyname/`.
 * **Dynamic Media-Regelsätze:**
 Erfahren Sie, wie Sie URLs bedingt basierend auf verschiedenen Faktoren transformieren können, um SEO und Benutzererlebnis zu verbessern.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Verwenden Sie Regelsätze zum Konvertieren von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Verwenden Sie Regelsätze zum Konvertieren von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Intelligente Bildbearbeitung und smartes Zuschneiden:**
 Verwenden Sie die Funktionen für intelligente Bildbearbeitung und smartes Zuschneiden in Dynamic Media, um optimierte und responsive Bilder bereitzustellen. Dies verbessert nicht nur die Seitenladezeiten, sondern trägt auch positiv zum SEO-Ranking bei.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)oder beobachten [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)oder beobachten [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden).
 
 Beachten Sie, dass diese Best Practices gut mit den Best Practices für Google Image SEO übereinstimmen. Solche Verfahren unterstreichen, wie wichtig es ist, Suchmaschinen durch ordnungsgemäße Benennungskonventionen, strukturierte Daten und eine optimierte Bildbereitstellung Kontext und Klarheit zu bieten.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practices für die URL-Struktur von Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) und [Best Practices für Google Image SEO](https://developers.google.com/search/docs/appearance/google-images)
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practices für die URL-Struktur von Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) und [Best Practices für Google Image SEO](https://developers.google.com/search/docs/appearance/google-images)
 
 
 ### Dynamische Verbesserung von Bildern und Erstellung visueller Effekte mithilfe von Befehlen
@@ -268,7 +268,7 @@ Verwenden Sie die bereitgestellte URL, um direkt mit dem Video zu verknüpfen. V
    * **Betten Sie das Video ein:**
 Kopieren Sie den bereitgestellten Einbettungscode und fügen Sie ihn in die HTML Ihrer Web-Seite ein, auf der das Video angezeigt werden soll. Dadurch kann das Video direkt auf Ihrer Site wiedergegeben werden.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Videos für optimale Qualität und Interaktion konfigurieren
 
@@ -279,15 +279,15 @@ Um die bestmögliche Qualität und Interaktion Ihrer Videos sicherzustellen, sol
 * **Verwenden Sie den integrierten HTML5-Video-Viewer:**
 Die Dynamic Media HTML5-Video-Viewer-Vorgaben sind robuste Video-Player. Verwenden Sie diese, um allgemeine Probleme im Zusammenhang mit der HTML5-Videowiedergabe und Mobilgeräten zu vermeiden.
 Diese Vorgaben decken Herausforderungen wie die Bereitstellung von Streaming mit adaptiven Bitraten und die eingeschränkte Reichweite des Desktop-Browsers ab.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practice: Verwenden des HTML 5-Video-Viewers](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practice: Verwenden des HTML 5-Video-Viewers](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
 * **Dynamic Media-Videoprofile verwenden:**
 Videoprofile in Dynamic Media unterstützen Sie bei effizienter Videomanagement, konsistenter Qualität und adaptivem Streaming.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Dynamic Media-Videoprofile](/help/assets/dynamic-media/video-profiles.md).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Dynamic Media-Videoprofile](/help/assets/dynamic-media/video-profiles.md).
 
 * **Befolgen Sie die Best Practices für die Videokodierung:**
 Wenden Sie Videokodierungsprofile an, die die Originalvideoqualität ohne übermäßige Downskalierung während der Kodierung beibehalten.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practices für die Kodierung von Videos](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practices für die Kodierung von Videos](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
 * **Adaptives Streaming anstelle von progressivem Streaming:**
 Beim adaptiven Streaming wird die Videoqualität basierend auf der Internetverbindungsgeschwindigkeit und den Gerätefunktionen des Viewers angepasst.
@@ -297,7 +297,7 @@ Im Gegensatz zu progressivem Streaming, das Videos linear bereitstellt, minimier
 * **Aktivieren Sie DASH in Ihrem Konto (digitales adaptives Streaming über HTTP):**
 DASH stellt Videoinhalte dynamisch über adaptives Streaming bereit.
 Um DASH zu aktivieren, erstellen Sie ein Support-Ticket für Ihre Umgebung.
-Möchten Sie mehr erfahren? Navigieren Sie zu [DASH in Ihrem Dynamic Media-Konto aktivieren](/help/assets/dynamic-media/video.md#enable-dash).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [DASH in Ihrem Dynamic Media-Konto aktivieren](/help/assets/dynamic-media/video.md#enable-dash).
 
 ### Internationalisierung von Videos für den mehrsprachigen Gebrauch
 
@@ -326,7 +326,7 @@ Die Internationalisierung von Videos für den mehrsprachigen Gebrauch ist für d
    * Wenn Sie AEM als Web Content Management (WCM)-System verwenden, können Sie Ihren Webseiten direkt Videos hinzufügen.
    * Wenn Sie ein WCM-System eines Drittanbieters verwenden, können Sie Videos mithilfe von URLs oder Einbettungscodes auf Ihren Webseiten verknüpfen oder einbetten.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Über die Unterstützung mehrerer Untertitel und Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) oder beobachten [Hinzufügen mehrerer Untertitel und Audiospuren zu einem Video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 Minuten, 41 Sekunden).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Über die Unterstützung mehrerer Untertitel und Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) oder beobachten [Hinzufügen mehrerer Untertitel und Audiospuren zu einem Video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 Minuten, 41 Sekunden).
 
 
 ## Bereitstellen von Assets für Kunden
@@ -350,5 +350,4 @@ Um das beste Web-optimierte Format zu gewährleisten, können Sie darauf vertrau
 
 Mithilfe der intelligenten Bildbearbeitung können Sie sicherstellen, dass Ihre Bilder möglichst effizient und auf die Browser-Umgebung des jeweiligen Benutzers zugeschnitten bereitgestellt werden. Dieser Ansatz vereinfacht den Prozess und kann zu einer verbesserten Leistung in Bezug auf die Ladezeiten von Bildern und das gesamte Benutzererlebnis führen.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
-
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
