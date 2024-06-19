@@ -6,10 +6,10 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 85%
 
 ---
 
@@ -33,15 +33,13 @@ Er ist über die [AEM as a Cloud Service Developer Console](/help/implementing/d
 
 Die folgenden Bedingungen müssen erfüllt sein, damit auf die AEM as a Cloud Service Developer Console oder den Repository-Browser zugegriffen werden kann.
 
-So greifen Sie auf die AEM as a Cloud Service Developer Console zu:
+Informationen zum Zugriff auf die AEM as a Cloud Service Developer Console finden Sie unter [Zugriff auf die Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* Für Produktionsprogramme müssen die Benutzenden über die **Cloud Manager-Rolle „Entwickler“** in der Adobe Admin Console verfügen.
-* Bei Sandbox-Programmen ist sie für jede Person verfügbar, die über ein Produktprofil verfügt, das ihr Zugriff auf AEM as a Cloud Service gewährt.
+Für den Zugriff auf den Repository-Browser gelten die gleichen Voraussetzungen wie für die AEM as a Cloud Service Developer Console (siehe oben). So zeigen Sie den Inhalt des Repository-Browsers für eine bestimmte Instanz an:
 
-So greifen Sie auf den Repository-Browser zu:
+* Autoreninstanzen: Benutzer mit dem AEM Benutzerprofil für die **Autoreninstanz** kann den Repository-Browser mit minimalem Lesezugriff anzeigen. Die Berechtigungen des Benutzers werden beim Durchsuchen des Repositorys respektiert. Benutzer mit dem Produktprofil „AEM-Administrator“ können den Repository-Browser mit vollem Lesezugriff benutzen.
 
-* Benutzende müssen über die **Cloud Manager-Rolle „Entwickler“** in der AEM as a Cloud Service Developer Console verfügen, um Autoren- und Veröffentlichungsinstanzen anzuzeigen.
-* Darüber hinaus können Benutzer mit dem Produktprofil „AEM-Benutzer“ den Repository-Browser mit minimalem Lesezugriff anzeigen. Die Berechtigungen des Benutzers beim Durchsuchen des Repositorys werden dabei berücksichtigt. Benutzer mit dem Produktprofil „AEM-Administrator“ können den Repository-Browser mit vollem Lesezugriff benutzen.
+* Veröffentlichungsinstanzen: Benutzer mit dem AEM Benutzerprofil für die **Veröffentlichungsinstanz** kann den Repository-Browser mit minimalem Lesezugriff anzeigen. Ohne diesen Produktprofilsatz navigieren Benutzer als anonymer Benutzer und einige Pfade werden aufgrund eingeschränkter Berechtigungen nicht angezeigt.
 
 Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=de).
 

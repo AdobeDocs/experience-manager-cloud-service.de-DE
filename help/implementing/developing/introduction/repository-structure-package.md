@@ -4,10 +4,10 @@ description: Maven-Projekte für Adobe Experience Manager as a Cloud Service erf
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -164,7 +164,7 @@ Beispiel:
 + Code-Paket A wird in `/apps/a` bereitgestellt
 + Code-Paket B wird in `/apps/a/b` bereitgestellt
 
-Wenn auf Paketebene keine Abhängigkeit des Code-Pakets B von Code-Paket A hergestellt wird, kann Code-Paket B zuerst in `/apps/a` bereitgestellt werden. Anschließend würde Code-Paket B folgen, das in `/apps/a` bereitgestellt wird. Dadurch wird die zuvor installierte `/apps/a/b` entfernt.
+Wenn auf Paketebene keine Abhängigkeit des Code-Pakets B von Code-Paket A hergestellt wird, kann Code-Paket B zuerst in `/apps/a` bereitgestellt werden. Wenn es dann von Code-Paket A gefolgt wird, das in bereitgestellt wird `/apps/a`, wird die zuvor installierte `/apps/a/b`.
 
 In diesem Fall:
 
