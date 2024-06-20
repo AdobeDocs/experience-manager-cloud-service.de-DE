@@ -4,10 +4,10 @@ description: AEM verfügt über umfangreiche und leistungsstarke APIs, die Sie f
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
+workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ AEM bietet anpassbare Komponenten- und Inhaltsbereitstellungsoptionen.
 | [Assets-API](/help/assets/mac-api-assets.md) | Ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen-Lesen-Aktualisieren-Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen und Kommentaren. Siehe AEM Assets-HTTP-API |
 | [Inhaltsfragment-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | Zugreifen auf Inhaltsfragmentinhalte direkt über die HTTP-API über CRUD-Vorgänge |
 | [Inhaltsfragment-GraphQL-API](/help/headless/graphql-api/content-fragments.md) | Effiziente Bereitstellung von Inhaltsfragmenten für JavaScript-Clients in Headless-CMS-Implementierungen |
-| [HTTP-API für Inhaltsfragment- Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de) | Exaktes Format unterstützter HTTP-Asset-Anforderungen |
+| [HTTP-API für Inhaltsfragment- Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de) | Exaktes Format unterstützter HTTP-Asset-Anfragen |
 | [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) | OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle |
 
 ## SPA-spezifische APIs {#spa-apis}

@@ -4,8 +4,8 @@ description: Erfahren Sie anhand von Beispielen mehr über die Felder und Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern v
 | [Zahl](#number) | `number` |
 | [Optionsfeldgruppe](#radio-group) | `radio-group` |
 | [Verweis](#reference) | `reference` |
-| [Rich-Text](#rich-text) | `rich-text` |
+| [Rich-Text](#rich-text) | `richtext` |
 | [Auswählen](#select) | `select` |
 | [Registerkarte](#tab) | `tab` |
 | [Text](#text) | `text` |
