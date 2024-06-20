@@ -2,10 +2,12 @@
 title: Aktionszentrum
 description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -74,6 +76,6 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Blockierte Replikations-Warteschlange | Vorfall | Heben Sie die Blockierung der Warteschlange auf, indem Sie den Anweisungen in der [Replikations-Dokumentation](/help/operations/replication.md#troubleshooting) folgen |
 | Ungültige persistierte GraphQL-Abfrage | Vorfall | Korrigieren Sie die ungültige GraphQL-Abfrage, indem Sie auf die [Dokumentation zur Fehlerbehebung bei persistierten GraphQL-Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=de) verweisen |
 | Traffic-Spitze am Ursprung | Vorfall | Schützen Sie Ihren Ursprung, indem Sie Traffic-Filterregeln zur Ratenbegrenzung konfigurieren, die bei niedrigeren Schwellenwerten ausgelöst werden als die Warnung bei standardmäßiger Traffic-Spitze am Ursprung. Weitere Informationen finden Sie im Abschnitt [Blockieren von DoS- und DDoS-Angriffen mithilfe von Traffic-Regeln](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) in der Dokumentation zu den Traffic-Filterregeln, die auf ein Tutorial verweist. |
-| Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. | High Connection Count | Proaktiv | Erfahren Sie mehr über Verbindungspools in [Dokumentation zu Verbindungspools zusammen mit erweiterter Vernetzung](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
-| Veraltete Dienstbenutzerzuordnung | Proaktiv | Erfahren Sie, wie Sie das neuere Sling Service-Benutzerzuordnungsformat verwenden, wie in [Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| High Connection Count | Proaktiv | Erfahren Sie mehr über Verbindungspools im [Dokumentation zur erweiterten Vernetzung](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. | Hohe Verbindungsanzahl | Proaktiv | Erfahren Sie mehr über das Pooling von Verbindungen in der [Dokumentation über das Pooling von Verbindungen im Zusammenhang mit erweiterten Netzwerkfunktionen](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Veraltete Dienstbenutzerzuordnung | Proaktiv | Erfahren Sie, wie Sie das neuere Format der Sling-Dienstbenutzerzuordnung verwenden, wie in [Best Practices für die Sling-Dienstbenutzerzuordnung und Dienstbenutzerdefinition](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) beschrieben. |
+| Hohe Verbindungsanzahl | Proaktiv | Erfahren Sie mehr über das Pooling von Verbindungen in der [Dokumentation zu den erweiterten Netzwerkfunktionen](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

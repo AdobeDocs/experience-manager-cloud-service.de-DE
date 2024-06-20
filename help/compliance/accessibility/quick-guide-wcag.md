@@ -2,10 +2,12 @@
 title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu den Web Content Accessibility Guidelines (WCAG), Version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 99%
+source-wordcount: '1739'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +29,7 @@ WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskrit
 
 Die Beschreibung eines Bildes (oder anderer Nicht-Text-Inhalte) mithilfe des `alt`-Attributs in HTML ist zum Beispiel für Blinde und Sehbehinderte von großem Nutzen. Die textliche Beschreibung im `alt`-Attribut kann entweder in eine Sprachausgabe umgewandelt oder an elektronisch aktualisierbare Braillezeilen übertragen werden.
 
-Außerdem kann WCAG 2.1 Vorteile für andere Bedürftige bringen, darunter auch für Personen, die in Betracht kommen *situationsabhängig deaktiviert*. Also Personen, die aufgrund von Faktoren wie Browser-Technologie, Geschwindigkeit der Netzwerkverbindung oder Browser-Umgebung auf ähnliche Hindernisse stoßen können wie Menschen mit Behinderungen.
+Darüber hinaus kann WCAG 2.1 Vorteile für andere Bedürftige bringen, so z. B. für Personen, die ggf. als *situationsabhängig behindert* gelten. Also Personen, die aufgrund von Faktoren wie Browser-Technologie, Geschwindigkeit der Netzwerkverbindung oder Browser-Umgebung auf ähnliche Hindernisse stoßen können wie Menschen mit Behinderungen.
 
 Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber Web-Inhalte erstellen, die den Erfolgskriterien der WCAG 2.1 Level A und Level AA entsprechen.
 
@@ -40,7 +42,7 @@ Absicht von WCAG 2.1 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen
 * **Testfähig:** Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
 
 * Unterstützung einer **priorisierten und kontextbezogenen Implementierung:**
-Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Auf diese Weise können die Autorinnen und Autoren entscheiden, wie sie am besten Web-Technologien einsetzen, die möglicherweise keine vollständige Unterstützung für Barrierefreiheit bieten oder für die die Nutzerinnen und Nutzer spezielle Hilfstechnologien und Browser oder beides benötigen, um von den Barrierefreiheitsfunktionen profitieren zu können.
+Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Außerdem wird das Konzept *Barrierefreiheit unterstützend* eingeführt. Auf diese Weise können die Autorinnen und Autoren entscheiden, wie sie am besten Web-Technologien einsetzen, die möglicherweise keine vollständige Unterstützung für Barrierefreiheit bieten oder für die die Nutzerinnen und Nutzer spezielle Hilfstechnologien und Browser oder beides benötigen, um von den Barrierefreiheitsfunktionen profitieren zu können.
 
 Diese Ziele haben die Struktur von WCAG 2.1 wesentlich beeinflusst.
 

@@ -2,9 +2,11 @@
 title: Erstellen von Produkterlebnissen
 description: Erfahren Sie, wie Sie Produktinhalte erstellen, die dann in verschiedenen Kanälen verwendet werden können, um ein immersives Einkaufserlebnis zu schaffen.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '1165'
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '1157'
 ht-degree: 100%
 
 ---

@@ -10,9 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
-source-wordcount: '2172'
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '2059'
 ht-degree: 100%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 100%
 >
 > Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Daher müssen SEO-Themen bei vielen Projekten in Adobe Experience Manager (AEM) as a Cloud Service berücksichtigt werden. Weitere Informationen finden Sie unter [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=de).
 
-Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Viele Implementierungen passen diese URLs für die Suchmaschinen-Optimierung (SEO) an. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
+Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Bei vielen Implementierungen werden diese URLs zwecks Suchmaschinen-Optimierung (Search Engine Optimization, SEO) angepasst. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
@@ -50,14 +51,14 @@ Konfiguriert die URLs der Produktseiten und unterstützt die folgenden Optionen:
 Wenn ein [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) vorhanden ist:
 
 * `{{page}}` wird durch `/content/venia/us/en/products/product-page` ersetzt
-* `{{sku}}` wird durch die Produkt-SKU ersetzt, z. B. `VP09`
-* `{{url_key}}` wird durch die `url_key`-Eigenschaft des Produkts ersetzt, z. B. `lenora-crochet-shorts`
-* `{{url_path}}` wird durch den `url_path` des Produkts ersetzt, z. B. `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B. `VP09-KH-S`
+* wird `{{sku}}` durch die Produkt-SKU ersetzt, z. B. `VP09`
+* wird `{{url_key}}` wird durch die `url_key`-Eigenschaft des Produkts ersetzt, z. B. `lenora-crochet-shorts`
+* wird `{{url_path}}` durch den `url_path` des Produkts ersetzt, z. B. `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* wird `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B. `VP09-KH-S`
 
-Da der `url_path` veraltet ist, verwenden die vordefinierten Formate für Produkt-URLs die `url_rewrites` eines Produkts und wählen unter ihnen das Format mit den meisten Pfadsegmenten als Alternative, wenn der `url_path` nicht verfügbar ist.
+Da der `url_path` veraltet ist, verwenden die vordefinierten Formate für Produkt-URLs die `url_rewrites` eines Produkts und wählen das Format mit den meisten Pfadsegmenten als Alternative, wenn der `url_path` nicht verfügbar ist.
 
-Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte Produktvarianten-URL wie `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` aus.
+Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte Produktvarianten-URL wie folgt aus: `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### URL-Format von Kategorieseiten {#product-list}
 
@@ -69,8 +70,8 @@ Konfiguriert die URLs der Kategorie- oder Produktlistenseiten und unterstützt d
 Wenn ein [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) vorhanden ist:
 
 * `{{page}}` wird durch `/content/venia/us/en/products/category-page` ersetzt
-* `{{url_key}}` wird durch die Eigenschaft `url_key` der Kategorie ersetzt
-* `{{url_path}}` wird durch den `url_path` der Kategorie ersetzt
+* wird `{{url_key}}` durch die `url_key`-Eigenschaft der Kategorie ersetzt
+* wird `{{url_path}}` durch den `url_path` der Kategorie ersetzt
 
 Mit den obigen Beispieldaten sieht die URL einer Kategorieseite, die mit dem Standard-URL-Format formatiert ist, wie `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` aus.
 

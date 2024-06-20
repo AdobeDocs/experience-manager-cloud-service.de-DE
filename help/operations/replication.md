@@ -2,8 +2,10 @@
 title: Replikation
 description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der Replikation in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
-workflow-type: ht
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 100%
 

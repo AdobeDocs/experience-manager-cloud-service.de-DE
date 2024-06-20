@@ -2,8 +2,10 @@
 title: Erstellen einer Verzweigung
 description: Auf dieser Seite wird das Erstellen einer Verzweigung in Cloud Manager für Screens as a Cloud Service beschrieben.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 100%
 
@@ -40,6 +42,6 @@ Im folgenden Abschnitt wird beschrieben, wie Sie mithilfe des Assistenten eine V
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## Wie geht es weiter {#whats-next}
+## Wie es weitergeht: {#whats-next}
 
 Wenn Sie gelernt haben, wie Sie in Cloud Manager eine Verzweigung für Ihr Projekt erstellen, sind Sie bereit für den nächsten Schritt im Onboarding-Prozess: [Erstellen und Einrichten der Umgebung](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).

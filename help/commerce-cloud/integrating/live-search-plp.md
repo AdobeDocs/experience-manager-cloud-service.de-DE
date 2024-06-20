@@ -2,8 +2,10 @@
 title: „[!DNL Live Search] Product Listing Page-CIF-Komponente“
 description: Verwenden von CIF-Komponenten zum Aktivieren der  [!DNL Live Search] Product Listing Page-Komponente auf einer AEM-Site
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
-source-git-commit: 6da9ade59139b3eb6c103635ae72b8d71ef9a7fc
-workflow-type: ht
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 

@@ -2,8 +2,10 @@
 title: Implementieren von AEM-Connectoren
 description: Erfahren Sie mehr über Connectoren und darüber, was sie tun können und wie Sie diese wertvollen Tools in Experience Manager implementieren können.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: ht
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
 

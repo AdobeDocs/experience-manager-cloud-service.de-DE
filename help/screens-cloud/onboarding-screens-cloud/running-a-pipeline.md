@@ -2,8 +2,10 @@
 title: Ausführen einer Pipeline
 description: Auf dieser Seite wird die Ausführung einer Pipeline für ein Screens as a Cloud Service-Projekt in Cloud Manager beschrieben.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 
@@ -56,6 +58,6 @@ Im folgenden Abschnitt wird beschrieben, wie Sie die CI/CD-Pipeline konfiguriere
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## Wie geht es weiter {#whats-next}
+## Wie es weitergeht: {#whats-next}
 
 Nachdem Sie erfahren haben, wie Sie eine Umgebung für Ihr Programm in Cloud Manager einrichten, können Sie mit dem nächsten Schritt im Onboarding-Prozess fortfahren, d. h. [Navigieren zu Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

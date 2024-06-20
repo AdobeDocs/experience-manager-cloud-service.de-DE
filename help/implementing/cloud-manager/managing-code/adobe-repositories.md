@@ -1,13 +1,15 @@
 ---
 title: Hinzufügen von Adobe-Repositorys in Cloud Manager
 description: Erfahren Sie, wie Sie in Cloud Manager von Adobe verwaltete Repositorys erstellen.
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
-workflow-type: ht
+exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
 
 ---
-
 
 # Hinzufügen von Adobe-Repositorys in Cloud Manager {#adobe-repositories}
 

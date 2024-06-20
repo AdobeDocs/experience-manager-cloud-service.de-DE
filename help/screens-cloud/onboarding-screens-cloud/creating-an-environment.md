@@ -2,8 +2,10 @@
 title: Erstellen einer Umgebung
 description: Auf dieser Seite wird das Erstellen einer Umgebung in Cloud Manager für Screens as a Cloud Service beschrieben.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 100%
 
@@ -38,6 +40,6 @@ Nachdem die Projekterstellung erfolgreich abgeschlossen wurde, können Sie sehen
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## Wie geht es weiter {#whats-next}
+## Wie es weitergeht: {#whats-next}
 
 Nachdem Sie gelernt haben, wie Sie in Cloud Manager eine Umgebung für Ihr Programm einrichten, können Sie fortfahren. Der nächste Schritt im Onboarding-Prozess ist das [Ausführen der Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

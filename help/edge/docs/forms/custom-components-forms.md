@@ -4,15 +4,13 @@ description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0f58950527d68b57ccf8d0d949e707fba5684f76
-workflow-type: ht
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '17'
 ht-degree: 100%
 
 ---
 
-
 # Erstellen benutzerdefinierter Komponenten
-
-
-

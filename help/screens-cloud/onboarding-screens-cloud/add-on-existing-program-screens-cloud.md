@@ -2,8 +2,10 @@
 title: Hinzufügen von Screens-Add-ons zu einem vorhandenen Programm in Cloud Manager
 description: Erfahren Sie, wie Sie einem bestehenden Programm in Cloud Manager für Screens as a Cloud Service ein Screens-Add-on hinzufügen.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 100%
 

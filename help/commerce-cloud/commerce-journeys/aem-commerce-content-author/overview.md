@@ -2,10 +2,12 @@
 title: Journey für Autoren von AEM Commerce-Inhalten
 description: Beginnen Sie hier mit einer geführten Journey durch das AEM Commerce-Authoring
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +27,7 @@ Diese Anleitung führt Sie durch die wichtigsten AEM Content and Commerce-Author
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene, komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende ein minimales vorheriges Thema oder AEM Wissen angeht.
+[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene, komplizierte Themen und Funktionen durch eine Darstellung, die mit AEM nicht vertrauten Leserinnen und Lesern hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
 Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
@@ -35,7 +37,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 Diese Journey ist für AEM Commerce-Inhaltsautoren konzipiert. In dieser Journey werden die Anforderungen, Schritte und Ansätze für die ersten Schritte und die Verwaltung von Katalogseiten, Vorlagen und vollständigen Produkterlebnissen erläutert.
 
-Informationen in dieser Journey können für andere Personen nützlich sein, einige Informationen überflüssig für bestimmte Rollen. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
+Die Informationen in dieser Tour können auch für andere Rollen nützlich sein, aber einige Informationen sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
 
 ## Die Journey {#the-journey}
 

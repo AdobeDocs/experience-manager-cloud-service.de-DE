@@ -2,8 +2,10 @@
 title: Verwenden von Screens Content Provider
 description: Auf dieser Seite wird die Verwendung von Screens Content Provider zum Erstellen von Inhalten beschrieben.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
-workflow-type: ht
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 100%
 

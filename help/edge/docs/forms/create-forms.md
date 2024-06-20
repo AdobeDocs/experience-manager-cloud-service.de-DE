@@ -3,10 +3,11 @@ title: Erste Schritte mit dem AEM Forms Edge Delivery Service. Erstellen Sie ein
 description: Perfekte Formulare im Handumdrehen! ⚡ Dokumentenbasierte Inhaltserstellung mit AEM Forms Edge Delivery = Atemberaubende Geschwindigkeit und SEO-freundliche Formulare für glücklichere Benutzende und Suchmaschinen.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
+workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +19,7 @@ AEM Forms Edge Delivery bietet einen Baustein, der als adaptiver Formularbaustei
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um die übermittelten Daten einfach zu verarbeiten oder einen bestehenden Business-Workflow zu initiieren.
 
-![Das Ökosystem des dokumentbasierten Authorings](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Dokumentenbasiertes Authoring-Ökosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Voraussetzungen

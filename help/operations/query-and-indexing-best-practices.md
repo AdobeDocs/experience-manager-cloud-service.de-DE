@@ -3,8 +3,10 @@ title: Best Practices für Abfragen und Indizierung
 description: Erfahren Sie, wie Sie Ihre Indizes und Abfragen anhand der Best-Practice-Richtlinien von Adobe optimieren können.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 100%
 

@@ -2,10 +2,12 @@
 title: Verwalten von Repositorys in Cloud Manager
 description: Erstellen, Anzeigen und Löschen von Git-Repositorys in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: e467c8058531441524fedd37e14b82b7fb255c69
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +40,7 @@ Das Fenster **Repositorys** zeigt Details zu den Repositorys:
 
 * Der Repository-Typ
    * **Adobe** zeigt von Adobe verwaltete Repositorys an
-   * **GitHub** zeigt private GitHub-Repositorys an, die Sie verwalten
+   * **GitHub** zeigt private von Ihnen verwaltete GitHub-Repositorys an
 * Zeitpunkt der Erstellung
 * Pipelines, die mit dem Repository verknüpft sind
 
@@ -77,12 +79,12 @@ Das Fenster **Repository-Informationen** mit den Details wird geöffnet. Weitere
 
 ## Verzweigungen überprüfen/Projekt erstellen {#check-branches}
 
-Die **Verzweigungen prüfen/Projekt erstellen** -Aktion führt je nach dem Status des Repositorys zwei Funktionen aus.
+Mit der Aktion **Verzweigungen überprüfen/Projekt erstellen** werden je nach dem Status des Repositorys zwei Funktionen ausgeführt.
 
-* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt basierend auf [den AEM Projektarchetyp.](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview)
-* Wenn das Beispielprojekt bereits im Repository erstellt wurde, prüft es den Status des Repositorys und seiner Verzweigungen und erstellt Berichte zurück, wenn das Beispielprojekt bereits vorhanden ist.
+* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt basierend auf dem [AEM-Projektarchetyp.](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Wenn im Repository bereits ein Beispielprojekt erstellt wurde, prüft es den Status des Repositorys und seiner Verzweigungen und gibt zurück, wenn ein Beispielprojekt bereits vorhanden ist.
 
-![Aktion &quot;Verzweigungen überprüfen&quot;](assets/check-branches.png)
+![Aktion „Verzweigungen überprüfen“](assets/check-branches.png)
 
 ## Repository-URL kopieren {#copy-url}
 

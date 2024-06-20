@@ -2,10 +2,12 @@
 title: Caching und Leistung
 description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Inhalts-Caching zu aktivieren und die Leistung Ihrer Commerce-Implementierung zu optimieren.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +30,7 @@ Es gibt keine Invalidierung des Caches. Seien Sie daher beim Festlegen der Dauer
 
 Beim Konfigurieren des Cachings für Komponenten muss der Cache-Name dem Namen der **Proxy-Komponenten** entsprechen, die Sie in Ihrem Projekt definieren.
 
-Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese GraphQL-Anfrage bereits zwischengespeichert ist, und gibt ggf. die zwischengespeicherte Antwort zurück. Für eine Übereinstimmung _muss_ die GraphQL-Anfrage exakt übereinstimmen. Das heißt, die Abfrage, der Vorgangsname (falls vorhanden) und die Variablen (falls vorhanden) _müssen_ alle der zwischengespeicherten Anfrage entsprechen. Außerdem _müssen_ alle benutzerdefinierten HTTP-Header, die möglicherweise festgelegt werden, auch identisch sein. Beispielsweise _muss_ beim Adobe Commerce-`Store`-Header eine Übereinstimmung vorliegen.
+Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese GraphQL-Anfrage bereits zwischengespeichert ist, und gibt ggf. die zwischengespeicherte Antwort zurück. Übereinstimmung mit der GraphQL-Anforderung _must_ exakt übereinstimmen. Das heißt die Abfrage, den Vorgangsnamen (falls vorhanden), Variablen (falls vorhanden). _must_ alle der zwischengespeicherten Anforderung entsprechen. Außerdem _müssen_ alle benutzerdefinierten HTTP-Header, die möglicherweise festgelegt werden, auch identisch sein. Beispielsweise _muss_ beim Adobe Commerce-`Store`-Header eine Übereinstimmung vorliegen.
 
 ### Beispiele {#examples}
 

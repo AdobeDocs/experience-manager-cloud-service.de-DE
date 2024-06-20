@@ -2,8 +2,10 @@
 title: Anwenderdefinierte HTTP-Kopfzeilen
 description: Erfahren Sie, wie Sie benutzerdefinierte HTTP-Header konfigurieren, die zusätzlich zu den bereits von CIF gesendeten an die Commerce-Engine gesendet werden.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
 
@@ -11,7 +13,7 @@ ht-degree: 100%
 
 # Anwenderdefinierte HTTP-Kopfzeilen {#custom-http-headers}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Um mehr Kontrolle über ihr Backend zu erhalten, können Autoren anwenderdefinierte HTTP-Kopfzeilen konfigurieren, die zusammen mit den bereits von CIF gesendeten Kopfzeilen an die Commerce-Engine gesendet werden. Häufige Anwendungsfälle sind Multi-Store-Setups, in denen Sie HTTP-Kopfzeilen verwenden können, um die Antwort des Commerce-Backends zu steuern.
 
