@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 74%
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ Diese Dienste ermöglichen Ihnen Folgendes:
 
 * **Erstellen von Registrierungserlebnissen mit den Tools Ihrer Wahl**: Erhöhen Sie die Effizienz beim Authoring durch Entkopplung der Inhaltsquellen. Standardmäßig können Sie sowohl die dokumentbasierte Bearbeitung (Microsoft SharePoint oder Google Drive) als auch die WYSIWYG-Bearbeitung (Adaptiver Forms Editor) verwenden. Sie können mit mehreren Inhaltsquellen auf derselben Formular-Site arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder den Editor für adaptive Formulare verwenden.
 
-* **außergewöhnliche digitale Einschreibeerlebnisse bieten:** Stellen Sie digitale Registrierungserlebnisse bereit, die schnell und kontinuierlich geladen und gerendert werden und die Leistung Ihrer Formulare durch Echtzeit-Überwachung (RUM) überwachen. Schnellere Ladezeiten und ein optimiertes Anwendererlebnis tragen zu höheren Formularabschluss- und Konversionsraten bei.
+* **Bereitstellen außergewöhnlicher digitaler Registrierungserlebnisse:** Stellen Sie digitale Registrierungserlebnisse bereit, die schnell und kontinuierlich geladen und gerendert werden, und überwachen Sie die Performance von Formularen durch eine echte Benutzerüberwachung (Real Use Monitoring, RUM). Schnellere Ladezeiten und ein optimiertes Anwendererlebnis tragen zu höheren Formularabschluss- und Konversionsraten bei.
 
 * **Verwenden eines benutzerfreundlichen Toolsets:** AEM Forms Edge Delivery Services verwendet einfaches HTML, modernes CSS und Vanilla JavaScript, um außergewöhnliche Erlebnisse zu erstellen und so die steile Lernkurve eines bestimmten Frameworks zu vermeiden. Entwickelnde mit grundlegenden Kenntnissen in der Webentwicklung können Formularkomponenten und Erlebnisse anpassen und problemlos erstellen. Es ist nicht erforderlich, auf die Ausführung einer Pipeline zu warten. Checken Sie einfach Ihren Code in GitHub ein und Ihre Änderungen sind live.
 
@@ -61,7 +61,7 @@ Mit dem dokumentbasierten Authoring können Sie Formulare mit vertrauten Tools w
 * Google reCAPTCHA-Integration für den Spam-Schutz.
 * Möglichkeit zur Erstellung benutzerdefinierter Formularkomponenten für bestimmte Anforderungen.
 * Übermitteln Sie Formulardaten direkt an Microsoft Excel oder Google Tabellen oder E-Mail-Adressen.
-* Überwachen der Formularleistung durch Überwachung der tatsächlichen Verwendung (RUM)
+* Überwachen der Formularleistung durch echte Benutzerüberwachung (Real Use Monitoring, RUM) 
 
 #### WYSIWYG Authoring-Funktionen
 

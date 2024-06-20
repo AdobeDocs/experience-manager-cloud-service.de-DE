@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Die Syntax für den Wert `X-AEM-Edge-Key` enthält:
 
 ## API-Bereinigungs-Token {#purge-API-token}
 
-Kunden können [Bereinigen des CDN-Cache](/help/implementing/dispatcher/cdn-cache-purge.md) durch Verwendung eines deklarierten Bereinigungs-API-Tokens. Das Token wird mit der unten stehenden Syntax deklariert.   Im Abschnitt [Allgemeine Einrichtung](#common-setup) erfahren Sie, wie Sie es bereitstellen.
+Kundinnen und Kunden können [den CDN-Cache mithilfe eines deklarierten API-Bereinigungs-Tokens bereinigen](/help/implementing/dispatcher/cdn-cache-purge.md). Das Token wird mit der unten stehenden Syntax deklariert.   Im Abschnitt [Allgemeine Einrichtung](#common-setup) erfahren Sie, wie Sie es bereitstellen.
 
 ```
 kind: "CDN"

@@ -40,7 +40,7 @@ Das Fenster **Repositorys** zeigt Details zu den Repositorys:
 
 * Der Repository-Typ
    * **Adobe** zeigt von Adobe verwaltete Repositorys an
-   * **GitHub** zeigt private von Ihnen verwaltete GitHub-Repositorys an
+   * **GitHub** zeigt private, von Ihnen verwaltete GitHub-Repositorys an
 * Zeitpunkt der Erstellung
 * Pipelines, die mit dem Repository verknüpft sind
 
@@ -81,8 +81,8 @@ Das Fenster **Repository-Informationen** mit den Details wird geöffnet. Weitere
 
 Mit der Aktion **Verzweigungen überprüfen/Projekt erstellen** werden je nach dem Status des Repositorys zwei Funktionen ausgeführt.
 
-* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt basierend auf dem [AEM-Projektarchetyp.](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview)
-* Wenn im Repository bereits ein Beispielprojekt erstellt wurde, prüft es den Status des Repositorys und seiner Verzweigungen und gibt zurück, wenn ein Beispielprojekt bereits vorhanden ist.
+* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt, das auf dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) basiert.
+* Wenn im Repository bereits ein Beispielprojekt erstellt wurde, prüft es den Status des Repositorys und seiner Verzweigungen und gibt zurück, dass bereits ein Beispielprojekt vorhanden ist.
 
 ![Aktion „Verzweigungen überprüfen“](assets/check-branches.png)
 
