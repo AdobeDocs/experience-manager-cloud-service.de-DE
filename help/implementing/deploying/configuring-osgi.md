@@ -3,10 +3,10 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: ht
-source-wordcount: '3269'
-ht-degree: 100%
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
+workflow-type: tm+mt
+source-wordcount: '3302'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können die Konfigurationseinstellungen für OSGi-Komponenten mithilfe von K
 
 ## OSGi-Konfigurationsdateien {#osgi-configuration-files}
 
-Konfigurationsänderungen werden in den Code-Paketen (`ui.apps`) des AEM-Projekts als Konfigurationsdateien (`.cfg.json`) unter Ausführungsmodus-spezifischen Konfigurationsordnern definiert:
+Konfigurationsänderungen werden in den Code-Paketen (`ui.config`) des AEM-Projekts als Konfigurationsdateien (`.cfg.json`) unter Ausführungsmodus-spezifischen Konfigurationsordnern definiert:
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ nach dem `cfg.json` OSGi-Konfigurationsformat definiert.
 >[!NOTE]
 >
 >Frühere Versionen von AEM unterstützten OSGi-Konfigurationsdateien unter Verwendung verschiedener Dateiformate wie `.cfg`, `.config` und als XML`sling:OsgiConfig`-Ressourcendefinitionen. Diese Formate werden durch das `.cfg.json`-OSGi-Konfigurationsformat ersetzt.
+
+>[!NOTE]
+>
+>Die OSGi-Konfigurationen werden nicht wie typische AEM in Cloud unter /apps gespeichert, sondern werden an einem externen Speicherort gespeichert. Einchecken in Cloud Manager [Entwicklerkonsole](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) , um die OSGi-Konfigurationen anzuzeigen.
 
 ## Ausführungsmodus-Auflösung {#runmode-resolution}
 
