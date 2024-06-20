@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1733'
 ht-degree: 25%
 
 ---
@@ -75,9 +75,9 @@ Mehr konversative Forms bringt Folgendes:
 Konversationale Forms sind mehr als nur ein neues Erscheinungsbild - sie verändern das Benutzererlebnis.  Steigern Sie die Interaktion, reduzieren Sie den Formularabbruch und machen Sie die Interaktion mit Ihrer Website für alle angenehmer.
 
 
-### AEM-basierte Bearbeitung für Edge Delivery Services
+### WYSIWYG Authoring für Edge Delivery Services
 
-AEM-basiertes Authoring bietet eine WYSIWYG-Schnittstelle (Adaptiver Forms-Editor) zum Erstellen und Veröffentlichen dieser Formulare für Edge Delivery Services. AEM-basiertes Authoring bietet alle Funktionen von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), sowie eine Vielzahl zusätzlicher Funktionen:
+WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive Forms Editor) zum Erstellen und Veröffentlichen adaptiver Formulare für Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), sowie eine Vielzahl zusätzlicher Funktionen:
 
 * Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
 * Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
