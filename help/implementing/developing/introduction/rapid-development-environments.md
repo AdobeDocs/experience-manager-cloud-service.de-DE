@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4244'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
 
 >[!IMPORTANT]
 >
->Vergewissern Sie sich, dass Sie Version 20 von [Knoten und installiertes NPM](https://nodejs.org/de/download/) für Adobe I/O CLI und zugehörige Plug-ins ordnungsgemäß funktionieren.
+>Stellen Sie sicher, dass Sie Version 20 von [Node und NPM installiert haben](https://nodejs.org/de/download/), damit Adobe I/O CLI und die zugehörigen Plug-ins richtig funktionieren.
 
 
 1. Installieren Sie die Adobe I/O-CLI-Tools gemäß dem [hier](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) beschriebenen Verfahren.
@@ -137,29 +137,29 @@ Um den aktuellen Umgebungskontext anzuzeigen, führen Sie Folgendes aus:
 
 ```aio aem rde setup --show```
 
-Der Befehl antwortet mit einem Ergebnis ähnlich dem:
+Der Befehl antwortet mit einem Ergebnis ähnlich Folgendem:
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
 ### Manuelles Setup in einer nicht interaktiven Umgebung {#manual-setup}
 
-In Umgebungen, in denen kein Benutzer den oben beschriebenen Setup-Befehl interaktiv ausführen kann (z. B. CI/CD oder Skripte), können die drei Parameter für Organisation, Programm und Umgebung gemäß den folgenden Schritten manuell konfiguriert werden.
+In Umgebungen, in denen niemand den oben beschriebenen Setup-Befehl interaktiv ausführen kann (z. B. CI/CD oder Skripte), können die drei Parameter für Organisation, Programm und Umgebung gemäß den folgenden Schritten manuell konfiguriert werden.
 
 
 <details>
-  <summary>Erweitern , um Details zur manuellen Konfiguration zu finden</summary>
+  <summary>Erweitern, um Details zur manuellen Konfiguration zu finden</summary>
 
 1. Konfigurieren Sie Ihre Organisations-ID und ersetzen Sie die alphanumerische Zeichenfolge durch Ihre eigene Organisations-ID.
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Ihre eigene Organisations-ID kann mit der -Methode nachgeschlagen werden. [dokumentiert.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * Ihre eigene Organisations-ID lässt sich mit der [hier dokumentierten Methode](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de#concept_EA8AEE5B02CF46ACBDAD6A8508646255) nachschlagen.
 
 1. Konfigurieren Sie anschließend Ihre Programm-ID:
 
    `aio config:set cloudmanager_programid 12345`
 
-1. Konfigurieren Sie dann die Umgebungs-ID, an die der RDE angehängt werden soll:
+1. Konfigurieren Sie danach die Umgebungs-ID, mit der die RDE verknüpft werden soll:
 
    `aio config:set cloudmanager_environmentid 123456`
 
@@ -167,7 +167,7 @@ In Umgebungen, in denen kein Benutzer den oben beschriebenen Setup-Befehl intera
 
    `aio login`
 
-   Für diese Schritte müssen Sie Mitglied von Cloud Manager sein **Entwickler - Cloud Service** Produktprofil. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
+   Für diese Schritte müssen Sie Mitglied des Cloud Manager-Produktprofils **Entwickler – Cloud Service** sein müssen. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
 Sehen Sie sich für weitere Informationen und Demonstrationen das Video-Tutorial [Einrichten eines RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=de) an.
 </details>
@@ -415,7 +415,7 @@ Logs:
 
 >[!TIP]
 >
-> Wenn Sie Ihre RDE vor April 2023 erstellt haben und beim ersten Versuch mit der Frontend-Funktion der Fehler &quot;UNEXPECTED_API_ERROR&quot;auftritt, versuchen Sie bitte, Ihre Umgebung zu löschen und erneut zu erstellen.
+> Wenn Sie Ihre RDE vor April 2023 erstellt haben und beim ersten Versuch mit der Frontend-Funktion der Fehler „UNEXPECTED_API_ERROR“ auftritt, versuchen Sie bitte, Ihre Umgebung zu löschen und erneut zu erstellen.
 
 ### Überprüfen des Status der RDE {#checking-rde-status}
 
@@ -482,7 +482,7 @@ Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket
 
 >[!TIP]
 >
->Wenn der Fehler angezeigt wird `RDECLI:UNEXPECTED_API_ERROR` Wenn Sie mit den Protokollbefehlen für den Autorendienst wiedergeben, setzen Sie Ihre Umgebung zurück und versuchen Sie es erneut. Dieser Fehler wird ausgegeben, wenn der neueste Reset-Vorgang vor Ende Mai 2024 ausgeführt wurde.
+>Falls der Fehler `RDECLI:UNEXPECTED_API_ERROR` angezeigt wird, wenn Sie die Protokollbefehle für den Author-Service ausprobieren, setzen Sie Ihre Umgebung zurück und versuchen Sie es erneut. Dieser Fehler wird ausgegeben, wenn der letzte Vorgang zum Zurücksetzen vor Ende Mai 2024 stattgefunden hat.
 >
 ```
 >aio aem:rde:reset
@@ -1005,13 +1005,13 @@ Informationen zu RDE in AEM as a Cloud Service finden Sie im Video-Tutorial, das
 
 # Fehlerbehebung {#troubleshooting}
 
-## Fehlerbehebung bei RDE (#rde-troublehoubleshooting)
+## RDE-Fehlerbehebung (#rde-troublehooting)
 
-### Abrufen der neuesten AEM für einen vorhandenen RDE {#get-latest-aem-version}
+### Abrufen der neuesten AEM-Version für eine vorhandene RDE {#get-latest-aem-version}
 
-Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Ein [RDE zurücksetzen,](#reset-rde) , die mit Cloud Manager oder der `aio aem:rde:reset` -Befehl, überträgt den RDE-Code und stellt ihn auf die neueste AEM ein.
+Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Beim [Zurücksetzen einer RDE](#reset-rde), das mit Cloud Manager oder dem Befehl `aio aem:rde:reset` durchgeführt werden kann, wird die RDE überprüft und auf die neueste AEM-Version festgelegt.
 
-## Fehlerbehebung beim aio RDE-Plug-in {#aio-rde-plugin-troubleshooting}
+## Fehlerbehebung für aio RDE-Plug-ins {#aio-rde-plugin-troubleshooting}
 
 ### Fehler wegen unzureichender Berechtigungen {#insufficient-permissions}
 

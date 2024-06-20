@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5400'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -745,7 +745,7 @@ Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 >* `_dynamicUrl`: ein DAM-Asset
 >* `_dmS7Url`: ein Dynamic Media-Asset
 > 
->Wenn das referenzierte Asset ein DAM-Asset ist, wird der Wert für `_dmS7Url` wird `null`. Siehe [Bereitstellung von Dynamic Media-Assets nach URL in GraphQL-Abfragen](#dynamic-media-asset-delivery-by-url).
+>Wenn es sich bei dem referenzierten Asset um ein DAM-Asset handelt, ist der Wert für `_dmS7Url` `null`. Siehe [Bereitstellung von Dynamic Media-Assets nach URL in GraphQL-Abfragen](#dynamic-media-asset-delivery-by-url).
 
 ### Struktur der Umwandlungsanfrage {#structure-transformation-request}
 
@@ -942,12 +942,12 @@ Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 >* `_dmS7Url`: ein Dynamic Media-Asset
 >* `_dynamicUrl`: ein DAM-Asset
 > 
->Wenn es sich bei dem referenzierten Asset um ein Dynamic Media-Asset handelt, wird der Wert für `_dynamicURL` wird `null`. Siehe [Web-optimierte Bildbereitstellung in GraphQL-Abfragen](#web-optimized-image-delivery-in-graphql-queries).
+>Wenn es sich bei dem referenzierten Asset um ein Dynamic Media-Asset handelt, ist der Wert für `_dynamicURL` `null`. Siehe [Web-optimierte Bildbereitstellung in GraphQL-Abfragen](#web-optimized-image-delivery-in-graphql-queries).
 
-### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - Bildreferenz{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
+### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Bildverweis{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Es folgt eine Beispielabfrage:
-* für mehrere Inhaltsfragmente des Typs `team` und `person`, die `ImageRef`
+* für mehrere Inhaltsfragmente vom Typ `team` und `person`, die einen `ImageRef` zurückgeben
 
 ```graphql
 query allTeams {
@@ -971,10 +971,10 @@ query allTeams {
 } 
 ```
 
-### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - Mehrere Referenzen{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Mehrere Verweise{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Es folgt eine Beispielabfrage:
-* für mehrere Inhaltsfragmente des Typs `team` und `person`, die `ImageRef`, `MultimediaRef` und `DocumentRef`:
+* für mehrere Inhaltsfragmente vom Typ `team` und `person`, die einen `ImageRef`, `MultimediaRef` und `DocumentRef` zurückgeben:
 
 ```graphql
 query allTeams {
@@ -1107,9 +1107,9 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
       * `_dmS7Url`: in der `ImageRef`-Referenz für die Bereitstellung der URL an ein [Dynamic Media-Asset](#dynamic-media-asset-delivery-by-url)
 
-         * Siehe [Beispielabfrage für die Dynamic Media Asset-Bereitstellung nach URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-         * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - Mehrere Referenzen](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Mehrere Verweise](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
    * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten (dies ist ein Array von `cq:tags`-Kennungen).
 
