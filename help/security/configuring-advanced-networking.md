@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5744'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -238,7 +238,7 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Po
 
 >[!INFO]
 >
->Wenn eine dedizierte Ausgangs-IP konfiguriert ist, verwendet die Splunk-Weiterleitung weiterhin die dynamischen Ausgangs-IPs. Die Splunk-Weiterleitung kann nicht für die Verwendung einer dedizierten Ausgangs-IP konfiguriert werden.
+>Wenn eine dedizierte Ausgangs-IP konfiguriert ist, verwendet die Splunk-Weiterleitung weiterhin die dynamischen Ausgangsbereiche. Die Splunk-Weiterleitung kann nicht für die Verwendung einer dedizierten Ausgangs-IP konfiguriert werden.
 
 ### Konfiguration der Benutzeroberfläche {#configuring-dedicated-egress-provision-ui}
 
@@ -809,46 +809,46 @@ Somit empfiehlt Adobe, Ihre aktuelle AEM-Konfiguration zu überprüfen und die g
 
 #### Häufig gestellte Fragen zu Verbindungsbeschränkungen
 
-Bei der Verwendung von Advanced Networking ist die Anzahl der Verbindungen begrenzt, um die Stabilität in allen Umgebungen zu gewährleisten und zu verhindern, dass niedrigere Umgebungen die verfügbaren Verbindungen nicht ausschöpfen.
+Bei der Verwendung der erweiterten Netzwerkfunktionen ist die Anzahl der Verbindungen begrenzt, um die Stabilität in allen Umgebungen zu gewährleisten und zu verhindern, dass niedrigere Umgebungen die verfügbaren Verbindungen nicht ausschöpfen.
 
-Die Verbindungen sind auf 1000 pro AEM-Instanz beschränkt und Warnhinweise werden an Kunden gesendet, wenn die Zahl 750 erreicht.
+Die Verbindungen sind auf 1000 Verbindungen pro AEM-Instanz beschränkt, und bei Erreichen von 750 Verbindungen werden Warnhinweise an Kundinnen und Kunden gesendet.
 
-##### Wird die Verbindungsgrenze nur auf ausgehenden Traffic aus nicht standardmäßigen Ports oder auf den gesamten ausgehenden Traffic angewendet?
+##### Wird die Verbindungsbeschränkung nur auf ausgehenden Traffic aus nicht standardmäßigen Ports oder auf den gesamten ausgehenden Traffic angewendet?
 
-Die Beschränkung gilt nur für Verbindungen, die Advanced Networking nutzen (Ausstieg auf nicht standardmäßigen Ports, Verwendung dedizierter Egress-IP oder VPN).
+Die Beschränkung gilt nur für Verbindungen, die erweiterte Netzwerkfunktionen nutzen (Ausgang auf nicht standardmäßigen Ports, mittels dedizierter Ausgangs-IP oder VPN).
 
 ##### Wir sehen keinen signifikanten Unterschied in der Anzahl der ausgehenden Verbindungen. Warum erhalten wir die Benachrichtigung jetzt?
 
-Wenn der Kunde dynamisch Verbindungen erstellt (z. B. eine oder mehrere Verbindungen für jede Anfrage), kann ein Anstieg des Traffics zu einer Spitze der Verbindungen führen.
+Wenn die Kundin oder der Kunde dynamisch Verbindungen erstellt (z. B. eine oder mehrere Verbindungen für jede Anfrage), kann ein Anstieg des Traffics zu einer Spitze der Verbindungen führen.
 
-##### Ist es möglich, dass wir in der Vergangenheit eine ähnliche Situation erlebt haben, ohne darüber informiert zu werden?
+##### Ist es möglich, dass in der Vergangenheit eine ähnliche Situation eingetreten ist, ohne dass wir darüber informiert wurden?
 
 Warnhinweise werden nur gesendet, wenn die weiche Grenze erreicht ist.
 
-##### Was passiert, wenn die Höchstgrenze erreicht ist?
+##### Was passiert, wenn die Höchstgrenze erreicht wird?
 
-Wenn die Grenze erreicht ist, werden neue Ausgangsverbindungen von AEM über Advanced Networking (Ausstieg auf nicht standardmäßigen Ports, mittels dedizierter Egress-IP oder VPN) entfernt, um sich vor einem DoS-Angriff zu schützen.
+Wenn die harte Grenze erreicht ist, werden neue Ausgangsverbindungen von AEM über erweiterte Netzwerkfunktionen (Ausgang auf nicht standardmäßigen Ports, mittels dedizierter Ausgangs-IP oder VPN) entfernt, um sich vor einem DoS-Angriff zu schützen.
 
 ##### Kann die Grenze angehoben werden?
 
-Nein, eine große Anzahl von Verbindungen kann erhebliche Leistungseinbußen verursachen und DoS über Pods und Umgebungen hinweg bereitstellen.
+Nein. Eine große Anzahl von Verbindungen kann erhebliche Leistungseinbußen verursachen und DoS über Pods und Umgebungen hinweg ermöglichen.
 
 ##### Werden die Verbindungen nach einem bestimmten Zeitraum automatisch vom AEM geschlossen?
 
-Ja, Verbindungen werden auf JVM-Ebene und an verschiedenen Punkten in der Netzwerkinfrastruktur geschlossen. Dies wird jedoch für jeden Produktionsdienst zu spät sein. Verbindungen sollten explizit geschlossen werden, wenn sie nicht mehr benötigt werden, oder bei Verwendung von Verbindungspools zum Pool zurückgegeben werden. Andernfalls ist der Ressourcenverbrauch zu hoch und kann zu einer Erschöpfung der Ressourcen führen.
+Ja. Verbindungen werden auf JVM-Ebene und an verschiedenen Punkten in der Netzwerkinfrastruktur geschlossen. Dies wird jedoch für jeden Produktionsdienst zu spät sein. Verbindungen sollten explizit geschlossen werden, wenn sie nicht mehr benötigt werden, oder bei Verwendung von Verbindungs-Pools zum Pool zurückgegeben werden. Andernfalls ist der Ressourcenverbrauch zu hoch und kann zu einer Erschöpfung der Ressourcen führen.
 
 ##### Wenn die maximale Verbindungsgrenze erreicht ist, wirkt sich dies auf irgendwelche Lizenzen aus und verursacht zusätzliche Kosten?
 
-Nein, mit diesem Limit sind keine Lizenz oder Kosten verbunden. Es handelt sich um eine technische Begrenzung.
+Nein. Mit dieser Grenze sind keine Lizenzen oder Kosten verbunden. Es handelt sich um eine technische Grenze.
 
-##### Wie nahe kommen wir der Grenze? Wie hoch ist die Obergrenze?
+##### Wie nahe kommen wir der Grenze? Wie hoch ist die Höchstgrenze?
 
-Der Warnhinweis wird ausgelöst, wenn Verbindungen größer als 750 sind. Die maximale Grenze beträgt 1000 Verbindungen pro AEM Instanz.
+Der Warnhinweis wird ausgelöst, wenn die Anzahl von 750 Verbindungen überschritten wird. Die Höchstgrenze beträgt 1000 Verbindungen pro AEM Instanz.
 
-##### Gilt diese Beschränkung für VPNs?
+##### Gilt diese Grenze für VPNs?
 
-Ja, das Limit gilt für Verbindungen, die Advanced Networking verwenden, einschließlich VPNs.
+Ja, die Grenze gilt für Verbindungen, die erweiterte Netzwerkfunktionen verwenden, einschließlich VPNs.
 
-##### Wenn wir eine dedizierte Ausgangs-IP verwenden, gilt diese Beschränkung weiterhin?
+##### Gilt diese Grenze weiterhin, wenn wir eine dedizierte Ausgangs-IP verwenden?
 
-Ja, die Beschränkung gilt weiterhin bei Verwendung einer dedizierten Ausgangs-IP.
+Ja. Die Grenze gilt bei Verwendung einer dedizierten Ausgangs-IP weiterhin.
