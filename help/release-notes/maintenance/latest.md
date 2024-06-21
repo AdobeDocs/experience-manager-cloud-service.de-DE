@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 30%
+ht-degree: 92%
 
 ---
 
@@ -17,48 +17,48 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 16799 {#release-16799}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 16799, die am Mittwoch, 18. Juni 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 16544.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 16799, die am 18. Juni 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 16544.
 
 Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Verbesserungen {#enhancements-16799}
 
 * ASSETS-31977: Erweiterte Vorgänge zum Verschieben, Kopieren und Löschen von Assets.
-* ASSETS-33618: Automatische Transkription und Übersetzung für Videos in Dynamic Media.
+* ASSETS-33618: Automatische Transkriptions- und Übersetzungsfunktion für Videos in Dynamic Media.
 * ASSETS-35185: Genehmigungsaktion für ContentHub und DM und Hinzufügen von Eigenschaften zu damAssetLucene-Eigenschaften.
-* ASSETS-35533: Fügen Sie dem damAssetLucene-Index DRM- und CAI-Eigenschaften hinzu.
+* ASSETS-35533: Hinzufügen von DRM- und CAI-Eigenschaften zum damAssetLucene-Index.
 * ASSETS-37280: Sequenzielle Auftragsverarbeitung für die Übersetzung, wenn der Quelluntertitel (vtt) noch verarbeitet wird.
-* ASSETS-37559: Verbessertes Ereignis zum Löschen von Assets.
-* ASSETS-37723: Implementieren des Ereignisses &quot;Asset veröffentlicht&quot;.
-* ASSETS-37724: Ereignis &quot;Asset unveröffentlicht implementieren&quot;.
-* ASSETS-38614: Verbesserungen der Benutzeroberfläche &quot;Link freigeben&quot;.
-* ASSETS-39601: Wenden Sie das Validierungsregex automatisch auf den Asset Livecopy-Namen an.
-* ASSETS-39454: Aktualisierung auf Viewer 2024.5.0 in Schnellstart.
-* CNTBF-184: Unterstützungspfade darunter `/conf` im Inhaltsrücklauf.
+* ASSETS-37559: Verbessertes Ereignis des Löschens von Assets.
+* ASSETS-37723: Implementieren des Ereignisses „Asset veröffentlicht“.
+* ASSETS-37724: Implementieren des Ereignisses „Asset nicht veröffentlicht“.
+* ASSETS-38614: Verbesserungen der Benutzeroberfläche zum Freigeben von Links.
+* ASSETS-39601: Automatisches Anwenden der Validierungs-Regex auf den Asset-Livecopy-Namen.
+* ASSETS-39454: Aktualisierung auf Viewer 2024.5.0 in Quickstart.
+* CNTBF-184: Unterstützungspfade unter `/conf` im Inhaltsrückfluss.
 
 ### Behobene Probleme {#fixed-issues-16799}
 
-* ASSETS-37335: Beim Bearbeiten des Suchbereichs im Filter werden alle Felder deaktiviert.
-* ASSETS-38069: AEM DAM-PDF-Vorschauproblem bei der Auswahl des Timeline-Filters.
-* ASSETS-38215: Die Adobe Stock-Lizenzschaltfläche wurde in AEM für die Unternehmensanmeldung as a Cloud Service ausgegraut.
-* ASSETS-38578: Falsche Hyperlinks im Bericht &quot;Assets Link Share&quot;.
-* ASSETS-38678: Ansichtseinstellungen in Sammlungsdetails beschädigt.
+* ASSETS-37335: Beim Bearbeiten des Bedienfelds „Suchen“ im Filter werden alle Felder deaktiviert.
+* ASSETS-38069: Problem mit der AEM DAM-PDF-Vorschau bei der Auswahl des Zeitleistenfilters.
+* ASSETS-38215: Die Schaltfläche „Adobe Stock-Lizenz“ wurde in AEM as a Cloud Service für Unternehmensabonnements ausgegraut.
+* ASSETS-38578: Falsche Hyperlinks im Bericht zur Link-Freigabe für Assets.
+* ASSETS-38678: Anzeigeeinstellungen in den Details zur Sammlung beschädigt.
 * ASSETS-39071: Eine Web-optimierte Bereitstellung kann eine Ausnahme auslösen, wenn der MIME-Typ der ursprünglichen Ausgabedarstellung null ist.
 * ASSETS-39316: Sortieren nach Namen funktioniert nicht in Sammlungen.
-* ASSETS-39377: Massen-Import von OneDrive schlägt möglicherweise fehl, wenn der Backdruck von einer Remote-API empfangen wird.
-* ASSETS-39428: Rendering-Probleme in der Benutzeroberfläche von Copyright-Management.
+* ASSETS-39377: Massenimport von OneDrive schlägt möglicherweise fehl, wenn der Gegendruck von einer Remote-API empfangen wird.
+* ASSETS-39428: Render-Probleme in der Benutzeroberfläche von Copyright-Management.
 * CQ-4357150: Guava im cq-content-sync-Bundle.
-* GRANITE-52573: Anforderungen mit einem doppelten Schrägstrich `//` mit Status-Code 400 abgelehnt werden.
-* SCRNS-4194: Die Abhängigkeit von Google Guava-APIs wurde entfernt.
-* SCRNS-4360: Fehlende Schaltfläche &quot;Veröffentlichung verwalten und Quick Publish&quot;für Benutzer ohne Administratorrechte im Inhaltsanbieter für Kanäle.
+* GRANITE-52573: Anfragen mit einem doppelten Schrägstrich `//` werden mit dem Status-Code 400 abgelehnt. 
+* SCRNS-4194: Entfernen der Abhängigkeit von Google Guava-APIs.
+* SCRNS-4360: Fehlende Schaltfläche „Veröffentlichung verwalten und Quick Publish“ für Benutzende ohne Administratorrechte im Inhaltsanbieter für Kanäle.
 * SCRNS-4323: Ausblenden/Deaktivieren von Launches aus screens.html.
 
 ### Bekannte Probleme {#known-issues-16799}
 
 >[!NOTE]
-> AEM Engineering hat eine Regression für die Funktionen von Launches identifiziert, die sich auf aktuelle AEM ab 16461 auswirkt. Aufgrund dieser Regression werden neue Launches (die erstellt wurden, nachdem neue Versionen angewendet wurden), die nicht tiefe Seiten enthalten, aufgrund fehlender Konfigurationen nicht ordnungsgemäß weitergeleitet.
-> Falls Ihre Umgebungen betroffen sind, steht dem Support ein Shell-Skript zur Verfügung, mit dem fehlende Konfigurationen identifiziert und aktualisiert werden können (interne Referenz SITES-22457).
-> Es wird eine längerfristige Korrektur bereitgestellt, die sicherstellt, dass neue Launches mit allen richtigen Konfigurationen erstellt werden. Bis dahin ist auch eine interne Patch-Version auf Anfrage verfügbar.
+> AEM Engineering hat eine Regression für die Funktionen von Launches identifiziert, die sich auf aktuelle AEM-Versionen ab 16461 auswirkt. Aufgrund dieser Regression werden neue Launches (die nach der Anwendung neuer Versionen erstellt wurden), die nicht-tiefe Seiten enthalten, aufgrund fehlender Konfigurationen nicht ordnungsgemäß weitergeleitet.
+> Falls Ihre Umgebungen betroffen sind, ist über den Kunden-Support ein Shell-Skript erhältlich, mit dem fehlende Konfigurationen identifiziert und aktualisiert werden können (interne Referenz SITES-22457).
+> Es wird eine längerfristige Korrektur bereitgestellt, die sicherstellt, dass neue Launches mit allen richtigen Konfigurationen erstellt werden. Bis dahin ist auf Anfrage auch eine interne Patch-Version verfügbar.
 
 #### Formulare
 
