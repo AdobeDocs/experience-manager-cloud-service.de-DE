@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
+source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 92%
+source-wordcount: '649'
+ht-degree: 91%
 
 ---
 
@@ -62,7 +62,7 @@ Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für dies
 
 #### Formulare
 
-1. Wenn ein Benutzer das neueste AEM Forms SDK herunterlädt (`AEM Forms add-on v2024.05.04.00-240400`), kann die Batch-Datei den Docker-Dienst nicht starten. So beheben Sie dieses Problem:
+1. Wenn ein Benutzer die AEM Forms SDK-Version herunterlädt, die größer ist als `AEM Forms add-on v2024.05.04.00-240400`, kann die Batch-Datei den Docker-Dienst nicht starten. So beheben Sie dieses Problem:
    1. Laden Sie die [Ordner](/help/forms/assets/sdk_hotfix.zip).
    1. Extrahieren Sie den Inhalt aus dem heruntergeladenen Ordner und kopieren Sie den `sdk.sh` und `sdk.bat` -Dateien.
    1. Vorhandene ersetzen `sdk.sh` und `sdk.bat` -Dateien in Ihrem AEM Forms-SDK mit den neuen Dateien.
