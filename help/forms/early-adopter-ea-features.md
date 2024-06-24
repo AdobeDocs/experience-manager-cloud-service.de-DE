@@ -1,31 +1,31 @@
 ---
-title: Aktuelle Funktionen früherer Entwickler von [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Aktuelle Funktionen früherer Entwickler von [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Aktuelle Funktionen für frühzeitigen Zugriff [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Aktuelle Funktionen für frühzeitigen Zugriff [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 25%
 
 ---
 
-# AEM Forms-Programm für frühzeitige Teilnehmer
+# AEM Forms Early Access Program
 
-Das AEM Forms Early Adopter Program bietet Ihnen die einmalige Möglichkeit, vor allen anderen exklusiven Zugriff auf innovative Funktionen zu erhalten und ihre Entwicklung zu gestalten. Das Programm bietet folgende Möglichkeiten:
+Das AEM Forms Early Access Program bietet Ihnen die einmalige Möglichkeit, vor allen anderen erstklassigen Funktionen exklusiven Zugriff zu erhalten und ihre Entwicklung zu gestalten. Das Programm bietet folgende Möglichkeiten:
 
 * Seien Sie einer der ersten, die Zugang zu modernster Technologie erhalten, bevor sie den Mainstream trifft.
 * Co-Innovate mit dem Produktteam, die die Zukunft des Produkts gemeinsam gestalten. Nutzen Sie Ihre Anwendungsbeispiele, um die Entwicklung zu lenken, um sicherzustellen, dass die Innovation ausgereift ist und Ihre realen Herausforderungen bewältigt.
 * Geben Sie Feedback und helfen Sie uns, Probleme vor dem Start zu beschneiden, was zu einem reibungsloseren Benutzererlebnis bei vollständiger Veröffentlichung führt.
 
-## Wie kann ich dem Programm Early Adopter beitreten?
+## Wie kann ich dem Programm für frühzeitigen Zugriff beitreten?
 
-Wenn Sie Interesse haben, an unserem Early Adopter-Programm für eine frühe Adopter-Innovation teilzunehmen, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
+Wenn Sie an unserem Early Access-Programm für Early Access-Innovationen interessiert sind, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
 
-## Frühe Innovationen für Adopter
+## Frühe Zugriffsinnovationen
 
 ### Generative KI von AEM Forms (Gen AI)
 
