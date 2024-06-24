@@ -1,10 +1,11 @@
 ---
 title: Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Dispatcher
 description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Sie können das Caching für persistierte Abfragen in AEM Headless aktivieren.
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
 

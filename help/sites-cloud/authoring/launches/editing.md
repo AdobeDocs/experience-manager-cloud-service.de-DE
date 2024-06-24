@@ -3,10 +3,10 @@ title: Bearbeiten von Launches
 description: Nachdem Sie einen Launch für Ihre Seite (oder eine Reihe von Seiten) erstellt haben, können Sie den Inhalt in der „Launch Copy“ der Seiten bearbeiten.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 100%
 

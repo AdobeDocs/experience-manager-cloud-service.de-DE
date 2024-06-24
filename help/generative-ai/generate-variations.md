@@ -2,7 +2,9 @@
 title: Generieren von Varianten
 description: Erfahren Sie mehr über die Generierung von Varianten, auf die über AEM as a Cloud Service Zugriff und die Sidekick von Edge Delivery Services zugegriffen werden kann.
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ So fügen Sie beispielsweise eine Audience aus einer Datei auf dem Google-Laufwe
 1. Erstellen Sie in Google Drive eine Tabellendatei mit zwei Spalten:
    1. Die erste Spalte wird im Dropdown-Menü angezeigt.
    1. Die zweite Spalte ist die Zielgruppenbeschreibung.
-1. Veröffentlichen Sie die Datei:
+1. Publish der Datei:
    1. Datei -> Freigeben -> Im Web veröffentlichen -> CSV
 1. Kopieren Sie die URL in die veröffentlichte Datei.
 1. Navigieren Sie zu Varianten generieren .

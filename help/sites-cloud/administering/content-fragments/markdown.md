@@ -4,9 +4,10 @@ description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax ve
 feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '559'
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+workflow-type: tm+mt
+source-wordcount: '561'
 ht-degree: 100%
 
 ---
@@ -31,7 +32,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Zum Beispiel:
 
     `## This is an H2`
 
@@ -39,7 +40,7 @@ Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Übers
 
     `###### This is a H6`
 
-Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Beispiel:
+Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Zum Beispiel:
 
     `This is an H1`
 
@@ -51,7 +52,7 @@ Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeich
 
 ## Absätze und Zeilenumbrüche {#paragraphs-and-line-breaks}
 
-Ein Absatz ist einfach eine oder mehrere aufeinanderfolgende Textzeilen, die durch eine oder mehrere Leerzeilen getrennt sind. Eine Leerzeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
+Ein Absatz ist einfach eine oder mehrere aufeinander folgende Textzeilen, die durch eine oder mehrere leere Zeilen getrennt sind. Eine leere Zeile ist eine Zeile, die höchstens Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
 
 Ein Zeilenumbruch wird durch Beenden einer Zeile mit zwei oder mehr Leerzeichen und Zeilenschalter erstellt.
 
@@ -105,7 +106,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol „>“ vor dem Text einfügen. Beispiel:
+Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Zum Beispiel:
 
     `>This is block quotes`
 
@@ -113,7 +114,7 @@ Sie können Text zitieren, indem Sie das Symbol „>“ vor dem Text einfügen. 
 
     `>asdfahsdlfasdfj`
 
-Sie können verschachtelte Blockzitate nutzen. Beispiel:
+Sie können verschachtelte Blockzitate nutzen. Zum Beispiel:
 
     `> This is the first level of quoting.`
 
@@ -129,7 +130,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
+Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Zum Beispiel:
 
     `* item in list`
 
@@ -137,7 +138,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummern und danach jeweils einen Punkt hinzu. Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Zum Beispiel:
 
     `1. First item in list.`
 
@@ -167,13 +168,13 @@ Sie können Text wie folgt fett formatieren:
 
 Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
 
-Beispiel:
+Zum Beispiel:
 
     ``Use the `printf()` function.``
 
 ## Code-Blöcke {#code-blocks}
 
-Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
+Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Zum Beispiel:
 
     `This is a normal paragraph.`
 

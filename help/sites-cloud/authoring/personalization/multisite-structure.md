@@ -3,10 +3,10 @@ title: Strukturierung von Multisite-Management für zielgerichtete Inhalte
 description: Im Diagramm ist der Aufbau der Multisite-Unterstützung für zielgerichtete Inhalte dargestellt.
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 

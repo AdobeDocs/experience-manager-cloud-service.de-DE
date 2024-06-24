@@ -2,10 +2,10 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset. Erfahren Sie, wie Sie diese anpassen können.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-feature: Developing
+feature: Developing, Content Fragments
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 100%
 

@@ -6,10 +6,11 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: '526'
+ht-degree: 100%
 
 ---
 
@@ -26,11 +27,11 @@ Bei einer möglichen HTTP-Zuordnung wird allen Anfragen an `localhost:4503` das 
 
 `localhost:4503/content/we-retail/en/products.html`
 
-Zugriff über:
+über:
 
 `localhost:4503/we-retail/en/products.html`
 
-da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html` hinzufügt.
+erlaubt, da bei der Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html` hinzufügt wird.
 
 >[!CAUTION]
 >
@@ -42,14 +43,15 @@ da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.h
 
 ## Anzeigen von Zuordnungsdefinitionen {#viewing-mapping-definitions}
 
-Die Zuordnungen bilden zwei Listen, die der JCR Resource Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
+Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
 Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * Configuration
 Zeigt die aktuelle Konfiguration (wie für den [Apache Sling-Ressourcen-Resolver](/help/overview/seo-and-url-management.md#etc-map) definiert) an.
 
-* Konfigurationstest Hier können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
+* Konfigurationstest
+Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
 
 * **Resolver Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
@@ -69,11 +71,11 @@ den
 
 **Ersatz** `/libs/cq/core/content/welcome.html` aus.
 
-So wird eine Anfrage umgeleitet:
+aus, zur Umleitung der Anfrage
 
-`https://localhost:4503/welcome` &grave;&grave;
+`https://localhost:4503/welcome` ``
 
-An:
+an:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -81,7 +83,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->Es stehen eine Vielzahl von Ressourcen zur Verfügung, die das Definieren regulärer Ausdrücke erläutern, z. B. [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es steht eine Vielzahl von Ressourcen zur Verfügung, die das Definieren regulärer Ausdrücke erläutern, z. B. [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 

@@ -3,13 +3,14 @@ title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit G
 description: Lernen Sie die grundlegenden Konzepte zur Realisierung eines AEM Headless CMS unter Verwendung von Inhaltsfragmenten mit GraphQL für die Bereitstellung von Headless-Inhalten kennen.
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 95%
+source-wordcount: '737'
+ht-degree: 96%
 
 ---
-
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
@@ -40,7 +41,7 @@ In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
 * Sie können Inhaltsfragmente verwenden, um Inhalte zu erstellen, die nicht primär für die direkte Veröffentlichung (1:1) auf formatierten Seiten vorgesehen sind.
 
-* Der Inhalt Ihrer Inhaltsfragmente wird in einer vorgegebenen Art und Weise strukturiert – entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Programme, die Ihre Inhalte weiterverarbeiten werden.
+* Der Inhalt Ihrer Inhaltsfragmente wird in einer vorgegebenen Art und Weise strukturiert – entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Anwendungen, die Ihre Inhalte dann weiterverarbeiten.
 
 ## Ein Übersicht über GraphQL {#graphql-overview}
 
@@ -106,7 +107,7 @@ Um die Analyse zu unterstützen, bietet AEM mehrere Methoden, die Struktur Ihrer
 
 Siehe [Analysieren der Struktur von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/analysis.md) Weitere Informationen:
 
-* [Strukturstruktur](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
+* [Baumstruktur](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 
 ## Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 

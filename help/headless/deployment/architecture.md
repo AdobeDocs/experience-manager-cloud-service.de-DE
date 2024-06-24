@@ -1,9 +1,10 @@
 ---
 title: Architektur von AEM Headless
-description: Erfahren Sie mehr über die allgemeine Architektur für Adobe Experience Manager im Zusammenhang mit einer Headless-Implementierung. Machen Sie sich mit der Rolle der AEM-Autoren-, Vorschau- und Veröffentlichungs-Services und dem empfohlenen Implementierungsmuster für Headless-Programme vertraut.
-feature: Content Fragments,GraphQL API
+description: Erfahren Sie mehr über die allgemeine Architektur für Adobe Experience Manager im Zusammenhang mit einer Headless-Bereitstellung. Machen Sie sich mit der Rolle der AEM-Autoren-, Vorschau- und Veröffentlichungs-Services und dem empfohlenen Bereitstellungsmuster für Headless-Programme vertraut.
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
@@ -30,7 +31,7 @@ Das häufigste Bereitstellungsmuster bei AEM Headless-Programmen besteht darin, 
 
 ![Architektur der Autoren- und Veröffentlichungsinstanz](assets/autho-publish-architecture-diagram.png)
 
-Das obige Diagramm zeigt dieses allgemeine Implementierungsmuster.
+Das obige Diagramm zeigt dieses allgemeine Bereitstellungsmuster.
 
 1. Ein **Inhaltsautor** verwendet den AEM-Autoren-Service zum Erstellen, Bearbeiten und Verwalten von Inhalten.
 1. Der **Inhaltsautor** und andere interne Benutzern können die Inhalte direkt im Autoren-Service in der Vorschau anzeigen. Es kann eine Vorschauversion des Programms eingerichtet werden, die eine Verbindung zum Autoren-Service herstellt.
@@ -38,9 +39,9 @@ Das obige Diagramm zeigt dieses allgemeine Implementierungsmuster.
 1. Der **Dispatcher** ist eine Ebene vor dem **Veröffentlichungs**-Service, die bestimmte Anforderungen zwischenspeichern kann und eine Sicherheitsebene bietet.
 1. Endbenutzer interagieren mit der Produktionsversion des Programms. Das Produktionsprogramm stellt über den Dispatcher eine Verbindung zum Veröffentlichungs-Service her und verwendet die GraphQL-APIs, um Inhalte anzufragen und zu nutzen.
 
-## Autorenvorschau der Implementierung der Veröffentlichungsinstanz
+## Autorenvorschau der Bereitstellung der Veröffentlichungsinstanz
 
-Eine weitere Option für Headless-Implementierungen besteht darin, einen **AEM-Vorschau**-Service einzubinden. Mit diesem Ansatz können Inhalte zuerst im **Vorschau**-Service veröffentlicht werden und eine Vorschauversion des Headless-Programms kann eine Verbindung dazu herstellen. Der Vorteil dieses Ansatzes besteht darin, dass der **Vorschau**-Service mit denselben Authentifizierungsanforderungen und -berechtigungen eingerichtet werden kann wie der **Veröffentlichungs-** Service, was die Simulation des Produktionserlebnisses erleichtert.
+Eine weitere Option für Headless-Bereitstellungen besteht darin, einen **AEM-Vorschau**-Service einzubinden. Mit diesem Ansatz können Inhalte zuerst im **Vorschau**-Service veröffentlicht werden und eine Vorschauversion des Headless-Programms kann eine Verbindung dazu herstellen. Der Vorteil dieses Ansatzes besteht darin, dass der **Vorschau**-Service mit denselben Authentifizierungsanforderungen und -berechtigungen eingerichtet werden kann wie der **Veröffentlichungs-** Service, was die Simulation des Produktionserlebnisses erleichtert.
 
 ![Architektur der Autorenvorschau und Veröffentlichungsinstanz](assets/author-preview-publish-architecture-diagram.png)
 

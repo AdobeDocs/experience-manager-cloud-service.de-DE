@@ -2,8 +2,10 @@
 title: Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte GraphQL-Filterung in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten aktualisieren.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -11,11 +13,11 @@ ht-degree: 100%
 
 # Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung {#updating-content-fragments-for-optimized-graphql-filtering}
 
-Um die Leistung Ihrer GraphQL-Filter zu optimieren, führen Sie eine Prozedur zur Aktualisierung Ihrer Inhaltsfragmente aus.
+Um die Leistung Ihrer GraphQL-Filter zu optimieren, führen Sie eine Prozedur aus, um Ihre Inhaltsfragmente zu aktualisieren.
 
 >[!NOTE]
 >
->Nach dem Aktualisieren Ihrer Inhaltsfragmente können Sie die Empfehlungen zum [Optimieren von GraphQL-Abfragen](/help/headless/graphql-api/graphql-optimization.md) befolgen.
+>Nach dem Aktualisieren Ihrer Inhaltsfragmente können Sie den Empfehlungen zum [Optimieren von GraphQL-Abfragen](/help/headless/graphql-api/graphql-optimization.md) folgen.
 
 
 ## Voraussetzungen {#prerequisites}

@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie Ihre AEM-Inhaltsfragmente über die Konsole u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2628'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -307,7 +308,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
   >[!NOTE]
   >
-  >Weitere Informationen zu Vorschauumgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+  >Weitere Informationen zu den Vorschauumgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
