@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
-workflow-type: ht
-source-wordcount: '4244'
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
+workflow-type: tm+mt
+source-wordcount: '4215'
 ht-degree: 100%
 
 ---
@@ -223,11 +223,6 @@ Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnd
 
 
 ### Globale Flags {#global-flags}
-
->[!NOTE]
->
-> Diese globalen Flags sind noch nicht verfügbar. Sie werden im Laufe des Juni eingeführt.
-> 
 
 * Verwenden Sie für eine weniger ausführliche Ausgabe das Flag „leise“:
 
@@ -565,11 +560,6 @@ Sie können die RDE auch direkt auf der Seite **Übersicht** auf der Karte **Umg
 Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umgebungen finden Sie in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Befehle, die die JSON-Ausgabe unterstützen {#json-commands}
-
->[!NOTE]
->
-> Diese Befehle sind noch nicht verfügbar. Sie werden im Laufe des Juni eingeführt.
-> 
 
 Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsolenausgabe unterdrückt und gültige JSON_Dateien zurückgibt, die in Skripten verarbeitet werden sollen. Im Folgenden finden Sie einige unterstützte Befehle mit Beispielen für die JSON-Ausgabe.
 
