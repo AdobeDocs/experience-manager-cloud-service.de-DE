@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -122,12 +122,12 @@ Diese Version umfasst ein bedeutendes Upgrade des visuellen Regeleditors für ad
 
 
 
-### Early-Adopter-Funktionen in AEM Forms {#forms-new-early-adopter-features}
+### Funktionen für frühzeitigen Zugriff in AEM Forms {#forms-new-access-adopter-features}
 
-Das Early-Adopter-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit, vor allen anderen exklusiven Zugang zu innovativen Technologien zu erhalten und ihre Entwicklung mitzugestalten.
+Das AEM Forms Early Access Program bietet Ihnen die einmalige Möglichkeit, sich vor allen anderen einen exklusiven Zugang zu innovativen Technologien zu verschaffen und ihre Entwicklung zu gestalten.
 Das Programm bietet Zugriff auf verschiedene Innovationen.
 
-In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Adopter-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Adopter-Programm](/help/forms/early-adopter-ea-features.md).
+In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Programms für frühzeitigen Zugang verfügbaren Innovationen finden Sie unter [Dokumentation zum AEM Forms Early Access Program](/help/forms/early-access-ea-features.md).
 
 #### Verbesserte Bot-Schutzmethoden
 
@@ -152,7 +152,7 @@ Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Er
 
 >[!IMPORTANT]
 >
-> Wenn Sie Interesse haben, an unserem Early Adopter-Programm für Early-Adopter-Innovationen teilzunehmen, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
+> Wenn Sie an unserem Early Access-Programm für Neuerungen beim frühzeitigen Zugriff interessiert sind, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
@@ -174,7 +174,7 @@ Mit [schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs)](/h
 
 #### RDE-Unterstützung für Frontend-Code mithilfe von Site-Designs und Site-Vorlagen {#rde-frontend}
 
-[RDEs unterstützen jetzt Frontend-Code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) basierend auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) für Early Adopters. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung und nicht über eine [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+[RDEs unterstützen jetzt Front-End-Code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) basierend auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md)für einen frühen Anwender. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung und nicht über eine [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 #### Verbesserte Protokollierung für RDEs {#rde-logging}
 
