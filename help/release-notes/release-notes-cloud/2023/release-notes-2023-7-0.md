@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2023.7.0 von [!DNL Adobe Experience 
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Assets Essentials sortiert die Suchergebnisse nun standardmäßig nach Relevanz.
 
 * **[React-Komponenten für Headless-Formulare](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: Sie können jetzt Ausgabedarstellungen adaptiver Headless-Formulare mit den bereitgestellten vordefinierten React-Komponenten in der Vorschau anzeigen und anpassen. Diese Komponenten nutzen BEM-Klassen aus den Kernkomponenten adaptiver Formulare für die Formatierung, sodass Sie das Erscheinungsbild mühelos an Ihre spezifischen Anforderungen anpassen können.
 
-* [**Adaptive Formulare mit wiederholbaren Abschnitten erstellen**](/help/forms/create-forms-repeatable-sections.md): Sie können jetzt die Komponenten [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de), [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=de) und [horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de) in einem auf Kernkomponenten basierenden adaptiven Formular verwenden, um mehrere Datensätze zu erfassen. Mit diesen wiederholbaren Abschnitten können Sie problemlos mehrere Dateneinträge bereitstellen. Dies ist nützlich, wenn die erforderlichen Dateninstanzen im Voraus unbekannt sind. Ein Formularbefüller kann problemlos Abschnitte hinzufügen oder entfernen, Formulare an verschiedene Dateneingabeszenarien anpassen und die Erfassung mehrfacher Vorkommen desselben Datensatzes vereinfachen.
+* [**Adaptive Formulare mit wiederholbaren Abschnitten erstellen**](/help/forms/create-forms-repeatable-sections.md): Sie können jetzt die Komponenten [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=de), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de), [Bedienfeld](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) und [horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=de) in einem auf Kernkomponenten basierenden adaptiven Formular verwenden, um mehrere Datensätze zu erfassen. Mit diesen wiederholbaren Abschnitten können Sie problemlos mehrere Dateneinträge bereitstellen. Dies ist nützlich, wenn die erforderlichen Dateninstanzen im Voraus unbekannt sind. Ein Formularbefüller kann problemlos Abschnitte hinzufügen oder entfernen, Formulare an verschiedene Dateneingabeszenarien anpassen und die Erfassung mehrfacher Vorkommen desselben Datensatzes vereinfachen.
 
 
 ### Vorab veröffentlichte Funktionen, die in [!DNL Forms] verfügbar sind {#pre-release-features-available-in-forms-channel}
