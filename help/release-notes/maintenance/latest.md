@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -60,12 +60,12 @@ Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für dies
 > Falls Ihre Umgebungen betroffen sind, ist über den Kunden-Support ein Shell-Skript erhältlich, mit dem fehlende Konfigurationen identifiziert und aktualisiert werden können (interne Referenz SITES-22457).
 > Es wird eine längerfristige Korrektur bereitgestellt, die sicherstellt, dass neue Launches mit allen richtigen Konfigurationen erstellt werden. Bis dahin ist auf Anfrage auch eine interne Patch-Version verfügbar.
 
-#### Formulare
+#### Forms
 
-1. Wenn ein Benutzer die AEM Forms SDK-Version herunterlädt, die größer ist als `AEM Forms add-on v2024.05.04.00-240400`, kann die Batch-Datei den Docker-Dienst nicht starten. So beheben Sie dieses Problem:
-   1. Laden Sie die [Ordner](/help/forms/assets/sdk_hotfix.zip).
-   1. Extrahieren Sie den Inhalt aus dem heruntergeladenen Ordner und kopieren Sie den `sdk.sh` und `sdk.bat` -Dateien.
-   1. Vorhandene ersetzen `sdk.sh` und `sdk.bat` -Dateien in Ihrem AEM Forms-SDK mit den neuen Dateien.
+1. Wenn ein Benutzer die AEM Forms SDK-Version herunterlädt, die größer ist als `AEM Forms add-on v2024.05.04.00-240400`, kann die Batch-Datei den Docker-Dienst nicht starten. Gehen Sie folgendermaßen vor, um das Problem zu lösen:
+   1. Herunterladen des [Ordners](/help/forms/assets/sdk_hotfix.zip).
+   1. Extrahieren der Inhalte aus dem heruntergeladenen Ordner und Kopieren der Dateien `sdk.sh` und `sdk.bat`.
+   1. Ersetzen der vorhandenen Dateien `sdk.sh` und `sdk.bat` in Ihrem AEM Forms-SDK durch die neuen Dateien.
 
 ### Änderungshinweis {#change-notice-16799}
 
