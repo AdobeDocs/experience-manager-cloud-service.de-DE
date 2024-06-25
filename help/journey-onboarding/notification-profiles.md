@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstelle
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 92%
+source-wordcount: '1130'
+ht-degree: 80%
 
 ---
 
@@ -18,14 +18,17 @@ Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstellen, um den Emp
 
 ## Übersicht {#overview}
 
-Von Zeit zu Zeit kontaktiert Adobe Benutzer bezüglich ihrer AEM as a Cloud Service Umgebungen. Neben produktinternen Benachrichtigungen verwendet Adobe gelegentlich auch E-Mails für Benachrichtigungen. Es gibt zwei Arten von E-Mail-Benachrichtigungen:
+Von Zeit zu Zeit kontaktiert Adobe Benutzende bezüglich ihrer AEM as a Cloud Service-Umgebung. Neben produktinternen Benachrichtigungen verwendet Adobe gelegentlich auch E-Mails für Benachrichtigungen. Es gibt zwei Arten von E-Mail-Benachrichtigungen:
 
 * **Benachrichtigung bei Vorfällen**: Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem bei Ihrer AEM as a Cloud Service-Umgebung erkannt hat.
 * **Proaktive Benachrichtigung**: Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service-Umgebung von Vorteil sein kann.
 
->[!NOTE]
->
->Das Zuweisen von Gruppen zu proaktiven Benachrichtigungen wird nicht unterstützt. Stattdessen müssen Sie den Produktprofilen Benutzer direkt zuweisen.
+Benutzer können diese Benachrichtigungen auch für spezifische Programme erhalten, die auf ihren [benutzerdefinierte Gruppenberechtigungen.](/help/implementing/cloud-manager/custom-permissions.md)
+
+Darüber hinaus wird die Zuweisung von Gruppen zu proaktiven Benachrichtigungen unterstützt und Benutzer und Gruppen können den Produktprofilen direkt zugewiesen werden.
+
+* Benutzer in den Gruppen für Vorfälle und proaktive Benachrichtigungen erhalten standardmäßig Benachrichtigungen für alle Programme.
+* Wenn Benutzer jedoch nicht alle Benachrichtigungen erhalten möchten, können sie benutzerdefinierte READ-Berechtigungen verwenden, um anzugeben, welche Programmbenachrichtigungen sie erhalten möchten.
 
 Damit die richtigen Personen diese Benachrichtigungen erhalten, müssen Sie Benutzerprofile konfigurieren und zuweisen, wie in diesem Dokument beschrieben.
 
@@ -38,7 +41,7 @@ Da Benutzergruppen in der Admin Console erstellt und gepflegt werden, müssen vo
 
 ## Erstellen neuer Cloud Manager-Produktprofile {#create-profiles}
 
-Erstellen Sie zwei Benutzerprofile, um den Erhalt von Benachrichtigungen ordnungsgemäß einzurichten. Diese Schritte werden nur einmal ausgeführt.
+Um den Empfang von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie zwei Benutzerprofile erstellen. Diese Schritte werden nur einmal ausgeführt.
 
 1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com` an.](https://adminconsole.adobe.com)
 
@@ -52,7 +55,7 @@ Erstellen Sie zwei Benutzerprofile, um den Erhalt von Benachrichtigungen ordnung
 
    ![Liste der Instanzen in der Admin Console](assets/cloud_manager_instance.png)
 
-1. Sie können die Liste aller konfigurierten Cloud Manager-Produktprofile anzeigen.
+1. Es wird Ihnen eine Liste aller konfigurierten Cloud Manager-Produktprofile angezeigt.
 
    ![Produktprofile in der Admin Console](assets/cloud_manager_profiles.png)
 
@@ -60,7 +63,8 @@ Erstellen Sie zwei Benutzerprofile, um den Erhalt von Benachrichtigungen ordnung
 
    * **Name des Produktprofils**: `Incident Notification - Cloud Service`
    * **Anzeigename**: `Incident Notification - Cloud Service`
-   * **Beschreibung**: Cloud Manager-Profil für die Benutzer, die Benachrichtigungen während eines Vorfalls oder dann erhalten, wenn Adobe ein potenzielles Verfügbarkeitsproblem in Ihrer AEM as a Cloud Service-Umgebung identifiziert hat
+   * **Beschreibung**: Cloud Manager-Profil für Benutzer, die Benachrichtigungen bei einem Vorfall erhalten oder bei denen Adobe ein potenzielles Verfügbarkeitsproblem mit Ihrer AEM as a Cloud Service Umgebung festgestellt hat.
+      * Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -69,6 +73,7 @@ Erstellen Sie zwei Benutzerprofile, um den Erhalt von Benachrichtigungen ordnung
    * **Name des Produktprofils**: `Proactive Notification - Cloud Service`
    * **Anzeigename**: `Proactive Notification - Cloud Service`
    * **Beschreibung**: Cloud Manager-Profil für Benutzer, die Benachrichtigungen erhalten, wenn ein Mitglied des Adobe Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung für Ihre AEM as a Cloud Service-Umgebungskonfiguration bereitstellen möchte
+      * Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -88,7 +93,7 @@ Nachdem die Profile erstellt wurden, müssen Sie die entsprechenden Benutzenden 
 
 Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine Federated IDs eingerichtet wurden.
 
-1. Identifizieren Sie die Benutzer, die Benachrichtigungen zu Vorfällen oder proaktive Benachrichtigungen erhalten sollen.
+1. Identifizieren Sie die Benutzer oder Gruppen, die Vorkommnisse oder proaktive Benachrichtigungen erhalten sollen.
 
 1. Melden Sie sich unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) bei der Admin Console an, wenn Sie noch nicht angemeldet sind.
 
@@ -113,13 +118,15 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine F
 
 1. Klicken Sie auf **Speichern**, und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet.
 
-Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten sollen.
+Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
+
+Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten sollen.
 
 ### Hinzufügen von vorhandenen Benutzenden zu Profilen {#existing-user}
 
 Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die bereits Federated IDs vorhanden sind.
 
-1. Identifizieren Sie die Benutzer, die Benachrichtigungen zu Vorfällen oder proaktive Benachrichtigungen erhalten sollen.
+1. Identifizieren Sie die Benutzer oder Gruppen, die Vorkommnisse oder proaktive Benachrichtigungen erhalten sollen.
 
 1. Melden Sie sich unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) bei der Admin Console an, wenn Sie noch nicht angemeldet sind.
 
@@ -142,10 +149,12 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die bereits Fede
 
 1. Klicken Sie auf **Speichern**, und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet.
 
-Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten sollen.
+Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
+
+Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten sollen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
-* [Aktionszentrum](/help/operations/actions-center.md) - Nutzen Sie das Aktionszentrum, um bequem auf Zwischenfälle und andere wichtige Informationen zu reagieren.
+* [Aktionszentrum](/help/operations/actions-center.md) – Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können.
