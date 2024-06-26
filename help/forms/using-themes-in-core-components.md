@@ -4,8 +4,9 @@ description: Mithilfe von Designs und unter Verwendung von Kernkomponenten könn
 keywords: Kernkomponenten zum Formatieren von adaptiven Formularen. Verwenden eines Designs in Kernkomponenten, Formatieren eines adaptiven Formulars, Anpassen von Designs
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 100%
 

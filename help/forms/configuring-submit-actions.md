@@ -3,10 +3,11 @@ title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3914'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +24,8 @@ Eine Übermittlungsaktion wird ausgelöst, wenn Benutzende in einem adaptiven Fo
 
 * [An REST-Endpunkt übermitteln](#submit-to-rest-endpoint)
 * [E-Mail senden](#send-email)
-* [Senden im Formulardatenmodus (FDM) l](#submit-using-form-data-model)
-* [AEM-Workflow aufrufen](#invoke-an-aem-workflow)
+* [Senden mit Formulardatenmodell (FDM)](#submit-using-form-data-model)
+* [Aufrufen eines AEM-Workflows](#invoke-an-aem-workflow)
 * [An SharePoint senden](#submit-to-sharedrive)
 * [An OneDrive senden](#submit-to-onedrive)
 * [Senden an Azure Blob-Speicher](#azure-blob-storage)
@@ -139,9 +140,9 @@ For information about how to configure the Submit to forms workflow Submit Actio
 
 ## Senden mit Formulardatenmodell (FDM) {#submit-using-form-data-model}
 
-Die **[!UICONTROL Senden mit Formulardatenmodell]** Mit der Übermittlungsaktion werden gesendete adaptive Formulardaten für das angegebene Datenmodellobjekt in einem Formulardatenmodell (FDM) in seine Datenquelle geschrieben. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
+Die Übermittlungsaktion **[!UICONTROL Senden mit Formulardatenmodell]** schreibt gesendete Daten eines adaptiven Formulars für das angegebene Datenmodellobjekt in die Datenquelle eines Formulardatenmodells (FDM). Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
 
-Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell (FDM) und einem Datensatzdokument (DoR) an die Datenquelle senden. Weitere Informationen zum Formulardatenmodell (FDM) finden Sie unter [[!DNL AEM Forms] Datenintegration](data-integration.md).
+Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell (FDM) und einem Datensatzdokument (Document of Record, DoR) an die Datenquelle senden. Weitere Informationen zum Formulardatenmodell (FDM) finden Sie unter [[!DNL AEM Forms] Datenintegration](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -150,7 +151,7 @@ The **Forms Portal Submit Action** option makes form data available through an [
 
 For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
 
-## AEM-Workflow aufrufen {#invoke-an-aem-workflow}
+## Aufrufen eines AEM-Workflows {#invoke-an-aem-workflow}
 
 Die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verknüpft ein adaptives Formular mit einem [AEM-Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de#extending-aem). Wenn ein Formular gesendet wird, startet der verknüpfte Workflow automatisch auf der Autoreninstanz. Sie können die Datendatei, die Anhänge und das Datensatzdokument am Payload-Speicherort des Workflows oder in einer Variablen speichern. Wenn der Workflow für die externe Datenspeicherung markiert und für eine externe Datenspeicherung konfiguriert ist, ist nur die Variablenoption verfügbar. Sie können aus der Liste der für das Workflow-Modell verfügbaren Variablen auswählen. Wenn der Workflow für die externe Datenspeicherung zu einem späteren Zeitpunkt und nicht zum Zeitpunkt der Workflow-Erstellung markiert ist, stellen Sie sicher, dass die erforderlichen Variablenkonfigurationen vorhanden sind.
 
@@ -243,7 +244,7 @@ Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/
 So verwenden Sie die Sendeaktion [!UICONTROL An SharePoint senden] in einem adaptiven Formular:
 
 1. [Erstellen einer SharePoint-Listenkonfiguration](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
-1. [Verwenden des Sendevorgangs mit dem Formulardatenmodell (FDM) in einem adaptiven Formular](#use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit der konfigurierten Microsoft® SharePoint verbunden.
+1. [Verwenden von „Senden mit Formulardatenmodell (FDM)“ in einem adaptiven Formular](#use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
 #### Erstellen einer Microsoft SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
 
@@ -267,11 +268,11 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
 
 
-#### Verwenden des Sendevorgangs mit dem Formulardatenmodell (FDM) in einem adaptiven Formular {#use-submit-using-fdm}
+#### Verwenden von „Senden mit Formulardatenmodell (FDM)“ in einem adaptiven Formular {#use-submit-using-fdm}
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Listenspeicherkonfiguration in einem adaptiven Formular zu verwenden:
 
-1. [Erstellen eines Formulardatenmodells (FDM) mithilfe der Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
+1. [Erstellen eines Formulardatenmodells (FDM) mit der Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
 1. [Konfigurieren des Formulardatenmodells (FDM) zum Abrufen und Senden von Daten](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
 1. [Konfigurieren einer Sendeaktion mit einem Formulardatenmodell (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -462,7 +463,7 @@ Der Autor kann eine benutzerdefinierte JavaScript-Bibliothek für jedes adaptive
 
 Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Absicherung benutzerdefinierte Fehlerseiten wie 400.jsp, 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Senden eines Formulars die Fehler-Codes 400, 404 oder 500 auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden. Sie können JSP-Seiten auch für andere HTTP-Fehler-Codes erstellen.
 
-Wenn Sie ein Formulardatenmodell (FDM) oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten im Voraus ausfüllen, wenden Sie sich an ein Schema, das keine Daten enthält `<afData>`, `<afBoundData>`, und `</afUnboundData>` -Tags verwenden, gehen die Daten von nicht gebundenen Feldern des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell (FDM) sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
+Wenn Sie ein Formulardatenmodell (FDM) oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten ausfüllen, die konform zu einem Schema sind, bei dem Daten keine `<afData>`-, `<afBoundData>`- und `</afUnboundData>`-Tags enthalten, gehen die Daten der ungebundenen Felder des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell (FDM) sein. Ungebundene Felder sind Felder eines adaptiven Formulars ohne die Eigenschaft `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

@@ -4,8 +4,9 @@ description: Verwenden Sie die Tabellenkomponente, um einem adaptiven Formular T
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 100%
 
@@ -89,7 +90,7 @@ Um eine Spalte hinzuzufügen oder zu löschen, muss auf die Textzelle im Kopfzei
 
 Sie können der Tabelle eine Beschreibung hinzufügen, die erklärt, wie die Daten aufgebaut sind, damit sie von Bildschirmlesehilfen interpretiert und ausgelesen werden können. Hinzufügen der Beschreibung:
 
-1. Wählen Sie die Tabelle aus und wählen Sie dann ![cmppr](assets/cmppr.png), damit ihre Eigenschaften in der Seitenleiste angezeigt werden.
+1. Wählen Sie die Tabelle und dann ![cmppr](assets/cmppr.png) aus, damit ihre Eigenschaften in der Seitenleiste angezeigt werden.
 1. Geben Sie in der Registerkarte „Barrierefreiheit“ eine Zusammenfassung an.
 1. Klicken Sie auf **Fertig**.
 
@@ -107,9 +108,9 @@ Um eine Sortierung auf Tabellenspalten anzuwenden, müssen die Zellen der Tabell
 
 So aktivieren Sie die Sortierung:
 
-1. Wählen Sie die Tabelle aus und wählen Sie dann ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
+1. Wählen Sie die Tabelle und dann ![configure_icon](assets/configure_icon.png) (Konfigurieren) aus. Sie können die Tabelle auch mithilfe des **Inhalts-Browsers** in der Seitenleiste der interaktiven Kommunikation auswählen.
 1. Wählen Sie **Sortierung aktivieren** aus.
-1. Wählen Sie ![done_icon](assets/done_icon.png), um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
+1. Wählen Sie ![done_icon](assets/done_icon.png) aus, um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
 
    ![Sortieren aktivieren](assets/enable_sorting_new.png)
 
@@ -136,9 +137,9 @@ Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle f
 
 Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in der Seitensymbolleiste verwenden. Führen Sie die folgenden Schritte aus, um in den Stilmodus zu wechseln und den Tabellenstil zu bearbeiten
 
-1. Konfigurieren in der Seiten-Symbolleiste vor der Vorschau ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
+1. Wählen Sie in der Symbolleiste „Seite“, vor „Vorschau“, ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil** aus.
 
-1. Wählen Sie in der Seitenleiste die Tabelle aus und wählen Sie dann die Schaltfläche zum Bearbeiten ![edit_button](assets/edit-button.png).
+1. Wählen Sie in der Seitenleiste die Tabelle und dann die Bearbeiten-Schaltfläche ![edit_button](assets/edit-button.png) aus.
 Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 ![Anpassen der Stileigenschaften einer Tabelle](assets/style-table.png)
@@ -151,7 +152,7 @@ Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen von Zeilen zur Laufzeit.
 
-1. Wählen Sie eine Tabellenzeile aus und wählen Sie dann ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Tabellenzeile und dann ![cmppr](assets/cmppr.png) aus.
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 

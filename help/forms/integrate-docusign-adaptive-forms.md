@@ -2,8 +2,10 @@
 title: Wie lässt sich DocuSign in ein adaptives Formular integrieren?
 description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwenden können, um E-Signaturen einzuholen.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 100%
 
@@ -167,8 +169,8 @@ Sie können [!DNL DocuSign] für ein vorhandenes adaptives Formular aktivieren o
 
 Erstellen eines signaturfähigen adaptiven Formulars:
 
-1. Gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Wählen Sie **[!UICONTROL Erstellen]** und danach **[!UICONTROL Adaptives Formular]**. Eine Liste von Vorlagen wird angezeigt. Wählen Sie eine Vorlage aus und wählen Sie **[!UICONTROL Weiter]**.
+1. Gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Adaptives Formular]** aus. Eine Liste von Vorlagen wird angezeigt. Wählen Sie eine Vorlage aus und dann **[!UICONTROL Weiter]**.
 1. Auf der Registerkarte **[!UICONTROL Standard]**:
 
    1. Geben Sie **[!UICONTROL Name]** und **[!UICONTROL Titel]** für das adaptive Formular an.
@@ -213,7 +215,7 @@ Verwenden von [!DNL DocuSign] in einem vorhandenen adaptiven Formular:
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Senden mit DocuSign-E-Signaturen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Aktionskonfiguration]** die Option **[!UICONTROL Hinzufügen]**, um eine Empfängerin oder einen Empfänger hinzuzufügen, und geben Sie die E-Mail-Adresse der Person an. Wählen Sie erneut **[!UICONTROL Hinzufügen]**, um weitere Empfängerinnen oder Empfänger hinzuzufügen.
+1. Wählen Sie im Abschnitt **[!UICONTROL Aktionskonfiguration]** die Option **[!UICONTROL Hinzufügen]**, um eine Empfängerin bzw. einen Empfänger hinzuzufügen, und geben Sie die E-Mail-Adresse der Person an. Wählen Sie erneut **[!UICONTROL Hinzufügen]**, um weitere Empfängerinnen oder Empfänger hinzuzufügen.
 
 1. Geben Sie im Feld **[!UICONTROL E-Mail-Betreffzeile]** den Betreff für die E-Mail-Nachricht an. Wählen Sie **Anhänge einschließen**, um Anhänge in die E-Mail-Nachricht aufzunehmen.
 

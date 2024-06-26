@@ -2,11 +2,11 @@
 title: Konfigurieren der asynchronen Übermittlung adaptiver Formulare in AEM
 description: Erfahren Sie, wie die asynchrone Übermittlung adaptiver Formulare konfiguriert wird. Vertiefen Sie Ihre Kenntnisse über die Funktionsweise der asynchronen Übermittlung für adaptive Formulare.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ So konfigurieren Sie die asynchrone Übermittlung für ein adaptives Formular:
    *  **[!UICONTROL Zu URL umleiten]**: Leitet bei Übermittlung des Formulars an die angegebene URL bzw. auf die angegebene Seite um.  Sie können eine URL angeben oder mit der Funktion zum Durchsuchen den Pfad zu einer Seite im Feld **[!UICONTROL Umleitungs-URL/Pfad]** wählen.
    * **[!UICONTROL Nachricht anzeigen]**: Zeigt eine Meldung beim Senden des Formulars an. Sie können eine Nachricht in das Textfeld unterhalb der Option **[!UICONTROL Nachricht anzeigen]** eingeben. Das Textfeld unterstützt Rich-Text-Formatierung.
 
-1. Wählen Sie ![check-button1](assets/save_icon.svg), um die Eigenschaften zu speichern.
+1. Wählen Sie ![check-button1](assets/save_icon.svg) aus, um die Eigenschaften zu speichern.
 
 ## Funktionsweise der asynchronen Übermittlung {#how-asynchronous-submission-works}
 

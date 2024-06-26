@@ -3,13 +3,15 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: AEM Forms REST-Endpunkt, An REST-Endpunkt übermitteln, Daten an REST-URL posten, REST-Endpoint-Aktion konfigurieren
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
-workflow-type: ht
-source-wordcount: '550'
-ht-degree: 100%
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+title: "Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 98%
 
 ---
-
 
 # Konfigurieren eines adaptiven Formulars für die REST-Endpunkt-Übermittlungsaktion
 
@@ -75,4 +77,3 @@ So konfigurieren Sie die Übermittlungsaktion:
 ## Ähnliche Artikel
 
 {{af-submit-action}}
-

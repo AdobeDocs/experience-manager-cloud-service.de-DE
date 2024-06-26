@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 4%
@@ -170,7 +171,7 @@ Sie können eine benutzerdefinierte Funktion mit oder ohne jsdoc-Kommentare erst
             // code to be executed
         }
 ```
-Wenn der Benutzer der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügt, wird sie im Regeleditor anhand ihres Funktionsnamens aufgelistet. Es wird jedoch empfohlen, JavaScript-Anmerkungen einzufügen, um die Lesbarkeit der benutzerdefinierten Funktionen zu verbessern.
+Wenn der Benutzer der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügt, wird sie im Regeleditor anhand ihres Funktionsnamens aufgelistet. Es wird jedoch empfohlen, JavaScript-Anmerkungen einzubeziehen, um die Lesbarkeit der benutzerdefinierten Funktionen zu verbessern.
 
 ### Pfeilfunktion mit obligatorischen JavaScript-Anmerkungen oder Kommentaren
 
@@ -241,7 +242,7 @@ Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie eine Client-Bib
 
 **Repository klonen**
 
-Klonen [as a Cloud Service AEM Forms-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git):
+Klonen [AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git):
 
 1. Öffnen Sie die Befehlszeile oder ein Terminal-Fenster.
 
@@ -378,7 +379,7 @@ Sie können die benutzerdefinierte Funktion im [Regeleditor eines adaptiven Form
 
 ## Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular
 
-In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor](/help/forms/rule-editor-core-components.md). Fügen Sie der JavaScript-Datei (`Function.js` ), um das Alter basierend auf dem Geburtsdatum (JJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()` , das das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
+In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor](/help/forms/rule-editor-core-components.md). Fügen wir der JavaScript-Datei (`Function.js` ), um das Alter basierend auf dem Geburtsdatum (JJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()` , das das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
 
 ```javascript
     /**

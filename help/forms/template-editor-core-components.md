@@ -4,10 +4,11 @@ description: Erstellen Sie adaptive Formularvorlagen auf Basis einer Kernkompone
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -163,9 +164,9 @@ Autorinnen und Autoren können ein [!UICONTROL Formulardatenmodellschema] in ein
 1. Wählen Sie auf der linken Seite **[!UICONTROL Inhalts-Browser]** aus.
 1. Navigieren Sie zum Formular-Container **[!UICONTROL Einstellung]**.
 1. Wählen Sie **[!UICONTROL Datenmodell]** aus.
-1. Wählen Sie Ihr Formulardatenmodell (FDM) durch **[!UICONTROL Formulardatenmodell auswählen]** und speichern Sie die Konfiguration.
+1. Wählen Sie das Formulardatenmodell (FDM) über **[!UICONTROL Formulardatenmodell auswählen]** und speichern Sie die Konfiguration.
 
-![Formulardatenmodell-Zuordnung in Formularen](/help/forms/assets/select-form-data-model-img-core-component.png)
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
 <!--
 

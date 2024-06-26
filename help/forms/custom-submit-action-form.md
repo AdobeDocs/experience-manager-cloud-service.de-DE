@@ -2,11 +2,11 @@
 title: Wie wird eine benutzerdefinierte Sende-Aktion für ein adaptives Formular erstellt?
 description: Erfahren Sie, wie Sie eine benutzerdefinierte Sende-Aktion für ein adaptives Formular erstellen, um die Übermittlung von Daten zu verzögern und sie zu verarbeiten, bevor sie an einen Rest-Endpunkt gesendet, in einem Datenspeicher gespeichert und andere benutzerdefinierte Funktionen ausgeführt werden.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Wenn Sie Dateien an das adaptive Formular anhängen, validiert der Server die Da
 
 Nach dem Ausführen der gewünschten Aktion leitet das Sende-Servlet die Abfrage an den Weiterleitungspfad weiter. Eine Aktion verwendet die setForwardPath-API, um den Weiterleitungspfad im Guide Submit-Servlet festzulegen.
 
-Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlungs-Servlet den Browser mithilfe der Umleitungs-URL um. Der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Danksagungsseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Sende-Aktion oder die setRedirectUrl-API im Guide Submit-Servlet konfigurieren. Sie können die Anfrageparameter, die an die Umleitungs-URL gesendet werden, auch mithilfe der setRedirectParameters-API im Guide Submit-Servlet konfigurieren.
+Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlungs-Servlet den Browser mithilfe der Umleitungs-URL um. Die Autorin bzw. der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Dankeseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Sende-Aktion oder die setRedirectUrl-API im Guide Submit-Servlet konfigurieren. Sie können die Anfrageparameter, die an die Umleitungs-URL gesendet werden, auch mithilfe der setRedirectParameters-API im Guide Submit-Servlet konfigurieren.
 
 >[!NOTE]
 >

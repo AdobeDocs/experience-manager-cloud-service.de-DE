@@ -2,13 +2,14 @@
 title: Wie speichert man das auf der Kernkomponente basierende adaptive Formular als Entwurf?
 description: Erfahren Sie, wie Sie ein auf Kernkomponenten basierendes adaptives Formular als Entwurf speichern, ein Forms-Portal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden.
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
-
 
 <span class="preview"> Dieser Artikel enthält Inhalte für die Funktion &quot;Vorabversion&quot;. Auf die Vorabversion-Funktion kann nur über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features).
 
@@ -71,7 +72,7 @@ Nachdem Sie die Azure Storage-Konfiguration erfolgreich erstellt haben, konfigur
 
    ![Einheitlicher Connector-Speicher](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. Auswählen **[!UICONTROL Speichern]** und wählen Sie **[!UICONTROL Veröffentlichen]** , um die Konfiguration zu veröffentlichen.
+1. Auswählen **[!UICONTROL Speichern]** und wählen Sie **[!UICONTROL Publish]** , um die Konfiguration zu veröffentlichen.
 
 ### 3. Erstellen Sie Regeln, um ein adaptives Formular als Entwurf zu speichern {#rule-to-save-adaptive-form-as-draft}
 

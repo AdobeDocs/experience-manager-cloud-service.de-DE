@@ -3,8 +3,9 @@ title: Wie generiert man ein Datensatzdokument (DoR) für AEM Forms?
 description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Formulare generieren können.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 100%
 
@@ -20,7 +21,7 @@ ht-degree: 100%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Wenn ein Formular ausgefüllt oder übermittelt wird, können Sie das Formular drucken oder als Dokument speichern. Dies wird als Datensatzdokument (DoR) bezeichnet. Es handelt sich dabei um eine druckoptimierte Kopie des gesendeten Formulars. Auch können Sie im Datensatzdokument mittels Verweis Informationen erfassen, die Kunden zu einem späteren Zeitpunkt eingegeben haben, oder mithilfe des Datensatzdokuments Formulare und zugehörige Inhalte gemeinsam im PDF-Format archivieren.
 

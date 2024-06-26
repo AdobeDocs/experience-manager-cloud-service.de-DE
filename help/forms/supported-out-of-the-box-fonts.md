@@ -1,10 +1,10 @@
 ---
 title: AEM Forms as a Cloud Service unterstützt vordefinierte Schriftarten für die Generierung von PDF.
 description: AEM Forms as a Cloud Service unterstützt vordefinierte Schriftarten für Datensatzdokument und PDF.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
-source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -52,5 +52,5 @@ Die Liste der OOTB-unterstützten Schriftarten ist:
 * eurosign.ttf
 
 
-Zusätzlich zu den oben genannten Schriftarten können Sie benutzerdefinierte Schriftarten verwenden, um den PDF ein bestimmtes Erscheinungsbild zu verleihen. Um benutzerdefinierte Schriftarten zu aktivieren, müssen Sie [Fügen Sie benutzerdefinierte Schriftarten zu Ihrer as a Cloud Service Forms-Umgebung hinzu](/help/forms/use-custom-fonts.md) mit einer gültigen Lizenz.
+Zusätzlich zu den oben genannten Schriftarten können Sie benutzerdefinierte Schriftarten verwenden, um den PDF ein bestimmtes Erscheinungsbild zu verleihen. Um benutzerdefinierte Schriftarten zu aktivieren, müssen Sie [Fügen Sie benutzerdefinierte Schriftarten zu Ihrer Forms as a Cloud Service-Umgebung hinzu](/help/forms/use-custom-fonts.md) mit einer gültigen Lizenz.
 

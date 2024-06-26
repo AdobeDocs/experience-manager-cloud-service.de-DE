@@ -3,8 +3,9 @@ title: Wie können Designs erstellt und für das Formatieren adaptiver Formulare
 description: Verwenden Sie Designs adaptiver Formulare, um ein adaptives Formular zu formatieren und ihm eine visuelle Identität zu verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 100%
 
@@ -364,7 +365,7 @@ Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten
 * **[!UICONTROL Widget „Numerisches Feld“]**: Ermöglicht Ihnen die Auswahl der Komponente, um ihr Erscheinungsbild in der Seitenleiste anzupassen.
 * **[!UICONTROL Widget „Feld“]**: Ermöglicht die Auswahl der allgemeinen Komponente für die Gestaltung. In diesem Beispiel werden alle Texteingabekomponenten (Textfeld/numerisches Feld/numerische Schritte/Datumseingabe) für die Formatierung ausgewählt.
 
-* ![Feldebene](assets/select_parent_icon.svg): Hiermit können Sie die übergeordnete Komponente für die Formatierung auswählen. Wenn Sie „Numerisches Feld“ und dann dieses Symbol auswählen, wird die Feldkomponente ausgewählt. Wenn Sie „Feldkomponente“ und dann dieses Symbol auswählen, wird das Bedienfeld ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
+* ![Feldebene](assets/select_parent_icon.svg): Hiermit können Sie die übergeordnete Komponente für die Formatierung auswählen. Wenn Sie „Numerisches Feld“ und dann dieses Symbol auswählen, wird die Feldkomponente ausgewählt. Wenn Sie die Feldkomponente und dieses Symbol auswählen, wird der Bereich ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
 
 >[!NOTE]
 >
@@ -589,8 +590,8 @@ Mit der Option `themeOverride` können Sie einen Pfad zu einem Design angeben. D
 Gehen Sie wie folgt vor, um ein Design zu kopieren:
 
 1. Navigieren Sie in der Author-Instanz zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**.
-1. Öffnen Sie den Ordner für die Designbibliothek.
-1. Fahren Sie im Ordner für die Design-Bibliothek mit dem Mauszeiger über das entsprechende vordefinierte Design und wählen Sie **[!UICONTROL Kopieren]** aus.
+1. Öffnen Sie den Ordner für die Design-Bibliothek.
+1. Bewegen Sie den Mauszeiger im Ordner für die Design-Bibliothek über das entsprechende vordefinierte Design und wählen Sie **[!UICONTROL Kopieren]** aus.
 1. Fügen Sie das kopierte Design aus dem Design-Bibliotheks-Ordner ein.
 1. Passen Sie das kopierte Design an.
 

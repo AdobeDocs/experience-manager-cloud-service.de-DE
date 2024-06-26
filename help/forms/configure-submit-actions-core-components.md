@@ -1,13 +1,14 @@
 ---
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen
-keywords: wie Sie die Sendeaktion für ein adaptives Formular auswählen, ein adaptives Formular mit der Sharepoint-Liste verbinden, ein adaptives Formular mit der SharePoint-Dokumentbibliothek verbinden, ein adaptives Formular mit dem Formulardatenmodell verbinden (FDM)
+keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '678'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +28,7 @@ Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die ü
 * Müheloses Senden von Formulardaten per E-Mail.
 * Starten von Microsoft® Power Automate-Abläufen oder AEM-Workflows beim Senden der Daten.
 * Sie können die Formulardaten direkt an Microsoft® SharePoint Server, Microsoft® Azure Blob Storage oder Microsoft® OneDrive übertragen.
-* Senden Sie die Daten nahtlos mit dem Formulardatenmodell (FDM) an eine konfigurierte Datenquelle.
+* Nahtloses Senden von Daten an eine konfigurierte Datenquelle mit dem Formulardatenmodell (FDM).
 * Bequemes Senden von Daten an einen REST-Endpunkt.
 
 Sie können [standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md). Sie können die Übermittlungsaktionen auch für organisationsspezifische Anforderungen anpassen.
@@ -66,7 +67,7 @@ Detaillierte Informationen zur folgenden Übermittlungsaktion finden Sie unter:
 * [An Azure Blob Storage senden](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
-* [AEM-Workflow aufrufen](/help/forms/configure-submit-action-workflow.md)
+* [Aufrufen eines AEM-Workflows](/help/forms/configure-submit-action-workflow.md)
 
 Sie können ein adaptives Formular auch an andere Speicherkonfigurationen senden:
 
@@ -212,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Absicherung benutzerdefinierte Fehlerseiten wie 400.jsp, 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Senden eines Formulars die Fehler-Codes 400, 404 oder 500 auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden. Sie können JSP-Seiten auch für andere HTTP-Fehler-Codes erstellen.
 
-Wenn Sie ein Formulardatenmodell (FDM) oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten im Voraus ausfüllen, wenden Sie sich an ein Schema, das keine Daten enthält `<afData>`, `<afBoundData>`, und `</afUnboundData>` -Tags verwenden, gehen die Daten von nicht gebundenen Feldern des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell (FDM) sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
+Wenn Sie ein Formulardatenmodell (FDM) oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten ausfüllen, die konform zu einem Schema sind, bei dem Daten keine `<afData>`-, `<afBoundData>`- und `</afUnboundData>`-Tags enthalten, gehen die Daten der ungebundenen Felder des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell (FDM) sein. Ungebundene Felder sind Felder eines adaptiven Formulars ohne die Eigenschaft `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

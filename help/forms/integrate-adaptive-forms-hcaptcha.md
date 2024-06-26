@@ -1,18 +1,19 @@
 ---
 title: Wie wird Captcha&reg in einem AEM adaptiven Formular verwendet?
-description: Verbessern Sie die Formularsicherheit mit Captcha&reg; Service mühelos. Schrittweise Anleitung enthalten!
+description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimieren. Schrittweise Anleitung enthalten!
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; Service, Adaptive Forms, CAPTCHA-Herausforderung, Bot-Prävention, Sicherheit der Formularübermittlung, Form-Spam-Prävention
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 23%
+ht-degree: 33%
 
 ---
-
 
 # Verbinden Ihrer AEM Forms-Umgebung mit Captcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
@@ -22,15 +23,15 @@ CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans
 
 AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
-* [Captcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
+* [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
 
 ## Integrieren der AEM Forms-Umgebung mit Captcha Captcha
 
-Der Captcha®-Dienst schützt Ihre Formulare vor Bots, Spam und automatisiertem Missbrauch. Es stellt eine Checkbox-Widget-Herausforderung dar und wertet die Benutzerantwort aus, um festzustellen, ob es sich um einen menschlichen oder einen Bot handelt, der mit dem Formular interagiert. Dies verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, und hilft, Online-Transaktionen sicher zu machen, indem Bots davon abgehalten werden, Spam oder böswillige Aktivitäten zu posten.
+Der hCaptcha®-Dienst schützt Ihre Formulare vor Bots, Spam und automatisiertem Missbrauch. Er führt einen Kontrollkästchen-Widget-Test durch und ermittelt anhand der Benutzerantwort, ob ein Mensch oder ein Bot mit dem Formular interagiert. Dabei wird verhindert, dass Benutzende fortfahren, wenn der Test fehlschlägt. Dies erhöht die Sicherheit von Online-Transaktionen, indem Bots keinen Spam senden oder andere bösartige Aktivitäten durchführen können.
 
-AEM Forms as a Cloud Service unterstützt hCaptcha® in den adaptiven Forms-Kernkomponenten. Sie können es verwenden, um eine Herausforderung für ein Kontrollkästchen-Widget bei der Formularübermittlung darzustellen.
+AEM Forms as a Cloud Service unterstützt Captcha® in den adaptiven Forms-Kernkomponenten. Sie können es verwenden, um eine Herausforderung für ein Kontrollkästchen-Widget bei der Formularübermittlung darzustellen.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
@@ -40,7 +41,7 @@ Um Captcha® mit AEM Forms zu konfigurieren, müssen Sie den [Captcha®-Site-Sch
 
 ## Schritte zum Konfigurieren von Captcha® {#steps-to-configure-hcaptcha}
 
-1. Erstellen Sie einen Konfigurations-Container in Ihrer as a Cloud Service AEM Forms-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden wird. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit Captcha® zu verbinden:
+1. Erstellen Sie einen Konfigurations-Container in Ihrer AEM Forms as a Cloud Service-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden wird. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit Captcha® zu verbinden:
    1. Öffnen Sie Ihre AEM Forms as a Cloud Service-Instanz.
    1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
    1. Im Konfigurationsbrowser können Sie einen vorhandenen Ordner auswählen oder einen Ordner erstellen. Sie können einen Ordner erstellen und die Option Cloud-Konfigurationen dafür aktivieren oder die Option Cloud-Konfigurationen für einen vorhandenen Ordner aktivieren:
@@ -64,7 +65,7 @@ Um Captcha® mit AEM Forms zu konfigurieren, müssen Sie den [Captcha®-Site-Sch
       ![Konfigurieren des Cloud Service für die Verbindung Ihrer AEM Forms-Umgebung mit Captcha®](assets/create-hcaptcha-config.png)
 
 >[!NOTE]
-> Benutzer müssen [Clientseitige URL zur JavaScript-Überprüfung](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) und [URL zur serverseitigen Validierung](https://docs.hcaptcha.com/#verify-the-user-response-server-side) da sie bereits für die hCaptcha®-Validierung vorausgefüllt sind. Für einige Länder können die Endpunkte unterschiedlich sein, siehe [Häufig gestellte Fragen zu Captcha®](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) für weitere Informationen.
+> Benutzer müssen [Clientseitige JavaScript-Validierungs-URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) und [URL zur serverseitigen Validierung](https://docs.hcaptcha.com/#verify-the-user-response-server-side) da sie bereits für die hCaptcha®-Validierung vorausgefüllt sind. Für einige Länder können die Endpunkte unterschiedlich sein, siehe [Häufig gestellte Fragen zu Captcha®](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) für weitere Informationen.
 
 Sobald der hCAPTCHA-Dienst konfiguriert ist, steht er zur Verwendung in einem adaptiven Formular zur Verfügung.
 
@@ -82,7 +83,7 @@ Sobald der hCAPTCHA-Dienst konfiguriert ist, steht er zur Verwendung in einem ad
 1. Ziehen Sie die **[!UICONTROL CAPTCHA]**-Komponente im Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
 1. Wählen Sie die **[!UICONTROL Captcha]** Komponente und auf Eigenschaften klicken ![Eigenschaften-Symbol](assets/configure-icon.svg) Symbol. Dadurch wird das Dialogfeld &quot;Eigenschaften&quot;geöffnet.
 
-   ![Alternativtext](assets/hcaptcha-properties.png)
+   ![Alt-Text](assets/hcaptcha-properties.png)
 
    Geben Sie die folgenden Eigenschaften an:
 

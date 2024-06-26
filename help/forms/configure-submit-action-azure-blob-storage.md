@@ -4,10 +4,12 @@ Description: Learn how to create an Azure Blob Storage Configuration in AEM Form
 keywords: Azure Blob Storage-Integration mit AEM Forms, Daten an Azure Storage übermitteln, Azure Storage-Konfiguration in AEM Forms erstellen, Azure Blob Storage in Übermittlungsaktion für adaptive Formulare verwenden
 feature: Adaptive Forms, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
-source-git-commit: 805784c8f2f0c2f0826042145126be32f407b06e
-workflow-type: ht
-source-wordcount: '451'
-ht-degree: 100%
+title: "Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 97%
 
 ---
 

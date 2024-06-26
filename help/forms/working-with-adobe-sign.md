@@ -3,13 +3,13 @@ title: Wie können wir Adobe Sign in einem adaptiven Formular verwenden?
 description: Verwenden Sie Adobe Sign in einem adaptiven Formular, damit die Empfängerinnen und Empfänger des Formulars es auf dem Gerät und an dem Ort ihrer Wahl elektronisch signieren können.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
    >[!NOTE]
    >
-   > Wenn ein adaptives Formular mithilfe eines Formulardatenmodells (FDM) erstellt wird, wird das Feld &quot;Vereinbarung-ID&quot;im Dialogfeld angezeigt.
+   > Wenn ein adaptives Formular mithilfe eines Formulardatenmodells (FDM) erstellt wird, wird das Feld „Vereinbarungs-ID“ im Dialogfeld angezeigt.
 
 1. [Fügen Sie dem adaptiven Formular Empfängerinnen und Empfänger hinzu](working-with-adobe-sign.md#addsignerstoanadaptiveform) und wählen Sie das Symbol „Fertig“ ![Speichern](assets/save_icon.svg), um die Änderungen zu speichern.
 

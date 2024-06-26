@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2468'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 97%
 Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. [!DNL AEM Forms] bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen und Verarbeiten von adaptiven Formularen. Sie können adaptive Formulare auf der Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
 * **Verwenden eines Formulardatenmodells (FDM)**
-  [Datenintegration](data-integration.md) ermöglicht Ihnen die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell (FDM), das Sie zum Erstellen von Adaptive Forms verwenden können. Wählen Sie das Formulardatenmodell (FDM) aus, wenn das adaptive Formular, das Sie erstellen, das Abrufen und Schreiben von Daten aus und in mehrere Datenquellen umfasst.
+  Die [Datenintegration](data-integration.md) ermöglicht die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell (FDM), das Sie zum Erstellen adaptiver Formulare verwenden können. Wählen Sie das Formulardatenmodell (FDM), wenn Sie ein adaptives Formular erstellen, für das Daten aus mehreren Datenquellen abgerufen und in sie geschrieben werden sollen.
 
 * **Verwenden einer XDP-Formularvorlage** Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA- oder XDP-basierten Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Validierungen, Ereignisse, Eigenschaften und Muster.
 

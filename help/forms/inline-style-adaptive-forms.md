@@ -2,11 +2,11 @@
 title: Wie werden Inline-Stile auf Komponenten adaptiver Formulare angewendet?
 description: Erfahren Sie, wie Sie benutzerdefinierte Stile für ein adaptives Formular und für einzelne Komponenten auch Inline-CSS-Eigenschaften anwenden können.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -25,10 +25,10 @@ Sie können das allgemeine Erscheinungsbild und Design eines adaptiven Formulars
 
 ## Verwenden von Inline-CSS-Eigenschaften {#apply-inline-css-properties}
 
-So fügen Sie Inline-Stile zu einer Komponente hinzu:
+Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formulareditor und ändern Sie den Modus in den Stilmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ](assets/Smock_ChevronDown.svg)canvas-drop-down![ > **[!UICONTROL Stil]**.
-1. Wählen Sie eine Komponente auf der Seite aus und wählen Sie die Schaltfläche „Bearbeiten“ ![edit-button](assets/edit.svg). In der Seitenleiste geöffnete Stileigenschaften.
+1. Öffnen Sie das Formular im Formulareditor und ändern Sie den Modus in den Stilmodus. Um den Stilmodus zu aktivieren, wählen Sie in der Symbolleiste der Seite auf ![Arbeitsfläche-Dropdown](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stil]** aus.
+1. Wählen Sie eine Komponente auf der Seite und die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit.svg) aus. In der Randleiste geöffnete Stileigenschaften.
 
    Sie können auch Komponenten aus der Hierarchiestruktur in der Seitenleiste auswählen. Die Hierarchiestruktur für das Formular ist als „Formularobjekte“ in der Seitenleiste verfügbar.
 
@@ -82,10 +82,10 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
    <td><p>Bezeichnung</p> </td>
    <td><p>Abmessungen und Position &gt; Breite</p> </td>
    <td><p>100 px</p> </td>
-   <td><p>Stellt die Breite für die Beschriftung auf 100 px ein</p> </td>
+   <td><p>Stellt die Breite als 100 px für die Beschriftung ein.</p> </td>
   </tr>
   <tr>
-   <td>Feldhilfesymbol</td>
+   <td>Feld Hilfe Symbol</td>
    <td>Text &gt; Schriftfarbe</td>
    <td>#2ECC40</td>
    <td>Ändert die Farbe des Hilfesymbols.</td>
@@ -93,17 +93,17 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
   <tr>
    <td><p>Lange Beschreibung</p> </td>
    <td><p>text-align</p> </td>
-   <td><p>center</p> </td>
-   <td><p>Richtet die Langbeschreibung für die Hilfe mittig aus</p> </td>
+   <td><p>Zentriert</p> </td>
+   <td><p>Richtet die Langbeschreibung für die Hilfe mittig aus.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ![Textfelddesign nach der Anwendung von Inline-Formatierung](assets/applied-style.png)
 
-Textfeldkomponente nach der Anwendung der Inline-Stil-Eigenschaften
+Textfeldkomponente nach der Anwendung der Inline-Stil-Eigenschaften.
 
-Wenn Sie den obigen Schritten folgen, können Sie andere Komponenten wie Bereiche, Sendeschaltflächen und Optionsschaltflächen auswählen und formatieren.
+Wenn Sie den obigen Schritten folgen, können Sie andere Komponenten wie Bereiche, Sendenfelder und Optionsfelder auswählen und formatieren.
 
 >[!NOTE]
 >

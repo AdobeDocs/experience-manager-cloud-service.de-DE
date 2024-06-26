@@ -6,10 +6,11 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2378'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +180,7 @@ Mithilfe der Aktion [Aufrufdienst des Regeleditors](https://experienceleague.ado
 
 >[!NOTE]
 >
-> * Um Fehler-Handler mit der Aktion &quot;Aufrufdienst&quot;des Regeleditors zu verwenden, konfigurieren Sie Adaptive Forms mit einem Formulardatenmodell (FDM).
+> * Um Fehler-Handler mit der Regeleditor-Aktion „Dienst aufrufen“ zu verwenden, konfigurieren Sie adaptive Formulare mit einem Formulardatenmodell (FDM).
 > * Ein Standard-Fehler-Handler wird standardmäßig bereitgestellt, um Fehlermeldungen auf Feldern anzuzeigen, wenn die Fehlerantwort im Standardschema enthalten ist. Sie können den Standard-Fehler-Handler auch über die benutzerdefinierte Fehler-Handler-Funktion aufrufen.
 
 Mit dem Regeleditor können Sie:

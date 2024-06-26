@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
 
 ---
-
 
 # Einführung
 
@@ -117,9 +118,9 @@ Um die AEM Modernisierungs-Tools für Ihre AEM Umgebung zu aktivieren und zu ver
    * **Keines** : Wählen Sie die Option aus, wenn Sie keine Kopie der auf der Foundation-Komponente basierenden Formulare erstellen möchten, bevor Sie mit der Formularkonvertierung beginnen.
    * **Wiederherstellen** : Wählen Sie die Option aus, um das Formular wieder in den Zustand zu versetzen, in dem es sich vor Beginn der Formularkonvertierung befand.
    * **In Target kopieren**: Wählen Sie die Option, um eine Kopie der auf der Foundation-Komponente basierenden Formulare zu erstellen, bevor Sie mit der Formularkonvertierung beginnen.
-In unserem Fall wird die **In Target kopieren** ausgewählt ist. Wenn die Variable **In Target kopieren** ausgewählt ist, wird die **[!UICONTROL Quellpfad]** und **[!UICONTROL Zielpfad]** -Optionen angezeigt werden.
+In unserem Fall wird die **In Target kopieren** ausgewählt ist. Wenn die Variable **In Target kopieren** ausgewählt ist, wird die **[!UICONTROL Source-Pfad]** und **[!UICONTROL Zielpfad]** -Optionen angezeigt werden.
 
-1. Geben Sie die `source folder` im Namen **[!UICONTROL Quellpfad]**.
+1. Geben Sie die `source folder` im Namen **[!UICONTROL Source-Pfad]**.
 1. Geben Sie die `target folder` im Namen **[!UICONTROL Zielpfad]**.
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 1. Klicken Sie auf **[!UICONTROL Forms hinzufügen]**. Alle Formulare in der `source folder` auf dem Bildschirm angezeigt.
@@ -149,6 +150,3 @@ Sie können jetzt sehen, dass sich das auf Foundation-Komponenten aufbauende ada
 
 * Stellen Sie sicher, dass Ihre auf Foundation-Komponenten basierenden Formulare nur die Komponenten verwenden, die eine gleichwertige [Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) verfügbar. In Fällen, in denen Sie Foundation-Komponenten verwenden, die keine äquivalente Kernkomponente haben, wird die Foundation-Komponente nicht konvertiert. Daher funktioniert sie beim Authoring eines Formulars nicht ordnungsgemäß
 * Stellen Sie sicher, dass die Regeln zum Konvertieren der Foundation-Komponenten in Kernkomponenten in XML formatiert sind.
-
-
-

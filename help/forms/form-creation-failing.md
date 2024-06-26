@@ -1,9 +1,10 @@
 ---
 title: Wie kann ich Fehler bei der Formularerstellung beheben?
-description: Fehlerbehebung bei Fehlern bei der Formularerstellung in der as a Cloud Service AEM Forms-Umgebung.
-feature: Adaptive Forms, Troubleshooting
+description: Fehlerbehebung für Fehler bei der Formularerstellung in der AEM Forms as a Cloud Service-Umgebung.
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 5%
@@ -12,7 +13,7 @@ ht-degree: 5%
 
 # Problem beim Veröffentlichen von Formularen{#form-creation-fails}
 
-Nach der Aktualisierung auf die as a Cloud Service AEM Forms-Version `2024.5.16461`:
+Nach der Aktualisierung auf die as a Cloud Service-Version von AEM Forms `2024.5.16461`:
 
 **Einige Benutzer** kann beim Erstellen von Formularen ein Problem auftreten, sodass beim Erstellen eines Formulars die folgende Fehlermeldung im Erstellungsdialogfeld angezeigt wird:
 
@@ -27,9 +28,9 @@ Das Problem tritt auf, weil der Autor das Formular ohne **erste Veröffentlichun
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
 1. Stellen Sie sicher, dass die Vorlage, die Sie im Formular verwenden, nicht über die `jcr:uuid` und anderen systemgenerierten geschützten Eigenschaften im Pfad `<template-path>/initial/jcr:content node`.
-1. Veröffentlichen Sie die Vorlage explizit mithilfe der Vorlagenkonsole.
+1. Publish die Vorlage explizit mithilfe der Vorlagenkonsole.
 1. Versuchen Sie jetzt, nach der Veröffentlichung Ihrer Vorlage neue Formulare mithilfe der Vorlage zu erstellen.
-1. Wenn die von Ihnen verwendete Vorlage in zukünftigen Versionen aktualisiert wurde, veröffentlichen Sie die Vorlage erneut (wie in Schritt 2 beschrieben), um Probleme bei der Formularerstellung zu vermeiden.
+1. Wenn die von Ihnen verwendete Vorlage in zukünftigen Versionen aktualisiert wurde, Publish Sie die Vorlage erneut (wie in Schritt 2 beschrieben), um Probleme bei der Formularerstellung zu vermeiden.
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

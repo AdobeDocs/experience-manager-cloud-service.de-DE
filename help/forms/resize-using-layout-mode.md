@@ -1,12 +1,12 @@
 ---
 title: Verwenden des Layout-Modus zum Ändern der Größe von Komponenten für adaptive Formulare?
 description: Definieren Sie die Position der AEM Forms-Komponenten, erfahren Sie, wie der Layout-Modus geöffnet wird, passen Sie die Größe von Komponenten an, ändern Sie die Größe von Bedienfeldern und definieren Sie ein mehrspaltiges Layout für ein Bedienfeld.
-role: User
+role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben in der Autho
 
 ## Anpassen der Größe von Komponenten {#resize-components}
 
-1. Wählen Sie im Layout-Modus die Komponente, deren Größe geändert werden soll. Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
+1. Wählen Sie im Layout-Modus die Komponente aus, deren Größe geändert werden soll. Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
 1. Ziehen Sie die blauen Punkte mit der Maus, um die Position der Komponente im responsiven Raster zu definieren.
 
    ![Ändern der Größe mit dem Layout-Modus](assets/layout_mode_resize_new_updated1.png)
@@ -68,13 +68,13 @@ Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben in der Autho
 
    ![Tabelle und Bild parallel im Layout-Modus](assets/table_image_parallel_new.png)
 
-   Sie können die Bildkomponente auswählen und die Option **[!UICONTROL In neue Zeile gleiten lassen]** wählen, die in der Symbolleiste verfügbar ist, um die Bildkomponente zur nächsten Zeile zu verschieben.
+   Sie können die Bildkomponente und dann die Option **[!UICONTROL In neue Zeile platzieren]** auswählen, die in der Symbolleiste verfügbar ist, um die Bildkomponente zur nächsten Zeile zu verschieben.
 
 ## Ändern der Größe von Bereichen {#resize-panels-layout-mode}
 
 Führen Sie folgende Schritte aus, wenn Sie die Größe des gesamten Bereichs statt der Größe einzelner Komponenten ändern möchten:
 
-1. Wählen Sie eine der Komponenten im Bereich, dessen Größe Sie ändern möchten, und wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann die erste Option in der Dropdown-Liste, wenn der Bereich der Komponente direkt übergeordnet ist.
+1. Wählen Sie eine der Komponenten im Bereich aus, dessen Größe Sie ändern möchten. Wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) und dann die erste Option in der Dropdown-Liste aus, wenn der Bereich der Komponente direkt übergeordnet ist.
 
    Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
 
@@ -85,13 +85,13 @@ Sie können die Schritte 1 und 2 wiederholen und mit ![Übergeordnetes Element a
 
 Führen Sie folgende Schritte aus, um die Anzahl der Spalten für einen Bereich zu definieren:
 
-1. Wählen Sie im Modus **[!UICONTROL Bearbeiten]** den Bereich, wählen Sie ![Konfigurieren](assets/configure-icon.svg) aus und dann **[!UICONTROL Responsiv – alles auf der Seite ohne Navigation]** aus der Dropdown-Liste **[!UICONTROL Bereichs-Layout]**.
+1. Wählen Sie im Modus **[!UICONTROL Bearbeiten]** den Bereich und dann ![Konfigurieren](assets/configure-icon.svg) aus. Wählen Sie anschließend **[!UICONTROL Responsiv – alles auf der Seite ohne Navigation]** aus der Dropdown-Liste **[!UICONTROL Bereichs-Layout]** aus.
 
-1. Wählen Sie ![Speichern](assets/save_icon.svg) aus, um die Änderungen zu speichern.
+1. Wählen Sie ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
 
-1. Wählen Sie im Modus **[!UICONTROL Layout]** eine der Komponenten im Bereich, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann den jeweiligen Bereich.
+1. Wählen Sie im Modus **[!UICONTROL Layout]** eine der Komponenten im Bereich, dann ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) und anschließend den Bereich aus.
 
-1. Wählen Sie ![multi-column](assets/multi-column.svg) und wählen Sie die Spaltenanzahl aus der Dropdown-Liste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Der Bereich wird in ein Layout mit mehreren Spalten unterteilt.
+1. Wählen Sie ![mit mehreren Spalten](assets/multi-column.svg) und dann die Spaltenanzahl aus der Dropdown-Liste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Der Bereich wird in ein Layout mit mehreren Spalten unterteilt.
 
 ![mehrere Spalten im Layout-Modus](assets/multi-column-layout.png)
 
@@ -129,7 +129,7 @@ Gehen Sie wie folgt vor, um den Layout-Modus zu deaktivieren:
 
    ![Deaktivieren des Layout-Modus](assets/policy_disable_layout_mode.png)
 
-1. Wählen Sie auf die Registerkarte **[!UICONTROL Layout-Einstellungen]** aus und wählen Sie dann **[!UICONTROL Layout-Modus deaktivieren]**.
+1. Wählen Sie die Registerkarte **[!UICONTROL Layout-Einstellungen]** und dann **[!UICONTROL Layout-Modus deaktivieren]** aus.
 1. Wählen Sie ![Änderungen speichern](assets/save_icon.svg), um die Vorlageneigenschaften zu speichern.
 
 ## Siehe auch {#see-also}

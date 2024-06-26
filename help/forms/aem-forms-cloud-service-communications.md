@@ -2,10 +2,10 @@
 title: Wie kann Forms as a Cloud Service verwendet werden, um Daten mit XDP- und PDF-Vorlagen zusammenzuführen oder Ausgaben in den Formaten PCL, ZPL und PostScript zu generieren?
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 100%
 

@@ -3,10 +3,11 @@ title: Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen
 description: Verwenden der TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen gezählt werden
 feature: Adaptive Forms, Foundation Components
 exl-id: cb584f78-30af-4a58-be99-843352e8249c
-source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
+role: Admin, Developer, User
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 86%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Verwenden Sie die TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen erfasst werden.
+Verwenden der TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen gezählt werden.
 
 Sie können benutzerdefinierten Code verwenden, um ein PDF-Formular zu senden. Oder Sie senden ein Formular mit benutzerdefinierten Methoden ab, anstatt die mit AEM Forms bereitgestellten Übermittlungsmethoden zu verwenden. Alle oben genannten Aktionen und benutzerdefinierten Implementierungen von AEM Forms-APIs werden nicht als Transaktionen gezählt. AEM Forms stellt eine API namens [TransactionRecorder](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html) bereit, um Aktionen wie etwa Transaktionen aufzuzeichnen.
 

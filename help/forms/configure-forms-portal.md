@@ -3,10 +3,11 @@ title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden können.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1786'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +84,7 @@ So importieren Sie vordefinierte Formularportal-Komponenten in AEM Forms as a Cl
 
 ## Konfigurieren von Azure Storage für adaptive Formulare {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare in [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Forms zu erstellen, die mit [!DNL Azure] -Server, um geschäftliche Workflows zu aktivieren.
+[[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare in [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Formulare zu erstellen, die mit dem [!DNL Azure]-Server interagieren, um Unternehmens-Workflows zu ermöglichen.
 
 ### Erstellen der Azure-Speicherkonfiguration {#create-azure-storage-configuration}
 

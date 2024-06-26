@@ -3,8 +3,9 @@ title: Erstellen einer Vorlage für ein adaptives Formular?
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe des Vorlagen-Editors die grundlegende Struktur und die anfänglichen Inhalte definieren.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 100%
 
@@ -132,7 +133,7 @@ Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der
 * Sie können die Bedienfeldkomponente aus dem Komponenten-Browser in der Seitenleiste ziehen.
 * Sie können ein untergeordnetes Bedienfeld von `guideRootPanel` aus der Symbolleiste hinzufügen.
 
-Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und wählen Sie dann ![cmppr](assets/configure-icon.svg), um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Randleiste „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Wählen Sie ![cmppr](assets/configure-icon.svg) in der Komponenten-Symbolleiste, um dessen Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeld-Layout“ **[!UICONTROL Registerkarten oben]** und wählen Sie dann **[!UICONTROL Fertig]**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
+Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder und dann ![cmppr](assets/configure-icon.svg) aus, um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Seitenleiste einen Inhalt, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Wählen Sie in der Komponenten-Symbolleiste das Symbol ![cmppr](assets/configure-icon.svg) aus, um die zugehörigen Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeldlayout“ die Option **[!UICONTROL Registerkarten oben]** und dann **[!UICONTROL Fertig]** aus. Die Vorlagenstruktur mit Registerkarten wird angewendet.
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 

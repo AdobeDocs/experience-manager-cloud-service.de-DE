@@ -5,10 +5,12 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -20,11 +22,11 @@ AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
 * [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
-* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## Integrieren der AEM Forms-Umgebung mit dem Turnstile Captcha
 
-Das Turnstile Captcha von Cloudflare ist eine Sicherheitsmaßnahme, um Formulare und Sites vor automatisierten Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Es wird ein Kontrollkästchen bei der Formularübermittlung angezeigt, mit dem überprüft wird, ob es sich um menschliche Formulare handelt, bevor sie das Formular senden können. AEM Forms as a Cloud Service unterstützt das Turnstile Captcha in den adaptiven Forms-Kernkomponenten.
+Das Turnstile Captcha von Cloudflare ist eine Sicherheitsmaßnahme, um Formulare und Sites vor automatisierten Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Es wird ein Kontrollkästchen bei der Formularübermittlung angezeigt, mit dem überprüft wird, ob es sich um menschliche Formulare handelt, bevor sie das Formular senden können. AEM Forms as a Cloud Service unterstützt Turnstile Captcha in den adaptiven Forms-Kernkomponenten.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
@@ -34,7 +36,7 @@ Um die Turnstile für AEM Forms-Kernkomponenten zu konfigurieren, müssen Sie di
 
 ### Schritte zum Konfigurieren der Turnstile für AEM Forms{#steps-to-configure-turnstile}
 
-1. Erstellen Sie einen Konfigurations-Container in Ihrer as a Cloud Service AEM Forms-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden wird. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit Turnstile zu verbinden:
+1. Erstellen Sie einen Konfigurations-Container in Ihrer AEM Forms as a Cloud Service-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden wird. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit Turnstile zu verbinden:
    1. Öffnen Sie Ihre AEM Forms as a Cloud Service-Instanz.
    1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
    1. Im Konfigurationsbrowser können Sie einen vorhandenen Ordner auswählen oder einen Ordner erstellen. Sie können einen Ordner erstellen und die Option Cloud-Konfigurationen dafür aktivieren oder die Option Cloud-Konfigurationen für einen vorhandenen Ordner aktivieren:
@@ -58,7 +60,7 @@ Um die Turnstile für AEM Forms-Kernkomponenten zu konfigurieren, müssen Sie di
       ![Konfigurieren des Cloud Service für die Verbindung Ihrer AEM Forms-Umgebung mit Turnstile](assets/config-turntstile.png)
 
 >[!NOTE]
-> Benutzer müssen die URL für die clientseitige JavaScript-Validierung und die serverseitige Validierungs-URL nicht ändern, da sie bereits für die Turnstile-Validierung vorausgefüllt sind.
+> Benutzer müssen die clientseitige JavaScript-Validierungs-URL und die serverseitige Validierungs-URL nicht ändern, da sie bereits für die Turnstile-Validierung vorausgefüllt sind.
 
 Sobald der Turnstile Captcha-Dienst konfiguriert ist, ist er zur Verwendung in einem adaptiven Formular verfügbar.
 

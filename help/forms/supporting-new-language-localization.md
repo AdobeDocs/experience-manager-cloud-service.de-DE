@@ -3,8 +3,9 @@ title: Wie füge ich einem adaptiven Formular, das auf Foundation-Komponenten ba
 description: Bei adaptiven Formularen können Sie Gebietsschemata für weitere Sprachen zusätzlich zu den vorkonfigurierten Sprachen hinzufügen.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 100%
 

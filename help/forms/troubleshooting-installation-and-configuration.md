@@ -2,13 +2,13 @@
 title: Wie können Sie Probleme bei der Installation und Konfiguration einer AEM Forms as a Cloud Service-Umgebung beheben?
 description: Fehlerbehebung bei der Installation und Konfiguration einer AEM Forms as a Cloud Service-Umgebung.
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -55,11 +55,11 @@ Benutzer können die Build-Pipeline nicht ausführen. Die Pipeline schlägt nach
 Um das Problem zu beheben, öffnen Sie Cloud Manager, wählen Sie die Option **[!UICONTROL Aktualisieren]** für Ihre Umgebung aus und führen Sie die Pipeline aus.
 
 
-## Bundles befinden sich nicht im aktiven Status {#bundles-inactive-state}
+## Bundles haben keinen aktiven Status {#bundles-inactive-state}
 
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
-1. Starten Sie AEM und warten Sie, bis es vollständig gestartet wird, bis alle Pakete bereit sind.
-1. Beenden Sie AEM (Strg + C).
-1. Platzieren der Forms `.far` im Installationsordner.
-1. Starten Sie den AEM neu.
+1. Starten Sie AEM vollständig und warten Sie, bis alle Pakete verfügbar sind.
+1. Beenden Sie AEM (Strg+C).
+1. Platzieren Sie die `.far`-Forms-Datei in den Installationsordner.
+1. Starten Sie den AEM-Server neu.

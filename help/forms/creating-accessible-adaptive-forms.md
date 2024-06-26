@@ -5,8 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 100%
 
@@ -16,7 +17,7 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Ein barrierefreies Formular ist ein Formular, das alle verwenden kann, einschließlich Benutzender mit Behinderungen. Adaptive Formulare verfügen über eine Reihe von Merkmalen und Funktionen, die die Benutzerfreundlichkeit für Benutzende mit begrenzten Fähigkeiten verbessern. Die Integration von Barrierefreiheit in adaptive Formulare macht Inhalte nicht nur für die größtmögliche potenzielle Zielgruppe zugänglich, sondern entspricht auch einer Anforderung beim Bereitstellen von Dokumenten in Regionen, in denen die Einhaltung von Barrierefreiheitsstandards obligatorisch ist. Mit [!DNL AEM Forms] können Formularentwickler die Barrierefreiheitsstandards einhalten.
+Ein barrierefreies Formular ist ein Formular, das alle verwenden können, einschließlich von Benutzenden mit Behinderungen. Adaptive Formulare verfügen über eine Reihe von Merkmalen und Funktionen, die die Benutzerfreundlichkeit für Benutzende mit begrenzten Fähigkeiten verbessern. Die Integration von Barrierefreiheit in adaptive Formulare macht Inhalte nicht nur für die größtmögliche potenzielle Zielgruppe zugänglich, sondern entspricht auch einer Anforderung beim Bereitstellen von Dokumenten in Regionen, in denen die Einhaltung von Barrierefreiheitsstandards obligatorisch ist. Mit [!DNL AEM Forms] können Formularentwickler die Barrierefreiheitsstandards einhalten.
 
 Beim Verfassen eines adaptiven Formulars müssen Autoren die folgenden Punkte berücksichtigen, um barrierefreie adaptive Formulare zu erstellen:
 
@@ -47,7 +48,7 @@ Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit�
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.
-1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]**. Wählen Sie die Datei x Ultramarine-Accessible-Theme.zip aus und laden Sie sie hoch. Das Design wird in Ihre AEM Instanz hochgeladen.
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]** aus. Wählen Sie die Datei x Ultramarine-Accessible-Theme.zip aus und laden Sie sie hoch. Das Design wird in Ihre AEM Instanz hochgeladen.
 
 ## Gestalten eines barrierefreien adaptiven Formulars
 
@@ -58,9 +59,9 @@ Sie sollten sich auf vier wichtige Aspekte konzentrieren: Tastaturnavigation, Fa
 Wenden Sie das Design „Ultramarine-Accessible“ auf Ihr vorhandenes adaptives Formular an. So wenden Sie das Design an:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Wählen Sie eine Komponente aus und wählen Sie das übergeordnete Symbol. Wählen Sie im Kontextmenü **[!UICONTROL Container für adaptive Formulare]** und dann das Symbol „Konfigurieren“.
-1. Wählen Sie im Eigenschaften-Browser das Design „Ultramarine-Accessible“ aus und wählen Sie dann das Symbol **[!UICONTROL Speichern]**.
-1. Aktualisieren Sie das Browserfenster. Das Design wird auf das adaptive Formular angewendet.
+1. Wählen Sie eine Komponente aus und wählen Sie das übergeordnete Symbol. Wählen Sie im Kontextmenü **[!UICONTROL Container für adaptive Formulare]** und dann das Symbol „Konfigurieren“ aus.
+1. Wählen Sie im Eigenschaften-Browser das Design „Ultramarine-barrierefrei“ und dann das Symbol **[!UICONTROL Speichern]** aus.
+1. Aktualisieren Sie das Browser-Fenster. Das Design wird auf das adaptive Formular angewendet.
 
 Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgenden zusätzlichen Korrekturen durch. Die Korrekturen ergänzen die Barrierefreiheitskorrekturen, die anhand des barrierefreien Designs angewandt werden:
 
@@ -100,7 +101,7 @@ Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht unb
 
 Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 
-1. Wählen Sie eine Komponente aus und wählen Sie dann ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Komponente und ![cmppr](assets/cmppr.png) aus.
 1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Ein-/Ausgabehilfe]**, um die gewünschte Barrierefreiheitsoption auszuwählen.
 
 ### Barrierefreiheitsoptionen in Formularkomponenten {#accessibility-options-in-form-components}
@@ -128,7 +129,7 @@ Bilder können bei einigen Benutzenden zu einem besseren Verständnis beitragen.
 
 Stellen Sie sicher, dass der Text das Objekt und seinen Zweck im Formular beschreibt. Eine Bildschirmlesehilfe liest diesen alternativen Text vor, wenn sie auf ein Bild stößt. Für jedes Bild muss ein alternativer Text angegeben sein.
 
-Wählen Sie eine Bildkomponente aus und wählen Sie dann ![cmppr](assets/cmppr.png). Geben Sie in der Seitenleiste unter „Eigenschaften“ einen Alternativtext für ein Bild ein.
+Wählen Sie eine Bildkomponente und ![cmppr](assets/cmppr.png) aus. Geben Sie in der Seitenleiste unter „Eigenschaften“ einen Alternativtext für ein Bild ein.
 
 ![Alternativtext für ein Bild](assets/image-properties.png)
 
