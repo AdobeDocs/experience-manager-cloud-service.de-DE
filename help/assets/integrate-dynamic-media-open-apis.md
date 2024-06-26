@@ -2,16 +2,16 @@
 title: Integrieren von AEM Assets in nachgelagerte Anwendungen
 description: Integrieren von AEM Assets in nachgelagerte Anwendungen
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-# Integrieren von AEM Assets in nachgelagerte Anwendungen {#integrate-new-dynamic-media-apis}
+# Integrieren von AEM Assets in nachgelagerte Anwendungen {#integrate-dynamic-media-open-apis}
 
-Alle [genehmigte Assets](approved-assets.md) die im Experience Manager Assets-Repository verfügbar sind, können für nachgelagerte Anwendungen bereitgestellt werden.
+Alle [genehmigte Assets](approve-assets.md) die im Experience Manager Assets-Repository verfügbar sind, können für nachgelagerte Anwendungen bereitgestellt werden.
 
 Sie können entweder Ihre eigene benutzerdefinierte Benutzeroberfläche mit dem Experience Manager Assets-Repository integrieren, indem Sie die Such- und Bereitstellungs-APIs verwenden oder die Adobe Micro-Frontend-Asset-Auswahl verwenden.
 

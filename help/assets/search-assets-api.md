@@ -2,7 +2,7 @@
 title: Assets-API durchsuchen
 description: Erfahren Sie, wie Sie die Search Assets-API verwenden.
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 1%
@@ -11,13 +11,13 @@ ht-degree: 1%
 
 # Assets-API durchsuchen {#search-assets-api}
 
-Alle [genehmigte Assets](approved-assets.md) , die im Experience Manager-Assets-Repository verfügbar sind, können durchsucht und dann mithilfe einer Bereitstellungs-URL an integrierte nachgelagerte Anwendungen gesendet werden.
+Alle [genehmigte Assets](approve-assets.md) , die im Experience Manager-Assets-Repository verfügbar sind, können durchsucht und dann mithilfe einer Bereitstellungs-URL an integrierte nachgelagerte Anwendungen gesendet werden.
 
 Die Suche nach den richtigen genehmigten Assets aus dem Experience Manager-Repository ist der erste Schritt zur Bereitstellung von Assets mithilfe der Bereitstellungs-URL. Die Antwort auf die Suchanfrage umfasst ein Array von JSON-Dokumenten, die den Assets entsprechen, die die Suchkriterien erfüllt haben. Jedes JSON-Dokument wird mithilfe eines `id` -Feld, das zum Erstellen der Asset-Bereitstellungsanforderung verwendet wird.
 
 ![Überblick über das direkte binäre Upload-Protokoll](assets/search-assets-api-overview.png)
 
-Sie können Eigenschaften in der Anfrage der Search Assets API definieren, um die folgenden Funktionen zu aktivieren:
+Sie können Eigenschaften in der Assets-API-Anfrage &quot;Suchen&quot;definieren, um die folgenden Funktionen zu aktivieren:
 
 * **Volltextsuche**: Verwenden Sie die `match` abfragen, um den zu suchenden Text zu definieren.  Sie können auch Operatoren innerhalb der `match` Abfrage zum Filtern der Ergebnisse.
 
@@ -42,7 +42,7 @@ Die Bereitstellungsdomäne ähnelt der Struktur der Domäne der Autorenumgebung 
 
 POST
 
-## API-Kopfzeile für die Suche nach Assets {#search-assets-api-header}
+## Assets API-Kopfzeile durchsuchen {#search-assets-api-header}
 
 Sie müssen beim Definieren eines Headers in der Such-Assets-API die folgenden Details angeben:
 
@@ -55,7 +55,7 @@ headers: {
     },
 ```
 
-Um die Such-API aufzurufen, ist ein IMS-Token erforderlich, das im `Authorization` Details. Das IMS-Token wird aus einem technischen Konto abgerufen. Siehe [Abrufen der AEM as a Cloud Service Anmeldedaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) , um ein neues technisches Konto zu erstellen. Siehe [Zugriffstoken erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) , um das IMS-Token zu generieren und es in der Anforderungsheader der API für die Suche nach Assets entsprechend zu verwenden.
+Um die Such-API aufzurufen, ist ein IMS-Token erforderlich, das im `Authorization` Details. Das IMS-Token wird aus einem technischen Konto abgerufen. Siehe [Abrufen der AEM as a Cloud Service-Anmeldeinformationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) , um ein neues technisches Konto zu erstellen. Siehe [Zugriffstoken erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) , um das IMS-Token zu generieren und es in der Anforderungsheader der API für die Suche nach Assets entsprechend zu verwenden.
 
 Informationen zum Anzeigen von Anforderungsbeispielen, Antwortbeispielen und Antwortcodes finden Sie unter [Assets-API durchsuchen](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
 

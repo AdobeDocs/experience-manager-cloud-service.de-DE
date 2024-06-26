@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '5040'
+source-wordcount: '5073'
 ht-degree: 99%
 
 ---
@@ -559,6 +559,16 @@ ht-degree: 99%
       + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/assets/dynamic-media/http2faq.md)
       + [Einstellung von Flash Viewer](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einstellung von DHTML Viewer](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+      + Dynamic Media mit OpenAPI-Funktionen {#dynamic-media-open-apis}
+         + [Überblick](/help/assets/dynamic-media-open-apis-overview.md)
+         + [Genehmigen von Assets](/help/assets/approve-assets.md)
+         + [Integration mit nachgelagerten Anwendungen](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [Asset-API suchen](/help/assets/search-assets-api.md)
+         + [Bereitstellungs-APIs](/help/assets/deliver-assets-apis.md)
+         + [Beschränken der Asset-Bereitstellung](/help/assets/restrict-assets-delivery.md)
+         + [Integrieren von Remote AEM Assets mit AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [Häufig gestellte Fragen](/help/assets/dynamic-media-open-apis-faqs.md)
+         + [Benutzerdefinierte Domäne konfigurieren](/help/assets/configure-custom-domain.md)
    + Arbeiten mit der Assets-Ansicht {#assets-view}
       + [Einführung](/help/assets/assets-view-introduction.md)
       + [Erste Schritte](/help/assets/get-started-assets-view.md)

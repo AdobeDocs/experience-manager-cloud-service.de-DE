@@ -1,20 +1,19 @@
 ---
 title: Integrieren von Remote AEM Assets mit AEM Sites
 description: Erfahren Sie im Creative Cloud, wie Sie AEM Sites mit der genehmigten AEM Assets konfigurieren und verbinden.
-role: null
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
 
 # Integrieren von Remote AEM Assets mit AEM Sites  {#integrate-approved-assets}
 
-Die effektive Verwaltung digitaler Assets ist für die Bereitstellung ansprechender und konsistenter Markenerlebnisse auf verschiedenen Online-Plattformen von entscheidender Bedeutung. Dynamic Media mit OpenAPI-Funktionen verbessern die digitale Asset-Verwaltung, indem eine nahtlose Integration zwischen AEM Sites und der Remote-AEM Assets ermöglicht wird. Mit dieser innovativen Funktion können Sie verschiedene Arten genehmigter digitaler Assets in mehreren AEM-Umgebungen freigeben und verwalten und so Workflows für Sites-Autoren und Inhaltseditoren optimieren.
+Die effektive Verwaltung digitaler Assets ist für die Bereitstellung ansprechender und konsistenter Markenerlebnisse auf verschiedenen Online-Plattformen von entscheidender Bedeutung. Dynamic Media mit OpenAPI-Funktionen verbessern die Verwaltung digitaler Assets, indem eine nahtlose Integration zwischen AEM Sites und AEM Assets as a Cloud Service ermöglicht wird. Mit dieser innovativen Funktion können Sie verschiedene Arten genehmigter digitaler Assets in mehreren AEM-Umgebungen freigeben und verwalten und so Workflows für Sites-Autoren und Inhaltseditoren optimieren.
 
-Mit Dynamic Media mit OpenAPI-Funktionen können Sites-Autoren Assets aus Remote-DAM direkt im AEM Seiteneditor verwenden und [Inhaltsfragment](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), die die Inhaltserstellung und -verwaltung vereinfacht.
+Mit Dynamic Media mit OpenAPI-Funktionen können Sites-Autoren Assets aus Remote-DAM direkt im AEM Seiteneditor verwenden und [Inhaltsfragment](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=de), die die Inhaltserstellung und -verwaltung vereinfacht.
 
 Benutzer können mehrere AEM Sites-Instanzen ohne Einschränkung der Höchstanzahl mit einer Remote-DAM-Bereitstellung verbinden, was einen erheblichen Vorteil gegenüber der [Connected Assets](use-assets-across-connected-assets-instances.md) Funktion.
 
@@ -22,9 +21,9 @@ Benutzer können mehrere AEM Sites-Instanzen ohne Einschränkung der Höchstanza
 
 Nach der ersten Einrichtung können Benutzer Seiten in der AEM Sites-Instanz erstellen und nach Bedarf Assets hinzufügen. Beim Hinzufügen von Assets können sie entweder in ihrem lokalen DAM gespeicherte Assets auswählen oder die im Remote-DAM verfügbaren Assets durchsuchen und verwenden.
 
-Dynamic Media mit OpenAPI-Funktionen bieten verschiedene weitere Vorteile, z. B. den Zugriff auf und die Verwendung von Remote-Assets im Inhaltsfragment, das Abrufen von Metadaten der Remote-Assets und vieles mehr. Weitere Informationen zur anderen [Vorteile von Dynamic Media mit OpenAPI-Funktionen gegenüber Connected Assets](/help/assets/new-dynamic-media-apis-faqs.md).
+Dynamic Media mit OpenAPI-Funktionen bieten verschiedene weitere Vorteile, z. B. den Zugriff auf und die Verwendung von Remote-Assets im Inhaltsfragment, das Abrufen von Metadaten der Remote-Assets und vieles mehr. Weitere Informationen zur anderen [Vorteile von Dynamic Media mit OpenAPI-Funktionen gegenüber Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md).
 
-## Vorbereitung
+## Vorbereitung {#pre-requisits-sites-integration}
 
 * Einrichten der folgenden [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md#add-variables) für AEM as a Cloud Service:
 
@@ -41,7 +40,7 @@ Dynamic Media mit OpenAPI-Funktionen bieten verschiedene weitere Vorteile, z. B.
    1. Fügen Sie die **[!UICONTROL repositoryID]**= &quot;delivery-pxxx-eyyyyy.adobeaemcloud.com&quot; und **[!UICONTROL imsClient]**= [IMSClientId]
 Weitere Informationen [IMS-Authentifizierung](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
-* IMS-Zugriff zur Anmeldung bei Remote-DAM AEM as a Cloud Service Instanz.
+* IMS-Zugriff zur Anmeldung bei der Remote-DAM-AEM as a Cloud Service-Instanz.
 
 * Schalten Sie die Dynamic Media mit OpenAPI-Funktionen ein, um im Remote-DAM zu wechseln.
 
@@ -53,7 +52,7 @@ Mit Dynamic Media mit OpenAPI-Funktionen können Sie auf Assets zugreifen, die i
 
 ![Bild](/help/assets/assets/open-APIs.png)
 
-### Zugreifen auf Remote-Assets im AEM Seiteneditor
+### Zugreifen auf Remote-Assets im AEM Seiteneditor {#access-assets-page-editor}
 
 Führen Sie die folgenden Schritte aus, um Remote-Assets im Seiteneditor AEM AEM Sites-Instanz zu verwenden. Sie können diese Integration in AEM as a Cloud Service und AEM 6.5 durchführen.
 
@@ -71,13 +70,15 @@ Führen Sie die folgenden Schritte aus, um Remote-Assets im Seiteneditor AEM AEM
 1. Alternativtext hinzufügen und klicken Sie auf **[!UICONTROL Fertig]**.
    <br> Das Remote-Asset wird in der Bildkomponente angezeigt. Sie können auch die Bereitstellungs-URL des Assets überprüfen, wenn es auf der Seite geladen wird, oder indem Sie den Tab &quot;Vorschau&quot;verwenden. Die Bereitstellungs-URL gibt an, dass auf das Asset remote zugegriffen wird.
 
+Sie können im Seiteneditor standardmäßig nur auf Remote-Assets zugreifen, die für die Bild-Kernkomponente v3 und die Teaser-Kernkomponente v2 AEM sind. Für andere Komponenten, einschließlich benutzerdefinierter Komponenten, sind Anpassungen erforderlich, um die Asset-Auswahl mit diesen Komponenten zu integrieren.
+
 #### Video: Zugriff auf Remote-Assets im AEM Seiteneditor
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
-### Zugreifen auf Remote-Assets in AEM Inhaltsfragment
+### Zugreifen auf Remote-Assets in AEM Inhaltsfragment {#access-assets-content-fragment}
 
-Führen Sie die folgenden Schritte aus, um Remote-Assets in AEM Inhaltsfragment in Ihrer AEM Sites-Instanz zu verwenden. Sie können diese Integration in AEM 6.5 und nicht auf AEM as a Cloud Service durchführen.
+Führen Sie die folgenden Schritte aus, um Remote-Assets in AEM Inhaltsfragment in Ihrer AEM Sites-Instanz zu verwenden. Sie können diese Integration in AEM 6.5 und nicht in AEM as a Cloud Service durchführen.
 
 1. Navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Wählen Sie den Asset-Ordner aus, in dem das Inhaltsfragment vorhanden ist.
@@ -99,3 +100,7 @@ Sie werden aufgefordert, sich anzumelden.
 #### Video: Zugriff auf Remote-Assets in AEM Inhaltsfragment
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
+
+### Zugreifen auf Remote-Assets in Edge Delivery Services {#access-assets-eds}
+
+Sie können auch auf Remote-Assets in Edge Delivery Services zugreifen. Weitere Informationen finden Sie unter [Verwenden von Assets aus Assets as a Cloud Service, die mit Dynamic Media mit OpenAPI-Funktionen bereitgestellt werden](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).

@@ -2,10 +2,10 @@
 title: Genehmigen von Assets in Experience Manager
 description: Erfahren Sie, wie Sie Assets in genehmigen [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 3%
+source-wordcount: '683'
+ht-degree: 2%
 
 ---
 
@@ -17,17 +17,18 @@ Sie können Assets in AEM Assets genehmigen, um die Asset-Verwaltung zu optimier
 
 ## Vorbereitung {#pre-requisites}
 
-Sie müssen Zugriff auf AEM Assets as a Cloud Service haben und über Berechtigungen zum Bearbeiten der **[!UICONTROL Prüfungsstatus]** -Eigenschaft für ein Asset.
+Sie müssen Zugriff auf AEM Assets as a Cloud Service und Berechtigungen haben, um die **[!UICONTROL Prüfungsstatus]** -Eigenschaft für ein Asset.
 
 ## Konfiguration
 
-Sie müssen eine einmalige Aktualisierung des entsprechenden Metadatenschemas im [!DNL Experience Manager] bevor Sie ein Asset genehmigen können. Sie können diese Konfiguration überspringen für [!DNL Experience Manager Assets]. Führen Sie die folgenden Schritte aus, um das Metadatenschema zu konfigurieren:
+Sie müssen das entsprechende Metadatenschema in der Admin-Ansicht nur einmal aktualisieren, bevor Sie ein Asset genehmigen können. Sie können diese Konfiguration für die Assets-Ansicht überspringen. Führen Sie die folgenden Schritte aus, um das Metadatenschema zu konfigurieren:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
 1. Wählen Sie das entsprechende Metadatenschema aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. <br>Die **[!UICONTROL Metadatenschema-Formular-Editor]** mit dem **[!UICONTROL Allgemein]** hervorgehoben.
 1. Scrollen Sie nach unten und klicken Sie auf **[!UICONTROL Prüfungsstatus]**.
 1. Klicken Sie auf **[!UICONTROL Regeln]** Registerkarte im rechten Seitenbereich.
 1. Deaktivieren **[!UICONTROL Bearbeitung deaktivieren]** und klicken **[!UICONTROL Speichern]**.
+Wenn Sie die Eigenschaft anzeigen müssen, die **[!UICONTROL Prüfungsstatus]** -Feld zugeordnet ist, navigieren Sie zu **[!UICONTROL Einstellungen]** Registerkarte und zeigen Sie die `./jcr:content/metadata/dam:status` Wert in **[!UICONTROL Zu Eigenschaft zuordnen]** -Feld.
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ Sie können Assets in beiden [!DNL Experience Manager] und [!DNL Experience Mana
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Auf ähnliche Weise können Sie Assets mit dem [neue Asset-Ansicht](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   Auf ähnliche Weise können Sie Assets mit dem [neue Assets-Ansicht](/help/assets/manage-organize-assets-view.md).
 
 ## Massenvalidierung von Assets {#bulk-approve-assets}
 
@@ -74,3 +75,31 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 >[!NOTE]
 > 
 >Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Für vorhandene Assets im Ordner müssen Sie sie manuell auswählen und genehmigen. <br> Alternativ können Sie die **[!UICONTROL Neuverarbeitung]** -Option, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
+
+So genehmigen Sie Assets in einem Ordner in der Assets-Ansicht stapelweise:
+
+1. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Massenbearbeitung von Metadaten]**.
+
+1. Auswählen **[!UICONTROL Genehmigt]** im **[!UICONTROL Status]** im Feld verfügbar [!UICONTROL Eigenschaften] im rechten Bereich.
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+## Versand-URL für genehmigte Assets kopieren {#copy-delivery-url-approved-assets}
+
+Die Bereitstellungs-URL für alle genehmigten Assets im Repository ist verfügbar, wenn Sie [!UICONTROL Dynamic Media mit OpenAPI-Funktionen] in Ihrer AEM as a Cloud Service-Instanz aktiviert ist.
+
+So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository:
+
+1. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Details]**.
+
+1. Klicken Sie im rechten Bereich auf das Symbol Ausgabeformate .
+
+1. Auswählen **[!UICONTROL Dynamic Media mit OpenAPI]** verfügbar im **[!UICONTROL Dynamik]** Abschnitt.
+
+1. Klicks **[!UICONTROL URL kopieren]** zum Kopieren der Bereitstellungs-URL des Assets.
+   ![Bereitstellungs-URL kopieren](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
+
