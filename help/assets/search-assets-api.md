@@ -2,7 +2,7 @@
 title: Assets-API durchsuchen
 description: Erfahren Sie, wie Sie die Search Assets-API verwenden.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 1%
@@ -58,4 +58,3 @@ headers: {
 Um die Such-API aufzurufen, ist ein IMS-Token erforderlich, das im `Authorization` Details. Das IMS-Token wird aus einem technischen Konto abgerufen. Siehe [Abrufen der AEM as a Cloud Service-Anmeldeinformationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) , um ein neues technisches Konto zu erstellen. Siehe [Zugriffstoken erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) , um das IMS-Token zu generieren und es in der Anforderungsheader der API für die Suche nach Assets entsprechend zu verwenden.
 
 Informationen zum Anzeigen von Anforderungsbeispielen, Antwortbeispielen und Antwortcodes finden Sie unter [Assets-API durchsuchen](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
-
