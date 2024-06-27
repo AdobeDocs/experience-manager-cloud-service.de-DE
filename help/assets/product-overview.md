@@ -1,9 +1,9 @@
 ---
 title: Übersicht über Content Hub
 description: Erfahren Sie mehr über Content Hub, seine wichtigsten Vorteile, den Zugriff darauf und wie Sie Feedback zu der in Content Hub verfügbaren Option geben können.
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Die gängigsten Eigenschaften in Content Hub, wie Filter für die Suche, beim Hi
 
 **Ermöglichen Sie es Nichtkreativen, Inhalte zu bearbeiten und neu zu mischen, während sie bei der Marke bleiben**
 
-Content Hub ist mit Adobe Express integriert (sofern Sie über Berechtigungen für Adobe Expreß verfügen), um Bilder mit dem eingebetteten Express-Editor zu bearbeiten und beeindruckende Bildvarianten zu erstellen, während Sie auf der Marke bleiben.
+Mit Content Hub können Sie neue Inhalte mit Adobe Express erstellen (wenn Sie über Adobe Expreß-Berechtigungen verfügen). Sie können vorhandene Inhalte mit einfach zu verwendenden Tools bearbeiten, markenspezifische Varianten mit Vorlagen und Markenelementen erstellen und neue Inhalte mit den neuesten GenAI-Funktionen von Adobe Firefly erstellen.
 
 **Gewinnen Sie Einblicke in die Verwendung von Inhalten in Teams**
 
@@ -61,6 +61,8 @@ Um produktbezogene Verbesserungen zu empfehlen, klicken Sie auf **[!UICONTROL Fe
 
 Geben Sie einen Betreff und eine Beschreibung der Empfehlung an und fügen Sie bei Bedarf Dateien hinzu. Klicks **[!UICONTROL Einsenden]** , um das Feedback an Adobe zu senden.
 
+![Content Hub-Feedback](assets/content-hub-feedback.png)
+
 ## Einrichten von Content Hub für Ihr Team {#setup-content-hub}
 
 Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichten:
@@ -69,13 +71,13 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
 
 1. [Integrierter Content Hub-Administrator](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [Wichtige Content Hub-Benutzer hinzufügen](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Wichtige Content Hub-Benutzer hinzufügen](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [DAM-Autoren oder -Administratoren zum Genehmigen von Assets mit Experience Manager-Assets](approve-assets.md).
 
 1. [Administratoren können die Content Hub-Benutzeroberfläche für andere Benutzer konfigurieren](configure-content-hub-ui-options.md).
 
-1. [Gewähren von Content Hub-Zugriff für weitere Benutzer vom Team](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Gewähren von Content Hub-Zugriff für weitere Benutzer vom Team](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Zugriff auf das Content Hub-Portal](#access-content-hub).
 
