@@ -4,14 +4,13 @@ description: Erfahren Sie, wie Sie ein auf Kernkomponenten basierendes adaptives
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1053'
 ht-degree: 15%
 
 ---
 
-<span class="preview"> Dieser Artikel enthält Inhalte für die Funktion &quot;Vorabversion&quot;. Auf die Vorabversion-Funktion kann nur über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features).
 
 # Speichern von Kernkomponenten-basierten adaptiven Formularen als Entwurf {#save-af-form}
 
