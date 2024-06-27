@@ -5,9 +5,9 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 feature: Migration
 role: Admin
 source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '555'
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Gehen Sie wie folgt vor, um Ihr Projekt zu löschen:
 1. Klicken Sie auf **Löschen**, um den Schritt zu bestätigen.
 
    >[!NOTE]
-   >Die Projekte laufen automatisch ab und werden nach einem Jahr Migrationsinaktivität gelöscht. Projekte bleiben aktiv, indem sie den Projektnamen oder die Projektbeschreibung bearbeiten, einen BPA-Bericht hochladen, einen Migrationssatz erstellen oder bearbeiten, eine Extraktion ausführen oder eine Aufnahme ausführen.
+   >Die Projekte laufen automatisch ab und werden nach einem Jahr Migrationsinaktivität gelöscht. Projekte bleiben aktiv, indem Sie den Projektnamen oder die Projektbeschreibung bearbeiten, einen BPA-Bericht hochladen, einen Migrationssatz erstellen oder bearbeiten, eine Extraktion ausführen oder eine Aufnahme ausführen.
 
 
 ## Wie geht es weiter {#whats-next}

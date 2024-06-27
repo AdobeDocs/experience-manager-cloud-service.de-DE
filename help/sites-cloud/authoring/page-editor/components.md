@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md) biet
 
 Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen.
 
-Sie werden mithilfe AEM Best Practices erstellt und bilden die Grundlage für das AEM Authoring. Kernkomponenten können von Entwicklern einfach erweitert werden, um spezifischen Projektanforderungen gerecht zu werden.
+Sie wurden mithilfe der Best Practices von AEM erstellt und bilden die Grundlage für das AEM-Authoring. Kernkomponenten können von Entwickelnden einfach erweitert werden, um spezifischen Projektanforderungen gerecht zu werden.
 
 Neben den WCM-Kernkomponenten können Sie auch [Kernkomponenten von adaptiven Formularen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features) verwenden. Diese Kernkomponenten bieten standardmäßige und einfachere Methoden für das [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 

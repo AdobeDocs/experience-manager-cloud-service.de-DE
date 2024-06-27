@@ -1,19 +1,19 @@
 ---
-title: Zuweisen eines Players zu einem Display in Screens as a Cloud Service
-description: Erfahren Sie, wie Sie einen Player in Screens as a Cloud Service einer Anzeige zuweisen.
+title: Zuweisen eines Players zu einer Anzeige in Screens as a Cloud Service
+description: Erfahren Sie, wie Sie in Screens as a Cloud Service einer Anzeige einen Player zuweisen.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
 feature: Developing Screens
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
-# Zuweisen eines Players zu einem Display in Screens as a Cloud Service {#assign-player-displays-screens-cloud}
+# Zuweisen eines Players zu einer Anzeige in Screens as a Cloud Service {#assign-player-displays-screens-cloud}
 
-Nachdem die Projekteinrichtung abgeschlossen ist, müssen Sie den Player einer Anzeige zuweisen, um den Inhalt anzuzeigen.
+Nachdem das Projekt fertig eingerichtet wurde, müssen Sie den Player einer Anzeige zuweisen, um Inhalte anzuzeigen.
 
 ## Ziel {#objective}
 
@@ -21,11 +21,11 @@ In diesem Dokument erfahren Sie, wie Sie in Screens as a Cloud Service einen Pla
 
 ## Schritte zum Zuweisen eines Players zu einem Display {#create-display}
 
-Nachdem Sie Ihren Player registriert haben, müssen Sie der gewünschten Anzeige einen Player zuweisen, damit Ihre Inhalte im Player wiedergegeben werden.
+Sobald Sie Ihren Player registriert haben, müssen Sie der entsprechenden Anzeige einen Player zuweisen, damit Ihre Inhalte in dem Player abgespielt werden.
 
 Gehen Sie wie folgt vor, um einen Player einem Display zuzuweisen:
 
-1. Wählen Sie **Player** unter „Network Admin Panel“ im linken Navigationsbereich und wählen Sie den Player aus. Klicks **Anzeige zuweisen**
+1. Wählen Sie **Player** unter „Network Admin Panel“ im linken Navigationsbereich und wählen Sie den Player aus. Klicken Sie auf **Anzeige zuweisen**
 
    ![image](/help/screens-cloud/assets/player/register-player7.png)
 
@@ -35,8 +35,8 @@ Gehen Sie wie folgt vor, um einen Player einem Display zuzuweisen:
 
 ## Inhaltswiedergabe {#content-playback}
 
-Nachdem Sie einem Player eine Anzeige zugewiesen haben, wie im vorherigen Abschnitt gezeigt, sehen Sie die zugewiesene Anzeige unter der **ZUGEWIESENE ANZEIGE** Bedienfeld.
+Sobald Sie einem Player eine Anzeige zugewiesen haben, wie im vorangegangenen Abschnitt gezeigt, sehen Sie die zugewiesene Anzeige im Bereich **ZUGEWIESENE ANZEIGE**.
 
-Jetzt wird die Anzeige Ihrem Player zugewiesen und der Kanal beginnt mit der Wiedergabe des Inhalts. Der Player sollte den Inhalt jetzt herunterladen und abspielen. **Herzlichen Glückwunsch!**
+Jetzt ist die Anzeige Ihrem Player zugewiesen und der Kanal beginnt mit der Wiedergabe der Inhalte. Der Player sollte jetzt Inhalte herunterladen und beginnen, diese wiederzugeben. **Herzlichen Glückwunsch!**
 
 ![image](/help/screens-cloud/assets/player/output.gif)

@@ -6,9 +6,9 @@ exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
 source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '570'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ Erfahren Sie mehr über die verschiedenen Möglichkeiten, Inhalte in AEM zu erst
 
 AEM as a Cloud Service bietet verschiedene Editoren, um verschiedene Inhaltstypen zu bearbeiten und verschiedene Authoring-Anwendungsfälle zu unterstützen.
 
-* [WYSIWYG-Bearbeitung mit dem Seiten-Editor](#page-editor) - Der Seiten-Editor ist der klassische Editor für die Inhaltserstellung in AEM, versucht und vertrauenswürdig für Tausende von Websites.
-* [WYSIWYG Authoring mit dem universellen Editor](#universal-editor) - Der Universal Editor ist eine moderne Benutzeroberfläche, mit der Sie AEM Inhalte inhaltsunabhängig erstellen können. Er ist für AEM Projekte verfügbar, die Edge Delivery Services nutzen.
+* [WYSIWYG-basiertes Authoring mit dem Seiteneditor](#page-editor): Der Seiteneditor ist der klassische Editor für die Inhaltserstellung in AEM. Dieser hat sich bereits bei Tausenden von Websites bewährt.
+* [WYSIWYG-basiertes Authoring mit dem universellen Editor](#universal-editor): Der universelle Editor ist eine moderne Benutzeroberfläche, die es ermöglicht, AEM-Inhalte inhaltsunabhängig zu erstellen. Er ist die erste Wahl bei AEM-Projekten, die Edge Delivery Services nutzen.
 * [Dokumentenbasiertes Authoring](#document-based): Wenn Sie Edge Delivery Services verwenden, können Sie Inhalte als herkömmliche Dokumente z. B. mit Microsoft Word oder Google Docs erstellen, und zwar komplett außerhalb der AEM-Konsolen.
 * [AEM-Inhaltsfragmenteditor](#cf-editor): Dies ist der ideale Editor für die Erstellung von Headless-Inhalten.
 
@@ -29,7 +29,7 @@ Aufgrund der Integrierbarkeit und Skalierbarkeit von AEM können diese Methoden 
 
 Wenden Sie sich an die Systemadministration oder das Projekt.-Management, wenn Sie nicht sicher sind, welche Authoring-Optionen Ihnen zur Verfügung stehen oder wenn Sie neue Möglichkeiten für die Inhaltserstellung kennenlernen möchten.
 
-## WYSIWYG-Bearbeitung mit dem Seiten-Editor {#page-editor}
+## WYSIWYG-basiertes Authoring mit dem Seiteneditor {#page-editor}
 
 Hierbei handelt es sich um den klassischen Editor für die Inhaltserstellung in AEM. Dieser hat sich bereits bei Tausenden von Websites bewährt.
 
@@ -39,7 +39,7 @@ Der AEM-Seiteneditor steht für eine integrierte Umgebung zum Authoring von Inha
 
 Weitere Informationen zum AEM-Seiteneditor finden Sie unter [Der AEM-Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
-## WYSIWYG Authoring mit dem universellen Editor {#universal-editor}
+## WYSIWYG-basiertes Authoring mit dem universellen Editor {#universal-editor}
 
 Beim universellen Editor handelt es sich um eine moderne Benutzeroberfläche, mit der Sie AEM-Inhalte inhaltsunabhängig erstellen können. Er ist die erste Wahl bei AEM-Projekten, die Edge Delivery Services nutzen.
 

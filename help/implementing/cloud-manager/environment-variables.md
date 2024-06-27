@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 1. Geben Sie die Variablendetails ein.
    * **Name**
    * **Wert**
-   * **Angewendeter Dienst** - Definiert, für welchen Dienst (Autor/Publish/Vorschau) die Variable gilt oder ob sie für alle Dienste gilt
+   * **Service angewendet** – Definiert, für welchen Service (Author/Publish/Vorschau) die Variable gilt oder ob sie für alle Services gilt
    * **Typ** – Definiert, ob die Variable eine normale Variable oder ein Geheimnis ist
 
    ![Variable hinzufügen](assets/add-variable.png)

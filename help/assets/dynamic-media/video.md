@@ -6,9 +6,9 @@ feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: e8aac0bef0383604f54c09e2902c23bb89efe8f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9357'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -627,7 +627,7 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
      |--- |--- |
      | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Derselbe Dateiname kann nicht für zusätzliche Untertiteldateien und Audiospurdateien verwendet werden. |
      | Sprache | Wählen Sie die Sprache des Untertitels aus. |
-     | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel** - Der Beschriftungstext, der mit dem Video angezeigt wird, das das Dialogfeld übersetzt oder transkribiert.<br>**Beschriftung**: Der Text umfasst neben der Übersetzung oder Transkription des Dialogs auch Hintergrundgeräusche, Sprecherunterscheidung und andere relevante Informationen, wodurch der Inhalt für gehörlose oder schwerhörige Personen leichter zugänglich wird. |
+     | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel**: Der im Video angezeigte Untertiteltext, der den Dialog übersetzt oder transkribiert.<br>**Beschriftung**: Der Text umfasst neben der Übersetzung oder Transkription des Dialogs auch Hintergrundgeräusche, Sprecherunterscheidung und andere relevante Informationen, wodurch der Inhalt für gehörlose oder schwerhörige Personen leichter zugänglich wird. |
      | Bezeichnung | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel: `English (CC)`. |
 
      Sie können Metadaten von Untertiteln später bei Bedarf ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.

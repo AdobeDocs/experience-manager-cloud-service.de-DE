@@ -5,9 +5,9 @@ exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -164,7 +164,7 @@ Beispiel:
 + Code-Paket A wird in `/apps/a` bereitgestellt
 + Code-Paket B wird in `/apps/a/b` bereitgestellt
 
-Wenn auf Paketebene keine Abhängigkeit des Code-Pakets B von Code-Paket A hergestellt wird, kann Code-Paket B zuerst in `/apps/a` bereitgestellt werden. Wenn es dann von Code-Paket A gefolgt wird, das in bereitgestellt wird `/apps/a`, wird die zuvor installierte `/apps/a/b`.
+Wenn auf Paketebene keine Abhängigkeit des Code-Pakets B von Code-Paket A hergestellt wird, kann Code-Paket B zuerst in `/apps/a` bereitgestellt werden. Wenn darauf dann Code-Paket A folgt, das in `/apps/a` bereitgestellt wird, wird das zuvor installierte `/apps/a/b` entfernt.
 
 In diesem Fall:
 
