@@ -12,7 +12,7 @@ exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Optimieren Sie die Verwaltung einer großen Anzahl von Assets effizient. Stellen
 Eine proaktive Funktion, mit der Sie auswählen können, welche Assets mit Dynamic Media synchronisiert werden sollen. Sie können beispielsweise nur diejenigen Ordner mit Assets synchronisieren, für die die endgültige Genehmigung erteilt wurde. Dieser Workflow hilft Ihnen dabei, die Kontrolle darüber zu behalten, welche Assets für die Bereitstellung an Ihre Kundschaft vorbereitet werden.
 
 * **Selektive Veröffentlichung:**
-Nach der Synchronisierung Ihrer Assets können Sie durch die selektive Veröffentlichung steuern, welche Assets für Ihre Kunden sichtbar sind. Auf diese Weise können Sie steuern, welche genehmigten Assets tatsächlich über Ihre Kanäle bereitgestellt werden, und sicherstellen, dass Ihre Kundinnen und Kunden nur die besten und relevantesten Inhalte sehen.
+Nach der Synchronisierung Ihrer Assets können Sie durch die selektive Veröffentlichung steuern, welche Assets für Ihre Kundinnen und Kunden sichtbar sind. Auf diese Weise können Sie steuern, welche genehmigten Assets tatsächlich über Ihre Kanäle bereitgestellt werden, und sicherstellen, dass Ihre Kundinnen und Kunden nur die besten und relevantesten Inhalte sehen.
 
 Mithilfe dieser beiden Best Practices können Sie eine bessere Kontrolle, Verwaltung und Produktivität Ihrer Rich-Media-Inhalte erzielen.
 

@@ -82,7 +82,7 @@ ht-degree: 98%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
-         + [Neueste Wartungversionshinweise für 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
+         + [Wartungversionshinweise für 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
          + [Neueste Wartungversionshinweise für 2024.5.0](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [Neueste Wartungversionshinweise für 2024.4.0](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [Wartungsversionshinweise für 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md)
@@ -847,7 +847,7 @@ ht-degree: 98%
 + Edge Delivery Services {#edge-delivery}
    + [Überblick über Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md)
-   + WYSIWYG Authoring {#wysiwyg-authoring}
+   + WYSIWYG-Authoring {#wysiwyg-authoring}
       + [Erstellen von Inhalten für Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
       + [Veröffentlichen von Inhalten für Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
       + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '3302'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ nach dem `cfg.json` OSGi-Konfigurationsformat definiert.
 
 >[!NOTE]
 >
->Die OSGi-Konfigurationen werden nicht wie typische AEM in Cloud unter /apps gespeichert, sondern werden an einem externen Speicherort gespeichert. Einchecken in Cloud Manager [Entwicklerkonsole](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) , um die OSGi-Konfigurationen anzuzeigen.
+>Die OSGi-Konfigurationen werden nicht wie typische AEM-Instanzen in Cloud unter /apps gespeichert, sondern an einem externen Speicherort. Überprüfen Sie in der [Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) von Cloud Manager die OSGi-Konfigurationen.
 
 ## Ausführungsmodus-Auflösung {#runmode-resolution}
 

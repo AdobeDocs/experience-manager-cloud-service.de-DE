@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 73%
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Diese Dienste ermöglichen Ihnen Folgendes:
 
 ## Überblick über AEM Forms Edge Delivery Services {#edge-overview}
 
-AEM Forms Edge Delivery Services ermöglicht eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website. Sie können Inhalte und Formulare erstellen mit [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) sowie [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services stellt einen Formularblock bereit, der als [adaptiver Formularblock](/help/edge/docs/forms/create-forms.md) bekannt ist, um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
+AEM Forms Edge Delivery Services ermöglicht eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website. Sie können Inhalte und Formulare mit [WYSIWYG-Authoring](/help/forms/creating-adaptive-form-core-components.md) ebenso wie mit [dokumentenbasiertem Authoring](/help/edge/docs/forms/create-forms.md) erstellen. AEM Forms Edge Delivery Services stellt einen Formularblock bereit, der als [adaptiver Formularblock](/help/edge/docs/forms/create-forms.md) bekannt ist, um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
 
 Sie können beispielsweise Formulare direkt in Microsoft Excel oder Google Tabellen erstellen, und diese Tabellen werden in Formulare für Ihre Website umgewandelt. Alle neuen Formulare oder Formularinhalte, wie z. B. ein neues Formularfeld, stehen sofort auf Ihrer Website zur Verfügung, ohne dass ein Neuerstellungsprozess erforderlich ist.
 
@@ -39,16 +39,16 @@ Wenn Ihre Formulare bereit sind, können Sie [AEM Sidekick](/help/edge/docs/form
 
 ![Installieren von AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-Die Wahl zwischen [Dokumentenbasiertes Authoring](#document-based-authoring-features) und [WYSIWYG Authoring](#wysiwyg-authoring-features) hängt von Ihren spezifischen Anforderungen ab:
+Die Wahl zwischen [dokumentenbasiertem Authoring](#document-based-authoring-features) und [WYSIWYG-Authoring](#wysiwyg-authoring-features) hängt von Ihren spezifischen Anforderungen ab:
 
 * Für einfache Formulare, die nur grundlegende Informationen mit einigen Feldern erfassen (denken Sie an Formulare, Formulare zur Lead-Generierung oder Formulare für Service-Anfragen) und in denen Sie eine schnelle Datenkonnektivität mithilfe einer Tabelle benötigen, ist das [dokumentbasierte Authoring](#document-based-authoring-features) gut geeignet. Sie können diese Formulare wie ein Dokument in Google Tabellen oder Microsoft Excel erstellen.
 
-* Bei komplexen Formularen wie Formularen, die mehrere Bedienfelder erfordern, komplexen Regeln und Geschäftslogik, Datenmanipulationen, Integration in externe Systeme oder optimierte Workflows mithilfe AEM Funktionen, [WYSIWYG Authoring](#wysiwyg-authoring-features) ist eine bessere Option.
+* Bei komplexen Formularen wie Formularen, die mehrere Bereiche, komplexe Regeln und Business-Logik, Datenmanipulationen, Integrationen in externe Systeme oder optimierte Workflows mithilfe von AEM-Funktionen erfordern, ist [WYSIWYG-Authoring](#wysiwyg-authoring-features) die bessere Option.
 
 
-### Wichtige Funktionen der dokumentbasierten Bearbeitung und WYSIWYG-Bearbeitung
+### Wichtige Funktionen des dokumentenbasierten Authorings und des WYSIWYG-Authorings
 
-Die dokumentbasierte Bearbeitung bietet eine Reihe grundlegender Funktionen und die WYSIWYG-Bearbeitung bietet zusätzliche Funktionen, die über die dokumentbasierte Bearbeitung hinausgehen. So können Sie komplexere und interaktive Formulare erstellen. Die wichtigsten Funktionen von Document-basiertem Authoring und WYSIWYG Authoring sind:
+Die dokumentbasierte Bearbeitung bietet eine Reihe grundlegender Funktionen und die WYSIWYG-Bearbeitung bietet zusätzliche Funktionen, die über die dokumentbasierte Bearbeitung hinausgehen. So können Sie komplexere und interaktive Formulare erstellen. Die wichtigsten Funktionen des dokumentenbasierten Authorings und des WYSIWYG-Authorings sind:
 
 #### Funktionen des dokumentbasierten Authorings
 
@@ -63,7 +63,7 @@ Mit dem dokumentbasierten Authoring können Sie Formulare mit vertrauten Tools w
 * Übermitteln Sie Formulardaten direkt an Microsoft Excel oder Google Tabellen oder E-Mail-Adressen.
 * Überwachen der Formularleistung durch echte Benutzerüberwachung (Real Use Monitoring, RUM) 
 
-#### WYSIWYG Authoring-Funktionen
+#### Funktionen des WYSIWYG-Authorings
 
 WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive Forms Editor) zum Erstellen von Formularen und bietet alle Funktionen der dokumentbasierten Bearbeitung sowie eine Vielzahl zusätzlicher Funktionen:
 
@@ -75,7 +75,7 @@ WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive F
 * Integration in Adobe Workfront Fusion, um bei der Formularübermittlung Adobe Workfront Fusion-Szenarien auszulösen.
 * Integration in verschiedene Datenquellen zum Vorausfüllen von Formularen und zum Übermitteln von Daten.
 * Formulardatenmodell (FDM) zum Definieren der Datenstruktur und der Interaktionen mit verschiedenen Datenquellen.
-* Möglichkeit zur Auswahl aus mehreren Sendeaktionen für die Verarbeitung von Formularübermittlungen, einschließlich der Übermittlung von Daten an Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics und vielen weiteren Datenquellen.
+* Möglichkeit zur Wahl zwischen mehreren Sendeaktionen für die Verarbeitung von Formularübermittlungen, darunter die Übermittlung von Daten an Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics und viele weiteren Datenquellen.
 
 Die oben genannten Funktionen sind auch über den adaptiven Forms-Editor verfügbar.
 
@@ -84,15 +84,15 @@ WYSIWYG Authoring (Universal Editor und [Adaptiver Forms-Editor](/help/forms/cre
 >[!NOTE]
 >
 >
-> Die WYSIWYG-Authoring-Funktion ist im Rahmen des Programms für die frühe Adoption verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Arbeitsadresse an aem-forms-ea@adobe.com, um Zugriff auf die Funktion anzufordern.
+> Die WYSIWYG-Authoring-Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Arbeitsadresse an aem-forms-ea@adobe.com, um Zugriff auf die Funktion anzufordern.
 
 ### AEM Forms Edge Delivery Services: Erstellen, Veröffentlichen und Übermitteln von Formularen
 
-Die folgenden Diagramme illustrieren den Prozess des Erstellens, Veröffentlichen und Übermittlens von Formularen mithilfe der dokumentbasierten Bearbeitung und der WYSIWYG-Bearbeitung.
+Die folgenden Diagramme zeigen den Prozess des Erstellens, Veröffentlichens und Übermittelns von Formularen mit dokumentenbasiertem Authoring und mit WYSIWYG-Authoring.
 
-![Dokumentbasiertes Authoring ](/help/edge/assets/document-based-authoring-workflow.png)
+![Dokumentenbasiertes Authoring ](/help/edge/assets/document-based-authoring-workflow.png)
 
-![WYSIWYG Authoring](/help/edge/assets/wysiwyg-authoring-workflow.png)
+![WYSIWYG-Authoring](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## Beginnen mit dem Erstellen von Formularen
 

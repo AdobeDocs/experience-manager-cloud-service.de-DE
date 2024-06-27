@@ -1,5 +1,5 @@
 ---
-title: Headless-Content-Bereitstellung mit Inhaltsfragmenten mit GraphQL (Assets - Inhaltsfragmente)
+title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL (Assets – Inhaltsfragmente)
 description: Lernen Sie die grundlegenden Konzepte zur Realisierung eines AEM Headless CMS unter Verwendung von Inhaltsfragmenten mit GraphQL für die Bereitstellung von Headless-Inhalten kennen.
 feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
