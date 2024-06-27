@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 43%
@@ -46,14 +46,14 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   <tr>
     <td>Versionsbereinigung</td>
     <td>Kunde</td>
-    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie im Abschnitt <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> Abschnitt.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie im Abschnitt <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> Abschnitt.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Kunde</td>
-    <td>Die Bereinigung des Auditprotokolls ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie im Abschnitt <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> Abschnitt.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Die Bereinigung des Auditprotokolls ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie im Abschnitt <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> Abschnitt.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ Durch das Bereinigen von Versionen und des Auditprotokolls wird die Größe des 
 
 >[!NOTE]
 >
->Adobe empfiehlt Kunden, keine Versionsbereinigung zu konfigurieren.
+>AEM Guides-Kunden sollten keine Versionsbereinigung konfigurieren.
 
 ### Standardwerte {#defaults}
 
@@ -283,7 +283,7 @@ Siehe [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager
 
 >[!NOTE]
 >
->Adobe empfiehlt Kunden, keine Versionsbereinigung zu konfigurieren.
+>AEM Guides-Kunden sollten keine Versionsbereinigung konfigurieren.
 
 #### Standardwerte für Versionsbereinigung {#version-purge-defaults}
 
