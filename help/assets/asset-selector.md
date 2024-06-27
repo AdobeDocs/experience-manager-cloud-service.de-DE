@@ -4,7 +4,7 @@ description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeforma
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 80%
@@ -404,8 +404,8 @@ Verwenden Sie die folgenden Voraussetzungen, wenn Sie Asset Selector mit Dynamic
 
 * [Kommunikationsmethoden](#prereqs)
 * Für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen benötigen Sie Lizenzen für:
-   * Assets-Repository (z. B. Experience Manager Assets as a Cloud Service)
-   * AEM Dynamic Media
+   * Assets-Repository (z. B. Experience Manager Assets as a Cloud Service).
+   * AEM Dynamic Media.
 * Nur [genehmigte Assets](#approved-assets.md) sind zur Verwendung verfügbar, um Markenkonsistenz zu gewährleisten.
 
 ### Integration von Dynamic Media mit OpenAPI-Funktionen{#adobe-app-integration-polaris}
