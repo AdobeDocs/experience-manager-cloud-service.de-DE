@@ -2,15 +2,15 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
 contentOwner: KK
-role: Admin, User
-exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-feature: Collaboration
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+role: Admin,User
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 100%
+source-wordcount: '4725'
+ht-degree: 80%
 
 ---
+
 
 # Micro-Front-End-Asset-Selektor {#Overview}
 
@@ -47,7 +47,7 @@ Der Asset-Selektor bietet viele Vorteile, z. B.:
 Sie müssen die folgenden Kommunikationsmethoden sicherstellen:
 
 * Die Anwendung wird unter HTTPS ausgeführt.
-* Die URL der Anwendung befindet sich in der Zulassungsliste der Umleitungs-URLs des IMS-Clients.
+* Die URL der Anwendung in der Zulassungsliste der Umleitungs-URLs durch den IMS-Client.
 * Der IMS-Anmeldefluss wird mithilfe eines Popup-Fensters im Webbrowser konfiguriert und gerendert. Daher sollten Popup-Fenster im Ziel-Browser aktiviert oder zugelassen werden.
 
 Wenden Sie die oben genannten Voraussetzungen an, wenn Sie einen IMS-Authentifizierungs-Workflow des Asset-Wählers benötigen. Wenn Sie bereits mit dem IMS-Workflow authentifiziert sind, können Sie stattdessen die IMS-Informationen hinzufügen.
@@ -57,7 +57,7 @@ Wenden Sie die oben genannten Voraussetzungen an, wenn Sie einen IMS-Authentifiz
 > Dieses Repository dient als zusätzliche Dokumentation, die die verfügbaren APIs und Anwendungsbeispiele für die Integration des Asset-Wählers beschreibt. Bevor Sie versuchen, den Asset-Wähler zu installieren oder zu verwenden, stellen Sie sicher, dass Ihr Unternehmen Zugriff auf den Asset-Wähler im Experience Manager Assets as a Cloud Service-Profil erhalten hat. Wenn diese Komponenten noch nicht bereitgestellt wurden, können Sie sie weder integrieren noch verwenden. Um die Bereitstellung anzufordern, sollten Ihre Programmadmins ein Support-Ticket erstellen, das von Admin Console als P2 gekennzeichnet ist, und die folgenden Informationen einschließen:
 >
 >* Domain-Namen, auf denen die integrierende Anwendung gehostet wird.
->* Nach der Bereitstellung wird Ihrem Unternehmen entsprechend den angeforderten Umgebungen, die für die Konfiguration des Asset-Wählers erforderlich sind, `imsClientId`, `imsScope` und eine `redirectUrl` bereitgestellt. Ohne diese gültigen Eigenschaften können Sie die Installationsschritte nicht ausführen.
+>* Nach der Bereitstellung wird Ihr Unternehmen mit `imsClientId`, `imsScope`und ein `redirectUrl` entspricht der Umgebung, die Sie anfordern, die für die Konfiguration der Asset-Auswahl erforderlich ist. Ohne diese gültigen Eigenschaften können Sie die Installationsschritte nicht ausführen.
 
 ## Installation {#installation}
 
@@ -108,6 +108,7 @@ Sie können den Asset-Wähler mit verschiedenen Anwendungen integrieren, z. B.:
 
 * [Integrieren des Asset-Wählers mit einer [!DNL Adobe] -Anwendung](#adobe-app-integration-vanilla)
 * [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](#adobe-non-app-integration)
+* [Integration von Dynamic Media mit OpenAPI-Funktionen](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -192,7 +193,7 @@ Die `ImsAuthService`-Klasse regelt den Authentifizierungsfluss für den Asset-W�
 
 +++
 
-+++**Validierung mit bereitgestelltem IMS-Token**
++++**Validierung des IMS-Tokens**
 
 ```
 <script>
@@ -226,28 +227,28 @@ Die `ImsAuthService`-Klasse regelt den Authentifizierungsfluss für den Asset-W�
 ```
 // object `imsProps` to be defined as below 
 let imsProps = {
-    imsClientId: <IMS Client Id>,
-        imsScope: "openid",
-        redirectUrl: window.location.href,
-        modalMode: true,
-        adobeImsOptions: {
-            modalSettings: {
-            allowOrigin: window.location.origin,
+imsClientId: <IMS Client Id>,
+imsScope: "openid",
+redirectUrl: window.location.href,
+modalMode: true,
+adobeImsOptions: {
+modalSettings: {
+allowOrigin: window.location.origin,
 },
-        useLocalStorage: true,
+useLocalStorage: true,
 },
 onImsServiceInitialized: (service) => {
-            console.log("onImsServiceInitialized", service);
+console.log("onImsServiceInitialized", service);
 },
 onAccessTokenReceived: (token) => {
-            console.log("onAccessTokenReceived", token);
+console.log("onAccessTokenReceived", token);
 },
 onAccessTokenExpired: () => {
-            console.log("onAccessTokenError");
+console.log("onAccessTokenError");
 // re-trigger sign-in flow
 },
 onErrorReceived: (type, msg) => {
-            console.log("onErrorReceived", type, msg);
+console.log("onErrorReceived", type, msg);
 },
 }
 ```
@@ -272,6 +273,10 @@ Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler mit eine
 * apikey
 
 Der Asset-Wähler unterstützt die Authentifizierung für das [!DNL Experience Manager Assets]-Repository mit Eigenschaften des Identity Management System (IMS), z. B. `imsScope` oder `imsClientID`, wenn Sie es mit einer Nicht-Adobe-Anwendung integrieren.
+
+### Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung {#adobe-non-app-integration}
+
+Um die Asset-Auswahl in eine Nicht-Adobe-Anwendung zu integrieren, müssen Sie verschiedene Validierungen durchführen, z. B. Protokollierung eines Support-Tickets, Integration usw.
 
 +++**Konfigurieren des Asset-Wählers für eine Nicht-Adobe-Anwendung**
 Um den Asset-Wähler für eine Nicht-Adobe-Anwendung zu konfigurieren, müssen Sie zunächst ein Support-Ticket für die Bereitstellung einreichen und dann die Integrationsschritte befolgen.
@@ -387,6 +392,170 @@ Der Asset-Wähler wird im Container-Element `<div>` gerendert, wie in *Zeile 74*
 >
 >Wenn Sie den Asset-Wähler mithilfe des Workflows zum Registrieren und Anmelden integriert haben, aber trotzdem nicht auf das Bereitstellungs-Repository zugreifen können, stellen Sie sicher, dass die Browser-Cookies bereinigt wurden. Andernfalls tritt der Fehler `invalid_credentials All session cookies are empty` in der Konsole auf.
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Integration von Dynamic Media mit OpenAPI-Funktionen]
+
+### Voraussetzungen {#prereqs-polaris}
+
+Verwenden Sie die folgenden Voraussetzungen, wenn Sie Asset Selector mit Dynamic Media mit OpenAPI-Funktionen integrieren:
+
+* [Kommunikationsmethoden](#prereqs)
+* Für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen benötigen Sie Lizenzen für:
+   * Assets-Repository (z. B. Experience Manager Assets as a Cloud Service)
+   * AEM Dynamic Media
+* Nur [genehmigte Assets](#approved-assets.md) sind zur Verwendung verfügbar, um Markenkonsistenz zu gewährleisten.
+
+### Integration von Dynamic Media mit OpenAPI-Funktionen{#adobe-app-integration-polaris}
+
+Die Integration der Asset-Auswahl in den OpenAPI-Prozess von Dynamic Media umfasst verschiedene Schritte, darunter das Erstellen einer benutzerdefinierten Dynamic Media-URL oder die Auswahl der URL für dynamische Medien usw.
+
++++**Integrieren der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen**
+
+Die `rootPath` und `path` -Eigenschaften sollten nicht Teil der Dynamic Media mit OpenAPI-Funktionen sein. Stattdessen können Sie die `aemTierType` -Eigenschaft. Die folgende Syntax lautet der Konfiguration:
+
+```
+aemTierType:[1: "delivery"]
+```
+
+Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie unter `aemTierType` Eigenschaft unter [Asset-Auswahleigenschaften](#asset-selector-properties)
+
++++
+
++++**Erstellen einer dynamischen Bereitstellungs-URL aus genehmigten Assets**
+Nachdem Sie die Asset-Auswahl eingerichtet haben, wird ein Objektschema verwendet, um eine Dynamic Delivery-URL aus den ausgewählten Assets zu erstellen.
+Beispiel: ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+Alle ausgewählten Assets werden von `handleSelection` -Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Anbieter erstellt:
+
+| Objekt | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| API-Stamm | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| format | `.jpg` |
+
+**API-Spezifikation für die Bereitstellung genehmigter Assets**
+
+URL-Format:
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+Wo
+
+* Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* API-Stamm ist `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` ist Asset-ID
+* `<seo-name>` ist der Name eines Assets
+* `<format>` das Ausgabeformat
+* `<image modification query parameters>` als Unterstützung durch die Bereitstellungs-API-Spezifikation der genehmigten Assets
+
+**API zur Bereitstellung genehmigter Assets**
+
+Die dynamische Versand-URL weist die folgende Syntax auf:
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, wobei
+
+* Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* API-Stamm für die Bereitstellung der Original-Ausgabe ist `"/adobe/assets/deliver"`
+* `<asset-id>` ist die Asset-ID
+* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann oder nicht
+
++++
+
++++**Dynamische Versand-URL auswählen**
+Alle ausgewählten Assets werden von `handleSelection` -Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Anbieter erstellt:
+
+| Objekt | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| API-Stamm | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+Im Folgenden finden Sie zwei Möglichkeiten, das JSON-Objekt zu durchlaufen:
+
+![Dynamische Bereitstellungs-URL](assets/dynamic-delivery-url.png)
+
+* **Miniaturansicht:** Bei Miniaturansichten kann es sich um Bilder und Assets wie PDF, Video, Bilder usw. handeln. Sie können jedoch die Höhe- und Breitenattribute der Miniaturansicht eines Assets als dynamische Ausgabedarstellung für die Bereitstellung verwenden.
+Der folgende Satz von Ausgabeformaten kann für Assets vom Typ PDF verwendet werden: Sobald ein PDF im Sidekick ausgewählt ist, bietet der Auswahlkontext die folgenden Informationen. Im Folgenden finden Sie die Möglichkeit, das JSON-Objekt zu durchlaufen:
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  Weitere Informationen finden Sie unter `selection[0].....selection[4]` für das Array des Ausgabedarstellungs-Links aus dem obigen Screenshot. Die Haupteigenschaften einer der Ausgabeformate für Miniaturansichten umfassen beispielsweise:
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+Im obigen Screenshot muss die Bereitstellungs-URL der Original-Ausgabedarstellung des PDF in das Zielerlebnis integriert werden, wenn eine PDF erforderlich ist, und nicht in die Miniaturansicht. Beispiel: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+
+* **Video:** Sie können die Videoplayer-URL für die Videotyp-Assets verwenden, die einen eingebetteten iFrame verwenden. Sie können die folgenden Array-Ausgabedarstellungen im Zielerlebnis verwenden:
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  Weitere Informationen finden Sie unter `selection[0].....selection[4]` für das Array des Ausgabedarstellungs-Links aus dem obigen Screenshot. Die Haupteigenschaften einer der Ausgabeformate für Miniaturansichten umfassen beispielsweise:
+
+  Das Codefragment im obigen Screenshot ist ein Beispiel für ein Video-Asset. Es enthält das Array der Ausgabedarstellungs-Links. Die `selection[5]` im Auszug ist das Beispiel einer Bildminiatur, die als Platzhalter für die Videominiatur im Zielerlebnis verwendet werden kann. Die `selection[5]` im Array der Ausgabedarstellungen für den Videoplayer. Dies dient als HTML und kann als `src` des iFrames. Es unterstützt das Streaming mit adaptiver Bitrate, bei dem es sich um eine Web-optimierte Bereitstellung des Videos handelt.
+
+  Im obigen Beispiel lautet die URL des Videoplayers `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++**Benutzeroberfläche der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen**
+
+Nach der Integration mit der Adobes Micro-Frontend-Asset-Auswahl können Sie die Asset-Nur-Struktur aller genehmigten Assets sehen, die im Experience Manager-Asset-Repository verfügbar sind.
+
+![Benutzeroberfläche von Dynamic Media mit OpenAPI-Funktionen](assets/polaris-ui.png)
+
+* **A**: [Bedienfeld aus-/einblenden](#hide-show-panel)
+* **B**: [Assets](#repository)
+* **C**: [Sortierung](#sorting)
+* **D**: [Filter](#filters)
+* **E**: [Suchleiste](#search-bar)
+* **F**: [Sortieren in auf- oder absteigender Reihenfolge](#sorting)
+* **G**: Auswahl abbrechen
+* **H**: Auswählen einzelner oder mehrerer Assets
+
++++
+
++++**Benutzerdefinierte Filter konfigurieren**
+Mit der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die `filterSchema` -Eigenschaft zum Konfigurieren solcher Eigenschaften verwendet wird. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` mit denen die Filter konfiguriert werden können, wobei
+
+* `metadata` ist die Information eines Assets
+* `embedded` ist der statische Parameter, der für die Konfiguration verwendet wird, und
+* `<propertyname>` ist der von Ihnen konfigurierte Filtername
+
+Für die Konfiguration werden Eigenschaften definiert unter `jcr:content/metadata/` Ebene wird als `metadata.<metadata bucket>.<property name>.` für die Filter, die Sie konfigurieren möchten.
+
+Beispiel: In der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen ist eine Eigenschaft auf `asset jcr:content/metadata/client_name:market` in `metadata.embedded.client_name:market` für die Filterkonfiguration.
+
+Um den Namen zu erhalten, muss eine einmalige Aktivität durchgeführt werden. Führen Sie einen Such-API-Aufruf für das Asset aus und rufen Sie den Eigenschaftsnamen ab (im Grunde der Behälter).
+
++++
+
 >[!ENDTABS]
 
 ## Eigenschaften des Asset-Wählers {#asset-selector-properties}
@@ -399,8 +568,6 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *imsOrg* | Zeichenfolge | Ja | | Die Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] für Ihre Organisation zugewiesen wird. Der `imsOrg`-Schlüssel ist erforderlich, damit authentifiziert wird, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
 | *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendeter IMS-Bearer-Token. Das `imsToken` ist erforderlich, wenn Sie eine [!DNL Adobe]-Anwendung für die Integration verwenden. |
 | *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. Der `apiKey` ist erforderlich, wenn Sie eine Integration mit einer [!DNL Adobe]-Anwendung verwenden. |
-| *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Wähler Ihre Assets anzeigt. `rootPath` kann auch in Form einer Verkapselung verwendet werden. Bei dem folgenden Pfad `/content/dam/marketing/subfolder/` können Sie mit dem Asset-Wähler beispielsweise nicht durch übergeordnete Ordner navigieren, sondern nur die untergeordneten Ordner anzeigen. |
-| *path* | Zeichenfolge | Nein | | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Wähler gerendert wird. |
 | *filterSchema* | Array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen des Asset-Wählers einschränken möchten. |
 | *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispielsweise MIME-Typ, JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn der Asset-Wähler gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Zum Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie ein anderes Verzeichnis verwenden müssen, geben Sie auch einen Wert für die Eigenschaft `path` an. |
@@ -419,12 +586,15 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn Benutzende andere Filterkriterien ändern. |
 | *selectionType* | Zeichenfolge | Nein | Einzelperson | Konfiguration für `single`- oder `multiple`-Auswahl von Assets auf einmal. |
 | *dragOptions.allowList* | Boolesch | Nein | | Die Eigenschaft wird verwendet, um das Drag-and-Drop von nicht auswählbaren Assets zuzulassen oder zu verweigern. |
-| *aemTierType* | Zeichenfolge | Nein | | Sie können damit festlegen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder beiden Ebenen angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0: "author" 1: "delivery"` <br><br> Wenn zum Beispiel beide Ebenen `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für Author und Bereitstellung an. |
+| *aemTierType* | Zeichenfolge | Nein | | Sie können damit festlegen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder beiden Ebenen angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0: "author" 1: "delivery"` <br><br> Wenn zum Beispiel beide `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für Autor und Bereitstellung an. <br> Darüber hinaus können Sie `["delivery"]` für die bereitstellungsbezogenen Assets in der Dynamic Media mit OpenAPI-Funktionen. |
 | *handleNavigateToAsset* | Funktion | Nein | | Es handelt sich um eine Rückruffunktion, die die Auswahl eines Assets verarbeitet. |
 | *noWrap* | Boolesch | Nein | | Die Eigenschaft *noWrap* hilft beim Rendern des Asset-Wählers im Bedienfeld der Seitenleiste. Wenn diese Eigenschaft nicht erwähnt wird, wird standardmäßig die *Dialogfeldansicht* gerendert. |
 | *dialogSize* | Klein, mittelgroß, groß, Vollbild oder Vollbild-Übernahme | Zeichenfolge | Optional | Sie können das Layout kontrollieren, indem Sie dessen Größe mithilfe der angegebenen Optionen festlegen. |
 | *colorScheme* | hell oder dunkel | Nein | | Diese Eigenschaft wird verwendet, um das Design einer Asset-Wähler-Anwendung festzulegen. Sie können zwischen einem hellen und dunklen Design wählen. |
 | *filterRepoList* | Funktion | Nein |  | Sie können die Rückruffunktion `filterRepoList` verwenden, die das Experience Manager-Repository aufruft und eine gefilterte Liste von Repositorys zurückgibt. |
+
+<!--| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |-->
 
 ## Beispiele zur Verwendung der Asset-Selektor-Eigenschaften {#usage-examples}
 
@@ -434,7 +604,7 @@ Sie können die Asset-Selektor-[Eigenschaften](#asset-selector-properties) in de
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-Wenn der Wert `rail` des Asset-Wählers auf `false` gesetzt ist oder in den Eigenschaften nicht erwähnt wird, wird der Asset-Wähler standardmäßig in der Modal-Ansicht angezeigt. Die Eigenschaft `acvConfig` ermöglicht einige tief greifende Konfigurationen wie etwa Drag-and-Drop. Lesen Sie [Aktivieren oder Deaktivieren von Drag-and-Drop](#enable-disable-drag-and-drop), um zu erfahren, wie die Eigenschaft `acvConfig` verwendet wird.
+Wenn der Wert `rail` des Asset-Wählers auf `false` gesetzt ist oder in den Eigenschaften nicht erwähnt wird, wird der Asset-Wähler standardmäßig in der Modal-Ansicht angezeigt. Die `acvConfig` -Eigenschaft wird verwendet, um die Schienenansicht des Asset-Viewers zu aktivieren. Lesen Sie [Aktivieren oder Deaktivieren von Drag-and-Drop](#enable-disable-drag-and-drop), um zu erfahren, wie die Eigenschaft `acvConfig` verwendet wird.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -512,7 +682,7 @@ filterSchema: [
     ],
     header: 'Mime Types',
     groupKey: 'MimeTypeGroup',
-    }},
+    },
     {
     fields: [
     {
@@ -599,7 +769,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +802,12 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 | *tiff:imageLength* | Number (Zahl) | Die Höhe eines Assets. |
 | *computedMetadata* | `Record<string, any>` | Ein Objekt, das einen Behälter für alle Metadaten des Assets aller Art (Repository, Applikation oder eingebettete Metadaten) darstellt. |
 | *_links* | `Record<string, any>` | Hypermedia-Links für das verknüpfte Asset. Enthält Links für Ressourcen wie Metadaten und Ausgabedarstellungen. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array von Objekten, das Informationen zu Ausgabedarstellungen des Assets enthält. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | Zeichenfolge | Der URI zur Ausgabedarstellung. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | Zeichenfolge | Der MIME-Typ der Ausgabedarstellung. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | Number (Zahl) | Die Größe der Ausgabedarstellung in Byte. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | Number (Zahl) | Die Breite der Ausgabedarstellung. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | Number (Zahl) | Die Höhe der Ausgabedarstellung. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array von Objekten, das Informationen zu Ausgabedarstellungen des Assets enthält. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | Zeichenfolge | Der URI zur Ausgabedarstellung. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | Zeichenfolge | Der MIME-Typ der Ausgabedarstellung. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | Number (Zahl) | Die Größe der Ausgabedarstellung in Byte. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | Number (Zahl) | Die Breite der Ausgabedarstellung. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | Number (Zahl) | Die Höhe der Ausgabedarstellung. |
 
 Eine vollständige Liste der Eigenschaften und ein ausführliches Beispiel finden Sie unter [Asset-Wähler-Code-Beispiel](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -742,17 +912,11 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
 * **![Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL Wasserfallansicht]**: Die Wasserfallansicht zeigt Dateien oder Ordner in Form einer Brücke an.
 
 <!--
-### Modes to view Asset Selector
+### Support for multiple instances
 
-Asset Selector supports two types of out of the box views:
+The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
 
-**  Modal view or Inline view:** The modal view or inline view is the default view of Asset Selector that represents Assets folders in the front area. The modal view allows users to view assets in a full screen to ease the selection of multiple assets for import. Use `<AssetSelector rail={false}>` to enable modal view.
-
-    ![modal-view](assets/modal-view.png)
-
-**  Rail view:** The rail view represents Assets folders in a left panel. The drag and drop of assets can be performed in this view. Use `<AssetSelector rail={true}>` to enable rail view.
-
-    ![rail-view](assets/rail-view.png)
+![multiple-instance](assets/multiple-instance.png)
 -->
 <!--
 
@@ -763,14 +927,6 @@ Asset Selector is flexible and can be integrated within your existing [!DNL Adob
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
--->
-<!--
-
-### Support for multiple instances
-
-The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
-
-![multiple-instance](assets/multiple-instance.png)
 -->
 
 <!--
