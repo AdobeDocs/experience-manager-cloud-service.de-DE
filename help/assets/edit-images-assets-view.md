@@ -4,7 +4,7 @@ description: Bearbeiten Sie Bilder mit von  [!DNL Adobe Express]  unterstützten
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 35%
@@ -13,7 +13,7 @@ ht-degree: 35%
 
 # Bearbeiten von Bildern in [!DNL Assets view] {#edit-images-in-assets-view}
 
-Die Asset-Ansicht ermöglicht die grundlegende Bildbearbeitung, einschließlich Größenanpassung, Hintergrundentfernt, Beschneiden und Konvertieren zwischen JPEG- und PNG-Formaten. Darüber hinaus ermöglicht sie die erweiterte Bearbeitung durch die Integration mit Adobe Express. Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) und klicken Sie auf **Bild bearbeiten**.
+Die Assets-Ansicht ermöglicht die grundlegende Bildbearbeitung, einschließlich Größenanpassung, Hintergrundentfernt, Zuschneiden und Konvertieren zwischen JPEG- und PNG-Formaten. Darüber hinaus ermöglicht sie die erweiterte Bearbeitung durch die Integration mit Adobe Express. Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) und klicken Sie auf **Bild bearbeiten**.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Die Asset-Ansicht ermöglicht die grundlegende Bildbearbeitung, einschließlich 
 
 ## Bild bearbeiten {#edit-image}
 
-Landing on Asset View (Landing on Asset View, Asset-Ansicht) über den Link - [Asset-Ansicht](https://experience.adobe.com/#/assets) und das richtige Repository auswählen. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff zu erhalten.
+Landing on Assets View, using the link - [Assets-Ansicht](https://experience.adobe.com/#/assets) und das richtige Repository auswählen. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff zu erhalten.
 Weitere Referenzinformationen finden Sie unter [Erste Schritte mit Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Die Benutzeroberfläche der Assets-Ansicht](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), und [Anwendungsfälle für die Assets-Ansicht](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ Benutzer mit Express-Berechtigung können den eingebetteten Express-Editor in de
 ![in der grundlegenden Benutzeroberfläche ausdrücken](/help/assets/assets/express-in-essentials-ui.jpg)
 So bearbeiten Sie Bilder mit [!DNL Adobe Express] Führen Sie die folgenden Schritte aus:
 
-1. Starten Sie über den Link zur AEM Assets-Ansicht - [AEM Asset-Ansicht](https://experience.adobe.com/#/assets) und wählen Sie das richtige Repository aus.
+1. Starten Sie über den Link zur AEM Assets-Ansicht - [AEM Assets-Ansicht](https://experience.adobe.com/#/assets) und wählen Sie das richtige Repository aus.
 1. Klicks **Assets**, geben Sie einen Ordner ein und wählen Sie ein Bild aus.
 1. Klicks **In Adobe Expreß öffnen**. Das Bild wird auf einer Expressarbeitsfläche geöffnet.
 1. Nehmen Sie die erforderlichen Änderungen am Bild vor.
-1. Wenn Sie für Ihr Projekt weitere Seiten hinzufügen müssen, klicken Sie auf **Hinzufügen**, wählen Sie Assets aus, geben Sie einen Ordner ein, wählen Sie ein Bild aus, das auf die Leinwandseite geladen werden soll, und führen Sie dann die erforderlichen Bildbearbeitungen durch.
+1. Wenn Sie für Ihr Projekt weitere Seiten hinzufügen müssen, klicken Sie auf **Hinzufügen**, wählen Sie Assets aus, geben Sie einen Ordner ein, wählen Sie ein Bild aus, das auf die Leinwandseite geladen werden soll, und nehmen Sie dann die erforderlichen Änderungen am Bild vor.
 1. Klicken Sie zum Speichern der Bilder auf **Speichern**. Das Dialogfeld &quot;Speichern&quot;wird angezeigt.
 
    >[!NOTE]
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * Stellen Sie mithilfe der [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht verfügbar.
 
-* Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
 
