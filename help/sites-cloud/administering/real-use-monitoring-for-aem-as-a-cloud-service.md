@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Be
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 13%
+source-wordcount: '1313'
+ht-degree: 14%
 
 ---
 
@@ -32,8 +32,6 @@ Mit RUM werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis
 Der Real Use Monitoring Service ist für alle Kunden von Vorteil. Es bietet eine repräsentative Darstellung der Benutzerinteraktionen, um eine zuverlässige Messung der Website-Interaktion sicherzustellen, indem die Anzahl der clientseitigen Seitenansichten erfasst wird.
 
 Für alle Adobe-Kunden bietet dieser Dienst wertvolle Einblicke in Benutzerinteraktionen. Kunden, die ihr eigenes CDN verwenden, können von der vereinfachten Traffic-Berichterstellung profitieren, da Adobe jetzt die Datenerfassung direkt integriert, sodass separate Berichte während der Verlängerungszyklen nicht mehr erforderlich sind.
-
-Möchten Sie das gesamte Potenzial Ihrer Website mit dem Visualisierungstool Adobe Early Adopter RUM Explorer nutzen, um nützliche Einblicke in die Interaktion mit Ihrer Website zu erhalten? Dieses Tool kann Einblicke in die Seitenleistung bieten, einschließlich Metriken zur Anzahl der Klicks, Core Web Vitals (CWV), Konversionen und Journey-Maps von Kunden. Mithilfe dieser leistungsstarken Einblicke können Sie Ihre digitalen Erlebnisse optimal anpassen, um die Anforderungen Ihrer Benutzer effizienter zu erfüllen. Wenn Sie mehr erfahren und Zugriff erhalten möchten, wenden Sie sich bitte per E-Mail an uns unter `rum-explorer@adobe.com`.
 
 ## Erfahren Sie, wie der Real Use Monitoring Service funktioniert. {#understand-how-the-rum-service-works}
 
@@ -108,11 +106,11 @@ Bei der Analyse von RUM-Daten kann es zu Abweichungen bei Seitenansichten und an
 
 1. **Die `/.rum` -Pfad auf meiner Site blockiert ist, wie soll ich ihn beheben?**
 
-   Die `/.rum` Der Pfad ist erforderlich, damit die RUM-Sammlung funktioniert. Wenn Sie ein CDN vor dem haben, was Adobe als Teil AEM as a Cloud Service bietet, stellen Sie sicher, dass die `/.rum` Der Pfad wird zum gleichen AEM wie der Rest des AEM weitergeleitet. Und stellen Sie sicher, dass sie in keiner Weise angepasst wird.
+   Die `/.rum` Der Pfad ist erforderlich, damit die RUM-Sammlung funktioniert. Wenn Sie ein CDN vor dem haben, was Adobe als Teil von AEM as a Cloud Service bereitstellt, stellen Sie sicher, dass das `/.rum` Der Pfad wird zum gleichen AEM wie der Rest des AEM weitergeleitet. Und stellen Sie sicher, dass sie in keiner Weise angepasst wird.
 
 1. **Zählt die RUM-Erfassung für Inhaltsanforderungen zu vertraglichen Zwecken?**
 
-   Die RUM-Bibliothek und die RUM-Sammlung zählen nicht als Inhaltsanfragen und erhöhen nicht die gemeldete Anzahl von Seitenansichten oder API-Aufrufen. Zusätzlich können Kunden, die vorkonfiguriertes CDN mit AEM as a Cloud Service verwenden, [Server-seitige Erfassung](#serverside-collection) ist die Grundlage für Inhaltsanforderungen.
+   Die RUM-Bibliothek und die RUM-Sammlung zählen nicht als Inhaltsanfragen und erhöhen nicht die gemeldete Anzahl von Seitenansichten oder API-Aufrufen. Darüber hinaus gilt Folgendes für Kunden, die das vordefinierte CDN mit AEM as a Cloud Service verwenden: [Server-seitige Erfassung](#serverside-collection) ist die Grundlage für Inhaltsanforderungen.
 
 1. **Wie kann ich mich abmelden?**
 
