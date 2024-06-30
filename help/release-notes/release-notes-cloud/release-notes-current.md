@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 46%
+source-wordcount: '1932'
+ht-degree: 45%
 
 ---
 
@@ -86,6 +86,14 @@ Dynamic Media mit OpenAPI-Funktionen erweitert das DAM über Adobe- und Drittanb
 **Weitere Optionen sind im Assets Insights-Dashboard verfügbar**
 
 Die Asset-Anzahl nach Asset-Typ und -Größe ist jetzt im Assets Insights-Dashboard verfügbar. Diese Optionen liefern Echtzeitdaten in Ihrer Assets-Ansichtsumgebung. Sie geben die Anzahl und den Prozentsatz der Assets nach Größenbereich und Asset-Typ an.
+
+**Aktualisierungen des eingebetteten Adobe Expreß-Editors**
+
+* Verbessertes Benutzererlebnis beim Speichern als neues Asset im Vergleich zum Speichern als neue Version.
+
+* Exportieren mehrseitiger Express-Dokumente (bisher wurde nur eine Einzelseite unterstützt) sowohl in mehrseitiger PDF- als auch in Bildformaten. Durch die Auswahl von Bildformaten wird jede Seite als separates Asset im DAM für die nachgelagerte Verteilung gespeichert.
+
+* Unterstützung für das Hinzufügen von Metadaten im Dialogfeld Speichern beim Speichern eines Assets.
 
 <!--
 

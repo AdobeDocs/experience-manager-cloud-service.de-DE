@@ -2,9 +2,9 @@
 title: Hochladen Ihrer markengenehmigten Assets in [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markengenehmigten Assets in Content Hub hochladen.
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Hochladen von markengenehmigten Assets in Content Hub {#upload-brand-approved-assets-content-hub}
 
-Administratoren können Assets zur Content Hub entweder aus dem lokalen Dateisystem hinzufügen oder Assets aus OneDrive- oder Dropbox-Datenquellen importieren. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
+[Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) Sie können Assets zur Content Hub entweder aus dem lokalen Dateisystem hinzufügen oder Assets aus OneDrive- oder Dropbox-Datenquellen importieren. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
 
 Zur weiteren Verbesserung der Asset-Suche bietet Content Hub folgende Möglichkeiten:
 
