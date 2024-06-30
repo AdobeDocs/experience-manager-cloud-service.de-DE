@@ -2,9 +2,9 @@
 title: Anzeigen von Asset-Einblicken in Content Hub
 description: Erfahren Sie, wie Sie Asset-Einblicke in anzeigen können. [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Assets-Einblicke](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] bietet wertvolle Einblicke in Assets und stellt eine Herausforderung dar, auf die Marketing-Stakeholder häufig stoßen - Asset-Nutzungsstatistiken, die in Marketing-Kampagnen, Kanälen und verschiedenen Regionen verwendet werden. Indem es ein klares Verständnis der Leistung und Beliebtheit der Assets erlangt, liefert es umsetzbare Einblicke, die für die Verbesserung des Benutzererlebnisses unerlässlich sind.
+
+## Voraussetzungen {#prerequisites}
+
+[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) kann die in diesem Artikel erwähnten Aktionen ausführen.
 
 ## Anzeigen von Statistiken für hochgeladene Assets{#view-statistics-for-uploaded-assets}
 

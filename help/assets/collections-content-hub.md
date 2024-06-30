@@ -2,9 +2,9 @@
 title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ Eine Sammlung bezieht sich auf einen Satz von Assets, die für Benutzer freigege
 * **Löschen**: Löscht die gesamte Sammlung.
 
 Dies erleichtert Benutzern den einfachen Zugriff auf und die Verwaltung der verschiedenen Assets, die in [!DNL Content Hub].
+
+## Voraussetzungen {#prerequisites}
+
+[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) kann die in diesem Artikel erwähnten Aktionen ausführen.
 
 ## Erstellen von Sammlungen{#create-collections}
 

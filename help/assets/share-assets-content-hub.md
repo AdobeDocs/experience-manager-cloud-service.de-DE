@@ -2,9 +2,9 @@
 title: Assets in freigeben [!DNL the Content Hub]
 description: Assets in freigeben [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![Asset-Bannerbild freigeben](assets/share-assets-banner.png)
 
 Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für [!DNL the Content Hub] Benutzer. Mit der Funktion können autorisierte Benutzer auf die Assets zugreifen und diese herunterladen, die für sie freigegeben sind. Beim Herunterladen von Assets über einen freigegebenen Link [!DNL the Content Hub] verwendet einen asynchronen Dienst, der einen schnelleren und unterbrechungsfreien Download bietet.
+
+## Voraussetzungen {#prerequisites}
+
+[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) kann die in diesem Artikel erwähnten Aktionen ausführen.
 
 ## Freigeben eines einzelnen Assets {#share-a-single-asset}
 

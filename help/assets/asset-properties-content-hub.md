@@ -2,9 +2,9 @@
 title: Asset-Eigenschaften in [!DNL the Content Hub]
 description: Erfahren Sie, wie Sie Asset-Eigenschaften in anzeigen und verwalten [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 12%
 
 ---
@@ -21,6 +21,10 @@ Die Anzeige von Asset-Eigenschaften hilft Ihnen bei der weiteren Kategorisierung
 * besser zugänglich – Systeme und Benutzer können es leicht finden.
 * Einfachere Verwaltung - Sie können Assets mit denselben Eigenschaften einfach finden und Änderungen darauf anwenden.
 * Abgeschlossen - Asset enthält mehr Informationen und Kontext.
+
+## Voraussetzungen {#prerequisites}
+
+[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) kann die in diesem Artikel erwähnten Aktionen ausführen.
 
 ## Eigenschaften eines Assets anzeigen {#properties-ui}
 

@@ -2,9 +2,9 @@
 title: Suchen nach Assets in Content Hub
 description: Erfahren Sie, wie Sie Assets in suchen [!DNL Content Hub]
 role: User
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![Asset-Bannerbild freigeben](assets/search.png)
 
 Wenn Sie eine große Anzahl von Assets in Ihrem Repository haben, ist die Suche nach dem richtigen Asset zeitaufwendig. [!DNL The Content Hub] Die Suche bietet Ihnen die Möglichkeit, nach den genehmigten Assets zu suchen, damit Sie zusätzliche Aktionen daran durchführen können, z. B. Sammlungen herunterladen, freigeben oder erstellen können. Sie können verschiedene Funktionen nutzen, um Ihre Suchergebnisse einzugrenzen, z. B. die textbasierte Suche, die Verwendung von Filtern, die Durchführung von Tags oder die Suche nach Smart-Tags, die Suche nach einem bestimmten Dateiformat usw.
+
+## Voraussetzungen {#prerequisites}
+
+[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) kann die in diesem Artikel erwähnten Aktionen ausführen.
 
 ## Was Sie suchen können  {#what-you-can-search}
 

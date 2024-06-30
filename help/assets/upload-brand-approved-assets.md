@@ -2,7 +2,7 @@
 title: Hochladen Ihrer markengenehmigten Assets in [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markengenehmigten Assets in Content Hub hochladen.
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Stellen Sie sicher, dass Sie nur Ihre [Markieren genehmigter Assets in Content H
 
 ## Voraussetzungen {#prerequisites-add-assets}
 
-[Content Hub Asset-Verbraucherbenutzer mit Berechtigungen zum Übermitteln](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) Assets können in Content Hub hochgeladen werden.
+[Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) Assets können in Content Hub hochgeladen werden.
 
 ## Hinzufügen von Assets zu Content Hub aus dem lokalen Dateisystem {#add-assets-local-file-system}
 
