@@ -2,9 +2,9 @@
 title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren und Benutzern mit unterschiedlichen Berechtigungstypen Zugriff gewähren (Assets hochladen, Adobe Expreß-Benutzer) und wie Sie Benutzern Administratorberechtigungen gewähren.
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 3%
 
 ---
@@ -50,6 +50,11 @@ Um auf das Content Hub-Portal zugreifen zu können, müssen Administratoren zun�
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
 Content Hub ist jetzt für Experience Manager Assets as a Cloud Service aktiviert.
+
+>[!NOTE]
+>
+>Sie können auf Content Hub mit bis zu 250 Content Hub-Benutzern zugreifen und es verwenden. Wenden Sie sich bei weiteren Fragen an Ihren Adobe-Support-Mitarbeiter.
+
 
 Wenn Sie neu bei Experience Manager Assets sind, klicken Sie auf **[!UICONTROL Programm hinzufügen]** und geben Sie dann die Programmdetails an (Programmname, für die Produktion eingerichtet) und klicken Sie auf **[!UICONTROL Weiter]**. Sie können dann **[!UICONTROL Assets]** und **[!UICONTROL Content Hub]** im **[!UICONTROL Lösungen und Add-ons]** Registerkarte.
 
