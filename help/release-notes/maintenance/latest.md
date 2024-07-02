@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
@@ -52,6 +52,15 @@ Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für dies
 * SCRNS-4194: Entfernen der Abhängigkeit von Google Guava-APIs.
 * SCRNS-4360: Fehlende Schaltfläche „Veröffentlichung verwalten und Quick Publish“ für Benutzende ohne Administratorrechte im Inhaltsanbieter für Kanäle.
 * SCRNS-4323: Ausblenden/Deaktivieren von Launches aus screens.html.
+
+#### Forms
+
+* FORMS-14844: Adaptive Forms ermöglicht die Übermittlung von Formularen trotz fehlerhafter reCAPTCHA-Überprüfung.
+* FORMS-14984: Forms mit CAPTCHA überspringt die Validierung, wenn &quot;submitMetaData&quot;in den gesendeten Daten fehlt.
+* FORMS-14477: Die Optionen &quot;Is After&quot;und &quot;Is Before&quot;im Regeleditor funktionieren bei der Datumsauswahl-Validierung nicht mehr.
+* FORMS-14019: Die Funktion &quot;Dienst aufrufen&quot;des Regeleditors funktioniert nicht im universellen Editor.
+* FORMS-14336: Wenn kein Formularfeld ausgewählt ist, sollte der Editor geöffnet werden und den Fokus auf das gesamte Formularelement legen.
+* FORMS-15061: Der Kreis &quot;Lader&quot;bleibt bei Verwendung der Option &quot;Dienst aufrufen&quot;im Regeleditor auf unbestimmte Zeit bestehen.
 
 ### Bekannte Probleme {#known-issues-16799}
 
