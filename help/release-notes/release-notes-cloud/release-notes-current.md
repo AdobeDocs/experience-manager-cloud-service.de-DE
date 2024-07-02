@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 44%
+ht-degree: 60%
 
 ---
 
@@ -70,13 +70,13 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer
 
 **Content Hub**
 
-Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für die Demokratisierung des Zugriffs auf Markeninhalte für Unternehmen und ihre Geschäftspartner verfügbar. Mit Content Hub können Sie Assets einfach finden und verteilen, neue On-Brand-Varianten wiederverwenden und erstellen und die Aktivierung skaliert beschleunigen.
+Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für die Demokratisierung des Zugriffs auf Markeninhalte für Unternehmen und ihre Geschäftspartner verfügbar. Mit Content Hub können Sie Assets einfach finden und verteilen, Markenvarianten wiederverwenden sowie neue erstellen und die Aktivierung skaliert beschleunigen.
 
 ![Content Hub-Benutzeroberfläche](/help/release-notes/assets/content-hub-ui.png)
 
 **Dynamic Media mit OpenAPI-Funktionen**
 
-Dynamic Media mit OpenAPI-Funktionen erweitert das DAM über Adobe- und Drittanbieteranwendungen hinweg und ermöglicht den Zugriff auf markenbestätigte digitale Assets in jedem Kanal über den Asset-Selektor oder den OpenAPI-Stapel. Schlüsselvorgaben - Keine Binärkopien, Assets werden für eine schnelle Leistung optimiert und umgewandelt, Assets werden öffentlich oder sicher bereitgestellt.
+Dynamic Media mit OpenAPI-Funktionen erweitert das DAM über Adobe- und Drittanbieteranwendungen hinweg und ermöglicht den Zugriff auf markenbestätigte digitale Assets in jedem Kanal über den Asset-Selektor oder den OpenAPI-Stapel. Wichtigste Grundsätze: keine Binärkopien, Assets werden für schnelle Performance optimiert und umgewandelt, Assets werden öffentlich bzw. sicher bereitgestellt.
 
 ![Neues Dynamic Media-Datenflussdiagramm](/help/assets/assets/dm-openapi-dfd.png)
 
@@ -132,7 +132,7 @@ Mit dieser Version wird der Visual Rule Editor für adaptive Formulare, die auf 
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
-Das AEM Forms Early Access Program bietet Ihnen die einmalige Möglichkeit, sich vor allen anderen einen exklusiven Zugang zu innovativen Technologien zu verschaffen und ihre Entwicklung zu gestalten. Das Programm bietet Zugriff auf verschiedene Innovationen.
+Das Early-Access-Programm von AEM Forms bietet Ihnen eine einmalige Möglichkeit, vor allen anderen einen exklusiven Zugang zu bahnbrechenden Neuerungen zu erhalten und ihre weitere Entwicklung mitzugestalten. Das Programm bietet Zugriff auf verschiedene Innovationen.
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
@@ -164,19 +164,19 @@ Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Er
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
-### Inhaltsbezogene gesundheitsbezogene Aktionen Center-Benachrichtigungen Frühwarnungsprogramm für junge Menschen {#actions-center-notifications}
+### Aktionszentrum – Benachrichtigungen zum Inhaltsstatus, Early-Adopter-Programm {#actions-center-notifications}
 
-[Aktionszentrum](/help/operations/actions-center.md) sendet E-Mail-Benachrichtigungen, wenn wichtige Vorfälle auftreten oder wenn etwas über Ihren Code oder Ihre Konfiguration bemerkt wird, in dem Sie proaktive Maßnahmen ergreifen sollten. Adobe hat jetzt mehrere neue Benachrichtigungstypen eingeführt, die mit Ihrem Inhaltszustand in Verbindung stehen. Diese Funktion ist über ein Programm für frühe Anwender verfügbar. Wenden Sie sich zur Teilnahme an die Adobe-Kundenunterstützung.
+[Aktionszentrum](/help/operations/actions-center.md) sendet E-Mail-Benachrichtigungen, wenn wichtige Vorfälle auftreten oder wenn etwas über Ihren Code oder Ihre Konfiguration bemerkt wird, in dem Sie proaktive Maßnahmen ergreifen sollten. Adobe hat jetzt mehrere neue Benachrichtigungstypen eingeführt, die mit Ihrem Inhaltszustand in Verbindung stehen. Diese Funktion ist über ein Programm für frühe Anwender verfügbar. Wenden Sie sich an die Adobe-Kundenunterstützung, wenn Sie teilnehmen möchten.
 
 #### Seiten enthalten eine große Anzahl von Knoten {#page-nodes}
 
-Eine große Anzahl von Knoten kann die Rendering-Leistung beeinträchtigen und die Seitenladezeit verkürzen. Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn eine große Anzahl von Knoten auf einer Seite erkannt wird. So können Sie die erforderlichen Schritte unternehmen, um die Gesamtzahl der Knoten auf einer Seite zu reduzieren.
+Eine große Anzahl von Knoten kann die Performance beim Rendern beeinträchtigen und die Seitenladezeiten verkürzen. Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn eine große Anzahl von Knoten auf einer Seite erkannt wird. So können Sie die erforderlichen Schritte unternehmen, um die Gesamtzahl der Knoten auf einer Seite zu reduzieren.
 
-#### Große Anzahl von laufenden Workflow-Instanzen {#running-workflows}
+#### Große Anzahl an ausgeführten Workflow-Instanzen {#running-workflows}
 
-Die Leistung der Workflow-Engine wird beeinträchtigt, wenn in der Autorenumgebung eine große Anzahl von ausgeführten Workflows ausgeführt wird. Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn eine große Anzahl laufender Workflow-Instanzen erkannt wird. Auf diese Weise können Sie einen Bereinigungsauftrag konfigurieren, um unnötige laufende Workflows zu beenden.
+Die Performance der Workflow-Engine wird beeinträchtigt, wenn in der Autorenumgebung eine große Anzahl von ausgeführten Workflows vorliegt. Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn eine große Anzahl laufender Workflow-Instanzen erkannt wird. Auf diese Weise können Sie einen Bereinigungsauftrag konfigurieren, um unnötige laufende Workflows zu beenden.
 
-#### Benutzer, die direkt zu benutzerspezifischen Gruppen hinzugefügt wurden {#users-customgroups}
+#### Benutzende, die direkt zu benutzerdefinierten Gruppen hinzugefügt wurden {#users-customgroups}
 
 Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn Benutzer direkt zu benutzerspezifischen Gruppen hinzugefügt werden. Auf diese Weise können Sie die Best Practices von IMS befolgen, indem Sie Benutzer zu relevanten IMS-Gruppen hinzufügen und diese IMS-Gruppen dann als Mitglieder AEM Gruppen einschließen.
 
@@ -192,29 +192,29 @@ Aktion Center benachrichtigt Sie proaktiv, wenn abgeschlossene Workflows über 9
 
 Actions Center benachrichtigt Sie proaktiv, wenn eine fehlende Sling-Ressource erkannt wird. Auf diese Weise können Sie die fehlende Ressource hinzufügen und das Fehlschlagen bestimmter AEM Assets-Funktionen verhindern.
 
-### Frühkindliche Betreuung und Betreuung im Zusammenhang mit der Inhaltsbereitstellung {#foundation-early-adopter}
+### Early-Adopter-Programme im Zusammenhang mit der Inhaltsbereitstellung {#foundation-early-adopter}
 
 Senden Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>**, die angibt, für welche der unten aufgeführten Programme Sie sich interessieren.
 
-#### Grundlegende Authentifizierung beim CDN (Early Adopter Program) {#basicauth-cdn}
+#### Standardauthentifizierung beim CDN (Early-Adopter-Programm) {#basicauth-cdn}
 
-Protect bestimmte Inhaltsressourcen durch Aufrufen eines einfachen Authentifizierungsdialogfelds, das einen Benutzernamen und ein Kennwort erfordert. Diese Funktion dient in erster Linie der Überprüfung von Inhalten durch geschäftliche Verantwortliche, die leichte Authentifizierungsvorgänge durchführen, anstatt als umfassende Lösung für Zugriffsberechtigungen für Endbenutzer zu dienen. Die Liste der Benutzernamen und Kennwörter in , die über eine Konfigurationsdatei in Git verwaltet werden, die über die Configuration Pipeline bereitgestellt wird, mit einem Verweis auf die geheimen Cloud Manager-Umgebungsvariablen. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion dient in erster Linie der Überprüfung von Inhalten durch geschäftliche Verantwortliche, die leichte Authentifizierungsvorgänge durchführen, anstatt als umfassende Lösung für Zugriffsberechtigungen für Endbenutzer zu dienen. Die Liste der Benutzernamen und Passwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird – mit Verweis auf die geheimen Cloud Manager-Umgebungsvariablen. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Bereinigen von Inhalten im CDN mit einem Self-Serve-API-Schlüssel (Early Adopter Program) {#purge-cdn}
+#### Bereinigen von Inhalten im CDN mit einem API-Schlüssel per Self-Service (Early-Adopter-Programm) {#purge-cdn}
 
 Registrieren Sie per Self-Service einen CDN-Bereinigungs-API-Schlüssel und verwenden Sie ihn zum Invalidieren von Inhalten im CDN, entweder global oder für eine oder mehrere Ressourcen. [Weitere Informationen](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Self-Serve-Erstellung von X-AEM-Edge-Key für kundenverwaltetes CDN (BYOCDN) (Early Adopter Program) {#byocdn-keys}
+#### Erstellung von X-AEM-Edge-Key per Self-Service für kundenseitig verwaltetes CDN (BYOCDN) (Early-Adopter-Programm) {#byocdn-keys}
 
 Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dieses Ergebnis kann jetzt auf Self-Service-Weise durch eine Konfigurationsdatei erreicht werden, die mithilfe der Configuration Pipeline bereitgestellt wird. Dadurch werden Verzögerungen beim Einstieg in eine neue Umgebung beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Clientseitige Umleitungen (früheres Adopter-Programm) {#client-side-redirects-early-adopter}
+#### Client-seitige Weiterleitungen (Early-Adopter-Programm) {#client-side-redirects-early-adopter}
 
-Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Verwaltung des Quell-Codes und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
 
 #### Warnhinweise zu Traffic-Filterregeln (Early-Adopter-Programm) {#traffic-filter-rules-alerts-early-adopter}
 
@@ -222,7 +222,7 @@ Die kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-fi
 
 Nehmen Sie am Early-Adopter-Programm teil, damit Sie benachrichtigt werden, sobald Ihre Traffic-Filterregeln ausgelöst werden. Aktionen Zentrieren E-Mail-Benachrichtigungen informieren Sie darüber, wann bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
 
-#### Geschäftsbenutzer können Umleitungen außerhalb von Git (Early Adopter Program) deklarieren. {#apache-rewritemaps-early-adopter}
+#### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
 
 Ähnlich wie AEM 6.5 erfassen Apache/Dispatcher Umschreibungszuordnungen, die an einem bestimmten Speicherort im Publishing-Repository platziert werden, und laden sie, ohne dass eine Pipeline auf der Web-Ebene ausgeführt werden muss. Mit diesem Ansatz können Benutzer Umleitungen mithilfe einer Tabelle oder einer Benutzeroberfläche deklarieren, z. B. ACS Commons Redirect Map Manager oder einer benutzerdefinierten Anwendung. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
@@ -232,7 +232,7 @@ Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
 
 ## Cloud Manager {#cloud-manager}
 
