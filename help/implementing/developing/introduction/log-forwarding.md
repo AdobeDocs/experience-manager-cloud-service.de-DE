@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 2%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Kunden, die über eine Lizenz für einen Protokollierungsanbieter verfügen oder
 
 Die Protokollweiterleitung wird auf Self-Service-Weise konfiguriert, indem eine Konfiguration in Git deklariert und über die Cloud Manager-Konfigurationspipeline für Entwicklungs-, Staging- und Produktionsumgebungstypen in Produktionsprogrammen (ohne Sandbox) bereitgestellt wird.
 
-Es gibt eine Option, dass die AEM- und Apache-/Dispatcher-Protokolle über AEM erweiterte Netzwerkinfrastruktur, wie z. B. dedizierte Egress-IP, weitergeleitet werden.
+Es gibt eine Option, mit der die AEM- und Apache/Dispatcher-Protokolle über AEM erweiterte Netzwerkinfrastruktur, wie z. B. dedizierte Egress-IP, weitergeleitet werden können.
 
 Beachten Sie, dass die Netzwerkbandbreite, die mit an das Protokollierungsziel gesendeten Protokollen verknüpft ist, als Teil der Netzwerk-I/O-Nutzung Ihres Unternehmens betrachtet wird.
 
@@ -39,7 +39,7 @@ Dieser Artikel ist wie folgt organisiert:
 * Einrichtung - für alle Protokollierungsziele gemeinsam
 * Protokollieren von Zielkonfigurationen - jedes Ziel hat ein etwas anderes Format
 * Protokolleintragsformate - Informationen zu den Protokolleintragsformaten
-* Erweiterte Netzwerke - Senden von AEM- und Apache-/Dispatcher-Logs über eine dedizierte Ausfahrt oder über eine VPN-Verbindung
+* Erweiterte Netzwerke - Senden von AEM- und Apache/Dispatcher-Logs über eine dedizierte Ausfahrt oder über eine VPN-Verbindung
 
 
 ## Einrichtung {#setup}
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 Zu beachten:
 
 * Erstellen Sie einen API-Schlüssel ohne Integration mit einem bestimmten Cloud-Anbieter.
+* Die Eigenschaft &quot;tags&quot;ist optional.
 
 
 ### Elasticsearch und OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 Zu beachten:
@@ -228,6 +233,15 @@ Zu beachten:
 * Verwenden Sie für Anmeldeinformationen nicht die Kontoanmeldeinformationen, sondern die Bereitstellungsberechtigungen. Dies sind die Anmeldeinformationen, die auf einem Bildschirm generiert werden, der diesem Bild ähneln kann:
 
 ![Elastische Bereitstellungsberechtigungen](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* Die optionale Pipeline-Eigenschaft sollte auf den Namen der Elasticsearch- oder OpenSearch-Erfassungspipeline festgelegt werden, die so konfiguriert werden kann, dass der Protokolleintrag an den entsprechenden Index weitergeleitet wird. Der Prozessortyp der Pipeline muss auf *script* und die Skriptsprache auf *schmerzfrei*. Im Folgenden finden Sie ein Beispielskript-Snippet zum Weiterleiten von Protokolleinträgen in einen Index wie aemaccess_dev_26_06_2024:
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
