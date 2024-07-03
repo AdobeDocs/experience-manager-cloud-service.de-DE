@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '2365'
-ht-degree: 100%
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+workflow-type: tm+mt
+source-wordcount: '2377'
+ht-degree: 99%
 
 ---
 
@@ -61,6 +61,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin od
    * Wählen Sie einen [**Umgebungstyp**.](#environment-types)
       * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
    * Geben Sie einen **Namen** für die Umgebung an.
+      * Der Umgebungsname kann nach der Erstellung der Umgebung nicht mehr geändert werden.
    * Geben Sie eine **Beschreibung** für die Umgebung an.
    * Wenn Sie eine **Produktion + Staging**-Umgebung hinzufügen, müssen Sie einen Umgebungsnamen und eine Beschreibung sowohl für die Produktions- als auch für die Staging-Umgebung angeben.
    * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus.
