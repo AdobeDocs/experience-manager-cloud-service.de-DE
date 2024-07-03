@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
 workflow-type: tm+mt
 source-wordcount: '5149'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -566,12 +566,12 @@ ht-degree: 97%
          + [Überblick](/help/assets/dynamic-media-open-apis-overview.md)
          + [Genehmigen von Assets](/help/assets/approve-assets.md)
          + [Integration mit nachgelagerten Anwendungen](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [Asset-API suchen](/help/assets/search-assets-api.md)
+         + [API zum Durchsuchen von Assets](/help/assets/search-assets-api.md)
          + [Bereitstellungs-APIs](/help/assets/deliver-assets-apis.md)
-         + [Beschränken der Asset-Bereitstellung](/help/assets/restrict-assets-delivery.md)
-         + [Integrieren von Remote AEM Assets mit AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [Einschränken der Asset-Bereitstellung](/help/assets/restrict-assets-delivery.md)
+         + [Integrieren der Remote-Version von AEM Assets mit AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Häufig gestellte Fragen](/help/assets/dynamic-media-open-apis-faqs.md)
-         + [Benutzerdefinierte Domäne konfigurieren](/help/assets/configure-custom-domain.md)
+         + [Konfigurieren einer benutzerdefinierten Domain](/help/assets/configure-custom-domain.md)
    + Arbeiten mit der Assets-Ansicht {#assets-view}
       + [Einführung](/help/assets/assets-view-introduction.md)
       + [Erste Schritte](/help/assets/get-started-assets-view.md)
@@ -595,16 +595,16 @@ ht-degree: 97%
 
    + Content Hub {#content-hub}
       + [Überblick](/help/assets/product-overview.md)
-      + [Content Hub bereitstellen](/help/assets/deploy-content-hub.md)
-      + [Benutzeroberfläche von Content Hub konfigurieren](/help/assets/configure-content-hub-ui-options.md)
-      + [Hochladen oder Importieren von markengenehmigten Assets in Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md)
+      + [Konfigurieren der Benutzeroberfläche von Content Hub](/help/assets/configure-content-hub-ui-options.md)
+      + [Hochladen oder Importieren der von Marken genehmigten Assets in Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [Suchen nach Assets in Content Hub](/help/assets/search-assets-content-hub.md)
       + [Asset-Eigenschaften](/help/assets/asset-properties-content-hub.md)
       + [Freigeben von Assets in Content Hub](/help/assets/share-assets-content-hub.md)
       + [Herunterladen von Assets mit Content Hub](/help/assets/download-assets-content-hub.md)
       + [Verwalten von Sammlungen in Content Hub](/help/assets/collections-content-hub.md)
-      + [Bilder mit Adobe Express in Content Hub bearbeiten](/help/assets/edit-images-content-hub.md)
-      + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
+      + [Bearbeiten von Bildern mit Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+      + [Asset-Insights in Content Hub](/help/assets/insights-content-hub.md)
    + Best Practices{#best-practices}
       + [Best Practices für die Suche](/help/assets/search-best-practices.md)
       + [Metadatenverwaltung und Best Practices](/help/assets/metadata-best-practices.md)
@@ -626,7 +626,7 @@ ht-degree: 97%
    + Übersicht {#forms-overview}
       + [Einführung](/help/forms/home.md)
       + [Die wichtigsten Innovationen in Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
-      + [Funktionen für frühzeitigen Zugriff (EA)](/help/forms/early-access-ea-features.md)
+      + [Funktionen für Early Access (EA)](/help/forms/early-access-ea-features.md)
       + [Wesentliche Änderungen](/help/forms/notable-changes.md)
       + [Architektur](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Häufig gestellte Fragen](/help/forms/faq.md)
@@ -1211,7 +1211,7 @@ ht-degree: 97%
       + [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
       + [Ressourcenzuordnung](/help/implementing/deploying/resource-mapping.md)
    + Autorenebene {#author-tier}
-      + [Zugriff auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
+      + [Zugreifen auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Sichern der Autorenebene](/help/implementing/author-tier/securing-the-author-tier.md)
    + Übersicht über die Inhaltsbereitstellung {#content-delivery}
       + [Ablauf der Inhaltsbereitstellung](/help/implementing/dispatcher/overview.md)
