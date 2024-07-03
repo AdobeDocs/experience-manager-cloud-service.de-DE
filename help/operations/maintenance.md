@@ -5,9 +5,9 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
 source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2106'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartung
 >
 >Adobe behält sich das Recht vor, Konfigurationseinstellungen für Wartungsaufgaben der Kundschaft außer Kraft zu setzen, um Probleme wie Leistungsbeeinträchtigungen zu verhindern.
 
-Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
+In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
 
 <table style="table-layout:auto">
  <tbody>
@@ -45,15 +45,15 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   </tr>
   <tr>
     <td>Versionsbereinigung</td>
-    <td>Kunde</td>
-    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie im Abschnitt <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> Abschnitt.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
+    <td>Kundin/Kunde</td>
+    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Audit-Protokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
    </td>
   </td>
   </tr>
   <tr>
-    <td>Bereinigung von Prüfprotokollen</td>
-    <td>Kunde</td>
-    <td>Die Bereinigung des Auditprotokolls ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie im Abschnitt <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> Abschnitt.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
+    <td>Bereinigung der Auditprotokolle</td>
+    <td>Kundin/Kunde</td>
+    <td>Die Auditprotokollbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
    </td>
    </td>
   </tr>
@@ -65,7 +65,7 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   </tr>
   <tr>
     <td>Ad-hoc-Aufgabenbereinigung</td>
-    <td>Kunde</td>
+    <td>Kundin/Kunde</td>
     <td>
     <p>Das muss in Git geschehen. Überschreiben Sie den vorkonfigurierten Konfigurationsknoten des Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>.</p>
     <p>Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten hinzufügen. Benennen Sie ihn <code>granite_TaskPurgeTask</code>, wobei Sie das Attribut <code>sling:resourceType</code> auf <code>granite/operations/components/maintenance/task</code> und das Attribut <code>granite.maintenance.name</code> auf <code>TaskPurge</code> setzen. Konfigurieren Sie die OSGi-Eigenschaften. Eine Liste der Eigenschaften finden Sie unter <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>.</p>
@@ -73,7 +73,7 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   </tr>
     <tr>
     <td>Workflow-Bereinigung</td>
-    <td>Kunde</td>
+    <td>Kundin/Kunde</td>
     <td>
     <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=de#regular-purging-of-workflow-instances">AEM 6.5-Dokumentation zu Wartungsaufgaben</a>.</p>
@@ -81,7 +81,7 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   </tr>
   <tr>
     <td>Projektbereinigung</td>
-    <td>Kunde</td>
+    <td>Kundin/Kunde</td>
     <td>
     <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Siehe die Liste der OSGi-Eigenschaften unter „Bereinigungskonfiguration von Adobe-Projekten“.</p>
@@ -100,7 +100,7 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   </tr>
   <tr>
     <td>Täglich</td>
-    <td>Kunde</td>
+    <td>Kundin/Kunde</td>
     <td>JCR-Knotendefinition</td>
   <td>
   <p><strong>windowSchedule=daily</strong> (dieser Wert sollte nicht geändert werden)</p>
@@ -111,7 +111,7 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   </tr>
   <tr>
     <td>Wöchentlich</td>
-    <td>Kunde</td>
+    <td>Kundin/Kunde</td>
     <td>JCR-Knotendefinition</td>
     <td>
     <p><strong>windowSchedule=weekly</strong> (dieser Wert sollte nicht geändert werden)</p>
@@ -123,7 +123,7 @@ Die folgende Tabelle zeigt die verfügbaren Wartungsaufgaben.
   </tr>
   <tr>
     <td>Monatlich</td>
-    <td>Kunde</td>
+    <td>Kundin/Kunde</td>
     <td>JCR-Knotendefinition</td>
     <td>
     <p><strong>windowSchedule=monthly</strong> (dieser Wert sollte nicht geändert werden)</p>
@@ -193,15 +193,15 @@ Code-Beispiel 3 (monatlich)
 
 ## Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung {#purge-tasks}
 
-Durch das Bereinigen von Versionen und des Auditprotokolls wird die Größe des Repositorys verringert und in einigen Szenarien kann die Leistung verbessert werden.
+Durch das Bereinigen der Versionen und des Auditprotokolls wird die Größe des Repositorys verringert und in einigen Szenarien kann die Leistung verbessert werden.
 
 >[!NOTE]
 >
->AEM Guides-Kunden sollten keine Versionsbereinigung konfigurieren.
+>AEM Guides-Kundinnen und -Kunden sollten keine Versionsbereinigung konfigurieren.
 
 ### Standardwerte {#defaults}
 
-Derzeit ist die Bereinigung nicht standardmäßig aktiviert, aber dies wird sich in Zukunft ändern. Umgebungen, die erstellt wurden, bevor die standardmäßige Bereinigung aktiviert wurde, haben einen konservativeren Schwellenwert, sodass das Bereinigen nicht unerwartet erfolgt. Weitere Informationen zur standardmäßigen Bereinigungsrichtlinie finden Sie in den Abschnitten Versionsbereinigung und Auditprotokollbereinigung unten.
+Derzeit ist die Bereinigung nicht standardmäßig aktiviert, aber dies wird sich in Zukunft ändern. Umgebungen, die vor Aktivierung der standardmäßigen Bereinigung erstellt wurden, haben einen konservativeren Schwellenwert, sodass das Bereinigen nicht unerwartet erfolgt. Weitere Informationen zu den Richtlinien für standardmäßige Bereinigungen finden Sie unten in den Abschnitten „Versionsbereinigung“ und „Auditprotokollbereinigung“.
 <!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
 
 <!-- ### Overriding the default values with a new configuration {#override} -->
@@ -215,25 +215,25 @@ Die standardmäßigen Bereinigungswerte können überschrieben werden, indem ein
 Deklarieren Sie eine Konfigurationsdatei und stellen Sie sie wie in den folgenden Schritten beschrieben bereit.
 
 >[!NOTE]
->Nachdem Sie den Knoten zur Versionsbereinigung in der Konfigurationsdatei bereitgestellt haben, müssen Sie ihn deklarieren und nicht entfernen. Die Konfigurations-Pipeline schlägt fehl, wenn Sie dies versuchen.
+>Nachdem Sie den Knoten zur Versionsbereinigung in der Konfigurationsdatei bereitgestellt haben, müssen Sie ihn deklarieren und dürfen ihn nicht entfernen. Wenn Sie dies versuchen, schlägt die Konfigurations-Pipeline fehl.
 > 
->Ebenso müssen Sie den Bereinigungsknoten für das Audit-Protokoll nach der Bereitstellung in der Konfigurationsdatei deklarieren und nicht entfernen.
+>Ebenso müssen Sie den Knoten für die Auditprotokollbereinigung nach der Bereitstellung in der Konfigurationsdatei deklarieren und dürfen ihn nicht entfernen.
 
-**1** - erstellen Sie die folgende Ordner- und Dateistruktur im Ordner der obersten Ebene Ihres Projekts in Git:
+**1** – Erstellen Sie zunächst den folgenden Ordner und die Dateistruktur des Ordners der obersten Ebene in Ihrem Projekt in Git:
 
 ```
 config/
      mt.yaml
 ```
 
-**2** - Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
+**2** – Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
 
-* eine &quot;kind&quot;-Eigenschaft mit dem Wert &quot;MaintenanceTasks&quot;.
-* eine Eigenschaft &quot;version&quot;(derzeit ist es Version 1).
-* ein optionales &quot;metadata&quot;-Objekt mit der Eigenschaft `envTypes` mit einer kommagetrennten Liste des Umgebungstyps (dev, stage, prod), für den diese Konfiguration gültig ist. Wenn kein Metadatenobjekt deklariert wird, ist die Konfiguration für alle Umgebungstypen gültig.
-* ein Datenobjekt mit `versionPurge` und `auditLogPurge` Objekte.
+* eine Eigenschaft „kind“ mit dem Wert „MaintenanceTasks“.
+* eine Eigenschaft „version“ (derzeit handelt es sich um Version 1).
+* ein optionales Objekt „metadata“ mit der Eigenschaft `envTypes` mit einer kommagetrennten Liste des Umgebungstyps (dev, stage, prod), für den diese Konfiguration gültig ist. Wenn kein Metadatenobjekt deklariert wird, ist die Konfiguration für alle Umgebungstypen gültig.
+* ein Datenobjekt mit den Objekten `versionPurge` und `auditLogPurge`.
 
-Siehe Definitionen und Syntax der `versionPurge` und `auditLogPurge` Objekte darunter.
+Siehe die Definitionen und Syntax der Objekte `versionPurge` und `auditLogPurge` unten.
 
 Sie sollten die Konfiguration ähnlich wie im folgenden Beispiel strukturieren:
 
@@ -271,27 +271,27 @@ Beachten Sie Folgendes, damit die Konfiguration gültig ist:
 * Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
 
 >[!NOTE]
->Sie können `yq` , um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq mt.yaml`).
+>Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq mt.yaml`).
 
-**3** - Konfigurieren Sie die Konfigurations-Pipelines für Nicht-Produktion- und Produktionsumgebungen.
+**3** – Konfigurieren Sie die produktionsfremden und die Produktions-Konfigurations-Pipelines.
 
-Rapid Development Environments (RDEs) unterstützen keine Bereinigung. Erstellen Sie für andere Umgebungstypen in Produktionsprogrammen (ohne Sandbox-Programme) eine zielgerichtete Bereitstellungskonfigurationspipeline in Cloud Manager.
+Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) unterstützen keine Bereinigungen.  Erstellen Sie für andere Umgebungstypen in Produktionsprogrammen (keine Sandbox) eine zielgerichtete Bereitstellungs-Konfigurations-Pipeline in Cloud Manager.
 
-Siehe [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) für weitere Details.
+Weitere Informationen finden Sie unter [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 ### Versionsbereinigung {#version-purge}
 
 >[!NOTE]
 >
->AEM Guides-Kunden sollten keine Versionsbereinigung konfigurieren.
+>AEM Guides-Kundinnen und -Kunden sollten keine Versionsbereinigung konfigurieren.
 
-#### Standardwerte für Versionsbereinigung {#version-purge-defaults}
+#### Standardwerte für die Versionsbereinigung {#version-purge-defaults}
 
 <!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
 
 Derzeit ist die Bereinigung nicht standardmäßig aktiviert, aber dies wird sich in Zukunft ändern.
 
-Umgebungen, die erstellt wurden, nachdem die standardmäßige Bereinigung aktiviert wurde, haben die folgenden Standardwerte:
+Umgebungen, die nach Aktivierung der standardmäßigen Bereinigung erstellt wurden, haben die folgenden Standardwerte:
 
 * Versionen, die älter als 30 Tage sind, werden entfernt.
 * Die letzten fünf Versionen der letzten 30 Tage werden beibehalten.
@@ -299,30 +299,30 @@ Umgebungen, die erstellt wurden, nachdem die standardmäßige Bereinigung aktivi
 
 <!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
 
-Umgebungen, die erstellt wurden, bevor die standardmäßige Bereinigung aktiviert wurde, haben die folgenden Standardwerte. Es wird jedoch empfohlen, diese Werte zu senken, um die Leistung zu optimieren.
+Umgebungen, die vor Aktivierung der standardmäßigen Bereinigung erstellt wurden, haben die unten aufgeführten Standardwerte. Es wird jedoch empfohlen, diese Werte zu verringern, um die Leistung zu optimieren.
 
-* Versionen, die älter als 7 Jahre sind, werden entfernt.
-* Alle Versionen der letzten 7 Jahre werden aufbewahrt.
-* Nach 7 Jahren werden andere Versionen als die neueste Version (zusätzlich zur aktuellen Datei) entfernt.
+* Versionen, die älter als sieben Jahre sind, werden entfernt.
+* Alle Versionen der letzten sieben Jahre werden beibehalten.
+* Nach sieben Jahren werden andere Versionen als die neueste Version (zusätzlich zur aktuellen Datei) entfernt.
 
-#### Eigenschaften für Versionsbereinigung {#version-purge-properties}
+#### Eigenschaften der Versionsbereinigung {#version-purge-properties}
 
-Die zulässigen Eigenschaften sind unten aufgeführt.
+Die zulässigen Eigenschaften sind im Folgenden aufgeführt.
 
-Die Spalten, die *default* die Standardwerte für die Zukunft angeben, wenn Standardwerte angewendet werden; *TBD* gibt eine Umgebungs-ID an, die noch nicht ermittelt wurde.
+Die Spalten, die *default* angeben, geben die Standardwerte für die Zukunft an, wenn Standardwerte angewendet werden. *TBD* gibt eine Umgebungs-ID an, die noch nicht ermittelt wurde.
 
-| Eigenschaften | zukünftiger Standard für envs>TBD | zukünftige Standardeinstellung für envs&lt;=TBD | erforderlich | Typ | Werte |
+| Eigenschaften | Zukünftiger Standard für Umgebungen>TBD | Zukünftiger Standard für Umgebungen&lt;=TBD | Erforderlich | Typ | Werte |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| Pfade | [&quot;/content&quot;] | [&quot;/content&quot;] | Ja | Zeichenfolgen-Array | Gibt an, unter welchen Pfaden Versionen beim Erstellen neuer Versionen gelöscht werden sollen.  Kunden müssen diese Eigenschaft deklarieren, doch der einzig zulässige Wert ist &quot;/content&quot;. |
-| maximumAgeDays | 30 | 2557 (7 Jahre + 2 Schalttage) | Ja | Ganzzahl | Jede Version, die älter als der konfigurierte Wert ist, wird entfernt. Wenn der Wert 0 beträgt, wird die Bereinigung nicht basierend auf dem Alter der Version durchgeführt. |
-| maximumVersions | 5 | 0 (keine Begrenzung) | Ja | Ganzzahl | Jede Version, die älter als die n. neueste Version ist, wird entfernt. Wenn der Wert 0 beträgt, wird die Bereinigung nicht basierend auf der Anzahl der Versionen durchgeführt. |
-| minimumVersions | 1 | 1 | Ja | Ganzzahl | Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Beachten Sie, dass immer mindestens 1 Version beibehalten wird. Der Wert muss 1 oder höher sein. |
-| keepLabeledVersion | Falsch | Falsch | Ja | Boolesch | Bestimmt, ob explizit gekennzeichnete Versionen von der Bereinigung ausgeschlossen werden. Für eine bessere Repository-Optimierung wird empfohlen, diesen Wert auf false festzulegen. |
+| Pfade | [&quot;/content&quot;] | [&quot;/content&quot;] | Ja | Zeichenfolgen-Array | Gibt an, unter welchen Pfaden Versionen bereinigt werden sollen, wenn neue Versionen erstellt werden. Diese Eigenschaft muss kundenseitig deklariert werden. Es ist jedoch nur der Wert &quot;/content&quot; zulässig. |
+| maximumAgeDays | 30 | 2557 (7 Jahre + 2 Schalttage) | Ja | Ganzzahl | Jede Version, die älter als der konfigurierte Wert ist, wird entfernt. Lautet der Wert „0“, wird die Bereinigung nicht auf Basis des Alters der Version durchgeführt. |
+| maximumVersions | 5 | 0 (kein Limit) | Ja | Ganzzahl | Jede Version, die älter als die n-te neueste Version ist, wird entfernt. Lautet der Wert „0“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt. |
+| minimumVersions | 1 | 1 | Ja | Ganzzahl | Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Es wird immer mindestens eine Version beibehalten. Der Wert muss „1“ oder höher sein. |
+| keepLabeledVersion | false | false | Ja | Boolesch | Bestimmt, ob explizit gekennzeichnete Versionen von der Bereinigung ausgeschlossen werden. Für eine bessere Repository-Optimierung wird empfohlen, diesen Wert auf „false“ festzulegen. |
 
 
-**Eigenschafteninteraktionen**
+**Interaktion von Eigenschaften**
 
-Die folgenden Beispiele veranschaulichen die Interaktion von Eigenschaften bei Kombination.
+Die folgenden Beispiele veranschaulichen, wie kombinierte Eigenschaften miteinander interagieren.
 
 Beispiel:
 
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-Wenn am 23. Tag 11 Versionen vorliegen, wird die älteste Version beim nächsten Ausführen der Bereinigungs-Wartungsaufgabe bereinigt, da die Variable `maximumVersions` -Eigenschaft auf 10 festgelegt ist.
+Wenn an Tag 23 elf Versionen vorliegen, wird die älteste Version beim nächsten Ausführen der Bereinigungswartungsaufgabe bereinigt, da die Eigenschaft `maximumVersions` auf den Wert „10“ eingestellt ist.
 
-Wenn an Tag 31 fünf Versionen vorhanden sind, werden nur 3 seit der `minimumVersions` -Eigenschaft auf 2 festgelegt ist.
+Wenn an Tag 31 fünf Versionen vorhanden sind, werden nur drei Versionen bereinigt, da die Eigenschaft `minimumVersions` auf den Wert „2“ eingestellt ist.
 
 Beispiel:
 
@@ -344,11 +344,11 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-Seit der Variablen `maximumVersions` -Eigenschaft auf 0 gesetzt.
+Versionen, die noch keine 30 Tage alt sind, werden nicht bereinigt, da die Eigenschaft `maximumVersions` auf den Wert „0“ eingestellt ist.
 
-Eine Version, die älter als 30 Tage ist, wird beibehalten.
+Eine Version, die älter als 30 Tage ist, wird beibehalten.
 
-### Bereinigung von Prüfprotokollen {#audit-purge}
+### Bereinigung der Auditprotokolle {#audit-purge}
 
 #### Standardwerte für die Auditprotokollbereinigung {#audit-purge-defaults}
 
@@ -356,31 +356,31 @@ Eine Version, die älter als 30 Tage ist, wird beibehalten.
 
 Derzeit ist die Bereinigung nicht standardmäßig aktiviert, aber dies wird sich in Zukunft ändern.
 
-Umgebungen, die erstellt wurden, nachdem die standardmäßige Bereinigung aktiviert wurde, haben die folgenden Standardwerte:
+Umgebungen, die nach Aktivierung der standardmäßigen Bereinigung erstellt wurden, haben die folgenden Standardwerte:
 
-* Replikations-, DAM- und Seitenprüfungsprotokolle, die älter als 7 Tage sind, werden entfernt.
+* Replikations-, DAM-und Seiten-Auditprotokolle, die älter als sieben Tage sind, werden entfernt.
 * Alle möglichen Ereignisse werden protokolliert.
 
 <!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
 
-Umgebungen, die erstellt wurden, bevor die standardmäßige Bereinigung aktiviert wurde, haben die folgenden Standardwerte. Es wird jedoch empfohlen, diese Werte zu senken, um die Leistung zu optimieren.
+Umgebungen, die vor Aktivierung der standardmäßigen Bereinigung erstellt wurden, haben die unten aufgeführten Standardwerte. Es wird jedoch empfohlen, diese Werte zu verringern, um die Leistung zu optimieren.
 
-* Replikations-, DAM- und Seitenprüfprotokolle, die älter als 7 Jahre sind, werden entfernt.
+* Replikations-, DAM-und Seiten-Auditprotokolle, die älter als sieben Jahre sind, werden entfernt.
 * Alle möglichen Ereignisse werden protokolliert.
 
 >[!NOTE]
->Es wird empfohlen, dass Kunden, die über regulatorische Anforderungen verfügen, um nicht bearbeitbare Prüfprotokolle zu erstellen, in spezialisierte externe Dienste integrieren.
+>Es wird empfohlen, dass Kundinnen und Kunden, die durch gesetzliche Vorschriften verpflichtet sind, nicht bearbeitbare Auditprotokolle zu erstellen, hierfür spezialisierte externe Dienste integrieren.
 
-#### Eigenschaften zur Bereinigung des Auditprotokolls {#audit-purge-properties}
+#### Eigenschaften der Auditprotokollbereinigung {#audit-purge-properties}
 
-Die zulässigen Eigenschaften sind unten aufgeführt.
+Die zulässigen Eigenschaften sind im Folgenden aufgeführt.
 
-Die Spalten, die *default* die Standardwerte für die Zukunft angeben, wenn Standardwerte angewendet werden; *TBD* gibt eine Umgebungs-ID an, die noch nicht ermittelt wurde.
+Die Spalten, die *default* angeben, geben die Standardwerte für die Zukunft an, wenn Standardwerte angewendet werden. *TBD* gibt eine Umgebungs-ID an, die noch nicht ermittelt wurde.
 
 
-| Eigenschaften | zukünftiger Standard für envs>TBD | zukünftige Standardeinstellung für envs&lt;=TBD | erforderlich | Typ | Werte |
+| Eigenschaften | Zukünftiger Standard für Umgebungen>TBD | Zukünftiger Standard für Umgebungen&lt;=TBD | Erforderlich | Typ | Werte |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| Regeln | - | - | Ja | Objekt | Einer oder mehrere der folgenden Knoten: Replikation, Seiten, dam. Jeder dieser Knoten definiert Regeln mit den folgenden Eigenschaften. Alle Eigenschaften müssen deklariert werden. |
-| maximumAgeDays | 7 Tage | für alle 2557 (7 Jahre + 2 Schalttage) | Ja | integer | Bei Replikation, Seiten oder DAM: die Anzahl der Tage, in denen die Prüfprotokolle aufbewahrt werden. Auditprotokolle, die älter als der konfigurierte Wert sind, werden gelöscht. |
-| contentPath | &quot;/content&quot; | &quot;/content&quot; | Ja | Zeichenfolge | Der Pfad, unter dem die Prüfprotokolle für den zugehörigen Typ gelöscht werden. Muss auf &quot;/content&quot;gesetzt sein. |
-| Typen | alle Werte | alle Werte | Ja | Array der Auflistung | Für **Replikation**, lauten die aufgezählten Werte: Aktivieren, Deaktivieren, Löschen, Test, Umkehren, Interne Umfrage. Für **pages**, lauten die aufgezählten Werte: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestoned, PageRolled Out, PageValid, PageInvalid. Für **dam**, lauten die aufgezählten Werte: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION AKTUALISIERT, AKZEPTIERT, HERUNTERGELADEN, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| Regeln | - | - | Ja | Objekt | Einer oder mehrere der folgenden Knoten: Replikation, Seiten, DAM. Jeder dieser Knoten definiert Regeln mit den unten aufgeführten Eigenschaften. Alle Eigenschaften müssen deklariert werden. |
+| maximumAgeDays | 7 Tage | für alle 2557 (7 Jahre + 2 Schalttage) | Ja | Ganzzahl | Bei Replikation, Seiten oder DAM: die Anzahl der Tage, für die die Auditprotokolle aufbewahrt werden. Auditprotokolle, die älter als der konfigurierte Wert sind, werden gelöscht. |
+| contentPath | &quot;/content&quot; | &quot;/content&quot; | Ja | Zeichenfolge | Der Pfad, unter dem die Auditprotokolle für den zugehörigen Typ gelöscht werden. Muss auf &quot;/content&quot; gesetzt sein. |
+| Typen | Alle Werte | Alle Werte | Ja | Array der Auflistung | Für **replication** lauten die aufgezählten Werte: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Für **pages** lauten die aufgezählten Werte: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestoned, PageRolled Out, PageValid, PageInvalid. Für **dam** lauten die aufgezählten Werte: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |

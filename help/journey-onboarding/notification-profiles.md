@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 80%
 
 Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstellen, um den Empfang wichtiger E-Mail-Benachrichtigungen zu verwalten.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Von Zeit zu Zeit kontaktiert Adobe Benutzende bezüglich ihrer AEM as a Cloud Service-Umgebung. Neben produktinternen Benachrichtigungen verwendet Adobe gelegentlich auch E-Mails für Benachrichtigungen. Es gibt zwei Arten von E-Mail-Benachrichtigungen:
 
 * **Benachrichtigung bei Vorfällen**: Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem bei Ihrer AEM as a Cloud Service-Umgebung erkannt hat.
 * **Proaktive Benachrichtigung**: Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service-Umgebung von Vorteil sein kann.
 
-Benutzer können diese Benachrichtigungen auch für spezifische Programme erhalten, die auf ihren [benutzerdefinierte Gruppenberechtigungen.](/help/implementing/cloud-manager/custom-permissions.md)
+Benutzende können diese Benachrichtigungen abhängig von ihren [benutzerdefinierten Gruppenberechtigungen](/help/implementing/cloud-manager/custom-permissions.md) auch für bestimmte Programme erhalten.
 
-Darüber hinaus wird die Zuweisung von Gruppen zu proaktiven Benachrichtigungen unterstützt und Benutzer und Gruppen können den Produktprofilen direkt zugewiesen werden.
+Darüber hinaus wird die Zuweisung von Gruppen zu proaktiven Benachrichtigungen unterstützt und Benutzende und Gruppen können den Produktprofilen direkt zugewiesen werden.
 
-* Benutzer in den Gruppen für Vorfälle und proaktive Benachrichtigungen erhalten standardmäßig Benachrichtigungen für alle Programme.
-* Wenn Benutzer jedoch nicht alle Benachrichtigungen erhalten möchten, können sie benutzerdefinierte READ-Berechtigungen verwenden, um anzugeben, welche Programmbenachrichtigungen sie erhalten möchten.
+* Benutzende in den Gruppen für Benachrichtigung bei Vorfällen und für proaktive Benachrichtigungen erhalten standardmäßig Benachrichtigungen für alle Programme.
+* Wenn Benutzende jedoch nicht alle Benachrichtigungen erhalten möchten, können sie mithilfe benutzerdefinierter READ-Berechtigungen festlegen, welche Programmbenachrichtigungen sie erhalten möchten.
 
 Damit die richtigen Personen diese Benachrichtigungen erhalten, müssen Sie Benutzerprofile konfigurieren und zuweisen, wie in diesem Dokument beschrieben.
 
@@ -63,8 +63,8 @@ Um den Empfang von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie 
 
    * **Name des Produktprofils**: `Incident Notification - Cloud Service`
    * **Anzeigename**: `Incident Notification - Cloud Service`
-   * **Beschreibung**: Cloud Manager-Profil für Benutzer, die Benachrichtigungen bei einem Vorfall erhalten oder bei denen Adobe ein potenzielles Verfügbarkeitsproblem mit Ihrer AEM as a Cloud Service Umgebung festgestellt hat.
-      * Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
+   * **Beschreibung**: Cloud Manager-Profil für die Benutzenden, die Benachrichtigungen während eines Vorfalls oder dann erhalten, wenn Adobe ein potenzielles Verfügbarkeitsproblem in Ihrer AEM as a Cloud Service-Umgebung festgestellt hat.
+      * Benutzende mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie sich für benutzerdefinierte Berechtigungen entschieden haben.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -73,7 +73,7 @@ Um den Empfang von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie 
    * **Name des Produktprofils**: `Proactive Notification - Cloud Service`
    * **Anzeigename**: `Proactive Notification - Cloud Service`
    * **Beschreibung**: Cloud Manager-Profil für Benutzer, die Benachrichtigungen erhalten, wenn ein Mitglied des Adobe Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung für Ihre AEM as a Cloud Service-Umgebungskonfiguration bereitstellen möchte
-      * Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
+      * Benutzende mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie sich für benutzerdefinierte Berechtigungen entschieden haben.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -91,9 +91,9 @@ Nachdem die Profile erstellt wurden, müssen Sie die entsprechenden Benutzenden 
 
 ### Hinzufügen von neuen Benutzenden zu Profilen {#new-user}
 
-Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine Federated IDs eingerichtet wurden.
+Führen Sie diese Schritte aus, um Benutzende hinzuzufügen, für die noch keine Federated IDs eingerichtet wurden.
 
-1. Identifizieren Sie die Benutzer oder Gruppen, die Vorkommnisse oder proaktive Benachrichtigungen erhalten sollen.
+1. Identifizieren Sie die Benutzenden oder Gruppen, die Benachrichtigungen zu Vorfällen oder proaktive Benachrichtigungen erhalten sollen.
 
 1. Melden Sie sich unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) bei der Admin Console an, wenn Sie noch nicht angemeldet sind.
 
@@ -118,15 +118,15 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine F
 
 1. Klicken Sie auf **Speichern**, und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet.
 
-Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
+Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Benutzende mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie sich für benutzerdefinierte Berechtigungen entschieden haben.
 
-Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten sollen.
+Wiederholen Sie diese Schritte für die Benutzenden in Ihrem Team, die Benachrichtigungen erhalten sollen.
 
 ### Hinzufügen von vorhandenen Benutzenden zu Profilen {#existing-user}
 
-Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die bereits Federated IDs vorhanden sind.
+Führen Sie diese Schritte aus, um Benutzende hinzuzufügen, für die bereits Federated IDs vorhanden sind.
 
-1. Identifizieren Sie die Benutzer oder Gruppen, die Vorkommnisse oder proaktive Benachrichtigungen erhalten sollen.
+1. Identifizieren Sie die Benutzenden oder Gruppen, die Benachrichtigungen zu Vorfällen oder proaktive Benachrichtigungen erhalten sollen.
 
 1. Melden Sie sich unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) bei der Admin Console an, wenn Sie noch nicht angemeldet sind.
 
@@ -149,9 +149,9 @@ Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die bereits Fede
 
 1. Klicken Sie auf **Speichern**, und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet.
 
-Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Benutzer mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie benutzerdefinierte Berechtigungen verwenden.
+Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Benutzende mit benutzerdefinierten READ-Berechtigungen für bestimmte Programme erhalten nur dann Benachrichtigungen für diese Programme, wenn sie sich für benutzerdefinierte Berechtigungen entschieden haben.
 
-Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten sollen.
+Wiederholen Sie diese Schritte für die Benutzenden in Ihrem Team, die Benachrichtigungen erhalten sollen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1310'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -308,14 +308,14 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 | **forwardAuthorization** (optional, Standardeinstellung ist „false“) | Wenn die Eigenschaft auf „true“ gesetzt ist, wird die „Autorisierung“-Kopfzeile aus der Client-Anforderung an das Backend übergeben, andernfalls wird die Kopfzeile „Autorisierung“ entfernt. |
 | **timeout** (optional, in Sekunden, Standardeinstellung ist „60“) | Anzahl der Sekunden, die das CDN darauf warten soll, dass ein Backend-Server das erste Byte eines HTTP-Antworttextes bereitstellt. Dieser Wert wird auch als Timeout zwischen Bytes zum Backend-Server verwendet. |
 
-### Weiterleiten an Edge Delivery Services {#proxying-to-edge-delivery}
+### Proxys zu Edge Delivery Services {#proxying-to-edge-delivery}
 
-Es gibt Szenarien, in denen die Herkunftsauswahl verwendet werden sollte, um den Traffic durch AEM Publish zu AEM Edge Delivery Services zu leiten:
+Es gibt Fälle, in denen Ursprungs-Auswahlen verwendet werden sollten, um Traffic durch AEM Publish zu AEM Edge Delivery Services zu leiten:
 
-* Einige Inhalte werden von einer von AEM Publish verwalteten Domäne bereitgestellt, während andere Inhalte derselben Domäne von Edge Delivery Services bereitgestellt werden
-* Inhalte, die von Edge Delivery Services bereitgestellt werden, profitieren von Regeln, die über die Konfigurationspipeline bereitgestellt werden, einschließlich Traffic-Filterregeln oder Anforderung-/Antworttransformationen
+* Einige Inhalte werden von einer von AEM Publish verwalteten Domain bereitgestellt, während andere Inhalte, die aus derselben Domain stammen, von Edge Delivery Services bereitgestellt werden.
+* Inhalte, die von Edge Delivery Services bereitgestellt werden, würden von Regeln profitieren, die über die Konfigurations-Pipeline bereitgestellt werden, einschließlich Traffic-Filterregeln oder Anfrage-/Reaktionsumwandlungen.
 
-Im Folgenden finden Sie ein Beispiel für eine Ursprungsauswahlregel, mit der Folgendes erreicht werden kann:
+Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 
 ```
 kind: CDN
@@ -341,7 +341,7 @@ data:
 ```
 
 >[!NOTE]
-> Da das von Adobe verwaltete CDN verwendet wird, konfigurieren Sie die Push-Invalidierung in **verwaltet** -Modus, indem Sie den Edge Delivery Services folgen [Dokumentation zur Push-Invalidierung einrichten](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Da das von Adobe verwaltete CDN verwendet wird, konfigurieren Sie die Push-Invalidierung im Modus **managed**. Folgen Sie dazu der [Dokumentation zum Einrichten der Push-Invalidierung](https://www.aem.live/docs/byo-dns#setup-push-invalidation) für Edge Delivery Services.
 
 
 ## Client-seitige Umleitungen {#client-side-redirectors}

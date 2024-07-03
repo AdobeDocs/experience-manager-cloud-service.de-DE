@@ -1,13 +1,13 @@
 ---
 title: Übersicht über den Ablauf der Inhaltsbereitstellung
-description: Erfahren Sie mehr über den Datenfluss bei der Inhaltsbereitstellung und über die Veröffentlichung Ihres Inhalts.
+description: Erfahren Sie mehr über den Datenfluss bei der Inhaltsbereitstellung und darüber, wie Sie Inhalte veröffentlichen.
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 

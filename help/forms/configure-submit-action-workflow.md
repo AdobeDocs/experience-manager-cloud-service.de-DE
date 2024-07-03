@@ -4,12 +4,12 @@ Description: Explore the process of automated workflow initiation with AEM Forms
 keywords: AEM-Workflow, Integrieren eines adaptiven Formulars in einen AEM-Workflow, Aufrufen der AEM-Workflow-Übermittlungsaktion
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
-title: "Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?"
+title: „Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?“
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '657'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

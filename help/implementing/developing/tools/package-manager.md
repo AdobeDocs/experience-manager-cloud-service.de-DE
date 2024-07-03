@@ -5,9 +5,9 @@ feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3772'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -177,7 +177,7 @@ Das Dialogfeld **Paketeinstellungen** ist über die Schaltfläche **Bearbeiten**
 
 Filter identifizieren die Repository-Knoten, die in das Paket eingeschlossen werden sollen. Eine **Filterdefinition** legt die folgenden Informationen fest:
 
-* Die **Stammpfad** des einzuschließenden Inhalts
+* den **Stammpfad** der einzuschließenden Inhalte
 * **Regeln**, durch die spezifische Knoten unterhalb des Stammpfads eingeschlossen oder ausgeschlossen werden
 
 Sie können Regeln mithilfe der Schaltfläche **+** hinzufügen. Sie können Regeln mithilfe der Schaltfläche **-** entfernen.
@@ -190,12 +190,12 @@ Sie können eine oder mehrere Filterdefinitionen für ein Paket definieren. Verw
 
 ![Registerkarte „Filter“](assets/edit-filter.png)
 
-Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als regex, regexp oder rationaler Ausdruck bezeichnet), um alle Knoten anzugeben, die ein- oder ausgeschlossen werden sollen.
+Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als regex, regexp oder rationaler Ausdruck bezeichnet), um alle Knoten anzugeben, die ein- bzw. ausgeschlossen werden sollen.
 
 | Regeltyp | Beschreibung |
 |---|---|
-| include | Include umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die mit dem regulären Ausdruck übereinstimmen. Einschließen **nicht** andere Dateien oder Ordner aus unter dem angegebenen Stammpfad einschließen. |
-| exclude | Ausschließen schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
+| include | „include“ umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die dem regulären Ausdruck entsprechen. „include“ schließt andere Dateien oder Ordner unter dem angegebenen Stammpfad **nicht** mit ein. |
+| exclude | „exclude“ schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
 
 Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
@@ -205,7 +205,7 @@ Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstel
 
 >[!TIP]
 >
->Hintergrundinformationen finden Sie unter [Apache Jackrabbit - Workspace-Filter](https://jackrabbit.apache.org/filevault/filter.html) Dokumentation.
+>Hintergrundinformationen finden Sie in der Dokumentation [Apache Jackrabbit – Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html).
 
 ### Abhängigkeiten {#dependencies}
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Forms Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, d
 
 Diese Dienste ermöglichen Ihnen Folgendes:
 
-* **Erstellen von Registrierungserlebnissen mit den Tools Ihrer Wahl**: Erhöhen Sie die Effizienz beim Authoring durch Entkopplung der Inhaltsquellen. Standardmäßig können Sie die dokumentbasierte Bearbeitung (Microsoft SharePoint oder Google Drive), WYSIWYG Authoring (Universal Editor oder Adaptive Forms Editor) verwenden. Sie können mit mehreren Inhaltsquellen auf derselben Formularsite arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen, Universal Editor oder Adaptive Forms Editor verwenden.
+* **Erstellen von Registrierungserlebnissen mit den Tools Ihrer Wahl**: Erhöhen Sie die Effizienz beim Authoring durch Entkopplung der Inhaltsquellen. Sie können standardmäßig dokumentenbasiertes Authoring (Microsoft SharePoint und Google Drive) und WYSIWYG-Authoring (universeller Editor oder Editor für adaptive Formulare) verwenden. Sie können mit mehreren Inhaltsquellen auf derselben Formular-Site arbeiten und Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen, den universellen Editor oder den Editor für adaptive Formulare verwenden.
 
 * **Bereitstellen außergewöhnlicher digitaler Registrierungserlebnisse:** Stellen Sie digitale Registrierungserlebnisse bereit, die schnell und kontinuierlich geladen und gerendert werden, und überwachen Sie die Performance von Formularen durch eine echte Benutzerüberwachung (Real Use Monitoring, RUM). Schnellere Ladezeiten und ein optimiertes Anwendererlebnis tragen zu höheren Formularabschluss- und Konversionsraten bei.
 
@@ -29,7 +29,7 @@ AEM Forms Edge Delivery Services ermöglicht eine hohe Flexibilität bei der Ers
 
 Sie können beispielsweise Formulare direkt in Microsoft Excel oder Google Tabellen erstellen, und diese Tabellen werden in Formulare für Ihre Website umgewandelt. Alle neuen Formulare oder Formularinhalte, wie z. B. ein neues Formularfeld, stehen sofort auf Ihrer Website zur Verfügung, ohne dass ein Neuerstellungsprozess erforderlich ist.
 
-Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Tabellen (dokumentbasiertes Authoring) bearbeiten und mit Edge Delivery Services veröffentlichen können. Außerdem wird die AEM Veröffentlichungsmethode mit dem WYSIWYG-Authoring (Universal Editor oder Adaptive Forms Editor) angezeigt.
+Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Tabellen (dokumentbasiertes Authoring) bearbeiten und mit Edge Delivery Services veröffentlichen können. Es zeigt auch die AEM-Veröffentlichungsmethode mit WYSIWYG-Authoring (universeller Editor oder Editor für adaptive Formulare).
 
 ![Veröffentlichen in Edge Delivery Services und AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -48,7 +48,7 @@ Die Wahl zwischen [dokumentenbasiertem Authoring](#document-based-authoring-feat
 
 ### Wichtige Funktionen des dokumentenbasierten Authorings und des WYSIWYG-Authorings
 
-Die dokumentbasierte Bearbeitung bietet eine Reihe grundlegender Funktionen und die WYSIWYG-Bearbeitung bietet zusätzliche Funktionen, die über die dokumentbasierte Bearbeitung hinausgehen. So können Sie komplexere und interaktive Formulare erstellen. Die wichtigsten Funktionen des dokumentenbasierten Authorings und des WYSIWYG-Authorings sind:
+Das dokumentenbasierte Authoring bietet eine Reihe grundlegender Funktionen, während das WYSIWYG-Authoring zusätzliche Funktionen bietet, die über das dokumentenbasierte Authoring hinausgehen. So können Sie komplexere und interaktive Formulare erstellen. Die wichtigsten Funktionen des dokumentenbasierten Authorings und des WYSIWYG-Authorings sind:
 
 #### Funktionen des dokumentbasierten Authorings
 
@@ -65,7 +65,7 @@ Mit dem dokumentbasierten Authoring können Sie Formulare mit vertrauten Tools w
 
 #### Funktionen des WYSIWYG-Authorings
 
-WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive Forms Editor) zum Erstellen von Formularen und bietet alle Funktionen der dokumentbasierten Bearbeitung sowie eine Vielzahl zusätzlicher Funktionen:
+Das WYSIWYG-Authoring bietet WYSIWYG-Schnittstellen (den universellen Editor und den Editor für adaptive Formulare) zum Erstellen von Formularen. Es bietet alle Funktionen des dokumentenbasierten Authorings sowie eine Vielzahl zusätzlicher Funktionen:
 
 * Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
 * Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
@@ -77,9 +77,9 @@ WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive F
 * Formulardatenmodell (FDM) zum Definieren der Datenstruktur und der Interaktionen mit verschiedenen Datenquellen.
 * Möglichkeit zur Wahl zwischen mehreren Sendeaktionen für die Verarbeitung von Formularübermittlungen, darunter die Übermittlung von Daten an Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics und viele weiteren Datenquellen.
 
-Die oben genannten Funktionen sind auch über den adaptiven Forms-Editor verfügbar.
+Alle oben genannten Funktionen sind auch über den Editor für adaptive Formulare verfügbar.
 
-WYSIWYG Authoring (Universal Editor und [Adaptiver Forms-Editor](/help/forms/creating-adaptive-form-core-components.md)) basiert auf der Grundlage von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/create-forms.md), mit einem erweiterten Toolkit für die Erstellung und Verwaltung komplexer Formulare.
+Im Wesentlichen baut das WYSIWYG-Authoring (universeller Editor und [Editor für adaptive Formulare](/help/forms/creating-adaptive-form-core-components.md)) auf der Grundlage des [dokumentenbasierten Authorings](/help/edge/docs/forms/create-forms.md) auf, mit einem erweiterten Toolkit für die Erstellung und Verwaltung komplexer Formulare.
 
 >[!NOTE]
 >

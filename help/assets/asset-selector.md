@@ -5,9 +5,9 @@ contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
 source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4725'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Der Asset-Selektor bietet viele Vorteile, z. B.:
 Sie müssen die folgenden Kommunikationsmethoden sicherstellen:
 
 * Die Anwendung wird unter HTTPS ausgeführt.
-* Die URL der Anwendung in der Zulassungsliste der Umleitungs-URLs durch den IMS-Client.
+* Die URL der Anwendung befindet sich in der Zulassungsliste der Umleitungs-URLs des IMS-Clients.
 * Der IMS-Anmeldefluss wird mithilfe eines Popup-Fensters im Webbrowser konfiguriert und gerendert. Daher sollten Popup-Fenster im Ziel-Browser aktiviert oder zugelassen werden.
 
 Wenden Sie die oben genannten Voraussetzungen an, wenn Sie einen IMS-Authentifizierungs-Workflow des Asset-Wählers benötigen. Wenn Sie bereits mit dem IMS-Workflow authentifiziert sind, können Sie stattdessen die IMS-Informationen hinzufügen.
@@ -57,7 +57,7 @@ Wenden Sie die oben genannten Voraussetzungen an, wenn Sie einen IMS-Authentifiz
 > Dieses Repository dient als zusätzliche Dokumentation, die die verfügbaren APIs und Anwendungsbeispiele für die Integration des Asset-Wählers beschreibt. Bevor Sie versuchen, den Asset-Wähler zu installieren oder zu verwenden, stellen Sie sicher, dass Ihr Unternehmen Zugriff auf den Asset-Wähler im Experience Manager Assets as a Cloud Service-Profil erhalten hat. Wenn diese Komponenten noch nicht bereitgestellt wurden, können Sie sie weder integrieren noch verwenden. Um die Bereitstellung anzufordern, sollten Ihre Programmadmins ein Support-Ticket erstellen, das von Admin Console als P2 gekennzeichnet ist, und die folgenden Informationen einschließen:
 >
 >* Domain-Namen, auf denen die integrierende Anwendung gehostet wird.
->* Nach der Bereitstellung wird Ihr Unternehmen mit `imsClientId`, `imsScope`und ein `redirectUrl` entspricht der Umgebung, die Sie anfordern, die für die Konfiguration der Asset-Auswahl erforderlich ist. Ohne diese gültigen Eigenschaften können Sie die Installationsschritte nicht ausführen.
+>* Nach der Bereitstellung wird Ihrem Unternehmen entsprechend der von Ihnen angeforderten Umgebung `imsClientId`, `imsScope` und eine `redirectUrl` bereitgestellt. Diese Elemente sind für die Konfiguration des Asset-Wählers erforderlich. Ohne diese gültigen Eigenschaften können Sie die Installationsschritte nicht ausführen.
 
 ## Installation {#installation}
 
@@ -108,7 +108,7 @@ Sie können den Asset-Wähler mit verschiedenen Anwendungen integrieren, z. B.:
 
 * [Integrieren des Asset-Wählers mit einer [!DNL Adobe] -Anwendung](#adobe-app-integration-vanilla)
 * [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](#adobe-non-app-integration)
-* [Integration von Dynamic Media mit OpenAPI-Funktionen](#adobe-app-integration-polaris)
+* [Integrieren in Dynamic Media mit OpenAPI-Funktionen](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -276,7 +276,7 @@ Der Asset-Wähler unterstützt die Authentifizierung für das [!DNL Experience M
 
 ### Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung {#adobe-non-app-integration}
 
-Um die Asset-Auswahl in eine Nicht-Adobe-Anwendung zu integrieren, müssen Sie verschiedene Validierungen durchführen, z. B. Protokollierung eines Support-Tickets, Integration usw.
+Um den Asset-Wähler mit einer Nicht-Adobe-Anwendung zu integrieren, müssen Sie verschiedene Validierungen durchführen, wie die Protokollierung eines Support-Tickets, Integration usw.
 
 +++**Konfigurieren des Asset-Wählers für eine Nicht-Adobe-Anwendung**
 Um den Asset-Wähler für eine Nicht-Adobe-Anwendung zu konfigurieren, müssen Sie zunächst ein Support-Ticket für die Bereitstellung einreichen und dann die Integrationsschritte befolgen.
@@ -396,37 +396,37 @@ Der Asset-Wähler wird im Container-Element `<div>` gerendert, wie in *Zeile 74*
 
 <!--Integration with Polaris application content starts here-->
 
->[!TAB Integration von Dynamic Media mit OpenAPI-Funktionen]
+>[!TAB Integration in Dynamic Media mit OpenAPI-Funktionen]
 
 ### Voraussetzungen {#prereqs-polaris}
 
-Verwenden Sie die folgenden Voraussetzungen, wenn Sie Asset Selector mit Dynamic Media mit OpenAPI-Funktionen integrieren:
+Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler in Dynamic Media mit OpenAPI-Funktionen integrieren:
 
 * [Kommunikationsmethoden](#prereqs)
-* Für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen benötigen Sie Lizenzen für:
-   * Assets-Repository (z. B. Experience Manager Assets as a Cloud Service).
-   * AEM Dynamic Media.
-* Nur [genehmigte Assets](#approved-assets.md) sind zur Verwendung verfügbar, um Markenkonsistenz zu gewährleisten.
+* Für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen benötigen Sie folgende Lizenzen:
+   * Assets-Repository (z. B. Experience Manager Assets as a Cloud Service)
+   * AEM und Dynamic Media.
+* Nur [genehmigte Assets](#approved-assets.md) zur Verwendung verfügbar, um die Markenkonsistenz sicherzustellen.
 
-### Integration von Dynamic Media mit OpenAPI-Funktionen{#adobe-app-integration-polaris}
+### Integrieren in Dynamic Media mit OpenAPI-Funktionen{#adobe-app-integration-polaris}
 
-Die Integration der Asset-Auswahl in den OpenAPI-Prozess von Dynamic Media umfasst verschiedene Schritte, darunter das Erstellen einer benutzerdefinierten Dynamic Media-URL oder die Auswahl der URL für dynamische Medien usw.
+Die Integration des Asset-Wählers mit dem OpenAPI-Prozess von Dynamic Media umfasst verschiedene Schritte, darunter die Erstellung einer benutzerdefinierten oder auswahlbereiten Dynamic Media-URL.
 
-+++**Integrieren der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen**
++++**Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen**
 
-Die `rootPath` und `path` -Eigenschaften sollten nicht Teil der Dynamic Media mit OpenAPI-Funktionen sein. Stattdessen können Sie die `aemTierType` -Eigenschaft. Die folgende Syntax lautet der Konfiguration:
+Die Eigenschaften `rootPath` und `path` sollten nicht Teil von Dynamic Media mit OpenAPI-Funktionen sein. Stattdessen können Sie die Eigenschaft `aemTierType` konfigurieren. Die Syntax der Konfiguration ist wie folgt:
 
 ```
 aemTierType:[1: "delivery"]
 ```
 
-Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie unter `aemTierType` Eigenschaft unter [Asset-Auswahleigenschaften](#asset-selector-properties)
+Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie im Abschnitt [Eigenschaften des Asset-Wählers](#asset-selector-properties) unter der Eigenschaft `aemTierType`.
 
 +++
 
-+++**Erstellen einer dynamischen Bereitstellungs-URL aus genehmigten Assets**
-Nachdem Sie die Asset-Auswahl eingerichtet haben, wird ein Objektschema verwendet, um eine Dynamic Delivery-URL aus den ausgewählten Assets zu erstellen.
-Beispiel: ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
++++**Erstellen einer dynamischen Versand-URL anhand genehmigter Assets**
+Nachdem Sie den Asset-Wähler eingerichtet haben, wird ein Objektschema verwendet, um eine dynamische Versand-URL anhand der genehmigten Assets zu erstellen.
+Hier ist ein Beispiel für ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
 
 ```
 {
@@ -438,7 +438,7 @@ Beispiel: ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl
 }
 ```
 
-Alle ausgewählten Assets werden von `handleSelection` -Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Anbieter erstellt:
+Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
 
 | Objekt | JSON |
 |---|---|
@@ -453,29 +453,29 @@ Alle ausgewählten Assets werden von `handleSelection` -Funktion, die als JSON-O
 URL-Format:
 `https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
-Wo
+Dabei gilt Folgendes:
 
-* Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API-Stamm ist `"/adobe/dynamicmedia/deliver"`
-* `<asset-id>` ist Asset-ID
-* `<seo-name>` ist der Name eines Assets
-* `<format>` das Ausgabeformat
-* `<image modification query parameters>` als Unterstützung durch die Bereitstellungs-API-Spezifikation der genehmigten Assets
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
+* Der API-Stamm lautet `"/adobe/dynamicmedia/deliver"`.
+* `<asset-id>` ist die Asset-Kennung.
+* `<seo-name>` ist der Name eines Assets.
+* `<format>` ist das Ausgabeformat.
+* `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt.
 
 **API zur Bereitstellung genehmigter Assets**
 
 Die dynamische Versand-URL weist die folgende Syntax auf:
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, wobei
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, wobei Folgendes gilt:
 
-* Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API-Stamm für die Bereitstellung der Original-Ausgabe ist `"/adobe/assets/deliver"`
-* `<asset-id>` ist die Asset-ID
-* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann oder nicht
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
+* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets/deliver"`.
+* `<asset-id>` ist die Asset-Kennung.
+* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann.
 
 +++
 
-+++**Dynamische Versand-URL auswählen**
-Alle ausgewählten Assets werden von `handleSelection` -Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Anbieter erstellt:
++++**Auswahlbereite dynamische Versand-URL**
+Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Zum Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
 
 | Objekt | JSON |
 |---|---|
@@ -484,16 +484,17 @@ Alle ausgewählten Assets werden von `handleSelection` -Funktion, die als JSON-O
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
-Im Folgenden finden Sie zwei Möglichkeiten, das JSON-Objekt zu durchlaufen:
+Im Folgenden werden die beiden Möglichkeiten zum Durchlaufen des JSON-Objekts beschrieben:
 
-![Dynamische Bereitstellungs-URL](assets/dynamic-delivery-url.png)
+![Dynamische Versand-URL](assets/dynamic-delivery-url.png)
 
-* **Miniaturansicht:** Bei Miniaturansichten kann es sich um Bilder und Assets wie PDF, Video, Bilder usw. handeln. Sie können jedoch die Höhe- und Breitenattribute der Miniaturansicht eines Assets als dynamische Ausgabedarstellung für die Bereitstellung verwenden.
-Der folgende Satz von Ausgabeformaten kann für Assets vom Typ PDF verwendet werden: Sobald ein PDF im Sidekick ausgewählt ist, bietet der Auswahlkontext die folgenden Informationen. Im Folgenden finden Sie die Möglichkeit, das JSON-Objekt zu durchlaufen:
+* **Miniaturansicht:** Bei Miniaturansichten kann es sich um Bilder und Assets wie PDF, Videos usw. handeln. Sie können jedoch die Höhe- und Breitenattribute der Miniaturansicht eines Assets als Ausgabedarstellung für die dynamische Bereitstellung verwenden.
+Der folgende Satz von Ausgabedarstellungen kann für Assets vom Typ PDF verwendet werden:
+Sobald eine PDF-Datei im Sidekick ausgewählt ist, bietet der Auswahlkontext die folgenden Informationen. Nachstehend wird beschrieben, wie Sie das JSON-Objekt durchlaufen:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
 
-  Weitere Informationen finden Sie unter `selection[0].....selection[4]` für das Array des Ausgabedarstellungs-Links aus dem obigen Screenshot. Die Haupteigenschaften einer der Ausgabeformate für Miniaturansichten umfassen beispielsweise:
+  Im Screenshot oben finden Sie unter `selection[0].....selection[4]` den Link für das Array der Ausgabedarstellung. Die Haupteigenschaften einer der Miniaturausgabedarstellungen umfassen beispielsweise Folgendes:
 
   ```
   { 
@@ -504,9 +505,9 @@ Der folgende Satz von Ausgabeformaten kann für Assets vom Typ PDF verwendet wer
   } 
   ```
 
-Im obigen Screenshot muss die Bereitstellungs-URL der Original-Ausgabedarstellung des PDF in das Zielerlebnis integriert werden, wenn eine PDF erforderlich ist, und nicht in die Miniaturansicht. Beispiel: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PDF-Datei in das Zielerlebnis integriert werden, wenn eine PDF-Datei erforderlich ist und nicht ihre Miniaturansicht. Zum Beispiel: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
-* **Video:** Sie können die Videoplayer-URL für die Videotyp-Assets verwenden, die einen eingebetteten iFrame verwenden. Sie können die folgenden Array-Ausgabedarstellungen im Zielerlebnis verwenden:
+* **Video:** Sie können die Video-Player-URL für die Assets vom Typ „Video“ verwenden, die einen eingebetteten iFrame verwenden. Sie können die folgenden Array-Ausgabedarstellungen im Zielerlebnis verwenden:
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -518,41 +519,41 @@ Im obigen Screenshot muss die Bereitstellungs-URL der Original-Ausgabedarstellun
   } 
   ```
 
-  Weitere Informationen finden Sie unter `selection[0].....selection[4]` für das Array des Ausgabedarstellungs-Links aus dem obigen Screenshot. Die Haupteigenschaften einer der Ausgabeformate für Miniaturansichten umfassen beispielsweise:
+  Im Screenshot oben finden Sie unter `selection[0].....selection[4]` den Link für das Array der Ausgabedarstellung. Die Haupteigenschaften einer der Miniaturausgabedarstellungen umfassen beispielsweise Folgendes:
 
-  Das Codefragment im obigen Screenshot ist ein Beispiel für ein Video-Asset. Es enthält das Array der Ausgabedarstellungs-Links. Die `selection[5]` im Auszug ist das Beispiel einer Bildminiatur, die als Platzhalter für die Videominiatur im Zielerlebnis verwendet werden kann. Die `selection[5]` im Array der Ausgabedarstellungen für den Videoplayer. Dies dient als HTML und kann als `src` des iFrames. Es unterstützt das Streaming mit adaptiver Bitrate, bei dem es sich um eine Web-optimierte Bereitstellung des Videos handelt.
+  Das Code-Fragment im obigen Screenshot ist ein Beispiel für ein Video-Asset. Es enthält das Array der Ausgabedarstellungs-Links. `selection[5]` im Auszug ist das Beispiel für die Miniaturansicht eines Bildes, die als Platzhalter für die Miniaturansicht eines Videos im Zielerlebnis verwendet werden kann. `selection[5]` im Array der Ausgabedarstellungen ist für den Video-Player vorgesehen. Dies dient als HTML und kann als `src` des iFrames festgelegt werden. Es unterstützt das Streaming mit adaptiver Bitrate (die Web-optimierte Bereitstellung des Videos).
 
-  Im obigen Beispiel lautet die URL des Videoplayers `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  Im obigen Beispiel lautet die URL des Video-Players wie folgt: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
-+++**Benutzeroberfläche der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen**
++++**Benutzeroberfläche des Asset-Wählers für Dynamic Media mit OpenAPI-Funktionen**
 
-Nach der Integration mit der Adobes Micro-Frontend-Asset-Auswahl können Sie die Asset-Nur-Struktur aller genehmigten Assets sehen, die im Experience Manager-Asset-Repository verfügbar sind.
+Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie die reine Asset-Struktur aller genehmigten Assets sehen, die im Experience Manager-Asset-Repository verfügbar sind.
 
 ![Benutzeroberfläche von Dynamic Media mit OpenAPI-Funktionen](assets/polaris-ui.png)
 
 * **A**: [Bedienfeld aus-/einblenden](#hide-show-panel)
 * **B**: [Assets](#repository)
-* **C**: [Sortierung](#sorting)
+* **C**: [Sortieung](#sorting)
 * **D**: [Filter](#filters)
 * **E**: [Suchleiste](#search-bar)
-* **F**: [Sortieren in auf- oder absteigender Reihenfolge](#sorting)
+* **G**: [Sortierung in auf- oder absteigender Reihenfolge](#sorting)
 * **G**: Auswahl abbrechen
-* **H**: Auswählen einzelner oder mehrerer Assets
+* **H**: Einzelne oder mehrere Assets auswählen
 
 +++
 
-+++**Benutzerdefinierte Filter konfigurieren**
-Mit der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die `filterSchema` -Eigenschaft zum Konfigurieren solcher Eigenschaften verwendet wird. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` mit denen die Filter konfiguriert werden können, wobei
++++**Konfigurieren benutzerdefinierter Filter**
+Mit dem Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die Eigenschaft `filterSchema` wird zum Konfigurieren solcher Eigenschaften verwendet. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht werden, womit die Filter konfiguriert werden können. Dabei gilt Folgendes:
 
-* `metadata` ist die Information eines Assets
-* `embedded` ist der statische Parameter, der für die Konfiguration verwendet wird, und
-* `<propertyname>` ist der von Ihnen konfigurierte Filtername
+* Bei `metadata` handelt es sich um die Informationen eines Assets.
+* Bei `embedded` handelt es sich um den statischen Parameter, der für die Konfiguration verwendet wird.
+* Bei `<propertyname>` handelt es sich um den Filternamen, den Sie konfigurieren.
 
-Für die Konfiguration werden Eigenschaften definiert unter `jcr:content/metadata/` Ebene wird als `metadata.<metadata bucket>.<property name>.` für die Filter, die Sie konfigurieren möchten.
+Für die Konfiguration werden die auf Ebene `jcr:content/metadata/` definierten Eigenschaften für die zu konfigurierenden Filter als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht.
 
-Beispiel: In der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen ist eine Eigenschaft auf `asset jcr:content/metadata/client_name:market` in `metadata.embedded.client_name:market` für die Filterkonfiguration.
+Beispielsweise wird im Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen eine Eigenschaft unter `asset jcr:content/metadata/client_name:market` für die Filterkonfiguration in `metadata.embedded.client_name:market` umgewandelt.
 
-Um den Namen zu erhalten, muss eine einmalige Aktivität durchgeführt werden. Führen Sie einen Such-API-Aufruf für das Asset aus und rufen Sie den Eigenschaftsnamen ab (im Grunde der Behälter).
+Um den Namen abzurufen, muss eine einmalige Aktivität durchgeführt werden. Führen Sie einen Such-API-Aufruf für das Asset aus und rufen Sie den Eigenschaftsnamen (also den Bucket) ab.
 
 +++
 
@@ -564,7 +565,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 
 | Eigenschaft | Typ | Erforderlich | Standard | Beschreibung |
 |---|---|---|---|---|
-| *Leiste* | Boolesch | Nein | Falsch | Wenn als `true` markiert, wird der Asset-Wähler in der linken Leistenansicht gerendert. Wenn als `false` markiert, wird der Asset-Wähler in der modalen Ansicht gerendert. |
+| *Leiste* | Boolesch | Nein | false | Wenn als `true` markiert, wird der Asset-Wähler in der linken Leistenansicht gerendert. Wenn als `false` markiert, wird der Asset-Wähler in der modalen Ansicht gerendert. |
 | *imsOrg* | Zeichenfolge | Ja | | Die Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] für Ihre Organisation zugewiesen wird. Der `imsOrg`-Schlüssel ist erforderlich, damit authentifiziert wird, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
 | *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendeter IMS-Bearer-Token. Das `imsToken` ist erforderlich, wenn Sie eine [!DNL Adobe]-Anwendung für die Integration verwenden. |
 | *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. Der `apiKey` ist erforderlich, wenn Sie eine Integration mit einer [!DNL Adobe]-Anwendung verwenden. |
@@ -586,7 +587,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn Benutzende andere Filterkriterien ändern. |
 | *selectionType* | Zeichenfolge | Nein | Einzelperson | Konfiguration für `single`- oder `multiple`-Auswahl von Assets auf einmal. |
 | *dragOptions.allowList* | Boolesch | Nein | | Die Eigenschaft wird verwendet, um das Drag-and-Drop von nicht auswählbaren Assets zuzulassen oder zu verweigern. |
-| *aemTierType* | Zeichenfolge | Nein | | Sie können damit festlegen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder beiden Ebenen angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0: "author" 1: "delivery"` <br><br> Wenn zum Beispiel beide `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für Autor und Bereitstellung an. <br> Darüber hinaus können Sie `["delivery"]` für die bereitstellungsbezogenen Assets in der Dynamic Media mit OpenAPI-Funktionen. |
+| *aemTierType* | Zeichenfolge | Nein | | Sie können damit festlegen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder beiden Ebenen angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0: "author" 1: "delivery"` <br><br> Wenn zum Beispiel beide Ebenen `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für „author“ und „delivery“ an. <br> Darüber hinaus können Sie `["delivery"]` für die bereitstellungsbezogenen Assets in Dynamic Media mit OpenAPI-Funktionen verwenden. |
 | *handleNavigateToAsset* | Funktion | Nein | | Es handelt sich um eine Rückruffunktion, die die Auswahl eines Assets verarbeitet. |
 | *noWrap* | Boolesch | Nein | | Die Eigenschaft *noWrap* hilft beim Rendern des Asset-Wählers im Bedienfeld der Seitenleiste. Wenn diese Eigenschaft nicht erwähnt wird, wird standardmäßig die *Dialogfeldansicht* gerendert. |
 | *dialogSize* | Klein, mittelgroß, groß, Vollbild oder Vollbild-Übernahme | Zeichenfolge | Optional | Sie können das Layout kontrollieren, indem Sie dessen Größe mithilfe der angegebenen Optionen festlegen. |
@@ -604,7 +605,7 @@ Sie können die Asset-Selektor-[Eigenschaften](#asset-selector-properties) in de
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-Wenn der Wert `rail` des Asset-Wählers auf `false` gesetzt ist oder in den Eigenschaften nicht erwähnt wird, wird der Asset-Wähler standardmäßig in der Modal-Ansicht angezeigt. Die `acvConfig` -Eigenschaft wird verwendet, um die Schienenansicht des Asset-Viewers zu aktivieren. Lesen Sie [Aktivieren oder Deaktivieren von Drag-and-Drop](#enable-disable-drag-and-drop), um zu erfahren, wie die Eigenschaft `acvConfig` verwendet wird.
+Wenn der Wert `rail` des Asset-Wählers auf `false` gesetzt ist oder in den Eigenschaften nicht erwähnt wird, wird der Asset-Wähler standardmäßig in der Modal-Ansicht angezeigt. Mit der Eigenschaft `acvConfig` wird die Leistenansicht des Asset-Viewers aktiviert. Lesen Sie [Aktivieren oder Deaktivieren von Drag-and-Drop](#enable-disable-drag-and-drop), um zu erfahren, wie die Eigenschaft `acvConfig` verwendet wird.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property

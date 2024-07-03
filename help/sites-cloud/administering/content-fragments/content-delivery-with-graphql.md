@@ -6,9 +6,9 @@ role: Developer, Architect
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -103,9 +103,9 @@ Die **[Fragmentreferenz](/help/sites-cloud/administering/content-fragments/conte
 
 ## Analysieren der Struktur von Inhaltsfragmenten {#analyzing-content-fragments-structure}
 
-Um die Analyse zu unterstützen, bietet AEM mehrere Methoden, die Struktur Ihrer Fragmente aus dem [Inhaltsfragmente-Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+Um die Analyse zu unterstützen, bietet AEM mehrere Methoden, um die Struktur Ihrer Fragmente über den [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) anzuzeigen.
 
-Siehe [Analysieren der Struktur von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/analysis.md) Weitere Informationen:
+Weitere Informationen finden Sie unter [Analysieren der Struktur von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/analysis.md):
 
 * [Baumstruktur](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 

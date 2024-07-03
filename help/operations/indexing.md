@@ -5,9 +5,9 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
 source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2449'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Für jedes Inhaltspaket mit Indexdefinitionen sollten die folgenden Eigenschaften in der `properties.xml` -Datei des Inhaltspakets. `properties.xml` wird standardmäßig in einem neuen Paket erstellt und befindet sich unter `<package_name>/META-INF/vault/properties.xml`:
+>Für jedes Inhaltspaket, das Indexdefinitionen enthält, sollten die folgenden Eigenschaften in der Datei `properties.xml` des Inhaltspakets festgelegt sein. `properties.xml` wird standardmäßig in einem neuen Paket erstellt und ist unter `<package_name>/META-INF/vault/properties.xml` abgelegt:
 >
 > * `noIntermediateSaves=true`
 >
