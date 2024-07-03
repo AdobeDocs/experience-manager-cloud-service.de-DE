@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '752'
 ht-degree: 79%
 
 ---
@@ -52,9 +52,6 @@ Die Funktionsaktivierung in 2024.6.0 bietet den vollen Funktionsumfang für dies
 * SCRNS-4194: Entfernen der Abhängigkeit von Google Guava-APIs.
 * SCRNS-4360: Fehlende Schaltfläche „Veröffentlichung verwalten und Quick Publish“ für Benutzende ohne Administratorrechte im Inhaltsanbieter für Kanäle.
 * SCRNS-4323: Ausblenden/Deaktivieren von Launches aus screens.html.
-
-#### Forms
-
 * FORMS-14844: Adaptive Forms ermöglicht die Übermittlung von Formularen trotz fehlerhafter reCAPTCHA-Überprüfung.
 * FORMS-14984: Forms mit CAPTCHA überspringt die Validierung, wenn &quot;submitMetaData&quot;in den gesendeten Daten fehlt.
 * FORMS-14477: Die Optionen &quot;Is After&quot;und &quot;Is Before&quot;im Regeleditor funktionieren bei der Datumsauswahl-Validierung nicht mehr.
