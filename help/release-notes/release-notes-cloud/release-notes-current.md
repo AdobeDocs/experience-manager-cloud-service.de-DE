@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
 workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.6.0) war der Freitag, 27. Juni 2024. Die nächste Version (2024.7.0) ist für den Freitag, 25. Juli 2024 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.6.0) war der 27. Juni 2024. Die nächste Version (2024.7.0) ist für den 25. Juli 2024 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -44,9 +44,9 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ### Neue Funktion in Experience Manager Sites {#new-feature-sites}
 
-**Datendienst zur Überwachung der tatsächlichen Verwendung (RUM)** {#real-use-monitoring}
+**Real Use Monitoring-Datendienst (RUM)** {#real-use-monitoring}
 
-Die [Datendienst zur Überwachung der tatsächlichen Verwendung (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) ist jetzt allgemein verfügbar und ermöglicht die clientseitige Datenerfassung für AEM as a Cloud Service. Dieser Dienst bietet eine genauere Darstellung der Benutzerinteraktionen und gewährleistet eine zuverlässige Messung der Website-Interaktion. Es bietet Kunden erweiterte Einblicke in ihren Seiten-Traffic und ihre Leistung und bietet eine wertvolle Gelegenheit, die Seitenleistung zu verstehen und zu verbessern.
+Der [Real Use Monitoring-Datendienst (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) ist jetzt allgemein verfügbar und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service. Dieser Dienst gibt Benutzerinteraktionen genauer wieder und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Er liefert Kundinnen und Kunden erweiterte Einblicke in den Traffic und die Performance ihrer Seite. Damit bietet er eine wertvolle Möglichkeit, die Seiten-Performance zu verstehen und zu optimieren.
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
@@ -76,7 +76,7 @@ Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für d
 
 **Dynamic Media mit OpenAPI-Funktionen**
 
-Dynamic Media mit OpenAPI-Funktionen erweitert das DAM über Adobe- und Drittanbieteranwendungen hinweg und ermöglicht den Zugriff auf markenbestätigte digitale Assets in jedem Kanal über den Asset-Selektor oder den OpenAPI-Stapel. Wichtigste Grundsätze: keine Binärkopien, Assets werden für schnelle Performance optimiert und umgewandelt, Assets werden öffentlich bzw. sicher bereitgestellt.
+Dynamic Media mit OpenAPI-Funktionen erweitert das DAM über Adobe- und Drittanbieteranwendungen hinweg und ermöglicht den Zugriff auf markenbestätigte digitale Assets in jedem Kanal über den Asset-Wähler oder OpenAPI-Stapel. Wichtigste Grundsätze: keine Binärkopien, Assets werden für schnelle Performance optimiert und umgewandelt, Assets werden öffentlich bzw. sicher bereitgestellt.
 
 ![Neues Dynamic Media-Datenflussdiagramm](/help/assets/assets/dm-openapi-dfd.png)
 
@@ -85,15 +85,15 @@ Dynamic Media mit OpenAPI-Funktionen erweitert das DAM über Adobe- und Drittanb
 
 **Weitere Optionen sind im Assets Insights-Dashboard verfügbar**
 
-Die Asset-Anzahl nach Asset-Typ und -Größe ist jetzt im Assets Insights-Dashboard verfügbar. Diese Optionen liefern Echtzeitdaten in Ihrer Assets-Ansichtsumgebung. Sie geben die Anzahl und den Prozentsatz der Assets nach Größenbereich und Asset-Typ an.
+Die Asset-Anzahl nach Asset-Typ und -Größe ist jetzt im Assets Insights-Dashboard verfügbar. Diese Optionen liefern Echtzeitdaten in Ihrer Assets-Ansichtsumgebung. Sie geben die Anzahlen und Prozentsätze der Assets nach Größenbereich und Asset-Typ an.
 
-**Aktualisierungen des eingebetteten Adobe Expreß-Editors**
+**Aktualisierungen des eingebetteten Adobe Express-Editors**
 
-* Verbessertes Benutzererlebnis beim Speichern als neues Asset im Vergleich zum Speichern als neue Version.
+* Optimiertes Benutzererlebnis beim Speichern als neues Asset im Vergleich zum Speichern als neue Version.
 
-* Exportieren mehrseitiger Express-Dokumente (bisher wurde nur eine Einzelseite unterstützt) sowohl in mehrseitiger PDF- als auch in Bildformaten. Durch die Auswahl von Bildformaten wird jede Seite als separates Asset im DAM für die nachgelagerte Verteilung gespeichert.
+* Exportieren mehrseitiger Express-Dokumente (bisher wurden nur einzelne Seiten unterstützt) sowohl in mehrseitige PDF-Dateien als auch in Bildformate. Bei der Auswahl von Bildformaten wird jede Seite als separates Asset im DAM für die nachgelagerte Verteilung gespeichert.
 
-* Unterstützung für das Hinzufügen von Metadaten im Dialogfeld Speichern beim Speichern eines Assets.
+* Unterstützung für das Hinzufügen von Metadaten im Dialogfeld „Speichern“ beim Speichern eines Assets.
 
 <!--
 
@@ -120,15 +120,15 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare
 
-Mit dieser Version wird der Visual Rule Editor für adaptive Formulare, die auf Kernkomponenten basieren, erheblich aktualisiert. Sie haben nun die folgenden Möglichkeiten:
+Diese Version umfasst ein bedeutendes Upgrade des visuellen Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren. Sie haben nun die folgenden Möglichkeiten:
 
-* Erstellen Sie Regeln im visuellen Regeleditor für [Überschreiben der standardmäßigen Erfolgs-/Fehlermeldungen bei der Formularübermittlung](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Erstellen Sie Regeln im visuellen Regeleditor, um die [Standard-Nachrichten zur erfolgreichen/fehlerhaften Formularübermittlung zu überschreiben](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * Im Regeleditor für adaptive Formulare wurde die Möglichkeit hinzugefügt, [verschiedene Feldtypen für den WHEN-Vorgang auszuwählen](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
 * Autorinnen und Autoren von Formularen können jetzt benutzerdefinierte Funktionen anwenden, um [Daten vor der Übermittlung vorab zu verarbeiten](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
-* Verwenden Sie die Funktion [**Als Entwurf speichern**](/help/forms/save-core-component-based-form-as-draft.md) zum Speichern teilweise ausgefüllter Formulare für eine spätere Übermittlung. Diese Funktion ist nützlich in Szenarien, in denen Benutzer das Ausfüllen eines Formulars unterbrechen und später zu ihm zurückkehren müssen.
+* Verwenden Sie die Funktion [**Als Entwurf speichern**](/help/forms/save-core-component-based-form-as-draft.md) zum Speichern teilweise ausgefüllter Formulare für eine spätere Übermittlung. Diese Funktion ist in Szenarien nützlich, in denen Benutzende das Ausfüllen eines Formulars unterbrechen und später fortsetzen müssen.
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -138,59 +138,59 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 #### Verbesserte Bot-Schutzmethoden
 
-In AEM Forms wurden die Sicherheitsfunktionen verbessert, indem jetzt zwei gängige CAPTCHA-Lösungen unterstützt werden: Cloudflare Turnstile und hCaptcha. Diese Funktion ergänzt die vorhandene Google reCAPTCHA und bietet Benutzern zusätzliche Optionen. Dadurch wird die Flexibilität erhöht, ihre Formulare vor Bots und Spam-Einsendungen zu schützen.
+In AEM Forms wurden die Sicherheitsfunktionen verbessert, indem jetzt zwei gängige CAPTCHA-Lösungen unterstützt werden: Cloudflare Turnstile und hCaptcha. Diese Funktion ergänzt das vorhandene Google reCAPTCHA und bietet Benutzenden zusätzliche Optionen. Sie erhöht die Flexibilität beim Schutz von Formularen vor Bots und Spam-Übermittlungen.
 
-* **Cloudflare Turnstile**: Dieses reibungslose CAPTCHA überprüft Benutzer anhand einer einfachen Herausforderung, die keine explizite Interaktion erfordert. Es lässt sich nahtlos in Ihre Formulare integrieren und verbessert so das Benutzererlebnis.
+* **Cloudflare Turnstile**: Dieses reibungslose CAPTCHA überprüft Benutzende anhand einer einfachen Aufgabe, die keine explizite Interaktion erfordert. Es lässt sich nahtlos in Ihre Formulare integrieren und verbessert so das Benutzererlebnis.
 * **hCaptcha**: Dieses datenschutzorientierte CAPTCHA bietet eine benutzerfreundliche Alternative mit dem Schwerpunkt auf Datenschutz. Ziel ist es, ein Gleichgewicht zwischen Sicherheit und Benutzererlebnis herzustellen.
 * **Google reCAPTCHA**: AEM Forms unterstützt weiterhin sowohl reCAPTCHA v2 als auch reCAPTCHA Enterprise und bietet damit eine zuverlässige und bewährte Lösung.
 
 Durch die Bereitstellung mehrerer CAPTCHA-Optionen haben Sie in AEM Forms die Möglichkeit, die Lösung auszuwählen, die Ihren spezifischen Anforderungen am besten entspricht.
 
-Sind Sie bereit, diese CAPTCHA-Lösungen in Ihre adaptive Forms zu integrieren? In der Dokumentation zu Adobe finden Sie detaillierte Anweisungen zu jedem [Cloudflare Turnstile](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), und [Google reCAPTCHA](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Sind Sie bereit, eine dieser CAPTCHA-Lösungen in Ihre adaptiven Formulare zu integrieren? In der Dokumentation von Adobe finden Sie detaillierte Anweisungen zu jedem Thema: [Cloudflare Turnstile](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) und [Google reCAPTCHA](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms-Dienst
 
 Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Er kann auch verwendet werden, um Daten in ein vorhandenes interaktives PDF-Formular zu importieren oder daraus zu exportieren und um gesendete Daten zu validieren. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
 
-* **Rendern von Formularen**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und (optional) mit XML-Daten erstellt wurde. Diese Funktion erzeugt ein ausfüllbares PDF-Formular, optional vorausgefüllt mit Daten.
+* **Rendern von Formularen**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und (optional) mit XML-Daten erstellt wurde. Mit dieser Funktion wird ein ausfüllbares PDF-Formular erzeugt, das optional mit Daten vorausgefüllt ist.
 * **Datenextraktion und -import**: Importieren Sie Daten in ein vorhandenes PDF-Formular und extrahieren Sie Daten aus einem ausgefüllten PDF-Formular. Es wird sowohl das XDP- als auch das XML-Datenformat unterstützt, und der Import in PDF-Formulare, die nicht im XFA-Format sind (auch AcroForms genannt), unterstützt zusätzlich FDF- und XFDF-Daten.
 * **Datenvalidierung**: Validieren Sie die gesendeten Daten im XDP- oder XML-Format anhand einer mit AEM Forms Designer erstellten Vorlage.
 
 >[!IMPORTANT]
 >
-> Wenn Sie sich für das Early Access Program von Adobe Early Access interessieren, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
+> Wenn Sie Interesse haben, am Early-Access-Programm von Adobe für Early-Access-Innovationen teilzunehmen, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) und bitten Sie um Zugriff. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
 ### Aktionszentrum – Benachrichtigungen zum Inhaltsstatus, Early-Adopter-Programm {#actions-center-notifications}
 
-[Aktionszentrum](/help/operations/actions-center.md) sendet E-Mail-Benachrichtigungen, wenn wichtige Vorfälle auftreten oder wenn etwas über Ihren Code oder Ihre Konfiguration bemerkt wird, in dem Sie proaktive Maßnahmen ergreifen sollten. Adobe hat jetzt mehrere neue Benachrichtigungstypen eingeführt, die mit Ihrem Inhaltszustand in Verbindung stehen. Diese Funktion ist über ein Programm für frühe Anwender verfügbar. Wenden Sie sich an die Adobe-Kundenunterstützung, wenn Sie teilnehmen möchten.
+Das [Aktionszentrum](/help/operations/actions-center.md) sendet E-Mail-Benachrichtigungen, wenn wichtige Vorfälle auftreten oder wenn etwas in Ihrem Code oder in Ihrer Konfiguration festgestellt wird, das proaktive Maßnahmen erfordert. Adobe hat jetzt mehrere neue Arten von Benachrichtigungen im Zusammenhang mit dem Status Ihrer Inhalte eingeführt. Diese Funktion ist über ein Early-Adopter-Programm verfügbar. Wenden Sie sich an die Adobe-Kundenunterstützung, wenn Sie teilnehmen möchten.
 
 #### Seiten enthalten eine große Anzahl von Knoten {#page-nodes}
 
-Eine große Anzahl von Knoten kann die Performance beim Rendern beeinträchtigen und die Seitenladezeiten verkürzen. Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn eine große Anzahl von Knoten auf einer Seite erkannt wird. So können Sie die erforderlichen Schritte unternehmen, um die Gesamtzahl der Knoten auf einer Seite zu reduzieren.
+Eine große Anzahl von Knoten kann die Performance beim Rendern beeinträchtigen und die Seitenladezeiten verkürzen. Sie erhalten über das Aktionszentrum eine proaktive Benachrichtigung, wenn eine große Anzahl von Knoten auf einer Seite festgestellt wird. So können Sie die erforderlichen Schritte unternehmen, um die Gesamtzahl der Knoten auf einer Seite zu reduzieren.
 
 #### Große Anzahl an ausgeführten Workflow-Instanzen {#running-workflows}
 
-Die Performance der Workflow-Engine wird beeinträchtigt, wenn in der Autorenumgebung eine große Anzahl von ausgeführten Workflows vorliegt. Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn eine große Anzahl laufender Workflow-Instanzen erkannt wird. Auf diese Weise können Sie einen Bereinigungsauftrag konfigurieren, um unnötige laufende Workflows zu beenden.
+Die Performance der Workflow-Engine wird beeinträchtigt, wenn in der Autorenumgebung eine große Anzahl von ausgeführten Workflows vorliegt. Sie erhalten über das Aktionszentrum eine proaktive Benachrichtigung, wenn eine große Anzahl an ausgeführten Workflow-Instanzen erkannt wird. So können Sie einen Bereinigungsauftrag konfigurieren, um unnötige laufende Workflows zu beenden.
 
 #### Benutzende, die direkt zu benutzerdefinierten Gruppen hinzugefügt wurden {#users-customgroups}
 
-Sie erhalten über das Aktionscenter eine proaktive Benachrichtigung, wenn Benutzer direkt zu benutzerspezifischen Gruppen hinzugefügt werden. Auf diese Weise können Sie die Best Practices von IMS befolgen, indem Sie Benutzer zu relevanten IMS-Gruppen hinzufügen und diese IMS-Gruppen dann als Mitglieder AEM Gruppen einschließen.
+Sie erhalten über das Aktionszentrum eine proaktive Benachrichtigung, wenn Benutzende direkt benutzerdefinierten Gruppen hinzugefügt werden. So können Sie die Best Practices von IMS befolgen, indem Sie Benutzende zu relevanten IMS-Gruppen hinzufügen und diese IMS-Gruppen dann als Mitglieder in AEM-Gruppen aufnehmen.
 
 #### Fehlende JCR-Inhalte {#jcr-content}
 
-Actions Center benachrichtigt Sie proaktiv, wenn fehlende JCR-Inhalte erkannt werden. Auf diese Weise können Sie den fehlenden Inhalt hinzufügen und das Fehlschlagen bestimmter AEM Assets-Funktionen verhindern.
+Sie erhalten über das Aktionszentrum eine proaktive Benachrichtigung, wenn festgestellt wird, dass JCR-Inhalte fehlen. So können Sie die fehlenden Inhalte hinzufügen und damit den Ausfall bestimmter AEM Assets-Funktionen verhindern.
 
-#### Abgeschlossene Workflows werden nicht bereinigt {#workflows}
+#### Abgeschlossene Workflows die nicht bereinigt wurden {#workflows}
 
-Aktion Center benachrichtigt Sie proaktiv, wenn abgeschlossene Workflows über 90 Tage nicht bereinigt wurden. Dieser Ansatz verbessert die Leistung Ihrer Workflow-Engine, indem er die Anzahl der Workflow-Instanzen reduziert.
+Sie erhalten über das Aktionszentrum eine proaktive Benachrichtigung, wenn abgeschlossene Workflows, die älter als 90 Tage sind, nicht bereinigt wurden. Dieser Ansatz optimiert die Leistung Ihrer Workflow-Engine, da die Anzahl der Workflow-Instanzen reduziert wird.
 
 #### Fehlende Sling-Ressource {#sling-resource}
 
-Actions Center benachrichtigt Sie proaktiv, wenn eine fehlende Sling-Ressource erkannt wird. Auf diese Weise können Sie die fehlende Ressource hinzufügen und das Fehlschlagen bestimmter AEM Assets-Funktionen verhindern.
+Sie erhalten über das Aktionszentrum eine proaktive Benachrichtigung, wenn festgestellt wird, dass eine Sling-Ressource fehlt. So können Sie die fehlende Ressource hinzufügen und damit den Ausfall bestimmter AEM Assets-Funktionen verhindern.
 
 ### Early-Adopter-Programme im Zusammenhang mit der Inhaltsbereitstellung {#foundation-early-adopter}
 
@@ -198,7 +198,7 @@ Senden Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>**, die angibt, 
 
 #### Standardauthentifizierung beim CDN (Early-Adopter-Programm) {#basicauth-cdn}
 
-Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion dient in erster Linie der Überprüfung von Inhalten durch geschäftliche Verantwortliche, die leichte Authentifizierungsvorgänge durchführen, anstatt als umfassende Lösung für Zugriffsberechtigungen für Endbenutzer zu dienen. Die Liste der Benutzernamen und Passwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird – mit Verweis auf die geheimen Cloud Manager-Umgebungsvariablen. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Passwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird – mit Verweis auf die geheimen Cloud Manager-Umgebungsvariablen. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 #### Bereinigen von Inhalten im CDN mit einem API-Schlüssel per Self-Service (Early-Adopter-Programm) {#purge-cdn}
 
@@ -208,7 +208,7 @@ Registrieren Sie per Self-Service einen CDN-Bereinigungs-API-Schlüssel und verw
 
 #### Erstellung von X-AEM-Edge-Key per Self-Service für kundenseitig verwaltetes CDN (BYOCDN) (Early-Adopter-Programm) {#byocdn-keys}
 
-Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dieses Ergebnis kann jetzt auf Self-Service-Weise durch eine Konfigurationsdatei erreicht werden, die mithilfe der Configuration Pipeline bereitgestellt wird. Dadurch werden Verzögerungen beim Einstieg in eine neue Umgebung beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dies kann jetzt durch eine Konfigurationsdatei selbst durchgeführt werden, die mithilfe der Konfigurations-Pipeline bereitgestellt wird. Dadurch werden Verzögerungen beim Onboarding in eine neue Umgebung beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
@@ -220,11 +220,11 @@ Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Verwaltu
 
 Die kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), die die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, ermöglichen es Ihnen zu konfigurieren, welcher Traffic erlaubt oder verweigert werden soll.
 
-Nehmen Sie am Early-Adopter-Programm teil, damit Sie benachrichtigt werden, sobald Ihre Traffic-Filterregeln ausgelöst werden. Aktionen Zentrieren E-Mail-Benachrichtigungen informieren Sie darüber, wann bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
+Nehmen Sie am Early-Adopter-Programm teil, damit Sie benachrichtigt werden, sobald Ihre Traffic-Filterregeln ausgelöst werden. E-Mail-Benachrichtigungen durch das Aktionszentrum informieren Sie darüber, wenn bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
 
 #### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
 
-Ähnlich wie AEM 6.5 erfassen Apache/Dispatcher Umschreibungszuordnungen, die an einem bestimmten Speicherort im Publishing-Repository platziert werden, und laden sie, ohne dass eine Pipeline auf der Web-Ebene ausgeführt werden muss. Mit diesem Ansatz können Benutzer Umleitungen mithilfe einer Tabelle oder einer Benutzeroberfläche deklarieren, z. B. ACS Commons Redirect Map Manager oder einer benutzerdefinierten Anwendung. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository abgelegt werden, und laden sie, ohne dass eine Pipeline auf Web-Ebene ausgeführt werden muss. So können geschäftliche Anwenderinnen und Anwender Umleitungen mithilfe einer Tabelle oder einer Benutzeroberfläche deklarieren, z. B. mit ACS Commons Redirect Map Manager oder einer benutzerdefinierten Anwendung. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### Edge Side Includes (ESI) für das Laden dynamischer Inhalte (Early-Adopter-Programm) {#esi-early-adopter}
 
@@ -244,11 +244,11 @@ Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/h
 
 ## Universeller Editor {#universal-editor}
 
-Eine vollständige Liste der Versionen des universellen Editors finden Sie [here](/help/release-notes/universal-editor/current.md).
+Eine vollständige Liste der Versionen des universellen Editors finden Sie [hier](/help/release-notes/universal-editor/current.md).
 
 ## Generieren von Varianten {#generate-variations}
 
-Eine vollständige Liste der Versionen von Generate Variations finden Sie [here](/help/generative-ai/release-notes-generate-variations.md).
+Eine vollständige Liste der Versionen für das Generieren von Varianten finden Sie [hier](/help/generative-ai/release-notes-generate-variations.md).
 
 ## Versionshinweise zu Experience Cloud {#experience-cloud}
 
