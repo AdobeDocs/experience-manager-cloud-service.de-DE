@@ -7,9 +7,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5149'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -182,7 +182,7 @@ ht-degree: 99%
    + Versionshinweise für den erweiterten Connector von Workfront für Experience Manager{#workfront}
       + [Aktuelle Versionshinweise für den erweiterten Connector von Workfront für Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Versionshinweise für das Generieren von Varianten {#generate-variations}
-      + [Aktuelle Versionshinweise zum Generieren von Varianten](/help/generative-ai/release-notes-generate-variations.md)
+      + [Aktuelle Versionshinweise für das Generieren von Varianten](/help/generative-ai/release-notes-generate-variations.md)
    + Versionshinweise für den universellen Editor {#univeral-editor}
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
    + [Neue Funktionen](/help/release-notes/what-is-new.md)
@@ -264,7 +264,7 @@ ht-degree: 99%
          + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Validieren von Inhaltsübertragungen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
-         + [Handhabung großer Content-Repositorys ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+         + [Handhabung großer Content-Repositorys](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Extrahieren von Inhalten aus der Quelle](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Aufnehmen von Inhalten in Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -307,7 +307,7 @@ ht-degree: 99%
          + [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [Anzeigen einer Seitenvorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Veröffentlichen von Seiten](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [Seitenvorlagen  ](/help/sites-cloud/authoring/sites-console/templates.md)
+         + [Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md)
          + [Seitenversionen](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Seitenvergleich](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [Verwenden von Tags](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -427,7 +427,7 @@ ht-degree: 99%
       + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
-      + [Exportieren von Experience Fragments nach Adobe Target ](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
    + [Real Use Monitoring (RUM) für AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
@@ -515,7 +515,7 @@ ht-degree: 99%
       + [Dynamic Media Newsletter-Archiv von Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Einrichten von Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Konfigurieren von Dynamic Media ](/help/assets/dynamic-media/config-dm.md)
+      + [Konfigurieren von Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Optional: Konfigurieren von Dynamic Media, Allgemeine Einstellungen](/help/assets/dynamic-media/dm-general-settings.md)
       + [Optional: Konfigurieren von Dynamic Media, Einrichtung der Veröffentlichung](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Problembehandlung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -642,7 +642,7 @@ ht-degree: 99%
    + Erste Schritte {#getting-started-forms}
       + [Anwendungsfall und Einrichtung der Entwicklungsumgebung](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Erstellen des Kreditantragsformulars](/help/forms/create-adaptive-form-tutorial.md)
-   + Integrieren von {#integrate} 
+   + Integrieren von {#integrate}
       + Dienste {#services}
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -844,7 +844,7 @@ ht-degree: 99%
          + [Festlegen des Stils von CIF-Komponenten](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Anpassen von CIF-Komponenten](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Verwenden der CIF-Katalogauswahl](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [Benutzerdefinierte Attribute zum CIF von Produktkarussells](/help/commerce-cloud/customizing/product-carousel.md)
+         + [Benutzerdefinierte Attribute zum CIF-Produktkarussell](/help/commerce-cloud/customizing/product-carousel.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
    + [Häufig gestellte Fragen](/help/commerce-cloud/faq.md)
@@ -912,7 +912,7 @@ ht-degree: 99%
          + [Installieren der Erweiterung](/help/edge/docs/sidekick-extension.md)
          + [Projektkonfiguration](https://www.aem.live/tools/sidekick/)
          + [Sidekick-Bibliothek](/help/edge/docs/sidekick-library.md)
-      + [FAQs](/help/edge/docs/faq.md)
+      + [Häufig gestellte Fragen](/help/edge/docs/faq.md)
       + [Admin-API](https://www.aem.live/docs/admin.html)
       + [AEM-Status](https://www.aemstatus.net)
       + Tools {#tools}

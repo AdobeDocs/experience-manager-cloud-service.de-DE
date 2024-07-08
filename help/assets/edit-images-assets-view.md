@@ -5,15 +5,15 @@ role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 # Bearbeiten von Bildern in [!DNL Assets view] {#edit-images-in-assets-view}
 
-Die Assets-Ansicht ermöglicht die grundlegende Bildbearbeitung, einschließlich Größenanpassung, Hintergrundentfernt, Zuschneiden und Konvertieren zwischen JPEG- und PNG-Formaten. Darüber hinaus ermöglicht sie die erweiterte Bearbeitung durch die Integration mit Adobe Express. Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) und klicken Sie auf **Bild bearbeiten**.
+Die Assets-Ansicht ermöglicht eine grundlegende Bildbearbeitung, einschließlich Größenanpassung, Hintergrundentfernung, Zuschneiden und Konvertierung zwischen JPEG- und PNG-Formaten. Darüber hinaus ermöglicht sie eine erweiterte Bearbeitung durch die Integration mit Adobe Express. Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) und klicken Sie auf **Bild bearbeiten**.
 
 >[!NOTE]
 >
@@ -21,26 +21,26 @@ Die Assets-Ansicht ermöglicht die grundlegende Bildbearbeitung, einschließlich
 
 <!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
-## Bild bearbeiten {#edit-image}
+## Bearbeiten von Bildern {#edit-image}
 
-Landing on Assets View, using the link - [Assets-Ansicht](https://experience.adobe.com/#/assets) und das richtige Repository auswählen. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff zu erhalten.
-Weitere Referenzinformationen finden Sie unter [Erste Schritte mit Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Die Benutzeroberfläche der Assets-Ansicht](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), und [Anwendungsfälle für die Assets-Ansicht](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Öffnen Sie die Assets-Ansicht, indem Sie auf den Link für die [Assets-Ansicht](https://experience.adobe.com/#/assets) klicken und das richtige Repository auswählen. Wenden Sie sich an die Admins Ihrer Organisation, um Zugriff zu erhalten.
+Weitere Informationen finden Sie unter [Erste Schritte mit der Assets-Ansicht von Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Grundlegendes zur Benutzeroberfläche der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) und [Anwendungsfälle für die Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### Bild in Assets-Ansicht mit Adobe Express bearbeiten {#edit-image-on-assets-view-using-adobe-express}
+### Bearbeiten von Bildern in der Assets-Ansicht mit Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Klicken Sie nach dem Landing in der Assets-Ansicht auf **Assets**, wählen Sie ein Bild aus und klicken Sie auf **Bearbeiten** aus der oberen Leiste. Im neuen Bildschirm werden die verfügbaren Bearbeitungsoptionen angezeigt, darunter Größenanpassung, Hintergrundentfernt, Beschneiden und Konvertieren zwischen JPEG- und PNG-Formaten.
+Nachdem Sie die Assets-Ansicht geöffnet haben, klicken Sie auf **Assets**. Wählen Sie ein Bild aus und klicken Sie in der oberen Leiste auf **Bearbeiten**. Im neuen Bildschirm werden die verfügbaren Bearbeitungsoptionen angezeigt, darunter Größenanpassung, Hintergrundentfernung, Zuschneiden und Konvertierung zwischen JPEG- und PNG-Formaten.
 
 #### Ändern der Bildgröße {#resize-image-using-express}
 
-Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine bestimmte Größe. Mit der Assets-Ansicht können Sie die Bildgröße schnell an die gängigen Bildgrößen anpassen, indem Sie vorab berechnete neue Auflösungen für bestimmte Bildgrößen bereitstellen. Gehen Sie wie folgt vor, um die Bildgröße mithilfe der Assets-Ansicht zu ändern:
+Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine bestimmte Größe. Die Assets-Ansicht ermöglicht es Ihnen, die Größe von Bildern schnell an die gängigen Bildgrößen anzupassen, indem vorab berechnete, neue Auflösungen für bestimmte Bildgrößen bereitgestellt werden. Gehen Sie wie folgt vor, um mithilfe der Assets-Ansicht die Bildgröße zu ändern:
 
-1. Klicks **Bild vergrößern** aus dem linken Bereich.
-1. Wählen Sie die entsprechende Social-Media-Plattform aus der Dropdownliste Größe ändern aus und wählen Sie die Bildgröße aus den angezeigten Optionen aus.
+1. Klicken Sie im linken Bereich auf **Bildgröße ändern**.
+1. Wählen Sie in der Dropdown-Liste „Größe ändern“ die entsprechende Social-Media-Plattform aus und wählen Sie in den angezeigten Optionen die Bildgröße aus.
 1. Falls erforderlich, skalieren Sie das Bild mithilfe des Feldes **Bildskala**.
 1. Klicken Sie auf **[!UICONTROL Anwenden]**, um Ihre Änderungen anzuwenden.
    ![Bildbearbeitung mit Adobe Express](assets/adobe-express-resize-image.png)
@@ -50,9 +50,9 @@ Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine
 
 #### Entfernen des Hintergrunds {#remove-background-using-express}
 
-Sie können einen Hintergrund aus einem Bild entfernen, indem Sie die unten beschriebenen Schritte ausführen:
+Gehen Sie wie folgt vor, um den Hintergrund aus einem Bild zu entfernen:
 
-1. Klicks **Hintergrund entfernen** aus dem linken Bereich. Experience Manager Assets zeigt das Bild ohne Hintergrund an.
+1. Klicken Sie im linken Bereich auf **Hintergrund entfernen**. Experience Manager Assets zeigt das Bild ohne Hintergrund an.
 1. Klicken Sie auf **[!UICONTROL Anwenden]**, um Ihre Änderungen anzuwenden.
    ![Speichern des Bildes mit Adobe Express](assets/adobe-express-remove-background.png)
 
@@ -60,9 +60,9 @@ Sie können einen Hintergrund aus einem Bild entfernen, indem Sie die unten besc
 
 #### Zuschneiden eines Bildes {#crop-image-using-express}
 
-Die Umwandlung eines Bildes in eine perfekte Größe ist einfach mit eingebettetem [!DNL Adobe Express] Schnellaktionen.
+Mit den eingebetteten Schnellaktionen von [!DNL Adobe Express] ist es einfach, ein Bild in eine perfekte Größe umzuwandeln.
 
-1. Klicks **[!UICONTROL Bild beschneiden]** aus dem linken Bereich.
+1. Klicken Sie im linken Bereich auf **[!UICONTROL Bild zuschneiden]**.
 2. Ziehen Sie die Griffe an den Ecken des Bildes, um den gewünschten Zuschnitt zu erstellen.
 3. Klicken Sie auf **[!UICONTROL Übernehmen]**.
    ![Speichern Sie das Bild mit Adobe Express](assets/adobe-express-crop-image.png)
@@ -72,7 +72,7 @@ Das zugeschnittene Bild kann heruntergeladen werden. Sie können das bearbeitete
 
 Mithilfe von Adobe Express können Sie schnell zwischen JPEG- und PNG-Bildformaten konvertieren. Führen Sie die folgenden Schritte aus:
 
-1. Klicks **JPEG in PNG** oder **PNG zu JPEG** aus dem linken Bereich.
+1. Klicken Sie im linken Bereich auf die Option zum Konvertieren von **JPEG in PNG** oder **PNG in JPEG**.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 1. Klicken Sie auf **[!UICONTROL Herunterladen]**.
 
@@ -84,40 +84,40 @@ Mithilfe von Adobe Express können Sie schnell zwischen JPEG- und PNG-Bildformat
 
 ### Bearbeiten von Bildern im eingebetteten Adobe Express-Editor {#edit-images-in-adobe-express-embedded-editor}
 
-Benutzer mit Express-Berechtigung können den eingebetteten Express-Editor in der Assets-Ansicht verwenden, um Inhalte einfach zu bearbeiten und neue Inhalte mit GenAI von Adobe Firefly aus zu erstellen. Dies verbessert die Wiederverwendung von Inhalten und beschleunigt die Geschwindigkeit von Inhalten. Sie können auch vordefinierte Elemente verwenden, um Ihr Asset atemberaubend aussehen zu lassen oder durch schnelle Aktionen Ihr Bild mit nur wenigen Klicks zu bearbeiten.
-![in der grundlegenden Benutzeroberfläche ausdrücken](/help/assets/assets/express-in-essentials-ui.jpg)
-So bearbeiten Sie Bilder mit [!DNL Adobe Express] Führen Sie die folgenden Schritte aus:
+Benutzende mit Express-Berechtigung können den eingebetteten Express-Editor in der Assets-Ansicht verwenden, um Inhalte einfach zu bearbeiten und neue Inhalte mit GenAI von Adobe Firefly zu erstellen. Dies ermöglicht eine bessere Wiederverwendung von Inhalten und erhöht die Content-Geschwindigkeit. Sie können auch vordefinierte Elemente verwenden, um Ihr Asset atemberaubend zu gestalten, oder Schnellaktionen durchführen, um Ihr Bild mit nur wenigen Klicks schnell und bequem zu bearbeiten.
+![Express in Essentials-Benutzeroberfläche](/help/assets/assets/express-in-essentials-ui.jpg)
+Gehen Sie wie folgt vor, um Bilder mit dem eingebetteten [!DNL Adobe Express]-Editor zu bearbeiten:
 
-1. Starten Sie über den Link zur AEM Assets-Ansicht - [AEM Assets-Ansicht](https://experience.adobe.com/#/assets) und wählen Sie das richtige Repository aus.
-1. Klicks **Assets**, geben Sie einen Ordner ein und wählen Sie ein Bild aus.
-1. Klicks **In Adobe Expreß öffnen**. Das Bild wird auf einer Expressarbeitsfläche geöffnet.
+1. Öffnen Sie die AEM-Assets-Ansicht, indem Sie auf den Link für die [AEM-Assets-Ansicht](https://experience.adobe.com/#/assets) klicken und das richtige Repository auswählen.
+1. Klicken Sie auf **Assets**, geben Sie einen Ordner an und wählen Sie ein Bild aus.
+1. Klicken Sie auf **In Adobe Express öffnen**. Das Bild wird in einer Express-Arbeitsfläche geöffnet.
 1. Nehmen Sie die erforderlichen Änderungen am Bild vor.
-1. Wenn Sie für Ihr Projekt weitere Seiten hinzufügen müssen, klicken Sie auf **Hinzufügen**, wählen Sie Assets aus, geben Sie einen Ordner ein, wählen Sie ein Bild aus, das auf die Leinwandseite geladen werden soll, und nehmen Sie dann die erforderlichen Änderungen am Bild vor.
-1. Klicken Sie zum Speichern der Bilder auf **Speichern**. Das Dialogfeld &quot;Speichern&quot;wird angezeigt.
+1. Wenn Sie für Ihr Projekt weitere Seiten hinzufügen müssen, klicken Sie auf **Hinzufügen** und wählen Sie „Assets“ aus. Geben Sie einen Ordner an, wählen Sie ein Bild aus, das in die Arbeitsflächenseite geladen werden soll, und nehmen Sie dann die erforderlichen Änderungen am Bild vor.
+1. Klicken Sie auf **Speichern**, um das Bild bzw. die Bilder zu speichern. Das Dialogfeld „Speichern“ wird angezeigt.
 
    >[!NOTE]
    >
-   > **1. Für Einzelseiten**
+   > **1. Für eine einzelne Seite**
    >
    > **Als Version speichern:** Diese Funktion unterstützt nur das Speichern eines einzelnen Assets. Wählen Sie diese Option aus, um das Bild als neue Version zu exportieren (wobei das Originalformat beibehalten wird) und im selben Ordner zu speichern.
-   > **Als neues Asset speichern:** Wählen Sie diese Option, um das Asset in einem anderen Format als das Original zu exportieren und es als neues Asset in einem beliebigen Ordner zu speichern.
+   > **Als neues Asset speichern:** Wählen Sie diese Option aus, um das Asset in einem anderen Format wie ursprünglich zu exportieren und es als neues Asset in einem beliebigen Ordner zu speichern.
    >  
    > **2. Für mehrere Seiten**
    >
-   > **Als Version speichern:** Diese Funktion unterstützt nur das Speichern eines einzelnen Assets. Wenn Sie eine einzelne Seite von mehreren Seiten speichern möchten, wählen Sie diese Option, um das Asset in seinem ursprünglichen Format und an seinem Speicherort zu speichern.\
-   > **Als neues Asset speichern:** Mit dieser Option exportieren Sie entweder mehrere Assets oder ein einzelnes Asset in einen beliebigen Ordner und speichern sie als neue Assets mit ihrem Dateiformat als Original oder anders.
+   > **Als Version speichern:** Diese Funktion unterstützt nur das Speichern eines einzelnen Assets. Wenn Sie eine einzelne Seite von mehreren Seiten speichern möchten, wählen Sie diese Option aus, um das Asset in seinem ursprünglichen Format und an seinem ursprünglichen Speicherort zu speichern.\
+   > **Als neues Asset speichern:** Mit dieser Option exportieren Sie entweder mehrere Assets oder ein einzelnes Asset in einen beliebigen Ordner und speichern diese als neue Assets in ihrem ursprünglichen oder einem anderen Dateiformat.
 
-1. Im Dialogfeld &quot;Speichern&quot;:
-   1. Geben Sie einen Namen für die Datei im **Speichern unter** -Feld.
+1. Im Dialogfeld „Speichern“:
+   1. Geben Sie einen Namen für die Datei in das Feld **Speichern unter** ein.
    1. Wählen Sie einen Zielordner aus.
-   1. Optional: Geben Sie Details wie Projekt- oder Kampagnenname, Suchbegriffe, Kanäle, Zeitraum und Region an.
-1. Klicks **Als Version speichern** oder **Als neues Asset speichern** zum Speichern der Assets.
+   1. Optional: Geben Sie Details wie den Projekt- oder Kampagnennamen, Keywords, Kanäle, den Zeitrahmen und die Region an.
+1. Klicken Sie auf **Als Version speichern** oder **Als neues Asset speichern**, um das Asset bzw. die Assets zu speichern.
 
-#### Einschränkungen beim Bearbeiten von Bildern im Express Editor {#limitations-of-editing-images-in-the-express-editor}
+#### Einschränkungen beim Bearbeiten von Bildern im Express-Editor {#limitations-of-editing-images-in-the-express-editor}
 
 * Unterstützter Dateityp: JPEG oder PNG.
 * Maximal unterstützte Dateigröße: 40 MB.
-* Unterstützte Breite und Höhe: zwischen 50 und 8000 Pixel.
+* Unterstützte Breite und Höhe: zwischen 50 und 8000 Pixel.
 * Laden Sie die Seite neu, um das zuletzt gespeicherte neue Asset im Quellordner anzuzeigen.
 
 ### Erstellen neuer Assets in Adobe Express {#create-new-embedded-editor}
@@ -127,7 +127,7 @@ In [!DNL Assets view] können Sie mithilfe des in [!DNL Adobe Express] integrier
 1. Navigieren Sie zu **[!UICONTROL Mein Arbeitsbereich]** und klicken Sie im Adobe Express-Banner ganz oben auf **[!UICONTROL Erstellen]**. [!DNL Adobe Express] leere Arbeitsfläche wird in der [!DNL Assets view]-Benutzeroberfläche angezeigt.
 1. Erstellen Sie Inhalte mithilfe von [Vorlagen](https://helpx.adobe.com/de/express/using/work-with-templates.html). Navigieren Sie andernfalls zu **[!UICONTROL Ihr Inhalt]**, um vorhandene Inhalte zu ändern.
 1. Klicken Sie nach Abschluss der Bearbeitung auf **[!UICONTROL Speichern]**.
-1. Geben Sie den Zielpfad für das erstellte Asset an und klicken Sie auf **[!UICONTROL Als neues Asset speichern]**.
+1. Geben Sie einen Zielpfad für das erstellte Asset ein und klicken Sie auf **[!UICONTROL Als neues Asset speichern]**.
 
 #### Einschränkungen {#limitations}
 
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### Nächste Schritte {#next-steps}
 
-* Stellen Sie mithilfe der [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht verfügbar.
+* Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht.
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 

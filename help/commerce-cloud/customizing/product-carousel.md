@@ -1,32 +1,32 @@
 ---
-title: Benutzerdefinierte Attribute zum CIF von Produktkarussells
-description: Erfahren Sie, wie Sie die AEM CIF Produktkarussell-Komponente erweitern, indem Sie das Sling-Modell aktualisieren und das Markup anpassen.
+title: Benutzerdefinierte Attribute zum CIF-Produktkarussell
+description: Erfahren Sie, wie Sie die AEM CIF-Produktkarussellkomponente erweitern, indem Sie das Sling-Modell aktualisieren und das Markup anpassen.
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Benutzerdefinierte Attribute zum CIF von Produktkarussells {#product-carousel}
+# Benutzerdefinierte Attribute zum CIF-Produktkarussell {#product-carousel}
 
 ## Einführung {#intro}
 
-Die Komponente &quot;Karussell&quot;wurde in diesem Tutorial erweitert. Fügen Sie als ersten Schritt eine Instanz des Produktkarussells zur Startseite hinzu, um die Grundfunktionen zu verstehen:
+Die Produktkarussellkomponente wird im Laufe dieses Tutorials erweitert. Als ersten Schritt fügen Sie der Startseite eine Instanz des Produktkarussells hinzu, um sich mit den Grundfunktionen vertraut zu machen:
 
-1. Navigieren Sie zur Homepage der Site, z. B. [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
-1. Fügen Sie auf der Seite eine neue Komponente des Produktkarussells in den Haupt-Layout-Container ein.
-   ![Komponente &quot;Produktkarussell&quot;](/help/commerce-cloud/assets/product-carousel-component.png)
-1. Erweitern Sie das seitliche Bedienfeld (falls noch nicht umgeschaltet) und wechseln Sie im Dropdown-Menü für die Asset-Suche zu **Produkte**.
-     ![Karussellprodukte](/help/commerce-cloud/assets/carousel-products.png)    
-1. Dadurch sollte eine Liste der verfügbaren Produkte aus einer verbundenen Adobe Commerce-Instanz angezeigt werden.
-   ![Connected Instance](/help/commerce-cloud/assets/connected-instance.png)
+1. Navigieren Sie zur Startseite der Site, beispielsweise [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html).
+1. Fügen Sie auf der Seite eine neue Produktkarussellkomponente in den Haupt-Layout-Container ein.
+   ![Produktkarussellkomponente](/help/commerce-cloud/assets/product-carousel-component.png)
+1. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie im Dropdown-Menü der Asset-Suche zu **Produkte**.
+ ![Karussell für Produkte](/help/commerce-cloud/assets/carousel-products.png)    
+1. Nun sollte eine Liste mit verfügbaren Produkten einer verbundenen Adobe Commerce-Instanz angezeigt werden.
+   ![Verbundene Instanz](/help/commerce-cloud/assets/connected-instance.png)
 1. Produkte werden wie folgt mit Standardeigenschaften angezeigt:
-   ![Produkt mit Eigenschaften angezeigt](/help/commerce-cloud/assets/discount.png)
+   ![Angezeigtes Produkt mit Eigenschaften](/help/commerce-cloud/assets/discount.png)
 
-## Sling-Modell aktualisieren {#update-sling-model}
+## Aktualisieren des Sling-Modells {#update-sling-model}
 
 Sie können die Geschäftslogik des Produktkarussells erweitern, indem Sie ein Sling-Modell implementieren:
 
@@ -38,8 +38,8 @@ Sie können die Geschäftslogik des Produktkarussells erweitern, indem Sie ein S
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-1. Erstellen Sie anschließend eine Implementierungsklasse. `CustomCarouselImpl.java` at `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
-Das Delegationsmuster für Sling-Modelle ermöglicht `CustomCarouselImpl` Verweis `ProductCarousel` -Modell über die `sling:resourceSuperType` Eigenschaft:
+1. Erstellen Sie anschließend eine Implementierungsklasse `CustomCarouselImpl.java` bei `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
+Das Delegationsmuster für Sling-Modelle ermöglicht es `CustomCarouselImpl`, durch die Eigenschaft `sling:resourceSuperType` auf das Modell `ProductCarousel` zu verweisen:
 
    ```
    @Self
@@ -47,7 +47,7 @@ Das Delegationsmuster für Sling-Modelle ermöglicht `CustomCarouselImpl` Verwei
    private ProductCarousel productCarousel;
    ```
 
-1. Die @PostConstruct -Anmerkung stellt sicher, dass diese Methode aufgerufen wird, wenn das Sling-Modell initialisiert wird. Die GraphQL-Produktabfrage wurde bereits mit der Methode expandProductQueryWith erweitert, um Attribute abzurufen. Aktualisieren Sie die GraphQL-Abfrage, um das -Attribut in die partielle Abfrage einzuschließen:
+1. Die Anmerkung „@PostConstruct“ stellt sicher, dass diese Methode bei der Initialisierung des Sling-Modells aufgerufen wird. Die GraphQL-Produktabfrage wurde bereits mit der Methode „extendProductQueryWith“ erweitert, um Attribute abzurufen. Aktualisieren Sie die GraphQL-Abfrage, um das Attribut in die partielle Abfrage einzuschließen:
 
    ```
    @PostConstruct
@@ -62,15 +62,15 @@ Das Delegationsmuster für Sling-Modelle ermöglicht `CustomCarouselImpl` Verwei
    }
    ```
 
-   Im obigen Code wird die `addCustomSimpleField` wird verwendet, um die `accessory_gemstone_addon` -Attribut.
+   Im obigen Code wird `addCustomSimpleField` zum Abrufen des Attributs `accessory_gemstone_addon` verwendet.
 
-## Anpassen des Markups {#customize-markup}
+## Anpassen des Markups{#customize-markup}
 
-So passen Sie das Markup weiter an:
+Gehen Sie wie folgt vor, um das Markup weiter anzupassen:
 
-1. Erstellen Sie eine Kopie von `productcard.html` von `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` (Kernkomponentencrxde-Pfad) zum Modul ui.apps `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`.
+1. Erstellen Sie eine Kopie von `productcard.html` aus `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` (CRXDE-Pfad der Kernkomponente) im ui.apps-Modul `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`.
 
-1. Bearbeiten `productcard.html` um das benutzerdefinierte Attribut aufzurufen, das in der Implementierungsklasse erwähnt wird:
+1. Bearbeiten Sie `productcard.html`, um das benutzerdefinierte Attribut aufzurufen, das in der Implementierungsklasse erwähnt wird:
 
    ```xml
    ..
@@ -86,4 +86,4 @@ So passen Sie das Markup weiter an:
    ..
    ```
 
-1. Speichern Sie die Änderungen und stellen Sie die Aktualisierungen über Ihren Maven-Befehl in einem Befehlszeilen-Terminal auf AEM bereit. Sie können das benutzerdefinierte Attribut sehen `accessory_gemstone_addon` für die ausgewählten Produkte auf der Seite.
+1. Speichern Sie die Änderungen und stellen Sie die Aktualisierungen in AEM bereit. Verwenden Sie dazu Ihren Maven-Befehl in einem Befehlszeilen-Terminal. Sie können für die ausgewählten Produkte auf der Seite den Wert `accessory_gemstone_addon` des benutzerdefinierten Attributs sehen.

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2377'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -280,7 +280,7 @@ Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte 
 
 >[!TIP]
 >
->Siehe [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md), wenn Sie erfahren möchten, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken können. 
+>Siehe [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md), wenn Sie erfahren möchten, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken können.
 
 ## Zugriff auf die Entwicklerkonsole {#accessing-developer-console}
 
