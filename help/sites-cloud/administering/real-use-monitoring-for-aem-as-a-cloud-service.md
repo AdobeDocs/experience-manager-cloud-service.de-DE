@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) die digitalen U
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 9a8adf777008b7a601abc8760cee67ec3c1816c6
+source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1302'
 ht-degree: 14%
 
 ---
@@ -97,7 +97,7 @@ Beim Analysieren von RUM-Daten kann es zu Abweichungen bei Seite Ansichten und a
 
    * Der RUM-Datendienst konzentriert sich auf die Client-seitig Erlebnis und erfasst derzeit nicht die Back-End-API- oder JSON-Aufrufe, die von einer nicht AEM Headless-App getätigt werden. Der Ausschluss dieser Aufrufe aus RUM-Dienstdaten führt zu Abweichungen von den Inhalte Anforderungen, die von CDN Analytics gemessen werden.
 
-## FAQs {#faq}
+## Häufig gestellte Fragen {#faq}
 
 
 1. **Können Kunden die RUM-Service-Skripte in Drittsysteme liken Dynatrace integrieren?**
