@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1132'
-ht-degree: 100%
+source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+workflow-type: tm+mt
+source-wordcount: '1340'
+ht-degree: 74%
 
 ---
 
@@ -23,10 +23,6 @@ Web-Programme bieten häufig Funktionen zur Kontoverwaltung, mit denen sich Enda
 * Speichern von Anwenderprofildaten im Profil
 * Gruppenmitgliedschaft
 * Datensynchronisierung
-
->[!IMPORTANT]
->
->Damit die in diesem Artikel beschriebene Funktion ordnungsgemäß genutzt werden kann, muss die Funktion zur Synchronisierung von Anwenderdaten aktiviert sein. Dazu ist derzeit Anfrage beim Kunden-Support erforderlich, in der das betreffende Programm und die entsprechenden Umgebung angegeben werden. Wenn diese Option nicht aktiviert ist, werden Anwenderinformationen nur für einen kurzen Zeitraum (1–24 Stunden) beibehalten.
 
 ## Registrierung {#registration}
 
@@ -44,6 +40,10 @@ Es kann benutzerdefinierter Registrierungs-Code geschrieben werden, der mindeste
    1. Erstellen eines Anwenderdatensatzes mithilfe einer der `createUser()`-Methoden der UserManager-API
    1. Beibehalten aller mit den `setProperty()`-Methoden der Authorizable-Schnittstelle erfassten Profildaten
 1. Optionale Abläufe, etwa die Anforderung, dass Anwender ihre E-Mail-Adresse validieren müssen
+
+**Voraussetzung:**
+
+Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
 
 ### Extern {#external-managed-registration}
 
@@ -63,6 +63,10 @@ Kunden können eigene benutzerdefinierte Komponenten schreiben. Dazu empfehlen w
 
 * in der Dokumentation zum [Sling-Authentifizierungs-Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
 * bei den [AEM Community Experts](https://bit.ly/ATACEFeb15), die Sie in den Sessions zur Anmeldung befragen können.
+
+**Voraussetzung:**
+
+Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
 
 ### Zusammenarbeit mit einem Identitätsanbieter {#integration-with-an-idp}
 
@@ -84,9 +88,15 @@ Informationen zur Verwendung AEM SSO-Authentifizierungs-Handler-Service finden S
 
 Die `com.adobe.granite.auth.oauth.provider`-Schnittstelle kann mit dem OAuth-Anbieter Ihrer Wahl implementiert werden.
 
+**Voraussetzung:**
+
+Als Best Practice sollten Sie sich beim Speichern benutzerspezifischer Daten immer auf idP (Identity Provider) als einen zentralen &quot;Point of Truth&quot;(Identitätsanbieter) verlassen. Wenn die zusätzlichen Benutzerinformationen im lokalen Repository gespeichert sind, das nicht Teil des idP ist, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind. Zusätzlich zu [Datensynchronisation](#data-synchronization-data-synchronization)im Falle des SAML-Authentifizierungsanbieters müssen Sie sicherstellen, dass [dynamische Gruppenmitgliedschaft](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) aktiviert ist.
+
 ### Sticky Sessions und Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service verfügt über Cookie-basierte Sticky Sessions, die sicherstellen, dass Endbenutzende bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet werden. Um die Leistung zu steigern, ist die Funktion für „Encapsulated Tokens“ standardmäßig aktiviert, sodass Anwenderdatensätze im Repository nicht bei jeder Anfrage referenziert werden müssen. Wenn der Veröffentlichungsknoten, zu dem Endbenutzende gehören, ersetzt wird, ist der Datensatz mit der Anwender-ID auf dem neuen Veröffentlichungsknoten verfügbar, wie im nachfolgenden Abschnitt zur Datensynchronisierung beschrieben.
+AEM as a Cloud Service ermöglicht Cookie-basierte fixierbare Sitzungen, wodurch sichergestellt wird, dass ein Endbenutzer bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. In bestimmten Fällen, wie z. B. beim Benutzer-Traffic-Spitzen, kann die Funktion des gekapselten Tokens die Leistung steigern, sodass der Benutzerdatensatz im Repository nicht bei jeder Anfrage referenziert werden muss. Wenn der Veröffentlichungsknoten, auf den ein Endbenutzer eine Affinität hat, ersetzt wird, ist sein Benutzer-ID-Datensatz auf dem neuen Veröffentlichungsknoten verfügbar, wie in der [Datensynchronisation](#data-synchronization-data-synchronization) unten.
+
+Um die Funktion des gekapselten Tokens zu nutzen, senden Sie bitte eine Anfrage an den Support, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind. Wichtiger noch: Das gekapselte Token kann nicht aktiviert werden ohne [Datensynchronisation](#data-synchronization-data-synchronization) und müssen zusammen aktiviert werden. Überprüfen Sie daher den Anwendungsfall sorgfältig, bevor Sie die Funktion aktivieren und sicherstellen, dass sie unbedingt erforderlich ist.
 
 ## Benutzerprofil {#user-profile}
 
@@ -99,11 +109,19 @@ Informationen zum Anwenderprofil können auf zwei Arten geschrieben und gelesen 
 * Server-seitige Verwendung mit der `com.adobe.granite.security.user`-Schnittstelle „UserPropertiesManager“, die Daten unter dem Knoten des Anwenders in `/home/users` platziert. Stellen Sie sicher, dass Seiten, die pro Benutzer eindeutig sind, nicht zwischengespeichert werden.
 * Client-seitige Verwendung von ContextHub, wie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=de#personalization) beschrieben.
 
+**Voraussetzung:**
+
+Damit die Persistenzlogik des serverseitigen Benutzerprofils ordnungsgemäß funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
+
 ### Datenspeicher von Drittanbietern {#third-party-data-stores}
 
 Endbenutzerdaten können an Drittanbieter wie etwa CRMs gesendet und bei der Anmeldung von Benutzenden über APIs abgerufen werden. Sie werden auf dem Profil-Knoten der AEM-Benutzenden beibehalten und nach Bedarf von AEM verwendet.
 
 Der Echtzeitzugriff auf Dienste von Drittanbietern zum Abruf von Profilattributen ist möglich. Es ist jedoch wichtig sicherzustellen, dass dies die Anfrageverarbeitung in AEM nicht wesentlich beeinflusst.
+
+**Voraussetzung:**
+
+Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
 
 ## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 
@@ -123,6 +141,10 @@ Anders als bei anderen AEM-Lösungen verfolgt die Anwender- und Gruppenmitglieds
 >[!NOTE]
 >
 >Standardmäßig ist die Synchronisierung von Anwenderprofilen und Gruppenmitgliedschaften nicht aktiviert, sodass die Daten nicht mit der Veröffentlichungsebene synchronisiert oder gar dauerhaft auf ihr beibehalten werden. Um die Funktion zu aktivieren, senden Sie eine Anfrage an den Kunden-Support, in der das entsprechende Programm und die entsprechenden Umgebung angegeben sind.
+
+>[!IMPORTANT]
+>
+>Testen Sie die Implementierung skaliert, bevor Sie die Datensynchronisation in der Produktionsumgebung aktivieren. Je nach Anwendungsfall und beibehaltenen Daten können Konsistenz- und Latenzprobleme auftreten.
 
 ## Überlegungen zum Cache {#cache-considerations}
 
