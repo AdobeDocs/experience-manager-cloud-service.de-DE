@@ -2,15 +2,15 @@
 title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren und Benutzern mit unterschiedlichen Berechtigungstypen Zugriff gewähren (Assets hochladen, Adobe Expreß-Benutzer) und wie Sie Benutzern Administratorberechtigungen gewähren.
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 3%
 
 ---
 
 
-# Content Hub bereitstellen {#deploy-content-hub}
+# Bereitstellen von Content Hub {#deploy-content-hub}
 
 ![Content Hub bereitstellen](assets/deploy-content-hub.png)
 
@@ -46,6 +46,10 @@ Um auf das Content Hub-Portal zugreifen zu können, müssen Administratoren zun�
 
 1. Erweitern **[!UICONTROL Assets]** und wählen **[!UICONTROL Content Hub]**.
    ![Content Hub in Cloud Manager auswählen](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >Wenn **[!UICONTROL Aktualisieren]** nicht für Sie aktiviert ist, nachdem Sie Content Hub ausgewählt haben, stellen Sie sicher, dass Sie Go-Live-Einstellungen für das Programm festgelegt haben.
 
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
@@ -111,9 +115,19 @@ Diese Benutzer können jetzt auf die im Content Hub-Portal verfügbaren Assets z
 >
 >Sie können alle erweiterten Unternehmensfunktionen wie die Synchronisierung mit externen Identitätsanbietern verwenden.
 
-Nachdem die entsprechenden Benutzer mithilfe von Admin Console hinzugefügt wurden, können sie über den folgenden Link auf Content Hub zugreifen:
+### Zugriff auf Content Hub {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Der Zugriff auf Content Hub erfolgt auf folgende Weise:
+
+* Greifen Sie über den folgenden Link auf Content Hub zu:
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* Melden Sie sich bei `experience.adobe com` und klicken **[!UICONTROL Experience Manager Assets Content Hub]** verfügbar im **[!UICONTROL Schnellzugriff]** Abschnitt:
+  ![Zugriff auf Content Hub](assets/access-content-hub.png)
+
+* Melden Sie sich bei `experience.adobe com` und klicken **[!UICONTROL Experience Manager Assets Content Hub]** im Produktumschalter verfügbar:
+  ![Content Hub-Zugriffsmethode 3](assets/access-content-hub-alternate.png)
 
 ### E-Mail-Benachrichtigungen für Benutzer deaktivieren {#disable-email-notifications}
 

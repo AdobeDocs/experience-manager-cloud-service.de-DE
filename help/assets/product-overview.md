@@ -1,10 +1,10 @@
 ---
 title: Übersicht über Content Hub
 description: Erfahren Sie mehr über Content Hub, seine wichtigsten Vorteile, den Zugriff darauf und das Feedback zu den in Content Hub verfügbaren Optionen.
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ Content Hub erfordert eine Produktionsumgebung für Autoren von Experience Manag
 
 ## Zugriff auf Content Hub {#access-content-hub}
 
-[Nach der Einrichtung von Content Hub](#deploy-content-hub) und fügen Sie einen Benutzer zum [Content Hub-Produktprofil](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)können Sie wie folgt auf Content Hub zugreifen:
+[Nach der Einrichtung von Content Hub](/help/assets/deploy-content-hub.md) und fügen Sie einen Benutzer zum [Content Hub-Produktprofil](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)können Sie wie folgt auf Content Hub zugreifen:
 
 * Greifen Sie über den folgenden Link auf Content Hub zu:
 
@@ -89,7 +89,7 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
 <table>
 <td>
    <a href="/help/assets/configure-content-hub-ui-options.md">
-   <img alt="Content Hub bereitstellen" src="./assets/configure-assets.png" />
+   <img alt="Bereitstellen von Content Hub" src="./assets/configure-assets.png" />
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">

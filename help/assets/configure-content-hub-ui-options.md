@@ -1,14 +1,14 @@
 ---
-title: Benutzeroberfläche von Content Hub konfigurieren
-description: Benutzeroberfläche von Content Hub konfigurieren
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+title: Konfigurieren der Benutzeroberfläche von Content Hub
+description: Konfigurieren der Benutzeroberfläche von Content Hub
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1119'
+ht-degree: 7%
 
 ---
 
-# Benutzeroberfläche von Content Hub konfigurieren {#configure-content-hub-user-interface}
+# Konfigurieren der Benutzeroberfläche von Content Hub {#configure-content-hub-user-interface}
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Konfigurieren von Assets in Content Hub](assets/configure-assets.png)
@@ -97,6 +97,10 @@ Mit Content Hub können Administratoren Filter konfigurieren, die bei der Suche 
 1. Klicks **[!UICONTROL Bestätigen]**. Der neue Filter wird in der Liste der vorhandenen Filter angezeigt.
 
 1. Klicks **[!UICONTROL Speichern]** , um die Änderungen so anzuwenden, dass der neue Filter beim Filtern von Assets auf der Suchseite angezeigt wird.
+
+   >[!NOTE]
+   >
+   >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
 
 Auf ähnliche Weise können Sie ![Symbol Bearbeiten](assets/do-not-localize/edit_icon.svg), der neben jedem verfügbaren Filter verfügbar ist, um die Beschriftungen zu bearbeiten, oder klicken Sie auf das Löschsymbol, um einen vorhandenen Filter zu löschen. Klicks **[!UICONTROL Speichern]** nach Durchführung aller Änderungen, um die Änderungen anzuwenden.
 
