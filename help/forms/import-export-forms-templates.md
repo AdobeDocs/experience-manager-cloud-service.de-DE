@@ -6,9 +6,9 @@ role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1073'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -16,35 +16,35 @@ ht-degree: 53%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 # Importieren und Exportieren von adaptiven Formularen und AEM Forms-Assets {#importing-and-exporting-assets-to-aem-forms}
 
-Sie können Adaptive Forms und zugehörige Assets wie Themen für adaptive Formulare, Formulardatenmodell (FDM), Vorlagen für adaptive Formulare, Fragmente und PDF forms zwischen [!DNL AEM Forms] Instanzen.
+Sie können adaptive Formulare und zugehörige Assets wie Designs für adaptive Formulare, Formulardatenmodelle (FDM), Vorlagen für adaptive Formulare, Fragmente und PDF-Formulare zwischen [!DNL AEM Forms]-Instanzen verschieben. 
 
-## Herunterladen adaptiver Forms-, PDF forms- oder zugehöriger Assets {#download-forms-amp-documents-assets}
+## Herunterladen von adaptiven Formularen, PDF-Formularen oder zugehörigen Assets {#download-forms-amp-documents-assets}
 
 So laden Sie Formulare oder zugehörige Assets herunter:
 
 1. Melden Sie sich bei der [!DNL Experience Manager Forms]-Instanz an.
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
-   ![Forms auswählen](/help/forms/assets/select-forms.png)
+   ![Formulare auswählen](/help/forms/assets/select-forms.png)
 
-1. Wählen Sie die Assets aus und klicken Sie auf die **[!UICONTROL Herunterladen]** in der oberen Leiste angezeigt.
+1. Wählen Sie die Assets aus und klicken Sie in der oberen Leiste auf das Symbol **[!UICONTROL Download]**.
 
-   ![Forms herunterladen](/help/forms/assets/download-form.png)
+   ![Formulare herunterladen](/help/forms/assets/download-form.png)
 
-   Wenn Sie das Formular herunterladen, wird die **[!UICONTROL Asset(s) herunterladen]** angezeigt.
+   Wenn Sie das Formular herunterladen, wird das Dialogfeld **[!UICONTROL Asset(s) herunterladen]** angezeigt.
 
-   ![Herunterladen von Formular-Assets](/help/forms/assets/download-form-assets.png)
+   ![Formular-Assets herunterladen](/help/forms/assets/download-form-assets.png)
 
 1. Klicken Sie auf **[!UICONTROL Herunterladen]**.
 
 Die ausgewählten Assets werden als Archiv (.zip-Datei) heruntergeladen.
 
-## Hochladen von adaptiven Forms-, PDF forms- oder zugehörigen Assets {#upload-forms-amp-documents-assets}
+## Hochladen von adaptiven Formularen, PDF-Formularen oder zugehörigen Assets {#upload-forms-amp-documents-assets}
 
 Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Bei einer ZIP-Datei werden die relativen Pfade aller unterstützten Assets angezeigt. Nicht unterstützte Assets in der ZIP-Datei werden ignoriert und nicht aufgelistet. Wenn das ZIP-Archiv jedoch nur die nicht unterstützten Assets enthält, wird anstelle des Popup-Dialogfensters eine Fehlermeldung angezeigt.
 So laden Sie ein Formular oder ein referenziertes Asset hoch:
@@ -52,11 +52,11 @@ So laden Sie ein Formular oder ein referenziertes Asset hoch:
 1. Melden Sie sich bei der [!DNL Experience Manager Forms]-Instanz an.
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
-   ![Forms auswählen](/help/forms/assets/select-forms.png)
+   ![Formulare auswählen](/help/forms/assets/select-forms.png)
 
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]**. Ein Dialogfeld wird angezeigt.
 
-   ![Forms hochladen](/help/forms/assets/form-upload.png)
+   ![Formulare hochladen](/help/forms/assets/form-upload.png)
 
 1. Navigieren Sie im Dialogfeld zum Paket oder Archiv, das importiert werden soll, und wählen Sie es aus. Sie können auch andere unterstützte Dateitypen auswählen. Wählen Sie **[!UICONTROL Öffnen]**. Der ausgewählte Ordner- oder Dateiname darf keine Sonderzeichen enthalten.
 
@@ -66,25 +66,25 @@ So laden Sie ein Formular oder ein referenziertes Asset hoch:
 
    >[!NOTE]
    >
-   > Bei Namenskonflikten mit unterschiedlichen Ressourcentypen wird beim Hochladen eines Pakets die vorhandene Ordnerhierarchie nicht ersetzt. Wenn Sie beispielsweise ein adaptives Formular mit dem Namen &quot;Training&quot;am Speicherort haben `/content/dam/formsanddocuments` auf einem Server. Sie können das adaptive Formular herunterladen und das Formular auf einen anderen Server hochladen. Der zweite Server hat auch einen Ordner mit dem Namen &quot;Training&quot;am selben Speicherort. `/content/dam/formsanddocuments`. Der Hochladevorgang schlägt fehl.
+   > Bei Namenskonflikten mit unterschiedlichen Ressourcentypen wird beim Hochladen eines Pakets die vorhandene Ordnerhierarchie nicht ersetzt. Beispiel: Angenommen, Sie haben ein adaptives Formular mit dem Namen „Training“ am Speicherort `/content/dam/formsanddocuments` auf einem Server gespeichert. Sie können das adaptive Formular herunterladen und es auf einen anderen Server hochladen. Auf dem zweiten Server gibt es ebenfalls einen Ordner „Training“ am selben Speicherort `/content/dam/formsanddocuments`. Der Hochladevorgang schlägt fehl.
 
 ## Herunterladen eines Designs
 
-Sie können Designs in [!DNL AEM Forms] exportieren und in anderen Projekten oder Instanzen verwenden. AEM ermöglicht Ihnen, Designs als ZIP-Datei herunterzuladen, die Sie in die Instanz hochladen können.
+Sie können Designs in [!DNL AEM Forms] exportieren und in anderen Projekten oder Instanzen verwenden. Mit AEM können Sie Designs als ZIP-Datei herunterladen, um diese in die Instanz hochzuladen.
 Herunterladen von Designs
 
-1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms] Autoreninstanz.
-1. Auswählen **[!UICONTROL Forms]** > **[!UICONTROL Designs]**.
+1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Autoreninstanz an. 
+1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**.
 
    ![Design auswählen](/help/forms/assets/select-theme.png)
 
-1. Wählen Sie auf der Seite Designs das Design aus und klicken Sie auf das **[!UICONTROL Herunterladen]** in der oberen Leiste angezeigt.
+1. Wählen Sie auf der Seite „Designs“ das Design aus und klicken Sie in der oberen Leiste auf das Symbol **[!UICONTROL Download]**.
 
-   ![Download-Design](/help/forms/assets/download-theme.png)
+   ![Design herunterladen](/help/forms/assets/download-theme.png)
 
-   Wenn Sie das Design herunterladen, wird die **[!UICONTROL Asset(s) herunterladen]** angezeigt.
+   Wenn Sie das Design herunterladen, wird das Dialogfeld **[!UICONTROL Asset(s) herunterladen]** angezeigt.
 
-   ![Herunterladen von Designassets](/help/forms/assets/download-theme-asset.png)
+   ![Design-Assets herunterladen](/help/forms/assets/download-theme-asset.png)
 
 1. Klicken Sie auf **[!UICONTROL Herunterladen]**.
 
@@ -100,11 +100,11 @@ Hochladen von Designs
 
    ![Design auswählen](/help/forms/assets/select-theme.png)
 
-1. Auf der Seite „Designs“ klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]**.
+1. Auf der Seite „Designs“ klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Datei-Upload]**.
 
    ![Design hochladen](/help/forms/assets/theme-upload.png)
 
-1. Suchen Sie ein Designpaket auf Ihrem Computer, wählen Sie es aus und klicken Sie auf **[!UICONTROL Hochladen]**. Das hochgeladene Design wird auf der Seite Designs verfügbar.
+1. Suchen Sie ein Design-Paket auf Ihrem Computer, wählen Sie es aus und klicken Sie auf **[!UICONTROL Hochladen]**. Das hochgeladene Design ist nun auf der Seite „Designs“ verfügbar.
 
 ## Organisieren von adaptiven Formularen, PDF-Formularen und zugehörigen Assets mithilfe von Ordnern   {#folders-and-organizing-assets}
 
@@ -123,8 +123,8 @@ So erstellen Sie einen Ordner:
 
    ![Ordner erstellen](/help/forms/assets/create-folder.png)
 
-   Die **[!UICONTROL Ordner hinzufügen]** angezeigt.
-1. Geben Sie die **[!UICONTROL Titel]**. Die **[!UICONTROL Name]** automatisch ausgefüllt wird, während Sie die **[!UICONTROL Titel]**.
+   Das Dialogfeld **[!UICONTROL Ordner hinzufügen]** wird angezeigt.
+1. Geben Sie den **[!UICONTROL Titel]** ein. Der **[!UICONTROL Name]** wird mit der Eingabe des **[!UICONTROL Titels]** automatisch ausgefüllt.
 
    ![Ordner hinzufügen](/help/forms/assets/add-folder.png)
 
@@ -142,48 +142,48 @@ Sie können den erstellten Ordner auswählen, um in den Ordner zu wechseln und A
 
 ### Erstellen von Kopien eines oder mehrerer Assets {#create-copies-of-one-or-more-assets-or-letters}
 
-Sie können vorhandene Assets verwenden, um schnell ein Asset mit ähnlichen Eigenschaften, Inhalten und vererbten Assets zu erstellen.
+Sie können vorhandene Assets verwenden, um schnell und einfach Assets mit ähnlichen Eigenschaften, Inhalten und vererbten Assets zu erstellen. 
 
 So erstellen Sie Kopien von Assets:
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Instanz an.
-1. Wählen Sie auf der entsprechenden Asset-Seite mindestens ein Asset aus. Die Benutzeroberfläche zeigt die **[!UICONTROL Kopieren]** Symbol.
-1. Auswählen **[!UICONTROL Kopieren]**. Die Benutzeroberfläche zeigt die ![Symbol &quot;Einfügen&quot;](/help/forms/assets/Smock_Paste_18_N.svg) Symbol.
+1. Wählen Sie auf der entsprechenden Asset-Seite ein oder mehrere Assets aus. Auf der Benutzeroberfläche wird das Symbol **[!UICONTROL Kopieren]** angezeigt.
+1. Wählen Sie **[!UICONTROL Kopieren]**. Auf der Benutzeroberfläche wird das Symbol ![Einfügen](/help/forms/assets/Smock_Paste_18_N.svg) angezeigt.
 
    ![Asset kopieren](/help/forms/assets/copy-asset.png)
 
    Sie können vor dem Einfügen auch in einen Ordner wechseln bzw. darin navigieren. Verschiedene Ordner können Assets mit denselben Namen enthalten. Weitere Informationen zu Ordnern finden Sie unter [Ordner und Organisieren von Assets](#folders-and-organizing-assets).
-1. Auswählen **[!UICONTROL Einfügen]**.
+1. Wählen Sie **[!UICONTROL Einfügen]**. 
 
    ![Asset einfügen](/help/forms/assets/paste-asset.png)
 
-1. Die **[!UICONTROL Einfügen]** angezeigt. Das System generiert automatisch Namen und Titel für die neuen Kopien von Assets, aber Sie können die Titel und Namen der Assets bearbeiten.
+1. Das Dialogfeld **[!UICONTROL Einfügen]** wird angezeigt. Das System generiert automatisch Namen und Titel für die neuen Kopien von Assets, aber Sie können die Titel und Namen der Assets bearbeiten.
 
-   Wenn Sie die Assets kopieren und an derselben Stelle einfügen, wird dem vorhandenen Namen des `asset`. Wenn für das kopierte Asset kein Titel vorhanden war, bleibt das automatisch generierte Titelfeld leer.
+   Wenn Sie die Assets an dieselbe Stelle kopieren und einfügen, wird dem bestehenden `asset`-Namen das Suffix „-CopyXX“ hinzugefügt. Wenn für das kopierte Asset kein Titel vorhanden gewesen ist, bleibt das Feld für den automatisch generierten Titel leer.
 
-   ![Einfügen von Assets an einem neuen Speicherort](/help/forms/assets/paste-click-asset.png)
+   ![Asset an neuem Speicherort einfügen](/help/forms/assets/paste-click-asset.png)
 
-   Bearbeiten Sie bei Bedarf die **[!UICONTROL Titel]** mit dem Sie die Kopie des Assets speichern möchten. Die **[!UICONTROL Name]** automatisch ausgefüllt wird, während Sie die **[!UICONTROL Titel]**.
-1. Auswählen **[!UICONTROL Einfügen]**. Es werden neue Kopien der kopierten Assets erstellt.
+   Bearbeiten Sie ggf. den **[!UICONTROL Titel]**, unter dem Sie die Asset-Kopie speichern möchten. Der **[!UICONTROL Name]** wird automatisch ausgefüllt, wenn Sie den **[!UICONTROL Titel]** eingeben.
+1. Wählen Sie **[!UICONTROL Einfügen]**. Es werden neue Kopien der kopierten Assets erstellt.
 
 ## Suchen {#search-forms}
 
-Wenn Sie eine große Anzahl von Assets haben, ist die Suche nach dem richtigen Asset zeitaufwendig. Sie können eine textbasierte Suche nach einem bestimmten Asset auf der Asset-Seite durchführen.
+Wenn Sie über eine große Anzahl von Assets verfügen, kann die Suche nach dem richtigen Asset zeitaufwendig sein. Auf der Asset-Seite können Sie eine textbasierte Suche nach einem bestimmten Asset durchführen.
 
 So suchen Sie das Asset:
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Instanz an.
-1. Klicken Sie auf ![Suchsymbol](assets/folder-search-icon.svg) Suchsymbol.
+1. Klicken Sie auf das ![Suchsymbol](assets/folder-search-icon.svg) Suchsymbol.
 
    ![Suchformular](/help/forms/assets/search-form.png)
 
-1. Geben Sie in der Suchleiste den Namen des Assets ein, nach dem Sie suchen möchten.
+1. Geben Sie in der Suchleiste den Namen des Assets ein, das Sie suchen möchten.
 
-1. Eine Liste verwandter Assets wird angezeigt. Wählen Sie das gewünschte Asset aus der angezeigten Asset-Liste aus.
+1. Eine Liste zugehöriger Assets wird angezeigt. Wählen Sie das gewünschte Asset aus der angezeigten Asset-Liste aus.
 
    ![Suchen von Assets](/help/forms/assets/search-bar.png)
 
-Weitere Informationen und Anweisungen zur Verwendung der Suche finden Sie unter [Suche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de).
+Weitere Informationen und Anweisungen zur Verwendung der Suche finden Sie unter [Suchen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de).
 
 <!--
 ## Export or create a package {#export-a-workflow-application}
