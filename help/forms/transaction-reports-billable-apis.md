@@ -58,7 +58,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Durchschnittliche Dauer für die Formularerstellung"
->abstract="Das Diagramm zeigt die durchschnittliche Zeit, die zum Erstellen eines Formulars benötigt wurde. Jeder Balken im Diagramm stellt ein bestimmtes Formular dar. Die Höhe des Balkens gibt die durchschnittliche Dauer an, die für die Formularerstellung während dieses Zeitraums verwendet wurde. "
+>abstract="Das Diagramm zeigt die durchschnittliche Zeit, die zum Erstellen eines Formulars benötigt wurde. Jeder Balken im Diagramm stellt ein bestimmtes Formular dar. Die Höhe des Balkens gibt die durchschnittliche Dauer an, die für die Formularerstellung während dieses Zeitraums verwendet wurde."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"

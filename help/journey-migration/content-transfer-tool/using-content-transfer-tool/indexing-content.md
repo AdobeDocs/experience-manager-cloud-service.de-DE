@@ -5,7 +5,7 @@ exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Inhaltsindizierung"
->abstract="Die Indizierung bei AEM bezieht sich auf die Indizierung des Inhalts auf der Cloud Service-Instanz nach der Migration der Inhalte dorthin.  Eine Indizierung ist erforderlich, um die Suche nach Inhalten in dieser Instanz zu unterstützen."
+>abstract="Die Indizierung bei AEM bezieht sich auf die Indizierung des Inhalts auf der Cloud Service-Instanz nach der Migration der Inhalte dorthin. Eine Indizierung ist erforderlich, um die Suche nach Inhalten in dieser Instanz zu unterstützen."
 
 Sobald der Cloud Acceleration Manager die Aufnahme von Inhalten in Ihre Cloud Service-Instanz abgeschlossen hat, kann er verwendet werden. Zunächst wird der Inhalt nicht indiziert, was wahrscheinlich zu einer instabilen Umgebung führt, in der Probleme wie nicht durchsuchbare Inhalte und eine beeinträchtigte Leistung erwartet werden können. Um eine optimale Leistung auf der Instanz zu erzielen, startet der Migrationsprozess automatisch mit der Indizierung des Inhalts. Es gibt dabei nichts zu tun, außer den Indizierungsfortschritt zu überwachen.
 
