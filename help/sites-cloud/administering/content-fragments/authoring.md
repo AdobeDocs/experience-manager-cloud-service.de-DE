@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
-source-wordcount: '2668'
-ht-degree: 100%
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
+workflow-type: tm+mt
+source-wordcount: '2687'
+ht-degree: 98%
 
 ---
 
@@ -354,13 +354,20 @@ Um ein Asset hinzuzufügen, haben Sie folgende Möglichkeiten:
 
 #### Auf Seiten verweisen {#reference-pages}
 
-So fügen Sie Verweise zu AEM-Seiten, Experience Fragments oder anderen Inhaltsypen hinzu:
+So fügen Sie Verweise auf AEM Seiten, Experience Fragments oder andere solche Inhaltstypen hinzu:
 
 1. Wählen Sie **Inhaltspfad hinzufügen** aus.
 
 1. Fügen Sie im Eingabefeld den erforderlichen Pfad hinzu.
 
 1. Bestätigen Sie mit **Hinzufügen**.
+
+>[!NOTE]
+>
+>Dies sollte nicht für Verweise auf Folgendes verwendet werden:
+>
+>* Inhaltsfragmente - Verwendung einer [Fragmentverweis](#fragment-references)
+>* Bilder - Verwendung [Referenzbilder](#reference-images)
 
 ### Anzeigen übergeordneter Verweise {#view-parent-references}
 
