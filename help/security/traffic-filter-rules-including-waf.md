@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '3947'
-ht-degree: 100%
+source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+workflow-type: tm+mt
+source-wordcount: '3938'
+ht-degree: 96%
 
 ---
 
@@ -246,9 +246,9 @@ Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, d
 
 | **Name** | **Zulässige Eigenschaften** | **Bedeutung** |
 |---|---|---|
-| **allow** | `wafFlags` (optional), `alert` (optional, noch nicht veröffentlicht) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und es wird mit der Bereitstellung der Antwort fortgefahren. Wenn wafFlags vorhanden ist, deaktiviert dies die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
-| **block** | `status, wafFlags` (optional und sich gegenseitig ausschließen), `alert` (optional, noch nicht veröffentlicht) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehler-Code wird durch die Statuseigenschaft definiert bzw. standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht dies bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
-| **log** | `wafFlags` (optional), `alert` (optional, noch nicht veröffentlicht) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Diese Funktion wurde noch nicht veröffentlicht. Im Abschnitt [Warnhinweise für Traffic-Filterregeln](#traffic-filter-rules-alerts) finden Sie weitere Informationen zur Teilnahme am Early-Adopter-Programm. |
+| **allow** | `wafFlags` (optional), `alert` (optional) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und es wird mit der Bereitstellung der Antwort fortgefahren. Wenn wafFlags vorhanden ist, deaktiviert dies die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
+| **block** | `status, wafFlags` (optional und gegenseitig ausschließen), `alert` (optional) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehler-Code wird durch die Statuseigenschaft definiert bzw. standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht dies bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
+| **log** | `wafFlags` (optional), `alert` (optional) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
 
 ### WAF-Flags-Liste {#waf-flags-list}
 
@@ -494,16 +494,14 @@ data:
 
 ## Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->Diese Funktion wurde noch nicht veröffentlicht. Um über das Early-Adopter-Programm Zugriff zu erhalten, senden Sie eine E-Mail an **aemcs-waf-adopter@adobe.com**.
+Eine Regel kann so konfiguriert werden, dass eine Benachrichtigung des Aktionszentrums gesendet wird, wenn sie innerhalb eines 5-minütigen Fensters zehnmal ausgelöst wird. Eine solche Regel warnt Sie, wenn bestimmte Traffic-Muster auftreten, sodass Sie die erforderlichen Maßnahmen treffen können. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst.
 
-Eine Regel kann so konfiguriert werden, dass eine Benachrichtigung des Aktionszentrums gesendet wird, wenn sie innerhalb eines 5-minütigen Fensters zehnmal ausgelöst wird. Eine solche Regel warnt Sie, wenn bestimmte Traffic-Muster auftreten, sodass Sie die erforderlichen Maßnahmen treffen können. Erfahren Sie mehr über das [Aktionszentrum](/help/operations/actions-center.md), einschließlich der Einrichtung der erforderlichen Benachrichtigungsprofile für den Empfang von E-Mails.
+Erfahren Sie mehr über das [Aktionszentrum](/help/operations/actions-center.md), einschließlich der Einrichtung der erforderlichen Benachrichtigungsprofile für den Empfang von E-Mails.
 
 ![Benachrichtigung des Aktionszentrums](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-Die Warnhinweis-Eigenschaft (derzeit mit dem Präfix *experimentell*, da die Funktion noch nicht veröffentlicht wurde) kann auf alle Aktionstypen (zulassen, blockieren, protokollieren) auf den Aktionsknoten angewendet werden.
+Die Eigenschaft alert kann für alle Aktionstypen (allow, block, log) auf den Knoten action angewendet werden.
 
 ```
 kind: "CDN"
@@ -520,7 +518,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## Warnhinweis zu Standard-Traffic-Spitze am Ursprung {#traffic-spike-at-origin-alert}
@@ -533,7 +531,7 @@ Eine E-Mail-Benachrichtigung des [Aktionszentrums](/help/operations/actions-cent
 
 Wenn dieser Schwellenwert erreicht wird, blockiert Adobe den Traffic von dieser IP-Adresse. Es wird jedoch empfohlen, zusätzliche Maßnahmen zu ergreifen, um Ihren Ursprung zu schützen, einschließlich der Konfiguration von Traffic-Filterregeln zur Ratenbegrenzung, um Traffic-Spitzen bei niedrigeren Schwellenwerten zu blockieren. Weitere Informationen finden Sie im [Tutorial zum Blockieren von DoS- und DDoS-Angriffen mithilfe von Traffic-Regeln](#tutorial-blocking-DDoS-with-rules), das Sie durch die einzelnen Schritte führt.
 
-Dieser Warnhinweis ist standardmäßig aktiviert, kann aber durch Festlegen der Eigenschaft *enable_ddos_alerts* auf „false“ deaktiviert werden.
+Dieser Warnhinweis ist standardmäßig aktiviert, kann jedoch mithilfe der Eigenschaft *enable_ddos_alerts* deaktiviert werden, die auf &quot;false&quot;gesetzt ist. Sobald der Warnhinweis ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst.
 
 ```
 kind: "CDN"
