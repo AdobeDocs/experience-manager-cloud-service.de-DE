@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
-workflow-type: ht
-source-wordcount: '1310'
-ht-degree: 100%
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+workflow-type: tm+mt
+source-wordcount: '1326'
+ht-degree: 97%
 
 ---
 
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -292,7 +292,7 @@ In der folgenden Tabelle wird die verfügbare Aktion erläutert.
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Name eines der definierten Ursprünge. |
-|     | useCache (optional, Standardeinstellung ist „true“) | Flag, ob Caching für Anforderungen verwendet werden soll, die dieser Regel entsprechen. |
+|     | skipCache (optional, Standardeinstellung ist false) | Flag, ob für Anforderungen, die dieser Regel entsprechen, Zwischenspeicherung verwendet werden soll. Standardmäßig werden Antworten gemäß dem Antwort-Caching-Header zwischengespeichert (z. B. Cache-Control oder Expires). |
 
 **Ursprünge**
 
