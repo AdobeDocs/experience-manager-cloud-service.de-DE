@@ -4,10 +4,10 @@ description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1802'
-ht-degree: 100%
+source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+workflow-type: tm+mt
+source-wordcount: '1235'
+ht-degree: 97%
 
 ---
 
@@ -27,10 +27,13 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 
 >[!NOTE]
 >
+>Bitte verwenden Sie immer die aktuellsten verfügbaren Versionen dieser Plug-ins.
+
+>[!NOTE]
+>
 >Die **Paketerstellung** wird jetzt über das [Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/) durchgeführt.
 >
->* `content-package-maven-plugin` unterstützt ab Version 1.0.2 nicht mehr die Paketerstellung.
->* Dieser Artikel beschreibt die **Bereitstellung** der vom Adobe Content Package Maven-Plug-in erstellten Pakete in AEM.
+>In diesem Artikel wird die **Bereitstellung** der erstellten Pakete beschrieben, die AEM werden sollen, wie vom Adobe Content Package Maven-Plug-in ausgeführt.
 
 ## Pakete und die AEM-Projektstruktur {#aem-project-structure}
 
@@ -160,64 +163,6 @@ Deinstalliert ein Paket. Das Paket verbleibt auf dem Server mit dem deinstallier
 
 Alle Parameter des Ziels „uninstall“ werden im Abschnitt [Allgemeine Parameter](#common-parameters) beschrieben.
 
-### package {#package}
-
-Erstellt ein Inhaltspaket. Die Standardkonfiguration des Paketziels umfasst die Inhalte des Verzeichnisses, in dem kompilierte Dateien gespeichert sind. Für die Ausführung des Paketziels muss die Phase der Build-Kompilierung abgeschlossen sein. Das Paketziel ist an die Paketphase des Maven-Build-Lebenszyklus gebunden.
-
-#### Parameter {#parameters-5}
-
-Lesen Sie neben den folgenden Parametern die Beschreibung des Parameters `name` im Abschnitt [Allgemeine Parameter](#common-parameters).
-
-| Name | Typ | Erforderlich | Standardwert | Beschreibung |
-|---|---|---|---|---|
-| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | Nein | Kein | Die zu verwendende Archivkonfiguration |
-| `builtContentDirectory` | `java.io.File` | Ja | Der Wert des Ausgabeverzeichnisses des Maven-Builds | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
-| `dependencies` | `java.util.List` | Nein | Kein |  |
-| `embeddedTarget` | `java.lang.String` | Nein | Kein |  |
-| `embeddeds` | `java.util.List` | Nein | Kein |  |
-| `failOnMissingEmbed` | `boolean` | Ja | `false` | Der Wert `true` führt zum Fehlschlagen des Builds, wenn ein eingebettetes Artefakt in den Projektabhängigkeiten nicht gefunden werden kann. Der Wert `false` führt dazu, dass der Build solche Fehler ignoriert. |
-| `filterSource` | `java.io.File` | Nein | Kein | Dieser Parameter definiert eine die Quelle des Arbeitsbereichsfilters angebende Datei. Die in der Konfiguration angegebenen und über Einbettungen oder Teilpakete eingefügten Filter werden mit dem Dateiinhalt zusammengeführt. |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | Nein | Kein | Dieser Parameter enthält Filterelemente, die den Paketinhalt definieren. Bei der Ausführung werden die Filter in der Datei `filter.xml` eingeschlossen. Siehe hierzu im Folgenden den Abschnitt [Verwenden von „filters“](#using-filters). |
-| `finalName` | `java.lang.String` | Ja | Der im Maven-Projekt (Build-Phase) definierte `finalName` | Der Name der generierten ZIP-Paketdatei ohne die Dateierweiterung `.zip` |
-| `group` | `java.lang.String` | Ja | Die im Maven-Projekt definierte `groupID` | Die `groupId` des generierten Inhaltspakets, die Teil des Ziel-Installationspfads für das Inhaltspaket ist |
-| `outputDirectory` | `java.io.File` | Ja | Das im Maven-Projekt definierte Build-Verzeichnis | Das lokale Verzeichnis, in dem das Inhaltspaket gespeichert ist |
-| `prefix` | `java.lang.String` | Nein | Kein |  |
-| `project` | `org.apache.maven.project.MavenProject` | Ja | Kein | Das Maven-Projekt |
-| `properties` | `java.util.Map` | Nein | Kein | Diese Parameter definieren zusätzliche Eigenschaften, die Sie in der Datei `properties.xml` festlegen können. Diese Eigenschaften können die folgenden vordefinierten Eigenschaften nicht außer Kraft setzen: `group` (Parameter `group` zum Festlegen verwenden), `name` (Parameter `name` zum Festlegen verwenden), `version` (Parameter `version` zum Festlegen verwenden), `description` (festgelegt anhand der Projektbeschreibung), `groupId` (`groupId` des Maven-Projektdeskriptors), `artifactId` (`artifactId` des Maven-Projektdeskriptors), `dependencies` (Parameter `dependencies` zum Festlegen verwenden), `createdBy` (Wert der Systemeigenschaft `user.name`), `created` (die aktuelle Systemzeit), `requiresRoot` (Parameter `requiresRoot` zum Festlegen verwenden), `packagePath` (automatisch generiert anhand des Gruppen- und Paketnamens) |
-| `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist. Wird zur `requiresRoot`-Eigenschaft der Datei `properties.xml`. |
-| `subPackages` | `java.util.List` | Nein | Kein |  |
-| `version` | `java.lang.String` | Ja | Die im Maven-Projekt definierte Version | Die Version des Inhaltspakets |
-| `workDirectory` | `java.io.File` | Ja | Das im Maven-Projekt (Build-Phase) definierte Verzeichnis | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
-
-#### Verwenden von „filters“ {#using-filters}
-
-Verwenden Sie das Element „filters“ zum Definieren des Paketinhalts. Die Filter werden zum Element `workspaceFilter` in der Datei `META-INF/vault/filter.xml` des Pakets hinzugefügt.
-
-Im folgenden Filterbeispiel wird die zu verwendende XML-Struktur gezeigt:
-
-```xml
-<filter>
-   <root>/apps/myapp</root>
-   <mode>merge</mode>
-       <includes>
-              <include>/apps/myapp/install/</include>
-              <include>/apps/myapp/components</include>
-       </includes>
-       <excludes>
-              <exclude>/apps/myapp/config/*</exclude>
-       </excludes>
-</filter>
-```
-
-##### Importmodus {#import-mode}
-
-Das Element `mode` definiert, wie sich das Importieren des Pakets auf den Inhalt im Repository auswirkt. Die folgenden Werte können verwendet werden:
-
-* **Merge:** Inhalt im Paket, der sich nicht bereits im Repository befindet, wird hinzugefügt. Inhalte, die sowohl im Paket als auch im Repository enthalten sind, bleiben unverändert. Es wird kein Inhalt aus dem Repository entfernt.
-* **Replace:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Der Inhalt im Repository wird durch den entsprechenden Inhalt im Paket ersetzt. Inhalte werden aus dem Repository entfernt, wenn sie nicht im Paket vorhanden sind.
-* **Update:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Der Inhalt im Repository wird durch den entsprechenden Inhalt im Paket ersetzt.
-
-Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` verwendet.
 
 ### help {#help}
 
