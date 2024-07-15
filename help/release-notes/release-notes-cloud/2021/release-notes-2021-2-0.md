@@ -59,7 +59,7 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] ist berechtigt, eine vorkonfigurierte [!DNL Brand Portal]-Instanz zu haben. Der [!DNL Cloud Manager]-Nutzer kann [!DNL Brand Portal] unter [!DNL Experience Manager Assets] as a [!DNL Cloud Service] aktivieren. Siehe [Aktivieren von Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=de).
 
-* Unternehmen können jetzt Assets mit [!DNL Brand Portal] beschaffen. Verwendung der Asset-Beschaffungsfunktion [!DNL Brand Portal] , um Kunden bei der Interaktion mit Agenturbenutzern zu helfen, Assets für neue Marketing-Kampagnen, Fotoshootings und Projekte zu erhalten. Weitere Informationen finden Sie unter [Asset-Beschaffung in  [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de).
+* Unternehmen können jetzt Assets mit [!DNL Brand Portal] beschaffen. Die Asset-Beschaffungsfunktion verwendet [!DNL Brand Portal], um Kunden bei der Interaktion mit Agenturbenutzern zu helfen, Assets für neue Marketing-Kampagnen, Fotoshoots und Projekte zu erhalten. Weitere Informationen finden Sie unter [Asset-Beschaffung in  [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de).
 
 * Der Nutzungsbericht für [!DNL Brand Portal] zeigt jetzt nur noch die aktiven Benutzer an. Die inaktiven Benutzer werden jetzt nicht mehr angezeigt. Aktive Benutzer sind diejenigen, deren Konto einem Produktprofil in der [!DNL Admin Console] zugewiesen ist. Weitere Informationen finden Sie unter [[!DNL Brand Portal] Berichte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=de).
 
@@ -80,9 +80,9 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 * Erweiterte Eigenschaften der Produktkonsole zum Anzeigen verknüpfter Assets und Experience Fragments, einschließlich Aktionen zum schnellen Navigieren zum zugehörigen Inhalt.
 
-* Veröffentlicht CIF Venia-Referenz-Site 2021.02.24, die die neueste Version der CIF Kernkomponenten Version 1.8.0 enthält. Siehe [Venia-Referenz-Website CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) für weitere Details.
+* Veröffentlicht CIF Venia-Referenz-Site 2021.02.24, die die neueste Version der CIF Kernkomponenten Version 1.8.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) .
 
-* Version 1.8.0 CIF Kernkomponenten veröffentlicht. Siehe [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) für weitere Details.
+* Version 1.8.0 CIF Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) .
 
 ## Cloud Manager {#cloud-manager}
 
@@ -107,7 +107,7 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 
 * Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend ein SSL-Zertifikat nicht auswählen kann, wenn es von einem Domain-Namen verwendet wird, der gerade bereitgestellt wird.
 
-* Es wurden zusätzliche Regeln zur Code-Qualität hinzugefügt, um Probleme mit der Kompatibilität von Cloud Services abzudecken.
+* Es wurden zusätzliche Code-Qualitätsregeln hinzugefügt, um Probleme mit der Kompatibilität von Cloud Services zu behandeln.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
@@ -161,9 +161,9 @@ Best Practices Analyzer 2.1.2 wurde am 18. Februar 2021 veröffentlicht.
 ### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
 * Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält mehrere Fehlerbehebungen für den Repository Modernizer.
-Siehe [Einheitliches Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) , um mehr über dieses Plugin zu erfahren.
+Weitere Informationen zu diesem Plug-in finden Sie unter [Einheitliches Erlebnis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) .
 
 ### Fehlerbehebungen {#bug-fixes-crt}
 
 * Mehrere Fehlerbehebungen, die im Repository Modernizer vorgenommen wurden.
-Siehe [GitHub-Ressource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für weitere Details.
+Weitere Informationen finden Sie unter [GitHub-Ressource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) .

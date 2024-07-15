@@ -5,8 +5,8 @@ role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 source-git-commit: b4b397a09960f507df1daa0cf6f5dc49d6b286c6
-workflow-type: ht
-source-wordcount: '363'
+workflow-type: tm+mt
+source-wordcount: '515'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Durchsuchen](/help/assets/navigate-view.md) | Kopieren | [Hochladen](/help/assets/add-delete.md) | Erstellen | [Löschen](/help/assets/add-delete.md#delete-assets) | Details | Bild-Zoom | [Kürzlich angesehen](/help/assets/navigate-view.md) |
 |-------------------|----------|----------|----------|----------|----------|-------------------|------------|-----------------|
 | Rasterbilder | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4-Videos | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
@@ -57,7 +57,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Download](/help/assets/manage-organize.md#download) | Drag-and-Drop | [Bildeditor](/help/assets/edit-images.md) | [Suchen](/help/assets/search.md) | [Smart-Tags](/help/assets/metadata.md#tags) | [Umbenennen](/help/assets/manage-organize.md) | [Versionen](/help/assets/manage-organize.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Rasterbilder | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Videos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − | − | − | ✓ | ✓ |
@@ -72,7 +72,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | Anmerken | Kommentar | Erstellen von Aufgaben und Überprüfen |
 |---------------|----------|----------|-------------------------|
 | Rasterbilder | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | ✓ |
 | Ordner | − | − | − |
 | Videos | − | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − |
@@ -93,7 +93,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Asset-Typ | [Metadaten](/help/assets/metadata.md) | [Ausgabedarstellungen](/help/assets/add-delete.md#renditions) | [Papierkorb](/help/assets/add-delete.md#delete-assets) | Kopieren | Verschieben |
 |---------------|-------------------|------------|----------|----------|----------|
 | Rasterbilder | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW Dateien | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | − | ✓ | ✓ | ✓ |
 | Videos | ✓ | − | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | ✓ | − | − | − | − |
@@ -126,4 +126,4 @@ Benutzer von [!DNL Adobe Asset Link] können Dateien aus den unterstützten Desk
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General?lang=de#support)

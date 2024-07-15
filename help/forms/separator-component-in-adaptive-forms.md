@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Im Layout-Modus können Sie die Anzahl der Spalten festlegen, die die Trennzeich
 
 Angeben der Eigenschaften einer Trennzeichenkomponente:
 
-1. Wählen Sie eine Trennzeichenkomponente aus und wählen Sie ![cmppr](assets/cmppr.png). Die Eigenschaften werden in der Seitenleiste angezeigt.
+1. Wählen Sie eine Trennzeichenkomponente und dann ![cmppr](assets/cmppr.png) aus. Die Eigenschaften werden in der Seitenleiste angezeigt.
 1. Klicken Sie auf eine Registerkarte im Abschnitt „Inline-CSS-Eigenschaften“, um CSS-Eigenschaften festzulegen. Beispiel: Klicken Sie auf der Registerkarte „Feld“ auf **Element hinzufügen**. Es wird eine Zeile mit zwei Feldern hinzugefügt.
 1. Geben Sie im ersten Feld von links eine CSS3-Eigenschaft an, die Sie anwenden möchten. Beispielsweise **Rahmen**. Sie können eine Eigenschaft auch auswählen, indem Sie auf den Pfeil nach unten klicken. Die Dropdown-Liste ist nicht vollständig und Sie können einen beliebigen unterstützten CSS3-Eigenschaftennamen in dieses Feld eingeben.
 1. Geben Sie im angrenzenden Feld einen gültigen Wert für die angegebene CSS3-Eigenschaft an. Beispielsweise **3 pixels solid black**.

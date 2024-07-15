@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 8d9ae4c7512198bd3e01a881665621d3ecbcd98d
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie die Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge De
 
 ## Voraussetzungen {#prerequisites}
 
-Projekte, die WYSIWYG Authoring mit Edge Delivery Services verwenden, erben den Großteil der Mechanik anderer Edge Delivery Services-Projekte, unabhängig von der Inhaltsquelle oder [Authoring-Methode.](/help/edge/wysiwyg-authoring/authoring.md)
+Projekte, die WYSIWYG Authoring mit Edge Delivery Services verwenden, erben den Großteil der Mechanik anderer Edge Delivery Services-Projekte, unabhängig von der Inhaltsquelle oder der [Authoring-Methode.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Bevor Sie mit der Modellierung von Inhalten für Ihr Projekt beginnen, lesen Sie zunächst Folgendes:
 
@@ -39,7 +39,7 @@ In AEM werden diese Inhalte als Komponenten mit sehr einfachen, vordefinierten M
 * **Bild**: Quelle, Beschreibung
 * **Schaltfläche**: Text, Titel, URL, Typ (Standard, primär, sekundär)
 
-Das Modell dieser Komponenten ist Teil der [Textbaustein für WYSIWYG-Authoring mit Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Das Modell dieser Komponenten ist Teil der [Bausteinvorlage für WYSIWYG-Authoring mit Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Blöcke {#blocks}
 
@@ -345,7 +345,7 @@ Für einige Werte kann die semantische Bedeutung aus den Werten selbst abgeleite
 * **Bilder**: Wenn eine Referenz auf eine Ressource in AEM ein Asset mit einem MIME-Typ ist, der mit `image/` beginnt, wird die Referenz als `<picture><img src="${reference}"></picture>` gerendert.
 * **Links**: Wenn eine Referenz in AEM vorhanden ist, die kein Bild ist, oder wenn der Wert mit `https?://` oder `#` beginnt, wird die Referenz als `<a href="${reference}">${reference}</a>` gerendert.
 * **Rich-Text**: Wenn ein abgeschnittener Wert mit einem Absatz beginnt (`p`, `ul`, `ol`, `h1`-`h6` usw.), wird der Wert als Rich-Text gerendert.
-* **Klassennamen** - die `classes` -Eigenschaft wird als [Blockoptionen](/help/edge/developer/markup-sections-blocks.md#block-options) und in der Tabellenüberschrift für [einfache Blöcke,](#simple) oder als Werteliste für Elemente in einer [Container-Block.](#container) Es ist nützlich, wenn Sie möchten [einen Block anders gestalten,](/help/edge/wysiwyg-authoring/create-block.md#block-options) aber keinen völlig neuen Baustein erstellen.
+* **Klassennamen**: Die `classes`-Eigenschaft wird als [Blockoptionen](/help/edge/developer/markup-sections-blocks.md#block-options) behandelt und in der Tabellenkopfzeile für [einfache Blöcke](#simple) bzw. als Werteliste für Elemente in einem [Container-Block gerendert.](#container) Sie ist nützlich, wenn Sie [einen Block anders gestalten](/help/edge/wysiwyg-authoring/create-block.md#block-options), aber keinen völlig neuen Block erstellen möchten.
 * **Wertelisten**: Wenn es sich bei einem Wert um eine Eigenschaft mit mehreren Werten handelt und der erste Wert keiner der vorherigen ist, werden alle Werte als kommagetrennte Liste verkettet.
 
 Alles andere wird als einfacher Text gerendert.
@@ -652,11 +652,11 @@ Erstellen Sie dazu ein Komponentenmodell mit der ID `page-metadata`.
 
 Nachdem Sie nun wissen, wie Sie Inhalte modellieren können, können Sie mit dem WYSIWYG-Authoring-Projekt Bausteine für Ihre eigenen Edge Delivery Services erstellen.
 
-Siehe Dokument . [Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen](/help/edge/wysiwyg-authoring/create-block.md) Hier erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor in WYSIWYG-Authoring mit Edge Delivery Services-Projekten instrumentiert wurden.
+Informationen zum Erstellen von Bausteinen, die für die Verwendung mit dem universellen Editor instrumentiert wurden, mit dem universellen Editor in WYSIWYG-Authoring mit Edge Delivery Services-Projekten finden Sie im Dokument [Erstellen von Bausteinen, die für die Verwendung mit dem universellen Editor instrumentiert wurden](/help/edge/wysiwyg-authoring/create-block.md) .
 
-Informationen zum Erstellen von Bausteinen finden Sie im Dokument . [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) , um Sie mit einer neuen Adobe Experience Manager-Site zu vertraut zu machen, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung nutzt.
+Wenn Sie bereits mit dem Erstellen von Bausteinen vertraut sind, lesen Sie das Dokument [Entwicklerhandbuch für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) , um Sie mit einer neuen Adobe Experience Manager-Site zu vertraut zu machen, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet.
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM als Inhaltsquelle aktiviert ist, finden Sie unter [Dieses AEM GEMs-Webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery) .
 

@@ -13,7 +13,7 @@ ht-degree: 85%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 {#release-notes}
 
-Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.4.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.4.0 von [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme
 
 Vor Kurzem wurde ein neuer Analyzer hinzugefügt:
 
-* `content-packages-validation` - validiert für eine gut geformte Inhaltssyntax und -struktur für Pakete, die während der Bereitstellung installiert werden
+* `content-packages-validation` - überprüft die gut formulierte Inhaltssyntax und -struktur für Pakete, die während der Bereitstellung installiert werden
 
 Es wird dringend empfohlen, Ihr Maven-Projekt mit der neuesten Version des Analyzers zu aktualisieren oder den Analyzer einzubinden, falls Sie dies noch nicht getan haben. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de).
 

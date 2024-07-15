@@ -3,13 +3,13 @@ title: Wie kann AEM SDK neu gestartet werden?
 description: Best Practices für den Neustart AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: a0e2c0e3020d48b171645818b8e02dc33b50c2d5
+exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 14%
+ht-degree: 27%
 
 ---
-
 
 # Neustart des AEM SDK
 
@@ -21,9 +21,9 @@ Wenn Sie das AEM SDK neu starten, indem Sie die Java™-Prozesse stoppen, kann d
 
 ## Lösung
 
-Um das AEM SDK neu zu starten, wechseln Sie zum aktiven Befehlsfenster und drücken Sie die `Ctrl + C` -Befehl zum Neustart des SDK.
+Um das AEM SDK neu zu starten, wechseln Sie zum aktiven Befehlsfenster und drücken Sie den Befehl `Ctrl + C` , um das SDK neu zu starten.
 
-Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java™-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java™-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 ## Siehe auch
 

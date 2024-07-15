@@ -6,7 +6,7 @@ feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 100%
 
@@ -384,8 +384,8 @@ Experience Manager zeigt viele verschiedene Viewer-Vorgaben, wenn Sie ein Asset 
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. Ändern Sie in der Eigenschaft „Limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus.
+1. Ändern Sie den Wert in der Eigenschaft „Limit“ auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 ## Erstellen von Viewer-Vorgaben {#creating-a-new-viewer-preset}
 

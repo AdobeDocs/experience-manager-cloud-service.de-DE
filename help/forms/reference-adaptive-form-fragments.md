@@ -8,8 +8,8 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 75%
+source-wordcount: '396'
+ht-degree: 83%
 
 ---
 
@@ -31,7 +31,7 @@ Für Entwickler adaptiver Formulare werden Referenzfragmente im [!DNL AEM Forms]
 * Nutzungsbedingungen
 * Nutzungsbedingungen mit Scribble
 
-Wenn Sie das Paket installieren, wird unter Forms und Dokumente ein Ordner mit Referenzfragmenten erstellt. Informationen zur Installation von Paketen finden Sie unter [Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#deploying-content-packages-via-cloud-manager-and-package-manager) und [So arbeiten Sie mit Paketen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de).
+Wenn Sie das Paket installieren, wird unter „Formulare und Dokumente“ ein Referenzfragmente-Ordner mit Referenzfragmenten erstellt, der Referenzfragmente enthält. Informationen zur Installation von Paketen finden Sie unter [Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#deploying-content-packages-via-cloud-manager-and-package-manager) und [So arbeiten Sie mit Paketen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de).
 
 ![Alle aufgeführten Fragmente](assets/ootb-frags.png)
 
@@ -58,7 +58,7 @@ Enthält Felder zum Erfassen einer Telefonnummer und E-Mail-Adresse.
 ## Kreditkartenangaben {#credit-card-information}
 
 Beinhaltet Felder zur Erfassung von Kreditkartenangaben, die zur Verarbeitung von Zahlungen verwendet werden können.
-[![Kreditkartenangabenfragment](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragment für Kreditkarteninformationen](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Aktuelle Beschäftigung {#current-employment}
 
@@ -82,7 +82,7 @@ Enthält Felder für Informationen über ein oder mehrere abhängige Familienmit
 
 ## Beschäftigungshintergrund {#employment-history}
 
-Enthält Felder zur Erfassung der Beschäftigungsgeschichte. Es ermöglicht das Hinzufügen mehrerer Organisationen.
+Enthält Felder zur Erfassung der Beschäftigungshistorie. Es ermöglicht das Hinzufügen mehrerer Organisationen.
 
 ![Fragment für Beschäftigungshintergrund](assets/emp-history.png)
 

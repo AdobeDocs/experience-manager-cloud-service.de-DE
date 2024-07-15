@@ -66,11 +66,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Verwenden von Adobe Sign-Rollen in adaptiven Formularen** - Mit Adobe Sign für Unternehmens- und Business-Service-Levels können Sie optional die Rollen für Vertragsempfänger erweitern, um sie über den Unterzeichner hinaus besser an ihre Workflow-Anforderungen anzupassen. Sie können jetzt [jedem Empfänger der Vereinbarung die Konfiguration seiner Rolle in einem adaptiven Formular ermöglichen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), wobei &quot;Unterzeichner&quot;die Standardrolle ist.
+* **Verwenden Sie Adobe Sign-Rollen in einem adaptiven Formular** - Adobe Sign für Unternehmens- und Unternehmensdienstebenen ermöglichen es Ihnen, optional die Rollen für Vertragsempfänger über den Unterzeichner hinaus zu erweitern, damit sie besser den Workflow-Anforderungen entsprechen. Sie können jetzt [jedem Empfänger der Vereinbarung die Konfiguration seiner Rolle in einem adaptiven Formular ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) ermöglichen, wobei der Unterzeichner die Standardrolle ist.
 
-* **Analytics für adaptive Forms** - Sie können jetzt das Verhalten der Endbenutzer über Adobe Analytics für Adaptive Forms erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Es hilft, informierte, datenbasierte Entscheidungen zu treffen, um das Endbenutzererlebnis zu verbessern.
+* **Analytics für adaptive Forms** - Sie können jetzt das Endbenutzerverhalten über Adobe Analytics für adaptive Forms erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Es hilft, informierte, datenbasierte Entscheidungen zu treffen, um das Endbenutzererlebnis zu verbessern.
 
-* **Einfaches Verbinden von Adobe Experience Manager (AEM) Forms mit Microsoft® Dynamics und Salesforce** - Der Dienst bietet vordefinierte Datenquellenkonfigurationen und Datenmodelle für Microsoft® Dynamics und Salesforce. Dadurch wird es [schneller und einfacher für Entwickler, Microsoft® Dynamics und Salesforce als Datenquellen für ein adaptives Formular zu konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
+* **Einfaches Verbinden von Adobe Experience Manager (AEM) Forms mit Microsoft® Dynamics und Salesforce** - Der Dienst stellt vordefinierte Datenquellenkonfigurationen und Datenmodelle für Microsoft® Dynamics und Salesforce bereit. Dies erleichtert Entwicklern die Konfiguration von Microsoft® Dynamics und Salesforce als Datenquellen für ein adaptives Formular ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).[
 
 * **E-Signieren eines adaptiven Formulars mit DocuSign** - Sie können mithilfe von DocuSign ein adaptives Formular e-signieren. Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular. Sie können das im Bereich Software-Verteilung verfügbare Package installieren, um die Übermittlungsaktion zu importieren.
 
@@ -80,7 +80,7 @@ CQ-4328183 was not reported on CS so not documented here.
    * die Speicher- und Wiederaufnahmefunktion des Formularportals aktivieren und adaptive Formularentwürfe in einem kundenverwalteten Daten-Repository speichern.
    * prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** - [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) hilft Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    * Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
    * Erzeugen Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
    * Erzeugen von PDF-Druckdateien aus einem XFA-Formular-PDF und aus einem Adobe Acrobat-Formular.
@@ -143,11 +143,11 @@ Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten fü
 * Dedizierte Ausgangs-IP-Adresse, um den Traffic aus AEM as a Cloud Service von einer eindeutigen IP-Adresse aus zu senden, die jetzt alle Ports unterstützt.
 * VPN, um den Datenverkehr zwischen Ihrer Infrastruktur und AEM as a Cloud Service zu sichern.
 
-Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md) für weitere Informationen, einschließlich der Bereitstellung von Self-Service für erweiterte Netzwerke mithilfe von Cloud Manager-APIs.
+Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md) , um weitere Informationen zu erhalten, einschließlich der Bereitstellung von Self-Service für erweiterte Netzwerke mit Cloud Manager-APIs.
 
 **Indexoptimierungen**
 
-Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltext-Index zu erreichen. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations) für weitere Informationen und wenden Sie sich direkt an den Adobe Support, wenn Sie Fragen haben.
+Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltext-Index zu erreichen. Weitere Informationen finden Sie in der Dokumentation [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations) und wenden Sie sich direkt an den Support von Adobe, wenn Sie Fragen haben.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -168,7 +168,7 @@ Die nächste Version wird am 7. Oktober 2021 veröffentlicht.
 
 * Die Menüoptionen der Aktivitätsseite enthalten jetzt eine Option zum **Herunterladen von Protokollen** für abgeschlossene Code-Generator-Durchläufe. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
 
-* Durch Klicken direkt auf die Programmkarte gelangen Sie jetzt zur Seite Übersicht über Cloud Manager .
+* Durch Klicken direkt auf die Programmkarte gelangen Sie jetzt zur Cloud Manager-Übersichtsseite.
 
 ### Fehlerbehebungen {#bug-fixes-sept}
 
@@ -184,7 +184,7 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 4. Oktober 2
 
 ### Neue Funktionen {#what-is-new-cam}
 
-* Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 unter [Verwenden der Karte &quot;Best Practices für Analysen&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#best-practices-analysis).
+* Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Karte &quot;Best Practices für Analysen&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#best-practices-analysis).
 
 ## Content Transfer Tool {#content-transfer-tool}
 

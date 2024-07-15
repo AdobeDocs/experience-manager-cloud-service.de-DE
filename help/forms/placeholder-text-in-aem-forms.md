@@ -1,17 +1,17 @@
 ---
 title: Wie kann Platzhaltertext zu Formularfeldern hinzugefügt werden?
-description: Platzhaltertext soll Benutzern bei der Dateneingabe helfen, wenn das Steuerelement keinen Wert hat. Es kann sich um einen Beispielwert oder eine kurze Beschreibung des erwarteten Formats handeln.
+description: Platzhaltertext soll Benutzenden bei der Dateneingabe helfen, wenn das Steuerelement keinen Wert hat. Dabei kann es sich um einen Beispielwert oder eine kurze Beschreibung des erwarteten Formats handeln.
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 57%
+ht-degree: 96%
 
 ---
 
 
 # Platzhaltertext in [!DNL AEM Forms] {#placeholder-text-in-aem-forms}
 
-Der Platzhaltertext stellt ein Wort oder einen kurzen Satz dar. Sie soll den Benutzer bei der Dateneingabe unterstützen, wenn das Steuerelement keinen Wert hat. Ein Platzhaltertext kann ein Beispielwert oder eine kurze Beschreibung des erwarteten Formats sein. Der Platzhaltertext wird gezeigt, bevor der Benutzer einen Text eingibt, und entfernt, wenn der Benutzer einen Wert eingibt oder auswählt.
+Der Platzhaltertext stellt ein Wort oder einen kurzen Satz dar. Er soll Benutzenden bei der Dateneingabe helfen, wenn das Steuerelement keinen Wert hat. Ein Platzhaltertext könnte ein Beispielwert oder eine kurze Beschreibung des erwarteten Formats sein. Der Platzhaltertext wird gezeigt, bevor der Benutzer einen Text eingibt, und entfernt, wenn der Benutzer einen Wert eingibt oder auswählt.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Der Platzhaltertext stellt ein Wort oder einen kurzen Satz dar. Sie soll den Ben
 [!DNL AEM Forms] unterstützt Platzhaltertext für die Felder vom Typ „Kennwort“, „Datumsauswahl“, „Numerisches Feld“ und „Textfeld“.\
 Platzhaltertexte werden für das native HTML5-Datum-Widget nicht unterstützt. Angeben eines Platzhaltertexts:
 
-1. Klicken Sie mit der rechten Maustaste auf eine Komponente, die Platzhaltertext unterstützt, und klicken Sie auf **Bearbeiten**. Das Dialogfeld „Komponente bearbeiten“ wird angezeigt.
+1. Klicken Sie mit der rechten Maustaste auf eine Komponente, die Platzhaltertext unterstützt, und klicken Sie dann auf **Bearbeiten**. Das Dialogfeld „Komponente bearbeiten“ wird angezeigt.
 
 1. Öffnen Sie die Registerkarte **Titel und Text**.
 1. Geben Sie ein Wort oder einen kurzen Satz im Feld **Platzhaltertext** ein. Klicken Sie auf **OK**.

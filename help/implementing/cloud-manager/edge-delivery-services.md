@@ -28,19 +28,19 @@ Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine ho
 
 Sie können sowohl AEM Content Management als auch WYSIWYG-Authoring mit dem universellen Editor sowie dokumentbasiertes Authoring verwenden.
 
-Mit Cloud Manager in AEM as a Cloud Service können Sie den Edge-Bereitstellungsdienst für Ihr Projekt aktivieren.
+Mit Cloud Manager in AEM as a Cloud Service können Sie den Edge Delivery-Dienst für Ihr Projekt aktivieren.
 
 >[!TIP]
 >
->Weitere Informationen zu Edge Delivery Services und zur Verwendung mit AEM finden Sie im Dokument [Übersicht über Edge Delivery Services.](/help/edge/overview.md)
+>Weitere Informationen zu Edge Delivery Services und zur Verwendung mit AEM finden Sie im Dokument [Überblick über Edge Delivery Services](/help/edge/overview.md) .
 
 ## Edge Delivery Services in Cloud Manager {#edge-in-cloud-manager}
 
-Wenn Sie Edge Delivery Services als Teil von Adobe Experience Manager Sites lizenziert haben, können Sie Ihre Site mit Edge Delivery Services direkt in Cloud Manager integrieren und live gehen [mithilfe eines geführten Self-Service-Erlebnisses.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+Wenn Sie Edge Delivery Services als Teil von Adobe Experience Manager Sites lizenziert haben, können Sie Ihre Site mit Edge Delivery Services direkt in Cloud Manager integrieren und [ live schalten, indem Sie ein geführtes Self-Service-Erlebnis verwenden.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
 Dies ermöglicht ein einheitliches Erlebnis für alle AEM-Eigenschaften und gewährleistet die Konsistenz mit allen wichtigen Workflows, einschließlich Domain-Namensverwaltung, SSL-Zertifikatverwaltung und CDN-Zuordnungen.
 
-Edge Delivery Services sind für beide verfügbar [Produktions- und Sandbox-Programme.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Edge Delivery Services sind sowohl für [Produktions- als auch für Sandbox-Programme verfügbar.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## Aktivieren von Edge Delivery Services {#enabling}
 

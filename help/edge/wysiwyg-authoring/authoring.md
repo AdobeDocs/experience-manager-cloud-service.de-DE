@@ -16,14 +16,14 @@ ht-degree: 85%
 
 Mit Edge Delivery Services ist das Authoring einfach, schnell und flexibel. Sie haben zwei Optionen zum Erstellen von Inhalten für Edge Delivery Services:
 
-* [Universal Editor](#universal-editor) - Eine moderne WYSIWYG-Benutzeroberfläche (What-you-see-is-what-you-get) für das Authoring von Inhalten in AEM
+* [Universal Editor](#universal-editor) - Eine moderne WYSIWYG-Benutzeroberfläche (What-you-see-is-what-you-get) für die Bearbeitung von Inhalten in AEM
 * [Dokumentenbasiertes Authoring](#document-based) – wie Microsoft Word oder Google Docs
 
 ## Authoring mit dem universellen Editor {#universal-editor}
 
 Bei der Verwendung von Edge Delivery Services mit AEM as a Cloud Service ist es die grundlegendste Tatsache zu verstehen, dass der von Ihnen erstellte Inhalt in AEM as a Cloud Service beibehalten wird.
 
-![Funktionsweise von WYSIWYG Authoring mit Edge Delivery Services](assets/how-aem-edge-works.png)
+![Funktionsweise der WYSIWYG-Bearbeitung mit Edge Delivery Services](assets/how-aem-edge-works.png)
 
 1. [Die WYSIWYG-Authoring-Umgebung](/help/sites-cloud/authoring/quick-start.md) wird für das Content Management verwendet, z. B. zum Erstellen neuer Seiten, Experience Fragments, Inhaltsfragmente usw.
    * Alle Funktionen von AEM sind verfügbar, wie Workflows, MSM, Übersetzung, Launches usw.
@@ -50,7 +50,7 @@ Details zu den Bausteinen können dann in der Leiste Eigenschaften konfiguriert 
 
 Weitere Informationen zum Verfassen mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Lesen Sie hierzu die [Erste Schritte für Entwickler für WYSIWYG Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) , um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
+Weitere Informationen zum Starten Ihres eigenen Projekts für die Bearbeitung mit AEM und Edge Delivery Services finden Sie im [Erste Schritte für Entwickler mit WYSIWYG Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
 ## Dokumentenbasiertes Authoring  {#document-based}
 

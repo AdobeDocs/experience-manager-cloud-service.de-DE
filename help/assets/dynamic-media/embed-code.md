@@ -7,8 +7,8 @@ role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Website](respo
 
 >[!NOTE]
 >
->Der Einbettungscode kann erst kopiert werden, nachdem Sie das ausgewählte Asset veröffentlicht haben. Darüber hinaus müssen Sie die Viewer-Vorgabe oder die Bildvorgabe veröffentlichen.
+>Der Einbettungs-Code kann erst kopiert werden, nachdem Sie das ausgewählte Asset veröffentlicht haben. Darüber hinaus müssen Sie die Viewer-Vorgabe oder die Bildvorgabe veröffentlichen.
 >
 >Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 >

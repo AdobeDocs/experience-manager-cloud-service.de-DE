@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Generate Variations
-description: Versionshinweise für die Generierung von Varianten, auf die über AEM as a Cloud Service und die Sidekick von Edge Delivery Services zugegriffen werden kann
+description: Versionshinweise für Generate Variations, auf die über AEM as a Cloud Service und das Sidekick von Edge Delivery Services zugegriffen werden kann
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Versionshinweise für Generate Variations {#release-notes-generate-variations}
 
-Auf dieser Seite finden Sie die Versionshinweise für Generate Variations (Generate Variations), auf die Sie über AEM as a Cloud Service und die Sidekick von Edge Delivery Services zugreifen können.
+Auf dieser Seite finden Sie die Versionshinweise für Generate Variations (Generate Variations), auf die über AEM as a Cloud Service und das Sidekick von Edge Delivery Services zugegriffen werden kann.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Die aktuelle Version ist Version 2.2.0.
    * Zielgruppen können direkt aus Adobe Target gelesen werden
    * Aktualisierte Methoden zum Hinzufügen von CSV-Dateien
 * Dialogfeld mit Optionen für Speicheraufforderung
-* Beim Generieren von Bildern wird die Eingabeaufforderung in Adobe Expreß vorausgefüllt
+* Beim Generieren von Bildern wird die Eingabeaufforderung in Adobe Express vorausgefüllt
 * Auf den Eingabekarten (auf der Startseite) werden zusätzliche Informationen angezeigt, die gelöscht werden können.
 
 ## Bekannte Probleme {#known-issues}
@@ -48,7 +48,7 @@ Die aktuelle Version ist Version 2.2.0.
 
 ### 1,0,5 {#release-notes-1-0-5}
 
-* Integration mit Adobe Expreß
+* Integration mit Adobe Express
 * Eingabeaufforderung &quot;Bearbeiten&quot;in die Seitenleiste verschieben
 
 ### 1.0.4 {#release-notes-1-0-4}

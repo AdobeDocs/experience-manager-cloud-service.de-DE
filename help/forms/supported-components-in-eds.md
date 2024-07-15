@@ -1,36 +1,36 @@
 ---
 title: AEM Forms Edge Delivery Services-Formularkomponenten
-description: AEM Forms-Edge Delivery Services wurden für optimale Leistung entwickelt und ermöglichen es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen. Der Artikel listet alle Formularkomponenten auf, die standardmäßig für EDD-Formulare verfügbar sind.
+description: AEM Forms Edge Delivery Services wurde für optimale Leistung entwickelt und ermöglicht es Ihnen, sich die Zukunft einer optimierten Datenerfassung und Benutzerinteraktion vorzustellen. Der Artikel listet alle Formularkomponenten auf, die standardmäßig für EDD-Formulare verfügbar sind.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
 
 
 
-# HTML-Komponenten, die in der Formularblock-Edge-Bereitstellung unterstützt werden
+# Unterstützte HTML-Komponenten in Form Block Edge Delivery
 
-Die AEM Forms Edge-Bereitstellung umfasst einen Formularblock. Mit dem Formularblock können Sie mühelos Formulare erstellen, um erfasste Daten zu erfassen und zu speichern.
+AEM Forms Edge Delivery enthält einen Formularblock. Mit dem Formularblock können Sie mühelos Formulare erstellen, um erfasste Daten zu erfassen und zu speichern.
 
-Der Formularblock unterstützt OOTB-HTML-5-Komponenten wie Text, E-Mail, Nummer, Datum und viele mehr. Es unterstützt auch Textbereichs-, Auswahl- und Feldsatzelemente sowie Eingabebesuchungsfunktionen, die nativ in HTML-5 enthalten sind. Der Formularblock erstellt eine einheitliche HTML-Struktur für alle Feldtypen und Container, um die Konsistenz zu gewährleisten. Sie können auch [Formatieren der Feldtypen](https://adobe-rnd.github.io/form-block/customization/styling_form) mithilfe der `form.css` -Datei.
+Der Formularblock unterstützt OOTB-HTML-5-Komponenten wie Text, E-Mail, Nummer, Datum und viele mehr. Es unterstützt auch Textbereichs-, Auswahl- und Feldsatzelemente sowie Eingabebesuchungsfunktionen, die nativ in HTML-5 enthalten sind. Der Formularblock erstellt eine einheitliche HTML-Struktur für alle Feldtypen und Container, um die Konsistenz zu gewährleisten. Sie können die Feldtypen auch [ mit der Datei `form.css` formatieren.](https://adobe-rnd.github.io/form-block/customization/styling_form)
 
 ## Unterstützte HTML 5-Eingabetypen im Formularblock
 
 Der Formularblock unterstützt eine Reihe von HTML 5-Eingabetypen und rendert nahtlos Formulare, die mit AEM Kernkomponenten erstellt wurden.
 
-In der folgenden Tabelle wird beschrieben, wie Kernkomponenten ihren HTML-5-Eingabetypen in der Edge-Bereitstellung entsprechen:
+In der folgenden Tabelle wird beschrieben, wie Kernkomponenten ihren HTML-5-Eingabetypen in Edge Delivery entsprechen:
 
 <table>
  <tbody>
   <tr>
    <td><b>Kernkomponenten</b> </td>
-   <td><b>HTML 5-Eingabetyp</b> </td>
+   <td><b>HTML 5 input type</b> </td>
    <td><b>Details</b></td>
   </tr>
   <tr>
@@ -56,7 +56,7 @@ In der folgenden Tabelle wird beschrieben, wie Kernkomponenten ihren HTML-5-Eing
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment.html">Dateianhang</a></td>
-   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file">file</a></td>
+   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file">Datei</a></td>
    <td> Ermöglicht dem Benutzer die Auswahl einer oder mehrerer Dateien aus dem Gerätespeicher. Es unterstützt erweiterte Validierungen der Dateieingabe, wie z. B. akzeptierte Dateitypen, Dateigrößeneinschränkungen und minimale/maximale Dateiauswahlbeschränkungen. </td>
   </tr>
   <tr>
@@ -80,12 +80,12 @@ In der folgenden Tabelle wird beschrieben, wie Kernkomponenten ihren HTML-5-Eing
    <td>Ein UI-Element, über das Benutzer beim Klicken auf eine Aktion Trigger ausführen können. </td>
   </tr>
   <tr>
-   <td><a href="" https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html">Bedienfeld</a></td>
+   <td><a href="" https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html">Panel</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset mit legend</a></td>
    <td> Gruppieren Sie Abschnitte in einem Formular, wobei ein verschachteltes Element *legend* eine Beschriftung für das Formular hinzufügt.</td>
   </tr>
    <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=de">Assistent</a></td>
+   <td><a href ="https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard">Assistent</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a></td>
    <td>Gruppiert verwandte Abschnitte in einem Formular. Es steuert auch die Anordnung und unterstützt Anzeigeoptionen, um sie oben oder links zu positionieren. </td>
   </tr>
@@ -96,7 +96,7 @@ In der folgenden Tabelle wird beschrieben, wie Kernkomponenten ihren HTML-5-Eing
   </tr>
      <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Schaltfläche „Senden“</td>
-   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">absenden</a></td>
+   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">submit</a></td>
    <td> Ein UI-Element, über das Benutzer ein Formular beim Klicken an den Server senden können. Wenn ein Benutzer einer Schaltfläche eine Regel zum Senden hinzufügt, fungiert sie als Senden-Schaltfläche. </td>
   </tr>
      <tr>

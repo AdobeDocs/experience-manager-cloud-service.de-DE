@@ -3,8 +3,8 @@ title: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as 
 description: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 97%
+source-wordcount: '1262'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Entfernen Sie die Abschnitte, die auf Variablen mit den Namen DISP_ID, PUBLISH_F
    Führen Sie mit dem Unterbefehl „httpd“ den Dispatcher-Validator in Ihrem Verzeichnis aus:
 
    `$ validator httpd`
-Wenn Fehler auftreten, die fehlende Include-Dateien verursachen, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
+Wenn Fehler wegen fehlender „include“-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
    Wenn Sie Apache-Direktiven sehen, die nicht in der Whitelist enthalten sind, entfernen Sie sie.
 
@@ -190,7 +190,7 @@ durch die Anweisung:
 
      `$ validator dispatcher`
 
-   * Wenn Fehler auftreten, die fehlende Include-Dateien verursachen, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
+   * Wenn Fehler wegen fehlender „Include“-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
    * Wenn Fehler wegen einer nicht definierten Variable `PUBLISH_DOCROOT` auftreten, benennen Sie diese in `DOCROOT` um.
 
@@ -204,7 +204,7 @@ durch die Anweisung:
 
 Mithilfe des Skripts `docker_run.sh` im Dispatcher-SDK können Sie testen, ob Ihre Konfiguration keine anderen Fehler aufweist, die sich erst bei der Bereitstellung zeigen würden:
 
-1. Bereitstellungsinformationen mit dem Validator generieren.
+1. Generieren Sie Bereitstellungsinformationen mit dem Validator.
 
    `validator full -d out`
 Validiert die vollständige Konfiguration und generiert Informationen zur Bereitstellung in „out“.

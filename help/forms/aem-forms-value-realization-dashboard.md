@@ -5,13 +5,13 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
+exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
+source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
 
 ---
-
 
 # Verstehen Ihres WertRealisierungs-Dashboards: Optimale Nutzung Ihrer Forms {#value-realization-dashboard}
 
@@ -26,23 +26,23 @@ Dieses Dashboard gibt einen Einblick in die Welt der Formularnutzung. Im Folgend
 ### Formularaktivität im Zeitverlauf:
 
 * **Formularübermittlungen**: Zeigt Trends in der Häufigkeit des Ausfüllens Ihrer Formulare an.
-* **Dokumentausgaben**: Verfolgen Sie die Anzahl der im Zeitverlauf wiedergegebenen Dokumente.
+* **Dokumentausgaben**: Verfolgen Sie die Anzahl der im Laufe der Zeit wiedergegebenen Dokumente.
 * **Forms erstellt und veröffentlicht**: Überwachen Sie die Rate, mit der neue Formulare erstellt und bereitgestellt werden.
-* **Formularerstellung und Veröffentlichungszeiten**: Analysieren Sie die durchschnittlichen Zeiten für das Erstellen und Veröffentlichen von Formularen, um zu ermitteln, welche Bereiche verbessert werden müssen.
+* **Zeit für Formularerstellung und Veröffentlichung**: Analysieren Sie die durchschnittlichen Zeiten für das Erstellen und Veröffentlichen von Formularen, um Bereiche zu identifizieren, die verbessert werden können.
 
 ### Fragmentverwendung:
 
-* **Anzahl der verwendeten Formularfragmente**: Erfahren Sie, wie viele wiederverwendbare Formularabschnitte derzeit in aktive Formulare integriert sind.
-* **Anzahl der Wiederverwendung von Formularfragmenten**: Zeigt an, wie oft diese Fragmente in verschiedenen Formularen verwendet werden.
+* **Anzahl der verwendeten Formularfragmente**: Ermitteln Sie, wie viele wiederverwendbare Formularabschnitte derzeit in aktive Formulare integriert sind.
+* **Anzahl der wiederverwendeten Formularfragmente**: Hiermit wird gemessen, wie oft diese Fragmente in verschiedenen Formularen verwendet werden.
 
 
 ## Wie nützt Ihnen das? {#benefits-to-you}
 
 Mit diesem Dashboard können Sie datengesteuerte Entscheidungen zu Ihren Formularen treffen. So geht&#39;s:
 
-* **Populäre Forms identifizieren**: Hohe Übermittlungsraten geben wertvolle Formulare an. Analysieren Sie diese für Best Practices, um sie in anderen zu replizieren.
-* **Formularerstellung optimieren**: Reduzieren Sie die Erstellungszeiten, indem Sie Engpässe erkennen. Erkunden Sie vordefinierte Vorlagen oder optimieren Sie Workflows.
-* **Fragmentwiederverwendung verstärken**: Förderung der Zusammenarbeit und Erkennung wiederverwendbarer Fragmente. Gut organisierte Fragmentbibliotheken können die Effizienz erheblich verbessern.
+* **Beliebten Forms identifizieren**: Hohe Übermittlungsraten zeigen wertvolle Formulare an. Analysieren Sie diese für Best Practices, um sie in anderen zu replizieren.
+* **Optimieren der Formularerstellung**: Reduzieren Sie die Erstellungszeiten, indem Sie Engpässe erkennen. Erkunden Sie vordefinierte Vorlagen oder optimieren Sie Workflows.
+* **Fragmentwiederverwendung steigern**: Förderung der Zusammenarbeit und Erkennung wiederverwendbarer Fragmente. Gut organisierte Fragmentbibliotheken können die Effizienz erheblich verbessern.
 
 
 ## Insights in Aktion umwandeln {#turning-insights-into-actions}
@@ -57,8 +57,8 @@ Durch die Analyse dieser Trends können Sie bessere Formulare erstellen, Zeit be
 
 ## Weitere Tipps {#additional-tips}
 
-* **Ziele festlegen:** Bestimmen Sie, was Sie mit Ihren Formularen erreichen möchten. Ist es eine verbesserte Datenerfassung, schnellere Lead-Generierung oder verbesserte Kundenzufriedenheit? Die Kenntnis Ihrer Ziele leitet Ihre Analyse des Dashboards.
-* **Regelmäßige Überprüfung:** Planen Sie regelmäßige Check-ins mit dem Dashboard, um den Fortschritt zu verfolgen und neue Bereiche zu identifizieren, die verbessert werden können.
-* **Experiment und Feinabstimmung:** Scheuen Sie sich nicht, mit verschiedenen Formularentwürfen und Fragmentverwendung zu experimentieren. Mit dem Dashboard können Sie die Effektivität Ihrer Änderungen messen.
+* **Ziele festlegen:** Legen Sie fest, was Sie mit Ihren Formularen erreichen möchten. Ist es eine verbesserte Datenerfassung, schnellere Lead-Generierung oder verbesserte Kundenzufriedenheit? Die Kenntnis Ihrer Ziele leitet Ihre Analyse des Dashboards.
+* **Regelmäßige Überprüfung:** Planen Sie regelmäßige Check-ins mit dem Dashboard, um den Fortschritt zu verfolgen und neue Bereiche zur Verbesserung zu identifizieren.
+* **Experiment und Verfeinern:** Scheuen Sie sich nicht, mit verschiedenen Formularentwürfen und Fragmentverwendung zu experimentieren. Mit dem Dashboard können Sie die Effektivität Ihrer Änderungen messen.
 
 Denken Sie daran, dass dieses Dashboard Ihr Verbündeter ist! Durch die effektive Verwendung können Sie Ihre Formulare aus einfachen Datenerfassungs-Tools in strategische Assets umwandeln, die für Sie und Ihr Unternehmen einen Erfolg bringen.

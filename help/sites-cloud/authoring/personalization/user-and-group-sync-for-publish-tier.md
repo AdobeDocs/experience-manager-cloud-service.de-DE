@@ -43,7 +43,8 @@ Es kann benutzerdefinierter Registrierungs-Code geschrieben werden, der mindeste
 
 **Voraussetzung:**
 
-Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
+Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie die [Datensynchronisation](#data-synchronization-data-synchronization) durch Übermitteln
+eine Anfrage an den Support, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
 
 ### Extern {#external-managed-registration}
 
@@ -66,7 +67,8 @@ Kunden können eigene benutzerdefinierte Komponenten schreiben. Dazu empfehlen w
 
 **Voraussetzung:**
 
-Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
+Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie die [Datensynchronisation](#data-synchronization-data-synchronization) durch Übermitteln
+eine Anfrage an den Support, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
 
 ### Zusammenarbeit mit einem Identitätsanbieter {#integration-with-an-idp}
 
@@ -90,13 +92,13 @@ Die `com.adobe.granite.auth.oauth.provider`-Schnittstelle kann mit dem OAuth-Anb
 
 **Voraussetzung:**
 
-Als Best Practice sollten Sie sich beim Speichern benutzerspezifischer Daten immer auf idP (Identity Provider) als einen zentralen &quot;Point of Truth&quot;(Identitätsanbieter) verlassen. Wenn die zusätzlichen Benutzerinformationen im lokalen Repository gespeichert sind, das nicht Teil des idP ist, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind. Zusätzlich zu [Datensynchronisation](#data-synchronization-data-synchronization)im Falle des SAML-Authentifizierungsanbieters müssen Sie sicherstellen, dass [dynamische Gruppenmitgliedschaft](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) aktiviert ist.
+Als Best Practice sollten Sie sich beim Speichern benutzerspezifischer Daten immer auf idP (Identity Provider) als einen zentralen &quot;Point of Truth&quot;(Identitätsanbieter) verlassen. Wenn die zusätzlichen Benutzerinformationen im lokalen Repository gespeichert sind, das nicht Teil des idP ist, aktivieren Sie die [Datensynchronisation](#data-synchronization-data-synchronization), indem Sie eine Anfrage an den Kundensupport senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind. Stellen Sie neben [Datensynchronisation](#data-synchronization-data-synchronization) im Fall des SAML-Authentifizierungsanbieters sicher, dass die [Mitgliedschaft in einer dynamischen Gruppe](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) aktiviert ist.
 
 ### Sticky Sessions und Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service ermöglicht Cookie-basierte fixierbare Sitzungen, wodurch sichergestellt wird, dass ein Endbenutzer bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. In bestimmten Fällen, wie z. B. beim Benutzer-Traffic-Spitzen, kann die Funktion des gekapselten Tokens die Leistung steigern, sodass der Benutzerdatensatz im Repository nicht bei jeder Anfrage referenziert werden muss. Wenn der Veröffentlichungsknoten, auf den ein Endbenutzer eine Affinität hat, ersetzt wird, ist sein Benutzer-ID-Datensatz auf dem neuen Veröffentlichungsknoten verfügbar, wie in der [Datensynchronisation](#data-synchronization-data-synchronization) unten.
+AEM as a Cloud Service ermöglicht Cookie-basierte fixierbare Sitzungen, wodurch sichergestellt wird, dass ein Endbenutzer bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. In bestimmten Fällen, wie z. B. beim Benutzer-Traffic-Spitzen, kann die Funktion des gekapselten Tokens die Leistung steigern, sodass der Benutzerdatensatz im Repository nicht bei jeder Anfrage referenziert werden muss. Wenn der Veröffentlichungsknoten, auf den ein Endbenutzer eine Affinität hat, ersetzt wird, ist sein Benutzer-ID-Datensatz auf dem neuen Veröffentlichungsknoten verfügbar, wie im Abschnitt [Datensynchronisation](#data-synchronization-data-synchronization) unten beschrieben.
 
-Um die Funktion des gekapselten Tokens zu nutzen, senden Sie bitte eine Anfrage an den Support, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind. Wichtiger noch: Das gekapselte Token kann nicht aktiviert werden ohne [Datensynchronisation](#data-synchronization-data-synchronization) und müssen zusammen aktiviert werden. Überprüfen Sie daher den Anwendungsfall sorgfältig, bevor Sie die Funktion aktivieren und sicherstellen, dass sie unbedingt erforderlich ist.
+Um die Funktion des gekapselten Tokens zu nutzen, senden Sie bitte eine Anfrage an den Support, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind. Wichtiger noch: Das gekapselte Token kann nicht ohne [Datensynchronisation](#data-synchronization-data-synchronization) aktiviert werden und muss zusammen aktiviert werden. Überprüfen Sie daher den Anwendungsfall sorgfältig, bevor Sie die Funktion aktivieren und sicherstellen, dass sie unbedingt erforderlich ist.
 
 ## Benutzerprofil {#user-profile}
 
@@ -111,7 +113,8 @@ Informationen zum Anwenderprofil können auf zwei Arten geschrieben und gelesen 
 
 **Voraussetzung:**
 
-Damit die Persistenzlogik des serverseitigen Benutzerprofils ordnungsgemäß funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
+Damit die Persistenzlogik des serverseitigen Benutzerprofils ordnungsgemäß funktioniert, aktivieren Sie die [Datensynchronisation](#data-synchronization-data-synchronization), indem Sie
+eine Anfrage an den Support, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
 
 ### Datenspeicher von Drittanbietern {#third-party-data-stores}
 
@@ -121,7 +124,8 @@ Der Echtzeitzugriff auf Dienste von Drittanbietern zum Abruf von Profilattribute
 
 **Voraussetzung:**
 
-Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie [Datensynchronisation](#data-synchronization-data-synchronization) indem Sie eine Anfrage an den Support senden, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
+Damit die oben beschriebene Logik richtig funktioniert, aktivieren Sie die [Datensynchronisation](#data-synchronization-data-synchronization) durch Übermitteln
+eine Anfrage an den Support, in der das entsprechende Programm und die entsprechenden Umgebungen angegeben sind.
 
 ## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 

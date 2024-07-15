@@ -366,8 +366,8 @@ So fügen Sie Verweise auf AEM Seiten, Experience Fragments oder andere solche I
 >
 >Dies sollte nicht für Verweise auf Folgendes verwendet werden:
 >
->* Inhaltsfragmente - Verwendung einer [Fragmentverweis](#fragment-references)
->* Bilder - Verwendung [Referenzbilder](#reference-images)
+>* Inhaltsfragmente - Verwendung einer [Fragmentreferenz](#fragment-references)
+>* Bilder - Verwendung von [Referenzbildern](#reference-images)
 
 ### Anzeigen übergeordneter Verweise {#view-parent-references}
 

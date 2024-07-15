@@ -22,43 +22,43 @@ Ausgabedarstellungen werden als statisch und dynamisch klassifiziert, wobei jede
 ## Statische Ausgabeformate {#static-renditions}
 
 Statische Ausgabeformate sind vorgenerierte Versionen digitaler Assets, die normalerweise bei der Erfassung oder Änderung von Assets erstellt werden. Diese Ausgabedarstellungen sind für bestimmte Zwecke und Plattformen optimiert, wie Webminiaturen, mobile Formate für responsives Design oder hochauflösende Druckversionen, um ein effizientes und konsistentes Erlebnis zu gewährleisten.
-Lernen [Anzeigen und Herunterladen](#view-dynamic-renditions) statische Ausgabeformate in [!DNL Experience Manager Assets].
+Erfahren Sie, wie Sie in [!DNL Experience Manager Assets] statische Ausgabeformate anzeigen und herunterladen können.[](#view-dynamic-renditions)
 
 ## Dynamische Ausgabedarstellungen {#dynamic-renditions}
 
 Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. Größenanpassung von Bildern basierend auf der Geräteauflösung oder Zuschneiden, um verschiedene Seitenverhältnisse anzupassen.
-Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen. Sie können dynamische Ausgabedarstellungen in anzeigen und herunterladen. [!DNL Experience Manager Assets].
+Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen. Sie können dynamische Ausgabedarstellungen in [!DNL Experience Manager Assets] anzeigen und herunterladen.
 
 ### Vorbereitung
 
 * Sie müssen eine Lizenz AEM Dynamic Media-Benutzer haben.
 
-* Verwendung [!UICONTROL Admin-Ansicht] einzurichten:
-   * [Smartes Zuschneiden von Bildprofilen](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
+* Verwenden Sie [!UICONTROL Admin-Ansicht] , um Folgendes einzurichten:
+   * [Bildprofile für smartes Zuschneiden](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Bildvorgaben](/help/assets/dynamic-media/managing-image-presets.md)
 
-  Sie können [Ansicht wechseln](/help/assets/assets-view-introduction.md#how-to-access-assets-view) später, um eine Vorschau von dynamischen Ausgabeformaten in der Assets-Ansicht anzuzeigen.
+  Sie können [ später die Ansicht wechseln](/help/assets/assets-view-introduction.md#how-to-access-assets-view), um dynamische Ausgabedarstellungen in der Assets-Ansicht in der Vorschau anzuzeigen.
 
 ### Dynamische Ausgabeformate anzeigen und herunterladen {#view-renditions}
 
-So zeigen Sie dynamische Ausgabeformate von Bildern an oder laden sie herunter [!DNL Experience Manager Assets]führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um dynamische Ausgabeformate von Bildern in [!DNL Experience Manager Assets] anzuzeigen oder herunterzuladen:
 
-1. Navigieren Sie zu **[!UICONTROL Asset-Verwaltung]** > **[!UICONTROL Assets]**.
+1. Wechseln Sie zu **[!UICONTROL Assets-Verwaltung]** > **[!UICONTROL Assets]**.
 
 1. Navigieren Sie zum entsprechenden Asset-Ordner.
 
-1. Klicken Sie auf das gewünschte Bild und klicken Sie auf **[!UICONTROL Details]**.
+1. Klicken Sie auf das Bild, das Sie anzeigen möchten, und klicken Sie auf **[!UICONTROL Details]**.
 
-1. Klicken Sie im rechten Menü auf **[!UICONTROL Ausgabeformate]**. <br> Die **[!UICONTROL Ausgabeformate]** -Bedienfeld mit der verfügbaren **[!UICONTROL Dynamik]** und **[!UICONTROL Smartes Zuschneiden]** Ausgabedarstellungen.
+1. Klicken Sie im rechten Menü auf **[!UICONTROL Ausgabeformate]**. <br> Das Bedienfeld **[!UICONTROL Ausgabeformate]** wird mit den verfügbaren Ausgabeformaten **[!UICONTROL Dynamisch]** und **[!UICONTROL Smartes Zuschneiden]** geöffnet.
 
    ![dynamische Ausgabeformate](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Klicken Sie auf die Ausgabedarstellung, die Sie anzeigen oder herunterladen möchten.
 
-1. Klicken Sie auf ![Download-Symbol](assets/do-not-localize/download-icon.png) neben der dynamischen Ausgabedarstellung, die Sie herunterladen müssen. <br> Alternativ können Sie die Bilddarstellung auswählen und auf **[!UICONTROL Ausgabedarstellung herunterladen]** -Option unten.
+1. Klicken Sie auf das Symbol ![Download-Symbol](assets/do-not-localize/download-icon.png) neben der dynamischen Ausgabedarstellung, die Sie herunterladen müssen. <br> Alternativ können Sie die Bildausgabe auswählen und unten auf die Option **[!UICONTROL Ausgabedarstellung herunterladen]** klicken.
 
-   Sie können auf die ![Download-Symbol](assets/do-not-localize/download-icon.png) -Symbol oben in **[!UICONTROL Smartes Zuschneiden]** Ausgabedarstellungsabschnitt verwenden, um alle verfügbaren Ausgabedarstellungen für das Asset mit smartem Zuschneiden herunterzuladen.
+   Sie können auf das Symbol ![Download-Symbol](assets/do-not-localize/download-icon.png) klicken, das oben im Abschnitt **[!UICONTROL Smartes Zuschneiden]** von Ausgabedarstellungen verfügbar ist, um alle verfügbaren Ausgabedarstellungen für Smartes Zuschneiden für dieses Asset herunterzuladen.
 
 >[!NOTE]
 >

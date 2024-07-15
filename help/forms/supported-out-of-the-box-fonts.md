@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Standardmäßige (OOTB) unterstützte Schriftarten für die PDF-Generierung auf Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
-AEM Forms as a Cloud Service bietet verschiedene integrierte OOTB-unterstützte Schriftarten, die nahtlos in [Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Datensatzdokument für Kernkomponenten](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), und [Datensatzdokument für Foundation-Komponenten](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Forms as a Cloud Service bietet verschiedene integrierte OOTB-unterstützte Schriftarten, die nahtlos in den [Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md), dem [Datensatzdokument für Kernkomponenten](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) und dem [Datensatzdokument für Foundation-Komponenten](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record) verwendet werden können.
 
 <!--
 
@@ -52,5 +52,5 @@ Die Liste der OOTB-unterstützten Schriftarten ist:
 * eurosign.ttf
 
 
-Zusätzlich zu den oben genannten Schriftarten können Sie benutzerdefinierte Schriftarten verwenden, um den PDF ein bestimmtes Erscheinungsbild zu verleihen. Um benutzerdefinierte Schriftarten zu aktivieren, müssen Sie [Fügen Sie benutzerdefinierte Schriftarten zu Ihrer Forms as a Cloud Service-Umgebung hinzu](/help/forms/use-custom-fonts.md) mit einer gültigen Lizenz.
+Zusätzlich zu den oben genannten Schriftarten können Sie benutzerdefinierte Schriftarten verwenden, um den PDF ein bestimmtes Erscheinungsbild zu verleihen. Um benutzerdefinierte Schriftarten zu aktivieren, fügen Sie Ihrer Forms as a Cloud Service-Umgebung ](/help/forms/use-custom-fonts.md) benutzerdefinierte Schriftarten mit einer gültigen Lizenz hinzu.[
 

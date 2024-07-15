@@ -44,7 +44,7 @@ In diesem Dokument wird anhand des Beispiels für Umleitungen veranschaulicht, w
 
 Um Zuordnungen mithilfe von Kalkulationstabellen in Ihrem AEM-Projekt mit Edge Delivery Services erstellen zu können, müssen Sie Ihre Site mit der neuesten Site-Vorlage erstellt haben.
 
-Lesen Sie das Dokument . [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) für weitere Informationen.
+Weitere Informationen finden Sie im Dokument [Erste Schritte für Entwickler für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
 ## Erstellen einer Kalkulationstabelle {#spreadsheet}
 

@@ -7,7 +7,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 * **Anwendererlebnis(UX)-Designer**: Designerinnen und Designer für das Anwendererlebnis (UX) definieren Stil, Layout und Branding für [!DNL AEM Forms]-Assets.
 
-* **Formular-Fachkraft**: Eine Formular-Fachkraft erstellt adaptive Formulare, Designs und Vorlagen gemäß den Stil-, Layout- und Branding-Definitionen der UX-Designerin bzw. des UX-Designers. Außerdem erstellt und integriert der Anwender adaptive Formulare in ein Formulardatenmodell (FDM) und AEM Workflows. Ein Formularanwender führt in der Regel Front-End-Aufgaben aus.
+* **Formular-Fachkraft**: Eine Formular-Fachkraft erstellt adaptive Formulare, Designs und Vorlagen gemäß den Stil-, Layout- und Branding-Definitionen der UX-Designerin bzw. des UX-Designers. Außerdem erstellt und integriert die Fachkraft adaptive Formulare mit einem Formulardatenmodell (FDM) und AEM-Workflows. Eine Formular-Fachkraft führt in der Regel Frontend-Aufgaben aus.
 
 * **Formularentwickelnde**: Formularentwickelnde erstellen eine benutzerdefinierte Formularlösung. Eine Formularentwicklerin bzw. ein Formularentwickler entwickelt in der Regel Backend-Anwendungen wie benutzerdefinierte Komponenten, AEM-Workflows, Vorbefüllungs-Services und mehr.
 

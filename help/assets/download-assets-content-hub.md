@@ -20,11 +20,11 @@ Sie können ein einzelnes Asset oder mehrere Assets mit der Content Hub herunter
 
 ## Voraussetzungen {#prerequisites}
 
-[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) kann die in diesem Artikel erwähnten Aktionen ausführen.
+[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel erwähnten Aktionen ausführen.
 
 ## Asset herunterladen {#download-single-asset}
 
 1. Wählen Sie die Assets aus, die Sie herunterladen müssen.
-   ![Herunterladen einzelner Assets](assets/download-assets-new.jpg)
+   ![Herunterladen eines einzelnen Assets](assets/download-assets-new.jpg)
 1. Klicken Sie auf **[!UICONTROL Herunterladen]**. <br> Alternativ können Sie auf das auf der Asset-Karte verfügbare Download-Symbol klicken, um ein Asset herunterzuladen.
 Alle Assets werden in ihrer ursprünglichen Ausgabe heruntergeladen.

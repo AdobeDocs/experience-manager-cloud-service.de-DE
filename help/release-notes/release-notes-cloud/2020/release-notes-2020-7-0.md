@@ -57,7 +57,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 AEM Commerce ist jetzt in Cloud Service verfügbar.
 
-Siehe [Erste Schritte mit AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de) für weitere Details.
+Weitere Informationen finden Sie unter [Erste Schritte mit AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de) .
 
 ## Kernkomponenten {#core-components}
 
@@ -68,7 +68,7 @@ Version 2.11.0 der [AEM-Kernkomponenten](https://experienceleague.adobe.com/doc
 * Einführung einer neuen [PDF-Viewer-Komponente](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Die Kernkomponenten unterstützen jetzt Accelerated Mobile Pages (AMP). Dies hilft, schnellere Kundenerlebnisse zu erzielen, indem Seitenübergänge sofort erfolgen, wenn die Site von einem Google Mobile-Suchergebnis aus aufgerufen wird, was zu Verbesserungen bei Anwenderinteraktionen und SEO führt.
-Siehe [AMP-Unterstützung für die Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=de) für weitere Details.
+Weitere Informationen finden Sie unter [AMP-Unterstützung für die Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=de) .
 
 * Kompatibilität mit Version 1.0.2 der [Adobe Client-Datenschicht](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=de).
 
@@ -123,7 +123,7 @@ Weitere Details finden Sie unter „Verwenden von Java 11-Unterstützung“.
 
 ### Neue Funktionen {#what-is-new-foundations}
 
-* [Protokolle können an Splunk-Konten weitergeleitet werden](/help/implementing/developing/introduction/logging.md#splunk-logs), wodurch Unternehmen ihre Splunk-Investitionen nutzen können.
+* [Protokolle können an Splunk-Konten weitergeleitet werden](/help/implementing/developing/introduction/logging.md#splunk-logs), was es Unternehmen ermöglicht, ihre Splunk-Investitionen zu nutzen.
 
 * [Eine statische, dedizierte Ausgangs-IP-Adresse](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) kann für ausgehenden Traffic zugewiesen werden, der in Java-Code programmiert ist, was bei einigen Integrationen nützlich sein kann.
 
@@ -139,7 +139,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Frühere Versionen des CRA konnten nicht unter Adobe Experience Manager (AEM) 6.1 ausgeführt werden. Es wurde expliziter Support hinzugefügt, um Benutzer für die Administratorgruppe zuzulassen.
 
-  Siehe [Installieren von CRA auf AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) für weitere Details.
+  Weitere Informationen finden Sie unter [Installieren von CRA auf AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) .
 
 * Der im Zusammenfassungsbericht angezeigte Ablaufzeitstempel war nicht korrekt.
 

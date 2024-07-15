@@ -1,6 +1,6 @@
 ---
-title: Aktuelle Funktionen für frühzeitigen Zugriff [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Aktuelle Funktionen für frühzeitigen Zugriff [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Aktuelle Funktionen für frühzeitigen Zugriff von  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Aktuelle Funktionen für frühzeitigen Zugriff von  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
@@ -23,7 +23,7 @@ Das AEM Forms Early Access Program bietet Ihnen die einmalige Möglichkeit, vor 
 
 ## Wie kann ich dem Programm für frühzeitigen Zugriff beitreten?
 
-Wenn Sie an unserem Early Access-Programm für Early Access-Innovationen interessiert sind, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  , um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
+Wenn Sie an unserem Early Access-Programm für eine Early Access-Innovation teilnehmen möchten, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um Zugriff anzufordern. Sie können Zugriff auf alle oder auf spezifische Innovationen anfordern.
 
 ## Frühe Zugriffsinnovationen
 
@@ -31,19 +31,19 @@ Wenn Sie an unserem Early Access-Programm für Early Access-Innovationen interes
 
 Generative KI für adaptive Forms bietet eine völlig neue Leistungsstärke und erleichtert Ihre Formularentwicklungsprozesse. Mithilfe intelligenter KI-Funktionen können Sie schneller als je zuvor bessere Formulare erstellen.
 
-![Generativer KI-Assistent, Adaptive Forms](/help/forms/assets/generative-ai-assistant.png)
+![Generativer KI-Assistent, adaptiver Forms](/help/forms/assets/generative-ai-assistant.png)
 
 Die folgenden generativen KI-Funktionen stehen zur Verfügung:
 
 * **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre AEM formularbezogenen Fragen. Unsere KI-Assistentin fungiert als Ihre eigene persönliche Wissensbasis und bietet aufschlussreiche Anleitungen und Empfehlungen direkt innerhalb der Plattform.
 
-* **Adaptive Formulargenerierung**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Eingabeaufforderungen. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, die Abbrüche reduzieren und das Erlebnis personalisieren.
+* **Adaptive Formularerstellung**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Eingabeaufforderungen. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, die Abbrüche reduzieren und das Erlebnis personalisieren.
 
-* **Bereichserstellung für Forms**: Lassen Sie AI das schwere Heften erledigen. Erstellen Sie vorgefertigte Formularbedienfelder, die auf bestimmte Datenerfassungsanforderungen zugeschnitten sind. Generieren Sie beispielsweise Abschnitte zum Erfassen von Zahlungsinformationen, Kundenpräferenzen oder Reisedetails. Sparen Sie Zeit und stellen Sie die Konsistenz mit vordefinierten Layouts und Funktionen sicher.
+* **Bereichsgenerierung für Forms**: Lassen Sie AI die schwere Anhebung durchführen. Erstellen Sie vorgefertigte Formularbedienfelder, die auf bestimmte Datenerfassungsanforderungen zugeschnitten sind. Generieren Sie beispielsweise Abschnitte zum Erfassen von Zahlungsinformationen, Kundenpräferenzen oder Reisedetails. Sparen Sie Zeit und stellen Sie die Konsistenz mit vordefinierten Layouts und Funktionen sicher.
 
 * **Ändern von Formularlayouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Eingabeaufforderungen. Probieren Sie verschiedene Layouts wie Assistenten oder Registerkartenansichten aus, um die perfekte Anpassung für Ihr Formular zu finden. Verwenden Sie generative KI-Eingabeaufforderungen, um Ihre Formulare für eine schnelle Reaktion auf Mobilgeräte zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzern gern genutzt werden.
 
-* **Konfigurieren der Sendeaktion**: Verwenden Sie generative KI-Eingabeaufforderungen, um mühelos eine Sendeaktion für Ihr Formular zu konfigurieren. Wählen Sie aus einer Bibliothek vordefinierter Sendeaktionen oder aus einer Liste von benutzerdefinierten Sendeaktionen, die von Ihrem eigenen Entwicklungsteam erstellt und bereitgestellt werden.
+* **Konfigurieren der Sendeaktion**: Verwenden Sie generative KI-Aufforderungen, um mühelos eine Sendeaktion für Ihr Formular zu konfigurieren. Wählen Sie aus einer Bibliothek vordefinierter Sendeaktionen oder aus einer Liste von benutzerdefinierten Sendeaktionen, die von Ihrem eigenen Entwicklungsteam erstellt und bereitgestellt werden.
 
 
 ### AEM Forms Workfront Fusion Connector
@@ -52,7 +52,7 @@ Der AEM Forms Workfront Fusion Connector ermöglicht eine nahtlose Integration z
 
 Mit dem AEM Forms Workfront Fusion Connector können Sie Workflows erstellen, die automatisch bei Übermittlung eines adaptiven Formulars ausgelöst werden. Stellen Sie sich beispielsweise ein Szenario vor, bei dem ein Workflow initiiert wird, um einer bestimmten Person die Aufgabe zuzuweisen, die übermittelten Daten zu überprüfen, sodass ein Antrag auf Grundlage der im adaptiven Formular erfassten Informationen genehmigt oder abgelehnt werden kann. Diese optimierte Integration verbessert die Effizienz und führt die Automatisierung Ihrer Workflow-Prozesse auf eine neue Stufe.
 
-Bereit zum Start? Die [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) Die -Dokumentation enthält eine schrittweise Anleitung zur Verwendung der Innovation.
+Bereit zum Start? Die Dokumentation zum [ Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) enthält eine schrittweise Anleitung zur Verwendung der Innovation.
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
@@ -67,7 +67,7 @@ Sie können die Komponente Conversational Forms einfach per Drag-and-Drop auf Ih
 Mehr konversative Forms bringt Folgendes:
 
 * **Einfache Formularerkennung**: Finden Sie das genaue Formular, das Sie benötigen, über eine klare, kommunikative Benutzeroberfläche auf jeder AEM Sites-Seite.
-* **Fertigstellung im Chat-Stil**: Beantworten Sie Fragen einzeln, wie beim Chatten mit einem virtuellen Assistenten. Es ist schnell, intuitiv und fühlt sich wie eine Unterhaltung an.
+* **Abschluss im Chat-Stil**: Beantworten Sie Fragen einzeln, wie beim Chat mit einem virtuellen Assistenten. Es ist schnell, intuitiv und fühlt sich wie eine Unterhaltung an.
 * **Vorschau vor dem Senden**: Überprüfen Sie alles, bevor Sie auf &quot;Senden&quot;klicken. Zeigen Sie eine Vorschau des ausgefüllten Formulars an, um Genauigkeit zu gewährleisten und Fehler in letzter Minute zu vermeiden.
 
 
@@ -76,7 +76,7 @@ Konversationale Forms sind mehr als nur ein neues Erscheinungsbild - sie veränd
 
 ### WYSIWYG Authoring für Edge Delivery Services
 
-WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive Forms Editor) zum Erstellen und Veröffentlichen adaptiver Formulare für Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), sowie eine Vielzahl zusätzlicher Funktionen:
+WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive Forms Editor) zum Erstellen und Veröffentlichen adaptiver Formulare für Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features) sowie eine Vielzahl zusätzlicher Funktionen:
 
 * Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
 * Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
@@ -94,7 +94,7 @@ Der AEM Forms-Marketo-Connector schließt die Lücke zwischen Ihren mit Adobe Ex
 
 Wenn ein Benutzer ein Formular auf Ihrer Website sendet, das mit AEM adaptiven Forms erstellt wurde, stellt der Connector sicher, dass die gesendeten Daten automatisch an Marketo gesendet werden. Dadurch entfällt die Notwendigkeit manueller Dateneingabe und das Fehlerrisiko wird reduziert.
 
-![AEM Form - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![AEM Formular - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Durch die Optimierung des Datenübertragungsprozesses kann der Connector Ihnen dabei helfen, die Konversionsraten Ihrer Website zu verbessern. Durch den automatischen Versand von Lead-Daten an Marketo können Sie sicherstellen, dass qualifizierte Leads schnell in Ihre Pflegeprogramme aufgenommen werden.
 
@@ -109,19 +109,19 @@ Adaptive Forms kann jetzt in einer RTL-Sprache (Right-to-Left) angezeigt werden,
 
 Diese Funktion richtet sich an Sprachen wie Arabisch, Hebräisch und Urdu, die von Rechts-nach-Links (RTL) geschrieben und gelesen werden, und fördert so bessere Verständigungs- und Abschlussraten für Formulare.
 
-![Unterstützung von Sprachen mit Rechts-nach-links-Schreibrichtung (RTL)](mobile-responsive.png)
+![Unterstützung für Sprachen von rechts nach links (RTL)](mobile-responsive.png)
 
 Die Sprachen von rechts nach links (RTL) in Adaptive Forms unterstützen Sie bei Folgendem:
 
-* **Erweiterung der Benutzerbasis**: Unternehmen können heute weltweit über 2 Milliarden Menschen erreichen, die sich mit RTL-Sprachen besser auskennen.
+* **Erweitert die Benutzerbasis**: Unternehmen können jetzt weltweit über 2 Milliarden Menschen erreichen, die sich mit RTL-Sprachen besser auskennen.
 
-* **Verbessertes Benutzererlebnis**: Forms wird fehlerfrei mit dem Textfluss von rechts nach links, der ordnungsgemäßen Ausrichtung der Benutzeroberflächenelemente und intuitiven Layouts, die die Lesgewohnheiten der Benutzer widerspiegeln, dargestellt. Dies verringert Verwirrung und erhöht die Rate der Formularvervollständigung.
+* **Verbessertes Benutzererlebnis bereitstellen**: Forms wird fehlerfrei mit Textfluss von rechts nach links, korrekter Ausrichtung der Benutzeroberflächen-Elemente und intuitiven Layouts, die die Lesgewohnheiten der Benutzer widerspiegeln, gerendert. Dies verringert Verwirrung und erhöht die Rate der Formularvervollständigung.
 
-* **Bereitstellen mobiler responsiver Erlebnisse**: Forms bleibt auf jedem Gerät verfügbar, da die Mobilgeräte responsiv agieren und so auf Desktop-PCs, Tablets und Smartphones reibungslos funktionieren.
+* **Mobilgerät - responsive Erlebnisse bereitstellen**: Forms bleibt auf jedem Gerät zugänglich, da Mobilgeräte responsiv agieren und so auf Desktops, Tablets und Smartphones reibungslos funktionieren.
 
 Insgesamt ermöglicht die Unterstützung von RTL-Sprachen in Adaptive Forms Unternehmen, echte globale Formulare zu entwerfen und so Reichweite, Interaktion und Inklusivität zu steigern.
 
-Bereit zum Start? [Adaptive Forms RTL-Dokumentation](/help/forms/supporting-new-language-localization-core-components.md) bietet eine schrittweise Anleitung zur Nutzung der RTL-Innovation.
+Bereit zum Start? Die [Adaptive Forms RTL-Dokumentation](/help/forms/supporting-new-language-localization-core-components.md) enthält eine schrittweise Anleitung zur Verwendung der RTL-Innovation.
 
 ### Verbesserte Bot-Schutzmethoden
 
@@ -144,15 +144,15 @@ Im Folgenden finden Sie eine Aufschlüsselung der Funktionen von Doc Assurance-A
 
 * **Dokumente verschlüsseln und entschlüsseln**: Protect Sie Ihre Dokumente, indem Sie deren Inhalt mit Verschlüsselung unlesbar machen. Sie haben die Kontrolle darüber, welche Teile der PDF verschlüsselt sind, einschließlich des gesamten Dokuments, bestimmter Inhalte, Metadaten oder Anlagen.
 
-* **Dokumente digital signieren**: Fügen Sie Ihren Dokumenten digitale Signaturen zur Validierung und zur manipulationssicheren Überprüfung hinzu. Dies kann zu Zertifizierungszwecken oder zur Gewährleistung der Dokumentintegrität verwendet werden.
+* **Dokumente digital signieren**: Fügen Sie Ihren Dokumenten digitale Signaturen hinzu, um sie zu validieren und fälschungssicher zu überprüfen. Dies kann zu Zertifizierungszwecken oder zur Gewährleistung der Dokumentintegrität verwendet werden.
 
-* **Reader Erweitern Ihrer Dokumente (Anwenden oder Bearbeiten von Verwendungsrechten für PDF-Dokumente)**: Ermöglicht Ihrem Unternehmen das einfache Freigeben interaktiver PDF-Dokumente durch Erweiterung der Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte.
+* **Reader Erweitern Sie Ihre Dokumente (Verwendungsrechte von PDF-Dokumenten anwenden oder bearbeiten)**: Ermöglicht Ihrem Unternehmen das einfache Freigeben interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader mit zusätzlichen Verwendungsrechten.
 
   Die APIs zur Reader-Erweiterung (Verwendungsrechte) fügen einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
   Wenn PDF-Dokumente über die entsprechenden Verwendungsrechte verfügen, können Empfänger aktivierte Aktivitäten innerhalb von Adobe Reader durchführen.
 
-Insgesamt [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helfen Ihnen, die Dokumentsicherheit und die Einhaltung von Richtlinien zu verbessern, indem Sie eine zusätzliche Kontrollebene hinzufügen.
+Insgesamt helfen Ihnen [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) bei der Verbesserung der Dokumentensicherheit und -konformität durch Hinzufügen einer zusätzlichen Kontrollebene.
 
 
 ### Forms Service-APIs
@@ -179,7 +179,7 @@ Konversationale Forms sind mehr als nur ein neues Erscheinungsbild - sie veränd
 
 ### WYSIWYG Authoring für Edge Delivery Services
 
-WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive Forms Editor) zum Erstellen und Veröffentlichen adaptiver Formulare für Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), sowie eine Vielzahl zusätzlicher Funktionen:
+WYSIWYG Authoring bietet WYSIWYG-Schnittstellen (Universal Editor und Adaptive Forms Editor) zum Erstellen und Veröffentlichen adaptiver Formulare für Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen von [Dokumentenbasiertes Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features) sowie eine Vielzahl zusätzlicher Funktionen:
 
 * Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
 * Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
@@ -197,7 +197,7 @@ Der AEM Forms-Marketo-Connector schließt die Lücke zwischen Ihren mit Adobe Ex
 
 Wenn ein Benutzer ein Formular auf Ihrer Website sendet, das mit AEM adaptiven Forms erstellt wurde, stellt der Connector sicher, dass die gesendeten Daten automatisch an Marketo gesendet werden. Dadurch entfällt die Notwendigkeit manueller Dateneingabe und das Fehlerrisiko wird reduziert.
 
-![AEM Form - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![AEM Formular - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Durch die Optimierung des Datenübertragungsprozesses kann der Connector Ihnen dabei helfen, die Konversionsraten Ihrer Website zu verbessern. Durch den automatischen Versand von Lead-Daten an Marketo können Sie sicherstellen, dass qualifizierte Leads schnell in Ihre Pflegeprogramme aufgenommen werden.
 
@@ -212,19 +212,19 @@ Adaptive Forms kann jetzt in einer RTL-Sprache (Right-to-Left) angezeigt werden,
 
 Diese Funktion richtet sich an Sprachen wie Arabisch, Hebräisch und Urdu, die von Rechts-nach-Links (RTL) geschrieben und gelesen werden, und fördert so bessere Verständigungs- und Abschlussraten für Formulare.
 
-![Unterstützung von Sprachen mit Rechts-nach-links-Schreibrichtung (RTL)](mobile-responsive.png)
+![Unterstützung für Sprachen von rechts nach links (RTL)](mobile-responsive.png)
 
 Die Sprachen von rechts nach links (RTL) in Adaptive Forms unterstützen Sie bei Folgendem:
 
-* **Erweiterung der Benutzerbasis**: Unternehmen können heute weltweit über 2 Milliarden Menschen erreichen, die sich mit RTL-Sprachen besser auskennen.
+* **Erweitert die Benutzerbasis**: Unternehmen können jetzt weltweit über 2 Milliarden Menschen erreichen, die sich mit RTL-Sprachen besser auskennen.
 
-* **Verbessertes Benutzererlebnis**: Forms wird fehlerfrei mit dem Textfluss von rechts nach links, der ordnungsgemäßen Ausrichtung der Benutzeroberflächenelemente und intuitiven Layouts, die die Lesgewohnheiten der Benutzer widerspiegeln, dargestellt. Dies verringert Verwirrung und erhöht die Rate der Formularvervollständigung.
+* **Verbessertes Benutzererlebnis bereitstellen**: Forms wird fehlerfrei mit Textfluss von rechts nach links, korrekter Ausrichtung der Benutzeroberflächen-Elemente und intuitiven Layouts, die die Lesgewohnheiten der Benutzer widerspiegeln, gerendert. Dies verringert Verwirrung und erhöht die Rate der Formularvervollständigung.
 
-* **Bereitstellen mobiler responsiver Erlebnisse**: Forms bleibt auf jedem Gerät verfügbar, da die Mobilgeräte responsiv agieren und so auf Desktop-PCs, Tablets und Smartphones reibungslos funktionieren.
+* **Mobilgerät - responsive Erlebnisse bereitstellen**: Forms bleibt auf jedem Gerät zugänglich, da Mobilgeräte responsiv agieren und so auf Desktops, Tablets und Smartphones reibungslos funktionieren.
 
 Insgesamt ermöglicht die Unterstützung von RTL-Sprachen in Adaptive Forms Unternehmen, echte globale Formulare zu entwerfen und so Reichweite, Interaktion und Inklusivität zu steigern.
 
-Bereit zum Start? [Adaptive Forms RTL-Dokumentation](/help/forms/supporting-new-language-localization-core-components.md) bietet eine schrittweise Anleitung zur Nutzung der RTL-Innovation.
+Bereit zum Start? Die [Adaptive Forms RTL-Dokumentation](/help/forms/supporting-new-language-localization-core-components.md) enthält eine schrittweise Anleitung zur Verwendung der RTL-Innovation.
 
 ### Verbesserte Bot-Schutzmethoden
 
@@ -247,15 +247,15 @@ Im Folgenden finden Sie eine Aufschlüsselung der Funktionen von Doc Assurance-A
 
 * **Dokumente verschlüsseln und entschlüsseln**: Protect Sie Ihre Dokumente, indem Sie deren Inhalt mit Verschlüsselung unlesbar machen. Sie haben die Kontrolle darüber, welche Teile der PDF verschlüsselt sind, einschließlich des gesamten Dokuments, bestimmter Inhalte, Metadaten oder Anlagen.
 
-* **Dokumente digital signieren**: Fügen Sie Ihren Dokumenten digitale Signaturen zur Validierung und zur manipulationssicheren Überprüfung hinzu. Dies kann zu Zertifizierungszwecken oder zur Gewährleistung der Dokumentintegrität verwendet werden.
+* **Dokumente digital signieren**: Fügen Sie Ihren Dokumenten digitale Signaturen hinzu, um sie zu validieren und fälschungssicher zu überprüfen. Dies kann zu Zertifizierungszwecken oder zur Gewährleistung der Dokumentintegrität verwendet werden.
 
-* **Reader Erweitern Ihrer Dokumente (Anwenden oder Bearbeiten von Verwendungsrechten für PDF-Dokumente)**: Ermöglicht Ihrem Unternehmen das einfache Freigeben interaktiver PDF-Dokumente durch Erweiterung der Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte.
+* **Reader Erweitern Sie Ihre Dokumente (Verwendungsrechte von PDF-Dokumenten anwenden oder bearbeiten)**: Ermöglicht Ihrem Unternehmen das einfache Freigeben interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader mit zusätzlichen Verwendungsrechten.
 
   Die APIs zur Reader-Erweiterung (Verwendungsrechte) fügen einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
   Wenn PDF-Dokumente über die entsprechenden Verwendungsrechte verfügen, können Empfänger aktivierte Aktivitäten innerhalb von Adobe Reader durchführen.
 
-Insgesamt [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helfen Ihnen, die Dokumentsicherheit und die Einhaltung von Richtlinien zu verbessern, indem Sie eine zusätzliche Kontrollebene hinzufügen.
+Insgesamt helfen Ihnen [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) bei der Verbesserung der Dokumentensicherheit und -konformität durch Hinzufügen einer zusätzlichen Kontrollebene.
 
 
 ### Forms Service-APIs

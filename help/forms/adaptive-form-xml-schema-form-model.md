@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '956'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Die Hauptfunktionen bei der Verwendung eines XML-Schemas sind die Folgenden:
 
 * Die Struktur der XSD wird als Baumstruktur in der Registerkarte für die Inhaltssuche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der XSD-Hierarchie in das adaptive Formular ziehen.
 * Sie können das Formular mit XML vorausfüllen, die mit dem zugehörigen Schema konform ist.
-* Bei der Übermittlung werden die von den Benutzenden eingegebenen Daten im XML-Format gesendet, das dem zugehörigen Schema entspricht.
+* Bei der Übermittlung werden die von der Benutzerin oder dem Benutzer eingegebenen Daten im XML-Format gesendet, das dem zugehörigen Schema entspricht.
 
 Ein XML-Schema besteht aus einfachen und komplexen Elementtypen. Die Elemente weisen Attribute auf, die dem Element Regeln hinzufügen. Wenn diese Elemente und Attribute in ein adaptives Formular gezogen werden, werden sie automatisch der entsprechenden Komponente des adaptiven Formulars zugeordnet.
 
@@ -56,7 +56,7 @@ Diese Zuordnung von XML-Elementen zu Komponenten adaptiver Formulare sieht wie f
      <li><code>xs:xs:int</code></li>
      <li><code class="code">xs:decimal
         </code></li>
-     <li>Alle Typen numerischer Werte</li>
+     <li>Alle Arten numerischer Werte</li>
     </ul> </td>
    <td>Numerisches Feld</td>
   </tr>
@@ -67,7 +67,7 @@ Diese Zuordnung von XML-Elementen zu Komponenten adaptiver Formulare sieht wie f
   <tr>
    <td><code class="code">xs:enumeration
       </code></td>
-   <td>Dropdown-Liste</td>
+   <td>Dropdown</td>
   </tr>
   <tr>
    <td>Jedes Element mit komplexem Typ</td>
@@ -142,18 +142,18 @@ Sie können folgende Attribute zu XML-Schemaelementen hinzufügen, um spezielle 
   </tr>
   <tr>
    <td><code>default="default value"</code></td>
-   <td>Fügt einen Standardwert hinzu</td>
+   <td>Fügt einen Standardwert hinzu.</td>
    <td>Element und Attribut</td>
   </tr>
   <tr>
    <td><code>minOccurs="3"</code></td>
-   <td><p>Gibt die minimale Anzahl der Vorkommen an</p> <p>(Für wiederholbare Teilformulare (komplexe Typen))</p> </td>
+   <td><p>Gibt minimale Vorkommen an.</p> <p>(Für wiederholbare Teilformulare (komplexe Typen).)</p> </td>
    <td>Element (komplexer Typ)</td>
   </tr>
   <tr>
    <td><code class="code">maxOccurs="10"
       </code></td>
-   <td><p>Gibt die maximale Anzahl der Vorkommen an</p> <p>(Für wiederholbare Teilformulare (komplexe Typen))</p> </td>
+   <td><p>Gibt maximale Vorkommen an.</p> <p>(Für wiederholbare Teilformulare (komplexe Typen).)</p> </td>
    <td>Element (komplexer Typ)</td>
   </tr>
  </tbody>
@@ -193,7 +193,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Obergrenze für numerische Werte und Daten an.  Standardmäßig ist der Höchstwert enthalten.</p> </td>
+   <td><p>Legt die Obergrenze für numerische Werte und Daten fest. Standardmäßig ist der Höchstwert enthalten.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -204,7 +204,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Gibt die Untergrenze für numerische Werte und Daten an.  Standardmäßig ist der Mindestwert enthalten.</p> </td>
+   <td><p>Legt die Untergrenze für numerische Werte und Daten fest. Standardmäßig ist der Mindestwert enthalten.</p> </td>
    <td>
     <ul>
      <li>Numerisches Feld</li>
@@ -237,7 +237,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest.  Die minimale Länge muss größer oder gleich null sein.</p> </td>
+   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -246,7 +246,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>maxLength</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest.  Der maximale Länge muss größer als null sein.</p> </td>
+   <td><p>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest. Die maximale Länge muss größer als null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -264,7 +264,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die zulässige Höchstzahl von Dezimalstellen in einer Komponente fest. fractionDigits muss größer oder gleich null sein.</p> </td>
+   <td><p>Legt die zulässige Höchstzahl von Dezimalstellen in einer Komponente fest. Der fractionDigits-Wert muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li> Numerisches Feld mit Datentyp „Gleitkomma“ oder „Dezimal“.</li>
@@ -273,7 +273,7 @@ Sie können folgende Einschränkungen zu XML-Schemaelementen hinzufügen, um die
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die Reihenfolge der Zeichen fest.  Eine Komponente akzeptiert die Zeichen, wenn sie dem angegebenen Muster entsprechen.</p> <p>Die Eigenschaft „pattern“ ist dem Überprüfungsmuster der entsprechenden Komponente des adaptiven Formulars zugeordnet.</p> </td>
+   <td><p>Legt die Reihenfolge der Zeichen fest. Eine Komponente akzeptiert die Zeichen, wenn sie dem angegebenen Muster entsprechen.</p> <p>Die Eigenschaft „pattern“ ist dem Überprüfungsmuster der entsprechenden Komponente des adaptiven Formulars zugeordnet.</p> </td>
    <td>
     <ul>
      <li>Alle adaptiven Formulare, die einem XSD-Schema zugeordnet sind </li>

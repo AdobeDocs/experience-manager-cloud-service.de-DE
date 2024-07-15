@@ -7,7 +7,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Herunterladen der neuesten Version von Adobe Experience Manager as a Cloud Servi
 
    >[!NOTE]
    >
-   > Es wird empfohlen, die neueste Version des Experience Manager Forms-Funktionsarchivs (AEM Forms-Add-on), der Formularverweis-Assets oder Forms Designer herunterzuladen, um eine nahtlose Kompatibilität mit dem Adobe Experience Manager as a Cloud Service SDK sicherzustellen.
+   > Es wird empfohlen, die neueste Version des Experience Manager Forms-Funktionsarchivs (AEM Forms-Add-on), der Formularverweis-Assets oder von Forms Designer herunterzuladen, um eine nahtlose Kompatibilität mit dem Adobe Experience Manager as a Cloud Service SDK sicherzustellen.
 
 1. Lesen und akzeptieren Sie den Endbenutzer-Lizenzvertrag. Klicken Sie auf die Schaltfläche **[!UICONTROL Herunterladen]**.
 
@@ -271,7 +271,7 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 
 >[!NOTE]
 >
-> Richten Sie AEM auf Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365 und Salesforce-Formulardatenmodell (FDM) mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
+> Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle (FDM) mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 > Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
@@ -411,7 +411,7 @@ Sichern von Assets und Verschieben vom vorhandenen SDK in eine neue SDK-Umgebung
 
 ### Erstellen Sie eine Sicherung Ihres vorhandenen Inhalts {#create-backup-of-your-existing-content}
 
-Sichern Sie Ihre adaptive Forms, Vorlagen, das Formulardatenmodell (FDM), Ihr Design, Ihre Konfigurationen und Ihren benutzerdefinierten Code. Sie können folgende Aktion ausführen, um eine Sicherung zu erstellen:
+Sichern Sie adaptive Formulare, Vorlagen, Formulardatenmodell (FDM), Design, Konfigurationen und benutzerdefinierten Code. Sie können folgende Aktion ausführen, um eine Sicherung zu erstellen:
 
 1. Adaptive Formulare, Designs und PDF-Formulare [herunterladen](import-export-forms-templates.md#manage-forms-and-related-assets).
 1. Vorlagen für adaptive Formulare exportieren.

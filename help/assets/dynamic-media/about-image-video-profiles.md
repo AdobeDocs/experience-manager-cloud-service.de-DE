@@ -6,7 +6,7 @@ feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![Screenshot von Assets in Experience Manager, der einen ausgewählten Ordner mit Assets zeigt. Die Dropdown-Liste „Timeline“ ist hervorgehoben, die Schaltfläche „Workflow starten“ ist hervorgehoben, und das Karat-Symbol rechts neben dem Kommentarfeld ist ebenfalls hervorgehoben](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Wählen Sie **[!UICONTROL Workflow starten]** aus.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Dynamic Media Reprocess]** aus.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Dynamic Media erneut verarbeiten]** aus.
 1. (Optional) Geben Sie im Textfeld **Titel des Workflows eingeben** einen Namen für den Workflow ein. Sie können den Namen gegebenenfalls verwenden, um auf die Workflow-Instanz zu verweisen.
 
    ![Screenshot der Timeline-Benutzeroberfläche mit der Auswahl „Dynamic Media Reprocess“ aus der Dropdown-Liste „Workflow starten“ und hervorgehobener Schaltfläche „Starten“.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
@@ -116,7 +116,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Klicken Sie oben rechts im Dialogfeld **[!UICONTROL Massen-Upload in Scene7 – Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
-1. Klicken Sie oben rechts auf der Workflow-Modellseite „Dynamic Media Reprocess“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. Klicken Sie oben rechts auf der Workflow-Modellseite „Dynamic Media-Neuverarbeitung“ auf **[!UICONTROL Sync]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Screenshot von Assets in Experience Manager, der einen ausgewählten Ordner mit Assets zeigt. Die Dropdown-Liste „Timeline“ ist hervorgehoben, die Schaltfläche „Workflow starten“ ist hervorgehoben, und das Karat-Symbol rechts neben dem Kommentarfeld ist ebenfalls hervorgehoben](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 

@@ -23,14 +23,14 @@ In diesem Dokument werden diese beiden Anwendungsfälle ausführlich erläutert 
 
 >[!TIP]
 >
->Falls noch nicht geschehen, lesen Sie bitte das Dokument [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md) für eine vollständige Übersicht und einen vollständigen Wert des universellen Editors.
+>Wenn Sie dies noch nicht getan haben, lesen Sie das Dokument [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md) , um einen vollständigen Überblick und einen vollständigen Wert für den universellen Editor zu erhalten.
 
 ## Anwendungsfälle {#use-cases}
 
 Der universelle Editor stellt Ihren Inhaltsautoren einen bequemen, intuitiven visuellen Editor zur Verfügung, unabhängig davon, welche Art von Inhalt sie erstellen. Die beiden Hauptanwendungsfälle sind:
 
-* [WYSIWYG Authoring](#wysiwyg-authoring) - Verwenden Sie die AEM Sites-Konsole, um Ihre Inhalte und Autorenseiten in AEM mit dem universellen Editor zu verwalten.
-* [Headless Authoring](#headless-authoring) - Verfassen Sie Inhalte in Ihrer eigenen, benutzerdefinierten Headless-Anwendung mit dem Universal Editor.
+* [WYSIWYG Authoring](#wysiwyg-authoring) - Verwenden Sie die AEM Sites-Konsole, um Ihre Inhalte und Autorenseiten in AEM mit dem universellen Editor zu verwalten
+* [Headless Authoring](#headless-authoring) - Erstellen Sie Inhalte in Ihrer eigenen Headless-Anwendung mit dem universellen Editor.
 
 ### WYSIWYG Authoring {#wysiwyg-authoring}
 
@@ -40,8 +40,8 @@ Auf diese Weise können Sie von den in der Sites-Konsole verfügbaren Tools wie 
 
 Wenn dies Ihr Anwendungsfall ist, sehen Sie sich die folgenden Dokumente an, um einen vollständigen Überblick darüber zu erhalten, wie Sie mit dem universellen Editor in AEM arbeiten können.
 
-1. [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Erste Schritte mit Ihrem ersten Universal Editor-Projekt in AEM
-1. [Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen](/help/edge/wysiwyg-authoring/create-block.md) - Erfahren Sie, wie Sie Bausteine instrumentieren können, um Ihre Inhalte im universellen Editor bearbeitbar zu machen.
+1. [Entwicklerhandbuch für WYSIWYG-Inhaltserstellung mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Erste Schritte mit Ihrem ersten Universal-Editor-Projekt in AEM
+1. [Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen](/help/edge/wysiwyg-authoring/create-block.md) - Erfahren Sie, wie Sie Bausteine instrumentieren können, um Ihre Inhalte im universellen Editor bearbeitbar zu machen
 1. [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) - Erfahren Sie mehr über die Struktur von Bausteinen, um Ihre Inhalte für die Verwendung mit dem universellen Editor effektiv zu modellieren.
 
 Nachdem Sie diese Dokumente gelesen haben, können Sie auf diese Seite zurückkehren, um mehr über den Anwendungsfall für Headless Authoring und die allgemeine Funktionsweise des universellen Editors zu erfahren.
@@ -69,7 +69,7 @@ Der universelle Editor funktioniert wie folgt.
 1. Der Inhaltsautor bearbeitet den Seiteninhalt in einer intuitiven WYSIWYG-Benutzeroberfläche und bearbeitet ihn an Ort und Stelle.
 1. Der universelle Editor behält die Änderungen automatisch wieder in AEM bei.
 
-Weitere Informationen zur Architektur des universellen Editors finden Sie im Dokument [Architektur des universellen Editors.](/help/implementing/universal-editor/architecture.md)
+Weitere Informationen zur Architektur des universellen Editors finden Sie im Dokument [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md) .
 
 ## Universelle Editor-Konzepte {#concepts}
 
@@ -77,5 +77,5 @@ Damit eine Seite oder App vom universellen Editor bearbeitet werden kann, muss s
 
 * [Attribute und Typen](/help/implementing/universal-editor/attributes-types.md) - Damit eine App oder Seite vom universellen Editor bearbeitet werden kann, muss sie ordnungsgemäß instrumentiert werden. Dazu gehören auch die korrekten Metadaten, damit der Editor den Inhalt der App bearbeiten kann.
 * [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md) - Sobald die Metadaten vorhanden sind, um die Bearbeitung einer Komponente zu ermöglichen, definieren Sie in der Eigenschaftenleiste des Editors, welche Felder und Komponententypen sie bearbeiten können. Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
-* [Anpassen des Authoring-Erlebnisses für den universellen Editor](/help/implementing/universal-editor/customizing.md) - Sobald die App oder Seite vollständig instrumentiert wurde, kann das Universeller Editor-Erlebnis weiter angepasst werden, indem die verfügbaren Komponenten gefiltert oder die Funktionalität des Editors erweitert wird.
-* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md) - Sie können Ihre App weiter anpassen, indem Sie auf Standardereignisse reagieren, die das Universal an Änderungen am Inhalt und an der Benutzeroberfläche sendet.
+* [Anpassen des Inhaltserlebnisses für den universellen Editor](/help/implementing/universal-editor/customizing.md) - Sobald die App oder Seite vollständig instrumentiert wurde, kann das Erlebnis für den universellen Editor weiter angepasst werden, indem die verfügbaren Komponenten gefiltert oder die Funktionalität des Editors erweitert wird.
+* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md): Sie können Ihre App weiter anpassen, indem Sie auf Standardereignisse reagieren, die von Universal bei Änderungen am Inhalt und an der Benutzeroberfläche gesendet werden.

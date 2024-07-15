@@ -12,7 +12,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1433'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -128,14 +128,14 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Clou
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Führen Sie das [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration) aus. Beim Festlegen von Parametern für **[!UICONTROL Migrationssatz erstellen]** den Pfad von Adaptive Forms, Designs, Vorlagen, Formulardatenmodell (FDM), Cloud Services, benutzerdefinierten Komponenten und anderen AEM Forms-spezifischen Assets zum **[!UICONTROL Einzuschließende Pfade]** -Option. Dadurch werden die angegebenen [!DNL AEM Forms]-Assets zum Migrationssatz hinzugefügt.
+1. Führen Sie das [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration) aus. Geben Sie beim Festlegen von Parametern im Bildschirm **[!UICONTROL Migrationssatz erstellen]** den Pfad von adaptiven Formularen, Designs, Vorlagen, Formulardatenmodellen (FDM), Cloud-Services, benutzerdefinierten Komponenten und anderen AEM Forms-spezifischen Elementen in der Option **[!UICONTROL Einzuschließende Pfade]** an. Dadurch werden die angegebenen [!DNL AEM Forms]-Assets zum Migrationssatz hinzugefügt.
 
 ## Pfade verschiedener AEM Forms-spezifischer Assets
 
 Wenn Sie von AEM Forms 6.5 zu Cloud Service migrieren, können Sie die AEM Forms-spezifischen Assets unter folgendem Pfad finden:
 
 * **Adaptive Formulare**: Adaptive Formulare finden Sie unter `/content/dam/formsanddocuments/` und `/content/forms/af`. Beispiel: Für ein adaptives Formular mit dem Titel „WKND-Registrierung“ fügen Sie die Pfade `/content/dam/formsanddocuments/wknd-registration` und `/content/forms/af/wknd-registration` hinzu.
-* **Formulardatenmodell**: Sie finden das gesamte Formulardatenmodell (FDM) unter `/content/dam/formsanddocuments-fdm`. Beispiel: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Formulardatenmodell**: Alle Formulardatenmodelle (FDM) finden Sie unter `/content/dam/formsanddocuments-fdm`. Beispiel: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Client-Bibliotheken**: Der Standardpfad von Client-Bibliotheken lautet `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ Wenn Sie von AEM Forms 6.5 zu Cloud Service migrieren, können Sie die AEM Forms
 
 * **Designs für adaptive Formulare und Client-Bibliotheken**: Der Standardpfad von Designs lautet ` /content/dam/formsanddocuments-themes/`, und der Standardpfad von Client-Bibliotheken ist `/etc/clientlibs/fd/theme`. Beispiel: Für eine Vorlage mit dem Titel „WKND-Design“ fügen Sie den Pfad ` /content/dam/formsanddocuments-themes/wkndtheme` und die Client-Bibliotheken für das Design unter `/etc/clientlibs/reference-themes/wkndtheme-3-0` hinzu. Sie können Designs und Client-Bibliotheken auch an anderen benutzerdefinierten Pfaden speichern.
 
-* **Cloud-Konfigurationen**: Sie finden die Cloud-Konfigurationen unter `/conf/`. Beispielsweise befindet sich die Cloud-Konfiguration des Formulardatenmodells (FDM) unter `/conf/global/settings/cloudconfigs/fdm`.
+* **Cloud-Konfigurationen**: Sie finden die Cloud-Konfigurationen unter `/conf/`. Die Cloud-Konfiguration für das Formulardatenmodell (FDM) befindet sich beispielsweise unter `/conf/global/settings/cloudconfigs/fdm`.
 
 * **Workflow-Modell**: AEM Workflow-Modelle finden Sie unter `/conf/global/settings/workflow/models/`. Beispiel: Für ein Workflow-Modell mit dem Titel „WKND-Registrierung“ fügen Sie den Pfad `/conf/global/settings/workflow/models/wknd-registration` hinzu.
 

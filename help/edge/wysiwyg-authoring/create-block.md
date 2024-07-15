@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
 source-wordcount: '1401'
-ht-degree: 59%
+ht-degree: 64%
 
 ---
 
@@ -25,9 +25,9 @@ Dieser Leitfaden erfordert unbedingt vorhandene Kenntnisse über WYSIWYG-Inhalts
 * Sie haben das [Edge Delivery Services-Tutorial](/help/edge/developer/tutorial.md) abgeschlossen.
 * Sie haben Zugriff auf eine [AEM Cloud Service-Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 * Sie haben den [universellen Editor in derselben Sandbox-Umgebung aktiviert](/help/implementing/universal-editor/getting-started.md).
-* Sie haben die [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) Handbuch.
+* Sie haben das Handbuch [Erste Schritte für Entwickler für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) abgeschlossen.
 
-Dieser Leitfaden baut auf der Arbeit auf, die im [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) Handbuch.
+Dieses Handbuch baut auf der Arbeit auf, die im Leitfaden [Entwickler - Erste Schritte für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) geleistet wurde.
 
 ## Hinzufügen eines neuen Blocks zu Ihrem Projekt {#add-block}
 
@@ -45,13 +45,13 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 ### Erstellen einer Blockdefinition und eines Modells {#create-block-model}
 
-1&amp;period; Klonen Sie das GitHub-Projekt lokal, das Sie im [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) und öffnen Sie sie in einem Editor Ihrer Wahl.
+1&amp;period; Klonen Sie das GitHub-Projekt lokal, das Sie im Leitfaden [Entwickler - Erste Schritte für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und öffnen Sie es in einem Editor Ihrer Wahl.
 
 * Zur Veranschaulichung wird hier Microsoft-Code verwendet.
 
 ![Klonen des Projekts](assets/create-block/clone.png)
 
-2&amp;period; Bearbeiten Sie die `component-definition.json` -Datei im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Anführungsblock hinzu und speichern Sie die -Datei.
+2&amp;period; Bearbeiten Sie die Datei &quot;`component-definition.json`&quot; im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Anführungsblock hinzu und speichern Sie die Datei.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-3&amp;period; Bearbeiten Sie die `component-models.json` Datei im Stammverzeichnis des Projekts und fügen Sie Folgendes hinzu: [Modelldefinition](/help/implementing/universal-editor/field-types.md#model-structure) für Ihren neuen Anführungsblock und speichern Sie die Datei.
+3&amp;period; Bearbeiten Sie die Datei &quot;`component-models.json`&quot;im Stammverzeichnis des Projekts, fügen Sie die folgende [Modelldefinition](/help/implementing/universal-editor/field-types.md#model-structure) für Ihren neuen Anführungsblock hinzu und speichern Sie die Datei.
 
-* Lesen Sie das Dokument . [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) für weitere Informationen darüber, was beim Erstellen von Inhaltsmodellen zu beachten ist.
+* Weitere Informationen dazu, was beim Erstellen von Inhaltsmodellen wichtig ist, finden Sie im Dokument [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) .
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-4&amp;period; Bearbeiten Sie die `component-filters.json` -Datei im Stammverzeichnis des Projekts und fügen Sie den Anführungszeichenblock zum [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) , damit der Block zu einem beliebigen Abschnitt hinzugefügt werden kann, und speichern Sie die Datei.
+4&amp;Punkt; Bearbeiten Sie die Datei `component-filters.json` im Stammverzeichnis des Projekts und fügen Sie den Anführungsblock zur [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt und die Datei gespeichert werden kann.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-5&amp;period; Übertragen Sie diese Änderungen mithilfe von Git auf Ihre `main` -Verzweigung.
+5&amp;period; Übertragen Sie diese Änderungen mithilfe von Git in Ihren `main`-Zweig.
 
 * Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
 
@@ -155,7 +155,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt übertragen wurde, können Sie einer vorhandenen Seite einen Zitatblock hinzufügen.
 
-1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. [Verwenden der Sites-Konsole,](/help/sites-cloud/authoring/basic-handling.md) Navigieren Sie zu der Site, die Sie in der [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) und wählen Sie eine Seite aus.
+1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. [Navigieren Sie mithilfe der Sites-Konsole](/help/sites-cloud/authoring/basic-handling.md) zu der Site, die Sie im Leitfaden [Entwickler - Erste Schritte - Erste Schritte - WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und wählen Sie eine Seite aus.
 
    * In diesem Fall wird `index` zur Veranschaulichung verwendet.
 
@@ -190,13 +190,13 @@ Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt ü
 
 Nachdem Sie nun über einen funktionierenden Zitatblock verfügen, können Sie ihn mit Stilen versehen.
 
-1&amp;period; kehren Sie zum Editor für Ihr Projekt zurück.
+1&amp;Punkt; kehren Sie zum Editor für Ihr Projekt zurück.
 
-2&amp;period; Erstellen Sie eine `quote` Ordner unter `blocks` Ordner.
+2&amp;period; Erstellen Sie einen Ordner `quote` unter dem Ordner `blocks` .
 
 ![Erstellen eines neuen Ordners](assets/create-block/new-folder.png)
 
-3&amp;period; In der neuen `quote` Ordner, fügen Sie einen `quote.js` -Datei, um die Blockdekoration zu implementieren, indem Sie das folgende JavaScript hinzufügen und die -Datei speichern.
+3&amp;period;Im neuen Ordner `quote` fügen Sie eine `quote.js` -Datei hinzu, um die Blockdekoration zu implementieren, indem Sie die folgende JavaScript hinzufügen und die Datei speichern.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;period; in der `quote` Ordner, fügen Sie einen `quote.css` -Datei, um die Formatierung für den Baustein zu definieren, indem Sie den folgenden CSS-Code hinzufügen und die Datei speichern.
+4&amp;period; Fügen Sie im Ordner `quote` eine `quote.css` -Datei hinzu, um die Formatierung für den Block zu definieren, indem Sie den folgenden CSS-Code hinzufügen und die Datei speichern.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;period; Übertragen Sie diese Änderungen mithilfe von Git auf Ihre `main` -Verzweigung.
+5&amp;period; Übertragen Sie diese Änderungen mithilfe von Git in Ihren `main`-Zweig.
 
 * Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
 
-6&amp;period; Kehren Sie zur Registerkarte Ihres Browsers im universellen Editor zurück, wo Sie die Seite Ihres Projekts bearbeitet haben, und laden Sie die Seite neu, um Ihren formatierten Block anzuzeigen.
+6&amp;Punkt; Kehren Sie zur Registerkarte Ihres Browsers im universellen Editor zurück, wo Sie die Seite Ihres Projekts bearbeitet haben, und laden Sie die Seite neu, um Ihren formatierten Block anzuzeigen.
 
-7&amp;period; siehe den jetzt formatierten Anführungsblock auf der Seite.
+7&amp;Punkt; sehen Sie den jetzt formatierten Anführungsblock auf der Seite.
 
 ![Der formatierte Zitatblock im universellen Editor](assets/create-block/quote-styled.png)
 
-8&amp;period; Stellen Sie sicher, dass die Änderungen an die Produktion gesendet wurden, indem Sie zur veröffentlichten Seite navigieren. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;Punkt; Stellen Sie sicher, dass die Änderungen an die Produktion gesendet wurden, indem Sie zur veröffentlichten Seite navigieren. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.hlx.page`
 
 ![Der veröffentlichte und formatierte Zitatblock](assets/create-block/quote-styled-published.png)
 
@@ -281,9 +281,9 @@ Herzlichen Glückwunsch! Sie verfügen nun über einen voll funktionierenden und
 
 ### Blockoptionen {#block-options}
 
-Wenn Sie einen Block benötigen, der je nach bestimmten Umständen etwas anders aussieht oder sich verhalten soll, sich aber nicht stark genug unterscheidet, um selbst zu einem neuen Block zu werden, können Sie Autoren unter [Blockoptionen.](content-modeling.md#type-inference)
+Wenn Sie einen Block benötigen, der je nach bestimmten Umständen etwas anders aussieht oder sich etwas anders verhalten soll, sich aber nicht stark genug unterscheidet, um selbst zu einem neuen Block zu werden, können Sie die Autorinnen und Autoren aus den [Blockoptionen](content-modeling.md#type-inference) auswählen lassen.
 
-Indem Sie eine `classes` -Eigenschaft auf den Block, die Eigenschaft, die in der Tabellenüberschrift bei einfachen Bausteinen wiedergegeben wird, oder die Eigenschaft als Wertliste für Elemente in einem Container-Block.
+Durch das Hinzufügen einer `classes`-Eigenschaft zum Block wird die Eigenschaft in der Tabellenkopfzeile für einfache Blöcke bzw. als Wertliste für Elemente in einem Container-Block gerendert.
 
 ```json
 {
@@ -335,9 +335,9 @@ Die Veröffentlichung von Inhalten mit einem neuen Modell wird nur unterstützt,
 
 Nachdem Sie nun wissen, wie man Bausteine erstellt, ist es wichtig zu verstehen, wie man Inhalte auf semantische Weise modelliert, um ein schlankes Entwicklererlebnis zu erhalten.
 
-Lesen Sie das Dokument . [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) , um zu erfahren, wie die Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten funktioniert.
+Weitere Informationen zur Funktionsweise der Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten finden Sie im Dokument [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) .
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM als Inhaltsquelle aktiviert ist, finden Sie unter [Dieses AEM GEMs-Webinar.](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) .
 

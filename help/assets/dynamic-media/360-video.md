@@ -1,14 +1,14 @@
 ---
 title: 360-Grad-/VR-Video
-description: Erfahren Sie, wie Sie mit 360- und VR-Videos (Virtual Reality) in Dynamic Media arbeiten.
+description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Reality-Videos (VR) in Dynamic Media.
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 93%
+source-wordcount: '1007'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-Sie können Adobe Premier Pro verwenden, um 360/VR-Aufnahmen anzuzeigen und zu bearbeiten. Sie können beispielsweise Logos und Text richtig in einer Szene platzieren und speziell für Panoramedien entwickelte Effekte und Übergänge anwenden.
+Sie können 360-Grad-/VR-Videos mit Adobe Premiere Pro anzeigen und bearbeiten. Beispielsweise können Sie Logos und Text in einer Szene platzieren sowie speziell für Panoramavideos entwickelte Effekte und Überblendungen anwenden.
 
 Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](https://helpx.adobe.com/de/premiere-pro/how-to/edit-360-vr-video.html).
 
@@ -68,7 +68,7 @@ Beim Hochladen in [!DNL Experience Manager] werden 360-Grad-Video-Assets wie nor
 
    * Verarbeiten Sie 360-Grad-Videoinhalte in einem Ordner, der ausschließlich 360-Grad-Video-Assets enthält.
 
-   Dieser Ansatz stellt höhere Anforderungen an das Netzwerk und die CPU des Benutzers.
+   Dieser Ansatz stellt höhere Anforderungen an das Netzwerk und die CPU der Benutzenden.
 
 1. [Laden Sie Ihr Video in den Ordner hoch](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 

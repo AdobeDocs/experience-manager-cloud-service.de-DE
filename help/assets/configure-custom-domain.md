@@ -24,14 +24,14 @@ In Adobe Cloud Manager können Sie Ihre Website durch Hinzufügen einer benutzer
 
 Gehen Sie wie folgt vor, um eine benutzerdefinierte Domäne für die Veröffentlichungsstufe zu konfigurieren:
 
-1. Navigieren Sie zu **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Programmübersicht]** > **[!UICONTROL SSL-Zertifikate]**und fügen Sie Ihr SSL-Zertifikat hinzu.
+1. Wechseln Sie zu **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Programmübersicht]** > **[!UICONTROL SSL-Zertifikate]** und fügen Sie Ihr SSL-Zertifikat hinzu.
    ![image](/help/assets/assets/ssl-certificate.png)
-Erfahren Sie, wie Sie [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
+Erfahren Sie, wie Sie in Adobe Cloud Manager das [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) hinzufügen.
 
-1. Fügen Sie nach dem Hinzufügen des SSL-Zertifikats eine benutzerdefinierte Domäne hinzu. Klicks **[!UICONTROL Domäneneinstellungen]** und geben Sie die benutzerdefinierte Domäne für die **[!UICONTROL Publish-Dienst]** -Option.
-Weitere Informationen [Benutzerdefinierte Domäne](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+1. Fügen Sie nach dem Hinzufügen des SSL-Zertifikats eine benutzerdefinierte Domäne hinzu. Klicken Sie auf **[!UICONTROL Domäneneinstellungen]** und geben Sie die benutzerdefinierte Domäne für die Option **[!UICONTROL Publish-Dienst]** an.
+Erfahren Sie mehr über [benutzerdefinierte Domäne](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. 2 hinzufügen [CNAME-Einträge](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) in Ihrem DNS-Eintrag, der den Veröffentlichungsdomänen entspricht.
+1. Fügen Sie 2 [CNAME-Einträge](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) in Ihren DNS-Eintrag hinzu, die den Veröffentlichungsdomänen entsprechen.
 Die Verarbeitung der DNS-Verifizierung kann aufgrund von Verzögerungen bei der DNS-Verbreitung einige Stunden dauern.
 
 1. Protokollieren Sie einen Support-Fall, um die Konfiguration der benutzerdefinierten Domäne zu erleichtern und sicherzustellen, dass sie zur Bereitstellungsebene weitergeleitet wird.

@@ -23,7 +23,7 @@ Die Benutzeroberfläche für die Cloud-Verwaltung besteht in erster Linie aus zw
 
 >[!TIP]
 >
->Sehen Sie sich auch die [Journey der Onboarding-Dokumentation](/help/journey-onboarding/overview.md) für einen vollständigen Überblick darüber, wie Sie mit Cloud Manager AEM as a Cloud Service Funktionen nutzen können.
+>Sehen Sie sich auch die [Onboarding-Dokumentation Journey](/help/journey-onboarding/overview.md) an, um einen vollständigen Überblick darüber zu erhalten, wie Sie mit AEM as a Cloud Service mit Cloud Manager arbeiten können.
 
 ## Konsole „Meine Programme“ {#my-programs}
 
@@ -106,7 +106,7 @@ Jedes Programm wird durch eine Karte (oder eine Zeile in einer Tabelle) dargeste
 
 * Programmbild (falls konfiguriert)
 * Programmname
-* Diensttyp: **Experience Manager Cloud** für AEM als * Cloud Service oder [**Experience Manager** für AMS-Programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* Diensttyp: **Experience Manager Cloud** für AEM as a * Cloud Service-Programme oder [**Experience Manager** für AMS-Programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Programmtyp](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): Sandbox oder Produktion
 * Status
 * Konfigurierte Lösungen
@@ -120,11 +120,11 @@ Abhängig von den bei der Erstellung des Programms ausgewählten Optionen kann e
 
 * [WAF-DDOS-Schutz](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![WAF-DDOS-Zeichen](assets/waf-ddos-protection.png)
+  ![WAF-DDOS Badge](assets/waf-ddos-protection.png)
 
 * [99,99 % SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
-  ![99,99 % SLA-Zeichen](assets/9999-sla.png)
+  ![99,99% SLA-Zeichen](assets/9999-sla.png)
 
 Über das Informationssymbol erhalten Sie auch Schnellzugriff auf zusätzliche Informationen zum Programm (nützlich in der Listenansicht).
 
@@ -168,7 +168,7 @@ Die Programmübersicht bietet Zugriff auf alle Details eines Cloud Manager-Progr
 1. Ein [Aktionsaufruf](#cta) basierend auf den letzten Aktionen des Programms
 1. Eine [Übersicht über die Umgebungen](#environments) des Programms
 1. Eine [Übersicht über die Pipelines](#pipelines) des Programms
-1. Ein [Leistungsübersicht](#performance) des Programms
+1. Überblick über die Leistung des Programms ](#performance)[
 1. Links zu [nützlichen Ressourcen](#useful-resources)
 
 ### Symbolleisten {#program-overview-toolbar}

@@ -1,18 +1,18 @@
 ---
-title: Wie erhalten Sie Referenzthemen und Vorlagen für adaptive Formulare?
-description: Verwenden Sie die Referenzmodelle für adaptive Formularthemen, Vorlagen und Formulardaten, die bereitgestellt werden, um schnell zu beginnen.
+title: Wie lassen sich Referenz-Designs und -vorlagen für AEM Forms erhalten?
+description: Verwenden Sie die Referenz-Designs für adaptive Formulare, Vorlagen und Formulardatenmodelle, die für einen schnellen Start bereitgestellt werden.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Referenz-Assets für Forms as a Cloud Service {#reference-themes}
 
-Sie können die Referenzdesigns, -vorlagen und das Formulardatenmodell (FDM) abrufen, indem Sie die [Referenz-Assets-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Es hilft Ihnen, schnell mit der Entwicklung adaptiver Formulare zu beginnen und sie zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) verwenden, um dieses Paket in Ihrer Forms as a Cloud Service-Umgebung bereitzustellen.
+Sie können die Referenz-Designs, Vorlagen und Formulardatenmodelle (FDM) abrufen, indem Sie das [Paket mit Referenz-Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip) installieren. Es hilft Ihnen, schnell mit der Entwicklung adaptiver Formulare zu beginnen und sie zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) verwenden, um dieses Paket in Ihrer Forms as a Cloud Service-Umgebung bereitzustellen.
 Im Paket enthaltene Referenz-Assets:
 
 ## Designs {#themes}
@@ -89,7 +89,7 @@ Das Ultramarine-Design verwendet dunkelblaue Töne, um Komponenten wie Registerk
 
 Das Urban-Design betont einen minimalistischen und funktionalen Look für Ihr Formular. Wenn Sie das Urbane-Designs auf Ihr Formular anwenden, können Sie sehen, dass Komponenten reduziert sind. Die Bedienfelder erhalten dünne Konturen, um einen modernen Look zu erzielen.
 
-![Urbanes Design](/help/forms/assets/urbane.png)
+![Urbane-Design](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
 
 <!-- ## U.S. Web Design Standards {#u-s-web-design-standards}

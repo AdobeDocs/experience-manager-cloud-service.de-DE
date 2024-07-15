@@ -49,7 +49,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics für adaptive Forms**: Sie können jetzt das Verhalten sowohl der angemeldeten als auch der nicht angemeldeten (anonymen) Benutzer über Adobe Analytics for Adaptive Forms erfassen und verfolgen, um Benutzereinblicke zu sammeln. Dies hilft Benutzern aus Unternehmen, fundierte Entscheidungen über Inhalt, Layout und Stil adaptiver Formulare basierend auf den gesammelten Erkenntnissen zu treffen.
+* **Analytics for Adaptive Forms**: Sie können jetzt das Verhalten sowohl angemeldeter als auch nicht angemeldeter Benutzer (anonym) erfassen und verfolgen, indem Sie Adobe Analytics for Adaptive Forms verwenden, um Benutzereinblicke zu sammeln. Dies hilft Benutzern aus Unternehmen, fundierte Entscheidungen über Inhalt, Layout und Stil adaptiver Formulare basierend auf den gesammelten Erkenntnissen zu treffen.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms-oct-2021}
 
@@ -65,9 +65,9 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Veröffentlicht CIF Venia-Referenz-Site 2020.10.2, die die neueste Version der CIF Kernkomponenten Version 1.4.0 enthält. Siehe [Venia-Referenz-Website CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) für weitere Details.
+* Veröffentlicht CIF Venia-Referenz-Site 2020.10.2, die die neueste Version der CIF Kernkomponenten Version 1.4.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) .
 
-* Version 1.4.0 CIF Kernkomponenten veröffentlicht. Siehe [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) für weitere Details.
+* Version 1.4.0 CIF Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) .
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 

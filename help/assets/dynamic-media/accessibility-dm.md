@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheit in Dynamic Media
-description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. Best Practices für die Codierung von Videos, die Veröffentlichung von Videos in YouTube und die Anzeige von Videoberichten. Erfahren Sie außerdem, wie Sie Videos Untertitel, Untertitel oder Kapitelmarken hinzufügen.
+description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. Best Practices für die Codierung von Videos, die Veröffentlichung von Videos in YouTube und die Anzeige von Videoberichten. Erfahren Sie außerdem, wie Sie Untertitel, verdeckte Untertitel oder Kapitelmarken zu Videos hinzufügen können.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -10,7 +10,7 @@ exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Weitere Informationen finden Sie im Hilfethema **Unterstützung für Hilfstechno
 
 Dynamic Media unterstützt die Bereitstellung von Videos und adaptiven Videosätzen mit Untertiteln. Die Untertitel müssen über dem Videoinhalt angezeigt werden.
 
-Siehe [Video in Dynamic Media - Hinzufügen von Untertiteln zu Videos](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Weitere Informationen finden Sie unter [Video in Dynamic Media – Hinzufügen von verdeckten Untertiteln zu Videos](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

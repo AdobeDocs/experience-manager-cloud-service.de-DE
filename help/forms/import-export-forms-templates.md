@@ -6,7 +6,7 @@ role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Sie können adaptive Formulare und zugehörige Assets wie Designs für adaptive 
 
 So laden Sie Formulare oder zugehörige Assets herunter:
 
-1. Melden Sie sich bei der [!DNL Experience Manager Forms]-Instanz an.
+1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Instanz an.
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
    ![Formulare auswählen](/help/forms/assets/select-forms.png)
@@ -49,7 +49,7 @@ Die ausgewählten Assets werden als Archiv (.zip-Datei) heruntergeladen.
 Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Bei einer ZIP-Datei werden die relativen Pfade aller unterstützten Assets angezeigt. Nicht unterstützte Assets in der ZIP-Datei werden ignoriert und nicht aufgelistet. Wenn das ZIP-Archiv jedoch nur die nicht unterstützten Assets enthält, wird anstelle des Popup-Dialogfensters eine Fehlermeldung angezeigt.
 So laden Sie ein Formular oder ein referenziertes Asset hoch:
 
-1. Melden Sie sich bei der [!DNL Experience Manager Forms]-Instanz an.
+1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Instanz an.
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
    ![Formulare auswählen](/help/forms/assets/select-forms.png)

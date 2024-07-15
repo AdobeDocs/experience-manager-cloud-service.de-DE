@@ -11,7 +11,7 @@ ht-degree: 6%
 
 # Übersicht über Content Hub {#overview-content-hub}
 
-![Übersicht über Content Hub](assets/content-hub-overview.png)
+![Content Hub - Übersicht](assets/content-hub-overview.png)
 
 Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für die Demokratisierung des Zugriffs auf Markeninhalte für Unternehmen und ihre Geschäftspartner verfügbar. Der Schwerpunkt liegt auf der Verteilung von Assets zur Aktivierung in großem Umfang und der Erstellung von markeninternen Inhaltsvarianten, um die Marketing-Agilität zu verbessern.
 
@@ -27,11 +27,11 @@ AEM Assets dient als alleinige &quot;Source of Truth&quot;, und alle genehmigten
 
 Die gängigsten Eigenschaften in Content Hub, wie Filter für die Suche, beim Hinzufügen oder Importieren von Assets verfügbare Felder, Asset-Eigenschaften, Bannerinhalte für das Branding, sind konfigurierbar und ein Administrator kann die Content Hub-Benutzeroberfläche einfach entsprechend seinen Anforderungen konfigurieren.
 
-**Ermöglichen Sie es Nichtkreativen, Inhalte zu bearbeiten und neu zu mischen, während sie bei der Marke bleiben**
+**Ermöglichen Sie es Nichtkreativen, Inhalte zu bearbeiten und neu zu mischen, während sie auf der Marke bleiben**
 
 Mit Content Hub können Sie neue Inhalte mit Adobe Express erstellen (wenn Sie über Adobe Expreß-Berechtigungen verfügen). Sie können vorhandene Inhalte mit einfach zu verwendenden Tools bearbeiten, markenspezifische Varianten mit Vorlagen und Markenelementen erstellen und neue Inhalte mit den neuesten GenAI-Funktionen von Adobe Firefly erstellen.
 
-**Gewinnen Sie Einblicke in die Verwendung von Inhalten in Teams**
+**Gewinnen Sie Einblicke in die Verwendung von Inhalten in verschiedenen Teams**
 
 [!DNL Content Hub] bietet wertvolle Einblicke in Assets und stellt eine Herausforderung dar, auf die Marketing-Stakeholder häufig stoßen - Asset-Nutzungsstatistiken, die in Marketing-Kampagnen, Kanälen und verschiedenen Regionen verwendet werden. Indem es ein klares Verständnis der Leistung und Beliebtheit der Assets erlangt, liefert es umsetzbare Einblicke, die für die Verbesserung des Benutzererlebnisses unerlässlich sind.
 
@@ -41,25 +41,25 @@ Content Hub erfordert eine Produktionsumgebung für Autoren von Experience Manag
 
 ## Zugriff auf Content Hub {#access-content-hub}
 
-[Nach der Einrichtung von Content Hub](/help/assets/deploy-content-hub.md) und fügen Sie einen Benutzer zum [Content Hub-Produktprofil](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)können Sie wie folgt auf Content Hub zugreifen:
+[Nachdem Sie Content Hub](/help/assets/deploy-content-hub.md) eingerichtet und einen Benutzer zum [Content Hub-Produktprofil](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile) hinzugefügt haben, können Sie wie folgt auf Content Hub zugreifen:
 
 * Greifen Sie über den folgenden Link auf Content Hub zu:
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* Melden Sie sich bei experience.adobe com an und klicken Sie auf **[!UICONTROL Experience Manager Assets Content Hub]** verfügbar im **[!UICONTROL Schnellzugriff]** Abschnitt:
-  ![Zugriff auf Content Hub](assets/access-content-hub.png)
+* Melden Sie sich bei experience.adobe com an und klicken Sie im Abschnitt **[!UICONTROL Schnellzugriff]** auf **[!UICONTROL Experience Manager Assets Content Hub]** :
+  ![Content Hub-Zugriff](assets/access-content-hub.png)
 
-* Melden Sie sich bei experience.adobe com an und klicken Sie auf **[!UICONTROL Experience Manager Assets Content Hub]** im Produktumschalter verfügbar:
+* Melden Sie sich bei experience.adobe com an und klicken Sie im Produktumschalter auf **[!UICONTROL Experience Manager Assets Content Hub]** :
   ![Content Hub-Zugriffsmethode 3](assets/access-content-hub-alternate.png)
 
 
 
 ## Content Hub-Feedback geben {#provide-content-hub-feedback}
 
-Um produktbezogene Verbesserungen zu empfehlen, klicken Sie auf **[!UICONTROL Feedback]** neben Ihrem Organisationsnamen am oberen Rand der Content Hub-Benutzeroberfläche klicken.
+Um produktbezogene Verbesserungen zu empfehlen, klicken Sie oben in der Benutzeroberfläche von Content Hub neben dem Namen Ihres Unternehmens auf **[!UICONTROL Feedback]** .
 
-Geben Sie einen Betreff und eine Beschreibung der Empfehlung an und fügen Sie bei Bedarf Dateien hinzu. Klicks **[!UICONTROL Einsenden]** , um das Feedback an Adobe zu senden.
+Geben Sie einen Betreff und eine Beschreibung der Empfehlung an und fügen Sie bei Bedarf Dateien hinzu. Klicken Sie auf **[!UICONTROL Senden]** , um das Feedback an Adobe zu senden.
 
 ![Content Hub-Feedback](assets/content-hub-feedback.png)
 
@@ -67,21 +67,21 @@ Geben Sie einen Betreff und eine Beschreibung der Empfehlung an und fügen Sie b
 
 Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichten:
 
-1. [Aktivieren von Content Hub für Experience Manager Assets mit Cloud Manager](deploy-content-hub.md#enable-content-hub).
+1. [Aktivieren Sie Content Hub für Experience Manager Assets mit Cloud Manager](deploy-content-hub.md#enable-content-hub).
 
-1. [Integrierter Content Hub-Administrator](deploy-content-hub.md#onboard-content-hub-administrator).
+1. [Content Hub-Administrator einbinden](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [Wichtige Content Hub-Benutzer hinzufügen](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [Fügen Sie wichtige Content Hub-Benutzer hinzu](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [DAM-Autoren oder -Administratoren zum Genehmigen von Assets mit Experience Manager-Assets](approve-assets.md).
 
 1. [Administratoren können die Content Hub-Benutzeroberfläche für andere Benutzer konfigurieren](configure-content-hub-ui-options.md).
 
-1. [Gewähren von Content Hub-Zugriff für weitere Benutzer vom Team](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [Gewähren Sie Content Hub Zugriff auf weitere Benutzer vom Team](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [Zugriff auf das Content Hub-Portal](#access-content-hub).
+1. [Greifen Sie auf das Content Hub-Portal zu](#access-content-hub).
 
-1. [Content Hub-Feedback geben](#provide-content-hub-feedback).
+1. [Stellen Sie Content Hub-Feedback bereit](#provide-content-hub-feedback).
 
 
 ## Weitere Informationen zu wichtigen Funktionen {#key-capabilities-content-module}
@@ -93,7 +93,7 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-      <strong>Benutzeroberfläche von Content Hub konfigurieren</strong>
+      <strong>Konfigurieren der Content Hub-Benutzeroberfläche</strong>
       </a>
    </div>
    <p>
@@ -108,11 +108,11 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
    </a>
    <div>
       <a href="/help/assets/search-assets-content-hub.md">
-      <strong>In Content Hub verfügbare Assets suchen</strong>
+      <strong>In Content Hub verfügbare Assets durchsuchen</strong>
       </a>
    </div>
    <p>
-      <em>Erfahren Sie, wie Sie verschiedene Funktionen zur Eingrenzung Ihrer Suchergebnisse nutzen können.</em>
+      <em>Erfahren Sie, wie Sie verschiedene Funktionen nutzen können, um Ihre Suchergebnisse einzugrenzen.</em>
    </p>
 </td>
 <td>
@@ -121,11 +121,11 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-      <strong>Bilder mit Adobe Express bearbeiten</strong>
+      <strong>Bilder mit Adobe Expreß bearbeiten</strong>
       </a>
    </div>
    <p>
-      <em>Erfahren Sie, wie Sie mit Adobe Express Bildvarianten in Content Hub erstellen</em>
+      <em>Erfahren Sie, wie Sie mit Adobe Express</em> Varianten von Bildern in Content Hub erstellen.
    </p>
 </td>
 </table>
@@ -136,11 +136,11 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-      <strong>Freigeben von in Content Hub verfügbaren Assets</strong>
+      <strong>In Content Hub verfügbare Assets freigeben</strong>
       </a>
    </div>
    <p>
-      <em>Erfahren Sie, wie Sie ein oder mehrere Assets als Link freigeben und dann darauf zugreifen können.</em>
+      <em>Erfahren Sie, wie Sie ein oder mehrere Assets als Link freigeben und dann darauf zugreifen.</em>
    </p>
 </td>
 <td>
@@ -153,7 +153,7 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
       </a>
    </div>
    <p>
-      <em>Erfahren Sie, wie Sie Sammlungen mit Assets erstellen und diese dann verwalten.</em>
+      <em>Erfahren Sie, wie Sie Sammlungen mithilfe von Assets erstellen und diese dann verwalten.</em>
    </p>
 </td>
 <td>
@@ -162,11 +162,11 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-      <strong>Anzeigen von Asset-Einblicken in Content Hub</strong>
+      <strong>Asset-Einblicke in Content Hub anzeigen</strong>
       </a>
    </div>
    <p>
-      <em> Das Inhaltsmodul bietet wertvolle Einblicke in Assets und stellt so eine Herausforderung dar, der Marketing-Experten häufig begegnen</em>
+      <em> Das Inhaltsmodul bietet wertvolle Einblicke in Assets und stellt eine Herausforderung dar, der Marketing-Stakeholder häufig begegnen</em>
    </p>
 </td>
 </table>

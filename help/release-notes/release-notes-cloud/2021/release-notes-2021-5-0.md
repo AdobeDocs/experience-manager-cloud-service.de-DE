@@ -150,7 +150,7 @@ Das Content Transfer Tool 1.4.6 wurde am 27. Mai 2021 veröffentlicht.
 
 * Dem Fehlerprotokoll des Schnellstarts wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
 
-* Wenn ein Benutzer einen Migrationssatz aus der CTT-Benutzeroberfläche löscht, in der eine Extraktion vorgenommen wurde, wird die `tmp` Ordner, der mit diesem Migrationssatz verknüpft ist, wird gelöscht, um Speicherplatz zu sparen.
+* Wenn ein Benutzer einen Migrationssatz aus der CTT-Benutzeroberfläche löscht, wo eine Extraktion durchgeführt wurde, wird der mit diesem Migrationssatz verknüpfte Ordner `tmp` gelöscht, um Speicherplatz zu sparen.
 
 ### Fehlerbehebungen {#bug-fixes-ctt-latest}
 

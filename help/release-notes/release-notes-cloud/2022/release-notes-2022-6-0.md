@@ -13,7 +13,7 @@ ht-degree: 81%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 {#release-notes}
 
-Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.6.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.6.0 von [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Eine Zusammenfassung der in der Version 2022.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ist jetzt für Inhaltsadministratoren und Inhaltsautoren verfügbar, um Inhaltsfragmente effizient zu verwalten (z. B. Veröffentlichen, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu durchsuchen/filtern und für Headless-Anwendungsfälle zu erstellen.
+* Inhaltsadministratoren und Inhaltsautoren können jetzt eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) verwenden, um Inhaltsfragmente effizient zu verwalten (z. B. Veröffentlichen, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu suchen/zu filtern und Inhaltsfragmente für Headless-Anwendungsfälle zu erstellen.
 
   ![Inhaltsfragment-Konsole](/help/release-notes/assets/cf-ui.png)
 
@@ -96,7 +96,7 @@ Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zw
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wird die Option &quot;Struktur hinzufügen&quot;im Admin-Bildschirm des Replikationsagenten hinzugefügt. **Verteilen** wurde entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
+* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wurde die Option &quot;Struktur hinzufügen&quot;auf der Registerkarte &quot;**Verteilen**&quot;des Administrationsbildschirms des Replikationsagenten entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
 
 ## Cloud Manager {#cloud-manager}
 

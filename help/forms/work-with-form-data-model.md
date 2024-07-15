@@ -8,11 +8,11 @@ exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '4146'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Arbeiten mit dem Formulardatenmodell (FDM) {#work-with-form-data-model}
+# Arbeiten mit einem Formulardatenmodell (FDM) {#work-with-form-data-model}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -22,37 +22,37 @@ ht-degree: 73%
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-Der Editor für Formulardatenmodell (FDM) bietet eine intuitive Benutzeroberfläche und Tools zum Bearbeiten und Konfigurieren eines Formulardatenmodells (FDM). Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Dienste aus verknüpften Datenquellen im Formulardatenmodell (FDM) hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und -eigenschaften ohne Datenquellen erstellen und später mit den entsprechenden Datenmodellobjekten und -eigenschaften verknüpfen. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, die Sie zum Vorbefüllen adaptiver Formulare <!--and interactive communications--> und interaktiver Kommunikation während der Vorschau verwenden können. Sie können Datenmodellobjekte und Dienste testen, die in einem Formulardatenmodell (FDM) konfiguriert sind, um sicherzustellen, dass es ordnungsgemäß in Datenquellen integriert ist.
+Der Editor für Formulardatenmodelle (FDM) bietet eine intuitive Benutzeroberfläche sowie Tools zum Bearbeiten und Konfigurieren eines Formulardatenmodells (FDM). Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Dienste aus verknüpften Datenquellen im Formulardatenmodell (FDM) hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und -eigenschaften ohne Datenquellen erstellen und später mit den entsprechenden Datenmodellobjekten und -eigenschaften verknüpfen. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, die Sie zum Vorbefüllen adaptiver Formulare <!--and interactive communications--> während der Vorschau verwenden können. Sie können Datenmodellobjekte und Dienste testen, die in einem Formulardatenmodell (FDM) konfiguriert sind, um sicherzustellen, dass sie ordnungsgemäß in Datenquellen integriert sind.
 
-Wenn Sie mit der Forms-Datenintegration noch nicht vertraut sind und keine Datenquelle konfiguriert oder ein Formulardatenmodell (FDM) erstellt haben, finden Sie weitere Informationen in den folgenden Themen:
+Wenn Sie mit der Forms-Datenintegration noch nicht vertraut sind und keine Datenquelle konfiguriert oder kein Formulardatenmodell (FDM) erstellt haben, sehen Sie sich die folgenden Themen an:
 
 * [[!DNL Experience Manager Forms]-Datenintegration](data-integration.md)
 * [Konfigurieren von Datenquellen](configure-data-sources.md)
-* [Formulardatenmodell (FDM) erstellen](create-form-data-models.md)
+* [Erstellen eines Formulardatenmodells (FDM)](create-form-data-models.md)
 
 Weitere Details zu verschiedenen Aufgaben und Konfigurationen, die Sie mit dem Formulardatenmodelleditor durchführen können, finden Sie im Folgenden.
 
 >[!NOTE]
 >
->Sie müssen Mitglied von beiden sein **fdm-author** und **forms-user** Gruppen, um Formulardatenmodell (FDM) erstellen und verwenden zu können. Wenden Sie sich an Ihren [!DNL Experience Manager]-Administrator, um Mitglied der Gruppen zu werden.
+>Sie müssen Mitglied der beiden Gruppen **fdm-author** und **forms-user** sein, um Formulardatenmodelle (FDM) erstellen und verwenden zu können. Wenden Sie sich an Ihre [!DNL Experience Manager]-Admins, um Mitglied der Gruppen zu werden.
 
 ## Hinzufügen von Datenmodellobjekten und Services {#add-data-model-objects-and-services}
 
-Wenn Sie ein Formulardatenmodell (FDM) mit Datenquellen erstellt haben, können Sie den Formulardatenmodell-Editor verwenden, um Datenmodellobjekte und Dienste hinzuzufügen, deren Eigenschaften zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten zu erstellen und das Formulardatenmodell (FDM) und die Dienste zu testen.
+Nachdem Sie ein Formulardatenmodell (FDM) mit Datenquellen erstellt haben, können Sie mit dem Formulardatenmodelleditor Datenmodellobjekte und Dienste hinzufügen, deren Eigenschaften konfigurieren, Verknüpfungen zwischen Datenmodellobjekten erstellen und das Formulardatenmodell (FDM) sowie die Dienste testen.
 
-Sie können Datenmodellobjekte und Dienste aus verfügbaren Datenquellen im Formulardatenmodell (FDM) hinzufügen. Dabei werden hinzugefügte Datenmodellobjekte auf der Registerkarte „Modell“ und hinzugefügte Services auf der Registerkarte „Services“ angezeigt.
+Sie können Datenmodellobjekte und Dienste aus verfügbaren Datenquellen zum Formulardatenmodell (FDM) hinzufügen. Dabei werden hinzugefügte Datenmodellobjekte auf der Registerkarte „Modell“ und hinzugefügte Services auf der Registerkarte „Services“ angezeigt.
 
 Hinzufügen von Datenmodellobjekten und Services:
 
-1. Anmelden bei der [!DNL Experience Manager] Autoreninstanz, navigieren Sie zu **[!UICONTROL Forms > Datenintegrationen]** und öffnen Sie das Formulardatenmodell (FDM), dem Sie Datenmodellobjekte hinzufügen möchten.
-1. Erweitern Sie im Bereich „Data Sources“ die Datenquellen, um verfügbare Datenmodellobjekte und Services anzuzeigen.
-1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie dem Formulardatenmodell (FDM) hinzufügen möchten, und wählen Sie **[!UICONTROL Auswahl hinzufügen]**.
+1. Melden Sie sich bei der [!DNL Experience Manager]-Autoreninstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell (FDM), zu dem Sie Datenmodellobjekte hinzufügen möchten.
+1. Erweitern Sie im Bereich „Datenquellen“ die Datenquellen, um verfügbare Datenmodellobjekte und Dienste anzuzeigen.
+1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie zum Formulardatenmodell (FDM) hinzufügen möchten, und wählen Sie dann **[!UICONTROL Ausgewählte hinzufügen]**.
 
    ![selected-objects](assets/selected-objects.png)
 
    Ausgewählte Datenmodellobjekte und Services
 
-   Die **[!UICONTROL Modell]** zeigt eine grafische Darstellung aller Datenmodellobjekte und ihrer Eigenschaften an, die zum Formulardatenmodell (FDM) hinzugefügt wurden. Jedes Datenmodellobjekt wird durch ein Feld im Formulardatenmodell (FDM) dargestellt.
+   Auf der Registerkarte **[!UICONTROL Modell]** wird eine grafische Darstellung aller Datenmodellobjekte und ihrer Eigenschaften angezeigt, die zum Formulardatenmodell (FDM) hinzugefügt wurden. Jedes Datenmodellobjekt wird durch ein Feld im Formulardatenmodell (FDM) dargestellt.
 
    ![model-tab](assets/model-tab.png)
 
@@ -60,7 +60,7 @@ Hinzufügen von Datenmodellobjekten und Services:
 
    >[!NOTE]
    >
-   >Sie können die Datenmodellobjektfelder durch Ziehen im Inhaltsbereich anordnen. Alle Datenmodellobjekte, die im Formulardatenmodell (FDM) hinzugefügt werden, sind im Datenquellenbereich grau dargestellt.
+   >Sie können die Datenmodellobjektfelder durch Ziehen im Inhaltsbereich anordnen. Alle im Formulardatenmodell (FDM) hinzugefügten Datenmodellobjekte sind im Bereich „Datenquellen“ ausgegraut.
 
    Auf der Registerkarte **[!UICONTROL Services]** wird eine Liste der hinzugefügten Services angezeigt.
 
@@ -76,19 +76,19 @@ Hinzufügen von Datenmodellobjekten und Services:
 
    >[!NOTE]
    >
-   >Sie können Dienste aufrufen, die Sie auf der Registerkarte &quot;Dienste&quot;eines Formulardatenmodells (FDM) mithilfe der Regeln für adaptive Formulare konfiguriert haben. Die konfigurierten Services sind in der Aktion zum Aufrufen von Services im Regeleditor verfügbar. Weitere Informationen zum Verwenden dieser Services in Regeln für adaptive Formulare finden Sie unter „Aufrufen von Services und Festlegen von Werten für Regeln“ im [Regeleditor](rule-editor.md).
+   >Sie können die auf der Registerkarte „Dienste“ eines Formulardatenmodells (FDM) konfigurierten Dienste mithilfe von Regeln für adaptive Formulare aufrufen. Die konfigurierten Services sind in der Aktion zum Aufrufen von Services im Regeleditor verfügbar. Weitere Informationen zum Verwenden dieser Services in Regeln für adaptive Formulare finden Sie unter „Aufrufen von Services und Festlegen von Werten für Regeln“ im [Regeleditor](rule-editor.md).
 
 ## Erstellen von Datenmodellobjekten und untergeordneten Eigenschaften {#create-data-model-objects-and-child-properties}
 
 ### Erstellen von Datenmodellobjekten {#create-data-model-objects}
 
-Sie können zwar Datenmodellobjekte aus konfigurierten Datenquellen hinzufügen, aber auch Datenmodellobjekte oder Entitäten ohne Datenquellen erstellen. Dies ist insbesondere dann hilfreich, wenn Sie keine Datenquellen im Formulardatenmodell (FDM) konfiguriert haben.
+Sie können zwar Datenmodellobjekte aus konfigurierten Datenquellen hinzufügen, aber auch Datenmodellobjekte oder Entitäten ohne Datenquellen erstellen. Dies ist insbesondere dann hilfreich, wenn Sie in dem Formulardatenmodell (FDM) keine Datenquellen konfiguriert haben.
 
 So erstellen Sie ein Datenmodellobjekt ohne Datenquellen:
 
-1. Anmelden bei der [!DNL Experience Manager] Autoreninstanz, navigieren Sie zu **[!UICONTROL Forms > Datenintegrationen]** und öffnen Sie das Formulardatenmodell (FDM), in dem Sie ein Datenmodellobjekt oder eine Entität erstellen möchten.
+1. Melden Sie sich bei der [!DNL Experience Manager]-Autoreninstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell (FDM), in dem Sie ein Datenmodellobjekt oder eine Entität erstellen möchten.
 1. Wählen Sie **[!UICONTROL Entität erstellen]**.
-1. Geben Sie im Dialog [!UICONTROL Datenmodell erstellen] einen Namen für das Datenmodell ein und wählen Sie **[!UICONTROL Hinzufügen]**. Dem Formulardatenmodell (FDM) wird ein Datenmodellobjekt hinzugefügt. Das neu hinzugefügte Datenmodellobjekt ist nicht an eine Datenquelle gebunden und weist keine Eigenschaften auf, wie in folgender Abbildung dargestellt.
+1. Geben Sie im Dialog [!UICONTROL Datenmodell erstellen] einen Namen für das Datenmodell ein und wählen Sie **[!UICONTROL Hinzufügen]**. Ein Datenmodellobjekt wird zum Formulardatenmodell (FDM) hinzugefügt. Das neu hinzugefügte Datenmodellobjekt ist nicht an eine Datenquelle gebunden und weist keine Eigenschaften auf, wie in folgender Abbildung dargestellt.
 
    ![new-entity](assets/new-entity.png)
 
@@ -107,17 +107,17 @@ Erstellen einer untergeordneten Eigenschaft:
 
    Um eine untergeordnete Eigenschaft manuell mit einer Datenmodellobjekteigenschaft zu verknüpfen, wählen Sie das Symbol zum Durchsuchen neben dem Feld **[!UICONTROL Bindungsverweis]** aus. Im Dialogfeld **[!UICONTROL Objekt auswählen]** sind alle Eigenschaften des übergeordneten Datenmodellobjekts aufgeführt. Wählen Sie eine Eigenschaft aus, an die gebunden werden soll, und dann das Häkchensymbol. Beachten Sie, dass Sie nur eine Eigenschaft desselben Datentyps wie die untergeordnete Eigenschaft auswählen können.
 
-1. Auswählen **[!UICONTROL Fertig]** , um die untergeordnete Eigenschaft zu speichern, und wählen Sie **[!UICONTROL Speichern]** , um das Formulardatenmodell (FDM) zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
+1. Wählen Sie **[!UICONTROL Fertig]**, um die untergeordnete Eigenschaft zu speichern, und dann **[!UICONTROL Speichern]**, um das Formulardatenmodell (FDM) zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
 
-Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin Adaptive Forms erstellen <!--and interactive communications--> basierend auf dem Formulardatenmodell (FDM). Wenn später Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell (FDM) mit Datenquellen binden. Die Bindung wird in zugehörigen adaptiven Formularen automatisch aktualisiert <!--and interactive communications-->. Weitere Informationen zum Erstellen von Adaptive Forms <!--and interactive communications--> Verwenden des Formulardatenmodells (FDM), siehe [Formulardatenmodell verwenden](using-form-data-model.md).
+Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin adaptive Formulare <!--and interactive communications--> auf Grundlage des Formulardatenmodells (FDM) erstellen. Wenn später Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell (FDM) mit Datenquellen verknüpfen. Die Bindung wird in zugeordneten adaptiven Formularen automatisch aktualisiert <!--and interactive communications-->. Weitere Informationen zum Erstellen adaptiver Formulare <!--and interactive communications--> mithilfe des Formulardatenmodells (FDM) finden Sie unter [Verwenden eines Formulardatenmodells](using-form-data-model.md).
 
 ### Binden von Datenmodellobjekten und -eigenschaften {#bind-data-model-objects-and-properties}
 
-Wenn die Datenquellen verfügbar sind, die Sie in das Formulardatenmodell (FDM) integrieren möchten, können Sie sie dem Formulardatenmodell (FDM) hinzufügen, wie hier beschrieben: [Datenquellen aktualisieren](create-form-data-models.md#update). Gehen Sie dann wie folgt vor, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
+Wenn die Datenquellen, die Sie in das Formulardatenmodell (FDM) integrieren möchten, verfügbar sind, können Sie sie zum Formulardatenmodell (FDM) hinzufügen, wie in [Aktualisieren von Datenquellen](create-form-data-models.md#update) beschrieben. Gehen Sie dann wie folgt vor, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
 
 1. Wählen Sie im Formulardatenmodell die ungebundene Datenquelle aus, die Sie an eine Datenquelle binden möchten.
 1. Wählen Sie **[!UICONTROL Eigenschaften bearbeiten]** aus.
-1. Wählen Sie im Bedienfeld **[!UICONTROL Eigenschaften bearbeiten]** das Symbol zum Durchsuchen neben dem Feld **[!UICONTROL Bindung]** aus. Er öffnet die **[!UICONTROL Objekt auswählen]** -Dialogfeld, das Datenquellen auflistet, die im Formulardatenmodell (FDM) hinzugefügt wurden.
+1. Wählen Sie im Bedienfeld **[!UICONTROL Eigenschaften bearbeiten]** das Symbol zum Durchsuchen neben dem Feld **[!UICONTROL Bindung]** aus. Dadurch öffnet sich das Dialogfeld **[!UICONTROL Objekt auswählen]** mit den Datenquellen, die zum Formulardatenmodell (FDM) hinzugefügt wurden.
 
    ![select-object](assets/select-object.png)
 
@@ -144,14 +144,14 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
    >[!NOTE]
    >
-   >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Wenn Sie eine OData-Dienst-Datenquelle zu einem Formulardatenmodell (FDM) hinzufügen, ist in Form Data Model (FDM) ein Dienst für alle Navigationseigenschaften in einem Datenmodellobjekt verfügbar. Mithilfe dieses Service können Sie die Navigationseigenschaften des entsprechenden Datenmodellobjekts lesen.
+   >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Wenn Sie eine OData-Dienst-Datenquelle zu einem Formulardatenmodell (FDM) hinzufügen, steht im Formulardatenmodell (FDM) ein Dienst für alle Navigationseigenschaften in einem Datenmodellobjekt zur Verfügung. Mithilfe dieses Service können Sie die Navigationseigenschaften des entsprechenden Datenmodellobjekts lesen.
    >
    >
    >Weitere Informationen zur Verwendung des Service finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
 1. Wechseln Sie zu **[!UICONTROL Objekt auf oberster Ebene]**, um anzugeben, ob das Datenmodellobjekt ein Modellobjekt der obersten Ebene ist.
 
-   Datenmodellobjekte, die in einem Formulardatenmodell (FDM) konfiguriert wurden, stehen auf der Registerkarte Datenmodellobjekte im Inhaltsbrowser eines adaptiven Formulars zur Verwendung auf der Registerkarte Datenmodellobjekte zur Verfügung, das auf dem Formulardatenmodell (FDM) basiert. Wenn Sie eine Verknüpfung zwischen zwei Datenmodellobjekten hinzufügen, wird das Ziel-Datenmodellobjekt auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** unter dem Ausgangs-Datenmodellobjekt geschachtelt. Wenn das verschachtelte Datenmodell ein Objekt der obersten Ebene ist, wird es auch separat auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** angezeigt. Daher werden zwei Einträge davon angezeigt, einer innerhalb und einer außerhalb der geschachtelten Hierarchie, was zu Verwirrung bei Formularautoren führen könnte. Damit das zugeordnete Datenmodellobjekt nur in der verschachtelten Hierarchie angezeigt wird, deaktivieren Sie die Eigenschaft „Objekt der obersten Ebene“.
+   Datenmodellobjekte, die in einem Formulardatenmodell (FDM) konfiguriert sind, stehen auf der Registerkarte „Datenmodellobjekte“ im Inhaltsbrowser für adaptive Formulare zur Verfügung, die auf dem Formulardatenmodell (FDM) basieren. Wenn Sie eine Verknüpfung zwischen zwei Datenmodellobjekten hinzufügen, wird das Ziel-Datenmodellobjekt auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** unter dem Ausgangs-Datenmodellobjekt geschachtelt. Wenn das verschachtelte Datenmodell ein Objekt der obersten Ebene ist, wird es auch separat auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** angezeigt. Daher werden zwei Einträge davon angezeigt, einer innerhalb und einer außerhalb der geschachtelten Hierarchie, was zu Verwirrung bei Formularautoren führen könnte. Damit das zugeordnete Datenmodellobjekt nur in der verschachtelten Hierarchie angezeigt wird, deaktivieren Sie die Eigenschaft „Objekt der obersten Ebene“.
 
 1. Wählen Sie Lese- und Schreib-Services für die ausgewählten Datenmodellobjekte aus. Die Argumente für die Services werden angezeigt.
 
@@ -160,7 +160,7 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
    Für die Mitarbeiterdatenquelle konfigurierte Lese- und Schreib-Services
 
 1. Wählen Sie ![aem_6_3_edit](assets/edit.svg) für das Argument des Lesedienstes aus, um dieses [an ein Benutzerprofilattribut, ein Anforderungsattribut oder einen Literalwert zu binden](#bindargument), und geben Sie den Bindungswert an.
-1. Auswählen **[!UICONTROL Fertig]** , um das Argument zu speichern, **[!UICONTROL Fertig]** speichern Sie die Eigenschaften und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell (FDM) zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um das Argument zu speichern. Wählen Sie dann erneut **[!UICONTROL Fertig]** aus, um die Eigenschaften zu speichern, und wählen Sie schließlich **[!UICONTROL Speichern]** aus, um das Formulardatenmodell (FDM) zu speichern.
 
 ### Binden von Argumenten des Lese-Service {#bindargument}
 
@@ -230,11 +230,11 @@ Wenn Sie beispielsweise das Attribut `petid=100` in der Anforderung angeben, wer
 
 In der Regel werden die Datenmodellobjekten in einer Datenquelle mit einander verknüpft. Die Zuordnung kann 1:1 oder 1:n sein. Beispielsweise können einem Mitarbeitenden mehrere abhängige Elemente zugeordnet sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form `1:n` auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
 
-Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle zu einem Formulardatenmodell (FDM) hinzufügen, werden deren Verknüpfungen beibehalten und als über Pfeillinien verbunden angezeigt. Sie können in einem Formulardatenmodell (FDM) Verknüpfungen zwischen Datenmodellobjekten über verschiedene Datenquellen hinweg hinzufügen.
+Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle einem Formulardatenmodell (FDM) hinzufügen, werden ihre Verknüpfungen beibehalten und mit Pfeillinien verbunden angezeigt.  In einem Formulardatenmodell (FDM) können Sie Verknüpfungen zwischen Datenmodellobjekten über unterschiedliche Datenquellen hinweg hinzufügen.
 
 >[!NOTE]
 >
->Vordefinierte Verknüpfungen in einer JDBC-Datenquelle werden nicht im Formulardatenmodell (FDM) beibehalten. Sie müssen sie manuell erstellen.
+>Vordefinierte Verknüpfungen in einer JDBC-Datenquelle werden im Formulardatenmodell (FDM) nicht beibehalten. Sie müssen sie manuell erstellen.
 
 So fügen Sie eine Verknüpfung hinzu:
 
@@ -244,7 +244,7 @@ So fügen Sie eine Verknüpfung hinzu:
 
    >[!NOTE]
    >
-   >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Sie können diese Navigationseigenschaften verwenden, wenn Sie Verknüpfungen im Formulardatenmodell (FDM) hinzufügen. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
+   >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Sie können diese Navigationseigenschaften beim Hinzufügen von Verknüpfungen im Formulardatenmodell (FDM) verwenden. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
    Der Dialog [!UICONTROL Verknüpfung hinzufügen] wird geöffnet.
 
@@ -273,7 +273,7 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Wählen Sie **[!UICONTROL Fertig]** aus, um das Argument zu speichern.
 
-1. Auswählen **[!UICONTROL Fertig]** zum Speichern der Zuordnung und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell (FDM) zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und wählen Sie dann **[!UICONTROL Speichern]** aus, um das Formulardatenmodell (FDM) zu speichern.
 1. Wiederholen Sie die Schritte, um nach Bedarf weitere Verknüpfungen zu erstellen.
 
 >[!NOTE]
@@ -286,11 +286,11 @@ So fügen Sie eine Verknüpfung hinzu:
 
 ## Bearbeiten von Eigenschaften {#properties}
 
-Sie können Eigenschaften von Datenmodellobjekten, deren Eigenschaften und Dienste bearbeiten, die im Formulardatenmodell (FDM) hinzugefügt wurden.
+Sie können Eigenschaften von Datenmodellobjekten, deren Eigenschaften sowie im Formulardatenmodell (FDM) hinzugefügte Dienste bearbeiten.
 
 So bearbeiten Sie Eigenschaften:
 
-1. Aktivieren Sie das Kontrollkästchen neben einem Datenmodellobjekt, einer Eigenschaft oder einem Dienst im Formulardatenmodell (FDM).
+1. Aktivieren Sie im Formulardatenmodell (FDM) das Kontrollkästchen neben einem Datenmodellobjekt, einer Eigenschaft oder einem Dienst.
 1. Wählen Sie **[!UICONTROL Eigenschaften bearbeiten]** aus. Der Bereich **[!UICONTROL Eigenschaften bearbeiten]** für das Modellobjekt, die Eigenschaft oder den Service in der Auswahl wird geöffnet.
 
    * **[!UICONTROL Datenmodellobjekt]**: Geben Sie die Lese- und Schreib-Services an und bearbeiten Sie Argumente.
@@ -301,11 +301,11 @@ So bearbeiten Sie Eigenschaften:
 
    Dialog „Eigenschaften bearbeiten“ für einen Get-Service
 
-1. Auswählen **[!UICONTROL Fertig]** zum Speichern von Eigenschaften und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell (FDM) zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Eigenschaften zu speichern, und wählen Sie dann **[!UICONTROL Speichern]** aus, um das Formulardatenmodell (FDM) zu speichern.
 
 ### Erstellen berechneter Eigenschaften {#computed}
 
-Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder eines Ausdrucks berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf eine Zeichenfolge in Textform, eine Zahl, ein Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell (FDM) festlegen.
+Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder eines Ausdrucks berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf ein Literal, eine Zahl, das Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell (FDM) festlegen.
 
 Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, deren Wert ein Ergebnis der Verkettung der vorhandenen Eigenschaften **FirstName** und **LastName** ist. Gehen Sie dazu wie folgt vor:
 
@@ -329,7 +329,7 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
    ![rule](assets/rule.png)
 
-1. Wählen Sie im Formulardatenmodell (FDM) die Option **[!UICONTROL Speichern]**. Die berechnete Eigenschaft wird konfiguriert.
+1. Wählen Sie im Formulardatenmodell (FDM) **[!UICONTROL Speichern]** aus. Die berechnete Eigenschaft wird konfiguriert.
 
 ## Arbeiten mit Navigationseigenschaften von OData-Services {#work-with-navigation-properties-of-odata-services}
 
@@ -363,13 +363,13 @@ Weitere Informationen zu Navigationseigenschaften finden Sie in der [OData-Dokum
 </EntityType>
 ```
 
-Wenn Sie einen OData-Dienst in einem Formulardatenmodell (FDM) konfigurieren, werden alle Navigationseigenschaften in einem Entitäts-Container über einen Dienst im Formulardatenmodell (FDM) bereitgestellt. In diesem Beispiel des OData-Dienstes &quot;TripPin&quot;werden die drei Navigationseigenschaften im `Person` Entitäts-Container kann mit einem `GET LINK` -Dienst im Formulardatenmodell (FDM).
+Wenn Sie einen OData-Dienst in einem Formulardatenmodell (FDM) konfigurieren, werden alle Navigationseigenschaften in einem Entitäten-Container über einen Dienst im Formulardatenmodell (FDM) bereitgestellt. In diesem Beispiel können im OData-Dienst „TripPin“ die drei Navigationseigenschaften des Entitäten-Containers `Person` über ein und denselben `GET LINK`-Dienst im Formulardatenmodell (FDM) gelesen werden.
 
-Im Folgenden werden die `GET LINK of Person /People` -Dienst im Formulardatenmodell (FDM), der ein kombinierter Dienst für die drei Navigationseigenschaften im `Person` -Entität des OData-Dienstes &quot;TripPin&quot;.
+Im Folgenden wird der Dienst `GET LINK of Person /People` im Formulardatenmodell (FDM) hervorgehoben. Dies ist ein kombinierter Dienst für die drei Navigationseigenschaften in der Entität `Person` des OData-Dienstes „TripPin“.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Nachdem Sie die `GET LINK` -Dienst auf die Registerkarte Dienste im Formulardatenmodell (FDM) zugreifen, können Sie die Eigenschaften bearbeiten, um das Ausgabemodellobjekt und die im Dienst zu verwendende Navigationseigenschaft auszuwählen. Im folgenden Beispiel nutzt der Service `GET LINK of Person /People` die Angabe „Trip“ als Ausgabemodellobjekt und die Navigationseigenschaft als „Trips“.
+Sobald Sie den `GET LINK`-Dienst auf der Registerkarte „Dienste“ im Formulardatenmodell (FDM) hinzufügen, können Sie die Eigenschaften bearbeiten, um das Modellobjekt für die Ausgabe und die im Dienst zu verwendende Navigationseigenschaft zu wählen. Im folgenden Beispiel nutzt der Service `GET LINK of Person /People` die Angabe „Trip“ als Ausgabemodellobjekt und die Navigationseigenschaft als „Trips“.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
@@ -381,13 +381,13 @@ In diesem Beispiel können Sie auch „Person“ als Ausgabemodellobjekt und als
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Auf ähnliche Weise können Sie eine `GET LINK` und konfigurieren Sie beim Hinzufügen von Verknüpfungen im Formulardatenmodell (FDM) seine Navigationseigenschaften. Damit eine Navigationseigenschaft ausgewählt werden kann, müssen Sie jedoch darauf achten, dass im Feld **[!UICONTROL Bindung an]** der Wert **[!UICONTROL Literal]** eingestellt ist.
+Darüber hinaus können Sie beim Hinzufügen von Verknüpfungen im Formulardatenmodell (FDM) einen `GET LINK`-Dienst auswählen und die entsprechenden Navigationseigenschaften konfigurieren. Damit eine Navigationseigenschaft ausgewählt werden kann, müssen Sie jedoch darauf achten, dass im Feld **[!UICONTROL Bindung an]** der Wert **[!UICONTROL Literal]** eingestellt ist.
 
 ![add-associated-nav-prop](assets/add-association-nav-prop.png)
 
 ## Beispieldaten generieren und bearbeiten {#sample}
 
-Mit dem FDM-Editor (Form Data Model) können Sie Beispieldaten für alle Datenmodellobjekteigenschaften, einschließlich berechneter Eigenschaften, in einem Formulardatenmodell (FDM) generieren. Es handelt sich um einen Satz zufälliger Werte, die dem für jede Eigenschaft konfigurierten Datentyp entsprechen. Sie können auch Daten bearbeiten und speichern, die auch dann beibehalten werden, wenn Sie die Beispieldaten neu generieren.
+Mit dem Editor für Formulardatenmodelle (FDM) können Sie Beispieldaten für alle Datenmodellobjekt-Eigenschaften, einschließlich berechneter Eigenschaften, in einem Formulardatenmodell (FDM) generieren. Es handelt sich um einen Satz zufälliger Werte, die dem für jede Eigenschaft konfigurierten Datentyp entsprechen. Sie können auch Daten bearbeiten und speichern, die auch dann beibehalten werden, wenn Sie die Beispieldaten neu generieren.
 
 Gehen Sie wie folgt vor, um Beispieldaten zu generieren und zu bearbeiten:
 
@@ -399,11 +399,11 @@ Gehen Sie wie folgt vor, um Beispieldaten zu generieren und zu bearbeiten:
 
 <!--Next, you can use the sample data to prefill and test interactive communications based on the form data model. For more information, see [Use form data model](using-form-data-model.md).-->
 
-## Testen von Datenmodellobjekten und Services {#test-data-model-objects-and-services}
+## Testen von Datenmodellobjekten und Diensten {#test-data-model-objects-and-services}
 
-Ihr Formulardatenmodell (FDM) ist konfiguriert. Bevor Sie es jedoch verwenden, sollten Sie testen, ob die konfigurierten Datenmodellobjekte und Dienste erwartungsgemäß funktionieren. Testen von Datenmodellobjekten und Services
+Ihr Formulardatenmodell (FDM) ist konfiguriert. Bevor Sie es verwenden, sollten Sie jedoch testen, ob die konfigurierten Datenmodellobjekte und Dienste erwartungsgemäß funktionieren. Testen von Datenmodellobjekten und Diensten
 
-1. Wählen Sie ein Datenmodellobjekt oder einen Dienst im Formulardatenmodell (FDM) aus und wählen Sie **[!UICONTROL Testmodell-Objekt]** oder **[!UICONTROL Testdienst]**, bzw.
+1. Wählen Sie ein Datenmodellobjekt oder einen Dienst im Formulardatenmodell (FDM) aus und wählen Sie dann **[!UICONTROL Modellobjekt testen]** bzw. **[!UICONTROL Dienst testen]**.
 
    Das Fenster „Formulardatenmodell testen“ wird geöffnet.
 
@@ -419,7 +419,7 @@ Auf ähnliche Weise können Sie andere Datenmodellobjekte und Dienste im Formula
 
 ## Automatisiertes Validieren von Eingabedaten {#automated-validation-of-input-data}
 
-Das Formulardatenmodell (FDM) validiert Daten, die beim Aufrufen der DermisBridge-API als Eingabe empfangen wurden (basierend auf den im Formulardatenmodell verfügbaren Validierungskriterien). Die Validierung basiert auf dem Flag-Satz `ValidationOptions` im Abfrageobjekt, das zum Aufrufen der API verwendet wird.
+Das Formulardatenmodell (FDM) validiert Daten, die als Eingabe beim Aufruf der DermisBridge-API empfangen werden (auf Grundlage der im Formulardatenmodell verfügbaren Validierungskriterien). Die Validierung basiert auf dem Flag-Satz `ValidationOptions` im Abfrageobjekt, das zum Aufrufen der API verwendet wird.
 
 Das Flag kann auf einen der folgenden Werte eingestellt werden:
 
@@ -440,7 +440,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 >Der Wert, den Sie für ein Attribut in den Eingabedaten angeben, muss mit dem Datentyp übereinstimmen, der für das Attribut im Metadatendokument definiert ist.\
 >Wenn der Wert nicht mit dem für das Attribut definierten Datentyp übereinstimmt, zeigt die DermisBridge-API eine Ausnahme an, unabhängig vom Wert des `ValidationOptions`-Flags. Wenn als Protokollebene „Debuggen“ festgelegt ist, wird ein Fehler in der Datei **error.log** protokolliert.
 
-Das Formulardatenmodell (FDM) validiert Eingabedaten anhand einer Liste von Datentypbegrenzungen. Die Liste von Begrenzungen für Eingabedaten kann je nach Datenquelle variieren.
+Das Formulardatenmodell (FDM) validiert Eingabedaten auf Grundlage einer Liste von Datentypeinschränkungen. Die Liste von Begrenzungen für Eingabedaten kann je nach Datenquelle variieren.
 
 In folgender Tabelle sind die Begrenzungen für Eingabedaten auf Grundlage der Datenquelle aufgeführt:
 
@@ -549,4 +549,4 @@ Eine Ausnahme wird angezeigt, wenn die Eingabedaten die Validierungskriterien ni
 
 ## Nächste Schritte {#next-steps}
 
-Sie verfügen über ein funktionierendes Formulardatenmodell (FDM), das jetzt in der adaptiven Forms verwendet werden kann. <!--and interactive communications--> Workflows. Weitere Informationen finden Sie unter [Formulardatenmodell (FDM) verwenden](using-form-data-model.md).
+Sie haben ein funktionierendes Formulardatenmodell (FDM), das jetzt für die Verwendung in Workflows für adaptive Formulare <!--and interactive communications--> bereit ist. Weitere Informationen finden Sie unter [Verwenden eines Formulardatenmodells (FDM)](using-form-data-model.md).

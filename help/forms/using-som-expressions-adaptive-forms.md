@@ -8,17 +8,17 @@ discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 75%
+source-wordcount: '344'
+ht-degree: 93%
 
 ---
 
 
 # Verwenden von SOM-Ausdrücken in adaptiven Formularen {#using-som-expressions-in-adaptive-forms}
 
-Adaptive Formulare werden als AEM-Seite modelliert, die im AEM-Repository als JCR-Inhaltstruktur repräsentiert wird. Das Schlüsselelement der Inhaltsstruktur ist der Knoten guideContainer . Unter &quot;guideContainer&quot;befindet sich &quot;rootPanel&quot;, das verschachtelte Bedienfelder und Felder enthalten kann.
+Adaptive Formulare werden als AEM-Seite modelliert, die im AEM-Repository als JCR-Inhaltstruktur repräsentiert wird. Das Schlüsselelement der Inhaltsstruktur ist der Knoten „guideContainer“. Unter „guideContainer“ befindet sich der Knoten „rootPanel“, der verschachtelte Bedienfelder und Felder enthalten kann.
 
-Sie können ein Skriptobjektmodell (SOM) verwenden, um Werte, Eigenschaften und Methoden innerhalb eines bestimmten Dokumentobjektmodells (DOM) zu referenzieren. Ein DOM organisiert die Speicherobjekte und -eigenschaften in einer Baumstruktur. Ein SOM-Ausdruck verweist auf Felder/Zeichenelemente und Bereiche.
+Sie können ein Skripting-Objektmodell (SOM) verwenden, um Werte, Eigenschaften und Methoden innerhalb eines bestimmten Dokumentobjektmodells (DOM) zu referenzieren. Ein DOM organisiert die Speicherobjekte und Eigenschaften in einer hierarchischen Baumstruktur. Ein SOM-Ausdruck verweist auf Felder/Zeichenelemente und Bedienfelder.
 
 Im folgenden Bild ist eine Knotenstruktur abgebildet, in das ein adaptives Formular übertragen wird, wenn Sie einem Formular Komponenten hinzufügen. Sie können beispielsweise dem Stammbereich einen Bereich und diesem dann ein Optionsfeld hinzufügen. Der Bereich wird dann zur Laufzeit in ein DOM transformiert. Der SOM-Ausdruck für das Optionsfeld im adaptiven Formular ist als `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]` angegeben.
 

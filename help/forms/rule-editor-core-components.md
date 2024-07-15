@@ -8,7 +8,7 @@ exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
 source-wordcount: '5627'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -43,7 +43,7 @@ Benutzer, die der Gruppe der Formular-Hauptbenutzer hinzugefügt wurden, können
 
 >[!NOTE]
 >
-> Eine detaillierte Anleitung zum Erstellen und Verwenden benutzerdefinierter Funktionen finden Sie unter [Benutzerdefinierte Funktionen in Adaptive Forms (Kernkomponenten)](/help/forms/create-and-use-custom-functions.md) Artikel.
+> Detaillierte Informationen zum Erstellen und Verwenden benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms (Kernkomponenten)](/help/forms/create-and-use-custom-functions.md) .
 
 ## Grundlegendes zu Regeln {#understanding-a-rule}
 
@@ -94,7 +94,7 @@ Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit de
 * **Beginnt mit**
 * **Endet mit**
 * **Enthält**
-* **Enthält nicht**
+* **enthält nicht**
 * **Ist leer**
 * **Ist nicht leer**
 * **Hat ausgewählt:** Gibt „true“ zurück, wenn der Benutzer eine bestimmte Option für ein Kontrollkästchen, ein Dropdown-Element oder ein Optionsfeld auswählt.
@@ -148,9 +148,9 @@ Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ aus
 >
 > Wenn der Regeltyp nur einstufige then-else-Anweisungen unterstützt.
 
-#### Zulässige mehrere Felder in [!UICONTROL Wann] {#allowed-multiple-fields}
+#### Zulässige mehrere Felder in [!UICONTROL When] {#allowed-multiple-fields}
 
-Im **Wann** -Bedingung, können Sie neben dem Feld, auf das die Regel angewendet wird, weitere Felder hinzufügen.
+In der Bedingung **Wenn** haben Sie die Möglichkeit, neben dem Feld, auf das die Regel angewendet wird, weitere Felder hinzuzufügen.
 
 Beispielsweise können Sie mithilfe des Wenn-Regeltyps eine Bedingung für verschiedene Formularobjekte auswerten und die folgende Aktion durchführen:
 
@@ -168,11 +168,11 @@ Aktion 1: Objekt A
 
 _
 
-![Zulässige mehrere Felder in , wenn](/help/forms/assets/allowed-multiple-field-when.png)
+![ Zulässige mehrere Felder in When](/help/forms/assets/allowed-multiple-field-when.png)
 
 ##### Überlegungen zur Verwendung von zulässigen mehreren Feldern in der Funktion &quot;Wenn Bedingung&quot;
 
-* Stellen Sie sicher, dass [Kernkomponente ist auf Version 3.0.14 oder höher eingestellt](https://github.com/adobe/aem-core-forms-components) , um diese Funktion im Regeleditor zu verwenden.
+* Stellen Sie sicher, dass die [Kernkomponente auf Version 3.0.14 oder höher](https://github.com/adobe/aem-core-forms-components) eingestellt ist, um diese Funktion im Regeleditor zu verwenden.
 * Wenn Regeln auf verschiedene Felder in der Wenn-Bedingung angewendet werden, wird die Regel auch dann Trigger, wenn nur eines dieser Felder geändert wird.
 
 
@@ -196,7 +196,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 Wenn bei der Funktion Zulässige mehrere Felder in der Bedingung Wenn Probleme auftreten, führen Sie die Schritte zur Fehlerbehebung wie folgt aus:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Öffnen Sie den Inhaltsbrowser und wählen Sie die **[!UICONTROL Guide Container]** -Komponente Ihres adaptiven Formulars.
+1. Öffnen Sie den Inhaltsbrowser und wählen Sie die Komponente **[!UICONTROL Guide Container]** des adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf Fertig und speichern Sie das Dialogfeld erneut.
 
@@ -230,7 +230,7 @@ Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert ein
 * valid (Boolescher Wert)
 * errorMessage (Zeichenfolge)
 * default (Zahl, Zeichenfolge, Datum)
-* enumNames (String)[])
+* enumNames (String[])
 * chartType (Zeichenfolge)
 
 So können Sie beispielsweise Regeln definieren, die das Textfeld anzeigen, wenn auf eine Schaltfläche geklickt wird. Sie können benutzerdefinierte Funktionen, ein Formularobjekt, eine Objekteigenschaft oder eine Dienstausgabe verwenden, um eine Regel zu definieren.
@@ -255,7 +255,7 @@ Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Ko
 
 **[!UICONTROL Zurücksetzen]** Setzt das Formular oder das angegebene Objekt zurück.
 
-**[!UICONTROL Bestätigen]** Validiert das Formular oder das angegebene Objekt.
+**[!UICONTROL Validieren]** Prüft das Formular oder das angegebene Objekt.
 
 **[!UICONTROL Instanz hinzufügen]**: Fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
@@ -265,7 +265,7 @@ Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Ko
 
 **[!UICONTROL Navigieren zu]**: Navigiert zu anderen <!--Interactive Communications,--> adaptiven Formularen, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Dispatcher-Ereignis]** Trigger der spezifischen Aktionen oder Verhaltensweisen anhand vordefinierter Bedingungen oder Ereignisse.
+**[!UICONTROL Dispatch-Ereignis]** : Trigger die spezifischen Aktionen oder Verhaltensweisen, die auf vordefinierten Bedingungen oder Ereignissen basieren.
 
 
 ### [!UICONTROL Wert festlegen] {#set-value-of}
@@ -276,13 +276,17 @@ Der Regeltyp **Wert festlegen** steht für manche Formularobjekte nicht zur Verf
 
 Wert von Objekt A festlegen auf:
 
-(Zeichenfolge ABC) ODER (Objekteigenschaft X von Objekt C) ODER (Wert aus einer Funktion) ODER (Wert aus einem mathematischen Ausdruck) ODER (Ausgabewert eines Datenmodelldienstes);
+(Zeichenfolge ABC) ODER
+(Objekteigenschaft X des Objekts C) ODER
+(Wert aus einer Funktion) ODER
+(Wert aus einem mathematischen Ausdruck) ODER
+(Ausgabewert eines Datenmodelldienstes);
 
 When (optional):
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-Im folgenden Beispiel wird der Wert von `Question2` as `True` und legt den Wert von `Result` as `correct`.
+Im folgenden Beispiel wird der Wert von `Question2` als `True` ausgewählt und der Wert von `Result` auf `correct` gesetzt.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -464,7 +468,7 @@ Die Schaltfläche **[!UICONTROL Fertig]** wird verwendet, um eine Regel zu speic
 
 ## Regeln schreiben {#write-rules}
 
-Sie können Regeln mit dem visuellen Regeleditor schreiben <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Sie können Regeln mit dem visuellen Regeleditor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. --> schreiben
 
 Im Folgenden wird zunächst das Schreiben von Regeln im Visual Editor beschrieben.
 
@@ -499,7 +503,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. Im **[!UICONTROL String eingeben]** in der Regel ein, wählen Sie **Verheiratet** aus dem Dropdown-Menü.
+1. Wählen Sie im Feld **[!UICONTROL String eingeben]** in der Regel **Verheiratet** aus dem Dropdown-Menü aus.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -514,12 +518,12 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    Definieren Sie als Nächstes die Aktion, die ausgeführt werden soll, wenn diese Bedingung False ist.
-1. Klicks **[!UICONTROL Abschnitt &quot;Else hinzufügen&quot;]** , um eine weitere Bedingung für die **[!UICONTROL Gehalt des Partners]** eingeben, falls Sie Familienstand als Einzelperson auswählen.
+1. Klicken Sie auf **[!UICONTROL Else Abschnitt hinzufügen]** , um eine weitere Bedingung für das Feld **[!UICONTROL Gehalt des Partners/der Partnerin]** hinzuzufügen, falls Sie Familienstand als Einzelperson auswählen.
 
    ![when-else](assets/when-else.png)
 
 
-1. Wählen Sie in der Anweisung Else die Option **[!UICONTROL Ausblenden]** aus dem **[!UICONTROL Aktion auswählen]** angezeigt.
+1. Wählen Sie in der Anweisung &quot;Else&quot;aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** die Option **[!UICONTROL Ausblenden]** aus.
    ![when-else](assets/when-else-1.png)
 
 1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
@@ -632,7 +636,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Benutzerdefinierte Funktionen im Regeleditor {#custom-functions}
 
-Neben den vordefinierten Funktionen wie *Summe der* die unter **Funktionsausgabe** können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die JavaScript ECMAScript 2019-Syntax für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in adaptiven Formularen](/help/forms/create-and-use-custom-functions.md).
+Neben den vordefinierten Funktionen wie *Summe von*, die unter **Funktionsausgabe** aufgeführt sind, können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die Syntax von JavaScript ECMAScript 2019 für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in adaptiven Formularen](/help/forms/create-and-use-custom-functions.md).
 
 <!--
 

@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '320'
 ht-degree: 91%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 Möglicherweise sind unterschiedliche Typen von Benutzern mit unterschiedlichen Fähigkeiten vorhanden, die mit adaptiven Formularen arbeiten. Während erfahrene Benutzer möglicherweise über die richtigen Kenntnisse verfügen, um mit Skripten und komplexen Regeln zu arbeiten, gibt es möglicherweise Benutzer auf Einsteigerniveau, die nur mit dem Layout und den Standardeigenschaften adaptiver Formulare arbeiten müssen.
 
-[!DNL Experience Manager Forms] ermöglicht Ihnen, den Zugriff des Regeleditors auf Benutzer anhand ihrer Rolle oder Funktion zu beschränken. In den Einstellungen für den Konfigurations-Service für adaptive Formular können Sie festlegen, welche [Benutzergruppen](forms-groups-privileges-tasks.md) den Regeleditor anzeigen und auf ihn zugreifen können.
+Mit [!DNL Experience Manager Forms] können Sie den Zugriff des Regeleditors auf Benutzer anhand ihrer Rolle oder Funktion einschränken. In den Einstellungen für den Konfigurations-Service für adaptive Formular können Sie festlegen, welche [Benutzergruppen](forms-groups-privileges-tasks.md) den Regeleditor anzeigen und auf ihn zugreifen können.
 
 ## Angeben von Benutzergruppen für Zugriff auf Regeleditor {#specify-user-groups-that-can-access-rule-editor}
 

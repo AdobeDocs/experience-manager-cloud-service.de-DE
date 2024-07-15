@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '2071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Im Dialogfeld [!UICONTROL Container für adaptive Formulare bearbeiten] können 
 
      >[!NOTE]
      >
-     > Nach dem Konfigurieren des Formulardatenmodells (FDM) können Sie das zugeordnete Formularmodell nicht ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell (FDM) verknüpfte Schema zu ändern.
+     > Nach dem Konfigurieren des Formulardatenmodells (FDM) können Sie das verknüpfte Formularmodell nicht mehr ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell (FDM) verknüpfte Schema zu ändern.
 
 * **Registerkarte „Übermittlung“**
 
@@ -126,7 +126,7 @@ Im Dialogfeld [!UICONTROL Container für adaptive Formulare bearbeiten] können 
          * An REST-Endpunkt übermitteln
          * E-Mail senden
          * Senden mit Formulardatenmodell (FDM)
-         * AEM-Workflow aufrufen
+         * Aufrufen eines AEM-Workflows
          * An SharePoint senden
          * An OneDrive senden
          * Senden an Azure Blob-Speicher

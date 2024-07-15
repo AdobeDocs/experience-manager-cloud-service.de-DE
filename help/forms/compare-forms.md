@@ -18,9 +18,9 @@ ht-degree: 11%
 
 Wenn Formularautoren zwei unterschiedliche Formulare anhand der Felder, Inhalte und Formularkomponenten vergleichen müssen, vergleichen sie die beiden Formulare. Der Formularverfasser muss sicherstellen, dass sich die beiden Formulare in demselben Ordner oder Ordner befinden, um sie zu vergleichen. Führen Sie die folgenden Schritte aus, um zwei verschiedene adaptive Formulare zu vergleichen:
 
-1. Adaptive Formulare auswählen und auf **[!UICONTROL Vergleichen]**.
+1. Wählen Sie adaptive Formulare aus und klicken Sie auf **[!UICONTROL Vergleichen]**.
 
-   ![Vergleichen adaptiver Formulare](compare-two-forms.png)
+   ![Adaptive Formulare vergleichen](compare-two-forms.png)
 
 1. Beim Klicken werden im Vorschaumodus zwei Formulare angezeigt. Sie wählt das erste Formular als Basisformular aus, das mit dem zweiten Formular verglichen werden soll, und vergleicht den Inhalt zwischen den beiden Formularen, die ähnlich und differenziert sind. Der differenzierte Inhalt des ersten Formulars wird als grün markiert, wie im Bild dargestellt.
 

@@ -7,8 +7,8 @@ role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 99%
+source-wordcount: '3434'
+ht-degree: 100%
 
 ---
 
@@ -267,4 +267,3 @@ Wenn Sie stattdessen nur Vorgaben aus Ordnern *entfernen* möchten, finden Sie w
 >* [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
 >* [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) – Weitere Informationen zum Synchronisieren eines einzelnen Ordners mit [!DNL Dynamic Media] finden Sie unter „Sync-Modus“ in diesem Thema.
 >* [Erstellen einer Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) – Weitere Informationen zum Synchronisieren aller Ordner mit [!DNL Dynamic Media] finden Sie unter „Dynamic Media-Sync-Modus“ in diesem Thema.
-

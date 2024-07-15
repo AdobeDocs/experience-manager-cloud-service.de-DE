@@ -50,9 +50,9 @@ Version 2.9.0 der [Kernkomponenten](https://experienceleague.adobe.com/docs/exp
 
 ## Neue Funktionen in Foundations in AEM as a Cloud Service {#foundations}
 
-AEM Projekterstellungszeiten werden verbessert, indem alle Verweise in der pom.xml des AEM-Projekts auf das Remote-Repository entfernt werden. `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM Projekterstellungszeiten werden verbessert, indem alle Verweise in der pom.xml des AEM Projekts auf das Remote-Repository `https://downloads.experiencecloud.adobe.com/content/maven/public` entfernt werden.
 
-Das AEM as a Cloud Service SDK-API-Jar, das zuvor an diesem Speicherort gehostet wurde, befindet sich jetzt in Maven Central, dem standardmäßigen Artefakt-Repository von Maven.
+Das AEM as a Cloud Service SDK-API-JAR, das zuvor an diesem Speicherort gehostet wurde, befindet sich jetzt in Maven Central, dem standardmäßigen Artefakt-Repository von Maven.
 
 ## Neue Funktionen in Cloud Manager {#cloud-manager}
 

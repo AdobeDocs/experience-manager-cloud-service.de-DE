@@ -1,6 +1,6 @@
 ---
 title: Wie kann Adobe Analytics für eine schnelle Analyse eines adaptiven Formulars aktiviert werden?
-description: Mit der Automatisierung der Experience Cloud-Einrichtung können Sie Adobe Analytics mit einem adaptiven Formular verbinden, um Analysen und Einblicke in die Interaktionen und Interaktionen der Besucher zu erhalten.
+description: Die Automatisierung der Experience Cloud-Einrichtung hilft Ihnen, Adobe Analytics mit einem adaptiven Formular zu verbinden, um schnell Analysen und Einblicke in die Interaktionen und das Engagement der Besucherinnen und Besucher zu erhalten.
 keywords: Aktivieren von Adobe Analytics für ein adaptives Formular mithilfe der Automatisierung der Einrichtung von Experience Cloud, Aktivieren von Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms Analytics Integration, Forms und Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
@@ -8,7 +8,7 @@ exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
 workflow-type: tm+mt
 source-wordcount: '1588'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 | AEM as a Cloud Service | Dieser Artikel |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=de) |
 
-Mit der Automatisierung der Experience Cloud-Einrichtung können Sie Adobe Analytics mit dem adaptiven Forms verbinden, was eine schnelle Analyse der Benutzerinteraktion mit Ihren Formularen und Einblicke in die Interaktionen und Interaktionen der Besucher ermöglicht. Die Automatisierung der Experience Cloud-Einrichtung hilft auch bei der Überwachung der Formularleistung, bei der Metriken wie Abschlusszeiten und Abbruchpunkte bewertet werden. Diese Analyse hilft, Formulare für ein besseres Benutzererlebnis zu optimieren und dabei das Benutzerverhalten anhand des Anmeldestatus (z. B. anonyme Benutzende) zu unterscheiden, um allgemeine Trends und Muster zu identifizieren.
+Die Automatisierung der Experience Cloud-Einrichtung hilft Ihnen, Adobe Analytics mit einem adaptiven Formular zu verbinden, was eine schnelle Analyse der Benutzerinteraktion mit Ihren Formularen ermöglicht und Einblicke in die Interaktionen und das Engagement Besucherinnen und Besucher bietet. Die Automatisierung der Experience Cloud-Einrichtung hilft auch bei der Überwachung der Formularleistung, bei der Metriken wie Abschlusszeiten und Abbruchpunkte bewertet werden. Diese Analyse hilft, Formulare für ein besseres Benutzererlebnis zu optimieren und dabei das Benutzerverhalten anhand des Anmeldestatus (z. B. anonyme Benutzende) zu unterscheiden, um allgemeine Trends und Muster zu identifizieren.
 
 ## Vorteile der Integration von Adobe Analytics in Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -29,7 +29,7 @@ Mit der Automatisierung der Experience Cloud-Einrichtung können Sie Adobe Analy
 
 ## Umfang der Nutzungsmetriken von adaptiven Formularen {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics bietet eine umfassende Palette von Leistungsmetriken für adaptive Forms, die wertvolle Einblicke in die Formularnutzung bieten und eine schnelle Analyse bieten. Diese Metriken sind:
+Adobe Analytics bietet eine umfassende Palette von Leistungsmetriken für adaptive Formulare, die wertvolle Einblicke in die Nutzung von Formularen liefern. Diese Metriken sind:
 
 * **Formularwiedergaben, Formularübermittlungen, Überprüfungsfehler und Unique Visitors**, sodass Sie die Nutzung und Effektivität Ihrer Formulare bewerten können.
 
@@ -62,7 +62,7 @@ Die Automatisierung der Experience Cloud-Einrichtung erfordert eine **Adobe Anal
 
 Wenn Sie eine aktive Lizenz für **Adobe Analytics** und **Experience Manager Forms** besitzen und eine Integration mit **Datenerfassung (früher Adobe Launch)** haben, sollten Sie deren Verfügbarkeit in Ihrer Developer Console überprüfen.
 
-Um zu überprüfen, ob die oben genannten Funktionen für Ihre Forms as a Cloud Service-Umgebung verfügbar sind, besuchen Sie die [Developer Console](https://developer.adobe.com/console/projects), navigieren Sie zu „Projekt“ und suchen Sie Ihr Projekt mit der Programm-ID – Umgebungs-ID, z. B. für die Umgebung mit der URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, Programm-ID – Umgebungs-ID ist `p45913-e175111`. Stellen Sie sicher, dass die Automatisierung der Experience Cloud-Einrichtung, Adobe Analytics und Experience Platform Launch API aufgelistet sind. Wenn diese aufgelistet sind, können Sie Adobe Analytics für eine schnelle Analyse Ihres adaptiven Forms aktivieren.
+Um zu überprüfen, ob die oben genannten Funktionen für Ihre Forms as a Cloud Service-Umgebung verfügbar sind, besuchen Sie die [Developer Console](https://developer.adobe.com/console/projects), navigieren Sie zu „Projekt“ und suchen Sie Ihr Projekt mit der Programm-ID – Umgebungs-ID, z. B. für die Umgebung mit der URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, Programm-ID – Umgebungs-ID ist `p45913-e175111`. Stellen Sie sicher, dass die Automatisierung der Experience Cloud-Einrichtung, Adobe Analytics und Experience Platform Launch API aufgelistet sind. Wenn diese aufgelistet sind, können Sie Adobe Analytics für eine schnelle Analyse Ihrer adaptiven Formulare aktivieren.
 
 ![Voraussetzungen für die Forms Analytics-Integration](assets/analytics-aem.png){width="100%"}
 
@@ -76,7 +76,7 @@ Um zu überprüfen, ob die oben genannten Funktionen für Ihre Forms as a Cloud 
 
 ## Konfigurieren von Adobe Analytics {#configure-adobe-analytics}
 
-Führen Sie die folgenden Schritte aus, um Adobe Analytics für eine schnelle Analyse Ihrer adaptiven Forms zu aktivieren und zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um Adobe Analytics zu aktivieren und zu konfigurieren, damit Sie Ihre adaptiven Formulare schnell analysieren können:
 
 * [Aktivieren von Adobe Analytics für adaptive Formulare basierend auf Foundation-Komponenten](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [Aktivieren von Adobe Analytics für adaptive Formulare auf der Basis von Kernkomponenten](#integrate-adobe-analytics-with-aem-forms-for-core-components)
@@ -139,7 +139,7 @@ Informationen zum Verbinden eines adaptiven Formulars mit Adobe Analytics mithil
 
 ## Aktivieren von Analytics für adaptive Formulare in Sites {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
-Durch die Konfiguration der Fast-Track-Analyse für Ihr adaptives Formular in AEM Sites können Sie Benutzerinteraktionen und Formularübermittlungen auf Ihrer Formular-Seite in Sites verfolgen. Durch die nahtlose Integration von Analytics in Ihre Sites-Formulare erhalten Sie wertvolle Einblicke in das Benutzerverhalten, die Konversionsraten und Bereiche, in denen Ihr Formular verbessert werden kann.
+Die Konfiguration von Schnellanalyse für Ihr adaptives Formular in AEM Sites hilft Ihnen, Benutzerinteraktionen und Formularübermittlungen auf Formulare in Ihren Sites-Seiten zu verfolgen. Durch die nahtlose Integration von Analytics in Ihre Sites-Formulare erhalten Sie wertvolle Einblicke in das Benutzerverhalten, die Konversionsraten und Bereiche, in denen Ihr Formular verbessert werden kann.
 
 ### Voraussetzungen {#Prerequisites-to-connect-forms-analytics-to-sites}
 
@@ -147,7 +147,7 @@ Um eine Verbindung zu adaptiven Formularen für AEM-Sites herzustellen und Analy
 
 ### Verbinden des adaptiven Formulars in Sites zur Aktivierung von Analytics {#Connect-analytics-to-adaptive-forms}
 
-Um das adaptive Formular auf einer AEM Sites-Seite zu verbinden und Analytics für eine schnelle Analyse zu aktivieren, fügen Sie die `customfooterlibs` Client-Bibliothek zur AEM Sites-Seite mithilfe des AEM-/Git-Repository und der Bereitstellungs-Pipeline.
+Um ein adaptives Formular in eine AEM Sites-Seite zu integrieren und Analytics für eine Schnellanalyse zu aktivieren, binden Sie die Client-Bibliothek `customfooterlibs` mithilfe des AEM-Archetyps/Git-Repositorys und der Bereitstellungs-Pipeline in die AEM Sites-Seite ein.
 
 1. Öffnen Sie Ihren [AEM Forms-Archetyp oder Ihr geklontes Git-Repository](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)-Projekt in einem Texteditor. Beispielsweise in Visual Studio Code.
 

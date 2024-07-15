@@ -3,7 +3,7 @@ title: Ihr Posteingang
 description: Erfahren Sie, wie Sie Ihre Aufgaben mit den Benachrichtigungen verwalten können, die in Ihrem Posteingang eintreffen.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 100%
 

@@ -8,7 +8,7 @@ exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
@@ -76,7 +76,7 @@ Führen Sie zum Verbinden des adaptiven Formulars mit der Salesforce-Anwendung m
 
 Nachdem Sie die Salesforce-Anwendung konfiguriert haben, können Sie die Konfiguration beim Erstellen des Formulardatenmodells (FDM) verwenden. Weitere Informationen finden Sie unter [Formulardatenmodell (FDM) erstellen](create-form-data-models.md). [Konfigurieren Sie die Formulardatenmodell-Übermittlungsaktion](/help/forms/using-form-data-model.md) für ein adaptives Formular, um Daten an Salesforce-Anwendungen zu senden.
 
-Weitere Informationen zum Erstellen und Verwenden des Formulardatenmodells (FDM) in Geschäftsabläufen finden Sie unter [Datenintegration](data-integration.md).
+Weitere Informationen zur Erstellung und Verwendung eines Formulardatenmodells (FDM) in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).
 
 ## Ähnliche Artikel
 

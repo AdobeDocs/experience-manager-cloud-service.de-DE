@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Datenquellen
-description: Erfahren Sie, wie Sie RESTful-Webdienste, SOAP-basierte Webdienste und OData-Dienste als Datenquellen für ein Formulardatenmodell (FDM) konfigurieren.
+title: Wie werden Datenquellen konfiguriert?
+description: Erfahren Sie, wie Sie RESTful-Web-Dienste, SOAP-basierte Web-Dienste und OData-Dienste als Datenquellen konfigurieren und diese zum Erstellen von Formulardatenmodellen (FDM) verwenden.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -178,13 +178,13 @@ Einige der von RESTful Services Open API Specifikation Version 3.0 nicht unterst
 
 Weitere Informationen finden Sie unter [OpenAPI 3.0-Spezifikation](https://swagger.io/specification/v3/).
 
-### HTTP-Clientkonfiguration für Formulardatenmodell (FDM) zur Leistungsoptimierung {#fdm-http-client-configuration}
+### HTTP-Client-Konfiguration eines Formulardatenmodells (FDM) zur Leistungsoptimierung {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] bildet bei der Integration mit RESTful-Web-Diensten ein Formulardatenmodell, da die Datenquelle HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
 
 Legen Sie die folgenden Eigenschaften der Konfiguration für das **[!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle]** zum Angeben des regulären Ausdrucks fest:
 
-* Verwenden Sie die `http.connection.max.per.route` -Eigenschaft zum Festlegen der maximal zulässigen Anzahl von Verbindungen zwischen Formulardatenmodell (FDM) und RESTful-Webdiensten. Der Standardwert ist 20 Verbindungen.
+* Verwenden Sie die Eigenschaft `http.connection.max.per.route` zum Festlegen der maximal zulässigen Anzahl von Verbindungen zwischen dem Formulardatenmodell (FDM) und RESTful-Web-Diensten. Der Standardwert ist 20 Verbindungen.
 
 * Verwenden Sie die `http.connection.max`-Eigenschaft, um die maximale Anzahl zulässiger Verbindungen für jede Route anzugeben. Der Standardwert ist 40 Verbindungen.
 
@@ -212,7 +212,7 @@ Folgende JSON-Datei zeigt ein Beispiel:
 
 1. Führen Sie im Dialog [!UICONTROL Formular-Datenmodell HTTP-Client-Konfiguration für REST-Datenquelle] folgende Schritte aus:
 
-   * Geben Sie die maximal zulässige Anzahl von Verbindungen zwischen dem Formulardatenmodell (FDM) und den RESTful-Webdiensten im **[!UICONTROL Verbindungsgrenze insgesamt]** -Feld. Der Standardwert ist 20 Verbindungen.
+   * Geben Sie im Feld **[!UICONTROL Verbindungsgrenze insgesamt]** die maximal zulässige Anzahl von Verbindungen zwischen dem Formulardatenmodell (FDM) und RESTful-Web-Diensten ein. Der Standardwert ist 20 Verbindungen.
 
    * Geben Sie die maximal zulässige Anzahl von Verbindungen für jede Route im Feld **[!UICONTROL Verbindungslimit pro Route]** an. Der Standardwert ist zwei Verbindungen.
 
@@ -266,7 +266,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
 >[!NOTE]
 >
-> Formulardatenmodell (FDM) unterstützt [OData Version 4](https://www.odata.org/documentation/).
+> Das Formulardatenmodell (FDM) unterstützt [OData Version 4](https://www.odata.org/documentation/).
 >Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft®® Dynamics 365], online oder lokal finden Sie unter [[!DNL Microsoft® Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model (FDM), both the data s
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell (FDM) erstellen oder ein Formulardatenmodell (FDM) ohne Datenquelle bereits erstellt haben, können Sie es mit den konfigurierten Datenquellen verknüpfen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](create-form-data-models.md).
+Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell (FDM) erstellen oder, falls Sie bereits ein Formulardatenmodell (FDM) ohne eine Datenquelle erstellt haben, können Sie es den schon konfigurierten Datenquellen zuordnen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](create-form-data-models.md).
 
 
 <!--

@@ -22,15 +22,15 @@ Dieser Artikel bietet einen durchgängigen Arbeitsablauf, mit dem Content Hub-Zu
 
 Zu den verschiedenen Berechtigungen für Content Hub gehören:
 
-* [Content Hub-Benutzer](#onboard-content-hub-users): Greifen Sie auf markenbestätigte Assets im Content Hub-Portal zu.
+* [Content Hub-Benutzer](#onboard-content-hub-users): Greifen Sie auf markengenehmigte Assets im Content Hub-Portal zu.
 
-* [Content Hub-Administratoren](#onboard-content-hub-administrator): Zugriff auf die [Konfigurationsoberfläche](/help/assets/configure-content-hub-ui-options.md) in Content Hub neben dem Zugriff auf markengenehmigte Assets, dem Hochladen von Assets in Content Hub, der Bildintegration zum Bearbeiten von Adobe Expressen (wenn Sie über Adobe Expreß-Berechtigungen verfügen).
+* [Content Hub-Administratoren](#onboard-content-hub-administrator): Zugriff auf die [Konfigurations-Benutzeroberfläche](/help/assets/configure-content-hub-ui-options.md) in Content Hub, zusätzlich zum Zugriff auf markengenehmigte Assets, zum Hochladen von Assets in Content Hub, zur Bildintegration (wenn Sie über Adobe Expreß-Berechtigungen verfügen).
 
-* [Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](#onboard-content-hub-users-add-assets): Fähigkeit, [Hochladen von Assets in Content Hub](/help/assets/upload-brand-approved-assets.md) nicht nur auf markengenehmigte Assets im Content Hub-Portal zugreifen.
+* [Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](#onboard-content-hub-users-add-assets): Möglichkeit, Assets in Content Hub](/help/assets/upload-brand-approved-assets.md) zu laden, zusätzlich zum Zugriff auf markengenehmigte Assets im Content Hub-Portal.[
 
-* [Content Hub-Benutzer mit Berechtigungen zum Remix von Assets in neue Varianten](#onboard-content-hub-users-remix-assets): [Adobe Express-Integration](/help/assets/edit-images-content-hub.md) (wenn Sie über Adobe Expreß-Berechtigungen verfügen) sowie auf markengenehmigte Assets im Content Hub-Portal zugreifen.
+* [Content Hub-Benutzer mit Berechtigungen zum Remix von Assets in neue Varianten](#onboard-content-hub-users-remix-assets): [Adobe Express-Integration](/help/assets/edit-images-content-hub.md) (wenn Sie über Adobe Expreß-Berechtigungen verfügen), die nicht nur auf markengenehmigte Assets im Content Hub-Portal zugreifen, sondern auch darauf zugreifen können.
 
-* [Experience Manager Assets-Benutzer](#experience-manager-assets-users): Möglichkeit zur Genehmigung von Assets in Experience Manager Assets as a Cloud Service, um diese Assets in Content Hub verfügbar zu machen.
+* [Experience Manager Assets-Benutzer](#experience-manager-assets-users): Möglichkeit, Assets in Experience Manager Assets as a Cloud Service zu genehmigen, um diese Assets in Content Hub verfügbar zu machen.
 
 ## Schritt 1: Aktivieren von Content Hub für Experience Manager Assets mithilfe von Cloud Manager {#enable-content-hub}
 
@@ -38,18 +38,18 @@ Um auf das Content Hub-Portal zugreifen zu können, müssen Administratoren zun�
 
 1. Melden Sie sich bei Cloud Manager an. Stellen Sie sicher, dass Sie beim Anmelden die richtige Organisation auswählen. Die Cloud Manager listet alle Ihre Programme auf.
 
-1. Navigieren Sie zum Programm Experience Manager Assets as a Cloud Service , klicken Sie auf das Symbol Weitere Optionen (...) und wählen Sie **[!UICONTROL Programm bearbeiten]**.
+1. Navigieren Sie zum Programm Experience Manager Assets as a Cloud Service , klicken Sie auf das Symbol Weitere Optionen (...) und wählen Sie **[!UICONTROL Programm bearbeiten]** aus.
 
    ![Programm in Cloud Manager bearbeiten](assets/edit-program-cloud-manager.png)
 
-1. Im [!UICONTROL Programm bearbeiten] wählen Sie das **[!UICONTROL Lösungen und Add-ons]** Registerkarte.
+1. Wählen Sie im Dialogfeld [!UICONTROL Programm bearbeiten] die Registerkarte **[!UICONTROL Lösungen und Add-ons]** aus.
 
-1. Erweitern **[!UICONTROL Assets]** und wählen **[!UICONTROL Content Hub]**.
+1. Erweitern Sie **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Content Hub]** aus.
    ![Content Hub in Cloud Manager auswählen](assets/edit-program-cloud-manager-content-hub.png)
 
    >[!NOTE]
    >
-   >Wenn **[!UICONTROL Aktualisieren]** nicht für Sie aktiviert ist, nachdem Sie Content Hub ausgewählt haben, stellen Sie sicher, dass Sie Go-Live-Einstellungen für das Programm festgelegt haben.
+   >Wenn **[!UICONTROL Aktualisieren]** nach Auswahl von Content Hub nicht für Sie aktiviert ist, stellen Sie sicher, dass Sie die Go-Live-Einstellungen für das Programm festgelegt haben.
 
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
@@ -60,15 +60,15 @@ Content Hub ist jetzt für Experience Manager Assets as a Cloud Service aktivier
 >Sie können auf Content Hub mit bis zu 250 Content Hub-Benutzern zugreifen und es verwenden. Wenden Sie sich bei weiteren Fragen an Ihren Adobe-Support-Mitarbeiter.
 
 
-Wenn Sie neu bei Experience Manager Assets sind, klicken Sie auf **[!UICONTROL Programm hinzufügen]** und geben Sie dann die Programmdetails an (Programmname, für die Produktion eingerichtet) und klicken Sie auf **[!UICONTROL Weiter]**. Sie können dann **[!UICONTROL Assets]** und **[!UICONTROL Content Hub]** im **[!UICONTROL Lösungen und Add-ons]** Registerkarte.
+Wenn Sie neu bei Experience Manager Assets sind, klicken Sie auf **[!UICONTROL Programm hinzufügen]**, geben Sie dann Programmdetails an (Programmname, für die Produktion eingerichtet) und klicken Sie auf **[!UICONTROL Weiter]**. Anschließend können Sie auf der Registerkarte **[!UICONTROL Lösungen und Add-ons]** die Optionen **[!UICONTROL Assets]** und **[!UICONTROL Content Hub]** auswählen.
 
 ### Content Hub-Instanz und -Produktprofil auf Admin Console{#content-hub-instance-product-profile}
 
-Nachher [Aktivieren von Content Hub für Assets as a Cloud Service mithilfe von Cloud Manager](#enable-content-hub), gibt es eine neue Instanz, die in der as a Cloud Service Admin Console von AEM Assets mit `contenthub` als Suffix:
+Nach der [Aktivierung von Content Hub für Assets as a Cloud Service mithilfe von Cloud Manager](#enable-content-hub) wird in AEM Assets as a Cloud Service eine neue Instanz mit dem Suffix `contenthub` erstellt:
 
 ![Neue Instanz für Content Hub](assets/new-instance-content-hub.png)
 
-Beachten Sie, dass es keine `author` oder `publish` im Instanznamen für Content Hub.
+Beachten Sie, dass der Instanzname für Content Hub nicht `author` oder `publish` enthält.
 
 Klicken Sie auf den Instanznamen, um das Content Hub-Produktprofil anzuzeigen.
 
@@ -76,13 +76,13 @@ Klicken Sie auf den Instanznamen, um das Content Hub-Produktprofil anzuzeigen.
 
 ## Schritt 2: Integrierter Content Hub-Administrator {#onboard-content-hub-administrator}
 
-Content Hub-Administratoren können auf die [Konfigurationsoberfläche](/help/assets/configure-content-hub-ui-options.md) in Content Hub neben dem Zugriff auf markengenehmigte Assets, dem Hochladen von Assets in Content Hub, der Bildintegration zum Bearbeiten von Adobe Expressen (wenn Sie über Adobe Expreß-Berechtigungen verfügen).
+Content Hub-Administratoren können auf die [Konfigurations-Benutzeroberfläche](/help/assets/configure-content-hub-ui-options.md) in Content Hub zugreifen, zusätzlich zum Zugriff auf markengenehmigte Assets, zum Hochladen von Assets in Content Hub und zur Bildintegration (wenn Sie über Adobe Expreß-Berechtigungen verfügen).
 
 So integrieren Sie den Content Hub-Administrator:
 
-1. [Auf das Content Hub-Benutzerproduktprofil zugreifen und darauf klicken](#content-hub-instance-product-profile).
+1. [Greifen Sie auf das Content Hub-Benutzerproduktprofil zu und klicken Sie darauf.](#content-hub-instance-product-profile)
 
-1. Klicks **[!UICONTROL Benutzer hinzufügen]** , um dem Produktprofil Benutzer oder Benutzergruppen hinzuzufügen.
+1. Klicken Sie auf **[!UICONTROL Benutzer hinzufügen]** , um dem Produktprofil Benutzer oder Benutzergruppen hinzuzufügen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
@@ -93,7 +93,7 @@ So integrieren Sie den Content Hub-Administrator:
 
    Admin Console zeigt zwei Produktprofile für AEM as a Cloud Service an: Administratoren und Benutzer.
 1. Klicken Sie auf das Produktprofil Administratoren und dann auf **[!UICONTROL Benutzer hinzufügen]** , um den Benutzer zum Produktprofil hinzuzufügen.
-   ![Administratorproduktprofil](assets/aem-cs-admin-product-profile.png)
+   ![Administrator-Produktprofil](assets/aem-cs-admin-product-profile.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
@@ -103,9 +103,9 @@ Content Hub-Benutzer können auf Assets zugreifen, die im Portal verfügbar sind
 
 So integrieren Sie Content Hub-Benutzer:
 
-1. [Auf das Content Hub-Benutzerproduktprofil zugreifen und darauf klicken](#content-hub-instance-product-profile).
+1. [Greifen Sie auf das Content Hub-Benutzerproduktprofil zu und klicken Sie darauf.](#content-hub-instance-product-profile)
 
-1. Klicks **[!UICONTROL Benutzer hinzufügen]** , um dem Produktprofil Benutzer oder Benutzergruppen hinzuzufügen.
+1. Klicken Sie auf **[!UICONTROL Benutzer hinzufügen]** , um dem Produktprofil Benutzer oder Benutzergruppen hinzuzufügen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
@@ -123,51 +123,51 @@ Der Zugriff auf Content Hub erfolgt auf folgende Weise:
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* Melden Sie sich bei `experience.adobe com` und klicken **[!UICONTROL Experience Manager Assets Content Hub]** verfügbar im **[!UICONTROL Schnellzugriff]** Abschnitt:
-  ![Zugriff auf Content Hub](assets/access-content-hub.png)
+* Melden Sie sich bei `experience.adobe com` an und klicken Sie auf **[!UICONTROL Experience Manager Assets Content Hub]** , der im Abschnitt **[!UICONTROL Schnellzugriff]** verfügbar ist:
+  ![Content Hub-Zugriff](assets/access-content-hub.png)
 
-* Melden Sie sich bei `experience.adobe com` und klicken **[!UICONTROL Experience Manager Assets Content Hub]** im Produktumschalter verfügbar:
+* Melden Sie sich bei &quot;`experience.adobe com`&quot;an und klicken Sie im Produktschalter auf &quot;**[!UICONTROL Experience Manager Assets Content Hub]**&quot;:
   ![Content Hub-Zugriffsmethode 3](assets/access-content-hub-alternate.png)
 
 ### E-Mail-Benachrichtigungen für Benutzer deaktivieren {#disable-email-notifications}
 
 Wenn Administratoren E-Mail-Benachrichtigungen deaktivieren müssen, die an Benutzer gesendet werden, wenn sie zum Content Hub-Produktprofil hinzugefügt werden:
 
-Klicken Sie auf das Suchsymbol neben dem Produktprofilnamen und deaktivieren Sie die **[!UICONTROL Benutzer per E-Mail benachrichtigen]** umschalten.
+Klicken Sie auf das Suchsymbol neben dem Produktprofilnamen und deaktivieren Sie den Umschalter **[!UICONTROL Benutzer per E-Mail benachrichtigen]** .
 
 ![E-Mail-Benachrichtigungen deaktivieren](assets/disable-email-notifications.png)
 
 
 ## Schritt 4: Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets einbinden (optional) {#onboard-content-hub-users-add-assets}
 
-Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets können [Hochladen neuer markengenehmigter Assets in Content Hub](/help/assets/upload-brand-approved-assets.md).
+Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets können [neue markengenehmigte Assets in Content Hub hochladen](/help/assets/upload-brand-approved-assets.md).
 
 So integrieren Sie Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Benutzern:
 
-1. [Nach dem Hinzufügen des Benutzers zum Content Hub-Produktprofil](#onboard-content-hub-users), greifen Sie auf Experience Manager Assets-Produktprofile zu, indem Sie in der Produktliste auf der Admin Console auf den AEM as a Cloud Service-Produktnamen klicken.
+1. [ Nachdem Sie den Benutzer zum Content Hub-Produktprofil hinzugefügt haben, greifen Sie auf Experience Manager Assets-Produktprofile zu, indem Sie in der Produktliste auf der Admin Console auf den AEM as a Cloud Service-Produktnamen klicken.](#onboard-content-hub-users)
 
 1. Klicken Sie auf die Produktionserstellungsinstanz für AEM as a Cloud Service:
    ![Produktprofile für AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
    Admin Console zeigt zwei Produktprofile für AEM as a Cloud Service an: Administratoren und Benutzer.
-1. Klicken Sie auf das Benutzerproduktprofil und dann auf **[!UICONTROL Benutzer hinzufügen]** , um den Benutzer zum Produktprofil hinzuzufügen.
+1. Klicken Sie auf das Benutzerproduktprofil und dann auf &quot;**[!UICONTROL Benutzer hinzufügen]**&quot;, um den Benutzer zum Produktprofil hinzuzufügen.
    ![Benutzerproduktprofil](assets/aem-cs-user-product-profile.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
 ## Schritt 4: Integrieren von Content Hub-Benutzern mit Berechtigungen zum Neumischen von Assets in neue Varianten (optional) {#onboard-content-hub-users-remix-assets}
 
-Content Hub-Benutzer mit Berechtigungen zum Remix von Assets in neue Varianten können [Ändern vorhandener Assets mit Adobe Express und Speichern des Assets im Repository](/help/assets/edit-images-content-hub.md). Die Bearbeitung von Assets mit Adobe Express ist nur verfügbar, wenn der Benutzer über Adobe Expreß-Berechtigungen verfügt.
+Content Hub-Benutzer mit der Berechtigung zum Neumischen von Assets in neue Varianten können [vorhandene Assets mithilfe von Adobe Express ändern und das Asset im Repository speichern](/help/assets/edit-images-content-hub.md). Die Bearbeitung von Assets mit Adobe Express ist nur verfügbar, wenn der Benutzer über Adobe Expreß-Berechtigungen verfügt.
 
 So integrieren Sie Content Hub-Benutzer mit Berechtigungen zum Remix von Assets in neue Varianten:
 
-1. [Nach dem Hinzufügen des Benutzers zum Content Hub-Produktprofil](#onboard-content-hub-users), greifen Sie auf Experience Manager Assets-Produktprofile zu, indem Sie in der Produktliste auf der Admin Console auf den AEM as a Cloud Service-Produktnamen klicken.
+1. [ Nachdem Sie den Benutzer zum Content Hub-Produktprofil hinzugefügt haben, greifen Sie auf Experience Manager Assets-Produktprofile zu, indem Sie in der Produktliste auf der Admin Console auf den AEM as a Cloud Service-Produktnamen klicken.](#onboard-content-hub-users)
 
 1. Klicken Sie auf die Produktionserstellungsinstanz für AEM as a Cloud Service:
    ![Produktprofile für AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
    Admin Console zeigt zwei Produktprofile für AEM as a Cloud Service an: Administratoren und Benutzer.
-1. Klicken Sie auf das Benutzerproduktprofil und dann auf **[!UICONTROL Benutzer hinzufügen]** , um den Benutzer zum Produktprofil hinzuzufügen.
+1. Klicken Sie auf das Benutzerproduktprofil und dann auf &quot;**[!UICONTROL Benutzer hinzufügen]**&quot;, um den Benutzer zum Produktprofil hinzuzufügen.
    ![Benutzerproduktprofil](assets/aem-cs-user-product-profile.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
@@ -184,14 +184,14 @@ So konfigurieren Sie Experience Manager Assets-Benutzer:
    ![Produktprofile für AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
    Admin Console zeigt zwei Produktprofile für AEM as a Cloud Service an: Administratoren und Benutzer.
-1. Klicken Sie auf das Benutzerproduktprofil und dann auf **[!UICONTROL Benutzer hinzufügen]** , um den Benutzer zum Produktprofil hinzuzufügen.
+1. Klicken Sie auf das Benutzerproduktprofil und dann auf &quot;**[!UICONTROL Benutzer hinzufügen]**&quot;, um den Benutzer zum Produktprofil hinzuzufügen.
    ![Benutzerproduktprofil](assets/aem-cs-user-product-profile.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
    >[!NOTE]
    >
-   > Sie müssen nicht zum [Content Hub-Produktprofil](#onboard-content-hub-users) für die Experience Manager Assets-Benutzer.
+   > Sie müssen nicht zum [Content Hub-Produktprofil](#onboard-content-hub-users) für Experience Manager Assets-Benutzer hinzugefügt werden.
 
 
 

@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 100%
 
@@ -138,7 +138,7 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 
    >[!NOTE]
    >
-   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Wählen Sie **Bearbeiten** aus.
 1. Ändern Sie die Auswahl von **Aktiv** zu **Inaktiv** (oder umgekehrt).

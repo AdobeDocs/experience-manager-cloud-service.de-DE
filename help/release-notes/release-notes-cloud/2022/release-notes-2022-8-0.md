@@ -13,7 +13,7 @@ ht-degree: 62%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 {#release-notes}
 
-Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.8.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.8.0 von [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,15 +39,15 @@ Eine Zusammenfassung der in der Version 2022.8.0 hinzugefügten Funktionen find
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
 * Die E-Mail-Komponente ermöglicht die Erstellung von Inhalten in AEM, die dann per Campaign Classic als E-Mail zugestellt werden. Die Kernkomponente &quot;E-Mail&quot;:
-   * basiert auf der [WCM-Kernkomponente](https://github.com/adobe/aem-core-wcm-components) unterstützt bearbeitbare Vorlagen und das Stilsystem.
+   * basiert auf der [WCM-Kernkomponente](https://github.com/adobe/aem-core-wcm-components) , die bearbeitbare Vorlagen und das Stilsystem unterstützt.
    * bietet 10 für E-Mails optimierte produktionsbereite Komponenten (Seite, Container, Titel, Text, Bild, Schaltfläche, Teaser, Experience Fragment, Inhaltsfragment, Segmentierung).
-   * bietet erweiterte Personalisierung und Segmentierung dank der [Einfügen von Campaign-Variablen](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) in den meisten Dialogfeldern und zur flexiblen [Segmentierungskomponente](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * bietet eine optimale E-Mail-freundliche HTML-Ausgabe dank der [CSS-Stile in Liner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), die [HTML-Attribut inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)und die [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * bietet erweiterte Personalisierung und Segmentierung dank des [Einfügens von Kampagnenvariablen](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) in die meisten Dialogfelder und der flexiblen [Segmentierungskomponente](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * bietet eine optimale E-Mail-freundliche HTML-Ausgabe dank des [CSS-Styles inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), des [HTML-Attributs inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) und des [HTML-Bereinigers](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * ermöglicht die Erstellung von E-Mails überall.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) bietet Benutzern die Möglichkeit, die Gesamtzahl der Sprachkopien anzuzeigen, die mit einem Inhaltsfragment verknüpft sind. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) bietet Benutzern die Möglichkeit, die Gesamtzahl der mit einem Inhaltsfragment verknüpften Sprachkopien anzuzeigen. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
 
 ![Sprachen von Inhaltsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ Eine Zusammenfassung der in der Version 2022.8.0 hinzugefügten Funktionen find
 
 ### Neue Funktionen in [!DNL Assets] {#features-assets}
 
-* Sie können Adobe Experience Manager Assets jetzt konfigurieren für [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
+* Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass der Typ der Assets, die Benutzer hochladen können, anhand des MIME-Typs ](/help/assets/configure-asset-upload-restrictions.md) auf [beschränkt wird.
 
   ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 

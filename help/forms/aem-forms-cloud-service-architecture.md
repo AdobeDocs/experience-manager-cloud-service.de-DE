@@ -7,7 +7,7 @@ exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 Forms as a Cloud Service bietet Optionen zum Speichern von Inhalten in einem externen Speichersystem wie Blob Store, Datenbank oder einem Speicher-Service. Sie können auch Daten aus in Bearbeitung befindlichen Workflows (AEM-Workflow-Variablendaten), die Elemente sensibler persönlicher Daten (SPD) enthalten, in einem vom Kunden verwalteten Repository zur sicheren Verarbeitung speichern. Adobe empfiehlt, sensible Daten nur in vom Kunden verwalteten Datenspeicherungen zu speichern.
 
-Sie können die **Unified Storage Connector** zur Verbindung mit Blob Storage und **Formulardatenmodell (FDM)** , um eine Verbindung zu Datenbanken oder Backend-Services herzustellen (RESTful, SOAP, Azure Blob Storage usw.).
+Sie können den **Unified Storage Connector** verwenden, um eine Verbindung zu Blob Storage herzustellen, und das **Formulardatenmodell (FDM)**, um eine Verbindung zu Datenbanken oder Backend-Diensten (RESTful, SOAP, Azure Blob Storage usw.) herzustellen.
 
 ### Document Services
 

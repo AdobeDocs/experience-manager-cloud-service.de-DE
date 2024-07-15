@@ -1,6 +1,6 @@
 ---
 title: Wie kann das Erscheinungsbild von adaptiven Formularen angepasst werden?
-description: Verwenden Sie das LESS-Framework für Adaptive Forms, um das Erscheinungsbild von Adaptive Forms anzupassen.
+description: Verwenden Sie das LESS-Framework für adaptive Formulare, um das Erscheinungsbild adaptiver Formulare anzupassen.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -8,8 +8,8 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 97%
+source-wordcount: '2307'
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Eleme
 
 ## Ändern des Komponentenstils {#changing-component-style}
 
-Sie können das Erscheinungsbild, Layout, Positionierung und Sichtbarkeit von Elementen ändern. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
+Sie können Änderungen am Erscheinungsbild, am Layout, an der Positionierung und an der Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Design-Konstrukte ein.
 
 Um einen Stil auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie in der Registerkarte „Standard“ den Pfad der benutzerdefinierten CSS-Datei ein. Standardmäßige Stilkonstrukte eines adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 
@@ -686,7 +686,7 @@ Registerkartennavigator oben:
 
 `}`
 
-Außerdem gibt es Klassen für Stilregisterkartennavigatoren (links und oben), je nachdem, ob sie verschachtelte/untergeordnete/Unter-Navigatoren haben.
+Zusätzlich gibt es Klassen für Stilregisterkarten-Navigatoren (links und oben), abhängig davon, ob sie verschachtelte/untergeordnete/Unternavigatoren haben.
 
 <table>
  <tbody>

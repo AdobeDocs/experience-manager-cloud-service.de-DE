@@ -7,7 +7,7 @@ exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '965'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 72%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-[[!DNL Experience Manager Forms] Datenintegration](data-integration.md) stellt [!DNL Microsoft® Dynamics 365] und [!DNL Salesforce] Cloud-Services zur Integration adaptiver Formulare in das vordefinierte Formulardatenmodell (FDM). Die adaptiven Formulare können dann mit [!DNL Microsoft® Dynamics 365]- und [!DNL Salesforce]-Servern interagieren, um Geschäfts-Workflows zu ermöglichen. Zum Beispiel:
+Die [[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet für [!DNL Microsoft® Dynamics 365] und [!DNL Salesforce] Cloud-Services zur Integration adaptiver Formulare in vorkonfigurierte Formulardatenmodelle (FDM). Die adaptiven Formulare können dann mit [!DNL Microsoft® Dynamics 365]- und [!DNL Salesforce]-Servern interagieren, um Geschäfts-Workflows zu ermöglichen. Zum Beispiel:
 
 * Schreiben von Daten in [!DNL Microsoft® Dynamics 365] und [!DNL Salesforce] bei Übermittlung von adaptiven Formularen
-* Daten schreiben in [!DNL Microsoft® Dynamics 365] und [!DNL Salesforce] durch benutzerdefinierte Entitäten, die im Formulardatenmodell (FDM) definiert sind, und umgekehrt.
+* Schreiben von Daten in [!DNL Microsoft® Dynamics 365] und [!DNL Salesforce] durch benutzerdefinierte Entitäten, die im Formulardatenmodell (FDM) definiert sind, und umgekehrt.
 * Abfragen eines [!DNL Microsoft® Dynamics 365]- und [!DNL Salesforce]-Servers nach Daten und Befüllen adaptiver Formulare
 * Lesen von Daten vom [!DNL Microsoft® Dynamics 365]- und [!DNL Salesforce]-Server
 
-[!DNL Microsoft® Dynamics 365] und [!DNL Salesforce] Cloud Services und Formulardatenmodell (FDM) sind standardmäßig auf der [!DNL AEM Forms] Server nach dem [Einrichten eines Entwicklungsprojekts für Forms basierend auf dem Experience Manager-Archetyp](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+Cloud-Services und Formulardaten(FDM)-Modelle von [!DNL Microsoft® Dynamics 365] und [!DNL Salesforce] sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage eines Experience Manager-Archetyps eingerichtet haben](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >
->Microsoft® Dynamics 365 und [!DNL Salesforce] Cloud Services und Formulardatenmodell (FDM) sind nur standardmäßig verfügbar, wenn Sie eine [!DNL Experience Manager Forms] as a [!DNL Cloud Service] Projekt basierend auf [AEM Archetyp 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) oder höher.
+>Cloud-Services und Formulardatenmodelle (FDM) von Microsoft® Dynamics 365 und [!DNL Salesforce] sind nur dann vorkonfiguriert verfügbar, wenn Sie ein [!DNL Experience Manager Forms] as a [!DNL Cloud Service]-Projekt einrichten, das auf dem [AEM-Archetyp 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) oder höher basiert.
 
 ## Konfigurieren von [!DNL Salesforce]-Cloud-Services {#configure-salesforce-cloud-service}
 
@@ -59,11 +59,11 @@ Führen Sie die folgenden Schritte aus, um den [!DNL Salesforce]-Cloud-Service z
    1. Melden Sie sich mit Ihren [!DNL Salesforce]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud-Service-Konfiguration eine Verbindung zum [!DNL Salesforce]-Service herstellt. Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie zur Seite „[!DNL Salesforce]-Cloud-Service-Konfiguration“ weitergeleitet, auf der eine Erfolgsmeldung angezeigt wird.
 1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration abzuschließen.
 
-### Zugriff standardmäßig [!DNL Salesforce] Formulardatenmodell (FDM)
+### Zugreifen auf das vorkonfigurierte [!DNL Salesforce]-Formulardatenmodell (FDM)
 
-A [!DNL Salesforce] Das Formulardatenmodell (FDM) ist standardmäßig auf der [!DNL AEM Forms] Server nach dem [Einrichten eines Entwicklungsprojekts für Forms basierend auf dem Experience Manager-Archetyp](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+Ein vorkonfiguriertes [!DNL Salesforce]-Formulardatenmodell (FDM) ist auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms basierend auf einem Experience Manager-Archetyp eingerichtet haben](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-Navigieren Sie zum Zugriff auf das Formulardatenmodell (FDM) zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Wählen Sie den Ordnernamen aus und wählen Sie die **[!UICONTROL Salesforce-Datenmodell]** und wählen Sie die Option Bearbeiten ![Bearbeiten](assets/edit.png) -Symbol, um das Formulardatenmodell (FDM) anzuzeigen.
+Um auf das Formulardatenmodell (FDM) zuzugreifen, navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Wählen Sie den Ordnernamen und dann das **[!UICONTROL Salesforce-Datenmodell]** aus, und wählen Sie anschließend das Symbol „Bearbeiten“ ![Bearbeiten](assets/edit.png), um das Formulardatenmodell (FDM) anzuzeigen.
 
 Nach der Konfiguration des [[!DNL Salesforce] Cloud Config-Services](#configure-salesforce-cloud-service) können Sie adaptive Formulare mit dem vordefinierten [!DNL Salesforce]-Datenmodell integrieren.
 
@@ -89,17 +89,17 @@ Führen Sie die folgenden Schritte aus, um den [!DNL Microsoft® Dynamics 365]-C
    1. Geben Sie den Wert für das Feld **[!UICONTROL Service-Stamm]** ein. Wechseln Sie zur Dynamics-Instanz und navigieren Sie zu [Entwickler-Ressourcen](https://docs.microsoft.com/de-de/powerapps/developer/data-platform/view-download-developer-resources), um den Wert für das Feld „Service-Stamm“ anzuzeigen. Zum Beispiel: `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Geben Sie die Client-ID (als Anwendungs-ID bezeichnet) und das Client-Geheimnis für die verbundene Anwendung an.
    1. Ersetzen Sie `{tenant}` durch eine Mandantenkennung in den Feldern **[!UICONTROL OAuth-URL]**, **[!UICONTROL Aktualisierungstoken-URL]** und **[!UICONTROL Zugriffstoken-URL]**.
-   1. Geben Sie die URL der dynamischen Instanz im **[!UICONTROL Ressource]** zu konfigurierende Felder [!UICONTROL Microsoft® Dynamics] mit einem Formulardatenmodell (FDM). Verwenden Sie die Service-Stamm-URL, um die URL der Dynamics-Instanz abzuleiten. Zum Beispiel `https://<tenant-name>.dynamics.com`.
+   1. Geben Sie die Dynamics-Instanz-URL im Feld **[!UICONTROL Ressource]** an, um [!UICONTROL Microsoft® Dynamics] mit einem Formulardatenmodell (FDM) zu konfigurieren. Verwenden Sie die Service-Stamm-URL, um die URL der Dynamics-Instanz abzuleiten. Zum Beispiel `https://<tenant-name>.dynamics.com`.
 
    1. Geben Sie die `openid` im Feld **[!UICONTROL Autorisierungsumfang]** für den Autorisierungsprozess in [!DNL Microsoft® Dynamics 365] an.
    1. Melden Sie sich mit Ihren [!DNL Microsoft® Dynamics 365]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud-Service-Konfiguration eine Verbindung zum [!DNL Microsoft® Dynamics 365]-Service herstellt. Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie zur Seite „[!DNL Microsoft® Dynamics 365]-Cloud-Service-Konfiguration“ weitergeleitet, auf der eine Erfolgsmeldung angezeigt wird.
 1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration abzuschließen.
 
-### Zugriff standardmäßig [!DNL Microsoft® Dynamics 365] Formulardatenmodell (FDM)
+### Zugreifen auf das vorkonfigurierte [!DNL Microsoft® Dynamics 365]-Formulardatenmodell (FDM)
 
-A [!DNL Microsoft® Dynamics 365] Das Formulardatenmodell (FDM) ist standardmäßig auf der [!DNL AEM Forms] Server nach dem [Einrichten eines Entwicklungsprojekts für Forms basierend auf dem Experience Manager-Archetyp](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+Ein vorkonfiguriertes [!DNL Microsoft® Dynamics 365]-Formulardatenmodell (FDM) ist auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms basierend auf einem Experience Manager-Archetyp eingerichtet haben](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-Navigieren Sie zum Zugriff auf das Formulardatenmodell (FDM) zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Wählen Sie den Ordnernamen aus und wählen Sie die **[!UICONTROL Microsoft® Dynamics 365-Datenmodell]** und wählen Sie die Option Bearbeiten ![Bearbeiten](assets/edit.png) -Symbol, um das Formulardatenmodell (FDM) anzuzeigen.
+Um auf das Formulardatenmodell (FDM) zuzugreifen, navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**. Die Liste der verfügbaren Ordner enthält einen Ordner mit dem Titel, der beim [Erstellen des AEM-Archetyp-Projekts](setup-local-development-environment.md#forms-cloud-service-local-development-environment) für `DappTitle` angegeben wurde. Wählen Sie den Ordnernamen und dann das **[!UICONTROL Microsoft® Dynamics 365-Datenmodell]** aus, und wählen Sie anschließend das Symbol „Bearbeiten“ ![Bearbeiten](assets/edit.png), um das Formulardatenmodell (FDM) anzuzeigen.
 
 Nach der Konfiguration des [[!DNL Microsoft® Dynamics 365] Cloud Config-Services](#configure-dynamics-cloud-service) können Sie adaptive Formulare mit dem vordefinierten [!DNL Microsoft® Dynamics 365]-Datenmodell integrieren.
 

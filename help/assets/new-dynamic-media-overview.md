@@ -5,13 +5,13 @@ role: User
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Dynamic Media mit OpenAPI-Funktionen {#new-dynaminc-media-apis-overview}
 
-In der modernen digitalen Welt ist die Erschließung des vollen Potenzials der digitalen Assets Ihrer Marke von entscheidender Bedeutung, um dem Wettbewerb voraus zu sein. Eine ganzheitliche DAM-Lösung (Digital Assets Management) erleichtert die Verwaltung von Assets, fördert die Markenkonsistenz und beschleunigt die Bereitstellung von Inhalten bei gleichzeitiger Gewährleistung von Markenintegrität und außergewöhnlichen Kundenerlebnissen.
+In der modernen digitalen Welt ist die Erschließung des vollen Potenzials der digitalen Assets Ihrer Marke von entscheidender Bedeutung, um dem Wettbewerb voraus zu sein. Eine ganzheitliche Digital Assets Management (DAM)-Lösung erleichtert die Verwaltung von Assets, fördert die Markenkonsistenz und beschleunigt die Inhaltsbereitstellung bei gleichzeitiger Gewährleistung von Markenintegrität und außergewöhnlichen Kundenerlebnissen.
 
 Dynamic Media mit OpenAPI-Funktionen stellt DAM in den Mittelpunkt eines agilen und effizienten Content-Supply-Chain-Ökosystems, um Asset-Governance und -Bereitstellung sicherzustellen.
 
@@ -19,21 +19,21 @@ Dynamic Media mit OpenAPI-Funktionen stellt DAM in den Mittelpunkt eines agilen 
 
 Dynamic Media mit OpenAPI-Funktionen bietet die folgenden Hauptvorteile:
 
-* **Nahtlose Integrationen**: Dynamic Media mit OpenAPI-Funktionen bietet einen umfassenden Satz von Such- und Bereitstellungs-APIs. Dadurch können Ihre Entwickler [Integration der Bereitstellung von Assets in ihre Anwendungen](/help/assets/integrate-new-dynamic-media-apis.md). Zu den Anwendungen gehören Adobe sowie Anwendungen von Drittanbietern. Darüber hinaus bietet es eine [Benutzeroberfläche für die Auswahl von Micro Frontend-Assets](/help/assets/asset-selector.md) , um genehmigte Assets zu suchen und auszuwählen. Der Selektor kann mühelos in jede Anwendung integriert werden, basierend auf JavaScript-Frameworks wie React JS, Angular JS und Vanilla JS.
+* **Nahtlose Integrationen**: Dynamic Media mit OpenAPI-Funktionen bietet einen umfassenden Satz von Such- und Bereitstellungs-APIs. Dadurch können Ihre Entwickler die Bereitstellung von Assets einfach in ihre Anwendungen integrieren](/help/assets/integrate-new-dynamic-media-apis.md). [ Zu den Anwendungen gehören Adobe sowie Anwendungen von Drittanbietern. Darüber hinaus bietet es eine Benutzeroberfläche für den Asset-Wähler [Micro Frontend](/help/assets/asset-selector.md) zum Suchen und Auswählen genehmigter Assets. Der Selektor kann mühelos in jede Anwendung integriert werden, die auf JavaScript-Frameworks wie React JS, Angular JS und Vanilla JS basiert.
 
 * **Zentralisierte Verwaltung digitaler Assets**: DAM ist die zentrale Quelle der Wahrheit für alle digitalen Assets. Ihre digitalen Assets werden zentral in AEM Assets verwaltet und über Versand-URLs an verbrauchte Anwendungen bereitgestellt, ohne Asset-Binärdateien zu kopieren.
 
-* **Echtzeit-Updates**: Änderungen an genehmigten Assets in DAM, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden automatisch in die Versand-URLs übernommen. Mit einem kurzen TTL-Wert (Time-to-Live) von 10 Minuten, der für Dynamic Media mit OpenAPI-Funktionen über CDN konfiguriert wurde, werden Aktualisierungen in weniger als 10 Minuten auf allen Authoring- und veröffentlichten Benutzeroberflächen sichtbar.
+* **Echtzeit-Aktualisierungen**: Alle Änderungen, die an genehmigten Assets in DAM vorgenommen werden, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden automatisch in den Versand-URLs übernommen. Mit einem kurzen TTL-Wert (Time-to-Live) von 10 Minuten, der für Dynamic Media mit OpenAPI-Funktionen über CDN konfiguriert wurde, werden Aktualisierungen in weniger als 10 Minuten auf allen Authoring- und veröffentlichten Benutzeroberflächen sichtbar.
 
-* **Markenkonsistenz**: Nur [markengenehmigte Assets](/help/assets/approved-assets.md) für nachgelagerte Anwendungen eingesetzt werden. [Brand Manager und Marketingexperten behalten die strenge Kontrolle über Marken-Assets](/help/assets/restrict-assets-delivery.md). Es steht nur die genehmigte und neueste Version des Assets zur Verwendung zur Verfügung, wodurch Markenkonsistenz über alle Kanäle und Anwendungen hinweg gewährleistet ist.
+* **Markenkonsistenz**: Nur [markengenehmigte Assets](/help/assets/approved-assets.md) werden nachgelagerten Anwendungen angezeigt. [Brand Manager und Marketingexperten behalten die strenge Kontrolle über Marken-Assets](/help/assets/restrict-assets-delivery.md). Es steht nur die genehmigte und neueste Version des Assets zur Verwendung zur Verfügung, wodurch Markenkonsistenz über alle Kanäle und Anwendungen hinweg gewährleistet ist.
 
-* **Weboptimierter Versand**: Digitale Assets werden in Web-optimierten Formaten bereitgestellt, um die Web-Vitals Ihrer digitalen Erlebnisse zu verbessern. Dazu gehören die Unterstützung von WebP-Ausgabeformaten für Bilder, das adaptive Streaming über HLS- oder DASH-Protokolle für Videos und Original-Ausgabeformate für Dokumente.
+* **Web-optimierte Bereitstellung**: Digitale Assets werden in weboptimierten Formaten bereitgestellt, um die Web-Vitals Ihrer digitalen Erlebnisse zu verbessern. Dazu gehören die Unterstützung von WebP-Ausgabeformaten für Bilder, das adaptive Streaming über HLS- oder DASH-Protokolle für Videos und Original-Ausgabeformate für Dokumente.
 
-* **Dynamische Asset-Umwandlung**: Unser System ermöglicht eine direkte Bildumwandlung mithilfe von URL-Parametern, die als Bild-Modifikatoren bezeichnet werden. [Zum Beispiel Breite, Höhe, Drehen, Spiegeln, Qualität, Zuschneiden und Format](/help/assets/deliver-assets-apis.md). Dynamic Media mit OpenAPI-Funktionen unterstützt auch Funktionen für smartes Zuschneiden von Bildern. Transformierte Ausgabedarstellungen werden dynamisch generiert und nahtlos über das CDN bereitgestellt.
+* **Dynamische Asset-Transformation**: Unser System ermöglicht die direkte Bildumwandlung mithilfe von URL-Parametern, die als Bild-Modifikatoren bezeichnet werden. [Zum Beispiel Breite, Höhe, Rotation, Spiegeln, Qualität, Zuschneiden und Format](/help/assets/deliver-assets-apis.md). Dynamic Media mit OpenAPI-Funktionen unterstützt auch Funktionen für smartes Zuschneiden von Bildern. Transformierte Ausgabedarstellungen werden dynamisch generiert und nahtlos über das CDN bereitgestellt.
 
-* **Sichere Bereitstellung von Assets**: Dynamic Media mit OpenAPI-Funktionen bieten einen Mechanismus zur Steuerung des Zugriffs auf Ihre digitalen Assets. Sie können Benutzerrollen oder Gruppen als Metadaten für zu sichernde Assets angeben und einen vordefinierten Zeitrahmen festlegen, in dem [Nur autorisierte Benutzer können auf diese Assets zugreifen](/help/assets/restrict-assets-delivery.md). Die Bereitstellungs-URLs für gesicherte Assets werden für nicht autorisierte Benutzer während des eingeschränkten Zeitraums nicht aufgelöst.
+* **Sichere Bereitstellung von Assets**: Dynamic Media mit OpenAPI-Funktionen bieten einen Mechanismus zur Steuerung des Zugriffs auf Ihre digitalen Assets. Sie können Benutzerrollen oder Gruppen als Metadaten für zu sichernde Assets angeben und einen vordefinierten Zeitrahmen festlegen, innerhalb dessen [nur autorisierte Benutzer auf diese Assets zugreifen können](/help/assets/restrict-assets-delivery.md). Die Bereitstellungs-URLs für gesicherte Assets werden für nicht autorisierte Benutzer während des eingeschränkten Zeitraums nicht aufgelöst.
 
-* **Dateneinblicke für fundierte Entscheidungen**: Neben Asset-Management und -Bereitstellung werden damit Einblicke in Versanddaten in Asset-Sendungen im CDN erfasst, sodass Brand Manager Versandmetriken kanalübergreifend verfolgen können. Sie ermöglichen es ihnen, datenbasierte Entscheidungen zur kontinuierlichen Optimierung von Asset-Governance und Bereitstellungsstrategien zu treffen.
+* **Dateneinblicke, um fundierte Entscheidungen zu treffen**: Neben Asset-Management und -Bereitstellung erfasst sie Versanddateneinblicke in Asset-Sendungen im CDN, sodass Brand Manager Versandmetriken kanalübergreifend verfolgen können. Sie ermöglichen es ihnen, datenbasierte Entscheidungen zur kontinuierlichen Optimierung von Asset-Governance und Bereitstellungsstrategien zu treffen.
 
 ![Neues Dynamic Media-Datenflussdiagramm](assets/dm-openapi-dfd.png)
 
@@ -47,11 +47,11 @@ Für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen benötigen Sie Lizenze
 
 ## Wie kann Dynamic Media mit OpenAPI-Funktionen aktiviert werden? {#enable-new-dynamic-media-apis}
 
-Bevor Sie eine Anfrage zur Aktivierung von Dynamic Media mit OpenAPI-Funktionen auf AEM as a Cloud Service senden, stellen Sie sicher, dass diese nicht bereits aktiviert ist. Führen Sie die folgenden Schritte aus, um zu überprüfen, ob sie aktiviert ist:
+Bevor Sie eine Anfrage zur Aktivierung von Dynamic Media mit OpenAPI-Funktionen in AEM as a Cloud Service senden, stellen Sie sicher, dass diese Option nicht bereits aktiviert ist. Führen Sie die folgenden Schritte aus, um zu überprüfen, ob sie aktiviert ist:
 
 1. Aus Engineering und Produktmanagement zu bestätigen
 
-Um Dynamic Media mit OpenAPI-Funktionen auf AEM as a Cloud Service zu aktivieren, senden Sie ein Adobe Support-Ticket mit den folgenden Details:
+Um Dynamic Media mit OpenAPI-Funktionen in AEM as a Cloud Service zu aktivieren, senden Sie ein Adobe-Support-Ticket mit den folgenden Details:
 
 * Cloud Service-Programm und Umgebungs-ID
 
@@ -89,7 +89,7 @@ Nachdem Sie das Support-Ticket übermittelt haben, ermöglicht Adobe Dynamic Med
    </a>
    <div>
       <a href="/help/assets/integrate-new-dynamic-media-apis.md">
-      <strong>Integrieren von AEM Assets in nachgelagerte Anwendungen</strong>
+      <strong>Integrieren von AEM Assets mit nachgelagerten Anwendungen</strong>
       </a>
    </div>
    <p>
@@ -102,7 +102,7 @@ Nachdem Sie das Support-Ticket übermittelt haben, ermöglicht Adobe Dynamic Med
    </a>
    <div>
       <a href="/help/assets/asset-selector.md">
-      <strong>Adobe Micro-Frontend-Asset-Auswahl</strong>
+      <strong>Adobe-Micro-Frontend-Asset-Auswahl</strong>
       </a>
    </div>
    <p>
@@ -130,11 +130,11 @@ Nachdem Sie das Support-Ticket übermittelt haben, ermöglicht Adobe Dynamic Med
    </a>
    <div>
       <a href="/help/assets/deliver-assets-apis.md">
-      <strong>Bereitstellen von Assets für nachgelagerte Anwendungen</strong>
+      <strong>Bereitstellen von Assets an nachgelagerte Anwendungen</strong>
       </a>
    </div>
    <p>
-      <em>Stellen Sie Assets mithilfe einer Bereitstellungs-URL für integrierte nachgelagerte Anwendungen bereit.</em>
+      <em> Stellen Sie Assets mithilfe einer Bereitstellungs-URL an integrierte nachgelagerte Anwendungen bereit.</em>
    </p>
 </td>
 <td>
@@ -147,7 +147,7 @@ Nachdem Sie das Support-Ticket übermittelt haben, ermöglicht Adobe Dynamic Med
       </a>
    </div>
    <p>
-      <em> DAM Admin oder Brand Manager schränken den Zugriff ein, indem Rollen für genehmigte Assets in der AEM as a Cloud Service Autoreninstanz konfiguriert werden.</em>
+      <em> DAM Admin oder Brand Manager schränken den Zugriff ein, indem Rollen für genehmigte Assets in der AEM as a Cloud Service-Autoreninstanz konfiguriert werden.</em>
    </p>
 </td>
 </table>

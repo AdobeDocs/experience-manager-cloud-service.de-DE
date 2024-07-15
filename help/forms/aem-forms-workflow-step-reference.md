@@ -9,12 +9,12 @@ role: Admin, User
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '7379'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Verwenden von Formular-orientierten AEM-Workflows – Schrittreferenz zur Automatisierung von Geschäftsprozessen {#forms-centric-workflow-on-osgi-step-reference}
+# Verwenden von formularzentrierten AEM-Workflows – Schrittreferenz zur Automatisierung von Geschäftsprozessen {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -85,7 +85,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Für abgeschlossene Aufgaben das adaptive Formular rendern als]**: Wenn eine Aufgabe als „abgeschlossen“ markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument rendern. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **[!UICONTROL Vorbefüllt]**: Folgende unten aufgeführte Felder dienen als Eingaben für die Aufgabe:
 
-   * **[!UICONTROL Wählen Sie die Eingabedatendatei mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell (FDM)). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
+   * **[!UICONTROL Eingabedatendatei auswählen mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell [FDM]). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
    * **[!UICONTROL Eingabeanhänge auswählen mit]**: Anhänge, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variablen eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um einen Eingabeanhang für das adaptive Formular anzugeben.
 
   <!-- 
@@ -108,7 +108,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 * **[!UICONTROL Übermittelte Informationen]**: Folgende Felder dienen als Ausgabespeicherorte für die Aufgabe:
 
-   * **[!UICONTROL Ausgabedatendatei speichern mithilfe von]**: Speichern Sie die Datendatei (.json, .xml, .doc oder das Formulardatenmodell (FDM)). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Sie können die Ausgabedatendatei unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen des Datentyps „Dokument“, XML oder JSON speichern. Zum Beispiel [Payload_Directory]/Workflow/data, wobei „data“ für eine Datei steht.
+   * **[!UICONTROL Ausgabedatendatei speichern mit]**: Speichern der Datendatei (.json, .xml, .doc oder Formulardatenmodell [FDM]). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Sie können die Ausgabedatendatei unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen des Datentyps „Dokument“, XML oder JSON speichern. Zum Beispiel [Payload_Directory]/Workflow/data, wobei „data“ für eine Datei steht.
    * **[!UICONTROL Anhänge speichern mit]**: Speichern Sie die Formularanhänge in einer Aufgabe. Sie können die Anhänge unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen der Array-Liste vom Datentyp „Dokument“ speichern.
    * **[!UICONTROL Datensatzdokument speichern mit]**: Pfad zum Speichern einer Datensatzdokumentdatei. Beispielsweise [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Datensatzdokument unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder es in einer Variablen des Datentyps „Dokument“ speichern. Wenn Sie die Option **[!UICONTROL Relativ zur Nutzlast]** auswählen, wird das Datensatzdokument nicht generiert, wenn das Feld „Pfad“ leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Adaptives Formular“ auswählen.
 
@@ -273,9 +273,9 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 * **[!UICONTROL Ausgabe in Payload speichern]**: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, falls die Payload eine Datei ist.
 * **[!UICONTROL Zuordnung des Ausgabedokuments]**: Gibt explizit den Speicherort an, unter dem jede Dokumentdatei gespeichert werden soll, indem ein Eintrag pro Dokument hinzugefügt wird. Jeder Eintrag stellt das Dokument und den Speicherort dar, an dem es gespeichert werden soll. Wenn mehrere Ausgabedokumente vorhanden sind, wird diese Option verwendet.
 
-## Schritt &quot;Formulardatenmodell (FDM)-Dienst aufrufen&quot; {#invoke-form-data-model-service-step}
+## Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ {#invoke-form-data-model-service-step}
 
-Sie können [[!DNL AEM Forms] -Datenintegration](data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Diese Datenquellen können ein Webservice, ein REST-Service, ein OData-Service und eine CRM-Lösung sein. [!DNL AEM Forms] Mit der Datenintegration können Sie ein Formulardatenmodell (FDM) erstellen, das verschiedene Dienste umfasst, um Datenabruf-, Additions- und Aktualisierungsvorgänge für die konfigurierte Datenbank durchzuführen. Sie können den **[!UICONTROL Schritt „Formulardatenmodell-Service aufrufen“]** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Services des FDM verwenden, um Daten aus unterschiedlichen Datenquellen abzurufen, sie zu aktualisieren oder hinzuzufügen.
+Sie können [[!DNL AEM Forms] -Datenintegration](data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Diese Datenquellen können ein Webservice, ein REST-Service, ein OData-Service und eine CRM-Lösung sein. Mit der [!DNL AEM Forms]-Datenintegration können Sie ein Formulardatenmodell (FDM) erstellen, das verschiedene Dienste umfasst, um Vorgänge zum Abrufen, Hinzufügen und Aktualisieren von Daten in der konfigurierten Datenbank durchzuführen. Sie können den **[!UICONTROL Schritt „Formulardatenmodell-Service aufrufen“]** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Services des FDM verwenden, um Daten aus unterschiedlichen Datenquellen abzurufen, sie zu aktualisieren oder hinzuzufügen.
 
 Um die Eingaben für die Felder des Schritts zu erläutern, werden die folgende Datenbanktabelle und JSON-Datei als Beispiel verwendet:
 
@@ -330,14 +330,14 @@ Um die Eingaben für die Felder des Schritts zu erläutern, werden die folgende 
   }
 ```
 
-Der Schritt &quot;Formulardatenmodell (FDM)-Dienst aufrufen&quot;enthält die folgenden Felder, um Formulardatenmodellvorgänge (FDM) zu erleichtern:
+Der Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ enthält folgende Felder zum Vereinfachen von Formulardatenmodell(FDM)-Vorgängen:
 
 * **[!UICONTROL Titel:]** Titel des Schrittes. Dies erleichtert die Identifizierung dieses Schritts im Workflow-Editor.
-* **[!UICONTROL Beschreibung]**: Erläuterungen können für andere Prozessentwickler nützlich sein, wenn Sie in einer gemeinsamen Entwicklungsumgebung arbeiten.
+* **[!UICONTROL Beschreibung]**: Erläuterungen können für andere Prozessentwickelnde nützlich sein, wenn Sie in einer gemeinsamen Entwicklungsumgebung arbeiten.
 
-* **[!UICONTROL Formulardatenmodellpfad]**: Suchen Sie nach einem Formulardatenmodell (FDM), das auf dem Server vorhanden ist, und wählen Sie es aus.
+* **[!UICONTROL Pfad für Formulardatenmodell]**: Suchen Sie nach einem Formulardatenmodell (FDM) auf dem Server und wählen Sie es aus.
 
-* **[!UICONTROL Fehler und Validierungen]**: Mit dieser Option können Sie Fehlermeldungen erfassen und Validierungsoptionen für abgerufene und an Datenquellen gesendete Daten festlegen. Mit diesen Änderungen können Sie sicherstellen, dass an den Schritt Formulardatenmodell (FDM)-Dienst aufrufen übergebene Daten den von der Datenquelle definierten Datenbeschränkungen entsprechen. Weitere Informationen finden Sie unter [Automatisierte Validierung von Eingabedaten](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Fehler und Validierungen]**: Mit dieser Option können Sie Fehlermeldungen erfassen und Validierungsoptionen für abgerufene und an Datenquellen gesendete Daten festlegen. Mit diesen Änderungen können Sie sicherstellen, dass die an den Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ übergebenen Daten den von der Datenquelle definierten Datenbegrenzungen entsprechen. Weitere Informationen finden Sie unter [Automatisierte Validierung von Eingabedaten](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validierungsstufe]**: Es gibt drei Kategorien von Validierungen: Einfach, Vollständig und AUS:
 
@@ -353,7 +353,7 @@ Der Schritt &quot;Formulardatenmodell (FDM)-Dienst aufrufen&quot;enthält die fo
 
 * **[!UICONTROL Fehlerdetails in Variable speichern]**: Sie können Fehlerdetails in einer [Variablen vom Typ ](variable-in-aem-workflows.md)JSON speichern.
 
-* **[!UICONTROL Dienst]**: Liste der vom ausgewählten Formulardatenmodell (FDM) bereitgestellten Dienste.
+* **[!UICONTROL Dienst]**: Liste der Dienste, die durch das ausgewählte Formulardatenmodell (FDM) bereitgestellt werden.
 * **[!UICONTROL Eingabe für Services]** > **[!UICONTROL Bereitstellung von Eingabedaten mit Literal, Variable oder Workflow-Metadaten und einer JSON-Datei]**: Ein Service kann mehrere Argumente aufweisen. Wählen Sie die Option zum Abrufen des Werts der Service-Parameter aus einer Workflow-Metadateneigenschaft, einem JSON-Objekt oder einer Variable aus oder geben Sie den Wert direkt in das bereitgestellte Textfeld ein:
 
    * **[!UICONTROL Literal]**: Verwenden Sie diese Option, wenn Sie den genauen zu spezifizierenden Wert kennen. Beispiel: srose@we.info.
@@ -365,16 +365,16 @@ Der Schritt &quot;Formulardatenmodell (FDM)-Dienst aufrufen&quot;enthält die fo
      Wenn beispielsweise der Ordner „Relativ zur Nutzlast“ im CRX-Repository einen Dateianhang am Speicherort `attachment\attachment-folder` enthält, geben Sie `attachment\attachment-folder` im Textfeld an, nachdem Sie die Option **[!UICONTROL Relativ zur Nutzlast]** ausgewählt haben.
 
    * **[!UICONTROL JSON Dot Notation]**: Verwenden Sie die Option, wenn der zu verwendende Wert in einer JSON-Datei enthalten ist. Beispiel: Insurance.customerDetails.emailAddress. Die Option „JSON Dot Notation“ ist nur verfügbar, wenn Zuordnungseingabefelder aus der Eingabe-JSON-Option ausgewählt sind.
-   * **[!UICONTROL Zuordnen von Eingabefeldern aus Eingabe-JSON]**: Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Dienstargumente aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Payload oder zu einem absoluten Pfad sein oder Sie können ein JSON-Eingabedokument mit einer Variablen vom Typ JSON oder Formulardatenmodell (FDM) auswählen.
+   * **[!UICONTROL Zuordnen von Eingabefeldern aus Eingabe-JSON]**: Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Dienstargumente aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Payload bzw. zu einem absoluten Pfad sein oder Sie können ein JSON-Eingabedokument mit einer Variablen vom Typ JSON oder Formulardatenmodell (FDM) auswählen.
 
 * **[!UICONTROL Eingabe für Dienste]** > **[!UICONTROL Eingabedaten mithilfe einer Variablen oder einer JSON-Datei bereitstellen]**: Wählen Sie diese Option, um Werte für alle Argumente aus einer JSON-Datei abzurufen, die unter einem absoluten Pfad, einem Pfad relativ zur Nutzlast oder in einer Variablen gespeichert wurde.
-* **[!UICONTROL Auswahl des Eingabe-JSON-Dokuments mit]**: Die JSON-Datei, die Werte für alle Service-Argumente enthält. Der Pfad der JSON-Datei kann **[!UICONTROL relativ zur Nutzlast]** oder ein **[!UICONTROL absoluter Pfad]** sein. Sie können das JSON-Eingabedokument auch mit einer Variablen des JSON- oder FDM-Datentyps (Formulardatenmodell) abrufen.
+* **[!UICONTROL Auswahl des Eingabe-JSON-Dokuments mit]**: Die JSON-Datei, die Werte für alle Service-Argumente enthält. Der Pfad der JSON-Datei kann **[!UICONTROL relativ zur Nutzlast]** oder ein **[!UICONTROL absoluter Pfad]** sein. Sie können das JSON-Eingabedokument auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell (FDM)“ abrufen.
 
 * **[!UICONTROL JSON Dot Notation]**: Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Service-Argumente zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Argumente zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie eine JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie „insurance.customerDetails“ an, um alle Details eines Kunden als Eingabe für den Service anzugeben.
 * **[!UICONTROL Ausgabe des Service]** > **[!UICONTROL Ausgabewerte zu Variablen oder Metadaten zuordnen und schreiben]**: Wählen Sie diese Option, um die Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository zu speichern. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut aus, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu. In ähnlicher Weise können Sie die Ausgabe in einer Variablen vom Datentyp „Long“ speichern. Wenn Sie eine Eigenschaft für die Option **[!UICONTROL Zuzuordnendes Service-Ausgangsattribut]** auswählen, werden für die Option **[!UICONTROL Speichern der Ausgabe in]** nur Variablen ausgefüllt, die Daten der ausgewählten Eigenschaft speichern können.
 
 * **[!UICONTROL Ausgabe des Diensts]** > **[!UICONTROL Ausgabe in Variable oder einer JSON-Datei speichern]**: Wählen Sie diese Option aus, um die Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, einem Pfad relativ zur Nutzlast oder in einer Variablen zu speichern.
-* **[!UICONTROL Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern]**: Speichern Sie die JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen des JSON- oder FDM-Datentyps (Formulardatenmodell) speichern.
+* **[!UICONTROL Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern]**: Speichern Sie die JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell (FDM)“ speichern.
 
 
 

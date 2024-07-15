@@ -14,20 +14,20 @@ ht-degree: 15%
 
 # Speichern von Kernkomponenten-basierten adaptiven Formularen als Entwurf {#save-af-form}
 
-Das Speichern des adaptiven Formulars als Entwurf ist eine wesentliche Funktion, die die Effizienz und Genauigkeit der Benutzer verbessert. Mit dieser Funktion können Benutzer den Fortschritt speichern und zu einem späteren Zeitpunkt zurückkehren, um die Aufgaben abzuschließen, ohne die eingegebenen Informationen zu verlieren. Bereitstellung einer  `save-as-draft` -Option ermöglicht eine flexible Zeitverwaltung, reduziert das Risiko von Datenverlusten und bewahrt die Genauigkeit der Übermittlung. Sie können Formulare als Entwürfe speichern, um sie später abzuschließen.
+Das Speichern des adaptiven Formulars als Entwurf ist eine wesentliche Funktion, die die Effizienz und Genauigkeit der Benutzer verbessert. Mit dieser Funktion können Benutzer den Fortschritt speichern und zu einem späteren Zeitpunkt zurückkehren, um die Aufgaben abzuschließen, ohne die eingegebenen Informationen zu verlieren. Die Bereitstellung einer &quot;`save-as-draft`&quot;-Option ermöglicht eine flexible Verwaltung der Zeit, reduziert das Risiko von Datenverlusten und bewahrt die Genauigkeit von Übermittlungen. Sie können Formulare als Entwürfe speichern, um sie später abzuschließen.
 
 ## Überlegungen
 
 * [Aktivieren Sie die adaptiven Forms-Kernkomponenten für Ihre Umgebung.](/help/forms/enable-adaptive-forms-core-components.md)
 
-* Stellen Sie sicher, dass [Kernkomponente ist auf Version 3.0.24 oder höher eingestellt](https://github.com/adobe/aem-core-forms-components) , um diese Funktion zu verwenden.
-* Stellen Sie sicher, dass Sie über eine [Azure-Speicherkonto und Zugriffsschlüssel](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) , um den Zugriff auf das Azure-Speicherkonto zu autorisieren.
+* Stellen Sie sicher, dass die [Kernkomponente auf Version 3.0.24 oder höher](https://github.com/adobe/aem-core-forms-components) eingestellt ist, um diese Funktion zu verwenden.
+* Stellen Sie sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) verfügen, um den Zugriff auf das Azure-Speicherkonto zu autorisieren.[
 
 ## Speichern eines adaptiven Formulars als Entwurf
 
-[!DNL Experience Manager Forms] Datenintegration (data-integration.md) bietet [!DNL Azure] Speicherkonfiguration für die Integration von Formularen mit [!DNL Azure] Speicherdienste. Das Formulardatenmodell (FDM) kann verwendet werden, um eine adaptive Forms zu erstellen, die mit dem [!DNL Azure] -Server, um geschäftliche Workflows zu aktivieren.
+[!DNL Experience Manager Forms] Die Datenintegration (data-integration.md) bietet eine [!DNL Azure] Speicherkonfiguration, um Formulare in [!DNL Azure] Speicherdienste zu integrieren. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Forms zu erstellen, die mit dem [!DNL Azure] -Server interagieren, um Geschäftsabläufe zu ermöglichen.
 
-Um Formulare als Entwurf zu speichern, stellen Sie sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf die [!DNL Azure] Speicherkonto. Um Formulare als Entwurf zu speichern, führen Sie die folgenden Schritte aus:
+Um Formulare als Entwurf zu speichern, stellen Sie sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf das Speicherkonto [!DNL Azure] zu autorisieren. Um Formulare als Entwurf zu speichern, führen Sie die folgenden Schritte aus:
 
 1. [Erstellen der Azure-Speicherkonfiguration](#create-azure-storage-configuration)
 1. [Konfigurieren von Unified Storage Connector für das Formularportal](#configure-usc-forms-portal)
@@ -36,18 +36,18 @@ Um Formulare als Entwurf zu speichern, stellen Sie sicher, dass Sie über ein Az
 
 ### 1. Erstellen der Azure Storage-Konfiguration {#create-azure-storage-configuration}
 
-Einmal haben Sie ein Azure-Speicherkonto und einen Zugriffsschlüssel, um den Zugriff auf die [!DNL Azure] Speicherkonto: Führen Sie die folgenden Schritte aus, um die Azure Storage-Konfiguration zu erstellen:
+Sobald Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf das [!DNL Azure] -Speicherkonto zu autorisieren, führen Sie die folgenden Schritte aus, um eine Azure Storage-Konfiguration zu erstellen:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
 
    ![Auswahl der Azure Storage Card](/help/forms/assets/save-form-as-draft-azure-card.png)
 
-1. Wählen Sie einen Konfigurationsordner aus, um die Konfiguration zu erstellen, und wählen Sie **[!UICONTROL Erstellen]**.
+1. Wählen Sie einen Konfigurationsordner aus, um die Konfiguration zu erstellen, und wählen Sie **[!UICONTROL Erstellen]** aus.
 
-   ![Azure Storage Configuration Folder auswählen](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Wählen Sie den Azure Storage Configuration Folder](/help/forms/assets/save-form-as-draft-select-config-folder.png) aus.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
-1. Geben Sie den Namen der [!DNL Azure] Speicherkonto im **[!UICONTROL Azure-Speicherkonto]** und **[!UICONTROL Azure Access Key]** -Felder.
+1. Geben Sie den Namen des Speicherkontos [!DNL Azure] in den Feldern **[!UICONTROL Azure Storage Account]** und **[!UICONTROL Azure Access Key]** an.
 
    ![Azure Storage-Konfiguration](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
@@ -55,7 +55,7 @@ Einmal haben Sie ein Azure-Speicherkonto und einen Zugriffsschlüssel, um den Zu
 
 >[!NOTE]
 >
-> Sie können die **[!UICONTROL Azure-Speicherkonto]** und **[!UICONTROL Azure Access Key]** aus dem [Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+> Sie können das **[!UICONTROL Azure Storage Account]** und den **[!UICONTROL Azure Access Key]** aus dem [Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) abrufen.
 
 
 ### 2. Unified Storage Connector für Forms Portal konfigurieren {#configure-usc-forms-portal}
@@ -69,31 +69,31 @@ Nachdem Sie die Azure Storage-Konfiguration erfolgreich erstellt haben, konfigur
 1. Wählen Sie im Abschnitt **[!UICONTROL Formularportal]** den Eintrag **[!UICONTROL Azure]** aus der Dropdown-Liste **[!UICONTROL Speicher]** aus.
 1. Geben Sie im Feld **[!UICONTROL Pfad für Speicherkonfiguration]** den [Konfigurationspfad für die Azure-Speicherkonfiguration](#create-azure-storage-configuration) an.
 
-   ![Einheitlicher Connector-Speicher](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![Einstellung für den einheitlichen Connector-Speicher](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. Auswählen **[!UICONTROL Speichern]** und wählen Sie **[!UICONTROL Publish]** , um die Konfiguration zu veröffentlichen.
+1. Wählen Sie **[!UICONTROL Speichern]** und dann **[!UICONTROL Publish]** aus, um die Konfiguration zu veröffentlichen.
 
 ### 3. Erstellen Sie Regeln, um ein adaptives Formular als Entwurf zu speichern {#rule-to-save-adaptive-form-as-draft}
 
-Um ein Formular als Entwurf zu speichern, erstellen Sie eine **Formular speichern** -Regel für eine Formularkomponente, z. B. eine Schaltfläche. Wenn auf die Schaltfläche geklickt wird, wird der Trigger der Regel und das Formular als Entwurf gespeichert. Führen Sie die folgenden Schritte aus, um **Formular speichern** Regel für eine Schaltflächenkomponente:
+Um ein Formular als Entwurf zu speichern, erstellen Sie eine Regel **Formular speichern** für eine Formularkomponente, z. B. eine Schaltfläche. Wenn auf die Schaltfläche geklickt wird, wird der Trigger der Regel und das Formular als Entwurf gespeichert. Führen Sie die folgenden Schritte aus, um die Regel **Formular speichern** für eine Schaltflächenkomponente zu erstellen:
 
 1. Öffnen Sie in der Autoreninstanz ein adaptives Formular im Bearbeitungsmodus.
 1. Wählen Sie im linken Bereich das ![Symbol „Komponenten“](assets/components_icon.png) aus und ziehen Sie die Komponente **[!UICONTROL Schaltfläche]** auf das Formular.
 1. Wählen Sie die Komponente **[!UICONTROL Schaltfläche]** und dann das ![Symbol „Konfigurieren“](assets/configure_icon.png) aus.
 1. Wählen Sie das Symbol **[!UICONTROL Regeln bearbeiten]** aus, um den Regeleditor zu öffnen.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus, um die Regel zu konfigurieren und zu erstellen.
-1. Im **[!UICONTROL Wann]** Bereich, wählen Sie **angeklickt wird** und im **[!UICONTROL Dann]** auswählen, wählen Sie die **Formular speichern** -Option.
+1. Wählen Sie im Abschnitt **[!UICONTROL Wenn]** die Option **ist geklickt** und wählen Sie im Abschnitt **[!UICONTROL Dann]** die Option **Formular speichern** aus.
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
 ![Regel für Schaltfläche erstellen](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
-Wenn Sie ein adaptives Formular in der Vorschau anzeigen, füllen Sie es aus und klicken Sie auf **Formular speichern** -Schaltfläche, wird das Formular als Entwurf zur späteren Verwendung gespeichert.
+Wenn Sie ein adaptives Formular in der Vorschau anzeigen, ausfüllen und auf die Schaltfläche **Formular speichern** klicken, wird das Formular als Entwurf gespeichert und kann später verwendet werden.
 
 ## Komponente &quot;Drafts &amp; Submissions&quot;zur Auflistung von Entwürfen auf der AEM Sites-Seite
 
-AEM Forms stellt die **Entwürfe und Übermittlungen** Portalkomponente vorkonfiguriert, um gespeicherte Formulare auf AEM Sites-Seiten anzuzeigen. Die **Entwürfe und Übermittlungen** zeigt Formulare, die als Entwürfe für den späteren Abschluss gespeichert werden, sowie gesendete Formulare an. Diese Komponente bietet jedem angemeldeten Benutzer ein personalisiertes Erlebnis, indem die Entwürfe und Übermittlungen im Zusammenhang mit der vom Benutzer erstellten adaptiven Forms aufgelistet werden.
+AEM Forms stellt die Portalkomponente &quot;**Entwürfe &amp; Sendungen**&quot;standardmäßig bereit, um gespeicherte Formulare auf AEM Sites-Seiten anzuzeigen. Die Komponente **Entwürfe &amp; Übermittlungen** enthält Formulare, die als Entwürfe gespeichert werden, um später ausgefüllt werden zu können, sowie gesendete Formulare. Diese Komponente bietet jedem angemeldeten Benutzer ein personalisiertes Erlebnis, indem die Entwürfe und Übermittlungen im Zusammenhang mit der vom Benutzer erstellten adaptiven Forms aufgelistet werden.
 
-Sie können vordefinierte Forms Portal-Komponenten verwenden, um Formularentwürfe auf der AEM Sites-Seite aufzulisten. Führen Sie die folgenden Schritte aus, um die **Entwürfe und Übermittlungen** Portalkomponente:
+Sie können vordefinierte Forms Portal-Komponenten verwenden, um Formularentwürfe auf der AEM Sites-Seite aufzulisten. Führen Sie die folgenden Schritte aus, um die Portalkomponente **Entwürfe und Übermittlungen** zu verwenden:
 
 1. [Aktivieren der Forms Portal-Komponente &quot;Drafts &amp; Submissions&quot;](#enable-component)
 2. [Komponente &quot;Drafts and Submissions&quot;auf AEM Sites-Seite hinzufügen](#Add-drafts-submissions-component)
@@ -101,13 +101,13 @@ Sie können vordefinierte Forms Portal-Komponenten verwenden, um Formularentwür
 
 ### 1. Aktivieren der Forms Portal-Komponente &quot;Drafts &amp; Submissions&quot;{#enable-component}
 
-So aktivieren Sie die **[!UICONTROL Entwürfe und Übermittlungen]** -Komponente in der Vorlagenrichtlinie die folgenden Schritte ausführen:
+Führen Sie die folgenden Schritte aus, um die Komponente **[!UICONTROL Entwürfe &amp; Sendungen]** in der Vorlagenrichtlinie zu aktivieren:
 
-1. Öffnen Sie die AEM Sites-Seite in einer **Bearbeiten** -Modus.
+1. Öffnen Sie die AEM Sites-Seite im Modus **Bearbeiten** .
 1. Navigieren Sie zu **[!UICONTROL Seiteninformationen]** => **[!UICONTROL Vorlage bearbeiten]**
    ![Vorlagenrichtlinie bearbeiten](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Klicken Sie auf **[!UICONTROL Politik]** und wählen Sie die **[!UICONTROL Entwürfe und Übermittlungen]**  Kontrollkästchen unter dem **[AEM Archetyp Projektname] - Forms- und Kommunikationsportal**.
+1. Klicken Sie auf das Kontrollkästchen **[!UICONTROL Richtlinie]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Entwürfe &amp; Sendungen]** unter dem AEM **[Projektnamen des Archetyps] - Forms und Kommunikationsportal**.
 
    ![Richtlinienauswahl](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -117,30 +117,30 @@ Sobald eine Portalkomponente aktiviert ist, können Sie sie in der Autoreninstan
 
 ### 2. Komponente &quot;Drafts and Submissions&quot;auf AEM Sites-Seite hinzufügen{#Add-drafts-submissions-component}
 
-Sie können das Formularportal auf mit AEM erstellten Websites erstellen und anpassen, indem Sie die Portalkomponenten hinzufügen und konfigurieren. Stellen Sie sicher, dass [Komponente &quot;Drafts &amp; Submissions&quot;ist aktiviert](#enable-component) bevor Sie sie auf der AEM Sites-Seite verwenden.
+Sie können das Formularportal auf mit AEM erstellten Websites erstellen und anpassen, indem Sie die Portalkomponenten hinzufügen und konfigurieren. Stellen Sie sicher, dass die Komponente [Entwürfe und Übermittlungen](#enable-component) aktiviert ist, bevor Sie sie auf der AEM Sites-Seite verwenden.
 
-Um eine Komponente hinzuzufügen, ziehen Sie die Komponente per Drag-and-Drop aus dem **Entwürfe und Übermittlungen** Komponentenbereich zum Layout-Container auf der Seite oder wählen Sie das Symbol zum Hinzufügen im Layout-Container aus und fügen Sie die Komponente aus dem **[!UICONTROL Neue Komponente einfügen]** angezeigt.
+Um eine Komponente hinzuzufügen, ziehen Sie die Komponente entweder aus dem Komponentenbereich **Entwürfe &amp; Sendungen** in den Layout-Container auf der Seite oder wählen Sie das Symbol zum Hinzufügen im Layout-Container aus und fügen Sie die Komponente aus dem Dialogfeld **[!UICONTROL Neue Komponente einfügen]** hinzu.
 
 ![Komponente &quot;Entwurf und Übermittlung hinzufügen&quot;](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 ### 3. Komponente &quot;Drafts and Submissions konfigurieren&quot; {#configure-drafts-submissions-component}
 
-Die **Entwürfe und Übermittlungen** -Komponente zeigt Formulare an, die als Entwurf zum Ausfüllen späterer und gesendeter Formulare gespeichert wurden. So konfigurieren Sie **Entwürfe und Übermittlungen** führen Sie die folgenden Schritte aus:
-1. Wählen Sie die **Entwürfe und Übermittlungen** -Komponente.
-1. Klicken Sie auf ![Symbol &quot;Konfigurieren&quot;](assets/configure_icon.png) und das Dialogfeld wird angezeigt.
-1. Im **[!UICONTROL Entwürfe und Übermittlungen]** angeben, geben Sie Folgendes an:
-   * **Titel** Um eine Komponente auf einer Sites-Seite zu identifizieren, wird der Titel standardmäßig über der Komponente angezeigt.
-   * **Typ**: Zum Angeben der Formularliste als Entwurf oder als gesendete Formulare.
-   * **Layout**: Zum Anzeigen von Formularentwürfen oder gesendeten Formularen im Karten- oder Listenformat.
+Die Komponente **Entwürfe &amp; Übermittlungen** zeigt Formulare an, die als Entwurf zum Ausfüllen späterer und gesendeter Formulare gespeichert wurden. Um **Entwürfe und Übermittlungen** zu konfigurieren, führen Sie die folgenden Schritte aus:
+1. Wählen Sie die Komponente **Entwürfe &amp; Sendungen** aus.
+1. Klicken Sie auf das Symbol ![Konfigurieren](assets/configure_icon.png) und das Dialogfeld wird angezeigt.
+1. Geben Sie im Dialogfeld **[!UICONTROL Entwürfe und Übermittlungen]** Folgendes an:
+   * **Titel** Um eine Komponente auf einer Sites-Seite zu identifizieren, wird standardmäßig der Titel über der Komponente angezeigt.
+   * **Typ**: Gibt an, dass das Formular als Entwurf oder übermittelte Formulare aufgeführt wird.
+   * **Layout**: Zum Anzeigen von Listenentwurfsformularen oder gesendeten Formularen im Karten- oder Listenformat.
 
    ![Eigenschaften der Entwurfs- und Übermittlungskomponente](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 1. Klicken Sie auf **Fertig**.
 
-Wann **[!UICONTROL Typ auswählen]** ausgewählt ist als **Forms-Entwurf**, werden die als Entwürfe gespeicherten Formulare angezeigt:
+Wenn **[!UICONTROL Typ auswählen]** als **Entwurf-Forms** ausgewählt ist, werden die als Entwürfe gespeicherten Formulare angezeigt:
 ![Symbol &quot;Entwürfe&quot;](assets/drafts-component.png)
 
-Wann **[!UICONTROL Typ auswählen]** ausgewählt ist als **Gesendete Forms**, werden die gesendeten Formulare angezeigt:
+Wenn **[!UICONTROL Typ auswählen]** als **Gesendete Forms** ausgewählt ist, werden die gesendeten Formulare angezeigt:
 
 ![Symbol für Einsendungen](assets/submission-listing.png)
 

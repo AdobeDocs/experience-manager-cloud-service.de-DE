@@ -8,7 +8,7 @@ docset: aem65s
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1328'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Wenn Sie ein Formular auswählen und veröffentlichen, werden auch die zugehöri
 Ihr adaptives Formular verwendet möglicherweise einige Konfigurationen, Einstellungen und Anpassungen, die nicht automatisch veröffentlicht werden. Es wird empfohlen, dass Sie diese Ressourcen veröffentlichen oder aktivieren, bevor Sie ein adaptives Formular veröffentlichen.
 
 * Bearbeitbare adaptive Formularvorlagen
-* Cloud Service-Konfigurationen für Adobe Sign, Typekit, reCAPTCHA und Formulardatenmodell (FDM)
+* Cloud-Service-Konfigurationen für Adobe Sign, Typekit, reCAPTCHA und Formulardatenmodelle (FDM)
 * Andere Cloud-Service-Konfigurationen sind nur aktiviert, wenn der Benutzer über Administratorberechtigungen verfügt.
 * Anpassungen. Dazu gehören unter anderem:
 

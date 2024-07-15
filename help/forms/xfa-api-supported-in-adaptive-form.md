@@ -7,7 +7,7 @@ discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Adaptive Formulare bieten Unterstützung für verschiedene XFA-Ereignisse, -Eige
 
 * Ausführung von Skripten, die für Ereignisse in der XDP-Datei definiert wurden.
 * Erfassen von Standardwerten und Verhaltenseigenschaften für Felder in der XDP-Datei.
-* Ausführung von Überprüfungsskripten, die in der XDP-Datei definiert sind.
+* Ausführung von Validierungsskripten, die in der XDP-Datei definiert wurden.
 
 Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, werden die Eigenschaften, Ereignisse und Validierungen in der Benutzeroberfläche zur Erstellung adaptiver Formulare automatisch ausgefüllt. Allerdings können Formularautoren einige dieser Elemente überschreiben, um ein anderes Erlebnis bereitzustellen.
 
@@ -132,7 +132,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Dem benutzerdefinierten Barrierefreiheits-Text im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>Barrierefreiheit: toolTip </p> </td>
+   <td><p>Barrierefreiheit: QuickInfo </p> </td>
    <td><p>Der short description-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
   </tr>
   <tr>
    <td><p>click (Schaltflächen)</p> </td>
-   <td><p>Dem Klick-Ausdruck der Schaltfläche zugeordnet.</p> </td>
+   <td><p>Dem Klickereignis-Ausdruck der Schaltfläche zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>Unterstützung für Server-seitiges Skript</p> </td>

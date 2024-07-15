@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 {#release-notes}
 
-Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.1.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.1.0 von [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >

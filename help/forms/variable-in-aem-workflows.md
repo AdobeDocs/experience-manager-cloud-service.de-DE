@@ -7,7 +7,7 @@ role: Admin, User
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1930'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Erstellen einer Variablen:
 
    * Primitiver Datentyp: Geben Sie einen optionalen Standardwert für die Variable an.
    * JSON oder XML – Geben Sie einen optionalen JSON- oder XML-Schema-Pfad an. Das System überprüft den Schemapfad, während es die in diesem Schema verfügbaren Eigenschaften einer anderen Variablen zuordnet und speichert.
-   * Formulardatenmodell (FDM) - Geben Sie einen Pfad für ein Formulardatenmodell an.
+   * Formulardatenmodell (FDM) – Geben Sie einen Pfad für ein Formulardatenmodell an.
    * ArrayList – Geben Sie einen Untertyp für die Auflistung an.
 
 1. Geben Sie optional eine Beschreibung für die Variable ein und wählen Sie ![done_icon](assets/Smock_Checkmark_18_N.svg), um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.

@@ -4,8 +4,8 @@ description: Wie Sie auf  [!DNL Assets view] zugreifen können, wie Sie sich anm
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
-source-wordcount: '389'
+workflow-type: tm+mt
+source-wordcount: '375'
 ht-degree: 100%
 
 ---

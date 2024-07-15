@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
+exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
+source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 6%
 
 ---
-
 
 # Erstellen eines adaptiven Formulars (Kernkomponenten) - Tutorial
 
@@ -32,12 +32,12 @@ Am Ende des Tutorials können Sie:
 * Lokalisieren des adaptiven Formulars für verschiedene Sprachen
 * Formular konfigurieren, um strukturierte Daten zu erstellen
 * Einrichten des Formulars zum Senden von Daten an einen REST-Endpunkt
-* Veröffentlichen des adaptiven Formulars
+* Publish Ihres adaptiven Formulars
 
 
 ## Warum erstellen Sie auf Kernkomponenten basierende Formulare?
 
-AEM Forms bietet Foundation-Komponenten und Kernkomponenten zum Erstellen von Formularen. Kernkomponenten sind der moderne und empfohlene Ansatz zum Erstellen neuer Formulare. Warum Kernkomponenten verwenden? Diese Komponenten sind einfach, Open-Source-Komponenten (verfügbar auf GitHub), bieten eine hervorragende Google Lighthouse- und Web-Vitals-Bewertung, sind barrierefrei und bieten alle bekannten Funktionen von AEM Sites (wie Versionierung und Lokalisierung). Darüber hinaus sind diese Komponenten einfacher zu gestalten. Sie können ihr Erscheinungsbild einfach gemäß den Branding-Richtlinien Ihres Unternehmens anpassen. Diese weisen keine Drittanbieterabhängigkeiten auf. Jeder Entwickler mit Kenntnissen in JavaScript und CSS kann diese Komponenten einfach anpassen.
+AEM Forms bietet Foundation-Komponenten und Kernkomponenten zum Erstellen von Formularen. Kernkomponenten sind der moderne und empfohlene Ansatz zum Erstellen neuer Formulare. Warum Kernkomponenten verwenden? Diese Komponenten sind einfach, Open-Source-Komponenten (verfügbar auf GitHub), bieten eine hervorragende Google Lighthouse- und Web-Vitals-Bewertung, sind barrierefrei und bieten alle bekannten Funktionen von AEM Sites (wie Versionierung und Lokalisierung). Darüber hinaus sind diese Komponenten einfacher zu gestalten. Sie können ihr Erscheinungsbild einfach gemäß den Branding-Richtlinien Ihres Unternehmens anpassen. Diese weisen keine Drittanbieterabhängigkeiten auf. Jeder Entwickler mit Kenntnissen von JavaScript und CSS kann diese Komponenten einfach anpassen.
 
 ![Warum erstellen Sie Kernkomponenten-basierte adaptive Forms? Diese Komponenten sind einfach, einfacher zu gestalten, bieten hohe Lightthouse-Punktzahl, unterstützen Barrierefreiheitsstandards, leicht anpassbare Open-Source-Elemente, auf GitHub verfügbar, keine Abhängigkeit von Drittanbieter-Bibliotheken und verfügen über fast keine Lernkurve für AEM Entwickler und AEM Autoren. Darüber hinaus verfügen die AEM Forms-Kernkomponenten über alle Funktionen AEM WCM-Kernkomponenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
@@ -53,7 +53,7 @@ Das Formular würde mit adaptiven Formularen erstellt. Dies ermöglicht ein pers
 
 Nach Abschluss des Tutorials würde Ihr Formular wie folgt aussehen und funktionieren:
 
-![Arbeitsformular hier hinzufügen](/help/forms/assets/cc-tutorial-final-form.png)
+![Fügen Sie hier ein Arbeitsformular hinzu](/help/forms/assets/cc-tutorial-final-form.png)
 
 ## Einrichten einer Entwicklungsumgebung
 
@@ -66,17 +66,17 @@ Sie können das adaptive Formular direkt auf Ihrem lokalen Computer erstellen un
 Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwicklungsprozess
 
 
-**Bereit zum Beginnen?**
+**Beginnbereit?**
 
-1. [Einrichten von Entwicklungstools für AEM Projekte](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): Laden Sie die neueste Version von herunter und installieren Sie sie. [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#node-js), und [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-maven). Installieren Sie außerdem einen Nur-Text-Editor. Die Beispiele in diesem Tutorial basieren auf Visual Studio Code.
+1. [Einrichten von Entwicklungstools für AEM Projekte](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): Laden Sie die neueste Version von [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#node-js) und [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-maven) herunter und installieren Sie sie. Installieren Sie außerdem einen Nur-Text-Editor. Die Beispiele in diesem Tutorial basieren auf Visual Studio Code.
 
-1. [Installieren des AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Laden Sie die neueste Version des AEM SDK herunter und installieren Sie sie. Dies stellt die wichtigsten Instrumente für AEM Entwicklung dar. Beachten Sie die Version des AEM SDK.
+1. [Installieren Sie das AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Laden Sie die neueste Version des AEM SDK herunter und installieren Sie sie. Dies stellt die wichtigsten Instrumente für AEM Entwicklung dar. Beachten Sie die Version des AEM SDK.
 
    ![Softwareverteilung](/help/forms/assets/software-distribution.png)
 
-   ![AEM SDK installieren](/help/forms/assets/start-aem-sdk.png)
+   ![Installieren AEM SDK](/help/forms/assets/start-aem-sdk.png)
 
-1. [Hinzufügen des AEM Forms-Add-ons](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Laden Sie das AEM Forms-Add-on herunter und installieren Sie es, das mit der Version Ihres AEM SDK übereinstimmt, aus dem [Softwareverteilung](https://experience.adobe.com/#/downloads) Portal.
+1. [Hinzufügen des AEM Forms-Add-ons](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Laden Sie das AEM Forms-Add-on herunter und installieren Sie es, das mit der Version Ihres AEM SDK übereinstimmt, über das Portal für Softwareverteilung](https://experience.adobe.com/#/downloads) .[
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
    +++AEM Forms-Add-on installieren:
@@ -84,12 +84,12 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
    So installieren Sie das AEM Forms Add-on:
 
    1. Beenden Sie AEM SDK.
-   1. Fügen Sie die AEM Forms-Add-on-Datei (.far) zur `AEM SDK/crx-quickstart/install` Ordner,
+   1. Fügen Sie die AEM Forms-Add-on-Datei (.far) zum Ordner &quot;`AEM SDK/crx-quickstart/install`&quot;hinzu,
    1. Starten Sie AEM SDK neu.
 
 +++
 
-1. [Benutzerberechtigungen konfigurieren](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Erstellen Sie Benutzer mit Entwicklungs-, Authoring- und anderen Berechtigungen und fügen Sie diese Benutzer zu vordefinierten Formulargruppen hinzu.
+1. [Konfigurieren von Benutzerberechtigungen](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Erstellen Sie Benutzer mit Entwicklungs-, Authoring- und anderen Berechtigungen und fügen Sie diese Benutzer vordefinierten Formulargruppen hinzu.
 
 
 1. [Adaptive Forms-Vorlagen hinzufügen](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Verwenden Sie AEM Archetypen 48 oder höher, um ein neues AEM-Projekt zu erstellen und es in Ihrem AEM SDK bereitzustellen. Das Projekt fügt Ihrem AEM SDK adaptive Forms-Vorlagen hinzu.
@@ -104,7 +104,7 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
       mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="48" -D appTitle=securbank -D appId=securbank -D groupId=com.securbank -D includeFormsenrollment="y" -D aemVersion="cloud"
       ```
 
-      ![AEM-archetyoe-project](/help/forms/assets/aem-archetype-project.png)
+      ![AEM-Archetyoe-Project](/help/forms/assets/aem-archetype-project.png)
 
    1. Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit. Sie können folgenden Befehl verwenden, um die Bereitstellung für Ihre lokale Entwicklungsumgebung durchzuführen.
 
@@ -119,7 +119,7 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
 +++
 
 
-Detaillierte Anweisungen und eine schrittweise Anleitung zum Einrichten Ihrer lokalen AEM Forms-Entwicklungsumgebung finden Sie im Abschnitt [Einrichten einer lokalen Entwicklungsumgebung für AEM Forms](/help/forms/setup-local-development-environment.md) Artikel.
+Detaillierte Anweisungen und eine schrittweise Anleitung zum Einrichten Ihrer lokalen AEM Forms-Entwicklungsumgebung finden Sie im Artikel [Einrichten einer lokalen Entwicklungsumgebung für AEM Forms](/help/forms/setup-local-development-environment.md) .
 
 
 

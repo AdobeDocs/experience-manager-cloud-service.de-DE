@@ -2,7 +2,7 @@
 title: 'Optimale Verfahren und wichtige Hinweise zum Arbeiten adaptiven AEM-Formularen:'
 description: Einige optimale Verfahren und wichtige Hinweise zum Arbeiten mit Komponenten adaptiver Formulare.
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 100%
 
