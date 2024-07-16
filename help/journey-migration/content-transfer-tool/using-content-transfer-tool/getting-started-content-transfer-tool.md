@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfe
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 100%
@@ -88,7 +88,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager können pro Projekt maximal 20 Migrationssätze, einschließlich abgelaufener Sätze, erstellt werden.
+   >In Cloud Acceleration Manager können pro Projekt maximal 10 Migrationssätze, einschließlich abgelaufener Sätze, erstellt werden.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 

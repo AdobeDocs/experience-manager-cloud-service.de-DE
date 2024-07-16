@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte von ein
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 100%
@@ -68,7 +68,7 @@ In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta
 >title="Ende der Gültigkeit eines Migrationssatzes"
 >abstract="Erfahren Sie mehr über das Ende der Gültigkeit eines Migrationssatzes."
 
-Alle Migrationssätze laufen nach einer längeren Inaktivität von etwa 90 Tagen letztendlich ab. Nachdem entsprechende Hinweise auf der Projektkarte und in den Tabellenzeilen für den Migrationsvorgang über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Die Ablaufzeit kann einfach verlängert werden, indem mit dem Migrationssatz wie folgt verfahren wird:
+Alle Migrationssätze laufen nach einer längeren Inaktivität von etwa 45 Tagen letztendlich ab. Nachdem entsprechende Hinweise auf der Projektkarte und in den Tabellenzeilen für den Migrationsvorgang über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Die Ablaufzeit kann einfach verlängert werden, indem mit dem Migrationssatz wie folgt verfahren wird:
 
 * Die Beschreibung wird bearbeitet.
 * Der Extraktionsschlüssel wird abgerufen.
