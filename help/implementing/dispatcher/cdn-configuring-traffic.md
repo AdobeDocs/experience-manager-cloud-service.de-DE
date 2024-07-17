@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -292,7 +292,7 @@ In der folgenden Tabelle wird die verfügbare Aktion erläutert.
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Name eines der definierten Ursprünge. |
-|     | skipCache (optional, Standardeinstellung ist false) | Flag, ob für Anforderungen, die dieser Regel entsprechen, Zwischenspeicherung verwendet werden soll. Standardmäßig werden Antworten gemäß dem Antwort-Caching-Header zwischengespeichert (z. B. Cache-Control oder Expires). |
+|     | skipCache (optional, Standardeinstellung ist „falsch“) | Markierung, ob Caching für Anfragen verwendet werden soll, die dieser Regel entsprechen. Standardmäßig werden Antworten gemäß dem Antwort-Caching-Header zwischengespeichert (z. B. Cache-Steuerung oder Ablaufdatum). |
 
 **Ursprünge**
 

@@ -5,9 +5,9 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 8d14936ad21dc5879c72383defc3db22ce9a24ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '867'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ Es gibt Voraussetzungen für diese Aufgabe:
    | | Name | Wert | Standardwert | Service | Applied | Typ | Anmerkungen |
    |---|---|---|---|---|---|---|---|
    | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | Alle | | Variable | Aktiviert(!=0) oder deaktiviert (0) das Auslösen des Inhaltsfragment-Migrationsauftrags. |
-   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | Alle | | Variable | Setzt die (!=0) Neumigration von Inhaltsfragmenten. Wenn Sie dieses Flag auf 0 setzen, wird eine inkrementelle Migration von CFs durchgeführt. Das heißt, wenn der Auftrag aus irgendeinem Grund abgebrochen wird, beginnt die nächste Ausführung des Auftrags mit der Migration an der Stelle, an der er abgebrochen wurde. Die erste Migration sollte durchgesetzt werden (Wert = 1). |
-   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | Alle | | Variable | Größe des Batches zum Speichern der Anzahl der Inhaltsfragmente nach der Migration. Dies ist relevant für die Anzahl der CFs, die in einem Batch im Repository gespeichert werden, und kann zur Optimierung der Anzahl der Schreibvorgänge in das Repository verwendet werden. |
-   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | Alle | | Variable | Maximale Anzahl an Inhaltsfragmenten, die gleichzeitig verarbeitet werden. Siehe auch Hinweise für `CF_MIGRATION_INTERVAL`. |
-   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | Alle | | Variable | Intervall (Sekunden) zur Verarbeitung der verbleibenden Inhaltsfragmente bis zum nächsten Limit. Dieses Intervall gilt auch als Wartezeit vor dem Start des Auftrags und als Verzögerung zwischen der Verarbeitung jeder nachfolgenden CF_MIGRATION_LIMIT-Anzahl von CFs. (*) |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | Alle | | Variable | Setzt die (!=0)-Neumigration von Inhaltsfragmenten durch. Wenn Sie diese Markierung auf 0 setzen, wird eine inkrementelle Migration von Inhaltsfragmenten durchgeführt. Das heißt, wenn der Auftrag aus irgendeinem Grund abgebrochen wird, beginnt die nächste Ausführung des Auftrags mit der Migration an der Stelle, an der er abgebrochen wurde. Die erste Migration sollte durchgesetzt werden (Wert = 1). |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | Alle | | Variable | Größe des Batches zum Speichern der Anzahl von Inhaltsfragmenten nach der Migration. Dies ist für die Anzahl der Inhaltsfragmente relevant, die in einem Batch im Repository gespeichert werden, und kann zur Optimierung der Anzahl der Schreibvorgänge in das Repository verwendet werden. |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | Alle | | Variable | Maximale Anzahl an Inhaltsfragmenten, die gleichzeitig verarbeitet werden sollen. Siehe auch Anmerkungen zu `CF_MIGRATION_INTERVAL`. |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | Alle | | Variable | Intervall (Sekunden) zur Verarbeitung der verbleibenden Inhaltsfragmente bis zum nächsten Limit. Dieses Intervall wird sowohl als Wartezeit vor dem Start des Auftrags als auch als Verzögerung zwischen der Verarbeitung jeder nachfolgenden CF_MIGRATION_LIMIT-Anzahl von Inhaltsfragmenten betrachtet. (*) |
 
    >[!NOTE]
    >
