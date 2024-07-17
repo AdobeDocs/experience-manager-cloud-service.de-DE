@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5627'
-ht-degree: 87%
+source-wordcount: '5735'
+ht-degree: 85%
 
 ---
 
@@ -900,6 +900,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## Beispielregeln {#example}
+
+### Optimieren komplexer Berechnungen in wiederholbaren Bereichen mit integrierten Funktionen
+
+Mit dem Regeleditor können Sie native Funktionen wie Summe, Minimum, Maximum und Verbinden direkt für Felder in wiederholbaren Bereichen verwenden. Dadurch wird eine leistungsstarke Automatisierung freigesetzt, sodass Sie komplexe Geschäftslogik ohne benutzerdefinierten Code implementieren können.
+Stellen Sie sich ein Formular mit einem wiederholbaren Bedienfeld vor. Jede Panelinstanz kann Daten wie Produktmengen erfassen. Mit der Summenfunktion können Sie die Gesamtmenge in allen Bereichen automatisch berechnen, sodass manuelle Berechnungen und mögliche Fehler vermieden werden.
+
+![Unterstützung wiederholbarer Bereichsfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Das ist nur ein Beispiel! Erkunden Sie die verfügbaren [Funktionen](#b-form-objects-and-functions-br), um Workflows zu vereinfachen und die Datengenauigkeit in Ihren Formularen zu verbessern.
 
 ### Aufrufen des Formulardatenmodell-Service {#invoke}
 
