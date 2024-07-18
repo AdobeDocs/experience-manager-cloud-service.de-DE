@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5735'
-ht-degree: 85%
+source-wordcount: '5787'
+ht-degree: 84%
 
 ---
 
@@ -904,9 +904,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### Optimieren komplexer Berechnungen in wiederholbaren Bereichen mit integrierten Funktionen
 
 Mit dem Regeleditor können Sie native Funktionen wie Summe, Minimum, Maximum und Verbinden direkt für Felder in wiederholbaren Bereichen verwenden. Dadurch wird eine leistungsstarke Automatisierung freigesetzt, sodass Sie komplexe Geschäftslogik ohne benutzerdefinierten Code implementieren können.
-Stellen Sie sich ein Formular mit einem wiederholbaren Bedienfeld vor. Jede Panelinstanz kann Daten wie Produktmengen erfassen. Mit der Summenfunktion können Sie die Gesamtmenge in allen Bereichen automatisch berechnen, sodass manuelle Berechnungen und mögliche Fehler vermieden werden.
+Stellen Sie sich ein Formular mit einem wiederholbaren Bedienfeld vor, in dem jede Bedienfeldinstanz Informationen über den deklarierten Wert von Assets erfasst.
+
+![Wiederholbares Formular](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+Mit der Funktion &quot;`Sum`&quot;können Sie den Gesamtwert der Assets in allen Bedienfeldern automatisch berechnen, sodass keine manuellen Berechnungen mehr erforderlich sind und das Fehlerpotenzial verringert wird.
 
 ![Unterstützung wiederholbarer Bereichsfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Wenn Sie ein Formular ausfüllen und Instanzen zum Deklarieren der Asset-Werte hinzufügen, berechnet die Schaltfläche `Calculate Asset Value` die Gesamtsumme aller deklarierten Asset-Werte und zeigt das Ergebnis im Textfeld `assetvalue` insgesamt an.
+
+![Unterstützung wiederholbarer Bereichsfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 Das ist nur ein Beispiel! Erkunden Sie die verfügbaren [Funktionen](#b-form-objects-and-functions-br), um Workflows zu vereinfachen und die Datengenauigkeit in Ihren Formularen zu verbessern.
 
