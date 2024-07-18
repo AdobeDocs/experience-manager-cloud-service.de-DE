@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
+source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
 workflow-type: tm+mt
 source-wordcount: '5735'
 ht-degree: 85%
@@ -13,13 +13,13 @@ ht-degree: 85%
 ---
 
 
+# Hinzufügen von Regeln zu einem adaptiven Formular (Kernkomponenten) {#adaptive-forms-rule-editor}
+
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Kernkomponenten) | Dieser Artikel |
 | AEM as a Cloud Service (Foundation-Komponenten) | [Hier klicken](/help/forms/rule-editor.md) |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de) |
-
-# Hinzufügen von Regeln zu einem adaptiven Formular (Kernkomponenten) {#adaptive-forms-rule-editor}
 
 Der Regeleditor ermöglicht es Geschäftsbenutzern und Entwicklern, Regeln für adaptive Formularobjekte zu erstellen. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies ermöglicht noch größere Effizienz für ein schnelles und korrektes Ausfüllen der Formulare.
 
