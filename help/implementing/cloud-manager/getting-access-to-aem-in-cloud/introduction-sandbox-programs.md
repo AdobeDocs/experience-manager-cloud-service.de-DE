@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 100%
+source-wordcount: '488'
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,15 @@ Die in einer Sandbox erstellten Umgebungen sind nicht für automatische Skalieru
 
 ### Keine benutzerdefinierten Domains oder IP-Zulassungslisten {#ip-allow}
 
-Benutzerdefinierte Domains und IP-Zulassungslisten sind in Sandbox-Programmen nicht verfügbar.
+[Benutzerdefinierte Domänen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) und [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) sind in Sandbox-Programmen nicht verfügbar.
+
+### Keine weiteren Publish-Regionen {#additional-publish-regions}
+
+[Zusätzliche Veröffentlichungsbereiche](/help/operations/additional-publish-regions.md) sind in Sandbox-Programmen nicht verfügbar.
+
+### No 99.99% SLA {#999-sla}
+
+[99,99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) gilt nicht für Sandbox-Programme.
 
 ### Keine erweiterten Netzwerkfunktionen {#advanced-networking}
 

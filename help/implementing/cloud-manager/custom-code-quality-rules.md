@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
-ht-degree: 100%
+source-wordcount: '4513'
+ht-degree: 99%
 
 ---
 
@@ -1267,3 +1267,12 @@ AEM Cloud Service verbietet die Erstellung von Tokenizern mit falschen Namen in 
 >[!WARNING]
 >
 >Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.
+
+### Die Konfiguration von Indexdefinitionen sollte keine Leerzeichen enthalten {#oakpal-indexing-definitions-spaces}
+
+* **Schlüssel**: PathSpacesCheck
+* **Typ**: Verbesserung
+* **Schweregrad**: Gering
+* **Seit**: Version 2024.7.0
+
+AEM Cloud Service verbietet die Erstellung von Indexdefinitionen, die Eigenschaften mit Leerzeichen enthalten.

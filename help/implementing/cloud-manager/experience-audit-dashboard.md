@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
-ht-degree: 100%
+source-wordcount: '1995'
+ht-degree: 93%
 
 ---
 
@@ -112,7 +112,7 @@ Zusätzlich zu der in den Details eines Pipeline-Laufs dargestellten Zusammenfas
 
 Durch Tippen oder Klicken auf **Langsamste Seiten anzeigen** wird das Dialogfeld **Langsamste 5 Seiten** mit den fünf Seiten mit der niedrigsten Leistung geöffnet, die Sie [zur Prüfung konfiguriert haben](#configuration).
 
-![Die langsamsten fünf](assets/experience-audit-slowest-five.jpg)
+![Die langsamsten fünf](assets/experience-audit-slowest-five.png)
 
 Die Bewertungen werden nach **Leistung**, **Barrierefreiheit**, **Best Practices** und **SEO** zusammen mit der Abweichung der einzelnen Metriken von der letzten Prüfung aufgegliedert.
 
@@ -166,7 +166,7 @@ Der Abschnitt **Empfehlungen** zeigt einen aggregierten Satz von Einblicken. Sta
 
 Tippen oder klicken Sie auf den Pfeil für eine beliebige Empfehlung, um Details dazu anzuzeigen.
 
-![Empfehlungsdetails](assets/experience-audit-recommendation-details.png)
+![Empfehlungsdetails](assets/experience-audit-recommendations-details.png)
 
 Sofern verfügbar, enthalten die erweiterten Empfehlungsdetails auch den Prozentsatz der Auswirkungen der Empfehlungen, damit Sie sich auf die wirkungsvollsten Änderungen konzentrieren können.
 
@@ -184,7 +184,7 @@ Durch Tippen oder Klicken auf den Link einer bestimmten Seite wird der Filter **
 
 ![Seitenergebnisse](assets/experience-audit-page-results.png)
 
-Die Registerkarte **Rohberichte** gibt Bewertungen für jede Prüfung der Seite an. Tippen oder klicken Sie auf das Symbol **Herunterladen**, um eine JSON-Datei der Rohdaten abzurufen.
+Die Registerkarte **Rohberichte** gibt Bewertungen für jede Prüfung der Seite an. Tippen oder klicken Sie in der Spalte **Leuchtturmbericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
 
 ![Rohberichte](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Zum Ausführen eines On-Demand-Scans navigieren Sie zur Registerkarte **Berichte
 
 ![On-Demand-Scan](assets/experience-audit-on-demand.png)
 
+Die Schaltfläche **Scan ausführen** ist nicht mehr verfügbar und wird mit einem Uhrensymbol gekennzeichnet, wenn bereits eine On-Demand-Prüfung ausgeführt wird.
+
+![On-Demand-Scan wird ausgeführt](assets/experience-audit-on-demand-running.png)
+
 On-Demand-Scans lösen eine Erlebnisprüfung für die letzten 25 [konfigurierten Seiten](#configuration) aus und werden in der Regel innerhalb weniger Minuten abgeschlossen.
 
 Nach Abschluss des Vorgangs wird das Bewertungsdiagramm automatisch aktualisiert und Sie können die Ergebnisse genau wie bei einem Pipeline-Ausführungs-Scan überprüfen.
@@ -214,15 +218,15 @@ Sie können das Bewertungsdiagramm nach dem Trigger-Typ filtern, indem Sie die A
 
 ## Probleme bei der Erlebnisprüfung {#issues}
 
-Wenn [von Ihnen zur Prüfung konfigurierte Seiten](#configuration) nicht verfügbar waren, wird dies bei der Erlebnisprüfung widergespiegelt.
+Wenn [Seiten, die Sie für die Prüfung konfiguriert haben,](#configuration) nicht verfügbar waren oder bei der Prüfung andere Fehler aufgetreten sind, spiegelt Erlebnisprüfung dies wider.
 
 Die Pipeline präsentiert einen erweiterbaren Fehlerabschnitt, um die relativen URL-Pfade anzuzeigen, wenn kein Zugriff möglich war.
 
 ![Bei der Erlebnisprüfung aufgetretene Probleme](assets/experience-audit-issues.jpg)
 
-Wenn Sie sich den vollständigen Bericht ansehen, finden Sie Details dazu im Abschnitt **[Ergebnisse des Erlebnisprüfungs-Scans](#results)**.
+Beim Anzeigen des vollständigen Berichts werden Details im Abschnitt **[Ergebnisse der Erlebnisprüfung](#results)** angezeigt, der ebenfalls erweiterbar ist.
 
-![Vollständiger Bericht – Probleme](assets/experience-audit-issues-reports.jpeg)
+![Vollständiger Bericht – Probleme](assets/experience-audit-issues-report.png)
 
 Die Seiten können beispielsweise aus folgenden Gründen nicht verfügbar sein:
 
@@ -253,8 +257,7 @@ Diese können durch folgende Maßnahmen verbessert werden:
 
 Die folgenden Details liefern zusätzliche Informationen darüber, wie Ihre Site von der Erlebnisprüfung ausgewertet wird. Sie sind für die allgemeine Nutzung der Funktion nicht erforderlich und werden hier der Vollständigkeit halber bereitgestellt.
 
-* Obwohl die [konfigurierten Seitenpfade für die Erlebnisprüfung](#configuration) die Publisher-seitige `.com`-Domain anzeigt, scannt die Prüfung die ursprüngliche Domain (`.net`), um sicherzustellen, dass Probleme, die während der Entwicklung aufgetreten sind, erkannt werden.
-   * Die `.com`-Domain verwendet ein CDN und könnte bessere Bewertungen erreichen oder zwischengespeicherte Ergebnisse enthalten.
+* Die Prüfung scannt die Ursprungsdomäne (`.com`), wie sie in den [konfigurierten Pfaden der Experience Audit-Seite](#configuration) des Herausgebers definiert ist, um reale Benutzererlebnisse genauer zu simulieren, und hilft Ihnen dabei, fundiertere Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
 * In Produktions-Full-Stack-Pipelines wird die Staging-Umgebung gescannt.
    * Um sicherzustellen, dass die Prüfung während des Auditings relevante Details liefert, sollte der Inhalt der Staging-Umgebung dem der Produktionsumgebung so weit wie möglich entsprechen.
 * Die Seiten, die im Abschnitt](#trend) [**Seitenbewertungen – Trend** in der Dropdown-Liste **Auswählen** angezeigt werden, sind alle bekannten Seiten, die in der Vergangenheit von der Erlebnisprüfung gescannt wurden.

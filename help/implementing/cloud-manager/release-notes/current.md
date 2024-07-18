@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise für Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2024.6.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2024.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
+source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 58%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.6.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.7.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,19 +22,23 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.6.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2024.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Juni 2024 veröffentlicht. Die nächste Version ist für den 18. Juli 2024 geplant.
+Die Cloud Manager-Version 2024.7.0 in AEM as a Cloud Service wurde am 18. Juli 2024 veröffentlicht. Die nächste Version ist für den 8. August 2024 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Nun ist die [Verwendung Ihrer eigenen GitHub-Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md) als Quellen für sowohl Full-Stack- als auch Frontend-Pipelines möglich.
-   * Darüber hinaus können Sie GitHub-Repositorys mit [Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md) nutzen. So haben Sie mehr Kontrolle über die automatisch generierten Pipelines, die zur Prüfung von Pull-Anfragen verwendet werden, und können das Verhalten für wichtige Metriken während der Code-Scan-Phase definieren.
-   * [Sie haben auch die Möglichkeit](/help/implementing/cloud-manager/managing-code/github-check-config.md), den Berichtsverlauf auf GitHub beizubehalten, die Pipeline zu benennen und Pipeline-Variablen entsprechend Ihren Anforderungen festzulegen.
-* Die [Wiederherstellung von Self-Service-Inhalten](/help/operations/restore.md) bietet eine Backup-Wiederherstellung für bis zu sieben Tage und außerdem:
-   * Zeitpunktgenaue Backup-Wiederherstellung für die letzten 24 Stunden
-   * Wiederherstellung zu einem festen Zeitpunkt für bis zu sieben Tage
-* Es wurden [neue OakPal-Regeln](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) zur Code-Qualitätsprüfung von Cloud Manager hinzugefügt.
-   * Jede neue Regel, die ab Juni 2024 hinzugefügt wurde, ist eine unterbrechungsfreie Änderung.
-   * Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da diese neuen Regeln dazu führen, dass Pipelines ab der Cloud Manager-Version August 2024 fehlschlagen.
+* Die [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) und der Trigger **On Git Changes** (Nicht-Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)), um die Pipeline bei einem Commit zu starten, sind jetzt für [private Repositorys verfügbar.](/help/implementing/cloud-manager/managing-code/private-repositories.md)[
+   * Diese wird schrittweise eingeführt und bis Mitte August abgeschlossen sein.
+* Beim Hinzufügen eines [Adobe-verwalteten DV-Zertifikats, ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) können Sie jetzt ein einzelnes Zertifikat hinzufügen, das mehrere Domänen abdeckt, anstatt für jede Domäne ein Zertifikat zu erstellen.
+* Lösungen ohne [zusätzliche Veröffentlichungsbereiche](/help/operations/additional-publish-regions.md) können jetzt einem Programm hinzugefügt werden, sofern das Programm mindestens über eine Sites- oder Forms-Lösung verfügt.
+* Lösungen ohne SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) von [99,99 % können jetzt einem Programm hinzugefügt werden, solange das Programm mindestens über eine Sites- oder Forms-Lösung verfügt.
+* Das Dashboard [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-dashboard.md) wurde auf verschiedene Weise verbessert.
+   * Prüfungen werden jetzt mit `.com` -Endpunkten über CDN ausgeführt, wobei der vorherige `.net` -Ansatz ersetzt wird.
+      * Diese Änderung simuliert reale Benutzererlebnisse genauer und hilft Ihnen, fundiertere Entscheidungen über die Verwaltung und Optimierung Ihrer Website zu treffen.
+   * An der Benutzeroberfläche von Experience Audit wurden mehrere Verbesserungen vorgenommen, darunter:
+      * Eine Trendansicht von Leistung, Best Practices, SEO und Barrierefreiheit wurde hinzugefügt.
+      * Der Rohbericht-Link &quot;Lighthouse&quot;ist jetzt intuitiver sichtbar, direkt im Bereich mit den Scan-Momentaufnahmen-Details.
+      * Der Abschnitt mit Empfehlungen für Lighthouse wurde verbessert.
+   * Die PWA-Metrik wurde in Übereinstimmung mit der Lighthouse-Version 12.0.0 entfernt, die diese Metrik eliminierte.
 
 ## Early-Adopter-Programm {#early-adoption}
 
@@ -53,14 +57,6 @@ Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie
 Mit Cloud Manager können Sie jetzt [Self-Service-SSL-Zertifikate mit Domain-Validierung (DV) erstellen und verwalten.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Dadurch erhalten Sie die schnellste, einfachste und kostengünstigste Lösung, um eine sichere Website für Ihr Online-Business zu erstellen.
 
 Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `Grp-aemcs-dv-dert-adopter@adobe.com`.
-
-<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
-
-You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
-
-Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
-
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.-->
 
 ### Experience Audit-Dashboard {#experience-audit-dashboard}
 
