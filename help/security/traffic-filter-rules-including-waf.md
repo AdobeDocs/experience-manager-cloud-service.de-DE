@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
-workflow-type: ht
+source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
+workflow-type: tm+mt
 source-wordcount: '3938'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -531,7 +531,7 @@ Eine E-Mail-Benachrichtigung des [Aktionszentrums](/help/operations/actions-cent
 
 Wenn dieser Schwellenwert erreicht wird, blockiert Adobe den Traffic von dieser IP-Adresse. Es wird jedoch empfohlen, zusätzliche Maßnahmen zu ergreifen, um Ihren Ursprung zu schützen, einschließlich der Konfiguration von Traffic-Filterregeln zur Ratenbegrenzung, um Traffic-Spitzen bei niedrigeren Schwellenwerten zu blockieren. Weitere Informationen finden Sie im [Tutorial zum Blockieren von DoS- und DDoS-Angriffen mithilfe von Traffic-Regeln](#tutorial-blocking-DDoS-with-rules), das Sie durch die einzelnen Schritte führt.
 
-Dieser Warnhinweis ist standardmäßig aktiviert, kann aber durch Festlegen der Eigenschaft *enable_ddos_alerts* auf „falsch“ deaktiviert werden. Sobald der Warnhinweis ausgelöst wurde, wird er erst wieder am nächsten Tag (UTC) ausgelöst.
+Dieser Warnhinweis ist standardmäßig aktiviert, kann jedoch mithilfe der Eigenschaft *defaultTrafficAlerts* deaktiviert werden, die auf &quot;false&quot;gesetzt ist. Sobald der Warnhinweis ausgelöst wurde, wird er erst wieder am nächsten Tag (UTC) ausgelöst.
 
 ```
 kind: "CDN"
@@ -540,7 +540,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    enable_ddos_alerts: false
+   defaultTrafficAlerts: false
 ```
 
 ## CDN-Protokolle {#cdn-logs}
