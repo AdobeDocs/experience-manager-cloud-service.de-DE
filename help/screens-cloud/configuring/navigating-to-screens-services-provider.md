@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie zu Screens Services Prov
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 100%
+source-wordcount: '430'
+ht-degree: 63%
 
 ---
 
@@ -33,11 +33,11 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
    >[!CAUTION]
    >Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts im Bildschirm auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff benötigen.
 
-2. Klicken Sie auf das Zahnradsymbol rechts neben „Projekt“ (obere linke Ecke).
+1. Klicken Sie auf das Zahnradsymbol rechts neben „Projekt“ (obere linke Ecke).
 
    ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. Geben Sie die folgenden Details im Dialogfeld „Einstellungen bearbeiten“ ein.
+1. Geben Sie die folgenden Details im Dialogfeld „Einstellungen bearbeiten“ ein.
    * **Veröffentlichungs-URL**: AEM-Veröffentlichungs-URL (z. B. `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **Autoren-URL**: AEM-Autoren-URL (z. B. `https://author-p12345-e12345.adobeaemcloud.com`)
 
@@ -46,13 +46,49 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
    ![Bild](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Klicken Sie auf **Speichern**, um die Verbindung zum Screens Content Provider herzustellen
+1. Klicken Sie auf **Speichern** , um eine Verbindung zum Screens Content Provider herzustellen.
 
-5. Wählen Sie in der linken Navigationsleiste **Kanäle** aus und klicken Sie auf **In Content Provider öffnen**.
+1. Wenn Sie die AEM Veröffentlichungsinstanz so konfiguriert haben, dass nur der Zugriff auf vertrauenswürdige IP-Adressen durch die IP--Funktion von Cloud Manager zugelassen wird, müssen Sie eine Kopfzeile mit einem Schlüsselwert im Einstellungsdialogfeld konfigurieren, wie unten dargestellt.
+Die IP-Adressen, die auf die Whitelist gesetzt werden müssen, müssen ebenfalls in die Konfigurationsdatei verschoben werden und aus den Cloud Manager-Einstellungen [nicht angewendet](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) werden.
+
+   ![Bild](/help/screens-cloud/assets/configure/configure-screens20.png)
+
+Derselbe Schlüssel muss in AEM CDN-Konfiguration konfiguriert werden.  Es wird empfohlen, den Kopfzeilenwert nicht direkt in GITHub zu platzieren und einen [geheimen Verweis](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) zu verwenden.
+Nachfolgend finden Sie ein Beispiel für [CDN config](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf):
+
+    kind: &quot;CDN&quot;
+    version: &quot;1&quot;
+    metadata:
+    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
+    data:
+    trafficFilters:
+    rules:
+    - name: &quot;block-request-from-not-allowed-ips&quot;
+    when:
+    allOf:
+     reqProperty: clientIp
+    notIn: [&quot;101.41.112.0/24&quot;]
+    - reqProperty: tier
+    equals: publish
+    action: block
+    - name: &quot;allow-requests-with-header&quot;
+    when:
+    allOf:
+    - req Eigenschaft: Tier
+    equals: publish
+    - reqProperty: path
+    equals: /screens/channels.json
+    - reqHeader: x-screens-Zulassungsliste-key
+    equals: ${
+    {CDN_HEADER_KEY}
+    action:
+    type: allow
+
+1. Wählen Sie in der linken Navigationsleiste **Kanäle** aus und klicken Sie auf **In Content Provider öffnen**.
 
    ![Bild](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Screens Content Provider wird in einer anderen Registerkarte geöffnet, auf der Sie Inhalte erstellen können.
+1. Screens Content Provider wird in einer anderen Registerkarte geöffnet, auf der Sie Inhalte erstellen können.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 
