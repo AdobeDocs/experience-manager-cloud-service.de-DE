@@ -1,8 +1,8 @@
 ---
 source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '564'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -87,8 +87,8 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
      </tr>
    <tr>
     <td>Mathematische Vorgänge für das wiederholbare Bedienfeldfeld ausführen </td>
-    <td>OOTB-Math-Funktionen können auf wiederholbare Bereichsfelder angewendet werden, um Funktionen wie Summe, Durchschnitt mithilfe des Regeleditors auszuführen. Es müssen zwei Argumente angegeben werden: Das erste gibt den wiederholbaren Bereich an, der das Feld enthält, das zweite gibt das Feld im entsprechenden wiederholbaren Bereich an. </td>
-    <td>Mathematische Operationen für das wiederholbare Bedienfeldfeld können mit den benutzerdefinierten Funktionen durchgeführt werden. Mithilfe des Regeleditors können Sie die mathematischen Funktionen auch direkt auf die Felder des wiederholbaren Bereichs anwenden.
+    <td>Vorkonfigurierte mathematische Funktionen können auf wiederholbare Panels angewendet werden, um Funktionen wie Summe und Durchschnitt mit dem Regel-Editor auszuführen. Es müssen zwei Argumente angegeben werden: Das erste gibt das wiederholbare Panel an, das das Feld enthält, während das zweite das Feld innerhalb des entsprechenden wiederholbaren Panels angibt. </td>
+    <td>Mathematische Vorgänge für das wiederholbare Panel können mit den benutzerdefinierten Funktionen ausgeführt werden. Mithilfe des Regel-Editors können Sie die mathematischen Funktionen auch direkt auf die Felder des wiederholbaren Panels anwenden.
    </td>
    </tr>
       <tr>
