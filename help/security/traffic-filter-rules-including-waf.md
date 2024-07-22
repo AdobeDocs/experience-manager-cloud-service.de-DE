@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -531,7 +531,7 @@ Eine E-Mail-Benachrichtigung des [Aktionszentrums](/help/operations/actions-cent
 
 Wenn dieser Schwellenwert erreicht wird, blockiert Adobe den Traffic von dieser IP-Adresse. Es wird jedoch empfohlen, zusätzliche Maßnahmen zu ergreifen, um Ihren Ursprung zu schützen, einschließlich der Konfiguration von Traffic-Filterregeln zur Ratenbegrenzung, um Traffic-Spitzen bei niedrigeren Schwellenwerten zu blockieren. Weitere Informationen finden Sie im [Tutorial zum Blockieren von DoS- und DDoS-Angriffen mithilfe von Traffic-Regeln](#tutorial-blocking-DDoS-with-rules), das Sie durch die einzelnen Schritte führt.
 
-Dieser Warnhinweis ist standardmäßig aktiviert, kann jedoch mithilfe der Eigenschaft *defaultTrafficAlerts* deaktiviert werden, die auf &quot;false&quot;gesetzt ist. Sobald der Warnhinweis ausgelöst wurde, wird er erst wieder am nächsten Tag (UTC) ausgelöst.
+Dieser Warnhinweis ist standardmäßig aktiviert, kann aber durch Festlegen der Eigenschaft *defaultTrafficAlerts* auf „falsch“ deaktiviert werden. Sobald der Warnhinweis ausgelöst wurde, wird er erst wieder am nächsten Tag (UTC) ausgelöst.
 
 ```
 kind: "CDN"
