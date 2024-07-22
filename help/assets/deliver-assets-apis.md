@@ -2,7 +2,7 @@
 title: Bereitstellungs-APIs
 description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
-source-git-commit: 6fdc44b93e11a20b6859419813fd7eadbefd95c1
+source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 
 | Bereitstellungs-API | Beschreibung |
 |---|---|
-| [Weboptimierte binäre Darstellung des Assets im angeforderten Ausgabeformat](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Gibt die weboptimierte binäre Darstellung des Assets im angeforderten Ausgabeformat basierend auf der in der Anfrage gesendeten Asset-ID zurück. Darüber hinaus können Sie verschiedene Bildmodifikatoren definieren, z. B. Breite, Höhe, Rotation, Spiegeln, Qualität, Zuschneiden, Format und [smartes Zuschneiden](/help/assets/dynamic-media/image-profiles.md). Informationen zu unterstützten Formaten und Bild-Modifikatoren finden Sie unter [API-Details](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) .<br>Adobe empfiehlt die Verwendung dieser API für alle Bildformat-Typen. |
+| [Weboptimierte binäre Darstellung des Assets im angeforderten Ausgabeformat](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Gibt die weboptimierte binäre Darstellung des Assets im angeforderten Ausgabeformat basierend auf der in der Anfrage gesendeten Asset-ID zurück. Darüber hinaus können Sie verschiedene Bildmodifikatoren definieren, z. B. Breite, Höhe, Rotation, Spiegeln, Qualität, Zuschneiden, Format und [smartes Zuschneiden](/help/assets/dynamic-media/image-profiles.md). Informationen zu unterstützten Formaten und Bild-Modifikatoren finden Sie unter [API-Details](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) .<br>Adobe empfiehlt die Verwendung dieser API für alle Bildformat-Typen. |
 | [Weboptimierte binäre Darstellung des Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | Die bequeme API, die die Standardeinstellungen anwendet, verwendet eine weboptimierte binäre Darstellung des in der Antwort zurückgegebenen Assets. Die Standardeinstellungen umfassen ein standardmäßiges JPEG/WEBP-Format, Qualität => 65 und Breite => 1024. |
 | [Ursprünglich hochgeladene Binärdatei des Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Gibt die ursprünglich hochgeladenen Binärdateien für das Asset zurück. Adobe empfiehlt die Verwendung dieser API für Dokumentformat-Typen und SVG-Bilder. |
 | [Vorgenerierte Ausgabe des Assets, das in der AEM Assets-Authoring-Umgebung verfügbar ist](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Gibt den in der AEM Assets-Authoring-Umgebung verfügbaren Bitstream der Asset-Ausgabedarstellung basierend auf der Asset-ID und dem in der Anfrage gesendeten Ausgabedarstellungsnamen zurück. |
