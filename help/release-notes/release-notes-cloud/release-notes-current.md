@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -252,4 +252,4 @@ Eine vollständige Liste der Versionen für das Generieren von Varianten finden 
 
 ## Versionshinweise zu Experience Cloud {#experience-cloud}
 
-Informationen zu Versionen anderer Experience Cloud-Anwendungen finden Sie hier [1}.](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current)
+Informationen zu Versionen anderer Experience Cloud-Anwendungen finden Sie [hier](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current).
