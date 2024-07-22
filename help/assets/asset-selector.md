@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 100%
+source-wordcount: '4871'
+ht-degree: 97%
 
 ---
 
@@ -812,6 +812,60 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | Number (Zahl) | Die Höhe der Ausgabedarstellung. |
 
 Eine vollständige Liste der Eigenschaften und ein ausführliches Beispiel finden Sie unter [Asset-Wähler-Code-Beispiel](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+### Kontextaufruffilter{#contextual-invocation-filter}
+
+Mit der Asset-Auswahl können Sie einen Tag-Auswahl-Filter hinzufügen. Es unterstützt eine Tag-Gruppe, die alle relevanten Tags mit einer bestimmten Tagging-Gruppe kombiniert. Darüber hinaus können Sie zusätzliche Tags auswählen, die dem gesuchten Asset entsprechen. Darüber hinaus können Sie die standardmäßigen Tag-Gruppen auch unter dem kontextbezogenen Aufruf-Filter festlegen, der hauptsächlich von Ihnen verwendet wird, damit Sie von unterwegs darauf zugreifen können.
+
+> 
+>
+> * Sie müssen ein Codefragment für kontextbezogene Aufrufe hinzufügen, um den Tagging-Filter bei der Suche zu aktivieren.
+> * Es ist erforderlich, die name -Eigenschaft zu verwenden, die dem Tag-Gruppentyp `(property=xcm:keywords.id=)` entspricht.
+
+Syntax:
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+Um im Filterbereich Tag-Gruppen hinzuzufügen, muss standardmäßig mindestens eine Tag-Gruppe hinzugefügt werden. Verwenden Sie außerdem das folgende Codefragment, um die standardmäßigen Tags hinzuzufügen, die aus der Tag-Gruppe vorausgewählt sind.
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![Tag-Gruppenfilter](assets/tag-group.gif)
 
 ## Umgang mit der Auswahl von Assets mithilfe des Objektschemas {#handling-selection}
 
