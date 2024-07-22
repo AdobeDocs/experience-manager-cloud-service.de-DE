@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
+source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 100%
+source-wordcount: '2110'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     <td>Kundin/Kunde</td>
     <td>
     <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
-    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Siehe die Liste der OSGi-Eigenschaften unter „Bereinigungskonfiguration von Adobe-Projekten“.</p>
+    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Siehe die Liste der [OSGi-Eigenschaften](/help/implementing/deploying/configuring-osgi.md) unter **Adobe Projects Purge Configuration** .</p>
   </td>
   </tr>
   </tbody>
