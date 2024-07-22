@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 100%
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,9 @@ Wenn ein Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufene
 1. Gehen Sie auf der Seite **Umgebungen** zum Bildschirm **SSL-Zertifikate**.
 1. Es wird eine Tabelle mit einer Zeile für jedes SSL-Zertifikat angezeigt, das erfolgreich in Ihrem Programm installiert wurde. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile des Zertifikats, das Sie aktualisieren möchten, und wählen Sie **Anzeigen und aktualisieren**.
 1. Die Zertifikatdetails werden angezeigt und können aktualisiert werden.
-1. Führen Sie die Pipeline aus, um das aktualisierte Zertifikat bereitzustellen.
+1. Speichern Sie Ihre Änderungen.
+
+Nachdem Sie Ihre Änderungen gespeichert haben, werden sie automatisch angewendet.
 
 >[!NOTE]
 >
