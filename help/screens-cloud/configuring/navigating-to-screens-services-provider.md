@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie zu Screens Services Prov
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
+source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 63%
+source-wordcount: '383'
+ht-degree: 71%
 
 ---
 
@@ -51,36 +51,38 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 1. Wenn Sie die AEM Veröffentlichungsinstanz so konfiguriert haben, dass nur der Zugriff auf vertrauenswürdige IP-Adressen durch die IP--Funktion von Cloud Manager zugelassen wird, müssen Sie eine Kopfzeile mit einem Schlüsselwert im Einstellungsdialogfeld konfigurieren, wie unten dargestellt.
 Die IP-Adressen, die auf die Whitelist gesetzt werden müssen, müssen ebenfalls in die Konfigurationsdatei verschoben werden und aus den Cloud Manager-Einstellungen [nicht angewendet](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) werden.
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens20.png)
+   ![image](/help/screens-cloud/assets/configure/configure-screens20b.png)
 Derselbe Schlüssel muss in AEM CDN-Konfiguration konfiguriert werden.  Es wird empfohlen, den Kopfzeilenwert nicht direkt in GITHub zu platzieren und einen [geheimen Verweis](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) zu verwenden.
 Nachfolgend finden Sie ein Beispiel für [CDN config](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf):
-type: &quot;CDN&quot;
-version: &quot;1&quot;
-Metadaten:
-envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
-data:
-trafficFilters:
-Regeln:
-- name: &quot;block-request-from-not-allowed-ips&quot;
-wenn:
-allOf:
-- reqProperty: clientIp
-notIn: [&quot;101.41.112.0/24&quot;]
-reqProperty: tier
-gleich: publish
-Aktion: block
-- name: &quot;allow-requests-with-header&quot;
-wenn:
-allOf:
-- reqProperty: tier
-gleich: publish
-- reqProperty: path
-gleich: /screens/channels.json
-- reqHeader: x-screens-Zulassungsliste-key
-gleich: $\
-   {CDN_HEADER_KEY}
-Aktion:
-Typ: allow
+
+   ```kind: "CDN"
+       version: "1"
+       metadata:
+         envTypes: ["dev", "stage", "prod"]
+       data:
+         trafficFilters:
+           rules:
+             - name: "block-request-from-not-allowed-ips"
+               when:
+                 allOf:
+                   - reqProperty: clientIp
+                     notIn: ["101.41.112.0/24"]
+                    reqProperty: tier
+                     equals: publish
+               action: block
+             - name: "allow-requests-with-header"
+               when:
+                 allOf:
+                   - reqProperty: tier
+                     equals: publish
+                   - reqProperty: path
+                     equals: /screens/channels.json
+                   - reqHeader: x-screens-allowlist-key
+                     equals: $\
+       {CDN_HEADER_KEY}
+               action:
+                 type: allow
+   ```
 
 1. Wählen Sie in der linken Navigationsleiste **Kanäle** aus und klicken Sie auf **In Content Provider öffnen**.
 
