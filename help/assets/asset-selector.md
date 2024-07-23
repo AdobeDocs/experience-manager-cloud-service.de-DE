@@ -4,7 +4,7 @@ description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeforma
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e357dd0b9b2e67d4989a34054737a91743d0933a
+source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4550'
 ht-degree: 83%
@@ -745,7 +745,7 @@ Verwenden Sie das folgende Code-Snippet, um eine Schnellmeldung zur Verwendung e
 
 Mit der Asset-Auswahl können Sie einen Tag-Auswahl-Filter hinzufügen. Es unterstützt eine Tag-Gruppe, die alle relevanten Tags mit einer bestimmten Tagging-Gruppe kombiniert. Darüber hinaus können Sie zusätzliche Tags auswählen, die dem gesuchten Asset entsprechen. Darüber hinaus können Sie die standardmäßigen Tag-Gruppen auch unter dem kontextbezogenen Aufruf-Filter festlegen, der hauptsächlich von Ihnen verwendet wird, damit Sie von unterwegs darauf zugreifen können.
 
-> 
+>
 >
 > * Sie müssen ein Codefragment für kontextbezogene Aufrufe hinzufügen, um den Tagging-Filter bei der Suche zu aktivieren.
 > * Es ist erforderlich, die name -Eigenschaft zu verwenden, die dem Tag-Gruppentyp `(property=xcm:keywords.id=)` entspricht.
