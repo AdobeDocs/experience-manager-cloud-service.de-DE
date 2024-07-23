@@ -4,7 +4,7 @@ description: Auf dieser Seite wird beschrieben, wie Sie zu Screens Services Prov
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
+source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 63%
@@ -66,7 +66,7 @@ wenn:
 allOf:
 - reqProperty: clientIp
 notIn: [&quot;101.41.112.0/24&quot;]
-- reqProperty: tier
+reqProperty: tier
 gleich: publish
 Aktion: block
 - name: &quot;allow-requests-with-header&quot;
@@ -77,7 +77,7 @@ gleich: publish
 - reqProperty: path
 gleich: /screens/channels.json
 - reqHeader: x-screens-Zulassungsliste-key
-gleich: ${\
+gleich: $\
    {CDN_HEADER_KEY}
 Aktion:
 Typ: allow
