@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +43,6 @@ Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinz
    * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein.
       * Dies dient nur zu Informationszwecken und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.
    * Fügen Sie das **Zertifikat**, den **privaten Schlüssel** und die **Zertifikatkette** in die entsprechenden Felder ein. Alle drei Felder sind Pflichtfelder.
-   * In einigen Fällen kann das Endbenutzerzertifikat in der Kette enthalten sein und muss entfernt werden, bevor die Kette in das Feld eingefügt wird.
 
    ![Dialogfeld zum Hinzufügen des SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -61,13 +60,27 @@ Nach dem Speichern wird Ihr Zertifikat als neue Zeile in der Tabelle angezeigt.
 >
 >Eine Benutzerin bzw. ein Benutzer muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu installieren.
 
->[!NOTE]
->
->Wenn Sie eine ähnliche Fehlermeldung wie `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.` erhalten, haben Sie wahrscheinlich das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
-
 ## Zertifikatfehler {#certificate-errors}
 
 Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß installiert ist oder die Anforderungen von Cloud Manager nicht erfüllt.
+
+### Ordnungsgemäße Linienformatierung sicherstellen {#line-formatting}
+
+Beim Einfügen von Werten für **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** sollten neue Zeilen nur nach BEGIN-ZERTIFIKAT und vor END-ZERTIFIKAT eingefügt werden. Die eingefügten Werte sollten also wie folgt konstruiert werden:
+
+* `-----BEGIN CERTIFICATE-----` muss in der eigenen Zeile erscheinen.
+* `-----END CERTIFICATE-----` muss in der eigenen Zeile erscheinen.
+* Der Zertifikatinhalt muss in einer eigenen Zeile als eine lange Zeichenfolge **ohne neue Zeilen** zwischen `-----BEGIN CERTIFICATE-----` und `-----END CERTIFICATE-----` erscheinen.
+
+### Client-Zertifikate entfernen {#client-certificates}
+
+Wenn Sie beim Hinzufügen eines Zertifikats einen Fehler wie den folgenden erhalten:
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+Wahrscheinlich haben Sie das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
 
 ### Zertifikatrichtlinie {#certificate-policy}
 
