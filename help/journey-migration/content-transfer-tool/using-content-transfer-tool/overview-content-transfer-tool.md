@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte von ein
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
-workflow-type: ht
+source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Beim Inhaltstransfer gibt es zwei Phasen:
 
 Ein Migrationssatz hat die folgenden Attribute:
 
-* Mit der neuen Version können Sie maximal 20 Migrationssätze in einem Projekt erstellen, das in Cloud Acceleration Manager erstellt wurde.
+* Mit der neuen Version können Sie maximal zehn Migrationssätze in einem in Cloud Acceleration Manager erstellten Projekt erstellen.
 * Jeder Migrationssatz sollte einen eindeutigen Namen haben.
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
