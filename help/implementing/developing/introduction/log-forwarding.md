@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Dieser Artikel ist wie folgt organisiert:
             enabled: false
    ```
 
-1. Erstellen Sie für andere Umgebungstypen als RDE (derzeit nicht unterstützt) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager.
+1. Erstellen Sie für andere Umgebungstypen als RDE (die derzeit nicht unterstützt wird) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager. Beachten Sie, dass die Konfigurationsdatei nicht von Full Stack-Pipelines und Web-Tier-Pipelines bereitgestellt wird.
 
    * [Siehe: Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [Siehe: Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+Zu beachten:
+
+* Die URL-Zeichenfolge muss **https://** enthalten. Andernfalls schlägt die Überprüfung fehl. Wenn in der URL-Zeichenfolge kein Port enthalten ist, wird Port 443 (der standardmäßige HTTPS-Port) angenommen.
+* Wenn Sie einen anderen Port als 443 verwenden möchten, geben Sie ihn bitte als Teil der URL an.
 
 #### HTTPS-CDN-Protokolle {#https-cdn}
 
@@ -267,8 +272,7 @@ Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, die auf den Wert `aemc
 
 >[!NOTE]
 >
-> Bevor der erste CDN-Protokolleintrag gesendet wird, muss Ihr HTTP-Server erfolgreich eine einmalige Anfrage ausführen: Eine an den Pfad ``wellknownpath`` gesendete Anfrage muss mit ``*`` beantworten.
-
+> Bevor der erste CDN-Protokolleintrag gesendet wird, muss Ihr HTTP-Server eine einmalige Aufgabe erfolgreich durchführen: Eine an den Pfad ``/.well-known/fastly/logging/challenge`` gesendete Anfrage muss mit einem Sternchen ``*`` im Hauptteil und 200 Statuscode antworten.
 
 #### HTTPS-AEM {#https-aem}
 
