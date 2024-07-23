@@ -2,10 +2,11 @@
 title: Beschränken der Bereitstellung von Assets in Experience Manager
 description: Erfahren Sie, wie Sie die Asset-Bereitstellung in [!DNL Experience Manager] einschränken.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +20,7 @@ Benutzer, die [ nach ](search-assets-api.md) suchen oder die [Versand-URLs](deli
 
 ## Eingeschränkter Versand mit einem IMS-Token {#restrict-delivery-ims-token}
 
-Im Experience Manager umfasst der eingeschränkte Versand über IMS zwei wichtige Phasen:
+In Experience Manager Assets umfasst der eingeschränkte Versand über IMS zwei wichtige Phasen:
 
 * Authoring
 * Bereitstellung
@@ -43,7 +44,7 @@ Wenn das Feld nicht verfügbar ist, führen Sie die folgenden Schritte aus, um d
       1. Aktualisieren Sie die **[!UICONTROL Zuordnung zu Eigenschaft]** auf _./jcr:content/metadata/dam:roles_.
 
 1. Rufen Sie die IMS-Gruppen ab, die in den Roles-Metadaten des Assets hinzugefügt werden sollen. Gehen Sie wie folgt vor, um die IMS-Gruppen abzurufen:
-   1. Melden Sie sich unter https://adminconsole.adobe.com/ an.
+   1. Anmelden bei `https://adminconsole.adobe.com/.`
    1. Wechseln Sie zu Ihrer jeweiligen Organisation und navigieren Sie zu **[!UICONTROL Benutzergruppen]**.
    1. Wählen Sie die **[!UICONTROL Benutzergruppe]** aus, die Sie hinzufügen müssen, extrahieren Sie die **[!UICONTROL orgID]** und die **[!UICONTROL userGroupID]** aus der URL oder verwenden Sie Ihre Organisations-ID, z. B. `{orgID}@AdobeOrg:{usergroupID}`.
 
@@ -110,7 +111,7 @@ Um die Bereitstellung eingeschränkter Assets zu aktivieren, wenn die Anfrage vo
 
 #### Bereitstellung für benutzerdefinierte Identitätsanbieter in der Publish-Instanz {#delivery-custom-identity-provider}
 
-Bei einem benutzerdefinierten Identitäts-Provider, der in Ihrer Publish- oder Vorschauinstanz eingerichtet ist, können Sie die Gruppe erwähnen, die während des Einrichtungsprozesses Zugriff auf gesicherte Assets im Attribut `groupMembership` haben muss. Wenn Sie sich über die [SAML-Integration](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) bei einem benutzerdefinierten Identitäts-Provider anmelden, wird das Attribut `groupMembership` gelesen und verwendet, um ein Cookie zu erstellen, das in allen Authentifizierungsanfragen gesendet wird. Dies ähnelt einem IMS-Token bei einer Anfrage von AEM Autor oder Asset-Selektor.
+Bei einem benutzerdefinierten Identitäts-Provider, der in Ihrer Publish- oder Vorschauinstanz eingerichtet ist, können Sie die Gruppe erwähnen, die während des Einrichtungsprozesses Zugriff auf gesicherte Assets im Attribut `groupMembership` haben muss. Wenn Sie sich über die [SAML-Integration](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) bei einem benutzerdefinierten Identitäts-Provider anmelden, wird das Attribut `groupMembership` gelesen und verwendet, um ein Cookie zu erstellen, das in allen Authentifizierungsanfragen gesendet wird. Dies ähnelt einem IMS-Token bei einer Anfrage von AEM Autor oder Asset-Selektor.
 
 Wenn ein sicheres Asset auf einer Seite verfügbar ist und eine Anfrage an die Bereitstellungs-URL zum Rendern des Assets gesendet wird, prüft AEM die im Cookie oder im IMS-Token vorhandenen Rollen und stimmt sie mit dem beim Authoring des Assets angewendeten `dam:roles property` überein. Wenn eine Übereinstimmung vorliegt, wird das Asset angezeigt.
 
