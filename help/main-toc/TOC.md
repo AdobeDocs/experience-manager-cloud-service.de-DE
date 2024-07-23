@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
 workflow-type: tm+mt
-source-wordcount: '5160'
-ht-degree: 100%
+source-wordcount: '5265'
+ht-degree: 97%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 100%
             + [Verwenden von Turnstile in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Erstellen und Verwenden benutzerdefinierter Funktionen](/help/forms/create-and-use-custom-functions.md)
-            + [Hinzufügen von Regeln zu einem adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/rule-editor-core-components.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
             + [Konvertieren adaptiver Formulare basierend auf Foundation-Komponenten in auf Kernkomponenten basierenden Formularen mithilfe des Migrationsdienstprogramm-Tools](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Speichern eines adaptiven Formulars als Entwurf](/help/forms/save-core-component-based-form-as-draft.md)
+            + Einführung in den Regeleditor für adaptive Forms basierend auf Kernkomponenten{#rule-editor-core-components}
+               + [Einführung in den Regeleditor für adaptive Forms basierend auf Kernkomponenten](/help/forms/rule-editor-core-components.md)
+               + [Benutzeroberfläche des Regeleditors für adaptive Forms basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-user-interface.md)
+               + [Unterschied zwischen dem Foundation-Regeleditor und dem Kernkomponenten-Regeleditor](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [Operator- und Ereignistypen, die im Regeleditor für ein adaptives Formular basierend auf Kernkomponenten verfügbar sind](/help/forms/rule-editor-core-components-events-operators.md)
+               + [Beispiele für einen Regeleditor für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-usecases.md)
+            + Einführung in benutzerdefinierte Funktionen für adaptive Forms basierend auf Kernkomponenten{#create-and-use-custom-function-core-component}
+               + [Einführung in benutzerdefinierte Funktionen für adaptive Forms basierend auf Kernkomponenten](/help/forms/create-and-use-custom-functions.md)
+               + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/custom-function-core-component-create-function.md)
+               + [Beispiele für benutzerdefinierte Funktionen für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/custom-function-core-components-use-cases.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
