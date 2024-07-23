@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,4 +36,4 @@ In der folgenden Tabelle werden gängige Szenarien der verfügbaren Lösungen un
 
 >[!NOTE]
 >
->Produktionsprogramme [ können bearbeitet, aber nicht gelöscht werden.](editing-programs.md)
+>Produktionsprogramme [können bearbeitet, aber nicht gelöscht werden](editing-programs.md).

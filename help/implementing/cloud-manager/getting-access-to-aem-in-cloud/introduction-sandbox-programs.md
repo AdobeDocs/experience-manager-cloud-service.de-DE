@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -48,15 +48,15 @@ Die in einer Sandbox erstellten Umgebungen sind nicht für automatische Skalieru
 
 ### Keine benutzerdefinierten Domains oder IP-Zulassungslisten {#ip-allow}
 
-[Benutzerdefinierte Domänen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) und [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) sind in Sandbox-Programmen nicht verfügbar.
+[Benutzerdefinierte Domains](/help/implementing/cloud-manager/custom-domain-names/introduction.md) und [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) sind in Sandbox-Programmen nicht verfügbar.
 
-### Keine weiteren Publish-Regionen {#additional-publish-regions}
+### Keine zusätzlichen Veröffentlichungsregionen {#additional-publish-regions}
 
-[Zusätzliche Veröffentlichungsbereiche](/help/operations/additional-publish-regions.md) sind in Sandbox-Programmen nicht verfügbar.
+[Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) sind in Sandbox-Programmen nicht verfügbar.
 
-### No 99.99% SLA {#999-sla}
+### Kein SLA von 99,99 % {#999-sla}
 
-[99,99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) gilt nicht für Sandbox-Programme.
+Das [SLA von 99,99 %](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) gilt nicht für Sandbox-Programme.
 
 ### Keine erweiterten Netzwerkfunktionen {#advanced-networking}
 

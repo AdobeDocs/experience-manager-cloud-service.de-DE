@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Die HIPAA-konforme Web Application Firewall (WAF) von Adobe erleichtert die Clou
 
 Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkarte **SLA** als zweite oder dritte Registerkarte im Dialog **Für Produktion einrichten** angezeigt.
 
-AEM Sites und Forms bieten einen standardmäßigen Service Level Agreement (SLA) zu 99,9 % an. Die Option **99,99% Service Level Agreement** ermöglicht einen Mindestbetriebszeit-Prozentsatz von 99,99% für Ihre Produktionsumgebungen für Sites und/oder Forms.
+AEM Sites und Forms bieten standardmäßig ein Service Level Agreement (SLA) mit 99,99 % an. Die Option **Service Level Agreement von 99,99 %** ermöglicht einen minimalen Betriebszeitprozentsatz von 99,99 % für Ihre Sites- und/oder Forms-Produktionsumgebungen.
 
 SLA mit 99,99 % bietet Vorteile wie höhere Verfügbarkeit und geringere Latenz und erfordert, dass eine [zusätzliche Veröffentlichungsregion](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) auf die Produktionsumgebung im Programm angewendet wird.
 
@@ -105,8 +105,8 @@ Sobald die [Anforderungen](#sla-requirements) für die Aktivierung von 99,99 % S
 * Damit der SLA von 99,99 % und die Berichterstellung aktiviert werden können, muss die [Produktions-/Staging-Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-environments) erstellt worden sein und mindestens eine zusätzliche Veröffentlichungsregion auf die Produktions-/Staging-Umgebung angewendet worden sein.
    * Wenn Sie ein [erweitertes Netzwerk](/help/security/configuring-advanced-networking.md) verwenden, stellen Sie sicher, dass Sie im Dokument [Hinzufügen mehrerer Veröffentlichungsregionen zu einer neuen Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-regions) nach Empfehlungen suchen, damit die Konnektivität im Falle eines regionalen Ausfalls erhalten bleibt.
 * Mindestens eine zusätzliche Veröffentlichungsregion muss in Ihrem 99,99 %-SLA-Programm verbleiben. Benutzende dürfen den letzten zusätzlichen Veröffentlichungsbereich nicht aus Ihrem 99,99 %-SLA-Programm löschen.
-* 99,99 % SLA wird für Produktionsprogramme unterstützt, für die die Sites- oder Forms-Lösung aktiviert ist.
-* Sie müssen eine [vollständige Stapel-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausführen, um den SLA 99,99 % zu aktivieren (oder bei der Bearbeitung eines Programms zu deaktivieren).
+* Ein SLA von 99,99 % wird für Produktionsprogramme unterstützt, für die die Sites- oder Forms-Lösung aktiviert ist.
+* Sie müssen eine [vollständige Stack-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausführen, um das SLA von 99,99 % zu aktivieren (bzw. zu deaktivieren, wenn Sie ein Programm bearbeiten).
 
 ## Zugriff auf ein Programm {#accessing}
 

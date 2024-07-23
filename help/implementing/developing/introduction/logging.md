@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2797'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -561,9 +561,9 @@ Auf die Protokolle in AEM as a Cloud Service für Cloud-Services kann entweder d
 
 ### Protokolle für zusätzliche Veröffentlichungsregionen {#logs-for-additional-publish-regions}
 
-Wenn für eine bestimmte Umgebung zusätzliche Veröffentlichungsregionen aktiviert sind, können Protokolle für jede Region wie oben erwähnt aus Cloud Manager heruntergeladen werden.
+Wenn für eine bestimmte Umgebung zusätzliche Veröffentlichungsregionen aktiviert sind, können, wie oben erwähnt, Protokolle für jede Region von Cloud Manager heruntergeladen werden.
 
-Die AEM- und Dispatcher-Protokolle für die zusätzlichen Veröffentlichungsbereiche geben die Region in den ersten drei Buchstaben nach der Umgebungs-ID an, wie im Beispiel unten unter **nld2** dargestellt wird, was auf eine zusätzliche AEM Veröffentlichungsinstanz in den Niederlanden verweist:
+Die AEM-Protokolle und die Dispatcher-Protokolle für die zusätzlichen Veröffentlichungsregionen geben die Region in den ersten drei Buchstaben nach der Umgebungs-ID an, wie dies in Form von **nld2** im folgenden Beispiel dargestellt ist, das sich auf eine zusätzliche AEM-Veröffentlichungsinstanz in den Niederlanden bezieht:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

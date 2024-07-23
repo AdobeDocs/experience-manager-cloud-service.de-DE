@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1995'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ Durch Tippen oder Klicken auf den Link einer bestimmten Seite wird der Filter **
 
 ![Seitenergebnisse](assets/experience-audit-page-results.png)
 
-Die Registerkarte **Rohberichte** gibt Bewertungen für jede Prüfung der Seite an. Tippen oder klicken Sie in der Spalte **Leuchtturmbericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
+Die Registerkarte **Rohberichte** gibt Bewertungen für jede Prüfung der Seite an. Tippen oder klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
 
 ![Rohberichte](assets/experience-audit-raw-reports.png)
 
@@ -200,9 +200,9 @@ Zum Ausführen eines On-Demand-Scans navigieren Sie zur Registerkarte **Berichte
 
 ![On-Demand-Scan](assets/experience-audit-on-demand.png)
 
-Die Schaltfläche **Scan ausführen** ist nicht mehr verfügbar und wird mit einem Uhrensymbol gekennzeichnet, wenn bereits eine On-Demand-Prüfung ausgeführt wird.
+Die Schaltfläche **Scan durchführen** ist dann nicht mehr verfügbar und wird mit einem Uhrensymbol gekennzeichnet, wenn bereits ein On-Demand-Scan läuft.
 
-![On-Demand-Scan wird ausgeführt](assets/experience-audit-on-demand-running.png)
+![Laufender On-Demand-Scan](assets/experience-audit-on-demand-running.png)
 
 On-Demand-Scans lösen eine Erlebnisprüfung für die letzten 25 [konfigurierten Seiten](#configuration) aus und werden in der Regel innerhalb weniger Minuten abgeschlossen.
 
@@ -218,13 +218,13 @@ Sie können das Bewertungsdiagramm nach dem Trigger-Typ filtern, indem Sie die A
 
 ## Probleme bei der Erlebnisprüfung {#issues}
 
-Wenn [Seiten, die Sie für die Prüfung konfiguriert haben,](#configuration) nicht verfügbar waren oder bei der Prüfung andere Fehler aufgetreten sind, spiegelt Erlebnisprüfung dies wider.
+Wenn [Seiten, die Sie konfiguriert haben](#configuration), sodass sie geprüft werden, nicht verfügbar waren oder bei der Prüfung andere Fehler aufgetreten sind, spiegelt die Erlebnisprüfung dies wider.
 
 Die Pipeline präsentiert einen erweiterbaren Fehlerabschnitt, um die relativen URL-Pfade anzuzeigen, wenn kein Zugriff möglich war.
 
 ![Bei der Erlebnisprüfung aufgetretene Probleme](assets/experience-audit-issues.jpg)
 
-Beim Anzeigen des vollständigen Berichts werden Details im Abschnitt **[Ergebnisse der Erlebnisprüfung](#results)** angezeigt, der ebenfalls erweiterbar ist.
+Wenn Sie den vollständigen Bericht anzeigen, finden Sie Details dazu im erweiterbaren Abschnitt **[Ergebnisse des Erlebnisprüfungs-Scans](#results)**.
 
 ![Vollständiger Bericht – Probleme](assets/experience-audit-issues-report.png)
 
@@ -257,7 +257,7 @@ Diese können durch folgende Maßnahmen verbessert werden:
 
 Die folgenden Details liefern zusätzliche Informationen darüber, wie Ihre Site von der Erlebnisprüfung ausgewertet wird. Sie sind für die allgemeine Nutzung der Funktion nicht erforderlich und werden hier der Vollständigkeit halber bereitgestellt.
 
-* Die Prüfung scannt die Ursprungsdomäne (`.com`), wie sie in den [konfigurierten Pfaden der Experience Audit-Seite](#configuration) des Herausgebers definiert ist, um reale Benutzererlebnisse genauer zu simulieren, und hilft Ihnen dabei, fundiertere Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
+* Die Prüfung scannt die Ursprungs-Domain (`.com`), wie sie in den [konfigurierten Pfaden der Erlebnisprüfungs-Seite](#configuration) des Herausgebers definiert ist, um reale Benutzererlebnisse genauer zu simulieren, und hilft Ihnen dabei, besser fundierte Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
 * In Produktions-Full-Stack-Pipelines wird die Staging-Umgebung gescannt.
    * Um sicherzustellen, dass die Prüfung während des Auditings relevante Details liefert, sollte der Inhalt der Staging-Umgebung dem der Produktionsumgebung so weit wie möglich entsprechen.
 * Die Seiten, die im Abschnitt](#trend) [**Seitenbewertungen – Trend** in der Dropdown-Liste **Auswählen** angezeigt werden, sind alle bekannten Seiten, die in der Vergangenheit von der Erlebnisprüfung gescannt wurden.

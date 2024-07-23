@@ -5,9 +5,9 @@ exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
 source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ Organisationen können bis zu drei zusätzliche Veröffentlichungsregionen lizen
 >[!NOTE]
 >
 >* Diese Funktion ist für die Sites- und Forms-Lösungen verfügbar.
->* Diese Funktion kann nicht auf [ Sandbox-Programme angewendet werden.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
->* Für diese Funktion muss Ihr Programm auf AEM Version 12142 oder höher aktualisiert werden.
+>* Sie kann nicht auf [Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) angewendet werden.
+>* Für diese Funktion muss Ihr Programm auf die AEM-Version 12142 oder höher aktualisiert werden.
 
 ## Anwendungsfälle {#use-cases}
 
@@ -60,9 +60,9 @@ Wenn zusätzliche Veröffentlichungsregionen aktiviert sind, werden separate Pro
 
 Beachten Sie die folgenden Einschränkungen bei der Verwendung zusätzlicher Veröffentlichungsregionen.
 
-* Zusätzliche Veröffentlichungsbereiche können nur zu AEM Sites oder AEM Forms hinzugefügt werden.
-   * Zusätzliche Veröffentlichungsbereiche erstrecken sich nicht auf andere AEM Lösungen oder zugehörige Funktionen, die im selben Programm bereitgestellt werden (z. B. AEM Assets oder Adobe Learning Manager).
-   * Diese Lösungen können jedoch einem Programm hinzugefügt werden, sofern es mindestens eine Sites- oder Forms-Lösung für dieses Programm enthält.
+* Zusätzliche Veröffentlichungsregionen können nur zu AEM Sites oder AEM Forms hinzugefügt werden.
+   * Zusätzliche Veröffentlichungsregionen erstrecken sich nicht auf andere AEM-Lösungen oder zugehörige Funktionen, die im selben Programm bereitgestellt werden (z. B. AEM Assets oder Adobe Learning Manager).
+   * Diese Lösungen können jedoch zu einem Programm hinzugefügt werden, sofern es mindestens eine Sites- oder Forms-Lösung enthält.
 * Zusätzliche Regionen können nur hinzugefügt werden, wenn verknüpfte Berechtigungen im Mandanten verfügbar und nicht verwendet sind.
 * Es können maximal drei zusätzliche Veröffentlichungsregionen zu jeder einzelnen Umgebung hinzugefügt werden.
 * Zusätzliche Regionen sind nur für Produktionsprogramme verfügbar. Die Funktion ist nicht in Sandbox-Programmen verfügbar.
