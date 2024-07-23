@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
+source-git-commit: a95da7f8cc0f16445970f13c1acad28b14daae44
 workflow-type: tm+mt
-source-wordcount: '5265'
+source-wordcount: '5270'
 ht-degree: 97%
 
 ---
@@ -861,8 +861,9 @@ ht-degree: 97%
 + Edge Delivery Services {#edge-delivery}
    + [Überblick über Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md)
+   + [Auswählen und Bearbeiten](/help/edge/authoring-methods.md)
    + WYSIWYG-Authoring {#wysiwyg-authoring}
-      + [Erstellen von Inhalten für Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+      + [WYSIWYG Content Authoring für Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
       + [Veröffentlichen von Inhalten für Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
       + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [Erstellen von Bausteinen](/help/edge/wysiwyg-authoring/create-block.md)
