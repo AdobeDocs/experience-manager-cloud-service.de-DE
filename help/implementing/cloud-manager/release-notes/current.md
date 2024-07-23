@@ -4,10 +4,10 @@ description: Dies sind die Versionshinweise für Cloud Manager 2024.7.0 in AEM a
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 58%
+source-wordcount: '633'
+ht-degree: 62%
 
 ---
 
@@ -26,7 +26,7 @@ Die Cloud Manager-Version 2024.7.0 in AEM as a Cloud Service wurde am 18. Juli 2
 
 ## Neue Funktionen {#what-is-new}
 
-* Die [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) und der Trigger **On Git Changes** (Nicht-Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)), um die Pipeline bei einem Commit zu starten, sind jetzt für [private Repositorys verfügbar.](/help/implementing/cloud-manager/managing-code/private-repositories.md)[
+* Für [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) und [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) ist jetzt der Trigger **Bei Git-Änderungen** für [private Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md) verfügbar, um die Pipeline bei einem Commit zu starten.
    * Diese wird schrittweise eingeführt und bis Mitte August abgeschlossen sein.
 * Beim Hinzufügen eines [Adobe-verwalteten DV-Zertifikats, ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) können Sie jetzt ein einzelnes Zertifikat hinzufügen, das mehrere Domänen abdeckt, anstatt für jede Domäne ein Zertifikat zu erstellen.
 * Lösungen ohne [zusätzliche Veröffentlichungsbereiche](/help/operations/additional-publish-regions.md) können jetzt einem Programm hinzugefügt werden, sofern das Programm mindestens über eine Sites- oder Forms-Lösung verfügt.
@@ -39,6 +39,7 @@ Die Cloud Manager-Version 2024.7.0 in AEM as a Cloud Service wurde am 18. Juli 2
       * Der Rohbericht-Link &quot;Lighthouse&quot;ist jetzt intuitiver sichtbar, direkt im Bereich mit den Scan-Momentaufnahmen-Details.
       * Der Abschnitt mit Empfehlungen für Lighthouse wurde verbessert.
    * Die PWA-Metrik wurde in Übereinstimmung mit der Lighthouse-Version 12.0.0 entfernt, die diese Metrik eliminierte.
+* [Der AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 49 von [aktualisiert.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## Early-Adopter-Programm {#early-adoption}
 
