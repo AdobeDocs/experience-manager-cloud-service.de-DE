@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 86%
+source-wordcount: '598'
+ht-degree: 95%
 
 ---
 
@@ -63,14 +63,6 @@ Nach dem Speichern wird Ihr Zertifikat als neue Zeile in der Tabelle angezeigt.
 ## Zertifikatfehler {#certificate-errors}
 
 Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß installiert ist oder die Anforderungen von Cloud Manager nicht erfüllt.
-
-### Ordnungsgemäße Linienformatierung sicherstellen {#line-formatting}
-
-Beim Einfügen von Werten für **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** sollten neue Zeilen nur nach BEGIN-ZERTIFIKAT und vor END-ZERTIFIKAT eingefügt werden. Die eingefügten Werte sollten also wie folgt konstruiert werden:
-
-* `-----BEGIN CERTIFICATE-----` muss in der eigenen Zeile erscheinen.
-* `-----END CERTIFICATE-----` muss in der eigenen Zeile erscheinen.
-* Der Zertifikatinhalt muss in einer eigenen Zeile als eine lange Zeichenfolge **ohne neue Zeilen** zwischen `-----BEGIN CERTIFICATE-----` und `-----END CERTIFICATE-----` erscheinen.
 
 ### Client-Zertifikate entfernen {#client-certificates}
 
