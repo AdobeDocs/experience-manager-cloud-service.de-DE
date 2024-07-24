@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c9924b4477d53d86bb72eda8597a02304450195
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 100%
+source-wordcount: '722'
+ht-degree: 67%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Hinzufügen eines benutzerdefinierten Domain-Namens"
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens"
 
-Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren. Adobe Experience Manager as a Cloud Service wird mit einem Standard-Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Dieser Name bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen zuordnen.
+Adobe Experience Manager as a Cloud Service wird mit einem Standard-Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Mithilfe der Cloud Manager-Benutzeroberfläche können Sie eine benutzerdefinierte Domäne hinzufügen, um Ihre Site mit einem eindeutigen Markennamen auf Self-Service-Art zu identifizieren. Der standardmäßige Domänenname `*.adobeaemcloud.com` bleibt erhalten, selbst wenn Sie benutzerdefinierte Domänennamen mit Ihrer Website verknüpft haben.
 
 ## Was sind benutzerdefinierte Domain-Namen? {#what-are-custom-domain-names}
 
 Jeder Website ist eine eindeutige, von Computern lesbare, numerische Adresse zugeordnet, z. B. `184.33.123.64`. Das Domain Name System (DNS) ermöglicht es Ihnen, benutzerdefinierte Marken-Domains an Websites anzuhängen, indem numerische Adressen in einprägsame Adressen wie `wknd.com` übersetzt werden.
 
-Es empfiehlt sich, einen Domain-Namen für Ihre Site zu verwenden, der für Ihre Kunden einprägsam ist und Ihre Marke widerspiegelt.
+Es empfiehlt sich, einen Domänennamen für Ihre Site zu haben, der für Ihre Kunden unvergesslich ist und Ihre Marke widerspiegelt.
 
 Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen kaufen, einer Firma oder Organisation, die Domain-Namen verwaltet und verkauft. Registrierungsstellen für Domain-Namen verwalten Domain-Namen auf DNS-Servern.
 
@@ -43,38 +43,41 @@ AEM as a Cloud Service bietet einen integrierten CDN-Dienst (Content Delivery Ne
 * Benutzerdefinierte Domänennamen (und Zertifikate), die im AEM verwalteten CDN installiert sind, werden über Cloud Manager verwaltet.
 * Benutzerdefinierte Domänennamen (und Zertifikate), die in Ihrem eigenen CDN installiert sind, werden in diesem spezifischen CDN verwaltet.
 
-Domains, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden. Sie werden AEM über „X-Forwarded-Host“ zur Verfügung gestellt und stimmen mit den im Dispatcher definierten virtuellen Hosts überein. Weitere Informationen finden Sie in der [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
+**Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden.** Sie werden AEM über den X-Forwarded-Host zur Verfügung gestellt und entsprechen den in der Dispatcher definierten Hosts. Weitere Informationen finden Sie in der [CDN-Dokumentation.](/help/implementing/dispatcher/cdn.md)
 
 In einer Umgebung können Sie beide Domänen im von AEM verwalteten CDN und in Ihrem eigenen CDN installiert haben.
 
 ## Workflow {#workflow}
 
-Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Aus diesem Grund ist eine Reihe von Schritten zum Installieren, Konfigurieren und Überprüfen benutzerdefinierter Domain-Namen erforderlich. In der folgenden Tabelle finden Sie einen Überblick über die erforderlichen Schritte, einschließlich der Schritte, die bei häufigen Fehlern durchgeführt werden müssen.
+Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Daher sind verschiedene Schritte zum Installieren, Konfigurieren und Überprüfen benutzerdefinierter Domänennamen erforderlich. Die folgende Tabelle bietet einen Überblick über die erforderlichen Schritte, einschließlich Links zu Dokumentationsressourcen, um diese Schritte durchzuführen.
 
-| Schritt | Beschreibung | Verantwortung | Weitere Informationen |
-|--- |--- |--- |---|
-| 1 | Hinzufügen eines SSL-Zertifikats zu Cloud Manager | Kunde | [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | TXT-Datensatz zur Verifizierung der Domain hinzufügen | Kunde | [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
-| 3 | Verifizierungsstatus der Domain | Kunde | [Überprüfen des Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 3a | Wenn die Domain-Verifizierung mit dem Status `Domain Verification Failure` fehlschlägt | Kunde | [Überprüfen des Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 3b | Wenn die Domain-Verifizierung mit dem Status `Verified, Deployment Failed` fehlschlägt, kontaktieren Sie Adobe | Adobe-Kundenunterstützung | [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 4 | DNS-Einstellungen konfigurieren, indem DNS-CNAME- oder APEX-Datensätze hinzugefügt werden, die auf AEM as a Cloud Service verweisen | Kunde | [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 5 | Status von DNS-Datensätzen überprüfen | Kunde | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
-| 5a | Wenn der DNS-Datensatzstatus mit `DNS status not detected` fehlschlägt | Kunde | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
-| 5b | Wenn der DNS-Datensatzstatus mit `DNS resolves incorrectly` fehlschlägt | Kunde | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| Schritt | Beschreibung | Dokumentation |
+|---|---|---|
+| 1 | Hinzufügen eines SSL-Zertifikats zu Cloud Manager | [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | Benutzerdefinierte Domäne zu Cloud Manager hinzufügen | [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | TXT-Datensatz zur Verifizierung der Domain hinzufügen | [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 4 | Überprüfen des Domänenverifizierungsstatus | [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | DNS-Einstellungen konfigurieren, indem DNS-CNAME- oder APEX-Datensätze hinzugefügt werden, die auf AEM as a Cloud Service verweisen | [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
+| 6 | Status von DNS-Datensätzen überprüfen | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->In der Regel ist das Einrichten benutzerdefinierter Domänennamen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Domain-Delegierung kommen, deren Behebung bis zu 1-2 Werktage dauern kann. Daher wird dringend empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+>In der Regel ist das Einrichten benutzerdefinierter Domänennamen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich können jedoch Probleme bei der Domain-Zuweisung auftreten, die 1-2 Werktage dauern können, bis sie gelöst sind. Daher wird dringend empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## Einschränkungen {#limitations}
 
 Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Reihe von Einschränkungen.
 
-* Benutzerdefinierte Domänennamen werden in Cloud Manager für Veröffentlichungs- und Vorschau-Services für Sites-Programme unterstützt. Benutzerdefinierte Domänen für Autoren-Services werden nicht unterstützt.
+* Benutzerdefinierte Domänennamen werden in Cloud Manager nur für Veröffentlichungs- und Vorschaudienste für Sites-Programme unterstützt.
+   * Benutzerdefinierte Domänen für Autoren-Services werden nicht unterstützt.
 * Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domänen pro Umgebung hosten.
-* Domain-Namen können nicht zur Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
-* Derselbe Domain-Name kann nicht in mehreren Umgebungen verwendet werden.
+* Domänennamen können nicht zur Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
+* Derselbe Domänenname kann nicht in mehreren Umgebungen verwendet werden.
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden.
 * AEM as a Cloud Service unterstützt keine Platzhalterdomänen `*.example.com`.
-* Vor dem Hinzufügen eines benutzerdefinierten Domänennamens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domänennamen enthält, für Ihr Programm installiert werden (Platzhalterzertifikate sind gültig). Weitere Informationen finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+* Bevor Sie einen benutzerdefinierten Domänennamen hinzufügen, muss für Ihr Programm ein gültiges SSL-Zertifikat installiert werden, das den benutzerdefinierten Domänennamen enthält (Wildcard-Zertifikate sind gültig).
+
+## Erste Schritte! {#get-started}
+
+* Beginnen Sie mit der Konfiguration eines neuen benutzerdefinierten Domänennamens für Ihr Projekt, indem Sie [ein SSL-Zertifikat hinzufügen.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* Verwalten Sie Ihre vorhandenen Domänennamen, indem Sie das Dokument [Verwalten benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) lesen.
