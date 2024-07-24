@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
 source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -22,24 +22,24 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.7.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager-Version 2024.7.0 in AEM as a Cloud Service wurde am 18. Juli 2024 veröffentlicht. Die nächste Version ist für den 8. August 2024 geplant.
+Die Version 2024.7.0 von Cloud Manager in AEM as a Cloud Service wurde am 18. Juli 2024 veröffentlicht. Die nächste Version ist für den 8. August 2024 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
 * Für [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) und [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) ist jetzt der Trigger **Bei Git-Änderungen** für [private Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md) verfügbar, um die Pipeline bei einem Commit zu starten.
-   * Diese wird schrittweise eingeführt und bis Mitte August abgeschlossen sein.
-* Beim Hinzufügen eines [Adobe-verwalteten DV-Zertifikats, ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) können Sie jetzt ein einzelnes Zertifikat hinzufügen, das mehrere Domänen abdeckt, anstatt für jede Domäne ein Zertifikat zu erstellen.
-* Lösungen ohne [zusätzliche Veröffentlichungsbereiche](/help/operations/additional-publish-regions.md) können jetzt einem Programm hinzugefügt werden, sofern das Programm mindestens über eine Sites- oder Forms-Lösung verfügt.
-* Lösungen ohne SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) von [99,99 % können jetzt einem Programm hinzugefügt werden, solange das Programm mindestens über eine Sites- oder Forms-Lösung verfügt.
-* Das Dashboard [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-dashboard.md) wurde auf verschiedene Weise verbessert.
-   * Prüfungen werden jetzt mit `.com` -Endpunkten über CDN ausgeführt, wobei der vorherige `.net` -Ansatz ersetzt wird.
-      * Diese Änderung simuliert reale Benutzererlebnisse genauer und hilft Ihnen, fundiertere Entscheidungen über die Verwaltung und Optimierung Ihrer Website zu treffen.
-   * An der Benutzeroberfläche von Experience Audit wurden mehrere Verbesserungen vorgenommen, darunter:
-      * Eine Trendansicht von Leistung, Best Practices, SEO und Barrierefreiheit wurde hinzugefügt.
-      * Der Rohbericht-Link &quot;Lighthouse&quot;ist jetzt intuitiver sichtbar, direkt im Bereich mit den Scan-Momentaufnahmen-Details.
-      * Der Abschnitt mit Empfehlungen für Lighthouse wurde verbessert.
-   * Die PWA-Metrik wurde in Übereinstimmung mit der Lighthouse-Version 12.0.0 entfernt, die diese Metrik eliminierte.
-* [Der AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 49 von [aktualisiert.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+   * Dies wird schrittweise eingeführt und bis Mitte August abgeschlossen sein.
+* Beim Hinzufügen eines [von Adobe verwalteten DV-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) können Sie jetzt ein einzelnes Zertifikat hinzufügen, das mehrere Domains abdeckt, anstatt für jede Domain ein Zertifikat erstellen zu müssen.
+* Lösungen ohne [zusätzliche Veröffentlichungsbereiche](/help/operations/additional-publish-regions.md) können jetzt einem Programm hinzugefügt werden, sofern das Programm über mindestens eine Sites- oder Forms-Lösung verfügt.
+* Lösungen ohne ein [SLA von 99,99 %](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) können jetzt einem Programm hinzugefügt werden, solange das Programm über mindestens eine Sites- oder Forms-Lösung verfügt.
+* Das [Experience Audit-Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) wurde in verschiedenen Hinsichten verbessert.
+   * Prüfungen werden jetzt mit `.com`-Endpunkten über CDN ausgeführt, wodurch der vorherige `.net`-Ansatz ersetzt wird.
+      * Diese Neuerung simuliert reale Benutzererlebnisse genauer und hilft Ihnen, besser fundierte Entscheidungen über die Verwaltung und Optimierung Ihrer Website zu treffen.
+   * An der Experience Audit-Benutzeroberfläche wurden mehrere Verbesserungen vorgenommen, darunter:
+      * Es wurde eine Trend-Ansicht von Leistung, Best Practices, SEO und Barrierefreiheit hinzugefügt.
+      * Der Rohbericht-Link „Lighthouse“ ist jetzt intuitiver anzeigbar, und zwar direkt im Bereich mit den Scan-Momentaufnahmen-Details.
+      * Der Abschnitt mit Empfehlungen zu Lighthouse wurde überarbeitet.
+   * Die PWA-Metrik wurde entsprechend der Lighthouse-Version 12.0.0 entfernt, in der diese Metrik eliminiert wurde.
+* [Der AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf [Version 49](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49) aktualisiert.
 
 ## Early-Adopter-Programm {#early-adoption}
 
