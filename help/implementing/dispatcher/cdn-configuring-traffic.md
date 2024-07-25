@@ -1,15 +1,16 @@
 ---
 title: Konfigurieren von Traffic im CDN
-description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Regeln und Filter in einer Konfigurationsdatei deklarieren und sie mithilfe der Cloud Manager-Konfigurations-Pipeline im CDN bereitstellen.
+description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Regeln und Filter in einer Konfigurationsdatei deklarieren und sie mithilfe einer Cloud Manager-Konfigurationspipeline in das CDN bereitstellen.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
-workflow-type: ht
-source-wordcount: '1326'
-ht-degree: 100%
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 87%
 
 ---
+
 
 # Konfigurieren von Traffic im CDN {#cdn-configuring-cloud}
 
@@ -24,7 +25,7 @@ Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF),
 
 Wenn das CDN nicht in der Lage ist, seinen Ursprung zu erreichen, können Sie außerdem eine Regel schreiben, die auf eine selbstgehostete benutzerdefinierte Fehlerseite verweist (die dann gerendert wird). Weitere Informationen hierzu finden Sie im Artikel [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich Traffic-Filterregeln, 100 KB nicht überschreiten darf.
+Alle diese Regeln, die in einer Konfigurationsdatei in der Quell-Code-Verwaltung deklariert sind, werden mithilfe der Cloud Manager [config-Pipeline bereitgestellt.](/help/operations/config-pipeline.md) Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich der Traffic-Filterregeln, 100 KB nicht überschreiten darf.
 
 ## Reihenfolge der Auswertung {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ Funktionell werden die verschiedenen oben erwähnten Funktionen in der folgenden
 
 Bevor Sie Traffic im CDN konfigurieren können, müssen Sie Folgendes tun:
 
-* Erstellen Sie diesen Ordner und die Dateistruktur im obersten Ordner Ihres Git-Projekts:
+1. Erstellen Sie eine Datei mit dem Namen `cdn.yaml` oder eine ähnliche Datei, die auf die verschiedenen Konfigurationsfragmente in den folgenden Abschnitten verweist.
 
-```
-config/
-     cdn.yaml
-```
+   Alle Snippets verfügen über diese allgemeinen Eigenschaften, die im Artikel [Konfiguration der Pipeline](/help/operations/config-pipeline.md#common-syntax) beschrieben werden. Der Eigenschaftswert `kind` sollte *CDN* und die Eigenschaft `version` auf *1* eingestellt sein.
 
-* Die Konfigurationsdatei `cdn.yaml` sollte sowohl Metadaten als auch die Regeln enthalten, die in den nachfolgenden Beispielen beschrieben sind. Der Parameter `kind` sollte auf `CDN` und die Version auf die Schemaversion eingestellt sein (derzeit `1`). 
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* Erstellen Sie eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager. Siehe [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen *config* oder einem ähnlichen Ordner, wie im Artikel [Config Pipeline-Artikel](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-**Anmerkungen**
+1. Erstellen Sie eine Config Pipeline in Cloud Manager, wie im Artikel [Config Pipeline-Artikel](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
 
-* RDEs unterstützen derzeit nicht die Konfigurations-Pipeline.
-* Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
+1. Stellen Sie die Konfiguration bereit.
 
-## Syntax {#configuration-syntax}
+## Regelsyntax {#configuration-syntax}
 
 Die Regeltypen in den folgenden Abschnitten verwenden eine gemeinsame Syntax.
 
@@ -313,7 +315,7 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 Es gibt Fälle, in denen Ursprungs-Auswahlen verwendet werden sollten, um Traffic durch AEM Publish zu AEM Edge Delivery Services zu leiten:
 
 * Einige Inhalte werden von einer von AEM Publish verwalteten Domain bereitgestellt, während andere Inhalte, die aus derselben Domain stammen, von Edge Delivery Services bereitgestellt werden.
-* Inhalte, die von Edge Delivery Services bereitgestellt werden, würden von Regeln profitieren, die über die Konfigurations-Pipeline bereitgestellt werden, einschließlich Traffic-Filterregeln oder Anfrage-/Reaktionsumwandlungen.
+* Von Edge Delivery Services bereitgestellte Inhalte würden von Regeln profitieren, die über die Konfigurationspipeline bereitgestellt werden, einschließlich Traffic-Filterregeln oder Anforderung-/Antworttransformationen
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 

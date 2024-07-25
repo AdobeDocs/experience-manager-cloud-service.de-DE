@@ -4,12 +4,13 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
-workflow-type: ht
-source-wordcount: '2107'
-ht-degree: 100%
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+workflow-type: tm+mt
+source-wordcount: '2055'
+ht-degree: 95%
 
 ---
+
 
 # Wartungsaufgaben in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -215,27 +216,23 @@ Die standardmäßigen Bereinigungswerte können überschrieben werden, indem ein
 Deklarieren Sie eine Konfigurationsdatei und stellen Sie sie wie in den folgenden Schritten beschrieben bereit.
 
 >[!NOTE]
->Nachdem Sie den Knoten zur Versionsbereinigung in der Konfigurationsdatei bereitgestellt haben, müssen Sie ihn deklarieren und dürfen ihn nicht entfernen. Wenn Sie dies versuchen, schlägt die Konfigurations-Pipeline fehl.
+>Nachdem Sie den Knoten zur Versionsbereinigung in der Konfigurationsdatei bereitgestellt haben, müssen Sie ihn deklarieren und dürfen ihn nicht entfernen. Die Konfigurationspipeline schlägt fehl, wenn Sie versuchen, dies zu tun.
 > 
 >Ebenso müssen Sie den Knoten für die Auditprotokollbereinigung nach der Bereitstellung in der Konfigurationsdatei deklarieren und dürfen ihn nicht entfernen.
 
-**1** – Erstellen Sie zunächst den folgenden Ordner und die Dateistruktur des Ordners der obersten Ebene in Ihrem Projekt in Git:
+**1** Erstellen Sie eine Datei mit dem Namen `mt.yaml` oder ähnlich.
 
-```
-config/
-     mt.yaml
-```
+**2** Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen `config` oder ähnlich, wie im Artikel [Konfiguration der Pipeline beschrieben.](/help/operations/config-pipeline.md#folder-structure)
 
-**2** – Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
+**3** – Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
 
-* eine Eigenschaft „kind“ mit dem Wert „MaintenanceTasks“.
-* eine Eigenschaft „version“ (derzeit handelt es sich um Version 1).
-* ein optionales Objekt „metadata“ mit der Eigenschaft `envTypes` mit einer kommagetrennten Liste des Umgebungstyps (dev, stage, prod), für den diese Konfiguration gültig ist. Wenn kein Metadatenobjekt deklariert wird, ist die Konfiguration für alle Umgebungstypen gültig.
+* einige Eigenschaften über dem Daten-Knoten - siehe den Artikel [Konfiguration der Pipeline ](/help/operations/config-pipeline.md#common-syntax) für eine Beschreibung. Der Eigenschaftswert `kind` sollte *MaintenanceTasks* lauten und die Version sollte auf *1* eingestellt sein.
+
 * ein Datenobjekt mit den Objekten `versionPurge` und `auditLogPurge`.
 
 Siehe die Definitionen und Syntax der Objekte `versionPurge` und `auditLogPurge` unten.
 
-Sie sollten die Konfiguration ähnlich wie im folgenden Beispiel strukturieren:
+Strukturieren Sie die Konfiguration ähnlich dem folgenden Beispiel:
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ Beachten Sie Folgendes, damit die Konfiguration gültig ist:
 * Alle Eigenschaften müssen definiert sein. Es gibt keine geerbten Standardwerte.
 * Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
 
->[!NOTE]
->Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq mt.yaml`).
-
-**3** – Konfigurieren Sie die produktionsfremden und die Produktions-Konfigurations-Pipelines.
-
-Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) unterstützen keine Bereinigungen.  Erstellen Sie für andere Umgebungstypen in Produktionsprogrammen (keine Sandbox) eine zielgerichtete Bereitstellungs-Konfigurations-Pipeline in Cloud Manager.
-
-Weitere Informationen finden Sie unter [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+**4** - Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Konfiguration der Pipeline beschrieben.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxes und schnelle Entwicklungsumgebungen (RDEs) unterstützen keine Bereinigung.
 
 ### Versionsbereinigung {#version-purge}
 

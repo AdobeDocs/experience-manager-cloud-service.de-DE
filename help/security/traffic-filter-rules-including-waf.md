@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
-workflow-type: ht
-source-wordcount: '3938'
-ht-degree: 100%
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+workflow-type: tm+mt
+source-wordcount: '3939'
+ht-degree: 92%
 
 ---
 
@@ -64,13 +64,13 @@ Kundinnen und Kunden können proaktive Maßnahmen ergreifen, um Angriffe auf Anw
 
 Auf der Apache-Ebene können Kundinnen und Kunden beispielsweise das [Dispatcher-Modul](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) konfigurieren, um den Zugriff auf bestimmte Inhalte zu beschränken.
 
-Wie in diesem Artikel beschrieben, können Traffic-Filterregeln mithilfe der Cloud Manager-Konfigurations-Pipeline auf dem von Adobe verwalteten CDN bereitgestellt werden. Zusätzlich zu Traffic-Filterregeln, die auf Eigenschaften wie IP-Adresse, Pfad und Kopfzeilen basieren, oder Regeln, die auf der Festlegung von Ratenbeschränkungen beruhen, können Kundinnen und Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die sogenannten WAF-Regeln.
+Wie in diesem Artikel beschrieben, können Traffic-Filterregeln mithilfe der Cloud Manager-Konfigurations-Pipelines [auf dem Adobe verwalteten CDN bereitgestellt werden.](/help/operations/config-pipeline.md) Zusätzlich zu Traffic-Filterregeln, die auf Eigenschaften wie IP-Adresse, Pfad und Kopfzeilen oder Regeln basieren, die auf Ratenbeschränkungen basieren, können Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die als WAF-Regeln bezeichnet werden.
 
 ## Vorgeschlagener Prozess {#suggested-process}
 
 Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die Erstellung der richtigen Traffic-Filterregeln:
 
-1. Konfigurieren Sie die Konfigurations-Pipelines für Nicht-Produktion und Produktion, wie im Abschnitt [Setup](#setup) beschrieben.
+1. Konfigurieren Sie die Konfigurations-Pipelines für Nicht-Produktion und Produktion, wie im Abschnitt [Einrichten](#setup) beschrieben.
 1. Kundinnen und Kunden, die die Unterkategorie der WAF-Traffic-Filterregeln lizenziert haben, sollten sie in Cloud Manager aktivieren.
 1. Lesen und probieren Sie das Tutorial aus, um genau zu verstehen, wie Traffic-Filterregeln verwendet werden, einschließlich WAF-Regeln, wenn sie lizenziert wurden. Das Tutorial führt Sie durch die Bereitstellung von Regeln in einer Entwicklungsumgebung, die Simulation von schädlichem Traffic sowie den Download der [CDN-Protokolle](#cdn-logs) und ihre Analyse in den [Dashboard-Tools](#dashboard-tooling).
 1. Kopieren Sie die empfohlenen Anfangsregeln nach `cdn.yaml` und stellen Sie die Konfiguration in der Produktionsumgebung im Protokollmodus bereit.
@@ -78,16 +78,9 @@ Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die 
 1. Fügen Sie benutzerdefinierte Regeln hinzu, die auf der Analyse der CDN-Protokolle basieren. Testen Sie sie zunächst mit simuliertem Traffic in Entwicklungsumgebungen, bevor Sie sie in Staging- und Produktionsumgebungen im Protokollmodus und dann im Blockmodus bereitstellen.
 1. Überwachen Sie den Traffic auf fortlaufender Basis und nehmen Sie Änderungen an den Regeln vor, wenn sich die Bedrohungslage weiterentwickelt.
 
-## Setup {#setup}
+## Einrichtung {#setup}
 
-1. Erstellen Sie zunächst den folgenden Ordner und die Dateistruktur des Ordners der obersten Ebene in Ihrem Projekt in Git:
-
-   ```
-   config/
-        cdn.yaml
-   ```
-
-1. `cdn.yaml` sollte Metadaten sowie eine Liste von Traffic-Filterregeln und WAF-Regeln enthalten.
+1. Erstellen Sie eine Datei `cdn.yaml` mit einer Reihe von Traffic-Filterregeln, einschließlich WAF-Regeln.
 
    ```
    kind: "CDN"
@@ -108,33 +101,22 @@ Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die 
          action: block
    ```
 
-Der Parameter `kind` sollte auf `CDN` gesetzt werden und die Version sollte auf die Version des Schemas gesetzt werden, die `1` ist. Siehe folgende Beispiele:
+   Eine Beschreibung der Eigenschaften über dem Knoten `data` finden Sie im Artikel [config pipeline article](/help/operations/config-pipeline.md#common-syntax) . Der Eigenschaftswert `kind` sollte auf *CDN* und die Version auf `1` festgelegt werden.
 
-
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. Wenn WAF-Regeln lizenziert sind, sollten Sie die Funktion in Cloud Manager aktivieren, wie unten für sowohl neue als auch bestehende Programmszenarien beschrieben.
 
    1. Um WAF in einem neuen Programm zu konfigurieren, markieren Sie das Kontrollkästchen **WAF-DDOS-Schutz** auf der Registerkarte **Sicherheit**, wenn Sie [ein Produktionsprogramm hinzufügen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
-   1. Um WAF für ein vorhandenes Programm zu konfigurieren, können Sie jederzeit [Ihr Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) und auf der Registerkarte **Sicherheit** die Option **WAF-DDOS** deaktivieren oder aktivieren.
+   1. Um WAF in einem bestehenden Programm zu konfigurieren, bearbeiten Sie das Programm ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) und deaktivieren oder aktivieren Sie auf der Registerkarte **Sicherheit** jederzeit die Option **WAF-DDOS** .[
 
-1. Erstellen Sie für andere Umgebungstypen als RDE eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager.
-
-   * [Siehe: Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Siehe: Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-
-Bei RDEs wird die Befehlszeile verwendet, RDE wird jedoch derzeit nicht unterstützt.
-
-**Anmerkungen**
-
-* Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
+1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Konfiguration der Pipeline beschrieben.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Die Pipeline verweist auf einen Ordner der obersten Ebene `config` , in dem die Datei `cdn.yaml` irgendwo darunter abgelegt ist, wie [hier beschrieben](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntax für Traffic-Filterregeln {#rules-syntax}
 
-Sie können `traffic filter rules` konfigurieren, um eine Übereinstimmung mit Mustern wie IPs, Benutzeragent, Anfragekopfzeilen, Host-Name, Geo und URL zu erhalten.
+Sie können *Traffic-Filterregeln* so konfigurieren, dass sie mit Mustern wie IPs, Benutzeragent, Anfragekopfzeilen, Hostname, Geo und URL übereinstimmen.
 
-Kunden, die eine Lizenz für das Angebot „Enhanced Security“ oder „WAF-DDoS Protection Security“ erwerben, können auch eine spezielle Kategorie von Traffic-Filterregeln namens `WAF traffic filter rules` (oder kurz: WAF-Regeln) konfigurieren, die auf eine oder mehrere [WAF-Flags](#waf-flags-list) verweisen.
+Kunden, die die Sicherheitsfunktion von Enhanced Security oder WAF-DDoS lizenzieren, können auch eine spezielle Kategorie von Traffic-Filterregeln konfigurieren, die als *Traffic-Filterregeln von WAF* (oder kurz WAF-Regeln ) bezeichnet werden und auf eine oder mehrere [WAF-Flags](#waf-flags-list) verweisen.
 
 Im Folgenden finden Sie ein Beispiel für einen Satz von Traffic-Filterregeln, der auch eine WAF-Regel enthält.
 
@@ -280,6 +262,8 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | SCANNER | Scanner | Identifiziert beliebte Scan-Dienste und -Werkzeuge. |
 | RESPONSESPLIT | HTTP-Antwortaufteilung | Gibt an, wann CRLF-Zeichen als Eingabe an die Anwendung gesendet werden, um Kopfzeilen in die HTTP-Antwort einzufügen. |
 | XML-ERROR | XML-Codierungsfehler | Ein POST-, PUT- oder PATCH-Anfrageinhalt, für den in der Anfragekopfzeile angegeben wird, dass der „Content-Type“ XML enthält, der jedoch XML-Parsing-Fehler aufweist. Dies hängt häufig mit einem Programmierfehler oder einer automatisierten oder schädlichen Anfrage zusammen. |
+| DATENZENTRUM | Rechenzentrum | Identifiziert die Anforderung als von einem bekannten Hosting-Anbieter stammt. Diese Art von Traffic wird normalerweise nicht mit einem echten Endbenutzer verknüpft. |
+
 
 ## Überlegungen {#considerations}
 
@@ -752,7 +736,7 @@ Zwei Tutorials sind verfügbar.
 
 Das Tutorial führt Sie durch folgende Themen:
 
-* Einrichten der Konfigurations-Pipeline für Cloud Manager
+* Einrichten der Cloud Manager-Konfigurationspipeline
 * Verwenden von Tools zur Simulation von schädlichem Traffic
 * Definieren von Traffic-Filterregeln, einschließlich WAF-Regeln
 * Analyse von Ergebnissen mit Dashboard-Tools

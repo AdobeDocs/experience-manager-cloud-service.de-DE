@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '1500'
+ht-degree: 90%
 
 ---
 
@@ -56,7 +56,8 @@ Eine produktionsfremde Pipeline dient hauptsächlich dazu, Code-Qualitätsprüfu
 Neben Produktion und produktionsfremd können Pipelines nach dem Typ des von ihnen bereitgestellten Codes unterschieden werden.
 
 * **[Full-Stack-Pipelines](#full-stack-pipeline)**: Gleichzeitiges Bereitstellen von Backend- und Frontend-Code-Builds mit einer oder mehreren AEM-Serveranwendungen zusammen mit HTTPD-/Dispatcher-Konfigurationen
-* **[Konfigurations-Pipelines](#config-deployment-pipeline)**: Konfigurieren und Bereitstellen von Traffic-Filterregeln, einschließlich WAF-Regeln, innerhalb von Minuten
+* **[Konfigurations-Pipelines](#config-deployment-pipeline)** - Schnelles Bereitstellen von Konfigurationen für Funktionen wie Protokollweiterleitung, Bereinigungsbezogene Wartungsaufgaben und verschiedene CDN-Konfigurationen wie Traffic-Filterregeln (einschließlich WAF-Regeln), Anforderung- und Antworttransformationen, Ursprungsselektoren, clientseitige Umleitungen, Fehlerseiten, kundenverwaltete CDN-Schlüssel, Bereinigungs-API-Schlüssel und grundlegende Authentifizierungsfunktionen.
+   * Weitere Informationen finden Sie im Dokument [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md) .
 * **[Frontend-Pipelines](#front-end)**: Bereitstellen von Frontend-Code-Builds mit einer oder mehreren Client-seitigen Benutzeroberflächenanwendungen
 * **[Web-Ebenen-Konfigurations-Pipelines](#web-tier-config-pipelines)**: Bereitstellung von HTTPD-/Dispatcher-Konfigurationen
 
@@ -71,11 +72,10 @@ In der folgenden Tabelle sind die in Cloud Manager verfügbaren Pipelines und de
 | Produktion oder produktionsfremd | Bereitstellung | Full-Stack | Gleichzeitige Bereitstellung von Backend- und Frontend-Code-Builds zusammen mit HTTPD-/Dispatcher-Konfigurationen | Wenn Frontend-Code gleichzeitig mit AEM-Servercode bereitgestellt werden muss.<br>Wenn Frontend-Pipelines oder Web-Stufen-Konfigurations-Pipelines noch nicht übernommen wurden. |
 | Produktion oder produktionsfremd | Bereitstellung | Frontend | Bereitstellung von Frontend-Code-Builds, die eine oder mehrere Client-seitige Benutzeroberflächenanwendungen enthalten | Unterstützt mehrere gleichzeitige Frontend-Pipelines<br>Viel schneller als Full-Stack-Bereitstellungen |
 | Produktion oder produktionsfremd | Bereitstellung | Web-Stufen-Konfiguration | Bereitstellen von HTTPD-/Dispatcher-Konfigurationen | Bereitstellung in Minuten |
-| Produktion oder produktionsfremd | Bereitstellung | Config | Stellt Traffic-Filterregeln bereit | Bereitstellung in Minuten |
+| Produktion oder produktionsfremd | Bereitstellung | Config | Stellt die [Konfiguration für eine Reihe von Funktionen](/help/operations/config-pipeline.md) bereit, die sich auf CDN-, Log-Weiterleitungs- und Bereinigungs-Wartungsaufgaben beziehen | Bereitstellung in Minuten |
 | Produktionsfremd | Code-Qualität | Full-Stack | Führt Code-Qualitätsprüfungen für Full-Stack-Code ohne Bereitstellung durch | Unterstützt mehrere Pipelines |
 | Produktionsfremd | Code-Qualität | Frontend | Führt Code-Qualitätsprüfungen für Frontend-Code ohne Bereitstellung durch | Unterstützt mehrere Pipelines |
 | Produktionsfremd | Code-Qualität | Web-Stufen-Konfiguration | Führt Code-Qualitätsprüfungen für Dispatcher-Konfigurationen ohne Bereitstellung aus | Unterstützt mehrere Pipelines |
-| Produktionsfremd | Code-Qualität | Config | Stellt Traffic-Filterregeln bereit |  |
 
 Die folgende Abbildung zeigt Pipeline-Konfigurationen in Cloud Manager mit traditionellen, einzelnen Frontend-Repository- oder unabhängigen Frontend-Repository-Setups.
 
@@ -116,9 +116,9 @@ Informationen zum Konfigurieren von Full-Stack-Pipelines finden Sie in den folge
 
 ## Konfigurations-Pipelines {#config-deployment-pipeline}
 
-Mit einer Konfigurations-Pipeline können Sie innerhalb von Minuten Traffic-Filterregeln, einschließlich WAF-Regeln, konfigurieren und bereitstellen.
+Mit einer Konfigurations-Pipeline können Sie schnell Konfigurationen für die Protokollweiterleitung, Bereinigungs-bezogene Wartungsaufgaben und verschiedene CDN-Konfigurationen bereitstellen, wie z. B. Traffic-Filterregeln (einschließlich WAF-Regeln), Anforderungs- und Antworttransformationen, Ursprungsselektoren, clientseitige Umleitungen, Fehlerseiten, kundenverwaltete CDN-Schlüssel, Bereinigungs-API-Schlüssel und grundlegende Authentifizierungsfunktionen.
 
-Unter [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md), erfahren Sie, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+Im Dokument [Verwenden von Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) finden Sie eine umfassende Liste der unterstützten Funktionen und erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 
 ### Konfigurieren von Konfigurations-Pipelines {#configure-config-deployment}
 

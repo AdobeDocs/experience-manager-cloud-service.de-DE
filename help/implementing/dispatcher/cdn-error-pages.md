@@ -1,41 +1,34 @@
 ---
 title: Konfigurieren von CDN-Fehlerseiten
-description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft setzen können, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der Cloud Manager-Konfigurations-Pipeline bereitgestellt wird.
+description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft setzen können, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und in einer Konfigurationsdatei auf diese verweisen, die mithilfe der Cloud Manager-Konfigurationspipeline bereitgestellt wird.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 100%
+source-wordcount: '365'
+ht-degree: 57%
 
 ---
 
+
 # Konfigurieren von CDN-Fehlerseiten {#cdn-error-pages}
 
-Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) den AEM-Ursprung nicht erreichen kann, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die standardmäßige Fehlerseite außer Kraft setzen, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der [Cloud Manager-Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) bereitgestellt wird.
+Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) den AEM-Ursprung nicht erreichen kann, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die Standardfehlerseite außer Kraft setzen, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und sie in einer Konfigurationsdatei referenzieren, die mithilfe der Cloud Manager [config-Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager) bereitgestellt wird.
 
 ## Setup {#setup}
 
 Bevor Sie die standardmäßige Fehlerseite außer Kraft setzen können, müssen Sie wie folgt vorgehen:
 
-* Erstellen Sie diesen Ordner und die Dateistruktur im obersten Ordner Ihres Git-Projekts:
+1. Erstellen Sie eine Datei mit dem Namen `cdn.yaml` oder eine ähnliche Datei, die auf den Syntax-Abschnitt unten verweist.
 
-```
-config/
-     cdn.yaml
-```
+1. Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen *config* oder einem ähnlichen Ordner, wie im Abschnitt [Konfiguration der Pipeline-Artikel](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-* Die Konfigurationsdatei `cdn.yaml` sollte sowohl Metadaten als auch die Regeln enthalten, die in den nachfolgenden Beispielen beschrieben sind. Der Parameter `kind` sollte auf `CDN` und die Version auf die Schemaversion eingestellt sein (derzeit `1`). 
+1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Konfiguration der Pipeline ](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
 
-* Erstellen Sie eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager. Siehe [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Stellen Sie die Konfiguration bereit.
 
-**Anmerkungen**
-
-* RDEs unterstützen derzeit nicht die Konfigurations-Pipeline.
-* Sie können `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
-
-### Konfiguration {#configuration}
+### Syntax {#syntax}
 
 Die Fehlerseite wird als Einzelseitenanwendung (Single Page Application, SPA) implementiert und verweist auf eine Handvoll von Eigenschaften, wie im folgenden Beispiel gezeigt.   Die statischen Dateien, auf die von den URLs verwiesen wird, sollten von Ihnen in einem über das Internet zugänglichen Dienst wie Amazon S3 oder Azure Blob Storage gehostet werden.
 
@@ -54,6 +47,8 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+Eine Beschreibung der Eigenschaften über dem Daten-Knoten finden Sie im Artikel [Konfiguration der Pipeline ](/help/operations/config-pipeline.md#common-syntax) . Der Wert der Eigenschaft type sollte *CDN* und die Eigenschaft `version` auf *1* eingestellt sein.
+
 
 | Name | Zulässige Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
