@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Adobe Experience Manager (AEM) as a Cloud Service
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ Nicht-intrusive Wartungsupdates sind automatische Aktualisierungen, die ohne Ein
 #### Aktualisieren von Aktivitäten
 
 Die aktuelle AEM-Version kann wie bisher für jede Umgebung mithilfe des Bedienfelds „Umgebungen der Cloud Manager-Benutzeroberfläche“ überprüft werden. Dieselben Qualitäts-Gates, die in der Pipeline verwendet werden, werden von nicht-intrusiven Wartungs-Updates verwendet, einschließlich der von Kundinnen und Kunden geschriebenen Tests.
-Es wird eine Benachrichtigung über die Cloud Manager-Benutzeroberfläche gesendet, sobald ein nicht-intrusives Wartungs-Update auf die Umgebungen Ihres Programms angewendet wird. Sie können dies so konfigurieren, dass sie auch an Ihre E-Mail-Adresse gesendet wird.
+Eine [Cloud Manager UI-Benachrichtigung](/help/implementing/cloud-manager/notifications.md) wird gesendet, sobald eine nicht störende Wartungsaktualisierung auf die Umgebungen Ihres Programms angewendet wird. Sie können dies so konfigurieren, dass sie auch an Ihre E-Mail-Adresse gesendet wird.
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ Normalerweise verursachen Aktualisierungen keine Ausfallzeiten, auch nicht bei d
 Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In einer [rollierenden Implementierung](/help/implementing/deploying/overview.md#how-rolling-deployments-work) enthält die neue AEM-Version ein eigenes `/libs` (das auf TarMK basierende, unveränderliche Repository). Es unterscheidet sich von der älteren AEM-Version, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content`, `/conf` und `/etc` enthält.
 
 Da sowohl die alte als auch die neue Version über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis die alte vollständig durch die neue ersetzt wurde. 
+
+## Weiterführende Informationen {#further-information}
+
+Weitere Informationen zu verwandten Themen:
+
+* [CI/CD-Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Benachrichtigung zur Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/notifications.md)
+* [Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)
