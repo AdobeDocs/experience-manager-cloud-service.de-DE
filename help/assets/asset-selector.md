@@ -4,10 +4,10 @@ description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeforma
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
+source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
 workflow-type: tm+mt
-source-wordcount: '4561'
-ht-degree: 86%
+source-wordcount: '5339'
+ht-degree: 88%
 
 ---
 
@@ -107,6 +107,7 @@ Sie können den Asset-Wähler mit verschiedenen Anwendungen integrieren, z. B.:
 
 * [Integrieren des Asset-Wählers mit einer [!DNL Adobe] -Anwendung](#adobe-app-integration-vanilla)
 * [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](#adobe-non-app-integration)
+* [Integrieren in Dynamic Media mit OpenAPI-Funktionen](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -386,6 +387,171 @@ Der Asset-Wähler wird im Container-Element `<div>` gerendert, wie in *Zeile 74*
 >
 >Wenn Sie den Asset-Wähler mithilfe des Workflows zum Registrieren und Anmelden integriert haben, aber trotzdem nicht auf das Bereitstellungs-Repository zugreifen können, stellen Sie sicher, dass die Browser-Cookies bereinigt wurden. Andernfalls tritt der Fehler `invalid_credentials All session cookies are empty` in der Konsole auf.
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Integration in Dynamic Media mit OpenAPI-Funktionen]
+
+### Voraussetzungen {#prereqs-polaris}
+
+Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler in Dynamic Media mit OpenAPI-Funktionen integrieren:
+
+* [Kommunikationsmethoden](#prereqs)
+* Für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen benötigen Sie folgende Lizenzen:
+   * Assets-Repository (z. B. Experience Manager Assets as a Cloud Service)
+   * AEM und Dynamic Media.
+* Nur [genehmigte Assets](#approved-assets.md) zur Verwendung verfügbar, um die Markenkonsistenz sicherzustellen.
+
+### Integrieren in Dynamic Media mit OpenAPI-Funktionen{#adobe-app-integration-polaris}
+
+Die Integration des Asset-Wählers mit dem OpenAPI-Prozess von Dynamic Media umfasst verschiedene Schritte, darunter die Erstellung einer benutzerdefinierten oder auswahlbereiten Dynamic Media-URL.
+
++++**Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen**
+
+Die Eigenschaften `rootPath` und `path` sollten nicht Teil von Dynamic Media mit OpenAPI-Funktionen sein. Stattdessen können Sie die Eigenschaft `aemTierType` konfigurieren. Die Syntax der Konfiguration ist wie folgt:
+
+```
+aemTierType:[1: "delivery"]
+```
+
+Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie im Abschnitt [Eigenschaften des Asset-Wählers](#asset-selector-properties) unter der Eigenschaft `aemTierType`.
+
++++
+
++++**Erstellen einer dynamischen Versand-URL anhand genehmigter Assets**
+Nachdem Sie den Asset-Wähler eingerichtet haben, wird ein Objektschema verwendet, um eine dynamische Versand-URL anhand der genehmigten Assets zu erstellen.
+Hier ist ein Beispiel für ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
+
+| Objekt | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| API-Stamm | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| format | `.jpg` |
+
+**API-Spezifikation für die Bereitstellung genehmigter Assets**
+
+URL-Format:
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+Dabei gilt Folgendes:
+
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
+* Der API-Stamm lautet `"/adobe/dynamicmedia/deliver"`.
+* `<asset-id>` ist die Asset-Kennung.
+* `<seo-name>` ist der Name eines Assets.
+* `<format>` ist das Ausgabeformat.
+* `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt.
+
+**API zur Bereitstellung genehmigter Assets**
+
+Die dynamische Versand-URL weist die folgende Syntax auf:
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, wobei Folgendes gilt:
+
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
+* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets/deliver"`.
+* `<asset-id>` ist die Asset-Kennung.
+* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann.
+
++++
+
++++**Auswahlbereite dynamische Versand-URL**
+Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Zum Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
+
+| Objekt | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| API-Stamm | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+Im Folgenden werden die beiden Möglichkeiten zum Durchlaufen des JSON-Objekts beschrieben:
+
+![Dynamische Versand-URL](assets/dynamic-delivery-url.png)
+
+* **Miniaturansicht:** Bei Miniaturansichten kann es sich um Bilder und Assets wie PDF, Videos usw. handeln. Sie können jedoch die Höhe- und Breitenattribute der Miniaturansicht eines Assets als Ausgabedarstellung für die dynamische Bereitstellung verwenden.
+Der folgende Satz von Ausgabedarstellungen kann für Assets vom Typ PDF verwendet werden:
+Sobald eine PDF-Datei im Sidekick ausgewählt ist, bietet der Auswahlkontext die folgenden Informationen. Nachstehend wird beschrieben, wie Sie das JSON-Objekt durchlaufen:
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  Im Screenshot oben finden Sie unter `selection[0].....selection[4]` den Link für das Array der Ausgabedarstellung. Die Haupteigenschaften einer der Miniaturausgabedarstellungen umfassen beispielsweise Folgendes:
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PDF-Datei in das Zielerlebnis integriert werden, wenn eine PDF-Datei erforderlich ist und nicht ihre Miniaturansicht. Zum Beispiel: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+
+* **Video:** Sie können die Video-Player-URL für die Assets vom Typ „Video“ verwenden, die einen eingebetteten iFrame verwenden. Sie können die folgenden Array-Ausgabedarstellungen im Zielerlebnis verwenden:
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  Im Screenshot oben finden Sie unter `selection[0].....selection[4]` den Link für das Array der Ausgabedarstellung. Die Haupteigenschaften einer der Miniaturausgabedarstellungen umfassen beispielsweise Folgendes:
+
+  Das Code-Fragment im obigen Screenshot ist ein Beispiel für ein Video-Asset. Es enthält das Array der Ausgabedarstellungs-Links. `selection[5]` im Auszug ist das Beispiel für die Miniaturansicht eines Bildes, die als Platzhalter für die Miniaturansicht eines Videos im Zielerlebnis verwendet werden kann. `selection[5]` im Array der Ausgabedarstellungen ist für den Video-Player vorgesehen. Dies dient als HTML und kann als `src` des iFrames festgelegt werden. Es unterstützt das Streaming mit adaptiver Bitrate (die Web-optimierte Bereitstellung des Videos).
+
+  Im obigen Beispiel lautet die URL des Video-Players wie folgt: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++**Benutzeroberfläche des Asset-Wählers für Dynamic Media mit OpenAPI-Funktionen**
+
+Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie die reine Asset-Struktur aller genehmigten Assets sehen, die im Experience Manager-Asset-Repository verfügbar sind.
+
+![Benutzeroberfläche von Dynamic Media mit OpenAPI-Funktionen](assets/polaris-ui.png)
+
+* **A**: [Bedienfeld aus-/einblenden](#hide-show-panel)
+* **B**: [Assets](#repository)
+* **C**: [Sortieung](#sorting)
+* **D**: [Filter](#filters)
+* **E**: [Suchleiste](#search-bar)
+* **G**: [Sortierung in auf- oder absteigender Reihenfolge](#sorting)
+* **G**: Auswahl abbrechen
+* **H**: Einzelne oder mehrere Assets auswählen
+
++++
+
++++**Konfigurieren benutzerdefinierter Filter**
+Mit dem Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die Eigenschaft `filterSchema` wird zum Konfigurieren solcher Eigenschaften verwendet. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht werden, womit die Filter konfiguriert werden können. Dabei gilt Folgendes:
+
+* Bei `metadata` handelt es sich um die Informationen eines Assets.
+* Bei `embedded` handelt es sich um den statischen Parameter, der für die Konfiguration verwendet wird.
+* Bei `<propertyname>` handelt es sich um den Filternamen, den Sie konfigurieren.
+
+Für die Konfiguration werden die auf Ebene `jcr:content/metadata/` definierten Eigenschaften für die zu konfigurierenden Filter als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht.
+
+Beispielsweise wird im Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen eine Eigenschaft unter `asset jcr:content/metadata/client_name:market` für die Filterkonfiguration in `metadata.embedded.client_name:market` umgewandelt.
+
+Um den Namen abzurufen, muss eine einmalige Aktivität durchgeführt werden. Führen Sie einen Such-API-Aufruf für das Asset aus und rufen Sie den Eigenschaftsnamen (also den Bucket) ab.
+
++++
+
 >[!ENDTABS]
 
 ## Eigenschaften des Asset-Wählers {#asset-selector-properties}
@@ -398,8 +564,6 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *imsOrg* | Zeichenfolge | Ja | | Die Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] für Ihre Organisation zugewiesen wird. Der `imsOrg`-Schlüssel ist erforderlich, damit authentifiziert wird, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
 | *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendeter IMS-Bearer-Token. Das `imsToken` ist erforderlich, wenn Sie eine [!DNL Adobe]-Anwendung für die Integration verwenden. |
 | *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. Der `apiKey` ist erforderlich, wenn Sie eine Integration mit einer [!DNL Adobe]-Anwendung verwenden. |
-| *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Wähler Ihre Assets anzeigt. `rootPath` kann auch in Form einer Verkapselung verwendet werden. Bei dem folgenden Pfad `/content/dam/marketing/subfolder/` können Sie mit dem Asset-Wähler beispielsweise nicht durch übergeordnete Ordner navigieren, sondern nur die untergeordneten Ordner anzeigen. |
-| *path* | Zeichenfolge | Nein | | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Wähler gerendert wird. |
 | *filterSchema* | Array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen des Asset-Wählers einschränken möchten. |
 | *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Für! Beispiel: MIME-Typ JPG, PNG, GIF |
 | *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn der Asset-Wähler gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Zum Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie ein anderes Verzeichnis verwenden müssen, geben Sie auch einen Wert für die Eigenschaft `path` an. |
@@ -427,6 +591,8 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *iryOptions* | Funktion | | | Sie können zwischen den beiden folgenden Eigenschaften verwenden: **getExpiryStatus** , das den Status eines abgelaufenen Assets angibt. Die Funktion gibt basierend auf dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](#customize-expired-assets). Darüber hinaus können Sie **allowSelectionAndDrag** verwenden, in dem der Wert der Funktion entweder `true` oder `false` sein kann. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset nicht ausgewählt oder auf die Arbeitsfläche gezogen werden. |
 | *showToast* | | Nein | | Dadurch kann der Asset-Selektor eine angepasste Toastmeldung für das abgelaufene Asset anzeigen. |
 <!--
+| *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
 -->
