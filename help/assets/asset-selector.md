@@ -4,9 +4,9 @@ description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeforma
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
+source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4561'
 ht-degree: 86%
 
 ---
@@ -424,8 +424,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *dialogSize* | Klein, mittelgroß, groß, Vollbild oder Vollbild-Übernahme | Zeichenfolge | Optional | Sie können das Layout kontrollieren, indem Sie dessen Größe mithilfe der angegebenen Optionen festlegen. |
 | *colorScheme* | Hell oder dunkel | Nein | | Diese Eigenschaft wird verwendet, um das Design einer Asset-Wähler-Anwendung festzulegen. Sie können zwischen einem hellen und dunklen Design wählen. |
 | *filterRepoList* | Funktion | Nein |  | Sie können die Rückruffunktion `filterRepoList` verwenden, die das Experience Manager-Repository aufruft und eine gefilterte Liste von Repositorys zurückgibt. |
-| *getExpiryStatus* | Funktion | Nein | | Es stellt den Status eines abgelaufenen Assets bereit. Die Funktion gibt basierend auf dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](#customize-expired-assets). |
-| *allowSelectionAndDrag* | Boolesch | Nein | False | Der Wert der Funktion kann entweder `true` oder `false` sein. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset nicht ausgewählt oder auf die Arbeitsfläche gezogen werden. |
+| *iryOptions* | Funktion | | | Sie können zwischen den beiden folgenden Eigenschaften verwenden: **getExpiryStatus** , das den Status eines abgelaufenen Assets angibt. Die Funktion gibt basierend auf dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](#customize-expired-assets). Darüber hinaus können Sie **allowSelectionAndDrag** verwenden, in dem der Wert der Funktion entweder `true` oder `false` sein kann. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset nicht ausgewählt oder auf die Arbeitsfläche gezogen werden. |
 | *showToast* | | Nein | | Dadurch kann der Asset-Selektor eine angepasste Toastmeldung für das abgelaufene Asset anzeigen. |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
