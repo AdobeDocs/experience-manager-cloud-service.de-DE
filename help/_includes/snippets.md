@@ -1,8 +1,8 @@
 ---
 source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -117,13 +117,13 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
   <table>
   </tbody>
 
-## Regel-Editor Siehe auch {#see-also-rule-editor}
+## Regeleditor: siehe auch {#see-also-rule-editor}
 
-* [Einführung in den Regeleditor für adaptive Forms basierend auf Kernkomponenten](/help/forms/rule-editor-core-components.md)
-* [Operatortypen und -ereignisse im Regeleditor eines adaptiven Formulars basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-events-operators.md)
-* [Benutzeroberfläche des Regeleditors für adaptive Forms basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-user-interface.md)
-* [Verschiedene Anwendungsfälle des Regeleditors für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-user-interface.md)
+* [Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components.md)
+* [Operatortypen und -ereignisse im Regeleditor eines auf Kernkomponenten basierendes adaptiven Formulars](/help/forms/rule-editor-core-components-events-operators.md)
+* [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
+* [Verschiedene Anwendungsfälle des Regeleditors für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-user-interface.md)
 * [Unterschiede in verschiedenen Editionen des Regeleditors](/help/forms/rule-editor-core-components-difference-tables.md)
-* [Einführung in benutzerdefinierte Funktionen für adaptive Forms basierend auf Kernkomponenten](/help/forms/create-and-use-custom-functions.md)
-* [Erstellen einer benutzerdefinierten Funktion für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/custom-function-core-component-create-function.md)
+* [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
+* [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
 * [Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen](/help/forms/custom-function-core-components-use-cases.md)
