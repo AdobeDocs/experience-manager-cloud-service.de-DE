@@ -7,7 +7,7 @@ role: Admin, Developer, User
 source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 71%
+ht-degree: 87%
 
 ---
 
@@ -46,13 +46,13 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
    ![Bild](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-1. Klicken Sie auf **Speichern** , um eine Verbindung zum Screens Content Provider herzustellen.
+1. Klicken Sie auf **Speichern**, um eine Verbindung zum Screens-Inhaltsanbieter herzustellen.
 
 1. Wenn Sie die AEM Veröffentlichungsinstanz so konfiguriert haben, dass nur der Zugriff auf vertrauenswürdige IP-Adressen durch die IP--Funktion von Cloud Manager zugelassen wird, müssen Sie eine Kopfzeile mit einem Schlüsselwert im Einstellungsdialogfeld konfigurieren, wie unten dargestellt.
-Die IP-Adressen, die auf die Whitelist gesetzt werden müssen, müssen ebenfalls in die Konfigurationsdatei verschoben werden und aus den Cloud Manager-Einstellungen [nicht angewendet](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) werden.
+Die IP-Adressen, die auf die Zulassungsliste gesetzt werden müssen, müssen ebenfalls in die Konfigurationsdatei verschoben werden, und ihre Anwendung muss in den Cloud Manager-Einstellungen [aufgehoben](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) werden.
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens20b.png)
-Derselbe Schlüssel muss in AEM CDN-Konfiguration konfiguriert werden.  Es wird empfohlen, den Kopfzeilenwert nicht direkt in GITHub zu platzieren und einen [geheimen Verweis](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) zu verwenden.
+   ![Bild](/help/screens-cloud/assets/configure/configure-screens20b.png)
+Derselbe Schlüssel muss in der AEM CDN-Konfiguration konfiguriert werden. Es wird empfohlen, den Kopfzeilenwert nicht direkt in GITHub zu platzieren, sondern einen [geheimen Verweis](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) zu verwenden.
 Nachfolgend finden Sie ein Beispiel für [CDN config](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf):
 
    ```kind: "CDN"

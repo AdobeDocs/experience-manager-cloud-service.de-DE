@@ -7,7 +7,7 @@ exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4550'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -743,12 +743,12 @@ Verwenden Sie das folgende Code-Snippet, um eine Schnellmeldung zur Verwendung e
 
 ### Kontextaufruffilter{#contextual-invocation-filter}
 
-Mit der Asset-Auswahl können Sie einen Tag-Auswahl-Filter hinzufügen. Es unterstützt eine Tag-Gruppe, die alle relevanten Tags mit einer bestimmten Tagging-Gruppe kombiniert. Darüber hinaus können Sie zusätzliche Tags auswählen, die dem gesuchten Asset entsprechen. Darüber hinaus können Sie die standardmäßigen Tag-Gruppen auch unter dem kontextbezogenen Aufruf-Filter festlegen, der hauptsächlich von Ihnen verwendet wird, damit Sie von unterwegs darauf zugreifen können.
+Mit dem Asset-Wähler können Sie einen Filter zur Auswahl von Tags hinzufügen. Dies unterstützt eine Tag-Gruppe, die alle relevanten Tags mit einer bestimmten Tagging-Gruppe kombiniert. Darüber hinaus können Sie zusätzliche Tags auswählen, die dem gesuchten Asset entsprechen. Außerdem können Sie unter dem Kontextaufruffilter auch die standardmäßigen Tag-Gruppen festlegen, die Sie hauptsächlich nutzen, damit Sie unterwegs darauf zugreifen können.
 
 >
 >
-> * Sie müssen ein Codefragment für kontextbezogene Aufrufe hinzufügen, um den Tagging-Filter bei der Suche zu aktivieren.
-> * Es ist erforderlich, die name -Eigenschaft zu verwenden, die dem Tag-Gruppentyp `(property=xcm:keywords.id=)` entspricht.
+> * Sie müssen ein Code-Fragment für kontextbezogene Aufrufe hinzufügen, um den Tagging-Filter bei der Suche zu aktivieren.
+> * Es muss zwingend die Eigenschaft „name“ verwendet werden, die dem Tag-Gruppentyp `(property=xcm:keywords.id=)` entspricht.
 
 Syntax:
 
@@ -763,7 +763,7 @@ const filterSchema=useMemo(() => {
 }, []);
 ```
 
-Um im Filterbereich Tag-Gruppen hinzuzufügen, muss standardmäßig mindestens eine Tag-Gruppe hinzugefügt werden. Verwenden Sie außerdem das folgende Codefragment, um die standardmäßigen Tags hinzuzufügen, die aus der Tag-Gruppe vorausgewählt sind.
+Um im Filterbereich Tag-Gruppen hinzuzufügen, muss standardmäßig mindestens eine Tag-Gruppe hinzugefügt werden. Verwenden Sie außerdem das folgende Code-Fragment, um die standardmäßigen Tags hinzuzufügen, die aus der Tag-Gruppe vorausgewählt sind.
 
 ```
 export const WithAssetTags = (props) = {

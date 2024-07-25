@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -92,7 +92,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat neu verschlüsseln, indem Sie eine neue Zertifikatsignaturanforderung (CSR) generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
-### Client-Zertifikate entfernen {#client-certificates}
+### Entfernen von Client-Zertifikaten {#client-certificates}
 
 Wenn Sie beim Hinzufügen eines Zertifikats einen Fehler wie den folgenden erhalten:
 
@@ -102,7 +102,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 
 Wahrscheinlich haben Sie das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
 
-### Zertifikatrichtlinie {#certificate-policy}
+### Zertifikatsrichtlinie {#certificate-policy}
 
 Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
 

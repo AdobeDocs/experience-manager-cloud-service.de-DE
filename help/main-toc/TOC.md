@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
 workflow-type: tm+mt
 source-wordcount: '5270'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -697,16 +697,16 @@ ht-degree: 97%
             + [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
             + [Konvertieren adaptiver Formulare basierend auf Foundation-Komponenten in auf Kernkomponenten basierenden Formularen mithilfe des Migrationsdienstprogramm-Tools](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Speichern eines adaptiven Formulars als Entwurf](/help/forms/save-core-component-based-form-as-draft.md)
-            + Einführung in den Regeleditor für adaptive Forms basierend auf Kernkomponenten{#rule-editor-core-components}
-               + [Einführung in den Regeleditor für adaptive Forms basierend auf Kernkomponenten](/help/forms/rule-editor-core-components.md)
-               + [Benutzeroberfläche des Regeleditors für adaptive Forms basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-user-interface.md)
+            + Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren{#rule-editor-core-components}
+               + [Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components.md)
+               + [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
                + [Unterschied zwischen dem Foundation-Regeleditor und dem Kernkomponenten-Regeleditor](/help/forms/rule-editor-core-components-difference-tables.md)
-               + [Operator- und Ereignistypen, die im Regeleditor für ein adaptives Formular basierend auf Kernkomponenten verfügbar sind](/help/forms/rule-editor-core-components-events-operators.md)
-               + [Beispiele für einen Regeleditor für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-usecases.md)
-            + Einführung in benutzerdefinierte Funktionen für adaptive Forms basierend auf Kernkomponenten{#create-and-use-custom-function-core-component}
-               + [Einführung in benutzerdefinierte Funktionen für adaptive Forms basierend auf Kernkomponenten](/help/forms/create-and-use-custom-functions.md)
-               + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/custom-function-core-component-create-function.md)
-               + [Beispiele für benutzerdefinierte Funktionen für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/custom-function-core-components-use-cases.md)
+               + [Operator- und Ereignistypen, die im Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular verfügbar sind](/help/forms/rule-editor-core-components-events-operators.md)
+               + [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
+            + Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren{#create-and-use-custom-function-core-component}
+               + [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
+               + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
+               + [Beispiele für benutzerdefinierte Funktionen für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-components-use-cases.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
