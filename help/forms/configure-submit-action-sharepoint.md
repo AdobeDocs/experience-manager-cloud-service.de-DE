@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: „Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?“
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5e1d08e82cafc3a8a715653727f42ce0048f2b1f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 100%
+source-wordcount: '1117'
+ht-degree: 93%
 
 ---
 
@@ -51,7 +51,12 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint-Dokumentbibliotheksp
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
    * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
    * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` durch die URL Ihrer Autoreninstanz.
-   * Fügen Sie die API-Berechtigungen `offline_access` und `Sites.Manage.All` hinzu, um Lese- und Schreibberechtigungen bereitzustellen.
+   * Fügen Sie die API-Berechtigungen `offline_access` und `Sites.Manage.All` hinzu, um Lese-/Schreibberechtigungen zu gewähren. Die `Sites.Manage.All` ist ein Berechtigungsbereich in der Microsoft-Diagramm-API, mit dem eine Anwendung alle Aspekte von SharePoint-Sites verwalten kann, z. B. das Löschen oder Ändern von Sites.
+
+     >[!NOTE]
+     >
+     > Sie können die SharePoint-Sites mit eingeschränktem Zugriff auch mit [ konfigurieren, indem Sie den Berechtigungsbereich `Sites.Selected` in der Diagramm-API von Microsoft verwenden. ](/help/forms/configure-sharepoint-site-limited-access.md) Die `Sites.Selected` ist ein Berechtigungsbereich in der Microsoft Graph-API, der granulareren und eingeschränkten Zugriff auf SharePoint-Sites ermöglicht.
+
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
    >[!NOTE]

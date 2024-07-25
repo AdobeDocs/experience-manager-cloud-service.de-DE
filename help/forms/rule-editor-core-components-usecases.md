@@ -4,13 +4,13 @@ description: Der Artikel beschreibt verschiedene Anwendungsfälle für einen Reg
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 61%
+source-wordcount: '1125'
+ht-degree: 58%
 
 ---
-
 
 # Verschiedene Anwendungsfälle des Regeleditors
 
@@ -18,9 +18,10 @@ Der Artikel enthält detaillierte Beispiele für einen Regeleditor für ein adap
 Lassen Sie uns nun die verschiedenen Implementierungen für einen Regeleditor besprechen.
 
 
-## Optimieren komplexer Berechnungen in wiederholbaren Bereichen mit integrierten Funktionen
+## Optimieren komplexer Berechnungen in wiederholbaren Bereichen mit Funktionen
 
-Mit dem Regeleditor können Sie native Funktionen wie Summe, Minimum, Maximum und Verbinden direkt für Felder in wiederholbaren Bereichen verwenden. Dadurch wird eine leistungsstarke Automatisierung freigesetzt, sodass Sie komplexe Geschäftslogik ohne benutzerdefinierten Code implementieren können.
+Mit dem Regeleditor können Sie native Funktionen wie Summe, Minimum, Maximum und Verbinden direkt für Felder in wiederholbaren Bereichen verwenden. Sie können auch einen wiederholbaren Bereichsfeldwert an die Funktion übergeben, die Zahlenarray, Zeichenfolgen-Array, boolesches Array usw. akzeptiert. Dadurch wird eine leistungsstarke Automatisierung freigesetzt, sodass Sie komplexe Geschäftslogik ohne benutzerdefinierten Code implementieren können.
+
 Stellen Sie sich ein Formular mit einem wiederholbaren Bedienfeld vor, in dem jede Bedienfeldinstanz Informationen über den deklarierten Wert von Assets erfasst.
 
 ![Wiederholbares Formular](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ Mit der Funktion &quot;`Sum`&quot;können Sie den Gesamtwert der Assets in allen
 Wenn Sie ein Formular ausfüllen und Instanzen zum Deklarieren der Asset-Werte hinzufügen, berechnet die Schaltfläche `Calculate Asset Value` die Gesamtsumme aller deklarierten Asset-Werte und zeigt das Ergebnis im Textfeld `assetvalue` insgesamt an.
 
 ![Unterstützung wiederholbarer Bereichsfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> Wenn der Wert des wiederholbaren Bereichsfelds an eine Funktion übergeben wird, die kein Array akzeptiert, wird der Feldwert aus der letzten Instanz des wiederholbaren Bereichs an die Funktion übergeben.
 
 Das ist nur ein Beispiel! Erkunden Sie die verfügbaren [Funktionen](#b-form-objects-and-functions-br), um Workflows zu vereinfachen und die Datengenauigkeit in Ihren Formularen zu verbessern.
 

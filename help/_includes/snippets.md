@@ -1,8 +1,8 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 98%
 
 ---
 # Snippets {#snippets}
@@ -100,7 +100,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    </tr>
    <tr>
     <td>ES10-Unterstützung </td>
-    <td>ES10 wird noch nicht unterstützt. </td>
+    <td>ES10 wird noch nicht unterstützt. Es unterstützt nur die Funktionen von ES5 JavaScript. </td>
     <td>Unterstützung für moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen. 
    </td>
    </tr>

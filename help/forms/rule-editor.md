@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '6492'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -561,7 +561,7 @@ Dieses dazugehörige `jsdoc` ist aus den folgenden Gründen erforderlich:
 * Wenn Sie benutzerdefinierte Konfigurationen und Beschreibungen verwenden möchten
 * Da Funktionen in `JavaScript,` auf unterschiedliche Weise deklariert werden können und Sie mithilfe der Kommentare den Überblick über die Funktionen behalten.
 
-Der Regeleditor unterstützt die JavaScript ES2015-Syntax für Skripte und benutzerdefinierte Funktionen.
+Der Regeleditor unterstützt die JavaScript ES5-Syntax für Skripte und benutzerdefinierte Funktionen.
 Weitere Informationen finden Sie unter [jsdoc.app](https://jsdoc.app/).
 
 Unterstützte `jsdoc`-Tags:
