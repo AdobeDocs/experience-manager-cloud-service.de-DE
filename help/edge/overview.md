@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1356'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -19,84 +19,84 @@ Mit Edge Delivery Services bietet AEM außergewöhnliche Erlebnisse, die Interak
 Mithilfe von Edge Delivery Services können Sie:
 
 * schnell Sites mit einem perfekten Lighthouse-Score erstellen und Ihre Site-Leistung kontinuierlich durch Real Use Monitoring (RUM) überwachen.
-* die Autoreneffizienz durch Entkopplung von Inhaltsquellen erhöhen. Standardmäßig können Sie sowohl WYSIWYG als auch document-basiertes Authoring verwenden. Sie können also mit mehreren Inhaltsquellen an derselben Website arbeiten.
+* die Autoreneffizienz durch Entkopplung von Inhaltsquellen erhöhen. Standardmäßig können Sie sowohl das WYSIWYG- als auch das dokumentenbasierte Authoring verwenden. Sie können also mit mehreren Inhaltsquellen an derselben Website arbeiten.
 * ein integriertes Experimentierungs-Framework verwenden, das die schnelle Testerstellung, Ausführung ohne Leistungseinbußen und schnelle Freigabe für die Ermittlung eines Testgewinners ermöglicht.
 
 ## Agile Reaktion auf Geschäftsanforderungen {#agile-reaction}
 
-Als langjähriger anerkannter Branchenführer weiß Adobe, wie wichtig es ist, schnell neue, aussagekräftige Inhalte für Ihre Kunden erstellen und veröffentlichen zu können. Auf dem Markt wurden die gemeinsamen Herausforderungen bei der Skalierung der Inhaltserstellung deutlich gemacht, darunter:
+Als einer der langjährig anerkannten Branchenführer weiß Adobe, wie wichtig es ist, für die Kundschaft neue, aussagekräftige Inhalte schnell erstellen und veröffentlichen zu können. Gängige Herausforderungen bei der Skalierung der Inhaltserstellung sind auf dem Markt deutlich hervorgetreten. Dazu zählen u. a. Folgende:
 
-1. **Die Nachfrage nach Inhalten steigt weiter.**
-   * Es ist erforderlich, neue Inhaltsautoren zu entsperren, um diese Anforderung zu erfüllen.
-   * Der Inhaltserstellungsprozess muss geschäftlich effektiv skaliert werden.
-   * Autoren müssen schnell auf sich ändernde Trends reagieren können.
-1. **Es ist ein Bedarf an kanalübergreifenden Inhalten.**
-   * Die Layout-Steuerung ist unabhängig von der Inhaltsbereitstellung erforderlich.
-   * Autoren müssen die Möglichkeit haben, das Inhaltslayout direkt zu ändern.
-1. **Der Druck wächst, um den ROI bei Inhalten zu steigern.**
-   * Autoren selbst benötigen die Möglichkeit, die von ihnen erstellten Inhalte zu optimieren.
+1. **Die Nachfrage nach Inhalten nimmt weiter zu.**
+   * Es müssen neue Inhaltsautorinnen und Inhaltsautoren gefunden werden, um diese Nachfrage zu erfüllen.
+   * Das Verfahren zur Inhaltserstellung muss im gesamten Unternehmen effektiv skalierbar sein.
+   * Autorinnen und Autoren müssen schnell auf sich ändernde Trends reagieren können.
+1. **Es besteht ein Bedarf an Omni-Channel-Inhalten.**
+   * Eine Layout-Steuerung ist unabhängig von der Inhaltsbereitstellung erforderlich.
+   * Autorinnen und Autoren müssen die Möglichkeit haben, das Layout der Inhalte direkt zu ändern.
+1. **Der Druck nimmt zu, den ROI bei Inhalten zu steigern.**
+   * Autorinnen und Autoren müssen selbst die Möglichkeit haben, die von ihnen erstellten Inhalte zu optimieren.
 
-Diese Trends haben sich in der Branche bewährt. Die individuellen Anforderungen variieren jedoch unweigerlich von Projekt zu Projekt. Das Ziel jedes Edge Delivery Services-Projekts besteht darin, die Lösung zu finden, die für Ihre Benutzer funktioniert.
+Diese Trends haben sich branchenübergreifend etabliert. Die individuellen Anforderungen sind jedoch unweigerlich von Projekt zu Projekt unterschiedlich. Das Ziel jedes Edge Delivery Services-Projekts besteht darin, die Lösung zu finden, die für Ihre Benutzenden funktioniert.
 
-1. **Fokus auf Wert anstelle von Funktionen.** - Bestimmen Sie den am besten optimierten Arbeitsablauf für Ihre Autoren, anstatt sich in AEM umfangreichen Funktionssatz zu verlieren.
-1. **Nutzen Sie AEM Flexibilität.** - AEM Funktionen müssen nicht in einem Vakuum verwendet werden. Verwenden Sie die Funktionen, die Sie für jeden Anwendungsfall benötigen.
-1. **Nutzen Sie das Know-how Ihres Autors.** - Nehmen Sie echte Inhaltsautoren von Anfang an in das Projekt auf, um sicherzustellen, dass Sie den benötigten Wert bereitstellen, indem Sie die Funktionen implementieren, die sinnvoll sind.
+1. **Legen Sie den Schwerpunkt auf die Wertschöpfung und nicht auf Funktionen.** – Ermitteln Sie den am besten optimierten Workflow für Ihre Autorinnen und Autoren, anstatt sich in den umfangreichen Funktionen von AEM zu verlieren.
+1. **Nutzen Sie die Flexibilität von AEM.** – AEM-Funktionen müssen nicht separat von anderen genutzt werden. Verwenden Sie die Funktionen, die Sie für den jeweiligen Anwendungsfall benötigen.
+1. **Nutzen Sie das Know-how Ihrer Autorinnen und Autoren.** – Nehmen Sie echte Inhaltsautorinnen und Inhaltsautoren von Anfang an in das Projekt auf. So stellen Sie sicher, dass Sie diesen den benötigten Wert bereitstellen, indem Sie die jeweils sinnvollsten Funktionen implementieren.
 
-Indem Sie sich auf die Wertschöpfung Ihrer Autoren konzentrieren, kann Ihr Edge Delivery Services-Projekt den modernen Anforderungen der Branche gerecht werden, denen sich Ihre Inhaltsersteller gegenübersehen, und Inhalte bereitstellen, die Ihre Kunden schnell begeistern.
+Wenn Sie sich auf die Wertschöpfung für Ihre Autorinnen und Autoren konzentrieren, kann Ihr Edge Delivery Services-Projekt den modernen Anforderungen der Branche gerecht werden, denen sich Ihre Inhaltserstellenden gegenübersehen. Außerdem können dadurch schnell Inhalte bereitgestellt werden, die Ihre Kundschaft begeistern.
 
-## Flexible Authoring-Tools für Ihre Inhaltsersteller {#overview}
+## Flexible Authoring-Tools für Ihre Inhaltserstellenden {#overview}
 
-Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Sie können sowohl das [AEM-Content-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=de) und WYSIWYG-Authoring mit dem [universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) als auch das [dokumentenbasierte Authoring](https://www.aem.live/docs/authoring) verwenden.
+Edge Delivery Services ist ein zusammenstellbarer Satz von Services, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Sie können sowohl das [AEM-Content-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=de) und WYSIWYG-Authoring mit dem [universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) als auch das [dokumentenbasierte Authoring](https://www.aem.live/docs/authoring) verwenden.
 
 Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Word (dokumentenbasiertes Authoring) bearbeiten und mit Edge Delivery Services veröffentlichen können. Es zeigt auch die WYSIWYG-Bearbeitung mit dem universellen Editor.
 
 ![Architektur von Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services nutzt GitHub, damit Sie Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Neuer Inhalt wird sofort ohne Neuerstellungsprozess hinzugefügt.
+Edge Delivery Services nutzt GitHub, damit Sie Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Neue Inhalte werden sofort und ohne Neuerstellungsprozess hinzugefügt.
 
 ### Dokumentenbasiertes Authoring {#document-based}
 
-Beim dokumentbasierten Authoring können Sie Inhalte direkt aus Microsoft Word- oder Google-Dokumenten verwenden, sodass diese Quellen zu Seiten auf Ihrer Website werden. Überschriften, Listen, Bilder und Schriftelemente können von der ursprünglichen Quelle auf die Website übertragen werden.
+Beim dokumentenbasierten Authoring können Sie Inhalte direkt aus Microsoft Word- oder Google-Dokumenten verwenden. Diese Quellen werden dann zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder und Schriftelemente können von der ursprünglichen Quelle auf die Website übertragen werden.
 
-* Beim dokumentbasierten Authoring ist jeder Marketing-Experte in der Lage, Inhalte schnell mit bekannten Authoring-Tools (Microsoft Word, Google Docs usw.) zu erstellen.
-* Die Inhaltserstellung wird optimiert, indem das Authoring, Überprüfen und Veröffentlichen direkt in den Quelldokumenten ermöglicht wird.
-* Da bekannte Tools verwendet werden, ist für Inhaltsautoren kein Onboarding erforderlich, wodurch die Geschwindigkeit des Inhalts erhöht wird.
+* Beim dokumentenbasierten Authoring kann jede Marketing-Fachkraft Inhalte schnell mit bekannten Authoring-Tools (Microsoft Word, Google Docs usw.) erstellen.
+* Die Inhaltserstellung wird optimiert, da Authoring, Überprüfung und Publishing direkt in den Quelldokumenten erfolgen können.
+* Durch den Einsatz bekannter Tools ist für Inhaltsautorinnen und Inhaltsautoren kein Onboarding erforderlich, sodass sich die Inhaltsgeschwindigkeit erhöht.
 * Die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden.
 
 ![Dokumentenbasiertes Authoring](assets/document-based-authoring.png)
 
-Weitere Informationen finden Sie in der dokumentbasierten Authoring-Dokumentation:
+Weitere Informationen finden Sie in der Dokumentation zum dokumentenbasierten Authoring:
 
 * Weitere Informationen zu den ersten Schritten mit Edge Delivery finden Sie im Abschnitt [Build](https://www.aem.live/docs/#build).
 * Informationen zum Erstellen und Veröffentlichen von Inhalten mithilfe von Edge Delivery finden Sie im Abschnitt [Veröffentlichen](https://www.aem.live/docs/authoring).
 * Informationen dazu, wie Sie Ihr Website-Projekt ordnungsgemäß starten, finden Sie im Abschnitt [Launch](https://www.aem.live/docs/#launch).
 
-### WYSIWYG Authoring {#wysiwyg-authoring}
+### WYSIWYG-Authoring {#wysiwyg-authoring}
 
-Das WYSIWYG-Authoring (What-you-see-is-what-you-get) nutzt den universellen Editor, einen anpassbaren Ort aus einer Hand, um Inhalte live und kontextbezogen mit einer visuellen Vorschau zu bearbeiten.
+Das WYSIWYG-Authoring (What you see is what you get) nutzt den universellen Editor, einen anpassbaren, zentralen Ort, um Inhalte live und kontextbezogen mit einer visuellen Vorschau zu bearbeiten.
 
-* Mit WYSIWYG-Authoring steigern Sie die Autoreneffizienz, egal ob Headless oder Headful.
-* Sie können AEM umfassenden Content-Management-Funktionen nutzen, einschließlich Workflow und Governance.
+* Mit dem WYSIWYG-Authoring steigern Sie die Autoreneffizienz, sowohl im Headless- als auch im Headful-Kontext.
+* Sie können die umfassenden Content-Management-Funktionen von AEM nutzen, einschließlich Workflow und Governance.
 * Nutzen Sie zahlreiche Erweiterungspunkte, um Ihre eigenen Prozesse und Integrationen zu unterstützen.
 * Die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden.
 
 ![WYSIWYG-Authoring](assets/wysiwyg-authoring.png)
 
-Weitere Informationen finden Sie in der WYSIWYG-Authoring-Dokumentation:
+Weitere Informationen finden Sie in der Dokumentation zum WYSIWYG-Authoring:
 
-* Einen Überblick über den universellen Editor und das WYSIWYG-Authoring finden Sie im Dokument [WYSIWYG Content Authoring für Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) .
-* Eine Entwicklerübersicht finden Sie im Dokument [Erste Schritte für Entwickler bei der WYSIWYG-Bearbeitung mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
+* Einen Überblick über den universellen Editor und das WYSIWYG-Authoring finden Sie im Dokument [WYSIWYG-Inhaltserstellung für Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md).
+* Eine Entwicklerübersicht finden Sie im Dokument [Erste-Schritte-Handbuch für Entwickelnde für das WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
-### Auswählen Ihrer Authoring-Methode {#authoring-method}
+### Auswählen der Authoring-Methode {#authoring-method}
 
-AEM Flexibilität stellt sicher, dass Ihre Authoring-Anforderungen abgedeckt werden. Mit Adobe können Sie bestimmen, welche Methode (oder Methoden) Ihren Anforderungen am besten entspricht.
+Die Flexibilität von AEM stellt sicher, dass Ihre Authoring-Anforderungen abgedeckt werden. Adobe kann Ihnen dabei helfen, die für Ihre Anforderungen beste(n) Methode(n) zu ermitteln.
 
-* Nehmen Sie stets Ihre Inhaltsautoren in die Entscheidung auf.
+* Beziehen Sie stets Ihre Inhaltsautorinnen und Inhaltsautoren in die Entscheidung mit ein.
 * Es können mehrere Authoring-Methoden implementiert werden.
-* Sie können Ihre Authoring-Methode jederzeit nach dem Tatsachen ändern.
-* Sie dürfen nicht vor der Implementierung entscheiden, sondern im Rahmen der Implementierung.
+* Sie können Ihre Authoring-Methode jederzeit nachträglich ändern.
+* Sie müssen sich nicht schon vor der Implementierung entscheiden, sondern können dies im Rahmen der Implementierung tun.
 
-Weitere Informationen finden Sie im Dokument [Auswählen einer Bearbeitungsmethode](authoring-methods.md) .
+Weitere Informationen finden Sie im Dokument [Auswählen einer Authoring-Methode](authoring-methods.md).
 
 ## Edge Delivery Services und andere Adobe Experience Cloud-Produkte {#edge-other-products}
 
