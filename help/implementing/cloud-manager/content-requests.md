@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 95%
+source-wordcount: '1288'
+ht-degree: 94%
 
 ---
 
@@ -21,11 +21,6 @@ Inhaltsanfragen sind Anfragen, die an AEM Sites (auch in Verbindung mit Edge Del
 ## Grundlegendes zu Cloud Service-Inhaltsanfragen {#understanding-cloud-service-content-requests}
 
 Für Kundinnen und Kunden, die das vordefinierte CDN verwenden, werden Cloud Service-Inhaltsanfragen über die Server-seitige Datenerfassung gemessen. Diese Erfassung wird über die Analyse des CDN-Protokolls aktiviert.  Inhaltsanfragen werden automatisch Server-seitig am Edge von Adobe Experience Manager as a Cloud Service erfasst, indem die Protokolldateien aus dem AEM as a Cloud Service-CDN automatisiert analysiert werden. Dies geschieht durch Isolieren der Anfragen, die HTML- `(text/html)` oder JSON`(application/json)`-Inhalte aus dem CDN zurückgeben, und basierend auf verschiedenen Ein- und Ausschlussregeln, die im Folgenden erläutert werden. Eine Inhaltsanfrage erfolgt unabhängig davon, ob der zurückgegebene Inhalt von den CDN-Caches bereitgestellt wird oder ob er zurück an den Ursprung des CDN (AEM-Dispatcher) geht.
-
-Für Kundinnen und Kunden, die ihr eigenes CDN verwenden, bietet die Client-seitige Erfassung eine präzisere Darstellung der Interaktionen, sodass eine zuverlässige Messung der Website-Interaktion über den Dienst [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) sichergestellt wird. Dadurch erhalten Kundinnen und Kunden erweiterte Erkenntnisse zum Traffic und zur Performance ihrer Seiten. Es für alle Kundinnen und Kunden von Vorteil und bietet gleichzeitig ein repräsentatives Spiegelbild der Benutzerinteraktionen, das eine zuverlässige Messung der Website-Interaktion ermöglicht, indem die Anzahl der Seitenansichten auf Client-Seite erfasst wird.
-
-Für Kundinnen und Kunden, die ihr eigenes CDN auf AEM as a Cloud Service anwenden, führt die Server-seitige Berichterstellung zu Zahlen, die nicht mit den lizenzierten Inhaltsanfragen verglichen werden können. Mit [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) kann Adobe ein zuverlässiges Maß für die Interaktion mit Websites widerspiegeln.
-
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
