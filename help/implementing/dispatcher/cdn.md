@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
+source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 84%
+source-wordcount: '1552'
+ht-degree: 67%
 
 ---
 
@@ -44,7 +44,8 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 
 ### Konfigurieren von Traffic im CDN {#cdn-configuring-cloud}
 
-Konfigurieren Sie den Traffic im CDN auf verschiedene Weise, z. B.:
+Sie können Traffic im CDN auf verschiedene Arten konfigurieren, wie zum Beispiel:
+
 * Blockieren von böswilligem Traffic mit [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) (einschließlich optional lizenzierbarer erweiterter WAF-Regeln)
 * Ändern der Art der [Anforderung und Antwort](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
 * Anwendung von 301/302 [clientseitigen Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
@@ -64,7 +65,7 @@ Lesen Sie mehr über das Konfigurieren eines Bereinigungs-API-Tokens](/help/impl
 
 ### Grundlegende Authentifizierung beim CDN {#basic-auth}
 
-Für einfache Authentifizierungsfälle, einschließlich geschäftlicher Interessengruppen, die Inhalte überprüfen, schützen Sie Inhalte, indem Sie ein einfaches Authentifizierungsdialogfeld öffnen, das einen Benutzernamen und ein Kennwort erfordert. [Weitere Infos](/help/implementing/dispatcher/cdn-credentials-authentication.md) und Teilnahme am frühen Adopter-Programm.
+Für einfache Authentifizierungsfälle, einschließlich geschäftlicher Interessengruppen, die Inhalte überprüfen, schützen Sie Inhalte, indem Sie ein einfaches Authentifizierungsdialogfeld anzeigen, das einen Benutzernamen und ein Kennwort erfordert. [Weitere Infos](/help/implementing/dispatcher/cdn-credentials-authentication.md) und Teilnahme am frühen Adopter-Programm.
 
 ## Kunden-CDN verweist auf AEM verwaltetes CDN {#point-to-point-CDN}
 
@@ -145,6 +146,26 @@ Im Folgenden werden einige Konfigurationsbeispiele von mehreren führenden CDN-A
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+### Häufige Fehler {#common-errors}
+
+Die bereitgestellten Beispielkonfigurationen zeigen die erforderlichen Basiseinstellungen an, aber eine Kundenkonfiguration kann andere Einflussregeln haben, die die Header entfernen, ändern oder neu anordnen, die erforderlich sind, damit AEM as a Cloud Service den Traffic bereitstellt. Im Folgenden finden Sie häufige Fehler, die beim Konfigurieren eines kundenverwalteten CDN auftreten, um auf AEM as a Cloud Service zu verweisen.
+
+**Weiterleitung zum Publish-Dienstendpunkt**
+
+Wenn eine Anfrage eine unzulässige Antwort vom Typ 403 erhält, bedeutet dies, dass in der Anfrage einige erforderliche Kopfzeilen fehlen. Eine häufige Ursache dafür ist, dass das CDN sowohl den Apex- als auch den `www`-Domänentraffic verwaltet, jedoch nicht die richtige Kopfzeile für die Domäne `www` hinzufügt. Dieses Problem kann gelöst werden, indem Sie Ihre AEM as a Cloud Service-CDN-Protokolle überprüfen und die erforderlichen Anforderungsheader überprüfen.
+
+**Zu viele Umleitungsschleife**
+
+Wenn eine Seite eine Schleife &quot;Zu viele Umleitungen&quot;erhält, wird ein Anforderungsheader im CDN hinzugefügt, der mit einer Umleitung übereinstimmt, die sie zu sich selbst zwingt. Beispiel:
+
+* Es wird eine CDN-Regel erstellt, die entweder mit der Apex-Domäne oder der www-Domäne übereinstimmt, und die X-Forwarded-Host-Kopfzeile der Apex-Domäne wird nur hinzugefügt.
+* Eine Anfrage für eine Apex-Domäne entspricht dieser CDN-Regel, die die Apex-Domäne als Header X-Forwarded-Host hinzufügt.
+* Eine Anfrage wird an die Quelle gesendet, wo eine Weiterleitung explizit mit der Host-Kopfzeile für die Apex-Domäne übereinstimmt (z. B. ^example.com).
+* Es wird eine Neuschreibungsregel ausgelöst, die die Anfrage für die Apex-Domäne mit der Subdomäne www in https umschreibt.
+* Diese Umleitung wird dann an den Edge des Kunden gesendet, wo die CDN-Regel erneut ausgelöst wird und der Header &quot;X-Forwarded-Host&quot;für die Apex-Domäne und nicht die Subdomäne &quot;www&quot;hinzugefügt wird. Anschließend wird der Prozess neu gestartet, bis die Anfrage fehlschlägt.
+
+Um dieses Problem zu beheben, bewerten Sie Ihre SSL-Umleitungsstrategie, CDN-Regeln, Umleitungs- und Umschreibungsregelkombinationen.
 
 ## Geolocation-Kopfzeilen {#geo-headers}
 
