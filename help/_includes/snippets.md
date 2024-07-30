@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 98%
@@ -122,7 +122,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components.md)
 * [Operatortypen und -ereignisse im Regeleditor eines auf Kernkomponenten basierendes adaptiven Formulars](/help/forms/rule-editor-core-components-events-operators.md)
 * [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
-* [Verschiedene Anwendungsfälle des Regeleditors für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-user-interface.md)
+* [Verschiedene Anwendungsfälle des Regeleditors für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
 * [Unterschiede in verschiedenen Editionen des Regeleditors](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
 * [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
