@@ -4,20 +4,17 @@ description: Erfahren Sie, wie Sie zwischengespeicherte Objekte aus dem Adobe-CD
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 89%
 
 ---
 
 # Bereinigen des CDN-Caches {#cdn-purge-cache}
 
->[!NOTE]
->Diese Funktion ist noch nicht allgemein verfügbar.  Wenn Sie am Early-Adopter-Programm teilnehmen möchten, senden Sie eine E-Mail an `aemcs-cdn-config-adopter@adobe.com`.
-
 Durch die Bereinigung wird ein Objekt aus dem Adobe-CDN-Cache entfernt, was dazu führt, dass zukünftige Anfragen als Cache-Fehler an die Quelle weitergeleitet werden, anstatt aus dem Cache bereitgestellt zu werden.
-Mit AEM as a Cloud Service können Sie ein Bereinigungs-API-Token konfigurieren, das dann in API-Aufrufen verwendet werden kann. Lesen Sie den Artikel [Konfigurieren der CDN-Anmeldeinformationen und Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token), um zu erfahren, wie Sie dieses Token mithilfe der Authentifizierungsanweisungen der Cloud Manager-Konfigurations-Pipeline konfigurieren.
+Mit AEM as a Cloud Service können Sie einen Bereinigungs-API-Token konfigurieren, der dann in API-Aufrufen zum Bereinigen verwendet werden kann. Lesen Sie den Artikel [Konfigurieren von CDN-Anmeldeinformationen und Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) , um zu erfahren, wie Sie dieses Token mithilfe der Authentifizierungsrichtlinien der Cloud Manager Config Pipeline konfigurieren.
 
 Es werden drei Bereinigungsvarianten unterstützt:
 
