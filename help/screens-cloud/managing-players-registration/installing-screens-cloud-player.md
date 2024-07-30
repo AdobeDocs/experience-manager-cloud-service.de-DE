@@ -4,7 +4,7 @@ description: Auf dieser Seite wird beschrieben, wie man Player in Screens as a C
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
@@ -71,12 +71,14 @@ Die folgenden Eigenschaften sind in jedem `ping` enthalten:
 | lastContentChange {Zeichenfolge} | Zeitstempel der letzten Inhaltsänderung |
 
 >[!NOTE]
+>
 >Optional können Sie in den Player-Voreinstellungen (Wiedergabe-Überwachung aktivieren) eine erweiterte Eigenschaft aktivieren:
->|Eigenschaft|Beschreibung|
+>
+>| Eigenschaft | Beschreibung |
 >|---|---|
->|isContentRendering {Boolesch}|„true“, wenn die GPU bestätigen kann, dass tatsächliche Inhalte wiedergegeben werden (basierend auf der Pixelanalyse)|
+>| isContentRendering {Boolesch} | „true“, wenn die GPU bestätigen kann, dass tatsächliche Inhalte wiedergegeben werden (basierend auf der Pixelanalyse) |
 
-### Beschränkungen {#limitations}
+### Einschränkungen {#limitations}
 
 Im Folgenden finden Sie einige Beschränkungen bei der einfachen Wiedergabeüberwachung:
 
