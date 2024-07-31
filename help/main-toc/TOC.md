@@ -870,7 +870,7 @@ ht-degree: 99%
    + [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md)
    + [Auswählen einer Authoring-Methode](/help/edge/authoring-methods.md)
    + WYSIWYG-Authoring {#wysiwyg-authoring}
-      + [WYSIWYG Content Authoring für Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+      + [WYSIWYG-Inhaltserstellung für Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
       + [Veröffentlichen von Inhalten für Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
       + [Erste-Schritte-Handbuch für Entwickelnde](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [Erstellen von Bausteinen](/help/edge/wysiwyg-authoring/create-block.md)
@@ -1074,7 +1074,7 @@ ht-degree: 99%
       + Benutzerdefinierte Domain-Namen {#custom-domain-names}
          + [Einführung](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+         + [Hinzufügen eines TXT-Eintrags](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Überprüfen des benutzerdefinierten Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)

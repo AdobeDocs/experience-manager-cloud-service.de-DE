@@ -7,7 +7,7 @@ exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
 workflow-type: tm+mt
 source-wordcount: '5339'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -565,7 +565,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendeter IMS-Bearer-Token. Das `imsToken` ist erforderlich, wenn Sie eine [!DNL Adobe]-Anwendung für die Integration verwenden. |
 | *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. Der `apiKey` ist erforderlich, wenn Sie eine Integration mit einer [!DNL Adobe]-Anwendung verwenden. |
 | *filterSchema* | Array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen des Asset-Wählers einschränken möchten. |
-| *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Für! Beispiel: MIME-Typ JPG, PNG, GIF |
+| *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispiel: MIME-Typ JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn der Asset-Wähler gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Zum Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie ein anderes Verzeichnis verwenden müssen, geben Sie auch einen Wert für die Eigenschaft `path` an. |
 | *acvConfig* | Objekt | Nein | | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben.  Diese Eigenschaft wird auch mit der Eigenschaft `rail` verwendet, um die Leistenansicht des Asset-Wählers zu aktivieren. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |                 | Wenn die vorkonfigurierten Übersetzungen für die Bedürfnisse Ihrer Anwendung unzureichend sind, können Sie eine Schnittstelle bereitstellen, über die Sie Ihre eigenen lokalisierten Werte durch die Eigenschaft `i18nSymbols` übergeben können. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet. Um die Überschreibung vorzunehmen, müssen Sie ein gültiges [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor)-Objekt an den Schlüssel von `i18nSymbols` übergeben, den Sie überschreiben möchten. |
@@ -580,7 +580,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *handleAssetSelection* | Funktion | Nein | | Wird mit einem Array von Elementen aufgerufen, während die Assets ausgewählt oder deren Auswahl aufgehoben wird. Dies ist nützlich, wenn Sie auf Assets warten möchten, während die Benutzenden sie auswählen. Beispiel: <pre>handleSelection=(assets: Asset[])==> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
 | *onClose* | Funktion | Nein | | Wird aufgerufen, wenn die `Close`-Schaltfläche in der modalen Ansicht gedrückt wird. Dies wird nur in der `modal`-Ansicht aufgerufen und in der `rail`-Ansicht nicht beachtet. |
 | *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn Benutzende andere Filterkriterien ändern. |
-| *selectionType* | Zeichenfolge | Nein | Alleinstehend | Konfiguration für `single`- oder `multiple`-Auswahl von Assets auf einmal. |
+| *selectionType* | Zeichenfolge | Nein | Einzeln | Konfiguration für `single`- oder `multiple`-Auswahl von Assets auf einmal. |
 | *dragOptions.allowList* | Boolesch | Nein | | Die Eigenschaft wird verwendet, um das Drag-and-Drop von nicht auswählbaren Assets zuzulassen oder zu verweigern. |
 | *aemTierType* | Zeichenfolge | Nein |  | Sie können damit festlegen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder beiden Ebenen angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Wenn zum Beispiel beide Ebenen `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für Author und Bereitstellung an. |
 | *handleNavigateToAsset* | Funktion | Nein | | Es handelt sich um eine Rückruffunktion, die die Auswahl eines Assets verarbeitet. |
@@ -588,8 +588,8 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *dialogSize* | Klein, mittelgroß, groß, Vollbild oder Vollbild-Übernahme | Zeichenfolge | Optional | Sie können das Layout kontrollieren, indem Sie dessen Größe mithilfe der angegebenen Optionen festlegen. |
 | *colorScheme* | Hell oder dunkel | Nein | | Diese Eigenschaft wird verwendet, um das Design einer Asset-Wähler-Anwendung festzulegen. Sie können zwischen einem hellen und dunklen Design wählen. |
 | *filterRepoList* | Funktion | Nein |  | Sie können die Rückruffunktion `filterRepoList` verwenden, die das Experience Manager-Repository aufruft und eine gefilterte Liste von Repositorys zurückgibt. |
-| *iryOptions* | Funktion | | | Sie können zwischen den beiden folgenden Eigenschaften verwenden: **getExpiryStatus** , das den Status eines abgelaufenen Assets angibt. Die Funktion gibt basierend auf dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](#customize-expired-assets). Darüber hinaus können Sie **allowSelectionAndDrag** verwenden, in dem der Wert der Funktion entweder `true` oder `false` sein kann. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset nicht ausgewählt oder auf die Arbeitsfläche gezogen werden. |
-| *showToast* | | Nein | | Dadurch kann der Asset-Selektor eine angepasste Toastmeldung für das abgelaufene Asset anzeigen. |
+| *iryOptions* | Funktion | | | Sie können zwischen den beiden folgenden Eigenschaften verwenden: **getExpiryStatus** , das den Status eines abgelaufenen Assets angibt. Die Funktion gibt basierend auf dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](#customize-expired-assets). Darüber hinaus können Sie **allowSelectionAndDrag** verwenden, in dem der Wert der Funktion entweder `true` oder `false` sein kann. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset weder ausgewählt noch auf die Arbeitsfläche gezogen werden. |
+| *showToast* | | Nein | | Dadurch kann der Asset-Wähler eine benutzerdefinierte Popup-Meldung für das abgelaufene Asset anzeigen. |
 <!--
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
@@ -814,7 +814,7 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 
 ### Anpassen abgelaufener Assets {#customize-expired-assets}
 
-Mit der Asset-Auswahl können Sie die Verwendung eines abgelaufenen Assets steuern. Sie können das abgelaufene Asset mit dem Zeichen &quot;**Läuft bald**&quot; anpassen, mit dem Sie im Voraus wissen können, welche Assets innerhalb von 30 Tagen ab dem aktuellen Datum ablaufen sollen. Darüber hinaus kann dies entsprechend den Anforderungen angepasst werden. Sie können auch die Auswahl eines abgelaufenen Assets auf der Arbeitsfläche zulassen oder umgekehrt. Die Anpassung eines abgelaufenen Assets kann mithilfe einiger Code-Snippets auf verschiedene Weise durchgeführt werden:
+Mit dem Asset-Wähler können Sie die Verwendung eines abgelaufenen Assets steuern. Sie können das abgelaufene Asset mit dem Zeichen **Läuft bald ab** anpassen, sodass Sie im Voraus wissen, welche Assets innerhalb von 30 Tagen ab dem aktuellen Datum ablaufen werden. Darüber hinaus kann dies entsprechend den Anforderungen angepasst werden. Sie können auch die Auswahl eines abgelaufenen Assets auf der Arbeitsfläche zulassen oder umgekehrt. Die Anpassung eines abgelaufenen Assets kann mithilfe einiger Code-Snippets auf verschiedene Weise durchgeführt werden:
 
 <!--{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
@@ -829,7 +829,7 @@ expiryOptions: {
 
 #### Auswahl eines abgelaufenen Assets {#selection-of-expired-asset}
 
-Sie können die Verwendung eines abgelaufenen Assets anpassen, um es entweder auswählbar oder nicht auswählbar zu machen. Sie können anpassen, ob Sie das Ziehen eines abgelaufenen Assets auf die Arbeitsfläche der Asset-Auswahl zulassen möchten oder nicht. Verwenden Sie dazu die folgenden Parameter, um ein Asset auf der Arbeitsfläche nicht auswählbar zu machen:
+Sie können die Verwendung eines abgelaufenen Assets anpassen, damit es auswählbar oder nicht auswählbar wird. Sie können anpassen, ob Sie Drag-and-Drop für ein abgelaufenes Asset auf die Arbeitsfläche des Asset-Wählers zulassen möchten oder nicht. Verwenden Sie die folgenden Parameter, damit ein Asset auf der Arbeitsfläche nicht auswählbar wird:
 
 ```
 expiryOptions:{
@@ -843,7 +843,7 @@ Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behav
 
 #### Festlegen der Dauer eines abgelaufenen Assets {#set-duration-of-expired-asset}
 
-Mit dem folgenden Codeausschnitt können Sie das Zeichen **Läuft bald ab** für die Assets festlegen, die innerhalb der nächsten fünf Tage ablaufen: <!--The `expirationDate` property is used to set the expiration duration of an asset. Refer to the code snippet below:-->
+Mit dem folgenden Code-Snippet können Sie das Zeichen **Läuft bald ab** für die Assets festlegen, die in den nächsten fünf Tagen ablaufen: <!--The `expirationDate` property is used to set the expiration duration of an asset. Refer to the code snippet below:-->
 
 ```
 /**
@@ -874,11 +874,11 @@ const currentData = new Date();
 currentData.getTime(),
 ```
 
-gibt `1718779013959` zurück, das dem Datumsformat 2024-06-19T06:36:53.959Z entspricht.
+Es wird `1718779013959` zurückgegeben, was dem Datumsformat 2024-06-19T06:36:53.959Z entspricht.
 
-#### Moderationsmeldung eines abgelaufenen Assets anpassen {#customize-toast-message}
+#### Anpassen der Popup-Meldung eines abgelaufenen Assets {#customize-toast-message}
 
-Die Eigenschaft `showToast` wird verwendet, um die Toast-Nachricht anzupassen, die Sie für ein abgelaufenes Asset anzeigen möchten.
+Die Eigenschaft `showToast` wird verwendet, um die Popup-Meldung anzupassen, die für ein abgelaufenes Asset angezeigt werden soll.
 
 Syntax:
 
@@ -890,9 +890,9 @@ Syntax:
 }
 ```
 
-Der Standardwert für die Zeitüberschreitung beträgt 500 Millisekunden. Sie können sie jedoch entsprechend den Anforderungen ändern. Durch Übergabe des Werts &quot;`timeout: 0`&quot; bleibt der Toast geöffnet, bis Sie auf die Kreuz-Schaltfläche klicken.
+Der Standardwert des Timeouts ist 500 Millisekunden. Sie können ihn jedoch entsprechend den Anforderungen ändern. Durch Übergabe des Werts `timeout: 0` bleibt die Popup-Meldung geöffnet, bis Sie auf die X-Schaltfläche klicken.
 
-Im Folgenden finden Sie ein Beispiel für die Anzeige einer Toast-Meldung, wenn die Auswahl eines Ordners nicht erlaubt werden soll und eine entsprechende Meldung angezeigt werden soll:
+Im Folgenden finden Sie ein Beispiel für die Anzeige einer Popup-Meldung, wenn die Auswahl eines Ordners nicht erlaubt und eine entsprechende Meldung angezeigt werden soll:
 
 ```
 const showToast = {
@@ -902,9 +902,9 @@ const showToast = {
 }
 ```
 
-Verwenden Sie das folgende Code-Snippet, um eine Schnellmeldung zur Verwendung eines abgelaufenen Assets anzuzeigen:
+Verwenden Sie das folgende Code-Snippet, um eine Popup-Meldung zur Nutzung eines abgelaufenen Assets anzuzeigen:
 
-![toast message](assets/toast-message.png)
+![Popup-Meldung](assets/toast-message.png)
 
 ### Kontextaufruffilter{#contextual-invocation-filter}
 
@@ -1026,16 +1026,16 @@ Es handelt sich um eine Sammlung von Asset-Ordnern, mit denen Sie Vorgänge durc
 
 Der Asset-Selektor bietet außerdem vordefinierte Filteroptionen, mit denen Sie Ihre Suchergebnisse verfeinern können. Die folgenden Filter sind verfügbar:
 
-* **[!UICONTROL Status]:** enthält den aktuellen Status des Assets unter `all`, `approved`, `rejected` oder `no status`.
+* **[!UICONTROL Status]:** enthält den aktuellen Status des Assets, entweder `all`, `approved`, `rejected` oder `no status`.
 * **[!UICONTROL Dateityp]:** enthält `folder`, `file`, `images`, `documents` oder `video`.
-* **[!UICONTROL Ablaufstatus]:** erwähnt die Assets basierend auf ihrer Gültigkeitsdauer. Sie können entweder das Kontrollkästchen `[!UICONTROL Expired]` aktivieren, um abgelaufene Assets zu filtern, oder `[!UICONTROL Expiration Duration]` eines Assets so einstellen, dass Assets basierend auf ihrer Ablaufdauer angezeigt werden. Wenn ein Asset bereits abgelaufen ist oder kurz vor seinem Ablauf steht, wird ein Badge angezeigt, das dasselbe anzeigt. Darüber hinaus können Sie steuern, ob Sie die Verwendung (per Drag-and-Drop) eines abgelaufenen Assets zulassen möchten. Weitere Informationen finden Sie unter [Anpassen abgelaufener Assets](#customize-expired-assets). Standardmäßig wird für Assets, die in den nächsten 30 Tagen ablaufen, das Zeichen **Bald ablaufen** angezeigt. Sie können den Ablauf jedoch mit der Eigenschaft `expirationDate` konfigurieren.
+* **[!UICONTROL Ablaufstatus]:** erwähnt die Assets basierend auf ihrer Gültigkeitsdauer. Sie können entweder das Kontrollkästchen `[!UICONTROL Expired]` aktivieren, um abgelaufene Assets zu filtern, oder `[!UICONTROL Expiration Duration]` eines Assets so einstellen, dass Assets basierend auf ihrer Ablaufdauer angezeigt werden. Wenn ein Asset bereits abgelaufen ist oder kurz vor seinem Ablauf steht, wird ein Zeichen angezeigt, das darauf hinweist. Darüber hinaus können Sie steuern, ob Sie die Verwendung (oder das Ziehen per Drag-and-Drop) eines abgelaufenen Assets zulassen möchten. Weitere Informationen zum [Anpassen abgelaufener Assets](#customize-expired-assets). Standardmäßig wird für Assets, die in den nächsten 30 Tagen ablaufen, das Zeichen **Läuft bald ab** angezeigt. Sie können die Gültigkeitsdauer jedoch mit der Eigenschaft `expirationDate` konfigurieren.
 
   >[!TIP]
   >
-  > Wenn Sie Assets anhand ihres künftigen Ablaufdatums anzeigen oder filtern möchten, geben Sie den künftigen Datumsbereich im Feld `[!UICONTROL Expiration Duration]` an. Es werden die Assets mit dem Zeichen **bald ablaufen** angezeigt.
+  > Wenn Sie Assets anhand ihres künftigen Ablaufdatums anzeigen oder filtern möchten, geben Sie den künftigen Datumsbereich im Feld `[!UICONTROL Expiration Duration]` an. Es werden die Assets mit dem Zeichen **Läuft bald ab** angezeigt.
 
-* **[!UICONTROL MIME type]:** enthält `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
-* **[!UICONTROL Bildgröße]:** enthält die minimale/maximale Breite, minimale/maximale Höhe des Bildes.
+* **[!UICONTROL MIME-Typ]:** enthält `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
+* **[!UICONTROL Bildgröße]:**: umfasst minimale/maximale Breite, minimale/maximale Höhe des Bildes.
 
   ![rail-view-example](assets/filters-asset-selector.png)
 
@@ -1059,10 +1059,10 @@ Sie können Assets im Asset-Selektor nach Namen, Abmessungen oder Größe eines 
 
 Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anzeigen:
 
-* **![Listenansicht](assets/do-not-localize/list-view.png) [!UICONTROL Listenansicht]** Die Listenansicht zeigt bildlauffähige Dateien und Ordner in einer Spalte an.
-* **![Rasteransicht](assets/do-not-localize/grid-view.png) [!UICONTROL Rasteransicht]** Die Rasteransicht zeigt bildlauffähige Dateien und Ordner in einem Raster aus Zeilen und Spalten an.
-* **![Galerie-Ansicht](assets/do-not-localize/gallery-view.png) [!UICONTROL Galerie-Ansicht]** Die Galerie-Ansicht zeigt Dateien oder Ordner in einer zentrierten horizontalen Liste an.
-* **![Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL Wasserfallansicht]** Die Wasserfallansicht zeigt Dateien oder Ordner in Form eines Bridge an.
+* **![Listenansicht](assets/do-not-localize/list-view.png) [!UICONTROL Listenansicht]**: Die Listenansicht zeigt scrollbare Dateien und Ordner in einer Spalte an.
+* **![Rasteransicht](assets/do-not-localize/grid-view.png) [!UICONTROL Rasteransicht]**: Die Rasteransicht zeigt scrollbare Dateien und Ordner in einem Raster aus Zeilen und Spalten an.
+* **![Galerieansicht](assets/do-not-localize/gallery-view.png) [!UICONTROL Galerieansicht]**: Die Galerie-Ansicht zeigt Dateien oder Ordner in einer zentrierten, horizontalen Liste an.
+* **![Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL Wasserfallansicht]**: Die Wasserfallansicht zeigt Dateien oder Ordner in Form einer Brücke an.
 
 <!--
 ### Modes to view Asset Selector
