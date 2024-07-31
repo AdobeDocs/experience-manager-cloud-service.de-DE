@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 86%
@@ -76,15 +76,23 @@ Die Best Practices für den Dynamic Media-Viewer sind wichtige Richtlinien zur O
 
 Durch Befolgen dieser Best Practices können Sie eine nahtlose Integration, eine effiziente Asset-Verwaltung und verbesserte Viewer-Interaktionen erzielen. Die Synchronisierung von Assets, die Verwendung von smartem Zuschneiden und die Einhaltung der JavaScript-Dateieinschlussrichtlinien sind wichtige Vorgehensweisen. Diese Empfehlungen tragen dazu bei, die Integrität und Zuverlässigkeit der Medienbereitstellung über verschiedene Plattformen und Geräte hinweg aufrechtzuerhalten.
 
-* **Viewer-Assets synchronisieren:** Stellen Sie sicher, dass alle Viewer-Assets mit Dynamic Media synchronisiert werden, bevor Sie den Player verwenden. Informationen zur Fehlerbehebung für den Viewer finden Sie im Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
-* **Beispielmanagerseite:** Greifen Sie auf die Beispielmanagerseite unter `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` zu.
-* **Publish Assets:** Stellen Sie sicher, dass Assets veröffentlicht sind, bevor Sie sie in den Versand-Viewern anzeigen.
-* **Automatische Videowiedergabe - Durchgedrehte Videos:** Verwenden Sie für die Funktion &quot;Automatische Wiedergabe in Videos&quot;stummschaltete Videoeinstellungen, da Browser die Wiedergabe von Videos mit Lautstärke beschränken.
-* **Smartes Zuschneiden:** Verwenden Sie die Image v3-Komponente für smartes Zuschneiden, um die Darstellung von Bild-Assets zu verbessern.
-* **JavaScript-Dateiaufnahme:** Schließen Sie nur die JavaScript-Hauptdatei des Viewers auf Ihrer Seite ein. Vermeiden Sie es, auf zusätzliche JavaScript-Dateien zu verweisen, die die Laufzeitlogik des Viewers herunterladen könnte. Stellen Sie insbesondere keine direkte Verknüpfung mit der HTML5 SDK `Utils.js`-Bibliothek aus dem Kontextpfad `/s7viewers` her (auch als konsolidiertes SDK-Include bezeichnet). Die Viewer-Logik verwaltet den Speicherort von `Utils.js` oder ähnlichen Laufzeit-Viewer-Bibliotheken, die sich zwischen Versionen ändern können. Adobe behält ältere Versionen von sekundären Viewer-Inhalten nicht auf dem Server bei, sodass eine direkte Referenzierung sie bei zukünftigen Updates die Viewer-Funktionalität beeinträchtigen kann.
-* **Einbettungsrichtlinien:** Verwenden Sie die Dokumentation zum Einbetten von für jeden Viewer spezifischen Richtlinien.
+* **Synchronisieren von Viewer Assets:**
+Stellen Sie sicher, dass alle Viewer-Assets mit Dynamic Media synchronisiert sind, bevor Sie den Player verwenden. Informationen zur Fehlerbehebung für den Viewer finden Sie im Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
+* **Beispielmanagerseite:**
+Rufen Sie die Beispielmanagerseite unter `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` auf.
+* **Publish Assets:**
+Stellen Sie sicher, dass Assets veröffentlicht sind, bevor Sie sie in den Versand-Viewern anzeigen.
+* **Automatische Videowiedergabe gemalt:**
+Verwenden Sie für die automatische Wiedergabe in Videos stummschaltete Videoeinstellungen, da Browser die Wiedergabe von Videos mit Lautstärke einschränken.
+* **Smartes Zuschneiden:**
+Verwenden Sie die Image v3-Komponente für smartes Zuschneiden, um die Darstellung von Bild-Assets zu verbessern.
+* **JavaScript-Dateiaufnahme:**
+Schließen Sie nur die primäre Viewer-JavaScript-Datei auf Ihrer Seite ein. Vermeiden Sie es, auf zusätzliche JavaScript-Dateien zu verweisen, die die Laufzeitlogik des Viewers herunterladen könnte. Stellen Sie insbesondere keine direkte Verknüpfung mit der HTML5 SDK `Utils.js`-Bibliothek aus dem Kontextpfad `/s7viewers` her (auch als konsolidiertes SDK-Include bezeichnet). Die Viewer-Logik verwaltet den Speicherort von `Utils.js` oder ähnlichen Laufzeit-Viewer-Bibliotheken, die sich zwischen Versionen ändern können. Adobe behält ältere Versionen von sekundären Viewer-Inhalten nicht auf dem Server bei, sodass eine direkte Referenzierung sie bei zukünftigen Updates die Viewer-Funktionalität beeinträchtigen kann.
+* **Einbettungsrichtlinien:**
+Verwenden Sie die Dokumentation zum Einbetten von für jeden Viewer spezifischen Richtlinien.
 Möchten Sie mehr erfahren?  Wechseln Sie zu [Viewer für AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **SDK-Tutorial und Beispiele:** Sehen Sie sich das [Viewer SDK-Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) und die [HTML5 SDK-Anwendungsbeispiele](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) an, um sich mit den SDK-Komponenten-APIs vertraut zu machen.
+* **SDK-Tutorial und Beispiele:**
+Sehen Sie sich das [Viewer SDK-Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) und die [HTML5 SDK-Anwendungsbeispiele](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) an, um sich mit den SDK-Komponenten-APIs vertraut zu machen.
 
 
 ## Vorbereiten von Assets für die Bereitstellung
