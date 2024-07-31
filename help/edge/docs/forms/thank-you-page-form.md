@@ -4,49 +4,113 @@ description: Erfahren Sie, wie Sie Dankesseiten und Umleitungen für den Formula
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 51%
 
 ---
 
 # Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung
 
-Nachdem Benutzende ein Formular abgesendet haben, ist es entscheidend, ein nahtloses Erlebnis durch eine Dankesnachricht zu bieten. Dies bestätigt nicht nur die erfolgreiche Übermittlung, sondern verbessert zudem die Benutzerzufriedenheit und führt Benutzende weiter auf ihrer Journey.
+Nachdem ein Benutzer ein Formular gesendet hat, ist es wichtig, durch eine Dankesnachricht ein nahtloses Erlebnis bereitzustellen. Er bestätigt nicht nur die erfolgreiche Übermittlung, sondern steigert auch die Benutzerzufriedenheit und führt sie bei der Journey weiter.
 
-## Konfigurieren einer benutzerdefinierten Dankesnachricht
+* **Dankesnachricht**: Eine Dankesnachricht ist ein Eckpfeiler der Benutzererfahrung, der Sicherheit bietet und wichtige Informationen vermittelt und gleichzeitig die Markenidentität stärkt. Sie dient als direkte Bestätigung der Aktion der Benutzenden und gibt ihnen das Gefühl, etwas geschafft zu haben, ein Gefühl von Zufriedenheit.
 
-Standardmäßig verhält sich der adaptive Formularbaustein so, dass bei der Übermittlung die folgende Dankesnachricht angezeigt wird. Die Nachricht wird oben im Formular angezeigt.
+* **Umleitung**: Eine Umleitung spielt eine zentrale Rolle dabei, Benutzende zu relevanten Zielen zu steuern, die Interaktion zu optimieren und letztendlich Konversionsraten zu steigern. Durch eine Umleitung, die Benutzende nahtlos zum nächsten Schritt in der Journey führt, wird ein reibungsloses Navigationserlebnis sichergestellt. Beispielsweise die Umleitung des Benutzers zur Zahlungsseite nach der Erfassung der anfänglichen Details.
+
+Standardmäßig verhält sich der adaptive Formularbaustein so, dass bei der Übermittlung die folgende Dankesnachricht angezeigt wird. Die Meldung wird bei erfolgreicher Formularübermittlung oben im Formular angezeigt.
 
 ![Standardmäßige Dankesnachricht](/help/edge/assets/thank-you-message.png)
 
+Sie haben jedoch die Flexibilität, dieses Erlebnis an Ihre individuellen Anforderungen anzupassen. Sie haben unter anderem folgende Möglichkeiten:
+
+* Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung
+* Leiten Sie Benutzer zur weiteren Aktion nach der Übermittlung zu einer anderen Seite um.
+
+>[!NOTE]
+>
+> Im folgenden [Fragebogen-Arbeitsblatt](/help/edge/docs/forms/assets/enquiry.xlsx) können Sie die Dankesnachricht an Ihre Anforderungen anpassen.
+
+## Benutzerdefinierte Dankesnachricht konfigurieren
+
+Wenn Sie bei erfolgreicher Formularübermittlung eine personalisierte Dankesnachricht anzeigen möchten, können Sie die Tabelle so konfigurieren, dass sie angezeigt wird.
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Dankesnachricht für Ihren adaptiven Formularbaustein zu konfigurieren:
 
-1. Greifen Sie auf Ihr AEM-Projekt auf Ihrem lokalen Computer oder im GitHub-Repository zu.
+1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner „Edge Delivery“ und öffnen Sie die Tabelle.
+1. Fügen Sie in der Spalte `value` eine benutzerdefinierte Dankesnachricht für den Feldtyp `submit` im Arbeitsblatt hinzu.
 
-1. Navigieren Sie zur Bearbeitung zur Datei [AEM-Projektordner]\blocks\form\submit.js.
+   ![Benutzerdefinierte Thankyssen-Meldung](/help/edge/docs/forms/assets/thankyou-custommessage.png)
 
-1. Suchen Sie folgenden Code
+   Fügen Sie beispielsweise die Meldung `Submission Successful!` in die Spalte `value` für den Feldtyp `submit` ein.
 
-   ```JavaScript
-       thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
-   ```
+1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Sheet mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-1. Ersetzen Sie die Standardnachricht durch Ihre benutzerdefinierte Nachricht. Zum Beispiel:
+   ![Benutzerdefinierte Thankyssen-Meldung](/help/edge/docs/forms/assets/customized-thank-you-message.png)
+
+## Umleiten von Benutzenden zu einer anderen Seite nach der Übermittlung
+
+Wenn Benutzende nach der Formularübermittlung zu einer anderen Seite umgeleitet werden, kann dies das Anwendererlebnis verbessern, indem relevante Informationen bereitgestellt, Aktionen bestätigt und Benutzende zu gewünschten Ergebnissen angeleitet werden. Beispiel:
+
+* Nachdem eine Person ein Kaufformular ausgefüllt hat, wird sie auf eine Zahlungsseite umgeleitet, um die Transaktion sicher abzuschließen.
+* Beim Senden eines Registrierungsformulars für eine Veranstaltung oder ein Webinar werden Benutzende auf eine Bestätigungsseite umgeleitet, auf der Details zu dem Ereignis, z. B. Datum, Uhrzeit und Ort, angezeigt werden.
+
+Führen Sie die folgenden Schritte aus, um Benutzer auf eine andere Seite umzuleiten:
+
+1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner „Edge Delivery“ und öffnen Sie die Tabelle.
+1. Fügen Sie die URL in die Spalte `value` für den Feldtyp `submit` im Arbeitsblatt ein, um den Benutzer bei erfolgreicher Formularübermittlung umzuleiten.
+Um die Seite auf eine andere Seite umzuleiten, verwenden Sie die Seiten-URL [Edge Delivery Documentation](https://www.aem.live/docs/) .
+
+   ![Dank der Umleitungs-URL](/help/edge/docs/forms/assets/thankyou-redirecturl.png)
+
+1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Sheet mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+   ![Umleitungs-Thankyou-Meldung](/help/edge/docs/forms/assets/thankyou-redirectpage.gif)
+
+Sie können auch eine neue Dokumentdatei erstellen und ihre Vorschau-URL in die Spalte `value` für den Feldtyp `submit` einfügen.
+
+Nachdem ein Benutzer ein Formular gesendet hat, ist es wichtig, eine klare Dankesnachricht bereitzustellen. Er bestätigt, dass die Übermittlung erfolgreich war, und verbessert die Benutzerzufriedenheit.
+
+## Siehe auch
+
+{{see-more-forms-eds}}
+
+<!--
+## Configuring a custom thank you message
+
+The default behavior of Adaptive Forms Block is to display the following thank you message on submission. The message is displayed on the top of the form. 
+
+![default thank you message](/help/edge/assets/thank-you-message.png)
 
 
-   ```JavaScript
-       thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Your submission has been received and noted.';
-   ```
+Follow the below steps to configure a custom thank you message for your Adaptive Forms Block:
+
+1. Access your AEM Project on your local machine or GitHub repository.
+
+2. Navigate to [AEM Project Folder]\blocks\form\submit.js file for editing.
+
+3. Locate the following code 
+
+    ```JavaScript
+
+        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
+
+    ```
+
+4. Replace the default message with your custom message. For example, 
 
 
-1. Speichern Sie die Datei. Übertragen Sie die aktualisierte Datei in Ihr GitHub-Repository. Wenn Sie jetzt ein Formular senden, wird die benutzerdefinierte Dankesnachricht angezeigt. Zum Beispiel:
+    ```JavaScript
 
-![Benutzerdefinierte Dankesnachricht](/help/edge/assets/custom-thank-you-message.png)
+        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Your submission has been received and noted.';
 
-<!-- 
+    ```
+
+
+1. Save the file. Commit the updated file to your GitHub Repository. Now, when you submit a form, the custom thank you message is displayed. For example,
+
+![Custom thank you message](/help/edge/assets/custom-thank-you-message.png)
 
 * **Thank you message**: A thank you message is a cornerstone of user experience, offering reassurance and conveying important information while reinforcing brand identity. It serves as a direct acknowledgment of the user's action, fostering a sense of completion and satisfaction.
 
@@ -124,8 +188,8 @@ Redirecting a user to another page after form submission can enhance user experi
 
 To redirect the "thankyou" page to a different page, use the [website redirects](https://www.aem.live/docs/redirects) spreadsheet. 
 
--->
 
-## Siehe auch
+
+## See also
 
 {{see-more-forms-eds}}
