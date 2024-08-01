@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
 workflow-type: tm+mt
-source-wordcount: '10491'
-ht-degree: 70%
+source-wordcount: '9406'
+ht-degree: 78%
 
 ---
 
@@ -524,7 +524,7 @@ Sie können den Support in Dynamic Media für Folgendes aktivieren:
 
 * DASH
 * Mehrbeschriftungen und Audiospuren
-* KI-generierte Untertitel
+* KI-generierte Untertitel (Frühzugriff)
 
 Über einen Adobe-Support-Fall, den Sie erstellen und übermitteln.
 
@@ -534,7 +534,7 @@ Durch Aktivierung der drei oben genannten Funktionen werden alle Funktionen akti
 | --- | --- |
 | DASH | DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn DASH in Ihrem Konto aktiviert ist, können Sie entweder DASH oder HLS für adaptives Video-Streaming auswählen. Sie können auch beide Optionen beim automatischen Wechseln zwischen Playern wählen, wenn **[!UICONTROL auto]** als Wiedergabetyp in der Viewer-Vorgabe ausgewählt ist.<br>Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die folgenden:<br> ・ Paket-DASH-Stream-Video für adaptives Bitrate-Streaming. Diese Methode führt zu einer höheren Effizienz der Bereitstellung. Adaptives Streaming gewährleistet das beste Zuschauererlebnis für Ihre Kundinnen und Kunden.<br> ・ Browser-optimiertes Streaming mit Dynamic Media-Playern wechselt zwischen HLS und DASH-Streaming, um eine optimale Servicequalität zu gewährleisten. Der Videoplayer wechselt automatisch zu HLS, wenn ein Safari-Browser verwendet wird.<br> ・ Sie können Ihre bevorzugte Streaming-Methode (HLS oder DASH) konfigurieren, indem Sie die Video-Viewer-Vorgabe bearbeiten.<br> ・ Optimierte Videokodierung stellt sicher, dass bei der Aktivierung der DASH-Funktion kein zusätzlicher Speicher verwendet wird. Für HLS und DASH wird ein einziger Satz von Videokodierungen erstellt, um die Kosten für die Videospeicherung zu optimieren.<br> ・ Hilft Ihnen, die Bereitstellung von Videos für Ihre Kunden leichter zugänglich zu machen.<br> ・ Rufen Sie die Streaming-URL auch über APIs ab. |
 | Mehrbeschriftungen und Audiospuren | Sie können davon profitieren, dass die Unterstützung für mehrere Untertitel und Audiospuren automatisch aktiviert wird. Nach der Aktivierung werden alle nachfolgenden Videos, die Sie hochladen, mit einer neuen Backend-Architektur verarbeitet, die das Hinzufügen von mehrfachen Untertiteln und Audiospuren zu Ihren Videos unterstützt. |
-| KI-generierte Untertitel | Erstellen Sie Untertitel für Ihre Videos basierend auf KI. Mithilfe von AI wird das Transkript des Videos erstellt und in Untertitel konvertiert. Auch die Timeline ist definiert. |
+| KI-generierte Untertitel (Frühzugriff) | Erstellen Sie Untertitel für Ihre Videos basierend auf KI. Mithilfe von AI wird das Transkript des Videos erstellt und in Untertitel konvertiert. Auch die Timeline ist definiert. |
 
 >[!IMPORTANT]
 >
@@ -549,7 +549,7 @@ Durch Aktivierung der drei oben genannten Funktionen werden alle Funktionen akti
    * Ihre Cloud Service-Umgebung (Programm-ID und Umgebungs-ID).
    * Name Ihres Dynamic Media-Unternehmenskontos.
    * Ihre Dynamic Media-Region: Nordamerika (NA), Asien-Pazifik (APAC) oder Europa-Naher Osten-Asien (EMEA).
-   * Legen Sie fest, dass DASH, mehrere Untertitel und Multiaudio-Tracks sowie AI-generierte Untertitel in Ihrem Dynamic Media-Konto in AEM as a Cloud Service aktiviert werden sollen.
+   * Legen Sie fest, dass DASH, Multi-Captions- und Multi-Audio-Tracks und AI-generierte Untertitel (Early Access) in Ihrem Dynamic Media-Konto in AEM as a Cloud Service aktiviert werden sollen.
 
 1. Adobe Customer Support fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet werden, zur Kundenwarteschlange hinzu.
 1. Wenn Ihre Anfrage bearbeitet werden kann, setzt sich der Kunden-Support mit Ihnen in Verbindung, um den Termin für die Aktivierung zu koordinieren und festzulegen.
@@ -560,31 +560,23 @@ Durch Aktivierung der drei oben genannten Funktionen werden alle Funktionen akti
    * Erstellen Sie Ihr [Videoprofil](/help/assets/dynamic-media/video-profiles.md) wie gewohnt.
    * [Fügen Sie mehrfache Untertitel und Audiospuren](#add-msma) zu Ihrem Video hinzu.
 
-
 ## Unterstützung für mehrfache Untertitel und Audiospuren bei Videos in Dynamic Media{#about-msma}
 
-Mit der Funktion für mehrere Beschriftungen und Audiospuren in Dynamic Media können Sie einfach mehrere Audiospuren hinzufügen. Sie können auch mehrere Untertiteldateien hinzufügen, indem Sie entweder Ihre eigenen `.vtt` -Dateien (Video Text Track) oder AI-generierte Untertiteldateien verwenden. KI-generierte Untertitel in Dynamic Media sollen die Videozugänglichkeit und -interaktion durch die automatische Generierung genauer und synchronisierter Untertitel verbessern. Diese Technologie verwendet fortschrittliche KI-Algorithmen, um gesprochene Inhalte in Text umzuwandeln, der dann als Untertitel im Video angezeigt wird. Zu den wichtigsten Merkmalen dieser Technologie zählen:
-
-* **Automatische Übersetzung:** Das KI-System wandelt gesprochene Wörter in Echtzeit in Text um und stellt dabei sicher, dass Beschriftungen schnell und präzise generiert werden.
-* **Mehrsprachige Unterstützung:** Untertitel können automatisch in mehr als 60 Sprachen bereitgestellt werden, wodurch die Erreichbarkeit einer globalen Zielgruppe erleichtert wird.
-* **Verbesserte Barrierefreiheit:** Durch die Bereitstellung von Untertiteln werden Videos für Betrachter, die taub oder schwerhörig sind, oder für Menschen, die lieber Videos mit dem Geräusch sehen möchten, leichter zugänglich.
-* **Verbesserte Interaktion:** Untertitel können dazu beitragen, die Aufmerksamkeit des Betrachters zu erhalten und das Verständnis zu verbessern, insbesondere in lauten Umgebungen oder wenn sich die Muttersprache des Betrachters von der Sprache des Videos unterscheidet.
-
-Durch diese Funktionen werden KI-gestützte Untertitel zu einem wertvollen Tool für Ersteller von Inhalten, die die Barrierefreiheit und Interaktion ihrer Videoinhalte verbessern möchten.
+Mit der Funktion für mehrfache Untertitel und Audiospuren in Dynamic Media können Sie einem primären Video mühelos mehrfache Untertitel und Audiospuren hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
 ![Registerkarte „Untertitel und Audiospuren“ in Dynamic Media zusammen mit einer Tabelle der hochgeladenen .VTT-Untertiteldateien und der hochgeladenen .MP3-Audiospurdateien für ein Video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
+
 Für das Hinzufügen von mehrfachen Untertiteln und Audiospuren zu Ihrem primären Video sind unter anderem die folgenden Anwendungsfälle zu berücksichtigen:
 
-| Typ | Nutzungsszenario |
-|--- |--- |
-| **Untertitel** | Unterstützung mehrerer Sprachen |
-|  | Beschreibender Text für Barrierefreiheit |
-| **Audiospuren** | Unterstützung mehrerer Sprachen |
-|  | Kommentarspuren |
-|  | Beschreibendes Audio |
 
-Alle in Dynamic Media](/help/assets/file-format-support.md) unterstützten [Videoformate und alle Dynamic Media-Video-Viewer - mit Ausnahme des Dynamic Media *Video_360* -Viewers - werden für die Verwendung mit mehreren Untertiteln und Audiospuren unterstützt.
+| Typ | Nutzungsszenario |
+| --- | --- |
+| Untertitel | Unterstützung mehrerer Sprachen<br>Beschreibender Text für Barrierefreiheit |
+| Audiospuren | Unterstützung mehrerer Sprachen<br>Kommentar-Tracks<br>Beschreibendes Audio |
+
+
+Alle in Dynamic Media](/help/assets/file-format-support.md) unterstützten [Videoformate und alle Dynamic Media-Video-Viewer (mit Ausnahme des Dynamic Media Video_360-Viewers) werden für die Verwendung mit mehreren Untertiteln und Audiospuren unterstützt.
 
 Die Funktion für mehrfache Untertitel und mehrfache Audiospuren ist für Ihr Dynamic Media-Konto über einen Funktionsumschalter verfügbar, der vom Adobe-Kunden-Support aktiviert werden muss.
 
@@ -594,161 +586,272 @@ Bevor Sie Ihrem Video mehrfache Untertitel und Audiospuren hinzufügen, stellen 
 
 * Dynamic Media ist in einer AEM-Umgebung eingerichtet.
 * Ein [Dynamic Media-Videoprofil wurde auf den Ordner angewendet, in dem Ihre Videos aufgenommen werden](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-Caption/Audio-Tracks und AI-generierte Untertitel sind in Ihrem Dynamic Media-Konto aktiviert](#enable-dash).
+* [Die Funktion für mehrfache Untertitel und mehrfache Audiospuren ist in Ihrem Dynamic Media-Konto aktiviert.](/help/assets/dynamic-media/video.md#enable-dash).
 
-Hinzugefügte Beschriftungen werden in den Formaten WebVTT und Adobe VTT unterstützt. Außerdem werden hinzugefügte Audiospurdateien mit dem MP3-Format unterstützt.
+Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Adobe VTT unterstützt. Außerdem werden hinzugefügte Audiospurdateien mit dem MP3-Format unterstützt.
 
 >[!IMPORTANT]
 >
->Bei Videos, die *vor* hochgeladen wurden und die Unterstützung für mehrere Untertitel/Audiospuren oder AI-generierte Untertitel in Ihrem Dynamic Media-Konto ermöglichen, [müssen Sie diese neu verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Dieser Schritt zur Neuverarbeitung stellt sicher, dass diese Videos die Funktionen für mehrere Beschriftungen/Audiospuren und KI-generierte Beschriftungen verwenden können. Nach der Neuverarbeitung funktionieren die Video-URLs weiterhin und werden wie gewohnt wiedergegeben.
+>Alle Videos, die Sie vor der Aktivierung der Unterstützung für mehrere Untertitel und Audiospuren in Ihrem Dynamic Media-Konto hochgeladen haben, [müssen erneut verarbeitet werden](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist erforderlich, damit für diese die Funktion für mehrfache Untertitel und Audiospuren verfügbar ist. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
 
 **So fügen Sie mehrfache Untertitel und Audiospuren zu Ihrem Video hinzu:**
 
 1. [Laden Sie das primäre Video in einen Ordner hoch](/help/assets/manage-video-assets.md#upload-and-preview-video-assets), dem bereits ein Videoprofil zugewiesen ist.
 1. Navigieren Sie zum hochgeladenen Video-Asset, zu dem Sie mehrfache Untertitel und Audiospuren hinzufügen möchten.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listen- oder Kartenansicht das Video-Asset aus.
-1. Klicken Sie in der Symbolleiste auf das Symbol Eigenschaften (ein Kreis mit einem darin enthaltenen &quot;i&quot;).
-   ![Ausgewähltes Video-Asset mit Häkchen auf der Miniaturansicht des Videos und in der Symbolleiste hervorgehobenes Symbol zum Anzeigen der Eigenschaften ](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ausgewähltes Video-Asset in der Kartenansicht.*
+1. Wählen Sie in der Symbolleiste das Symbol „Eigenschaften“ (ein Kreis mit einem darin enthaltenen „i“) aus.
+
+   ![Asset-Eigenschaften-Schaltfläche.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ausgewähltes Video-Asset in der Kartenansicht*
+
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** aus.
 
+
    >[!TIP]
-   >Wenn Sie die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** nicht sehen, gibt es zwei mögliche Gründe:
-   >
+   >Wenn Sie die Registerkarte [!UICONTROL Untertitel und Audiospuren] nicht sehen, gibt es zwei mögliche Gründe:
    >* Dem Ordner, in dem sich das ausgewählte Video befindet, wurde kein Videoprofil zugewiesen. In diesem Fall siehe [Anwenden eines Videoprofils auf den Ordner](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Oder Dynamic Media muss das Video erneut verarbeiten. In diesem Fall siehe [Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* Oder das Video muss von Dynamic Media erneut verarbeitet werden. In diesem Fall siehe [Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+   Wenn Sie eine der oben genannten Aufgaben abgeschlossen haben, kehren Sie zu diesen Schritten zurück.
+
+   ![Asset-Eigenschaften ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;des Videos.*
+
+1. (Optional) Gehen Sie wie folgt vor, um einem Video einen oder mehrere Untertitel hinzuzufügen:
+
+   * Wählen Sie **[!UICONTROL Untertitel hochladen]** aus.
+   * Navigieren Sie zu einer oder mehreren VTT-Dateien (Video Text Tracks), wählen Sie diese aus und öffnen Sie sie.
+   * Damit Beschriftungen im Medienplayer angezeigt werden, müssen Sie die erforderlichen Details (Metadaten) zu jeder hochgeladenen Untertiteldatei hinzufügen. Wählen Sie das Stiftsymbol rechts neben dem Namen einer Untertiteldatei aus. Geben Sie im Dialogfeld &quot;Beschriftung bearbeiten&quot;die folgenden erforderlichen Details zur Datei ein und wählen Sie dann **[!UICONTROL Speichern]** aus. Wiederholen Sie diesen Vorgang für jede hochgeladene Untertiteldatei:
+
+
+   | Untertitelmetadaten | Beschreibung |
+   | --- | --- | 
+   | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Derselbe Dateiname kann nicht für zusätzliche Untertiteldateien und Audiospurdateien verwendet werden. |
+   | Sprache | Wählen Sie die Sprache des Untertitels aus. |
+   | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel** - Der Beschriftungstext, der mit dem Video angezeigt wird, das das Dialogfeld übersetzt oder umschreibt.<br>**Beschriftung** - Der Beschriftungstext enthält auch Hintergrundgeräusche, Sprachdifferenzierung und andere relevante Informationen zusammen mit der Übersetzung oder Transkription des Dialogfelds, wodurch der Inhalt für Personen, die taub oder schwerhörig sind, leichter zugänglich ist. |
+   | Label | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel Englisch (CC). |
+
+   Sie können Metadaten von Untertiteln später bei Bedarf ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
+
+1. (Optional) Gehen Sie wie folgt vor, um einem Video eine oder mehrere Audiospuren hinzuzufügen:
+
+   * Wählen Sie **[!UICONTROL Audiospuren hochladen]** aus.
+   * Navigieren Sie zu .mp3-Dateien, wählen Sie eine oder mehrere .mp3-Dateien aus und öffnen Sie sie.
+   * Damit Audiospuren in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medienplayer sichtbar sind, müssen Sie die erforderlichen Details zu jeder hinzugefügten Audio-Track-Datei hinzufügen. Wählen Sie das Stiftsymbol rechts neben dem Namen einer Audiospurdatei aus. Geben Sie im Dialogfeld &quot;Audiotrack bearbeiten&quot;die folgenden erforderlichen Details ein und wählen Sie dann **[!UICONTROL Speichern]** aus. Wiederholen Sie diesen Vorgang für jede Audiospurdatei, die Sie hochgeladen haben.
+
+   | Audiospur-Metadaten | Beschreibung |
+   | --- | --- |
+   | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Für zusätzliche Audiospurdateien oder Untertiteldateien darf nicht derselbe Name verwendet werden. |
+   | Sprache | Wählen Sie die Sprache der Audiospur aus. |
+   | Typ | Wählen Sie den Typ der verwendeten Audiospur aus.<br>**Original** - Der Audiotrack, der ursprünglich an das Video angehängt und in der Bezeichnung als `[Original]` dargestellt wurde, wobei die englische Sprache standardmäßig ausgewählt ist. Zwar können **[!UICONTROL Titel]** und **[!UICONTROL Sprache]** im Dialogfeld **[!UICONTROL Audiospur bearbeiten]** geändert werden, doch werden standardmäßig die ursprünglichen Werte verwendet, wenn das primäre Video erneut verarbeitet wird.<br>**Standard** - Ein Add-On-Audio-Track für eine andere Sprache als das Original.<br>**Audiobeschreibung** - Ein Audiotrack, der auch eine beschreibende Darstellung von nicht verbalen Aktionen und Gesten im Video enthält, wodurch Inhalte für Personen mit Sehbehinderungen leichter zugänglich sind. |
+   | Bezeichnung | Der Text, der im Medien-Player in der Popup-Liste **[!UICONTROL Audio oder Untertitel auswählen]** als Name der Audiospur angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Audiospur. Zum Beispiel: `English [Original]`. Für die Bezeichnung der an ein Video angehängten Audiospur ist standardmäßig `[Original]` festgelegt. |
+
+   Sie können diese Audiospur-Metadaten bei Bedarf später ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
+
+1. Wählen Sie oben rechts auf der Seite aus der Dropdown-Liste **[!UICONTROL Speichern und schließen]** die Option **[!UICONTROL Speichern]** aus. Die Dateien werden hochgeladen und die Metadatenverarbeitung beginnt, wie in der Spalte Status der Benutzeroberfläche dargestellt.
+
+   >[!NOTE]
    >
-   >Wenn Sie eine der oben genannten Aufgaben abgeschlossen haben, kehren Sie zu diesen Schritten zurück.
+   >Abhängig von den Caching-Einstellungen Ihrer Instanz kann es mehrere Minuten dauern, bis die verarbeiteten Metadaten in der Vorschau und in veröffentlichten URLs widergespiegelt werden.
 
-   ![Untertitel und Audiospuren auf der Seite &quot;Eigenschaften&quot;.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;des Videos.*
+1. (Optional) Wenn Sie im vorherigen Schritt **[!UICONTROL Speichern und schließen]** statt **[!UICONTROL Speichern]** ausgewählt haben, können Sie dennoch den Verarbeitungsstatus der hochgeladenen Dateien anzeigen. Siehe [Anzeigen des Lebenszyklusstatus hochgeladener Untertitel- und Audiospurdateien](/help/assets/dynamic-media/video.md#lifecycle-status-video).
 
-1. Gehen Sie wie folgt vor, um einem Video mindestens eine Audiospur hinzuzufügen:
-   1. Wählen Sie **[!UICONTROL Audiospuren hochladen]** aus.
-   1. Navigieren Sie zu .mp3-Dateien, wählen Sie eine oder mehrere .mp3-Dateien aus und öffnen Sie sie.
-   1. Damit Audiospuren in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medienplayer sichtbar sind, müssen Sie die erforderlichen Details zu jeder Audiospur-Datei hinzufügen. Dadurch wird sichergestellt, dass alle Audiospuren korrekt aufgelistet und zugänglich sind. Wählen Sie das Stiftsymbol rechts neben dem Namen einer Audiospurdatei aus. Geben Sie im Dialogfeld **Audio-Track bearbeiten** die folgenden erforderlichen Details ein:
+1. (Optional) Zeigen Sie vor der Veröffentlichung eine Vorschau des Videos an, um sicherzustellen, dass Untertitel und Audio erwartungsgemäß funktionieren. Siehe [Vorschau eines Videos mit mehreren Untertiteln und Audiospuren anzeigen](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
 
-      | Audiospur-Metadaten | Beschreibung |
+1. Veröffentlichen Sie das Video. Siehe [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+
+
+
+<!--
+
+## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
+
+* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
+* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
+* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
+* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+
+These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
+
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
+
+| Type | Use case |
+|--- |--- |
+| **Captions** | Multiple language support |
+|  | Descriptive text for accessibility |
+| **Audio tracks** | Multiple language support  |
+|  | Commentary tracks |
+|  | Descriptive audio |
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
+
+Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
+
+### Add multiple captions and audio tracks to your video {#add-msma}
+
+Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
+
+* Dynamic Media is set up in an AEM environment.
+* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
+
+Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+
+>[!IMPORTANT]
+>
+>For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
+
+**To add multiple captions and audio tracks to your video:**
+
+1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
+1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, click the Properties icon (a circle with an "i" in it).
+![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+
+   >[!TIP]
+   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
+   >
+   >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >
+   >When you have completed either one of the above tasks, return to these steps.
+  
+   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *Captions and audio tracks tab on the video's Properties page.*
+
+1. To add one or more audio tracks to a video, do the following:
+   1. Select **[!UICONTROL Upload Audio Tracks]**.
+   1. Navigate to, and select, one or more .mp3 files and open them.
+   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
+    
+      | Audio Track metadata | Description |
       |--- |--- |
-      | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Für zusätzliche Audiospurdateien oder Untertiteldateien darf nicht derselbe Name verwendet werden. |
-      | Sprache | Wählen Sie die richtige Sprache für den Audio-Track aus. |
-      | Typ | Wählen Sie den Typ der verwendeten Audiospur aus.<br>**Original** - Der Audiotrack, der ursprünglich an das Video angehängt und in der Beschriftung als `[Original]` mit der standardmäßig ausgewählten Sprache `English` dargestellt wurde. Zwar können **[!UICONTROL Titel]** und **[!UICONTROL Sprache]** im Dialogfeld **[!UICONTROL Audiospur bearbeiten]** geändert werden, doch werden standardmäßig die ursprünglichen Werte verwendet, wenn das primäre Video erneut verarbeitet wird.<br>**Standard** - Ein Add-On-Audio-Track für eine andere Sprache als das Original.<br>**Audiobeschreibung** - Ein Audiotrack, der auch eine beschreibende Darstellung von nicht verbalen Aktionen und Gesten im Video enthält, wodurch Inhalte für Personen mit Sehbehinderungen leichter zugänglich sind. |
-      | Bezeichnung | Der Text, der im Medien-Player in der Popup-Liste **[!UICONTROL Audio oder Untertitel auswählen]** als Name der Audiospur angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Audiospur. Zum Beispiel: `English [Original]`. Für die Bezeichnung der an ein Video angehängten Audiospur ist standardmäßig `[Original]` festgelegt. |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
+      | Language | Select the correct language of the audio track. |
+      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
 
-      Sie können diese Audiospur-Metadaten bei Bedarf später ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
+      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
-   1. Klicken Sie in der rechten oberen Ecke der Seite in der Dropdown-Liste **[!UICONTROL Speichern und schließen]** auf **[!UICONTROL Speichern]**.
-   1. Führen Sie einen der folgenden Schritte aus:
-      * Wiederholen Sie diesen Vorgang für jede Audio-Track-Datei, die Sie hochladen.
-      * Fahren Sie mit dem nächsten Schritt fort, um einem Video Untertitel hinzuzufügen.
+   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
+   1. Do one of the following:
+        * Repeat this process for each audio track file that you upload.
+        * Continue to the next step to add captions to a video.
 
-1. Um einem Video eine oder mehrere Untertiteldateien hinzuzufügen, wählen Sie aus, welcher der folgenden Anwendungsfälle am besten zu Ihrem Szenario passt:
-
-   |  | Nutzungsszenario | Beschriftungsoption erstellen zur Verwendung |
+1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
+   
+   |  | Use case | Create Caption option to use |
    | --- | --- | --- |
-   | **Option 1** | Ich habe meine eigenen bereits vorhandenen Untertiteldateien, die in den Sprachen vorliegen, die ich verwenden möchte.<br>Siehe **Option 1** unten. | **[!UICONTROL Dateien hochladen]** |
-   | **Option 2** | Ich möchte, dass AI meine Untertiteldateien in mehreren Sprachen generiert.<br>Siehe **Option 2** unten. | **[!UICONTROL Audiospuren konvertieren]** |
-   | **Option 3** | Text in einer Untertiteldatei (`.vtt`) muss korrigiert, neu hochgeladen werden, um die alte `.vtt`-Datei zu ersetzen, und dann lassen Sie AI die korrigierte Datei übersetzen.<br>Siehe **Option 3** unten. | **[!UICONTROL Beschriftung übersetzen]** |
+   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
+   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
+   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
 
-   ![Optionen zum Erstellen von Untertiteln.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *Das Dropdown-Menü Untertitel erstellen bietet drei Optionen: Dateien hochladen, Audiospuren konvertieren und Beschriftung übersetzen.*
+    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
+    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
 
-+++**Option 1:** *Ich habe meine eigenen bereits vorhandenen Untertiteldateien, die sich in den Sprachen befinden, die ich verwenden möchte* (**[!UICONTROL Option &quot;Dateien hochladen&quot;]** )
+    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
 
-   1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Beschriftung erstellen]** > **[!UICONTROL Dateien hochladen]**.
-   1. Navigieren Sie zu einer oder mehreren bereits vorhandenen `.vtt` -Dateien, wählen Sie sie aus und öffnen Sie sie.
-   1. Damit Beschriftungen im Medienplayer angezeigt werden, müssen Sie *1} die erforderlichen Details zu den* einzelnen *hochgeladenen Untertiteldateien hinzufügen.* Wählen Sie das Stiftsymbol rechts neben dem Namen einer Untertiteldatei aus. Geben Sie im Dialogfeld **Beschriftung bearbeiten** die folgenden erforderlichen Details zur Datei ein:
+    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
+    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
+    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
+    
+        | Caption metadata | Description |
+        |--- |--- |
+        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-      | Untertitelmetadaten | Beschreibung |
-      |--- |--- |
-      | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Derselbe Dateiname kann nicht für zusätzliche Untertiteldateien und Audiospurdateien verwendet werden. |
-      | Sprache | Wählen Sie die Sprache der Beschriftung aus. Nach der Verarbeitung einer Untertiteldatei ist dieses Sprachfeld nicht mehr bearbeitbar (abgeblendet) |
-      | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel** - Der Beschriftungstext, der mit dem Video angezeigt wird, das das Dialogfeld übersetzt oder umschreibt.<br>**Beschriftung** - Der Beschriftungstext enthält Hintergrundgeräusche, Sprachdifferenzierung und andere relevante Details zusammen mit Dialogübersetzung oder Transkription und verbessert die Barrierefreiheit für Personen, die taub oder schwerhörig sind. |
-      | Label | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel: `English (CC)`. |
+        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
-      Sie können Metadaten von Untertiteln später bei Bedarf ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
 
-   1. Klicken Sie in der rechten oberen Ecke der Seite in der Dropdown-Liste **[!UICONTROL Speichern und schließen]** auf **[!UICONTROL Speichern]**. Die Dateien werden hochgeladen und die Metadatenverarbeitung beginnt, wie in der Spalte **Status** der Benutzeroberfläche angezeigt.
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-      >[!NOTE]
-      >
-      >Abhängig von den Caching-Einstellungen Ihrer Instanz kann es mehrere Minuten dauern, bis die verarbeiteten Metadaten in der Vorschau und in veröffentlichten URLs widergespiegelt werden.
+    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+    1. Continue to step 8.
 
-   1. Wenn Sie im vorherigen Schritt &quot;**[!UICONTROL Speichern und schließen]**&quot; ausgewählt haben, können Sie den Verarbeitungsstatus der hochgeladenen Dateien weiterhin anzeigen, anstatt &quot;**[!UICONTROL Speichern]**&quot; auszuwählen. Siehe [Anzeigen des Lebenszyklusstatus hochgeladener Untertitel- und Audiospurdateien](#lifecycle-status-video).
-   1. Fahren Sie mit Schritt 8 fort.
+    +++
 
-+++
+    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
 
-+++**Option 2:** *Ich möchte, dass AI meine Untertiteldateien in mehreren Sprachen generiert* (**[!UICONTROL Option &quot;Audiospuren konvertieren&quot;]**)
+    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
 
-   1. Klicken Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Beschriftung erstellen]** > **[!UICONTROL Audiospuren konvertieren]**.
+        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
 
-      ![Dialogfeld &quot;Audiospuren konvertieren&quot;](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
-      *Das Dialogfeld &quot;Audiospuren konvertieren&quot;verwendet AI, um Untertiteldateien in mehreren Sprachen zu generieren.*
+    1. In the **Convert Audio Tracks** dialog box, set the following options:
+    
+        | Option | Description |
+        |--- |--- |
+        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
+        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
-   1. Legen Sie im Dialogfeld **Audiospuren konvertieren** die folgenden Optionen fest:
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
-      | Option | Beschreibung |
-      |--- |--- |
-      | Audiospur zum Konvertieren | Wählen Sie in der Dropdown-Liste die hochgeladene Audio-Track-Datei aus, aus der mithilfe von AI Untertitel erstellt werden sollen. |
-      | Output languages | Wählen Sie in der Dropdown-Liste eine oder mehrere Sprachen aus, in denen die Untertiteldatei angezeigt werden soll.<br>Klicken Sie auf **X**, um eine ausgewählte Sprache zu entfernen.<br>Während der Videowiedergabe wird die Liste der Sprachen im Medienplayer in der Reihenfolge angezeigt, in der Sie sie hier auswählen. |
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-   1. Klicken Sie auf **[!UICONTROL Fertig]**.
-   1. Klicken Sie in der rechten oberen Ecke der Seite in der Dropdown-Liste **[!UICONTROL Speichern und schließen]** auf **[!UICONTROL Speichern]**.
-   1. Klicken Sie erneut auf die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** . Eine oder mehrere Untertiteldateien werden erstellt und die Verarbeitung beginnt, wie in der Spalte **Status** der Benutzeroberfläche zu sehen ist. Siehe auch [Lebenszyklusstatus der hochgeladenen Untertitel- und Audiotrack-Dateien anzeigen](#lifecycle-status-video).
+    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
-      >[!NOTE]
-      >
-      >Abhängig von den Caching-Einstellungen Ihrer Instanz kann es mehrere Minuten dauern, bis die verarbeiteten Metadaten in der Vorschau und in veröffentlichten URLs widergespiegelt werden.
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-   1. (Optional) Wählen Sie das Stiftsymbol rechts neben dem Namen einer Untertiteldatei aus. Im Dialogfeld **Beschriftung bearbeiten** können Sie die folgenden Details zur Datei bearbeiten:
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+    1. Continue to step 8.
 
-      | Untertitelmetadaten | Beschreibung |
-      | --- | --- |
-      | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel** - Der Beschriftungstext, der mit dem Video angezeigt wird, das das Dialogfeld übersetzt oder umschreibt.<br>**Beschriftung** - Der Beschriftungstext enthält Hintergrundgeräusche und Sprachunterschiede. Es enthält auch andere relevante Informationen sowie die Übersetzung oder Transkription des Dialogfelds. Dieser Ansatz erleichtert den Zugang zu Inhalten für Personen, die taub oder schwerhörig sind. |
-      | Label | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel: `English (CC)`. |
+    +++
 
-      Sie können bei Bedarf bestimmte Beschriftungsmetadaten später ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Metadatendetails in veröffentlichten Videos in öffentlichen URLs angezeigt.
-   1. Fahren Sie mit Schritt 8 fort.
+    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
 
-+++
+    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
 
-+++**Option 3:** *Text in einer Untertiteldatei (`.vtt`) muss korrigiert werden, neu hochgeladen werden, um die alte `.vtt`-Datei zu ersetzen, und dann muss AI die korrigierte Datei übersetzen* (**[!UICONTROL Untertitel übersetzen]** -Option)
+        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
 
-   1. Klicken Sie auf **[!UICONTROL Beschriftung erstellen]** > **[!UICONTROL Beschriftungen übersetzen]**. Diese Option ist verfügbar, wenn bereits eine oder mehrere Untertiteldateien hinzugefügt und verarbeitet wurden.
+    1. In the **Translate caption** dialog box, set the following options:
 
-      ![Beschriftungen übersetzen, Dialogfeld.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
-      *Im Dialogfeld Untertitel übersetzen können Sie eine vorhandene Untertiteldatei verwenden, damit AI neue Untertiteldateien in mehreren Sprachen generiert.*
+        | Option | Description |
+        |--- |--- |
+        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
+        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
-   1. Legen Sie im Dialogfeld **Beschriftung übersetzen** die folgenden Optionen fest:
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
-      | Option | Beschreibung |
-      |--- |--- |
-      | Zu übersetzende Beschriftung | Wählen Sie in der Dropdown-Liste eine Untertiteldatei aus, aus der die mit KI generierten Untertitel erstellt werden sollen. |
-      | Output languages | Wählen Sie in der Dropdown-Liste eine oder mehrere Sprachen aus, in denen die Untertiteldatei angezeigt werden soll.<br>Klicken Sie auf **X**, um eine ausgewählte Sprache zu entfernen.<br>Während der Videowiedergabe wird die Liste der Sprachen im Medienplayer in der Reihenfolge angezeigt, in der Sie sie hier auswählen. |
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-   1. Klicken Sie auf **[!UICONTROL Fertig]**.
-   1. Klicken Sie in der rechten oberen Ecke der Seite in der Dropdown-Liste **[!UICONTROL Speichern und schließen]** auf **[!UICONTROL Speichern]**.
-   1. Klicken Sie erneut auf die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** . Eine oder mehrere Untertiteldateien werden erstellt und die Verarbeitung beginnt, wie in der Spalte **Status** der Benutzeroberfläche zu sehen ist. Siehe auch [Lebenszyklusstatus der hochgeladenen Untertitel- und Audiotrack-Dateien anzeigen](#lifecycle-status-video).
+    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
-      >[!NOTE]
-      >
-      >Abhängig von den Caching-Einstellungen Ihrer Instanz kann es mehrere Minuten dauern, bis die verarbeiteten Metadaten in der Vorschau und in veröffentlichten URLs widergespiegelt werden.
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-   1. (Optional) Wählen Sie das Stiftsymbol rechts neben dem Namen einer Untertiteldatei aus. Im Dialogfeld **Beschriftung bearbeiten** können Sie die folgenden Details zur Datei bearbeiten:
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
 
-      | Untertitelmetadaten | Beschreibung |
-      | --- | --- |
-      | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel** - Der Beschriftungstext, der mit dem Video angezeigt wird, das das Dialogfeld übersetzt oder umschreibt.<br>**Beschriftung** - Der Beschriftungstext enthält auch Hintergrundgeräusche und Sprachunterschiede. Es enthält auch andere relevante Informationen sowie die Übersetzung oder Transkription des Dialogfelds. Dieser Ansatz erleichtert den Zugang zu Inhalten für Personen, die taub oder schwerhörig sind. |
-      | Label | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel: `English (CC)`. |
+    1. Continue to step 8.
 
-      Sie können bei Bedarf bestimmte Beschriftungsmetadaten später ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Metadatendetails in veröffentlichten Videos in öffentlichen URLs angezeigt.
+    +++
 
-   1. Fahren Sie mit Schritt 8 fort.
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
+1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-+++
-
-1. (Optional) Zeigen Sie vor der Veröffentlichung eine Vorschau des Videos an, um sicherzustellen, dass Untertitel und Audio erwartungsgemäß funktionieren. Siehe [Vorschau eines Videos mit mehreren Untertiteln und Audiospuren anzeigen](#preview-video-audio-subtitle).
-1. Veröffentlichen Sie das Video. Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
+-->
 
 #### Grundlegendes zum Hinzufügen von Untertitel- und Audiospurdateien zu einem bereits veröffentlichten Video
 
@@ -779,7 +882,7 @@ Mehrere Änderungen an einem Untertitel haben Vorrang vor einem Untertitel, der 
 1. Veröffentlichen Sie das Video wie gewohnt.
 Die vorhandene URL mit dem Untertitelmodifikator kann nun mehrere Untertitel laden.
 
-### Anzeigen des Lebenszyklusstatus hochgeladener Untertitel- und Audiospurdateien{#lifecycle-status-video}
+### Anzeigen des Lebenszyklusstatus hochgeladener Untertitel- und Audiospurdateien {#lifecycle-status-video}
 
 Sie können den Lebenszyklusstatus jeder Legende- oder Audiotrack-Datei erkennen, die in Ihr Primärvideo hochgeladen wurde. Sie können dies über die Registerkarte **Untertitel und Audiospuren** von **Eigenschaften** tun.
 
