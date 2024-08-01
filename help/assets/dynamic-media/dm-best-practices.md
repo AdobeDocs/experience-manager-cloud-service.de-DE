@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 86%
 
 ---
@@ -77,9 +77,11 @@ Die Best Practices für den Dynamic Media-Viewer sind wichtige Richtlinien zur O
 Durch Befolgen dieser Best Practices können Sie eine nahtlose Integration, eine effiziente Asset-Verwaltung und verbesserte Viewer-Interaktionen erzielen. Die Synchronisierung von Assets, die Verwendung von smartem Zuschneiden und die Einhaltung der JavaScript-Dateieinschlussrichtlinien sind wichtige Vorgehensweisen. Diese Empfehlungen tragen dazu bei, die Integrität und Zuverlässigkeit der Medienbereitstellung über verschiedene Plattformen und Geräte hinweg aufrechtzuerhalten.
 
 * **Synchronisieren von Viewer Assets:**
-Stellen Sie sicher, dass alle Viewer-Assets mit Dynamic Media synchronisiert sind, bevor Sie den Player verwenden. Informationen zur Fehlerbehebung für den Viewer finden Sie im Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
-* **Beispielmanagerseite:**
-Rufen Sie die Beispielmanagerseite unter `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` auf.
+Stellen Sie sicher, dass alle Viewer-Assets mit Dynamic Media synchronisiert sind, bevor Sie den Player verwenden.
+
+   * Rufen Sie die Beispielmanagerseite unter `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` auf. Auf dieser Seite können Sie die Assets eines Viewers neu synchronisieren, einschließlich vordefinierter Symbole, CSS-Dateien und Vorgaben.
+   * Wenn Viewer-Probleme auftreten, lesen Sie den Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
+
 * **Publish Assets:**
 Stellen Sie sicher, dass Assets veröffentlicht sind, bevor Sie sie in den Versand-Viewern anzeigen.
 * **Automatische Videowiedergabe gemalt:**
@@ -400,6 +402,7 @@ Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/
 
 **Geschäftsfall:** *Wie kann sichergestellt werden, dass die Änderungen sofort im CDN erscheinen, nachdem neue Inhalte veröffentlicht oder vorhandene Inhalte überschrieben wurden?*
 
-Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kunden zwischen. Wenn Aktualisierungen an diesen Assets vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Durch das Bereinigen oder Invalidieren des CDN-Cache können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist. Stattdessen kann eine Anforderung über die Benutzeroberfläche von Dynamic Media gesendet werden, damit der Cache innerhalb von Minuten abläuft.
+Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kunden zwischen. Wenn Aktualisierungen an diesen Assets vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Durch das Bereinigen oder Invalidieren des CDN-Cache können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist.
+Je nach Anwendungsfall können Sie die Einstellungen für CDN TTL (Time to Live) entsprechend aktualisieren.
 
 Möchten Sie mehr erfahren?  Wechseln Sie zu [Ungültiges CDN-Cache über Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
