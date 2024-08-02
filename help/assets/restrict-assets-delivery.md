@@ -3,9 +3,9 @@ title: Beschränken der Bereitstellung von Assets in Experience Manager
 description: Erfahren Sie, wie Sie die Asset-Bereitstellung in [!DNL Experience Manager] einschränken.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Wenn das Feld nicht verfügbar ist, führen Sie die folgenden Schritte aus, um d
    1. Wählen Sie die **[!UICONTROL Benutzergruppe]** aus, die Sie hinzufügen müssen, extrahieren Sie die **[!UICONTROL orgID]** und die **[!UICONTROL userGroupID]** aus der URL oder verwenden Sie Ihre Organisations-ID, z. B. `{orgID}@AdobeOrg:{usergroupID}`.
 
 1. Fügen Sie die Gruppen-ID zum Feld **[!UICONTROL Rollen]** der Asset-Eigenschaften hinzu. <br>
-Die im Feld **[!UICONTROL Rollen]** definierten Gruppen-IDs sind die einzigen Benutzer, die auf das Asset zugreifen können. Sie können auch die IMS-Client-ID und die IMS-Profil-ID im Feld **[!UICONTROL Rollen]** hinzufügen. Zum Beispiel: `{orgId}@AdobeOrg:{profileId}`.
+Die im Feld **[!UICONTROL Rollen]** definierten Gruppen-IDs sind die einzigen Benutzer, die auf das Asset zugreifen können. Neben der IMS-Gruppen-ID können Sie auch die IMS-Benutzer-ID und die IMS-Profil-ID im Feld **[!UICONTROL Rollen]** hinzufügen. Zum Beispiel: `{orgId}@AdobeOrg:{profileId}`.
 
    >[!NOTE]
    >
