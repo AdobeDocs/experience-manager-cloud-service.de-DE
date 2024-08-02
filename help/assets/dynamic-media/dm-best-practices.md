@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 86%
@@ -162,14 +162,17 @@ Wenden Sie die folgenden Empfehlungen regelmäßig an, um sicherzustellen, dass 
 
 * **Bedeutungstragende Namen von Bilddateien:**
 Verwenden Sie beschreibende Dateinamen, die den Bildinhalt widerspiegeln. Zum Beispiel:
+
    * Verwenden Sie `myCompany-Silver-Wrist-Watch`
    * *vermeiden Sie* `myCompany_Silver_Wrist_Watch` oder `myCompanySilverWristWatch`
 
   Dies hilft Suchmaschinen dabei, den Bildkontext zu verstehen, und verbessert die SEO. Google bevorzugt in einem Dateinamen Bindestriche gegenüber Unterstrichen oder Leerzeichen. Vermeiden Sie in einem Dateinamen auch die Verkettung von Wörtern.
 * **Benutzerdefinierte Domain:**
 Implementieren Sie eine benutzerdefinierte Domain, die Ihren Unternehmens- oder Markennamen enthält, um die Markenerkennung und das Vertrauen in die Marke zu stärken. Zum Beispiel:
+
    * Verwenden Sie `http://images.mycompany.com/is/image/companyname/`
    * *vermeiden Sie* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **SEO-freundliche Ordnerstruktur:**
 Organisieren Sie Ihre Bilder in einer Ordnerstruktur, die Ihren Unternehmensnamen oder Ihre Marke enthält, um eine bessere Indizierung zu erzielen, z. B. `http://images.mycompany.com/is/image/companyname/`.
 * **Regelsätze in Dynamic Media:**
@@ -309,6 +312,7 @@ Laden Sie die Originalvideodatei hoch. Stellen Sie sicher, dass es sich um ein h
 Erstellen Sie eine Vorschau des Videos, um sicherzustellen, dass alles wie erwartet aussieht. Sobald Sie zufrieden sind, veröffentlichen Sie das Video. Dadurch wird das Video für Ihre Zielgruppe zugänglich.
 * **Verknüpfen oder Einbetten:**
 Nach der Veröffentlichung haben Sie zwei Optionen.
+
    * **Direktes Verknüpfen:**
 Verwenden Sie die bereitgestellte URL, um eine direkte Verknüpfung zum Video herzustellen. Verknüpfen Sie es entsprechend mit einem Hyperlink auf Ihrer Marketing-Site.
    * **Einbetten des Videos:**
