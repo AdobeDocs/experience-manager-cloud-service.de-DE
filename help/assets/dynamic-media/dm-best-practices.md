@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
+source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 86%
@@ -406,7 +406,6 @@ Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/
 
 **Geschäftsfall:** *Wie kann sichergestellt werden, dass die Änderungen sofort im CDN erscheinen, nachdem neue Inhalte veröffentlicht oder vorhandene Inhalte überschrieben wurden?*
 
-Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kunden zwischen. Wenn Aktualisierungen an diesen Assets vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Durch das Bereinigen oder Invalidieren des CDN-Cache können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist.
-Je nach Anwendungsfall können Sie die Einstellungen für CDN TTL (Time to Live) entsprechend aktualisieren.
+Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kunden zwischen. Wenn Aktualisierungen an diesen Assets vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Durch das Bereinigen oder Invalidieren des CDN-Cache können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist. Je nach Anwendungsfall können Sie die Einstellungen für CDN TTL (Time to Live) entsprechend aktualisieren.
 
 Möchten Sie mehr erfahren?  Wechseln Sie zu [Ungültiges CDN-Cache über Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
