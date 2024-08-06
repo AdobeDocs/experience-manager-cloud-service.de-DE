@@ -4,16 +4,18 @@ description: Bearbeiten Sie Bilder mit von [!DNL Adobe Express] unterstützten O
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
+source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 73%
 
 ---
 
 # Bearbeiten von Bildern in [!DNL Assets view] {#edit-images-in-assets-view}
 
-Die Assets-Ansicht ermöglicht eine grundlegende Bildbearbeitung, einschließlich Größenanpassung, Hintergrundentfernung, Zuschneiden und Konvertierung zwischen JPEG- und PNG-Formaten. Darüber hinaus ermöglicht sie eine erweiterte Bearbeitung durch die Integration mit Adobe Express. Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) und klicken Sie auf **Bild bearbeiten**.
+Die Benutzeroberfläche der Assets-Ansicht ermöglicht die einfache Bildbearbeitung auf Basis von Adobe Expreß, integriert in die Benutzeroberfläche. Diese Bearbeitung umfasst das Ändern der Größe, Entfernen des Hintergrunds, Zuschneiden und Konvertieren zwischen JPEG- und PNG-Formaten. Darüber hinaus ermöglicht es eine erweiterte Bearbeitung über die Adobe Express-Benutzeroberfläche Eingebettet in die Assets-Ansichtsbenutzeroberfläche.
+
+Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) und klicken Sie auf **Bild bearbeiten**.
 
 >[!NOTE]
 >
@@ -23,7 +25,7 @@ Die Assets-Ansicht ermöglicht eine grundlegende Bildbearbeitung, einschließlic
 
 ## Bearbeiten von Bildern {#edit-image}
 
-Öffnen Sie die Assets-Ansicht, indem Sie auf den Link für die [Assets-Ansicht](https://experience.adobe.com/#/assets) klicken und das richtige Repository auswählen. Wenden Sie sich an die Admins Ihrer Organisation, um Zugriff zu erhalten.
+Wechseln Sie zur Benutzeroberfläche der Assets-Ansicht, indem Sie den Link &quot;[Assets-Ansicht](https://experience.adobe.com/#/assets)&quot;verwenden und das richtige Repository auswählen. Wenden Sie sich an die Admins Ihrer Organisation, um Zugriff zu erhalten.
 Weitere Informationen finden Sie unter [Erste Schritte mit der Assets-Ansicht von Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Grundlegendes zur Benutzeroberfläche der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) und [Anwendungsfälle für die Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -33,13 +35,13 @@ Weitere Informationen finden Sie unter [Erste Schritte mit der Assets-Ansicht vo
 
 ### Bearbeiten von Bildern in der Assets-Ansicht mit Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Nachdem Sie die Assets-Ansicht geöffnet haben, klicken Sie auf **Assets**. Wählen Sie ein Bild aus und klicken Sie in der oberen Leiste auf **Bearbeiten**. Im neuen Bildschirm werden die verfügbaren Bearbeitungsoptionen angezeigt, darunter Größenanpassung, Hintergrundentfernung, Zuschneiden und Konvertierung zwischen JPEG- und PNG-Formaten.
+Klicken Sie nach dem Navigieren zur Assets-Ansicht auf **Assets**, wählen Sie ein Bild aus und klicken Sie dann in der oberen Leiste auf **Bearbeiten** . Der neue Bildschirm enthält die verfügbaren Bearbeitungsoptionen, die von Adobe Express unterstützt werden. Dazu gehören Größenanpassung, Hintergrundentfernt, Zuschneiden und Konvertieren zwischen JPEG- und PNG-Formaten.
 
 #### Ändern der Bildgröße {#resize-image-using-express}
 
 Ein beliebtes Anwendungsbeispiel ist die Größenanpassung eines Bildes auf eine bestimmte Größe. Die Assets-Ansicht ermöglicht es Ihnen, die Größe von Bildern schnell an die gängigen Bildgrößen anzupassen, indem vorab berechnete, neue Auflösungen für bestimmte Bildgrößen bereitgestellt werden. Gehen Sie wie folgt vor, um mithilfe der Assets-Ansicht die Bildgröße zu ändern:
 
-1. Klicken Sie im linken Bereich auf **Bildgröße ändern**.
+1. Klicken Sie im linken Bereich auf **Bildgröße ändern** . In einem Dialogfeld werden die Größenanpassungsfunktionen für Bilder angezeigt, die von Adobe Expreß unterstützt werden.
 1. Wählen Sie in der Dropdown-Liste „Größe ändern“ die entsprechende Social-Media-Plattform aus und wählen Sie in den angezeigten Optionen die Bildgröße aus.
 1. Falls erforderlich, skalieren Sie das Bild mithilfe des Feldes **Bildskala**.
 1. Klicken Sie auf **[!UICONTROL Anwenden]**, um Ihre Änderungen anzuwenden.
@@ -68,7 +70,7 @@ Mit den eingebetteten Schnellaktionen von [!DNL Adobe Express] ist es einfach, e
    ![Speichern Sie das Bild mit Adobe Express](assets/adobe-express-crop-image.png)
 Das zugeschnittene Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
 
-#### Konvertieren zwischen Bilddateitypen {#convert-image-types-using-express}
+#### JPEG in PNG konvertieren {#convert-image-types-using-express}
 
 Mithilfe von Adobe Express können Sie schnell zwischen JPEG- und PNG-Bildformaten konvertieren. Führen Sie die folgenden Schritte aus:
 
@@ -79,33 +81,27 @@ Mithilfe von Adobe Express können Sie schnell zwischen JPEG- und PNG-Bildformat
 #### Einschränkungen {#limitations-adobe-express}
 
 * Unterstützte Bildauflösung: Minimum – 50 Pixel, Maximum – 6000 Pixel pro Dimension.
-
 * Maximal unterstützte Dateigröße: 17 MB.
 
 ### Bearbeiten von Bildern im eingebetteten Adobe Express-Editor {#edit-images-in-adobe-express-embedded-editor}
 
-Benutzende mit Express-Berechtigung können den eingebetteten Express-Editor in der Assets-Ansicht verwenden, um Inhalte einfach zu bearbeiten und neue Inhalte mit GenAI von Adobe Firefly zu erstellen. Dies ermöglicht eine bessere Wiederverwendung von Inhalten und erhöht die Content-Geschwindigkeit. Sie können auch vordefinierte Elemente verwenden, um Ihr Asset atemberaubend zu gestalten, oder Schnellaktionen durchführen, um Ihr Bild mit nur wenigen Klicks schnell und bequem zu bearbeiten.
+Benutzende mit Express-Berechtigung können den eingebetteten Express-Editor in der Assets-Ansicht verwenden, um Inhalte einfach zu bearbeiten und neue Inhalte mit GenAI von Adobe Firefly zu erstellen. Diese Funktion verbessert die Wiederverwendung von Inhalten und beschleunigt die Content-Geschwindigkeit. Sie können auch vordefinierte Elemente verwenden, um Ihr Asset atemberaubend zu gestalten, oder Schnellaktionen durchführen, um Ihr Bild mit nur wenigen Klicks schnell und bequem zu bearbeiten.
 ![Express in Essentials-Benutzeroberfläche](/help/assets/assets/express-in-essentials-ui.jpg)
 Gehen Sie wie folgt vor, um Bilder mit dem eingebetteten [!DNL Adobe Express]-Editor zu bearbeiten:
 
-1. Öffnen Sie die AEM-Assets-Ansicht, indem Sie auf den Link für die [AEM-Assets-Ansicht](https://experience.adobe.com/#/assets) klicken und das richtige Repository auswählen.
+1. Wechseln Sie mithilfe des Links &quot;[AEM Assets-Ansicht](https://experience.adobe.com/#/assets)&quot;zur AEM Assets-Ansicht und wählen Sie das richtige Repository aus.
 1. Klicken Sie auf **Assets**, geben Sie einen Ordner an und wählen Sie ein Bild aus.
 1. Klicken Sie auf **In Adobe Express öffnen**. Das Bild wird in einer Express-Arbeitsfläche geöffnet.
 1. Nehmen Sie die erforderlichen Änderungen am Bild vor.
 1. Wenn Sie für Ihr Projekt weitere Seiten hinzufügen müssen, klicken Sie auf **Hinzufügen** und wählen Sie „Assets“ aus. Geben Sie einen Ordner an, wählen Sie ein Bild aus, das in die Arbeitsflächenseite geladen werden soll, und nehmen Sie dann die erforderlichen Änderungen am Bild vor.
-1. Klicken Sie auf **Speichern**, um das Bild bzw. die Bilder zu speichern. Das Dialogfeld „Speichern“ wird angezeigt.
+1. Um ein oder mehrere Assets zu speichern, klicken Sie auf **Speichern**. Im Dialogfeld &quot;Speichern&quot;werden die Speicheroptionen angezeigt. Um zwischen den Speicheroptionen auszuwählen, folgen Sie einer der folgenden Anweisungen, die Ihren Anforderungen entsprechen:
+   1. Um eine einzelne Seite zu speichern, klicken Sie auf **Als Version speichern** , um das Bild als neue Version zu exportieren (wobei das Originalformat erhalten bleibt), und speichern Sie es im selben Ordner.
 
-   >[!NOTE]
-   >
-   > **1. Für eine einzelne Seite**
-   >
-   > **Als Version speichern:** Diese Funktion unterstützt nur das Speichern eines einzelnen Assets. Wählen Sie diese Option aus, um das Bild als neue Version zu exportieren (wobei das Originalformat beibehalten wird) und im selben Ordner zu speichern.
-   > **Als neues Asset speichern:** Wählen Sie diese Option aus, um das Asset in einem anderen Format wie ursprünglich zu exportieren und es als neues Asset in einem beliebigen Ordner zu speichern.
-   >  
-   > **2. Für mehrere Seiten**
-   >
-   > **Als Version speichern:** Diese Funktion unterstützt nur das Speichern eines einzelnen Assets. Wenn Sie eine einzelne Seite von mehreren Seiten speichern möchten, wählen Sie diese Option aus, um das Asset in seinem ursprünglichen Format und an seinem ursprünglichen Speicherort zu speichern.\
-   > **Als neues Asset speichern:** Mit dieser Option exportieren Sie entweder mehrere Assets oder ein einzelnes Asset in einen beliebigen Ordner und speichern diese als neue Assets in ihrem ursprünglichen oder einem anderen Dateiformat.
+   1. Um eine einzelne Seite zu speichern, klicken Sie auf **Als neues Asset speichern** , um das Asset in ein anderes Format zu exportieren und es als neues Asset in einem beliebigen Ordner zu speichern.
+
+   1. Um eine einzelne Seite von mehreren Seiten zu speichern, klicken Sie auf **Als Version speichern** , um das Asset in seinem ursprünglichen Format und an seinem Speicherort zu speichern.
+
+   1. Um mehrere Seiten oder eine einzelne Seite unter mehreren Seiten zu speichern, klicken Sie auf **Als neues Asset speichern**. Durch diese Aktion werden die einzelnen Assets oder mehrere Assets in einen beliebigen Ordner exportiert und als neue Assets oder Assets im Original oder in einem anderen Format gespeichert.
 
 1. Im Dialogfeld „Speichern“:
    1. Geben Sie einen Namen für die Datei in das Feld **Speichern unter** ein.
