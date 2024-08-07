@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -59,7 +59,7 @@ Eine CDN-Fehlerseite kann so konfiguriert werden, dass sie die ungebrandete Stan
 
 ### Löschen zwischengespeicherter Inhalte im CDN {#purge-cdn}
 
-Das Festlegen von TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Inhaltsaktualisierung abzuwägen. In Fällen, in denen es wichtig ist, aktualisierte Inhalte sofort bereitzustellen, kann es jedoch von Vorteil sein, den CDN-Cache direkt zu bereinigen.
+Das Festlegen von TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. In Fällen, in denen es wichtig ist, aktualisierte Inhalte sofort bereitzustellen, kann es jedoch von Vorteil sein, den CDN-Cache direkt zu bereinigen.
 
 Lesen Sie mehr über das Konfigurieren eines Bereinigungs-API-Tokens](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) und das Löschen des zwischengespeicherten CDN-Inhalts [.[](/help/implementing/dispatcher/cdn-cache-purge.md)
 
@@ -67,7 +67,7 @@ Lesen Sie mehr über das Konfigurieren eines Bereinigungs-API-Tokens](/help/impl
 
 Für einfache Authentifizierungsfälle, einschließlich geschäftlicher Interessengruppen, die Inhalte überprüfen, schützen Sie Inhalte, indem Sie ein einfaches Authentifizierungsdialogfeld anzeigen, das einen Benutzernamen und ein Kennwort erfordert. [Weitere Infos](/help/implementing/dispatcher/cdn-credentials-authentication.md) und Teilnahme am frühen Adopter-Programm.
 
-## Kunden-CDN verweist auf AEM verwaltetes CDN {#point-to-point-CDN}
+## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
