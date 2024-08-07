@@ -5,16 +5,23 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 100%
+source-wordcount: '1101'
+ht-degree: 55%
 
 ---
+
 
 # Lizenz-Dashboard {#license-dashboard}
 
 Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen, die für Ihre Organisation oder Ihren Mandanten verfügbar sind, einfach einsehen können.
+
+>[!IMPORTANT]
+>
+>Das Lizenz-Dashboard gilt nur für die AEM as a Cloud Service-Programme. [AMS-Programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) sind nicht im Lizenz-Dashboard enthalten.
+>
+>Informationen zum Bestimmen des Diensttyps Ihres Programms (AMS oder AEMaaCS) finden Sie im Dokument [Navigieren in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md#program-cards) .
 
 ## Übersicht {#overview}
 
@@ -32,8 +39,8 @@ Gehen Sie wie folgt vor, um auf Ihr Lizenz-Dashboard zuzugreifen.
 >Benutzende mit der Rolle **Geschäftsinhaber** müssen angemeldet sein, damit ihnen das Lizenz-Dashboard angezeigt wird.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
-
-1. Wechseln Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** zur Registerkarte **Lizenz**.
+1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf die Menüschaltfläche Hamburger in der Kopfzeile [Cloud Manager .](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Dadurch werden die Registerkarten angezeigt.
+1. Tippen oder klicken Sie auf der Registerkarte auf die Option **Lizenz** .
 
 ![Lizenz-Dashboard](assets/license-dashboard.png)
 
@@ -41,18 +48,56 @@ Das Dashboard ist in drei Abschnitte unterteilt, die Ihnen Folgendes zeigen:
 
 * **Lösungen**: In diesem Abschnitt werden die von Ihnen lizenzierten Lösungen wie Sites oder Assets zusammengefasst.
 * **Add-ons**: In diesem Abschnitt werden die Add-ons zu Ihren lizenzierten Lösungen zusammengefasst, die für Sie verfügbar sind.
-* **Sandbox- und Entwicklungsumgebungen**: In diesem Abschnitt werden die Umgebungen zusammengefasst, die für Sie verfügbar sind.
+* **Andere Berechtigungen** - In diesem Abschnitt wird zusammengefasst, welche Sandbox- und Entwicklungsumgebung sowie andere Berechtigungen innerhalb Ihres Mandanten genutzt werden können.
 
-In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfügbar sind und wie sie verwendet werden. Derzeit werden nur Sites-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
+In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfügbar sind und wie sie verwendet werden. Derzeit werden nur Sites- und Assets-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
 
 * In der Spalte **Status** wird die Anzahl der nicht verwendeten Berechtigungen im Vergleich zur Gesamtanzahl angezeigt, die für den Mandanten verfügbar sind.
 * Die Spalte **Konfiguriert in** gibt die Programme an, auf die die Lösungsberechtigungen angewendet wurden.
    * Eine Berechtigung gilt nur dann als verwendet, wenn eine Produktionsumgebung erstellt wurde oder, falls eine existiert, wenn eine Update-Pipeline dafür ausgeführt wurde.
-* In der Spalte **Nutzung** werden die Inhaltsanfragen der letzten 12 Monate als Diagramm angezeigt, wenn Sie darauf klicken.
+   * Nur eine begrenzte Anzahl von Programmen wird einzeln in der Spalte aufgeführt, der Rest wird durch einen `+x` -Eintrag repräsentiert.
+   * Bewegen Sie den Mauszeiger über den Eintrag &quot;`+x`&quot;, um ein Popup mit den Details aller Programme anzuzeigen.
+* In der Spalte **Nutzung** wird die Schaltfläche **[Nutzungsdetails anzeigen](#view-usage-details)** angezeigt, um Nutzungsstatistiken für die Lösung anzuzeigen.
 
 >[!TIP]
 >
 >Informationen zum Verwalten Ihrer Adobe-Berechtigungen in Ihrem gesamten Unternehmen über die Admin Console finden Sie unter [Überblick über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html).
+
+## Nutzungsdetails anzeigen {#view-usage-details}
+
+Die Schaltfläche **Nutzungsdetails anzeigen** bietet Zugriff auf das Fenster **Nutzungsdetails** der ausgewählten Lösung. In diesem Fenster finden Sie eine detaillierte Aufschlüsselung mit Diagrammen zur Verwendung Ihrer Lösung. Wie diese Nutzung gemessen wird, hängt von der gewählten Lösung ab.
+
+### Sites-Nutzungsdetails {#sites-usage-details}
+
+Das Fenster **Sites-Nutzungsdetails** enthält Diagramme, die einen Überblick über die Verwendung Ihrer Sites-Lizenzen auf der Grundlage von [Inhaltsanforderungen](#what-is-a-content-request) geben.
+
+![Fenster mit Nutzungsdetails für Sites](assets/sites-usage-details.png)
+
+Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Verteilung des Vertrags für das im Dropdown-Menü **Vertragsjahr anzeigen** ausgewählte Vertragsjahr.
+
+Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Ein Mauszeiger zeigt ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt an.
+
+### Assets-Nutzungsdetails {#assets-usage-details}
+
+Das Fenster **Assets-Nutzungsdetails** enthält Diagramme, die einen Überblick über die Verwendung Ihrer Assets-Lizenzen basierend auf den Standardbenutzern [Speicher](#storage) und [ geben.](#standard-users) Wählen Sie die entsprechende Registerkarte aus, um zwischen den Ansichten umzuschalten.
+
+Für die Ansichten von Speicher und Standardbenutzern können Sie das Dropdown-Menü **Umgebungstyp** verwenden, um die Ansicht zwischen Produktions-, Staging- und Entwicklungsumgebungen umzuschalten.
+
+#### Speicher {#storage}
+
+![Fenster mit den Assets-Nutzungsdetails für die Datenspeicherung](assets/assets-usage-details-storage.png)
+
+Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Verteilung des Vertrags für das im Dropdown-Menü **Vertragsjahr anzeigen** ausgewählte Vertragsjahr.
+
+Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Ein Mauszeiger zeigt ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt an.
+
+#### Standardbenutzende {#standard-users}
+
+![Fenster mit Nutzungsdetails für Assets für Standardbenutzer](assets/assets-usage-details-standard-users.png)
+
+Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Verteilung des Vertrags für das im Dropdown-Menü **Vertragsjahr anzeigen** ausgewählte Vertragsjahr.
+
+Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Ein Mauszeiger zeigt ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt an.
 
 ## Häufig gestellte Fragen {#faq}
 
