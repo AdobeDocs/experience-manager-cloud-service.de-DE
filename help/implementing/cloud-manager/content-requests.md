@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 94%
+source-wordcount: '1269'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
-Inhaltsanfragen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, die in dieser Tabelle zusammengefasst sind. Im Allgemeinen sollten Analyse-Tools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, *nicht verwendet werden*, um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten. Der Grund dafür ist, dass deren Auslösung häufig von der Zustimmung von Benutzerinnen und Benutzern abhängig ist, wodurch sie einen erheblichen Anteil des Traffics nicht erfassen. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. Für die Berichterstellung über Seitenansichten und die damit verbundene Leistung ist der [Adobe RUM-Datendienst](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) die von Adobe empfohlene Option.
+Inhaltsanfragen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, die in dieser Tabelle zusammengefasst sind. Im Allgemeinen sollten Analyse-Tools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, *nicht verwendet werden*, um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten. Der Grund dafür ist, dass deren Auslösung häufig von der Zustimmung von Benutzerinnen und Benutzern abhängig ist, wodurch sie einen erheblichen Anteil des Traffics nicht erfassen. Analytics-Tools, die Daten serverseitig in Protokolldateien sammeln, oder CDN-Berichte für Kunden, die ihr eigenes CDN zusätzlich zu AEM as a Cloud Service hinzufügen, bieten bessere Zählungen.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
