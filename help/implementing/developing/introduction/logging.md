@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: ht
-source-wordcount: '2797'
-ht-degree: 100%
+source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+workflow-type: tm+mt
+source-wordcount: '2829'
+ht-degree: 98%
 
 ---
 
@@ -614,6 +614,12 @@ Kundinnen und Kunden mit Splunk-Konten können über das Kunden-Support-Ticket a
 Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der kundenseitigen Netzwerk-E/A-Nutzung betrachtet.
 
 CDN-Protokolle werden für neue Support-Ticketanfragen an Splunk weitergeleitet. Kundinnen und Kunden, die die Splunk-Weiterleitung bereits aktiviert haben, können in Zukunft CDN-Protokolle hinzufügen.
+
+>[!NOTE]
+>
+>Bestimmte Protokolle und bestimmte Benutzerprotokolle können nicht an Splunk weitergeleitet werden.
+>
+>Alle Logs werden an Splunk weitergeleitet, wo der Kunde je nach Bedarf weitere Filter durchführen kann.
 
 ### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
 
