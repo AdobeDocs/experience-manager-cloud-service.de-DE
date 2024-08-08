@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 98%
@@ -617,9 +617,9 @@ CDN-Protokolle werden für neue Support-Ticketanfragen an Splunk weitergeleitet.
 
 >[!NOTE]
 >
->Bestimmte Protokolle und bestimmte Benutzerprotokolle können nicht an Splunk weitergeleitet werden.
+>*Spezifische* Protokolle und *spezifische* Benutzerprotokolle können nicht an Splunk weitergeleitet werden.
 >
->Alle Logs werden an Splunk weitergeleitet, wo der Kunde je nach Bedarf weitere Filter durchführen kann.
+>**Alle** Protokolle werden an Splunk weitergeleitet, wo der Kunde je nach seinen Anforderungen weitere Filter durchführen kann.
 
 ### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
 
