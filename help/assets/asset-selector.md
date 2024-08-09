@@ -7,7 +7,7 @@ exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: c9cdbf85b5ebdda0ccd1a7858943f65f9175bde9
 workflow-type: tm+mt
 source-wordcount: '5339'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -588,7 +588,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *dialogSize* | Klein, mittelgroß, groß, Vollbild oder Vollbild-Übernahme | Zeichenfolge | Optional | Sie können das Layout kontrollieren, indem Sie dessen Größe mithilfe der angegebenen Optionen festlegen. |
 | *colorScheme* | Hell oder dunkel | Nein | | Diese Eigenschaft wird verwendet, um das Design einer Asset-Wähler-Anwendung festzulegen. Sie können zwischen einem hellen und dunklen Design wählen. |
 | *filterRepoList* | Funktion | Nein |  | Sie können die Rückruffunktion `filterRepoList` verwenden, die das Experience Manager-Repository aufruft und eine gefilterte Liste von Repositorys zurückgibt. |
-| *iryOptions* | Funktion | | | Sie können zwischen den beiden folgenden Eigenschaften verwenden: **getExpiryStatus** , das den Status eines abgelaufenen Assets angibt. Die Funktion gibt basierend auf dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](#customize-expired-assets). Darüber hinaus können Sie **allowSelectionAndDrag** verwenden, in dem der Wert der Funktion entweder `true` oder `false` sein kann. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset weder ausgewählt noch auf die Arbeitsfläche gezogen werden. |
+| *expiryOptions* | Funktion | | | Sie können eine der beiden folgenden Eigenschaften verwenden: **getExpiryStatus**, was den Status eines abgelaufenen Assets angibt. Die Funktion gibt je nach dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](#customize-expired-assets). Darüber hinaus können Sie die Option **allowSelectionAndDrag** verwenden, in der der Wert der Funktion entweder `true` oder `false` sein kann. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset weder ausgewählt noch auf die Arbeitsfläche gezogen werden. |
 | *showToast* | | Nein | | Dadurch kann der Asset-Wähler eine benutzerdefinierte Popup-Meldung für das abgelaufene Asset anzeigen. |
 
 <!--

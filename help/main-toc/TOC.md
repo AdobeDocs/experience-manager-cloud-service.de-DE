@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
 source-wordcount: '5315'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -693,7 +693,7 @@ ht-degree: 99%
             + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff über den Autorisierungsbereich](/help/forms/configure-sharepoint-site-limited-access.md)
+            + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
             + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
             + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
@@ -1243,7 +1243,7 @@ ht-degree: 99%
       + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Konfigurieren von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
-      + [Konfigurieren von CDN-Anmeldeinformationen und einer Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md)
+      + [Konfigurieren der CDN-Anmeldeinformationen und der Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md)
       + [Bereinigen des CDN-Caches](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
@@ -1261,7 +1261,7 @@ ht-degree: 99%
    + [Wartungsaufgaben](/help/operations/maintenance.md)
    + [Self-Service-Wiederherstellung](/help/operations/restore.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)
-   + [Verwenden von Config Pipelines](/help/operations/config-pipeline.md)
+   + [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md)
    + [Entfernen des generischen Lucene-Index](/help/operations/removal-generic-lucene-index.md)
    + [Best Practices für Abfragen und Indizierung](/help/operations/query-and-indexing-best-practices.md)
 + Compliance {#compliance}
