@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 [!DNL Assets view] unterstützt eine breite Palette von Dateiformaten, und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene Dateitypen.
 
 * ![Symbol für Bilddateityp](assets/image-icon.svg) Bilder: JPG, PNG, GIF, TIFF und andere
-* ![Symbol für Creative Cloud-Typ](assets/creative-cloud-files.svg) Creative Cloud-Dateien: PSD, AI und INDD
+* ![Creative-Cloudtype-Symbol](assets/creative-cloud-files.svg) Creative Cloud-Dateien: PSD, PSB, AI und INDD
 * ![Symbol für Kameratyp](assets/camera-icon.svg) Camera Raw-Dateien: CR2/CR3, NEF, SRW/SRF und andere
 * ![document file type icon](assets/document-icon.svg) Dokument-Typen: DOCX, PDF, PPTX und XLSX
 * ![video file type icon](assets/video-icon.svg) Video-Typen: MP4
@@ -46,7 +46,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Ordner | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4-Videos | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD, AI und INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
+| PSD, PSB, AI und INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | Andere Binärdateien | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -63,7 +63,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Videos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − | − | − | ✓ | ✓ |
 | PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSD | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| PSD und PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | AI und INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Andere Binärdateien | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 
@@ -78,7 +78,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Videos | − | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − |
 | PDF | − | ✓ | ✓ |
-| PSD, AI und INDD | − | ✓ | ✓ |
+| PSD, PSB, AI und INDD | − | ✓ | ✓ |
 | Andere Binärdateien | − | ✓ | ✓ |
 | DOC | − | ✓ | ✓ |
 | DOCX | − | ✓ | ✓ |
@@ -99,7 +99,8 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | Videos | ✓ | − | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | ✓ | − | − | − | − |
 | PDF | ✓ | − | ✓ | ✓ | ✓ |
-| PSD, AI und INDD | ✓ | − | ✓ | ✓ | ✓ |
+| AI und INDD | ✓ | − | ✓ | ✓ | ✓ |
+| PSD und PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Andere Binärdateien | ✓ | − | ✓ | ✓ | ✓ |
 
 Benutzer von [!DNL Adobe Asset Link] können Dateien aus den unterstützten Desktop-Programmen von [!DNL Adobe Creative Cloud] in das [!DNL Assets view]-Repository hochladen und einchecken (eine neue Version hochladen).
@@ -112,7 +113,7 @@ Benutzer von [!DNL Adobe Asset Link] können Dateien aus den unterstützten Desk
 | Videos        |          |
 | CC Libraries  |          |
 | PDF files     |          |
-| PSD           |          |
+| PSD, PSB           |          |
 | AI            |          |
 | INDD          |          |
 
