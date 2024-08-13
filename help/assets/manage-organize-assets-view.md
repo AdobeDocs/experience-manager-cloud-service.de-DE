@@ -6,9 +6,9 @@ contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1204'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ Um einen Asstet-Status festzulegen:
 
 1. Wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Details]**.
 
-1. Wählen Sie in der Registerkarte **[!UICONTROL Allgemein]** den Asset-Status aus der Dropdown-Liste **[!UICONTROL Status]** aus. Zu den möglichen Werten gehören &quot;Genehmigt&quot;, &quot;Abgelehnt&quot;und &quot;Kein Status&quot;(Standard).
+1. Wählen Sie in der Registerkarte **[!UICONTROL Allgemein]** den Asset-Status aus der Dropdown-Liste **[!UICONTROL Status]** aus. Zu den zulässigen Werten gehören „Genehmigt“, „Abgelehnt“ und „Kein Status“ (Standard).
 Wenn Sie Dynamic Media mit OpenAPI-Funktionen für Ihre Umgebung bereitgestellt haben, generiert Experience Manager Assets eine öffentliche URL, sobald Sie das Asset als `Approved` markieren.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)

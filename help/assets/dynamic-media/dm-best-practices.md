@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4118'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -72,29 +72,29 @@ Möchten Sie mehr erfahren?  Navigieren Sie zu [Konfigurieren einer selektiven
 
 ## Dynamic Media-Viewer
 
-Die Best Practices für den Dynamic Media-Viewer sind wichtige Richtlinien zur Optimierung der Leistung, Funktionalität und Benutzerfreundlichkeit von Dynamic Media-Assets auf AEM. Diese Verfahren stellen sicher, dass Assets ordnungsgemäß synchronisiert, veröffentlicht und konfiguriert werden, um alle Funktionen von Dynamic Media zu nutzen.
+Die Best Practices für den Dynamic Media-Viewer sind wichtige Richtlinien zum Optimieren der Leistung, Funktionalität und des Anwendererlebnisses von Dynamic Media-Assets in AEM. Diese Verfahren stellen sicher, dass Assets ordnungsgemäß synchronisiert, veröffentlicht und konfiguriert werden, um alle Funktionen von Dynamic Media nutzen zu können.
 
-Durch Befolgen dieser Best Practices können Sie eine nahtlose Integration, eine effiziente Asset-Verwaltung und verbesserte Viewer-Interaktionen erzielen. Die Synchronisierung von Assets, die Verwendung von smartem Zuschneiden und die Einhaltung der JavaScript-Dateieinschlussrichtlinien sind wichtige Vorgehensweisen. Diese Empfehlungen tragen dazu bei, die Integrität und Zuverlässigkeit der Medienbereitstellung über verschiedene Plattformen und Geräte hinweg aufrechtzuerhalten.
+Durch Befolgen dieser Best Practices können Sie eine nahtlose Integration, ein effizientes Asset-Management und verbesserte Viewer-Interaktionen erzielen. Die Synchronisierung von Assets, die Verwendung des intelligenten Zuschnitts und die Einhaltung der JavaScript-Dateieinschlussrichtlinien sind wichtige Vorgehensweisen. Diese Empfehlungen tragen dazu bei, die Integrität und Zuverlässigkeit der Medienbereitstellung über verschiedene Plattformen und Geräte hinweg aufrechtzuerhalten.
 
 * **Synchronisieren von Viewer Assets:**
 Stellen Sie sicher, dass alle Viewer-Assets mit Dynamic Media synchronisiert sind, bevor Sie den Player verwenden.
 
-   * Rufen Sie die Beispielmanagerseite unter `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` auf. Auf dieser Seite können Sie die Assets eines Viewers neu synchronisieren, einschließlich vordefinierter Symbole, CSS-Dateien und Vorgaben.
-   * Wenn Viewer-Probleme auftreten, lesen Sie den Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
+   * Greifen Sie auf die Seite des Beispiel-Managers unter `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` zu. Auf dieser Seite können Sie die Assets eines Viewers neu synchronisieren, einschließlich vordefinierter Symbole, CSS-Dateien und Vorgaben.
+   * Wenn Probleme mit dem Viewer auftreten, lesen Sie den Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
 
-* **Publish Assets:**
-Stellen Sie sicher, dass Assets veröffentlicht sind, bevor Sie sie in den Versand-Viewern anzeigen.
-* **Automatische Videowiedergabe gemalt:**
-Verwenden Sie für die automatische Wiedergabe in Videos stummschaltete Videoeinstellungen, da Browser die Wiedergabe von Videos mit Lautstärke einschränken.
+* **Veröffentlichen von Assets:**
+Stellen Sie sicher, dass Assets veröffentlicht werden, bevor Sie sie in den Bereitstellungs-Viewern anzeigen.
+* **Stummgeschaltete automatische Wiedergabe von Videos:**
+Verwenden Sie für die automatische Wiedergabe in Videos stummgeschaltete Videoeinstellungen, da Browser die Wiedergabe von Videos mit Lautstärke einschränken.
 * **Smartes Zuschneiden:**
-Verwenden Sie die Image v3-Komponente für smartes Zuschneiden, um die Darstellung von Bild-Assets zu verbessern.
+Verwenden Sie die Image v3-Komponente für das smarte Zuschneiden, um die Darstellung von Bild-Assets zu verbessern.
 * **JavaScript-Dateiaufnahme:**
-Schließen Sie nur die primäre Viewer-JavaScript-Datei auf Ihrer Seite ein. Vermeiden Sie es, auf zusätzliche JavaScript-Dateien zu verweisen, die die Laufzeitlogik des Viewers herunterladen könnte. Stellen Sie insbesondere keine direkte Verknüpfung mit der HTML5 SDK `Utils.js`-Bibliothek aus dem Kontextpfad `/s7viewers` her (auch als konsolidiertes SDK-Include bezeichnet). Die Viewer-Logik verwaltet den Speicherort von `Utils.js` oder ähnlichen Laufzeit-Viewer-Bibliotheken, die sich zwischen Versionen ändern können. Adobe behält ältere Versionen von sekundären Viewer-Inhalten nicht auf dem Server bei, sodass eine direkte Referenzierung sie bei zukünftigen Updates die Viewer-Funktionalität beeinträchtigen kann.
+Schließen Sie nur die primäre Viewer-JavaScript-Datei auf Ihrer Seite ein. Vermeiden Sie es, auf zusätzliche JavaScript-Dateien zu verweisen, die durch die Laufzeitlogik des Viewers heruntergeladen werden könnten. Stellen Sie insbesondere keine direkte Verknüpfung mit der HTML5 SDK `Utils.js`-Bibliothek aus dem Kontextpfad `/s7viewers` her (auch als konsolidiertes SDK-Include bezeichnet). Die Viewer-Logik verwaltet den Speicherort von `Utils.js` oder ähnlichen Laufzeit-Viewer-Bibliotheken, die sich zwischen Versionen ändern können. Adobe speichert ältere Versionen von sekundären Viewer-Includes nicht auf dem Server, sodass ein direkter Verweis auf diese die Viewer-Funktionalität in zukünftigen Updates beeinträchtigen kann.
 * **Einbettungsrichtlinien:**
-Verwenden Sie die Dokumentation zum Einbetten von für jeden Viewer spezifischen Richtlinien.
-Möchten Sie mehr erfahren?  Wechseln Sie zu [Viewer für AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+Verwenden Sie die Dokumentation zum Einbetten von Richtlinien, die für jeden Viewer spezifisch sind.
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Viewer für AEM Assets](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **SDK-Tutorial und Beispiele:**
-Sehen Sie sich das [Viewer SDK-Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) und die [HTML5 SDK-Anwendungsbeispiele](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) an, um sich mit den SDK-Komponenten-APIs vertraut zu machen.
+Sehen Sie sich das [Viewer SDK-Tutorial](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/c-tutorial) und die [HTML5 SDK-Anwendungsbeispiele](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) an, um sich mit den SDK-Komponenten-APIs vertraut zu machen.
 
 
 ## Vorbereiten von Assets für die Bereitstellung
@@ -220,7 +220,7 @@ Wenn Sie ein Logo oder Symbol als Überlagerung auf einem vorhandenen Bild platz
 | --- | --- |
 | **Hochladen und Veröffentlichen des Basisbilds** | Laden Sie zunächst das Basisbild hoch, das Sie mit dem Logo oder Symbol überlagern möchten, und veröffentlichen Sie es. Sie können jedes Bild als Basis verwenden.<br>Hier ist beispielsweise ein Basisbild:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Hochladen und Veröffentlichen des Logos oder Symbolbilds** | Laden Sie anschließend das Bild hoch, mit dem Sie das Basisbild überlagern möchten, und veröffentlichen Sie es. Dieses Bild sollte eine transparente PNG-Datei mit dem Logo oder Symbol sein, das Sie überlagern möchten.<br>Hier ist das transparente PNG-Bild eines Sternobjekts mit Transparenzeffekten, das überlagert werden soll:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Anwenden der Dynamic Media-URL** | Erstellen Sie jetzt eine Dynamic Media-URL, die das Basisbild mit dem Logo oder Symbolbild kombiniert. Sie können URL-Befehle verwenden, um diesen Effekt zu erzielen.<br>Die URL-Struktur sieht ungefähr so aus:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>wobei das Asset<br> ・ `hotspotRetailBaseImage` das Basisbild ist.<br>・ `starxp` ist das Logo/Symbolbild.<br>・ `layer=1` gibt an, dass das Logo oder Symbol über dem Basisbild platziert werden soll.<br>・ `scale=1.25` passt die Größe des Logos/Symbols an.<br>・ `posN=0.33,-.25` bestimmt die Position des Logos/Symbols relativ zum Basisbild.<br>・ `fmt=png` stellt sicher, dass die Ausgabe im PNG-Format vorliegt. |
+| **Anwenden der Dynamic Media-URL** | Erstellen Sie jetzt eine Dynamic Media-URL, die das Basisbild mit dem Logo oder Symbolbild kombiniert. Sie können URL-Befehle verwenden, um diesen Effekt zu erzielen.<br>Die URL-Struktur sieht in etwa so aus:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>, wobei das Asset<br>• `hotspotRetailBaseImage` das Basisbild ist. <br>・ `starxp` ist das Logo/Symbolbild.<br>・ `layer=1` gibt an, dass das Logo oder Symbol über dem Basisbild platziert werden soll.<br>・ `scale=1.25` passt die Größe des Logos/Symbols an.<br>・ `posN=0.33,-.25` bestimmt die Position des Logos/Symbols relativ zum Basisbild.<br>・ `fmt=png` stellt sicher, dass die Ausgabe im PNG-Format vorliegt. |
 
 Möchten Sie mehr erfahren?  Navigieren Sie zu [src](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src), um mehr über den `src`-Befehl und andere URL-Befehle in Dynamic Media zu erfahren.
 
@@ -278,17 +278,17 @@ Möchten Sie mehr über die Befehle erfahren, die in einer URL verfügbar sind? 
 
 ### Bereitstellen von GIF-Bildern
 
-**Geschäftsfall:** *Streamen von GIF mit Dynamic Media*
+**Business-Case:** *Streamen von GIFs mit Dynamic Media*
 
-Sie können GIF über Dynamic Media hochladen und bereitstellen. Um eine animierte GIF zu rendern, ersetzen Sie in der URL `is/image` durch `is/content` . Wenn Sie beispielsweise `abc.gif` hochgeladen haben, verwenden Sie Folgendes:
+Sie können GIFs über Dynamic Media hochladen und bereitstellen. Um ein animiertes GIF zu rendern, ersetzen Sie in der URL `is/image` durch `is/content` . Wenn Sie beispielsweise `abc.gif` hochgeladen haben, verwenden Sie Folgendes:
 
-* Dieser URL-Pfad rendert eine statische Ansicht der GIF:
+* Dieser URL-Pfad rendert eine statische Ansicht des GIF:
 
   ```
   https://your.domain.com/is/image/yourfolder/abc
   ```
 
-* Dieser URL-Pfad rendert die Animationsansicht der GIF:
+* Dieser URL-Pfad rendert die Animationsansicht des GIF:
 
   ```
   https://your.domain.com/is/content/yourfolder/abc
@@ -296,7 +296,7 @@ Sie können GIF über Dynamic Media hochladen und bereitstellen. Um eine animier
 
 >[!NOTE]
 >
->Bei Verwendung von &quot;`is/content`&quot;im URL-Pfad werden Bildumwandlungsbefehle nicht auf das Asset angewendet.
+>Bei Verwendung von `is/content` im URL-Pfad werden Bildumwandlungsbefehle nicht auf das Asset angewendet.
 
 ### Veröffentlichen eines Videos für meine Website
 
@@ -402,10 +402,10 @@ Mithilfe der intelligenten Bildbearbeitung können Sie sicherstellen, dass Ihre 
 
 Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
 
-### Versand von Assets an Kunden
+### Änderungen nach der Bereitstellung von Assets an Kundinnen und Kunden
 
-**Geschäftsfall:** *Wie kann sichergestellt werden, dass die Änderungen sofort im CDN erscheinen, nachdem neue Inhalte veröffentlicht oder vorhandene Inhalte überschrieben wurden?*
+**Business-Case:** *Wie kann sichergestellt werden, dass die Änderungen sofort im CDN erscheinen, nachdem neue Inhalte veröffentlicht oder vorhandene Inhalte überschrieben wurden?*
 
-Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kunden zwischen. Wenn Aktualisierungen an diesen Assets vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Durch das Bereinigen oder Invalidieren des CDN-Cache können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist. Je nach Anwendungsfall können Sie die Einstellungen für CDN TTL (Time to Live) entsprechend aktualisieren.
+Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kundinnen und Kunden zwischen. Wenn an diesen Assets Aktualisierungen vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Indem der CDN-Cache bereinigt oder ungültig gemacht wird, können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist. Je nach Anwendungsfall können Sie die Einstellungen für den TTL-Wert (Time to Live) des CDN entsprechend aktualisieren.
 
-Möchten Sie mehr erfahren?  Wechseln Sie zu [Ungültiges CDN-Cache über Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+Möchten Sie mehr erfahren?  Navigieren Sie zu [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).

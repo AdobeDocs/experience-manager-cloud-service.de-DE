@@ -6,9 +6,9 @@ contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 [!DNL Assets view] unterstützt eine breite Palette von Dateiformaten, und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene Dateitypen.
 
 * ![Symbol für Bilddateityp](assets/image-icon.svg) Bilder: JPG, PNG, GIF, TIFF und andere
-* ![Creative-Cloudtype-Symbol](assets/creative-cloud-files.svg) Creative Cloud-Dateien: PSD, PSB, AI und INDD
+* ![Symbol für Creative Cloud-Typ](assets/creative-cloud-files.svg) Creative Cloud-Dateien: PSD, PSB, AI und INDD
 * ![Symbol für Kameratyp](assets/camera-icon.svg) Camera Raw-Dateien: CR2/CR3, NEF, SRW/SRF und andere
 * ![document file type icon](assets/document-icon.svg) Dokument-Typen: DOCX, PDF, PPTX und XLSX
 * ![video file type icon](assets/video-icon.svg) Video-Typen: MP4

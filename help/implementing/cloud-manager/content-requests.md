@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1269'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
-Inhaltsanfragen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, die in dieser Tabelle zusammengefasst sind. Im Allgemeinen sollten Analyse-Tools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, *nicht verwendet werden*, um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten. Der Grund dafür ist, dass deren Auslösung häufig von der Zustimmung von Benutzerinnen und Benutzern abhängig ist, wodurch sie einen erheblichen Anteil des Traffics nicht erfassen. Analytics-Tools, die Daten serverseitig in Protokolldateien sammeln, oder CDN-Berichte für Kunden, die ihr eigenes CDN zusätzlich zu AEM as a Cloud Service hinzufügen, bieten bessere Zählungen.
+Inhaltsanfragen können Abweichungen von den Analytics-Reporting-Tools eines Unternehmens aufweisen, die in dieser Tabelle zusammengefasst sind. Im Allgemeinen sollten Analyse-Tools, die Daten mithilfe Client-seitiger Instrumentierung erfassen, *nicht verwendet werden*, um über die Anzahl der Inhaltsanfragen für eine bestimmte Site zu berichten. Der Grund dafür ist, dass deren Auslösung häufig von der Zustimmung von Benutzerinnen und Benutzern abhängig ist, wodurch sie einen erheblichen Anteil des Traffics nicht erfassen. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. 
 
 | Grund für die Abweichung | Erklärung |
 |---|---|

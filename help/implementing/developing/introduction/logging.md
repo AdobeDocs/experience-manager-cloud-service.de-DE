@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2829'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -619,7 +619,7 @@ CDN-Protokolle werden für neue Support-Ticketanfragen an Splunk weitergeleitet.
 >
 >*Spezifische* Protokolle und *spezifische* Benutzerprotokolle können nicht an Splunk weitergeleitet werden.
 >
->**Alle** Protokolle werden an Splunk weitergeleitet, wo der Kunde je nach seinen Anforderungen weitere Filter durchführen kann.
+>**Alle** Protokolle werden an Splunk weitergeleitet, wo die Kundin oder der Kunde je nach ihren bzw. seinen Anforderungen weitere Filterungen durchführen kann.
 
 ### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
 
