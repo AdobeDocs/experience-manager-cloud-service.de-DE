@@ -1,19 +1,20 @@
 ---
-title: Universal Editor 2024.06.28 - Versionshinweise
-description: Dies sind die Versionshinweise für die Version 2024.06.28 des universellen Editors.
+title: Universal Editor 2024.08.13 - Versionshinweise
+description: Dies sind die Versionshinweise für die Version 2024.08.13 des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: cc94ad2ba42707bb7541217f0225b995f64ad84f
+exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
+source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 1%
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
 
-# Universal Editor 2024.06.28 - Versionshinweise {#release-notes}
+# Universal Editor 2024.08.13 - Versionshinweise {#release-notes}
 
-Dies sind die Versionshinweise für die Version des universellen Editors vom 28. Juni 2024.
+Dies sind die Versionshinweise für die Version des universellen Editors vom 13. August 2024.
 
 >[!TIP]
 >
@@ -21,18 +22,19 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 28.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Startseite**: Die letzten Seiten werden als Liste ohne Vorschaubilder angezeigt.
-* **Standortleiste**: Es wurde eine erweiterte URL-Validierung hinzugefügt, die HTTPS-URLs erzwingt und Hashes in URLs unterstützt, um Hash-geleitete Anwendungen zu berücksichtigen.
-* **Tastaturnavigation**: Die Auswahl der Seitenüberlagerung wurde vom Fokus der Eigenschaftenleiste entkoppelt, um die Tastaturnavigation auf der Seite zu verbessern, ohne den Fokus zu verlieren.
-* **Elementbeschriftungen**: Der Fallback-Wert für Beschriftungen verwendet jetzt `data-aue-prop` anstelle von `data-aue-type`, um eine klarere Identifizierung in Überlagerungen und der Inhaltsstruktur zu ermöglichen.
-* **RTE Modal**: Beim Öffnen im Eigenschaftenbereich wurde dem Rich-Text-Editor-Modal eine Schaltfläche **Abbrechen** hinzugefügt.
-* **UE Service on Node**: Die HTTP-Unterstützung für den universellen Editor-Dienst wurde neu eingeführt, da alle HTTPS-Verbindungen auf Dispatcher-Ebene beendet werden.
-* **Interne Kopier-API**: Eine API zum Kopieren von Komponenten zum universellen Editor-Dienst wurde hinzugefügt, sodass in Zukunft Symbolleistenoptionen zum Kopieren und Duplizieren von Inhalten eingeführt werden können.
+* **Benutzerdefinierte Datentypen**: Ordnen Sie den Editor Ihren individuellen Datenanforderungen zu und erstellen Sie benutzerdefinierte Felder im Eigenschaftenbereich.
+   * Unabhängig davon, ob Sie eine benutzerdefinierte Produktauswahl für Commerce-Anwendungsfälle entwickeln oder eine Dropdown-Liste mit Werten aus Ihren Backends ausfüllen, bietet diese Funktion Ihnen die nötige Kontrolle über die Daten, die Autoren zum Erstellen von Inhalten verwenden.
+* **Container-übergreifendes Ziehen und Ablegen**: Nutzen Sie mehr Flexibilität bei der Layout-Komposition, indem Sie Komponenten per Drag-and-Drop im Bereich [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) über verschiedene Container verschieben können.
+* **Optimierte GitHub-Integration**: Das Caching für GitHub-Antworten wurde eingeführt, was den Abruf von Tags und die `universal-editor-cors-library` erheblich beschleunigt und so zu einem schnelleren und reibungsloseren Benutzererlebnis führt.
+* **Managed Services RPM Package**: Adobe bietet jetzt ein RPM-Paket, um die Bereitstellung und Verwaltung des Universal Editor Service zu optimieren, die Wartung zu vereinfachen und den Betriebsaufwand für verwaltete Dienste zu reduzieren.
+* **Konfigurierbare Validierung des IMS-Tokens**: Um die Flexibilität bei der Tokenverwaltung zu erhöhen, ist die Validierung des IMS-Tokens jetzt optional.
+   * Mit dieser Konfigurationsoption können Sie die Validierung nach Bedarf deaktivieren und so Ihre Cloud-Gateway-Setups vereinfachen.
+* **Splunk-Integration**: Die Splunk-Protokollierung wurde in den Universal Editor Service Express integriert, was die Überwachung und Diagnose verbessert.
+   * Diese Integration stellt eine effiziente Protokollverfolgung, reibungslosere Vorgänge und eine schnellere Fehlerbehebung sicher.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* **Eigenschaften-Bedienfeld - Breadcrumb**: Das Breadcrumb-Menü im Eigenschaftenbedienfeld für tief verschachtelte Elemente, das nicht geöffnet blieb, wurde behoben.
-* **Inhaltsfragmentauswahl**: Die Auswahl für Inhaltsfragmente wurde verbessert, um sicherzustellen, dass die im Inhaltsfragmentmodell oder im `data-aue-filter` definierten Regeln eingehalten werden.
-* **Komponenteneinfügung**: Die Liste zum Einfügen neuer Komponenten, die nach dem Navigieren zu einer anderen Seite nicht korrekt aktualisiert wurden, wurde korrigiert.
-* **Veröffentlichungsstatus**: Die Handhabung der Veröffentlichungsstatus wurde verbessert, um eine einheitlichere Funktionsweise zu gewährleisten.
-* **Verschiedene Fehlerbehebungen**: Diese Version enthält auch verschiedene kleinere Fehlerbehebungen, technische Bereinigungen von Schulden, Sicherheitsverbesserungen und konsolidierte Tests zur Gesamtstabilität und -leistung.
+* **Verbessertes Publishing-Feedback**: Wenn die Veröffentlichung aufgrund unzureichender Berechtigungen fehlschlägt, wurde das Feedback für den Benutzer während der Veröffentlichung verbessert, um eine klare Warnung anzuzeigen, anstatt einfach nur einen Fehler anzuzeigen.
+* **Verbesserte URL-Handhabung**: Es wurden Probleme behoben, die bei falscher URL-Kodierung/-Dekodierung auftraten und Veröffentlichungsfehler verursachten.
+* **Präzise Datenverarbeitung**: Ein Problem, bei dem Fließkommazahlen fälschlicherweise als Ganzzahlen gespeichert wurden, wurde behoben, um eine präzise Datenverarbeitung in Ihrem gesamten Inhalt sicherzustellen.
+* **Sicherheit und Stabilität**: Sicherheitslücken in den Docker-Bildern wurden behoben und die Testabdeckung für kritische Komponenten wie den Komponenten-Picker und Breadcrumbs wurde implementiert, was zu einem sichereren, stabileren und zuverlässigeren Editor-Erlebnis führte.
