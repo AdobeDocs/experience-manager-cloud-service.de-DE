@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8c1bad70a82775c1c99b0c35f07e0d1cae602230
+source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1176'
 ht-degree: 17%
 
 ---
@@ -93,7 +93,7 @@ Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für die
 
 ### Bekannte Probleme {#known-issues-17465}
 
-* ASSETS-40875 - NullPointerException in AssetDeleteHandler und Handler wird für Seiten ausgelöst.
+* ASSETS-40875 - Die AssetDeleteHandler-Klasse überwacht Asset-Löschereignisse und führt spezifische Aktionen basierend auf dem Typ des Löschereignisses durch (PRE_DELETE oder POST_DELETE). In bestimmten Szenarien verursacht der Ereignistyp POST_DELETE eine NullPointerException.
 * FORMS-14340 - Fehler bei der Instanziierung von FormsAndDocumentOmniSearchHandler und CloudStorageSubmitActionInserter. Dies sind harmlose Protokollanweisungen.
 * FORMS-15818 - Komponentendeskriptoreintrag &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; nicht gefunden Anweisungen in Serverprotokollen. Dies sind harmlose Protokollanweisungen.
 * 
