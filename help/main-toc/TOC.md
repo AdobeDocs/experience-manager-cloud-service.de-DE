@@ -8,8 +8,8 @@ breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5340'
+ht-degree: 100%
 
 ---
 
