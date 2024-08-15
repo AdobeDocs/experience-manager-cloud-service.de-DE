@@ -4,10 +4,10 @@ description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '222'
+ht-degree: 90%
 
 ---
 
@@ -40,4 +40,4 @@ Die Anfrage für persistierte Abfragen erfolgt an einem anderen Endpunkt. Im Rah
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Persistierte Abfragen können mit `GET` angefragt werden, indem die Antwort auf Dispatcher- und CDN-Ebene zwischengespeichert wird. Weitere Informationen zur Zwischenspeicherung und Cache-Invalidierung finden Sie [hier](/help/implementing/dispatcher/caching.md).
+Persistierte Abfragen können mit `GET` angefragt werden, indem die Antwort auf Dispatcher- und CDN-Ebene zwischengespeichert wird. Weitere Informationen zum Zwischenspeichern und zur Invalidierung des Caches finden Sie unter [Einführung zum Zwischenspeichern in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

@@ -5,10 +5,10 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ So fügen Sie einer Kachel Elemente hinzu:
 
    ![Element zu einer Kachel hinzufügen](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Fügen Sie der Kachel ein Element so hinzu, wie Sie eine neue Kachel erstellen würden. Projektkacheln werden [hier](/help/sites-cloud/authoring/projects/overview.md#project-tiles) beschrieben. In diesem Beispiel wurde ein Workflow hinzugefügt.
+1. Fügen Sie der Kachel ein Element so hinzu, wie Sie eine neue Kachel erstellen würden. Weitere Informationen finden Sie unter [Projektkacheln](/help/sites-cloud/authoring/projects/overview.md#project-tiles) . In diesem Beispiel wurde ein Workflow hinzugefügt.
 
 ### Öffnen einer Kachel {#opening-a-tile}
 
@@ -138,7 +138,7 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 
    >[!NOTE]
    >
-   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Wählen Sie **Bearbeiten** aus.
 1. Ändern Sie die Auswahl von **Aktiv** zu **Inaktiv** (oder umgekehrt).

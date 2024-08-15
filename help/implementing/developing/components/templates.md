@@ -4,10 +4,10 @@ description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3267'
-ht-degree: 100%
+source-wordcount: '3268'
+ht-degree: 99%
 
 ---
 
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Erstellen Sie eine Vorlage wie andere bearbeitbare Vorlagen auch, [wie hier dokumentiert](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author). Diese dient dann als Grundlage für Ihren Vorlagentyp.
+1. Erstellen Sie eine Vorlage wie jede andere Seitenvorlage. Siehe [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author). Dies dient als Grundlage für Ihren Vorlagentyp.
 1. Kopieren Sie mit CRXDE Lite die erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie in der Kopie der Vorlage, die sich unter dem `template-types`-Knoten befindet, alle `cq:template`- und `cq:templateType`-Eigenschaften aus allen `jcr:content`-Knoten.

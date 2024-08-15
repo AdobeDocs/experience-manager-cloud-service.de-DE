@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Connectoren und darüber, was sie tun könn
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '936'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Um fortlaufende Bereitstellungen zu unterstützen, wird bei AEM as a Cloud Servi
 * `/apps`
 * `/content` und `/conf`
 
-Connectoren sollten sich an die in [diesem Artikel](/help/implementing/developing/introduction/aem-project-content-package-structure.md) beschriebenen Richtlinien zur Paketerstellung halten. Bestehende Connectoren sollten ebenfalls entsprechend umgestaltet werden.
+Connectoren sollten diese Verpackungsrichtlinien einhalten, die unter [AEM Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md) beschrieben werden. Bestehende Connectoren sollten ebenfalls entsprechend umgestaltet werden.
 
 Darüber hinaus sollte nur Adobe Code in `/libs` schreiben, während Kunden und Partner in `/apps` schreiben.
 

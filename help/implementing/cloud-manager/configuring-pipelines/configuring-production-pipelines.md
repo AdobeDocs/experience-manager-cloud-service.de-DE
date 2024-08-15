@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 94%
+source-wordcount: '1374'
+ht-degree: 97%
 
 ---
 
@@ -114,9 +114,9 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 
 Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, einen der folgenden Code-Typen **einzuschließen**:
 
-* **Konfiguration** - Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM.
-   * Eine Liste der unterstützten Konfigurationen, einschließlich Protokollweiterleitung, Bereinigungsaufgaben und verschiedenen CDN-Konfigurationen, sowie deren ordnungsgemäße Bereitstellung im Repository finden Sie im Artikel [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md) .
-   * Beim Ausführen einer zielgerichteten Bereitstellungs-Pipeline werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, im Repository und in der Verzweigung gespeichert werden, die Sie in der Pipeline definiert haben.
+* **Konfiguration** – Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM-Umgebung.
+   * Unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md) finden Sie eine Liste der unterstützten Konfigurationen, zu denen die Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen gehören, und deren Verwaltung in Ihrem Repository, damit sie ordnungsgemäß bereitgestellt werden.
+   * Wenn Sie eine gezielte Bereitstellungs-Pipeline ausführen, werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert sind, die Sie in der Pipeline definiert haben.
    * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
    * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.

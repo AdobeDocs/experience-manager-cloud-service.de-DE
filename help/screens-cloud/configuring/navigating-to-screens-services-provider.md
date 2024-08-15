@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie zu Screens Services Prov
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 87%
+source-wordcount: '382'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt erfahren Sie, wie Sie Screens Services Provider konfiguri
 
 Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
-1. Gehen Sie von [hier](https://experience.adobe.com/screens) zu Screens Services Provider.
+1. Navigieren Sie zum [Screens-Dienstanbieter](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts im Bildschirm auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff benötigen.
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
 1. Klicken Sie auf **Speichern**, um eine Verbindung zum Screens-Inhaltsanbieter herzustellen.
 
-1. Wenn Sie die AEM Veröffentlichungsinstanz so konfiguriert haben, dass nur der Zugriff auf vertrauenswürdige IP-Adressen durch die IP--Funktion von Cloud Manager zugelassen wird, müssen Sie eine Kopfzeile mit einem Schlüsselwert im Einstellungsdialogfeld konfigurieren, wie unten dargestellt.
+1. Wenn Sie die AEM-Veröffentlichungsinstanz so konfiguriert haben, dass durch die IP-Zulassungslisten-Funktion von Cloud Manager nur der Zugriff auf vertrauenswürdige IP-Adressen zugelassen wird, müssen Sie im Dialogfeld „Einstellungen“ eine Kopfzeile mit einem Schlüsselwert konfigurieren, wie unten dargestellt.
 Die IP-Adressen, die auf die Zulassungsliste gesetzt werden müssen, müssen ebenfalls in die Konfigurationsdatei verschoben werden, und ihre Anwendung muss in den Cloud Manager-Einstellungen [aufgehoben](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) werden.
 
    ![Bild](/help/screens-cloud/assets/configure/configure-screens20b.png)

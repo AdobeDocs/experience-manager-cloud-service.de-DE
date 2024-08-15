@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 95%
+source-wordcount: '2053'
+ht-degree: 98%
 
 ---
 
@@ -216,23 +216,23 @@ Die standardmäßigen Bereinigungswerte können überschrieben werden, indem ein
 Deklarieren Sie eine Konfigurationsdatei und stellen Sie sie wie in den folgenden Schritten beschrieben bereit.
 
 >[!NOTE]
->Nachdem Sie den Knoten zur Versionsbereinigung in der Konfigurationsdatei bereitgestellt haben, müssen Sie ihn deklarieren und dürfen ihn nicht entfernen. Die Konfigurationspipeline schlägt fehl, wenn Sie versuchen, dies zu tun.
+>Nachdem Sie den Knoten zur Versionsbereinigung in der Konfigurationsdatei bereitgestellt haben, müssen Sie ihn deklarieren und dürfen ihn nicht entfernen. Wenn Sie dies versuchen, schlägt die Konfigurations-Pipeline fehl.
 > 
 >Ebenso müssen Sie den Knoten für die Auditprotokollbereinigung nach der Bereitstellung in der Konfigurationsdatei deklarieren und dürfen ihn nicht entfernen.
 
 **1** Erstellen Sie eine Datei mit dem Namen `mt.yaml` oder ähnlich.
 
-**2** Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen `config` oder ähnlich, wie im Artikel [Konfiguration der Pipeline beschrieben.](/help/operations/config-pipeline.md#folder-structure)
+**2** Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen `config` oder ähnlich, wie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-**3** – Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
+**3** Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
 
-* einige Eigenschaften über dem Daten-Knoten - siehe den Artikel [Konfiguration der Pipeline ](/help/operations/config-pipeline.md#common-syntax) für eine Beschreibung. Der Eigenschaftswert `kind` sollte *MaintenanceTasks* lauten und die Version sollte auf *1* eingestellt sein.
+* einige Eigenschaften über dem Daten-Knoten - siehe [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax) für eine Beschreibung. Der Eigenschaftswert `kind` sollte *MaintenanceTasks* sein und die Version auf *1* festgelegt werden.
 
 * ein Datenobjekt mit den Objekten `versionPurge` und `auditLogPurge`.
 
 Siehe die Definitionen und Syntax der Objekte `versionPurge` und `auditLogPurge` unten.
 
-Strukturieren Sie die Konfiguration ähnlich dem folgenden Beispiel:
+Strukturieren Sie die Konfiguration ähnlich wie im folgenden Beispiel:
 
 ```
 kind: "MaintenanceTasks"
@@ -267,7 +267,7 @@ Beachten Sie Folgendes, damit die Konfiguration gültig ist:
 * Alle Eigenschaften müssen definiert sein. Es gibt keine geerbten Standardwerte.
 * Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
 
-**4** - Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Konfiguration der Pipeline beschrieben.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxes und schnelle Entwicklungsumgebungen (RDEs) unterstützen keine Bereinigung.
+**4** Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im [Artikel zu Konfigurations-Pipelines.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxes und schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) unterstützen keine Bereinigungen.
 
 ### Versionsbereinigung {#version-purge}
 

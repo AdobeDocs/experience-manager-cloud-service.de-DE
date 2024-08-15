@@ -4,10 +4,10 @@ description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zu
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ Der `aem-clientlib-generator` wird genutzt, um die Erstellung von Client-Bibliot
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Weitere Details dazu können [hier auf GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator) gefunden werden.
+Weitere Informationen finden Sie unter [aem-clientlib-generator auf GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 Der `aem-clientlib-generator` wird in der Datei `clientlib.config.js` wie folgt konfiguriert.
 

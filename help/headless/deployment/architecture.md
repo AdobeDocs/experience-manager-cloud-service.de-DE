@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die allgemeine Architektur für Adobe Exper
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Eine typische AEM-Umgebung besteht aus einem Autoren-Service, einem Veröffentli
 
 * **Der Dispatcher** ist ein statischer Webserver, der durch das AEM Dispatcher-Modul erweitert wird. Er bietet Caching-Funktionen und eine weitere Sicherheitsebene. Der **Dispatcher** befindet sich vor den **Veröffentlichungs-** und **Vorschau-** Services.
 
-Innerhalb eines AEM as a Cloud Service-Programms können Sie über mehrere Umgebungen verfügen: Entwicklung, Staging und Produktion. Jede Umgebung verfügt über ihre eigenen **Autoren-**, **Veröffentlichungs-** und **Vorschau-** Services. Weitere Informationen zum Verwalten von Umgebungen finden Sie [hier](/help/implementing/cloud-manager/manage-environments.md).
+Innerhalb eines AEM as a Cloud Service-Programms können Sie über mehrere Umgebungen verfügen: Entwicklung, Staging und Produktion. Jede Umgebung verfügt über ihre eigenen **Autoren-**, **Veröffentlichungs-** und **Vorschau-** Services. Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) .
 
 ## Modell der Autoren- und Veröffentlichungsinstanz
 

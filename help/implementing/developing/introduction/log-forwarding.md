@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Diese Funktion wurde noch nicht veröffentlicht und einige Protokollierungsziele sind möglicherweise zum Zeitpunkt der Veröffentlichung nicht verfügbar. In der Zwischenzeit können Sie ein Support-Ticket öffnen, um Protokolle an **Splunk** weiterzuleiten, wie im [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md) beschrieben.
+>Diese Funktion wurde noch nicht veröffentlicht und einige Protokollierungsziele sind möglicherweise zum Zeitpunkt der Veröffentlichung nicht verfügbar. In der Zwischenzeit können Sie ein Support-Ticket öffnen, um Protokolle an **Splunk** weiterzuleiten, wie unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben.
 
 Kunden, die über eine Lizenz für einen Protokollierungsanbieter verfügen oder ein Protokollierungsprodukt hosten, können AEM Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an die zugehörigen Protokollierungsziele weiterleiten lassen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Jede Datei enthält mehrere JSON-Protokolleinträge, die jeweils in einer separaten Zeile stehen. Die Protokolleintragsformate werden im [Protokollartikel](/help/implementing/developing/introduction/logging.md) beschrieben, und jeder Protokolleintrag enthält auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-format) unten erwähnt werden.
+Jede Datei enthält mehrere JSON-Protokolleinträge, die jeweils in einer separaten Zeile stehen. Die Protokolleintragsformate werden unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben und jeder Protokolleintrag enthält auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-format) unten erwähnt werden.
 
 #### Azure Blob Storage-AEM {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM Protokolle (einschließlich Apache/Dispatcher) werden unter einem Ordner mit
 
 Unter jedem Ordner wird eine einzelne Datei erstellt und an diese angehängt. Kunden sind für die Verarbeitung und Verwaltung dieser Datei verantwortlich, sodass sie nicht zu groß wird.
 
-Weitere Informationen finden Sie in den Protokolleintragsformaten im [Protokollartikel](/help/implementing/developing/introduction/logging.md). Die Protokolleinträge enthalten auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-formats) unten erwähnt werden.
+Siehe Protokolleintragsformate unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Die Protokolleinträge enthalten auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-formats) unten erwähnt werden.
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ Zu beachten:
 
 #### HTTPS-CDN-Protokolle {#https-cdn}
 
-Webanfragen (POSTs) werden kontinuierlich gesendet, mit einer JSON-Payload, die ein Array von Protokolleinträgen ist, wobei das Protokolleintragsformat im [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md#cdn-log) beschrieben ist. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-formats) unten erwähnt.
+Webanfragen (POSTs) werden kontinuierlich gesendet, mit einer JSON-Payload, die ein Array von Protokolleinträgen ist, wobei das Protokolleintragsformat unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log) beschrieben wird. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-formats) unten erwähnt.
 
 Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, die auf den Wert `aemcdn` festgelegt ist.
 
@@ -276,7 +276,7 @@ Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, die auf den Wert `aemc
 
 #### HTTPS-AEM {#https-aem}
 
-Für AEM Protokolle (einschließlich Apache/Dispatcher) werden Webanfragen (POSTs) kontinuierlich gesendet, mit einer JSON-Payload, die ein Array von Protokolleinträgen ist, mit den verschiedenen Protokolleintragsformaten, wie im [Protokollierungsartikel](/help/implementing/developing/introduction/logging.md) beschrieben. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-format) unten erwähnt.
+Für AEM Protokolle (einschließlich Apache/Dispatcher) werden Webanfragen (POSTs) kontinuierlich gesendet, mit einer JSON-Payload, die ein Array von Protokolleinträgen ist, mit den verschiedenen Protokolleintragsformaten, wie unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-format) unten erwähnt.
 
 Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, die auf einen der folgenden Werte festgelegt ist:
 
@@ -323,7 +323,7 @@ data:
 
 ## Protokolleintragsformate {#log-formats}
 
-Informationen zum Format der einzelnen Protokolltypen (CDN-Protokolle und AEM-Protokolle einschließlich Apache/Dispatcher) finden Sie im allgemeinen [Protokollartikel](/help/implementing/developing/introduction/logging.md) .
+Unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) finden Sie das Format der einzelnen Protokolltypen (CDN-Protokolle und AEM-Protokolle einschließlich Apache/Dispatcher).
 
 Da Protokolle aus mehreren Programmen und Umgebungen an dasselbe Protokollierungsziel weitergeleitet werden können, werden zusätzlich zur im Protokollartikel beschriebenen Ausgabe die folgenden Eigenschaften in jeden Protokolleintrag aufgenommen:
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 Einige Unternehmen beschränken, welcher Traffic von den Protokollierungszielen empfangen werden kann.
 
-Für das CDN-Protokoll können Sie die IP-Adressen auf die Zulassungsliste setzen, wie in [diesem Artikel](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn die Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen (Nicht-Adobe-)Azure Blob Store senden, in den Logik geschrieben werden kann, um die Protokolle von einer dedizierten IP-Adresse an ihr endgültiges Ziel zu senden.
+Für das CDN-Protokoll können Sie die IP-Adressen auf die Zulassungsliste setzen, wie in der [Schnelldokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn die Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen (Nicht-Adobe-)Azure Blob Store senden, in den Logik geschrieben werden kann, um die Protokolle von einer dedizierten IP-Adresse an ihr endgültiges Ziel zu senden.
 
 Für AEM Logs (einschließlich Apache/Dispatcher) können Sie die Protokollweiterleitung so konfigurieren, dass sie [erweiterte Netzwerke](/help/security/configuring-advanced-networking.md) durchlaufen. Sehen Sie sich die Muster für die drei folgenden erweiterten Netzwerktypen an, die einen optionalen Parameter `port` sowie den Parameter `host` verwenden.
 

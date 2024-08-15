@@ -1,30 +1,30 @@
 ---
 title: Konfigurieren von CDN-Fehlerseiten
-description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft setzen können, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und in einer Konfigurationsdatei auf diese verweisen, die mithilfe der Cloud Manager-Konfigurationspipeline bereitgestellt wird.
+description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft setzen können, indem Sie statische Dateien in einer selbstgehosteten Datenspeicherung wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der Cloud Manager-Konfigurations-Pipeline bereitgestellt wird.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 57%
+source-wordcount: '364'
+ht-degree: 87%
 
 ---
 
 
 # Konfigurieren von CDN-Fehlerseiten {#cdn-error-pages}
 
-Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) den AEM-Ursprung nicht erreichen kann, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die Standardfehlerseite außer Kraft setzen, indem Sie statische Dateien in selbstgehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und sie in einer Konfigurationsdatei referenzieren, die mithilfe der Cloud Manager [config-Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager) bereitgestellt wird.
+Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) den AEM-Ursprung nicht erreichen kann, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die standardmäßige Fehlerseite außer Kraft setzen, indem Sie statische Dateien einer selbstgehosteten Datenspeicherung wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der Cloud Manager-[Konfigurations-Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager) bereitgestellt wird.
 
 ## Setup {#setup}
 
 Bevor Sie die standardmäßige Fehlerseite außer Kraft setzen können, müssen Sie wie folgt vorgehen:
 
-1. Erstellen Sie eine Datei mit dem Namen `cdn.yaml` oder eine ähnliche Datei, die auf den Syntax-Abschnitt unten verweist.
+1. Erstellen Sie eine Datei mit dem Namen `cdn.yaml` oder ähnlich, die auf den nachfolgenden Syntax-Abschnitt verweist.
 
-1. Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen *config* oder einem ähnlichen Ordner, wie im Abschnitt [Konfiguration der Pipeline-Artikel](/help/operations/config-pipeline.md#folder-structure) beschrieben.
+1. Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen *config* oder einem ähnlichen Ordner, wie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Konfiguration der Pipeline ](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
+1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie in [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
 
 1. Stellen Sie die Konfiguration bereit.
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-Eine Beschreibung der Eigenschaften über dem Daten-Knoten finden Sie im Artikel [Konfiguration der Pipeline ](/help/operations/config-pipeline.md#common-syntax) . Der Wert der Eigenschaft type sollte *CDN* und die Eigenschaft `version` auf *1* eingestellt sein.
+Eine Beschreibung der Eigenschaften über dem Daten-Knoten finden Sie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#common-syntax) . Der Eigenschaftswert „kind“ sollte *CDN* sein, und die Eigenschaft `version` sollte auf *1* festgelegt werden.
 
 
 | Name | Zulässige Eigenschaften | Bedeutung |

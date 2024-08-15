@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 Wenn Sie ein Ihrer Ansicht nach falsches Verhalten oder einen Fehler in MSM feststellen, sollten Sie vor der detaillierten Fehlerbehebung Folgendes sicherstellen:
 
 * Lesen Sie die [häufig gestellten Fragen zu MSM](#faq) durch, da Ihre Probleme oder Fragen dort möglicherweise bereits angesprochen werden.
-* Lesen Sie den [Artikel zu Best Practices für MSM](best-practices.md), in dem Tipps gegeben und einige Missverständnisse geklärt werden.
+* Unter [Best Practices für MSM](best-practices.md) finden Sie mehrere Tipps, zusammen mit einer Klärung bestimmter falscher Konzepte.
 
 ## Erweiterte Informationen zum Status Ihres Blueprints und Ihrer Live Copy {#advanced-info}
 
@@ -68,7 +68,7 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
 MSM-Synchronisierungsaktionen sind detailliert konfigurierbar. Welche Eigenschaften oder Komponenten während der Rollouts geändert werden, hängt unmittelbar von den Eigenschaften dieser Konfigurationen ab.
 
-Weitere Informationen zu diesem Thema finden Sie in [diesem Artikel](best-practices.md).
+Weitere Informationen zu diesem Thema finden Sie unter [Best Practices für MSM](best-practices.md) .
 
 ### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autorinnen und Autoren entfernen? {#remove-rollout-permissions}
 

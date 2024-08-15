@@ -4,10 +4,10 @@ description: Machen Sie sich mit der Authentifizierung vertraut, die für Adobe 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 96%
 
 ---
 
@@ -41,4 +41,4 @@ Alle Anfragen, die mit dem Zugriffs-Token durchgeführt werden, werden *von dem 
 
 Dieses Benutzerkonto bedeutet, dass Sie überprüfen müssen, ob das Konto über die erforderlichen Berechtigungen zur Ausführung von GraphQL-Abfragen verfügt.
 
-Sie können diese Berechtigungen mit GraphiQL auf der lokalen Instanz überprüfen. Weitere Informationen über [Berechtigungen finden Sie hier](/help/headless/security/permissions.md).
+Sie können diese Berechtigungen mit GraphiQL auf der lokalen Instanz überprüfen. Weitere Informationen finden Sie unter [Überlegungen zur Berechtigung für Headless Content](/help/headless/security/permissions.md).

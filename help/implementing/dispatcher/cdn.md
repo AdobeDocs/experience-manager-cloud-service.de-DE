@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 69%
+source-wordcount: '1555'
+ht-degree: 98%
 
 ---
 
@@ -46,26 +46,26 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 
 Sie können Traffic im CDN auf verschiedene Arten konfigurieren, wie zum Beispiel:
 
-* Blockieren von böswilligem Traffic mit [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) (einschließlich optional lizenzierbarer erweiterter WAF-Regeln)
-* Ändern der Art der [Anforderung und Antwort](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
-* Anwendung von 301/302 [clientseitigen Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
-* Deklarieren von [Ursprungsselektoren](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) zum Reverse-Proxy einer Anforderung an Nicht-AEM-Backends
+* Blockieren von schädlichem Traffic mit [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) (einschließlich optional lizenzierbaren, erweiterten WAF-Regeln)
+* Ändern der Art der [Anfrage und Antwort](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
+* Anwenden der [Client-seitigen 301/302-Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
+* Deklarieren von [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) zum Reverse-Proxy einer Anfrage an Nicht-AEM-Backends
 
-Erfahren Sie, wie Sie diese Funktionen konfigurieren, indem Sie YAML-Dateien in Git verwenden und sie mithilfe der Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md) bereitstellen.
+Erfahren Sie, wie Sie diese Funktionen konfigurieren, indem Sie YAML-Dateien in Git verwenden und mithilfe der Cloud Manager-[Konfigurations-Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md) bereitstellen.
 
 ### Konfigurieren von CDN-Fehlerseiten {#cdn-error-pages}
 
 Eine CDN-Fehlerseite kann so konfiguriert werden, dass sie die ungebrandete Standardseite außer Kraft setzt, die dem Browser in dem seltenen Fall ausgegeben wird, dass AEM nicht erreicht werden kann. Weitere Informationen finden Sie unter [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md).
 
-### Löschen zwischengespeicherter Inhalte im CDN {#purge-cdn}
+### Bereinigen zwischengespeicherter Inhalte im CDN {#purge-cdn}
 
-Das Festlegen von TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. In Fällen, in denen es wichtig ist, aktualisierte Inhalte sofort bereitzustellen, kann es jedoch von Vorteil sein, den CDN-Cache direkt zu bereinigen.
+Das Festlegen einer TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. Wenn aktualisierte Inhalte jedoch sofort bereitgestellt werden müssen, kann es von Vorteil sein, den CDN-Cache direkt zu bereinigen.
 
-Lesen Sie mehr über das Konfigurieren eines Bereinigungs-API-Tokens](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) und das Löschen des zwischengespeicherten CDN-Inhalts [.[](/help/implementing/dispatcher/cdn-cache-purge.md)
+Lesen Sie mehr über das [Konfigurieren eines Bereinigungs-API-Tokens](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) und das [Bereinigen des zwischengespeicherten CDN-Inhalts ](/help/implementing/dispatcher/cdn-cache-purge.md).
 
-### Grundlegende Authentifizierung beim CDN {#basic-auth}
+### Grundlegende Authentifizierung im CDN {#basic-auth}
 
-Für einfache Authentifizierungsfälle, einschließlich geschäftlicher Interessengruppen, die Inhalte überprüfen, schützen Sie Inhalte, indem Sie ein einfaches Authentifizierungsdialogfeld anzeigen, das einen Benutzernamen und ein Kennwort erfordert. [Weitere Infos](/help/implementing/dispatcher/cdn-credentials-authentication.md) und Teilnahme am frühen Adopter-Programm.
+Schützen Sie Inhalte für einfache Authentifizierungsfälle, einschließlich Geschäfts-Stakeholdern, die Inhalte überprüfen, indem Sie ein einfaches Authentifizierungsdialogfeld anzeigen, das einen Benutzernamen und ein Kennwort erfordert. [Erfahren Sie mehr](/help/implementing/dispatcher/cdn-credentials-authentication.md) und treten Sie dem Early-Adopter-Programm bei.
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
@@ -88,7 +88,7 @@ Konfigurationsanweisungen:
 1. Setzen Sie die SNI auf den Eingang des Adobe CDN.
 1. Legen Sie die Host-Kopfzeile auf die Ursprungs-Domain fest. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Legen Sie die Kopfzeile `X-Forwarded-Host` mit dem Domain-Namen fest, damit AEM die Host-Kopfzeile ermitteln kann. Beispiel: `X-Forwarded-Host:example.com`.
-1. Satz `X-AEM-Edge-Key`. Der Wert sollte mithilfe einer Cloud Manager-Konfigurationspipeline konfiguriert werden, wie in [diesem Artikel](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value) beschrieben.
+1. Satz `X-AEM-Edge-Key`. Der Wert sollte mithilfe einer Cloud Manager-Konfigurations-Pipeline konfiguriert werden, wie in [diesem Artikel](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value) beschrieben.
 
    * Erforderlich, damit das Adobe-CDN die Quelle der Anfragen validieren und die `X-Forwarded-*`-Header an die AEM-Applikation weitergeben kann. Beispielsweise wird `X-Forwarded-For` verwendet, um die Client-IP zu bestimmen. Somit liegt es in der Verantwortung des vertrauenswürdigen Aufrufers (d. h. des von Kunden oder Kundinnen verwalteten CDN), die Korrektheit der `X-Forwarded-*`-Header sicherzustellen (siehe Hinweis unten).
    * Optional kann der Zugriff auf den Eingang zum Adobe CDN blockiert werden, wenn kein `X-AEM-Edge-Key` vorhanden ist. Bitte informieren Sie Adobe, wenn Sie direkten Zugriff auf den Eingang zum Adobe-CDN benötigen (der blockiert werden soll).
@@ -97,7 +97,7 @@ Konfigurationsbeispiele von führenden CDN-Anbietern finden Sie im Abschnitt [Be
 
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das Traffic-Routing End-to-End ordnungsgemäß funktioniert.
 
-Nach dem Festlegen von `X-AEM-Edge-Key` können Sie testen, ob die Anfrage wie folgt richtig weitergeleitet wird.
+Nach dem Festlegen des `X-AEM-Edge-Key` können Sie wie folgt testen, ob die Anfrage korrekt weitergeleitet wird.
 
 Unter Linux®:
 
@@ -149,23 +149,23 @@ Im Folgenden werden einige Konfigurationsbeispiele von mehreren führenden CDN-A
 
 ### Häufige Fehler {#common-errors}
 
-Die bereitgestellten Beispielkonfigurationen zeigen die erforderlichen Basiseinstellungen an, aber eine Kundenkonfiguration kann andere Einflussregeln haben, die die Header entfernen, ändern oder neu anordnen, die erforderlich sind, damit AEM as a Cloud Service den Traffic bereitstellt. Im Folgenden finden Sie häufige Fehler, die beim Konfigurieren eines kundenverwalteten CDN auftreten, um auf AEM as a Cloud Service zu verweisen.
+Die bereitgestellten Beispielkonfigurationen zeigen die erforderlichen Basiseinstellungen an, aber eine Kundenkonfiguration kann andere Einflussregeln haben, welche die Header entfernen, ändern oder neu anordnen, die erforderlich sind, damit AEM as a Cloud Service den Traffic bereitstellt. Im Folgenden finden Sie häufige Fehler, die auftreten, wenn ein kundenseitig verwaltetes CDN so konfiguriert wird, dass es auf AEM as a Cloud Service verweist.
 
-**Weiterleitung zum Publish-Dienstendpunkt**
+**Weiterleitung zum Endpunkt des Veröffentlichungs-Services**
 
-Wenn eine Anfrage eine unzulässige Antwort vom Typ 403 erhält, bedeutet dies, dass in der Anfrage einige erforderliche Kopfzeilen fehlen. Eine häufige Ursache dafür ist, dass das CDN sowohl den Apex- als auch den `www`-Domänentraffic verwaltet, jedoch nicht die richtige Kopfzeile für die Domäne `www` hinzufügt. Dieses Problem kann gelöst werden, indem Sie Ihre AEM as a Cloud Service-CDN-Protokolle überprüfen und die erforderlichen Anforderungsheader überprüfen.
+Wenn eine Anfrage eine unzulässige Antwort vom Typ 403 erhält, bedeutet dies, dass in der Anfrage einige erforderliche Header fehlen. Eine häufige Ursache dafür ist, dass das CDN sowohl den Apex- als auch den `www`-Domain-Traffic verwaltet, jedoch nicht den richtigen Header für die `www`-Domain hinzufügt. Dieses Problem kann gelöst werden, indem Sie Ihre CDN-Protokolle in AEM as a Cloud Service überprüfen und die erforderlichen Anforderungs-Header verifizieren.
 
-**Zu viele Umleitungsschleife**
+**Schleife „Zu viele Umleitungen“**
 
-Wenn eine Seite eine Schleife &quot;Zu viele Umleitungen&quot;erhält, wird ein Anforderungsheader im CDN hinzugefügt, der mit einer Umleitung übereinstimmt, die sie zu sich selbst zwingt. Beispiel:
+Wenn eine Seite eine Schleife „Zu viele Umleitungen“ erhält, wird im CDN ein Anfrage-Header hinzugefügt, der einer Umleitung entspricht, die die Seite zu sich selbst zurückführt. Beispiel:
 
-* Es wird eine CDN-Regel erstellt, die entweder mit der Apex-Domäne oder der www-Domäne übereinstimmt, und die X-Forwarded-Host-Kopfzeile der Apex-Domäne wird nur hinzugefügt.
-* Eine Anfrage für eine Apex-Domäne entspricht dieser CDN-Regel, die die Apex-Domäne als Header X-Forwarded-Host hinzufügt.
-* Eine Anfrage wird an die Quelle gesendet, wo eine Weiterleitung explizit mit der Host-Kopfzeile für die Apex-Domäne übereinstimmt (z. B. ^example.com).
-* Es wird eine Neuschreibungsregel ausgelöst, die die Anfrage für die Apex-Domäne mit der Subdomäne www in https umschreibt.
-* Diese Umleitung wird dann an den Edge des Kunden gesendet, wo die CDN-Regel erneut ausgelöst wird und der Header &quot;X-Forwarded-Host&quot;für die Apex-Domäne und nicht die Subdomäne &quot;www&quot;hinzugefügt wird. Anschließend wird der Prozess neu gestartet, bis die Anfrage fehlschlägt.
+* Es wird eine CDN-Regel erstellt, die entweder mit der Apex-Domain oder der www-Domain übereinstimmt und nur den X-Forwarded-Host-Header der Apex-Domain hinzufügt.
+* Eine Anfrage für eine Apex-Domain entspricht dieser CDN-Regel, die die Apex-Domain als X-Forwarded-Host-Header hinzufügt.
+* Eine Anfrage wird an die Quelle gesendet, an der eine Weiterleitung explizit mit dem Host-Header für die Apex-Domain übereinstimmt (z. B. ^example.com).
+* Es wird eine Neuschreibungsregel ausgelöst, die die Anfrage für die Apex-Domain mit der www-Subdomain in https umschreibt.
+* Diese Umleitung wird dann an den Edge der Kundin bzw. des Kunden gesendet, wenn die CDN-Regel erneut ausgelöst wird und der X-Forwarded-Host-Header für die Apex-Domain und nicht die www-Subdomain hinzugefügt wird. Anschließend fängt der Prozess von vorne an, bis die Anfrage fehlschlägt.
 
-Um dieses Problem zu beheben, bewerten Sie Ihre SSL-Umleitungsstrategie, CDN-Regeln, Umleitungs- und Umschreibungsregelkombinationen.
+Um dieses Problem zu beheben, werten Sie Ihre SSL-Umleitungsstrategie, CDN-Regeln, Umleitungs- und Umschreibungsregelkombinationen aus.
 
 ## Geolocation-Kopfzeilen {#geo-headers}
 
@@ -178,7 +178,7 @@ Das AEM-verwaltete CDN fügt jeder Anfrage Header hinzu. Diese enthalten:
 >
 >Wenn es ein vom Kunden verwaltetes CDN gibt, spiegeln diese Header den Standort des CDN-Proxy-Servers des Kunden und nicht den des eigentlichen Clients wider. Daher sollten bei einem vom Kunden verwalteten CDN die Geolocation-Header vom CDN des Kunden verwaltet werden.
 
-Die Werte für die Länder-Codes sind die [hier](https://de.wikipedia.org/wiki/ISO_3166-1) beschriebenen Alpha-2-Codes.
+Die Werte für die Ländercodes sind die unter [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) beschriebenen Alpha-2-Codes.
 
 Die Werte für die Kontinental-Codes lauten:
 

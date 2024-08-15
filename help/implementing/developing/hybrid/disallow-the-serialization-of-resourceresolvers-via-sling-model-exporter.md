@@ -4,10 +4,10 @@ description: Deaktivieren der Serialisierung von ResourceResolvers über den Sli
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '529'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Mit der Funktion Sling Model Exporter können Sling Models-Objekte in ein JSON-Format serialisiert werden. Diese Funktion wird häufig verwendet, da sie es SPAs (Single Page Applications) ermöglicht, einfach auf Daten aus AEM zuzugreifen. Auf der Implementierungsseite wird die Jacson Databind-Bibliothek verwendet, um diese Objekte zu serialisieren.
 
-Die Serialisierung ist ein rekursiver Vorgang. Ausgehend von einem „Stammobjekt“ durchläuft es rekursiv alle infrage kommenden Objekte und serialisiert sie und ihre untergeordneten Elemente. Eine Beschreibung, welche Felder serialisiert werden, finden Sie in [diesem Artikel](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
+Die Serialisierung ist ein rekursiver Vorgang. Ausgehend von einem „Stammobjekt“ durchläuft es rekursiv alle infrage kommenden Objekte und serialisiert sie und ihre untergeordneten Elemente. Eine Beschreibung der serialisierten Felder finden Sie im Artikel [Jackson - Decide What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) .
 
 Bei diesem Ansatz werden alle Objekttypen in JSON serialisiert, und natürlich kann auch ein Sling-`ResourceResolver`-Objekt serialisiert werden, wenn es von den Serialisierungsregeln abgedeckt wird. Dies ist problematisch, da der `ResourceResolver`-Dienst (und damit auch das Dienstobjekt, das ihn darstellt) potenziell vertrauliche Informationen enthält, die nicht offen gelegt werden sollten. Zum Beispiel:
 

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über verschiedene Berechtigungen und Überlegung
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 100%
+source-wordcount: '817'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Im Großen und Ganzen läuft der Prozess so ab:
 
 >[!TIP]
 >
-> Eine ausführliche Videoeinführung zur Verwaltung von IMS und AEM-Benutzern und -Gruppen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=de).
+>Eine ausführliche Videoeinführung zur Verwaltung von IMS und AEM Benutzern und Gruppen finden Sie unter [Konfigurieren des Zugriffs auf AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=de).
 
 Um **Gruppen** in AEM zu verwalten, gehen Sie zu **Tools** > **Sicherheit** > **Gruppen**.
 

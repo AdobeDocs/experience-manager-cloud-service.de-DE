@@ -4,17 +4,17 @@ description: Erfahren Sie, wie Sie zwischengespeicherte Objekte aus dem Adobe-CD
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 89%
+source-wordcount: '433'
+ht-degree: 90%
 
 ---
 
 # Bereinigen des CDN-Caches {#cdn-purge-cache}
 
 Durch die Bereinigung wird ein Objekt aus dem Adobe-CDN-Cache entfernt, was dazu führt, dass zukünftige Anfragen als Cache-Fehler an die Quelle weitergeleitet werden, anstatt aus dem Cache bereitgestellt zu werden.
-Mit AEM as a Cloud Service können Sie einen Bereinigungs-API-Token konfigurieren, der dann in API-Aufrufen zum Bereinigen verwendet werden kann. Lesen Sie den Artikel [Konfigurieren von CDN-Anmeldeinformationen und Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) , um zu erfahren, wie Sie dieses Token mithilfe der Authentifizierungsrichtlinien der Cloud Manager Config Pipeline konfigurieren.
+Mit AEM as a Cloud Service können Sie ein Bereinigungs-API-Token konfigurieren, das dann in Aufrufen der Bereinigungs-API verwendet werden kann. Lesen Sie [Konfigurieren von CDN-Anmeldeinformationen und Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) , um zu erfahren, wie Sie dieses Token mithilfe der Cloud Manager Config Pipeline Authentication-Direktiven konfigurieren.
 
 Es werden drei Bereinigungsvarianten unterstützt:
 
@@ -75,4 +75,4 @@ Beachten Sie, dass der `X-AEM-Purge`-Header den Wert „all“ enthalten muss.
 
 ## Interaktionen mit der Apache-/Dispatcher-Ebene {#apache-layer}
 
-Wie im Artikel [Ablauf der Inhaltsbereitstellung](/help/implementing/dispatcher/overview.md) beschrieben, ruft das CDN Inhalte von der Apache-/Dispatcher-Ebene ab, wenn der Cache abgelaufen ist. Dies bedeutet, dass Sie vor dem Bereinigen einer Ressource im CDN sicherstellen sollten, dass auch eine neue Version des Inhalts beim Dispatcher verfügbar ist. Weitere Informationen finden Sie unter [Dispatcher-Cache-Invalidierung](/help/implementing/dispatcher/caching.md#disp).
+Wie unter [Inhaltsbereitstellungsfluss](/help/implementing/dispatcher/overview.md) beschrieben, ruft das CDN Inhalte aus der Apache-/Dispatcher-Ebene ab, wenn der Cache abgelaufen ist. Dies bedeutet, dass Sie vor dem Bereinigen einer Ressource im CDN sicherstellen sollten, dass auch eine neue Version des Inhalts beim Dispatcher verfügbar ist. Weitere Informationen finden Sie unter [Dispatcher-Cache-Invalidierung](/help/implementing/dispatcher/caching.md#disp).

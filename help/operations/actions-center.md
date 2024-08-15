@@ -4,10 +4,10 @@ description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere w
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ Im Aktionszentrum können Sie ein bestimmtes Programm und eine bestimmte Umgebun
 
 ## Konfiguration {#configuration}
 
-Um den Empfang von Aktionszentrums-Benachrichtigungs-E-Mail zu konfigurieren, erstellen Sie die in diesem Artikel beschriebenen [Produktprofile](/help/journey-onboarding/notification-profiles.md), nämlich Benachrichtigung bei Vorfällen – Cloud Service und proaktive Benachrichtigung – Cloud Service. Weisen Sie diesen Profilen auch die entsprechenden Adobe-IDs aus Ihrer Organisation zu. Auf diese Weise kann ein Admin bestimmen, welche Personen für den Erhalt dieser Benachrichtigungs-E-Mails qualifiziert sind.
+Erstellen Sie zum Konfigurieren des Empfangs von Aktionscenter-E-Mail-Benachrichtigungen die Produktprofile wie unter [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md) beschrieben, nämlich Benachrichtigung bei Vorfällen - Cloud Service und proaktive Benachrichtigung - Cloud Service. Weisen Sie diesen Profilen auch die entsprechenden Adobe-IDs aus Ihrer Organisation zu. Auf diese Weise kann ein Admin bestimmen, welche Personen für den Erhalt dieser Benachrichtigungs-E-Mails qualifiziert sind.
 
 >[!NOTE]
 >Aktionszentrums-Benachrichtigungs-E-Mails werden auf Organisationsebene erstellt, sodass die Abonnierenden Benachrichtigungen für alle Programme und Umgebungen innerhalb dieser Programme erhalten.
@@ -65,7 +65,7 @@ AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzerin bzw. Benutzer, die/der dem Produktprofil „Benachrichtigung bei Vorfällen – Cloud Service“ zugewiesen ist | X |
 | Proaktive Empfehlungen | Zu planende Optimierungen | Benutzerin bzw. Benutzer, die/der dem Produktprofil „proaktive Benachrichtigung – Cloud Service“ zugewiesen ist | X |
-| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), wie [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |                           |
+| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzer mit den Benutzerrollen Business Owner, Program Manager oder Deployment Manager, die unter [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences) das Kontrollkästchen &quot;Sonstige&quot;aktiviert haben, siehe [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Unterstützte Benachrichtigungstypen {#supported-notification-types}
 
@@ -76,7 +76,7 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Blockierte Replikations-Warteschlange | Vorfall | Heben Sie die Blockierung der Warteschlange auf, indem Sie den Anweisungen in der [Replikations-Dokumentation](/help/operations/replication.md#troubleshooting) folgen |
 | Ungültige persistierte GraphQL-Abfrage | Vorfall | Korrigieren Sie die ungültige GraphQL-Abfrage, indem Sie auf die [Dokumentation zur Fehlerbehebung bei persistierten GraphQL-Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=de) verweisen |
 | Traffic-Spitze am Ursprung | Vorfall | Schützen Sie Ihren Ursprung, indem Sie Traffic-Filterregeln zur Ratenbegrenzung konfigurieren, die bei niedrigeren Schwellenwerten ausgelöst werden als die Warnung bei standardmäßiger Traffic-Spitze am Ursprung.  Weitere Informationen finden Sie im Abschnitt [Blockieren von DoS- und DDoS-Angriffen mithilfe von Traffic-Regeln](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) in der Dokumentation zu den Traffic-Filterregeln, die auf ein Tutorial verweist. |
-| Ausgelöste Regeln für CDN-Traffic-Filter | Vorfall | Wenn die passende Traffic-Filterregel einen Angriff widerspiegelt und Ihre Site diesen Traffic nicht blockiert, schützen Sie Ihre Site, indem Sie eine Traffic-Filterregel im Blockierungsmodus konfigurieren. Weitere Informationen finden Sie im Abschnitt [Schutz von Websites mit Traffic-Filterregeln (einschließlich WAF-Regeln)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) der Dokumentation zu Traffic-Filterregeln , in der auf ein Tutorial verwiesen wird. |
+| Ausgelöste Regeln für CDN-Traffic-Filter | Vorfall | Wenn die passende Traffic-Filterregel einen Angriff widerspiegelt und Ihre Site diesen Traffic nicht blockiert, schützen Sie Ihre Site, indem Sie eine Traffic-Filterregel im Blockierungsmodus konfigurieren. Weitere Informationen finden Sie im Abschnitt [Schützen von Websites mit Traffic-Filterregeln (einschließlich WAF-Regeln)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) in der Dokumentation zu den Traffic-Filterregeln, wo auf ein Tutorial verwiesen wird. |
 | Seiten enthalten eine große Anzahl von Knoten | Proaktiv | Reduzieren Sie die Gesamtanzahl der Knoten auf einer Seite. Siehe die [Dokumentation zur Seitenkomplexität](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Große Anzahl an laufenden Workflow-Instanzen | Proaktiv | Beenden Sie laufende Workflows, die nicht mehr benötigt werden. Erfahren Sie, wie Sie einen [Bereinigungsauftrag konfigurieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance). |               |
 | Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. | Hohe Verbindungsanzahl | Proaktiv | Erfahren Sie mehr über das Pooling von Verbindungen in der [Dokumentation über das Pooling von Verbindungen im Zusammenhang mit erweiterten Netzwerkfunktionen](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

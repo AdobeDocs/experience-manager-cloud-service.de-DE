@@ -4,10 +4,10 @@ description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud 
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ Bei der lokalen Entwicklung (mit dem SDK) kann direkt in `/apps` und `/libs` ges
 
 Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Stattdessen kann der Repository-Browser von der AEM as a Cloud Service Developer Console aus gestartet werden und bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
+Stattdessen kann der Repository-Browser von der AEM as a Cloud Service Developer Console aus gestartet werden und bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“. Weitere Informationen finden Sie im [Repository-Browser](/help/implementing/developing/tools/repository-browser.md).
 
 Eine Reihe von Tools zum Debuggen von AEM as a Cloud Service-Entwicklungsumgebungen sind in der AEM as a Cloud Service Developer Console für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Author- und Publish-Service-URLs wie folgt festgelegt werden:
 
@@ -194,7 +194,7 @@ Als Abkürzung kann der folgende Cloud Manager CLI-Befehl verwendet werden, um d
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Weitere Informationen finden Sie auf [dieser Seite](/help/release-notes/home.md).
+Weitere Informationen finden Sie unter [Versionsinformationen](/help/release-notes/home.md) .
 
 Entwickler können Statusinformationen generieren und verschiedene Ressourcen auflösen.
 

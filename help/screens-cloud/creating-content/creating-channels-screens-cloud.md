@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Se
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 100%
+source-wordcount: '1102'
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ Die folgenden Vorlagen sind bei Verwendung des Assistenten zum **Erstellen** ein
 
 Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für ein Display verwenden. Mit dieser Methode muss die umständliche Zeitplandefinition nicht wiederholt werden.
 
-1. Navigieren Sie von [hier](https://experience.adobe.com/screens) zu Screens Services Provider.
+1. Navigieren Sie zum [Screens-Dienstanbieter](https://experience.adobe.com/screens).
 
 ### Erstellen von Standardzuweisungsdetails für einen Kanal {#create-default}
 
