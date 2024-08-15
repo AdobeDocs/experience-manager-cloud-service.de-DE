@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 17%
+ht-degree: 81%
 
 ---
 
@@ -24,71 +24,71 @@ Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für die
 
 ### Verbesserungen {#enhancements-17465}
 
-* FORMS-15436 - Behandeln Sie Ausnahmefehler in der Adobe Sign Status Scheduler ordnungsgemäß.
-* FORMS-15362 - Fügen Sie die Konfiguration für Forms-Foundation in aemds hinzu, um die Anmeldung zu aktivieren.
-* FORMS-15261 - SPA wird im Forms-Editor nicht dargestellt.
-* FORMS-15138 - Umgang mit der Abwärtskompatibilität doppelter Daten aufgrund der JSON-Aktualisierung von Sling Commons.
-* FORMS-15113 - Änderung des Schlüsselnamens zum Sid von visitorId für das RUM-Tracking.
-* FORMS-15103 - In einem Formular angehängte Assets werden nicht in der Edge-Bereitstellung veröffentlicht.
-* FORMS-15082 - JSON-Schema zur Zuordnung zu benutzerdefinierten adaptiven Formularkomponenten.
-* FORMS-15002 - Vorlagentypregistrierung von v1-Fragmenten.
-* FORMS-14845 - Unterstützung für xdpRef in Kernkomponentenbasisformularen über Forms Manager.
-* FORMS-14840 - Forms Prefill Service-Fehler.
-* FORMS-14836 - Verbesserung der Benutzeroberfläche von Forms Manager zur Auflistung von AF1-Fragmentvorlagen.
-* FORMS-14834 - Vorlagenunterstützung für Fragmente in AF1.
-* FORMS-14275 - Überschreiben der Dankeseite und Danksagungsmeldung im Einbettungscontainer
-* FORMS-13623 - Automatische Speicherfunktion für V2 aktivieren.
-* FORMS-8651 - Warndialogfeld zum Ändern der Konfiguration des Datenmodells auf der Seite &quot;Formulareigenschaften&quot;.
-* SITES-23310 - Content Fragments REST API: Verhindern von Zirkelabhängigkeiten in verschachtelten Verweisen für Inhaltsfragmente.
-* SITES-23285 - REST-API für Inhaltsfragmente: Erstellen Sie einen Endpunkt, um alle verfügbaren Sprachen aufzulisten.
-* SITES-22857 - Content Fragments REST API: Kontrollkästchen-Auflistungsfelder sollten nicht zulassen, dass mehrere Eigenschaften auf &quot;false&quot;gesetzt sind.
-* SITES-22813 - Content Fragments REST API: Definieren Sie Min-/Max-Eigenschaften für Auflistungsfelder.
-* SITES-22031 - REST-API für Inhaltsfragmente: Rufen Sie zulässige Inhaltsfragmentmodelle für den Ordner eines Fragments ab.
-* SITES-17640 - Content Fragments REST API: Validierung der Publish-Vorgänge für Inhaltsfragmente.
+* FORMS-15436 – Ordnungsgemäße Ausnahmebehandlung in der Adobe Sign-Statusplanung.
+* FORMS-15362 – Hinzufügen einer Konfiguration für „forms-foundation“ in aemds, um die Anmeldefunktion zu aktivieren.
+* FORMS-15261 – SPA wird im Forms-Editor nicht gerendert.
+* FORMS-15138 – Umgang mit Abwärtskompatibilität doppelter Daten aufgrund eines Sling Commons JSON-Upgrades.
+* FORMS-15113 – Ändern des Schlüsselnamens von „visitorId“ in „sid“ zum RUM-Tracking.
+* FORMS-15103 – Einem Formular beigefügte Assets werden bei der Edge-Bereitstellung nicht veröffentlicht.
+* FORMS-15082 – JSON-Schema zur Zuordnung zu benutzerdefinierten adaptiven Formularkomponenten.
+* FORMS-15002 – Vorlagentypregistrierung von v1-Fragmenten.
+* FORMS-14845 – Unterstützung für xdpRef in Kernkomponenten-Basisformularen über Forms Manager.
+* FORMS-14840 – Fehler beim Forms-Vorbefüllungs-Dienst.
+* FORMS-14836 – Verbessern der Forms Manager-Benutzeroberfläche zum Auflisten von AF1-Fragmentvorlagen.
+* FORMS-14834 – Vorlagenunterstützung für Fragmente in AF1.
+* FORMS-14275 – Überschreiben der Dankeseite und Dankesnachricht im Einbettungs-Container
+* FORMS-13623 – Aktivieren der automatischen Speicherfunktion für V2.
+* FORMS-8651 – Warndialogfeld beim Ändern der Datenmodellkonfiguration auf der Seite „Formulareigenschaften“.
+* SITES-23310 – Content Fragments REST-API: Verhindern zirkulärer Abhängigkeiten in verschachtelten Verweisen für Inhaltsfragmente.
+* SITES-23285 – Content Fragments REST-API: Erstellen eines Endpunkts, um alle verfügbaren Sprachen aufzulisten.
+* SITES-22857 – Content Fragments REST-API: Kontrollkästchen-Auflistungsfelder sollten nicht zulassen, dass mehrere Eigenschaften auf „false“ gesetzt sind.
+* SITES-22813 – Content Fragments REST-API: Definieren von Min.-/Max.-Eigenschaften für Auflistungsfelder.
+* SITES-22031 – Content Fragments REST-API: Abrufen zulässiger Inhaltsfragmentmodelle für den Ordner eines Fragments.
+* SITES-17640 – Content Fragments REST-API: Validierung der Veröffentlichungsvorgänge für Inhaltsfragmente.
 * SITES-22677 - Content Fragments REST API: Rufen Sie eine flache Liste von nachkommenden Verweisen ab.
-* SITES-22207 - Bei der Inhaltserstellung dupliziertes Modell
-* SITES-23093 - Eventing: Fügen Sie Payloads Tags für Inhaltsfragmentmodellereignisse hinzu.
-* SITES-23092 - Eventing: Fügen Sie Payloads Tags für Inhaltsfragment-Ereignisse hinzu.
-* SITES-22447 - Unterstützung der Vererbung von Experience Fragment-Eigenschaften zur Registerkarte Grundlegende Eigenschaften hinzufügen.
-* SITES-12209 - Verbessern der Leistung des Richtlinien-Editors durch Hinzufügen von cq:policy zum Index.
+* SITES-22207 – Duplizierties Modell beim Erstellen von Inhaltsfragmenten.
+* SITES-23093 – Eventing: Hinzufügen von Tags zu Payloads bei Inhaltsfragmentmodell-Ereignissen.
+* SITES-23092 - Eventing: Hinzufügen von Tags zu Payloads für Inhaltsfragment-Ereignisse.
+* SITES-22447 – Hinzufügen von Unterstützung der Vererbung von Experience Fragment-Eigenschaften zur Registerkarte „Allgemeine Eigenschaften“.
+* SITES-12209 – Verbessern der Leistung des Richtlinieneditors durch Hinzufügen von „cq:policy“ zum Index.
 
 ### Behobene Probleme {#fixed-issues-17465}
 
-* CQ-4358028 - Projekt konnte nicht erstellt werden, wenn Miniaturansichten hochgeladen wurden.
-* CQ-4357891 - Sequenzfehler des exportierten XLIFF.
-* CQ-4357059 - Übersetzungsauftrag dauert Stunden, bis 503 Timeouts in AEMaaCS auftreten.
-* FORMS-15320 - Die Übermittlung per E-Mail funktioniert nicht in einem auf Kernkomponenten basierenden Formular.
-* FORMS-15272 - AEM Forms - Kontrollkästchengruppe, die nur einen Wert sendet.
-* FORMS-15269 - Produktbezogene Probleme nach der Wartungsversion 16461.
-* FORMS-15174 - JsonSchemaParser isValid-Problem.
-* FORMS-15095 - Mehrzeiliger Text-Feld kann in AEM Forms nicht nur auf Bedienfelder, sondern auch auf Bedienfelder mit Containern gestaffelt werden.
-* FORMS-15057 - FDM Sharepoint list gibt Anlagenfehler für Übermittlung aus > 999.
-* FORMS-15011 - Core Editor verursacht Konsolenfehler beim Öffnen eines Formulars im Editor.
-* FORMS-14809 - SDK-Ordner werden nicht automatisch im freigegebenen temporären Ordner erstellt.
-* FORMS-14327 - Forms-Dienst-APIs : Extract data:- gibt 500 Antwort-Code, wenn ein nicht interaktives PDF-Dokument in der Eingabe bereitgestellt wird.
-* FORMS-7475 - Die Sortierung funktioniert nicht auf der Seite zur Erstellung adaptiver Formulare.
-* FORMS-3309 - Wenn beim Senden eines Formulars mehrere Optionen ausgewählt sind, wird in einem generierten DoR nur eine Option angezeigt.
-* SITES-23646 - GraphQL-Modellen-Endpunkt schlägt bei mit OpenAPI erstellten Modellen fehl, wenn Felder eindeutig sind.
-* SITES-23637 - Content Fragments REST API: OpenAPI verwendet nicht den richtigen Werttyp für Auflistungen.
-* SITES-23573 - Content Fragments REST API: Live-Beziehungen werden in GET Content Fragments nicht durch uuid berücksichtigt.
-* SITES-23535 - Content Fragments REST API: Auflistungsmehrfelder des Inhaltsfragmentmodells haben leere Werte.
-* SITES-23534 - Content Fragments REST API: Content Fragment Validation ClassCastException.
-* SITES-23524 - Anpassen des GraphQL BFF-Modellendpunkts zur Unterstützung von Auflistungsfeldern mit mehreren Feldern.
-* SITES-23467 - Content Fragments REST API: Suchmodelle schlagen aufgrund eines Cursorproblems fehl.
-* SITES-23327 - ArrayIndexOutOfBoundsException in AuditLogTimelineEventProvider während der Beschreibung der Timeline-Ereignisverarbeitung.
-* SITES-23277 - Content Fragments REST API: Die Live-Beziehungsüberprüfung des Inhaltsfragmentfelds sollte nur für Live Copies durchgeführt werden.
-* SITES-23232 - Benutzerdefinierte Validierung funktioniert in der neuen Benutzeroberfläche des CF-Editors nicht.
-* SITES-23090 - Content Fragments REST API: Titel eines gesperrten Inhaltsfragments kann nicht aktualisiert werden.
-* SITES-22981 - Das Weiterleiten eines verschachtelten Launches, der nicht tief verankert ist, wird nicht veröffentlicht.
-* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
-* SITES-22814 - Content Fragments REST API: Die Werte der Feldauflistungsfragmente für Kontrollkästchen sollten anhand der im Modell definierten Schlüssel geordnet werden.
-* SITES-22716 - Problem mit der Live-Nutzungsliste für OOTB-Komponenten.
-* SITES-22457 - Das Bewerben eines Launches, der nicht tief ist, aktualisiert den Quellinhalt nicht.
-* SITES-22449 - Änderungen in Inhaltsfragmenten können nach AEM P20-Aktualisierung nicht gespeichert werden.
-* SITES-22279 - Content Fragments REST API: Dem Inhaltsfragment fehlt das eindeutige Attribut für Auflistungstypen.
-* SITES-22203 - Content Fragments REST API: Align Management-APIs, um auf dieselbe Situation zu reagieren.
-* SITES-21973 - Content Fragments REST API: Dem Modell fehlt das eindeutige Attribut für Auflistungstypen.
-* SITES-20364 - 302 Umleitungen funktionieren nicht mit Selektor in URL.
+* CQ-4358028 – Fehler bei Projekterstellung, wenn Miniaturansichten hochgeladen werden.
+* CQ-4357891 – Sequenzfehler beim XLIFF-Export.
+* CQ-4357059 – Übersetzungsauftrag dauert stundenlang und verursacht einen Timeout-Fehler vom Typ 503 in AEMaaCS.
+* FORMS-15320 – E-Mail-Übermittlung funktioniert nicht in einem auf Kernkomponenten basierenden Formular.
+* FORMS-15272 – AEM Forms – Kontrollkästchengruppe sendet nur einen Wert.
+* FORMS-15269 – Produktbezogene Probleme nach der Wartungsversion 16461.
+* FORMS-15174 – JsonSchemaParser isValid-Problem.
+* FORMS-15095 – Mehrzeiliges Textfeld kann in AEM Forms über Bedienfelder hinaus erweitert werden.
+* FORMS-15057 – FDM-Sharepoint-Liste gibt Anhangsfehler bei Übermittlung aus (> 999).
+* FORMS-15011 – Core Editor verursacht Konsolenfehler beim Öffnen eines Formulars im Editor.
+* FORMS-14809 – SDK-Ordner wird nicht automatisch im freigegebenen temporären Ordner erstellt.
+* FORMS-14327 – Forms Service-APIs: Datenextrahierung: Gibt den Antwort-Code 500 zurück, wenn ein nicht interaktives PDF-Dokument in der Eingabe bereitgestellt wird.
+* FORMS-7475 – Sortierung funktioniert nicht auf der Seite zum Erstellen adaptiver Formulare.
+* FORMS-3309 – Wenn beim Senden eines Formulars mehrere Optionen ausgewählt sind, wird in einem generierten DoR nur eine Option angezeigt.
+* SITES-23646 – GraphQL-Modellendpunkt schlägt bei mit OpenAPI erstellten Modellen fehl, wenn Felder eindeutig sind.
+* SITES-23637 – Content Fragments REST-API: OpenAPI verwendet nicht den richtigen Werttyp für Auflistungen.
+* SITES-23573 – Content Fragments REST-API: Live-Beziehungen werden bei einem GET-Aufruf für Inhaltsfragmente nicht durch uuid berücksichtigt.
+* SITES-23535 – Content Fragments REST-API: Multifelder zum Auflisten von Inhaltsfragmentmodellen weisen leere Werte auf.
+* SITES-23534 – Content Fragments REST-API: ClassCastException bei Validierung von Inhaltsfragmenten.
+* SITES-23524 – Anpassen des GraphQL BFF-Modellendpunkts zur Unterstützung von Auflistungsfeldern mit mehreren Feldern.
+* SITES-23467 – Content Fragments REST-API: Suchmodelle schlagen aufgrund eines Cursor-Problems fehl.
+* SITES-23327 – ArrayIndexOutOfBoundsException in AuditLogTimelineEventProvider während der Beschreibung der Timeline-Ereignisverarbeitung.
+* SITES-23277 – Content Fragments REST-API: Die Live-Beziehungsüberprüfung für Inhaltsfragmentfelder sollte nur für Live Copies durchgeführt werden.
+* SITES-23232 – Benutzerdefinierte Validierung funktioniert nicht in der neuen Benutzeroberfläche des CF-Editors.
+* SITES-23090 – Content Fragments REST-API: Titel eines gesperrten Inhaltsfragments kann nicht aktualisiert werden.
+* SITES-22981 – Bewerben eines verschachtelten Launches, der nicht tief ist, wird nicht veröffentlicht.
+* SITES-22870 – PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
+* SITES-22814 – Content Fragments REST-API: Die Feldwerte der Kontrollkästchen-Auflistungsfragmente sollten anhand der im Modell definierten Schlüssel geordnet werden.
+* SITES-22716 – Problem mit der Live-Nutzungsliste für vorkonfigurierte Komponenten.
+* SITES-22457 – Beim Bewerben eines Launches, der nicht tief ist, wird der Quellinhalt nicht aktualisiert.
+* SITES-22449 – Änderungen in Inhaltsfragmenten können nach einem AEM P20-Upgrade nicht gespeichert werden.
+* SITES-22279 – Content Fragments REST-API: Dem Inhaltsfragment fehlt das eindeutige Attribut für Auflistungstypen.
+* SITES-22203 – Content Fragments REST-API: Ausrichten von Management-APIs, um auf dieselbe Situation zu reagieren.
+* SITES-21973 – Content Fragments REST-API: Dem Modell fehlt das eindeutige Attribut für Auflistungstypen.
+* SITES-20364 – Umleitungen von Typ 302 funktionieren nicht mit Selektor in der URL.
 * SITES-21198 - VersionPreviewServlet: Die Bereinigung wird gleichzeitig auf allen Clusterknoten ausgeführt, die Zusammenführungskonflikte verursachen und Commits blockieren.
 
 ### Bekannte Probleme {#known-issues-17465}
