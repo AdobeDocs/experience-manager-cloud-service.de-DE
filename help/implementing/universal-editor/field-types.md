@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über die Felder und Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 100%
+source-wordcount: '1183'
+ht-degree: 96%
 
 ---
 
@@ -302,6 +302,12 @@ Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/si
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
 | `variationName` | `string` | Variablenname, um auf die ausgewählte Variante zu speichern.  Wenn nicht definiert, wird keine Variantenauswahl angezeigt. | Nein |
+
+>[!NOTE]
+>
+>Der universelle Editor [ validiert Inhaltsfragmentfelder anhand ihrer Modelle](/help/assets/content-fragments/content-fragments-models.md#validation) , wodurch Sie Datenintegrationsregeln wie Regex-Muster und Eindeutigkeitsbeschränkungen erzwingen können.
+>
+>Dadurch wird sichergestellt, dass Ihre Inhalte bestimmten Geschäftsanforderungen entsprechen, bevor sie veröffentlicht werden.
 
 >[!BEGINTABS]
 

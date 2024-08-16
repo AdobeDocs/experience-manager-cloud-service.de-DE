@@ -1,18 +1,18 @@
 ---
-title: Aufrufen und Navigieren im universellen Editor
+title: Zugriff auf den und Navigation im universellen Editor
 description: Erfahren Sie mehr über die Grundlagen des Zugriffs auf und der Navigation im universellen Editor.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 87%
+source-wordcount: '1576'
+ht-degree: 91%
 
 ---
 
 
-# Aufrufen und Navigieren im universellen Editor {#navigating}
+# Zugriff auf den und Navigation im universellen Editor {#navigating}
 
 Erfahren Sie mehr über die Grundlagen des Zugriffs auf und der Navigation im universellen Editor.
 
@@ -20,11 +20,11 @@ Erfahren Sie mehr über die Grundlagen des Zugriffs auf und der Navigation im un
 
 Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
 
-Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautoren eine intuitive Benutzeroberfläche, die nur eine minimale Schulung erfordert, damit sie gleich loslegen und mit der Bearbeitung von Inhalten beginnen können. In diesem Dokument wird beschrieben, wie Sie im universellen Editor navigieren.
+Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautoren eine intuitive Benutzeroberfläche, die nur eine minimale Schulung erfordert, damit sie gleich loslegen und mit der Bearbeitung von Inhalten beginnen können. In diesem Dokument wird das Navigieren im universellen Editor beschrieben.
 
 >[!TIP]
 >
->* Weitere Informationen zum Authoring mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) .
+>* Weitere Informationen zum Verfassen mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 >* Eine detailliertere Einführung in den universellen Editor finden Sie im Dokument [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md).
 
 ## Vorbereiten der App {#prepare-app}
@@ -137,7 +137,7 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `L`, um die Adressleiste zu öffnen.
+>Verwenden Sie den Hotkey `l` (den Buchstaben l), um die Adressleiste zu öffnen.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröff
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `P`, um in den Vorschaumodus zu wechseln.
+>Verwenden Sie den Hotkey `p`, um in den Vorschaumodus zu wechseln.
 
 #### App-Vorschau öffnen {#open-app-preview}
 
@@ -185,7 +185,11 @@ Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie ger
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `O` (Buchstabe O), um die App-Vorschau zu öffnen.
+>Verwenden Sie den Hotkey `o` (den Buchstaben o), um die App-Vorschau zu öffnen.
+
+>[!TIP]
+>
+>Die Vorschau-URL für Ihre App [ kann angepasst werden.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### Veröffentlichen {#publish}
 
@@ -197,12 +201,20 @@ Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am 
 >
 >Weitere Informationen zur Veröffentlichung mit dem universellen Editor finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md).
 
+#### Ellipse {#ellipsis}
+
+Zusätzliche Standardoptionen sind über die Suchschaltfläche verfügbar.
+
+![Schaltfläche mit Auslassungspunkten](assets/ellipsis.png)
+
+Beispielsweise ist über die Suchschaltfläche die Möglichkeit verfügbar, die Veröffentlichung einer Seite rückgängig zu machen (d. h. die Aktion der Schaltfläche [**Publish**](#publish) rückgängig zu machen).
+
 #### Zusätzliche Schaltflächen {#additional-toolbar-buttons}
 
-Der Universal Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Symbolleiste angezeigt werden, wurde der universelle Editor erweitert.
+Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Symbolleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
 
 * Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
-* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der Dokumentation zu [Extension Managern](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) .
+* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### Der Editor {#editor}
 
@@ -216,7 +228,7 @@ Wenn sich der Editor im [Vorschaumodus](#preview-mode) befindet, kann durch den 
 
 Die Eigenschaftenleiste befindet sich immer auf der rechten Seite des Editors. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
 
-![Die Eigenschaftenleiste](assets/component-rail.png)
+![Die Eigenschaftenleiste](assets/properties-rail.png)
 
 #### Eigenschaftenmodus {#properties-mode}
 
@@ -232,7 +244,7 @@ Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt und/o
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `D`, um in den Eigenschaftenmodus zu wechseln.
+>Verwenden Sie den Hotkey `d`, um in den Eigenschaftenmodus zu wechseln.
 
 #### Inhaltsstruktur-Modus {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu dies
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `F`, um in den Inhaltsstruktur-Modus zu wechseln.
+>Verwenden Sie den Hotkey `f`, um in den Inhaltsstruktur-Modus zu wechseln.
 
-##### Bearbeiten {#edit}
+##### Im CF-Editor öffnen {#edit}
 
-Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche „Bearbeiten“ auswählen.
+Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche **Im CF-Editor öffnen** auswählen.
 
-![Symbol „Bearbeiten“](assets/edit.png)
+![Symbol &quot;Im CF-Editor öffnen&quot;](assets/open-in-cf-editor.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche „Bearbeiten“ wird der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte geöffnet. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragmenteditors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
+Durch Tippen oder Klicken auf die Schaltfläche **Im CF-Editor öffnen** wird der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte geöffnet. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragment-Editors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
 
 Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `E`, um eine ausgewählte Komponente zu bearbeiten.
+>Verwenden Sie den Hotkey `e` , um ein ausgewähltes Inhaltsfragment im Inhaltsfragment-Editor zu öffnen.
 
 ##### Hinzufügen {#add}
 
@@ -274,7 +286,7 @@ Durch Tippen oder Klicken auf die Schaltfläche „Hinzufügen“ wird ein Dropd
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `A`, um eine Komponente zu einer ausgewählten Container-Komponente hinzuzufügen.
+>Verwenden Sie den Hotkey `a`, um eine Komponente zu einer ausgewählten Container-Komponente hinzuzufügen.
 
 ##### Löschen {#delete}
 
@@ -290,11 +302,11 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 
 #### Zusätzliche Schaltflächen {#additional-properties-rail-buttons}
 
-Der Universal Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn in der Eigenschaftenleiste zusätzliche Schaltflächen angezeigt werden, wurde der universelle Editor erweitert.
+Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Eigenschaftenleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
 
 * Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
-* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der Dokumentation zu [Extension Managern](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) .
+* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie nun wissen, wie Sie auf den universellen Editor zugreifen und darin navigieren können, können Sie damit [Inhalte erstellen.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Nachdem Sie nun wissen, wie Sie auf den universellen Editor zugreifen und darin navigieren können, können Sie damit [Inhalte erstellen](/help/sites-cloud/authoring/universal-editor/authoring.md).

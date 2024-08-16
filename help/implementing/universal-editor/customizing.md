@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und an
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '647'
+ht-degree: 89%
 
 ---
 
@@ -115,6 +115,18 @@ Bedingungen können mithilfe des [JsonLogic-Schemas definiert werden.](https://j
 ![Eingeblendetes Textfeld](assets/shown.png)
 
 >[!ENDTABS]
+
+### Benutzerdefinierte Vorschau-URLs {#custom-preview-urls}
+
+Sie können eine benutzerdefinierte Vorschau-URL über eine `urn:adobe:aue:config:preview` -Meta-Konfiguration angeben, die beim Klicken auf die Schaltfläche **Seite öffnen** in der oberen rechten Symbolleiste des [Editors geöffnet wird.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+Dies ist besonders nützlich für Anwendungen mit bestimmten Vorschauanforderungen, z. B. bei der Verwendung von [Edge Delivery Services mit WYSIWYG-Authoring.](/help/edge/wysiwyg-authoring/authoring.md)
+
+Fügen Sie dazu einfach die gewünschte Vorschau-URL wie im folgenden Beispiel in ein Meta-Tag der instrumentierten App ein.
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
 
 ## Erweitern der Benutzeroberfläche des universellen Editors {#extending}
 

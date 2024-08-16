@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 80%
+source-wordcount: '1297'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautor
 
 >[!NOTE]
 >
->In diesem Dokument wird davon ausgegangen, dass Sie bereits mit dem Zugriff auf den universellen Editor und dessen Navigation vertraut sind. Ist dies nicht der Fall, lesen Sie das Dokument [Zugriff auf den universellen Editor und Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md) .
+>Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie bereits damit vertraut sind, wie Sie auf den universellen Editor zugreifen und darin navigieren. Ist dies nicht der Fall, lesen Sie das Dokument [Zugreifen auf den und Navigieren im universellen Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 >[!TIP]
 >
@@ -33,7 +33,7 @@ Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautor
 
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie mit dem Mauszeiger über einen Inhalt im Editor fahren, werden bearbeitbare Inhalte mit einem blauen Feld hervorgehoben.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt mit einer blauen Umrisslinie markiert.
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
@@ -49,9 +49,9 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
-Drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
+Die blaue Umrisslinie wird zu einer blauen Umrisslinie, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie Ihre Änderungen vor und drücken Sie dann die Eingabetaste/die Eingabetaste oder wählen Sie außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden deren Details in der Eigenschaftenleiste von [angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch in der Leiste bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details in der [Eigenschaftenleiste angezeigt. ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch in der Leiste bearbeiten.
 
 ![Bearbeiten von Text in der Eigenschaftenleiste](assets/ue-editing-text-component-rail.png)
 
@@ -65,14 +65,25 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Zur Vereinfachung sind an zwei Stellen Formatierungsoptionen und Details zu Ihrem Text verfügbar.
 
-* Das **Kontextmenü** wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen kann es sein, dass einige Optionen hinter der Schaltfläche mit den Auslassungspunkten ausgeblendet werden.
-* Die **[Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)** zeigt alle verfügbaren Formatierungsoptionen zusammen mit dem Text an.
+#### Kontextmenü {#context-menu}
+
+Das Kontextmenü wird über dem Rich-Text-Block geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen kann es sein, dass einige Optionen hinter der Schaltfläche mit den Auslassungspunkten ausgeblendet werden.
+
+![Kontextmenü für Rich-Text](assets/rich-text-context-menu.png)
 
 Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld nicht mehr im Fokus ist.
 
+#### Die Eigenschaftenleiste {#properties-rail}
+
+Die Leiste &quot;[properties&quot;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)&quot;zeigt ein Element für den ausgewählten Text an. Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen, um den Text zu bearbeiten.
+
+![Dialogfeld für die Bearbeitung von Rich-Text](assets/rich-text-canvas.png)
+
+Tippen oder klicken Sie auf **Abbrechen** oder **Fertig** , um die Änderungen zu verwerfen oder zu speichern.
+
 ### Bearbeiten von Medien {#edit-media}
 
-Sie können die Details in der Leiste [Eigenschaften} anzeigen.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Sie können die Details in der [Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) ansehen.
 
 ![Bearbeiten von Medien](assets/ue-edit-media.png)
 
@@ -85,7 +96,7 @@ Sie können die Details in der Leiste [Eigenschaften} anzeigen.](/help/sites-clo
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details in der Leiste [ &quot;Eigenschaften&quot;bearbeiten.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie seine Details in der [Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) bearbeiten.
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -95,13 +106,23 @@ Wenn Sie ein Feld auswählen, das sich auf ein Inhaltsfragment bezieht, wird das
 
 Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
 
-Wenn Sie Ihr Inhaltsfragment stattdessen im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) bearbeiten möchten, klicken Sie in der Eigenschaftenleiste auf die Schaltfläche [Bearbeiten](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) .
+Wenn Sie Ihr Inhaltsfragment stattdessen im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) bearbeiten möchten, tippen oder klicken Sie in der Eigenschaftenleiste auf die Schaltfläche [**Im Inhaltsfragment-Editor öffnen**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) .
+
+>[!TIP]
+>
+>Verwenden Sie den Hotkey `e` , um das ausgewählte Inhaltsfragment im Inhaltsfragment-Editor zu bearbeiten.
 
 Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
 
+>[!NOTE]
+>
+>Der universelle Editor [ validiert Inhaltsfragmentfelder anhand ihrer Modelle](/help/assets/content-fragments/content-fragments-models.md#validation) , wodurch Sie Datenintegrationsregeln wie Regex-Muster und Eindeutigkeitsbeschränkungen erzwingen können.
+>
+>Dadurch wird sichergestellt, dass Ihre Inhalte bestimmten Geschäftsanforderungen entsprechen, bevor sie veröffentlicht werden.
+
 ### Hinzufügen von Komponenten zu Containern {#adding-components}
 
-1. Wählen Sie eine Container-Komponente im [Inhaltsbaum](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
+1. Wählen Sie eine Container-Komponente in der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
 1. Wählen Sie dann das Symbol „Hinzufügen“ in der Eigenschaftenleiste aus.
 
    ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-add-component.png)
@@ -110,11 +131,11 @@ Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet we
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `A`, um dem ausgewählten Container eine Komponente hinzuzufügen.
+>Verwenden Sie den Hotkey `a`, um dem ausgewählten Container eine Komponente hinzuzufügen.
 
 ### Löschen von Komponenten aus Containern {#deleting-components}
 
-1. Wählen Sie eine Container-Komponente im [Inhaltsbaum](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
+1. Wählen Sie eine Container-Komponente in der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
 1. Wählen Sie das Pfeilsymbol des Containers aus, um seinen Inhalt in der Inhaltsstruktur zu erweitern.
 1. Wählen Sie dann in der Inhaltsstruktur eine Komponente im Container aus.
 1. Wählen Sie das Symbol „Löschen“ in der Eigenschaftenleiste aus.
@@ -136,7 +157,7 @@ Die ausgewählte Komponente wird gelöscht.
 
    ![Neuanordnen von Komponenten](assets/ue-reordering-components.png)
 
-1. Die gezogene Komponente wird in der Inhaltsstruktur grau dargestellt, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente los, um sie an ihrer neuen Position zu platzieren.
+1. Die gezogene Komponente wechselt in der Inhaltsstruktur zu Grau, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente los, um sie an ihrer neuen Position zu platzieren.
 
 Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet.
 
@@ -162,8 +183,8 @@ Weitere Informationen zu den technischen Details zum universellen Editor finden 
 
 ## Bearbeiten der Komponentenvererbung {#inheritance}
 
-Vererbung ist der Mechanismus, bei dem Inhalte so verknüpft werden können, dass sich durch eine Änderung automatisch der andere verändert.
+Vererbung ist der Mechanismus, durch den Inhalte so verknüpft werden können, dass Inhaltsänderungen automatisch übernommen werden. 
 
-Mit dem universellen Editor können Sie die Vererbung für Inhalte abbrechen, indem Sie den Inhalt einfach aktualisieren. Der Editor deaktiviert automatisch die Vererbung für alle Änderungen, die von Autoren auf dieser Seite vorgenommen werden. Dadurch wird sichergestellt, dass geänderte Inhalte beibehalten werden, wenn Aktualisierungen aus dem Blueprint synchronisiert werden.
+Mit dem universellen Editor können Sie die Vererbung für Inhalte abbrechen, indem Sie den Inhalt einfach aktualisieren. Der Editor deaktiviert automatisch die Vererbung für alle Änderungen, die von Autorinnen und Autoren auf dieser Seite vorgenommen werden. Dadurch wird sichergestellt, dass geänderte Inhalte beibehalten werden, wenn Aktualisierungen aus dem Blueprint synchronisiert werden.
 
-Weitere Informationen zur Funktionsweise der Vererbung mit dem universellen Editor finden Sie im Dokument [Inhaltsvererbung im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md) .
+Weitere Informationen zur Funktionsweise der Vererbung mit dem universellen Editor finden Sie im Dokument [Vererbung von Inhalten im universellen Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
