@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 88%
+source-wordcount: '659'
+ht-degree: 57%
 
 ---
 
@@ -19,44 +19,37 @@ Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eige
 
 >[!TIP]
 >
->Die Bereitstellung eines Zertifikats kann einige Tage dauern. Adobe empfiehlt daher, dass das Zertifikat rechtzeitig vor Ablauf eines Termins oder eines Live-Datums bereitgestellt wird.
+>Die Bereitstellung eines Zertifikats kann einige Tage dauern. Adobe empfiehlt daher, das Zertifikat rechtzeitig vor Ablauf eines Termins oder eines Live-Datums bereitzustellen.
 
-## Zertifikatsanforderungen {#certificate-requirements}
+## Zertifikatanforderungen {#certificate-requirements}
 
-Lesen Sie im Abschnitt **Zertifikatsanforderungen** des Dokuments [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements), wie Sie sicherstellen, dass das Zertifikat, das Sie hinzufügen möchten, von AEM as a Cloud Service unterstützt wird.
+Überprüfen Sie die **Zertifikatanforderungen** in [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) , um sicherzustellen, dass AEM as a Cloud Service das Zertifikat unterstützt, das Sie hinzufügen möchten.
 
-## Hinzufügen eines Zertifikats {#adding-a-cert}
-
-Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinzuzufügen.
+## Zertifikat hinzufügen {#adding-a-cert}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Navigieren Sie auf der Seite **Übersicht** zum Bildschirm **Umgebungen**.
+1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **SSL-Zertifikate**. Auf diesem Hauptbildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
+1. Klicken Sie im linken Navigationsbereich unter **Dienste** auf **SSL-Zertifikate**. (Möglicherweise müssen Sie in der linken oberen Ecke auf das Hamburger-Symbol klicken, um die Navigationsleiste anzuzeigen. Eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten wird angezeigt.
 
    ![Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Klicken Sie auf **SSL-Zertifikat hinzufügen**, um das Dialogfeld **SSL-Zertifikat hinzufügen** zu öffnen.
+1. Klicken Sie auf **SSL-Zertifikat hinzufügen** , um das Dialogfeld **SSL-Zertifikat hinzufügen** zu öffnen.
 
-   * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein.
-      * Dies dient nur zu Informationszwecken und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.
-   * Fügen Sie das **Zertifikat**, den **privaten Schlüssel** und die **Zertifikatkette** in die entsprechenden Felder ein.
-      * Alle drei Felder sind Pflichtfelder.
+   * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dieses Feld dient nur zu Informationszwecken und kann ein beliebiger Name sein, mit dem Sie Ihr Zertifikat einfach referenzieren können.
+   * Fügen Sie das **Zertifikat**, den **privaten Schlüssel** und die **Zertifikatkette** in die entsprechenden Felder ein. Alle drei Felder sind erforderlich.
 
-   ![Dialogfeld zum Hinzufügen des SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![Dialogfeld &quot;SSL-Zertifikat hinzufügen&quot;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Alle erkannten Fehler werden angezeigt.
-      * Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann.
-      * Weitere Informationen zum Beheben häufiger Fehler finden Sie im Abschnitt [Zertifikatfehler](#certificate-errors).
+   * Alle erkannten Fehler in Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben.
+Weitere Informationen zur Behebung häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors) .
 
-1. Klicken Sie auf **Speichern**, um Ihr Zertifikat zu speichern.
+1. Klicken Sie auf **Speichern**.
 
-Nach dem Speichern wird Ihr Zertifikat als neue Zeile in der Tabelle angezeigt.
-
-![Gespeichertes SSL-Zertifikat](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Gespeichertes SSL-Zertifikat](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)Ihr Zertifikat wird jetzt in der Tabelle als neue Zeile angezeigt, ähnlich der Abbildung oben.
 
 >[!NOTE]
 >
@@ -92,7 +85,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat neu verschlüsseln, indem Sie eine neue Zertifikatsignaturanforderung (CSR) generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
-### Entfernen von Client-Zertifikaten {#client-certificates}
+### Entfernen von Clientzertifikaten {#client-certificates}
 
 Wenn Sie beim Hinzufügen eines Zertifikats einen Fehler wie den folgenden erhalten:
 
@@ -102,7 +95,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 
 Wahrscheinlich haben Sie das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
 
-### Zertifikatsrichtlinie {#certificate-policy}
+### Zertifikatrichtlinie {#certificate-policy}
 
 Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
 
@@ -110,7 +103,7 @@ Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Z
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normalerweise werden Zertifikatrichtlinien durch eingebettete OID-Werte identifiziert. Wenn Sie ein Zertifikat als Text ausgeben und nach der OID suchen, wird die Richtlinie des Zertifikats angezeigt.
+Eingebettete OID-Werte identifizieren normalerweise Zertifikatrichtlinien. Wenn Sie ein Zertifikat als Text ausgeben und nach der OID suchen, wird die Richtlinie des Zertifikats angezeigt.
 
 Sie können Ihre Zertifikatdetails als Text ausgeben, indem Sie das folgende Beispiel als Anleitung verwenden.
 
@@ -152,13 +145,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### Gültigkeitsdaten des Zertifikats {#certificate-validity-dates}
+### Gültigkeitsdaten der Bescheinigung {#certificate-validity-dates}
 
-Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindestens 90 Tage gültig ist. Sie sollten die Gültigkeit der Zertifikatkette überprüfen.
+Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindestens 90 Tage gültig ist. Überprüfen Sie die Gültigkeit der Zertifikatskette.
 
 ## Nächste Schritte {#next-steps}
 
-Herzlichen Glückwunsch! Sie verfügen jetzt über ein funktionierendes SSL-Zertifikat für Ihr Projekt. Dies ist häufig ein erster Schritt zum Einrichten eines benutzerdefinierten Domänennamens.
+Herzlichen Glückwunsch! Sie verfügen jetzt über ein funktionierendes SSL-Zertifikat für Ihr Projekt. Dieser Schritt ist oft der erste, der einen benutzerdefinierten Domänennamen eingerichtet hat.
 
-* Weitere Informationen zum Einrichten eines benutzerdefinierten Domänennamens finden Sie im Dokument [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) .
-* Informationen zum Aktualisieren und Verwalten Ihrer SSL-Zertifikate in Cloud Manager finden Sie im Dokument [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) .
+* Informationen zum Einrichten eines benutzerdefinierten Domänennamens finden Sie unter [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Informationen zum Aktualisieren und Verwalten Ihrer SSL-Zertifikate in Cloud Manager finden Sie unter [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
