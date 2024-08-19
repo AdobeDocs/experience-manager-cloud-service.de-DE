@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
-ht-degree: 99%
+source-wordcount: '3455'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Vorteile der intelligenten Bildbearbeitung**
 
-Die intelligente Bildbearbeitung bietet eine bessere Leistung bei der Bildbereitstellung, da die Größe der Bilddatei anhand des verwendeten Client-Browsers, der Geräteanzeige und der Netzwerkbedingungen automatisch optimiert wird. Da Bilder einen Großteil der Seitenladezeit ausmachen, kann die Leistungssteigerung einen enormen Einfluss auf geschäftsbezogene KPIs haben, beispielsweise höhere Konversionsraten, längere Verweildauer auf der Site und niedrigere Website-Absprungraten.
+Die intelligente Bildbearbeitung bietet eine bessere Leistung bei der Bildbereitstellung, indem die Größe der Bilddatei anhand des verwendeten Client-Browsers, der Geräteanzeige und der Netzwerkbedingungen automatisch optimiert wird. Da Bilder einen Großteil der Seitenladezeit ausmachen, kann die Leistungssteigerung einen enormen Einfluss auf geschäftsbezogene KPIs haben, beispielsweise höhere Konversionsraten, längere Verweildauer auf der Site und niedrigere Website-Absprungraten.
 
 Die Hauptvorteile der neuen intelligenten Bildbearbeitung sind:
 
@@ -73,7 +73,7 @@ Die Hauptvorteile der neuen intelligenten Bildbearbeitung sind:
 * [Gerätepixelverhältnis](#dpr)
 * [Netzwerkbandbreite](#bandwidth)
 
-### Über die Browser-Formatkonvertierung {#bfc}
+### Über die Browserformat-Konversion {#bfc}
 
 Durch Aktivieren der Browser-Formatkonvertierung durch Anhängen von `bfc=on` an die Bild-URL werden JPEG und PNG für verschiedene Browser automatisch in verlustbehaftetes AVIF, WebP, JPEGXR oder JPEG2000 konvertiert. Bei Browsern, die diese Formate nicht unterstützen, stellt die intelligente Bildbearbeitung weiterhin JPEG oder PNG bereit. Neben dem Format wird auch die Qualität des neuen Formats durch die intelligente Bildbearbeitung neu berechnet.
 
@@ -81,7 +81,7 @@ Die intelligente Bildbearbeitung kann auch durch Anhängen von `bfc=off` an die 
 
 Siehe auch [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=de) in der Bildbereitstellungs- und Rendering-API von Dynamic Media.
 
-### Informationen zur Optimierung des Geräte-Pixel-Verhältnisses {#dpr}
+### Informationen zur Optimierung des Gerätepixelverhältnisses {#dpr}
 
 Das Gerätepixelverhältnis (Device Pixel Ratio, DPR), auch als CSS-Pixelverhältnis bezeichnet, ist das Verhältnis zwischen den physischen und den logischen Pixeln eines Geräts. Insbesondere mit dem Aufkommen von Retina-Bildschirmen nimmt die Pixelauflösung moderner Mobilgeräte stetig zu.
 
@@ -162,7 +162,7 @@ Für Bilddateiformate, die Transparenz unterstützen, wie PNG, können Sie die i
 
 Die Bildbereitstellungs-Befehle `fmt` und `qlt` werden nicht unterstützt; alle anderen Befehle werden unterstützt.
 
-## Häufig gestellte Fragen zur intelligenten Bildbearbeitung{#smart-imaging-faq}
+## Häufig gestellte Fragen zu Smart Imaging{#smart-imaging-faq}
 
 +++**Ist die intelligente Bildbearbeitung mit Lizenzkosten verbunden?**
 
