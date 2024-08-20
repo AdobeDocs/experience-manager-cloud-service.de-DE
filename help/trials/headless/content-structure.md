@@ -23,8 +23,8 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="Starten der Modellkonsole"
->abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. Sehen Sie sich das Video an, um zu verstehen, warum dieser Schritt wichtig ist. <br><br>In diesem Lernmodul wird eine Reise-Website als Beispiel verwendet und Schritt für Schritt die Erstellung eines Modells für eine Reise erläutert.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
+>title="Modellkonsole starten"
+>abstract="Sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. Sehen Sie sich das Video an, um zu verstehen, warum dieser Schritt wichtig ist. <br><br>In diesem Lernmodul wird eine Reise-Website als Beispiel verwendet und Schritt für Schritt die Erstellung eines Modells für eine Reise erläutert.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ger" text="Einführungsvideo zu Inhaltsstrukturen"
 
 >[!CONTEXTUALHELP]
@@ -40,10 +40,10 @@ Für das Beispiel erstellen Sie ein Modell, das die Datenstruktur einer Reise da
 
 1. Klicken Sie in der rechten oberen Ecke des Bildschirms auf **Erstellen**, um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
 
-1. Der Modellerstellungs-Assistent führt Sie durch die Erstellung Ihres Modells. Geben Sie die erforderlichen Informationen an.
+1. Der Assistent Modell erstellen führt Sie durch die Erstellung Ihres Modells. Geben Sie die erforderlichen Informationen an.
 
-   * **Modelltitel** – Dies ist eine kurze Bezeichnung des Modells und enthält normalerweise den Zweck des Modells. Sie können das neue Modell `Adventure` nennen.
-   * **Modell aktivieren**: Diese Option ist standardmäßig aktiviert. Es muss aktiviert sein, damit auf diesem Modell basierende Inhaltsfragmente erstellt werden können.
+   * **Modell-Titel** – Dies ist eine kurze Bezeichnung des Modells und enthält normalerweise den Zweck des Modells. Sie können das neue Modell `Adventure` nennen.
+   * **Modell aktivieren**: Diese Option ist standardmäßig aktiviert. Sie muss aktiviert sein, damit auf diesem Modell basierende Inhaltsfragmente erstellt werden können.
 
 1. Nachdem die Pflichtfelder ausgefüllt wurden, klicken Sie oben rechts auf **Erstellen**, um das Modell zu erstellen.
 
@@ -82,7 +82,7 @@ Sie haben bereits ein Feld für den Titel des Abenteuers. Jetzt müssen Sie Feld
 
 >[!TIP]
 >
->Das **Abenteuer**-Modell basiert auf der WKND-Beispiel-Site für AEM. Sie können [die WKND-Site hier besuchen](https://wknd.site/us/en/adventures/yosemite-backpacking.html), um Inhalte anzuzeigen, die das Modell **Abenteuer** verwenden.
+>Das Modell **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können [die WKND-Site hier besuchen](https://wknd.site/us/en/adventures/yosemite-backpacking.html), um Inhalte anzuzeigen, die das Modell **Abenteuer** verwenden.
 
 Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen. Der einzige Unterschied besteht in den Eigenschaften, die Sie festlegen müssen.
 
@@ -91,12 +91,12 @@ Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen.
    * **Rendern als:** **Textbereich**: Wenn Sie ein Abenteuer erstellen, wird in diesem Feld eine kurze Beschreibung der Reise gespeichert.
    * **Feldbezeichnung:** `Description`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
 
-1. Fügen Sie ein Feld hinzu, damit Sie den Preis des Abenteuers zu speichern, indem Sie ein **einzeiliges Textfeld** per Drag-and-Drop hinzufügen und die folgenden Eigenschaften eingeben:
+1. Fügen Sie ein Feld hinzu, um den Preis des Abenteuers zu speichern, indem Sie ein **einzeiliges Textfeld** per Drag-and-Drop hinzufügen und die folgenden Eigenschaften eingeben:
 
    * **Rendern als:** **Textfeld**: Wenn Sie ein Abenteuer erstellen, wird in diesem Feld der Preis der Reise gespeichert.
    * **Feldbezeichnung:** `Price`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
 
-1. Fügen Sie ein Feld hinzu, um ein Bild zu speichern, das die Reise darstellt. Bilder in AEM werden als ein weiterer Inhaltstyp namens **Assets** gespeichert. Um ein Feld für sie zu erstellen, erstellen Sie per Drag-and-Drop ein **Inhaltsreferenz**-Feld, das auf das Asset des Bildes verweist.
+1. Fügen Sie ein Feld hinzu, um ein Bild zu speichern, das die Reise darstellt. Bilder in AEM werden als ein weiterer Inhaltstyp namens **Assets** gespeichert. Um ein Feld für sie zu erstellen, erstellen Sie per Drag-and-Drop ein Feld **Inhaltsreferenz**, das auf das Asset des Bildes verweist.
 
    * **Rendern als:** **Inhaltsreferenz**: Wenn Sie ein Abenteuer erstellen, verweist dieses Feld auf das Bild-Asset, das diese Reise darstellt.
    * **Feldbezeichnung:** `Image`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
