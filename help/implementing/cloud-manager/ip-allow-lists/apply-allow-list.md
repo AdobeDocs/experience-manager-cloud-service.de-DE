@@ -1,42 +1,49 @@
 ---
-title: Anwenden und Aufheben der Anwendung von IP-Zulassungslisten
-description: Erfahren Sie, wie Sie IP-Zulassungslisten auf Umgebungen anwenden und wie Sie deren Anwendung wieder aufheben.
+title: Anwenden und Anwenden von IP-Zulassungslisten
+description: Erfahren Sie, wie Sie IP-Zulassungslisten auf Cloud Manager-Umgebungen anwenden und deren Anwendung aufheben.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 22%
 
 ---
 
 
 # Anwenden und Aufheben der Anwendung von IP-Zulassungslisten {#apply-allow-list}
 
-Beim Anwenden einer IP-Zulassungsliste sind alle in der Listendefinition enthaltenen IP-Bereiche mit einem Authoring- oder Publishing-Service in einer Umgebung verknüpft. Das Aufheben der Anwendung einer Liste ist das Gegenteil zu diesem Prozess.
+Beim Anwenden von IP-Zulassungslisten werden alle in der Listendefinition enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Das Aufheben der Anwendung einer Liste ist das Gegenteil zu diesem Prozess.
 
 ## Anwenden von IP-Zulassungslisten {#applying}
 
-Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** können diese Schritte ausführen, um eine IP-Zulassungsliste anzuwenden.
+Ein Benutzer mit der Rolle **Business Owner** oder **Deployment Manager** kann die folgenden Schritte ausführen, um eine IP-Zulassungsliste anzuwenden.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+**So wenden Sie IP-Zulassungslisten an:**
 
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an.
+1. Wählen Sie die entsprechende Organisation aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
-1. Gehen Sie im Bildschirm **Umgebungen** zur Seite mit den Umgebungsdetails und dann zur Tabelle **IP-Zulassungsliste**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle, um die IP-Zulassungsliste und den Author- oder Publish-Service auszuwählen, auf den Sie sie anwenden möchten.
-   * Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie angewendet werden kann.
+1. Navigieren Sie auf dem Bildschirm **Umgebungen** zur Seite mit den spezifischen Umgebungsdetails.
+1. Navigieren Sie zur Tabelle **IP-Zulassungsliste** .
+1. Verwenden Sie die Eingabefelder oben in der Tabelle, damit Sie die IP-Zulassungsliste und den Autoren- oder Veröffentlichungsdienst auswählen können, auf die Sie sie anwenden möchten.
+Die IP-Zulassungsliste muss bereits in Cloud Manager vorhanden sein, um sie anzuwenden. Siehe [IP-Zulassungslisten hinzufügen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
 1. Klicken Sie auf **Anwenden** und bestätigen Sie Ihre Übermittlung.
 
-## Aufheben der Anwendung von Zulassungslisten {#un-applying}
+## IP-Zulassungslisten aufheben {#un-applying}
 
-Benutzende mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** können die folgenden Schritte ausführen, um die Anwendung einer IP-Zulassungsliste aufzuheben.
+Ein Benutzer mit der Rolle **Business Owner** oder **Deployment Manager** kann die folgenden Schritte ausführen, um die Anwendung einer IP-Zulassungsliste aufzuheben.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
-1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
-1. Gehen Sie im Bildschirm **Umgebungen** zur Seite mit den Umgebungsdetails und dann zur Tabelle **IP-Zulassungsliste**.
-1. Ermitteln Sie die Zeile der IP-Zulassungsliste, deren Anwendung Sie aufheben möchten.
-1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile.
-1. Wählen Sie die Option **Anwendung aufheben** aus und bestätigen Sie Ihre Übermittlung.
+**So heben Sie die Anwendung von IP-Zulassungslisten auf:**
+
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an.
+1. Wählen Sie die entsprechende Organisation aus.
+1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
+1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Navigieren Sie zur Seite mit den spezifischen Umgebungsdetails auf dem Bildschirm **Umgebungen** .1. Navigieren Sie zur Tabelle **IP-Zulassungsliste** .
+1. Identifizieren Sie die Zeile der IP-Zulassungsliste, deren Anwendung Sie aufheben möchten.
+1. Klicken Sie rechts neben der identifizierten Zeile auf die Suchschaltfläche und wählen Sie dann **Unapply** aus.
+1. Bestätigen Sie Ihre Übermittlung.
