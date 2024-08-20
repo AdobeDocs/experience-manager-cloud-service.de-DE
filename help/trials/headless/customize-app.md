@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
->title="Starten des Inhaltsfragment-Editors"
+>title="Inhaltsfragment-Editor starten"
 >abstract="Lassen Sie uns nun untersuchen, wie die Headless-Inhaltserstellung funktioniert. Ihre AEM Headless-Testversion beinhaltet auch eine integrierte React-Beispiel-App, anhand der Sie sehen können, wie einfach es ist, Inhalte unabhängig zu verwalten, ohne die Zeit der Entwicklerabteilung in Anspruch zu nehmen.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
 
 >[!CONTEXTUALHELP]
@@ -121,7 +121,7 @@ Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wi
 
 1. Der Editor wird für das neue Inhaltsfragment geöffnet.
 
-1. Benennen Sie das „Shoppable Momen“-Element im Feld **Text**, z. B. `Yellow shorts`.
+1. Benennen Sie das Element „Shoppable Momen“ im Feld **Text**, z. B. `Yellow shorts`.
 
 1. Legen Sie Werte für **X** und **Y** fest. Hier sollte dieser Aufruf im Bedienfeld überlagert werden. Änderungen am Fragment werden vom Editor automatisch gespeichert.
 

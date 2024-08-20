@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Starten des universellen Editors"
+>title="Universellen Editor starten"
 >abstract="In diesem Handbuch erfahren Sie mehr über den universellen Editor und wie dieser allen ermöglicht, alle Inhaltsaspekte in jeder Implementierung zu bearbeiten, was zu höherer Content Velocity führen kann.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
 
 >[!CONTEXTUALHELP]
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## Bearbeiten von Text im Kontext {#edit-text}
 
-Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegenüber der strukturierten Headless-Content-Bearbeitung sein, wie es sie im Inhaltsfragmenteditor in früheren Modulen gab.
+Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegenüber der strukturierten Headless-Content-Bearbeitung tent-Bearbeitung sein, wie es sie in den vorhergehenden Modulen im Inhaltsfragment-Editor gezeigt wurde.
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ Das Bild wird durch das von Ihnen ausgewählte Bild ersetzt.
 
 ## Erleben Sie Ihren Inhalt so wie Ihre Leserinnen und Leser {#emulators}
 
-Mit dem universellen Editor können Sie mit Ihren Inhalten in deren Kontext interagieren und sehen, wie die Inhalte auf den Geräten Ihrer Benutzenden bereitgestellt werden.
+Mit dem universellen Editor können Sie mit Ihren Inhalten im Kontext interagieren und sehen, wie die Inhalte auf den Geräten Ihrer Benutzenden bereitgestellt werden.
 
-1. Die Desktop-Version Ihres Inhalts wird standardmäßig vom Editor gerendert. Wählen Sie die Schaltfläche „Emulator“ oben rechts in der Symbolleiste des universellen Editors aus, um das Zielgerät zu ändern.
+1. Der Editor rendert standardmäßig die Desktop-Version des Inhalts. Wählen Sie die Schaltfläche „Emulator“ oben rechts in der Symbolleiste des universellen Editors aus, um das Zielgerät zu ändern.
 
    ![Menüelement „Emulator“](assets/do-not-localize/ue-emulator-1.png)
 

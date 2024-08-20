@@ -23,12 +23,12 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
->title="Starten der Inhaltsfragmentkonsole"
->abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos auf all Ihren Apps und Websites funktionieren, liefert hervorragende Customer Experiences. Dieses Modul führt Sie durch die Erstellung Ihres ersten Headless-Inhalts mithilfe der Inhaltsfragment-Konsole.<br><br>Klicken Sie unten auf die Schaltfläche, um dieses Modul in einer neuen Registerkarte zu starten. Folgen Sie danach diesem Handbuch."
+>title="Inhaltsfragmentkonsole starten"
+>abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos in all Ihren Apps und auf Ihren Websites funktionieren, liefert hervorragende Kundenerlebnisse. Dieses Modul führt Sie durch die Erstellung Ihres ersten Headless-Inhalts mithilfe der Inhaltsfragment-Konsole.<br><br>Klicken Sie unten auf die Schaltfläche, um dieses Modul in einer neuen Registerkarte zu starten. Folgen Sie danach diesem Handbuch."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Gut gemacht! In diesem Modul haben Sie erfahren, wie Sie auf der Grundlage des zuvor erstellten Modells Headless-Inhalte als Inhaltsfragment erstellen können. Sie wissen jetzt, wie Content Teams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
+>title="Gut gemacht! In diesem Modul haben Sie erfahren, wie Sie auf der Grundlage des zuvor erstellten Modells Headless-Inhalte als Inhaltsfragment erstellen können. Sie wissen jetzt, wie Content-Teams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
 >abstract=""
 
 ## Erstellen eines Inhaltsfragments {#create-fragment}
@@ -43,7 +43,7 @@ Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Bereitstell
 
 1. Das Dialogfeld **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
 
-1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte **Abenteuer**-Inhaltsfragmentmodell.
+1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte Inhaltsfragmentmodell **Abenteuer**.
 
 1. Fügen Sie `Tuscany` als beschreibenden **Titel** für das Inhaltsfragment hinzu. Dadurch wird Ihr Fragment in der Konsole identifiziert.
 
@@ -53,7 +53,7 @@ Die Inhaltsfragmentkonsole wird verwendet, um Headless-Inhalte über Bereitstell
 
 >[!TIP]
 >
->Abhängig von Ihren Browsereinstellungen wird die neue Browser-Registerkarte möglicherweise durch einen Popup-Blocker unterdrückt. Wenn sich Ihr neues Fragment nicht öffnet, nachdem Sie auf **Erstellen und öffnen** geklickt haben, überprüfen Sie bitte Ihre Browser-Einstellungen.
+>Abhängig von Ihren Browser-Einstellungen wird die neue Browser-Registerkarte möglicherweise durch einen Popup-Blocker unterdrückt. Wenn sich Ihr neues Fragment nicht öffnet, nachdem Sie auf **Erstellen und öffnen** geklickt haben, überprüfen Sie bitte Ihre Browser-Einstellungen.
 
 ## Hinzufügen von Inhalt zu Ihrem Inhaltsfragment {#add-content}
 

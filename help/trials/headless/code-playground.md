@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="Starten der CodePen-Beispiel-App"
+>title="CodePen-Beispiel-App starten"
 >abstract="Dieses Handbuch führt Sie durch die Abfrage von JSON-Daten aus Ihrer Testumgebung in eine einfache JavaScript-Web-Anwendung. Es werden die Inhaltsfragmente verwendet, die in den früheren Lernmodulen modelliert und erstellt worden sind. Lesen Sie bei Bedarf zuerst diese Handbücher, bevor Sie mit dem vorliegenden Handbuch beginnen."
 
 >[!CONTEXTUALHELP]
@@ -33,9 +33,9 @@ ht-degree: 100%
 
 ## CodePen {#codepen}
 
-CodePen ist ein Online-Code-Editor und Spielplatz für die Front-End-Webentwicklung. Dadurch können Sie HTML-, CSS- und JavaScript-Code in Ihrem Browser schreiben und die Ergebnisse Ihrer Arbeit fast sofort sehen. Sie können Ihre Arbeit auch speichern und mit anderen teilen. Adobe hat eine App in CodePen erstellt, mit der Sie JSON-Daten aus Ihrer Testumgebung mit dem [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js) abrufen können. Sie können diese App unverändert verwenden oder sie in Ihr eigenes CodePen-Konto einbinden, um sie weiter anzupassen.
+CodePen ist ein Online-Code-Editor und Spielplatz für die Front-end-Web-Entwicklung. Dadurch können Sie HTML-, CSS- und JavaScript-Code in Ihrem Browser schreiben und die Ergebnisse Ihrer Arbeit fast sofort sehen. Sie können Ihre Arbeit auch speichern und mit anderen teilen. Adobe hat eine App in CodePen erstellt, mit der Sie JSON-Daten aus Ihrer Testumgebung mit dem [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js) abrufen können. Sie können diese App unverändert verwenden oder sie in Ihr eigenes CodePen-Konto einbinden, um sie weiter anzupassen.
 
-Wenn Sie in der Testversion auf die Schaltfläche **CodePen-Beispielanwendung starten** klicken, gelangen Sie zur App in CodePen. Die App dient als minimales Beispiel für das Abrufen von JSON-Daten mit JavaScript. Die Beispielanwendung ist so konzipiert, dass alle zurückgegebenen JSON-Inhalte gerendert werden, unabhängig von der Struktur des zugrunde liegenden Inhaltsfragmentmodells. Standardmäßig ruft die App Daten aus einer persistierten `aem-demo-assets`-Abfrage ab, die in Ihrer Testumgebung enthalten ist. Es sollte eine JSON-Antwort ähnlich der folgenden angezeigt werden:
+Wenn Sie in der Testversion auf die Schaltfläche **CodePen-Beispielanwendung starten** klicken, gelangen Sie zur App in CodePen. Die App dient als minimales Beispiel für das Abrufen von JSON-Daten mit JavaScript. Die Beispiel-App ist so konzipiert, dass alle zurückgegebenen JSON-Inhalte gerendert werden, unabhängig von der Struktur des zugrunde liegenden Inhaltsfragmentmodells. Standardmäßig ruft die App Daten aus einer persistierten `aem-demo-assets`-Abfrage ab, die in Ihrer Testumgebung enthalten ist. Es sollte eine JSON-Antwort ähnlich der folgenden angezeigt werden:
 
 ```json
 {
@@ -85,7 +85,7 @@ Schließlich wird die Funktion `fetchJsonFromGraphQL()` verwendet, um die Abrufa
 
 In Zeile 25 geben Sie an, aus welcher persistierten GraphQL-Abfrage die App Daten abrufen soll. Der Name der persistierten Abfrage ist eine Kombination aus dem Namen des Endpunkts (d. h. `your-project` oder `aem-demo-assets`), gefolgt von einem Schrägstrich und dem Namen der Abfrage. Wenn Sie die früheren Modulanweisungen genau befolgt haben, befindet sich die von Ihnen erstellte persistierte Abfrage im Endpunkt `your-project`.
 
-1. Aktualisieren Sie die Variable `persistedQueryName` zur Verwendung der persistierten Abfrage, die Sie im vorherigen Modul erstellt haben. Wenn Sie dem Benennungsvorschlag gefolgt wären, hätten Sie eine persistierte Abfrage mit dem Namen `adventure-list` im Endpunkt `your-project` erstellt und die Variable `persistedQueryName` auf `your-project/adventure-list` gesetzt:
+1. Aktualisieren Sie die Variable `persistedQueryName` zur Verwendung der persistierten Abfrage, die Sie im vorherigen Modul erstellt haben. Wenn Sie dem Benennungsvorschlag gefolgt sind, haben Sie eine persistierte Abfrage mit dem Namen `adventure-list` im Endpunkt `your-project` erstellt und die Variable `persistedQueryName` auf `your-project/adventure-list` gesetzt:
 
    ```javascript
    //
@@ -96,7 +96,7 @@ In Zeile 25 geben Sie an, aus welcher persistierten GraphQL-Abfrage die App Date
 
 1. Sobald diese Änderung vorgenommen wurde, sollte die App automatisch aktualisiert werden und die rohe JSON-Antwort aus Ihrer persistierten Abfrage in den `#output`-Div drucken. Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die Konsole auf weitere Details. Kontaktieren Sie uns [per E-Mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request), wenn Sie noch Probleme mit diesem Schritt haben.
 
-1. Enthält dieses JSON die genauen Eigenschaften, die Ihre App benötigt? Falls nicht, gehen Sie zurück zum Lernhandbuch [Extrahieren von Inhalten mit der GraphQL-API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql), um Änderungen vorzunehmen. Vergessen Sie nicht, Ihre Abfrage zu speichern und zu veröffentlichen, sobald Sie damit fertig sind.
+1. Enthält dieses JSON die genauen Eigenschaften, die Ihre App benötigt? Falls nicht, gehen Sie zurück zum Lernhandbuch [Extrahieren von Inhalten mit dem GraphQL-API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql), um Änderungen vorzunehmen. Vergessen Sie nicht, Ihre Abfrage zu speichern und zu veröffentlichen, sobald Sie damit fertig sind.
 
 ## Änderung von JSON-Rendering {#change-rendering}
 
@@ -112,7 +112,7 @@ Das JSON wird als solches in ein `pre`-Tag gerendert, was nicht sehr kreativ ist
    resultToDom(queryResult);
    ```
 
-1. Diese Funktion rendert auch alle Bilder, die in der JSON-Antwort als `img`-Tag enthalten sind. Wenn die von Ihnen erstellten **Abenteuer**-Inhaltsfragmente keine Bilder enthalten, können Sie versuchen, die persistierte Abfrage `aem-demo-assets/adventures-all` zu verwenden, indem Sie die Zeile 25 ändern:
+1. Diese Funktion rendert auch alle Bilder, die in der JSON-Antwort als `img`-Tag enthalten sind. Wenn die von Ihnen erstellten Inhaltsfragmente **Abenteuer** keine Bilder enthalten, können Sie versuchen, die persistierte Abfrage `aem-demo-assets/adventures-all` zu verwenden, indem Sie die Zeile 25 ändern:
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
