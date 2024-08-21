@@ -4,7 +4,7 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 100%
@@ -239,7 +239,7 @@ Sie können eine Vorschau anzeigen, um das Layout und die Formatierung der Start
 1. Navigieren Sie zu **[!UICONTROL Startseite für erste Suche anpassen]** und klicken Sie auf **[!UICONTROL Vorschau]**. Betätigen Sie die Schaltfläche **[!UICONTROL Dunkles Thema]**, um die Startseite mit dunklem oder hellem Thema als Vorschau anzuzeigen.
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um den Vorschau-Bildschirm zu schließen. 
 
-   ![Vorschau der Startseite für die erste Suche](assets/search-first-preview.gif)
+   ![Vorschau der Startseite für die erste Suche](/help/assets/assets/search-first-preview.gif)
 
 ## Kontextsuche {#contextual-search}
 
@@ -255,7 +255,7 @@ So greifen Sie auf die Kontextsuche in Experience Manager Assets zu:
 
 1. Definieren Sie im Textfeld „Suchen“ das Text-Prompt und klicken Sie auf **[!UICONTROL Kontextsuche]**.
 
-   ![Text-Prompt für die Kontextsuche](assets/contextual-search-text-prompt.png)
+   ![Text-Prompt für die Kontextsuche](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] zeigt die Suchergebnisse an.
 
