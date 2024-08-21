@@ -4,7 +4,7 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
+source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 81%
@@ -96,8 +96,7 @@ Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für die
 * ASSETS-40875 - Die AssetDeleteHandler-Klasse überwacht Asset-Löschereignisse und führt spezifische Aktionen basierend auf dem Typ des Löschereignisses durch (PRE_DELETE oder POST_DELETE). In bestimmten Szenarien verursacht der Ereignistyp POST_DELETE eine NullPointerException.
 * FORMS-14340 - Fehler bei der Instanziierung von FormsAndDocumentOmniSearchHandler und CloudStorageSubmitActionInserter. Dies sind harmlose Protokollanweisungen.
 * FORMS-15818 - Komponentendeskriptoreintrag &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; nicht gefunden Anweisungen in Serverprotokollen. Dies sind harmlose Protokollanweisungen.
-* 
-   * SITES-23662 - Trigger, die eine Veröffentlichung vornehmen, können nicht aus JCR-Protokollanweisungen in Serverprotokollen extrahiert werden. Dies ist für eine Funktion in der Entwicklung, die zeitweise und harmlos Fehler &quot;Eine gültige Benutzer-ID kann im Batch der OSGi-Ereignisse nicht gefunden werden&quot;im Protokoll verursachen kann.
+* SITES-23662 - Trigger, die eine Veröffentlichung vornehmen, können nicht aus JCR-Protokollanweisungen in Serverprotokollen extrahiert werden. Dies ist für eine Funktion in der Entwicklung, die zeitweise und harmlos Fehler &quot;Eine gültige Benutzer-ID kann im Batch der OSGi-Ereignisse nicht gefunden werden&quot;im Protokoll verursachen kann.
 
 ### Änderungshinweis {#change-notice-17465}
 
