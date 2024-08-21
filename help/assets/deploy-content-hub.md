@@ -2,13 +2,13 @@
 title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren und Benutzern mit unterschiedlichen Berechtigungstypen Zugriff gewähren (Assets hochladen, Adobe Expreß-Benutzer) und wie Sie Benutzern Administratorberechtigungen gewähren.
 role: Admin
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
+source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1351'
 ht-degree: 3%
 
 ---
-
 
 # Bereitstellen von Content Hub {#deploy-content-hub}
 
@@ -64,15 +64,23 @@ Wenn Sie neu bei Experience Manager Assets sind, klicken Sie auf **[!UICONTROL P
 
 ### Content Hub-Instanz und -Produktprofil auf Admin Console{#content-hub-instance-product-profile}
 
-Nach der [Aktivierung von Content Hub für Assets as a Cloud Service mithilfe von Cloud Manager](#enable-content-hub) wird in AEM Assets as a Cloud Service eine neue Instanz mit dem Suffix `contenthub` erstellt:
+Nach der [Aktivierung von Content Hub für Assets as a Cloud Service mithilfe von Cloud Manager](#enable-content-hub) wird in AEM Assets as a Cloud Service eine neue Instanz mit dem Suffix `delivery` erstellt:
 
 ![Neue Instanz für Content Hub](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>Wenn Sie Content Hub vor dem 14. August 2024 bereitgestellt haben, wird die neue Instanz mit `contenthub` als Suffix erstellt.
 
 Beachten Sie, dass der Instanzname für Content Hub nicht `author` oder `publish` enthält.
 
 Klicken Sie auf den Instanznamen, um das Content Hub-Produktprofil anzuzeigen.
 
 ![Content Hub-Produktprofil](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>Wenn Sie Content Hub vor dem 14. August 2024 bereitgestellt haben, wird für das Content Hub-Produktprofil nach `Limited Users` anstelle von `delivery` `contenthub` angegeben.
 
 ## Schritt 2: Integrierter Content Hub-Administrator {#onboard-content-hub-administrator}
 
@@ -192,6 +200,3 @@ So konfigurieren Sie Experience Manager Assets-Benutzer:
    >[!NOTE]
    >
    > Sie müssen nicht zum [Content Hub-Produktprofil](#onboard-content-hub-users) für Experience Manager Assets-Benutzer hinzugefügt werden.
-
-
-
