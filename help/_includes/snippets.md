@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
+source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 95%
+source-wordcount: '818'
+ht-degree: 78%
 
 ---
 # Snippets {#snippets}
@@ -129,8 +129,14 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## IP-Zulassungslisten und Front-End-Pipelines {#allowlist-frontend-pipeline}
+## IP-Zulassungsliste- und Front-End-Pipelines von Cloud Manager {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Fügen Sie die wichtige Anmerkung hier hinzu.
+>Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste vorab zu Cloud Manager hinzugefügt wird.
+>Fügen Sie bei Bedarf die IP-Zulassungsliste [ hinzu, indem Sie den unten stehenden Adressblock kopieren. ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Baustein in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie **Enter**. Speichern Sie die Liste.
+>Um zu vermeiden, dass die Ausführung der Frontend-Pipeline gestört wird, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
+>
+>**IP-Zulassungsliste von Cloud Manager**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
