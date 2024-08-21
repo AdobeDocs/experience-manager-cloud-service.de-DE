@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 98%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # Snippets {#snippets}
@@ -80,7 +80,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
   </tr>
   <tr>
     <td>Optionen der Dropdown-Liste festlegen </td>
-    <td>Die Optionen der Dropdown-Liste werden mithilfe der Eigenschaft <b>Optionen festlegen von</b> des Regeleditors festgelegt.</td>
+    <td>Die Optionen der Dropdown-Liste werden mit der Eigenschaft <b>Optionen des Regeleditors auf </b> festgelegt.</td>
     <td>Die Dropdown-Optionen werden mithilfe der benutzerdefinierten Funktionen festgelegt. 
    </td>
    </tr>
@@ -92,7 +92,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    </td>
    </tr>
       <tr>
-    <td>Feld/Bedienfeld/Formularregel in „Dann“ validieren/zurücksetzen </td>
+    <td>Feld/Bedienfeld/Formularregel in "Dann"validieren/zurücksetzen </td>
     <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen nur Formulare als Objekte im Regeleditor. 
    </td>
     <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen Formulare/Bedienfelde/Felder als Objekte im Regeleditor. 
@@ -100,7 +100,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    </tr>
    <tr>
     <td>ES10-Unterstützung </td>
-    <td>ES10 wird noch nicht unterstützt. Es unterstützt nur die Funktionen von ES5 JavaScript. </td>
+    <td>ES10 wird noch nicht unterstützt. Es werden nur die ES5-JavaScript-Funktionen unterstützt. </td>
     <td>Unterstützung für moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen. 
    </td>
    </tr>
@@ -127,3 +127,10 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
 * [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
 * [Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## IP-Zulassungslisten und Front-End-Pipelines {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>Fügen Sie die wichtige Anmerkung hier hinzu.
