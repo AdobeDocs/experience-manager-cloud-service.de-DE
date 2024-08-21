@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Version 2024.08.13 des univ
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: aad4d0353fb5e2eacb518b72e935def931d0798a
+source-git-commit: c66621eb336b8e6eb5ceb1056c089c190fcd1c34
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -22,14 +22,13 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 13.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Benutzerdefinierte Datentypen**: Ordnen Sie den Editor Ihren individuellen Datenanforderungen zu und erstellen Sie benutzerdefinierte Felder im Eigenschaftenbereich.
+* **Benutzerdefinierte Datentypen**: Ordnen Sie den Editor Ihren individuellen Datenanforderungen zu, indem Sie [benutzerdefinierte Felder im Eigenschaftenbereich erstellen.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
    * Unabhängig davon, ob Sie eine benutzerdefinierte Produktauswahl für Commerce-Anwendungsfälle entwickeln oder eine Dropdown-Liste mit Werten aus Ihren Backends ausfüllen, bietet diese Funktion Ihnen die nötige Kontrolle über die Daten, die Autoren zum Erstellen von Inhalten verwenden.
 * **Container-übergreifendes Ziehen und Ablegen**: Nutzen Sie mehr Flexibilität bei der Layout-Komposition, indem Sie Komponenten per Drag &amp; Drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) im Bereich [Inhaltsstruktur ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) über verschiedene Container verschieben können.[
 * **Optimierte GitHub-Integration**: Das Caching für GitHub-Antworten wurde eingeführt, was den Abruf von Tags und die `universal-editor-cors-library` erheblich beschleunigt und so zu einem schnelleren und reibungsloseren Benutzererlebnis führt.
-* **Managed Services RPM Package**: Adobe bietet jetzt ein RPM-Paket, um die Bereitstellung und Verwaltung des Universal Editor Service zu optimieren, die Wartung zu vereinfachen und den Betriebsaufwand für verwaltete Dienste zu reduzieren.
-* **Konfigurierbare Validierung des IMS-Tokens**: Um die Flexibilität bei der Tokenverwaltung zu erhöhen, ist die Validierung des IMS-Tokens jetzt optional.
+* **Konfigurierbare Validierung des IMS-Tokens**: Um die Flexibilität bei der Tokenverwaltung zu erhöhen, ist die Validierung des IMS-Tokens jetzt optional.](/help/implementing/universal-editor/local-dev.md#setting-up-service)[
    * Mit dieser Konfigurationsoption können Sie die Validierung nach Bedarf deaktivieren und so Ihre Cloud-Gateway-Setups vereinfachen.
-* **Splunk-Integration**: Die Splunk-Protokollierung wurde in den [Universal Editor-Dienst für die lokale Entwicklung integriert und ](/help/implementing/universal-editor/local-dev.md) verbessert die Überwachung und Diagnose.
+* **Splunk-Integration**: Die Splunk-Protokollierung wurde in den [Universal Editor-Dienst für die lokale Entwicklung integriert und ](/help/implementing/universal-editor/local-dev.md#setting-up-service) verbessert die Überwachung und Diagnose.
    * Diese Integration stellt eine effiziente Protokollverfolgung, reibungslosere Vorgänge und eine schnellere Fehlerbehebung sicher.
 
 ## Fehlerbehebungen {#bug-fixes}
