@@ -4,9 +4,9 @@ description: Rufen Sie Daten von einem adaptiven Formular oder einem AEM-Workflo
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '542'
 ht-degree: 100%
 
 ---
@@ -59,6 +59,10 @@ Lesen Sie folgende Informationen für die ersten Schritte mit der Datenintegrati
 * [Arbeiten mit einem Formulardatenmodell (FDM)](work-with-form-data-model.md)
 * [Verwenden eines Formulardatenmodells (FDM)](using-form-data-model.md)
 
+<!--
+
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms] unterstützt keine relationalen Datenbanken.
+>[!UICONTROL Experience Manager Forms] does not support relational database.
+
+-->
