@@ -1,12 +1,12 @@
 ---
 title: Versionshinweise für Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service
-description: Erfahren Sie mehr über die Versionshinweise für Cloud Manager 2024.8.0 in AEM as a Cloud Service.
+description: Erfahren Sie mehr über die Versionshinweise für Cloud Manager 2024.7.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -21,40 +21,40 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2024.8.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2024.8.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, 14. August 2024 veröffentlicht. Die nächste Version wird am 9. September 2021 veröffentlicht.
+Die Version 2024.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. August 2024 veröffentlicht. Die nächste Version ist für den 14. September 2024 geplant.
 
 ## Neuerungen {#what-is-new}
 
-* [Zusätzliche Veröffentlichungsbereiche](/help/operations/additional-publish-regions.md) und eine SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (Service Level Agreement) von [99,99 % sind jetzt für AEM Forms as a Cloud Service verfügbar.
-   * Durch diese Verbesserung können Sie höhere SLAs mit erhöhter Betriebszeit und geringerer Latenz erzielen und so optimale Erlebnisse für global verteilte Benutzer sicherstellen.
+* [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) und eine SLA (Service Level Agreement) von [99,99 %](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) sind jetzt für AEM Forms as a Cloud Service verfügbar.
+   * Durch diese Verbesserung können Sie höhere SLAs mit erhöhter Betriebszeit und geringerer Latenz erzielen und so marktführende Erlebnisse für global verteilte Benutzende sicherstellen.
 
-## Frühzeitige Annahme {#early-adoption}
+## Early-Adopter-Programm {#early-adoption}
 
 Um einige bevorstehende Funktionen testen zu können, müssen Sie Teil des Early-Adopter-Programms von Adobe sein.
 
-### Edge Delivery Services-Unterstützung in Cloud Manager {#edge-delivery-services}
+### Unterstützung für Edge Delivery Services in Cloud Manager {#edge-delivery-services}
 
-Wenn Sie Edge Delivery Services als Teil von AEM Sites lizenziert haben, können Sie Ihre Site jetzt mit Edge Delivery Services direkt in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) einbinden und mithilfe eines geleiteten Self-Service-Erlebnisses live gehen.[
+Wenn Sie Edge Delivery Services als Teil von AEM Sites lizenziert haben, [können Sie nun Ihre Site mit Edge Delivery Services direkt in Cloud Manager integrieren](/help/implementing/cloud-manager/edge-delivery-services.md) und mit einem geführten Self-Service-Erlebnis die Live-Schaltung vornehmen.
 
-Diese Funktion bietet ein einheitliches Erlebnis für alle AEM Eigenschaften. Sie stellt die Konsistenz wichtiger Workflows wie Domain-Namensverwaltung, SSL-Zertifikatverwaltung und CDN-Zuordnungen sicher.
+Diese Funktion bietet ein einheitliches Erlebnis für alle AEM Eigenschaften. Sie stellt die Konsistenz wichtiger Workflows wie Domain-Namensverwaltung, SSL-Zertifikatsverwaltung und CDN-Zuordnungen sicher.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie eine E-Mail an `aemcs-cmedgedelsvs-program-adopter@adobe.com` aus der E-Mail-Adresse, die Ihrer Adobe ID zugeordnet ist.
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-cmedgedelsvs-program-adopter@adobe.com`.
 
-### DV-Zertifikate (Domain Validated)
+### Zertifikate mit Domain-Validierung (DV)
 
-Mit Cloud Manager können Sie jetzt [Self-Service-SSL-Zertifikate für die validierte Domain (DV) generieren und verwalten](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). Diese Funktion bietet Ihnen die schnellste, einfachste und kostengünstigste Lösung, um eine sichere Website für Ihr Online-Geschäft zu erstellen.
+Mit Cloud Manager können Sie jetzt [im Self-Service SSL-Zertifikate mit Domain-Validierung (DV) erstellen und verwalten](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). Diese Funktion bietet die schnellste, einfachste und kostengünstigste Lösung, um eine sichere Website für Ihr Online-Business zu erstellen.
 
-Wenn Sie diese neue Funktion testen und Feedback geben möchten, senden Sie eine E-Mail an `Grp-aemcs-dv-dert-adopter@adobe.com`, indem Sie die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse verwenden.
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `Grp-aemcs-dv-dert-adopter@adobe.com`.
 
 ### Experience Audit-Dashboard {#experience-audit-dashboard}
 
 [Das Experience Audit-Dashboard von Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) enthält eine Trend-Ansicht Ihrer Seitenleistungsbewertungen sowie Einblicke und Empfehlungen, die Sie verwenden können, um Verbesserungen vorzunehmen. Experience Audit ist ein Schritt in der Produktions-Pipeline von Cloud Manager.
 
-Das Dashboard verwendet Google Lighthouse, ein automatisiertes Open-Source-Tool zur Verbesserung der Qualität Ihrer Web-Anwendungen. Sie können sie verwenden, um jede Webseite zu prüfen, ob öffentlich oder authentifizierungspflichtig. Es bietet Bewertungen der Leistung, Barrierefreiheit, progressiven Web-Apps, SEO und mehr.
+Das Dashboard verwendet Google Lighthouse, ein automatisiertes Open-Source-Tool zur Verbesserung der Qualität Ihrer Web-Anwendungen. Sie können es zum Überprüfen jeder Web-Seite verwenden, egal ob öffentlich oder authentifizierungspflichtig. Es enthält Bewertungen zu Leistung, Barrierefreiheit, progressiven Web-Apps, SEO und mehr.
 
 Möchten Sie das neue Dashboard ausprobieren? Senden Sie zunächst eine E-Mail an `aem-lighthouse-pilot@adobe.com`, indem Sie die mit Ihrer Adobe ID verknüpfte E-Mail verwenden.
 
 ## Fehlerbehebung
 
-* Ein seltenes Problem wurde behoben, bei dem Pipeline-Schritte nach dem Löschen der Pipeline ausgeführt wurden.
-* In seltenen Fällen wurde ein Problem behoben, durch das in Konfigurations-Pipelines fälschlicherweise der Status &quot;`FAILED`&quot;angezeigt wurde.
+* Ein seltenes Problem wurde behoben, durch das Pipeline-Schritte nach dem Löschen der Pipeline ausgeführt wurden.
+* Es wurde ein Problem behoben, durch das in seltenen Fällen in Konfigurations-Pipelines fälschlicherweise der Status `FAILED` angezeigt wurde.

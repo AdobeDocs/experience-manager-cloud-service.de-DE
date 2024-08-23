@@ -5,9 +5,9 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1941'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -58,11 +58,11 @@ Sobald die Kundschaft als IMS-Organisation existiert, muss sie ihr System wie fo
 1. Der Systemadministrator bzw. die Systemadministratorin beansprucht eine Domain, um die Eigentümerschaft der Domain zu bestätigen (beispielsweise acme.com).
 1. Der Systemadministrator bzw. die Systemadministratorin richtet die Benutzerverzeichnisse ein.
 1. Die Systemadmins führen die IDP-Konfiguration in der Admin Console aus, um Single Sign-On einzurichten.
-1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt.
+1. Die AEM-Admins verwalten die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt.
 
-Die Adobe Identity Management-Grundlagen, einschließlich der IDP-Konfiguration, werden unter [Einrichten der Identität und Single Sign-On](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html) behandelt.
+Die Adobe Identity Management-Grundlagen, einschließlich der IDP-Konfiguration, werden unter [Einrichten von Identität und Single Sign-on](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html) behandelt.
 
-Die Verwendung von Enterprise-Administration und Admin Console wird unter [Willkommen im Administratorhandbuch für Unternehmen und Teams](https://helpx.adobe.com/de/enterprise/admin-guide.html) erläutert.
+Die Verwaltung von Unternehmen und die Verwendung der Admin Console werden unter [Willkommen beim Administratorhandbuch für Unternehmen und Teams](https://helpx.adobe.com/de/enterprise/admin-guide.html) erläutert.
 
 ### Onboarding von Benutzenden in der Admin Console {#onboarding-users-in-admin-console}
 
@@ -96,11 +96,11 @@ Das Tool zur Benutzersynchronisierung steht über das Adobe Github-Repository [a
 
 >[!NOTE]
 >
->Eine Vorabversion **2.4RC1** ist mit Unterstützung für die Erstellung dynamischer Gruppen unter [Benutzersynchronisierungs-Tool v2.4rc1 auf GitHub](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1) verfügbar.
+>Die Vorabversion **2.4RC1** ist mit Unterstützung für die Erstellung dynamischer Gruppen unter [Tool zur Benutzersynchronisierung v2.4rc1 auf GitHub](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1) verfügbar.
 
 Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der Admin Console dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
 
-Weitere Informationen zu den neuen Gruppenfunktionen finden Sie unter [Adobe User Sync Tool - Additional Group Options](https://adobe-apiplatform.github.io/user-sync.py/de/user-manual/advanced_configuration.html#additional-group-options).
+Weitere Informationen zu den neuen Gruppenfunktionen finden Sie unter [Tool zur Benutzersynchronisierung von Adobe – Weitere Gruppenoptionen](https://adobe-apiplatform.github.io/user-sync.py/de/user-manual/advanced_configuration.html#additional-group-options).
 
 **Dokumentation zur Benutzersynchronisierung**
 
@@ -108,17 +108,17 @@ Siehe:
 
 * [UST-Dokumentation](https://adobe-apiplatform.github.io/user-sync.py/de/)
 
-* Das Tool zur Benutzersynchronisierung muss mithilfe des Verfahrens von [Authentifizierung für API-Zugriff](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) als Adobe Developer-Client-UMAPI registriert werden
+* Das Tool zur Benutzersynchronisierung muss mit dem Verfahren der [Authentifizierung für API-Zugriff](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) als Adobe Developer-Client-UMAPI registriert werden.
 
-* die [Adobe Developer Console-Dokumentation](https://developer.adobe.com/developer-console/)
+* [Adobe Developer Console-Dokumentation](https://developer.adobe.com/developer-console/)
 
-* die vom Tool zur Benutzersynchronisierung verwendete [User Management-API](https://adobe-apiplatform.github.io/user-sync.py/de/)
+* [User Management-API, die vom Tool zur Benutzersynchronisierung verwendet wird](https://adobe-apiplatform.github.io/user-sync.py/de/)
 
 ## Konfiguration von Adobe Experience as a Cloud Service {#aem-configuration}
 
 >[!NOTE]
 >
->Die erforderliche AEM-IMS-Konfiguration wird automatisch konfiguriert, wenn die AEM-Umgebungen und -Instanzen bereitgestellt werden. Der Administrator kann sie jedoch gemäß seinen Anforderungen ändern, siehe [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Die erforderliche AEM-IMS-Konfiguration wird automatisch konfiguriert, wenn die AEM-Umgebungen und -Instanzen bereitgestellt werden. Admins können sie jedoch gemäß den eigenen Anforderungen ändern, siehe [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 Die erforderliche AEM-IMS-Konfiguration wird automatisch konfiguriert, wenn die AEM-Umgebungen und -Instanzen bereitgestellt werden. Kundenadministratoren können einen Teil der Konfiguration gemäß ihren Anforderungen ändern.
 
