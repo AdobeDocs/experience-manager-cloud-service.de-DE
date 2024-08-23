@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
@@ -26,7 +26,7 @@ Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in 
 
 >[!NOTE]
 >
->AEM-Site-Vorlagen sollten nicht mit [Seitenvorlagen verwechselt werden](/help/sites-cloud/authoring/sites-console/templates.md). Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
+>AEM-Site-Vorlagen sollten nicht mit [Seitenvorlagen verwechselt werden](/help/sites-cloud/authoring/page-editor/templates.md). Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
 >
 >AEM-Site-Vorlagen sollten nicht mit [AEM Site-Designs verwechselt werden](site-themes.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und beinhalten ein AEM-Site-Design, um die [schnelle Erstellung von Sites](create-site.md) zu ermöglichen.
 

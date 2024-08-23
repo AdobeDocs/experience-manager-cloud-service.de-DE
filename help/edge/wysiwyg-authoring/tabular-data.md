@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Tabellen zur Verwaltung von Tabellendaten fü
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ Nachdem Sie nun wissen, wie Sie eine Umleitungstabelle erstellen, können Sie ei
 * Metadaten
 * Kopfzeilen
 * Konfiguration
+* [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Führen Sie einfach die gleichen Schritte in den Abschnitten [Erstellen einer Tabelle](#spreadsheet) und [Aktualisieren von paths.json](#paths-json) aus, wählen Sie die entsprechende Vorlage aus und aktualisieren Sie die Datei `paths.json` entsprechend.
 
@@ -138,6 +139,7 @@ Stellen Sie für [Konfiguration](https://www.aem.live/docs/configuration), [Kopf
 * Konfiguration: `/.helix/config.json`
 * Kopfzeilen: `/.helix/headers.json`
 * Metadaten: `/metadata.json`
+* Taxonomie: Weitere Informationen finden Sie im Dokument [Verwalten von Taxonomiedaten](/help/edge/wysiwyg-authoring/taxonomy.md) .
 
 Darüber hinaus können Sie [Ihre eigene Kalkulationstabelle erstellen](#own-spreadsheet), mit beliebigen Spalten für Ihre eigene Verwendung.
 

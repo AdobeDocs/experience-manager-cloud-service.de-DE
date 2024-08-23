@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
@@ -158,7 +158,7 @@ Anschließend können Sie es zu Ihrer SPA hinzufügen und die Inhalte abrufen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage](/help/sites-cloud/authoring/sites-console/templates.md) hinzu.
+1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage](/help/sites-cloud/authoring/page-editor/templates.md) hinzu.
 
 Jetzt kann die Komponente `imagecard` direkt zum Container im AEM-Editor hinzugefügt werden.
 

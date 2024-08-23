@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 100%
@@ -223,9 +223,9 @@ Für ein effizientes responsives Layout muss die Inhaltsautorin bzw. der Inhalts
 
 Damit Autorinnen und Autoren weitere responsive Raster zu den Inhaltsseiten hinzufügen können, müssen Sie die Layout-Container-Komponente für Ihre Seite aktivieren. Möglich ist dies über folgende Optionen:
 
-* **Über die Autorenumgebung**: [Bearbeiten Sie Ihre Seitenvorlagen](/help/sites-cloud/authoring/sites-console/templates.md), um den Layout-Container für eine Seite zu aktivieren.
+* **Über die Autorenumgebung**: [Bearbeiten Sie Ihre Seitenvorlagen](/help/sites-cloud/authoring/page-editor/templates.md), um den Layout-Container für eine Seite zu aktivieren.
 * **Komponentendefinition**: Nutzen Sie beim Definieren der Komponente `allowedComponent` oder ein Static Include.
 
 ### Konfigurieren des Rasters des Layout-Containers {#configure-the-grid-of-the-layout-container}
 
-Sie können die Anzahl der für jede spezifische Instanz des Layout-Containers [verfügbaren Spalten konfigurieren, indem Sie Ihre Seitenvorlagen bearbeiten.](/help/sites-cloud/authoring/sites-console/templates.md)
+Sie können die Anzahl der für jede spezifische Instanz des Layout-Containers [verfügbaren Spalten konfigurieren, indem Sie Ihre Seitenvorlagen bearbeiten.](/help/sites-cloud/authoring/page-editor/templates.md)

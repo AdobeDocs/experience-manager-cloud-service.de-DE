@@ -4,7 +4,7 @@ description: Machen Sie sich mit den Konfigurationen von Adobe Experience Manage
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werde
 
 * [Context-Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/page-editor/templates.md)
 * verschiedene Cloud-Konfigurationen
 
 ### Beispiel {#administrator-example}
@@ -83,7 +83,7 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
 1. Markieren Sie die Art der Konfigurationen, die Sie zulassen möchten.
    * [Context-Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/page-editor/templates.md)
    * verschiedene Cloud-Konfigurationen
 1. Wählen Sie **Erstellen** aus.
 

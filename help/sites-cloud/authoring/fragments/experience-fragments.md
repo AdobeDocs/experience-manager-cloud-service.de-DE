@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 100%
@@ -95,7 +95,7 @@ Beim Erstellen von Ordnern können Sie:
 
   >[!NOTE]
   >
-  >Verwenden Sie den [Vorlagen-Editor](/help/sites-cloud/authoring/sites-console/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
+  >Verwenden Sie den [Vorlagen-Editor](/help/sites-cloud/authoring/page-editor/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
 
 Das WKND-Projekt strukturiert einige Experience Fragments nach `Contributors`. Die verwendete Struktur zeigt auch, wie andere Funktionen, wie Multi-Site-Management (einschließlich Sprachkopien), verwendet werden können.
 

@@ -4,7 +4,7 @@ description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 100%
@@ -223,9 +223,9 @@ In diesem Dialogfeld werden einzelne Felder definiert:
 
 ### Design-Dialogfelder {#design-dialogs}
 
-Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Vorlagenautoren bereit, um Design-Details für diese Komponente auf einer Seitenvorlage zu konfigurieren und bereitzustellen. Seitenvorlagen werden dann von den Inhaltsautoren verwendet, um Inhaltsseiten zu erstellen. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/sites-console/templates.md).
+Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Vorlagenautoren bereit, um Design-Details für diese Komponente auf einer Seitenvorlage zu konfigurieren und bereitzustellen. Seitenvorlagen werden dann von den Inhaltsautoren verwendet, um Inhaltsseiten zu erstellen. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/page-editor/templates.md).
 
-[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/sites-console/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Zum Beispiel verfügen die **Titel**- und **Bildkomponente** beide über Design-Dialoge, während die **Komponente für Freigabe in Social Media** keine besitzt.
+[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/page-editor/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Zum Beispiel verfügen die **Titel**- und **Bildkomponente** beide über Design-Dialoge, während die **Komponente für Freigabe in Social Media** keine besitzt.
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Nachdem Sie eine Komponente erstellt haben, müssen Sie sie aktivieren, um sie z
 
 Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt werden. Um eine Komponente für die Verwendung in einer Vorlage verfügbar zu machen, müssen Sie die Komponente in der Richtlinie des Layout-Containers der Vorlage aktivieren.
 
-Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/sites-console/templates.md).
+Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/page-editor/templates.md).
 
 ### Komponenten und die von ihnen erstellten Inhalte {#components-and-the-content-they-create}
 

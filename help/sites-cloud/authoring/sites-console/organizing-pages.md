@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
@@ -118,7 +118,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 
 ## Vorlagen {#templates}
 
-In AEM sind bestimmte Seitentypen in [Vorlagen](/help/sites-cloud/authoring/sites-console/templates.md) gespeichert, die als Basis für jede neue erstellte Seite verwendet werden.
+In AEM sind bestimmte Seitentypen in [Vorlagen](/help/sites-cloud/authoring/page-editor/templates.md) gespeichert, die als Basis für jede neue erstellte Seite verwendet werden.
 
 Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 

@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 100%
@@ -18,7 +18,7 @@ Sobald Ihre Seite in der [**Sites-Konsole** erstellt wurde](/help/sites-cloud/au
 
 >[!NOTE]
 >
->Beim Bearbeiten einer Seite in der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) öffnet die Konsole den entsprechenden Editor gemäß der [Vorlage](/help/sites-cloud/authoring/sites-console/templates.md) der Seite: entweder den in diesem Dokument beschriebenen Seiteneditor oder den [universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
+>Beim Bearbeiten einer Seite in der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) öffnet die Konsole den entsprechenden Editor gemäß der [Vorlage](/help/sites-cloud/authoring/page-editor/templates.md) der Seite: entweder den in diesem Dokument beschriebenen Seiteneditor oder den [universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Mit **Seiteninformationen** öffnen Sie ein Dropdown-Menü, das Details zur let
 * [Sperren einer Seite](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [Seite veröffentlichen](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Veröffentlichen einer Seite aufheben](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [Vorlage bearbeiten](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Vorlage bearbeiten](/help/sites-cloud/authoring/page-editor/templates.md)
 * [Als veröffentlicht anzeigen](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [In Admin anzeigen](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Hilfe](/help/sites-cloud/authoring/basic-handling.md#accessing-help)

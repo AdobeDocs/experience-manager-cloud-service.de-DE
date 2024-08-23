@@ -2,10 +2,13 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
-ht-degree: 99%
+source-wordcount: '4524'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +16,7 @@ ht-degree: 99%
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Diese wird als Grundlage für die Erstellung der neuen Seite verwendet. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können.
 
-Mit dem **Vorlagen-Editor** ist das Erstellen und Verwalten von Vorlagen keine reine Aufgabe für Entwickler. Auch ein Power User, der als **Vorlagenautor** bezeichnet wird, kann einbezogen werden. Entwickler müssen weiterhin die Umgebung einrichten, Clientbibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen vorhanden sind, hat der **Vorlagenautor** jedoch die Flexibilität, Vorlagen ohne Entwicklungsprojekt zu erstellen und zu konfigurieren.
+Mit dem **Vorlageneditor** ist das Erstellen und Verwalten von Vorlagen nicht mehr nur eine Aufgabe für Entwickler. Auch ein Power User, der als **Vorlagenautor** bezeichnet wird, kann einbezogen werden. Entwickler müssen weiterhin die Umgebung einrichten, Clientbibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen vorhanden sind, hat der **Vorlagenautor** jedoch die Flexibilität, Vorlagen ohne Entwicklungsprojekt zu erstellen und zu konfigurieren.
 
 Mit der **Vorlagenkonsole** können Vorlagenautorinnen bzw. -autoren:
 
@@ -78,7 +81,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
    * [Struktur](#editing-a-template-structure-template-author) – vordefinierter Inhalt, der auf Seiten, die mit der Vorlage erstellt werden, nicht geändert werden kann.
    * [Anfänglicher Inhalt](#editing-a-template-initial-content-author) – vordefinierter Inhalt, der auf den Seiten geändert werden kann, die mit der Vorlage erstellt werden.
    * [Layout](#editing-a-template-layout-template-author) – für eine Vielzahl von Geräten.
-   * [Stile](/help/sites-cloud/authoring/features/style-system.md) – zum Definieren der Stile für die Vorlage und ihre Komponenten.
+   * [Stile](/help/sites-cloud/authoring/page-editor/style-system.md) – zum Definieren der Stile für die Vorlage und ihre Komponenten.
 * [Aktivieren Sie die Vorlage](#enabling-a-template-template-author) zur Verwendung beim Erstellen einer Seite
 * [Lassen Sie die Vorlage zu](#allowing-a-template-author) für die erforderliche Seite oder die Verzweigung Ihrer Website
 * [Veröffentlichen Sie die Vorlage](#publishing-a-template-template-author), um sie in der Veröffentlichungsumgebung bereitzustellen
@@ -184,7 +187,7 @@ Eine Vorlage kann aktiviert oder deaktiviert werden, damit sie im Assistenten **
 
 1. Wählen Sie in der **Vorlagenkonsole** eine Vorlage aus.
 1. Wählen Sie in der Symbolleiste die Option **Aktivieren** oder **Deaktivieren** und bestätigen Sie Ihre Wahl im Bestätigungsdialogfeld.
-1. Nun können Sie Ihre Vorlage verwenden, wenn Sie [eine Seite erstellen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bzw. [die Vorlage bearbeiten](#editing-templates-template-authors), um sie an Ihre Anforderungen anzupassen.
+1. Nun können Sie Ihre Vorlage verwenden, wenn Sie [eine Seite erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), bzw. [die Vorlage bearbeiten](#editing-templates-template-authors), um sie an Ihre Anforderungen anzupassen.
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ Eine Vorlage kann aktiviert oder deaktiviert werden, damit sie im Assistenten **
 
 Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verfügbar gemacht werden.
 
-1. Öffnen Sie die [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) für die Stammseite der Verzweigung, in der die Vorlage verfügbar sein soll.
+1. Öffnen Sie die [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) für die Stammseite der Verzweigung, in der die Vorlage verfügbar sein soll.
 1. Öffnen Sie die Registerkarte **Erweitert**.
 1. Klicken Sie unter **Vorlageneinstellungen** auf **Feld hinzufügen**, um den Pfad/die Pfade zu Ihren Vorlagen anzugeben.
 
@@ -270,7 +273,7 @@ Wenn eine Komponente entsperrt wurde, können Sie den [anfänglichen Inhalt](#ed
 
 #### Layout {#template-layout}
 
-Mit dem [Layout](#editing-a-template-layout-template-author) können Sie das Vorlagen-Layout für die erforderlichen Geräteformate vordefinieren. Der Modus **Layout** für das Erstellen von Vorlagen bietet dieselben Funktionen wie der Modus [**Layout** für das Erstellen von Seiten](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+Mit dem [Layout](#editing-a-template-layout-template-author) können Sie das Vorlagen-Layout für die erforderlichen Geräteformate vordefinieren. Der Modus **Layout** für das Erstellen von Vorlagen bietet dieselben Funktionen wie der Modus [**Layout** für das Erstellen von Seiten](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Seitenrichtlinien {#template-page-policies}
 
@@ -278,9 +281,9 @@ Unter [Seitenrichtlinien](#page-policies) können Sie vordefinierte Seitenrichtl
 
 #### Stile {#template-styles}
 
-Das [Stilsystem](/help/sites-cloud/authoring/features/style-system.md) ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
+Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 
-Weitere Informationen finden Sie in der [Dokumentation für das Stilsystem](/help/sites-cloud/authoring/features/style-system.md).
+Weitere Informationen finden Sie in der [Dokumentation zum Stilsystem](/help/sites-cloud/authoring/page-editor/style-system.md).
 
 ### Bearbeiten einer Vorlage – Struktur – Vorlagenautor {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ Sobald sie hinzugefügt wurde, wird jede Komponente markiert mit:
 
 >[!NOTE]
 >
->Das Hinzufügen von Komponenten und Assets zu einer Vorlage ist zwar nicht dasselbe wie das [Erstellen von Seiten](/help/sites-cloud/authoring/fundamentals/editing-content.md), es gibt aber durchaus einige Ähnlichkeiten.
+>Das Hinzufügen von Komponenten und Assets zu einer Vorlage ist zwar nicht dasselbe wie das [Erstellen von Seiten](/help/sites-cloud/authoring/page-editor/edit-content.md), es gibt aber durchaus einige Ähnlichkeiten.
 
 #### Komponenten-Aktionen {#component-actions}
 
@@ -536,7 +539,7 @@ Obwohl der gesamte Inhalt, der im Modus **Struktur** erstellt wird, im Modus **A
 
 ### Bearbeiten einer Vorlage – Layout – Vorlagenautor {#editing-a-template-layout-template-author}
 
-Sie können das Vorlagen-Layout für verschiedene Geräte definieren. [Responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md) funktioniert für Vorlagen ebenso wie für die Seitenbearbeitung.
+Sie können das Vorlagen-Layout für verschiedene Geräte definieren. [Responsives Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) funktioniert für Vorlagen ebenso wie für die Seitenbearbeitung.
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ Mithilfe der Seiteneigenschaften können Sie die erforderlichen Client-seitigen 
 
 ### Bearbeiten einer Vorlage – Anfängliche Seiteneigenschaften – Autor {#editing-a-template-initial-page-properties-author}
 
-Mit der Option **Anfängliche Seiteneigenschaften** können Sie die anfänglichen [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) definieren, die bei der Erstellung einer neuen Seite gelten sollen.
+Mit der Option **Anfängliche Seiteneigenschaften** können Sie die anfänglichen [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) definieren, die bei der Erstellung einer neuen Seite gelten sollen.
 
 1. Wählen Sie im Vorlageneditor **Seiteninformationen** aus der Symbolleiste und anschließend **Anfängliche Seiteneigenschaften**, um das Dialogfeld zu öffnen.
 

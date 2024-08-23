@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 100%
@@ -50,4 +50,4 @@ Neben den WCM-Kernkomponenten können Sie auch [Kernkomponenten von adaptiven Fo
 
 ### Konfigurieren von Vorlagen {#configuring-templates}
 
-Wenn Ihre Seite auf der empfohlenen, modernen, bearbeitbaren Vorlage basiert, können Sie die [Vorlage bearbeiten](/help/sites-cloud/authoring/sites-console/templates.md), diese aktivieren/deaktivieren und Parameter für bestimmte Komponenten bearbeiten.
+Wenn Ihre Seite auf der empfohlenen, modernen, bearbeitbaren Vorlage basiert, können Sie die [Vorlage bearbeiten](/help/sites-cloud/authoring/page-editor/templates.md), diese aktivieren/deaktivieren und Parameter für bestimmte Komponenten bearbeiten.
