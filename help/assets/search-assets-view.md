@@ -4,7 +4,7 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
+source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 79%
@@ -149,7 +149,7 @@ So generieren Sie neue Assets mit [!DNL Adobe Firefly]:
 
    * Geben Sie einen Namen für die Datei in das Feld **Speichern unter** ein.
    * Wählen Sie einen Zielordner aus.
-   * Geben Sie Details wie Projekt- oder Kampagnenname, Suchbegriffe, Kanäle, Zeitraum und Region an.
+   * Geben Sie Details wie Projekt- oder Kampagnenname, Suchbegriffe, Kanäle, Zeitraum und Region ein.
 
    ![Integration mit Firefly](assets/save-generated-asset.png)
 
