@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 17465 {#release-17465}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 17465, die am Donnerstag, 14. August 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 17258.
+Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 17465, die am 14. August 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 17258.
 
 Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -45,7 +45,7 @@ Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für die
 * SITES-22813 – Content Fragments REST-API: Definieren von Min.-/Max.-Eigenschaften für Auflistungsfelder.
 * SITES-22031 – Content Fragments REST-API: Abrufen zulässiger Inhaltsfragmentmodelle für den Ordner eines Fragments.
 * SITES-17640 – Content Fragments REST-API: Validierung der Veröffentlichungsvorgänge für Inhaltsfragmente.
-* SITES-22677 - Content Fragments REST API: Rufen Sie eine flache Liste von nachkommenden Verweisen ab.
+* SITES-22677 – Content Fragments REST-API: Abrufen einer flachen Liste nachkommender Verweise.
 * SITES-22207 – Duplizierties Modell beim Erstellen von Inhaltsfragmenten.
 * SITES-23093 – Eventing: Hinzufügen von Tags zu Payloads bei Inhaltsfragmentmodell-Ereignissen.
 * SITES-23092 - Eventing: Hinzufügen von Tags zu Payloads für Inhaltsfragment-Ereignisse.
@@ -89,14 +89,14 @@ Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für die
 * SITES-22203 – Content Fragments REST-API: Ausrichten von Management-APIs, um auf dieselbe Situation zu reagieren.
 * SITES-21973 – Content Fragments REST-API: Dem Modell fehlt das eindeutige Attribut für Auflistungstypen.
 * SITES-20364 – Umleitungen von Typ 302 funktionieren nicht mit Selektor in der URL.
-* SITES-21198 - VersionPreviewServlet: Die Bereinigung wird gleichzeitig auf allen Clusterknoten ausgeführt, die Zusammenführungskonflikte verursachen und Commits blockieren.
+* SITES-21198 – VersionPreviewServlet: Die Bereinigung wird gleichzeitig in allen Cluster-Knoten ausgeführt, was Zusammenführungskonflikte verursacht und Commits blockiert.
 
 ### Bekannte Probleme {#known-issues-17465}
 
-* ASSETS-40875 - Die AssetDeleteHandler-Klasse überwacht Asset-Löschereignisse und führt spezifische Aktionen basierend auf dem Typ des Löschereignisses durch (PRE_DELETE oder POST_DELETE). In bestimmten Szenarien verursacht der Ereignistyp POST_DELETE eine NullPointerException.
-* FORMS-14340 - Fehler bei der Instanziierung von FormsAndDocumentOmniSearchHandler und CloudStorageSubmitActionInserter. Dies sind harmlose Protokollanweisungen.
-* FORMS-15818 - Komponentendeskriptoreintrag &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; nicht gefunden Anweisungen in Serverprotokollen. Dies sind harmlose Protokollanweisungen.
-* SITES-23662 - Trigger, die eine Veröffentlichung vornehmen, können nicht aus JCR-Protokollanweisungen in Serverprotokollen extrahiert werden. Dies ist für eine Funktion in der Entwicklung, die zeitweise und harmlos Fehler &quot;Eine gültige Benutzer-ID kann im Batch der OSGi-Ereignisse nicht gefunden werden&quot;im Protokoll verursachen kann.
+* ASSETS-40875 – Die AssetDeleteHandler-Klasse überwacht Asset-Löschereignisse und führt spezifische Aktionen basierend auf dem Typ des Löschereignisses durch (PRE_DELETE oder POST_DELETE). In bestimmten Szenarien verursacht der Ereignistyp POST_DELETE eine NullPointerException.
+* FORMS-14340 – Fehler bei der Instanziierung von FormsAndDocumentOmniSearchHandler und CloudStorageSubmitActionInserter. Dies sind harmlose Protokollanweisungen.
+* FORMS-15818 – Komponenten-Beschreibungseintrag „OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml“ Anweisungen in Server-Protokollen nicht gefunden. Dies sind harmlose Protokollanweisungen.
+* SITES-23662 – Benutzende, die eine Veröffentlichung auslösen, können nicht aus JCR-Protokollanweisungen in Server-Protokollen extrahiert werden. Dies ist für eine Funktion in der Entwicklung vorgesehen, die vorübergehende und harmlose Fehler „Eine gültige Benutzer-ID kann im Batch der OSGi-Ereignisse nicht gefunden werden“ im Protokoll verursachen kann.
 
 ### Änderungshinweis {#change-notice-17465}
 
@@ -104,13 +104,13 @@ Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für die
 
 ### Eingestellte Funktionen und APIs {#deprecated-17465}
 
-Bitte beachten Sie, dass wir gerade dabei sind, `com.day.cq.wcm.api` zu aktualisieren. Mit der aktuellen Version haben wir einige der Methoden und Klassen als `@Deprecated` markiert. Diese werden in zukünftigen Versionen entfernt. Daher sollten Sie erwägen, zu den vorgeschlagenen Alternativen zu wechseln, wenn Sie eine davon verwenden.
+Beachten Sie, dass wir gerade dabei sind, `com.day.cq.wcm.api` zu aktualisieren. Mit der aktuellen Version haben wir einige der Methoden und Klassen als `@Deprecated` markiert. Diese werden in zukünftigen Versionen entfernt. Daher sollten Sie erwägen, zu den vorgeschlagenen Alternativen zu wechseln, wenn Sie eine davon verwenden.
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
 ### Sicherheitskorrekturen {#security-17465}
 
-AEM as a Cloud Service widmet sich der Optimierung der Sicherheit und Leistung Ihrer Plattform. Dieses Maintenance Release behebt 7 identifizierte Schwachstellen und stärkt unser Engagement für einen robusten Systemschutz.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt sieben identifizierte Schwachstellen und bestärkt dadurch unser Engagement für einen robusten Systemschutz.
 
 ### Eingebettete Technologien {#embedded-tech-17465}
 
