@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Services wurde für optimale Leistung entwi
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ Die folgenden Diagramme zeigen den Prozess des Erstellens, Veröffentlichens und
 * [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
 * [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
 * [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
-* [Echtzeit-Benutzerüberwachung](https://www.aem.live/developer/rum#authentication)
+* [Überwachung der tatsächlichen Verwendung](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
