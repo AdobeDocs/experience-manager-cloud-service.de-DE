@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
+source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 87%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 100%
 
 ## Änderungen in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Mit AEM as a Cloud Service stellt Adobe von einem AEM-Instanz-zentrierten Modell auf eine Service-basierte Ansicht mit n-x AEM-Containern um, unterstützt von CI/CD-Pipelines in Cloud Manager. Anstatt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor der Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion verstoßen eindeutig gegen CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht speziell getestet werden, bevor sie in die Produktion aufgenommen werden.
+Mit AEM as a Cloud Service stellt Adobe von einem AEM-Instanz-zentrierten Modell auf eine Service-basierte Ansicht mit n-x AEM-Containern um, unterstützt von CI/CD-Pipelines in Cloud Manager. Anstatt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor der Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion verstoßen eindeutig gegen CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert, getestet und neu definiert werden, bevor sie in die Produktion aufgenommen werden.
 
 Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und früheren Versionen:
 
 1. Benutzende haben keinen Zugriff mehr auf den Index-Manager einer einzelnen AEM-Instanz, wenn sie die Indizierung debuggen, konfigurieren oder verwalten möchten. Er wird nur für lokale Entwicklungsumgebungen und On-Premise-Bereitstellungen verwendet.
 1. Benutzende ändern Indizes nicht in einer einzelnen AEM-Instanz und müssen sie sich keine Gedanken mehr über Konsistenzprüfungen oder Neuindizierungen machen.
 1. In der Regel werden Indexänderungen vor der Produktion eingeleitet, um Qualitäts-Gateways in den CI/CD-Pipelines von Cloud Manager nicht zu umgehen und geschäftliche KPIs in der Produktion nicht zu beeinträchtigen.
-1. Alle damit zusammenhängenden Metriken, einschließlich der Suchleistung in der Produktion, stehen Kundinnen und Kunden zur Laufzeit zur Verfügung, um eine ganzheitliche Ansicht der Themen „Suche“ und „Indizierung“ zu erhalten.
+1. Alle zugehörigen Metriken, einschließlich der Suchleistung in der Produktion, stehen Kunden zur Laufzeit zur Verfügung, um eine ganzheitliche Ansicht der Themen Suche und Indizierung bereitzustellen.
 1. Kundinnen und Kunden können entsprechend ihren Bedürfnissen Warnhinweise einrichten.
 1. SREs überwachen den Systemzustand rund um die Uhr, und Maßnahmen werden so früh wie möglich ergriffen.
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen an der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
@@ -71,11 +71,11 @@ Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 >
 >Wenn Sie einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Benennen Sie sie in `damAssetLucene-8-custom-1` (oder höher) um und fügen Sie Ihre Anpassungen in die XML-Datei ein. Dadurch wird sichergestellt, dass erforderliche Konfigurationen nicht versehentlich entfernt werden. Beispiel: der Knoten `tika` unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
 
-Bereiten Sie für Anpassungen eines OOTB-Indexes ein neues Paket vor, das die tatsächliche Indexdefinition enthält und diesem Namensmuster folgt:
+Für Anpassungen eines OOTB-Index erstellen Sie ein neues Paket, das die tatsächliche Indexdefinition enthält, die diesem Namensmuster folgt:
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
-Bereiten Sie für einen vollständig angepassten Index eine neues Indexdefinitionspaket vor, das die Indexdefinition enthält und diesem Namensmuster folgt:
+Für einen vollständig angepassten Index erstellen Sie ein neues Indexdefinitionspaket, das die Indexdefinition enthält, die diesem Namensmuster folgt:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -165,7 +165,7 @@ Dateiname: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom
 
 ## Projektkonfiguration
 
-Wir empfehlen dringend, Version >= `1.3.2` von Jackrabbit `filevault-package-maven-plugin` zu verwenden. Die Schritte zur Integration in Ihr Projekt sind wie folgt:
+Es wird dringend empfohlen, Version >= `1.3.2` des Jackrabbit `filevault-package-maven-plugin` zu verwenden. Die Schritte zur Integration in Ihr Projekt sind wie folgt:
 
 1. Aktualisieren der Version auf der obersten Ebene `pom.xml`:
 
@@ -212,7 +212,7 @@ Wir empfehlen dringend, Version >= `1.3.2` von Jackrabbit `filevault-package-m
    </plugin>
    ```
 
-3. In `ui.apps/pom.xml` und `ui.apps.structure/pom.xml` müssen die Optionen `allowIndexDefinitions` und `noIntermediateSaves` in `filevault-package-maven-plugin` aktiviert sein. Das Aktivieren von `allowIndexDefinitions` ermöglicht benutzerdefinierte Indexdefinitionen, und `noIntermediateSaves` stellt sicher, dass die Konfigurationen automatisch hinzugefügt werden.
+3. In `ui.apps/pom.xml` und `ui.apps.structure/pom.xml` ist es erforderlich, die Optionen `allowIndexDefinitions` und `noIntermediateSaves` in den `filevault-package-maven-plugin` zu aktivieren. Das Aktivieren von `allowIndexDefinitions` ermöglicht benutzerdefinierte Indexdefinitionen, und `noIntermediateSaves` stellt sicher, dass die Konfigurationen automatisch hinzugefügt werden.
 
    Dateinamen: `ui.apps/pom.xml` und `ui.apps.structure/pom.xml`
 
@@ -308,11 +308,22 @@ Nachdem Adobe einen vordefinierten Index wie „damAssetLucene“ oder „cqPage
 | /oak:index/cqPageLucene | Ja | Ja | Nein |
 | /oak:index/cqPageLucene-2 | Ja | Nein | Ja |
 
+Beachten Sie, dass Umgebungen möglicherweise auf verschiedenen AEM Versionen basieren. Beispiel: Die `dev` -Umgebung ist in Version `X+1`, während die Staging- und Prod-Version noch verfügbar sind `X` und darauf warten, auf die Veröffentlichung `X+1` aktualisiert zu werden, nachdem die erforderlichen Tests für `dev` durchgeführt wurden. Wenn Version `X+1` mit einer neueren Version eines Produktindex geliefert wird, der angepasst wurde und eine neue Anpassung dieses Index erforderlich ist, wird in der folgenden Tabelle erläutert, welche Versionen für Umgebungen basierend auf der AEM Version festgelegt werden müssen:
+
+| Umgebung (AEM Release-Version) | Produktindex-Version | Vorhandene benutzerdefinierte Indexversion | Neue benutzerspezifische Indexversion |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| Entwicklung (X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
+| Staging (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+| Prod (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+
+
 ### Aktuelle Einschränkungen {#current-limitations}
 
 Die Indexverwaltung wird derzeit nur für Indizes des Typs `lucene` unterstützt, wobei `compatVersion` auf `2` gesetzt ist. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Sie können Abfragen, die gegen den `damAssetLucene`-Index geschrieben werden, auf AEM as a Cloud Service tatsächlich für eine Elasticsearch-Version dieses Indexes ausführen. Dieser Unterschied ist für die Anwenderinnen und Anwender nicht sichtbar. Bestimmte Tools wie die `explain`-Funktion melden jedoch einen anderen Index. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie in der [Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
 
 Es werden nur integrierte Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
+
+Derzeit wird die Indizierung des Inhalts von `/oak:index` nicht unterstützt.
 
 Um eine optimale Betriebsleistung zu erzielen, sollten Indizes nicht zu groß sein. Die Gesamtgröße aller Indizes kann als Richtwert dienen. Wenn diese Größe um mehr als 100 % zunimmt, nachdem benutzerdefinierte Indizes hinzugefügt und Standardindizes in einer Entwicklungsumgebung angepasst wurden, sollten benutzerdefinierte Indexdefinitionen angepasst werden. AEM as a Cloud Service kann die Bereitstellung von Indizes verhindern, die die Systemstabilität und -leistung negativ beeinflussen würden.
 
@@ -350,30 +361,7 @@ Manchmal ist es erforderlich, eine Änderung in einer Indexdefinition rückgäng
 
 Nachfolgendes gilt nur für anwenderdefinierte Indizes. Produktindizes können nicht entfernt werden, da sie von AEM verwendet werden.
 
-Wenn ein Index in einer späteren Version der Anwendung entfernt werden soll, können Sie einen leeren Index (einen leeren Index, der nie verwendet wird und keine Daten enthält) mit einem neuen Namen definieren. Sie können ihn beispielsweise `/oak:index/acme.product-custom-3` nennen. Dadurch wird der Index `/oak:index/acme.product-custom-2` ersetzt. Nachdem das System `/oak:index/acme.product-custom-2` entfernt hat, kann auch der leere Index `/oak:index/acme.product-custom-3` entfernt werden. Beispiel für einen solchen leeren Index:
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-Wenn eine Anpassung eines vordefinierten Index nicht mehr erforderlich ist, müssen Sie die vordefinierte Indexdefinition kopieren. Wenn Sie beispielsweise `damAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8`-Index zurückwechseln möchten, müssen Sie einen `damAssetLucene-8-custom-4`-Index hinzufügen, der die Indexdefinition von `damAssetLucene-8` enthält.
+Ein benutzerdefinierter Index kann in einer späteren Version der Kundenanwendung entfernt werden, indem er aus dem Kunden-Repository entfernt wird. Ein Index, der aus dem Repository entfernt wird, wird nicht für Abfragen in AEM verwendet, obwohl er möglicherweise noch eine Weile in den Instanzen vorhanden ist. Es gibt einen Bereinigungsmechanismus, der regelmäßig ausgeführt wird, um ältere Versionen von Indizes aus den Instanzen zu bereinigen.
 
 ## Index- und Abfrageoptimierung {#index-query-optimizations}
 
