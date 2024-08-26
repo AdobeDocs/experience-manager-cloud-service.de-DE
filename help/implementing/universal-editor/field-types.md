@@ -4,9 +4,9 @@ description: Erfahren Sie anhand von Beispielen mehr über die Felder und Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
+source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 96%
 
 ---
@@ -99,6 +99,7 @@ Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern v
 | [Container](#container) | `container` |
 | [Inhaltsfragment](#content-fragment) | `aem-content-fragment` |
 | [Datum und Uhrzeit](#date-time) | `date-time` |
+| [Experience Fragment](#experience-fragment) | `aem-experience-fragment` |
 | [Mehrfachauswahl](#multiselect) | `multiselect` |
 | [Zahl](#number) | `number` |
 | [Optionsfeldgruppe](#radio-group) | `radio-group` |
