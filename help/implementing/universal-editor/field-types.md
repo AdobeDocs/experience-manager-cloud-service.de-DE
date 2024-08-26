@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -306,9 +306,9 @@ Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/si
 
 >[!NOTE]
 >
->Der universelle Editor [ validiert Inhaltsfragmentfelder anhand ihrer Modelle](/help/assets/content-fragments/content-fragments-models.md#validation) , wodurch Sie Datenintegrationsregeln wie Regex-Muster und Eindeutigkeitsbeschränkungen erzwingen können.
+>Der universelle Editor [validiert Inhaltsfragmentfelder anhand ihrer Modelle](/help/assets/content-fragments/content-fragments-models.md#validation), wodurch Sie Datenintegrationsregeln wie Regex-Muster und Eindeutigkeitsbeschränkungen erzwingen können.
 >
->Dadurch wird sichergestellt, dass Ihre Inhalte bestimmten Geschäftsanforderungen entsprechen, bevor sie veröffentlicht werden.
+>So wird sichergestellt, dass Ihre Inhalte bestimmten Geschäftsanforderungen entsprechen, bevor sie veröffentlicht werden.
 
 >[!BEGINTABS]
 

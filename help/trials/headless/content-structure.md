@@ -9,7 +9,7 @@ role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Sie haben bereits ein Feld für den Titel des Abenteuers. Jetzt müssen Sie Feld
 
 >[!TIP]
 >
->Das Modell **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können [die WKND-Site hier besuchen](https://wknd.site/us/en/adventures/yosemite-backpacking.html), um Inhalte anzuzeigen, die das Modell **Abenteuer** verwenden.
+>Das Modell **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können die WKND-Site [hier](https://wknd.site/us/en/adventures/yosemite-backpacking.html) besuchen, um Inhalte zu sehen, die das **Abenteuer**-Modell verwenden.
 
 Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen. Der einzige Unterschied besteht in den Eigenschaften, die Sie festlegen müssen.
 

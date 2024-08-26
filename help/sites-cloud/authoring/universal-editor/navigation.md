@@ -7,7 +7,7 @@ role: User
 source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1576'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `l` (den Buchstaben l), um die Adressleiste zu öffnen.
+>Verwenden Sie den Hotkey `l` (Buchstabe I), um die Adressleiste zu öffnen.
 
 >[!NOTE]
 >
@@ -185,11 +185,11 @@ Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie ger
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `o` (den Buchstaben o), um die App-Vorschau zu öffnen.
+>Verwenden Sie den Hotkey `o` (Buchstabe O), um die App-Vorschau zu öffnen.
 
 >[!TIP]
 >
->Die Vorschau-URL für Ihre App [ kann angepasst werden.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>Die Vorschau-URL für Ihre App [kann angepasst werden](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 #### Veröffentlichen {#publish}
 
@@ -201,13 +201,13 @@ Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am 
 >
 >Weitere Informationen zur Veröffentlichung mit dem universellen Editor finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md).
 
-#### Ellipse {#ellipsis}
+#### Auslassungspunkte {#ellipsis}
 
-Zusätzliche Standardoptionen sind über die Suchschaltfläche verfügbar.
+Zusätzliche Standardoptionen sind über die Schaltfläche mit den Auslassungspunkten verfügbar.
 
-![Schaltfläche mit Auslassungspunkten](assets/ellipsis.png)
+![Schaltfläche mit den Auslassungspunkten](assets/ellipsis.png)
 
-Beispielsweise ist über die Suchschaltfläche die Möglichkeit verfügbar, die Veröffentlichung einer Seite rückgängig zu machen (d. h. die Aktion der Schaltfläche [**Publish**](#publish) rückgängig zu machen).
+Beispielsweise ist über die Schaltfläche mit den Auslassungspunkten die Möglichkeit verfügbar, die Veröffentlichung einer Seite (d. h. die Aktion der Schaltfläche [**Veröffentlichung**](#publish)) rückgängig zu machen.
 
 #### Zusätzliche Schaltflächen {#additional-toolbar-buttons}
 
@@ -262,17 +262,17 @@ Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu dies
 
 ##### Im CF-Editor öffnen {#edit}
 
-Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche **Im CF-Editor öffnen** auswählen.
+Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche **Im CF-Editor öffnen** auswählen.
 
-![Symbol &quot;Im CF-Editor öffnen&quot;](assets/open-in-cf-editor.png)
+![Symbol „Im CF-Editor öffnen“](assets/open-in-cf-editor.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche **Im CF-Editor öffnen** wird der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte geöffnet. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragment-Editors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
+Durch Tippen oder Klicken auf die Schaltfläche  **Im CF-Editor öffnen** wird der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte geöffnet. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragmenteditors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
 
-Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
+Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `e` , um ein ausgewähltes Inhaltsfragment im Inhaltsfragment-Editor zu öffnen.
+>Verwenden Sie den Hotkey `e`, um ein ausgewähltes Inhaltsfragment im Inhaltsfragmenteditor zu öffnen.
 
 ##### Hinzufügen {#add}
 

@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3268'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Erstellen Sie eine Vorlage wie jede andere Seitenvorlage. Siehe [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Dies dient als Grundlage für Ihren Vorlagentyp.
+1. Erstellen Sie eine Vorlage so wie jede andere Seitenvorlage. Siehe [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Diese wird als Grundlage für Ihren Vorlagentyp dienen.
 1. Kopieren Sie mit CRXDE Lite die erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie in der Kopie der Vorlage, die sich unter dem `template-types`-Knoten befindet, alle `cq:template`- und `cq:templateType`-Eigenschaften aus allen `jcr:content`-Knoten.
