@@ -7,9 +7,9 @@ role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3455'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Vorteile der intelligenten Bildbearbeitung**
 
-Die intelligente Bildbearbeitung bietet eine bessere Leistung bei der Bildbereitstellung, indem die Größe der Bilddatei anhand des verwendeten Client-Browsers, der Geräteanzeige und der Netzwerkbedingungen automatisch optimiert wird. Da Bilder einen Großteil der Seitenladezeit ausmachen, kann die Leistungssteigerung einen enormen Einfluss auf geschäftsbezogene KPIs haben, beispielsweise höhere Konversionsraten, längere Verweildauer auf der Site und niedrigere Website-Absprungraten.
+Die intelligente Bildbearbeitung sorgt für eine bessere Leistung bei der Bildübertragung, indem sie die Größe der Bilddateien automatisch auf der Grundlage des verwendeten Client-Browsers, der Geräteanzeige und der Netzwerkbedingungen optimiert. Da Bilder einen Großteil der Seitenladezeit ausmachen, kann die Leistungssteigerung einen enormen Einfluss auf geschäftsbezogene KPIs haben, beispielsweise höhere Konversionsraten, längere Verweildauer auf der Site und niedrigere Website-Absprungraten.
 
 Die Hauptvorteile der neuen intelligenten Bildbearbeitung sind:
 
@@ -73,7 +73,7 @@ Die Hauptvorteile der neuen intelligenten Bildbearbeitung sind:
 * [Gerätepixelverhältnis](#dpr)
 * [Netzwerkbandbreite](#bandwidth)
 
-### Über die Browserformat-Konversion {#bfc}
+### Über die Browser-Formatkonvertierung {#bfc}
 
 Durch Aktivieren der Browser-Formatkonvertierung durch Anhängen von `bfc=on` an die Bild-URL werden JPEG und PNG für verschiedene Browser automatisch in verlustbehaftetes AVIF, WebP, JPEGXR oder JPEG2000 konvertiert. Bei Browsern, die diese Formate nicht unterstützen, stellt die intelligente Bildbearbeitung weiterhin JPEG oder PNG bereit. Neben dem Format wird auch die Qualität des neuen Formats durch die intelligente Bildbearbeitung neu berechnet.
 
@@ -162,7 +162,7 @@ Für Bilddateiformate, die Transparenz unterstützen, wie PNG, können Sie die i
 
 Die Bildbereitstellungs-Befehle `fmt` und `qlt` werden nicht unterstützt; alle anderen Befehle werden unterstützt.
 
-## Häufig gestellte Fragen zu Smart Imaging{#smart-imaging-faq}
+## Häufig gestellte Fragen zur intelligenten Bildbearbeitung{#smart-imaging-faq}
 
 +++**Ist die intelligente Bildbearbeitung mit Lizenzkosten verbunden?**
 

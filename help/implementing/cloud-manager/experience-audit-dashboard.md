@@ -1,31 +1,31 @@
 ---
 title: Experience Audit-Dashboard
-description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
+description: Erfahren Sie, wie der Erlebnis-Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1927'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
-# Dashboard &quot;Erlebnisprüfung&quot; {#experience-audit-dashboard}
+# Experience Audit-Dashboard {#experience-audit-dashboard}
 
-Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
+Erfahren Sie, wie der Erlebnis-Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
 
 >[!NOTE]
 >
->Diese Funktion steht nur [dem frühen Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) zur Verfügung.
+>Diese Funktion ist nur für das [Early-Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) verfügbar.
 >
 >Weitere Informationen zur vorhandenen Experience Audit-Funktion für AEM as a Cloud Service finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ## Überblick {#overview}
 
-Mit Experience Audit wird der Bereitstellungsprozess validiert und sichergestellt, dass die Änderungen bereitgestellt werden:
+Der Erlebnis-Audit validiert den Bereitstellungsprozess und stellt sicher, dass die Änderungen bereitgestellt werden:
 
 1. Erfüllen Sie Grundanforderungen an Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
 
@@ -42,8 +42,8 @@ Die Erlebnisprüfung basiert auf [Google Lighthouse](https://developer.chrome.co
 Die Erlebnisprüfung ist für folgende Cloud Manager-Pipelines verfügbar:
 
 * (Standard) Produktions-Pipelines für Sites
-* (Optional) Entwicklung von Vollstapelpipelines
-* (Optional) Entwicklung von Front-End-Pipelines
+* (Optional) Entwicklung von Full-Stack-Pipelines
+* (Optional) Entwicklung von Frontend-Pipelines
 
 Weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen finden Sie im [Konfigurationsabschnitt](#configuration).
 
@@ -51,17 +51,17 @@ Prüfungen werden als Teil der Pipeline ausgeführt. Prüfungen können auch [be
 
 ## Konfiguration {#configuration}
 
-Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für die Entwicklung von Full-Stack- und Front-End-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
+Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für die Entwicklung von Full-Stack- und Frontend-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
 
 1. Je nach Pipeline-Typ, der konfiguriert werden soll, befolgen Sie die Anweisungen für diese Vorgänge:
 
-   * Fügen Sie eine neue [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) hinzu, um die Pfade zu definieren, die die Prüfung auswerten soll.
+   * Fügen Sie eine neue [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) hinzu, um die Pfade zu definieren, die das Audit auswerten soll.
    * Fügen Sie eine neue [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) hinzu, wenn Sie die Prüfung für eine Frontend- oder Full-Stack-Entwicklungs-Pipeline aktivieren möchten.
    * Oder Sie können [eine vorhandene Pipeline bearbeiten,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
 
-1. Um beim Hinzufügen oder Bearbeiten einer Nicht-Produktions-Pipeline Experience Audit zu verwenden, aktivieren Sie das Kontrollkästchen **Erlebnisprüfung** . Diese Option finden Sie auf der Registerkarte **Source-Code** .
+1. Um den Erlebnis-Audit beim Hinzufügen oder Bearbeiten einer Nicht-Produktions-Pipeline zu verwenden, aktivieren Sie das Kontrollkästchen **Erlebnis-Audit**. Diese Option finden Sie auf der Registerkarte **Quell-Code**.
 
-   ![Aktivieren der Erlebnisprüfung](assets/experience-audit-enable.jpg)
+   ![Aktivieren des Erlebnis-Audits](assets/experience-audit-enable.jpg)
 
    * Nur für produktionsfremde Pipelines erforderlich.
    * Die Registerkarte **Erlebnisprüfung** wird beim Auswählen des Kontrollkästchens angezeigt.
@@ -84,7 +84,7 @@ Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. 
 
 1. Klicken Sie auf **Speichern**.
 
-## Experience Audit-Ergebnisse {#results}
+## Ergebnisse des Erlebnis-Audits {#results}
 
 Die Ergebnisse des Experience Audit werden im Schritt **Staging-Tests** der Produktions-Pipeline über die [Ausführungsseite der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md) präsentiert.
 
@@ -94,66 +94,66 @@ Die Erlebnisprüfung gibt die mittleren Google-Lighthouse-Bewertungen für die [
 
 Über diese Zusammenfassungsansicht in der Phase **Stage-Testing** der Pipeline haben Sie zwei Optionen:
 
-* **[Anzeigen der langsamsten Seiten](#view-slowest-pages)**
+* **[Langsamste Seiten anzeigen](#view-slowest-pages)**
 * **[Vollständigen Bericht anzeigen](#view-full-report)**
 
 Sie können auf die vollständigen Prüfergebnisse zugreifen, indem Sie im Cloud Manager-Dashboard auf die Registerkarte **Berichte** klicken. Zusätzlich zur Zusammenfassung, die in den Details der Pipeline-Ausführung angezeigt wird, können Sie [den vollständigen Bericht](#view-full-report) direkt anzeigen.
 
 >[!TIP]
 >
->In den folgenden Abschnitten wird beschrieben, wie Sie die Ergebnisse der Erlebnisprüfung anzeigen.
+>In den folgenden Abschnitten wird beschrieben, wie Sie die Ergebnisse des Erlebnis-Audits anzeigen.
 >
->* Weitere Informationen zur Funktionsweise der Prüfung finden Sie unter [Bewertungsdetails für Erlebnisprüfungen](#details).
->* Informationen zum Ausführen einer Erlebnisprüfung bei Bedarf finden Sie unter [On-Demand-Audit-Berichte](#on-demand).
->* Wenn bei der Prüfung Probleme auftreten, finden Sie weitere Informationen unter [Probleme mit der Erlebnisprüfung](#issues).
+>* Weitere Informationen zur Funktionsweise der Prüfung finden Sie unter [Auswertungsdetails beim Erlebnis-Audit](#details).
+>* Informationen zum Ausführen eines Erlebnis-Audits nach Bedarf finden Sie unter [On-Demand-Auditberichte](#on-demand).
+>* Wenn beim Audit Probleme auftreten, lesen Sie [Beim Erlebnis-Audit treten Probleme auf](#issues).
 >* Allgemeine Tipps zur Leistung finden Sie unter [Allgemeine Tipps zur Leistung](#performance-tips).
 
 ### Anzeigen der langsamsten Seiten {#view-slowest-pages}
 
-Klicken Sie auf **Langsamste Seiten anzeigen** , um das Dialogfeld **Langsamste 5 Seiten** zu öffnen. Die fünf Seiten mit der niedrigsten Leistung, die Sie [für die Prüfung](#configuration) konfiguriert haben, werden angezeigt.
+Klicken Sie auf **Langsamste Seiten anzeigen**, um das Dialogfeld **Langsamste 5 Seiten** zu öffnen. Die fünf Seiten mit der niedrigsten Leistung, die Sie [für den Audit konfiguriert haben](#configuration), werden angezeigt.
 
 ![Die langsamsten fünf](assets/experience-audit-slowest-five.png)
 
-Cloud Manager schlüsselt die Bewertungen nach **Leistung**, **Barrierefreiheit**, **Best Practices** und **SEO** auf und zeigt die Abweichung der einzelnen Metriken von der vorherigen Prüfung an.
+Cloud Manager schlüsselt die Bewertungen nach **Leistung**, **Barrierefreiheit**, **Best Practices** und **SEO** auf und zeigt die Abweichung der einzelnen Metriken im Vergleich zur vorherigen Prüfung an.
 
-Standardmäßig wird das Dialogfeld mit den Bewertungen für Mobilgeräte geöffnet. Mit dem Umschalter **Geräte** oben im Dialogfeld können Sie Desktop-Bewertungen anzeigen.
+Standardmäßig wird das Dialogfeld mit den Bewertungen für Mobilgeräte geöffnet. Sie können mithilfe des Umschalters **Geräte** am oberen Rand des Dialogfelds die Desktop-Bewertungen anzeigen.
 
-Das Dialogfeld bietet einen schnellen Überblick. Um alle Details anzuzeigen, klicken Sie auf **Vollständigen Bericht anzeigen**.
+Das Dialogfeld bietet einen schnellen Überblick. Für die vollständigen Details klicken Sie auf **Vollständigen Bericht anzeigen**.
 
-### Gesamten Bericht anzeigen {#view-full-report}
+### Anzeigen des vollständigen Berichts {#view-full-report}
 
-Sie können den vollständigen Experience Audit-Bericht wie folgt anzeigen:
+Sie können den vollständigen Bericht zum Erlebnis-Audit wie folgt anzeigen:
 
 * Klicken Sie im Dialogfeld **[Langsamste 5 Seiten](#view-slowest-pages)** auf **`View full report`**.
 * Klicken Sie beim Anzeigen der [Ausführung einer Pipeline](#results) auf **`View full report`**.
-* Klicken Sie in Cloud Manager auf die Registerkarte **Berichte** .
+* Klicken Sie in Cloud Manager auf die Registerkarte **Berichte**.
 
-Die Registerkarte **Berichte** von Cloud Manager wird geöffnet und zeigt den **Erlebnisaudit** an.
+Die Registerkarte **Berichte** von Cloud Manager wird geöffnet und zeigt den **Erlebnis-Audit** an.
 
-![Experience Audit-Berichte](assets/experience-audit-reports.png)
+![Berichte zum Erlebnis-Audit](assets/experience-audit-reports.png)
 
 Der Bericht ist in zwei Bereiche unterteilt:
 
-* **[Seitenergebnisse - Trend](#trend)**
-* **[Prüfergebnisse der Erlebnisprüfung](#results)**
+* **[Seitenbewertungen – Trend](#trend)**
+* **[Ergebnisse des Erlebnis-Audit-Scans](#results)**
 
-#### Seitenergebnisse - Trend {#trend}
+#### Seitenbewertungen – Trend {#trend}
 
-Standardmäßig ist die ausgewählte Ansicht für **Seitenergebnisse — Trend** **Medianwerte** für die **letzten 6 Monate**.
+Standardmäßig zeigt die ausgewählte Ansicht für **Seitenbewertungen – Trend** die **Medianwerte** für die **letzten 6 Monate**.
 
-Verwenden Sie die Dropdown-Listen **Auswählen** und **Anzeigen** oben und unten im Diagramm, um seitenspezifische Details bzw. unterschiedliche Zeitrahmen auszuwählen. Klicken Sie oben im Diagramm auf **Trend aktualisieren** , um die Auswahl anzuwenden und das Diagramm zu aktualisieren.
+Verwenden Sie die Dropdown-Listen **Auswählen** und **Anzeigen** oben und unten im Diagramm, um seitenspezifische Details bzw. unterschiedliche Zeitrahmen auszuwählen. Klicken Sie auf **Trend aktualisieren** am oberen Rand des Diagramms, um die Auswahl anzuwenden und das Diagramm zu aktualisieren.
 
 Wenn Sie den Mauszeiger über das Diagramm bewegen, zeigt eine QuickInfo die Werte für die Google Lighthouse-Kategorien zu bestimmten Zeitpunkten an.
 
 ![Trend-Details](assets/experience-audit-trend-details.png)
 
-Wenn Sie zu einem bestimmten Zeitpunkt auf das Diagramm klicken, wird ein Popup mit Details zu dieser Prüfung geöffnet. Klicken Sie auf **Erlebnisprüfungsprüfung öffnen** , um die Überprüfungsergebnisse in den Abschnitt **[Ergebnisse der Erlebnisprüfung prüfen](#scan-results)** zu laden.
+Wenn Sie auf einen bestimmten Zeitpunkt im Diagramm klicken, wird ein Popup mit Details zu diesem Scan geöffnet. Klicken Sie auf **Erlebnis-Audit-Scan öffnen**, um diese Scan-Ergebnisse im Abschnitt **[Ergebnisse des Erlebnis-Audit-Scans](#scan-results)** zu laden.
 
 ![Anderen Scan auswählen](assets/experience-audit-open-scan.png)
 
 #### Ergebnisse des Erlebnis-Audit-Scans {#scan-results}
 
-Im Abschnitt **Ergebnisse der Prüfung mit Erlebnisprüfungen** finden Sie Empfehlungen zur Verbesserung Ihrer Punktzahl und der Details aller gescannten Seiten. Er ist in zwei Abschnitte unterteilt:
+Im Abschnitt **Ergebnisse des Erlebnis-Audit-Scans** finden Sie Empfehlungen dazu, wie Sie Ihre Bewertung und Details aller gescannten Seiten verbessern können. Er ist in zwei Abschnitte unterteilt:
 
 * **[Empfehlungen](#recommendations)**
 * **[Gescannte Seiten](#scanned-pages)**
@@ -164,27 +164,27 @@ Der Abschnitt **Empfehlungen** zeigt einen aggregierten Satz von Einblicken. Sta
 
 ![Empfehlungen](assets/experience-audit-recommendations.png)
 
-Klicken Sie auf den Pfeil für eine Empfehlung, um Details dazu anzuzeigen.
+Klicken Sie für eine beliebige Empfehlung auf den Pfeil, um Details dazu anzuzeigen.
 
 ![Empfehlungsdetails](assets/experience-audit-recommendations-details.png)
 
 Sofern verfügbar, enthalten die erweiterten Empfehlungsdetails auch den Prozentsatz der Auswirkungen der Empfehlungen, damit Sie sich auf die wirkungsvollsten Änderungen konzentrieren können.
 
-Klicken Sie in der Detailansicht auf den Link **Seiten anzeigen** , um die Seiten anzuzeigen, für die die Empfehlung gilt.
+Klicken Sie auf den Link **Seiten anzeigen** in der Detailansicht, um die Seiten anzuzeigen, für die die Empfehlung gilt.
 
 ![Seiten für die Empfehlungsdetails](assets/experience-audit-details-pages.png)
 
 ##### Gescannte Seiten {#scanned-pages}
 
-Der Abschnitt **Gescannte Seiten** enthält Details zu den Ergebnissen auf allen gescannten Seiten. Verwenden Sie die Schaltflächen **Prev** und **Next** , um die Ergebnisse zu durchblättern, und wählen Sie aus, wie viele Anzeigen paginiert werden sollen.
+Der Abschnitt **Gescannte Seiten** enthält Detailbewertungen für alle gescannten Seiten. Sie können die Ergebnisse mithilfe der Schaltflächen **Zurück** und **Weiter** durchblättern und festlegen, wie viele die Anzeige paginieren soll.
 
 ![Gescannte Seiten](assets/experience-audit-scanned-pages.png)
 
-Klicken Sie auf den Link einer bestimmten Seite, um den Filter **Auswählen** des Abschnitts [**Seitenergebnisse — Trend**](#trend) zu aktualisieren und die Registerkarte **Bewertungen und Empfehlungen** für die ausgewählte Seite anzuzeigen.
+Durch Klicken auf den Link einer bestimmten Seite wird der Filter **Auswählen** des Abschnitts [**Seitenbewertungen – Trend** ](#trend)aktualisiert und die Registerkarte **Bewertungen und Empfehlungen** für die ausgewählte Seite angezeigt.
 
 ![Seitenergebnisse](assets/experience-audit-page-results.png)
 
-Die Registerkarte **Rohberichte** gibt Bewertungen für jede Prüfung der Seite an. Klicken Sie auf das Berichtsdatum in der Spalte **Leuchtturmbericht** , um eine JSON-Datei der Rohdaten abzurufen.
+Die Registerkarte **Rohberichte** gibt Bewertungen für jede Prüfung der Seite an. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
 
 ![Rohberichte](assets/experience-audit-raw-reports.png)
 
@@ -192,11 +192,11 @@ In Ihrem Browser wird eine neue Registerkarte geöffnet, die Sie zu `https://goo
 
 ![Anzeigen des Rohberichts](assets/experience-audit-view-raw-report.png)
 
-## On-Demand-Prüfberichte {#on-demand}
+## On-Demand-Scan-Audit-Berichte {#on-demand}
 
-Experience Audit-Berichte werden nicht nur während der Pipelineausführung ausgeführt, sondern können auch bei Bedarf generiert werden. Diese Option ist eine gute Lösung, um Ihre Seiten schnell zu scannen, ohne eine Pipeline ausführen zu müssen.
+Die Berichte des Erlebnis-Audits werden nicht nur während der Pipeline-Ausführung ausgeführt, sondern können auch bei Bedarf generiert werden. Dies ist eine gute Lösung, um Ihre Seiten schnell zu scannen, ohne eine Pipeline ausführen zu müssen.
 
-Um eine On-Demand-Prüfung auszuführen, navigieren Sie zur Registerkarte **Berichte** , um den vollständigen Prüfbericht anzuzeigen, und klicken Sie dann auf die Schaltfläche **Scan ausführen** .
+Zum Ausführen eines On-Demand-Scans navigieren Sie zur Registerkarte **Berichte**, um den vollständigen Prüfbericht anzuzeigen, und klicken Sie auf die Schaltfläche **Scan durchführen**.
 
 ![On-Demand-Scan](assets/experience-audit-on-demand.png)
 
@@ -206,7 +206,7 @@ Die Schaltfläche **Scan durchführen** ist dann nicht mehr verfügbar und wird 
 
 On-Demand-Scans lösen eine Erlebnisprüfung für die letzten 25 [konfigurierten Seiten](#configuration) aus und werden in der Regel innerhalb weniger Minuten abgeschlossen.
 
-Nach Abschluss des Vorgangs wird das Scores-Diagramm automatisch aktualisiert und Sie können die Ergebnisse genau wie bei einer Pipeline-Ausführungsprüfung überprüfen.
+Nach Abschluss des Vorgangs wird das Bewertungsdiagramm automatisch aktualisiert und Sie können die Ergebnisse genau wie bei einem Pipeline-Ausführungs-Scan überprüfen.
 
 Sie können das Bewertungsdiagramm nach dem Trigger-Typ filtern, indem Sie die Auswahl **Trigger** auswählen.
 
@@ -218,13 +218,13 @@ Sie können das Bewertungsdiagramm nach dem Trigger-Typ filtern, indem Sie die A
 
 ## Probleme bei der Erlebnisprüfung {#issues}
 
-Wenn [Seiten, die Sie für die Prüfung konfiguriert haben,](#configuration) nicht verfügbar waren oder bei der Prüfung andere Fehler aufgetreten sind, spiegelt Experience Audit diese Tatsache wider.
+Wenn [Seiten, die Sie für den Audit konfiguriert haben](#configuration), nicht verfügbar waren oder beim Audit andere Fehler aufgetreten sind, spiegelt der Erlebnis-Audit dies wider.
 
 Die Pipeline präsentiert einen erweiterbaren Fehlerabschnitt, um die relativen URL-Pfade anzuzeigen, wenn kein Zugriff möglich war.
 
 ![Bei der Erlebnisprüfung aufgetretene Probleme](assets/experience-audit-issues.jpg)
 
-Beim Anzeigen des vollständigen Berichts werden Details im Abschnitt **[Ergebnisse der Erlebnisprüfung](#results)** angezeigt, der ebenfalls erweiterbar ist.
+Wenn Sie den vollständigen Bericht anzeigen, finden Sie Details dazu im erweiterbaren Abschnitt **[Ergebnisse des Erlebnis-Audit-Scans](#results)**.
 
 ![Vollständiger Bericht – Probleme](assets/experience-audit-issues-report.png)
 
@@ -244,10 +244,10 @@ Die Seiten können beispielsweise aus folgenden Gründen nicht verfügbar sein:
 
 Zwei der am häufigsten auftretenden Probleme, die einfach zu beheben sind, beziehen sich auf die Metriken „Cumulative Layout Shifts (CLS)“ und „Largest Contentful Paint (LCP)“.
 
-Sie können diese Bereiche wie folgt verbessern:
+Sie können diese Bereiche verbessern, indem Sie folgende Schritte ausführen:
 
-* Das Laden der Bilder über der Kante ist nicht faul - der Inhalt, der im Browser sichtbar ist, ohne nach unten scrollen zu müssen.
-* Ordnungsgemäße Priorisierung der Art und Weise, wie Ressourcen geladen werden (z. B. durch asynchrones Laden der Bilder unterhalb der Kante nach dem Laden des Dokuments).
+* Kein verzögertes Laden der Bilder über der Falz – das ist der Inhalt, der im Browser sichtbar ist, ohne nach unten scrollen zu müssen.
+* Ordnungsgemäßes Priorisieren der Art und Weise, wie Ressourcen geladen werden (z. B. durch asynchrones Laden der Bilder unterhalb der Falz, nachdem das Dokument geladen wurde).
 * Vorabrufen von JavaScript- und CSS-Dateien, die verwendet werden, um Inhalte über der Falz zu rendern (falls erforderlich).
 * Reservieren des vertikalen Bereichs durch Zuweisen eines Seitenverhältnisses zu Containern, die entweder langsam geladen oder später gerendert werden.
 * Konvertieren der Bilder in das WebP-Format, um ihre Größe zu reduzieren.
@@ -257,10 +257,10 @@ Sie können diese Bereiche wie folgt verbessern:
 
 Die folgenden Details liefern zusätzliche Informationen darüber, wie Ihre Site von der Erlebnisprüfung ausgewertet wird. Sie sind für die allgemeine Nutzung der Funktion nicht erforderlich und werden hier der Vollständigkeit halber bereitgestellt.
 
-* Die Prüfung scannt die Ursprungsdomäne (`.com`) aus den [konfigurierten Pfaden der Experience Audit-Seite](#configuration) des Herausgebers, um reale Benutzererlebnisse zu simulieren, sodass Sie bessere Entscheidungen über die Verwaltung und Optimierung Ihrer Websites treffen können.
-* In Produktions-Vollstapelpipelines wird die Staging-Umgebung gescannt. Um sicherzustellen, dass die Prüfung relevante Details während der Prüfung liefert, sollte der Inhalt der Staging-Umgebung der Produktionsumgebung so nahe wie möglich sein.
-* Die Seiten, die in der Dropdown-Liste **Auswählen** im Abschnitt [**Seitenergebnisse — Trend**](#trend) angezeigt werden, sind alle bekannten Seiten, die der Experience Audit in der Vergangenheit gescannt hat.
+* Der Audit scannt die Ursprungs-Domain (`.com`), wie sie in den [konfigurierten Pfaden der Erlebnis-Audit-Seite](#configuration) des Herausgebers definiert ist, um reale Benutzererlebnisse zu simulieren und Ihnen dabei zu helfen, bessere Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
+* In Produktions-Full-Stack-Pipelines wird die Staging-Umgebung gescannt. Um sicherzustellen, dass der Audit während des Auditings relevante Details liefert, sollte der Inhalt der Staging-Umgebung dem der Produktionsumgebung so weit wie möglich entsprechen.
+* Die Seiten, die im Abschnitt [**Seitenbewertungen – Trend**](#trend) in der Dropdown-Liste **Auswählen** angezeigt werden, sind alle bekannten Seiten, die in der Vergangenheit durch den Erlebnis-Audit gescannt wurden.
 * [Eine Empfehlung](#recommendations) kann einen potenziellen Gewinn und einen Unterschied zum vorherigen Scan aufweisen.
-* Experience Audit schätzt potenzielle Verbesserungen, indem der Rohbericht für jede Seite verarbeitet wird. Er ordnet verschwendete Bytes oder Millisekunden mit Einblicken zu, wodurch eine gewichtete Auswirkung auf den Leistungswert zugewiesen wird. Die Prüfung enthält diese Informationen und die betroffenen Seiten, um bei der Entscheidung zu helfen, welche Empfehlung weiterverfolgt werden soll.
+* Der Erlebnis-Audit schätzt potenzielle Verbesserungen, indem der Rohbericht für jede Seite verarbeitet wird. Er fasst verschwendete Bytes oder Millisekunden mit Erkenntnissen zusammen, wodurch eine gewichtete Auswirkung auf den Performance-Wert zugewiesen wird. Der Audit enthält diese Informationen sowie die betroffenen Seiten, um zu entscheiden, welcher Empfehlung nachgegangen werden soll.
 Weitere Informationen finden Sie im Abschnitt [Allgemeine Tipps zur Leistung](#performance-tips) .
-* Eine Frontend-Pipeline kann in einer vorhandenen Umgebung bereitgestellt werden und mehrere Frontend-Pipelines können für dieselbe Umgebung verwendet werden. Da die Scan-Ergebnisse auf Umgebungsebene aggregiert werden, sind die Bewertungen, Trends und Empfehlungen konsistent. Diese Ergebnisse werden in der ausgewählten Umgebung angezeigt, unabhängig davon, welche Pipeline die Prüfung ausgelöst hat.
+* Eine Frontend-Pipeline kann in einer vorhandenen Umgebung bereitgestellt werden und mehrere Frontend-Pipelines können für dieselbe Umgebung genutzt werden. Da die Scan-Ergebnisse auf Umgebungsebene aggregiert werden, sind die Bewertungen, Trends und Empfehlungen konsistent. Diese Ergebnisse werden in der ausgewählten Umgebung angezeigt, unabhängig davon, welche Pipeline den Scan ausgelöst hat.

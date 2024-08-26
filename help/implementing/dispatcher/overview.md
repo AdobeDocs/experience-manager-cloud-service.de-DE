@@ -5,9 +5,9 @@ exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,4 +36,4 @@ In den folgenden Abschnitten finden Sie genauere Informationen zur Inhaltsbereit
 * [Caching](/help/implementing/dispatcher/caching.md)
 
 
-Informationen zur Replikation vom Autorendienst zum Veröffentlichungsdienst finden Sie unter [Replikation](/help/operations/replication.md).
+Informationen zur Replikation vom Autoren-Service zum Veröffentlichungs-Service finden Sie unter [Replikation](/help/operations/replication.md).

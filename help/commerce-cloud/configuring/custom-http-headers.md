@@ -5,9 +5,9 @@ exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden die
 
 ## Einschränkungen {#restrictions}
 
-Der Service ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen Namen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können die standardmäßigen HTTP-Kopfzeilen nicht mit dieser Funktion überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie unter [mdn web docs - HTTP headers](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
+Der Service ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen Namen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können mit dieser Funktion nicht die standardmäßigen HTTP-Kopfzeilen überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie auf der MDN Web Docs-Website unter [HTTP-Header](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
 
 * „Store“ – wird von CIF verwendet, um den Adobe Commerce-Store zu identifizieren.
 * „Preview-Version“ – wird von CIF zum Abrufen von Staging-Produkten verwendet.

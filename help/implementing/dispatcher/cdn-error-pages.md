@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Bevor Sie die standardmäßige Fehlerseite außer Kraft setzen können, müssen 
 
 1. Erstellen Sie eine Datei mit dem Namen `cdn.yaml` oder ähnlich, die auf den nachfolgenden Syntax-Abschnitt verweist.
 
-1. Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen *config* oder einem ähnlichen Ordner, wie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
+1. Platzieren Sie die Datei unter einem Ordner der obersten Ebene mit dem Namen *config* oder ähnlich, wie in [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie in [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
+1. Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline, wie in [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
 
 1. Stellen Sie die Konfiguration bereit.
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-Eine Beschreibung der Eigenschaften über dem Daten-Knoten finden Sie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#common-syntax) . Der Eigenschaftswert „kind“ sollte *CDN* sein, und die Eigenschaft `version` sollte auf *1* festgelegt werden.
+Eine Beschreibung der Eigenschaften oberhalb des Datenknotens finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert „kind“ sollte *CDN* sein, und die Eigenschaft `version` sollte auf *1* festgelegt werden.
 
 
 | Name | Zulässige Eigenschaften | Bedeutung |

@@ -7,9 +7,9 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5506'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Ab August 2023 enthält Experience Manager Assets eine neue Version 9 von Index 
 
 Wenn Sie zum vorherigen Verhalten (`statistical`-Modus) wechseln müssen, lesen Sie [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=de), um eine benutzerdefinierte Version des `damAssetLucene-9`-Indexes zu erstellen. Adobe rät aufgrund der Auswirkungen auf die Antwortzeiten der Suche mit großen Ergebnismengen davon ab, zum `secure`-Modus zu wechseln.
 
-Weitere Informationen zu den Facettenfunktionen von Oak, einschließlich einer detaillierten Beschreibung dieser Modi, finden Sie unter [Facetten - Oak-Dokumentation - Lucene-Index](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+Weitere Informationen zu den Facettenfunktionen von Oak, einschließlich einer detaillierten Beschreibung dieser Modi, finden Sie unter [Facetten – Oak-Dokumentation – Lucene-Index](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suchvorschläge bei der Eingabe {#searchsuggestions}
 
@@ -341,7 +341,7 @@ Verwenden Sie doppelte Anführungszeichen um Keywords, um Assets zu finden, die 
 
 *Abbildung: Suchverhalten mit und ohne Anführungszeichen.*
 
-**Suche mit Sternchen als Platzhalter**: Wenn Sie die Suche erweitern möchten, verwenden Sie ein Sternchen vor oder nach dem Suchbegriff, um Treffer mit einer beliebigen Anzahl von Zeichen zu erhalten. Wenn Sie beispielsweise ohne Sternchen nach „run“ suchen, werden keine Assets zurückgegeben, die Varianten des Worts enthalten (auch in den Metadaten). Ein Sternchen ersetzt eine beliebige Anzahl von Zeichen. Beispiel:
+**Suche mit Sternchen als Platzhalter**: Wenn Sie die Suche erweitern möchten, verwenden Sie ein Sternchen vor oder nach dem Suchbegriff, um Treffer mit einer beliebigen Anzahl von Zeichen zu erhalten. Wenn Sie beispielsweise ohne Sternchen nach „run“ suchen, werden keine Assets zurückgegeben, die Varianten des Worts enthalten (auch in den Metadaten). Ein Sternchen ersetzt eine beliebige Anzahl von Zeichen. Zum Beispiel:
 
 * `run` gibt Assets mit dem genauen Keyword „run“ zurück.
 * `run*` gibt Assets mit `running`, `run`, `runaway` usw. zurück.
@@ -458,7 +458,7 @@ Mit den in [!DNL Experience Manager] gesuchten Assets können Sie Folgendes tun:
 * Ein oder mehrere Assets herunterladen.
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
-* Eine Version erstellen
+* Erstellen einer Version
 * Einen Workflow starten
 * Zuordnung für Assets herstellen oder aufheben
 * Filter anwenden, um die Suchergebnisse einzugrenzen. Verwenden Sie dazu das Filter-Panel, das nach der Suche automatisch angezeigt wird.

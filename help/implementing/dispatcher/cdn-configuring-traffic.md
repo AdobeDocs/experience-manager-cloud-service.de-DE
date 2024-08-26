@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1314'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Bevor Sie Traffic im CDN konfigurieren können, müssen Sie Folgendes tun:
 
 1. Erstellen Sie eine Datei mit dem Namen `cdn.yaml` oder ähnlich, die auf die verschiedenen Konfigurationsausschnitte in den nachfolgenden Abschnitten verweist.
 
-   Alle Snippets verfügen über diese allgemeinen Eigenschaften, die unter [Config Pipeline](/help/operations/config-pipeline.md#common-syntax) beschrieben werden. Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf *1* festgelegt werden.
+   Alle Ausschnitte verfügen über diese allgemeinen Eigenschaften, die unter [Konfigurations-Pipeline](/help/operations/config-pipeline.md#common-syntax) beschrieben sind. Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf *1* festgelegt werden.
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ Bevor Sie Traffic im CDN konfigurieren können, müssen Sie Folgendes tun:
      envTypes: ["dev"]
    ```
 
-1. Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen *config* oder ähnlich, wie unter [Config Pipeline](/help/operations/config-pipeline.md#folder-structure) beschrieben.
+1. Platzieren Sie die Datei unter einem Ordner der obersten Ebene mit dem Namen *config* oder ähnlich, wie unter [Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie unter [Config Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
+1. Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline, wie unter [Konfigurations-Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
 
 1. Stellen Sie die Konfiguration bereit.
 

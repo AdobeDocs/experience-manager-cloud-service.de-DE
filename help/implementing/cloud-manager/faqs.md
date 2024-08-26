@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Dieses Dokument enthält Antworten auf die am häufigsten gestellten Fragen zu C
 
 Ja. Fügen Sie das `maven-toolchains-plugin` mit den richtigen Einstellungen für Java™ 11 hinzu.
 
-Der Prozess ist dokumentiert - siehe [Assistent zum Erstellen von Projekten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+Der Prozess ist dokumentiert – siehe [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
 Ein Beispiel finden Sie unter [WKND-Beispielprojekt-Code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -65,7 +65,7 @@ Weitere Informationen zur Versionsverwaltung finden Sie unter [Umgang mit Maven-
 
 ## Wie funktioniert die Paket-Versionierung für Staging- und Produktionsbereitstellungen? {#snapshot-version}
 
-In Staging- und Produktionsimplementierungen wird eine automatische Version generiert - siehe [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Bei der Staging- und Produktionsbereitstellung wird eine automatische Version erzeugt – siehe  [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Für die benutzerdefinierte Versionierung in Staging- und Produktionsbereitstellungen legen Sie eine korrekte dreiteilige Maven-Version wie `1.0.0` fest. Erhöhen Sie die Version jedes Mal, wenn Sie sie in der Produktion bereitstellen.
 

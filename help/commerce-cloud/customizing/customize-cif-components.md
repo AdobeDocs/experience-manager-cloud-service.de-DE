@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2300'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -385,7 +385,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
 
    Beim Aufrufen einer Sling-Modellmethode in HTL werden der `get`- und `is`-Abschnitt der Methode verworfen; der erste Buchstabe wird zu einem Kleinbuchstaben. Aus `isShowBadge()` wird so `.showBadge`, aus `isEcoFriendly` wird `.ecoFriendly`. Basierend auf dem booleschen Wert, der von `.isEcoFriendly()` zurückgegeben wird, wird ermittelt, ob `<span>Eco Friendly</span>` angezeigt wird.
 
-   Weitere Informationen zu `data-sly-test` und anderen HTL-Blockanweisungen finden Sie in [HTL-Spezifikation](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=de).
+   Weitere Informationen zu `data-sly-test` und anderen HTL-Blockanweisungen finden Sie unter [Die HTL-Spezifikation](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=de).
 
 1. Speichern Sie die Änderungen und stellen Sie die Aktualisierungen mithilfe Ihrer Maven-Kenntnisse über ein Befehlszeilen-Terminal in AEM bereit:
 
@@ -479,7 +479,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
 
 ## Herzlichen Glückwunsch {#congratulations}
 
-Sie haben Ihre erste AEM-CIF-Komponente angepasst. Sie können die Lösungsdateien hier ](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) [herunterladen.
+Sie haben Ihre erste AEM-CIF-Komponente angepasst. Sie können die Lösungsdateien [hier](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) herunterladen.
 
 ## Bonusaufgabe {#bonus-challenge}
 

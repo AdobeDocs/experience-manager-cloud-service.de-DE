@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1374'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, einen der folgenden Code-Typen **einzuschließen**:
 
 * **Konfiguration** – Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM-Umgebung.
-   * Unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md) finden Sie eine Liste der unterstützten Konfigurationen, zu denen die Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen gehören, und deren Verwaltung in Ihrem Repository, damit sie ordnungsgemäß bereitgestellt werden.
+   * Eine Liste der unterstützten Konfigurationen, einschließlich Protokollweiterleitung, bereinigungsbezogener Wartungsaufgaben und verschiedener CDN-Konfigurationen, sowie Informationen zu deren Verwaltung in Ihrem Repository für eine ordnungsgemäße Bereitstellung finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md).
    * Wenn Sie eine gezielte Bereitstellungs-Pipeline ausführen, werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert sind, die Sie in der Pipeline definiert haben.
    * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
@@ -164,7 +164,7 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 
 Wenn Sie möchten, dass Dispatcher-Pakete als Teil Ihrer Pipeline erstellt werden, sie aber nicht im Build-Speicher veröffentlicht werden sollen, können Sie die Veröffentlichung deaktivieren, was die Laufzeit der Pipeline verkürzen kann.
 
-Die folgende Konfiguration zum Deaktivieren der Veröffentlichung von Dispatcher-Paketen muss über die Datei `pom.xml` Ihres Projekts hinzugefügt werden. Sie basiert auf einer Umgebungsvariablen, die als Markierung dient, die Sie im Cloud Manager-Build-Container festlegen können, um zu definieren, wann Dispatcher-Pakete ignoriert werden sollen.
+Die folgende Konfiguration zum Deaktivieren der Veröffentlichung von Dispatcher-Paketen muss über die Datei `pom.xml` Ihres Projekts hinzugefügt werden. Sie basiert auf einer Umgebungsvariablen, die als Markierung dient, welche Sie im Cloud Manager-Build-Container festlegen können, um zu definieren, wann Dispatcher-Pakete ignoriert werden sollen.
 
 ```xml
 <profile>

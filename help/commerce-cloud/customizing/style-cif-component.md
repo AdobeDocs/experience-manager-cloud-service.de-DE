@@ -13,9 +13,9 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2342'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -436,7 +436,7 @@ Kehren Sie zur IDE und zum erstellten Projekt zurück.
 
    ![Änderungen am webpack-Dev-Server-Teaser](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   Die Änderungen wurden jedoch noch nicht in AEM bereitgestellt. Sie können die Lösungsdatei [ hier herunterladen](../assets/style-cif-component/_productteaser.scss).
+   Die Änderungen wurden jedoch noch nicht in AEM bereitgestellt. Sie können die Lösungsdatei [hier](../assets/style-cif-component/_productteaser.scss) herunterladen.
 
 1. Stellen Sie Aktualisierungen mithilfe Ihrer Maven-Kenntnisse über ein Befehlszeilen-Terminal in AEM bereit:
 

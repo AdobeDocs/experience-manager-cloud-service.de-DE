@@ -5,9 +5,9 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1080'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Benutzende können zuverlässig ermitteln, ob der gesamte vom Content Transfer T
 
 >[!INFO]
 >
->Diese Funktion ist ab Version 1.8.x des Content Transfer Tool (CTT) verfügbar. Die AEM as a Cloud Service-Zielumgebung muss mindestens Version 6158 oder höher ausführen. Außerdem muss die Quellumgebung für die Ausführung der [Vorabkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) eingerichtet sein. Die Validierungsfunktion sucht in der Quelle nach der Datei azcopy.config. Wenn die Datei nicht gefunden werden kann, wird die Validierung nicht ausgeführt. Weitere Informationen zum Konfigurieren einer Datei &quot;azcopy.config&quot;finden Sie unter [Umgang mit großen Inhaltsverzeichnissen - Konfigurieren einer Datei &quot;azcopy.config&quot;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Diese Funktion ist ab Version 1.8.x des Content Transfer Tool (CTT) verfügbar. Die AEM as a Cloud Service-Zielumgebung muss mindestens Version 6158 oder höher ausführen. Außerdem muss die Quellumgebung für die Ausführung der [Vorabkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) eingerichtet sein. Die Validierungsfunktion sucht in der Quelle nach der Datei azcopy.config. Wenn die Datei nicht gefunden werden kann, wird die Validierung nicht ausgeführt. Weitere Informationen zum Konfigurieren der Datei „azcopy.config“ finden Sie unter [Handhabung großer Content-Repositorys – Konfigurieren der Datei „azcopy.config“](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Die Validierung eines Inhaltstransfers ist eine optionale Funktion. Durch die Aktivierung dieser Funktion verlängert sich der zeitliche Aufwand bei der Durchführung sowohl einer Extraktion als auch einer Aufnahme. Um die Funktion zu verwenden, aktivieren Sie sie in der Systemkonsole der AEM-Quellumgebung, indem Sie die folgenden Schritte ausführen:
 

@@ -5,9 +5,9 @@ exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt erfahren Sie, wie Sie Screens Services Provider konfiguri
 
 Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
-1. Navigieren Sie zum [Screens-Dienstanbieter](https://experience.adobe.com/screens).
+1. Navigieren Sie zu [Screens Services Provider](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts im Bildschirm auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff benötigen.
@@ -96,6 +96,6 @@ Nachfolgend finden Sie ein Beispiel für [CDN config](https://experienceleague.a
 
 
 
-## Wie es weitergeht: {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie gelernt haben, wie Sie den Screens Services Provider einrichten, navigieren Sie zu [Verwenden von Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=de#screens-content-provider) für weitere Details.

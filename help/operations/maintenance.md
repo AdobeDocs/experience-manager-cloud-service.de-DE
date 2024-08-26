@@ -5,9 +5,9 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2053'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -222,11 +222,11 @@ Deklarieren Sie eine Konfigurationsdatei und stellen Sie sie wie in den folgende
 
 **1** Erstellen Sie eine Datei mit dem Namen `mt.yaml` oder ähnlich.
 
-**2** Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen `config` oder ähnlich, wie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
+**2** Platzieren Sie die Datei unter einem Ordner der obersten Ebene mit dem Namen `config` oder ähnlich, wie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
 **3** Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
 
-* einige Eigenschaften über dem Daten-Knoten - siehe [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax) für eine Beschreibung. Der Eigenschaftswert `kind` sollte *MaintenanceTasks* sein und die Version auf *1* festgelegt werden.
+* einige Eigenschaften oberhalb des Datenknotens – eine Beschreibung finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *MaintenanceTasks* sein und die Version auf *1* festgelegt werden.
 
 * ein Datenobjekt mit den Objekten `versionPurge` und `auditLogPurge`.
 
@@ -314,7 +314,7 @@ Die Spalten, die *default* angeben, geben die Standardwerte für die Zukunft an,
 
 Die folgenden Beispiele veranschaulichen, wie kombinierte Eigenschaften miteinander interagieren.
 
-Beispiel:
+Zum Beispiel:
 
 ```
 maximumAgeDays = 30
@@ -326,7 +326,7 @@ Wenn an Tag 23 elf Versionen vorliegen, wird die älteste Version beim nächste
 
 Wenn an Tag 31 fünf Versionen vorhanden sind, werden nur drei Versionen bereinigt, da die Eigenschaft `minimumVersions` auf den Wert „2“ eingestellt ist.
 
-Beispiel:
+Zum Beispiel:
 
 ```
 maximumAgeDays = 30

@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Wie auf der Seite [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/
 
 Im Rahmen der Einrichtung müssen sich das Adobe-CDN und das Kunden-CDN auf einen Wert des HTTP-Headers `X-AEM-Edge-Key` einigen. Dieser Wert wird bei jeder Anfrage im Kunden-CDN festgelegt, bevor er an das Adobe-CDN weitergeleitet wird. Dieses überprüft dann, ob der Wert erwartungsgemäß ist, damit anderen HTTP-Headern vertraut werden kann, einschließlich derer, die dazu beitragen, die Anfrage an den entsprechenden AEM-Ursprung weiterzuleiten.
 
-Der Wert *X-AEM-Edge-Key* wird durch die Eigenschaften `edgeKey1` und `edgeKey2` in einer Datei mit dem Namen `cdn.yaml` oder ähnlich referenziert, die sich unter einem `config`-Ordner der obersten Ebene befindet. Weitere Informationen zur Ordnerstruktur und zur Bereitstellung der Konfiguration finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) .
+Der Wert *X-AEM-Edge-Key* wird durch die Eigenschaften `edgeKey1` und `edgeKey2` in einer Datei mit dem Namen `cdn.yaml` oder ähnlich referenziert, die sich unter einem `config`-Ordner der obersten Ebene befindet. Unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) finden Sie weitere Informationen zur Ordnerstruktur und Bereitstellung der Konfiguration.
 
 Die Syntax ist unten beschrieben:
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-Eine Beschreibung der Eigenschaften über dem Knoten `data` finden Sie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#common-syntax) . Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
+Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
 
 Weitere Eigenschaften sind:
 
@@ -76,7 +76,7 @@ Weitere Eigenschaften sind:
 
 ## API-Bereinigungs-Token {#purge-API-token}
 
-Kundinnen und Kunden können [den CDN-Cache mithilfe eines deklarierten API-Bereinigungs-Tokens bereinigen](/help/implementing/dispatcher/cdn-cache-purge.md). Das Token wird in einer Datei mit dem Namen `cdn.yaml` oder ähnlich unter einem `config`-Ordner der obersten Ebene deklariert. Weitere Informationen zur Ordnerstruktur und zur Bereitstellung der Konfiguration finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) .
+Kundinnen und Kunden können [den CDN-Cache mithilfe eines deklarierten API-Bereinigungs-Tokens bereinigen](/help/implementing/dispatcher/cdn-cache-purge.md). Das Token wird in einer Datei mit dem Namen `cdn.yaml` oder ähnlich unter einem `config`-Ordner der obersten Ebene deklariert. Unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) finden Sie weitere Informationen zur Ordnerstruktur und Bereitstellung der Konfiguration.
 
 Die Syntax ist unten beschrieben:
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-Eine Beschreibung der Eigenschaften über dem Knoten `data` finden Sie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#common-syntax) . Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
+Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
 
 Weitere Eigenschaften sind:
 
@@ -156,7 +156,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-Eine Beschreibung der Eigenschaften über dem Knoten `data` finden Sie unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md#common-syntax) . Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
+Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
 
 Darüber hinaus enthält die Syntax Folgendes:
 

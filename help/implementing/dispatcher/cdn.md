@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1555'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ Wenn eine Anfrage eine unzulässige Antwort vom Typ 403 erhält, bedeutet dies, 
 
 **Schleife „Zu viele Umleitungen“**
 
-Wenn eine Seite eine Schleife „Zu viele Umleitungen“ erhält, wird im CDN ein Anfrage-Header hinzugefügt, der einer Umleitung entspricht, die die Seite zu sich selbst zurückführt. Beispiel:
+Wenn eine Seite eine Schleife „Zu viele Umleitungen“ erhält, wird im CDN ein Anfrage-Header hinzugefügt, der einer Umleitung entspricht, die die Seite zu sich selbst zurückführt. Zum Beispiel:
 
 * Es wird eine CDN-Regel erstellt, die entweder mit der Apex-Domain oder der www-Domain übereinstimmt und nur den X-Forwarded-Host-Header der Apex-Domain hinzufügt.
 * Eine Anfrage für eine Apex-Domain entspricht dieser CDN-Regel, die die Apex-Domain als X-Forwarded-Host-Header hinzufügt.
@@ -178,7 +178,7 @@ Das AEM-verwaltete CDN fügt jeder Anfrage Header hinzu. Diese enthalten:
 >
 >Wenn es ein vom Kunden verwaltetes CDN gibt, spiegeln diese Header den Standort des CDN-Proxy-Servers des Kunden und nicht den des eigentlichen Clients wider. Daher sollten bei einem vom Kunden verwalteten CDN die Geolocation-Header vom CDN des Kunden verwaltet werden.
 
-Die Werte für die Ländercodes sind die unter [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) beschriebenen Alpha-2-Codes.
+Die Werte für die Länder-Codes sind die unter [ISO 3166-1](https://de.wikipedia.org/wiki/ISO_3166-1) beschriebenen Alpha-2-Codes.
 
 Die Werte für die Kontinental-Codes lauten:
 

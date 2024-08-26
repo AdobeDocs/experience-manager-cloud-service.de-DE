@@ -5,9 +5,9 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Im Aktionszentrum können Sie ein bestimmtes Programm und eine bestimmte Umgebun
 
 ## Konfiguration {#configuration}
 
-Erstellen Sie zum Konfigurieren des Empfangs von Aktionscenter-E-Mail-Benachrichtigungen die Produktprofile wie unter [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md) beschrieben, nämlich Benachrichtigung bei Vorfällen - Cloud Service und proaktive Benachrichtigung - Cloud Service. Weisen Sie diesen Profilen auch die entsprechenden Adobe-IDs aus Ihrer Organisation zu. Auf diese Weise kann ein Admin bestimmen, welche Personen für den Erhalt dieser Benachrichtigungs-E-Mails qualifiziert sind.
+Um den Empfang von Benachrichtigungs-E-Mails des Aktionszentrums zu konfigurieren, erstellen Sie die unter [Benachrichtungsprofile](/help/journey-onboarding/notification-profiles.md) beschriebenen Produktprofile, nämlich „Benachrichtigung bei Vorfällen – Cloud Service“ und „Proaktive Benachrichtigung – Cloud Service“. Weisen Sie diesen Profilen auch die entsprechenden Adobe-IDs aus Ihrer Organisation zu. Auf diese Weise kann ein Admin bestimmen, welche Personen für den Erhalt dieser Benachrichtigungs-E-Mails qualifiziert sind.
 
 >[!NOTE]
 >Aktionszentrums-Benachrichtigungs-E-Mails werden auf Organisationsebene erstellt, sodass die Abonnierenden Benachrichtigungen für alle Programme und Umgebungen innerhalb dieser Programme erhalten.
@@ -65,7 +65,7 @@ AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzerin bzw. Benutzer, die/der dem Produktprofil „Benachrichtigung bei Vorfällen – Cloud Service“ zugewiesen ist | X |
 | Proaktive Empfehlungen | Zu planende Optimierungen | Benutzerin bzw. Benutzer, die/der dem Produktprofil „proaktive Benachrichtigung – Cloud Service“ zugewiesen ist | X |
-| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzer mit den Benutzerrollen Business Owner, Program Manager oder Deployment Manager, die unter [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences) das Kontrollkästchen &quot;Sonstige&quot;aktiviert haben, siehe [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md). |                           |
+| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzende mit den Rollen „Geschäftsinhaber“, „Programm-Manager“ oder „Bereitstellungs-Manager“ und aktiviertem Kontrollkästchen „Sonstige“ in den [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), wie in [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Unterstützte Benachrichtigungstypen {#supported-notification-types}
 

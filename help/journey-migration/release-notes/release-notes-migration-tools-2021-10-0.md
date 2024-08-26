@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as
 
 >[!NOTE]
 >
->Die neuesten Versionshinweise finden Sie unter [Aktuelle Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md) .
+>Die neuesten Versionshinweise finden Sie unter [Aktuelle Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Cloud Acceleration Manager {#cam-release}
 

@@ -1,13 +1,13 @@
 ---
-title: Aktivieren von AEM Screens für Ihren Demo-Standort
+title: Aktivieren von AEM Screens für Ihre Demo-Site
 description: Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Screens as a Cloud Service-Erlebnisses auf Ihrer Demo-Site.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Scre
 
 >[!NOTE]
 >
->Für die AEM Screens-Demo muss das Screens-Add-on zum Cloud Manager-Programm hinzugefügt werden. Erfahren Sie, wie Sie mit [Hinzufügen von Screens als Add-on zu einem neuen Programm in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) hinzufügen können.
+>Für die AEM Screens-Demo muss das Screens-Add-on zum Cloud Manager-Programm hinzugefügt werden. Unter [Hinzufügen von Screens als Add-on zu einem neuen Programm in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) erfahren Sie, wie das Hinzufügen funktioniert.
 
-## Ihre bisherige Tour {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
 Im vorherigen Dokument der Tour zum AEM-Referenzdemo-Add-on, [Erstellen einer Demo-Site](create-site.md), haben Sie eine Demo-Site basierend auf den Vorlagen des Referenzdemo-Add-ons erstellt. Sie sollten jetzt:
 
@@ -176,7 +176,7 @@ Jetzt können Sie eine Google Sheets-Tabelle erstellen, in der Ihre Wetterdaten 
 1. Suchen Sie die Tabellen-ID.
 
    * Die Tabellen-ID ist die zufällige Zeichenfolge im Tabellen-Link, die Sie nach `d/` und vor `/edit` kopiert haben.
-   * Beispiel:
+   * Zum Beispiel:
       * Wenn Ihre URL `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0` ist,
       * Lautet die Tabellen-ID `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
 

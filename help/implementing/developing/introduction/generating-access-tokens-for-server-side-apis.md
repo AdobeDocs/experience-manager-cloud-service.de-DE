@@ -5,9 +5,9 @@ exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2089'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
-Benutzende mit der Rolle „IMS-Organisationsadministrator“, die Mitglieder des AEM-Benutzerprofils oder AEM-Produktprofils „Administratoren“ in der AEM-Autoreninstanz sind, können eine Reihe von Anmeldeinformationen aus AEM as a Cloud Service generieren. Jeder Berechtigungsnachweis ist eine JSON-Payload, die ein Zertifikat (den öffentlichen Schlüssel), einen privaten Schlüssel und ein technisches Konto, bestehend aus `clientId` und `clientSecret`, enthält. Diese Anmeldeinformationen können später von Benutzenden mit einer Admin-Rolle für die AEM as a Cloud Service-Umgebung abgerufen werden und sollten auf einem Nicht-AEM-Server installiert sein. Sie müssen zudem sorgfältig als geheimer Schlüssel behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit Adobe Identity Management Services (IMS) gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden. Das Zertifikat in den Anmeldedaten läuft standardmäßig nach einem Jahr ab, kann jedoch bei Bedarf aktualisiert werden. Siehe [Anmeldedaten aktualisieren](#refresh-credentials).
+Benutzende mit der Rolle „IMS-Organisationsadministrator“, die Mitglieder des AEM-Benutzerprofils oder AEM-Produktprofils „Administratoren“ in der AEM-Autoreninstanz sind, können eine Reihe von Anmeldeinformationen aus AEM as a Cloud Service generieren. Jeder Berechtigungsnachweis ist eine JSON-Payload, die ein Zertifikat (den öffentlichen Schlüssel), einen privaten Schlüssel und ein technisches Konto, bestehend aus `clientId` und `clientSecret`, enthält. Diese Anmeldeinformationen können später von Benutzenden mit einer Admin-Rolle für die AEM as a Cloud Service-Umgebung abgerufen werden und sollten auf einem Nicht-AEM-Server installiert sein. Sie müssen zudem sorgfältig als geheimer Schlüssel behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit Adobe Identity Management Services (IMS) gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden. Das Zertifikat in den Anmeldeinformationen läuft standardmäßig nach einem Jahr ab, sie können jedoch bei Bedarf aktualisiert werden, wie unter [Anmeldeinformationen aktualisieren](#refresh-credentials) beschrieben.
 
 Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
@@ -185,7 +185,7 @@ Konfigurieren Sie abschließend für die Gruppe die entsprechenden Berechtigunge
 
 ## Entwicklungsablauf {#developer-flow}
 
-Entwicklerinnen und Entwickler möchten wahrscheinlich Tests mit einer Entwicklungsinstanz ihrer Nicht-AEM-Anwendung durchführen (entweder auf ihrem Laptop oder gehostet), die Anfragen an eine Entwicklungsumgebung von AEM as a Cloud Service sendet. Da Entwicklungspersonen jedoch nicht unbedingt über Berechtigungen als IMS-Admin verfügen, können wir nicht davon ausgehen, dass sie den im normalen Server-zu-Server-Fluss beschriebenen JWT-Inhaber generieren können. Deshalb bieten wir Entwicklungspersonen einen Mechanismus, um direkt ein Zugriffs-Token zu generieren, das in Anfragen an AEM as a Cloud Service-Umgebungen verwendet werden kann, auf die sie Zugriff haben.
+Entwicklerinnen und Entwickler möchten wahrscheinlich Tests mit einer Entwicklungsinstanz ihrer Nicht-AEM-Anwendung durchführen (entweder auf ihrem Laptop oder gehostet), die Anfragen an eine Entwicklungsumgebung von AEM as a Cloud Service sendet. Da Entwicklerinnen und Entwickler jedoch nicht unbedingt über IMS-Admin-Berechtigungen verfügen, kann Adobe nicht davon ausgehen, dass sie das im normalen Server-zu-Server-Fluss beschriebene JWT-Bearer-Token generieren können. Deshalb bieten wir Entwicklungspersonen einen Mechanismus, um direkt ein Zugriffs-Token zu generieren, das in Anfragen an AEM as a Cloud Service-Umgebungen verwendet werden kann, auf die sie Zugriff haben.
 
 Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwicklerkonsole von AEM as a Cloud Service finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
@@ -213,7 +213,7 @@ Senden Sie die entsprechenden Server-zu-Server-API-Aufrufe vom Nicht-AEM-Program
 
 ## Verlängern der Gültigkeit von Anmeldeinformationen {#refresh-credentials}
 
-Standardmäßig laufen die Anmeldeinformationen für AEM as a Cloud Service nach einem Jahr ab. Um die Kontinuität des Service sicherzustellen, haben Entwicklungspersonen die Möglichkeit, die Gültigkeit der Anmeldeinformationen zu verlängern, sodass sie für ein weiteres Jahr gültig bleiben.
+Standardmäßig laufen die Anmeldeinformationen für AEM as a Cloud Service nach einem Jahr ab. Um die Kontinuität des Service sicherzustellen, haben Entwicklerinnen und Entwickler die Möglichkeit, die Gültigkeit der Anmeldeinformationen zu verlängern, sodass sie für ein weiteres Jahr gültig bleiben.
 
 Gehen Sie wie folgt vor, um diese Aktualisierungserweiterung zu erreichen:
 

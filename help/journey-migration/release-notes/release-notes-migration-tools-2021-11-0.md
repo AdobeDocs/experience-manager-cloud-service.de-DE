@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as
 
 >[!NOTE]
 >
->Die neuesten Versionshinweise finden Sie unter [Aktuelle Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md) .
+>Die neuesten Versionshinweise finden Sie unter [Aktuelle Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Content Transfer Tool {#ctt-release}
 

@@ -5,9 +5,9 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1102'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Die folgenden Vorlagen sind bei Verwendung des Assistenten zum **Erstellen** ein
 
 Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für ein Display verwenden. Mit dieser Methode muss die umständliche Zeitplandefinition nicht wiederholt werden.
 
-1. Navigieren Sie zum [Screens-Dienstanbieter](https://experience.adobe.com/screens).
+1. Navigieren Sie zu [Screens Services Provider](https://experience.adobe.com/screens).
 
 ### Erstellen von Standardzuweisungsdetails für einen Kanal {#create-default}
 

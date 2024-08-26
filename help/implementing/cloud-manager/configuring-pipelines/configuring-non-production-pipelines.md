@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, einen der folgenden Code-Typen **einzuschließen**:
 
 * **Konfiguration** – Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM-Umgebung.
-   * Unter [Verwenden von Config Pipelines](/help/operations/config-pipeline.md) finden Sie eine Liste der unterstützten Konfigurationen, zu denen die Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen gehören, und deren Verwaltung in Ihrem Repository, damit sie ordnungsgemäß bereitgestellt werden.
+   * Eine Liste der unterstützten Konfigurationen, einschließlich Protokollweiterleitung, bereinigungsbezogener Wartungsaufgaben und verschiedener CDN-Konfigurationen, sowie Informationen zu deren ordnungsgemäßer Bereitstellung im Repository finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md).
    * Wenn Sie eine gezielte Bereitstellungs-Pipeline ausführen, werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert sind, die Sie in der Pipeline definiert haben.
    * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.

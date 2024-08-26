@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1343'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ indem Sie eine Anfrage an den Support senden und darin das entsprechende Program
 
 ## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 
-Zugriffsrichtlinien auf Publish-Ebene, auch CUGs (Closed User Groups, geschlossene Benutzergruppen) genannt, werden im AEM-Autor definiert. Siehe [Erstellen einer geschlossenen Benutzergruppe](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=de#applying-your-closed-user-group-to-content-pages). Um den Zugriff auf bestimmte Abschnitte oder Seiten einer Website für einige Benutzende zu beschränken, wenden Sie die geschlossenen Benutzergruppen nach Bedarf mithilfe der AEM-Authoring-Umgebung wie hier beschrieben an, und replizieren Sie sie auf der Veröffentlichungsebene.
+Zugriffsrichtlinien auf Veröffentlichungsebene, auch geschlossene Benutzergruppen (Closed User Groups, CUGs) genannt, werden in der AEM-Authoring-Umgebung definiert, siehe [Erstellen einer geschlossenen Benutzergruppe](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=de#applying-your-closed-user-group-to-content-pages). Um den Zugriff auf bestimmte Abschnitte oder Seiten einer Website für einige Benutzende zu beschränken, wenden Sie die geschlossenen Benutzergruppen nach Bedarf mithilfe der AEM-Authoring-Umgebung wie hier beschrieben an, und replizieren Sie sie auf der Veröffentlichungsebene.
 
 * Wenn sich Anwender mithilfe von SAML bei einem Identitätsanbieter anmelden, identifiziert der Authentifizierungs-Handler die Gruppenmitgliedschaften des Anwenders (die mit den geschlossenen Anwendergruppen auf der Veröffentlichungsebene übereinstimmen sollten) und behält die Verknüpfung zwischen dem Anwender und der Gruppe über einen Repository-Datensatz bei.
 * Wenn die Anmeldung ohne Einbindung eines Identitätsanbieters erfolgt, kann der benutzerdefinierte Code dieselben Repository-Strukturbeziehungen anwenden.

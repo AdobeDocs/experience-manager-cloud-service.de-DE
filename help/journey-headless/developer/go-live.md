@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß 
 
 Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) in AEM as a Cloud Service bereitgestellt werden.
 
-Sie können mit der Bereitstellung Ihres Codes mit der CI/CD-Pipeline von Cloud Manager beginnen, die ausführlich unter [Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager](/help/implementing/deploying/overview.md) behandelt wird.
+Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die ausführlich unter [Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager](/help/implementing/deploying/overview.md) erörtert wird.
 
 ## Leistungsüberwachung {#performance-monitoring}
 

@@ -2,9 +2,9 @@
 title: Reine Staging- und Produktions-Pipelines
 description: Erfahren Sie, wie Sie Staging- und Produktionsbereitstellungen mithilfe von dedizierten Pipelines aufteilen können.
 source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '952'
+ht-degree: 100%
 
 ---
 
@@ -48,8 +48,8 @@ Reine Produktions-Pipelines verwenden immer die Artefakte aus der reinen Produkt
 
 Beachten Sie auch die folgenden bekannten Probleme, bevor Sie mit dem Testen dieser Funktion beginnen.
 
-* Wenn Sie nur Produktions-Pipelines verwenden, profitieren Sie möglicherweise nicht von den neuesten AEM
-   * In einigen Fällen kann der AEM-Aktualisierungsprozess den Code wieder auf den Code zurücksetzen, der zuletzt über die vollständige Stapel-Pipeline bereitgestellt wurde.
+* Wenn Sie reine Produktions-Pipelines verwenden, profitieren Sie möglicherweise nicht von den neuesten AEM-Aktualisierungen.
+   * In einigen Fällen kann der AEM-Aktualisierungsprozess den Code wieder auf den Code zurücksetzen, der zuletzt über die Full-Stack-Pipeline bereitgestellt wurde.
 * Sie können keine [Umgebungswiederherstellung](/help/operations/restore.md#offsite-backup) anfordern, wenn Sie reine Produktions- oder Staging-Pipelines verwenden.
 
 ## Pipeline-Erstellung {#pipeline-creation}

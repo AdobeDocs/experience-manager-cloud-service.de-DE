@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2831'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -628,7 +628,7 @@ In der Support-Anfrage sollten Kunden Folgendes angeben:
 * Splunk-HEC-Endpunktadresse. Dieser Endpunkt muss über ein gültiges SSL-Zertifikat verfügen und öffentlich zugänglich sein.
 * Splunk-Index
 * Splunk-Port
-* Splunk-HEC-Token. Weitere Informationen finden Sie unter [Beispiele für HTTP-Ereigniserfassung](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) .
+* Splunk-HEC-Token. Weitere Informationen finden Sie unter [Beispiele für HTTP-Event Collector](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
 Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm und Umgebungstyp angegeben werden. Wenn ein Kunde beispielsweise Entwicklungs-, Staging- und Produktionsumgebungen wünscht, sollte er drei Informationssätze bereitstellen, wie unten angegeben.
 

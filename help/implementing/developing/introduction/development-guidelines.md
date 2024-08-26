@@ -5,9 +5,9 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2745'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -194,7 +194,7 @@ Als Abkürzung kann der folgende Cloud Manager CLI-Befehl verwendet werden, um d
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Weitere Informationen finden Sie unter [Versionsinformationen](/help/release-notes/home.md) .
+Weitere Informationen finden Sie in den [Versionsinformationen](/help/release-notes/home.md).
 
 Entwickler können Statusinformationen generieren und verschiedene Ressourcen auflösen.
 
@@ -214,7 +214,7 @@ Die AEM as a Cloud Service Developer Console enthält einen Link zum Tool „Abf
 
 Bei Produktionsprogrammen wird der Zugriff auf die AEM as a Cloud Service Developer Console durch die Rolle „Cloud Manager – Entwicklerrolle“ in der Adobe Admin Console definiert, während bei Sandbox-Programmen die AEM as a Cloud Service Developer Console allen Benutzenden zur Verfügung steht, deren Produktprofil ihnen Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager - Entwicklerrolle“ für Status-Dumps erforderlich, und der Repository Browser und die Benutzenden müssen auch in den Produktprofilen „AEM-Benutzer“ oder „AEM-Administrator“ sowohl für die Authoring- als auch für die Publishing-Services definiert sein, um Daten von beiden Services anzeigen zu können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
 
-### Performance-Überwachung {#performance-monitoring}
+### Leistungsüberwachung {#performance-monitoring}
 
 Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Anwendungsmetriken können derzeit nicht überwacht werden.
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1297'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautor
 
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt mit einer blauen Umrisslinie markiert.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie mit dem Mauszeiger über einen Inhalt im Editor fahren, werden bearbeitbare Inhalte mit einem dünnen blauen Umriss hervorgehoben.
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
-Die blaue Umrisslinie wird zu einer blauen Umrisslinie, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie Ihre Änderungen vor und drücken Sie dann die Eingabetaste/die Eingabetaste oder wählen Sie außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
+Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
 Wenn Sie die Textkomponente auswählen, werden ihre Details in der [Eigenschaftenleiste angezeigt. ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch in der Leiste bearbeiten.
 
@@ -65,21 +65,21 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Zur Vereinfachung sind an zwei Stellen Formatierungsoptionen und Details zu Ihrem Text verfügbar.
 
-#### Kontextmenü {#context-menu}
+#### Das Kontextmenü {#context-menu}
 
-Das Kontextmenü wird über dem Rich-Text-Block geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen kann es sein, dass einige Optionen hinter der Schaltfläche mit den Auslassungspunkten ausgeblendet werden.
+Das Kontextmenü wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen kann es sein, dass einige Optionen hinter der Schaltfläche mit den Auslassungspunkten ausgeblendet werden.
 
 ![Kontextmenü für Rich-Text](assets/rich-text-context-menu.png)
 
-Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld nicht mehr im Fokus ist.
+Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld nicht mehr den Eingabefokus hat.
 
 #### Die Eigenschaftenleiste {#properties-rail}
 
-Die Leiste &quot;[properties&quot;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)&quot;zeigt ein Element für den ausgewählten Text an. Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen, um den Text zu bearbeiten.
+Die [Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) zeigt ein Element für den ausgewählten Text an. Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen, mit der Sie den Text bearbeiten können.
 
 ![Dialogfeld für die Bearbeitung von Rich-Text](assets/rich-text-canvas.png)
 
-Tippen oder klicken Sie auf **Abbrechen** oder **Fertig** , um die Änderungen zu verwerfen oder zu speichern.
+Tippen oder klicken Sie auf **Fertig** oder **Abbrechen**, um die Änderungen zu speichern bzw. zu verwerfen.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -106,19 +106,19 @@ Wenn Sie ein Feld auswählen, das sich auf ein Inhaltsfragment bezieht, wird das
 
 Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
 
-Wenn Sie Ihr Inhaltsfragment stattdessen im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) bearbeiten möchten, tippen oder klicken Sie in der Eigenschaftenleiste auf die Schaltfläche [**Im Inhaltsfragment-Editor öffnen**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) .
+Wenn Sie Ihr Inhaltsfragment im [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) bearbeiten möchten, tippen oder klicken Sie stattdessen in der Eigenschaftenleiste auf die Schaltfläche [**Im CF-Editor öffnen**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit).
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey `e` , um das ausgewählte Inhaltsfragment im Inhaltsfragment-Editor zu bearbeiten.
+>Verwenden Sie den Hotkey `e`, um das ausgewählte Inhaltsfragment im Inhaltsfragmenteditor zu bearbeiten.
 
-Abhängig von den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
+Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
 
 >[!NOTE]
 >
->Der universelle Editor [ validiert Inhaltsfragmentfelder anhand ihrer Modelle](/help/assets/content-fragments/content-fragments-models.md#validation) , wodurch Sie Datenintegrationsregeln wie Regex-Muster und Eindeutigkeitsbeschränkungen erzwingen können.
+>Der universelle Editor [validiert Inhaltsfragmentfelder anhand ihrer Modelle](/help/assets/content-fragments/content-fragments-models.md#validation). Dadurch können Sie Datenintegrationsregeln wie Regex-Muster und Eindeutigkeitsbeschränkungen erzwingen.
 >
->Dadurch wird sichergestellt, dass Ihre Inhalte bestimmten Geschäftsanforderungen entsprechen, bevor sie veröffentlicht werden.
+>So wird sichergestellt, dass Ihre Inhalte bestimmten Geschäftsanforderungen entsprechen, bevor sie veröffentlicht werden.
 
 ### Hinzufügen von Komponenten zu Containern {#adding-components}
 

@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2685'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Dies kann
 
 ![Inhaltsfragmenteditor – Link-Symbol](assets/cf-authoring-link-icon.png)
 
-### Baumstruktur {#structure-tree}
+### Strukturbaum {#structure-tree}
 
 Öffnen Sie die Registerkarte **Baumstruktur** über die Editor-Symbolleiste, um die hierarchische Struktur des Inhaltsfragments und dessen Verweise anzuzeigen. Verwenden Sie die Link-Symbole, um zu den Verweisen zu navigieren.
 
@@ -128,7 +128,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Variante umbenennen](#rename-variation)
 
-* [Variante löschen](#delete-variation)
+* [Löschen einer Variante](#delete-variation)
 
 ### Variante erstellen {#create-variation}
 
@@ -197,7 +197,7 @@ So verwenden Sie die generativen Varianten im Inhaltsfragmenteditor:
 
    ![Anzeigen von „Varianten generieren“ im Inhaltsfragment](assets/cfm-generate-variations5.png)
 
-Weitere Informationen finden Sie unter [Generate Variations](/help/generative-ai/generate-variations.md) .
+Weitere Informationen finden Sie unter [Varianten generieren](/help/generative-ai/generate-variations.md).
 
 ### Löschen einer Variante {#delete-variation}
 

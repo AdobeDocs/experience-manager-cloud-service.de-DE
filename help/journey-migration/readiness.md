@@ -5,9 +5,9 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 In dieser Phase der AEM as a Cloud Service-Migrations-Tour machen Sie sich mit AEM as a Cloud Service vertraut. Sie können die wesentlichen Änderungen Revue passieren lassen, die eingeführt wurden, und verstehen, was für die Planung einer erfolgreichen Migration in die Cloud erforderlich ist.
 
-## Ihre bisherige Tour {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
 Das vorherige Dokument [Einstieg in die Migration zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) enthält eine Liste von Phasen, die Sie durchlaufen müssen, damit Sie zu AEM as a Cloud Service migrieren können. Außerdem werden die Vorteile der Migration erläutert.
 
@@ -44,7 +44,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
 <thead>
   <tr>
     <th>Was hat sich geändert?</th>
-    <th>Verweis</th>
+    <th>Referenz</th>
     <th>Wichtige Vorteile</th>
   </tr>
 </thead>

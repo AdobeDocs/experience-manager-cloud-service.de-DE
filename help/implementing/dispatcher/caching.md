@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2897'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -245,7 +245,7 @@ Zur Verbesserung von Cache-Anforderungen entfernt das CDN gängige Marketing-bez
 
 Reichen Sie ein Support-Ticket ein, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
 
-Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die Eigenschaft &quot;`ignoreUrlParams`&quot;der Dispatcher-Konfiguration zu konfigurieren. Siehe [Konfigurieren von Dispatcher - Ignorieren von URL-Parametern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die Eigenschaft `ignoreUrlParams` der Dispatcher-Konfiguration zu konfigurieren; siehe [Konfigurieren des Dispatchers – Ignorieren von URL-Parametern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
 
 Es gibt zwei Möglichkeiten Marketing-Parameter zu ignorieren. (Wobei die erste Variante bevorzugt wird, um Cache-Busting über Abfrageparameter zu ignorieren):
 

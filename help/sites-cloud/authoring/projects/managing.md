@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ So fügen Sie einer Kachel Elemente hinzu:
 
    ![Element zu einer Kachel hinzufügen](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Fügen Sie der Kachel ein Element so hinzu, wie Sie eine neue Kachel erstellen würden. Weitere Informationen finden Sie unter [Projektkacheln](/help/sites-cloud/authoring/projects/overview.md#project-tiles) . In diesem Beispiel wurde ein Workflow hinzugefügt.
+1. Fügen Sie der Kachel ein Element so hinzu, wie Sie eine neue Kachel erstellen würden. Weitere Informationen finden Sie unter [Projektkacheln](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In diesem Beispiel wurde ein Workflow hinzugefügt.
 
 ### Öffnen einer Kachel {#opening-a-tile}
 
