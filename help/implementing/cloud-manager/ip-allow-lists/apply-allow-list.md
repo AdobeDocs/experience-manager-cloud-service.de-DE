@@ -5,7 +5,7 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 22%
@@ -17,6 +17,8 @@ ht-degree: 22%
 
 Beim Anwenden von IP-Zulassungslisten werden alle in der Listendefinition enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Das Aufheben der Anwendung einer Liste ist das Gegenteil zu diesem Prozess.
 
+{{add-cm-allowlist-frontend-pipeline}}
+
 ## Anwenden von IP-Zulassungslisten {#applying}
 
 Ein Benutzer mit der Rolle **Business Owner** oder **Deployment Manager** kann die folgenden Schritte ausführen, um eine IP-Zulassungsliste anzuwenden.
@@ -26,7 +28,7 @@ Ein Benutzer mit der Rolle **Business Owner** oder **Deployment Manager** kann d
 1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an.
 1. Wählen Sie die entsprechende Organisation aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
-1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Navigieren Sie auf der Seite **Übersicht** zum Bildschirm **Umgebungen**.
 1. Navigieren Sie auf dem Bildschirm **Umgebungen** zur Seite mit den spezifischen Umgebungsdetails.
 1. Navigieren Sie zur Tabelle **IP-Zulassungsliste** .
 1. Verwenden Sie die Eingabefelder oben in der Tabelle, damit Sie die IP-Zulassungsliste und den Autoren- oder Veröffentlichungsdienst auswählen können, auf die Sie sie anwenden möchten.

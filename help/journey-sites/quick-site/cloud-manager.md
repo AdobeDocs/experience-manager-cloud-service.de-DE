@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
@@ -112,6 +112,8 @@ Der Gesamtfluss ist einfach und intuitiv, auch wenn Sie noch keine umfassende Er
 ![Fluss von Quick Site Creation](assets/qsc-flow.png)
 
 Der Hauptvorteil der Verwendung des Tools Quick Site Creation besteht darin, dass der reine Frontend-Entwickler nur für die tatsächliche Anpassung verantwortlich ist. Der Frontend-Entwickler hat keine Interaktion mit AEM und benötigt keine Kenntnisse von AEM.
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## Wie geht es weiter {#what-is-next}
 
