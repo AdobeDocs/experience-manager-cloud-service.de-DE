@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 15%
@@ -34,7 +34,7 @@ Nach dem Hinzufügen können [IP-Zulassungslisten mehrmals als Einheit oder Enti
 
 ## Verwendung der Cloud Manager IP-Zulassungsliste mit der Frontend-Pipeline {#allowlists-frontend-pipeline}
 
-Wenn Sie die Front-End-Pipeline [ zur Entwicklung von Sites verwenden (oder verwenden möchten), muss zuvor die folgende Cloud Manager IP-Zulassungsliste hinzugefügt werden.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+Wenn Sie die Front-End-Pipeline [ zur Entwicklung von Sites verwenden bzw. verwenden möchten, muss zuvor die folgende Cloud Manager IP-Zulassungsliste hinzugefügt werden.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
 
 Wenn Sie [die IP-Zulassungsliste hinzufügen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), geben Sie ihr den Namen *`Cloud Manager`*. Kopieren Sie dann die Adressenliste unten und fügen Sie sie in das Dialogfeld &quot;IP-Zulassungsliste&quot;ein.
 

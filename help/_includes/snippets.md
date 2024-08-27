@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
+source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 73%
@@ -133,5 +133,5 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!IMPORTANT]
 >
->Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden (oder verwenden möchten), muss die IP-Zulassungsliste für Cloud Manager zuvor hinzugefügt werden.
+>Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden oder verwenden möchten, muss die IP-Zulassungsliste für Cloud Manager zuvor hinzugefügt werden.
 >Siehe [Verwenden der Cloud Manager IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
