@@ -1,7 +1,9 @@
 ---
 title: Versionshinweise für Version 2024.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2024.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: effb2f01dc26a7ab80b18c9e80ecc7286cb67284
+feature: Release Information
+role: Admin
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%
@@ -160,7 +162,7 @@ Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Er
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
-### Aktionszentrum – Benachrichtigungen zum Inhaltsstatus, Early-Adopter-Programm {#actions-center-notifications}
+### Aktionszentrum – Benachrichtigungen zum Inhaltsstatus – Early-Adopter-Programm {#actions-center-notifications}
 
 Das [Aktionszentrum](/help/operations/actions-center.md) sendet E-Mail-Benachrichtigungen, wenn wichtige Vorfälle auftreten oder wenn etwas in Ihrem Code oder in Ihrer Konfiguration festgestellt wird, das proaktive Maßnahmen erfordert. Adobe hat jetzt mehrere neue Arten von Benachrichtigungen im Zusammenhang mit dem Status Ihrer Inhalte eingeführt. Diese Funktion ist über ein Early-Adopter-Programm verfügbar. Wenden Sie sich an die Adobe-Kundenunterstützung, wenn Sie teilnehmen möchten.
 
