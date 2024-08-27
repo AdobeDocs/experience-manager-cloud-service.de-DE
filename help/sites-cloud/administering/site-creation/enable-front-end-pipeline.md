@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 49%
+ht-degree: 47%
 
 ---
 
@@ -50,7 +50,7 @@ AEM kann Ihre vorhandene Site automatisch an die Frontend-Pipeline anpassen. Um 
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-Die Aktivierung Ihrer Site erfolgt über die Sites-Konsole unter Verwendung der [Site-Leiste](site-rail.md).
+Die Aktivierung Ihrer Site erfolgt über die Konsole &quot;Sites&quot;mit der Seitenleiste [Site-Leiste](site-rail.md).
 
 1. Melden Sie sich bei AEM an und gehen Sie über **Globale Navigation** > **Sites** zu Ihrer Site.
 1. Wählen Sie Ihre Site in der Konsole aus. Wählen Sie den Stamm der Site aus, keine untergeordneten Seiten.
