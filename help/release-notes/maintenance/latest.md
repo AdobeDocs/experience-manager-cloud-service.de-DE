@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 37%
 
 ---
 
@@ -16,107 +16,82 @@ ht-degree: 100%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 17465 {#release-17465}
+## Version 17569 {#release-17569}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 17465, die am 14. August 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 17258.
+Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 17569, die am Mittwoch, 27. August 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 17465.
 
-Die Funktionsaktivierung von 2024.8.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Die Funktionsaktivierung von 2024.9.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-17465}
+### Verbesserungen {#enhancements-17569}
 
-* FORMS-15436 – Ordnungsgemäße Ausnahmebehandlung in der Adobe Sign-Statusplanung.
-* FORMS-15362 – Hinzufügen einer Konfiguration für „forms-foundation“ in aemds, um die Anmeldefunktion zu aktivieren.
-* FORMS-15261 – SPA wird im Forms-Editor nicht gerendert.
-* FORMS-15138 – Umgang mit Abwärtskompatibilität doppelter Daten aufgrund eines Sling Commons JSON-Upgrades.
-* FORMS-15113 – Ändern des Schlüsselnamens von „visitorId“ in „sid“ zum RUM-Tracking.
-* FORMS-15103 – Einem Formular beigefügte Assets werden bei der Edge-Bereitstellung nicht veröffentlicht.
-* FORMS-15082 – JSON-Schema zur Zuordnung zu benutzerdefinierten adaptiven Formularkomponenten.
-* FORMS-15002 – Vorlagentypregistrierung von v1-Fragmenten.
-* FORMS-14845 – Unterstützung für xdpRef in Kernkomponenten-Basisformularen über Forms Manager.
-* FORMS-14840 – Fehler beim Forms-Vorbefüllungs-Dienst.
-* FORMS-14836 – Verbessern der Forms Manager-Benutzeroberfläche zum Auflisten von AF1-Fragmentvorlagen.
-* FORMS-14834 – Vorlagenunterstützung für Fragmente in AF1.
-* FORMS-14275 – Überschreiben der Dankeseite und Dankesnachricht im Einbettungs-Container
-* FORMS-13623 – Aktivieren der automatischen Speicherfunktion für V2.
-* FORMS-8651 – Warndialogfeld beim Ändern der Datenmodellkonfiguration auf der Seite „Formulareigenschaften“.
-* SITES-23310 – Content Fragments REST-API: Verhindern zirkulärer Abhängigkeiten in verschachtelten Verweisen für Inhaltsfragmente.
-* SITES-23285 – Content Fragments REST-API: Erstellen eines Endpunkts, um alle verfügbaren Sprachen aufzulisten.
-* SITES-22857 – Content Fragments REST-API: Kontrollkästchen-Auflistungsfelder sollten nicht zulassen, dass mehrere Eigenschaften auf „false“ gesetzt sind.
-* SITES-22813 – Content Fragments REST-API: Definieren von Min.-/Max.-Eigenschaften für Auflistungsfelder.
-* SITES-22031 – Content Fragments REST-API: Abrufen zulässiger Inhaltsfragmentmodelle für den Ordner eines Fragments.
-* SITES-17640 – Content Fragments REST-API: Validierung der Veröffentlichungsvorgänge für Inhaltsfragmente.
-* SITES-22677 – Content Fragments REST-API: Abrufen einer flachen Liste nachkommender Verweise.
-* SITES-22207 – Duplizierties Modell beim Erstellen von Inhaltsfragmenten.
-* SITES-23093 – Eventing: Hinzufügen von Tags zu Payloads bei Inhaltsfragmentmodell-Ereignissen.
-* SITES-23092 - Eventing: Hinzufügen von Tags zu Payloads für Inhaltsfragment-Ereignisse.
-* SITES-22447 – Hinzufügen von Unterstützung der Vererbung von Experience Fragment-Eigenschaften zur Registerkarte „Allgemeine Eigenschaften“.
-* SITES-12209 – Verbessern der Leistung des Richtlinieneditors durch Hinzufügen von „cq:policy“ zum Index.
+* CQ-4353778: Übersetzungsprozessereignisse.
+* CQ-4354583: Senden Sie Übersetzungsprozessereignisse über die Adobe-Pipeline.
+* CQ-4356479: Nur Adobe-Code darf den /adobe-Servlet-Kontext verwenden.
+* CQ-4358133: Optimierung der Jenkins-Worker-Nutzung.
+* CQ-4358226: Die Funktion &quot;Übersetzung speichern&quot;funktioniert nicht für bestimmte Zeichenfolgenformate.
+* CQ-4358270: AEM Translation Kit: August 08.
+* CQ-4358310: Fügen Sie oak-compat-query-spi-1.2 zum Schnellstart hinzu.
+* GRANITE-36205: Automatisierte Aktualisierung für interne Oak-Versionen in QS.
+* GRANITE-49833: Batch-Unterstützung für Ereignis-Absender und -Proxy.
+* GRANITE-52053: Entfernen Sie die Verwendung von Commons Collections 3: Platform Other.
+* GRANITE-52492: Elastic async catch the case of PIT restore.
+* GRANITE-53086: Jacoco-Plugin-Version auf 0.8.12 in AEMaaCS aktualisieren.
+* GRANITE-53099: Update auf Apache Felix HTTP Jetty 5.1.24.
+* GRANITE-53125: Classification zu CloudEvent hinzufügen.
+* GRANITE-53328: Update von Filevault auf 3.8.0-T20240726111512-3cc11d50 mit Verbesserungen bei der Stashing-Protokollierung.
+* GRANITE-53340: AEM660: Ordnungsgemäße Versionierung und Verzweigung für 660 CQ/Platform.
+* GRANITE-53341: Warnung zur Verwendung von ACS Commons 6.
+* GRANITE-53453: commons-lang auf 3.15.0 aktualisieren.
+* GRANITE-53473: Nicht veraltete Sling-Einstellungen.
+* GRANITE-53478: Update von Filevault auf Version 3.8.0.
+* GRANITE-53505: Aktualisierung der QS auf &quot;commons-collections-3.2.2-adobe-2&quot;.
+* GRANITE-53528: Update der Version der Plattformartefakte .
+* GRANITE-53547: Bieten Sie eine alternative API, um die Verwendung von Apache Commons Lang 2 zu vermeiden.
+* GRANITE-53575: Verwenden Sie BSAFE 6.2.5 in CS.
+* GRANITE-53608: Aktualisierung von Oak auf die neueste öffentliche Version (1.68.0).
+* SITES-23583: Sites Evergreen-Tests schlagen auf Java 17 fehl.
+* SKYOPS-79535: Aktualisierung auf das Rumskript v2.
+* SKYOPS-79816: Aktivieren Sie die Sling Feature Analyzer-Aufgabe für Dienstbenutzerzuordnungen im FACT-Tool.
+* SKYOPS-81179: AEM erstellt Tests für das Umschalten zwischen Bundles.
+* SKYOPS-81866: Berichtwarnungen für Pakete, von denen bekannt ist, dass sie mit Java 21 inkompatibel sind.
+* SKYOPS-82660: Aktualisierung der Sling-API auf Version 2.27.6.
+* SKYOPS-82961: Aktualisierung auf Sling ResourceResolver 1.12.0-T20240723153354-a0270a0.
+* SKYOPS-83356: Erstellen Sie ein globales Dashboard zur Verfolgung von JVM-Versionen, die in AEM -Bereitstellungen verwendet werden.
+* SKYOPS-83436: Java Runtime 21-Rollout bricht die Erstellung von adaptiven Formularen in AEM Forms ab.
+* SKYOPS-84272: Protokollieren Sie die beim Start des AEM-Starters verwendete Java-Version.
 
-### Behobene Probleme {#fixed-issues-17465}
+### Behobene Probleme {#fixed-issues-17569}
 
-* CQ-4358028 – Fehler bei Projekterstellung, wenn Miniaturansichten hochgeladen werden.
-* CQ-4357891 – Sequenzfehler beim XLIFF-Export.
-* CQ-4357059 – Übersetzungsauftrag dauert stundenlang und verursacht einen Timeout-Fehler vom Typ 503 in AEMaaCS.
-* FORMS-15320 – E-Mail-Übermittlung funktioniert nicht in einem auf Kernkomponenten basierenden Formular.
-* FORMS-15272 – AEM Forms – Kontrollkästchengruppe sendet nur einen Wert.
-* FORMS-15269 – Produktbezogene Probleme nach der Wartungsversion 16461.
-* FORMS-15174 – JsonSchemaParser isValid-Problem.
-* FORMS-15095 – Mehrzeiliges Textfeld kann in AEM Forms über Bedienfelder hinaus erweitert werden.
-* FORMS-15057 – FDM-Sharepoint-Liste gibt Anhangsfehler bei Übermittlung aus (> 999).
-* FORMS-15011 – Core Editor verursacht Konsolenfehler beim Öffnen eines Formulars im Editor.
-* FORMS-14809 – SDK-Ordner wird nicht automatisch im freigegebenen temporären Ordner erstellt.
-* FORMS-14327 – Forms Service-APIs: Datenextrahierung: Gibt den Antwort-Code 500 zurück, wenn ein nicht interaktives PDF-Dokument in der Eingabe bereitgestellt wird.
-* FORMS-7475 – Sortierung funktioniert nicht auf der Seite zum Erstellen adaptiver Formulare.
-* FORMS-3309 – Wenn beim Senden eines Formulars mehrere Optionen ausgewählt sind, wird in einem generierten DoR nur eine Option angezeigt.
-* SITES-23646 – GraphQL-Modellendpunkt schlägt bei mit OpenAPI erstellten Modellen fehl, wenn Felder eindeutig sind.
-* SITES-23637 – Content Fragments REST-API: OpenAPI verwendet nicht den richtigen Werttyp für Auflistungen.
-* SITES-23573 – Content Fragments REST-API: Live-Beziehungen werden bei einem GET-Aufruf für Inhaltsfragmente nicht durch uuid berücksichtigt.
-* SITES-23535 – Content Fragments REST-API: Multifelder zum Auflisten von Inhaltsfragmentmodellen weisen leere Werte auf.
-* SITES-23534 – Content Fragments REST-API: ClassCastException bei Validierung von Inhaltsfragmenten.
-* SITES-23524 – Anpassen des GraphQL BFF-Modellendpunkts zur Unterstützung von Auflistungsfeldern mit mehreren Feldern.
-* SITES-23467 – Content Fragments REST-API: Suchmodelle schlagen aufgrund eines Cursor-Problems fehl.
-* SITES-23327 – ArrayIndexOutOfBoundsException in AuditLogTimelineEventProvider während der Beschreibung der Timeline-Ereignisverarbeitung.
-* SITES-23277 – Content Fragments REST-API: Die Live-Beziehungsüberprüfung für Inhaltsfragmentfelder sollte nur für Live Copies durchgeführt werden.
-* SITES-23232 – Benutzerdefinierte Validierung funktioniert nicht in der neuen Benutzeroberfläche des CF-Editors.
-* SITES-23090 – Content Fragments REST-API: Titel eines gesperrten Inhaltsfragments kann nicht aktualisiert werden.
-* SITES-22981 – Bewerben eines verschachtelten Launches, der nicht tief ist, wird nicht veröffentlicht.
-* SITES-22870 – PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
-* SITES-22814 – Content Fragments REST-API: Die Feldwerte der Kontrollkästchen-Auflistungsfragmente sollten anhand der im Modell definierten Schlüssel geordnet werden.
-* SITES-22716 – Problem mit der Live-Nutzungsliste für vorkonfigurierte Komponenten.
-* SITES-22457 – Beim Bewerben eines Launches, der nicht tief ist, wird der Quellinhalt nicht aktualisiert.
-* SITES-22449 – Änderungen in Inhaltsfragmenten können nach einem AEM P20-Upgrade nicht gespeichert werden.
-* SITES-22279 – Content Fragments REST-API: Dem Inhaltsfragment fehlt das eindeutige Attribut für Auflistungstypen.
-* SITES-22203 – Content Fragments REST-API: Ausrichten von Management-APIs, um auf dieselbe Situation zu reagieren.
-* SITES-21973 – Content Fragments REST-API: Dem Modell fehlt das eindeutige Attribut für Auflistungstypen.
-* SITES-20364 – Umleitungen von Typ 302 funktionieren nicht mit Selektor in der URL.
-* SITES-21198 – VersionPreviewServlet: Die Bereinigung wird gleichzeitig in allen Cluster-Knoten ausgeführt, was Zusammenführungskonflikte verursacht und Commits blockiert.
+* CMGR-60225: Fehler bei der Pipeline-Ausführung beim AEM Sites CS-Kunden bei der Validierung der Aktualisierung auf AEM Version 17486.
+* GRANITE-45919: Eingebettete Länder in die Liste &quot;Land/Region&quot;unter &quot;Benutzereinstellungen bearbeiten&quot;.
+* GRANITE-51715: Die Auswahl gibt die Auswahl manchmal nicht in das Textfeld ein.
+* GRANITE-53290: Prüfen Sie beim Analysieren der URL in der XSS-Prüfung das Protokoll ordnungsgemäß.
+* GRANITE-53576: Falsche Definition des Service-Rangs in OSGi-Konfigurationen.
+* SKYOPS-82129: MemoryLek in Sling-Modellen.
 
-### Bekannte Probleme {#known-issues-17465}
+### Bekannte Probleme {#known-issues-17569}
 
-* ASSETS-40875 – Die AssetDeleteHandler-Klasse überwacht Asset-Löschereignisse und führt spezifische Aktionen basierend auf dem Typ des Löschereignisses durch (PRE_DELETE oder POST_DELETE). In bestimmten Szenarien verursacht der Ereignistyp POST_DELETE eine NullPointerException.
-* FORMS-14340 – Fehler bei der Instanziierung von FormsAndDocumentOmniSearchHandler und CloudStorageSubmitActionInserter. Dies sind harmlose Protokollanweisungen.
-* FORMS-15818 – Komponenten-Beschreibungseintrag „OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml“ Anweisungen in Server-Protokollen nicht gefunden. Dies sind harmlose Protokollanweisungen.
-* SITES-23662 – Benutzende, die eine Veröffentlichung auslösen, können nicht aus JCR-Protokollanweisungen in Server-Protokollen extrahiert werden. Dies ist für eine Funktion in der Entwicklung vorgesehen, die vorübergehende und harmlose Fehler „Eine gültige Benutzer-ID kann im Batch der OSGi-Ereignisse nicht gefunden werden“ im Protokoll verursachen kann.
+Keine.
 
-### Änderungshinweis {#change-notice-17465}
+### Änderungshinweis {#change-notice-17569}
 
 * AEM as a Cloud Service deaktiviert ab September 2024 die Serialisierung von Ressourcen-Konfliktlösern über das Sling Model Exporter-Framework. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md).
 
-### Eingestellte Funktionen und APIs {#deprecated-17465}
+### Eingestellte Funktionen und APIs {#deprecated-17569}
 
 Beachten Sie, dass wir gerade dabei sind, `com.day.cq.wcm.api` zu aktualisieren. Mit der aktuellen Version haben wir einige der Methoden und Klassen als `@Deprecated` markiert. Diese werden in zukünftigen Versionen entfernt. Daher sollten Sie erwägen, zu den vorgeschlagenen Alternativen zu wechseln, wenn Sie eine davon verwenden.
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-17465}
+### Sicherheitskorrekturen {#security-17569}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt sieben identifizierte Schwachstellen und bestärkt dadurch unser Engagement für einen robusten Systemschutz.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion werden vier Schwachstellen behoben, die unser Engagement für einen robusten Systemschutz verstärken.
 
-### Eingebettete Technologien {#embedded-tech-17465}
+### Eingebettete Technologien {#embedded-tech-17569}
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM Oak | 1.66.0 | [Oak-API 1.66.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html) |
-| AEM SLING-API | 2.27.2 | [Apache Sling-API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM Oak | 1,68,0 | [Oak-API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
+| AEM SLING-API | 2,27,6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
-| AEM-Kernkomponenten | 2.25.4 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-Kernkomponenten | 2,26,0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
