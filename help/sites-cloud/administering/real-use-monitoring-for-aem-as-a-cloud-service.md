@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Be
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
+source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1282'
 ht-degree: 14%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 14%
 
 >[!INFO]
 >
->Die clientseitige Überwachung funktioniert nur für Kunden mit AEM Cloud Service-Version **2024.5.16461** und höher.
+>Die clientseitige Überwachung funktioniert nur für Kunden mit AEM (Adobe Experience Manager) Cloud Service-Version **2024.5.16461** und höher.
 
 ## Überblick {#overview}
 
-Der Real Use Monitoring (RUM)-Dienst ist eine Technologie zur Leistungsüberwachung, die die digitalen Benutzererlebnisse einer Website oder Anwendung in Echtzeit erfasst und analysiert. Es bietet Einblicke in die Echtzeit-Leistung einer Webanwendung und bietet tiefere Einblicke in das Erlebnis der Endbenutzer. Der Dienst konzentriert sich auf die Leistungsoptimierung durch die Überwachung der Website-Interaktionen und nicht auf die Benutzer selbst.
+Der RUM-Dienst (Real Use Monitoring) ist eine Technologie zur Leistungsüberwachung, die die digitalen Benutzererlebnisse einer Website oder Anwendung in Echtzeit erfasst und analysiert. Es bietet Einblicke in die Echtzeit-Leistung einer Webanwendung und bietet tiefere Einblicke in das Erlebnis der Endbenutzer. Der Dienst konzentriert sich auf die Leistungsoptimierung durch die Überwachung der Website-Interaktionen und nicht auf die Benutzer selbst.
 
 Mit RUM werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis zur Rückgabe der Anfrage an den Browser verfolgt. Es hilft Entwicklern, die Anwendung zu erweitern, damit sie für die Endbenutzer einfach zu verwenden ist.
 
@@ -33,9 +33,8 @@ Mit RUM werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis
 
 ## Wer kann von einem echten Kontrolldienst für die Verwendung profitieren? {#who-can-benefit-from-rum-service}
 
-Der Real Use Monitoring Service ist für alle Kunden von Vorteil. Es bietet eine repräsentative Darstellung der Benutzerinteraktionen, um eine zuverlässige Messung der Website-Interaktion sicherzustellen, indem die Anzahl der clientseitigen Seitenansichten erfasst wird.
+AEM hat RUM entwickelt, um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit AEM Sites interagieren. RUM kann verwendet werden, um Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben auf - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
 
-Für alle Adobe-Kunden bietet dieser Dienst wertvolle Einblicke in Benutzerinteraktionen. Kunden, die ihr eigenes CDN verwenden, können von der vereinfachten Traffic-Berichterstellung profitieren, da Adobe jetzt die Datenerfassung direkt integriert, sodass separate Berichte während der Verlängerungszyklen nicht mehr erforderlich sind.
 
 ## Erfahren Sie, wie der Real Use Monitoring Service funktioniert. {#understand-how-the-rum-service-works}
 
@@ -110,7 +109,7 @@ Bei der Analyse von RUM-Daten kann es zu Abweichungen bei Seitenansichten und an
 
 1. **Der Pfad `/.rum` ist auf meiner Site blockiert. Wie soll ich beheben?**
 
-   Der Pfad `/.rum` ist erforderlich, damit die RUM-Sammlung funktioniert. Wenn Sie ein CDN vor dem haben, was Adobe als Teil von AEM as a Cloud Service bereitstellt, stellen Sie sicher, dass der Pfad &quot;`/.rum`&quot;zum gleichen AEM wie der Rest Ihres AEM weitergeleitet wird. Und stellen Sie sicher, dass sie in keiner Weise angepasst wird.
+   Der Pfad `/.rum` ist erforderlich, damit die RUM-Sammlung funktioniert. Wenn Sie das CDN vor einem Adobe AEM as a Cloud Service verwenden, stellen Sie sicher, dass der Pfad `/.rum` zum selben AEM wie Ihr anderer AEM weitergeleitet wird. Und stellen Sie sicher, dass sie in keiner Weise angepasst wird.
 
 1. **Zählt die RUM-Erfassung für Inhaltsanforderungen aus vertraglichen Gründen?**
 
