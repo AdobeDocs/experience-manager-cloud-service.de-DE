@@ -4,12 +4,13 @@ description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer 
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '1080'
-ht-degree: 100%
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 83%
 
 ---
+
 
 # Validieren von Inhaltsübertragungen {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, son
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Validieren der Prinzipalmigration {#how-to-validate-principal-migration}
+## Validieren der Prinzipalmigration {#how-to-validate-group-migration}
 
-Weitere Informationen zur Prinzipalmigration und dazu, warum diese erforderlich ist, finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+Siehe [Gruppenmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) , um die wichtigsten Migrationsdetails zu lesen und zu erfahren, warum dies erforderlich ist.
 
-Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Prinzipalmigration verfügbar. Anhand dieser Informationen lässt sich überprüfen, welche Benutzenden und Gruppen erfolgreich migriert wurden, und ggf. feststellen, warum einige Benutzenden nicht migriert wurden.
+Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Prinzipalmigration verfügbar. Diese Informationen können verwendet werden, um zu überprüfen, welche Gruppen erfolgreich migriert wurden, und um festzustellen, warum einige nicht migriert wurden.
 
 Gehen Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte (**…**) für diese Aufnahme und dann in der Dropdown-Liste auf **Prinzipalzusammenfassung anzeigen**.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf die Schaltfläche **Bericht herunterladen**, um den vollständigen, durch Kommas getrennten Bericht (CSV-Format) herunterzuladen.
+Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf die Schaltfläche **Bericht herunterladen** , um den vollständigen CSV-Bericht herunterzuladen.  Beachten Sie außerdem, dass am Ende dieses Berichts der Benutzerbericht ist, der für die Benutzerverwaltung nach der Migration verwendet werden kann.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->Wenn die Benutzerzuordnung deaktiviert ist, wird eine weitere Variante dieses Dialogfelds angezeigt. Darin wird angegeben, dass die Benutzerzuordnung deaktiviert war. Zudem umfasst es nicht die drei Felder mit Benutzerzuordnungswerten.
+Der Bericht &quot;Hauptmigration&quot;wird folgende Berichte enthalten:
+
+* Jede Gruppe wurde migriert und der erste Inhaltspfad, der die Migration dieser Gruppe ausgelöst hat. Die Gruppe kann sich auch auf andere Pfade befinden, es wird jedoch nur der erste für eine bestimmte Gruppe gefundene gemeldet. Es wird auch berichtet, ob es in einer ACL- oder einer CUG-Richtlinie gefunden wurde.
+* Jede Gruppe wurde nicht migriert, und der Grund für die Migration.  In der Regel ist dies einer der folgenden Gründe:
+   * Es handelt sich um eine integrierte Gruppe
+   * Es befindet sich bereits im Zielsystem
+   * Sie befindet sich nicht in einer ACL- oder CUG-Richtlinie für den migrierten Inhalt
+   * Es verfügt über ein doppeltes eindeutiges Feld (eines der Felder rep:principalName, rep:authorizableId, jcr:uuid oder rep:externalId befindet sich bereits im Ziel, diese müssen jedoch eindeutig sein).
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -166,6 +172,6 @@ Einige Pfade von den Extraktions- und Aufnahmeauszügen werden vorsätzlich ausg
 
 Zu den Pfaden, die wir derzeit aus den Auszügen ausschließen, gehören: `cqdam.text.txt`-Ausgabedarstellungen, Knoten in `/home` und Knoten in `/jcr:system`.
 
-### Geschlossene Benutzergruppen funktionieren nicht {#validating-cugs}
+### Geschlossene Benutzergruppen {#validating-cugs}
 
 Siehe [Migrieren geschlossener Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen bei der Verwendung einer CUG-Richtlinie (geschlossene Benutzergruppe).

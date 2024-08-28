@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code u
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 100%
 
 ---
@@ -101,7 +101,6 @@ Bitte beachten Sie, dass die gesamte Aufnahme fehlschlägt, wenn eine der folgen
 
 * Ein JCR-Knoten mit einem Namen, der länger als 150 Zeichen ist
 * Ein JCR-Knoten, der größer als 16 MB ist
-* Jede(r) Benutzer/Gruppe, der/die mit `rep:AuthorizableID` aufgenommen wird und bereits in AEM as a Cloud Service vorhanden ist
 * Ein extrahiertes und erfasstes Asset wird vor der nächsten Iteration der Migration in einen anderen Pfad entweder auf der Quelle oder am Ziel verschoben.
 
 ## Asset-Konsistenz {#asset-health}

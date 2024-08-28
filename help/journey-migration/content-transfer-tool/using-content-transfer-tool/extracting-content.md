@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Inhalte aus einer Adobe Experience Manager(AE
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
 1. Dadurch wird das Dialogfeld „Extraktion“ angezeigt. Klicken Sie auf **Extrahieren**, um die Extraktionsphase zu starten.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >Sie haben die Option, Staging-Container während der Extraktionsphase zu überschreiben. Wenn **Staging-Container überschreiben** deaktiviert ist, kann dies die Extraktion für nachfolgende Migrationen beschleunigen, bei denen die Einstellungen für Inhaltspfade oder eingeschlossene Versionen nicht geändert wurden. Wenn sich jedoch die Einstellungen für Inhaltspfade oder eingeschlossene Versionen geändert haben, dann sollte **Staging-Container überschreiben** aktiviert sein.
@@ -86,6 +86,6 @@ Führen Sie dazu folgende Schritte durch:
    >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
-## Wie es weitergeht: {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie sich mit dem Extrahieren von Inhalten aus einer Quelle im Content Transfer Tool vertraut gemacht haben, sind Sie nun bereit, den Aufnahmeprozess im Content Transfer Tool zu erlernen. Unter [Aufnehmen von Inhalten in das ZIel](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) erfahren Sie, wie Sie Ihren Migrationssatz mit dem Content Transfer Tool aufnehmen können.
