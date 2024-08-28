@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Be
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
+source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 14%
+source-wordcount: '1274'
+ht-degree: 13%
 
 ---
 
@@ -31,22 +31,22 @@ Mit RUM werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis
 >
 >Die &quot;Echtzeit-Benutzerüberwachung&quot;wurde in &quot;Echtzeit-Überwachung der Nutzung&quot;umbenannt, da sie das wahre Wesen des Dienstes besser widerspiegelt.
 
-## Wer kann von einem echten Kontrolldienst für die Verwendung profitieren? {#who-can-benefit-from-rum-service}
+## Wer kann von einem echten Anwendungsüberwachungsdienst profitieren? {#who-can-benefit-from-rum-service}
 
 AEM hat RUM entwickelt, um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit AEM Sites interagieren. RUM kann verwendet werden, um Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben auf - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
 
 
-## Erfahren Sie, wie der Real Use Monitoring Service funktioniert. {#understand-how-the-rum-service-works}
+## Erfahren Sie, wie der Real Use Monitoring-Dienst funktioniert. {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager (AEM) verwendet die Echtzeit-Überwachung (RUM), um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit AEM Sites interagieren. Es hilft ihnen, Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben auf - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
+AEM verwendet RUM, um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit AEM Sites interagieren. Es hilft ihnen, Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben auf - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
 
-## Real Use Monitoring Service und Datenschutz {#rum-service-and-privacy}
+## Überwachungsdienst für die tatsächliche Verwendung und Datenschutz {#rum-service-and-privacy}
 
 Der Real Use Monitoring-Dienst in AEM wurde entwickelt, um den Datenschutz der Besucher zu wahren und die Datenerfassung zu minimieren. Als Besucher bedeutet dies, dass die Website, die Sie besuchen oder der Adobe zur Verfügung gestellt werden, keine personenbezogenen Daten erfasst.
 
 Als Site-Benutzer ist keine zusätzliche Anmeldung erforderlich, um die Überwachung über diese Funktion zu aktivieren. Es gibt kein zusätzliches Popup- oder Zustimmungsformular, das die Endbenutzer für die Aktivierung von RUM akzeptieren können.
 
-## Daten-Sampling für den Real Use Monitoring Service {#rum-service-data-sampling}
+## Datenstichproben für den Real Use Monitoring-Dienst {#rum-service-data-sampling}
 
 Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. AEM RUM-Dienst erfasst nur Informationen von einem kleinen Bruchteil der Seitenansichten. Der Dienst ist dazu gedacht, gesampelt und anonymisiert zu werden und nicht als Ersatz für Analytics. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können die Sampling-Rate derzeit nicht erhöhen oder verringern. Um den Traffic insgesamt genau zu schätzen, werden für jede 100 Seitenansichten Daten aus 1 erfasst, sodass Sie eine zuverlässige Annäherung des gesamten Traffics erhalten.
 
@@ -68,7 +68,7 @@ Der Real Use Monitoring Service soll verhindern, dass personenbezogene Daten erf
 * Die Zielgruppe oder der Link zu einer externen Seite oder Ressource, mit der die Person für den oben genannten Checkpoint interagiert. Beispiel: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * Die Leistungsmetriken für Web Vitals (CWV), einschließlich der größten inhaltsbezogenen Farbe (LCP), der ersten Eingabeverzögerung (FID), der kumulativen Layoutverschiebung (CLS) und der Zeit bis zum ersten Byte (TTFB), die die Erlebnisqualität des Besuchers beschreiben.
 
-## Funktionsweise der Überwachung der tatsächlichen Verwendung für Kunden {#how-rum-works-for-a-customer}
+## Funktionsweise der Echtzeit-Nutzungsüberwachung für Kunden {#how-rum-works-for-a-customer}
 
 Real Use Monitoring überwacht automatisch den clientseitigen Traffic, um Ihnen wertvolle Einblicke zu bieten. Als Adobe-Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Mit der Einführung der allgemeinen Verfügbarkeit (GA) profitieren Sie automatisch von dieser neuen Funktion.
 
