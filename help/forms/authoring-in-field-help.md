@@ -3,10 +3,13 @@ title: Hinzufügen von Hilfetext für Felder in adaptiven AEM-Formularen
 description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Panels in adaptiven Formularen als Text oder Rich Media, einschließlich Videos, hinzufügen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -64,8 +67,3 @@ Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie auf der R
 Wenn Sie Hilfe für ein Panel hinzufügen, wird das Symbol **?** neben der Beschreibung des Panels angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Hilfeinhalt“ des Dialogfelds zur Bearbeitung des Panels hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Hilfe auf Formularbereichsebene](assets/photoshop-1.png)
-
->[!MORELIKETHIS]
->
->* [Hinzufügen von Platzhaltertext zu Formularfeldern](/help/forms/placeholder-text-in-aem-forms.md)
->* [Hinzufügen von Fußnoten zu einem adaptiven Formular für Rich-Text](/help/forms/footnotes-richtextsupport.md)

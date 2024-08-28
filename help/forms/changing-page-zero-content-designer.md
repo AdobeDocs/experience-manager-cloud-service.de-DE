@@ -3,8 +3,9 @@ title: Ändern des Inhalts auf Seite Null in Designer
 description: Ändern Sie die Meldung, die auf Seite Null einer XFA-PDF für Nicht-Adobe-PDF-Viewer angezeigt wird.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-docset: aem65
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 100%
