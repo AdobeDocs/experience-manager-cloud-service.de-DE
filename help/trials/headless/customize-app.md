@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Nachdem Sie jetzt wissen, wie eine Überschrift in der App geändert wird, versu
 
    ![Breadcrumbs](assets/do-not-localize/swap-image-2.png)
 
-1. Wählen Sie die Bildebene **Mtn Biking - Biker** aus. Daraufhin wird der Inhaltsfragment-Editor geöffnet.
+1. Wählen Sie die Bildebene **Mtn Biking - Biker** aus. Daraufhin wird der Inhaltsfragment-Editor geöffnet
 
 1. Wählen Sie das **X** aus, um das Biker-Bild zu entfernen. Das Bild verschwindet und der Editor zeigt einen Fehler an, da das Bild für dieses Inhaltsfragmentmodell erforderlich ist.
 
@@ -121,9 +121,9 @@ Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wi
 
 1. Der Editor wird für das neue Inhaltsfragment geöffnet.
 
-1. Benennen Sie das Element „Shoppable Momen“ im Feld **Text**, z. B. `Yellow shorts`.
+1. Benennen Sie das Element „Shoppable Moment“ im Feld **Text**, z. B. `Yellow shorts`.
 
-1. Legen Sie Werte für **X** und **Y** fest. Hier sollte dieser Aufruf im Bedienfeld überlagert werden. Änderungen am Fragment werden vom Editor automatisch gespeichert.
+1. Legen Sie Werte für **X** und **Y** fest. Hier sollte dieser Aufruf im Bedienfeld überlagert werden. Änderungen am Fragment werden vom Editor automatisch gespeichert
 
    * **X**: `-5`
    * **Y**: `-10`

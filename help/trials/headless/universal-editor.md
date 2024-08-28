@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## Bearbeiten von Text im Kontext {#edit-text}
 
-Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegenüber der strukturierten Headless-Content-Bearbeitung tent-Bearbeitung sein, wie es sie in den vorhergehenden Modulen im Inhaltsfragment-Editor gezeigt wurde.
+Die Bearbeitung an Ort und Stelle und im Kontext kann häufig von Vorteil gegenüber der strukturierten Headless-Content-Bearbeitung sein, wie es in den vorhergehenden Modulen im Inhaltsfragment-Editor gezeigt wurde.
 
 >[!NOTE]
 >

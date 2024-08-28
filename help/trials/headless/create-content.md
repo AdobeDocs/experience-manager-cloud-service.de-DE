@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Inhaltsfragmentkonsole starten"
->abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos in all Ihren Apps und auf Ihren Websites funktionieren, liefert hervorragende Kundenerlebnisse. Dieses Modul führt Sie durch die Erstellung Ihres ersten Headless-Inhalts mithilfe der Inhaltsfragment-Konsole.<br><br>Klicken Sie unten auf die Schaltfläche, um dieses Modul in einer neuen Registerkarte zu starten. Folgen Sie danach diesem Handbuch."
+>abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos in all Ihren Apps und auf Ihren Websites funktionieren, liefert hervorragende Kundenerlebnisse. Dieses Modul führt Sie durch die Erstellung Ihres ersten Headless-Inhalts mithilfe der Inhaltsfragmentkonsole.<br><br>Klicken Sie unten auf die Schaltfläche, um dieses Modul in einer neuen Registerkarte zu starten. Folgen Sie danach diesem Handbuch."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"

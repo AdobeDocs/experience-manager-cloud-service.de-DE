@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Für das Beispiel erstellen Sie ein Modell, das die Datenstruktur einer Reise da
 
 1. Klicken Sie in der rechten oberen Ecke des Bildschirms auf **Erstellen**, um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
 
-1. Der Assistent Modell erstellen führt Sie durch die Erstellung Ihres Modells. Geben Sie die erforderlichen Informationen an.
+1. Der Assistent „Modell erstellen“ führt Sie durch die Erstellung Ihres Modells. Geben Sie die erforderlichen Informationen an.
 
    * **Modell-Titel** – Dies ist eine kurze Bezeichnung des Modells und enthält normalerweise den Zweck des Modells. Sie können das neue Modell `Adventure` nennen.
    * **Modell aktivieren**: Diese Option ist standardmäßig aktiviert. Sie muss aktiviert sein, damit auf diesem Modell basierende Inhaltsfragmente erstellt werden können.
@@ -82,7 +82,7 @@ Sie haben bereits ein Feld für den Titel des Abenteuers. Jetzt müssen Sie Feld
 
 >[!TIP]
 >
->Das Modell **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können die WKND-Site [hier](https://wknd.site/us/en/adventures/yosemite-backpacking.html) besuchen, um Inhalte zu sehen, die das **Abenteuer**-Modell verwenden.
+>Das Modell **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können die WKND-Site [hier](https://wknd.site/us/en/adventures/yosemite-backpacking.html) besuchen, um Inhalte zu sehen, die das Modell **Abenteuer** verwenden.
 
 Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen. Der einzige Unterschied besteht in den Eigenschaften, die Sie festlegen müssen.
 

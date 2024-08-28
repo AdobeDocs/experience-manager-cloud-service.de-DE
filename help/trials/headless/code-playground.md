@@ -1,6 +1,6 @@
 ---
-title: Rendern Sie Ihren Inhalt in einer einfachen App
-description: Erfahren Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AEM Headless-Client für JavaScript aus Ihrer Testumgebung abrufen.
+title: Rendern von Inhalten in einer einfachen App
+description: Untersuchen Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AEM Headless-Client für JavaScript aus Ihrer Testumgebung abrufen können.
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
@@ -14,7 +14,7 @@ ht-degree: 100%
 ---
 
 
-# Rendern Sie Ihren Inhalt in einer einfachen App {#render-content-simple-app}
+# Rendern von Inhalten in einer einfachen App {#render-content-simple-app}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## CodePen {#codepen}
 
-CodePen ist ein Online-Code-Editor und Spielplatz für die Front-end-Web-Entwicklung. Dadurch können Sie HTML-, CSS- und JavaScript-Code in Ihrem Browser schreiben und die Ergebnisse Ihrer Arbeit fast sofort sehen. Sie können Ihre Arbeit auch speichern und mit anderen teilen. Adobe hat eine App in CodePen erstellt, mit der Sie JSON-Daten aus Ihrer Testumgebung mit dem [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js) abrufen können. Sie können diese App unverändert verwenden oder sie in Ihr eigenes CodePen-Konto einbinden, um sie weiter anzupassen.
+CodePen ist ein Online-Code-Editor und Spielplatz für die Frontend-Web-Entwicklung. Dadurch können Sie HTML-, CSS- und JavaScript-Code in Ihrem Browser schreiben und die Ergebnisse Ihrer Arbeit fast sofort sehen. Sie können Ihre Arbeit auch speichern und mit anderen teilen. Adobe hat eine App in CodePen erstellt, mit der Sie JSON-Daten aus Ihrer Testumgebung mit dem [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js) abrufen können. Sie können diese App unverändert verwenden oder sie in Ihr eigenes CodePen-Konto einbinden, um sie weiter anzupassen.
 
 Wenn Sie in der Testversion auf die Schaltfläche **CodePen-Beispielanwendung starten** klicken, gelangen Sie zur App in CodePen. Die App dient als minimales Beispiel für das Abrufen von JSON-Daten mit JavaScript. Die Beispiel-App ist so konzipiert, dass alle zurückgegebenen JSON-Inhalte gerendert werden, unabhängig von der Struktur des zugrunde liegenden Inhaltsfragmentmodells. Standardmäßig ruft die App Daten aus einer persistierten `aem-demo-assets`-Abfrage ab, die in Ihrer Testumgebung enthalten ist. Es sollte eine JSON-Antwort ähnlich der folgenden angezeigt werden:
 
@@ -96,7 +96,7 @@ In Zeile 25 geben Sie an, aus welcher persistierten GraphQL-Abfrage die App Date
 
 1. Sobald diese Änderung vorgenommen wurde, sollte die App automatisch aktualisiert werden und die rohe JSON-Antwort aus Ihrer persistierten Abfrage in den `#output`-Div drucken. Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die Konsole auf weitere Details. Kontaktieren Sie uns [per E-Mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request), wenn Sie noch Probleme mit diesem Schritt haben.
 
-1. Enthält dieses JSON die genauen Eigenschaften, die Ihre App benötigt? Falls nicht, gehen Sie zurück zum Lernhandbuch [Extrahieren von Inhalten mit dem GraphQL-API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql), um Änderungen vorzunehmen. Vergessen Sie nicht, Ihre Abfrage zu speichern und zu veröffentlichen, sobald Sie damit fertig sind.
+1. Enthält dieses JSON die genauen Eigenschaften, die Ihre App benötigt? Falls nicht, gehen Sie zurück zum Lernhandbuch [Extrahieren von Inhalten mit der GraphQL-API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql), um Änderungen vorzunehmen. Vergessen Sie nicht, Ihre Abfrage zu speichern und zu veröffentlichen, sobald Sie damit fertig sind.
 
 ## Änderung von JSON-Rendering {#change-rendering}
 

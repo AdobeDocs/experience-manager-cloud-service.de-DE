@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1069'
 ht-degree: 100%
 
@@ -18,17 +18,17 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
->title="Extrahieren von Inhalten mit dem GraphQL-API"
+>title="Extrahieren von Inhalten mit der GraphQL-API"
 >abstract="In diesem Modul erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Headless-Content-Management-System verwenden können."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="GraphQL Explorer starten"
->abstract="GraphQL bietet ein abfragebasiertes API, mit der externe Client-Anwendungen AEM mithilfe eines einzigen API-Aufrufs nur nach den benötigten Inhalten abfragen können. In diesem Modul erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen. Erfahren Sie dann, wie Sie den Inhalt aus dem Inhaltsfragment abrufen, das Sie im vorherigen Modul erstellt haben.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf den Bereich unten klicken."
+>abstract="GraphQL bietet eine abfragebasierte API, mit der externe Client-Anwendungen AEM mithilfe eines einzigen API-Aufrufs nur nach den benötigten Inhalten abfragen können. In diesem Modul erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen. Erfahren Sie dann, wie Sie den Inhalt aus dem Inhaltsfragment abrufen, das Sie im vorherigen Modul erstellt haben.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf den Bereich unten klicken."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Gute Arbeit! Sie haben die beiden grundlegenden Arten von Abfragen kennengelernt und erfahren, wie Sie Ihre eigenen Inhalte abfragen können. Jetzt wissen Sie, wie Sie mit dem AEM GraphQL API effiziente Abfragen erstellen können, mit denen Inhalte in einem von Ihrer App erwarteten Format bereitgestellt werden."
+>title="Gute Arbeit! Sie haben die beiden grundlegenden Arten von Abfragen kennengelernt und erfahren, wie Sie Ihre eigenen Inhalte abfragen können. Jetzt wissen Sie, wie Sie mit der AEM GraphQL API effiziente Abfragen erstellen können, mit denen Inhalte in einem von Ihrer App erwarteten Format bereitgestellt werden."
 >abstract=""
 
 ## Abfrage einer Liste von Beispielinhalten {#list-query}
@@ -133,13 +133,13 @@ So können Ihre Inhalte für digitale Omni-Channel-Erlebnisse bereitgestellt wer
 
 ## Persistierte Abfragen {#persisted-queries}
 
-Persistierte Abfragen sind der bevorzugte Mechanismus, um das GraphQL-API für Client-Anwendungen zugänglich zu machen. Nachdem eine Abfrage persistiert wurde, kann sie mithilfe einer GET-Anfrage angefordert und zwischengespeichert werden, um einen schnellen Abruf zu ermöglichen.
+Persistierte Abfragen sind der bevorzugte Mechanismus, um die GraphQL-API für Client-Anwendungen zugänglich zu machen. Nachdem eine Abfrage persistiert wurde, kann sie mithilfe einer GET-Anfrage angefordert und zwischengespeichert werden, um einen schnellen Abruf zu ermöglichen.
 
 Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Anwendungen verwenden möchten.
 
 1. Sie werden die Daten verwenden, die Sie zuvor als Inhaltsfragment erstellt haben. Vergewissern Sie sich also, dass der Endpunkt **Ihr Projekt** im Dropdown-Menü **Endpunkt** oben rechts im Editor ausgewählt ist.
 
-1. Kopieren Sie das folgende Code-Snippet.
+1. Kopieren Sie das folgende Code-Fragment.
 
    ```text
       {
@@ -161,13 +161,13 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Anwend
    }
    ```
 
-1. Ersetzen Sie den im Abfrage-Editor den vorhandenen Inhalt durch Einfügen des kopierten Codes.
+1. Ersetzen Sie den im Abfrage-Editor vorhandenen Inhalt durch Einfügen des kopierten Codes.
 
    >[!NOTE]
    >
    >Wenn Sie nicht dieselben Feldbeschreibungen wie in den vorherigen Modulen verwendet haben, aktualisieren Sie die Feldnamen in dieser Abfrage.
    >
-   >Verwenden Sie die GraphQL-Funktion „autocomplete“ (Strg + Leertaste oder Wahl+Leertaste) wie zuvor beschrieben, um die verfügbaren Eigenschaften zu identifizieren.
+   >Verwenden Sie die GraphQL-Funktion „autocomplete“ (Strg+Leertaste oder Wahl+Leertaste) wie zuvor beschrieben, um die verfügbaren Eigenschaften zu identifizieren.
 
 1. Klicken Sie nach dem Einfügen oben links im Abfrage-Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen.
 
@@ -177,9 +177,9 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Client-Anwend
 
 1. Wenn Sie mit Ihrer Abfrage zufrieden sind, klicken Sie auf die Schaltfläche **Speichern unter** oben im Abfrage-Editor, um die Abfrage zu speichern.
 
-1. Im Popup **Abfragename**, geben Sie Ihrer Abfrage den Namen `adventure-list`.
+1. Geben Sie im Popup-Fenster **Abfragename** Ihrer Abfrage den Namen `adventure-list`.
 
-1. Wählen Sie Speichern **unter** aus.
+1. Wählen Sie **Speichern unter** aus.
 
    ![Abfrage beibehalten](assets/do-not-localize/persist-query.png)
 
