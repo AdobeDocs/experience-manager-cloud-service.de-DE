@@ -5,10 +5,10 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: Verbinden von AEM Forms mit Power Automate, Power Automate-Automation, AEM Forms, Integrieren von Power Automate in adaptive Formulare, Senden von Daten von adaptiven Formularen an Power Automate
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 100%
+source-wordcount: '1209'
+ht-degree: 92%
 
 ---
 
@@ -72,14 +72,14 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
    * Zugriffs-Token (für implizite Flüsse verwendet)
    * ID-Token (für implizite und hybride Flüsse verwendet)
 
-1. Klicken Sie auf der Seite mit den API-Berechtigungen auf „Berechtigung hinzufügen“.
-1. Wählen Sie unter den Microsoft® APIs den Flow Service und dann die folgenden Berechtigungen aus.
+1. Klicken Sie auf der Seite mit den API-Berechtigungen auf `Add a permission`.
+
+1. Wählen Sie unter &quot;Microsoft® APIs&quot;den Wert &quot;`Power Automate`&quot;und dann die folgenden Berechtigungen aus.
    * Flows.Manage.All
    * Flows.Read.All
-
-   Klicken Sie auf „Berechtigungen hinzufügen“, um die Berechtigungen zu speichern.
-1. Klicken Sie auf der Seite mit den API-Berechtigungen auf „Berechtigung hinzufügen“. Wählen Sie „APIs, die meine Organisation verwendet“ und suchen Sie nach `DataVerse`.
-1. Aktivieren Sie „user_impersonation“ und klicken Sie auf „Berechtigungen hinzufügen“.
+   * GCC-Berechtigung (optional, wenn Sie eine Verbindung zu einem GCC-Mandanten (Government Cloud Computing) herstellen möchten)
+Klicken Sie auf `Add permissions` , um die Berechtigungen zu speichern.
+1. Klicken Sie auf der Seite mit den API-Berechtigungen auf `Add a permission`. Wählen Sie APIs aus, die mein Unternehmen verwendet, suchen Sie nach `DataVerse` und aktivieren Sie die Berechtigungen `user_impersonation` Klicken Sie auf `Add` .
 1. (Optional) Klicken Sie auf der Seite „Zertifikate und geheime Schlüssel“ auf „Neuer geheimer Client-Schlüssel“. Geben Sie im Bildschirm „Geheimen Client-Schlüssel hinzufügen“ eine Beschreibung und einen Zeitraum ein, nach dem das Geheimnis ablaufen soll, und klicken Sie auf „Hinzufügen“. Es wird eine geheime Zeichenfolge generiert.
 1. Notieren Sie sich Ihre organisationsspezifische [URL der Dynamics-Umgebung](https://docs.microsoft.com/de-de/power-automate/web-api#compose-http-requests).
 
@@ -88,15 +88,15 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
 1. Navigieren Sie auf der AEM Forms-Autoreninstanz zu **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Allgemein]** > **[!UICONTROL Konfigurations-Browser]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Konfigurations-Browser]** die Option **[!UICONTROL Erstellen]** aus.
 1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen **[!UICONTROL Titel]** für die Konfiguration fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**. Wählen Sie dann die Option **[!UICONTROL Erstellen]** aus. Es wird ein Konfigurations-Container für Cloud Services erstellt. Stellen Sie sicher, dass der Ordnername keine Leerzeichen enthält.
-1. Navigieren Sie zu **[!UICONTROL Tools]** ![Hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** und öffnen Sie den Konfigurations-Container, den Sie im vorherigen Schritt erstellt haben.
+1. Navigieren Sie zu **[!UICONTROL Tools]** ![Hammersymbol](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** und öffnen Sie den Konfigurations-Container, den Sie im vorherigen Schritt erstellt haben.
 
 
    >[!NOTE]
    >
    >Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
 
-1. Wählen Sie auf der Konfigurationsseite **[!UICONTROL Erstellen]**, um die [!DNL Microsoft®®® Power Automate Flow Service]-Konfiguration in AEM Forms zu erstellen.
-1. Geben Sie auf der Seite **[!UICONTROL Konfigurieren des Dataverse-Services für Microsoft® Power Automate]** die **[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet), das **[!UICONTROL Client-Geheimnis]**, die **[!UICONTROL OAuth-URL]** und die **[!UICONTROL URL der Dynamics-Umgebung]** an. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die URL der Dynamics-Umgebung der [Microsoft® Azure Active Directory-Anwendung](#ms-power-automate-application), die Sie im vorherigen Abschnitt erstellt haben. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden.
+1. Wählen Sie auf der Konfigurationsseite die Option **[!UICONTROL Erstellen]** aus, um die [!DNL Microsoft® Power Automate Flow Service]-Konfiguration in AEM Forms zu erstellen.
+1. Geben Sie auf der Seite **[!UICONTROL Dataverse-Service für Microsoft® Power Automate konfigurieren]** die **[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet), den **[!UICONTROL geheimen Client-Schlüssel]**, die **[!UICONTROL OAuth-URL]** und die **[!UICONTROL URL der Dynamics-Umgebung]** an. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die URL der Dynamics-Umgebung der [Microsoft® Azure Active Directory-Anwendung](#ms-power-automate-application), die Sie im vorherigen Abschnitt erstellt haben. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden.
 
    ![Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden.](assets/endpoints.png)
 
@@ -111,8 +111,19 @@ Führen Sie die folgenden Schritte aus, um Ihre Instanz von Forms as a Cloud Ser
    >
    >Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
 
-1. Wählen Sie auf der Konfigurationsseite die Option **[!UICONTROL Erstellen]**, um die [!DNL Microsoft® Power Automate Flow Service]-Konfiguration in AEM Forms zu erstellen.
+1. Wählen Sie auf der Konfigurationsseite die Option **[!UICONTROL Erstellen]** aus, um die [!DNL Microsoft® Power Automate Flow Service]-Konfiguration in AEM Forms zu erstellen.
+
+1. (Optional) Aktivieren Sie das Kontrollkästchen `Connect to Microsoft GCC` , um eine Verbindung zum GCC-Mandanten herzustellen.
+
+   >[!NOTE]
+   >
+   > Wenn Sie eine Verbindung zu einem GCC-Mandanten (Government Cloud Computing) herstellen möchten, wählen Sie die GCC-Berechtigung in Microsoft Azure Portal aus.
+
+
+   ![Power Automate Cloud Configuration](/help/forms/assets/power-automate.png)
+
 1. Geben Sie auf der Seite **[!UICONTROL Dataverse für Microsoft® Power Automate konfigurieren]** die **[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet), den **[!UICONTROL geheimen Client-Schlüssel]**, die **[!UICONTROL OAuth-URL]** und die **[!UICONTROL URL der Dynamics-Umgebung]** an. Verwenden Sie die Client-ID, den geheimen Client-Schlüssel, die OAuth-URL und die ID der Dynamics-Umgebung. Verwenden Sie die Option „Endpunkte“ in der Benutzeroberfläche der Microsoft® Azure Active Directory-Anwendung, um die OAuth-URL zu finden. Öffnen Sie den Link [Meine Flüsse](https://powerautomate.microsoft.com/de-de/), wählen Sie „Meine Flüsse“ aus und verwenden Sie die ID, die unter dem Bereich für URLs als Dynamics-Umgebungs-ID aufgeführt ist.
+
 1. Wählen Sie **[!UICONTROL Verbinden]** aus. Wenn Sie dazu aufgefordert werden, melden Sie sich bei Ihrem Microsoft® Azure-Konto an. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 ### Veröffentlichen Sie sowohl die Cloud-Konfigurationen des Microsoft® Power Automate Dataverse als auch des Microsoft® Power Automate Flow Service. {#publish-microsoft-power-automate-dataverse-cloud-configuration}

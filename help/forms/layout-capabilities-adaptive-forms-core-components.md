@@ -4,7 +4,7 @@ description: Layout und Darstellung adaptiver Formulare auf verschiedenen Gerät
 feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, AEM für dynamische Formulare, AEM Cloud Service-Formularlayouts, Formularlayouttypen in AEM Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
@@ -44,7 +44,7 @@ Adaptive Formulare, die auf Kernkomponenten basieren, unterstützen die folgende
 
 Das Bedienfeldlayout ist nützlich, um verwandte Felder so zu organisieren, dass es einfacher ist, zu entsprechenden Inhalten zu navigieren und sie zu finden. Das Bedienfeldlayout ordnet Formularkomponenten innerhalb bestimmter Abschnitte oder Bereiche in einem adaptiven Formular an.
 
-![Bedienfeldlayout](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![Bedienfeldlayout](/help/forms/assets/panel-layout.png)
 
 Bedienfeldlayout
 
@@ -54,7 +54,7 @@ Sie können die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/doc
 
 Das Assistentenlayout erleichtert die Arbeit an komplexen Formularen, indem es in unterschiedliche Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar. Benutzer navigieren nacheinander durch die Schritte, oft mit den Schaltflächen **Weiter** und **Zurück**. Sie können das Layout des Assistenten verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
 
-![Assistent-Layout](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![Assistent-Layout](/help/forms/assets/wizard-layout-compare.gif)
 
 Assistentenlayout
 
@@ -64,7 +64,7 @@ Sie können die [Assistentenkomponente](https://experienceleague.adobe.com/en/do
 
 Das Layout der vertikalen Registerkarten wird auch als Registerkarten im linken Layout bezeichnet. Das Layout der vertikalen Registerkarten organisiert Bedienfelder oder Abschnitte auf der linken Seite eines Formulars. Dies ist ein gängiges Layout für Formulare, bei denen Bereiche/Abschnitte zur einfachen Lese- und Navigation vertikal gestapelt werden.
 
-![Vertikales Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![Vertikales Layout](/help/forms/assets/vertical-tab.gif)
 
 Layout mit vertikalen Registerkarten
 
@@ -76,7 +76,7 @@ Sie können die Komponente [Vertikale Registerkarten ](https://experienceleague.
 Das horizontale Layout von Registerkarten wird auch als Registerkarten im oberen Layout bezeichnet. Das Layout der horizontalen Registerkarten ordnet Bedienfelder oder Abschnitte nebeneinander in einer Zeile an. Mit diesem Layout werden die Formularabschnitte über die gesamte Breite des Formulars oder Bedienfelds linear dargestellt.
 
 
-![Horizontales Layout](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
 Horizontales Registerkartenlayout
 
@@ -87,7 +87,7 @@ Sie können die Komponente [Horizontale Registerkarten ](https://experienceleagu
 
 Das Akkordeon-Layout zeigt Inhalte in ausblendbaren Abschnitten oder Bereichen in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt in angezeigt, während andere Abschnitte ausgeblendet bleiben. Dieses Layout eignet sich ideal für die Darstellung großer Datenmengen in kompakter Form.
 
-![Accordion-Layout](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![Accordion-Layout](/help/forms/assets/accordion-layout-compare.gif)
 
 Akkordeon-Layout
 
@@ -132,7 +132,7 @@ Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und zum H
 1. Wählen Sie oben links **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]** aus.
 1. Öffnen Sie ein vorhandenes adaptives Formular in einem Bearbeitungsmodus, wenn es bereits erstellt wurde.
 
-   ![Öffnen eines adaptiven Formulars](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![Öffnen eines adaptiven Formulars](/help/forms/assets/insert-layout.png)
 
    Alternativ können Sie auch [ein neues adaptives Formular erstellen](/help/forms/creating-adaptive-form-core-components.md).
 
@@ -176,13 +176,13 @@ Fügen Sie der Komponente Horizontale Registerkarten ein neues Bedienfeld hinzu:
 
    ![Registerkarte &quot;Element&quot;für horizontale Registerkarten](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. Klicken Sie auf das Symbol **Hinzufügen** , um ein neues Bedienfeld hinzuzufügen.
+1. Klicken Sie auf das Symbol **Hinzufügen** , um ein neues Bedienfeld hinzuzufügen.
 
    ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt.
 
-3. Wählen Sie die Bedienfeldkomponente aus.
+1. Wählen Sie die Bedienfeldkomponente aus.
 
    ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -192,11 +192,11 @@ Fügen Sie der Komponente Horizontale Registerkarten ein neues Bedienfeld hinzu:
 
    Geben Sie einen Namen für das neue Bedienfeld ein. Andernfalls können Sie die Eigenschaften der Komponente für horizontale Registerkarten nicht speichern.
 
-4. Geben Sie die Namen der Bedienfelder an, wie in der folgenden Abbildung dargestellt:
+1. Geben Sie die Namen der Bedienfelder an, wie in der folgenden Abbildung dargestellt:
 
    ![Bereichsnamen](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. Klicken Sie auf **Fertig**.
+1. Klicken Sie auf **Fertig**.
 
    Wenn Sie auf **Fertig** klicken, werden die drei Bedienfelder nebeneinander in einer Zeile angezeigt. Die Bereichsnamen werden für jedes Bedienfeld als Überschriften angezeigt. Sie können jedem Bedienfeld Formularkomponenten hinzufügen.
 
@@ -204,15 +204,15 @@ Fügen Sie der Komponente Horizontale Registerkarten ein neues Bedienfeld hinzu:
 
    Sie können die Eigenschaften der Bedienfeldkomponente konfigurieren. Beispielsweise enthält das IT-Anforderungsformular keine Bedienfeldtitel. Hier finden Sie die Schritte zum Konfigurieren der Eigenschaften der Bedienfeldkomponente.
 
-6. Öffnen Sie die Eigenschaften des ersten Bedienfelds.
+1. Öffnen Sie die Eigenschaften des ersten Bedienfelds.
 
    ![Bedienfeld 1 - Eigenschaften](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. Aktivieren Sie das Kontrollkästchen **Titel ausblenden** auf der Registerkarte **Einfach** .
+1. Aktivieren Sie das Kontrollkästchen **Titel ausblenden** auf der Registerkarte **Einfach** .
 
    ![Titel ausblenden](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. Klicken Sie auf **Fertig**.
+1. Klicken Sie auf **Fertig**.
 
 Auf ähnliche Weise können Sie auch Titel für die anderen beiden Bedienfelder ausblenden. Anschließend können Sie mit dem Hinzufügen von Formularkomponenten zu jedem Bedienfeld fortfahren.
 
@@ -262,7 +262,7 @@ Auf ähnliche Weise können Sie auch Titel für die anderen beiden Bedienfelder 
 
 1. Klicken Sie oben rechts in Ihrer Authoring-Umgebung auf **[!UICONTROL Vorschau]** .
 
-   ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
 Sie können auch [ die Komponenten per Drag &amp; Drop verschieben](#extra-bytes), um die Formularkomponenten zu jedem Bedienfeld hinzuzufügen.
 
@@ -341,7 +341,7 @@ Führen Sie die folgenden Schritte aus, um das vorhandene Layout eines Formulars
 
    Nach Auswahl des Layouts ändert sich die Anordnung der Komponenten im Layout entsprechend. Wählen Sie beispielsweise die Komponente der vertikalen Registerkarten im Dialogfeld **[!UICONTROL Komponente ersetzen]** aus. Die Anordnung des Bedienfelds ändert sich in Registerkarten auf der linken Seite:
 
-   ![Vertikales Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![Vertikales Layout](/help/forms/assets/vertical-tab.gif)
 
 ## Zusätzliche Byte
 
