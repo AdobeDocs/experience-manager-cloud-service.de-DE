@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 91%
 
 ---
 
@@ -39,12 +39,14 @@ Site-Designs werden auf zwei verschiedene Arten verwendet:
 
 ## Struktur von Site-Designs {#structure}
 
-Site-Designs sind einfach Pakete mit einer logischen Struktur, die den Zweck des Paketinhalts klar widerspiegelt. Ein Site-Design weist die folgende Struktur auf, die für ein Frontend-Projekt typisch ist.
+Site-Designs sind einfach Pakete mit einer logischen Struktur, die den Zweck des Paketinhalts klar widerspiegelt. Für ein typisches Frontend-Projekt empfiehlt Adobe die folgende Struktur für ein Site-Design:
 
-* `src/main.ts`: Der Haupteinstiegspunkt Ihres JS- und CSS-Designs
+* `src/theme.ts`: Der Haupteinstiegspunkt Ihres JS- und CSS-Designs
 * `src/site`: JS- und CSS-Dateien, die für die gesamte Site gelten
 * `src/components`: JS- und CSS-Dateien, die für AEM-Komponenten spezifisch sind
 * `src/resources`: Statische Dateien wie Symbole, Logos und Schriftarten
+
+Abhängig von den spezifischen Projektanforderungen kann Ihre Designstruktur variieren, solange der Haupteinstiegspunkt `src/theme.ts` beibehalten wird.
 
 ## Standard-Site-Design {#standard-site-theme}
 
