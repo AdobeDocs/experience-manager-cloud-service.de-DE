@@ -4,7 +4,7 @@ description: Layout und Darstellung adaptiver Formulare auf verschiedenen Gerät
 feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, AEM für dynamische Formulare, AEM Cloud Service-Formularlayouts, Formularlayouttypen in AEM Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
@@ -138,10 +138,10 @@ Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und zum H
 
 1. Suchen Sie den Abschnitt im Formular-Editor, in dem Sie ein Layout hinzufügen können.
 
-   ![Formular-Editor](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![Formular-Editor](/help/forms/assets/form-editor.png)
 1. Klicken Sie auf das Symbol **Hinzufügen** . Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten anzeigt.
 
-   ![Layout einfügen](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![Layout einfügen](/help/forms/assets/insert-layout-add-icon.png)
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt, in dem verschiedene Komponenten zum Einfügen angezeigt werden.
 
@@ -151,20 +151,20 @@ Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und zum H
 
 1. Durchsuchen Sie die verfügbaren Komponenten im Dialogfeld und wählen Sie das gewünschte Layout aus der Liste aus. In unserem Beispiel wählen wir die Komponente Horizontale Registerkarten aus, um das Layout der horizontalen Registerkarten einzufügen.
 
-   ![Horizontale Registerkarten auswählen](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![Horizontale Registerkarten auswählen](/help/forms/assets/select-horizontal-tab.png)
 
    Wenn Sie die Komponente &quot;Horizontale Registerkarten&quot;zum Formular hinzufügen, besteht sie zunächst standardmäßig aus zwei leeren Bedienfeldern namens &quot;Item1&quot;und &quot;Item2&quot;. Sie müssen diesen Bedienfeldern manuell Formularkomponenten hinzufügen.
 
-   ![Horizontale Registerkarten](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![Horizontale Registerkarten](/help/forms/assets/insert-tabs-on-top.png)
 
 1. Öffnen Sie die Eigenschaften der Komponente &quot;Horizontale Registerkarten&quot;und geben Sie den Namen für die Komponente an.
 In diesem Fall fügen wir beispielsweise den Namen der horizontalen Registerkarten-Komponente als IT-Anforderungsformular hinzu.
 
-   ![Name für horizontale Registerkarten hinzufügen](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![Name für horizontale Registerkarten hinzufügen](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. Klicken Sie auf **Fertig**.
 
-   ![Horizontale Registerkarten](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![Horizontale Registerkarten](/help/forms/assets/tabs-on-top-rename-component.png)
 
 Nachdem die Layout-Komponente im Formular hinzugefügt wurde, ändern Sie die Anzahl der Bedienfelder entsprechend den Anforderungen.
 
@@ -174,43 +174,43 @@ Fügen Sie der Komponente Horizontale Registerkarten ein neues Bedienfeld hinzu:
 
 1. Öffnen Sie die Eigenschaften der horizontalen Registerkarten-Komponenten und klicken Sie auf die Registerkarte **Elemente** .
 
-   ![Registerkarte &quot;Element&quot;für horizontale Registerkarten](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   ![Registerkarte &quot;Element&quot;für horizontale Registerkarten](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. Klicken Sie auf das Symbol **Hinzufügen** , um ein neues Bedienfeld hinzuzufügen.
 
-   ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+   ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-add-panel.png)
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt.
 
 1. Wählen Sie die Bedienfeldkomponente aus.
 
-   ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+   ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-new-panel.png)
 
    Wenn Sie die Bedienfeldkomponente auswählen, wird das neue Bedienfeld im horizontalen Layout hinzugefügt.
 
-   ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+   ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    Geben Sie einen Namen für das neue Bedienfeld ein. Andernfalls können Sie die Eigenschaften der Komponente für horizontale Registerkarten nicht speichern.
 
 1. Geben Sie die Namen der Bedienfelder an, wie in der folgenden Abbildung dargestellt:
 
-   ![Bereichsnamen](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![Bereichsnamen](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. Klicken Sie auf **Fertig**.
 
    Wenn Sie auf **Fertig** klicken, werden die drei Bedienfelder nebeneinander in einer Zeile angezeigt. Die Bereichsnamen werden für jedes Bedienfeld als Überschriften angezeigt. Sie können jedem Bedienfeld Formularkomponenten hinzufügen.
 
-   ![Bereichsnamen](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![Bereichsnamen](/help/forms/assets/tabs-on-top-initial-view.png)
 
    Sie können die Eigenschaften der Bedienfeldkomponente konfigurieren. Beispielsweise enthält das IT-Anforderungsformular keine Bedienfeldtitel. Hier finden Sie die Schritte zum Konfigurieren der Eigenschaften der Bedienfeldkomponente.
 
 1. Öffnen Sie die Eigenschaften des ersten Bedienfelds.
 
-   ![Bedienfeld 1 - Eigenschaften](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   ![Bedienfeld 1 - Eigenschaften](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. Aktivieren Sie das Kontrollkästchen **Titel ausblenden** auf der Registerkarte **Einfach** .
 
-   ![Titel ausblenden](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![Titel ausblenden](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. Klicken Sie auf **Fertig**.
 
@@ -224,41 +224,41 @@ Auf ähnliche Weise können Sie auch Titel für die anderen beiden Bedienfelder 
 
 1. Suchen Sie den Abschnitt innerhalb des Bereichs, in dem Sie Komponenten hinzufügen können.
 1. Klicken Sie auf das Symbol **Hinzufügen** . Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten anzeigt.
-   ![Layout einfügen](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![Layout einfügen](/help/forms/assets/tabs-on-top-add-component.png)
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt, in dem verschiedene Komponenten zum Einfügen angezeigt werden.
 
-   ![Dialogfeld &quot;Neue Komponente einfügen&quot;](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![Dialogfeld &quot;Neue Komponente einfügen&quot;](/help/forms/assets/insert-new-component.png)
 
 1. Durchsuchen Sie die verfügbaren Komponenten im angezeigten Dialogfeld und wählen Sie die gewünschte Komponente aus. Wählen Sie in unserem Fall die Komponente Textfeld aus.
 1. Öffnen Sie die Eigenschaften der hinzugefügten Komponente und geben Sie deren Namen an. Lassen Sie die Eigenschaften der hinzugefügten Textfeldkomponente bearbeiten und ihren Namen angeben.
-   ![Layout einfügen](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![Layout einfügen](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. Fügen Sie auf ähnliche Weise zwei weitere Textfeldkomponenten hinzu und fügen Sie den Namen der Komponenten als E-Mail-ID und Abteilung hinzu.\
-   ![Erstes Bedienfeld](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![Erstes Bedienfeld](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    Nachdem die Komponenten im ersten Bereich hinzugefügt wurden, können Sie mit dem Hinzufügen der Komponenten zum zweiten Bereich fortfahren.
 
 1. Um das Bedienfeld zu wechseln, klicken Sie in der Symbolleiste auf **Bedienfeld auswählen** .
 
-   ![Bedienfeld wechseln](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![Bedienfeld wechseln](/help/forms/assets/tabs-on-top-select-panel.png)
 
    Wenn Sie auf das Feld **Bedienfeld auswählen** klicken, wird die Liste der hinzugefügten Bedienfelder in der Komponente &quot;Horizontale Registerkarten&quot;angezeigt.
 
-   ![Bedienfeld wechseln](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![Bedienfeld wechseln](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. Wählen Sie **2 Bedienfeld** aus der Bedienfeldliste aus und die Ansicht ändert sich vom ersten Bedienfeld zum zweiten Bedienfeld.
 
-   ![Zweites Bedienfeld](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![Zweites Bedienfeld](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. Wiederholen Sie die Schritte aus Schritt 2 bis Schritt 4, um die gewünschten Komponenten in Bedienfeld 2 hinzuzufügen, wie in der folgenden Abbildung dargestellt:
 
-   ![Zweite Bedienfeldkomponenten](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![Zweite Bedienfeldkomponenten](/help/forms/assets/panel-2-components.png)
 
 1. Wechseln Sie zum Bereich **3}**, indem Sie die in Schritt 6 und Schritt 7 beschriebenen Schritte ausführen.
 
 1. Wiederholen Sie die Schritte aus Schritt 2 bis Schritt 4, um die gewünschte Komponente in Bedienfeld 3 hinzuzufügen:
 
-   ![Komponenten des dritten Bedienfelds](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![Komponenten des dritten Bedienfelds](/help/forms/assets/panel-3-component.png)
 
 1. Klicken Sie oben rechts in Ihrer Authoring-Umgebung auf **[!UICONTROL Vorschau]** .
 
@@ -319,7 +319,7 @@ Sie können auch [ die Komponenten per Drag &amp; Drop verschieben](#extra-bytes
 
 Sie können die Formularkomponente auch über das Symbol ![Löschsymbol](/help/forms/assets/Smock_Delete_18_N.svg) aus dem Bedienfeld löschen.
 
-![Löschen einer Komponente](/help/forms/assets/delete-component.png){width="200" align="center"}
+![Löschen einer Komponente](/help/forms/assets/delete-component.png)
 
 Sie können bei Bedarf auch die erforderlichen Überprüfungen für die Komponenten hinzufügen.
 
@@ -333,11 +333,11 @@ Führen Sie die folgenden Schritte aus, um das vorhandene Layout eines Formulars
 
 1. Klicken Sie in der Symbolleiste der Layout-Komponente auf das Symbol Ersetzen und das Dialogfeld **[!UICONTROL Komponente ersetzen]** wird angezeigt.
 
-   ![Layout ersetzen](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![Layout ersetzen](/help/forms/assets/replace-layout.png)
 
 1. Wählen Sie das gewünschte Layout im Dialogfeld **[!UICONTROL Komponente ersetzen]** aus.
 
-   ![Dialogfeld &quot;Komponente ersetzen&quot;](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![Dialogfeld &quot;Komponente ersetzen&quot;](/help/forms/assets/replace-component.png)
 
    Nach Auswahl des Layouts ändert sich die Anordnung der Komponenten im Layout entsprechend. Wählen Sie beispielsweise die Komponente der vertikalen Registerkarten im Dialogfeld **[!UICONTROL Komponente ersetzen]** aus. Die Anordnung des Bedienfelds ändert sich in Registerkarten auf der linken Seite:
 
@@ -350,11 +350,11 @@ So ziehen Sie Komponenten per Drag-and-Drop in den Formular-Editor:
 1. Suchen Sie den Abschnitt, in dem Sie Komponenten hinzufügen können.
 1. Navigieren Sie zum linken Bereich in Ihrer Authoring-Umgebung und klicken Sie auf **Komponenten**.
 
-   ![Komponentenbereich](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![Komponentenbereich](/help/forms/assets/add-new-component.png)
 
    Wenn Sie auf die Option **Komponenten** klicken, wird die Liste der verfügbaren Komponenten angezeigt.
 
-   ![Komponentenbereich](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![Komponentenbereich](/help/forms/assets/add-new-component2.png)
 
 1. Durchsuchen Sie die verfügbaren Komponenten und wählen Sie die gewünschte Komponente aus.
 
