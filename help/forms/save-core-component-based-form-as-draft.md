@@ -3,8 +3,8 @@ title: Wie speichern Sie das auf Kernkomponenten basierende adaptive Formular al
 description: Erfahren Sie, wie Sie Kernkomponenten-basierte adaptive Formulare als Entwurf speichern. Erfahren Sie außerdem, wie Sie mit der Komponente "Drafts and Submissions"Entwürfe und Übermittlungen für angemeldete Benutzer auflisten können.
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 8%
@@ -12,7 +12,7 @@ ht-degree: 8%
 ---
 
 
-# Speichern von Formularen als Entwürfe und Auflisten dieser Formulare auf der Seite &quot;Sites&quot;
+# Speichern von Formularen als Entwürfe und Auflisten dieser Formulare auf der Sites-Seite
 
 <span class="preview"> Dieser Artikel enthält Informationen zur Funktion **Automatisches Speichern**, einer Vorabveröffentlichungsfunktion. Die Vorabveröffentlichungsfunktion ist nur über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugänglich.</span>
 
@@ -83,7 +83,7 @@ Sie können vordefinierte Forms Portal-Komponenten verwenden, um Entwürfe und �
    ![Richtlinienauswahl](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
-1. Öffnen Sie nun die AEM Sites-Seite im Authoring-Modus erneut.
+1. Öffnen Sie jetzt die AEM Sites-Seite im Authoring-Modus erneut.
 1. Suchen Sie den Abschnitt im Seiteneditor, in dem Sie die Forms Portal-Komponente hinzufügen können.
 1. Klicken Sie auf das Symbol **Hinzufügen** . Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten anzeigt.
 
