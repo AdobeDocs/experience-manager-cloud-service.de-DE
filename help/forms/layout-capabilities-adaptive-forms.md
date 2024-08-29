@@ -4,9 +4,9 @@ description: Layout und Darstellung adaptiver Formulare auf verschiedenen Gerät
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ba98b4e17a1245a5a5d208b4bf8698b4da4e9f6b
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '858'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 100%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=de) |
-| AEM as a Cloud Service | Dieser Artikel |
+| AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
+| AEM as a Cloud Service (Foundation-Komponenten) | Dieser Artikel |
 
 Mit [!DNL Adobe Experience Manager] können Sie adaptive Formulare erstellen, die für Endbenutzer einfach und dynamisch zu verwenden sind. Das Formular-Layout steuert, wie Elemente oder Komponenten in einem adaptiven Formular angezeigt werden.
 

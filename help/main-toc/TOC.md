@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 99%
+source-wordcount: '5528'
+ht-degree: 98%
 
 ---
 
@@ -691,6 +691,7 @@ ht-degree: 99%
       + Kernkomponenten {#authoring-adaptive-forms-core-components}
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
+            + [Layout eines adaptiven Formulars basierend auf Kernkomponenten festlegen](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Erstellen einer adaptiven Formularvorlage basierend auf Kernkomponenten](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 99%
             + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
             + [Konvertieren adaptiver Formulare basierend auf Foundation-Komponenten in auf Kernkomponenten basierenden Formularen mithilfe des Migrationsdienstprogramm-Tools](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Speichern eines adaptiven Formulars als Entwurf](/help/forms/save-core-component-based-form-as-draft.md)
             + Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren{#rule-editor-core-components}
                + [Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components.md)
                + [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 99%
                + [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
                + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
                + [Beispiele für benutzerdefinierte Funktionen für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-components-use-cases.md)
+            + Einführung in Forms Portal und seine Komponenten{#introduction-to-forms-portal}
+               + [Einführung in die Forms Portal-Komponente](/help/forms/configure-forms-portal.md)
+               + [Auflisten von Formularen auf der Sites-Seite mithilfe der Komponente &quot;Search &amp; Lister&quot;](/help/forms/list-forms-on-sites-page.md)
+               + [Speichern und Auflisten von Formularen als Entwürfe auf der Siteseite mithilfe der Komponente &quot;Drafts &amp; Submissions&quot;](/help/forms/save-core-component-based-form-as-draft.md)
+               + [Fügen Sie über die Komponente &quot;Link&quot;Formularlinks zur Seite &quot;Sites&quot;hinzu.](/help/forms/add-form-link-to-aem-sites-page.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
@@ -782,7 +787,6 @@ ht-degree: 99%
             + [Wiederverwenden von Metadateneigenschaften eines adaptiven Formulars](/help/forms/reusing-adaptive-forms.md)
          + Verbessern der Barrierefreiheit von adaptiven Formularen {#accessible-adaptive-forms}
             + [Erstellen eines barrierefreien adaptiven Formulars](/help/forms/creating-accessible-adaptive-forms.md)
-         + [Konfigurieren eines Formularportals](/help/forms/configure-forms-portal.md)
          + [Erstellen und Verwalten von Überprüfungen](/help/forms/create-reviews-forms.md)
          + [Reviewer für die Übermittlung mit einem Formular verknüpfen](/help/forms/adding-reviewers-form.md)
          + [Erstellen und Verwalten von Überprüfungen eines adaptiven Formulars](/help/forms/review-adaptiveforms-in-sites-page.md)
