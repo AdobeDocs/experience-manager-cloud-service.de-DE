@@ -2,17 +2,19 @@
 title: Hochladen der von Ihrer Marke genehmigten Assets in  [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markengenehmigten Assets in Content Hub hochladen.
 role: User
-source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
+exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
+source-git-commit: 85fbbcf77bd5b2ef1a68454e2cf1d2202c8f90c4
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
-
 # Hochladen von markengenehmigten Assets in Content Hub {#upload-brand-approved-assets-content-hub}
 
 [Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) können Assets zur Content Hub entweder aus dem lokalen Dateisystem hinzufügen oder Assets aus OneDrive- oder Dropbox-Datenquellen importieren. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
+
+Die Assets, die in Assets as a Cloud Service als `Approved` markiert sind, sind automatisch in Content Hub verfügbar. Weitere Informationen finden Sie unter [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md).
 
 Zur weiteren Verbesserung der Asset-Suche bietet Content Hub folgende Möglichkeiten:
 
@@ -72,3 +74,14 @@ So fügen Sie Assets aus OneDrive- oder Dropbox-Datenquellen zu Content Hub hinz
 
 Administratoren können auch die obligatorischen und optionalen Felder konfigurieren, die beim Hochladen von Assets angezeigt werden, z. B. Kampagnenname, Keywords, Kanäle usw. Weitere Informationen finden Sie unter [Konfigurieren der Content Hub-Benutzeroberfläche](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
+## Verwalten von mit Content Hub hochgeladenen Assets {#manage-assets-uploaded-using-content-hub}
+
+[Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) können [Assets zur Content Hub](/help/assets/upload-brand-approved-assets.md) hinzufügen, entweder aus dem lokalen Dateisystem oder Assets aus OneDrive- oder Dropbox-Datenquellen importieren. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
+
+Die Anzeige von Assets, die mit Content Hub hochgeladen wurden, hängt davon ab, ob Sie [den Umschalter für die automatische Genehmigung aktiviert haben](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
+
+* Wenn der Umschalter **[!UICONTROL Automatische Genehmigung]** aktiviert ist, sind die Assets, die Sie mit Content Hub hochladen, automatisch verfügbar.
+
+* Wenn der Umschalter **[!UICONTROL Automatische Genehmigung]** deaktiviert ist, werden die Assets, die Sie mit Content Hub hochladen, nicht automatisch angezeigt. Die Assets sind im Ordner &quot;`hydrated-assets`&quot;Ihrer Assets as a Cloud Service-Umgebung verfügbar. Navigieren Sie zum Ordner und bearbeiten Sie [stapelweise](#bulk-approve-assets-content-hub) den Status dieser Assets in `Approved` , damit diese Assets in Content Hub angezeigt werden.
+
+![Content Hub-Genehmigungsprozess](/help/assets/assets/content-hub-approval.png)
