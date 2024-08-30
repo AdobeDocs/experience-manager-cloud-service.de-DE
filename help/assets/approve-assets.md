@@ -2,9 +2,10 @@
 title: Genehmigen von Assets in Experience Manager
 description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmigen.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ Wenn Sie die Eigenschaft anzeigen müssen, der das Feld **[!UICONTROL Prüfungss
 
 ## Genehmigen von Assets {#approve-assets}
 
-Sie können Assets sowohl in [!DNL Experience Manager] als auch in [!DNL Experience Manager Assets] genehmigen. Gehen Sie wie folgt vor, um Assets in [!DNL Experience Manager] zu genehmigen:
+Gehen Sie wie folgt vor, um Assets in [!DNL Experience Manager Admin view] zu genehmigen:
 
 1. Wählen Sie das Asset(s) aus und klicken Sie im oberen Bereich auf **[!UICONTROL Eigenschaften]** .
 1. Scrollen Sie auf der Registerkarte **[!UICONTROL Einfach]** nach unten zu **[!UICONTROL Prüfungsstatus]**.
@@ -51,7 +52,7 @@ Sie können Assets sowohl in [!DNL Experience Manager] als auch in [!DNL Experie
 ## Massenvalidierung von Assets {#bulk-approve-assets}
 
 Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen. Sie können Assets in großen Mengen genehmigen, um den Genehmigungsprozess zu beschleunigen, Zeit zu sparen und die Produktivität zu steigern.
-<br>Führen Sie die folgenden Schritte aus, um Massen-Assets in [!DNL Experience Manager] zu genehmigen:
+<br>Führen Sie die folgenden Schritte aus, um Massen-Assets in [!DNL Experience Manager Admin view] zu genehmigen:
 
 1. Erstellen Sie einen Ordner in der Autorenumgebung (https://author-pXXX-eYYY.adobeaemcloud.com). Ersetzen Sie _XXX_ durch Ihre Programm-ID und _YYY_ durch die Umgebungs-ID des Experience Managers.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
@@ -102,4 +103,3 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
    >[!NOTE]
    >
    >Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
-
