@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
-ht-degree: 100%
+source-wordcount: '2982'
+ht-degree: 96%
 
 ---
 
@@ -214,11 +214,20 @@ Wenn eine Aufnahme mit der Einstellung **Nicht bereinigen** mit einem Migrations
 >abstract="Eine häufige Ursache für einen Aufnahmefehler ist die Überschreitung der maximalen Größe von Knoteneigenschaftswerten. Befolgen Sie die Dokumentation, auch die zum BPA-Bericht, um Abhilfe zu schaffen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de" text="Migrationsvoraussetzungen"
 
-Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält einen `BSONObjectTooLarge`-Fehler und gibt an, welcher Knoten das Maximum überschritten hat. Dies ist eine MongoDB-Beschränkung.
+Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält entweder:
+
+* einen `BSONObjectTooLarge` -Fehler und geben Sie an, welcher Knoten das Maximum überschritten hat, oder
+* einen `BsonMaximumSizeExceededException` -Fehler, der anzeigt, dass ein Knoten vorhanden ist, der wahrscheinlich Unicode-Zeichen enthält, die die maximale Größe überschreiten **
+
+Dies ist eine MongoDB-Beschränkung.
 
 In der Notiz `Node property value in MongoDB` in [Voraussetzungen für das Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) finden Sie weitere Informationen und einen Link zu einem Oak-Tool, mit dem Sie alle großen Knoten finden können. Sobald alle Knoten mit großen Größen beseitigt sind, führen Sie die Extraktion und Aufnahme erneut durch.
 
 Um diese Einschränkung möglicherweise zu vermeiden, führen Sie den [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) auf der AEM-Quellinstanz aus und überprüfen Sie die Ergebnisse, insbesondere das Muster [„Nicht unterstützte Repository-Struktur“ (Unsupported Repository Structure, URS)](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/urs).
+
+>[!NOTE]
+>
+>[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Version 2.1.50+ wird Berichte zu großen Knoten erstellen, die Unicode-Zeichen enthalten, die die maximale Größe überschreiten. Stellen Sie sicher, dass Sie die neueste Version ausführen. BPA-Versionen vor 2.1.50 werden diese großen Knoten nicht identifizieren und melden. Sie müssen separat mit dem oben erwähnten erforderlichen Oak-Tool ermittelt werden.
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 
