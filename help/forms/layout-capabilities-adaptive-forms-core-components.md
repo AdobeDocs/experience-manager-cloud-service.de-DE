@@ -4,7 +4,7 @@ description: Layout und Darstellung adaptiver Formulare auf verschiedenen Gerät
 feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, AEM für dynamische Formulare, AEM Cloud Service-Formularlayouts, Formularlayouttypen in AEM Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
@@ -326,8 +326,6 @@ Sie können bei Bedarf auch die erforderlichen Überprüfungen für die Komponen
 ## Wie wird ein vorhandenes Layout durch ein neues Layout ersetzt?
 
 Sie können ein Layout eines Formulars durch ein neues Layout ersetzen. Dazu gehört die Änderung der Anordnung und Anzeige von Komponenten in einem Formular.
-
-
 
 Führen Sie die folgenden Schritte aus, um das vorhandene Layout eines Formulars zu ersetzen:
 
