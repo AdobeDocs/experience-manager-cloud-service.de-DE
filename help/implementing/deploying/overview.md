@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Grundlagen und Best Practices für die 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '3441'
-ht-degree: 100%
+source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+workflow-type: tm+mt
+source-wordcount: '3440'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Die Grundlagen der Code-Entwicklung in AEM as a Cloud Service ähneln denen von AEM On-Premise- und Managed Services-Lösungen. Entwicklerinnen und Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-Umgebungen auf AEM as a Cloud Service pushen. Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dieses Bereitstellungs-Tool ist nun das einzige Verfahren für die Bereitstellung von Code in Entwicklungs-, Staging- und Produktionsumgebungen von AEM as a Cloud Service. Zur schnellen Funktionsüberprüfung und zum Debugging vor der Bereitstellung der oben genannten Umgebungen kann der Code von einer lokalen Umgebung mit einer [schnellen Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md) synchronisiert werden.
 
-Die Aktualisierung der [AEM-Version](/help/implementing/deploying/aem-version-updates.md) ist stets ein separates Bereitstellungsereignis, das nicht mit dem Pushen von [anwenderspezifischem Code](#customer-releases) verbunden ist. Anders gesagt: Bei Freigabe von anwenderspezifischem Code sollte mit jener AEM-Version getestet werden, die sich der Produktion befindet, da der Code auf dieser Version bereitgestellt wird. Aktualisierungen der AEM-Version, die danach stattfinden und häufiger vorkommen, werden automatisch angewendet. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten, anwenderpezifischen Code sein.
+Die Aktualisierung der [AEM-Version](/help/implementing/deploying/aem-version-updates.md) ist stets ein separates Bereitstellungsereignis, das nicht mit dem Pushen von [anwenderspezifischem Code](#customer-releases) verbunden ist. Anders gesagt: Bei Freigabe von anwenderspezifischem Code sollte mit jener AEM-Version getestet werden, die sich der Produktion befindet, da der Code auf dieser Version bereitgestellt wird. AEM Aktualisierungen der Version, die danach stattfinden (häufig und automatisch angewendet werden), sollen mit dem bereits bereitgestellten Kundencode abwärtskompatibel sein.
 
 In diesem Dokument wird beschrieben, wie Entwicklerinnen und Entwickler ihr Vorgehen anpassen sollten, um sowohl mit Aktualisierungen der AEM as a Cloud Service-Version als auch mit benutzerspezifischen Aktualisierungen zu arbeiten.
 
