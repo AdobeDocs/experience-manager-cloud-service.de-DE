@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Kernkomponenten-basierte adaptive Formulare a
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 8%
 
 ---
@@ -44,6 +44,8 @@ Die Komponente **Entwürfe und Übermittlungen** benötigt eine Speichereinricht
 1. Geben Sie den Namen des Speicherkontos [!DNL Azure] in den Feldern **[!UICONTROL Azure Storage Account]** und **[!UICONTROL Azure Access Key]** an.
 
    ![Azure Storage-Konfiguration](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+   Geben Sie `Connection String` in das Textfeld `Azure Storage Account` und `Azure Key` in das Textfeld `Azure Access key` ein.
 
 1. Klicken Sie auf **Speichern**.
 
