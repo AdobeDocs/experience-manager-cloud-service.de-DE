@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie zwischengespeicherte Objekte aus dem Adobe-CD
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '433'
-ht-degree: 100%
+source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 96%
 
 ---
 
@@ -30,6 +30,8 @@ Alle Bereinigungsvarianten vereint Folgendes:
 
 >[!CAUTION]
 >Die Bereinigung des CDN-Caches, insbesondere mit Hardflag, erhöht den Traffic an der Quelle und kann zu einem Ausfall führen, sofern die Ausführung nicht ordnungsgemäß erfolgt.
+
+Sie können auf [ein Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) verweisen, das sich auf die Konfiguration von Bereinigungsschlüsseln und die Durchführung der CDN-Cache-Bereinigung konzentriert.
 
 ## Einzelne URL-Bereinigung {#single-purge}
 
