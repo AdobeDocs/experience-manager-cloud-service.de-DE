@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 98%
+source-wordcount: '1379'
+ht-degree: 91%
 
 ---
 
@@ -73,6 +73,29 @@ Weitere Eigenschaften sind:
 
 >[!NOTE]
 >Der Edge-Schlüssel muss als [Cloud Manager-Umgebungsvariable vom Typ „secret“](/help/operations/config-pipeline.md#secret-env-vars) konfiguriert werden, bevor die Konfiguration, die auf ihn verweist, bereitgestellt wird.
+
+### Sichere Migration zur Verringerung des Traffic-Risikos {#migrating-safely}
+
+Wenn Ihre Site bereits live ist, sollten Sie bei der Migration zu kundenverwaltetem CDN Vorsicht walten lassen, da eine Fehlkonfiguration öffentlichen Traffic blockieren kann. Dies liegt daran, dass nur Anforderungen mit dem erwarteten Header-Wert X-AEM-Edge-Key vom Adobe CDN akzeptiert werden. Es wird ein Ansatz empfohlen, wenn eine zusätzliche Bedingung vorübergehend in die Authentifizierungsregel aufgenommen wird, wodurch die Anfrage nur dann ausgewertet wird, wenn eine Testkopfzeile enthalten ist:
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+Das folgende `curl`-Anforderungsmuster kann verwendet werden:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+Nach erfolgreichem Testen kann die zusätzliche Bedingung entfernt und die Konfiguration neu bereitgestellt werden.
 
 ## API-Bereinigungs-Token {#purge-API-token}
 
