@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2172'
 ht-degree: 100%
 
 ---
@@ -95,12 +95,6 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
     <td>Verwenden Sie alternativ die Discovery-API von Sling</td>
     <td>2015</td>
     <td>entfernt</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service unterstützt keine Ausführungsmodi oder Dateisystemzugriff zur Laufzeit. </td>
-    <td>05.10.2020</td>
-    <td>Ende 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
