@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
+source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
 workflow-type: tm+mt
 source-wordcount: '2172'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,8 +18,7 @@ ht-degree: 100%
 >title="Veraltete und entfernte Funktionen in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Bestimmte Funktionen wurden von Cloud-nativen Gegenstücken ersetzt. Diese Registerkarte zeigt diese Funktionen."
 
-
-Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
+Adobe bewertet laufend die Produktfunktionen, um ältere Funktionen im Laufe der Zeit neu zu erfinden oder durch modernere Alternativen zu ersetzen, um den Kundenwert zu verbessern, wobei stets die Abwärtskompatibilität berücksichtigt wird. Da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
 
 Für die Bekanntgabe des bevorstehenden Entfernens/Ersetzens von [!DNL Experience Manager]-Funktionen gelten die folgenden Regeln:
 
