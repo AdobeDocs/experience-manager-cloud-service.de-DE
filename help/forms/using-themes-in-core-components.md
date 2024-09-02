@@ -3,11 +3,10 @@ title: Wie können Designs in adaptive Formularen erstellt und verwendet werden?
 description: Mithilfe von Designs und unter Verwendung von Kernkomponenten können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 keywords: Kernkomponenten zum Formatieren von adaptiven Formularen. Verwenden eines Designs in Kernkomponenten, Formatieren eines adaptiven Formulars, Anpassen von Designs
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2816'
 ht-degree: 100%
 
 ---
@@ -428,11 +427,6 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * **Ändern der Layout-Breite des Container-Bereichs**
 
   Es wird nicht empfohlen, die Layout-Breite des Container-Bereichs zu ändern. Wenn Sie die Breite eines Container-Bereichs angeben, wird er statisch und passt sich nicht mehr an unterschiedliche Displays an.
-
-* **Verwenden eines Formular- oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
-
-  Verwenden Sie einen Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftstil, Hintergrund und Transparenz formatieren möchten.
-Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile oder Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie dazu die im Formular-Editor verfügbaren Optionen.
 
 ## Häufig gestellte Fragen {#faq}
 
