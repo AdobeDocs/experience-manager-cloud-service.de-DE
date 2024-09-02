@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '2831'
-ht-degree: 100%
+source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+workflow-type: tm+mt
+source-wordcount: '2834'
+ht-degree: 99%
 
 ---
 
@@ -144,12 +144,13 @@ Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration fes
 
 AEM-Java-Protokolle werden als OSGi-Konfiguration definiert und zielen daher mithilfe von Ordnern im Ausführungsmodus auf bestimmte AEM as a Cloud Service-Umgebungen ab.
 
-Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete über OSGi-Konfigurationen für die Sling LogManager-Factory. Es werden zwei Konfigurationseigenschaften unterstützt:
+Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete über OSGi-Konfigurationen für die Sling LogManager-Factory. Es werden drei Konfigurationseigenschaften unterstützt:
 
 | OSGi-Konfigurationseigenschaft | Beschreibung |
 |---|---|
-| org.apache.sling.commons.log.names | Die Java-Pakete, für die Protokolleinträge gesammelt werden sollen. |
-| org.apache.sling.commons.log.level | Die Protokollebene, auf der die Java-Pakete protokolliert werden sollen, angegeben durch org.apache.sling.commons.log.names |
+| `org.apache.sling.commons.log.names` | Die Java-Pakete, für die Protokolleinträge gesammelt werden sollen. |
+| `org.apache.sling.commons.log.level` | Die Protokollebene, auf der die Java-Pakete protokolliert werden sollen, angegeben durch `org.apache.sling.commons.log.names` |
+| `org.apache.sling.commons.log.file` | Geben Sie das Ziel für die Ausgabe an: `logs/error.log` |
 
 Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM as a Cloud Service führen.
 
@@ -163,6 +164,7 @@ Im Folgenden finden Sie Beispiele für die empfohlenen Protokollierungskonfigura
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -174,6 +176,7 @@ Im Folgenden finden Sie Beispiele für die empfohlenen Protokollierungskonfigura
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -185,6 +188,7 @@ Im Folgenden finden Sie Beispiele für die empfohlenen Protokollierungskonfigura
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
