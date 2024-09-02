@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Be
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 13%
+source-wordcount: '1213'
+ht-degree: 14%
 
 ---
 
@@ -34,11 +34,6 @@ Mit RUM werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis
 ## Wer kann von einem echten Anwendungsüberwachungsdienst profitieren? {#who-can-benefit-from-rum-service}
 
 AEM hat RUM entwickelt, um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit AEM Sites interagieren. RUM kann verwendet werden, um Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben auf - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
-
-
-## Erfahren Sie, wie der Real Use Monitoring-Dienst funktioniert. {#understand-how-the-rum-service-works}
-
-AEM verwendet RUM, um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit AEM Sites interagieren. Es hilft ihnen, Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben auf - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
 
 ## Überwachungsdienst für die tatsächliche Verwendung und Datenschutz {#rum-service-and-privacy}
 
