@@ -3,10 +3,10 @@ title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren und Benutzern mit unterschiedlichen Berechtigungstypen Zugriff gewähren (Assets hochladen, Adobe Expreß-Benutzer) und wie Sie Benutzern Administratorberechtigungen gewähren.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
+source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 3%
+source-wordcount: '1524'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +32,22 @@ Zu den verschiedenen Berechtigungen für Content Hub gehören:
 
 * [Experience Manager Assets-Benutzer](#experience-manager-assets-users): Möglichkeit, Assets in Experience Manager Assets as a Cloud Service zu genehmigen, um diese Assets in Content Hub verfügbar zu machen.
 
+In der folgenden Tabelle sind die verfügbaren Content Hub-Benutzertypen, ihre Berechtigungen und die Produktprofile zusammengefasst, die zum Erhalt dieser Berechtigungen erforderlich sind:
+
+| Benutzerrolle | Content Hub-Benutzer | Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets | Content Hub-Benutzer mit Berechtigungen zum Remix von Assets | Content Hub-Administratoren |
+|---------------|----------|----------|-------------------------|---|
+| **Funktionen** |
+| Zugriff auf markenbestätigte Assets im Content Hub-Portal | ✓ | ✓ | ✓ | ✓ |
+| Hochladen von Assets aus dem Content Hub-Portal | − | ✓ | ✓ | ✓ |
+| Adobe Expreß-Integration zum Bearbeiten von Bildern verwenden | − | − | ✓ | − |
+| Zugriff auf die Benutzeroberfläche der Content Hub-Konfiguration | − | − | − | ✓ |
+| **Benutzer muss sich in diesen Produktprofilen befinden (Admin Console)** |
+| AEM > Versandinstanz > AEM Assets Limited Users | ✓ | ✓ | ✓ | ✓ |
+| AEM > Produktions-Autoreninstanz > AEM Benutzer | − | ✓ | ✓ | − |
+| AEM > Produktions-Autoreninstanz > AEM Administratoren | − | − | − | ✓ |
+| Adobe Express | − | − | ✓ | − |
+| **Weitere Informationen** | Siehe [Content Hub-Benutzer](#onboard-content-hub-users) | Siehe [Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](#onboard-content-hub-users-add-assets) | Siehe [Content Hub-Benutzer mit Berechtigungen zum Remix von Assets in neue Varianten](#onboard-content-hub-users-remix-assets) | Siehe [Content Hub-Administratoren](#onboard-content-hub-administrator) |
+
 ## Schritt 1: Aktivieren von Content Hub für Experience Manager Assets mithilfe von Cloud Manager {#enable-content-hub}
 
 Um auf das Content Hub-Portal zugreifen zu können, müssen Administratoren zunächst Content Hub für Experience Manager Assets as a Cloud Service mithilfe von Cloud Manager aktivieren. Führen Sie die folgenden Schritte aus:
@@ -53,7 +69,7 @@ Um auf das Content Hub-Portal zugreifen zu können, müssen Administratoren zun�
 
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
-Content Hub ist jetzt für Experience Manager Assets as a Cloud Service aktiviert.
+Content Hub ist jetzt für Experience Manager Assets as a Cloud Service aktiviert. Nachdem Sie Content Hub in einer Produktionsumgebung aktiviert haben, können Sie es nicht in einer Self-Service-Umgebung deaktivieren.
 
 >[!NOTE]
 >
