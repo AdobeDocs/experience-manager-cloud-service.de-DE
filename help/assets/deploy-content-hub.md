@@ -3,9 +3,9 @@ title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren und Benutzern mit unterschiedlichen Berechtigungstypen Zugriff gewähren (Assets hochladen, Adobe Expreß-Benutzer) und wie Sie Benutzern Administratorberechtigungen gewähren.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
+source-git-commit: 9ac22ebcca619d91a38111bd706986b8d4a4d189
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1567'
 ht-degree: 4%
 
 ---
@@ -47,6 +47,10 @@ In der folgenden Tabelle sind die verfügbaren Content Hub-Benutzertypen, ihre B
 | AEM > Produktions-Autoreninstanz > AEM Administratoren | − | − | − | ✓ |
 | Adobe Express | − | − | ✓ | − |
 | **Weitere Informationen** | Siehe [Content Hub-Benutzer](#onboard-content-hub-users) | Siehe [Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](#onboard-content-hub-users-add-assets) | Siehe [Content Hub-Benutzer mit Berechtigungen zum Remix von Assets in neue Varianten](#onboard-content-hub-users-remix-assets) | Siehe [Content Hub-Administratoren](#onboard-content-hub-administrator) |
+
+>[!NOTE]
+>
+>[Experience Manager Assets-Benutzer](#experience-manager-assets-users) haben die Möglichkeit, Assets in Experience Manager Assets as a Cloud Service zu genehmigen, um diese Assets in Content Hub verfügbar zu machen. Diese Benutzer müssen über die Admin Console zu AEM > Produktions-Autoreninstanz > AEM Benutzerprofil hinzugefügt werden.
 
 ## Schritt 1: Aktivieren von Content Hub für Experience Manager Assets mithilfe von Cloud Manager {#enable-content-hub}
 
