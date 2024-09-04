@@ -3,13 +3,13 @@ title: Wie kann das Erscheinungsbild von adaptiven Formularen angepasst werden?
 description: Verwenden Sie das LESS-Framework für adaptive Formulare, um das Erscheinungsbild adaptiver Formulare anzupassen.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '2307'
 ht-degree: 100%
 
 ---
-
 
 # Stilkonstrukte für adaptive Formulare{#styling-constructs-for-adaptive-forms}
 
@@ -1124,4 +1124,3 @@ Das Design **Einfache Registrierung** unter /etc/clientlibs/fd/af/guidetheme/sim
   </tr>
  </tbody>
 </table>
-

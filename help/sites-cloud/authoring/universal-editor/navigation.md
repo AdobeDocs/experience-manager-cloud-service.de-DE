@@ -4,13 +4,13 @@ description: Erfahren Sie mehr über die Grundlagen des Zugriffs auf und der Nav
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: tm+mt
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '1576'
 ht-degree: 100%
 
 ---
-
 
 # Zugriff auf den und Navigation im universellen Editor {#navigating}
 

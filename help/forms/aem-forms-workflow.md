@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
-workflow-type: tm+mt
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '2335'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
-
 
 # Formularzentrierte Workflows in OSGi {#forms-centric-workflow-on-osgi}
 
@@ -81,7 +81,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
    1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
    1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Geben Sie im Feld **[!UICONTROL Domains]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale, Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-1. Erstellen Sie Workflow-Phasen.  Ein Workflow kann mehrere Phasen haben.  Diese Phasen werden im AEM-Posteingang angezeigt und geben den Fortschritt des Workflows an.
+1. Erstellen Sie Workflow-Phasen.  Ein Workflow kann mehrere Phasen haben. Diese Phasen werden im AEM-Posteingang angezeigt und geben den Fortschritt des Workflows an.
 
    Wählen Sie zum Definieren einer Phase das Symbol ![info-circle](assets/info-circle.png) aus, um die Eigenschaften des Workflow-Modells anzuzeigen. Öffnen Sie die Registerkarte **Phasen**, fügen Sie Phasen für das Workflow-Modell hinzu und wählen Sie **Speichern und schließen** aus. Für einen Hypothekenantrag könnten Sie beispielsweise die folgenden Schritte erstellen: Darlehensantrag, Status des Darlehensantrags, zu signierende Dokumente und signiertes Antragsdokument.
 
@@ -201,7 +201,7 @@ Sie können einen formularzentrierten Workflow wie folgt starten oder auslösen:
 
 ### Senden eines Antrags aus dem AEM-Posteingang {#inbox}
 
-Die von Ihnen erstellte Workflow-Anwendung ist als Antrag im Posteingang verfügbar. Benutzer, die Mitglieder der Gruppe [!DNL workflow-users] sind, können die Anwendung ausfüllen und übermitteln, die den zugehörigen Workflow Trigger.
+Die von Ihnen erstellte Workflow-Anwendung ist als Antrag im Posteingang verfügbar. Benutzende, die Mitglieder der Gruppe [!DNL workflow-users] sind, können den Antrag ausfüllen und absenden, der den zugehörigen Workflow auslöst.
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

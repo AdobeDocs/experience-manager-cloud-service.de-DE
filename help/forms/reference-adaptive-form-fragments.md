@@ -1,6 +1,6 @@
 ---
 title: Was sind Referenzfragmente für adaptive Formulare?
-description: AEM Forms stellt adaptive Formularfragmente bereit, die Sie als Assets verwenden können, um Formulare schnell zu erstellen.
+description: AEM Forms bietet adaptive Formularfragmente, die Sie als Assets verwenden können, um ein Formular schnell zu erstellen.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -9,17 +9,17 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '396'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-
 # Verweisen auf adaptive Formularfragmente {#reference-adaptive-form-fragments}
 
-Adaptives Formularfragment steht für eine Gruppe von Feldern oder einen Bereich, der eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag-and-Drop in ein Formular ziehen, indem Sie den Assets-Browser in der Seitenleiste verwenden und im Formular-Editor bearbeiten.
+Adaptives Formularfragment steht für eine Gruppe von Feldern oder einen Bereich, der eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag und Drop in ein Formular mit dem Asset-Browser in der Seitenleiste einfügen und es im Formulareditor bearbeiten.
 
 Für Entwickler adaptiver Formulare werden Referenzfragmente im [!DNL AEM Forms]-Paket [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS) bereitgestellt. Es beinhaltet folgende Fragmente:
 
@@ -40,7 +40,7 @@ Wenn Sie das Paket installieren, wird unter „Formulare und Dokumente“ ein Re
 
 ## Adresse {#address}
 
-Enthält Felder zur Angabe einer Postanschrift. Die verfügbaren Felder sind Straße, Postleitzahl, Stadt, Bundesland und Land. Dazu gehören auch ein vorkonfigurierter Webservice, der Stadt und Staat für eine bestimmte US-Postleitzahl ausfüllt.
+Enthält Felder, um die Postadresse anzugeben. Die verfügbaren Felder sind Straße, Postleitzahl, Stadt, Bundesland und Land. Dazu gehören auch ein vorkonfigurierter Webservice, der Stadt und Staat für eine bestimmte US-Postleitzahl ausfüllt.
 
 ![Adressfragment](assets/address.png)
 
@@ -83,7 +83,7 @@ Enthält Felder für Informationen über ein oder mehrere abhängige Familienmit
 
 ](assets/dependents-info-1.png)-->
 
-## Beschäftigungshintergrund {#employment-history}
+## Beschäftigungshistorie {#employment-history}
 
 Enthält Felder zur Erfassung der Beschäftigungshistorie. Es ermöglicht das Hinzufügen mehrerer Organisationen.
 
@@ -93,7 +93,7 @@ Enthält Felder zur Erfassung der Beschäftigungshistorie. Es ermöglicht das Hi
 
 ](assets/emp-history-1.png)-->
 
-## Umsatz und Ausgaben {#income-expenditure}
+## Einkommen und Ausgaben {#income-expenditure}
 
 Enthält Felder zur Erfassung von monatlichen Cashflows und Ausgaben. Formulare, in denen Benutzer finanzielle Details bereitstellen müssen, können dieses Fragment verwenden, um Einkommen und Ausgaben zu erfassen.
 

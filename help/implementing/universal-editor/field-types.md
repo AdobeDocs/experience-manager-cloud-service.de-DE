@@ -5,7 +5,7 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Erfahren Sie anhand von Beispielen mehr über die Felder und Komponententypen, die mit dem universellen Editor in der Eigenschaftenleiste bearbeitet werden können. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Felder und Komponententypen sie in der Eigenschaftenleiste des Editors bearbeiten können.  Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
 

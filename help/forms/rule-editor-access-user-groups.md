@@ -1,26 +1,26 @@
 ---
-title: Wie können Sie Zugriff auf den Regeleditor für adaptive Formulare gewähren, um Benutzergruppen auszuwählen?
+title: Wie kann ausgewählten Benutzergruppen der Zugriff auf den AEM-Regeleditor für adaptive Formulare gewährt werden?
 description: Möglicherweise sind unterschiedliche Typen von Benutzern mit unterschiedlichen Fähigkeiten vorhanden, die mit adaptiven Formularen arbeiten. Erfahren Sie, wie Sie den Zugriff auf den Regeleditor für Benutzer auf Grundlage ihrer Rolle oder Funktion einschränken können.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
-# Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren {#grant-rule-editor-access-to-select-user-groups}
+# Gewähren von Zugriff auf den Regeleditor für ausgewählte Benutzergruppen {#grant-rule-editor-access-to-select-user-groups}
 
 ## Übersicht {#overview}
 
 Möglicherweise sind unterschiedliche Typen von Benutzern mit unterschiedlichen Fähigkeiten vorhanden, die mit adaptiven Formularen arbeiten. Während erfahrene Benutzer möglicherweise über die richtigen Kenntnisse verfügen, um mit Skripten und komplexen Regeln zu arbeiten, gibt es möglicherweise Benutzer auf Einsteigerniveau, die nur mit dem Layout und den Standardeigenschaften adaptiver Formulare arbeiten müssen.
 
-Mit [!DNL Experience Manager Forms] können Sie den Zugriff des Regeleditors auf Benutzer anhand ihrer Rolle oder Funktion einschränken. In den Einstellungen für den Konfigurations-Service für adaptive Formular können Sie festlegen, welche [Benutzergruppen](forms-groups-privileges-tasks.md) den Regeleditor anzeigen und auf ihn zugreifen können.
+[!DNL Experience Manager Forms] ermöglicht es Ihnen, den Zugriff auf den Regeleditor anhand der Rolle oder Funktion der Benutzenden einzuschränken. In den Einstellungen für den Konfigurations-Service für adaptive Formular können Sie festlegen, welche [Benutzergruppen](forms-groups-privileges-tasks.md) den Regeleditor anzeigen und auf ihn zugreifen können.
 
 ## Angeben von Benutzergruppen für Zugriff auf Regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
@@ -55,4 +55,3 @@ Mit [!DNL Experience Manager Forms] können Sie den Zugriff des Regeleditors auf
    Komponentensymbolleiste für Benutzer ohne Zugriff auf Regeleditor:
 
    Anweisungen zum Hinzufügen von Benutzern zu Gruppen finden Sie unter [Benutzerverwaltung und Sicherheit](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=de).
-

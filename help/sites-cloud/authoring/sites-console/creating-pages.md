@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -39,8 +39,8 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 1. Im ersten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Wählen Sie die Vorlage aus, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken Sie dann auf **Weiter** , um den Vorgang fortzusetzen, oder auf **Abbrechen** , um den Vorgang abzubrechen.
-   * Vorlagen werden sowohl für den [Seiten-Editor](/help/sites-cloud/authoring/page-editor/introduction.md) als auch für den [Universal Editor](/help/edge/wysiwyg-authoring/templates.md) unterstützt.
+   * Wählen Sie die zum Erstellen der neuen Seite gewünschte Vorlage aus und dann **Weiter**, um fortzufahren, oder **Abbrechen**, um den Vorgang abzubrechen.
+   * Vorlagen werden sowohl für den [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) als auch für den [universellen Editor](/help/edge/wysiwyg-authoring/templates.md) unterstützt.
 
    ![Auswählen einer Vorlage für eine neue Seite](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

@@ -5,9 +5,9 @@ role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2002'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 >abstract="Sie können nach Assets suchen, indem Sie ein Keyword in der Suchleiste eingeben oder Assets nach ihrem Status, Dateityp, MIME-Typ, Erstellungs-, Änderungs- und Ablaufdatum oder ihrer Größe filtern. Zusätzlich zu den Standardfiltern können Sie auch benutzerdefinierte Filter anwenden. Sie können die gefilterten Ergebnisse als gespeicherte Suche oder Smart-Sammlung speichern."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=de#manage-smart-collection" text="Erstellung von Smart-Sammlungen"
 
-[!DNL Assets view] bietet eine effektive Suche, die standardmäßig funktioniert. Die Suche ist umfassend, da es sich um eine Volltextsuche handelt. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern. [!DNL Assets view] bietet Volltextsuche und Suchvorgänge durch die Metadaten wie Smart-Tags, Titel, Erstellungsdatum und Copyright.
+[!DNL Assets view] bietet eine effektive Suche, die einfach standardmäßig funktioniert. Die Suche ist umfassend, da es sich um eine Volltextsuche handelt. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern. [!DNL Assets view] bietet Volltextsuche und Suchvorgänge durch die Metadaten wie Smart-Tags, Titel, Erstellungsdatum und Copyright.
 
 Um nach Assets zu suchen,
 
@@ -27,7 +27,7 @@ Um nach Assets zu suchen,
 
   ![Suchfeld](assets/search-box.png)
 
-   * Suchen Sie mithilfe eines Suchbegriffs und ändern Sie optional den Ordner. Drücken Sie die Eingabetaste.
+   * Suchen Sie mithilfe eines Keywords und ändern Sie optional den Ordner. Drücken Sie die Eingabetaste.
 
    * Beginnen Sie die Arbeit mit einem kürzlich angezeigten Asset, indem Sie direkt danach suchen. Klicken Sie in das Suchfeld und wählen Sie aus den Vorschlägen ein kürzlich angezeigtes Asset aus.
 
@@ -49,7 +49,7 @@ Sie können die Suchergebnisse anhand der folgenden Parameter filtern.
 
 * Ablaufdatum: Filtern Sie die Suchergebnisse anhand des Asset-Status `Expired`. Darüber hinaus können Sie einen Zeitraum für das Ablaufdatum für Assets angeben, um Ihre Suchergebnisse weiter zu filtern.
 
-* Benutzerdefinierte Filter: [Fügen Sie benutzerdefinierte Filter](#custom-filters) zur Benutzeroberfläche der Assets-Ansicht hinzu. Sie können diese benutzerdefinierten Filter dann zusätzlich zu den Standardfiltern anwenden, um Ihre Suchergebnisse zu verfeinern.
+* Benutzerdefinierte Filter: [Hinzufügen benutzerdefinierter Filter](#custom-filters) zur Benutzeroberfläche der Assets-Ansicht. Sie können diese benutzerdefinierten Filter zusätzlich zu den Standardfiltern anwenden, um Ihre Suchergebnisse zu verfeinern.
 
 Sie können die gesuchten Assets in aufsteigender oder absteigender Reihenfolge nach `Name`, `Relevance`, `Size`, `Modified` und `Created` sortieren. Die gesuchten Assets werden standardmäßig nach `Relevance` sortiert.
 
@@ -135,25 +135,25 @@ So generieren Sie neue Assets mit [!DNL Adobe Firefly]:
 
 1. Navigieren Sie zum [!DNL AEM Assets]-Workspace.
 
-1. Geben Sie den Asset-Namen in die Suchleiste ein. Sie können beispielsweise mit dem Keyword `Bugatti Type 57` nach einem Asset suchen. Bei der Suche nach dem Asset werden keine Ergebnisse gefunden, da das Asset in keinem der Asset-Ordner vorhanden ist. Um Assets mit AI zu generieren, klicken Sie auf **[!UICONTROL Mit Firefly generieren]**. Der Bildschirm [!DNL Adobe Firefly] wird angezeigt.
+1. Geben Sie den Asset-Namen in die Suchleiste ein. Sie können beispielsweise ein Asset mit dem Keyword `Bugatti Type 57` suchen. Bei der Suche nach dem Asset werden keine Ergebnisse gefunden, da das Asset in keinem der Asset-Ordner vorhanden ist. Um Assets mit KI zu generieren, klicken Sie auf **[!UICONTROL Mit Firefly generieren]**. Der [!DNL Adobe Firefly]-Bildschirm wird angezeigt.
 
    ![Integration mit Firefly](assets/firefly-integration.png)
 
-   Die neuen Assets wurden erfolgreich generiert. Darüber hinaus können Sie die Bildbeschreibung ändern, indem Sie die neue Textaufforderung in das Beschreibungsfeld eingeben. [Erfahren Sie, wie Sie eine gute KI-Aufforderung schreiben, um außergewöhnliche und relevante Inhalte zu generieren.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) Alternativ können Sie [Bilder mit verschiedenen anderen Funktionen bearbeiten, z. B. Stil, Bildabmessungen und mehr.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   Die neuen Assets wurden erfolgreich generiert. Darüber hinaus können Sie die Bildbeschreibung ändern, indem Sie den neuen Text-Prompt in das Beschreibungsfeld eingeben. [Erfahren Sie, wie Sie einen guten KI-Prompt schreiben, um außergewöhnliche und relevante Inhalte zu generieren.](https://helpx.adobe.com/de/firefly/using/tips-and-tricks.html) Alternativ können Sie [Bilder mit verschiedenen anderen Funktionen bearbeiten, wie dem Ändern von Stil, Bildabmessungen und mehr.](https://helpx.adobe.com/de/firefly/using/text-to-image.html)
 
    ![Integration mit Firefly](assets/bugatti-type-57.png)
 
-1. Wählen Sie ein Bild aus, das Sie speichern möchten. Klicken Sie auf **[!UICONTROL Speichern]** , um die Assets in Ihrem bevorzugten Ordner zu speichern und so einfach darauf zuzugreifen.
+1. Wählen Sie ein Bild aus, das Sie speichern möchten. Klicken Sie auf **[!UICONTROL Speichern]**, um die Assets in Ihrem bevorzugten Ordner zu speichern und so einfach darauf zuzugreifen.
 
-1. Asset-Formular speichern wird angezeigt. Geben Sie die folgenden Felder an:
+1. Ein Formular zum Speichern des Assets wird angezeigt. Geben Sie die folgenden Felder an:
 
    * Geben Sie einen Namen für die Datei in das Feld **Speichern unter** ein.
    * Wählen Sie einen Zielordner aus.
-   * Geben Sie Details wie Projekt- oder Kampagnenname, Suchbegriffe, Kanäle, Zeitraum und Region ein.
+   * Geben Sie Details wie den Projekt- oder Kampagnennamen, Keywords, Kanäle, den Zeitrahmen und die Region an.
 
    ![Integration mit Firefly](assets/save-generated-asset.png)
 
-1. Klicken Sie auf **Als neues Asset speichern** , um die Assets zu speichern.
+1. Klicken Sie auf **Als neues Asset speichern**, um das Asset bzw. die Assets zu speichern.
 
 ### Hochladen von Assets {#upload-assets-firefly}
 
@@ -165,7 +165,7 @@ So laden Sie das generierte Asset in das Asset-Repository hoch:
 
 ## Gespeicherte Suchvorgänge {#saved-search}
 
-In [!DNL Assets view] ist die Suchfunktion recht einfach zu verwenden. Über das Suchfeld können Sie nicht nur einen Suchbegriff eingeben und die Eingabetaste drücken, um die Ergebnisse anzuzeigen. Sie können auch schnell mit einem Klick nach Ihren kürzlich gesuchten Suchbegriffen suchen.
+In [!DNL Assets view] ist die Suchfunktion recht einfach zu verwenden. Sie können nicht nur ein Keyword ins Suchfeld eingeben und die Eingabetaste drücken, um die Ergebnisse aufzurufen, sondern auch schnell mit einem einzigen Klick erneut nach Ihren kürzlich gesuchten Keywords suchen.
 
 Sie können die Suchergebnisse auch nach bestimmten Kriterien rund um Metadaten und Art der Assets filtern. Mit [!DNL Assets view] können Sie bei häufig verwendeten Filtern die Suchparameter speichern, um das Sucherlebnis zu verbessern. Um zu suchen und den Filter mit nur einem Klick anzuwenden, können Sie auch die gespeicherte Suche auswählen.
 
@@ -188,7 +188,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, und die folgenden Aktionen ausführen:
 
-* **Ähnliches Bild suchen**: Suchen Sie ein ähnliches Bild-Asset in der Assets-Benutzeroberfläche basierend auf den Metadaten und Smart-Tags.
+* **Nach ähnlichem Bild suchen**: Suchen Sie anhand der Metadaten und Smart-Tags nach ähnlichen Bild-Assets in der Assets-Benutzeroberfläche.
 
 * **Details**: Zeigen Sie Asset-Eigenschaften an und bearbeiten Sie diese.
 
@@ -212,7 +212,7 @@ Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, 
 
 * **Umbenennen**: Benennen Sie ein Asset um.
 
-* **In Bibliotheken kopieren**: Fügen Sie der Bibliothek ein Asset hinzu.
+* **In Bibliotheken kopieren**: Fügen Sie ein Asset zur Bibliothek hinzu.
 
 * **Aufgaben zuweisen**: Weisen Sie Benutzenden Aufgaben für ein Asset zu.
 
@@ -220,25 +220,25 @@ Sie können die Assets auswählen, die in den Suchergebnissen angezeigt werden, 
 
 ## Konfigurieren der Startseite für die erste Suche {#configuring-search-first-homepage}
 
-In der Assets-Ansicht können Sie die standardmäßige Landingpage für Ihre Organisation auswählen. Bei der Verwendung der ersten Suche als Startseite haben Sie auch die Möglichkeit, das Branding der Seite anzupassen, indem Sie den Hintergrund und die Logo-Bilder so konfigurieren, dass sie Ihrer Marke entsprechen.
+Mit der Assets-Ansicht können Sie die Standard-Landingpage Ihrer Organisation auswählen. Bei der Verwendung der ersten Suche als Startseite haben Sie auch die Möglichkeit, das Branding der Seite anzupassen, indem Sie den Hintergrund und die Logo-Bilder so konfigurieren, dass sie Ihrer Marke entsprechen.
 
 Gehen Sie wie folgt vor, um die Startseite für die erste Suche zu konfigurieren:
 
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
-1. Wählen Sie **[!UICONTROL Erste Suche]**. Außerdem öffnet sich die Konfiguration der ersten Suchverbindung. Sie können die [Ausrichtung](#setting-alignment-search-bar) oder die [ Einstellung des Hintergrunds und des Logobilds](#setting-background-image-and-logo) Ihrer Homepage festlegen.
+1. Wählen Sie **[!UICONTROL Erste Suche]**. Es öffnet sich die Konfiguration der ersten Suche. Sie können für Ihre Startseite die [Ausrichtung](#setting-alignment-search-bar) oder [Hintergrund- und Logo-Bilder](#setting-background-image-and-logo) festlegen.
 
-### Ausrichtung der Suchleiste festlegen {#setting-alignment-search-bar}
+### Festlegen der Ausrichtung der Suchleiste {#setting-alignment-search-bar}
 
-Mit [!DNL Assets view] können Sie die Ausrichtung der Suchleiste ändern. Sie können die Suchleiste entweder in der Mitte oder oben anzeigen lassen. Wählen Sie die gewünschte Ausrichtung und klicken Sie auf **[!UICONTROL Speichern]**.
+[!DNL Assets view] ermöglicht es Ihnen, die Ausrichtung der Suchleiste zu ändern. Sie können die Suchleiste entweder in der Mitte oder oben anzeigen lassen. Wählen Sie die gewünschte Ausrichtung und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ![Ausrichtung der Startseite für die erste Suche](assets/search-first-alignment.png)
 
 ### Festlegen der Hintergrund- und Logo-Bilder für die Startseite {#setting-background-image-and-logo}
 
-Sie können Ihrer ersten Suchhomepage ein Markenlogo und ein Hintergrundbild hinzufügen. Führen Sie die folgenden Schritte aus:
+Sie können zu Ihrer Startseite für die erste Suche ein Markenlogo und ein Hintergrundbild hinzufügen. Führen Sie die folgenden Schritte aus:
 
-1. Navigieren Sie zum Abschnitt **[!UICONTROL Hintergrund- und Logo-Bild]** unter **[!UICONTROL Homepage]**.
-1. Klicken Sie auf **[!UICONTROL Ersetzen]** , um Bilder aus dem vorhandenen Asset-Repository zu durchsuchen.
+1. Navigieren Sie zum Abschnitt **[!UICONTROL Hintergrund- und Logo-Bild]** unter **[!UICONTROL Startseite]**.
+1. Klicken Sie auf **[!UICONTROL Ersetzen]**, um die Bilder in einem vorhandenen Asset-Repository zu durchsuchen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Öffnen Sie die [Vorschau](#preview-configured-homepage) der Änderungen, um die Änderungen zu überprüfen.
 
 ### Vorschau der konfigurierten Startseite {#preview-configured-homepage}
@@ -246,7 +246,7 @@ Sie können Ihrer ersten Suchhomepage ein Markenlogo und ein Hintergrundbild hin
 Sie können eine Vorschau anzeigen, um das Layout und die Formatierung der Startseite für die erste Suche zu überprüfen. Mithilfe der **[!UICONTROL Vorschau]** können Sie das Layout korrigieren oder Änderungen entsprechend Ihres Bedarfs vornehmen. Gehen Sie wie folgt vor, um eine Vorschau der konfigurierten Startseite anzuzeigen:
 
 1. Klicken Sie auf **[!UICONTROL Allgemeine Einstellungen]** und wähle Sie **[!UICONTROL Erste Suche]**.
-1. Navigieren Sie zu **[!UICONTROL Startseite für erste Suche anpassen]** und klicken Sie auf **[!UICONTROL Vorschau]**. Schalten Sie durch die Schaltfläche **[!UICONTROL Dunkles Design]**, um die Startseite im Dunkeln- oder Helldesign in der Vorschau anzuzeigen.
+1. Navigieren Sie zu **[!UICONTROL Startseite für erste Suche anpassen]** und klicken Sie auf **[!UICONTROL Vorschau]**. Schalten Sie mit der Schaltfläche **[!UICONTROL Dunkles Thema]** um, um die Startseite mit dunklem oder hellem Thema als Vorschau anzuzeigen.
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um den Vorschau-Bildschirm zu schließen. 
 
    ![Vorschau der Startseite für die erste Suche](/help/assets/assets/search-first-preview.gif)
@@ -311,7 +311,7 @@ Die Kontextsuche unterstützt standardmäßig die folgenden Filter. Stützen Sie
 
 **Beispiel 3**
 
-**Textaufforderung**: Ich benötige Bilder des blauen Himmels mit einer Höhe von 1500 und 2500 Pixel, die im letzten Monat erstellt wurden und noch nicht abgelaufen und genehmigt sind.
+**Text-Prompt**: Ich benötige Bilder von blauem Himmel mit einer Höhe von 1500 und 2500 Pixel, die im letzten Monat erstellt wurden und genehmigt und noch nicht abgelaufen sind.
 
 [!DNL Experience Manager Assets] wendet die folgenden Filter automatisch an und zeigt die Suchergebnisse an:
 

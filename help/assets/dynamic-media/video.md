@@ -6,9 +6,9 @@ feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9406'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -613,12 +613,12 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
 
    Wenn Sie eine der oben genannten Aufgaben abgeschlossen haben, kehren Sie zu diesen Schritten zurück.
 
-   ![Asset-Eigenschaften ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;des Videos.*
+   ![Asset-Eigenschaften ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Registerkarte „Beschriftungen und Audiospuren“ auf der Seite „Eigenschaften“ des Videos*
 
 1. (Optional) Gehen Sie wie folgt vor, um einem Video einen oder mehrere Untertitel hinzuzufügen:
 
    * Wählen Sie **[!UICONTROL Untertitel hochladen]** aus.
-   * Navigieren Sie zu einer oder mehreren `.vtt` -Dateien (Video Text Tracks), wählen Sie sie aus und öffnen Sie sie.
+   * Navigieren Sie zu einer oder mehreren `.vtt`(Video Text Tracks)-Dateien, wählen Sie diese aus und öffnen Sie sie.
    * Damit Untertitel im Medien-Player angezeigt werden, müssen Sie erforderliche Details (Metadaten) zu jeder Untertiteldatei hinzufügen, die Sie hochgeladen haben. Wählen Sie dazu das Stiftsymbol rechts neben dem Namen einer Untertiteldatei aus. Geben Sie im Dialogfeld „Untertitel bearbeiten“ die folgenden erforderlichen Details zur Datei ein und wählen Sie dann **[!UICONTROL Speichern]** aus. Wiederholen Sie diesen Vorgang für jede hochgeladene Untertiteldatei:
 
 
@@ -626,7 +626,7 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
    | --- | --- | 
    | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Derselbe Dateiname kann nicht für zusätzliche Untertiteldateien und Audiospurdateien verwendet werden. |
    | Sprache | Wählen Sie die Sprache des Untertitels aus. |
-   | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel**: Der im Video angezeigte Untertiteltext, der den Dialog übersetzt oder transkribiert.<br>**Beschriftung** - Der Beschriftungstext enthält Hintergrundgeräusche und die Lautsprechererkennung. Es enthält auch andere relevante Details neben der Übersetzung oder Transkription des Dialogfelds. Diese Funktion macht den Inhalt für Personen leichter zugänglich, die taub oder schwerhörig sind. |
+   | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel**: Der im Video angezeigte Untertiteltext, der den Dialog übersetzt oder transkribiert.<br>**Beschriftung**: Der Untertiteltext enthält Hintergrundgeräusche und eine Sprecheridentifikation. Er umfasst zudem andere relevante Informationen neben der Übersetzung oder Transkription des Dialogs. Diese Funktionalität erleichtert den Zugang zu Inhalten für Personen, die taub oder schwerhörig sind. |
    | Label | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Das Label ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel Englisch (CC). |
 
    Sie können Metadaten von Untertiteln später bei Bedarf ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
@@ -635,7 +635,7 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
 
    * Wählen Sie **[!UICONTROL Audiospuren hochladen]** aus.
    * Navigieren Sie zu .mp3-Dateien, wählen Sie eine oder mehrere .mp3-Dateien aus und öffnen Sie sie.
-   * Um die Audiospuren in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medienplayer sichtbar zu machen, fügen Sie die erforderlichen Details für jede Audiospur-Datei hinzu. Stellen Sie sicher, dass Sie alle für eine korrekte Anzeige erforderlichen Informationen angeben. Wählen Sie dazu das Stiftsymbol rechts neben dem Namen einer Audiospurdatei aus. Geben Sie im Dialogfeld „Audiospuren bearbeiten“ die folgenden erforderlichen Details ein und wählen Sie dann **[!UICONTROL Speichern]** aus. Wiederholen Sie diesen Vorgang für jede Audiospurdatei, die Sie hochgeladen haben.
+   * Für Audiospuren, die in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt werden, fügen Sie für jede Audiospurdatei die erforderlichen Details hinzu. Stellen Sie sicher, dass Sie alle für eine korrekte Anzeige erforderlichen Informationen angeben. Wählen Sie dazu das Stiftsymbol rechts neben dem Namen einer Audiospurdatei aus. Geben Sie im Dialogfeld „Audiospuren bearbeiten“ die folgenden erforderlichen Details ein und wählen Sie dann **[!UICONTROL Speichern]** aus. Wiederholen Sie diesen Vorgang für jede Audiospurdatei, die Sie hochgeladen haben.
 
    | Audiospur-Metadaten | Beschreibung |
    | --- | --- |
@@ -993,7 +993,7 @@ Die ursprüngliche Audiospur, die aus einer Primärvideodatei extrahiert wurde, 
 
 **Anwendungsfall:** Das Herunterladen einer Untertiteldatei kann erforderlich sein, wenn in einer `.vtt`-Datei ein Fehler auftritt. Laden Sie einfach die falsche `.vtt`-Datei herunter, öffnen Sie sie in einem einfachen Texteditor und nehmen Sie Ihre Korrekturen vor. Laden Sie die `.vtt`-Datei nach dem Speichern erneut hoch. Verwenden Sie dann die Option **[!UICONTROL Untertitel übersetzen]**, um die korrigierte `.vtt`-Datei erneut zu übersetzen.
 
-**So laden Sie Untertitel- oder Audio-Track-Dateien herunter, die in ein Video hochgeladen wurden:**
+**So laden Sie in ein Video hochgeladene Untertitel- oder Audiospurdateien herunter:**
 
 1. Navigieren Sie zum Video-Asset, dessen standardmäßige Audiospur festgelegt werden soll.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listen- oder Kartenansicht das Video-Asset aus.

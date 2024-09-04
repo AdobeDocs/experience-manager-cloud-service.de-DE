@@ -1,15 +1,15 @@
 ---
-title: Wie können SOM-Ausdrücke in Adaptive Forms verwendet werden?
-description: Erfahren Sie, wie Sie SOM-Ausdrücke eines Bedienfelds in Adaptive Forms extrahieren.
+title: Wie können SOM-Ausdrücke in adaptiven Formularen verwendet werden?
+description: Erfahren Sie, wie Sie SOM-Ausdrücke eines Bereichs in adaptiven Formularen extrahieren.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
-
 
 # Verwenden von SOM-Ausdrücken in adaptiven Formularen {#using-som-expressions-in-adaptive-forms}
 

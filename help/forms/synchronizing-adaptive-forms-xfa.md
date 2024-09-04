@@ -1,5 +1,5 @@
 ---
-title: Wie kann Adaptive Forms mit XFA-Formularvorlagen synchronisiert werden?
+title: Wie können adaptive Formulare mit XFA-Formularvorlagen synchronisiert werden?
 description: Synchronisieren von adaptiven Formularen mit XFA-/XDP-Dateien.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,13 +9,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
-
 
 # Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
@@ -134,7 +134,7 @@ Das gelöschte Feld wird außerdem mit einem Symbol gekennzeichnet, um einen Feh
 
 >[!NOTE]
 >
->Die Felder in dem adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den ungebundenen Abschnitt der Ausgabe-XML-Datei aufgenommen.
+>Die Felder in dem adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn die Autorin bzw. der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales, ungebundenes adaptives Formularfeld behandelt und in den ungebundenen Abschnitt der XML-Ausgabedatei aufgenommen.
 
 ## Downloads {#downloads}
 

@@ -9,13 +9,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '1084'
 ht-degree: 100%
 
 ---
-
 
 # Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang {#manage-forms-applications-and-tasks-in-aem-inbox}
 
@@ -154,4 +154,3 @@ Die Eigentümerin bzw. der Eigentümer eines Workflow-Modells ist nicht in der L
 1. [Erstellen Sie einen Eigenschaftsindex und weisen Sie ihm „true“ zu](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=de#the-property-index).
 
 1. Nachdem Sie Indizes in CRX DE konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie das Repository [erneut.](https://helpx.adobe.com/de/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)
-

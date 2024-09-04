@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Die folgenden Diagramme zeigen den Prozess des Erstellens, Veröffentlichens und
 * [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
 * [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
 * [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
-* [Überwachung der tatsächlichen Verwendung](https://www.aem.live/developer/rum#authentication)
+* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 

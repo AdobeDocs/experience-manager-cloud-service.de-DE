@@ -7,9 +7,9 @@ feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Nein, der Überprüfungsschritt ist in [!DNL Forms] as a Cloud Service nicht ver
 Ja, Sie können zu adaptiven Formularen Diagramme hinzufügen. Adaptive Formulare beinhalten eine Diagrammkomponente. Darüber können Sie Diagramme in adaptive Formulare einfügen.
 
 * **Kann ich ein Formulardatenmodell mit einem relationalen Datenbankmodell verbinden?**
-Sie können ein Formulardatenmodell als Datenquellen mit [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] und dem Benutzerprofil des Experience Managers verbinden. <!--Support to connect a Form Data Model with a relational database is not available.-->
+Sie können ein Formulardatenmodell mit [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] und Experience Manager-Benutzerprofilen als Datenquellen verbinden. <!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **Kann ich benutzerdefinierte Zertifikate zur Authentifizierung mit dem Formulardatenmodell (FDM) verwenden?**
 Das Formulardatenmodell (FDM) stellt keine Methode zur Verwendung benutzerdefinierter Zertifikate für die Authentifizierung bereit. Die benutzerdefinierten Zertifikate wie x509 und 2-Wege-SSL werden daher nicht unterstützt.

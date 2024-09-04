@@ -3,13 +3,13 @@ title: Was ist eine Trennzeichenkomponente in adaptiven Formularen?
 description: Die Trennzeichenkomponente in adaptiven Formularen hilft, Abschnitte eines Formulars visuell zu trennen.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
 ---
-
 
 # Trennzeichenkomponente in adaptiven Formularen {#separator-component-in-adaptive-forms}
 
@@ -35,4 +35,3 @@ Angeben der Eigenschaften einer Trennzeichenkomponente:
 1. Führen Sie einen der folgenden Schritte aus:
    * Bestätigen Sie die Änderungen, indem Sie auf **OK** klicken.
    * Verlassen Sie das Dialogfeld ohne Änderungen, indem Sie auf **Abbrechen** klicken.
-
