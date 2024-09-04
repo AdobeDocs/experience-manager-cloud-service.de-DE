@@ -2,7 +2,7 @@
 source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 59%
+ht-degree: 80%
 
 ---
 # Snippets {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 59%
 ## Siehe auch {#see-also}
 
 * [Erstellen eines adaptiven AEM-Formulars](/help/forms/creating-adaptive-form-core-components.md)
-* [Hinzufügen eines AEM adaptiven Formulars zur AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Hinzufügen eines adaptiven AEM-Formulars zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Anwenden von Designs auf ein adaptives AEM-Formular](/help/forms/using-themes-in-core-components.md)
-* [Hinzufügen von Komponenten zu einem adaptiven AEM-Formular](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [Hinzufügen von Komponenten zu einem adaptiven AEM-Formular](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [Verwenden von CAPTCHA in einem adaptiven AEM-Formular](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Generieren einer PDF-Version (DoR) eines AEM adaptiven Formulars](/help/forms/generate-document-of-record-core-components.md)
+* [Generieren einer PDF-Version (DoR) eines adaptiven AEM-Formulars](/help/forms/generate-document-of-record-core-components.md)
 * [Übersetzen eines adaptiven AEM-Formulars](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Aktivieren von Adobe Analytics für ein adaptives Formular, um die Formularnutzung zu verfolgen.](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 59%
 * [Verbinden eines adaptiven Formulars mit Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Verwenden von Adobe Sign in einem adaptiven AEM-Formular](/help/forms/working-with-adobe-sign.md)
 * [Hinzufügen eines neuen Gebietsschemas für ein adaptives Formular](/help/forms/supporting-new-language-localization-core-components.md)
-* [Senden von Daten adaptiver Formulare an eine Datenbank](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [Senden von Daten adaptiver Formulare an eine Datenbank](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Senden von Daten adaptiver Formulare an einen REST-Endpunkt](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Senden von Daten adaptiver Formulare an einen AEM-Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Verwenden des Formularportals zur Auflistung von adaptiven AEM-Formularen auf einer AEM-Website](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 59%
 * [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
 
 
-## Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten {#rule-editor-diff}
+## Der Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten {#rule-editor-diff}
 
 Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den Kernkomponenten des Regeleditors und in den Foundation-Komponenten des Regeleditors verfügbar sind:
 
@@ -74,28 +74,28 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
   <tbody>
   <tr>
     <td><strong>Funktionen</strong></td>
-    <td><strong>Adaptive Form Foundation-Komponenten</strong></td>
-    <td><strong>Kernkomponenten des adaptiven Formulars</strong></td>   
+    <td><strong>Foundation-Komponenten in adaptiven Formularen</strong></td>
+    <td><strong>Kernkomponenten in adaptiven Formularen</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Dropdownliste mit Optionen festlegen </td>
-    <td>Die Dropdown-Liste der Optionen wird mithilfe der Eigenschaft <b>Optionen für </b> des Regeleditors festgelegt.</td>
+    <td>Festlegen der Optionen der Dropdown-Liste </td>
+    <td>Die Optionen der Dropdown-Liste werden mithilfe der Eigenschaft <b>Optionen festlegen von</b> des Regeleditors festgelegt.</td>
     <td>Die Dropdown-Optionen werden mithilfe der benutzerdefinierten Funktionen festgelegt. 
    </td>
    </tr>
      </tr>
    <tr>
     <td>Mathematische Vorgänge für das wiederholbare Bedienfeldfeld ausführen </td>
-    <td>OOTB-Math-Funktionen können auf wiederholbare Bereichsfelder angewendet werden, um Funktionen wie Summe und Durchschnitt mithilfe des Regeleditors auszuführen. Es müssen zwei Argumente angegeben werden: Das erste gibt das wiederholbare Panel an, das das Feld enthält, während das zweite das Feld innerhalb des entsprechenden wiederholbaren Panels angibt. </td>
-    <td>Mathematische Vorgänge für das wiederholbare Panel können mit den benutzerdefinierten Funktionen ausgeführt werden. Sie können die mathematischen Funktionen auch direkt auf die Felder des wiederholbaren Bereichs im Regeleditor anwenden.
+    <td>Vorkonfigurierte mathematische Funktionen können auf wiederholbare Felder in einem Bedienfeld angewendet werden, um Funktionen wie Summe und Durchschnitt mit dem Regeleditor auszuführen. Es müssen zwei Argumente angegeben werden: Das erste gibt das wiederholbare Panel an, das das Feld enthält, während das zweite das Feld innerhalb des entsprechenden wiederholbaren Panels angibt. </td>
+    <td>Mathematische Vorgänge für das wiederholbare Panel können mit den benutzerdefinierten Funktionen ausgeführt werden. Mithilfe des Regeleditors können Sie die mathematischen Funktionen auch direkt auf die Felder des wiederholbaren Bedienfelds anwenden.
    </td>
    </tr>
       <tr>
-    <td>Feld/Bedienfeld/Formularregel in "Dann"validieren/zurücksetzen </td>
-    <td>Die Funktionen "Überprüfen und Zurücksetzen"unterstützen nur Formularobjekte im Regeleditor. 
+    <td>Feld/Bedienfeld/Formularregel in „Dann“ validieren/zurücksetzen </td>
+    <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen nur Formulareobjekte im Regeleditor. 
    </td>
-    <td>Die Funktionen "Überprüfen und Zurücksetzen"unterstützen das Formular-/Bedienfeld-/Feldobjekt im Regeleditor. 
+    <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen Formular-/Bedienfeld-/Feldobjekte im Regeleditor. 
    </td>
    </tr>
    <tr>
@@ -126,7 +126,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Unterschiede in verschiedenen Editionen des Regeleditors](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
 * [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
-* [Beispiele für die Entwicklung und Verwendung einer benutzerdefinierten Funktion](/help/forms/custom-function-core-components-use-cases.md)
+* [Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen](/help/forms/custom-function-core-components-use-cases.md)
 
 
 ## Formularportal{#forms-portal-see-also}
@@ -145,13 +145,13 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >Fügen Sie bei Bedarf die IP-Zulassungsliste [ hinzu, indem Sie den unten stehenden Adressblock kopieren. ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Baustein in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie **Enter**. Speichern Sie die Liste.
 >Um zu vermeiden, dass die Ausführung der Frontend-Pipeline gestört wird, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
 >
->**IP-Zulassungsliste von Cloud Manager**
+>**Cloud Manager-IP-Zulassungsliste**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
-## Hinzufügen einer Cloud Manager IP-Zulassungsliste und Front-End-Pipelines {#add-cm-allowlist-frontend-pipeline}
+## Hinzufügen von Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden oder verwenden möchten, muss die IP-Zulassungsliste für Cloud Manager zuvor hinzugefügt werden.
->Siehe [Verwenden der Cloud Manager IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden bzw. verwenden möchten, muss zuvor die Cloud Manager-IP-Zulassungsliste hinzugefügt werden.
+>Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).

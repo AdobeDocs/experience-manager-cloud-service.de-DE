@@ -229,7 +229,7 @@ ht-degree: 98%
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
       + [Checkliste vor der Live-Schaltung](/help/journey-onboarding/go-live-checklist.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
-      + [Überblick](/help/journey-sites/demos-add-on/overview.md)
+      + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
       + [Erstellen eines Programms](/help/journey-sites/demos-add-on/create-program.md)
       + [Erstellen einer Demo-Site](/help/journey-sites/demos-add-on/create-site.md)
@@ -256,7 +256,7 @@ ht-degree: 98%
    + [Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Einführung zu Cloud Acceleration Manager {#introduction-cam}
-         + [Überblick](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [Übersicht](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [Vorteile](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Verwenden von Cloud Acceleration Manager {#using-cam}
          + [Erste Schritte mit Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -265,13 +265,13 @@ ht-degree: 98%
          + [Live-Schaltungs-Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Cloud-Umstellungs-Tools {#cloud-migration}
       + Best Practices Analyzer {#best-practices-analyzer}
-         + [Überblick](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [Übersicht](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Content Transformer {#content-transformer}
-         + [Überblick](/help/journey-migration/content-transformer/overview.md)
+         + [Übersicht](/help/journey-migration/content-transformer/overview.md)
          + [Verwenden des Content Transformers](/help/journey-migration/content-transformer/using.md)
       + Content Transfer Tool {#content-transfer-tool}
-         + [Überblick](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [Übersicht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -288,7 +288,7 @@ ht-degree: 98%
          + [Verwalten von Prinzipalen nach der Migration](/help/journey-migration/managing-principals-after-migration.md)
          + [Fehlerbehebung im Content Transfer Tool  ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Legacy-Tool für die Benutzerzuordnung (veraltete Version){#legacy-user-mapping-tool}
-            + [Überblick](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Code-Refaktorierungs-Tools {#refactoring-tools}
@@ -463,7 +463,7 @@ ht-degree: 98%
       + [Überwachen von Aktivitäten und DAM-Aufgaben](/help/assets/assets-activity-history.md)
       + [Erste Schritte mit Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md)
       + [Hinzufügen und Hochladen von Assets](/help/assets/add-assets.md)
-      + [Suchen von Assets](/help/assets/search-assets.md)
+      + [Assets durchsuchen](/help/assets/search-assets.md)
       + [Allgemeine Aufgaben zum Asset-Management](/help/assets/manage-digital-assets.md)
       + [Veröffentlichung verwalten](/help/assets/manage-publication.md)
       + [Vorschau von 3D-Assets](/help/assets/dynamic-media/previewing-3d-assets.md)
@@ -581,7 +581,7 @@ ht-degree: 98%
       + [Einstellung von Flash Viewer](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einstellung von DHTML Viewer](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
       + Dynamic Media mit OpenAPI-Funktionen {#dynamic-media-open-apis}
-         + [Überblick](/help/assets/dynamic-media-open-apis-overview.md)
+         + [Übersicht](/help/assets/dynamic-media-open-apis-overview.md)
          + [Genehmigen von Assets](/help/assets/approve-assets.md)
          + [Integration mit nachgelagerten Anwendungen](/help/assets/integrate-dynamic-media-open-apis.md)
          + [API zum Durchsuchen von Assets](/help/assets/search-assets-api.md)
@@ -614,7 +614,7 @@ ht-degree: 98%
 
 
    + Content Hub {#content-hub}
-      + [Überblick](/help/assets/product-overview.md)
+      + [Übersicht](/help/assets/product-overview.md)
       + [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md)
       + [Konfigurieren der Benutzeroberfläche von Content Hub](/help/assets/configure-content-hub-ui-options.md)
       + [Hochladen oder Importieren der von Marken genehmigten Assets in Content Hub](/help/assets/upload-brand-approved-assets.md)
@@ -749,7 +749,7 @@ ht-degree: 98%
             + [Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen](/help/forms/synchronizing-adaptive-forms-xfa.md)
             + [XFA-Unterstützung in XDP-basierten adaptiven Formularen ](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
+            + [Verbessern der Leistung umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
             + [Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen](/help/forms/publishing-unpublishing-forms.md)
          + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
             + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
@@ -765,11 +765,11 @@ ht-degree: 98%
             + [Erstellen eines mehrstufigen Datenerfassungsverfahrens](/help/forms/introduction-form-sequence.md)
             + [Stilkonstrukte für adaptive Formulare](/help/forms/styling-constructs-adaptive-forms.md)
             + [Anwenden von Inline-CSS-Stilen auf einzelne Komponenten adaptiver Formulare](/help/forms/inline-style-adaptive-forms.md)
-            + [Wie wird die Trennzeichenkomponente in Adaptive Forms verwendet?](/help/forms/separator-component-in-adaptive-forms.md)
+            + [Verwenden der Trennzeichenkomponente in adaptiven Formularen](/help/forms/separator-component-in-adaptive-forms.md)
          + Hinzufügen von Regeln und Verwenden von Ausdrücken in adaptiven Formularen {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Hinzufügen von Regeln zu adaptiven Formularen](/help/forms/rule-editor.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers mit dem Aufruf-Sevice des Regel-Editors](/help/forms/add-custom-error-handler-adaptive-forms.md)
-            + [Wie Sie ausgewählten Benutzergruppen Zugriff auf den Regeleditor gewähren](/help/forms/rule-editor-access-user-groups.md)
+            + [Gewähren von Zugriff auf den Regeleditor für ausgewählte Benutzergruppen](/help/forms/rule-editor-access-user-groups.md)
             + [Verwenden von SOM-Ausdrücken in adaptiven Formularen ](/help/forms/using-som-expressions-adaptive-forms.md)
             + [Adaptive Formularausdrücke](/help/forms/adaptive-form-expressions.md)
          + Verwenden von [!DNL Adobe Sign] {#use-adobe-sign}
@@ -790,12 +790,12 @@ ht-degree: 98%
          + Verbessern der Barrierefreiheit von adaptiven Formularen {#accessible-adaptive-forms}
             + [Erstellen eines barrierefreien adaptiven Formulars](/help/forms/creating-accessible-adaptive-forms.md)
          + [Erstellen und Verwalten von Überprüfungen](/help/forms/create-reviews-forms.md)
-         + [Reviewer für die Übermittlung mit einem Formular verknüpfen](/help/forms/adding-reviewers-form.md)
+         + [Zuweisen von Übermittlungsprüfenden zu einem Formular](/help/forms/adding-reviewers-form.md)
          + [Erstellen und Verwalten von Überprüfungen eines adaptiven Formulars](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Adaptive Formulare – Suchbegriffe](/help/forms/adaptive-forms-keywords.md)
       + [Formularvorschau](/help/forms/previewing-forms.md)
    + Formularzentrierte Workflows {#create-form-centric-workflows}
-      + [Einführung in den Forms-orientierten Workflow](/help/forms/aem-forms-workflow.md)
+      + [Einführung in den formularzentrierten Workflow](/help/forms/aem-forms-workflow.md)
       + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
       + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
       + [Dynamische Benutzer- oder Gruppenauswahl im AEM-Workflow](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
@@ -915,7 +915,7 @@ ht-degree: 98%
       + [Tabellendaten und Tabellen](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Vorhandene Projekte und Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
       + [Verwalten von Taxonomiedaten](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [Funktionen für WIP-Sites](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [Funktionen für in Arbeit befindliche Sites](/help/edge/wysiwyg-authoring/wip-features.md)
    + Dokumentenbasiertes Authoring {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Massenmetadaten](/help/edge/docs/bulk-metadata.md)
@@ -943,7 +943,7 @@ ht-degree: 98%
       + [Fastly-Einrichtung](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Umleitungen](/help/edge/docs/redirects.md)
    + Erstellen von Formularen {#build-forms}
-      + [Überblick](/help/edge/docs/forms/overview.md)
+      + [Übersicht](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-edge-delivery-services-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
          + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -953,7 +953,7 @@ ht-degree: 98%
          + [Laden von Optionen aus einer URL in ein Formular](/help/edge/docs/forms/load-options-from-url.md)
          + [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
-         + [Regex-Ausdrücke für Überprüfungen](/help/edge/docs/forms/regex-forms.md)
+         + [Regex-Ausdrücke für Validierungen](/help/edge/docs/forms/regex-forms.md)
          + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
       + Funktionen {#advanced-features-edge-delivery-services-forms}
          + [Verwenden von Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
@@ -1091,7 +1091,7 @@ ht-degree: 98%
          + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md)
       + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-         + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
+         + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
          + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Funktionstests {#functional-testing}
