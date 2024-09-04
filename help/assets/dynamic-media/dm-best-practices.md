@@ -9,8 +9,8 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
-workflow-type: ht
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 100%
 
@@ -32,6 +32,8 @@ Key Features of AEM Dynamic Media:
 In the accompanying guide, you'll find a comprehensive list of best practices for maximizing the benefits of AEM Dynamic Media. As you embark on your Dynamic Media journey, make sure to consult these expert recommendations and resources.
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
+
+{{work-with-dynamic-media}}
 
 Organisationen müssen sich für die Interaktion mit Benutzenden mit zahlreichen Kanälen und Geräten auseinandersetzen.  Die Customer Journey umfasst Ladengeschäfte, das Internet, Mobilgeräte, Social Media, E-Mails und Commerce. Um diesen Anforderungen gerecht zu werden, bietet Dynamic Media für Adobe Experience Manager (AEM) eine umfassende Lösung. Sie optimiert die Bereitstellung von Assets, handhabt die Personalisierung und sorgt für konsistente, leistungsfähige und markenorientierte Erlebnisse über Kanäle und Geräte hinweg.
 

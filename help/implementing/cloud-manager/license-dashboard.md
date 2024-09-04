@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
-workflow-type: ht
-source-wordcount: '1101'
-ht-degree: 100%
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+workflow-type: tm+mt
+source-wordcount: '925'
+ht-degree: 93%
 
 ---
 
@@ -63,9 +63,12 @@ In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfüg
 >
 >Informationen zum Verwalten Ihrer Adobe-Berechtigungen in Ihrem gesamten Unternehmen über die Admin Console finden Sie im [Überblick über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html).
 
-## Anzeigen von Nutzungsdetails {#view-usage-details}
+## Nutzungsdetails anzeigen {#view-usage-details}
 
-Die Schaltfläche **Nutzungsdetails anzeigen** bietet Zugriff auf das Fenster **Nutzungsdetails** der ausgewählten Lösung. In diesem Fenster finden Sie eine detaillierte Aufschlüsselung mit Diagrammen zur Verwendung Ihrer Lösung. Wie diese Nutzung gemessen wird, hängt von der gewählten Lösung ab.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
+
+Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung der aktuellen Ressourcenverwendung. Wenn darauf geklickt wird, wird ein Bericht oder Dashboard geöffnet, in dem wichtige Metriken zu Ihrer Lizenz angezeigt werden. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Diese Funktion hilft Ihnen, die Einhaltung Ihrer vertraglichen Verpflichtungen zu überwachen und sicherzustellen, und bietet gleichzeitig Einblicke in eine bessere Ressourcenplanung und -optimierung.
 
 ### Details zur Site-Nutzung {#sites-usage-details}
 
@@ -77,27 +80,28 @@ Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Aufschlüsselung d
 
 Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Wenn Sie den Mauszeiger darüber bewegen, wird ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt angezeigt.
 
-### Details zur Asset-Nutzung {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-Das Fenster **Details zur Asset-Nutzung** enthält Diagramme, die einen Überblick über die Verwendung Ihrer Asset-Lizenzen auf der Grundlage von [Speicher](#storage) und [Standardbenutzenden](#standard-users) geben. Wählen Sie die entsprechende Registerkarte aus, um zwischen den Ansichten umzuschalten.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-Für die Ansichten von Speicher und Standardbenutzenden können Sie das Dropdown-Menü **Umgebungstyp** verwenden, um die Ansicht zwischen Produktions-, Staging- und Entwicklungsumgebungen umzuschalten.
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### Speicher {#storage}
+#### Storage {#storage}
 
-![Fenster „Details zur Asset-Nutzung“ für den Speicher](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Aufschlüsselung des Vertrags für das im Dropdown-Menü **Vertragsjahr anzeigen** ausgewählte Vertragsjahr.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Wenn Sie den Mauszeiger darüber bewegen, wird ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt angezeigt.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### Standardbenutzende {#standard-users}
+#### Standard Users {#standard-users}
 
-![Fenster „Details zur Asset-Nutzung“ für Standardbenutzende](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Aufschlüsselung des Vertrags für das im Dropdown-Menü **Vertragsjahr anzeigen** ausgewählte Vertragsjahr.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Wenn Sie den Mauszeiger darüber bewegen, wird ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt angezeigt.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## Häufig gestellte Fragen {#faq}
 

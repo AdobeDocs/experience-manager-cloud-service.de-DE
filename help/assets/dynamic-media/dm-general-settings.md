@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '2525'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 100%
 
 <!-- hide: yes
 hidefromtoc: yes -->
+
+{{work-with-dynamic-media}}
 
 Die Option **[!UICONTROL Allgemeine Dynamic Media-Einstellungen]** kann nur konfiguriert werden, wenn Folgendes zutrifft:
 
@@ -70,7 +72,7 @@ Bei der Kontoerstellung stellt Adobe Dynamic Media automatisch die zugeordneten
 
 * **[!UICONTROL Bilder überschreiben]**
 
-  Adobe Dynamic Media lässt zwei Dateien mit denselben Namen nicht zu. Die Adobe Dynamic Media-ID jedes Elements (der Bildname abzüglich der Dateinamenerweiterung) muss eindeutig sein. Aufgrund dieser Regel hat die Option **[!UICONTROL In Programm hochladen]** eine Überschreibungsmöglichkeit. Der genaue Effekt dieser Option hängt von der ausgewählten Option „Bilder überschreiben“ ab. Diese Optionen legen fest, wie die Ersatzbilder hochgeladen werden: ob sie die Originalbilder ersetzen oder als Duplikate angelegt werden. Doppelte Bilder werden mit einem `-1` umbenannt. Beispiel: `chair.tif` wird in `chair-1.tif` umbenannt. Diese Optionen gelten für Bilder, die in einen anderen Ordner als das Original hochgeladen werden, oder Bilder mit einer anderen Dateinamenerweiterung als das Original (z. B. JPG, TIF oder PNG).
+  Adobe Dynamic Media lässt zwei Dateien mit denselben Namen nicht zu. Die Adobe Dynamic Media ID jedes Elements (der Bildname abzüglich der Dateinamenerweiterung) muss eindeutig sein. Aufgrund dieser Regel hat die Option **[!UICONTROL In Programm hochladen]** eine Überschreibungsmöglichkeit. Der genaue Effekt dieser Option hängt von der ausgewählten Option „Bilder überschreiben“ ab. Diese Optionen legen fest, wie die Ersatzbilder hochgeladen werden: ob sie die Originalbilder ersetzen oder als Duplikate angelegt werden. Doppelte Bilder werden mit einem `-1` umbenannt. Beispiel: `chair.tif` wird in `chair-1.tif` umbenannt. Diese Optionen gelten für Bilder, die in einen anderen Ordner als das Original hochgeladen werden, oder Bilder mit einer anderen Dateinamenerweiterung als das Original (z. B. JPG, TIF oder PNG).
 
   >[!NOTE]
   >
@@ -95,7 +97,7 @@ Bei der Kontoerstellung stellt Adobe Dynamic Media automatisch die zugeordneten
 
 Mit diesem Filter können Sie einen Scharfzeichnungsfiltereffekt für das endgültige, heruntergesampelte Bild fein abstimmen. Auf diese Weise können Sie die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den ignorierten Kontrast steuern.
 
-Bei dem Effekt „Unscharf maskieren“ werden dieselben Optionen wie im Filter „Unscharf maskieren“ von Photoshop verwendet. Im Gegensatz zu dem, was der Name besagt, ist „Unscharf maskieren“ ein Scharfzeichnungsfilter.
+Der Effekt &quot;Unschärfemaske&quot;verwendet dieselben Optionen wie der Filter &quot;Unschärfemaske&quot;in Photoshop. Im Gegensatz zu dem, was der Name besagt, ist „Unscharf maskieren“ ein Scharfzeichnungsfilter.
 
 | Optionen für „Unscharf maskieren“ | Beschreibung |
 | --- | --- |
