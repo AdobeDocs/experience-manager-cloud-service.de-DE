@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Be
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 14%
 >
 >Die clientseitige Überwachung funktioniert nur für Kunden mit AEM (Adobe Experience Manager) Cloud Service-Version **2024.5.16461** und höher.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der RUM-Dienst (Real Use Monitoring) ist eine Technologie zur Leistungsüberwachung, die die digitalen Benutzererlebnisse einer Website oder Anwendung in Echtzeit erfasst und analysiert. Es bietet Einblicke in die Echtzeit-Leistung einer Webanwendung und bietet tiefere Einblicke in das Erlebnis der Endbenutzer. Der Dienst konzentriert sich auf die Leistungsoptimierung durch die Überwachung der Website-Interaktionen und nicht auf die Benutzer selbst.
 
@@ -93,10 +93,11 @@ Bei der Analyse von RUM-Daten kann es zu Abweichungen bei Seitenansichten und an
 
 ## Häufig gestellte Fragen {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **Können Kunden die RUM-Dienstskripte in Drittanbietersysteme wie Dynatrace integrieren?**
-
-   Ja. 
+   Yes.
+-->
 
 1. **Werden die Metriken &quot;Interaktion mit der nächsten Farbe&quot;, &quot;Zeit bis zum ersten Byte&quot;und &quot;Erste contentful Farbe&quot;erfasst?**
 
