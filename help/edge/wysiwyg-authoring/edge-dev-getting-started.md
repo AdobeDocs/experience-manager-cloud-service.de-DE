@@ -1,20 +1,20 @@
 ---
-title: Erste Schritte für Entwickler für WYSIWYG Authoring mit Edge Delivery Services
-description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, auf der Edge Delivery Services und der Universal Editor für WYSIWYG-Inhaltserstellung verwendet werden.
+title: Erste Schritte für Entwickler beim WYSIWYG Authoring mit Edge Delivery Services
+description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, die Edge Delivery Services und den Universal Editor für WYSIWYG-Inhaltserstellung verwendet.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 87%
+source-wordcount: '1207'
+ht-degree: 86%
 
 ---
 
 
-# Erste Schritte für Entwickler für WYSIWYG Authoring mit Edge Delivery Services {#edge-dev-getting-started}
+# Erste Schritte für Entwickler beim WYSIWYG Authoring mit Edge Delivery Services {#edge-dev-getting-started}
 
-In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, auf der Edge Delivery Services und der Universal Editor für WYSIWYG-Inhaltserstellung verwendet werden.
+In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manager-Site arbeiten, die Edge Delivery Services und den Universal Editor für WYSIWYG-Inhaltserstellung verwendet.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -23,15 +23,6 @@ Bevor Sie mit diesem Handbuch beginnen, sollten Sie bereits mit den Grundlagen d
 * Sie haben das [Edge Delivery Services-Tutorial](/help/edge/developer/tutorial.md) abgeschlossen.
 * Sie haben Zugriff auf eine [AEM Cloud Service-Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 * Sie haben den [universellen Editor in derselben Sandbox-Umgebung aktiviert](/help/implementing/universal-editor/getting-started.md).
-
-## Auswählen des geeigneten Editors {#editor-choice}
-
-AEM bietet zwei verschiedene Inhaltseditoren, deren Auswahl von Ihrer Situation abhängig ist.
-
-* **Universeller Editor**: Dies sollte die Standardauswahl für neue Sites sein.
-* **AEM-Seiteneditor**: Dies sollte für eine bestehende AEM Sites-Migration in Edge Delivery Services ausgewählt werden.
-
-Dieses Handbuch konzentriert sich auf AEM-Projekte für Edge Delivery Services, die den universellen Editor verwenden. Im Dokument [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md) finden Sie weitere Informationen zum Auswählen des richtigen Editors und zur Migration vorhandener AEM Sites in Edge Delivery Services.
 
 ## Grundlegende Konzepte bei der Entwicklung für Edge Delivery Services {#core-concepts}
 
@@ -131,7 +122,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 >
 >Um Ihre Site mit dem universellen Editor zu bearbeiten, müssen Sie einen Chromium-basierten Browser nutzen.
 
-1. Laden Sie die neueste WYSIWYG-Authoring-Vorlage mit der Edge Delivery Services-Website von GitHub unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) herunter.
+1. Laden Sie die neueste WYSIWYG-Authoring-Vorlage mit der Edge Delivery Services-Site unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) von GitHub herunter.
 
 1. Melden Sie sich bei Ihrer AEM as a Cloud Service-Authoring-Instanz an, navigieren Sie zur Sites-Konsole und tippen oder klicken Sie auf **Erstellen** > **Site aus Vorlage**.
 
@@ -141,7 +132,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 
    ![Importieren von Vorlagen](assets/edge-dev-getting-started/site-templates.png)
 
-1. Laden Sie die von GitHub heruntergeladene WYSIWYG-Authoring-Vorlage mit der Edge Delivery Services-Site-Vorlage hoch.
+1. Laden Sie die von GitHub heruntergeladene Site-Vorlage WYSIWYG Authoring mit Edge Delivery Services hoch.
 
    * Die Vorlage darf nur einmal hochgeladen werden. Nach dem Hochladen kann sie wiederverwendet werden, um zusätzliche Sites zu erstellen.
 
@@ -193,10 +184,10 @@ Sobald Sie Ihre neue Site mit dem universellen Editor fertig bearbeitet haben, k
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie nun ein WYSIWYG-Authoring-Projekt mit Edge Delivery Services haben, können Sie Ihre eigenen Bausteine erstellen und gestalten.
+Nachdem Sie nun über ein funktionierendes WYSIWYG-Authoring-Projekt mit Edge Delivery Services verfügen, können Sie Ihre eigenen Bausteine erstellen und gestalten.
 
 Weitere Informationen finden Sie in der Anleitung [Erstellen von für den universellen Editor instrumentierten Blöcken](/help/edge/wysiwyg-authoring/create-block.md).
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) .
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs .](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

@@ -1,12 +1,12 @@
 ---
 title: Inhaltsmodellierung für WYSIWYG Authoring mit Edge Delivery Services-Projekten
-description: Erfahren Sie, wie die Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
+description: Erfahren Sie, wie die Inhaltsmodellierung für WYSIWYG Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 8d9ae4c7512198bd3e01a881665621d3ecbcd98d
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2242'
 ht-degree: 85%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 85%
 
 # Inhaltsmodellierung für WYSIWYG Authoring mit Edge Delivery Services-Projekten {#content-modeling}
 
-Erfahren Sie, wie die Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
+Erfahren Sie, wie die Inhaltsmodellierung für WYSIWYG Authoring mit Edge Delivery Services-Projekten funktioniert und wie Sie Ihre eigenen Inhalte modellieren.
 
 ## Voraussetzungen {#prerequisites}
 
-Projekte, die WYSIWYG Authoring mit Edge Delivery Services verwenden, erben den Großteil der Mechanik anderer Edge Delivery Services-Projekte, unabhängig von der Inhaltsquelle oder der [Authoring-Methode.](/help/edge/wysiwyg-authoring/authoring.md)
+Projekte, die WYSIWYG Authoring mit Edge Delivery Services verwenden, erben den Großteil der Mechanismen anderer Edge Delivery Services-Projekte, unabhängig von der Inhaltsquelle oder der [Authoring-Methode.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Bevor Sie mit der Modellierung von Inhalten für Ihr Projekt beginnen, lesen Sie zunächst Folgendes:
 
@@ -39,17 +39,17 @@ In AEM werden diese Inhalte als Komponenten mit sehr einfachen, vordefinierten M
 * **Bild**: Quelle, Beschreibung
 * **Schaltfläche**: Text, Titel, URL, Typ (Standard, primär, sekundär)
 
-Das Modell dieser Komponenten ist Teil der [Bausteinvorlage für WYSIWYG-Authoring mit Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
+Das Modell dieser Komponenten ist Teil der [Bausteinvorlage für WYSIWYG-Authoring mit Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## Blöcke {#blocks}
 
-Blöcke werden verwendet, um vielfältigere Inhalte mit bestimmten Stilen und Funktionen zu erstellen. Im Gegensatz zu Standardinhalten erfordern Blöcke keine zusätzliche Semantik. Blöcke können mit [Komponenten im AEM-Seiteneditor](/help/implementing/developing/components/overview.md) verknüpft werden.
+Blöcke werden verwendet, um vielfältigere Inhalte mit bestimmten Stilen und Funktionen zu erstellen. Im Gegensatz zu Standardinhalten erfordern Blöcke keine zusätzliche Semantik.
 
 Blöcke sind im Wesentlichen Inhaltselemente, die von JavaScript dekoriert und mit einem Stylesheet formatiert werden.
 
 ### Definition des Blockmodells {#model-definition}
 
-Bei Verwendung von WYSIWYG-Authoring mit Edge Delivery Services muss der Inhalt von Bausteinen explizit modelliert werden, um dem Autor die Benutzeroberfläche zum Erstellen von Inhalten bereitzustellen. Grundsätzlich müssen Sie ein Modell erstellen, damit die Authoring-Benutzeroberfläche weiß, welche Optionen der Autorin oder dem Autor basierend auf dem Block präsentiert werden sollen.
+Bei der Verwendung von WYSIWYG-Authoring mit Edge Delivery Services muss der Inhalt von Bausteinen explizit modelliert werden, um dem Autor die Benutzeroberfläche zum Erstellen von Inhalten bereitzustellen. Grundsätzlich müssen Sie ein Modell erstellen, damit die Authoring-Benutzeroberfläche weiß, welche Optionen der Autorin oder dem Autor basierend auf dem Block präsentiert werden sollen.
 
 Die Datei [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) definiert das Blockmodell. Die im Komponentenmodell definierten Felder werden als Eigenschaften in AEM beibehalten und als Zellen in der Tabelle gerendert, aus der sich ein Block zusammensetzt.
 
@@ -326,7 +326,7 @@ Auf Grundlage der [erläuterten Mechanismen der Blockstruktur](#block-structure)
 
 In der Frühphase jedes Projekts muss ein Inhaltsmodell für jeden Block sorgfältig überdacht werden. Es muss unabhängig von der Inhaltsquelle und dem Authoring-Erlebnis sein. Nur so können sie von Autorinnen und Autoren gewechselt oder kombiniert werden, bei Wiederverwendung von Blockimplementierungen und Stilen. Weitere Informationen und allgemeine Leitlinien finden Sie unter [Davids Modell (Take 2).](https://www.aem.live/docs/davidsmodel) Genauer gesagt, enthält die [Blocksammlung](/help/edge/developer/block-collection.md) einen umfangreichen Satz an Inhaltsmodellen für spezifische Anwendungsfälle gängiger Benutzeroberflächenmuster.
 
-Für WYSIWYG-Authoring mit Edge Delivery Services stellt sich dabei die Frage, wie ein überzeugendes semantisches Inhaltsmodell bereitgestellt werden kann, wenn die Informationen mit Formularen aus mehreren Feldern erstellt werden, anstatt das semantische Markup im Kontext wie Rich Text zu bearbeiten.
+Für WYSIWYG-Authoring mit Edge Delivery Services stellt sich die Frage, wie ein überzeugendes semantisches Inhaltsmodell bereitgestellt werden kann, wenn die Informationen mit Formularen erstellt werden, die aus mehreren Feldern bestehen, anstatt das semantische Markup im Kontext wie Rich Text zu bearbeiten.
 
 Zur Lösung dieses Problems gibt es drei Methoden, die die Erstellung eines überzeugenden Inhaltsmodells erleichtern:
 
@@ -652,11 +652,11 @@ Erstellen Sie dazu ein Komponentenmodell mit der ID `page-metadata`.
 
 Nachdem Sie nun wissen, wie Sie Inhalte modellieren können, können Sie mit dem WYSIWYG-Authoring-Projekt Bausteine für Ihre eigenen Edge Delivery Services erstellen.
 
-Informationen zum Erstellen von Bausteinen, die für die Verwendung mit dem universellen Editor instrumentiert wurden, mit dem universellen Editor in WYSIWYG-Authoring mit Edge Delivery Services-Projekten finden Sie im Dokument [Erstellen von Bausteinen, die für die Verwendung mit dem universellen Editor instrumentiert wurden](/help/edge/wysiwyg-authoring/create-block.md) .
+Informationen zum Erstellen von für die Verwendung mit dem universellen Editor instrumentierten Bausteinen](/help/edge/wysiwyg-authoring/create-block.md) finden Sie im Dokument [Erstellen von Bausteinen, die für die Verwendung mit dem universellen Editor bei der WYSIWYG-Bearbeitung mit Edge Delivery Services-Projekten instrumentiert wurden.
 
-Wenn Sie bereits mit dem Erstellen von Bausteinen vertraut sind, lesen Sie das Dokument [Entwicklerhandbuch für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) , um Sie mit einer neuen Adobe Experience Manager-Site zu vertraut zu machen, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet.
+Wenn Sie bereits mit dem Erstellen von Bausteinen vertraut sind, lesen Sie das Dokument [Entwicklerhandbuch für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) , um Sie mit einer neuen Adobe Experience Manager-Site vertraut zu machen, die Edge Delivery Services und den universellen Editor für die Inhaltserstellung verwendet.
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery) .
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs .](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 
