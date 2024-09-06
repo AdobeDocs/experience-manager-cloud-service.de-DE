@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Erlebnisse im Staging-Produktkatalog verw
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '485'
+ht-degree: 91%
 
 ---
 
@@ -25,9 +25,9 @@ Dieser Artikel baut auf diesen Grundlagen auf.
 
 In diesem Dokument erfahren Sie, wie Sie das Produktkatalogerlebnis basierend auf Staging-Produktdaten und AEM-Launches verwalten. Oft müssen Autoren parallel einen bevorstehenden Produktstart vorbereiten (z. B. eine neue Bekleidungskollektion). Dies erfordert den Zugriff auf Staging-Produktdaten (noch nicht verfügbar) und die Möglichkeit, den Inhalt vorzubereiten. Dieser neue Inhalt wird mit dem Produktstart live geschaltet.
 
-    >[!NOTE]
-    >
-    > Diese Funktion ist nur bei Adobe Commerce- oder Cloud Edition- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen. Weitere Informationen finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=de).
+>[!NOTE]
+>
+>Diese Funktion ist nur für Adobe Commerce- oder Cloud Edition- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen. Weitere Informationen finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=de) .
 
 Zunächst sehen wir, wie Autoren mit CIF auf Staging-Produktdaten zugreifen können.
 
@@ -45,9 +45,9 @@ Sie können jetzt den Katalog mit den Staging-Daten durchsuchen. Wenn Sie eine S
 
 ![Staging-PLP](assets/staged-plp.png)
 
-    >[!NOTE]
-    >
-    >Omnisearch hat keinen Kontext und gibt daher nur Live-Produktkatalogdaten zurück
+>[!NOTE]
+>
+>Omnisearch hat keinen Kontext und gibt daher nur Live-Produktkatalogdaten zurück.
 
 ## AEM-Launches {#launches}
 

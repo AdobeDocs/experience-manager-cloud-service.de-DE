@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Commerce-bezogene Erlebnisse effizient erstel
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 100%
+source-wordcount: '720'
+ht-degree: 98%
 
 ---
 
@@ -71,9 +71,9 @@ CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. 
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt verwendet.
+>[!NOTE]
+>
+> Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt ausgewählt.
 
 Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch einen echten Link ersetzt wird.
 
