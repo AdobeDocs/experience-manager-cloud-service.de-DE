@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 100%
+source-wordcount: '2375'
+ht-degree: 92%
 
 ---
 
@@ -44,7 +44,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin od
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das eine Umgebung hinzugefügt werden soll.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
 
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
 
@@ -58,7 +58,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin od
 
 1. Im Dialogfeld **Umgebung hinzufügen** wird Folgendes angezeigt:
 
-   * Wählen Sie einen [**Umgebungstyp**.](#environment-types)
+   * Wählen Sie einen [**Umgebungstyp**](#environment-types) aus.
       * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
    * Geben Sie einen **Namen** für die Umgebung an.
       * Der Umgebungsname kann nach der Erstellung der Umgebung nicht mehr geändert werden.
@@ -82,7 +82,7 @@ Benutzende mit der **Geschäftsinhaber**-Rolle können Produktions- und Staging-
 >
 >Sie können die [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) verwenden, um eine aktuelle Liste der verfügbaren Regionen abzurufen.
 
-### Hinzufügen mehrerer Veröffentlichungsregionen zu einer neuen Umgebung {#add-regions}
+### Hinzufügen mehrerer Veröffentlichungsbereiche zu einer neuen Umgebung {#add-regions}
 
 Wenn Sie eine Umgebung hinzufügen, können Sie zusätzlich zur primären Region weitere Regionen konfigurieren.
 
@@ -99,11 +99,11 @@ Wenn Sie eine Umgebung hinzufügen, können Sie zusätzlich zur primären Region
 
 Die ausgewählten Regionen gelten sowohl für Produktions- als auch für Staging-Umgebungen.
 
-Wenn Sie keine zusätzlichen Regionen angeben, [können Sie dies später tun, nachdem die Umgebungen erstellt wurden.](#edit-regions)
+Wenn Sie keine weiteren Bereiche angeben, können Sie dies später tun, nachdem die Umgebungen erstellt wurden.](#edit-regions)[
 
 Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) für das Programm bereitstellen möchten, wird empfohlen, diese Bereitstellung vor dem Hinzufügen zusätzlicher Veröffentlichungsregionen zu den Umgebungen mithilfe der Cloud Manager-API durchzuführen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
 
-### Bearbeiten mehrerer Veröffentlichungsregionen {#edit-regions}
+### Mehrere Veröffentlichungsregionen bearbeiten {#edit-regions}
 
 Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies auch nach der Erstellung der Umgebungen tun, sofern Sie über die erforderlichen Berechtigungen verfügen.
 
@@ -153,7 +153,7 @@ Alternativ können Sie auf die Schaltfläche mit den Auslassungspunkten der gew�
 >
 >Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf **Alle anzeigen** wie zuvor beschrieben, um alle Umgebungen des Programms zu sehen.
 
-### Zugriff auf den Vorschau-Service {#access-preview-service}
+### Zugriff auf den Vorschaudienst {#access-preview-service}
 
 Cloud Manager bietet für jede AEM as a Cloud Service-Umgebung einen Vorschau-Service (bereitgestellt als zusätzlicher Publishing-Service).
 
@@ -209,9 +209,9 @@ Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden:
 
 Wie lange Sie darauf warten sollten, dass sich das System von selbst erholt, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen ab, die der Ausfall dieser Region auf Ihre Systeme hat.
 
-In jedem Fall wird [Traffic immer in die nächstgelegene Region weitergeleitet, die online ist.](/help/operations/additional-publish-regions.md) Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
+Jedenfalls wird [Traffic immer in die nächstgelegene Region geleitet, die online ist](/help/operations/additional-publish-regions.md). Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
 
-## Aktualisieren von Umgebungen {#updating-dev-environment}
+## Umgebungen aktualisieren {#updating-dev-environment}
 
 Als Cloud-nativer Service verwaltet Adobe automatisch die Aktualisierungen Ihrer Entwicklungs-, Staging- und Produktionsumgebungen innerhalb der Produktionsprogramme.
 
@@ -221,7 +221,7 @@ Aktualisierungen von Umgebungen in Sandbox-Programmen werden jedoch innerhalb de
 
 ### Updates und Pipelines {#updates-pipelines}
 
-Pipelines sind der einzige Weg, [Code in den Umgebungen von AEM as a Cloud Service bereitzustellen.](deploy-code.md) Aus diesem Grund ist jede Pipeline mit einer bestimmten AEM-Version verknüpft.
+Pipelines sind die einzige Möglichkeit, um [Code für die Umgebungen von AEM as a Cloud Service](deploy-code.md) bereitzustellen. Aus diesem Grund ist jede Pipeline mit einer bestimmten AEM verknüpft.
 
 Wenn Cloud Manager erkennt, dass eine neuere Version von AEM verfügbar ist als die, die zuletzt mit der Pipeline bereitgestellt wurde, wird der Status **Aktualisierung verfügbar** für die Umgebung angezeigt.
 
@@ -230,7 +230,7 @@ Der Prozess der Aktualisierung erfolgt also in zwei Schritten:
 1. Aktualisieren der Pipeline mit der neuesten AEM-Version
 1. Ausführen der Pipeline zum Bereitstellen der neuen Version von AEM in einer Umgebung
 
-### Aktualisieren von Umgebungen {#updating-your-environments}
+### Aktualisieren der Umgebungen {#updating-your-environments}
 
 >[!NOTE]
 > Seit 2024 werden Entwicklungsinstanzen und einige Sandbox-Programme bereits automatisch aktualisiert, sodass Aktualisierungen für sie nicht manuell verwaltet werden müssen. Aufgrund dieses Übergangs ist die Option zur manuellen Aktualisierung der Umgebung für Entwicklungsinstanzen möglicherweise für _einige_ Ihrer Programme nicht verfügbar.
@@ -272,7 +272,7 @@ Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **
 >* In einem Produktionsprogramm erstellte Produktions- und Staging-Umgebungen können nicht gelöscht werden.
 >* Produktions- und Staging-Umgebungen in einem Sandbox-Programm können gelöscht werden.
 
-## Zugriffsverwaltung {#managing-access}
+## Zugriff verwalten {#managing-access}
 
 Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte **Umgebungen** die Option **Zugriff verwalten** aus. Sie können direkt zur Autoreninstanz gehen und den Zugriff für Ihre Umgebung verwalten.
 
@@ -304,13 +304,13 @@ Darüber hinaus können Sie sich auch über die Registerkarte **Umgebungen** der
 
 ![Lokale Anmeldung über die Registerkarte Umgebungen](assets/environ-login-locally-2.png)
 
-## Verwalten von benutzerdefinierten Domain-Namen {#manage-cdn}
+## Benutzerdefinierte Domänennamen verwalten {#manage-cdn}
 
 Benutzerdefinierte Domain-Namen werden in Cloud Manager for Sites-Programmen sowohl für Veröffentlichungs- als auch für Vorschau-Services unterstützt.
 
 >[!TIP]
 >
->Weitere Informationen finden Sie unter [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Weitere Informationen finden Sie im Dokument [Einführung in benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassu
 
 >[!TIP]
 >
->Weitere Informationen finden Sie unter [Einführung in IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Weitere Informationen finden Sie im Dokument [Einführung in IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) .

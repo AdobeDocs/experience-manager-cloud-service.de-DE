@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,12 +22,12 @@ Nach der Erstellung eines neuen Code-Repositorys in Cloud Manager wird automatis
 
 >[!NOTE]
 >
->Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projekt-Archetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
+>Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
 
 Sobald Sie den Inhalt der `it.tests`-Ordner haben, können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann:
 
-1. [Entwickeln Sie Ihre Testfälle.](#writing-functional-tests)
-1. [Führen Sie die Tests lokal aus.](#local-test-execution)
+1. [Entwickeln Sie Ihre Testfälle](#writing-functional-tests).
+1. [Führen Sie die Tests lokal aus](#local-test-execution).
 1. Übertragen Sie Ihren Code in das Cloud Manager-Repository und führen Sie eine Cloud Manager-Pipeline aus.
 
 ## Schreiben von benutzerdefinierten Funktionstests {#writing-functional-tests}

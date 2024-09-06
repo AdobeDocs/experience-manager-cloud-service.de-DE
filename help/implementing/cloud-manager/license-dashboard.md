@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 93%
+source-wordcount: '923'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigun
 >
 >Das Lizenz-Dashboard gilt nur für AEM as a Cloud Service-Programme. [AMS-Programme](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/introduction) sind nicht im Lizenz-Dashboard enthalten.
 >
->Informationen zum Ermitteln des Diensttyps Ihres Programms (AMS oder AEMaaCS) finden Sie im Dokument [Navigieren auf der Benutzeroberfläche von Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Informationen zum Bestimmen des Diensttyps Ihres Programms (AMS oder AEMaaCS) finden Sie im Dokument [Navigieren in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Übersicht {#overview}
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um auf Ihr Lizenz-Dashboard zuzugreifen.
 >Benutzende mit der Rolle **Geschäftsinhaber** müssen angemeldet sein, damit ihnen das Lizenz-Dashboard angezeigt wird.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
-1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf die Schaltfläche mit dem Hamburger-Menü im [Cloud Manager-Header.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Dadurch werden die Registerkarten angezeigt.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf die Menüschaltfläche Hamburger in der Kopfzeile [Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Dadurch werden die Registerkarten angezeigt.
 1. Tippen oder klicken Sie auf der Registerkarte auf die Option **Lizenz** .
 
 ![Lizenz-Dashboard](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manage
 
 ### Details zur Site-Nutzung {#sites-usage-details}
 
-Das Fenster **Details zur Site-Nutzung** enthält Diagramme, die einen Überblick über die Verwendung Ihrer Sites-Lizenzen auf der Grundlage von [Inhaltsanforderungen](#what-is-a-content-request) geben.
+Das Fenster **Sites-Nutzungsdetails** enthält Diagramme, die einen Überblick über die Verwendung Ihrer Sites-Lizenzen auf der Grundlage von [Inhaltsanforderungen](#what-is-a-content-request) geben.
 
 ![Fenster „Details zur Site-Nutzung“](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem di
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
@@ -113,7 +113,7 @@ Für jeden Seitenaufruf oder für jeweils fünf API-Aufrufe wird 1 Inhaltsanfrag
 
 Inhaltsanfragen schließen Anfragen oder Aktivitäten aus, die von oder für Adobe allein zum Zweck der Bereitstellung von Produkten und Dienstleistungen initiiert wurden. Auch der von Adobe identifizierte Benutzeragenten-Traffic von Bots, Crawlern und Spidern im Zusammenhang mit gängigen Suchmaschinen und Social-Media-Services ist ausgeschlossen.
 
-Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
+Siehe auch [Grundlegendes zu Inhaltsanforderungen von Cloud Services](/help/implementing/cloud-manager/content-requests.md).
 
 ### Wie misst Adobe Experience Manager Inhaltsanfragen? {#how-are-content-requests-measured}
 

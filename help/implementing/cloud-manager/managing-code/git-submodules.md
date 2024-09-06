@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Git-Untermodule dazu verwenden können, den I
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

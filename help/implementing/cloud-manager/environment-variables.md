@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ In der Authoring-, Vorschau- und Veröffentlichungsumgebung können sowohl regul
 
 ### Dispatcher {#dispatcher}
 
-Im [Dispatcher können nur reguläre Umgebungsvariablen verwendet werden.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Geheimnisse können nicht verwendet werden.
+Nur normale Umgebungsvariablen können mit [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Geheimnisse nicht verwendet werden.
 
 Allerdings können Umgebungsvariablen nicht in `IfDefine`-Richtlinien verwendet werden.
 

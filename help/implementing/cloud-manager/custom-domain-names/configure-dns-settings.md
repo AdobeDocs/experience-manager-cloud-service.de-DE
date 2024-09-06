@@ -1,35 +1,35 @@
 ---
 title: Konfigurieren von DNS-Einstellungen
-description: Erfahren Sie, wie Sie mit der Konfiguration von DNS-Einstellungen für Ihre benutzerdefinierten Domänennamen Besucher auf Ihrer Site bedienen können.
+description: Erfahren Sie, wie Sie mit der Konfiguration von DNS-Einstellungen für Ihre benutzerdefinierten Domain-Namen Besuchende auf Ihrer Website bedienen können.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 57%
+ht-degree: 95%
 
 ---
 
 
 # Konfigurieren von DNS-Einstellungen {#configure-dns}
 
-Nachdem Ihr benutzerdefinierter Domänenname erfolgreich [verifiziert und bereitgestellt wurde,](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) können Sie die DNS-Einträge für Ihren benutzerdefinierten Domänennamen mit Ihrem DNS-Provider aktualisieren. Dies ermöglicht es Ihrer Site, Besuchern Inhalte bereitzustellen. Diese Aktivität wird daher in der Regel vor einer Live-Schaltung durchgeführt.
+Nachdem der benutzerdefinierte Domain-Name erfolgreich [überprüft und bereitgestellt](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) wurde, können Sie die DNS-Einträge für Ihren benutzerdefinierten Domain-Namen mit Ihrem DNS-Anbieter aktualisieren. Dies ermöglicht es Ihrer Site, Besucherinnen und Besuchern Inhalte bereitzustellen. Diese Aktivität wird daher in der Regel vor einer Live-Schaltung durchgeführt.
 
 ## Was sind DNS-Einstellungen? {#dns-settings}
 
-Ein `CNAME` oder ein Datensatz leitet nach der Bereitstellung den gesamten Internet-Traffic für die Domäne an den Ort weiter, an den er verweist. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
+Ein `CNAME`- oder A-Eintrag leitet, sobald er bereitgestellt ist, den gesamten Internet-Traffic für die Domain zu dem Punkt, auf den er verweist. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
 
-Um diese Einstellungen zu konfigurieren, müssen Sie festlegen, ob ein `CNAME`- oder ein Apex-Eintrag so konfiguriert werden muss, dass Ihr benutzerdefinierter Domänenname auf den Cloud Manager-Domänennamen verweist. Die folgenden Abschnitte dieses Dokuments helfen Ihnen bei der Bestimmung des für Ihre DNS-Konfiguration geeigneten Datensatztyps.
+Um diese Einstellungen zu konfigurieren, müssen Sie festlegen, ob ein `CNAME`- oder Apex-Eintrag so konfiguriert sein muss, dass Ihr benutzerdefinierter Domain-Name auf den Cloud Manager-Domain-Namen verweist. Die folgenden Abschnitte dieses Dokuments helfen Ihnen dabei, zu ermitteln, welche Art von Eintrag für Ihre DNS-Konfiguration geeignet ist.
 
 ## Voraussetzungen {#requirements}
 
 Sie müssen diese Anforderungen erfüllen, bevor Sie Ihre DNS-Einträge konfigurieren.
 
 * Sie müssen Ihren Domain-Host oder Ihre Registrierungsstelle ermitteln, falls Sie sie noch nicht kennen.
-* Sie müssen in der Lage sein, die DNS-Einträge für die Domain Ihres Unternehmens zu ändern oder sich ansonsten an eine entsprechende Person zu wenden, die dies kann.
-* Sie müssen Ihren konfigurierten benutzerdefinierten Domänennamen bereits überprüft haben, wie im Dokument [Überprüfen des Domänennamenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) beschrieben.
+* Sie müssen in der Lage sein, die DNS-Einträge für die Domain Ihres Unternehmens zu ändern, oder sich andernfalls an eine entsprechende Person wenden, die dies kann.
+* Sie müssen den konfigurierten benutzerdefinierten Domänennamen bereits überprüft haben, wie im Dokument [Überprüfen des Domänennamenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) beschrieben.
 
 ## CNAME-Datensatz {#cname-record}
 
@@ -59,4 +59,4 @@ Fügen Sie die folgenden `A`-Einträge über Ihren Domain-Provider in den DNS-Ei
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie Ihre DNS-Einträge für Ihren benutzerdefinierten Domänennamen konfiguriert haben, müssen Sie diese Einstellungen in Cloud Manager überprüfen. Fahren Sie mit dem Dokument [Überprüfen des DNS-Datensatzstatus](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) fort, um Ihren benutzerdefinierten Domänennamen abzuschließen.
+Nachdem Sie Ihre DNS-Einträge für Ihren benutzerdefinierten Domain-Namen konfiguriert haben, müssen Sie diese Einstellungen in Cloud Manager überprüfen. Befolgen Sie das Dokument [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md), um Ihren benutzerdefinierten Domain-Namen fertigzustellen.

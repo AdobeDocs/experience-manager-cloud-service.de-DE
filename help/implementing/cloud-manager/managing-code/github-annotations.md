@@ -4,7 +4,7 @@ description: Erfahren Sie, wie GitHub Pull-Anfragen an Ihre privaten Repositorys
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 100%
@@ -42,4 +42,4 @@ Die Ergebnisse für die [Code-Qualität](/help/implementing/cloud-manager/code-q
 
 ![Beispiel für Anmerkungen](assets/github-check-annotations-code-quality-2.png)
 
-Sie können die Probleme auch in Form einer CSV-Datei visualisieren. Diese kann abgerufen werden, indem Sie [die Details der Pipeline-Ausführung in Cloud Manager anzeigen.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)
+Sie können die Probleme auch in Form einer CSV-Datei visualisieren. Diese kann abgerufen werden, indem Sie [die Details der Pipeline-Ausführung in Cloud Manager anzeigen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details).

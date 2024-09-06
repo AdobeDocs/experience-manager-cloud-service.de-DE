@@ -1,13 +1,13 @@
 ---
 title: Checkliste vor der Live-Schaltung
-description: Erfahren Sie mehr über alle Elemente, die für eine erfolgreiche Live-Schaltung mit AEM as a Cloud Service vorhanden sein müssen.
+description: Erfahren Sie mehr über alle Elemente, die vorhanden sein müssen, um eine erfolgreiche Live-Schaltung mit AEM as a Cloud Service zu ermöglichen.
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '568'
+ht-degree: 56%
 
 ---
 
@@ -24,13 +24,12 @@ ht-degree: 100%
 * Planen der Periode zum Einfrieren von Code und Inhalten.
    * Siehe auch den Abschnitt [Zeitpläne für das Einfrieren von Code und Inhalten für die Migration](#code-content-freeze).
 * Ausführen der endgültigen Inhaltsauffüllung.
-* Überprüfen Sie die Dispatcher-Konfigurationen.
-   * Verwenden Sie einen lokalen Dispatcher-Validator, der die Konfiguration, Validierung und Simulation des Dispatchers lokal unterstützt.
-      * [Richten Sie die lokalen Dispatcher-Tools ein.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=de#prerequisites)
+* Überprüfen von Dispatcher-Konfigurationen.
+   * Lokalen Dispatcher-Validator verwenden, der die lokale Konfiguration, Validierung und Simulation von Dispatcher erleichtert
+      * [Richten Sie die lokalen Dispatcher-Tools ein](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
    * Überprüfen Sie die Konfiguration des virtuellen Hosts sorgfältig.
-      * Die einfachste (und standardmäßige) Lösung besteht darin, `ServerAlias *` in Ihrer virtuellen Host-Datei im `/dispatcher/src/conf.d/available_vhostsfolder` einzuschließen.
-         * Dadurch können die von Produktfunktionstests, Dispatcher-Cache-Invalidierung und vom Klonen verwendeten Host-Aliase funktionieren.
-      * Wenn `ServerAlias *` nicht akzeptabel ist, müssen mindestens die folgenden `ServerAlias`-Einträge zusätzlich zu Ihren benutzerdefinierten Domains zulässig sein:
+      * Die einfachste (und standardmäßige) Lösung besteht darin, `ServerAlias *` in Ihre Virtual-Host-Datei in den `/dispatcher/src/conf.d/available_vhostsfolder` aufzunehmen. Auf diese Weise können die von Funktionstests für das Produkt, der Invalidierung des Dispatcher-Cache und von Klonen verwendeten Host-Aliase funktionieren.
+      * Wenn `ServerAlias *` jedoch nicht akzeptabel ist, müssen zusätzlich zu Ihren benutzerdefinierten Domänen mindestens die folgenden `ServerAlias` -Einträge zulässig sein:
          * `localhost`
          * `*.local`
          * `publish*.adobeaemcloud.net`
@@ -41,23 +40,23 @@ ht-degree: 100%
       * Konfigurieren Sie SSL und DNS gemäß der Dokumentation des CDN-Anbieters.
    * Wenn Sie kein zusätzliches CDN verwenden, verwalten Sie SSL und DNS gemäß der folgenden Dokumentation:
       * Verwalten von SSL-Zertifikaten
-         * [Einführung – Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         * [Verwalten eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+         * [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [SSL-Zertifikate verwalten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Verwalten von benutzerdefinierten Domain-Namen (DNS)
-         * Um sicherzustellen, dass die DNS-Umstellung keine unerwarteten Probleme verursacht, wird empfohlen, eine Test-Subdomain zu erstellen, mit der Sie Ihre Produktionsinstanz verbinden können, bevor Sie live gehen, und eine Reihe von UAT-Tests durchzuführen. Wenn Ihre Domain also example.com lautet, können Sie die Subdomain test.example.com erstellen und sie auf die Produktion anwenden. Während des UAT-Tests der Domain sollten Sie Dinge wie richtige Link-Umleitungen, Caching und Dispatcher-Konfigurationen prüfen.
-         * [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         * [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         * [Verwalten eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         * Stellen Sie sicher, dass die DNS-Umstellung keine unerwarteten Probleme verursacht. Erstellen Sie eine Test-Subdomain, mit der Sie Ihre Produktionsinstanz verbinden können, bevor Sie live gehen und eine Reihe von UAT-Tests durchführen. Wenn Ihre Domäne also example.com ist, können Sie eine Subdomain test.example.com erstellen und sie auf die Produktion anwenden. Suchen Sie während des UAT-Tests der Domäne nach Elementen wie der richtigen Link-Umleitung, Zwischenspeicherung und Dispatcher-Konfigurationen.
+         * [Einführung in benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [Benutzerdefinierten Domänennamen hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Benutzerdefinierten Domänennamen verwalten](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
    * Denken Sie daran, den TTL-Satz für Ihren DNS-Eintrag zu überprüfen.
       * Die TTL ist die Zeit, die ein DNS-Eintrag in einem Cache verbleibt, bevor der Server um eine Aktualisierung gebeten wird.
-      * Wenn Sie eine sehr hohe TTL haben, dauert die Aktualisierung Ihres DNS-Eintrags länger.
+      * Wenn Sie eine sehr hohe TTL haben, dauert die Aktualisierung Ihres DNS-Eintrags länger, bis es weitergegeben wird.
 * Führen Sie Leistungs- und Sicherheitstests durch, die Ihren Geschäftsanforderungen und -zielen entsprechen.
-   * Führen Sie Tests in der Staging-Umgebung durch.  Sie hat dieselbe Größe wie die Produktion.
+   * Führen Sie Tests in einer Staging-Umgebung durch.  Sie hat dieselbe Größe wie die Produktion.
    * Entwicklungsumgebungen haben nicht die gleiche Größe wie Staging- und Produktionsumgebungen.
 * Stellen Sie um und gehen Sie sicher, dass die tatsächliche Live-Schaltung ohne neue Bereitstellung oder Inhaltsaktualisierung durchgeführt wird.
-* Erstellen Sie Benachrichtigungsprofile für die Benutzenden der Admin Console. Siehe [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md)
+* Erstellen Sie Admin Console-Benutzerbenachrichtigungsprofile. Siehe [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md)
 * Ziehen Sie die Konfiguration von Traffic-Filterregeln in Erwägung, um zu steuern, welcher Traffic auf Ihrer Website nicht zulässig sein soll.
-   * Regeln für Traffic-Filter mit Ratenbegrenzungen können ein effektives Werkzeug gegen DDoS-Angriffe sein. Eine spezielle Kategorie von Traffic-Filterregeln namens „WAF-Regeln“ erfordert eine gesonderte Lizenz.
+   * Regeln zum Traffic-Filter für Ratenbegrenzungen können ein effektives Werkzeug gegen DDoS-Angriffe sein. Eine spezielle Kategorie von Traffic-Filterregeln, so genannte WAF (Web Application Firewall)-Regeln, erfordert eine separate Lizenz.
    * Weitere Informationen finden Sie in der Dokumentation zu einigen [vorgeschlagenen Startregeln](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Sie können jederzeit auf die Liste zurückgreifen, falls Sie Ihre Aufgaben während der Live-Schaltung neu kalibrieren müssen.

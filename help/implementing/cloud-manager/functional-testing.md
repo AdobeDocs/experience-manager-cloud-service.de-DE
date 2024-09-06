@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ Die Tests sind in einem Docker-Image verpackt, das so flexibel wie möglich ist 
 >
 >Benutzerdefinierte Benutzeroberflächentests werden in den Produktions- und Nicht-Produktions-(Opt-in)-Pipelines ausgeführt, die von den Implementierungen Ihrer AEM-Anwedungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie sind daher ein wichtiger Beitrag zur Gewährleistung eines ordnungsgemäßen Funktionierens Ihrer Anwendung und zur Erhöhung der Versionssicherheit. Die benutzerdefinierten Benutzeroberflächentests werden auch in internen Validierungs-Pipelines vor der Veröffentlichung für jeden Kunden und jede Kundin ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
 >
->Nicht-Selenium-Container sollten Tests mithilfe eines HTTP-Proxys ausführen, der auf den Umgebungsvariablen im [UI-Tests-Abschnitt.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) beruht.
+>Nicht-Selenium-Container sollten Tests mithilfe eines HTTP-Proxys ausführen, der auf den Umgebungsvariablen im Abschnitt [UI-Testen](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) basiert.
 
 Damit Pipeline-Ausführungen effizient bleiben, empfehlen wir, dass Sie sich auf Schlüsselfunktionen und die wichtigsten Benutzerinteraktionsabläufe konzentrieren. Es wird empfohlen, Testsuiten der vollständigen Benutzeroberfläche, die nicht zu diesen Qualitätstests passen, während des Kundenentwicklungsflusses als Teil der allgemeinen Kundenvalidierungs-Pipelines auszuführen.
 
@@ -111,7 +111,7 @@ Der Experience Audit-Qualitätstest führt [Google Lighthouse](https://developer
 
 Dieser Qualitätstest wird von AEM vordefiniert bereitgestellt, blockiert jedoch nicht die Bereitstellungs-Pipelines. Standardmäßig wird ein Audit für die Stammseite (`/`) der Veröffentlichungsinstanz durchgeführt. Sie können einen Beitrag leisten, indem Sie bis zu 25 benutzerdefinierte Pfade konfigurieren, die für Audits berücksichtigt werden.
 
-Weitere Details finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
+Weitere Details finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 ### Kundenvalidierungen
 

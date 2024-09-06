@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 73%
+ht-degree: 93%
 
 ---
 
@@ -19,11 +19,11 @@ Erfahren Sie, wie Sie feststellen können, ob Ihr benutzerdefinierter Domain-Nam
 
 ## Voraussetzungen {#requirements}
 
-Sie müssen diese Anforderungen erfüllen, bevor Sie Ihren Domänennamenstatus in Cloud Manager überprüfen können.
+Sie müssen diese Anforderungen erfüllen, bevor Sie Ihren Domain-Namensstatus in Cloud Manager überprüfen.
 
 * Sie müssen zunächst einen TXT-Eintrag für Ihre benutzerdefinierte Domäne hinzufügen, wie im Dokument [Hinzufügen eines TXT-Eintrags](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) beschrieben.
 
-## Überprüfen des Status Ihres benutzerdefinierten Domänennamen {#how-to}
+## Überprüfen des Status Ihres benutzerdefinierten Domain-Namens {#how-to}
 
 Sie können den Status Ihres benutzerdefinierten Domain-Namens in Cloud Manager ermitteln.
 
@@ -37,18 +37,17 @@ Sie können den Status Ihres benutzerdefinierten Domain-Namens in Cloud Manager 
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
-Die Statusdetails werden angezeigt. Ihre benutzerdefinierte Domäne kann verwendet werden, wenn der Status **Domäne überprüft und bereitgestellt** angezeigt wird. Weitere Informationen zu den verschiedenen Status und deren Bedeutung finden Sie im Abschnitt [nächster Abschnitt](#statuses) .
+Das Statusdetail wird angezeigt. Ihre benutzerdefinierte Domain kann verwendet werden, wenn der Status **Domain überprüft und bereitgestellt** angezeigt wird. Weitere Informationen zu den verschiedenen Status und ihren Bedeutungen finden Sie im [nächsten Abschnitt](#statuses).
 
 >[!NOTE]
 >
->Cloud Manager überprüft den Trigger automatisch, wenn Sie im Überprüfungsschritt des Assistenten **Benutzerdefinierte Domäne hinzufügen** die Option **Erstellen** auswählen, wenn Sie [ einen neuen benutzerdefinierten Domänennamen zu Cloud Manager hinzufügen.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) Für nachfolgende Überprüfungen müssen Sie aktiv das Symbol zum erneuten Überprüfen neben dem Status auswählen.
+>Cloud Manager überprüft den Trigger automatisch, wenn Sie im Überprüfungsschritt des Assistenten **Benutzerdefinierte Domäne hinzufügen** die Option **Erstellen** auswählen, wenn Sie [ einen neuen benutzerdefinierten Domänennamen zu Cloud Manager hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Für spätere Überprüfungen müssen Sie das Symbol „Erneut überprüfen“ neben dem Status aktiv auswählen.
 
 ## Grundlagen zu Überprüfungsstatus {#statuses}
 
-Cloud Manager überprüft das Domain-Eigentum über den [TXT-Wert](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) und zeigt eine der folgenden Statusmeldungen an.
+Cloud Manager überprüft den Domain-Besitzstatus über den [TXT-Wert](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) und zeigt eine der folgenden Statusmeldungen an.
 
-* **Domain-Überprüfung fehlgeschlagen**
-– TXT-Wert fehlt entweder oder wird mit Fehlern erkannt.
+* **Domain-Überprüfung fehlgeschlagen** – TXT-Wert fehlt entweder oder wird mit Fehlern erkannt.
 
    * Befolgen Sie die Anweisungen in der Statusmeldung, um das Problem zu beheben.
    * Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Überprüfen** neben dem Status auswählen.
@@ -57,7 +56,7 @@ Cloud Manager überprüft das Domain-Eigentum über den [TXT-Wert](/help/impleme
 Die Überprüfung ist in Bearbeitung.
 
    * Dieser Status wird in der Regel angezeigt, nachdem Sie das Symbol **Erneut überprüfen** neben dem Status angeklickt haben.
-   * Die Verarbeitung der DNS-Verifizierung kann aufgrund von Verzögerungen bei der DNS-Verbreitung einige Stunden dauern.
+   * Die Verarbeitung der DNS-Verifizierung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.
 
 * **Verifiziert, Bereitstellung fehlgeschlagen** – Die TXT-Überprüfung war erfolgreich, aber die CDN-Bereitstellung schlug fehl.
 
@@ -77,7 +76,7 @@ Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden
 
 ## Fehler bei Domain-Namen {#domain-error}
 
-Im Folgenden finden Sie einige häufige Fehler bei der Verifizierung von Domain-Namen und deren typische Lösungen.
+Im Folgenden finden Sie einige häufige Fehler bei der Überprüfung des Domain-Namens und dafür gängige Lösungen.
 
 ### Fehler „Domain nicht installiert“ {#domain-not-installed}
 
@@ -115,4 +114,4 @@ Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Do
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie Ihren Domänenstatus in Cloud Manager überprüft haben, müssen Sie die DNS-Einstellungen konfigurieren, indem Sie DNS-CNAME- oder APEX-Einträge hinzufügen, die auf AEM as a Cloud Service verweisen. Fahren Sie mit dem Dokument [Konfigurieren der DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) fort, um mit der Einrichtung Ihres benutzerdefinierten Domänennamens fortzufahren.
+Nachdem Sie den Domain-Status in Cloud Manager überprüft haben, müssen Sie die DNS-Einstellungen konfigurieren, indem Sie DNS-CNAME- oder APEX-Einträge hinzufügen, die auf AEM as a Cloud Service verweisen. Befolgen Sie das Dokument [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md), um mit der Einrichtung Ihres benutzerdefinierten Domain-Namens fortzufahren.

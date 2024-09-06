@@ -4,10 +4,10 @@ description: Erstellen, Anzeigen und Löschen von Git-Repositorys in Cloud Manag
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ Cloud Manager unterstützt beide Typen von Repositorys, nämlich die, die von Ad
 
 ## Auf Repository-Informationen zugreifen {#repo-info}
 
-Wenn Sie Ihre Repositorys im Fenster **Repositorys** ansehen, können Sie die Details zum programmgesteuerten Zugriff auf die von Adobe verwalteten Repositorys anzeigen, indem Sie in der Symbolleiste auf die Schaltfläche **Auf Repository-Informationen zugreifen** tippen oder klicken.
+Wenn Sie Ihre Repositorys im Fenster **Repositorys** anzeigen, können Sie die Details zum programmgesteuerten Zugriff auf die von Adobe verwalteten Repositorys anzeigen, indem Sie in der Symbolleiste auf die Schaltfläche **Repo Info aufrufen** klicken.
 
 ![Repository-Informationen](assets/repo-info.png)
 
@@ -81,7 +81,7 @@ Das Fenster **Repository-Informationen** mit den Details wird geöffnet. Weitere
 
 Mit der Aktion **Verzweigungen überprüfen/Projekt erstellen** werden je nach dem Status des Repositorys zwei Funktionen ausgeführt.
 
-* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt, das auf dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) basiert.
+* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt basierend auf dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Wenn im Repository bereits ein Beispielprojekt erstellt wurde, prüft es den Status des Repositorys und seiner Verzweigungen und gibt zurück, dass bereits ein Beispielprojekt vorhanden ist.
 
 ![Aktion „Verzweigungen überprüfen“](assets/check-branches.png)

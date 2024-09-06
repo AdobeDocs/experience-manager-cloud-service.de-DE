@@ -6,8 +6,8 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 100%
 
@@ -102,11 +102,11 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 
 1. Geben Sie Pfade an, die in die Erlebnisprüfung aufgenommen werden sollen.
 
-   * Einzelheiten finden Sie im Dokument [Testen mit der Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md#configuration).
+   * Einzelheiten finden Sie im Dokument [Testen mit der Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration).
 
 1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
-Für das Experience Audit konfigurierte Pfade werden an den Dienst gesendet und gemäß den Leistungs-, Zugänglichkeits-, SEO- (Suchmaschinenoptimierung), Best Practices- und PWA (Progressive Web-App)-Tests bewertet, wenn die Pipeline ausgeführt wird. Weitere Einzelheiten finden Sie unter [Grundlegendes zu den Ergebnissen von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
+Für das Experience Audit konfigurierte Pfade werden an den Dienst gesendet und gemäß den Leistungs-, Zugänglichkeits-, SEO- (Suchmaschinenoptimierung), Best Practices- und PWA (Progressive Web-App)-Tests bewertet, wenn die Pipeline ausgeführt wird. Weitere Einzelheiten finden Sie unter [Grundlegendes zu den Ergebnissen von Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
@@ -115,7 +115,7 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, einen der folgenden Code-Typen **einzuschließen**:
 
 * **Konfiguration** – Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM-Umgebung.
-   * Eine Liste der unterstützten Konfigurationen, einschließlich Protokollweiterleitung, bereinigungsbezogener Wartungsaufgaben und verschiedener CDN-Konfigurationen, sowie Informationen zu deren Verwaltung in Ihrem Repository für eine ordnungsgemäße Bereitstellung finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md).
+   * Eine Liste der unterstützten Konfigurationen, einschließlich Protokollweiterleitung, bereinigungsbezogener Wartungsaufgaben und verschiedener CDN-Konfigurationen, sowie Informationen zu deren ordnungsgemäßer Bereitstellung im Repository finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md).
    * Wenn Sie eine gezielte Bereitstellungs-Pipeline ausführen, werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert sind, die Sie in der Pipeline definiert haben.
    * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.

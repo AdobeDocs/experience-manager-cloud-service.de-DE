@@ -1,10 +1,10 @@
 ---
 title: Reine Staging- und Produktions-Pipelines
 description: Erfahren Sie, wie Sie Staging- und Produktionsbereitstellungen mithilfe von dedizierten Pipelines aufteilen können.
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
-workflow-type: ht
-source-wordcount: '952'
-ht-degree: 100%
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+workflow-type: tm+mt
+source-wordcount: '942'
+ht-degree: 95%
 
 ---
 
@@ -54,9 +54,9 @@ Beachten Sie auch die folgenden bekannten Probleme, bevor Sie mit dem Testen die
 
 ## Pipeline-Erstellung {#pipeline-creation}
 
-Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnliche Weise wie bei den standardmäßig gekoppelten [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [produktionsfremden Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Weitere Informationen finden Sie in diesen Dokumenten.
+Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnliche Weise wie bei den standardmäßig gekoppelten [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Weitere Informationen finden Sie in den zugehörigen Dokumenten.
 
-1. Tippen oder klicken Sie im Fenster **Pipelines** auf **Pipeline hinzufügen**.
+1. Klicken Sie im Fenster **Pipelines** auf **Pipeline hinzufügen**.
 
    * Wählen Sie **Produktionsfremde Pipeline hinzufügen**, um eine reine Staging-Pipeline zu erstellen.
    * Wählen Sie **Reine Produktions-Pipeline hinzufügen**, um eine reine Produktions-Pipeline zu erstellen.
@@ -74,7 +74,7 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 ### Reine Staging-Pipelines {#stage-only}
 
 1. Sobald Sie die Option **Produktionsfremde Pipeline hinzufügen** gewählt haben, öffnet sich der Dialog **Produktionsfremde Pipeline hinzufügen**.
-1. Um eine reine Staging-Pipeline zu erstellen, wählen Sie die Staging-Umgebung im Feld **Zulässige Bereitstellungsumgebungen** für Ihre Pipeline aus. Füllen Sie die restlichen Felder aus und tippen oder klicken Sie auf **Fortfahren**.
+1. Um eine reine Staging-Pipeline zu erstellen, wählen Sie die Staging-Umgebung im Feld **Zulässige Bereitstellungsumgebungen** für Ihre Pipeline aus. Füllen Sie die restlichen Felder aus und klicken Sie auf **Fortfahren**.
 
    ![Erstellen einer reinen Staging-Pipeline](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 ### Reine Produktions-Pipelines {#prod-only}
 
-1. Sobald Sie die Option **Reine Produktions-Pipeline hinzufügen** gewählt haben, öffnet sich das Dialogfeld **Reine Produktions-Pipeline hinzufügen**.
-1. Geben Sie einen **Pipeline-Namen** an. Die verbleibenden Optionen und Funktionen des Dialogfelds funktionieren genauso wie im Dialogfeld zur Erstellung der standardmäßig gekoppelten Pipeline. Tippen oder klicken Sie auf **Speichern**, um die Pipeline zu speichern.
+1. Wenn Sie die Option **Nur Produktions-Pipeline hinzufügen** auswählen, wird das Dialogfeld **Nur Produktions-Pipeline hinzufügen** geöffnet.
+1. Geben Sie einen **Pipeline-Namen** an. Die verbleibenden Optionen und Funktionen des Dialogfelds funktionieren genauso wie im Dialogfeld zur Erstellung der standardmäßig gekoppelten Pipeline. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
 ## Ausführen von reinen Produktions- und Staging-Pipelines {#running}
 
-Reine Produktions- und Staging-Pipelines werden auf die gleiche Weise ausgeführt wie [alle anderen Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) Weitere Informationen finden Sie in dieser Dokumentation.
+Reine Produktions- und Staging-Pipelines werden auf die gleiche Weise ausgeführt wie [alle anderen Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). Weitere Informationen finden Sie in der zugehörigen Dokumentation.
 
 Darüber hinaus kann ein Lauf einer reinen Produktions-Pipeline direkt aus den Ausführungsdetails einer reinen Staging-Pipeline ausgelöst werden.
 
@@ -97,7 +97,7 @@ Eine reine Staging-Pipeline wird fast genauso ausgeführt wie eine standardmäß
 
 ![Ausführen einer reinen Staging-Pipeline](assets/stage-only-pipeline-run.png)
 
-Die Schaltfläche **Build weiterleiten** wird nur angezeigt, wenn Sie die neueste erfolgreiche Ausführung der reinen Staging-Pipeline verwenden. Wenn Sie darauf tippen bzw. klicken, werden Sie aufgefordert, die Ausführung der reinen Produktions-Pipeline zu bestätigen oder eine reine Produktions-Pipeline zu erstellen, falls noch keine vorhanden ist.
+Die Schaltfläche **Build weiterleiten** wird nur angezeigt, wenn Sie die neueste erfolgreiche Ausführung der reinen Staging-Pipeline verwenden. Wenn Sie auf klicken, werden Sie aufgefordert, die Ausführung der reinen Produktepipeline zu bestätigen oder eine reine Prod-Pipeline zu erstellen, falls noch keine Pipeline vorhanden ist.
 
 ### Reine Produktions-Pipelines {#prod-only-run}
 

@@ -5,10 +5,10 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 62%
+ht-degree: 90%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 62%
 
 Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst werden.
 
-## DNS-Eintragsstatus {#status}
+## Status der DNS-Einträge {#status}
 
-Ein benutzerdefinierter Domänenname kann Live-Traffic erst bereitstellen, wenn das DNS korrekt aufgelöst wurde. In Cloud Manager können Sie feststellen, ob Ihr Domain-Name ordnungsgemäß auf Ihre AEM as a Cloud Service-Website aufgelöst wird.
+Ein benutzerdefinierter Domain-Name kann Livetraffic erst bereitstellen, wenn das DNS korrekt aufgelöst wurde. In Cloud Manager können Sie feststellen, ob Ihr Domain-Name ordnungsgemäß auf Ihre AEM as a Cloud Service-Website aufgelöst wird.
 
 ## Voraussetzungen {#requirements}
 
@@ -37,19 +37,19 @@ Sie müssen diese Anforderungen erfüllen, bevor Sie einen DNS-Datensatzstatus m
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
-Cloud Manager führt eine DNS-Suche für Ihren Domänennamen durch und zeigt den aktuellen Status [an.](#statuses)
+Cloud Manager führt eine DNS-Suche für Ihren Domänennamen durch und zeigt ihn [aktuellen Status](#statuses) an.
 
 Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerdefinierter Domain-Name zum ersten Mal überprüft und bereitgestellt wird. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv anklicken.
 
 ## DNS-Status in Cloud Manager {#statuses}
 
-Eine benutzerdefinierte Domäne kann einen der folgenden Status in Cloud Manager haben.
+Eine benutzerdefinierte Domain kann einen der folgenden Status in Cloud Manager haben.
 
 * **DNS-Status nicht erkannt**: Der DNS-Status wird erst dann erkannt, wenn Ihr benutzerdefinierter Domain-Name erfolgreich überprüft und bereitgestellt wurde.
 
-   * Dieser Status wird auch beobachtet, wenn Ihr benutzerdefinierter Domänenname gerade gelöscht wird.
+   * Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird.
 
-* **DNS wird falsch aufgelöst**: Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge noch nicht aufgelöstübertragen wurde oder fehlerhaft ist.
+* **DNS wird falsch aufgelöst**: Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge nicht aufgelöst wurde oder fehlerhaft ist.
 
    * Weitere Informationen finden Sie unter [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
    * Wenn Sie bereit sind, müssen Sie auf das Symbol zum **erneuten Auflösen** neben dem Status klicken.
@@ -64,4 +64,4 @@ Eine benutzerdefinierte Domäne kann einen der folgenden Status in Cloud Manager
 
 ## Nächste Schritte {#next-steps}
 
-Herzlichen Glückwunsch! Sie haben Ihre benutzerdefinierte Domäne für die Verwendung mit Cloud Manager erfolgreich konfiguriert. Weitere Informationen zur Verwaltung Ihrer benutzerdefinierten Domänennamen mit Cloud Manager finden Sie im Dokument [Verwalten benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) .
+Herzlichen Glückwunsch! Sie haben Ihre benutzerdefinierte Domain für die Nutzung mit Cloud Manager erfolgreich konfiguriert. Weitere Informationen zur Verwaltung Ihrer benutzerdefinierten Domain-Namen mit Cloud Manager finden Sie unter [Verwalten benutzerdefinierter Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).

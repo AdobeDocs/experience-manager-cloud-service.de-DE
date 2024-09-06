@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '1403'
-ht-degree: 100%
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+workflow-type: tm+mt
+source-wordcount: '1402'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
       * **Funktionstests für das Produkt** – Führen Sie [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) mit der Entwicklungsumgebung durch.
       * **Benutzerdefinierte Funktionstests** – Führen Sie [benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) gegen die Entwicklungsumgebung durch.
       * **Benutzerdefinierte UI-Tests** – Führen Sie [benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/ui-testing.md) für benutzerdefinierte Anwendungen aus.
-      * **Erlebnisprüfung** – Ausführen einer [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Erlebnisprüfung** – Ausführen einer [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![Full-Stack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
-   * **Pipeline**: Bei produktionsfremden Frontend-Pipelines haben Sie die Möglichkeit, die **[Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md)** zu aktivieren.
+   * **Pipeline** - Für Frontend-Nicht-Produktions-Pipelines haben Sie die Möglichkeit, **[Erlebnisaudit](/help/implementing/cloud-manager/experience-audit-dashboard.md)** zu aktivieren.
 
    ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Wenn Sie die Erlebnisprüfung aktiviert haben, tippen oder klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnisprüfung** zu gelangen, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
 
-   * Wenn Sie die **Erlebnisprüfung** aktiviert haben, lesen Sie das Dokument [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) für Details zur Konfiguration.
+   * Wenn Sie **Erlebnisprüfung** aktiviert haben, finden Sie im Dokument [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-dashboard.md) weitere Informationen zur Konfiguration.
    * Wenn nicht, überspringen Sie diesen Schritt.
 
 1. Tippen oder klicken Sie auf **Speichern**, um die Pipeline zu speichern.

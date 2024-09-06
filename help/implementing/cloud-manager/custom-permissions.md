@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -36,9 +36,9 @@ Mit benutzerdefinierten Berechtigungen können Benutzende neue benutzerdefiniert
 
 Um eigene, benutzerdefinierte Berechtigungen zu erstellen und zu verwenden, sind drei Schritte erforderlich:
 
-1. [Erstellen Sie ein Produktprofil.](#create)
+1. [Erstellen Sie ein Produktprofil](#create).
 1. [Weisen Sie dem Produktprofil benutzerdefinierte Berechtigungen zu.](#assign-permissions)
-1. [Weisen Sie dem Produktprofil Benutzende zu.](#assign-users)
+1. [Weisen Sie dem Produktprofil Benutzer zu.](#assign-users)
 
 In diesem Abschnitt werden diese Schritte beschrieben. Möglicherweise helfen Ihnen die Informationen in den Abschnitten [Begriffe](#terms) und [Konfigurierbare Berechtigungen](#configurable-permissions) bei der Erstellung Ihrer eigenen benutzerdefinierten Berechtigungen.
 
@@ -104,7 +104,7 @@ Ihr neues Produktprofil wird jetzt mit den benutzerdefinierten Berechtigungen ge
 
 Sie können dem neuen Produktprofil, das Sie mit benutzerdefinierten Berechtigungen erstellt haben, jetzt Benutzende zuweisen.
 
-1. Wählen Sie in der Admin Console den Namen des [neuen Produktprofils aus, dem Sie benutzerdefinierte Berechtigungen zugewiesen haben.](#assign-permissions)
+1. Wählen Sie in der Admin Console den Namen des [neuen Produktprofils aus, dem Sie benutzerdefinierte Berechtigungen zugewiesen haben](#assign-permissions).
 
 1. Öffnen Sie in dem Fenster, das daraufhin erscheint, die Registerkarte **Benutzer**.
 
@@ -196,7 +196,7 @@ Beachten Sie bei der Verwendung benutzerdefinierter Berechtigungen die folgenden
 * Bereitstellungs-Manager
 * Entwickler
 
-Weitere Informationen zu vordefinierten Rollen finden Sie unter [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
+Weitere Informationen zu vordefinierten Rollen finden Sie unter [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Was passiert mit vordefinierten Berechtigungsprofilen bei der Einführung in benutzerdefinierte Profile?
 

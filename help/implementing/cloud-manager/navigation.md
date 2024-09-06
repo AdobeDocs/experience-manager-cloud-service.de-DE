@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 81%
+source-wordcount: '1499'
+ht-degree: 75%
 
 ---
 
@@ -37,8 +37,8 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
 1. [Symbolleisten](#toolbars-my-programs-toolbars) für die Auswahl von Organisationen, Warnmeldungen und Kontoeinstellungen
 1. Registerkarten, um die aktuelle Ansicht der Programme zu wechseln:
    * Ansicht **Startseite** (Standard) mit Auswahl der Ansicht **Meine Programme**, die einen Überblick über alle Programme enthält
-   * **Lizenz**, die auf das [Lizenz-Dashboard zugreift.](/help/implementing/cloud-manager/license-dashboard.md)
-   * Beachten Sie, dass die Registerkarten standardmäßig geschlossen sind und über das Hamburger-Menü im [Cloud Manager-Header](#cloud-manager-header) angezeigt werden können.
+   * **Lizenz**, die auf das [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) zugreift.
+   * Beachten Sie, dass die Registerkarten standardmäßig geschlossen sind und über das Hamburger-Menü in der Kopfzeile [Cloud Manager](#cloud-manager-header) angezeigt werden können.
 1. [Statistiken und Aktionsaufrufe](#statistics) für einen Überblick über Ihre aktuellen Aktivitäten
 1. [**Meine Programme**](#my-programs-section) mit einem Überblick über Ihre gesamten Programme
 1. [Schnell-Links](#quick-links-section) für den einfachen Zugriff auf verwandte Ressourcen
@@ -63,7 +63,7 @@ Die erste ist der Header von Cloud Manager, der bestehen bleibt, wenn Sie in Clo
 1. Der Organisationsselektor zeigt die Organisation an, bei der Sie sich derzeit angemeldet haben (in diesem Beispiel „Foundation Intern“). Tippen oder klicken Sie, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
 1. Durch Tippen oder Klicken auf den Lösungsumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
 1. Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
-1. Dieses Benachrichtigungssymbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md) gekennzeichnet.
+1. Das Benachrichtigungssymbol wird mit der Anzahl der derzeit zugewiesenen unvollständigen [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md) gekennzeichnet.
 1. Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
 
 #### Programmsymbolleiste {#program-toolbar}
@@ -118,7 +118,7 @@ Jedes Programm wird durch eine Karte (oder eine Zeile in einer Tabelle) dargeste
 * Programmname
 * Diensttyp:
    * **Experience Manager Cloud** für AEM as a Cloud Service-Programme
-   * **Experience Manager** für [AMS-Programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** für [AMS-Programme](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/introduction)
 * [Programmtyp](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produktion
@@ -183,7 +183,7 @@ Die Programmübersicht bietet Zugriff auf alle Details eines Cloud Manager-Progr
 
 ### Symbolleisten {#program-overview-toolbar}
 
-Die Symbolleisten für die Programmübersicht sind denen der Konsole [Meine Programme](#my-programs-toolbars) sehr ähnlich. Hier werden nur die Unterschiede veranschaulicht.
+Die Symbolleisten für die Programmübersicht ähneln denen der Konsole [Meine Programme](#my-programs-toolbars). Hier werden nur die Unterschiede veranschaulicht.
 
 #### Cloud Manager-Header {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Verwenden Sie das Hamburger-Menü im [Cloud Manager-Header](#cloud-manager-heade
 
 ### Aktionsaufruf {#cta}
 
-Der Aktionsaufrufs-Abschnitt gibt Ihnen je nach Status Ihres Programms hilfreiche Informationen. Für ein neues Programm werden Ihnen möglicherweise die nächsten Schritte angeboten sowie eine Erinnerung an das Startdatum, [das bei der Programmerstellung festgelegt wurde.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+Der Aktionsaufrufs-Abschnitt gibt Ihnen je nach Status Ihres Programms hilfreiche Informationen. Für ein neues Programm können Sie die nächsten Schritte sowie eine Erinnerung an ein Live-Datum sehen, [festgelegt während der Programmerstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Aktionsaufruf für ein neues Programm](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Bitte lesen Sie das Dokument [Verwaltung von Pipelines](/help/implementing/cloud
 
 ### Leistungskarte {#performance}
 
-Die Karte **Leistung** gibt einen Überblick über das **[CDN-Dashboard.](/help/implementing/cloud-manager/cdn-performance.md)**
+Die Karte **Leistung** bietet einen Überblick über das **[CDN-Dashboard](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Leistungskarte](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
