@@ -5,8 +5,8 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
-workflow-type: ht
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
+workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ Sie können die Details in der [Eigenschaftenleiste](/help/sites-cloud/authoring
 ![Bearbeiten von Medien](assets/ue-edit-media.png)
 
 1. Tippen oder klicken Sie in der Eigenschaftenleiste auf die Vorschau des ausgewählten Bildes.
-1. Das Fenster [Asset-Selektor](/help/assets/asset-selector.md#using-asset-selector) wird geöffnet, in dem Sie ein Asset auswählen können.
+1. Das Fenster [Asset-Selektor](/help/assets/overview-asset-selector.md#using-asset-selector) wird geöffnet, in dem Sie ein Asset auswählen können.
 1. Wählen Sie diese Option, um ein neues Asset auszuwählen.
 1. Wählen Sie die Option **Auswählen** aus, um zur Eigenschaftenleiste zurückzukehren, in der das Asset ersetzt wurde.
 

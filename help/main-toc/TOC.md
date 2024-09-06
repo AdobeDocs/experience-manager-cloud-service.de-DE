@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
+source-wordcount: '5578'
 ht-degree: 98%
 
 ---
@@ -456,7 +456,17 @@ ht-degree: 98%
    + [Überblick über Asset-Microservices](/help/assets/asset-microservices-overview.md)
    + [Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md)
    + Verwalten digitaler Assets {#manage}
-      + [Micro-Front-End-Asset-Selektor](/help/assets/asset-selector.md)
+      + Micro-Frontend-Asset-Auswahl {#asset-selector}
+         + [Asset-Auswahl - Übersicht](/help/assets/overview-asset-selector.md)
+         + Integrationen der Asset-Auswahl {#asset-selector-integration}
+            + [Übersicht über die Asset-Selektor-Integrationen](/help/assets/integrate-asset-selector.md)
+            + [Integrieren der Asset-Auswahl in eine Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integrieren der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
+         + [Beispiele für die Asset-Auswahl](/help/assets/asset-selector-examples.md)
+         + [Anpassung des Asset-Selektors](/help/assets/asset-selector-customization.md)
+         + [Asset-Selektor-Upload](/help/assets/asset-selector-upload.md)
       + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Erneutes Verarbeiten von Assets](/help/assets/reprocessing.md)

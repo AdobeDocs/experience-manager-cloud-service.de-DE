@@ -2,7 +2,8 @@
 title: Dynamic Media mit OpenAPI-Funktionen
 description: Erfahren Sie mehr über Schlüsselkonzepte wie die Verwendung von Dynamic Media mit OpenAPI-Funktionen und die Aktivierung.
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 1%
@@ -19,7 +20,7 @@ Dynamic Media mit OpenAPI-Funktionen stellt DAM in den Mittelpunkt eines agilen 
 
 Dynamic Media mit OpenAPI-Funktionen bietet die folgenden Hauptvorteile:
 
-* **Nahtlose Integrationen**: Dynamic Media mit OpenAPI-Funktionen bietet einen umfassenden Satz von Such- und Bereitstellungs-APIs. Dadurch können Ihre Entwickler die Bereitstellung von Assets einfach in ihre Anwendungen integrieren](/help/assets/integrate-dynamic-media-open-apis.md). [ Zu den Anwendungen gehören Adobe sowie Anwendungen von Drittanbietern. Es bietet eine [Benutzeroberfläche für die Auswahl der Micro Frontend-Assets](/help/assets/asset-selector.md) zum Suchen und Auswählen genehmigter Assets. Der Selektor kann mühelos in jede Anwendung integriert werden, die auf JavaScript-Frameworks wie React JS, Angular JS und Vanilla JS basiert.
+* **Nahtlose Integrationen**: Dynamic Media mit OpenAPI-Funktionen bietet einen umfassenden Satz von Such- und Bereitstellungs-APIs. Dadurch können Ihre Entwickler die Bereitstellung von Assets einfach in ihre Anwendungen integrieren](/help/assets/integrate-dynamic-media-open-apis.md). [ Zu den Anwendungen gehören Adobe sowie Anwendungen von Drittanbietern. Es bietet eine [Benutzeroberfläche für die Auswahl der Micro Frontend-Assets](/help/assets/overview-asset-selector.md) zum Suchen und Auswählen genehmigter Assets. Der Selektor kann mühelos in jede Anwendung integriert werden, die auf JavaScript-Frameworks wie React JS, Angular JS und Vanilla JS basiert.
 
 * **Zentralisierte Verwaltung digitaler Assets**: DAM ist die zentrale Quelle der Wahrheit für alle digitalen Assets. Ihre digitalen Assets werden zentral in AEM Assets verwaltet und über Versand-URLs an verbrauchte Anwendungen bereitgestellt, ohne Asset-Binärdateien zu kopieren.
 
@@ -103,11 +104,11 @@ Nachdem Sie das Support-Ticket übermittelt haben, ermöglicht Adobe Dynamic Med
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Adobe Asset-Auswahl" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Adobe-Micro-Frontend-Asset-Auswahl</strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ Nachdem Sie das Support-Ticket übermittelt haben, ermöglicht Adobe Dynamic Med
 </td>
 
 </table>
-

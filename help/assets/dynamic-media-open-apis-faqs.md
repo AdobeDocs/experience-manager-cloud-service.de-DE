@@ -2,9 +2,10 @@
 title: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 description: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
+source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
@@ -108,7 +109,7 @@ Im Folgenden finden Sie einige der wichtigsten Unterschiede zwischen Dynamic Med
 | [Nur mit Assets as a Cloud Service verfügbar](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Auch mit On-Premise oder Adobe Managed Services mit zusätzlichen Konfigurations- und Bereitstellungsschritten verfügbar. |
 | [Eingeschränkter Satz unterstützter Bild-Modifikatoren wie Breite, Höhe, Drehen, Spiegeln, Qualität und Format](/help/assets/deliver-assets-apis.md) | Rich Set verfügbarer Bild-Modifikatoren |
 | [Eingeschränkte Asset-Bereitstellung basierend auf Benutzern, Rollen, Datum und Uhrzeit](/help/assets/restrict-assets-delivery.md) | In Dynamic Media veröffentlichte Assets stehen allen Benutzern zur Verfügung |
-| Die meisten Entwickler sind mit OpenAPI-Spezifikationen vertraut. Die AEM Assets-Erweiterbarkeit wird durch die Verwendung von [Micro Frontend Asset Selector](/help/assets/asset-selector.md) wirklich einfach. | SOAP-basierte APIs, die bei der Entwicklung von Integrationsanpassungen zu einer Barriere werden. |
+| Die meisten Entwickler sind mit OpenAPI-Spezifikationen vertraut. Die AEM Assets-Erweiterbarkeit wird durch die Verwendung von [Micro-Frontend-Asset-Selektor](/help/assets/overview-asset-selector.md) wirklich einfach. | SOAP-basierte APIs, die bei der Entwicklung von Integrationsanpassungen zu einer Barriere werden. |
 | Alle Änderungen an genehmigten Assets in DAM, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden automatisch in die Bereitstellungs-URLs übernommen. Mit einem kurzen TTL-Wert (Time-to-Live) von 10 Minuten, der für Dynamic Media mit OpenAPI-Funktionen über CDN konfiguriert wurde, werden Aktualisierungen in weniger als 10 Minuten auf allen Authoring- und veröffentlichten Benutzeroberflächen sichtbar. | Empfohlene CDN TTL von 10 Stunden. Sie können den TTL-Wert mithilfe der Aktion zur Cache-Invalidierung überschreiben. |
 | Nur genehmigte Assets sind für die Asset-Bereitstellung an nachgelagerte Anwendungen verfügbar, sodass für markengenehmigte Assets digitale Erlebnisse aktiviert werden. | Alle Aktualisierungen eines von Dynamic Media veröffentlichten Assets werden ohne Genehmigungs-Workflow automatisch veröffentlicht, was in digitalen Erlebnissen nicht für markengenehmigte Assets sorgt. |
 | Nutzungsberichte basieren auf der Anzahl der bereitgestellten Assets. Diese Funktion wird in Kürze verfügbar sein. | Nutzungsberichte sind nicht verfügbar. Diese Funktion wird in Kürze verfügbar sein. |
@@ -135,6 +136,3 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden L
 | Asset-Metadaten auf Remote-DAM sind auch in der AEM Sites-Instanz verfügbar. | Asset-Metadaten auf Remote-DAM sind in der AEM Sites-Instanz nicht verfügbar. |
 
 +++
-
-
-
