@@ -3,7 +3,7 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 86%
@@ -29,9 +29,9 @@ Sie können eine Authentifizierung durchführen, ohne einige der IMS-Eigenschaft
 
 Sie können den Asset-Wähler mit verschiedenen Anwendungen integrieren, z. B.:
 
-* [Integrieren des Asset-Wählers mit einer [!DNL Adobe] -Anwendung](#integrate-asset-selector.md)
-* [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](#integrate-asset-selector-non-adobe.md)
-* [Integrieren in Dynamic Media mit OpenAPI-Funktionen](#integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrieren des Asset-Wählers mit einer [!DNL Adobe] -Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Integrieren in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!MORELIKETHIS]
