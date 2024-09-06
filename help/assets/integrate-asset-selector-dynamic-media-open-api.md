@@ -2,7 +2,8 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 82%
@@ -18,11 +19,11 @@ Mit der Asset-Auswahl können Sie die Integration mit verschiedenen Adobe-Applik
 
 Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler in Dynamic Media mit OpenAPI-Funktionen integrieren:
 
-* [Kommunikationsmethoden](#overview-asset-selector.md#prereqs)
+* [Kommunikationsmethoden](/help/assets/overview-asset-selector.md#prereqs)
 * Für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen benötigen Sie folgende Lizenzen:
    * Assets-Repository (z. B. Experience Manager Assets as a Cloud Service)
    * AEM und Dynamic Media.
-* Nur [genehmigte Assets](#approved-assets.md) zur Verwendung verfügbar, um die Markenkonsistenz sicherzustellen.
+* Nur [genehmigte Assets](/help/assets/approve-assets.md) zur Verwendung verfügbar, um die Markenkonsistenz sicherzustellen.
 
 ## Integrieren in Dynamic Media mit OpenAPI-Funktionen {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ Die Eigenschaften `rootPath` und `path` sollten nicht Teil von Dynamic Media mit
 aemTierType:[1: "delivery"]
 ```
 
-Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie unter der Eigenschaft [Asset-Selektor-Eigenschaften](#asset-selector-properties.md) zur Eigenschaft `aemTierType` .
+Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie unter der Eigenschaft [Asset-Selektor-Eigenschaften](/help/assets/asset-selector-properties.md) zur Eigenschaft `aemTierType` .
 
 
 ### Erstellen einer dynamischen Bereitstellungs-URL aus genehmigten Assets {#create-dynamic-media-url}

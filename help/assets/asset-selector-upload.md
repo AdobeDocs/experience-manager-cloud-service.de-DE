@@ -2,13 +2,13 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # Hochladen von Dateien und Ordnern in die Asset-Auswahl {#upload-files-folders}
 
@@ -28,13 +28,13 @@ Um Assets zur Asset-Auswahl hinzuzufügen, führen Sie die folgenden Schritte au
 
    Sie können auch mithilfe der Miniaturansichten eine Vorschau ausgewählter Bilder anzeigen und auf das X-Symbol klicken, um ein bestimmtes Bild aus der Liste zu entfernen. Das X-Symbol wird nur angezeigt, wenn Sie den Mauszeiger über den Bildnamen oder die Bildgröße bewegen. Sie können auch auf **[!UICONTROL Alle entfernen]** klicken, um alle Elemente aus Ihrer Upload-Liste zu löschen.
 
-1. Um den Upload-Prozess abzuschließen, klicken Sie auf **[!UICONTROL Hochladen]**. Ihre hochgeladenen Assets werden angezeigt. Siehe [Grundlegender Upload](asset-selector-customization.md#basic-upload) für den konfigurierbaren Code.
+1. Um den Upload-Prozess abzuschließen, klicken Sie auf **[!UICONTROL Hochladen]**. Ihre hochgeladenen Assets werden angezeigt. Siehe [Grundlegender Upload](/help/assets/asset-selector-customization.md#basic-upload) für den konfigurierbaren Code.
 
 ## Hochladen von Assets mit Metadaten {#upload-assets-with-metadata}
 
-Sie können den Assets Metadaten hinzufügen, während Sie sie sofort in Ihre Anwendung hochladen. Metadaten umfassen verschiedene Felder wie Geschäftsbetreffzeile, Produktdetails, Kampagne usw. Dazu wird die Eigenschaft `metadataSchema` verwendet. Wechseln Sie zu [Eigenschaften des Asset-Wählers](asset-selector-properties.md) , um mehr über die Eigenschaft `metadataSchema` zu erfahren.
+Sie können den Assets Metadaten hinzufügen, während Sie sie sofort in Ihre Anwendung hochladen. Metadaten umfassen verschiedene Felder wie Geschäftsbetreffzeile, Produktdetails, Kampagne usw. Dazu wird die Eigenschaft `metadataSchema` verwendet. Wechseln Sie zu [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md) , um mehr über die Eigenschaft `metadataSchema` zu erfahren.
 
-Siehe [Upload mit Metadaten](#upload-with-metadata) für das für die Konfiguration erforderliche Codefragment.
+Siehe [Upload mit Metadaten](/help/assets/asset-selector-customization.md#upload-with-metadata) für das für die Konfiguration erforderliche Codefragment.
 
 ![ Hochladen von Assets mit Metadaten](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ Siehe [Upload mit Metadaten](#upload-with-metadata) für das für die Konfigurat
 
 ## Benutzerdefinierter Upload {#customize-upload}
 
-Mit der Asset-Auswahl können Sie ein benutzerdefiniertes Upload-Formular hinzufügen. Es stehen verschiedene Anpassungen zur Verfügung. Beispielsweise können Sie mit der Eigenschaft [hideUploadButton](#asset-selector-properties.md) die Upload-Schaltfläche ausblenden, die standardmäßig in der Anwendung angezeigt wird. Stattdessen können Sie es so anpassen, dass es gemäß den Anforderungen außerhalb der MFE-Anwendung gerendert wird. Siehe [angepasster Upload](#asset-selector-customization.md#customized-upload) für die Konfiguration.
+Mit der Asset-Auswahl können Sie ein benutzerdefiniertes Upload-Formular hinzufügen. Es stehen verschiedene Anpassungen zur Verfügung. Beispielsweise können Sie mit der Eigenschaft [hideUploadButton](/help/assets/asset-selector-properties.md) die Upload-Schaltfläche ausblenden, die standardmäßig in der Anwendung angezeigt wird. Stattdessen können Sie es so anpassen, dass es gemäß den Anforderungen außerhalb der MFE-Anwendung gerendert wird. Siehe [angepasster Upload](/help/assets/asset-selector-customization.md#customized-upload) für die Konfiguration.
 
 ![ Benutzerdefinierter Upload](assets/customized-upload.png)
-

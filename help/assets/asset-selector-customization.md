@@ -2,13 +2,13 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Verwenden Sie Funktionen zum Anpassen der Asset-Auswahl in Ihrer Anwendung.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 86%
 
 ---
-
 
 # Anpassung des Asset-Selektors {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ Mit der Asset-Auswahl können Sie verschiedene Komponenten gemäß Voreinstellun
 * [Anpassen abgelaufener Assets](#customize-expired-assets)
 * [Kontextaufruffilter](#contextual-invocation-filter)
 
-Sie müssen die Voraussetzungen in der Datei `index.html` oder einer ähnlichen Datei in Ihrer Anwendungsimplementierung definieren, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets]-Repository zu definieren. Danach können Sie Code-Fragmente gemäß Ihren Anforderungen hinzufügen.
+Sie müssen die Voraussetzungen in der Datei **index.html** oder einer ähnlichen Datei in Ihrer Anwendungsimplementierung definieren, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets] -Repository zu definieren. Danach können Sie Code-Fragmente gemäß Ihren Anforderungen hinzufügen.
 
 ## Anpassen des Filter-Bedienfelds {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 | *tiff:imageLength* | Number (Zahl) | Die Höhe eines Assets. |
 | *computedMetadata* | `Record<string, any>` | Ein Objekt, das einen Behälter für alle Metadaten des Assets aller Art (Repository, Applikation oder eingebettete Metadaten) darstellt. |
 | *_links* | `Record<string, any>` | Hypermedia-Links für das verknüpfte Asset. Enthält Links für Ressourcen wie Metadaten und Ausgabedarstellungen. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array von Objekten, das Informationen zu Ausgabedarstellungen des Assets enthält. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | Zeichenfolge | Der URI zur Ausgabedarstellung. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | Zeichenfolge | Der MIME-Typ der Ausgabedarstellung. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | Number (Zahl) | Die Größe der Ausgabedarstellung in Byte. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | Number (Zahl) | Die Breite der Ausgabedarstellung. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | Number (Zahl) | Die Höhe der Ausgabedarstellung. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | Array von Objekten, das Informationen zu Ausgabedarstellungen des Assets enthält. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | Zeichenfolge | Der URI zur Ausgabedarstellung. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | Zeichenfolge | Der MIME-Typ der Ausgabedarstellung. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | Number (Zahl) | Die Größe der Ausgabedarstellung in Byte. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | Number (Zahl) | Die Breite der Ausgabedarstellung. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | Number (Zahl) | Die Höhe der Ausgabedarstellung. |
 
 ### Umgang mit der Auswahl von Assets mithilfe des Objektschemas {#handling-selection}
 

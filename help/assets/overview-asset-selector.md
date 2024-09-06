@@ -2,7 +2,8 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 70%
@@ -19,7 +20,7 @@ Die Micro-Front-End-Benutzeroberfläche wird über das Asset-Selektor-Paket in I
 
 Der Asset-Selektor bietet viele Vorteile, z. B.:
 
-* Einfache Integration mit einer der Anwendungen [Adobe](#integrate-asset-selector-adobe-app.md) oder [non-Adobe](#integrate-asset-selector.md) unter Verwendung der Vanilla JavaScript-Bibliothek.
+* Einfache Integration mit einer der Anwendungen [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) oder [non-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) unter Verwendung der Vanilla JavaScript-Bibliothek.
 * Einfach zu verwalten, da Aktualisierungen des Assets-Wähler-Pakets automatisch für den Asset-Selektor bereitgestellt werden, der für Ihre Applikation verfügbar ist. Es sind keine Aktualisierungen innerhalb Ihrer Applikation erforderlich, um die neuesten Änderungen zu laden.
 * Einfachere Anpassung, da Eigenschaften verfügbar sind, die die Anzeige des Asset-Selektors in Ihrer Applikation steuern.
 * Volltextsuche, vordefinierte und benutzerdefinierte Filter, um schnell zu Assets zu navigieren, die für das Authoring-Erlebnis verwendet werden können.
@@ -51,8 +52,8 @@ Verwenden Sie die oben genannten Voraussetzungen, wenn Sie den IMS-Authentifizie
 
 **Mehr anzeigen**
 
-* [Integrieren der Asset-Auswahl in eine Adobe-App](#integrate-asset-selector-adobe-app.md)
-* [Integrieren der Asset-Auswahl in eine Nicht-Adobe-App](#integrate-asset-selector-non-adobe-app.md)
+* [Integrieren der Asset-Auswahl in eine Adobe-App](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrieren der Asset-Auswahl in eine Nicht-Adobe-App](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integrieren von APIs zum Öffnen dynamischer Medien in Asset Selector](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ Der Asset-Selektor bietet außerdem vordefinierte Filteroptionen, mit denen Sie 
 
 * **[!UICONTROL Status]:** enthält den aktuellen Status des Assets, entweder `all`, `approved`, `rejected` oder `no status`.
 * **[!UICONTROL Dateityp]:** enthält `folder`, `file`, `images`, `documents` oder `video`.
-* **[!UICONTROL Ablaufstatus]:** erwähnt die Assets basierend auf ihrer Gültigkeitsdauer. Sie können entweder das Kontrollkästchen `[!UICONTROL Expired]` aktivieren, um abgelaufene Assets zu filtern, oder `[!UICONTROL Expiration Duration]` eines Assets so einstellen, dass Assets basierend auf ihrer Ablaufdauer angezeigt werden. Wenn ein Asset bereits abgelaufen ist oder kurz vor seinem Ablauf steht, wird dasselbe mit einem Abzeichen angezeigt. Darüber hinaus können Sie steuern, ob Sie die Verwendung (oder das Ziehen per Drag-and-Drop) eines abgelaufenen Assets zulassen möchten. Weitere Informationen zum [Anpassen abgelaufener Assets](#asset-selector-customization.md#customize-expired-assets). Standardmäßig wird für Assets, die in den nächsten 30 Tagen ablaufen, das Zeichen &quot;**Bald ablaufen**&quot;angezeigt. Sie können die Gültigkeitsdauer jedoch mit der Eigenschaft `expirationDate` konfigurieren.
+* **[!UICONTROL Ablaufstatus]:** erwähnt die Assets basierend auf ihrer Gültigkeitsdauer. Sie können entweder das Kontrollkästchen `[!UICONTROL Expired]` aktivieren, um abgelaufene Assets zu filtern, oder `[!UICONTROL Expiration Duration]` eines Assets so einstellen, dass Assets basierend auf ihrer Ablaufdauer angezeigt werden. Wenn ein Asset bereits abgelaufen ist oder kurz vor seinem Ablauf steht, wird dasselbe mit einem Abzeichen angezeigt. Darüber hinaus können Sie steuern, ob Sie die Verwendung (oder das Ziehen per Drag-and-Drop) eines abgelaufenen Assets zulassen möchten. Weitere Informationen zum [Anpassen abgelaufener Assets](/help/assets/asset-selector-customization.md#customize-expired-assets). Standardmäßig wird für Assets, die in den nächsten 30 Tagen ablaufen, das Zeichen &quot;**Bald ablaufen**&quot;angezeigt. Sie können die Gültigkeitsdauer jedoch mit der Eigenschaft `expirationDate` konfigurieren.
 
   >[!TIP]
   >

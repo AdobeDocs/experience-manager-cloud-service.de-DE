@@ -2,13 +2,13 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 88%
 
 ---
-
 
 # Integrieren der Asset-Auswahl mit der Adobe-Anwendung {#integrate-asset-selector-with-adobe-app}
 
@@ -18,7 +18,7 @@ Mit der Asset-Auswahl können Sie die Integration mit verschiedenen Adobe-Applik
 
 Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler mit einer [!DNL Adobe]-Anwendung integrieren:
 
-* [Kommunikationsmethoden](#overview-asset-selector.md#prereqs)
+* [Kommunikationsmethoden](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -27,7 +27,7 @@ Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler mit eine
 
 Das folgende Beispiel zeigt die Verwendung des Asset-Wählers bei Ausführung einer [!DNL Adobe]-Anwendung unter Unified Shell oder wenn Sie bereits `imsToken` für die Authentifizierung generiert haben.
 
-Fügen Sie das Asset-Wähler-Paket mit dem `script`-Tag in Ihren Code ein, wie in _Zeilen 6 bis 15_ des folgenden Beispiels zu sehen. Sobald das Skript geladen ist, kann die globale Variable `PureJSSelectors` verwendet werden. Definieren Sie die [Eigenschaften](#asset-selector-properties.md) des Asset-Wählers wie in _Zeilen 16 bis 23_ zu sehen. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung in der Adobe-Anwendung erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Um den Asset-Wähler zu rendern, rufen Sie die `renderAssetSelector`-Funktion wie in _Zeile 17_ erwähnt auf. Der Asset-Wähler wird im Container-Element `<div>` angezeigt, wie in _Zeilen 21 und 22_ zu sehen.
+Fügen Sie das Asset-Wähler-Paket mit dem `script`-Tag in Ihren Code ein, wie in _Zeilen 6 bis 15_ des folgenden Beispiels zu sehen. Sobald das Skript geladen ist, kann die globale Variable `PureJSSelectors` verwendet werden. Definieren Sie die [Eigenschaften](/help/assets/asset-selector-properties.md) des Asset-Wählers wie in _Zeilen 16 bis 23_ zu sehen. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung in der Adobe-Anwendung erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Um den Asset-Wähler zu rendern, rufen Sie die `renderAssetSelector`-Funktion wie in _Zeile 17_ erwähnt auf. Der Asset-Wähler wird im Container-Element `<div>` angezeigt, wie in _Zeilen 21 und 22_ zu sehen.
 
 Wenn Sie diese Schritte befolgen, können Sie den Asset-Wähler mit Ihrer [!DNL Adobe]-Anwendung verwenden.
 
@@ -153,4 +153,3 @@ onErrorReceived: (type, msg) => {
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
 >* [Integrieren der APIs zum Öffnen dynamischer Medien in der Asset-Auswahl](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [Anpassung der Asset-Auswahl](/help/assets/asset-selector-customization.md)
-

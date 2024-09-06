@@ -2,13 +2,13 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 77%
 
 ---
-
 
 # Integration mit einer Nicht-Adobe-Anwendung {#integrate-asset-selector-non-adobe-app}
 
@@ -18,7 +18,7 @@ Mit der Asset-Auswahl können Sie die Integration mit verschiedenen Anwendungen,
 
 Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler mit einer Nicht-Adobe-Anwendung integrieren:
 
-* [Kommunikationsmethoden](#overview-asset-selector.md#prereqs)
+* [Kommunikationsmethoden](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
 * imsScope
 * redirectURL
