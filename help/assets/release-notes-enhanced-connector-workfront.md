@@ -4,10 +4,10 @@ description: Versionshinweise für  [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 100%
+source-wordcount: '1678'
+ht-degree: 98%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront for Experience Manager enhanced connector]
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.19 von [!DNL Workfront for Experience Manager enhanced connector] ist der 12. April 2024.
+Das Veröffentlichungsdatum für die neueste Version 1.9.20 von [!DNL Workfront for Experience Manager enhanced connector] ist der Samstag, 6. September 2024.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgende Fehlerbehebung:
 
-* Das Nichtschließen von HTTP-Clients führte zu Speicherplatzproblemen.
+* Der MIME-Typ geht beim Hochladen und Erstellen einer neuen Version eines vorhandenen Assets verloren.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.19](/help/assets/workfront-connector-install.md) von [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt das [Upgrade auf die neueste Version 1.9.20](/help/assets/workfront-connector-install.md) von [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -38,6 +38,11 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** nicht das Ziel in Experience Manager auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt über die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**. Die Option **[!UICONTROL Senden an]** funktioniert korrekt für die Dropdown-Liste **[!UICONTROL Mehr]** und die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**, die in dem neuen Workfront-Erlebnis verfügbar sind.
 
 ## Frühere Versionen {#previous-releases}
+
+### Version April 2024 {#april-2024-release}
+
+* Das Nichtschließen von HTTP-Clients führte zu Speicherplatzproblemen.
+
 
 ### Version März 2024 {#march-2024-release}
 
@@ -68,7 +73,7 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 * Keine Anfragezeitverarbeitung für kritische Abläufe in verknüpften Ordnern, Dokument- und Notizenaktualisierungen.
 
-### Version November 2023 {#november-2023-release}
+### Version November 2023 {#nov-2023-release}
 
 * Beim Anzeigen der Liste der AEM-Ordner dauert das Laden des Dialogfelds mehr als eine Minute.
 * Autorisierte [!DNL Workfront]-Benutzende erhalten durchweg Fehlerprotokolle zu Authentifizierungsfehlern.
