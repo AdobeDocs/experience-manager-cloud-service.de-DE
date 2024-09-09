@@ -3,10 +3,10 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Beispiele zur Verwendung des Asset-Selektors zur Anpassung gemäß Anforderungen.
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 82%
+source-wordcount: '257'
+ht-degree: 81%
 
 ---
 
@@ -52,6 +52,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 >[!MORELIKETHIS]
 >
->* [Anpassung der Asset-Auswahl](/help/assets/asset-selector-customization.md)
+>* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
+>* [Asset-Selektor-Upload](/help/assets/asset-selector-upload.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der APIs zum Öffnen dynamischer Medien in der Asset-Auswahl](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrieren der Asset-Auswahl in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

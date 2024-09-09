@@ -3,9 +3,9 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,9 @@ Siehe [Upload mit Metadaten](/help/assets/asset-selector-customization.md#upload
 Mit der Asset-Auswahl können Sie ein benutzerdefiniertes Upload-Formular hinzufügen. Es stehen verschiedene Anpassungen zur Verfügung. Beispielsweise können Sie mit der Eigenschaft [hideUploadButton](/help/assets/asset-selector-properties.md) die Upload-Schaltfläche ausblenden, die standardmäßig in der Anwendung angezeigt wird. Stattdessen können Sie es so anpassen, dass es gemäß den Anforderungen außerhalb der MFE-Anwendung gerendert wird. Siehe [angepasster Upload](/help/assets/asset-selector-customization.md#customized-upload) für die Konfiguration.
 
 ![ Benutzerdefinierter Upload](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [Beispiele für die Asset-Auswahl](/help/assets/asset-selector-examples.md)
+>* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)

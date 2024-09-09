@@ -3,10 +3,10 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 70%
+source-wordcount: '1295'
+ht-degree: 69%
 
 ---
 
@@ -219,13 +219,19 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
         <em>Konfigurieren und passen Sie die verschiedenen Komponenten der Asset-Auswahl basierend auf Ihrer Benutzerfreundlichkeit an. </em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Asset-Auswahl-Upload-Grafik"><br/>
+        <a href="asset-selector-upload.md">Anpassungen der Asset-Auswahl</a>
+        <p>
+        <em>Erfahren Sie, wie Sie Dateien oder Ordner aus Ihrem lokalen Dateisystem oder aus einem Drittanbietersystem in die Asset-Auswahl hochladen können. </em>
+        </p>
+    </td>
 </tr>
 </table>
 
 >[!MORELIKETHIS]
 >
->* [Anpassung der Asset-Auswahl](/help/assets/asset-selector-customization.md)
+>* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
 >* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der APIs zum Öffnen dynamischer Medien in der Asset-Auswahl](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrieren der Asset-Auswahl in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

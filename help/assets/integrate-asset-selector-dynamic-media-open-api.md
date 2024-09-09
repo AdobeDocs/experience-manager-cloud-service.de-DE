@@ -3,7 +3,7 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 82%
@@ -174,4 +174,4 @@ Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie 
 >
 >* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Anpassung der Asset-Auswahl](/help/assets/asset-selector-customization.md)
+>* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
