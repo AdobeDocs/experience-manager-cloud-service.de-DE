@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3928'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -255,7 +255,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | MALFORMED-DATA | Fehlerhafte Daten im Anfrageinhalt | Ein POST-, PUT- oder PATCH-Anfrageinhalt, der gemäß der Anfragekopfzeile „Inhaltstyp“ fehlerhaft ist. Wenn beispielsweise eine Anfragekopfzeile „Content-Type: application/x-www-form-urlencoded“ angegeben ist und ein POST-Hauptteil vorliegt, der JSON ist. Dies ist häufig ein Programmierfehler, eine automatisierte oder schädliche Anfrage. Erfordert Agent 3.2 oder höher. |
 | SANS | Schädlicher IP-Traffic | [SANS Internet Storm Center](https://isc.sans.edu/): Liste der gemeldeten IP-Adressen, die in Verbindung mit bösartigen Aktivitäten stehen. |
 | NO-CONTENT-TYPE | Fehlende Anfragekopfzeile „Content-Type“ | Eine Anfrage vom Typ POST, PUT oder PATCH, die keine Anfragekopfzeile vom Typ „Content-Type“ enthält. Standardmäßig sollten Anwendungs-Server in diesem Fall von „Content-Type: text/plain; charset=us-ascii“ ausgehen. Bei vielen automatisierten und böswilligen Anfragen fehlt möglicherweise „Content-Type“. |
-| NOUA | Kein Benutzeragent | Gibt an, dass eine Anforderung keinen &quot;User-Agent&quot;-Header enthält oder der Header-Wert nicht festgelegt wurde. |
+| NOUA | Kein Benutzeragent | Gibt an, dass eine Anforderung keine „Benutzeragent“-Kopfzeile enthält bzw. dass der Kopfzeilenwert nicht festgelegt wurde. |
 | TORNODE | Tor-Traffic | Tor ist eine Software, die die Identität einer Benutzerin oder eines Benutzers verschleiert. Eine Spitze im Tor-Traffic kann darauf hinweisen, dass eine angreifende Person versucht, ihren Standort zu verschleiern. |
 | NULLBYTE | Null-Byte | Null-Bytes werden normalerweise nicht in einer Anfrage angezeigt und weisen darauf hin, dass die Anfrage falsch formatiert ist und möglicherweise schädlich ist. |
 | PRIVATEFILE | Private Dateien | Private Dateien sind vertraulich, wie z. B. eine Apache `.htaccess`-Datei oder eine Konfigurationsdatei, der vertrauliche Informationen entnommen werden könnten. |

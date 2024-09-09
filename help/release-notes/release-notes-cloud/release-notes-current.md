@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.8.0) ist der Freitag, 29. August 2024. Die nächste Version mit neuen Funktionen (2024.9.0) ist für den Freitag, 26. September 2024 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.8.0) ist der 29. August 2024. Die nächste Version mit neuen Funktionen (2024.9.0) ist für den 26. September 2024 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -55,8 +55,8 @@ Die vorhandene Sites-Funktion [Vererbung](/help/sites-cloud/authoring/universal-
 
 Darüber hinaus werden jetzt die folgenden Seitenverwaltungsfunktionen unterstützt:
 
-* [AEM Tags](/help/sites-cloud/authoring/sites-console/tags.md) kann als [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) in Edge Delivery Services exportiert werden.
-* [Vorlagen](/help/edge/wysiwyg-authoring/templates.md) für Edge Delivery Services werden bald verfügbar sein!
+* [AEM-Tags](/help/sites-cloud/authoring/sites-console/tags.md) können als [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) nach Edge Delivery Services exportiert werden.
+* [Vorlagen](/help/edge/wysiwyg-authoring/templates.md) für Edge Delivery Services werden bald verfügbar sein.
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
@@ -71,60 +71,60 @@ Nutzen Sie GenAI über die neue Funktion [Varianten generieren](/help/generative
 
 **Aktualisierte Adobe Firefly-Bildgenerierung**
 
-Assets as a Cloud Service verwendet jetzt das neueste Widget von Firefly, mit dem Sie Bilder in verschiedenen Stilen mithilfe von Adobe Firefly generieren können. Mit dem integrierten Firefly-Editor können Sie mithilfe des integrierten-Editors Stil, Zusammensetzung, Dimensionen und mehr schnell die benötigten Assets erstellen und speichern, um sie direkt im AEM Assets-Repository zu verwenden.
+Assets as a Cloud Service verwendet jetzt das neueste Widget von Firefly, mit dem Sie Bilder in verschiedenen Stilen mithilfe von Adobe Firefly generieren können. Indem Sie mit dem integrierten Firefly-Editor Stil, Komposition, Dimensionen und mehr definieren, können Sie schnell die benötigten Assets erstellen und speichern und sie direkt im AEM Assets-Repository verwenden.
 
 ![Adobe Firefly-Bildgenerierung](/help/assets/assets/bugatti-type-57.png)
 
-**Unterstützung der PSB-Datei**
+**Unterstützung von PSB-Dateien**
 
-Assets as a Cloud Service unterstützt jetzt neben der bestehenden PSD-Dateiunterstützung auch große Photoshop-Dokumente (PSB-Dateien).
+Assets as a Cloud Service unterstützt jetzt neben der bestehenden Unterstützung für PSD-Dateien auch große Photoshop-Dokumente (PSB-Dateien).
 
 ### Neue Verbesserungen in Content Hub {#content-hub-new-enhancements}
 
-* Besserer Umgang mit langen Dateinamen, einfache Erweiterung des kompletten Namens über QuickInfo.
-* Verbesserte Miniaturansichten, um das Seitenverhältnis des Inhalts besser anzupassen und einen größeren Inhaltsbereich abzudecken.
-* Benutzerdefiniertes Miniaturbild-Erlebnis aus AEM unterstützt mit Content Hub.
+* Bessere Handhabung langer Dateinamen, einfaches Anzeigen des kompletten Namens über eine QuickInfo.
+* Verbesserte Miniaturansichten, die nun das Seitenverhältnis des Inhalts besser anpassen und einen größeren Inhaltsbereich abdecken.
+* Benutzerdefiniertes Miniaturbild-Erlebnis aus AEM mit Content Hub unterstützt.
 * Verbesserungen bei der Farbsuche.
-* Verbesserungen bei Konfigurationen sparen Erlebnisse.
-* Die Informationsseite von Sammlungen wurde verbessert, um den Namen des Erstellers widerzuspiegeln.
+* Verbesserungen bei der Konfiguration von Suchvorgängen.
+* Die Informationsseite von Sammlungen wurde verbessert, sodass sie den Namen der Erstellenden widerspiegelt.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Neue Vorab-Funktionen in AEM Forms {#forms-new-prerelease-features}
+### Neue Vorabveröffentlichungsfunktionen in AEM Forms {#forms-new-prerelease-features}
 
-#### Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Forms
+#### Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare
 
-Benutzer können jetzt von einer Funktion zum automatischen Speichern profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzer nicht von Anfang an mit dem Ausfüllen von Formularen beginnen müssen.
+Benutzende profitieren jetzt von einer Funktion zum automatischen Speichern, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
 
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
-Das AEM Forms Early Access Program bietet Ihnen eine einzigartige Möglichkeit, exklusiven Zugriff auf innovative Lösungen zu erhalten und ihre Entwicklung zu gestalten.
+Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit, einen exklusiven Zugang zu den aktuellen Innovationen zu erhalten und ihre Entwicklung mitzugestalten.
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
-#### AEM Forms AI-Assistent
+#### AEM Forms-KI-Assistent
 
-Generative KI für adaptive Forms bietet eine völlig neue Leistungsstärke und erleichtert Ihre Formularentwicklungsprozesse. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
+Die generative KI für adaptive Formulare bietet eine völlig neue Leistungsstärke und erleichtert Ihre Formularentwicklungsprozesse. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
 
-![Generativer KI-Assistent, adaptiver Forms](/help/forms/assets/generative-ai-assistant.png)
+![Generativer KI-Assistent, adaptive Formulare](/help/forms/assets/generative-ai-assistant.png)
 
 Die folgenden generativen KI-Funktionen stehen zur Verfügung:
 
-* **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre AEM formularbezogenen Fragen. Die KI-Assistenzkraft fungiert als Ihre eigene persönliche Wissensbasis und bietet aufschlussreiche Anleitungen und Empfehlungen direkt innerhalb der Plattform.
+* **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre Fragen zu AEM Forms. Der KI-Assistent fungiert als Ihre persönliche Wissensdatenbank und bietet hilfreiche Anleitungen und Empfehlungen direkt innerhalb der Plattform.
 
-* **Adaptive Formularerstellung**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Eingabeaufforderungen. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, die Abbrüche reduzieren und das Erlebnis personalisieren.
+* **Erstellung von adaptiven Formularen**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Prompts. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, durch die Abbrüche reduziert werden und das Erlebnis personalisiert wird.
 
 * **Bereichsgenerierung für Forms**: Generieren Sie Formularabschnitte, die auf bestimmte Datenerfassungsanforderungen zugeschnitten sind. Generieren Sie beispielsweise Abschnitte zum Erfassen von Zahlungsinformationen, Kundenpräferenzen oder Reisedetails.
 
-* **Ändern von Formularlayouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Eingabeaufforderungen. Probieren Sie verschiedene Layouts wie Assistenten oder Registerkartenansichten aus, um die perfekte Anpassung für Ihr Formular zu finden. Verwenden Sie generative KI-Eingabeaufforderungen, um Ihre Formulare für eine schnelle Reaktion auf Mobilgeräte zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzern gern genutzt werden.
+* **Ändern von Formular-Layouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Prompts. Probieren Sie verschiedene Layouts wie Assistenten- oder Registerkartenansichten aus, um Ihr Formular optimal zu gestalten. Verwenden Sie generative KI-Prompts, um die Reaktivität Ihrer Formulare auf Mobilgeräten zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzenden gern verwendet werden.
 
-* **Konfigurieren der Sendeaktion**: Verwenden Sie generative KI-Aufforderungen, um mühelos eine Sendeaktion für Ihr Formular zu konfigurieren. Wählen Sie aus einer Bibliothek vordefinierter Sendeaktionen oder aus einer Liste von benutzerdefinierten Sendeaktionen, die von Ihrem eigenen Entwicklungsteam erstellt und bereitgestellt werden.
+* **Konfigurieren der Übermittlungsaktion**: Verwenden Sie generative KI-Prompts, um mühelos eine Übermittlungsaktion für Ihr Formular zu konfigurieren. Treffen Sie Ihre Wahl aus einer Bibliothek vordefinierter Übermittlungsaktionen oder aus einer Liste von benutzerdefinierten Übermittlungsaktionen, die von Ihrem eigenen Entwicklungs-Team erstellt und bereitgestellt wurden.
 
 >[!IMPORTANT]
 >
-> Wenn Sie Interesse haben, dem Early Access Program für Innovationen beizutreten, senden Sie einfach eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit der Liste der Funktionen, die Sie interessieren.
+> Wenn Sie Interesse haben, dem Early-Access-Programm für Innovationen beizutreten, senden Sie einfach von Ihrer offiziellen Adresse aus eine E-Mail mit der Liste der Funktionen, die Sie interessieren, an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
