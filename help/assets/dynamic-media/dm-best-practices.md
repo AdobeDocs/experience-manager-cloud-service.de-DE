@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 100%
@@ -411,3 +411,5 @@ Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/
 Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kundinnen und Kunden zwischen. Wenn an diesen Assets Aktualisierungen vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Indem der CDN-Cache bereinigt oder ungültig gemacht wird, können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist. Je nach Anwendungsfall können Sie die Einstellungen für den TTL-Wert (Time to Live) des CDN entsprechend aktualisieren.
 
 Möchten Sie mehr erfahren?  Navigieren Sie zu [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+
+{{see-also-dm}}

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 78%
+source-wordcount: '993'
+ht-degree: 72%
 
 ---
 # Snippets {#snippets}
@@ -161,3 +161,22 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!TIP]
 >
 >Sind Sie neu in Dynamic Media? Einen schnellen Überblick über Dynamic Media auf hoher Ebene finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+
+## Siehe auch für Dynamic Media {#see-also-dm}
+
+>[!NOTE]
+>
+>* Sind Sie neu in Dynamic Media? Einen schnellen Überblick über Dynamic Media auf hoher Ebene finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>
+>* Befolgen Sie [Dynamic Media Best Practices](/help/assets/dynamic-media/dm-best-practices.md) , um den größtmöglichen Nutzen zu erzielen.
+>
+>* Probieren Sie die Dynamic Media-Bildfunktionen mit dem [Snapshot-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) aus.
+>
+>* Stellen Sie eine reibungslose Videowiedergabe mit [adaptivem Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash) sicher.
+>
+>* Automatisches Zuschneiden von [Bildern mit smartem Zuschneiden](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>
+>* Automatisches Zuschneiden von [Videos mit smartem Zuschneiden](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)
+>
+>* Bereitstellen von [interaktiven 3D-basierten Erlebnissen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Andere [Dynamic Media-Ressourcenbank](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
