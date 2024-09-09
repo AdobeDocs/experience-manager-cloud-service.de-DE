@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1503'
 ht-degree: 6%
 
 ---
@@ -75,7 +75,7 @@ Wenn Sie mit AEM as a Cloud Service Sites Edge Delivery Services-Lizenzen beauft
 
 Nachdem Sie einem Produktionsprogramm Edge Delivery Services hinzugefügt haben, wird Ihre Edge Delivery Services-Lizenz darauf angewendet.
 
-Auf der Übersichtsseite wird eine neue, anklickbare Registerkarte mit dem Namen **Edge Delivery** angezeigt. Durch Klicken auf die Registerkarte wird eine Tabelle mit den einzelnen Edge Delivery-Sites angezeigt, die Sie hinzugefügt haben. Im linken Navigationsfenster wird unter der Gruppierung **Dienste** eine Menüoption mit dem Namen **Edge Delivery Sites** angezeigt.
+Auf der Übersichtsseite wird eine klickbare Registerkarte mit dem Namen **Edge Delivery** angezeigt. Durch Klicken auf die Registerkarte wird eine Tabelle mit den einzelnen Edge Delivery-Sites angezeigt, die Sie hinzugefügt haben. Beachten Sie im linken Navigationsbereich unter der Gruppierung **Dienste** die Menüoption namens **Edge Delivery Sites**.
 
 ![Übersichtsseite mit Edge Delivery Sites im linken Navigationsbereich und der Registerkarte Edge Delivery rechts neben der Registerkarte Publish-Bereitstellung](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -127,7 +127,7 @@ Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben
 | 5 | SSL-Zertifikat hinzufügen | Siehe [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | CDN Ihrer Edge Delivery-Site konfigurieren | Siehe [Hinzufügen einer CDN-Konfiguration](#add-cdn). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 Minuten, 13 Sekunden)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Hinzufügen einer CDN-Konfiguration zu Ihrer Edge Delivery-Site {#add-cdn}
 

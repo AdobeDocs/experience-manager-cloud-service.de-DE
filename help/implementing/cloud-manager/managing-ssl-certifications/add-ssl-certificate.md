@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: 3aec9d13e2eb4bbc9a972e28195a6f43e92c1842
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '968'
 ht-degree: 39%
 
 ---
@@ -44,12 +44,12 @@ Ein Benutzer muss Mitglied der Rolle **Business Owner** oder **Deployment Manage
 
 1. Klicken Sie in der rechten oberen Ecke der Seite auf **SSL-Zertifikat hinzufügen**.
 
-1. Führen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** je nach Anwendungsfall einen der folgenden Schritte aus:
+1. Führen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** basierend auf [Ihrem speziellen Anwendungsfall](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) einen der folgenden Schritte aus:
 
-   | Anwendungsfall | Schritte |
-   | --- | --- |
-   | **Hinzufügen eines von Adobe verwalteten Zertifikats (DV)** | **Hinzufügen eines von Adobe verwalteten Zertifikats (DV):**<br> a. Wählen Sie den Zertifikatstyp **Adobe managed (DV)** aus.<br>![Fügen Sie ein DV-Zertifikat hinzu](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Wählen Sie in der Dropdownliste **Domänen auswählen** eine oder mehrere Domänen aus, die dem DV-Zertifikat zugeordnet werden sollen.<br>Keine Domänen zur Auswahl? Ist dies der Fall, müssen Sie eine benutzerdefinierte Domäne hinzufügen. Siehe [Hinzufügen einer benutzerdefinierten Domäne](#add-custom-domain). Wenn Sie mit dem Hinzufügen eines benutzerdefinierten Domänennamens fertig sind, kehren Sie zu diesem Thema zurück und beginnen Sie erneut mit Schritt 1.<br>d. Fahren Sie mit Schritt 7 fort. |
-   | **Hinzufügen eines kundenverwalteten Zertifikats (OV/EV)** | **Hinzufügen eines kundenverwalteten Zertifikats (OV/EV):**<br> a. Wählen Sie den Zertifikatstyp &quot;**Vom Kunden verwaltet (OV/EV)**&quot;.<br>b. Geben Sie im Feld **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dieses Feld dient nur zu Informationszwecken und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.<br>c. Fügen Sie in die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** die erforderlichen Werte in die entsprechenden Felder ein.<br>![Dialogfeld &quot;SSL-Zertifikat hinzufügen&quot;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Alle erkannten Fehler in Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zur Fehlerbehebung bei häufigen Fehlern finden Sie unter [Zertifikatfehler](#certificate-errors) .<br>d. Fahren Sie mit Schritt 7 fort. |
+   | | Anwendungsfall | Schritte |
+   | --- | --- | --- |
+   | 1 | **Hinzufügen eines von Adobe verwalteten Zertifikats (DV)** | **Hinzufügen eines von Adobe verwalteten Zertifikats (DV):**<br> a. Wählen Sie den Zertifikatstyp **Adobe managed (DV)** aus.<br>![Fügen Sie ein DV-Zertifikat hinzu](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Wählen Sie in der Dropdownliste **Domänen auswählen** eine oder mehrere Domänen aus, die dem DV-Zertifikat zugeordnet werden sollen.<br>Keine Domänen zur Auswahl? Ist dies der Fall, müssen Sie eine benutzerdefinierte Domäne hinzufügen. Siehe [Hinzufügen einer benutzerdefinierten Domäne](#add-custom-domain). Wenn Sie mit dem Hinzufügen eines benutzerdefinierten Domänennamens fertig sind, kehren Sie zu diesem Thema zurück und beginnen Sie erneut mit Schritt 1.<br>d. Fahren Sie mit Schritt 7 fort. |
+   | 2 | **Hinzufügen eines kundenverwalteten Zertifikats (OV/EV)** | **Hinzufügen eines kundenverwalteten Zertifikats (OV/EV):**<br> a. Wählen Sie den Zertifikatstyp &quot;**Vom Kunden verwaltet (OV/EV)**&quot;.<br>b. Geben Sie im Feld **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dieses Feld dient nur zu Informationszwecken und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.<br>c. Fügen Sie in die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** die erforderlichen Werte in die entsprechenden Felder ein.<br>![Dialogfeld &quot;SSL-Zertifikat hinzufügen&quot;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Alle erkannten Fehler in Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zur Fehlerbehebung bei häufigen Fehlern finden Sie unter [Zertifikatfehler](#certificate-errors) .<br>d. Fahren Sie mit Schritt 7 fort. |
 
 <!--
     **Add an SSL certificate:**
@@ -98,109 +98,101 @@ Bevor Sie ein von einer Adobe generiertes und verwaltetes DV-Zertifikat (Domain 
 
 Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß installiert ist oder die Anforderungen von Cloud Manager nicht erfüllt.
 
-+++
++++**Richtige Zertifikatreihenfolge**
 
-* **Richtige Zertifikatreihenfolge**
+Der häufigste Grund für das Fehlschlagen einer Zertifikatbereitstellung ist, dass die Zwischen- oder Kettenzertifikate nicht in der richtigen Reihenfolge vorliegen.
 
-  Der häufigste Grund für das Fehlschlagen einer Zertifikatbereitstellung ist, dass die Zwischen- oder Kettenzertifikate nicht in der richtigen Reihenfolge vorliegen.
+Zwischenzertifikatdateien müssen mit dem Stammzertifikat oder dem Zertifikat enden, das am nächsten am Stammzertifikat liegt. Sie müssen in absteigender Reihenfolge vom `main/server`-Zertifikat zum Stammzertifikat vorliegen.
 
-  Zwischenzertifikatdateien müssen mit dem Stammzertifikat oder dem Zertifikat enden, das am nächsten am Stammzertifikat liegt. Sie müssen in absteigender Reihenfolge vom `main/server`-Zertifikat zum Stammzertifikat vorliegen.
+Sie können die Reihenfolge der Zwischenzertifikatdateien mithilfe des folgenden Befehls festlegen.
 
-  Sie können die Reihenfolge der Zwischenzertifikatdateien mithilfe des folgenden Befehls festlegen.
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
 
-  ```shell
-  openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-  ```
+Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüssel und das `main/server`-Zertifikat übereinstimmen.
 
-  Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüssel und das `main/server`-Zertifikat übereinstimmen.
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
 
-  ```shell
-  openssl x509 -noout -modulus -in certificate.pem | openssl md5
-  ```
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
 
-  ```shell
-  openssl rsa -noout -modulus -in ssl.key | openssl md5
-  ```
-
-  >[!NOTE]
-  >
-  >Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat neu verschlüsseln, indem Sie eine neue Zertifikatsignaturanforderung (CSR) generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
+>[!NOTE]
+>
+>Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat neu verschlüsseln, indem Sie eine neue Zertifikatsignaturanforderung (CSR) generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
 +++
 
-+++
++++**Entfernen von Clientzertifikaten**
 
-* **Entfernen von Clientzertifikaten**
+Wenn Sie beim Hinzufügen eines Zertifikats einen Fehler wie den folgenden erhalten:
 
-  Wenn Sie beim Hinzufügen eines Zertifikats einen Fehler wie den folgenden erhalten:
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
 
-  ```text
-  The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
-  ```
-
-  Wahrscheinlich haben Sie das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
+Wahrscheinlich haben Sie das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
 
 +++
 
-+++
++++**Zertifikatrichtlinie**
 
-* **Zertifikatrichtlinie**
+Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
 
-  Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
+```text
+Certificate policy must conform with EV or OV, and not DV policy.
+```
 
-  ```text
-  Certificate policy must conform with EV or OV, and not DV policy.
-  ```
+Eingebettete OID-Werte identifizieren normalerweise Zertifikatrichtlinien. Wenn Sie ein Zertifikat als Text ausgeben und nach der OID suchen, wird die Richtlinie des Zertifikats angezeigt.
 
-  Eingebettete OID-Werte identifizieren normalerweise Zertifikatrichtlinien. Wenn Sie ein Zertifikat als Text ausgeben und nach der OID suchen, wird die Richtlinie des Zertifikats angezeigt.
+Sie können Ihre Zertifikatdetails als Text ausgeben, indem Sie das folgende Beispiel als Anleitung verwenden.
 
-  Sie können Ihre Zertifikatdetails als Text ausgeben, indem Sie das folgende Beispiel als Anleitung verwenden.
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
 
-  ```text
-  openssl x509 -in 9178c0f58cb8fccc.pem -text
-  certificate:
-      Data:
-         Version: 3 (0x2)
-         Serial Number:
-             91:78:c0:f5:8c:b8:fc:cc
-         Signature Algorithm: sha256WithRSAEncryption
-         Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
-          Validity
-              Not Before: Nov 10 22:55:36 2021 GMT
-              Not After : Dec  6 15:35:06 2022 GMT
-          Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
-          Subject Public Key Info:
-  ...
-  ```
+Das OID-Muster im Text definiert den Richtlinientyp des Zertifikats.
 
-  Das OID-Muster im Text definiert den Richtlinientyp des Zertifikats.
+| Muster | Richtlinie | In Cloud Manager akzeptabel |
+|---|---|---|
+| `2.23.140.1.1` | EV | Ja |
+| `2.23.140.1.2.2` | OV | Ja |
+| `2.23.140.1.2.1` | DV | Nein |
 
-  | Muster | Richtlinie | In Cloud Manager akzeptabel |
-  |---|---|---|
-  | `2.23.140.1.1` | EV | Ja |
-  | `2.23.140.1.2.2` | OV | Ja |
-  | `2.23.140.1.2.1` | DV | Nein |
+Indem Sie nach den OID-Mustern im ausgegebenen Zertifikatstext `grep` suchen, können Sie Ihre Zertifikatsrichtlinie bestätigen.
 
-  Indem Sie nach den OID-Mustern im ausgegebenen Zertifikatstext `grep` suchen, können Sie Ihre Zertifikatsrichtlinie bestätigen.
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
 
-  ```shell
-  # "EV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
-  
-  # "OV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
-  
-  # "DV Policy - Not Accepted"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
-  ```
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 +++
 
-+++
++++**Zertifikatgültigkeitsdaten**
 
-* **Zertifikatgültigkeitsdaten**
-
-  Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindestens 90 Tage gültig ist. Überprüfen Sie die Gültigkeit der Zertifikatskette.
+Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindestens 90 Tage gültig ist. Überprüfen Sie die Gültigkeit der Zertifikatskette.
 
 +++
 

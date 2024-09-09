@@ -5,10 +5,10 @@ exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ In diesem Video erfahren Sie die ersten Schritte zum Synchronisieren eines kunde
 
 >[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
-## Standard-Verzweigungsstrategie {#branching-strategy}
+## Grundlegende Verzweigungsstrategie {#branching-strategy}
 
 In diesem Video erfahren Sie grundlegende Verzweigungsstrategien.
 
@@ -58,7 +58,7 @@ Bereiten Sie Code für die Produktionsfreigabe in einem kundenverwalteten Git-Re
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## Synchronisieren von Versions-Tags {#sync-tags}
+## Synchronisieren von Release-Tags {#sync-tags}
 
 Synchronisieren Sie Versions-Tags aus einem Cloud Manager-Git-Repository in einem kundenverwalteten Git-Repository, um für Sichtbarkeit des in Staging- und Produktionsumgebungen bereitgestellten Codes zu sorgen.
 
@@ -66,6 +66,6 @@ Synchronisieren Sie Versions-Tags aus einem Cloud Manager-Git-Repository in eine
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [GitHub-Ressourcen](https://try.github.io)
+* [GitHub-Ressourcen](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 * [Git-Tutorials von Atlassian](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git-Schnellübersicht](https://education.github.com/git-cheat-sheet-education.pdf)
