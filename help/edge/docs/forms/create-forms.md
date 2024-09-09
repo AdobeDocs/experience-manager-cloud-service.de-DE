@@ -1,13 +1,13 @@
 ---
-title: Erste Schritte mit dem AEM Forms Edge Delivery Service. Erstellen Sie ein Formular.
+title: Erste Schritte mit Edge Delivery Services für AEM Forms. Erstellen Sie ein Formular.
 description: Perfekte Formulare im Handumdrehen! ⚡ Dokumentenbasierte Inhaltserstellung mit AEM Forms Edge Delivery = Atemberaubende Geschwindigkeit und SEO-freundliche Formulare für glücklichere Benutzende und Suchmaschinen.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
+source-wordcount: '806'
+ht-degree: 98%
 
 ---
 

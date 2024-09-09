@@ -6,37 +6,37 @@ hide: true
 hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '665'
+ht-degree: 96%
 
 ---
 
 # Erstellen benutzerdefinierter Komponenten
 
-Mit AEM Forms Edge Delivery Services können Sie die [nativen HTML-Formularkomponenten](/help/edge/docs/forms/form-components.md) anpassen und benutzerfreundliche und interaktive Formulare erstellen. Sie können die Formularkomponenten mit vordefiniertem Markup ändern, wie im Abschnitt [Formatieren von Formularfeldern](/help/edge/docs/forms/style-theme-forms.md) beschrieben, indem Sie benutzerdefinierte CSS (Cascading Style Sheets) und benutzerdefinierten Code zum Dekorieren der Komponente verwenden, wodurch das Erscheinungsbild von Formularfeldern in einem adaptiven Forms-Block verbessert wird.
+Mit Edge Delivery Services für AEM Forms können Sie die [nativen HTML-Formularkomponenten](/help/edge/docs/forms/form-components.md) anpassen und benutzerfreundliche und interaktive Formulare erstellen. So haben Sie die Möglichkeit, die Formularkomponenten mit vordefiniertem Markup zu ändern, wie unter [Formatieren von Formularfeldern](/help/edge/docs/forms/style-theme-forms.md) beschrieben, indem Sie benutzerdefinierte CSS (Cascading Style Sheets) und benutzerdefinierten Code zum Dekorieren der Komponente verwenden, wodurch das Erscheinungsbild von Formularfeldern in einem adaptiven Formularblock verbessert wird.
 
 ![Benutzerdefinierte Komponente](/help/edge/assets/custom-component-image.png)
 
-In diesem Dokument werden die Schritte zum Erstellen benutzerdefinierter Komponenten durch Formatieren der nativen HTML-Formularkomponenten beschrieben, um das Benutzererlebnis zu verbessern und die visuelle Attraktivität des Formulars zu erhöhen.
+In diesem Dokument werden die Schritte zum Erstellen benutzerdefinierter Komponenten durch Formatieren der nativen HTML-Formularkomponenten beschrieben, um das Anwendererlebnis zu verbessern und die visuelle Attraktivität des Formulars zu erhöhen.
 
-Nehmen wir ein Beispiel für eine `range` -Komponente, die die `Estimated trip cost` in einem Formular anzeigt. Die Komponente `range` wird als gerade Linie angezeigt, ohne Werte wie den minimalen, maximalen oder ausgewählten Wert anzuzeigen.
+Nehmen wir als Beispiel eine `range`-Komponente, die die `Estimated trip cost` in einem Formular anzeigt. Die `range`-Komponente wird als gerade Linie dargestellt, ohne Werte wie den minimalen, maximalen oder ausgewählten Wert anzuzeigen.
 
 ![Native Bereichskomponente](/help/edge/assets/native-range-component.png)
 
-Beginnen wir mit der Anpassung des Felds `range`, um die minimalen, maximalen und ausgewählten Werte in der Zeile anzuzeigen, indem wir einen Stil mit CSS hinzufügen und eine benutzerdefinierte Funktion hinzufügen, um eine Komponente zu dekorieren.
+Passen Sie zunächst das Feld `range` an, um die minimalen, maximalen und ausgewählten Werte auf der Linie anzuzeigen. Fügen Sie dazu einen Stil mit CSS und eine benutzerdefinierte Funktion zum Dekorieren einer Komponente hinzu.
 
 ![Benutzerdefinierte Bereichskomponente](/help/edge/assets/custom-range-component.png)
 
-Am Ende dieses Artikels lernen Sie, benutzerdefinierte Komponenten zu erstellen, indem Sie Stile in die CSS-Datei und die benutzerdefinierte Funktion einfügen.
+Am Ende dieses Artikels erfahren Sie, wie Sie benutzerdefinierte Komponenten erstellen, indem Sie Stile in der CSS-Datei und benutzerdefinierten Funktion hinzufügen.
 
-## Voraussetzungen
+## Anforderungen
 
-Bevor Sie mit der Erstellung Ihrer benutzerdefinierten Komponente beginnen, sollten Sie Folgendes tun:
+Bevor Sie mit der Erstellung Ihrer benutzerdefinierten Komponente beginnen, sollten Sie sicherstellen, dass Sie:
 
-* Sie verfügen über grundlegende Kenntnisse zu [nativen HTML-Komponenten](/help/edge/docs/forms/form-components.md).
-* Erfahren Sie, wie Sie mit den CSS-Selektoren ](/help/edge/docs/forms/style-theme-forms.md) Formularfelder basierend auf dem Feldtyp formatieren.[
+* grundlegende Kenntnisse zu [nativen HTML-Komponenten](/help/edge/docs/forms/form-components.md) besitzen
+* wissen, wie Sie [mit der CSS-Auswahl Formularfelder basierend auf dem Feldtyp formatieren](/help/edge/docs/forms/style-theme-forms.md)
 
 
 ## Erstellen einer benutzerdefinierten Komponente
@@ -46,22 +46,22 @@ Bevor Sie mit der Erstellung Ihrer benutzerdefinierten Komponente beginnen, soll
 
 Im Folgenden werden die einzelnen Schritte im Detail beschrieben.
 
-Gehen Sie wie unten beschrieben vor, um die Komponente `range` anzupassen, indem Sie auf die Tabelle [Anfrage](/help/edge/docs/forms/assets/enquiry.xlsx) zugreifen.
+Passen Sie die `range`-Komponente unter Bezugnahme der [Anfragetabelle](/help/edge/docs/forms/assets/enquiry.xlsx) an, indem Sie die nachstehenden Schritte ausführen.
 
-### Fügen Sie eine benutzerdefinierte Funktion hinzu, um die Komponente zu dekorieren
+### Hinzufügen einer benutzerdefinierten Funktion zum Dekorieren der Komponente
 
-Die benutzerdefinierte Funktion, die in `[../Form Block/components]` hinzugefügt wird, besteht aus:
+Die unter `[../Form Block/components]` hinzugefügte benutzerdefinierte Funktion besteht aus diesen Elementen:
 
 * **Funktionsdeklaration**: Definieren Sie den Funktionsnamen und die zugehörigen Parameter.
 * **Logische Implementierung**: Schreiben Sie die Logik, um das benutzerdefinierte Verhalten für die Komponente hinzuzufügen.
-* **Funktionsexport**: Machen Sie die Funktion in `[Form Block]` barrierefrei.
+* **Funktionsexport**: Machen Sie die Funktion in `[Form Block]` verfügbar.
 
-Erstellen Sie eine JavaScript-Datei mit dem Namen `range.js` , um die Bereichskomponente zu formatieren. So fügen Sie eine benutzerdefinierte Funktion hinzu:
+Erstellen Sie nun eine JavaScript-Datei mit dem Namen `range.js`, um die Bereichskomponente zu formatieren. So fügen Sie eine benutzerdefinierte Funktion hinzu:
 
-1. Wechseln Sie auf Google Drive oder SharePoint zu Ihrem AEM-Projektordner.
+1. Navigieren Sie in Google Drive oder SharePoint zu Ihrem AEM-Projektordner.
 1. Navigieren Sie zu `[../Form Block/components]`.
-1. Fügen Sie eine neue Datei mit dem Namen `range.js` hinzu.
-1. Fügen Sie die folgende Codezeile hinzu:
+1. Fügen Sie eine neue Datei namens `range.js` hinzu.
+1. Fügen Sie die folgende Code-Zeile hinzu:
 
    ```javascript
    function updateBubble(input, element) {
@@ -120,16 +120,16 @@ Erstellen Sie eine JavaScript-Datei mit dem Namen `range.js` , um die Bereichsko
 
 1. Speichern Sie die Änderungen.
 
-### Den Dekorateur in den Formularblock einfügen
+### Einfügen des Decorators in den Formularblock
 
-Der `[Form Block]` verwendet die semantische HTML, um Formularfelder einschließlich Eingabefeldern, Beschriftungen und Hilfetext mit Standardattributen für die Barrierefreiheit wiederzugeben. Um den `[Form Block]` benutzerdefinierten Dekorator für eine bestimmte Komponente zu verwenden, definieren Sie ihn in der Datei `mappings.js` . Die Datei `mappings.js` importiert eine Funktion, die das Modul zurückgibt, das für das Dekorieren einer bestimmten Komponente verantwortlich ist. Die Funktion übernimmt die Feldeigenschaften und gibt eine Dekoratorfunktion für das Formularfeld zurück.
+Der `[Form Block]` verwendet semantisches HTML, um Formularfelder einschließlich Eingabefeldern, Beschriftungen und Hilfetext, mit Standardattributen zwecks Barrierefreiheit zu rendern. Damit der `[Form Block]` den benutzerdefinierten Decorator für eine bestimmte Komponente verwendet, müssen Sie ihn in der Datei `mappings.js` definieren. Die Datei `mappings.js` importiert eine Funktion, die das Modul zurückgibt, das für das Dekorieren einer bestimmten Komponente verantwortlich ist. Die Funktion übernimmt die Feldeigenschaften und gibt eine Decorator-Funktion für das Formularfeld zurück.
 
-In unserem Fall überprüft die Funktion die Eigenschaft `fieldType` des Felds und gibt den benutzerdefinierten Bereichsdekorator aus der in `[../Form Block/components]` vorhandenen Datei `range.js` zurück.
+Im vorliegenden Fall überprüft die Funktion die Eigenschaft `fieldType` des Felds und gibt den benutzerdefinierten Bereichs-Decorator aus der unter `[../Form Block/components]` vorhandenen Datei `range.js` zurück.
 
-So injizieren Sie den Dekorator in den Formularblock:
+So fügen Sie den Decorator in den Formularblock ein:
 
 1. Gehen Sie zu `[../Form Block/]` und öffnen Sie `mapping.js`.
-1. Fügen Sie die folgende Codezeile hinzu:
+1. Fügen Sie die folgende Code-Zeile hinzu:
 
    ```javascript
    export default async function componentDecorator(fd) {
@@ -145,15 +145,15 @@ So injizieren Sie den Dekorator in den Formularblock:
 
 1. Speichern Sie die Änderungen.
 
-### Stil für die Komponente in der CSS-Datei hinzufügen
+### Hinzufügen eines Stils für die Komponente in der CSS-Datei
 
-Sie können das Erscheinungsbild von Formularfeldern anhand von Feldtypen und Feldnamen mithilfe von CSS-Selektoren ändern, um eine konsistente oder eindeutige Formatierung basierend auf Anforderungen zu ermöglichen. Um die Komponente zu formatieren, fügen Sie Code in die Datei `form.css` ein, um das Erscheinungsbild der Formularkomponente zu ändern.
+Sie können das Erscheinungsbild von Formularfeldern mithilfe der CSS-Auswahl gemäß dem Feldtyp und den Feldnamen ändern, was eine konsistente oder eindeutige Formatierung je nach den Anforderungen ermöglicht. Zum Formatieren der Komponente fügen Sie Code in der Datei `form.css` hinzu, um das Look-and-Feel der Formularkomponente zu ändern.
 
-Um den Stil für die Komponente `range` anzupassen, fügen Sie ein CSS-Codefragment ein, das ein Eingabeelement `range` und die zugehörigen Komponenten in einem Formular formatiert. Dabei wird von einem strukturierten HTML-Layout mit Klassen wie `.form` und `.range-wrapper` ausgegangen.
+Um den Stil für die `range`-Komponente anzupassen, fügen Sie ein CSS-Code-Snippet ein, das ein `range`-Input-Element und die zugehörigen Komponenten in einem Formular formatiert. Dabei wird von einem strukturierten HTML-Layout mit Klassen wie `.form` und `.range-wrapper` ausgegangen.
 
 So fügen Sie einen Stil für eine Komponente in der CSS-Datei hinzu:
-1. Gehen Sie zu `[../Form Block/]` und öffnen Sie `form.css`.
-1. Fügen Sie die folgende Codezeile hinzu:
+1. Navigieren Sie zu `[../Form Block/]` und öffnen Sie `form.css`.
+1. Fügen Sie die folgende Code-Zeile hinzu:
 
    ```javascript
        /** styling for range */
@@ -214,13 +214,13 @@ So fügen Sie einen Stil für eine Komponente in der CSS-Datei hinzu:
 
 Stellen Sie die aktualisierten Dateien `range.js`, `mapping.css` und `form.css` in Ihrem GitHub-Projekt bereit und überprüfen Sie, ob der Build erfolgreich war.
 
-### Vorschau des Formulars mit dem AEM Sidekick
+### Anzeigen einer Vorschau des Formulars mit dem AEM Sidekick
 
-Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) , um eine Vorschau Ihres Formulars mit der neu implementierten Funktion anzuzeigen, die die `range` -Komponente formatiert.
+Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau Ihres Formulars mit der neu implementierten Funktion anzuzeigen, die die Komponente `range` gestaltet.
 
 ![Benutzerdefiniertes Komponentenformular](/help/edge/assets/custom-componet-form.png)
 
-Der neue Stil für die Komponente `range` zeigt die minimalen, maximalen und ausgewählten Werte in der Zeile an, indem Stile mit CSS und eine benutzerdefinierte Funktion hinzugefügt werden, die einen Dekorator für die Komponente enthält.
+Der neue Stil für die Komponente `range` zeigt den minimalen, maximalen und ausgewählten Wert in der Zeile an, indem Stile mit CSS und eine benutzerdefinierte Funktion hinzugefügt werden, die einen Dekorator für die Komponente enthält.
 
 
 ## Siehe auch

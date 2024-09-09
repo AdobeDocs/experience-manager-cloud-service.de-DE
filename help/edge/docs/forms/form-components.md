@@ -1,19 +1,19 @@
 ---
 title: Komponenten von adaptiven Formularblöcken und ihre Eigenschaften
-description: Dieses Dokument bietet einen Überblick über die Formularkomponenten und ihre Eigenschaften, die im AEM Forms Edge Delivery Service verfügbar sind.
+description: Dieses Dokument bietet einen Überblick über die Formularkomponenten und ihre Eigenschaften, die in Edge Delivery Services für AEM Forms verfügbar sind.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 96%
 
 ---
 
 # Komponenten von adaptiven Formularblöcken und ihre Eigenschaften
 
-Mit dem AEM Forms Edge Delivery Service können Sie benutzerfreundliche und interaktive Formulare mit verschiedenen Komponenten erstellen. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
+Mit Edge Delivery Services für AEM Forms können Sie benutzerfreundliche und interaktive Formulare mit verschiedenen Komponenten erstellen. Diese Komponenten decken unterschiedliche Arten der Datenerfassung ab und können einfach an Ihre spezifischen Anforderungen angepasst werden.
 
 
 ![Eine Beispieltabelle mit einigen Komponenten und Eigenschaften](/help/edge/assets/sample-form-in-spreadsheet.png)
