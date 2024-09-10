@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
+source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1502'
 ht-degree: 6%
 
 ---
@@ -71,7 +71,7 @@ Wenn Sie mit AEM as a Cloud Service Sites Edge Delivery Services-Lizenzen beauft
 * Zugriff auf SLA-Berichte (*in Kürze verfügbar*) <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
 * Adobe-Unterstützung erhalten. Stellen Sie sicher, dass Ihre Edge Delivery Services-Sites über ein Produktionsprogramm in Cloud Manager registriert sind, um eine ordnungsgemäße Erkennung und Unterstützung durch Adobe zu erhalten.
 
-## Hinzufügen einer Edge Delivery Services-Site {#eds-add-site}
+## Hinzufügen einer Edge Delivery-Site {#eds-add-site}
 
 Nachdem Sie einem Produktionsprogramm Edge Delivery Services hinzugefügt haben, wird Ihre Edge Delivery Services-Lizenz darauf angewendet.
 
