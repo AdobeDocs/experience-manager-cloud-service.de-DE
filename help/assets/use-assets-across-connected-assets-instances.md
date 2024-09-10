@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 100%
+source-wordcount: '3869'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 100%
 | AEM as a Cloud Service | Dieser Artikel |
 
 In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Web-Seiten in verschiedenen Bereitstellungen. Ein Grund können geografisch verteilte vorhandene Bereitstellungen sein, die zusammenarbeiten müssen. Ein weiterer Grund können Akquisitionen sein, die zu einer heterogenen Infrastruktur führen, einschließlich unterschiedlicher [!DNL Experience Manager]-Versionen, die die übergeordnete Firma gemeinsam nutzen möchte.
+
+>[!NOTE]
+>
+>Adobe empfiehlt die Nutzung von Dynamic Media mit OpenAPI-Funktionen, um AEM Assets as a Cloud Service und AEM Sites zu verbinden. Siehe [Integrieren von Remote AEM Assets mit AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
 
 Die Funktion „Connected Assets“ unterstützt die oben genannten Anwendungsfälle durch die Integration von [!DNL Experience Manager Sites] und [!DNL Experience Manager Assets]. Anwender können Web-Seiten in [!DNL Sites] erstellen, die die digitalen Assets aus einer separaten [!DNL Assets]-Bereitstellung verwenden.
 
