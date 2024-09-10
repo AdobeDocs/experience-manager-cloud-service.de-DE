@@ -5,9 +5,9 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2982'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -216,8 +216,8 @@ Wenn eine Aufnahme mit der Einstellung **Nicht bereinigen** mit einem Migrations
 
 Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält entweder:
 
-* einen `BSONObjectTooLarge` -Fehler und geben Sie an, welcher Knoten das Maximum überschritten hat, oder
-* einen `BsonMaximumSizeExceededException` -Fehler, der anzeigt, dass ein Knoten vorhanden ist, der wahrscheinlich Unicode-Zeichen enthält, die die maximale Größe überschreiten **
+* einen `BSONObjectTooLarge`-Fehler und gibt an, welcher Knoten das Maximum überschritten hat, oder
+* einen `BsonMaximumSizeExceededException`-Fehler, der angibt, dass ein Knoten vorhanden ist, der wahrscheinlich Unicode-Zeichen enthält, die die maximale Größe überschreiten **
 
 Dies ist eine MongoDB-Beschränkung.
 
@@ -227,7 +227,7 @@ Um diese Einschränkung möglicherweise zu vermeiden, führen Sie den [Best Prac
 
 >[!NOTE]
 >
->[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Version 2.1.50+ wird Berichte zu großen Knoten erstellen, die Unicode-Zeichen enthalten, die die maximale Größe überschreiten. Stellen Sie sicher, dass Sie die neueste Version ausführen. BPA-Versionen vor 2.1.50 werden diese großen Knoten nicht identifizieren und melden. Sie müssen separat mit dem oben erwähnten erforderlichen Oak-Tool ermittelt werden.
+>[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Version 2.1.50 oder höher meldet große Knoten, die Unicode-Zeichen enthalten, die die maximale Größe überschreiten. Stellen Sie sicher, dass Sie die neueste Version ausführen. BPA-Versionen vor 2.1.50 identifizieren und melden diese großen Knoten nicht. Diese müssen separat mit dem oben erwähnten, erforderlichen Oak-Tool ermittelt werden.
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 

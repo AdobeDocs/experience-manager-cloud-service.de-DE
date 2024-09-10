@@ -5,9 +5,9 @@ feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
 source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '450'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Alle Bereinigungsvarianten vereint Folgendes:
 >[!CAUTION]
 >Die Bereinigung des CDN-Caches, insbesondere mit Hardflag, erhöht den Traffic an der Quelle und kann zu einem Ausfall führen, sofern die Ausführung nicht ordnungsgemäß erfolgt.
 
-Sie können auf [ein Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) verweisen, das sich auf die Konfiguration von Bereinigungsschlüsseln und die Durchführung der CDN-Cache-Bereinigung konzentriert.
+Sie können [ein Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) durchlaufen, das sich auf die Konfiguration von Bereinigungsschlüsseln und die Durchführung der CDN-Cache-Bereinigung konzentriert.
 
 ## Einzelne URL-Bereinigung {#single-purge}
 

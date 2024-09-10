@@ -7,9 +7,9 @@ hidefromtoc: true
 feature: Migration
 role: Admin
 source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 Im Rahmen der Übergangs zu Adobe Experience Manager (AEM) as a Cloud Service müssen Sie Benutzende und Gruppen aus Ihrem vorhandenen AEM-System nach AEM as a Cloud Service übertragen. Diese Migration erfolgt über das Content Transfer Tool.
 
-Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene. Diese Integration setzt voraus, dass die [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzenden und Benutzergruppen verwendet wird. Die Benutzerprofilinformationen sind im Adobe Identity Management System (IMS) zentralisiert, das Single Sign-on über alle Adobe-Cloud-Anwendungen hinweg bereitstellt. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=de#identity-management). Aufgrund dieser Änderung müssen vorhandene Benutzende und Gruppen ihren IMS-IDs zugeordnet werden, um doppelte Benutzende und Gruppen in der Authoring-Instanz in Cloud Service zu vermeiden.
+Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Authoring-Ebene. Diese Integration setzt voraus, dass die [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzenden und Benutzergruppen verwendet wird. Die Benutzerprofilinformationen sind im Adobe Identity Management System (IMS) zentralisiert, das Single Sign-on über alle Adobe-Cloud-Anwendungen hinweg bereitstellt. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=de#identity-management). Aufgrund dieser Änderung müssen vorhandene Benutzende und Gruppen ihren IMS-IDs zugeordnet werden, um doppelte Benutzende und Gruppen in der Authoring-Instanz in Cloud Service zu vermeiden.
 
 ## Tool für die Benutzerzuordnung {#mapping-tool}
 

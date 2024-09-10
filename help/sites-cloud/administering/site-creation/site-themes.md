@@ -6,9 +6,9 @@ role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
 source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 Erfahren Sie, wie Sie AEM-Site-Designs verwenden, um den Stil und das Design Ihrer Site anzupassen.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Ein AEM-Site-Design ist ein Paket, das die CSS-, JavaScript- und statischen Ressourcen enthält, die das Aussehen Ihrer AEM-Site definieren und die Struktur eines AEM-Site-Designs einhalten.
 

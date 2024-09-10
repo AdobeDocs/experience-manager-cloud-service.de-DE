@@ -5,9 +5,9 @@ role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: d71107be2831bf00bff3856d7cd0e10818ec6be5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Um Ihre [!UICONTROL Experience Cloud-Voreinstellungen] zu ändern, klicken Sie a
 
 >[!NOTE]
 >
->Wenn Sie zur Assets-Ansicht navigieren und die Meldung &quot;`Network Error`&quot;angezeigt wird, stellen Sie sicher, dass Sie die Anweisungen ausführen, die im Artikel &quot;CORS-Konfiguration (Cross-Origin Resource Sharing)&quot;(CORS-Konfiguration)](/help/headless/deployment/cross-origin-resource-sharing.md) beschrieben sind.[
+>Wenn Sie zur Assets-Ansicht navigieren und die Meldung `Network Error` angezeigt wird, stellen Sie sicher, dass Sie die Anweisungen ausführen, die im Artikel [Cross-Origin Resource Sharing(CORS)-Konfiguration](/help/headless/deployment/cross-origin-resource-sharing.md) beschrieben sind.
 
 ## [!DNL Assets View]-Anwendungsfälle  {#use-cases}
 

@@ -1,48 +1,48 @@
 ---
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
-description: Erfahren Sie, wie Sie ein Forms-Portal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden.
+description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden.
 feature: Adaptive Forms, Core Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
 source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 
-# Einführung in Forms Portal
+# Einführung in das Formularportal
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=de) |
 | AEM as a Cloud Service (Kernkomponenten) | Dieser Artikel |
 
-Forms Portal bietet eine effiziente Möglichkeit, das adaptive Forms auf einer AEM Sites-Seite anzuzeigen und aufzulisten. Es ist nützlich für Organisationen, die eine Plattform benötigen, um ihren Benutzern systematisch verschiedene Formulare zu präsentieren.
+Das Formularportal bietet eine effiziente Möglichkeit, adaptive Formulare auf einer AEM Sites-Seite anzuzeigen und aufzulisten. Es ist nützlich für Organisationen, die eine Plattform benötigen, um ihren Benutzenden verschiedene Formulare systematisch zu präsentieren.
 
-Angenommen, eine Bank muss auf ihrer Website verschiedene Formulare anzeigen. Die Bank organisiert Formulare wie Kreditantragsformulare, Formulare zur Kontoeröffnung und Feedback-Umfrageformulare auf der Website und verwendet das Forms-Portal, um sie dynamisch aufzulisten. Das Forms-Portal ermöglicht es Benutzern, Formulare auf der Website der Bank aufzulisten und nach ihnen zu suchen. Anonyme Benutzer können die Liste der verfügbaren Formulare anzeigen und durchsuchen. Um jedoch auf Entwürfe zugreifen oder abgeschlossene Formulare senden zu können, müssen sie angemeldet sein. Darüber hinaus wird das Forms-Portal auch verwendet, um Referenzlinks zu Formularen auf einer AEM Sites-Seite hinzuzufügen
+Angenommen, eine Bank möchte auf ihrer Website verschiedene Formulare bereitstellen. Die Bank organisiert auf der Website Formulare, z. B. für Kreditanträge, Kontoeröffnungen und Feedback-Umfragen, und nutzt das Formularportal, um diese Formulare dynamisch aufzulisten. Das Formularportal ermöglicht es Benutzenden, Formulare auf der Website der Bank aufzulisten und zu suchen. Anonyme Benutzende können die Liste der verfügbaren Formulare anzeigen und durchsuchen. Um jedoch auf Entwürfe zugreifen oder ausgefüllte Formulare senden zu können, müssen sie angemeldet sein. Darüber hinaus wird das Formularportal auch verwendet, um Referenz-Links zu Formularen auf einer AEM Sites-Seite hinzuzufügen
 
-Die Formularportalkomponenten bieten die folgenden Funktionen:
+Formularportal-Komponenten bieten die folgenden Funktionen:
 
-* Auflisten von Formularen in benutzerdefinierten Layouts. Standardmäßig werden die Layouts für die Listenansicht und die Kartenansicht bereitgestellt.
+* Auflisten von Formularen in benutzerdefinierten Layouts. Standardmäßig werden Layouts für die Listen- und Kartenansicht bereitgestellt. 
 * Aktivieren der Suche nach Formularen anhand von Titel und Beschreibung.
-* Erstellen Sie Links zu Formularen, um den Zugriff und die Freigabe zu erleichtern.
-* Listet vom Benutzer erstellte Entwürfe und Übermittlungen auf.
+* Erstellen von Links zu Formularen, um Zugriff und Weitergabe zu vereinfachen.
+* Auflisten der erstellten Entwürfe und Übermittlungen einer Person.
 
-## Komponenten eines Forms-Portals
+## Komponenten eines Formularportals
 
-![Komponenten von Forms Portal](/help/forms/assets/forms-portal.png)
+![Komponenten eines Formularportals](/help/forms/assets/forms-portal.png)
 
 AEM Forms bietet standardmäßig die folgenden Portalkomponenten:
 
-* **Search &amp; Lister**: Er listet Formulare auf einer Sites-Seite auf und bietet Konfigurationsoptionen zum Filtern von Formularen nach bestimmten Kriterien.
-* **Entwürfe und Übermittlungen**: Es werden Formulare angezeigt, die als Entwurf zum Ausfüllen späterer und gesendeter Formulare gespeichert wurden. Es werden beide Formulare, die als Entwürfe zum späteren Ausfüllen gespeichert wurden, sowie die gesendeten Formulare angezeigt. Es bietet ein personalisiertes Erlebnis für jeden angemeldeten Benutzer.
-* **Link**: Es wird ein Link zu einem Formular an einer beliebigen Stelle auf der Seite erstellt.
+* **Suche und Auflister**: Diese Komponenten listet Formulare auf einer Sites-Seite auf und bietet Konfigurationsoptionen zum Filtern von Formularen nach bestimmten Kriterien.
+* **Entwürfe und Sendungen**: Diese Komponente zeigt Formulare an, die als Entwurf zum späteren Ausfüllen gespeichert wurden, sowie Formulare, die bereits gesendet wurden. Es werden sowohl Formulare präsentiert, die als Entwürfe zum späteren Ausfüllen gespeichert wurden, als auch bereits übermittelte Formulare. Die Komponente bietet ein personalisiertes Erlebnis für alle angemeldeten Benutzenden.
+* **Link**: Diese Komponente erstellt einen Link zu einem Formular an beliebiger Stelle auf der Seite.
 
 ## Nächste Schritte
 
-Im nächsten Artikel erfahren wir [wie Sie Formulare auf der Sites-Seite mithilfe der Forms-Portal-Komponente &quot;Search &amp; Lister&quot;auflisten](/help/forms/list-forms-on-sites-page.md).
+Im nächsten Artikel erfahren Sie, [wie Sie Formulare auf der Sites-Seite mithilfe der Formularportal-Komponente „Suche und Auflister“ auflisten](/help/forms/list-forms-on-sites-page.md).
 
 ## Verwandte Artikel
 

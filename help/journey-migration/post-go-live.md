@@ -5,9 +5,9 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
 source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Beheben von Fehlern in AEM"
->abstract="Überprüfen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie Developer Console und CRXDE Lite, um Ihnen bei der Fehlerbehebung von Problemen mit AEM zu helfen"
+>abstract="Lesen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie der Developer Console und CRXDE Lite, um Probleme mit AEM zu beheben."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=de" text="Zugreifen auf und Verwalten von Protokollen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 

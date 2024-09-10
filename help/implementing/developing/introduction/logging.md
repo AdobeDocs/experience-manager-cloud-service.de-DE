@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2834'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -149,8 +149,8 @@ Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete �
 | OSGi-Konfigurationseigenschaft | Beschreibung |
 |---|---|
 | `org.apache.sling.commons.log.names` | Die Java-Pakete, für die Protokolleinträge gesammelt werden sollen. |
-| `org.apache.sling.commons.log.level` | Die Protokollebene, auf der die Java-Pakete protokolliert werden sollen, angegeben durch `org.apache.sling.commons.log.names` |
-| `org.apache.sling.commons.log.file` | Geben Sie das Ziel für die Ausgabe an: `logs/error.log` |
+| `org.apache.sling.commons.log.level` | Die Protokollebene, auf der die Java-Pakete protokolliert werden sollen, angegeben durch: `org.apache.sling.commons.log.names` |
+| `org.apache.sling.commons.log.file` | Zum Festlegen des Ausgabeziels: `logs/error.log` |
 
 Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM as a Cloud Service führen.
 

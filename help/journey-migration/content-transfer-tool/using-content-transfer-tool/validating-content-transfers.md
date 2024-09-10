@@ -5,9 +5,9 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
 source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1189'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -61,11 +61,11 @@ Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispiele
 
 * **Extraktion**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Aufnahme**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Anmerkungen**
 
@@ -137,26 +137,26 @@ Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, son
 
 ## Validieren der Prinzipalmigration {#how-to-validate-group-migration}
 
-Siehe [Gruppenmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) , um die wichtigsten Migrationsdetails zu lesen und zu erfahren, warum dies erforderlich ist.
+Weitere Informationen zur Prinzipalmigration und dazu, warum diese erforderlich ist, finden Sie unter [Gruppenmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
-Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Prinzipalmigration verfügbar. Diese Informationen können verwendet werden, um zu überprüfen, welche Gruppen erfolgreich migriert wurden, und um festzustellen, warum einige nicht migriert wurden.
+Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Prinzipalmigration verfügbar. Anhand dieser Informationen lässt sich überprüfen, welche Gruppen erfolgreich migriert wurden, und ggf. feststellen, warum einige Gruppen nicht migriert wurden.
 
-Gehen Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte (**…**) für diese Aufnahme und dann in der Dropdown-Liste auf **Prinzipalzusammenfassung anzeigen**.
+Navigieren Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte (**…**) für diese Aufnahme und dann in der Dropdown-Liste auf **Prinzipalzusammenfassung anzeigen**.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf die Schaltfläche **Bericht herunterladen** , um den vollständigen CSV-Bericht herunterzuladen.  Beachten Sie außerdem, dass am Ende dieses Berichts der Benutzerbericht ist, der für die Benutzerverwaltung nach der Migration verwendet werden kann.
+Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf die Schaltfläche **Bericht herunterladen**, um den vollständigen Bericht im durch Kommas getrennten Format (CSV) herunterzuladen.  Beachten Sie außerdem, dass sich am Ende dieses Berichts der Benutzerbericht befindet, der für die Benutzerverwaltung nach der Migration verwendet werden kann.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
-Der Bericht &quot;Hauptmigration&quot;wird folgende Berichte enthalten:
+Im Bericht „Prinzipalmigration“ wird Folgendes angegeben:
 
-* Jede Gruppe wurde migriert und der erste Inhaltspfad, der die Migration dieser Gruppe ausgelöst hat. Die Gruppe kann sich auch auf andere Pfade befinden, es wird jedoch nur der erste für eine bestimmte Gruppe gefundene gemeldet. Es wird auch berichtet, ob es in einer ACL- oder einer CUG-Richtlinie gefunden wurde.
-* Jede Gruppe wurde nicht migriert, und der Grund für die Migration.  In der Regel ist dies einer der folgenden Gründe:
+* Jede migrierte Gruppe und der erste Inhaltspfad, der die Migration dieser Gruppe ausgelöst hat. Die Gruppe kann sich auch auf anderen Pfaden befinden, es wird jedoch nur der erste gemeldet, der für eine bestimmte Gruppe gefunden wird. Es wird auch gemeldet, ob der Pfad in einer ACL- oder einer CUG-Richtlinie gefunden wurde.
+* Jede nicht migrierte Gruppe und der Grund, aus dem sie nicht migriert wurde.  In der Regel liegt einer der folgenden Gründe vor:
    * Es handelt sich um eine integrierte Gruppe
-   * Es befindet sich bereits im Zielsystem
+   * Sie befindet sich bereits im Zielsystem
    * Sie befindet sich nicht in einer ACL- oder CUG-Richtlinie für den migrierten Inhalt
-   * Es verfügt über ein doppeltes eindeutiges Feld (eines der Felder rep:principalName, rep:authorizableId, jcr:uuid oder rep:externalId befindet sich bereits im Ziel, diese müssen jedoch eindeutig sein).
+   * Sie verfügt über ein doppeltes eindeutiges Feld (eines der Felder „rep:principalName“, „rep:authorizableId“, „jcr:uuid“ oder „rep:externalId“ befindet sich bereits im Ziel, diese müssen jedoch alle eindeutig sein).
 
 ## Fehlerbehebung {#troubleshooting}
 
