@@ -3,10 +3,11 @@ title: Versionshinweise für Cloud Manager 2024.9.0 in Adobe Experience Manager 
 description: Erfahren Sie mehr über die Versionshinweise für Cloud Manager 2024.9.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 22%
+source-wordcount: '367'
+ht-degree: 20%
 
 ---
 
@@ -32,9 +33,17 @@ Die Version 2024.9.0 von Cloud Manager in AEM as a Cloud Service wurde am Freit
 
   Mit Cloud Manager können Sie jetzt [durch Self-Service-Adobe generierte und verwaltete DV-SSL-Zertifikate (Domain Validation)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) verwenden. Diese Funktion bietet Ihnen die schnellste, einfachste und kostengünstigste Lösung, um eine sichere Website für Ihre Online-Organisation oder Ihr Unternehmen zu erstellen. <!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md) -Kunden sollen diese Funktion schrittweise im Rahmen eines schrittweisen Rollouts erhalten.
+
 * **Edge Delivery Services-Unterstützung in Cloud Manager:**
 
-  Wenn Sie über eine Edge Delivery Services-Lizenz im Rahmen von AEM Sites verfügen, können Sie Ihre Site jetzt mit Edge Delivery Services direkt über Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) integrieren. [ Diese Funktion ermöglicht ein geführtes Self-Service Go Live-Erlebnis. Außerdem werden wichtige Workflows wie Domain-Namensverwaltung, SSL-Zertifikate und CDN-Zuordnungen über alle AEM hinweg vereinheitlicht, sodass Konsistenz und Effizienz gewährleistet sind. <!-- CMGR-49859 -->
+  Wenn Sie über eine Edge Delivery Services-Lizenz als Teil von AEM Sites verfügen, können Sie Ihre Site jetzt mit Edge Delivery Services direkt über Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) integrieren. [ Diese Funktion ermöglicht ein geführtes Self-Service Go Live-Erlebnis. Außerdem werden wichtige Workflows wie Domain-Namensverwaltung, SSL-Zertifikate und CDN-Zuordnungen über alle AEM hinweg vereinheitlicht, sodass Konsistenz und Effizienz gewährleistet sind. <!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md) -Kunden sollen diese Funktion schrittweise im Rahmen eines schrittweisen Rollouts erhalten.
 
 * Kunden, die GitHub-Repositorys verwenden, können jetzt Web-Tier-Konfigurations-Pipelines erstellen und verwenden. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
