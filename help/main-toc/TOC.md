@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
+source-git-commit: bd6106256cf812d4420f1f9d84ec008d9cd18a46
 workflow-type: tm+mt
-source-wordcount: '5586'
-ht-degree: 97%
+source-wordcount: '5592'
+ht-degree: 99%
 
 ---
 
@@ -85,6 +85,7 @@ ht-degree: 97%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [Wartungversionshinweise für 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
          + [Wartungversionshinweise für 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
          + [Wartungversionshinweise für 2024.7.0](/help/release-notes/maintenance/2024/2024-7-0.md)
          + [Wartungversionshinweise für 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
@@ -704,7 +705,7 @@ ht-degree: 97%
       + Kernkomponenten {#authoring-adaptive-forms-core-components}
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
-            + [Layout eines adaptiven Formulars basierend auf Kernkomponenten festlegen](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
+            + [Festlegen des Layouts eines adaptiven Formulars basierend auf Kernkomponenten](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Erstellen einer adaptiven Formularvorlage basierend auf Kernkomponenten](/help/forms/template-editor-core-components.md)
@@ -739,11 +740,11 @@ ht-degree: 97%
                + [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
                + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
                + [Beispiele für benutzerdefinierte Funktionen für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-components-use-cases.md)
-            + Einführung in Forms Portal und seine Komponenten{#introduction-to-forms-portal}
-               + [Einführung in die Forms Portal-Komponente](/help/forms/configure-forms-portal.md)
-               + [Auflisten von Formularen auf der Sites-Seite mithilfe der Komponente &quot;Search &amp; Lister&quot;](/help/forms/list-forms-on-sites-page.md)
-               + [Speichern und Auflisten von Formularen als Entwürfe auf der Siteseite mithilfe der Komponente &quot;Drafts &amp; Submissions&quot;](/help/forms/save-core-component-based-form-as-draft.md)
-               + [Fügen Sie über die Komponente &quot;Link&quot;Formularlinks zur Seite &quot;Sites&quot;hinzu.](/help/forms/add-form-link-to-aem-sites-page.md)
+            + Einführung in das Formularportal und seine Komponenten{#introduction-to-forms-portal}
+               + [Einführung in Formularportal-Komponenten](/help/forms/configure-forms-portal.md)
+               + [Auflisten von Formularen auf der Sites-Seite mithilfe der Komponente „Suche und Auflister“](/help/forms/list-forms-on-sites-page.md)
+               + [Speichern und Auflisten von Formularen als Entwürfe auf der Sites-Site mithilfe der Komponente „Entwurfe und Sendungen“](/help/forms/save-core-component-based-form-as-draft.md)
+               + [Hinzufügen von Links zu einer Sites-Seite mithilfe der Komponente „Link“](/help/forms/add-form-link-to-aem-sites-page.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)

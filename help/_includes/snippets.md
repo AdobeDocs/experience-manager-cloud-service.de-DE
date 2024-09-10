@@ -2,7 +2,7 @@
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 72%
+ht-degree: 89%
 
 ---
 # Snippets {#snippets}
@@ -131,19 +131,19 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 ## Formularportal{#forms-portal-see-also}
 
-* [Einführung in Forms Portal-Komponenten](/help/forms/configure-forms-portal.md)
-* [Formulare auf der Siteseite auflisten](/help/forms/list-forms-on-sites-page.md)
-* [Speichern Sie Ihre Formulare als Entwürfe](/help/forms/save-core-component-based-form-as-draft.md)
-* [Hinzufügen von Formular-Links zu einer Siteseite](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Einführung in Formularportal-Komponenten](/help/forms/configure-forms-portal.md)
+* [Auflisten von Formularen auf einer Sites-Seite](/help/forms/list-forms-on-sites-page.md)
+* [Speichern von Formularen als Entwürfe](/help/forms/save-core-component-based-form-as-draft.md)
+* [Hinzufügen von Links zu einer Sites-Seite](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
-## IP-Zulassungsliste- und Front-End-Pipelines von Cloud Manager {#allowlist-frontend-pipeline}
+## Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
 >Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste vorab zu Cloud Manager hinzugefügt wird.
->Fügen Sie bei Bedarf die IP-Zulassungsliste [ hinzu, indem Sie den unten stehenden Adressblock kopieren. ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Baustein in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie **Enter**. Speichern Sie die Liste.
->Um zu vermeiden, dass die Ausführung der Frontend-Pipeline gestört wird, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
+>[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste
+>Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
 >
 >**Cloud Manager-IP-Zulassungsliste**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251

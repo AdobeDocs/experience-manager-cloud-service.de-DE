@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
 source-wordcount: '1443'
-ht-degree: 84%
+ht-degree: 92%
 
 ---
 
@@ -74,9 +74,9 @@ Weitere Eigenschaften sind:
 >[!NOTE]
 >Der Edge-Schlüssel muss als Cloud Manager-Umgebungsvariable vom Typ &quot;[secret&quot;} konfiguriert werden, bevor die Konfiguration, auf die er verweist, bereitgestellt wird. ](/help/operations/config-pipeline.md#secret-env-vars) Es wird empfohlen, einen eindeutigen zufälligen Schlüssel mit einer Mindestlänge von 32 Byte zu verwenden. Beispielsweise kann die kryptografische Bibliothek Open SSL einen zufälligen Schlüssel generieren, indem der Befehl `openssl rand -hex 32` ausgeführt wird.
 
-### Sichere Migration zur Verringerung des Traffic-Risikos {#migrating-safely}
+### Sichere Migration zur Verringerung des Risikos von blockiertem Traffic {#migrating-safely}
 
-Wenn Ihre Site bereits live ist, sollten Sie bei der Migration zu kundenverwaltetem CDN Vorsicht walten lassen, da eine Fehlkonfiguration öffentlichen Traffic blockieren kann. Dies liegt daran, dass nur Anforderungen mit dem erwarteten Header-Wert X-AEM-Edge-Key vom Adobe CDN akzeptiert werden. Es wird ein Ansatz empfohlen, wenn eine zusätzliche Bedingung vorübergehend in die Authentifizierungsregel aufgenommen wird, wodurch die Anfrage nur dann ausgewertet wird, wenn eine Testkopfzeile enthalten ist:
+Wenn Ihre Site bereits live ist, sollten Sie bei der Migration zu einem kundenseitig verwaltetem CDN Vorsicht walten lassen, da eine Fehlkonfiguration öffentlichen Traffic blockieren kann. Dies liegt daran, dass nur Anforderungen mit dem erwarteten Header-Wert X-AEM-Edge-Key vom Adobe CDN akzeptiert werden. Es wird ein Ansatz empfohlen, bei dem vorübergehend eine zusätzliche Bedingung in die Authentifizierungsregel aufgenommen wird, wodurch die Anfrage nur dann bewertet wird, wenn ein Test-Header enthalten ist:
 
 ```
     - name: edge-auth-rule
@@ -89,7 +89,7 @@ Wenn Ihre Site bereits live ist, sollten Sie bei der Migration zu kundenverwalte
           authenticator: edge-auth
 ```
 
-Das folgende `curl`-Anforderungsmuster kann verwendet werden:
+Das folgende `curl`-Anfragemuster kann verwendet werden:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
@@ -142,7 +142,7 @@ Weitere Eigenschaften sind:
 >[!NOTE]
 >Der Bereinigungsschlüssel muss als Cloud Manager-Umgebungsvariable vom Typ &quot;[secret&quot;](/help/operations/config-pipeline.md#secret-env-vars) konfiguriert werden, bevor die Konfiguration, auf die er verweist, bereitgestellt wird. Es wird empfohlen, einen eindeutigen zufälligen Schlüssel mit einer Mindestlänge von 32 Byte zu verwenden. Beispielsweise kann die kryptografische Open SSL-Bibliothek einen zufälligen Schlüssel generieren, indem der Befehl openssl rand -hex 32 ausgeführt wird.
 
-Sie können auf [ein Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) verweisen, das sich auf die Konfiguration von Bereinigungsschlüsseln und die Durchführung der CDN-Cache-Bereinigung konzentriert.
+Sie können [ein Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) durchlaufen, das sich auf die Konfiguration von Bereinigungsschlüsseln und die Durchführung der CDN-Cache-Bereinigung konzentriert.
 
 ## Standardauthentifizierung {#basic-auth}
 
