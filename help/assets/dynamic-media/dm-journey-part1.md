@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # Dynamic Media-Tour: Grundlagen, Teil 1 {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Willkommen bei der Dynamic Media-Tour.
 
@@ -268,7 +268,6 @@ Die obige Ausgabedarstelleung ist jetzt live! [Jetzt probieren](https://s7d1.sce
 
 In Teil 1 dieser Journey wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr über das Gelesene erfahren möchten, nutzen Sie die folgenden Materialien, um die Konzepte zu vertiefen. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 

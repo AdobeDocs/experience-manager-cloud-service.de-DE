@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # Dynamic Media-Tour: Grundlagen, Teil II  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Willkommen bei der Dynamic Media-Tour: Grundlagen, Teil II, bei der Sie Folgendes lernen können:
 
@@ -211,8 +211,6 @@ Sie haben sich gerade über Bildsätze und Viewer informiert. Sehen wir uns eini
 ## Optional – Weitere Informationen
 
 Wenn Sie mehr darüber erfahren möchten, was Sie gerade gelesen haben, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu erkunden. Ansonsten ist Ihre Dynamic Media-Tour abgeschlossen!
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_
