@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
 workflow-type: tm+mt
 source-wordcount: '2686'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Best
 * BPA kann in jeder Umgebung ausgeführt werden, es wird jedoch empfohlen, das Tool in einer *Staging*-Umgebung auszuführen.
 
   >[!NOTE]
-  >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA auf einer *Authoring*-Umgebung auszuführen, die der *Produktions*-Umgebung im Hinblick auf Anpassungen, Konfigurationen, Inhalte und Anwenderprogrammen möglichst nahekommt. Alternativ kann BPA in einem Klon der *Autoren*-Produktionsumgebung ausgeführt werden.
+  >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA in einer *Stage* -Umgebung auszuführen, die der Umgebung *Produktion* im Hinblick auf Anpassungen, Konfigurationen, Inhalte und Benutzeranwendungen möglichst nahe kommt. Alternativ kann BPA in einem Klon der *Autoren*-Produktionsumgebung ausgeführt werden.
 
 * Die Erstellung von BPA-Berichten kann sehr viel Zeit in Anspruch nehmen, von einigen Minuten bis zu einigen Stunden. Die benötigte Zeit hängt in hohem Maße von der Größe und Art des AEM-Repository-Inhalts, der AEM-Version und anderen Faktoren ab.
 
