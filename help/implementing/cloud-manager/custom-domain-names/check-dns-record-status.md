@@ -1,33 +1,33 @@
 ---
 title: Überprüfen des Status von DNS-Einträgen
-description: Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst werden.
+description: Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst wurden.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 90%
+source-wordcount: '366'
+ht-degree: 39%
 
 ---
 
 
 # Überprüfen des Status von DNS-Einträgen {#check-dns-record-status}
 
-Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst werden.
+Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst wurden.
 
-## Status der DNS-Einträge {#status}
+## DNS-Eintragsstatus {#status}
 
-Ein benutzerdefinierter Domain-Name kann Livetraffic erst bereitstellen, wenn das DNS korrekt aufgelöst wurde. In Cloud Manager können Sie feststellen, ob Ihr Domain-Name ordnungsgemäß auf Ihre AEM as a Cloud Service-Website aufgelöst wird.
+Ein benutzerdefinierter Domänenname kann Live-Traffic erst bereitstellen, wenn das DNS korrekt aufgelöst wurde. In Cloud Manager können Sie feststellen, ob Ihr Domänenname ordnungsgemäß auf Ihre AEM as a Cloud Service-Website aufgelöst wird.
 
 ## Voraussetzungen {#requirements}
 
-Sie müssen diese Anforderungen erfüllen, bevor Sie einen DNS-Datensatzstatus mit Cloud Manager überprüfen.
+Erfüllen Sie diese Anforderungen, bevor Sie einen DNS-Datensatzstatus mit Cloud Manager überprüfen.
 
-* Sie müssen die DNS-Einstellungen für Ihren benutzerdefinierten Domänennamen bereits konfiguriert haben, wie im Dokument [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) beschrieben.
+Sie müssen die DNS-Einstellungen für Ihren benutzerdefinierten Domänennamen bereits konfiguriert haben, wie unter [Benutzerdefinierten Domänennamen hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) beschrieben.
 
-## Überprüfen des DNS-Datensatzstatus {#how-to}
+## Überprüfen des Status von DNS-Einträgen {#how-to}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -39,29 +39,19 @@ Sie müssen diese Anforderungen erfüllen, bevor Sie einen DNS-Datensatzstatus m
 
 Cloud Manager führt eine DNS-Suche für Ihren Domänennamen durch und zeigt ihn [aktuellen Status](#statuses) an.
 
-Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerdefinierter Domain-Name zum ersten Mal überprüft und bereitgestellt wird. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv anklicken.
+Cloud Manager Trigger automatisch eine DNS-Suche, wenn Ihr benutzerdefinierter Domänenname zum ersten Mal erfolgreich verifiziert und bereitgestellt wurde. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv anklicken.
 
 ## DNS-Status in Cloud Manager {#statuses}
 
 Eine benutzerdefinierte Domain kann einen der folgenden Status in Cloud Manager haben.
 
-* **DNS-Status nicht erkannt**: Der DNS-Status wird erst dann erkannt, wenn Ihr benutzerdefinierter Domain-Name erfolgreich überprüft und bereitgestellt wurde.
-
-   * Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird.
-
-* **DNS wird falsch aufgelöst**: Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge nicht aufgelöst wurde oder fehlerhaft ist.
-
-   * Weitere Informationen finden Sie unter [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
-   * Wenn Sie bereit sind, müssen Sie auf das Symbol zum **erneuten Auflösen** neben dem Status klicken.
-
-* **DNS-Auflösung in Bearbeitung**: Die Auflösung ist in Bearbeitung.
-
-   * Dieser Status wird normalerweise angezeigt, nachdem Sie neben dem Status auf das Symbol zum **erneuten Auflösen** geklickt haben.
-
-* **DNS wird korrekt aufgelöst**: Ihre DNS-Einstellungen sind ordnungsgemäß konfiguriert.
-
-   * Ihre Website bedient Besucher.
+| Status | Beschreibung |
+| --- | --- |
+| DNS-Status nicht erkannt | Der DNS-Status wird erst erkannt, wenn Ihr benutzerdefinierter Domänenname erfolgreich verifiziert und bereitgestellt wurde. Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird. |
+| DNS wird falsch aufgelöst | Dieser Status zeigt an, dass die Konfiguration der DNS-Einträge nicht aufgelöst wurde oder fehlerhaft ist. Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) .<br>Wenn Sie bereit sind, müssen Sie neben dem Status das Symbol **Erneut auflösen** auswählen. |
+| DNS-Auflösung läuft | Die Entschließung ist in Arbeit. Dieser Status wird normalerweise angezeigt, nachdem Sie neben dem Status auf das Symbol zum **erneuten Auflösen** geklickt haben. |
+| DNS wird richtig aufgelöst | Ihre DNS-Einstellungen sind ordnungsgemäß konfiguriert. Ihre Website bedient Besucher. |
 
 ## Nächste Schritte {#next-steps}
 
-Herzlichen Glückwunsch! Sie haben Ihre benutzerdefinierte Domain für die Nutzung mit Cloud Manager erfolgreich konfiguriert. Weitere Informationen zur Verwaltung Ihrer benutzerdefinierten Domain-Namen mit Cloud Manager finden Sie unter [Verwalten benutzerdefinierter Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+Sie haben Ihre benutzerdefinierte Domain für die Nutzung mit Cloud Manager erfolgreich konfiguriert. Weitere Informationen zur Verwaltung Ihrer benutzerdefinierten Domänennamen mit Cloud Manager finden Sie im Dokument [Verwalten benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) .

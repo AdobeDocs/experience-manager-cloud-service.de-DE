@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '705'
 ht-degree: 67%
 
 ---
@@ -38,7 +38,7 @@ Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen 
 
 ## Benutzerdefinierte Domänennamen und eigene CDNs {#byo-cdn}
 
-AEM as a Cloud Service bietet einen integrierten Content Delivery Network (CDN)-Dienst, ermöglicht Ihnen aber auch das BYO (Bring Your Own) CDN zur Verwendung mit AEM. Benutzerdefinierte Domänen können entweder im AEM verwalteten CDN oder einem von Ihnen verwalteten CDN installiert werden.
+AEM as a Cloud Service bietet einen integrierten CDN-Dienst (Content Delivery Network), ermöglicht Ihnen aber auch das BYO (Bring Your Own)-CDN zur Verwendung mit AEM. Benutzerdefinierte Domänen können entweder im AEM verwalteten CDN oder einem von Ihnen verwalteten CDN installiert werden.
 
 * Cloud Manager verwaltet benutzerdefinierte Domänennamen und Zertifikate, die im AEM verwalteten CDN installiert sind.
 * Benutzerdefinierte Domänennamen und Zertifikate, die in einem BYO-CDN installiert sind, werden direkt in diesem CDN verwaltet.
@@ -52,13 +52,12 @@ In einer Umgebung können Sie beide Domänen im AEM verwalteten CDN installieren
 Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Aufgrund dieses Workflows sind verschiedene Schritte erforderlich, um benutzerdefinierte Domänennamen zu installieren, zu konfigurieren und zu überprüfen. In der folgenden Tabelle finden Sie einen Überblick über die erforderlichen Schritte, einschließlich Links zur Dokumentation mit Informationen zur Durchführung dieser Schritte.
 
 | Schritt | Beschreibung | Dokumentation |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Hinzufügen eines SSL-Zertifikats zu Cloud Manager | [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Hinzufügen einer Domain zu Cloud Manager | [Fügen Sie einen benutzerdefinierten Domänennamen hinzu](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | Hinzufügen eines TXT-Eintrags zur Verifizierung der Domain | [TXT-Eintrag hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | Konfigurieren der DNS-Einstellungen durch Hinzufügen von DNS-CNAME- oder APEX-Einträgen, die auf AEM as a Cloud Service verweisen | [Fügen Sie einen benutzerdefinierten Domänennamen hinzu](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | Überprüfen des Domain-Verifizierungsstatus | [Überprüfen des Domänennamenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Konfigurieren der DNS-Einstellungen durch Hinzufügen von DNS-CNAME- oder APEX-Einträgen, die auf AEM as a Cloud Service verweisen | [DNS-Einstellungen konfigurieren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | Überprüfen des Status von DNS-Einträgen | [Überprüfen des DNS-Datensatzstatus](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | Status von DNS-Datensätzen überprüfen | [Überprüfen des DNS-Datensatzstatus](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

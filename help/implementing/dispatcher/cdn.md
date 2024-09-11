@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1607'
 ht-degree: 63%
 
 ---
@@ -35,8 +35,10 @@ Kunden, die auf der Edge Delivery Services-Ebene veröffentlichen möchten, kön
 Zur Vorbereitung auf die Inhaltsbereitstellung mithilfe AEM integrierten CDN über die Self-Service-Benutzeroberfläche von Cloud Manager können Sie von den Adobe verwalteten CDN-Funktionen profitieren. Mit dieser Funktion können Sie die Self-Service-CDN-Verwaltung verwalten, einschließlich der Konfiguration und Installation von SSL-Zertifikaten wie DV (Domain Validation)- oder EV/OV (Extended/Organisations Validation)-Zertifikaten. Weitere Informationen zu diesen Methoden finden Sie unter folgenden Themen:
 
 * [SSL-Zertifikate verwalten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 * [Benutzerdefinierte Domänennamen verwalten](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Edge Delivery Services-Unterstützung in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+
 
 **Beschränken des Traffic**
 

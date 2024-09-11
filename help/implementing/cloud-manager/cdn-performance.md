@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 93%
+source-wordcount: '384'
+ht-degree: 76%
 
 ---
 
@@ -36,7 +36,7 @@ Das CDN-Dashboard ist auf der Übersichtsseite jedes Programms verfügbar.
 
    ![Leistung](assets/cdn-performance-overview.png)
 
-## Verwenden des Dashboards {#using}
+## Dashboard verwenden {#using}
 
 Das Dashboard enthält einen Gesamtwert für die CDN-Leistung sowie bei Bedarf Trends, Warnungen und Verbesserungsvorschläge.
 
@@ -66,13 +66,13 @@ Das Cache-Trefferverhältnis ist eine Maßeinheit dafür, wie viele Inhaltsanfra
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **Hit**: Daten werden aus dem Cache angefordert und gefunden.
-* **Miss**: Daten werden aus dem Cache angefordert, aber nicht gefunden.
-* **Pass**: Daten werden aus dem Cache angefordert und er so ist eingestellt, dass diese Daten auf keinen Fall zwischengespeichert werden.
-* **Other**: Alle Datenanforderungen aus dem Cache, für die nichts der obigen der Fall ist.
+* **Treffer** - Daten werden aus dem Cache angefordert und gefunden.
+* **Miss** - Daten werden aus dem Cache angefordert und nicht gefunden.
+* **Übergeben** - Daten werden aus dem Cache angefordert und auf keinen Fall zum Zwischenspeichern dieser Daten festgelegt.
+* **Sonstige** - Alle Datenanforderungen aus dem Cache, die mit keinem anderen Fall übereinstimmen.
 
 Cache-Metriken werden alle 24 Stunden aktualisiert.
 
 >[!TIP]
 >
->Weitere Informationen zur Interaktion von Cloud Manager und CDN mit der Dispatcher finden Sie im Dokument [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+>Weitere Informationen zur Interaktion von Cloud Manager und CDN mit Dispatcher finden Sie unter [Zwischenspeicherung in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
