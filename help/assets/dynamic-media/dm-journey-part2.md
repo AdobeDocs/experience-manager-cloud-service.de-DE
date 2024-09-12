@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 
 Willkommen bei der Dynamic Media-Tour: Grundlagen, Teil II, bei der Sie Folgendes lernen können:
 
-* Anatomie einer Dynamic Media-URL und wie Dynamic Media Inhalte bereitstellt
-* Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets
-* Bildsets, Rotationssets und Sets mit gemischten Medien
+* Anatomie einer Dynamic Media-URL und wie Dynamic Media Inhalte bereitstellt.
+* Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets.
+* Bildsets, Rotationssets und Sets für gemischte Medien.
 
 Siehe auch [Dynamic Media-Tour; Grundlagen, Teil I](/help/assets/dynamic-media/dm-journey-part1.md).
 
