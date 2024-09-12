@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '1314'
-ht-degree: 100%
+source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+workflow-type: tm+mt
+source-wordcount: '1350'
+ht-degree: 97%
 
 ---
 
@@ -153,6 +153,21 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 |         | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
 | **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie), Übereinstimmung, Ersatz | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies durch einen neuen Wert. |
 |              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie) | Setzt den Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder Anfrage-Header, Abfrageparameter oder Cookie auf seinen Wert in Kleinbuchstaben. |
+
+Aktionen ersetzen unterstützt Erfassungsgruppen, wie unten dargestellt:
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
 
 Aktionen können miteinander verkettet werden. Zum Beispiel:
 
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 | **redirect** | location | Wert für die Kopfzeile „Speicherort“. |
 |     | status (optional, Standardeinstellung ist 301) | Der HTTP-Status, der in der Umleitungsnachricht verwendet werden soll, standardmäßig 301, die zulässigen Werte sind: 301, 302, 303, 307, 308. |
+
+Die Speicherorte einer Umleitung können entweder Zeichenfolgenliterale (z. B. https://www.example.com/page) oder das Ergebnis einer Eigenschaft (z. B. Pfad) sein, die optional umgewandelt wird, mit der folgenden Syntax:
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
