@@ -1,11 +1,11 @@
 ---
-title: SSL-Zertifikate verwalten
+title: Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 18%
@@ -25,15 +25,15 @@ Der Status Ihrer SSL-Zertifikate kann auf einen Blick von der Seite **SSL-Zertif
 | --- | --- |
 | Grün | Das Zertifikat ist mindestens 14 Tage ab dem aktuellen Datum gültig. |
 | Orangefarben | Das Zertifikat läuft in weniger als 14 Tagen ab.<br> ・ Stellen Sie sicher, dass Sie planen, Ihr Zertifikat zu erneuern und es über die Cloud Manager-Benutzeroberfläche zu ersetzen, um möglichen Site-Zugriff oder -Ausfällen vorzubeugen.<br> ・ Cloud Manager sendet regelmäßige Benachrichtigungen in der Benutzeroberfläche, um Sie vor einem bevorstehenden Zertifikatablauf zu warnen. |
-| Rot | Das SSL-Zertifikat ist abgelaufen.<br>Siehe [Aktualisieren eines abgelaufenen, vom Kunden verwalteten SSL-Zertifikats](#update-ssl-certificate) oder [Löschen eines SSL-Zertifikats](#deleting-an-ssl-certificate). |
+| Rot | Das SSL-Zertifikat ist abgelaufen.<br>Siehe [Aktualisieren eines abgelaufenen kundenverwalteten SSL-Zertifikats](#update-ssl-certificate) oder [Löschen eines SSL-Zertifikats](#deleting-an-ssl-certificate). |
 
-## Aktualisieren eines abgelaufenen, kundenverwalteten SSL-Zertifikats {#update-ssl-certificate}
+## Aktualisieren eines abgelaufenen kundenverwalteten SSL-Zertifikats {#update-ssl-certificate}
 
 Wenn ein vom Kunden verwaltetes Zertifikat abläuft, funktionieren alle Domänen, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Durch die Aktualisierung Ihrer Zertifikate wird sichergestellt, dass Ihre Domäne weiterhin wie gewünscht funktioniert.
 
 Ein Benutzer muss Mitglied der Rolle **Business Owner** oder **Deployment Manager** sein, um diese Aufgabe abzuschließen.
 
-**Um ein abgelaufenes, vom Kunden verwaltetes SSL-Zertifikat zu aktualisieren,**
+**Aktualisieren eines abgelaufenen kundenverwalteten SSL-Zertifikats:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
@@ -52,7 +52,7 @@ Ein Benutzer muss Mitglied der Rolle **Business Owner** oder **Deployment Manage
 
 1. Klicken Sie auf **Aktualisieren** , um Ihre Änderungen zu speichern und sie automatisch anzuwenden.
 
-## Ersetzen eines abgelaufenen, kundenverwalteten SSL-Zertifikats {#replace-ssl-certificate}
+## Ersetzen eines abgelaufenen kundenverwalteten SSL-Zertifikats {#replace-ssl-certificate}
 
 Führen Sie dieselben Schritte aus, die unter [Aktualisieren eines abgelaufenen SSL-Zertifikats](#update-ssl-certificate) beschrieben werden, um ein abgelaufenes, vom Kunden verwaltetes SSL-Zertifikat zu ersetzen.
 
