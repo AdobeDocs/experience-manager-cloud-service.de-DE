@@ -3,10 +3,11 @@ title: Versionshinweise für Version 2024.7.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2024.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 77%
 
 ---
 
@@ -60,19 +61,25 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer
 
 **Hochladen von Assets mit dem Asset-Wähler**
 
-Der Asset-Wähler bietet Inhaltsautorinnen und Inhaltsautoren jetzt die Möglichkeit, endgültige Assets direkt aus dem Wähler hochzuladen. Dies erfolgt entweder durch Ziehen der Assets oder durch Durchsuchen des lokalen Dateisystems. Dadurch können Sie endgültige Assets aus der Anwendung Ihrer Wahl in das DAM hochladen.
+Der Asset-Selektor bietet Inhaltsautoren jetzt die Möglichkeit, endgültige Assets direkt aus dem Selektor hochzuladen, indem sie entweder per Drag-and-Drop oder über das lokale Dateisystem navigieren. Mit dieser Funktion können endgültige Assets von der Anwendung Ihrer Wahl in das DAM hochgeladen werden.
+
+### Frühzeitiger Zugriff in Dynamic Media {#dm-early-access}
+
+**KI-basierte Videobeschriftungen**
+
+KI-basierte Videountertitel in Adobe Dynamic Media verwenden künstliche Intelligenz, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion wurde entwickelt, um die Barrierefreiheit zu verbessern und das Benutzererlebnis zu verbessern, indem genaue Echtzeit-Untertitel bereitgestellt werden. Die KI analysiert den Audio-Track des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zur Genauigkeit oder Anpassung bearbeitet werden können. Diese Untertitel helfen dabei, die Anforderungen an die Barrierefreiheit zu erfüllen und die Videointeraktion für Zielgruppen zu verbessern, die textbasierte Videounterstützung nutzen oder bevorzugen.
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
 
 **Integration der Inhaltsurhebernachweise**
 
-Experience Manager Assets unterstützt jetzt Inhaltsurhebernachweise für unterstützte Bildformate. Hier finden Sie Informationen zur Herkunft des Assets und seiner Erstellung, einschließlich Informationen dazu, ob es mit GenAI geändert wurde.
+Experience Manager Assets unterstützt jetzt Inhaltsurhebernachweise für unterstützte Bildformate. Diese Funktion bietet Informationen zur Herkunft des Assets und zur Erstellung, einschließlich Informationen dazu, ob es mithilfe von GenAI geändert wurde.
 
 ![Inhaltsurhebernachweise](/help/assets/assets/content-credentials.png)
 
 **Visuelle Vorschau des Ordnerinhalts**
 
-Experience Manager Assets zeigt jetzt beim Durchsuchen von oder Suchen nach Inhalten eine visuelle Vorschau der Ordnerinhalte in der Ordnerminiaturansicht an, wodurch es leichter wird, die im AEM Assets-Repository verfügbaren Assets zu finden.
+Experience Manager Assets zeigt jetzt beim Durchsuchen oder Suchen nach Inhalten eine visuelle Vorschau der Ordnerinhalte in der Ordnerminiaturansicht an, was die Auffindbarkeit der im AEM Assets-Repository verfügbaren Assets verbessert.
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare
 
-Autorinnen und Autoren adaptiver Formulare können wiederholbare Formularfelder in vorkonfigurierten Funktionen verwenden, die im visuellen Regeleditor für Kernkomponenten verfügbar sind, um komplexe Geschäftslogik in den Formularen zu erstellen, ohne dass Anpassungen erforderlich sind oder das Entwicklungs-Team um Unterstützung gebeten werden muss.
+Autoren adaptiver Formulare können wiederholbare Formularfelder und native Funktionen des visuellen Regeleditors verwenden, um komplexe Geschäftslogik in Formularen zu erstellen, ohne dass Anpassungen oder Unterstützung durch das Entwicklungsteam erforderlich sind.
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 #### Erstellen adaptiver Formulare mit dem universellen Editor
 
-Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) von Adobe Experience Manager, um adaptive Formulare mithilfe von Drag-and-Drop-Authoring mit WYSIWYG zu erstellen, und zwar sowohl für Headless- als auch für Headful-Anmeldeerlebnisse. Bereitgestellt wird diese Funktion über Edge Delivery Services. Autorinnen und Autoren adaptiver Formulare können ganz einfach Experimente für Varianten der Formulare auf den Web-Seiten erstellen, sie starten und ermitteln, welche Erlebnisse die besten Ergebnisse für Endbenutzende bringen.
+Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) von Adobe Experience Manager, um adaptive Formulare mithilfe von Drag-and-Drop-Authoring mit WYSIWYG zu erstellen, und zwar sowohl für Headless- als auch für Headful-Anmeldeerlebnisse. Bereitgestellt wird diese Funktion über Edge Delivery Services. Autoren adaptiver Formulare können einfach Experimente für Varianten der Formulare auf den Webseiten erstellen und starten. Mit dieser Fähigkeit können sie die Erlebnisse mit der besten Leistung für Endbenutzer bestimmen.
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/
 
 ### Bereinigen von Inhalten im CDN mit einem selbst erstellten API-Schlüssel {#purge-cdn}
 
-Das Festlegen von TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. Wenn aktualisierte Inhalte jedoch sofort bereitgestellt werden müssen, kann es von Vorteil sein, den CDN-Cache direkt zu bereinigen.
+Das Festlegen von TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. In Szenarien, in denen es wichtig ist, aktualisierte Inhalte sofort bereitzustellen, kann es jedoch von Vorteil sein, den CDN-Cache direkt zu bereinigen.
 
-[Erfahren Sie](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token), wie Sie mit der Cloud Manager-Konfigurations-Pipeline ein API-Bereinigungs-Token selbst konfigurieren können, damit Sie eine der folgenden Variationen zum [Aufrufen der Bereinigungs-APIs](/help/implementing/dispatcher/cdn-cache-purge.md) verwenden können:
+[Erfahren Sie, wie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) die Konfiguration eines Bereinigungs-API-Tokens mithilfe der Cloud Manager-Konfigurations-Pipeline selbst bereitstellen kann, damit Sie [die Bereinigungs-APIs aufrufen können](/help/implementing/dispatcher/cdn-cache-purge.md), mit einer der folgenden Variationen:
+
 * Einzelne URL
 * Mehrere URLs unter Verwendung eines Tags
 * Vollständige CDN-Cache-Bereinigung
 
 ### Selbst durchgeführte Konfiguration des X-AEM-Edge-Key für das kundenseitig verwaltete CDN {#customermanaged-keys}
 
-Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dies kann jetzt selbst durchgeführt werden. Zu diesem Zweck wird der Schlüsselwert in einer Konfigurationsdatei deklariert, die mithilfe der Konfigurations-Pipeline bereitgestellt wird. Dadurch werden beim Onboarding in eine neue Umgebung alle Verzögerungen beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dieser Workflow ist jetzt Self-Service, indem der Schlüsselwert in einer Konfigurationsdatei deklariert wird, die mithilfe der Configuration Pipeline bereitgestellt wird. Dadurch werden alle Verzögerungen beim Einstieg in eine neue Umgebung beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
 
-Mit Traffic-Filterregeln, die die optional lizenzierbaren Regeln für eine WAF (Web Application Firewall) enthalten, können Sie konfigurieren, welcher Traffic erlaubt oder verweigert werden soll.
+Mit Traffic-Filterregeln, die die optional lizenzierbaren Web Application Firewall (WAF)-Regeln enthalten, können Sie konfigurieren, welcher Traffic blockiert werden soll.
 
-Jetzt können Sie [sich Warnhinweise zusenden lassen](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts), wenn Ihre Traffic-Filterregeln ausgelöst werden. E-Mail-Benachrichtigungen durch das Aktionszentrum informieren Sie darüber, wenn bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
+Jetzt können Sie [Warnhinweise abonnieren](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts), sobald Ihre Traffic-Filterregeln ausgelöst werden. E-Mail-Benachrichtigungen durch das Aktionszentrum informieren Sie darüber, wenn bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
 
 ### Early-Adopter-Programme im Zusammenhang mit der Inhaltsbereitstellung {#foundation-early-adopter}
 

@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1245'
+ht-degree: 79%
 
 ---
 
@@ -65,6 +65,12 @@ Nutzen Sie GenAI über die neue Funktion [Varianten generieren](/help/generative
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### Frühzeitiger Zugriff in Dynamic Media {#dm-early-access}
+
+**KI-basierte Videobeschriftungen**
+
+KI-basierte Videountertitel in Adobe Dynamic Media verwenden künstliche Intelligenz, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion wurde entwickelt, um die Barrierefreiheit zu verbessern und das Benutzererlebnis zu verbessern, indem genaue Echtzeit-Untertitel bereitgestellt werden. Die KI analysiert den Audio-Track des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zur Genauigkeit oder Anpassung bearbeitet werden können. Diese Untertitel helfen dabei, die Anforderungen an die Barrierefreiheit zu erfüllen und die Videointeraktion für Zielgruppen zu verbessern, die textbasierte Videounterstützung nutzen oder bevorzugen.
+
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
 
 **Aktualisierte Adobe Firefly-Bildgenerierung**
@@ -80,11 +86,11 @@ Assets as a Cloud Service unterstützt jetzt neben der bestehenden Unterstützun
 ### Neue Verbesserungen in Content Hub {#content-hub-new-enhancements}
 
 * Bessere Handhabung langer Dateinamen, einfaches Anzeigen des kompletten Namens über eine QuickInfo.
-* Verbesserte Miniaturansichten, die nun das Seitenverhältnis des Inhalts besser anpassen und einen größeren Inhaltsbereich abdecken.
+* Die Miniaturansichten wurden verbessert, um das Seitenverhältnis des Inhalts besser anzupassen und einen größeren Inhaltsbereich abzudecken.
 * Benutzerdefiniertes Miniaturbild-Erlebnis aus AEM mit Content Hub unterstützt.
 * Verbesserungen bei der Farbsuche.
 * Verbesserungen bei der Konfiguration von Suchvorgängen.
-* Die Informationsseite von Sammlungen wurde verbessert, sodass sie den Namen der Erstellenden widerspiegelt.
+* Die Informationsseite von Sammlungen wurde verbessert, um den Namen des Erstellers widerzuspiegeln.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -93,7 +99,7 @@ Assets as a Cloud Service unterstützt jetzt neben der bestehenden Unterstützun
 
 #### Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare
 
-Benutzende profitieren jetzt von einer Funktion zum automatischen Speichern, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
+Benutzende profitieren jetzt von einer Funktion zum automatischen Speichern, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzer nicht von Anfang an mit dem Ausfüllen von Formularen beginnen müssen.
 
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
@@ -112,17 +118,17 @@ Die folgenden generativen KI-Funktionen stehen zur Verfügung:
 
 * **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre Fragen zu AEM Forms. Der KI-Assistent fungiert als Ihre persönliche Wissensdatenbank und bietet hilfreiche Anleitungen und Empfehlungen direkt innerhalb der Plattform.
 
-* **Erstellung von adaptiven Formularen**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Prompts. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, durch die Abbrüche reduziert werden und das Erlebnis personalisiert wird.
+* **Adaptive Formularerstellung**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Aufforderungen. Adobe Generative AI generiert automatisch benutzerfreundliche Formulare, die Abbrüche reduzieren und das Erlebnis personalisieren.
 
 * **Bereichsgenerierung für Forms**: Generieren Sie Formularabschnitte, die auf bestimmte Datenerfassungsanforderungen zugeschnitten sind. Generieren Sie beispielsweise Abschnitte zum Erfassen von Zahlungsinformationen, Kundenpräferenzen oder Reisedetails.
 
-* **Ändern von Formular-Layouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Prompts. Probieren Sie verschiedene Layouts wie Assistenten- oder Registerkartenansichten aus, um Ihr Formular optimal zu gestalten. Verwenden Sie generative KI-Prompts, um die Reaktivität Ihrer Formulare auf Mobilgeräten zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzenden gern verwendet werden.
+* **Ändern von Formularlayouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mit generativen KI-Aufforderungen. Probieren Sie verschiedene Layouts wie Assistenten- oder Registerkartenansichten aus, um Ihr Formular optimal zu gestalten. Verwenden Sie generative KI-Eingabeaufforderungen, um Ihre Formulare für eine schnelle Reaktion auf Mobilgeräte zu optimieren und visuell ansprechende Formulare zu erstellen, die die Benutzer lieben.
 
-* **Konfigurieren der Übermittlungsaktion**: Verwenden Sie generative KI-Prompts, um mühelos eine Übermittlungsaktion für Ihr Formular zu konfigurieren. Treffen Sie Ihre Wahl aus einer Bibliothek vordefinierter Übermittlungsaktionen oder aus einer Liste von benutzerdefinierten Übermittlungsaktionen, die von Ihrem eigenen Entwicklungs-Team erstellt und bereitgestellt wurden.
+* **Konfigurieren der Sendeaktion**: Verwenden Sie generative KI-Aufforderungen, um mühelos eine Sendeaktion für Ihr Formular zu konfigurieren. Wählen Sie aus einer Bibliothek vordefinierter Sendeaktionen oder benutzerdefinierter Sendeaktionen, die von Ihrem Entwicklungsteam erstellt und bereitgestellt werden.
 
 >[!IMPORTANT]
 >
-> Wenn Sie Interesse haben, dem Early-Access-Programm für Innovationen beizutreten, senden Sie einfach von Ihrer offiziellen Adresse aus eine E-Mail mit der Liste der Funktionen, die Sie interessieren, an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+> Sie möchten am Early Access Program für Forms-Innovationen teilnehmen? Senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit der Liste der Funktionen, an denen Sie interessiert sind.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
