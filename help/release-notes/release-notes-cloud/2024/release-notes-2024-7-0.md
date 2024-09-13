@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.7.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 77%
+source-wordcount: '1626'
+ht-degree: 76%
 
 ---
 
@@ -65,9 +65,11 @@ Der Asset-Selektor bietet Inhaltsautoren jetzt die Möglichkeit, endgültige Ass
 
 ### Frühzeitiger Zugriff in Dynamic Media {#dm-early-access}
 
-**KI-basierte Videobeschriftungen**
+**KI-generierte Videobeschriftungen**
 
-KI-basierte Videountertitel in Adobe Dynamic Media verwenden künstliche Intelligenz, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion wurde entwickelt, um die Barrierefreiheit zu verbessern und das Benutzererlebnis zu verbessern, indem genaue Echtzeit-Untertitel bereitgestellt werden. Die KI analysiert den Audio-Track des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zur Genauigkeit oder Anpassung bearbeitet werden können. Diese Untertitel helfen dabei, die Anforderungen an die Barrierefreiheit zu erfüllen und die Videointeraktion für Zielgruppen zu verbessern, die textbasierte Videounterstützung nutzen oder bevorzugen.
+KI-generierte Videountertitel in Adobe Dynamic Media verwenden künstliche Intelligenz, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion wurde entwickelt, um die Barrierefreiheit zu verbessern und das Benutzererlebnis zu verbessern, indem genaue Echtzeit-Untertitel bereitgestellt werden. Die KI analysiert den Audio-Track des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zur Genauigkeit oder Anpassung bearbeitet werden können. Diese Untertitel helfen dabei, die Anforderungen an die Barrierefreiheit zu erfüllen und die Videointeraktion für Zielgruppen zu verbessern, die textbasierte Videounterstützung nutzen oder bevorzugen.
+
+Um frühzeitigen Zugriff auf die Unterstützung von durch KI generierten Untertiteln in Ihrem Dynamic Media-Konto zu erhalten, erstellen und senden Sie eine Adobe-Support-Anfrage ](/help/assets/dynamic-media/video.md##enable-dash).[
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
 
