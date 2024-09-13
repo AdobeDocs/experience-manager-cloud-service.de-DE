@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
 workflow-type: tm+mt
-source-wordcount: '5615'
+source-wordcount: '5621'
 ht-degree: 97%
 
 ---
@@ -629,8 +629,8 @@ ht-degree: 97%
    + Content Hub {#content-hub}
       + [Übersicht](/help/assets/product-overview.md)
       + [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md)
-      + [Konfigurieren der Benutzeroberfläche von Content Hub](/help/assets/configure-content-hub-ui-options.md)
       + [Hochladen oder Importieren der von Marken genehmigten Assets in Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Konfigurieren der Benutzeroberfläche von Content Hub](/help/assets/configure-content-hub-ui-options.md)
       + [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Suchen nach Assets in Content Hub](/help/assets/search-assets-content-hub.md)
       + [Asset-Eigenschaften](/help/assets/asset-properties-content-hub.md)
@@ -638,7 +638,8 @@ ht-degree: 97%
       + [Herunterladen von Assets mit Content Hub](/help/assets/download-assets-content-hub.md)
       + [Verwalten von Sammlungen in Content Hub](/help/assets/collections-content-hub.md)
       + [Bearbeiten von Bildern mit Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
-      + [Asset-Insights in Content Hub](/help/assets/insights-content-hub.md)
+      + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
+      + [ Häufig gestellte Fragen zu Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
    + Best Practices{#best-practices}
       + [Best Practices für die Suche](/help/assets/search-best-practices.md)
       + [Metadatenverwaltung und Best Practices](/help/assets/metadata-best-practices.md)
