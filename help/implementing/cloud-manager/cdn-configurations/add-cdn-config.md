@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 6%
+source-wordcount: '356'
+ht-degree: 7%
 
 ---
 
@@ -40,11 +40,11 @@ Bei von Adobe verwalteten CDNs sind bei Verwendung von DV-Zertifikaten nur Sites
    | Sites | Wählen Sie eine Edge Delivery-Site aus. |
    | Umgebung | Wählen Sie eine bestimmte Cloud Service-Umgebung aus, die Sie im Rahmen Ihrer AEM-Einrichtung als Ziel auswählen möchten.<br> Wählen Sie in der Dropdownliste **Ebene** eine der folgenden Optionen aus:<br> ・ Wählen Sie **Publish** aus, um eine Live-Produktionsumgebung auszuwählen, in der Inhalte an Endbenutzer bereitgestellt werden.<br> ・ Wählen Sie **Vorschau** für Staging- oder Nicht-Produktionsumgebungen aus, in denen Sie Änderungen testen, bevor sie live geschaltet werden. |
 
-1. Wählen Sie Ihren CDN-Typ aus, indem Sie eine der folgenden Optionen auswählen:
+1. Wählen Sie Ihren CDN-Typ und die zugehörige Konfiguration aus, indem Sie eine der folgenden Optionen auswählen:
 
-   | CDN-Typ | Beschreibung |
+   | CDN-Typ | Konfigurationsdetails |
    | --- | --- |
-   | Von Adobe verwaltetes CDN | a. Wählen Sie in der Dropdownliste **Domäne** den Domänennamen aus, den Sie verwenden möchten.<br>Keine verifizierten Domänen in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. Wählen Sie in der Dropdown-Liste SSL-Zertifikat ein Zertifikat aus, das Sie verwenden möchten.<br>Keine SSL-Zertifikate in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-   | Andere CDN-Anbieter. | Wählen Sie diese Option aus, wenn Sie einen eigenen CDN-Anbieter und nicht das für Sie verfügbare Adobe-verwaltete CDN verwenden.<br>Wählen Sie in der Dropdownliste **Domäne** den Domänennamen aus, den Sie verwenden möchten.<br>Keine verfügbaren SSL-Zertifikate in der Dropdownliste? Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+   | Von Adobe verwaltetes CDN | Führen Sie unter **Konfigurationsdetails** folgende Schritte aus:<br>a. Wählen Sie in der Dropdownliste **Domäne** den Domänennamen aus, den Sie verwenden möchten.<br>Keine verifizierten Domänen in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. Wählen Sie in der Dropdownliste **SSL-Zertifikat** ein Zertifikat aus, das Sie verwenden möchten.<br>Keine SSL-Zertifikate in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
+   | Anderer CDN-Anbieter | Wählen Sie diese Option aus, wenn Sie einen eigenen CDN-Anbieter und nicht das für Sie verfügbare Adobe-verwaltete CDN verwenden.<br>Wählen Sie unter **Konfigurationsdetails** in der Dropdownliste **Domäne** den Domänennamen aus, den Sie verwenden möchten.<br>Keine verifizierten Domänen in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Klicken Sie auf **Speichern**.

@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 42%
+source-wordcount: '763'
+ht-degree: 41%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL-Z
 
 | | Anwendungsfall | Beschreibung |
 | --- | --- | --- |
-| 1 | **Adobe verwaltetes Zertifikat (DV)** | Mit Cloud Manager können Benutzer ein DV-Zertifikat (Domain Validation) konfigurieren, das von Adobe zur schnellen Einrichtung von Domänen stammt. DV-Zertifikate sind die grundlegendsten SSL-Zertifizierungsstufen und werden häufig zu Testzwecken oder zum Schützen von Websites mit grundlegender Verschlüsselung verwendet. DV-Zertifikate sind sowohl in [Produktions- als auch in Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) verfügbar. |
+| 1 | **Adobe verwaltetes Zertifikat (DV)** | Mit Cloud Manager können Benutzer ein DV-Zertifikat (Domain Validation) konfigurieren, das von Adobe zur schnellen Einrichtung von Domänen stammt. DV-Zertifikate sind die grundlegendsten SSL-Zertifizierungsstufen und werden häufig zu Testzwecken oder zum Schützen von Websites mit grundlegender Verschlüsselung verwendet. DV-Zertifikate sind sowohl in [Produktionsprogrammen als auch in Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) verfügbar. Nachdem das DV-Zertifikat erstellt wurde, erneuert Adobe es automatisch alle drei Monate, es sei denn, es wird gelöscht. |
 | 2 | **Vom Kunden verwaltetes Zertifikat (OV/EV)** | Cloud Manager verwendet einen Platform-TLS-Dienst (Transport Layer Security), um kundeneigene SSL-Zertifikate und private Schlüssel von Zertifizierungsstellen von Drittanbietern zu verwalten, z. B. *Let&#39;s Encrypt*. |
 
 >[!NOTE]
@@ -41,7 +41,7 @@ Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL-Z
 
 Unternehmen und Organisationen verwenden SSL-Zertifikate, um ihre Websites zu schützen und ihren Kunden das Vertrauen in sie zu geben. Um das SSL-Protokoll verwenden zu können, muss ein Webserver ein SSL-Zertifikat verwenden.
 
-Wenn eine Organisation oder ein Unternehmen ein Zertifikat von einer Zertifizierungsstelle (Zertifizierungsstelle) anfordert, führt die Zertifizierungsstelle einen Überprüfungsprozess durch. Dieser Prozess kann von der Verifizierung der Domain-Namenskontrolle über die Erfassung von Firmenregisterdokumenten bis hin zu Abonnentenvereinbarungen reichen. Nachdem die Informationen eines Unternehmens überprüft wurden, signiert die Zertifizierungsstelle seinen öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifikatbehörden Stammzertifikate in Webbrowsern haben, wird das Zertifikat der Entität über eine *Vertrauenskette* verknüpft und vom Webbrowser als vertrauenswürdiges Zertifikat erkannt.
+Wenn eine Organisation oder ein Unternehmen ein Zertifikat von einer Zertifizierungsstelle (CA) anfordert, führt die Zertifizierungsstelle einen Überprüfungsprozess durch. Dieser Prozess kann von der Verifizierung der Domain-Namenskontrolle über die Erfassung von Firmenregisterdokumenten bis hin zu Abonnentenvereinbarungen reichen. Nachdem die Informationen eines Unternehmens überprüft wurden, signiert die Zertifizierungsstelle seinen öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifikatbehörden Stammzertifikate in Webbrowsern haben, wird das Zertifikat der Entität über eine *Vertrauenskette* verknüpft und vom Webbrowser als vertrauenswürdiges Zertifikat erkannt.
 
 >[!IMPORTANT]
 >
