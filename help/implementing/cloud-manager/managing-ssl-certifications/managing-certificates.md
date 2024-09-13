@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 18%
+ht-degree: 14%
 
 ---
 
@@ -41,7 +41,7 @@ Ein Benutzer muss Mitglied der Rolle **Business Owner** oder **Deployment Manage
 1. Navigieren Sie im Bildschirm **Umgebungen** zum Bildschirm **SSL-Zertifikate** .
 1. Klicken Sie in der Zeile des abgelaufenen kundenverwalteten Zertifikats, das Sie aktualisieren möchten, auf die Suchschaltfläche ganz rechts und wählen Sie dann **Ansicht und Aktualisieren** aus.
 
-   ![Aktualisieren einer abgelaufenen, kundenverwalteten SSL-Zertifizierung](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![Aktualisieren einer abgelaufenen kundenverwalteten SSL-Zertifizierung](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. Gehen Sie im Dialogfeld **SSL-Zertifikat anzeigen und aktualisieren** wie folgt vor:
 
@@ -87,4 +87,4 @@ Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurat
 
 Weitere Informationen finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) .
 
-Eine ähnliche Nachricht wird auch auf den Seiten **IP-Zulassungsliste** und **Umgebungen** für Umgebungen mit bereits vorhandenen CDN-Konfigurationen für IP-Zulassungslisten oder benutzerdefinierte Domain-Namen gezeigt.
+Eine ähnliche Meldung wird auch auf den Seiten **IP-Zulassungsliste** und **Umgebungen** für Umgebungen bereitgestellt, die bereits über CDN-Konfigurationen für IP-Zulassungslisten oder benutzerdefinierte Domänennamen verfügen.

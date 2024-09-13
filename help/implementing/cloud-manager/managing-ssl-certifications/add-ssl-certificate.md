@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6fb672e03fe28ae8af6dc873791c7d1ac1fb8fd7
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 20%
@@ -13,12 +13,11 @@ ht-degree: 20%
 ---
 
 
-# Hinzufügen eines SSL-Zertifikats
+# Hinzufügen eines SSL-Zertifikats {#add-ssl-cert}
 
 Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager ein kundenverwaltetes SSL-Zertifikat oder ein von der Adobe generiertes und verwaltetes DV-Zertifikat (Domain Validation) hinzufügen.
 
 Siehe auch [Fehlerbehebung bei SSL-Zertifikatfehlern](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).
-
 
 ## Hinzufügen eines SSL-Zertifikats {#adding-an-ssl-certificate}
 
