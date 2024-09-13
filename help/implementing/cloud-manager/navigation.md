@@ -1,26 +1,26 @@
 ---
-title: Navigation durch die Cloud Manager-Benutzeroberfläche
+title: Navigieren zur Cloud Manager-Benutzeroberfläche
 description: Erfahren Sie, wie die Benutzeroberfläche von Cloud Manager aufgebaut ist und wie Sie Ihre Programme und Umgebungen verwalten.
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 75%
+source-wordcount: '1518'
+ht-degree: 67%
 
 ---
 
 
-# Navigation durch die Cloud Manager-Benutzeroberfläche {#navigation}
+# Navigieren durch die Cloud Manager-Benutzeroberfläche {#navigation}
 
 Erfahren Sie, wie die Benutzeroberfläche von Cloud Manager aufgebaut ist und wie Sie Ihre Programme und Umgebungen verwalten.
 
 Die Benutzeroberfläche für die Cloud-Verwaltung besteht in erster Linie aus zwei grafischen Schnittstellen:
 
-* [Die Konsole „Meine Programme“](#my-programs-console), in der Sie alle Ihre Programme anzeigen und verwalten können.
-* [Das Fenster „Programmübersicht“](#program-overview), in dem Sie die Details eines einzelnen Programms sehen und verwalten können.
+* der [Konsole „Meine Programme“](#my-programs-console), in der Sie alle Ihre Programme anzeigen und verwalten können.
+* dem [Fenster „Programmübersicht“](#program-overview), in dem Sie die Details eines einzelnen Programms sehen und verwalten können.
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
    * Beachten Sie, dass die Registerkarten standardmäßig geschlossen sind und über das Hamburger-Menü in der Kopfzeile [Cloud Manager](#cloud-manager-header) angezeigt werden können.
 1. [Statistiken und Aktionsaufrufe](#statistics) für einen Überblick über Ihre aktuellen Aktivitäten
 1. [**Meine Programme**](#my-programs-section) mit einem Überblick über Ihre gesamten Programme
-1. [Schnell-Links](#quick-links-section) für den einfachen Zugriff auf verwandte Ressourcen
+1. [Schnelllinks](#quick-links-section) , um einfach auf zugehörige Ressourcen zuzugreifen.
 
 >[!TIP]
 >
@@ -51,16 +51,16 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
 
 Es gibt zwei Symbolleisten übereinander.
 
-#### Cloud Manager-Header {#cloud-manager-header}
+#### Cloud Manager-Kopfzeile {#cloud-manager-header}
 
 Die erste ist der Header von Cloud Manager, der bestehen bleibt, wenn Sie in Cloud Manager navigieren. Er ist ein Anker, der Ihnen Zugriff auf Einstellungen und Informationen bietet, die für alle Cloud Manager-Programme gelten.
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-1. Das Hamburger-Menü, über das Sie auf Registerkarten zugreifen können, die Sie zu bestimmten Teilen eines Programms in einem einzelnen Programm führen oder je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln können.
+1. Das Hamburger Menü bietet Zugriff auf Tabs, die Sie zu bestimmten Teilen eines Programms führen können. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
 1. Über die Schaltfläche „Cloud Manager“ gelangen Sie zurück zur Konsole „Meine Programme“ von Cloud Manager, unabhängig davon, wo Sie sich in Cloud Manager befinden.
 1. Tippen oder klicken Sie auf die Schaltfläche „Feedback“, um Adobe Feedback zu Cloud Manager zu geben.
-1. Der Organisationsselektor zeigt die Organisation an, bei der Sie sich derzeit angemeldet haben (in diesem Beispiel „Foundation Intern“). Tippen oder klicken Sie, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
+1. Der Organisationsauswahl zeigt die Organisation an, bei der Sie derzeit angemeldet sind (in diesem Beispiel „We.Retail-Prod“). Tippen oder klicken Sie, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
 1. Durch Tippen oder Klicken auf den Lösungsumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
 1. Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
 1. Das Benachrichtigungssymbol wird mit der Anzahl der derzeit zugewiesenen unvollständigen [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md) gekennzeichnet.
@@ -86,7 +86,7 @@ Der Abschnitt Statistiken und Aktionsaufrufe enthält aggregierte Daten für Ihr
 
 Oder wenn Sie gerade mit der Einrichtung Ihrer Organisation beginnen, gibt es Tipps zu den nächsten Schritten oder Dokumentationsressourcen.
 
-### Abschnitt „Meine Programme“ {#my-programs-section}
+### Bereich &quot;Meine Programme&quot; {#my-programs-section}
 
 Der Hauptinhalt der Konsole **Meine Programme** ist die Liste der Programme im Abschnitt **Meine Programme** .
 
@@ -96,7 +96,8 @@ Im Abschnitt **Meine Programme** werden die Karten der einzelnen Programme aufge
 >
 >Abhängig von Ihren Berechtigungen können Sie bestimmte Programme möglicherweise nicht auswählen.
 
-Verwenden Sie die Sortieroptionen, um das benötigte Programm leichter zu finden.
+
+Verwenden Sie die Sortieroptionen, um das Programm, das Sie benötigen, leichter zu finden.
 
 ![Sortieroptionen](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
@@ -110,7 +111,7 @@ Verwenden Sie die Sortieroptionen, um das benötigte Programm leichter zu finden
 
 #### Programmkarten {#program-cards}
 
-Jedes Programm wird durch eine Karte (oder eine Zeile in einer Tabelle) dargestellt, die einen Überblick über das Programm und Schnell-Links bietet, um Maßnahmen zu ergreifen.
+Eine Karte (oder Zeile in einer Tabelle) stellt jedes Programm dar, bietet einen Überblick über das Programm und schnelle Links, um Maßnahmen zu ergreifen.
 
 ![Programmkarte](assets/program-card.png)
 
@@ -144,7 +145,7 @@ Abhängig von den bei der Erstellung des Programms ausgewählten Optionen kann e
 
 ![Informationen](assets/information-list-view.png)
 
-Über das Symbol mit Auslassungspunkten gelangen Sie zu weiteren Aktionen, die Sie im Programm ausführen können.
+Über das Symbol mit den Auslassungspunkten gelangen Sie zu weiteren Aktionen, die Sie im Programm ausführen können.
 
 ![Schaltfläche mit Auslassungspunkten für Programme](assets/program-ellipsis.png)
 
@@ -158,22 +159,23 @@ Abhängig von den bei der Erstellung des Programms ausgewählten Optionen kann e
 >Weitere Informationen zu Programmen sowie zur Erstellung und Verwaltung von Programmen finden Sie in den folgenden Dokumenten.
 >
 >* [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
 >* [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [Sandbox-Programme erstellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
 
-### Schnellverlinkungs-Abschnitt {#quick-links-section}
 
-Über den Abschnitt „Schnell-Links“ erhalten Sie Zugriff auf häufig verwendete, zugehörige Ressourcen.
+### Abschnitt &quot;Schnelllinks&quot; {#quick-links-section}
 
-## Fenster „Programmübersicht“ {#program-overview}
+Über den Schnelllink-Abschnitt erhalten Sie Zugriff auf häufig verwendete Ressourcen, die miteinander verknüpft sind.
 
-Nachdem Sie ein Programm in der Konsole **[Meine Programme](#my-programs-console)** ausgewählt haben, gelangen Sie zum Fenster **Programmübersicht** .
+## Fenster &quot;Programmübersicht&quot; {#program-overview}
+
+Wenn ein Programm in der Konsole **[Meine Programme](#my-programs-console)** ausgewählt ist, gelangen Sie zum Fenster **Programmübersicht** .
 
 ![Programmübersicht](assets/program-overview.png)
 
 Die Programmübersicht bietet Zugriff auf alle Details eines Cloud Manager-Programms. Wie die Konsole **Meine Programme** besteht sie aus mehreren Teilen.
 
-1. [Symbolleisten](#program-overview-toolbar), um schnell zur Konsole „Meine Programme“ zurückzukehren und durch das Programm zu navigieren.
+1. [Symbolleisten](#program-overview-toolbar) , um schnell zur Konsole &quot;Meine Programme&quot;zurückzuspringen und im Programm zu navigieren
 1. [Registerkarten](#program-tabs), um zwischen den verschiedenen Aspekten des Programms zu wechseln
 1. Ein [Aktionsaufruf](#cta) basierend auf den letzten Aktionen des Programms
 1. Eine [Übersicht über die Umgebungen](#environments) des Programms
@@ -183,9 +185,9 @@ Die Programmübersicht bietet Zugriff auf alle Details eines Cloud Manager-Progr
 
 ### Symbolleisten {#program-overview-toolbar}
 
-Die Symbolleisten für die Programmübersicht ähneln denen der Konsole [Meine Programme](#my-programs-toolbars). Hier werden nur die Unterschiede veranschaulicht.
+Die Symbolleisten für die Programmübersicht ähneln den Symbolleisten der Konsole [Meine Programme](#my-programs-toolbars). Hier werden nur die Unterschiede veranschaulicht.
 
-#### Cloud Manager-Header {#cloud-manager-header-2}
+#### Cloud Manager-Kopfzeile {#cloud-manager-header-2}
 
 Der Header von Cloud Manager verfügt über ein Hamburger-Menü, das automatisch geöffnet wird, um die navigierbaren Registerkarten der Programmübersicht anzuzeigen.
 
@@ -195,28 +197,38 @@ Tippen oder klicken Sie auf das Hamburger-Menüsymbol, um die Registerkarten aus
 
 #### Programmsymbolleiste {#program-toolbar-2}
 
-Die Programmsymbolleiste ermöglicht weiterhin den schnellen Wechsel zu anderen Programmen, bietet aber auch Zugriff auf kontextbezogene Aktionen wie das Hinzufügen und Bearbeiten des Programms.
+Die Programmsymbolleiste ermöglicht weiterhin einen schnellen Wechsel zu anderen Programmen, bietet aber auch Zugriff auf kontextbezogene Aktionen wie das Hinzufügen und Bearbeiten des Programms.
 
 ![Programmsymbolleiste](assets/cloud-manager-program-toolbar.png)
 
-Außerdem zeigt die Symbolleiste jederzeit an, auf welcher Registerkarte Sie sich befinden, wenn Sie die Registerkarten über das Hamburger-Menü ausgeblendet haben.
+Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich gerade befinden, auch wenn Sie die Registerkarten über das Hamburger Menü ausgeblendet haben.
 
 ### Programmregisterkarten {#program-tabs}
 
-Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Daten werden in Registerkarten zusammengefasst, um die Navigation im Programm zu vereinfachen. Die Registerkarten bieten Zugriff auf:
+Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und Daten werden in Tabs zusammengefasst, um die Navigation im Programm zu vereinfachen. Die Registerkarten bieten Zugriff auf:
+
+**Programm**
 
 * Übersicht: Die im aktuellen Dokument beschriebene Programmübersicht
 * [Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity): Verlauf der Pipeline-Ausführungen des Programms
 * [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines): Alle für das Programm konfigurierten Pipelines
 * [Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md): Alle für das Programm konfigurierten Repositorys
 * [Berichte](/help/implementing/cloud-manager/sla-reporting.md): Metriken wie SLA-Daten
+
+**Dienste**
+
 * [Umgebungen](/help/implementing/cloud-manager/manage-environments.md): Alle für das Programm konfigurierten Umgebungen
+* [Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Verwalten von Edge Delivery-Sites
 * [Domäneneinstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Verwalten benutzerdefinierter Domänennamen für das Programm
-* [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - Verwalten von SSL-Zertifikaten für das Programm
+* [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Verwalten von SSL-Zertifikaten für das Programm
+* [CDN-Konfigurationen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Verwalten von CDN-Konfigurationen
 * [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Zulassungslisten für bestimmte IP-Adressen definieren
 * [Content-Sets](/help/implementing/developing/tools/content-copy.md): Sätze von Inhalten, die zu Kopierzwecken festgelegt wurden
 * [Aktivität „Inhalt kopieren“](/help/implementing/developing/tools/content-copy.md): Aktivitäten zur Inhaltskopie
 * [Netzwerkinfrastrukturen](/help/security/configuring-advanced-networking.md) - Verwaltung erweiterter Netzwerkoptionen für das Programm
+
+**Ressourcen**
+
 * Lernpfade: Zusätzliche Lernressourcen zu Cloud Manager
 
 Wenn Sie ein Programm öffnen, gelangen Sie standardmäßig zur Registerkarte **Übersicht**. Die aktuelle Registerkarte ist hervorgehoben. Wählen Sie eine andere Registerkarte aus, um deren Details anzuzeigen.
@@ -225,7 +237,7 @@ Verwenden Sie das Hamburger-Menü im [Cloud Manager-Header](#cloud-manager-heade
 
 ### Aktionsaufruf {#cta}
 
-Der Aktionsaufrufs-Abschnitt gibt Ihnen je nach Status Ihres Programms hilfreiche Informationen. Für ein neues Programm können Sie die nächsten Schritte sowie eine Erinnerung an ein Live-Datum sehen, [festgelegt während der Programmerstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+Der Abschnitt mit dem Aktionsaufruf stellt Ihnen je nach Status Ihres Programms hilfreiche Informationen zur Verfügung. Bei einem neuen Programm werden möglicherweise die nächsten Schritte und eine Erinnerung an ein &quot;Go-Live&quot;-Datum, [festgelegt während der Programmerstellung, angezeigt.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
 
 ![Aktionsaufruf für ein neues Programm](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 

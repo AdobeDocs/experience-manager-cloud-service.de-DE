@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 20%
@@ -23,7 +23,7 @@ Siehe auch [Fehlerbehebung bei SSL-Zertifikatfehlern](/help/implementing/cloud-m
 
 Die Bereitstellung eines Zertifikats kann einige Tage dauern. Daher empfiehlt Adobe, das Zertifikat rechtzeitig vor Ablauf einer Frist oder einem Live-Datum bereitzustellen.
 
-Überprüfen Sie die **Zertifikatanforderungen** in der [Einführung in das Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements), um sicherzustellen, dass AEM as a Cloud Service das Zertifikat unterstützt, das Sie hinzufügen möchten.
+Überprüfen Sie die **Zertifikatanforderungen** in der [Einführung in das Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements), um sicherzustellen, dass AEM as a Cloud Service das Zertifikat unterstützt, das Sie hinzufügen möchten.
 
 Ein Benutzer muss Mitglied der Rolle **Business Owner** oder **Deployment Manager** sein, um diese Aufgabe abzuschließen.
 
@@ -45,7 +45,7 @@ Ein Benutzer muss Mitglied der Rolle **Business Owner** oder **Deployment Manage
 
 1. Klicken Sie in der rechten oberen Ecke der Seite auf **SSL-Zertifikat hinzufügen**.
 
-1. Führen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** basierend auf [Ihrem speziellen Anwendungsfall](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) einen der folgenden Schritte aus:
+1. Führen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** basierend auf [Ihrem speziellen Anwendungsfall](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) einen der folgenden Schritte aus:
 
    | | Anwendungsfall | Schritte |
    | --- | --- | --- |

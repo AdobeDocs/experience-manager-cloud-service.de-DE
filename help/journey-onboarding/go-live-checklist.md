@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über alle Elemente, die vorhanden sein müssen, 
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 56%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 56%
       * Konfigurieren Sie SSL und DNS gemäß der Dokumentation des CDN-Anbieters.
    * Wenn Sie kein zusätzliches CDN verwenden, verwalten Sie SSL und DNS gemäß der folgenden Dokumentation:
       * Verwalten von SSL-Zertifikaten
-         * [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Einführung in SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [SSL-Zertifikate verwalten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Verwalten von benutzerdefinierten Domain-Namen (DNS)
          * Stellen Sie sicher, dass die DNS-Umstellung keine unerwarteten Probleme verursacht. Erstellen Sie eine Test-Subdomain, mit der Sie Ihre Produktionsinstanz verbinden können, bevor Sie live gehen und eine Reihe von UAT-Tests durchführen. Wenn Ihre Domäne also example.com ist, können Sie eine Subdomain test.example.com erstellen und sie auf die Produktion anwenden. Suchen Sie während des UAT-Tests der Domäne nach Elementen wie der richtigen Link-Umleitung, Zwischenspeicherung und Dispatcher-Konfigurationen.

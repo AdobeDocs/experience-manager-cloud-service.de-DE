@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 68%
@@ -41,7 +41,7 @@ Sie können [die gleichen Schritte zum Anzeigen und Aktualisieren eines benutzer
 
 >[!NOTE]
 >
->Das SSL-Zertifikat muss gültig sein, [bereits konfiguriert](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und den benutzerdefinierten Domänennamen enthalten, den Sie aktualisieren.
+>Das SSL-Zertifikat muss gültig sein, [bereits konfiguriert](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) und den benutzerdefinierten Domänennamen enthalten, den Sie aktualisieren.
 
 ## Benutzerdefinierten Domänennamen löschen {#deleting}
 

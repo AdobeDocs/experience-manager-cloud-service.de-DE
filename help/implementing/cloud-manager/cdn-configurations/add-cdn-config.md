@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 7%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -27,13 +27,16 @@ Bei von Adobe verwalteten CDNs sind bei Verwendung von DV-Zertifikaten nur Sites
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie im linken Navigationsbereich unter **Dienste** auf **CDN-Konfigurationen**.
+1. Führen Sie je nach Anwendungsfall einen der folgenden Schritte aus:
 
-1. Klicken Sie in der rechten oberen Ecke der Seite &quot;CDN-Konfigurationen&quot;auf **Hinzufügen**.
-
-   ![CDN-Dialogfeld konfigurieren](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
+   | Anwendungsfall | Schritte |
+   | --- | --- |
+   | Ich möchte eine CDN-Konfiguration zu einer *vorhandenen* Edge Delivery-Site in Cloud Manager hinzufügen | a. Klicken Sie im linken Navigationsbereich unter **Dienste** auf **Edge Delivery Sites**.<br>b. Klicken Sie in der Edge Delivery-Tabelle am Ende einer Zeile, der keine Domäne zugeordnet ist, auf die Auslassungszeichen.<br>c. Klicken Sie auf **CDN konfigurieren**.  ![Klicken Sie auf CDN für eine Edge Delivery-Site konfigurieren](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Ich möchte eine CDN-Konfiguration in Cloud Manager hinzufügen | a. Klicken Sie im linken Navigationsbereich unter **Dienste** auf **CDN-Konfigurationen**.<br>b. Klicken Sie in der rechten oberen Ecke der Seite &quot;CDN-Konfigurationen&quot;auf **Hinzufügen**. |
 
 1. Wählen Sie im Dialogfeld **CDN konfigurieren** in der Dropdownliste **Origin** eine der folgenden Optionen aus:
+
+   ![CDN-Dialogfeld konfigurieren](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
    | Ursprung | Beschreibung |
    | --- | --- |

@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Versionshinweise für Cloud Manager 20
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 83%
@@ -39,7 +39,7 @@ Die Version 2024.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 5. Se
 
 * **Unterstützung für Edge Delivery Services in Cloud Manager:**
 
-  Wenn Sie über eine Edge Delivery Services-Lizenz als Teil von AEM Sites verfügen, können Sie Ihre Site jetzt mit Edge Delivery Services direkt über Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) integrieren. [ Diese Funktion ermöglicht eine geführte Live-Schaltung im Self-Service. Außerdem werden wichtige Workflows wie die Verwaltung von Domain-Namen, SSL-Zertifikate und CDN-Mappings über alle AEM-Eigenschaften hinweg vereinheitlicht, sodass Konsistenz und Effizienz gewährleistet sind. <!-- CMGR-49859 -->
+  Wenn Sie über eine Edge Delivery Services-Lizenz als Teil von AEM Sites verfügen, können Sie Ihre Site jetzt mit Edge Delivery Services direkt über Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) integrieren. [ Diese Funktion ermöglicht eine geführte Live-Schaltung im Self-Service. Außerdem werden wichtige Workflows wie die Verwaltung von Domain-Namen, SSL-Zertifikate und CDN-Mappings über alle AEM-Eigenschaften hinweg vereinheitlicht, sodass Konsistenz und Effizienz gewährleistet sind. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >
