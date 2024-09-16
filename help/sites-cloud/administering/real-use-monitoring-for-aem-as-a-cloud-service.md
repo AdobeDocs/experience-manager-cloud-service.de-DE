@@ -1,13 +1,13 @@
 ---
 title: Real Use Monitoring (RUM) für AEM as a Cloud Service
-description: Erfahren Sie, wie Sie mit Real Use Monitoring (RUM) das digitale Benutzererlebnis einer Website oder Anwendung in Echtzeit erfassen und analysieren können.
+description: Erfahren Sie mehr über Real Use Monitoring (RUM) , einen automatisierten Dienst, der die Überwachung der clientseitigen Datenerfassung ermöglicht.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: c0b86950e36b936d7d471b5bf7b671df7db5d317
+source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 14%
+source-wordcount: '1012'
+ht-degree: 13%
 
 ---
 
@@ -23,27 +23,21 @@ ht-degree: 14%
 
 ## Übersicht {#overview}
 
-Der RUM-Dienst (Real Use Monitoring) ist eine Technologie zur Leistungsüberwachung, die die digitalen Benutzererlebnisse einer Website oder Anwendung in Echtzeit erfasst und analysiert. Es bietet Einblicke in die Echtzeit-Leistung einer Webanwendung und bietet tiefere Einblicke in das Erlebnis der Endbenutzer. Der Dienst konzentriert sich auf die Leistungsoptimierung durch die Überwachung der Website-Interaktionen und nicht auf die Benutzer selbst.
-
-Mit RUM werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis zur Rückgabe der Anfrage an den Browser verfolgt. Es hilft Entwicklern, die Anwendung zu erweitern, damit sie für die Endbenutzer einfach zu verwenden ist.
-
->[!INFO]
->
->Die &quot;Echtzeit-Benutzerüberwachung&quot;wurde in &quot;Echtzeit-Überwachung der Nutzung&quot;umbenannt, da sie das wahre Wesen des Dienstes besser widerspiegelt.
+Der RUM-Dienst (Real Use Monitoring) ist eine Technologie zur Leistungsüberwachung, die den clientseitigen Traffic auf einer Website oder einer Anwendung in Echtzeit überwacht. Dieser Dienst konzentriert sich auf die Erfassung von Metriken und Daten, die für die Leistungsoptimierung durch die Überwachung von Website-Interaktionen und nicht von den Benutzern selbst benötigt werden. Mit RUM werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis zur Rückgabe der Anfrage an den Browser verfolgt.
 
 ## Wer kann von einem echten Anwendungsüberwachungsdienst profitieren? {#who-can-benefit-from-rum-service}
 
-AEM hat RUM entwickelt, um Kunden und Adobe zu helfen, zu verstehen, wie Besucher mit AEM Sites interagieren. RUM kann verwendet werden, um Leistungsprobleme zu diagnostizieren und die Effektivität von Experimenten zu messen. RUM bewahrt die Privatsphäre der Besucher durch Stichproben auf - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
+AEM hat Real Use Monitoring entwickelt, um Kunden und Adobe zu verstehen, wie Endbenutzer mit AEM Sites interagieren. Bei der Überwachung der tatsächlichen Verwendung werden Leistungsprobleme diagnostiziert und die Effektivität von Experimenten gemessen. Die Überwachung der tatsächlichen Verwendung wahrt den Datenschutz von Besuchern durch Stichproben - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
 
 ## Überwachungsdienst für die tatsächliche Verwendung und Datenschutz {#rum-service-and-privacy}
 
-Der Real Use Monitoring-Dienst in AEM wurde entwickelt, um den Datenschutz der Besucher zu wahren und die Datenerfassung zu minimieren. Als Besucher bedeutet dies, dass die Website, die Sie besuchen oder der Adobe zur Verfügung gestellt werden, keine personenbezogenen Daten erfasst.
+Der Real Use Monitoring-Dienst in AEM bewahrt den Datenschutz der Besucher und minimiert die Datenerfassung. Als Besucher bedeutet dies, dass die Website, die Sie besuchen oder der Adobe zur Verfügung gestellt werden, keine personenbezogenen Daten erfasst.
 
 Als Site-Benutzer ist keine zusätzliche Anmeldung erforderlich, um die Überwachung über diese Funktion zu aktivieren. Es gibt kein zusätzliches Popup- oder Zustimmungsformular, das die Endbenutzer für die Aktivierung von RUM akzeptieren können.
 
 ## Datenstichproben für den Real Use Monitoring-Dienst {#rum-service-data-sampling}
 
-Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. AEM RUM-Dienst erfasst nur Informationen von einem kleinen Bruchteil der Seitenansichten. Der Dienst ist dazu gedacht, gesampelt und anonymisiert zu werden und nicht als Ersatz für Analytics. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können die Sampling-Rate derzeit nicht erhöhen oder verringern. Um den Traffic insgesamt genau zu schätzen, werden für jede 100 Seitenansichten Daten aus 1 erfasst, sodass Sie eine zuverlässige Annäherung des gesamten Traffics erhalten.
+Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. AEM Real Use Monitoring (RUM)-Dienst erfasst nur Informationen aus einem kleinen Bruchteil der Seitenansichten. Der Dienst ist dazu gedacht, gesampelt und anonymisiert zu werden und nicht als Ersatz für Analytics. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können die Sampling-Rate derzeit nicht erhöhen oder verringern. Um den Traffic insgesamt genau zu schätzen, werden für jede 100 Seitenansichten Daten aus 1 erfasst, sodass Sie eine zuverlässige Annäherung des gesamten Traffics erhalten.
 
 Bei der Entscheidung, ob die Daten erfasst werden, erfolgt dies auf Seitenansichtsbasis und es ist praktisch unmöglich, Interaktionen auf mehreren Seiten zu verfolgen. Standardmäßig hat RUM kein Konzept von Besuchern oder Sitzungen, sondern nur von Seitenansichten.
 
@@ -65,31 +59,31 @@ Der Real Use Monitoring Service soll verhindern, dass personenbezogene Daten erf
 
 ## Funktionsweise der Echtzeit-Nutzungsüberwachung für Kunden {#how-rum-works-for-a-customer}
 
-Real Use Monitoring überwacht automatisch den clientseitigen Traffic, um Ihnen wertvolle Einblicke zu bieten. Als Adobe-Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Mit der Einführung der allgemeinen Verfügbarkeit (GA) profitieren Sie automatisch von dieser neuen Funktion.
+Die Überwachung der tatsächlichen Verwendung überwacht automatisch den clientseitigen Traffic. Als Adobe-Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Da die Echtzeit-Nutzungsüberwachung (RUM) die allgemeine Verfügbarkeit (GA) ist, profitieren Sie automatisch von dieser neuen Funktion. Der Real Use Monitoring-Dienst stellt heute keine Metriken über ein Visualisierungs-Tool bereit. Wir arbeiten daran, Ihnen diese Funktion so schnell wie möglich zur Verfügung zu stellen.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Verwendung der Daten des Real Use Monitoring Service {#how-rum-service-data-is-being-used}
+## Wie Adobe die Echtuse-Überwachung verwendet {#how-rum-data-is-being-used}
 
-RUM-Daten sind für folgende Zwecke von Vorteil:
+Die Daten zur Überwachung der tatsächlichen Verwendung werden für folgende Zwecke verwendet:
 
 * Identifizieren und Beheben von Leistungsengpässen bei Kunden-Sites
-* Zur Optimierung der automatisierten Traffic-Suche, die Seitenansichten enthält.
 * Um zu verstehen, wie AEM mit anderen Skripten (z. B. Analyse-, Targeting- oder externen Bibliotheken) auf derselben Seite interagiert, können Sie die Kompatibilität erhöhen.
+<!--
+## Limitations and understanding variance in page views and performance metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
-## Einschränkungen und Verstehen von Abweichungen bei Seitenansichten und Leistungsmetriken {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+Here are key considerations for customers to keep in mind when interpreting their RUM data:
 
-Bei der Analyse von RUM-Daten kann es zu Abweichungen bei Seitenansichten und anderen Leistungsmetriken kommen. Diese Abweichungen können verschiedenen Faktoren zugeschrieben werden, die mit der Client-seitigen Überwachung in Echtzeit verbunden sind. Im Folgenden finden Sie wichtige Hinweise, die Kundinnen und Kunden bei der Interpretation ihrer RUM-Daten beachten sollten:
+1. **Tracker blockers**
 
-1. **Tracker-Blocker**
+   * End-users employing tracker blockers or privacy extensions can impede RUM data collection, as these tools restrict the tracking scripts' execution. This restriction may lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
 
-   * Endbenutzer, die Tracker-Blocker oder Datenschutzerweiterungen verwenden, können die RUM-Datenerfassung behindern, da diese Tools die Ausführung der Tracking-Skripte einschränken. Diese Einschränkung kann zu untergemeldeten Seitenansichten und Benutzerinteraktionen führen, was zu einer Diskrepanz zwischen der tatsächlichen Site-Aktivität und den von RUM erfassten Daten führt.
+1. **Limitations in capturing headless API/JSON calls**
 
-1. **Einschränkungen bei der Erfassung von Headless-API-/JSON-Aufrufen**
-
-   * Der RUM-Datendienst konzentriert sich auf das clientseitige Erlebnis und erfasst nicht die Backend-API- oder JSON-Aufrufe, die derzeit aus einer nicht AEM Headless-App stammen. Der Ausschluss dieser Aufrufe aus RUM-Dienstdaten erzeugt Abweichungen von den von CDN Analytics gemessenen Inhaltsanforderungen.
+   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls made from a non-AEM headless app at this time. The exclusion of these calls from RUM service data creates variances from the content requests measured by CDN Analytics.
+-->
 
 ## Häufig gestellte Fragen {#faq}
 
@@ -99,7 +93,7 @@ Bei der Analyse von RUM-Daten kann es zu Abweichungen bei Seitenansichten und an
    Yes.
 -->
 
-1. **Werden die Metriken &quot;Interaktion mit der nächsten Farbe&quot;, &quot;Zeit bis zum ersten Byte&quot;und &quot;Erste contentful Farbe&quot;erfasst?**
+1. **Werden die Metriken &quot;Interaktion mit der nächsten Farbe&quot;, &quot;Zeit bis zum ersten Byte&quot;und &quot;Erste inhaltsreiche Farbe&quot;erfasst?**
 
    Die Interaktion mit der nächsten Farbe (INP) und der Zeit bis zum ersten Byte (TTFB) werden erfasst.  Die erste inhaltsreiche Farbe wird derzeit nicht erfasst.
 
@@ -113,6 +107,6 @@ Bei der Analyse von RUM-Daten kann es zu Abweichungen bei Seitenansichten und an
 
 1. **Wie kann ich mich abmelden?**
 
-   Adobe empfiehlt die Verwendung des Real Use Monitoring (RUM) aufgrund seiner wesentlichen Vorteile und der Möglichkeit, Ihre digitalen Erlebnisse zu optimieren. Es kann wertvolle Einblicke bieten, die zur Verbesserung der Website-Leistung beitragen können. Der Dienst ist nahtlos konzipiert und hat keine Auswirkungen auf die Leistung Ihrer Website.
+   Adobe empfiehlt die Verwendung des Real Use Monitoring (RUM) aufgrund seiner wesentlichen Vorteile und dass es Adobe ermöglicht, Ihre digitalen Erlebnisse zu optimieren, indem die Website-Performance verbessert wird. Der Dienst ist nahtlos konzipiert und hat keine Auswirkungen auf die Leistung Ihrer Website.
 
-   Opt-out bedeutet, dass diese Einblicke fehlen. Sollten Sie dennoch auf Probleme stoßen, wenden Sie sich an den Adobe Support.
+   Die Abmeldung kann bedeuten, dass Sie eine Chance verpassen, die Traffic-Interaktion auf Ihrer Website zu verbessern. Sollten Sie dennoch auf Probleme stoßen, wenden Sie sich an den Adobe Support.
