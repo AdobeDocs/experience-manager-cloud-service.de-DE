@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 39%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Sie müssen die DNS-Einstellungen für Ihren benutzerdefinierten Domänennamen b
 
 ## Überprüfen des Status von DNS-Einträgen {#how-to}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
 1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
@@ -37,7 +37,7 @@ Sie müssen die DNS-Einstellungen für Ihren benutzerdefinierten Domänennamen b
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
-Cloud Manager führt eine DNS-Suche für Ihren Domänennamen durch und zeigt ihn [aktuellen Status](#statuses) an.
+Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt dessen [aktuellen Status](#statuses) an:
 
 Cloud Manager Trigger automatisch eine DNS-Suche, wenn Ihr benutzerdefinierter Domänenname zum ersten Mal erfolgreich verifiziert und bereitgestellt wurde. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv anklicken.
 

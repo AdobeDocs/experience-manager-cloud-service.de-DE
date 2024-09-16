@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '5638'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -230,7 +230,7 @@ ht-degree: 96%
       + [Aufgaben von Entwickelnden und Bereitstellungs-Managern](/help/journey-onboarding/developers.md)
       + [Verwalten von Prinzipalen](/help/journey-migration/managing-principals.md)
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
-      + [Checkliste vor der Live-Schaltung](/help/journey-onboarding/go-live-checklist.md)
+      + [Checkliste für die Live-Schaltung](/help/journey-onboarding/go-live-checklist.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
       + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -459,17 +459,17 @@ ht-degree: 96%
    + [Überblick über Asset-Microservices](/help/assets/asset-microservices-overview.md)
    + [Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md)
    + Verwalten digitaler Assets {#manage}
-      + Micro-Frontend-Asset-Auswahl {#asset-selector}
-         + [Asset-Auswahl - Übersicht](/help/assets/overview-asset-selector.md)
-         + Integrationen der Asset-Auswahl {#asset-selector-integration}
-            + [Übersicht über die Asset-Selektor-Integrationen](/help/assets/integrate-asset-selector.md)
-            + [Integrieren der Asset-Auswahl in eine Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
+      + Micro-Frontend-Asset-Wähler {#asset-selector}
+         + [Überblick über den Asset-Wähler](/help/assets/overview-asset-selector.md)
+         + Asset-Wähler-Integrationen {#asset-selector-integration}
+            + [Überblick über die Asset-Wähler-Integrationen](/help/assets/integrate-asset-selector.md)
+            + [Integrieren des Asset-Wählers mit einer Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
             + [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integrieren der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
-         + [Beispiele für die Asset-Auswahl](/help/assets/asset-selector-examples.md)
-         + [Anpassung des Asset-Selektors](/help/assets/asset-selector-customization.md)
-         + [Asset-Selektor-Upload](/help/assets/asset-selector-upload.md)
+         + [Beispiele für den Asset-Wähler](/help/assets/asset-selector-examples.md)
+         + [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
+         + [Hochladen des Asset-Wählers](/help/assets/asset-selector-upload.md)
       + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Erneutes Verarbeiten von Assets](/help/assets/reprocessing.md)
@@ -1108,11 +1108,11 @@ ht-degree: 96%
       + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
          + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
          + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
-         + [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+         + [Qualitätsregeln für benutzerspezifischen Code](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Funktionstests {#functional-testing}
             + [Überblick über Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
             + [Java Funktionsprüfung](/help/implementing/cloud-manager/java-functional-testing.md)
-            + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
+            + [UI-Tests](/help/implementing/cloud-manager/ui-testing.md)
          + [Experience Audit-Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
       + [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1121,13 +1121,13 @@ ht-degree: 96%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
       + [Erweiterte Netzwerke](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=de)
-      + Edge Delivery Sites {#edge-delivery-sites}
+      + Edge Delivery-Sites {#edge-delivery-sites}
          + [Einführung in Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Hinzufügen einer Edge Delivery-Site zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Verwalten von Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
-      + Domäneneinstellungen {#custom-domain-names}
+      + Domain-Einstellungen {#custom-domain-names}
          + [Einführung in die Domäneneinstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [Benutzerdefinierten Domänennamen hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Status des benutzerdefinierten Domänennamens überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)

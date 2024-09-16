@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 40%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +81,7 @@ Der Fehler wird wie folgt behoben:
 
 >[!TIP]
 >
->Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert normalerweise 1 bis 2 Werktage. Daher wird dringend empfohlen, die Domains rechtzeitig vor ihrem Aufschaltdatum zu installieren.
+>Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert normalerweise 1 bis 2 Werktage. Daher wird dringend empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Der Fehler wird wie folgt behoben:
 
 Wenn Sie bereits über eine CDN-Konfiguration für Ihre benutzerdefinierten Domänennamen verfügen, wird auf den Seiten **Benutzerdefinierte Domänennamen** und **Umgebung** eine informative Meldung angezeigt. Es wird empfohlen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager verwaltet und angezeigt werden können.
 
-Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
+Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 
 Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) .
 
