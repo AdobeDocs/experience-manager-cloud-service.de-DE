@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1359'
 ht-degree: 1%
 
 ---
@@ -177,9 +177,10 @@ AEM Protokolle (einschließlich Apache/Dispatcher) werden unter einem Ordner mit
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 Unter jedem Ordner wird eine einzelne Datei erstellt und an diese angehängt. Kunden sind für die Verarbeitung und Verwaltung dieser Datei verantwortlich, sodass sie nicht zu groß wird.
 
@@ -209,6 +210,9 @@ Zu beachten:
 
 * Erstellen Sie einen API-Schlüssel ohne Integration mit einem bestimmten Cloud-Anbieter.
 * Die Eigenschaft &quot;tags&quot;ist optional.
+* Für AEM Protokolle wird das Quell-Tag des Datadog auf einen der Werte `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` oder `aemhttpderror` festgelegt
+* Für CDN-Protokolle ist das Quell-Tag &quot;Datadog&quot;auf `aemcdn` gesetzt.
+* Das Tag des Datadog-Dienstes ist auf `adobeaemcloud` gesetzt, Sie können es jedoch im Abschnitt &quot;Tags&quot;überschreiben.
 
 
 ### Elasticsearch und OpenSearch {#elastic}
@@ -230,10 +234,12 @@ data:
 
 Zu beachten:
 
+* Standardmäßig ist der Port 443. Optional kann sie mit einer Eigenschaft mit dem Namen `port` überschrieben werden.
 * Verwenden Sie für Anmeldeinformationen nicht die Kontoanmeldeinformationen, sondern die Bereitstellungsberechtigungen. Dies sind die Anmeldeinformationen, die auf einem Bildschirm generiert werden, der diesem Bild ähneln kann:
 
 ![Elastic deployment credentials](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* Für AEM Protokolle ist `index` auf einen der Werte `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` oder `aemhttpderror` festgelegt.
 * Die optionale Pipeline-Eigenschaft sollte auf den Namen der Elasticsearch- oder OpenSearch-Erfassungspipeline festgelegt werden, die so konfiguriert werden kann, dass der Protokolleintrag an den entsprechenden Index weitergeleitet wird. Der Prozessortyp der Pipeline muss auf *script* und die Skriptsprache auf *schmerless* eingestellt sein. Im Folgenden finden Sie ein Beispielskript-Snippet zum Weiterleiten von Protokolleinträgen in einen Index wie aemaccess_dev_26_06_2024:
 
 ```
@@ -254,15 +260,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com:8443/aem_logs/aem"
+      url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
 Zu beachten:
 
-* Die URL-Zeichenfolge muss **https://** enthalten. Andernfalls schlägt die Überprüfung fehl. Wenn in der URL-Zeichenfolge kein Port enthalten ist, wird Port 443 (der standardmäßige HTTPS-Port) angenommen.
-* Wenn Sie einen anderen Port als 443 verwenden möchten, geben Sie ihn bitte als Teil der URL an.
+* Die URL-Zeichenfolge muss **https://** enthalten. Andernfalls schlägt die Überprüfung fehl.
+* Die URL kann einen Port enthalten. Beispiel: `https://example.com:8443/aem_logs/aem`. Wenn in der URL-Zeichenfolge kein Port enthalten ist, wird Port 443 (der standardmäßige HTTPS-Port) angenommen.
 
 #### HTTPS-CDN-Protokolle {#https-cdn}
 
@@ -278,13 +284,14 @@ Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, die auf den Wert `aemc
 
 Für AEM Protokolle (einschließlich Apache/Dispatcher) werden Webanfragen (POSTs) kontinuierlich gesendet, mit einer JSON-Payload, die ein Array von Protokolleinträgen ist, mit den verschiedenen Protokolleintragsformaten, wie unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-format) unten erwähnt.
 
-Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, die auf einen der folgenden Werte festgelegt ist:
+Es gibt auch eine Eigenschaft mit dem Namen `Source-Type`, die auf einen der folgenden Werte festgelegt ist:
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,8 +306,13 @@ data:
       enabled: true
       host: "splunk-host.example.com"
       token: "${{SPLUNK_TOKEN}}"
-      index: "AEMaaCS"
+      index: "aemaacs"
 ```
+
+Zu beachten:
+
+* Standardmäßig ist der Port 443. Optional kann sie mit einer Eigenschaft mit dem Namen `port` überschrieben werden.
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -343,119 +355,26 @@ aem_tier: author
 
 ## Erweiterte Netzwerkfunktionen {#advanced-networking}
 
->[!NOTE]
->
->Diese Funktion steht noch nicht für frühe Anwender bereit.
-
-
 Einige Unternehmen beschränken, welcher Traffic von den Protokollierungszielen empfangen werden kann.
 
-Für das CDN-Protokoll können Sie die IP-Adressen auf die Zulassungsliste setzen, wie in der [Schnelldokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn die Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen (Nicht-Adobe-)Azure Blob Store senden, in den Logik geschrieben werden kann, um die Protokolle von einer dedizierten IP-Adresse an ihr endgültiges Ziel zu senden.
+Für das CDN-Protokoll können Sie die IP-Adressen auf die Zulassungsliste setzen, wie in der [Schnelldokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn die Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen HTTPS-Server oder (Nicht-Adobe) Azure Blob Store senden, wo Logik geschrieben werden kann, um die Protokolle von einer bekannten IP an ihr ultimatives Ziel zu senden.
 
-Für AEM Logs (einschließlich Apache/Dispatcher) können Sie die Protokollweiterleitung so konfigurieren, dass sie [erweiterte Netzwerke](/help/security/configuring-advanced-networking.md) durchlaufen. Sehen Sie sich die Muster für die drei folgenden erweiterten Netzwerktypen an, die einen optionalen Parameter `port` sowie den Parameter `host` verwenden.
-
-### Flexibler Port-Ausgang {#flex-port}
-
-Wenn der Protokolltraffic an einen anderen Port als 443 geleitet wird (z. B. 8443 unten), konfigurieren Sie erweiterte Netzwerke wie folgt:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-und konfigurieren Sie die YAML-Datei wie folgt:
+Für AEM Protokolle (einschließlich Apache/Dispatcher) können Sie, wenn Sie [erweiterte Netzwerke](/help/security/configuring-advanced-networking.md) konfiguriert haben, die Eigenschaft advancedNetworking verwenden, um sie von einer dedizierten Ausgangs-IP-Adresse oder über einen VPN weiterzuleiten.
 
 ```
 kind: "LogForwarding"
 version: "1"
+metadata:
+  envTypes: ["dev"]
 data:
   splunk:
     default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
 ```
 
-### Dedizierte Ausgangs-IP {#dedicated-egress}
-
-
-Wenn der Log-Traffic aus einer dedizierten Egress-IP stammen muss, konfigurieren Sie erweiterte Netzwerke wie folgt:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-und konfigurieren Sie die YAML-Datei wie folgt:
-
-```
-      
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
-```
-
-### VPN {#vpn}
-
-Wenn der Protokolltraffic einen VPN durchlaufen muss, konfigurieren Sie erweiterte Netzwerke wie folgt:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-```
