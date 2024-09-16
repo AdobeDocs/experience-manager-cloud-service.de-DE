@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 35%
+ht-degree: 83%
 
 ---
 
@@ -17,39 +17,39 @@ ht-degree: 35%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="SSL-Zertifikate verwalten"
+>title="Verwalten von SSL-Zertifikaten"
 >abstract="Erfahren Sie, wie Cloud Manager Ihnen Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten zur Verfügung stellt, um Ihre Website für Ihre Benutzerinnen und Benutzer zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kundinnen bzw. Kunden gehören und von unabhängigen Zertifizierungsstellen bezogen werden."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Überprüfen des Status eines SSL-Zertifikats"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Überprüfen des Status eines SSL-Zertifikats"
 
 
-Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL-Zertifikaten (Secure Socket Layer), die die Site-Sicherheit Ihrer Benutzer gewährleisten. Die folgenden beiden Anwendungsfälle werden unterstützt:
+Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL(Secure Socket Layer)-Zertifikaten, die die Site für Benutzende sicher machen. Die beiden folgenden Anwendungsfälle werden unterstützt:
 
 <!-- CQDOC-21758, #1 -->
 
 | | Anwendungsfall | Beschreibung |
 | --- | --- | --- |
-| 1 | **Adobe verwaltetes Zertifikat (DV)** | Mit Cloud Manager können Benutzer ein DV-Zertifikat (Domain Validation) konfigurieren, das von Adobe zur schnellen Einrichtung von Domänen stammt. DV-Zertifikate sind die grundlegendsten SSL-Zertifizierungsstufen und werden häufig zu Testzwecken oder zum Schützen von Websites mit grundlegender Verschlüsselung verwendet. DV-Zertifikate sind sowohl in [Produktionsprogrammen als auch in Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) verfügbar. Nachdem das DV-Zertifikat erstellt wurde, erneuert Adobe es automatisch alle drei Monate, es sei denn, es wird gelöscht. |
-| 2 | **Vom Kunden verwaltetes Zertifikat (OV/EV)** | Cloud Manager verwendet einen Platform-TLS-Dienst (Transport Layer Security), um kundeneigene SSL-Zertifikate und private Schlüssel von Zertifizierungsstellen von Drittanbietern zu verwalten, z. B. *Let&#39;s Encrypt*. |
+| 1 | **Von Adobe verwaltetes Zertifkat (DV)** | Mit Cloud Manager können Benutzende ein DV(Domain Validation)-Zertifikat konfigurieren, das von Adobe zur schnellen Einrichtung von Domains bereitgestellt wird. DV-Zertifikate stehen für die einfachste SSL-Zertifizierungsstufe und werden häufig zu Testzwecken oder zum Schützen von Websites mit Grundverschlüsselung verwendet. DV-Zertifikate sind sowohl in [Produktionsprogrammen als auch in Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) verfügbar. Nachdem das DV-Zertifikat erstellt wurde, erneuert Adobe es automatisch alle drei Monate, es sei denn, es wird gelöscht. |
+| 2 | **Kundenseitig verwaltetes Zertifikat (OV/EV)** | Cloud Manager verwendet einen Plattform-TLS(Transport Layer Security)-Dienst, um kundeneigene SSL-Zertifikate und private Schlüssel von Zertifizierungsstellen von Drittanbietern zu verwalten, z. B. *Let’s Encrypt*. |
 
 >[!NOTE]
 >
->Kunden dürfen keine DV-Zertifikate (Domain Validation) hochladen.
+>Kundinnen und Kunden dürfen keine DV(Domain Validation)-Zertifikate hochladen.
 
 
 ## Einführung in SSL-Zertifikate {#certificates}
 
-Unternehmen und Organisationen verwenden SSL-Zertifikate, um ihre Websites zu schützen und ihren Kunden das Vertrauen in sie zu geben. Um das SSL-Protokoll verwenden zu können, muss ein Webserver ein SSL-Zertifikat verwenden.
+Unternehmen und Organisationen verwenden SSL-Zertifikate, um ihre Websites sicher zu machen, damit ihre Kundinnen und Kunden ihnen vertrauen können. Um das SSL-Protokoll verwenden zu können, muss ein Webserver ein SSL-Zertifikat verwenden.
 
-Wenn eine Organisation oder ein Unternehmen ein Zertifikat von einer Zertifizierungsstelle (CA) anfordert, führt die Zertifizierungsstelle einen Überprüfungsprozess durch. Dieser Prozess kann von der Verifizierung der Domain-Namenskontrolle über die Erfassung von Firmenregisterdokumenten bis hin zu Abonnentenvereinbarungen reichen. Nachdem die Informationen eines Unternehmens überprüft wurden, signiert die Zertifizierungsstelle seinen öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifikatbehörden Stammzertifikate in Webbrowsern haben, wird das Zertifikat der Entität über eine *Vertrauenskette* verknüpft und vom Webbrowser als vertrauenswürdiges Zertifikat erkannt.
+Wenn eine Organisation oder ein Unternehmen ein Zertifikat von einer Zertifizierungsstelle (CA) anfordert, führt die Zertifizierungsstelle einen Überprüfungsprozess durch. Dieser Prozess kann von der Überprüfung der Namenskontrolle der Domains bis zur Erfassung von Unternehmensregistrierungsdokumenten und Abonnentenvereinbarungen reichen. Sobald die Informationen eines Unternehmens oder einer Organisation verifiziert wurden, signiert die Zertifizierungsstelle den entsprechenden öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifizierungsstellen über Stammzertifikate in Webbrowsern verfügen, wird das Zertifikat der Organisation oder des Unternehmens über eine *Vertrauenskette* verknüpft und vom Webbrowser als vertrauenswürdiges Zertifikat erkannt.
 
 >[!IMPORTANT]
 >
->Cloud Manager stellt keine SSL-Zertifikate oder privaten Schlüssel bereit. Diese Informationen müssen bei einer Zertifizierungsstelle, einer vertrauenswürdigen Drittorganisation, eingeholt werden. Zu den bekannten Zertifikatbehörden gehören *DigiCert*, *Let&#39;s Encrypt*, *GlobalSign*, *Entrust* und *Verisign*.
+>Cloud Manager stellt keine SSL-Zertifikate oder privaten Schlüssel bereit. Diese müssen bei einer Zertifizierungsstelle, einer vertrauenswürdigen Drittorganisation, eingeholt werden. Zu den bekannten Zertifizierungsstellen gehören *DigiCert*, *Let&#39;s Encrypt*, *GlobalSign*, *Entrust* und *Verisign*.
 
-Cloud Manager unterstützt die folgenden Optionen für die Verwendung von SSL-Zertifikaten durch Kunden.
+Cloud Manager unterstützt die folgenden Optionen für die Verwendung von SSL-Zertifikaten durch Kundinnen und Kunden.
 
-* Mehrere Umgebungen können ein SSL-Zertifikat verwenden. Das heißt, sie kann einmal hinzugefügt, aber mehrmals verwendet werden.
+* Ein SSL-Zertifikat kann von mehreren Umgebungen verwendet werden. Es kann also einmal hinzugefügt, aber mehrmals verwendet werden.
 * Jede Cloud Manager-Umgebung kann mehrere Zertifikate verwenden.
 * Ein privater Schlüssel kann mehrere SSL-Zertifikate ausstellen.
 * Jedes Zertifikat enthält normalerweise mehrere Domains.
@@ -60,17 +60,17 @@ AEM as a Cloud Service unterstützt nur sichere `https`-Sites. Kunden mit mehrer
 
 ## SSL-Zertifikatanforderungen {#requirements}
 
-* AEM as a Cloud Service akzeptiert Zertifikate, die der OV- (Organisationsvalidierung), der EV- (erweiterte Validierung) oder der DV-Richtlinie (Domänenvalidierung) entsprechen. <!-- CQDOC-21758, #2 -->
-* Jedes Zertifikat muss ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel sein.
+* AEM as a Cloud Service akzeptiert Zertifikate, die den Richtlinien für OV (Organization Validation), EV (Extended Validation) oder DV (Domain Validation) entsprechen. <!-- CQDOC-21758, #2 -->
+* Es muss sich immer um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem passenden privaten 2048-Bit-RSA-Schlüssel handeln.
 * Selbstsignierte Zertifikate werden nicht akzeptiert.
 
-OV- und EV-Zertifikate bieten CA-validierte Informationen. Mithilfe dieser Informationen können Benutzer bewerten, ob der Website-Eigentümer, der E-Mail-Absender oder der digitale Unterzeichner von Code- oder PDF-Dokumenten vertrauenswürdig ist. DV-Zertifikate erlauben keine solche Eigentumsprüfung.
+OV- und EV-Zertifikate bieten CA-validierte Informationen. Mithilfe dieser Informationen können Benutzende bewerten, ob die Eigentümerin bzw. der Eigentümer der Website, die Absenderin bzw. der Absender der E-Mail oder die digitale Unterzeichnerin bzw. der digitale Unterzeichner von Code- oder PDF-Dokumenten vertrauenswürdig ist. DV-Zertifikate erlauben keine solche Prüfung der Eigentümerschaft.
 
 ### Vom Kunden verwaltetes SSL-Zertifikatformat {#certificate-format}
 
 <!-- CQDOC-21758, #3 -->
 
-SSL-Dateien müssen im PEM-Format vorliegen, damit sie in Cloud Manager installiert werden können. Die gängigen Dateierweiterungen des PEM-Formats umfassen `.pem,`. `crt`, `.cer` und `.cert`.
+SSL-Dateien müssen im PEM-Format vorliegen, damit sie in Cloud Manager installiert werden können. Häufige Dateierweiterungen des PEM-Formats umfassen `.pem,`, `crt`, `.cer` und `.cert`.
 
 Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten verwendet werden.
 
@@ -94,13 +94,13 @@ Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten v
 
 ## Begrenzung der Anzahl installierter SSL-Zertifikate {#limitations}
 
-Cloud Manager ermöglicht jederzeit maximal 50 installierte SSL-Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft werden und auch abgelaufene Zertifikate enthalten.
+Cloud Manager ermöglicht zu jedem Zeitpunkt maximal 50 installierte SSL-Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
 
 Wenn Sie die Grenze erreicht haben, überprüfen Sie Ihre Zertifikate und erwägen Sie, abgelaufene Zertifikate zu löschen. Alternativ können Sie mehrere Domänen im selben Zertifikat gruppieren, da ein Zertifikat mehrere Domänen (bis zu 100 SANs) abdecken kann.
 
 ## Weitere Informationen {#learn-more}
 
-Ein Benutzer mit den erforderlichen Berechtigungen kann Cloud Manager verwenden, um SSL-Zertifikate für ein Programm zu verwalten. Weitere Details zur Verwendung dieser Funktionen finden Sie in den folgenden Dokumenten.
+Benutzende mit den erforderlichen Berechtigungen können Cloud Manager verwenden, um SSL-Zertifikate für ein Programm zu verwalten. Weitere Details zur Verwendung dieser Funktionen finden Sie in den folgenden Dokumenten.
 
 * [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
 * [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
