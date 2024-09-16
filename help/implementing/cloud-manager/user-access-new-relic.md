@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Führen Sie diese Schritte aus, um Ihr Konto als New Relic-Benutzer bzw. -Benutz
 
 1. New Relic sendet Ihnen eine E-Mail mit einem Link zur Kontobestätigung.
 
-Wenn Sie keine Bestätigungs-E-Mail von New Relic erhalten, finden Sie weitere Informationen unter Abschnitt [Fehlerbehebung](#troubshooting).
+Wenn Sie keine Bestätigungs-E-Mail von New Relic erhalten, finden Sie weitere Informationen im Abschnitt [Fehlerbehebung](#troubshooting).
 
 ## Zugriff auf New Relic One {#accessing-new-relic}
 
@@ -159,7 +159,7 @@ Wenn Sie als New Relic One-Benutzerin oder -Benutzer hinzugefügt wurden, wie im
 
 1. New Relic sendet Ihnen eine E-Mail mit einem Link zur Kontobestätigung.
 
-Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, protokollieren Sie ein Supportticket über die [Admin Console](https://adminconsole.adobe.com/).
+Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, erstellen Sie ein Support-Ticket über die [Admin Console](https://adminconsole.adobe.com/).
 
 Falls Sie keine E-Mail von New Relic erhalten:
 
@@ -172,7 +172,7 @@ Falls Sie keine E-Mail von New Relic erhalten:
 Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu New Relic One:
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzer, die zu New Relic hinzugefügt werden, weisen den Typ &quot;**Eingeschränkt**&quot;auf. Weitere Informationen finden Sie in der New Relic-Dokumentation unter [3}.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* Benutzende, die zu New Relic hinzugefügt wurden, sind vom Typ **Eingeschränkt**. Weitere Informationen finden Sie in der [New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
@@ -203,7 +203,7 @@ Hinweis:
 
 ### Sendet Adobe Warnhinweise über New Relic One? {#alerting-new-relic}
 
-Adobe bietet New Relic One nur zu Beobachtungszwecken Zugriff und nutzt ihn nicht für Kundenwarnungen oder interne betriebliche Warnungen. Benachrichtigungen zu Vorfällen werden mit [Benutzerbenachrichtigungsprofilen](/help/journey-onboarding/notification-profiles.md) gesendet.
+Adobe bietet New Relic One nur zu Beobachtungszwecken Zugriff und nutzt ihn nicht für Kundenwarnungen oder interne betriebliche Warnungen. Benachrichtigungen über Vorfälle werden über [Benutzerbenachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md) gesendet.
 
 ### Wer kann auf die Daten des Cloud-Service von New Relic One zugreifen? {#access-new-relic-cloud}
 

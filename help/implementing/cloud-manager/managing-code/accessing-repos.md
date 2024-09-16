@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Mithilfe dieser Anmeldeinformationen können Sie eine lokale Kopie des Repositor
 
 ## Zugriff auf Repository-Informationen über das Fenster „Repositorys“ {#repositories-window}
 
-In der Symbolleiste des Fensters [**Repositorys**](managing-repositories.md) ist auch die Schaltfläche **Zugriff auf Repo Info** verfügbar. Es werden dieselben Informationen zum Zugriff auf von Adobe verwaltete Repositorys angezeigt.
+Eine Schaltfläche **Auf Repository-Informationen zugreifen** ist auch in der Symbolleiste des Fensters [**Repositorys** verfügbar](managing-repositories.md). Es werden dieselben Informationen zum Zugriff auf von Adobe verwaltete Repositorys angezeigt.
 
 ## Sperren eines Zugangskennworts {#revoke-password}
 

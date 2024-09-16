@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigun
 >
 >Das Lizenz-Dashboard gilt nur für AEM as a Cloud Service-Programme. [AMS-Programme](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/introduction) sind nicht im Lizenz-Dashboard enthalten.
 >
->Informationen zum Bestimmen des Diensttyps Ihres Programms (AMS oder AEMaaCS) finden Sie im Dokument [Navigieren in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Informationen zum Ermitteln des Diensttyps Ihres Programms (AMS oder AEMaaCS) finden Sie im Dokument [Navigieren auf der Benutzeroberfläche von Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Übersicht {#overview}
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um auf Ihr Lizenz-Dashboard zuzugreifen.
 >Benutzende mit der Rolle **Geschäftsinhaber** müssen angemeldet sein, damit ihnen das Lizenz-Dashboard angezeigt wird.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
-1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf die Menüschaltfläche Hamburger in der Kopfzeile [Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Dadurch werden die Registerkarten angezeigt.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf die Schaltfläche mit dem Hamburger-Menü im [Cloud Manager-Header](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Dadurch werden die Registerkarten angezeigt.
 1. Tippen oder klicken Sie auf der Registerkarte auf die Option **Lizenz** .
 
 ![Lizenz-Dashboard](assets/license-dashboard.png)
@@ -68,11 +68,11 @@ In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfüg
 <!--
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung der aktuellen Ressourcenverwendung. Wenn darauf geklickt wird, wird ein Bericht oder Dashboard geöffnet, in dem wichtige Metriken zu Ihrer Lizenz angezeigt werden. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Diese Funktion hilft Ihnen, die Einhaltung Ihrer vertraglichen Verpflichtungen zu überwachen und sicherzustellen, und bietet gleichzeitig Einblicke in eine bessere Ressourcenplanung und -optimierung.
+Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung Ihrer aktuellen Ressourcennutzung. Wenn Sie darauf klicken, wird ein Bericht oder Dashboard geöffnet, in dem wichtige Metriken zu Ihrer Lizenz angezeigt werden. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Diese Funktion hilft Ihnen, die Einhaltung Ihrer vertraglichen Verpflichtungen zu überwachen und sicherzustellen, und bietet gleichzeitig Einblicke in eine bessere Ressourcenplanung und -optimierung.
 
 ### Details zur Site-Nutzung {#sites-usage-details}
 
-Das Fenster **Sites-Nutzungsdetails** enthält Diagramme, die einen Überblick über die Verwendung Ihrer Sites-Lizenzen auf der Grundlage von [Inhaltsanforderungen](#what-is-a-content-request) geben.
+Das Fenster **Details zur Site-Nutzung** enthält Diagramme, die einen Überblick über die Verwendung Ihrer Sites-Lizenzen auf der Grundlage von [Inhaltsanfragen](#what-is-a-content-request) geben.
 
 ![Fenster „Details zur Site-Nutzung“](assets/sites-usage-details.png)
 
@@ -113,7 +113,7 @@ Für jeden Seitenaufruf oder für jeweils fünf API-Aufrufe wird 1 Inhaltsanfrag
 
 Inhaltsanfragen schließen Anfragen oder Aktivitäten aus, die von oder für Adobe allein zum Zweck der Bereitstellung von Produkten und Dienstleistungen initiiert wurden. Auch der von Adobe identifizierte Benutzeragenten-Traffic von Bots, Crawlern und Spidern im Zusammenhang mit gängigen Suchmaschinen und Social-Media-Services ist ausgeschlossen.
 
-Siehe auch [Grundlegendes zu Inhaltsanforderungen von Cloud Services](/help/implementing/cloud-manager/content-requests.md).
+Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
 
 ### Wie misst Adobe Experience Manager Inhaltsanfragen? {#how-are-content-requests-measured}
 

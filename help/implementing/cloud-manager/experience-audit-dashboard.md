@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1950'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 90%
 
 Erfahren Sie, wie der Erlebnis-Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der Erlebnis-Audit validiert den Bereitstellungsprozess und stellt sicher, dass die Änderungen bereitgestellt werden:
 
-1. Erfüllen Sie Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO (Suchmaschinenoptimierung).
+1. Die Grundanforderungen an Leistung, Barrierefreiheit, Best Practices und SEO (Suchmaschinenoptimierung) werden erfüllt.
 
-1. Führen Sie keine Regressionen ein.
+1. Es werden keine Regressionen eingeführt.
 
 Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Benutzenden auf der Site höchsten Standards entspricht.
 
@@ -133,17 +133,17 @@ Der Bericht ist in zwei Bereiche unterteilt:
 
 #### Seitenbewertungen – Trend {#trend}
 
-Standardmäßig ist die ausgewählte Ansicht für **Seitenergebnisse — Trend** **mittlere Werte** für den **letzten Jahr**.
+Standardmäßig zeigt die ausgewählte Ansicht für **Seitenbewertungen – Trend** die **Medianwerte** für das **letzte Jahr**.
 
-Sie können die Trends für bestimmte Kategorien von Leuchttürmen anzeigen, indem Sie in der Legende auf den Kategorienamen klicken.
+Sie können die Trends für bestimmte Lighthouse-Kategorien anzeigen, indem Sie in der Legende auf den Kategorienamen klicken.
 
-![Trend-Selektable](assets/experience-audit-trend-selectable.png)
+![Auswählbarer Trend](assets/experience-audit-trend-selectable.png)
 
-Verwenden Sie das Dropdown-Menü **Auswählen** oben im Diagramm, um seitenspezifische Details auszuwählen, und die Dropdown-Listen **Anzeigen** und **Trigger** am unteren Rand, um verschiedene Zeitrahmen und den Trigger-Typ auszuwählen.
+Verwenden Sie die Dropdown-Liste **Auswählen** oben im Diagramm, um die seitenspezifischen Details auszuwählen, und die Dropdown-Listen **Anzeigen** und **Trigger** unten, um unterschiedliche Zeitrahmen bzw. den Trigger-Typ auszuwählen.
 
-In der Dropdown-Liste **Ansicht** können Sie einen voreingestellten Zeitrahmen oder ein benutzerdefiniertes Intervall für eine spezifischere Ansicht auswählen.
+In der Dropdown-Liste **Anzeigen** können Sie einen voreingestellten Zeitrahmen oder ein benutzerdefiniertes Intervall für eine spezifischere Ansicht auswählen.
 
-![Trendansicht](assets/experience-audit-trend-view.png)
+![Trend-Ansicht](assets/experience-audit-trend-view.png)
 
 Wenn Sie den Mauszeiger über das Diagramm bewegen, zeigt eine QuickInfo die Werte für die Google Lighthouse-Kategorien zu bestimmten Zeitpunkten an.
 
@@ -166,13 +166,13 @@ Der Abschnitt **Empfehlungen** zeigt einen aggregierten Satz von Einblicken. Sta
 
 ![Empfehlungen](assets/experience-audit-recommendations.png)
 
-Klicken Sie auf eine Empfehlung, um Details dazu anzuzeigen.
+Klicken Sie auf eine beliebige Empfehlung, um Details dazu anzuzeigen.
 
 ![Empfehlungsdetails](assets/experience-audit-recommendations-details.png)
 
-Sofern verfügbar, enthalten die erweiterten Empfehlungsdetails auch den Prozentsatz der Auswirkungen der Empfehlungen, um sich auf die wirkungsvollsten Änderungen zu konzentrieren. Darüber hinaus können erweiterte Empfehlungen relevante AEM Dokumentationslinks und Tipps enthalten, die Sie durch die Implementierung der vorgeschlagenen Fehlerbehebungen führen können.
+Sofern verfügbar, enthalten die erweiterten Empfehlungsdetails auch den Prozentsatz der Auswirkungen der Empfehlungen, damit Sie sich auf die wirkungsvollsten Änderungen konzentrieren können. Darüber hinaus können erweiterte Empfehlungen relevante Links zur AEM-Dokumentation und Tipps enthalten, die Sie durch die Implementierung der vorgeschlagenen Fehlerbehebungen führen können.
 
-Klicken Sie in der Detailansicht auf den Link **Seiten anzeigen** , um die Seiten anzuzeigen, für die die Empfehlung gilt.
+Klicken Sie auf den Link **Seiten anzeigen** in der Detailansicht, um die Seiten anzuzeigen, für die die Empfehlung gilt.
 
 ![Seiten für die Empfehlungsdetails](assets/experience-audit-details-pages.png)
 

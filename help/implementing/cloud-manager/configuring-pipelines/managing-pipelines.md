@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1110'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -50,13 +50,13 @@ Das Fenster **Pipelines** zeigt eine vollständige Liste aller Pipelines für da
 
 1. Hier können Sie eine Liste aller Pipelines für das Programm sehen und die Ausführung von Pipelines starten und stoppen, wie Sie es in der **Pipelines-Karte** tun würden.
 
-Wenn eine Pipeline ausgeführt wird, werden durch Klicken auf das Informationssymbol in der Spalte **Status** Details zur Ausführung angezeigt.
+Wenn Sie während der Pipeline-Ausführung auf das Informationssymbol in der Spalte **Status** klicken, werden Details zur Ausführung angezeigt.
 
 ![Details zur Pipeline-Ausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 Klicken Sie auf **Details anzeigen**, um zu den [Details zur Pipeline-Ausführung](#view-details) zu gelangen.
 
-Sie können auch auf die Suchschaltfläche der Pipeline klicken, um zusätzliche Aktionen durchzuführen, die dem Pipeline-Status entsprechen, z. B. [Bearbeiten](#editing-pipelines) oder [Abbrechen der Ausführung](#cancel).
+Sie können auch auf die Schaltfläche mit den Auslassungspunkten für die Pipeline klicken, um zusätzliche Aktionen durchzuführen, die dem Pipeline-Status entsprechen, z. B. die Pipeline [bearbeiten](#editing-pipelines) oder die [Ausführung abbrechen](#cancel).
 
 ![Pipeline-Aktionen](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -70,13 +70,13 @@ Das Fenster **Aktivität** zeigt eine vollständige Liste aller Pipeline-Ausfüh
 
 1. Hier sehen Sie eine Liste aller Pipeline-Ausführungen für das Programm, einschließlich aktueller und vorheriger Ausführungen.
 
-Wenn eine Pipeline ausgeführt wird, werden durch Klicken auf das Informationssymbol in der Spalte **Status** Details zur Ausführung angezeigt.
+Wenn Sie während der Pipeline-Ausführung auf das Informationssymbol in der Spalte **Status** klicken, werden Details zur Ausführung angezeigt.
 
 ![Details zur Pipeline-Ausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Durch Tippen oder Klicken auf die Zeile, die die Pipeline-Ausführung darstellt, gelangen Sie zu den [Details der Pipeline-Ausführung](#view-details).
+Durch Tippen oder Klicken auf die Zeile für die Pipeline-Ausführung gelangen Sie zu den [Details zur Pipeline-Ausführung](#view-details).
 
-Sie können auch auf die Suchschaltfläche klicken, um weitere Maßnahmen zur Pipeline-Ausführung zu ergreifen, z. B. zum Anzeigen der Details oder Herunterladen des Protokolls, über das Sie zur Seite [Pipeline-Details](#view-details) gelangen.
+Sie können auch auf die Schaltfläche mit den Auslassungspunkten klicken, um zusätzliche Aktionen für die Pipeline-Ausführung durchzuführen, z. B. Details anzeigen oder das Protokoll herunterladen, wodurch Sie zur [Seite mit den Pipeline-Details](#view-details) gelangen.
 
 ![Aktionen zur Pipeline-Ausführung](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
@@ -102,7 +102,7 @@ Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, inde
 
    * Auf den folgenden Seiten finden Sie Details zu den Feldern und Konfigurationsoptionen, die für Pipelines verfügbar sind.
       * [Konfigurieren von Produktions-Pipelines](configuring-production-pipelines.md)
-      * [Konfigurieren produktionsfremder Pipelines](configuring-non-production-pipelines.md)
+      * [Konfigurieren von produktionsfremden Pipelines](configuring-non-production-pipelines.md)
 
 1. Klicken Sie auf **Aktualisieren**, nachdem Sie die Pipeline bearbeitet haben.
 

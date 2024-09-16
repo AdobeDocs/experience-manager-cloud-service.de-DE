@@ -2,9 +2,9 @@
 title: Reine Staging- und Produktions-Pipelines
 description: Erfahren Sie, wie Sie Staging- und Produktionsbereitstellungen mithilfe von dedizierten Pipelines aufteilen können.
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '942'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie Staging- und Produktionsbereitstellungen mithilfe von dedi
 >
 >Diese Funktion ist nur für das [Early-Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) verfügbar.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Staging- und Produktionsumgebungen sind eng miteinander verbunden. Standardmäßig sind die damit verknüpften Bereitstellungen mit einer einzelnen Pipeline verknüpft. Hierbei handelt es sich um eine Bereitstellungs-Pipeline, die sowohl für die Staging- als auch für die Produktionsumgebung in diesem Programm bereitgestellt wird. Diese Kopplung ist zwar in der Regel geeignet, es gibt jedoch einige Anwendungsfälle, in denen Nachteile vorliegen:
 
@@ -82,7 +82,7 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 ### Reine Produktions-Pipelines {#prod-only}
 
-1. Wenn Sie die Option **Nur Produktions-Pipeline hinzufügen** auswählen, wird das Dialogfeld **Nur Produktions-Pipeline hinzufügen** geöffnet.
+1. Wenn Sie die Option **Reine Produktions-Pipeline hinzufügen** gewählt haben, öffnet sich das Dialogfeld **Reine Produktions-Pipeline hinzufügen**.
 1. Geben Sie einen **Pipeline-Namen** an. Die verbleibenden Optionen und Funktionen des Dialogfelds funktionieren genauso wie im Dialogfeld zur Erstellung der standardmäßig gekoppelten Pipeline. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
 ## Ausführen von reinen Produktions- und Staging-Pipelines {#running}
@@ -97,7 +97,7 @@ Eine reine Staging-Pipeline wird fast genauso ausgeführt wie eine standardmäß
 
 ![Ausführen einer reinen Staging-Pipeline](assets/stage-only-pipeline-run.png)
 
-Die Schaltfläche **Build weiterleiten** wird nur angezeigt, wenn Sie die neueste erfolgreiche Ausführung der reinen Staging-Pipeline verwenden. Wenn Sie auf klicken, werden Sie aufgefordert, die Ausführung der reinen Produktepipeline zu bestätigen oder eine reine Prod-Pipeline zu erstellen, falls noch keine Pipeline vorhanden ist.
+Die Schaltfläche **Build weiterleiten** wird nur angezeigt, wenn Sie die neueste erfolgreiche Ausführung der reinen Staging-Pipeline verwenden. Wenn Sie auf diese klicken, werden Sie aufgefordert, die Ausführung der reinen Produktions-Pipeline zu bestätigen oder eine reine Produktions-Pipeline zu erstellen, sofern noch keine vorhanden ist.
 
 ### Reine Produktions-Pipelines {#prod-only-run}
 

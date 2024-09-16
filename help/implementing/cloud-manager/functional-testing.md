@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1373'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Die Tests sind in einem Docker-Image verpackt, das so flexibel wie möglich ist 
 >
 >Benutzerdefinierte Benutzeroberflächentests werden in den Produktions- und Nicht-Produktions-(Opt-in)-Pipelines ausgeführt, die von den Implementierungen Ihrer AEM-Anwedungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie sind daher ein wichtiger Beitrag zur Gewährleistung eines ordnungsgemäßen Funktionierens Ihrer Anwendung und zur Erhöhung der Versionssicherheit. Die benutzerdefinierten Benutzeroberflächentests werden auch in internen Validierungs-Pipelines vor der Veröffentlichung für jeden Kunden und jede Kundin ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
 >
->Nicht-Selenium-Container sollten Tests mithilfe eines HTTP-Proxys ausführen, der auf den Umgebungsvariablen im Abschnitt [UI-Testen](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) basiert.
+>Nicht-Selenium-Container sollten Tests mithilfe eines HTTP-Proxys ausführen, der auf den Umgebungsvariablen im [UI-Tests-Abschnitt](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) beruht.
 
 Damit Pipeline-Ausführungen effizient bleiben, empfehlen wir, dass Sie sich auf Schlüsselfunktionen und die wichtigsten Benutzerinteraktionsabläufe konzentrieren. Es wird empfohlen, Testsuiten der vollständigen Benutzeroberfläche, die nicht zu diesen Qualitätstests passen, während des Kundenentwicklungsflusses als Teil der allgemeinen Kundenvalidierungs-Pipelines auszuführen.
 

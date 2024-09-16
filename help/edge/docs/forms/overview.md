@@ -1,20 +1,20 @@
 ---
-title: Übersicht über Edge Delivery Services für AEM Forms
+title: Überblick über Edge Delivery Services für AEM Forms
 description: Edge Delivery Services für AEM Forms
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1037'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Edge Delivery Services für AEM Forms
 
 
-Edge Delivery Services for AEM Forms ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autoren neue Formulare schnell aktualisieren, veröffentlichen und starten können. Diese Dienste bieten außergewöhnliche und sehr wirkungsvolle Formularerlebnisse, die Interaktionen und Konversionen fördern. Diese Formularerlebnisse sind einfach zu erstellen und zu entwickeln.
+Edge Delivery Services für AEM Forms ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autorinnen und Autoren (neue) Formulare schnell aktualisieren, veröffentlichen und live schalten können.  Diese Dienste bieten außergewöhnliche und sehr wirkungsvolle Formularerlebnisse, die Interaktionen und Konversionen fördern. Diese Formularerlebnisse sind einfach zu erstellen und zu entwickeln.
 
 Diese Dienste ermöglichen Ihnen Folgendes:
 
@@ -22,13 +22,13 @@ Diese Dienste ermöglichen Ihnen Folgendes:
 
 * **Bereitstellen außergewöhnlicher digitaler Registrierungserlebnisse:** Stellen Sie digitale Registrierungserlebnisse bereit, die schnell und kontinuierlich geladen und gerendert werden, und überwachen Sie die Performance von Formularen durch eine echte Benutzerüberwachung (Real Use Monitoring, RUM). Schnellere Ladezeiten und ein optimiertes Anwendererlebnis tragen zu höheren Formularabschluss- und Konversionsraten bei.
 
-* **Verwenden Sie die benutzerfreundliche Toolset für Entwickler:** Edge Delivery Services für AEM Forms
-verwendet einfache HTML, moderne CSS und Vanilla JavaScript, um außergewöhnliche Erlebnisse zu erstellen und so die steile Lernkurve eines bestimmten Frameworks zu vermeiden. Entwickelnde mit grundlegenden Kenntnissen in der Webentwicklung können Formularkomponenten und Erlebnisse anpassen und problemlos erstellen. Es ist nicht erforderlich, auf die Ausführung einer Pipeline zu warten. Checken Sie einfach Ihren Code in GitHub ein und Ihre Änderungen sind live.
+* **Verwenden eines benutzerfreundlichen Toolsets:** Edge Delivery Services für AEM Forms
+verwendet einfaches HTML, modernes CSS und Vanilla JavaScript, um außergewöhnliche Erlebnisse zu erstellen und so die steile Lernkurve eines bestimmten Frameworks zu vermeiden. Entwickelnde mit grundlegenden Kenntnissen in der Webentwicklung können Formularkomponenten und Erlebnisse anpassen und problemlos erstellen. Es ist nicht erforderlich, auf die Ausführung einer Pipeline zu warten. Checken Sie einfach Ihren Code in GitHub ein und Ihre Änderungen sind live.
 
-## Übersicht über Edge Delivery Services für AEM Forms {#edge-overview}
+## Überblick über Edge Delivery Services für AEM Forms {#edge-overview}
 
-Edge Delivery Services für AEM Forms bieten eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website. Sie können Inhalte und Formulare mit [WYSIWYG-Authoring](/help/forms/creating-adaptive-form-core-components.md) ebenso wie mit [dokumentenbasiertem Authoring](/help/edge/docs/forms/create-forms.md) erstellen. Edge Delivery Services für AEM Forms
-stellen Sie einen Formularblock bereit, der als [Adaptiver Forms-Block](/help/edge/docs/forms/create-forms.md) bezeichnet wird, um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
+Edge Delivery Services für AEM Forms ermöglicht eine hohe Flexibilität bei der Erstellung von Formularen auf Ihrer Website. Sie können Inhalte und Formulare mit [WYSIWYG-Authoring](/help/forms/creating-adaptive-form-core-components.md) ebenso wie mit [dokumentenbasiertem Authoring](/help/edge/docs/forms/create-forms.md) erstellen. Edge Delivery Services für AEM Forms
+stellt einen Formularblock (auch als [adaptiver Formularblock](/help/edge/docs/forms/create-forms.md) bezeichnet) bereit, um Ihrer Edge Delivery Services-Site ein Formular hinzuzufügen.
 
 Sie können beispielsweise Formulare direkt in Microsoft Excel oder Google Tabellen erstellen, und diese Tabellen werden in Formulare für Ihre Website umgewandelt. Alle neuen Formulare oder Formularinhalte, wie z. B. ein neues Formularfeld, stehen sofort auf Ihrer Website zur Verfügung, ohne dass ein Neuerstellungsprozess erforderlich ist.
 
@@ -36,7 +36,7 @@ Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Tabe
 
 ![Veröffentlichen in Edge Delivery Services und AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services für AEM Forms verwenden GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Formulare entweder in [Google Tabellen](/help/edge/docs/forms/create-forms.md) oder [Microsoft Excel](/help/edge/docs/forms/create-forms.md) schreiben und die Komponenten Ihrer Formulare können mithilfe von CSS und JavaScript in einem GitHub-Repository entwickelt werden.
+Edge Delivery Services für AEM Forms nutzt GitHub, damit Kundinnen und Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Formulare entweder in [Google Tabellen](/help/edge/docs/forms/create-forms.md) oder [Microsoft Excel](/help/edge/docs/forms/create-forms.md) schreiben und die Komponenten Ihrer Formulare können mithilfe von CSS und JavaScript in einem GitHub-Repository entwickelt werden.
 
 Wenn Ihre Formulare bereit sind, können Sie [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) verwenden, eine Chrome-Browser-Erweiterung, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
@@ -91,11 +91,11 @@ Im Wesentlichen baut das WYSIWYG-Authoring (universeller Editor und [Editor für
 
 ### Edge Delivery Services für AEM Forms
 
-: Authoring, Publishing und Übermittlung von Forms
+: Erstellen, Veröffentlichen und Übermitteln von Formularen
 
 Die folgenden Diagramme zeigen den Prozess des Erstellens, Veröffentlichens und Übermittelns von Formularen mit dokumentenbasiertem Authoring und mit WYSIWYG-Authoring.
 
-![Dokumentenbasiertes Authoring](/help/edge/assets/document-based-authoring-workflow.png)
+![Dokumentbasiertes Authoring](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![WYSIWYG-Authoring](/help/edge/assets/wysiwyg-authoring-workflow.png)
 

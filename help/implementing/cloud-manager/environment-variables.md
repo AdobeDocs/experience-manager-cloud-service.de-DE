@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '988'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet werden. Sie werden der Laufzeitumgebung bereitgestellt und können in OSGi-Konfigurationen verwendet werden. Umgebungsvariablen können umgebungsspezifische Werte oder Umgebungsgeheimnisse sein. Dies ist davon abhängig, was geändert wird.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Umgebungsvariablen bieten Benutzern von AEM as a Cloud Service viele Vorteile:
 
@@ -118,7 +118,7 @@ In der Authoring-, Vorschau- und Veröffentlichungsumgebung können sowohl regul
 
 ### Dispatcher {#dispatcher}
 
-Nur normale Umgebungsvariablen können mit [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Geheimnisse nicht verwendet werden.
+Im [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) können nur reguläre Umgebungsvariablen verwendet werden. Geheimnisse können nicht verwendet werden.
 
 Allerdings können Umgebungsvariablen nicht in `IfDefine`-Richtlinien verwendet werden.
 

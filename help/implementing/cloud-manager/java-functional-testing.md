@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Nach der Erstellung eines neuen Code-Repositorys in Cloud Manager wird automatis
 >
 >Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
 
-Sobald Sie den Inhalt der `it.tests`-Ordner haben, können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann:
+Sobald Sie den Inhalt des Ordners `it.tests` haben, können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann:
 
 1. [Entwickeln Sie Ihre Testfälle](#writing-functional-tests).
 1. [Führen Sie die Tests lokal aus](#local-test-execution).

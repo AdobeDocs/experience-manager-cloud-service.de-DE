@@ -1,8 +1,8 @@
 ---
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -160,24 +160,24 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!TIP]
 >
->Sind Sie neu in Dynamic Media? Einen schnellen Überblick über Dynamic Media auf hoher Ebene finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>Sind haben bislang noch nicht mit Dynamic Media gearbeitet? Einen schnellen, allgemeinen Überblick über Dynamic Media finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Siehe auch für Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Sind Sie neu in Dynamic Media? Einen schnellen Überblick über Dynamic Media auf hoher Ebene finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* Sind haben bislang noch nicht mit Dynamic Media gearbeitet? Einen schnellen, allgemeinen Überblick über Dynamic Media finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
->* Befolgen Sie [Dynamic Media Best Practices](/help/assets/dynamic-media/dm-best-practices.md) , um den größtmöglichen Nutzen zu erzielen.
+>* Befolgen Sie die [Best Practices für Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md), um den größtmöglichen Nutzen zu erzielen.
 >
 >* Probieren Sie die Dynamic Media-Bildfunktionen mit dem [Snapshot-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) aus.
 >
->* Stellen Sie eine reibungslose Videowiedergabe mit [adaptivem Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash) sicher.
+>* Stellen Sie eine reibungslose Videowiedergabe mit [adaptivem Video](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash) sicher.
 >
->* Automatisches Zuschneiden von [Bildern mit smartem Zuschneiden](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Automatisieren Sie das Zuschneiden von [Bildern mit der Funktion „Intelligenter Zuschnitt“](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Automatisches Zuschneiden von [Videos mit smartem Zuschneiden](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)
+>* Automatisieren Sie das Zuschneiden von [Videos mit der Funktion „Intelligenter Zuschnitt“](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Bereitstellen von [interaktiven 3D-basierten Erlebnissen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Andere [Dynamic Media-Ressourcenbank](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Stellen Sie [interaktive 3D-basierte Erlebnisse](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video) bereit.
+>* Weitere Informationen finden Sie unter [Dynamic Media-Ressourcen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1197'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Die Phase der **Staging-Bereitstellung** umfasst diese Schritte.
 * **Codescan**: Dieser Schritt bewertet die Qualität Ihres Programm-Codes.
    * Weitere Informationen zum Testprozess finden Sie unter [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md).
 * **Build-Images**: Dieser Prozess ist für die Umwandlung der vom Build-Schritt erstellten Inhalts- und Dispatcher-Pakete in Docker-Images und die Kubernetes-Konfiguration verantwortlich.
-* **In Staging bereitstellen** - Das Bild wird in der Staging-Umgebung bereitgestellt, um die [Staging-Testphase](#stage-testing) vorzubereiten.
+* **In der Staging-Umgebung bereitstellen**: Das Bild wird in der Staging-Umgebung bereitgestellt, um die [Staging-Testphase](#stage-testing) vorzubereiten.
 
 ![Staging-Bereitstellung](assets/stage-deployment.png)
 

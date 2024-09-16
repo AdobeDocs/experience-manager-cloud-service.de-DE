@@ -5,9 +5,9 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
 source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '485'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ In diesem Dokument erfahren Sie, wie Sie das Produktkatalogerlebnis basierend au
 
 >[!NOTE]
 >
->Diese Funktion ist nur für Adobe Commerce- oder Cloud Edition- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen. Weitere Informationen finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=de) .
+>Diese Funktion ist nur bei Adobe Commerce- oder Cloud Edition- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen. Siehe [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=de) für weitere Informationen.
 
 Zunächst sehen wir, wie Autoren mit CIF auf Staging-Produktdaten zugreifen können.
 

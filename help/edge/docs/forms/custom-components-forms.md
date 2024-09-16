@@ -7,15 +7,15 @@ hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Erstellen benutzerdefinierter Komponenten
 
-Mit Edge Delivery Services für AEM Forms können Sie die [nativen HTML-Formularkomponenten](/help/edge/docs/forms/form-components.md) anpassen und benutzerfreundliche und interaktive Formulare erstellen. So haben Sie die Möglichkeit, die Formularkomponenten mit vordefiniertem Markup zu ändern, wie unter [Formatieren von Formularfeldern](/help/edge/docs/forms/style-theme-forms.md) beschrieben, indem Sie benutzerdefinierte CSS (Cascading Style Sheets) und benutzerdefinierten Code zum Dekorieren der Komponente verwenden, wodurch das Erscheinungsbild von Formularfeldern in einem adaptiven Formularblock verbessert wird.
+Mit Edge Delivery Services für AEM Forms können Sie die [nativen HTML-Formularkomponenten](/help/edge/docs/forms/form-components.md) anpassen und benutzerfreundliche, interaktive Formulare erstellen. So haben Sie die Möglichkeit, die Formularkomponenten mit vordefiniertem Markup zu ändern, wie unter [Formatieren von Formularfeldern](/help/edge/docs/forms/style-theme-forms.md) beschrieben, indem Sie benutzerdefinierte CSS (Cascading Style Sheets) und benutzerdefinierten Code zum Dekorieren der Komponente verwenden, wodurch das Erscheinungsbild von Formularfeldern in einem adaptiven Formularblock verbessert wird.
 
 ![Benutzerdefinierte Komponente](/help/edge/assets/custom-component-image.png)
 
@@ -31,7 +31,7 @@ Passen Sie zunächst das Feld `range` an, um die minimalen, maximalen und ausgew
 
 Am Ende dieses Artikels erfahren Sie, wie Sie benutzerdefinierte Komponenten erstellen, indem Sie Stile in der CSS-Datei und benutzerdefinierten Funktion hinzufügen.
 
-## Anforderungen
+## Voraussetzungen
 
 Bevor Sie mit der Erstellung Ihrer benutzerdefinierten Komponente beginnen, sollten Sie sicherstellen, dass Sie:
 

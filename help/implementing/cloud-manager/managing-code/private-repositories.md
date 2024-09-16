@@ -5,9 +5,9 @@ exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '836'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Indem Sie Cloud Manager für die Verwendung mit Ihren eigenen privaten GitHub-Re
 
 Die Konfiguration erfolgt in zwei Hauptschritten:
 
-1. [Hinzufügen eines Repositorys](#add-repo)
+1. [Repository hinzufügen](#add-repo)
 1. [Validierung der Eigentümerschaft eines privaten Repositorys](#validate-ownership)
 
 ### Repository hinzufügen {#add-repo}
@@ -110,7 +110,7 @@ Wenn die Pull-Anfrage geschlossen oder zusammengeführt wird, wird die erstellte
 
 ## Zuordnen von privaten Repositorys zu Pipelines {#pipelines}
 
-Validierte private Repositorys können mit [Vollstapel- und Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) verknüpft werden.
+Validierte private Repositorys können [Full-Stack- und Frontend-Pipelines zugeordnet werden](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 >[!NOTE]
 >

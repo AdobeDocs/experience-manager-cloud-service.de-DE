@@ -1,15 +1,15 @@
 ---
-title: Edge Delivery Services für AEM Forms, die häufig für die Validierung von Formularfeldern verwendet werden
-description: Edge Delivery Services für AEM Forms, die häufig für die Validierung von Formularfeldern verwendet werden
+title: Edge Delivery Services für AEM Forms – Häufig verwendete Regex-Ausdrücke zur Validierung von Formularfeldern
+description: Edge Delivery Services für AEM Forms – Häufig verwendete Regex-Ausdrücke zur Validierung von Formularfeldern
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

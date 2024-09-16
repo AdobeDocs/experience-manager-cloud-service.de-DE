@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager basiert auf einer Hierarchie von Entitäten. Die Details dazu sind
 ![Cloud Manager-Hierarchie](assets/program-types1.png)
 
 * **MANDANT**: Dies ist die Spitze der Hierarchie. Jedem Kunden wird ein Mandant zugewiesen.
-* **PROGRAMME** - Jeder Mandant verfügt über ein oder mehrere Programme, [ die häufig die lizenzierten Lösungen des Kunden widerspiegeln](introduction-production-programs.md).
+* **PROGRAMME**: Jeder Mandant verfügt über ein oder mehrere Programme, [die häufig die lizenzierten Lösungen der Kundin bzw. des Kunden widerspiegeln](introduction-production-programs.md).
 * **UMGEBUNGEN**: Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte, eine für Staging und eine für Entwicklungszwecke.
    * Jedes Programm kann nur eine Produktionsumgebung, aber mehrere produktionsfremde Umgebungen haben.
 * **REPOSITORY**: Programme verfügen über Git-Repositorys, in denen Programme und Frontend-Code für die Umgebungen gepflegt werden.
@@ -61,6 +61,6 @@ Benutzende können ein **Produktionsprogramm** oder ein **Sandbox-Programm** ers
 * Ein **Produktionsprogramm** wird erstellt, um Live-Traffic für Ihre Site zu ermöglichen.
    * Weitere Informationen finden Sie in der [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
-   * Eine Sandbox-Umgebung ist nicht für die Übertragung von Live-Traffic vorgesehen und hat Einschränkungen, die ein Produktionsprogramm nicht hat.
-   * Es umfasst Sites, Assets und Edge Delivery Services und wird automatisch mit einer Git-Verzweigung bereitgestellt, die Beispielcode, eine Entwicklungsumgebung und eine Nicht-Produktions-Pipeline enthält.
+   * Eine Sandbox-Umgebung ist nicht dafür vorgesehen, Live-Traffic zu verarbeiten, und hat Einschränkungen, die ein Produktionsprogramm nicht hat.
+   * Sie umfasst Sites, Assets und Edge Delivery Services und wird automatisch mit einer Git-Verzweigung befüllt, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
    * Weitere Informationen finden Sie in der [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).

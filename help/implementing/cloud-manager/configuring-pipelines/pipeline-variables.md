@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 1. Das Fenster **Variablenkonfiguration** wird geöffnet. Geben Sie die Variablendetails in die erste Zeile der Tabelle ein und tippen oder klicken Sie auf **Hinzufügen**.
 
-   * **Konfigurationsname** ist eine eindeutige Kennung für Ihre Variable, die über die [Benennungskonventionen für Pipeline-Variablen](#naming-conventions) verfügen muss.
+   * **Konfigurationsname** ist eine eindeutige Kennung für Ihre Variable, die die [Namenskonventionen für Pipeline-Variablen befolgen muss](#naming-conventions).
    * **Wert** ist der Wert, den die Variable enthält.
    * **Angewandter Schritt** ist der Schritt in der Pipeline, für den die Variable gilt. Dieser Schritt ist erforderlich.
       * **Build**

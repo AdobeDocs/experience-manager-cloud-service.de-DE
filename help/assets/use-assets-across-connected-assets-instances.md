@@ -7,9 +7,9 @@ feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3869'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrast
 
 >[!NOTE]
 >
->Adobe empfiehlt die Nutzung von Dynamic Media mit OpenAPI-Funktionen, um AEM Assets as a Cloud Service und AEM Sites zu verbinden. Siehe [Integrieren von Remote AEM Assets mit AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
+>Adobe empfiehlt die Nutzung von Dynamic Media mit OpenAPI-Funktionen, um AEM Assets as a Cloud Service und AEM Sites zu verbinden. Siehe [Integrieren der Remote-Version von AEM Assets mit AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
 
 Die Funktion „Connected Assets“ unterstützt die oben genannten Anwendungsfälle durch die Integration von [!DNL Experience Manager Sites] und [!DNL Experience Manager Assets]. Anwender können Web-Seiten in [!DNL Sites] erstellen, die die digitalen Assets aus einer separaten [!DNL Assets]-Bereitstellung verwenden.
 
@@ -373,7 +373,7 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 * [Assets übersetzen](translate-assets.md)
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
+* [Assets durchsuchen](search-assets.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)

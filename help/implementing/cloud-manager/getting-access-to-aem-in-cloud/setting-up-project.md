@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Si
 Um mit Cloud Manager erfolgreich Projekte zu erstellen und bereitzustellen, müssen AEM-Projekte den folgenden Richtlinien entsprechen:
 
 * Projekte müssen mit [Apache Maven](https://maven.apache.org) erstellt werden.
-* Im Stammverzeichnis des Git-Repositorys muss eine `pom.xml`-Datei vorhanden sein. Diese `pom.xml`-Datei kann auf beliebig viele Untermodule verweisen (die wiederum weitere Untermodule umfassen können usw.).
+* Im Stammverzeichnis des Git-Repositorys muss eine Datei `pom.xml` vorhanden sein. Diese `pom.xml`-Datei kann auf beliebig viele Untermodule verweisen (die wiederum weitere Untermodule umfassen können usw.).
 * Sie können Verweise auf weitere Maven-Artefakt-Repositorys in Ihren `pom.xml`-Dateien hinzufügen.
    * Der Zugriff auf [kennwortgeschützte Artefakt-Repositorys](#password-protected-maven-repositories) wird bei entsprechender Konfiguration unterstützt. Allerdings wird der Zugriff auf netzwerkgeschützte Artefakte nicht unterstützt.
 * Bereitstellbare Inhaltspakete werden erkannt, wenn Sie nach Inhaltspaketen im `.zip`-Format suchen, die in einem Verzeichnis namens `target` enthalten sind.

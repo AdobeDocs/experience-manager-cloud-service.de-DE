@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1402'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -152,13 +152,13 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
-   * **Pipeline** - Für Frontend-Nicht-Produktions-Pipelines haben Sie die Möglichkeit, **[Erlebnisaudit](/help/implementing/cloud-manager/experience-audit-dashboard.md)** zu aktivieren.
+   * **Pipeline**: Bei produktionsfremden Frontend-Pipelines haben Sie die Möglichkeit, das **[Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)** zu aktivieren.
 
    ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Wenn Sie die Erlebnisprüfung aktiviert haben, tippen oder klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnisprüfung** zu gelangen, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
 
-   * Wenn Sie **Erlebnisprüfung** aktiviert haben, finden Sie im Dokument [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-dashboard.md) weitere Informationen zur Konfiguration.
+   * Wenn Sie **Erlebnis-Audit** aktiviert haben, finden Sie im Dokument [Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) Details zur Konfiguration.
    * Wenn nicht, überspringen Sie diesen Schritt.
 
 1. Tippen oder klicken Sie auf **Speichern**, um die Pipeline zu speichern.

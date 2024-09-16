@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Weitere Eigenschaften sind:
    * action – muss „authenticate“ angeben, wobei auf den vorgesehenen Authentifizierer verwiesen wird.
 
 >[!NOTE]
->Der Edge-Schlüssel muss als Cloud Manager-Umgebungsvariable vom Typ &quot;[secret&quot;} konfiguriert werden, bevor die Konfiguration, auf die er verweist, bereitgestellt wird. ](/help/operations/config-pipeline.md#secret-env-vars) Es wird empfohlen, einen eindeutigen zufälligen Schlüssel mit einer Mindestlänge von 32 Byte zu verwenden. Beispielsweise kann die kryptografische Bibliothek Open SSL einen zufälligen Schlüssel generieren, indem der Befehl `openssl rand -hex 32` ausgeführt wird.
+>Der Edge-Schlüssel muss als [Cloud Manager-Umgebungsvariable vom Typ „secret“](/help/operations/config-pipeline.md#secret-env-vars) konfiguriert werden, bevor die Konfiguration, die auf ihn verweist, bereitgestellt wird. Es wird empfohlen, einen eindeutigen zufälligen Schlüssel mit einer Mindestlänge von 32 Byte zu verwenden. Beispielsweise kann die kryptografische Open SSL-Bibliothek einen zufälligen Schlüssel generieren, indem der Befehl `openssl rand -hex 32` ausgeführt wird.
 
 ### Sichere Migration zur Verringerung des Risikos von blockiertem Traffic {#migrating-safely}
 
@@ -140,7 +140,7 @@ Weitere Eigenschaften sind:
    * action – muss „authenticate“ angeben, wobei auf den vorgesehenen Authentifizierer verwiesen wird.
 
 >[!NOTE]
->Der Bereinigungsschlüssel muss als Cloud Manager-Umgebungsvariable vom Typ &quot;[secret&quot;](/help/operations/config-pipeline.md#secret-env-vars) konfiguriert werden, bevor die Konfiguration, auf die er verweist, bereitgestellt wird. Es wird empfohlen, einen eindeutigen zufälligen Schlüssel mit einer Mindestlänge von 32 Byte zu verwenden. Beispielsweise kann die kryptografische Open SSL-Bibliothek einen zufälligen Schlüssel generieren, indem der Befehl openssl rand -hex 32 ausgeführt wird.
+>Der Purge Key muss als [Cloud Manager-Umgebungsvariable vom Typ „secret“](/help/operations/config-pipeline.md#secret-env-vars) konfiguriert werden, bevor die Konfiguration, die auf ihn verweist, bereitgestellt wird. Es wird empfohlen, einen eindeutigen zufälligen Schlüssel mit einer Mindestlänge von 32 Byte zu verwenden. Beispielsweise kann die kryptografische Open SSL-Bibliothek einen zufälligen Schlüssel generieren, indem der Befehl „openssl rand -hex 32“ ausgeführt wird.
 
 Sie können [ein Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) durchlaufen, das sich auf die Konfiguration von Bereinigungsschlüsseln und die Durchführung der CDN-Cache-Bereinigung konzentriert.
 

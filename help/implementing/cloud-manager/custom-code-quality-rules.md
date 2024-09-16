@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4513'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -645,7 +645,7 @@ Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie in der [Doku
 * **Schweregrad**: Blocker
 * **Seit**: 2021.8.0
 
-Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Dokumentation zu Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Nicht konformer Code {#non-compliant-code-indexasync}
 
@@ -897,7 +897,7 @@ Mit dem Migrations-Tool im [GitHub-Repository für Experience Manager as a Cloud
 
 Auch wenn die Verwendung statischer Vorlagen in Experience Manager-Projekten früher üblich war, empfiehlt Adobe bearbeitbare Vorlagen zu verwenden, da sie die beste Flexibilität bieten und zusätzliche Funktionen besitzen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie im Dokument [Seitenvorlagen](/help/implementing/developing/components/templates.md).
 
-Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
+Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe des [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
 
 ### Die Verwendung veralteter Foundation-Komponenten wird nicht empfohlen {#oakpal-usage-legacy}
 
@@ -906,9 +906,9 @@ Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [Experi
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) werden seit mehreren Versionen von Experience Manager nicht mehr verwendet und wurden durch die Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
+Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) werden seit mehreren Versionen von Experience Manager nicht mehr verwendet und wurden durch die Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten. Sie sollten in die entsprechende Kernkomponente konvertiert werden.
 
-Diese Konvertierung kann durch die [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) erleichtert werden.
+Diese Konvertierung kann mit den [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) vorgenommen werden.
 
 ### Verwenden Sie nur unterstützte Ausführungsmodusnamen und -reihenfolgen {#oakpal-supported-runmodes}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service verbietet die Bereitstellung benutzerdefinierter Suchindex-Def
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines ab der Version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen werden.
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024 fehlschlagen.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ### Die benutzerdefinierte Volltext-Indexdefinition des Typs „damAssetLucene“ muss korrekt mit dem Präfix „damAssetLucene“ versehen werden {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service verbietet es, benutzerdefinierte Volltext-Indexdefinitionen de
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines ab der Version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen werden.
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.
 
 ### Indexdefinitionsknoten dürfen keine Eigenschaften mit demselben Namen enthalten {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM Cloud Service verbietet es, dass benutzerdefinierte Suchindex-Definitionen (
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines ab der Version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen werden.
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024 fehlschlagen](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Das Anpassen bestimmter vorkonfigurierter Indexdefinitionen ist verboten {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service verbietet unbefugte Änderungen der folgenden vorkonfigurierte
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines ab der Version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen werden.
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024 fehlschlagen](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Die Konfiguration der Tokenizer in Analyzern sollte mit dem Namen „tokenizer“ erstellt werden {#oakpal-tokenizer}
 
@@ -1266,7 +1266,7 @@ AEM Cloud Service verbietet die Erstellung von Tokenizern mit falschen Namen in 
 
 >[!WARNING]
 >
->Sie werden dringend aufgefordert, dies so bald wie möglich zu beheben, da Pipelines ab der Version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen werden.
+>Sie werden dringend aufgefordert, sich dieser so bald wie möglich anzunehmen, da Pipelines hierdurch ab der [Cloud Manager-Version August 2024 fehlschlagen](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Die Konfiguration von Indexdefinitionen darf keine Leerzeichen enthalten {#oakpal-indexing-definitions-spaces}
 

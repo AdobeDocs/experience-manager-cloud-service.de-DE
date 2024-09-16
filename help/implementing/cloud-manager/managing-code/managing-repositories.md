@@ -5,9 +5,9 @@ exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 Erstellen, Anzeigen und Löschen von Git-Repositorys in Cloud Manager.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Repositorys werden zum Speichern und Verwalten des Projekt-Codes mithilfe von Git verwendet. Für jedes Programm, das Sie in Cloud Manager erstellen, wird ein von Adobe verwaltetes Repository erstellt.
 
@@ -71,7 +71,7 @@ Cloud Manager unterstützt beide Typen von Repositorys, nämlich die, die von Ad
 
 ## Auf Repository-Informationen zugreifen {#repo-info}
 
-Wenn Sie Ihre Repositorys im Fenster **Repositorys** anzeigen, können Sie die Details zum programmgesteuerten Zugriff auf die von Adobe verwalteten Repositorys anzeigen, indem Sie in der Symbolleiste auf die Schaltfläche **Repo Info aufrufen** klicken.
+Wenn Sie sich Ihre Repositorys im Fenster **Repositorys** ansehen, können Sie die Details zum programmgesteuerten Zugriff auf die von Adobe verwalteten Repositorys anzeigen, indem Sie in der Symbolleiste auf die Schaltfläche **Auf Repository-Informationen zugreifen** klicken.
 
 ![Repository-Informationen](assets/repo-info.png)
 

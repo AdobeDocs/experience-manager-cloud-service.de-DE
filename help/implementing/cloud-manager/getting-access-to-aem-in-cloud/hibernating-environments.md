@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '696'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ In im Ruhezustand befindlichen Umgebungen können weiterhin Bereitstellungen und
 
 * Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt.
    * Inaktivität liegt vor, wenn weder der Autoren-Service noch die Vorschau- oder Veröffentlichungs-Service Anfragen erhalten.
-   * Nach dem Ruhezustand können sie [manuell deaktiviert werden].(#de-hibernation-introduction)
+   * Sobald sie sich im Ruhezustand befinden, kann der [Ruhezustand manuell aufgehoben werden].(#de-hibernation-introduction)
 * Sandbox-Programme werden nach sechs Monaten, nachdem sie sich im kontinuierlichen Ruhezustand befinden, gelöscht. Danach können sie neu erstellt werden.
 
 >[!NOTE]

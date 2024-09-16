@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,12 +18,12 @@ Adobe Cloud Manager verfügt über ein einzelnes Git-Repository, das der Bereits
 
 Sie können das Git-Repository von Cloud Manager vorkonfiguriert verwenden. Sie haben aber auch die Möglichkeit, ein kundenverwaltetes Git-Repository in Cloud Manager zu integrieren.
 
-## Übersicht über die Git-Integration {#git-integration-overview}
+## Überblick über die Git-Integration {#git-integration-overview}
 
 In dieser Videoreihe werden verschiedene Anwendungsfälle für die Integration eines kundenverwalteten Git-Repositorys in Cloud Manager untersucht, darunter:
 
 * [Erstsynchronisierung](#initial-sync)
-* [Standard-Verzweigungsstrategie](#branching-strategy)
+* [Grundlegende Verzweigungsstrategie](#branching-strategy)
 * [Entwicklung von Funktionsverzweigungen](#feature-development)
 * [Produktionsbereitstellung](#production-deployment)
 * [Synchronisieren von Versions-Tags](#sync-tags)
@@ -58,7 +58,7 @@ Bereiten Sie Code für die Produktionsfreigabe in einem kundenverwalteten Git-Re
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## Synchronisieren von Release-Tags {#sync-tags}
+## Synchronisieren von Versions-Tags {#sync-tags}
 
 Synchronisieren Sie Versions-Tags aus einem Cloud Manager-Git-Repository in einem kundenverwalteten Git-Repository, um für Sichtbarkeit des in Staging- und Produktionsumgebungen bereitgestellten Codes zu sorgen.
 
@@ -66,6 +66,6 @@ Synchronisieren Sie Versions-Tags aus einem Cloud Manager-Git-Repository in eine
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [GitHub-Ressourcen](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+* [GitHub-Ressourcen](https://docs.github.com/de/get-started/getting-started-with-git/set-up-git)
 * [Git-Tutorials von Atlassian](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git-Schnellübersicht](https://education.github.com/git-cheat-sheet-education.pdf)
