@@ -1,24 +1,24 @@
 ---
-title: Testen der Benutzeroberfläche
+title: UI-Tests
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: bb75e70fb83b63e12968f7cb01e6976e367ff70e
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 98%
+source-wordcount: '2630'
+ht-degree: 99%
 
 ---
 
 
-# Testen der Benutzeroberfläche {#ui-testing}
+# UI-Tests {#ui-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
->title="Testen der Benutzeroberfläche"
->abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. UI-Tests sind Selenium-basierte Tests, die in einem Docker-Bild verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
+>title="UI-Tests"
+>abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
 
 Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann.
 
@@ -26,7 +26,7 @@ Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine option
 
 AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere IT-Testgates ermöglichen bereits die Erstellung und Automatisierung von benutzerdefinierten Tests mithilfe von AEM-APIs.
 
-UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Außerdem kann ein UI-Testprojekt einfach mit [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) generiert werden.
+UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Ein Projekt für UI-Tests kann auch einfach mithilfe des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erzeugt werden.
 
 Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automatisches Warten ermöglicht, was Zeit spart und die Produktivität beim Testen steigert. Cypress bietet außerdem eine einfache und intuitive Syntax, die auch für Testneulinge leicht zu erlernen und anzuwenden ist.
 
@@ -213,16 +213,20 @@ In diesem Abschnitt werden die Konventionen beschrieben, denen das Docker-Image 
 
 Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image übergeben, abhängig von Ihrem Framework.
 
+>[!NOTE]
+>
+> Diese Werte werden während der Pipelineausführung automatisch festgelegt - sie müssen nicht manuell als Pipeline-Variablen festgelegt werden.
+
 | Variable | Beispiele | Beschreibung | Test-Framework |
-|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
+|----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Die URL des Selenium-Servers | Nur Selenium |
 | `SELENIUM_BROWSER` | `chrome` | Die vom Selenium-Server verwendete Browser-Implementierung | Nur Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | Die URL der AEM-Autoreninstanz | Alle |
 | `AEM_AUTHOR_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Autoreninstanz | Alle |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Autoreninstanz | Alle |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | Die URL der AEM-Veröffentlichungsinstanz | Alle |
-| `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | Die URL der AEM-Veröffentlichungsinstanz | Alle * |
+| `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle * |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle * |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Der Pfad, in dem der XML-Bericht der Testergebnisse gespeichert werden muss | Alle |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | Die URL, an die die Datei hochgeladen werden muss, damit sie für das Test-Framework verfügbar ist | Alle |
 | `PROXY_HOST` | `proxy-host` | Der Host-Name des internen HTTP-Proxys, der vom Test-Framework verwendet werden soll | Alle außer Selenium |
@@ -232,6 +236,8 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 | `PROXY_OBSERVABILITY_PORT` | `8081` | Der HTTP-Konsistenzprüfungsanschluss des Proxy-Servers | Alle außer Selenium |
 | `PROXY_RETRY_ATTEMPTS` | `12` | Empfohlene Anzahl von Wiederholungsversuchen beim Warten auf Bereitschaft des Proxy-Servers | Alle außer Selenium |
 | `PROXY_RETRY_DELAY` | `5` | Empfohlene Verzögerung zwischen Wiederholungsversuchen beim Warten auf Bereitschaft des Proxy-Servers | Alle außer Selenium |
+
+`* these values will be empty if there is no publish instance`
 
 Die Adobe-Testbeispiele bieten Hilfsfunktionen für den Zugriff auf die Konfigurationsparameter:
 
