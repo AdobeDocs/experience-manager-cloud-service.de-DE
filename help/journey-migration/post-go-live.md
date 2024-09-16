@@ -1,13 +1,13 @@
 ---
 title: Nach der Live-Schaltung
-description: Erfahren Sie, wie Sie Probleme erkennen und die Leistung verbessern können.
+description: Erfahren Sie, wie Sie Probleme überwachen und die Leistung verbessern können.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 77%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Beheben von Fehlern in AEM"
->abstract="Lesen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie der Developer Console und CRXDE Lite, um Probleme mit AEM zu beheben."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=de" text="Zugreifen auf und Verwalten von Protokollen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
+>abstract="Lesen Sie Best Practices für die kontinuierliche Entwicklung und Verwaltung von Protokollen. Erfahren Sie mehr über Tools wie Developer Console und CRXDE Lite, die bei der Fehlerbehebung von Problemen mit AEM helfen."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Zugreifen auf und Verwalten von Protokollen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 
-Diese Tour ist der letzte Teil. Sie lernen, wie Sie Probleme erkennen und die Leistung verbessern, nachdem die Migration abgeschlossen ist. In der Phase nach der Migration sollten Sie die Bereinigung temporärer Dateien sicherstellen, die Best Practices für die kontinuierliche Entwicklung überprüfen und die Protokolle verwalten.
+Diese Journey ist der letzte Teil, daher lernen Sie, wie Sie nach Abschluss der Migration auf Probleme überwachen und die Leistung verbessern können. Stellen Sie die Bereinigung temporärer Dateien sicher, überprüfen Sie Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -42,10 +42,10 @@ Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementierung f�
 
 ## CRXDE Lite {#crxde-lite}
 
-Als Benutzer können Sie in der Entwicklungsumgebung auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung.
+Als Benutzer können Sie auf CRXDE Lite in der Entwicklungsumgebung zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung.
 
 >[!IMPORTANT]
->Das Schreiben in unveränderliche Repositorys wie zum Beispiel `/libs` und `/apps` führt zur Laufzeit zu Fehlern. Außerdem haben Kundinnen und Kunden keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebung.
+>Das Schreiben in unveränderliche Repositorys wie `/libs` und `/apps` zur Laufzeit führt zu Fehlern. Außerdem haben Kundinnen und Kunden keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebung.
 
 Weitere Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
