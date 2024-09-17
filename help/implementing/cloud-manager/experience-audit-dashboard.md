@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
-workflow-type: ht
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+workflow-type: tm+mt
 source-wordcount: '1950'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -47,11 +47,11 @@ Prüfungen werden als Teil der Pipeline ausgeführt. Prüfungen können auch [be
 
 Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für die Entwicklung von Full-Stack- und Frontend-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
 
-1. Je nach Pipeline-Typ, der konfiguriert werden soll, befolgen Sie die Anweisungen für diese Vorgänge:
+1. Führen Sie je nach Pipeline-Typ, den Sie konfigurieren möchten, einen der folgenden Schritte aus:
 
    * Fügen Sie eine neue [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) hinzu, um die Pfade zu definieren, die das Audit auswerten soll.
-   * Fügen Sie eine neue [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) hinzu, wenn Sie die Prüfung für eine Frontend- oder Full-Stack-Entwicklungs-Pipeline aktivieren möchten.
-   * Oder Sie können [eine vorhandene Pipeline bearbeiten,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
+   * Fügen Sie eine neue [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) hinzu, wenn Sie die Prüfung für eine Front-End- oder Entwicklungs-Vollstapelpipeline aktivieren möchten.
+   * Alternativ können Sie [eine vorhandene Pipeline bearbeiten](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
 
 1. Um den Erlebnis-Audit beim Hinzufügen oder Bearbeiten einer Nicht-Produktions-Pipeline zu verwenden, aktivieren Sie das Kontrollkästchen **Erlebnis-Audit**. Diese Option finden Sie auf der Registerkarte **Quell-Code**.
 
@@ -218,7 +218,7 @@ Sie können das Bewertungsdiagramm nach dem Trigger-Typ filtern, indem Sie die A
 >
 >Ein On-Demand-Scan kann nur gestartet werden, wenn die Umgebung nicht gelöscht wird und es keine weiteren ausstehenden Scans in derselben Umgebung gibt.
 
-## Probleme bei der Erlebnisprüfung {#issues}
+## Bei Experience Audit treten Probleme auf {#issues}
 
 Wenn [Seiten, die Sie für den Audit konfiguriert haben](#configuration), nicht verfügbar waren oder beim Audit andere Fehler aufgetreten sind, spiegelt der Erlebnis-Audit dies wider.
 
@@ -236,7 +236,6 @@ Die Seiten können beispielsweise aus folgenden Gründen nicht verfügbar sein:
 * Die Seite ist nicht vorhanden.
 * Die Seite wird umgeleitet, wofür die Standardauthentifizierung nicht ausreicht.
 * Es ist ein internes Problem aufgetreten.
-* usw.
 
 >[!TIP]
 >
@@ -255,7 +254,7 @@ Sie können diese Bereiche verbessern, indem Sie folgende Schritte ausführen:
 * Konvertieren der Bilder in das WebP-Format, um ihre Größe zu reduzieren.
 * Verwenden von `<picture>` und Bild-`srcset` mit unterschiedlichen Bildgrößen für verschiedene Viewport-Größen (und Sicherstellen, dass die Größenanpassung funktioniert).
 
-## Auswertungsdetails bei der Erlebnisprüfung {#details}
+## Details zur Experience Audit-Bewertung {#details}
 
 Die folgenden Details liefern zusätzliche Informationen darüber, wie Ihre Site von der Erlebnisprüfung ausgewertet wird. Sie sind für die allgemeine Nutzung der Funktion nicht erforderlich und werden hier der Vollständigkeit halber bereitgestellt.
 
