@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Real Use Monitoring (RUM) , einen automatis
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
+source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1009'
 ht-degree: 13%
 
 ---
@@ -27,7 +27,7 @@ Der RUM-Dienst (Real Use Monitoring) ist eine Technologie zur Leistungsüberwach
 
 ## Wer kann von einem echten Anwendungsüberwachungsdienst profitieren? {#who-can-benefit-from-rum-service}
 
-AEM hat Real Use Monitoring entwickelt, um Kunden und Adobe zu verstehen, wie Endbenutzer mit AEM Sites interagieren. Bei der Überwachung der tatsächlichen Verwendung werden Leistungsprobleme diagnostiziert und die Effektivität von Experimenten gemessen. Die Überwachung der tatsächlichen Verwendung wahrt den Datenschutz von Besuchern durch Stichproben - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
+Die Überwachung der tatsächlichen Verwendung hilft Kunden und Adobe, zu verstehen, wie Endbenutzer mit AEM Sites interagieren. Bei der Überwachung der tatsächlichen Verwendung werden Leistungsprobleme diagnostiziert und die Effektivität von Experimenten gemessen. Die Überwachung der tatsächlichen Verwendung wahrt den Datenschutz von Besuchern durch Stichproben - nur ein kleiner Teil aller Seitenansichten wird überwacht - und es werden keine personenbezogenen Daten (PII) erfasst.
 
 ## Überwachungsdienst für die tatsächliche Verwendung und Datenschutz {#rum-service-and-privacy}
 
@@ -59,7 +59,7 @@ Der Real Use Monitoring Service soll verhindern, dass personenbezogene Daten erf
 
 ## Funktionsweise der Echtzeit-Nutzungsüberwachung für Kunden {#how-rum-works-for-a-customer}
 
-Die Überwachung der tatsächlichen Verwendung überwacht automatisch den clientseitigen Traffic. Als Adobe-Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Da die Echtzeit-Nutzungsüberwachung (RUM) die allgemeine Verfügbarkeit (GA) ist, profitieren Sie automatisch von dieser neuen Funktion. Der Real Use Monitoring-Dienst stellt heute keine Metriken über ein Visualisierungs-Tool bereit. Wir arbeiten daran, Ihnen diese Funktion so schnell wie möglich zur Verfügung zu stellen.
+Die Überwachung der tatsächlichen Verwendung überwacht automatisch den clientseitigen Traffic. Als Adobe-Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Da der Real Use Monitoring (RUM)-Dienst allgemein verfügbar ist, profitieren Sie automatisch von dieser neuen Funktion. Der Real Use Monitoring-Dienst stellt heute keine kundenrelevanten Metriken zur Überwachung bereit. Wir arbeiten daran, Ihnen diese Funktion so schnell wie möglich zur Verfügung zu stellen.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
