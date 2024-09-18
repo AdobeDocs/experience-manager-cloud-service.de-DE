@@ -4,10 +4,10 @@ description: Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 100%
+source-wordcount: '1347'
+ht-degree: 95%
 
 ---
 
@@ -107,7 +107,7 @@ Nachdem ein Content-Set erstellt wurde, können Sie ihn zum Kopieren von Inhalte
 >[!NOTE]
 > Verwenden Sie keine Inhaltskopie in einer Umgebung, während in dieser Umgebung eine [Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) ausgeführt wird.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
 1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
@@ -144,7 +144,7 @@ Der Kopiervorgang wird gestartet. Der Status des Kopiervorgangs wird für das au
 
 Sie können den Status der Kopierprozesse auf der Seite **Aktivität „Inhalt kopieren“** überwachen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
@@ -200,3 +200,10 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Das Inhaltskopie-Tool verfügt über keine Versionierungsfunktion und kann geänderte oder erstellte Inhalte in der Quellumgebung in einem Inhaltssatz seit dem letzten Inhaltskopievorgang nicht automatisch erkennen.
    * Um die Zielumgebung nur mit Inhaltsänderungen zu aktualisieren, die seit dem letzten Inhaltskopiervorgang vorgenommen wurden, müssen Sie ein Content-Set erstellen. Geben Sie dann die Pfade auf der Quellinstanz an, an denen seit dem letzten Inhaltskopiervorgang Änderungen vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.
+
+## Bekannte Probleme {#known-issues}
+
+Beachten Sie das folgende bekannte Problem bei der Verwendung der Funktion zum Kopieren von [Inhalten.](/help/implementing/developing/tools/content-copy.md)
+
+* Wenn eine Ressource in der Quellumgebung umbenannt wird, kann dies dazu führen, dass der Vorgang zum Kopieren des Inhalts aufgrund widersprüchlicher UUIDs in der Zielumgebung fehlschlägt.
+   * Um diesen Fehler zu vermeiden, müssen Sie Ressourcen zunächst löschen und dann mit dem gewünschten neuen Ressourcennamen neu erstellen, anstatt sie umzubenennen.
