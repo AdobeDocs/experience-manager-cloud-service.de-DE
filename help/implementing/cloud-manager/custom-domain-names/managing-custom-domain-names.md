@@ -5,35 +5,41 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '445'
+ht-degree: 58%
 
 ---
 
 
 # Verwalten von benutzerdefinierten Domain-Namen {#managing-custom-domain-names}
 
-Mit Cloud Manager können Sie benutzerdefinierte Domain-Namen anzeigen, aktualisieren, ersetzen und löschen.
+Mit Cloud Manager können Sie benutzerdefinierte Domänennamen bearbeiten, aktualisieren, ersetzen und löschen.
 
-## Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens {#view-and-update}
+## Benutzerdefinierte Domain-Namenskonfiguration bearbeiten {#view-and-update}
 
-Über Sie das Menü **Anzeigen und aktualisieren** können Sie die Details eines oder aller Ihrer benutzerdefinierten Domain-Namen anzeigen.
+Unter Adobe Cloud Manager können Sie aus folgenden Gründen eine benutzerdefinierte Domain-Namenskonfiguration bearbeiten:
 
-**So können Sie einen benutzerdefinierten Domain-Namen anzeigen und aktualisieren:**
+* **Wechseln von Umgebungen**: Um die richtige Konfiguration anzuwenden, je nachdem, ob Sie Inhalte für Endbenutzer (Publish) oder interne Benutzer (Autor) bereitstellen.
+* **Sicherheitsupdates**: Zum Aktualisieren auf ein neueres SSL-Zertifikat, um die Sicherheit oder Compliance zu verbessern.
+* **Ändern der Bereitstellungsstrategie**: Um sicherzustellen, dass das richtige SSL-Zertifikat auf eine bestimmte Umgebung angewendet wird, um eine ordnungsgemäße Verschlüsselung und den Site-Zugriff zu gewährleisten.
+
+**So bearbeiten Sie eine benutzerdefinierte Domain-Namenskonfiguration:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Klicken Sie oben links auf der Seite auf das Hamburger-Symbol, um das linke Navigationsmenü anzuzeigen.
+1. Klicken Sie unter der Überschrift **Dienste** auf **CDN-Konfigurationen**.
+1. Klicken Sie auf der Seite **CDN-Konfigurationen** auf das Auslassungszeichen am Ende einer Zeile, deren CDN Sie bearbeiten möchten.
+1. Klicken Sie auf **Bearbeiten**.
+1. Gehen Sie im Dialogfeld **CDN-Konfiguration bearbeiten** wie folgt vor:
+   * Wählen Sie in der Dropdownliste **Ebene** die Ebene (Autor oder Publish) aus, die Sie verwenden möchten.
+   * Wählen Sie in der Dropdownliste **SSL-Zertifikat** das SSL-Zertifikat aus, das Sie verwenden möchten.
+1. Klicken Sie auf **Aktualisieren**.
 
-1. Ermitteln Sie die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie anzeigen oder aktualisieren möchten.
-
-1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile.
-
-1. Wählen Sie die Option **Anzeigen und aktualisieren** aus.
 
 ## Aktualisieren des SSL-Zertifikats eines benutzerdefinierten Domain-Namens {#update-cert}
 
@@ -42,6 +48,7 @@ Sie können [die gleichen Schritte zum Anzeigen und Aktualisieren eines benutzer
 >[!NOTE]
 >
 >Das SSL-Zertifikat muss gültig und [bereits konfiguriert](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) sein und den benutzerdefinierten Domain-Namen enthalten, den Sie aktualisieren.
+
 
 ## Löschen eines benutzerdefinierten Domain-Namens {#deleting}
 
@@ -60,6 +67,7 @@ Benutzende mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** 
 1. Wählen Sie **Löschen** aus.
 
 1. Bestätigen Sie Ihre Übermittlung.
+
 
 ### Löschen eines benutzerdefinierten Domain-Namens aus einer bestimmten Umgebung {#delete-cdn-specific}
 
