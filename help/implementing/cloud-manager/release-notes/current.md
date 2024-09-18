@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ Die Version 2024.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 5. Se
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md) -Kunden sollen diese Funktion schrittweise im Rahmen eines schrittweisen Rollouts erhalten.
+  >Die Kundschaft von [Content-Hub](/help/assets/product-overview.md) soll diese Funktion im Rahmen einer schrittweisen Einführung in mehreren Phasen erhalten.
 
 * **Unterstützung für Edge Delivery Services in Cloud Manager:**
 
-  Wenn Sie über eine Edge Delivery Services-Lizenz als Teil von AEM Sites verfügen, können Sie Ihre Site jetzt mit Edge Delivery Services direkt über Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) integrieren. [ Diese Funktion ermöglicht eine geführte Live-Schaltung im Self-Service. Außerdem werden wichtige Workflows wie die Verwaltung von Domain-Namen, SSL-Zertifikate und CDN-Mappings über alle AEM-Eigenschaften hinweg vereinheitlicht, sodass Konsistenz und Effizienz gewährleistet sind. <!-- CMGR-49859 -->
+  Wenn Sie über eine Edge Delivery Services-Lizenz als Teil von AEM Sites verfügen, [können Sie jetzt Ihre Site direkt über Cloud Manager in Edge Delivery Services integrieren](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Diese Funktion ermöglicht eine geführte Live-Schaltung im Self-Service. Außerdem werden wichtige Workflows wie die Verwaltung von Domain-Namen, SSL-Zertifikate und CDN-Mappings über alle AEM-Eigenschaften hinweg vereinheitlicht, sodass Konsistenz und Effizienz gewährleistet sind. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md) -Kunden sollen diese Funktion schrittweise im Rahmen eines schrittweisen Rollouts erhalten.
+  >Die Kundschaft von [Content-Hub](/help/assets/product-overview.md) soll diese Funktion im Rahmen einer schrittweisen Einführung in mehreren Phasen erhalten.
 
 * Kundinnen und Kunden, die GitHub-Repositorys verwenden, können jetzt Web-Stufen-Konfigurations-Pipelines erstellen und verwenden. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
