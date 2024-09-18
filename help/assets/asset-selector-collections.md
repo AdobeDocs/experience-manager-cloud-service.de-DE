@@ -2,7 +2,7 @@
 title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
 description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
 role: Admin,User
-source-git-commit: 63174176c944195ed21e481264e0a50062fd34f3
+source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 15%
@@ -59,7 +59,7 @@ Mit der Asset-Auswahl können Sie die Komponenten entsprechend den Anforderungen
 
 >[!MORELIKETHIS]
 >
->* [Anpassung der Asset-Auswahl](/help/assets/asset-selector-customization.md)
+>* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
 >* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
 
