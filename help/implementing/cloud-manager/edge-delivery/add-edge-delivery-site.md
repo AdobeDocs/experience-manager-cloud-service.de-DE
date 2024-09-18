@@ -3,9 +3,9 @@ title: Hinzufügen einer Edge Delivery-Site zu Cloud Manager
 description: Erfahren Sie, wie Sie Ihrem Produktionsprogramm oder Sandbox-Programm eine Edge Delivery-Site hinzufügen.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '461'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Hinzufügen einer Edge Delivery-Site zu Cloud Manager {#adding}
 
-Sie können Ihrem Produktionsprogramm oder Sandbox-Programm eine Edge Delivery-Site hinzufügen.
+Nachdem Sie Ihrem Produktionsprogramm eine Edge Delivery-Site hinzugefügt haben, wird Ihre Edge Delivery Services-Lizenz darauf angewendet.
 
 Das Hinzufügen einer Edge Delivery-Site zu Cloud Manager ist erforderlich, um [ein Support-Ticket für Ihr Edge Delivery-Projekt zu registrieren](/help/edge/overview.md##support-ticket).
 
@@ -34,22 +34,21 @@ Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implem
 
 1. Geben Sie im Dialogfeld **Edge Delivery-Site hinzufügen** die folgenden Informationen in die erforderlichen Felder ein:
 
-   | Textfeld | Zu liefernde Daten |
-   | --- | --- |
-   | Site-Name | Geben Sie den Namen der Edge Delivery-Site ein, die Sie hinzufügen. Der Name dient als eindeutige Kennung für die Site in Cloud Manager. |
-   | Repository-URL | Dieses Feld bezieht sich auf das Git-Repository, in dem der Code Ihrer Website gespeichert ist. Mit diesem Feld kann Cloud Manager den Code während des Bereitstellungsprozesses aus diesem Repository abrufen. |
-   | Site-Beschreibung (optional) | Geben Sie eine kurze Beschreibung der Edge Delivery-Site ein, die Sie hinzufügen. Diese Beschreibung hilft, die Site zu identifizieren und zu unterscheiden, wodurch es einfacher wird, unter anderen von Ihnen hinzugefügten Sites zu verwalten und zu erkennen. |
+   | Textfeld | Beschreibung |
+   | - | --- |
+   | Site-Name | Geben Sie den Namen der Edge Delivery-Site ein, die Sie hinzufügen.<br>Der Name dient als eindeutige Kennung für die Site in Cloud Manager. |
+   | Repository-URL | Geben Sie das Git-Repository ein, in dem der Code Ihrer Website gespeichert ist.<br>Mit diesem Feld kann Cloud Manager den Code während des Bereitstellungsprozesses aus diesem Repository abrufen. |
+   | Site-Beschreibung (optional) | Geben Sie eine kurze Beschreibung der Edge Delivery-Site ein, die Sie hinzufügen.<br>Eine Beschreibung hilft, die Site zu identifizieren und zu unterscheiden, wodurch die Verwaltung und Erkennung von anderen von Ihnen hinzugefügten Sites erleichtert wird. |
 
 1. Klicken Sie in der rechten unteren Ecke des Dialogfelds auf **Hinzufügen**.
 
-1. Das Dialogfeld **Repository-Eigentümer überprüfen** wird geöffnet. Führen Sie bei geöffneter Komponente die folgenden Schritte aus:
+1. Überprüfen Sie im Dialogfeld **Repository-Eigentümer überprüfen** den Besitz Ihres Repositorys, indem Sie die folgenden Schritte ausführen:
 
-   1. Fügen Sie eine Datei mit dem Pfad und dem Namen `well-known/adobe/cloudmanager-challenge.txt` zur Verzweigung `main` des Git-Repositorys hinzu, die im Feld **Repository-URL** aufgeführt ist.
-      * Klicken Sie bei Bedarf auf das Symbol **Kopieren** , um den Pfad in die Zwischenablage zu kopieren.
-      * Fügen Sie am Anfang des Speicherortpfads *nicht* einen Punkt hinzu.
-   1. Fügen Sie den Code aus dem Feld **Schritt &amp;num; 1** der Datei hinzu, die Sie im vorherigen Schritt erstellt haben.
-      * Klicken Sie bei Bedarf auf das Symbol **Kopieren** , um den Code in die Zwischenablage zu kopieren.
-   1. Erstellen Sie im Git-Repository eine Pull-Anforderung für die soeben erstellten Änderungen und führen Sie sie dann mit `main` zusammen.
+   | Schrittnummer | Beschreibung |
+   | - | - |
+   | **1** | Fügen Sie eine Datei mit dem Pfad und dem Namen `well-known/adobe/cloudmanager-challenge.txt` zur Verzweigung `main` des Git-Repositorys hinzu, die im Feld **Repository-URL** aufgeführt ist. Fügen Sie am Anfang des Speicherortpfads *nicht* einen Punkt hinzu.<br>Klicken Sie bei Bedarf auf das Symbol **Kopieren** , um den Pfad in die Zwischenablage zu kopieren. |
+   | **2** | Fügen Sie den im Textfeld in Schritt 2 angezeigten Code der Datei hinzu, die Sie gerade in Schritt 1 erstellt haben.<br>Klicken Sie bei Bedarf auf das Symbol **Kopieren** , um den Code in die Zwischenablage zu kopieren. |
+   | **3** | Erstellen Sie eine Pull-Anforderung für die soeben erstellten Änderungen im Git-Repository und führen Sie sie dann mit `main` zusammen, um den Code zu übertragen. |
 
 1. Klicken Sie auf **Verify**.
 

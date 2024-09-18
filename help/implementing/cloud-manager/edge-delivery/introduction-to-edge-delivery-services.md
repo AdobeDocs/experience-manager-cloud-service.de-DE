@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 6%
@@ -68,7 +68,7 @@ Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben
 
 ![Edge Delivery-Website-Aufgabenliste](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
-|  | Aufgabe | Beschreibung |
+|   | Aufgabe | Beschreibung |
 | --- | --- | --- |
 | 1 | Dem Kanal für Produktzusammenarbeit beitreten | Durch Klicken auf **Anfrage jetzt senden** wird eine Anfrage an Adobe gesendet, einen Kanal für Ihr Unternehmen zu erstellen. Wenn der Kanal bereits vorhanden ist, werden Sie an den Kanal Ihres Unternehmens weitergeleitet. |
 | 2 | Voraussetzungen erfüllen | Wenn Sie auf **Tutorial Erste Schritte anzeigen** klicken, gelangen Sie zum Tutorial [Erste Schritte - Entwickler](https://www.aem.live/developer/tutorial). |
@@ -76,5 +76,7 @@ Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben
 | 4 | Domain hinzufügen | Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | SSL-Zertifikat hinzufügen | Siehe [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | CDN Ihrer Edge Delivery-Site konfigurieren | Siehe [Hinzufügen einer CDN-Konfiguration](#add-cdn). |
+
+<!-- &#x2460; for "1" inside circle -->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
