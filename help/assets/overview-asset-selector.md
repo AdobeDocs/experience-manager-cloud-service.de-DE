@@ -3,10 +3,10 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 69%
+source-wordcount: '1314'
+ht-degree: 68%
 
 ---
 
@@ -196,15 +196,15 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
         <em>Erfahren Sie, wie Sie den Asset-Selektor mit Dynamic Media Open APIs integrieren.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset-Auswahleigenschaftsgrafik"><br/>
         <a href="asset-selector-customization.md">Asset-Wählereigenschaften</a>
         <p>
         <em>Erfahren Sie mehr über die Grundlagen zum Anpassen verschiedener Komponenten der Asset-Auswahl, wie Filter, Auswahl von Assets, abgelaufene Assets und vieles mehr. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Abbildung der Asset-Auswahl-Beispiele"><br/>
         <a href="asset-selector-customization.md">Beispiele für Asset-Wähler</a>
@@ -225,6 +225,15 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
         <p>
         <em>Erfahren Sie, wie Sie Dateien oder Ordner aus Ihrem lokalen Dateisystem oder aus einem Drittanbietersystem in die Asset-Auswahl hochladen können. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Grafik zu Asset-Auswahl-Sammlungen"><br/>
+        <a href="asset-selector-collections.md">Asset-Auswahl-Sammlungen</a>
+        <p>
+        <em>Erfahren Sie, wie Sie Sammlungen in der Asset-Auswahl mithilfe des Experience Manager-Repositorys verwenden. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
