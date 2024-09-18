@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: ht
-source-wordcount: '3928'
-ht-degree: 100%
+source-git-commit: cf9e1b3c290d142095912c794de58547913faece
+workflow-type: tm+mt
+source-wordcount: '4012'
+ht-degree: 97%
 
 ---
 
@@ -55,8 +55,7 @@ Adobe lädt Sie ein, Feedback zu geben oder Fragen zu Traffic-Filterregeln zu st
 
 In der aktuellen digitalen Landschaft stellt schädlicher Traffic eine immer präsente Bedrohung dar. Adobe ist sich der Ernsthaftigkeit des Risikos bewusst und bietet verschiedene Ansätze zum Schutz von Kundenanwendungen und zur Eindämmung von Angriffen.
 
-Am Rande absorbiert das von Adobe verwaltete CDN DoS-Angriffe auf der Netzwerkschicht
-(Ebene 3 und 4), einschließlich Angriffe durch Überschwemmung oder Reflexion/Verstärkung.
+Am Rande absorbiert das von Adobe verwaltete CDN DoS-Angriffe auf der Netzwerkschicht (Ebenen 3 und 4), einschließlich Überschwemmungen und Reflektions-/Verstärkungsangriffe.
 
 Adobe ergreift standardmäßig Maßnahmen, um eine Leistungsbeeinträchtigung durch unerwartet hohes Traffic-Aufkommen über einen bestimmten Schwellenwert hinaus zu verhindern. Im Falle eines DoS-Angriffs, der die Verfügbarkeit der Website beeinträchtigt, werden die Betriebs-Teams von Adobe benachrichtigt und Maßnahmen zur Eindämmung des Problems ergriffen.
 
@@ -475,6 +474,14 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+## CVE-Regeln {#cve-rules}
+
+Wenn WAF lizenziert ist, wendet Adobe automatisch Blockierungsregeln an, um sich vor vielen bekannten CVEs (Common Vulnerabilities and Expositions) zu schützen, und neue CVEs können kurz nach ihrer Entdeckung hinzugefügt werden. Kunden sollten und müssen keine CVE-Regeln selbst konfigurieren.
+
+Wenn eine Traffic-Anfrage mit einer CVE übereinstimmt, wird sie im entsprechenden CDN-Protokolleintrag angezeigt.
+
+Wenden Sie sich an den Adobe-Support, wenn Sie Fragen zu einer bestimmten CVE haben oder wenn eine bestimmte CVE-Regel vorliegt, die Ihre Organisation deaktivieren möchte.
 
 ## Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
 
