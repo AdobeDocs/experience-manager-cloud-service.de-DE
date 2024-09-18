@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f0dc6a753590a1aaddcf01b9766ab0ab6373187c
+source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
-source-wordcount: '5641'
+source-wordcount: '5651'
 ht-degree: 97%
 
 ---
@@ -625,8 +625,6 @@ ht-degree: 97%
       + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
       + [Inhaltsurhebernachweise](/help/assets/content-credentials.md)
       + [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-
-
    + Content Hub {#content-hub}
       + [Übersicht](/help/assets/product-overview.md)
       + [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md)
@@ -1068,9 +1066,6 @@ ht-degree: 97%
    + [Generieren von Varianten](/help/generative-ai/generate-variations.md)
 + Implementieren {#implementing}
    + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
-
-
-
    + Verwenden von Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + Programme {#programs}
@@ -1149,9 +1144,6 @@ ht-degree: 97%
       + [Grundlegendes zu Inhaltsanfragen in Cloud Service](/help/implementing/cloud-manager/content-requests.md)
       + [CDN-Leistungs-Dashboard](/help/implementing/cloud-manager/cdn-performance.md)
       + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/faqs.md)
-
-
-
    + Entwickeln für AEM as a Cloud Service {#developing}
       + [Struktur von AEM-Projekten](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Repository-Strukturpaket von AEM-Projekten](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -1259,7 +1251,7 @@ ht-degree: 97%
       + [ContextHub-API](/help/implementing/developing/personalization/contexthub-api.md)
       + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=de)
    + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
-      + Erweitern von Adobe Experience Manager mit App Builder{#app-builder}
+      + Erweitern von AEM mit App Builder {#app-builder}
          + [Erweitern von Adobe Experience Manager mit Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Einführung in App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe-Entwicklerkonsole](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1287,6 +1279,10 @@ ht-degree: 97%
       + [Erweitern der Seiteneigenschaften](/help/implementing/developing/extending/page-properties.md)
       + [Entwickeln des Bulk Editors](/help/implementing/developing/extending/bulk-editor.md)
       + [Erweitern von MSM](/help/implementing/developing/extending/msm.md)
+      + Internationalisierung{#internationalization}
+         + [Internationalisieren von Komponenten](/help/implementing/developing/extending/i18n/components.md)
+         + [Internationalisierung von UI-Zeichenfolgen](/help/implementing/developing/extending/i18n/dev.md)
+         + [Extrahieren von Zeichenfolgen zum Übersetzen](/help/implementing/developing/extending/i18n/extract.md)
    + Bereitstellen für AEM as a Cloud Service {#deploying}
       + [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)
