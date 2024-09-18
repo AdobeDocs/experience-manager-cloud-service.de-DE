@@ -1,14 +1,20 @@
 ---
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 7%
 
 ---
 
 # Konfigurieren der Benutzeroberfläche von Content Hub {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Konfigurieren der Benutzeroberfläche von Content Hub"
+>abstract="Mit Experience Manager Assets können Administratoren die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Je nach den Konfigurationsoptionen, die von den Administratoren ausgewählt wurden, können Benutzer von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören Metadaten beim Importieren von Assets, Filtern, Asset-Eigenschaften, Metadaten bei der Suche nach Assets, personalisiertes Branding und benutzerspezifische Links."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Konfigurieren von Assets in Content Hub](assets/configure-assets.png)
@@ -43,7 +49,7 @@ So greifen Sie auf Konfigurationsoptionen in Content Hub zu:
 
 ## Konfigurationsoptionen in Content Hub verwalten {#manage-configuration-options}
 
-Verwalten Sie die folgenden Konfigurationsoptionen für Ihre Benutzer:
+Verwalten Sie als Administrator die folgenden Konfigurationsoptionen für Ihre Benutzer:
 
 * [Importieren](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ Auf ähnliche Weise können Sie auf das neben jeder URL verfügbare Symbol ![Bea
 Der benutzerspezifische Link wird auf der Content Hub-Startseite neben der Registerkarte Einblicke als neue Registerkarte angezeigt.
 
 ![Registerkarte &quot;Benutzerspezifische Links&quot;der Konfigurationsoberfläche in Content Hub](assets/configuration-ui-custom-link-tab.png)
-
-
