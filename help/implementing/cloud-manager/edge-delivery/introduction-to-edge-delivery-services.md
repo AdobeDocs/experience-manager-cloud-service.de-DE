@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 6%
@@ -62,7 +62,10 @@ Je nach Projektbeginn können Edge Delivery Services auf verschiedene Weise hinz
 >* Ihr Unternehmen muss über eine nicht verwendete Edge Delivery Services-Lizenz verfügen, bevor diese auf ein Produktionsprogramm angewendet werden kann.
 >* Sobald die Edge Delivery Services-Lizenz auf ein Programm angewendet oder daraus entfernt wurde, wird die Änderung sofort wirksam, ohne dass eine Pipeline ausgeführt werden muss.
 
+
 ## Über die Aufgabenliste von Edge Delivery {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben, die Sie durch das Onboarding führen und Ihre Edge Delivery-Site bis zum [Go-Live](/help/journey-onboarding/go-live-checklist.md) verwalten soll.
 
@@ -77,7 +80,6 @@ Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben
 | 5 | SSL-Zertifikat hinzufügen | Siehe [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | CDN Ihrer Edge Delivery-Site konfigurieren | Siehe [Hinzufügen einer CDN-Konfiguration](#add-cdn). |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## Support-Ticket anmelden {#eds-support-ticket}
 
