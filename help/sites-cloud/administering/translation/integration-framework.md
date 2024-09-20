@@ -6,9 +6,9 @@ role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
 source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhal
 
 ## Herstellen einer Verbindung zu einem Übersetzungsdienstleister {#connecting-to-a-translation-service-provider}
 
-Erstellen Sie eine Cloud-Konfiguration, die AEM mit Ihrem Übersetzungsdienstleister verbindet.
+Erstellen Sie eine Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet.
 
-AEM beinhaltet standardmäßig die Funktion &quot;[Verbinden mit Microsoft® Translator](connect-ms-translator.md)&quot;. Andere Übersetzungstechnologieanbieter mit AEM Connectoren, die dem Partnerprogramm der Adobe Exchange angehören, finden Sie [hier](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
+AEM enthält die Funktion, standardmäßig eine [Verbindung zu Microsoft® Translator herzustellen](connect-ms-translator.md). Weitere Übersetzungstechnologieanbieter mit AEM-Connectoren, die dem Adobe Exchange-Partnerprogramm angehören, finden Sie [hier](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft® Translator-Connector finden Sie unter [Integrieren mit Microsoft® Translator](connect-ms-translator.md).
 

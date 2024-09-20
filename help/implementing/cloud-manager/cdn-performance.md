@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '384'
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Das CDN-Dashboard ist auf der Übersichtsseite jedes Programms verfügbar.
 
    ![Leistung](assets/cdn-performance-overview.png)
 
-## Dashboard verwenden {#using}
+## Verwenden des Dashboards {#using}
 
 Das Dashboard enthält einen Gesamtwert für die CDN-Leistung sowie bei Bedarf Trends, Warnungen und Verbesserungsvorschläge.
 
@@ -66,13 +66,13 @@ Das Cache-Trefferverhältnis ist eine Maßeinheit dafür, wie viele Inhaltsanfra
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **Treffer** - Daten werden aus dem Cache angefordert und gefunden.
-* **Miss** - Daten werden aus dem Cache angefordert und nicht gefunden.
-* **Übergeben** - Daten werden aus dem Cache angefordert und auf keinen Fall zum Zwischenspeichern dieser Daten festgelegt.
-* **Sonstige** - Alle Datenanforderungen aus dem Cache, die mit keinem anderen Fall übereinstimmen.
+* **Hit**: Daten werden aus dem Cache angefordert und gefunden.
+* **Miss**: Daten werden aus dem Cache angefordert, aber nicht gefunden.
+* **Pass**: Daten werden aus dem Cache angefordert und er so ist eingestellt, dass diese Daten auf keinen Fall zwischengespeichert werden.
+* **Other**: Alle Datenanforderungen aus dem Cache, für die nichts der obigen der Fall ist.
 
 Cache-Metriken werden alle 24 Stunden aktualisiert.
 
 >[!TIP]
 >
->Weitere Informationen zur Interaktion von Cloud Manager und CDN mit Dispatcher finden Sie unter [Zwischenspeicherung in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+>Weitere Informationen zur Interaktion von Cloud Manager und CDN mit dem Dispatcher finden Sie im Dokument [Zwischenspeicherung in AEM as a Cloud Service.](/help/implementing/dispatcher/caching.md).

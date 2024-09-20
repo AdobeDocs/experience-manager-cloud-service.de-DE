@@ -1,20 +1,20 @@
 ---
 title: Fehlerbehebung bei SSL-Zertifikatfehlern
-description: Erfahren Sie, wie Sie Fehler mit SSL-Zertifikaten beheben können, indem Sie häufige Ursachen identifizieren, damit Sie sichere Verbindungen aufrechterhalten können.
+description: Erfahren Sie, wie Sie Fehler bei SSL-Zertifikaten beheben können, indem Sie häufige Ursachen identifizieren, damit Sie sichere Verbindungen aufrechterhalten können.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # Fehlerbehebung bei SSL-Zertifikatfehlern {#certificate-errors}
 
-Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß installiert ist oder die Anforderungen von Cloud Manager nicht erfüllt.
+Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß installiert ist oder nicht die Anforderungen von Cloud Manager erfüllt.
 
 +++**Richtige Zertifikatreihenfolge**
 
@@ -44,7 +44,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 +++
 
-+++**Entfernen von Clientzertifikaten**
++++**Entfernen von Client-Zertifikaten**
 
 Wenn Sie beim Hinzufügen eines Zertifikats einen Fehler wie den folgenden erhalten:
 
@@ -108,7 +108,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**Zertifikatgültigkeitsdaten**
++++**Gültigkeitsdaten des Zertifikats**
 
 Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindestens 90 Tage gültig ist. Überprüfen Sie die Gültigkeit der Zertifikatskette.
 

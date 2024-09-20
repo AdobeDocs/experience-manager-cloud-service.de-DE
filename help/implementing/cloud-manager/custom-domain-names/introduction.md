@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen 
 
 ## Benutzerdefinierte Domain-Namen und eigene CDNs {#byo-cdn}
 
-AEM as a Cloud Service bietet einen integrierten CDN-Dienst (Content Delivery Network), ermöglicht Ihnen aber auch das BYO (Bring Your Own)-CDN zur Verwendung mit AEM. Benutzerdefinierte Domains können entweder im AEM verwalteten CDN oder einem von Ihnen verwalteten CDN installiert werden.
+AEM as a Cloud Service bietet einen integrierten CDN(Content Delivery Network)-Service, ermöglicht Ihnen aber auch, Ihr eigenes CDN (BYO, Bring Your Own) für AEM bereitzustellen. Benutzerdefinierte Domains können entweder im AEM verwalteten CDN oder einem von Ihnen verwalteten CDN installiert werden.
 
 * Cloud Manager verwaltet benutzerdefinierte Domain-Namen und Zertifikate, die im von AEM verwalteten CDN installiert sind.
 * Benutzerdefinierte Domain-Namen und Zertifikate, die in einem eigenen CDN installiert sind, werden direkt in diesem CDN verwaltet.
@@ -57,7 +57,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 | 2 | Hinzufügen einer Domain zu Cloud Manager | [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | Konfigurieren der DNS-Einstellungen durch Hinzufügen von DNS-CNAME- oder APEX-Einträgen, die auf AEM as a Cloud Service verweisen | [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | Überprüfen des Domain-Verifizierungsstatus | [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Status von DNS-Datensätzen überprüfen | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | Überprüfen des Status von DNS-Einträgen | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

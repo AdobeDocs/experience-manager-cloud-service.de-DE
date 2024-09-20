@@ -6,15 +6,15 @@ role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
 source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Herstellen einer Verbindung mit Microsoft Translator {#connecting-to-microsoft-translator}
 
-AEM bietet einen integrierten Connector für [Microsoft Translator](https://www.microsoft.com/de-de/translator/business/) zur Übersetzung von Seiteninhalten oder Assets. Nachdem Sie eine Lizenz von Microsoft zur Verwendung von Microsoft Translator erhalten haben, konfigurieren Sie den Connector entsprechend den Anweisungen auf dieser Seite.
+AEM bietet einen integrierten Connector für [Microsoft Translator](https://www.microsoft.com/de-de/translator/business/) zur Übersetzung von Seiteninhalten oder Assets. Nachdem Sie eine Lizenz von Microsoft für die Verwendung von Microsoft Translator erhalten haben, konfigurieren Sie den Connector entsprechend den Anweisungen auf dieser Seite.
 
 >[!TIP]
 >
@@ -47,6 +47,6 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 1. Wählen Sie **Verbinden** aus, um die Verbindung zu überprüfen.
 1. Wählen Sie **Speichern und schließen**.
 
-## Veröffentlichen der Konfigurationen des Übersetzerdienstes {#publishing-the-translator-service-configurations}
+## Veröffentlichen der Übersetzungs-Service-Konfigurationen {#publishing-the-translator-service-configurations}
 
-Als letzten Schritt veröffentlichen Sie Ihre Microsoft Translator-Konfigurationen, um veröffentlichte übersetzte Inhalte zu unterstützen. Verwenden Sie dazu die Aktion [Veröffentlichen eines Baums](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree) .
+Veröffentlichen Sie als letzten Schritt Ihre Microsoft Translator-Konfigurationen, um veröffentlichte übersetzte Inhalte zu unterstützen. Verwenden Sie dazu die Aktion [Veröffentlichen eines Baums](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree).

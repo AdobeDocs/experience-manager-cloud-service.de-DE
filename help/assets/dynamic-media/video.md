@@ -6,9 +6,9 @@ feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9402'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -526,7 +526,7 @@ In Dynamic Media können Sie die Unterstützung für Folgendes aktivieren:
 * Mehrfache Untertitel und Audiospuren
 * KI-generierte Untertitel (Frühzeitiger Zugriff)
 
-Erstellen und Senden einer Adobe-Support-Anfrage.
+Durch Erstellen und Einreichen eines Adobe-Kunden-Support-Falls.
 
 Durch Aktivierung einer der drei oben genannten Funktionen werden alle Funktionen aktiviert. Wenn Sie also nur DASH aktivieren möchten, aktivieren Sie damit tatsächlich alle drei oben aufgeführten Funktionen.
 

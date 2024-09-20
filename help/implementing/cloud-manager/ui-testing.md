@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bb75e70fb83b63e12968f7cb01e6976e367ff70e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2630'
+ht-degree: 100%
 
 ---
 
@@ -215,7 +215,7 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 
 >[!NOTE]
 >
-> Diese Werte werden während der Pipelineausführung automatisch festgelegt - sie müssen nicht manuell als Pipeline-Variablen festgelegt werden.
+> Diese Werte werden während der Pipeline-Ausführung automatisch festgelegt. Sie müssen nicht manuell als Pipeline-Variablen festgelegt werden.
 
 | Variable | Beispiele | Beschreibung | Test-Framework |
 |----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
@@ -224,9 +224,9 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | Die URL der AEM-Autoreninstanz | Alle |
 | `AEM_AUTHOR_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Autoreninstanz | Alle |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Autoreninstanz | Alle |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | Die URL der AEM-Veröffentlichungsinstanz | Alle * |
-| `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle * |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle * |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | Die URL der AEM-Veröffentlichungsinstanz | Alle* |
+| `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle* |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle* |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Der Pfad, in dem der XML-Bericht der Testergebnisse gespeichert werden muss | Alle |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | Die URL, an die die Datei hochgeladen werden muss, damit sie für das Test-Framework verfügbar ist | Alle |
 | `PROXY_HOST` | `proxy-host` | Der Host-Name des internen HTTP-Proxys, der vom Test-Framework verwendet werden soll | Alle außer Selenium |

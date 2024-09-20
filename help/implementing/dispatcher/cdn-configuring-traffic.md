@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1350'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 | **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie), Übereinstimmung, Ersatz | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies durch einen neuen Wert. |
 |              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie) | Setzt den Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder Anfrage-Header, Abfrageparameter oder Cookie auf seinen Wert in Kleinbuchstaben. |
 
-Aktionen ersetzen unterstützt Erfassungsgruppen, wie unten dargestellt:
+Aktionen zum Ersetzen unterstützen Erfassungsgruppen, wie unten dargestellt:
 
 ```
       - name: replace-jpg-with-jpeg
@@ -400,7 +400,7 @@ data:
 | **redirect** | location | Wert für die Kopfzeile „Speicherort“. |
 |     | status (optional, Standardeinstellung ist 301) | Der HTTP-Status, der in der Umleitungsnachricht verwendet werden soll, standardmäßig 301, die zulässigen Werte sind: 301, 302, 303, 307, 308. |
 
-Die Speicherorte einer Umleitung können entweder Zeichenfolgenliterale (z. B. https://www.example.com/page) oder das Ergebnis einer Eigenschaft (z. B. Pfad) sein, die optional umgewandelt wird, mit der folgenden Syntax:
+Die Speicherorte einer Umleitung können entweder Zeichenfolgenliterale (z. B. https://www.example.com/page) oder das Ergebnis einer Eigenschaft (z. B. Pfad) sein, die optional mit der folgenden Syntax umgewandelt wird:
 
 ```
 experimental_redirects:
