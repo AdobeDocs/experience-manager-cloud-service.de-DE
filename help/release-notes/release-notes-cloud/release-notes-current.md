@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -67,11 +67,11 @@ Nutzen Sie GenAI über die neue Funktion [Varianten generieren](/help/generative
 
 ### Early-Access-Funktion in Dynamic Media {#dm-early-access}
 
-**KI-generierte Videobeschriftungen**
+**KI-generierte Videountertitel**
 
-KI-generierte Videountertitel in Adobe Dynamic Media verwenden künstliche Intelligenz, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Benutzererlebnis verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
+Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Benutzererlebnis verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
 
-Um frühzeitigen Zugriff auf die Unterstützung von durch KI generierten Untertiteln in Ihrem Dynamic Media-Konto zu erhalten, erstellen und senden Sie eine Adobe-Support-Anfrage ](/help/assets/dynamic-media/video.md##enable-dash).[
+Um frühzeitig Zugang zur Unterstützung für KI-generierte Untertitel in Ihrem Dynamic Media-Konto zu erhalten, [erstellen und senden Sie eine Anfrage an den Adobe-Kunden-Support.](/help/assets/dynamic-media/video.md##enable-dash)
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
 
