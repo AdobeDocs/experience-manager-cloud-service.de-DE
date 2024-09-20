@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
 source-wordcount: '5651'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -638,7 +638,7 @@ ht-degree: 97%
       + [Verwalten von Sammlungen in Content Hub](/help/assets/collections-content-hub.md)
       + [Bearbeiten von Bildern mit Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
       + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
-      + [ Häufig gestellte Fragen zu Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
+      + [Häufig gestellte Fragen zu Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
    + Best Practices{#best-practices}
       + [Best Practices für die Suche](/help/assets/search-best-practices.md)
       + [Metadatenverwaltung und Best Practices](/help/assets/metadata-best-practices.md)
@@ -1075,7 +1075,7 @@ ht-degree: 97%
          + [Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [Ruhezustand von Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [Aktivieren des Ruhezustands von Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Erstellen eines AEM-Programmprojekts {#create-application-project}
          + [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Projekt-Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1084,8 +1084,8 @@ ht-degree: 97%
       + Verwalten von Code {#managing-code}
          + [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adobe-Repositorys hinzufügen](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Hinzufügen privater Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Hinzufügen von Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Hinzufügen von privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1109,7 +1109,7 @@ ht-degree: 97%
             + [Überblick über Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
             + [Java Funktionsprüfung](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI-Tests](/help/implementing/cloud-manager/ui-testing.md)
-         + [Experience Audit-Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+         + [Erlebnis-Audit-Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
       + [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA-Berichte](/help/implementing/cloud-manager/sla-reporting.md)
@@ -1120,11 +1120,11 @@ ht-degree: 97%
       + Edge Delivery-Sites {#edge-delivery-sites}
          + [Einführung in Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Hinzufügen einer Edge Delivery-Site zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Verwalten von Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [Verwalten von Edge Delivery-Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Domain-Einstellungen {#custom-domain-names}
-         + [Einführung in die Domäneneinstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [Einführung in Domain-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [Status des benutzerdefinierten Domänennamens überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+         + [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL-Zertifikate {#manage-ssl-certificates}
@@ -1141,7 +1141,7 @@ ht-degree: 97%
          + [Anwenden und Aufheben der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Grundlegendes zu Inhaltsanfragen in Cloud Service](/help/implementing/cloud-manager/content-requests.md)
+      + [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md)
       + [CDN-Leistungs-Dashboard](/help/implementing/cloud-manager/cdn-performance.md)
       + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Entwickeln für AEM as a Cloud Service {#developing}

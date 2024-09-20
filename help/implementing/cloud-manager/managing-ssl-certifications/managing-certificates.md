@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 68%
+ht-degree: 79%
 
 ---
 
@@ -25,15 +25,15 @@ Der Status Ihrer SSL-Zertifikate ist auf der Seite **SSL-Zertifikate** auf einen
 | --- | --- |
 | Grün | Das Zertifikat ist ab dem aktuellen Datum mindestens 14 Tage gültig. |
 | Orangefarben | Das Zertifikat läuft in weniger als 14 Tagen ab.<br>• Sie sollten sicherstellen, dass es einen Plan gibt, wann Sie Ihr Zertifikat erneuern und über die Cloud Manager-Benutzeroberfläche ersetzen, um mögliche Website-Zugriffe oder Ausfälle zu vermeiden.<br>• Cloud Manager sendet in der Benutzeroberfläche regelmäßige Benachrichtigungen, um Sie über einen bevorstehenden Zertifikatablauf zu informieren. |
-| Rot | Das SSL-Zertifikat ist abgelaufen.<br>Siehe [Aktualisieren eines abgelaufenen kundenverwalteten SSL-Zertifikats](#update-ssl-certificate) oder [Löschen eines SSL-Zertifikats](#deleting-an-ssl-certificate). |
+| Rot | Das SSL-Zertifikat ist abgelaufen.<br>Siehe [Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats](#update-ssl-certificate) oder [Löschen eines SSL-Zertifikats](#deleting-an-ssl-certificate). |
 
-## Aktualisieren eines abgelaufenen kundenverwalteten SSL-Zertifikats {#update-ssl-certificate}
+## Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#update-ssl-certificate}
 
 Wenn ein kundenseitig verwaltetes Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Durch das Aktualisieren Ihrer Zertifikate wird sichergestellt, dass Ihre Domain weiterhin wie gewünscht funktioniert.
 
 Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um diese Aufgabe abzuschließen.
 
-**Aktualisieren eines abgelaufenen kundenverwalteten SSL-Zertifikats:**
+**Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
@@ -41,7 +41,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 1. Navigieren Sie auf dem Bildschirm **Umgebungen** zum Bildschirm **SSL-Zertifikate**.
 1. Klicken Sie in der Zeile des abgelaufenen, kundenseitig verwalteten Zertifikats, das Sie aktualisieren möchten, auf die Schaltfläche mit den Auslassungspunkten ganz rechts und wählen Sie dann **Anzeigen und aktualisieren** aus.
 
-   ![Aktualisieren einer abgelaufenen kundenverwalteten SSL-Zertifizierung](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![Aktualisieren einer abgelaufenen, kundenseitig verwalteten SSL-Zertifizierung](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. Gehen Sie im Dialogfeld **SSL-Zertifikat anzeigen und aktualisieren** wie folgt vor:
 
@@ -52,9 +52,9 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 1. Klicken Sie auf **Aktualisieren** , um Ihre Änderungen zu speichern und sie automatisch anzuwenden. —>
 
-## Ersetzen eines abgelaufenen kundenverwalteten SSL-Zertifikats {#replace-ssl-certificate}
+## Ersetzen eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#replace-ssl-certificate}
 
-Führen Sie dieselben Schritte aus, die unter [Aktualisieren eines abgelaufenen SSL-Zertifikats](#update-ssl-certificate) beschrieben werden, um ein abgelaufenes, vom Kunden verwaltetes SSL-Zertifikat zu ersetzen.
+Führen Sie dieselben Schritte aus, die unter [Aktualisieren eines abgelaufenen SSL-Zertifikats](#update-ssl-certificate) beschrieben sind, um ein abgelaufenes, kundenseitig verwaltetes SSL-Zertifikat zu ersetzen.
 
 ## Umbenennen eines von Adobe verwalteten SSL-Zertifikats (#rename-an-ssl-certificate)
 
@@ -104,6 +104,6 @@ Wenn Sie bereits über eine CDN-Konfiguration für Ihr SSL-Zertifikat verfügen,
 
 Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 
-Weitere Informationen finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) .
+Weitere Details finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
-Eine ähnliche Meldung wird auch auf den Seiten **IP-Zulassungsliste** und **Umgebungen** für Umgebungen bereitgestellt, die bereits über CDN-Konfigurationen für IP-Zulassungslisten oder benutzerdefinierte Domänennamen verfügen.
+Eine ähnliche Nachricht wird auch auf den Seiten **IP-Zulassungsliste** und **Umgebungen** für Umgebungen mit bereits vorhandenen CDN-Konfigurationen für IP-Zulassungslisten oder benutzerdefinierte Domain-Namen gezeigt.
