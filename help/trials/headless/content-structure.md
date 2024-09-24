@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '1003'
-ht-degree: 100%
+source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 
@@ -90,6 +90,7 @@ Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen.
 
    * **Rendern als:** **Textbereich**: Wenn Sie ein Abenteuer erstellen, wird in diesem Feld eine kurze Beschreibung der Reise gespeichert.
    * **Feldbezeichnung:** `Description`: Die Bezeichnung, die für dieses Feld angezeigt wird, wenn ein Abenteuer erstellt wird.
+   * **Standardtyp**: **Klartext** - Das für dieses Beispiel erforderliche Format.
 
 1. Fügen Sie ein Feld hinzu, um den Preis des Abenteuers zu speichern, indem Sie ein **einzeiliges Textfeld** per Drag-and-Drop hinzufügen und die folgenden Eigenschaften eingeben:
 
