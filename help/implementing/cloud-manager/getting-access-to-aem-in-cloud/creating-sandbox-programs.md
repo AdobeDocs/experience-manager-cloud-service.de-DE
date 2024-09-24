@@ -5,10 +5,10 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
-workflow-type: ht
-source-wordcount: '436'
-ht-degree: 100%
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 74%
 
 ---
 
@@ -26,17 +26,17 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
-1. Geben Sie im Assistenten *Erstellen Sie Ihr Programm* im Textfeld **Programmname** den gewünschten Namen für das Programm ein.
+1. Geben Sie im Assistenten *Erstellen Ihres Programms* im Textfeld **Programmname** den gewünschten Namen für das Programm ein.
 
-1. Wählen Sie unter **Programmziel** die Option **`Set up a sandbox`** aus.
+1. Wählen Sie unter **Programmziel** die Option ![Zauberstab-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **Sandbox einrichten**.
 
    ![Erstellen von Programmtypen](assets/create-sandbox.png)
 
 1. (Optional) Führen Sie unten rechts im Dialogfeld des Assistenten einen der folgenden Schritte aus:
 
-   * Ziehen Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen**.
-   * Klicken Sie auf **Programmbild hinzufügen** und wählen Sie dann ein Bild aus einem Datei-Browser aus.
-   * Klicken Sie auf das Papierkorbsymbol, um ein hinzugefügtes Bild zu löschen.
+   * Ziehen Sie eine Bilddatei per Drag-and-Drop auf das Ziel ![Bild-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Programmbild hinzufügen** .
+   * Klicken Sie auf das Symbol ![Bild](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Programmbild hinzufügen** und wählen Sie dann ein Bild aus einem Dateibrowser aus.
+   * Klicken Sie auf das Symbol ![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) , um ein hinzugefügtes Bild zu entfernen.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -55,7 +55,7 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 
 Nachdem ein neues Sandbox-Programm erstellt wurde, können Sie Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung zugreifen, indem Sie die Seite „Programmübersicht“ aufrufen.
 
-1. Klicken Sie auf der Landingpage von Cloud Manager in Ihrem erstellten Sandbox-Programm auf die Schaltfläche mit den Auslassungspunkten.
+1. Klicken Sie auf der Cloud Manager-Landingpage im Sandbox-Programm im erstellten Sandbox-Programm auf das Symbol ![Mehr kleine Liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) .
 
    ![Zugriff auf die Programmübersicht](assets/program-overview-sandbox.png)
 

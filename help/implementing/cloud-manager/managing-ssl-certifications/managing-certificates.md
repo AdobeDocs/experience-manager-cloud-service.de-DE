@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 79%
+source-wordcount: '949'
+ht-degree: 67%
 
 ---
 
@@ -35,10 +35,10 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 **Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats:**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
-1. Navigieren Sie auf der Seite **Übersicht** zum Bildschirm **Umgebungen**.
-1. Navigieren Sie auf dem Bildschirm **Umgebungen** zum Bildschirm **SSL-Zertifikate**.
+1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü einzublenden.
+1. Klicken Sie unter der Überschrift **Dienste** auf das Symbol ![Schließendes Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 1. Klicken Sie in der Zeile des abgelaufenen, kundenseitig verwalteten Zertifikats, das Sie aktualisieren möchten, auf die Schaltfläche mit den Auslassungspunkten ganz rechts und wählen Sie dann **Anzeigen und aktualisieren** aus.
 
    ![Aktualisieren einer abgelaufenen, kundenseitig verwalteten SSL-Zertifizierung](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
@@ -50,7 +50,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
    * Aktualisieren Sie dieses Feld im Feld **Privater Schlüssel** nur, wenn Sie Änderungen am Zertifikat vorgenommen haben.
    * Fügen Sie im Feld **Zertifikatskette** (oder Vertrauenskette) die Zertifikatskette ein.
 
-1. Klicken Sie auf **Aktualisieren** , um Ihre Änderungen zu speichern und sie automatisch anzuwenden. —>
+1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen zu speichern und sie automatisch anzuwenden.
 
 ## Ersetzen eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#replace-ssl-certificate}
 
@@ -68,10 +68,10 @@ Im Folgenden finden Sie einige Gründe, warum Sie möglicherweise ein SSL-Zertif
 
 1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
-1. Klicken Sie oben links auf der Seite auf das Hamburger-Symbol, um das linke Navigationsmenü anzuzeigen.
-1. Klicken Sie unter der Überschrift **Dienste** auf **SSL-Zertifikate**.
-1. Klicken Sie auf der Seite **SSL-Zertifikate** am Ende einer Zeile, deren Zertifikat Sie umbenennen möchten, auf das Auslassungszeichen.
-1. Klicken Sie auf **Umbenennen**.
+1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü einzublenden.
+1. Klicken Sie unter der Überschrift **Dienste** auf das Symbol ![Schließendes Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
+1. Klicken Sie auf der Seite **SSL-Zertifikate** am Ende einer Zeile, deren *Adobe-verwaltetes*-Zertifikat Sie umbenennen möchten, auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) .
+1. Klicken Sie im Dropdown-Menü auf **Umbenennen**.
 1. Geben Sie im Dialogfeld **DV-Zertifikat umbenennen** im Textfeld **Zertifikatname** den neuen Namen des Zertifikats ein.
 1. Klicken Sie auf **Umbenennen**.
 
@@ -87,10 +87,12 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 **Löschen eines SSL-Zertifikats**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
-1. Navigieren Sie auf der Seite **Übersicht** zum Bildschirm **Umgebungen**.
-1. Navigieren Sie auf dem Bildschirm **Umgebungen** zum Bildschirm **SSL-Zertifikate**.
-1. Klicken Sie in der Zeile des Zertifikats, das Sie löschen möchten, auf die Schaltfläche mit den Auslassungspunkten ganz rechts und wählen Sie dann **Löschen** aus.
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Programm aus.
+1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
+1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü einzublenden.
+1. Klicken Sie unter der Überschrift **Dienste** auf das Symbol ![Schließendes Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
+1. Klicken Sie auf der Seite &quot;SSL-Zertifikate&quot;in der Tabellenzeile des Zertifikats, das Sie löschen möchten, auf das Symbol &quot;![Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)ganz rechts.
+1. Klicken Sie im Dropdown-Menü auf **Löschen**.
 Wenn die Schaltfläche „Löschen“ ein Informationssymbol aufweist, wie im folgenden Bild dargestellt, finden Sie weitere Informationen unter Hinweis oben.
 
    ![Schaltfläche „Löschen“ mit Informationssymbol](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
@@ -102,8 +104,9 @@ Wenn die Schaltfläche „Löschen“ ein Informationssymbol aufweist, wie im fo
 
 Wenn Sie bereits über eine CDN-Konfiguration für Ihr SSL-Zertifikat verfügen, zeigt die Seite **SSL-Zertifikate** eine informative Meldung an. In dieser wird empfohlen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und verwaltbar sind.
 
-Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
+Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es kann ein bis zwei Werktage dauern, bis die Nachricht ausgeblendet wird.
 
 Weitere Details finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 Eine ähnliche Nachricht wird auch auf den Seiten **IP-Zulassungsliste** und **Umgebungen** für Umgebungen mit bereits vorhandenen CDN-Konfigurationen für IP-Zulassungslisten oder benutzerdefinierte Domain-Namen gezeigt.
+

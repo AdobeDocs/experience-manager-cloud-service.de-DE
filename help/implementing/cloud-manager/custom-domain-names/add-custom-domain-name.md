@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 97%
+source-wordcount: '1489'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ Erfüllen Sie die folgenden Anforderungen, bevor Sie einen benutzerdefinierten D
 
 * Sie müssen ein SSL-Domänenzertifikat für die Domäne hinzugefügt haben, die Sie hinzufügen möchten, bevor Sie einen benutzerdefinierten Domänennamen hinzufügen, wie im Dokument [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) beschrieben.
 * Sie müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen zu können.
-* Verwenden Sie das Fastly- oder andere CDN.
+* Verwenden Sie das schnelle oder andere CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
@@ -31,22 +31,22 @@ Erfüllen Sie die folgenden Anforderungen, bevor Sie einen benutzerdefinierten D
 
 ## Die Stelle zum Hinzufügen benutzerdefinierter Domain-Namen {#where-to-add-cdn}
 
-In Cloud Manager können Sie einen benutzerdefinierten Domain-Namen aus zwei Positionen hinzufügen:
+Sie können einen benutzerdefinierten Domänennamen aus den beiden folgenden Speicherorten in Cloud Manager hinzufügen:
 
-* [Auf der Seite „Domain-Einstellungen“](#adding-cdn-settings)
-* [Auf der Seite „Umgebungen“](#adding-cdn-environments)
+* [Seite &quot;Domäneneinstellungen&quot;](#adding-cdn-settings)
+* [Seite &quot;Umgebungen&quot;](#adding-cdn-environments)
 
 Beim Hinzufügen eines benutzerdefinierten Domain-Namens wird die Domain mit dem spezifischsten der gültigen Zertifikate bereitgestellt. Wenn mehrere Zertifikate dieselbe Domain haben, wird die zuletzt aktualisierte ausgewählt. Adobe empfiehlt, Zertifikate so zu verwalten, dass es keine überlappenden Domains gibt.
 
-Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, basieren auf Fastly. Wenn Sie ein anderes CDN verwenden, konfigurieren Sie die Domain mit dem CDN, das Sie für die Verwendung ausgewählt haben.
+Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, basieren auf Fastly. Wenn Sie ein anderes CDN (Content Delivery Network) verwendet haben, konfigurieren Sie Ihre Domäne mit dem von Ihnen ausgewählten CDN.
 
-## Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite mit den Domain-Einstellungen {#adding-cdn-settings}
+## Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-cdn-settings}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Wählen Sie im linken Navigationsbedienfeld die Registerkarte **Domain-Einstellungen** aus.
+1. Wählen Sie im Seitenmenü unter **Dienste** die Option **Domäneneinstellungen**.
 
    ![Fenster „Domain-Einstellungen“](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -59,7 +59,7 @@ Verwenden Sie bei der Eingabe Ihrer Domain weder `http://` noch `https://` oder 
 
 1. Wählen Sie im Dialogfeld **Domain verifizieren** aus der Dropdown-Liste **Welchen Zertifikatstyp möchten Sie mit dieser Domain verwenden?** eine der folgenden Optionen aus:
 
-   | Zertifikatstyp | Beschreibung |
+   | Option &quot;Zertifikatstyp&quot; | Beschreibung |
    | --- | --- |
    | Verwaltetes Adobe-Zertifikat | Wählen Sie diese Option aus, wenn Sie ein DV(Domain Validation)-Zertifikat verwenden möchten. Diese Option eignet sich in den meisten Fällen hervorragend, da sie eine grundlegende Domain-Validierung ermöglicht. Adobe verwaltet und erneuert das Zertifikat automatisch. |
    | Kundenseitig verwaltetes Zertifikat | Wählen Sie diese Option aus, wenn Sie ein EV/OV-Zertifikat verwenden möchten. Diese Option bietet verbesserte Sicherheit mit EV (Extended Validation) oder OV (Organization Validation). Verwenden Sie sie, wenn eine strengere Überprüfung, eine höhere Vertrauensebene oder eine benutzerdefinierte Kontrolle über die Zertifikate erforderlich sind. |
@@ -207,6 +207,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite „Umgebungen“ {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 Die Schritte zum Hinzufügen eines benutzerdefinierten Domain-Namens von der Seite **Umgebungen** aus sind dieselben wie beim [Hinzufügen eines benutzerdefinierten Domain-Namens von der Seite „Domain-Einstellungen“ aus](#adding-cdn-settings), der Einstiegspunkt ist jedoch ein anderer. Führen Sie die folgenden Schritte von der Seite **Umgebungen** aus, um einen benutzerdefinierten Domain-Namen hinzuzufügen.
 

@@ -5,15 +5,15 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 6%
+source-wordcount: '448'
+ht-degree: 7%
 
 ---
 
 
-# Hinzufügen einer CDN-Konfiguration {#add-cdn}
+# Hinzufügen einer CDN-Konfiguration (Content Delivery Network) {#add-cdn}
 
 Um eine Domäne mit einem SSL-Zertifikat im von Adobe verwalteten CDN in Ihrem Programm zu verknüpfen, müssen Sie eine CDN-Konfiguration (Content Delivery Network) hinzufügen.
 

@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 58%
 
 ---
@@ -33,10 +33,10 @@ Unter Adobe Cloud Manager können Sie aus folgenden Gründen eine benutzerdefini
 
 1. Klicken Sie oben links auf der Seite auf das Hamburger-Symbol, um das linke Navigationsmenü anzuzeigen.
 1. Klicken Sie unter der Überschrift **Dienste** auf **CDN-Konfigurationen**.
-1. Klicken Sie auf der Seite **CDN-Konfigurationen** auf das Auslassungszeichen am Ende einer Zeile, deren CDN Sie bearbeiten möchten.
+1. Klicken Sie auf der Seite **CDN-Konfigurationen** am Ende einer Zeile, deren CDN Sie bearbeiten möchten, auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) .
 1. Klicken Sie auf **Bearbeiten**.
 1. Gehen Sie im Dialogfeld **CDN-Konfiguration bearbeiten** wie folgt vor:
-   * Wählen Sie in der Dropdownliste **Ebene** die Ebene (Autor oder Publish) aus, die Sie verwenden möchten.
+   * Wählen Sie in der Dropdownliste **Ebene** die Ebene (Publish oder Vorschau) aus, die Sie verwenden möchten.
    * Wählen Sie in der Dropdownliste **SSL-Zertifikat** das SSL-Zertifikat aus, das Sie verwenden möchten.
 1. Klicken Sie auf **Aktualisieren**.
 
