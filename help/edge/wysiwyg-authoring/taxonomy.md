@@ -3,13 +3,13 @@ title: Verwalten von Taxonomiedaten
 description: Erfahren Sie, wie Sie Taxonomiedaten für die Verwendung von Tags mit Ihren AEM mit Edge Delivery Services-Sites verwalten.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '845'
 ht-degree: 7%
 
 ---
-
 
 # Verwalten von Taxonomiedaten {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ Wie beim Verwalten und Veröffentlichen von Tabellendaten für Ihre Edge Deliver
    * Bestätigen Sie entweder für `main` oder erstellen Sie eine Abruf-Anforderung gemäß Ihrem Prozess.
 
 Dieser Prozess muss nur einmal pro Taxonomieseite durchgeführt werden. Danach können Sie Ihre Taxonomie veröffentlichen.
+
+>[!TIP]
+>
+>Weitere Informationen zu Pfadzuordnungen finden Sie im Dokument [Pfadzuordnung für Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Veröffentlichen einer Taxonomie {#publishing}
 
