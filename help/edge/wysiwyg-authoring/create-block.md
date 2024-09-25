@@ -1,31 +1,31 @@
 ---
 title: Erstellen von für den universellen Editor instrumentierten Blöcken
-description: Erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor in WYSIWYG-Authoring mit Edge Delivery Services-Projekten instrumentiert sind.
+description: Erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem Universal Editor in WYSIWYG Authoring mit Edge Delivery Services-Projekten instrumentiert wurden.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
+source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 64%
+source-wordcount: '1445'
+ht-degree: 62%
 
 ---
 
 
 # Erstellen von für den universellen Editor instrumentierten Blöcken {#create-block}
 
-Erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor in WYSIWYG-Authoring mit Edge Delivery Services-Projekten instrumentiert sind.
+Erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem Universal Editor in WYSIWYG Authoring mit Edge Delivery Services-Projekten instrumentiert wurden.
 
 ## Voraussetzungen {#prerequisites}
 
-Dieses Handbuch enthält eine schrittweise Anleitung zum Erstellen von Bausteinen, die für den universellen Editor in WYSIWYG-Authoring mit Edge Delivery Services-Projekten instrumentiert wurden. Dies umfasst das Hinzufügen von Komponenten, das Laden von Komponentendefinitionen im universellen Editor, das Veröffentlichen von Seiten, das Implementieren von Blockdekorationen und -stilen, das Übertragen der Änderungen in die Produktion und die Überprüfung dieser Änderungen. Nach Abschluss dieser Anleitung können Sie einen neuen Block für Ihr eigenes Projekt erstellen und bereitstellen.
+Dieses Handbuch enthält eine schrittweise Anleitung zum Erstellen von Bausteinen, die für den universellen Editor in WYSIWYG Authoring mit Edge Delivery Services-Projekten instrumentiert wurden. Dies umfasst das Hinzufügen von Komponenten, das Laden von Komponentendefinitionen im universellen Editor, das Veröffentlichen von Seiten, das Implementieren von Blockdekorationen und -stilen, das Übertragen der Änderungen in die Produktion und die Überprüfung dieser Änderungen. Nach Abschluss dieser Anleitung können Sie einen neuen Block für Ihr eigenes Projekt erstellen und bereitstellen.
 
-Dieser Leitfaden erfordert unbedingt vorhandene Kenntnisse über WYSIWYG-Inhaltserstellung mit Edge Delivery Services-Projekten sowie den universellen Editor. Bevor Sie beginnen, sollten Sie bereits Zugriff auf Edge Delivery Services haben und mit den zugehörigen Grundlagen vertraut sein. Das heißt:
+Dieser Leitfaden setzt Kenntnisse des WYSIWYG-Authoring mit Edge Delivery Services-Projekten sowie des universellen Editors voraus. Bevor Sie beginnen, sollten Sie bereits Zugriff auf Edge Delivery Services haben und mit den zugehörigen Grundlagen vertraut sein. Das heißt:
 
 * Sie haben das [Edge Delivery Services-Tutorial](/help/edge/developer/tutorial.md) abgeschlossen.
 * Sie haben Zugriff auf eine [AEM Cloud Service-Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 * Sie haben den [universellen Editor in derselben Sandbox-Umgebung aktiviert](/help/implementing/universal-editor/getting-started.md).
-* Sie haben das Handbuch [Erste Schritte für Entwickler für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) abgeschlossen.
+* Sie haben das Handbuch [Erste Schritte für Entwickler beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) abgeschlossen.
 
 Dieses Handbuch baut auf der Arbeit auf, die im Leitfaden [Entwickler - Erste Schritte für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) geleistet wurde.
 
@@ -45,7 +45,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 ### Erstellen einer Blockdefinition und eines Modells {#create-block-model}
 
-1&amp;period; Klonen Sie das GitHub-Projekt lokal, das Sie im Leitfaden [Entwickler - Erste Schritte für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und öffnen Sie es in einem Editor Ihrer Wahl.
+1&amp;period; Klonen Sie das GitHub-Projekt lokal, das Sie im Leitfaden [Erste Schritte für Entwickler für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und öffnen Sie es in einem Editor Ihrer Wahl.
 
 * Zur Veranschaulichung wird hier Microsoft-Code verwendet.
 
@@ -85,7 +85,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 3&amp;period; Bearbeiten Sie die Datei &quot;`component-models.json`&quot;im Stammverzeichnis des Projekts, fügen Sie die folgende [Modelldefinition](/help/implementing/universal-editor/field-types.md#model-structure) für Ihren neuen Anführungsblock hinzu und speichern Sie die Datei.
 
-* Weitere Informationen dazu, was beim Erstellen von Inhaltsmodellen wichtig ist, finden Sie im Dokument [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) .
+* Weitere Informationen dazu, was beim Erstellen von Inhaltsmodellen zu beachten ist, finden Sie im Dokument [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) .
 
 >[!BEGINTABS]
 
@@ -155,7 +155,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt übertragen wurde, können Sie einer vorhandenen Seite einen Zitatblock hinzufügen.
 
-1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. [Navigieren Sie mithilfe der Sites-Konsole](/help/sites-cloud/authoring/basic-handling.md) zu der Site, die Sie im Leitfaden [Entwickler - Erste Schritte - Erste Schritte - WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und wählen Sie eine Seite aus.
+1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. [Navigieren Sie mithilfe der Sites-Konsole](/help/sites-cloud/authoring/basic-handling.md) zu der Site, die Sie im Handbuch [Entwicklerhandbuch für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und wählen Sie eine Seite aus.
 
    * In diesem Fall wird `index` zur Veranschaulichung verwendet.
 
@@ -331,13 +331,19 @@ Wenn Sie sich nicht in der `main`-Verzweigung entwickeln, können Sie `?ref=<bra
 
 Die Veröffentlichung von Inhalten mit einem neuen Modell wird nur unterstützt, wenn das Modell mit der `main`-Verzweigung zusammengeführt wird.
 
+## Wiederverwenden Ihrer Bausteine für dokumentbasiertes Authoring {#reusing-blocks}
+
+Sie können die Bausteine, die Sie für das WYSIWYG-Authoring mit dem Universal Editor für dokumentbasiertes Authoring erstellen, verwenden, wenn Sie dasselbe Inhaltsmodell verwenden.
+
+Weitere Informationen finden Sie im Dokument [Blöcke für WYSIWYG und Document-Based Authoring](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) .
+
 ## Nächste Schritte {#next-steps}
 
 Nachdem Sie nun wissen, wie man Bausteine erstellt, ist es wichtig zu verstehen, wie man Inhalte auf semantische Weise modelliert, um ein schlankes Entwicklererlebnis zu erhalten.
 
-Weitere Informationen zur Funktionsweise der Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten finden Sie im Dokument [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) .
+Informationen zur Funktionsweise der Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten finden Sie im Dokument [Inhaltsmodellierung für WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md) .
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) .
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem Webinar AEM GEMs .](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
