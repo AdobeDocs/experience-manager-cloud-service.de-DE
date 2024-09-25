@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
-workflow-type: ht
-source-wordcount: '227'
-ht-degree: 100%
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 82%
 
 ---
 
@@ -21,11 +21,13 @@ Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitste
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+**Hinzufügen einer IP-Zulassungsliste:**
+
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Klicken Sie über das seitliche Bedienfeld auf der linken Seite auf der Seite **Programmübersicht** (Sie müssen möglicherweise erst auf das Hamburger-Symbol oben links klicken, um das Bedienfeld anzuzeigen) auf **IP-Zulassungslisten**.
+1. Klicken Sie auf der Seite &quot;**Programmübersicht**&quot;über das Seitenbedienfeld (möglicherweise müssen Sie oben links auf das Symbol ![Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klicken, um das Bedienfeld anzuzeigen) auf das Symbol ![Aufgabenliste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
 
    ![Option „IP-Zulassungslisten“ im seitlichen Bedienfeld](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

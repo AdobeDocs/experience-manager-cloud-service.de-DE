@@ -1,21 +1,21 @@
 ---
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
-description: Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
+description: Erfahren Sie, wie Sie mit den Domäneneinstellungen in Cloud Manager einen benutzerdefinierten Domänennamen hinzufügen.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 93%
+source-wordcount: '1509'
+ht-degree: 87%
 
 ---
 
 
 # Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-cdn}
 
-Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
+Erfahren Sie, wie Sie einen benutzerdefinierten Domänennamen mithilfe von **Domäneneinstellungen** in Cloud Manager hinzufügen.
 
 ## Voraussetzungen {#requirements}
 
@@ -46,7 +46,7 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Wählen Sie im Seitenmenü unter **Dienste** die Option **Domäneneinstellungen**.
+1. Wählen Sie im Seitenmenü unter **Dienste** das Symbol ![Einstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Domäneneinstellungen**.
 
    ![Fenster „Domain-Einstellungen“](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -61,8 +61,8 @@ Verwenden Sie bei der Eingabe Ihrer Domain weder `http://` noch `https://` oder 
 
    | Option &quot;Zertifikatstyp&quot; | Beschreibung |
    | --- | --- |
-   | Verwaltetes Adobe-Zertifikat | Wählen Sie diese Option aus, wenn Sie ein DV(Domain Validation)-Zertifikat verwenden möchten. Diese Option eignet sich in den meisten Fällen hervorragend, da sie eine grundlegende Domain-Validierung ermöglicht. Adobe verwaltet und erneuert das Zertifikat automatisch. |
-   | Kundenseitig verwaltetes Zertifikat | Wählen Sie diese Option aus, wenn Sie ein EV/OV-Zertifikat verwenden möchten. Diese Option bietet verbesserte Sicherheit mit EV (Extended Validation) oder OV (Organization Validation). Verwenden Sie sie, wenn eine strengere Überprüfung, eine höhere Vertrauensebene oder eine benutzerdefinierte Kontrolle über die Zertifikate erforderlich sind. |
+   | Verwaltetes Adobe-Zertifikat | Wählen Sie diesen Zertifikatstyp aus, wenn Sie ein DV-Zertifikat (Domain Validation) verwenden möchten. Diese Option eignet sich in den meisten Fällen hervorragend, da sie eine grundlegende Domain-Validierung ermöglicht. Adobe verwaltet und erneuert das Zertifikat automatisch. |
+   | Kundenseitig verwaltetes Zertifikat | Wählen Sie diesen Zertifikatstyp aus, wenn Sie ein EV/OV-Zertifikat verwenden möchten. Diese Option bietet verbesserte Sicherheit mit EV (Extended Validation) oder OV (Organization Validation). Verwenden Sie sie, wenn eine strengere Überprüfung, eine höhere Vertrauensebene oder eine benutzerdefinierte Kontrolle über die Zertifikate erforderlich sind. |
 
 1. Führen Sie im Dialogfeld **Domain verifizieren** je nach ausgewähltem Zertifikatstyp einen der folgenden Schritte aus:
 
@@ -77,7 +77,7 @@ Verwenden Sie bei der Eingabe Ihrer Domain weder `http://` noch `https://` oder 
 
    >[!NOTE]
    >
-   >Wenn Sie ein selbstverwaltetes SSL-Zertifikat und einen selbstverwalteten CDN-Anbieter verwenden, können Sie diesen Schritt überspringen und direkt zu [CDN-Konfiguration hinzufügen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) wechseln, sobald sie bereit sind.
+   >Wenn Sie ein kundenverwaltetes SSL-Zertifikat und einen kundenverwalteten CDN-Anbieter verwenden, können Sie das Hinzufügen eines SSL-Zertifikats überspringen und direkt zu &quot;[CDN-Konfiguration hinzufügen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)&quot;wechseln, wenn Sie bereit sind.
 
 
 ### Schritte bei verwalteten Adobe-Zertifikaten {#adobe-managed-cert-steps}
@@ -222,8 +222,8 @@ Die Schritte zum Hinzufügen eines benutzerdefinierten Domain-Namens von der Sei
 
    1. Geben Sie den benutzerdefinierten Domain-Namen ein.
    1. Wählen Sie in der Dropdown-Liste das mit diesem Namen verknüpfte SSL-Zertifikat aus.
-   1. Klicken Sie auf **+Hinzufügen**.
+   1. Klicken Sie auf ![Symbol hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Hinzufügen**.
 
    ![Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. Mittels des Dialogfelds **Domain-Namen hinzufügen** wird die Registerkarte **Domain-Name** geöffnet. Fahren Sie so fort wie beim [Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite „Domain-Einstellungen“](#adding-cdn-settings). -->
+1. Mittels des Dialogfelds **Domain-Namen hinzufügen** wird die Registerkarte **Domain-Name** geöffnet. Fahren Sie so fort wie bei [Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite „Domain-Einstellungen“](#adding-cdn-settings).

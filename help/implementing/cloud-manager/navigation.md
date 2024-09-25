@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 67%
+source-wordcount: '1574'
+ht-degree: 51%
 
 ---
 
@@ -57,14 +57,14 @@ Die erste ist der Header von Cloud Manager, der bestehen bleibt, wenn Sie in Clo
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-1. Das Hamburger Menü bietet Zugriff auf Tabs, die Sie zu bestimmten Teilen eines Programms führen können. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
-1. Über die Schaltfläche „Cloud Manager“ gelangen Sie zurück zur Konsole „Meine Programme“ von Cloud Manager, unabhängig davon, wo Sie sich in Cloud Manager befinden.
-1. Tippen oder klicken Sie auf die Schaltfläche „Feedback“, um Adobe Feedback zu Cloud Manager zu geben.
-1. Der Organisationsauswahl zeigt die Organisation an, bei der Sie derzeit angemeldet sind (in diesem Beispiel „We.Retail-Prod“). Tippen oder klicken Sie, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
-1. Durch Tippen oder Klicken auf den Lösungsumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
-1. Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
-1. Das Benachrichtigungssymbol wird mit der Anzahl der derzeit zugewiesenen unvollständigen [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md) gekennzeichnet.
-1. Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
+1. Klicken Sie auf ![Menüsymbol einblenden](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü einblenden/ausblenden), um Ihnen Zugriff auf eine Vielzahl von Registerkarten zu gewähren, über die Sie zu bestimmten Teilen eines Programms gelangen können. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
+1. Wenn Sie auf die Schaltfläche Adobe Cloud Manager klicken, gelangen Sie zurück zur Konsole My Programs von Cloud Manager, unabhängig davon, wo Sie sich in Cloud Manager befinden.
+1. Klicken Sie auf **Feedback** , um Adobe Feedback zu Cloud Manager zu geben.
+1. Klicken Sie auf die Organisationsauswahl, um die Organisation anzuzeigen, bei der Sie sich derzeit angemeldet haben (in diesem Beispiel &quot;Foundation Intern&quot;). Klicken Sie auf diese Option, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
+1. Klicken Sie auf das Symbol ![Apps](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (Lösungsschalter), um schnell zu anderen Experience Cloud-Lösungen zu wechseln.
+1. Klicken Sie auf das Hilfesymbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg), um Ihnen schnellen Zugriff auf Lern- und Support-Ressourcen zu gewähren.![
+1. Klicken Sie auf das Bell-Symbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)), um unter anderem Benachrichtigungen und Mitteilungen anzuzeigen.![
+1. Klicken Sie auf das Symbol, das den Benutzerzugriff auf Ihre Benutzereinstellungen darstellt. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
 
 #### Programmsymbolleiste {#program-toolbar}
 
@@ -72,9 +72,9 @@ Die Programmsymbolleiste enthält Links zum Wechseln zwischen Cloud Manager-Prog
 
 ![Programmsymbolleiste](assets/program-toolbar.png)
 
-1. Die Programmauswahl wird in einer Dropdown-Liste geöffnet, in der Sie schnell andere Programme auswählen oder kontextbezogene Aktionen ausführen können, z. B. die Erstellung eines neuen Programms.
-1. Über den Link „Erste Schritte“ erhalten Sie Zugriff auf die [Journey zur Onboarding-Dokumentation](/help/journey-onboarding/overview.md), die Ihnen den Einstieg in Cloud Manager erleichtert.
-1. Die Aktionsschaltfläche bietet kontextbezogene Aktionen, z. B. die Erstellung eines neuen Programms.
+1. Der Selektor **Meine Programme** öffnet eine Dropdown-Liste, in der Sie andere Programme schnell auswählen oder kontextbezogene Aktionen ausführen können, z. B. ein neues Programm erstellen
+1. Über den Link **Erste Schritte** haben Sie Zugriff auf die Journey[Onboarding-Dokumentation](/help/journey-onboarding/overview.md), um Cloud Manager einzurichten und auszuführen.
+1. Die Aktionsschaltfläche bietet kontextbezogene Aktionen, z. B. das Hinzufügen eines Programms.
 
 ### Statistiken und Aktionsaufrufe {#statistics}
 
@@ -152,7 +152,7 @@ Abhängig von den bei der Erstellung des Programms ausgewählten Optionen kann e
 * Navigieren zu einer bestimmten [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
 * Öffnen der [Programmübersicht](#program-overview)
 * [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* [Sandbox-Programm löschen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* [Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -209,23 +209,23 @@ Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und
 
 **Programm**
 
-* Übersicht: Die im aktuellen Dokument beschriebene Programmübersicht
-* [Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity): Verlauf der Pipeline-Ausführungen des Programms
-* [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines): Alle für das Programm konfigurierten Pipelines
-* [Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md): Alle für das Programm konfigurierten Repositorys
-* [Berichte](/help/implementing/cloud-manager/sla-reporting.md): Metriken wie SLA-Daten
+* ![Symbol für moderne Rasteransicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ModernGridView_18_N.svg) Übersicht - Die Programmübersicht, wie im aktuellen Dokument beschrieben
+* ![Glockensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [Aktivität](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - Der Verlauf der Pipeline-Ausführungen des Programms
+* ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - Alle für das Programm konfigurierten Pipelines
+* ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Alle für das Programm konfigurierten Repositorys
+* ![Diagrammpie-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Berichte](/help/implementing/cloud-manager/sla-reporting.md) - Metriken wie SLA-Daten
 
 **Dienste**
 
-* [Umgebungen](/help/implementing/cloud-manager/manage-environments.md): Alle für das Programm konfigurierten Umgebungen
-* [Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Verwalten von Edge Delivery-Sites
-* [Domäneneinstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Verwalten benutzerdefinierter Domänennamen für das Programm
-* [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Verwalten von SSL-Zertifikaten für das Programm
-* [CDN-Konfigurationen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Verwalten von CDN-Konfigurationen
-* [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Zulassungslisten für bestimmte IP-Adressen definieren
-* [Content-Sets](/help/implementing/developing/tools/content-copy.md): Sätze von Inhalten, die zu Kopierzwecken festgelegt wurden
-* [Aktivität „Inhalt kopieren“](/help/implementing/developing/tools/content-copy.md): Aktivitäten zur Inhaltskopie
-* [Netzwerkinfrastrukturen](/help/security/configuring-advanced-networking.md) - Verwaltung erweiterter Netzwerkoptionen für das Programm
+* ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) [Umgebungen](/help/implementing/cloud-manager/manage-environments.md) - Alle für das Programm konfigurierten Umgebungen
+* ![Webseiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Verwalten von Edge Delivery-Sites
+* ![Einstellungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domäneneinstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Verwalten Sie benutzerdefinierte Domänennamen für das Programm
+* ![Symbol &quot;Schließen&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Verwalten von SSL-Zertifikaten für das Programm
+* ![Symbol für ein soziales Netzwerk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN-Konfigurationen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Verwalten von CDN-Konfigurationen
+* ![Symbol &quot;Aufgabenliste&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Zulassungslisten für bestimmte IP-Adressen definieren
+* ![Box icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets von Inhalten, die für Kopierzwecke erstellt wurden
+* ![Verlaufssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Aktivität &quot;Inhalt kopieren&quot;](/help/implementing/developing/tools/content-copy.md) - Aktivitäten zum Kopieren von Inhalten
+* ![Kanalsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Netzwerkinfrastrukturen](/help/security/configuring-advanced-networking.md) - Verwalten erweiterter Netzwerkoptionen für das Programm
 
 **Ressourcen**
 
