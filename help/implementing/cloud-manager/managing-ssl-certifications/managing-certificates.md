@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 67%
+ht-degree: 83%
 
 ---
 
@@ -35,7 +35,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 **Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats:**
 
-1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü einzublenden.
 1. Klicken Sie unter der Überschrift **Dienste** auf das Symbol ![Schließendes Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
@@ -58,21 +58,21 @@ Führen Sie dieselben Schritte aus, die unter [Aktualisieren eines abgelaufenen 
 
 ## Umbenennen eines von Adobe verwalteten SSL-Zertifikats (#rename-an-ssl-certificate)
 
-Im Folgenden finden Sie einige Gründe, warum Sie möglicherweise ein SSL-Zertifikat umbenennen möchten:
+Im Folgenden finden Sie einige Gründe, aus denen Sie möglicherweise ein SSL-Zertifikat umbenennen möchten:
 
-* **Verbesserte Organisation**: Das Umbenennen des Zertifikats kann dazu beitragen, seinen Zweck zu verdeutlichen, z. B. die Identifizierung der Umgebung (z. B. Staging, Produktion) oder Domäne, für die es bestimmt ist.
-* **Vermeiden von Verwirrung**: Wenn Sie mehrere Zertifikate verwalten, kann ein klarer, beschreibender Name dazu beitragen, Fehler zu verhindern, wie etwa das Anwenden des falschen Zertifikats auf die falsche Domäne.
-* **Konformität und Prüfung**: Ordnungsgemäß benannte Zertifikate können aus Sicherheits- und Prüfgründen leichter verfolgt werden.
+* **Verbesserte Organisation**: Das Umbenennen des Zertifikats kann dazu beitragen, seinen Zweck zu verdeutlichen, z. B. die Identifizierung der Umgebung (z. B. Staging, Produktion) oder der Domain, für die es bestimmt ist.
+* **Vermeiden von Verwirrung**: Wenn Sie mehrere Zertifikate verwalten, kann ein klarer, beschreibender Name dazu beitragen, Fehler zu verhindern, wie etwa das Anwenden des falschen Zertifikats auf die falsche Domain.
+* **Konformität und Auditing**: Das Verfolgen ordnungsgemäß benannter Zertifikate aus Sicherheits- und Audit-Gründen ist leichter.
 
 **So benennen Sie ein von Adobe verwaltetes SSL-Zertifikat um:**
 
-1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü einzublenden.
 1. Klicken Sie unter der Überschrift **Dienste** auf das Symbol ![Schließendes Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 1. Klicken Sie auf der Seite **SSL-Zertifikate** am Ende einer Zeile, deren *Adobe-verwaltetes*-Zertifikat Sie umbenennen möchten, auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) .
 1. Klicken Sie im Dropdown-Menü auf **Umbenennen**.
-1. Geben Sie im Dialogfeld **DV-Zertifikat umbenennen** im Textfeld **Zertifikatname** den neuen Namen des Zertifikats ein.
+1. Geben Sie im Dialogfeld **DV-Zertifikat umbenennen** den neuen Namen des Zertifikats in das Feld **Zertifikatname** ein. 
 1. Klicken Sie auf **Umbenennen**.
 
 ## Löschen eines SSL-Zertifikats {#deleting-an-ssl-certificate}
@@ -87,7 +87,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 **Löschen eines SSL-Zertifikats**
 
-1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü einzublenden.
 1. Klicken Sie unter der Überschrift **Dienste** auf das Symbol ![Schließendes Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.

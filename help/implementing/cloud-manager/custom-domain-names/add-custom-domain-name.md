@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie, wie Sie einen benutzerdefinierten Domänennamen mithilfe von **Dom
 
 Erfüllen Sie die folgenden Anforderungen, bevor Sie einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen.
 
-* Sie müssen ein SSL-Domänenzertifikat für die Domäne hinzugefügt haben, die Sie hinzufügen möchten, bevor Sie einen benutzerdefinierten Domänennamen hinzufügen, wie im Dokument [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) beschrieben.
+* Bevor Sie einen benutzerdefinierten Domain-Namen hinzufügen, müssen Sie ein SSL-Domain-Zertifikat für die gewünschte Domain hinzugefügt haben, wie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) beschrieben.
 * Sie müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen zu können.
 * Verwenden Sie das schnelle oder andere CDN (Content Delivery Network).
 

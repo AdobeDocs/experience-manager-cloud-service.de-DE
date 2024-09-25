@@ -470,7 +470,7 @@ ht-degree: 99%
          + [Beispiele für den Asset-Wähler](/help/assets/asset-selector-examples.md)
          + [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
          + [Hochladen des Asset-Wählers](/help/assets/asset-selector-upload.md)
-         + [Asset-Selektor-Sammlungen](/help/assets/asset-selector-collections.md)
+         + [Sammlungen des Asset-Wählers](/help/assets/asset-selector-collections.md)
       + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Erneutes Verarbeiten von Assets](/help/assets/reprocessing.md)
