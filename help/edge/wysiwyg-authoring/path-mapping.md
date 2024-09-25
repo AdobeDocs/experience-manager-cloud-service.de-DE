@@ -3,7 +3,7 @@ title: Pfadzuordnung für Edge Delivery Services
 description: Erfahren Sie, wie Sie in der AEM-Autoreninstanz verwendete Seitenpfade öffentlichen Seitenpfaden zuordnen, die auf der Website verwendet werden, und steuern, welcher Inhalt in Edge Delivery Services veröffentlicht wird.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Ihre Pfadzuordnungen können je nach Einrichtung Ihres Projekts auf zwei Arten k
    }'
    ```
 
-1. Wenn das Projekt den Konfigurationsdienst nicht verwendet, wird die Pfadzuordnung über eine Datei &quot;paths.json&quot;in Ihren Projekten des GitHub-Repositorys konfiguriert.
+1. Wenn das Projekt den Konfigurationsdienst nicht verwendet, wird die Pfadzuordnung über eine `paths.json` -Datei in Ihren Projekten GitHub-Repository konfiguriert.
 
-   * Ein Beispiel finden Sie unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) .
+   * Ein Beispiel finden Sie unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) .
 
 In beiden Fällen können Sie die Konfiguration nach der Konfiguration der Pfadzuordnungen über die öffentlich zugängliche Konfigurations-URL `https://<branch>--<site>--<org>.aem.page/config.json` überprüfen.
