@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 51%
+source-wordcount: '1677'
+ht-degree: 41%
 
 ---
 
@@ -57,7 +57,7 @@ Die erste ist der Header von Cloud Manager, der bestehen bleibt, wenn Sie in Clo
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-1. Klicken Sie auf ![Menüsymbol einblenden](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü einblenden/ausblenden), um Ihnen Zugriff auf eine Vielzahl von Registerkarten zu gewähren, über die Sie zu bestimmten Teilen eines Programms gelangen können. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
+1. Klicken Sie auf ![Menüsymbol einblenden](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden), um Ihnen Zugriff auf verschiedene Registerkarten zu gewähren, über die Sie zu bestimmten Teilen eines Programms gelangen können. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
 1. Wenn Sie auf die Schaltfläche Adobe Cloud Manager klicken, gelangen Sie zurück zur Konsole My Programs von Cloud Manager, unabhängig davon, wo Sie sich in Cloud Manager befinden.
 1. Klicken Sie auf **Feedback** , um Adobe Feedback zu Cloud Manager zu geben.
 1. Klicken Sie auf die Organisationsauswahl, um die Organisation anzuzeigen, bei der Sie sich derzeit angemeldet haben (in diesem Beispiel &quot;Foundation Intern&quot;). Klicken Sie auf diese Option, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
@@ -90,7 +90,7 @@ Oder wenn Sie gerade mit der Einrichtung Ihrer Organisation beginnen, gibt es Ti
 
 Der Hauptinhalt der Konsole **Meine Programme** ist die Liste der Programme im Abschnitt **Meine Programme** .
 
-Im Abschnitt **Meine Programme** werden die Karten der einzelnen Programme aufgelistet. Tippen oder klicken Sie auf eine Karte, um die Seite **Programmübersicht** des Programms aufzurufen, auf der Sie Details zum Programm finden.
+Im Abschnitt **Meine Programme** werden die Karten der einzelnen Programme aufgelistet. Klicken Sie auf eine Karte, um die Seite **Programmübersicht** des Programms aufzurufen, auf der Sie Details zum Programm finden.
 
 >[!NOTE]
 >
@@ -101,13 +101,13 @@ Verwenden Sie die Sortieroptionen, um das Programm, das Sie benötigen, leichter
 
 ![Sortieroptionen](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
-* Sortieren nach
-   * Erstellungsdatum (Standard)
-   * Programmname
-   * Status
-* Aufsteigend (Standard)/Absteigend
-* Rasteransicht (Standard)
-* Listenansicht
+* Sortieren nach:
+   * **Erstellungsdatum** (Standard)
+   * **Programmname**
+   * **Status**
+* ![Symbol &quot;Sortierreihenfolge nach unten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) Aufsteigend (Standard) / ![Symbol &quot;Sortierreihenfolge nach oben&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) Absteigend
+* ![Symbol für die klassische Rasteransicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) Rasteransicht (Standard)
+* ![Listensymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) Listenansicht
 
 #### Programmkarten {#program-cards}
 
@@ -115,48 +115,42 @@ Eine Karte (oder Zeile in einer Tabelle) stellt jedes Programm dar, bietet einen
 
 ![Programmkarte](assets/program-card.png)
 
-* Programmbild (falls konfiguriert)
-* Programmname
+* Mit dem Programm verknüpftes Bild, sofern konfiguriert. Das obige Bild ist &quot;WKND&quot;.
+* Dem Programm zugewiesener Name. Das obige Bild zeigt &quot;SecurBank Sample&quot;als Programmnamen.
 * Diensttyp:
-   * **Experience Manager Cloud** für AEM as a Cloud Service-Programme
-   * **Experience Manager** für [AMS-Programme](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager Cloud** - für AEM as a Cloud Service-Programme
+   * **Experience Manager** - für [AMS (Adobe Managed Services)-Programme](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/introduction)
 * [Programmtyp](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produktion
-* Status
-* Konfigurierte Lösungen
-* Erstellungsdatum
+* Status. Im Bild oben ist der Status Bereit mit einem Häkchen.
+* Konfigurierte Lösungen. In der obigen Abbildung sind Sites und Assets die konfigurierten Lösungen.
+* Erstellungsdatum.
 
-Abhängig von den bei der Erstellung des Programms ausgewählten Optionen kann ein Produktionsprogramm mit einem Abzeichen versehen werden, um zusätzliche Funktionen anzuzeigen.
+Ein Produktionsprogramm kann so gekennzeichnet sein, dass es zusätzliche Funktionen anzeigt, die Sie zum Zeitpunkt des Hinzufügens ausgewählt haben, z. B.:
 
-* [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+* ![HIPAA-Badge](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![HIPAA-Zeichen](assets/hipaa.png)
+* ![WAF-DDOS Badge](assets/waf-ddos-protection.png) [WAF-DDOS Protection](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [WAF-DDOS-Schutz](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
-
-  ![WAF-DDOS Badge](assets/waf-ddos-protection.png)
-
-* [99,99 % SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
-
-  ![99,99% SLA-Badge](assets/9999-sla.png)
+* [99,99 % SLA (Service Level Agreement)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 Über das Informationssymbol erhalten Sie auch Schnellzugriff auf zusätzliche Informationen zum Programm (nützlich in der Listenansicht).
 
 ![Informationen](assets/information-list-view.png)
 
-Über das Symbol mit den Auslassungspunkten gelangen Sie zu weiteren Aktionen, die Sie im Programm ausführen können.
+Über das Symbol ![Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_22_N.svg) haben Sie Zugriff auf weitere Aktionen, die Sie im Programm ausführen können.
 
 ![Schaltfläche mit Auslassungspunkten für Programme](assets/program-ellipsis.png)
 
-* Navigieren zu einer bestimmten [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
-* Öffnen der [Programmübersicht](#program-overview)
-* [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* [Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* Navigieren Sie zu einem bestimmten ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
+* Öffnen Sie das Symbol ![Programmübersicht](/help/implementing/cloud-manager/assets/program-overview.svg) [Programmübersicht](#program-overview)
+* ![Symbol &quot;Bearbeiten&quot;](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![Symbol &quot;Löschen&quot;](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
->Weitere Informationen zu Programmen sowie zur Erstellung und Verwaltung von Programmen finden Sie in den folgenden Dokumenten.
+>Weitere Informationen zu Programmen sowie zum Hinzufügen und Verwalten von Programmen finden Sie unter folgenden Themen:
 >
 >* [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 >* [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
@@ -167,9 +161,9 @@ Abhängig von den bei der Erstellung des Programms ausgewählten Optionen kann e
 
 Über den Schnelllink-Abschnitt erhalten Sie Zugriff auf häufig verwendete Ressourcen, die miteinander verknüpft sind.
 
-## Fenster &quot;Programmübersicht&quot; {#program-overview}
+## Seite &quot;Programmübersicht&quot; {#program-overview}
 
-Wenn ein Programm in der Konsole **[Meine Programme](#my-programs-console)** ausgewählt ist, gelangen Sie zum Fenster **Programmübersicht** .
+Wenn ein Programm in der Konsole **[Meine Programme](#my-programs-console)** ausgewählt ist, gelangen Sie zur Seite **Programmübersicht**.
 
 ![Programmübersicht](assets/program-overview.png)
 
@@ -189,11 +183,11 @@ Die Symbolleisten für die Programmübersicht ähneln den Symbolleisten der Kons
 
 #### Cloud Manager-Kopfzeile {#cloud-manager-header-2}
 
-Der Header von Cloud Manager verfügt über ein Hamburger-Menü, das automatisch geöffnet wird, um die navigierbaren Registerkarten der Programmübersicht anzuzeigen.
+In der linken oberen Ecke der Seite befindet sich die Kopfzeile von Adobe Cloud Manager. Sie können auf das Symbol für das seitliche Menü ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klicken, um das Seitenmenü von Registerkarten zu anderen Bereichen der Software ein- oder auszublenden.![
 
 ![Cloud Manager-Hamburger-Menü](assets/cloud-manager-hamburger.png)
 
-Tippen oder klicken Sie auf das Hamburger-Menüsymbol, um die Registerkarten auszublenden.
+Klicken Sie auf Adobe Cloud Manager , um zur Startseite zurückzukehren.
 
 #### Programmsymbolleiste {#program-toolbar-2}
 
@@ -229,11 +223,11 @@ Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und
 
 **Ressourcen**
 
-* Lernpfade: Zusätzliche Lernressourcen zu Cloud Manager
+* ![Buchsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Book_18_N.svg) Lernpfade - Zusätzliche Lernressourcen über Cloud Manager
 
 Wenn Sie ein Programm öffnen, gelangen Sie standardmäßig zur Registerkarte **Übersicht**. Die aktuelle Registerkarte ist hervorgehoben. Wählen Sie eine andere Registerkarte aus, um deren Details anzuzeigen.
 
-Verwenden Sie das Hamburger-Menü im [Cloud Manager-Header](#cloud-manager-header-2), um die Registerkarten auszublenden.
+Klicken Sie oben links in der Kopfzeile [Cloud Manager](#cloud-manager-header-2) auf das Symbol ![Menü einblenden](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü von Registerkarten ein- oder auszublenden.
 
 ### Aktionsaufruf {#cta}
 
