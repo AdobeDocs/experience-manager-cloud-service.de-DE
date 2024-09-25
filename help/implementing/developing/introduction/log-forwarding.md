@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 1%
+source-wordcount: '1362'
+ht-degree: 3%
 
 ---
 
@@ -44,14 +44,7 @@ Dieser Artikel ist wie folgt organisiert:
 
 ## Einrichtung {#setup}
 
-1. Erstellen Sie die folgende Ordner- und Dateistruktur im Ordner der obersten Ebene in Ihrem Projekt in Git:
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml` sollte Metadaten und eine Konfiguration ähnlich dem folgenden Format enthalten (wir verwenden Splunk als Beispiel).
+1. Erstellen Sie eine Datei mit dem Namen `logForwarding.yaml`. Sie sollte Metadaten enthalten, wie im [Konfigurations-Pipeline-Artikel](/help/operations/config-pipeline.md#common-syntax) beschrieben (**kind** sollte auf `LogForwarding` und Version auf &quot;1&quot; gesetzt werden), mit einer Konfiguration ähnlich der folgenden (wir verwenden Splunk als Beispiel).
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ Dieser Artikel ist wie folgt organisiert:
          index: "AEMaaCS"
    ```
 
-   Der Parameter **kind** sollte auf `LogForwarding` gesetzt werden. Die Version sollte auf die Schemaversion festgelegt werden, die 1 ist.
+1. Platzieren Sie die Datei unter einem Ordner der obersten Ebene mit dem Namen *config* oder ähnlich, wie in [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-   Token in der Konfiguration (z. B. `${{SPLUNK_TOKEN}}`) stellen Geheimnisse dar, die nicht in Git gespeichert werden sollten. Deklarieren Sie sie stattdessen als Cloud Manager [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md) vom Typ **secret**. Stellen Sie sicher, dass Sie &quot;**Alle**&quot;als Dropdown-Wert für das Feld &quot;Dienst angewendet&quot;auswählen, damit Protokolle an die Ebenen &quot;Autor&quot;, &quot;Veröffentlichen&quot;und &quot;Vorschau&quot;weitergeleitet werden können.
+1. Erstellen Sie für andere Umgebungstypen als RDE (die derzeit nicht unterstützt wird) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager, auf die in [diesem Abschnitt](/help/operations/config-pipeline.md#creating-and-managing) verwiesen wird. Beachten Sie, dass die Konfigurationsdatei nicht über Vollstack-Pipelines und Web-Tier-Pipelines bereitgestellt wird.
 
-   Es ist möglich, verschiedene Werte zwischen CDN-Protokollen und AEM-Protokollen (einschließlich Apache/Dispatcher) festzulegen, indem ein zusätzlicher Block **cdn** und/oder **aem** nach dem Block **default** eingefügt wird, in dem Eigenschaften die im Block **default** definierten überschreiben können. Es ist nur die aktivierte Eigenschaft erforderlich. Ein möglicher Anwendungsfall könnte die Verwendung eines anderen Splunk-Index für CDN-Protokolle sein, wie im folgenden Beispiel gezeigt wird.
+1. Stellen Sie die Konfiguration bereit.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+Token in der Konfiguration (z. B. `${{SPLUNK_TOKEN}}`) stellen Geheimnisse dar, die nicht in Git gespeichert werden sollten. Deklarieren Sie sie stattdessen als Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars). Stellen Sie sicher, dass Sie &quot;**Alle**&quot;als Dropdown-Wert für das Feld &quot;Dienst angewendet&quot;auswählen, damit Protokolle an die Ebenen &quot;Autor&quot;, &quot;Veröffentlichen&quot;und &quot;Vorschau&quot;weitergeleitet werden können.
 
-   Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder AEM-Protokolle (einschließlich Apache/Dispatcher) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
+Es ist möglich, verschiedene Werte zwischen CDN-Protokollen und AEM-Protokollen (einschließlich Apache/Dispatcher) festzulegen, indem ein zusätzlicher Block **cdn** und/oder **aem** nach dem Block **default** eingefügt wird, in dem Eigenschaften die im Block **default** definierten überschreiben können. Es ist nur die aktivierte Eigenschaft erforderlich. Ein möglicher Anwendungsfall könnte die Verwendung eines anderen Splunk-Index für CDN-Protokolle sein, wie im folgenden Beispiel gezeigt wird.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. Erstellen Sie für andere Umgebungstypen als RDE (die derzeit nicht unterstützt wird) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager. Beachten Sie, dass die Konfigurationsdatei nicht von Full Stack-Pipelines und Web-Tier-Pipelines bereitgestellt wird.
+Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder AEM-Protokolle (einschließlich Apache/Dispatcher) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
 
-   * [Siehe: Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Siehe: Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## Konfiguration des Protokollierungsziels {#logging-destinations}
 

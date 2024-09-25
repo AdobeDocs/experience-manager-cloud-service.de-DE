@@ -6,8 +6,8 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 100%
 
@@ -115,7 +115,7 @@ Siehe [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-m
 
 Mithilfe einer Konfigurations-Pipeline können Sie Einstellungen für die Protokollweiterleitung, bereinigungsbezogene Wartungsaufgaben sowie verschiedene CDN-Konfigurationen schnell bereitstellen, einschließlich Traffic-Filterregeln (z. B. WAF(Web Application Firewall)-Regeln). Darüber hinaus können Sie Anfrage- und Reaktionsumwandlungen, Ursprungs-Auswahl, Client-seitige Umleitungen, Fehlerseiten, kundenseitig verwaltete CDN-Schlüssel, Bereinigungs-API-Schlüssel und grundlegende Authentifizierungsfunktionen verwalten. 
 
-Unter [Verwenden von Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) finden Sie eine umfassende Liste der unterstützten Funktionen und erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+Unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md) finden Sie eine umfassende Liste der unterstützten Funktionen und erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 
 ### Konfigurieren von Produktions-Pipelines {#configure-config-deployment}
 
