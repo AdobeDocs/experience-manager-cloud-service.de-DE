@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ Verwenden Sie den folgenden Prozess, um Ihre Komponenten zu internationalisieren
 
 1. [Implementieren Sie Ihre Komponenten mit Code, der Zeichenfolgen internationalisiert.](/help/implementing/developing/extending/i18n/dev.md)Ihr Code identifiziert die zu übersetzenden Zeichenfolgen und wählt die Sprache aus, die zur Laufzeit angezeigt werden soll.
 1. Erstellen Sie Wörterbücher und fügen Sie die zu übersetzenden englischen Zeichenfolgen hinzu.
-1. Exportieren Sie das Wörterbuch in das XLIFF-Format, übersetzen Sie die Zeichenfolgen und importieren Sie dann die XLIFF-Dateien wieder in AEM.
-1. Integrieren Sie das Wörterbuch in die Versionsverwaltung Ihrer Anwendung.
+1. Exportieren Sie das Wörterbuch in das XLIFF-Format, übersetzen Sie die Zeichenfolgen und importieren Sie dann die XLIFF-Dateien zurück in AEM. 
+1. Integrieren Sie das Wörterbuch in den Versionsverwaltungsprozess Ihrer Anwendung.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Das AEM-Internationalisierungs6Framework verwendet Wörterbücher im Repository,
 * Code ist leicht zu lesen.
 * Die Standardsprache ist immer verfügbar.
 
-Übersetzungsänderungen müssen von Git über die [CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM as a Cloud Service stammen.
+Änderungen an der Übersetzung müssen von Git über die [CI/C-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM as a Cloud Service vorgenommen werden.
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 

@@ -1,36 +1,36 @@
 ---
 title: SLA-Berichte
-description: Erfahren Sie, wie Sie die Leistung Ihrer Produktionsumgebung AEM der vertraglich vereinbarten Service Level Agreement anzeigen können.
+description: Erfahren Sie, wie Sie die Leistungsdaten einer AEM-Produktionsumgebung mit dem vertraglich vereinbarten Service Level Agreement vergleichen können.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
 
 # SLA-Berichte {#sla-reporting}
 
-Erfahren Sie, wie Sie die Leistung Ihrer Produktionsumgebung AEM der vertraglich vereinbarten SLA (Service Level Agreement) anzeigen können.
+Erfahren Sie, wie Sie die Leistungsdaten Ihrer AEM-Produktionsumgebung mit dem vertraglich vereinbarten SLA (Service Level Agreement) vergleichen können.
 
 ## Anzeigen eines SLA-Berichts {#introduction}
 
-SLA-Berichtsdaten verfolgen Leistungsmetriken für zwei Produktionsstufen: Autorenebene und Publish-Ebene.
+SLA-Berichtsdaten verfolgen Leistungsmetriken für zwei Produktionsstufen: Autorenebene und Veröffentlichungsebene.
 
 Das Liniendiagramm eines ausgewählten Jahres enthält Datenpunkte für jeden Monat von Januar bis Dezember. Die folgenden Metriken werden verfolgt.
 
 | Verfolgte Metrik | Linienfarbe | Beschreibung |
 | --- | --- | --- |
-| Erstellungsebene Ist | Hellgrün | Die gemessene Betriebszeit der Factoring-Vorfälle auf der Produktionsautoren-Ebene, die durch Adobe oder Adobe vendors verursacht wurden. |
-| Erstellungsebene Soll | Dunkelblau | Die in Ihrem Vertrag mit Adobe definierte SLA für die Autorenebene. |
-| Veröffentlichungsebene Ist | Orangefarben | Die gemessene Produktionszeit der Publish-Produktionsstufe, Factoring-Vorfälle durch Adobe oder Adobe vendors. |
-| Veröffentlichungsebene Soll | Rot | Die in Ihrem Vertrag mit Adobe definierte SLA für die Publish-Ebene. |
+| Autorenebene aktuell | Hellgrün | Die gemessene Verfügbarkeit der produktionsbezogenen Erstellungsebene unter Berücksichtigung der von Adobe oder unseren Anbietern verursachten Vorfälle. |
+| Autorenebene Vertrag | Dunkelblau | Das SLA, das in Ihrem Vertrag mit Adobe für die Erstellungsebene definiert ist. |
+| Veröffentlichungsebene antuell | Orangefarben | Die gemessene Verfügbarkeit der produktionsbezogenen Veröffentlichungsebene unter Berücksichtigung der von Adobe oder unseren Anbietern verursachten Vorfälle. |
+| Veröffentlichungsebene Vertrag | Rot | Das SLA, das in Ihrem Vertrag mit Adobe für die Veröffentlichungsebene definiert ist. |
 
-**Anzeigen eines SLA-Berichts:**
+**So zeigen Sie einen SLA-Bericht an:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -40,21 +40,21 @@ Das Liniendiagramm eines ausgewählten Jahres enthält Datenpunkte für jeden Mo
 
 1. Klicken Sie auf **SLA-Berichte**.
 
-   ![SLA-Berichtszeilendiagramm](/help/implementing/cloud-manager/assets/cm-sla-report.png)
+   ![Liniendiagramm des SLA-Berichts](/help/implementing/cloud-manager/assets/cm-sla-report.png)
 
 1. Klicken Sie auf das gewünschte Jahr, um ein Liniendiagramm der SLA-Daten anzuzeigen.
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Bewegen Sie den Cursor über einen Datenpunkt im Liniendiagramm, um die spezifischen Werte für diesen Punkt anzuzeigen.
-   * Klicken Sie unter dem Jahr des Liniendiagramms auf das Symbol Herunterladen , um eine PNG-Bilddatei des Liniendiagramms zu speichern.
-   * Klicken Sie auf einen Metriknamen, um nur die Daten dieser Metrik anzuzeigen. Oder drücken Sie auf der Tastatur `Shift` , während Sie einen oder mehrere Metriknamen auswählen oder deaktivieren.
+   * Klicken Sie unter dem Jahr des Liniendiagramms auf das Symbol „Herunterladen“, um eine PNG-Bilddatei des Liniendiagramms zu speichern.
+   * Klicken Sie auf den Namen einer Metrik, um nur die Daten dieser Metrik anzuzeigen. Oder drücken Sie auf der Tastatur auf `Shift`, während Sie einen oder mehrere Metriknamen auswählen oder die Auswahl für Metriknamen aufheben.
 
    ![Anzeigen von detaillierten Daten](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Ereignisanalyse {#event-analysis}
 
-Der Abschnitt **Ereignisanalyse** unter dem Diagramm zeigt die Anzahl der Vorfälle, die im ausgewählten Jahr für das Programm aufgetreten sind.
+Der Abschnitt **Ereignisanalyse** unter diesem Diagramm zeigt die Anzahl von Vorfällen, die im ausgewählten Jahr beim Programm aufgetreten sind.
 
 Für jeden Vorfall werden Zeitraum und Ursache mitsamt Kommentaren angegeben.
 
@@ -62,11 +62,11 @@ Für jeden Vorfall werden Zeitraum und Ursache mitsamt Kommentaren angegeben.
 
 ## Aktualisierungsintervall von SLA-Berichten {#refresh}
 
-Die SLA-Berichterstattung gibt Ihnen einen Einblick in die Leistung Ihrer AEM-Produktionsumgebung und ist aktuell, aber nicht sofort verfügbar. Die Erstellung von SLA-Berichten erfolgt monatlich und wird für neue Programme generiert, die als `Production previous month` gekennzeichnet sind. Die Berichterstellung erfolgt nicht sofort. Beachten Sie daher bei der Überprüfung Ihres SLA-Berichts Folgendes:
+Die SLA-Berichterstellung gibt Ihnen einen Einblick in die Leistung Ihrer AEM-Produktionsumgebung und ist aktuell, aber nicht sofort verfügbar. Die Erstellung von SLA-Berichten erfolgt monatlich und wird für neue Programme generiert, die als `Production previous month` gekennzeichnet sind. Die Berichterstellung erfolgt nicht sofort. Beachten Sie aufgrund dieser Verzögerung bei der Überprüfung Ihres SLA-Berichts Folgendes:
 
-* Die gemeldete SLA ist die , die zu Monatsbeginn existierte, selbst wenn sich SLA in diesem Monat änderte.
-* Wenn zu Monatsbeginn keine SLA vorhanden war, da das Programm nicht existierte, gilt die zum Zeitpunkt der Programmerstellung bestehende SLA.
+* Das SLA, zu dem der Bericht erstellt wird, ist dasjenige, das zu Beginn des Monats bestand, auch wenn sich das SLA im Laufe des Monats geändert hat.
+* Wenn es zu Beginn des Monats kein SLA gab, weil das Programm nicht existierte, gilt das SLA, das zum Zeitpunkt der Erstellung des Programms existierte.
 
-## Vorschau von Umgebungen {#preview}
+## Vorschau-Umgebungen {#preview}
 
-Die Vorschau-Umgebung ist als Tool für Autorinnen und Autoren von Inhalten gedacht, um das endgültige Erlebnis des Inhalts vor der Veröffentlichung zu überprüfen. Aufgrund dieser Funktionalität sind Vorschauumgebungen nicht mit hoher Verfügbarkeit konzipiert und verfügen nicht über eine zugehörige SLA.
+Die Vorschau-Umgebung ist als Tool für Autorinnen und Autoren von Inhalten gedacht, um das endgültige Erlebnis des Inhalts vor der Veröffentlichung zu überprüfen. Aufgrund dieser Funktionalität sind Vorschau-Umgebungen nicht mit hoher Verfügbarkeit konzipiert und verfügen nicht über ein zugehöriges SLA.

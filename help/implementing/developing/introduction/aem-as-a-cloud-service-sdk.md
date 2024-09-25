@@ -5,9 +5,9 @@ exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 8ccf03ebcb4a96b66a15dc9a1161a857888278a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Darüber hinaus werden manche Kundinnen und Kunden, die zuvor AEM 6.5 oder früh
 
 >[!NOTE]
 > 
-> Es gibt Unterschiede zwischen AEM as a Cloud Service und dem SDK in verschiedenen Bereichen. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe Rapid Development Environments eingeführt. Weitere Informationen finden Sie unter [Schnellere Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md) .
+> AEM as a Cloud Service und das SDK unterscheiden sich in verschiedenen Bereichen voneinander. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments) eingeführt. Weitere Informationen finden Sie unter [Schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 ## Erstellen für das SDK {#building-for-the-sdk}
 

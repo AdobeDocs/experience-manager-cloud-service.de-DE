@@ -1,8 +1,8 @@
 ---
 source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -95,7 +95,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
     <td>Feld/Bedienfeld/Formularregel in „Dann“ validieren/zurücksetzen </td>
     <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen nur Formulareobjekte im Regeleditor. 
    </td>
-    <td>Funktionen zum Überprüfen und Zurücksetzen unterstützen Formular-/Bedienfeld-/Feldobjekt im Regeleditor. 
+    <td>Die Funktionen „Validieren“ und „Zurücksetzen“ unterstützen Formular-/Bedienfeld-/Feldobjekte im Regeleditor. 
    </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Einführung in Formularportal-Komponenten](/help/forms/configure-forms-portal.md)
 * [Auflisten von Formularen auf einer Sites-Seite](/help/forms/list-forms-on-sites-page.md)
 * [Speichern von Formularen als Entwürfe](/help/forms/save-core-component-based-form-as-draft.md)
-* [Hinzufügen von Formular-Links zu einer Siteseite](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Hinzufügen von Links zu einer Sites-Seite](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#allowlist-frontend-pipeline}
@@ -142,8 +142,8 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!IMPORTANT]
 >
 >Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste vorab zu Cloud Manager hinzugefügt wird.
->[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste
->Um zu vermeiden, dass die Ausführung der Front-End-Pipeline gestört wird, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
+>[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
+>Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
 >
 >**Cloud Manager-IP-Zulassungsliste**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,17 +160,17 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!TIP]
 >
->Sind haben bislang noch nicht mit Dynamic Media gearbeitet? Einen schnellen Überblick über Dynamic Media finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>Sind haben bislang noch nicht mit Dynamic Media gearbeitet? Einen schnellen, allgemeinen Überblick über Dynamic Media finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Siehe auch für Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Sind haben bislang noch nicht mit Dynamic Media gearbeitet? Einen schnellen Überblick über Dynamic Media finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* Sind haben bislang noch nicht mit Dynamic Media gearbeitet? Einen schnellen, allgemeinen Überblick über Dynamic Media finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
 >* Befolgen Sie die [Best Practices für Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md), um den größtmöglichen Nutzen zu erzielen.
 >
->* Probieren Sie die Dynamic Media-Bildfunktionen mit dem [Snapshot-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) aus.
+>* Probieren Sie mit dem [Snapshot-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) die Dynamic Media-Bildfunktionen aus.
 >
 >* Stellen Sie eine reibungslose Videowiedergabe mit [adaptivem Video](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash) sicher.
 >
@@ -178,18 +178,18 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >
 >* Automatisieren Sie das Zuschneiden von [Videos mit der Funktion „Intelligenter Zuschnitt“](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Bereitstellen eines [interaktiven 3D-basierten Erlebnisses](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Stellen Sie ein [interaktives 3D-basiertes Erlebnis](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video) bereit.
 >* Weitere Informationen finden Sie unter [Dynamic Media-Ressourcen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Einreichen eines Support-Tickets {#support-ticket}
 
-Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebung erfordert und Antwort-SLTs erfüllen muss, können Sie ein Support-Ticket senden.
+Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erfordert und die SLTs für die Reaktion erfüllen muss, können Sie ein Support-Ticket einreichen.
 
-Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Website in Cloud Manager registrieren. Die Registrierung Ihrer Website bei Cloud Manager wird allen AEM as a Cloud Service-Benutzern empfohlen und [bringt eine Reihe von Vorteilen mit sich](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Weitere Informationen, falls Sie Ihre Site noch nicht registriert haben, finden Sie in der Cloud Manager-Dokumentation ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) .[
+Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Site in Cloud Manager registrieren. Allen Benutzenden von AEM as a Cloud Service wird empfohlen, ihre Website bei Cloud Manager zu registrieren, was [eine Reihe von Vorteilen mit sich bringt](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Falls Sie Ihre Website nicht bereits registriert haben, finden Sie weitere Informationen dazu in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-Sobald Ihre Website bei Cloud Manager registriert ist, führen Sie diesen Vorgang mithilfe der Admin Console aus, um ein Support-Ticket zu senden:
+Sobald Ihre Website bei Cloud Manager registriert ist, gehen Sie wie folgt vor, um über die Admin Console ein Support-Ticket einzureichen:
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home?lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 

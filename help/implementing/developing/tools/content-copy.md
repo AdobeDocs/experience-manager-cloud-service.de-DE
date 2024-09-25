@@ -5,9 +5,9 @@ exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 
 ## Bekannte Probleme {#known-issues}
 
-Beachten Sie das folgende bekannte Problem bei der Verwendung der Funktion zum Kopieren von [Inhalten.](/help/implementing/developing/tools/content-copy.md)
+Beachten Sie das folgende bekannte Problem bei der Verwendung der [Funktion zum Kopieren von Inhalten](/help/implementing/developing/tools/content-copy.md).
 
 * Wenn eine Ressource in der Quellumgebung umbenannt wird, kann dies dazu führen, dass der Vorgang zum Kopieren des Inhalts aufgrund widersprüchlicher UUIDs in der Zielumgebung fehlschlägt.
    * Um diesen Fehler zu vermeiden, müssen Sie Ressourcen zunächst löschen und dann mit dem gewünschten neuen Ressourcennamen neu erstellen, anstatt sie umzubenennen.

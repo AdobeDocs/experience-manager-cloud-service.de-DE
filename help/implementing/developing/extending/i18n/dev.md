@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ i18n.get("Enter a search keyword");
 
 #### Verwenden von Übersetzungshinweisen {#using-translation-hints}
 
-Geben Sie den Übersetzungshinweis der internationalisierten Zeichenfolge an, um zwischen doppelten Zeichenfolgen im Wörterbuch zu unterscheiden. Geben Sie den Übersetzungshinweis mit dem zweiten, optionalen Parameter der `get`-Methode an. Der Übersetzungshinweis muss mit der Kommentareigenschaft des Elements im Wörterbuch genau übereinstimmen.
+Geben Sie den Übersetzungshinweis der internationalisierten Zeichenfolge an, um zwischen mehrfach vorhandenen Zeichenfolgen im Wörterbuch zu unterscheiden. Geben Sie den Übersetzungshinweis mit dem zweiten, optionalen Parameter der `get`-Methode an. Der Übersetzungshinweis muss mit der Kommentareigenschaft des Elements im Wörterbuch genau übereinstimmen.
 
 Beispielsweise enthält das Wörterbuch die Zeichenfolge `Request` zweimal: einmal als Verb und einmal als Substantiv. Der folgende Code enthält den Übersetzungshinweis als Argument in der `get`-Methode:
 
@@ -90,7 +90,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Sie haben zwei Nachrichten in Ihrem Posteingang.“ Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
 
-Im Wörterbuch werden die Variablen in Zeichenfolgen in Klammern als Indizes dargestellt. Geben Sie die Werte der Variablen als Argumente der `get`-Methode an. Die Argumente werden nach dem Übersetzungshinweis platziert und die Indizes entsprechen der Reihenfolge der Argumente:
+Im Wörterbuch werden die Variablen in Zeichenfolgen als eingeklammerte Indizes dargestellt. Geben Sie die Werte der Variablen als Argumente der `get`-Methode an. Die Argumente werden nach dem Übersetzungshinweis platziert und die Indizes entsprechen der Reihenfolge der Argumente:
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
