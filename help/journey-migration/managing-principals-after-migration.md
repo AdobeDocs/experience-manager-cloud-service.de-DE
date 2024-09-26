@@ -1,20 +1,20 @@
 ---
 title: Verwalten von Prinzipalen nach der Migration
-description: Erfahren Sie, wie Sie Benutzer und Gruppen in IMS und AEM einrichten.
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+description: Erfahren Sie, wie Sie Benutzende und Gruppen in IMS und AEM einrichten
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
-
 
 # Verwalten von Prinzipalen nach der Migration {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
 >title="Verwalten von Prinzipalen nach der Migration"
->abstract="Erfahren Sie, wie Sie Benutzer und Gruppen in IMS und AEM einrichten."
+>abstract="Erfahren Sie, wie Sie Benutzende und Gruppen in IMS und AEM einrichten"
 
 In diesem Dokument werden die allgemeinen Schritte beschrieben, die Kunden unternehmen sollten, um ihre Benutzer und Gruppen in IMS einzurichten und AEM mit ihrer AEM as a Cloud Service-Umgebung zu arbeiten.
 
@@ -56,5 +56,3 @@ Da diese Gruppen nicht in IMS enthalten sind, kann das Massen-Upload-Tool nicht 
 * Wenn sich der Benutzer zum ersten Mal anmeldet, wird sein IMS-Benutzer in AEM erstellt und er sollte Zugriff auf die neuen Gruppen und damit auf die ursprünglichen Sammlungsgruppen haben.
 
 Hinweis: Für die Massenzuweisung von Benutzern müssen die oben genannten Schritte verwendet werden, um die Benutzer in IMS zu erstellen. Benutzer, die bereits in IMS vorhanden sind, können nicht erneut per Massen-Upload erstellt werden.
-
-
