@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Vorteile von AEM as a Cloud Service in 
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ Standardmäßig ist Unified Shell in AEM as a Cloud Service aktiviert. Wenn die 
 
    ![Grafik](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>Unified Shell kann auch über Ihren Projektcode deaktiviert werden. Siehe [Struktur der AEM Benutzeroberfläche - Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+
 ## Wechsel zum dunklen Design {#changing-to-dark-theme}
 
 Um zum dunklen Design zu wechseln, klicken Sie auf Ihr Profilsymbol. Diese Aktion zeigt ein Popover-Fenster an, wie unten dargestellt. Mit dem Umschalter können Sie zu einem dunklen Design für Unified Shell wechseln.
@@ -73,3 +77,4 @@ Der AEM-Posteingang kann durch Klicken auf das Glockensymbol in Unified Shell au
 Klicken Sie im Popover-Fenster auf die Schaltfläche „Posteingang“, damit Sie zu Ihrem AEM-Posteingang wechseln können:
 
 ![Bild](/help/overview/assets/unifiedshell6.png)
+
