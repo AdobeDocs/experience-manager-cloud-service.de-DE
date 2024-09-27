@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
+source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 41%
@@ -145,8 +145,8 @@ Ein Produktionsprogramm kann so gekennzeichnet sein, dass es zusätzliche Funkti
 
 * Navigieren Sie zu einem bestimmten ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
 * Öffnen Sie das Symbol ![Programmübersicht](/help/implementing/cloud-manager/assets/program-overview.svg) [Programmübersicht](#program-overview)
-* ![Symbol &quot;Bearbeiten&quot;](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Symbol &quot;Löschen&quot;](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Symbol &quot;Bearbeiten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![Symbol &quot;Löschen&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -183,9 +183,9 @@ Die Symbolleisten für die Programmübersicht ähneln den Symbolleisten der Kons
 
 #### Cloud Manager-Kopfzeile {#cloud-manager-header-2}
 
-In der linken oberen Ecke der Seite befindet sich die Kopfzeile von Adobe Cloud Manager. Sie können auf das Symbol für das seitliche Menü ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klicken, um das Seitenmenü von Registerkarten zu anderen Bereichen der Software ein- oder auszublenden.![
+In der linken oberen Ecke der Seite befindet sich die Kopfzeile von Adobe Cloud Manager. Sie können auf das Symbol für das seitliche Menü ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klicken, um das Seitenmenü von Registerkarten zu anderen Bereichen der Software ein- oder auszublenden.![
 
-![Cloud Manager-Hamburger-Menü](assets/cloud-manager-hamburger.png)
+![Cloud Manager-Seitenmenü](assets/cloud-manager-hamburger.png)
 
 Klicken Sie auf Adobe Cloud Manager , um zur Startseite zurückzukehren.
 
