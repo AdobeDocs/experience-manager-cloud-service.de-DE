@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
-workflow-type: ht
-source-wordcount: '1608'
-ht-degree: 100%
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +72,7 @@ Lesen Sie mehr über das [Konfigurieren eines Bereinigungs-API-Tokens](/help/imp
 
 ### Grundlegende Authentifizierung im CDN {#basic-auth}
 
-Schützen Sie Inhalte für einfache Authentifizierungsfälle, einschließlich Geschäfts-Stakeholdern, die Inhalte überprüfen, indem Sie ein einfaches Authentifizierungsdialogfeld anzeigen, das einen Benutzernamen und ein Kennwort erfordert. [Erfahren Sie mehr](/help/implementing/dispatcher/cdn-credentials-authentication.md) und treten Sie dem Early-Adopter-Programm bei.
+Schützen Sie Inhalte für einfache Authentifizierungsfälle, einschließlich Geschäfts-Stakeholdern, die Inhalte überprüfen, indem Sie ein einfaches Authentifizierungsdialogfeld anzeigen, das einen Benutzernamen und ein Kennwort erfordert. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
 ## Kundenseitig verwaltetes CDN verweist auf von AEM verwaltetes CDN {#point-to-point-CDN}
 

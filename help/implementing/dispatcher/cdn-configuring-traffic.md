@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
-workflow-type: ht
-source-wordcount: '1350'
-ht-degree: 100%
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service bietet eine Reihe von Funktionen, die auf der Ebene [Adob
 
 * [Anforderungsumwandlungen](#request-transformations) – Änderung von Aspekten eingehender Anfragen, einschließlich Kopfzeilen, Pfaden und Parametern.
 * [Reaktionsumwandlungen](#response-transformations) – Änderung von Kopfzeilen, die sich auf dem Weg zurück zum Client befinden (z. B. einen Webbrowser).
-* [Client-seitige Umleitungen](#client-side-redirectors) – Auslöser einer Browser-Umleitung. Diese Funktion ist noch nicht allgemein verfügbar, steht aber für Early-Adopter zur Verfügung. 
+* [Client-seitige Umleitungen](#client-side-redirectors) - Trigger einer Browserumleitung.
 * [Ursprungs-Auswahlen](#origin-selectors) – Proxy zu einem anderen Ursprungs-Backend.
 
 Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF), die steuern, welcher Traffic vom CDN erlaubt oder verweigert wird. Diese Funktion wurde bereits veröffentlicht. Weitere Informationen dazu finden Sie auf der Seite [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
@@ -363,9 +363,6 @@ data:
 
 ## Client-seitige Umleitungen {#client-side-redirectors}
 
->[!NOTE]
->Diese Funktion ist noch nicht allgemein verfügbar.  Um dem Early-Adopter-Programm beizutreten, senden Sie eine E-Mail an `aemcs-cdn-config-adopter@adobe.com` und beschreiben Sie Ihren Anwendungsfall.
-
 Sie können Regeln für die Client-seitige Weiterleitung für 301, 302 und ähnliche Client-seitige Weiterleitungen verwenden. Wenn eine Regel übereinstimmt, antwortet das CDN mit einer Statuszeile, die den Status-Code und die Meldung enthält (z. B. HTTP/1.1 301 Permanent verschoben), sowie mit dem Speicherort-Kopfzeilen-Satz.
 
 Sowohl absolute als auch relative Speicherorte mit festen Werten sind zulässig.
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }

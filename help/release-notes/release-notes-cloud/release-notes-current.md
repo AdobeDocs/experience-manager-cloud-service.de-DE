@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
-workflow-type: ht
-source-wordcount: '1266'
-ht-degree: 100%
+source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+workflow-type: tm+mt
+source-wordcount: '1248'
+ht-degree: 71%
 
 ---
 
@@ -28,33 +28,27 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.8.0) ist der 29. August 2024. Die nächste Version mit neuen Funktionen (2024.9.0) ist für den 26. September 2024 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.9.0) ist der Freitag, 26. September 2024. Die nächste Version mit neuen Funktionen (2024.10.0) ist für den Freitag, 31. Oktober 2024 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
 Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
-## Video zur Version {#release-video}
+<!--  ## Release Video {#release-video}
 
-Eine Zusammenfassung der in der Version 2024.8.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version vom August 2024:
+Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Neue Funktion in Experience Manager Sites {#new-feature-sites}
 
-**AEM-Authoring für Edge Delivery Services**
+#### Übersetzungsmanagement {#translation-management}
 
-Die vorhandene Sites-Funktion [Vererbung](/help/sites-cloud/authoring/universal-editor/inheritance.md) wird jetzt unterstützt, einschließlich:
-
-* [AEM-Launches](/help/sites-cloud/authoring/launches/overview.md)
-* [MSM](/help/sites-cloud/administering/msm/overview.md) auf Seitenebene
-
-Darüber hinaus werden jetzt die folgenden Seitenverwaltungsfunktionen unterstützt:
-
-* [AEM-Tags](/help/sites-cloud/authoring/sites-console/tags.md) können als [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) nach Edge Delivery Services exportiert werden.
-* [Vorlagen](/help/edge/wysiwyg-authoring/templates.md) für Edge Delivery Services werden bald verfügbar sein.
+AEM Übersetzungs-Workflows und API-Aktionen jetzt Trigger-Ereignisse, um Einblicke in die Zustandsänderungen von Übersetzungsaufträgen zu erhalten. Benutzer können diese Ereignisse über die Adobe Developer Console abonnieren. Weitere Informationen zur AEM Übersetzungsmanagement-API finden Sie unter [hier](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) .
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
@@ -73,27 +67,10 @@ Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Inte
 
 Um frühzeitig Zugang zur Unterstützung für KI-generierte Untertitel in Ihrem Dynamic Media-Konto zu erhalten, [erstellen und senden Sie eine Anfrage an den Adobe-Kunden-Support.](/help/assets/dynamic-media/video.md##enable-dash)
 
-### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
+### Neue Funktionen in der Asset-Auswahl {#asset-selector-new-features}
 
-**Aktualisierte Adobe Firefly-Bildgenerierung**
-
-Assets as a Cloud Service verwendet jetzt das neueste Widget von Firefly, mit dem Sie Bilder in verschiedenen Stilen mithilfe von Adobe Firefly generieren können. Indem Sie mit dem integrierten Firefly-Editor Stil, Komposition, Dimensionen und mehr definieren, können Sie schnell die benötigten Assets erstellen und speichern und sie direkt im AEM Assets-Repository verwenden.
-
-![Adobe Firefly-Bildgenerierung](/help/assets/assets/bugatti-type-57.png)
-
-**Unterstützung von PSB-Dateien**
-
-Assets as a Cloud Service unterstützt jetzt neben der bestehenden Unterstützung für PSD-Dateien auch große Photoshop-Dokumente (PSB-Dateien).
-
-### Neue Verbesserungen in Content Hub {#content-hub-new-enhancements}
-
-* Bessere Handhabung langer Dateinamen, einfaches Anzeigen des kompletten Namens über eine QuickInfo.
-* Verbesserte Miniaturansichten, die nun dem Seitenverhältnis des Inhalts besser entsprechen und einen größeren Inhaltsbereich abdecken.
-* Benutzerdefiniertes Miniaturbild-Erlebnis aus AEM mit Content-Hub unterstützt.
-* Verbesserungen bei der Farbsuche.
-* Verbesserungen bei der Konfiguration von Suchvorgängen.
-* Die Informationsseite von Sammlungen wurde verbessert, sodass sie den Namen der Erstellenden widerspiegelt.
-
+Der Asset-Selektor unterstützt jetzt das Durchsuchen von Sammlungen, um Ihr gewünschtes Asset zu finden.
+![Sammlungen des Asset-Wählers](/help/assets/assets/collections-rail-modal-view.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -132,29 +109,49 @@ Die folgenden generativen KI-Funktionen stehen zur Verfügung:
 >
 > Möchten Sie am Early-Access-Programm für Forms-Innovationen teilnehmen? Senden Sie von Ihrer offiziellen E-Mail-Adresse eine Nachricht an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit der Liste der Funktionen, an denen Sie interessiert sind.
 
+## CIF-Add-on {#cloud-services-cif}
+
+### Verbesserungen {#improvements-fixes-cif}
+
+* Kategoriebegrenzung anpassen.
+
+### Fehlerbehebungen {#bug-fixes-cif}
+
+* Commerce-Felder sind nicht ordnungsgemäß mit dem Assets-Metadatenschema-Editor integriert.
+* Problem mit dem Multifield für Karussellprodukte für Drag &amp; Drop.
+* Problem mit Karussellkategorie-Multifield für Drag &amp; Drop.
+* Ein Klick funktioniert nicht für die Menüs auf der Seite Seiteninformationen auf der Kategorie- und Produkt-Editor-Seite.
+* Die Bestellnummer ist auf der Bestellbestätigungsseite nicht sichtbar.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
-### Early-Adopter-Programme im Zusammenhang mit der Inhaltsbereitstellung {#foundation-early-adopter}
+### Edge Side Includes (ESI) zum Laden dynamischer Inhalte {#esi}
 
-Senden Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>**, die angibt, für welche der unten aufgeführten Programme Sie sich interessieren.
+Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), eine Markup-Sprache für die dynamische Zusammenführung von Web-Inhalten auf Edge-Ebene. Durch die Einbeziehung von ESI-Snippets können Sie die gesamte HTML-Seite im CDN mit höheren TTLs zwischenspeichern und gleichzeitig diejenigen kleineren Abschnitte, die höhere Intervall-Updates (niedrigere TTLs) erfordern, öfter aus der Quelle abrufen. Diese Funktion wird schrittweise eingeführt.
 
-#### Standardauthentifizierung beim CDN (Early-Adopter-Programm) {#basicauth-cdn}
+### Grundlegende Authentifizierung im CDN {#basicauth-cdn}
 
-Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Passwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird – mit Verweis auf die geheimen Cloud Manager-Umgebungsvariablen. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Kennwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Config Pipeline bereitgestellt wird, mit einem Verweis auf die Cloud Manager-Umgebungsvariablen des geheimen Typs. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Client-seitige Weiterleitungen (Early-Adopter-Programm) {#client-side-redirects-early-adopter}
+### Clientseitige Umleitungen {#client-side-redirects}
 
-Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Verwaltung des Quell-Codes und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Deklarieren Sie [Browserumleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in einem Konfigurationsdatei-Git, das im CDN bereitgestellt und ausgewertet wird. Dies kann für Szenarien nützlich sein, z. B. das Löschen von Seiten, die Änderung der Site-Struktur und die SEO-Optimierung.
 
-#### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
+### Neue AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
-Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository abgelegt werden, und laden sie, ohne dass eine Pipeline auf Web-Ebene ausgeführt werden muss. So können geschäftliche Anwenderinnen und Anwender Umleitungen mithilfe einer Tabelle oder einer Benutzeroberfläche deklarieren, z. B. mit ACS Commons Redirect Map Manager oder einer benutzerdefinierten Anwendung. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+Probieren Sie ein umgestaltetes [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) aus, das ein interaktiveres Erlebnis für das Debugging von Code in Cloud-Umgebungen bietet.
 
-#### Edge Side Includes (ESI) für das Laden dynamischer Inhalte (Early-Adopter-Programm) {#esi-early-adopter}
+Jeder kann auf die öffentliche Beta-Version zugreifen, indem er in der aktuellen AEM Developer Console auf die Schaltfläche *Neue verfügbare Konsole* klickt. Adobe begrüßt Feedback, das Sie per E-Mail an **<aemcs-new-devconsole-ui-beta@adobe.com>** senden können.
 
-Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), eine Markup-Sprache für die dynamische Zusammenführung von Web-Inhalten auf Edge-Ebene. Durch die Einbeziehung von ESI-Snippets können Sie die gesamte HTML-Seite im CDN mit höheren TTLs zwischenspeichern und gleichzeitig diejenigen kleineren Abschnitte, die höhere Intervall-Updates (niedrigere TTLs) erfordern, öfter aus der Quelle abrufen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+![OSGi-Paketbildschirm in AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
+### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
+
+Ähnlich wie AEM 6.5 erfasst Apache/Dispatcher Umschreibungen, die an einem bestimmten Speicherort im Publishing-Repository platziert werden, und lädt sie, ohne dass eine Pipeline auf der Web-Ebene ausgeführt werden muss. Mit diesem Ansatz können Geschäftsbenutzer Umleitungen mithilfe einer Tabelle oder einer Benutzeroberfläche deklarieren, z. B. ACS Commons Redirect Map Manager oder einer benutzerdefinierten Anwendung. Treten Sie dem frühen Adopter-Programm bei, indem Sie **<aemcs-cdn-config-adopter@adobe.com>** per E-Mail versenden.
+
+### Konfigurieren einer Pipeline für RDE (Frühkindliche Betreuung, Betreuung und Betreuung) {#config-pipeline-rdes-early-adopter}
+
+Die [Konfigurations-Pipeline](/help/operations/config-pipeline.md) wird verwendet, um YAML-Dateikonfigurationen bereitzustellen, einschließlich CDN-Optionen (Traffic-Filterregeln, Anforderung-/Antworttransformationen usw.). Treten Sie dem frühen Adopter-Programm bei, indem Sie **<aemcs-cdn-config-adopter@adobe.com>** per E-Mail versenden, um dieselben Konfigurationen für RDEs (Rapid Development Environments) bereitzustellen, die eine CLI verwenden.
 
 ## [!DNL Experience Manager] Guides {#guides}
 

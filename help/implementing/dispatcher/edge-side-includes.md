@@ -4,17 +4,14 @@ description: Das von Adobe verwaltete CDN unterstützt jetzt Edge Side Includes 
 feature: Dispatcher
 exl-id: 35093477-2788-4f69-80a9-899f43567cae
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: d70a8030ca6687b1839adc0ce1becdf366ec7170
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
 
 # Edge Side Includes {#edge-side-includes}
-
->[!NOTE]
->Diese Funktion ist noch nicht allgemein verfügbar.  Um dem Early-Adopter-Programm beizutreten, senden Sie eine E-Mail an `aemcs-cdn-config-adopter@adobe.com` und beschreiben Sie Ihren Anwendungsfall.
 
 Die Geschwindigkeit der Inhaltsbereitstellung profitiert vom aggressiven Caching von Seiten, was durch Festlegen von Cache-Headern mit hohen Time-to-Live-Zeit-Werten (TTL) erreicht wird. Dies kann eine Herausforderung darstellen, wenn Seiten dynamische Inhalte enthalten, die häufig aktualisiert werden müssen oder möglicherweise überhaupt nicht zwischengespeichert werden können. Glücklicherweise gibt es Strategien, bei denen die übergeordnete HTML-Seite mit einer hohen TTL zwischengespeichert werden kann, indem der Abruf der dynamischeren Inhaltsausschnitte entweder über Client-seitiges JavaScript oder im CDN auf einen späteren Zeitpunkt verschoben wird. Letzterer Ansatz ist ein Standard mit der Bezeichnung Edge Side Includes (ESI), der für Sites unterstützt wird, die mit AEM-Publishing gerendert werden. Die HTML enthält ESI-Tags, die das CDN anweisen, die Bereitstellung der Seite an den Browser zu verschieben, bis es diese Tags auswertet, wodurch zusätzliche, dynamischere (niedrigere TTL) Inhalte aus der Quelle (oder dem CDN-Cache, wenn die TTL noch nicht abgelaufen ist) abgerufen werden.
 
