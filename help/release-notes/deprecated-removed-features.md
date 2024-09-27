@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: ht
-source-wordcount: '2172'
-ht-degree: 100%
+source-git-commit: 708bf370c2843dd8e2937de8fbf77843e661cf02
+workflow-type: tm+mt
+source-wordcount: '2220'
+ht-degree: 97%
 
 ---
 
@@ -271,11 +271,36 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
     <td>11.4.2022</td>
     <td>30.08.2024</td>
   </tr>
+  <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>Die Verwendung dieser API wird in AEM as a Cloud Service nicht unterstützt.</td>
     <td>17.05.2024</td>
     <td>30.06.2024</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Verwenden Sie stattdessen org.apache.sling.xss .</td>
+    <td>12.12.2023</td>
+    <td>30.06.2024</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>Beachten Sie, dass das Servlet in com.adobe.granite.xss.impl.servlets nicht veraltet ist.</td>
+    <td>12.12.2023</td>
+    <td>30.06.2024</td>
   </tr>  
+  <tr>
+    <td>com.drew.*</td>
+    <td>Das Extrahieren von Metadaten aus Bildern und Videos sollte über Asset compute im Cloud Service oder über Apache POI oder Apache Tika erfolgen.</td>
+    <td>17. September 2024</td>
+    <td>17. November 2024</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
+    <td></td>
+    <td>23.09.2024</td>
+    <td>23.12.2024</td>
+  </tr>       
 </tbody>
 </table>
 </details>
