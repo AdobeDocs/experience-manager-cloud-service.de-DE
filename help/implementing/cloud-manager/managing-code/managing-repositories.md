@@ -1,109 +1,99 @@
 ---
 title: Verwalten von Repositorys in Cloud Manager
-description: Erstellen, Anzeigen und Löschen von Git-Repositorys in Cloud Manager.
+description: Erfahren Sie, wie Sie Ihre GIT-Repositorys in Cloud Manager erstellen, anzeigen und löschen.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '621'
-ht-degree: 100%
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 14%
 
 ---
 
 
-# Verwalten von Repositorys in Cloud Manager {#managing-repos}
+# Repositorys in Cloud Manager verwalten {#managing-repos}
 
-Erstellen, Anzeigen und Löschen von Git-Repositorys in Cloud Manager.
+Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager anzeigen, hinzufügen und löschen.
 
-## Übersicht {#overview}
+## Über Repositorys in Cloud Manager {#overview}
 
-Repositorys werden zum Speichern und Verwalten des Projekt-Codes mithilfe von Git verwendet. Für jedes Programm, das Sie in Cloud Manager erstellen, wird ein von Adobe verwaltetes Repository erstellt.
+Repositorys in Cloud Manager werden zum Speichern und Verwalten des Projektcodes mithilfe von Git verwendet. Für jedes von Ihnen hinzugefügte *Programm* wird automatisch ein von Adobe verwaltetes Repository erstellt.
 
-Sie können zusätzliche von Adobe verwaltete Repositorys erstellen und auch eigene private Repositorys hinzufügen. Alle mit Ihrem Programm verknüpften Repositorys können im Fenster **Repositorys** eingesehen werden.
+Darüber hinaus haben Sie die Möglichkeit, weitere von Adobe verwaltete Repositorys zu erstellen oder eigene private Repositorys hinzuzufügen. Alle mit Ihrem Programm verknüpften Repositorys können auf der Seite **Repositorys** angezeigt werden.
 
-In Cloud Manager erstellte Repositorys stehen Ihnen auch beim Hinzufügen oder Bearbeiten von Pipelines zur Verfügung. Weitere Informationen finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+In Cloud Manager erstellte Repositorys können auch beim Hinzufügen oder Bearbeiten von Pipelines ausgewählt werden. Weitere Informationen zum Konfigurieren von Pipelines finden Sie unter [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
-Für jede Pipeline gibt es ein einzelnes primäres Repository oder eine Verzweigung. Mit der [Unterstützung von Git-Untermodulen](git-submodules.md) können zum Zeitpunkt der Erstellung viele sekundäre Verzweigungen einbezogen werden.
+Jede Pipeline ist mit einem primären Repository oder einer Verzweigung verknüpft. Mit der Unterstützung von [Git-Untermodulen](git-submodules.md) können jedoch während des Build-Prozesses mehrere sekundäre Zweige einbezogen werden.
 
-## Fenster „Repositorys“ {#repositories-window}
+## Anzeigen der Seite &quot;Repositorys&quot; {#repositories-window}
+
+Auf der Seite **Repositorys** können Sie Details zum ausgewählten Repository anzeigen. Diese Informationen enthalten den Typ des verwendeten Repositorys. Wenn das Repository als **Adobe** markiert ist, bedeutet dies, dass es sich um ein von Adobe verwaltetes Repository handelt. Wenn es als **GitHub** bezeichnet wird, bezieht es sich auf ein privates GitHub-Repository, das Sie verwalten. Darüber hinaus enthält die Seite Details wie den Zeitpunkt der Erstellung des Repositorys und die damit verbundenen Pipelines.
+
+Um Aktionen für ein ausgewähltes Repository auszuführen, können Sie auf das Repository klicken und das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) verwenden, um ein Dropdown-Menü zu öffnen. Für von Adobe verwaltete Repositorys können Sie **[Verzweigungen überprüfen/Projekt erstellen](#check-branches)**.
+
+![Repository-Aktionen](assets/repository-actions.png)
+*Dropdown-Menü auf der Seite &quot;Repositorys&quot;.*
+
+Weitere verfügbare Aktionen im Dropdown-Menü sind **[Repository-URL kopieren](#copy-url)**, **[Anzeigen und Aktualisieren](#view-update)** und **[Löschen](#delete)** des Repositorys.
+
+**Anzeigen der Seite &quot;Repositorys&quot;:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Wählen Sie auf der Seite **Programmübersicht** die Registerkarte **Repositorys** und wechseln Sie zu der Seite **Repositorys**.
+1. Klicken Sie auf der Seite **Programmübersicht** im Seitenmenü auf das Symbol ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositorys**.
 
-1. Im Fenster **Repositorys** werden alle Repositorys angezeigt, die mit Ihrem Programm verknüpft sind.
+1. Auf der Seite **Repositorys** werden alle Repositorys angezeigt, die mit Ihrem ausgewählten Programm verknüpft sind.
 
-   ![Fenster „Repositorys“](assets/repositories.png)
-
-Das Fenster **Repositorys** zeigt Details zu den Repositorys:
-
-* Der Repository-Typ
-   * **Adobe** zeigt von Adobe verwaltete Repositorys an
-   * **GitHub** zeigt private, von Ihnen verwaltete GitHub-Repositorys an
-* Zeitpunkt der Erstellung
-* Pipelines, die mit dem Repository verknüpft sind
-
-Sie können das Repository im Fenster auswählen und auf die Schaltfläche mit den Auslassungspunkten klicken, um das ausgewählte Repository zu bearbeiten.
-
-* **[Verzweigungen prüfen/Projekt erstellen](#check-branches)** (nur für Adobe-Repositorys verfügbar)
-* **[Repository-URL kopieren](#copy-url)**
-* **[Anzeigen und aktualisieren](#view-update)**
-* **[Löschen](#delete)**
-
-![Repository-Aktionen](assets/repository-actions.png)
+   ![Seite &quot;Repositorys&quot;](assets/repositories.png)
+   *Die Seite &quot;Repositorys&quot;in Cloud Manager.*
 
 ## Hinzufügen von Repositorys {#adding-repositories}
 
-Tippen oder klicken Sie im Fenster **Repositorys** auf **Repository hinzufügen**, um den Assistenten **Repository hinzufügen** zu starten.
+Klicken Sie auf der Seite **Repositorys** in der rechten oberen Ecke auf **Repository hinzufügen** .
 
-![Assistent „Repository hinzufügen“](assets/add-repository-wizard.png)
+![Dialogfeld &quot;Repository hinzufügen&quot;.](assets/repository-add.png)
+*Dialogfeld &quot;Repository hinzufügen&quot;.*
 
-Cloud Manager unterstützt beide Typen von Repositorys, nämlich die, die von Adobe verwaltet werden (**Adobe-Repository**), sowie Ihre eigenen, selbst verwalteten Repositorys (**privates Repository**). Die erforderlichen Felder unterscheiden sich je nach Typ des Repositorys, das Sie hinzufügen möchten. Weitere Informationen finden Sie in den folgenden Dokumenten:
+Cloud Manager unterstützt zwei Typen von Repositorys: Adobe-verwaltete Repositorys (**Adobe-Repository**) und selbstverwaltete Repositorys (**Privates Repository**). Die für die Einrichtung erforderlichen Felder variieren je nach dem Typ des Repositorys, das Sie hinzufügen möchten. Weitere Informationen finden Sie in den folgenden Themen:
 
 * [Hinzufügen von Adobe-Repositorys in Cloud Manager](adobe-repositories.md)
 * [Hinzufügen von privaten Repositorys in Cloud Manager](private-repositories.md)
 
 >[!NOTE]
 >
->* Eine Person muss über die Rolle **Bereitstellungs-Manager** oder **Geschäftsinhaber** verfügen, um ein Repository hinzufügen zu können.
+>* Ein Benutzer muss über die Rolle **Bereitstellungsmanager** oder **Business Owner** verfügen, um ein Repository hinzuzufügen.
 >* Für jedes Unternehmen oder IMS-Organisation gibt es eine Grenze von 300 Repositorys über alle Programme hinweg.
 
-## Auf Repository-Informationen zugreifen {#repo-info}
-
-Wenn Sie sich Ihre Repositorys im Fenster **Repositorys** ansehen, können Sie die Details zum programmgesteuerten Zugriff auf die von Adobe verwalteten Repositorys anzeigen, indem Sie in der Symbolleiste auf die Schaltfläche **Auf Repository-Informationen zugreifen** klicken.
-
-![Repository-Informationen](assets/repo-info.png)
-
-Das Fenster **Repository-Informationen** mit den Details wird geöffnet. Weitere Informationen zum Zugriff auf Repository-Informationen finden Sie im Dokument [Zugriff auf Repository-Informationen](accessing-repos.md).
 
 ## Verzweigungen überprüfen/Projekt erstellen {#check-branches}
 
-Mit der Aktion **Verzweigungen überprüfen/Projekt erstellen** werden je nach dem Status des Repositorys zwei Funktionen ausgeführt.
+In **AEM Cloud Manager** dient die Aktion **Verzweigungen überprüfen/Projekt erstellen** je nach dem aktuellen Status des Repositorys zwei Zwecken.
 
-* Wenn das Repository neu erstellt wurde, erstellt die Aktion ein Beispielprojekt basierend auf dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview).
-* Wenn im Repository bereits ein Beispielprojekt erstellt wurde, prüft es den Status des Repositorys und seiner Verzweigungen und gibt zurück, dass bereits ein Beispielprojekt vorhanden ist.
+* Wenn das Repository neu erstellt wurde, generiert diese Aktion ein Beispielprojekt mit [dem AEM Projektarchetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Wenn das Beispielprojekt bereits im Repository erstellt wurde, prüft die Aktion den Status des Repositorys und seiner Verzweigungen und gibt Feedback dazu, ob das Beispielprojekt bereits vorhanden ist.
 
-![Aktion „Verzweigungen überprüfen“](assets/check-branches.png)
+  ![Aktion „Verzweigungen überprüfen“](assets/check-branches.png)
 
 ## Repository-URL kopieren {#copy-url}
 
-Die Aktion **Repository-URL kopieren** kopiert die URL des im Fenster **Repositorys** ausgewählten Repositorys in die Zwischenablage, damit sie an anderer Stelle verwendet werden kann.
+Mit der Aktion &quot;**Repository-URL kopieren**&quot;wird die URL des auf der Seite &quot;**Repositorys**&quot;ausgewählten Repositorys in die Zwischenablage kopiert, damit sie an anderer Stelle verwendet werden kann.
 
-## Anzeigen und aktualisieren {#view-update}
+## Repository anzeigen und aktualisieren {#view-update}
 
-Die Aktion **Anzeigen/Aktualisieren** öffnet das Dialogfeld **Repository aktualisieren**. Dort können Sie den **Namen** und die **Repository-URL-Vorschau** anzeigen sowie die **Beschreibung** des Repositorys aktualisieren.
+Mit der Aktion **Anzeigen und Aktualisieren** wird das Dialogfeld **Repository aktualisieren** geöffnet, in dem Sie die Vorschau der Repository-URL **Name** und **Repository-URL-Vorschau** anzeigen können. Außerdem können Sie damit die **Beschreibung** des Repositorys aktualisieren.
 
-![Anzeigen und Aktualisieren von Repository-Informationen](assets/view-update.png)
+![Anzeigen und Aktualisieren von Repository-Informationen](assets/repository-view-update.png)
 
-## Löschen {#delete}
+## Repository löschen {#delete}
 
 Die Aktion **Löschen** entfernt das Repository aus Ihrem Projekt. Ein Repository kann nicht gelöscht werden, wenn es mit einer Pipeline verknüpft ist.
 
-![Löschen](assets/delete.png)
+![Löschen](assets/repository-delete.png)
 
-Das Löschen eines Repositorys führt dazu, dass:
+Durch das Löschen eines Repositorys wird sein Name für alle zukünftigen Repositorys unbrauchbar. Wenn Sie versuchen, denselben Namen zu verwenden, wird die folgende Fehlermeldung angezeigt:
 
-* der Name des gelöschten Repositorys für neue Repositorys, die in Zukunft erstellt werden, unbrauchbar gemacht wird.
-   * In solchen Fällen wird die Fehlermeldung `Repository name should be unique within organization.` angezeigt.
-* Stellen Sie sicher, dass das gelöschte Repository nicht in Cloud Manager verfügbar ist und daher nicht mit einer Pipeline verknüpft werden kann.
+`Repository name should be unique within organization.`
+
+Darüber hinaus ist das gelöschte Repository nicht mehr in Cloud Manager verfügbar und kann nicht mit Pipelines verknüpft werden.
+
