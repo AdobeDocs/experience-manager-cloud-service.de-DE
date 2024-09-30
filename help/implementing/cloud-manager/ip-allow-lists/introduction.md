@@ -5,15 +5,17 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
+source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Einführung in IP-Zulassungslisten {#introduction}
+
+Erfahren Sie, wie IP-Zulassungslisten einschränken können, von welchen Adressen aus Benutzende auf Domains in AEM as a Cloud Service zugreifen können.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
@@ -21,6 +23,8 @@ ht-degree: 100%
 >abstract="AEM as a Cloud Service ist über das Internet zugänglich und die Sicherheit wird durch Benutzerauthentifizierung und -autorisierung gewährleistet. Die IP-Zulassungslisten von Cloud Manager können verwendet werden, um den Zugriff zu kontrollieren und nur auf vertrauenswürdige IP-Adressen zu beschränken. Cloud Manager-Benutzende mit entsprechenden Berechtigungen können Zulassungslisten mit vertrauenswürdigen IP-Adressen erstellen, von denen aus die Benutzenden ihrer Site auf ihre AEM-Domains zugreifen können."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Hinzufügen einer IP-Zulassungsliste"
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="Anzeigen und Aktualisieren einer IP-Zulassungsliste"
+
+## Übersicht {#overview}
 
 AEM as a Cloud Service ist standardmäßig über das Internet zugänglich. Während die Sicherheit über die Benutzerauthentifizierung und -autorisierung gehandhabt wird, ist die IP-Zulassungsauflistung eine Möglichkeit, den Zugriff nur auf vertrauenswürdige IP-Adressen zu beschränken.
 
@@ -32,13 +36,21 @@ Nach dem Hinzufügen können [IP-Zulassungslisten](/help/implementing/cloud-mana
 >
 >Wenn keine IP-Zulassungsliste angewendet wird, sind standardmäßig alle IP-Adressen zulässig. Wenn eine IP-Zulassungsliste angewendet wird, sind keine IP-Adressen außer den Adressen auf der IP-Zulassungsliste zulässig.
 
-## Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline {#allowlists-frontend-pipeline}
+## Einschränkungen {#limitations}
+
+Bevor Sie IP-Zulassungslisten verwenden, sollten Sie die folgenden Einschränkungen hinsichtlich Funktionalität, Verwendung und Auswirkung auf andere Funktionen kennen.
+
+### Allgemeine Einschränkungen von IP-Zulassungslisten {#general}
+
+* Es können maximal 50 IP-Zulassungslisten zu Ihrem Programm hinzugefügt werden.
+* Jeder IP-Zulassungsliste können maximal 50 IP/CIDR-Adressen hinzugefügt werden.
+* IP-Zulassungslistennamen werden in Cloud Manager für Autoren- und/oder Veröffentlichungs-Services in einer Umgebung unterstützt.
+
+### Frontend-Pipelines und IP-Zulassungslisten {#front-end-pipeline}
 
 Wenn Sie die [Frontend-Pipeline zur Entwicklung von Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) verwenden bzw. verwenden möchten, muss zuvor die folgende Cloud Manager-IP-Zulassungsliste hinzugefügt werden.
 
 Wenn Sie die [IP-Zulassungsliste hinzufügen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), geben Sie ihr den Namen *`Cloud Manager`*. Kopieren Sie dann die Adressliste unten und fügen Sie sie in das Dialogfeld „IP-Zulassungsliste“ ein.
-
-**Cloud Manager-IP-Zulassungsliste**
 
 ```text
 52.254.106.192/28
@@ -68,14 +80,8 @@ Wenn Sie die [IP-Zulassungsliste hinzufügen](/help/implementing/cloud-manager/i
 
 Stellen Sie sicher, dass diese Cloud Manager-IP-Zulassungsliste hinzugefügt wird, um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden. Wenden Sie dann die Liste auf die Autorenumgebung an, *bevor* Sie die Pipeline aktivieren.
 
-Siehe [Anwenden von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
-Siehe [Aktivieren einer Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+Weitere Informationen finden Sie in den Dokumenten [IP-Zulassungsliste anwenden](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) und [Frontend-Pipeline aktivieren](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) .
 
+### Universelle Editor- und IP-Zulassungslisten {#universal-editor}
 
-## Einschränkungen {#limitations}
-
-Bei IP-Zulassungslisten gibt es einige Einschränkungen zu beachten.
-
-* In Ihrem Programm können maximal 50 IP-Zulassungslisten hinzugefügt werden.
-* Jeder IP-Zulassungsliste können maximal 50 IP/CIDR-Adressen hinzugefügt werden.
-* IP-Zulassungslistennamen werden in Cloud Manager für Autoren- und/oder Veröffentlichungs-Services in einer Umgebung unterstützt.
+{{ip-allow-lists-ue}}

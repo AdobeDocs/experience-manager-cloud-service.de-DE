@@ -1,8 +1,8 @@
 ---
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # Snippets {#snippets}
@@ -155,6 +155,22 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >
 >Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden bzw. verwenden möchten, muss zuvor die Cloud Manager-IP-Zulassungsliste hinzugefügt werden.
 >Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## IP-Zulassungslisten und der Universal Editor {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[Der universelle Editor](/help/implementing/universal-editor/introduction.md) ist nicht mit IP-Zulassungslisten kompatibel.
+>
+>Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert werden.
+
+## Universelle Editor- und IP-Zulassungslisten {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>Der universelle Editor ist nicht mit [IP-Zulassungslisten kompatibel.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert werden.
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 

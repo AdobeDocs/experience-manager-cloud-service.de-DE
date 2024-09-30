@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (W
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -91,6 +91,8 @@ Beachten Sie bei der Erkundung des universellen Editors und später bei seiner I
 * Es ist AEM as a Cloud Service Version `2023.8.13099` oder höher erforderlich.
 * Inhaltsautorinnen und Inhaltsautoren müssen über eigene Experience Cloud-Konten verfügen.
 * Chrome und Edge werden als Browser unterstützt.
+
+{{ue-ip-allow-lists}}
 
 ## Nächste Schritte {#next-steps}
 
