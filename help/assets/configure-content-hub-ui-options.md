@@ -2,9 +2,9 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1374'
 ht-degree: 7%
 
 ---
@@ -60,6 +60,8 @@ Verwalten Sie als Administrator die folgenden Konfigurationsoptionen für Ihre B
 * [Suchen](#configure-metadata-search-content-hub)
 
 * [Branding](#configure-branding-content-hub)
+
+* [Abgelaufene Assets](#expired-assets-content-hub)
 
 * [Benutzerspezifische Links](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Administratoren können auch den Titel und den Textkörper im Banner des Content
 Die auf der Konfigurationsoberfläche aktivierten Branding-Aktualisierungen werden im Content Hub-Portal-Banner angezeigt:
 
 ![Branding der Konfigurationsoberfläche auf Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Abgelaufene Assets {#expired-assets-content-hub}
+
+Administratoren können steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch definieren, ob Benutzer sie herunterladen können.
+
+Abgelaufene Assets werden nicht standardmäßig in Content Hub angezeigt.
+
+Führen Sie dazu die folgenden Schritte aus:
+
+1. Klicken Sie in der Benutzeroberfläche von [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Abgelaufener Assets]**.
+
+1. Aktivieren Sie im Abschnitt **[!UICONTROL Sichtbar]** den Umschalter **[!UICONTROL Zulassen, dass Benutzer abgelaufene Assets anzeigen können]** , um alle abgelaufenen Assets in Content Hub sichtbar zu machen.
+
+1. Nachdem Sie die Sichtbarkeit von Assets aktiviert haben, können Sie die Möglichkeit zum Herunterladen abgelaufener Assets mit dem Umschalter **[!UICONTROL Ermöglichen des Herunterladens abgelaufener Assets durch Benutzer]** aktivieren oder deaktivieren.
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
+
+   ![Abgelaufene Assets in Content Hub](assets/expired-assets-content-hub.png)
+
+Nachdem Sie die Sichtbarkeit von Assets aktiviert haben, können Sie die abgelaufenen Assets in Content Hub anzeigen, wie in der folgenden Abbildung dargestellt:
+
+![Abgelaufene Assets in Content Hub](assets/view-download-expired-assets.png)
+
+Wenn der Administrator den Download aktiviert hat, können die Content Hub-Benutzer ihn auch herunterladen, wie im Bild hervorgehoben.
+
+Wenn die Sichtbarkeit abgelaufener Assets aktiviert ist, werden in Content Hub auch Assets hervorgehoben, die innerhalb der nächsten 15 Tage mit der Meldung `Expiring in n days` auf der Asset-Karte ablaufen.
+
 
 ### Benutzerspezifische Links {#configure-custom-links-content-hub}
 
