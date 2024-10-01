@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 3%
+source-wordcount: '1603'
+ht-degree: 2%
 
 ---
 
@@ -40,6 +40,7 @@ Dieser Artikel ist wie folgt organisiert:
 * Protokollieren von Zielkonfigurationen - jedes Ziel hat ein etwas anderes Format
 * Protokolleintragsformate - Informationen zu den Protokolleintragsformaten
 * Erweiterte Netzwerke - Senden von AEM- und Apache/Dispatcher-Logs über eine dedizierte Ausfahrt oder über eine VPN-Verbindung
+* Migration von der bisherigen Protokollweiterleitung - Anleitung zum Wechsel von der bisherigen Protokollweiterleitung durch Adobe zum Self-Service-Ansatz
 
 
 ## Einrichtung {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## Migration von der alten Protokollweiterleitung {#legacy-migration}
+
+Bevor die Konfiguration der Protokollweiterleitung über ein Self-Service-Modell erreicht wurde, wurden die Kunden aufgefordert, Support-Tickets zu öffnen, wo Adobe die Integration starten würde.
+
+Kunden, die auf diese Weise von Adobe eingerichtet wurden, können sich gerne an das Self-Service-Modell anpassen. Es gibt mehrere Gründe für diese Umstellung:
+
+* Eine neue Umgebung (z. B. ein neues Entwicklungsumfeld oder eine neue Entwicklungsumgebung für Entwickler) wurde bereitgestellt.
+* Änderungen an Ihrem vorhandenen Splunk-Endpunkt oder Ihren Anmeldeinformationen.
+* Adobe hatte Ihre Protokollweiterleitung eingerichtet, bevor CDN-Protokolle verfügbar waren und Sie CDN-Protokolle erhalten möchten.
+* Eine bewusste Entscheidung, sich proaktiv an das Self-Service-Modell anzupassen, sodass Ihre Organisation das Wissen hat, noch bevor eine zeitkritische Änderung notwendig ist.
+
+Wenn Sie bereit zur Migration sind, konfigurieren Sie einfach die YAML-Datei wie in den vorherigen Abschnitten beschrieben. Verwenden Sie die Cloud Manager-Konfigurations-Pipeline, um sie für jede Umgebung bereitzustellen, in der die Konfiguration angewendet werden soll.
+
+Es wird empfohlen, jedoch nicht erforderlich, eine Konfiguration für alle Umgebungen bereitzustellen, damit sie alle von selbst gesteuert werden. Wenn nicht, vergessen Sie möglicherweise, welche Umgebungen von Adobe konfiguriert wurden, im Vergleich zu den auf Self-Service-Art konfigurierten Umgebungen.
+
+>[!NOTE]
+>
+>Wenn die Protokollweiterleitung in einer Umgebung bereitgestellt wird, die zuvor von der Adobe-Unterstützung konfiguriert wurde, können Sie bis zu einigen Stunden doppelte Protokolle erhalten. Dies wird schließlich automatisch aufgelöst.
 
