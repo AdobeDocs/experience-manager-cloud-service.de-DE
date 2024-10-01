@@ -1,13 +1,13 @@
 ---
 title: Verwalten von Repositorys in Cloud Manager
-description: Erfahren Sie, wie Sie Ihre GIT-Repositorys in Cloud Manager erstellen, anzeigen und löschen.
+description: Erfahren Sie, wie Sie Ihre Git-Repositorys in Cloud Manager hinzufügen, anzeigen und löschen.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 14%
+source-wordcount: '708'
+ht-degree: 20%
 
 ---
 
@@ -48,7 +48,9 @@ Weitere verfügbare Aktionen im Dropdown-Menü sind **[Repository-URL kopieren](
    ![Seite &quot;Repositorys&quot;](assets/repositories.png)
    *Die Seite &quot;Repositorys&quot;in Cloud Manager.*
 
-## Hinzufügen von Repositorys {#adding-repositories}
+## Repository hinzufügen {#adding-repositories}
+
+Ein Benutzer muss über die Rolle **Bereitstellungsmanager** oder **Business Owner** verfügen, um ein Repository hinzuzufügen.
 
 Klicken Sie auf der Seite **Repositorys** in der rechten oberen Ecke auf **Repository hinzufügen** .
 
@@ -60,11 +62,15 @@ Cloud Manager unterstützt zwei Typen von Repositorys: Adobe-verwaltete Reposito
 * [Hinzufügen von Adobe-Repositorys in Cloud Manager](adobe-repositories.md)
 * [Hinzufügen von privaten Repositorys in Cloud Manager](private-repositories.md)
 
->[!NOTE]
->
->* Ein Benutzer muss über die Rolle **Bereitstellungsmanager** oder **Business Owner** verfügen, um ein Repository hinzuzufügen.
->* Für jedes Unternehmen oder IMS-Organisation gibt es eine Grenze von 300 Repositorys über alle Programme hinweg.
+Für jedes Unternehmen oder IMS-Organisation gibt es eine Grenze von 300 Repositorys über alle Programme hinweg.
 
+## Auf Repository-Informationen zugreifen {#repo-info}
+
+Wenn Sie sich Ihre Repositorys im Fenster **Repositorys** ansehen, können Sie die Details zum programmgesteuerten Zugriff auf die von Adobe verwalteten Repositorys anzeigen, indem Sie in der Symbolleiste auf die Schaltfläche **Auf Repository-Informationen zugreifen** klicken.
+
+![Repository-Informationen](assets/repository-access-repo-info2.png)
+
+Das Fenster **Repository-Informationen** mit den Details wird geöffnet. Weitere Informationen zum Zugreifen auf Repository-Informationen finden Sie unter [Zugriff auf Repository-Informationen](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 ## Verzweigungen überprüfen/Projekt erstellen {#check-branches}
 
@@ -91,7 +97,7 @@ Die Aktion **Löschen** entfernt das Repository aus Ihrem Projekt. Ein Repositor
 
 ![Löschen](assets/repository-delete.png)
 
-Durch das Löschen eines Repositorys wird sein Name für alle zukünftigen Repositorys unbrauchbar. Wenn Sie versuchen, denselben Namen zu verwenden, wird die folgende Fehlermeldung angezeigt:
+Durch das Löschen eines Repositorys wird sein Name für alle zukünftigen Repositorys unbrauchbar. Wenn Sie versuchen, ein Repository mit demselben Namen wie ein gelöschtes Repository hinzuzufügen, wird die folgende Fehlermeldung angezeigt:
 
 `Repository name should be unique within organization.`
 

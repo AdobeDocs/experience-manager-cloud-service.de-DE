@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ Die Funktion **Zugriff auf Repo Info** ist für Benutzer mit den Rollen **Entwic
 
    ![Zugriff auf Repo Info auf Pipelines-Karte](assets/pipelines-card.png)
 
-1. Um auf das Kennwort zugreifen zu können, muss ein neues Kennwort generiert werden. Klicken Sie im Dialogfeld &quot;Repository Info&quot;auf **`Generate password`**.
+1. Um auf das Kennwort zugreifen zu können, muss ein neues Kennwort generiert werden. Wählen Sie im Dialogfeld **Repository Info** die Option **Kennwort generieren**.
 
-1. Klicken Sie im Bestätigungsdialogfeld auf **`Generate password`**.
+1. Wählen Sie im Bestätigungsdialogfeld **Kennwort generieren** aus.
 
    ![Kennwortgenerierung bestätigen](assets/confirm-generated-password.png)
 
