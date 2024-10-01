@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Es könnte aus folgenden Gründen erforderlich sein, dass Sie die Konfiguration 
 
 1. Klicken Sie oben links auf der Seite auf das Hamburgersymbol, damit das linke Navigationsmenü angezeigt wird.
 1. Klicken Sie unter der Überschrift **Services** auf **CDN-Konfigurationen**.
-1. Klicken Sie auf der Seite **CDN-Konfigurationen** am Ende einer Zeile, deren CDN Sie bearbeiten möchten, auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) .
+1. Klicken Sie auf der Seite **CDN-Konfigurationen** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren CDN Sie bearbeiten möchten.
 1. Klicken Sie auf **Bearbeiten**.
 1. Gehen Sie im Dialogfeld **CDN-Konfiguration bearbeiten** wie folgt vor:
-   * Wählen Sie in der Dropdownliste **Ebene** die Ebene (Publish oder Vorschau) aus, die Sie verwenden möchten.
-   * Wählen Sie in der Dropdownliste **SSL-Zertifikat** das SSL-Zertifikat aus, das Sie verwenden möchten.
+   * Wählen Sie aus der Dropdown-Liste **Ebene** die Ebene (Veröffentlichung oder Vorschau) aus, die Sie verwenden möchten.
+   * Wählen Sie in der Dropdown-Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das Sie verwenden möchten.
 1. Klicken Sie auf **Aktualisieren**.
 
 

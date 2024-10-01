@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -35,19 +35,19 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
-1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Seitenmenü einzublenden.
-1. Klicken Sie unter der Überschrift **Dienste** auf das Symbol ![Schließendes Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
+1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das Seitenmenü anzuzeigen.
+1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 
    ![Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. Klicken Sie in der rechten oberen Ecke der Seite &quot;SSL-Zertifikate&quot;auf **SSL-Zertifikat hinzufügen**.
+1. Klicken Sie oben rechts auf der Seite „SSL-Zertifikate“ auf **SSL-Zertifikat hinzufügen**.
 
 1. Führen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** basierend auf dem [vorliegenden Anwendungsfall](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) einen der folgenden Schritte aus:
 
    | | Anwendungsfall | Schritte |
    | --- | --- | --- |
-   | 1 | **Hinzufügen eines von Adobe verwalteten Zertifikats (DV)** | **So fügen Sie ein Adobe Managed (DV)-Zertifikat hinzu:**<br> a. Wählen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** den Zertifikatstyp **Adobe managed (DV)** aus.<br>![Hinzufügen eines DV-Zertifikats](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Geben Sie im Feld **Zertifikatname** einen Namen ein, der dem Zertifikat zugeordnet werden soll.<br>c. Wählen Sie in der Dropdown-Liste **Domains auswählen** eine oder mehrere Domains aus, die dem DV-Zertifikat zugeordnet werden sollen.<br>Keine Domains auswählbar? Ist dies der Fall, müssen Sie eine benutzerdefinierte Domain hinzufügen. Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Nachdem Sie einen benutzerdefinierten Domain-Namen hinzugefügt haben, kehren Sie zu diesem Thema zurück und beginnen Sie erneut mit Schritt 1.<br>d. Fahren Sie mit Schritt 7 fort. |
-   | 2 | **Zertifikat eines vom Kunden verwalteten (OV/EV) hinzufügen** | **Hinzufügen eines kundenverwalteten Zertifikats (OV/EV):**<br> a. Wählen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** den Zertifikatstyp **Vom Kunden verwaltet (OV/EV)** aus.<br>b. Geben Sie in das Feld **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dieses Feld dient nur zu Informationszwecken, und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.<br>c. Fügen Sie in die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** die erforderlichen Werte ein.<br>![Dialogfeld „SSL-Zertifikat hinzufügen“](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Alle erkannten Fehler in den Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).<br>d. Fahren Sie mit Schritt 7 fort. |
+   | 1 | **Hinzufügen eines von Adobe verwalteten Zertifikats (DV)** | **So fügen Sie ein von Adobe verwaltetes Zertifikat (DV) hinzu:**<br> a. Wählen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** für den Zertifikatstyp die Option **Von Adobe verwaltet (DV)** aus.<br>![Hinzufügen eines DV-Zertifikats](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Geben Sie im Feld **Zertifikatname** einen Namen ein, der dem Zertifikat zugeordnet werden soll.<br>c. Wählen Sie in der Dropdown-Liste **Domains auswählen** eine oder mehrere Domains aus, die dem DV-Zertifikat zugeordnet werden sollen.<br>Keine Domains auswählbar? Ist dies der Fall, müssen Sie eine benutzerdefinierte Domain hinzufügen. Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Nachdem Sie einen benutzerdefinierten Domain-Namen hinzugefügt haben, kehren Sie zu diesem Thema zurück und beginnen Sie erneut mit Schritt 1.<br>d. Fahren Sie mit Schritt 7 fort. |
+   | 2 | **Hinzufügen eines kundenseitig verwalteten Zertifikats (OV/EV)** | **So fügen Sie ein kundenseitig verwaltetes Zertifikats (OV/EV) hinzu:**<br> a. Wählen Sie im Dialogfeld **SSL-Zertifikat hinzufügen** als Zertifikatstyp die Option **Kundenseitig verwaltet (OV/EV)** aus.<br>b. Geben Sie in das Feld **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dieses Feld dient nur zu Informationszwecken, und der Name kann so gewählt werden, dass Sie Ihr Zertifikat leicht finden können.<br>c. Fügen Sie in die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** die erforderlichen Werte ein.<br>![Dialogfeld „SSL-Zertifikat hinzufügen“](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Alle erkannten Fehler in den Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).<br>d. Fahren Sie mit Schritt 7 fort. |
 
 <!--
     **Add an SSL certificate:**
