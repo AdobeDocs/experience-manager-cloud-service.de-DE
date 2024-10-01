@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
 source-wordcount: '1374'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="Konfigurieren der Benutzeroberfläche von Content Hub"
->abstract="Mit Experience Manager Assets können Administratoren die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Je nach den Konfigurationsoptionen, die von den Administratoren ausgewählt wurden, können Benutzer von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören Metadaten beim Importieren von Assets, Filtern, Asset-Eigenschaften, Metadaten bei der Suche nach Assets, personalisiertes Branding und benutzerspezifische Links."
+>abstract="Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Abhängig von den Konfigurationsoptionen, die von den Admins ausgewählt wurden, können Benutzende von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören Metadaten beim Importieren von Assets, Filter, Asset-Eigenschaften, Metadaten bei der Suche nach Assets, personalisiertes Branding und benutzerspezifische Links."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Konfigurieren von Assets in Content Hub](assets/configure-assets.png)
 
-Mit Experience Manager Assets können Administratoren die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Je nach den Konfigurationsoptionen, die von den Administratoren ausgewählt wurden, können Benutzer von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören:
+Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Abhängig von den Konfigurationsoptionen, die von den Admins ausgewählt wurden, können Benutzende von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören:
 
 * Für Benutzer bei der Suche nach Assets verfügbare Filter.
 
