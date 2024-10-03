@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '1110'
-ht-degree: 100%
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Sie können die Details der Ausführung sehen, indem Sie erneut auf die Schaltfl
 
 Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, indem Sie erneut auf die Schaltfläche mit den Auslassungspunkten klicken und **Abbrechen** auswählen.
 
-## Bearbeiten von Pipelines {#editing-pipelines}
+## Pipeline bearbeiten {#editing-pipelines}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 

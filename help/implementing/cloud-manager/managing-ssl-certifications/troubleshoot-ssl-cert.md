@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Fehler bei SSL-Zertifikaten beheben können, 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 87%
 
 ---
 
@@ -15,6 +15,18 @@ ht-degree: 100%
 # Fehlerbehebung bei SSL-Zertifikatfehlern {#certificate-errors}
 
 Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß installiert ist oder nicht die Anforderungen von Cloud Manager erfüllt.
+
++++**Ungültiges Zertifikat**
+
+Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel hinzugefügt und einen DER formatierten privaten Schlüssel verwendet hat.
+
++++
+
++++**Der private Schlüssel muss das PKCS 8-Format aufweisen**
+
+Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel hinzugefügt und einen DER formatierten privaten Schlüssel verwendet hat.
+
++++
 
 +++**Richtige Zertifikatreihenfolge**
 

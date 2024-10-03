@@ -1,20 +1,20 @@
 ---
-title: Konfigurieren von Produktions-Pipelines
-description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
+title: Hinzufügen einer Produktions-Pipeline
+description: Erfahren Sie, wie Sie eine Produktions-Pipeline hinzufügen, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: ht
-source-wordcount: '1374'
-ht-degree: 100%
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+workflow-type: tm+mt
+source-wordcount: '1376'
+ht-degree: 98%
 
 ---
 
 
-# Konfigurieren einer Produktions-Pipeline {#configure-production-pipeline}
+# Hinzufügen einer Produktions-Pipeline {#configure-production-pipeline}
 
 Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen. Eine Produktions-Pipeline stellt Code zuerst in der Staging-Umgebung bereit. Nach der Genehmigung wird derselbe Code in der Produktionsumgebung bereitgestellt.
 
