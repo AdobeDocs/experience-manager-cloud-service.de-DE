@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 99%
+source-wordcount: '1339'
+ht-degree: 95%
 
 ---
 
@@ -91,7 +91,14 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
-            
+      - name: set-header-with-reqproperty-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: {reqProperty: path}           
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -146,9 +153,9 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty oder reqHeader oder queryParam oder reqCookie), Wert | Legt einen angegebenen Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder einen Anfrage-Header, Abfrageparameter oder Cookie auf einen bestimmten Wert fest. |
+| **set** | (reqProperty oder reqHeader oder queryParam oder reqCookie), Wert | Legt einen angegebenen Anforderungsparameter (nur unterstützte Eigenschaft &quot;path&quot;) oder einen Anforderungsheader, Abfrageparameter oder Cookie auf einen bestimmten Wert fest, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
 |     | var, Wert | Legt einen bestimmten Anfrageparameter auf einen angegebenen Wert fest. |
-| **unset** | reqProperty | Entfernt einen angegebenen Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder einen Anfrage-Header, Abfrageparameter oder Cookie auf einen bestimmten Wert. |
+| **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (nur unterstützte &quot;path&quot;-Eigenschaft) oder einen Anforderungsheader, Abfrageparameter oder Cookie für einen bestimmten Wert, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
 |         | var | Entfernt eine angegebene Variable. |
 |         | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
 | **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie), Übereinstimmung, Ersatz | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies durch einen neuen Wert. |
