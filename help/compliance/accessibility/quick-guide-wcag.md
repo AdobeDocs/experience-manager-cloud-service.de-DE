@@ -4,10 +4,10 @@ description: Kurzanleitung zu den Web Content Accessibility Guidelines (WCAG), V
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 100%
+source-wordcount: '1749'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,9 @@ Die [Web Content Accessibility Guidelines (WCAG), Version 2.1](https://www.w3.o
 
 >[!NOTE]
 >
->Eine [aktualisierte Version der Richtlinien (WCAG 2.2)](https://www.w3.org/TR/WCAG22/) befindet sich derzeit in der Entwicklung, wird aber noch nicht berücksichtigt.
+>Da diese Dokumente in der [aktualisierten Version der Richtlinien geschrieben wurden, wurde WCAG 2.2](https://www.w3.org/TR/WCAG/) im Oktober 2023 zur Verfügung gestellt.
+>
+>Siehe [Vergleich mit WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) und [Neue Funktionen in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autoren, Designer und Entwickler von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Hörverlust, Lernschwächen, altersbedingte Einschränkungen u. Ä.
 
