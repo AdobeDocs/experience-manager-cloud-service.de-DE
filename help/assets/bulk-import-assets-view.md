@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Assets mit der neuen Assets-Benutzeroberfläc
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1881'
+ht-degree: 93%
 
 ---
 
@@ -125,11 +125,23 @@ Führen Sie die folgenden Schritte aus, um in [!DNL Experience Manager Assets] 
    >* Wenn Sie beim Erstellen der Dropbox-Anwendung die Option **Vollständige Dropbox** wählen und der Ordner mit den Assets in `https://www.dropbox.com/home/bulkimport-assets` vorhanden ist, geben Sie `bulkimport-assets` in das Feld **[!UICONTROL Quellordner]** ein.
    >* Wenn Sie beim Erstellen der Dropbox-Anwendung die Option **App-Ordner** wählen und der Ordner mit den Assets in `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets` vorhanden ist, geben Sie `bulkimport-assets` in das Feld **[!UICONTROL Quellordner]** ein, wobei sich `BulkImportAppFolderScope` auf den Namen der Anwendung bezieht. `Apps` wird in diesem Fall automatisch hinter `home` eingefügt.
 
+   >[!NOTE]
+   >
+   >Wenn Sie OneDrive als Datenquelle verwenden, geben Sie den Quellordnerpfad anhand der folgenden Regeln an:
+   >* Geben Sie nur den Namen des Stammordners ohne Domäne an. Wenn der vollständige URL-Pfad des Ordners `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/` ist, geben Sie im Feld **[!UICONTROL Source-Ordner]** den Wert `/Importfolder/` an.
+   >* Wenn der Ordnername mehrere Wörter enthält, die durch Leerzeichen getrennt sind, geben Sie den Namen mit den Leerzeichen in der Konfiguration Massenimport an.
+   >* Der Quellordner muss sich im Stammverzeichnis befinden. Ordnerpfade werden nicht unterstützt.
+
 1. (Optional) Wählen Sie die Option **[!UICONTROL Quelldatei nach Import löschen]** aus, um die Originaldateien aus dem Quelldatenspeicher zu löschen, nachdem die Dateien in Experience Manager Assets importiert wurden.
 1. Wählen Sie den **[!UICONTROL Importmodus]**. Wählen Sie **[!UICONTROL Überspringen]**, **[!UICONTROL Ersetzen]** oder **[!UICONTROL Version erstellen]**. Der Modus „Überspringen“ ist der Standardmodus. In diesem Modus überspringt das Aufnahme-Tool den Import eines Assets, wenn es bereits vorhanden ist.
    ![Importieren von Quelldetails](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Optional) Geben Sie im Feld **[!UICONTROL Metadatendatei]** die zu importierende Metadatendatei im CSV-Format an. Die Metadaten-Quelldatei muss sich im Quellordner befinden. Klicken Sie auf **[!UICONTROL Weiter]**, um zu **[!UICONTROL Speicherort und Filter]** zu navigieren.
+
+   >[!NOTE]
+   >
+   >Abhängig von den Sicherheitsregeln Ihres Unternehmens benötigen Sie möglicherweise eine Zustimmung des Administrators, damit diese Anwendung eine Verbindung zum Bulk Import-Tool herstellen kann. Ist dies erforderlich, muss der Administrator die Zustimmung erteilen, bevor die Massenimportkonfiguration gespeichert werden kann.
+
 1. Um einen Speicherort in DAM zu definieren, in den Assets importiert werden sollen, geben Sie im Feld **[!UICONTROL Zielordner für Assets]** einen Pfad an. Zum Beispiel: `/content/dam/imported_assets`.
 1. (Optional) Geben Sie im Abschnitt **[!UICONTROL Filter wählen]** im Feld **[!UICONTROL Filtern nach Mindestgröße]** die minimale Dateigröße der Assets in MB an, die in den Aufnahmeprozess einbezogen werden sollen.
 1. (Optional) Geben Sie im Feld **[!UICONTROL Filtern nach max. Größe]** die maximale Dateigröße der Assets in MB an, die in den Aufnahmeprozess einbezogen werden sollen.
