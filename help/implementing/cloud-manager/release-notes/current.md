@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2024.10.0 in Adobe Experience Manager
 description: Erfahren Sie mehr über die Versionshinweise für Cloud Manager 2024.10.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 15%
+source-wordcount: '569'
+ht-degree: 13%
 
 ---
 
@@ -29,6 +29,16 @@ Die nächste Version ist für den Freitag, 14. November 2024 geplant.
 * <!-- BOTH CS & AMS --> Die in Cloud Manager verwendete AEM Archetyp-Version wird jetzt auf Version 26 aktualisiert. Siehe [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> Beim Hinzufügen einer neuen benutzerdefinierten Domäne umfasste die vorherige Überprüfungsmethode einen langwierigen DNS-Validierungsprozess. Adobe hat diesen Prozess für Kunden vereinfacht. Jetzt müssen Sie nur noch ein gültiges SSL-Zertifikat (EV oder OV) bereitstellen, das als Eigentumsnachweis dient. Es ist nicht mehr erforderlich, TXT-Einträge im DNS zu aktualisieren.
+
+  >[!NOTE]
+  >
+  >Diese Funktion gilt nur für vom Kunden verwaltete EV- und OV-Zertifikate. Von Adobe verwaltete DV-Zertifikate erfordern weiterhin einen CNAME-Eintrag.
+
+  Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+  ![Verifizierung der Domäne für ein kundenverwaltetes E/V-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> Beim Hinzufügen oder Bearbeiten einer Netzwerkinfrastruktur werden die Werte in den Feldern IP-Adresse und Netzwerkmaske anhand der folgenden Regeln validiert:
 
@@ -66,7 +76,7 @@ Die Funktion **Eigenes Git holen** wurde erweitert und unterstützt jetzt auch e
 
 Siehe [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-![Dialogfeld &quot;Repository hinzufügen&quot;](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![Dialogfeld „Repository hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >

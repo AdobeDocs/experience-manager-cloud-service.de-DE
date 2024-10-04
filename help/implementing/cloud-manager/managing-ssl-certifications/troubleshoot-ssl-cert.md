@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Fehler bei SSL-Zertifikaten beheben können, 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 87%
@@ -18,13 +18,13 @@ Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß in
 
 +++**Ungültiges Zertifikat**
 
-Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel hinzugefügt und einen DER formatierten privaten Schlüssel verwendet hat.
+Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel verwendet und den Schlüssel im DER-Format bereitgestellt hat.
 
 +++
 
 +++**Der private Schlüssel muss das PKCS 8-Format aufweisen**
 
-Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel hinzugefügt und einen DER formatierten privaten Schlüssel verwendet hat.
+Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel verwendet und den Schlüssel im DER-Format bereitgestellt hat.
 
 +++
 
