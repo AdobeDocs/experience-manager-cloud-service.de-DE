@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
-workflow-type: ht
-source-wordcount: '1950'
-ht-degree: 100%
+source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+workflow-type: tm+mt
+source-wordcount: '1534'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +100,6 @@ Sie können auf die vollständigen Prüfergebnisse zugreifen, indem Sie im Cloud
 >* Weitere Informationen zur Funktionsweise der Prüfung finden Sie unter [Auswertungsdetails beim Erlebnis-Audit](#details).
 >* Informationen zum Ausführen eines Erlebnis-Audits nach Bedarf finden Sie unter [On-Demand-Auditberichte](#on-demand).
 >* Wenn beim Audit Probleme auftreten, lesen Sie [Beim Erlebnis-Audit treten Probleme auf](#issues).
->* Allgemeine Tipps zur Leistung finden Sie unter [Allgemeine Tipps zur Leistung](#performance-tips).
 
 ### Anzeigen der langsamsten Seiten {#view-slowest-pages}
 
@@ -155,38 +154,11 @@ Wenn Sie auf einen bestimmten Zeitpunkt im Diagramm klicken, wird ein Popup mit 
 
 #### Ergebnisse des Erlebnis-Audit-Scans {#scan-results}
 
-Im Abschnitt **Ergebnisse des Erlebnis-Audit-Scans** finden Sie Empfehlungen dazu, wie Sie Ihre Bewertung und Details aller gescannten Seiten verbessern können. Er ist in zwei Abschnitte unterteilt:
-
-* **[Empfehlungen](#recommendations)**
-* **[Gescannte Seiten](#scanned-pages)**
-
-##### Empfehlungen {#recommendations}
-
-Der Abschnitt **Empfehlungen** zeigt einen aggregierten Satz von Einblicken. Standardmäßig werden Empfehlungen für **Leistung** angezeigt. Verwenden Sie das Dropdown-Menü neben der Überschrift **Empfehlungen**, um zu einer anderen Kategorie zu wechseln.
-
-![Empfehlungen](assets/experience-audit-recommendations.png)
-
-Klicken Sie auf eine beliebige Empfehlung, um Details dazu anzuzeigen.
-
-![Empfehlungsdetails](assets/experience-audit-recommendations-details.png)
-
-Sofern verfügbar, enthalten die erweiterten Empfehlungsdetails auch den Prozentsatz der Auswirkungen der Empfehlungen, damit Sie sich auf die wirkungsvollsten Änderungen konzentrieren können. Darüber hinaus können erweiterte Empfehlungen relevante Links zur AEM-Dokumentation und Tipps enthalten, die Sie durch die Implementierung der vorgeschlagenen Fehlerbehebungen führen können.
-
-Klicken Sie auf den Link **Seiten anzeigen** in der Detailansicht, um die Seiten anzuzeigen, für die die Empfehlung gilt.
-
-![Seiten für die Empfehlungsdetails](assets/experience-audit-details-pages.png)
-
-##### Gescannte Seiten {#scanned-pages}
-
-Der Abschnitt **Gescannte Seiten** enthält Detailbewertungen für alle gescannten Seiten. Sie können die Ergebnisse mithilfe der Schaltflächen **Zurück** und **Weiter** durchblättern und festlegen, wie viele die Anzeige paginieren soll.
+Im Abschnitt **Ergebnisse der Erlebnisprüfung** finden Sie Details zu Bewertungen auf allen geprüften Seiten. Sie können die Ergebnisse mithilfe der Schaltflächen **Zurück** und **Weiter** durchblättern und festlegen, wie viele die Anzeige paginieren soll.
 
 ![Gescannte Seiten](assets/experience-audit-scanned-pages.png)
 
-Durch Klicken auf den Link einer bestimmten Seite wird der Filter **Auswählen** des Abschnitts [**Seitenbewertungen – Trend** ](#trend)aktualisiert und die Registerkarte **Bewertungen und Empfehlungen** für die ausgewählte Seite angezeigt.
-
-![Seitenergebnisse](assets/experience-audit-page-results.png)
-
-Die Registerkarte **Rohberichte** gibt Bewertungen für jede Prüfung der Seite an. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
+Klicken Sie auf den Link einer bestimmten Seite, um den Filter **Auswählen** des Bereichs [**Seitenergebnisse — Trend** ](#trend) zu aktualisieren. Der Tab **Rohberichte** zeigt Ihnen Werte für jede Prüfung der Seite. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
 
 ![Rohberichte](assets/experience-audit-raw-reports.png)
 
@@ -239,20 +211,7 @@ Die Seiten können beispielsweise aus folgenden Gründen nicht verfügbar sein:
 
 >[!TIP]
 >
->Indem Sie die [Rohberichte für eine Seite aufrufen](#scanned-pages), können Sie Einzelheiten darüber erfahren, warum die Seite nicht geprüft werden konnte.
-
-## Allgemeine Tipps zur Leistung {#performance-tips}
-
-Zwei der am häufigsten auftretenden Probleme, die einfach zu beheben sind, beziehen sich auf die Metriken „Cumulative Layout Shifts (CLS)“ und „Largest Contentful Paint (LCP)“.
-
-Sie können diese Bereiche verbessern, indem Sie folgende Schritte ausführen:
-
-* Kein verzögertes Laden der Bilder über der Falz – das ist der Inhalt, der im Browser sichtbar ist, ohne nach unten scrollen zu müssen.
-* Ordnungsgemäßes Priorisieren der Art und Weise, wie Ressourcen geladen werden (z. B. durch asynchrones Laden der Bilder unterhalb der Falz, nachdem das Dokument geladen wurde).
-* Vorabrufen von JavaScript- und CSS-Dateien, die verwendet werden, um Inhalte über der Falz zu rendern (falls erforderlich).
-* Reservieren des vertikalen Bereichs durch Zuweisen eines Seitenverhältnisses zu Containern, die entweder langsam geladen oder später gerendert werden.
-* Konvertieren der Bilder in das WebP-Format, um ihre Größe zu reduzieren.
-* Verwenden von `<picture>` und Bild-`srcset` mit unterschiedlichen Bildgrößen für verschiedene Viewport-Größen (und Sicherstellen, dass die Größenanpassung funktioniert).
+>Indem Sie die [Rohberichte für eine Seite aufrufen](#scan-results), können Sie Einzelheiten darüber erfahren, warum die Seite nicht geprüft werden konnte.
 
 ## Auswertungsdetails beim Erlebnis-Audit {#details}
 
@@ -261,7 +220,3 @@ Die folgenden Details liefern zusätzliche Informationen darüber, wie Ihre Site
 * Der Audit scannt die Ursprungs-Domain (`.com`), wie sie in den [konfigurierten Pfaden der Erlebnis-Audit-Seite](#configuration) des Herausgebers definiert ist, um reale Benutzererlebnisse zu simulieren und Ihnen dabei zu helfen, bessere Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
 * In Produktions-Full-Stack-Pipelines wird die Staging-Umgebung gescannt. Um sicherzustellen, dass der Audit während des Auditings relevante Details liefert, sollte der Inhalt der Staging-Umgebung dem der Produktionsumgebung so weit wie möglich entsprechen.
 * Die Seiten, die im Abschnitt [**Seitenbewertungen – Trend**](#trend) in der Dropdown-Liste **Auswählen** angezeigt werden, sind alle bekannten Seiten, die in der Vergangenheit durch den Erlebnis-Audit gescannt wurden.
-* [Eine Empfehlung](#recommendations) kann einen potenziellen Gewinn und einen Unterschied zum vorherigen Scan aufweisen.
-* Der Erlebnis-Audit schätzt potenzielle Verbesserungen, indem der Rohbericht für jede Seite verarbeitet wird. Er fasst verschwendete Bytes oder Millisekunden mit Erkenntnissen zusammen, wodurch eine gewichtete Auswirkung auf den Performance-Wert zugewiesen wird. Der Audit enthält diese Informationen sowie die betroffenen Seiten, um zu entscheiden, welcher Empfehlung nachgegangen werden soll.
-Weitere Informationen finden Sie im Abschnitt [Allgemeine Tipps zur Leistung](#performance-tips) .
-* Eine Frontend-Pipeline kann in einer vorhandenen Umgebung bereitgestellt werden und mehrere Frontend-Pipelines können für dieselbe Umgebung genutzt werden. Da die Scan-Ergebnisse auf Umgebungsebene aggregiert werden, sind die Bewertungen, Trends und Empfehlungen konsistent. Diese Ergebnisse werden in der ausgewählten Umgebung angezeigt, unabhängig davon, welche Pipeline den Scan ausgelöst hat.
