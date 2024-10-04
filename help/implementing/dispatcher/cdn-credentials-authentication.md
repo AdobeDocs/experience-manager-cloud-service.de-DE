@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 83efc7298bc8d211d1014e8d8be412c6826520b8
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -184,12 +184,12 @@ Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter
 
 Darüber hinaus enthält die Syntax Folgendes:
 
-* einen `data` -Knoten, der einen `authentication` -Knoten enthält.
+* ein `data`-Knoten, der einen `authentication`-Knoten enthält.
 * Unter `authentication`, einen Knoten `authenticators` und einen Knoten`rules`, die beide Arrays sind.
 * Authentifizierer: Deklarieren Sie in diesem Szenario einen einfachen Authentifizierer mit der folgenden Struktur:
    * name – eine beschreibende Zeichenfolge
    * type – muss `basic` sein.
-   * ein Array mit bis zu 10 Anmeldeinformationen, von denen jede die folgenden Name/Wert-Paare enthält, die Endbenutzer im grundlegenden Authentifizierungsdialogfeld eingeben können:
+   * ein Array von bis zu 10 Anmeldeinformationen, die jeweils die folgenden Name/Wert-Paare enthalten, die Endbenutzende im Dialogfeld der einfachen Authentifizierung eingeben können:
       * user – der Name der Benutzerin oder des Benutzers
       * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ ](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet und welche Ressourcen geschützt werden sollen. Jede Regel umfasst:

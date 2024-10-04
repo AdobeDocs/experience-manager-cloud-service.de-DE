@@ -18,7 +18,7 @@ AEM as a Cloud Service bietet eine Reihe von Funktionen, die auf der Ebene [Adob
 
 * [Anforderungsumwandlungen](#request-transformations) – Änderung von Aspekten eingehender Anfragen, einschließlich Kopfzeilen, Pfaden und Parametern.
 * [Reaktionsumwandlungen](#response-transformations) – Änderung von Kopfzeilen, die sich auf dem Weg zurück zum Client befinden (z. B. einen Webbrowser).
-* [Client-seitige Umleitungen](#client-side-redirectors) - Trigger einer Browserumleitung.
+* [Client-seitige Umleitungen](#client-side-redirectors) – Auslösen einer Browser-Umleitung.
 * [Ursprungs-Auswahlen](#origin-selectors) – Proxy zu einem anderen Ursprungs-Backend.
 
 Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF), die steuern, welcher Traffic vom CDN erlaubt oder verweigert wird. Diese Funktion wurde bereits veröffentlicht. Weitere Informationen dazu finden Sie auf der Seite [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).

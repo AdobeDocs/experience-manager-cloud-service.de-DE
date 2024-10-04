@@ -235,7 +235,7 @@ ht-degree: 99%
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
       + [Checkliste für die Live-Schaltung](/help/journey-onboarding/go-live-checklist.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
-      + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
+      + [Überblick](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
       + [Erstellen eines Programms](/help/journey-sites/demos-add-on/create-program.md)
       + [Erstellen einer Demo-Site](/help/journey-sites/demos-add-on/create-site.md)
@@ -262,7 +262,7 @@ ht-degree: 99%
    + [Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Einführung zu Cloud Acceleration Manager {#introduction-cam}
-         + [Übersicht](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [Überblick](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [Vorteile](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Verwenden von Cloud Acceleration Manager {#using-cam}
          + [Erste Schritte mit Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -271,13 +271,13 @@ ht-degree: 99%
          + [Live-Schaltungs-Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Cloud-Umstellungs-Tools {#cloud-migration}
       + Best Practices Analyzer {#best-practices-analyzer}
-         + [Übersicht](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [Überblick](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Content Transformer {#content-transformer}
-         + [Übersicht](/help/journey-migration/content-transformer/overview.md)
+         + [Überblick](/help/journey-migration/content-transformer/overview.md)
          + [Verwenden des Content Transformers](/help/journey-migration/content-transformer/using.md)
       + Content Transfer Tool {#content-transfer-tool}
-         + [Übersicht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [Überblick](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -294,7 +294,7 @@ ht-degree: 99%
          + [Verwalten von Prinzipalen nach der Migration](/help/journey-migration/managing-principals-after-migration.md)
          + [Fehlerbehebung im Content Transfer Tool  ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Legacy-Tool für die Benutzerzuordnung (veraltete Version){#legacy-user-mapping-tool}
-            + [Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Überblick](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Code-Refaktorierungs-Tools {#refactoring-tools}
@@ -598,7 +598,7 @@ ht-degree: 99%
       + [Einstellung von Flash Viewer](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einstellung von DHTML Viewer](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
       + Dynamic Media mit OpenAPI-Funktionen {#dynamic-media-open-apis}
-         + [Übersicht](/help/assets/dynamic-media-open-apis-overview.md)
+         + [Überblick](/help/assets/dynamic-media-open-apis-overview.md)
          + [Genehmigen von Assets](/help/assets/approve-assets.md)
          + [Integration mit nachgelagerten Anwendungen](/help/assets/integrate-dynamic-media-open-apis.md)
          + [API zum Durchsuchen von Assets](/help/assets/search-assets-api.md)
@@ -629,7 +629,7 @@ ht-degree: 99%
       + [Inhaltsurhebernachweise](/help/assets/content-credentials.md)
       + [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
    + Content Hub {#content-hub}
-      + [Übersicht](/help/assets/product-overview.md)
+      + [Überblick](/help/assets/product-overview.md)
       + [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md)
       + [Hochladen oder Importieren der von Marken genehmigten Assets in Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [Konfigurieren der Benutzeroberfläche von Content Hub](/help/assets/configure-content-hub-ui-options.md)
@@ -960,7 +960,7 @@ ht-degree: 99%
       + [Fastly-Einrichtung](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Umleitungen](/help/edge/docs/redirects.md)
    + Erstellen von Formularen {#build-forms}
-      + [Übersicht](/help/edge/docs/forms/overview.md)
+      + [Überblick](/help/edge/docs/forms/overview.md)
       + Erste Schritte {#getting-started-edge-delivery-services-forms}
          + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
          + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -1108,7 +1108,7 @@ ht-degree: 99%
          + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Bereitstellen Ihres Codes](/help/implementing/cloud-manager/deploy-code.md)
       + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-         + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
+         + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
          + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Qualitätsregeln für benutzerspezifischen Code](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Funktionstests {#functional-testing}

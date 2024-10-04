@@ -2,7 +2,7 @@
 source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 # Snippets {#snippets}
@@ -156,7 +156,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden bzw. verwenden möchten, muss zuvor die Cloud Manager-IP-Zulassungsliste hinzugefügt werden.
 >Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
-## IP-Zulassungslisten und der Universal Editor {#ip-allow-lists-ue}
+## IP-Zulassungslisten und der universelle Editor {#ip-allow-lists-ue}
 
 >[!IMPORTANT]
 >
@@ -164,11 +164,11 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >
 >Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert sein.
 
-## Universelle Editor- und IP-Zulassungslisten {#ue-ip-allow-lists}
+## Universeller Editor und IP-Zulassungslisten {#ue-ip-allow-lists}
 
 >[!IMPORTANT]
 >
->Der universelle Editor ist nicht mit [IP-Zulassungslisten kompatibel.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Der universelle Editor ist nicht mit [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) kompatibel.
 >
 >Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert werden.
 
