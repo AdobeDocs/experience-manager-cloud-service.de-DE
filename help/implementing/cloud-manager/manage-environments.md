@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '2375'
-ht-degree: 100%
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 98%
 
 ---
 
@@ -50,13 +50,13 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin od
 
    ![Karte „Umgebung“](assets/no-environments.png)
 
-   * Die Option **Umgebung hinzufügen** ist auch auf der Registerkarte **Umgebungen** verfügbar.
+   * Die Option **Umgebung hinzufügen** ist auch auf der Registerkarte ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen** verfügbar.
 
      ![Registerkarte Umgebungen](assets/environments-tab.png)
 
    * Die Option **Umgebung hinzufügen** kann aufgrund fehlender Berechtigungen oder abhängig von den lizenzierten Ressourcen deaktiviert werden.
 
-1. Im Dialogfeld **Umgebung hinzufügen** wird Folgendes angezeigt:
+1. Im Dialogfeld **Umgebung hinzufügen** :
 
    * Wählen Sie einen [**Umgebungstyp**](#environment-types).
       * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
@@ -219,7 +219,7 @@ Aktualisierungen von Umgebungen in Sandbox-Programmen werden jedoch innerhalb de
 
 ![Aktualisierungsstatus der Umgebung](assets/environ-update.png)
 
-### Updates und Pipelines {#updates-pipelines}
+### Aktualisierungen und Pipelines {#updates-pipelines}
 
 Pipelines sind der einzige Weg, [Code in den Umgebungen von AEM as a Cloud Service bereitzustellen](deploy-code.md). Aus diesem Grund ist jede Pipeline mit einer bestimmten AEM-Version verknüpft.
 
@@ -310,7 +310,7 @@ Benutzerdefinierte Domain-Namen werden in Programmen von Cloud Manager for Sites
 
 >[!TIP]
 >
->Weitere Informationen finden Sie in der [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Weitere Informationen finden Sie unter [Einführung in benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 

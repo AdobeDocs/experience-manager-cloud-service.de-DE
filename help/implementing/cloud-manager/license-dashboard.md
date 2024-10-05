@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '923'
-ht-degree: 100%
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 92%
 
 ---
 
@@ -21,18 +21,13 @@ Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigun
 >
 >Das Lizenz-Dashboard gilt nur für AEM as a Cloud Service-Programme. [AMS-Programme](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/introduction) sind nicht im Lizenz-Dashboard enthalten.
 >
->Informationen zum Ermitteln des Diensttyps Ihres Programms (AMS oder AEMaaCS) finden Sie im Dokument [Navigieren auf der Benutzeroberfläche von Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Informationen zum Festlegen des Diensttyps für Ihr Programm (AMS oder AEMaaCS) finden Sie unter [Navigieren in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Übersicht {#overview}
 
-Das Lizenz-Dashboard von Cloud Manager bietet einfachen Zugriff auf folgende Informationen:
+Das Cloud Manager License Dashboard bietet einfachen Zugriff auf Lösungsberechtigungen, die für alle Ihre Programme verfügbar sind, einschließlich der verwendeten und verfügbaren Elemente. Außerdem wurden die Konsummetriken für Inhaltsanforderungen pro Monat für die Sites-Lösung angezeigt.
 
-1. Berechtigungen für Lösungen stehen Ihnen für alle Ihre Programme zur Verfügung, einschließlich verwendeter und verfügbarer Lösungen
-1. Verbrauchsmetriken für Inhaltsanfragen mit einer Darstellung der Entwicklung nach Monaten für die Sites-Lösung
-
-## Verwenden des Lizenz-Dashboards {#using-dashboard}
-
-Gehen Sie wie folgt vor, um auf Ihr Lizenz-Dashboard zuzugreifen.
+## Zugriff auf das Lizenz-Dashboard {#using-dashboard}
 
 >[!NOTE]
 >
@@ -40,7 +35,7 @@ Gehen Sie wie folgt vor, um auf Ihr Lizenz-Dashboard zuzugreifen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf die Schaltfläche mit dem Hamburger-Menü im [Cloud Manager-Header](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Dadurch werden die Registerkarten angezeigt.
-1. Tippen oder klicken Sie auf der Registerkarte auf die Option **Lizenz** .
+1. Klicken Sie auf der Registerkarte auf die Option **Lizenz** .
 
 ![Lizenz-Dashboard](assets/license-dashboard.png)
 
@@ -105,6 +100,8 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Häufig gestellte Fragen {#faq}
 
++++
+
 ### Was ist eine Inhaltsanfrage? {#what-is-a-content-request}
 
 Bei einer Inhaltsanfrage handelt es sich um eine Anfrage, die an AEM Sites oder ein kundenseitig bereitgestelltes Caching-System wie ein Content Delivery Network (CDN) gesendet wird, um Inhalte oder Daten entweder im HTML-Format als Seitenansicht oder im JSON-Format als API-Aufruf bereitzustellen.
@@ -114,6 +111,9 @@ Für jeden Seitenaufruf oder für jeweils fünf API-Aufrufe wird 1 Inhaltsanfrag
 Inhaltsanfragen schließen Anfragen oder Aktivitäten aus, die von oder für Adobe allein zum Zweck der Bereitstellung von Produkten und Dienstleistungen initiiert wurden. Auch der von Adobe identifizierte Benutzeragenten-Traffic von Bots, Crawlern und Spidern im Zusammenhang mit gängigen Suchmaschinen und Social-Media-Services ist ausgeschlossen.
 
 Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Wie misst Adobe Experience Manager Inhaltsanfragen? {#how-are-content-requests-measured}
 
@@ -122,15 +122,26 @@ Inhaltsanfragen werden auf den Edge-Servern von AEM as a Cloud Service erfasst. 
 AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Services, die die Site regelmäßig besuchen, um ihren Suchindex oder -Service zu aktualisieren.
 
 Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Warum zeigt mein Analytics-Bericht andere Ergebnisse als die AEM-Inhaltsanfragen an? {#why-are-reports-different}
 
 Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools eines Unternehmens auf. Weitere Informationen finden Sie unter [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Wie erfahre ich mehr über mein Inhaltsanfragevolumen? {#current-request-volumes}
 
 Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an den Adobe-Kunden-Support, um einen Bericht über die hauptsächliche Nutzung anzufordern.
++++
+
++++
 
 ### Was passiert, wenn ich mein eigenes CDN verwende? {#using-own-cdn}
 
 Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden.  Wenn Sie sich für ein eigenes CDN (BYOCDN) entscheiden, melden Sie das in Ihrem Vertrag festgelegte Inhaltsanfragevolumen einmal jährlich an Adobe.
++++
+

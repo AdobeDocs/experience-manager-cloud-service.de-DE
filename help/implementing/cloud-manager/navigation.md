@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 41%
+source-wordcount: '1660'
+ht-degree: 40%
 
 ---
 
@@ -45,7 +45,7 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
 
 >[!TIP]
 >
->Einzelheiten zu den Programmen sind dem Dokument [Programme und Programmarten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) zu entnehmen.
+>Weitere Informationen zu Programmen finden Sie unter [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ### Symbolleisten {#my-programs-toolbars}
 
@@ -239,21 +239,21 @@ Bei einem Live-Programm den Status Ihrer letzten Bereitstellung mit Links zu Det
 
 ![Aktionsaufruf](/help/implementing/cloud-manager/assets/info-banner.png)
 
-### Umgebungskarte {#environments}
+### Karte „Umgebungen“ {#environments}
 
-Die Karte **Umgebungen** gibt Ihnen einen Überblick über Ihre Umgebungen sowie Links für Schnellaktionen.
+Die Karte **Umgebungen** gibt Ihnen einen Überblick über Ihre Umgebungen und stellt Links für Schnellaktionen bereit.
 
 Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf **Alle anzeigen**, um alle Umgebungen des Programms zu sehen.
 
-Bitte lesen Sie das Dokument [Verwaltung von Umgebungen](/help/implementing/cloud-manager/manage-environments.md), um zu erfahren, wie Sie Ihre Umgebungen verwalten können.
+Siehe auch [Umgebungen verwalten](/help/implementing/cloud-manager/manage-environments.md).
 
-### Pipelines-Karte {#pipelines}
+### Karte „Pipelines“ {#pipelines}
 
 Die Karte **Pipelines** gibt Ihnen einen Überblick über Ihre Pipelines sowie Links für Schnellaktionen.
 
 Auf der Karte **Pipelines** sind nur drei Pipelines aufgeführt. Klicken Sie auf **Alle anzeigen**, um alle Pipelines des Programms zu sehen.
 
-Bitte lesen Sie das Dokument [Verwaltung von Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), um zu erfahren, wie Sie Ihre Pipelines verwalten können.
+Weitere Informationen zur Verwaltung Ihrer Pipelines finden Sie unter [Verwalten von Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) .
 
 ### Leistungskarte {#performance}
 

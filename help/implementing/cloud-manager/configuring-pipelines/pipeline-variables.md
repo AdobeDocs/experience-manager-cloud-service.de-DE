@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
 source-wordcount: '571'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -69,7 +69,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
    ![Pipeline-Variablen anzeigen/bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Das Fenster **Variablenkonfiguration** wird geöffnet. Tippen oder klicken Sie auf die Schaltfläche mit den Auslassungspunkten für die zu bearbeitende Variable und wählen Sie **Bearbeiten** aus.
+1. Das Fenster **Variablenkonfiguration** wird geöffnet. Tippen oder klicken Sie auf die Suchschaltfläche der zu bearbeitenden Variable und wählen Sie **Bearbeiten** aus.
 
    ![Variable bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
@@ -81,7 +81,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 1. Tippen oder klicken Sie auf **Speichern**, um die Änderungen zu speichern, die Sie an den Variablen in der Pipeline vorgenommen haben.
 
-Wenn Sie eine Variable löschen möchten, wählen Sie im Fenster **Variablenkonfiguration** aus dem Menü mit den Auslassungspunkten der Pipeline-Variablen **Löschen** anstelle von **Bearbeiten** aus.
+Wenn Sie eine Variable löschen möchten, wählen Sie im Fenster **Variablenkonfiguration** im Suchmenü der Pipeline-Variablen die Option **Löschen** anstelle von **Bearbeiten** aus.
 
 ## Verwenden der Cloud Manager-CLI {#cli}
 

@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 98%
+source-wordcount: '1402'
+ht-degree: 96%
 
 ---
 
@@ -129,7 +129,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 >[!NOTE]
 >
->Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt. Details sowie eine vollständige Liste der Einschränkungen finden Sie im Dokument [Hinzufügen privater Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt. Weitere Informationen und die vollständige Liste der Einschränkungen finden Sie unter [Hinzufügen privater Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) .
 
 Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitstellungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
 
@@ -165,7 +165,7 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
+## Dispatcher-Pakete überspringen {#skip-dispatcher-packages}
 
 Wenn Sie möchten, dass Dispatcher-Pakete als Teil Ihrer Pipeline erstellt werden, sie aber nicht im Build-Speicher veröffentlicht werden sollen, können Sie die Veröffentlichung deaktivieren, was die Laufzeit der Pipeline verkürzen kann.
 

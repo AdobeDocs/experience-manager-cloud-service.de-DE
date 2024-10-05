@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: ht
+source-git-commit: b8b1748f9c50178fbcb167370c53285b55d809b1
+workflow-type: tm+mt
 source-wordcount: '1373'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ Beispiele finden Sie unter [Open-Source-Produkttests](https://github.com/adobe/a
 
 Weitere Informationen finden Sie unter [Java-Funktionstests](/help/implementing/cloud-manager/java-functional-testing.md).
 
-### Benutzerdefinierte Benutzeroberflächentests
+### Benutzerdefinierte UI-Tests
 
 Um die Risikokontrolle für Ihre kundenspezifische Entwicklung zu maximieren, empfiehlt Ihnen Adobe dringend, kritische Benutzeroberflächentests in AEMCS zu erfassen. Sie sollten zahlenmäßig relativ begrenzt bleiben, haben jedoch die größten Auswirkungen auf Ihr Kundenerlebnis.
 
@@ -105,7 +105,7 @@ Beispiele finden Sie unter [Open-Source-Beispieltests](https://github.com/adobe/
 
 Weitere Informationen finden Sie unter [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
-### Experience Audit
+### Erlebnisprüfung
 
 Der Experience Audit-Qualitätstest führt [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)-Audits auf der Webseite des Kunden durch.
 

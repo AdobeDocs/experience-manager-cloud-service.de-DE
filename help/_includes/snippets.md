@@ -1,8 +1,8 @@
 ---
-source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 # Snippets {#snippets}
@@ -170,7 +170,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >
 >Der universelle Editor ist nicht mit [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) kompatibel.
 >
->Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert werden.
+>Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert sein.
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 
