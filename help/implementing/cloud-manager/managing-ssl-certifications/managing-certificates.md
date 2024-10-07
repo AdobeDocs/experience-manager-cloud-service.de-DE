@@ -5,21 +5,28 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
-workflow-type: ht
-source-wordcount: '949'
-ht-degree: 100%
+source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
+workflow-type: tm+mt
+source-wordcount: '1038'
+ht-degree: 93%
 
 ---
 
 
 # Verwalten von SSL-Zertifikaten {#managing-ssl-certificates}
 
-Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer von Adobe verwalteten und der kundenseitig verwalteten SSL-Zertifikate überprüfen und diese löschen können. Kundenseitig verwaltete Zertifikate können Sie ebenfalls bearbeiten und aktualisieren (ersetzen).
+Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
 
 ## Überprüfen des Status von SSL-Zertifikaten {#checking-status-an-ssl-certificate}
 
-Der Status Ihrer SSL-Zertifikate ist auf der Seite **SSL-Zertifikate** auf einen Blick ersichtlich.
+Cloud Manager bietet einen Überblick über den Status aller Zertifikate für Ihr Programm.
+
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
+1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
+1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das Seitenmenü anzuzeigen.
+1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
+
+Die Seite **SSL-Zertifikate** enthält den Status Ihrer SSL-Zertifikate.
 
 | Status des SSL-Zertifikats | Beschreibung |
 | --- | --- |
@@ -51,6 +58,12 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
    * Fügen Sie im Feld **Zertifikatskette** (oder Vertrauenskette) die Zertifikatskette ein.
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen zu speichern und sie automatisch anzuwenden.
+
+>[!NOTE]
+>
+>Wenn Sie über zwei oder mehr SAN-Zertifikate verfügen, die denselben SAN-Domäneneintrag abdecken, wird die Domäne für die Domäne installiert, wenn die Domäne durch ein Zertifikat abgedeckt ist und die andere aktualisiert wird.
+>
+>Weitere Informationen finden Sie unter [Fehlerbehebung bei Problemen mit SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) .
 
 ## Ersetzen eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#replace-ssl-certificate}
 
@@ -109,4 +122,3 @@ Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurat
 Weitere Details finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 Eine ähnliche Nachricht wird auch auf den Seiten **IP-Zulassungsliste** und **Umgebungen** für Umgebungen mit bereits vorhandenen CDN-Konfigurationen für IP-Zulassungslisten oder benutzerdefinierte Domain-Namen gezeigt.
-

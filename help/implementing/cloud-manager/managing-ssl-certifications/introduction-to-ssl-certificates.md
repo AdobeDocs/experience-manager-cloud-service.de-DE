@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
+source-git-commit: 912e63b2ff11e24392fc7509945f352ab07c60cc
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 56%
+source-wordcount: '914'
+ht-degree: 55%
 
 ---
 
@@ -112,6 +112,10 @@ Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten v
   ```shell
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
+
+>[!TIP]
+>
+>Adobe empfiehlt, die Integrität Ihres Zertifikats lokal mit einem Tool wie `openssl verify -untrusted intermediate.pem certificate.pem` zu überprüfen, bevor Sie versuchen, es mit Cloud Manager zu installieren.
 
 ## Begrenzung der Anzahl installierter SSL-Zertifikate {#limitations}
 
