@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
+source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 82%
+source-wordcount: '2504'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Veraltete und entfernte Funktionen in AEM as a Cloud Service"
->abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Bestimmte Funktionen wurden von Cloud-nativen Gegenstücken ersetzt. Diese Registerkarte zeigt diese Funktionen."
+>abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Bestimmte Funktionen und Funktionen wurden durch Cloud-native Gegenstücke ersetzt. Diese Funktionen werden auf dieser Registerkarte angezeigt."
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Funktionen zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kundschaft insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
 
@@ -35,6 +35,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. | Die Funktion wird bald entfernt. |
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
@@ -79,7 +80,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>Verwenden Sie als Alternative die SPI-Schnittstellen Auth-Core/Auth von Sling. <a href="#org.apache.sling.commons.auth">Siehe die folgenden Entfernungshinweise.</a></td>
+    <td>Verwenden Sie alternativ die Auth Core-/Auth Core SPI-Schnittstellen von Sling. <a href="#org.apache.sling.commons.auth">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>2015</td>
     <td>30.07.2021</td>
   </tr>
@@ -144,7 +145,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
     <td>30.07.2021</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Die Eclipse Jetty- und Felix Http Jetty-Pakete werden nicht mehr unterstützt. <a href="#org.eclipse.jetty">Siehe die folgenden Entfernungshinweise.</a></td>
+    <td>Die Pakete Eclipse Jetty und Felix Http Jetty werden nicht mehr unterstützt. <a href="#org.eclipse.jetty">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>27.05.2021</td>
     <td>26.08.2021</td>
   </tr>
@@ -155,7 +156,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
     <td>26.08.2021</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>Die Verwendung dieser API wird in AEM as a Cloud Service nicht unterstützt. <a href="#com.mongodb">Siehe die folgenden Entfernungshinweise.</a></td>
+    <td>Die Verwendung dieser API wird in AEM as a Cloud Service nicht unterstützt. <a href="#com.mongodb">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>27.05.2021</td>
     <td>30.07.2021</td>
   </tr>
@@ -173,7 +174,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Diese API wird nicht mehr unterstützt, da Apache Abdera seit 2017 ein Projekt ist, das eingestellt wurde. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Siehe die folgenden Entfernungshinweise.</a></td>
+    <td>Diese API wird nicht mehr unterstützt, da das Projekt Apache Abdera 2017 eingestellt wurde. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>29.07.2021</td>
     <td>29.09.2021</td>
   </tr>
@@ -202,13 +203,13 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
     <td>entfernt</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>Alte AEM 6.x-API. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Siehe die folgenden Entfernungshinweise.</a></td>
+    <td>Alte AEM 6.x-API. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>08.04.2019</td>
     <td>29.09.2021</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Das Apache Felix Http-Whiteboard wird nicht mehr unterstützt. Migrieren Sie Ihren Code auf das OSGi Http Whiteboard. <a href="#org.apache.felix.http.whiteboard">Siehe die folgenden Entfernungshinweise.</a></td>
+    <td>Das Apache Felix Http-Whiteboard wird nicht mehr unterstützt. Migrieren Sie Ihren Code zum OSGi Http-Whiteboard. <a href="#org.apache.felix.http.whiteboard">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>27.01.2022</td>
     <td>24.03.2022</td>
   </tr>
@@ -283,21 +284,21 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>Verwenden Sie stattdessen org.apache.sling.xss .</td>
+    <td>Verwenden Sie stattdessen org.apache.sling.xss.</td>
     <td>12.12.2023</td>
     <td>30.06.2024</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>Verwenden Sie stattdessen org.apache.sling.xss .</td>
+    <td>Verwenden Sie stattdessen org.apache.sling.xss.</td>
     <td>12.12.2023</td>
     <td>30.06.2024</td>
   </tr>  
   <tr>
     <td>com.drew.*</td>
-    <td>Das Extrahieren von Metadaten aus Bildern und Videos sollte über Asset compute im Cloud Service oder über Apache POI oder Apache Tika erfolgen.</td>
-    <td>17. September 2024</td>
-    <td>17. November 2024</td>
+    <td>Das Extrahieren von Metadaten aus Bildern und Videos sollte über Asset Compute im Cloud Service oder über Apache POI oder Apache Tika erfolgen.</td>
+    <td>17.09.2024</td>
+    <td>17.12.2024</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
@@ -311,18 +312,18 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
 
 ### Entfernung von `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
-Wenn Sie `org.apache.sling.commons.auth` und/oder `org.apache.sling.commons.auth.spi` verwenden, kann die Verwendung durch eine Migration des Codes zu `org.apache.sling.auth` bzw. &quot;&quot;ersetzt werden. `org.apache.sling.auth.spi`. Wenn Sie eine alte Version von [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
+Wenn Sie `org.apache.sling.commons.auth` und/oder `org.apache.sling.commons.auth.spi` verwenden, kann die Verwendung durch eine Migration des Codes zu `org.apache.sling.auth` bzw. `org.apache.sling.auth.spi` ersetzt werden. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
 
 Aktionsliste:
 * Aktualisieren von ACS AEM Commons auf die neueste Version
-* Migration von `org.apache.sling.commons.auth` und/oder `org.apache.sling.commons.auth.spi` zu `org.apache.sling.auth` bzw. 3.`org.apache.sling.auth.spi`
+* Migration von `org.apache.sling.commons.auth` und/oder `org.apache.sling.commons.auth.spi` zu `org.apache.sling.auth` bzw. `org.apache.sling.auth.spi`.
 
 ### Entfernung von `org.eclipse.jetty*` {#org.eclipse.jetty}
 
-Wenn Sie etwas aus dem Paket `org.eclipse.jetty` oder einem seiner Unterpakete verwenden, sollten Sie möglicherweise zu anderen Drittanbieter-Bibliotheken mit ähnlichen Funktionen migrieren. Wenn die Migration nicht möglich ist, fügen Sie Ihrem Projekt die erforderlichen Bundles aus der folgenden Liste hinzu.
+Wenn Sie Bestandteile aus dem Paket `org.eclipse.jetty` oder einem seiner Unterpakete verwenden, empfiehlt es sich möglicherweise, auf andere Bibliotheken von Drittanbietern mit einer ähnlichen Funktionalität zu migrieren. Wenn die Migration nicht möglich ist, fügen Sie Ihrem Projekt die erforderlichen Bundles aus der folgenden Liste hinzu.
 
 Aktionsliste:
-* Ersetzen Sie die Verwendung von `org.eclipse.jetty` -Paketen durch andere Drittanbieter-Bibliotheken/eigenen Code oder
+* Ersetzen Sie die Verwendung von `org.eclipse.jetty`-Paketen durch andere Drittanbieter-Bibliotheken bzw. eigenen Code oder
 * Wählen Sie die erforderlichen Bundles aus dieser Liste aus und fügen Sie sie zu Ihrem Projekt hinzu:
    * org.eclipse.jetty:jetty-client:9.4.54.v20240208
    * org.eclipse.jetty:jetty-http:9.4.54.v20240208
@@ -338,19 +339,19 @@ Aktionsliste:
 Fügen Sie die Mongo-Client-API zu Ihrem Projekt hinzu.
 
 Aktionsliste:
-* Dieses Bundle zu Ihrem Projekt hinzufügen
+* Fügen Sie dieses Bundle zu Ihrem Projekt hinzu
    * org.mongodb:mongo-java-driver:3.12.7
 
 ### Verwendung von `org.apache.abdera*` und `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
-Ersetzen Sie die Verwendung von Paketen aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch eine Bibliothek eines Drittanbieters, die ähnliche Funktionen oder Ihren eigenen Code bietet.
+Ersetzen Sie die Verwendung von Paketen aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch eine Bibliothek eines Drittanbieters, die ähnliche Funktionen bietet, oder Ihren eigenen Code.
 
 Aktionsliste:
-* Ersetzen Sie die Verwendung von Paketen aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch andere Bibliotheken/eigenen Code von Drittanbietern.
+* Ersetzen Sie die Verwendung von Paketen aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch andere Bibliotheken von Drittanbietern oder eigenen Code.
 
 ### Verwendung von `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
-Ersetzen Sie die Verwendung von `org.apache.felix.http.whiteboard` durch das [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html). Die offizielle OSGi-API weist ähnliche Funktionen auf. Für das Ersetzen der meisten Fälle müssen nur die Eigenschaften für die Dienstregistrierung geändert werden.
+Ersetzen Sie die Verwendung von `org.apache.felix.http.whiteboard` durch das [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html). Die offizielle OSGi-API weist ähnliche Funktionen auf. Beim Ersetzen müssen in den meisten Fällen nur die Eigenschaften für die Dienstregistrierung geändert werden.
 
 Aktionsliste:
 * Ersetzen Sie die Verwendung von `org.apache.felix.http.whiteboard` durch [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)

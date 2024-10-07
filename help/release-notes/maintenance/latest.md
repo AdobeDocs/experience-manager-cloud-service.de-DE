@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
+source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 17%
+source-wordcount: '1411'
+ht-degree: 90%
 
 ---
 
@@ -18,126 +18,136 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 17964 {#release-17964}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 17964, die am Donnerstag, 25. September 2024 veröffentlicht wurde. Das vorherige Maintenance Release war Version 17689. Version 17882 wurde wegen eines Problems privat gemacht.
+Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 17964, die am 25. September 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 17689. Version 17882 wurde wegen eines Problems privat gemacht.
 
 Die Funktionsaktivierung von 2024.10.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Verbesserungen {#enhancements-17964}
 
-* ASSETS - 37750: [Priorität 4] [GraphQL] Unterstützung für DM scene7-URLs: Bild-Smart-Zuschnitte.
-* CQ - 4354583: [AEMaaCS] Übersetzungsprozessereignisse über die Adobe-Pipeline senden.
-* CQ - 4357642: Aktualisieren der MSFT-Anmeldeinformationen in OOTB Connector.
-* CQ - 4358217: Deserialisieren Sie den Anfrageinhalt aus der Anfrageentität.
-* CQ - 4358342: Registrieren Sie RequestProcessors für nur eine HTTP-Methode.
-* FORMS - 10781: Erweitern Sie den Regeleditor, um Regeln für das nächste/vorherige Element in einem Bereich zu erstellen.
-* FORMS - 14595: [Browserless Feature] Werte fehlen im DoR, wenn vorausgefüllte Daten zur Berechnung des DoR für Browser-loses Rendering verwendet werden.
-* FORMS - 15619: AEM Forms - Aktualisiertes Übersetzungs-Kit
-* FORMS - 16113: [Adobe Sign]Der Vertragsstatus kann von einem anderen Benutzer nicht aktualisiert werden.
-* FORMS - 16155: [Regel-Editor] Async-Funktion implementieren.
-* GRANITE - 53872: Fügen Sie neue env vars für die IMS-Client-ID hinzu.
-* SITES - 23738: Release Core Components 2.27.0.
-* SITES - 16610: Inhaltsfragmente: Rufen Sie den Endpunkt Startdetails ab.
-* SITES - 16614: Inhaltsfragmente: Rebase Launch-Endpunkt.
-* SITES - 16615: Inhaltsfragmente: Launch-Endpunkt bewerben.
-* SITES - 24215: Inhaltsfragmente: Implementieren Sie den Endpunkt Get Launch sources .
-* SITES - 20336: Inhaltsfragmente: Verbesserung der Validierung beim Löschen eines Inhaltsfragmentmodells.
-* SITES - 21090: Inhaltsfragmente: Unterstützung für Mindest-/Höchstwerte in Bruchteilen für Zahlenfelder hinzugefügt
-* SITES - 21658: Inhaltsfragmente: Upgrade zur Verwendung von UUID-Referenzen.
-* SITES - 23054: Inhaltsfragmente: Inhaltsfragmentmodelle kopieren.
-* SITES - 23264: Inhaltsfragmente: Erstellen Sie ein statisches Schema eines Modells.
-* SITES - 23265: Inhaltsfragmente: Zeigen Sie das statische Schema eines Modells über den GET-Endpunkt des Benutzeroberflächenschemas an.
-* SITES - 23266: Inhaltsfragmente: Möglichkeit, Inhaltsfragmentmodellen Einschränkungen hinzuzufügen.
-* SITES - 23778: Inhaltsfragmente: Inhaltsfragmentmodelle für die Suche sollten die Suche nach Modellen ermöglichen, die noch nie veröffentlicht wurden.
-* SITES - 23335: Inhaltsfragmente: Unterstützung für externe Asset-Referenzen hinzugefügt.
-* SITES - 24626: Content Fragments: RTC: Permissions for UUID migration: 2.
-* SITES - 24786: Inhaltsfragmente: Verbesserungen für den Endpunkt `referencesTree`.
-* SITES - 24833: Inhaltsfragmente: Entfernen Sie die Überprüfung der HTML-Eingabe anhand einer Liste zulässiger HTML-Tags.
-* SITES - 23380: GraphQL: Verwenden Sie eine geeignete API, um Asset-Metadaten zu lesen.
-* SITES - 22864: [Edge Delivery] Universal Editor mit neuer AEM Inhaltsstrukturintegration H2 2024.
-* SITES - 23584: Foundation-Komponententests schlagen in Java 17 fehl.
-* SITES - 23662: Eventing: Benutzer, der eine Veröffentlichungsanforderung Trigger, kann nicht aus JCR-Protokollanweisungen in Serverprotokollen extrahiert werden.
-* SITES - 23301: Unterstützung für den Start eines neuen Workflows zur Erstellung von Ordnerstrukturen bei der Erstellung von Übersetzungen von Inhaltsfragmenten hinzugefügt.
-* SITES - 23336: Inhaltsfragmente: Unterstützung für externe Asset-Referenzen hinzufügen
-* SITES - 24091: MSM-Inhaltspaket-Aufspaltung: Master.
-* SITES - 24114: isSourceRenderCondition: Reduzieren Sie die Fehlerprotokollmeldung auf DEBUG.
-* SITES - 24166: Remote-Asset-Schadensbegrenzung für den Touch-UI-Editor.
-* SITES - 24409: Registrieren Sie alle Anforderungsprozessoren nur auf einer HTTP-Methode.
-* SITES - 25008: Verbessern der Handhabung von PersistenceExceptions- und Berechtigungsproblemen.
-* SITES - 24821: [Xwalk] Legen Sie als Standard aem.page / aem.live fest.
+* ASSETS – 37750: [Priorität 4] [GraphQL] Unterstützung für DM scene7-URLs: Smartes Zuschneiden von Bildern.
+* CQ – 4354583: [AEMaaCS] Senden von Übersetzungsprozess-Ereignissen über die Adobe-Pipeline.
+* CQ – 4357642: Aktualisieren der MSFT-Anmeldeinformationen im vorkonfigurierten Connector.
+* CQ – 4358217: Deserialisieren des Anfrageinhalts aus der Anfrageentität.
+* CQ – 4358342: Registrieren von RequestProcessors bei nur einer HTTP-Methode.
+* FORMS – 10781: Erweitern des Regeleditors, um Regeln für das nächste/vorherige Element in einem Bedienfeld zu erstellen.
+* FORMS – 14595: [Browser-lose Funktion] Werte fehlen im DoR, wenn vorausgefüllte Daten zur Berechnung des DoR für Browser-loses Rendering verwendet werden.
+* FORMS – 15619: [AEM Forms] Aktualisiertes Übersetzungs-Kit.
+* FORMS – 16113: [Adobe Sign]Der Zustimmungsstatus kann von anderen Benutzenden nicht aktualisiert werden.
+* FORMS – 16155: [Regeleditor] Implementieren der Asynchron-Funktion.
+* GRANITE – 53872: Hinzufügen neuer Umgebungsvariablen für die IMS-Client-ID.
+* SITES – 23738: Veröffentlichen der Kernkomponenten der Version 2.27.0.
+* SITES – 16610: Inhaltsfragmente: Endpunkt „Launch-Details abrufen“.
+* SITES – 16614: Inhaltsfragmente: Endpunkt „Rebase für Launch auführen“.
+* SITES – 16615: Inhaltsfragmente: Endpunkt „Launch bewerben“.
+* SITES - 24215: Inhaltsfragmente: Implementieren des Endpunkts „Launch-Quellen abrufen“.
+* SITES – 20336: Inhaltsfragmente: Verbessern der Validierung beim Löschen von Inhaltsfragmentmodellen.
+* SITES – 21090: Inhaltsfragmente: Hinzufügen von Unterstützung für minimale/maximale Bruchzahlen für Zahlenfelder.
+* SITES – 21658: Inhaltsfragmente: Upgrade zur Verwendung von UUID-Referenzen.
+* SITES – 23054: Inhaltsfragmente: Kopieren von Inhaltsfragmentmodellen.
+* SITES – 23264: Inhaltsfragmente: Erstellen eines statischen Modellschemas.
+* SITES – 23265: Inhaltsfragmente: Freilegen des statischen Schemas eines Modells über den GET-Endpunkt des Benutzeroberflächenschemas.
+* SITES – 23266: Inhaltsfragmente: Möglichkeit zum Hinzufügen von Einschränkungen zu Inhaltsfragmentmodellen.
+* SITES – 23778: Inhaltsfragmente: Suchinhaltsfragmentmodelle sollten die Suche nach Modellen ermöglichen, die noch nie veröffentlicht wurden.
+* SITES – 23335: Inhaltsfragmente: Unterstützung für externe Asset-Referenzen hinzugefügt.
+* SITES – 24626: Inhaltsfragmente: RTC: Berechtigungen für UUID-Migration: 2.
+* SITES – 24786: Inhaltsfragmente: Verbesserungen für den Endpunkt `referencesTree`.
+* SITES – 24833: Inhaltsfragmente: Entfernen der Validierung der HTML-Eingabe anhand einer Liste zulässiger HTML-Tags.
+* SITES – 23380: GraphQL: Verwenden einer geeigneten API zum Lesen von Asset-Metadaten.
+* SITES – 22864: [Edge Delivery] Universeller Editor mit neuer AEM-Inhaltsstrukturintegration H2 2024.
+* SITES – 23583: Tests von Foundation-Komponenten schlagen unter Java 17 fehl.
+* SITES – 23662: Eventing: Benutzende, die eine Veröffentlichungsanfrage auslösen, können nicht aus JCR-Protokollanweisungen in Server-Protokollen extrahiert werden. 
+* SITES – 23301: Hinzufügen von Unterstützung für den Start eines neuen Workflows zur Erstellung von Ordnerstrukturen bei der Erstellung von Übersetzungen von Inhaltsfragmenten.
+* SITES – 23336: Inhaltsfragmente: Hinzufügen von Unterstützung für externe Asset-Verweise.
+* SITES – 24091: Aufspaltung des MSM-Inhaltspakets: Primär.
+* SITES – 24114: isSourceRenderCondition: Reduzieren der Fehlerprotokollmeldung auf DEBUG.
+* SITES – 24166: Remote-Asset-Schadensbegrenzung für den Touch-UI-Editor.
+* SITES – 24409: Registrieren aller Anfrageprozessoren bei nur einer HTTP-Methode.
+* SITES – 25008: Verbessern der Handhabung von PersistenceExceptions- und Berechtigungsproblemen.
+* SITES - 24821: Legen Sie als Standard aem.page/aem.live fest.
 
 ### Behobene Probleme {#fixed-issues-17964}
 
-* CQ - 4356887: Inkonsistenz beim Übersetzungsstatus für Akamai Technologies Inc.
-* CQ - 4357878: Das Übersetzungs-Framework legt bei der Übersetzung von Fehlern beim Anbieter keinen Fehlerstatus fest.
-* CQ - 4358028: Projekt konnte nicht erstellt werden, wenn Miniaturansichten hochgeladen wurden.
-* CQ - 4358290: Die Target-Einstellung funktioniert nicht auf der veröffentlichten Seite.
-* FORMS - 13173: Fehlausrichtung der Dropdown-Liste im adaptiven Formular > Regeleditor > Objekt ablegen.
-* FORMS - 13873: AFv2: (&quot;-&quot;) im Komponentennamen führt zu einem Fehler bei den Regeln.
-* FORMS - 14340: Fehler bei der Instanziierung von FormsAndDocumentOmniSearchHandler und CloudStorageSubmitActionInserter.
-* FORMS - 15363: Anzeigename im Regeleditor.
-* FORMS - 15381: Benutzeroberflächenverbesserung der Nachricht zum Autorisierungsumfang .
-* FORMS - 15595: Problem mit AEM Formular-TnC-Komponente Einverständnistext-Zeilenumbruch.
-* FORMS - 15623: AEMaaCS Forms - Alternativen zum Aktualisieren mehrerer Tabellen in Dynamics mit einer POST.
-* FORMS - 15682: AEM Forms - DOR kann nicht an Dynamics FDM gebunden werden.
-* FORMS - 15799: Adobe Sign GovCloud-Signaturseite gibt keine Wiedergabe in iFrame an.
-* FORMS - 15835: Problem mit URL-Neuschreibungen nach der Übermittlung.
-* FORMS - 16091: Verwendung der umstrukturierten Binary.java.
-* FORMS - 16096: Forms-Benutzer hat keinen Zugriff auf das Dialogfeld &quot;restendpoint&quot;.
-* FORMS - 16139: Hinzufügen der erforderlichen Protokollierung für DoR in Form von Kernkomponenten.
-* FORMS - 6935: Status der aktiven Komponente weist kein Kontrastverhältnis zwischen 3 und 1 auf.
-* FORMS - 7018: Leeres Element wird ausgewählt.
-* GRANITE - 53028: NPE in ExternalProcessPollingHandler.
-* GRANITE - 53907: Dienstbenutzer können nicht als Workflow-Superuser identifiziert werden.
-* SITES - 24405: Inhaltsfragmente: Erweiterte Informationen für Auflistungen sollten zuverlässiger sein
-* SITES - 23024: Inhaltsfragmente: Die Auflistung gibt nicht gesperrt zurück: &quot;true&quot;in GET-Fragmenten.
-* SITES - 23269: Inhaltsfragmente: Das Erstellen von Inhaltsfragmenten ermöglicht das Festlegen gesperrter Felder.
-* SITES - 23337: Inhaltsfragmente: Batch-Endpunkt mit `body` schlägt mit der Casting-Ausnahme fehl.
-* SITES - 23474: Inhaltsfragmente: Bei der Paginierung sollten fehlerhafte Ressourcen in Suchinhaltsfragmenten ausgeschlossen werden.
-* SITES - 23615: Inhaltsfragmente: Inhaltsfragmentkopie AuthoringInfo wird nicht aktualisiert
-* SITES - 23668: Inhaltsfragmente: Patch-Live Copy mit Multifield schlägt mit 400 fehl
-* SITES - 23695: Inhaltsfragmente: Registerkartenbeschreibung ist in UiSchema nicht verfügbar
-* SITES - 23704: Inhaltsfragmente: Auflistungen mit mehreren Werten werden in _extendedInfo nicht unterstützt
-* SITES - 23781: Inhaltsfragmente: Duplizierte Werte sind in Auflistungsfeldern nicht zulässig
-* SITES - 24150: Inhaltsfragmente: Inhaltsfragmentversionen Es fehlen Authoring-Daten zur Erstellung
-* SITES - 24230: Inhaltsfragmente: Korrigieren Sie die Filterung nach dem Replikationsstatus `modified` in den Suchinhaltsfragmentmodellen
-* SITES - 24233: Inhaltsfragmente: Das Filtern nach `publishedBy` kann nicht veröffentlichte Ressourcen in Suchinhaltsfragmentmodellen einschließen
-* SITES - 24355: Inhaltsfragmente: Die Live-Beziehung wird für von Ordnern erstellte Inhaltsfragmente nicht berücksichtigt
-* SITES - 24816: Inhaltsfragmente: ValidationStatus -Nachrichten sind inkonsistent.
-* SITES - 23896: Eventing: More Events (Eventing): More Events (Veranstaltungen) werden mit einem Page Moved-Ereignis zusammengefügt
-* SITES - 23899: Eventing: Seitenereignisse werden verzögert oder gar nicht generiert
-* SITES - 23961: Eventing: Das Erstellen von Inhaltsfragmentmodellen mit Verweisen schlägt fehl, wenn der Konfigurationsordner vorhanden ist
-* SITES - 23963: Eventing: Ereignissen, die die Seite gelöscht haben, kommen manchmal nicht mehr vor
+* CQ – 4356887: Inkonsistenz beim Status des Übersetzungsprojekts für Akamai Technologies Inc.
+* CQ – 4357878: Das Übersetzungs-Framework legt bei der Übersetzung von Fehlern beim Anbieter keinen Fehlerstatus fest.
+* CQ – 4358028: Fehler bei Projekterstellung, wenn Miniaturansichten hochgeladen werden.
+* CQ – 4358290: Die Ziel-Einstellung funktioniert NICHT auf der veröffentlichten Seite.
+* FORMS – 13173: Fehlausrichtung der Dropdown-Liste unter Adaptives Formular > Regeleditor > Feld „Objekt ablegen“.
+* FORMS – 13873: AFv2: („-“) im Komponentennamen führt zu einem Fehler bei den Regeln.
+* FORMS – 14340: Fehler bei der Instanziierung von FormsAndDocumentOmniSearchHandler und CloudStorageSubmitActionInserter. 
+* FORMS – 15363: Angezeigter Name im Regel-Editor.
+* FORMS – 15381: Verbesserung der Benutzeroberfläche der Nachricht zum Autorisierungsumfang.
+* FORMS – 15595: Problem mit Zeilenumbruch im Einverständnistext der TnC-Komponente im AEM-Formular.
+* FORMS – 15623: AEMaaCS-Formulare – Alternativen zum Aktualisieren mehrerer Tabellen in Dynamics mit einer POST.
+* FORMS – 15682: AEM Forms – DOR kann nicht an Dynamics FDM gebunden werden.
+* FORMS – 15799: Adobe Sign GovCloud-Signaturseite wird nicht in iFrame gerendert.
+* FORMS – 15835: Problem mit URL-Neuschreibungen nach der Übermittlung.
+* FORMS – 16091: Verwendung der umstrukturierten Binary.java.
+* FORMS – 16096: Forms-Benutzende haben keinen Zugriff auf das Dialogfeld „restendpoint“.
+* FORMS – 16139: Hinzufügen der erforderlichen Protokollierung für DoR im Kernkomponentenformular.
+* FORMS – 6935: Der Status der aktiven Komponente weist kein Kontrastverhältnis von 3 zu 1 auf.
+* FORMS – 7018: Leeres Element erhält den Fokus.
+* GRANITE – 53028: NPE in ExternalProcessPollingHandler.
+* GRANITE – 53907: Dienstbenutzende können nicht als Workflow-Superbenutzende identifiziert werden.
+* SITES – 24405: Inhaltsfragmente: Erweiterte Informationen für Auflistungen sollten zuverlässiger sein
+* SITES – 23024: Inhaltsfragmente: Die Auflistung gibt nicht „gesperrt“ zurück: „true“ in GET-Fragmenten.
+* SITES – 23269: Inhaltsfragmente: Das Erstellen von Inhaltsfragmenten ermöglicht das Festlegen gesperrter Felder.
+* SITES – 23337: Inhaltsfragmente: Batch-Endpunkt mit `body` schlägt mit Übertragungsausnahme fehl.
+* SITES – 23474: Inhaltsfragmente: Bei der Paginierung sollten fehlerhafte Ressourcen in Suchinhaltsfragmenten ausgeschlossen werden.
+* SITES – 23615: Inhaltsfragmente: AuthoringInfo der Inhaltsfragmentkopie wird nicht aktualisiert.
+* SITES – 23668: Inhaltsfragmente: Patch-Live Copy mit Mehrfachfeld schlägt mit 400 fehl.
+* SITES – 23695: Inhaltsfragmente: Registerkartenbeschreibung ist in UiSchema nicht verfügbar.
+* SITES – 23704: Inhaltsfragmente: Auflistungen mit mehreren Werten werden in _extendedInfo nicht unterstützt.
+* SITES – 23781: Inhaltsfragmente: Duplizierte Werte sind in Auflistungsfeldern nicht zulässig
+* SITES – 24150: Inhaltsfragmente: Es fehlen Authoring-Daten der Inhaltsfragmentversion zur Erstellung.
+* SITES – 24230: Inhaltsfragmente: Korrigieren der Filterung nach dem Replikationsstatus `modified` in Suchinhaltsfragmentmodellen
+* SITES – 24233: Inhaltsfragmente: Das Filtern nach `publishedBy` kann nicht veröffentlichte Ressourcen in Suchinhaltsfragmentmodellen einschließen.
+* SITES – 24355: Inhaltsfragmente: Die Live-Beziehung wird für von Ordnern erstellte Inhaltsfragmente nicht berücksichtigt.
+* SITES – 24816: Inhaltsfragmente: Die Reihenfolge von ValidationStatus-Nachrichten ist inkonsistent.
+* SITES – 23896: Eventing: Mit einem Ereignis „Seite verschoben“ werden mehr Ereignisse zusammengefügt.
+* SITES – 23899: Eventing: Seitenereignisse werden verzögert oder erst gar nicht generiert.
+* SITES – 23961: Eventing: Das Erstellen von Inhaltsfragmentmodellen mit Verweisen schlägt fehl, wenn der Konfigurationsordner vorhanden ist.
+* SITES – 23963: Eventing: Ereignisse „Seite gelöscht“ kommen manchmal nicht vor.
 * SITES - 23443: GraphQL: GraphQL Cursor Query Inkonsistentes Verhalten.
-* SITES - 10994: Die Tastaturfokussierung ist nicht logisch.
-* SITES - 16357: AEM: Die Schaltfläche ist auf der Registerkarte &quot;Setup Analytics&quot;im Menü &quot;Sites&quot;abgeschnitten.
-* SITES - 19836: Die Ghost-Komponente im Container wird in Veröffentlichungs- und Vorschauinstanzen angezeigt.
-* SITES - 22348: Die Seite &quot;Live Copy-Übersicht&quot;kann nicht geladen werden, wenn sie über 100 Live Copies für ein Projekt sind.
-* SITES - 22960: Nicht geschlossener Ressourcen-Resolver in ContentFragmentModelOmniSearchHandler.
-* SITES - 23284: URL-Codierung, die ein leeres Pfadbrowser-Dialogfeld verursacht.
-* SITES - 23505: Komponenten zeigen falsche URLs an, wenn die Seite an einen anderen Ort verschoben wird.
-* SITES - 23574: Kann für viele Seiten keine Vorschau anzeigen/mit aktuellen Versionen vergleichen
-* SITES - 23585: Problem mit der Wiederherstellung der Vererbung für Komponenten mit cq:responsive Knoten
-* SITES - 23650: Diskrepanz bei der Anzahl der eingehenden Links in AEM Autorenumgebung
-* SITES - 23659: Content Language Servlet-Regression, verursacht durch den Umschalter FT_* SITES - 9757
-* SITES - 23759: Assets, die zu Experience Fragment hinzugefügt wurde, wird nicht mit Launches veröffentlicht
-* SITES - 24025: 302 Weiterleitungen in AEM zurückgegebenen Location-Header mit internem DNS anstelle des öffentlichen DNS
-* SITES - 24036: Untersuchung erforderlich für AEM RTE-Beständige Zeichen im ASCII-Format
-* SITES - 24317: Proxy Configuration not working with Basic Authentication
-* SITES - 24918: [Xwalk] behebt 504-Fehler, die gelegentlich bei Verwendung der dedizierten IP-Ausdrücke zurückgegeben wurden.
+* SITES – 10994: Die Reihenfolge beim Tastaturfokus ist nicht logisch.
+* SITES – 16357: AEM: Eine Schaltfläche auf der Registerkarte „Analytics einrichten“ im Menü „Sites“ ist abgeschnitten.
+* SITES – 19836: Die Ghost-Komponente im Container wird in Veröffentlichungs- und Vorschauinstanzen angezeigt.
+* SITES – 22348: Die Seite „Live Copy-Übersicht“ kann nicht geladen werden, wenn mehr als 100 Live Copies für ein Projekt vorhanden sind.
+* SITES – 22960: Nicht geschlossener Ressourcenauflöser in ContentFragmentModelOmniSearchHandler.
+* SITES – 23284: URL-Codierung verursacht einen Browser-Dialog mit leerem Pfad.
+* SITES – 23505: Komponenten zeigen falsche URLs an, wenn die Seite an einen anderen Ort verschoben wird.
+* SITES – 23574: Für viele Seiten ist die Anzeige der Vorschau oder der Vergleich mit aktuellen Versionen nicht möglich.
+* SITES – 23585: Problem mit der Wiederherstellung der Vererbung für Komponenten mit cq:responsive-Knoten.
+* SITES – 23650: Diskrepanz bei der Anzahl der eingehenden Links in der AEM Autorenumgebung.
+* SITES – 23659: Content Language Servlet-Regression, verursacht durch den Umschalter FT_* SITES – 9757
+* SITES – 23759: Assets, die zu einem Experience Fragment hinzugefügt wurden, werden mit Launches nicht veröffentlicht.
+* SITES – 24025: 302-Weiterleitungen in AEM geben eine Speicherkopfzeile mit internem DNS anstelle des öffentlichen DNS zurück.
+* SITES – 24036: Untersuchung erforderlich für bestehende AEM-RTE-Zeichen im ASCII-Format.
+* SITES – 24317: Proxy -Konfiguration funktioniert nicht mit der Standardauthentifizierung.
+* SITES - 24918: Beheben Sie 504-Fehler, die gelegentlich bei Verwendung von dediziertem IP-Egress zurückgegeben wurden.
 
 ### Bekannte Probleme {#known-issues-17964}
 
-* FORMS - 15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found -Anweisungen in Serverprotokollen. Dies sind harmlose Protokollanweisungen.
+* FORMS – 15818: Angaben „Komponenten-Beschreibungseintrag `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` nicht gefunden“ in Serverprotokollen. Dies sind harmlose Protokollanweisungen.
 
 ### Eingestellte Funktionen und APIs {#deprecated-17964}
 
-Beachten Sie, dass wir gerade dabei sind, `com.day.cq.wcm.api` zu aktualisieren. Mit der aktuellen Version haben wir einige der Methoden und Klassen als `@Deprecated` markiert. Diese werden in zukünftigen Versionen entfernt. Daher sollten Sie erwägen, zu den vorgeschlagenen Alternativen zu wechseln, wenn Sie eine davon verwenden.
-
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
+
+Im Folgenden finden Sie eine Zusammenfassung der kürzlich veralteten Funktionen bzw. Funktionen, die veraltet sind.
+
+#### JavaScript Use API {#javascript-use-api}
+
+[Die JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) wird offiziell nicht mehr unterstützt, da Benutzer Probleme beim Debuggen und Verwalten von Code haben, der die API nutzt, sowie Leistungsbeschränkungen im Vergleich zur Java-Alternative.
+
+Sie sollten auf [die Java-Anwendungs-API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) umsteigen, die eine bessere Leistung, einfacheres Debugging und längerfristige Unterstützung bietet.
+
+#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
+
+Beachten Sie, dass Adobe gerade `com.day.cq.wcm.api` aktualisiert. Einige der Methoden und Klassen wurden in der aktuellen Version als `@Deprecated` markiert. Diese werden in zukünftigen Versionen entfernt. Bitte erwägen Sie, zu den vorgeschlagenen Alternativen zu wechseln.
 
 ### Sicherheitskorrekturen {#security-17964}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Dieses Maintenance Release behebt 16 identifizierte Schwachstellen und stärkt unser Engagement für einen robusten Systemschutz.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 16 identifizierte Schwachstellen und sorgt somit für einen noch robusteren Systemschutz.
 
 ### Eingebettete Technologien {#embedded-tech-17964}
 
@@ -146,4 +156,4 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 | AEM Oak | 1.68.0 | [Oak-API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
-| AEM-Kernkomponenten | 2,27,0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-Kernkomponenten | 2.27.0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
