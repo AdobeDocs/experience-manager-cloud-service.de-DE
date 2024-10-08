@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
+source-git-commit: b64c8f16976988d04840f1006afe4f7c9b28c705
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2488'
 ht-degree: 98%
 
 ---
@@ -325,14 +325,14 @@ Wenn Sie Bestandteile aus dem Paket `org.eclipse.jetty` oder einem seiner Unterp
 Aktionsliste:
 * Ersetzen Sie die Verwendung von `org.eclipse.jetty`-Paketen durch andere Drittanbieter-Bibliotheken bzw. eigenen Code oder
 * Wählen Sie die erforderlichen Bundles aus dieser Liste aus und fügen Sie sie zu Ihrem Projekt hinzu:
-   * org.eclipse.jetty:jetty-client:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-http:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-io:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-security:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-server:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+   * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-security:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-servlet:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-server:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
 ### Entfernung von `com.mongodb` {#com.mongodb}
 
