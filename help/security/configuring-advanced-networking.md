@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5675'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 Eine dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service erhöhen, die eine Zulassungsliste von IP-Adressen anbieten. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud-Service der Kundschaft in den externen Service fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
 
-Dieselbe dedizierte IP wird auf alle Umgebungen in einem Programm angewendet und gilt sowohl für die Autoren- als auch für die Publish-Dienste.
+Dieselbe dedizierte IP wird auf alle Umgebungen in einem Programm angewendet und gilt gleichermaßen für Autoren- und Veröffentlichungs-Service.
 
 Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von IPs, die mit anderen Kundinnen und Kunden von AEM as a Cloud Service gemeinsam genutzt werden.
 
