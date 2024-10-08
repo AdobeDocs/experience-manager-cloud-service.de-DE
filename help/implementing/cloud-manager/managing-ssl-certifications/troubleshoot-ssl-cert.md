@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 52%
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüss
 
 +++
 
-+++**Der private Schlüssel muss das PKCS 8-Format aufweisen**
++++**Der private Schlüssel muss im PKCS 8-Format sein**
 
 ## Der private Schlüssel muss das PKCS 8-Format aufweisen. {#pkcs-8}
 

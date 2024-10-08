@@ -2,7 +2,7 @@
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 # Snippets {#snippets}
@@ -162,7 +162,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >
 >[Der universelle Editor](/help/implementing/universal-editor/introduction.md) ist nicht mit IP-Zulassungslisten kompatibel.
 >
->Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert sein.
+>Wenn Sie den universellen Editor verwenden wollen, dürfen keine IP-Zulassungslisten aktiviert sein.
 
 ## Universeller Editor und IP-Zulassungslisten {#ue-ip-allow-lists}
 
@@ -197,7 +197,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >* Stellen Sie ein [interaktives 3D-basiertes Erlebnis](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video) bereit.
 >* Weitere Informationen finden Sie unter [Dynamic Media-Ressourcen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Support-Ticket anmelden {#support-ticket}
+## Einreichen eines Support-Tickets {#support-ticket}
 
 Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erfordert und die SLTs für die Reaktion erfüllen muss, können Sie ein Support-Ticket einreichen.
 

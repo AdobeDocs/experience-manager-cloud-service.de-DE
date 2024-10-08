@@ -92,7 +92,7 @@ Sie können die Details der Ausführung sehen, indem Sie erneut auf die Schaltfl
 
 Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, indem Sie erneut auf die Schaltfläche mit den Auslassungspunkten klicken und **Abbrechen** auswählen.
 
-## Pipeline bearbeiten {#editing-pipelines}
+## Bearbeiten einer Pipeline {#editing-pipelines}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 

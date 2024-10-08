@@ -7,7 +7,7 @@ role: User
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '1899'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -131,8 +131,8 @@ Führen Sie die folgenden Schritte aus, um in [!DNL Experience Manager Assets] 
    >[!NOTE]
    >
    >Wenn Sie OneDrive als Datenquelle verwenden, geben Sie den Quellordnerpfad anhand der folgenden Regeln an:
-   >* Geben Sie nur den Namen des Stammordners ohne Domäne an. Wenn der vollständige URL-Pfad des Ordners `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/` ist, geben Sie im Feld **[!UICONTROL Source-Ordner]** den Wert `/Importfolder/` an.
-   >* Wenn der Ordnername mehrere Wörter enthält, die durch Leerzeichen getrennt sind, geben Sie den Namen mit den Leerzeichen in der Konfiguration Massenimport an.
+   >* Geben Sie nur den Namen des Stammordners ohne die Domain an. Wenn also etwa der vollständige URL-Pfad des Ordners `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/` ist, geben Sie im Feld **[!UICONTROL Quellordner]** den Wert `/Importfolder/` an.
+   >* Wenn der Ordnername mehrere Wörter enthält, die durch Leerzeichen getrennt sind, geben Sie den Namen mit den Leerzeichen in der Massenimport-Konfiguration an.
    >* Der Quellordner muss sich im Stammverzeichnis befinden. Ordnerpfade werden nicht unterstützt.
 
 1. (Optional) Wählen Sie die Option **[!UICONTROL Quelldatei nach Import löschen]** aus, um die Originaldateien aus dem Quelldatenspeicher zu löschen, nachdem die Dateien in Experience Manager Assets importiert wurden.
@@ -143,7 +143,7 @@ Führen Sie die folgenden Schritte aus, um in [!DNL Experience Manager Assets] 
 
    >[!NOTE]
    >
-   >Abhängig von den Sicherheitsregeln Ihres Unternehmens benötigen Sie möglicherweise eine Zustimmung des Administrators, damit diese Anwendung eine Verbindung zum Bulk Import-Tool herstellen kann. Ist dies erforderlich, muss der Administrator die Zustimmung erteilen, bevor die Massenimportkonfiguration gespeichert werden kann.
+   >Je nach den Sicherheitsregeln Ihrer Organisation benötigen Sie möglicherweise das Einverständnis der Admins, damit diese Anwendung mit dem Massenimport-Tool verknüpft werden darf. Ist dies erforderlich, müssen die Admins ihr Einverständnis erteilen, bevor die Massenimport-Konfiguration gespeichert werden kann.
 
 1. Um einen Speicherort in DAM zu definieren, in den Assets importiert werden sollen, geben Sie im Feld **[!UICONTROL Zielordner für Assets]** einen Pfad an. Zum Beispiel: `/content/dam/imported_assets`.
 1. (Optional) Geben Sie im Abschnitt **[!UICONTROL Filter wählen]** im Feld **[!UICONTROL Filtern nach Mindestgröße]** die minimale Dateigröße der Assets in MB an, die in den Aufnahmeprozess einbezogen werden sollen.

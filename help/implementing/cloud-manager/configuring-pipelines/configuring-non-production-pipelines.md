@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen einer produktionsfremden Pipeline
-description: Erfahren Sie, wie Sie eine produktionsfremde Pipeline hinzufügen, um die Qualität Ihres Codes zu testen, bevor Sie sie in Produktionsumgebungen bereitstellen.
+description: Erfahren Sie, wie Sie eine produktionsfremde Pipeline hinzufügen, um die Qualität des Codes vor seiner Bereitstellung in Produktionsumgebungen zu testen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Es gibt zwei Arten von produktionsfremden Pipelines:
 >
 >Nach der Ersteinrichtung können Sie [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
-## Neue produktionsfremde Pipeline hinzufügen {#adding-non-production-pipeline}
+## Hinzufügen einer neuen produktionsfremden Pipeline {#adding-non-production-pipeline}
 
 Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingerichtet und mindestens eine Umgebung haben, können Sie eine produktionsfremde Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -55,9 +55,9 @@ data:
           authenticator: edge-auth
 ```
 
-Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
+Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Wert der Eigenschaft `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
 
-Weitere Informationen finden Sie im Tutorial-Schritt [Konfigurieren und Bereitstellen der HTTP-Header-Validierungs-CDN-Regel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) .
+Weitere Informationen finden Sie im Tutorial-Schritt [Konfigurieren und Bereitstellen der CDN-Regel für die HTTP-Header-Validierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule).
 
 Weitere Eigenschaften sind:
 
@@ -137,7 +137,7 @@ data:
            authenticator: purge-auth
 ```
 
-Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
+Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Wert der Eigenschaft `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
 
 Weitere Eigenschaften sind:
 
@@ -192,7 +192,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
+Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Wert der Eigenschaft `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
 
 Darüber hinaus enthält die Syntax Folgendes:
 
