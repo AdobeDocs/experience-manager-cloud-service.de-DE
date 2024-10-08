@@ -2,22 +2,25 @@
 title: Content credentials-Integration
 description: Content credentials, die in AEM Assets integriert sind und in der Assets-Ansicht enthalten sind, können einen Kontext in den Verlauf eines Assets bieten, einschließlich dessen, wie es erstellt wurde und wer an dessen Erstellung beteiligt war. Wie eine Nährwertkennzeichnung für digitale Inhalte können Content credentials dazu beitragen, Transparenz zu erhöhen und Vertrauen in die Zielgruppen zu schaffen.
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
-
 # Inhaltsurhebernachweise {#content-credentials}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Marken machen sich mehr denn je Gedanken um die Transparenz von Inhalten, die Offenlegung von KI und die Verhinderung der Manipulation von Assets. Die Content Authenticity Initiative (CAI) von Adobe erstellt Tools, die mit dem technischen Standard [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) konform sind. Content credentials, eine neue Art verschlüsselter, manipulationssicherer Metadaten, können Viewer dabei unterstützen, die Herkunft von Inhalten zu verstehen und die Integrität von Marken-Assets sicherzustellen. Sie können eine breite Palette von Herkunftsdaten enthalten, die Einblicke in die Geschichte eines digitalen Assets bieten.
 
 Diese Informationen können Folgendes umfassen:
 
 * **Aussteller oder Unterzeichner:** Informationen über die Entität oder das Unternehmen, die bzw. das die digitale Signatur zum Zertifizieren des Assets ausgestellt hat.
-* **Ausstellungsdatum:** Das Datum, an dem die Inhaltsberechtigung auf das Asset angewendet wurde.
+* **Ausstellungsdatum:** Das Datum, an dem die Content Credential auf das Asset angewendet wurde.
 * **Guthaben und Nutzung:** Informationen über den Produzenten des Assets, einschließlich Name, Social-Media-Handles oder anderen identitätsbezogenen Informationen.
 * **Verarbeitung:** Aufzeichnungen aller Änderungen oder Änderungen, die am Asset vorgenommen wurden.
 * **Gerätedetails:** Informationen über die App oder das Gerät, mit der bzw. dem das Asset erstellt oder bearbeitet wird.

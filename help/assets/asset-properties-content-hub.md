@@ -2,15 +2,18 @@
 title: Asset-Eigenschaften in  [!DNL the Content Hub]
 description: Erfahren Sie, wie Sie Asset-Eigenschaften in [!DNL Content Hub] anzeigen und verwalten.
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '617'
 ht-degree: 12%
 
 ---
 
-
 # Verwalten von Asset-Eigenschaften in Content Hub {#asset-properties}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Metadaten-Bannerbild](assets/metadata-banner-image.png)
 
@@ -66,7 +69,7 @@ Die folgende Tabelle zeigt die unterstützten Dateiformate in [!DNL the Content 
       </td>
      </tr>
      <tr>
-      <td>Video </td>
+      <td>Video</td>
       <td>
         <ul>
             <li>[!UICONTROL Quicktime]</li>  
@@ -126,4 +129,3 @@ Administratoren können auch die Eigenschaften konfigurieren, die für jedes Ass
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
-

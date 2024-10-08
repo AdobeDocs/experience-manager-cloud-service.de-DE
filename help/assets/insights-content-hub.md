@@ -2,14 +2,18 @@
 title: Anzeigen von Asset-Einblicken in Content Hub
 description: Erfahren Sie, wie Sie Asset-Einblicke in [!DNL Content Hub] anzeigen können.
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
 # Assets Insights in [!DNL Content Hub] {#assets-insights}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Assets-Einblicke](assets/asset-insights-banner.jpg)
 
@@ -49,4 +53,3 @@ Sie können auch Folgendes anzeigen:
 * **[!UICONTROL Assets nach Kampagnen]**: Asset-Anzahl und der jeweilige Prozentsatz basierend auf Kampagnen.
 * **[!UICONTROL Assets nach Kanälen]**: Asset-Anzahl und der jeweilige Prozentsatz basierend auf den verwendeten Kanälen.
 * **[!UICONTROL Assets nach Regionen]**: Asset-Anzahl und der jeweilige Prozentsatz basierend auf den Asset-Verwendungsregionen.
-

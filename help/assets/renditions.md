@@ -4,14 +4,17 @@ description: Erfahren Sie, wie AEM Assets und Dynamic Media die effektive Bildve
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 1%
+source-wordcount: '453'
+ht-degree: 2%
 
 ---
 
 # Anzeigen und Verwalten von Ausgabedarstellungen in Experience Manager Assets{#renditions}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Bei Ausgabeformaten in Adobe Experience Manager (AEM) handelt es sich um benutzerdefinierte Versionen digitaler Assets, z. B. Bilder, die für verschiedene Geräte und Plattformen entwickelt wurden, um eine optimale Leistung zu gewährleisten. AEM erleichtert die einfache Erstellung und Verwaltung dieser Ausgabedarstellungen und verbessert so das Benutzererlebnis. Sie können Miniaturansichten erstellen, Bilder für Web oder Mobilgeräte optimieren, Wasserzeichen hinzufügen, dynamische Ausgabedarstellungen oder Ausgabedarstellungen mit smartem Zuschneiden anzeigen und herunterladen und vieles mehr.
 

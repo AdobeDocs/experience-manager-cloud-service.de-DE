@@ -1,14 +1,18 @@
 ---
 title: Bilder in Content Hub mit Adobe Express bearbeiten
 description: Bilder in Content Hub mit Adobe Express bearbeiten
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
 # Bilder in Content Hub bearbeiten {#edit-images-content-hub}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Bilder in Content Hub mit Adobe Expreß bearbeiten](assets/edit-images-content-hub.png)
 
@@ -49,5 +53,3 @@ So bearbeiten Sie Bilder mit Content Hub:
 1. Klicken Sie auf **[!UICONTROL Als neues Asset speichern]** , um das Asset zu speichern.
 
 Administratoren können auch die obligatorischen und optionalen Felder konfigurieren, die beim Hinzufügen von Assets zu Content Hub angezeigt werden, z. B. Kampagnenname, Keywords, Kanäle usw. Weitere Informationen finden Sie unter [Konfigurieren der Content Hub-Benutzeroberfläche](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
-
-

@@ -2,14 +2,17 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 14%
+source-wordcount: '1392'
+ht-degree: 16%
 
 ---
 
 # Konfigurieren der Benutzeroberfläche von Content Hub {#configure-content-hub-user-interface}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
@@ -173,7 +176,7 @@ Die auf der Konfigurationsoberfläche aktivierten Branding-Aktualisierungen werd
 
 ### Abgelaufene Assets {#expired-assets-content-hub}
 
-Administratoren können steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch definieren, ob Benutzer sie herunterladen können.
+Administratoren können steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch festlegen, ob Benutzende diese herunterladen können.
 
 Abgelaufene Assets werden nicht standardmäßig in Content Hub angezeigt.
 

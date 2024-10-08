@@ -1,14 +1,18 @@
 ---
 title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen, um sie in Content Hub verfügbar zu machen.
-source-git-commit: f540f5934c4acbed4d7eff51a5a4ac1484fcb765
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 4%
 
 ---
 
 # Genehmigen von Assets für Content Hub {#approve-assets-content-hub}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Genehmigen von Assets für Content Hub](assets/content-hub-approve-assets.png)
 
@@ -98,6 +102,3 @@ Die Anzeige von Assets, die mit Content Hub hochgeladen wurden, hängt davon ab,
 * Wenn der Umschalter **[!UICONTROL Automatische Genehmigung]** deaktiviert ist, werden die Assets, die Sie mit Content Hub hochladen, nicht automatisch angezeigt. Die Assets sind im Ordner &quot;`hydrated-assets`&quot;Ihrer Assets as a Cloud Service-Umgebung verfügbar. Navigieren Sie zum Ordner und bearbeiten Sie [stapelweise](#bulk-approve-assets-content-hub) den Status dieser Assets in `Approved` , damit diese Assets in Content Hub angezeigt werden.
 
 ![Content Hub-Genehmigungsprozess](/help/assets/assets/content-hub-approval.png)
-
-
-

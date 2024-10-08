@@ -3,14 +3,17 @@ title: Genehmigen von Assets in Experience Manager
 description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmigen.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 2%
+source-wordcount: '694'
+ht-degree: 3%
 
 ---
 
 # Genehmigen von Assets in [!DNL Experience Manager]
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Brand Manager und Marketingexperten behalten die strenge Kontrolle über Marken-Assets. Es steht nur die genehmigte und neueste Version des Assets zur Verwendung zur Verfügung, wodurch Markenkonsistenz über alle Kanäle und Anwendungen hinweg gewährleistet ist.
 

@@ -3,14 +3,17 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Beispiele zur Verwendung des Asset-Selektors zur Anpassung gemäß Anforderungen.
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 81%
+source-wordcount: '275'
+ht-degree: 77%
 
 ---
 
 # Beispiele zur Verwendung der Asset-Selektor-Eigenschaften {#usage-examples}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Sie können die Asset-Auswahl [Eigenschaften](/help/assets/asset-selector-properties.md) in der Datei **index.html** definieren, um die Anzeige des Asset-Selektors in Ihrer Anwendung anzupassen.
 

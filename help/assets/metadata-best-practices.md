@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Best Practices für Metadaten zur effek
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 100%
+source-wordcount: '1399'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # Metadatenverwaltung und Best Practices {#metadata-best-practices}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 Damit Ihr Unternehmen sich auszeichnet und mehr Kundinnen und Kunden anspricht, ist die Verwendung hochwertiger Visualisierungen wie Bilder, Videos und andere digitale Assets von entscheidender Bedeutung. Dazu benötigen Sie einen Prozess, der es Ihnen ermöglicht, allen digitalen Assets Metadaten hinzuzufügen, damit sie leicht durchsucht werden können. Metadaten sind die Daten, die wichtige Details zu digitalen Assets bereitstellen, einschließlich Name, Typ, Speicherort in einem Repository, Änderungsdatum und der zugehörigen Tags des Assets. Metadaten optimieren das Asset-Management, verbessern die Suchbarkeit und Barrierefreiheit und ermöglichen eine effektive Versionskontrolle.
 

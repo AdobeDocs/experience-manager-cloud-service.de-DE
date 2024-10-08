@@ -3,14 +3,17 @@ title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud S
 description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '902'
 ht-degree: 82%
 
 ---
 
 # Integrieren in Dynamic Media mit OpenAPI-Funktionen {#integrate-asset-selector-dynamic-media-open-apis}
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Mit der Asset-Auswahl können Sie die Integration mit verschiedenen Adobe-Applikationen durchführen, um eine nahtlose Zusammenarbeit zu ermöglichen.
 
@@ -29,7 +32,7 @@ Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler in Dynam
 
 Die Integration des Asset-Wählers mit dem OpenAPI-Prozess von Dynamic Media umfasst verschiedene Schritte, darunter die Erstellung einer benutzerdefinierten oder auswahlbereiten Dynamic Media-URL.
 
-### Integrieren der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen {#integrate-dynamic-media}
+### Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen {#integrate-dynamic-media}
 
 Die Eigenschaften `rootPath` und `path` sollten nicht Teil von Dynamic Media mit OpenAPI-Funktionen sein. Stattdessen können Sie die Eigenschaft `aemTierType` konfigurieren. Die Syntax der Konfiguration ist wie folgt:
 
