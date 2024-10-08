@@ -7,9 +7,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5675'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1089,9 +1089,9 @@ ht-degree: 99%
       + Verwalten von Code {#managing-code}
          + [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adobe-Repository hinzufügen](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Privates Repository hinzufügen](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Externes Repository hinzufügen (frühe Anwendung)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Hinzufügen eines Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Hinzufügen eines privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Hinzufügen eines externen Repositorys (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

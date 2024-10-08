@@ -5,13 +5,13 @@ exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Hinzufügen privater GitHub-Repositorys in Cloud Manager {#private-repositories}
+# Hinzufügen von privaten GitHub-Repositorys in Cloud Manager {#private-repositories}
 
 Durch die Einrichtung von Cloud Manager zur Integration in Ihre privaten GitHub-Repositorys können Sie mithilfe von Cloud Manager Ihren Code direkt in GitHub validieren. Mit dieser Konfiguration müssen Sie Ihren Code nicht mehr regelmäßig mit dem Adobe-Repository synchronisieren.
 
@@ -33,12 +33,12 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 ## Konfiguration {#configuration}
 
-Die Konfiguration eines privaten GitHub-Repositorys in Cloud Manager besteht aus zwei Schritten:
+Die Konfiguration eines privaten GitHub-Repositorys in Cloud Manager erfolgt in zwei Schritten:
 
-1. [Fügen Sie ein privates GitHub-Repository hinzu](#add-repo), um es einem ausgewählten Programm hinzuzufügen.
-1. Überprüfen Sie dann [ das Eigentum des privaten GitHub-Repositorys.](#validate-ownership)
+1. Fügen Sie einem ausgewählten Programm [ein privates GitHub-Repository hinzu](#add-repo).
+1. [Überprüfen Sie dann die Eigentümerschaft des privaten GitHub-Repositorys](#validate-ownership).
 
-### Privates GitHub-Repository zu einem Programm hinzufügen {#add-repo}
+### Hinzufügen eines privaten GitHub-Repositorys zu einem Programm {#add-repo}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -71,11 +71,11 @@ Jetzt können Sie [die Eigentümerschaft des privaten Repositorys validieren](#v
 
 
 
-### Überprüfen des Eigentums an einem privaten GitHub-Repository {#validate-ownership}
+### Überprüfen der Eigentümerschaft des privaten GitHub-Repositorys {#validate-ownership}
 
 Cloud Manager kennt jetzt Ihr GitHub-Repository, benötigt aber noch den Zugriff darauf. Um Zugriff zu gewähren, müssen Sie die Adobe GitHub-App installieren und sicherstellen, dass Sie Eigentümerin bzw. Eigentümer des angegebenen Repositorys sind.
 
-**Überprüfen des Eigentums an einem privaten GitHub-Repository:**
+**So überprüfen Sie die Eigentümerschaft eines privaten GitHub-Repositorys:**
 
 1. Nachdem Sie Ihr eigenes Repository hinzugefügt haben, führen Sie die verbleibenden Schritte im Dialogfeld **Validierung der Eigentümerschaft eines privaten Repositorys** aus.
 
@@ -147,7 +147,7 @@ Validierte private Repositorys können [Full-Stack- und Frontend-Pipelines zugeo
 Bei der Verwendung privater Repositorys mit Cloud Manager gelten bestimmte Einschränkungen.
 
 * Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt.
-* Bei Verwendung privater Repositorys in Full-Stack-Produktions-Pipelines wird kein Git-Tag erstellt und gesendet.
+* Bei Verwendung privater Repositorys in Full-Stack-Produktions-Pipelines wird kein Git-Tag erstellt und gepusht.
 * Wenn die Adobe-GitHub-App aus Ihrer GitHub-Organisation entfernt wird, wird dadurch die Funktion zur Validierung von Pull-Anfragen für alle Repositorys entfernt.
 * Pipelines, die private Repositorys und den On-Commit-Build-Trigger verwenden, werden nicht automatisch gestartet, wenn ein neues Commit in die ausgewählte Verzweigung verschoben wird.
 * Die [Funktion zur Wiederverwendung von Artefakten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) gilt nicht für private Repositorys.

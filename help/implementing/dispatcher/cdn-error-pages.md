@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
 source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -92,6 +92,6 @@ Auf diese Weise können Sie den Fehler-Handler des CDN direkt auslösen, um die 
 
 ### Tutorial
 
-Eine schrittweise Anleitung zum Erstellen, Bereitstellen und Testen der vom CDN bereitgestellten Fehlerseiten finden Sie im Tutorial [CDN-Fehlerseiten](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) .
+Eine schrittweise Anleitung zum Erstellen, Bereitstellen und Testen der vom CDN bereitgestellten Fehlerseiten finden Sie im Tutorial [CDN-Fehlerseiten](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
 
 

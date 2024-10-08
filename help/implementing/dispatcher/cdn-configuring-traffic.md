@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1339'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -153,9 +153,9 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty oder reqHeader oder queryParam oder reqCookie), Wert | Legt einen angegebenen Anforderungsparameter (nur unterstützte Eigenschaft &quot;path&quot;) oder einen Anforderungsheader, Abfrageparameter oder Cookie auf einen bestimmten Wert fest, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
+| **set** | (reqProperty oder reqHeader oder queryParam oder reqCookie), Wert | Legt einen angegebenen Anforderungsparameter (die einzige unterstützte Eigenschaft ist „path“) oder einen Anforderungs-Header, Abfrageparameter oder Cookie auf einen bestimmten Wert fest, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
 |     | var, Wert | Legt einen bestimmten Anfrageparameter auf einen angegebenen Wert fest. |
-| **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (nur unterstützte &quot;path&quot;-Eigenschaft) oder einen Anforderungsheader, Abfrageparameter oder Cookie für einen bestimmten Wert, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
+| **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (die einzige unterstützte Eigenschaft ist „path“) oder einen Anforderungs-Header, Abfrageparameter oder Cookie in Bezug auf einen bestimmten Wert, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
 |         | var | Entfernt eine angegebene Variable. |
 |         | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
 | **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie), Übereinstimmung, Ersatz | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies durch einen neuen Wert. |

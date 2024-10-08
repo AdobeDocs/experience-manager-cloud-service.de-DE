@@ -1,14 +1,14 @@
 ---
-title: Überprüfen des Domänennamenstatus
+title: Überprüfen des Domain-Namensstatus
 description: Erfahren Sie, wie Sie überprüfen können, ob Cloud Manager Ihren benutzerdefinierten Domain-Namen erfolgreich bestätigt hat.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie, wie Sie überprüfen können, ob Cloud Manager Ihren benutzerdefin
 
 Sie müssen diese Voraussetzungen erfüllen, bevor Sie Ihren Domain-Namensstatus in Cloud Manager überprüfen.
 
-* Fügen Sie zunächst ein EV-/OV-Zertifikat für Ihre benutzerdefinierte Domäne hinzu, wie im Dokument [Benutzerdefinierten Domänennamen hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) beschrieben.
+* Fügen Sie zunächst ein EV/OV-Zertifikat für Ihre benutzerdefinierte Domain hinzu, wie unter [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) beschrieben.
 
 ## Überprüfen des Status Ihres benutzerdefinierten Domain-Namens {#how-to}
 
@@ -45,13 +45,13 @@ Das Statusdetail wird angezeigt. Ihre benutzerdefinierte Domain kann verwendet w
 
 ## Überprüfungsstatus {#statuses}
 
-Cloud Manager überprüft den Domänenbesitz über das vom Kunden verwaltete Zertifikat. Wenn Sie fertig sind, wird eine der folgenden Statusmeldungen angezeigt:
+Cloud Manager überprüft die Eigentümerschaft der Domain über das kundenseitig verwaltete Zertifikat. Wenn dies abgeschlossen ist, wird eine der folgenden Statusmeldungen angezeigt:
 
 | Status | Beschreibung |
 | --- | --- |
-| Domain-Überprüfung fehlgeschlagen | Das vom Kunden verwaltete E/V-Zertifikat fehlt oder wird mit Fehlern erkannt.<br> Befolgen Sie die Anweisungen in der Statusmeldung, um das Problem zu beheben. Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Überprüfen** neben dem Status auswählen. |
+| Domain-Überprüfung fehlgeschlagen | Das kundenseitig verwaltete EV/OV-Zertifikat fehlt entweder oder wird mit Fehlern erkannt.<br> Befolgen Sie die Anweisungen in der Statusmeldung, um das Problem zu beheben. Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Überprüfen** neben dem Status auswählen. |
 | Überprüfung des Domain-Namens in Bearbeitung | Die Überprüfung läuft.<br>Dieser Status wird in der Regel angezeigt, nachdem Sie das Symbol **Erneut überprüfen** neben dem Status ausgewählt haben. Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern. |
-| Überprüft. Bereitstellung fehlgeschlagen | Die EV/OV-Zertifikatüberprüfung war erfolgreich, aber die CDN-Bereitstellung schlug fehl.<br>Wenden Sie sich in einem solchen Fall an den Adobe-Support. |
+| Überprüft. Bereitstellung fehlgeschlagen | Die Überprüfung des EV/OV-Zertifikats war erfolgreich, aber die CDN-Bereitstellung ist fehlgeschlagen.<br>Wenden Sie sich in einem solchen Fall an den Adobe-Support. |
 | Domain überprüft und bereitgestellt | Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden kann.<br>An dieser Stelle steht Ihr benutzerdefinierter Domain-Name zum Testen und Verweisen auf den Domain-Namen von Cloud Manager bereit. Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | Wird gelöscht | Die Löschung eines benutzerdefinierten Domain-Namens wird durchgeführt. |
 | Löschen fehlgeschlagen | Die Löschung eines benutzerdefinierten Domain-Namens ist fehlgeschlagen und muss wiederholt werden.<br>Weitere Information finden Sie unter [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md). |
@@ -63,7 +63,7 @@ Im Folgenden finden Sie einige häufige Fehler bei der Überprüfung des Domain-
 
 ### Fehler „Domain nicht installiert“ {#domain-not-installed}
 
-Dieser Fehler kann während der Domänenvalidierung des EV/OV-Zertifikats auftreten, selbst wenn Sie überprüft haben, ob das Zertifikat ordnungsgemäß aktualisiert wurde.
+Dieser Fehler kann bei der Domain-Validierung des EV/OV-Zertifikats auftreten, selbst wenn Sie überprüft haben, ob das Zertifikat ordnungsgemäß aktualisiert worden ist.
 
 #### Fehlerursache {#cause}
 
