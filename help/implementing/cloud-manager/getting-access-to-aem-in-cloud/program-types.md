@@ -5,25 +5,25 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '521'
-ht-degree: 100%
+source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 52%
 
 ---
 
 
 # Programme und Programmtypen {#understanding-programs}
 
-Cloud Manager basiert auf einer Hierarchie von Entitäten. Die Details dazu sind für Ihre alltägliche Arbeit in Cloud Manager nicht entscheidend. Ein Überblick darüber hilft Ihnen jedoch, Programme zu verstehen und Ihre eigenen einzurichten.
+Cloud Manager basiert auf einer Hierarchie von Entitäten. Die Details sind für Ihre alltägliche Arbeit in Cloud Manager nicht von entscheidender Bedeutung, aber ein Überblick kann Ihnen dabei helfen, Programme zu verstehen und eigene einzurichten.
 
 ![Cloud Manager-Hierarchie](assets/program-types1.png)
 
-* **MANDANT**: Dies ist die Spitze der Hierarchie. Jedem Kunden wird ein Mandant zugewiesen.
+* **TENANT** - Der Anfang der Hierarchie. Jedem Kunden wird ein Mandant zugewiesen.
 * **PROGRAMME**: Jeder Mandant verfügt über ein oder mehrere Programme, [die häufig die lizenzierten Lösungen der Kundin bzw. des Kunden widerspiegeln](introduction-production-programs.md).
 * **UMGEBUNGEN**: Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte, eine für Staging und eine für Entwicklungszwecke.
    * Jedes Programm kann nur eine Produktionsumgebung, aber mehrere produktionsfremde Umgebungen haben.
-* **REPOSITORY**: Programme verfügen über Git-Repositorys, in denen Programme und Frontend-Code für die Umgebungen gepflegt werden.
+* **REPOSITORY** - Programme verfügen über Git-Repositorys, in denen Anwendung und Frontend-Code für die Umgebungen verwaltet werden.
 * **TOOLS UND WORKFLOWS**: Pipelines verwalten die Bereitstellung von Code aus den Repositorys in die Umgebungen, während andere Tools den Zugriff auf Protokolle, Überwachung und Umgebungsverwaltung ermöglichen.
 
 Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
@@ -34,25 +34,25 @@ Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 
 ## Quell-Code-Repository {#source-code-repository}
 
-Das Cloud Manager-Programm wird automatisch mit seinem eigenen Git-Repository bereitgestellt.
+Ein Cloud Manager-Programm wird automatisch mit einem eigenen Git-Repository bereitgestellt.
 
-Damit Benutzende auf das Git-Repository von Cloud Manager zugreifen können, müssen sie einen Git-Client mit einem Befehlszeilen-Tool, einen eigenständigen visuellen Git-Client oder die IDE der Benutzerin bzw. des Benutzers (wie Eclipse, IntelliJ oder NetBeans) verwenden.
+Benutzer können über einen Git-Client mit einem Befehlszeilen-Tool oder einem eigenständigen visuellen Git-Client auf das Cloud Manager-Git-Repository zugreifen. Alternativ können sie ihre bevorzugte integrierte Entwicklungsumgebung (IDE) wie Eclipse, IntelliJ oder NetBeans verwenden.
 
 Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Weitere Informationen zum Verwalten von Git mithilfe der Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-Um mit der Entwicklung der AEM Cloud-Anwendung zu beginnen, muss eine lokale Kopie des Anwendungs-Codes erstellt werden, indem Sie ihn aus dem Cloud Manager-Repository an einen Speicherort auf dem lokalen Computer auschecken.
+Um mit der Entwicklung der AEM Cloud-Anwendung zu beginnen, überprüfen Sie den Anwendungscode aus dem Cloud Manager-Repository auf Ihren lokalen Computer.
 
 ```java
 $ git clone {URL}
 ```
 
-Der Workflow ist somit ein standardmäßiger Git-Workflow.
+Der Workflow folgt einem standardmäßigen Git-Prozess:
 
-1. Ein Benutzer klont eine lokale Kopie des Git-Repositorys.
-1. Der Benutzer nimmt Änderungen am lokalen Code-Repository vor.
-1. Wenn er damit fertig sind, sendet der Benutzer sie zurück zum Remote-Git-Repository.
+1. Ein Benutzer klont das Remote-Git-Repository lokal.
+1. Der Benutzer nimmt Änderungen an seinem lokalen Repository vor.
+1. Wenn die Änderungen fertig sind, sendet der Benutzer sie zurück in das Remote-Git-Repository.
 
-Der einzige Unterschied besteht darin, dass das Remote-Git-Repository Teil von Cloud Manager ist, der für Entwickler transparent ist.
+Der einzige Unterschied besteht darin, dass das Remote-Git-Repository Teil von Cloud Manager ist, das für Entwickler transparent ist.
 
 ## Programmtypen {#program-types}
 
@@ -62,5 +62,5 @@ Benutzende können ein **Produktionsprogramm** oder ein **Sandbox-Programm** ers
    * Weitere Informationen finden Sie in der [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
    * Eine Sandbox-Umgebung ist nicht dafür vorgesehen, Live-Traffic zu verarbeiten, und hat Einschränkungen, die ein Produktionsprogramm nicht hat.
-   * Sie umfasst Sites, Assets und Edge Delivery Services und wird automatisch mit einer Git-Verzweigung befüllt, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
+   * Es umfasst Sites, Assets und Edge Delivery Services und wird vorab mit einer Git-Verzweigung gefüllt, die Beispielcode, eine Entwicklungsumgebung und eine Nicht-Produktions-Pipeline enthält.
    * Weitere Informationen finden Sie in der [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).

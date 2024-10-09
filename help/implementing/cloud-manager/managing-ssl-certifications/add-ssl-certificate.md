@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 74%
+source-wordcount: '535'
+ht-degree: 75%
 
 ---
 
@@ -24,7 +24,7 @@ Erfahren Sie, wie Sie mithilfe von Cloud Ihr eigenes SSL-Zertifikat oder Adobe-v
 ## Voraussetzungen {#prerequisites}
 
 * Ein Benutzer muss Mitglied der Rolle **Business Owner** oder **Deployment Manager** sein, um ein Zertifikat hinzuzufügen.
-* Wenn Sie Ihr eigenes Zertifikat installieren, überprüfen Sie die **Zertifikatanforderungen** in der [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) .
+* Wenn Sie Ihr eigenes Zertifikat installieren, finden Sie weitere Informationen unter **Zertifikatanforderungen** in der Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).[
 
 ## Hinzufügen eines SSL-Zertifikats {#add-certificate}
 
@@ -55,4 +55,4 @@ Sie haben jetzt ein funktionierendes SSL-Zertifikat für Ihr Projekt hinzugefüg
 
 >[!TIP]
 >
->Wenn Sie Probleme beim Hinzufügen oder Verwalten Ihrer Zertifikate haben, lesen Sie das Dokument [Fehlerbehebung bei SSL-Zertifikatfehlern](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md) .
+>Wenn Sie Probleme beim Hinzufügen oder Verwalten Ihrer Zertifikate haben, finden Sie weitere Informationen unter [Fehlerbehebung für SSL-Zertifikatfehler](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).

@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2024.10.0 in Adobe Experience Manager
 description: Erfahren Sie mehr über die Versionshinweise für Cloud Manager 2024.10.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -38,7 +38,7 @@ Die nächste Version ist für den 14. November 2024 geplant.
 
   Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-  ![Verifizierung der Domäne für ein kundenverwaltetes E/V-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+  ![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> Beim Hinzufügen oder Bearbeiten von Netzwerkinfrastruktur werden die Werte in den Feldern für IP-Adresse und Netzwerkmaske anhand der folgenden Regeln validiert:
 
@@ -90,4 +90,4 @@ Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, sen
 
 
 
-## Known Issues {#known-issues} -->
+## Known issues {#known-issues} -->

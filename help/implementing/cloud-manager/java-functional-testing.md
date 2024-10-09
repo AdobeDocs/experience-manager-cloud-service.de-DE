@@ -1,14 +1,14 @@
 ---
-title: Java™-Funktionstests
-description: Erfahren Sie, wie Sie Java™-Funktionstests für AEM as a Cloud Service schreiben.
+title: Java &trade; Funktionstests
+description: Erfahren Sie, wie Sie Java &trade; Funktionstests für AEM as a Cloud Service schreiben.
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 79%
 
 ---
 
@@ -34,7 +34,7 @@ Sobald Sie den Inhalt des Ordners `it.tests` haben, können Sie ihn als Grundlag
 
 Mit denselben Tools, die Adobe zum Schreiben von Produktfunktionstests verwendet, können Sie auch benutzerdefinierte Funktionstests schreiben. Verwenden Sie die [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als Beispiel für das Schreiben Ihrer Tests.
 
-Der Code für den benutzerdefinierten Funktionstest ist Java™-Code im Ordner `it.tests` Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist es nicht bestimmbar, welche JAR ausgewählt wird. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. [Siehe den AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) für Beispieltests.
+Der Code für den benutzerdefinierten Funktionstest ist Java™-Code im Ordner `it.tests` Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist es nicht bestimmbar, welche JAR ausgewählt wird. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Beispieltests finden Sie unter [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) .
 
 Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Authoring-Instanzen, zwei Publishing-Instanzen und eine Dispatcher-Konfiguration umfasst. Dieses Setup bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stapel ausgeführt werden.
 
@@ -107,8 +107,8 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Menge an CPU-Zeit, die pro Testausführung reserviert wird |
 | Arbeitsspeicher | 0,5 Gi | Menge des für den Test zugewiesenen Speichers, Wert in Gibibytes |
-| Zeitüberschreitung | 30 min | Die Dauer, nach der der Test beendet wird. |
-| Empfohlene Dauer | 15 min | Adobe empfiehlt, Tests so zu schreiben, dass sie diese Dauer nicht überschreiten. |
+| Zeitüberschreitung | 30 min | Die Zeitbegrenzung, nach der der Test beendet wird. |
+| Empfohlene Dauer | 15 min | Adobe empfiehlt, die Tests nicht länger als diese Zeit zu schreiben. |
 
 >[!NOTE]
 >
@@ -118,8 +118,7 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 
 * aem-cloud-testing-clients:
 
-Bevorstehende Änderungen an der Container-Infrastruktur, die zum Ausführen von Funktionstests verwendet wird, erfordern die Aktualisierung der Bibliothek [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients), die in Ihrem benutzerdefinierten Funktionstest verwendet wird, auf mindestens Version **1.2.1**
-Stellen Sie sicher, dass Ihre Abhängigkeit in `it.tests/pom.xml` aktualisiert wurde.
+Künftige Änderungen an der containerisierten Infrastruktur für die Ausführung von Funktionstests erfordern die Aktualisierung der Bibliothek [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) in Ihren benutzerdefinierten Funktionstests auf Version **1.2.1** oder höher. Stellen Sie sicher, dass die Abhängigkeit in Ihrer `it.tests/pom.xml` -Datei entsprechend aktualisiert wird.
 
 ```
 <dependency>
@@ -132,7 +131,7 @@ Stellen Sie sicher, dass Ihre Abhängigkeit in `it.tests/pom.xml` aktualisiert w
 >[!NOTE]
 >
 >Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.
->Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
+>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, kann es zu Pipeline-Fehlern beim Schritt &quot;Benutzerdefinierte Funktionstests&quot;kommen.
 
 ### Lokale Testausführung {#local-test-execution}
 
@@ -140,7 +139,7 @@ Vor der Aktivierung von Funktionstests in einer Cloud Manager-Pipeline wird empf
 
 #### Ausführung in einer IDE {#running-in-an-ide}
 
-Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java™-IDEs wie Eclipse, IntelliJ und NetBeans ausgeführt werden. Da sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests auf der gleichen Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in die benutzerdefinierten Tests kopiert werden.
+Da es sich bei Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java ™-IDEs wie Eclipse, IntelliJ und NetBeans ausgeführt werden. Da sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests auf der gleichen Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in die benutzerdefinierten Tests kopiert werden.
 
 Wenn diese Tests ausgeführt werden, müssen jedoch verschiedene Systemeigenschaften festgelegt werden, die von der Bibliothek von `aem-testing-clients` (und den zugrundeliegenden Sling Testing Clients) erwartet werden.
 
@@ -148,15 +147,15 @@ Die Systemeigenschaften lauten wie folgt.
 
 | Eigenschaft | Beschreibung | Beispiel |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | Anzahl der Instanzen, sollte zur Übereinstimmung mit dem Cloud-Service auf `2` gesetzt werden | `2` |
-| `sling.it.instance.url.1` | sollte auf die Author-URL gesetzt werden | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | Ausführungsmodus der ersten Instanz, sollte auf `author` gesetzt werden | `author` |
-| `sling.it.instance.adminUser.1` | sollte auf die Autoren-Admin-Benutzenden gesetzt werden. | `admin` |
-| `sling.it.instance.adminPassword.1` | sollte auf das Adminpasswort des Autors oder der Autorin gesetzt werden. |                         |
-| `sling.it.instance.url.2` | sollte auf die Veröffentlichungs-URL gesetzt werden | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | Ausführungsmodus der zweiten Instanz, sollte auf `publish` gesetzt werden | `publish` |
-| `sling.it.instance.adminUser.2` | sollte auf die Veröffentlichungs-Admin-Benutzenden gesetzt werden. | `admin` |
-| `sling.it.instance.adminPassword.2` | sollte auf das Veröffentlichungs-Admin-Passwort gesetzt werden. |                         |
+| `sling.it.instances` | Anzahl der Instanzen, die mit dem Cloud-Service übereinstimmen sollen, auf `2` gesetzt werden. | `2` |
+| `sling.it.instance.url.1` | Auf Autoren-URL eingestellt. | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | Ausführungsmodus der ersten Instanz. Auf `author` setzen. | `author` |
+| `sling.it.instance.adminUser.1` | Auf Autoren-Admin-Benutzer eingestellt. | `admin` |
+| `sling.it.instance.adminPassword.1` | Auf Autoren-Administratorkennwort festlegen. |                         |
+| `sling.it.instance.url.2` | auf Veröffentlichungs-URL eingestellt ist. | `http://localhost:4503` |
+| `sling.it.instance.runmode.2` | Ausführungsmodus der zweiten Instanz. Auf `publish` setzen. | `publish` |
+| `sling.it.instance.adminUser.2` | Auf Veröffentlichungsadministratorbenutzer festlegen. | `admin` |
+| `sling.it.instance.adminPassword.2` | Auf Veröffentlichungskennwort des Administrators einstellen. |                         |
 
 
 

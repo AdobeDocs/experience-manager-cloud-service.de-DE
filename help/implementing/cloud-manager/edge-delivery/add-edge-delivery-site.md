@@ -3,10 +3,10 @@ title: Hinzufügen einer Edge Delivery-Site zu Cloud Manager
 description: Erfahren Sie, wie Sie Ihrem Produktionsprogramm oder Sandbox-Programm eine Edge Delivery-Site hinzufügen.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 5%
+source-wordcount: '498'
+ht-degree: 6%
 
 ---
 
@@ -57,6 +57,6 @@ Klicken Sie in der rechten oberen Ecke der Seite auf **Site hinzufügen**.
 
 Nachdem das Repository verifiziert wurde, ändert sich sein Status in der Tabelle der Edge Delivery-Sites in einen grünen Kreis mit einem weißen Häkchen darin.
 
-In derselben Tabelle können Sie auf ![Informationen zur Edge Delivery-Site klicken.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) , um Details zu Ihrer Site anzuzeigen, z. B. die verifizierte URL des Repositorys und die URL der Vorschau- und Produktionswebsite.
+Klicken Sie in derselben Tabelle auf ![Informationen zur Edge Delivery-Site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) , um Details zu Ihrer Site anzuzeigen, z. B. die verifizierte URL des Repositorys und die URL der Vorschau- und Produktionswebsite.
 
 

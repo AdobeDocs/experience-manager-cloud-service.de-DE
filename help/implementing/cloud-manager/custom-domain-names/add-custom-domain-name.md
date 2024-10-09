@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
-workflow-type: ht
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+workflow-type: tm+mt
 source-wordcount: '1000'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ Wenn Sie den Zertifikatstyp *Kundenseitig verwaltetes Zertifikat* ausgewählt ha
 
    Nach dem Hochladen eines gültigen EV/OV-Zertifikats wird der Status der Domain in der Tabelle **Domain-Einstellungen** als **Überprüft** markiert.
 
-   ![Tabelle „Domain-Einstellungen“ mit dem Status „Überprüft“](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![Tabelle &quot;Domäneneinstellung&quot;mit dem verifizierten Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png).
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

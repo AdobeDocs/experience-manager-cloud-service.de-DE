@@ -3,10 +3,10 @@ title: Hinzufügen von externen Repositorys in Cloud Manager (Early Adopter)
 description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Cloud Manager unterstützt die Integration mit GitHub-, GitLab- und Bitbucket-Repositorys.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
-workflow-type: ht
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Clou
 
 >[!NOTE]
 >
->Diese Funktion ist nur für das [Early-Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) verfügbar.
+>Diese Funktion steht nur [dem frühen Adoptionsprogramm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) zur Verfügung.
 
 ## Konfigurieren eines externen Repositorys
 

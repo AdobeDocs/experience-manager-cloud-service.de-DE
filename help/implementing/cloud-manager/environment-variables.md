@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -90,7 +90,7 @@ Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Sc
 
 1. Nachdem Sie die erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern** aus.
 
-[Wie beim Hinzufügen von Variablen](#add-variables) wird ein Indikator mit dem Status **Aktualisieren** oben in der Tabelle und neben den neu aktualisierten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss sind die aktualisierten Umgebungsvariablen in der Tabelle sichtbar.
+[Wie beim Hinzufügen von Variablen](#add-variables) wird oben in der Tabelle und neben den neu aktualisierten Variablen ein Indikator mit dem Status **Aktualisieren** angezeigt, der angibt, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss sind die aktualisierten Umgebungsvariablen in der Tabelle sichtbar.
 
 >[!TIP]
 >
