@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 100%
+source-wordcount: '1077'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +153,15 @@ So erstellen Sie einen verschachtelten Launch auf Grundlage eines vorhandenen La
 
 Bei Auswahl von **Fertig** wird erneut die Leiste **Verweise** der Konsole **Sites** angezeigt. Bei Auswahl der entsprechenden Seite wird der neue Launch angezeigt.
 
-### Löschen von Launches {#deleting-a-launch}
+### Klonen eines Launches {#cloning-a-launch}
+
+Sie können einen Launch über die [Launches-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) klonen:
+
+* Wählen Sie den Launch aus, indem Sie auf die Miniaturansicht tippen/klicken.
+* Die Symbolleiste wird angezeigt. Wählen Sie Klonen aus.
+   * Der Klon wird in der Konsole angezeigt.
+
+## Löschen von Launches {#deleting-a-launch}
 
 Sie können einen Launch aus der [Launch-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) löschen:
 

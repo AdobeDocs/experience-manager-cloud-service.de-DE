@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 100%
+source-wordcount: '897'
+ht-degree: 97%
 
 ---
 
@@ -105,9 +105,13 @@ Launches ermöglichen Folgendes:
 
 ## Die Konsole „Launches“  {#the-launches-console}
 
-Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, auf diese zu reagieren. Auf die Konsole kann wie folgt zugegriffen werden:
+Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, auf die aufgelisteten Launches zu reagieren.
 
-* über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
+![Launches-Konsole – Verwalten von Inhalten](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+Auf die Konsole kann wie folgt zugegriffen werden:
+
+* Die Konsole **Tools**: **Tools**, **Allgemein**, **Starts**.
 
 * **Launches-Konsole** unten im Abschnitt **Launches** der Leiste **Verweise**, wenn Sie durch Quellinhalte in der Sites-Konsole navigieren.
 
@@ -116,6 +120,3 @@ Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermög
 * Die Schaltfläche **Launch** oben rechts beim Navigieren in Launch-Inhalten in der Sites-Konsole:
 
   ![Launches-Option in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* Oder direkt, beispielsweise mit:
-  `https://<host>:<port>/libs/launches/content/launches.html`

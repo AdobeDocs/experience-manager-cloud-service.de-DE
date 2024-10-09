@@ -5,7 +5,7 @@ exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 100%
@@ -74,7 +74,9 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
      >[!NOTE]
      >
      >Dies behandelt einen einzelnen Launch. Falls Sie verschachtelte Launches haben, siehe [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch).
+
 1. Klicken Sie auf **Weiter**, um fortzufahren.
+
 1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab:
 
    ![Weiterleitung überprüfen](/help/sites-cloud/authoring/assets/launches-promote-review.png)
