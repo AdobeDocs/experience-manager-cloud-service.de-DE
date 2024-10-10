@@ -4,7 +4,7 @@ description: Lernen Sie die Richtlinien und Best Practices für die Verwendung d
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 100%
@@ -52,7 +52,7 @@ Die allgemeine Formel zur Berechnung des erforderlichen freien Speicherplatzes l
 * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
 Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
 
-* Während der gesamten Übertragung von Inhalten muss ein Migrationssatz beibehalten werden, um die Auffüllung von Inhalten zu unterstützen. Es können maximal 20 Migrationssätze pro Projekt in Cloud Acceleration Manager erstellt und verwaltet werden, während die Aktivität zum Übertragen von Inhalten ausgeführt wird. Wenn mehr als 20 Migrationssätze benötigt werden, erstellen Sie in Cloud Acceleration Manager ein zweites Projekt. Dies erfordert jedoch zusätzliches Projekt-Management und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzenden überschrieben werden.
+* Während der gesamten Übertragung von Inhalten muss ein Migrationssatz beibehalten werden, um die Auffüllung von Inhalten zu unterstützen. Es können maximal 10 Migrationssätze pro Projekt in Cloud Acceleration Manager erstellt und verwaltet werden, während die Aktivität zum Übertragen von Inhalten ausgeführt wird. Wenn mehr als 10 Migrationssätze benötigt werden, erstellen Sie in Cloud Acceleration Manager ein zweites Projekt. Dies erfordert jedoch zusätzliches Projekt-Management und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzenden überschrieben werden.
 
 * Ändern Sie nicht das Installationsverzeichnis des CTT-Tools. Standardmäßig findet die Installation im Pfad „crx-quickstart/cloud-migration“ statt. Dieser spezifische Speicherort wird intern von anderen Bibliotheken verwendet. Eine Änderung dieses Pfads kann zu Extraktionsproblemen führen.
 
