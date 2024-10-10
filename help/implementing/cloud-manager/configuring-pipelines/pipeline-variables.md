@@ -5,87 +5,101 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 61%
+source-wordcount: '611'
+ht-degree: 28%
 
 ---
 
 # Pipeline-Variablen konfigurieren {#configuring-pipeline-variables}
 
-Der Build-Prozess kann von bestimmten Konfigurationsvariablen abhängen, die nicht im Git-Repository platziert werden können oder zwischen Pipeline-Ausführungen mit derselben Verzweigung variieren müssen.  Mit Cloud Manager können Sie diese Daten als Pipeline-Variablen verwalten.
+Ihr Build-Prozess basiert möglicherweise auf bestimmten Konfigurationsvariablen, die nicht im Git-Repository gespeichert werden sollen. Sie müssen sie auch zwischen Pipeline-Ausführungen auf demselben Zweig anpassen. Mit Cloud Manager können Sie diese Einstellungen als Pipeline-Variablen verwalten.
 
 ## Pipeline-Variablen {#pipeline-variables}
 
 Mithilfe von Cloud Manager können Sie Pipeline-Variablen auf verschiedene Arten konfigurieren.
 
-* [Über die Benutzeroberfläche von Cloud Manager](#ui)
+* [Verwenden der Cloud Manager-Benutzeroberfläche](#ui)
 * [Verwenden der Cloud Manager-CLI](#cli)
 * [Verwenden der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
 
-Variablen können entweder als reiner Test oder mit Data-at-Rest-Verschlüsselung gespeichert werden. In beiden Fällen werden Variablen innerhalb der Build-Umgebung als Umgebungsvariable bereitgestellt, die in der `pom.xml`-Datei oder anderen Build-Skripten referenziert werden kann.
+Variablen können entweder als reiner Test oder mit Data-at-Rest-Verschlüsselung gespeichert werden. In beiden Fällen werden Variablen innerhalb der Build-Umgebung als Umgebungsvariable bereitgestellt, die dann in der Datei `pom.xml` oder anderen Build-Skripten referenziert werden kann.
 
-### Benennungskonventionen für Pipeline-Variablen {#naming-conventions}
+## Hinzufügen von Pipeline-Variablen über Cloud Manager {#ui}
 
-Variablennamen müssen die folgenden Konventionen einhalten:
+Pipeline-Variablen können über die Cloud Manager-Benutzeroberfläche konfiguriert und verwaltet werden. Sie helfen bei der Optimierung der Pipeline-Verwaltung, insbesondere wenn unterschiedliche Konfigurationen in verschiedenen Schritten erforderlich sind.
 
-* Variablen dürfen nur alphanumerische Zeichen und den Unterstrich (`_`) enthalten.
-* Die Namen sollten in Großbuchstaben geschrieben sein.
-* Pro Pipeline sind maximal 200 Variablen zulässig.
-* Jeder Name darf maximal 100 Zeichen lang sein.
-* Jede `string`-Variable darf höchstens 2047 Zeichen enthalten.
-* Jede Variable des Typs `secretString` darf maximal 500 Zeichen enthalten.
-
-## Über die Benutzeroberfläche von Cloud Manager {#ui}
-
-Pipeline-Variablen können über die Cloud Manager-Benutzeroberfläche konfiguriert und verwaltet werden. Sie müssen über die Berechtigungen zum Bearbeiten der Pipeline verfügen, um Pipeline-Variablen hinzuzufügen, zu bearbeiten und zu löschen.
+Sie müssen über die Berechtigungen zum Bearbeiten der Pipeline verfügen, um Pipeline-Variablen hinzuzufügen, zu bearbeiten und zu löschen.
 
 Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
-### Pipeline-Variablen hinzufügen {#add-ui}
+### Pipeline-Variable hinzufügen {#add-ui}
 
-1. Klicken Sie beim Verwalten Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf die Suchschaltfläche der Pipeline, für die Sie Pipeline-Variablen erstellen möchten, und wählen Sie **Variablen anzeigen/bearbeiten** aus dem Kontextmenü aus.[
+1. Klicken Sie beim Verwalten Ihrer Pipelines [ auf das Symbol &quot;![Ellipse - Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Pipeline, für die Sie Pipeline-Variablen erstellen möchten.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+
+1. Klicken Sie im Dropdownmenü auf **Variablen anzeigen/bearbeiten**.
 
    ![Pipeline-Variablen anzeigen/bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Das Fenster **Variablenkonfiguration** wird geöffnet. Geben Sie die Variablendetails in die erste Zeile der Tabelle ein und klicken Sie auf **Hinzufügen**.
+1. Geben Sie im Dialogfeld **Variablenkonfiguration** die Details in die erste Zeile der Tabelle ein.
 
-   * **Konfigurationsname** ist eine eindeutige Kennung für Ihre Variable, die die [Namenskonventionen für Pipeline-Variablen befolgen muss](#naming-conventions).
-   * **Wert** ist der Wert, den die Variable enthält.
-   * **Angewandter Schritt** ist der Schritt in der Pipeline, für den die Variable gilt. Dieser Schritt ist erforderlich.
-      * **Build**
-      * **Funktionsprüfung**
-      * **UI-Tests**
-   * **Typ** definiert, ob es sich bei der Variablen um reinen Text handelt oder ob sie als geheim verschlüsselt wurde.
+   | Feld | Beschreibung |
+   | --- | --- |
+   | Name | Ein eindeutiger Name der Konfigurationsvariablen. Er identifiziert die spezifische Variable, die in der Pipeline verwendet wird. Sie muss den folgenden Benennungskonventionen entsprechen:<ul><li>Variablen dürfen nur alphanumerische Zeichen und den Unterstrich (`_`) enthalten.</li><li>Die Namen sollten in Großbuchstaben geschrieben sein.</li><li>Pro Pipeline sind maximal 200 Variablen zulässig.</li><li>Jeder Name darf maximal 100 Zeichen lang sein.</li><li>Jede `string`-Variable darf höchstens 2047 Zeichen enthalten.</li><li>Jede Variable des Typs `secretString` darf maximal 500 Zeichen enthalten.</li></ul> |
+   | Wert | Der Wert, den die Variable enthält. |
+   | ANGEWENDETER SCHRITT | Erforderlich. Der Schritt in der Pipeline, für den die Variable gilt:<ul><li>**Build** - Die Variable wird während des Build-Prozesses angewendet.</li><li>**Funktionstests** - Die Variable wird während des Funktionstestschritts verwendet.</li><li>**UI-Tests** - Die Variable wird während der UI-Testphase verwendet.</li></ul> |
+   | Typ | Wählen Sie aus, ob es sich bei der Variablen um Text handelt oder als geheim verschlüsselt wurde. |
 
    ![Variable hinzufügen](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
-1. Wird der Tabelle hinzugefügt. Fügen Sie weitere Variablen nach Bedarf hinzu und tippen oder klicken Sie dann auf **Speichern**, um die Variablen zu speichern, die Sie der Pipeline hinzugefügt haben.
+1. Klicken Sie auf **Hinzufügen**.
 
-### Bearbeiten von Pipeline-Variablen {#edit-ui}
-
-1. Klicken Sie beim Verwalten Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf die Suchschaltfläche der Pipeline, für die Sie Pipeline-Variablen erstellen möchten, und wählen Sie **Variablen anzeigen/bearbeiten** aus dem Kontextmenü aus.[
-
-   ![Pipeline-Variablen anzeigen/bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
-
-1. Das Fenster **Variablenkonfiguration** wird geöffnet. Klicken Sie auf die Suchschaltfläche der zu bearbeitenden Variable und wählen Sie **Bearbeiten** aus.
-
-   ![Variable bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
-
-1. Aktualisieren Sie den Wert der Variablen nach Bedarf und klicken Sie auf **Anwenden** (das Häkchen am Ende der Zeile), um die Änderung anzuwenden, oder auf **Verwerfen** (den Rückwärtspfeil), um die Änderung wiederherzustellen.
-
-   * Nur der Wert der Variablen kann bearbeitet werden.
-
-   ![Bearbeiten einer Variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
+   Fügen Sie nach Bedarf weitere Variablen hinzu.
 
 1. Klicken Sie auf **Speichern**.
 
-Wenn Sie eine Variable löschen möchten, wählen Sie im Fenster **Variablenkonfiguration** im Suchmenü der Pipeline-Variablen die Option **Löschen** anstelle von **Bearbeiten** aus.
+### Pipeline-Variable bearbeiten {#edit-ui}
 
-## Cloud Manager-CLI verwenden {#cli}
+1. Klicken Sie beim Verwalten Ihrer Pipelines [ auf das Symbol &quot;![Ellipse - Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Pipeline, für die Sie Pipeline-Variablen bearbeiten möchten.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
 
-Dieser CLI-Befehl legt eine Variable fest.
+1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
+
+   ![Pipeline-Variablen anzeigen/bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+
+1. Klicken Sie im Dialogfeld **Variablenkonfiguration** auf das Symbol ![Ellipse - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Variablen, die Sie ändern möchten.
+
+1. Klicken Sie im Dropdown-Menü auf **Bearbeiten**.
+
+   ![Variable bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
+
+1. Aktualisieren Sie den Wert der Variablen nach Bedarf.
+
+   Nur der Wert der Variablen kann geändert werden.
+
+1. Führen Sie einen der folgenden Schritte aus:
+
+   * Klicken Sie auf ![Anwenden - Häkchensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) , um die Änderung anzuwenden.
+   * Klicken Sie auf das Symbol ![Rückgängig](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) , um die Änderung rückgängig zu machen.
+
+1. Klicken Sie auf **Speichern**.
+
+### Pipeline-Variable löschen {#delete-ui}
+
+1. Klicken Sie beim Verwalten Ihrer Pipelines [ auf das Symbol &quot;![Ellipse - Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Pipeline, für die Sie Pipeline-Variablen löschen möchten.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+
+1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
+
+   ![Pipeline-Variablen anzeigen/bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+
+1. Klicken Sie im Dialogfeld **Variablenkonfiguration** auf das Symbol ![Ellipse - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Variablen, die Sie entfernen möchten.
+
+1. Klicken Sie im Dropdown-Menü auf **Löschen**.
+
+
+## Festlegen von Pipeline-Variablen mithilfe der Cloud Manager-CLI {#cli}
+
+Dieser Befehl in der CLI (Befehlszeilenschnittstelle) legt eine Variable fest.
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
@@ -97,7 +111,7 @@ Dieser Befehl listet Variablen auf.
 $ aio cloudmanager:list-pipeline-variables PIPELINEID
 ```
 
-Bei Verwendung in einer Maven-Datei `pom.xml` ist es in der Regel hilfreich, diese Variablen Maven-Eigenschaften mithilfe einer ähnlichen Syntax wie dieser zuzuordnen.
+Bei Verwendung in einer Maven `pom.xml` -Datei ist es häufig nützlich, diese Variablen mit Maven-Eigenschaften zu verknüpfen, indem eine Syntax ähnlich der folgenden verwendet wird:
 
 ```xml
         <profile>
