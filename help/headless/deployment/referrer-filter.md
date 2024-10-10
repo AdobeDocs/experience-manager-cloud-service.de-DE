@@ -5,10 +5,10 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 56%
 
 ---
 
@@ -28,7 +28,13 @@ Dies geschieht durch Hinzufügen einer entsprechenden OSGi-Konfiguration für de
 
 Der Name der Datei muss `org.apache.sling.security.impl.ReferrerFilter.cfg.json` lauten.
 
+## Beispielkonfiguration {#example-configuration}
+
 Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren, können Sie:
+
+>[!CAUTION]
+>
+>Dies ist ein grundlegendes Beispiel, das die Standardkonfiguration überschreiben kann. Sie müssen sicherstellen, dass Produktaktualisierungen immer auf alle Anpassungen angewendet werden.
 
 ```xml
 {
@@ -52,16 +58,28 @@ Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren
 }
 ```
 
->[!CAUTION]
->
->Der Kunde ist für Folgendes verantwortlich:
->
->* Nur Zugriff auf vertrauenswürdige Domains gewähren
->* Sicherstellen, dass keine vertraulichen Informationen offengelegt werden
->* Keine Platzhaltersyntax [*] verwenden. Dadurch wird der authentifizierte Zugriff auf den GraphQL-Endpunkt deaktiviert und zusätzlich der Öffentlichkeit zugänglich gemacht.
+## Datensicherheit {#data-security}
 
 >[!CAUTION]
 >
->Alle GraphQL-[Schemata](#schema-generation) (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
->
->Das bedeutet, dass Sie sicherstellen müssen, dass keine vertraulichen Daten verfügbar sind, da sie auf diese Weise an die Öffentlichkeit gelangen könnten. Dazu gehören beispielsweise Informationen, die als Feldnamen in der Modelldefinition vorhanden sein könnten.
+>Es liegt in Ihrer Verantwortung, die folgenden Punkte in vollem Umfang anzugehen.
+
+Um sicherzustellen, dass Ihre Daten sicher bleiben, müssen Sie Folgendes sicherstellen:
+
+* Der Zugriff ist **nur** für vertrauenswürdige Domänen
+
+* Platzhaltersyntax [`*`] in **nicht** verwendet; dadurch wird sowohl der authentifizierte Zugriff auf den GraphQL-Endpunkt deaktiviert als auch der gesamten Welt angezeigt
+
+* vertrauliche Informationen werden **nie** offen gelegt; weder direkt noch indirekt:
+
+   * Beispielsweise sind alle [GraphQL-Schemas](/help/headless/graphql-api/content-fragments.md#schema-generation):
+
+      * von Inhaltsfragmentmodellen abgeleitet, die **aktiviert** wurden
+
+     **and**
+
+      * über den GraphQL-Endpunkt lesbar sind
+
+     Dies bedeutet, dass Informationen, die in der Modelldefinition als Feldnamen enthalten sind, verfügbar werden können.
+
+Sie müssen sicherstellen, dass keine sensiblen Daten auf irgendeine Weise verfügbar sind, sodass solche Informationen sorgfältig geprüft werden müssen.
