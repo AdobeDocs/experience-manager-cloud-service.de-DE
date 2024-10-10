@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 27%
+ht-degree: 39%
 
 ---
 
@@ -83,17 +83,17 @@ Weitere Informationen zu den neuen und verbesserten Guides-Funktionen und -Probl
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-Im Folgenden finden Sie eine Zusammenfassung der kürzlich veralteten Funktionen bzw. Funktionen, die veraltet sind.
+Im Folgenden finden Sie eine Zusammenfassung der Funktionen, die vor Kurzem eingestellt wurden bzw. demnächst eingestellt werden.
 
-#### JavaScript Use API {#javascript-use-api}
+#### JavaScript-Anwendungs-API {#javascript-use-api}
 
-[Die JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) wird offiziell nicht mehr unterstützt, da Benutzer Probleme beim Debuggen und Verwalten von Code haben, der die API nutzt, sowie Leistungsbeschränkungen im Vergleich zur Java-Alternative.
+[Das JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) ist offiziell eingestellt, da Benutzer Probleme beim Debugging und Verwalten von Code haben, der das API nutzt, sowie aufgrund von Leistungsbeschränkungen im Vergleich zur Java-Alternative.
 
-Sie sollten auf [die Java-Anwendungs-API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) umsteigen, die eine bessere Leistung, einfacheres Debugging und längerfristige Unterstützung bietet.
+Sie sollten auf [das Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) umsteigen, das bessere Leistung, einfacheres Debugging und längerfristige Unterstützung bietet.
 
 #### com.day.cq.wcm.api {#com-day-cq-wcm-api}
 
-Beachten Sie, dass Adobe gerade `com.day.cq.wcm.api` aktualisiert. Einige der Methoden und Klassen wurden in der aktuellen Version als `@Deprecated` markiert. Diese werden in zukünftigen Versionen entfernt. Bitte erwägen Sie, zu den vorgeschlagenen Alternativen zu wechseln.
+Beachten Sie, dass Adobe `com.day.cq.wcm.api` derzeit aktualisiert. Einige der Methoden und Klassen wurden in der aktuellen Version als `@Deprecated` markiert. Diese werden in zukünftigen Versionen entfernt. Überlegen Sie, zu den vorgeschlagenen Alternativen zu wechseln.
 
 #### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 

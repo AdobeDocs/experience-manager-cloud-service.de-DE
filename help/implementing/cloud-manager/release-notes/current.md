@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -30,13 +30,13 @@ Die nächste Version ist für den 14. November 2024 geplant.
 
 <!-- (CMGR-59817) -->
 
-* <!-- CS ONLY --> Beim Hinzufügen einer neuen benutzerdefinierten Domäne umfasste die vorherige Überprüfungsmethode einen langwierigen DNS-Validierungsprozess. Adobe hat diesen Prozess für Kunden vereinfacht. Jetzt müssen Sie nur noch ein gültiges SSL-Zertifikat (EV oder OV) bereitstellen, das als Eigentumsnachweis dient. Es ist nicht mehr erforderlich, TXT-Einträge im DNS zu aktualisieren.
+* <!-- CS ONLY --> Die vorherige Überprüfungsmethode beim Hinzufügen einer neuen benutzerdefinierten Domain umfasste einen langwierigen DNS-Validierungsprozess. Adobe hat diesen Prozess für Kundinnen und Kunden vereinfacht. Jetzt müssen Sie nur noch ein gültiges SSL-Zertifikat (EV oder OV) bereitstellen, das als Nachweis der Eigentümerschaft dient. Es ist nicht mehr erforderlich, TXT-Einträge im DNS zu aktualisieren.
 
   >[!NOTE]
   >
-  >Diese Funktion gilt nur für vom Kunden verwaltete EV- und OV-Zertifikate. Von Adobe verwaltete DV-Zertifikate erfordern weiterhin einen CNAME-Eintrag.
+  >Diese Funktion gilt nur für kundenseitig verwaltete EV- und OV-Zertifikate. Von Adobe verwaltete DV-Zertifikate erfordern weiterhin einen CNAME-Eintrag.
 
-  Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+  Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
   ![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
