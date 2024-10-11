@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
-workflow-type: ht
-source-wordcount: '2982'
-ht-degree: 100%
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -228,6 +228,20 @@ Um diese Einschränkung möglicherweise zu vermeiden, führen Sie den [Best Prac
 >[!NOTE]
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Version 2.1.50 oder höher meldet große Knoten, die Unicode-Zeichen enthalten, die die maximale Größe überschreiten. Stellen Sie sicher, dass Sie die neueste Version ausführen. BPA-Versionen vor 2.1.50 identifizieren und melden diese großen Knoten nicht. Diese müssen separat mit dem oben erwähnten, erforderlichen Oak-Tool ermittelt werden.
+
+### Aufnahmefehler aufgrund unerwarteter zeitweiliger Fehler {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Unerwartete zeitweise auftretende Fehler"
+>abstract="Manchmal können unerwartete zeitweise auftretende nachgelagerte Dienstfehler auftreten, und leider besteht der einzige Rückgriff darin, die Aufnahme einfach erneut zu versuchen."
+
+Manchmal können sich unerwartete zeitweise auftretende Probleme an fehlgeschlagene Erfassungsvorgänge weiterleiten, bei denen der einzige Rückgriff leider darin besteht, die Aufnahme erneut auszuführen. Untersuchen Sie das Aufnahmeprotokoll, um die Ursache des Fehlers zu ermitteln und festzustellen, ob es mit einem der unten aufgeführten Fehler übereinstimmt, wo ein erneuter Versuch unternommen werden sollte.
+
+## MongoDB-Probleme {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - In der Aufnahmephase wird versucht, die Ziel-Cloud-Datenbank auf eine geeignete Größe vorzustufen, die der Größe des aufgenommenen Migrationssatzinhalts entspricht. In seltenen Fällen wird dieser Vorgang nicht innerhalb des erwarteten Zeitrahmens abgeschlossen.
+* `Exhausted mongo restore retries` - Der Versuch, einen lokalen Ablagespeicher des erfassten Migrationssatzinhalts in die Cloud-Datenbank wiederherzustellen, ist erschöpft. Dies weist auf ein allgemeines Gesundheits-/Netzwerkproblem mit MongoDB hin, das sich häufig nach einigen Minuten selbst behebt.
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 
