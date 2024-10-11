@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 59%
+source-wordcount: '1321'
+ht-degree: 58%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 59%
 
 Erfahren Sie mehr über die im [AEM as a Cloud Service-Implementierungsprozess](/help/implementing/cloud-manager/deploy-code.md) verfügbaren Qualitätstests und die verschiedenen Arten integrierter Funktionstests. Erfahren Sie, wie Sie im Rahmen einer umfassenden Teststrategie ihren Einsatz optimieren können.
 
-## Übersicht
+## Über Funktionstests
 
 Das folgende Diagramm bietet einen allgemeinen Überblick über die verfügbaren Pipelines im Kontext einer Gesamtteststrategie und des [AEM as a Cloud Service-Bereitstellungsprozesses](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Qualitäts-Gates für die AEM Cloud Service-Bereitstellung](assets/functional-testing/quality-gates-compact.svg)
 
-## Zweck
+## Zweck der Funktionstests
 
 Die Pipelines zur AEM Cloud Service-Implementierung haben den Zweck, eine robuste und sichere Bereitstellung in verschiedenen Phasen des Entwicklungs- und AEM-Produktveröffentlichungslebenszyklus zu erleichtern. Diese Pipelines enthalten mehrere Qualitäts-Gates auf unterschiedlichen Ebenen, um die Integrität und Sicherheit von Bereitstellungen sowohl für Ihre AEM-Anwendungsänderungen als auch für AEM-Produktaktualisierungen zu gewährleisten.
 
@@ -38,13 +38,13 @@ Die integrierten Qualitäts-Gates validieren in erster Linie die Funktionalität
 
 Es ist wichtig zu beachten, dass diese Qualitäts-Gates nicht als umfassendes Test-Framework für Ihre gesamte Teststrategie gedacht sind. Das AEM-Produkt wird umfassend getestet, bevor es in den AEM Cloud Service-Bereitstellungsprozess eintritt. Ebenso sollte Ihre Anwendung bereits von hoher Qualität sein, bevor sie die Bereitstellungsphase erreicht. Dieser Ansatz stellt sicher, dass sich die Qualitäts-Gates auf ihr vorrangiges Ziel konzentrieren, den sicheren Implementierungsprozess zu gewährleisten, anstatt ein vollständiges Testverfahren zu ersetzen.
 
-## Qualitäts-Gates
+## Qualitätstests
 
 Das folgende Diagramm bietet einen detaillierten Überblick über die verfügbaren Qualitäts-Gates und deren Verwendung in der Gesamtteststrategie sowie den [AEM as a Cloud Service-Bereitstellungsprozess](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Qualitäts-Gates für die AEM Cloud Service-Bereitstellung](assets/functional-testing/quality-gates-overview.svg)
 
-### Zusammenfassung zu kundenseitig bereitgestellten Qualitäts-Gates
+### Zusammenfassende vom Kunden bereitgestellte Quality Gates
 
 |                               | Komponententests | Benutzerdefinierte<br/> Funktionstests | Benutzerdefinierte<br/> Benutzeroberflächentests | Kundenvalidierungen<br/> | Manuelle<br/> Tests |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
@@ -54,7 +54,7 @@ Das folgende Diagramm bietet einen detaillierten Überblick über die verfügbar
 | **Kunden-CI/CD** | Ja | Ja | Ja | Ja | Ja |
 | **Lokaler Entwickler für Kunden** | Ja | Ja | Ja | Ja | Ja |
 
-### Komponententest
+### Unit-Test
 
 Es wird empfohlen, die Komponententests für Ihre AEM-Anwendung bereitzustellen. Sie bilden die Grundlage jeder Teststrategie. Sie sollten schnell und oft ausgeführt werden und frühzeitig und schnell Feedback geben. Sie sind eng in die Entwickler-Workflows, Ihre eigenen CI/CD- und die AEM Cloud Service-Bereitstellungs-Pipelines integriert.
 
