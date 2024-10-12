@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+workflow-type: tm+mt
+source-wordcount: '847'
+ht-degree: 84%
 
 ---
 
@@ -17,15 +17,11 @@ ht-degree: 100%
 
 Erfahren Sie, wie Sie überprüfen können, ob Cloud Manager Ihren benutzerdefinierten Domain-Namen erfolgreich bestätigt hat.
 
-## Voraussetzungen {#requirements}
+## Überprüfen des Status eines benutzerdefinierten Domain-Namens {#how-to}
 
-Sie müssen diese Voraussetzungen erfüllen, bevor Sie Ihren Domain-Namensstatus in Cloud Manager überprüfen.
+Bevor Sie den Status Ihres Domänennamens in Cloud Manager überprüfen, stellen Sie sicher, dass Sie bereits ein kundenverwaltetes SSL-Zertifikat (OV/EV) für Ihre benutzerdefinierte Domäne hinzugefügt haben, wie in [Hinzufügen eines kundenverwalteten SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert) beschrieben.
 
-* Fügen Sie zunächst ein EV/OV-Zertifikat für Ihre benutzerdefinierte Domain hinzu, wie unter [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) beschrieben.
-
-## Überprüfen des Status Ihres benutzerdefinierten Domain-Namens {#how-to}
-
-Sie können den Status Ihres benutzerdefinierten Domain-Namens in Cloud Manager ermitteln.
+**Überprüfen des Status eines benutzerdefinierten Domänennamens:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -33,7 +29,7 @@ Sie können den Status Ihres benutzerdefinierten Domain-Namens in Cloud Manager 
 
 1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
+1. Klicken Sie im linken Seitenmenü auf **Domäneneinstellungen** .
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
@@ -41,11 +37,14 @@ Das Statusdetail wird angezeigt. Ihre benutzerdefinierte Domain kann verwendet w
 
 >[!NOTE]
 >
->Cloud Manager löst automatisch eine Überprüfung aus, wenn Sie beim [Hinzufügen eines neuen benutzerdefinierten Domain-Namens zu Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) im Überprüfungsschritt des Assistenten **Benutzerdefinierte Domain hinzufügen** die Option **Erstellen** auswählen. Für spätere Überprüfungen müssen Sie das Symbol „Erneut überprüfen“ neben dem Status aktiv auswählen.
+>Wenn Sie ein *Adobe verwaltetes (DV) SSL-Zertifikat* mit der Domäne verwenden, überprüft Cloud Manager automatisch die Trigger, wenn Sie im Dialogfeld &quot;Domäne überprüfen&quot;auf **Überprüfen** klicken, wenn Sie [ einen benutzerdefinierten Domänennamen hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>
+>Wenn Sie planen, ein vom **Kunden verwaltetes SSL-Zertifikat (OV/EV)** zu verwenden, wird Ihre Domäne *nach* überprüft, indem Sie [ das OV/EV-SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+
 
 ## Überprüfungsstatus {#statuses}
 
-Cloud Manager überprüft die Eigentümerschaft der Domain über das kundenseitig verwaltete Zertifikat. Wenn dies abgeschlossen ist, wird eine der folgenden Statusmeldungen angezeigt:
+Cloud Manager überprüft den Domänenbesitz über das vom Kunden verwaltete SSL-Zertifikat (OV/EV). Wenn dies abgeschlossen ist, wird eine der folgenden Statusmeldungen angezeigt:
 
 | Status | Beschreibung |
 | --- | --- |

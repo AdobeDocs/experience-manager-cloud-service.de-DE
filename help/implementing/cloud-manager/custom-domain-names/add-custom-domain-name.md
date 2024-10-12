@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 99%
+source-wordcount: '998'
+ht-degree: 75%
 
 ---
 
@@ -21,13 +21,13 @@ Erfahren Sie, wie Sie in Cloud Manager mithilfe der **Domain-Einstellungen** ein
 
 Erfüllen Sie die folgenden Anforderungen, bevor Sie einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen.
 
-* Bevor Sie einen benutzerdefinierten Domain-Namen hinzufügen, müssen Sie ein SSL-Domain-Zertifikat für die gewünschte Domain hinzugefügt haben, wie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) beschrieben.
+* Sie müssen ein SSL-Domänenzertifikat für die Domäne hinzugefügt haben, der Sie *vor* hinzufügen möchten, indem Sie einen benutzerdefinierten Domänennamen hinzufügen, wie im Dokument [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) beschrieben.
 * Sie müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen zu können.
 * Verwenden Sie Fastly oder ein anderes CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
->Selbst wenn Sie ein Adobe-fremdes CDN verwenden, müssen Sie Ihre Domain dennoch zu Cloud Manager hinzufügen.
+>Wenn Sie ein von Adobe verwaltetes CDN verwenden, müssen Sie Ihre Domäne dennoch zu Cloud Manager hinzufügen.
 
 ## Wo Sie benutzerdefinierte Domain-Namen hinzufügen können {#where-to-add-cdn}
 
@@ -46,14 +46,14 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Wählen Sie im Seitenmenü unter **Services** die Option ![Einstellungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Domain-Einstellungen** aus.
+1. Klicken Sie im Seitenmenü unter **Dienste** auf das Symbol ![Einstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Domäneneinstellungen**.
 
    ![Fenster „Domain-Einstellungen“](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
 1. Klicken Sie oben rechts auf der Seite **Domain-Einstellungen** auf **Domain hinzufügen**.
 
 1. Geben Sie im Dialogfeld **Domain hinzufügen** in das Feld **Domain-Name** den von Ihnen verwendeten benutzerdefinierten Domain-Namen ein.
-Verwenden Sie bei der Eingabe Ihrer Domain weder `http://` noch `https://` oder Leerzeichen.
+Schließen Sie bei der Eingabe des Domänennamens nicht `http://`, `https://` oder Leerzeichen ein.
 
 1. Klicken Sie auf **Erstellen**.
 
@@ -61,28 +61,24 @@ Verwenden Sie bei der Eingabe Ihrer Domain weder `http://` noch `https://` oder 
 
    | Option für den Zertifikatstyp | Beschreibung |
    | --- | --- |
-   | Verwaltetes Adobe-Zertifikat | Wählen Sie diesen Zertifikatstyp aus, wenn Sie ein DV(Domain Validation)-Zertifikat verwenden möchten. Diese Option eignet sich in den meisten Fällen hervorragend, da sie eine grundlegende Domain-Validierung ermöglicht. Adobe verwaltet und erneuert das Zertifikat automatisch. |
-   | Kundenseitig verwaltetes Zertifikat | Wählen Sie diesen Zertifikatstyp aus, wenn Sie ein EV/OV-Zertifikat verwenden möchten. Diese Option bietet verbesserte Sicherheit mit EV (Extended Validation) oder OV (Organization Validation). Verwenden Sie sie, wenn eine strengere Überprüfung, eine höhere Vertrauensebene oder eine benutzerdefinierte Kontrolle über die Zertifikate erforderlich sind. |
+   | Adobe managed (DV) SSL-Zertifikat | Wählen Sie diesen Zertifikatstyp aus, wenn Sie ein DV(Domain Validation)-Zertifikat verwenden möchten. Diese Option eignet sich in den meisten Fällen hervorragend, da sie eine grundlegende Domain-Validierung ermöglicht. Adobe verwaltet und erneuert das Zertifikat automatisch. |
+   | Vom Kunden verwaltetes SSL-Zertifikat (OV/EV) | Wählen Sie diesen Zertifikatstyp aus, wenn Sie zum Schützen der Domäne ein EV/OV-SSL-Zertifikat verwenden möchten. Diese Option bietet verbesserte Sicherheit mit OV (Organisationsvalidierung) oder EV (erweiterte Validierung). Verwenden Sie sie, wenn eine strengere Überprüfung, eine höhere Vertrauensebene oder eine benutzerdefinierte Kontrolle über die Zertifikate erforderlich sind. |
 
 1. Führen Sie im Dialogfeld **Domain verifizieren** je nach ausgewähltem Zertifikatstyp einen der folgenden Schritte aus:
 
    | Ausgewählter Zertifikatstyp | Beschreibung |
    | --- | ---  |
-   | Verwaltetes Adobe-Zertifikat | Führen Sie die [Schritte für von Adobe verwaltete Zertifikate](#adobe-managed-cert-steps) aus, bevor Sie mit Schritt 9 fortfahren. |
-   | Kundenseitig verwaltetes Zertifikat | Führen Sie die [Schritte für kundenseitig verwaltete Zertifikate](#customer-managed-cert-steps) aus, bevor Sie mit Schritt 9 fortfahren. |
-
-1. Klicken Sie auf **Überprüfen**.
-
-1. Sie können jetzt [ein SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+   | Verwaltetes Adobe-Zertifikat | a. Führen Sie die folgenden [Adobe verwalteten Zertifikatschritte](#adobe-managed-cert-steps) aus. Wenn Sie die Schritte im Dialogfeld **Domäne verifizieren** ausführen, klicken Sie auf **Überprüfen**.<ul><li>Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.</li><li>Cloud Manager überprüft schließlich das Eigentum an Domänennamen und aktualisiert den Status in der Tabelle **Domäneneinstellungen**. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Verifizierung des Domänenstatus](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Sie können jetzt [ein von Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).</li></ul> |
+   | Kundenseitig verwaltetes Zertifikat | a. Klicken Sie auf **OK**.<br>b. Sie können jetzt ein kundenverwaltetes SSL-Zertifikat (OV/EV) [ hinzufügen.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)<ul><li>Nachdem Sie das Zertifikat hinzugefügt haben, wird Ihr Domänenname in der Tabelle **Domäneneinstellungen** als verifiziert markiert. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li></ul><br>![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
-   >Wenn Sie ein kundenseitig verwaltetes SSL-Zertifikat und einen kundenseitig verwalteten CDN-Anbieter verwenden, müssen Sie kein SSL-Zertifikat hinzufügen und können direkt zu [CDN-Konfiguration hinzufügen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) gehen, sobald Sie bereit sind.
+   >Wenn Sie ein kundenverwaltetes SSL-Zertifikat (OV/EV) und einen kundenverwalteten CDN-Anbieter verwenden, können Sie das Hinzufügen eines SSL-Zertifikats überspringen und direkt zu &quot;[CDN-Konfiguration hinzufügen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)&quot;wechseln, wenn Sie bereit sind.
 
 
 ### Schritte bei verwalteten Adobe-Zertifikaten {#adobe-managed-cert-steps}
 
-Wenn Sie den Zertifikatstyp *Verwaltetes Adobe-Zertifikat* ausgewählt haben, führen Sie die folgenden Schritte im Dialogfeld **Domain überprüfen** aus.
+Wenn Sie den Zertifikatstyp *Adobe verwaltetes Zertifikat* ausgewählt haben, führen Sie den folgenden Schritt im Dialogfeld **Domäne überprüfen** aus.
 
 ![Schritte bei verwalteten Adobe-Zertifikaten](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
@@ -133,21 +129,6 @@ Fügen Sie die folgenden `A`-Einträge über Ihren Domain-Provider in den DNS-Ei
 >[!TIP]
 >
 >Der *CNAME* oder *A-Eintrag* kann auf dem zuständigen DNS-Server eingerichtet werden, um Zeit zu sparen.
-
-
-### Schritte bei kundenseitig verwalteten Zertifikaten {#customer-managed-cert-steps}
-
-Wenn Sie den Zertifikatstyp *Kundenseitig verwaltetes Zertifikat* ausgewählt haben, führen Sie die folgenden Schritte aus.
-
-1. Laden Sie im Dialogfeld **Domain verifizieren** ein neues EV/OV-Zertifikat hoch, das die ausgewählte Domain abdeckt.
-
-   ![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-1. Klicken Sie auf **OK**.
-
-   Nach dem Hochladen eines gültigen EV/OV-Zertifikats wird der Status der Domain in der Tabelle **Domain-Einstellungen** als **Überprüft** markiert.
-
-   ![Tabelle &quot;Domäneneinstellung&quot;mit dem verifizierten Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png).
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
@@ -206,11 +187,7 @@ dig TXT _aemverification.example.com -t txt
 
 -->
 
->[!NOTE]
->
->Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.
->
->Cloud Manager überprüft die Eigentümerschaft und aktualisiert den Status, der in der Tabelle **Domain-Einstellungen** zu sehen ist. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+
 
 <!--
 ## Next Steps {#next-steps}
