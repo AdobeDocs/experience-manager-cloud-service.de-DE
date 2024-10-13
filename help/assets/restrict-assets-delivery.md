@@ -1,66 +1,42 @@
 ---
-title: Beschränken der Bereitstellung von Assets in Experience Manager
-description: Erfahren Sie, wie Sie die Asset-Bereitstellung in [!DNL Experience Manager] einschränken.
+title: Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-Funktionen
+description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktionen einschränken.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 2%
+source-wordcount: '1181'
+ht-degree: 1%
 
 ---
 
-# Beschränken des Zugriffs auf Assets in [!DNL Experience Manager] {#restrict-access-to-assets}
+# Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-Funktionen {#restrict-access-to-assets}
 
 | [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Die zentrale Asset-Verwaltung in Experience Manager ermöglicht es dem DAM-Administrator oder Brand Manager, den Zugriff auf Assets zu verwalten. Sie können den Zugriff einschränken, indem sie Rollen für genehmigte Assets auf der Autorenseite, insbesondere auf der AEM as a Cloud Service-Autoreninstanz, konfigurieren.
+Die zentrale Asset-Verwaltung in Experience Manager ermöglicht es DAM-Administratoren oder Brand Manager, den Zugriff auf Assets zu verwalten, die über Dynamic Media mit OpenAPI-Funktionen verfügbar sind. Sie können die Bereitstellung genehmigter Assets (bis hin zu einem einzelnen Asset) auf ausgewählte [Adobe Identity Management-Systembenutzer (IMS) oder -gruppen](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) beschränken, indem sie bestimmte Metadaten für Assets in ihrem AEM as a Cloud Service-Autorendienst konfigurieren.
 
-Benutzer, die [ nach ](search-assets-api.md) suchen oder die [Versand-URLs](deliver-assets-apis.md) verwenden, können nach erfolgreicher Übergabe des Autorisierungsprozesses Zugriff auf eingeschränkte Assets erhalten.
+Sobald ein Asset über Dynamic Media mit OpenAPIs eingeschränkt ist, erhalten nur die (mit Adobe IMS integrierten) Benutzer, die für den Zugriff auf das Asset autorisiert sind, Zugriff. Um auf das Asset zugreifen zu können, muss der Benutzer die Funktionen [Suche](search-assets-api.md) und [Bereitstellung](deliver-assets-apis.md) von Dynamic Media mit OpenAPI nutzen.
 
 ![Eingeschränkter Zugriff auf Assets](/help/assets/assets/restricted-access.png)
-
-## Eingeschränkter Versand mit einem IMS-Token {#restrict-delivery-ims-token}
 
 In Experience Manager Assets umfasst der eingeschränkte Versand über IMS zwei wichtige Phasen:
 
 * Authoring
 * Bereitstellung
 
-### Authoring {#authoring}
+## Authoring {#authoring}
 
-Sie können die Bereitstellung von Assets innerhalb von [!DNL Experience Manager] je nach Rollen einschränken. Führen Sie die folgenden Schritte aus, um Rollen zu konfigurieren:
+### Eingeschränkter Versand mit einem IMS-Träger-Token {#restrict-delivery-ims-token}
 
-1. Wechseln Sie zu &quot;[!DNL Experience Manager]&quot;als DAM-Administrator.
-1. Wählen Sie das Asset aus, für das Sie die Rolle konfigurieren müssen.
-1. Navigieren Sie zu **[!UICONTROL Eigenschaften]** > **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Feld **[!UICONTROL Rollen]** auf der Registerkarte [!UICONTROL Erweiterte Metadaten] vorhanden ist.
+Sie können die Bereitstellung von Assets innerhalb von [!DNL Experience Manager] basierend auf IMS-Benutzer- und Gruppenidentitäten einschränken.
 
-   ![Roles metadata](/help/assets/assets/roles_metadata.jpg)
-Wenn das Feld nicht verfügbar ist, führen Sie die folgenden Schritte aus, um das Feld hinzuzufügen:
+>[!NOTE]
+>
+> Diese Funktion ist derzeit nicht Self-Service. Um die Asset-Bereitstellung für IMS [Benutzer](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) und [Gruppen](https://helpx.adobe.com/in/enterprise/using/user-groups.html) zu beschränken, wenden Sie sich an Ihr Enterprise-Supportteam, um zu erfahren, wie Sie die Informationen abrufen können, die zum Einschränken des Zugriffs vom Portal [Adobe Admin Console](https://adminconsole.adobe.com/) erforderlich sind, und wie Sie den Zugriff im AEM as a Cloud Service-Autorendienst konfigurieren.
 
-   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
-   1. Wählen Sie das Metadatenschema aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**.
-   1. Fügen Sie im Abschnitt **[!UICONTROL Formular erstellen]** rechts zum Abschnitt &quot;Metadaten&quot;des Formulars ein Feld mit mehreren Werten ]**hinzu.**[!UICONTROL 
-   1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
-      1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Rollen_.
-      1. Aktualisieren Sie die **[!UICONTROL Zuordnung zu Eigenschaft]** auf _./jcr:content/metadata/dam:roles_.
-
-1. Rufen Sie die IMS-Gruppen ab, die in den Roles-Metadaten des Assets hinzugefügt werden sollen. Gehen Sie wie folgt vor, um die IMS-Gruppen abzurufen:
-   1. Anmelden bei `https://adminconsole.adobe.com/.`
-   1. Wechseln Sie zu Ihrer jeweiligen Organisation und navigieren Sie zu **[!UICONTROL Benutzergruppen]**.
-   1. Wählen Sie die **[!UICONTROL Benutzergruppe]** aus, die Sie hinzufügen müssen, extrahieren Sie die **[!UICONTROL orgID]** und die **[!UICONTROL userGroupID]** aus der URL oder verwenden Sie Ihre Organisations-ID, z. B. `{orgID}@AdobeOrg:{usergroupID}`.
-
-1. Fügen Sie die Gruppen-ID zum Feld **[!UICONTROL Rollen]** der Asset-Eigenschaften hinzu. <br>
-Die im Feld **[!UICONTROL Rollen]** definierten Gruppen-IDs sind die einzigen Benutzer, die auf das Asset zugreifen können. Neben der IMS-Gruppen-ID können Sie auch die IMS-Benutzer-ID und die IMS-Profil-ID im Feld **[!UICONTROL Rollen]** hinzufügen. Zum Beispiel: `{orgId}@AdobeOrg:{profileId}`.
-
-   >[!NOTE]
-   >
-   >Für die neue Assets-Ansicht können Sie nur Zugriff auf die Ordnerebene und ausschließlich Gruppen und nicht einzelnen Benutzern gewähren. Erfahren Sie mehr über [Verwalten von Berechtigungen in Experience Manager Assets](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### Beschränken der Bereitstellung von Assets mit Ein- und Aus-Datum und -Uhrzeit {#restrict-delivery-assets-date-time}
+### Beschränken der Bereitstellung von Assets mit Ein- und Aus-Datum und -Uhrzeit {#restrict-delivery-assets-date-time}
 
 DAM-Autoren können auch die Bereitstellung von Assets einschränken, indem sie eine Ein- oder Ausschaltzeit für die Aktivierung definieren, die in den Asset-Eigenschaften verfügbar ist.
 
@@ -95,28 +71,36 @@ Wenn Ihr Asset in der Assets-Ansicht nicht auf dem Standard-Metadatenschema basi
 
 
 
-### Bereitstellung von beschränkten Assets {#delivery-restricted-assets}
+## Bereitstellung von beschränkten Assets {#delivery-restricted-assets}
 
-Die Bereitstellung eingeschränkter Assets basiert auf einer erfolgreichen Autorisierung für den Zugriff auf Assets. Die Autorisierung basiert entweder auf einem IMS-Token, wenn die Anfrage von einer AEM-Autoreninstanz oder einem Asset-Selektor gesendet wird, oder sie basiert auf einem speziellen Cookie, wenn Sie benutzerdefinierte Identitätsanbieter in Ihrer Publish- oder Vorschau-Instanz eingerichtet haben.
+Die Bereitstellung eingeschränkter Assets basiert auf einer erfolgreichen Autorisierung für den Zugriff auf Assets. Die Autorisierung erfolgt entweder über [IMS-Träger-Token](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (Anwendung für Anforderungen, die von der [AEM Asset-Auswahl](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) initiiert werden) oder ein sicheres Cookie (wenn Sie benutzerdefinierte Identitätsanbieter in Ihren AEM Publish-/Vorschau-Diensten eingerichtet haben und die Erstellung und Aufnahme von Cookies auf den Seiten eingerichtet haben).
 
-#### Bereitstellung für AEM Autoren- oder Asset-Selektor-Anforderungen {#delivery-aem-author-asset-selector}
+### Bereitstellung für AEM Autoren- oder Asset-Selektor-Anforderungen {#delivery-aem-author-asset-selector}
 
-Um die Bereitstellung eingeschränkter Assets zu aktivieren, wenn die Anfrage von AEM Autoreninstanz oder Asset-Selektor gesendet wird, ist ein gültiges IMS-Token erforderlich. Führen Sie die folgenden Schritte aus:
+Um die Bereitstellung von eingeschränkten Assets zu aktivieren, wenn die Anfrage vom Autoren-Dienst oder AEM Asset-Selektor gesendet wird, ist ein gültiges IMS-Träger-Token erforderlich.\
+Bei AEM Cloud Service-Autorendiensten sowie bei der Asset-Auswahl wird das IMS-Träger-Token nach einer erfolgreichen Anmeldung automatisch generiert und für Anfragen verwendet.
 
-1. [Generieren Sie ein Zugriffstoken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
-   * Melden Sie sich bei der Entwicklerkonsole Ihrer AEM as a Cloud Service-Umgebung an.
+>[!NOTE]
+>
+>Weitere Informationen zum Aktivieren der IMS-Authentifizierung bei AEM Asset Selector-basierten Integrationen erhalten Sie beim Enterprise Support
 
-   * Navigieren Sie zu **[!UICONTROL Umgebung]** > **[!UICONTROL Integrationen]** > **[!UICONTROL Lokales Token]** > **[!UICONTROL Lokales Entwicklungstoken abrufen]** > **[!UICONTROL Wert accessToken kopieren]**. Erfahren Sie mehr über [den Zugriff auf Token und zugehörige Aspekte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+1. Für Erlebnisse, die nicht auf der Asset-Auswahl basieren, unterstützen AEM as a Cloud Service und Dynamic Media mit OpenAPI-Funktionen derzeit serverseitige API-Integrationen und können IMS-Träger-Token generieren.
+   * Befolgen Sie die Anweisungen [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) , um Service-to-Server-API-Integrationen durchzuführen, mit denen die IMS-Träger-Token über [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) abgerufen werden können.
+   * Für eine begrenzte Dauer kann der lokale Entwicklerzugriff (nicht für Produktionsanwendungsfälle gedacht) kurzlebige IMS-Träger-Token für den Benutzer generiert werden, der für [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) authentifiziert wurde. Befolgen Sie dazu die Anweisungen [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow) .
 
-1. Integrieren Sie das erfasste Zugriffstoken in die Kopfzeile **[!UICONTROL Autorisierung]** und stellen Sie sicher, dass dem Wert **[!UICONTROL Bearer]** vorangestellt ist.
+1. Fügen Sie bei der Durchführung von API-Anfragen für [Suche](search-assets-api.md) und [Bereitstellung](deliver-assets-apis.md) das abgerufene IMS-Trägertoken zum Header **[!UICONTROL Autorisierung]** der HTTP-Anforderung hinzu (stellen Sie sicher, dass dessen Wert mit dem Präfix **[!UICONTROL Bearer]** versehen ist).
 
-1. Validieren Sie die Funktionalität des Zugriffstokens durch Initiieren einer Anfrage. Es sollte einen 404-Fehler geben, wenn kein IMS-Zugriffstoken vorhanden ist oder das bereitgestellte Zugriffstoken nicht dieselben Prinzipale oder Gruppen wie die in den Metadaten des Assets hinzugefügten aufweist.
+1. Um die Zugriffsbeschränkung zu überprüfen, initiieren Sie eine Anfrage zur Bereitstellungs-API mit und ohne den Header **[!UICONTROL Autorisierung]** .
+   * Die Antwort gibt den Fehlerstatus-Code `404` aus, wenn kein IMS-Träger-Token vorhanden ist oder das bereitgestellte IMS-Träger-Token nicht zum Benutzer gehört, dem Zugriff auf das Asset gewährt wurde (entweder direkt oder über die Gruppenmitgliedschaft).
+   * Die Antwort gibt einen &quot;`200`&quot;-Erfolgsstatus-Code mit dem binären Inhalt des Assets aus, wenn das IMS-Träger-Token einer der Benutzer oder Gruppen ist, denen Zugriff auf das Asset gewährt wurde.
 
-#### Bereitstellung für benutzerdefinierte Identitätsanbieter in der Publish-Instanz {#delivery-custom-identity-provider}
+### Bereitstellung für benutzerdefinierte Identitätsanbieter im Publish-Dienst {#delivery-custom-identity-provider}
 
-Bei einem benutzerdefinierten Identitäts-Provider, der in Ihrer Publish- oder Vorschauinstanz eingerichtet ist, können Sie die Gruppe erwähnen, die während des Einrichtungsprozesses Zugriff auf gesicherte Assets im Attribut `groupMembership` haben muss. Wenn Sie sich über die [SAML-Integration](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) bei einem benutzerdefinierten Identitäts-Provider anmelden, wird das Attribut `groupMembership` gelesen und verwendet, um ein Cookie zu erstellen, das in allen Authentifizierungsanfragen gesendet wird. Dies ähnelt einem IMS-Token bei einer Anfrage von AEM Autor oder Asset-Selektor.
+AEM Sites-, AEM Assets- und Dynamic Media-Lizenzen mit OpenAPI-Lizenzen können gemeinsam verwendet werden und die eingeschränkte Bereitstellung von Assets kann auf Websites konfiguriert werden, die über AEM Publish oder Vorschaudienste bereitgestellt werden.
+Wenn die Publish- und Vorschaudienste von AEM Sites so konfiguriert sind, dass ein [benutzerdefinierter Identitäts-Provider (IdP)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) verwendet wird, kann die Gruppe, die Zugriff auf gesicherte Assets in haben muss, während des Einrichtungsprozesses im Attribut `groupMembership` enthalten sein.\
+Wenn sich ein Website-Benutzer beim benutzerdefinierten Identitätsanbieter anmeldet und auf die im Publish/Preview-Dienst gehostete Website zugreift, wird das Attribut `groupMembership` gelesen und ein secure-cookie erstellt und auf der Website bereitgestellt, nachdem die Authentifizierung erfolgreich war. Dieses secure-cookie ist in allen nachfolgenden Anfragen enthalten, um den Website-Inhalt an den Benutzer-Agenten bereitzustellen.
 
-Wenn ein sicheres Asset auf einer Seite verfügbar ist und eine Anfrage an die Bereitstellungs-URL zum Rendern des Assets gesendet wird, prüft AEM die im Cookie oder im IMS-Token vorhandenen Rollen und stimmt sie mit dem beim Authoring des Assets angewendeten `dam:roles property` überein. Wenn eine Übereinstimmung vorliegt, wird das Asset angezeigt.
+Wenn ein sicheres Asset auf einer Seite angefordert wird, extrahieren AEM Publish- und Vorschaustufen das Autorisierungsmaterial aus dem secure-cookie und validieren den Zugriff. Wenn eine Übereinstimmung vorliegt, wird das Asset angezeigt.
 
 >[!NOTE]
 >
