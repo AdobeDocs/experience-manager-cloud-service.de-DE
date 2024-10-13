@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 >id="aemcloud_ctt_ingestion"
 >title="Inhaltsaufnahme"
 >abstract="Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem Migrationssatz in die Cloud Service-Zielinstanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=de#top-up-extraction-process" text="Auffüllextraktion"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Auffüllextraktion"
 
 Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager aufzunehmen:
 
@@ -94,7 +94,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
 >id="aemcloud_ctt_ingestion_topup"
 >title="Auffüllaufnahme"
 >abstract="Verwenden Sie die Auffüllfunktion, um Inhalte zu verschieben, die seit der vorherigen Inhaltsübertragungsaktivität geändert wurden. Überprüfen Sie die Protokolle nach Abschluss der Aufnahme auf Fehler und Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de" text="Anzeigen von Protokollen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Anzeigen von Protokollen"
 
 Das Content Transfer Tool verfügt über eine Funktion, die die Extraktion von differenziellen Inhalten ermöglicht, indem eine *Auffüllung* des Migrationssatzes ausgeführt wird. Dadurch kann der Migrationssatz so geändert werden, dass nur die Inhalte einbezogen werden, die seit der vorherigen Extraktion geändert wurden, ohne dass der gesamte Inhalt erneut extrahiert werden muss.
 
@@ -113,7 +113,7 @@ Erstellen Sie zunächst einen Aufnahmeauftrag und stellen Sie sicher, dass **Ber
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Fehlerbehebung für die Inhaltsaufnahme"
 >abstract="In den Aufnahmeprotokollen und der Dokumentation finden Sie Lösungen zu häufigen Ursachen für Aufnahmefehler und können sehen, welche Möglichkeiten es gibt, das Problem zu beheben und die Aufnahme erneut auszuführen. Nach der Korrektur können Sie die Aufnahme erneut ausführen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=de" text="Validieren von Inhaltsübertragungen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validieren von Inhaltsübertragungen"
 
 ### CAM kann das Migrations-Token nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
 
@@ -146,13 +146,13 @@ Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lag
 > Das Feld „Migrations-Token“ wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann die Benutzerin oder der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn das Token bereitgestellt, aber die Meldung weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
 
 * AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrations-Service gelegentlich aus einer Reihe normaler Gründe neu starten. Wenn der Service gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
-* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrations-Service ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
+* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrations-Service ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
 * Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrations-Service zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während des Aufnahme- und Indizierungsprozesses zu deaktivieren.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme oder Indizierung weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
 
 ### AEM-Versionsaktualisierungen und Aufnahmen {#aem-version-updates-and-ingestions}
 
-[AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=de) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service-Version auf dem neuesten Stand zu halten. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
+[AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service-Version auf dem neuesten Stand zu halten. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
 
 Wenn die „AEM-Versionsaktualisierungen“ im Zielprogramm integriert sind, versucht der Aufnahmevorgang, die Warteschlange zu deaktivieren, bevor er gestartet wird. Wenn die Aufnahme abgeschlossen ist, wird der Status des Versionsaktualisierers so zurückgegeben, wie er vor dem Start der Aufnahmen war.
 
@@ -174,7 +174,7 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Verletzung der Eindeutigkeitsbeschränkung"
 >abstract="Eine häufige Ursache für einen Fehler bei der Aufnahme mit der Einstellung „Nicht bereinigen“ ist ein Konflikt bei Knoten-IDs. Es darf nur einer der in Konflikt stehenden Knoten vorhanden sein."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de#top-up-ingestion-process" text="Auffüllaufnahme"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -194,7 +194,7 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Referenzierter Knoten kann nicht gelöscht werden"
 >abstract="Eine häufige Ursache für einen Fehler bei der Aufnahme mit der Einstellung „Nicht bereinigen“ ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Die Versionen des Knotens müssen in Ordnung gebracht werden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de#top-up-ingestion-process" text="Auffüllaufnahme"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine weitere häufige Ursache für einen Fehler bei der [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -212,7 +212,7 @@ Wenn eine Aufnahme mit der Einstellung **Nicht bereinigen** mit einem Migrations
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Eigenschaft für große Knoten"
 >abstract="Eine häufige Ursache für einen Aufnahmefehler ist die Überschreitung der maximalen Größe von Knoteneigenschaftswerten. Befolgen Sie die Dokumentation, auch die zum BPA-Bericht, um Abhilfe zu schaffen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de" text="Migrationsvoraussetzungen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Migrationsvoraussetzungen"
 
 Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält entweder:
 
