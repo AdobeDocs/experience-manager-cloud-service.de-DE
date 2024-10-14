@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 26%
@@ -69,7 +69,7 @@ Benötigen Sie Hilfe bei der Wahl, ob Sie ein von Adobe verwaltetes SSL-Zertifik
 
 1. Klicken Sie oben rechts auf der Seite „SSL-Zertifikate“ auf **SSL-Zertifikat hinzufügen**.
 
-1. Wählen Sie im Dialogfeld &quot;**SSL-Zertifikat hinzufügen**&quot;basierend auf [Ihrem speziellen Anwendungsfall](#which-ssl-to-add)&quot;die Option &quot;**Adobe managed (DV)**&quot;.
+1. Wählen Sie im Dialogfeld &quot;**SSL-Zertifikat hinzufügen**&quot;basierend auf [Ihrem speziellen Anwendungsfall](#which-ssl-to-add)&quot;die Option **Adobe Managed (DV)**.
 
    ![DV-Zertifikat hinzufügen](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
@@ -90,13 +90,18 @@ Sie können jetzt eine [CDN-Konfiguration](/help/implementing/cloud-manager/cdn-
 
 ## Hinzufügen eines kundenverwalteten SSL-Zertifikats (OV/ED) {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 Benötigen Sie Hilfe bei der Wahl, ob Sie ein von Adobe verwaltetes SSL-Zertifikat (empfohlen) oder ein kundenverwaltetes SSL-Zertifikat für Ihre Domäne verwenden möchten? Siehe [Auswählen des hinzuzufügenden SSL-Zertifikats](#which-ssl-to-add)
 
 **Hinzufügen eines kundenverwalteten SSL-Zertifikats (OV/EV):**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
+
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
+
 1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das Seitenmenü anzuzeigen.
+
 1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 
    ![Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -109,7 +114,8 @@ Benötigen Sie Hilfe bei der Wahl, ob Sie ein von Adobe verwaltetes SSL-Zertifik
 Dieses Feld dient nur zu Informationszwecken und kann ein beliebiger Name sein, der Ihnen dabei hilft, Ihr SSL-Zertifikat einfach zu referenzieren.
 
 1. Kopieren Sie in die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** die erforderlichen Werte aus Ihrem OV- oder EV-SSL-Zertifikat und fügen Sie sie in die entsprechenden Felder im Dialogfeld ein.
-Alle erkannten Fehler in den Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
+
+   Alle erkannten Fehler in den Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
 
    ![Dialogfeld &quot;SSL-Zertifikat hinzufügen&quot;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 
