@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '996'
 ht-degree: 26%
 
 ---
@@ -46,7 +46,7 @@ Nachdem Sie Cloud Manager hinzugefügt haben, warten Sie, bis Adobe das DV-SSL-Z
 * **Für ein kundenverwaltetes SSL-Zertifikat (OV/EV):**
 
    * Rufen Sie Ihr OV/EV-SSL-Zertifikat von einer Zertifizierungsstelle ab. Weitere Informationen finden Sie in den [Anforderungen für kundenverwaltete OV-/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) .
-   * Fügen Sie nach dem Erwerb des Zertifikats die ](#add-customer-manage-ssl-cert) Details des vom Kunden verwalteten SSL-Zertifikats (OV/EV) in Cloud Manager hinzu.[
+   * Fügen Sie nach dem Erwerb des Zertifikats die ](#add-customer-managed-ssl-cert) Details des vom Kunden verwalteten SSL-Zertifikats (OV/EV) in Cloud Manager hinzu.[
    * Nach dem Hinzufügen wird der benutzerdefinierte Domänenname als verifiziert markiert und das SSL-Zertifikat angewendet.
 
 In beiden Fällen ist die benutzerdefinierte Domäne nach der Überprüfung und Installation des Zertifikats für die sichere Verwendung in Ihrer Umgebung verfügbar. Überprüfen Sie in der Cloud Manager-Benutzeroberfläche regelmäßig den Status der Domäne ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) , um sicherzustellen, dass alles erwartungsgemäß funktioniert.[
@@ -76,8 +76,7 @@ Benötigen Sie Hilfe bei der Wahl, ob Sie ein von Adobe verwaltetes SSL-Zertifik
 1. Geben Sie im Feld **Zertifikatname** einen Namen ein, den Sie mit dem DV-SSL-Zertifikat verknüpfen möchten.
 
 1. Wählen Sie in der Dropdownliste **Domänen auswählen** eine oder mehrere verifizierte Domänen aus, die dem DV-SSL-Zertifikat zugeordnet werden sollen.
-   * Keine Domänen zur Auswahl? In diesem Fall müssen Sie zunächst einen benutzerdefinierten Domänennamen hinzufügen und sicherstellen, dass er überprüft wird, bevor Sie ein SSL-Zertifikat hinzufügen können.
-   * Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+   * Keine Domänen zur Auswahl? In diesem Fall müssen Sie zunächst [einen benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) hinzufügen und sicherstellen, dass er überprüft wird, bevor Sie ein von Adobe verwaltetes SSL-Zertifikat hinzufügen können.
    * Nachdem Sie einen benutzerdefinierten Domain-Namen hinzugefügt haben, kehren Sie zu diesem Thema zurück und beginnen Sie erneut mit Schritt 1.
 
 1. Klicken Sie unten rechts im Dialogfeld auf **Speichern**.
