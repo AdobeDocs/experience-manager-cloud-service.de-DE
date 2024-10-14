@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -112,7 +112,7 @@ Geben Sie die ersten Zeichen des Zweignamens ein, und die Funktion zum automatis
 
 Wenn die Pipeline ausgeführt wird, werden für Experience Audit konfigurierte Pfade basierend auf Leistungs-, Zugänglichkeits-, SEO-, Best Practices- und PWA-Tests gesendet und ausgewertet. Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Erlebnisprüfungen](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
-Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
+Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
 ### Zielgerichtete Bereitstellungspipeline konfigurieren {#targeted-deployment}
 
@@ -132,7 +132,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 >[!NOTE]
 >
->Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt. Weitere Informationen und die vollständige Liste der Einschränkungen finden Sie unter [Hinzufügen privater Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) .
+>Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt. Details sowie eine vollständige Liste der Einschränkungen finden Sie unter [Hinzufügen von privaten Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
 **So konfigurieren Sie eine zielgerichtete Bereitstellungs-Pipeline:**
 
@@ -162,9 +162,9 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 1. Klicken Sie auf **Speichern**.
 
-Die Pipeline wird gespeichert und auf der Karte **Pipelines** auf der Seite **Programmübersicht** können Sie jetzt [Pipelines verwalten](managing-pipelines.md).
+Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-## Dispatcher-Pakete überspringen {#skip-dispatcher-packages}
+## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 
 Um Dispatcher-Pakete in Ihrer Pipeline zu erstellen, ohne sie für den Build-Speicher zu veröffentlichen, können Sie die Veröffentlichungsoption deaktivieren. Dies kann dazu beitragen, die Laufzeit der Pipeline zu verkürzen.
 

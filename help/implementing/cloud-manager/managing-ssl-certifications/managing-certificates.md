@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ Cloud Manager bietet einen Überblick über den Status aller Zertifikate für Ih
 1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das Seitenmenü anzuzeigen.
 1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 
-Die Seite **SSL-Zertifikate** enthält den Status Ihrer SSL-Zertifikate.
+Die Seite **SSL-Zertifikate** zeigt den Status Ihrer SSL-Zertifikate.
 
 | Status des SSL-Zertifikats | Beschreibung |
 | --- | --- |
@@ -64,7 +64,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 >
 >Wenn Sie über zwei oder mehr SAN-Zertifikate verfügen, die denselben SAN-Domäneneintrag abdecken, wird die Domäne für die Domäne installiert, wenn die Domäne durch ein Zertifikat abgedeckt ist und das andere aktualisiert wird.
 >
->Weitere Informationen finden Sie unter [Fehlerbehebung bei Problemen mit SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) .
+>Weitere Informationen finden Sie unter [Fehlerbehebung bei SSL-Zertifikatproblemen](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert).
 
 ## Ersetzen eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#replace-ssl-certificate}
 

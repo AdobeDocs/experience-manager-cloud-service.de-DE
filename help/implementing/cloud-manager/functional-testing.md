@@ -87,7 +87,7 @@ Beispiele finden Sie unter [Open-Source-Produkttests](https://github.com/adobe/a
 
 Weitere Informationen finden Sie unter [Java-Funktionstests](/help/implementing/cloud-manager/java-functional-testing.md).
 
-### Benutzerdefinierte UI-Tests
+### Benutzerdefinierte Benutzeroberflächentests
 
 Um die Risikokontrolle für Ihre kundenspezifische Entwicklung zu maximieren, empfiehlt Ihnen Adobe, kritische Benutzeroberflächentests in AEM as a Cloud Service zu erfassen. Beschränken Sie Ihre Aktivitäten, konzentrieren Sie sich aber darauf, ihre Wirkung auf das Kundenerlebnis zu maximieren.
 
@@ -115,7 +115,7 @@ Weitere Details finden Sie unter [Testen mit Experience Audit](/help/implementin
 
 ### Kundenvalidierungen
 
-Der Qualitätstest für Kundenvalidierungen ist ein Platzhalter für die eigene Teststrategie und den eigenen Aufwand auf Kundenseite. Er wird ausgeführt, bevor die kundenseitigen Anwendungsänderungen die AEM-Cloud-Bereitstellungs-Pipelines erreichen.
+Der Qualitätstest für Kundenvalidierungen ist ein Platzhalter für die kundeneigene Teststrategie und den Testaufwand auf Kundenseite. Er wird ausgeführt, bevor die kundenseitigen Anwendungsänderungen die AEM-Cloud-Bereitstellungs-Pipelines erreichen.
 
 Hier können Sie die Tools und Frameworks auswählen, die Sie bevorzugen. Im Gegensatz zu Kundenfunktionstests und benutzerdefinierten UI-Tests gibt es keine AEM as a Cloud Service-bezogenen Beschränkungen. Daher empfiehlt Adobe, dass Sie hier langwierige Funktionstests und Benutzeroberflächentests durchführen.
 
