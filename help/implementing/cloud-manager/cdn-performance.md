@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 96%
+source-wordcount: '376'
+ht-degree: 84%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Erfahren Sie, wie Cloud Manager die Leistung des Inhaltsbereitstellungsnetzwerks (Content Delivery Network, CDN) bewertet und was Sie über das Dashboard lernen können.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Jedes Cloud Manager-Programm verfügt über ein CDN-Leistungs-Dashboard. Dieses Dashboard enthält einen Gesamtwert für die CDN-Leistung sowie bei Bedarf Trends, Warnungen und Verbesserungsvorschläge.
 
@@ -28,7 +28,7 @@ Das CDN-Dashboard ist auf der Übersichtsseite jedes Programms verfügbar.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, dessen CDN-Dashboard Sie anzeigen möchten.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, dessen CDN-Dashboard angezeigt werden soll.
 
    ![Seite „Meine Programme“](assets/my-programs.png)
 
@@ -42,17 +42,17 @@ Das Dashboard enthält einen Gesamtwert für die CDN-Leistung sowie bei Bedarf T
 
 ![CDN-Leistungs-Dashboard](assets/cdn-performance-dashboard.png)
 
-Für Details zu Ihrer CDN-Leistung sowie für Vorschläge, wie Sie diese verbessern können, tippen oder klicken Sie auf **Trend anzeigen**.
+Klicken Sie auf **Trend anzeigen**, um Details zu Ihrer CDN-Leistung sowie Vorschläge zur Verbesserung zu erhalten.
 
 ![Leistungs-Trend](assets/cdn-performance-trend.png)
 
-Tippen oder klicken Sie auf **Ansicht** unterhalb des Diagramms, um die Zeitspanne des Diagramms zu ändern.
+Klicken Sie unter dem Diagramm auf **Anzeigen** , um die Zeitspanne des Diagramms zu ändern.
 
 Für Vorschläge zur Verbesserung der CDN-Leistung wählen Sie die Registerkarte **Empfehlungen**.
 
 ![CDN-Empfehlungen](assets/cdn-performance-recommendations.png)
 
-Tippen oder klicken Sie auf den Pfeil neben einer Empfehlung in der Liste, um Details zu den zu ergreifenden Maßnahmen und zur Ursache des Problems anzuzeigen.
+Klicken Sie auf den Pfeil neben einer Empfehlung in der Liste, um Details zu den zu ergreifenden Maßnahmen und zur Ursache des Problems anzuzeigen.
 
 ## Cache-Trefferdefinition {#cache-hit}
 

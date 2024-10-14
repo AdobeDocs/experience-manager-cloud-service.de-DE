@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 27d9a48c6afa115d5c755fa54cf96cb6a561b2f5
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '789'
 ht-degree: 62%
 
 ---
@@ -31,7 +31,7 @@ Unter Adobe Cloud Manager können Sie eine benutzerdefinierte Domain-Namenskonfi
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Klicken Sie oben links auf der Seite auf das Symbol &quot;![Anzeigen&quot;- Hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)&quot;, um das linke Navigationsmenü anzuzeigen.
+1. Klicken Sie oben links auf der Seite auf das Symbol ![Anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Menü links einzublenden.
 
 1. Klicken Sie unter der Überschrift **Services** auf **CDN-Konfigurationen**.
 

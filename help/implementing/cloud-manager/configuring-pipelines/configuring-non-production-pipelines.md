@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 >[!NOTE]
 >
->Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt. Weitere Informationen und die vollständige Liste der Einschränkungen finden Sie unter [Hinzufügen privater Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) .
+>Pipelines auf Web-Ebene und Konfigurations-Pipelines werden bei privaten Repositorys nicht unterstützt. Details sowie eine vollständige Liste der Einschränkungen finden Sie unter [Hinzufügen von privaten Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
 Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitstellungs-Pipeline sind dieselben, wenn Sie einen Bereitstellungstyp auswählen.
 
@@ -156,16 +156,16 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
 
    ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Wenn Sie die Erlebnisprüfung aktiviert haben, tippen oder klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnisprüfung** zu gelangen, auf der Sie die Pfade definieren können, die immer in die Erlebnisprüfung einbezogen werden sollen.
+1. Wenn Sie Experience Audit aktiviert haben, klicken Sie auf **Weiter** , um zur Registerkarte **Erlebnisprüfung** zu wechseln, wo Sie die Pfade definieren können, die immer in Experience Audit enthalten sein sollen.
 
    * Wenn Sie **Erlebnis-Audit** aktiviert haben, finden Sie im Dokument [Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) Details zur Konfiguration.
    * Wenn nicht, überspringen Sie diesen Schritt.
 
-1. Tippen oder klicken Sie auf **Speichern**, um die Pipeline zu speichern.
+1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
-Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
+Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-## Dispatcher-Pakete überspringen {#skip-dispatcher-packages}
+## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 
 Wenn Sie möchten, dass Dispatcher-Pakete als Teil Ihrer Pipeline erstellt werden, sie aber nicht im Build-Speicher veröffentlicht werden sollen, können Sie die Veröffentlichung deaktivieren, was die Laufzeit der Pipeline verkürzen kann.
 

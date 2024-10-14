@@ -1,34 +1,31 @@
 ---
 title: Projekt-Setup
-description: Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Sie bei der Erstellung Ihres eigenen Projekts einhalten müssen.
+description: Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards bei der Erstellung Ihres eigenen Projekts beachtet werden müssen.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 70%
 
 ---
 
 # Projekt-Setup {#project-setup}
 
-Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Sie bei der Erstellung Ihres eigenen Projekts einhalten müssen.
+Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards bei der Erstellung Ihres eigenen Projekts beachtet werden müssen.
 
-## Einzelheiten der Projekteinstellung {#project-setup-details}
+## Details zur Projekteinrichtung {#project-setup-details}
 
-Um mit Cloud Manager erfolgreich Projekte zu erstellen und bereitzustellen, müssen AEM-Projekte den folgenden Richtlinien entsprechen:
+Um Cloud Manager erfolgreich zu erstellen und bereitzustellen, müssen AEM Projekte die folgenden Richtlinien beachten:
 
 * Projekte müssen mit [Apache Maven](https://maven.apache.org) erstellt werden.
 * Im Stammverzeichnis des Git-Repositorys muss eine Datei `pom.xml` vorhanden sein. Diese `pom.xml`-Datei kann auf beliebig viele Untermodule verweisen (die wiederum weitere Untermodule umfassen können usw.).
-* Sie können Verweise auf weitere Maven-Artefakt-Repositorys in Ihren `pom.xml`-Dateien hinzufügen.
-   * Der Zugriff auf [kennwortgeschützte Artefakt-Repositorys](#password-protected-maven-repositories) wird bei entsprechender Konfiguration unterstützt. Allerdings wird der Zugriff auf netzwerkgeschützte Artefakte nicht unterstützt.
-* Bereitstellbare Inhaltspakete werden erkannt, wenn Sie nach Inhaltspaketen im `.zip`-Format suchen, die in einem Verzeichnis namens `target` enthalten sind.
-   * Eine beliebige Anzahl von Untermodulen kann Inhaltspakete produzieren.
-* Bereitstellbare Dispatcher-Artefakte werden erkannt, wenn Sie nach `.zip`-Dateien (ebenfalls in einem Verzeichnis namens `target`) suchen, die Verzeichnisse mit den Namen `conf` und `conf.d` enthalten.
-* Wenn mehrere Inhaltspakete vorhanden sind, ist die Reihenfolge der Paketbereitstellungen nicht garantiert.
-   * Wenn eine bestimmte Reihenfolge benötigt wird, können die Abhängigkeiten des Inhaltspakets zum Definieren der Reihenfolge verwendet werden.
+* Sie können Verweise auf weitere Maven-Artefakt-Repositorys in Ihren `pom.xml`-Dateien hinzufügen. Der Zugriff auf [kennwortgeschützte Artefakt-Repositorys](#password-protected-maven-repositories) wird bei entsprechender Konfiguration unterstützt. Allerdings wird der Zugriff auf netzwerkgeschützte Artefakte nicht unterstützt.
+* Bereitstellbare Inhaltspakete werden erkannt, indem nach Inhaltspaket-`.zip` -Dateien gesucht wird, die in einem Verzeichnis mit dem Namen `target` enthalten sind. Eine beliebige Anzahl von Untermodulen kann Inhaltspakete produzieren.
+* Bereitstellbare Dispatcher-Artefakte werden erkannt, indem nach `.zip` -Dateien gesucht wird (die auch im Verzeichnis `target` enthalten sind), die Verzeichnisse mit den Namen `conf` und `conf.d` enthalten.
+* Wenn mehrere Inhaltspakete vorhanden sind, ist die Reihenfolge der Paketbereitstellungen nicht garantiert. Wenn eine bestimmte Reihenfolge benötigt wird, können die Abhängigkeiten des Inhaltspakets zum Definieren der Reihenfolge verwendet werden.
 * Pakete können bei der Bereitstellung [übersprungen](#skipping-content-packages) werden.
 
 ## Aktivieren von Maven-Profilen in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
@@ -37,7 +34,7 @@ In einigen wenigen Fällen müssen Sie den Build-Prozess möglicherweise etwas a
 
 Die Aktivierung eines Maven-Profils innerhalb der Cloud Manager-Build-Umgebung sollte durch die Suche nach der Umgebungsvariablen `CM_BUILD` [erfolgen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Ebenso sollte bei einem Profil, das nur außerhalb der Cloud Manager-Build-Umgebung verwendet werden soll, darauf geachtet werden, dass diese Variable nicht vorhanden ist.
 
-Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn der Build innerhalb von Cloud Manager ausgeführt wird, verwenden Sie Folgendes.
+Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn der Build innerhalb von Cloud Manager ausgeführt wird, verwenden Sie Folgendes:
 
 ```xml
         <profile>
@@ -75,7 +72,7 @@ Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn 
 >
 >Um dieses Profil auf einer Entwickler-Workstation zu testen, können Sie es entweder in der Befehlszeile (mit `-PcmBuild`) oder in der integrierten Entwicklungsumgebung (IDE) aktivieren.
 
-Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn der Build außerhalb von Cloud Manager ausgeführt wird, verwenden Sie Folgendes.
+Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn der Build außerhalb von Cloud Manager ausgeführt wird, verwenden Sie Folgendes:
 
 ```xml
         <profile>
@@ -109,13 +106,13 @@ Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn 
         </profile>
 ```
 
-## Unterstützung für kennwortgeschütztes Maven-Repository {#password-protected-maven-repositories}
+## Verwenden eines kennwortgeschützten Maven-Repositorys in Cloud Manager {#password-protected-maven-repositories}
 
 >[!NOTE]
 >
->Artefakte aus einem passwortgeschützten Maven-Repository sollten mit Vorsicht verwendet werden, da Code, der über diesen Mechanismus bereitgestellt wird, derzeit nicht alle [Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) durchläuft, die in den Qualitätstests von Cloud Manager implementiert sind. Daher sollten sie nur in seltenen Fällen und nur für Code verwendet werden, der nicht an AEM gebunden ist. Es wird empfohlen, neben der Binärdatei auch die Java-Quellen sowie den gesamten Quell-Code des Projekts bereitzustellen.
+>Stellen Sie Artefakte aus kennwortgeschützten Maven-Repositorys vorsichtig bereit, da Cloud Manager diesen Code nicht mit seinen [Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) auswertet. Diese Methode sollte nur für seltene Situationen reserviert und nur auf Code angewendet werden, der nicht mit AEM in Verbindung steht. Adobe empfiehlt, sowohl die Java-Quellen als auch den gesamten Projektquellcode zusammen mit der Binärdatei einzubeziehen. Dadurch wird eine größere Transparenz und Wartbarkeit während des gesamten Implementierungsprozesses gewährleistet.
 
-So verwenden Sie ein passwortgeschütztes Maven-Repository in Cloud Manager:
+**So verwenden Sie ein kennwortgeschütztes Maven-Repository in Cloud Manager:**
 
 1. Geben Sie das Passwort (und optional den Benutzernamen) als geheime [Pipeline-Variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) an.
 1. Dann verweisen Sie auf dieses Geheimnis in einer Datei namens `.cloudmanager/maven/settings.xml` im Git-Repository, die dem Schema der [Maven-Einstellungsdatei](https://maven.apache.org/settings.html) folgt.
@@ -124,11 +121,11 @@ Wenn der Build-Prozess von Cloud Manager gestartet wird:
 
 * Das `<servers>`-Element in dieser Datei wird in die von Cloud Manager bereitgestellte Standard-Datei `settings.xml` eingefügt.
    * Server-IDs, die mit `adobe` und `cloud-manager` beginnen, gelten als reserviert. Verwenden Sie sie nicht auf benutzerdefinierten Servern.
-   * Server-IDs, die nicht mit einem dieser Präfixe oder der Standard-ID `central` übereinstimmen, werden von Cloud Manager niemals gespiegelt.
+   * Cloud Manager spiegelt nur die Server-IDs wider, die bestimmten Präfixen oder der Standard-ID `central` entsprechen. Alle anderen Server-IDs werden von der Spiegelung ausgeschlossen.
 * Wenn diese Datei vorhanden ist, wird die Server- ID von innerhalb eines `<repository>`- und/oder `<pluginRepository>`-Elements in der `pom.xml`-Datei referenziert.
-* Im Allgemeinen wären diese `<repository>`- und/oder `<pluginRepository>`-Elemente in einem [Cloud Manager-spezifischen Profil](#activating-maven-profiles-in-cloud-manager) enthalten, auch wenn dies nicht unbedingt erforderlich ist.
+* Im Allgemeinen sind diese `<repository>` - und `<pluginRepository>` -Elemente in einem [Cloud Manager-spezifischen Profil](#activating-maven-profiles-in-cloud-manager) enthalten, allerdings ist ihre Einbeziehung nicht unbedingt erforderlich.
 
-Beispiel: Das Repository befindet sich unter `https://repository.myco.com/maven2`, der von Cloud Manager zu verwendende Benutzername lautet `cloudmanager` und das Kennwort lautet `secretword`. Sie würden die folgenden Schritte ausführen.
+Beispiel: Das Repository befindet sich unter `https://repository.myco.com/maven2`, der von Cloud Manager zu verwendende Benutzername lautet `cloudmanager` und das Kennwort lautet `secretword`. Gehen Sie wie folgt vor:
 
 1. Legen Sie in der Pipeline das Passwort als Geheimnis fest.
 
@@ -136,7 +133,7 @@ Beispiel: Das Repository befindet sich unter `https://repository.myco.com/maven2
    $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
    ```
 
-1. Verweisen Sie anschließend aus der `.cloudmanager/maven/settings.xml`-Datei darauf.
+1. Verweisen Sie in der Datei `.cloudmanager/maven/settings.xml` auf dieses Geheimnis:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -197,7 +194,7 @@ Beispiel: Das Repository befindet sich unter `https://repository.myco.com/maven2
 
 Es empfiehlt sich, die Java-Quellen zusammen mit der Binärdatei in einem Maven-Repository bereitzustellen.
 
-Konfigurieren Sie dazu das Maven-Source-Plug-in in Ihrem Projekt.
+Konfigurieren Sie dazu das maven-source-plugin in Ihrem Projekt.
 
 ```xml
          <plugin>
@@ -216,9 +213,9 @@ Konfigurieren Sie dazu das Maven-Source-Plug-in in Ihrem Projekt.
 
 ### Bereitstellen von Projektquellen {#deploying-project-sources}
 
-Es empfiehlt sich, die gesamte Projektquelle zusammen mit den Binärdaten in einem Maven-Repository bereitzustellen. Dies erlaubt die Neuerstellung des exakten Artefakts.
+Es empfiehlt sich, die gesamte Projekt-Quelle zusammen mit der Binärdatei in einem Maven-Repository bereitzustellen. Dadurch kann das genaue Artefakt neu erstellt werden.
 
-Konfigurieren Sie dazu das Maven-Assembly-Plug-in in Ihrem Projekt.
+Konfigurieren Sie das maven-assembly-Plug-in in Ihrem Projekt wie folgt:
 
 ```xml
          <plugin>
@@ -243,7 +240,7 @@ Konfigurieren Sie dazu das Maven-Assembly-Plug-in in Ihrem Projekt.
 
 ## Überspringen von Inhaltspaketen {#skipping-content-packages}
 
-In Cloud Manager können Builds eine beliebige Anzahl von Inhaltspaketen generieren. Aus vielerlei Gründen kann es sinnvoll sein, ein Inhaltspaket zu erstellen, es jedoch nicht bereitzustellen. Ein Beispiel kann das Erstellen von Inhaltspaketen sein, die nur zum Testen verwendet werden oder die durch einen anderen Schritt im Build-Prozess neu verpackt werden. Das heißt, sie werden ein Unterpaket eines anderen Pakets.
+In Cloud Manager können Builds eine beliebige Anzahl von Inhaltspaketen generieren. Aus vielerlei Gründen kann es sinnvoll sein, ein Inhaltspaket zu erstellen, es jedoch nicht bereitzustellen. Ein Beispiel tritt auf, wenn Inhaltspakete ausschließlich zu Testzwecken erstellt werden oder wenn ein anderer Schritt im Build-Prozess sie neu packt. Das heißt, sie werden ein Unterpaket eines anderen Pakets.
 
 Um diesen Szenarien gerecht zu werden, sucht Cloud Manager in den Eigenschaften erstellter Inhaltspakete nach einer Eigenschaft namens `cloudManagerTarget`. Wenn diese Eigenschaft auf `none` festgelegt ist, wird das Paket übersprungen und nicht bereitgestellt.
 
@@ -281,7 +278,7 @@ Das `content-package-maven-plugin` weist eine ähnliche Konfiguration auf.
 
 ## Wiederverwendung von Build-Artefakten {#build-artifact-reuse}
 
-In vielen Fällen wird derselbe Code in mehreren AEM-Umgebungen bereitgestellt. Wenn festgestellt wird, dass derselbe Git-Commit in mehreren Pipeline-Ausführungen mit vollem Stapel verwendet wird, verhindert Cloud Manager, dass die Code-Basis neu erstellt wird.
+In vielen Fällen wird derselbe Code in mehreren AEM-Umgebungen bereitgestellt. Wenn festgestellt wird, dass derselbe Git-Commit in mehreren Full-Stack-Pipeline-Ausführungen verwendet wird, verhindert Cloud Manager nach Möglichkeit eine Neuerstellung der Code-Basis.
 
 Wenn eine Ausführung gestartet wird, wird der aktuelle HEAD-Commit für die Zweig-Pipeline extrahiert. Der Commit-Hash ist in der Benutzeroberfläche und über die API sichtbar. Wenn der Build-Schritt erfolgreich abgeschlossen wurde, werden die resultierenden Artefakte basierend auf diesem Commit-Hash gespeichert und können in nachfolgenden Pipeline-Ausführungen wiederverwendet werden.
 
@@ -310,8 +307,8 @@ Beachten Sie, dass Ihr Programm über zwei Entwicklungs-Pipelines verfügt:
 
 Beide Verzweigungen befinden sich auf derselben Commit-ID.
 
-1. Wenn Sie zuerst Pipeline 1 ausführen, werden die Pakete normal erstellt.
-1. Wenn Sie dann Pipeline 2 ausführen, werden von Pipeline 1 erstellte Pakete wiederverwendet.
+1. Beim Ausführen von Pipeline 1 werden die Pakete zunächst normal erstellt.
+1. Wenn Sie dann Pipeline 2 ausführen, werden die von Pipeline 1 erstellten Pakete wiederverwendet.
 
 #### Beispiel 2 {#example-2}
 
@@ -329,7 +326,7 @@ In diesem Fall wird das Artefakt von `foo` für die Produktions-Pipeline wiederv
 
 ### Deaktivieren {#opting-out}
 
-Falls gewünscht, kann das Wiederverwendungsverhalten für bestimmte Pipelines deaktiviert werden, indem die Pipeline-Variable `CM_DISABLE_BUILD_REUSE` auf `true` festgelegt wird. Wenn diese Variable festgelegt ist, wird der Commit-Hash weiterhin extrahiert und die resultierenden Artefakte werden zur späteren Verwendung gespeichert, aber die zuvor gespeicherten Artefakte werden nicht wiederverwendet. Um dieses Verhalten zu verstehen, sehen Sie sich das folgende Szenario an.
+Falls gewünscht, kann das Wiederverwendungsverhalten für bestimmte Pipelines deaktiviert werden, indem die Pipeline-Variable `CM_DISABLE_BUILD_REUSE` auf `true` festgelegt wird. Wenn diese Variable festgelegt ist, extrahiert das System den Commit-Hash und speichert die resultierenden Artefakte zur späteren Verwendung, überspringt jedoch die Wiederverwendung aller zuvor gespeicherten Artefakte. Um dieses Verhalten zu verstehen, sehen Sie sich das folgende Szenario an.
 
 1. Eine neue Pipeline wird erstellt.
 1. Die Pipeline wird ausgeführt (Ausführung #1) und der aktuelle HEAD-Commit lautet `becdddb`. Die Ausführung ist erfolgreich und die resultierenden Artefakte werden gespeichert.
@@ -343,6 +340,7 @@ Falls gewünscht, kann das Wiederverwendungsverhalten für bestimmte Pipelines d
 
 * Build-Artefakte werden nicht in verschiedenen Programmen wiederverwendet, unabhängig davon, ob der Commit-Hash identisch ist.
 * Build-Artefakte werden innerhalb desselben Programms wiederverwendet, selbst wenn die Verzweigung und/oder die Pipeline unterschiedlich sind.
-* Der [Umgang mit Maven-Versionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md) ersetzt die Projektversion nur in Produktions-Pipelines. Wenn daher derselbe Commit sowohl für die Ausführung einer Entwicklungs-Bereitstellung als auch für die Ausführung einer Produktions-Pipeline verwendet wird und die Pipeline der Entwicklungs-Bereitstellung zuerst ausgeführt wird, werden die Versionen in der Staging- und Produktionsumgebung bereitgestellt, ohne dass Änderungen vorgenommen werden. In diesem Fall wird jedoch weiterhin ein Tag erstellt.
-* Wenn das Abrufen der gespeicherten Artefakte nicht erfolgreich ist, wird der Build-Schritt so ausgeführt, als wären keine Artefakte gespeichert worden.
+* Die [Maven-Versionsverarbeitung](/help/implementing/cloud-manager/managing-code/project-version-handling.md) ersetzt die Projektversion nur in Produktions-Pipelines.
+Wenn derselbe Commit sowohl für eine Entwicklungs-Bereitstellung als auch für eine Produktions-Pipeline verwendet wird und die Entwicklungs-Bereitstellung zuerst ausgeführt wird, werden die Versionen unverändert in der Staging- und Produktionsumgebung bereitgestellt. In diesem Fall wird jedoch nach wie vor ein Tag erstellt.
+* Wenn das Abrufen der gespeicherten Artefakte nicht erfolgreich ist, wird der Build-Schritt so ausgeführt, als ob keine Artefakte gespeichert wurden.
 * Andere Pipeline-Variablen als `CM_DISABLE_BUILD_REUSE` werden nicht berücksichtigt, wenn Cloud Manager entscheidet, zuvor erstellte Build-Artefakte wiederzuverwenden.

@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 90%
+source-wordcount: '1029'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das Seitenmenü anzuzeigen.
 1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
-1. Klicken Sie in der Zeile des abgelaufenen, kundenseitig verwalteten Zertifikats, das Sie aktualisieren möchten, auf die Schaltfläche mit den Auslassungspunkten ganz rechts und wählen Sie dann **Anzeigen und aktualisieren** aus.
+1. Klicken Sie in der Zeile des abgelaufenen kundenverwalteten Zertifikats, das Sie aktualisieren möchten, auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ganz rechts und dann auf **Anzeigen und Aktualisieren**.
 
    ![Aktualisieren einer abgelaufenen, kundenseitig verwalteten SSL-Zertifizierung](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -117,9 +117,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 
-1. Klicken Sie auf der Seite &quot;SSL-Zertifikate&quot;in der Tabellenzeile des Zertifikats, das Sie löschen möchten, auf das Symbol &quot;![Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ganz rechts.
-
-1. Klicken Sie im Dropdown-Menü auf **Löschen**.
+1. Klicken Sie auf der Seite &quot;SSL-Zertifikate&quot;in der Tabellenzeile des Zertifikats, das Sie löschen möchten, auf das Symbol &quot;![Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ganz rechts und klicken Sie dann auf &quot;**Löschen**&quot;.
 
    Wenn **Löschen** über ein Informationssymbol verfügt, das im folgenden Bild zu sehen ist, finden Sie weitere Informationen unter Hinweis oben.
 

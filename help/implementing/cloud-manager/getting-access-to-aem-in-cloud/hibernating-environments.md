@@ -1,50 +1,52 @@
 ---
-title: Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen
-description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
+title: Ruhezustand und Ruhezustand von Sandbox-Umgebungen
+description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand wechseln und den Ruhezustand deaktivieren können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 100%
+ht-degree: 47%
 
 ---
 
 
-# Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen {#hibernating-introduction}
+# Ruhezustand und Ruhezustand von Sandbox-Umgebungen {#hibernating-introduction}
 
-Umgebungen eines Sandbox-Programms werden in den Ruhezustand versetzt, wenn acht Stunden lang keine Aktivität erkannt wurde. Der Ruhezustand ist Sandbox-Programmumgebungen vorbehalten. Bei Produktions-Programmumgebungen gibt es keinen Ruhezustand.
+Umgebungen eines Sandbox-Programms werden in den Ruhezustand versetzt, wenn acht Stunden lang keine Aktivität erkannt wurde. Der Ruhezustand ist nur in Sandbox-Programmumgebungen verfügbar. Produktionsprogrammumgebungen können nicht in den Ruhezustand versetzt werden.
 
 ## Ruhezustand {#hibernation-introduction}
 
 Der Ruhezustand kann entweder automatisch oder manuell aktiviert werden.
 
-* **Automatisch**: Sandbox-Programmumgebungen werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Inaktivität liegt vor, wenn weder der Autoren-Service noch die Vorschau- oder Veröffentlichungs-Service Anfragen erhalten.
-* **Manuell**: Als Benutzer können Sie eine Sandbox-Programmumgebung manuell in den Ruhezustand versetzen. Dies ist nicht unbedingt erforderlich, da der Ruhezustand wie zuvor beschrieben automatisch eintritt.
+* **Automatisch**: Sandbox-Programmumgebungen werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Inaktivität ist definiert als das Fehlen von Anforderungen an Autoren-, Vorschau- und Veröffentlichungsdienste.
+* **Manuell**: Als Benutzer können Sie eine Sandbox-Programmumgebung manuell in den Ruhezustand versetzen. Dies ist nicht erforderlich, da der Ruhezustand automatisch wie zuvor beschrieben erfolgt.
 
 Es kann einige Minuten dauern, bis Sandbox-Programmumgebungen in den Ruhezustand wechseln. Daten werden im Ruhezustand beibehalten.
 
-### Verwenden des manuellen Ruhezustands {#using-manual-hibernation}
+### Manuelles Ruhezustand einer Sandbox-Programmumgebung {#using-manual-hibernation}
 
-Über die Entwicklerkonsole können Sie Ihr Sandbox-Programm manuell in den Ruhezustand versetzen. Der Zugriff auf die Entwicklerkonsole für ein Sandbox-Programm steht allen Anwendern von Cloud Manager zur Verfügung.
+Über die Entwicklerkonsole können Sie Ihr Sandbox-Programm manuell in den Ruhezustand versetzen. Der Zugriff auf die Developer Console für ein Sandbox-Programm steht allen Benutzern von Cloud Manager zur Verfügung.
 
-Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhezustand zu versetzen.
+**So löschen Sie eine Sandbox-Programmumgebung manuell in den Ruhezustand:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, das in den Ruhezustand versetzt werden soll, um dessen Details anzuzeigen.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf ein *Sandbox-Programm*, das Sie in den Ruhezustand versetzen möchten, um die Details anzuzeigen.
 
-1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
+1. Klicken Sie auf der Karte **Umgebungen** auf das Symbol ![Mehr ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und klicken Sie auf **Developer Console**.
 
    * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console), um weitere Informationen zur Developer Console zu erhalten.
 
-   ![Menüoption „Entwicklerkonsole“](assets/developer-console-menu-option.png)
+   ![Menüoption „Entwicklerkonsole“](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
-1. Klicken Sie in der Entwicklerkonsole auf **Ruhezustand**.
+1. Klicken Sie auf der Seite **Developer Console** auf **Ruhezustand**.
 
-   ![Schaltfläche „Ruhezustand“](assets/hibernate-1.png)
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+
+![Schaltfläche „Ruhezustand“](assets/hibernate-1.png)
 
 1. Klicken Sie auf **Ruhezustand**, um den Schritt zu bestätigen.
 
@@ -54,23 +56,25 @@ Nach erfolgreicher Aktivierung des Ruhezustands wird im Bildschirm **Developer C
 
 ![Ruhezustand – Bestätigung](assets/hibernate-4.png)
 
-In der Developer Console können Sie auch auf den Link **Umgebungen** in den Breadcrumbs oberhalb der Dropdown-Liste **Pod** klicken, um eine Liste der Umgebungen zu erhalten, die in den Ruhezustand versetzt werden sollen.
+Klicken Sie in der Developer Console auf den Link **Umgebungen** in den Breadcrumbs über der Dropdownliste **Werbeunterbrechung** , um die für den Ruhezustand verfügbaren Umgebungen anzuzeigen.
 
 ![Liste der Umgebungen, die in den Ruhezustand versetzt werden sollen](assets/hibernate-1b.png)
 
-## Aufheben des Ruhezustands {#de-hibernation-introduction}
+## Manuelles Deaktivieren des Ruhezustands eines Sandbox-Programms über Developer Console {#de-hibernation-introduction}
 
-Über die Entwicklerkonsole können Sie Ihr Sandbox-Programm manuell in den Ruhezustand versetzen.
+Sie können Ihr Sandbox-Programm manuell aus der Developer Console in den Ruhezustand versetzen.
 
 >[!IMPORTANT]
 >
 >Ein Benutzer mit der Rolle **Entwickler** kann den Ruhezustand einer Sandbox-Programmumgebung aufheben.
 
+**So deaktivieren Sie den Ruhezustand eines Sandbox-Programms manuell aus der Developer Console:**
+
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Tippen oder klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das der Ruhezustand aufgehoben werden soll, um dessen Details anzuzeigen.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, dessen Ruhezustand Sie deaktivieren möchten, um dessen Details anzuzeigen.
 
-1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
+1. Klicken Sie auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg und klicken Sie auf **Developer Console**.
 
    * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console), um weitere Informationen zur Developer Console zu erhalten.
 
@@ -90,35 +94,34 @@ In der Developer Console können Sie auch auf den Link **Umgebungen** in den Bre
 
    ![Abschluss der Aufhebung des Ruhezustands](assets/de-hibernation-img4.png)
 
-
-In der Developer Console können Sie auch auf den Link **Umgebungen** in den Breadcrumbs oberhalb der Dropdown-Liste **Pod** klicken, um eine Liste der Umgebungen, die aus dem Ruhezustand geholt werden soll, zu erhalten.
+Klicken Sie in der Developer Console auf den Link **Umgebungen** in den Breadcrumbs über der Dropdownliste **Werbeunterbrechung**, um auf Umgebungen zuzugreifen, die für die Aufhebung des Ruhezustands verfügbar sind.
 
 ![Liste der im Ruhezustand befindlichen Pods](assets/de-hibernate-1b.png)
 
-### Berechtigungen zum Aufheben des Ruhezustands {#permissions-de-hibernate}
+### Berechtigungen zum Deaktivieren des Ruhezustands {#permissions-de-hibernate}
 
 Jeder Anwender mit einem Produktprofil, das Zugriff auf AEM as a Cloud Service gewährt, sollte auf die **Developer Console** zugreifen und somit die Umgebung reaktivieren können.
 
-## Zugreifen auf eine im Ruhezustand befindliche Umgebung {#accessing-hibernated-environment}
+## Zugriff auf eine im Ruhezustand befindliche Umgebung {#accessing-hibernated-environment}
 
-Bei Browser-Anfragen an den Autoren-, Vorschau- oder Veröffentlichungs-Service einer im Ruhezustand befindlichen Umgebung wird dem Benutzer eine Landingpage angezeigt, auf der der Status der Umgebung als im Ruhezustand befindlich beschrieben wird, sowie ein Link zur Entwicklerkonsole, auf der der Ruhezustand des Service aufgehoben werden kann.
+Wenn ein Benutzer eine Browseranforderung an den Autoren-, Vorschau- oder Veröffentlichungsdienst einer im Ruhezustand befindlichen Umgebung sendet, wird ihm eine Landingpage angezeigt. Auf dieser Seite wird der Ruhezustand der Umgebung erläutert und ein Link zur Developer Console zur Deaktivierung des Ruhezustands bereitgestellt.
 
 ![Landingpage für Services im Ruhezustand](assets/de-hibernation-img5.png)
 
-## Bereitstellungen und AEM-Updates {#deployments-updates}
+## Bereitstellungen und AEM {#deployments-updates}
 
 In im Ruhezustand befindlichen Umgebungen können weiterhin Bereitstellungen und manuelle AEM-Upgrades vorgenommen werden.
 
-* Ein Anwender kann eine Pipeline verwenden, um benutzerdefinierten Code für im Ruhezustand befindliche Umgebungen bereitzustellen. Die Umgebung verbleibt im Ruhezustand; der neue Code wird in der Umgebung angezeigt, sobald der Ruhezustand deaktiviert wird.
+* Ein Anwender kann eine Pipeline verwenden, um benutzerdefinierten Code für im Ruhezustand befindliche Umgebungen bereitzustellen. Die Umgebung bleibt im Ruhezustand und der neue Code wird in der Umgebung angezeigt, sobald der Ruhezustand deaktiviert wurde.
 
-* AEM-Upgrades können auf im Ruhezustand befindliche Umgebungen angewendet werden; sie können von Kunden in Cloud Manager manuell ausgelöst werden. Die Umgebung verbleibt im Ruhezustand; die neue Version erscheint in der Umgebung, sobald der Ruhezustand deaktiviert wurde.
+* AEM-Upgrades können auf im Ruhezustand befindliche Umgebungen angewendet werden; sie können von Kunden in Cloud Manager manuell ausgelöst werden. Die Umgebung bleibt im Ruhezustand und die neue Version wird in der Umgebung angezeigt, sobald der Ruhezustand deaktiviert wurde.
 
 ## Ruhezustand und Löschung {#hibernation-deletion}
 
 * Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt.
-   * Inaktivität liegt vor, wenn weder der Autoren-Service noch die Vorschau- oder Veröffentlichungs-Service Anfragen erhalten.
-   * Sobald sie sich im Ruhezustand befinden, kann der [Ruhezustand manuell aufgehoben werden].(#de-hibernation-introduction)
-* Sandbox-Programme werden nach sechs Monaten, nachdem sie sich im kontinuierlichen Ruhezustand befinden, gelöscht. Danach können sie neu erstellt werden.
+   * Inaktivität ist definiert als das Fehlen von Anforderungen an Autoren-, Vorschau- und Veröffentlichungsdienste.
+   * Sobald sie sich im Ruhezustand befinden, kann der [Ruhezustand manuell aufgehoben werden](#de-hibernation-introduction).
+* Sandbox-Programme werden gelöscht, nachdem sie sich sechs Monate im kontinuierlichen Ruhezustand befunden haben. Danach können sie neu erstellt werden.
 
 >[!NOTE]
 >

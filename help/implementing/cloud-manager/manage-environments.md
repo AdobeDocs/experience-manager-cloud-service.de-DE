@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 98%
+source-wordcount: '2357'
+ht-degree: 94%
 
 ---
 
@@ -50,13 +50,13 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin od
 
    ![Karte „Umgebung“](assets/no-environments.png)
 
-   * Die Option **Umgebung hinzufügen** ist auch auf der Registerkarte ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen** verfügbar.
+   * Die Option **Umgebung hinzufügen** ist auch über das Symbol ![Daten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) auf der Registerkarte **Umgebungen** verfügbar.
 
      ![Registerkarte Umgebungen](assets/environments-tab.png)
 
    * Die Option **Umgebung hinzufügen** kann aufgrund fehlender Berechtigungen oder abhängig von den lizenzierten Ressourcen deaktiviert werden.
 
-1. Im Dialogfeld **Umgebung hinzufügen** :
+1. Im Dialogfeld **Umgebung hinzufügen**:
 
    * Wählen Sie einen [**Umgebungstyp**](#environment-types).
       * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
@@ -109,7 +109,7 @@ Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies auch 
 
 Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können jedoch in einer Transaktion Regionen nur entweder hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine andere Region entfernen müssen, fügen Sie zuerst eine hinzu, speichern Ihre Änderung und entfernen dann die andere (oder umgekehrt).
 
-1. Klicken Sie in der Programmübersichtskonsole Ihres Programms auf die Schaltfläche mit den Auslassungspunkten für Ihre Produktionsumgebung und wählen Sie im Menü **Bearbeiten**.
+1. Klicken Sie in der Konsole Programmübersicht Ihres Programms für Ihre Produktionsumgebung auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg und wählen Sie im Menü die Option **Bearbeiten** aus.
 
    ![Umgebung bearbeiten](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
 Auf der Seite **Übersicht** haben Sie zwei Möglichkeiten, um auf die Details zu einer Umgebung zuzugreifen.
 
-1. Klicken Sie auf der Seite **Übersicht** im seitlichen Bedienfeld auf die Registerkarte **Umgebungen**.
+1. Klicken Sie auf der Seite **Überblick** im linken Seitenmenü auf die Registerkarte **Umgebungen** .
 
    ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ Auf der Seite **Übersicht** haben Sie zwei Möglichkeiten, um auf die Details z
 
    ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
 
-1. Tippen oder klicken Sie auf eine Umgebung in der Liste, um deren Details anzuzeigen.
+1. Klicken Sie auf eine Umgebung in der Liste, um deren Details anzuzeigen.
 
    ![Umgebungsdetails](assets/environ-preview1.png)
 
-Alternativ können Sie auf die Schaltfläche mit den Auslassungspunkten der gewünschten Umgebung klicken und anschließend auf **Details anzeigen**.
+Klicken Sie alternativ auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der gewünschten Umgebung und wählen Sie dann **Details anzeigen** aus.
 
 ![Anzeigen von Umgebungsdetails](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Alternativ können Sie auf die gleichen Informationen über die Registerkarte **
 
 1. Wählen Sie auf der Seite **Übersicht** die Registerkarte **Umgebungen** aus.
 
-1. Wählen Sie auf der Registerkarte **Umgebungen** im linken Navigationsbereich die Umgebung aus, die Sie abfragen möchten.
+1. Wählen Sie auf der Registerkarte **Umgebungen** im Menü auf der linken Seite die Umgebung aus, die Sie abfragen möchten.
 
 1. Wenn eine Umgebung ausgewählt ist:
 
@@ -219,7 +219,7 @@ Aktualisierungen von Umgebungen in Sandbox-Programmen werden jedoch innerhalb de
 
 ![Aktualisierungsstatus der Umgebung](assets/environ-update.png)
 
-### Aktualisierungen und Pipelines {#updates-pipelines}
+### Updates und Pipelines {#updates-pipelines}
 
 Pipelines sind der einzige Weg, [Code in den Umgebungen von AEM as a Cloud Service bereitzustellen](deploy-code.md). Aus diesem Grund ist jede Pipeline mit einer bestimmten AEM-Version verknüpft.
 
@@ -235,11 +235,11 @@ Der Prozess der Aktualisierung erfolgt also in zwei Schritten:
 >[!NOTE]
 > Seit 2024 werden Entwicklungsinstanzen und einige Sandbox-Programme bereits automatisch aktualisiert, sodass Aktualisierungen für sie nicht manuell verwaltet werden müssen. Aufgrund dieses Übergangs ist die Option zur manuellen Aktualisierung der Umgebung für Entwicklungsinstanzen möglicherweise für _einige_ Ihrer Programme nicht verfügbar.
 
-Die Option **Aktualisieren** ist für einige Entwicklungsumgebungen und Umgebungen in Sandbox-Programmen über die Karte **Umgebungen** durch Klicken auf die Schaltfläche mit den Auslassungspunkten für die Umgebung verfügbar.
+Die Option **Aktualisieren** ist auf der Karte **Umgebungen** für einige Entwicklungsumgebungen und -umgebungen in Sandbox-Programmen verfügbar, indem Sie auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Umgebung klicken.
 
 ![Option „Aktualisieren“ auf der Karte „Umgebungen“](assets/environ-update2.png)
 
-Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen** klicken und anschließend auf die Schaltfläche mit den Auslassungspunkten für die Umgebung.
+Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen** des Programms klicken und dann auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Umgebung klicken.
 
 ![Update-Option auf der Registerkarte „Umgebungen“](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 Eine Benutzerin bzw. ein Benutzer mit der Rolle **Bereitstellungs-Manager** oder **Geschäftsinhaber** kann eine Entwicklungsumgebung löschen.
 
-Klicken Sie im Bildschirm **Überblick** des Programms auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten für die Entwicklungsumgebung, die Sie löschen möchten.
+Klicken Sie im Bildschirm **Überblick** des Programms auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Entwicklungsumgebung, die Sie löschen möchten.
 
 ![Die Löschoption](assets/environ-delete.png)
 
-Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **Überblick** des Programms verfügbar. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten für die Umgebung und anschließend auf **Löschen**.
+Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **Überblick** des Programms verfügbar. Klicken Sie auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Umgebung und wählen Sie **Löschen** aus.
 
 ![Die Löschoption auf der Registerkarte „Umgebungen“](assets/environ-delete2.png)
 
@@ -310,7 +310,7 @@ Benutzerdefinierte Domain-Namen werden in Programmen von Cloud Manager for Sites
 
 >[!TIP]
 >
->Weitere Informationen finden Sie unter [Einführung in benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Weitere Informationen finden Sie in der [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassu
 
 >[!TIP]
 >
->Weitere Informationen finden Sie unter [Einführung in IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Weitere Informationen finden Sie in der [Einführung in IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 27%
+source-wordcount: '618'
+ht-degree: 26%
 
 ---
 
@@ -84,6 +84,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 1. Klicken Sie auf **Speichern**.
 
+
 ## Pipeline-Variable löschen {#delete-ui}
 
 1. Klicken Sie beim Verwalten Ihrer Pipelines [ auf das Symbol &quot;![Ellipse - Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Pipeline, für die Sie Pipeline-Variablen löschen möchten.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
@@ -92,10 +93,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
    ![Pipeline-Variablen anzeigen/bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Klicken Sie im Dialogfeld **Variablenkonfiguration** auf das Symbol ![Ellipse - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Variablen, die Sie entfernen möchten.
-
-1. Klicken Sie im Dropdown-Menü auf **Löschen**.
-
+1. Klicken Sie im Dialogfeld **Variablenkonfiguration** auf das Symbol ![Ellipse - More (Auslassungszeichen)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Variablen, die Sie entfernen möchten, und klicken Sie dann auf **Löschen**.
 
 ## Festlegen von Pipeline-Variablen mithilfe der Cloud Manager-CLI {#cli}
 

@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 82%
 
 ---
 
@@ -23,15 +23,15 @@ Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitste
 
 {{ip-allow-lists-ue}}
 
-**Hinzufügen einer IP-Zulassungsliste:**
+**So fügen Sie eine IP-Zulassungsliste hinzu:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Klicken Sie auf der Seite &quot;**Programmübersicht**&quot;über das Seitenbedienfeld (möglicherweise müssen Sie oben links auf das Symbol ![Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klicken, um das Bedienfeld anzuzeigen) auf das Symbol ![Aufgabenliste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
+1. Klicken Sie auf der Seite **Programmübersicht** über das Menü auf der linken Seite (möglicherweise müssen Sie oben links auf das Symbol ![Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klicken, um das Menü anzuzeigen) auf das Symbol ![Aufgabenliste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
 
-   ![Option „IP-Zulassungslisten“ im seitlichen Bedienfeld](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+   ![Option &quot;IP-Zulassungslisten&quot;im linken Seitenmenü](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
 1. Klicken Sie oben rechts auf der Seite „IP-Zulassungslisten“ auf **IP-Zulassungsliste hinzufügen**.
 

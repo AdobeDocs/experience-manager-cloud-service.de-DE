@@ -5,10 +5,10 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
-workflow-type: ht
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,9 +31,9 @@ Sie müssen die DNS-Einstellungen für Ihren benutzerdefinierten Domain-Namen be
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
+1. Klicken Sie im linken Seitenmenü auf **Domäneneinstellungen** .
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
