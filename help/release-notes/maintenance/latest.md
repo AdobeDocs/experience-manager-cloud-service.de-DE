@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 42%
+ht-degree: 92%
 
 ---
 
@@ -24,49 +24,49 @@ Die Funktionsaktivierung von 2024.10.0 bietet den vollen Funktionsumfang für di
 
 ### Verbesserungen {#enhancements-18175}
 
-* ASSETS-38322: Aktivieren des HTTP-Anforderungsereignisses für AEM.
-* ASSETS-41448: Aktualisieren Sie das Bundle auth.ims , um FI für Gruppenzuordnungen zu unterstützen.
-* ASSETS-41684: Fügen Sie OOB-OSGi-Konfigurationen hinzu, um die Zuordnung von FI zu Gruppen für Assets, Foundation, Sites und Forms zu definieren.
-* ASSETS-43015: Aktualisierung auf das neueste auth.ims-Bundle.
-* CQ-4356633: Fügen Sie in der QuickInfo &quot;Nur Inhalt&quot;zusätzliche Zeichen hinzu.
-* GRANITE-50948: Integrieren Sie den Repository-Dienst in AEM Unterstützung für Repository-Dienst.
-* GRANITE-52454: Support Helper 0.1.2 hinzufügen.
-* GRANITE-52454: Upgrade-Support-Helper GRANITE-52454 Upgrade-Support-Helfer zur Verwendung der neuesten Version für AEMaaCS.
-* GRANITE-53287: Aktualisieren der Testversion der Integration von Sicherheitsberechtigungen.
-* GRANITE-53485: Support Service Principal Authentifizierung für die Replikation Azure Blob Storage.
+* ASSETS-38322: Aktivieren des HTTP-Anfrageereignisses für AEM.
+* ASSETS-41448: Update des auth.ims-Pakets, um FI für Gruppenzuordnungen zu unterstützen.
+* ASSETS-41684: Hinzufügen von OOB-OSGi-Konfigurationen, um FI für Gruppenzuordnungen für Assets, Foundation, Sites und Formulare zu definieren.
+* ASSETS-43015: Update auf das neueste auth.ims-Paket.
+* CQ-4356633: Hinzufügen eines zusätzlichen Zeichens in die QuickInfo „Nur Inhalt“.
+* GRANITE-50948: Integrieren des Repository-Dienstes in AEM; Unterstützung für Repository-Dienst.
+* GRANITE-52454: Hinzufügen des Support-Helfers 0.1.2.
+* GRANITE-52454: Upgrade des Support-Helfers GRANITE-52454 Upgrade des Support-Helfers zur Verwendung der neuesten Version für AEMaaCS.
+* GRANITE-53287: Update der Testversion der Integration von Sicherheitsberechtigungen.
+* GRANITE-53485: Authentifizierung des Support-Service-Prinzipals für die Replikation Azure Blob Storage.
 * GRANITE-53514: Treeactivation aktualisiert auf Version 1.0.26.
-* GRANITE-53870: Erstellen Sie einen internen Mechanismus, um die maximale JVM-Versionsüberprüfung für den Schnellstart zu überspringen.
+* GRANITE-53870: Erstellen eines internen Mechanismus, um die Überprüfung auf maximale JVM-Version für den Schnellstart zu überspringen.
 * GRANITE-53914: Fehlerbehebung bei Platform-Tests mit Java 17 Aktualisierte Modulversion.
-* GRANITE-53966: Verwenden Sie einen separaten Thread-Pool für die Inhaltsverteilung.
-* GRANITE-54006: Update Jackson auf 2.17.2.
-* GRANITE-54038: Fügen Sie die Creative Cloud Enterprise IMS-Client-Zulassungsliste zur AEM IMS-Client- hinzu.
+* GRANITE-53966: Verwenden eines separaten Thread-Pools für die Inhaltsverteilung.
+* GRANITE-54006: Update von Jackson auf 2.17.2.
+* GRANITE-54038: Hinzufügen des Creative Cloud Enterprise IMS-Clients zur AEM IMS-Client-Zulassungsliste.
 * GRANITE-54054: Umgebungsvariable für com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
-* GRANITE-54266: Produktions-SDK fehlt Suchvorschlagsdienst.
-* GRANITE-54274: Firefly IMS-Client akzeptieren.
+* GRANITE-54266: In Produktions-SDK fehlt der Suchvorschlagsdienst.
+* GRANITE-54274: Akzeptieren von Firefly IMS-Client.
 * GRANITE-54300: Update von Oak auf die neueste öffentliche Version (1.70.0).
-* GUIDES-19069: Fügen Sie guidesPeerLinkIndex für AEM-Handbücher hinzu.
+* GUIDES-19069: Hinzufügen von guidesPeerLinkIndex für AEM-Handbücher-Add-on.
 * SITES-23584: Fehlerhaften Test für Foundation-Komponente in Java 17 behoben.
 * SKYOPS-69768: SlingModels deserialisieren ResourceResolvers nicht.
-* SKYOPS-76378: Verbessern Sie die Thread-Sicherheit der ResourceBundle-Registrierung/-Registrierung in i18n.
+* SKYOPS-76378: Verbessern der Thread-Sicherheit der ResourceBundle-Registrierung/-Deregistrierung in i18n.
 * SKYOPS-79285: Aktualisierung von Sling XSS auf 2.4.2.
-* SKYOPS-82383: Zeigen Sie das Ergebnis &quot;helm-values&quot;convert-merge-analyze im Befehlsausführungsdeskriptor an.
-* SKYOPS-84810: Überspringen Sie die Ausführung &quot;40-initialize-publish.sh&quot;beim Start für RDE.
+* SKYOPS-82383: Anzeigen des Ergebnisses „helm-values“ convert-merge-analyze im Befehlsausführungsdeskriptor.
+* SKYOPS-84810: Überspringen der Ausführung von „40-initialize-publish.sh“ beim Start für RDE.
 * SKYOPS-84951: Fehlerbehebung für den Generierungscode der veränderlichen Inhaltsprüfsumme.
-* SKYOPS-85335: Aktualisieren Sie org.apache.sling.jcr.repoinit auf 1.1.52.
-* SKYOPS-85336: Aktualisieren von Sling Commons Threads auf 3.3.0.
-* SKYOPS-86329: Aktualisieren von Versionen von Plattformtestmodulen für die Unterstützung von Java 21 SDK.
+* SKYOPS-85335: Update von org.apache.sling.jcr.repoinit auf 1.1.52.
+* SKYOPS-85336: Update von Sling Commons Threads auf 3.3.0.
+* SKYOPS-86329: Update von Versionen von Plattformtestmodulen für die Unterstützung von Java 21 SDK.
 
 ### Behobene Probleme {#fixed-issues-18175}
 
-* CNTBF-298: Entfernen Sie jcr:uuid aus CC-exportierten Paketen.
-* SKYOPS-83910: Behebung von gleichzeitigen Problemen, die in SKYOPS-82371 festgestellt wurden.
+* CNTBF-298: Entfernen von jcr:uuid aus CC-Exportpaketen.
+* SKYOPS-83910: Beheben von Parallelitätsproblemen, die in SKYOPS-82371 festgestellt wurden.
 * GRANITE-52876: Update auf com.adobe.granite.ui.content 0.8.1448.
-* GUIDES-14445: Die native PDF-Generierung schlägt mit einem Fehler bezüglich der Abrufen von Abhängigkeiten für Node.js fehl.
-* GUIDES-16961: Der Titel mit `<conref>` wird nicht in den Dashboards &quot;Grundlinie&quot;und &quot;Übersetzung&quot;des Web Editors aufgelöst.
-* GUIDES-17283: Bei Auswahl der Option **In der topicmeta hinzugefügte Metadaten verwenden** werden die Metadateneigenschaften nicht in den Dokumenteigenschaften der nativen PDF-Ausgabe propagiert.
-* GUIDES-17793: Die referenzierte PDF wird während der Massenaktivierung veröffentlichter Inhalte nicht über das **Bulk Publish Dashboard** aktiviert.
+* GUIDES-14445: Die native PDF-Generierung schlägt mit einem Fehler bezüglich des Abrufs von Abhängigkeiten für Node.js fehl.
+* GUIDES-16961: Der Titel mit `<conref>` wird in den Dashboards „Grundlinie“ und „Übersetzung“ des Web-Editors nicht aufgelöst.
+* GUIDES-17283: Bei Auswahl der Option **In topicmeta hinzugefügte Metadaten verwenden** werden die Metadaten-Eigenschaften nicht in die Dokumenteigenschaften der nativen PDF-Ausgabe übernommen.
+* GUIDES-17793: Die referenzierte PDF wird während der Massenaktivierung veröffentlichter Inhalte nicht über das Dashboard **Massenveröffentlichung** aktiviert.
 
-Weitere Informationen zu den neuen und verbesserten Guides-Funktionen und -Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Weitere Informationen zu den neuen und verbesserten Handbuch-Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekannte Probleme {#known-issues-18175}
 
@@ -100,7 +100,7 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM Oak | 1,70,0 | [Oak-API 1.70.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
+| AEM Oak | 1.70.0 | [Oak-API 1.70.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | AEM-Kernkomponenten | 2.27.0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
