@@ -3,16 +3,16 @@ title: Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-
 description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktionen einschränken.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 1%
+source-wordcount: '1117'
+ht-degree: 2%
 
 ---
 
 # Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-Funktionen {#restrict-access-to-assets}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Die zentrale Asset-Verwaltung in Experience Manager ermöglicht es DAM-Administratoren oder Brand Manager, den Zugriff auf Assets zu verwalten, die über Dynamic Media mit OpenAPI-Funktionen verfügbar sind. Sie können die Bereitstellung genehmigter Assets (bis hin zu einem einzelnen Asset) auf ausgewählte [Adobe Identity Management-Systembenutzer (IMS) oder -gruppen](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) beschränken, indem sie bestimmte Metadaten für Assets in ihrem AEM as a Cloud Service-Autorendienst konfigurieren.
@@ -96,12 +96,4 @@ Bei AEM Cloud Service-Autorendiensten sowie bei der Asset-Auswahl wird das IMS-T
 
 ### Bereitstellung für benutzerdefinierte Identitätsanbieter im Publish-Dienst {#delivery-custom-identity-provider}
 
-AEM Sites-, AEM Assets- und Dynamic Media-Lizenzen mit OpenAPI-Lizenzen können gemeinsam verwendet werden und die eingeschränkte Bereitstellung von Assets kann auf Websites konfiguriert werden, die über AEM Publish oder Vorschaudienste bereitgestellt werden.
-Wenn die Publish- und Vorschaudienste von AEM Sites so konfiguriert sind, dass ein [benutzerdefinierter Identitäts-Provider (IdP)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) verwendet wird, kann die Gruppe, die Zugriff auf gesicherte Assets in haben muss, während des Einrichtungsprozesses im Attribut `groupMembership` enthalten sein.\
-Wenn sich ein Website-Benutzer beim benutzerdefinierten Identitätsanbieter anmeldet und auf die im Publish/Preview-Dienst gehostete Website zugreift, wird das Attribut `groupMembership` gelesen und ein secure-cookie erstellt und auf der Website bereitgestellt, nachdem die Authentifizierung erfolgreich war. Dieses secure-cookie ist in allen nachfolgenden Anfragen enthalten, um den Website-Inhalt an den Benutzer-Agenten bereitzustellen.
-
-Wenn ein sicheres Asset auf einer Seite angefordert wird, extrahieren AEM Publish- und Vorschaustufen das Autorisierungsmaterial aus dem secure-cookie und validieren den Zugriff. Wenn eine Übereinstimmung vorliegt, wird das Asset angezeigt.
-
->[!NOTE]
->
-> Geben Sie im Support-Ticket [Dynamic Media mit OpenAPI-Funktionen aktivieren](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) im Anwendungsfall die eingeschränkte Bereitstellung an. Adobe Engineering hilft bei der notwendigen Klarstellung und/oder bei der Einrichtung eines Verfahrens für die eingeschränkte Bereitstellung.
+AEM Sites-, AEM Assets- und Dynamic Media-Lizenzen mit OpenAPI-Lizenzen können gemeinsam verwendet werden, um die Konfiguration der Bereitstellung von Assets auf Websites zu ermöglichen, die auf AEM Publish oder dem Vorschaudienst gehostet werden. Der sichere Zustellfluss nutzt Browser-Cookies, um den Zugriff des Benutzers festzustellen und eine benutzerdefinierte Domäne für die Versandstufe zu haben, die eine Subdomäne der Veröffentlichungsdomäne ist. Dies ist eine Voraussetzung für die Implementierung dieses Anwendungsfalls. Falls die Publish- und Vorschaudienste von AEM Sites so konfiguriert sind, dass sie einen [benutzerdefinierten Identitäts-Provider (IdP)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) verwenden, muss bei der Authentifizierung des Veröffentlichungsdomänenpost-Benutzers ein neues Cookie mit dem Namen `delivery-token` zur Aufnahme der Gruppenmitgliedschaft des Benutzers gesetzt werden. Die Versandstufe extrahiert das Autorisierungsmaterial aus dem secure-cookie und validiert den Zugriff. Weitere Informationen finden Sie im [Enterprise Support Ticket](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) .
