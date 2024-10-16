@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '4241'
-ht-degree: 100%
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+workflow-type: tm+mt
+source-wordcount: '4537'
+ht-degree: 93%
 
 ---
 
@@ -94,10 +94,38 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    aio plugins:update
    ```
 
-1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt Benutzenden interaktiv eine Liste der Programme in ihrer Organisation zur Verfügung und zeigt RDE-Umgebungen in diesem Programm an, aus denen gewählt werden kann.
+1. Melden Sie sich mit dem aio-Client an.
 
    ```
    aio login
+   ```
+   Die Anmeldeinformationen (Token) werden in der globalen aio-Konfiguration gespeichert und unterstützen daher nur eine Anmeldung und Organisation. Wenn Sie mehrere RDEs verwenden möchten, die unterschiedliche Anmeldungen oder Organisationen benötigen, folgen Sie dem folgenden Beispiel für die Einführung von Kontexten.
+
+   <details><summary>In diesem Beispiel wird beschrieben, wie Sie einen lokalen Kontext für eine Ihrer RDE-Anmeldungen einrichten</summary>
+   Führen Sie die folgenden Schritte aus, um die Anmeldeinformationen lokal in einer .aio-Datei im aktuellen Verzeichnis in einem bestimmten Kontext zu speichern. Ein Kontext ist auch eine intelligente Möglichkeit, eine CI/CD-Umgebung oder ein Skript einzurichten.  Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie mindestens die aio-cli-Version 10.3.1 verwenden. Aktualisieren Sie es mit "npm install -g @adobe/aio-cli".
+
+   Erstellen wir einen Kontext namens &quot;mycontext&quot;, den wir dann mithilfe des auth-Plug-ins als Standardkontext festlegen, bevor wir den Login-Befehl aufrufen.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standardbrowser zu öffnen. So können Sie es kopieren und mit einem **inkognito** -Fenster Ihres Browsers öffnen. Auf diese Weise bleibt Ihre aktuell angemeldete Sitzung im normalen Browser-Fenster unberührt und Sie können sicherstellen, dass Sie die spezifische Anmeldung und Organisation verwenden, die für Ihren Kontext erforderlich sind.
+
+   Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen Konfigurationsdatei `.aio` (die Datei wird bei Bedarf erstellt. Der zweite Befehl legt den Kontext `mycontext` als &quot;aktuellen&quot;Kontext fest, d. h. als Standard.
+
+   Mit dieser Konfiguration speichert der Anmeldebefehl automatisch die Anmelde-Token im Kontext `mycontext` und behält sie somit lokal bei.
+
+   Mehrere Kontexte können entweder durch Beibehalten lokaler Konfigurationen in mehreren Ordnern verwaltet werden. Alternativ können Sie auch mehrere Kontexte in einer einzelnen Konfigurationsdatei einrichten und zwischen ihnen wechseln, indem Sie den &quot;aktuellen&quot;Kontext ändern.
+   </details>
+
+1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt Benutzenden interaktiv eine Liste der Programme in ihrer Organisation zur Verfügung und zeigt RDE-Umgebungen in diesem Programm an, aus denen gewählt werden kann.
+
+   ```
    aio aem:rde:setup
    ```
 
