@@ -1,25 +1,28 @@
 ---
 title: Intelligente Bildbearbeitung
-description: 'Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe von Adobe Sensei-KI die individuellen anzeigebezogenen Anwendermerkmale anwendet, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
+description: Erfahren Sie, wie die intelligente Bildbearbeitung mit Adobe Sensei AI die individuellen Anzeigemerkmale jedes Benutzers anwendet, um die richtigen Bilder automatisch für sein Erlebnis zu optimieren, was zu einer besseren Leistung und Interaktion führt.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
-workflow-type: ht
-source-wordcount: '3455'
-ht-degree: 100%
+source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
+workflow-type: tm+mt
+source-wordcount: '2840'
+ht-degree: 71%
 
 ---
 
 # Intelligente Bildbearbeitung {#smart-imaging}
 
-## Über die intelligente Bildbearbeitung{#about-smart-imaging}
+Erfahren Sie, wie die intelligente Bildbearbeitung mit Adobe Sensei AI die individuellen Anzeigemerkmale jedes Benutzers anwendet, um die richtigen Bilder automatisch für sein Erlebnis zu optimieren, was zu einer besseren Leistung und Interaktion führt.
 
-Die intelligente Bildbearbeitung wendet KI-Funktionen von Adobe Sensei an und arbeitet mit vorhandenen „Bildvorgaben“. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
 
-Und jetzt erhalten Sie eine bessere Google Core Web Vital-Bewertung für LCP (Largest Contentful Paint) mit verbesserter intelligenter Bildbearbeitung, die jetzt sowohl AVIF- als auch WebP-Unterstützung bietet.
+## Über die intelligente Bildbearbeitung {#about-smart-imaging}
+
+Die Technologie für intelligente Bildbearbeitung wendet Adobe Sensei-KI-Funktionen an und arbeitet mit vorhandenen &quot;Bildvorgaben&quot;. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
+
+Und jetzt erhalten Sie eine bessere Google Core Web Vital-Bewertung für LCP (LCP) (Größter Inhaltsbereiter Paint) mit verbesserter intelligenten Bildbearbeitung, die jetzt sowohl AVIF- als auch WebP-Unterstützung bietet.
 
 >[!IMPORTANT]
 >
@@ -29,13 +32,13 @@ Und jetzt erhalten Sie eine bessere Google Core Web Vital-Bewertung für LCP (La
 >
 >Probieren Sie die Vorteile von Dynamic Media-Bildmodifikatoren und der intelligenten Bildbearbeitung mithilfe von Dynamic Media [_Momentaufnahme_ aus](https://snapshot.scene7.com/).
 >
-> „Momentaufnahme“ ist ein visuelles Demonstrationswerkzeug, das die Leistungsfähigkeit von Dynamic Media für eine optimierte und dynamische Bildbereitstellung veranschaulicht. Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Dynamic Media-Bildmodifikatoren visuell zu beobachten, und optimieren Sie die intelligente Bildbearbeitung auf Folgendes:
+> „Momentaufnahme“ ist ein visuelles Demonstrationswerkzeug, das die Leistungsfähigkeit von Dynamic Media für eine optimierte und dynamische Bildbereitstellung veranschaulicht. Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Dynamic Media-Bildmodifikatoren visuell zu beobachten, und optimieren Sie die intelligente Bildbearbeitung für Folgendes:
 >
 >* Dateigröße (mit WebP- und AVIF-Bereitstellung)
 >* Netzwerkbandbreite
 >* DPR (Gerätepixelverhältnis)
 >
->Um zu erfahren, wie einfach es ist, „Momentaufnahme“ zu verwenden, spielen Sie das Video [Schulungsvideo zu Momentaufnahmen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=de) (3 Minuten und 17 Sekunden) ab.
+>Um zu erfahren, wie einfach es ist, „Momentaufnahme“ zu verwenden, spielen Sie das Video [Schulungsvideo zu Momentaufnahmen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 Minuten und 17 Sekunden) ab.
 
 Die intelligente Bildbearbeitung profitiert auch von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigen Premium-CDN-Dienst (Content Delivery Network) von Adobe. Dieser Service ermittelt die optimale Internetroute zwischen Servern, Netzwerken und Austauschpunkten. Er findet die Route mit der niedrigsten Latenz und der niedrigsten Paketverlustrate, anstatt die Standardroute im Internet zu verwenden.
 
@@ -63,11 +66,15 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Vorteile der intelligenten Bildbearbeitung**
 
-Die intelligente Bildbearbeitung sorgt für eine bessere Leistung bei der Bildübertragung, indem sie die Größe der Bilddateien automatisch auf der Grundlage des verwendeten Client-Browsers, der Geräteanzeige und der Netzwerkbedingungen optimiert. Da Bilder einen Großteil der Seitenladezeit ausmachen, kann die Leistungssteigerung einen enormen Einfluss auf geschäftsbezogene KPIs haben, beispielsweise höhere Konversionsraten, längere Verweildauer auf der Site und niedrigere Website-Absprungraten.
+Die intelligente Bildbearbeitung verbessert die Bildbereitstellung, indem sie die Dateigröße anhand des Browsers, der Geräteanzeige und der Netzwerkbedingungen des Benutzers automatisch optimiert. Dieser Ansatz ermöglicht schnellere Ladezeiten und eine bessere Anzeige in verschiedenen Umgebungen. Da Bilder den Großteil der Ladezeit einer Seite ausmachen, kann jede Leistungsverbesserung grundlegende Auswirkungen auf geschäftsbezogene KPIs haben, z. B.:
+
+* Höhere Konversionsraten.
+* Besuchszeit pro Site.
+* Niedrigere Site-Absprungraten.
 
 Die Hauptvorteile der neuen intelligenten Bildbearbeitung sind:
 
-* Unterstützt jetzt das AVIF-Format der nächsten Generation.
+* Unterstützt das AVIF-Format der nächsten Generation.
 * Verlustbehaftete Konvertierungen von PNG zu WebP und AVIF werden jetzt unterstützt. Da PNG ein verlustfreies Format ist, waren frühere Bereitstellungen von WebP und AVIF verlustfrei.
 * [Browser-Formatkonvertierung](#bfc)
 * [Gerätepixelverhältnis](#dpr)
@@ -75,17 +82,17 @@ Die Hauptvorteile der neuen intelligenten Bildbearbeitung sind:
 
 ### Über die Browser-Formatkonvertierung {#bfc}
 
-Durch Aktivieren der Browser-Formatkonvertierung durch Anhängen von `bfc=on` an die Bild-URL werden JPEG und PNG für verschiedene Browser automatisch in verlustbehaftetes AVIF, WebP, JPEGXR oder JPEG2000 konvertiert. Bei Browsern, die diese Formate nicht unterstützen, stellt die intelligente Bildbearbeitung weiterhin JPEG oder PNG bereit. Neben dem Format wird auch die Qualität des neuen Formats durch die intelligente Bildbearbeitung neu berechnet.
+Durch Aktivieren der Browser-Formatkonvertierung durch Anhängen von `bfc=on` an die Bild-URL werden JPEG und PNG für verschiedene Browser automatisch in verlustbehaftetes AVIF, WebP, JPEGXR oder JPEG2000 konvertiert. Bei Browsern, die diese Formate nicht unterstützen, stellt die intelligente Bildbearbeitung weiterhin JPEG oder PNG bereit. Die intelligente Bildbearbeitung berechnet die Qualität des neuen Formats zusammen mit der Formatänderung neu.
 
-Die intelligente Bildbearbeitung kann auch durch Anhängen von `bfc=off` an die URL des Bildes deaktiviert werden.
+Sie können die intelligente Bildbearbeitung deaktivieren, indem Sie `bfc=off` an die URL des Bildes anhängen.
 
-Siehe auch [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=de) in der Bildbereitstellungs- und Rendering-API von Dynamic Media.
+Siehe auch [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) in der Bildbereitstellungs- und Rendering-API von Dynamic Media.
 
 ### Informationen zur Optimierung des Gerätepixelverhältnisses {#dpr}
 
-Das Gerätepixelverhältnis (Device Pixel Ratio, DPR), auch als CSS-Pixelverhältnis bezeichnet, ist das Verhältnis zwischen den physischen und den logischen Pixeln eines Geräts. Insbesondere mit dem Aufkommen von Retina-Bildschirmen nimmt die Pixelauflösung moderner Mobilgeräte stetig zu.
+Device Pixel Ratio (DPR), auch CSS Pixel Ratio genannt, stellt die Beziehung zwischen den physischen Pixeln und logischen Pixeln eines Geräts dar. Mit dem Aufstieg der Retina-Anzeige hat die Pixelauflösung moderner Mobilgeräte rapide zugenommen.
 
-Durch Aktivierung der Optimierung des Gerätepixelverhältnisses wird das Bild in der nativen Bildschirmauflösung gerendert, sodass es gestochen scharf erscheint.
+Durch Aktivierung der Optimierung des Gerätepixelverhältnisses wird das Bild in der nativen Bildschirmauflösung gerendert, wodurch es scharf wird.
 
 Derzeit stammt die Display-Pixeldichte aus den CDN-Kopfzeilenwerten von Akamai.
 
@@ -108,9 +115,9 @@ Siehe auch [Arbeiten mit Bildern](/help/assets/dynamic-media/adding-dynamic-medi
 
 ### Über die Optimierung der Netzwerkbandbreite {#bandwidth}
 
-Beim Aktivieren der Netzwerkbandbreite wird die Bildqualität automatisch an die tatsächliche Netzwerkbandbreite angepasst. Bei geringer Netzwerkbandbreite wird die Optimierung des Gerätepixelverhältnisses (Device Pixel Ratio, DPR) automatisch deaktiviert, auch wenn sie bereits aktiviert ist.
+Durch Aktivierung der Netzwerkbandbreite wird die Bildqualität automatisch an die tatsächliche Netzwerkbandbreite angepasst. Bei geringer Netzwerkbandbreite wird die Optimierung des Gerätepixelverhältnisses (Device Pixel Ratio, DPR) automatisch deaktiviert, auch wenn sie bereits aktiviert ist.
 
-Falls gewünscht, kann Ihr Unternehmen die Optimierung der Netzwerkbandbreite auf individueller Bildebene deaktivieren, indem `network=off` an die URL des Bilds angehängt wird.
+Ihr Unternehmen kann die Optimierung der Netzwerkbandbreite für einzelne Bilder deaktivieren, indem es `network=off` an die Bild-URL anhängt.
 
 | Zulässiger Wert in der URL eines Bilds | Beschreibung |
 |---|---|
@@ -124,14 +131,14 @@ Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren a
 * Stellt optimierte Inhalte sofort (zur Laufzeit) bereit.
 * Verwendet Adobe Sensei-Technologie zur Konvertierung gemäß der in der Bildanfrage angegebenen Qualität (`qlt`).
 * TTL (Time To Live)-unabhängig. Zuvor war eine TTL von mindestens 12 Stunden erforderlich, damit die intelligente Bildbearbeitung funktioniert.
-* Zuvor wurden sowohl das Originalbild als auch abgeleitete Bilder zwischengespeichert. Ein zweistufiger Prozess war erforderlich, um den Cache ungültig zu machen. In der neusten Version der intelligenten Bildbearbeitung werden nur die Ableitungen zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
-* Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. Beispielsweise profitieren „Timing Allow Origin“ oder „X-Robot“, wie unter [Hinzufügen einer benutzerdefinierten Kopfzeile zu Bildantworten | Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) vorgeschlagen, von der neuesten Version der intelligenten Bildbearbeitung.
+* Zuvor wurden sowohl die ursprünglichen als auch die abgeleiteten Bilder zwischengespeichert, und es war ein zweistufiger Prozess, den Cache zu invalidieren. In der neuesten Version der intelligenten Bildbearbeitung werden nur die Derivate zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
+* Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. Beispielsweise &quot;Timing Allow Origin&quot;und &quot;X-Robot&quot;, wie in [Hinzufügen eines benutzerdefinierten Header-Werts zu Bildantworten|Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) vorgeschlagen.
 
 ## Funktionsweise der intelligenten Bildbearbeitung{#how-smart-imaging-works}
 
-Wenn von einem Verbraucher ein Bild angefordert wird, überprüft die intelligente Bildbearbeitung die Benutzermerkmale und führt basierend auf dem verwendeten Browser eine Konvertierung in das passende Bildformat durch. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Wiedergabetreue nicht beeinträchtigt wird. Die intelligente Bildbearbeitung konvertiert Bilder basierend auf den Browser-Funktionen auf folgende Weise automatisch in verschiedene Formate.
+Wenn ein Verbraucher ein Bild anfordert, analysiert die intelligente Bildbearbeitung die Benutzermerkmale und konvertiert es basierend auf dem Browser in das entsprechende Format. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Wiedergabetreue nicht beeinträchtigt wird. Die intelligente Bildbearbeitung konvertiert Bilder basierend auf den Browser-Funktionen auf folgende Weise automatisch in verschiedene Formate.
 
-* Automatische Konvertierung in AVIF, wenn der Browser das Format unterstützt
+* Automatische Konvertierung in AVIF, wenn Ihr Browser das Format unterstützt
 * Automatische Konvertierung in WebP, wenn die AVIF-Konvertierung nicht vorteilhaft war oder der Browser AVIF nicht unterstützt
 * Automatische Konvertierung in JPEG2000, wenn Safari WebP nicht unterstützt
 * Automatische Konvertierung in JPEGXR für IE9+ oder wenn Edge WebP nicht unterstützt
@@ -154,7 +161,7 @@ Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstü
 * JPEG
 * PNG
 
-Für das JPEG-Bilddateiformat wird die Qualität des neuen Formats durch die intelligente Bildbearbeitung neu berechnet.
+Die intelligente Bildbearbeitung berechnet bei der Konvertierung in ein neues JPEG-Bilddateiformat die Qualität neu.
 
 Für Bilddateiformate, die Transparenz unterstützen, wie PNG, können Sie die intelligente Bildbearbeitung so konfigurieren, dass verlustbehaftete AVIF- und WebP-Dateien bereitgestellt werden. Für die verlustreiche Formatkonvertierung verwendet die intelligente Bildbearbeitung die in der URL des Bildes erwähnte Qualität oder ansonsten die im Dynamic Media-Unternehmenskonto konfigurierte Qualität.
 
@@ -164,7 +171,9 @@ Die Bildbereitstellungs-Befehle `fmt` und `qlt` werden nicht unterstützt; alle 
 
 ## Häufig gestellte Fragen zur intelligenten Bildbearbeitung{#smart-imaging-faq}
 
-+++**Ist die intelligente Bildbearbeitung mit Lizenzkosten verbunden?**
++++
+
+**Ist die intelligente Bildbearbeitung mit Lizenzkosten verbunden?**
 
 Nein. Sie sind berechtigt, die intelligente Bildbearbeitung mit Ihrer Lizenz zu nutzen. Dies gilt für Dynamic Media Classic oder Experience Manager Dynamic Media (On-Premise, AMS und Experience Manager as a Cloud Service).
 
@@ -174,37 +183,49 @@ Nein. Sie sind berechtigt, die intelligente Bildbearbeitung mit Ihrer Lizenz zu 
 
 +++
 
-+++**Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden?**
++++
+
+**Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden?**
 
 Ja. Sie können die intelligente Bildbearbeitung deaktivieren, indem Sie einen der folgenden Modifikatoren hinzufügen:
 
 * `bfc=off`, um die Browser-Formatkonvertierung zu deaktivieren. Siehe auch [Browser-Formatkonvertierung](#bfc).
 * `dpr=off`, um das Gerätepixelverhältnis zu deaktivieren. Siehe auch [Gerätepixelverhältnis](#dpr).
 * `network=off`, um die Netzwerkbandbreite zu deaktivieren. Siehe auch [Netzwerkbandbreite](#network).
++++
 
 +++
 
-+++**Ist es möglich, die intelligente Bildbearbeitung zu „optimieren“?**
+**Ist es möglich, die intelligente Bildbearbeitung zu „optimieren“?**
 
 Ja. Die intelligente Bildbearbeitung bietet drei Optionen, die Sie aktivieren oder deaktivieren können.
 
 * [Browser-Formatkonvertierung](#bfc)
 * [Gerätepixelverhältnis](#dpr)
 * [Netzwerkbandbreite](#network)
++++
 
 +++
 
-+++**Funktioniert die intelligente Bildbearbeitung mit meinen vorhandenen Bildvorgaben?**
+**Funktioniert die intelligente Bildbearbeitung mit meinen vorhandenen Bildvorgaben?**
 
-Ja. Die intelligente Bildbearbeitung funktioniert mit vorhandenen Bildvorgaben und berücksichtigt alle Bildeinstellungen. Was sich ändert, ist das Bildformat, die Qualitätseinstellung oder beides. Bei der Formatkonvertierung bleibt die Wiedergabetreue gemäß den von Ihnen für die Bildvorgabe gewählten Einstellungen vollständig erhalten – jedoch bei kleinerer Dateigröße.
+Die intelligente Bildbearbeitung lässt sich nahtlos in Ihre vorhandenen Bildvorgaben integrieren und berücksichtigt dabei alle Bildeinstellungen.
 
-Angenommen, für eine Bildvorgabe ist etwa das JPEG-Format mit einer Größe von 500 x 500 sowie einer Qualitätseinstellung von „85“ und einem Unschärfenmasken-Wert von 0,1;1;5 definiert. Wenn die intelligente Bildbearbeitung erkennt, dass sich Benutzende in einem Chrome-Browser befinden, wird das Bild in das WebP-Format mit einer Größe von 500 x 500 konvertiert. Unschärfemaske = 0.1,1,5 ist WebP-Qualität, die einer JPEG-Qualität von 85 so nahe wie möglich entspricht. Der Platzbedarf dieser WebP-Konvertierung wird mit dem von JPEG verglichen, und der kleinere von beiden wird zurückgegeben.
+Die einzigen Anpassungen betreffen das Bildformat, die Qualität oder beides. Bei der Formatkonvertierung behält die intelligente Bildbearbeitung die vollständige visuelle Wiedergabetreue gemäß Ihren Voreinstellungen bei, liefert jedoch eine kleinere Dateigröße. Aktivieren Sie es einfach, indem Sie `bfc=on`, `dpr=on,dprValue` oder `network=on` oder alle drei Parametereinstellungen zu Ihren vorhandenen URLs oder Vorgaben hinzufügen.
 
+Nehmen wir beispielsweise an, eine Bildvorgabe gibt ein JPEG-Format von 500 × 500 Pixel mit &quot;`quality=85`&quot;und &quot;`unsharp mask=0.1,1,5`&quot;an. Die intelligente Bildbearbeitung erkennt, ob sich der Benutzer in einem Chrome-Browser befindet. Anschließend wird das Bild in WebP mit denselben Abmessungen (500 × 500) und einer Unschärfemaske, die den Einstellungen der JPEG entspricht, konvertiert. Anschließend vergleicht das System die Dateigrößen der WebP- und JPEG-Versionen und stellt die kleinere Version für den Benutzer bereit.
 +++
 
-+++**Muss ich für die intelligente Bildbearbeitung URLs bzw. Bildvorgaben ändern oder neuen Code auf meiner Site bereitstellen?**
+<!-- OLD VERSION BELOW AS PER CQDOC-22085>
+Yes. Smart Imaging works with your existing image presets and observes all your image settings. What changes is the image format, or the quality setting, or both. For format conversion, Smart Imaging maintains full visual fidelity as defined by your image preset settings, but at a smaller file size.
 
-Nein. Die intelligente Bildbearbeitung funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben. Darüber hinaus müssen Sie bei der intelligenten Bildbearbeitung keinen Code auf Ihrer Website hinzufügen, um den Browser der Benutzerinnen und Benutzer zu erkennen. All dies wird automatisch erledigt.
+For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned. -->
+
+<!-- QUESTION BELOW WAS REMOVED AS PER CQDOC-22085
+
++++**Do I have to change any URLs, image presets, or deploy new code on my site?**
+
+No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add code to your website to detect a user's browser. All of this functionality is handled automatically.
 
 <!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
@@ -212,117 +233,118 @@ In case you must configure a new custom domain to use Smart Imaging, the URLs mu
 
 To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
 
-<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. 
+
+-->
 
 +++
 
-+++**Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?**
+**Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?**
 
 Ja, zu beiden Fragen. Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS oder HTTP/2 bereitgestellt wurden.
++++
 
 +++
 
-+++**Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?**
+**Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?**
 
-Es kommt darauf an. Um die intelligente Bildbearbeitung nutzen zu können, muss Dynamic Media Classic bzw. Dynamic Media im Experience Manager-Account Ihres Unternehmens die folgenden Voraussetzungen erfüllen:
+Die intelligente Bildbearbeitung kann sofort für alle Kunden verwendet werden. Um die Vorteile zu nutzen, fügen Sie einfach `bfc=on`, `dpr=on,dprValue`, `network=on` oder alle drei Parametereinstellungen zu Ihren vorhandenen URLs oder Vorgaben hinzu.
 
-* Sie verwenden das im Adobe-Bundle enthaltene CDN (Content Delivery Network) im Rahmen Ihrer Lizenz.
-* Sie verwenden eine dedizierte Domain (z. B. `images.company.com` oder `mycompany.scene7.com`), keine generische Domain (z. B. `s7d1.scene7.com`, `s7d2.scene7.com` oder `s7d13.scene7.com`).
-
-Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden.
-
-Wechseln Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Domain verwenden, können Sie den Wechsel zu Ihrer eigenen benutzerdefinierten Domain anfordern. Fordern Sie diese Umstellung mit einem Support-Fall an.
-
-Für Ihre erste anwenderdefinierte Domain fallen mit einer Dynamic Media-Lizenz keine zusätzlichen Kosten an.
-
+Um die intelligente Bildbearbeitung zu aktivieren, muss das Dynamic Media Classic- oder Dynamic Media-Konto Ihres Unternehmens auf dem Experience Manager das Adobe-gebündelte CDN (Content Delivery Network) als Teil Ihrer Lizenz enthalten.
 +++
 
-+++**Kann ich die intelligente Bildbearbeitung für mein Konto aktivieren?**
 
-Nein. Die intelligente Bildbearbeitung wird nicht automatisch aktiviert. Sie müssen eine entsprechende Anfrage stellen.
+<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
 
-Erstellen Sie einen Support-Fall wie unten beschrieben. Stellen Sie in Ihrem Support-Fall sicher, dass Sie erwähnen, welche der folgenden Funktionen der intelligenten Bildbearbeitung (eine oder mehrere) für Ihr Konto aktiviert werden sollen:
++++**Can I enable Smart Imaging for my account?**
+
+No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+
+Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
 
 * WebP
 * AVIF
-* DPR und Optimierung der Netzwerkbandbreite
-* PNG in verlustbehaftetes AVIF oder WebP
+* DPR and Network Bandwidth optimization
+* PNG to lossy AVIF or lossy WebP
 
-Wenn Sie die intelligente Bildbearbeitung bereits mit WebP aktiviert haben, aber andere neue Funktionen wie oben beschrieben wünschen, müssen Sie einen Support-Fall erstellen.
+If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
 
-**So erstellen Sie einen Support-Fall, um die intelligente Bildbearbeitung in Ihrem Konto zu aktivieren:**
+**To create a support case to enable Smart Imaging on your account:**
 
-1. [Verwenden Sie die Admin Console, um mit der Erstellung eines neuen Support-Falles zu beginnen.](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
-1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Provide the following information in your support case:
 
-   * Name des Hauptansprechpartners, E-Mail, Telefon.
+    * Primary contact name, email, phone.
 
-   * Geben Sie an, welche der folgenden Funktionen der intelligenten Bildbearbeitung (eine oder mehrere) für Ihr Konto aktiviert werden sollen:
+    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
       * WebP
       * AVIF
-      * DPR und Optimierung der Netzwerkbandbreite
-      * PNG in verlustbehaftetes AVIF oder WebP
+      * DPR and Network Bandwidth optimization
+      * PNG to lossy AVIF or lossy WebP
+    
+    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
-   * Geben Sie alle Domains an, für die intelligente Bildbearbeitung aktiviert werden soll (also `images.company.com` oder `mycompany.scene7.com`).
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
 
-     Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden.
+       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
 
-     Wechseln Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
+       Look for the field labeled **[!UICONTROL Published Server Name]**.
+    
+    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
 
-     Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**.
+    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
-   * Vergewissern Sie sich, dass Sie CDN über Adobe und nicht verwaltet mit einer direkten Beziehung nutzen.
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
 
-   * Vergewissern Sie sich, dass Sie eine dedizierte Domain wie `images.company.com` oder `mycompany.scene7.com` und nicht eine generische Domain wie `s7d1.scene7.com`, `s7d2.scene7.com` oder `s7d13.scene7.com` verwenden.
+       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
 
-     Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden.
+       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
 
-     Wechseln Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
+    * Indicate if you want it to work over HTTP/2.
 
-     Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media Classic-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
+1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
+1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
+1. You are notified after completion by Customer Support.
+1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
-   * Geben Sie an, ob sie über HTTP/2 funktionieren soll.
+    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
+    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
 
-1. Der Adobe-Support nimmt Sie in die Kunden-Warteliste für die intelligente Bildbearbeitung auf. Dies geschieht in der Reihenfolge der eingehenden Anfragen.
-1. Wenn Adobe Ihre Anfrage bearbeiten kann, setzt sich der Support mit Ihnen zwecks Koordinierung und Vereinbarung eines Zieldatums in Verbindung.
-1. **Optional**: Sie haben die Möglichkeit, die intelligente Bildbearbeitung in der Staging-Phase zu testen, bevor Adobe die neue Funktion an die Produktion weitergibt.
-1. Nach Abschluss werden Sie durch den Support benachrichtigt.
-1. Zur maximalen Leistungsverbesserung der intelligenten Bildbearbeitung empfiehlt Adobe eine Time-to-Live (TTL)-Einstellung von mindestens 24 Stunden. Die TTL-Einstellung definiert, wie lange Assets vom CDN-Service im Cache gespeichert werden. So ändern Sie diese Einstellung:
 
-   1. Wechseln Sie bei Verwendung von Dynamic Media Classic zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinstellungen]** > **[!UICONTROL Image-Server]**. Stellen Sie den Wert **[!UICONTROL Standardeinstellung für Time-To-Live des Client-Cache]** auf mindestens 24 ein.
-   1. Wenn Sie Dynamic Media verwenden, befolgen Sie [diese Anweisungen](config-dm.md). Stellen Sie den Wert **[!UICONTROL Gültigkeit]** auf mindestens 24 Stunden ein.
 
-+++
+**When is my account enabled with Smart Imaging?**
 
-+++**Wann ist mein Konto für die intelligente Bildbearbeitung aktiviert?**
-
-Die Anfragen werden in der Reihenfolge ihres Eingangs beim Support gemäß Warteliste bearbeitet.
+Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
 
 >[!NOTE]
 >
->Die Vorlaufzeit kann lang sein, da zum Aktivieren der Funktion „Intelligente Bildbearbeitung“ der Cache von Adobe gelöscht werden muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden.
+>There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+
+-->
 
 +++
 
-+++**Gibt es Risiken bei der Verwendung der intelligenten Bildbearbeitung?**
+**Gibt es Risiken bei der Verwendung der intelligenten Bildbearbeitung?**
 
 Es besteht kein Risiko für eine Kunden-Web-Seite. Die Umstellung auf die intelligente Bildbearbeitung löscht jedoch Ihren CDN-Cache. Dieser Vorgang umfasst die Umstellung auf eine neue Konfiguration von Dynamic Media Classic oder Dynamic Media in Experience Manager.
 
 Zu Beginn der Übergangsphase werden die nicht im Cache gespeicherten Bilder direkt an die ursprünglichen Server von Adobe übertragen, bis der Cache neu aufgebaut wurde. Aus diesem Grund führt Adobe nur wenige Umstellungen gleichzeitig durch, wodurch eine akzeptable Leistung aufrechterhalten werden kann, wenn Anforderungen aus der Quelle abgerufen werden. Bei den meisten Kundinnen und Kunden ist der CDN-Cache innerhalb von ein bis zwei Tagen wieder vollständig neu aufgebaut.
++++
 
 +++
 
-+++**Kann ich überprüfen, ob die intelligente Bildbearbeitung funktioniert?**
+**Kann ich überprüfen, ob die intelligente Bildbearbeitung funktioniert?**
 
 Ja. Sie können Folgendes tun:
 
-1. Laden Sie nach der Konfiguration Ihres Kontos mit der intelligenten Bildbearbeitung eine Dynamic Media-Bild-URL von Dynamic Media Classic oder Adobe Experience Manager in den Browser.
+1. Laden Sie nach der Konfiguration Ihres Kontos mit der intelligenten Bildbearbeitung eine Dynamic Media Classic- oder Adobe Experience Manager - Dynamic Media-Bild-URL in den Browser.
 1. Öffnen Sie den Chrome-Entwicklerbereich, indem Sie im Browser zu **[!UICONTROL Anzeigen]** > **[!UICONTROL Entwickler]** > **[!UICONTROL Entwickler-Tools]** wechseln. Selbstverständlich können Sie auch ein anderes Browser-Entwickler-Tool Ihrer Wahl verwenden.
 
-1. Stellen Sie sicher, dass der Cache deaktiviert ist, wenn die Entwicklertools geöffnet sind.
+1. Stellen Sie sicher, dass der Cache deaktiviert ist, wenn Entwickler-Tools geöffnet sind.
 
    * Gehen Sie unter Windows® im Bereich der Entwickler-Tools zu den Einstellungen und wählen Sie dann das Kontrollkästchen **[!UICONTROL Cache deaktivieren]** aus (während DevTools geöffnet ist).
-   * Gehen Sie unter Mac im Entwicklerbereich zur Registerkarte **[!UICONTROL Netzwerk]** und wählen Sie die Option **[!UICONTROL Cache deaktivieren]** aus.
+   * Wählen Sie in macOS im Entwicklerbereich auf der Registerkarte **[!UICONTROL Netzwerk]** die Option **[!UICONTROL Cache deaktivieren]**.
 
 1. Sie werden feststellen, dass der Content-Typ in das entsprechende Format umgewandelt wird. Der folgende Screenshot zeigt ein PNG-Bild, das in Chrome dynamisch ins WebP-Format konvertiert wird. Wenn für Ihre Domain AVIF aktiviert ist, wird AVIF auch im Inhaltstyp angezeigt.
 1. Wiederholen Sie diesen Test auf verschiedenen Browsern und bei unterschiedlichen Benutzerbedingungen.
@@ -332,10 +354,11 @@ Ja. Sie können Folgendes tun:
 >Nicht alle Bilder werden konvertiert. Die intelligente Bildbearbeitung entscheidet, ob die Konvertierung die Leistung verbessern kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
++++
 
 +++
 
-+++**Gibt es eine Möglichkeit, die Vorteile der intelligenten Bildbearbeitung zu erkennen?**
+**Gibt es eine Möglichkeit, die Vorteile der intelligenten Bildbearbeitung zu erkennen?**
 
 Ja. Der Header der intelligenten Bildbearbeitung bestimmt die Vorteile der intelligenten Bildbearbeitung. Wenn die intelligente Bildbearbeitung aktiviert ist, wird nach der Anforderung eines Bildes unter der Überschrift **[!UICONTROL Antwort-Header]** wie im folgenden hervorgehobenen Beispiel `-X-Adobe-Smart-Imaging` angezeigt:
 
@@ -353,20 +376,23 @@ Aus diesem Header geht Folgendes hervor:
 >
 >**X-Adobe-Smart-Imaging = -1, WebP bereitgestellt**
 >
->Wenn der Wert von `X-Adobe-Smart-Imaging` -1 beträgt und dennoch WebP bereitgestellt wird, bedeutet dies, dass die intelligente Bildbearbeitung funktioniert, die Größenvorteile jedoch aufgrund eines veralteten Caches nicht berechnet wurden. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
+>Wenn der Wert von `X-Adobe-Smart-Imaging` -1 ist und WebP weiterhin bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund veralteten Cache nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
 >Beispiel für die Verwendung des Modifikators:
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 >Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
 
 +++
 
-+++**Kann ich die AVIF-Optimierung in der intelligenten Bildbearbeitung deaktivieren?**
++++
+
+**Kann ich die AVIF-Optimierung in der intelligenten Bildbearbeitung deaktivieren?**
 
 Ja. Wenn Sie zur standardmäßigen Bereitstellung von WebP zurückwechseln möchten, erstellen Sie einen entsprechenden Support-Fall. Wie üblich können Sie die intelligente Bildbearbeitung deaktivieren, indem Sie den Modifikator `bfc=off` zur Bild-URL hinzufügen. Sie können jedoch weder WebP noch AVIF im URL-Modifikator für die intelligente Bildbearbeitung auswählen. Diese Funktion wird auf der Ebene Ihres Unternehmenskontos gepflegt.
++++
 
 +++
 
-+++**Warum schlägt meine Anfrage fehl, wenn ich im Chrome-Webbrowser eine URL mit „fmt=tif“ habe?**
+**Warum schlägt meine Anfrage fehl, wenn ich im Chrome-Webbrowser eine URL mit &quot;fmt=tif&quot;verwende?**
 
 Dieser Fehler tritt nicht auf, wenn die intelligente Bildbearbeitung in Ihrem Konto nicht aktiviert ist. Die intelligente Bildbearbeitung funktioniert nur für das JPEG- und das PNG-Format.
 
@@ -375,66 +401,75 @@ Um diesen Fehler zu vermeiden, haben Sie folgende Möglichkeiten:
 * Geben Sie JPEG oder PNG an oder
 * verwenden Sie den Modifikator `fmt` überhaupt nicht oder
 * verwenden Sie das vom Browser bevorzugte Format, das von der intelligenten Bildbearbeitung definiert wird. Sie können beispielsweise WebP für den Chrome-Webbrowser verwenden.
++++
 
 +++
 
-+++**Kann ich ein TIFF-Bild von der URL eines Bildes herunterladen?**
+**Kann ich ein TIFF-Bild von der URL eines Bildes herunterladen?**
 
 Ja. Fügen Sie `fmt=tif` und `bfc=off` zum URL-Pfad des Bildes hinzu.
++++
 
 +++
 
-+++**Verwaltet die intelligente Bildbearbeitung die Einstellungen für Bildformat und Bildqualität?**
+**Verwaltet die intelligente Bildbearbeitung die Einstellungen für Bildformat und Bildqualität?**
 
 Ja. Die intelligente Bildbearbeitung verwendet sowohl Format als auch Qualität. Die übrigen Parameter bleiben unverändert, wenn sie in der URL des Bildes angefordert werden.
++++
 
 +++
 
-+++**Kann ich eine minimale und maximale Qualitätseinstellung festlegen?**
+**Kann ich eine minimale und maximale Qualitätseinstellung festlegen?**
 
 Nein. Derzeit ist dies nicht vorgesehen.
++++
 
 +++
 
-+++**Passt die intelligente Bildbearbeitung die Einstellung für die prozentuale Ausgabequalität an?**
+**Passt die intelligente Bildbearbeitung die Einstellung für die prozentuale Ausgabequalität an?**
 
-Ja. Die intelligente Bildbearbeitung passt den Qualitätsprozentsatz automatisch an. Dieser Qualitätsprozentsatz wird mithilfe eines maschinellen Lernalgorithmus ermittelt, der von Adobe entwickelt wurde. Er ist nicht bereichsspezifisch.
+Ja. Die intelligente Bildbearbeitung passt den Qualitätsprozentsatz automatisch an. Diese Qualität wird mithilfe eines maschinellen Lernalgorithmus ermittelt, der von Adobe entwickelt wurde. Er ist nicht bereichsspezifisch.
++++
 
 +++
 
-+++**Wird nur JPEG und PNG durch die intelligente Bildbearbeitung ersetzt?**
+**Wird nur JPEG und PNG durch die intelligente Bildbearbeitung ersetzt?**
 
 Ja. Diese Funktion funktioniert nur für JPEG und PNG.
++++
 
 +++
 
-+++**Warum wird manchmal JPEG anstelle von WebP an Chrome zurückgegeben?**
+**Warum wird manchmal JPEG anstelle von WebP an Chrome zurückgegeben?**
 
 Die intelligente Bildbearbeitung entscheidet, ob die Konvertierung vorteilhaft ist. Das neue Bild wird nur zurückgegeben, wenn die Konvertierung von Vorteil ist.
++++
 
 +++
 
-+++**Warum funktioniert das Geräte-Pixel-Verhältnis (DPR) bei zusammengesetzten Bildern nicht wie erwartet?**
+**Warum funktioniert das Geräte-Pixel-Verhältnis (DPR) bei zusammengesetzten Bildern nicht wie erwartet?**
 
 Wenn ein zusammengesetztes Bild zu viele Ebenen umfasst, kann die DPR-Funktionalität bei Verwendung eines Positionsmodifikators beeinträchtigt sein. Dieses Problem ist bekannt und wird in künftigen Versionen der intelligenten Bildbearbeitung behoben. Wenn andere Funktionen der intelligenten Bildbearbeitung nicht wie erwartet funktionieren, können Sie einen Support-Fall erstellen, um das Problem zu melden.
++++
 
 +++
 
-+++**Warum wird PNG durch die intelligente Bildbearbeitung in verlustfreies WebP/AVIF konvertiert?**
+**Warum wird PNG durch die intelligente Bildbearbeitung in verlustfreies WebP/AVIF konvertiert?**
 
-Da PNG ein verlustfreies Format ist, wurden frühere WebP- und AVIF-Bereitstellungen verlustfrei durchgeführt, was zu einer höheren Größe als erwartet führte. Die intelligente Bildbearbeitung unterstützt jetzt verlustreiche Konvertierungen. Sie können den Modifikator `cache=update` in einer Bildanforderung verwenden (nur einmal), um dieses Problem zu beheben. Ein Beispiel für die Verwendung dieses Modifikators:
+Da PNG ein verlustfreies Format ist, waren frühere Bereitstellungen von WebP und AVIF verlustfrei, was zu einer höheren Größe als erwartet führte. Die intelligente Bildbearbeitung unterstützt jetzt verlustreiche Konvertierungen. Sie können den Modifikator `cache=update` in einer Bildanforderung verwenden (nur einmal), um dieses Problem zu beheben. Ein Beispiel für die Verwendung dieses Modifikators:
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
 Um den gesamten Cache ungültig zu machen, müssen Sie einen entsprechenden Support-Fall erstellen.
++++
 
 +++
 
-+++**Kann ich die verlustfreie Konvertierung von PNG in der intelligenten Bildbearbeitung weiterhin verwenden?**
+**Kann ich die verlustfreie Konvertierung von PNG in der intelligenten Bildbearbeitung weiterhin verwenden?**
 
-Ja. Die intelligente Bildbearbeitung unterstützt jetzt verlustreiche Konvertierungen basierend auf der Qualitätsstufe. Um weiterhin verlustfreie Konvertierungen zu verwenden, können Sie den Qualitätsprozentsatz „100“ verwenden, der entweder über die Einstellung Ihres Unternehmens oder über die URL des Bildes mithilfe von `qlt=100` im Pfad festgelegt werden kann.
-
+Ja. Die intelligente Bildbearbeitung unterstützt jetzt verlustreiche Konvertierungen basierend auf der Qualitätsstufe. Sie können die verlustfreie Konvertierung fortsetzen, indem Sie die Qualität auf 100 festlegen, entweder über die Einstellungen Ihres Unternehmens oder indem Sie dem URL-Pfad des Bildes `qlt=100` hinzufügen.
 +++
+
 
 
 
