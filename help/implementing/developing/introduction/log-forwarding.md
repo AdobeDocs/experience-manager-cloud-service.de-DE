@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 2%
 
 ---
@@ -305,6 +305,12 @@ data:
 Zu beachten:
 
 * Standardmäßig ist der Port 443. Optional kann sie mit einer Eigenschaft mit dem Namen `port` überschrieben werden.
+* Das Feld &quot;Quelltyp&quot;hat je nach Protokoll einen der folgenden Werte: *aemaccess*, *aemerror*,
+  *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+
+>[!NOTE]
+>
+> [Wenn Sie ](#legacy-migration) von der bisherigen Protokollweiterleitung zu diesem Self-Service-Modell migrieren, haben sich die an Ihren Splunk-Index gesendeten Werte des `sourcetype` -Felds möglicherweise geändert. Passen Sie daher entsprechend an.
 
 
 <!--
@@ -385,6 +391,10 @@ Kunden, die auf diese Weise von Adobe eingerichtet wurden, können sich gerne an
 Wenn Sie bereit zur Migration sind, konfigurieren Sie einfach die YAML-Datei wie in den vorherigen Abschnitten beschrieben. Verwenden Sie die Cloud Manager-Konfigurations-Pipeline, um sie für jede Umgebung bereitzustellen, in der die Konfiguration angewendet werden soll.
 
 Es wird empfohlen, jedoch nicht erforderlich, eine Konfiguration für alle Umgebungen bereitzustellen, damit sie alle von selbst gesteuert werden. Wenn nicht, vergessen Sie möglicherweise, welche Umgebungen von Adobe konfiguriert wurden, im Vergleich zu den auf Self-Service-Art konfigurierten Umgebungen.
+
+>[!NOTE]
+>
+>Die Werte des Felds `sourcetype`, die an Ihren Splunk-Index gesendet werden, haben sich möglicherweise geändert. Passen Sie also entsprechend an.
 
 >[!NOTE]
 >
