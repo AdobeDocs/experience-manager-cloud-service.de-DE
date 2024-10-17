@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
+source-git-commit: 8d38ee90ed5b4e9a5d39d0580e35101187f2c457
 workflow-type: tm+mt
-source-wordcount: '2840'
-ht-degree: 71%
+source-wordcount: '3243'
+ht-degree: 64%
 
 ---
 
@@ -32,7 +32,7 @@ Und jetzt erhalten Sie eine bessere Google Core Web Vital-Bewertung für LCP (LC
 >
 >Probieren Sie die Vorteile von Dynamic Media-Bildmodifikatoren und der intelligenten Bildbearbeitung mithilfe von Dynamic Media [_Momentaufnahme_ aus](https://snapshot.scene7.com/).
 >
-> „Momentaufnahme“ ist ein visuelles Demonstrationswerkzeug, das die Leistungsfähigkeit von Dynamic Media für eine optimierte und dynamische Bildbereitstellung veranschaulicht. Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Dynamic Media-Bildmodifikatoren visuell zu beobachten, und optimieren Sie die intelligente Bildbearbeitung für Folgendes:
+>„Momentaufnahme“ ist ein visuelles Demonstrationswerkzeug, das die Leistungsfähigkeit von Dynamic Media für eine optimierte und dynamische Bildbereitstellung veranschaulicht. Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Dynamic Media-Bildmodifikatoren visuell zu beobachten, und optimieren Sie die intelligente Bildbearbeitung für Folgendes:
 >
 >* Dateigröße (mit WebP- und AVIF-Bereitstellung)
 >* Netzwerkbandbreite
@@ -254,74 +254,73 @@ Um die intelligente Bildbearbeitung zu aktivieren, muss das Dynamic Media Classi
 +++
 
 
-<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
++++
 
-+++**Can I enable Smart Imaging for my account?**
+**Wie wird die intelligente Bildbearbeitung in einem Konto aktiviert?**
 
-No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+Um mit der intelligenten Bildbearbeitung zu beginnen, hängen Sie `bfc=on`, `dpr=on,dprValue`, `network=on` oder alle drei Parametereinstellungen an Ihre vorhandenen URLs oder Vorgaben an. Wenn Sie diese Änderungen nicht manuell vornehmen möchten, können Sie die intelligente Bildbearbeitung standardmäßig aktivieren, indem Sie einen Support-Vorgang erstellen.
 
-Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
+Geben Sie beim Erstellen des Support-Falles an, welche intelligenten Bildbearbeitungsfunktionen für Ihr Konto aktiviert werden sollen:
 
-* WebP
-* AVIF
-* DPR and Network Bandwidth optimization
-* PNG to lossy AVIF or lossy WebP
-
-If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
-
-**To create a support case to enable Smart Imaging on your account:**
-
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Provide the following information in your support case:
-
-    * Primary contact name, email, phone.
-
-    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
-      * WebP
-      * AVIF
-      * DPR and Network Bandwidth optimization
-      * PNG to lossy AVIF or lossy WebP
-    
-    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**.
-    
-    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
-
-    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
-
-    * Indicate if you want it to work over HTTP/2.
-
-1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
-1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by Customer Support.
-1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
-
-    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
-    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
-
-
-
-**When is my account enabled with Smart Imaging?**
-
-Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
+* Browserformatkonvertierung (WebP oder AVIF)
+* Optimierung der Netzwerkbandbreite
 
 >[!NOTE]
 >
->There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+>Die DSGVO erfordert clientseitige Anpassungen, um die korrekten `dprValue` zu ermitteln. Daher empfiehlt Adobe die Aktivierung der DPR über URLs durch Anhängen von `dpr=on,dprValue`.
 
--->
+**So erstellen Sie einen Support-Fall, um die intelligente Bildbearbeitung in Ihrem Konto zu aktivieren:**
+
+1. [Verwenden Sie die Admin Console, um mit der Erstellung eines neuen Support-Falles zu beginnen.](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
+
+   * **Primäre Kontaktdetails:**
+
+      * Geben Sie Ihren Namen, Ihre E-Mail-Adresse und Ihre Telefonnummer an.
+
+   * **Funktionen für die intelligente Bildbearbeitung zur Aktivierung:**
+
+      * Geben Sie die für Ihr Konto gewünschten Funktionen an:
+
+         * Browserformat-Konvertierung: WebP oder AVIF
+         * Optimierung der Netzwerkbandbreite
+         * DSGVO: Die DSGVO erfordert Client-seitige Anpassungen, um die korrekten `dprValue` zu ermitteln. Daher empfiehlt Adobe die Aktivierung der DPR über URLs durch Anhängen von `dpr=on,dprValue`.
+
+   * **Domäne für intelligente Bildbearbeitung:**
+
+      * Liste aller relevanten Domänen, z. B. *`company.com`* oder *`mycompany.scene7.com`*
+      * Die intelligente Bildbearbeitung unterstützt sowohl allgemeine als auch benutzerdefinierte Domänen.
+      * Um Ihre Domänen zu identifizieren, öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an.
+
+         1. Navigieren Sie zu **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
+         1. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichter Server-Name]** , um Ihre Domäne zu bestätigen.
+         1. Vergewissern Sie sich, dass Sie Adobe CDN anstelle eines von einem anderen Provider verwalteten Providers verwenden.
+
+   * **Anzeigen der HTTP/2-Unterstützung:**
+
+      * Geben Sie an, ob die intelligente Bildbearbeitung über HTTP/2 funktioniert.
+
+1. Die Adobe-Kundenunterstützung ermöglicht standardmäßig die angeforderten Funktionen der intelligenten Bildbearbeitung, sodass Parameter nicht manuell an URLs angehängt werden müssen.
+1. Adobe empfiehlt, die TTL (Time to Live) auf mindestens 24 Stunden festzulegen, um die Leistung durch Zwischenspeicherung zu maximieren.
+Anpassen der TTL:
+
+   1. **Für Dynamic Media Classic:**
+      1. Navigieren Sie zu **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Publish-Einrichtung]** > **[!UICONTROL Image-Server]**.
+      1. Stellen Sie den Wert **[!UICONTROL Standard-Client-Cache-Zeit auf Live]** auf mindestens 24 Stunden ein.
+   1. **Für Dynamic Media auf Adobe Experience Manager:**
+      1. Befolgen Sie [diese Anweisungen](/help/assets/dynamic-media/config-dm.md).
+      1. Legen Sie den Wert **[!UICONTROL Ablauf]** für mindestens 24 Stunden fest.
+
+
++++
+
+**Wann ist ein Konto für die intelligente Bildbearbeitung aktiviert?**
+
+Der Support verarbeitet Anfragen in der Reihenfolge, in der sie empfangen werden, entsprechend der Warteliste.
+
+>[!NOTE]
+>
+>Die Vorlaufzeit kann lang sein, da zum Aktivieren der Funktion „Intelligente Bildbearbeitung“ der Cache von Adobe gelöscht werden muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden.
 
 +++
 
@@ -469,27 +468,6 @@ Um den gesamten Cache ungültig zu machen, müssen Sie einen entsprechenden Supp
 
 Ja. Die intelligente Bildbearbeitung unterstützt jetzt verlustreiche Konvertierungen basierend auf der Qualitätsstufe. Sie können die verlustfreie Konvertierung fortsetzen, indem Sie die Qualität auf 100 festlegen, entweder über die Einstellungen Ihres Unternehmens oder indem Sie dem URL-Pfad des Bildes `qlt=100` hinzufügen.
 +++
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
