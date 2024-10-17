@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 18175 {#release-18175}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 18175, die am Freitag, 10. Oktober 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 17964. Version 18099 wurde wegen eines Problems privat gemacht.
+Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 18175, die am 10. Oktober 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 17964. Version 18099 wurde wegen eines Problems privat gemacht.
 
 Die Funktionsaktivierung von 2024.10.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -34,24 +34,24 @@ Die Funktionsaktivierung von 2024.10.0 bietet den vollen Funktionsumfang für di
 * GRANITE-52454: Upgrade des Support-Helfers GRANITE-52454 Upgrade des Support-Helfers zur Verwendung der neuesten Version für AEMaaCS.
 * GRANITE-53287: Update der Testversion der Integration von Sicherheitsberechtigungen.
 * GRANITE-53485: Authentifizierung des Support-Service-Prinzipals für die Replikation Azure Blob Storage.
-* GRANITE-53514: Treeactivation aktualisiert auf Version 1.0.26.
-* GRANITE-53870: Erstellen eines internen Mechanismus, um die Überprüfung auf maximale JVM-Version für den Schnellstart zu überspringen.
-* GRANITE-53914: Fehlerbehebung bei Platform-Tests mit Java 17 Aktualisierte Modulversion.
+* GRANITE-53514: Update von Treeactivation auf Version 1.0.26.
+* GRANITE-53870: Erstellen eines internen Mechanismus, um die Überprüfung auf die maximale JVM-Version für den Schnellstart zu überspringen.
+* GRANITE-53914: Behebung von Fehlern bei Plattformtests mit der aktualisierten Modulversion von Java 17.
 * GRANITE-53966: Verwenden eines separaten Thread-Pools für die Inhaltsverteilung.
 * GRANITE-54006: Update von Jackson auf 2.17.2.
 * GRANITE-54038: Hinzufügen des Creative Cloud Enterprise IMS-Clients zur AEM IMS-Client-Zulassungsliste.
 * GRANITE-54054: Umgebungsvariable für com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
-* GRANITE-54266: In Produktions-SDK fehlt der Suchvorschlagsdienst.
+* GRANITE-54266: Im Produktions-SDK fehlt der Suchvorschlagsdienst.
 * GRANITE-54274: Akzeptieren von Firefly IMS-Client.
 * GRANITE-54300: Update von Oak auf die neueste öffentliche Version (1.70.0).
 * GUIDES-19069: Hinzufügen von guidesPeerLinkIndex für AEM-Handbücher-Add-on.
-* SITES-23584: Fehlerhaften Test für Foundation-Komponente in Java 17 behoben.
+* SITES-23583: Korrektur eines fehlgeschlagenen Tests für die Foundation-Komponente unter Java 17.
 * SKYOPS-69768: SlingModels deserialisieren ResourceResolvers nicht.
 * SKYOPS-76378: Verbessern der Thread-Sicherheit der ResourceBundle-Registrierung/-Deregistrierung in i18n.
-* SKYOPS-79285: Aktualisierung von Sling XSS auf 2.4.2.
+* SKYOPS-79285: Update von Sling XSS auf 2.4.2
 * SKYOPS-82383: Anzeigen des Ergebnisses „helm-values“ convert-merge-analyze im Befehlsausführungsdeskriptor.
 * SKYOPS-84810: Überspringen der Ausführung von „40-initialize-publish.sh“ beim Start für RDE.
-* SKYOPS-84951: Fehlerbehebung für den Generierungscode der veränderlichen Inhaltsprüfsumme.
+* SKYOPS-84951: Fehlerbehebung für den Generierungs-Code der veränderlichen Inhaltsprüfsumme.
 * SKYOPS-85335: Update von org.apache.sling.jcr.repoinit auf 1.1.52.
 * SKYOPS-85336: Update von Sling Commons Threads auf 3.3.0.
 * SKYOPS-86329: Update von Versionen von Plattformtestmodulen für die Unterstützung von Java 21 SDK.
@@ -70,7 +70,7 @@ Weitere Informationen zu den neuen und verbesserten Handbuch-Funktionen sowie zu
 
 ### Bekannte Probleme {#known-issues-18175}
 
-* FORMS-15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found -Anweisungen in Serverprotokollen. Dies sind harmlose Protokollanweisungen.
+* FORMS-15818: Angaben „Komponenten-Beschreibungseintrag `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` nicht gefunden“ in Server-Protokollen. Dies sind harmlose Protokollanweisungen.
 
 ### Eingestellte Funktionen und APIs {#deprecated-18175}
 
