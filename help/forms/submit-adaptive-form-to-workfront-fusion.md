@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 100%
+source-wordcount: '1272'
+ht-degree: 98%
 
 ---
 
@@ -81,6 +81,10 @@ So fügen Sie einen Webhook hinzu:
    > Es wird empfohlen, Ihren Webhook-Namen sorgfältig auszuwählen, da der angegebene Webhook-Name in der AEM-Instanz angezeigt wird.
 
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Verbindung hinzuzufügen. Das Dialogfeld **[!UICONTROL Verbindung erstellen]** erscheint.
+
+>[!NOTE]
+>
+> Stellen Sie sicher, dass das technische Konto Mitglied der Gruppe **forms-users** ist. Andernfalls schlägt das Hinzufügen eines Webhooks fehl.
 
 #### Hinzufügen einer Verbindung zu einem Webhook {#add-connection}
 
