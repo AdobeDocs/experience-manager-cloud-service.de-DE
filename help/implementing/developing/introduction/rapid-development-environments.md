@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
-ht-degree: 93%
+source-wordcount: '4794'
+ht-degree: 88%
 
 ---
 
@@ -1052,3 +1052,17 @@ Andernfalls können Sie auch bestätigen, dass Sie über diese Entwicklerrolle v
 `aio cloudmanager:list-programs`
 
 Dadurch sollten alle Programme unter Ihrer konfigurierten Organisation aufgelistet und bestätigt werden, dass Ihnen die richtige Rolle zugewiesen ist.
+
+### Verwenden des veralteten Kontexts &quot;aio-cli-plugin-cloudmanager&quot; {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+Aufgrund des Verlaufs des &#39;aio-cli-plugin-aem-rde&#39; wurde der Kontextname &#39;aio-cli-plugin-cloudmanager&#39; für einige Zeit verwendet. Das Rde-Plug-in verwendet jetzt die IMS-Methode zum Umgang mit Kontextdaten. Das bedeutet, dass es Optionen gibt, Kontextdaten global oder lokal zu speichern. Außerdem werden alle aio-Aufrufe auf einen konfigurierten Standard gesetzt, falls gewünscht. Der konfigurierte Standardkontext wird lokal gespeichert und ermöglicht es den Entwicklern, einzelne Kontexte und deren Informationen in einem Ordner zu verfolgen und zu verwenden. Weitere Informationen finden Sie in [dem Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
+
+Entwickler, die beide Plug-ins verwenden, den aio-cli-plugin-cloudmanager und den aio-cli-plugin-aem-rde und alle Informationen im selben Kontext beibehalten möchten, haben jetzt folgende Optionen:
+
+#### Verwenden Sie weiterhin den Kontext &quot;aio-cli-plugin-cloudmanager&quot;.
+
+Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird eine Warnung zur Einstellung angezeigt. Diese Warnung kann mit dem Modus ```--quiet``` ignoriert werden. Neuere Versionen des RDE-Plug-ins bieten keinen Fallback, um den Kontext &quot;aio-cli-plugin-cloudmanager&quot;länger zu lesen. Um es weiterhin zu nutzen, konfigurieren Sie einfach den Standardkontext in &quot;aio-cli-plugin-cloudmanager&quot;, siehe [das Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
+
+#### Verwenden Sie einen anderen Kontextnamen auch für das Cloud Manager-Plug-in
+
+Die Cloud Manager-Plug-ins bieten einen Parameter zur Definition eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie dazu das RDE-Plug-in mit [dem Beispiel, um einen lokalen Kontext einzurichten](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, &quot;myContext&quot;wie ```--imsContextName=myContext``` bei jedem Aufruf zu verwenden.
