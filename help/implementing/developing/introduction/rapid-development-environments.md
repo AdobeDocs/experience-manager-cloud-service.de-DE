@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 88%
@@ -99,6 +99,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    ```
    aio login
    ```
+
    Die Anmeldeinformationen (Token) werden in der globalen aio-Konfiguration gespeichert und unterstützen daher nur eine Anmeldung und Organisation. Wenn Sie mehrere RDEs verwenden möchten, die unterschiedliche Anmeldungen oder Organisationen benötigen, folgen Sie dem folgenden Beispiel für die Einführung von Kontexten.
 
    <details><summary>In diesem Beispiel wird beschrieben, wie Sie einen lokalen Kontext für eine Ihrer RDE-Anmeldungen einrichten</summary>
@@ -111,7 +112,6 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standardbrowser zu öffnen. So können Sie es kopieren und mit einem **inkognito** -Fenster Ihres Browsers öffnen. Auf diese Weise bleibt Ihre aktuell angemeldete Sitzung im normalen Browser-Fenster unberührt und Sie können sicherstellen, dass Sie die spezifische Anmeldung und Organisation verwenden, die für Ihren Kontext erforderlich sind.
@@ -153,8 +153,8 @@ Wählen Sie `yes`, um
 Sobald die lokale oder globale Konfiguration ausgewählt ist, versucht der Setup-Befehl, Ihre Organisations-ID aus Ihrer aktuellen Anmeldung und anschließend die Programme der Organisation zu lesen. Falls die Organisation nicht gefunden werden kann, können Sie sie mithilfe von Anweisungen manuell eingeben.
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 Nach dem Abrufen der Programme können Benutzende aus der Liste auswählen und auch filtern.
@@ -248,7 +248,6 @@ Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnd
 * Um detaillierte Hilfe zu einem Befehl zu erhalten, geben Sie Folgendes ein:
 
   `aio aem rde <command> --help`
-
 
 ### Globale Flags {#global-flags}
 
@@ -507,7 +506,7 @@ Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket
 >
 >Falls der Fehler `RDECLI:UNEXPECTED_API_ERROR` angezeigt wird, wenn Sie die Protokollbefehle für den Author-Service ausprobieren, setzen Sie Ihre Umgebung zurück und versuchen Sie es erneut. Dieser Fehler wird ausgegeben, wenn der letzte Vorgang zum Zurücksetzen vor Ende Mai 2024 stattgefunden hat.
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
   }
 }
 ```
+
 </details>
 
 ### Installieren {#install}
@@ -723,6 +723,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
   ]
 }
 ```
+
 </details>
 
 ### Löschen {#delete}
@@ -901,6 +902,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
   ]
 }
 ```
+
 </details>
 
 ### Zurücksetzen {#reset}
@@ -931,6 +933,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
   "status": "reset"
 }
 ```
+
 </details>
 
 ### Neu starten {#restart}
