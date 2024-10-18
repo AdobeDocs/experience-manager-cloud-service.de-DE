@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Connectoren und darüber, was sie tun könn
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '936'
-ht-degree: 100%
+source-git-commit: a9cec66cf518a19a5a6152d431a052369b5b503a
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 74%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 Implementieren von AEM-Connectoren
 =============================
 
-Im Folgenden finden Sie nützliche Hinweise zum Erstellen von [AEM-Connectoren](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html). Sie sollten zusammen mit Anleitungen zum [Senden](submit.md) und [Warten](maintain.md) von Connectoren gelesen werden.
+Im Folgenden finden Sie nützliche Hinweise zum Erstellen von AEM Connectors. Sie sollten mit Anleitungen zu den Connectoren [Senden](submit.md) und [Warten](maintain.md) gelesen werden.
 
-Eine Entwicklerlizenz für AEM kann über das [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud) erworben werden.
+Eine Entwicklerlizenz für AEM kann über das [Adobe Exchange-Programm](https://partners.adobe.com/technologyprogram/experiencecloud.html) erworben werden.
 
 Gängige Integrationsmuster
 ---------------------------
@@ -25,8 +25,8 @@ Gängige Integrationsmuster
 AEM ist eine hochmoderne Web-Experience-Management-Lösung und bietet viele potenzielle Integrationsbereiche. Zu den gängigen Integrationsmustern gehören:
 
 * Abruf von Daten von einem externen System in AEM. Exportieren Sie beispielsweise Kontaktinformationen aus einem CRM-System, um sie einer breiteren Zielgruppe beim Besuch einer AEM-basierten Website zur Verfügung zu stellen.  Implementierungen sollten die [geplanten Aufträge](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs) von Sling verwenden, die garantieren, dass der Auftrag auch dann ausgeführt wird, wenn die Container ausfallen. Code sollte so konzipiert sein, dass der Auftrag möglicherweise mehrmals ausgelöst werden kann.
-* Exportieren von Daten aus AEM in ein externes System. Beispielsweise Einstellungen für ein Newsletter-Abonnement, die auf einer AEM-unterstützten Website an ein CRM-System gesendet werden.
-* Abrufen von Assets aus AEM. Beispielsweise ein externes Content Management System (CMS), das auf ein in AEM Assets gespeichertes Asset verweist. Oder als weiteres Beispiel ein PIM-System, das mit einem Bild in AEM Assets verknüpft ist.
+* Exportieren von Daten aus AEM in ein externes System. Beispielsweise werden Newsletter-Abonnementeinstellungen auf einer AEM-basierten Website an ein CRM-System gesendet.
+* Abrufen von Assets aus AEM. Beispielsweise ein externes Content Management System (CMS), das auf ein in AEM Assets gespeichertes Asset verweist. Oder ein PIM-System, das mit einem Bild in AEM Assets verknüpft ist.
 * Speichern von Assets in der AEM-Infrastruktur. Zum Beispiel ein Marketing-Ressourcen-Management (MRM)-System, das ein genehmigtes Asset in AEM Assets speichert.
 * Konfigurieren und Rendern einer benutzerdefinierten Komponente der Benutzeroberfläche. Beispielsweise können Sie einem Autor gestatten, eine Videokomponente per Drag-and-Drop zu verschieben und ein bestimmtes Video für die Wiedergabe auf der Live-Site zu konfigurieren.
 * Aktionen für ein Asset mit einem Partner-Service. Senden eines Assets an eine Videoplattform, wenn eine Seite veröffentlicht wird.
@@ -49,13 +49,13 @@ Community-Ressourcen
 Zusätzlich zur obenstehenden statischen Dokumentation bieten Adobe und die AEM-Community Ressourcen an, um einen Connector auf den Markt zu bringen:
 
 * Das [AEM-Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) der Adobe Community ist eine aktive Website, auf der Ihre Kollegen Fragen stellen und beantworten
-* Für bestimmte Partnerstufen stehen zusätzliche technische Ressourcen von Adobe zur Verfügung. Weitere Informationen zum [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Wenn Ihr Unternehmen Hilfe bei der Implementierung wünscht, wenden Sie sich an das [Professional Services](https://www.adobe.com/de/marketing-cloud/service-support/professional-consulting-training.html)-Team von Adobe oder suchen Sie im [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) eine Liste der Adobe-Partner auf der ganzen Welt
+* Für bestimmte Partnerstufen stehen zusätzliche technische Ressourcen von Adobe zur Verfügung. Weitere Informationen zum [Adobe Exchange-Programm](https://partners.adobe.com/technologyprogram/experiencecloud.html).
+* Wenn Ihr Unternehmen Hilfe bei der Implementierung wünscht, wenden Sie sich an das [Professional Services](https://solutionpartners.adobe.com/s/directory)-Team von Adobe oder suchen Sie im [Solution Partner Finder](https://solutionpartners.adobe.com/s/directory/) eine Liste der Adobe-Partner auf der ganzen Welt
 
 Regeln für die Paketstruktur
 -----------------------
 
-Um fortlaufende Bereitstellungen zu unterstützen, wird bei AEM as a Cloud Service-Paketen (z. B. Connectoren) strikt zwischen „unveränderlichen“ und „veränderlichen“ Inhalten unterschieden. Es sollte klar zwischen Paketen mit den folgenden Inhalten unterschieden werden:
+Um eine rollierende Bereitstellung zu erleichtern, halten AEM as a Cloud Service-Pakete - wie z. B. Connectoren - eine strikte Trennung zwischen &quot;unveränderlichen&quot;und &quot;veränderlichen&quot;Inhalten fest. Pakete sollten klar organisiert sein, um Folgendes zu umfassen:
 
 * `/apps`
 * `/content` und `/conf`
@@ -64,9 +64,9 @@ Connectoren sollten sich an die unter [Struktur von AEM-Projekten](/help/impleme
 
 Darüber hinaus sollte nur Adobe Code in `/libs` schreiben, während Kunden und Partner in `/apps` schreiben.
 
-Bestehende Connectoren müssen möglicherweise auch umstrukturiert werden, um jede Konfiguration, die einmal in `/etc` platziert wurde, in andere Ordner der obersten Ebene, wie z. B. `/conf`, zu verschieben. Diese Umstrukturierung erfolgte im Rahmen von AEM 6.5 und wird in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de) beschrieben.
+Bestehende Connectoren müssen möglicherweise auch umstrukturiert werden, um jede Konfiguration, die einmal in `/etc` platziert wurde, in andere Ordner der obersten Ebene, wie z. B. `/conf`, zu verschieben. Diese Umstrukturierung erfolgte im Rahmen von AEM 6.5 und wird in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/restructuring/repository-restructuring) beschrieben.
 
-Es wird empfohlen, den Großteil des Verbindungs-Codes unter `/apps/connectors/<vendor>` zu platzieren, um eine saubere Repository-Struktur für Kundinnen und Kunden mit mehreren Verbindungen zu unterstützen.
+Adobe empfiehlt, den Großteil des Connector-Codes unter `/apps/connectors/<vendor>` zu platzieren, um eine saubere Repository-Struktur zu erhalten, insbesondere für Kunden, die mehrere Connectoren verwenden.
 
 Cloud Services-Konfigurationen
 -----------------------------
@@ -77,16 +77,16 @@ Ein Aspekt der Connector-Implementierung ist der Code, der die Konfiguration des
 Kontextabhängige Konfigurationen
 -----------------------------
 
-[Kontextabhängige Konfigurationen](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) ermöglichen die Konfiguration von Ebenen über verschiedene Ordner hinweg, einschließlich `/libs`, `/apps`, `/conf` und der Unterordner unter `/conf`. Es wird die Vererbung unterstützt, sodass ein Kunde eine globale Konfiguration festlegen und gleichzeitig spezifische Änderungen für jede Microsite vornehmen kann. Da diese Funktion für Cloud Services-Konfigurationen genutzt werden kann, sollte der Connector-Code mithilfe der API für kontextabhängige Konfigurationen auf die Konfiguration verweisen, anstatt auf einen bestimmten Konfigurationsknoten zu verweisen.
+Mit [kontextbezogenen Konfigurationen](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) können Sie die Ebenenkonfiguration über verschiedene Ordner hinweg festlegen, einschließlich `/libs`, `/apps`, `/conf` und Unterordnern unter `/conf`. Es wird die Vererbung unterstützt, sodass ein Kunde eine globale Konfiguration festlegen und gleichzeitig spezifische Änderungen für jede Microsite vornehmen kann. Da diese Funktion für Cloud Service-Konfigurationen verwendet werden kann, sollte der Connector-Code mithilfe der kontextsensitiven Konfigurations-API auf die Konfiguration verweisen, anstatt auf einen bestimmten Konfigurationsknoten zu verweisen.
 
-Wenn im Connector geänderte Konfigurationen verwendet werden, können Sie den Connector so gestalten, dass zukünftige Aktualisierungen der vom Connector bereitgestellten Standardkonfigurationen mit Kundenkonfigurationen integriert/zusammengeführt werden. Denken Sie daran, dass das Ändern von benutzerdefinierten (also vom Kunden geänderten) Inhalten oder Konfigurationen ohne Warnung und Zustimmung des Kunden zu einer Unterbrechung (oder zu unerwartetem Verhalten) des Connectors führen kann.
+Wenn im Connector geänderte Konfigurationen verwendet werden, können Sie den Connector so gestalten, dass zukünftige Aktualisierungen der vom Connector bereitgestellten Standardkonfigurationen mit Kundenkonfigurationen integriert/zusammengeführt werden. Beachten Sie, dass eine Änderung von kundenspezifischen Inhalten oder Konfigurationen ohne vorherige Ankündigung und Zustimmung zu unerwartetem Verhalten in ihrem Connector führen oder stören kann.
 
 Best Practices für die Kodierung
 ----------------------
 
-Da AEM as a Cloud Service eine Cloud-native Lösung ist, gibt es einige Richtlinien, die die Code-Strategien eines Connectors beeinflussen können. Weitere Informationen finden Sie unter [Entwicklungsrichtlinien für AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md).
+Da AEM as a Cloud Service eine Cloud-native Lösung ist, gibt es einige Richtlinien, die sich auf die Code-Strategien eines Connectors auswirken können. Weitere Informationen finden Sie unter [Entwicklungsrichtlinien für AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md).
 
 Testen von AEM-Connectoren
 -------------------------
 
-Neue Connectoren sollten mithilfe lokaler Entwicklungstechniken erstellt (oder vorhandene Connectoren modifiziert) werden. Das Partner-Team stellt ISV-Partnern eine Sandbox-Umgebung zur Verfügung, in der sie ihren AEM-Connector in einem Basisprogramm bereitstellen können, um sicherzustellen, dass er funktioniert.
+Neue Connectoren sollten mithilfe lokaler Entwicklungstechniken erstellt (oder vorhandene Connectoren modifiziert) werden. Das Partner-Team stellt ISV-Partnern eine Sandbox-Umgebung zur Verfügung, in der sie ihren AEM Connector in einer Vanilla-Anwendung bereitstellen können, um sicherzustellen, dass er funktioniert.
