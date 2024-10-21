@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
 workflow-type: tm+mt
-source-wordcount: '5469'
+source-wordcount: '5557'
 ht-degree: 98%
 
 ---
@@ -929,6 +929,15 @@ Mit GraphQL für AEM-Inhaltsfragmente können Sie eine URL für ein AEM Dynamic 
 Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 
 * Verwenden von `_dmS7Url` für die Referenz `ImageRef`
+   * siehe [Beispielabfrage für die Dynamic Media-Asset-Bereitstellung nach URL - Bildreferenz](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Verwenden Sie `_dmS7Url` für mehrere Verweise; `ImageRef`, `MultimediaRef` und `DocumentRef`
+   * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - Mehrere Referenzen](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* Verwenden Sie `_dmS7Url` mit der Funktion &quot;Smartes Zuschneiden&quot;
+
+   * Die Eigenschaft `_smartCrops` legt die Konfigurationen für das smarte Zuschneiden offen, die für ein bestimmtes Asset verfügbar sind
+
+   * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - mit smartem Zuschneiden](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - mit smartem Zuschneiden {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+Es folgt eine Beispielabfrage:
+
+* , um die für die angeforderten Assets verfügbaren Konfigurationen für smartes Zuschneiden anzuzeigen
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
@@ -1155,13 +1194,13 @@ Für den Zugriff auf den GraphQL-Endpunkt über eine externe Website müssen Sie
 
 Siehe [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](/help/headless/security/authentication.md).
 
-## Automatisierte Tests {#automated-testing}
+## Automatische Tests {#automated-testing}
 
-Beim Ausführen einer Bereitstellungs-Pipeline in AEM Cloud Manager werden während der Pipelineausführung automatisierte Tests ausgeführt.
+Beim Ausführen einer Bereitstellungs-Pipeline in AEM Cloud Manager werden während der Pipeline-Ausführung automatisierte Tests ausgeführt.
 
-Um präzise Ergebnisse zu erzielen, sollte Ihre AEM as a Cloud Service **Staging** -Umgebung Ihre **Produktions** -Umgebung so gut wie möglich spiegeln. Dies ist besonders für Inhalte wichtig.
+Um genaue Ergebnisse zu erzielen, sollte Ihre AEM as a Cloud Service-**Staging-Umgebung** Ihre **Produktionsumgebung** so gut wie möglich widerspiegeln. Dies ist insbesondere für Inhalte wichtig.
 
-Sie können dies erreichen, indem Sie mit dem AEM as a Cloud Service-Werkzeug [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) Produktionsinhalte in die Staging-Umgebung kopieren.
+Sie können dies erreichen, indem Sie in AEM as a Cloud Service mit dem Werkzeug zum [Kopieren von Inhalten](/help/implementing/developing/tools/content-copy.md) Produktionsinhalte in die Staging-Umgebung kopieren.
 
 ## Einschränkungen {#limitations}
 
