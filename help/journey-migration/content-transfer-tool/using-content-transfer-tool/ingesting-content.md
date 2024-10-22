@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >id="aemcloud_ctt_ingestion"
 >title="Inhaltsaufnahme"
 >abstract="Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem Migrationssatz in die Cloud Service-Zielinstanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Auffüllextraktion"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Auffüllextraktion"
 
 Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager aufzunehmen:
 
@@ -94,7 +94,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
 >id="aemcloud_ctt_ingestion_topup"
 >title="Auffüllaufnahme"
 >abstract="Verwenden Sie die Auffüllfunktion, um Inhalte zu verschieben, die seit der vorherigen Inhaltsübertragungsaktivität geändert wurden. Überprüfen Sie die Protokolle nach Abschluss der Aufnahme auf Fehler und Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Anzeigen von Protokollen"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Anzeigen von Protokollen"
 
 Das Content Transfer Tool verfügt über eine Funktion, die die Extraktion von differenziellen Inhalten ermöglicht, indem eine *Auffüllung* des Migrationssatzes ausgeführt wird. Dadurch kann der Migrationssatz so geändert werden, dass nur die Inhalte einbezogen werden, die seit der vorherigen Extraktion geändert wurden, ohne dass der gesamte Inhalt erneut extrahiert werden muss.
 
@@ -113,7 +113,7 @@ Erstellen Sie zunächst einen Aufnahmeauftrag und stellen Sie sicher, dass **Ber
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Fehlerbehebung für die Inhaltsaufnahme"
 >abstract="In den Aufnahmeprotokollen und der Dokumentation finden Sie Lösungen zu häufigen Ursachen für Aufnahmefehler und können sehen, welche Möglichkeiten es gibt, das Problem zu beheben und die Aufnahme erneut auszuführen. Nach der Korrektur können Sie die Aufnahme erneut ausführen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validieren von Inhaltsübertragungen"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validieren von Inhaltsübertragungen"
 
 ### CAM kann das Migrations-Token nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
 
@@ -174,7 +174,7 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Verletzung der Eindeutigkeitsbeschränkung"
 >abstract="Eine häufige Ursache für einen Fehler bei der Aufnahme mit der Einstellung „Nicht bereinigen“ ist ein Konflikt bei Knoten-IDs. Es darf nur einer der in Konflikt stehenden Knoten vorhanden sein."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -194,7 +194,7 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Referenzierter Knoten kann nicht gelöscht werden"
 >abstract="Eine häufige Ursache für einen Fehler bei der Aufnahme mit der Einstellung „Nicht bereinigen“ ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Die Versionen des Knotens müssen in Ordnung gebracht werden."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Eine weitere häufige Ursache für einen Fehler bei der [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) ist ein Versionskonflikt für einen bestimmten Knoten in der Zielinstanz. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
@@ -212,7 +212,7 @@ Wenn eine Aufnahme mit der Einstellung **Nicht bereinigen** mit einem Migrations
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Eigenschaft für große Knoten"
 >abstract="Eine häufige Ursache für einen Aufnahmefehler ist die Überschreitung der maximalen Größe von Knoteneigenschaftswerten. Befolgen Sie die Dokumentation, auch die zum BPA-Bericht, um Abhilfe zu schaffen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Migrationsvoraussetzungen"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Migrationsvoraussetzungen"
 
 Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Wenn ein Knotenwert die unterstützte Größe überschreitet, schlägt die Aufnahme fehl und das Protokoll enthält entweder:
 
@@ -233,8 +233,8 @@ Um diese Einschränkung möglicherweise zu vermeiden, führen Sie den [Best Prac
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
->title="Unerwartete zeitweise auftretende Fehler"
->abstract="Manchmal können unerwartete zeitweise auftretende nachgelagerte Dienstfehler auftreten, und leider besteht der einzige Rückgriff darin, die Aufnahme einfach erneut zu versuchen."
+>title="Unerwartete zeitweilige Fehler"
+>abstract="Manchmal können unerwartete zeitweilige Fehler in nachgelagerten Diensten auftreten, und leider besteht der einzige Behelf darin, die Aufnahme einfach erneut zu versuchen."
 
 Manchmal können sich unerwartete zeitweise auftretende Probleme an fehlgeschlagene Erfassungsvorgänge weiterleiten, bei denen der einzige Rückgriff leider darin besteht, die Aufnahme erneut auszuführen. Untersuchen Sie das Aufnahmeprotokoll, um die Ursache des Fehlers zu ermitteln und festzustellen, ob es mit einem der unten aufgeführten Fehler übereinstimmt, wo ein erneuter Versuch unternommen werden sollte.
 
