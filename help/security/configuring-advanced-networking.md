@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder ei
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: ht
-source-wordcount: '5676'
-ht-degree: 100%
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+workflow-type: tm+mt
+source-wordcount: '5657'
+ht-degree: 99%
 
 ---
 
@@ -563,9 +563,7 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben.
 
 ### Nützliche Domains für die Konfiguration {#vpn-useful-domains-for-configuration}
 
-Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains und zugehörigen IPs, die für die Konfiguration und Entwicklung nützlich sind. Die Tabelle weiter unten im Diagramm beschreibt diese Domains und IPs.
-
-![VPN-Domain-Konfiguration](/help/security/assets/AdvancedNetworking.jpg)
+In der folgenden Tabelle werden eine Reihe von Domänen und IPs beschrieben, die für die Konfiguration und Entwicklung nützlich sind.
 
 <table>
 <thead>
