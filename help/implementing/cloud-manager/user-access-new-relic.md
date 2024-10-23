@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '1825'
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe erachtet die Überwachbarkeit, Verfügbarkeit und Leistungsfähigkeit Ihre
 
 In diesem Dokument wird beschrieben, wie Sie den Zugriff auf die in Ihren AEM as a Cloud Service-Umgebungen aktivierten Funktionen zur Leistungsüberwachung (APM) von New Relic One-Programmen verwalten, sodass Sie die Leistung verbessern und AEM as a Cloud Service optimal nutzen können.
 
-Wenn ein neues Produktionsprogramm erstellt wird, wird automatisch ein mit Ihrem AEM as a Cloud Service-Programm verknüpftes New Relic One-Unterkonto erstellt. [Dieses Unterkonto muss aktiviert werden](#activate-sub-account), um mit der Aufnahme von Daten zu beginnen.
+Wenn ein neues Produktionsprogramm erstellt wird, wird automatisch ein mit Ihrem AEM as a Cloud Service-Programm verknüpftes New Relic One-Unterkonto erstellt. [Dieses Unterkonto muss aktiviert werden](#activate-sub-account), damit die Aufnahme von Daten beginnen kann.
 
 ## Funktionen {#transaction-monitoring}
 
@@ -55,11 +55,11 @@ Für ein neu erstelltes Programm wird ein New Relic One-Unterkonto für Sie erst
 
    * Sie können auch auf die Option **Benutzer verwalten** zugreifen, indem Sie oben im Bildschirm **Umgebungen** Ihres Programms auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg klicken.
 
-1. [Führen Sie eine Pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) für dieselbe Umgebung aus, um sie erfolgreich abzuschließen und die Aktivierung des Unterkontos abzuschließen.
+1. [Führen Sie eine Pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) für dieselbe Umgebung bis zum erfolgreichen Abschluss aus, um die Aktivierung des Unterkontos abzuschließen.
 
 Wenn das Unterkonto deaktiviert ist, werden keine Daten aufgenommen.
 
-## Verwalten von New Relic One-Benutzern {#manage-users}
+## Verwalten von New Relic One-Benutzenden {#manage-users}
 
 Führen Sie diese Schritte aus, um die Benutzenden Ihres New Relic One-Unterkontos zu definieren, das mit Ihrem AEM as a Cloud Service-Programm verbunden ist.
 
@@ -113,9 +113,9 @@ Wenn Sie keine Bestätigungs-E-Mail von New Relic erhalten, finden Sie weitere I
 
 ## Zugriff auf New Relic One {#accessing-new-relic}
 
-Nachdem Sie [ Ihr New Relic-Konto aktiviert haben, können Sie über Cloud Manager oder direkt auf New Relic One zugreifen.](#activate-account)
+Nachdem Sie [Ihr New Relic-Konto aktiviert haben](#activate-account), können Sie über Cloud Manager oder direkt auf New Relic One zugreifen.
 
-**So greifen Sie auf New Relic One by Cloud Manager zu:**
+**So greifen Sie über Cloud Manager auf New Relic One zu:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -135,15 +135,15 @@ Nachdem Sie [ Ihr New Relic-Konto aktiviert haben, können Sie über Cloud Manag
 
 1. Melden Sie sich bei New Relic One an.
 
-### E-Mail überprüfen {#verify-email}
+### Verifizieren Ihrer E-Mail-Adresse {#verify-email}
 
-Wenn Sie während der Anmeldung bei New Relic One aufgefordert werden, Ihre E-Mail-Adresse zu überprüfen, bedeutet dies, dass Ihre E-Mail-Adresse mit mehreren Konten verknüpft ist. Sie können auswählen, auf welches Konto Sie zugreifen möchten.
+Wenn Sie während der Anmeldung bei New Relic One aufgefordert werden, Ihre E-Mail-Adresse zu überprüfen, bedeutet dies, dass Ihre E-Mail-Adresse mit mehreren Konten verknüpft ist. Sie können auswählen, auf welches Konto zugegriffen werden soll.
 
 Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzerdatensatz anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
 
 Um weitere Hilfe zu erhalten, öffnen Sie ein Support-Ticket über das [AEM Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
-## Fehlerbehebung beim Zugriff auf New Relic One-Benutzer {#troubleshooting}
+## Fehlerbehebung beim Benutzerzugriff auf New Relic One {#troubleshooting}
 
 Wenn Sie als New Relic One-Benutzerin oder -Benutzer hinzugefügt wurden, wie im Abschnitt [Verwalten von New Relic One-Benutzenden](#manage-users) beschrieben, und die ursprüngliche E-Mail zur Kontobestätigung nicht mehr finden können, führen Sie die folgenden Schritte aus.
 
@@ -161,11 +161,11 @@ Wenn Sie als New Relic One-Benutzerin oder -Benutzer hinzugefügt wurden, wie im
 
 Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, erstellen Sie ein Support-Ticket über die [Admin Console](https://adminconsole.adobe.com/).
 
-Wenn Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
+Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 
 * Überprüfen Sie Ihre [Spam-Filter](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
 * [Fügen Sie New Relic gegebenenfalls zu Ihrer E-Mail-Zulassungsliste hinzu](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-* Wenn keiner der Vorschläge hilft, geben Sie Feedback zum Support-Ticket.
+* Wenn keiner dieser Vorschläge hilft, geben Sie Feedback zum Support-Ticket.
 
 ## Einschränkungen {#limitations}
 
@@ -177,11 +177,11 @@ Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu Ne
 
 >[!NOTE]
 >
->Wenn in Ihrem New Relic One-Unterkonto mindestens 90 Tage lang keine Aktivität erkannt wurde, wird der APM-Agent angehalten.
+>Wenn in Ihrem New Relic One-Unterkonto mindestens 90 Tage lang keine Aktivität erkannt wurde, wird der APM-Agent angehalten.
 >
 >Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
 
-Wenn Sie weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr AEM as a Cloud Service-Programm benötigen, öffnen Sie ein Support-Ticket über das [AEM Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr Programm in AEM as a Cloud Service zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Häufig gestellte Fragen {#faqs}
 
@@ -215,7 +215,7 @@ Adobe bietet New Relic One nur zu Beobachtungszwecken Zugriff und nutzt ihn nich
 
 ### Wer kann auf die Daten des Cloud-Service von New Relic One zugreifen? {#access-new-relic-cloud}
 
-Vollständiger Lesezugriff wird bis zu 30 Mitgliedern Ihres Teams gewährt. Der Lesezugriff umfasst alle vom New Relic One-Agenten erfassten APM-Metriken.
+Vollständiger Lesezugriff wird bis zu 30 Mitgliedern Ihres Teams gewährt. Sie erhalten für alle APM-Metriken, die vom New Relic One-Agenten erfasst werden, Lesezugriff.
 +++
 
 +++
@@ -233,7 +233,7 @@ New Relic One ist die neue Beobachtungsplattform von New Relic und ermöglicht e
 
 New Relic One bietet Benutzenden die Möglichkeit, alle Konten zu durchsuchen, zu denen sie Zugriff haben, und die Daten von allen Services und Hosts in einer Ansicht zu visualisieren.
 
-Während die Adobe-Unterstützung die AEM as a Cloud Service-Anwendung mit New Relic One und anderen internen Tools als Teil Ihres Dienstes überwacht, können Ihre Teams New Relic weiterhin für lokal gehostete Dienste und Infrastruktur verwenden. Die Visualisierung der Daten ist sowohl über das Adobe New Relic One-Konto als auch über kundenseitig verwaltete New Relic-Konten möglich.
+Während der Adobe-Support im Rahmen Ihres Services die AEM as a Cloud Service-Anwendung mit New Relic One und anderen internen Tools überwacht, können Ihre Teams New Relic weiterhin für lokal gehostete Services und Infrastrukturen nutzen. Die Visualisierung der Daten ist sowohl über das Adobe New Relic One-Konto als auch über kundenseitig verwaltete New Relic-Konten möglich.
 
 >[!NOTE]
 >

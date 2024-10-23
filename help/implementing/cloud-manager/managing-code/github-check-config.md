@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 33%
+ht-degree: 63%
 
 ---
 
@@ -39,10 +39,10 @@ pipelines:
 | `shouldDeletePreviousComment` | `true` oder `false` | `false` | Gibt an, ob nur der letzte Kommentar mit den Ergebnissen der Codescans für diese GitHub-Pull-Anforderung beibehalten werden soll oder ob alle beibehalten werden sollen. Ist sie auf &quot;`false`&quot;(Standard) eingestellt, werden vorherige Kommentare nicht gelöscht. |
 | `shouldSkipCheckAnnotations` | `true` oder `false` | `false` | Ob zusätzliche Anmerkungen in der Prüfung der GitHub-Pull-Anforderung vorhanden sein sollen oder nicht. Ist sie auf &quot;`false`&quot;(Standard) gesetzt, bedeutet dies, dass die Anmerkungen nicht übersprungen werden und im Feedback enthalten sind. |
 | `type` | `CI_CD` | Nicht zutreffend | Definiert das Verhalten der CI/CD-Pipeline-Konfigurationen (Continuous Integration/Continuous Deployment). |
-| `template.programId` | Ganzzahl | Es werden keine Pipeline-Variablen wiederverwendet | Sie können es verwenden, um die [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) wiederzuverwenden, die auf einer vorhandenen Pipeline festgelegt sind, die automatisch von jeder Pull-Anforderung erstellt wird. |
-| `template.pipelineId` | Ganzzahl | Es werden keine Pipeline-Variablen wiederverwendet | Sie können es verwenden, um die [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) wiederzuverwenden, die auf einer vorhandenen Pipeline festgelegt sind, die automatisch von jeder Pull-Anforderung erstellt wird. |
+| `template.programId` | Ganzzahl | Es werden keine Pipeline-Variablen wiederverwendet | Kann verwendet werden, um die [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) wiederzuverwenden, die auf einer vorhandenen Pipeline festgelegt sind, die automatisch von jeder Pull-Anfrage erstellt wird. |
+| `template.pipelineId` | Ganzzahl | Es werden keine Pipeline-Variablen wiederverwendet | Kann verwendet werden, um die [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) wiederzuverwenden, die auf einer vorhandenen Pipeline festgelegt sind, die automatisch von jeder Pull-Anfrage erstellt wird. |
 | `namePrefix` | Zeichenfolge | `Full Stack Code Quality Pipeline for PR` | Wird verwendet, um das Präfix für den Namen der automatisch erstellten Pipeline festzulegen. |
-| `importantMetricsFailureBehavior` | `CONTINUE` oder `FAIL` oder `PAUSE` | `CONTINUE` | Legt das wichtige Metrikverhalten der Pipeline fest<br>`CONTINUE` = Wenn eine wichtige Metrik fehlschlägt, wechselt die Pipeline automatisch vorwärts.<br>`FAIL` = Die Pipeline wird mit dem Status FEHLGESCHLAGEN beendet, wenn eine wichtige Metrik fehlschlägt.<br>`PAUSE` = Der Codescan-Schritt erhält einen WARING-Status, wenn eine wichtige Metrik fehlschlägt, und muss manuell fortgesetzt werden |
+| `importantMetricsFailureBehavior` | `CONTINUE` oder `FAIL` oder `PAUSE` | `CONTINUE` | Legt das Verhalten der Pipeline für wichtige Metriken fest<br>`CONTINUE` = Wenn eine wichtige Metrik fehlschlägt, wird die Pipeline automatisch weitergeleitet<br>`FAIL` = Wenn eine wichtige Metrik fehlschlägt, endet die Pipeline mit dem Status FEHLGESCHLAGEN<br>`PAUSE` = Wenn eine wichtige Metrik fehlschlägt, erhält der Code-Scan-Schritt einen Status WARTEN und muss manuell wieder aufgenommen werden |
 
 
 

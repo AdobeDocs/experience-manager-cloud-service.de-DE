@@ -74,7 +74,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
    * Videos prüfen, genehmigen und mit Anmerkungen versehen und die vollständige Versionskontrolle behalten
 
-      * [Videos kommentieren](/help/assets/manage-video-assets.md#annotate-video-assets) oder [Anmerkungen zu Assets hinzufügen](/help/assets/manage-digital-assets.md#annotating)
+      * [Hinzufügen von Anmerkungen zu Videos](/help/assets/manage-video-assets.md#annotate-video-assets) oder [Hinzufügen von Anmerkungen zu Assets](/help/assets/manage-digital-assets.md#annotating)
 
       * [Erstellen einer Version](/help/assets/manage-digital-assets.md#asset-versioning)
       * [Starten eines Workflows für ein Asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
@@ -549,7 +549,7 @@ Durch Aktivierung einer der drei oben genannten Funktionen werden alle Funktione
    * Ihre Cloud Service-Umgebung (Programm-ID und Umgebungs-ID).
    * Name Ihres Dynamic Media-Unternehmenskontos.
    * Ihre Dynamic Media-Region: Nordamerika (NA), Asien-Pazifik (APAC) oder Europa-Naher Osten-Asien (EMEA).
-   * Legen Sie fest, dass DASH, Multi-Captions- und Multi-Audio-Tracks und AI-generierte Untertitel (eingeschränkte Verfügbarkeit) in Ihrem Dynamic Media-Konto in AEM as a Cloud Service aktiviert werden sollen.
+   * Geben Sie an, dass in Ihrem Dynamic Media-Konto in AEM as a Cloud Service die Unterstützung für DASH, mehrfache Untertitel und mehrfache Audiospuren sowie für KI-generierte Untertitel (eingeschränkte Verfügbarkeit) aktiviert werden soll.
 
 1. Der Kunden-Support von Adobe nimmt Sie in der Reihenfolge der eingereichten Anfragen in die Warteliste auf.
 1. Wenn Ihre Anfrage bearbeitet werden kann, setzt sich der Kunden-Support mit Ihnen in Verbindung, um sich mit Ihnen abzustimmen und einen Termin für die Aktivierung festzulegen.
@@ -780,7 +780,7 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
 
 +++
 
-+++**Option 2:** *Ich möchte, dass die KI meine Untertiteldateien in mehreren Sprachen generiert.* (Option **[!UICONTROL Audiospuren konvertieren&quot;]**).
++++**Option 2:** *Ich möchte, dass die KI meine Untertiteldateien in mehreren Sprachen generiert.* (Option **[!UICONTROL Audiospuren konvertieren]**).
 
    1. Klicken Sie in der oberen rechten Ecke der Seite auf **[!UICONTROL Untertitel erstellen]** > **[!UICONTROL Dateien hochladen]**.
 

@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -62,7 +62,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 >[!NOTE]
 >
->Wenn Sie über zwei oder mehr SAN-Zertifikate verfügen, die denselben SAN-Domäneneintrag abdecken, wird die Domäne für die Domäne installiert, wenn die Domäne durch ein Zertifikat abgedeckt ist und das andere aktualisiert wird.
+>Wenn Sie über zwei oder mehr SAN-Zertifikate verfügen, die denselben SAN-Domain-Eintrag abdecken, und diese Domain durch eines der Zertifikate abgedeckt ist und ein anderes aktualisiert wird, wird letzteres für die Domain installiert.
 >
 >Weitere Informationen finden Sie unter [Fehlerbehebung bei SSL-Zertifikatproblemen](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert).
 
@@ -88,7 +88,7 @@ Im Folgenden finden Sie einige Gründe, aus denen Sie möglicherweise ein SSL-Ze
 
 1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 
-1. Klicken Sie auf der Seite **SSL-Zertifikate** am Ende einer Zeile, deren SSL-Zertifikat mit dem Namen **Adobe managed** umbenannt werden soll, auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) .
+1. Klicken Sie auf der Seite **SSL-Zertifikate** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren **von Adobe verwaltetes** Zertifikat umbenannt werden soll.
 
 1. Klicken Sie im Dropdown-Menü auf **Umbenennen**.
 
@@ -119,7 +119,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 1. Klicken Sie auf der Seite &quot;SSL-Zertifikate&quot;in der Tabellenzeile des Zertifikats, das Sie löschen möchten, auf das Symbol &quot;![Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ganz rechts und klicken Sie dann auf &quot;**Löschen**&quot;.
 
-   Wenn **Löschen** über ein Informationssymbol verfügt, das im folgenden Bild zu sehen ist, finden Sie weitere Informationen unter Hinweis oben.
+   Wenn die Schaltfläche **Löschen** ein Informationssymbol aufweist, wie in der folgenden Abbildung dargestellt, finden Sie weitere Informationen im Hinweis oben.
 
    ![Schaltfläche „Löschen“ mit Informationssymbol](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
