@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinz
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '742'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Clou
 
 >[!NOTE]
 >
->Diese Funktion steht nur [dem frühen Adoptionsprogramm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) zur Verfügung.
+>Diese Funktion ist nur für das [Early-Adopter-Programm](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) verfügbar.
 
 ## Konfigurieren eines externen Repositorys
 
