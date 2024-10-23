@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Content-Authoring mit Edge Delivery Services funk
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
+source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 69%
+source-wordcount: '452'
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 Mit Edge Delivery Services ist das Authoring einfach, schnell und flexibel. Sie haben zwei Optionen zum Erstellen von Inhalten für Edge Delivery Services:
 
-* [Universal Editor](#universal-editor) - Eine moderne WYSIWYG-Benutzeroberfläche (What-you-see-is-what-you-get) für die Bearbeitung von Inhalten in AEM
+* [Universal Editor](#universal-editor) - Eine moderne (WYSIWYG)-Benutzeroberfläche für die Bearbeitung von Inhalten in AEM
 * [Dokumentenbasiertes Authoring](#document-based) – wie Microsoft Word oder Google Docs
 
 ## Authoring mit dem universellen Editor {#universal-editor}
@@ -40,9 +40,9 @@ Bei der Verwendung von Edge Delivery Services mit AEM as a Cloud Service ist es 
 
 Bausteine sind grundlegende Komponenten einer Seite, die von Edge Delivery Services bereitgestellt wird. Autorinnen und Autoren können aus Standardbausteinen wählen, die standardmäßig von Adobe bereitgestellt werden, oder aus Bausteinen, die von Ihren Entwicklerinnen und Entwicklern für Ihr Projekt angepasst wurden.
 
-Der universelle Editor bietet eine moderne und intuitive grafische Benutzeroberfläche für das Verfassen von Inhalten durch Drag-and-Drop von Bausteinen.
+Der universelle Editor bietet eine moderne und intuitive grafische Benutzeroberfläche für die Bearbeitung von Inhalten durch Hinzufügen und Anordnen von Bausteinen.
 
-![Drag-and-Drop von Bausteinen im universellen Editor](assets/blocks.png)
+![Hinzufügen und Anordnen von Bausteinen im universellen Editor](assets/blocks.png)
 
 Details zu den Bausteinen können dann in der Leiste Eigenschaften konfiguriert werden.
 
@@ -50,10 +50,10 @@ Details zu den Bausteinen können dann in der Leiste Eigenschaften konfiguriert 
 
 Weitere Informationen zum Verfassen mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Weitere Informationen zum Starten Ihres eigenen Projekts für die Bearbeitung mit AEM und Edge Delivery Services finden Sie im [Erste Schritte für Entwickler mit WYSIWYG Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
+Informationen zum Starten Ihres eigenen Projekts für die Bearbeitung mit AEM und Edge Delivery Services finden Sie im [Erste Schritte für Entwickler mit WYSIWYG Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
 ## Zusätzliche Authoring-Methoden  {#authoring-methods}
 
-WYSIWYG Authoring ist ein leistungsstarkes und intuitives Tool für Inhaltsautoren. Es gibt jedoch viele verschiedene Anwendungsfälle für die Bearbeitung, weshalb AEM zusätzliche Authoring-Lösungen anbietet.
+WYSIWYG Authoring ist ein leistungsstarkes und intuitives Tool für Inhaltsautoren. Es gibt jedoch viele verschiedene Anwendungsfälle für das Authoring, weshalb AEM zusätzliche Authoring-Lösungen anbietet.
 
 Weitere Informationen zu den Authoring-Lösungen AEM Angeboten, einschließlich dokumentbasiertem Authoring und Headless, finden Sie im Dokument [Auswählen einer Authoring-Methode](/help/edge/authoring-methods.md) .
