@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie einem bestehenden Programm in Cloud Manager f
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 98%
 
 ---
 
@@ -33,14 +33,14 @@ Gehen Sie wie folgt vor, um Screens als Add-on zu einem vorhandenen Programm hin
 
 1. Gehen Sie zu Ihrem Projekt und klicken Sie auf der Seite **Übersicht** von Cloud Manager auf die Option **Programm bearbeiten**.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![Programm bearbeiten](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >Auf der Seite **Programm bearbeiten** werden zwei Registerkarten, **Allgemein** und **Lösungen und Add-ons**, angezeigt.
 
 1. Auf der Registerkarte **Lösungen und Add-ons** werden Optionen wie Sites, Assets und Screens angezeigt. Wählen Sie die Add-on-Option **Screens** aus, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Screens-Add-On-Option](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Klicken Sie auf **Aktualisieren**, nachdem Sie Ihre Optionen ausgewählt haben.
 

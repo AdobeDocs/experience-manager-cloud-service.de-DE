@@ -4,10 +4,10 @@ description: Diese Seite bietet einen Überblick über die Go-Live-Phase in Clou
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 100%
+source-wordcount: '144'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Die Karte Go-Live enthält alle relevanten Inhalte, die die Vorbereitung, spezif
 
 Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zum Abschnitt **Live-Schaltung** zu gehen, wie in der folgenden Abbildung dargestellt.
 
-![Bild](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+![Live-Schaltung](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
 >Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=de#create-project).
@@ -29,8 +29,8 @@ In diesem Abschnitt erfahren Sie mehr zur Karte „Go-Live-Aktivität“:
 
 1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Live-Schaltung**.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+   ![Aufschalten - Ansicht](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. Ein Inhaltskarussell zeigt relevante Informationen für diese Phase der Migration an.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
+   ![Im Karussell werden relevante Informationen angezeigt](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
