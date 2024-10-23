@@ -3,16 +3,21 @@ title: Hochladen der von Ihrer Marke genehmigten Assets in  [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markengenehmigten Assets in Content Hub hochladen.
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: '958'
+ht-degree: 2%
 
 ---
 
 # Hochladen von markengenehmigten Assets in Content Hub {#upload-brand-approved-assets-content-hub}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+>[!CONTEXTUALHELP]
+>id="upload_assets_content_hub"
+>title="Hochladen von markengenehmigten Assets in Content Hub"
+>abstract="Fügen Sie genehmigte Assets zu Content Hub entweder aus dem lokalen Dateisystem hinzu oder importieren Sie Assets aus OneDrive- oder Dropbox-Datenquellen. Alle Assets werden unabhängig von der Ordnerstruktur auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern."
+
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 [Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) können Assets zur Content Hub entweder aus dem lokalen Dateisystem hinzufügen oder Assets aus OneDrive- oder Dropbox-Datenquellen importieren. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
