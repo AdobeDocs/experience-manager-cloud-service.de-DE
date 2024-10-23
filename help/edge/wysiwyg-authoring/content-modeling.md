@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die Inhaltsmodellierung für WYSIWYG Authoring mi
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 85%
+source-wordcount: '2196'
+ht-degree: 83%
 
 ---
 
@@ -608,20 +608,7 @@ Es ist auch möglich, zusätzliche Seitenmetadaten auf zwei Arten zu definieren.
 
 Es ist möglich, Metadaten in AEM as a Cloud Service anhand von Pfaden oder Pfadmustern auf tabellenähnliche Weise zu definieren. Es gibt eine Authoring-Benutzeroberfläche für tabellenähnliche Daten, die Excel- oder Google-Tabellen ähneln.
 
-Um eine solche Tabelle zu erstellen, erstellen Sie eine Seite und verwenden Sie die Metadatenvorlage in der Sites-Konsole.
-
-Definieren Sie in den Seiteneigenschaften der Kalkulationstabelle die benötigten Metadatenfelder zusammen mit der URL. Fügen Sie dann Metadaten pro Seitenpfad oder Seitenpfadmuster hinzu.
-
-Stellen Sie sicher, dass die Kalkulationstabelle Ihrer Pfadzuordnung hinzugefügt wird, bevor Sie sie veröffentlichen.
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+Weitere Informationen finden Sie im Dokument [Verwenden von Tabellen zur Verwaltung tabellarischer Daten](/help/edge/wysiwyg-authoring/tabular-data.md) .
 
 ### Seiteneigenschaften {#page-properties}
 
@@ -631,7 +618,7 @@ Viele der in AEM verfügbaren Standardseiteneigenschaften werden den entsprechen
 * Zeitpunkt der letzten Veröffentlichung des Dokuments als `published-time` im ISO8601-Format
 * `cq:tags` als `cq-tags` als kommagetrennte Liste der Tag-IDs.
 
-Es ist auch möglich, ein Komponentenmodell für benutzerdefinierte Seitenmetadaten zu definieren, das der Autorin oder dem Autor als Registerkarte im Dialogfeld mit den AEM Sites-Seiteneigenschaften zur Verfügung gestellt wird.
+Es ist auch möglich, ein Komponentenmodell für benutzerdefinierte Seitenmetadaten zu definieren, das dem Autor im universellen Editor zur Verfügung gestellt wird.
 
 Erstellen Sie dazu ein Komponentenmodell mit der ID `page-metadata`.
 

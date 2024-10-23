@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Tabellen zur Verwaltung von Tabellendaten fü
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1014'
+ht-degree: 92%
 
 ---
 
@@ -101,6 +101,10 @@ Damit AEM die Daten in Ihrer Tabelle veröffentlichen kann, müssen Sie zusätzl
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >Dieser `paths.json` -Eintrag basiert auf dem Beispiel der Erstellung von Umleitungen mithilfe tabellarischer Daten. Aktualisieren Sie den Pfad entsprechend dem [Typ des erstellten Arbeitsblatts.](#other)
 
 1. Klicken Sie auf **Änderungen bestätigen…**, um die Änderungen an `main` zu speichern.
 
