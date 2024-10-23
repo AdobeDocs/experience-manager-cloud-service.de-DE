@@ -4,10 +4,10 @@ description: Sicherstellen, dass Ihr Code und die Inhalte für die Migration in 
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '2282'
-ht-degree: 100%
+source-wordcount: '2288'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Die genauen Schritte Ihrer Umstellung auf Cloud Service hängen von den von Ihne
 
 Die folgende Abbildung zeigt die wichtigsten Schritte in der Phase, in der Sie Ihren Code und Ihre Inhalte für die Verwendung mit AEM as a Cloud Service konvertieren:
 
-![image](/help/journey-migration/assets/exec-image1.png)
+![Konversionsschritte](/help/journey-migration/assets/exec-image1.png)
 
 In den folgenden Kapiteln werden wir Ihnen die Tools vorstellen, mit denen Sie dies erreichen können.
 
@@ -217,7 +217,7 @@ Die folgende Tabelle zeigt eine funktionale Migrationsverfolgung:
 
 Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben beschrieben, die zur Formulierung einer Inhaltsmigrationsstrategie und eines Zeitplans verwendet werden können.
 
-![Bild](/help/journey-migration/assets/content-migration2.png)
+![Schritte zum Formulieren einer Migrationsstrategie](/help/journey-migration/assets/content-migration2.png)
 
 ### Ausrüstung {#fitment}
 

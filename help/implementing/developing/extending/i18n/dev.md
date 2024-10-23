@@ -4,10 +4,10 @@ description: Mit Java™- und JavaScript-APIs können Sie Zeichenfolgen internat
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
-workflow-type: ht
-source-wordcount: '1089'
-ht-degree: 100%
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 99%
 
 ---
 
@@ -174,7 +174,7 @@ Prüfen Sie, ob Sie alle Zeichenfolgen in Ihrer Benutzeroberfläche internationa
 
 Die folgende Abbildung zeigt die Platzhalterübersetzung für die AEM-Homepage:
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![Stub-Übersetzung für die AEM Homepage](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Um die Sprache für Benutzende festzulegen, konfigurieren Sie die Spracheigenschaft des Präferenzknotens für das Benutzerkonto.
 

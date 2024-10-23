@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 100%
+source-wordcount: '1341'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle
 
 Funktionell werden die verschiedenen oben erwähnten Funktionen in der folgenden Sequenz ausgewertet:
 
-![Bild](/help/implementing/dispatcher/assets/order.png)
+![Reihenfolge der Auswertung](/help/implementing/dispatcher/assets/order.png)
 
 ## Setup {#initial-setup}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, u
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '1907'
-ht-degree: 100%
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+workflow-type: tm+mt
+source-wordcount: '1913'
+ht-degree: 99%
 
 ---
 
@@ -169,7 +169,7 @@ Nachdem Sie sich mit den mit AEM as a Cloud Service eingeführten Änderungen ve
 
 Die folgende Abbildung zeigt die wichtigsten Schritte der Planungsphase:
 
-![image](/help/journey-migration/assets/planning-phaseimg1.png)
+![Wichtige Schritte während der Überprüfungsphase](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Als Nächstes werden Sie im Detail untersuchen, was jeder dieser Schritte bedeutet.
 
