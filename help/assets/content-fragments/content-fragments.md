@@ -1,20 +1,20 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.  Auch wie sie zusammen mit MSM verwendet werden können.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 100%
+source-wordcount: '2220'
+ht-degree: 97%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. Dies eignet sich ideal für die Headless-Bereitstellung.  Sie können auch zusammen mit [Multi-Site-Management verwendet werden, um die Wiederverwendung Ihrer Inhalte zu ermöglichen](#reusing-content-fragments-with-msm).
+Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und [veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. Dies eignet sich ideal für die Headless-Bereitstellung.  Sie können auch zusammen mit [Multi-Site-Management verwendet werden, um die Wiederverwendung Ihrer Inhalte zu ermöglichen](#reusing-content-fragments-with-msm).
 
 Inhaltsfragmente enthalten strukturierte Inhalte:
 
