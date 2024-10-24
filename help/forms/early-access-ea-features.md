@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
+source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 25%
+ht-degree: 34%
 
 ---
 
@@ -27,23 +27,23 @@ Wenn Sie an unserem Early Access-Programm für eine Early Access-Innovation teil
 
 ## Frühe Zugriffsinnovationen
 
-### Generative KI von AEM Forms (Gen AI)
+### AEM Forms AI Assistant (Gen AI)
 
-Generative KI für adaptive Forms bietet eine völlig neue Leistungsstärke und erleichtert Ihre Formularentwicklungsprozesse. Mithilfe intelligenter KI-Funktionen können Sie schneller als je zuvor bessere Formulare erstellen.
+Die generative KI für adaptive Formulare bietet eine völlig neue Leistungsstärke und erleichtert Ihre Formularentwicklungsprozesse. Mithilfe intelligenter KI-Funktionen können Sie schneller als je zuvor bessere Formulare erstellen.
 
-![Generativer KI-Assistent, adaptiver Forms](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-Die folgenden generativen KI-Funktionen stehen zur Verfügung:
+Die generativen KI-Funktionen, die über den AEM Forms AI-Assistenten angeboten werden, sind:
 
-* **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre AEM formularbezogenen Fragen. Unsere KI-Assistentin fungiert als Ihre eigene persönliche Wissensbasis und bietet aufschlussreiche Anleitungen und Empfehlungen direkt innerhalb der Plattform.
+* **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre Fragen zu AEM Forms. Unsere KI-Assistentin fungiert als Ihre eigene persönliche Wissensbasis und bietet aufschlussreiche Anleitungen und Empfehlungen direkt innerhalb der Plattform.
 
-* **Adaptive Formularerstellung**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Eingabeaufforderungen. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, die Abbrüche reduzieren und das Erlebnis personalisieren.
+* **Erstellung von adaptiven Formularen**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Prompts. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, durch die Abbrüche reduziert werden und das Erlebnis personalisiert wird.
 
 * **Bereichsgenerierung für Forms**: Lassen Sie AI die schwere Anhebung durchführen. Erstellen Sie vorgefertigte Formularbedienfelder, die auf bestimmte Datenerfassungsanforderungen zugeschnitten sind. Generieren Sie beispielsweise Abschnitte zum Erfassen von Zahlungsinformationen, Kundenpräferenzen oder Reisedetails. Sparen Sie Zeit und stellen Sie die Konsistenz mit vordefinierten Layouts und Funktionen sicher.
 
-* **Ändern von Formularlayouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Eingabeaufforderungen. Probieren Sie verschiedene Layouts wie Assistenten oder Registerkartenansichten aus, um die perfekte Anpassung für Ihr Formular zu finden. Verwenden Sie generative KI-Eingabeaufforderungen, um Ihre Formulare für eine schnelle Reaktion auf Mobilgeräte zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzern gern genutzt werden.
+* **Ändern von Formular-Layouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Prompts. Probieren Sie verschiedene Layouts wie Assistenten- oder Registerkartenansichten aus, um Ihr Formular optimal zu gestalten. Verwenden Sie generative KI-Prompts, um die Reaktivität Ihrer Formulare auf Mobilgeräten zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzenden gern verwendet werden.
 
-* **Konfigurieren der Sendeaktion**: Verwenden Sie generative KI-Aufforderungen, um mühelos eine Sendeaktion für Ihr Formular zu konfigurieren. Wählen Sie aus einer Bibliothek vordefinierter Sendeaktionen oder aus einer Liste von benutzerdefinierten Sendeaktionen, die von Ihrem eigenen Entwicklungsteam erstellt und bereitgestellt werden.
+* **Konfigurieren der Übermittlungsaktion**: Verwenden Sie generative KI-Prompts, um mühelos eine Übermittlungsaktion für Ihr Formular zu konfigurieren. Treffen Sie Ihre Wahl aus einer Bibliothek vordefinierter Übermittlungsaktionen oder aus einer Liste von benutzerdefinierten Übermittlungsaktionen, die von Ihrem eigenen Entwicklungs-Team erstellt und bereitgestellt wurden.
 
 
 ### AEM Forms Workfront Fusion Connector
@@ -135,7 +135,7 @@ Durch die Bereitstellung mehrerer CAPTCHA-Optionen haben Sie in AEM Forms die M�
 
 Sind Sie bereit, eine dieser CAPTCHA-Lösungen in Ihre adaptiven Formulare zu integrieren? In unserer Dokumentation finden Sie detaillierte Anweisungen zu jedem Thema: [Cloudflare Turnstile](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) und [Google reCAPTCHA](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-### Doc Assurance-APIs
+### Doc Assurance APIs
 
 
 AEM Forms Doc Assurance-APIs sind eine Reihe von Tools in den AEM Forms Cloud Service Communication APIs, mit denen Sie die Sicherheit und Benutzerinteraktion Ihrer PDF-Dokumente verwalten können.
@@ -152,7 +152,7 @@ Im Folgenden finden Sie eine Aufschlüsselung der Funktionen von Doc Assurance-A
 
   Wenn PDF-Dokumente über die entsprechenden Verwendungsrechte verfügen, können Empfänger aktivierte Aktivitäten innerhalb von Adobe Reader durchführen.
 
-Insgesamt helfen Ihnen [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) bei der Verbesserung der Dokumentensicherheit und -konformität durch Hinzufügen einer zusätzlichen Kontrollebene.
+Insgesamt helfen Ihnen [Doc Assurance APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) bei der Verbesserung der Dokumentensicherheit und -konformität durch Hinzufügen einer zusätzlichen Kontrollebene.
 
 
 ### Forms Service-APIs
