@@ -2,16 +2,16 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 16%
+source-wordcount: '1822'
+ht-degree: 13%
 
 ---
 
 # Konfigurieren der Benutzeroberfläche von Content Hub {#configure-content-hub-user-interface}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -59,6 +59,7 @@ Verwalten Sie als Administrator die folgenden Konfigurationsoptionen für Ihre B
 * [Filter](#configure-filters-content-hub)
 
 * [Asset-Details](#configure-asset-details-content-hub)
+* [Asset-Karte](#asset-card)
 
 * [Suchen](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ Die auf der Konfigurationsoberfläche aktivierten Eigenschaften werden auf der S
 
 ![Asset-Eigenschaften in Content Hub](assets/config-ui-asset-properties.png)
 
+### Asset-Karte {#asset-card}
+
+In der Content Hub-Benutzeroberfläche zeigt die Ansicht auf Asset-Ebene die **Asset-Karte** der genehmigten Assets an. Auf der Asset-Karte werden die wichtigsten Asset-Details für die Benutzer angezeigt. Die Asset-Karte verfügt über Asset-Miniaturansichten, Asset-Metadaten und andere ausführbare Optionen. Die Content Hub-Administratoren fügen die Metadatenfelder auf Repository-Ebene hinzu, um den Metadatennamen und den Metadatenwert in der Asset-Karte aller Assets gleichzeitig anzuzeigen. Die Asset-Karte akzeptiert sechs Metadatenfelder. Das Metadatenfeld enthält den Metadatennamen und die Metadateneigenschaft. Die Asset-Karte zeigt die Metadaten und deren Metadatenwert an. Der Administrator gibt den Metadatennamen an und ordnet ihn der richtigen Metadateneigenschaft zu. Die Metadateneigenschaft rendert einen Metadatenwert in der Asset-Karte. Die Metadateneigenschaft ist mit den Eigenschaften des Assets verknüpft. Daher variiert der gerenderte Metadatenwert über alle Asset-Karten hinweg. Beispielsweise fügen Administratoren der Asset-Karte die Metadaten &quot;**Lizenziert**&quot;hinzu und ordnen diese &quot;**Lizenziert**&quot;-Metadaten der korrekten Metadateneigenschaft zu. Die Asset-Karten auf der Content Hub-Benutzeroberfläche zeigen diese **lizenzierten** -Metadaten und deren Metadatenwert (**Ja** oder **Nein**) an. In diesem Beispiel zeigt Assets mit einer Lizenz &quot;**Ja**&quot; auf der Asset-Karte an, während die Assets ohne Lizenz &quot;**NO**&quot; anzeigen.
+
+![Asset-Eigenschaften in Content Hub](/help/assets/assets/metadata-on-asset-card.png)
+
+#### Hinzufügen, Bearbeiten oder Löschen von Metadaten unter der Asset-Karte {#add-edit-delete-metadata}
+
+Informationen zum Hinzufügen von Metadaten zu einem Asset finden Sie in den folgenden Anweisungen:
+
+1. Klicken Sie auf der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **Asset-Karte**.
+2. Klicken Sie auf **Metadaten hinzufügen**. Das Dialogfeld **Asset-Kartenmetadaten hinzufügen** wird angezeigt.
+3. Geben Sie den Metadatennamen im Feld **Beschriftung** an und wählen Sie eine Metadateneigenschaft im Feld **Metadaten** aus. Benennen Sie beispielsweise die Metadaten **Lizenziert** und wählen Sie **dc:license** als Metadateneigenschaft aus. Die ausgewählte Metadateneigenschaft wird einem Wert zugeordnet, der mit den Metadaten in der Content Hub-Benutzeroberfläche angezeigt wird. In diesem Beispiel wird die Eigenschaft **dc:license** der Lizenz-ID zugeordnet. Diese Eigenschaft folgt dem angegebenen Asset-Pfad (PDF-Lizenz), um das entsprechende Asset zu finden, und rendert dementsprechend basierend auf der Präsenz des Assets einen booleschen Wert (**Ja** oder **Nein**) in der Benutzeroberfläche. Wenn die Lizenz-PDF gefunden wird, wird **Ja** angezeigt. Wenn nicht, wird **Nein** angezeigt. Daher wird in der Content Hub-Benutzeroberfläche für Assets mit einer Lizenz-ID **Ja** angezeigt, während Assets ohne Lizenz-ID den Wert **Nein** aufweisen.
+4. Klicken Sie auf **Bestätigen** und dann auf **Speichern** , um die Änderungen so anzuwenden, dass die neue Eigenschaft auf der Asset-Detailseite angezeigt wird.
+   ![Asset-Karte](/help/assets/assets/asset-card.png)
+
+Klicken Sie auf ähnliche Weise auf ![edit](/help/assets/assets/edit-content-hub.svg) , die neben jeder verfügbaren Eigenschaft verfügbar ist, um erforderliche Änderungen vorzunehmen, oder klicken Sie auf ![delete](/help/assets/assets/delete-content-hub.svg) , um eine vorhandene Metadateneigenschaft zu löschen. Klicken Sie auf **Speichern** , nachdem Sie alle Änderungen vorgenommen haben, um die Änderungen anzuwenden.
+
+
 ### Suchen {#configure-metadata-search-content-hub}
 
 Administratoren können die Metadatenfelder definieren, die durchsucht werden, wenn ein Benutzer in Content Hub Suchkriterien angibt. Führen Sie die folgenden Schritte aus:
@@ -174,7 +194,7 @@ Die auf der Konfigurationsoberfläche aktivierten Branding-Aktualisierungen werd
 
 ![Branding der Konfigurationsoberfläche auf Content Hub](assets/configuration-ui-branding-updates.png)
 
-### Abgelaufene Assets {#expired-assets-content-hub}
+### Abgelaufene Assets{#expired-assets-content-hub}
 
 Administratoren können steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch festlegen, ob Benutzende diese herunterladen können.
 

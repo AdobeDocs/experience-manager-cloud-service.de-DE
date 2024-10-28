@@ -2,16 +2,16 @@
 title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen, um sie in Content Hub verfügbar zu machen.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 # Genehmigen von Assets für Content Hub {#approve-assets-content-hub}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Genehmigen von Assets für Content Hub](assets/content-hub-approve-assets.png)
@@ -28,7 +28,7 @@ Bevor Sie beginnen, sollten Sie Folgendes haben:
 
 * Schreiben Sie Berechtigungen zum Bearbeiten von Asset-Metadaten, um das Feld **[!UICONTROL Status]** bearbeiten zu können, das in den [Asset-Eigenschaften](/help/assets/manage-organize-assets-view.md##manage-asset-status) für ein Asset verfügbar ist.
 
-## Genehmigen von Assets für Content Hub {#approve-assets-for-content-hub}
+## Genehmigen von Assets für Content Hub{#approve-assets-for-content-hub}
 
 Die Assets, die in Assets as a Cloud Service als `approved` markiert sind, sind automatisch in Content Hub verfügbar.
 
