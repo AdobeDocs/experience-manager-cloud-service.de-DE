@@ -2,10 +2,10 @@
 title: Gruppenmigration
 description: Überblick über die Gruppenmigration in AEM as a Cloud Service
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
+source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 100%
+source-wordcount: '1447'
+ht-degree: 89%
 
 ---
 
@@ -46,6 +46,8 @@ Beachten Sie, dass der für eine Gruppe protokollierte/gemeldete Pfad nur der er
 
 Die meisten migrierten Gruppen sind so konfiguriert, dass sie von IMS verwaltet werden.  Das bedeutet, dass eine Gruppe in IMS mit demselben Namen mit der Gruppe in AEM verknüpft wird und alle IMS-Benutzenden in der IMS-Gruppe AEM Benutzende und Mitglieder der Gruppe in AEM werden.  Dadurch können diese Benutzenden entsprechend den Richtlinien der ACLs oder CUGs für die Gruppe Zugriff auf den Inhalt haben.
 
+Beachten Sie, dass migrierte Gruppen nicht mehr als &quot;lokale Gruppen&quot;gelten. Sie sind IMS-Gruppen und müssen in IMS neu erstellt werden, damit sie zwischen AEM und IMS synchronisiert werden können.  Gruppen können in IMS über Admin Console, unter anderem einzeln oder in großen Mengen erstellt werden.  Weitere Informationen zum Erstellen von Gruppen für einzelne Benutzer oder in Gruppen auf der Admin Console finden Sie unter [Verwalten von Benutzergruppen](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) .
+
 Die Ausnahme für diese IMS-Konfiguration sind Gruppen, die von Assets-Sammlungen erstellt wurden. Wenn eine Sammlung in AEM erstellt wird, werden Gruppen für den Zugriff auf diese Sammlung erstellt. Diese Gruppen werden in das Cloud-System migriert, sind jedoch nicht für die Verwaltung durch IMS konfiguriert.  Um diesen Gruppen IMS-Benutzende hinzuzufügen, müssen sie auf der Seite „Gruppeneigenschaften“ in der Assets-Benutzeroberfläche entweder einzeln oder gemeinsam als Teil einer anderen IMS-Gruppe hinzugefügt werden.
 
 
@@ -53,7 +55,7 @@ Die Ausnahme für diese IMS-Konfiguration sind Gruppen, die von Assets-Sammlunge
 
 Die CTT-Version 3.0.20 und höher enthält eine Option zur Deaktivierung der Migration von Gruppen.  Dies wird in der OSGi-Konsole wie folgt konfiguriert:
 
-* Öffnen Sie die OSGi-Konfiguration.`(http://<server> /system/console/configMgr)`
+* Öffnen Sie die OSGi-Konfiguration.`(http://<server>/system/console/configMgr)`
 * Klicken Sie auf die Konfiguration namens **Konfiguration des Extraktionsdienstes für das Content Transfer Tool**
 * Deaktivieren Sie die Option **Gruppen in die Migration einbeziehen**, um Gruppenmigrationen zu deaktivieren.
 * Klicken Sie auf **Speichern**, um sicherzustellen, dass die Konfiguration auf dem Server gespeichert wird und aktiv ist.
@@ -73,7 +75,9 @@ Neben den Gruppen für jede Benutzerin und jeden Benutzer gibt es ein Feld im Be
 
 Diese Fälle können gleichzeitig auftreten, aber auch zur selben Zeit wie die früheren Fälle.
 
-Der Benutzerbericht wird am Ende des Berichts zur Prinzipalmigration hinzugefügt und ist daher Teil dieses Berichts (siehe [Endgültige Zusammenfassung und Bericht](#final-summary-and-report) unten).
+Der Benutzerbericht wird am Ende des Berichts zur Hauptmigration hinzugefügt (und ist daher Teil dieses Berichts) (siehe [Endgültige Zusammenfassung und Bericht](#final-summary-and-report) unten).  Die Informationen in diesem Bericht, einschließlich der für jeden Benutzer berichteten Gruppen, können verwendet werden, um eine Massen-Benutzer-Upload-Datei zu erstellen, die in Admin Console verwendet werden kann, um viele Benutzer in IMS stapelweise zu erstellen.  Vorhandene IMS-Benutzer können auch stapelweise bearbeitet werden.
+
+Siehe [ Mehrere Benutzer verwalten | Massen-CSV-Upload](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) für Details zum Erstellen oder Bearbeiten von Benutzern in Massen über die Admin Console.
 
 ## Zusätzliche Überlegungen {#additional-considerations}
 
