@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 99%
+source-wordcount: '1000'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a
 
 Eine Cloud Manager-Konfigurations-Pipeline stellt Konfigurationsdateien (die im YAML-Format erstellt wurden) in einer Zielumgebung bereit. Auf diese Weise kann eine Reihe von Funktionen in AEM as a Cloud Service konfiguriert werden, darunter die Protokollweiterleitung, Bereinigungsaufgaben sowie verschiedene CDN-Funktionen.
 
-Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. RDEs werden nicht unterstützt.
+Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdateien können mit dem Befehlszeilen-Tool ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in Rapid Development Environments (RDEs) bereitgestellt werden.[
 
 In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick über wichtige Informationen dazu, wie Konfigurations-Pipelines verwendet werden können und wie Konfigurationen für diese strukturiert sein sollten. Es werden allgemeine Konzepte beschrieben, die für alle oder eine Teilmenge der von Konfigurations-Pipelines unterstützten Funktionen freigegeben werden.
 
@@ -38,7 +38,7 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 | [Traffic-Filterregeln, einschließlich WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Deklarieren von Regeln zur Verhinderung von schädlichem Traffic |
 | [Anfrageumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form der Traffic-Anforderung |
 | [Reaktionsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form für die Antwort für eine gegebene Anfrage |
-| [Client-seitige Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Clientseitige Umleitungen im Stil 301/302 deklarieren |
+| [Client-seitige Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Deklarieren von Client-seitigen Umleitungen im Stil 301/302 |
 | [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Deklarieren von Regeln, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen |
 | [CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Überschreiben der standardmäßigen Fehlerseite, wenn der AEM-Ursprung nicht erreicht werden kann, und Referenzieren des Speicherorts des selbst-gehosteten statischen Inhalts in der Konfigurationsdatei |
 | [CDN-Bereinigung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Deklarieren der API-Bereinigungsschlüssel für die Bereinigung des CDN |
@@ -53,6 +53,9 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 Informationen zum Erstellen und Konfigurieren von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 Achten Sie beim Erstellen einer Konfigurations-Pipeline in Cloud Manager darauf, dass Sie beim Konfigurieren der Pipeline eine **zielgerichtete Bereitstellung** anstelle eines **Full-Stack-Codes** auswählen.
+
+Wie bereits erwähnt, wird die Konfiguration für RDEs mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) und nicht mit einer Pipeline bereitgestellt.
+
 
 ## Allgemeine Syntax {#common-syntax}
 

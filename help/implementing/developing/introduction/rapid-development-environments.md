@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
-ht-degree: 88%
+source-wordcount: '4863'
+ht-degree: 86%
 
 ---
 
@@ -277,7 +277,7 @@ Das allgemeine Nutzungsmuster lautet `aio aem:rde:install <artifact>`.
 
 Nachfolgend finden Sie einige Beispiele:
 
-<u>Bereitstellen eines Inhaltspakets</u>
+#### Bereitstellen eines Inhaltspakets {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ Jedes AEM-Paket kann bereitgestellt werden, z. B. Pakete mit Code, Inhalt oder e
 >
 >Die Dispatcher-Konfiguration für das Projekt WKND wird nicht über die Installation des obigen Inhaltspakets bereitgestellt. Stellen Sie sie separat bereit, indem Sie die Schritte „Bereitstellen einer Apache-/Dispatcher-Konfiguration“ befolgen.
 
-<u>Bereitstellen einer OSGi-Konfiguration</u>
+#### Bereitstellen einer OSGi-Konfiguration {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich aus wie die folg
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Bereitstellen eines Bundles</u>
+#### Bereitstellen eines Bundles {#deploy-bundle}
 
 Verwenden Sie zum Bereitstellen eines Bundles Folgendes:
 
@@ -324,7 +324,7 @@ Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich aus wie die folg
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Bereitstellen einer Inhaltsdatei</u>
+#### Bereitstellen einer Inhaltsdatei {#deploy-content-file}
 
 Verwenden Sie zum Bereitstellen einer Inhaltsdatei Folgendes:
 
@@ -337,7 +337,7 @@ Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich aus wie die folg
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Bereitstellen einer Apache-/Dispatcher-Konfiguration</u>
+#### Bereitstellen einer Apache/Dispatcher-Konfiguration {#deploy-apache-config}
 
 Für diese Art von Konfiguration muss die gesamte Ordnerstruktur in Form einer ZIP-Datei vorliegen.
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Paket nicht aufgelöst wird. In diesem Fall wird es „bereitgehalten“ und erst dann installiert, wenn die jeweiligen Anforderungen (in diesem Fall fehlende Importe) durch Installation von weiterem Code erfüllt werden.
+
+#### Bereitstellen von Konfigurations-Pipeline-bezogenen Konfigurationen (YAML-Konfigurationen) {#deploy-config-pipeline}
+
+Die im Artikel [Verwenden von Config Pipelines](/help/operations/config-pipeline.md) beschriebenen umgebungsspezifischen Konfigurationen (eine oder mehrere YAML-Dateien) können wie folgt bereitgestellt werden:
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+wobei my-config-folder der übergeordnete Ordner ist, der Ihre YAML-Konfigurationen enthält.
+
+Alternativ können Sie auch eine ZIP-Datei installieren, die die Konfigurationsordnerstruktur enthält:
+
+`aio aem:rde:install -t env-config config.zip`
+
+Beachten Sie, dass das envTypes -Array der yaml-Datei den Wert *rde* enthalten sollte, wie im folgenden Beispiel gezeigt:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### Bereitstellen von Frontend-Code basierend auf Site-Designs und Site-Vorlagen {#deploying-themes-to-rde}
 

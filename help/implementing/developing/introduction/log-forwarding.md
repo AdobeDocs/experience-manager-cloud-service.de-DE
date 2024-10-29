@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Dieser Artikel ist wie folgt organisiert:
 
 1. Platzieren Sie die Datei unter einem Ordner der obersten Ebene mit dem Namen *config* oder ähnlich, wie in [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-1. Erstellen Sie für andere Umgebungstypen als RDE (die derzeit nicht unterstützt wird) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager, auf die in [diesem Abschnitt](/help/operations/config-pipeline.md#creating-and-managing) verwiesen wird. Beachten Sie, dass die Konfigurationsdatei nicht über Vollstack-Pipelines und Web-Tier-Pipelines bereitgestellt wird.
+1. Erstellen Sie für andere Umgebungstypen als RDE (die Befehlszeilenwerkzeuge verwenden) eine zielgerichtete Bereitstellungskonfigurationspipeline in Cloud Manager, auf die in [diesem Abschnitt](/help/operations/config-pipeline.md#creating-and-managing) verwiesen wird. Beachten Sie, dass die Konfigurationsdatei nicht von Vollstack-Pipelines und Web-Tier-Pipelines bereitgestellt wird.
 
 1. Stellen Sie die Konfiguration bereit.
 
