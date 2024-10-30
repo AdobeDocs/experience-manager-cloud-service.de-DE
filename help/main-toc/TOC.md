@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
+source-git-commit: d9fec7d96bbea19549f3fcfe53606c0d59a01a53
 workflow-type: tm+mt
-source-wordcount: '5681'
+source-wordcount: '5709'
 ht-degree: 99%
 
 ---
@@ -462,6 +462,10 @@ ht-degree: 99%
    + [Unterstützte Dateiformate](/help/assets/file-format-support.md)
    + [Überblick über Asset-Microservices](/help/assets/asset-microservices-overview.md)
    + [Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md)
+   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+   + [Assets as a Cloud Service Ultimate aktivieren](/help/assets/enable-assets-ultimate.md)
+   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [Assets-Mitwirkende](/help/assets/assets-collaborator-users.md)
    + Verwalten digitaler Assets {#manage}
       + Micro-Frontend-Asset-Wähler {#asset-selector}
          + [Überblick über den Asset-Wähler](/help/assets/overview-asset-selector.md)
@@ -640,6 +644,7 @@ ht-degree: 99%
       + [Freigeben von Assets in Content Hub](/help/assets/share-assets-content-hub.md)
       + [Herunterladen von Assets mit Content Hub](/help/assets/download-assets-content-hub.md)
       + [Verwalten von Sammlungen in Content Hub](/help/assets/collections-content-hub.md)
+      + [Verwalten lizenzierter Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Bearbeiten von Bildern mit Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
       + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
       + [Häufig gestellte Fragen zu Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
