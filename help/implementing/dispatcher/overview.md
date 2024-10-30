@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über den Datenfluss bei der Inhaltsbereitstellun
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
@@ -34,6 +34,5 @@ Der HTML-/Text-Inhaltstyp läuft standardmäßig nach 300 Sekunden (5 Minuten)
 In den folgenden Abschnitten finden Sie genauere Informationen zur Inhaltsbereitstellung:
 * [CDN-Konfiguration](/help/implementing/dispatcher/cdn.md)
 * [Caching](/help/implementing/dispatcher/caching.md)
-
 
 Informationen zur Replikation vom Autoren-Service zum Veröffentlichungs-Service finden Sie unter [Replikation](/help/operations/replication.md).

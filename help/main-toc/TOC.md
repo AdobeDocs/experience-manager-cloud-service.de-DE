@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
+source-git-commit: 82c0c5973c0e4145ed1ba027012d1bda160e8c93
 workflow-type: tm+mt
-source-wordcount: '5684'
+source-wordcount: '5687'
 ht-degree: 99%
 
 ---
@@ -1071,8 +1071,8 @@ ht-degree: 99%
 + Generative KI {#generative-ai}
    + [Generieren von Varianten](/help/generative-ai/generate-variations.md)
 + Implementieren {#implementing}
-   + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
-   + Verwenden von Cloud Manager {#using-cloud-manager}
+   + [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)
+   + CQ Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + Programme {#programs}
          + [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1306,6 +1306,7 @@ ht-degree: 99%
       + [Validieren und Debuggen mit den alten Dispatcher Tools](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Konfigurieren von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Pipeline-freie URL-Umleitungen](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
       + [Konfigurieren der CDN-Anmeldeinformationen und der Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md)
