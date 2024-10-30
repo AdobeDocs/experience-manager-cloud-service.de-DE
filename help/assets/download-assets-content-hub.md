@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie Assets vom Content Hub-Portal herunterladen können.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 96b7b7fe32aefc81a9fde15d79e9089f71cb5d31
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 4%
+source-wordcount: '526'
+ht-degree: 3%
 
 ---
 
@@ -22,20 +22,12 @@ Mit Content Hub können Sie Assets herunterladen und freigeben. Diese Assets kö
 
 Sie können ein einzelnes Asset oder mehrere Assets mit der Content Hub herunterladen. Die Originalversionen des Assets werden heruntergeladen.
 
-## Voraussetzungen {#prerequisites}
-
-[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel erwähnten Aktionen ausführen.
-
-## Asset herunterladen {#download-single-asset}
-
-[Genehmigen Sie die Lizenz des Assets](/help/assets/approve-assets-content-hub.md) , bevor Sie sie herunterladen.
-
-### Einzeldownload {#single-download-asset}
+## Herunterladen eines einzelnen lizenzierten Assets {#single-download-asset}
 
 Wählen Sie ein Asset aus und klicken Sie in der oberen Leiste auf ![Download](/help/assets/assets/download-icon.svg) . Im Dialogfeld Asset herunterladen wird die Asset-Lizenz angezeigt. Akzeptieren Sie die Lizenzbedingungen und klicken Sie auf **Herunterladen**.
 Alternativ können Sie auf der Asset-Karte auf ![Download](/help/assets/assets/download-icon.svg) klicken, um das Asset herunterzuladen.
 
-#### Asset-Download über das Dialogfeld &quot;Asset&quot; {#single-download-from-asset-dialog-box}
+### Herunterladen eines einzelnen lizenzierten Assets aus dem Dialogfeld &quot;Asset&quot; {#single-download-from-asset-dialog-box}
 
 1. Klicken Sie auf die Asset-Miniaturansicht. Das Dialogfeld &quot;Asset&quot;wird angezeigt.
 1. Klicken Sie in der Symbolleiste ganz rechts auf ![download](/help/assets/assets/download-icon.svg) . Im Download-Bereich werden die Asset-Ausgabedarstellungen sowie das Kontrollkästchen zur Annahme der Lizenzbedingungen und -bedingungen angezeigt.
@@ -49,7 +41,7 @@ Alternativ können Sie auf der Asset-Karte auf ![Download](/help/assets/assets/d
    * Klicken Sie auf das Feld **Ursprüngliche Ausgabe** , um zur Original-Asset-Ausgabe im linken Bereich zurückzukehren.
 1. Akzeptieren Sie die Lizenzbedingungen (für lizenzierte Assets) und klicken Sie auf **Herunterladen** , um das Asset herunterzuladen.
 
-### Multi Download {#multi-download}
+## Herunterladen mehrerer lizenzierter Assets{#multi-download}
 
 1. Wählen Sie die Assets aus und klicken Sie in der oberen Leiste auf ![Download](/help/assets/assets/download-icon.svg) . Das angezeigte Dialogfeld hängt davon ab, ob die Download-Liste abgelaufene Assets oder nur nicht abgelaufene Assets enthält. <br/>
    **Dialogfeld &quot;Abgelaufene Assets herunterladen&quot;:** Dieses Dialogfeld zeigt die Vorschau der abgelaufenen Assets zusammen mit ihrem Ablaufdatum im linken Bereich an. Die Anzahl der abgelaufenen Assets von der insgesamt ausgewählten Anzahl wird im rechten Bereich angezeigt. Klicken Sie auf **Mit allen Assets fortfahren** , um abgelaufene Assets mit anderen Assets herunterzuladen (sofern vorhanden). Das Dialogfeld Herunterladen von Assets wird angezeigt. Weitere Informationen zum Fortfahren finden Sie im Dialogfeld [Herunterladen von Assets](#Download-asset-dialog-box) .
@@ -69,7 +61,7 @@ Alternativ können Sie auf der Asset-Karte auf ![Download](/help/assets/assets/d
 1. Akzeptieren Sie die Nutzungsbedingungen und klicken Sie dann auf **Herunterladen** , um Assets herunterzuladen, die mit den verfügbaren Lizenzen im linken Bereich verknüpft sind.
    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
-### Herunterladen nicht lizenzierter Assets {#download-non-licensed-assets}
+### Herunterladen von nicht lizenzierten Assets {#download-non-licensed-assets}
 
 Um nicht lizenzierte Assets herunterzuladen, wählen Sie die Assets aus und klicken Sie in der oberen Leiste auf ![Download](/help/assets/assets/download-icon.svg) .
 
