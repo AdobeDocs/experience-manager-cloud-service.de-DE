@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 82c0c5973c0e4145ed1ba027012d1bda160e8c93
+source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
 workflow-type: tm+mt
-source-wordcount: '5687'
+source-wordcount: '5681'
 ht-degree: 99%
 
 ---
@@ -728,7 +728,6 @@ ht-degree: 99%
             + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Verwenden von hCAPTCHA in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Verwenden von Turnstile in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)

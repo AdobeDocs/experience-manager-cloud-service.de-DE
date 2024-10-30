@@ -6,9 +6,9 @@ keywords: Google reCAPTCHA-Dienst, adaptive Formulare, CAPTCHA-Herausforderung, 
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,6 @@ CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans
 AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
 * [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
-* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 
