@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '427'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Durch das Löschen eines Sandbox-Programms werden alle damit verbundenen Umgebun
 
    ![Option „Programm löschen“](assets/delete-sandbox1.png)
 
-Alternativ können Sie auf der Cloud Manager-Übersichtsseite auf der Programmkarte auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg klicken und **Programm löschen** auswählen.
+Sie können auf der Übersichtsseite von Cloud Manager auf der Karte Ihres Programms auch auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg klicken und anschließend **Programm löschen** auswählen.
 
 ![Sandbox aus Programmkarte löschen](assets/delete-sandbox2.png)
 

@@ -5,9 +5,9 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
 source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2701'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -75,24 +75,24 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Klicken Sie auf **Bericht generieren**, um Best Practices Analyzer auszuführen.
+1. Klicken Sie auf **Bericht generieren**, um den Best Practices Analyzer auszuführen.
 
-   ![Bericht generieren](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![Bericht erzeugen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Geben Sie den BPA-Upload-Schlüssel an, um den generierten BPA-Bericht automatisch in [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md) hochzuladen. Um den Upload-Schlüssel zu erhalten, navigieren Sie zur [Best Practices-Analyse in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Geben Sie den BPA-Upload-Schlüssel an, um den generierten BPA-Bericht automatisch in [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md) hochzuladen. Um den Upload-Schlüssel zu erhalten, navigieren Sie zur [Best-Practices-Analyse in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis).
 
-   ![BPA-Upload-Schlüssel festlegen](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![Festlegen des BPA-Upload-Schlüssels](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >Sie haben die Möglichkeit, das automatische Hochladen in CAM zu überspringen, indem Sie die Option für das Überspringen des automatischen Uploads in CAM **** wählen. Wenn Sie sich für das Überspringen entscheiden, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertedatei herunterladen und die Datei dann in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
 
 1. Die Schaltfläche **Generieren** wird aktiv, wenn ein gültiger Schlüssel angegeben wird. Klicken Sie auf **Erstellen**, um die Erstellung des Berichts einzuleiten.
 
-   ![Bericht generieren](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+   ![Bericht erzeugen](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
-1. Während BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm verfolgen. Der Fortschritt wird in Prozent angezeigt. Dabei wird auch die Anzahl der analysierten Elemente und gefundenen Ergebnisse angezeigt.
+1. Während der BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm verfolgen. Der Fortschritt wird in Prozent angezeigt. Dabei wird auch die Anzahl der analysierten Elemente und gefundenen Ergebnisse angezeigt.
 
-   ![Erstellen von Berichten](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![Erzeugen des Berichts](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >Der Zeitstempel für den Ablauf des BPA-Upload-Schlüssels wird in der oberen rechten Ecke angezeigt. Sie sollten den BPA-Upload-Schlüssel erneuern, wenn er bald abläuft. Um den Schlüssel zu erneuern, können Sie auf **Erneuern** klicken, um zu CAM zu navigieren und den Schlüssel zu erneuern.
@@ -103,11 +103,11 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
 1. Sie haben die Möglichkeit, den Bericht in einem kommagetrennten Format (CSV) herunterzuladen, indem Sie auf **In CSV exportieren** klicken. Sie können den Bericht auch in CAM anzeigen, indem Sie auf die Option zum Wechsel zu CAM **** klicken. Dadurch gelangen Sie auf die Seite [Best-Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM.
 
-Sie können BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
+Sie können den BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
 
 ![Bericht aktualisieren](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. Wenn der Cache abläuft, haben Sie die Möglichkeit, den zuletzt erstellten Bericht in CAM anzusehen, indem Sie auf die Option zur Anzeige des zuletzt erstellten Berichts **** klicken, oder eine neue Berichtserstellung einzuleiten, indem Sie auf die Option zum Erstellen eines neuen Berichts **** klicken.
+1. Wenn der Cache abläuft, haben Sie die Möglichkeit, den zuletzt erstellten Bericht in CAM anzusehen, indem Sie auf die Option zum **Anzeigen des zuletzt in CAM erstellten Berichts** klicken, oder eine neue Berichtserstellung einzuleiten, indem Sie auf die Option zum **Erstellen eines neuen Berichts** klicken.
 
 ![Kein Bericht](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
@@ -125,7 +125,7 @@ Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting
 
 1. Deaktivieren Sie das Kontrollkästchen, um alle Ergebnisse zu ACS Commons herauszufiltern. Im Bericht sollte ein **Zähler für die gefilterten Ergebnisse** angezeigt werden, wie in der nachfolgenden Abbildung dargestellt. Der Filter wird auch auf den Bericht angewendet, wenn er im CSV-Format (CSV) exportiert wird.
 
-   ![Gefilterte Suchanzahl](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![Zähler für die gefilterten Ergebnisse](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >Die Ergebnisse von ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).

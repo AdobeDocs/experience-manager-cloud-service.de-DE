@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2698'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Te
 
 In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benutzeroberflächentests für die Ausführung in Cloud Manager erforderlich sind.
 
-1. Legen Sie das Test-Framework fest, das Sie verwenden möchten.
+1. Entscheiden Sie, welches Test-Framework Sie verwenden möchten.
 
-   * Verwenden Sie für Cypress (Standard) den Beispielcode aus dem [AEM Testbeispielrepository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) oder verwenden Sie den Beispielcode, der automatisch im Ordner `ui.tests` Ihres Cloud Manager-Repositorys generiert wird.
+   * Verwenden Sie für Cypress (Standard) den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) oder verwenden Sie den Beispiel-Code, der automatisch im Ordner `ui.tests` Ihres Cloud Manager-Repositorys generiert wird.
 
-   * Verwenden Sie für Play-wright den Beispielcode aus dem [AEM Testbeispielrepository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+   * Verwenden Sie für Cypress den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-   * Verwenden Sie für WebDriver.IO den Beispielcode aus dem [AEM Testbeispielrepository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+   * Verwenden Sie für Webdriver.IO den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-   * Verwenden Sie für Selenium WebDriver den Beispielcode aus dem [AEM Testbeispielrepository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Verwenden Sie für Selenium WebDriver den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Weitere Informationen zu anderen Programmiersprachen finden Sie im Abschnitt [Erstellen von UI-Tests](#building-ui-tests) in diesem Dokument zum Einrichten des Testprojekts.
 
@@ -269,9 +269,9 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 
 | Typ | Wert | Beschreibung |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | Die CPU-Zeit, die pro Testausführung reserviert ist. |
-| Arbeitsspeicher | 1Gi | Menge des dem Test zugewiesenen Speichers, Wert in Byte. |
-| Zeitüberschreitung | 30m | Die Dauer, nach der der Test abgeschlossen ist. |
+| CPU | 2.0 | Menge an CPU-Zeit, die pro Testausführung reserviert wird. |
+| Arbeitsspeicher | 1Gi | Menge des für den Test zugewiesenen Speichers; Wert in Gibibyte. |
+| Zeitüberschreitung | 30m | Die Dauer, nach der der Test beendet wird. |
 | Empfohlene Dauer | 15m | Adobe empfiehlt, Tests so zu schreiben, dass sie diese Dauer nicht überschreiten. |
 
 >[!NOTE]
@@ -289,7 +289,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 Bevor die Tests beginnen, muss das Docker-Image sicherstellen, dass der Selenium-Server betriebsbereit ist. Das Warten auf den Selenium-Service erfolgt in zwei Schritten.
 
 1. Lesen der URL des Selenium-Service aus der Umgebungsvariablen `SELENIUM_BASE_URL`.
-1. Rufen Sie in regelmäßigen Abständen den [Statusendpunkt](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) ab, der von der Selenium-API verfügbar gemacht wird.
+1. Abrufen des von der Selenium-API bereitgestellten [Statusendpunkts](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) in regelmäßigen Abständen.
 
 Sobald der Statusendpunkt von Selenium positiv antwortet, können die Tests beginnen.
 
@@ -359,9 +359,9 @@ Eine Beispielimplementierung finden Sie im Einstiegspunkt des Cypress-Beispielte
 
 >[!NOTE]
 >
-> In den Beispielen wird davon ausgegangen, dass Chrome als Projektbrowser verwendet wird.
+> In den vorgestellten Beispielen wird davon ausgegangen, dass Chrome als Projekt-Browser verwendet wird.
 
-Ähnlich wie bei Cypress müssen Tests den HTTP-Proxy verwenden, wenn eine nicht leere Umgebungsvariable `PROXY_HOST` bereitgestellt wird.
+Ähnlich wie bei Cypress müssen Tests den HTTP-Proxy nutzen, wenn eine nicht leere Umgebungsvariable `PROXY_HOST` bereitgestellt wird.
 
 Dazu müssen die folgenden Änderungen vorgenommen werden.
 
@@ -480,7 +480,7 @@ Vor dem Aktivieren von UI-Tests in einer Cloud Manager-Pipeline wird empfohlen, 
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` im Repository
 
-1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten
+1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten:
 
    ```shell
    mvn verify -Pui-tests-local-execution \
@@ -500,17 +500,17 @@ Vor dem Aktivieren von UI-Tests in einer Cloud Manager-Pipeline wird empfohlen, 
 >
 >Weitere Informationen finden Sie unter [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-### Beispiel für Playwright-Test {#playwright-sample}
+### Playwright-Testbeispiel {#playwright-sample}
 
-1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` im Repository
+1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` in Ihrem Repository
 
-1. Führen Sie den folgenden Befehl aus, um mithilfe von Maven ein Docker-Bild zu erstellen
+1. Führen Sie den folgenden Befehl aus, um ein Docker-Image mit Maven zu erstellen:
 
    ```shell
    mvn clean package -Pui-tests-docker-build
    ```
 
-1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten
+1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten:
 
    ```shell
    mvn verify -Pui-tests-docker-execution \

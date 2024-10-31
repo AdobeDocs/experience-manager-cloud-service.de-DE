@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitste
 **So zeigen Sie IP-Zulassungslisten an und aktualisieren diese:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
-1. Klicken Sie auf der Seite **Übersicht** im linken Seitenmenü unter **Dienste** auf das Symbol ![Aufgabenliste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
+1. Klicken Sie auf der Seite **Übersicht** im Menü auf der linken Seite unter **Services** auf ![Aufgabenlistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
 1. Identifizieren Sie die Zeile für die IP-Zulassungslisten, die angezeigt oder aktualisiert werden sollen.
 1. Klicken Sie ganz rechts in der Zeile auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 1. Klicken Sie im Dropdown-Menü auf **Anzeigen/aktualisieren**.
@@ -40,7 +40,7 @@ Im Assistenten **IP-Zulassungsliste anzeigen und aktualisieren** werden der Name
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Klicken Sie auf der Seite **Übersicht** im linken Seitenmenü unter **Dienste** auf das Symbol ![Aufgabenliste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
+1. Klicken Sie auf der Seite **Übersicht** im Menü auf der linken Seite unter **Services** auf ![Aufgabenlistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
 
 1. Bewegen Sie in der Spalte **Status** der Tabelle „IP-Zulassungslisten“ den Mauszeiger über eine (in Verwendung befindliche) grüne IP-Zulassungsliste, um zu sehen, wie ein oder mehrere Services darauf angewendet werden.
 
@@ -63,8 +63,8 @@ Benutzende mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** 
 **So löschen Sie eine IP-Zulassungsliste:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
-1. Klicken Sie auf der Seite **Übersicht** im linken Seitenmenü unter **Dienste** auf das Symbol ![Aufgabenliste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
-1. Identifizieren Sie die Zeile für die IP-Zulassungsliste, die Sie löschen möchten, klicken Sie dann auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am rechten Ende der Zeile und klicken Sie dann auf **Löschen**.
+1. Klicken Sie auf der Seite **Überblick** im linken Seitenmenü unter **Services** auf ![Aufgabenlistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP-Zulassungslisten**.
+1. Identifizieren Sie die Zeile für die zu löschende IP-Zulassungsliste, klicken Sie ganz rechts in der Zeile auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Löschen**.
 1. Klicken Sie im Dialogfeld **IP-Zulassungsliste löschen** auf **Löschen**.
 
 ## Bereits vorhandene CDN-Konfigurationen {#pre-existing-cdn}

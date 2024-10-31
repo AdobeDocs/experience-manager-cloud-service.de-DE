@@ -6,9 +6,9 @@ feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3742'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Siehe auch [Best Practices zur Videokodierung](/help/assets/dynamic-media/video.
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**So erstellen Sie ein Videoprofil für adaptives Bitrate-Streaming:**
+**Erstellen eines Videoprofils für adaptives Bitrate-Streaming**:
 
 1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
 1. Wählen Sie **[!UICONTROL Erstellen]**.
@@ -192,7 +192,7 @@ Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [A
 
 Wenn Sie die Option **[!UICONTROL Kodieren für adaptives Streaming]** nicht verwenden möchten, werden alle Kodierungsvoreinstellungen, die Sie dem Profil hinzufügen, als einzelne Videoausgabedarstellungen für Single-Bitrate-Streaming oder progressive Videoausgabesdarstellung behandelt. Außerdem gibt es keine Validierung, um sicherzustellen, dass alle Videoausgabedarstellungen dasselbe Seitenverhältnis aufweisen.
 
-Der unterstützte Videoformat-Codec ist H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
+Als Videoformat-Codec wird H.264 (.mp4) unterstützt. <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 Siehe auch [Erstellen eines Videocodierungsprofils für adaptives Bit-Rate-Streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 

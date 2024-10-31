@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Sie müssen die DNS-Einstellungen für Ihren benutzerdefinierten Domain-Namen be
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Seitenmenü auf **Domäneneinstellungen** .
+1. Klicken Sie im linken Seitenmenü auf **Domain-Einstellungen**.
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 

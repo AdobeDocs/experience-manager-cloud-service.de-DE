@@ -7,9 +7,9 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ So fügen Sie einen Webhook hinzu:
 
 >[!NOTE]
 >
-> Stellen Sie sicher, dass das technische Konto Mitglied der Gruppe **forms-users** ist. Andernfalls schlägt das Hinzufügen eines Webhooks fehl.
+> Vergewissern Sie sich, dass das technische Konto ein Mitglied der Gruppe **Forms-Benutzer** ist. Andernfalls schlägt das Hinzufügen eines Webhooks fehl.
 
 #### Hinzufügen einer Verbindung zu einem Webhook {#add-connection}
 

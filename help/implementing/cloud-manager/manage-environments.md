@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2357'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies auch 
 
 Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können jedoch in einer Transaktion Regionen nur entweder hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine andere Region entfernen müssen, fügen Sie zuerst eine hinzu, speichern Ihre Änderung und entfernen dann die andere (oder umgekehrt).
 
-1. Klicken Sie in der Konsole Programmübersicht Ihres Programms für Ihre Produktionsumgebung auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg und wählen Sie im Menü die Option **Bearbeiten** aus.
+1. Klicken Sie in der Konsole „Programmübersicht“ Ihres Programms auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg für Ihre Produktionsumgebung und wählen Sie im Menü die Option **Bearbeiten** aus.
 
    ![Umgebung bearbeiten](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
 Auf der Seite **Übersicht** haben Sie zwei Möglichkeiten, um auf die Details zu einer Umgebung zuzugreifen.
 
-1. Klicken Sie auf der Seite **Überblick** im linken Seitenmenü auf die Registerkarte **Umgebungen** .
+1. Klicken Sie auf der Seite **Überblick** im linken Seitenmenü auf die Registerkarte **Umgebungen**.
 
    ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
 
@@ -145,7 +145,7 @@ Auf der Seite **Übersicht** haben Sie zwei Möglichkeiten, um auf die Details z
 
    ![Umgebungsdetails](assets/environ-preview1.png)
 
-Klicken Sie alternativ auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der gewünschten Umgebung und wählen Sie dann **Details anzeigen** aus.
+Klicken Sie alternativ auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg für die gewünschte Umgebung und wählen Sie anschließend **Details anzeigen** aus.
 
 ![Anzeigen von Umgebungsdetails](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Alternativ können Sie auf die gleichen Informationen über die Registerkarte **
 
 1. Wählen Sie auf der Seite **Übersicht** die Registerkarte **Umgebungen** aus.
 
-1. Wählen Sie auf der Registerkarte **Umgebungen** im Menü auf der linken Seite die Umgebung aus, die Sie abfragen möchten.
+1. Wählen Sie auf der Registerkarte **Umgebungen** im linken Seitenmenü die Umgebung aus, die abgefragt werden soll.
 
 1. Wenn eine Umgebung ausgewählt ist:
 
@@ -235,11 +235,11 @@ Der Prozess der Aktualisierung erfolgt also in zwei Schritten:
 >[!NOTE]
 > Seit 2024 werden Entwicklungsinstanzen und einige Sandbox-Programme bereits automatisch aktualisiert, sodass Aktualisierungen für sie nicht manuell verwaltet werden müssen. Aufgrund dieses Übergangs ist die Option zur manuellen Aktualisierung der Umgebung für Entwicklungsinstanzen möglicherweise für _einige_ Ihrer Programme nicht verfügbar.
 
-Die Option **Aktualisieren** ist auf der Karte **Umgebungen** für einige Entwicklungsumgebungen und -umgebungen in Sandbox-Programmen verfügbar, indem Sie auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Umgebung klicken.
+Die Option **Aktualisieren** ist für einige Entwicklungsumgebungen und Umgebungen in Sandbox-Programmen über die Karte **Umgebungen** durch Klicken auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg für die Umgebung verfügbar.
 
-![Option „Aktualisieren“ auf der Karte „Umgebungen“](assets/environ-update2.png)
+![Option zum Aktualisieren auf der Karte „Umgebungen“](assets/environ-update2.png)
 
-Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen** des Programms klicken und dann auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Umgebung klicken.
+Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen** des Programms und anschließend auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg für die Umgebung klicken.
 
 ![Update-Option auf der Registerkarte „Umgebungen“](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 Eine Benutzerin bzw. ein Benutzer mit der Rolle **Bereitstellungs-Manager** oder **Geschäftsinhaber** kann eine Entwicklungsumgebung löschen.
 
-Klicken Sie im Bildschirm **Überblick** des Programms auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Entwicklungsumgebung, die Sie löschen möchten.
+Klicken Sie im Bildschirm **Überblick** des Programms auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg für die Entwicklungsumgebung, die gelöscht werden soll.
 
 ![Die Löschoption](assets/environ-delete.png)
 
-Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **Überblick** des Programms verfügbar. Klicken Sie auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg der Umgebung und wählen Sie **Löschen** aus.
+Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **Überblick** des Programms verfügbar. Klicken Sie auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg für die Umgebung und wählen Sie anschließend **Löschen** aus.
 
 ![Die Löschoption auf der Registerkarte „Umgebungen“](assets/environ-delete2.png)
 

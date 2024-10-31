@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
 source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5557'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -929,15 +929,15 @@ Mit GraphQL für AEM-Inhaltsfragmente können Sie eine URL für ein AEM Dynamic 
 Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 
 * Verwenden von `_dmS7Url` für die Referenz `ImageRef`
-   * siehe [Beispielabfrage für die Dynamic Media-Asset-Bereitstellung nach URL - Bildreferenz](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
-* Verwenden Sie `_dmS7Url` für mehrere Verweise; `ImageRef`, `MultimediaRef` und `DocumentRef`
-   * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - Mehrere Referenzen](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+   * Ansehen einer [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Bildverweis](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Verwenden von `_dmS7Url` für mehrere Verweise; `ImageRef`, `MultimediaRef` und `DocumentRef`
+   * Ansehen einer [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Mehrere Verweise](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
-* Verwenden Sie `_dmS7Url` mit der Funktion &quot;Smartes Zuschneiden&quot;
+* Verwenden von `_dmS7Url` mit der Funktion für das smarte Zuschneiden
 
    * Die Eigenschaft `_smartCrops` legt die Konfigurationen für das smarte Zuschneiden offen, die für ein bestimmtes Asset verfügbar sind
 
-   * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - mit smartem Zuschneiden](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – mit smartem Zuschneiden](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1022,11 +1022,11 @@ query allTeams {
 }
 ```
 
-### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL - mit smartem Zuschneiden {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – mit smartem Zuschneiden {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 Es folgt eine Beispielabfrage:
 
-* , um die für die angeforderten Assets verfügbaren Konfigurationen für smartes Zuschneiden anzuzeigen
+* zum Anzeigen der für die angeforderten Assets verfügbaren Konfigurationen für das smarte Zuschneiden
 
 ```graphql
 query allTeams {

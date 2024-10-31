@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Das Liniendiagramm eines ausgewählten Jahres enthält Datenpunkte für jeden Mo
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Klicken Sie auf der Seite **Programmübersicht** im linken Seitenmenü auf **Berichte**.
+1. Klicken Sie auf der Seite **Programmübersicht** im linken Menü auf **Berichte**.
 
 1. Klicken Sie auf **SLA-Berichte**.
 

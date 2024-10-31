@@ -6,9 +6,9 @@ feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10543'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -532,7 +532,7 @@ Durch Aktivierung einer der drei oben genannten Funktionen werden alle Funktione
 
 | Funktion | Beschreibung |
 | --- | --- |
-| DASH | DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn DASH in Ihrem Konto aktiviert ist, können Sie entweder DASH oder HLS für adaptives Video-Streaming auswählen. Sie können auch beide Optionen beim automatischen Wechseln zwischen Playern wählen, wenn **[!UICONTROL auto]** als Wiedergabetyp in der Viewer-Vorgabe ausgewählt ist.<br>Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto gehören die folgenden:<ul><li>Verpacken der DASH-Stream-Videos für das Streaming mit adaptiver Bit-Rate. Diese Methode führt zu einer höheren Effizienz der Bereitstellung. Adaptives Streaming gewährleistet das beste Zuschauererlebnis für Ihre Kundinnen und Kunden.</li><li>Browser-optimiertes Streaming mit Dynamic Media-Playern wechselt zwischen HLS und DASH-Streaming, um eine optimale Service-Qualität zu gewährleisten. Der Videoplayer wechselt automatisch zu HLS, wenn ein Safari-Browser verwendet wird.</li><li>Sie können Ihre bevorzugte Streaming-Methode (HLS oder DASH) konfigurieren, indem Sie die Video-Viewer-Vorgabe bearbeiten.</li><li>Optimierte Videocodierung stellt sicher, dass während der Aktivierung der DASH-Funktion kein zusätzlicher Speicher verwendet wird. Für HLS und DASH wird ein einziger Satz von Videokodierungen erstellt, um den Aufwand für die Videospeicherung zu optimieren.</li><li>Hilft Ihnen, die Bereitstellung von Videos für Ihre Kundinnen und Kunden leichter zugänglich zu machen.</li><li>Rufen Sie die Streaming-URL auch über APIs ab.</li></ul> |
+| DASH | DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn DASH in Ihrem Konto aktiviert ist, können Sie entweder DASH oder HLS für adaptives Video-Streaming auswählen. Sie können auch beide Optionen beim automatischen Wechseln zwischen Playern wählen, wenn **[!UICONTROL auto]** als Wiedergabetyp in der Viewer-Vorgabe ausgewählt ist.<br>Zu den wichtigsten Vorteilen der DASH-Aktivierung in Ihrem Konto gehören:<ul><li>Verpacken der DASH-Stream-Videos für das Streaming mit adaptiver Bit-Rate. Diese Methode führt zu einer höheren Effizienz der Bereitstellung. Adaptives Streaming gewährleistet das beste Zuschauererlebnis für Ihre Kundinnen und Kunden.</li><li>Browser-optimiertes Streaming mit Dynamic Media-Playern wechselt zwischen HLS und DASH-Streaming, um eine optimale Service-Qualität zu gewährleisten. Der Videoplayer wechselt automatisch zu HLS, wenn ein Safari-Browser verwendet wird.</li><li>Sie können Ihre bevorzugte Streaming-Methode (HLS oder DASH) konfigurieren, indem Sie die Video-Viewer-Vorgabe bearbeiten.</li><li>Optimierte Videocodierung stellt sicher, dass während der Aktivierung der DASH-Funktion kein zusätzlicher Speicher verwendet wird. Für HLS und DASH wird ein einziger Satz von Videocodierungen erstellt, um den Aufwand für die Videospeicherung zu minimieren.</li><li>Hilft Ihnen, die Bereitstellung von Videos für Ihre Kundinnen und Kunden leichter zugänglich zu machen.</li><li>Rufen Sie die Streaming-URL auch über APIs ab.</li></ul> |
 | Mehrfache Untertitel und Audiospuren | Sie können von der automatischen Aktivierung der Unterstützung für mehrfache Untertitel und Audiospuren profitieren. Nach der Aktivierung werden alle nachfolgenden Videos, die Sie hochladen, mit einer neuen Backend-Architektur verarbeitet, die das Hinzufügen von mehrfachen Untertiteln und Audiospuren zu Ihren Videos unterstützt. |
 | KI-generierte Untertitel (eingeschränkte Verfügbarkeit) | Erstellen Sie mithilfe von KI Untertitel für Ihre Videos. Mithilfe von KI wird das Transkript des Videos erstellt und in Untertitel konvertiert. Sogar die Timeline wird dabei definiert. |
 
@@ -708,8 +708,8 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
 
 1. [Laden Sie das primäre Video in einen Ordner hoch](/help/assets/manage-video-assets.md#upload-and-preview-video-assets), dem bereits ein Videoprofil zugewiesen ist.
 1. Navigieren Sie zum hochgeladenen Video-Asset, zu dem Sie mehrfache Untertitel und Audiospuren hinzufügen möchten.
-1. Wählen Sie im Asset-Auswahlmodus entweder über das Symbol ![Karte anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder das Symbol ![Liste anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
+1. Wählen Sie im Asset-Auswahlmodus entweder über ![Symbol „Karte anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder ![Symbol „Liste anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
+1. Klicken Sie in der Symbolleiste auf ![Info-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
    ![Ausgewähltes Video-Asset mit Häkchen auf der Miniaturansicht des Videos und in der Symbolleiste hervorgehobenes Symbol zum Anzeigen der Eigenschaften.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ausgewähltes Video-Asset in der Kartenansicht*
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** aus.
 
@@ -722,12 +722,12 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
    >Wenn Sie eine der oben genannten Aufgaben abgeschlossen haben, kehren Sie zu diesen Schritten zurück.
 
    ![Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Untertitel und Audiospuren auf der Seite &quot;Eigenschaften&quot;des Videos.*
+   *Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ des Videos.*
 
 1. Gehen Sie wie folgt vor, um einem Video eine oder mehrere Audiospuren hinzuzufügen:
    1. Wählen Sie **[!UICONTROL Audiospuren hochladen]** aus.
    1. Navigieren Sie zu .mp3-Dateien, wählen Sie eine oder mehrere .mp3-Dateien aus und öffnen Sie sie.
-   1. Für Audiospuren, die in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt werden, müssen Sie für jede Audiospurdatei die erforderlichen Details hinzufügen. Dadurch wird sichergestellt, dass alle Audiospuren richtig aufgelistet werden und zugänglich sind. Klicken Sie auf das Symbol ![Zeichnen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Audiotrack-Datei. Geben Sie im Dialogfeld **Audiospur bearbeiten** die folgenden erforderlichen Details ein:
+   1. Für Audiospuren, die in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt werden, müssen Sie für jede Audiospurdatei die erforderlichen Details hinzufügen. Dadurch wird sichergestellt, dass alle Audiospuren richtig aufgelistet werden und zugänglich sind. Klicken Sie auf ![Stiftsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Audiospurdatei. Geben Sie im Dialogfeld **Audiospur bearbeiten** die folgenden erforderlichen Details ein:
 
       | Audiospur-Metadaten | Beschreibung |
       |--- |--- |
@@ -752,13 +752,13 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
    | **Option 3** | Text in einer Untertiteldatei (`.vtt`) muss korrigiert und neu hochgeladen werden, um die alte `.vtt`-Datei zu ersetzen. Anschließend soll die KI die korrigierte Datei übersetzen.<br>Siehe **Option 3** unten. | **[!UICONTROL Untertitel übersetzen]** |
 
    ![Erstellen von Untertiteloptionen.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *Das Dropdown-Menü &quot;Beschriftung erstellen&quot;bietet drei Optionen: &quot;Dateien hochladen&quot;, &quot;Audiospuren konvertieren&quot;und &quot;Beschriftung übersetzen&quot;.*
+   *Das Dropdown-Menü „Untertitel erstellen“ bietet drei Optionen: „Dateien hochladen“, „Audiospuren konvertieren“ und „Untertitel übersetzen“.*
 
 +++**Option 1:** *Ich habe meine eigenen bereits vorhandenen Untertiteldateien in den Sprachen, die ich verwenden möchte* (Option **[!UICONTROL Dateien hochladen]**).
 
    1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Untertitel erstellen]** > **[!UICONTROL Dateien hochladen]**.
    1. Navigieren Sie zu einer oder mehreren Ihrer bereits vorhandenen `.vtt`-Dateien, wählen Sie sie aus und öffnen Sie sie.
-   1. Damit Untertitel im Medien-Player angezeigt werden, *müssen* Sie die erforderlichen Details zu *jeder* Untertiteldatei hinzufügen, die Sie hochladen. Klicken Sie auf das Symbol ![Zeichnen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Untertiteldatei. Geben Sie im Dialogfeld **Untertitel bearbeiten** die folgenden erforderlichen Details zur Datei ein:
+   1. Damit Untertitel im Medien-Player angezeigt werden, *müssen* Sie die erforderlichen Details zu *jeder* Untertiteldatei hinzufügen, die Sie hochladen. Klicken Sie auf ![Stiftsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Untertiteldatei. Geben Sie im Dialogfeld **Untertitel bearbeiten** die folgenden erforderlichen Details zur Datei ein:
 
       | Untertitelmetadaten | Beschreibung |
       |--- |--- |
@@ -791,8 +791,8 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
 
       | Option | Beschreibung |
       |--- |--- |
-      | Audiospur zum Konvertieren | Klicken Sie auf das Symbol ![Nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann die hochgeladene Audio-Track-Datei aus, aus der Sie mithilfe von AI Untertitel generieren möchten. |
-      | Ausgabesprache | Klicken Sie auf das Symbol &quot;![Nach unten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann eine oder mehrere Sprachen aus, in denen die Untertiteldatei angezeigt werden soll.<br>Klicken Sie auf das Symbol &quot;Schließen&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg), um eine ausgewählte Sprache zu entfernen.![<br>Während der Videowiedergabe wird die Liste der Sprachen im Medien-Player in der Reihenfolge angezeigt, in der Sie sie hier auswählen. |
+      | Audiospur zum Konvertieren | Klicken Sie auf ![Pfeile-nach-unten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann die hochgeladene Audiospurdatei aus, aus der mithilfe von KI Untertitel erstellt werden sollen. |
+      | Ausgabesprachen | Klicken Sie auf ![Pfeile-nach-unten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann mindestens eine Sprache aus, in der die Untertiteldatei angezeigt werden soll.<br>Um eine ausgewählte Sprache zu entfernen, klicken Sie auf ![Schließen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Während der Videowiedergabe wird die Liste der Sprachen im Medien-Player in der Reihenfolge angezeigt, in der Sie sie hier auswählen. |
 
    1. Klicken Sie auf **[!UICONTROL Fertig]**.
    1. Klicken Sie in der oberen rechten Ecke der Seite in der Dropdown-Liste **[!UICONTROL Speichern und schließen]** auf die Option **[!UICONTROL Speichern]**.
@@ -802,7 +802,7 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
       >
       >Basierend auf den Cache-Einstellungen Ihrer Instanz kann die Verarbeitung der Metadaten mehrere Minuten dauern, bis sie in der Vorschau und in veröffentlichten URLs erscheinen.
 
-   1. (Optional) Klicken Sie auf ![Zeichnen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Untertiteldatei. Im Dialogfeld **Untertitel bearbeiten** können Sie die folgenden Details zur Datei bearbeiten:
+   1. (Optional) Klicken Sie auf ![Stiftsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Untertiteldatei. Im Dialogfeld **Untertitel bearbeiten** können Sie die folgenden Details zur Datei bearbeiten:
 
       | Untertitelmetadaten | Beschreibung |
       | --- | --- |
@@ -821,12 +821,12 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
       ![Dialogfeld „Untertitel übersetzen“](/help/assets/dynamic-media/assets/msma-translate-captions.png)
       *Im Dialogfeld „Untertitel übersetzen“ können Sie eine vorhandene Untertiteldatei verwenden, damit die KI neue Untertiteldateien in mehreren Sprachen generiert.*
 
-   1. Legen Sie im Dialogfeld **Beschriftungen übersetzen** die folgenden Optionen fest:
+   1. Legen Sie im Dialogfeld **Untertitel übersetzen** die folgenden Optionen fest:
 
       | Option | Beschreibung |
       |--- |--- |
-      | Zu übersetzender Untertitel | Klicken Sie auf das Symbol &quot;![Nach unten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann eine Untertiteldatei aus, aus der die Untertitel mit KI generiert werden sollen. |
-      | Ausgabesprache | Klicken Sie auf das Symbol &quot;![Nach unten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann eine oder mehrere Sprachen aus, in denen die Untertiteldatei angezeigt werden soll.<br>Klicken Sie auf das Symbol &quot;Schließen&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg), um eine ausgewählte Sprache zu entfernen.![<br>Während der Videowiedergabe wird die Liste der Sprachen im Medien-Player in der Reihenfolge angezeigt, in der Sie sie hier auswählen. |
+      | Zu übersetzender Untertitel | Klicken Sie auf ![Pfeile-nach-unten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann die Untertiteldatei aus, aus der mithilfe von KI Untertitel erstellt werden sollen. |
+      | Ausgabesprachen | Klicken Sie auf ![Pfeile-nach-unten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann mindestens eine Sprache aus, in der die Untertiteldatei angezeigt werden soll.<br>Um eine ausgewählte Sprache zu entfernen, klicken Sie auf ![Schließen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Während der Videowiedergabe wird die Liste der Sprachen im Medien-Player in der Reihenfolge angezeigt, in der Sie sie hier auswählen. |
 
    1. Klicken Sie auf **[!UICONTROL Fertig]**.
    1. Klicken Sie in der oberen rechten Ecke der Seite in der Dropdown-Liste **[!UICONTROL Speichern und schließen]** auf die Option **[!UICONTROL Speichern]**.
@@ -836,7 +836,7 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
       >
       >Basierend auf den Cache-Einstellungen Ihrer Instanz kann die Verarbeitung der Metadaten mehrere Minuten dauern, bis sie in der Vorschau und in veröffentlichten URLs erscheinen.
 
-   1. (Optional) Klicken Sie auf ![Zeichnen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Untertiteldatei. Im Dialogfeld **Untertitel bearbeiten** können Sie die folgenden Details zur Datei bearbeiten:
+   1. (Optional) Klicken Sie auf ![Stiftsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts neben dem Namen einer Untertiteldatei. Im Dialogfeld **Untertitel bearbeiten** können Sie die folgenden Details zur Datei bearbeiten:
 
       | Untertitelmetadaten | Beschreibung |
       | --- | --- |
@@ -888,10 +888,10 @@ Sie können den Lebenszyklusstatus jeder Untertitel- oder Audiospurdatei einsehe
 **So zeigen Sie den Lebenszyklusstatus eines Videos an:**
 
 1. Navigieren Sie zu dem Video-Asset, dessen Lebenszyklusstatus angezeigt werden soll.
-1. Wählen Sie im Asset-Auswahlmodus entweder über das Symbol ![Karte anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder das Symbol ![Liste anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
+1. Wählen Sie im Asset-Auswahlmodus entweder über ![Symbol „Karte anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder ![Symbol „Liste anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
+1. Klicken Sie in der Symbolleiste auf ![Info-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
 1. Wählen Sie auf der Seite **Eigenschaften** die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** aus.
-1. Notieren Sie in der Spalte **[!UICONTROL Status]** den Status der einzelnen Beschriftungen oder Audiodateien.
+1. Der Status der jeweiligen Untertitel- oder Audiodatei wird in der Spalte **[!UICONTROL Status]** angezeigt.
 
 | Status von Untertiteln und Audiospuren | Beschreibung |
 | --- | --- |
@@ -918,11 +918,11 @@ Alle hochgeladenen Audiospurdateien können jedoch als Standardaudio festgelegt 
 **So legen Sie das Standardaudio für ein Video mit mehreren Audiospuren fest:**
 
 1. Navigieren Sie zum Video-Asset, dessen standardmäßige Audiospur festgelegt werden soll.
-1. Wählen Sie im Asset-Auswahlmodus entweder über das Symbol ![Karte anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder das Symbol ![Liste anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
+1. Wählen Sie im Asset-Auswahlmodus entweder über ![Symbol „Karte anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder ![Symbol „Liste anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
+1. Klicken Sie in der Symbolleiste auf ![Info-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
 1. Wählen Sie auf der Seite „Eigenschaften“ die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** aus.
 1. Wählen Sie unter der Überschrift **Audiospuren** die Audiospurdatei aus, die als Standard für das Video festgelegt werden soll.
-1. Klicken Sie auf das Symbol ![Audio ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Als Standard festlegen]**.
+1. Klicken Sie auf ![Audiosymbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Als Standard festlegen]**.
 1. Klicken Sie im Dialogfeld **Als Standard festlegen** auf **[!UICONTROL Ersetzen]**.
 
    ![Die Überschrift „Audiospuren“ mit ausgewähltem Audiospurdateinamen und hervorgehobener Schaltfläche „Als Standard festlegen“](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Festlegen der standardmäßigen Audiospur für ein Video*
@@ -948,20 +948,20 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
 1. Navigieren Sie in **[!UICONTROL Assets]** zu einem vorhandenen Video, dem Sie mehrfache Untertitel und Audiospuren hinzugefügt haben.
 1. Klicken Sie auf das Video-Asset, um es im Vorschaumodus zu öffnen.
-1. Klicken Sie auf der Vorschauseite in der linken oberen Ecke der Seite auf das Symbol ![Linke Seitenleiste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![Nach-unten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann **[!UICONTROL Viewer]** aus.
+1. Klicken Sie oben links auf der Vorschauseite auf ![Linkes Leistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![Pfeile-nach-unten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann **[!UICONTROL Betrachter]** aus.
 
-   ![Dropdown-Liste mit der Viewer-Option](/help/assets/dynamic-media/assets/msma-selectviewers.png)
+   ![Dropdown-Liste mit der Viewer-Option.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. Klicken Sie in der linken oberen Ecke der Seite auf das Symbol ![Linke Seitenleiste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Viewer ![Nach unten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann einen Viewer aus, den Sie für die Videovorschau verwenden möchten.
+1. Klicken Sie oben links auf der Vorschauseite auf ![Linkes Leistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Betrachter ![Pfeilsymbol nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) und wählen Sie dann einen Viewer aus, der für die Videovorschau verwendet werden soll.
 
-1. Klicken Sie in der rechten unteren Ecke der Seite auf das Sprechblasensymbol und wählen Sie dann die Audio- oder Untertitel/Untertitel aus, die Sie hören oder sehen möchten, oder beides.
+1. Klicken Sie unten rechts auf der Seite auf das Sprechblasensymbol und wählen Sie dann die Audio- oder Untertitelinhalte aus, die Sie hören und/oder sehen möchten. 
 
    ![Popup-Liste für Audio und Untertitel im Video-Viewer.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulation einer Person, die Audio und Untertitel für die Videowiedergabe auswählt.*
 
-1. Um die Wiedergabe zu starten, klicken Sie auf das ![PLay-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
-Klicken Sie bei Bedarf auf das Symbol ![Maximieren](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) , um das Anzeigefenster zu maximieren.
+1. Um die Wiedergabe zu starten, klicken Sie auf ![Wiedergabesymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+Klicken Sie ggf. auf ![Maximieren-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg), um das Anzeigefenster zu maximieren.
 Beachten Sie die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL Einbetten]** unten links auf der Seite. Verwenden Sie diese Schaltflächen, um [die URL des Videos mit Ihrer Web-Anwendung zu verknüpfen](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) bzw. [das Video auf einer Web-Seite einzubetten](/help/assets/dynamic-media/embed-code.md).
-1. Klicken Sie in der rechten oberen Ecke der Vorschauseite auf **[!UICONTROL Schließen]**.
+1. Klicken Sie rechts oben auf der Vorschauseite auf **[!UICONTROL Schließen]**.
 
 ### Löschen von Untertitel- oder Audiospurdateien aus einem Video
 
@@ -972,13 +972,13 @@ Die ursprüngliche Audiospur, die aus einem primären Video extrahiert wurde, ka
 **So löschen Sie Untertitel- oder Audiospurdateien aus einem Video:**
 
 1. Navigieren Sie zum Video-Asset, dessen standardmäßige Audiospur festgelegt werden soll.
-1. Wählen Sie im Asset-Auswahlmodus entweder über das Symbol ![Karte anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder das Symbol ![Liste anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
+1. Wählen Sie im Asset-Auswahlmodus entweder über ![Symbol „Karte anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder ![Symbol „Liste anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
+1. Klicken Sie in der Symbolleiste auf ![Info-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
 1. Wählen Sie auf der Seite „Eigenschaften“ die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** aus.
 1. Führen Sie eine der folgenden Aktionen aus:
 
-   * Untertitel - Wählen Sie unter der Überschrift **Untertitel** mindestens eine Untertiteldatei aus, die Sie aus dem Video löschen möchten, und klicken Sie dann auf das Symbol ![Löschen](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Löschen]**.
-   * Audiospuren - Wählen Sie unter der Überschrift **Audiospuren** mindestens eine Audiospur-Datei aus, die Sie aus dem Video löschen möchten, und klicken Sie dann auf das Symbol ![Löschen](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Löschen]**.
+   * Untertitel: Wählen Sie unter der Überschrift **Untertitel** eine oder mehrere Untertiteldateien aus, die Sie aus dem Video löschen möchten, und klicken Sie dann auf ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Löschen]**.
+   * Audiospuren: Wählen Sie unter der Überschrift **Audiospuren** eine oder mehrere Audiospurdateien aus, die sie aus dem Video löschen möchten, und klicken Sie dann auf ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Löschen]**.
 
 1. Klicken Sie im Dialogfeld „Löschen“ auf die Option **[!UICONTROL OK]**.
 1. Veröffentlichen Sie das Video.
@@ -994,13 +994,13 @@ Die ursprüngliche Audiospur, die aus einer Primärvideodatei extrahiert wurde, 
 **So laden Sie in ein Video hochgeladene Untertitel- oder Audiospurdateien herunter:**
 
 1. Navigieren Sie zum Video-Asset, dessen standardmäßige Audiospur festgelegt werden soll.
-1. Wählen Sie im Asset-Auswahlmodus entweder über das Symbol ![Karte anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder das Symbol ![Liste anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
+1. Wählen Sie im Asset-Auswahlmodus entweder über ![Symbol „Karte anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder ![Symbol „Liste anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
+1. Klicken Sie in der Symbolleiste auf ![Info-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
 1. Wählen Sie auf der Seite **Eigenschaften** die Registerkarte **[!UICONTROL Untertitel und Audiospuren]** aus.
 1. Führen Sie eine der folgenden Aktionen aus:
 
-   * Untertitel - Wählen Sie unter der Überschrift **Untertitel** eine oder mehrere Untertiteldateien aus, die Sie aus dem Video herunterladen möchten, und klicken Sie dann auf das Symbol ![Herunterladen](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Herunterladen]**.
-   * Audiospuren - Wählen Sie unter der Überschrift **Audiospuren** eine oder mehrere Audiospur-Dateien aus, die Sie aus dem Video herunterladen möchten, und klicken Sie dann auf das Symbol ![Herunterladen](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Herunterladen]**.
+   * Untertitel: Wählen Sie unter der Überschrift **Untertitel** eine oder mehrere Untertiteldateien aus, die Sie aus dem Video herunterladen möchten, und klicken Sie dann auf ![Herunterladen-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Herunterladen]**.
+   * Audiospuren: Wählen Sie unter der Überschrift **Audiospuren** eine oder mehrere Audiospurdateien aus, die Sie aus dem Video herunterladen möchten, und klicken Sie dann auf ![Herunterladen-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Herunterladen]**.
 
 1. Legen Sie im Dialogfeld „Herunterladen“ die folgenden Optionen fest:
 
@@ -1010,7 +1010,7 @@ Die ursprüngliche Audiospur, die aus einer Primärvideodatei extrahiert wurde, 
    | Erstellen Sie einen separaten Ordner für jedes Asset | Erstellen Sie einen Ordner für jede Untertitel- oder Audiospurdatei, die Sie zum Herunterladen ausgewählt haben. |
    | E-Mail | Verwenden Sie Ihr Standard-E-Mail-Programm, um die .zip-Datei an eine angegebene E-Mail-Adresse zu senden. |
    | Assets | Hier werden die Anzahl der zum Herunterladen vorgesehenen Dateien und die Gesamtgröße aller ausgewählten Dateien angegeben. Wenn Sie diese Option deaktivieren, wird die Schaltfläche **[!UICONTROL Herunterladen]** abgeblendet, sodass Sie keine Dateien herunterladen können. |
-   | Ausgabedarstellungen | Eine Ausgabedarstellung bezieht sich auf eine alternative Version oder eine Vorschau der Originaldatei, normalerweise eine Version mit kleinerer oder niedriger Auflösung. Wenn sie als 0 B angezeigt wird, bedeutet dies wahrscheinlich, dass keine alternative Version verfügbar ist oder dass es zu klein ist, um eine Größe zu registrieren. |
+   | Ausgabedarstellungen | Eine Ausgabedarstellung bezieht sich auf eine alternative Version oder eine Vorschau der Originaldatei, bei der es sich normalerweise um eine Version mit kleinerer oder niedrigerer Auflösung handelt. Wenn sie mit 0 B angezeigt wird, ist wahrscheinlich keine alternative Version verfügbar oder sie ist zu klein für eine Größenangabe. |
 
 1. Wählen Sie **[!UICONTROL Herunterladen]** aus.
 1. Veröffentlichen Sie das Video. Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
@@ -1085,11 +1085,11 @@ Im Allgemeinen sollte die `.vtt`-Datei denselben Namen haben wie die Videodatei,
 
      Notieren Sie den Wert `,1` am Ende des Untertitelpfads. Unmittelbar im Anschluss an die Dateierweiterung VTT haben Sie bei der Angabe des Pfads die Möglichkeit, die Schaltfläche für Untertitel durch Festlegen von `,1` bzw. `,0` in der Video-Player-Leiste zu aktivieren oder zu deaktivieren.
 
-   * Klicken Sie für ein eingebettetes Video-Viewer-Erlebnis auf **[!UICONTROL Einbettungscode]**. Wählen Sie im Dialogfeld „Einbettungs-Code“ den Einbettungs-Code aus, kopieren Sie den Code in die Zwischenablage und fügen Sie ihn dann in einen einfachen Texteditor ein. Hängen Sie den kopierten Einbettungs-Code mit der folgenden Syntax an:
+   * Um das Video in einem eingebetteten Viewer anzuzeigen, klicken Sie auf **[!UICONTROL Einbettungscode]**. Wählen Sie im Dialogfeld „Einbettungs-Code“ den Einbettungs-Code aus, kopieren Sie den Code in die Zwischenablage und fügen Sie ihn dann in einen einfachen Texteditor ein. Hängen Sie den kopierten Einbettungs-Code mit der folgenden Syntax an:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     Beachten Sie die `,1` am Ende des Untertitelpfads. Unmittelbar im Anschluss an die Dateierweiterung VTT haben Sie bei der Angabe des Pfads die Möglichkeit, die Schaltfläche für Untertitel durch Festlegen von `,1` bzw. `,0` in der Video-Player-Leiste zu aktivieren oder zu deaktivieren.
+     Achten Sie auf den Wert `,1` am Ende des Untertitelpfads. Unmittelbar im Anschluss an die Dateierweiterung VTT haben Sie bei der Angabe des Pfads die Möglichkeit, die Schaltfläche für Untertitel durch Festlegen von `,1` bzw. `,0` in der Video-Player-Leiste zu aktivieren oder zu deaktivieren.
 
 ## Hinzufügen von Kapitelmarken zu Videos {#adding-chapter-markers-to-video}
 
@@ -1191,26 +1191,26 @@ Die Möglichkeit, eine Videominiaturansicht anzupassen, ist erst verfügbar, nac
 
 
 1. Navigieren Sie zu einem hochgeladenen Video-Asset, dessen Miniaturbild Sie ändern möchten.
-1. Wählen Sie im Asset-Auswahlmodus entweder über das Symbol ![Karte anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder das Symbol ![Liste anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
-1. Klicken Sie auf der Seite &quot;Eigenschaften&quot;des Videos auf **[!UICONTROL Miniatur ändern]**.
-1. Führen Sie im Dialogfeld &quot;Miniatur ändern&quot;einen der folgenden Schritte aus:
+1. Wählen Sie im Asset-Auswahlmodus entweder über ![Symbol „Karte anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Kartenansicht) oder ![Symbol „Liste anzeigen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Listenansicht) das Video-Asset aus.
+1. Klicken Sie in der Symbolleiste auf ![Info-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
+1. Klicken Sie auf der Seite „Eigenschaften“ des Videos auf **[!UICONTROL Miniatur ändern]**.
+1. Führen Sie im Dialogfeld „Miniatur ändern“ einen der folgenden Schritte aus: 
 
    * So verwenden Sie einen Frame aus dem Video als neue Miniaturansicht:
 
-      * Klicken Sie in der Symbolleiste auf die Registerkarte **[!UICONTROL Frame aus Video auswählen]** .
-      * Klicken Sie auf das Symbol &quot;![Wiedergabe&quot;](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
-      * Klicken Sie auf das Symbol ![Pause](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) in dem Frame, den Sie als neue Miniaturansicht des Videos erfassen möchten.
+      * Klicken Sie in der Symbolleiste auf die Registerkarte **[!UICONTROL Frame aus Video auswählen]**.
+      * Klicken Sie auf das ![Wiedergabesymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+      * Klicken Sie auf das ![Pausensymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) in dem Frame, der als neue Miniatur des Videos verwendet werden soll.
 
    * So verwenden Sie ein Bild-Asset als neue Miniaturansicht:
 
-      * Klicken Sie in der Symbolleiste auf die Registerkarte **[!UICONTROL Miniatur aus Assets auswählen]** .
-      * Klicken Sie auf die Schaltfläche **[!UICONTROL Miniatur auswählen]** .
+      * Klicken Sie in der Symbolleiste auf **[!UICONTROL Miniatur aus Assets auswählen]**.
+      * Klicken Sie auf die Schaltfläche **[!UICONTROL Miniatur auswählen]**.
       * Navigieren Sie zu einem zuvor hochgeladenen und veröffentlichten Bild-Asset, das Sie verwenden möchten. Das Asset wird automatisch skaliert, damit es als Miniaturbild für das Video verwendet werden kann.
       * Wählen Sie das Bild-Asset aus und klicken Sie dann auf **[!UICONTROL Auswählen]**.
 
-1. Klicken Sie im Dialogfeld &quot;Miniaturansicht ändern&quot;auf **[!UICONTROL Änderung speichern]**.
-1. Klicken Sie auf der Seite &quot;Eigenschaften&quot;des Videos in der oberen rechten Ecke auf **[!UICONTROL Speichern und schließen]** oder **[!UICONTROL Speichern]**.
+1. Klicken Sie im Dialogfeld „Miniatur ändern“ auf **[!UICONTROL Änderung speichern]**.
+1. Klicken Sie oben rechts auf der Seite „Eigenschaften“ des Videos auf **[!UICONTROL Speichern und schließen]** oder **[!UICONTROL Schließen]**.
 
 
 

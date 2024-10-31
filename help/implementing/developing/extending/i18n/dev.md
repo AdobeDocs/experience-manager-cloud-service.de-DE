@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1095'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -172,9 +172,9 @@ Prüfen Sie, ob Sie alle Zeichenfolgen in Ihrer Benutzeroberfläche internationa
 
 `USR_*Default-String*_尠`
 
-Die folgende Abbildung zeigt die Platzhalterübersetzung für die AEM-Homepage:
+Die folgende Abbildung zeigt die Platzhalterübersetzung für die AEM-Startseite:
 
-![Stub-Übersetzung für die AEM Homepage](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![Platzhalterübersetzung für die AEM-Startseite](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Um die Sprache für Benutzende festzulegen, konfigurieren Sie die Spracheigenschaft des Präferenzknotens für das Benutzerkonto.
 

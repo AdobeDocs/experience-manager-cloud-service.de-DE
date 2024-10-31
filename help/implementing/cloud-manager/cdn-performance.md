@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -42,17 +42,17 @@ Das Dashboard enthält einen Gesamtwert für die CDN-Leistung sowie bei Bedarf T
 
 ![CDN-Leistungs-Dashboard](assets/cdn-performance-dashboard.png)
 
-Klicken Sie auf **Trend anzeigen**, um Details zu Ihrer CDN-Leistung sowie Vorschläge zur Verbesserung zu erhalten.
+Für Details zu Ihrer CDN-Leistung sowie für Vorschläge, wie Sie diese verbessern können, klicken Sie auf **Trend anzeigen**.
 
 ![Leistungs-Trend](assets/cdn-performance-trend.png)
 
-Klicken Sie unter dem Diagramm auf **Anzeigen** , um die Zeitspanne des Diagramms zu ändern.
+Klicken Sie auf **Ansicht** unterhalb des Diagramms, um die Zeitspanne des Diagramms zu ändern.
 
 Für Vorschläge zur Verbesserung der CDN-Leistung wählen Sie die Registerkarte **Empfehlungen**.
 
 ![CDN-Empfehlungen](assets/cdn-performance-recommendations.png)
 
-Klicken Sie auf den Pfeil neben einer Empfehlung in der Liste, um Details zu den zu ergreifenden Maßnahmen und zur Ursache des Problems anzuzeigen.
+Klicken Sie auf den Pfeil neben einer Empfehlung in der Liste, um Details zu den zu ergreifenden Verbesserungsmaßnahmen und zur Ursache des Problems anzuzeigen.
 
 ## Cache-Trefferdefinition {#cache-hit}
 

@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1398'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 * **Web-Stufen-Konfiguration** – Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
    * Weitere Informationen finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
-   * Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Code-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
+   * Wenn für die ausgewählte Umgebung bereits eine Code-Pipeline auf Web-Ebene vorhanden ist, wird diese Auswahl deaktiviert.
    * Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
 
 >[!NOTE]
@@ -156,7 +156,7 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
 
    ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Wenn Sie Experience Audit aktiviert haben, klicken Sie auf **Weiter** , um zur Registerkarte **Erlebnisprüfung** zu wechseln, wo Sie die Pfade definieren können, die immer in Experience Audit enthalten sein sollen.
+1. Wenn Sie das Erlebnis-Audit aktiviert haben, klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnis-Audit** zu gelangen. Dort können Sie die Pfade definieren, die immer in das Erlebnis-Audit einbezogen werden sollen.
 
    * Wenn Sie **Erlebnis-Audit** aktiviert haben, finden Sie im Dokument [Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) Details zur Konfiguration.
    * Wenn nicht, überspringen Sie diesen Schritt.

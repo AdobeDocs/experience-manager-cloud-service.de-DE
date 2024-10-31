@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
    ![Pipeline-Variablen anzeigen/bearbeiten](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Klicken Sie im Dialogfeld **Variablenkonfiguration** auf das Symbol ![Ellipse - More (Auslassungszeichen)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) der Variablen, die Sie entfernen möchten, und klicken Sie dann auf **Löschen**.
+1. Klicken Sie im Dialogfeld **Variablenkonfiguration** auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Variable, die Sie entfernen möchten. Klicken Sie anschließend auf **Löschen**.
 
 ## Festlegen von Pipeline-Variablen mithilfe der Cloud Manager-Befehlszeilenschnittstelle {#cli}
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 05531a5c1eca996bd3652d6ce6233b7a960d0bc9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Weitere Informationen finden Sie unter [Java-Funktionstests](/help/implementing/
 
 Um die Risikokontrolle für Ihre kundenspezifische Entwicklung zu maximieren, empfiehlt Ihnen Adobe dringend, kritische Benutzeroberflächentests in AEM as a Cloud Service zu erfassen. Beschränken Sie deren Anzahl und konzentrieren Sie sich stattdessen darauf, ihre Wirkung auf das Kundenerlebnis zu maximieren.
 
-Die Tests sind in einem Docker-Image verpackt, das so flüchtig wie möglich ist (mit Unterstützung für Cypress, Playwright, Selenium, Java und JavaScript). Sie folgen denselben Merkmalen und Zwecken wie die benutzerdefinierten Funktionstests.
+Die Tests sind in einem Docker-Image verpackt, das so flexibel wie möglich ist (mit Unterstützung für Cypress, Playwright, Selenium, Java und JavaScript). Sie folgen denselben Merkmalen und Zwecken wie die benutzerdefinierten Funktionstests.
 
 >[!NOTE]
 >

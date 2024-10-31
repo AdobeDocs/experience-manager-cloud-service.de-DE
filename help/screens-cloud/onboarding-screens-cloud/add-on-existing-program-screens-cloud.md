@@ -5,9 +5,9 @@ exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 feature: Screens Deployments
 role: Admin, Developer, User
 source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um Screens als Add-on zu einem vorhandenen Programm hin
 
 1. Auf der Registerkarte **Lösungen und Add-ons** werden Optionen wie Sites, Assets und Screens angezeigt. Wählen Sie die Add-on-Option **Screens** aus, wie in der folgenden Abbildung dargestellt.
 
-   ![Screens-Add-On-Option](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Add-on-Option „Screens“](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Klicken Sie auf **Aktualisieren**, nachdem Sie Ihre Optionen ausgewählt haben.
 

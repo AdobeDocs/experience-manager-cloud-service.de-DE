@@ -5,9 +5,9 @@ exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
 source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,13 +35,13 @@ Gehen Sie wie folgt vor, um den Player zu aktualisieren:
 
 1. Klicken Sie auf die Registerkarte **Konfiguration** und klicken Sie unter der Option **Zurücksetzen** auf die Schaltfläche **Auf Werkseinstellungen**.
 
-   ![Schaltfläche &quot;Auf Werkseinstellungen&quot;unter Option &quot;Zurücksetzen&quot;](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![Schaltfläche „Auf Werkseinstellungen“ unter der Option „Zurücksetzen“](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Klicken Sie auf **Bestätigen**, um Ihren Player zurückzusetzen.
 
 1. Wählen Sie ebenfalls auf der Registerkarte **Konfiguration** die Schaltfläche **Wechsel zum Cloud-Modus** unter der Option **Ausführungsmodus ein/aus**.
 
-   ![Wechseln Sie zur Schaltfläche &quot;Cloud-Modus&quot;unter Option &quot;Runmode umschalten&quot;](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![Schaltfläche „Cloud-Modus“ unter der Option „Ausführungsmodus ein/aus“](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Mit einem Klick auf **Bestätigen**, was erscheint, wenn Sie in den Cloud-Modus wechseln, heben Sie die Registrierung des Players auf.
 

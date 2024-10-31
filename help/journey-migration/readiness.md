@@ -5,9 +5,9 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
 source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1913'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -167,9 +167,9 @@ Adobe empfiehlt, dass Sie [Veraltete Funktionen](https://experienceleague.adobe.
 
 Nachdem Sie sich mit den mit AEM as a Cloud Service eingeführten Änderungen vertraut gemacht haben, ist es an der Zeit, mit der Planung einer Überprüfung Ihrer bestehenden Installation zu beginnen. Auf diese Weise können Sie den Grad der Änderungen messen, die erforderlich sind, um sie in die Cloud zu verschieben.
 
-Die folgende Abbildung zeigt die wichtigsten Schritte der Planungsphase:
+Die folgende Abbildung zeigt die wichtigsten Schritte der Prüfphase:
 
-![Wichtige Schritte während der Überprüfungsphase](/help/journey-migration/assets/planning-phaseimg1.png)
+![Wichtige Schritte während der Prüfphase](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Als Nächstes werden Sie im Detail untersuchen, was jeder dieser Schritte bedeutet.
 

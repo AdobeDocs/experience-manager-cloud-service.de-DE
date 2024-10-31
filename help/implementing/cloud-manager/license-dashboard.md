@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Das Lizenz-Dashboard von Cloud Manager bietet einfachen Zugriff auf Berechtigung
 >Benutzende mit der Rolle **Geschäftsinhaber** müssen angemeldet sein, damit ihnen das Lizenz-Dashboard angezeigt wird.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
-1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg in der Kopfzeile [Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Diese Aktion zeigt die Registerkarten an.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** im [Cloud Manager-Header](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg.  Durch diese Aktion werden die Registerkarten angezeigt.
 1. Klicken Sie auf der Registerkarte auf die Option **Lizenz**.
 
 ![Lizenz-Dashboard](assets/license-dashboard.png)

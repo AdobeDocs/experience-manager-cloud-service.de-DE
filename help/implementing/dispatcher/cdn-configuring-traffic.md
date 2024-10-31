@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 198b3e29c3cd392db3ee42eeca22e3c8c414420f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1351'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -158,8 +158,8 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 | **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (die einzige unterstützte Eigenschaft ist „path“) oder einen Anforderungs-Header, Abfrageparameter oder Cookie in Bezug auf einen bestimmten Wert, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
 |         | var | Entfernt eine angegebene Variable. |
 |         | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
-| **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie oder var), match, replacement | Ersetzt einen Teil des Anforderungsparameters (nur unterstützte &quot;path&quot;-Eigenschaft) oder der Anforderungsheader, Abfrageparameter, Cookie oder Variable durch einen neuen Wert. |
-|              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie oder var) | Legt den Anforderungsparameter (nur unterstützte Eigenschaft &quot;path&quot;) oder den Anforderungsheader, Abfrageparameter, Cookie oder die Variable auf den Wert in Kleinbuchstaben fest. |
+| **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie or var), Übereinstimmung, Ersetzung | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies oder der Variable durch einen neuen Wert. |
+|              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie oder var) | Setzt den Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder Anfrage-Header, Abfrageparameter oder Cookie oder die Variable auf den entsprechenden Wert in Kleinbuchstaben. |
 
 Aktionen zum Ersetzen unterstützen Erfassungsgruppen, wie unten dargestellt:
 

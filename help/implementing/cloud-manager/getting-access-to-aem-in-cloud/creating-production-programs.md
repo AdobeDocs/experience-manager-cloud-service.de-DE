@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1027'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Wenn die [Anforderungen](#sla-requirements) für die Aktivierung von 99,99 % SL
 
 ## Zugriff auf ein Programm {#accessing}
 
-1. Wenn Ihre Programmkarte auf der Landingpage angezeigt wird, klicken Sie auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg , um die verfügbaren Menüoptionen anzuzeigen.
+1. Wenn Sie Ihre Programmkarte auf der Landingpage sehen, klicken Sie auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg, um die für Sie verfügbaren Menüoptionen anzuzeigen.
 
    ![Programmübersicht](assets/program-overview.png)
 

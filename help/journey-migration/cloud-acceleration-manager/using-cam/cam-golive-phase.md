@@ -5,9 +5,9 @@ exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 feature: Migration
 role: Admin
 source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,8 +29,8 @@ In diesem Abschnitt erfahren Sie mehr zur Karte „Go-Live-Aktivität“:
 
 1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Live-Schaltung**.
 
-   ![Aufschalten - Ansicht](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+   ![Live-Schaltung – Ansicht](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. Ein Inhaltskarussell zeigt relevante Informationen für diese Phase der Migration an.
 
-   ![Im Karussell werden relevante Informationen angezeigt](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
+   ![Inhaltskarussell mit relevanten Informationen](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

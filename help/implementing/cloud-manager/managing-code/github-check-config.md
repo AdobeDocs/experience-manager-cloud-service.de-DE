@@ -5,9 +5,9 @@ exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie die automatisch erstellten Pipelines so steuern, dass sie 
 
 Bei der Verwendung von [privaten Repositorys](private-repositories.md#using) wird automatisch eine [Full-Stack-Code-Qualitäts-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) erstellt. Diese Pipeline wird bei jeder Aktualisierung einer Pull-Anfrage gestartet.
 
-Sie können diese Prüfungen steuern, indem Sie eine `.cloudmanager/pr_pipelines.yml` -Konfigurationsdatei im Standardzweig des privaten Repositorys erstellen.
+Sie können diese Prüfungen steuern, indem Sie eine Konfigurationsdatei namens `.cloudmanager/pr_pipelines.yml` in der Standardverzweigung des privaten Repositorys erstellen.
 
 ```yaml
 github:
@@ -36,9 +36,9 @@ pipelines:
 
 | Parameter | Mögliche Werte | Standard | Beschreibung |
 | --- | --- | --- | --- |
-| `shouldDeletePreviousComment` | `true` oder `false` | `false` | Gibt an, ob nur der letzte Kommentar mit den Ergebnissen der Codescans für diese GitHub-Pull-Anforderung beibehalten werden soll oder ob alle beibehalten werden sollen. Ist sie auf &quot;`false`&quot;(Standard) eingestellt, werden vorherige Kommentare nicht gelöscht. |
-| `shouldSkipCheckAnnotations` | `true` oder `false` | `false` | Ob zusätzliche Anmerkungen in der Prüfung der GitHub-Pull-Anforderung vorhanden sein sollen oder nicht. Ist sie auf &quot;`false`&quot;(Standard) gesetzt, bedeutet dies, dass die Anmerkungen nicht übersprungen werden und im Feedback enthalten sind. |
-| `type` | `CI_CD` | Nicht zutreffend | Definiert das Verhalten der CI/CD-Pipeline-Konfigurationen (Continuous Integration/Continuous Deployment). |
+| `shouldDeletePreviousComment` | `true` oder `false` | `false` | Legt fest, ob bei dieser GitHub-Pull-Anfrage nur der letzte Kommentar oder alle Kommentare mit den Ergebnissen der Codescans beibehalten werden sollen. Ist `false` (Standardeinstellung) festgelegt, werden vorherige Kommentare nicht gelöscht. |
+| `shouldSkipCheckAnnotations` | `true` oder `false` | `false` | Legt fest, ob zusätzliche Anmerkungen bei der Prüfung der GitHub-Pull-Anfrage vorhanden sein sollen oder nicht. Ist `false` (Standardeinstellung) festgelegt, werden Prüfanmerkungen nicht übersprungen und in das Feedback aufgenommen. |
+| `type` | `CI_CD` | Nicht zutreffend | Definiert das Verhalten der CI/CD(Continuous Integration/Continuous Deploymen)-Pipeline-Konfigurationen. |
 | `template.programId` | Ganzzahl | Es werden keine Pipeline-Variablen wiederverwendet | Kann verwendet werden, um die [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) wiederzuverwenden, die auf einer vorhandenen Pipeline festgelegt sind, die automatisch von jeder Pull-Anfrage erstellt wird. |
 | `template.pipelineId` | Ganzzahl | Es werden keine Pipeline-Variablen wiederverwendet | Kann verwendet werden, um die [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) wiederzuverwenden, die auf einer vorhandenen Pipeline festgelegt sind, die automatisch von jeder Pull-Anfrage erstellt wird. |
 | `namePrefix` | Zeichenfolge | `Full Stack Code Quality Pipeline for PR` | Wird verwendet, um das Präfix für den Namen der automatisch erstellten Pipeline festzulegen. |
