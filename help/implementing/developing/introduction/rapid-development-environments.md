@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
 source-wordcount: '4863'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -100,12 +100,12 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    aio login
    ```
 
-   Die Anmeldeinformationen (Token) werden in der globalen aio-Konfiguration gespeichert und unterstützen daher nur eine Anmeldung und Organisation. Wenn Sie mehrere RDEs verwenden möchten, die unterschiedliche Anmeldungen oder Organisationen benötigen, folgen Sie dem folgenden Beispiel für die Einführung von Kontexten.
+   Die Anmeldeinformationen (Token) werden in der globalen aio-Konfiguration gespeichert und unterstützen daher nur eine einzige Anmeldung und Organisation. Wenn Sie mehrere RDEs verwenden möchten, die unterschiedliche Anmeldungen oder Organisationen benötigen, folgen Sie dem Beispiel unten, wo Kontexte eingeführt werden.
 
    <details><summary>In diesem Beispiel wird beschrieben, wie Sie einen lokalen Kontext für eine Ihrer RDE-Anmeldungen einrichten</summary>
-   Führen Sie die folgenden Schritte aus, um die Anmeldeinformationen lokal in einer .aio-Datei im aktuellen Verzeichnis in einem bestimmten Kontext zu speichern. Ein Kontext ist auch eine intelligente Möglichkeit, eine CI/CD-Umgebung oder ein Skript einzurichten.  Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie mindestens die aio-cli-Version 10.3.1 verwenden. Aktualisieren Sie es mit "npm install -g @adobe/aio-cli".
+   Führen Sie die folgenden Schritte aus, um in einem bestimmten Kontext die Anmeldeinformationen lokal in einer .aio-Datei im aktuellen Verzeichnis zu speichern. Ein Kontext ist auch eine geschickte Möglichkeit, um eine CI/CD-Umgebung oder ein Skript einzurichten.  Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie mindestens die aio-cli-Version 10.3.1 verwenden. Führen Sie mit „npm install -g @adobe/aio-cli“ eine Aktualisierung durch.
 
-   Erstellen wir einen Kontext namens &quot;mycontext&quot;, den wir dann mithilfe des auth-Plug-ins als Standardkontext festlegen, bevor wir den Login-Befehl aufrufen.
+   Erstellen Sie einen Kontext namens „mycontext“, der dann mithilfe des auth-Plug-ins als Standardkontext festgelegt wird, bevor Sie den Login-Befehl aufrufen.
 
    ```
    aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
@@ -114,13 +114,13 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    ```
 
    >[!NOTE]
-   > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standardbrowser zu öffnen. So können Sie es kopieren und mit einem **inkognito** -Fenster Ihres Browsers öffnen. Auf diese Weise bleibt Ihre aktuell angemeldete Sitzung im normalen Browser-Fenster unberührt und Sie können sicherstellen, dass Sie die spezifische Anmeldung und Organisation verwenden, die für Ihren Kontext erforderlich sind.
+   > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standard-Browser zu öffnen. So können Sie sie kopieren und mit einem **Inkognito**-Fenster Ihres Browsers öffnen. Auf diese Weise bleibt Ihre aktuell angemeldete Sitzung im normalen Browser-Fenster unberührt und Sie können sicherstellen, dass Sie die spezifische Anmeldung und Organisation verwenden, die für Ihren Kontext erforderlich sind.
 
-   Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen Konfigurationsdatei `.aio` (die Datei wird bei Bedarf erstellt. Der zweite Befehl legt den Kontext `mycontext` als &quot;aktuellen&quot;Kontext fest, d. h. als Standard.
+   Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen `.aio`-Konfigurationsdatei (die Datei wird bei Bedarf erstellt). Der zweite Befehl legt den Kontext `mycontext` als „aktuellen“ Kontext fest, d. h. als Standard.
 
    Mit dieser Konfiguration speichert der Anmeldebefehl automatisch die Anmelde-Token im Kontext `mycontext` und behält sie somit lokal bei.
 
-   Mehrere Kontexte können entweder durch Beibehalten lokaler Konfigurationen in mehreren Ordnern verwaltet werden. Alternativ können Sie auch mehrere Kontexte in einer einzelnen Konfigurationsdatei einrichten und zwischen ihnen wechseln, indem Sie den &quot;aktuellen&quot;Kontext ändern.
+   Mehrere Kontexte können durch Speichern lokaler Konfigurationen in mehreren Ordnern verwaltet werden. Alternativ können Sie auch mehrere Kontexte in einer einzelnen Konfigurationsdatei einrichten und zwischen ihnen wechseln, indem Sie den „aktuellen“ Kontext ändern.
    </details>
 
 1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt Benutzenden interaktiv eine Liste der Programme in ihrer Organisation zur Verfügung und zeigt RDE-Umgebungen in diesem Programm an, aus denen gewählt werden kann.
@@ -1076,16 +1076,16 @@ Andernfalls können Sie auch bestätigen, dass Sie über diese Entwicklerrolle v
 
 Dadurch sollten alle Programme unter Ihrer konfigurierten Organisation aufgelistet und bestätigt werden, dass Ihnen die richtige Rolle zugewiesen ist.
 
-### Verwenden des veralteten Kontexts &quot;aio-cli-plugin-cloudmanager&quot; {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+### Verwenden des veralteten Kontexts „aio-cli-plugin-cloudmanager“ {#aio-rde-plugin-troubleshooting-deprecatedcontext}
 
-Aufgrund des Verlaufs des &#39;aio-cli-plugin-aem-rde&#39; wurde der Kontextname &#39;aio-cli-plugin-cloudmanager&#39; für einige Zeit verwendet. Das Rde-Plug-in verwendet jetzt die IMS-Methode zum Umgang mit Kontextdaten. Das bedeutet, dass es Optionen gibt, Kontextdaten global oder lokal zu speichern. Außerdem werden alle aio-Aufrufe auf einen konfigurierten Standard gesetzt, falls gewünscht. Der konfigurierte Standardkontext wird lokal gespeichert und ermöglicht es den Entwicklern, einzelne Kontexte und deren Informationen in einem Ordner zu verfolgen und zu verwenden. Weitere Informationen finden Sie in [dem Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
+Aufgrund des Verlaufs der „aio-cli-plugin-aem-rde“ wurde für einige Zeit der Kontextname „aio-cli-plugin-cloudmanager“ verwendet. Das rde-Plug-in verwendet jetzt die IMS-Methode zum Umgang mit Kontextdaten. Das bedeutet, dass Optionen für das globale oder lokale Speichern von Kontextdaten zur Verfügung stehen. Außerdem werden auf Wunsch alle aio-Aufrufe auf einen konfigurierten Standard gesetzt.  Der konfigurierte Standardkontext wird lokal gespeichert und ermöglicht es den Entwickelnden, einzelne Kontexte und deren Informationen in einem Ordner zu verfolgen und zu verwenden. Weitere Informationen finden Sie im obigen [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
 
-Entwickler, die beide Plug-ins verwenden, den aio-cli-plugin-cloudmanager und den aio-cli-plugin-aem-rde und alle Informationen im selben Kontext beibehalten möchten, haben jetzt folgende Optionen:
+Entwicklerinnen und Entwickler, die beide Plug-ins verwenden – aio-cli-plugin-cloudmanager und aio-cli-plugin-aem-rde – und alle Informationen im selben Kontext beibehalten möchten, haben jetzt folgende Optionen:
 
-#### Verwenden Sie weiterhin den Kontext &quot;aio-cli-plugin-cloudmanager&quot;.
+#### Weiterverwendung des Kontexts „aio-cli-plugin-cloudmanager“
 
-Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird eine Warnung zur Einstellung angezeigt. Diese Warnung kann mit dem Modus ```--quiet``` ignoriert werden. Neuere Versionen des RDE-Plug-ins bieten keinen Fallback, um den Kontext &quot;aio-cli-plugin-cloudmanager&quot;länger zu lesen. Um es weiterhin zu nutzen, konfigurieren Sie einfach den Standardkontext in &quot;aio-cli-plugin-cloudmanager&quot;, siehe [das Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
+Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird jedoch eine Warnung angezeigt, dass er veraltet ist. Diese Warnung kann mit dem Modus ```--quiet``` ignoriert werden. Neuere Versionen des RDE-Plug-ins bieten keine Ausweichmöglichkeit, um den Kontext „aio-cli-plugin-cloudmanager“ länger zu lesen. Um ihn weiterhin zu nutzen, konfigurieren Sie einfach den Standardkontext zu „aio-cli-plugin-cloudmanager“, siehe das obige [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
 
-#### Verwenden Sie einen anderen Kontextnamen auch für das Cloud Manager-Plug-in
+#### Verwenden eines anderen Kontextnamens auch für das Cloud Manager-Plug-in
 
-Die Cloud Manager-Plug-ins bieten einen Parameter zur Definition eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie dazu das RDE-Plug-in mit [dem Beispiel, um einen lokalen Kontext einzurichten](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, &quot;myContext&quot;wie ```--imsContextName=myContext``` bei jedem Aufruf zu verwenden.
+Die Cloud Manager-Plug-ins bieten einen Parameter zur Definition eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie hierzu das RDE-Plug-in anhand des [Beispiels zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, bei jedem Aufruf „myContext“ wie ```--imsContextName=myContext``` zu verwenden.
