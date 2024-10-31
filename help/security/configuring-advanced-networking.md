@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder ei
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5618'
 ht-degree: 99%
 
 ---
@@ -236,10 +236,6 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Po
 >
 >Nach der Erstellung können die Infrastrukturtypen von dedizierten Ausgangs-IP-Adressen nicht mehr bearbeitet werden. Die einzige Möglichkeit zum Ändern von Konfigurationswerten besteht darin, sie zu löschen und neu zu erstellen.
 
->[!INFO]
->
->Wenn eine dedizierte Ausgangs-IP konfiguriert ist, verwendet die Splunk-Weiterleitung weiterhin die dynamischen Ausgangsbereiche. Die Splunk-Weiterleitung kann nicht für die Verwendung einer dedizierten Ausgangs-IP konfiguriert werden.
-
 ### Konfiguration der Benutzeroberfläche {#configuring-dedicated-egress-provision-ui}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
@@ -411,7 +407,6 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 >Im Folgenden finden Sie Einschränkungen für eine VPN-Infrastruktur:
 >
 >* Unterstützung ist auf eine einzelne VPN-Verbindung beschränkt
->* Die Splunk-Weiterleitungsfunktion ist über eine VPN-Verbindung nicht möglich.
 >* DNS-Resolver müssen im Gateway-Adressraum aufgeführt sein, um private Host-Namen aufzulösen.
 
 ### Konfiguration der Benutzeroberfläche {#configuring-vpn-ui}

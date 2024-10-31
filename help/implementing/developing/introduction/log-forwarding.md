@@ -1,12 +1,12 @@
 ---
 title: Protokollweiterleitung für AEM as a Cloud Service
-description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Splunk und andere Protokollierungsanbieter in AEM as a Cloud Service
+description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protokollierungsanbieter in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1781'
 ht-degree: 2%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Diese Funktion wurde noch nicht veröffentlicht und einige Protokollierungsziele sind möglicherweise zum Zeitpunkt der Veröffentlichung nicht verfügbar. In der Zwischenzeit können Sie ein Support-Ticket öffnen, um Protokolle an **Splunk** weiterzuleiten, wie unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben.
+>Die Protokollweiterleitung ist jetzt auf Self-Service-Art konfiguriert, die sich von der alten Methode unterscheidet, bei der ein Adobe Support-Ticket gesendet werden musste. Informationen dazu, ob Ihre Protokollweiterleitung von Adobe eingerichtet wurde, finden Sie im Abschnitt [Migration](#legacy-migration) .
 
-Kunden, die über eine Lizenz für einen Protokollierungsanbieter verfügen oder ein Protokollierungsprodukt hosten, können AEM Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an die zugehörigen Protokollierungsziele weiterleiten lassen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
+Kunden mit einer -Lizenz bei einem Protokollierungsanbieter oder die ein Protokollierungsprodukt hosten, können AEM Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an das zugehörige Protokollierungsziel weitergeleitet werden. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
 
 * Azure Blob Storage
-* DataDog
+* Datadog
 * Elasticsearch oder OpenSearch
 * HTTPS
 * Splunk
 
-Die Protokollweiterleitung wird auf Self-Service-Weise konfiguriert, indem eine Konfiguration in Git deklariert und über die Cloud Manager-Konfigurationspipeline für Entwicklungs-, Staging- und Produktionsumgebungstypen in Produktionsprogrammen (ohne Sandbox) bereitgestellt wird.
+Die Protokollweiterleitung wird auf Self-Service-Weise konfiguriert, indem eine Konfiguration in Git deklariert und über die Cloud Manager-Konfigurationspipeline in Produktionsprogrammen (nicht Sandbox) für RDE-, Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt wird.
 
 Es gibt eine Option, mit der die AEM- und Apache/Dispatcher-Protokolle über AEM erweiterte Netzwerkinfrastruktur, wie z. B. dedizierte Egress-IP, weitergeleitet werden können.
 
@@ -139,6 +139,8 @@ Im Folgenden finden Sie einen Screenshot einer Beispiel-SAS-Token-Konfiguration:
 
 ![Azure Blob SAS-Token-Konfiguration](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+Wenn die Protokolle nach der ordnungsgemäßen Funktionsweise nicht mehr bereitgestellt werden, überprüfen Sie, ob das von Ihnen konfigurierte SAS-Token weiterhin gültig ist, da es möglicherweise abgelaufen ist.
+
 #### Azure Blob Storage-CDN-Protokolle {#azureblob-cdn}
 
 Jeder der global verteilten Protokollierungsserver erzeugt alle paar Sekunden eine neue Datei im Ordner &quot;`aemcdn`&quot;. Nach der Erstellung wird die Datei nicht mehr an angehängt. Das Format des Dateinamens ist YYY-MM-DDThh:mm:s.sss-uniqueid.log. Beispiel: 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
@@ -202,10 +204,12 @@ data:
 Zu beachten:
 
 * Erstellen Sie einen API-Schlüssel ohne Integration mit einem bestimmten Cloud-Anbieter.
-* Die Eigenschaft &quot;tags&quot;ist optional.
+* Die Eigenschaft &quot;tags&quot;ist optional
 * Für AEM Protokolle wird das Quell-Tag des Datadog auf einen der Werte `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` oder `aemhttpderror` festgelegt
 * Für CDN-Protokolle ist das Quell-Tag &quot;Datadog&quot;auf `aemcdn` gesetzt.
-* Das Tag des Datadog-Dienstes ist auf `adobeaemcloud` gesetzt, Sie können es jedoch im Abschnitt &quot;Tags&quot;überschreiben.
+* Das Tag des Datadog-Dienstes ist auf `adobeaemcloud` festgelegt, Sie können es jedoch im Abschnitt &quot;Tags&quot;überschreiben.
+* Wenn Ihre Erfassungspipeline Datadog-Tags verwendet, um den entsprechenden Index für die Weiterleitung von Protokollen zu ermitteln, überprüfen Sie, ob diese Tags in der YAML-Datei für die Protokollweiterleitung korrekt konfiguriert sind. Fehlende Tags können die erfolgreiche Protokollierung verhindern, wenn die Pipeline von ihnen abhängig ist.
+
 
 
 ### Elasticsearch und OpenSearch {#elastic}
@@ -307,6 +311,8 @@ Zu beachten:
 * Standardmäßig ist der Port 443. Optional kann sie mit einer Eigenschaft mit dem Namen `port` überschrieben werden.
 * Das Feld &quot;Quelltyp&quot;hat je nach Protokoll einen der folgenden Werte: *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* Wenn die erforderlichen IPs auf die Zulassungsliste gesetzt wurden und die Protokolle immer noch nicht bereitgestellt werden, überprüfen Sie, ob keine Firewall-Regeln vorhanden sind, die die Validierung von Splunk-Token erzwingen. Führt schnell einen ersten Validierungsschritt aus, bei dem ein ungültiges Splunk-Token absichtlich gesendet wird. Wenn Ihre Firewall so eingerichtet ist, dass Verbindungen mit ungültigen Splunk-Token beendet werden, schlägt der Validierungsprozess fehl, was verhindert, dass Fastly Protokolle an Ihre Splunk-Instanz sendet.
+
 
 >[!NOTE]
 >

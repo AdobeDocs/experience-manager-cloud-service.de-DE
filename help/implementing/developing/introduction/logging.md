@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
-workflow-type: ht
-source-wordcount: '2834'
-ht-degree: 100%
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+workflow-type: tm+mt
+source-wordcount: '2376'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist der Protokollierungs-Service eine wichtige Funktion, um die Code-Ausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere den Entwicklungsumgebungen von AEM as a Cloud Service, zu debuggen und zu verstehen.
 
-Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
+Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in drei logische Gruppen unterteilt werden:
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service bietet Zugriff auf CDN-Protokolle, die für Anwendungsfälle nützlich sind, einschließlich der Optimierung der Cache-Trefferquote. Das CDN-Protokollformat kann nicht angepasst werden und es gibt kein Konzept, um es auf verschiedene Modi wie Info, Warnung oder Fehler festzulegen.
 
-CDN-Protokolle werden für neue Splunk-Weiterleitungs-Support-Ticket-Anfragen an Splunk weitergeleitet. Kundinnen und Kunden, die die Splunk-Weiterleitung bereits aktiviert haben, können in Zukunft CDN-Protokolle hinzufügen.
-
 **Beispiel**
 
 ```
@@ -611,82 +609,18 @@ Je nach Traffic und der Menge der von Debug geschriebenen Protokolleinträge kan
 * Mit Bedacht und nur dann, wenn dies unbedingt erforderlich ist
 * Auf die entsprechenden Ebenen zurückgesetzt und so schnell wie möglich erneut bereitgestellt
 
-## Splunk-Protokolle {#splunk-logs}
+## Protokollweiterleitung {#log-forwarding}
 
-Kundinnen und Kunden mit Splunk-Konten können über das Kunden-Support-Ticket anfordern, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokoll-Downloads verfügbar sind. Kundinnen und Kunden können es jedoch hilfreich finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu nutzen.
+Während Protokolle aus Cloud Manager heruntergeladen werden können, ist es für einige Unternehmen nützlich, diese Protokolle an ein bevorzugtes Protokollierungsziel weiterzuleiten. AEM unterstützt Streaming-Protokolle an die folgenden Ziele:
 
-Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der kundenseitigen Netzwerk-E/A-Nutzung betrachtet.
+* Azure Blob Storage
+* Datadog
+* HTTPD
+* Elasticsearch (und OpenSearch)
+* Splunk
 
-CDN-Protokolle werden für neue Support-Ticketanfragen an Splunk weitergeleitet. Kundinnen und Kunden, die die Splunk-Weiterleitung bereits aktiviert haben, können in Zukunft CDN-Protokolle hinzufügen.
-
->[!NOTE]
->
->*Spezifische* Protokolle und *spezifische* Benutzerprotokolle können nicht an Splunk weitergeleitet werden.
->
->**Alle** Protokolle werden an Splunk weitergeleitet, wo die Kundin oder der Kunde je nach ihren bzw. seinen Anforderungen weitere Filterungen durchführen kann.
-
-### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
-
-In der Support-Anfrage sollten Kunden Folgendes angeben:
-
-* Splunk-HEC-Endpunktadresse. Dieser Endpunkt muss über ein gültiges SSL-Zertifikat verfügen und öffentlich zugänglich sein.
-* Splunk-Index
-* Splunk-Port
-* Splunk-HEC-Token. Weitere Informationen finden Sie unter [Beispiele für HTTP-Event Collector](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
-
-Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm und Umgebungstyp angegeben werden. Wenn ein Kunde beispielsweise Entwicklungs-, Staging- und Produktionsumgebungen wünscht, sollte er drei Informationssätze bereitstellen, wie unten angegeben.
+Weitere Informationen zum Konfigurieren dieser Funktion finden Sie im Artikel [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) .
 
 >[!NOTE]
 >
->Die Splunk-Weiterleitung für Sandbox-Programmumgebungen wird nicht unterstützt.
-
->[!NOTE]
->
->Die Splunk-Weiterleitungsfunktion ist über eine dedizierte Ausgangs-IP-Adresse nicht möglich.
-
-Sie sollten sicherstellen, dass die anfängliche Anfrage zusätzlich zur Staging-/Produktionsumgebung alle Entwicklungsumgebungen enthält, die aktiviert werden sollen. Splunk muss über ein SSL-Zertifikat verfügen und öffentlich zugänglich sein.
-
-Wenn für neue Entwicklungsumgebungen, die nach der ersten Anfrage erstellt wurden, eine Splunk-Weiterleitung vorgesehen ist, diese jedoch nicht aktiviert ist, sollte eine zusätzliche Anfrage gestellt werden.
-
-Beachten Sie außerdem, dass in anderen Entwicklungsumgebungen, die nicht in der Anfrage enthalten sind, oder sogar in Sandbox-Umgebungen die Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam nutzt, wenn Entwicklungsumgebungen angefordert wurden. Kunden können anhand des Felds `aem_env_id` zwischen diesen Umgebung unterscheiden.
-
-Unten finden Sie ein Beispiel für eine Support-Anfrage:
-
-Programm 123, Produktionsumgebung
-
-* Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
-* Splunk-Index: acme_123prod (die Kundin bzw. der Kunde kann die gewünschte Namenskonvention auswählen)
-* Splunk-Port: 443
-* Splunk-HEC-Token: ABC123
-
-Programm 123, Staging-Umgebung
-
-* Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
-* Splunk-Index: acme_123stage
-* Splunk-Port: 443
-* Splunk-HEC-Token: ABC123
-
-Programm 123, Entwicklungsumgebung
-
-* Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
-* Splunk-Index: acme_123dev
-* Splunk-Port: 443
-* Splunk-HEC-Token: ABC123
-
-Es kann ausreichen, für jede Umgebung denselben Splunk-Index zu verwenden. In diesem Fall kann das `aem_env_type`-Feld zur Differenzierung auf der Grundlage der Werte „dev“, „stage“ und „prod“ verwendet werden. Wenn mehrere Entwicklungsumgebungen vorhanden sind, kann auch das `aem_env_id`-Feld verwendet werden. Einige Organisationen wählen möglicherweise einen separaten Index für die Protokolle der Produktionsumgebung, wenn der zugehörige Index den Zugriff auf eine reduzierte Gruppe von Splunk-Benutzern beschränkt.
-
-Im Folgenden finden Sie einen Beispielprotokolleintrag:
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>Die Protokollweiterleitung für Sandbox-Programmumgebungen wird nicht unterstützt.
