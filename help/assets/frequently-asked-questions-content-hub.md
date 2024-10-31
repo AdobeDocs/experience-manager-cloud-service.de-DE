@@ -1,16 +1,16 @@
 ---
 title: Häufig gestellte Fragen zu Content Hub (FAQs)
-description: Hier erhalten Sie Antworten auf die am häufigsten gestellten Fragen (FAQs) zu Content Hub.
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zu Content Hub.
+source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
 workflow-type: tm+mt
 source-wordcount: '1100'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Häufig gestellte Fragen zu Content Hub {#content-hub-frequently-asked-questions}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Häufig gestellte Frage zu Content Hub](assets/content-hub-faqs.png)
