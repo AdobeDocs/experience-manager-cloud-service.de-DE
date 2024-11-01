@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 84%
+source-wordcount: '846'
+ht-degree: 98%
 
 ---
 
@@ -19,9 +19,9 @@ Erfahren Sie, wie Sie überprüfen können, ob Cloud Manager Ihren benutzerdefin
 
 ## Überprüfen des Status eines benutzerdefinierten Domain-Namens {#how-to}
 
-Bevor Sie den Status Ihres Domänennamens in Cloud Manager überprüfen, stellen Sie sicher, dass Sie bereits ein kundenverwaltetes SSL-Zertifikat (OV/EV) für Ihre benutzerdefinierte Domäne hinzugefügt haben, wie in [Hinzufügen eines kundenverwalteten SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert) beschrieben.
+Bevor Sie den Status Ihres Domain-Namens in Cloud Manager überprüfen, stellen Sie sicher, dass Sie bereits ein kundenseitig verwaltetes SSL-Zertifikat (OV/EV) für Ihre benutzerdefinierte Domain hinzugefügt haben, wie unter [Hinzufügen eines kundenseitig verwalteten SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert) beschrieben.
 
-**Überprüfen des Status eines benutzerdefinierten Domänennamens:**
+**So überprüfen Sie den Status eines benutzerdefinierten Domain-Namens:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -29,7 +29,7 @@ Bevor Sie den Status Ihres Domänennamens in Cloud Manager überprüfen, stellen
 
 1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Seitenmenü auf **Domäneneinstellungen** .
+1. Klicken Sie im linken Seitenmenü auf **Domain-Einstellungen**.
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
@@ -37,14 +37,14 @@ Das Statusdetail wird angezeigt. Ihre benutzerdefinierte Domain kann verwendet w
 
 >[!NOTE]
 >
->Wenn Sie ein *Adobe verwaltetes (DV) SSL-Zertifikat* mit der Domäne verwenden, überprüft Cloud Manager automatisch die Trigger, wenn Sie im Dialogfeld &quot;Domäne überprüfen&quot;auf **Überprüfen** klicken, wenn Sie [ einen benutzerdefinierten Domänennamen hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Bei Verwendung eines *von Adobe verwalteten SSL-Zertifikats (DV)* mit der Domain löst Cloud Manager automatisch eine Überprüfung aus, wenn Sie beim [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) im Dialogfeld „Domain verifizieren“ auf **Überprüfen** klicken.
 >
->Wenn Sie planen, ein vom **Kunden verwaltetes SSL-Zertifikat (OV/EV)** zu verwenden, wird Ihre Domäne *nach* überprüft, indem Sie [ das OV/EV-SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+>Wenn Sie ein **kundenseitig verwaltetes SSL-Zertifikat (OV/EV)** verwenden möchten, wird Ihre Domain überprüft, *nachdem* Sie [das OV/EV-SSL-Zertifikat hinzugefügt haben](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 
 ## Überprüfungsstatus {#statuses}
 
-Cloud Manager überprüft den Domänenbesitz über das vom Kunden verwaltete SSL-Zertifikat (OV/EV). Wenn dies abgeschlossen ist, wird eine der folgenden Statusmeldungen angezeigt:
+Cloud Manager überprüft die Eigentümerschaft der Domain über das kundenseitig verwaltete SSL-Zertifikat (OV/EV). Wenn dies abgeschlossen ist, wird eine der folgenden Statusmeldungen angezeigt:
 
 | Status | Beschreibung |
 | --- | --- |
@@ -80,7 +80,7 @@ Der Fehler wird wie folgt behoben:
 
 >[!TIP]
 >
->Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert normalerweise 1 bis 2 Werktage. Daher wird dringend empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren.
+>Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert normalerweise 1 bis 2 Werktage. Aus diesem Grund wird empfohlen, die Domänen lange vor ihrem Live-Datum zu installieren.
 
 >[!NOTE]
 >

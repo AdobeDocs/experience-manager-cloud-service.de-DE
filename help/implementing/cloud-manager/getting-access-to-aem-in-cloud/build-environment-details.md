@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 98%
+source-wordcount: '785'
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ Um ein reibungsloses Erlebnis mit der aktualisierten Version zu gewährleisten, 
 
 ### Verwenden einer bestimmten Java-Version {#using-java-support}
 
-Standardmäßig werden Projekte vom Cloud Manager-Build-Prozess mit dem Oracle 8 JDK erstellt. AEM Cloud Service-Kundinnen und -Kunden wird jedoch dringend empfohlen, die JDK-Version, die zum Ausführen von Maven verwendet wird, auf `11` einzustellen.
+Standardmäßig werden Projekte vom Cloud Manager-Build-Prozess mit dem Oracle 8 JDK erstellt. AEM Cloud Service-Kunden wird jedoch empfohlen, die JDK-Version, die zum Ausführen von Maven verwendet wird, auf `11` festzulegen.
 
 #### Einstellen der Maven-JDK-Version {#alternate-maven-jdk-version}
 
@@ -87,7 +87,7 @@ Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen 
 
 Der Build-Prozess kann von bestimmten Konfigurationsvariablen abhängen, die nicht im Git-Repository platziert werden können oder zwischen Pipeline-Ausführungen mit derselben Verzweigung variieren müssen.
 
-Weitere Informationen finden Sie unter [Pipeline-Variablen konfigurieren](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) .
+Für weitere Informationen siehe auch [Konfigurieren von Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
 
 ## Installieren zusätzlicher Systempakete {#installing-additional-system-packages}
 

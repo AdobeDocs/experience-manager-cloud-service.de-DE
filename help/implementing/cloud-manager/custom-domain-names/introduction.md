@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 98%
+source-wordcount: '704'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen 
 >
 >Cloud Manager ist keine Registrierungsstelle für Domain-Namen und bietet keine DNS-Services an.
 
-## Benutzerdefinierte Domänennamen und eigene CDNs {#byo-cdn}
+## Benutzerdefinierte Domain-Namen und eigene CDNs {#byo-cdn}
 
 AEM as a Cloud Service bietet einen integrierten CDN(Content Delivery Network)-Service, ermöglicht Ihnen aber auch, Ihr eigenes CDN (BYO, Bring Your Own) für AEM bereitzustellen. Benutzerdefinierte Domains können entweder im AEM verwalteten CDN oder einem von Ihnen verwalteten CDN installiert werden.
 
@@ -61,7 +61,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 
 >[!TIP]
 >
->In der Regel ist das Einrichten benutzerdefinierter Domain-Namen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Delegierung kommen, deren Behebung 1 bis 2 Werktage dauern kann. Daher wird dringend empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+>In der Regel ist das Einrichten benutzerdefinierter Domain-Namen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Delegierung kommen, deren Behebung 1 bis 2 Werktage dauern kann. Aus diesem Grund wird empfohlen, die Domänen lange vor ihrem Live-Datum zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## Einschränkungen {#limitations}
 
