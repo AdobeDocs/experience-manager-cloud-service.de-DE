@@ -3,9 +3,9 @@ title: Verwalten von Edge Delivery-Sites in Cloud Manager
 description: Erfahren Sie, wie Sie einer Edge Delivery-Site eine CDN-Konfiguration hinzufügen oder eine Edge Delivery-Site löschen.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 10%
 
 ---
@@ -56,7 +56,7 @@ Klicken Sie auf ![Edge Delivery-Site löschen](https://spectrum.adobe.com/static
 
      ![Hinzufügen der Edge Delivery-Site vom Tab &quot;Edge Delivery&quot;](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * Klicken Sie oben links auf der Seite auf ![Seitennavigation ein- oder ausblenden](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Menü links einzublenden. Klicken Sie unter der Überschrift **Dienste** auf ![Webseite für Edge Delivery-Sites](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+   * Klicken Sie oben links auf der Seite auf das Symbol ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) , um das Menü links einzublenden. Klicken Sie unter der Überschrift **Dienste** auf ![Webseite für Edge Delivery-Sites](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
 Klicken Sie in der Edge Delivery-Sitetabelle am Ende einer Zeile, deren Site Sie entfernen möchten, auf das Symbol &quot;![Mehr&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)&quot;. Klicken Sie auf ![Edge Delivery-Site löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Löschen** und dann erneut auf **Löschen** , um das Entfernen der Site zu bestätigen.
 
      ![Edge Delivery-Site über die Schaltfläche &quot;Edge Delivery Sites&quot;hinzufügen](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)

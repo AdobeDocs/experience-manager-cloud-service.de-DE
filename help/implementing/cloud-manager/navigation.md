@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1661'
 ht-degree: 40%
 
 ---
@@ -38,7 +38,7 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
 1. Registerkarten, um die aktuelle Ansicht der Programme zu wechseln:
    * Ansicht **Startseite** (Standard) mit Auswahl der Ansicht **Meine Programme**, die einen Überblick über alle Programme enthält
    * **Lizenz**, die auf das [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) zugreift.
-   * Beachten Sie, dass die Registerkarten standardmäßig geschlossen sind und über https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg in der [Cloud Manager-Kopfzeile](#cloud-manager-header) angezeigt werden können.
+   * Beachten Sie, dass die Registerkarten standardmäßig geschlossen sind und über das Symbol &quot;Menü anzeigen&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in der Kopfzeile [Cloud Manager](#cloud-manager-header) angezeigt werden können.![
 1. [Statistiken und Aktionsaufrufe](#statistics) für einen Überblick über Ihre aktuellen Aktivitäten
 1. [**Meine Programme**](#my-programs-section) mit einem Überblick über Ihre gesamten Programme
 1. [Schnelllinks](#quick-links-section) , um einfach auf zugehörige Ressourcen zuzugreifen.
@@ -195,7 +195,7 @@ Die Programmsymbolleiste ermöglicht weiterhin einen schnellen Wechsel zu andere
 
 ![Programmsymbolleiste](assets/cloud-manager-program-toolbar.png)
 
-Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich derzeit befinden, auch wenn Sie die Registerkarten mit https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg ausgeblendet haben.
+Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich derzeit befinden, auch wenn Sie die Registerkarten mit dem Symbol ![Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) ausgeblendet haben.
 
 ### Programmregisterkarten {#program-tabs}
 
