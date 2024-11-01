@@ -1,14 +1,14 @@
 ---
-title: Build-Umgebung
+title: Build-Umgebung von Cloud Manager
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: f5f7830ac6d7f5b65203b12bb1775e64379c7d14
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 95%
+source-wordcount: '776'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 * Apache Maven 3.9.4 ist installiert.
    * Adobe empfiehlt Benutzenden, [ihre Maven-Repositorys zu aktualisieren, um HTTPS anstelle von HTTP zu verwenden](#https-maven).
 * Die installierten Java-Versionen sind Oracle JDK 11.0.22 und Oracle JDK 8u401.
-* **WICHTIG**: Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_401` festgelegt, welches Oracle JDK 8u401 enthält. *_Diese Standardeinstellung sollte für AEM Cloud-Projekte überschrieben werden, damit JDK 11 verwendet wird_*. Weitere Einzelheiten finden Sie im Abschnitt [Einstellen der Maven JDK-Version](#alternate-maven-jdk-version).
+* **WICHTIG**: Standardmäßig ist die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_401` festgelegt, die Oracle JDK 8u401 enthält. *_Diese Standardeinstellung sollte für AEM Cloud-Projekte überschrieben werden, damit JDK 11 verwendet wird_*. Weitere Einzelheiten finden Sie im Abschnitt [Einstellen der Maven JDK-Version](#alternate-maven-jdk-version).
 * Es werden einige zusätzliche erforderliche Systempakete installiert.
    * `bzip2`
    * `unzip`
@@ -33,7 +33,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
    * `imagemagick`
    * `graphicsmagick`
 * Andere Pakete können zur Build-Zeit installiert werden, wie im Abschnitt [Installieren zusätzlicher Systempakete](#installing-additional-system-packages) beschrieben.
-* Jeder Build wird in einer unberührten Umgebung erstellt, der Build-Container speichert zwischen den Ausführungen keinen Status.
+* Jeder Build wird in einer sauberen Umgebung ausgeführt, wobei der Build-Container keinen Status zwischen den Ausführungen behält.
 * Maven wird immer mit den folgenden drei Befehlen ausgeführt.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -46,7 +46,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 ## HTTPS-Maven-Repositorys {#https-maven}
 
-Cloud Manager [Version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) hat eine rollierende Aktualisierung der Build-Umgebung gestartet (mit Version 2023.12.0 abgeschlossen), die eine Aktualisierung auf Maven 3.8.8 enthielt. Eine wesentliche Änderung, die in Maven 3.8.1 eingeführt wurde, war eine Sicherheitsverbesserung, die darauf abzielte, potenzielle Schwachstellen zu minimieren. Insbesondere deaktiviert Maven nun alle unsicheren `http://*`-Spiegelungen standardmäßig, wie in den [Maven-Versionshinweisen](http://maven.apache.org/docs/3.8.1/release-notes.html?lang=de#cve-2021-26291) beschrieben.
+Cloud Manager [Version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) hat eine rollierende Aktualisierung der Build-Umgebung gestartet (mit Version 2023.12.0 abgeschlossen), die eine Aktualisierung auf Maven 3.8.8 enthielt. Eine wesentliche Änderung, die in Maven 3.8.1 eingeführt wurde, war eine Sicherheitsverbesserung, die darauf abzielte, potenzielle Schwachstellen zu minimieren. Insbesondere deaktiviert Maven nun alle unsicheren `http://*`-Spiegelungen standardmäßig, wie in den [Maven-Versionshinweisen](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) beschrieben.
 
 Aufgrund dieser Sicherheitsverbesserung können bei einzelnen Benutzenden während des Build-Schritts Probleme auftreten, insbesondere beim Herunterladen von Artefakten aus Maven-Repositorys, die unsichere HTTP-Verbindungen verwenden.
 
@@ -54,21 +54,19 @@ Um ein reibungsloses Erlebnis mit der aktualisierten Version zu gewährleisten, 
 
 ### Verwenden einer bestimmten Java-Version {#using-java-support}
 
-Standardmäßig werden Projekte vom Cloud Manager-Build-Prozess mit dem Oracle 8 JDK erstellt. AEM Cloud Service-Kunden wird jedoch empfohlen, die JDK-Version, die zum Ausführen von Maven verwendet wird, auf `11` festzulegen.
+Der Cloud Manager-Build-Prozess verwendet das Oracle 8 JDK, um standardmäßig Projekte zu erstellen. AEM Cloud Service-Kunden sollten jedoch die JDK-Version der Maven-Ausführung auf `11` setzen.
 
-#### Einstellen der Maven-JDK-Version {#alternate-maven-jdk-version}
+#### Maven-JDK-Version festlegen {#alternate-maven-jdk-version}
 
-Es wird empfohlen, die JDK-Version für die gesamte Maven-Ausführung auf `11` in einer `.cloudmanager/java-version`-Datei einzustellen.
+Adobe empfiehlt, die JDK-Version für die gesamte Maven-Ausführung in einer `.cloudmanager/java-version` -Datei auf `11` festzulegen.
 
 Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Bearbeiten Sie die Datei so, dass sie nur den Text enthält, `11`. Cloud Manager akzeptiert zwar auch den Wert `8`, jedoch wird diese Version nicht mehr für AEM Cloud Service-Projekte unterstützt. Alle anderen Werte werden ignoriert. Wenn `11` angegeben ist, wird Oracle 11 verwendet und die Umgebungsvariable `JAVA_HOME` wird auf `/usr/lib/jvm/jdk-11.0.22` festgelegt.
 
-## Umgebungsvariablen {#environment-variables}
-
-### Standard-Umgebungsvariablen {#standard-environ-variables}
+## Umgebungsvariablen - Standard {#environment-variables}
 
 Je nach den Informationen über das Programm oder die Pipeline kann es notwendig sein, den Build-Prozess zu variieren.
 
-Wenn beispielsweise eine JavaScript-Minimierung während der Build-Erstellung mithilfe eines Tools wie gulp durchgeführt wird, soll beim Erstellen für eine Entwicklungsumgebung möglicherweise eine andere Minimierungsstufe verwendet werden als beim Erstellen für eine Staging- oder Produktionsumgebung.
+Wenn beispielsweise die JavaScript-Minimierung zur Build-Zeit mit einem Tool wie gulp erfolgt, können für verschiedene Umgebungen unterschiedliche Minimierungsstufen bevorzugt werden. Ein Entwicklungs-Build verwendet möglicherweise eine geringere Minimierungsstufe als Staging und Produktion.
 
 Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen bei jeder Ausführung dem Build-Container hinzu.
 
@@ -83,15 +81,15 @@ Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen 
 | `ARTIFACTS_VERSION` | Die von Cloud Manager generierte synthetische Version bei einer Staging- oder Produktions-Pipeline |
 | `CM_AEM_PRODUCT_VERSION` | Die Release-Version |
 
-### Pipeline-Variablen {#pipeline-variables}
+## Umgebungsvariablen - Pipeline {#pipeline-variables}
 
-Der Build-Prozess kann von bestimmten Konfigurationsvariablen abhängen, die nicht im Git-Repository platziert werden können oder zwischen Pipeline-Ausführungen mit derselben Verzweigung variieren müssen.
+Ihr Build-Prozess erfordert möglicherweise bestimmte Konfigurationsvariablen, die nicht im Git-Repository gespeichert werden sollen. Darüber hinaus müssen Sie diese Variablen unter Umständen zwischen Pipeline-Ausführungen mit demselben Zweig anpassen.
 
-Für weitere Informationen siehe auch [Konfigurieren von Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+Weitere Informationen finden Sie unter [Pipeline-Variablen konfigurieren](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) .
 
 ## Installieren zusätzlicher Systempakete {#installing-additional-system-packages}
 
-Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie vollumfänglich funktionieren. So ist es z. B. möglich, dass ein Build ein Python- oder Ruby-Skript aufruft, wofür der entsprechende Sprach-Interpreter installiert sein muss. Dies kann durch Aufrufen des [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in ihrer `pom.xml` erfolgen, wodurch APT aufgerufen wird. Diese Ausführung sollte im Allgemeinen in einem Cloud Manager-spezifischen Maven-Profil eingeschlossen sein. In diesem Beispiel wird Python installiert.
+Einige Builds benötigen zusätzliche Systempakete, um vollständig funktionieren zu können. So ist es z. B. möglich, dass ein Build ein Python- oder Ruby-Skript aufruft, wofür der entsprechende Sprach-Interpreter installiert sein muss. Dieser Installationsprozess kann verwaltet werden, indem Sie die [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in Ihrem `pom.xml` aufrufen, um APT aufzurufen. Diese Ausführung sollte im Allgemeinen in einem Cloud Manager-spezifischen Maven-Profil eingeschlossen sein. In diesem Beispiel wird Python installiert.
 
 ```xml
         <profile>
