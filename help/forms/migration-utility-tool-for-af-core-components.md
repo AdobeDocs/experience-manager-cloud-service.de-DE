@@ -8,22 +8,22 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '993'
 ht-degree: 7%
 
 ---
 
 # Einführung
 
-<span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+<span class="preview"> Die Funktion ist im Programm für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
-Mit dem Forms-Konvertierungsprogramm, das Teil der Suite &quot;[AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/)&quot;ist, können Sie mühelos adaptive Forms, die mit älteren Foundation-Komponenten erstellt wurde, in Formulare konvertieren, die die modernen, unterstützten Funktionen der Kernkomponenten nutzen.
+Mit dem Forms-Konvertierungsprogramm, das Teil der Suite &quot;[AEM Modernisierungstool](https://opensource.adobe.com/aem-modernize-tools/)&quot;ist, können Sie das adaptive Forms, das mit älteren Foundation-Komponenten erstellt wurde, einfach in Formulare konvertieren, die die modernen, unterstützten Funktionen der Kernkomponenten nutzen.
 
 ## Was ist AEM &quot;Tools modernisieren&quot;?
 
-[AEM Tools modernisieren](https://opensource.adobe.com/aem-modernize-Tools/) bezieht sich auf eine Reihe von Hilfsprogrammen oder Softwareanwendungen, die die Modernisierung oder Aktualisierung von Adobe Experience Manager-Projekten (AEM) erleichtern sollen. Diese Tools unterstützen in der Regel bei der Konvertierung älterer Komponenten oder Funktionen innerhalb von AEM in neuere, effizientere und unterstützte Alternativen. Das Forms-Konvertierungsprogramm wird unter AEM &quot;Modernisierungs-Tools&quot;installiert, um das adaptive Forms, das auf Foundation-Komponenten basiert, in auf Kernkomponenten basierende Formulare zu konvertieren.
+[AEM Tools modernisieren](https://opensource.adobe.com/aem-modernize-tools/) bezieht sich auf eine Reihe von Hilfsprogrammen oder Softwareanwendungen, die die Modernisierung oder Aktualisierung von Adobe Experience Manager-Projekten (AEM) erleichtern sollen. Diese Tools unterstützen in der Regel bei der Konvertierung älterer Komponenten oder Funktionen innerhalb von AEM in neuere, effizientere und unterstützte Alternativen. Das Forms-Konvertierungsprogramm wird unter AEM &quot;Modernisierungs-Tools&quot;installiert, um das adaptive Forms, das auf Foundation-Komponenten basiert, in auf Kernkomponenten basierende Formulare zu konvertieren.
 
 Das Forms Conversion Utility konvertiert adaptive Forms, die auf älteren Foundation-Komponenten basieren, in neuere, auf Kernkomponenten basierende Formulare. Dieser Konvertierungsprozess stellt sicher, dass die Formulare modernen Standards und Funktionen entsprechen, was die Leistung, Kompatibilität und Wartungsfreundlichkeit in der AEM potenziell verbessert.
 
@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte aus, um AEM Modernize Tools in Ihrer lokalen 
 
    `java -jar aem-author-p4502.jar`
 
-1. Klonen Sie das Repository [AEM Modernisierungs-Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) in Ihrem lokalen System.
+1. Klonen Sie das Repository [AEM Modernisierungs-Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) in Ihrem lokalen System.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -101,7 +101,7 @@ Um die AEM Modernisierungs-Tools für Ihre AEM Umgebung zu aktivieren und zu ver
 
 ![AEM Modernize Component Rule](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
-## Ausführen des Dienstprogramm zur Formularumwandlung, um auf Foundation-Komponenten basierende Formulare in auf Kernkomponenten basierende Formulare zu konvertieren
+## Führen Sie das Formularkonvertierungsdienstprogramm aus, um auf Foundation-Komponenten basierende Formulare in auf Kernkomponenten basierende Formulare zu konvertieren.
 
 1. Navigieren Sie zu **[!UICONTROL Tools > AEM &quot;Modernisierungs-Tools&quot;> Forms-Konversion]**.
 

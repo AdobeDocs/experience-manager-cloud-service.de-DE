@@ -3,17 +3,14 @@ title: Pipeline-freie URL-Umleitungen
 description: Erfahren Sie, wie Sie 301- oder 302-Umleitungen ohne Zugriff auf Git- oder Cloud Manager-Pipelines deklarieren.
 feature: Dispatcher
 role: Admin
-source-git-commit: 567c75f456f609dbc254753b439151d0f4100bc0
+source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
 # Pipeline-freie URL-Umleitungen {#pipeline-free-redirects}
-
->[!NOTE]
->Diese Funktion wurde noch nicht veröffentlicht.
 
 Aus verschiedenen Gründen schreiben Unternehmen URLs so um, dass eine 301- (oder 302-) Umleitung erfolgt. Das bedeutet, dass der Browser zu einer anderen Seite umgeleitet wird.
 
@@ -60,7 +57,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Anschließend müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die durch die Eigenschaft name referenzierte Zuordnungsdatei konfigurieren ( `my.map` im obigen Beispiel).
+Als Nächstes müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die durch die name-Eigenschaft referenzierte Zuordnungsdatei konfigurieren ( `my.map` im obigen Beispiel).
 
 Die Anweisung `RewriteMap` sollte angeben, dass die Daten im DBM-Dateiformat (Database Manager) unter Verwendung des Formats `sdbm` (einfaches DBM) gespeichert werden.
 
@@ -78,6 +75,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 Beachten Sie Folgendes:
 
-* Standardmäßig startet Apache beim Laden einer Rewrite-Map, ohne auf das Laden der vollständigen Map-Datei(en) zu warten. Daher kann es temporäre Inkonsistenzen geben, bis die vollständigen Landkarten geladen werden. Diese Einstellung kann so geändert werden, dass Apache darauf wartet, dass der gesamte Zuordnungsinhalt geladen wird, es jedoch länger dauert, bis Apache gestartet wird. Um dieses Verhalten so zu ändern, dass Apache warten wird, fügen Sie `wait:true` zur Datei `managed-rewrite-maps.yaml` hinzu.
-* Um die Häufigkeit zwischen den Ladevorgängen zu ändern, fügen Sie `ttl: <integer>` zur Datei `managed-rewrite-maps.yaml` hinzu. Beispiel `ttl: 120`.
+* Standardmäßig startet Apache beim Laden einer Rewrite-Map, ohne darauf zu warten, dass die vollständigen Map-Dateien geladen werden. Daher kann es temporäre Inkonsistenzen geben, bis die vollständigen Map(s) geladen werden. Diese Einstellung kann so geändert werden, dass Apache darauf wartet, dass der gesamte Zuordnungsinhalt geladen wird, aber der Start von Apache länger dauert. Um dieses Verhalten so zu ändern, dass Apache wartet, fügen Sie `wait:true` zur Datei `managed-rewrite-maps.yaml` hinzu.
+* Um die Häufigkeit zwischen den Ladevorgängen zu ändern, fügen Sie `ttl: <integer>` zur Datei `managed-rewrite-maps.yaml` hinzu. Beispiel: `ttl: 120`.
 * Apache hat eine Längenbeschränkung von 1024 für RewriteMap-Einzeleinträge.

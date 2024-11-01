@@ -1,13 +1,13 @@
 ---
-title: Verwenden von Konfigurations-Pipelines
+title: Verwenden von \s
 description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a Cloud Service verschiedene Konfigurationen wie Einstellungen für die Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen bereitzustellen.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
+source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 96%
+source-wordcount: '997'
+ht-degree: 78%
 
 ---
 
@@ -19,9 +19,9 @@ Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a
 
 Eine Cloud Manager-Konfigurations-Pipeline stellt Konfigurationsdateien (die im YAML-Format erstellt wurden) in einer Zielumgebung bereit. Auf diese Weise kann eine Reihe von Funktionen in AEM as a Cloud Service konfiguriert werden, darunter die Protokollweiterleitung, Bereinigungsaufgaben sowie verschiedene CDN-Funktionen.
 
-Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdateien können mit dem Befehlszeilen-Tool ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in Rapid Development Environments (RDEs) bereitgestellt werden.[
+Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdateien können mit dem Befehlszeilen-Tool ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in Rapid Development Environments (RDEs) bereitgestellt werden.[
 
-In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick über wichtige Informationen dazu, wie Konfigurations-Pipelines verwendet werden können und wie Konfigurationen für diese strukturiert sein sollten. Es werden allgemeine Konzepte beschrieben, die für alle oder eine Teilmenge der von Konfigurations-Pipelines unterstützten Funktionen freigegeben werden.
+In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick über wichtige Informationen dazu, wie Konfigurationspipelines verwendet werden können und wie Konfigurationen für sie strukturiert sein sollten. Es werden allgemeine Konzepte beschrieben, die für alle oder eine Teilmenge der von Konfigurations-Pipelines unterstützten Funktionen freigegeben werden.
 
 * [Unterstützte Konfigurationen](#configurations): Eine Liste von Konfigurationen, die mit Konfigurations-Pipelines bereitgestellt werden können.
 * [Erstellen und Verwalten von Konfigurations-Pipelines](#creating-and-managing): Erstellen einer Konfigurations-Pipeline.
@@ -37,22 +37,22 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 |---|---|---|
 | [Traffic-Filterregeln, einschließlich WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Deklarieren von Regeln zur Verhinderung von schädlichem Traffic |
 | [Anfrageumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form der Traffic-Anforderung |
-| [Reaktionsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form für die Antwort für eine gegebene Anfrage |
+| [Reaktionsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Regeln deklarieren , um die Form der Antwort für eine bestimmte Anforderung zu transformieren |
 | [Client-seitige Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Deklarieren von Client-seitigen Umleitungen im Stil 301/302 |
 | [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Deklarieren von Regeln, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen |
 | [CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Überschreiben der standardmäßigen Fehlerseite, wenn der AEM-Ursprung nicht erreicht werden kann, und Referenzieren des Speicherorts des selbst-gehosteten statischen Inhalts in der Konfigurationsdatei |
 | [CDN-Bereinigung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Deklarieren der API-Bereinigungsschlüssel für die Bereinigung des CDN |
 | [Kundenseitig verwaltetes CDN-HTTP-Token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Deklarieren des Werts des X-AEM-Edge-Schlüssels, der zum Aufrufen des Adobe CDN von einem Kunden-CDN erforderlich ist |
-| [Standardauthentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Deklarieren der Benutzernamen und Kennwörter für ein einfaches Authentifizierungsdialogfeld, das bestimmte URLs schützt [ (nur für Early-Adopter verfügbar)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [Standardauthentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Deklarieren Sie die Benutzernamen und Kennwörter für ein einfaches Authentifizierungsdialogfeld, das bestimmte URLs schützt. |
 | [Wartungsaufgabe zur Versionsbereinigung](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Repositorys durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Inhaltsversionen |
 | [Wartungsaufgabe zur Bereinigung des Auditprotokolls](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Auditprotokolls für eine verbesserte Leistung durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Protokollen |
-| [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Noch nicht verfügbar – Konfigurieren der Endpunkte und Anmeldedaten für die Weiterleitung von Protokollen an verschiedene Ziele (z. B. Splunk, Datadog, HTTPS) |
+| [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Konfigurieren Sie die Endpunkte und Anmeldedaten für die Weiterleitung von Protokollen an verschiedene Ziele, einschließlich Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk). |
 
 ## Erstellen und Verwalten von Konfigurations-Pipelines {#creating-and-managing}
 
 Informationen zum Erstellen und Konfigurieren von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
-Achten Sie beim Erstellen einer Konfigurations-Pipeline in Cloud Manager darauf, dass Sie beim Konfigurieren der Pipeline eine **zielgerichtete Bereitstellung** anstelle eines **Full-Stack-Codes** auswählen.
+Wählen Sie beim Erstellen einer Konfigurations-Pipeline in Cloud Manager beim Konfigurieren der Pipeline eine **Zielgerichtete Bereitstellung** anstelle von **Vollständiger Stack-Code** aus.
 
 Wie bereits erwähnt, wird die Konfiguration für RDEs mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) und nicht mit einer Pipeline bereitgestellt.
 
@@ -70,7 +70,7 @@ Jede Konfigurationsdatei beginnt mit Eigenschaften, die dem folgenden Beispielau
 
 | Eigenschaft | Beschreibung | Standard |
 |---|---|---|
-| `kind` | Eine Zeichenfolge, die die Art der Konfiguration bestimmt, z. B. Protokollweiterleitung, Traffic-Filterregeln oder Anforderungsumwandlungen | Erforderlich, kein Standard |
+| `kind` | Eine Zeichenfolge, die bestimmt, welche Art von Konfiguration, wie z. B. Protokollweiterleitung, Traffic-Filterregeln oder Anforderungstransformationen, | Erforderlich, kein Standard |
 | `version` | Eine Zeichenfolge, die die Schemaversion darstellt | Erforderlich, kein Standard |
 | `envTypes` | Dieses Zeichenfolgen-Array ist eine untergeordnete Eigenschaft des `metadata`-Knotens. Mögliche Werte sind „Entwicklung“, „Staging“, „Produktion“ oder eine beliebige Kombination, und sie bestimmen, für welche Umgebungstypen die Konfiguration verarbeitet wird. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, selbst wenn die Konfiguration dort bereitgestellt wird. | Alle Umgebungstypen (Entwicklung, Staging, Produktion) |
 
@@ -111,7 +111,7 @@ Die Dateistruktur ähnelt dem Folgenden:
   logForwarding.yaml
 ```
 
-Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen und für alle Konfigurationstypen (CDN, Protokollweiterleitung) ausreicht. In diesem Szenario würde die `envTypes`-Array-Eigenschaft alle Umgebungstypen enthalten.
+Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen und für alle Konfigurationstypen (CDN, Protokollweiterleitung usw.) ausreicht. In diesem Szenario würde die `envTypes`-Array-Eigenschaft alle Umgebungstypen enthalten.
 
 ```yaml
    kind: "cdn"
