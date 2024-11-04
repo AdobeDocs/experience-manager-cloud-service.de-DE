@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5159f2ff49b8e216087df4206c14a9ccd89f336
+source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 64%
+source-wordcount: '1480'
+ht-degree: 61%
 
 ---
 
@@ -143,6 +143,19 @@ Die folgenden generativen KI-Funktionen stehen zur Verfügung:
 * Es wurde ein Problem behoben, durch das das URL-Format „Kategorie“ in der Cloud-Instanz nicht wie erwartet funktionierte.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
+
+### Konfiguration zum Steuern der Formularübermittlung {#configuration-submissions}
+
+Um die Formularübermittlung für Coral- oder Foundation-Formulare an bestimmten Stellen zu steuern, hat AEM eine neue Konfiguration eingeführt: `com.adobe.granite.ui.components.FormRestrict`. Diese Konfiguration besteht aus zwei Feldern:
+
+1. **Zulässige Pfade hinzufügen**: Gibt die Pfade an, in denen Formularaktionen zulässig sind.
+1. **Verhalten beschränken**: Bestimmt das Verhalten für eingeschränkte Pfade (Pfade, die nicht in der Zulassungsliste enthalten sind). Sie können zwischen zwei Optionen wählen:
+   * **Popup** (Standard): Zeigt eine Popup-Benachrichtigung an.
+   * **Prevent**:Blockiert die Übermittlung des Formulars.
+
+>[!NOTE]
+>
+>Diese Konfiguration wird nicht für alle Coral- oder Foundation-Formulare unter `/apps`, `/libs`, `/mnt/overlay` und `/mnt/override` unterstützt.
 
 ### Self-Serve-Protokollweiterleitung mit erweiterter Netzwerkoption {#log-forwarding}
 
