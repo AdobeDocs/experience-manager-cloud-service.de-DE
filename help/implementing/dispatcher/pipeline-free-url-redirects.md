@@ -3,7 +3,7 @@ title: Pipeline-freie URL-Umleitungen
 description: Erfahren Sie, wie Sie 301- oder 302-Umleitungen ohne Zugriff auf Git- oder Cloud Manager-Pipelines deklarieren.
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -57,7 +57,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Als Nächstes müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die durch die name-Eigenschaft referenzierte Zuordnungsdatei konfigurieren ( `my.map` im obigen Beispiel).
+Anschließend müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die Zuordnungsdatei konfigurieren, auf die durch die name -Eigenschaft verwiesen wird (`my.map` im obigen Beispiel).
 
 Die Anweisung `RewriteMap` sollte angeben, dass die Daten im DBM-Dateiformat (Database Manager) unter Verwendung des Formats `sdbm` (einfaches DBM) gespeichert werden.
 
