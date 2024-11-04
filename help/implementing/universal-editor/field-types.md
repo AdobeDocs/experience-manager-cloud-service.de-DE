@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über die Felder und Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
-workflow-type: ht
-source-wordcount: '1185'
-ht-degree: 100%
+source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 92%
 
 ---
 
@@ -139,7 +139,11 @@ Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von
 
 #### AEM-Inhalt {#aem-content}
 
-Der AEM-Inhaltskomponententyp aktiviert eine AEM-Inhaltsauswahl, die zum Festlegen von Inhaltsverweisen verwendet werden kann.
+Der Typ AEM Inhaltskomponente ermöglicht eine AEM Inhaltsauswahl, die zum Festlegen von Inhaltsverweisen verwendet werden kann. Er bietet einen zusätzlichen Validierungstyp.
+
+| Validierungstyp | Werttyp | Beschreibung | Erforderlich |
+|---|---|---|---|
+| `rootPath` | `string` | Pfad, den die Inhaltsauswahl öffnet, damit der Benutzer AEM Inhalt auswählen kann, wobei die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird | Nein |
 
 >[!BEGINTABS]
 
@@ -298,11 +302,15 @@ Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Er bie
 
 #### Inhaltsfragment {#content-fragment}
 
-Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Er bietet eine zusätzliche Konfiguration.
+Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Es bietet eine zusätzliche Konfiguration und Validierung.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
 | `variationName` | `string` | Variablenname, um auf die ausgewählte Variante zu speichern.  Wenn nicht definiert, wird keine Variantenauswahl angezeigt. | Nein |
+
+| Validierungstyp | Werttyp | Beschreibung | Erforderlich |
+|---|---|---|---|
+| `rootPath` | `string` | Pfad, den die Inhaltsauswahl öffnet, damit der Benutzer das Inhaltsfragment auswählen kann, wodurch die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird | Nein |
 
 >[!NOTE]
 >
@@ -430,11 +438,15 @@ Er bietet außerdem einen zusätzlichen Validierungstyp.
 
 #### Experience Fragment {#experience-fragment}
 
-Mit der Experience Fragment-Auswahl können Sie ein [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Er bietet eine zusätzliche Konfiguration.
+Mit der Experience Fragment-Auswahl können Sie ein [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Es bietet eine zusätzliche Konfiguration und Validierung.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
 | `variationName` | `string` | Variablenname, um auf die ausgewählte Variante zu speichern.  Wenn nicht definiert, wird keine Variantenauswahl angezeigt. | Nein |
+
+| Validierungstyp | Werttyp | Beschreibung | Erforderlich |
+|---|---|---|---|
+| `rootPath` | `string` | Pfad, den die Inhaltsauswahl für den Benutzer öffnet, um das Experience Fragment auszuwählen, wodurch die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird | Nein |
 
 >[!BEGINTABS]
 

@@ -1,20 +1,20 @@
 ---
-title: Universal Editor 2024.08.13 - Versionshinweise
-description: Dies sind die Versionshinweise für die Version 2024.08.13 des universellen Editors.
+title: Universal Editor 2024.09.3 - Versionshinweise
+description: Dies sind die Versionshinweise für die Version 2024.09.3 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c66621eb336b8e6eb5ceb1056c089c190fcd1c34
+source-git-commit: b70acef8dc259fff3041617abe0a89f7eb73dfab
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
 
-# Universal Editor 2024.08.13 - Versionshinweise {#release-notes}
+# Universal Editor 2024.09.3 - Versionshinweise {#release-notes}
 
-Dies sind die Versionshinweise für die Version des universellen Editors vom 13. August 2024.
+Dies sind die Versionshinweise für die Version des universellen Editors vom 3. September 2024.
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 13.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Benutzerdefinierte Datentypen**: Ordnen Sie den Editor Ihren individuellen Datenanforderungen zu, indem Sie [benutzerdefinierte Felder im Eigenschaftenbereich erstellen.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
-   * Unabhängig davon, ob Sie eine benutzerdefinierte Produktauswahl für Commerce-Anwendungsfälle entwickeln oder eine Dropdown-Liste mit Werten aus Ihren Backends ausfüllen, bietet diese Funktion Ihnen die nötige Kontrolle über die Daten, die Autoren zum Erstellen von Inhalten verwenden.
-* **Container-übergreifendes Ziehen und Ablegen**: Nutzen Sie mehr Flexibilität bei der Layout-Komposition, indem Sie Komponenten per Drag &amp; Drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) im Bereich [Inhaltsstruktur ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) über verschiedene Container verschieben können.[
-* **Optimierte GitHub-Integration**: Das Caching für GitHub-Antworten wurde eingeführt, was den Abruf von Tags und die `universal-editor-cors-library` erheblich beschleunigt und so zu einem schnelleren und reibungsloseren Benutzererlebnis führt.
-* **Konfigurierbare Validierung des IMS-Tokens**: Um die Flexibilität bei der Tokenverwaltung zu erhöhen, ist die Validierung des IMS-Tokens jetzt optional.](/help/implementing/universal-editor/local-dev.md#setting-up-service)[
-   * Mit dieser Konfigurationsoption können Sie die Validierung nach Bedarf deaktivieren und so Ihre Cloud-Gateway-Setups vereinfachen.
-* **Splunk-Integration**: Die Splunk-Protokollierung wurde in den [Universal Editor-Dienst für die lokale Entwicklung integriert und ](/help/implementing/universal-editor/local-dev.md#setting-up-service) verbessert die Überwachung und Diagnose.
-   * Diese Integration stellt eine effiziente Protokollverfolgung, reibungslosere Vorgänge und eine schnellere Fehlerbehebung sicher.
+* **`rootPath`jetzt für die Inhaltsauswahl verfügbar**: Die Inhaltsauswahl kann jetzt mit einem `rootPath` versehen werden, um dem Benutzer bei Verwendung der Feldtypen [AEM Inhalt, ](/help/implementing/universal-editor/field-types.md#aem-content) [Inhaltsfragment, ](/help/implementing/universal-editor/field-types.md#content-fragment) und [Erlebnisfragment](/help/implementing/universal-editor/field-types.md#experience-fragment) eine gezielte Auswahl an Inhalten anzuzeigen.
+   * Die Inhaltsauswahl ist daher auf Inhalte im angegebenen Pfad und auf Unterverzeichnisse beschränkt.
+
+## Frühzeitige Annahme des Programms für 6.5-Unterstützung {#early-adoption}
+
+Der Universal Editor ist jetzt für Headless-Anwendungsfälle verfügbar, wenn AEM 6.5 im Rahmen eines Programms für frühe Anwender verwendet wird.
+
+Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an Ihren Adobe-Support-Mitarbeiter aus der E-Mail-Adresse, die mit Ihrer Adobe ID verknüpft ist.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* **Verbessertes Publishing-Feedback**: Wenn die Veröffentlichung aufgrund unzureichender Berechtigungen fehlschlägt, wurde das Feedback für den Benutzer während der Veröffentlichung verbessert, um eine klare Warnung anzuzeigen, anstatt einfach nur einen Fehler anzuzeigen.
-* **Verbesserte URL-Handhabung**: Es wurden Probleme behoben, die bei falscher URL-Kodierung/-Dekodierung auftraten und Veröffentlichungsfehler verursachten.
-* **Präzise Datenverarbeitung**: Ein Problem, bei dem Fließkommazahlen fälschlicherweise als Ganzzahlen gespeichert wurden, wurde behoben, um eine präzise Datenverarbeitung in Ihrem gesamten Inhalt sicherzustellen.
-* **Sicherheit und Stabilität**: Sicherheitslücken in den Docker-Bildern wurden behoben und die Testabdeckung für kritische Komponenten wie den Komponenten-Picker und Breadcrumbs wurde implementiert, was zu einem sichereren, stabileren und zuverlässigeren Editor-Erlebnis führte.
+* **Container-übergreifendes Ziehen und Ablegen**: [Beim Verschieben von Komponenten zwischen verschiedenen Containern per Drag &amp; Drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) wird beim Verschieben von Komponenten zwischen verschiedenen Containern jetzt sowohl in der Quelle als auch in der Zielgruppe [Komponentenfilter](/help/implementing/universal-editor/customizing.md#filtering-components) berücksichtigt.

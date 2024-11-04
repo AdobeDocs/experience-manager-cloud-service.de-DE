@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+workflow-type: tm+mt
+source-wordcount: '1317'
+ht-degree: 97%
 
 ---
 
@@ -160,6 +160,10 @@ Die ausgewählte Komponente wird gelöscht.
 1. Die gezogene Komponente wechselt in der Inhaltsstruktur zu Grau, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente los, um sie an ihrer neuen Position zu platzieren.
 
 Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet.
+
+>[!NOTE]
+>
+>Komponenten können nicht zwischen Behältern verschoben werden, wenn ein anderer [Komponentenfilter](/help/implementing/universal-editor/customizing.md#filtering-components) zwischen den Quell- und Zielbehältern festgelegt ist.
 
 ## Vorschau von Inhalten {#previewing-content}
 
