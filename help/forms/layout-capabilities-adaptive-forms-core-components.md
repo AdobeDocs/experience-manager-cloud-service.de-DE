@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, AEM für dynamische Formulare, AEM Cloud Service-Formularlayouts, Formularlayouttypen in AEM Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Adaptive Forms bietet erstklassige Komponenten für das effektive Layout und Design von Formularen. Das Layout steuert, wie Komponenten in einem Formular angezeigt werden. Adaptive Forms unterstützt verschiedene Layouts: Bedienfeld, Assistent, Akkordeon, Registerkarten oben/horizontal und Registerkarten auf linken/vertikalen Registerkarten.
 
-![Layouttypen](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Voraussetzung
 
