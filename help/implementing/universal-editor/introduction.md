@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (W
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1001'
+ht-degree: 94%
 
 ---
 
@@ -86,11 +86,13 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bes
 
 Beachten Sie bei der Erkundung des universellen Editors und später bei seiner Implementierung in Ihre eigenen Projekte folgende Einschränkungen:
 
-* Maximal sollten 25 AEM-Ressourcen (Inhaltsfragmente, Seiten, Experience Fragments, Assets usw.) als Instrumentierung auf einer einzelnen Seite referenziert werden.
+* Es sollten nicht mehr als 25 AEM Ressourcen (Inhaltsfragmente, Seiten, Experience Fragments, Assets usw.) als Instrumentierung auf einer einzelnen Seite dienen.
 * AEM as a Cloud Service ist das einzige unterstützte AEM-Back-End.
+   * [Die Unterstützung für AEM 6.5 ist im Rahmen eines Programms zur frühzeitigen Annahme verfügbar.](/help/release-notes/universal-editor/current.md#early-adoption)
 * Es ist AEM as a Cloud Service Version `2023.8.13099` oder höher erforderlich.
 * Inhaltsautorinnen und Inhaltsautoren müssen über eigene Experience Cloud-Konten verfügen.
-* Chrome und Edge werden als Browser unterstützt.
+* Im Rahmen AEM unterstützt der universelle Editor dieselben Desktop-Browser wie AEM.
+   * Mobilversionen dieser Browser werden nicht unterstützt.
 
 {{ue-ip-allow-lists}}
 
