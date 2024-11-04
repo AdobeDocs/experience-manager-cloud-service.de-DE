@@ -4,15 +4,15 @@ description: Der Regeleditor für adaptive Forms unterstützt verschiedene Opera
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 54%
+source-wordcount: '2106'
+ht-degree: 50%
 
 ---
 
-
-# Operatortypen und -ereignisse im Regeleditor eines adaptiven Formulars basierend auf Kernkomponenten
+# Operatortypen und -ereignisse im Regeleditor eines auf Kernkomponenten basierendes adaptiven Formulars
 
 In AEM Forms as a Cloud umfasst der Regeleditor verschiedene Operatortypen und -ereignisse, mit denen Sie komplexe Bedingungen und Aktionen einfach definieren und ausführen können.
 
@@ -309,6 +309,50 @@ Eine typische Regel vom Typ „Validieren“ ist wie folgt strukturiert:
 >Wenn der angegebene Wert nicht der Validierungsregel entspricht, können Sie eine Validierungsmeldung für die Benutzenden anzeigen lassen. Sie können die Meldung im Feld **[!UICONTROL Skriptüberprüfungsmeldung]** in den Komponenteneigenschaften in der Seitenleiste angeben.
 
 ![Script-validation](assets/script-validation.png)
+
+#### [!UICONTROL Zwischen den Bedienfeldern navigieren]
+
+Mit dem Regeltyp **[!UICONTROL Zwischen Bedienfeldern navigieren]** können Sie den Fokus auf verschiedene Bedienfelder in einem Formular verschieben. Sie können beispielsweise einen Ausdruck erstellen, um den Fokus auf den nächsten Bereich zu verschieben.
+
+Eine typische **Navigieren zwischen den Bedienfeldern** -Regel zum Verschieben des Fokus auf den nächsten Bereich ist wie folgt strukturiert:
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Auf ähnliche Weise können Sie die Regel **Navigieren zwischen den Bedienfeldern** schreiben, um den Fokus auf das vorherige Bedienfeld zu verschieben:
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie unter [Klicken Sie hier](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+
+#### [!UICONTROL Async-Funktionsaufruf]
+
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
+
+Mit dem Regeltyp **[!UICONTROL Async Function call]** können Sie asynchrone Funktionen ausführen. Dadurch können Sie einen Funktionsaufruf starten, der unabhängig vom Haupt-Ausführungs-Thread ausgeführt wird, sodass andere Prozesse fortgesetzt werden können, ohne auf den Abschluss der asynchronen Funktion zu warten.
+
+Eine typische Regel für einen asynchronen Funktionsaufruf zum Ausführen der asynchronen Funktion ist wie folgt strukturiert:
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+Weitere Informationen zur Verwendung des Aufrufs Async-Funktion im Visual Rule Editor finden Sie im Artikel [Verwenden asynchroner Funktionsaufrufe im Regeleditor](/help/forms/using-async-funct-in-rule-editor.md) .
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

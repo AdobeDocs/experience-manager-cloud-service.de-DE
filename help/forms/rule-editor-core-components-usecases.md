@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 58%
+source-wordcount: '1384'
+ht-degree: 47%
 
 ---
 
@@ -17,6 +17,26 @@ ht-degree: 58%
 Der Artikel enthält detaillierte Beispiele für einen Regeleditor für ein adaptives Formular, das auf Kernkomponenten basiert und Einblicke in die ordnungsgemäße Implementierung für verschiedene Szenarien bietet. Mit dem Regeleditor können Entwickler die Logik definieren und verwalten, die das Verhalten von Formularen steuert.
 Lassen Sie uns nun die verschiedenen Implementierungen für einen Regeleditor besprechen.
 
+
+## Navigieren zwischen Bedienfeldern mithilfe der Schaltfläche
+
+Mit dem Regeleditor können Sie Navigationsschaltflächen zu Ihren Bedienfeldlayouts hinzufügen, z. B. Horizontale Registerkarten, Vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen verbessern das Benutzererlebnis, indem sie die Übergänge zwischen verschiedenen Bedienfeldern in einem Formular vereinfachen und den Fokus auf das ausgewählte Bedienfeld verschieben.
+
+Stellen Sie sich vor, Sie interagieren mit dem Profileinstellungsabschnitt einer Anwendung, in dem die Navigation durch Schaltflächen und nicht durch Registerkarten erleichtert wird. Nach Eingabe der Profileinstellungen aus dem Haupt-Dashboard wird eine Reihe von Bedienfeldern angezeigt, die verschiedenen Aspekten ihres Profils gewidmet sind: **Persönliche Informationen**, **Kontosicherheit** und **Benachrichtigungseinstellungen**.
+
+Jedes Bedienfeld enthält relevante Felder und Optionen zum Aktualisieren bestimmter Informationen. Navigationsschaltflächen wie `Next` und `Back` sind hervorgehoben platziert und ermöglichen den Wechsel zwischen diesen Bedienfeldern. Klicken Sie auf `Next` , um den Benutzer zum Bereich **Kontosicherheit** zu leiten, und klicken Sie auf `Back` , um zum Bereich **Persönliche Informationen** zurückzukehren. Diese Navigationsmethode gewährleistet einen nahtlosen Übergang zwischen Abschnitten, ohne den Kontext zu verlieren, und sorgt so für ein reibungsloses und intuitives Benutzererlebnis. Die Verwendung von Navigationsschaltflächen vereinfacht die Verwaltung von Profileinstellungen, wodurch die Interaktion besser organisiert und benutzerfreundlicher wird.
+
+Sie können die Regel `Navigate among the panels` verwenden, um Navigationsregeln für Schaltflächen zu erstellen, die den Wechsel zwischen verschiedenen Bereichen ermöglichen.  Wählen Sie das Attribut `Shift focus to the next item` aus, um den Fokus auf das nächste Bedienfeld im Layout zu verschieben.
+
+![Nächste Bereichsregel](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+Wenn auf die Schaltfläche &quot;`Next`&quot; geklickt wird, wird der Fokus auf den nachfolgenden Bereich im Layout verschoben.
+
+![Navigieren im Bedienfeld mit der Schaltfläche &quot;Weiter&quot;](/help/forms/assets/navigate-in-panel.gif)
+
+Auf ähnliche Weise können Sie eine Regel für die Schaltfläche `Previous` erstellen, um den Fokus auf das vorherige Bedienfeld zu verschieben.
+
+![Vorherige Bereichsregel](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Optimieren komplexer Berechnungen in wiederholbaren Bereichen mit Funktionen
 

@@ -4,15 +4,15 @@ description: AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Ben
 keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine benutzerdefinierte Funktion, erstellen Sie eine benutzerdefinierte Funktion, verwenden Sie eine benutzerdefinierte Funktion im Regeleditor.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 11%
+source-wordcount: '1340'
+ht-degree: 13%
 
 ---
 
-
-# Erstellen einer benutzerdefinierten Funktion für ein adaptives Formular basierend auf Kernkomponenten
+# Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular
 
 Adaptive Forms auf der Basis von Kernkomponenten bieten dynamische Benutzererlebnisse, indem Inhalt und Verhalten basierend auf der Benutzereingabe angepasst werden. Benutzerdefinierte Funktionen ermöglichen es Entwicklern, die Funktionalität zu erweitern und sicherzustellen, dass Formulare bestimmte Anforderungen erfüllen können. Durch die Integration benutzerdefinierter Funktionen können Entwickler komplexe Logik implementieren, Prozesse automatisieren und einzigartige Interaktionen einführen, die spezifischen Geschäftsanforderungen oder Benutzererwartungen entsprechen. Dadurch wird sichergestellt, dass sich die Formulare nicht nur an unterschiedliche Bedingungen anpassen, sondern auch eine präzisere und effektivere Lösung für verschiedene Anwendungsfälle bieten.
 Dieser Artikel führt Sie durch die Schritte zum Erstellen benutzerdefinierter Funktionen für adaptive Forms mithilfe von Kernkomponenten.
@@ -226,7 +226,7 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 >[!NOTE]
 >
-> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktion](/help/forms/assets//customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe des [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager) in Ihrer AEM-Instanz.
+> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktion](/help/forms/assets//customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe des [Package Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager) in Ihrer AEM-Instanz.
 
 ## Funktionen von benutzerdefinierten Funktionen
 
@@ -238,49 +238,7 @@ Im Folgenden werden die Funktionen von benutzerdefinierten Funktionen vorgestell
 
 ### Asynchrone Unterstützung in benutzerdefinierten Funktionen {#support-of-async-functions}
 
-Asynchrone benutzerdefinierte Funktionen werden nicht in der Liste des Regeleditors angezeigt. Es ist jedoch möglich, asynchrone Funktionen innerhalb benutzerdefinierter Funktionen aufzurufen, die mit synchronen Funktionsausdrücken erstellt wurden.
-
-![Synchronisieren und asynchrone benutzerdefinierte Funktion](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> Der Vorteil des Aufrufs asynchroner Funktionen in benutzerdefinierten Funktionen besteht darin, dass asynchrone Funktionen die gleichzeitige Ausführung mehrerer Aufgaben ermöglichen, wobei das Ergebnis jeder Funktion in den benutzerdefinierten Funktionen verwendet wird.
-
-Im folgenden Code erfahren Sie, wie Sie asynchrone Funktionen mit benutzerdefinierten Funktionen aufrufen können:
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-Im obigen Beispiel ist die asyncFunction-Funktion ein `asynchronous function`. Es führt einen asynchronen Vorgang durch, indem eine `GET` -Anfrage an `https://petstore.swagger.io/v2/store/inventory` gesendet wird. Er wartet mit `await` auf die Antwort, analysiert den Antworttext mit dem `response.json()` als JSON und gibt dann die Daten zurück. Die Funktion `callAsyncFunction` ist eine synchrone benutzerdefinierte Funktion, die die Funktion `asyncFunction` aufruft und die Antwortdaten in der Konsole anzeigt. Obwohl die Funktion `callAsyncFunction` synchron ist, ruft sie die asynchrone asyncFunction-Funktion auf und verarbeitet ihr Ergebnis mit `then` - und `catch` -Anweisungen.
-
-Um seine Funktionsweise zu sehen, fügen wir eine Schaltfläche hinzu und erstellen eine Regel für die Schaltfläche, die die asynchrone Funktion bei einem Klick auf eine Schaltfläche aufruft.
-
-![Erstellen einer Regel für die asynchrone Funktion](/help/forms/assets/rule-for-async-funct.png)
-
-In der Abbildung unten finden Sie das Konsolenfenster, um zu zeigen, dass beim Klicken auf die Schaltfläche `Fetch` die benutzerdefinierte Funktion `callAsyncFunction` aufgerufen wird, die wiederum eine asynchrone Funktion `asyncFunction` aufruft. Inspect Sie das Konsolenfenster, um die Antwort auf die Schaltfläche anzuzeigen. Klicken Sie auf:
-
-![Konsolenfenster](/help/forms/assets/async-custom-funct-console.png)
-
+Sie können asynchrone Funktionen im Regeleditor mit benutzerdefinierten Funktionen implementieren. Eine Anleitung dazu finden Sie im Artikel [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md).
 
 ### Felder und globale Objekte unterstützen benutzerdefinierte Funktionen {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem F
 >[!NOTE]
 >
 > Der `param {scope} globals` muss der letzte Parameter sein und wird nicht im Regeleditor eines adaptiven Formulars angezeigt.
+
+Weitere Informationen zu Scope-Objekten finden Sie im Artikel [Scope-Objekte in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md) .
 
 ### Caching-Unterstützung in benutzerdefinierten Funktionen
 

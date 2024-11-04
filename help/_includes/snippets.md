@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 98%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # Snippets {#snippets}
@@ -111,6 +111,12 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    <td>Die Option <b>Wert einstellen für</b> unterstützt nicht die Eigenschaft <b>Dienstausgabe</b> für das Aufrufen von APIs im Regeleditor.
    </td>
    </tr>
+   <tr>
+   <td>Zwischen Bedienfeldern navigieren</td>
+   <td> Die Komponenten <b>Nächste Schaltfläche</b> und <b>Vorherige Schaltfläche</b> werden bereitgestellt, um zwischen den Bedienfeldern zu navigieren. Eine im Container platzierte Navigationsschaltfläche arbeitet mit den untergeordneten Elementen</td>
+   <td> Die Regel <b>Navigation im Bedienfeld</b> ist im Regeleditor verfügbar, sodass Benutzer Regeln für die Navigation zwischen den untergeordneten Elementen der Bedienfelder erstellen können.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Unterschiede in verschiedenen Editionen des Regeleditors](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
 * [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
+* [Scope-Objekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
 * [Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -170,7 +177,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >
 >Der universelle Editor ist nicht mit [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) kompatibel.
 >
->Wenn Sie den universellen Editor verwenden möchten, dürfen IP-Zulassungslisten nicht aktiviert sein.
+>Wenn Sie den universellen Editor verwenden wollen, dürfen keine IP-Zulassungslisten aktiviert sein.
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 

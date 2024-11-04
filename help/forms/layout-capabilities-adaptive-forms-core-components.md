@@ -4,13 +4,13 @@ description: Layout und Darstellung adaptiver Formulare auf verschiedenen Gerät
 feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, AEM für dynamische Formulare, AEM Cloud Service-Formularlayouts, Formularlayouttypen in AEM Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
 
 ---
-
 
 # Layout-Funktionen von Adaptive Forms basierend auf Kernkomponenten
 
@@ -261,7 +261,6 @@ Auf ähnliche Weise können Sie auch Titel für die anderen beiden Bedienfelder 
    ![Komponenten des dritten Bedienfelds](/help/forms/assets/panel-3-component.png)
 
 1. Klicken Sie oben rechts in Ihrer Authoring-Umgebung auf **[!UICONTROL Vorschau]** .
-
    ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
 Sie können auch [ die Komponenten per Drag &amp; Drop verschieben](#extra-bytes), um die Formularkomponenten zu jedem Bedienfeld hinzuzufügen.

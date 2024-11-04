@@ -7,15 +7,15 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Einführung in benutzerdefinierte Funktionen für adaptive Forms basierend auf Kernkomponenten
+# Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -72,7 +72,7 @@ Der Parameter ist eine Liste von Argumenten, die von benutzerdefinierten Funktio
    * date[]: Stellt ein Array von Datumswerten dar.
    * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
    * object: Stellt ein an eine benutzerdefinierte Funktion übergebenes Formularobjekt dar, anstatt dessen Wert direkt weiterzugeben.
-   * scope: Stellt das global -Objekt dar, das schreibgeschützte Variablen wie Formularinstanzen, Zielfeldinstanzen und Methoden zum Ausführen von Formularänderungen innerhalb benutzerdefinierter Funktionen enthält. Sie wird als letzter Parameter in JavaScript-Anmerkungen deklariert und ist im Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter scope greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis Trigger. Weitere Informationen zum Globals-Objekt und dessen Verwendung finden Sie unter [Klicken Sie hier](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions).
+   * scope: Stellt das global -Objekt dar, das schreibgeschützte Variablen wie Formularinstanzen, Zielfeldinstanzen und Methoden zum Ausführen von Formularänderungen innerhalb benutzerdefinierter Funktionen enthält. Sie wird als letzter Parameter in JavaScript-Anmerkungen deklariert und ist im Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter scope greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis Trigger. Weitere Informationen zum Globals-Objekt und dessen Verwendung finden Sie unter [Klicken Sie hier](/help/forms/custom-function-core-component-scope-function.md).
 
 Beim Parametertyp wird nicht zwischen Groß- und Kleinschreibung unterschieden und Leerzeichen sind im Parameternamen nicht zulässig.
 

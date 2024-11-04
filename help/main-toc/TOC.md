@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 99%
+source-wordcount: '5741'
+ht-degree: 98%
 
 ---
 
@@ -746,9 +746,11 @@ ht-degree: 99%
                + [Unterschied zwischen dem Foundation-Regeleditor und dem Kernkomponenten-Regeleditor](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Operator- und Ereignistypen, die im Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular verfügbar sind](/help/forms/rule-editor-core-components-events-operators.md)
                + [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
+               + [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
             + Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren{#create-and-use-custom-function-core-component}
                + [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
                + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
+               + [Scope-Objekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
                + [Beispiele für benutzerdefinierte Funktionen für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-components-use-cases.md)
             + Einführung in das Formularportal und seine Komponenten{#introduction-to-forms-portal}
                + [Einführung in Formularportal-Komponenten](/help/forms/configure-forms-portal.md)

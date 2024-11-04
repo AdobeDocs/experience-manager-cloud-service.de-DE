@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
-workflow-type: ht
-source-wordcount: '2068'
-ht-degree: 100%
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+workflow-type: tm+mt
+source-wordcount: '2124'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ Klonen Sie das Repository der Kernkomponenten für adaptive Formulare: Sie benö
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   Mit diesem Befehl wird das Repository heruntergeladen und ein Ordner mit dem Namen `aem-core-forms-components` auf Ihrem Computer erstellt. In diesem Handbuch wird dieser Ordner als `[Adaptive Forms Core Components repository]` bezeichnet
+   Mit diesem Befehl wird das Repository heruntergeladen und ein Ordner mit dem Namen `aem-core-forms-components` auf Ihrem Computer erstellt. In diesem Handbuch wird dieser Ordner als `[Adaptive Forms Core Components repository]` bezeichnet.
 
 
 ## Hinzufügen eines Gebietsschemas {#add-localization-support-for-non-supported-locales}
@@ -228,6 +228,28 @@ Lassen Sie uns nun die `clientlib-it-custom-locale`-Bibliothek in Ihr AEM as a C
 
       ![Einfügen von clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. Pfad `aemLangUrl` in `languageinit.js` aktualisieren
+
+   1. Wechseln Sie in das folgende Verzeichnis in Ihrem [AEMaaCS-Projektverzeichnis]:
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. Öffnen Sie die Datei &quot;`languageinit.js`&quot; in Ihrem Editor.
+   1. Suchen Sie die folgende Zeile in der Datei &quot;`languageinit.js`&quot;:
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. Ersetzen Sie `forms-core-components-it` in der obigen Zeile durch Ihren `<app-id>` (tatsächliche ID Ihrer Anwendung).
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![language-init-file](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> Wenn Sie `forms-core-components-it` nicht durch Ihren Projektnamen oder `<app-id>` ersetzen, kann die Datumsauswahlkomponente nicht übersetzt werden.
 
 ### Erstellen Sie eine Datei für Ihr neues Gebietsschema:
 

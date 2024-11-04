@@ -4,13 +4,13 @@ description: In diesem Artikel werden verschiedene Anwendungsfälle für eine be
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
-
 
 # Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen
 
@@ -264,7 +264,7 @@ Sie können auch das Konsolenfenster überprüfen, um die an den Server gesendet
 
 Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` -Formulars Feld- und globale Objekte verwenden, um Übermittlungs-Handler zu überschreiben.
 
-Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Meldungen für Formularübermittlungen in einem modalen Feld anzuzeigen:
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Meldungen zur Formularübermittlung in einem modalen Feld anzuzeigen:
 
 ```javascript
 /**
