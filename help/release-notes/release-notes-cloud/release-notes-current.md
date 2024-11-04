@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 61%
+source-wordcount: '1514'
+ht-degree: 58%
 
 ---
 
@@ -83,19 +83,19 @@ Berichte können jetzt automatisch in der Assets-Ansicht zu einem wiederkehrende
 
 **Digital Rights Management für lizenzierte Assets**
 
-Unternehmen können jetzt die Lizenzkonformität erhöhen und das Risiko der Freigabe von Assets mit Lizenzbedingungen minimieren, indem sie DRM für lizenzierte Assets für Benutzer von Content Hub nutzen. Benutzer müssen die Lizenzbedingungen überprüfen und akzeptieren, bevor sie lizenzierte Assets herunterladen können.
+Unternehmen können jetzt die Lizenzkonformität erhöhen und das Risiko der Freigabe von Assets mit Lizenzbedingungen minimieren, indem sie DRM für lizenzierte Assets für Benutzer von Content Hub nutzen. Benutzer müssen die Lizenzbedingungen überprüfen und akzeptieren, bevor sie lizenzierte Assets herunterladen können. Weitere Informationen finden Sie unter [Verwalten lizenzierter Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **Konfiguration der Asset-Karten-Metadaten**
 
-Mit Content Hub können Sie jetzt die wichtigen Metadatenfelder konfigurieren, die Sie auf der Asset-Karte anzeigen müssen, und zwar bis zu sechs Felder.
+Mit Content Hub können Sie jetzt die wichtigen Metadatenfelder konfigurieren, die Sie auf der Asset-Karte anzeigen müssen, und zwar bis zu sechs Felder. Weitere Informationen finden Sie im Abschnitt &quot;Asset-Karte&quot;unter [Content Hub konfigurieren](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![Schlüssel-Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-key-metadata.png)
 
 **Konfigurieren der Sichtbarkeit und des Downloads abgelaufener Assets**
 
-Admins können jetzt steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch festlegen, ob Benutzende diese herunterladen können.
+Admins können jetzt steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch definieren, ob Benutzer sie herunterladen können. Weitere Informationen finden Sie im Abschnitt Abgelaufene Assets unter [Content Hub konfigurieren](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) .
 
 ![Abgelaufene Assets in Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
