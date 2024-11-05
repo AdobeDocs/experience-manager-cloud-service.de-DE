@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
+source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 95%
+source-wordcount: '3187'
+ht-degree: 98%
 
 ---
 
@@ -52,6 +52,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
    * **Bereinigen**: Wählen Sie den `Wipe`-Wert aus
       * Die Option **Bereinigen** legt den Startpunkt des Ziels für die Aufnahme fest. Wenn **Bereinigen** aktiviert ist, wird das Ziel einschließlich des gesamten Inhalts auf die in Cloud Manager angegebene AEM-Version zurückgesetzt. Wenn diese Option nicht aktiviert ist, behält das Ziel seinen aktuellen Inhalt als Ausgangspunkt bei.
       * Diese Option wirkt sich **NICHT** darauf aus, wie die Aufnahme von Inhalten durchgeführt wird. Die Aufnahme verwendet immer eine Inhaltsersetzungsstrategie und _keine_ Inhaltszusammenführungsstrategie, sodass in beiden Fällen, **Bereinigen** und **Nicht bereinigen**, bei der Aufnahme eines Migrationssatzes die Inhalte im selben Pfad zu dem Ziel überschrieben werden. Wenn der Migrationssatz beispielsweise `/content/page1` enthält und im Ziel bereits `/content/page1/product1` enthalten ist, entfernt die Aufnahme den gesamten `page1`-Pfad und zugehörige Unterseiten, einschließlich `product1`, und ersetzt sie durch den Inhalt im Migrationssatz. Dies bedeutet, dass bei der Durchführung einer Aufnahme mit der Einstellung **Nicht bereinigen** in ein Ziel, das beizubehaltende Inhalte enthält, eine sorgfältige Planung erfolgen muss.
+      * Nicht-Wischen-Aufnahmen sind speziell für den Anwendungsfall der Auffüllaufnahme entwickelt. Diese Aufnahmen sollen eine inkrementelle Menge neuer Inhalte aufweisen, die sich seit der letzten Aufnahme in einem vorhandenen Migrationssatz geändert hat. Die Durchführung von Nicht-Wischen-Aufnahmen außerhalb dieses Anwendungsfalls könnte zu sehr langen Erfassungszeiten führen.
 
    >[!IMPORTANT]
    > Wenn die Einstellung **Bereinigen** für die Aufnahme aktiviert ist, wird das gesamte bestehende Repository zurückgesetzt, einschließlich der Benutzerberechtigungen für die Ziel-Cloud-Service-Instanz. Diese Rücksetzung gilt auch für Admin-Benutzende, die zur Gruppe **Admins** hinzugefügt wurden, und eine solche Person muss der Admin-Gruppe erneut hinzugefügt werden, um eine Aufnahme zu starten.
@@ -146,13 +147,13 @@ Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lag
 > Das Feld „Migrations-Token“ wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann die Benutzerin oder der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn das Token bereitgestellt, aber die Meldung weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
 
 * AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrations-Service gelegentlich aus einer Reihe normaler Gründe neu starten. Wenn der Service gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
-* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrations-Service ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
+* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrations-Service ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
 * Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrations-Service zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während des Aufnahme- und Indizierungsprozesses zu deaktivieren.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme oder Indizierung weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
 
 ### AEM-Versionsaktualisierungen und Aufnahmen {#aem-version-updates-and-ingestions}
 
-[AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service-Version auf dem neuesten Stand zu halten. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
+[AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) werden automatisch auf Umgebungen angewendet, um sie mit der neuesten AEM as a Cloud Service-Version auf dem neuesten Stand zu halten. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung.
 
 Wenn die „AEM-Versionsaktualisierungen“ im Zielprogramm integriert sind, versucht der Aufnahmevorgang, die Warteschlange zu deaktivieren, bevor er gestartet wird. Wenn die Aufnahme abgeschlossen ist, wird der Status des Versionsaktualisierers so zurückgegeben, wie er vor dem Start der Aufnahmen war.
 
@@ -229,19 +230,19 @@ Um diese Einschränkung möglicherweise zu vermeiden, führen Sie den [Best Prac
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Version 2.1.50 oder höher meldet große Knoten, die Unicode-Zeichen enthalten, die die maximale Größe überschreiten. Stellen Sie sicher, dass Sie die neueste Version ausführen. BPA-Versionen vor 2.1.50 identifizieren und melden diese großen Knoten nicht. Diese müssen separat mit dem oben erwähnten, erforderlichen Oak-Tool ermittelt werden.
 
-### Aufnahmefehler aufgrund unerwarteter zeitweiliger Fehler {#ingestion-failure-due-to-unexpected-intermittent-errors}
+### Aufnahmefehler aufgrund unerwarteter zeitweise auftretender Fehler {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
->title="Unerwartete zeitweilige Fehler"
->abstract="Manchmal können unerwartete zeitweilige Fehler in nachgelagerten Diensten auftreten, und leider besteht der einzige Behelf darin, die Aufnahme einfach erneut zu versuchen."
+>title="Unerwartete zeitweise auftretende Fehler"
+>abstract="Manchmal kann es unerwartet zeitweise auftretende, nachgelagerte Dienstfehler geben, und leider besteht die einzige Abhilfe darin, die Aufnahme einfach erneut zu versuchen."
 
-Manchmal können sich unerwartete zeitweise auftretende Probleme an fehlgeschlagene Erfassungsvorgänge weiterleiten, bei denen der einzige Rückgriff leider darin besteht, die Aufnahme erneut auszuführen. Untersuchen Sie das Aufnahmeprotokoll, um die Ursache des Fehlers zu ermitteln und festzustellen, ob es mit einem der unten aufgeführten Fehler übereinstimmt, wo ein erneuter Versuch unternommen werden sollte.
+Manchmal kann es unerwartet zeitweise auftretende Probleme aufgrund fehlgeschlagener Aufnahmen geben. In diesem Fall besteht die einzige Abhilfe leider darin, die Aufnahme erneut zu versuchen. Prüfen Sie das Aufnahmeprotokoll, um die Ursache des Fehlers zu ermitteln und festzustellen, ob es sich um einen der unten aufgeführten Fehler handelt, bei denen ein erneuter Versuch durchgeführt werden sollte.
 
-## MongoDB-Probleme {#mongo-db-issues}
+## Probleme mit MongoDB {#mongo-db-issues}
 
-* `Atlas prescale timeout error` - In der Aufnahmephase wird versucht, die Ziel-Cloud-Datenbank auf eine geeignete Größe vorzustufen, die der Größe des aufgenommenen Migrationssatzinhalts entspricht. In seltenen Fällen wird dieser Vorgang nicht innerhalb des erwarteten Zeitrahmens abgeschlossen.
-* `Exhausted mongo restore retries` - Der Versuch, einen lokalen Ablagespeicher des erfassten Migrationssatzinhalts in die Cloud-Datenbank wiederherzustellen, ist erschöpft. Dies weist auf ein allgemeines Gesundheits-/Netzwerkproblem mit MongoDB hin, das sich häufig nach einigen Minuten selbst behebt.
+* `Atlas prescale timeout error` – In der Aufnahmephase wird versucht, die Ziel-Cloud-Datenbank vorab auf eine geeignete Größe zu skalieren, die der Größe des aufzunehmenden Migrationssatzinhalts entspricht. In seltenen Fällen wird dieser Vorgang nicht innerhalb des erwarteten Zeitraums abgeschlossen.
+* `Exhausted mongo restore retries` – Die Versuche, eine lokale Sicherungskopie des aufgenommenen Migrationssatzinhalts in die Cloud-Datenbank wiederherzustellen, sind ausgeschöpft. Dies weist auf ein allgemeines Konsistenz-/Netzwerkproblem mit MongoDB hin, das sich häufig nach einigen Minuten selbst behebt.
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 
