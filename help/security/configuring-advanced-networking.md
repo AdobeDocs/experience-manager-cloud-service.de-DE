@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder ei
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
 workflow-type: tm+mt
-source-wordcount: '5618'
-ht-degree: 100%
+source-wordcount: '5524'
+ht-degree: 99%
 
 ---
 
@@ -398,7 +398,7 @@ Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte I
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
-Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Dies kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern, wie z. B. einem CRM-Anbieter, der VPN unterstützt, oder eine Verbindung von einem Unternehmensnetzwerk mit einer Autoren-, Vorschau- oder Veröffentlichungsinstanz von AEM as a Cloud Service.
+Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Dies kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern, z. B. einem CRM-Anbieter, der VPN unterstützt.
 
 Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die Informationen in der Spalte **RouteBased-Konfigurationsanweisungen** in [dieser Geräteliste.](https://learn.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Konfigurieren Sie das Gerät wie in der Tabelle beschrieben.
 
@@ -558,7 +558,9 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben.
 
 ### Nützliche Domains für die Konfiguration {#vpn-useful-domains-for-configuration}
 
-Die folgende Tabelle zeigt eine Reihe von für Konfiguration und Entwicklung nützlichen Domains und IPs.
+Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains und zugehörigen IPs, die für die Konfiguration und Entwicklung nützlich sind. Die Tabelle weiter unten im Diagramm beschreibt diese Domains und IPs.
+
+![VPN-Domain-Konfiguration](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -581,21 +583,6 @@ Die folgende Tabelle zeigt eine Reihe von für Konfiguration und Entwicklung nü
   </tr>
 </tbody>
 </table>
-
-### VPN auf eingehende Verbindungen beschränken {#restrict-vpn-to-ingress-connections}
-
-Wenn Sie nur den VPN-Zugriff auf AEM zulassen möchten, können Umgebungszulassungslisten in Cloud Manager so konfiguriert werden, dass nur die durch `p{PROGRAM_ID}.external.adobeaemcloud.com` definierte IP mit der Umgebung kommunizieren darf. Dies kann auf dieselbe Weise wie bei jeder anderen IP-basierten Zulassungsliste in Cloud Manager erfolgen.
-
-Wenn Regeln pfadbasiert sein müssen, verwenden Sie standardmäßige HTTP-Anweisungen auf Dispatcher-Ebene, um bestimmte IPs zu blockieren oder zuzulassen. Sie sollten sicherstellen, dass die gewünschten Pfade auch im CDN nicht zwischenspeicherbar sind, sodass die Anfrage immer an den Ursprung gelangt.
-
-#### Beispiel für httpd-Konfiguration {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## Aktivieren erweiterter Netzwerkkonfigurationen in Umgebungen {#enabling}
 
