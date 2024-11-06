@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
+source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 29%
+source-wordcount: '613'
+ht-degree: 32%
 
 ---
 
@@ -66,6 +66,10 @@ Keine.
 ### Eingestellte Funktionen und APIs {#deprecated-18459}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
+
+### Sicherheitskorrekturen {#security-18459}
+
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 21 identifizierte Schwachstellen und sorgt somit für einen noch robusteren Systemschutz.
 
 ### Eingebettete Technologien {#embedded-tech-18459}
 
