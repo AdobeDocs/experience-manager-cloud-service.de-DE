@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '629'
 ht-degree: 32%
 
 ---
@@ -56,8 +56,11 @@ Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für di
 * SITES-25456: Ereignisse: Beim Verschieben einer Seite wird neben dem Ereignis &quot;Seite verschoben&quot;ein Ereignis generiert, bei dem die Seite gelöscht wurde.
 * SITES-25658: Ereignisse: Die Tier- und sourceUrl-Elemente werden in den Seiteninhaltsstatusereignissen nicht angegeben.
 * SITES-6497: Launches: Seite im Launch erstellen funktioniert nicht.
+* SITES-25938: Launches: Unerwartete Löschungen nach der Übersetzung.
 * SITES-25393: Edge Delivery mit Universal Editor: Textknoten gehen beim Rendern von formatiertem Rich Text mit einem einzigen Absatz verloren.
 * SITES-24643: Edge Delivery mit Universal Editor: OpenGraph- und twitter-Metadatenattribute funktionieren nicht im Seitenmetadatenmodell.
+* SITES-25401: Experience Fragments: Langsame XF-Referenzaktualisierung
+
 
 ### Bekannte Probleme {#known-issues-18459}
 
