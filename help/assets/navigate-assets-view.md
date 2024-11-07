@@ -4,16 +4,16 @@ description: Grundlegendes zur Benutzeroberfläche von und Navigation in [!DNL A
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 98%
+source-wordcount: '998'
+ht-degree: 86%
 
 ---
 
 # Navigieren zu Dateien und Ordnern und Anzeigen von Assets {#view-assets-and-details}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
@@ -34,7 +34,7 @@ Wenn Sie sich bei [!DNL Assets view] anmelden, sehen Sie die folgende Oberfläch
 
 ## Durchsuchen und Anzeigen von Assets und Ordnern {#browse-repository}
 
-Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenleiste durchsuchen. Experience Manager Assets zeigt jetzt beim Durchsuchen oder Suchen nach Inhalten eine visuelle Vorschau der Ordnerinhalte in der Ordnerminiaturansicht an, wodurch es erleichtert wird, die im AEM Assets-Repository verfügbaren Assets zu finden. Mit dieser Ordnerminiaturansicht sparen Sie Zeit bei der Suche nach bestimmten Assets in einem Ordner im AEM Assets-Repository.
+Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenleiste durchsuchen. Experience Manager Assets zeigt eine visuelle Vorschau des Ordnerinhalts auf der Ordnerminiaturansicht an, wenn Sie nach Inhalten suchen oder suchen. Dies verbessert die Erkennung von Assets, die im AEM Assets-Repository verfügbar sind. Mit dieser Ordnerminiaturansicht sparen Sie Zeit bei der Suche nach bestimmten Assets in einem Ordner im AEM Assets-Repository.
 Beim Durchsuchen von Assets in einem Ordner können Sie die Benutzeroberfläche verwenden, um Asset-Miniaturansichten anzuzeigen und auf diese Weise das Repository visuell zu durchsuchen oder um Asset-Details anzuzeigen und so das gewünschte Asset schnell zu finden. Die in der linken Seitenleiste verfügbaren Optionen sind:
 
 * [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md): Assets enthält jetzt einen anpassbaren Arbeitsbereich, der Widgets für den bequemen Zugriff auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen bereitstellt, die für Sie am relevantesten sind. Diese Seite dient als zentrale Anlaufstelle, um einen Überblick über Ihre Arbeitselemente zu erhalten und schnellen Zugriff auf wichtige Workflows zu ermöglichen. Ein bequemerer Zugriff auf diese Optionen erhöht Ihre Effizienz und inhaltliche Geschwindigkeit.
@@ -77,9 +77,9 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
 
 Um ein Asset in der Vorschau anzuzeigen, wählen Sie es aus und klicken Sie oben in der Symbolleiste auf [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png). Sie können nicht nur das Asset, sondern auch seine detaillierten Metadaten anzeigen und andere Aktionen durchführen.
 
-![Anzeigen einer Vorschau für ein Asset](assets/preview-asset-2.png)
+![Anzeigen einer Vorschau für ein Asset](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Zurück zum aktuellen Ordner oder Suchergebnis im Repository **B**: Name und Format der Datei in der Vorschau **C**: Zugewiesene Aufgaben **D**: Erweiterte Metadaten **E**: Schlüsselwörter und Smart-Tags **F**: Kommentare und Anmerkungen **G**: Mit dem ausgewählten Asset verbundene Aufgaben anzeigen **H**: Versionen anzeigen und verwalten **I**: Ausgabedarstellungen des Bildes anzeigen **J**: Bild bearbeiten **K**: Grundlegende Metadaten **L**: Erweiterte Metadaten **M**: Keywords und Smart-Tags **N**: Genauere Vorschau. Zoom, Vollbild und andere Optionen **O**: Mit dem vorherigen oder nächsten Asset im aktuellen Ordner fortfahren, ohne zum Ordner zurückzukehren
+**A**: Kehren Sie zum aktuellen Ordner oder zum aktuellen Suchergebnis im Repository zurück **B**: Name und Format der Datei, die Sie in der Vorschau anzeigen **C**: Aufgaben zuweisen **D**: Erweiterte Metadaten **E**: Schlüsselwörter und Smart-Tags **F**: Kommentar und Anmerkungen **G**}: Anzeigen von Aufgaben im Zusammenhang mit dem ausgewählten Asset **H**: Anzeigen und Verwalten von Versionen **I**: Anzeigen von Ausgabeformaten des Bildes **J**: Bild bearbeiten **K**: Anzeigen von Dynamic Media-Ausgabeformaten einschließlich smartem Zuschneiden und Dynamic Media mit OpenAPI-Funktionsausgabeformaten. **L**: Grundlegende Metadaten **M**: Erweiterte Metadaten **N**: Keywords und Smart-Tags **O**: Fahren Sie mit dem vorherigen oder nächsten Asset im aktuellen Ordner fort, ohne zum Ordner **P** zurückzukehren: Zeigen Sie eine genauere Vorschau an. Zoom, Vollbild und andere Optionen.
 
 Sie können auch eine Vorschau der Videos anzeigen.
 

@@ -3,16 +3,16 @@ title: Genehmigen von Assets in Experience Manager
 description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmigen.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 3%
+source-wordcount: '713'
+ht-degree: 5%
 
 ---
 
 # Genehmigen von Assets in [!DNL Experience Manager]
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Brand Manager und Marketingexperten behalten die strenge Kontrolle über Marken-Assets. Es steht nur die genehmigte und neueste Version des Assets zur Verwendung zur Verfügung, wodurch Markenkonsistenz über alle Kanäle und Anwendungen hinweg gewährleistet ist.
@@ -96,13 +96,15 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
 
 1. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Details]**.
 
-1. Klicken Sie im rechten Bereich auf das Symbol Ausgabeformate .
+1. Klicken Sie auf das Dynamic Media-Symbol im rechten Bereich.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Dynamisch]** die Option **[!UICONTROL Dynamic Media mit OpenAPI]** aus.
+1. Wählen Sie im Bedienfeld **[!UICONTROL Dynamic Media]** die Option **[!UICONTROL Dynamic Media mit OpenAPI]** aus.
 
 1. Klicken Sie auf **[!UICONTROL URL kopieren]** , um die Bereitstellungs-URL des Assets zu kopieren.
-   ![Versand-URL kopieren](/help/assets/assets/copy-delivery-url.png)
+   ![dynamische Ausgabeformate](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
+
+Informationen zu anderen Ausgabeformaten, die im Dynamic Media-Bedienfeld angezeigt werden, finden Sie unter [Anzeigen und Herunterladen von Dynamic Media-Ausgabeformaten](/help/assets/renditions.md#view-download-dm-renditions).
