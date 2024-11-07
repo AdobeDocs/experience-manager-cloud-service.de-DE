@@ -4,10 +4,10 @@ description: Wenn Sie als AEM-Entwicklerin bzw. -entwickler daran interessiert s
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -240,7 +240,7 @@ Ihre Komponenten müssen ebenfalls instrumentiert sein, um mit dem universellen 
 
 1. Klicken Sie im universellen Editor oben auf der Seite auf die Teaser-Komponente, und Sie sehen, dass Sie sie jetzt auswählen können.
 
-1. Wenn Sie in der Eigenschaftenleiste des universellen Editors auf das Symbol **Inhaltsstruktur** klicken, können Sie sehen, dass der Editor alle Teaser auf der Seite erkannt hat, nachdem Sie sie instrumentiert haben. Der ausgewählte Teaser ist der hervorgehobene.
+1. Wenn Sie im Eigenschaftenbedienfeld des universellen Editors auf das Symbol **Inhaltsstruktur** klicken, können Sie sehen, dass der Editor alle Teaser auf der Seite erkannt hat, nachdem Sie sie instrumentiert haben. Der ausgewählte Teaser ist der hervorgehobene.
 
    ![Auswählen der instrumentierten Teaser-Komponente](assets/dev-select-teaser.png)
 
@@ -355,13 +355,13 @@ Sie können sehen, dass die Änderung in JCR beibehalten wurde.
 >
 >Das grundlegende Beispiel für den Authentifizierungs-Header `Basic YWRtaW46YWRtaW4=` steht für die Benutzer/Kennwort-Kombination `admin:admin`, wie sie für die lokale AEM-Entwicklung üblich ist.
 
-## Instrumentieren der App für die Eigenschaftenleiste {#properties-rail}
+## Instrumentieren der App für das Bedienfeld &quot;Eigenschaften&quot; {#properties-rail}
 
 Sie verfügen jetzt über eine App, die mit dem universellen Editor bearbeitbar ist!
 
-Die Bearbeitung ist derzeit auf die Inline-Bearbeitung des Teaser-Titels beschränkt. Es gibt jedoch Fälle, in denen eine Bearbeitung im Kontext nicht ausreicht. Text wie der Titel des Teasers kann mit Tastatureingaben an der Stelle bearbeitet werden, an der er vorliegt. Komplexere Elemente müssen jedoch in der Lage sein, strukturierte Daten separat von ihrer Darstellung im Browser anzuzeigen und zu bearbeiten. Hierfür dient die Eigenschaftenleiste.
+Die Bearbeitung ist derzeit auf die Inline-Bearbeitung des Teaser-Titels beschränkt. Es gibt jedoch Fälle, in denen eine Bearbeitung im Kontext nicht ausreicht. Text wie der Titel des Teasers kann mit Tastatureingaben an der Stelle bearbeitet werden, an der er vorliegt. Komplexere Elemente müssen jedoch in der Lage sein, strukturierte Daten separat von ihrer Darstellung im Browser anzuzeigen und zu bearbeiten. Hierfür dient der Eigenschaftenbereich.
 
-Um Ihre App zu aktualisieren und die Eigenschaftenleiste für die Bearbeitung zu verwenden, kehren Sie zur Header-Datei der Seitenkomponente Ihrer App zurück. Hier haben Sie bereits die Verbindungen zu Ihrer lokalen AEM-Entwicklungsinstanz und Ihrem lokalen universellen Editor-Dienst hergestellt. Hier müssen Sie die Komponenten definieren, die in der App bearbeitet werden können, sowie deren Datenmodelle.
+Um Ihre App zu aktualisieren und das Eigenschaftenbedienfeld zur Bearbeitung zu verwenden, kehren Sie zur Header-Datei der Seitenkomponente Ihrer App zurück. Hier haben Sie bereits die Verbindungen zu Ihrer lokalen AEM-Entwicklungsinstanz und Ihrem lokalen universellen Editor-Dienst hergestellt. Hier müssen Sie die Komponenten definieren, die in der App bearbeitet werden können, sowie deren Datenmodelle.
 
 1. Öffnen Sie CRXDE Lite.
 
@@ -462,7 +462,7 @@ Um Ihre App zu aktualisieren und die Eigenschaftenleiste für die Bearbeitung zu
 
 ## Was bedeutet das alles? {#what-does-it-mean-2}
 
-Um über die Eigenschaftenleiste bearbeitet werden zu können, müssen die Komponenten `groups` zugewiesen werden, sodass jede Definition als eine Liste von Gruppen beginnt, die die Komponenten enthalten.
+Damit die Komponenten im Eigenschaftenbedienfeld bearbeitet werden können, müssen sie `groups` zugewiesen sein. Daher beginnt jede Definition mit einer Liste von Gruppen, die die Komponenten enthalten.
 
 * `title` ist der Name der Gruppe.
 * `id` ist die eindeutige Kennung der Gruppe, in diesem Fall allgemeine Komponenten, aus denen der Seiteninhalt besteht, im Gegensatz zu erweiterten Komponenten für das Seiten-Layout.
@@ -487,7 +487,7 @@ Jede Komponente muss dann einem `model` zugewiesen werden, um die einzelnen bear
 * `label` ist die Beschreibung des Felds, das in der Editor-Benutzeroberfläche angezeigt wird.
 * `valueType` ist der Datentyp.
 
-## Instrumentieren der Komponente für die Eigenschaftenleiste {#properties-rail-component}
+## Instrumentieren der Komponente für das Bedienfeld &quot;Eigenschaften&quot; {#properties-rail-component}
 
 Sie müssen auch auf Komponentenebene definieren, welches Modell die Komponente verwenden soll.
 
@@ -509,17 +509,17 @@ Sie müssen auch auf Komponentenebene definieren, welches Modell die Komponente 
 
 1. Klicken Sie in der Symbolleiste auf **Alles speichern** und laden Sie den universellen Editor neu.
 
-Jetzt können Sie die für Ihre Komponente instrumentierte Eigenschaftenleiste testen.
+Jetzt können Sie das für Ihre Komponente instrumentierte Eigenschaftenbedienfeld testen.
 
 1. Klicken Sie im universellen Editor auf den Titel des Teasers, um ihn erneut zu bearbeiten.
 
-1. Klicken Sie auf die Eigenschaften-Leiste, um die Eigenschaften-Registerkarte anzuzeigen und die gerade instrumentierten Felder zu sehen.
+1. Klicken Sie auf den Eigenschaftenbereich, um die Registerkarte &quot;Eigenschaften&quot;anzuzeigen und die gerade instrumentierten Felder anzuzeigen.
 
-   ![Die instrumentierte Eigenschaftenleiste](assets/dev-properties-rail-instrumented.png)
+   ![Bedienfeld &quot;Instrumentierte Eigenschaften&quot;](assets/dev-properties-rail-instrumented.png)
 
-Sie können jetzt den Titel des Teasers entweder direkt wie zuvor oder in der Eigenschaftenleiste bearbeiten. In beiden Fällen bleiben die Änderungen wieder in Ihrer lokalen AEM-Entwicklungsinstanz erhalten.
+Sie können jetzt den Titel des Teasers entweder inline wie zuvor oder im Eigenschaftenbereich bearbeiten. In beiden Fällen bleiben die Änderungen wieder in Ihrer lokalen AEM-Entwicklungsinstanz erhalten.
 
-## Hinzufügen von zusätzlichen Feldern zur Eigenschaftenleiste {#add-fields}
+## Hinzufügen zusätzlicher Felder zum Bereich &quot;Eigenschaften&quot; {#add-fields}
 
 Mithilfe der grundlegenden Struktur des Datenmodells für die Komponente, die Sie bereits implementiert haben, können Sie zusätzliche Felder hinzufügen, die demselben Modell folgen.
 
@@ -555,9 +555,9 @@ Sie können beispielsweise ein Feld hinzufügen, um die Formatierung der Kompone
 
 1. Klicken Sie auf den Titel des Teasers, um ihn erneut zu bearbeiten.
 
-1. Klicken Sie auf die Eigenschaftenleiste und beachten Sie, dass ein neues Feld vorhanden ist, um den Stil der Komponente anzupassen.
+1. Klicken Sie auf den Eigenschaftenbereich und sehen Sie, dass ein neues Feld vorhanden ist, um den Stil der Komponente anzupassen.
 
-   ![Die instrumentierte Eigenschaftenleiste mit dem Stilfeld](assets/dev-style-instrumented.png)
+   ![Das Bedienfeld mit den instrumentierten Eigenschaften mit dem Stilfeld](assets/dev-style-instrumented.png)
 
 Jedes Feld im JCR für die Komponente kann auf diese Weise im universellen Editor angezeigt werden.
 
@@ -580,8 +580,8 @@ Erinnern Sie sich beim Instrumentieren Ihrer eigenen App an die grundlegenden Sc
 1. [Sie haben die Teaser-Komponente instrumentiert.](#instrumenting-components)
 1. [Sie haben die Unterkomponenten des Teasers instrumentiert.](#subcomponents)
 1. [Sie haben einen benutzerdefinierten Authentifizierungs-Header definiert, damit Sie Änderungen mit Ihrem lokalen universellen Editor-Dienst speichern können.](#auth-header)
-1. [Sie haben die App so instrumentiert, dass sie die Eigenschaftsleiste verwendet.](#properties-rail)
-1. [Sie haben die Teaser-Komponente instrumentiert, um die Eigenschaftenleiste zu verwenden.](#properties-rail-component)
+1. [Sie haben der App die Verwendung des Eigenschaftenbedienfelds empfohlen.](#properties-rail)
+1. [Sie haben die Teaser-Komponente instrumentiert, um den Eigenschaftenbereich zu verwenden.](#properties-rail-component)
 
 Sie können dieselben Schritte ausführen, um Ihre eigene App für die Verwendung mit dem universellen Editor zu instrumentieren. Alle Eigenschaften in JCR können für den universellen Editor verfügbar gemacht werden.
 

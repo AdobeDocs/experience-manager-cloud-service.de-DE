@@ -1,24 +1,24 @@
 ---
 title: Modelldefinitionen, Felder und Komponententypen
-description: Erfahren Sie anhand von Beispielen mehr über die Felder und Komponententypen, die mit dem universellen Editor in der Eigenschaftenleiste bearbeitet werden können. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
+description: Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor im Eigenschaftenbereich bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
-ht-degree: 92%
+ht-degree: 84%
 
 ---
 
 
 # Modelldefinitionen, Felder und Komponententypen {#field-types}
 
-Erfahren Sie anhand von Beispielen mehr über die Felder und Komponententypen, die mit dem universellen Editor in der Eigenschaftenleiste bearbeitet werden können. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
+Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor im Eigenschaftenbereich bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 
 ## Übersicht {#overview}
 
-Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Felder und Komponententypen sie in der Eigenschaftenleiste des Editors bearbeiten können.  Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
+Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Felder und Komponententypen sie im Eigenschaftenbedienfeld des Editors bearbeiten können. Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
 
 Dieses Dokument bietet einen Überblick über eine Modelldefinition sowie über die verfügbaren Felder und Komponententypen sowie Beispielkonfigurationen.
 
@@ -28,7 +28,7 @@ Dieses Dokument bietet einen Überblick über eine Modelldefinition sowie über 
 
 ## Modelldefinitionsstruktur {#model-structure}
 
-Um eine Komponente über die Eigenschaftenleiste im universellen Editor zu konfigurieren, muss eine Modelldefinition vorhanden und mit der Komponente verknüpft sein.
+Um eine Komponente über das Eigenschaftenbedienfeld im universellen Editor zu konfigurieren, muss eine Modelldefinition vorhanden und mit der Komponente verknüpft sein.
 
 Die Modelldefinition ist eine JSON-Struktur, die mit einem Array von Modellen beginnt.
 
@@ -36,7 +36,7 @@ Die Modelldefinition ist eine JSON-Struktur, die mit einem Array von Modellen be
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

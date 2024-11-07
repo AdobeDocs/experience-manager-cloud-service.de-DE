@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Content-Authoring mit Edge Delivery Services funk
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Der universelle Editor bietet eine moderne und intuitive grafische Benutzeroberf
 
 ![Hinzufügen und Anordnen von Bausteinen im universellen Editor](assets/blocks.png)
 
-Details zu den Bausteinen können dann in der Leiste Eigenschaften konfiguriert werden.
+Details der Blöcke können dann im Bereich Eigenschaften konfiguriert werden.
 
 ![Bausteineigenschaften konfigurieren](assets/block-properties.png)
 

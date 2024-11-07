@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die Inhaltsmodellierung für WYSIWYG Authoring mi
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -112,7 +112,7 @@ Für jeden Block gilt Folgendes:
 * Die Entwicklerin oder der Entwickler muss den Blocknamen definieren, der in der Tabellenüberschrift des Blocks gerendert wird.
    * Anhand des Blocknamens werden der richtige Stil und das richtige Skript zum Dekorieren des Blocks abgerufen.
 * Die Entwicklerin oder der Entwickler kann eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) definieren.
-   * Die Modell-ID ist ein Verweis auf das Modell der Komponente, das die Felder definiert, die der Autorin oder dem Autor in der Eigenschaftenleiste zur Verfügung stehen.
+   * Die Modell-ID ist ein Verweis auf das Modell der Komponente, das die Felder definiert, die dem Autor im Eigenschaftenbereich zur Verfügung stehen.
 * Die Entwicklerin oder der Entwickler kann eine [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) definieren.
    * Die Filter-ID ist ein Verweis auf den Filter der Komponente, der es ermöglicht, das Authoring-Verhalten zu ändern, z. B. indem begrenzt wird, welche untergeordneten Elemente zum Block oder Abschnitt hinzugefügt werden können oder welche RTE-Funktionen aktiviert sind.
 

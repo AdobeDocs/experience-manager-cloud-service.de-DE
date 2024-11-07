@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 94%
+ht-degree: 76%
 
 ---
 
@@ -41,7 +41,7 @@ Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie mit dem Mauszeig
 >
 >Durch Tippen oder Klicken auf einen Inhalt wird dieser standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Je nach ausgewähltem Inhalt können Ihnen unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung stehen. Außerdem sehen Sie möglicherweise zusätzliche Informationen und Optionen für den Inhalt in der [Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Je nach ausgewähltem Inhalt stehen Ihnen möglicherweise verschiedene Optionen für die Bearbeitung im Kontext zur Verfügung. Außerdem können Sie im Bereich [Eigenschaften} zusätzliche Informationen und Optionen für den Inhalt auswählen.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### Bearbeiten von einfachem Text {#edit-plain-text}
 
@@ -51,11 +51,11 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden ihre Details in der [Eigenschaftenleiste angezeigt. ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch in der Leiste bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden deren Details im Bereich [Eigenschaften angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch im Bedienfeld bearbeiten.
 
-![Bearbeiten von Text in der Eigenschaftenleiste](assets/ue-editing-text-component-rail.png)
+![Bearbeiten von Text im Eigenschaftenbereich](assets/ue-editing-text-component-rail.png)
 
-Details zu Ihrem Text sind auch in der Eigenschaftenleiste verfügbar. Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
+Außerdem sind Details zu Ihrem Text im Eigenschaftenbedienfeld verfügbar. Änderungen werden automatisch gespeichert, sobald der Fokus das bearbeitete Feld im Eigenschaftenbereich verlässt.
 
 ### Bearbeiten von Rich-Text {#edit-rich-text}
 
@@ -73,9 +73,9 @@ Das Kontextmenü wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundle
 
 Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld nicht mehr den Eingabefokus hat.
 
-#### Die Eigenschaftenleiste {#properties-rail}
+#### Bereich &quot;Eigenschaften&quot; {#properties-rail}
 
-Die [Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) zeigt ein Element für den ausgewählten Text an. Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen, mit der Sie den Text bearbeiten können.
+Im Bereich [Eigenschaften](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) wird ein Element für den ausgewählten Text angezeigt. Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen, mit der Sie den Text bearbeiten können.
 
 ![Dialogfeld für die Bearbeitung von Rich-Text](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Tippen oder klicken Sie auf **Fertig** oder **Abbrechen**, um die Änderungen zu
 
 ### Bearbeiten von Medien {#edit-media}
 
-Sie können die Details in der [Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) ansehen.
+Sie können die Details im Bereich [Eigenschaften} anzeigen.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Medien](assets/ue-edit-media.png)
 
-1. Tippen oder klicken Sie in der Eigenschaftenleiste auf die Vorschau des ausgewählten Bildes.
+1. Tippen oder klicken Sie im Eigenschaftenbedienfeld auf die Vorschau des ausgewählten Bildes.
 1. Das Fenster [Asset-Selektor](/help/assets/overview-asset-selector.md#using-asset-selector) wird geöffnet, in dem Sie ein Asset auswählen können.
 1. Wählen Sie diese Option, um ein neues Asset auszuwählen.
-1. Wählen Sie die Option **Auswählen** aus, um zur Eigenschaftenleiste zurückzukehren, in der das Asset ersetzt wurde.
+1. Wählen Sie **Select** aus, um zum Eigenschaftenbereich zurückzukehren, in dem das Asset ersetzt wurde.
 
 Änderungen an Ihrem Inhalt werden automatisch gespeichert.
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie seine Details in der [Eigenschaftenleiste](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) bearbeiten.
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im Bereich [Eigenschaften](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) bearbeiten.
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
-Die im Inhaltsmodell des ausgewählten Inhaltsfragments definierten Felder werden in der Eigenschaftenleiste angezeigt und können bearbeitet werden.
+Die im Inhaltsmodell des ausgewählten Inhaltsfragments definierten Felder werden im Eigenschaftenbedienfeld angezeigt und können bearbeitet werden.
 
-Wenn Sie ein Feld auswählen, das sich auf ein Inhaltsfragment bezieht, wird das Inhaltsfragment in der Komponentenleiste geladen und automatisch zu diesem Feld gescrollt.
+Wenn Sie ein Feld auswählen, das sich auf ein Inhaltsfragment bezieht, wird das Inhaltsfragment im Komponentenbereich geladen und das Feld wird automatisch zu diesem gescrollt.
 
-Änderungen werden automatisch gespeichert, sobald das bearbeitete Feld in der Eigenschaftenleiste nicht mehr im Fokus ist.
+Änderungen werden automatisch gespeichert, sobald der Fokus das bearbeitete Feld im Eigenschaftenbereich verlässt.
 
-Wenn Sie Ihr Inhaltsfragment im [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) bearbeiten möchten, tippen oder klicken Sie stattdessen in der Eigenschaftenleiste auf die Schaltfläche [**Im CF-Editor öffnen**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit).
+Wenn Sie Ihr Inhaltsfragment stattdessen im [Inhaltsfragment-Editor](/help/sites-cloud/administering/content-fragments/authoring.md) bearbeiten möchten, tippen oder klicken Sie im Eigenschaftenbedienfeld auf die Schaltfläche [**Im Inhaltsfragment-Editor öffnen**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) .
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 ### Hinzufügen von Komponenten zu Containern {#adding-components}
 
 1. Wählen Sie eine Container-Komponente in der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
-1. Wählen Sie dann das Symbol „Hinzufügen“ in der Eigenschaftenleiste aus.
+1. Wählen Sie dann das Symbol zum Hinzufügen im Eigenschaftenbedienfeld aus.
 
    ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-add-component.png)
 
@@ -136,7 +136,7 @@ Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet we
 ### Duplizieren von Komponenten in Containern {#duplicating-components}
 
 1. Wählen Sie eine Komponente in einem Container mithilfe des [Inhaltsbaums](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder des Editors aus.
-1. Wählen Sie dann das Symbol **Duplizieren** in der Eigenschaftenleiste aus.
+1. Wählen Sie dann das Symbol **Duplizieren** im Eigenschaftenbedienfeld aus.
 
    ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-duplicate-component.png)
 1. Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingefügt.
@@ -148,7 +148,7 @@ Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet we
 1. Wählen Sie eine Container-Komponente in der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
 1. Wählen Sie das Pfeilsymbol des Containers aus, um seinen Inhalt in der Inhaltsstruktur zu erweitern.
 1. Wählen Sie dann in der Inhaltsstruktur eine Komponente im Container aus.
-1. Wählen Sie das Symbol „Löschen“ in der Eigenschaftenleiste aus.
+1. Wählen Sie im Eigenschaftenbedienfeld das Löschsymbol aus.
 
    ![Löschen einer Komponente](assets/ue-delete-component.png)
 

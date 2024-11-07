@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 96%
+ht-degree: 86%
 
 ---
 
@@ -63,7 +63,7 @@ Die Benutzeroberfläche ist in diese Hauptbereiche unterteilt.
 * [Die Kopfzeile von Experience Cloud](#experience-cloud-header)
 * [Die Symbolleiste des universellen Editors](#universal-editor-toolbar)
 * [Der Editor](#editor)
-* [Die Eigenschaftenleiste](#properties-rail)
+* [Das Eigenschaftenbedienfeld](#properties-rail)
 
 ![Die Benutzeroberfläche des universellen Editors](assets/ui.png)
 
@@ -224,19 +224,19 @@ Der Editor nimmt den größten Teil des Fensters ein und ist der Ort, an dem die
 
 Wenn sich der Editor im [Vorschaumodus](#preview-mode) befindet, kann durch den Inhalt navigiert werden und Sie können Links folgen, aber den Inhalt nicht bearbeiten.
 
-### Eigenschaftenleiste {#properties-rail}
+### Eigenschaftenbereich {#properties-rail}
 
-Die Eigenschaftenleiste befindet sich immer auf der rechten Seite des Editors. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
+Der Eigenschaftenbereich befindet sich immer rechts im Editor. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
 
-![Die Eigenschaftenleiste](assets/properties-rail.png)
+![Das Eigenschaftenbedienfeld](assets/properties-rail.png)
 
 #### Eigenschaftenmodus {#properties-mode}
 
-Im Eigenschaftenmodus zeigt die Leiste die Eigenschaften der Komponente an, die aktuell im Editor ausgewählt ist. Dies ist der Standardmodus der Eigenschaftenleiste beim Laden einer Seite.
+Im Eigenschaftenmodus zeigt das Bedienfeld die Eigenschaften der Komponente an, die derzeit im Editor ausgewählt sind. Dies ist der Standardmodus des Eigenschaftenbedienfelds, wenn eine Seite geladen wird.
 
 ![Eigenschaftenmodus](assets/properties-mode.png)
 
-Je nach ausgewähltem Komponententyp können Details in der Eigenschaftenleiste angezeigt und geändert werden.
+Je nach ausgewähltem Komponententyp können Details im Eigenschaftenbedienfeld angezeigt und geändert werden.
 
 ![Komponentendetails](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt und/o
 
 #### Inhaltsstruktur-Modus {#content-tree-mode}
 
-Im Inhaltsstruktur-Modus zeigt die Leiste die Hierarchie des Seiteninhalts an.
+Im Inhaltsstrukturmodus zeigt das Bedienfeld die Hierarchie des Seiteninhalts an.
 
 ![Inhaltsstruktur-Modus](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu dies
 
 ##### Im CF-Editor öffnen {#edit}
 
-Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente in der Eigenschaftenleiste angezeigt, in der Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche **Im CF-Editor öffnen** auswählen.
+Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente im Eigenschaftenbedienfeld angezeigt, in dem Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche **Im CF-Editor öffnen** auswählen.
 
 ![Symbol „Im CF-Editor öffnen“](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 
 ##### Hinzufügen {#add}
 
-Wenn Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird die Option zum Hinzufügen in der Eigenschaftenleiste angezeigt.
+Wenn Sie eine Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Option zum Hinzufügen im Eigenschaftenbereich angezeigt.
 
 ![Symbol „Hinzufügen“](assets/ue-add-component-icon.png)
 
@@ -290,7 +290,7 @@ Durch Tippen oder Klicken auf die Schaltfläche „Hinzufügen“ wird ein Dropd
 
 ##### Duplizieren {#duplicate}
 
-Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Duplikatoption in der Eigenschaftenleiste angezeigt.
+Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Duplikat-Option im Eigenschaftenbereich angezeigt.
 
 ![Symbol &quot;Duplizieren&quot;](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Durch Tippen oder Klicken auf die Schaltfläche zum Duplizieren [wird die ausgew
 
 ##### Löschen {#delete}
 
-Wenn Sie eine Komponente innerhalb einer Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird die Löschoption in der Eigenschaftenleiste angezeigt.
+Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Löschoption im Eigenschaftenbereich angezeigt.
 
 ![Symbol „Löschen“](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 
 #### Zusätzliche Schaltflächen {#additional-properties-rail-buttons}
 
-Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Eigenschaftenleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
+Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn im Eigenschaftenbedienfeld zusätzliche Schaltflächen angezeigt werden, wurde der universelle Editor erweitert.
 
 * Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
 * Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).

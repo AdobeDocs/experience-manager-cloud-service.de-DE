@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die verschiedenen Ereignisse, die der unive
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 3%
@@ -55,7 +55,7 @@ Die Payload ist Inhalt vom Universal Editor-Dienst mit Fallback-Inhalt aus der K
 
 ### aue:content-details {#content-details}
 
-Das `aue:content-details` -Ereignis wird ausgelöst, wenn eine Komponente in der Eigenschaftenleiste geladen wird.
+Das `aue:content-details` -Ereignis wird ausgelöst, wenn eine Komponente im Eigenschaftenbereich geladen wird.
 
 Die Payload ist der Inhalt der Komponente und optional ihr Schema.
 
@@ -91,7 +91,7 @@ Die Payload ist der Komponenten-, Quell-Container- und Ziel-Container.
 
 ### aue:content-patch {#content-patch}
 
-Das Ereignis `aue:content-patch` wird ausgelöst, wenn die Daten einer Komponente in der Eigenschaftenleiste aktualisiert werden.
+Das Ereignis `aue:content-patch` wird ausgelöst, wenn die Daten einer Komponente im Eigenschaftenbereich aktualisiert werden.
 
 Die Payload ist ein JSON-Patch der aktualisierten Eigenschaften.
 
