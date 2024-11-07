@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 97%
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -132,6 +132,16 @@ Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet we
 >[!TIP]
 >
 >Verwenden Sie den Hotkey `a`, um dem ausgewählten Container eine Komponente hinzuzufügen.
+
+### Duplizieren von Komponenten in Containern {#duplicating-components}
+
+1. Wählen Sie eine Komponente in einem Container mithilfe des [Inhaltsbaums](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder des Editors aus.
+1. Wählen Sie dann das Symbol **Duplizieren** in der Eigenschaftenleiste aus.
+
+   ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-duplicate-component.png)
+1. Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingefügt.
+
+Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet werden.
 
 ### Löschen von Komponenten aus Containern {#deleting-components}
 

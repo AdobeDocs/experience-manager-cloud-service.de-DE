@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '1576'
-ht-degree: 100%
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Sobald die App für die Verwendung mit dem universellen Editor instrumentiert wu
 
 1. Melden Sie sich beim universellen Editor an. Sie benötigen eine Adobe ID, um sich anzumelden und [Zugang zum universellen Editor zu erhalten.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. Nachdem Sie sich angemeldet haben, geben Sie die URL der Seite, die Sie bearbeiten möchten, in die [Speicherortleiste ein.](#location-bar) Dann können Sie mit der Bearbeitung von Inhalten beginnen, z. B. [Textinhalt](#text-mode) oder [Medieninhalte](#media-mode).
+1. Nachdem Sie sich angemeldet haben, geben Sie die URL der Seite, die Sie bearbeiten möchten, in die [Speicherortleiste ein.](#location-bar) , damit Sie mit der Bearbeitung von Inhalten wie Textinhalten oder Medieninhalten beginnen können.
 
 ## Grundlegendes zur Benutzeroberfläche {#ui}
 
@@ -280,7 +280,7 @@ Wenn Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor auswäh
 
 ![Symbol „Hinzufügen“](assets/ue-add-component-icon.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche „Hinzufügen“ wird ein Dropdown-Menü mit Komponenten geöffnet, die [zum ausgewählten Container hinzugefügt werden können.](#adding-components)
+Durch Tippen oder Klicken auf die Schaltfläche „Hinzufügen“ wird ein Dropdown-Menü mit Komponenten geöffnet, die [zum ausgewählten Container hinzugefügt werden können.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![Kontextmenü hinzufügen](assets/add-context-menu.png)
 
@@ -288,13 +288,21 @@ Durch Tippen oder Klicken auf die Schaltfläche „Hinzufügen“ wird ein Dropd
 >
 >Verwenden Sie den Hotkey `a`, um eine Komponente zu einer ausgewählten Container-Komponente hinzuzufügen.
 
+##### Duplizieren {#duplicate}
+
+Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Duplikatoption in der Eigenschaftenleiste angezeigt.
+
+![Symbol &quot;Duplizieren&quot;](assets/duplicate.png)
+
+Durch Tippen oder Klicken auf die Schaltfläche zum Duplizieren [wird die ausgewählte Komponente dupliziert.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### Löschen {#delete}
 
 Wenn Sie eine Komponente innerhalb einer Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird die Löschoption in der Eigenschaftenleiste angezeigt.
 
 ![Symbol „Löschen“](assets/ue-delete-component-icon.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Komponente gelöscht.](#deleting-components)
+Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Komponente gelöscht.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >
