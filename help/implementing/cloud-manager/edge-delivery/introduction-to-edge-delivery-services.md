@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 6%
+source-wordcount: '756'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +20,7 @@ Edge Delivery Services ist ein zusammenstellbarer Satz von Services, der eine ho
 * Kontinuierliche Überwachung der Leistung durch RUM (Real Use Monitoring).
 * Erhöhen Sie die Autoreneffizienz durch Entkopplung von Inhaltsquellen.
 
-Sie können sowohl AEM Content Management als auch WYSIWYG-Authoring mit dem universellen Editor und dem dokumentbasierten Authoring verwenden.
+Sie können sowohl AEM Content Management als auch WYSIWYG Authoring mit dem universellen Editor und dem dokumentbasierten Authoring verwenden.
 
 Mit Cloud Manager in AEM as a Cloud Service können Sie den Edge Delivery-Dienst für Ihr Projekt aktivieren.
 
@@ -76,13 +76,14 @@ Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben
 | 1 | Dem Kanal für Produktzusammenarbeit beitreten | Durch Klicken auf **Anfrage jetzt senden** wird eine Anfrage an Adobe gesendet, einen Kanal für Ihr Unternehmen zu erstellen. Wenn der Kanal bereits vorhanden ist, werden Sie an den Kanal Ihres Unternehmens weitergeleitet. |
 | 2 | Voraussetzungen erfüllen | Wenn Sie auf **Tutorial Erste Schritte anzeigen** klicken, gelangen Sie zum Tutorial [Erste Schritte - Entwickler](https://www.aem.live/developer/tutorial). |
 | 3 | Edge Delivery-Site hinzufügen | Siehe [Hinzufügen einer Edge Delivery-Site](#eds-add-site). |
-| 4 | Domain hinzufügen | Siehe [Hinzufügen eines benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+| 4 | Domain hinzufügen | Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | SSL-Zertifikat hinzufügen | Siehe [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | CDN Ihrer Edge Delivery-Site konfigurieren | Siehe [Hinzufügen einer CDN-Konfiguration](#add-cdn). |
+| 6 | CDN Ihrer Edge Delivery-Site konfigurieren | Siehe [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
+| 7 | Live-Schaltung | Führen Sie den letzten Schritt unter &quot;Go Live&quot;aus. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
-## Support-Ticket anmelden {#eds-support-ticket}
+## Einreichen eines Support-Tickets {#eds-support-ticket}
 
 {{support-ticket}}
 
