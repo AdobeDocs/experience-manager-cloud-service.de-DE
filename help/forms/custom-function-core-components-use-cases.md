@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 Der Artikel enthält detaillierte Beispiele für benutzerdefinierte Funktionen für ein adaptives Formular, die auf Kernkomponenten basieren, und bietet wertvolle Einblicke in deren effektive Implementierung in verschiedenen Szenarien. Benutzerdefinierte Funktionen werden im Regeleditor eines AEM Forms verwendet, sodass Entwickler die Logik definieren und steuern können, die das Formularverhalten steuert.
 In diesem Artikel werden verschiedene Implementierungen benutzerdefinierter Funktionen untersucht und gezeigt, wie sie verwendet werden können, um Formulare an bestimmte Anforderungen anzupassen und die Funktionalität insgesamt zu verbessern.
 
-## Festlegen von Dropdown-Listenoptionen mit benutzerdefinierten Funktionen
+## Füllen der Dropdown-Listenoptionen mit benutzerdefinierten Funktionen
 
-Der Regeleditor in den Kernkomponenten unterstützt die Eigenschaft **Optionen von** nicht zum Festlegen der Dropdown-Listenoptionen zur Laufzeit. Sie können die Optionen der Dropdown-Liste jedoch mit benutzerdefinierten Funktionen festlegen.
+Der Regeleditor in Kernkomponenten unterstützt die Eigenschaft **Optionen festlegen** nicht zum dynamischen Füllen von Dropdown-Listenoptionen zur Laufzeit. Sie können jedoch Dropdown-Listenoptionen mit benutzerdefinierten Funktionen ausfüllen, mit denen Sie Optionen basierend auf einer bestimmten Logik abrufen können. Benutzerdefinierte Funktionen bieten mehr Flexibilität und Kontrolle darüber, wie und wann die Dropdown-Optionen aufgefüllt werden, wodurch das Benutzererlebnis verbessert wird.
 
-Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um die Optionen für die Dropdown-Liste mithilfe benutzerdefinierter Funktionen festzulegen:
+Um die Dropdown-Listenoptionen mit einer benutzerdefinierten Funktion zu füllen, fügen Sie den folgenden Code hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben:
+
 
 ```javascript
     /**
