@@ -406,7 +406,7 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 >
 >Im Folgenden finden Sie Einschränkungen für eine VPN-Infrastruktur:
 >
->* Unterstützung ist auf eine einzelne VPN-Verbindung beschränkt
+>* Die Unterstützung ist auf eine einzige VPN-Verbindung beschränkt
 >* DNS-Resolver müssen im Gateway-Adressraum aufgeführt sein, um private Host-Namen aufzulösen.
 
 ### Konfiguration der Benutzeroberfläche {#configuring-vpn-ui}

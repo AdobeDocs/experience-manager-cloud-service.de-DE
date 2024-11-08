@@ -1,5 +1,5 @@
 ---
-title: Universal Editor 2024.11.05 - Versionshinweise
+title: Universeller Editor 2024.11.05 – Versionshinweise
 description: Dies sind die Versionshinweise für die Version 2024.11.05 des universellen Editors.
 feature: Release Information
 role: Admin
@@ -7,18 +7,18 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 4bccfcb877c8b1a947b15935aa82ecb005e62213
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 0%
+ht-degree: 23%
 
 ---
 
 
-# Universal Editor 2024.11.05 - Versionshinweise {#release-notes}
+# Universeller Editor 2024.11.05 – Versionshinweise {#release-notes}
 
 Dies sind die Versionshinweise für die Version des universellen Editors vom 5. November 2024.
 
 >[!TIP]
 >
->Die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service finden Sie auf [dieser Seite.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Neue Funktionen {#what-is-new}
 
