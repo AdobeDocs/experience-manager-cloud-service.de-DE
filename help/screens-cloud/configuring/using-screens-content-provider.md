@@ -4,10 +4,10 @@ description: Auf dieser Seite wird die Verwendung von Screens Content Provider z
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bdb82da7463bc6b5265a7271072fe3a771fbb380
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '382'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um sich bei Screens Content Provider anzumelden:
 
 1. Wählen Sie das Programm für Screens as a Cloud Service aus und klicken Sie auf das Symbol, wie unten dargestellt, um die Seite **Übersicht** von Cloud Manager für dieses spezifische Programm zu öffnen.
 
-   ![Das Symbol für die Übersichtsseite von Cloud Manager wird ganz links in einer Symbolleiste angezeigt.](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![Das Symbol für die Übersichtsseite von Cloud Manager wird ganz links in der Symbolleiste angezeigt.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >Wenn Sie noch kein Programm erstellt haben, lesen Sie [Erste Anmeldung bei Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=de). Das Thema führt Sie durch das Hinzufügen eines Programms für Screens as a Cloud Service in Cloud Manager.
