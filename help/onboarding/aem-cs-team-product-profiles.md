@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produk
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
+source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 39%
+source-wordcount: '2059'
+ht-degree: 34%
 
 ---
 
@@ -275,6 +275,27 @@ Die folgende Abbildung stellt die AEM Gruppen dar, die das Produktprofil und den
 >
 >* Weitere Informationen zu AEM-Produktprofilen finden Sie unter [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
 >* Weitere Informationen zum Onboarding-Prozess finden Sie in der [Onboarding-Tour](/help/journey-onboarding/overview.md).
+
+### Hinzufügen von Produktprofilen für bestehende Umgebungen {#adding-product-profiles-for-existing-environments}
+
+In Umgebungen, die vor Anfang November 2024 erstellt wurden, fehlt möglicherweise die in den obigen Abschnitten beschriebene Produktinstanz auf Org-Level sowie bestimmte Produktprofile. Bei bestehenden Produktprofilen fehlt auch der Dienst-Umschalter. Es wird empfohlen, diese Produktprofile zu aktualisieren. Dies ist eine Voraussetzung für den Zugriff auf einige zukünftige APIs.
+
+Wenn für eine oder mehrere Umgebungen in einem Programm die Produktprofile aktualisiert werden müssen, wird in Cloud Manager der nachstehende Hinweis angezeigt. Beachten Sie, dass eine Umgebung auf der neuesten AEM Version basieren muss, bevor ihre Produktprofile aktualisiert werden können.
+
+![Modernisieren von Produktprofilen](/help/onboarding/assets/modernize-product-profiles.png)
+
+Durch Klicken auf die Schaltfläche **Produktprofile hinzufügen** wird ein Menü mit Optionen zum Hinzufügen neuer Produktprofile zu allen im Programm oder in einzelnen Umgebungen verfügbaren Umgebungen geöffnet.
+
+![Umgebungen ersetzen](/help/onboarding/assets/choose-env-r.png)
+
+Klicken Sie auf **Alle Umgebungen** , um die neuen Produktprofile zu allen Umgebungen im Programm hinzuzufügen. Klicken Sie alternativ auf &quot;**Individuelle Umgebungen**&quot;, um die neuen Produktprofile zu ausgewählten Umgebungen hinzuzufügen. Dadurch wird der Benutzer zu einer Umgebungslistenseite geleitet, auf der über das Symbol &quot;**Mehr Optionen**&quot;die Aktion &quot;**Produktprofile hinzufügen**&quot;ausgewählt werden kann.
+
+![Individuelle Umgebungen](/help/onboarding/assets/individual-environments.png)
+
+Sie können ausgewählten Umgebungen auch Produktprofile hinzufügen, indem Sie zum Abschnitt Umgebungen auf der Seite Programmübersicht navigieren, auf das Symbol Weitere Optionen für eine Umgebung klicken und Produktprofile hinzufügen auswählen.
+
+Der Status der Umgebung zeigt &quot;Hinzufügen von Produktprofilen&quot;an, während die neuen Produktprofile hinzugefügt werden, und zeigt anschließend &quot;Wird ausgeführt&quot;an, wenn der Prozess abgeschlossen ist.
+
 
 ## Cloud Manager-Produktprofile {#cloud-manager-product-profiles}
 
