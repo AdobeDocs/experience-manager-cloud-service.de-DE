@@ -4,17 +4,16 @@ description: Erfahren Sie, wie Sie die Push-Invalidierung für die Erstellung Ih
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '160'
 ht-degree: 2%
 
 ---
 
 # Push-Invalidierung einrichten
 
-Die Push-Invalidierung stellt sicher, dass Inhaltsaktualisierungen von Autoren automatisch aus dem verwalteten Content Delivery Network (CDN) entfernt werden, wenn sie veröffentlicht werden, sodass nur der neueste Inhalt bereitgestellt wird.
+Die Push-Invalidierung stellt sicher, dass Inhaltsaktualisierungen von Autoren automatisch aus dem verwalteten Content Delivery Network (CDN) entfernt werden, wenn sie veröffentlicht werden. Dadurch wird sichergestellt, dass nur der neueste Inhalt bereitgestellt wird.
 
 Das System löscht den Inhalt basierend auf bestimmten URLs und Cache-Tags oder -Schlüsseln und stellt dabei sicher, dass veraltete Versionen gelöscht werden.
 
@@ -28,3 +27,5 @@ Die folgenden Konfigurationseigenschaften definieren den Namen des Produktions-H
 | `cdn.prod.type` | verwaltet |   |
 
 Nachdem Änderungen am Konfigurationsblatt vorgenommen wurden, müssen Benutzer sie mit dem [Sidekick-Tool](/help/edge/docs/sidekick.md) in der Vorschau anzeigen und aktivieren, um die Aktualisierungen anzuwenden.
+
+Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).

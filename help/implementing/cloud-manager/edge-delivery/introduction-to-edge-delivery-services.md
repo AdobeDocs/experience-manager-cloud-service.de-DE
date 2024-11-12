@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ Mit Cloud Manager in AEM as a Cloud Service können Sie den Edge Delivery-Dienst
 
 Wenn Sie Edge Delivery Services als Teil von Adobe Experience Manager Sites lizenziert haben, können Sie Ihre Site mit Edge Delivery Services direkt in Cloud Manager integrieren und [mit einem geführten Self-Service-Erlebnis](/help/implementing/cloud-manager/managing-code/private-repositories.md) live gehen.
 
-Darüber hinaus können Sie auf ein einheitliches Erlebnis für die Verwaltung aller AEM zugreifen und gleichzeitig die Konsistenz wichtiger Workflows sicherstellen. Dazu gehören die Verwaltung von Domain-Namen, die SSL-Zertifikatverwaltung und CDN-Zuordnungen.
+Darüber hinaus können Sie auf ein einheitliches Erlebnis für die Verwaltung aller AEM zugreifen und gleichzeitig die Konsistenz wichtiger Workflows sicherstellen. Zu diesen Workflows gehören Domain-Namensverwaltung, SSL-Zertifikatverwaltung und CDN-Zuordnungen.
 
 ## Vorteile der Verwendung des von Adobe empfohlenen Pfads für Edge Delivery Services {#recommended-path-eds}
 
@@ -74,12 +74,13 @@ Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben
 |   | Aufgabe | Beschreibung |
 | --- | --- | --- |
 | 1 | Dem Kanal für Produktzusammenarbeit beitreten | Durch Klicken auf **Anfrage jetzt senden** wird eine Anfrage an Adobe gesendet, einen Kanal für Ihr Unternehmen zu erstellen. Wenn der Kanal bereits vorhanden ist, werden Sie an den Kanal Ihres Unternehmens weitergeleitet. |
-| 2 | Voraussetzungen erfüllen | Wenn Sie auf **Tutorial Erste Schritte anzeigen** klicken, gelangen Sie zum Tutorial [Erste Schritte - Entwickler](https://www.aem.live/developer/tutorial). |
+| 2 | Voraussetzungen erfüllen | Siehe [Erste Schritte-Tutorial anzeigen](https://www.aem.live/developer/tutorial). |
 | 3 | Edge Delivery-Site hinzufügen | Siehe [Hinzufügen einer Edge Delivery-Site](#eds-add-site). |
 | 4 | Domain hinzufügen | Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | SSL-Zertifikat hinzufügen | Siehe [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | CDN Ihrer Edge Delivery-Site konfigurieren | Siehe [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
-| 7 | Live-Schaltung | Führen Sie den letzten Schritt unter &quot;Go Live&quot;aus. |
+| 7 | Push-Validierung einrichten | Siehe [Push-Validierung einrichten](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md). |
+| 8 | Live-Schaltung | Siehe [Go-Live-Checkliste](/help/edge/docs/go-live-checklist.md). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

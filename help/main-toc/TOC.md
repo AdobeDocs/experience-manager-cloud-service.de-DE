@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3ebfc556a2b7edeb245f3f039a54c7c561da66dd
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '5791'
+source-wordcount: '5794'
 ht-degree: 98%
 
 ---
@@ -1163,6 +1163,7 @@ ht-degree: 98%
          + [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN-Konfigurationen {#cdn-configurations}
          + [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [Einrichten der Push-Validierung](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [Verwalten von CDN-Konfigurationen](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP-Zulassungslisten {#ip-allow-lists}
          + [Einführung in IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
