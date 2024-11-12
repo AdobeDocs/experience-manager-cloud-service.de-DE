@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
+source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
 workflow-type: tm+mt
-source-wordcount: '5780'
+source-wordcount: '5782'
 ht-degree: 98%
 
 ---
@@ -362,7 +362,7 @@ ht-degree: 98%
          + [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Inhaltsvererbung im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-         + [Seitenvorlagen](/help/edge/wysiwyg-authoring/templates.md)
+         + [Seitenvorlagen](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Fragmente {#fragments}
          + [Inhaltsfragmente](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -454,6 +454,7 @@ ht-degree: 98%
             + [Best Practices für die Übersetzung](/help/sites-cloud/administering/translation/best-practices.md)
       + [Verwalten von Tags](/help/sites-cloud/administering/tags.md)
       + [Verwalten von Workflows](/help/sites-cloud/administering/workflows-administering.md)
+      + [Vorlagenkonsole](/help/sites-cloud/administering/templates-console.md)
    + Integration mit AEM as a Cloud Service {#integrations}
       + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integration mit der automatisierten Adobe Analytics-Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -1092,7 +1093,7 @@ ht-degree: 98%
    + [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)
    + CQ Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
-      + [AEM](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM Home](/help/implementing/cloud-manager/aem-home.md)
       + Programme {#programs}
          + [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
