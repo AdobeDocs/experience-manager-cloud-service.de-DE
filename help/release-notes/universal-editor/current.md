@@ -1,10 +1,10 @@
 ---
-title: Universeller Editor 2024.11.12 – Versionshinweise
-description: Dies sind die Versionshinweise für die Version 2024.11.12 des universellen Editors.
+title: Universeller Editor 2024.11.13 – Versionshinweise
+description: Dies sind die Versionshinweise für die Version 2024.11.13 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
+source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 12%
@@ -12,9 +12,9 @@ ht-degree: 12%
 ---
 
 
-# Universeller Editor 2024.11.12 – Versionshinweise {#release-notes}
+# Universeller Editor 2024.11.13 – Versionshinweise {#release-notes}
 
-Dies sind die Versionshinweise für die Version des universellen Editors vom 12. November 2024.
+Dies sind die Versionshinweise für die Version des universellen Editors vom 13. November 2024.
 
 >[!TIP]
 >
