@@ -3,9 +3,10 @@ title: Erweiterbarkeit der Benutzeroberfläche der AEM Assets-Ansicht
 description: Erfahren Sie mehr über die Erweiterbarkeit der Benutzeroberfläche in der AEM Assets-Ansicht. Die Benutzeroberfläche der AEM Assets-Ansicht ermöglicht das Hinzufügen benutzerdefinierter Benutzeroberflächen-Komponenten, um bestimmten Geschäftsanforderungen gerecht zu werden.
 feature: App Builder
 role: User, Developer
-source-git-commit: c1446200898102881a20508031d4853c61f7c964
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,7 @@ Sie können Ihre Erweiterungen der Asset-, Ordner- und Sammlungsebene hinzufüge
 Greifen Sie wie folgt auf die Assets-Ansicht zu:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## Wo die hinzugefügte Erweiterungskomponente der Benutzeroberfläche auf der Assets-Benutzeroberfläche angezeigt wird? {#ui-extensibility-panel-assets-view}
+## Wo werden Benutzeroberflächenerweiterungen auf der Benutzeroberfläche der Assets-Ansicht angezeigt? {#ui-extensibility-panel-assets-view}
 
 Navigieren Sie in der Assets-Ansicht zur Detailseite eines Assets, Ordners oder einer Sammlung. Diese Detailseite verfügt über ein dediziertes Bedienfeld, in dem die hinzugefügte UI-Erweiterung angezeigt wird.
 ![mein Arbeitsbereich](/help/assets/assets/my-workspace-assets-view3.png)
@@ -52,5 +53,3 @@ Navigieren Sie in der Assets-Ansicht zur Detailseite eines Assets, Ordners oder 
 1. Richten Sie Ihre lokale Umgebung ein und erleben Sie die Entwicklung von Benutzeroberflächenerweiterungen in der Assets-Ansicht aus, indem Sie Ihre erste UI-Erweiterung erstellen. Weitere Informationen finden Sie unter [Schrittweise Entwicklung der AEM Assets-Ansichtserweiterung](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) .
 1. Richten Sie Ihre App mithilfe der AIO-CLI ein, um die grundlegende Erweiterungsstruktur und den erforderlichen Code zu generieren. Detaillierte Informationen finden Sie unter [Codegenerierung für die AEM Assets-Ansicht](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) .
 1. Testen Sie Ihre Erweiterungen lokal, um sicherzustellen, dass sie vor der Bereitstellung wie erwartet funktionieren. Führen Sie Ihre Erweiterung in einer vollständig isolierten Umgebung oder mit partieller Isolierung aus und verbinden Sie Ihre Erweiterung zum Testen mit der Produktions-AEM Assets-Ansicht. Detaillierte Informationen finden Sie unter [Fehlerbehebung - AEM Assets View Extensibility](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) .
-
-
