@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 86%
+source-wordcount: '1670'
+ht-degree: 89%
 
 ---
 
@@ -83,29 +83,37 @@ Berichte können jetzt in der Assets-Ansicht automatisch mit einem wiederkehrend
 
 **Digital Rights Management für lizenzierte Assets**
 
-Unternehmen können jetzt die Lizenzkonformität erhöhen und das Risiko der Freigabe von Assets mit Lizenzbedingungen minimieren, indem sie DRM für lizenzierte Assets für Benutzer von Content Hub nutzen. Benutzer müssen die Lizenzbedingungen überprüfen und akzeptieren, bevor sie lizenzierte Assets herunterladen können. Weitere Informationen finden Sie unter [Verwalten lizenzierter Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+Unternehmen können jetzt die Lizenzkonformität erhöhen und das Risiko der Freigabe von Assets mit Lizenzbedingungen minimieren, indem sie DRM für lizenzierte Assets für Benutzende von Content Hub nutzen. Benutzende müssen die Lizenzbedingungen überprüfen und akzeptieren, bevor sie lizenzierte Assets herunterladen können. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **Konfiguration der Asset-Karten-Metadaten**
 
-Mit Content Hub können Sie jetzt die wichtigen Metadatenfelder konfigurieren, die Sie auf der Asset-Karte anzeigen müssen, und zwar bis zu sechs Felder. Weitere Informationen finden Sie im Abschnitt &quot;Asset-Karte&quot;unter [Content Hub konfigurieren](/help/assets/configure-content-hub-ui-options.md#asset-card).
+Mit Content Hub können Sie jetzt die wichtigsten Metadatenfelder konfigurieren, die auf der Asset-Karte angezeigt werden sollen, und zwar bis zu sechs Felder. Weitere Informationen finden Sie im Abschnitt „Asset-Karte“ unter [Konfigurieren von Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![Wichtige Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-key-metadata.png)
 
 **Konfigurieren von Sichtbarkeit und Download abgelaufener Assets**
 
-Admins können jetzt steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch definieren, ob Benutzer sie herunterladen können. Weitere Informationen finden Sie im Abschnitt Abgelaufene Assets unter [Content Hub konfigurieren](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) .
+Admins können jetzt steuern, ob abgelaufene Assets in Content Hub sichtbar sein sollen. Wenn die abgelaufenen Assets sichtbar gemacht werden, können sie auch festlegen, ob Benutzende diese herunterladen können. Weitere Informationen finden Sie im Abschnitt „Abgelaufene Assets“ unter [Konfigurieren von Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Abgelaufene Assets in Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### Neue Funktionen in AEM Forms {#forms-new-features}
+
+* **Verbessern des Benutzererlebnisses mit Navigationsschaltflächen in Bereichslayouts**: Sie können Ihren Bedienfeldlayouts jetzt Navigationsschaltflächen hinzufügen, z. B. Horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen vereinfachen das Benutzererlebnis, indem sie die Übergänge zwischen Bedienfeldern vereinfachen und sich auf das ausgewählte Bedienfeld konzentrieren.
+
+* **Angeben von Anzeigestilen für Datensatzdokumentkomponenten (DoR)**: In einer XFA-Datei können Sie jetzt die Anzeigestile für Datensatzdokumentkomponenten angeben. Diese Stile können später im adaptiven Forms-Editor auf die entsprechenden Komponenten angewendet werden.
+
 ### Neue Vorabveröffentlichungsfunktionen in AEM Forms {#forms-new-prerelease-features}
 
-#### Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare
+* **Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Forms**: Benutzer können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
 
-Benutzende profitieren jetzt von einer Funktion zum automatischen Speichern, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
+* **Adobe Sign-Bereiche einfach aktualisieren**: Sie können die Bereiche einer Adobe Sign-Konfiguration direkt auf der Seite &quot;AEM Cloud-Konfigurationen&quot;ändern, um bestehende Konfigurationen schneller und leichter zu aktualisieren.
+
+* **Asynchrone Funktionsunterstützung für Adaptive Forms**: Wenn für Ihr adaptives Formular asynchrone Vorgänge erforderlich sind, z. B. das Warten auf externe Prozesse oder das Abrufen von Daten, können Sie diese Vorgänge mit benutzerdefinierten Funktionen implementieren und im Regeleditor konfigurieren.
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -149,13 +157,13 @@ Die folgenden generativen KI-Funktionen stehen zur Verfügung:
 Um die Formularübermittlung für Coral- oder Foundation-Formulare an bestimmten Stellen zu steuern, hat AEM eine neue Konfiguration eingeführt: `com.adobe.granite.ui.components.FormRestrict`. Diese Konfiguration besteht aus zwei Feldern:
 
 1. **Zulässige Pfade hinzufügen**: Gibt die Pfade an, in denen Formularaktionen zulässig sind.
-1. **Verhalten beschränken**: Bestimmt das Verhalten für eingeschränkte Pfade (Pfade, die nicht in der Zulassungsliste enthalten sind). Sie können zwischen zwei Optionen wählen:
+1. **Verhalten beschränken**: Bestimmt das Verhalten für eingeschränkte Pfade (Pfade, die nicht in der Zulassungsliste enthalten sind). Sie können zwischen den folgenden Optionen wählen:
    * **Popup** (Standard): Zeigt eine Popup-Benachrichtigung an.
-   * **Prevent**:Blockiert die Übermittlung des Formulars.
+   * **Verhindern**: Blockiert die Formularübermittlung.
 
 >[!NOTE]
 >
->Diese Konfiguration wird nicht für alle Coral- oder Foundation-Formulare unter `/apps`, `/libs`, `/mnt/overlay` und `/mnt/override` unterstützt.
+>Diese Konfiguration wird nicht für Coral- oder Foundation-Formulare unter `/apps`, `/libs`, `/mnt/overlay` und `/mnt/override` unterstützt.
 
 ### Selbst durchgeführte Protokollweiterleitung mit erweiterter Netzwerkoption {#log-forwarding}
 
@@ -189,7 +197,7 @@ Jeder kann auf die öffentliche Beta-Version zugreifen, indem in der aktuellen A
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
 
 ## Cloud Manager {#cloud-manager}
 
