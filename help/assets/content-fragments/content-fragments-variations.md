@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 100%
+source-wordcount: '2504'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Auf der Registerkarte **Varianten** haben Sie folgende Optionen:
 
@@ -58,6 +58,8 @@ Zum Beispiel:
 Sie haben folgende Möglichkeiten:
 
 * Bearbeiten Sie Ihre Inhalte direkt auf der Registerkarte **Varianten**. Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
+
+   * Wenn verschiedene Datentypen im Modell konfiguriert sind (als mehrere), können Sie **Instanzen hinzufügen** des entsprechenden Felds hinzufügen
 
    * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 

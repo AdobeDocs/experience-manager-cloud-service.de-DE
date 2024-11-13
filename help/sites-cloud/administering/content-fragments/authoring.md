@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '2685'
-ht-degree: 100%
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+workflow-type: tm+mt
+source-wordcount: '2704'
+ht-degree: 99%
 
 ---
 
@@ -60,6 +60,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
    * auf der Registerkarte **Eigenschaften** können Sie den **Titel** und die **Beschreibung** für das Fragment oder die **Variante** aktualisieren
 * zentraler Bereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
    * ermöglicht das Bearbeiten des Inhalts
+      * Wenn verschiedene Datentypen im Modell konfiguriert sind (als mehrere), können Sie **Instanzen hinzufügen** des entsprechenden Felds hinzufügen
    * wenn **Registerkartenplatzhalter**-Felder innerhalb des hier gezeigten Modells definiert werden und für die Navigation verwendet werden können, werden sie entweder horizontal oder als Dropdown-Liste angezeigt.
 
   >[!NOTE]

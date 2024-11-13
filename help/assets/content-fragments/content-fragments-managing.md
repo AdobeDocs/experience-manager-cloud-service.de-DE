@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 100%
+source-wordcount: '1896'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >
 >Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
 >
->Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 

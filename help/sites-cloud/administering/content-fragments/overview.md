@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 96%
+source-wordcount: '1818'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfra
 >
 >Auf Inhaltsfragmente können Sie über zwei Konsolen zugreifen: **Inhaltsfragmente** und **Assets**.
 >
->Es gibt zudem zwei Editoren für Inhaltsfragmente. (Auf beide Editoren kann von beiden Konsolen aus zugegriffen werden.)
+>Es gibt auch zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. Beide Editoren sind in beiden Konsolen verfügbar.
 >
 >Dieser Abschnitt befasst sich mit der **Inhaltsfragmentekonsole** und dem *neuen* Inhaltsfragmenteditor. Diese wurden für die Bereitstellung von Headless-Inhalten entwickelt (obwohl sie für alle Szenarien verwendet werden können)
 >

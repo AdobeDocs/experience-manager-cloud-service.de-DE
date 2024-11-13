@@ -5,10 +5,10 @@ exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM an
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 

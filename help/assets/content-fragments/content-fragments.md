@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 97%
+source-wordcount: '2231'
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 >
 >Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
 >
->Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
+>Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
 Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden von Inhaltsfragmenten beschrieben:
 
