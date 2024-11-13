@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 32%
+source-wordcount: '820'
+ht-degree: 76%
 
 ---
 
@@ -18,48 +18,57 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 18459 {#18459}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 18459, die am Mittwoch, 5. November 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 18311.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 18459, die am 5. November 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 18311.
 
 Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Verbesserungen {#enhancements-18459}
 
-* CQ-4357471: Unterstützung für i18n-Wörterbuchübersetzung in AEMaaCS hinzugefügt.
+* CQ-4357471: Unterstützung für Übersetzung mit i18n-Wörterbüchern in AEMaaCS hinzugefügt.
 * SITES-23591: Inhaltsfragmente: Aktualisierung von Inhaltsfragmenten für UUID-Unterstützung.
-* SITES-25440: Content Fragments: CFM Search API zur Anzeige des Replikationsstatus.
-* SITES-24369: Inhaltsfragmente: Verbesserungen der OpenAPI-Dokumentation.
-* SITES-25478: Inhaltsfragmente: Fügen Sie Backend-Unterstützung für externe Asset-Verweise hinzu.
-* SITES-26119: Inhaltsfragmente: Unterstützung externer Asset-Referenzen im Referenztyp hinzufügen.
-* SITES-21199: Edge Delivery mit Universal Editor: Unterstützt Vorlagen, die aus Seiten erstellt wurden.
-* SITES-20311: Edge Delivery mit Universal Editor: Unterstützt jetzt das Importieren von CSVs in Tabellen.
-* SITES-24821: Edge Delivery mit Universal Editor: Legen Sie als Standard für die Integration in Edge Delivery aem.page/aem.live fest.
+* SITES-25440: Inhaltsfragmente: CFM-Such-API zur Anzeige des Replikationsstatus.
+* SITES-24369: Inhaltsfragmente: Verbesserungen an der OpenAPI-Dokumentation.
+* SITES-25478: Inhaltsfragmente: Backend-Unterstützung für Verweise auf externe Assets hinzugefügt.
+* SITES-26119: Inhaltsfragmente: Unterstützung für Verweise auf externe Assets im Referenztyp hinzugefügt.
+* SITES-21199: Edge Delivery mit Universal Editor: Unterstützung für aus Seiten erstellte Vorlagen hinzugefügt.
+* SITES-20311: Edge Delivery mit Universal Editor: Unterstützung für das Importieren von CSVs in Tabellen hinzugefügt.
+* SITES-24821: Edge Delivery mit Universal Editor: Aem.page/aem.live wurde zum Standard für die Integration in Edge Delivery gemacht.
+* FORMS-11646: Festlegen von globalContext-Variablen für AEM Forms-relevante Seiten
+* FORMS-14833: Die AEM Forms kann jetzt adaptive Formularfragmente in das endgültige Datensatzdokument (DoR) aufnehmen.
+* FORMS-14255: Benutzer können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen auf demselben oder einem anderen Gerät abzuschließen.
+
 
 ### Behobene Probleme {#fixed-issues-18459}
 
 * CQ-4358730: CQPagePreviewGenerator schlägt fehl, wenn mehr als 10 Schlüssel übersetzt werden müssen.
 * FORMS-14978: Aktivieren des Seitenladevorgangs für ein auf einer Kernkomponente basierendes Formular für den Design-Editor.
-* FORMS-16596: Problem mit der Barrierefreiheit: Deaktivierte Schaltflächen werden vom Reader &quot;Bildschirm&quot;nicht erkannt.
+* FORMS-16596: Problem mit der Barrierefreiheit: Deaktivierte Schaltflächen werden von der Bildschirmlesehilfe nicht erkannt.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader versucht, mehr als 100.000 Zeilen zu laden.
-* SITES-20755: Inhaltsfragmente: Asset-Referenz mit UUID-Aktualisierung zeigt die Miniaturansicht nicht an.
-* SITES-26253: Inhaltsfragmente: UUID-Migration: Ändern Sie das Thema des Sling-Auftrags in &quot;generisch&quot;.
-* SITES-21338: Inhaltsfragmente: referencedBy -Endpunkt gibt nicht den richtigen Seitenverweis zurück.
-* SITES-24421: Inhaltsfragmente: Der Endpunkt &quot;CF bearbeiten&quot;funktioniert nicht für über GET CF abgerufene Inhaltsfragmente.
+* SITES-20755: Inhaltsfragmente: Asset-Verweis mit UUID-Aktualisierung zeigt die Miniaturansicht nicht an.
+* SITES-26253: Inhaltsfragmente: UUID-Migration: Das Thema „Sling-Auftrag“ wurde geändert, um es allgemein zu machen.
+* SITES-21338: Inhaltsfragmente: referencedBy-Endpunkt gibt nicht den richtigen Seitenverweis zurück.
+* SITES-24421: Inhaltsfragmente: Bearbeiten des CF-Endpunkts funktioniert nicht für über GET CF abgerufene Inhaltsfragmente.
 * SITES-25461: Inhaltsfragmente: Beim Filtern nach Modell bei der Suche nach Inhaltsfragmenten sollte nicht zwischen Groß- und Kleinschreibung unterschieden werden.
 * SITES-25471: Inhaltsfragmente: Fehlerbehebung bei der Validierung globaler Modelle im ModelValidatorServlet.
 * SITES-25795: Inhaltsfragmente: Die CF-Modell-API schlägt fehl, wenn kein CQ-Datum festgelegt ist.
-* SITES-25817: Content Fragments: Enhance promoteLaunch: update last promotion for CF Launches.
-* SITES-26030: Inhaltsfragmente: Endpoint /referencesTree gibt den benötigten Header nicht zurück.
-* SITES-26031: Inhaltsfragmente: Der Replikationsstatus wird beim CFM-Suchendpunkt nicht zurückgegeben.
-* SITES-26213: Inhaltsfragmente: Inhaltsfragmente, deren Veröffentlichung rückgängig gemacht wird, sollten nur veröffentlichte Verweise validieren.
-* SITES-26226: Inhaltsfragmente: Workflow-Problem starten, wenn keiner der angegebenen Pfade verwendet werden kann.
-* SITES-26238: Inhaltsfragmente: Die von der API zurückgegebenen Asset-Referenzen haben eine andere Reihenfolge als die von JCR zurückgegebene Reihenfolge.
-* SITES-25456: Ereignisse: Beim Verschieben einer Seite wird neben dem Ereignis &quot;Seite verschoben&quot;ein Ereignis generiert, bei dem die Seite gelöscht wurde.
-* SITES-25658: Ereignisse: Die Tier- und sourceUrl-Elemente werden in den Seiteninhaltsstatusereignissen nicht angegeben.
-* SITES-6497: Launches: Seite im Launch erstellen funktioniert nicht.
-* SITES-25938: Launches: Unerwartete Löschungen nach der Übersetzung.
-* SITES-25393: Edge Delivery mit Universal Editor: Textknoten gehen beim Rendern von formatiertem Rich Text mit einem einzigen Absatz verloren.
-* SITES-24643: Edge Delivery mit Universal Editor: OpenGraph- und twitter-Metadatenattribute funktionieren nicht im Seitenmetadatenmodell.
-* SITES-25401: Experience Fragments: Langsame XF-Referenzaktualisierung
+* SITES-25817: Inhaltsfragmente: Verbesserung an promoteLaunch: Letzte Promotion für CF-Launches wurde aktualisiert.
+* SITES-26030: Inhaltsfragmente: /referencesTree-Endpunkt gibt einen benötigten Header nicht zurück.
+* SITES-26031: Inhaltsfragmente: Replikationsstatus wird beim Endpunkt „CFM-Suche“ nicht zurückgegeben.
+* SITES-26213: Inhaltsfragmente: Beim Rückgängigmachen der Veröffentlichung von Inhaltsfragmenten sollten nur veröffentlichte Verweise validiert werden.
+* SITES-26226: Inhaltsfragmente: Workflow-Problem wird gestartet, wenn keiner der angegebenen Pfade verwendet werden kann.
+* SITES-26238: Inhaltsfragmente: Die von der API zurückgegebenen Asset-Verweise haben eine andere Reihenfolge als die von JCR zurückgegebene Reihenfolge.
+* SITES-25456: Ereignisse: Beim Verschieben einer Seite wird neben dem Ereignis „Seite verschoben“ das Ereignis „Seite gelöscht“ generiert.
+* SITES-25658: Ereignisse: Ebene und sourceUrl werden in den Seiteninhaltsstatusereignissen nicht angegeben.
+* SITES-6497: Launches: Das Erstellen einer Seite im Launch funktioniert nicht.
+* SITES-25938: Launches: Unerwartete Löschung nach dem Übersetzungsprojekt.
+* SITES-25393: Edge Delivery mit Universal Editor: Beim Rendern von formatiertem Rich Text mit einem einzigen Absatz gehen Textknoten verloren.
+* SITES-24643: Edge Delivery mit Universal Editor: OpenGraph- und Twitter-Metadatenattribute funktionieren nicht im Seitenmetadatenmodell.
+* SITES-25401: Experience Fragments: Langsames Aktualisieren von XF-Verweisen
+* GRANITE-53907: Dienstbenutzer kann nicht als Workflow-Superuser identifiziert werden
+* CQ-4358028: AEM Projekterstellung schlägt fehl, wenn ein Benutzer mit nur einer Gruppe &quot;Projekt-Administratoren&quot;eine neue Miniaturansicht auf die Projekterstellungsseite hochlädt.
+* FORMS-15682: Das Problem betrifft die FDM-Integration von AEM Forms und Dynamics. Wenn ein Benutzer ein Formular sendet, wird das Datensatzdokument (Document of Record, DOR) nicht als PDF-Anhang an das angegebene Entitätsfeld gesendet.
+* FORMS-15799: Adobe Sign GovCloud-Signaturseite gibt in iframe keinen Renderer aus
+* FORMS-16113: Wenn ein Benutzer, der Administrator des Adobe Sign-Kontos ist, versucht, auf ein Dokument zuzugreifen, das von einem anderen Benutzer (auch einem Administrator) gesendet wurde, gibt die API für die Abruf-Vereinbarung möglicherweise eine andere Zustimmungs-ID zurück als diejenige, die beim Erstellen der Vereinbarung ursprünglich generiert wurde.
 
 
 ### Bekannte Probleme {#known-issues-18459}
