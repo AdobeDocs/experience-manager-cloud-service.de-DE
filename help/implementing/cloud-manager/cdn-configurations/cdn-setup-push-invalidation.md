@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie die Push-Invalidierung für die Erstellung Ih
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 2%
 
 ---
@@ -28,4 +29,4 @@ Die folgenden Konfigurationseigenschaften definieren den Namen des Produktions-H
 
 Nachdem Änderungen am Konfigurationsblatt vorgenommen wurden, müssen Benutzer sie mit dem [Sidekick-Tool](/help/edge/docs/sidekick.md) in der Vorschau anzeigen und aktivieren, um die Aktualisierungen anzuwenden.
 
-Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
+Siehe auch [Über die Aufgabenliste von Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
