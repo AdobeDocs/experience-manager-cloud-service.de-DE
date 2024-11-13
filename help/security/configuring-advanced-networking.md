@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -398,7 +398,7 @@ Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte I
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
-Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Dies kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern, z. B. einem CRM-Anbieter, der VPN unterstützt.
+Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Dies kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern, z. B. einem CRM-Anbieter, der VPN unterstützt.
 
 Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die Informationen in der Spalte **RouteBased-Konfigurationsanweisungen** in [dieser Geräteliste.](https://learn.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Konfigurieren Sie das Gerät wie in der Tabelle beschrieben.
 
