@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
 workflow-type: tm+mt
-source-wordcount: '5794'
+source-wordcount: '5799'
 ht-degree: 98%
 
 ---
@@ -1149,6 +1149,7 @@ ht-degree: 98%
       + Edge Delivery-Sites {#edge-delivery-sites}
          + [Einführung in Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Hinzufügen einer Edge Delivery-Site zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Einrichten der Push-Validierung für eine Edge Delivery-Site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Verwalten von Edge Delivery-Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Domain-Einstellungen {#custom-domain-names}
          + [Einführung in Domain-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1163,7 +1164,6 @@ ht-degree: 98%
          + [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN-Konfigurationen {#cdn-configurations}
          + [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Einrichten der Push-Validierung](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [Verwalten von CDN-Konfigurationen](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP-Zulassungslisten {#ip-allow-lists}
          + [Einführung in IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
