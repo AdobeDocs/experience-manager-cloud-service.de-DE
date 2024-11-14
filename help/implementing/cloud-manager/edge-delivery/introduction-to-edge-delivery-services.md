@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 10%
 
 ---
@@ -63,13 +63,13 @@ Je nach Projektbeginn können Edge Delivery Services auf verschiedene Weise hinz
 >* Sobald die Edge Delivery Services-Lizenz auf ein Programm angewendet oder daraus entfernt wurde, wird die Änderung sofort wirksam, ohne dass eine Pipeline ausgeführt werden muss.
 
 
-## Über die Aufgabenliste von Edge Delivery {#ed-todo-list}
+## Über die Aufgabenliste von Edge Delivery in Cloud Manager {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-Die **Edge Delivery-Aufgabenliste** ist eine Checkliste für Onboarding-Aufgaben, die Sie durch das Onboarding führen und Ihre Edge Delivery-Site bis zum [Go-Live](/help/journey-onboarding/go-live-checklist.md) verwalten soll.
+Die **Edge Delivery-Aufgabenliste** in Cloud Manager ist eine Checkliste für Onboarding-Aufgaben, die Sie durch das Onboarding führen und Ihre Edge Delivery-Site bis zum [Go-Live](/help/journey-onboarding/go-live-checklist.md) verwalten soll.
 
-![Edge Delivery-Website-Aufgabenliste](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Edge Delivery-Website-Aufgabenliste in Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Aufgabe | Beschreibung |
 | --- | --- | --- |

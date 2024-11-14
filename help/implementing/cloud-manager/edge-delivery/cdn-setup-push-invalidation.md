@@ -1,13 +1,13 @@
 ---
-title: Einrichten der Push-Invalidierung
-description: Erfahren Sie, wie Sie die Push-Invalidierung für die Erstellung Ihres eigenen Produktions-CDN konfigurieren.
+title: Einrichten der Push-Invalidierung für eine Edge Delivery-Site
+description: Erfahren Sie, wie Sie die Push-Invalidierung für eine Edge Delivery-Site konfigurieren, um effiziente Inhaltsaktualisierungen und die Caching-Kontrolle sicherzustellen.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---
