@@ -4,7 +4,8 @@ description: Erfahren Sie, wie Sie Adobe Acrobat Sign für [!DNL AEM Forms] as a
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
+exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
+source-git-commit: 31a4a8b5b86439483b058c1fb132979476aab2e5
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 96%
@@ -104,7 +105,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
-   
+   >[!NOTE]
    > Sie können den Scopes-Modifikator direkt von `self` in `account` ändern, wie in Schritt 12 AEM Benutzeroberfläche angegeben.
 
    Schritt-für-Schritt-Anleitungen zum Konfigurieren der OAuth-Einstellungen für ein [!DNL Adobe Acrobat Sign]-Programm und zum Abrufen der Schlüssel finden Sie in der Entwicklerdokumentation unter [Konfigurieren von OAuth-Einstellungen für die Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
