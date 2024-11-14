@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 89%
 
 ---
@@ -101,19 +101,19 @@ Admins können jetzt steuern, ob abgelaufene Assets in Content Hub sichtbar sein
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Neue Funktionen in AEM Forms {#forms-new-features}
+### Neue Funktion in AEM Forms {#forms-new-features}
 
-* **Verbessern des Benutzererlebnisses mit Navigationsschaltflächen in Bereichslayouts**: Sie können Ihren Bedienfeldlayouts jetzt Navigationsschaltflächen hinzufügen, z. B. Horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen vereinfachen das Benutzererlebnis, indem sie die Übergänge zwischen Bedienfeldern vereinfachen und sich auf das ausgewählte Bedienfeld konzentrieren.
+* [Verbessern des Benutzererlebnisses mit Navigationsschaltflächen in Bereichslayouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): Sie können Ihren Bedienfeldlayouts jetzt Navigationsschaltflächen hinzufügen, z. B. Horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen vereinfachen das Benutzererlebnis, indem sie die Übergänge zwischen Bedienfeldern vereinfachen und sich auf das ausgewählte Bedienfeld konzentrieren.
 
-* **Angeben von Anzeigestilen für Datensatzdokumentkomponenten (DoR)**: In einer XFA-Datei können Sie jetzt die Anzeigestile für Datensatzdokumentkomponenten angeben. Diese Stile können später im adaptiven Forms-Editor auf die entsprechenden Komponenten angewendet werden.
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Neue Vorabveröffentlichungsfunktionen in AEM Forms {#forms-new-prerelease-features}
 
-* **Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Forms**: Benutzer können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
+* [Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md): Benutzer können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
 
-* **Adobe Sign-Bereiche einfach aktualisieren**: Sie können die Bereiche einer Adobe Sign-Konfiguration direkt auf der Seite &quot;AEM Cloud-Konfigurationen&quot;ändern, um bestehende Konfigurationen schneller und leichter zu aktualisieren.
+* [Adobe Sign-Bereiche einfach aktualisieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): Sie können die Bereiche einer Adobe Sign-Konfiguration direkt auf der Seite &quot;AEM Cloud-Konfigurationen&quot;ändern, um bestehende Konfigurationen schneller und leichter zu aktualisieren.
 
-* **Asynchrone Funktionsunterstützung für Adaptive Forms**: Wenn für Ihr adaptives Formular asynchrone Vorgänge erforderlich sind, z. B. das Warten auf externe Prozesse oder das Abrufen von Daten, können Sie diese Vorgänge mit benutzerdefinierten Funktionen implementieren und im Regeleditor konfigurieren.
+* [Asynchrone Funktionsunterstützung für Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md): Wenn für Ihr adaptives Formular asynchrone Vorgänge erforderlich sind, z. B. das Warten auf externe Prozesse oder das Abrufen von Daten, können Sie diese Vorgänge mit benutzerdefinierten Funktionen implementieren und im Regeleditor konfigurieren.
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 #### AEM Forms-KI-Assistent
 
-Die generative KI für adaptive Formulare bietet eine völlig neue Leistungsstärke und erleichtert Ihre Formularentwicklungsprozesse. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
+[Generative KI für adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) bietet eine völlig neue Leistungsstärke und Leichtigkeit für Ihre Formularentwicklungsprozesse. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
 
 ![Generativer KI-Assistent, adaptive Formulare](/help/forms/assets/generative-ai-assistant.png)
 
