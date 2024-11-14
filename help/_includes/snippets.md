@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # Snippets {#snippets}
@@ -214,7 +214,7 @@ Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erforde
 
 Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Site in Cloud Manager registrieren. Allen Benutzenden von AEM as a Cloud Service wird empfohlen, ihre Website bei Cloud Manager zu registrieren, was [eine Reihe von Vorteilen mit sich bringt](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Falls Sie Ihre Website nicht bereits registriert haben, finden Sie weitere Informationen dazu in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-Sobald Ihre Website bei Cloud Manager registriert ist, gehen Sie wie folgt vor, um über die Admin Console ein Support-Ticket einzureichen:
+**So protokollieren Sie ein Support-Ticket:**
 
 1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
