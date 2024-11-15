@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -22,22 +22,22 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 13.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Option zum Wiederholen der CORS-Zeitüberschreitung:** Mit der Version 2024.09.26, ](/help/release-notes/universal-editor/2024/2024-09-26.md) wurde ein Fehlerbedienfeld eingeführt, wenn der Editor keine Verbindung zur geladenen Seite herstellen konnte, wodurch endlose Ladezustände verhindert wurden.[
-   * Mit dieser Version versucht der Editor automatisch das Wiederholen. Sobald die Verbindung hergestellt ist, kann die Bearbeitung fortgesetzt werden.
-   * Dies ist besonders für Seiten nützlich, die länger als die einminütige Zeitüberschreitung dauern können, bis sie initialisiert werden.
-* **Erweiterbarkeitsverbesserungen für Entwickler:** Der Universal Editor unterstützt jetzt das Senden von Ereignissen an Erweiterungen, sodass Erweiterungsentwickler [Ereignisse abonnieren können.](/help/implementing/universal-editor/events.md)
-   * Dadurch können Entwickler [auf Editor-Ereignisse innerhalb ihrer benutzerdefinierten Erweiterungen reagieren.](/help/implementing/universal-editor/customizing.md#extending)
-* **Persistente Komponentenauswahl:** Ausgewählte Komponenten im Editor bleiben jetzt auch nach der Aktualisierung des Browsers erhalten.
-   * Dadurch wird sichergestellt, dass Benutzer ihre Arbeit fortsetzen können, ohne ihren Kontext beim Neuladen der Seite zu verlieren.
-* **Lokalisierte Schnelllinks:** Der Abschnitt **Quick Links** auf dem Startbildschirm enthält jetzt lokalisierte Links zur Dokumentation, die Benutzern den einfachen Zugriff auf relevante Handbücher basierend auf ihren Spracheinstellungen ermöglichen.
-* **Anforderungs-ID für erweitertes Debugging:** Fehlerbenachrichtigungen enthalten jetzt eine **Anforderungs-ID** im Detailabschnitt, die mit der `x-request-id header` korreliert.
-   * Dies erleichtert es Adobe-Engineering-Teams, Probleme zu erkennen und zu diagnostizieren, indem sie diese Fehler mit internen Protokollen abgleichen.
+* **Wiederholungsoption bei CORS-Timeout:** Mit der ](/help/release-notes/universal-editor/2024/2024-09-26.md)Version 2024.09.26[ wurde ein Fehlerbedienfeld für Situationen eingeführt, in denen der Editor keine Verbindung zur geladenen Seite herstellen kann, wodurch endlose Ladezustände verhindert werden.
+   * Seit dieser Version versucht es der Editor automatisch erneut, und sobald die Verbindung hergestellt ist, kann die Bearbeitung fortgesetzt werden.
+   * Das ist besonders für Seiten nützlich, deren Initialisierung länger als das einminütige Timeout dauern kann.
+* **Verbesserungen bei der Erweiterbarkeit für die Entwicklung:** Der universelle Editor unterstützt jetzt das Senden von Ereignissen an Erweiterungen, sodass Erweiterungsentwicklerinnen und -entwickler [Ereignisse](/help/implementing/universal-editor/events.md) abonnieren können.
+   * Dadurch können Entwickelnde [auf Editor-Ereignisse innerhalb ihrer benutzerdefinierten Erweiterungen reagieren](/help/implementing/universal-editor/customizing.md#extending).
+* **Persistente Komponentenauswahl:** Im Editor ausgewählte Komponenten bleiben jetzt auch nach der Aktualisierung des Browsers erhalten.
+   * Dadurch wird sichergestellt, dass Benutzende beim Neuladen der Seite ihre Arbeit fortsetzen können, ohne ihren Kontext zu verlieren.
+* **Lokalisierte Schnell-Links:** Der Abschnitt **Schnell-Links** am Startbildschirm enthält jetzt lokalisierte Links zur Dokumentation, die Benutzenden den einfachen Zugriff auf relevante Handbücher basierend auf ihren Spracheinstellungen ermöglichen.
+* **Anfrage-ID für erweitertes Debugging:** Fehlerbenachrichtigungen enthalten jetzt im Abschnitt „Details“ eine **Anfrage-ID**, die mit `x-request-id header` korreliert.
+   * Das erleichtert es Engineering-Teams von Adobe, Probleme zu erkennen und zu diagnostizieren, indem sie diese Fehler mit internen Protokollen abgleichen können.
 
-## Weitere Verbesserungen {#other-improvements}
+## Andere Verbesserungen {#other-improvements}
 
-* **Korrektur der Beschriftungen der langen Inhaltsstruktur:** Behebung eines Problems, bei dem lange Beschriftungen im Bedienfeld **Inhaltsstruktur** abgeschnitten wurden
-   * Dadurch wird sichergestellt, dass Drag &amp; Drop-Handles immer für die Neuanordnung von Inhalten sichtbar sind.
-* **Beschriftungen für lange Eigenschaften behoben:** Es wurde ein Fehler behoben, durch den lange Feldbezeichnungen im Bedienfeld **Eigenschaften** mit Feldvalidierungsinformationen überlagert wurden.
-* **Horizontaler Bildlauf im Eigenschaftenbedienfeld:** Es wurde ein Problem behoben, bei dem breite Elemente im Bedienfeld **Eigenschaften** einen horizontalen Bildlauf verursachten.
-* **Inaktive Symbolleiste während Benachrichtigungen korrigiert:** Die obere Symbolleiste **Adobe Experience Cloud** funktioniert jetzt vollständig, wenn [toast](https://spectrum.adobe.com/page/toast/) -Benachrichtigungen angezeigt werden.
-* **Verbesserte Stabilität:** Es wurden Fehlergrenzen hinzugefügt, mit denen unerwartete Werte verarbeitet werden können. Dadurch wird verhindert, dass die gesamte Benutzeroberfläche abstürzt, wenn ein einzelner Renderer oder Validator fehlschlägt, was die Stabilität verbessert.
+* **Korrektur für lange Beschriftungen der Inhaltsstruktur:** Es wurde ein Problem behoben, durch das lange Beschriftungen im Bedienfeld **Inhaltsstruktur** abgeschnitten wurden
+   * Dadurch wird sichergestellt, dass Drag-and-Drop-Griffe immer für die Neuanordnung von Inhalten sichtbar sind.
+* **Korrektur von langen Eigenschaftenbeschriftungen:** Es wurde ein Fehler behoben, durch den sich lange Feldbeschriftungen im Bedienfeld **Eigenschaften** mit Feldvalidierungsinformationen überlappten.
+* **Horizontaler Bildlauf im Bedienfeld „Eigenschaften“:** Es wurde ein Problem behoben, durch das breite Elemente im Bedienfeld **Eigenschaften** einen horizontalen Bildlauf verursachten
+* **Korrektur der während Benachrichtigungen inaktiven Symbolleiste:** Die obere Symbolleiste von **Adobe Experience Cloud** funktioniert jetzt vollständig, wenn [Popup](https://spectrum.adobe.com/page/toast/)-Benachrichtigungen angezeigt werden.
+* **Verbesserte Stabilität:** Es wurden Fehlergrenzen hinzugefügt, mit denen unerwartete Werte verarbeitet werden können. Dadurch wird verhindert, dass die gesamte Benutzeroberfläche abstürzt, wenn ein einzelner Renderer oder Validator fehlschlägt, was die Stabilität verbessert
