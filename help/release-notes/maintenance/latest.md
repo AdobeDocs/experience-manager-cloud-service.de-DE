@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 74%
+ht-degree: 93%
 
 ---
 
@@ -26,8 +26,8 @@ Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für di
 
 * CQ-4357471: Unterstützung für Übersetzung mit i18n-Wörterbüchern in AEMaaCS hinzugefügt.
 * FORMS-11646: Festlegen von globalContext-Variablen für AEM Forms-relevante Seiten.
-* FORMS-14833: Die AEM Forms kann jetzt adaptive Formularfragmente in das endgültige Datensatzdokument (DoR) aufnehmen.
-* FORMS-14255: Benutzer können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen auf demselben oder einem anderen Gerät abzuschließen.
+* FORMS-14833: AEM Forms kann jetzt adaptive Formularfragmente in den endgültigen Nachweis (Document of Record, DoR) aufnehmen.
+* FORMS-14255: Benutzende profitieren jetzt von einer Funktion zum automatischen Speichern, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen.
 * SITES-23591: Inhaltsfragmente: Aktualisierung von Inhaltsfragmenten für UUID-Unterstützung.
 * SITES-25440: Inhaltsfragmente: CFM-Such-API zur Anzeige des Replikationsstatus.
 * SITES-24369: Inhaltsfragmente: Verbesserungen an der OpenAPI-Dokumentation.
@@ -40,11 +40,11 @@ Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für di
 ### Behobene Probleme {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator schlägt fehl, wenn mehr als 10 Schlüssel übersetzt werden müssen.
-* CQ-4358028: AEM Projekterstellung schlägt fehl, wenn ein Benutzer mit nur einer Gruppe &quot;Projekt-Administratoren&quot;eine neue Miniaturansicht auf die Projekterstellungsseite hochlädt.
+* CQ-4358028: AEM Projekterstellung schlägt fehl, wenn Benutzende nur mit der Gruppe „project-administrators“ eine neue Miniaturansicht auf die Projekterstellungsseite hochladen.
 * FORMS-14978: Aktivieren des Seitenladevorgangs für ein auf einer Kernkomponente basierendes Formular für den Design-Editor.
-* FORMS-15682: Das Problem betrifft die FDM-Integration von AEM Forms und Dynamics. Wenn ein Benutzer ein Formular sendet, wird das Datensatzdokument (Document of Record, DOR) nicht als PDF-Anhang an das angegebene Entitätsfeld gesendet.
+* FORMS-15682: Das Problem betrifft die FDM-Integration von AEM Forms und Dynamics. Wenn Benutzende ein Formular senden, wird der Nachweis (Document of Record, DOR) nicht als PDF-Anhang an das angegebene Entitätsfeld gesendet.
 * FORMS-15799: Adobe Sign GovCloud-Signaturseite gibt keine Wiedergabe in iframe aus.
-* FORMS-16113: Wenn ein Benutzer, der Administrator des Adobe Sign-Kontos ist, versucht, auf ein Dokument zuzugreifen, das von einem anderen Benutzer (auch einem Administrator) gesendet wurde, gibt die API für die Abruf-Vereinbarung möglicherweise eine andere Zustimmungs-ID zurück als diejenige, die beim Erstellen der Vereinbarung ursprünglich generiert wurde.
+* FORMS-16113: Wenn Benutzende, die Admins des Adobe Sign-Kontos sind, versuchen, auf ein Dokument zuzugreifen, das von einer anderen Person (ebenfalls Admin) gesendet wurde, gibt die API für die Abruf-Vereinbarung möglicherweise eine andere Zustimmungs-ID zurück als diejenige, die beim Erstellen der Vereinbarung ursprünglich generiert wurde.
 * FORMS-16596: Problem mit der Barrierefreiheit: Deaktivierte Schaltflächen werden von der Bildschirmlesehilfe nicht erkannt.
 * GRANITE-53907: Dienstbenutzer können nicht als Workflow-Superuser identifiziert werden.
 * SKYOPS-90560: Die neueste Version des Sling-Modells wirkt sich auf die Leistung beim Sling-Modell-Export aus.

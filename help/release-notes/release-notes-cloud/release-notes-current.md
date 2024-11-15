@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -103,17 +103,17 @@ Admins können jetzt steuern, ob abgelaufene Assets in Content Hub sichtbar sein
 
 ### Neue Funktion in AEM Forms {#forms-new-features}
 
-* [Verbessern des Benutzererlebnisses mit Navigationsschaltflächen in Bereichslayouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): Sie können Ihren Bedienfeldlayouts jetzt Navigationsschaltflächen hinzufügen, z. B. Horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen vereinfachen das Benutzererlebnis, indem sie die Übergänge zwischen Bedienfeldern vereinfachen und sich auf das ausgewählte Bedienfeld konzentrieren.
+* [Verbessern des Anwendererlebnisses mit Navigations-Schaltflächen in Bedienfeld-Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): Sie können Ihren Bedienfeld-Layouts jetzt Navigations-Schaltflächen hinzufügen, z. B. horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen verbessern das Anwendererlebnis, indem sie die Übergänge zwischen Bedienfeldern vereinfachen und sich auf das ausgewählte Bedienfeld konzentrieren.
 
 <!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
-### Neue Vorabveröffentlichungsfunktionen in AEM Forms {#forms-new-prerelease-features}
+### Neue Vorabversionsfunktionen in AEM Forms {#forms-new-prerelease-features}
 
-* [Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md): Benutzer können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
+* [Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare](/help/forms/save-core-component-based-form-as-draft.md): Benutzende können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
 
-* [Adobe Sign-Bereiche einfach aktualisieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): Sie können die Bereiche einer Adobe Sign-Konfiguration direkt auf der Seite &quot;AEM Cloud-Konfigurationen&quot;ändern, um bestehende Konfigurationen schneller und leichter zu aktualisieren.
+* [Adobe Sign-Bereiche einfach aktualisieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): Sie können die Bereiche einer Adobe Sign-Konfiguration direkt auf der Seite „AEM Cloud-Konfigurationen“ ändern, um bestehende Konfigurationen schneller und leichter zu aktualisieren.
 
-* [Asynchrone Funktionsunterstützung für Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md): Wenn für Ihr adaptives Formular asynchrone Vorgänge erforderlich sind, z. B. das Warten auf externe Prozesse oder das Abrufen von Daten, können Sie diese Vorgänge mit benutzerdefinierten Funktionen implementieren und im Regeleditor konfigurieren.
+* [Unterstützung von asynchronen Funktionen für adaptive Formulare](/help/forms/using-async-funct-in-rule-editor.md): Wenn für Ihr adaptives Formular asynchrone Vorgänge erforderlich sind, z. B. das Warten auf externe Prozesse oder das Abrufen von Daten, können Sie diese Vorgänge mit benutzerdefinierten Funktionen implementieren und im Regel-Editor konfigurieren.
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
