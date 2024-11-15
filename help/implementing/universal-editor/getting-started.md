@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten 
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 395cb7b2e37c7358baa7ae07329f42bd5a560cb1
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 96%
 
 ---
 
@@ -20,82 +20,7 @@ Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie m
 >
 >Wenn Sie lieber direkt in ein Beispiel eintauchen möchten, können Sie die [Beispielanwendung des universellen Editors auf GitHub ansehen.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-## Onboarding-Schritte {#onboarding}
-
-Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM-App als Beispiel.
-
-Es gibt verschiedene Schritte für das Onboarding Ihrer AEM-App und ihre Instrumentierung für die Verwendung des universellen Editors.
-
-1. [Schließen Sie die Hauptbibliothek des universellen Editors ein.](#core-library)
-1. [Fügen Sie die erforderliche OSGi-Konfiguration hinzu.](#osgi-configurations)
-1. [Instrumentieren Sie die Seite.](#instrument-page)
-
-Dieses Dokument führt Sie durch diese Schritte.
-
-## Einschließen der Hauptbibliothek des universellen Editors {#core-library}
-
-Bevor Ihre App für die Verwendung mit dem universellen Editor instrumentiert werden kann, muss sie die folgende Abhängigkeit enthalten.
-
-```javascript
-@adobe/universal-editor-cors
-```
-
-Um die Instrumentierung zu aktivieren, muss der folgende Import zu Ihrer `index.js` hinzugefügt werden.
-
-```javascript
-import "@adobe/universal-editor-cors";
-```
-
-### Alternative für Nicht-React-Apps {#alternative}
-
-Wenn Sie keine React-App implementieren und/oder Server-seitiges Rendering erforderlich ist, besteht eine alternative Methode darin, Folgendes in den Hauptteil des Dokuments einzuschließen.
-
-```html
-<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
-```
-
-Es wird immer die neueste Version empfohlen, im Bedarfsfall kann aber auch auf frühere Versionen des Service verwiesen werden.
-
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - die neueste EU CORS-Bibliothek
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` – die neueste UE CORS-Bibliothek unter Version 2.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` – die neueste UE CORS-Bibliothek unter Version 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- die UE CORS-Bibliothek in der Version 2.1.1
-
-## Hinzufügen der erforderlichen OSGi-Konfigurationen {#osgi-configurations}
-
-Um AEM-Inhalte mit Ihrer App mithilfe des Universal Editors bearbeiten zu können, müssen die CORS- und Cookie-Einstellungen in AEM vorgenommen werden.
-
-Die folgenden [OSGi-Konfigurationen müssen in der AEM-Autoreninstanz festgelegt werden.](/help/implementing/deploying/configuring-osgi.md)
-
-* `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* Entfernen Sie die Kopfzeile X-FRAME-OPTIONS: SAMEORIGIN in `org.apache.sling.engine.impl.SlingMainServlet`
-
-### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
-
-Das Anmelde-Token-Cookie muss als Drittanbieter-Domain an AEM gesendet werden. Daher muss das same-site-Cookie explizit auf `None` gesetzt werden.
-
-Diese Eigenschaft muss in der OSGi-Konfiguration `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` eingestellt werden.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-          token.samesite.cookie.attr="None" />
-```
-
-### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
-
-X-Frame-Optionen: SAMEORIGIN verhindert das Rendern von AEM-Seiten in einem iFrame. Wenn Sie die Kopfzeile entfernen, können die Seiten geladen werden.
-
-Diese Eigenschaft muss in der OSGi-Konfiguration `org.apache.sling.engine.impl.SlingMainServlet` eingestellt werden.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          jcr:primaryType="sling:OsgiConfig"
-          sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
-```
+Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM App als Beispiel. Dieses Dokument führt Sie durch diese Schritte.
 
 ## Instrumentieren der Seite {#instrument-page}
 
