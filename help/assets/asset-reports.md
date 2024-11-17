@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -65,7 +65,11 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
    ![Tools-Seite zum Navigieren in Asset-Berichten](assets/navigation.png)
 
 1. Klicken Sie auf der Seite [!UICONTROL Asset-Berichte] in der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den Bericht aus, den Sie erstellen möchten, und klicken Sie auf **[!UICONTROL Weiter]**. Geben Sie sich ein **AEM Administrator-Produktprofil** an, um einen **Download** -Bericht zu erstellen. Siehe [Zuweisen AEM Produktprofile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) , um sich einem AEM Administrator-Produktprofil zuzuweisen.
+1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den Bericht aus, den Sie erstellen möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
+
+   >[!NOTE]
+   >
+   >Geben Sie sich ein **AEM Administrator-Produktprofil** an, um einen **Download** -Bericht zu erstellen. Siehe [Zuweisen AEM Produktprofile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) , um sich einem AEM Administrator-Produktprofil zuzuweisen.
 
    ![Berichtstyp auswählen](assets/choose_report.png)
 
