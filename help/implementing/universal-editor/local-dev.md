@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihren eigenen Universal Editor-Dienst entwede
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 82%
+source-wordcount: '932'
+ht-degree: 77%
 
 ---
 
@@ -76,9 +76,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-Dies sind die Mindestwerte, die für die lokale Entwicklung in unserem Beispiel erforderlich sind. In der folgenden Tabelle sind diese und zusätzliche Werte aufgeführt.
+Dies sind die Mindestwerte, die für die lokale Entwicklung in unserem Beispiel erforderlich sind.
+
+>[!NOTE]
+>
+>Wenn Sie Chrome-Version 130+ ausführen, müssen Sie das Senden von CORS-Kopfzeilen für den privaten Netzwerkzugriff [1} mithilfe der Option `UES_CORS_PRIVATE_NETWORK` aktivieren.](https://wicg.github.io/private-network-access/#private-network-request)
+
+
+In der folgenden Tabelle sind diese und zusätzliche Werte aufgeführt.
 
 | Wert | Optional | Standard | Beschreibung |
 |---|---|---|---|
@@ -93,6 +101,7 @@ Dies sind die Mindestwerte, die für die lokale Entwicklung in unserem Beispiel 
 | `UES_SPLUNK_TOKEN` | Ja | Kein | Splunk-Token |
 | `UES_SPLUNK_INDEX` | Ja | Kein | Index zum Schreiben von Protokollen |
 | `UES_SPLUNK_SOURCE` | Ja | `universal-editor-service` | Name der Quelle in den Splunk-Protokollen |
+| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Aktivieren Sie das Senden von CORS-Headern, um das private Netzwerk [zuzulassen.](https://wicg.github.io/private-network-access/#private-network-request) Erforderlich für Benutzer von Chrome Version 130+ |
 
 >[!NOTE]
 >
