@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie zwischengespeicherte Objekte aus dem Adobe-CD
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 95%
 
 ---
 
@@ -74,6 +74,19 @@ curl
 ```
 
 Beachten Sie, dass der `X-AEM-Purge`-Header den Wert „all“ enthalten muss.
+
+## Interaktion mit kundenverwaltetem CDN
+
+Im Fall eines [vom Kunden verwalteten CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) müssen auch die `X-Forwarded-Host` und `X-AEM-Edge-Key` angegeben werden:
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## Interaktionen mit der Apache-/Dispatcher-Ebene {#apache-layer}
 
