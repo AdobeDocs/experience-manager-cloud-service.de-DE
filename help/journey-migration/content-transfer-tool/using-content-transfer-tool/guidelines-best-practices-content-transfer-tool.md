@@ -4,10 +4,10 @@ description: Lernen Sie die Richtlinien und Best Practices für die Verwendung d
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 100%
+source-wordcount: '1389'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Die allgemeine Formel zur Berechnung des erforderlichen freien Speicherplatzes l
 * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
 Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
 
-* Während der gesamten Übertragung von Inhalten muss ein Migrationssatz beibehalten werden, um die Auffüllung von Inhalten zu unterstützen. Es können maximal 10 Migrationssätze pro Projekt in Cloud Acceleration Manager erstellt und verwaltet werden, während die Aktivität zum Übertragen von Inhalten ausgeführt wird. Wenn mehr als 10 Migrationssätze benötigt werden, erstellen Sie in Cloud Acceleration Manager ein zweites Projekt. Dies erfordert jedoch zusätzliches Projekt-Management und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzenden überschrieben werden.
+* Während der gesamten Übertragung von Inhalten muss ein Migrationssatz beibehalten werden, um die Auffüllung von Inhalten zu unterstützen. Es können maximal 10 Migrationssätze pro Projekt in Cloud Acceleration Manager erstellt und gleichzeitig verwaltet werden, während die Aktivität zum Übertragen von Inhalten ausgeführt wird. Wenn mehr als 10 Migrationssätze benötigt werden, erstellen Sie in Cloud Acceleration Manager ein zweites Projekt. Dies erfordert jedoch zusätzliches Projekt-Management und Out-of-Product-Governance, um zu verhindern, dass Inhalte auf dem Ziel von mehreren Benutzenden überschrieben werden.
 
 * Ändern Sie nicht das Installationsverzeichnis des CTT-Tools. Standardmäßig findet die Installation im Pfad „crx-quickstart/cloud-migration“ statt. Dieser spezifische Speicherort wird intern von anderen Bibliotheken verwendet. Eine Änderung dieses Pfads kann zu Extraktionsproblemen führen.
 
@@ -72,8 +72,6 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Admins, die der Gruppe **Admins** hinzugefügt werden. Benutzende müssen erneut zur **Admin-Gruppe** hinzugefügt werden, um das Zugriffs-Token für das Content Transfer Tool abrufen zu können.
 
-* Aufnahmen unterstützen nicht das Zusammenführen von Inhalten aus mehreren Quellen in der Zielinstanz von Cloud Service, wenn die Inhalte aus den beiden Quellen in dieselben Pfade auf dem Ziel verschoben werden. Wenn Sie Inhalte aus mehreren Quellen in eine einzige Zielinstanz von Cloud Service verschieben möchten, stellen Sie sicher, dass sich die Inhaltspfade der Quellen nicht überschneiden.
-
 * Der Extraktionsschlüssel ist 14 Tage nach seiner Erstellung/Erneuerung gültig. Er kann jederzeit erneuert werden. Wenn der Extraktionsschlüssel abgelaufen ist, können Sie keine Extraktion durchführen.
 
 * Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Alle Inhalte, die im Migrationssatz angegeben sind, werden in die gewählte Zielinstanz aufgenommen. Benutzende können einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Adobe empfiehlt, beim Verschieben von Inhalten auf eine Produktionsinstanz CTT auf der Quell-Autoreninstanz zu installieren, um Inhalte auf die Ziel-Autoreninstanz zu verschieben. Installieren Sie auf ähnliche Weise CTT auf der Quell-Veröffentlichungsinstanz, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Einzelheiten finden Sie unter [Ausführen des Content Transfer Tools auf einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#running-tool).
@@ -91,6 +89,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * Wenn Sie eine Auffüllung vornehmen möchten, darf sich die Inhaltsstruktur der vorhandenen Inhalte zwischen der ersten Extraktion und der Auffüllungsextraktion nicht ändern. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Achten Sie darauf, dies während des Migrationsprozesses entsprechend einzuschränken.
 
 * Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
+
+* Das Content Transfer Tool (CTT) unterstützt keine Zusammenführungsaufnahmen. Um Inhalte aus mehreren Cloud Services in einer einzigen Inhaltsinstanz zu konsolidieren, können nur  aus einem Quellsystem migriert werden. Dieser Prozess erfordert die Verwendung von Migrationen mit dem Parameter &quot;wipe=false&quot;, was aufgrund der inkrementellen Natur des Vorgangs zu längeren Erfassungszeiten führen kann. Wenn möglich, konsolidieren Sie Inhalte auf einem einzigen Quellsystem, bevor Sie mit der Migration beginnen, um die Notwendigkeit der Zusammenführung von Inhalten zu vermeiden.
 
 * Ein Migrationssatz läuft nach längerer Inaktivität ab. Danach sind die zugehörigen Daten nicht mehr verfügbar. Weitere Informationen finden Sie unter [Ablauf von Migrationssätzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#migration-set-expiry).
 
