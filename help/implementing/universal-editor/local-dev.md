@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihren eigenen Universal Editor-Dienst entwede
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 77%
@@ -154,7 +154,7 @@ Nach der Festlegung sollte jeder Inhaltsaktualisierungsaufruf an `https://localh
 
 Mit dem [lokal ausgeführten Dienst „Universeller Editor“](#running-ue) und Ihrer [Inhaltsseite, die für die Verwendung des lokalen Dienstes instrumentiert wurde, ](#using-loca-ue)können Sie jetzt den Editor starten.
 
-1. Öffnen Sie in Ihrem Browser `https://localhost:8000/corslib/LATEST`.
+1. Öffnen Sie in Ihrem Browser `https://localhost:8000/ping`.
 1. Weisen Sie Ihren Browser an, um [Ihr selbstsigniertes Zertifikat](#ue-https) zu akzeptieren.
 1. Sobald das selbstsignierte Zertifikat als vertrauenswürdig eingestuft wurde, können Sie die Seite mit Ihrem lokalen Dienst „Universeller Editor“ bearbeiten.
 
