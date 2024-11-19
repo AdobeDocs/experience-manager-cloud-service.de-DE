@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Die folgende Liste enthält solche WIP-Funktionen und alternative Lösungen. Wen
 | [Sprachkopie](/help/sites-cloud/administering/translation/overview.md) | Teilweise verfügbar | Komponenten übernehmen Inhalte, die Vererbung kann jedoch nur auf Seitenebene rückgängig gemacht werden | [Inhaltsvererbung im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Multi-Site-Management](/help/sites-cloud/administering/msm/overview.md) | Teilweise verfügbar | Komponenten übernehmen Inhalte, die Vererbung kann jedoch nur auf Seitenebene rückgängig gemacht werden | [Inhaltsvererbung im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Launches](/help/sites-cloud/authoring/launches/overview.md) | Teilweise verfügbar | Komponenten übernehmen Inhalte, die Vererbung kann jedoch nur auf Seitenebene rückgängig gemacht werden | [Inhaltsvererbung im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [Seitenvorlagen](/help/sites-cloud/authoring/page-editor/templates.md) | Bald! | Aus Vorlagen erstellte Seiten sind unabhängige Kopien der ursprünglichen Vorlage. | [Verwenden von Seitenvorlagen mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/templates.md) |
+| [Seitenvorlagen](/help/sites-cloud/authoring/page-editor/templates.md) | Teilweise verfügbar | Aus Vorlagen erstellte Seiten sind unabhängige Kopien der ursprünglichen Vorlage. | [Verwenden von Seitenvorlagen mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [ContextHub und Targeting](/help/sites-cloud/authoring/personalization/overview.md) | Nicht verfügbar |  |  |
 | [Timewarp](/help/sites-cloud/authoring/launches/preview.md) | Nicht verfügbar |  |  |
 | [Zugehörige Inhalte](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | Nicht verfügbar |  |  |
