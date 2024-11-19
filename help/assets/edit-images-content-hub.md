@@ -2,19 +2,25 @@
 title: Bilder in Content Hub mit Adobe Express bearbeiten
 description: Bilder in Content Hub mit Adobe Express bearbeiten
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '436'
+ht-degree: 6%
 
 ---
 
 # Bilder in Content Hub bearbeiten {#edit-images-content-hub}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Bilder in Content Hub mit Adobe Expreß bearbeiten](assets/edit-images-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Mit Content Hub können Sie neue Inhalte mit Adobe Express erstellen. Sie können vorhandene Inhalte mit einfach zu verwendenden Tools bearbeiten, markenspezifische Varianten mit Vorlagen und Markenelementen erstellen und neue Inhalte mit den neuesten GenAI-Funktionen von Adobe Firefly erstellen.
 
@@ -24,7 +30,7 @@ Berechtigungen für den Zugriff auf Adobe Expreß- und [Content Hub-Benutzer mit
 
 >[!NOTE]
 >
->Sie können Bilder von PNG- und JPG/JPEG-Dateitypen mit [!DNL Adobe Express] bearbeiten.
+Sie können Bilder von PNG- und JPG/JPEG-Dateitypen mit [!DNL Adobe Express] bearbeiten.
 
 ## Bearbeiten von Bildern mit [!DNL Adobe Express] {#edit-images-using-content-hub}
 

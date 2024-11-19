@@ -2,17 +2,23 @@
 title: Suchen nach Assets in Content Hub
 description: Erfahren Sie, wie Sie in [!DNL Content Hub] nach Assets suchen
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
 
-
 # Assets in [!DNL Content Hub] durchsuchen {#search-assets}
 
 ![Asset-Bannerbild freigeben](assets/search.png)
+
+>[!AVAILABILITY]
+>
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Wenn Sie eine große Anzahl von Assets in Ihrem Repository haben, ist die Suche nach dem richtigen Asset zeitaufwendig. Mit der Suche [!DNL The Content Hub] können Sie nach den genehmigten Assets suchen, damit Sie zusätzliche Aktionen für sie ausführen können, z. B. Sammlungen herunterladen, freigeben oder erstellen. Sie können verschiedene Funktionen nutzen, um Ihre Suchergebnisse einzugrenzen, z. B. die textbasierte Suche, die Verwendung von Filtern, die Durchführung von Tags oder die Suche nach Smart-Tags, die Suche nach einem bestimmten Dateiformat usw.
 

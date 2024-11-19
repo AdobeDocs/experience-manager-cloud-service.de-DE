@@ -2,9 +2,9 @@
 title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen, um sie in Content Hub verfügbar zu machen.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 6%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Genehmigen von Assets für Content Hub](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Brand Manager und Marketingexperten behalten die strenge Kontrolle über Marken-Assets. In Content Hub können nur genehmigte und neueste Versionen des Assets verwendet werden. Dadurch wird Markenkonsistenz in allen Kanälen und Anwendungen sichergestellt.
 
@@ -34,7 +40,7 @@ Die Assets, die in Assets as a Cloud Service als `approved` markiert sind, sind 
 
 >[!NOTE]
 >
->Assets as a Cloud Service und Content Hub müssen dieselbe Organisation verwenden, damit die Assets in Content Hub angezeigt werden.
+Assets as a Cloud Service und Content Hub müssen dieselbe Organisation verwenden, damit die Assets in Content Hub angezeigt werden.
 
 So legen Sie den Asset-Status mithilfe der Assets-Ansicht in AEM as a Cloud Service auf &quot;`approved`&quot;fest:
 
@@ -89,7 +95,7 @@ Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene
 
 >[!NOTE]
 > 
->Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Für vorhandene Assets im Ordner müssen Sie sie manuell auswählen und genehmigen.
+Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Für vorhandene Assets im Ordner müssen Sie sie manuell auswählen und genehmigen.
 
 ## Verwalten von mit Content Hub hochgeladenen Assets {#manage-assets-uploaded-using-content-hub}
 

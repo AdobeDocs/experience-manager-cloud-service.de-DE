@@ -2,17 +2,23 @@
 title: Integrieren der Remote-Version von AEM Assets mit AEM Sites
 description: Erfahren Sie, wie Sie AEM Sites mit genehmigtem AEM Assets konfigurieren und verbinden.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 14%
+source-wordcount: '1029'
+ht-degree: 15%
 
 ---
 
 # Integrieren der Remote-Version von AEM Assets mit AEM Sites  {#integrate-approved-assets}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Handbuch für Dynamic Media mit OpenAPI-Funktionen PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Die effektive Verwaltung digitaler Assets ist für die Bereitstellung ansprechender und konsistenter Markenerlebnisse auf verschiedenen Online-Plattformen von entscheidender Bedeutung. Dynamic Media mit OpenAPI-Funktionen verbessern die Verwaltung digitaler Assets, indem eine nahtlose Integration zwischen AEM Sites und AEM Assets as a Cloud Service ermöglicht wird. Mit dieser innovativen Funktion können Sie verschiedene Arten genehmigter digitaler Assets in mehreren AEM-Umgebungen freigeben und verwalten und so Workflows für Sites-Autoren und Inhaltseditoren optimieren.
 
@@ -121,7 +127,7 @@ Führen Sie die folgenden Schritte aus, um Remote-Assets in AEM Inhaltsfragment 
 
    >[!NOTE]
    >
-   >Wenn Sie nicht über AEM Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [ein](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en) erstellen.
+   Wenn Sie nicht über AEM Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [ein](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en) erstellen.
 
 1. Klicken Sie auf das Symbol ![Häkchen](/help/assets/assets/do-not-localize/checkmark-icon.svg) neben der Textkomponente.
 1. Wählen Sie **[!UICONTROL Remote]** aus, um das Asset aus dem Remote-DAM abzurufen. <br>

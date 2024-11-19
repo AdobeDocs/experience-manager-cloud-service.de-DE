@@ -3,9 +3,9 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie Assets vom Content Hub-Portal herunterladen können.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 3%
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Herunterladen von Assets](assets/download-asset-genstudio.jpeg)
+
+>[!AVAILABILITY]
+>
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Mit Content Hub können Sie Assets herunterladen und freigeben. Diese Assets können Bilder, Videos oder andere digitale Inhalte umfassen. Die Content Hub verbessert Barrierefreiheit und Anpassungsfähigkeit für eine effektive Asset-Verteilung.
 
@@ -36,7 +42,7 @@ Alternativ können Sie auf der Asset-Karte auf ![Download](/help/assets/assets/d
 
      >[!NOTE]
      >
-     >Das Kontrollkästchen für Nutzungsbedingungen wird nur für lizenzierte Assets angezeigt. Darüber hinaus zeigt das Dialogfeld &quot;Asset&quot;eine Vorschau der Lizenzbedingungen nur für Assets mit genehmigten Lizenzen an. [Genehmigen Sie die Lizenz des Assets](/help/assets/approve-assets-content-hub.md) vor dem Herunterladen, um die Vorschau der Lizenzbedingungen im Dialogfeld &quot;Asset&quot;zu aktivieren.
+     Das Kontrollkästchen für Nutzungsbedingungen wird nur für lizenzierte Assets angezeigt. Darüber hinaus zeigt das Dialogfeld &quot;Asset&quot;eine Vorschau der Lizenzbedingungen nur für Assets mit genehmigten Lizenzen an. [Genehmigen Sie die Lizenz des Assets](/help/assets/approve-assets-content-hub.md) vor dem Herunterladen, um die Vorschau der Lizenzbedingungen im Dialogfeld &quot;Asset&quot;zu aktivieren.
 
    * Klicken Sie auf das Feld **Ursprüngliche Ausgabe** , um zur Original-Asset-Ausgabe im linken Bereich zurückzukehren.
 1. Akzeptieren Sie die Lizenzbedingungen (für lizenzierte Assets) und klicken Sie auf **Herunterladen** , um das Asset herunterzuladen.
@@ -48,13 +54,13 @@ Alternativ können Sie auf der Asset-Karte auf ![Download](/help/assets/assets/d
 
    >[!NOTE]
    >
-   >[Aktivieren Sie die Download-Option für abgelaufene Assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) , um sie herunterzuladen. Nur abgelaufene Assets, die das Herunterladen aktiviert haben, können heruntergeladen werden.
+   [Aktivieren Sie die Download-Option für abgelaufene Assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) , um sie herunterzuladen. Nur abgelaufene Assets, die das Herunterladen aktiviert haben, können heruntergeladen werden.
 
    <a id="Download-asset-dialog-box"></a> **Dialogfeld &quot;Assets herunterladen&quot;:** Dieses Dialogfeld zeigt die Liste der Lizenzen an, die mit den ausgewählten Assets im linken Bereich verknüpft sind. Wählen Sie im mittleren Bereich eine Lizenz aus, um eine Vorschau der Nutzungsbedingungen (im PDF-Format) sowie die Vorschau der zugehörigen Assets und deren Anzahl im rechten Bereich anzuzeigen. Die überprüften Lizenzen sind hellblau hervorgehoben.
 
    >[!NOTE]
    >
-   > Im Dialogfeld **Asset herunterladen** werden die Lizenzbedingungen nur für genehmigte Lizenzen in der Vorschau angezeigt. [Genehmigen Sie die Assets-Lizenzen](/help/assets/approve-assets-content-hub.md) , bevor Sie sie herunterladen, um ihre Lizenzbedingungen im Dialogfeld **Asset herunterladen** in der Vorschau anzuzeigen.
+   Im Dialogfeld **Asset herunterladen** werden die Lizenzbedingungen nur für genehmigte Lizenzen in der Vorschau angezeigt. [Genehmigen Sie die Assets-Lizenzen](/help/assets/approve-assets-content-hub.md) , bevor Sie sie herunterladen, um ihre Lizenzbedingungen im Dialogfeld **Asset herunterladen** in der Vorschau anzuzeigen.
 
 1. Klicken Sie auf ![remove-icon](/help/assets/assets/remove-icon.svg) , um eine Lizenz aus dem Dialogfeld &quot;Download&quot;zu entfernen.
 

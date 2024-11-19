@@ -3,9 +3,9 @@ title: Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-
 description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktionen einschränken.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 2%
 
 | [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Handbuch für Dynamic Media mit OpenAPI-Funktionen PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Die zentrale Asset-Verwaltung in Experience Manager ermöglicht es DAM-Administratoren oder Brand Manager, den Zugriff auf Assets zu verwalten, die über Dynamic Media mit OpenAPI-Funktionen verfügbar sind. Sie können die Bereitstellung genehmigter Assets (bis hin zu einem einzelnen Asset) auf ausgewählte [Adobe Identity Management-Systembenutzer (IMS) oder -gruppen](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) beschränken, indem sie bestimmte Metadaten für Assets in ihrem AEM as a Cloud Service-Autorendienst konfigurieren.
 
@@ -34,7 +40,7 @@ Sie können die Bereitstellung von Assets innerhalb von [!DNL Experience Manager
 
 >[!NOTE]
 >
-> Diese Funktion ist derzeit nicht Self-Service. Um die Asset-Bereitstellung für IMS [Benutzer](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) und [Gruppen](https://helpx.adobe.com/in/enterprise/using/user-groups.html) zu beschränken, wenden Sie sich an Ihr Enterprise-Supportteam, um zu erfahren, wie Sie die Informationen abrufen können, die zum Einschränken des Zugriffs vom Portal [Adobe Admin Console](https://adminconsole.adobe.com/) erforderlich sind, und wie Sie den Zugriff im AEM as a Cloud Service-Autorendienst konfigurieren.
+Diese Funktion ist derzeit nicht Self-Service. Um die Asset-Bereitstellung für IMS [Benutzer](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) und [Gruppen](https://helpx.adobe.com/in/enterprise/using/user-groups.html) zu beschränken, wenden Sie sich an Ihr Enterprise-Supportteam, um zu erfahren, wie Sie die Informationen abrufen können, die zum Einschränken des Zugriffs vom Portal [Adobe Admin Console](https://adminconsole.adobe.com/) erforderlich sind, und wie Sie den Zugriff im AEM as a Cloud Service-Autorendienst konfigurieren.
 
 ### Beschränken der Bereitstellung von Assets mit Ein- und Aus-Datum und -Uhrzeit {#restrict-delivery-assets-date-time}
 
@@ -82,7 +88,7 @@ Bei AEM Cloud Service-Autorendiensten sowie bei der Asset-Auswahl wird das IMS-T
 
 >[!NOTE]
 >
->Weitere Informationen zum Aktivieren der IMS-Authentifizierung bei AEM Asset Selector-basierten Integrationen erhalten Sie beim Enterprise Support
+Weitere Informationen zum Aktivieren der IMS-Authentifizierung bei AEM Asset Selector-basierten Integrationen erhalten Sie beim Enterprise Support
 
 1. Für Erlebnisse, die nicht auf der Asset-Auswahl basieren, unterstützen AEM as a Cloud Service und Dynamic Media mit OpenAPI-Funktionen derzeit serverseitige API-Integrationen und können IMS-Träger-Token generieren.
    * Befolgen Sie die Anweisungen [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) , um Service-to-Server-API-Integrationen durchzuführen, mit denen die IMS-Träger-Token über [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) abgerufen werden können.

@@ -2,9 +2,9 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1557'
 ht-degree: 16%
 
 ---
@@ -18,9 +18,16 @@ ht-degree: 16%
 >id="configure_content_hub"
 >title="Konfigurieren der Benutzeroberfläche von Content Hub"
 >abstract="Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Abhängig von den Konfigurationsoptionen, die von den Admins ausgewählt wurden, können Benutzende von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören Metadaten beim Importieren von Assets, Filter, Asset-Eigenschaften, Metadaten bei der Suche nach Assets, personalisiertes Branding und benutzerspezifische Links."
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="Video ansehen"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Konfigurieren von Assets in Content Hub](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Abhängig von den Konfigurationsoptionen, die von den Admins ausgewählt wurden, können Benutzende von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören:
 
@@ -112,7 +119,7 @@ Mit Content Hub können Administratoren Filter konfigurieren, die bei der Suche 
 
    >[!NOTE]
    >
-   >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
+   Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
 
 Auf ähnliche Weise können Sie auf das neben jedem verfügbaren Filter verfügbare Symbol ![Bearbeiten](assets/do-not-localize/edit_icon.svg) klicken, um die Beschriftungen zu bearbeiten, oder auf das Löschsymbol klicken, um einen vorhandenen Filter zu löschen. Klicken Sie auf **[!UICONTROL Speichern]** , nachdem Sie alle Änderungen vorgenommen haben, um die Änderungen anzuwenden.
 
@@ -148,7 +155,7 @@ Die auf der Konfigurationsoberfläche aktivierten Eigenschaften werden auf der S
 
 Sie können auch die wichtigen Metadatenfelder konfigurieren, die Sie auf der **Asset-Karte** anzeigen müssen, und zwar bis zu maximal 6 Felder. Führen Sie dazu die folgenden Schritte aus:
 
-![Schlüssel-Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-key-metadata.png)
+![Wichtige Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-key-metadata.png)
 
 1. Klicken Sie auf der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **Asset-Karte**.
 2. Klicken Sie auf **Metadaten hinzufügen**. Das Dialogfeld **Asset-Kartenmetadaten hinzufügen** wird angezeigt.

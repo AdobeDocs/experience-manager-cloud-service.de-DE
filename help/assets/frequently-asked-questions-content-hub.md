@@ -1,10 +1,11 @@
 ---
 title: Häufig gestellte Fragen zu Content Hub (FAQs)
-description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zu Content Hub.
-source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
+description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
+exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 1%
+source-wordcount: '1128'
+ht-degree: 2%
 
 ---
 
@@ -14,6 +15,12 @@ ht-degree: 1%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Häufig gestellte Frage zu Content Hub](assets/content-hub-faqs.png)
+
+>[!AVAILABILITY]
+>
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## Was ist Content Hub? {#what-is-content-hub}
 
@@ -87,5 +94,3 @@ Adobe bietet Migrationsunterstützung von Brand Portal nach Content Hub, die Sie
 ## Warum kann ich die Option &quot;Produkteinstellungen/Konfiguration&quot;in Content Hub nicht sehen? {#ui-configuration-option-missing}
 
 Um auf die [Konfigurations-Benutzeroberfläche](/help/assets/configure-content-hub-ui-options.md) zugreifen zu können, müssen Sie ein [Content Hub-Administrator](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator) sein. Wenn Sie dem Produktprofil AEM Administratoren in der Produktionsautorinstanz in Adobe Admin Console zugewiesen sind und die Konfigurationsoption weiterhin nicht angezeigt wird, stellen Sie sicher, dass das Produktprofil AEM Administratoren nicht umbenannt wird. Weitere Informationen finden Sie unter [AEM as a Cloud Service-Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) .
-
-

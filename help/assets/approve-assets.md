@@ -3,9 +3,9 @@ title: Genehmigen von Assets in Experience Manager
 description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmigen.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 5%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 5%
 
 | [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Handbuch für Dynamic Media mit OpenAPI-Funktionen PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Brand Manager und Marketingexperten behalten die strenge Kontrolle über Marken-Assets. Es steht nur die genehmigte und neueste Version des Assets zur Verwendung zur Verfügung, wodurch Markenkonsistenz über alle Kanäle und Anwendungen hinweg gewährleistet ist.
 
@@ -36,7 +42,7 @@ Wenn Sie die Eigenschaft anzeigen müssen, der das Feld **[!UICONTROL Prüfungss
 
 >[!NOTE]
 >
->Wenn Ihre Assets oder Ordner ein anderes Standardschema haben, stellen Sie sicher, dass diese Aktualisierung in diesem bestimmten Schema vorgenommen wird.
+Wenn Ihre Assets oder Ordner ein anderes Standardschema haben, stellen Sie sicher, dass diese Aktualisierung in diesem bestimmten Schema vorgenommen wird.
 
 ## Genehmigen von Assets {#approve-assets}
 
@@ -78,7 +84,7 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 
 >[!NOTE]
 > 
->Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Für vorhandene Assets im Ordner müssen Sie sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Neu verarbeiten]** verwenden, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
+Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Für vorhandene Assets im Ordner müssen Sie sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Neu verarbeiten]** verwenden, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
 
 So genehmigen Sie Assets in einem Ordner in der Assets-Ansicht stapelweise:
 
@@ -105,6 +111,6 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
 
    >[!NOTE]
    >
-   >Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
+   Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
 
 Informationen zu anderen Ausgabeformaten, die im Dynamic Media-Bedienfeld angezeigt werden, finden Sie unter [Anzeigen und Herunterladen von Dynamic Media-Ausgabeformaten](/help/assets/renditions.md#view-download-dm-renditions).

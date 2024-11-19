@@ -3,19 +3,25 @@ title: Assets in [!DNL the Content Hub] freigeben
 description: Assets in [!DNL the Content Hub] freigeben
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 3%
+source-wordcount: '500'
+ht-degree: 6%
 
 ---
 
 # Freigeben von Assets in Content Hub {#search-assets-as-a-link}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Asset-Bannerbild freigeben](assets/share-assets-banner.png)
+
+>[!AVAILABILITY]
+>
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für [!DNL the Content Hub] -Benutzer verfügbar zu machen. Mit der Funktion können autorisierte Benutzer auf die Assets zugreifen und diese herunterladen, die für sie freigegeben sind. Beim Herunterladen von Assets über einen freigegebenen Link verwendet [!DNL the Content Hub] einen asynchronen Dienst, der einen schnelleren und unterbrechungsfreien Download bietet.
 

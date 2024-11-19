@@ -3,17 +3,23 @@ title: Dynamic Media mit OpenAPI-Funktionen
 description: Erfahren Sie mehr über Schlüsselkonzepte wie die Verwendung von Dynamic Media mit OpenAPI-Funktionen und die Aktivierung.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 2%
 
 ---
 
 # Dynamic Media mit OpenAPI-Funktionen {#new-dynaminc-media-apis-overview}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>
+>[!BADGE Handbuch für Dynamic Media mit OpenAPI-Funktionen PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 In der modernen digitalen Welt ist die Erschließung des vollen Potenzials der digitalen Assets Ihrer Marke von entscheidender Bedeutung, um dem Wettbewerb voraus zu sein. Eine ganzheitliche Digital Assets Management (DAM)-Lösung erleichtert die Verwaltung von Assets, fördert die Markenkonsistenz und beschleunigt die Inhaltsbereitstellung bei gleichzeitiger Gewährleistung von Markenintegrität und außergewöhnlichen Kundenerlebnissen.
 
@@ -65,7 +71,7 @@ Um Dynamic Media mit OpenAPI-Funktionen in AEM as a Cloud Service zu aktivieren,
 
   >[!NOTE]
   >
-  > Geben Sie zur Integration in eine Nicht-Adobe-Anwendung Domänennamen für die Zulassungsliste an, auf der die Anwendung gehostet wird.
+  Geben Sie zur Integration in eine Nicht-Adobe-Anwendung Domänennamen für die Zulassungsliste an, auf der die Anwendung gehostet wird.
 
 * Details der wichtigsten Kundenkontakte, die am Integrationsprojekt beteiligt sind.
 
@@ -75,7 +81,7 @@ Nachdem Sie das Support-Ticket übermittelt haben, ermöglicht Adobe Dynamic Med
 
 >[!NOTE]
 >
->Schließen Sie `/conf/global/settings/dam/assets-configurations/assetdelivery` aus einem Inhaltspaket aus, um die Deaktivierung von Dynamic Media mit OpenAPI-Funktionen zu vermeiden.
+Schließen Sie `/conf/global/settings/dam/assets-configurations/assetdelivery` aus einem Inhaltspaket aus, um die Deaktivierung von Dynamic Media mit OpenAPI-Funktionen zu vermeiden.
 
 ## Weitere Informationen zu wichtigen Funktionen {#learn-more-key-capabilities}
 
