@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 93%
+source-wordcount: '852'
+ht-degree: 92%
 
 ---
 
@@ -33,6 +33,7 @@ Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für di
 * SITES-24369: Inhaltsfragmente: Verbesserungen an der OpenAPI-Dokumentation.
 * SITES-25478: Inhaltsfragmente: Backend-Unterstützung für Verweise auf externe Assets hinzugefügt.
 * SITES-26119: Inhaltsfragmente: Unterstützung für Verweise auf externe Assets im Referenztyp hinzugefügt.
+* SITES-24609: Inhaltsfragmente: Verbesserte Validierung beim Löschen von Inhaltsfragmenten.
 * SITES-21199: Edge Delivery mit Universal Editor: Unterstützung für aus Seiten erstellte Vorlagen hinzugefügt.
 * SITES-20311: Edge Delivery mit Universal Editor: Unterstützung für das Importieren von CSVs in Tabellen hinzugefügt.
 * SITES-24821: Edge Delivery mit Universal Editor: Aem.page/aem.live wurde zum Standard für die Integration in Edge Delivery gemacht.
