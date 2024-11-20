@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -18,14 +18,14 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 18598 {#18598}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 18598, die am Donnerstag, 13. November 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 18311. Version 18459 wurde wegen eines Problems privat gemacht.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 18598, die am 13. November 2024 veröffentlicht wurde. Die vorherige Wartungsversion war Version 18311. Version 18459 wurde wegen eines Problems privat gemacht.
 
 Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Verbesserungen {#enhancements-18598}
 
 * CQ-4357471: Unterstützung für Übersetzung mit i18n-Wörterbüchern in AEMaaCS hinzugefügt.
-* FORMS-11646: Festlegen von globalContext-Variablen für AEM Forms-relevante Seiten.
+* FORMS-11646: Festlegen von globalContext-Variablen für relevante Seiten für AEM Forms.
 * FORMS-14833: AEM Forms kann jetzt adaptive Formularfragmente in den endgültigen Nachweis (Document of Record, DoR) aufnehmen.
 * FORMS-14255: Benutzende profitieren jetzt von einer Funktion zum automatischen Speichern, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen.
 * SITES-23591: Inhaltsfragmente: Aktualisierung von Inhaltsfragmenten für UUID-Unterstützung.
@@ -41,14 +41,14 @@ Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für di
 ### Behobene Probleme {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator schlägt fehl, wenn mehr als 10 Schlüssel übersetzt werden müssen.
-* CQ-4358028: AEM Projekterstellung schlägt fehl, wenn Benutzende nur mit der Gruppe „project-administrators“ eine neue Miniaturansicht auf die Projekterstellungsseite hochladen.
+* CQ-4358028: AEM-Projekterstellung schlägt fehl, wenn Benutzende nur mit der Gruppe „project-administrators“ eine neue Miniaturansicht auf die Projekterstellungsseite hochladen.
 * FORMS-14978: Aktivieren des Seitenladevorgangs für ein auf einer Kernkomponente basierendes Formular für den Design-Editor.
 * FORMS-15682: Das Problem betrifft die FDM-Integration von AEM Forms und Dynamics. Wenn Benutzende ein Formular senden, wird der Nachweis (Document of Record, DOR) nicht als PDF-Anhang an das angegebene Entitätsfeld gesendet.
-* FORMS-15799: Adobe Sign GovCloud-Signaturseite gibt keine Wiedergabe in iframe aus.
-* FORMS-16113: Wenn Benutzende, die Admins des Adobe Sign-Kontos sind, versuchen, auf ein Dokument zuzugreifen, das von einer anderen Person (ebenfalls Admin) gesendet wurde, gibt die API für die Abruf-Vereinbarung möglicherweise eine andere Zustimmungs-ID zurück als diejenige, die beim Erstellen der Vereinbarung ursprünglich generiert wurde.
+* FORMS-15799: Adobe Sign GovCloud-Signaturseite wird nicht in iFrame gerendert.
+* FORMS-16113: Wenn Benutzende, die Admins des Adobe Sign-Kontos sind, versuchen, auf ein Dokument zuzugreifen, das von einer anderen Person (ebenfalls Admin) gesendet wurde, gibt das API für die Abruf-Vereinbarung möglicherweise eine andere Zustimmungs-ID zurück als jene, die beim Erstellen der Vereinbarung ursprünglich generiert wurde.
 * FORMS-16596: Problem mit der Barrierefreiheit: Deaktivierte Schaltflächen werden von der Bildschirmlesehilfe nicht erkannt.
-* GRANITE-53907: Dienstbenutzer können nicht als Workflow-Superuser identifiziert werden.
-* SKYOPS-90560: Die neueste Version des Sling-Modells wirkt sich auf die Leistung beim Sling-Modell-Export aus.
+* GRANITE-53907: Dienstbenutzende können nicht als Workflow-Superbenutzende identifiziert werden.
+* SKYOPS-90560: Die neueste Version des Sling-Modells wirkt sich auf die Leistung des Sling-Modell-Exports aus.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader versucht, mehr als 100.000 Zeilen zu laden.
 * SITES-20755: Inhaltsfragmente: Asset-Verweis mit UUID-Aktualisierung zeigt die Miniaturansicht nicht an.
 * SITES-26253: Inhaltsfragmente: UUID-Migration: Das Thema „Sling-Auftrag“ wurde geändert, um es allgemein zu machen.
@@ -69,7 +69,7 @@ Die Funktionsaktivierung von 2024.11.0 bietet den vollen Funktionsumfang für di
 * SITES-25938: Launches: Unerwartete Löschung nach dem Übersetzungsprojekt.
 * SITES-25393: Edge Delivery mit Universal Editor: Beim Rendern von formatiertem Rich Text mit einem einzigen Absatz gehen Textknoten verloren.
 * SITES-24643: Edge Delivery mit Universal Editor: OpenGraph- und Twitter-Metadatenattribute funktionieren nicht im Seitenmetadatenmodell.
-* SITES-25401: Experience Fragments: Langsame Aktualisierung der XF-Referenz.
+* SITES-25401: Experience Fragments: Langsames Aktualisieren von XF-Verweisen.
 
 ### Bekannte Probleme {#known-issues-18598}
 
