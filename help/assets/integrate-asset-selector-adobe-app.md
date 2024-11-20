@@ -1,21 +1,21 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
-description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Integrieren der Asset-Auswahl mit der Adobe-Anwendung {#integrate-asset-selector-with-adobe-app}
+# Integrieren des Asset-Wählers in eine Adobe-Anwendung {#integrate-asset-selector-with-adobe-app}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Mit der Asset-Auswahl können Sie die Integration mit verschiedenen Adobe-Applikationen durchführen, um eine nahtlose Zusammenarbeit zu ermöglichen.
+Mit dem Asset-Wähler können Sie die Integration mit verschiedenen Adobe-Anwendungen durchführen, um eine nahtlose Zusammenarbeit zu ermöglichen.
 
 ## Voraussetzungen{#prereqs-adobe-app}
 
@@ -67,13 +67,13 @@ Wenn Sie diese Schritte befolgen, können Sie den Asset-Wähler mit Ihrer [!DNL 
 
 ### ImsAuthProps {#ims-auth-props}
 
-Die `ImsAuthProps` -Eigenschaften definieren die Authentifizierungsinformationen und den Ablauf, den der Asset-Selektor zum Abrufen einer `imsToken` verwendet. Durch Festlegen dieser Eigenschaften können Sie steuern, wie sich der Authentifizierungsfluss verhält, und Listener für verschiedene Authentifizierungsereignisse registrieren.
+Die `ImsAuthProps`-Eigenschaften definieren die Authentifizierungsinformationen und den Ablauf, mit dem der Asset-Wähler ein `imsToken` abruft. Durch Festlegen dieser Eigenschaften können Sie steuern, wie sich der Authentifizierungsfluss verhält, und Listener für verschiedene Authentifizierungsereignisse registrieren.
 
 | Eigenschaftsname | Beschreibung |
 |---|---|
 | `imsClientId` | Ein Zeichenfolgenwert, der die für Authentifizierungszwecke verwendete IMS-Client-ID darstellt. Dieser Wert wird von Adobe bereitgestellt und ist spezifisch für Ihre Adobe AEM CS-Organisation. |
 | `imsScope` | Beschreibt die bei der Authentifizierung verwendeten Bereiche. Die Bereiche bestimmen den Umfang des Zugriffs, den die Anwendung auf die Ressourcen Ihrer Organisation hat. Mehrere Bereiche werden durch Kommas voneinander getrennt. |
-| `redirectUrl` | Stellt die URL dar, an die Benutzende nach der Authentifizierung weitergeleitet werden. Dieser Wert wird normalerweise auf die aktuelle URL der Anwendung gesetzt. Wenn keine `redirectUrl` bereitgestellt wird, verwendet `ImsAuthService` die zum Registrieren der `imsClientId` verwendete redirectUrl. |
+| `redirectUrl` | Stellt die URL dar, an die Benutzende nach der Authentifizierung weitergeleitet werden. Dieser Wert wird normalerweise auf die aktuelle URL der Anwendung gesetzt. Wenn keine `redirectUrl` bereitgestellt wird, verwendet `ImsAuthService` die zum Registrieren der `imsClientId` verwendete redirectUrl |
 | `modalMode` | Ein boolescher Wert, der angibt, ob der Authentifizierungsfluss in einem Modal (Popup-Fenster) angezeigt werden soll oder nicht. Wenn `true` festgelegt ist, wird der Authentifizierungsfluss in einem Popup-Fenster angezeigt. Wenn `false` festgelegt ist, wird der Authentifizierungsfluss bei vollständigem Neuladen der Seite angezeigt. _Hinweis:_ Für ein besseres Anwendererlebnis können Sie diesen Wert dynamisch steuern, wenn Popup-Fenster des Browsers deaktiviert sind. |
 | `onImsServiceInitialized` | Eine Rückruffunktion, die aufgerufen wird, wenn der Adobe IMS-Authentifizierungsdienst initialisiert wird. Diese Funktion akzeptiert einen Parameter namens `service`, ein Objekt, das den Adobe IMS-Dienst darstellt. Siehe [`ImsAuthService`](#imsauthservice-ims-auth-service) für weitere Informationen. |
 | `onAccessTokenReceived` | Eine Rückruffunktion, die aufgerufen wird, wenn ein `imsToken` vom Adobe IMS-Authentifizierungsdienst empfangen wird. Diese Funktion akzeptiert einen Parameter namens `imsToken`, eine Zeichenfolge, die das Zugriffstoken darstellt. |
@@ -82,13 +82,13 @@ Die `ImsAuthProps` -Eigenschaften definieren die Authentifizierungsinformationen
 
 ### ImsAuthService {#ims-auth-service}
 
-`ImsAuthService` -Klasse verarbeitet den Authentifizierungsfluss für die Asset-Auswahl. Sie ist für den Erhalt eines `imsToken` über den Adobe IMS-Authentifizierungsdienst verantwortlich. Das `imsToken` wird verwendet, um die Benutzerin oder den Benutzer zu authentifizieren und den Zugriff auf das [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets-Repository zu autorisieren. ImsAuthService verwendet die `ImsAuthProps`-Eigenschaften, um den Authentifizierungsfluss zu steuern und Listener für verschiedene Authentifizierungsereignisse zu registrieren. Sie können die praktische Funktion [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) zum Registrieren der _ImsAuthService_-Instanz mit dem Asset-Wähler verwenden. Die folgenden Funktionen sind in der `ImsAuthService`-Klasse verfügbar. Wenn Sie jedoch die Funktion _registerAssetsSelectorsAuthService_ verwenden, müssen Sie diese Funktionen nicht direkt aufrufen.
+Die `ImsAuthService`-Klasse regelt den Authentifizierungsfluss für den Asset-Wähler. Sie ist für den Erhalt eines `imsToken` über den Adobe IMS-Authentifizierungsdienst verantwortlich. Das `imsToken` wird verwendet, um die Benutzerin oder den Benutzer zu authentifizieren und den Zugriff auf das [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets-Repository zu autorisieren. ImsAuthService verwendet die `ImsAuthProps`-Eigenschaften, um den Authentifizierungsfluss zu steuern und Listener für verschiedene Authentifizierungsereignisse zu registrieren. Sie können die praktische Funktion [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) zum Registrieren der _ImsAuthService_-Instanz mit dem Asset-Wähler verwenden. Die folgenden Funktionen sind in der `ImsAuthService`-Klasse verfügbar. Wenn Sie jedoch die Funktion _registerAssetsSelectorsAuthService_ verwenden, müssen Sie diese Funktionen nicht direkt aufrufen.
 
 | Funktionsname | Beschreibung |
 |---|---|
 | `isSignedInUser` | Bestimmt, ob die Person derzeit beim Dienst angemeldet ist, und gibt entsprechend einen booleschen Wert zurück. |
 | `getImsToken` | Ruft das Authentifizierungs-`imsToken` für die derzeit angemeldete Person ab, das zum Authentifizieren von Anforderungen für andere Dienste wie zum Beispiel zum Generieren von Asset-Ausgabedarstellungen verwendet werden kann. |
-| `signIn` | Startet den Anmeldeprozess für die Person. Diese Funktion verwendet `ImsAuthProps`, um die Authentifizierung in einem Popup-Fenster oder beim vollständigem Neuladen einer Seite anzuzeigen. |
+| `signIn` | Startet den Anmeldeprozess für die Person. Diese Funktion verwendet `ImsAuthProps`, um die Authentifizierung in einem Popup-Fenster oder beim vollständigem Neuladen einer Seite anzuzeigen |
 | `signOut` | Meldet die Person vom Dienst ab, macht ihr Authentifizierungs-Token ungültig und fordert sie auf, sich erneut anzumelden, um auf geschützte Ressourcen zuzugreifen. Durch Aufrufen dieser Funktion wird die aktuelle Seite neu geladen. |
 | `refreshToken` | Aktualisiert das Authentifizierungs-Token für die derzeit angemeldete Person, verhindert das Ablaufen des Tokens und stellt einen unterbrechungsfreien Zugriff auf geschützte Ressourcen sicher. Gibt ein neues Authentifizierungs-Token zurück, das für nachfolgende Anforderungen verwendet werden kann. |
 
@@ -119,7 +119,7 @@ Die `ImsAuthProps` -Eigenschaften definieren die Authentifizierungsinformationen
 </script>
 ```
 
-### Callbacks des IMS-Dienstes registrieren {#register-callback-ims-service}
+### Registrieren von Rückrufen des IMS-Dienstes {#register-callback-ims-service}
 
 ```
 // object `imsProps` to be defined as below 
@@ -152,7 +152,7 @@ onErrorReceived: (type, msg) => {
 
 >[!MORELIKETHIS]
 >
->* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der Asset-Auswahl in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
+>* [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)

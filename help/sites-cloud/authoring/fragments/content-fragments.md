@@ -1,24 +1,24 @@
 ---
 title: Inhaltsfragmente
-description: Mit Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten können Sie kanalunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden, die auch bei der Seitenbearbeitung verwendet werden können.
+description: Mit Inhaltsfragmenten in Adobe Experience Manager as a Cloud Service können Sie kanalunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden, die auch bei der Seitenerstellung verwendet werden können.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
 source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1267'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Inhaltsfragmente {#content-fragments}
 
-Inhaltsfragmente in Adobe Experience Manager (AEM)-as a Cloud Service werden [ als seitenunabhängige Assets erstellt und verwaltet](/help/sites-cloud/administering/content-fragments/overview.md), sodass Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen können. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
+Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service werden [als seitenunabhängige Assets erstellt und verwaltet](/help/sites-cloud/administering/content-fragments/overview.md), sodass Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen können. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
 >[!CAUTION]
 >
->Diese Seite muss in Verbindung mit [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) (und zugehörigen Seiten) gelesen werden, da dort grundlegende Terminologie und Konzepte sowie Informationen zum Erstellen und Verwalten von Fragmenten und zum Bereitstellen von strukturierten Inhaltsfragmenten für andere Kanäle als AEM vorgestellt werden.
+>Lesen Sie diese Seite gemeinsam mit [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) (und den zugehörigen Seiten), da dort grundlegende Termini und Konzepte sowie Informationen zum Erstellen und Verwalten von Fragmenten und zum Bereitstellen von strukturierten Inhaltsfragmenten für andere Kanäle als AEM-Seiten vorgestellt werden.
 
 >[!NOTE]
 >

@@ -1,76 +1,76 @@
 ---
 title: AEM Sites und Edge Delivery Services
-description: Erfahren Sie, wie Edge Delivery Services die Authoring- und Publishing-Möglichkeiten für AEM Sites erweitern, um die Inhaltserstellung zu beschleunigen und Sites mit einer Leistung von 100 % bereitzustellen.
+description: Erfahren Sie, wie Edge Delivery Services die Authoring- und Publishing-Möglichkeiten für AEM Sites erweitern, um die Inhaltserstellung zu beschleunigen und Sites mit optimaler Leistung bereitzustellen.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b3497f87446ca4c1c71d48f29aebcaa882feb898
-workflow-type: tm+mt
+exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-
 # AEM Sites und Edge Delivery Services {#sites-and-edge}
 
-Erfahren Sie, wie Edge Delivery Services die Authoring- und Publishing-Möglichkeiten für AEM Sites erweitern, um die Inhaltserstellung zu beschleunigen und Sites mit einer Leistung von 100 % bereitzustellen.
+Erfahren Sie, wie Edge Delivery Services die Authoring- und Publishing-Möglichkeiten für AEM Sites erweitern, um die Inhaltserstellung zu beschleunigen und Sites mit optimaler Leistung bereitzustellen.
 
 ## Überblick {#overview}
 
-Zusätzlich zu allen Funktionen und Leistungsmerkmalen, die AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md) als Teil der Cloud-nativen AEM as a Cloud Service-Plattform bietet, bieten Edge Delivery Services zusätzliche Möglichkeiten zum Erstellen und Veröffentlichen von Inhalten, um die Erstellung von Inhalten zu beschleunigen und Sites mit einer Leistung von 100 % bereitzustellen.[
+Zusätzlich zu all den [Funktionen und Leistungsmerkmalen, die AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md) als Teil der Cloud-nativen AEM as a Cloud Service-Plattform bietet, erhalten Sie mit Edge Delivery Services weitere Authoring- und Publishing-Möglichkeiten, um die Erstellung von Inhalten zu beschleunigen und Sites mit optimaler Leistung bereitzustellen.
 
 ## Was sind Edge Delivery Services? {#what-is-edge}
 
-Edge Delivery Services bieten außergewöhnliche Erlebnisse, die Interaktionen und Konversionen fördern, indem sie wirkungsvolle Erlebnisse bereitstellen, die schnell zu erstellen und zu entwickeln sind. Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autorinnen und Autoren schnell aktualisieren und veröffentlichen können und neue Sites schnell live geschaltet werden können. Weitere Informationen zu Edge Delivery Services finden Sie in der [Übersicht über Edge Delivery Services](/help/edge/overview.md) -Dokumentation.
+Edge Delivery Services liefern außergewöhnliche, wirkungsvolle Erlebnisse, die Interaktionen und Konversionen fördern und schnell erstellt und entwickelt werden können. Edge Delivery Services ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autorinnen und Autoren schnell aktualisieren und veröffentlichen können und neue Sites schnell live geschaltet werden können. Weitere Informationen zu Edge Delivery Services finden Sie im Dokument [Überblick über Edge Delivery Services](/help/edge/overview.md).
 
-Durch die Verwendung von Edge Delivery Services zusammen mit AEM Sites as a Cloud Service können Ihre Projekte von folgenden Vorteilen profitieren:
+Wenn Sie Edge Delivery Services zusammen mit AEM Sites as a Cloud Service einsetzen, können Ihre Projekte von Folgendem profitieren:
 
-* [Neues Entwicklererlebnis](#developer-experience)
-* [Eine neue Veröffentlichungsstufe](#publish-tier)
-* [Zusätzliche Bearbeitungsoptionen](#authoring-options)
+* [einem neuen Entwicklererlebnis](#developer-experience)
+* [einer neuen Veröffentlichungsebene](#publish-tier)
+* [zusätzlichen Authoring-Optionen](#authoring-options)
 
-## Neues Entwicklererlebnis {#developer-experience}
+## Ein neues Entwicklererlebnis {#developer-experience}
 
-Eine Kernphilosophie von Edge Delivery Services ist *Velocity*. Dies beginnt mit dem Entwicklererlebnis. Wenn Ihre Entwickler:
+Eine Kernphilosophie von Edge Delivery Services heißt *Geschwindigkeit*. Dies beginnt mit dem Entwicklererlebnis. Ihre Entwicklerinnen und Entwickler:
 
-* Git-Grundlagen verstehen und
-* Grundlegendes zu HTML, CSS und JavaScript
+* sind mit den Git-Grundlagen vertraut und
+* kennen die HTML-, CSS- und JavaScript-Grundlagen?
 
-Sie können in weniger als dreißig Minuten ein eigenes Projekt und eigene Komponenten für Edge Delivery Services einrichten. Klonen Sie zunächst unser Bausteinprojekt auf GitHub und übernehmen Sie dann Ihre Änderungen. Ihre Anpassung ist sofort online!
+Dann können sie es in weniger als 30 Minuten schaffen, ein eigenes Projekt und eigene Komponenten für Edge Delivery Services aufzusetzen. Klonen Sie zunächst unser Vorlagenprojekt auf GitHub und übertragen Sie dann einfach Ihre Änderungen. Ihre Anpassungen sind sofort online!
 
-Weitere Informationen zur Entwicklung für Edge Delivery Services finden Sie im Dokument [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial) .
+Weitere Informationen zur Entwicklung für Edge Delivery Services finden Sie im Dokument [Erste Schritte – Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
 
-## Eine neue Publish-Ebene {#publish-tier}
+## Eine neue Veröffentlichungsebene {#publish-tier}
 
-Die Entwicklungszeit wird nicht nur drastisch reduziert, sondern auch Edge Delivery Services bringen auch schnellstmögliche Websites.
+Nicht nur verkürzt sich die Entwicklungszeit erheblich, Edge Delivery Services sorgen dafür, dass Websites im Handumdrehen verfügbar sind.
 
-## Zusätzliche Bearbeitungsoptionen {#authoring-options}
+## Zusätzliche Authoring-Optionen {#authoring-options}
 
-Edge Delivery Services erhöhen auch die Geschwindigkeit der Inhaltserstellung, indem sie neue Bearbeitungsoptionen anbieten.
+Edge Delivery Services beschleunigen darüber hinaus die Inhaltserstellung, denn sie stellen neue Authoring-Optionen zur Verfügung.
 
 ### Der universelle Editor {#universal-editor}
 
-Der universelle Editor bietet ein nahtloses WYSIWYG-Authoring-Erlebnis (What-you-see-is-what-you-get), das zum Erstellen von Inhalten verwendet werden kann.
+Der universelle Editor bietet ein nahtloses Authoring-Erlebnis nach dem WYSIWYG(What You See Is What You Get)-Prinzip, mit dem Sie beliebige Inhalte erstellen können.
 
-Weitere Informationen zur Inhaltserstellung mit dem universellen Editor finden Sie im Dokument [WYSIWYG Content Authoring für Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) .
+Weitere Informationen zur Inhaltserstellung mit dem universellen Editor finden Sie im Dokument [WYSIWYG-Inhaltserstellung für Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md).
 
 ### Dokumentenbasiertes Authoring {#document-authoring}
 
-Dokumentbasiertes Authoring ermöglicht es jedem, ohne Training Inhalte zu erstellen, indem alle bekannten Tools genutzt werden: Word- und Google-Dokumente. Mit diesen einfachen Tools können Edge Delivery Services eine Änderung sofort in ein Word-Dokument umwandeln, um den Inhalt auf Ihrer Live-Site zu aktualisieren.
+Dokumentbasiertes Authoring ermöglicht es, dass wirklich alle ohne jedwede Schulung Inhalte erstellen können. Wie? Durch Nutzung der allseits vertrauten Tools Word und Google Docs. Dank dieser einfachen Tools können Sie mit Edge Delivery Services eine Änderung sofort in ein Word-Dokument übertragen und damit den Inhalt auf Ihrer Live-Site aktualisieren.
 
-Weitere Informationen zur Verwendung von dokumentbasiertem Authoring finden Sie im Dokument [Authoring und Veröffentlichen von Inhalten](https://www.aem.live/docs/authoring) .
+Weitere Informationen zur Verwendung von dokumentbasiertem Authoring finden Sie im Dokument [Verfassen und Veröffentlichen von Inhalten](https://www.aem.live/docs/authoring).
 
-## Ist Edge richtig für Sie? {#decision}
+## Ist Edge das Richtige für Sie? {#decision}
 
-Adobe hat erlebt, dass seine Kunden und ihre beteiligten Interessengruppen von Edge Delivery Services über Projekte aller Größenordnungen hinweg massiv profitieren. Aus diesem Grund empfiehlt Adobe die Nutzung von Edge Delivery Services als Ausgangspunkt für jedes neue Projekt.
+Adobe hat festgestellt, dass seine Kundschaft und ihre Stakeholder von Edge Delivery Services über Projekte aller Größenordnungen hinweg massiv profitieren. Aus diesem Grund empfiehlt Adobe Edge Delivery Services als Ausgangspunkt für jedes neue Projekt.
 
-Es ist auch möglich, eine Untergruppe von Sites oder Seiten in Edge Delivery bereitzustellen, während der Rest auf dem aktuellen Stapel verbleibt. Dies wird immer dann empfohlen, wenn Leistungsverbesserungen, organischer Traffic, Kundeninteraktion, Entwickler oder Content Velocity erforderlich sind.
+Es ist auch möglich, eine Teilmenge von Sites oder Seiten in Edge Delivery bereitzustellen, während der Rest im aktuellen Stapel verbleibt. Dies wird immer dann empfohlen, wenn die Leistung, der organische Traffic, Kundeninteraktionen, die Entwicklungsgeschwindigkeit oder die Content Velocity verbessert werden müssen.
 
-Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, wenn Sie sich nicht sicher sind, ob Edge Delivery für Sie geeignet ist.
+Wenden Sie sich an Ihren Adobe-Support, wenn Sie sich nicht sicher sind, ob Edge Delivery für Sie geeignet ist.
 
-### Was ist mit Edge Delivery und Headless? (#headless)
+### Und was ist mit Edge Delivery und Headless? (#headless)
 
-Edge Delivery ist ein leistungsorientierter Kopf, der vom Backend entkoppelt ist. Wenn Sie über einen benutzerdefinierten Kopf verfügen, z. B. React SPA, empfiehlt Adobe das AEM Headless-Integrationsmuster. Weitere Informationen finden Sie in der Dokumentation zu [AEM Headless](/help/headless/introduction.md) .
+Edge Delivery ist ein leistungsorientierter Head, der vom Backend entkoppelt ist. Wenn Sie über einen benutzerdefinierten Head verfügen, z. B. eine React-SPA, wird von Adobe das AEM Headless-Integrationsmuster empfohlen. Weitere Informationen finden Sie in der [AEM Headless-Dokumentation](/help/headless/introduction.md).
 
-Im Allgemeinen empfiehlt Adobe jedoch die Verwendung von Edge Delivery als Standardkopfbereich, um von der Geschwindigkeit und Leistung zu profitieren und den Headless-Teil Ihres Projekts (in der Regel die Geschäftsanwendung) über einen Headless-Ansatz (z. B. React oder SPA) zu integrieren.
+Im Allgemeinen empfiehlt Adobe jedoch, Edge Delivery als Standard-Head zu verwenden, um von der damit einhergehenden Geschwindigkeit und Leistung zu profitieren und den Headless-Teil Ihres Projekts (in der Regel die Geschäftsanwendung) über einen Headless-Ansatz (z. B. React oder SPA) zu integrieren.

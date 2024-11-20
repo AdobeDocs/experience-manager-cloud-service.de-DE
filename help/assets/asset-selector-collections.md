@@ -1,68 +1,68 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
 role: Admin,User
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 
-# Asset-Selektor-Sammlungen {#asset-selector-collections}
+# Sammlungen im Asset-Wähler {#asset-selector-collections}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Asset-Auswahl. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten.
+Eine Sammlung ist ein Satz von Assets, Ordnern oder sonstigen Sammlungen innerhalb des Asset-Wählers. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten.
 
-Die Micro Front-End-Sammlungen in der Asset-Auswahl sind im schreibgeschützten Modus standardmäßig verfügbar. Ruft Assets und Sammlungen direkt aus dem [!DNL Experience Manager Assets]-Repository ab, auf das Sie Zugriff haben.
+Die Mikro-Frontend-Sammlungen im Asset-Wähler sind im schreibgeschützten Modus standardmäßig verfügbar. Assets und Sammlungen werden direkt aus dem [!DNL Experience Manager Assets]-Repository abgerufen, auf das Sie Zugriff haben.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie über Berechtigungen für den Zugriff auf eine [!DNL Experience Manager Assets] [imsOrg](/help/assets/asset-selector-properties.md) und Sammlungen verfügen.
+>Stellen Sie sicher, dass Sie über die Berechtigungen für den Zugriff auf eine [!DNL Experience Manager Assets] [imsOrg](/help/assets/asset-selector-properties.md) und auf Sammlungen verfügen.
 
-Die Micro Front-End-Sammlungen in der Asset-Auswahl sind im schreibgeschützten Modus standardmäßig verfügbar. Ruft Assets und Sammlungen direkt aus dem Experience Manager Assets-Repository ab, auf das Sie Zugriff haben, und übernimmt die Eigenschaften öffentlicher und privater Ordner aus Ihrem Experience Manager Assets-Repository. Weitere Informationen zum Erstellen einer öffentlichen oder privaten Sammlung finden Sie in der Assets-Ansicht](/help/assets/manage-collections-assets-view.md#create-collection).[
+Die Mikro-Frontend-Sammlungen im Asset-Wähler sind im schreibgeschützten Modus standardmäßig verfügbar. Assets und Sammlungen werden direkt aus dem Experience Manager Assets-Repository abgerufen, auf das Sie Zugriff haben, wobei die Eigenschaften öffentlicher und privater Ordner aus Ihrem Experience Manager Assets-Repository übernommen werden. Lesen Sie mehr über das [Erstellen einer öffentlichen oder privaten Sammlung in der Assets-Ansicht](/help/assets/manage-collections-assets-view.md#create-collection).
 
-Sie können Sammlungen in der Asset-Auswahl sowohl in der Schienenansicht als auch in der modalen Ansicht anzeigen.
+Sie können Sammlungen im Asset-Wähler sowohl in der Leistenansicht als auch in der modalen Ansicht anzeigen.
 
-![Sammlungen in der Schienenansicht](assets/collections-rail-modal-view.png)
+![Sammlungen in der Leistenansicht](assets/collections-rail-modal-view.png)
 
 <!--
 Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
 
-Darüber hinaus können Sie die Auswahl von Assets auf der Registerkarte Sammlungen anpassen. Dazu können Sie sie mit `handleSelection` anpassen. Siehe [ Umgang mit der Auswahl von Assets mithilfe des Objektschemas](/help/assets/asset-selector-customization.md#handling-selection).
+Darüber hinaus können Sie die Auswahl von Assets auf der Registerkarte „Sammlungen“ anpassen. Zum Anpassen können Sie `handleSelection` verwenden. Weitere Informationen finden Sie unter [Umgang mit der Auswahl von Assets mithilfe des Objektschemas](/help/assets/asset-selector-customization.md#handling-selection).
 
 ## Anzeigen von Sammlungen {#view-collections}
 
-Mit der Asset-Auswahl können Sie Sammlungen entweder in einer ![Listenansicht](assets/do-not-localize/list-view.png) oder in einer ![Rasteransicht](assets/do-not-localize/grid-view.png) Rasteransicht anzeigen. Siehe [Ansichtstypen in der Asset-Auswahl](overview-asset-selector.md#types-of-view).
+Mit dem Asset-Wähler können Sie Sammlungen entweder in einer ![Listenansicht](assets/do-not-localize/list-view.png) Listenansicht oder in einer ![Rasteransicht](assets/do-not-localize/grid-view.png) Rasteransicht anzeigen. Weitere Informationen finden Sie unter [Ansichtstypen im Asset-Wähler](overview-asset-selector.md#types-of-view).
 
-## Ziehen und Ablegen von Assets in die Sammlung {#collection-drag-and-drop}
+## Ziehen und Ablegen von Assets in eine Sammlung {#collection-drag-and-drop}
 
-Sie können ein Asset per Drag-and-Drop direkt aus der Ansicht [!DNL Assets as a Cloud Service] in der Autorenumgebung in Sammlungen ziehen. Ziehen Sie dazu das Asset aus der Registerkarte Assets in den Arbeitsbereich Sammlungen der Asset-Auswahl-Anwendung, um Rich-Apps zu erstellen.
+Sie können ein Asset per Drag-and-Drop direkt aus der [!DNL Assets as a Cloud Service]-Ansicht in der Autorenumgebung in Sammlungen ziehen. Ziehen Sie dazu das Asset von der Registerkarte „Assets“ in den Arbeitsbereich „Sammlungen“ der Asset-Wähler-Anwendung, um umfangreiche Anwendungen zu erstellen.
 
 >[!NOTE]
 >
->* Das Ziehen und Ablegen eines Assets ist nur in der Schienenansicht möglich.
->* Sie können Dateien nur (Assets) und nicht die Ordner per Drag-and-Drop verschieben.
+>* Das Ziehen und Ablegen eines Assets ist nur in der Leistenansicht möglich.
+>* Sie können nur Dateien (Assets) und nicht die Ordner per Drag-and-Drop verschieben.
 
-Andererseits können Sie auch [das Ziehen und Ablegen von Assets in die Sammlungen](asset-selector-customization.md#enable-disable-drag-and-drop) direkt aktivieren oder deaktivieren.
+Alternativ können Sie das [Ziehen und Ablegen von Assets auch direkt in den Sammlungen aktivieren oder deaktivieren](asset-selector-customization.md#enable-disable-drag-and-drop).
 
-## Deaktivieren der Asset-Auswahl in Sammlungen {#disable-selection-collection}
+## Deaktivieren der Auswahl von Assets in Sammlungen {#disable-selection-collection}
 
-Die Funktion „disableSelection“ wird verwendet, um die Möglichkeit zur Auswahl der Assets oder Ordner auszublenden bzw. zu deaktivieren. Dabei wird das Kontrollkästchen „Auswählen“ auf der Karte oder im Asset ausgeblendet und eine Auswahl verhindert. Siehe [Auswahl deaktivieren](/help/assets/asset-selector-customization.md#disable-selection).
+Die Funktion „disableSelection“ wird verwendet, um die Möglichkeit zur Auswahl der Assets oder Ordner auszublenden bzw. zu deaktivieren. Dabei wird das Kontrollkästchen „Auswählen“ auf der Karte oder im Asset ausgeblendet und eine Auswahl verhindert. Weitere Informationen finden Sie unter [Deaktivieren der Auswahl](/help/assets/asset-selector-customization.md#disable-selection).
 
-## Registerkarte &quot;Sammlungen&quot;aktivieren oder deaktivieren {#enable-disable-collections-tab}
+## Aktivieren und Deaktivieren der Registerkarte „Sammlungen“ {#enable-disable-collections-tab}
 
-Mit der Asset-Auswahl können Sie die Komponenten entsprechend den Anforderungen und der Benutzerfreundlichkeit anpassen. Um die Registerkarte &quot;Sammlungen&quot;in der Asset-Auswahl zu aktivieren oder zu deaktivieren, können Sie die Eigenschaft &quot;`featureSet`&quot;wie folgt verwenden:
+Mit dem Asset-Wähler können Sie die Komponenten entsprechend den Anforderungen und der Benutzerfreundlichkeit anpassen. Sie können die Registerkarte „Sammlungen“ im Asset-Wähler wie folgt mit der Eigenschaft `featureSet` aktivieren oder deaktivieren:
 
-* **Registerkarte &quot;Sammlungen aktivieren&quot;:** Um die Registerkarte &quot;Sammlungen&quot;zu aktivieren, müssen Sie dem Array den Wert `collections` als angeben. Standardmäßig ist die Registerkarte Sammlungen für alle Benutzer standardmäßig aktiviert. Zum Beispiel: `featureSet:["collections"]`
-* **Registerkarte &quot;Sammlungen deaktivieren&quot;:** Um die Registerkarte &quot;Sammlungen&quot;zu deaktivieren, müssen Sie ein leeres Array als Wert angeben. Zum Beispiel: `featureSet:[ ]`
+* **Registerkarte „Sammlungen“ aktivieren:** Um die Registerkarte „Sammlungen“ zu aktivieren, müssen Sie `collections` als Wert für das Array angeben. Die Registerkarte „Sammlungen“ ist standardmäßig für alle Benutzenden aktiviert. Zum Beispiel: `featureSet:["collections"]`
+* **Registerkarte „Sammlungen“ deaktivieren:** Um die Registerkarte „Sammlungen“ zu deaktivieren, müssen Sie ein leeres Array als Wert angeben. Zum Beispiel: `featureSet:[ ]`
 
 >[!MORELIKETHIS]
 >
->* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
->* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
+>* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
 

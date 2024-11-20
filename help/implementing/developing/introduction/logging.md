@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2376'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -262,7 +262,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 | AEM as a Cloud Service-Knoten-ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
-| IP-Adresse des Clients | - |
+| IP-Adresse des Clients | – |
 | User | myuser@adobe.com |
 | Datum und Uhrzeit | 30. April 2020:17:37:14 +0000 |
 | HTTP-Methode | GET |
@@ -313,11 +313,11 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>IP-Adresse des Clients</td>
-<td>-</td>
+<td>–</td>
 </tr>
 <tr>
 <td>User</td>
-<td>-</td>
+<td>–</td>
 </tr>
 <tr>
 <td>Datum und Uhrzeit</td>
@@ -345,7 +345,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Referenz</td>
-<td>-</td>
+<td>–</td>
 </tr>
 <tr>
 <td>Benutzeragent</td>
@@ -585,9 +585,9 @@ Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Con
 
 Abrufen der Protokolle:
 
-1. Geben Sie in der Befehlszeile `docker ps` ein, um Ihre Container aufzulisten.
-1. Geben Sie „`docker exec -it <container> /bin/sh`“ ein, um sich beim Container anzumelden, wobei `<container>` die Dispatcher-Container-ID aus dem vorherigen Schritt ist.
-1. Navigieren Sie zum Cache-Stammverzeichnis unter `/mnt/var/www/html`.
+1. Geben Sie in der Befehlszeile `docker ps` ein, um Ihre Container aufzulisten
+1. Geben Sie „`docker exec -it <container> /bin/sh`“ ein, um sich beim Container anzumelden, wobei `<container>` die Dispatcher-Container-ID aus dem vorherigen Schritt ist
+1. Navigieren Sie zum Cache-Stammverzeichnis unter `/mnt/var/www/html`
 1. Die Protokolle befinden sich unter `/etc/httpd/logs`
 1. Überprüfen Sie die Protokolle: Sie sind im Ordner „XYZ“ zugänglich, wo die folgenden Protokolle eingesehen werden können:
    * Apache HTTPD Web Server-Zugriffsprotokoll – `httpd_access.log`
@@ -611,7 +611,7 @@ Je nach Traffic und der Menge der von Debug geschriebenen Protokolleinträge kan
 
 ## Protokollweiterleitung {#log-forwarding}
 
-Während Protokolle aus Cloud Manager heruntergeladen werden können, ist es für einige Unternehmen nützlich, diese Protokolle an ein bevorzugtes Protokollierungsziel weiterzuleiten. AEM unterstützt Streaming-Protokolle an die folgenden Ziele:
+Die Protokolle können zwar von Cloud Manager heruntergeladen werden, aber einige Unternehmen ziehen es vor, diese Protokolle an ein bevorzugtes Protokollierungsziel weiterzuleiten. AEM unterstützt das Streamen von Protokollen an die folgenden Ziele:
 
 * Azure Blob Storage
 * Datadog
@@ -619,7 +619,7 @@ Während Protokolle aus Cloud Manager heruntergeladen werden können, ist es fü
 * Elasticsearch (und OpenSearch)
 * Splunk
 
-Weitere Informationen zum Konfigurieren dieser Funktion finden Sie im Artikel [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) .
+Weitere Informationen zur Konfiguration dieser Funktion finden Sie im [Artikel zur Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md).
 
 >[!NOTE]
 >

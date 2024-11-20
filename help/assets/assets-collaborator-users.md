@@ -1,29 +1,29 @@
 ---
-title: AEM Assets-Mitwirkende
-description: Erfahren Sie, wie Sie Benutzer und Berechtigungen des AEM Assets-Mitwirkenden verwalten.
+title: AEM Assets-Mitarbeiter-Benutzende
+description: Erfahren Sie, wie Sie AEM Assets-Mitarbeiter-Benutzende und ihre Berechtigungen verwalten.
 feature: Asset Management
 role: User, Admin
 source-git-commit: 16ce83409044ad54140754112eb4d35b97883b44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '161'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-# AEM Assets-Mitwirkende {#assets-collaborator-users}
+# AEM Assets-Mitarbeiter-Benutzende {#assets-collaborator-users}
 
 | [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-![AEM Assets Collaborator users banner](/help/assets/assets/aem-assets-collaborator-users-banner.png)
+![AEM Assets-Mitarbeiter-Benutzende – Banner](/help/assets/assets/aem-assets-collaborator-users-banner.png)
 
-Experience Manager Assets umfasst einen Collaborator-Benutzertyp und Administratoren können diesem Benutzertyp mithilfe von Admin Console einfach Benutzer oder Benutzergruppen hinzufügen. Weitere Informationen finden Sie unter [Benutzer des integrierten Mitwirkenden](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users).
+Experience Manager Assets umfasst den Benutzertyp „Mitarbeiter“ und Admins können diesem Benutzertyp mithilfe der Admin Console auf einfache Weise Benutzende oder Benutzergruppen hinzufügen. Weitere Informationen finden Sie unter [Onboarding von Mitarbeiter-Benutzenden](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users).
 
-Als Mitwirkende haben Sie folgende Möglichkeiten:
+Mitarbeiter-Benutzende können:
 
-* Arbeiten Sie mit Assets aus Experience Manager über Integrationen von Assets, die für Ihr Unternehmen in anderen Adobe- und Nicht-Adobe-Anwendungen verfügbar sind.
+* mit Assets aus Experience Manager über Integrationen von Assets arbeiten, die für ihre Organisation in anderen Adobe-Produkten und Adobe-fremden Anwendungen verfügbar sind,
 
-* Erstellen und bearbeiten Sie Assets mit nativem Adobe Expreß und Firefly, indem Sie professionell entworfene Vorlagen, Markenkits, Adobe Stock-Assets usw. nutzen.
+* mit integriertem Adobe Express und Firefly Assets erstellen und bearbeiten, indem sie professionell entworfene Vorlagen, Marken-Kits, Adobe Stock-Assets usw. nutzen,
 
 
-Wenn Ihr Administrator Content Hub für Ihr Unternehmen konfiguriert hat, können Sie außerdem über das AEM Assets Content Hub-Portal auf genehmigte Assets in Ihrem Unternehmen zugreifen und diese nutzen. Weitere Informationen zu Content Hub-Funktionen finden Sie unter [Content Hub-Übersicht](/help/assets/product-overview.md).
+Wenn Content Hub für Ihre Organisation durch Admins konfiguriert wurde, können Sie außerdem über das AEM Assets Content Hub-Portal auf genehmigte Assets in Ihrer Organisation zugreifen und diese nutzen. Weitere Informationen zu Content Hub-Funktionen finden Sie unter [Überblick über Content Hub](/help/assets/product-overview.md).

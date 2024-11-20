@@ -1,21 +1,21 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
-description: Beispiele zur Verwendung des Asset-Selektors zur Anpassung gemäß Anforderungen.
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Beispiele zur Verwendung des Asset-Wählers für Anpassungen gemäß den Anforderungen.
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # Beispiele zur Verwendung der Asset-Selektor-Eigenschaften {#usage-examples}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Sie können die Asset-Auswahl [Eigenschaften](/help/assets/asset-selector-properties.md) in der Datei **index.html** definieren, um die Anzeige des Asset-Selektors in Ihrer Anwendung anzupassen.
+Sie können die Asset-Wähler-[Eigenschaften](/help/assets/asset-selector-properties.md) in der Datei **index.html** definieren, um die Anzeige des Asset-Wählers in Ihrer Anwendung anzupassen.
 
 ## Beispiel 1: Asset-Selektor in der Leistenansicht
 
@@ -55,7 +55,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 >[!MORELIKETHIS]
 >
->* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
->* [Asset-Selektor-Upload](/help/assets/asset-selector-upload.md)
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
+>* [Hochladen des Asset-Wählers](/help/assets/asset-selector-upload.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der Asset-Auswahl in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

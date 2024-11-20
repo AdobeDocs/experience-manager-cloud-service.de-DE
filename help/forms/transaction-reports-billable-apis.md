@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 role: Admin, Developer, User
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 
@@ -25,13 +25,13 @@ AEM Forms bietet mehrere APIs zum Senden von Formularen, zum Verarbeiten von Dok
 * Senden eines adaptiven Formulars
 * Konvertieren eines Dokuments aus einem Format in ein anderes
 * Reduzieren eines dynamischen PDF-Dokuments
-* Generieren eines Datensatzdokuments (mit dem Forms-Dienst oder dem Output-Dienst)
+* Generieren eines Datensatzdokuments (mit dem Forms-Dienst oder dem Ausgabe-Service)
 * Zusammenführen eines interaktiven PDF-Dokuments mit einem anderen PDF-Dokument
-* Verwenden des Schritts &quot;Aufgabe zuweisen&quot;und der Kommunikations-API-Schritte AEM Workflows
+* Verwenden des Schritts zum Zuweisen einer Aufgabe und der Kommunikations-API-Schritte von AEM-Workflows
 
-Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines Dokuments oder Formulars oder das endgültige Format des wiedergegebenen Dokuments. Ein Transaktionsbericht unterteilt die Transaktionen in zwei Kategorien: &quot;Forms Gesendet&quot;und &quot;Gerenderte Dokumente&quot;.
+Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines Dokuments oder Formulars oder das endgültige Format des wiedergegebenen Dokuments. Ein Transaktionsbericht unterteilt die Transaktionen in zwei Kategorien: übermittelte Formulare und gerenderte Dokumente.
 
-* **Übermittelte Formulare**: Wenn Daten von einem mit AEM Forms erstellten Formular beliebigen Typs gesendet werden und die Daten an ein Datenspeicher-Repository oder an eine Datenbank gesendet werden, gilt dies als Formularübermittlung. Beispielsweise wird das Senden eines adaptiven Formulars oder eines Formularsatzes als gesendete Formulare betrachtet. Wenn ein Formularsatz 5 Formulare umfasst und der Formularsatz übermittelt wird, zählt der Transaktionsberichtsdienst ihn als fünf Übermittlungen.
+* **Übermittelte Formulare**: Wenn Daten von einem mit AEM Forms erstellten Formular beliebigen Typs gesendet werden und die Daten an ein Datenspeicher-Repository oder an eine Datenbank gesendet werden, gilt dies als Formularübermittlung. Beispielsweise wird das Senden eines adaptiven Formulars oder eines Formularsatzes als Formularübermittlung betrachtet. Wenn ein Formularsatz 5 Formulare umfasst und dieser Formularsatz übermittelt wird, zählt der Dienst für Transaktionsberichte dies als 5 Übermittlungen.
 
 * **Gerenderte Dokumente**: Das Generieren eines Dokuments durch Kombinieren einer Vorlage und von Daten, das digitale Signieren oder Zertifizieren eines Dokuments, die Verwendung kostenpflichtiger Document Services-APIs für Dokumenten-Services oder das Konvertieren eines Dokuments von einem Format in ein anderes werden als gerenderte Dokumente verbucht.
 
@@ -200,7 +200,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#section/Before-you-start" target="_blank">createPDF</a></td>
-   <td>Generieren eines PDF-Dokument aus einer Vorlage und Zusammenführen mit Daten.</td>
+   <td>Generiert ein PDF-Dokument aus einer Vorlage und führt Daten damit zusammen.</td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
   </tr>
@@ -323,7 +323,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
  </tbody>
 </table>
 
-### Document of Record (DOR)-Dienst {#document-of-record-dor-forms-service-and-output-service}
+### Document of Record(DOR)-Dienst {#document-of-record-dor-forms-service-and-output-service}
 
 <table>
  <tbody>
@@ -436,7 +436,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/DDX-execution/operation/InvokeDDX">invoke</a></td>
-   <td>Führt das DDX für die angegebenen Eingabedokumente aus und gibt ein Objekt zurück, das die Ergebnisdokumente enthält</td>
+   <td>Führt das DDX-Dokument für die angegebenen Eingabedokumente aus und gibt ein Objekt zurück, das die Zieldokumente enthält</td>
    <td>Verarbeitete Dokumente</td>
    <td>Folgende Vorgänge werden nicht als Transaktionen verbucht:
     <ul>
@@ -446,7 +446,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/DDX-execution/operation/InvokeDDX" target="_blank">invoke</a></td>
-   <td>Führt das DDX für die angegebenen Eingabedokumente aus und gibt ein Objekt zurück, das die Ergebnisdokumente enthält</td>
+   <td>Führt das DDX-Dokument für die angegebenen Eingabedokumente aus und gibt ein Objekt zurück, das die Zieldokumente enthält</td>
    <td>Verarbeitete Dokumente</td>
    <td>Der Assembler-Service unterstützt alle Eingabedateiformate, die von PDF Generator, Forms und Ausgabe-Services unterstützt werden, als Ausgabedateiformate. </td>
   </tr>
@@ -495,7 +495,7 @@ Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder
 
 ## Kostenpflichtige Datenerfassungs-APIs {#billable-data-capture-apis}
 
-Alle Übermittlungsereignisse adaptiver Formulare werden als Transaktionen verbucht. Standardmäßig wird die Übermittlung eines PDF-Formulars nicht als Transaktion verbucht. Verwenden Sie die bereitgestellte [Transaktions-Recorder-API](record-transaction-custom-implementation.md), um eine Übermittlung von PDF-Formularen als Transaktion zu erfassen.
+Alle Übermittlungsereignisse von adaptiven Formularen werden als Transaktionen verbucht. Standardmäßig wird die Übermittlung eines PDF-Formulars nicht als Transaktion verbucht. Verwenden Sie die bereitgestellte [Transaktions-Recorder-API](record-transaction-custom-implementation.md), um eine Übermittlung von PDF-Formularen als Transaktion zu erfassen.
 
 ### Adaptive Formulare {#adaptive-forms}
 
@@ -566,9 +566,9 @@ Alle Übermittlungsereignisse adaptiver Formulare werden als Transaktionen verbu
 
 -->
 
-## Abrechenbare formularzentrierte AEM Workflows {#billable--form-centric-aem-workflows}
+## Abrechenbare formularzentrierte AEM-Workflows {#billable--form-centric-aem-workflows}
 
-Die Schritte &quot;Aufgabe zuweisen&quot;und &quot;Document Services&quot;von formularzentrierten AEM Workflows werden als Transaktionen berücksichtigt. Wenn durch einen Workflow-Schritt eine Transaktion verbucht wird und der Workflow nicht abgeschlossen werden kann, wird die Transaktionsanzahl nicht zurückgesetzt.
+Die Schritte der Zuweisung von Aufgaben und der Dokumenten-Services von formularzentrierten AEM-Workflows werden als Transaktionen verbucht. Wenn durch einen Workflow-Schritt eine Transaktion verbucht wird, aber der Workflow nicht abgeschlossen werden kann, wird die Transaktionsanzahl trotzdem nicht zurückgesetzt.
 
 <!--
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
@@ -621,12 +621,12 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 -->
 
-### Formularorientierte AEM Workflows {#form-centric-aem-workflows}
+### Formularzentrierte AEM-Workflows {#form-centric-aem-workflows}
 
 <table>
  <tbody>
   <tr>
-   <td><p>Nutzungsszenario</p> </td>
+   <td><p>Anwendungsfall</p> </td>
    <td>Kategorie des Transaktionsberichts</td>
    <td>Zusätzliche Informationen</td>
   </tr>

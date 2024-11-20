@@ -1,21 +1,21 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
-description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Integration mit einer Nicht-Adobe-Anwendung {#integrate-asset-selector-non-adobe-app}
+# Integration in eine Adobe-fremde Anwendung {#integrate-asset-selector-non-adobe-app}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Mit der Asset-Auswahl können Sie die Integration mit verschiedenen Anwendungen, die keine Adobe sind, oder Drittanbietern durchführen, um eine nahtlose Zusammenarbeit zu ermöglichen.
+Mit dem Asset-Wähler können Sie die Integration mit verschiedenen Adobe-fremden Anwendungen oder Anwendungen von Drittanbietern durchführen, um eine nahtlose Zusammenarbeit zu ermöglichen.
 
 ## Voraussetzungen {#prereqs-non-adobe-app}
 
@@ -30,11 +30,11 @@ Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler mit eine
 
 Der Asset-Wähler unterstützt die Authentifizierung für das [!DNL Experience Manager Assets]-Repository mit Eigenschaften des Identity Management System (IMS), z. B. `imsScope` oder `imsClientID`, wenn Sie es mit einer Nicht-Adobe-Anwendung integrieren.
 
-## Konfigurieren des Asset-Selektors für eine Nicht-Adobe-Anwendung {#configure-non-adobe-app}
+## Konfigurieren des Asset-Wählers mit einer Adobe-fremden Anwendung {#configure-non-adobe-app}
 
-Um die Asset-Auswahl für eine Nicht-Adobe-Anwendung zu konfigurieren, müssen Sie zunächst ein Support-Ticket für die Bereitstellung und dann die Integrationsschritte protokollieren.
+Um den Asset-Wähler für eine Adobe-fremde Anwendung zu konfigurieren, müssen Sie zunächst ein Support-Ticket für die Bereitstellung einreichen und dann die Integrationsschritte befolgen.
 
-### Support-Ticket anmelden {#log-a-support-ticket}
+### Einreichen eines Support-Tickets {#log-a-support-ticket}
 
 Schritte zum Einreichen eines Support-Tickets über die Admin Console:
 
@@ -47,7 +47,7 @@ Schritte zum Einreichen eines Support-Tickets über die Admin Console:
 
 ## Integrationsschritte {#non-adobe-app-integration-steps}
 
-Verwenden Sie diese Beispieldatei `index.html` zur Authentifizierung bei der Integration des Asset-Selektors in eine Nicht-Adobe-Anwendung.
+Verwenden Sie diese Beispieldatei `index.html` zur Authentifizierung bei der Integration des Asset-Wählers mit einer Adobe-fremden Anwendung.
 
 Greifen Sie mithilfe des `Script`-Tags auf das Asset-Wählerpaket zu, wie in *Zeile 9* bis *Zeile 11* der `index.html`-Beispieldatei dargestellt.
 
@@ -138,7 +138,7 @@ Der Asset-Wähler wird im Container-Element `<div>` gerendert, wie in *Zeile 74*
 </html>
 ```
 
-## Zugriff auf Bereitstellungs-Repository nicht möglich {#unable-to-access-delivery-repository}
+## Zugriff auf das Bereitstellungs-Repository nicht möglich {#unable-to-access-delivery-repository}
 
 >[!TIP]
 >
@@ -146,7 +146,7 @@ Der Asset-Wähler wird im Container-Element `<div>` gerendert, wie in *Zeile 74*
 
 >[!MORELIKETHIS]
 >
->* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der Asset-Auswahl in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
+>* [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)

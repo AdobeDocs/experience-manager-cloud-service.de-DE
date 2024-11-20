@@ -1,14 +1,14 @@
 ---
-title: Wie entwirft man ein JSON-Schema für die Kernkomponenten eines adaptiven Formulars?
-description: Erfahren Sie, wie Sie ein JSON-Schema für die Kernkomponenten eines adaptiven Formulars erstellen und basierend auf dem Schema ein adaptives Formular (Kernkomponenten) erstellen, um Schemadomändigungsdaten zu erstellen.
+title: Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)
+description: Erfahren Sie, wie Sie ein JSON-Schema für ein adaptives Formular (Kernkomponenten) erstellen und basierend auf dem Schema ein adaptives Formular (Kernkomponenten) erstellen, um Schema-konforme Daten zu erstellen.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,23 +23,23 @@ ht-degree: 86%
 
 ## Voraussetzungen {#prerequisites}
 
-Die Erstellung eines adaptiven Formulars basierend auf Kernkomponenten mithilfe eines JSON-Schemas als Formularmodell erfordert grundlegende Kenntnisse des JSON-Schemas. Es wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
+Für das Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars mit einem JSON-Schema als Formularmodell sind grundlegende Kenntnisse zu JSON-Schemata erforderlich. Es wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
 
-* [Erstellen eines adaptiven Formulars basierend auf Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md)
+* [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
 * [JSON-Schema](https://json-schema.org/)
 
 ## Verwenden eines JSON-Schemas als Formularmodell  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms unterstützt die Erstellung eines adaptiven Formulars basierend auf Kernkomponenten durch Verwendung eines vorhandenen JSON-Schemas als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte mit den [Spezifikationen der Version 4](https://json-schema.org/draft-04/schema) konform sein.
+Adobe Experience Manager Forms unterstützt die Erstellung eines auf Kernkomponenten basierenden adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte mit den [Spezifikationen der Version 4](https://json-schema.org/draft-04/schema) konform sein.
 
 Die wichtigsten Funktionen bei Verwendung eines JSON-Schemas sind wie folgt:
 
-* Die Struktur der JSON-Datei wird als Baumstruktur in der Registerkarte für die Content-Suche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der JSON-Hierarchie in das adaptive Formular ziehen, basierend auf Kernkomponenten.
+* Die Struktur der JSON-Datei wird als Baumstruktur in der Registerkarte für die Content-Suche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der JSON-Hierarchie zum auf Kernkomponenten basierenden adaptiven Formular hinzufügen, indem Sie sie dorthin ziehen.
 * Sie können das Formular mit JSON-Elementen vorausfüllen, die mit dem zugehörigen Schema konform sind.
 * Bei der Übermittlung werden die benutzerseitig eingegebenen Daten in einem JSON-Format gesendet, das dem zugehörigen Schema entspricht.
 * Sie können das Formular auch basierend auf dem JSON-Schema gemäß den Spezifikationen der [Version 2012-20](https://json-schema.org/draft/2020-12/release-notes) erstellen.
 
-Ein JSON-Schema besteht aus einfachen und komplexen Elementtypen. Die Elemente weisen Attribute auf, die dem Element Regeln hinzufügen. Wenn diese Elemente und Attribute auf ein adaptives Formular gezogen werden, werden sie automatisch den entsprechenden Komponenten des adaptiven Formulars zugeordnet.
+Ein JSON-Schema besteht aus einfachen und komplexen Elementtypen. Die Elemente weisen Attribute auf, die dem Element Regeln hinzufügen. Wenn diese Elemente und Attribute in ein adaptives Formular gezogen werden, werden sie automatisch den entsprechenden Komponenten des adaptiven Formulars zugeordnet.
 
 Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie folgt:
 
@@ -84,11 +84,11 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
   </tr>
   <tr>
    <td>Zahleneigenschaft<br /> </td>
-   <td>Numerisches Feld mit Subtyp „float“.<br /> </td>
+   <td>Numerisches Feld mit Subtyp „float“<br /> </td>
   </tr>
   <tr>
    <td>Ganzzahl-Eigenschaft<br /> </td>
-   <td>Numerisches Feld mit Subtyp „integer“.<br /> </td>
+   <td>Numerisches Feld mit Subtyp „integer“<br /> </td>
   </tr>
   <tr>
    <td>Boolesche Eigenschaft<br /> </td>
@@ -429,8 +429,8 @@ Das adaptive Formular verwendet die im JSON-Schema verfügbaren Informationen, u
 >[!ENDTABS]
 
 Die wichtigsten Änderungen zwischen den Spezifikationen des JSON-Schemas v4 und des JSON-Schemas 2020-12 lauten wie folgt:
-* Die ID ist als `$id` deklariert.
-* Definitionen sind als `$defs` deklariert.
+* Die ID ist als `$id` deklariert
+* Definitionen sind als `$defs` deklariert
 
 ### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
 
@@ -756,7 +756,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Sie können die folgenden Einschränkungen zu JSON-Schema-Elementen hinzufügen, um die für eine Kernkomponente des adaptiven Formulars akzeptablen Werte zu begrenzen:
+Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, um die Werte zu beschränken, die für eine Kernkomponente eines adaptiven Formulars gültig sind:
 
 <table>
  <tbody>
@@ -893,7 +893,7 @@ Es gibt zwei Optionen:
 
 Für eine JSON-Schema-Datei muss immer die Erweiterung .schema.json verwendet werden. Beispiel: &lt;filename>.schema.json.
 
-**Wird `aem:afProperties` als Teil des JSON-Schemas im adaptiven Forms auf der Basis von Kernkomponenten unterstützt?**
+**Wird `aem:afProperties` als Teil des JSON-Schemas in auf Kernkomponenten basierenden adaptiven Formularen unterstützt?**
 
 Nein, `aem:afProperties` wird für Kernkomponenten nicht unterstützt. Diese Eigenschaft wird nur für Foundation-Komponenten unterstützt.
 

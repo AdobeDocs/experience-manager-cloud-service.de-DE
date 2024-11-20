@@ -1,32 +1,32 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
-description: Verwenden Sie Funktionen zum Anpassen der Asset-Auswahl in Ihrer Anwendung.
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Verwenden Sie Funktionen zum Anpassen des Asset-Wählers in Ihrer Anwendung.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1261'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Anpassungen des Asset-Wählers {#asset-selector-customization}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Mit der Asset-Auswahl können Sie verschiedene Komponenten gemäß Voreinstellungen, Anforderungen oder funktionalen Anforderungen anpassen. Sie können die folgenden Komponenten anpassen: [Micro-Frontend-Asset-Selektor](#overview-asset-selector.md):
+Mit dem Asset-Wähler können Sie verschiedene Komponenten entsprechend Präferenzen, Ansprüchen oder funktionalen Anforderungen anpassen. Sie können die folgenden Komponenten anpassen: [Micro-Frontend-Asset-Wähler](#overview-asset-selector.md):
 
-* [Anpassen des Filter-Bedienfelds](#customize-filter-panel)
-* [Anpassen von Informationen in der Modal-Ansicht](#customize-info-in-modal-view)
+* [Anpassen des Bedienfelds „Filter“](#customize-filter-panel)
+* [Anpassen von Informationen in der modalen Ansicht](#customize-info-in-modal-view)
 * [Aktivieren oder Deaktivieren des Drag-and-Drop-Modus](#enable-disable-drag-and-drop)
 * [Auswahl von Assets](#selection-of-assets)
 * [Anpassen abgelaufener Assets](#customize-expired-assets)
 * [Kontextaufruffilter](#contextual-invocation-filter)
 
-Sie müssen die Voraussetzungen in der Datei **index.html** oder einer ähnlichen Datei in Ihrer Anwendungsimplementierung definieren, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets] -Repository zu definieren. Danach können Sie Code-Fragmente gemäß Ihren Anforderungen hinzufügen.
+Sie müssen die Voraussetzungen in der Datei **index.html** oder in einer ähnlichen Datei innerhalb Ihrer Anwendungsimplementierung definieren, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets]-Repository festzulegen. Danach können Sie Code-Fragmente gemäß Ihren Anforderungen hinzufügen.
 
-## Anpassen des Filter-Bedienfelds {#customize-filter-panel}
+## Anpassen des Bedienfelds „Filter“ {#customize-filter-panel}
 
 Sie können das folgende Code-Fragment im Objekt `assetSelectorProps` hinzufügen, um das Filter-Bedienfeld anzupassen:
 
@@ -88,7 +88,7 @@ filterSchema: [
 ],
 ```
 
-## Anpassen von Informationen in der Modal-Ansicht {#customize-info-in-modal-view}
+## Anpassen von Informationen in der modalen Ansicht {#customize-info-in-modal-view}
 
 Sie können die Detailansicht eines Assets anpassen, wenn Sie auf das Symbol ![Infosymbol](assets/info-icon.svg) klicken. Führen Sie den folgenden Code aus:
 
@@ -408,16 +408,16 @@ const filterSchema = useMemo ((); => {
 
 ![Tag-Gruppenfilter](assets/tag-group.gif)
 
-## Hochladen in der Asset-Auswahl {#upload-in-asset-selector}
+## Hochladen in den Asset-Wähler {#upload-in-asset-selector}
 
-Sie können Dateien oder Ordner aus Ihrem lokalen Dateisystem in die Asset-Auswahl hochladen. Um Dateien mit dem lokalen Dateisystem hochzuladen, müssen Sie in der Regel eine Upload-Funktion verwenden, die von einer Asset-Auswahl-Mikro-Frontend-Anwendung bereitgestellt wird. Verschiedene Codefragmente, die zum Aufrufen des Uploads in der Asset-Auswahl erforderlich sind, umfassen:
+Sie können Dateien oder Ordner aus Ihrem lokalen Dateisystem in den Asset-Wähler hochladen. Um Dateien mit dem lokalen Dateisystem hochzuladen, müssen Sie im Allgemeinen eine Upload-Funktion verwenden, die von einer Mikro-Frontend-Anwendung des Asset-Wählers bereitgestellt wird. Zu den verschiedenen Code-Snippets, die zum Aufrufen des Uploads im Asset-Wähler erforderlich sind, gehören:
 
-* [Grundlegendes Codefragment für das Hochladen von Formularen](#basic-upload)
-* [Mit Metadaten hochladen](#upload-with-metadata)
+* [Code-Snippet für einfache Upload-Formulare](#basic-upload)
+* [Hochladen mit Metadaten](#upload-with-metadata)
 * [Benutzerdefinierter Upload](#customized-upload)
 * [Hochladen mit Drittanbieterquellen](#upload-using-third-party-source)
 
-### Grundlegendes Upload-Formular {#basic-upload}
+### Einfaches Upload-Formular {#basic-upload}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -452,7 +452,7 @@ export const UploadExample = () => {
 }
 ```
 
-### Mit Metadaten hochladen {#upload-with-metadata}
+### Hochladen mit Metadaten {#upload-with-metadata}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -612,6 +612,6 @@ const ControlledUploadExample = () => {
 >[!MORELIKETHIS]
 >
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der Asset-Auswahl in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

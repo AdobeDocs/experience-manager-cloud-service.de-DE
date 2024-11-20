@@ -1,18 +1,18 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
-description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellungen von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Micro-Front-End-Asset-Selektor {#Overview}
+# Micro-Frontend-Asset-Selektor {#Overview}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Der Micro-Front-End-Asset-Selektor bietet eine Benutzeroberfläche, die sich problemlos in das [!DNL Experience Manager Assets]-Repository integrieren lässt, sodass Sie die im Repository verfügbaren digitalen Assets durchsuchen und für die Erstellung von Applikationen verwenden können.
@@ -23,12 +23,12 @@ Die Micro-Front-End-Benutzeroberfläche wird über das Asset-Selektor-Paket in I
 
 Der Asset-Selektor bietet viele Vorteile, z. B.:
 
-* Einfache Integration mit einer der Anwendungen [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) oder [non-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) unter Verwendung der Vanilla JavaScript-Bibliothek.
+* Einfache Integration in [Adobe](/help/assets/integrate-asset-selector-adobe-app.md)- oder [Adobe-fremde](/help/assets/integrate-asset-selector-non-adobe-app.md) Anwendungen unter Verwendung der Vanilla JavaScript-Bibliothek.
 * Einfach zu verwalten, da Aktualisierungen des Assets-Wähler-Pakets automatisch für den Asset-Selektor bereitgestellt werden, der für Ihre Applikation verfügbar ist. Es sind keine Aktualisierungen innerhalb Ihrer Applikation erforderlich, um die neuesten Änderungen zu laden.
 * Einfachere Anpassung, da Eigenschaften verfügbar sind, die die Anzeige des Asset-Selektors in Ihrer Applikation steuern.
 * Volltextsuche, vordefinierte und benutzerdefinierte Filter, um schnell zu Assets zu navigieren, die für das Authoring-Erlebnis verwendet werden können.
 * Möglichkeit, innerhalb einer IMS-Organisation zur Asset-Auswahl zwischen Repositorys zu wechseln.
-* Möglichkeit, Assets nach Namen, Dimensionen und Größe zu sortieren und in der Listen-, Raster-, Galerie- oder Wasserfallansicht anzuzeigen.
+* Möglichkeit, Assets nach Namen, Abmessungen und Größe zu sortieren und in der Listen-, Raster-, Galerie- oder Wasserfallansicht anzuzeigen.
 
 <!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
@@ -51,18 +51,18 @@ Sie müssen die folgenden Kommunikationsmethoden sicherstellen:
 * Die URL der Anwendung befindet sich in der Zulassungsliste der Umleitungs-URLs des IMS-Clients.
 * Der IMS-Anmeldefluss wird mithilfe eines Popup-Fensters im Webbrowser konfiguriert und gerendert. Daher sollten Popup-Fenster im Ziel-Browser aktiviert oder zugelassen werden.
 
-Verwenden Sie die oben genannten Voraussetzungen, wenn Sie den IMS-Authentifizierungs-Workflow der Asset-Auswahl benötigen. Wenn Sie bereits mit dem IMS-Workflow authentifiziert sind, können Sie stattdessen die IMS-Informationen hinzufügen.
+Die oben genannten Voraussetzungen müssen erfüllt sein, wenn Sie einen IMS-Authentifizierungs-Workflow des Asset-Wählers benötigen. Wenn Sie bereits mit dem IMS-Workflow authentifiziert sind, können Sie stattdessen die IMS-Informationen hinzufügen.
 
 **Mehr anzeigen**
 
-* [Integrieren der Asset-Auswahl in eine Adobe-App](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Integrieren der Asset-Auswahl in eine Nicht-Adobe-App](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integrieren von APIs zum Öffnen dynamischer Medien in Asset Selector](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrieren des Asset-Wählers in eine Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrieren des Asset-Wählers in eine Adobe-fremde Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Integrieren des Asset-Wählers in Dynamic Media-OpenAPIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
 >
-> Dieses Repository dient als zusätzliche Dokumentation, die die verfügbaren APIs und Anwendungsbeispiele für die Integration des Asset-Wählers beschreibt. Bevor Sie versuchen, den Asset-Wähler zu installieren oder zu verwenden, stellen Sie sicher, dass Ihr Unternehmen Zugriff auf den Asset-Wähler im Experience Manager Assets as a Cloud Service-Profil erhalten hat. Wenn diese Komponenten noch nicht bereitgestellt wurden, können Sie sie weder integrieren noch verwenden. Um die Bereitstellung anzufordern, sollte Ihr Programmadministrator ein Support-Ticket erstellen, das von der Admin Console als P2 gekennzeichnet ist, und die folgenden Informationen einschließen:
+> Dieses Repository dient als zusätzliche Dokumentation, die die verfügbaren APIs und Anwendungsbeispiele für die Integration des Asset-Wählers beschreibt. Bevor Sie versuchen, den Asset-Wähler zu installieren oder zu verwenden, stellen Sie sicher, dass Ihr Unternehmen Zugriff auf den Asset-Wähler im Experience Manager Assets as a Cloud Service-Profil erhalten hat. Wenn diese Komponenten noch nicht bereitgestellt wurden, können Sie sie weder integrieren noch verwenden. Um die Bereitstellung anzufordern, sollten Ihre Programm-Admins ein Support-Ticket erstellen, das von der Admin Console als P2 gekennzeichnet ist, und die folgenden Informationen einschließen:
 >
 >* Domain-Namen, auf denen die integrierende Anwendung gehostet wird.
 >* Nach der Bereitstellung wird Ihrem Unternehmen entsprechend den angeforderten Umgebungen, die für die Konfiguration des Asset-Wählers erforderlich sind, `imsClientId`, `imsScope` und eine `redirectUrl` bereitgestellt. Ohne diese gültigen Eigenschaften können Sie die Installationsschritte nicht ausführen.
@@ -112,7 +112,7 @@ Sobald der Asset-Selektor eingerichtet ist und Sie für die Verwendung mit Ihrem
 
 ### Bedienfeld aus-/einblenden {#hide-show-panel}
 
-Um Ordner im linken Navigationsbereich auszublenden, klicken Sie auf das Symbol **[!UICONTROL Ordner ausblenden]** . Um die Änderungen rückgängig zu machen, klicken Sie erneut auf das Symbol **[!UICONTROL Ordner ausblenden]**.
+Um Ordner im linken Navigationsbereich auszublenden, klicken Sie auf das Symbol **[!UICONTROL Ordner ausblenden]**. Um die Änderungen rückgängig zu machen, klicken Sie erneut auf das Symbol **[!UICONTROL Ordner ausblenden]**.
 
 ### Repository-Umschalter {#repository-switcher}
 
@@ -128,7 +128,7 @@ Der Asset-Selektor bietet außerdem vordefinierte Filteroptionen, mit denen Sie 
 
 * **[!UICONTROL Status]:** enthält den aktuellen Status des Assets, entweder `all`, `approved`, `rejected` oder `no status`.
 * **[!UICONTROL Dateityp]:** enthält `folder`, `file`, `images`, `documents` oder `video`.
-* **[!UICONTROL Ablaufstatus]:** erwähnt die Assets basierend auf ihrer Gültigkeitsdauer. Sie können entweder das Kontrollkästchen `[!UICONTROL Expired]` aktivieren, um abgelaufene Assets zu filtern, oder `[!UICONTROL Expiration Duration]` eines Assets so einstellen, dass Assets basierend auf ihrer Ablaufdauer angezeigt werden. Wenn ein Asset bereits abgelaufen ist oder kurz vor seinem Ablauf steht, wird dasselbe mit einem Abzeichen angezeigt. Darüber hinaus können Sie steuern, ob Sie die Verwendung (oder das Ziehen per Drag-and-Drop) eines abgelaufenen Assets zulassen möchten. Weitere Informationen zum [Anpassen abgelaufener Assets](/help/assets/asset-selector-customization.md#customize-expired-assets). Standardmäßig wird für Assets, die in den nächsten 30 Tagen ablaufen, das Zeichen &quot;**Bald ablaufen**&quot;angezeigt. Sie können die Gültigkeitsdauer jedoch mit der Eigenschaft `expirationDate` konfigurieren.
+* **[!UICONTROL Ablaufstatus]:** erwähnt die Assets basierend auf ihrer Gültigkeitsdauer. Sie können entweder das Kontrollkästchen `[!UICONTROL Expired]` aktivieren, um abgelaufene Assets zu filtern, oder `[!UICONTROL Expiration Duration]` eines Assets so einstellen, dass Assets basierend auf ihrer Ablaufdauer angezeigt werden. Wenn ein Asset bereits abgelaufen ist oder kurz vor seinem Ablauf steht, wird ein Zeichen angezeigt, das darauf hinweist. Darüber hinaus können Sie steuern, ob Sie die Verwendung (oder das Ziehen per Drag-and-Drop) eines abgelaufenen Assets zulassen möchten. Weitere Informationen zum [Anpassen abgelaufener Assets](/help/assets/asset-selector-customization.md#customize-expired-assets). Standardmäßig wird für Assets, die in den nächsten 30 Tagen ablaufen, das Zeichen **Läuft bald ab** angezeigt. Sie können die Gültigkeitsdauer jedoch mit der Eigenschaft `expirationDate` konfigurieren.
 
   >[!TIP]
   >
@@ -145,11 +145,11 @@ Neben der Volltextsuche ermöglicht der Asset-Selektor die Suche nach Assets inn
 
 ![custom-search](assets/custom-search1.png)
 
-Sie können auch einen Standardsuchfilter erstellen, um die häufig gesuchten Felder zu speichern und sie später zu verwenden. Um eine benutzerdefinierte Suche für Ihre Assets zu erstellen, können Sie die `filterSchema`-Eigenschaft verwenden.
+Sie können auch einen Standardsuchfilter erstellen, um die häufig gesuchten Felder zu speichern, sodass Sie sie später verwenden können. Um eine benutzerdefinierte Suche für Ihre Assets zu erstellen, können Sie die `filterSchema`-Eigenschaft verwenden.
 
 ### Suchleiste {#search-bar}
 
-Mit der Asset-Auswahl können Sie eine Volltextsuche nach Assets im ausgewählten Repository durchführen. Wenn Sie zum Beispiel den Suchbegriff `wave` in die Suchleiste eingeben, werden alle Assets angezeigt, die den Suchbegriff `wave` in einer der Metadateneigenschaften enthalten.
+Mit dem Asset-Wähler können Sie eine Volltextsuche nach Assets im ausgewählten Repository durchführen. Wenn Sie zum Beispiel den Suchbegriff `wave` in die Suchleiste eingeben, werden alle Assets angezeigt, die den Suchbegriff `wave` in einer der Metadateneigenschaften enthalten.
 
 ### Sortierung {#sorting}
 
@@ -172,68 +172,68 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
 <table>
 <tr>
     <td>
-        <img src="assets/integrate-asset-selector.gif" width="70px" height="70px" alt="Grafik der Asset-Auswahl integrieren"><br/>
-        <a href="integrate-asset-selector.md">Integrieren der Asset-Auswahl</a>
+        <img src="assets/integrate-asset-selector.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers"><br/>
+<a href="integrate-asset-selector.md">Integrieren des Asset-Wählers</a>
         <p>
-        <em>Erfahren Sie mehr über verschiedene Funktionen zur Integration der Asset-Auswahl in mehrere Anwendungen.
+        <em>Erfahren Sie mehr über verschiedene Funktionen zur Integration des Asset-Wählers in zahlreiche Anwendungen.
         </p>
      </td>
     <td>
-        <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Integrieren des Asset-Selektors mit der Grafik Adobe-Apps"><br/>
-        <a href="integrate-asset-selector.md">Integrieren der Asset-Auswahl in Adobe-Anwendungen</a>
+        <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers in Adobe-Anwendungen"><br/>
+<a href="integrate-asset-selector.md">Integrieren des Asset-Wählers in Adobe-Anwendungen</a>
         <p>
-        <em>Erfahren Sie, wie Sie den Asset-Selektor mit verschiedenen Adobe-Applikationen integrieren.</em>
+        <em>Entdecken Sie, wie Sie den Asset-Wähler in verschiedene Adobe-Anwendungen integrieren können.</em>
         </p>
     </td>
     <td>
-        <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Grafik der Asset-Auswahl integrieren"><br/>
-        <a href="integrate-asset-selector.md">Integrieren der Asset-Auswahl in Anwendungen von Drittanbietern</a>
+        <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers"><br/>
+<a href="integrate-asset-selector.md">Integrieren des Asset-Wählers in Anwendungen von Drittanbietern</a>
         <p>
-        <em>Erweitern Sie die Funktionen zur Integration des Asset-Selektors in Nicht-Adobe-Anwendungen.</em>
+        <em>Entdecken Sie die Funktionen zum Integrieren des Asset-Wählers in Adobe-fremde Anwendungen.</em>
         </p>
     </td>
     <td>
-        <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Grafik der Asset-Auswahl integrieren"><br/>
-        <a href="integrate-asset-selector.md">Integrieren der Asset-Auswahl in Dynamic Media Open APIs</a>
+        <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers"><br/>
+<a href="integrate-asset-selector.md">Integrieren des Asset-Wählers in Dynamic Media-OpenAPIs</a>
         <p>
-        <em>Erfahren Sie, wie Sie den Asset-Selektor mit Dynamic Media Open APIs integrieren.</em>
+        <em>Erfahren Sie, wie Sie den Asset-Wähler in Dynamic Media-OpenAPIs integrieren.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset-Auswahleigenschaftsgrafik"><br/>
-        <a href="asset-selector-customization.md">Asset-Wählereigenschaften</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Grafik zu den Eigenschaften des Asset-Wählers"><br/>
+<a href="asset-selector-customization.md">Eigenschaften des Asset-Wählers</a>
         <p>
-        <em>Erfahren Sie mehr über die Grundlagen zum Anpassen verschiedener Komponenten der Asset-Auswahl, wie Filter, Auswahl von Assets, abgelaufene Assets und vieles mehr. </em>
+        <em>Erfahren Sie mehr über die Grundlagen zum Anpassen verschiedener Komponenten des Asset-Wählers, wie Filter, Auswahl von Assets und abgelaufene Assets. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Abbildung der Asset-Auswahl-Beispiele"><br/>
-        <a href="asset-selector-customization.md">Beispiele für Asset-Wähler</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Grafik zu Beispielen für den Asset-Wähler"><br/>
+<a href="asset-selector-customization.md">Beispiele für den Asset-Wähler</a>
         <p>
-        <em>Verstehen Sie die Verwendung von Eigenschaften auf praktische Weise. </em>
+        <em>Lernen Sie, die Verwendung von Eigenschaften auf praktische Weise zu verstehen. </em>
         </p>
     </td>
     <td>
-        <img src="assets/customize-asset-selector.gif" width="70px" height="70px" alt="Anpassen der Asset-Auswahl-Grafik"><br/>
-        <a href="asset-selector-customization.md">Anpassungen der Asset-Auswahl</a>
+        <img src="assets/customize-asset-selector.gif" width="70px" height="70px" alt="Grafik zum Anpassen des Asset-Wählers"><br/>
+<a href="asset-selector-customization.md">Anpassungen des Asset-Wählers</a>
         <p>
-        <em>Konfigurieren und passen Sie die verschiedenen Komponenten der Asset-Auswahl basierend auf Ihrer Benutzerfreundlichkeit an. </em>
+        <em>Konfigurieren und passen Sie verschiedene Komponenten des Asset-Wählers basierend auf Ihrer Benutzerfreundlichkeit an. </em>
         </p>
     </td>
     <td>
-        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Asset-Auswahl-Upload-Grafik"><br/>
-        <a href="asset-selector-upload.md">Asset-Selektor-Upload</a>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Grafik zum Hochladen in den Asset-Wähler"><br/>
+<a href="asset-selector-upload.md">Hochladen in den Asset-Wähler</a>
         <p>
-        <em>Erfahren Sie, wie Sie Dateien oder Ordner aus Ihrem lokalen Dateisystem oder aus einem Drittanbietersystem in die Asset-Auswahl hochladen können. </em>
+        <em>Erfahren Sie, wie Sie Dateien oder Ordner aus Ihrem lokalen Dateisystem oder aus einem Dateisystem von Drittanbietern in den Asset-Wähler hochladen können. </em>
         </p>
     </td>
      <td>
-        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Grafik zu Asset-Auswahl-Sammlungen"><br/>
-        <a href="asset-selector-collections.md">Asset-Auswahl-Sammlungen</a>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Grafik zu Sammlungen des Asset-Wählers"><br/>
+<a href="asset-selector-collections.md">Sammlungen des Asset-Wählers</a>
         <p>
-        <em>Erfahren Sie, wie Sie Sammlungen in der Asset-Auswahl mithilfe des Experience Manager-Repositorys verwenden. </em>
+        <em>Erfahren Sie, wie Sie Sammlungen im Asset-Wähler mithilfe des Experience Manager-Repositorys verwenden. </em>
         </p>
     </td>
     <td>
@@ -243,7 +243,7 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
 
 >[!MORELIKETHIS]
 >
->* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
->* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
+>* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Integrieren der Asset-Auswahl in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

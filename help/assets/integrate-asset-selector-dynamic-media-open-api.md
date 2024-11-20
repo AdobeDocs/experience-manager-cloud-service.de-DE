@@ -1,21 +1,21 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
-description: Integrieren Sie die Asset-Auswahl in verschiedene Adobe-, Nicht-Adobe- und Drittanbieter-Anwendungen.
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Integrieren in Dynamic Media mit OpenAPI-Funktionen {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Mit der Asset-Auswahl können Sie die Integration mit verschiedenen Adobe-Applikationen durchführen, um eine nahtlose Zusammenarbeit zu ermöglichen.
+Mit dem Asset-Wähler können Sie die Integration mit verschiedenen Adobe-Anwendungen durchführen, um eine nahtlose Zusammenarbeit zu ermöglichen.
 
 
 ## Voraussetzungen {#prereqs-polaris}
@@ -40,12 +40,12 @@ Die Eigenschaften `rootPath` und `path` sollten nicht Teil von Dynamic Media mit
 aemTierType:[1: "delivery"]
 ```
 
-Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie unter der Eigenschaft [Asset-Selektor-Eigenschaften](/help/assets/asset-selector-properties.md) zur Eigenschaft `aemTierType` .
+Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie im Abschnitt [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md) unter der Eigenschaft `aemTierType`.
 
 
 ### Erstellen einer dynamischen Bereitstellungs-URL aus genehmigten Assets {#create-dynamic-media-url}
 
-Nachdem Sie die Asset-Auswahl eingerichtet haben, wird ein Objektschema verwendet, um eine Dynamic Delivery-URL aus den ausgewählten Assets zu erstellen.
+Nachdem Sie den Asset-Wähler eingerichtet haben, wird ein Objektschema verwendet, um eine dynamische Bereitstellungs-URL anhand der genehmigten Assets zu erstellen.
 Hier ist ein Beispiel für ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
 
 ```
@@ -75,24 +75,24 @@ URL-Format:
 
 Dabei gilt Folgendes:
 
-* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
-* Der API-Stamm lautet `"/adobe/dynamicmedia/deliver"`.
-* `<asset-id>` ist die Asset-Kennung.
-* `<seo-name>` ist der Name eines Assets.
-* `<format>` ist das Ausgabeformat.
-* `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt.
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* Der API-Stamm lautet `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` ist die Asset-Kennung
+* `<seo-name>` ist der Name eines Assets
+* `<format>` ist das Ausgabeformat
+* `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt
 
 #### API zur Bereitstellung genehmigter Assets {#approved-assets-delivery-api}
 
 Die dynamische Versand-URL weist die folgende Syntax auf:
 `https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, wobei Folgendes gilt:
 
-* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
-* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets/deliver"`.
-* `<asset-id>` ist die Asset-Kennung.
-* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann.
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets/deliver"`
+* `<asset-id>` ist die Asset-Kennung
+* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann
 
-### Dynamische Versand-URL auswählen {#ready-to-pick-dynamic-delivery-url}
+### Auswahlbereite dynamische Bereitstellungs-URL {#ready-to-pick-dynamic-delivery-url}
 
 Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
 
@@ -144,21 +144,21 @@ Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PD
 
   Im obigen Beispiel lautet die URL des Video-Players wie folgt: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
-### Benutzerdefinierte Filter konfigurieren {#configure-custom-filters-dynamic-media-open-api}
+### Konfigurieren benutzerdefinierter Filter {#configure-custom-filters-dynamic-media-open-api}
 
-Mit der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die Eigenschaft `filterSchema` wird zum Konfigurieren solcher Eigenschaften verwendet. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht werden, womit die Filter konfiguriert werden können. Dabei gilt Folgendes:
+Mit dem Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die Eigenschaft `filterSchema` wird zum Konfigurieren solcher Eigenschaften verwendet. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht werden, womit die Filter konfiguriert werden können. Dabei gilt Folgendes:
 
-* Bei `metadata` handelt es sich um die Informationen eines Assets.
-* Bei `embedded` handelt es sich um den statischen Parameter, der für die Konfiguration verwendet wird.
-* Bei `<propertyname>` handelt es sich um den Filternamen, den Sie konfigurieren.
+* Bei `metadata` handelt es sich um die Informationen eines Assets
+* Bei `embedded` handelt es sich um den statischen Parameter, der für die Konfiguration verwendet wird
+* Bei `<propertyname>` handelt es sich um den Filternamen, den Sie konfigurieren
 
 Für die Konfiguration werden die auf Ebene `jcr:content/metadata/` definierten Eigenschaften für die zu konfigurierenden Filter als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht.
 
 Beispielsweise wird im Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen eine Eigenschaft unter `asset jcr:content/metadata/client_name:market` für die Filterkonfiguration in `metadata.embedded.client_name:market` umgewandelt.
 
-Um den Namen abzurufen, muss eine einmalige Aktivität durchgeführt werden. Führen Sie einen Such-API-Aufruf für das Asset aus und rufen Sie den Eigenschaftsnamen ab (im Grunde der Behälter).
+Um den Namen abzurufen, muss eine einmalige Aktivität durchgeführt werden. Führen Sie einen Such-API-Aufruf für das Asset aus und rufen Sie den Eigenschaftsnamen (also den Bucket) ab.
 
-### Benutzeroberfläche der Asset-Auswahl für Dynamic Media mit OpenAPI-Funktionen {#interface-dynamic-media-open-api}
+### Benutzeroberfläche des Asset-Wählers für Dynamic Media mit OpenAPI-Funktionen {#interface-dynamic-media-open-api}
 
 Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie die reine Asset-Struktur aller genehmigten Assets sehen, die im Experience Manager-Asset-Repository verfügbar sind.
 
@@ -175,6 +175,6 @@ Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie 
 
 >[!MORELIKETHIS]
 >
->* [Integrieren der Asset-Auswahl in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Integrieren des Asset-Wählers mit verschiedenen Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
->* [Asset-Selektor-Anpassungen](/help/assets/asset-selector-customization.md)
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)

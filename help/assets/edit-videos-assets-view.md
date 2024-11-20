@@ -1,99 +1,99 @@
 ---
 title: Bearbeiten von Videos
-description: Bearbeiten Sie Videos mit [!DNL Adobe Express] eingeschalteten Optionen und speichern Sie aktualisierte Videos als Versionen.
+description: Bearbeiten Sie Videos mit von [!DNL Adobe Express] unterstützten Optionen und speichern Sie aktualisierte Videos als Versionen.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 # Bearbeiten von Videos in [!DNL Assets view] {#edit-videos}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Das Erstellen von Varianten von Videoinhalten ist für Assets-Benutzer mit den eingebetteten Schnellaktionen [!DNL Adobe Express] für Videos einfach. Schnellaktionen in [!DNL Assets view] mit [!DNL Adobe Express] bieten benutzerfreundliche Videobearbeitungsoptionen, einschließlich Zuschneiden von Videos, Größenanpassung von Videos, Zuschneiden von Videos und Konvertieren von Videos in GIF.
+Assets-Benutzende können Varianten von Videoinhalten ganz einfach mit den eingebetteten [!DNL Adobe Express]-Schnellaktionen für Videos erstellen. Schnellaktionen in [!DNL Assets view] auf Basis von [!DNL Adobe Express] bieten benutzerfreundliche Optionen zur Videobearbeitung, einschließlich dem Zuschneiden, Ändern der Größe, Zuschneiden und Konvertieren von Videos in GIF.
 
-Um ein Video zu bearbeiten, navigieren Sie zu den Details des Videos und klicken Sie auf [!UICONTROL Video bearbeiten]. Alternativ können Sie das Asset auswählen und auf Details klicken und dann im rechten Bereich auf das Symbol ![Schere](assets/do-not-localize/cut.svg) klicken. Nach dem Bearbeiten eines Videos können Sie das neue Video als neue Version oder als neues Asset speichern.
+Navigieren Sie zum Bearbeiten eines Videos zu den Details des Videos und klicken Sie auf [!UICONTROL Video bearbeiten]. Wählen Sie alternativ das Asset aus, klicken Sie auf „Details“ und klicken Sie anschließend im rechten Bereich auf das Symbol ![scissors](assets/do-not-localize/cut.svg). Nachdem Sie ein Video bearbeitet haben, können Sie das neue Video als neue Version oder als neues Asset speichern.
 
 ## Voraussetzungen {#prerequisites}
 
-Berechtigungen für den Zugriff auf [!DNL Adobe Express] und mindestens eine Umgebung in AEM Assets. Bei der Umgebung kann es sich um eines der Repositorys in [!DNL Assets as a Cloud Service] oder [!DNL Assets view] handeln.
+Es sind Berechtigungen für den Zugriff auf [!DNL Adobe Express] und mindestens eine Umgebung in AEM Assets erforderlich. Bei der Umgebung kann es sich um eines der Repositorys in [!DNL Assets as a Cloud Service] oder [!DNL Assets view] handeln.
 
 ## Bearbeiten von Videos mit Adobe Express {#edit-video-using-express}
 
-Die Umwandlung eines Videos in eine perfekte Größe und Ausrichtung ist mit eingebetteten Schnellaktionen mit [!DNL Adobe Express] einfach.
+Das Umwandeln eines Videos in eine perfekte Größe und Ausrichtung gelingt mit den eingebetteten Schnellaktionen von [!DNL Adobe Express] ganz leicht.
 
-### Zuschneiden von Videos {#crop-video-using-express}
+### Zuschneiden eines Videos {#crop-video-using-express}
 
-Sie können unerwünschte Teile aus dem Video mit eingebetteten Schnellaktionen mit [!DNL Adobe Express] entfernen. Führen Sie dazu die folgenden Schritte aus:
+Mit den eingebetteten Schnellaktionen von [!DNL Adobe Express] können Sie unerwünschte Teile aus dem Video entfernen. Führen Sie hierzu die folgenden Schritte aus:
 
-1. Wählen Sie ein Video aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
-2. Klicken Sie in den im linken Bereich verfügbaren Schnellaktionen auf **[!UICONTROL Video beschneiden]** .
-3. Ziehen Sie die Griffe an die Ecken des Videos, um den gewünschten Zuschnitt zu erstellen, oder wählen Sie eine der vorhandenen Bildschirmgrößen aus.
+1. Wählen Sie ein Videos aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+2. Klicken Sie in den Schnellaktionen im linken Bereich auf **[!UICONTROL Video zuschneiden]**.
+3. Ziehen Sie die Griffe an den Ecken des Videos, um den gewünschten Zuschnitt zu erstellen, oder wählen Sie nach Bedarf eine der vorhandenen Bildschirmgrößen aus.
 4. Sie können das Video stummschalten oder die Stummschaltung aufheben.
 5. Klicken Sie auf **[!UICONTROL Übernehmen]**.
-   ![Beschneiden von Videos mit Adobe Express](assets/adobe-express-crop-video.png)
+   ![Zuschneiden von Videos mit Adobe Express](assets/adobe-express-crop-video.png)
 
-   Das zugeschnittene Video kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets speichern oder als neues Asset speichern. ![Video mit Adobe Expreß speichern](assets/adobe-express-save-video.png)
+   Das zugeschnittene Video kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern. ![Speichern von Videos mit Adobe Express](assets/adobe-express-save-video.png)
 
-### Größe des Videos ändern {#resize-video-using-express}
+### Anpassen der Videogröße {#resize-video-using-express}
 
-Die Größe des endgültigen Videoinhalts im DAM muss oft geändert werden, um an bestimmte Kanäle verteilt zu werden. Mit [!DNL Assets view] können Sie die Größe des Videos einfach an die für allgemeine soziale Kanäle erforderlichen Abmessungen anpassen und die Größe auch auf benutzerdefinierte Auflösungen anpassen. Um die Größe des Videos mit [!DNL Assets view] zu ändern, führen Sie die folgenden Schritte aus:
+Die Größe des endgültigen Videoinhalts im DAM muss für die Verteilung an bestimmte Kanäle oft geändert werden. Mit [!DNL Assets view] können Sie die Größe des Videos einfach an die für gängige soziale Kanäle erforderlichen Dimensionen anpassen. Anpassungen der Größe an benutzerdefinierte Auflösungen sind ebenfalls möglich. Um die Videogröße mit [!DNL Assets view] zu ändern, führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie ein Video aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
-2. Klicken Sie in den im linken Bereich verfügbaren Schnellaktionen auf **[!UICONTROL Größe des Videos ändern]** .
-3. Wählen Sie die entsprechenden Dimensionen aus der Social-Media-Plattform unter **[!UICONTROL Größe für die Dropdownliste]** ändern aus. Alternativ können Sie die Griffe an die Ecken des Videos ziehen, um den gewünschten Zuschnitt zu erstellen.
-4. Falls erforderlich, skalieren Sie das Video mithilfe des Felds **[!UICONTROL Videoskalierung]**.
+1. Wählen Sie ein Video aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
+2. Klicken Sie in den Schnellaktionen im linken Bereich auf **[!UICONTROL Videogröße anpassen]**.
+3. Wählen Sie die entsprechenden Dimensionen der Social Media-Plattform unter der Dropdown-Liste **[!UICONTROL Größe ändern für]** aus. Alternativ können Sie die Griffe an den Ecken des Videos ziehen, um den gewünschten Zuschnitt zu erstellen.
+4. Falls erforderlich, skalieren Sie das Video mithilfe des Feldes **[!UICONTROL Videoskalierung]**.
 5. Sie können das Video stummschalten oder die Stummschaltung aufheben.
 6. Klicken Sie auf **[!UICONTROL Anwenden]**, um Ihre Änderungen anzuwenden.
-   ![Größe des Videos mit Adobe Expreß](assets/adobe-express-resize-video.png)
+   ![Größenänderung von Videos mit Adobe Express](assets/adobe-express-resize-video.png)
 
-Ihr in der Größe angepasstes Video kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
+Ihr bearbeitetes Video kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
 
-### Video zuschneiden {#trim-video-using-express}
+### Zuschneiden eines Videos {#trim-video-using-express}
 
-Wenn Sie einen Clip eines größeren Videos verwenden müssen, können Sie mit der Funktion **[!UICONTROL Video beschneiden]** einen Abschnitt des Videos auswählen und beschneiden. Führen Sie die folgenden Schritte aus:
+Wenn Sie einen Clip eines größeren Videos verwenden müssen, können Sie mit der Funktion **[!UICONTROL Video zuschneiden]** einen Abschnitt des Videos auswählen und zuschneiden. Führen Sie dazu folgende Schritte durch:
 
-1. Wählen Sie ein Video aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
-2. Klicken Sie in den im linken Bereich verfügbaren Schnellaktionen auf **[!UICONTROL Video beschneiden]** .
-3. Geben Sie die Start- und Endzeit des Videos an, um einen bestimmten Teil davon zu beschneiden. Alternativ können Sie die Griffe an die Ecken des Videos ziehen, um den gewünschten Schnitt zu erstellen.
-4. Wählen Sie die entsprechenden Dimensionen aus der Dropdownliste **[!UICONTROL Größe]** aus.
+1. Wählen Sie ein Video aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
+2. Klicken Sie in den Schnellaktionen im linken Bereich auf **[!UICONTROL Video zuschneiden]**.
+3. Geben Sie die Start- und Endzeit des Videos an, um einen bestimmten Teil zuzuschneiden. Ziehen Sie alternativ die Griffe an den Ecken des Videos, um den gewünschten Zuschnitt zu erstellen.
+4. Wählen Sie die entsprechenden Dimensionen in der Dropdown-Liste **[!UICONTROL Größe]** aus.
 5. Sie können das Video stummschalten oder die Stummschaltung aufheben.
 6. Klicken Sie auf **[!UICONTROL Anwenden]**, um Ihre Änderungen anzuwenden.
-   ![Größe des Videos mit Adobe Expreß](assets/adobe-express-trim-video.png)
+   ![Größenänderung von Videos mit Adobe Express](assets/adobe-express-trim-video.png)
 
-Ihr zugeschnittenes Video kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
+Ihr zugeschnittenes Bild kann nun heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
 
-### Video in GIF konvertieren {#convert-mp4-to-gif-using-express}
+### Konvertieren von Videos in das GIF-Format {#convert-mp4-to-gif-using-express}
 
-Mithilfe von Adobe Express können Sie ein MP4-Video schnell in ein GIF-Format konvertieren. Führen Sie die folgenden Schritte aus:
+Mithilfe von Adobe Express können Sie schnell ein MP4-Video in das GIF-Format konvertieren. Führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie ein Video aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
-2. Klicken Sie in den im linken Bereich verfügbaren Schnellaktionen auf **[!UICONTROL In GIF konvertieren]** .
-3. Wählen Sie die gewünschte Dateigröße basierend auf der gewünschten Qualität aus. Wählen Sie außerdem die Ausrichtung von Querformat, Hochformat oder Quadrat aus.
-4. Ziehen Sie die Griffe an die Ecken des Videos, um den gewünschten Zuschnitt zu erstellen.
+2. Klicken Sie in den Schnellaktionen im linken Bereich auf **[!UICONTROL In GIF konvertieren]**.
+3. Wählen Sie die gewünschte Dateigröße basierend auf der gewünschten Qualität aus. Wählen Sie außerdem die Ausrichtung (Querformat, Hochformat oder Quadrat) aus.
+4. Ziehen Sie die Griffe an den Ecken des Videos, um den gewünschten Zuschnitt zu erstellen.
 5. Klicken Sie auf **[!UICONTROL Übernehmen]**.
 
-   ![Video mit Adobe Expreß in GIF konvertieren](assets/adobe-express-convert-video-to-gif.png)
+   ![Konvertieren von Videos in das GIF-Format mit Adobe Express](assets/adobe-express-convert-video-to-gif.png)
 
-Ihr Video ist als GIF-Format zum Download verfügbar. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
+Ihr Video kann nun im GIF-Format heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
 
 ## Einschränkungen {#limitations-video-adobe-express}
 
 * Nur Videos im MP4-Format werden zur Bearbeitung unterstützt.
 
-* Die maximal unterstützte Quelldateigröße beträgt 1 GB.
+* Die maximal unterstützte Quelldateigröße beträgt 1 GB.
 
-* Unterstützte Videos sind auf jeder Seite größer als 46 Pixel und kleiner als 3840 Pixel.
+* Unterstützte Videos sind auf jeder Seite größer als 46 Pixel und kleiner als 3840 Pixel.
 
 * Unterstützte Webbrowser sind Google Chrome, Firefox, Safari und Edge.
 
-* Die Funktion kann nicht in einem Inkognito-Modus eines Webbrowsers geöffnet werden.
+* Die Funktionalität kann nicht im Inkognito-Modus eines Webbrowsers aufgerufen werden.
 
 ### Nächste Schritte {#next-steps}
 
@@ -106,4 +106,4 @@ Ihr Video ist als GIF-Format zum Download verfügbar. Sie können das bearbeitet
 >[!MORELIKETHIS]
 >
 >* [Bearbeiten von Bildern in der Assets-Ansicht](edit-images-assets-view.md)
->* [Vorschau eines Assets](navigate-assets-view.md)
+>* [Anzeigen einer Vorschau für ein Asset](navigate-assets-view.md)

@@ -1,243 +1,243 @@
 ---
-title: Generieren von Varianten
-description: Erfahren Sie mehr über das Generieren von Varianten, auf die über AEM as a Cloud Service und das Sidekick von Edge Delivery Services zugegriffen werden kann.
+title: Varianten generieren
+description: Erfahren Sie mehr über die Funktion „Varianten generieren“, auf die über AEM as a Cloud Service und das Sidekick von Edge Delivery Services zugegriffen werden kann
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3262'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Generieren von Varianten {#generate-variations}
+# Varianten generieren {#generate-variations}
 
-Wenn Sie nach einer Möglichkeit suchen, Ihre digitalen Kanäle zu optimieren und die Inhaltserstellung zu beschleunigen, können Sie Varianten generieren verwenden. Varianten generieren verwendet generative künstliche Intelligenz (AI), um Inhaltsvarianten basierend auf Eingabeaufforderungen zu erstellen. Diese Aufforderungen werden entweder vom Adobe bereitgestellt oder von Benutzern erstellt und verwaltet. Nachdem Sie Varianten erstellt haben, können Sie den Inhalt auf Ihrer Website verwenden und deren Erfolg auch mithilfe der [Experimentation](https://www.aem.live/docs/experimentation) -Funktion von [Edge Delivery Services](/help/edge/overview.md) messen.
+Wenn Sie nach einer Möglichkeit suchen, Ihre digitalen Kanäle zu optimieren und die Inhaltserstellung zu beschleunigen, können Sie „Varianten generieren“ verwenden. Die Funktion „Varianten generieren“ verwendet generative künstliche Intelligenz (KI), um Inhaltsvarianten basierend auf Prompts zu erstellen. Diese Prompts werden entweder von Adobe bereitgestellt oder von Benutzenden erstellt und verwaltet. Nachdem Sie Varianten erstellt haben, können Sie den Inhalt auf Ihrer Website verwenden und deren Erfolg außerdem mithilfe der Funktion [Experimente](https://www.aem.live/docs/experimentation) von [Edge Delivery Services](/help/edge/overview.md) messen.
 
-Sie können [ auf Varianten generieren](#access-generate-variations) aus folgenden Quellen zugreifen:
+Sie können wie folgt [auf „Varianten generieren“ zugreifen](#access-generate-variations):
 
-* [innerhalb von Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
-* [Sidekick von AEM Edge Delivery Services](#access-aem-sidekick)
-* [im Inhaltsfragmente-Editor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
+* [in Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
+* [über den Sidekick von AEM Edge Delivery Services](#access-aem-sidekick)
+* [im Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
->In allen Fällen müssen Sie zur Verwendung von Generate Variations sicherstellen, dass die [Zugriffsvoraussetzungen](#access-prerequisites) erfüllt sind.
+>In allen Fällen müssen Sie zur Verwendung von „Varianten generieren“ sicherstellen, dass die [Voraussetzungen für den Zugriff](#access-prerequisites) erfüllt sind.
 
 Sie haben dann folgende Möglichkeiten:
 
-* [Erste Schritte](#get-started) mit einer Eingabeaufforderungsvorlage, die von Adobe für einen bestimmten Anwendungsfall erstellt wurde.
-* Sie können eine vorhandene Eingabeaufforderung ](#edit-the-prompt) bearbeiten[
-* Oder [erstellen und verwenden Sie Ihre eigenen Eingabeaufforderungen](#create-prompt):
-   * [Speichern Sie Ihre Eingabeaufforderungen](#save-prompt) für die zukünftige Verwendung
-   * [Zugreifen auf und Verwenden freigegebener Eingabeaufforderungen](#select-prompt) aus Ihrem gesamten Unternehmen
-* Definieren Sie die [audience](#audiences) -Segmente, die in der Eingabeaufforderung beim [ Generieren personalisierter zielgruppenspezifischer Inhalte ](#generate-copy) verwendet werden sollen.
-* Zeigen Sie die Ausgabe neben der Eingabeaufforderung in der Vorschau an, bevor Sie bei Bedarf Änderungen vornehmen und die Ergebnisse verfeinern.
-* Verwenden Sie den Adobe Expreß [, um Bilder zu generieren](#generate-image), die auf den Kopiervarianten basieren. Dabei werden die generativen KI-Funktionen von Firefly verwendet.
+* [Beginnen Sie](#get-started) mit einer Prompt-Vorlage, die von Adobe für einen bestimmten Anwendungsfall erstellt wurde.
+* Sie können [einen vorhandenen Prompt bearbeiten](#edit-the-prompt);
+* oder [Ihre eigenen Prompts erstellen und verwenden](#create-prompt):
+   * [Speichern Sie Ihre Prompts](#save-prompt) für eine zukünftige Verwendung
+   * Greifen Sie von überall in Ihrem Unternehmen aus [auf freigegebene Prompts zu und verwenden Sie sie](#select-prompt).
+* Definieren Sie die [Zielgruppensegmente](#audiences), die beim [Generieren personalisierter zielgruppenspezifischer Inhalte](#generate-copy) im Prompt verwendet werden sollen.
+* Zeigen Sie die Ausgabe neben dem Prompt in der Vorschau an, bevor Sie bei Bedarf Änderungen vornehmen und die Ergebnisse verfeinern.
+* Verwenden Sie [Adobe Express, um Bilder zu generieren](#generate-image), die auf den Varianten des Exemplars basieren. Dabei werden die generativen KI-Funktionen von Firefly verwendet.
 * Wählen Sie Inhalte aus, die Sie auf Ihrer Website oder in einem Experiment verwenden möchten.
 
-## Rechtlicher und Gebrauchshinweis {#legal-usage-note}
+## Rechtlicher Hinweis und Nutzungshinweis {#legal-usage-note}
 
-Generative KI und Generate Variations for AEM sind leistungsstarke Tools - für die Verwendung der Ausgabe sind jedoch **Sie** verantwortlich.
+Generative KI und „Varianten generieren“ für AEM sind leistungsstarke Tools – für die Verwendung der Ausgaben sind jedoch **Sie** verantwortlich.
 
-Ihre Eingaben für den Dienst sollten an einen Kontext gebunden sein. Dieser Kontext kann Ihre Branding-Materialien, Website-Inhalte, Daten, Schemata für solche Daten, Vorlagen oder andere vertrauenswürdige Dokumente sein.
+Ihre Eingaben für den Dienst sollten an einen Kontext gebunden sein. Dieser Kontext kann sich aus Ihren Branding-Materialien, Website-Inhalten, Daten, Schemata für solche Daten, Vorlagen oder anderen vertrauenswürdigen Dokumenten zusammensetzen.
 
 Sie müssen die Genauigkeit jeder Ausgabe entsprechend Ihrem Anwendungsfall bewerten.
 
-Bevor Sie Varianten generieren verwenden, müssen Sie den [Adobe Generative AI-Benutzerrichtlinien](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) zustimmen.
+Bevor Sie „Varianten generieren“ verwenden, müssen Sie den [Benutzungsrichtlinien für die generative KI von Adobe](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) zustimmen.
 
-[Verwendung von Generate Variations](#generative-action-usage) ist an den Verbrauch generativer Aktionen gebunden.
+Die [Verwendung von „Varianten generieren“](#generative-action-usage) ist an den Verbrauch generativer Aktionen gebunden.
 
 ## Überblick {#overview}
 
-Wenn Sie Varianten generieren (und den linken Bereich erweitern) öffnen, sehen Sie Folgendes:
+Wenn Sie „Varianten generieren“ öffnen (und das linke Bedienfeld erweitern), sehen Sie Folgendes:
 
-![Varianten generieren - Hauptbereich](assets/generate-variations-main-panel.png)
+![Varianten generieren – Hauptbedienfeld](assets/generate-variations-main-panel.png)
 
-* Rechter Bereich
+* Rechtes Bedienfeld
    * Dies hängt von der Auswahl ab, die Sie im linken Navigationsbereich vornehmen.
-   * Standardmäßig werden **Eingabeaufforderungsvorlagen** angezeigt.
-* Linke Navigation
-   * Links von **Varianten generieren** befindet sich die Option (Sandwich-Menü), das linke Navigationsfenster ein- oder auszublenden.
-   * **Eingabeaufforderungsvorlagen**:
-      * Zeigt Links zu den verschiedenen Eingabeaufforderungen an. Dazu können Eingabeaufforderungen gehören:
-         * Wird von Adobe bereitgestellt, um Ihnen bei der Erstellung von Inhalten zu helfen, die mit dem Adobe-Symbol gekennzeichnet sind.
-         * Erstellt von selbst.
-         * Erstellt innerhalb Ihrer IMS-Organisation; mit einem Symbol gekennzeichnet, das mehrere Überschriften anzeigt.
-      * Enthält den Link [Neue Eingabeaufforderung](#create-prompt) zum Erstellen Ihrer eigenen Eingabeaufforderung.
-      * Sie können von Ihnen oder innerhalb Ihrer IMS-Organisation erstellte **Löschaufforderungen** löschen. Dies geschieht über das Menü, auf das mit den Auslassungspunkten auf der entsprechenden Karte zugegriffen wird.
-   * [Favoriten](#favorites): Zeigt Ergebnisse früherer Generationen an, die Sie als Favoriten gekennzeichnet haben.
-   * [Zuletzt verwendet](#recents): Enthält Links zu Eingabeaufforderungen und deren Eingaben, die Sie vor Kurzem verwendet haben.
-   * **Hilfe und FAQ**: Links zur Dokumentation, einschließlich häufig gestellter Fragen.
+   * Standardmäßig werden **Prompt-Vorlagen** angezeigt.
+* Linker Navigationsbereich
+   * Links von **Varianten generieren** befindet sich die Option (Sandwich-Menü) zum Erweitern oder Ausblenden des linken Navigationsbedienfelds.
+   * **Prompt-Vorlagen**:
+      * Zeigt Links zu den verschiedenen Prompts an. Folgende Prompts können angezeigt werden:
+         * Von Adobe bereitgestellte Prompts, die Ihnen bei der Erstellung von Inhalten helfen. Sie sind mit dem Adobe-Symbol gekennzeichnet.
+         * Von Ihnen erstellte Prompts.
+         * Innerhalb Ihrer IMS-Organisation erstellte Prompts. Diese sind mit einem Symbol gekennzeichnet, das mehrere Köpfe zeigt.
+      * Enthält den Link [Neuer Prompt](#create-prompt) zum Erstellen Ihres eigenen Prompts.
+      * Sie können von Ihnen oder innerhalb Ihrer IMS-Organisation erstellte Prompts **löschen**. Dies geschieht über das Menü, auf das über das Auslassungszeichen auf der entsprechenden Karte zugegriffen wird.
+   * [Favoriten](#favorites): Zeigt Ergebnisse früherer Generierungen an, die Sie als Favoriten gekennzeichnet haben.
+   * [Zuletzt verwendet](#recents): Enthält Links zu Prompts und deren Eingaben, die Sie vor Kurzem verwendet haben.
+   * **Hilfe und häufig gestellte Fragen**: Links zur Dokumentation, einschließlich häufig gestellter Fragen.
    * **Benutzerrichtlinien**: Links zu den gesetzlichen Richtlinien.
 
 ## Erste Schritte {#get-started}
 
-Die Benutzeroberfläche führt Sie durch den Prozess der Inhaltserstellung. Nach dem Öffnen der Benutzeroberfläche besteht der erste Schritt darin, die Eingabeaufforderung auszuwählen, die Sie verwenden möchten.
+Die Benutzeroberfläche führt Sie durch den Prozess der Inhaltserstellung. Nach dem Öffnen der Benutzeroberfläche besteht der erste Schritt darin, den Prompt auszuwählen, den Sie verwenden möchten.
 
-### Eingabeaufforderung auswählen {#select-prompt}
+### Auswählen des Prompts {#select-prompt}
 
-Im Hauptbereich können Sie Folgendes auswählen:
+Im Hauptbedienfeld können Sie Folgendes auswählen:
 
-* eine Eingabeaufforderung, die von Adobe bereitgestellt wird, um mit der Erstellung von Inhalten zu beginnen;
-* die [neue Eingabeaufforderung](#create-prompt), um eine eigene Eingabeaufforderung zu erstellen,
+* eine Prompt-Vorlage, die von Adobe bereitgestellt wird, um mit der Inhaltserstellung zu beginnen,
+* [Neuer Prompt](#create-prompt), um Ihren eigenen Prompt zu erstellen,
 * eine Vorlage, die Sie ausschließlich für Ihre Verwendung erstellt haben,
 * eine Vorlage, die Sie oder eine Person in Ihrer Organisation erstellt haben.
 
-So unterscheiden Sie:
+So unterscheiden Sie Prompts voneinander:
 
-* Die vom Adobe bereitgestellten Eingabeaufforderungen werden mit dem Adobe-Symbol gekennzeichnet
-* In Ihrer IMS-Organisation verfügbare Eingabeaufforderungen werden mit einem Symbol mit mehreren Kopfzeilen gekennzeichnet.
-* Ihre privaten Aufforderungen werden nicht speziell gekennzeichnet.
+* Die von Adobe bereitgestellten Prompts sind mit dem Adobe-Symbol gekennzeichnet
+* Innerhalb Ihrer IMS-Organisation verfügbare Prompts sind mit einem Symbol gekennzeichnet, das mehrere Köpfe zeigt.
+* Ihre privaten Prompts haben keine spezielle Kennzeichnung.
 
-![Varianten generieren - Eingabeaufforderungsvorlagen](assets/generate-variations-prompt-templates.png)
+![Varianten generieren – Prompt-Vorlagen](assets/generate-variations-prompt-templates.png)
 
-### Bereitstellen von Inputs {#provide-inputs}
+### Bereitstellen von Eingaben {#provide-inputs}
 
-Für jede Eingabeaufforderung müssen Sie bestimmte Informationen angeben, damit die entsprechenden Inhalte von der generativen KI abgerufen werden können.
+Sie müssen für jeden Prompt bestimmte Informationen angeben, damit die entsprechenden Inhalte von der generativen KI abgerufen werden können.
 
-Die Eingabefelder führen Sie durch die benötigten Informationen. Bestimmte Felder haben Standardwerte, die Sie verwenden oder nach Bedarf ändern können, sowie Beschreibungen, die die Anforderungen erläutern.
+Die Eingabefelder leiten Sie an, welche Informationen benötigt werden. Bestimmte Felder haben Standardwerte, die Sie verwenden oder nach Bedarf ändern können, sowie Beschreibungen, die die Anforderungen erläutern.
 
-Es gibt mehrere wichtige Eingabefelder, die für mehrere Eingabeaufforderungen verwendet werden (bestimmte Felder sind nicht immer verfügbar):
+Es gibt mehrere grundlegende Eingabefelder, die für eine Reihe von Prompts verwendet werden (bestimmte Felder sind nicht immer verfügbar):
 
 * **Anzahl der**/**Anzahl der**
-   * Sie können auswählen, wie viele Inhaltsvarianten Sie in einer Generation erstellen möchten.
-   * Abhängig von der Eingabeaufforderung kann dies eine von verschiedenen Beschriftungen aufweisen, z. B. Anzahl, Anzahl der Varianten, Anzahl der Ideen und andere.
-* **Audience Source**/**Target Audience**
+   * Sie können auswählen, wie viele Inhaltsvarianten in einer Generierung erstellt werden sollen.
+   * Je nach dem Prompt kann dies eine von verschiedenen Labels aufweisen, z. B. Anzahl, Anzahl der Varianten oder Anzahl der Ideen.
+* **Zielgruppenquelle**/**Zielgruppe**
    * Hilft bei der Erstellung personalisierter Inhalte für eine bestimmte Zielgruppe.
-   * Adobe bietet Standardzielgruppen, oder Sie können zusätzliche Zielgruppen angeben, siehe [Zielgruppen](#audiences).
+   * Adobe stellt Standardzielgruppen bereit. Alternativ können Sie zusätzliche Zielgruppen angeben. Informationen dazu finden Sie unter [Zielgruppen](#audiences).
 * **Zusätzlicher Kontext**
-   * Fügen Sie relevante Inhalte ein, um Generative AI bei der Erstellung einer besseren Antwort auf der Basis der Eingabe zu unterstützen. Wenn Sie beispielsweise ein Webbanner für eine bestimmte Seite oder ein bestimmtes Produkt erstellen, können Sie Informationen über die Seite/das Produkt einbeziehen.
+   * Fügen Sie hier relevante Inhalte ein, um die generative KI bei der Erstellung einer besseren Antwort auf Grundlage der Eingabe zu unterstützen. Wenn Sie beispielsweise ein Web-Banner für eine bestimmte Seite oder ein bestimmtes Produkt erstellen, können Sie Informationen über die Seite bzw. das Produkt einfügen.
 * **Temperatur**
-Zur Änderung der Temperatur von Adobe Generative AI:
-   * Eine höhere Temperatur wird von der Eingabeaufforderung entfernt und führt zu mehr Variation, Zufälligkeit und Kreativität.
-   * Eine niedrigere Temperatur ist deterministischer und bleibt näher an dem, was in der Eingabeaufforderung ist.
-   * Standardmäßig ist die Temperatur auf 1 eingestellt. Sie können mit unterschiedlichen Temperaturen experimentieren, wenn die erzeugten Ergebnisse nicht Ihren Vorstellungen entsprechen.
-* **Aufforderung zum Bearbeiten**
-   * Die zugrunde liegende [Eingabeaufforderung kann bearbeitet werden](#edit-the-prompt), um die generierten Ergebnisse zu verfeinern.
+Zur Änderung der Temperatur der generativen KI von Adobe:
+   * Eine höhere Temperatur führt zu einer stärkeren Abweichung vom Prompt und damit zu mehr Variation, Zufälligkeit und Kreativität.
+   * Eine niedrigere Temperatur ist deterministischer und orientiert sich näher am Inhalt des Prompts.
+   * Die Temperatur ist standardmäßig auf „1“ festgelegt. Sie können verschiedene Temperaturen ausprobieren, wenn die generierten Ergebnisse nicht Ihren Vorstellungen entsprechen.
+* **Bearbeiten eines Prompts**
+   * Der zugrunde liegende [Prompt kann bearbeitet werden](#edit-the-prompt), um die generierten Ergebnisse zu verfeinern.
 
-### Kopie erstellen {#generate-copy}
+### Generieren einer Kopie {#generate-copy}
 
-Nachdem Sie die Eingabefelder ausgefüllt und/oder die Eingabeaufforderung geändert haben, können Sie Inhalte generieren und die Antworten überprüfen.
+Nachdem Sie die Eingabefelder ausgefüllt und/oder den Prompt geändert haben, können Sie Inhalte generieren und die Antworten überprüfen.
 
-Wählen Sie **Generate** aus, um die von generativer KI generierten Antworten anzuzeigen. Die generierten Inhaltsvarianten werden unter der Eingabeaufforderung angezeigt, die sie generiert hat.
+Wählen Sie **Generieren** aus, um die von der generativen KI generierten Antworten anzuzeigen. Die generierten Inhaltsvarianten werden unter dem Prompt angezeigt, der sie generiert hat.
 
-![Varianten generieren - Kopie generieren](assets/generate-variations-generate-content.png)
+![Varianten generieren – Kopie generieren](assets/generate-variations-generate-content.png)
 
 >[!NOTE]
 >
->Die meisten Adobe-Eingabeaufforderungsvorlagen enthalten in der Variantenantwort ein **AI Rationale** . Dies bietet Transparenz darüber, warum generative KI diese bestimmte Variante generiert hat.
+>Die meisten Prompt-Vorlagen von Adobe enthalten eine **KI-Begründung** in der Antwortvariante. Dies sorgt für Transparenz darüber, warum die generative KI diese bestimmte Variante generiert hat.
 
-Wenn Sie eine Variante auswählen, sind die folgenden Aktionen verfügbar:
+Bei Auswahl einer einzelnen Variante sind die folgenden Aktionen verfügbar:
 
 * **Favorit**
-   * Flag als **Favorit** für die zukünftige Verwendung (wird in [Favoriten](#favorites) angezeigt).
-* Nach oben/unten drehen
-   * Verwenden Sie die Daumen nach oben/unten-Indikatoren, um Adobe über die Qualität der Antworten zu informieren.
+   * Markieren als **Favorit** für die zukünftige Verwendung (wird in [Favoriten](#favorites) angezeigt).
+* Daumen nach oben/Daumen nach unten
+   * Verwenden Sie die Angabe „Daumen nach oben“/„Daumen nach unten“, um Adobe über die Qualität der Antworten zu informieren.
 * **Kopieren**
-   * Kopieren Sie in die Zwischenablage, um Inhalte auf Ihrer Website oder in einem [Experiment](https://www.aem.live/docs/experimentation) zu erstellen.
+   * Kopiert die Variante in die Zwischenablage, um sie beim Erstellen von Inhalten auf Ihrer Website oder in einem [Experiment](https://www.aem.live/docs/experimentation) zu verwenden.
 * **Entfernen**
 
-Wenn Sie die Eingaben oder Eingabeaufforderungen verfeinern müssen, können Sie Anpassungen vornehmen und erneut **Generate** auswählen, um eine Reihe neuer Antworten zu erhalten. Die neue Eingabeaufforderung und Antwort werden unter der ersten Eingabeaufforderung und Antwort angezeigt. Sie können nach oben und unten scrollen, um die verschiedenen Inhaltssätze anzuzeigen.
+Wenn Sie die Eingaben oder den Prompt verfeinern müssen, können Sie Anpassungen vornehmen und dann erneut **Generieren** auswählen, um einen Satz neuer Antworten zu erhalten. Der neue Prompt und die Antwort werden unter dem ersten Prompt und der ersten Antwort angezeigt. Sie können nach oben und unten scrollen, um die verschiedenen Inhaltssätze anzuzeigen.
 
-Über jedem Variantensatz befindet sich die Eingabeaufforderung, die sie erstellt hat, zusammen mit der Option **Wiederverwenden** . Wenn Sie eine Eingabeaufforderung je erneut ausführen müssen, wählen Sie **Erneut verwenden** aus, um sie in **Eingaben** erneut zu laden.
+Über jedem Variantensatz befindet sich der Prompt, der sie erstellt hat, zusammen mit der Option **Wiederverwenden**. Wenn Sie jemals einen Prompt mit seinen Eingaben wiederverwenden müssen, wählen Sie **Wiederverwenden** aus, um sie erneut in **Eingaben** zu laden.
 
 ### Bild generieren {#generate-image}
 
-Nachdem Sie Textvarianten generiert haben, können Sie in Adobe Express Bilder mithilfe der Generative KI-Funktionen von Firefly generieren.
+Nachdem Sie Textvarianten generiert haben, können Sie in Adobe Express Bilder mithilfe der generativen KI-Funktionen von Firefly generieren.
 
 >[!NOTE]
 >
->**Bild generieren** ist nur verfügbar, wenn Sie über eine Berechtigung für Adobe Expreß im Rahmen Ihrer IMS-Organisation verfügen und Ihnen Zugriff in der Admin Console gewährt wurde.
+>**Bild generieren** ist nur verfügbar, wenn Sie über eine Adobe Express-Berechtigung als Teil Ihrer IMS-Organisation verfügen und Ihnen in der Admin Console Zugriff gewährt wurde.
 
-Wählen Sie eine Variante, gefolgt von **Bild generieren**, um **Text in Bild** direkt in [Adobe Expreß](https://www.adobe.com/de/express/) zu öffnen. Die Eingabeaufforderung wird entsprechend Ihrer Variantenauswahl vorausgefüllt und die Bilder werden automatisch entsprechend dieser Eingabeaufforderung generiert.
+Wählen Sie eine Variante und anschließend **Bild generieren** aus, um **Text zu Bild** direkt in [Adobe Express](https://www.adobe.com/de/express/) zu öffnen. Der Prompt wird entsprechend Ihrer Variantenauswahl vorausgefüllt und die Bilder werden automatisch entsprechend diesem Prompt generiert.
 
-![Varianten generieren - Bilder ausdrücken](assets/generate-variations-express-images.png)
+![Varianten generieren – Express-Bilder](assets/generate-variations-express-images.png)
 
 Sie können weitere Änderungen vornehmen:
 
-* [schreiben Sie Ihre eigene Eingabeaufforderung in Adobe Expreß](https://helpx.adobe.com/firefly/using/tips-and-tricks.html), indem Sie beschreiben, was Sie sehen möchten.
-* die Optionen **Text auf image** anpassen,
-* dann **Aktualisieren** die generierten Bilder.
+* [Schreiben Sie Ihren eigenen Prompt in Adobe Express](https://helpx.adobe.com/de/firefly/using/tips-and-tricks.html), indem Sie beschreiben, was Sie sehen möchten,
+* passen Sie die Optionen für **Text zu Bild** an
+* und **aktualisieren** Sie anschließend die generierten Bilder.
 
-Sie können auch **Mehr erkunden** für weitere Möglichkeiten verwenden.
+Sie können auch **Mehr erkunden** verwenden, um weitere Möglichkeiten auszuprobieren.
 
-Wählen Sie nach Abschluss des Vorgangs das gewünschte Bild und **Speichern** , um den Adobe Expreß zu schließen. Das Bild wird zurückgegeben und mit der Variante gespeichert.
+Wenn Sie fertig sind, wählen Sie das gewünschte Bild und dann **Speichern** aus, um Adobe Express zu schließen. Das Bild wird zurückgegeben und mit der Variante gespeichert.
 
-![Varianten generieren - Express-Bild gespeichert](assets/generate-variations-express-image-saved.png)
+![Varianten generieren – Express-Bild gespeichert](assets/generate-variations-express-image-saved.png)
 
-Hier können Sie mit dem Mauszeiger über das Bild fahren, um Aktionselemente für Folgendes anzuzeigen:
+Hier können Sie den Mauszeiger über das Bild bewegen, um Aktionselemente für Folgendes anzuzeigen:
 
-* **Kopieren**: [Kopieren Sie das Bild zur Verwendung an anderer Stelle in die Zwischenablage](#use-content)
-* **Bearbeiten**: Öffnen Sie den Adobe Expreß, damit Sie Änderungen am Bild vornehmen können.
-* **Download**: Laden Sie das Bild auf Ihren lokalen Computer herunter.
-* **Löschen**: Entfernen Sie das Bild aus der Variante
+* **Kopieren**: [Kopiert das Bild in die Zwischenablage, um es an einer anderen Stelle zu verwenden](#use-content)
+* **Bearbeiten**: Öffnet Adobe Express, damit Sie Änderungen am Bild vornehmen können
+* **Herunterladen**: Lädt das Bild auf Ihren lokalen Computer herunter.
+* **Löschen**: Entfernt das Bild aus der Variante
 
 >[!NOTE]
 >
->[Content credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) werden bei der Verwendung in der dokumentbasierten Bearbeitung nicht beibehalten.
+>[Content Credentials](https://helpx.adobe.com/de/creative-cloud/help/content-credentials.html) werden bei der Verwendung im dokumentbasierten Authoring nicht beibehalten.
 
-### Inhalt verwenden {#use-content}
+### Verwenden von Inhalten {#use-content}
 
-Um den mit generativer KI generierten Inhalt zu verwenden, müssen Sie den Inhalt zur Verwendung an anderer Stelle in die Zwischenablage kopieren.
+Zur Verwendung des mit generativer KI generierten Inhalts müssen Sie den Inhalt in die Zwischenablage kopieren, damit Sie ihn an anderer Stelle verwenden können.
 
-Dies geschieht mithilfe der Kopiersymbole:
+Hierzu werden die folgenden Symbole zum Kopieren verwendet:
 
-* Für Text: Verwenden Sie das Kopiersymbol, das im Varianten-Bedienfeld angezeigt wird.
-* Für das Bild: Bewegen Sie die Maus über das Bild, um das Kopiersymbol zu sehen.
+* Für Text: Verwenden Sie das Kopiersymbol, das im Bedienfeld „Varianten“ angezeigt wird
+* Für das Bild: Bewegen Sie die Maus über das Bild, um das Symbol zum Kopieren zu sehen
 
-Nachdem Sie die Informationen in die Zwischenablage kopiert haben, können Sie sie zur Erstellung von Inhalten für Ihre Website einfügen. Sie können auch ein [Experiment](https://www.aem.live/docs/experimentation) ausführen.
+Nachdem Sie die Informationen in die Zwischenablage kopiert haben, können Sie sie zur Erstellung von Inhalten für Ihre Website einfügen. Sie können auch ein [Experiment](https://www.aem.live/docs/experimentation) durchführen.
 
 ## Favoriten {#favorites}
 
 Nach der Überprüfung des Inhalts können Sie ausgewählte Varianten als Favoriten speichern.
 
-Nach dem Speichern werden sie im linken Navigationsbereich unter **Favoriten** angezeigt. Favoriten werden beibehalten (bis Sie diese löschen **1} oder den Browser-Cache löschen).**
+Nach dem Speichern werden sie im linken Navigationsbereich unter **Favoriten** angezeigt. Favoriten werden beibehalten (bis Sie diese **löschen** oder bis Sie den Browsercache löschen).
 
-* Favoriten und Varianten können kopiert/in die Zwischenablage eingefügt werden, um sie in Ihren Website-Inhalten zu verwenden.
-* Favoriten können **entfernt** sein.
+* Favoriten und Varianten können kopiert und in die Zwischenablage eingefügt werden, um sie in Ihren Website-Inhalten zu verwenden.
+* Favoriten können **entfernt** werden.
 
 ## Zuletzt verwendet {#recents}
 
-Dieser Abschnitt enthält Links zu Ihrer aktuellen Aktivität. Ein Eintrag **Zuletzt verwendet** wird hinzugefügt, nachdem Sie **Erzeugen** ausgewählt haben. Er hat den Namen der Eingabeaufforderung und einen Zeitstempel. Wenn Sie einen Link auswählen, wird die Eingabeaufforderung geladen, die Eingabefelder entsprechend ausgefüllt und die generierten Varianten angezeigt.
+Dieser Abschnitt enthält Links zu Ihrer aktuellen Aktivität. Nachdem Sie **Generieren** ausgewählt haben, wird ein Eintrag **Aktuell** hinzugefügt. Er hat den Namen des Prompts und einen Zeitstempel. Wenn Sie einen Link auswählen, wird der Prompt geladen, die Eingabefelder werden entsprechend ausgefüllt und die generierten Varianten werden angezeigt.
 
-## Eingabeaufforderung bearbeiten {#edit-the-prompt}
+## Bearbeiten des Prompts {#edit-the-prompt}
 
-Die zugrunde liegende Eingabeaufforderung kann bearbeitet werden. Sie können dies tun:
+Der zugrunde liegende Prompt kann bearbeitet werden. Folgende Gründe kann es für die Bearbeitung des Prompts geben:
 
-* Wenn die generierten Ergebnisse, die Sie erhalten, weiter verfeinert werden müssen
-* Sie möchten die Eingabeaufforderung](#save-prompt) ändern und [speichern, um sie für die zukünftige Verwendung zu verwenden
+* Die generierten Ergebnisse, die Sie erhalten, müssen weiter verfeinert werden
+* Sie möchten Änderungen am Prompt vornehmen und [den Prompt speichern](#save-prompt), um ihn in Zukunft verwenden zu können
 
-Wählen Sie **Aufforderung bearbeiten** aus:
+Wählen Sie **Prompt bearbeiten** aus:
 
-![Varianten generieren - Eingabeaufforderung bearbeiten](assets/generate-variations-prompt-edit.png)
+![Varianten generieren – Prompt bearbeiten](assets/generate-variations-prompt-edit.png)
 
-Dadurch wird der Eingabeaufforderungseditor geöffnet, in dem Sie Ihre Änderungen vornehmen können:
+Dadurch wird der Prompt-Editor geöffnet, in dem Sie Ihre Änderungen vornehmen können:
 
-![Varianten generieren - Eingabeaufforderungs-Editor](assets/generate-variations-prompt-editor.png)
+![Varianten generieren – Prompt-Editor](assets/generate-variations-prompt-editor.png)
 
-### Hinzufügen von Eingabeaufforderungen {#add-prompt-inputs}
+### Hinzufügen von Prompt-Eingaben {#add-prompt-inputs}
 
-Beim Erstellen oder Bearbeiten einer Eingabeaufforderung können Sie Eingabefelder hinzufügen. Eingabefelder dienen als Variablen in der Eingabeaufforderung und bieten die Flexibilität, dieselbe Eingabeaufforderung in verschiedenen Szenarien zu verwenden. Sie ermöglichen es Benutzern, bestimmte Elemente der Eingabeaufforderung zu definieren, ohne die gesamte Eingabeaufforderung schreiben zu müssen.
+Beim Erstellen oder Bearbeiten eines Prompts können Sie Eingabefelder hinzufügen. Eingabefelder fungieren als Variablen im Prompt und bieten die Flexibilität, denselben Prompt in verschiedenen Szenarien zu verwenden. Sie ermöglichen es Benutzenden, bestimmte Elemente des Prompts zu definieren, ohne den gesamten Prompt schreiben zu müssen.
 
-* Ein Feld wird mit doppelten geschweiften Klammern `{{ }}` definiert, die einen Platzhalternamen enthalten.
+* Ein Feld wird mit doppelten geschweiften Klammern `{{ }}` definiert, in denen ein Platzhaltername steht.
 Zum Beispiel: `{{tone_of_voice}}`.
 
   >[!NOTE]
   >
   >Zwischen den geschweiften Klammern sind keine Leerzeichen zulässig.
 
-* Sie wird auch unter `METADATA` mit den folgenden Parametern definiert:
+* Es wird außerdem mit den folgenden Parametern unter `METADATA` definiert:
    * `label`
    * `description`
    * `default`
    * `type`
 
-#### Beispiel: Neues Textfeld hinzufügen - Tone of Voice {#example-add-new-text-field-tone-of-voice}
+#### Beispiel: Hinzufügen eines neuen Textfelds – Tonalität {#example-add-new-text-field-tone-of-voice}
 
-Um ein neues Textfeld mit dem Titel **Tone of Voice** hinzuzufügen, verwenden Sie die folgende Syntax in Ihrer Eingabeaufforderung:
+Verwenden Sie zum Hinzufügen eines neuen Textfelds mit dem Titel **Tonalität** die folgende Syntax in Ihrem Prompt:
 
 ```prompt
 {{@tone_of_voice, 
@@ -248,7 +248,7 @@ Um ein neues Textfeld mit dem Titel **Tone of Voice** hinzuzufügen, verwenden S
 }}
 ```
 
-![Varianten generieren - Eingabeaufforderung mit Sprachton bearbeitet](assets/generate-variations-prompt-edited.png)
+![Varianten generieren – Prompt mit Tonalität bearbeitet](assets/generate-variations-prompt-edited.png)
 
 <!--
 #### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
@@ -273,61 +273,61 @@ To create an input field Page Type providing a dropdown selection:
    ```
 -->
 
-## Erstellen einer Eingabeaufforderung {#create-prompt}
+## Erstellen eines Prompts {#create-prompt}
 
-Wenn Sie unter **Eingabeaufforderung** die Option **Neue Eingabeaufforderung** auswählen, können Sie in einem neuen Bedienfeld eine neue Eingabeaufforderung eingeben. Sie können diese dann zusammen mit der **Temperatur** in den Inhalt **Erzeugen** festlegen.
+Wenn Sie unter **Prompt-Vorlagen** die Option **Neuer Prompt** auswählen, können Sie in einem neuen Bedienfeld einen neuen Prompt eingeben. Anschließend können Sie diesen zusammen mit der **Temperatur** angeben, um Inhalt zu **generieren**.
 
-Weitere Informationen zum Speichern der Eingabeaufforderung für die Zukunft finden Sie unter [Eingabeaufforderung speichern](#save-prompt) .
+Weitere Informationen zum Speichern des Prompts für die Zukunft finden Sie unter [Speichern des Prompts](#save-prompt).
 
-Weitere Informationen zum Hinzufügen eigener Eingabeaufforderungen finden Sie unter [Eingabeaufforderungen hinzufügen](#add-prompt-inputs) .
+Weitere Informationen zum Hinzufügen eigener Prompt-Eingaben finden Sie unter [Hinzufügen von Prompt-Eingaben](#add-prompt-inputs).
 
-Wenn Sie die Formatierung sowohl in der Benutzeroberfläche als auch beim Kopieren und Einfügen in den dokumentbasierten Authoring-Fluss beibehalten möchten, fügen Sie Folgendes in die Eingabeaufforderung ein:
+Wenn Sie die Formatierung sowohl in der Benutzeroberfläche als auch beim Kopieren und Einfügen in den dokumentbasierten Authoring-Fluss beibehalten möchten, fügen Sie Folgendes in den Prompt ein:
 
 <!-- CHECK - are the double-quotes needed? -->
 
 * `"Format the response as an array of valid, iterable RFC8259 compliant JSON"`
 
-Die folgende Abbildung zeigt die Vorteile, die dies bietet:
+Die folgende Abbildung zeigt die Vorteile dieser Vorgehensweise:
 
-* Im ersten Beispiel werden die `Title` und die `Description` kombiniert
-* während sie im zweiten Beispiel separat formatiert werden: Dies geschieht durch Einbeziehung der JSON-Anfrage in die Eingabeaufforderung.
+* Im ersten Beispiel werden `Title` und `Description` kombiniert
+* Dagegen werden sie im zweiten Beispiel separat formatiert. Dies erfolgt durch die Einbeziehung der JSON-Anfrage in den Prompt.
 
-![Varianten generieren - Eingabeaufforderung mit Titel und Beschreibung, die separat formatiert sind](assets/generate-variations-prompt-formatted.png)
+![Varianten generieren – Prompt mit Titel und Beschreibung, die separat formatiert sind](assets/generate-variations-prompt-formatted.png)
 
-## Prompt speichern {#save-prompt}
+## Speichern eines Prompts {#save-prompt}
 
-Nach der Bearbeitung oder Erstellung von Eingabeaufforderungen können Sie diese für die zukünftige Verwendung speichern, entweder für Ihre IMS-Organisation oder für Sie selbst. Die gespeicherte Eingabeaufforderung wird als Karte **Eingabeaufforderung für Vorlage** angezeigt.
+Nach dem Bearbeiten oder Erstellen von Prompts können Sie diese für die zukünftige Verwendung speichern, und zwar entweder für Ihre ganze IMS-Organisation oder nur für sich selbst. Der gespeicherte Prompt wird als Karte **Prompt-Vorlage** angezeigt.
 
-Wenn Sie die Eingabeaufforderung bearbeitet haben, ist die Option **Speichern** am unteren Rand des Bereichs &quot;Einstiege&quot;links neben **Erzeugen** verfügbar.
+Wenn Sie den Prompt bearbeitet haben, ist die Option **Speichern** unten im Abschnitt „Eingaben“ links neben **Generieren** verfügbar.
 
-Wenn ausgewählt, wird das Dialogfeld **Eingabeaufforderung speichern** geöffnet:
+Wenn die Option ausgewählt ist, wird das Dialogfeld **Prompt speichern** geöffnet:
 
-![Varianten generieren - Dialogfeld für Speicheraufforderung](assets/generate-variations-prompt-save-dialog.png)
+![Varianten generieren – Dialogfeld zum Speichern des Prompts](assets/generate-variations-prompt-save-dialog.png)
 
-1. Fügen Sie einen eindeutigen **Eingabeaufforderungsnamen** hinzu, der verwendet wird, um die Eingabeaufforderung in **Eingabeaufforderungsvorlagen** zu identifizieren.
-   1. Ein neuer, eindeutiger Name erstellt eine neue Eingabeaufforderungsvorlage.
-   1. Ein vorhandener Name überschreibt diese Eingabeaufforderung. Es wird eine Meldung angezeigt.
-1. Fügen Sie optional eine Beschreibung hinzu.
-1. Aktivieren oder deaktivieren Sie die Option **In der gesamten Organisation freigegeben**, je nachdem, ob die Eingabeaufforderung für Sie privat sein soll oder in Ihrer IMS-Organisation verfügbar gemacht wird. Dieser Status wird auf der Karte [angezeigt, die in den Eingabeaufforderungsvorlagen angezeigt wird](#select-prompt).
-1. **Speichern** Sie die Eingabeaufforderung oder **Abbrechen** Sie die Aktion.
-
->[!NOTE]
->
->Sie werden informiert (gewarnt), wenn Sie eine vorhandene Eingabeaufforderung überschreiben/aktualisieren.
+1. Fügen Sie einen eindeutigen **Prompt-Namen** hinzu, der zur Identifizierung des Prompts in den **Prompt-Vorlagen** verwendet wird.
+   1. Bei einem neuen und eindeutigen Namen wird eine neue Prompt-Vorlage erstellt.
+   1. Bei einem vorhandenen Namen wird dieser Prompt überschrieben und es wird eine Meldung angezeigt.
+1. Geben Sie optional eine Beschreibung ein.
+1. Aktivieren oder deaktivieren Sie die Option **Im Unternehmen freigegeben**, je nachdem, ob die Eingabeaufforderung für Sie privat sein oder in Ihrer IMS-Organisation verfügbar gemacht werden soll. Dieser Status erscheint auf der [Karte, die in den Prompt-Vorlagen angezeigt wird](#select-prompt).
+1. Sie können den Prompt **speichern** oder die Aktion **abbrechen**.
 
 >[!NOTE]
 >
->Von **Eingabeaufforderungsvorlagen** aus können Sie Aufforderungen löschen (mithilfe des Menüs, auf das mit den Ellipsen zugegriffen wird), die von Ihnen oder in Ihrer IMS-Organisation erstellt wurden.
+>Sie werden informiert (gewarnt), wenn Sie einen vorhandenen Prompt überschreiben/aktualisieren.
+
+>[!NOTE]
+>
+>Sie können Prompts, die von Ihnen oder in Ihrer IMS-Organisation erstellt wurden, über **Prompt-Vorlagen** löschen (mithilfe des Menüs, auf das über die Auslassungspunkte zugegriffen wird).
 
 ## Zielgruppen {#audiences}
 
-Um personalisierte Inhalte zu generieren, muss die generative KI über Kenntnisse der Audience verfügen. Adobe bietet eine Reihe von Standardzielgruppen, oder Sie können Ihre eigenen hinzufügen.
+Um personalisierte Inhalte zu generieren, muss die generative KI über Kenntnisse zur Zielgruppe verfügen. Adobe bietet eine Reihe von Standardzielgruppen. Alternativ können Sie Ihre eigenen Zielgruppen hinzufügen.
 
 Beim Hinzufügen einer Zielgruppe sollten Sie die Zielgruppe in natürlicher Sprache beschreiben. Zum Beispiel:
 
-* , um eine Zielgruppe zu erstellen:
+* Zum Erstellen einer Zielgruppe:
    * `Student`
-* Sie könnten sagen:
+* können Sie sagen:
    * `The audience consists of students, typically individuals who are pursuing education at various academic levels, such as primary, secondary, or tertiary education. They are engaged in learning and acquiring knowledge in diverse subjects, seeking academic growth, and preparing for future careers or personal development.`
 
 Es werden zwei Zielgruppenquellen unterstützt:
@@ -335,59 +335,59 @@ Es werden zwei Zielgruppenquellen unterstützt:
 * [Adobe Target](#audience-adobe-target)
 * [CSV-Datei](#audience-csv-file)
 
-![Generieren von Varianten - Zielgruppenquellen](assets/generate-variations-audiences.png)
+![Varianten generieren – Zielgruppenquellen](assets/generate-variations-audiences.png)
 
-### Audience - Adobe Target {#audience-adobe-target}
+### Zielgruppe – Adobe Target {#audience-adobe-target}
 
-Durch Auswahl einer Audience vom Typ **Adobe Target** in der Eingabeaufforderung kann die Inhaltserstellung für diese Audience personalisiert werden.
+Durch Auswahl einer Zielgruppe vom Typ **Adobe Target** im Prompt kann die Inhaltsgenerierung für diese Zielgruppe personalisiert werden.
 
 >[!NOTE]
 >
 >Um diese Option verwenden zu können, muss Ihre IMS-Organisation Zugriff auf Adobe Target haben.
 
 1. Wählen Sie **Adobe Target** aus.
-1. Wählen Sie dann die erforderliche **Zielgruppe** aus der bereitgestellten Liste aus.
+1. Wählen Sie anschließend die erforderliche **Zielgruppe** aus der bereitgestellten Liste aus.
 
    >[!NOTE]
    >
-   >Um eine Audience vom Typ **Adobe Target** zu verwenden, muss das Beschreibungsfeld ausgefüllt werden. Wenn nicht, wird die Zielgruppe in der Dropdown-Liste als nicht verfügbar angezeigt. Um eine Beschreibung hinzuzufügen, gehen Sie zu Target und [fügen Sie eine Zielgruppenbeschreibung hinzu](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
+   >Um eine Zielgruppe vom Typ **Adobe Target** zu verwenden, muss das Beschreibungsfeld ausgefüllt werden. Wird es nicht ausgefüllt, wird die Zielgruppe in der Dropdown-Liste als nicht verfügbar angezeigt. Navigieren Sie zum Hinzufügen einer Beschreibung zu „Target“ und [fügen Sie eine Zielgruppenbeschreibung hinzu](https://experienceleague.adobe.com/de/docs/target-learn/tutorials/audiences/create-audiences).
 
-   ![Generieren von Varianten - Zielgruppenquelle - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
+   ![Varianten generieren – Zielgruppenquelle – Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
-#### Hinzufügen von Adobe Target-Zielgruppen {#add-adobe-target-audience}
+#### Hinzufügen einer Zielgruppe vom Typ „Adobe Target“ {#add-adobe-target-audience}
 
-Siehe [Erstellen von Zielgruppen](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) , um eine Zielgruppe in Adobe Target zu erstellen.
+Informationen zum Erstellen einer Zielgruppe in Adobe Target finden Sie unter [Erstellen von Zielgruppen](https://experienceleague.adobe.com/de/docs/target-learn/tutorials/audiences/create-audiences).
 
-### Audience - CSV-Datei {#audience-csv-file}
+### Zielruppe – CSV-Datei {#audience-csv-file}
 
-Wenn Sie in der Eingabeaufforderung eine Audience vom Typ **CSV-Datei** auswählen, kann die Inhaltserstellung für die ausgewählte **Target-Zielgruppe** personalisiert werden.
+Durch Auswahl einer Zielgruppe vom Typ **CSV-Datei** im Prompt kann die Inhaltserstellung für die ausgewählte **Zielgruppe** personalisiert werden.
 
-Adobe bietet eine Reihe von zu verwendenden Zielgruppen.
+Adobe bietet eine Reihe von Zielgruppen an, die verwendet werden können.
 
 1. Wählen Sie **CSV-Datei** aus.
-1. Wählen Sie dann die erforderliche **Zielgruppe** aus der bereitgestellten Liste aus.
+1. Wählen Sie anschließend die erforderliche **Zielgruppe** aus der bereitgestellten Liste aus.
 
-   ![Generieren von Varianten - Zielgruppenquelle - CSV-Datei](assets/generate-variations-audiences-csv-file.png)
+   ![Varianten generieren – Zielgruppenquelle – CSV-Datei](assets/generate-variations-audiences-csv-file.png)
 
-#### Audience CSV-Datei hinzufügen {#add-audience-csv-file}
+#### Hinzufügen einer Zielgruppe vom Typ „CSV-Datei“ {#add-audience-csv-file}
 
-Sie können eine CSV-Datei von verschiedenen Plattformen hinzufügen (z. B. Google Drive, Dropbox, Sharepoint), die eine URL für die Datei bereitstellen können, sobald sie öffentlich verfügbar gemacht wird.
+Sie können eine CSV-Datei über verschiedene Plattformen hinzufügen (z. B. Google Drive, Dropbox oder Sharepoint), die eine URL für die Datei bereitstellen können, sobald sie öffentlich verfügbar gemacht wird.
 
 >[!NOTE]
 >
->In den Freigabeplattformen müssen Sie *1} die Möglichkeit haben, die Datei öffentlich zugänglich zu machen.*
+>Sie *müssen* auf den Freigabeplattformen die Möglichkeit haben, die Datei öffentlich zugänglich zu machen.
 
-So fügen Sie beispielsweise eine Audience aus einer Datei auf dem Google-Laufwerk hinzu:
+Zum Beispiel gehen Sie zum Hinzufügen einer Zielgruppe aus einer Datei auf Google Drive wie folgt vor:
 
-1. Erstellen Sie in Google Drive eine Tabellendatei mit zwei Spalten:
-   1. Die erste Spalte wird im Dropdown-Menü angezeigt.
-   1. Die zweite Spalte ist die Zielgruppenbeschreibung.
-1. Publish der Datei:
+1. Erstellen Sie in Google Drive eine Tabellendatei mit zwei Spalten:
+   1. Die erste Spalte wird in der Dropdown-Liste angezeigt.
+   1. Die zweite Spalte ist für die Zielgruppenbeschreibung.
+1. Veröffentlichen Sie die Datei:
    1. Datei -> Freigeben -> Im Web veröffentlichen -> CSV
 1. Kopieren Sie die URL in die veröffentlichte Datei.
-1. Navigieren Sie zu Varianten generieren .
-1. Öffnen Sie den Eingabeaufforderungseditor.
-1. Suchen Sie die Audience **Adobe Target** in den Metadaten und ersetzen Sie die URL.
+1. Navigieren Sie zu „Varianten generieren“.
+1. Öffnen Sie den Prompt-Editor.
+1. Suchen Sie in den Metadaten nach der Zielgruppe vom Typ **Adobe Target** und ersetzen Sie die URL.
 
    >[!NOTE]
    >
@@ -395,63 +395,63 @@ So fügen Sie beispielsweise eine Audience aus einer Datei auf dem Google-Laufwe
 
    Zum Beispiel:
 
-   ![Generieren von Varianten - Hinzufügen einer CSV-Zielgruppendatei](assets/generate-variations-audiences-csv-save.png)
+   ![Varianten generieren – Hinzufügen einer Zielgruppe vom Typ „CSV-Datei“](assets/generate-variations-audiences-csv-save.png)
 
 ## Nutzung generischer Aktionen {#generative-action-usage}
 
-Die Verwaltung der Nutzung hängt von den getroffenen Maßnahmen ab:
+Die Verwaltung der Nutzung hängt von der durchgeführten Aktion ab:
 
-* Generieren von Varianten
+* Varianten generieren
 
-  Eine Generation einer Kopiervariante entspricht einer generativen Aktion. Als Kunde verfügen Sie über eine bestimmte Anzahl von generativen Aktionen, die mit Ihrer AEM Lizenz einhergehen. Sobald die grundlegende Berechtigung verwendet wurde, können Sie zusätzliche Aktionen erwerben.
+  Jede Generierung einer Kopiervariante entspricht einer generativen Aktion. Als Kundin oder Kunde verfügen Sie über eine bestimmte Anzahl von generativen Aktionen, die mit Ihrer AEM-Lizenz einhergehen. Sobald das Basiskontingent aufgebraucht ist, können Sie zusätzliche Aktionen erwerben.
 
   >[!NOTE]
   >
-  >Siehe [Adobe Experience Manager: Cloud Service | Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) finden Sie weitere Informationen zu den grundlegenden Berechtigungen. Wenden Sie sich außerdem an Ihr Account-Team, wenn Sie generativere Aktionen erwerben möchten.
+  >Weitere Informationen zum Basiskontingent finden Sie unter [Adobe Experience Manager: Cloud Service | Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/aem-cloud-service.html). Wenn Sie weitere generative Aktionen erwerben möchten, können Sie sich an Ihr Accountteam wenden.
 
 * Adobe Express
 
-  Die Nutzung der Bildgenerierung erfolgt über Adobe Expreß-Berechtigungen und [generative Gutschriften](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  Die Nutzung der Bildgenerierung erfolgt über Adobe Express-Berechtigungen und [generative Credits](https://helpx.adobe.com/de/firefly/get-set-up/learn-the-basics/generative-credits-faq.html).
 
-## Zugriff auf Generieren von Varianten {#access-generate-variations}
+## Zugriff auf „Varianten generieren“ {#access-generate-variations}
 
-Nach Erfüllung der Voraussetzungen können Sie auf Varianten aus AEM as a Cloud Service generieren oder auf die Sidekick der Edge Delivery Services zugreifen.
+Sobald die Voraussetzungen erfüllt sind, können Sie über AEM as a Cloud Service oder den Sidekick von Edge Delivery Services auf „Varianten generieren“ zugreifen.
 
 ### Voraussetzungen für den Zugriff {#access-prerequisites}
 
-Um Varianten generieren zu verwenden, müssen Sie sicherstellen, dass die Voraussetzungen erfüllt sind:
+Um „Varianten generieren“ zu verwenden, müssen Sie sicherstellen, dass die Voraussetzungen erfüllt sind:
 
 * [Zugriff auf Experience Manager as a Cloud Service mit Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
 
 #### Zugriff auf Experience Manager as a Cloud Service mit Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
-Benutzer, die Zugriff auf die Option Varianten generieren benötigen, müssen über die Berechtigung für eine Experience Manager as a Cloud Service-Umgebung mit Edge Delivery Services verfügen.
+Benutzende, die Zugriff auf die Funktion „Varianten generieren“ benötigen, müssen über die Berechtigung für eine Experience Manager as a Cloud Service-Umgebung mit Edge Delivery Services verfügen.
 
 >[!NOTE]
 >
->Wenn Ihr Vertrag für AEM Sites as a Cloud Service keine Edge Delivery Services enthält, müssen Sie einen neuen Vertrag unterzeichnen, um Zugriff zu erhalten.
+>Wenn Ihr Vertrag für AEM Sites as a Cloud Service keine Edge Delivery Services umfasst, müssen Sie einen neuen Vertrag unterzeichnen, um Zugriff zu erhalten.
 >
->Wenden Sie sich an Ihr Account-Team, um zu besprechen, wie Sie mit Edge Delivery Services zu AEM Sites as a Cloud Service wechseln können.
+>Wenden Sie sich an Ihr Accountteam, um zu besprechen, wie Sie zu AEM Sites as a Cloud Service mit Edge Delivery Services wechseln können.
 
-Um bestimmten Benutzern Zugriff zu gewähren, weisen Sie ihr Benutzerkonto dem jeweiligen Produktprofil zu. Weitere Informationen finden Sie unter [Zuweisen AEM Produktprofile](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+Um bestimmten Benutzenden Zugriff zu gewähren, weisen Sie ihr Benutzerkonto dem jeweiligen Produktprofil zu. Weitere Informationen finden Sie unter [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ### Zugriff über AEM as a Cloud Service {#access-aemaacs}
 
-Der Zugriff auf Varianten generieren erfolgt über das [Navigationsfenster](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) von AEM as a Cloud Service:
+Der Zugriff auf „Varianten generieren“ erfolgt über das [Navigationsbedienfeld](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) von AEM as a Cloud Service:
 
-![Navigationsfenster](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+![Navigationsbedienfeld](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
 
-### Zugriff über die AEM Sidekick {#access-aem-sidekick}
+### Zugriff über den AEM-Sidekick {#access-aem-sidekick}
 
-Bevor Sie auf die Option Varianten generieren über die Sidekick (der Edge Delivery Services) zugreifen können, ist eine gewisse Konfiguration erforderlich.
+Bevor Sie über den Sidekick (von Edge Delivery Services) auf „Varianten generieren“ zugreifen können, müssen bestimmte Konfigurationen vorgenommen werden.
 
-1. Informationen zum Installieren und Konfigurieren des Sidekick finden Sie im Dokument [Installieren der AEM Sidekick](https://www.aem.live/docs/sidekick-extension) .
+1. Informationen zum Installieren und Konfigurieren des Sidekicks finden Sie im Dokument [Installieren des AEM Sidekicks](https://www.aem.live/docs/sidekick-extension).
 
-1. Um die Option Varianten generieren im Sidekick (von Edge Delivery Services) zu verwenden, schließen Sie die folgende Konfiguration in Ihre Edge Delivery Services-Projekte unter ein:
+1. Um „Varianten generieren“ im Sidekick (von Edge Delivery Services) verwenden zu können, müssen Sie die folgende Konfiguration unter folgendem Pfad in Ihre Edge Delivery Services-Projekte einfügen:
 
    * `tools/sidekick/config.json`
 
-   Dies muss mit Ihrer vorhandenen Konfiguration zusammengeführt und dann bereitgestellt werden.
+   Diese muss mit Ihrer vorhandenen Konfiguration zusammengeführt und dann bereitgestellt werden.
 
    Zum Beispiel:
 
@@ -473,91 +473,91 @@ Bevor Sie auf die Option Varianten generieren über die Sidekick (der Edge Deliv
    }
    ```
 
-1. Sie müssen dann möglicherweise sicherstellen, dass Benutzer mit Edge Delivery Services ](#access-to-aemaacs-with-edge-delivery-services) über [Zugriff auf Experience Manager-as a Cloud Services verfügen.
+1. Anschließend müssen Sie möglicherweise sicherstellen, dass Benutzende Zugriff auf [Experience Manager as a Cloud Service mit Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services) haben.
 
-1. Sie können dann auf die Funktion zugreifen, indem Sie in der Symbolleiste der Sidekick die Option **Varianten generieren** auswählen:
+1. Anschließend können Sie auf die Funktion zugreifen, indem Sie in der Symbolleiste des Sidekicks die Option **Varianten generieren** auswählen:
 
-   ![Varianten generieren - Zugriff von AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+   ![Varianten generieren – Zugriff über AEM-Sidekick](assets/generate-variations-sidekick-toolbar.png)
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie auch unter:
 
-* [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Edge Delivery Services-Experimentierung](https://www.aem.live/docs/experimentation)
+* [GenAI – Generieren von Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Experimente mit Edge Delivery Services](https://www.aem.live/docs/experimentation)
 
 ## Häufig gestellte Fragen {#faqs}
 
 ### Formatierte Ausgabe {#formatted-outpu}
 
-**Die generierte Antwort gibt mir nicht die formatierte Ausgabe, die ich brauche. Wie kann ich das Format ändern? z. B.: Ich benötige einen Titel und einen Untertitel, aber die Antwort lautet nur title**
+**Die generierte Antwort gibt mir nicht die formatierte Ausgabe, die ich brauche. Wie kann ich das Format ändern? Beispiel: Ich benötige einen Titel und einen Untertitel, aber die Antwort besteht nur aus dem Titel**
 
-1. Öffnen Sie die tatsächliche Eingabeaufforderung im Bearbeitungsmodus.
-1. Gehen Sie zu Anforderungen.
-1. Sie finden Anforderungen, die über die Ausgabe sprechen.
-   1. Beispiel: &quot;Der Text muss aus drei Teilen bestehen: einem Titel, einem Hauptteil und einer Schaltflächenbeschriftung.&quot; oder &quot;Formatieren Sie die Antwort als gültiges JSON-Array von Objekten mit den Attributen &quot;Title&quot;, &quot;Body&quot;und &quot;ButtonLabel&quot;.
-1. Passen Sie die Anforderungen an Ihre Anforderungen an.
+1. Öffnen Sie den tatsächlichen Prompt im Bearbeitungsmodus.
+1. Navigieren Sie zu den Anforderungen.
+1. Sie finden Anforderungen, die sich auf die Ausgabe beziehen.
+   1. Beispiel: „Der Text muss aus drei Teilen bestehen: einem Titel, einem Hauptteil und einer Schaltflächenbeschriftung.“ oder „Formatiere die Antwort als gültiges JSON-Array von Objekten mit den Attributen „Title“, „Body“ und „ButtonLabel“.
+1. Ändern Sie die Anforderungen nach Bedarf.
 
    >[!NOTE]
    >
-   >Wenn Sie für die neu eingegebene Ausgabe Beschränkungen hinsichtlich der Wort-/Zeichenanzahl haben, erstellen Sie eine Anforderung.
+   >Wenn für die neu eingegebene Ausgabe Beschränkungen hinsichtlich der Wort-/Zeichenanzahl bestehen, erstellen Sie eine Anforderung.
 
-   Beispiel: &quot;Der Titeltext darf 10 Wörter oder 50 Zeichen (einschließlich Leerzeichen) nicht überschreiten.&quot;
-1. Speichern Sie die Eingabeaufforderung für die zukünftige Verwendung.
+   Beispiel: „Der Titeltext darf 10 Wörter oder 50 Zeichen (einschließlich Leerzeichen) nicht überschreiten.“
+1. Speichern Sie den Prompt für eine zukünftige Verwendung.
 
-### Reaktionsdauer {#length-of-response}
+### Länge der Antwort {#length-of-response}
 
 **Die generierte Antwort ist zu lang oder zu kurz. Wie ändere ich die Länge?**
 
-1. Öffnen Sie die tatsächliche Eingabeaufforderung im Bearbeitungsmodus.
-1. Gehen Sie zu Anforderungen.
-1. Für jede Ausgabe gibt es eine entsprechende Wort-/Zeichenbeschränkung.
-   1. Beispiel: &quot;Der Titeltext darf 10 Wörter oder 50 Zeichen (einschließlich Leerzeichen) nicht überschreiten.&quot;
-1. Passen Sie die Anforderungen an Ihre Anforderungen an.
-1. Speichern Sie die Eingabeaufforderung für die zukünftige Verwendung.
+1. Öffnen Sie den tatsächlichen Prompt im Bearbeitungsmodus.
+1. Navigieren Sie zu den Anforderungen.
+1. Sie können sehen, dass es für jede Ausgabe eine entsprechende Beschränkung für die Wörter/Zeichen gibt.
+   1. Beispiel: „Der Titeltext darf 10 Wörter oder 50 Zeichen (einschließlich Leerzeichen) nicht überschreiten.“
+1. Ändern Sie die Anforderungen nach Bedarf.
+1. Speichern Sie den Prompt für eine zukünftige Verwendung.
 
-### Verbessern der Antworten {#improve-responses}
+### Verbessern von Antworten {#improve-responses}
 
-**Die Antworten, die ich erhalte, sind nicht genau das, was ich suche. Was kann ich tun, um sie zu verbessern?**
+**Die Antworten, die ich erhalte, entsprechen nicht wirklich meinen Vorstellungen. Wie kann ich vorgehen, um sie zu verbessern?**
 
-1. Versuchen Sie, die Temperatur unter Erweiterte Einstellungen zu ändern.
-   1. Eine höhere Temperatur wird von der Eingabeaufforderung entfernt und führt zu mehr Variation, Zufälligkeit und Kreativität.
-   1. Eine niedrigere Temperatur ist deterministischer und hält sich an das, was in der Eingabeaufforderung ist.
-1. Öffnen Sie die tatsächliche Eingabeaufforderung im Bearbeitungsmodus und rufen Sie die Überprüfungsaufforderung auf. Achten Sie besonders auf den Anforderungsabschnitt, der den Ton der Stimme und andere wichtige Kriterien beschreibt.
+1. Versuchen Sie, unter „Erweiterte Einstellungen“ die Temperatur zu ändern.
+   1. Eine höhere Temperatur führt zu einer stärkeren Abweichung vom Prompt und damit zu mehr Variation, Zufälligkeit und Kreativität.
+   1. Eine niedrigere Temperatur ist deterministischer und orientiert sich näher am Inhalt des Prompts.
+1. Öffnen Sie den tatsächlichen Prompt im Bearbeitungsmodus und überprüfen Sie ihn. Beachten Sie insbesondere den Abschnitt „Anforderungen“, in dem die Tonalität und andere wichtige Kriterien beschrieben werden.
 
-### Kommentare in einer Eingabeaufforderung {#comments-in-prompt}
+### Kommentare in einem Prompt {#comments-in-prompt}
 
-**Wie kann ich Kommentare in einer Eingabeaufforderung verwenden?**
+**Wie kann ich Kommentare in einem Prompt verwenden?**
 
-Kommentare in einer Eingabeaufforderung werden verwendet, um Notizen, Erklärungen oder Anweisungen einzuschließen, die nicht Teil der tatsächlichen Ausgabe sein sollen. Diese Kommentare sind in einer bestimmten Syntax eingeschlossen: Sie beginnen und enden mit doppelten geschweiften Klammern und beginnen mit einem Hash (z. B. `{{# Comment Here }}`). Kommentare helfen, die schnelle Struktur oder Absicht zu verdeutlichen, ohne dass sich dies auf die generierte Antwort auswirkt.
+Kommentare in einem Prompt werden verwendet, um Notizen, Erklärungen oder Anweisungen einzufügen, die nicht Teil der tatsächlichen Ausgabe sein sollen. Diese Kommentare sind in einer speziellen Syntax gehalten: Sie sind in doppelte geschweifte Klammern eingeschlossen und beginnen mit einem Hashtag (z. B. `{{# Comment Here }}`). Kommentare helfen dabei, die Struktur oder Absicht des Prompts zu verdeutlichen, ohne sich dabei auf die generierte Antwort auszuwirken.
 
-### Geteilte Eingabeaufforderung suchen {#find-a-shared-prompt}
+### Suchen nach einem freigegebenen Prompt {#find-a-shared-prompt}
 
-**Was kann ich tun, wenn ich keine Eingabeaufforderungsvorlage finden kann, die jemand freigegeben hat?**
+**Wie kann ich vorgehen, wenn ich eine Prompt-Vorlage, die von einer anderen Person freigegeben wurde, nicht finden kann?**
 
-In diesem Fall sind verschiedene Details zu überprüfen:
+In diesem Fall sind verschiedene Details zu prüfen:
 
 1. Verwenden Sie die URL für Ihre Umgebung.
-Beispiel: https://experience.adobe.com/#/aem/generate-variations
+Zum Beispiel https://experience.adobe.com/#/aem/generate-variations
 1. Stellen Sie sicher, dass die ausgewählte IMS-Organisation korrekt ist.
-1. Vergewissern Sie sich, dass die Eingabeaufforderung als freigegeben gespeichert wurde.
+1. Vergewissern Sie sich, dass der Prompt als „Freigegeben“ gespeichert wurde.
 
-### Benutzerdefinierte Eingabeaufforderungen in v2.0.0 {#custom-prompts-v200}
+### Benutzerdefinierte Prompts in v2.0.0 {#custom-prompts-v200}
 
-**In Version 2.0.0 sind meine benutzerdefinierten Eingabeaufforderungen verschwunden - was kann ich tun?**
+**Meine benutzerdefinierten Prompts sind in v2.0.0 verschwunden – was kann ich tun?**
 
-Wenn Sie zur Version 2.0.0 wechseln, werden benutzerdefinierte Eingabeaufforderungsvorlagen beschädigt, sodass sie nicht verfügbar sind.
+Wenn Sie zur Version 2.0.0 wechseln, werden benutzerdefinierte Prompt-Vorlagen beschädigt und sind folglich nicht mehr verfügbar.
 
-So rufen Sie sie ab:
+So können Sie sie abrufen:
 
-1. Wechseln Sie zum Ordner &quot;Eingabeaufforderung-Vorlage&quot;in Sharepoint.
-1. Kopieren Sie die Eingabeaufforderung.
-1. Öffnen Sie die Anwendung Varianten generieren .
-1. Wählen Sie die Karte Neue Eingabeaufforderung aus.
-1. Fügen Sie die Eingabeaufforderung ein.
-1. Überprüfen Sie, ob die Eingabeaufforderung funktioniert.
-1. Speichern Sie die Eingabeaufforderung.
+1. Navigieren Sie in Sharepoint zum Ordner „prompt-template“.
+1. Kopieren Sie den Prompt.
+1. Öffnen Sie die Anwendung „Varianten generieren“.
+1. Wählen Sie die Karte „Neuer Prompt“ aus.
+1. Fügen Sie den Prompt ein.
+1. Überprüfen Sie, ob der Prompt funktioniert.
+1. Speichern Sie den Prompt.
 
 ## Versionsverlauf {#release-history}
 
-Weitere Informationen zu aktuellen und vorherigen Versionen finden Sie in den [Versionshinweisen für Generate Variations](/help/generative-ai/release-notes-generate-variations.md) .
+Weitere Informationen zu aktuellen und früheren Versionen finden Sie in den [Versionshinweisen für „Varianten generieren“](/help/generative-ai/release-notes-generate-variations.md)

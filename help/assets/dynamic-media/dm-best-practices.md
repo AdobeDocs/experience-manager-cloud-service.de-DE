@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4114'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Stage Business Problem Best Practice Recommendation: This section will outline s
 
 {{see-also-dm}}
 
-Organisationen müssen sich für die Interaktion mit Benutzenden mit zahlreichen Kanälen und Geräten auseinandersetzen.  Die Customer Journey umfasst Ladengeschäfte, das Internet, Mobilgeräte, Social Media, E-Mails und Commerce. Um diesen Anforderungen gerecht zu werden, bietet Dynamic Media für Adobe Experience Manager (AEM) eine umfassende Lösung. Sie optimiert die Bereitstellung von Assets, handhabt die Personalisierung und sorgt für konsistente, leistungsfähige und markenorientierte Erlebnisse über Kanäle und Geräte hinweg.
+Organisationen müssen sich für die Interaktion mit Benutzenden mit zahlreichen Kanälen und Geräten auseinandersetzen. Die Customer Journey umfasst Ladengeschäfte, das Internet, Mobilgeräte, Social Media, E-Mails und Commerce. Um diesen Anforderungen gerecht zu werden, bietet Dynamic Media für Adobe Experience Manager (AEM) eine umfassende Lösung. Sie optimiert die Bereitstellung von Assets, handhabt die Personalisierung und sorgt für konsistente, leistungsfähige und markenorientierte Erlebnisse über Kanäle und Geräte hinweg.
 
 Zu den wichtigsten Grundsätzen von Dynamic Media gehören die Folgenden:
 
@@ -69,7 +69,7 @@ Nach der Synchronisierung Ihrer Assets können Sie durch die selektive Veröffen
 
 Mithilfe dieser beiden Best Practices können Sie eine bessere Kontrolle, Verwaltung und Produktivität Ihrer Rich-Media-Inhalte erzielen.
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Konfigurieren einer selektiven Veröffentlichung auf der Ordnerebene in Dynamic Media:](/help/assets/dynamic-media/selective-publishing.md).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Konfigurieren einer selektiven Veröffentlichung auf der Ordnerebene in Dynamic Media:](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Dynamic Media-Viewer
@@ -82,7 +82,7 @@ Durch Befolgen dieser Best Practices können Sie eine nahtlose Integration, ein 
 Stellen Sie sicher, dass alle Viewer-Assets mit Dynamic Media synchronisiert sind, bevor Sie den Player verwenden.
 
    * Greifen Sie auf die Seite des Beispiel-Managers unter `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` zu. Auf dieser Seite können Sie die Assets eines Viewers neu synchronisieren, einschließlich vordefinierter Symbole, CSS-Dateien und Vorgaben.
-   * Wenn Probleme mit dem Viewer auftreten, lesen Sie den Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
+   * Wenn Probleme mit dem Viewer auftreten, lesen Sie den Artikel [Fehlerbehebung bei Dynamic Media-Viewern](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
 
 * **Veröffentlichen von Assets:**
 Stellen Sie sicher, dass Assets veröffentlicht werden, bevor Sie sie in den Bereitstellungs-Viewern anzeigen.
@@ -94,7 +94,7 @@ Verwenden Sie die Image v3-Komponente für das smarte Zuschneiden, um die Darste
 Schließen Sie nur die primäre Viewer-JavaScript-Datei auf Ihrer Seite ein. Vermeiden Sie es, auf zusätzliche JavaScript-Dateien zu verweisen, die durch die Laufzeitlogik des Viewers heruntergeladen werden könnten. Stellen Sie insbesondere keine direkte Verknüpfung mit der HTML5 SDK `Utils.js`-Bibliothek aus dem Kontextpfad `/s7viewers` her (auch als konsolidiertes SDK-Include bezeichnet). Die Viewer-Logik verwaltet den Speicherort von `Utils.js` oder ähnlichen Laufzeit-Viewer-Bibliotheken, die sich zwischen Versionen ändern können. Adobe speichert ältere Versionen von sekundären Viewer-Includes nicht auf dem Server, sodass ein direkter Verweis auf diese die Viewer-Funktionalität in zukünftigen Updates beeinträchtigen kann.
 * **Einbettungsrichtlinien:**
 Verwenden Sie die Dokumentation zum Einbetten von Richtlinien, die für jeden Viewer spezifisch sind.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Viewer für AEM Assets](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Viewer für AEM Assets](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **SDK-Tutorial und Beispiele:**
 Sehen Sie sich das [Viewer SDK-Tutorial](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/c-tutorial) und die [HTML5 SDK-Anwendungsbeispiele](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) an, um sich mit den SDK-Komponenten-APIs vertraut zu machen.
 
@@ -109,16 +109,16 @@ Verwenden Sie für eine effiziente Asset-Organisation, die Workflows optimiert, 
 
 * **Organisieren von Assets in Ordnern:**
 Eine effektive Organisation von Assets besteht darin, sie in Ordner zu kategorisieren, ähnlich wie bei der Organisation der Dateien auf einem Computer. Die ordnungsgemäße Benennung, Strukturierung von Unterordnern und Dateiverwaltung innerhalb dieser Ordner sind für eine effiziente Verarbeitung der Assets von entscheidender Bedeutung. Durch die Implementierung systematischer Benennungskonventionen und Metadatenpraktiken wird die Nützlichkeit Ihres digitalen Asset-Repositorys maximiert.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets in Ordnern](/help/assets/organize-assets.md#organize-using-folders).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets in Ordnern](/help/assets/organize-assets.md#organize-using-folders).
 * **Organisieren von Assets mithilfe von Tags:**
 Das Tagging von Assets verbessert die Suchbarkeit, Sammlungserstellung und das Ranking von Suchen. Die KI von Adobe Sensei verwendet einen selbstlernenden Algorithmus für präzises Tagging, das den schnellen Abruf von Assets ermöglicht. Außerdem erkennt Adobe Sensei relevante Tags, einschließlich benutzerdefinierter Tags, und weist sie Assets zu, wodurch das Asset-Management mit automatischem, beschreibendem Tagging vereinfacht wird.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets mit Tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets mit Tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organisieren von Assets als Sammlungen:**
 Dynamic Media- und Experience Manager-Assets ermöglichen Benutzenden die effiziente Erstellung, Bearbeitung und Freigabe von Asset-Sammlungen. Sie können verschiedene Sammlungstypen einrichten, einschließlich statischen Listen und dynamischen, suchbasierten Kompilierungen. Diese Sammlungstypen können über verschiedene Standorte hinweg mit anpassbaren Zugriffs- und Bearbeitungsrechten freigegeben werden.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets als Sammlungen](/help/assets/manage-collections.md).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets als Sammlungen](/help/assets/manage-collections.md).
 * **Organisieren von Assets mit Profilen:**
 Ein Verarbeitungsprofil automatisiert die Verarbeitung von Assets in angegebenen Ordnern und optimiert so deren Organisation. Durch die Standardisierung von Metadaten, Dateinamen und Ordnerstrukturen können diese Profile konsistent und präzise angewendet werden, wenn Sie Ihre digitale Asset-Sammlung erweitern.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets mit Profilen](/help/assets/organize-assets.md#organize-to-use-profiles).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets mit Profilen](/help/assets/organize-assets.md#organize-to-use-profiles).
 
 
 
@@ -128,11 +128,11 @@ Möchten Sie mehr erfahren?  Navigieren Sie zu [Organisieren von Assets mit Pro
 
 Das Verbessern der Bildqualität erfordert eine sorgfältige Berücksichtigung verschiedener Faktoren. Dies kann ein zeitintensiver Prozess sein. Es gibt jedoch einige bewährte Vorgehensweisen, die Ihnen dabei helfen können, die erwünschten Ergebnisse zu erzielen. Zu diesen Best Practices gehören u. a. der Erhalt einer optimalen Bildgröße, das Scharfzeichnen von Bildern und die Auswahl der bestgeeigneten Bildformate.
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practices für die Optimierung der Bildqualität](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practices für die Optimierung der Bildqualität](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
 Da die Wahrnehmung der Bildqualität von Mensch zu Mensch variiert, ist manchmal ein systematischer Versuchsansatz unerlässlich, um die erwünschten Ergebnisse zu erzielen. Adobe Experience Manager unterstützt diesen Prozess mit mehr als 100 Dynamic Media-Befehlen zur Bildverbesserung.
 
-Möchten Sie mehr erfahren?  Sehen Sie sich [Dynamic Media Snapshot](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) an (3 Minuten, 17 Sekunden).
+Möchten Sie mehr erfahren? Sehen Sie sich [Dynamic Media Snapshot](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) an (3 Minuten, 17 Sekunden).
 
 Um die Auswirkungen dieser verschiedenen Befehle auf die Bildqualität zu bewerten, können Sie ein Bild in Dynamic Media hochladen, die Benutzeroberfläche des Tools unter der angegebenen URL verwenden und die Befehle anwenden, die Sie ausprobieren möchten.
 
@@ -154,7 +154,7 @@ Möchten Sie es einmal ausprobieren? Navigieren Sie zu [Grundlagen der Erstellu
 
 Es empfiehlt sich, mit dem „intelligenten Zuschnitt“ ein Bildprofil zu erstellen. Im Profil können Sie verschiedene Bildschirmgrößen definieren und Adobe Sensei den Rest erledigen lassen. So stellen Sie sicher, dass Ihre Bilder und Videos immer für das Gerät der Betrachtenden optimiert sind.
 
-Möchten Sie mehr erfahren?  Sehen Sie sich [Verwenden des intelligenten Zuschnitts mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden) und [Verwenden des intelligenten Zuschnitts von Dynamic Media für Videos](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 Minuten, 22 Sekunden) an.
+Möchten Sie mehr erfahren? Sehen Sie sich [Verwenden des intelligenten Zuschnitts mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden) und [Verwenden des intelligenten Zuschnitts von Dynamic Media für Videos](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 Minuten, 22 Sekunden) an.
 
 ### Verbessern von SEO-Rankings
 
@@ -179,14 +179,14 @@ Implementieren Sie eine benutzerdefinierte Domain, die Ihren Unternehmens- oder 
 Organisieren Sie Ihre Bilder in einer Ordnerstruktur, die Ihren Unternehmensnamen oder Ihre Marke enthält, um eine bessere Indizierung zu erzielen, z. B. `http://images.mycompany.com/is/image/companyname/`.
 * **Regelsätze in Dynamic Media:**
 Erfahren Sie, wie Sie URLs basierend auf verschiedenen Faktoren bedingt transformieren können, um die SEO und das Anwendererlebnis zu verbessern.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Verwenden von Regelsätzem zum Transformieren von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Verwenden von Regelsätzem zum Transformieren von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Intelligente Bildbearbeitung und intelligenter Zuschnitt:**
 Verwenden Sie die Funktionen „Intelligente Bildbearbeitung“ und „Intelligenter Zuschnitt“ in Dynamic Media, um optimierte und responsive Bilder bereitzustellen. Dies verbessert nicht nur die Seitenladezeiten, sondern wirkt sich auch positiv auf SEO-Rankings aus.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) oder sehen Sie sich [Verwenden des intelligenten Zuschnitts mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden) an.
+Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) oder sehen Sie sich [Verwenden des intelligenten Zuschnitts mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden) an.
 
 Beachten Sie, dass diese Best Practices besonders auf die Best Practices für die SEO der Bildersuche von Google ausgerichtet sind. Solche Verfahren unterstreichen, wie wichtig es ist, Suchmaschinen durch ordnungsgemäße Namenskonventionen, strukturierte Daten und eine optimierte Bildbereitstellung Kontext und Klarheit zu bieten.
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practices für die URL-Struktur von Google](https://developers.google.com/search/docs/crawling-indexing/url-structure?hl=de) und [Best Practices für die Bilder-SEO von Google](https://developers.google.com/search/docs/appearance/google-images?hl=de)
+Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practices für die URL-Struktur von Google](https://developers.google.com/search/docs/crawling-indexing/url-structure?hl=de) und [Best Practices für die Bilder-SEO von Google](https://developers.google.com/search/docs/appearance/google-images?hl=de)
 
 ### Dynamische Verbesserung von Bildern und Erstellung visueller Effekte mithilfe von Befehlen
 
@@ -198,9 +198,9 @@ Dynamic Media bietet eine Reihe von Befehlen für die dynamische Verbesserung vo
 
 | Aufgabe | Vorgehensweise |
 | --- | --- |
-| **Hochladen und Veröffentlichen des Originalbilds** | <ul><li> Laden Sie zunächst das Originalbild in Dynamic Media hoch.</li><li> Vergewissern Sie sich, dass sie veröffentlicht ist und über eine URL zugänglich ist.</li><li> In diesem Beispiel wird ein Stammbild einer Uhr mit weißem Hintergrund (nennen wir es &quot;Bild X&quot;) in Dynamic Media hochgeladen.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
-| **Erstellen einer Maske** | <ul><li> Entwickeln Sie eine Maske, die das Thema (den Bereich, in dem Sie Effekte anwenden möchten) und den Hintergrund (den Bereich, den Sie ändern möchten) definiert.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Masken sind normalerweise Graustufenbilder, wobei Weiß den Betreff darstellt und Schwarz den Hintergrund. Sie können Masken mit Tools wie Adobe Photoshop erstellen.<br>Möchten Sie mehr erfahren?  Navigieren Sie zu [Erstellen und Bearbeiten einer schnellen Maske in Photoshop](https://helpx.adobe.com/de/photoshop/using/create-temporary-quick-mask.html).</li><li> Erstellen Sie für &quot;Bild X&quot;eine Maske, die das Thema, das Sie erweitern möchten, genau umreißt. Beispiel: eine Person oder ein Objekt.</li></ul> |
-| **Anwenden von URL-Befehlen in Dynamic Media für Effekte** | Nachdem Sie Ihre Maske haben, verwenden Sie URL-Befehle, um Effekte wie einen äußeren Schein anzuwenden oder die Hintergrundfarbe auf &quot;Bild X&quot;zu ändern. Im Folgenden finden Sie zwei Beispiele:<ul><li> **Äußerer Glüheffekt:**<br> Um einen äußeren Glüheffekt entlang der Objektgrenze hinzuzufügen, bearbeiten Sie die URL wie folgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In dieser URL erstellen die Parameter `op_blur`, `op_grow` und `opac` den äußeren Glüheffekt.</li><li> **Änderung der Hintergrundfarbe:**<br> Verwenden Sie zum Ändern der Hintergrundfarbe die URL mit einem anderen Hintergrundfarbwert:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In diesem Beispiel setzt `color=255,255,0` die Hintergrundfarbe auf Gelb. Ändern Sie für visuelle Auswirkungen den Hintergrund in eine bestimmte Farbe.</li></ul> |
+| **Hochladen und Veröffentlichen des Originalbilds** | <ul><li> Laden Sie zunächst das Originalbild in Dynamic Media hoch.</li><li> Vergewissern Sie sich, dass es veröffentlicht wurde und über eine URL zugänglich ist.</li><li> In diesem Beispiel wird ein Stockbild einer Uhr mit weißem Hintergrund (nennen wir es „Bild X“) in Dynamic Media hochgeladen.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **Erstellen einer Maske** | <ul><li> Entwickeln Sie eine Maske, die das Motiv (den Bereich, in dem Sie Effekte anwenden möchten) und den Hintergrund (den Bereich, den Sie ändern möchten) definiert.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Masken sind in der Regel Graustufenbilder, wobei Weiß das Motiv und Schwarz den Hintergrund darstellt. Sie können Masken mit Tools wie Adobe Photoshop erstellen.<br>Möchten Sie mehr erfahren? Navigieren Sie zu [Erstellen und Bearbeiten einer schnellen Maske in Photoshop](https://helpx.adobe.com/de/photoshop/using/create-temporary-quick-mask.html).</li><li> Erstellen Sie für „Bild X“ eine Maske, die genau das Motiv konturiert, das Sie optimieren möchten. Beispiel: eine Person oder ein Objekt.</li></ul> |
+| **Anwenden von URL-Befehlen in Dynamic Media für Effekte** | Nachdem Sie Ihre Maske erstellt haben, verwenden Sie URL-Befehle, um Effekte wie „Schein nach außen“ anzuwenden oder die Hintergrundfarbe auf „Bild X“ zu ändern. Im Folgenden finden Sie zwei Beispiele:<ul><li> **Effekt „Schein nach außen“:**<br> Um den Effekt „Schein nach außen“ entlang des Motivrands hinzuzufügen, bearbeiten Sie die URL wie folgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In dieser URL erzeugen die Parameter `op_blur`, `op_grow` und `opac` den Effekt „Schein nach außen“.</li><li> **Ändern der Hintergrundfarbe:**<br> Um die Hintergrundfarbe zu ändern, verwenden Sie die URL mit einem anderen Wert für die Hintergrundfarbe:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In diesem Beispiel setzt `color=255,255,0` die Hintergrundfarbe auf Gelb. Ändern Sie für visuelle Auswirkungen den Hintergrund in eine bestimmte Farbe.</li></ul> |
 
 #### Hinzufügen eines Bildrands
 
@@ -222,9 +222,9 @@ Wenn Sie ein Logo oder Symbol als Überlagerung auf einem vorhandenen Bild platz
 | --- | --- |
 | **Hochladen und Veröffentlichen des Basisbilds** | Laden Sie zunächst das Basisbild hoch, das Sie mit dem Logo oder Symbol überlagern möchten, und veröffentlichen Sie es. Sie können jedes Bild als Basis verwenden.<br>Hier ist beispielsweise ein Basisbild:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Hochladen und Veröffentlichen des Logos oder Symbolbilds** | Laden Sie anschließend das Bild hoch, mit dem Sie das Basisbild überlagern möchten, und veröffentlichen Sie es. Dieses Bild sollte eine transparente PNG-Datei mit dem Logo oder Symbol sein, das Sie überlagern möchten.<br>Hier ist das transparente PNG-Bild eines Sternobjekts mit Transparenzeffekten, das überlagert werden soll:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Anwenden der Dynamic Media-URL** | Erstellen Sie jetzt eine Dynamic Media-URL, die das Basisbild mit dem Logo oder Symbolbild kombiniert. Sie können URL-Befehle verwenden, um diesen Effekt zu erzielen.<br>Die URL-Struktur sieht ungefähr so aus:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>Wo das Asset<ul><li> `hotspotRetailBaseImage` ist das Basisbild.</li><li> `starxp` ist das Logo-/Symbolbild.</li><li> `layer=1` gibt an, dass das Logo oder Symbol über dem Basisbild platziert werden soll.</li><li> `scale=1.25` passt die Größe des Logos/Symbols an.</li><li> `posN=0.33,-.25` bestimmt die Position des Logos/Symbols relativ zum Basisbild.</li><li> `fmt=png` stellt sicher, dass die Ausgabe im PNG-Format vorliegt.</li></ul> |
+| **Anwenden der Dynamic Media-URL** | Erstellen Sie jetzt eine Dynamic Media-URL, die das Basisbild mit dem Logo oder Symbolbild kombiniert. Sie können URL-Befehle verwenden, um diesen Effekt zu erzielen.<br>Die URL-Struktur sieht etwa so aus:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>wobei das Asset<ul><li> `hotspotRetailBaseImage` das Basisbild ist.</li><li> `starxp` ist das Logo/Symbolbild.</li><li> `layer=1` gibt an, dass das Logo oder Symbol über dem Basisbild platziert werden soll.</li><li> `scale=1.25` passt die Größe des Logos/Symbols an.</li><li> `posN=0.33,-.25` bestimmt die Position des Logos/Symbols relativ zum Basisbild.</li><li> `fmt=png` stellt sicher, dass die Ausgabe im PNG-Format vorliegt.</li></ul> |
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [src](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src), um mehr über den `src`-Befehl und andere URL-Befehle in Dynamic Media zu erfahren.
+Möchten Sie mehr erfahren? Navigieren Sie zu [src](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src), um mehr über den `src`-Befehl und andere URL-Befehle in Dynamic Media zu erfahren.
 
 
 #### Überlagern von Werbetext
@@ -282,7 +282,7 @@ Möchten Sie mehr über die Befehle erfahren, die in einer URL verfügbar sind? 
 
 **Business-Case:** *Streamen von GIFs mit Dynamic Media*
 
-Sie können GIFs über Dynamic Media hochladen und bereitstellen. Um ein animiertes GIF zu rendern, ersetzen Sie in der URL `is/image` durch `is/content` . Wenn Sie beispielsweise `abc.gif` hochgeladen haben, verwenden Sie Folgendes:
+Sie können GIFs über Dynamic Media hochladen und bereitstellen. Um ein animiertes GIF zu rendern, ersetzen Sie in der URL `is/image` durch `is/content`. Wenn Sie beispielsweise `abc.gif` hochgeladen haben, verwenden Sie Folgendes:
 
 * Dieser URL-Pfad rendert eine statische Ansicht des GIF:
 
@@ -320,7 +320,7 @@ Verwenden Sie die bereitgestellte URL, um eine direkte Verknüpfung zum Video he
    * **Einbetten des Videos:**
 Kopieren Sie den bereitgestellten Einbettungs-Code und fügen Sie ihn in das HTML Ihrer Web-Seite ein, auf der das Video angezeigt werden soll. Hierdurch kann das Video direkt auf Ihrer Site wiedergegeben werden.
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Video](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Video](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Konfigurieren von Videos für optimale Qualität und Interaktion
 
@@ -331,15 +331,15 @@ Um die bestmögliche Qualität und Interaktion für Ihre Videos sicherzustellen,
 * **Verwenden des integrierten HTML5-Video-Viewers:**
 Die HTML5-Video-Viewer-Vorgaben in Dynamic Media sind robuste Video-Player. Verwenden Sie diese, um häufig auftretende Probleme im Zusammenhang mit der Wiedergabe von HTML5-Videos und Mobilgeräten zu vermeiden.
 Diese Vorgaben gehen Herausforderungen wie die Bereitstellung von adaptivem Bitrate-Streaming oder die eingeschränkte Reichweite eines Desktop-Browsers an.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practice: Verwenden des HTML 5-Video-Viewers](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practice: Verwenden des HTML 5-Video-Viewers](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
 * **Verwenden von Dynamic Media-Videoprofilen:**
 Videoprofile in Dynamic Media helfen Ihnen, eine effiziente Videoverwaltung und konsistente Qualität zu erzielen und adaptives Streaming anzuwenden.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Dynamic Media-Videoprofile](/help/assets/dynamic-media/video-profiles.md).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Dynamic Media-Videoprofile](/help/assets/dynamic-media/video-profiles.md).
 
 * **Befolgen der Best Practices für die Videoverschlüsselung:**
 Wenden Sie Videoverschlüsselungsprofile an, die die Originalvideoqualität ohne übermäßiges Downscaling während der Kodierung beibehalten.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Best Practices für die Verschlüsselung von Videos](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practices für die Verschlüsselung von Videos](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
 * **Anwenden von adaptivem Streaming anstelle von progressivem Streaming:**
 Beim adaptiven Streaming wird die Videoqualität basierend auf der Geschwindigkeit der Internet-Verbindung und den Gerätefunktionen der Betrachtenden angepasst.
@@ -349,7 +349,7 @@ Im Gegensatz zu progressivem Streaming, bei dem Videos linear bereitgestellt wer
 * **Aktivieren von DASH in Ihrem Konto (digitales adaptives Streaming über HTTP):**
 DASH stellt Videoinhalte dynamisch über adaptives Streaming bereit.
 Um DASH zu aktivieren, erstellen Sie ein Support-Ticket für Ihre Umgebung.
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Aktivieren von DASH in Ihrem Dynamic Media-Konto](/help/assets/dynamic-media/video.md#enable-dash).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Aktivieren von DASH in Ihrem Dynamic Media-Konto](/help/assets/dynamic-media/video.md#enable-dash).
 
 ### Internationalisierung von Videos für den mehrsprachigen Gebrauch
 
@@ -358,7 +358,7 @@ Möchten Sie mehr erfahren?  Navigieren Sie zu [Aktivieren von DASH in Ihrem Dy
 Die Internationalisierung von Videos für den mehrsprachigen Gebrauch ist für das Erreichen einer globalen Zielgruppe von entscheidender Bedeutung. Dynamic Media bietet Funktionen, die Ihnen bei der Erreichung dieses Ziels helfen können.
 
 * **Hochladen Ihrer Videos:**
-   * Erstellen Sie zunächst ein Videoverschlüsselungsprofil.  Sie können entweder das vordefinierte und bereits in Dynamic Media integrierte Profil „Adaptive Videoverschlüsselung“ verwenden oder Ihr eigenes benutzerdefiniertes Profil erstellen.
+   * Erstellen Sie zunächst ein Videoverschlüsselungsprofil. Sie können entweder das vordefinierte und bereits in Dynamic Media integrierte Profil „Adaptive Videoverschlüsselung“ verwenden oder Ihr eigenes benutzerdefiniertes Profil erstellen.
    * Verknüpfen Sie das Videoverarbeitungsprofil mit den Ordnern, in die Sie die Primärvideos hochladen.
    * Laden Sie die Primärvideos in diese Ordner hoch. Dynamic Media verschlüsselt sie basierend auf dem zugewiesenen Videoverarbeitungsprofil.
    * Dynamic Media unterstützt hauptsächlich Kurzvideos (bis zu 30 Minuten) und einer Mindestauflösung von 25 x 25. Es können Videodateien mit einer Größe von bis zu 15 GB hochgeladen werden1.
@@ -378,7 +378,7 @@ Die Internationalisierung von Videos für den mehrsprachigen Gebrauch ist für d
    * Wenn Sie AEM als Ihr WCM-System (Web Content Management) verwenden, können Sie Ihren Web-Seiten direkt Videos hinzufügen.
    * Wenn Sie das WCM-System eines Drittanbieters verwenden, können Sie Videos mithilfe von URLs oder Einbettungs-Codes auf Ihren Web-Seiten verknüpfen oder einbetten.
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Unterstützung für mehrfache Untertitel und Audiospuren bei Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) oder sehen SIe sich [Hinzufügen mehrfacher Untertitel und Audiospuren zu einem Video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) an (1 Minute, 41 Sekunden).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Unterstützung für mehrfache Untertitel und Audiospuren bei Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) oder sehen SIe sich [Hinzufügen mehrfacher Untertitel und Audiospuren zu einem Video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) an (1 Minute, 41 Sekunden).
 
 
 ## Bereitstellen von Assets an Kundinnen und Kunden
@@ -402,7 +402,7 @@ Um das beste Web-optimierte Format zu gewährleisten, können Sie auf die Auswah
 
 Mithilfe der intelligenten Bildbearbeitung können Sie sicherstellen, dass Ihre Bilder so effizient wie möglich und auf die Browser-Umgebung der jeweiligen Benutzenden zugeschnitten bereitgestellt werden. Dieser Ansatz vereinfacht den Prozess und kann zu einer verbesserten Leistung in Bezug auf die Ladezeiten von Bildern und das gesamte Anwendererlebnis führen.
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
+Möchten Sie mehr erfahren? Navigieren Sie zu [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
 ### Änderungen nach der Bereitstellung von Assets an Kundinnen und Kunden
 
@@ -410,5 +410,5 @@ Möchten Sie mehr erfahren?  Navigieren Sie zu [Intelligente Bildbearbeitung](/
 
 Das CDN (Content Delivery Network) speichert Dynamic Media-Assets für die schnelle Bereitstellung an Kundinnen und Kunden zwischen. Wenn an diesen Assets Aktualisierungen vorgenommen werden, ist es wichtig, dass die Änderungen sofort auf der Website wirksam werden. Indem der CDN-Cache bereinigt oder ungültig gemacht wird, können von Dynamic Media bereitgestellte Assets schnell aktualisiert werden. Dadurch entfällt die Notwendigkeit, auf den Ablauf des Caches basierend auf dem TTL-Wert (Time To Live) zu warten, der normalerweise auf zehn Stunden festgelegt ist. Je nach Anwendungsfall können Sie die Einstellungen für den TTL-Wert (Time to Live) des CDN entsprechend aktualisieren.
 
-Möchten Sie mehr erfahren?  Navigieren Sie zu [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 

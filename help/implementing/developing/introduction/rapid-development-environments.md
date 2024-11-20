@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4863'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Für Produktionsprogramme (ohne Sandbox) können zusätzliche RDEs lizenziert we
 
 Führen Sie die folgenden Schritte aus, um Cloud Manager zum Erstellen einer RDE für Ihr Programm zu verwenden:
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie auf das Programm, dem Sie eine RDE hinzufügen möchten, um deren Details anzuzeigen.
 
@@ -83,7 +83,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie Version 20 von [Node und NPM installiert haben](https://nodejs.org/de/download/), damit Adobe I/O CLI und die zugehörigen Plug-ins richtig funktionieren.
+>Stellen Sie sicher, dass Sie Version 20 von [Node und NPM installiert haben](https://nodejs.org/en/download/), damit Adobe I/O CLI und die zugehörigen Plug-ins richtig funktionieren.
 
 
 1. Installieren Sie die Adobe I/O-CLI-Tools gemäß dem [hier](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) beschriebenen Verfahren.
@@ -141,12 +141,12 @@ Setup the CLI configuration necessary to use the RDE commands.
 ```
 
 Wählen Sie `no`, um
-* Organisation, Programm und Umgebung global in Ihrer aio-Konfiguration zu speichern
-* nur mit einer einzigen RDE zu arbeiten
+* Organisation, Programm und Umgebung global in Ihrer aio-Konfiguration zu speichern.
+* nur mit einer einzigen RDE zu arbeiten.
 
 Wählen Sie `yes`, um
 * Organisation, Programm und Umgebung lokal im aktuellen Verzeichnis in einer `.aio`-Datei zu speichern. Dies ist praktisch, wenn Sie die Datei in die Versionskontrolle übertragen möchten, sodass andere, die das Git-Repository klonen, sie verwenden können.
-* mit vielen RDEs zu arbeiten, sodass beim Wechsel zu einem anderen Verzeichnis stattdessen diese Konfiguration verwendet wird
+* mit vielen RDEs zu arbeiten, sodass beim Wechsel zu einem anderen Verzeichnis stattdessen diese Konfiguration verwendet wird.
 * die Konfiguration in einem programmgesteuerten Kontext zu verwenden, z. B. in einem Skript, das darauf verweisen kann
 
 
@@ -337,7 +337,7 @@ Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich aus wie die folg
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-#### Bereitstellen einer Apache/Dispatcher-Konfiguration {#deploy-apache-config}
+#### Bereitstellen einer Apache-/Dispatcher-Konfiguration {#deploy-apache-config}
 
 Für diese Art von Konfiguration muss die gesamte Ordnerstruktur in Form einer ZIP-Datei vorliegen.
 
@@ -389,18 +389,18 @@ The analyser found the following errors for publish :
 
 Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Paket nicht aufgelöst wird. In diesem Fall wird es „bereitgehalten“ und erst dann installiert, wenn die jeweiligen Anforderungen (in diesem Fall fehlende Importe) durch Installation von weiterem Code erfüllt werden.
 
-#### Bereitstellen von Konfigurations-Pipeline-bezogenen Konfigurationen (YAML-Konfigurationen) {#deploy-config-pipeline}
+#### Bereitstellen einer auf eine Konfigurations-Pipeline bezogenen Konfiguration (YAML-Konfigurationen) {#deploy-config-pipeline}
 
-Die im Artikel [Verwenden von Config Pipelines](/help/operations/config-pipeline.md) beschriebenen umgebungsspezifischen Konfigurationen (eine oder mehrere YAML-Dateien) können wie folgt bereitgestellt werden:
+Die im Artikel [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md) beschriebenen umgebungsspezifischen Konfigurationen (eine oder mehrere YAML-Dateien) können wie folgt bereitgestellt werden:
 
 `aio aem:rde:install -t env-config ./my-config-folder`
-wobei my-config-folder der übergeordnete Ordner ist, der Ihre YAML-Konfigurationen enthält.
+Dabei ist „my-config-folder“ der übergeordnete Ordner, der die YAML-Konfigurationen enthält.
 
-Alternativ können Sie auch eine ZIP-Datei installieren, die die Konfigurationsordnerstruktur enthält:
+Alternativ können Sie auch eine ZIP-Datei installieren, die die Baumstruktur des Konfigurationsordners enthält:
 
 `aio aem:rde:install -t env-config config.zip`
 
-Beachten Sie, dass das envTypes -Array der yaml-Datei den Wert *rde* enthalten sollte, wie im folgenden Beispiel gezeigt:
+Beachten Sie, dass das Array „envTypes“ der YAML-Datei den Wert *rde* enthalten sollte, wie im folgenden Beispiel gezeigt:
 
 ```
 kind: "CDN"
@@ -568,7 +568,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
 Sie können Cloud Manager verwenden, um Ihre RDE zurückzusetzen, indem Sie die folgenden Schritte ausführen:
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie auf das Programm, für das Sie die RDE zurücksetzen möchten.
 
@@ -1078,7 +1078,7 @@ Dadurch sollten alle Programme unter Ihrer konfigurierten Organisation aufgelist
 
 ### Verwenden des veralteten Kontexts „aio-cli-plugin-cloudmanager“ {#aio-rde-plugin-troubleshooting-deprecatedcontext}
 
-Aufgrund des Verlaufs der „aio-cli-plugin-aem-rde“ wurde für einige Zeit der Kontextname „aio-cli-plugin-cloudmanager“ verwendet. Das rde-Plug-in verwendet jetzt die IMS-Methode zum Umgang mit Kontextdaten. Das bedeutet, dass Optionen für das globale oder lokale Speichern von Kontextdaten zur Verfügung stehen. Außerdem werden auf Wunsch alle aio-Aufrufe auf einen konfigurierten Standard gesetzt.  Der konfigurierte Standardkontext wird lokal gespeichert und ermöglicht es den Entwickelnden, einzelne Kontexte und deren Informationen in einem Ordner zu verfolgen und zu verwenden. Weitere Informationen finden Sie im obigen [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
+Aufgrund des Verlaufs der „aio-cli-plugin-aem-rde“ wurde für einige Zeit der Kontextname „aio-cli-plugin-cloudmanager“ verwendet. Das rde-Plug-in verwendet jetzt die IMS-Methode zum Umgang mit Kontextdaten. Das bedeutet, dass Optionen für das globale oder lokale Speichern von Kontextdaten zur Verfügung stehen. Außerdem werden auf Wunsch alle aio-Aufrufe auf einen konfigurierten Standard gesetzt. Der konfigurierte Standardkontext wird lokal gespeichert und ermöglicht es den Entwickelnden, einzelne Kontexte und deren Informationen in einem Ordner zu verfolgen und zu verwenden. Weitere Informationen finden Sie im obigen [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
 
 Entwicklerinnen und Entwickler, die beide Plug-ins verwenden – aio-cli-plugin-cloudmanager und aio-cli-plugin-aem-rde – und alle Informationen im selben Kontext beibehalten möchten, haben jetzt folgende Optionen:
 

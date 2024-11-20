@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '999'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-cdn-settings}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -70,7 +70,7 @@ Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://`
 
    >[!NOTE]
    >
-   >Wenn Sie Ihr eigenes kundenverwaltetes SSL-Zertifikat (OV/EV oder DV) verwenden und ein kundenverwaltetes CDN ***provider*** verwenden möchten, können Sie das Hinzufügen eines SSL-Zertifikats überspringen und sofort zu [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) wechseln.
+   >Wenn Sie Ihr eigenes kundenseitig verwaltetes (OV/EV oder DV) SSL-Zertifikat verwenden und planen, einen kundenseitig verwalteten CDN-***Anbieter*** zu verwenden, brauchen Sie kein SSL-Zertifikat hinzuzufügen und können direkt zu [CDN-Konfiguration hinzufügen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) gehen, sobald Sie bereit sind.
 
 
 ### Schritte bei verwalteten Adobe-Zertifikaten {#adobe-managed-cert-steps}
@@ -103,7 +103,7 @@ Ein kanonischer Name oder CNAME-Eintrag ist eine Art von DNS-Eintrag, der einen 
 
 Melden Sie sich bei Ihrem DNS-Dienstleister an und erstellen Sie einen `CNAME`-Eintrag, um Ihren benutzerdefinierten Domain-Namen auf das Ziel verweisen zu lassen, wie in der folgenden Tabelle dargestellt.
 
-| CNAME | Benutzerdefinierter Domain-Name, der auf das Ziel verweist. |
+| CNAME | Benutzerdefinierter Domain-Name, der auf das Ziel verweist |
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
