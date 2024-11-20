@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
@@ -8,13 +8,13 @@ solution: Experience Manager Sites
 source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
 source-wordcount: '2231'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und [veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. Dies eignet sich ideal für die Headless-Bereitstellung.  Sie können auch zusammen mit [Multi-Site-Management verwendet werden, um die Wiederverwendung Ihrer Inhalte zu ermöglichen](#reusing-content-fragments-with-msm).
+In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fragments/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. Dies eignet sich ideal für die Headless-Bereitstellung. Sie können auch zusammen mit [Multi-Site-Management verwendet werden, um die Wiederverwendung Ihrer Inhalte zu ermöglichen](#reusing-content-fragments-with-msm).
 
 Inhaltsfragmente enthalten strukturierte Inhalte:
 
@@ -39,7 +39,7 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die **Assets-Konsole** verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
 >
 >Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
@@ -47,7 +47,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md): Aktivieren, Erstellen und Definieren Ihrer Modelle
-* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md): Erstellen Sie Inhaltsfragmente und bearbeiten, veröffentlichen und referenzieren Sie sie danach.
+* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md): Erstellen Sie Inhaltsfragmente und bearbeiten, veröffentlichen und referenzieren Sie sie danach
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
@@ -75,11 +75,11 @@ Wahrscheinlich möchten Sie jedoch nicht dieselben Inhalte für alle Kanäle ver
 
 Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
-* Erwägen, wie sich Zielgruppen effizient kanalübergreifend erreichen lassen
-* Kanalneutrale redaktionelle Inhalte erstellen und verwalten
-* Inhaltspools für mehrere Kanäle erstellen
-* Inhaltsvarianten für bestimmte Kanäle entwerfen
-* Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen
+* Erwägen, wie sich Zielgruppen effizient kanalübergreifend erreichen lassen.
+* Kanalneutrale redaktionelle Inhalte erstellen und verwalten.
+* Inhaltspools für mehrere Kanäle erstellen.
+* Inhaltsvarianten für bestimmte Kanäle entwerfen.
+* Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen.
 * Erstellen Sie verschachtelte Inhalte, um die Komplexität Ihrer Daten widerzuspiegeln.
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
@@ -220,7 +220,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Fragmentmetadaten**
 
-   * Verwendung der [Assets-Metadatenschemata](/help/assets/metadata-schemas.md)
+   * Verwendung der [Assets-Metadatenschemata](/help/assets/metadata-schemas.md).
    * Tag-Erstellung möglich:
 
       * Beim Erstellen und Bearbeiten des Fragments
@@ -299,7 +299,7 @@ Beim Zugriff über die **Assets**-Konsole können Sie MSM verwenden und Live Cop
 Weitere Informationen finden Sie unter:
 
 * [Wiederverwenden von Inhaltsfragmenten mit MSM](/help/assets/content-fragments/content-fragments-msm.md)
-* [Wiederverwenden von Assets mit MSM für Assets](/help/assets/reuse-assets-using-msm.md)
+* [Wiederverwenden von Assets mit MSM für Assets](/help/assets/reuse-assets-using-msm.md).
 
 Diese ermöglichen die [Vererbung](/help/assets/content-fragments/content-fragments-variations.md#inheritance) für Varianten und einzelne Felder Ihrer Fragmente.
 

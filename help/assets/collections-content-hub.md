@@ -6,7 +6,7 @@ exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
 source-wordcount: '663'
-ht-degree: 5%
+ht-degree: 95%
 
 ---
 
@@ -24,30 +24,30 @@ ht-degree: 5%
 >
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Eine Sammlung bezieht sich auf einen Satz von Assets, die für Benutzer freigegeben werden können. Eine Sammlung kann Assets aus verschiedenen Speicherorten enthalten, wobei die referenzielle Integrität dieser Assets gewahrt bleibt.
+Eine Sammlung bezieht sich auf einen Satz von Assets, die zwischen Benutzenden freigegeben werden können. Eine Sammlung kann Assets von verschiedenen Speicherorten enthalten, wobei die referenzielle Integrität dieser Assets gewahrt bleibt.
 
-Mit [!DNL Content Hub] können Sie öffentliche Sammlungen erstellen. Diese Sammlungen stehen allen berechtigten Benutzern zur Verfügung und schaffen einen gemeinsamen Bereich, in dem mehrere Benutzer effizient auf Inhalte zugreifen und diese nutzen können. Sammlungen fördern die partizipative Nutzung von Ressourcen für mehr Effizienz und Komfort. Auf der Durchsuchen-Seite der Sammlung haben Sie folgende Möglichkeiten:
+Mit [!DNL Content Hub] können Sie öffentliche Sammlungen erstellen. Diese Sammlungen stehen allen berechtigten Benutzenden zur Verfügung und schaffen einen gemeinsamen Bereich, in dem mehrere Benutzende effizient auf Inhalte zugreifen und diese nutzen können. Sammlungen fördern die gemeinsame Nutzung von Ressourcen und sorgen so für mehr Effizienz und Komfort. Auf der Browser-Seite der Sammlung stehen Ihnen die folgenden Optionen zur Verfügung:
 
 * **Erstellen**: Erstellen Sie eine oder mehrere Sammlungen.
-* **Ansicht**: Zeigen Sie die Assets und ihre Eigenschaften an.
+* **Anzeigen**: Zeigen Sie die Assets und ihre Eigenschaften an.
 * **Freigeben**: Geben Sie Assets als Link für andere frei.
 * **Herunterladen**: Laden Sie die Assets herunter.
 * **Entfernen**: Entfernen Sie bestimmte Assets aus einer Sammlung.
-* **Löschen**: Löscht die gesamte Sammlung.
+* **Löschen**: Löschen Sie die gesamte Sammlung.
 
-Dies erleichtert Benutzern den einfachen Zugriff auf und die Verwaltung der verschiedenen Assets, die in [!DNL Content Hub] verfügbar sind.
+Dies ermöglicht Benutzenden, auf einfache Weise auf die verschiedenen in [!DNL Content Hub] verfügbaren Assets zuzugreifen und diese zu verwalten.
 
 ## Voraussetzungen {#prerequisites}
 
-[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel erwähnten Aktionen ausführen.
+[Content Hub-Benutzende](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel genannten Aktionen ausführen.
 
 ## Erstellen von Sammlungen{#create-collections}
 
 Sie können [eine neue Sammlung erstellen](#create-new-collection) oder [Assets zu einer vorhandenen Sammlung hinzufügen](#add-assets-to-existing-collection).
 
-### Neue Sammlung erstellen{#create-new-collection}
+### Erstellen einer neuen Sammlung{#create-new-collection}
 
-Wählen Sie die Assets aus, die Sie einer Sammlung hinzufügen müssen, und klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
+Wählen Sie die Assets aus, die einer Sammlung hinzugefügt werden sollen, und klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
 
 ![Erstellen einer Sammlung](assets/add-assets-collection.jpg)
 
@@ -55,17 +55,17 @@ Um eine neue Sammlung zu erstellen, navigieren Sie zur Registerkarte **[!UICONTR
 
 ### Hinzufügen von Assets zu einer vorhandenen Sammlung{#add-assets-to-existing-collection}
 
-Um Assets zu einer vorhandenen Sammlung hinzuzufügen, wählen Sie die Assets aus, die Sie der Sammlung hinzufügen müssen. Klicken Sie auf **[!UICONTROL Zur Sammlung hinzufügen]**. Sie werden aufgefordert, die Sammlung auszuwählen.
+Um Assets zu einer vorhandenen Sammlung hinzuzufügen, wählen Sie die Assets aus, die der Sammlung hinzugefügt werden sollen. Klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**. Sie werden aufgefordert, die Sammlung auszuwählen.
 
 ![Erstellen einer neuen Sammlung](assets/create-add-collection.jpg)
 
-Wählen Sie die Sammlung aus, der Sie das Asset hinzufügen müssen. Sie können die vorhandene Sammlung auch über die Suchleiste durchsuchen. <br>Wählen Sie die Sammlung(en) aus, zu denen Sie die Assets hinzufügen müssen, und klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
+Wählen Sie die Sammlung aus, der das Asset hinzugefügt werden soll. Sie können die vorhandene Sammlung auch über die Suchleiste durchsuchen. <br>Wählen Sie die Sammlungen aus, denen die Assets hinzugefügt werden sollen, und klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
 
 ## Anzeigen von Sammlungen{#view-collections}
 
 Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und suchen Sie nach dem Sammlungsnamen. Um die Liste der in einer Sammlung verfügbaren Assets anzuzeigen, klicken Sie auf den Sammlungsnamen. Sie können auch Filter innerhalb einer Sammlung anwenden, um die Asset-Ergebnisse einzugrenzen.
 
-Klicken Sie auf das Asset, das Sie in einer Sammlung anzeigen möchten. [!DNL Content Hub] zeigt die Detailansicht für das Asset an. [Siehe Asset-Details](asset-properties-content-hub.md).
+Klicken Sie auf das Asset, das in einer Sammlung angezeigt werden soll. [!DNL Content Hub] zeigt die Detailansicht für das Asset an. Siehe [Asset-Details](asset-properties-content-hub.md).
 
 <!--
 ![Asset details](assets/view-collection.jpg)
@@ -80,38 +80,38 @@ Klicken Sie auf das Asset, das Sie in einer Sammlung anzeigen möchten. [!DNL Co
 * **H**: Share the asset as a link 
 -->
 
-## Herunterladen von Assets, die in einer Sammlung verfügbar sind{#download-assets-within-collection}
+## Herunterladen von in einer Sammlung verfügbaren Assets{#download-assets-within-collection}
 
-Um in einer Sammlung verfügbare Assets herunterzuladen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** .\
-Klicken Sie auf der Sammlungskarte auf das Symbol ![Download-Symbol](assets/download-icon.svg) .
+Um in einer Sammlung verfügbare Assets herunterzuladen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**.\
+Klicken Sie auf der Sammlungskarte auf das Symbol ![Herunterladen-Symbol](assets/download-icon.svg).
 
-![Registerkarte &quot;Sammlung&quot;](assets/download-collection.jpg)
+![Registerkarte „Sammlungen“](assets/download-collection.jpg)
 
 Alle Assets in der Sammlung werden heruntergeladen.
 
-Sie können die Sammlung auch öffnen, um die Assets einzeln herunterzuladen. Klicken Sie auf die Sammlung mit den Assets, die Sie herunterladen müssen. Wählen Sie die Assets aus und klicken Sie auf &quot;**[!UICONTROL Download]**&quot;.
+Sie können die Sammlung auch öffnen, um die Assets einzeln herunterzuladen. Klicken Sie auf die Sammlung mit den Assets, die heruntergeladen werden sollen. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Herunterladen]**.
 
-Erfahren Sie, wie Sie [ein Asset aus dem  [!DNL Content Hub]](download-assets-content-hub.md) herunterladen.
+Erfahren Sie, wie Sie [ein Asset aus [!DNL Content Hub]](download-assets-content-hub.md)herunterladen.
 
 ## Freigeben von in einer Sammlung verfügbaren Assets {#share-assets-available-within-collection}
 
-Sie können auch die in einer Sammlung verfügbaren Assets freigeben. Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** . Wählen Sie auf der Sammlungskarte das Symbol ![Freigabe-Symbol](assets/share.svg) aus. Der Freigabe-Link wird kopiert. Sie können den kopierten Link für den Empfänger freigeben. Erfahren Sie mehr über [Freigeben von Assets in der  [!DNL Content Hub]](share-assets-content-hub.md).
+Sie können auch die in einer Sammlung verfügbaren Assets freigeben. Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**. Wählen Sie auf der Sammlungskarte das Symbol ![Freigeben-Symbol](assets/share.svg) aus. Der Freigabe-Link wird kopiert. Sie können den Link an die Empfängerin oder den Empfänger weitergeben. Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
 
-## Details einer Sammlung bearbeiten {#edit-details-of-collection}
+## Bearbeiten der Details einer Sammlung {#edit-details-of-collection}
 
-Um **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einer Sammlung zu bearbeiten, klicken Sie auf den Sammlungsnamen und dann auf das Symbol ![Infosymbol](assets/info-icon.svg). Der Bildschirm [!UICONTROL Sammlungsdetails] wird angezeigt, in dem Sie den **[!UICONTROL Titel]** und die **[!UICONTROL Beschreibung]** einer Sammlung bearbeiten können. Klicken Sie auf **[!UICONTROL Änderungen speichern]** , um die Änderungen zu bestätigen.
+Um den **[!UICONTROL Titel]** und die **[!UICONTROL Beschreibung]** einer Sammlung zu bearbeiten, klicken Sie auf den Sammlungsnamen und dann auf das Symbol ![Info-Symbol](assets/info-icon.svg). Der Bildschirm [!UICONTROL Details zur Sammlung] wird angezeigt. Dort können Sie den **[!UICONTROL Titel]** und die **[!UICONTROL Beschreibung]** einer Sammlung bearbeiten. Klicken Sie auf **[!UICONTROL Änderungen speichern]**, um die Änderungen zu bestätigen.
 
-![Sammlungsdetails](assets/collection-details.png)
+![Details zur Sammlung](assets/collection-details.png)
 
 ## Entfernen von Assets aus einer Sammlung{#remove-assets-from-a-collection}
 
-Sie können einzelne oder mehrere Assets aus einer Sammlung entfernen. Um Assets aus einer Sammlung zu entfernen, klicken Sie auf die Sammlung, aus der Sie Assets entfernen müssen, wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Aus Sammlung entfernen]**.
+Sie können ein Asset oder mehrere Assets aus einer Sammlung entfernen. Um Assets aus einer Sammlung zu entfernen, klicken Sie auf die Sammlung, aus der Assets entfernt werden sollen, wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Aus Sammlung löschen]**.
 
-![Sammlung entfernen](assets/remove-collection-new.jpg)
+![Entfernen aus einer Sammlung](assets/remove-collection-new.jpg)
 
-Sie werden aufgefordert, das Entfernen des Assets zu bestätigen. Klicken Sie auf **[!UICONTROL Entfernen]**.\
-Die ausgewählten Assets wurden erfolgreich aus der Sammlung entfernt.
+Sie werden aufgefordert, das Entfernen der Assets zu bestätigen. Klicken Sie auf **[!UICONTROL Entfernen]**.\
+Die ausgewählten Assets werden erfolgreich aus der Sammlung entfernt.
 
 ## Löschen von Sammlungen{#delete-collection}
 
-Um eine Sammlung zu löschen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und klicken Sie auf die Sammlung, die Sie löschen müssen. Klicken Sie auf das Symbol ![Symbol &quot;Entfernen&quot;](assets/remove-icon.svg), um die Sammlung zu löschen.
+Um eine Sammlung zu löschen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und klicken Sie auf die Sammlung, die gelöscht werden soll. Klicken Sie auf das Symbol ![Entfernen-Symbol](assets/remove-icon.svg), um die Sammlung zu löschen.

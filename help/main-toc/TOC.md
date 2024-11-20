@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
 workflow-type: tm+mt
 source-wordcount: '5799'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -302,7 +302,7 @@ ht-degree: 98%
          + [Löschen eines Migrationssatzes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Verwalten von Prinzipalen nach der Migration](/help/journey-migration/managing-principals-after-migration.md)
-         + [Fehlerbehebung im Content Transfer Tool  ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [Fehlerbehebung im Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Legacy-Tool für die Benutzerzuordnung (veraltete Version){#legacy-user-mapping-tool}
             + [Überblick](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
@@ -439,7 +439,7 @@ ht-degree: 98%
             + Tour durch das Übersetzen von Sites {#sites}
                + [Grundlegendes zur Übersetzung von Websites in AEM](/help/journey-sites/translation/overview.md)
                + [Erste Schritte mit der Übersetzung in AEM Sites](/help/journey-sites/translation/getting-started.md)
-               + [Erfahren Sie mehr über Website-Inhalte und wie Sie sie in AEM übersetzen können.](/help/journey-sites/translation/learn-about.md)
+               + [Erfahren Sie mehr über Website-Inhalte und wie Sie sie in AEM übersetzen können](/help/journey-sites/translation/learn-about.md)
                + [Übersetzungs-Connector konfigurieren](/help/journey-sites/translation/configure-connector.md)
                + [Übersetzungsregeln konfigurieren](/help/journey-sites/translation/translation-rules.md)
                + [Inhalte übersetzen](/help/journey-sites/translation/translate-content.md)
@@ -473,9 +473,9 @@ ht-degree: 98%
    + [Überblick über Asset-Microservices](/help/assets/asset-microservices-overview.md)
    + [Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
-   + [Assets as a Cloud Service Ultimate aktivieren](/help/assets/enable-assets-ultimate.md)
+   + [Aktivieren von Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [Assets-Mitwirkende](/help/assets/assets-collaborator-users.md)
+   + [Assets-Mitarbeiter-Benutzende](/help/assets/assets-collaborator-users.md)
    + Verwalten digitaler Assets {#manage}
       + Micro-Frontend-Asset-Wähler {#asset-selector}
          + [Überblick über den Asset-Wähler](/help/assets/overview-asset-selector.md)
@@ -641,7 +641,7 @@ ht-degree: 98%
       + [Überwachen von Assets, Ordnern und Sammlungen](/help/assets/manage-notifications-assets-view.md)
       + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
       + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
-      + [Inhaltsurhebernachweise](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Erweiterbarkeit der Benutzeroberfläche der AEM Assets-Ansicht](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
@@ -652,9 +652,9 @@ ht-degree: 98%
       + [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Suchen nach Assets in Content Hub](/help/assets/search-assets-content-hub.md)
       + [Asset-Eigenschaften](/help/assets/asset-properties-content-hub.md)
-      + [Freigeben von Assets in Content Hub](/help/assets/share-assets-content-hub.md)
+      + [Freigeben von Assets im Content Hub](/help/assets/share-assets-content-hub.md)
       + [Herunterladen von Assets mit Content Hub](/help/assets/download-assets-content-hub.md)
-      + [Verwalten lizenzierter Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [Verwalten lizenzierter Assets in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Verwalten von Sammlungen in Content Hub](/help/assets/collections-content-hub.md)
       + [Bearbeiten von Bildern mit Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
       + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
@@ -690,7 +690,7 @@ ht-degree: 98%
       + [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
       + [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)
       + [Konfigurieren eines einheitlichen Speicher-Connectors](/help/forms/configure-unified-storage-connector.md)
-      + [Migrieren von  [!DNL AEM 6.5 Forms]  oder früher zu  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migrieren von [!DNL AEM 6.5 Forms] oder früher zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
    + Erste Schritte {#getting-started-forms}
@@ -782,7 +782,7 @@ ht-degree: 98%
             + [Erstellen von Designs](/help/forms/themes.md)
             + [Verweisen auf adaptive Formularfragmente](/help/forms/reference-adaptive-form-fragments.md)
             + [Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen](/help/forms/synchronizing-adaptive-forms-xfa.md)
-            + [XFA-Unterstützung in XDP-basierten adaptiven Formularen ](/help/forms/xfa-api-supported-in-adaptive-form.md)
+            + [XFA-Unterstützung in XDP-basierten adaptiven Formularen](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Verbessern der Leistung umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
             + [Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen](/help/forms/publishing-unpublishing-forms.md)
@@ -805,7 +805,7 @@ ht-degree: 98%
             + [Hinzufügen von Regeln zu adaptiven Formularen](/help/forms/rule-editor.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers mit dem Aufruf-Sevice des Regel-Editors](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + [Gewähren von Zugriff auf den Regeleditor für ausgewählte Benutzergruppen](/help/forms/rule-editor-access-user-groups.md)
-            + [Verwenden von SOM-Ausdrücken in adaptiven Formularen ](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [Verwenden von SOM-Ausdrücken in adaptiven Formularen](/help/forms/using-som-expressions-adaptive-forms.md)
             + [Adaptive Formularausdrücke](/help/forms/adaptive-form-expressions.md)
          + Verwenden von [!DNL Adobe Sign] {#use-adobe-sign}
             + [Verwenden von Adobe Sign zum elektronischen Signieren adaptiver Formulare](/help/forms/working-with-adobe-sign.md)
@@ -1090,7 +1090,7 @@ ht-degree: 98%
          + [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](/help/journey-headless/author/references.md)
          + [Erfahren Sie mehr über die Definition von Metadaten und Tagging für Inhaltsfragmente](/help/journey-headless/author/metadata-tagging.md)
 + Generative KI {#generative-ai}
-   + [Generieren von Varianten](/help/generative-ai/generate-variations.md)
+   + [Varianten generieren](/help/generative-ai/generate-variations.md)
 + Implementieren {#implementing}
    + [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)
    + CQ Cloud Manager {#using-cloud-manager}

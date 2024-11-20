@@ -1,12 +1,12 @@
 ---
-title: Asset-Eigenschaften in  [!DNL the Content Hub]
+title: Asset-Eigenschaften in [!DNL the Content Hub]
 description: Erfahren Sie, wie Sie Asset-Eigenschaften in [!DNL Content Hub] anzeigen und verwalten.
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 14%
+ht-degree: 95%
 
 ---
 
@@ -23,36 +23,36 @@ ht-degree: 14%
 >
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Mit [!DNL The Content Hub] können Sie Informationen über das Asset anzeigen, das für eine effiziente Asset-Verteilung von entscheidender Bedeutung ist. Es handelt sich um die Sammlung aller für ein Asset verfügbaren Daten.
+[!DNL The Content Hub] ermöglicht Ihnen das Anzeigen von Informationen über das Asset, was für eine effiziente Asset-Verteilung von entscheidender Bedeutung ist. Es handelt sich um die Sammlung aller für ein Asset verfügbaren Daten.
 
-Die Anzeige von Asset-Eigenschaften hilft Ihnen bei der weiteren Kategorisierung von Assets und ist bei zunehmender Menge digitaler Informationen hilfreich. Es ist möglich, einige Hundert Dateien zu verwalten, die nur auf den Dateinamen, den Miniaturbildern und dem Speicherbedarf basieren. Dieser Ansatz ist jedoch nicht skalierbar, wenn die Anzahl der beteiligten Personen und die Anzahl der verwalteten Assets steigt. Darüber hinaus wächst der Wert eines digitalen Assets, sobald das Asset wie folgt aussieht:
+Durch die Anzeige der Asset-Eigenschaften können Sie Assets genauer einteilen. Außerdem erweist es sich als nützlich, wenn die Menge digitaler Daten ansteigt. Es ist möglich, mehrere Hundert Dateien zu verwalten, basierend nur auf den Dateinamen, den Miniaturbildern und dem Speicherbedarf. Dieser Ansatz ist jedoch nicht skalierbar, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Assets steigt. Darüber hinaus steigt der Wert eines digitalen Assets, da sich das Asset in den folgenden Punkten verbessert:
 
-* besser zugänglich – Systeme und Benutzer können es leicht finden.
-* Einfachere Verwaltung - Sie können Assets mit denselben Eigenschaften einfach finden und Änderungen darauf anwenden.
-* Abgeschlossen - Asset enthält mehr Informationen und Kontext.
+* besser zugänglich – Systeme und Benutzende können es leicht finden.
+* einfacher zu verwalten – Sie können Assets mit denselben Eigenschaften einfacher finden und Änderungen auf sie anwenden.
+* vollständig – das Asset enthält mehr Informationen und Kontext.
 
 ## Voraussetzungen {#prerequisites}
 
-[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel erwähnten Aktionen ausführen.
+[Content Hub-Benutzende](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel genannten Aktionen ausführen.
 
-## Eigenschaften eines Assets anzeigen {#properties-ui}
+## Anzeigen der Eigenschaften eines Assets {#properties-ui}
 
-Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich genauer ansehen. Mit der Vorschaufunktion können Sie nicht nur die Bilder, sondern auch einige andere unterstützte Asset-Typen anzeigen. Sie können nicht nur das Asset anzeigen, sondern auch seine detaillierten Informationen anzeigen und andere Aktionen durchführen. Um Informationen zu einem Asset anzuzeigen, navigieren Sie zum Asset oder [suchen](search-assets.md) Sie das Asset und klicken Sie dann auf das Asset, um seine Eigenschaften zu öffnen. Die folgende Abbildung zeigt die Felder, die auf einer Asset-Eigenschaftsseite verfügbar sind:
+Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich genauer ansehen. Mit der Vorschaufunktion können Sie nicht nur die Bilder, sondern auch einige andere unterstützte Asset-Typen anzeigen. Sie können nicht nur das Asset, sondern auch seine detaillierten Informationen anzeigen und andere Aktionen durchführen. Um Informationen zu einem Asset anzuzeigen, navigieren Sie zum Asset oder [suchen](search-assets.md) Sie nach dem Asset und klicken Sie dann darauf, um seine Eigenschaften zu öffnen. Die folgende Abbildung zeigt die Felder, die auf einer Seite mit Asset-Eigenschaften verfügbar sind:
 
 ![Eigenschaften einer Asset-Benutzeroberfläche](assets/properties-ui.png)
 
 * **A:** Titel eines Assets
-* **B:** Prozentsatz des Zoom- oder Vorschau-Assets durch Vergrößern oder Verkleinern
-* **C:** Zoom auf den zuvor ausgewählten Prozentsatz rückgängig machen
+* **B:** Zoom-Prozentsatz eingeben oder die Asset-Vorschau zur genaueren Ansicht vergrößern bzw. verkleinern
+* **C:** Den Zoom auf den zuvor ausgewählten Prozentsatz zurücksetzen
 * **D:** Zum vorherigen oder nächsten Asset wechseln
-* **E:** Anzahl Assets
-* **F:** Herunterladen des Assets
+* **E:** Assets zählen
+* **F:** Das Asset herunterladen
 * **G:** Asset mit [!DNL Adobe Express] bearbeiten
-* **H:** Reduzieren oder Anzeigen von Vorschauinformationen für ein Asset
-* **I:** Asset freigeben
+* **H:** Informationen für ein Asset ausblenden oder in der Vorschau anzeigen
+* **I:** Das Asset freigeben
 * **J:** Asset zu [!DNL Collection] hinzufügen
 * **K:** Vorschaufenster schließen
-* **L:** Informationen zu einem Asset, das Titel, Format, Größe, Auflösung, Tags, Farb-Tags und Smart-Tags enthält.
+* **L:** Informationen zu einem Asset, einschließlich Titel, Format, Größe, Auflösung, Tags, Farb-Tags und Smart-Tags.
 
 ## Unterstützte Formate {#supported-formats}
 
@@ -87,14 +87,14 @@ Die folgende Tabelle zeigt die unterstützten Dateiformate in [!DNL the Content 
       <td>Dokument</td>
       <td>
         <ul>
-            <li>[!UICONTROL Text] (Nur verfügbar)</li>  
+            <li>[!UICONTROL txt] (Einfach)</li>  
             <li>[!UICONTROL Doc/Docx]</li> 
             <li>[!UICONTROL XML]</li>
         </ul>
       </td>
      </tr>
      <tr>
-      <td>Druckmedien</td>
+      <td>Print-Medien</td>
       <td>
         <ul>
             <li>[!UICONTROL PDF]</li>  
@@ -106,15 +106,15 @@ Die folgende Tabelle zeigt die unterstützten Dateiformate in [!DNL the Content 
 
 ### Abgeleitete Eigenschaften nach dem Hochladen eines Assets {#derived-properties}
 
-Nachdem Sie ein Asset hochgeladen haben, leitet der Content Hub einige automatisch generierte Eigenschaften ab. Im Folgenden finden Sie eine Liste einiger dieser Themen:
+Nachdem Sie ein Asset hochgeladen haben, leitet der Content Hub einige automatisch generierte Eigenschaften ab. Im Folgenden finden Sie eine Liste solcher Eigenschaften:
 
-* **Größe:** Die Größe zeigt den logischen Wert eines Assets gemäß seinen Dimensionen. Dadurch wird der Speicherplatz klargestellt, den ein Asset in einem Repository belegt. [!DNL The Content Hub] unterstützt Assets mit einer Größe von bis zu 2 GB.
+* **Größe:** Die Größe gibt den logischen Wert eines Assets gemäß seinen Dimensionen an. Dadurch wird klargestellt, wie viel Speicherplatz ein Asset in einem Repository belegt. [!DNL The Content Hub] unterstützt Assets mit einer Größe von bis zu 2 GB.
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Smart-Tags:** [!DNL The Content Hub] verwendet die Smart-Content-Dienste von Adobe Sensei, um Assets mithilfe des Erkennungsalgorithmus für die tags-basierte Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags steigern die Content-Geschwindigkeit Ihrer Projekte, indem sie Ihnen dabei helfen, relevante Assets schnell zu finden. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL The Content Hub] wendet standardmäßig Smart-Tags automatisch auf Assets an.
+* **Smart-Tags:** [!DNL The Content Hub] verwendet die Smart Content-Dienste von Adobe Sensei, um Assets mithilfe des Erkennungsalgorithmus für die Tags-basierte Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL The Content Hub] wendet standardmäßig automatisch Smart-Tags auf Assets an.
 
-* **Farb-Tags:** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen bei der Erkennung eines Assets anhand von Farben, die in einem Asset mithilfe der Adobe Sensei AI-Funktionen automatisch identifiziert werden.
+* **Farb-Tags:** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen dabei, ein Asset anhand von Farben zu erkennen, die mithilfe der KI-Funktionen von Adobe Sensei automatisch in einem Asset identifiziert werden.
 
 * Upload-Datum
 
@@ -124,9 +124,9 @@ Nachdem Sie ein Asset hochgeladen haben, leitet der Content Hub einige automatis
 
 * Zuletzt geändert von
 
-Es gibt auch Eigenschaften, die beim Hinzufügen von Assets zu Content Hub angegeben werden. Weitere Informationen finden Sie unter [Hinzufügen markengenehmigter Assets zu Content Hub](upload-brand-approved-assets.md). Diese Eigenschaften werden auch auf der Seite mit den Asset-Eigenschaften angezeigt.
+Es gibt auch Eigenschaften, die beim Hinzufügen von Assets zu Content Hub angegeben werden. Weitere Informationen finden Sie unter [Hinzufügen markenkonformer Assets zu Content Hub](upload-brand-approved-assets.md). Diese Eigenschaften werden ebenfalls auf der Seite mit den Asset-Eigenschaften angezeigt.
 
-Administratoren können auch die Eigenschaften konfigurieren, die für jedes Asset angezeigt werden. Weitere Informationen finden Sie unter [Konfigurieren der Content Hub-Benutzeroberfläche](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
+Admins können auch die Eigenschaften konfigurieren, die für jedes Asset angezeigt werden. Weitere Informationen finden Sie unter [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
 
 <!--
 

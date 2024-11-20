@@ -1,41 +1,41 @@
 ---
 title: Ereignisse des universellen Editors
-description: Erfahren Sie mehr über die verschiedenen Ereignisse, die der universelle Editor sendet und mit denen Sie auf Änderungen an Inhalten oder Benutzeroberfläche in Ihrer Remote-App reagieren können.
+description: Erfahren Sie mehr über die verschiedenen Ereignisse, die der universelle Editor sendet und mit denen Sie auf Änderungen an Inhalten oder an der Benutzeroberfläche in Ihrer Remote-App reagieren können.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 3%
+ht-degree: 95%
 
 ---
 
 # Ereignisse des universellen Editors {#events}
 
-Erfahren Sie mehr über die verschiedenen Ereignisse, die der universelle Editor sendet und mit denen Sie auf Änderungen an Inhalten oder Benutzeroberfläche in Ihrer Remote-App reagieren können.
+Erfahren Sie mehr über die verschiedenen Ereignisse, die der universelle Editor sendet und mit denen Sie auf Änderungen an Inhalten oder an der Benutzeroberfläche in Ihrer Remote-App reagieren können.
 
 ## Einführung {#introduction}
 
-Anwendungen können unterschiedliche Anforderungen für Seiten- oder Komponentenaktualisierungen haben. Daher sendet der universelle Editor definierte Ereignisse an Remote-Anwendungen. Wenn die Remote-Anwendung keinen benutzerdefinierten Ereignis-Listener für das gesendete Ereignis hat, wird ein vom `universal-editor-cors` -Paket bereitgestellter [Fallback-Ereignis-Listener](#fallback-listeners) ausgeführt.
+Anwendungen können unterschiedliche Anforderungen bei der Aktualisierung von Seiten oder Komponenten haben. Daher sendet der universelle Editor definierte Ereignisse an Remote-Anwendungen. Wenn die Remote-Anwendung über keinen benutzerdefinierten Ereignis-Listener für das gesendete Ereignis verfügt, wird ein vom Paket `universal-editor-cors` bereitgestellter [Fallback-Ereignis-Listener](#fallback-listeners) ausgeführt.
 
-Alle Ereignisse werden auf dem betroffenen DOM-Element der Remote-Seite aufgerufen. Ereignisse werden an das Element `BODY` übergeben, in dem der standardmäßige Ereignis-Listener, der vom `universal-editor-cors` -Paket bereitgestellt wird, registriert ist. Es gibt Ereignisse für den Inhalt und die Ereignisse für die Benutzeroberfläche.
+Alle Ereignisse werden für das betroffene DOM-Element der Remote-Seite aufgerufen. Ereignisse werden an das Element `BODY` übergeben, bei dem der standardmäßige, vom Paket `universal-editor-cors` bereitgestellte Ereignis-Listener registriert ist. Es gibt Ereignisse für den Inhalt und Ereignisse für die Benutzeroberfläche.
 
 Alle Ereignisse folgen einer Namenskonvention.
 
 * `aue:<content-or-ui>-<event-name>`
 
-Beispiel: `aue:content-update` und `aue:ui-select`
+Zum Beispiel `aue:content-update` und `aue:ui-select`
 
-Ereignisse umfassen die Payload der Anfrage und der Antwort und werden ausgelöst, sobald der entsprechende Aufruf erfolgreich war. Weitere Informationen zu Aufrufen und Beispielen für deren Payloads finden Sie im Dokument [Universal Editor-Aufrufe.](/help/implementing/universal-editor/calls.md)
+Ereignisse umfassen die Payload der Anfrage und der Antwort und werden ausgelöst, sobald der entsprechende Aufruf erfolgreich gewesen ist. Weitere Informationen zu Aufrufen und Beispielen für deren Payloads finden Sie im Dokument [Aufrufe im universellen Editor](/help/implementing/universal-editor/calls.md).
 
-## Inhaltsaktualisierungsereignisse {#content-events}
+## Ereignisse zur Inhaltsaktualisierung {#content-events}
 
 ### aue:content-add {#content-add}
 
-Das `aue:content-add` -Ereignis wird ausgelöst, wenn einem Container eine neue Komponente hinzugefügt wird.
+Das Ereignis `aue:content-add` wird ausgelöst, wenn einem Container eine neue Komponente hinzugefügt wird.
 
-Die Payload ist Inhalt vom Universal Editor-Dienst mit Fallback-Inhalt aus der Komponentendefinition.
+Die Payload sind Inhalte vom universellen Editor-Dienst mit Fallback-Inhalten aus der Komponentendefinition.
 
 ```json
 {
@@ -57,7 +57,7 @@ Die Payload ist Inhalt vom Universal Editor-Dienst mit Fallback-Inhalt aus der K
 
 Das `aue:content-details` -Ereignis wird ausgelöst, wenn eine Komponente im Eigenschaftenbereich geladen wird.
 
-Die Payload ist der Inhalt der Komponente und optional ihr Schema.
+Die Payload ist der Inhalt der Komponente sowie optional ihr Schema.
 
 ```json
 {
@@ -72,9 +72,9 @@ Die Payload ist der Inhalt der Komponente und optional ihr Schema.
 
 ### aue:content-move {#content-move}
 
-Das `aue:content-move` -Ereignis wird ausgelöst, wenn eine Komponente verschoben wird.
+Das Ereignis `aue:content-move` wird ausgelöst, wenn eine Komponente verschoben wird.
 
-Die Payload ist der Komponenten-, Quell-Container- und Ziel-Container.
+Die Payload ist die Komponente sowie der Quell- und Ziel-Container.
 
 ```json
 {
@@ -110,7 +110,7 @@ Die Payload ist ein JSON-Patch der aktualisierten Eigenschaften.
 
 ### aue:content-remove {#content-remove}
 
-Das `aue:content-remove` -Ereignis wird ausgelöst, wenn eine Komponente aus einem Container entfernt wird.
+Das Ereignis `aue:content-remove` wird ausgelöst, wenn eine Komponente aus einem Container entfernt wird.
 
 Die Payload ist die Element-ID der entfernten Komponente.
 
@@ -126,7 +126,7 @@ Die Payload ist die Element-ID der entfernten Komponente.
 
 ### aue:content-update {#content-update}
 
-Das `aue:content-update` -Ereignis wird ausgelöst, wenn die Eigenschaften einer Komponente im Kontext aktualisiert werden.
+Das Ereignis `aue:content-update` wird ausgelöst, wenn die Eigenschaften einer Komponente im Kontext aktualisiert werden.
 
 Die Payload ist der aktualisierte Wert.
 
@@ -142,7 +142,7 @@ Die Payload ist der aktualisierte Wert.
 
 ### Weitergeben von Payloads {#passing-payloads}
 
-Bei allen Inhaltsupdate-Ereignissen werden die angeforderte Payload sowie die Antwort-Payload an das Ereignis übergeben. Beispiel für einen Aktualisierungsaufruf:
+Bei allen Ereignissen zur Inhaltsaktualisierung werden die angeforderte Payload sowie die Antwort-Payload an das Ereignis übergeben. Bei einem Aktualisierungsaufruf sieht dies beispielsweise wie folgt aus.
 
 Anfrage-Payload:
 
@@ -164,7 +164,7 @@ Anfrage-Payload:
 }
 ```
 
-Antwort-Payload
+Antwort-Payload:
 
 ```json
 {
@@ -182,15 +182,15 @@ Antwort-Payload
 
 ### aue:ui-publish {#ui-publish}
 
-Das `aue:ui-publish` -Ereignis wird ausgelöst, wenn der Inhalt veröffentlicht wird (mit Aufruf auf `BODY` -Ebene).
+Das Ereignis `aue:ui-publish` wird ausgelöst, wenn der Inhalt veröffentlicht wird (mit einem Aufruf auf `BODY`-Ebene).
 
-Die Payload ist eine Liste von Element-IDs und ihrem Veröffentlichungsstatus.
+Die Payload ist eine Liste von Element-IDs sowie ihr Veröffentlichungsstatus.
 
 ### aue:ui-select {#ui-select}
 
-Das `aue:ui-select` -Ereignis wird ausgelöst, wenn eine Komponente ausgewählt wird.
+Das Ereignis `aue:ui-select` wird ausgelöst, wenn eine Komponente ausgewählt wird.
 
-Die Payload ist die Element-ID, Elementeigenschaften und Elementtyp der ausgewählten Komponente.
+Die Payload ist die Element-ID, Elementeigenschaften und der Elementtyp der ausgewählten Komponente.
 
 ```json
 {
@@ -229,9 +229,9 @@ Die Payload für dieses Ereignis ist leer.
 
 ### aue:ui-viewport-change {#ui-viewport-change}
 
-Das `aue:ui-viewport-change` -Ereignis wird ausgelöst, wenn die Darstellungsfeldgröße geändert wird.
+Das Ereignis `aue:ui-viewport-change` wird ausgelöst, wenn die Viewport-Größe geändert wird.
 
-Die Nutzlast ist die Abmessungen des Viewports.
+Die Payload sind die Dimensionen des Viewports.
 
 ```json
 {
@@ -244,7 +244,7 @@ Die Nutzlast ist die Abmessungen des Viewports.
 
 ### aue:initialized {#initialized}
 
-Das `aue:initialized` -Ereignis wird ausgelöst, um der Remote-Seite mitzuteilen, dass sie erfolgreich im universellen Editor geladen wurde.
+Das Ereignis `aue:initialized` wird ausgelöst, um der Remote-Seite mitzuteilen, dass sie erfolgreich im universellen Editor geladen wurde.
 
 Die Payload für dieses Ereignis ist leer.
 
@@ -260,10 +260,10 @@ Die Payload für dieses Ereignis ist leer.
 
 | Ereignis | Verhalten |
 |---|---|
-| `aue:content-add` | Seitenneuladung |
-| `aue:content-details` | Nichts tun |
-| `aue:content-move` | Verschieben Sie den Inhalt/die Struktur der Komponente in den Zielbereich |
-| `aue:content-patch` | Seitenneuladung |
+| `aue:content-add` | Neuladen der Seite |
+| `aue:content-details` | Nichts |
+| `aue:content-move` | Verschieben der Inhalte/Struktur der Komponente in den Zielbereich |
+| `aue:content-patch` | Neuladen der Seite |
 | `aue:content-remove` | Entfernen des DOM-Elements |
 | `aue:content-update` | Aktualisieren der `innerHTML` mit der Payload |
 
@@ -271,12 +271,12 @@ Die Payload für dieses Ereignis ist leer.
 
 | Ereignis | Verhalten |
 |---|---|
-| `aue:ui-publish` | Nichts tun |
-| `aue:ui-select` | Scrollen Sie zum ausgewählten Element |
+| `aue:ui-publish` | Nichts |
+| `aue:ui-select` | Scrollen zum ausgewählten Element |
 | `aue:ui-preview` | Hinzufügen von `class="adobe-ue-preview"` zum HTML-Tag |
 | `aue:ui-edit` | Hinzufügen von `class=adobe-ue-edit"` zum HTML-Tag |
-| `aue:ui-viewport-change` | Nichts tun |
-| `aue:initialized` | Nichts tun |
+| `aue:ui-viewport-change` | Nichts |
+| `aue:initialized` | Nichts |
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

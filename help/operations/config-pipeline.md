@@ -7,7 +7,7 @@ exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -19,15 +19,15 @@ Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a
 
 Eine Cloud Manager-Konfigurations-Pipeline stellt Konfigurationsdateien (die im YAML-Format erstellt wurden) in einer Zielumgebung bereit. Auf diese Weise kann eine Reihe von Funktionen in AEM as a Cloud Service konfiguriert werden, darunter die Protokollweiterleitung, Bereinigungsaufgaben sowie verschiedene CDN-Funktionen.
 
-Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdateien können mit dem Befehlszeilen-Tool ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in Rapid Development Environments (RDEs) bereitgestellt werden.[
+Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdateien können mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
 In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick über wichtige Informationen dazu, wie Konfigurationspipelines verwendet werden können und wie Konfigurationen für sie strukturiert sein sollten. Es werden allgemeine Konzepte beschrieben, die für alle oder eine Teilmenge der von Konfigurations-Pipelines unterstützten Funktionen freigegeben werden.
 
-* [Unterstützte Konfigurationen](#configurations): Eine Liste von Konfigurationen, die mit Konfigurations-Pipelines bereitgestellt werden können.
+* [Unterstützte Konfigurationen](#configurations): Eine Liste von Konfigurationen, die mit Konfigurations-Pipelines bereitgestellt werden können
 * [Erstellen und Verwalten von Konfigurations-Pipelines](#creating-and-managing): Erstellen einer Konfigurations-Pipeline.
-* [Allgemeine Syntax](#common-syntax): Syntax, die über verschiedene Konfigurationen hinweg verwendet wird.
-* [Ordnerstruktur](#folder-structure): Beschreibt die für die Konfigurationen erwarteten Strukturkonfigurations-Pipelines.
-* [Geheime Umgebungsvariablen](#secret-env-vars): Beispiele für die Verwendung von Umgebungsvariablen, um Geheimnisse in Ihren Konfigurationen nicht offenzulegen.
+* [Allgemeine Syntax](#common-syntax): Syntax, die über verschiedene Konfigurationen hinweg verwendet wird
+* [Ordnerstruktur](#folder-structure): Beschreibt die für die Konfigurationen erwarteten Strukturkonfigurations-Pipelines
+* [Geheime Umgebungsvariablen](#secret-env-vars): Beispiele für die Verwendung von Umgebungsvariablen, um Geheimnisse in Ihren Konfigurationen nicht offenzulegen
 
 ## Unterstützte Konfigurationen {#configurations}
 
@@ -120,7 +120,7 @@ Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen u
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Mithilfe von Umgebungsvariablen mit geheimen Typen können die [geheimen Eigenschaften](#secret-env-vars) pro Umgebung variieren, wie durch die `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht wird.
+Mithilfe von Umgebungsvariablen mit geheimen Typen können die [geheimen Eigenschaften](#secret-env-vars) pro Umgebung variieren, wie durch die `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht wird
 
 ```yaml
 kind: "LogForwarding"

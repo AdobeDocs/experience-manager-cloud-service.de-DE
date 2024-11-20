@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ In diesem Dokument wird anhand des Beispiels für Umleitungen veranschaulicht, w
 
 Um Zuordnungen mithilfe von Kalkulationstabellen in Ihrem AEM-Projekt mit Edge Delivery Services erstellen zu können, müssen Sie Ihre Site mit der neuesten Site-Vorlage erstellt haben.
 
-Weitere Informationen finden Sie im Dokument [Erste Schritte für Entwickler für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
+Weitere Informationen finden Sie im Dokument [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Erstellen einer Kalkulationstabelle {#spreadsheet}
 
@@ -150,7 +150,7 @@ Damit AEM die Daten in Ihrer Tabelle veröffentlichen kann, müssen Sie zusätzl
 
    >[!NOTE]
    >
-   >Dieser `paths.json` -Eintrag basiert auf dem Beispiel der Erstellung von Umleitungen mithilfe tabellarischer Daten. Aktualisieren Sie den Pfad entsprechend dem [Typ des erstellten Arbeitsblatts.](#other)
+   >Dieser Eintrag in `paths.json` basiert auf dem Beispiel der Erstellung von Umleitungen mithilfe tabellarischer Daten. Aktualisieren Sie den Pfad entsprechend dem [Typ der Tabelle, die Sie erstellen](#other).
 
 1. Klicken Sie auf **Änderungen bestätigen…**, um die Änderungen an `main` zu speichern.
 
@@ -193,7 +193,7 @@ Stellen Sie für [Konfiguration](https://www.aem.live/docs/configuration), [Kopf
 * Konfiguration: `/.helix/config.json`
 * Kopfzeilen: `/.helix/headers.json`
 * Metadaten: `/metadata.json`
-* Taxonomie: Weitere Informationen finden Sie im Dokument [Verwalten von Taxonomiedaten](/help/edge/wysiwyg-authoring/taxonomy.md) .
+* Taxonomie: Weitere Informationen finden Sie im Dokument [Verwalten von Taxonomiedaten](/help/edge/wysiwyg-authoring/taxonomy.md).
 
 Darüber hinaus können Sie [Ihre eigene Kalkulationstabelle erstellen](#own-spreadsheet), mit beliebigen Spalten für Ihre eigene Verwendung.
 

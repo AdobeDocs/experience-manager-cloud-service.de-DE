@@ -1,6 +1,6 @@
 ---
 title: Ein Überblick über das Arbeiten mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service strukturierte Inhalte erstellen und verwenden können, die sich ideal für Headless-Bereitstellung und Seitenbearbeitung eignen.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service strukturierte Inhalte erstellen und verwenden können – ideal für Headless-Bereitstellung und Seitenerstellung.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
@@ -8,13 +8,13 @@ solution: Experience Manager Sites
 source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
 # Ein Überblick über das Arbeiten mit Inhaltsfragmenten {#overview-working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen es Ihnen, Inhalte für die Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorzubereiten, ideal für die [Headless-Bereitstellung](/help/headless/what-is-headless.md) und die [Seitenbearbeitung](/help/sites-cloud/authoring/fragments/content-fragments.md).
+In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen es Ihnen, Inhalte so vorzubereiten, dass sie an mehreren Orten und über mehrere Kanäle verwendet werden können, ideal für die [Headless-Bereitstellung](/help/headless/what-is-headless.md) und die [Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!IMPORTANT]
 >
@@ -64,11 +64,11 @@ Sie möchten jedoch (wahrscheinlich) nicht den *exakt* gleichen Inhalt für alle
 
 Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
-* Erwägen, wie sich Zielgruppen effizient kanalübergreifend erreichen lassen
-* Kanalneutrale redaktionelle Inhalte erstellen und verwalten
-* Inhaltspools für mehrere Kanäle erstellen
-* Inhaltsvarianten für bestimmte Kanäle entwerfen
-* Hinzufügen von Bildern durch Einfügen von Assets zu Texten
+* Erwägen, wie sich Zielgruppen effizient kanalübergreifend erreichen lassen.
+* Kanalneutrale redaktionelle Inhalte erstellen und verwalten.
+* Inhaltspools für mehrere Kanäle erstellen.
+* Inhaltsvarianten für bestimmte Kanäle entwerfen.
+* Hinzufügen von Bildern durch Einfügen von Assets zu Texten.
 * Erstellen Sie verschachtelte Inhalte, um die Komplexität Ihrer Daten widerzuspiegeln.
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
@@ -91,10 +91,10 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
 
-* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md): Um auf Ihre Fragmente zuzugreifen, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen.
-* [Verwenden des Inhaltsfragmenteditors](/help/sites-cloud/administering/content-fragments/authoring.md): Um Ihre Fragmente zu bearbeiten, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen.
+* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md): Um auf Ihre Fragmente zuzugreifen, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen
+* [Verwenden des Inhaltsfragmenteditors](/help/sites-cloud/administering/content-fragments/authoring.md): Um Ihre Fragmente zu bearbeiten, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen
 * [Analysieren](/help/sites-cloud/administering/content-fragments/analysis.md) der Struktur Ihres Inhaltsfragments mithilfe des Editors
-* [Zugreifen auf Ihre Fragmente mit GraphQL, für eine Headless-Bereitstellung an Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+* [Zugreifen auf Ihre Fragmente mit GraphQL, für eine Headless-Bereitstellung an Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Oder Verwenden Ihrer Fragmente für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -212,7 +212,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Fragmentmetadaten**
 
-   * Verwendung der [Assets-Metadatenschemata](/help/assets/metadata-schemas.md)
+   * Verwendung der [Assets-Metadatenschemata](/help/assets/metadata-schemas.md).
    * Tag-Erstellung möglich:
 
       * Beim Erstellen und Bearbeiten des Fragments
@@ -248,7 +248,7 @@ Um Inhaltsfragmente zu erstellen, benötigen Sie:
 
 Um Ihre Inhaltsfragmente für die Bereitstellung von Headless-Inhalten zu verwenden, benötigen Sie außerdem:
 
-* Eine [GraphQL-Abfrage](/help/headless/graphql-api/content-fragments.md) zur Abfrage des gewünschten Inhalts.
+* Eine [GraphQL-Abfrage](/help/headless/graphql-api/content-fragments.md) zur Abfrage des gewünschten Inhalts
 * Diese Inhalte können dann zur Entwicklung Ihrer eigenen SPA für AEM verwendet werden. Weitere Informationen finden Sie in den folgenden Dokumenten:
 
    * [SPA-WKND-Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
