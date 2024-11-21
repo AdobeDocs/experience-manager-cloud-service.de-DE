@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Das Dashboard enthält einen Gesamtwert für die CDN-Leistung sowie bei Bedarf T
 
 ![CDN-Leistungs-Dashboard](assets/cdn-performance-dashboard.png)
 
-Für Details zu Ihrer CDN-Leistung sowie für Vorschläge, wie Sie diese verbessern können, klicken Sie auf **Trend anzeigen**.
+Klicken Sie für Details zu Ihrer CDN-Leistung und Vorschläge zur Verbesserung auf **Trend anzeigen**.
 
 ![Leistungs-Trend](assets/cdn-performance-trend.png)
 

@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 68%
+source-wordcount: '890'
+ht-degree: 64%
 
 ---
 
@@ -33,7 +33,7 @@ Das Cloud Manager License Dashboard bietet einfachen Zugriff auf Lösungsberecht
 >
 >Ein Benutzer mit der Rolle **Business Owner** muss angemeldet sein, um das Lizenz-Dashboard anzuzeigen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in der Kopfzeile [Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Durch diese Aktion werden die Registerkarten angezeigt.
 1. Klicken Sie auf der Registerkarte auf die Option **Lizenz**.
 
@@ -41,9 +41,9 @@ Das Cloud Manager License Dashboard bietet einfachen Zugriff auf Lösungsberecht
 
 Das Dashboard ist in drei Abschnitte unterteilt, die Ihnen Folgendes zeigen:
 
-* **Lösungen**: In diesem Abschnitt werden die von Ihnen lizenzierten Lösungen wie Sites oder Assets zusammengefasst.
-* **Add-ons**: In diesem Abschnitt werden die Add-ons zu Ihren lizenzierten Lösungen zusammengefasst, die für Sie verfügbar sind.
-* **Andere Berechtigungen**: In diesem Abschnitt wird zusammengefasst, welche Sandbox- und Entwicklungsumgebung sowie andere Berechtigungen in Ihrem Mandanten genutzt werden können.
+* **Lösungen** - Welche Lösungen haben Sie lizenziert?
+* **Add-ons** - Welche Add-ons zu Ihren lizenzierten Lösungen, die Sie verfügbar haben.
+* **Sonstige Berechtigungen** - Welche Sandbox- und Entwicklungsumgebung und andere Berechtigungen können in Ihrem Mandanten genutzt werden.
 
 In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfügbar sind und wie sie verwendet werden. Derzeit werden nur Sites- und Asset-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
 
