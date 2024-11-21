@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und Komponente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -139,7 +139,7 @@ Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von
 
 #### AEM-Inhalt {#aem-content}
 
-Der Typ AEM Inhaltskomponente ermöglicht eine AEM Inhaltsauswahl, die zum Festlegen von Inhaltsverweisen verwendet werden kann. Er bietet einen zusätzlichen Validierungstyp.
+Ein AEM Inhaltskomponententyp ermöglicht eine AEM Inhaltsauswahl, die zur Auswahl AEM Ressource verwendet werden kann. Im Gegensatz zur [-Referenzkomponente, ](#reference), die nur Assets auswählen kann, kann die AEM Inhaltskomponente auf AEM Inhalt verweisen. Er bietet einen zusätzlichen Validierungstyp.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -636,6 +636,8 @@ Ein Optionsfeldgruppen-Komponententyp ermöglicht eine einander ausschließende 
 >[!ENDTABS]
 
 #### Referenz {#reference}
+
+Ein Referenzkomponententyp ermöglicht eine AEM Asset-Auswahl, die zur Auswahl AEM Assets verwendet werden kann, auf die verwiesen werden soll. Im Gegensatz zur Inhaltskomponente [AEM ](#aem-content), die eine beliebige AEM Ressource auswählen kann, kann die Referenzkomponente nur auf Assets verweisen. Er bietet einen zusätzlichen Validierungstyp.
 
 Ein Referenz-Komponententyp ermöglicht einen Verweis auf ein anderes Datenobjekt aus dem aktuellen Objekt.
 
