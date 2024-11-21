@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der R
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 100%
+source-wordcount: '1701'
+ht-degree: 76%
 
 ---
 
@@ -23,11 +23,10 @@ Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distrib
 
 >[!NOTE]
 >
->Wenn es um Massenveröffentlichungen von Inhalten geht, verwenden Sie den [Workflow für die Veröffentlichung der Inhaltsstruktur](#publish-content-tree-workflow).
->Dieser Workflow-Schritt wurde speziell für den Cloud Service entwickelt und kann große Payloads effizient verarbeiten.
+>Wenn Sie an Massenveröffentlichungen von Inhalten interessiert sind, erstellen Sie einen Workflow mit dem [Baum-Aktivierungsarbeitsschritt](#tree-activation) , der große Payloads effizient verarbeiten kann.
 >Es wird nicht empfohlen, eigenen benutzerdefinierten Code für die Massenveröffentlichung zu erstellen.
->Wenn Sie aus irgendeinem Grund Anpassungen vornehmen müssen, können Sie diesen Workflow/Workflow-Schritt mithilfe der vorhandenen Workflow-APIs auslösen.
->Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die veröffentlicht werden müssen. Achten Sie außerdem darauf, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen hinsichtlich der Menge der Inhalte, die Sie über den Workflow für die Veröffentlichung der Inhaltsstruktur senden können.
+>Wenn Sie aus welchen Gründen auch immer anpassen müssen, können Sie einen Workflow mit diesem Schritt unter Verwendung vorhandener Workflow-APIs Trigger haben.
+>Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die veröffentlicht werden müssen. Seien Sie vorsichtig, wenn Sie nicht versuchen, eine große Anzahl von Inhalten zu veröffentlichen, falls nicht erforderlich. Es gibt jedoch keine Beschränkungen dafür, wie viel Inhalt Sie mit dem Workflow-Schritt Tree-Aktivierung über Workflows senden können.
 
 ### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
@@ -51,7 +50,84 @@ Wenn Sie die untergeordneten Elemente eines Ordners für die Option „Später v
 
 Ausführlichere Informationen zur Funktion „Veröffentlichung verwalten“ finden Sie in der [Dokumentation zu Veröffentlichungsgrundlagen](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
+### Workflow-Schritt für die Strukturaktivierung {#tree-activation}
+
+Mit dem Workflow-Schritt Tree-Aktivierung soll eine tiefe Hierarchie von Inhaltsknoten effektiv repliziert werden. Er wird automatisch angehalten, wenn die Warteschlange zu groß wird, damit andere Replikationen parallel mit minimaler Latenz fortgesetzt werden können.
+
+Erstellen Sie ein Workflow-Modell, das den Prozessschritt `TreeActivation` verwendet:
+
+1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**.
+1. Klicken Sie auf der Seite „Workflow-Modelle“ in der oberen rechten Ecke des Bildschirms auf **Erstellen**.
+1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de).
+1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**.
+1. Löschen Sie im folgenden Fenster den standardmäßig angezeigten Schritt
+1. Ziehen Sie den Prozessschritt in den aktuellen Modellfluss:
+
+   ![Prozessschritt](/help/operations/assets/processstep.png)
+
+1. Klicken Sie auf den Prozessschritt im Fluss und wählen Sie **Konfigurieren** aus, indem Sie auf das Schraubenschlüsselsymbol klicken.
+1. Wählen Sie die Registerkarte **Prozess** und wählen Sie `Publish Content Tree` aus der Dropdown-Liste aus; aktivieren Sie dann das Kontrollkästchen **Handler-Modus**
+
+   ![Aktivieren der Braumstruktur](/help/operations/assets/new-treeactivationstep.png)
+
+1. Legen Sie alle zusätzlichen Parameter im Feld **Argumente** fest. Mehrere kommagetrennte Argumente können zusammengefügt werden. Zum Beispiel:
+
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
+
+   >[!NOTE]
+   >
+   >Eine Liste der Parameter finden Sie unten im Abschnitt **Parameter**.
+
+1. Klicken Sie auf **Fertig**, um das Workflow-Modell zu speichern.
+
+**Parameter**
+
+| Name | default | Beschreibung |
+| -------------- | ------- | --------------------------------------------------------------- |
+| path |         | Stammpfad zum Starten von |
+| agentId | publish | Name des zu verwendenden Replikationsagenten |
+| chunkSize | 50 | Anzahl der Pfade, die in einer einzelnen Replikation gebündelt werden sollen |
+| maxTreeSize | 500000 | Maximale Anzahl von Knoten für einen Baum, der als klein betrachtet werden soll |
+| maxQueueSize | 10 | Maximale Anzahl von Elementen in der Replikationswarteschlange |
+| enableVersion | false | Versionierung aktivieren |
+| dryRun | false | Wenn &quot;true&quot;festgelegt ist, wird die Replikation nicht tatsächlich aufgerufen |
+| userId |         | nur für den Job. Beim Workflow wird der Workflow aufrufende Benutzer verwendet |
+| Filter |         | Liste der Namen der Knotenfilter. Siehe Unterstützten Filter unten |
+
+**Support-Filter**
+
+| Name | Beschreibung |
+| ------------- | ------------------------------------------- |
+| onlyModified | Knoten, die seit der letzten Veröffentlichung geändert wurden |
+| onlyPublished | Knoten, die zuvor veröffentlicht wurden |
+
+
+**Fortsetzung der Unterstützung**
+
+Der Workflow verarbeitet Inhalte in Teilen, von denen jeder eine Teilmenge des zu veröffentlichenden vollständigen Inhalts darstellt.  Wenn der Workflow vom System angehalten wird, wird er dort fortgesetzt, wo er abgebrochen wurde.
+
+**Überwachen des Workflow-Fortschritts**
+
+1. Navigieren Sie auf der AEM as a Cloud Service-Homepage zu **Tools - Allgemein - Aufträge**.
+1. Sehen Sie sich die Zeile an, die Ihrem Workflow entspricht. Die Spalte *progress* gibt an, wie die Replikation voranschreitet. Beispielsweise kann es 41/564 anzeigen und nach der Aktualisierung auf 52/564 aktualisiert werden.
+
+   ![Treeactivation-Fortschritt](/help/operations/assets/treeactivation-progress.png)
+
+
+1. Wenn Sie die Zeile auswählen und öffnen, erhalten Sie weitere Details zum Status der Workflow-Ausführung.
+
+   ![Details zum Treeactivation-Status](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
 ### Workflow zum Veröffentlichen der Inhaltsstruktur {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>Diese Funktion wird nicht mehr für den leistungsfähigeren Schritt zur Strukturaktivierung unterstützt, der in einen benutzerdefinierten Workflow aufgenommen werden kann.
+
+<details>
+<summary>Klicken Sie hier , um mehr über diese veraltete Funktion zu erfahren.</summary>
 
 Sie können eine Baumstruktur replizieren, indem Sie **Tools > Workflow > Modelle** auswählen und das vorkonfigurierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
 
@@ -61,7 +137,7 @@ Rufen Sie das Originalmodell nicht auf. Kopieren Sie stattdessen unbedingt zuers
 
 Wie alle Workflows kann es auch über eine API aufgerufen werden. Weitere Informationen finden Sie unter [Programmgesteuerte Interaktion mit Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=de#extending-aem).
 
-Alternativ können Sie auch ein Workflow-Modell erstellen, das den Prozessschritt `Publish Content Tree` verwendet:
+Alternativ können Sie ein Workflow-Modell erstellen, das den Prozessschritt `Publish Content Tree` verwendet.
 
 1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**.
 1. Klicken Sie auf der Seite „Workflow-Modelle“ in der oberen rechten Ecke des Bildschirms auf **Erstellen**.
@@ -117,10 +193,7 @@ Nachfolgend finden Sie Beispiele für Protokolle, die während eines Beispiel-Wo
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**Fortsetzung der Unterstützung**
-
-Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des zu veröffentlichenden vollständigen Inhalts darstellt. Wenn der Workflow vom System angehalten wird, wird er neu gestartet und der noch nicht verarbeitete Teil verarbeitet. Eine Protokollanweisung gibt an, dass der Inhalt aus einem bestimmten Pfad wieder aufgenommen wurde.
+</details>
 
 ### Replikations-API {#replication-api}
 

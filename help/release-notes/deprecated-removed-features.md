@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
+source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 96%
+source-wordcount: '2603'
+ht-degree: 97%
 
 ---
 
@@ -42,9 +42,11 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze für [Veröffentlichungen verwalten](/help/operations/replication.md#manage-publication) oder [Workflows zur Veröffentlichung von Inhaltsbäumen](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Weder die Registerkarte „Verteilung“ des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können für die Replikation von Inhaltspaketen von über 10 MB verwendet werden. Verwenden Sie stattdessen entweder die Funktion [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den [Workflow für die Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
+| [!DNL Foundation] | Weder die Registerkarte &quot;Verteilen&quot;des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können zur Replikation von Inhaltspaketen über 10 MB verwendet werden. | [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Workflow für die Strukturaktivierung Schritt 3}](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Integrationen mit Anmeldeinformationen, die aus Adobe Developer Console-Projekten generiert wurden, verlieren schrittweise die Unterstützung für Service-Konto-Anmeldedaten (JWT). Neue Service-Konto-Anmeldedaten (JWT) können ab dem 1. Mai 2024 nicht mehr in der Adobe Developer Console erstellt werden. Vorhandene Service-Konto-Anmeldedaten (JWT) können jedoch noch bis zum 1. Januar 2025 für bereits konfigurierte Integrationen verwendet werden. Ab diesem Zeitpunkt funktionieren die vorhandenen Service-Konto-Anmeldedaten (JWT) nicht mehr und Kundinnen und Kunden müssen zu OAuth-Server-zu-Server-Anmeldedaten migrieren. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
+| [!DNL Foundation] | Publish Content Tree Workflow und der zugehörige Workflow-Schritt Publish-Inhaltsstruktur , der für die Replikation von Inhaltshierarchien verwendet wurde. | Verwenden Sie den Schritt [Workflow für die Strukturaktivierung](/help/operations/replication.md#tree-activation) , der leistungsfähiger ist. |
+
 
 ## Entfernte Funktionen {#removed-features}
 
@@ -499,16 +501,16 @@ Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementin
       * Typ: boolean
 +++
 
-## Java Runtime Update auf Version 21 {#java-runtime-update-21}
+## Aktualisierung von Java Runtime auf Version 21 {#java-runtime-update-21}
 
-AEM as a Cloud Service wechselt zur Java 21-Laufzeit. Um die Kompatibilität zu gewährleisten, müssen folgende Anpassungen vorgenommen werden:
+AEM as a Cloud Service wechselt zu Java Runtime 21. Um die Kompatibilität zu gewährleisten, müssen folgende Anpassungen vorgenommen werden:
 
 ### Mindestversion von org.objectweb.asm {#org.objectweb.asm}
 
-Aktualisieren Sie die Verwendung von org.objectweb.asm auf Version 9.5 oder höher, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
+Aktualisieren Sie org.objectweb.asm auf Version 9.5 oder höher, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
 
 ### Mindestversion von org.apache.groovy {#org.apache.groovy}
 
-Aktualisieren Sie die Verwendung von org.apache.groovy auf Version 4.0.22 oder höher, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
+Aktualisieren Sie org.apache.groovy auf Version 4.0.22 oder höher, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
 
-Dieses Bundle kann indirekt durch Hinzufügen von Drittanbieterabhängigkeiten wie der AEM Groovy Console eingeschlossen werden.
+Dieses Paket kann indirekt durch Hinzufügen von Abhängigkeiten von Dritten wie der AEM Groovy Console eingeschlossen werden.
