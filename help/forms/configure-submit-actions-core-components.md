@@ -5,10 +5,10 @@ keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 100%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=de) |
-| AEM as a Cloud Service | Dieser Artikel |
+| AEM as a Cloud Service (Foundation-Komponenten) | [Hier klicken](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (Kernkomponenten) | Dieser Artikel |
 
 Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Eine Übermittlungsaktion wird ausgelöst, wenn jemand in einem adaptiven Formular auf die Schaltfläche **[!UICONTROL Senden]** klickt. Forms as a Cloud Service bietet eine Reihe vorkonfigurierter Übermittlungsaktionen für adaptive Formulare, die auf Kernkomponenten basieren.  Diese vorkonfigurierten Übermittlungsaktionen ermöglichen Ihnen Folgendes:
 
@@ -68,11 +69,13 @@ Detaillierte Informationen zur folgenden Übermittlungsaktion finden Sie unter:
 * [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
 * [Aufrufen eines AEM-Workflows](/help/forms/configure-submit-action-workflow.md)
+* [An Marketo-Umgebung übermitteln](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 Sie können ein adaptives Formular auch an andere Speicherkonfigurationen senden:
 
 * [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/aem-forms-salesforce-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Verbinden eines adaptiven Formulars mit Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 Sie können [die standardmäßigen Übermittlungsaktionen anpassen](custom-submit-action-form.md). Darüber hinaus können Sie die Übermittlungsaktionen an bestimmte Unternehmensanforderungen anpassen.
 

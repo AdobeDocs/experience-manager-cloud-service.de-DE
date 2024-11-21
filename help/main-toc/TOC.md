@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
-ht-degree: 99%
+source-wordcount: '5873'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Versionshinweise zu AEMaaCS-Funktionen {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Versionshinweise für 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [Versionshinweise für 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [Versionshinweise für 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [Versionshinweise für 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -551,7 +552,7 @@ ht-degree: 99%
       + [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
       + [Varianten – Erstellen von Fragmentinhalten](/help/assets/content-fragments/content-fragments-variations.md)
       + [Zugehörige Inhalte von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-assoc-content.md)
-      + [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md)
+      + [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md)
       + [Inhaltsfragmente – Überlegungen zum Löschen](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
@@ -719,6 +720,11 @@ ht-degree: 99%
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
          + [Entwerfen eines XML-Schemas für ein adaptives Formular](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + Integrieren von Adaptive Forms mit Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Integrieren von Adobe Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Konfigurieren eines neuen Formulars zur Integration mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Adobe Marketo Engage-Datenquelle für vorhandene adaptive Forms konfigurieren](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Konfigurieren der Sendeaktion auf Marketo Engage für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Adaptive Formulare {#adaptive-forms-authoring}
       + [Erstellen eines adaptiven Formulars](/help/forms/create-an-adaptive-form.md)
       + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 99%
             + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Erstellen einer adaptiven Formularvorlage basierend auf Kernkomponenten](/help/forms/template-editor-core-components.md)
+            + [Erstellen eines adaptiven Formulars (Kernkomponenten) basierend auf XFA-Formularvorlagen](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
             + [Verwenden einer maschinellen oder menschlichen Übersetzung, um ein adaptives Formular zu übersetzen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 99%
                + [Operator- und Ereignistypen, die im Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular verfügbar sind](/help/forms/rule-editor-core-components-events-operators.md)
                + [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
                + [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
+               + [Aufrufen von Dienstverbesserungen im Visual Rule Editor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren{#create-and-use-custom-function-core-component}
                + [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
                + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)

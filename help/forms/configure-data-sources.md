@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 100%
@@ -329,7 +329,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 ## Nächste Schritte {#next-steps}
 
 Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell (FDM) erstellen oder, falls Sie bereits ein Formulardatenmodell (FDM) ohne eine Datenquelle erstellt haben, können Sie es den schon konfigurierten Datenquellen zuordnen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](create-form-data-models.md).
-
 
 <!--
 

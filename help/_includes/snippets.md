@@ -1,8 +1,8 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 92%
+source-wordcount: '1323'
+ht-degree: 88%
 
 ---
 # Snippets {#snippets}
@@ -53,6 +53,7 @@ ht-degree: 92%
 * [An Workfront Fusion senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/aem-forms-salesforce-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Verbinden eines adaptiven Formulars mit Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Erstellen einer benutzerdefinierten Sendeaktion](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Siehe auch {#see-more-forms-eds}
@@ -131,6 +132,8 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
 * [Verschiedene Anwendungsfälle des Regeleditors für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
 * [Unterschiede in verschiedenen Editionen des Regeleditors](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
+* [Aufrufen von Dienstverbesserungen im Visual Rule Editor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
 * [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
 * [Scope-Objekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Speichern von Formularen als Entwürfe](/help/forms/save-core-component-based-form-as-draft.md)
 * [Hinzufügen von Links zu einer Sites-Seite](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [Integrieren von Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Konfigurieren eines neuen Formulars zur Integration mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Marketo Engage-Datenquelle für vorhandene adaptive Forms konfigurieren](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Konfigurieren der Sendeaktion auf Marketo Engage für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#allowlist-frontend-pipeline}
 

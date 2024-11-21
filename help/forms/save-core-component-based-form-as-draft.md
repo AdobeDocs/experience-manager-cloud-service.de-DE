@@ -4,27 +4,27 @@ description: Erfahren Sie, wie Sie Kernkomponenten-basierte adaptive Formulare a
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 8%
+source-wordcount: '1387'
+ht-degree: 16%
 
 ---
 
 
 # Speichern von Formularen als Entwürfe und Auflisten dieser Formulare auf der Sites-Seite
 
-<span class="preview"> Dieser Artikel enthält Informationen zur Funktion **Automatisches Speichern**, einer Vorabveröffentlichungsfunktion. Die Vorabveröffentlichungsfunktion ist nur über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugänglich.</span>
+<span class="preview"> Dieser Artikel enthält Inhalte zur Funktion **Entwürfe**, einer Vorabveröffentlichungsfunktion. Die Vorabveröffentlichungsfunktion ist nur über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugänglich.</span>
 
 Betrachten Sie einen Benutzer, der mit dem Ausfüllen eines Formulars beginnt, aber anhalten und später zurückkehren muss. AEM bietet die Option &quot;`save-as-draft`&quot;, mit der der Benutzer das Formular als Entwurf speichern kann, der später fertig gestellt werden kann. Um dies zu erleichtern, stellt AEM die Komponente **Entwürfe und Übermittlungen** Formularportal standardmäßig bereit, die Entwürfe und Übermittlungen auf AEM Sites-Seiten anzeigt. Die Komponente listet Formulare auf, die als Entwürfe zum späteren Abschluss gespeichert wurden, sowie die gesendeten Formulare. Nur angemeldete Benutzer können ihre Entwürfe bearbeiten oder die übermittelten Formulare anzeigen. Wenn jedoch ein anonymer Benutzer mithilfe der Komponente **Search &amp; Lister** durch die Liste der Formulare navigiert und ein Formular als Entwurf speichert, wird dieser Entwurf nicht von der Komponente **Entwürfe &amp; Sendungen** aufgeführt. Um Entwürfe und Übermittlungen anzuzeigen, müssen Benutzer zum Zeitpunkt der Formularübermittlung angemeldet sein.
 
 ![Symbol für Entwürfe](assets/drafts-component.png)
 
-## Anforderungen
+## Voraussetzungen
 
 * [Aktivieren Sie die adaptiven Forms-Kernkomponenten für Ihre Umgebung.](/help/forms/enable-adaptive-forms-core-components.md)
 
-  Nach der Bereitstellung der neuesten Kernkomponenten in Ihrer Umgebung können Sie auf die Forms Portal-Komponenten in Ihrer Authoring-Umgebung zugreifen.
+  Nach der Bereitstellung der neuesten Kernkomponenten in Ihrer Umgebung können Sie auf die Formularportal-Komponenten in Ihrer Authoring-Umgebung zugreifen.
 
 * [Konfigurieren der Forms Portal-Komponente &quot;Azure Storage and Unified Storage Connector for Drafts &amp; Submissions](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
@@ -76,24 +76,24 @@ Nachdem Sie Azure Storage und Unified Storage Connector zum Speichern der Entwü
 
 Sie können vordefinierte Forms Portal-Komponenten verwenden, um Entwürfe und Übermittlungen auf der Sites-Seite aufzulisten. Führen Sie die folgenden Schritte aus, um die Portalkomponente **Entwürfe und Übermittlungen** hinzuzufügen:
 
-1. Öffnen Sie die AEM Sites-Seite im Modus **Bearbeiten** .
-1. Navigieren Sie zu **[!UICONTROL Seiteninformationen]** => **[!UICONTROL Vorlage bearbeiten]**
-   ![Vorlagenrichtlinie bearbeiten](/help/forms/assets/save-form-as-draft-edit-template.png)
+1. Öffnen Sie die AEM Sites-Seite in einem **Bearbeitungsmodus**.
+1. Navigieren Sie zu **[!UICONTROL Seiteninformationen]** > **[!UICONTROL Vorlage bearbeiten]**
+   ![Richtlinie zum Bearbeiten von Vorlagen](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Klicken Sie auf das Kontrollkästchen **[!UICONTROL Richtlinie]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Entwürfe &amp; Sendungen]** unter dem AEM **[Projektnamen des Archetyps] - Forms und Kommunikationsportal**.
 
-   ![Richtlinienauswahl](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![Auswählen von Richtlinien](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 1. Öffnen Sie jetzt die AEM Sites-Seite im Authoring-Modus erneut.
-1. Suchen Sie den Abschnitt im Seiteneditor, in dem Sie die Forms Portal-Komponente hinzufügen können.
-1. Klicken Sie auf das Symbol **Hinzufügen** . Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten anzeigt.
+1. Suchen Sie im Seiteneditor nach dem Abschnitt, in dem Sie die Formularportal-Komponente hinzufügen können.
+1. Klicken Sie auf das Symbol **Hinzufügen**. Das Symbol ist ein Pluszeichen (+). Es steht für die Option zum Hinzufügen neuer Komponenten.
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt, in dem verschiedene Komponenten zum Einfügen angezeigt werden.
 
    >[!NOTE]
    >
-   > Alternativ können Sie die Komponente auch per Drag-and-Drop verschieben.
+   > Alternativ können Sie die Komponente auch per Drag-and-Drop hinzufügen.
 
 1. Durchsuchen Sie die verfügbaren Komponenten im Dialogfeld und wählen Sie die gewünschte Komponente aus der Liste aus. Wählen Sie beispielsweise die Komponente **Entwürfe &amp; Übermittlungen** aus der Liste aus, um die Komponente **Entwürfe &amp; Übermittlungen** Forms Portal hinzuzufügen.
 
@@ -137,7 +137,7 @@ Um ein Formular als Entwurf zu speichern, erstellen Sie eine Regel **Formular sp
 
 Wenn Sie ein adaptives Formular in der Vorschau anzeigen, ausfüllen und auf die Schaltfläche **Formular speichern** klicken, wird das Formular als Entwurf gespeichert.
 
-### Automatische Speicherung
+### Entwürfe
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ Sie können auch ein adaptives Formular so konfigurieren, dass es basierend auf 
 
 1. Öffnen Sie in der Autoreninstanz ein adaptives Formular im Bearbeitungsmodus.
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol &quot;Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg)&quot;und öffnen Sie die Registerkarte **[!UICONTROL Automatisches Speichern]**.
+1. Klicken Sie auf das Symbol &quot;Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg)&quot;und öffnen Sie die Registerkarte **[!UICONTROL Entwürfe]**.
 
    ![Automatisches Speichern](/help/forms/assets/auto-save.png)
 
-1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Aktivieren]** , um das automatische Speichern des Formulars zu aktivieren.
-1. Konfigurieren Sie **[!UICONTROL Trigger]** als **Zeit basiert**, um das Formular <!--based on the occurrence of an event or--> nach einem bestimmten Zeitintervall automatisch zu speichern.
-1. Geben Sie das Zeitintervall in **[!UICONTROL Automatisches Speichern in diesem Intervall (in Sekunden)]** an, um die Dauer festzulegen, in der das automatische Speichern des Formulars in dem definierten Intervall Trigger wird.
+1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Entwürfe automatisch speichern]** , um das automatische Speichern des Formulars als Entwürfe zu aktivieren.
+1. Konfigurieren Sie **[!UICONTROL Voreinstellung speichern]** als **Entwürfe in regelmäßigen Abständen speichern**, um das Formular nach einem bestimmten Zeitintervall automatisch zu speichern <!--based on the occurrence of an event or-->.
+1. Geben Sie das Zeitintervall in der Intervallfrequenz **[!UICONTROL Speichern (Sekunden)]** an, um die Dauer festzulegen, für die das automatische Speichern des Formulars in dem definierten Intervall Trigger wird.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 ## Entwürfe/gesendete Formulare mithilfe der Komponente &quot;Drafts &amp; Submissions&quot;auf der Seite &quot;Sites&quot;anzeigen

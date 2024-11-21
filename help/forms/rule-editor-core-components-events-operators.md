@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 50%
+source-wordcount: '2148'
+ht-degree: 58%
 
 ---
 
@@ -31,7 +31,7 @@ Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit de
 * **Beginnt mit**
 * **Endet mit**
 * **Enthält**
-* **enthält nicht**
+* **Enthält nicht**
 * **Ist leer**
 * **Ist nicht leer**
 * **Hat ausgewählt:** Gibt „true“ zurück, wenn der Benutzer eine bestimmte Option für ein Kontrollkästchen, ein Dropdown-Element oder ein Optionsfeld auswählt.
@@ -85,7 +85,7 @@ Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ aus
 >
 > Wenn der Regeltyp nur einstufige then-else -Anweisungen unterstützt.
 
-##### Zulässige mehrere Felder in [!UICONTROL When] {#allowed-multiple-fields}
+##### Felder mit Mehrfachauswahl in [!UICONTROL Wenn] {#allowed-multiple-fields}
 
 In der Bedingung **Wenn** haben Sie die Möglichkeit, neben dem Feld, auf das die Regel angewendet wird, weitere Felder hinzuzufügen.
 
@@ -105,12 +105,12 @@ Aktion 1: Objekt A
 
 _
 
-![ Zulässige mehrere Felder in When](/help/forms/assets/allowed-multiple-field-when.png)
+![Felder mit Mehrfachauswahl in „Wenn“](/help/forms/assets/allowed-multiple-field-when.png)
 
 **Überlegungen zur Verwendung von &quot;Zulässige mehrere Felder&quot;in der Funktion &quot;Wenn Bedingung&quot;**
 
 * Stellen Sie sicher, dass die [Kernkomponente auf Version 3.0.14 oder höher](https://github.com/adobe/aem-core-forms-components) eingestellt ist, um diese Funktion im Regeleditor zu verwenden.
-* Wenn Regeln auf verschiedene Felder in der Wenn-Bedingung angewendet werden, wird die Regel auch dann Trigger, wenn nur eines dieser Felder geändert wird.
+* Falls Regeln auf verschiedene Felder in der Wenn-Bedingung angewendet werden, wird die Regel auch dann ausgelöst, wenn nur eines dieser Felder geändert wird.
 
 
 <!--
@@ -130,12 +130,12 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Wenn bei der Funktion Zulässige mehrere Felder in der Bedingung Wenn Probleme auftreten, führen Sie die Schritte zur Fehlerbehebung wie folgt aus:
+Wenn bei Feldern mit Mehrfachauswahl in der Wenn-Bedingung Probleme auftreten, führen Sie die Schritte zur Fehlerbehebung wie folgt aus:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Öffnen Sie den Inhaltsbrowser und wählen Sie die Komponente **[!UICONTROL Guide Container]** des adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
-1. Klicken Sie auf Fertig und speichern Sie das Dialogfeld erneut.
+1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
+1. Klicken Sie auf „Fertig“ und speichern Sie das Dialogfeld erneut.
 
 **[!UICONTROL Ausblenden]**: Blendet das angegebene Objekt aus.
 
@@ -145,7 +145,13 @@ Wenn bei der Funktion Zulässige mehrere Felder in der Bedingung Wenn Probleme a
 
 **[!UICONTROL Deaktivieren]**: Deaktiviert das angegebene Objekt.
 
-**[!UICONTROL Dienst aufrufen]** Ruft einen Dienst auf, der in einem Formulardatenmodell (FDM) konfiguriert ist. Wenn Sie den Vorgang „Dienst aufrufen“ wählen, wird ein Feld angezeigt. Beim Antippen des Felds zeigt es sämtliche Dienste an, die in allen Formulardatenmodellen (FDM) in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Service werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können. Siehe die Beispielregel zum Aufrufen von Formulardatenmodell (FDM)-Diensten.
+**[!UICONTROL Dienst aufrufen]** Ruft einen Dienst auf, der in einem Formulardatenmodell (FDM) konfiguriert ist. Wenn Sie den Vorgang „Dienst aufrufen“ wählen, wird ein Feld angezeigt. Beim Antippen des Felds zeigt es sämtliche Dienste an, die in allen Formulardatenmodellen (FDM) in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei der Auswahl eines Formulardatenmodelldienstes werden weitere Felder angezeigt, in denen Sie Formularobjekte Eingabeparametern für den angegebenen Dienst zuordnen können. Sie können die Ausgabeparameter über die Ereignis-Payload-Option für den angegebenen Dienst zuordnen. Sie können auch mithilfe des Regeleditors Regeln für die Verarbeitung von Erfolgs- und Fehlerantworten des Vorgangs &quot;Invoke Service&quot;erstellen.
+
+>[!NOTE]
+>
+> Um mehr über den Aufrufdienst zu erfahren, klicken Sie hier [.](/help/forms/invoke-service-enhancements-rule-editor.md)
+
+Siehe die Beispielregel zum Aufrufen von Formulardatenmodell (FDM)-Diensten.
 
 Zusätzlich zum Formulardatenmodelldienst können Sie eine direkte WSDL-URL angeben, um einen Webdienst aufzurufen. Ein Formulardatenmodell-Service hat jedoch viele Vorteile und stellt den empfohlenen Ansatz zum Aufrufen eines Service dar.
 
@@ -157,26 +163,26 @@ Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM
 
 Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft auf einen der folgenden Werte festlegen:
 * visible (Boolescher Wert)
-* label.value (String)
-* label.visible (Boolesch)
-* description (String)
+* label.value (Zeichenfolge)
+* label.visible (Boolescher Wert)
+* description (Zeichenfolge)
 * aktiviert (Boolescher Wert)
-* readOnly (Boolesch)
-* required (Boolesch)
-* screenReaderText (String)
+* readOnly (Boolescher Wert)
+* required (Boolescher Wert)
+* screenReaderText (Zeichenfolge)
 * valid (Boolescher Wert)
 * errorMessage (Zeichenfolge)
-* default (Zahl, Zeichenfolge, Datum)
-* enumNames (String[])
+* value (Zahl, Zeichenfolge, Datum)
+* enumNames (Zeichenfolge[])
 * chartType (Zeichenfolge)
 
 So können Sie beispielsweise Regeln definieren, die das Textfeld anzeigen, wenn auf eine Schaltfläche geklickt wird. Sie können eine benutzerdefinierte Funktion, ein Formularobjekt, eine Objekteigenschaft oder eine Dienstausgabe verwenden, um eine Regel zu definieren.
 
 ![Eigenschaft festlegen](assets/set_property_rule_new.png)
 
-Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, wählen Sie **[!UICONTROL Funktionsausgabe]** in der Dropdown-Liste aus und ziehen Sie eine benutzerdefinierte Funktion mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Funktionen]**. Wenn die Bedingungsaktion erfüllt ist, wird das Texteingabefeld angezeigt.
+Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, wählen Sie **[!UICONTROL Funktionsausgabe]** in der Dropdown-Liste aus und ziehen Sie eine benutzerdefinierte Funktion mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Funktionen]**. Wenn die Aktion der Bedingung erfüllt ist, wird das Texteingabefeld angezeigt.
 
-Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie **[!UICONTROL Formularobjekt]** in der Dropdown-Liste aus und ziehen Sie ein Formularobjekt mittels Drag-and-Drop aus der Registerkarte **[!UICONTROL Formularobjekte]**. Wenn die Bedingungsaktion erfüllt ist, wird das Texteingabefeld im adaptiven Formular angezeigt.
+Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie **[!UICONTROL Formularobjekt]** in der Dropdown-Liste aus und ziehen Sie ein Formularobjekt per Drag-and-Drop aus der Registerkarte **[!UICONTROL Formularobjekte]**. Wenn die Aktion der Bedingung erfüllt ist, wird das Texteingabefeld im adaptiven Formular angezeigt.
 
 Mit einer auf einer Objekteigenschaft basierenden Regel Eigenschaft festlegen können Sie das Texteingabefeld in einem adaptiven Formular basierend auf einer anderen Objekteigenschaft im adaptiven Formular sichtbar machen.
 
@@ -188,11 +194,11 @@ Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Ko
 
 **[!UICONTROL Fokus festlegen]**: Legt den Fokus auf das angegebene Objekt.
 
-**[!UICONTROL Formular senden]** Sendet das Formular.
+**[!UICONTROL Formular senden]**: Sendet das Formular.
 
 **[!UICONTROL Zurücksetzen]** Setzt das Formular oder das angegebene Objekt zurück.
 
-**[!UICONTROL Validieren]** Prüft das Formular oder das angegebene Objekt.
+**[!UICONTROL Validieren]** Überprüft das Formular oder das angegebene Objekt.
 
 **[!UICONTROL Instanz hinzufügen]**: Fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
@@ -202,9 +208,9 @@ Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Ko
 
 **[!UICONTROL Navigieren Sie zu]** Navigieren Sie zu anderen adaptiven Forms, anderen Assets wie Bildern oder Dokumentfragmenten oder einer externen URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Dispatch-Ereignis]** : Trigger die spezifischen Aktionen oder Verhaltensweisen, die auf vordefinierten Bedingungen oder Ereignissen basieren.
+**[!UICONTROL Dispatch-Ereignis]**: Löst die spezifischen Aktionen oder Verhaltensweisen aus, die auf vordefinierten Bedingungen oder Ereignissen basieren.
 
-#### [!UICONTROL Wert festlegen] {#set-value-of}
+#### [!UICONTROL Wert festlegen von] {#set-value-of}
 
 Regeln vom Typ **[!UICONTROL Wert festlegen]** ermöglichen es, den Wert eines Formularobjekts abhängig davon festzulegen, ob die angegebene Bedingung erfüllt ist oder nicht. Der Wert kann auf den Wert eines anderen Objekts, eine Literal-Zeichenfolge, einen von einem mathematischen Ausdruck oder einer Funktion abgeleiteten Wert, den Wert einer Eigenschaft eines anderen Objekts oder die Ausgabe eines Formulardatenmodell-Service festgelegt werden. In ähnlicher Weise können Sie auf eine Bedingung bei Komponenten, Zeichenfolgen, Eigenschaften oder Werten, die von Funktionen oder mathematischen Ausdrücken abgeleitet wurden, prüfen.
 

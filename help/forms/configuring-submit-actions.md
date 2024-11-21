@@ -4,9 +4,9 @@ description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. 
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3929'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 100%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=de) |
-| AEM as a Cloud Service | Dieser Artikel |
+| AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service (Foundation-Komponenten) | Dieser Artikel |
 
 **Gilt für**: ✔️ Foundation-Komponenten für adaptive Formulare. ❌ [Kernkomponenten für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md). Adobe empfiehlt die Verwendung von Kernkomponenten, um [adaptive Formulare zu einer AEM Sites-Seite hinzuzufügen](create-or-add-an-adaptive-form-to-aem-sites-page.md) oder [eigenständige adaptive Formulare zu erstellen](creating-adaptive-form-core-components.md).
 
@@ -31,6 +32,7 @@ Eine Übermittlungsaktion wird ausgelöst, wenn Benutzende in einem adaptiven Fo
 * [Senden an Azure Blob-Speicher](#azure-blob-storage)
 * [An Power Automate senden](#microsoft-power-automate)
 * [An Workfront Fusion senden](#workfront-fusion)
+* [An Marketo Engage senden](/help/forms/integrate-form-to-marketo-engage.md)
 
 Sie können die [standardmäßige Übermittlungsaktion erweitern](custom-submit-action-form.md) und dadurch eine eigene Übermittlungsaktion erstellen.
 

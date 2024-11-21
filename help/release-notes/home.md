@@ -4,10 +4,10 @@ description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Ser
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 45d0d96e686d4e6c4d6cf96a8897533701665c64
+source-git-commit: e8a8542c9e767113d01491c6d328c34fac8a1dbd
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2024.10.0 |
+| Version | 2024.11.0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 
@@ -27,7 +27,7 @@ Mit dem kontinuierlichen Versionsmodell in [!DNL Adobe Experience Manager] as a 
 * [Funktionsveröffentlichungen](/help/release-notes/release-notes-cloud/release-notes-current.md) erfolgen in einem vorhersehbaren monatlichen Rhythmus und konzentrieren sich auf neue Funktionen und Produktinnovationen.
 * [Wartungsversionen](/help/release-notes/maintenance/latest.md) werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
 
-Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer bevorstehenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig vorbereiten/schulen. Wenn Sie über ein AEM-Add-on verfügen, z. B. Forms, können Sie sicherstellen, dass es auch aktualisiert wird, indem Sie die Lösung in den [Programmeinstellungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) auswählen.
+Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzenden rechtzeitig im Voraus schulen/vorbereiten. Wenn Sie über ein AEM-Add-on verfügen, z. B. Forms, können Sie sicherstellen, dass es auch aktualisiert wird, indem Sie die Lösung in den [Programmeinstellungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) auswählen.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager
 
 So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 
-1. Markieren Sie in Ihrem Kalender: Überprüfen Sie die wichtigen Daten für monatliche Versionen auf der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) und markieren Sie sie in Ihrem Kalender, um sich auf die wichtigsten Aktivitäten vorzubereiten und sich auf die Veröffentlichung vorzubereiten.
+1. Markieren Sie in Ihrem Kalender: Überprüfen Sie die wichtigen Daten für monatliche Versionen auf der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) und markieren Sie sie in Ihrem Kalender, um sich auf die wichtigsten Aktivitäten vorzubereiten und sich auf die Veröffentlichung vorzubereiten.
 1. Lesen Sie die Versionshinweise: Lesen Sie die [aktuellen Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md), um sich mit den Funktionen von Veröffentlichung und Vorabveröffentlichung vertraut zu machen.
 1. Greifen Sie auf neue Funktionen zu und probieren Sie diese aus: Aktivieren Sie den [Kanal Vorabversion](/help/release-notes/prerelease.md) in Ihren produktionsfremden Umgebungen und versuchen Sie, die Funktionen in Ihren benutzerdefinierten Umgebungen zu bewerten.
 1. Schulen Sie Ihre Benutzer: Verwenden Sie Dokumentations- und Experience League-Ressourcen, um Benutzer mit den neuesten Funktionen vertraut zu machen.
