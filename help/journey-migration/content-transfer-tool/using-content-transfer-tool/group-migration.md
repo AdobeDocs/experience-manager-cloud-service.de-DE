@@ -3,9 +3,9 @@ title: Gruppenmigration
 description: Überblick über die Gruppenmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
-workflow-type: ht
-source-wordcount: '1447'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
