@@ -2,7 +2,7 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 98%
@@ -18,7 +18,7 @@ ht-degree: 98%
 >id="configure_content_hub"
 >title="Konfigurieren der Benutzeroberfläche von Content Hub"
 >abstract="Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von Content Hub verfügbaren Optionen konfigurieren. Abhängig von den Konfigurationsoptionen, die von den Admins ausgewählt wurden, können Benutzende von Content Hub Felder in Content Hub anzeigen. Zu den Konfigurationsoptionen gehören Metadaten beim Importieren von Assets, Filter, Asset-Eigenschaften, Metadaten bei der Suche nach Assets, personalisiertes Branding und benutzerspezifische Links."
->additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="Video ansehen"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="Video ansehen"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Konfigurieren von Assets in Content Hub](assets/configure-assets.png)
