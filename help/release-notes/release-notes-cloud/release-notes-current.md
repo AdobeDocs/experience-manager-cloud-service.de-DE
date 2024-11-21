@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 42%
+source-wordcount: '1778'
+ht-degree: 41%
 
 ---
 
@@ -51,6 +51,10 @@ Verwandeln Sie schnell eine beliebige Edge Delivery-Seite in eine Seitenvorlage.
 **[!DNL Edge Delivery Services]CSV-Importtool für die Veröffentlichung über eine AEM-Instanz**
 
 Verwalten Sie Ihre Edge Delivery-Tabellenkalkulationsdaten (z. B. Umleitungen) effizient in Ihrem bevorzugten Tabellenkalkulationstool und laden Sie sie über das neue CSV-Importtool in AEM hoch. [Weitere Informationen](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+
+### Vorabversionsfunktionen in AEM Sites
+
+Verbesserte Referenzierung von Inhaltsfragmenten mit eindeutigen ID-basierten Referenzen, wodurch stabile Links sichergestellt werden, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden. Dadurch müssen keine Aktualisierungen mehr vorgenommen oder erneut veröffentlicht werden. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn in Inhaltsfragmenten auf Seiten verwiesen wird, sollte diese Funktion nicht verwendet werden.
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
