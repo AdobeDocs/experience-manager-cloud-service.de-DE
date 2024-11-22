@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 41%
@@ -54,7 +54,7 @@ Verwalten Sie Ihre Edge Delivery-Tabellenkalkulationsdaten (z. B. Umleitungen) e
 
 ### Vorabversionsfunktionen in AEM Sites
 
-Verbesserte Referenzierung von Inhaltsfragmenten mit eindeutigen ID-basierten Referenzen, wodurch stabile Links sichergestellt werden, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden. Dadurch müssen keine Aktualisierungen mehr vorgenommen oder erneut veröffentlicht werden. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn in Inhaltsfragmenten auf Seiten verwiesen wird, sollte diese Funktion nicht verwendet werden.
+Verbesserte [Referenzierung von Inhaltsfragmenten mit eindeutigen ID-basierten Referenzen](/help/headless/graphql-api/uuid-reference-upgrade.md), wodurch stabile Links sichergestellt werden, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden - sodass Aktualisierungen oder erneute Veröffentlichung nicht mehr erforderlich sind. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn in Inhaltsfragmenten auf Seiten verwiesen wird, sollte diese Funktion nicht verwendet werden.
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
