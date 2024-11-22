@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 96%
@@ -1142,7 +1142,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
       * `_path`: Der Pfad zu Ihrem Inhaltsfragment im Repository
          * Siehe [Beispielabfrage – ein Einzelstadtfragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
-      * `_id_` : die UUID für Ihr Inhaltsfragment im Repository
+      * `_id` : die UUID für Ihr Inhaltsfragment im Repository
 
          * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit UUID-Referenzen](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Siehe Beispielabfrage für Inhaltsfragmente nach UUID-Referenz](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
