@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
-source-wordcount: '5883'
+source-wordcount: '5886'
 ht-degree: 97%
 
 ---
@@ -1100,6 +1100,7 @@ ht-degree: 97%
          + [Erfahren Sie mehr über die Definition von Metadaten und Tagging für Inhaltsfragmente](/help/journey-headless/author/metadata-tagging.md)
 + Generative KI {#generative-ai}
    + [Varianten generieren](/help/generative-ai/generate-variations.md)
+   + [Assistenzkraft (limitierte Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementieren {#implementing}
    + [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)
    + CQ Cloud Manager {#using-cloud-manager}
@@ -1123,7 +1124,7 @@ ht-degree: 97%
          + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Hinzufügen eines Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Hinzufügen eines privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Hinzufügen eines externen Repositorys (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Externes Repository hinzufügen (eingeschränkte Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

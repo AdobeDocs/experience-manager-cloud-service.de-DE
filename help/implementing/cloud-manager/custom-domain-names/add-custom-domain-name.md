@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
-workflow-type: ht
-source-wordcount: '999'
-ht-degree: 100%
+source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 94%
 
 ---
 
@@ -52,6 +52,11 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 1. Geben Sie im Dialogfeld **Domain hinzufügen** in das Feld **Domain-Name** den von Ihnen verwendeten benutzerdefinierten Domain-Namen ein.
 Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://` noch Leerzeichen einzuschließen.
 
+   >[!NOTE]
+   >
+   >Wenn Sie sowohl die `www`- als auch die `non-www`-Version einer Domäne benötigen, müssen Sie sie separat hinzufügen. Zum Beispiel `example.com` und `www.example.com`.
+   <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
+
 1. Klicken Sie auf **Erstellen**.
 
 1. Wählen Sie im Dialogfeld **Domain verifizieren** aus der Dropdown-Liste **Welchen Zertifikatstyp möchten Sie mit dieser Domain verwenden?** eine der folgenden Optionen aus:
@@ -70,7 +75,7 @@ Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://`
 
    >[!NOTE]
    >
-   >Wenn Sie Ihr eigenes kundenseitig verwaltetes (OV/EV oder DV) SSL-Zertifikat verwenden und planen, einen kundenseitig verwalteten CDN-***Anbieter*** zu verwenden, brauchen Sie kein SSL-Zertifikat hinzuzufügen und können direkt zu [CDN-Konfiguration hinzufügen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) gehen, sobald Sie bereit sind.
+   >Wenn Sie Ihr eigenes kundenverwaltetes SSL-Zertifikat (OV/EV oder DV) verwenden und ein kundenverwaltetes CDN ***provider*** verwenden möchten, können Sie das Hinzufügen eines SSL-Zertifikats überspringen. Gehen Sie stattdessen direkt zu [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) , sobald sie fertig ist.
 
 
 ### Schritte bei verwalteten Adobe-Zertifikaten {#adobe-managed-cert-steps}
