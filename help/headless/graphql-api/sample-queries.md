@@ -4,16 +4,22 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '1940'
+ht-degree: 94%
 
 ---
 
 # Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
+
+>[!IMPORTANT]
+>
+>Verschiedene Funktionen der GraphQL-API für die Verwendung mit Inhaltsfragmenten sind über das Early Adopter-Programm verfügbar.
+>
+>Informationen zum Status und zur Anwendung bei Interesse finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ Die folgende Abfrage gibt alle `attachments` zurück – ein bestimmtes Feld (Un
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### Beispielabfragen für ein Inhaltsfragment eines bestimmten Modells mit UUID-Referenzen {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+Diese Abfragen untersuchen:
+
+* die UUID für ein Inhaltsfragment und für referenzierte Inhaltsfragmente oder Assets
+* das Ergebnis wird über die JSON-Eigenschaft `_id` zurückgegeben
+
+#### Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mithilfe einer UUID-Referenz {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+Die folgende Abfrage gibt alle Inhaltsverweise mit `_id` und `_path` zurück:
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### Beispielabfrage für Inhaltsfragmente nach UUID-Referenz {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+Die folgende Abfrage gibt alle Inhaltsverweise zurück, die sich auf ein bestimmtes `_id` beziehen:
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }
