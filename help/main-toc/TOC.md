@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
+source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5883'
 ht-degree: 97%
 
 ---
@@ -750,7 +750,7 @@ ht-degree: 97%
             + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
             + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Verwenden von hCAPTCHA in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Verwenden von hCAPTCHA in Kernkomponenten eines adaptiven Formulars](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -797,7 +797,7 @@ ht-degree: 97%
          + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
             + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
             + [Verwenden von hCaptcha in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Verwenden von Turnstile in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Verwenden von Turnstile CAPTCHA in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Verwenden der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
             + [Anwenden einer Freihandsignatur](/help/forms/signing-forms-using-scribble.md)
             + [Hinzufügen einer Tabelle zu einem adaptiven Formular](/help/forms/adaptive-forms-tables.md)

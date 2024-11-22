@@ -3,13 +3,10 @@ title: Wie wird Turnstile in einem AEM adaptiven Formular verwendet?
 description: Verbessern Sie die Formularsicherheit mit dem Turnstile-Dienst mühelos. Schrittweise Anleitung enthalten!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 26%
 
 ---
@@ -29,13 +26,13 @@ AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
 ## Integrieren der AEM Forms-Umgebung mit dem Turnstile Captcha
 
-Das Turnstile Captcha von Cloudflare ist eine Sicherheitsmaßnahme, um Formulare und Sites vor automatisierten Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Es wird ein Kontrollkästchen bei der Formularübermittlung angezeigt, mit dem überprüft wird, ob es sich um menschliche Formulare handelt, bevor sie das Formular senden können. AEM Forms as a Cloud Service unterstützt Turnstile Captcha in den adaptiven Forms-Kernkomponenten.
+Das Turnstile Captcha von Cloudflare ist eine Sicherheitsmaßnahme, um Formulare und Sites vor automatisierten Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Es wird ein Kontrollkästchen bei der Formularübermittlung angezeigt, mit dem überprüft wird, ob es sich um menschliche Formulare handelt, bevor sie das Formular senden können. AEM Forms as a Cloud Service unterstützt das Turnstile Captcha in Adaptive Forms.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
 ### Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
 
-Um die Turnstile für AEM Forms-Kernkomponenten zu konfigurieren, müssen Sie den [Turnstile-SiteKey und den geheimen Schlüssel](https://developers.cloudflare.com/turnstile/get-started/) von der Turnstile-Website abrufen.
+Um die Turnstile für AEM Forms zu konfigurieren, müssen Sie den [Turnstile-SiteKey und den geheimen Schlüssel](https://developers.cloudflare.com/turnstile/get-started/) von der Turnstile-Website abrufen.
 
 ### Schritte zum Konfigurieren der Turnstile für AEM Forms{#steps-to-configure-turnstile}
 
