@@ -3,10 +3,10 @@ title: Bereitstellungs-APIs
 description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 94%
+source-wordcount: '619'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,11 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 | [Asset-Metadaten](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Gibt die mit einem Asset verknüpften Eigenschaften zurück, z. B. Titel, Beschreibung, Erstelldatum, Änderungsdatum usw. |
 | [Player-Container für das Video-Asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Gibt den Player-Container für das Video-Asset zurück. Sie können den Player in ein iFrame-HTML-Element einbetten und das Video abspielen. |
 | [Wiedergabe-Manifeste im ausgewählten Ausgabeformat](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Gibt die Wiedergabe-Manifestdatei für das angegebene Video-Asset im ausgewählten Ausgabeformat zurück. Sie müssen einen benutzerdefinierten Player erstellen, der adaptives Streaming über HLS- oder DASH-Protokolle ermöglicht, um die Wiedergabe-Manifestdatei abzurufen und das Video abzuspielen. |
+
+
+>[!NOTE]
+>
+[Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bild-Modifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen Ihnen als eingeschränkte Funktion zur Verfügung. Um Zugriff zu erhalten, erstellen und senden Sie [eine Adobe-Support-Anfrage](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Bereitstellungs-API-Endpunkte {#delivery-apis-endpoint}
 
