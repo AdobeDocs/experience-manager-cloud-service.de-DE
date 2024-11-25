@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
+source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 93%
+source-wordcount: '2800'
+ht-degree: 90%
 
 ---
 
@@ -505,7 +505,9 @@ Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementin
 
 AEM as a Cloud Service wechselt zu Java Runtime 21. Um die Kompatibilität zu gewährleisten, müssen folgende Anpassungen vorgenommen werden:
 
-### Anforderungen an die Build-Zeit :
+### Laufzeitanforderungen
+
+Diese Anpassungen sind erforderlich, um die Kompatibilität mit der Java 21-Laufzeit sicherzustellen. Die Bibliotheken können jederzeit aktualisiert werden, da sie mit älteren Java-Versionen kompatibel sind.
 
 #### Mindestversion von org.objectweb.asm {#org.objectweb.asm}
 
@@ -517,9 +519,13 @@ Aktualisieren Sie org.apache.groovy auf Version 4.0.22 oder höher, um Unterst�
 
 Dieses Paket kann indirekt durch Hinzufügen von Abhängigkeiten von Dritten wie der AEM Groovy Console eingeschlossen werden.
 
+### Anforderungen an die Build-Zeit
+
+Diese Anpassungen sind erforderlich, um das Erstellen des Projekts mit neueren Versionen von Java zu ermöglichen, sind jedoch nicht für die Laufzeitkompatibilität erforderlich. Die Maven-Plug-ins können jederzeit aktualisiert werden, da sie mit älteren Java-Versionen kompatibel sind.
+
 #### Minimale Version von bnd-maven-plugin {#bnd-maven-plugin}
 
-Aktualisieren Sie die Verwendung von bnd-maven-plugin auf Version 6.4.0 oder höher, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
+Aktualisieren Sie die Verwendung von bnd-maven-plugin auf Version 6.4.0, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen. Versionen 7 oder höher sind nicht mit Java 11 oder niedriger kompatibel. Daher wird ein Upgrade auf diese Version derzeit nicht empfohlen.
 
 #### Minimale Version von aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
