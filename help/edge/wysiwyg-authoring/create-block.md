@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Bausteine erstellen, die für den universelle
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1428'
 ht-degree: 97%
 
 ---
@@ -328,8 +328,6 @@ Durch das Hinzufügen einer `classes`-Eigenschaft zum Block wird die Eigenschaf
 In dieser Anleitung erfolgte die Übertragung der Änderungen der Einfachheit halber direkt auf die `main`-Verzweigung. Zum Experimentieren in einem Beispiel-Repository ist dies normalerweise kein Problem. Für die eigentliche Projektarbeit [sollten Sie den Best Practices für die Entwicklung folgen](https://www.aem.live/docs/dev-collab-and-good-practices). Entwickeln Sie hierzu in einer anderen Verzweigung und überprüfen Sie alle Änderungen über Pull-Anfragen, bevor Sie diese mit `main` zusammenführen.
 
 Wenn Sie sich nicht in der `main`-Verzweigung entwickeln, können Sie `?ref=<branch>` in der Speicherortleiste des universellen Editors anfügen, um die Seite von Ihrer Verzweigung zu laden. `<branch>` ist der Name der Verzweigung, wie er auch für die Vorschau Ihres Projekts oder Live-URLs verwendet wird, z. B. `https://<branch>--<repo>--<owner>.hlx.page`.
-
-Die Veröffentlichung von Inhalten mit einem neuen Modell wird nur unterstützt, wenn das Modell mit der `main`-Verzweigung zusammengeführt wird.
 
 ## Wiederverwenden Ihrer Bausteine für das dokumentbasierte Authoring {#reusing-blocks}
 
