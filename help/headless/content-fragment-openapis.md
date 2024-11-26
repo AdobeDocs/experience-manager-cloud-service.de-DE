@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die OpenAPIs für Inhaltsfragmente und Inha
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5e2d5a1ec2cca834338ed0178eee3a94b71d2119
+source-git-commit: 1a55c35814d6651173f7bdeaa677a7dbdec13f73
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 73%
+source-wordcount: '165'
+ht-degree: 55%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 73%
 Die modernisierte OpenAPI-Implementierung der API für die Verwaltung von Inhaltsfragmenten ermöglicht es Entwicklerinnen und Entwicklern, programmgesteuert Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen auf der AEM-Autoreninstanz durchzuführen, um die in AEM gespeicherten Inhaltsfragmentmodelle und Inhaltsfragmente zu verwalten. Diese APIs unterstützen eine Reihe von Anwendungsfällen. 
 
 Die bestehende Verwendung des [Assets-HTTP-API](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) für Inhaltsfragmente sollte auf das neue OpenAPI für die Verwaltung von Inhaltsfragmenten migriert werden. Eine vollständige Dokumentation finden Sie unter [API für die Verwaltung von Inhaltsfragmenten](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de).
+
+>[!NOTE]
+>
+>Für den Zugriff auf die OpenAPI ist eine Autorisierung erforderlich, wenn Sie nicht bei AEM angemeldet sind, z. B. wenn die OpenAPI von einem anderen Produkt im Rahmen einer Integration verwendet wird.
+>
+>Einzelheiten zur Autorisierung Ihres Zugriffs auf die OpenAPI finden Sie unter [OpenAPI-basierte APIs](/help/implementing/developing/open-api-based-apis.md) .
 
 >[!NOTE]
 >
