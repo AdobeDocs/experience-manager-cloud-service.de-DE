@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ad28fd933a85c8b5ba1cdad4927f0a0a45ad478d
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 100%
+source-wordcount: '1318'
+ht-degree: 74%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | Dieser Artikel |
 
 
-Sie können die Komponente **Freihandsignatur** und **Signaturschritt** verwenden, um eine Signatur (per Freihanfunktion) in ein adaptives Formular zu schreiben. Die Komponente „Signaturschritt“ zeigt eine PDF-Version des adaptiven Formulars an. Sie benötigen ein Formular, bei dem die Option „Datensatzdokument“ aktiviert ist, oder auf Vorlagen basierende adaptive Formulare, um die Komponente „Signaturschritt“ zu verwenden.
+Sie können die Komponente **Scribble-Signatur** verwenden, um eine (Scribble-)Signatur auf ein adaptives Formular zu zeichnen. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
 
 ![Dialogfeld für Freihandsignatur](assets/scribble-signature.png)
 
@@ -55,50 +55,89 @@ Sie können auf das Symbol **Konfigurieren** ![configure icon](assets/configure.
 
 ## Konfigurieren eines adaptiven Formulars zur Verwendung der Freihandsignatur {#configure-an-adaptive-form-to-use-scribble-signature}
 
-1. Erstellen Sie ein adaptives Formular, bei dem die Option „Datensatzdokument“ aktiviert ist oder das auf einer Formularvorlage basiert. Eine schrittweise Anleitung finden Sie unter [Erstellen eines adaptiven Formulars](creating-adaptive-form.md).
+1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus.
 1. Ziehen Sie die Komponente **Freihandsignatur** aus dem Komponentenbrowser in das adaptive Formular.
-1. Klicken Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet und Eigenschaften der Komponente „Freihandsignatur“ angezeigt. Konfigurieren Sie die Eigenschaften der Komponente „Freihandsignatur“.
-1. Ziehen Sie die Komponente „Signaturschritt“ aus dem Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
+1. Klicken Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet und Eigenschaften der Komponente „Freihandsignatur“ angezeigt. [Konfigurieren Sie die Eigenschaften der Scribble-Signatur](#properties-of-scribble-signature-component), wie im nächsten Abschnitt beschrieben.
 
-   >[!NOTE]
-   >
-   >Die Komponente „Signaturschritt“ nimmt die gesamte für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Signaturschritt“ enthält.
+   ![Scribble-Signatur](/help/forms/assets/scribblesig.png)
 
-1. Wählen Sie im Inhalts-Browser **Formular-Container** und dann das Symbol **Konfigurieren** ![configure](assets/configure.png) aus. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt. Navigieren Sie zu **Container für adaptive Formulare** > **Elektronische Signatur** und heben Sie die Auswahl der Option **Adobe Sign aktivieren** auf. Klicken Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Änderungen zu speichern.
+1. Wählen Sie das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png) aus, um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
 
-   >[!NOTE]
-   >
-   >Wenn Sie einem adaptiven Formular die Komponente „Signaturschritt“ hinzufügen, wird die Option „Adobe Sign aktivieren“ automatisch ausgewählt.
+## Eigenschaften der Scribble-Signatur-Komponente konfigurieren
 
-1. Klicken Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Signaturschritts anzeigt. Konfigurieren Sie die folgenden Eigenschaften:
+Im Dialogfeld &quot;Konfigurieren&quot;können Sie die Scribble-Signatur-Komponente für Besucher einfach anpassen.
 
-   * **Elementname**: Geben Sie den Namen der Komponente an.
+### Registerkarte „Allgemein“
 
-   * **Titel**: Geben Sie den eindeutigen Titel der Komponente an.
-   * **Vorlagennachricht**: Geben Sie die Nachricht an, die angezeigt werden soll, während das PDF-Signaturdokument geladen wird. Adobe Sign-Dienste benötigen einige Zeit, um das PDF-Signaturdokument vorzubereiten und zu laden.
-   * **Signaturdienst**: Wählen Sie die Option **Freihandsignatur** aus.
+![Registerkarte „Allgemein“](/help/forms/assets/scribblesig-basic.png)
 
-   * **CSS-Klasse**: Geben Sie ggf. die CSS-Klasse der Client-Bibliothek an. Adobe empfiehlt, [Designs](themes.md) und [Inline-Stile](inline-style-adaptive-forms.md) anstelle der CSS-Klasse zu verwenden.
+* **Name**: Sie können eine Formularkomponente sowohl im Formular als auch im Regeleditor durch ihren eindeutigen Namen identifizieren. Der Name darf keine Leerzeichen oder Sonderzeichen enthalten.
 
-   Wählen Sie das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png) aus, um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
+* **Titel**: Mit dem Titel können Sie eine Komponente in einem Formular leicht identifizieren. Standardmäßig wird der Titel oberhalb der Komponente angezeigt. Wenn Sie keinen Titel hinzufügen, wird der Name der Komponente anstelle des Titeltexts angezeigt.
 
-   Wenn Sie jetzt ein Formular ausfüllen, wird eine PDF-Version des adaptiven Formulars angezeigt und es sind Optionen zum Signieren des PDF-Dokuments verfügbar. Weitere Informationen finden Sie unter [Signieren eines adaptiven Formulars mit Freihandsignatur](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
+* **Rich-Text für Titel zulassen**: Diese Funktionen ermöglichen es Benutzenden, einfache Texttitel zu formatieren, die Funktionen wie fett, kursiv, unterstrichener Text, verschiedene Schriftarten, Schriftgrößen, Farben und zusätzliche Optionen enthalten und so die visuelle Darstellung und Anpassung zu verbessern. Sie bietet mehr Flexibilität und kreative Kontrolle bei der Hervorhebung von Titeln in Dokumenten, Websites oder Anwendungen.\
+  Durch Aktivieren des Kontrollkästchens **Rich-Text für Titel zulassen** werden Formatierungsoptionen sichtbar, mit denen Sie den Titel der Komponente gestalten können. Um auf alle verfügbaren Formatierungsoptionen zuzugreifen, können Sie auf die Registerkarte ![Vollbildsymbol](/help/forms/assets/fullscreen-icon.png) klicken.
 
-## Signieren eines adaptiven Formulars mit Freihandsignatur {#sign-an-adaptive-form-using-scribble-signature}
+  ![Rich-Text-Unterstützung](/help/forms/assets/richtext-support-title.png)
 
-1. Wenn Sie ein adaptives Formular ausgefüllt und die Signaturschrittseite erreicht haben, wird der Signaturbildschirm angezeigt.
+* **Titel ausblenden**: Wählen Sie die Option aus, um den Titel der Komponente auszublenden.
+* **Erforderliches Feld** - Wählen Sie die Option aus, um das Feld als Pflichtfeld festzulegen.
+* **Erforderliche Feldmeldung** - Die **Erforderliche Feldmeldung** ist eine anpassbare Meldung, die Benutzern angezeigt wird, wenn sie versuchen, ein Formular zu senden, ohne ein Pflichtfeld auszufüllen.
+* **Datenmodell-Bindungsverweis** - Ein Bindungsverweis ist ein Verweis auf ein Datenelement, das in einer externen Datenquelle gespeichert und in einem Formular verwendet wird. Sie können mit dem Bindungsverweis Daten dynamisch an Formularfelder binden, sodass das Formular die aktuellsten Daten aus der Datenquelle anzeigen kann. Beispielsweise kann ein Bindungsverweis verwendet werden, um den Namen und die Adresse von Kundinnen und Kunden in einem Formular anzuzeigen, basierend auf der im Formular eingegebenen Kunden-ID. Der Bindungsverweis kann auch verwendet werden, um die Datenquelle mit den im Formular eingegebenen Daten zu aktualisieren. Auf diese Weise können Sie mit AEM Forms Formulare erstellen, die mit externen Datenquellen interagieren und so eine nahtlose Benutzererfahrung bei der Datenerfassung und Datenverwaltung bieten.
+* **Objekt ausblenden** - Wählen Sie die Option, um die Komponente aus dem Formular auszublenden. Die Komponente bleibt für andere Zwecke verfügbar, z. B. für Berechnungen im Regel-Editor. Dies ist nützlich, wenn Sie Informationen speichern müssen, die Benutzende nicht sehen oder direkt ändern müssen.
+* **Objekt deaktivieren** - Wählen Sie die Option zum Deaktivieren der Komponente aus. Die deaktivierte Komponente ist nicht aktiv und Endbenutzende können sie nicht bearbeiten. Benutzende können den Wert des Felds anzeigen, ihn jedoch nicht ändern. Die Komponente bleibt für andere Zwecke verfügbar, z. B. für Berechnungen im Regel-Editor.
+* **Seitenverhältnis** - Das Seitenverhältnis in einer Freihandsignaturkomponente definiert die proportionale Beziehung zwischen Breite und Höhe.
+* **Feldlayout** - Die Option **Feldlayout** bestimmt, wie Formularelemente, einschließlich Beschriftungen und Fehlermeldungen, relativ zur Komponente positioniert werden. Die **Beschriftung und Fehler als Anfang des Widgets** platzieren die Beschriftung (Beschriftung) des Felds und Fehlermeldungen über der Komponente. **Von Adaptiver Formularkonfiguration übernehmen** verwendet die standardmäßigen Feldlayouteinstellungen, die in der Adaptive Form-Konfiguration angegeben sind.
+* **CSS-Klasse** - Mit der **CSS-Klasse** können Sie benutzerdefinierte Stile auf eine Komponente anwenden, indem Sie eine oder mehrere CSS-Klassen zuweisen, die in Ihrem Stylesheet definiert sind. Sie ermöglicht eine konsistente Formatierung und Layoutanpassung in Ihrem gesamten adaptiven Formular.
 
-   ![Signaturbildschirm für EchoSign-Seite](assets/esignscribblesign.jpg)
+### Hilfe-Inhalt
 
-1. Klicken Sie auf **[!UICONTROL Signieren]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Signatur zu speichern.
+![Registerkarte „Hilfe-Inhalt“](/help/forms/assets/scribblesig-help.png)
 
-   ![Dialogfeld für Freihandsignatur](assets/scribblewidget.png)
+* **Kurzbeschreibung**: Eine Kurzbeschreibung ist eine kurze Erklärung, die zusätzliche Informationen oder Klarstellungen über den Zweck eines Formularfelds bietet. Es hilft Benutzenden zu verstehen, welcher Datentyp in das Feld eingegeben werden soll, und kann Richtlinien oder Beispiele bereitstellen, um sicherzustellen, dass die eingegebenen Informationen gültig sind und die gewünschten Kriterien erfüllen. Standardmäßig bleiben kurze Beschreibungen ausgeblendet. Aktivieren Sie die Option **Kurzbeschreibung immer anzeigen**, um sie unterhalb der Komponente anzuzeigen.
 
-1. Klicken Sie auf „Abschließen“, um den Signiervorgang abzuschließen.
+* **Kurzbeschreibung immer anzeigen**: Aktivieren Sie diese Option, um die Kurzbeschreibung unterhalb der Komponente anzuzeigen.
 
-   ![Signiervorgang abschließen](assets/scribblecomplete.jpg)
+* **Lange Beschreibung** - Bezieht sich auf zusätzliche Informationen oder Anleitungen, die dem Benutzer bereitgestellt werden, um ihn beim korrekten Ausfüllen eines Formularfelds zu unterstützen. Er erscheint, wenn Benutzende auf das Hilfesymbol (i) neben der Komponente klicken. Es bietet detailliertere Informationen als die Beschriftung oder den Platzhaltertext eines Formularfelds und soll dem Benutzer dabei helfen, die Anforderungen oder Einschränkungen des Felds zu verstehen. Er kann auch Vorschläge oder Beispiele anbieten, um das Ausfüllen des Formulars einfacher und genauer zu gestalten.
 
-Die Signaturen werden dem Formular hinzugefügt und die Formularsteuerung wechselt zum nächsten Bereich.
+### Registerkarte „Barrierefreiheit“ {#accessibility}
+
+![Registerkarte „Barrierefreiheit“](/help/forms/assets/scribblesig-acc.png)
+
+Auf der Registerkarte **„Barrierefreiheit“** werden Werte für [ARIA-Barrierefreiheitsbeschriftungen](https://www.w3.org/WAI/standards-guidelines/aria/) für die Komponente festgelegt. Es stehen verschiedene Optionen zur Verfügung für die Verwendung des Textes für die Bildschirmlesehilfe:
+
+* **Bildschirmpriorität** - Bildschirmlesehilfen-Rangfolge bezieht sich auf zusätzlichen Reader, der speziell für Hilfstechnologien wie Bildschirmlesehilfen vorgesehen ist, die von sehbehinderten Readern verwendet werden. Dieser Text enthält eine Audiobeschreibung des Zwecks des Formularfelds und kann Informationen über den Titel, die Beschreibung, den Namen und alle relevanten Nachrichten (benutzerdefinierten Text) des Felds enthalten. Der Text der Bildschirmlesehilfe hilft sicherzustellen, dass das Formular allen Benutzenden zugänglich ist, auch Personen mit Sehschwäche, und bietet ihnen ein umfassendes Verständnis des Formularfelds und seiner Anforderungen.
+
+   * **Benutzerdefinierter Text**: Wählen Sie diese Option aus, um den benutzerdefinierten Text für ARIA-Barrierefreiheitsbeschriftungen zu verwenden. Wenn Sie diese Option auswählen, wird das Benutzerdefinierter Dialogfeld „Text“ angezeigt. Sie können relevante Informationen im Benutzerdefinierter Dialogfeld „Text“ hinzufügen.
+   * **Kurze Beschreibung**: Wählen Sie diese Option, um die Beschreibung für ARIA-Barrierefreiheitsbeschriftungen zu verwenden.
+   * **Titel**: Wählen Sie diese Option aus, um den Titel für ARIA-Barrierefreiheitsbeschriftungen zu verwenden.
+   * **Name**: Wählen Sie diese Option aus, um den Namen für ARIA-Barrierefreiheitsbeschriftungen zu verwenden.
+   * **Keine**: Wählen Sie diese Option aus, wenn Sie keine ARIA-Barrierefreiheitsbezeichnungen hinzufügen möchten.
+
+<!--
+
+ * **Element Name**: Specify name of the component.
+
+    * **Title:** Specify unique title of the component.
+    * **Template message:** Specify the message to be displayed while the signature PDF is being loaded. Adobe Sign services take some time to prepare and load signature PDF.
+    * **Signing Service:** Select the **Scribble Signature** option.
+
+    * **CSS Class**: Specify CSS class of the client library, if any. Adobe recommends using [themes](themes.md) and [in-line styles](inline-style-adaptive-forms.md) instead of CSS Class.
+## Sign an Adaptive Form using Scribble Signature {#sign-an-adaptive-form-using-scribble-signature}
+
+1. After you fill an Adaptive Form and reach the Signature Step page, the signature screen is displayed.
+
+   ![Signature screen for EchoSign page](assets/esignscribblesign.jpg)
+
+1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the signature.
+
+   ![Scribble sign dialog](assets/scribblewidget.png)
+
+1. Click complete to finish the signing process.
+
+   ![Complete the signing process](assets/scribblecomplete.jpg)
+
+The signatures are added to the form and the form control moves to the next panel. -->
 
 ## Siehe auch {#see-also}
 
