@@ -3,10 +3,10 @@ title: Bereitstellungs-APIs
 description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 89%
+source-wordcount: '627'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,8 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 
 >[!NOTE]
 >
-[Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bild-Modifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen Ihnen als eingeschränkte Funktion zur Verfügung. Um Zugriff zu erhalten, erstellen und senden Sie [eine Adobe-Support-Anfrage](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+* [Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bild-Modifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen Ihnen als eingeschränkte Funktion zur Verfügung. Um Zugriff zu erhalten, erstellen und senden Sie [eine Adobe-Support-Anfrage](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+* Bei [Assets Prime](/help/assets/assets-ultimate-overview.md) ist kein smartes Zuschneiden verfügbar.
 
 ## Bereitstellungs-API-Endpunkte {#delivery-apis-endpoint}
 

@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Erweiterbarkeit der Benutzeroberfläche
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Navigieren Sie in der Assets-Ansicht zur Detailseite eines Assets, Ordners oder 
 ## Voraussetzungen für das Hinzufügen der Erweiterungskomponente
 
 * [Zugriff auf die Assets-Ansicht](#1).
-* Zugriff auf den [Adobe-App-Builder](https://developer.adobe.com/app-builder/docs/overview/), der standardmäßig in [Assets Ultimate](/help/assets/assets-ultimate-overview.md) enthalten ist.
+* Zugriff auf den [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/).
 * Berechtigung zur Entwicklung der Systemadministratorrolle innerhalb der Organisation. Weitere Informationen finden Sie unter [this](https://developer.adobe.com/uix/docs/guides/get-access/) .
 * Adobe IO Befehlszeilen-Tool (AIO CLI) muss auf Ihren lokalen Computern installiert sein. Dieses Tool ist für das Erstellen und Bereitstellen von Erweiterungsprojekten von wesentlicher Bedeutung. Weitere Informationen finden Sie unter [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) .
 * Gutes Verständnis der JavaScript-, Node.js- und React-Technologien.
