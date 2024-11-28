@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 98%
+source-wordcount: '3296'
+ht-degree: 95%
 
 ---
 
@@ -169,6 +169,17 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### Aufnahmefehler aufgrund von Cloud-Umgebung nicht im Bereitschaftszustand {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="Cloud-Umgebung befindet sich nicht im Bereitschaftsstatus"
+>abstract="In seltenen Fällen kann es in der Ziel-Cloud-Umgebung zu unerwarteten Problemen kommen, die dazu führen, dass die Aufnahme fehlschlägt."
+
+In seltenen Fällen kann es zu unerwarteten Cloud Services in der Zielgruppen-Umgebung der Aufnahme kommen. Daher schlägt die Aufnahme fehl, da die Umgebung nicht im erwarteten Bereitschaftszustand ist. Überprüfen Sie das Aufnahmeprotokoll, um weitere Details zum Fehlerstatus anzuzeigen.
+
+Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie einige Minuten, bevor Sie die Aufnahme erneut versuchen. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support mit dem Fehlerstatus.
+
 ### Fehler bei Auffüllaufnahme aufgrund einer Verletzung der Eindeutigkeitsbeschränkung {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ Um diese Einschränkung möglicherweise zu vermeiden, führen Sie den [Best Prac
 
 Manchmal kann es unerwartet zeitweise auftretende Probleme aufgrund fehlgeschlagener Aufnahmen geben. In diesem Fall besteht die einzige Abhilfe leider darin, die Aufnahme erneut zu versuchen. Prüfen Sie das Aufnahmeprotokoll, um die Ursache des Fehlers zu ermitteln und festzustellen, ob es sich um einen der unten aufgeführten Fehler handelt, bei denen ein erneuter Versuch durchgeführt werden sollte.
 
-## Probleme mit MongoDB {#mongo-db-issues}
+#### Probleme mit MongoDB {#mongo-db-issues}
 
 * `Atlas prescale timeout error` – In der Aufnahmephase wird versucht, die Ziel-Cloud-Datenbank vorab auf eine geeignete Größe zu skalieren, die der Größe des aufzunehmenden Migrationssatzinhalts entspricht. In seltenen Fällen wird dieser Vorgang nicht innerhalb des erwarteten Zeitraums abgeschlossen.
 * `Exhausted mongo restore retries` – Die Versuche, eine lokale Sicherungskopie des aufgenommenen Migrationssatzinhalts in die Cloud-Datenbank wiederherzustellen, sind ausgeschöpft. Dies weist auf ein allgemeines Konsistenz-/Netzwerkproblem mit MongoDB hin, das sich häufig nach einigen Minuten selbst behebt.
