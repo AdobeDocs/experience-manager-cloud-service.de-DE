@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
 source-wordcount: '1659'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Die Benutzeroberfläche für die Cloud-Verwaltung besteht in erster Linie aus zw
 
 ## Konsole „Meine Programme“ {#my-programs-console}
 
-Wenn Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) anmelden und die entsprechende Organisation auswählen, gelangen Sie in die Konsole **Meine Programme**.
+Wenn Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) anmelden und die entsprechende Organisation auswählen, gelangen Sie in die Konsole **Meine Programme**.
 
 ![Konsole „Meine Programme“](assets/my-programs-console.png)
 
@@ -36,9 +36,9 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
 
 1. [Symbolleisten](#toolbars-my-programs-toolbars) für die Auswahl von Organisationen, Warnmeldungen und Kontoeinstellungen
 1. Registerkarten, um die aktuelle Ansicht der Programme zu wechseln:
-   * Ansicht **Startseite** (Standard) mit Auswahl der Ansicht **Meine Programme**, die einen Überblick über alle Programme enthält
+   * Ansicht der **Startseite** (Standard) mit Auswahl der Ansicht **Meine Programme**, die einen Überblick über alle Programme enthält
    * **Lizenz** für den Zugriff auf das [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
-   * Beachten Sie, dass die Registerkarten standardmäßig geschlossen sind und über das Symbol &quot;Menü anzeigen&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in der Kopfzeile [Cloud Manager](#cloud-manager-header) angezeigt werden können.![
+   * Beachten Sie, dass die Registerkarten standardmäßig geschlossen sind und über das ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) im [Cloud Manager-Header](#cloud-manager-header) angezeigt werden können.
 1. [Statistiken und Aktionsaufrufe](#statistics) für einen Überblick über Ihre aktuellen Aktivitäten
 1. [**Meine Programme**](#my-programs-section) mit einem Überblick über Ihre gesamten Programme
 1. [Direkt-Links](#quick-links-section) für den einfachen Zugriff auf zugehörige Ressourcen.
@@ -195,7 +195,7 @@ Die Programmsymbolleiste ermöglicht weiterhin einen schnellen Wechsel zu andere
 
 ![Programmsymbolleiste](assets/cloud-manager-program-toolbar.png)
 
-Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich derzeit befinden, auch wenn Sie die Registerkarten mit dem Symbol ![Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) ausgeblendet haben.
+Die Symbolleiste zeigt immer die Registerkarte an, die gerade aktiv ist, selbst wenn Sie die Registerkarten mit ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) ausgeblendet haben.
 
 ### Programmregisterkarten {#program-tabs}
 

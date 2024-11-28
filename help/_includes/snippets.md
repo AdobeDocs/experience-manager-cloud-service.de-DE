@@ -2,7 +2,7 @@
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 # Snippets {#snippets}
@@ -114,9 +114,9 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    </td>
    </tr>
    <tr>
-   <td>Zwischen Bedienfeldern navigieren</td>
+   <td>Navigieren zwischen den Bedienfeldern</td>
    <td> Die Komponenten <b>Nächste Schaltfläche</b> und <b>Vorherige Schaltfläche</b> werden bereitgestellt, um zwischen den Bedienfeldern zu navigieren. Eine im Container platzierte Navigationsschaltfläche arbeitet mit den untergeordneten Elementen</td>
-   <td> Die Regel <b>Navigation im Bedienfeld</b> ist im Regeleditor verfügbar, sodass Benutzer Regeln für die Navigation zwischen den untergeordneten Elementen der Bedienfelder erstellen können.
+   <td> Die Regel <b>Navigation im Bedienfeld</b> ist im Regeleditor verfügbar, sodass Benutzende Regeln für die Navigation zwischen den untergeordneten Elementen der Bedienfelder erstellen können.
    </td>
    </tr>
    </tr>
@@ -132,11 +132,11 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
 * [Verschiedene Anwendungsfälle des Regeleditors für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
 * [Unterschiede in verschiedenen Editionen des Regeleditors](/help/forms/rule-editor-core-components-difference-tables.md)
-* [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
+* [Verwenden von asynchronen Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
 * [Aufrufen von Dienstverbesserungen im Visual Rule Editor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
 * [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
-* [Scope-Objekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
+* [Umfangsobjekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
 * [Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -189,8 +189,8 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >
 >Wenn Sie den universellen Editor verwenden möchten, müssen Sie entweder:
 >
->* IP-Zulassungslisten nicht aktivieren.
->* [Führen Sie Ihre eigene Instanz des Universal Editor-Dienstes aus.](/help/implementing/universal-editor/local-dev.md)
+>* Die IP-Zulassungslisten nicht aktivieren.
+>* [ Oder Ihre eigene Instanz des universellen Editor-Dienstes ausführen.](/help/implementing/universal-editor/local-dev.md)
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 
@@ -223,7 +223,7 @@ Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erforde
 
 Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Site in Cloud Manager registrieren. Allen Benutzenden von AEM as a Cloud Service wird empfohlen, ihre Website bei Cloud Manager zu registrieren, was [eine Reihe von Vorteilen mit sich bringt](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Falls Sie Ihre Website nicht bereits registriert haben, finden Sie weitere Informationen dazu in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-**So protokollieren Sie ein Support-Ticket:**
+**So reichen Sie ein Support-Ticket ein:**
 
 1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.

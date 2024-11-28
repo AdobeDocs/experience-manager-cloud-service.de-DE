@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -51,8 +51,8 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
 
    * **Bereinigen**: Wählen Sie den `Wipe`-Wert aus
       * Die Option **Bereinigen** legt den Startpunkt des Ziels für die Aufnahme fest. Wenn **Bereinigen** aktiviert ist, wird das Ziel einschließlich des gesamten Inhalts auf die in Cloud Manager angegebene AEM-Version zurückgesetzt. Wenn diese Option nicht aktiviert ist, behält das Ziel seinen aktuellen Inhalt als Ausgangspunkt bei.
-      * Diese Option wirkt sich **NICHT** darauf aus, wie die Aufnahme von Inhalten durchgeführt wird. Die Aufnahme verwendet immer eine Inhaltsersetzungsstrategie und _keine_ Inhaltszusammenführungsstrategie, sodass in beiden Fällen, **Bereinigen** und **Nicht bereinigen**, bei der Aufnahme eines Migrationssatzes die Inhalte im selben Pfad zu dem Ziel überschrieben werden. Wenn der Migrationssatz beispielsweise `/content/page1` enthält und im Ziel bereits `/content/page1/product1` enthalten ist, entfernt die Aufnahme den gesamten `page1`-Pfad und zugehörige Unterseiten, einschließlich `product1`, und ersetzt sie durch den Inhalt im Migrationssatz. Dies bedeutet, dass bei der Durchführung einer Aufnahme mit der Einstellung **Nicht bereinigen** in ein Ziel, das beizubehaltende Inhalte enthält, eine sorgfältige Planung erfolgen muss.
-      * Nicht-Wischen-Aufnahmen sind speziell für den Anwendungsfall der Auffüllaufnahme entwickelt. Diese Aufnahmen sollen eine inkrementelle Menge neuer Inhalte aufweisen, die sich seit der letzten Aufnahme in einem vorhandenen Migrationssatz geändert hat. Die Durchführung von Nicht-Wischen-Aufnahmen außerhalb dieses Anwendungsfalls könnte zu sehr langen Erfassungszeiten führen.
+      * Diese Option wirkt sich **NICHT** darauf aus, wie die Aufnahme von Inhalten durchgeführt wird. Die Aufnahme verwendet immer eine Inhaltsersetzungsstrategie und _keine_ Inhaltszusammenführungsstrategie, sodass in beiden Fällen, **Bereinigen** und **Nicht bereinigen**, bei der Aufnahme eines Migrationssatzes die Inhalte im selben Pfad zu dem Ziel überschrieben werden. Wenn der Migrationssatz beispielsweise `/content/page1` enthält und im Ziel bereits `/content/page1/product1` enthalten ist, entfernt die Aufnahme den gesamten `page1`-Pfad und zugehörige Unterseiten, einschließlich `product1`, und ersetzt sie durch den Inhalt im Migrationssatz. Dies bedeutet, dass beim Durchführen einer Aufnahme mit der Einstellung **Nicht bereinigen** in ein Ziel, das beizubehaltende Inhalte enthält, eine sorgfältige Planung erfolgen muss.
+      * Nicht löschende Aufnahmen wurden speziell für den Anwendungsfall der Auffüllaufnahme entwickelt. Diese Aufnahmen sollen eine inkrementelle Menge neuer Inhalte enthalten, die sich seit der letzten Aufnahme in einem vorhandenen Migrationssatz geändert haben. Das Durchführen von nicht löschenden Aufnahmen außerhalb dieses Anwendungsfalls könnte zu sehr langen Erfassungszeiten führen.
 
    >[!IMPORTANT]
    > Wenn die Einstellung **Bereinigen** für die Aufnahme aktiviert ist, wird das gesamte bestehende Repository zurückgesetzt, einschließlich der Benutzerberechtigungen für die Ziel-Cloud-Service-Instanz. Diese Rücksetzung gilt auch für Admin-Benutzende, die zur Gruppe **Admins** hinzugefügt wurden, und eine solche Person muss der Admin-Gruppe erneut hinzugefügt werden, um eine Aufnahme zu starten.
@@ -272,7 +272,7 @@ Wenn ein Asset mithilfe der Touch-optimierten Assets-Benutzeroberfläche aus dem
 
 Wenn ein zuvor migriertes Asset gelöscht und die nächste Aufnahme ausgeführt wird, bevor die Speicherbereinigung den Löschvorgang für das Asset abgeschlossen hat, wird beim Aufnehmen desselben Migrationssatzes das gelöschte Asset nicht wiederhergestellt. Wenn die Aufnahme die Cloud-Umgebung für das Asset überprüft, liegen keine Knotendaten vor. Daher werden im Zuge der Aufnahme die Knotendaten in die Cloud-Umgebung kopiert. Bei Überprüfung des Blob-Speichers wird jedoch festgestellt, dass der Blob vorhanden ist, und das Kopieren des Blobs übersprungen. Daher sind die Metadaten nach der Aufnahme vorhanden, wenn Sie das Asset über die Touch-optimierte Benutzeroberfläche betrachten, das Image aber nicht. Beachten Sie, dass Migrationssätze und die Inhaltsaufnahme nicht für diesen Fall entwickelt wurden. Sie zielen darauf ab, der Cloud-Umgebung neue Inhalte hinzuzufügen und nicht zuvor migrierte Inhalte wiederherzustellen.
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Wenn die Aufnahme erfolgreich war, startet AEM die Indizierung automatisch. Siehe [Indizierung nach der Migration von Inhalten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) für weitere Informationen.
 

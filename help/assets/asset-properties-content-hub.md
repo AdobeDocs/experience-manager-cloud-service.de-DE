@@ -6,7 +6,7 @@ exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 69%
+ht-degree: 73%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 69%
 
 >[!AVAILABILITY]
 >
->Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub-Handbuch als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL The Content Hub] ermöglicht Ihnen das Anzeigen von Informationen über das Asset, was für eine effiziente Asset-Verteilung von entscheidender Bedeutung ist. Es handelt sich um die Sammlung aller für ein Asset verfügbaren Daten.
 

@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
 workflow-type: tm+mt
 source-wordcount: '2504'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Auf der Registerkarte **Varianten** haben Sie folgende Optionen:
 
@@ -59,7 +59,7 @@ Sie haben folgende Möglichkeiten:
 
 * Bearbeiten Sie Ihre Inhalte direkt auf der Registerkarte **Varianten**. Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
 
-   * Wenn verschiedene Datentypen im Modell konfiguriert sind (als mehrere), können Sie **Instanzen hinzufügen** des entsprechenden Felds hinzufügen
+   * Wenn im Modell (als mehrfach) konfiguriert, ermöglichen verschiedene Datentypen das **Hinzufügen** von Instanzen des relevanten Feldes.
 
    * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 

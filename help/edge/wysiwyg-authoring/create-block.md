@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -165,7 +165,7 @@ Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt ü
 
    * Zum Laden der Seite müssen Sie ggf. auf **Anmelden mit Adobe** tippen oder klicken, um sich im universellen Editor bei AEM zu authentifizieren.
 
-1. Wählen Sie im universellen Editor einen Abschnitt aus. Tippen oder klicken Sie im Eigenschaftenbedienfeld auf das Symbol **Hinzufügen** und wählen Sie dann den neuen Block **Anführungszeichen** aus dem Menü aus.
+1. Wählen Sie im universellen Editor einen Abschnitt aus. Tippen oder klicken Sie im Bedienfeld „Eigenschaften“ auf das Symbol **Hinzufügen** und wählen Sie dann Ihren neuen **Zitatblock** aus dem Menü aus.
 
    * Das Symbol **Hinzufügen** ist ein Pluszeichen.
    * Sie erkennen, dass Sie einen Abschnitt ausgewählt haben, wenn die blaue Umrandung des ausgewählten Objekts eine Registerkarte namens **Abschnitt** aufweist.
@@ -175,7 +175,7 @@ Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt ü
 
 1. Die Seite wird neu geladen und der Zitatblock wird am unteren Rand des ausgewählten Abschnitts hinzugefügt, wobei der Standardinhalt in der Datei `component-definitions.json` angegeben ist.
 
-   * Der Anführungsblock kann wie jeder andere Block ausgewählt und bearbeitet werden, entweder direkt oder im Eigenschaftenbedienfeld.
+   * Der Zitatblock kann wie jeder andere Block entweder direkt oder im Bedienfeld „Eigenschaften“ ausgewählt und bearbeitet werden.
    * Die Stile werden in einem weiteren Schritt angewendet.
 
    ![Die Seite mit dem neuen Zitatblock im ausgewählten Abschnitt](assets/create-block/quote-added.png)

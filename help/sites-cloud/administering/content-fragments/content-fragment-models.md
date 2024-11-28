@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
 workflow-type: tm+mt
 source-wordcount: '3591'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 88%
 >
 >Verschiedene Funktionen der Inhaltsfragmentmodelle sind über das Programm für frühe Anwender verfügbar.
 >
->Informationen zum Status und zur Anwendung bei Interesse finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Den Status und Informationen zur Bewerbung finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service wird die Struktur des Inhalts Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) definiert. Diese Fragmente können dann für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte verwendet werden.
 
@@ -157,12 +157,12 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 
 * **Einzeilentext**
-   * Feld für eine einzelne Textzeile hinzufügen; die maximale Länge kann definiert werden
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Fügt ein Feld für eine einzelne Textzeile hinzu; die maximale Länge kann definiert werden.
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
 
 * **Mehrzeilentext**
    * Ein Textbereich, der Rich Text, Nur Text oder Markdown sein kann
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
 
   >[!NOTE]
   >
@@ -171,18 +171,18 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
   Dieses Format kann nicht über den [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md), sondern nur vom Modell aus geändert werden.
 
 * **Zahl**
-   * Numerisches Feld hinzufügen
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Fügt ein numerisches Feld hinzu.
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
 
 * **Boolesch**
    * Fügen Sie ein boolesches Kontrollkästchen hinzu.
 
 * **Datum und Uhrzeit**
-   * Datum- und/oder Uhrzeitfeld hinzufügen
+   * Fügt ein Datums- und/oder Zeitfeld hinzu.
 
 * **Aufzählung**
-   * Hinzufügen von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern
-      * Sie können die für den Fragmentautor verfügbaren Optionen festlegen
+   * Fügt einen Satz Kontrollkästchen, Optionsfelder oder Dropdown-Felder hinzu.
+      * Sie können die für Fragmentautorinnen und -autoren verfügbaren Optionen festlegen.
 
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
@@ -205,12 +205,12 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
    * Der Verweis gibt den Pfad zur referenzierten Ressource an, z. B. `/content/dam/path/to/resource`
 * **Inhaltsreferenz (UUID)**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
    * Im Editor gibt der Verweis den Pfad zur referenzierten Ressource an. Intern wird der Verweis als universelle eindeutige ID (UUID) gespeichert, die auf die Ressource verweist
       * Sie müssen die UUID nicht kennen. Im Fragmenteditor können Sie zur gewünschten Asset-Ressource navigieren
 

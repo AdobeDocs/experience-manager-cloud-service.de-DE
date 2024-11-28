@@ -1,24 +1,24 @@
 ---
 title: Modelldefinitionen, Felder und Komponententypen
-description: Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor im Eigenschaftenbereich bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
+description: Erfahren Sie anhand von Beispielen mehr über Felder und die Komponententypen, die der universelle Editor im Bedienfeld „Eigenschaften“ bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1343'
+ht-degree: 94%
 
 ---
 
 
 # Modelldefinitionen, Felder und Komponententypen {#field-types}
 
-Erfahren Sie anhand von Beispielen mehr über Felder und Komponententypen, die der universelle Editor im Eigenschaftenbereich bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
+Erfahren Sie anhand von Beispielen mehr über Felder und die Komponententypen, die der universelle Editor im Bedienfeld „Eigenschaften“ bearbeiten kann. Erfahren Sie, wie Sie Ihre eigene App instrumentieren können, indem Sie eine Modelldefinition erstellen und mit der Komponente verknüpfen.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Felder und Komponententypen sie im Eigenschaftenbedienfeld des Editors bearbeiten können. Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
+Wenn Sie Ihre eigenen Apps für die Verwendung mit dem universellen Editor anpassen, müssen Sie die Komponenten instrumentieren und definieren, welche Felder und Komponententypen sie im Bedienfeld „Eigenschaften“ des Editors bearbeiten können.  Erstellen Sie dazu ein Modell und verknüpfen Sie es über die Komponente mit diesem.
 
 Dieses Dokument bietet einen Überblick über eine Modelldefinition sowie über die verfügbaren Felder und Komponententypen sowie Beispielkonfigurationen.
 
@@ -28,7 +28,7 @@ Dieses Dokument bietet einen Überblick über eine Modelldefinition sowie über 
 
 ## Modelldefinitionsstruktur {#model-structure}
 
-Um eine Komponente über das Eigenschaftenbedienfeld im universellen Editor zu konfigurieren, muss eine Modelldefinition vorhanden und mit der Komponente verknüpft sein.
+Um eine Komponente über das Bedienfeld „Eigenschaften“ im universellen Editor zu konfigurieren, muss eine Modelldefinition vorhanden und mit der Komponente verknüpft sein.
 
 Die Modelldefinition ist eine JSON-Struktur, die mit einem Array von Modellen beginnt.
 
@@ -143,7 +143,7 @@ Ein AEM Inhaltskomponententyp ermöglicht eine AEM Inhaltsauswahl, die zur Auswa
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `rootPath` | `string` | Pfad, den die Inhaltsauswahl öffnet, damit der Benutzer AEM Inhalt auswählen kann, wobei die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird | Nein |
+| `rootPath` | `string` | Pfad, den die Inhaltsauswahl für die Benutzenden öffnet, um AEM-Inhalte auszuwählen, wobei die Auswahl auf dieses Verzeichnis und die Unterverzeichnisse beschränkt ist. | Nein |
 
 >[!BEGINTABS]
 
@@ -302,7 +302,7 @@ Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Er bie
 
 #### Inhaltsfragment {#content-fragment}
 
-Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Es bietet eine zusätzliche Konfiguration und Validierung.
+Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Sie bietet eine zusätzliche Konfiguration und Validierung.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -310,7 +310,7 @@ Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/si
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `rootPath` | `string` | Pfad, den die Inhaltsauswahl öffnet, damit der Benutzer das Inhaltsfragment auswählen kann, wodurch die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird | Nein |
+| `rootPath` | `string` | Pfad, den die Inhaltsauswahl öffnet, damit die Benutzenden das Inhaltsfragment auswählen können, wodurch die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird. | Nein |
 
 >[!NOTE]
 >
@@ -438,7 +438,7 @@ Er bietet außerdem einen zusätzlichen Validierungstyp.
 
 #### Experience Fragment {#experience-fragment}
 
-Mit der Experience Fragment-Auswahl können Sie ein [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Es bietet eine zusätzliche Konfiguration und Validierung.
+Mit der Experience Fragment-Auswahl können Sie ein [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) und dessen Varianten (falls erforderlich) auswählen. Sie bietet eine zusätzliche Konfiguration und Validierung.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -446,7 +446,7 @@ Mit der Experience Fragment-Auswahl können Sie ein [Experience Fragment](/help/
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
-| `rootPath` | `string` | Pfad, den die Inhaltsauswahl für den Benutzer öffnet, um das Experience Fragment auszuwählen, wodurch die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird | Nein |
+| `rootPath` | `string` | Pfad, den die Inhaltsauswahl öffnet, damit die Benutzenden das Experience Fragment auswählen können, wodurch die Auswahl auf diesen Ordner und Unterverzeichnisse beschränkt wird. | Nein |
 
 >[!BEGINTABS]
 

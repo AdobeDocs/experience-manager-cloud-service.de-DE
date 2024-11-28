@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
 source-wordcount: '5886'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -496,7 +496,7 @@ ht-degree: 97%
       + [Überwachen von Aktivitäten und DAM-Aufgaben](/help/assets/assets-activity-history.md)
       + [Erste Schritte mit Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md)
       + [Hinzufügen und Hochladen von Assets](/help/assets/add-assets.md)
-      + [Assets durchsuchen](/help/assets/search-assets.md)
+      + [Suchen von Assets](/help/assets/search-assets.md)
       + [Allgemeine Aufgaben zum Asset-Management](/help/assets/manage-digital-assets.md)
       + [Veröffentlichung verwalten](/help/assets/manage-publication.md)
       + [Vorschau von 3D-Assets](/help/assets/dynamic-media/previewing-3d-assets.md)
@@ -764,12 +764,12 @@ ht-degree: 97%
                + [Unterschied zwischen dem Foundation-Regeleditor und dem Kernkomponenten-Regeleditor](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Operator- und Ereignistypen, die im Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular verfügbar sind](/help/forms/rule-editor-core-components-events-operators.md)
                + [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
-               + [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
+               + [Verwenden von asynchronen Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
                + [Aufrufen von Dienstverbesserungen im Visual Rule Editor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren{#create-and-use-custom-function-core-component}
                + [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
                + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
-               + [Scope-Objekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
+               + [Umfangsobjekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
                + [Beispiele für benutzerdefinierte Funktionen für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-components-use-cases.md)
             + Einführung in das Formularportal und seine Komponenten{#introduction-to-forms-portal}
                + [Einführung in Formularportal-Komponenten](/help/forms/configure-forms-portal.md)
@@ -959,7 +959,7 @@ ht-degree: 97%
       + [Tabellendaten und Tabellen](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Verwalten von Taxonomiedaten](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG und dokumentbasierte Blöcke](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [Seiten mit DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
+      + [Seiten mit DAM-Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Funktionen für in Arbeit befindliche Sites](/help/edge/wysiwyg-authoring/wip-features.md)
    + Dokumentenbasiertes Authoring {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
@@ -1043,7 +1043,7 @@ ht-degree: 97%
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
       + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=de)
-   + [AEM APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md)
+   + [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL-API {#graphql-api}
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-Endpunkte verwalten](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1105,7 +1105,7 @@ ht-degree: 97%
    + [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)
    + CQ Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Home](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM-Startseite](/help/implementing/cloud-manager/aem-home.md)
       + Programme {#programs}
          + [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)

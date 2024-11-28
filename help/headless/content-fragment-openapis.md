@@ -7,11 +7,11 @@ role: Admin, Developer
 source-git-commit: 1a55c35814d6651173f7bdeaa677a7dbdec13f73
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 55%
+ht-degree: 75%
 
 ---
 
-# OpenAPIs für die Verwaltung von Inhaltsfragmenten und Inhaltsfragmentmodellen {#content-fragments-and-content-fragment-models-management-openapis}
+# OpenAPIs für das Management von Inhaltsfragmenten und Inhaltsfragmentmodellen {#content-fragments-and-content-fragment-models-management-openapis}
 
 Die modernisierte OpenAPI-Implementierung der API für die Verwaltung von Inhaltsfragmenten ermöglicht es Entwicklerinnen und Entwicklern, programmgesteuert Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen auf der AEM-Autoreninstanz durchzuführen, um die in AEM gespeicherten Inhaltsfragmentmodelle und Inhaltsfragmente zu verwalten. Diese APIs unterstützen eine Reihe von Anwendungsfällen. 
 
@@ -25,4 +25,4 @@ Die bestehende Verwendung des [Assets-HTTP-API](https://experienceleague.adobe.c
 
 >[!NOTE]
 >
->Unter [AEM APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
+>Unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
