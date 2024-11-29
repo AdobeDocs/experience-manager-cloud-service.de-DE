@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
 source-wordcount: '2800'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -43,9 +43,9 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
-| [!DNL Foundation] | Weder die Registerkarte &quot;Verteilen&quot;des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können zur Replikation von Inhaltspaketen über 10 MB verwendet werden. | [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Workflow für die Strukturaktivierung Schritt 3}](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Weder die Registerkarte „Verteilung“ des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können für die Replikation von Inhaltspaketen von über 10 MB verwendet werden.  | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Integrationen mit Anmeldeinformationen, die aus Adobe Developer Console-Projekten generiert wurden, verlieren schrittweise die Unterstützung für Service-Konto-Anmeldedaten (JWT). Neue Service-Konto-Anmeldedaten (JWT) können ab dem 1. Mai 2024 nicht mehr in der Adobe Developer Console erstellt werden. Vorhandene Service-Konto-Anmeldedaten (JWT) können jedoch noch bis zum 1. Januar 2025 für bereits konfigurierte Integrationen verwendet werden. Ab diesem Zeitpunkt funktionieren die vorhandenen Service-Konto-Anmeldedaten (JWT) nicht mehr und Kundinnen und Kunden müssen zu OAuth-Server-zu-Server-Anmeldedaten migrieren. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
-| [!DNL Foundation] | Publish Content Tree Workflow und der zugehörige Workflow-Schritt Publish-Inhaltsstruktur , der für die Replikation von Inhaltshierarchien verwendet wurde. | Verwenden Sie den Schritt [Workflow für die Strukturaktivierung](/help/operations/replication.md#tree-activation) , der leistungsfähiger ist. |
+| [!DNL Foundation] | Der Workflow für die Veröffentlichung der Inhaltsstruktur und der zugehörige Workflow-Schritt für die Veröffentlichung der Inhaltsstruktur, der für die Replikationen von Inhaltshierarchien verwendet wurde. | Verwenden Sie den [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation), der leistungsfähiger ist. |
 
 
 ## Entfernte Funktionen {#removed-features}
@@ -274,7 +274,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>org.slf4j.event    </td>
-    <td>Diese interne slf4j-API wird von AEM as a Cloud Service nicht unterstützt.</td>
+    <td>Diese interne slf4j-API wird von AEM as a Cloud Service nicht unterstützt</td>
     <td>11.4.2022</td>
     <td>30.08.2024</td>
   </tr>
@@ -523,21 +523,21 @@ Dieses Paket kann indirekt durch Hinzufügen von Abhängigkeiten von Dritten wie
 
 Diese Anpassungen sind erforderlich, um das Erstellen des Projekts mit neueren Versionen von Java zu ermöglichen, sind jedoch nicht für die Laufzeitkompatibilität erforderlich. Die Maven-Plug-ins können jederzeit aktualisiert werden, da sie mit älteren Java-Versionen kompatibel sind.
 
-#### Minimale Version von bnd-maven-plugin {#bnd-maven-plugin}
+#### Mindestversion von bnd-maven-plugin {#bnd-maven-plugin}
 
 Aktualisieren Sie die Verwendung von bnd-maven-plugin auf Version 6.4.0, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen. Versionen 7 oder höher sind nicht mit Java 11 oder niedriger kompatibel. Daher wird ein Upgrade auf diese Version derzeit nicht empfohlen.
 
-#### Minimale Version von aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
+#### Mindestversion von aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Aktualisieren Sie die Verwendung von aemanalyser-maven-plugin auf Version 1.6.6 oder höher, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
+Aktualisieren Sie aemanalyser-maven-plugin auf Version 1.6.6 oder höher, um die Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
 
 #### Mindestversion von maven-bundle-plugin  {#maven-bundle-plugin}
 
-Aktualisieren Sie die Verwendung von maven-bundle-plugin auf Version 5.1.5 oder höher, um Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
+Aktualisieren Sie maven-bundle-plugin auf Version 5.1.5 oder höher, um die Unterstützung für neuere JVM-Laufzeitumgebungen sicherzustellen.
 
 #### Aktualisieren von Abhängigkeiten im maven-scr-plugin  {#maven-scr-plugin}
 
-Die `maven-scr-plugin` ist nicht direkt mit Java 17 und 21 kompatibel. Es ist jedoch möglich, die Deskriptordateien zu generieren, indem die ASM-Abhängigkeitsversion innerhalb der Plug-in-Konfiguration aktualisiert wird, ähnlich dem unten stehenden Snippet:
+Das `maven-scr-plugin` ist nicht direkt mit Java 17 und 21 kompatibel. Es ist jedoch möglich, die Deskriptordateien zu generieren, indem die Version der ASM-Abhängigkeit innerhalb der Plug-in-Konfiguration aktualisiert wird, ähnlich dem unten stehenden Snippet:
 
 ```
 [source,xml]
