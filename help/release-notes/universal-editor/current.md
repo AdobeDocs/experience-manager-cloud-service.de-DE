@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor 2024.11.13 – Versionshinweise
-description: Dies sind die Versionshinweise für die Version 2024.11.13 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2024.12.02
+description: Dies sind die Versionshinweise für die Version 2024.12.02 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
-workflow-type: ht
-source-wordcount: '370'
-ht-degree: 100%
+source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 16%
 
 ---
 
 
-# Universeller Editor 2024.11.13 – Versionshinweise {#release-notes}
+# Universeller Editor – Versionshinweise für 2024.12.02 {#release-notes}
 
-Dies sind die Versionshinweise für die Version des universellen Editors vom 13. November 2024.
+Dies sind die Versionshinweise für die Version des Universal Editors vom 2. Dezember 2024.
 
 >[!TIP]
 >
@@ -22,22 +22,18 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 13.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Wiederholungsoption bei CORS-Timeout:** Mit der ](/help/release-notes/universal-editor/2024/2024-09-26.md)Version 2024.09.26[ wurde ein Fehlerbedienfeld für Situationen eingeführt, in denen der Editor keine Verbindung zur geladenen Seite herstellen kann, wodurch endlose Ladezustände verhindert werden.
-   * Seit dieser Version versucht es der Editor automatisch erneut, und sobald die Verbindung hergestellt ist, kann die Bearbeitung fortgesetzt werden.
-   * Das ist besonders für Seiten nützlich, deren Initialisierung länger als das einminütige Timeout dauern kann.
-* **Verbesserungen bei der Erweiterbarkeit für die Entwicklung:** Der universelle Editor unterstützt jetzt das Senden von Ereignissen an Erweiterungen, sodass Erweiterungsentwicklerinnen und -entwickler [Ereignisse](/help/implementing/universal-editor/events.md) abonnieren können.
-   * Dadurch können Entwickelnde [auf Editor-Ereignisse innerhalb ihrer benutzerdefinierten Erweiterungen reagieren](/help/implementing/universal-editor/customizing.md#extending).
-* **Persistente Komponentenauswahl:** Im Editor ausgewählte Komponenten bleiben jetzt auch nach der Aktualisierung des Browsers erhalten.
-   * Dadurch wird sichergestellt, dass Benutzende beim Neuladen der Seite ihre Arbeit fortsetzen können, ohne ihren Kontext zu verlieren.
-* **Lokalisierte Schnell-Links:** Der Abschnitt **Schnell-Links** am Startbildschirm enthält jetzt lokalisierte Links zur Dokumentation, die Benutzenden den einfachen Zugriff auf relevante Handbücher basierend auf ihren Spracheinstellungen ermöglichen.
-* **Anfrage-ID für erweitertes Debugging:** Fehlerbenachrichtigungen enthalten jetzt im Abschnitt „Details“ eine **Anfrage-ID**, die mit `x-request-id header` korreliert.
-   * Das erleichtert es Engineering-Teams von Adobe, Probleme zu erkennen und zu diagnostizieren, indem sie diese Fehler mit internen Protokollen abgleichen können.
+* **Tastaturnavigation der Inhaltsstruktur**: [Die Inhaltsstruktur,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), die im Seitenbereich verfügbar ist, ist jetzt über die Tastatur vollständig zugänglich.
+   * Autoren können mithilfe von Standardtastatursteuerelementen unter Einhaltung der [WCAG 2.1-Richtlinien](/help/sites-cloud/authoring/page-editor/accessible-content.md) für die Barrierefreiheit mit Baumansichtselementen navigieren und mit ihnen interagieren.
+   * Diese Verbesserung stellt sicher, dass alle interaktiven Elemente im Baum mit der Tastatur bedient werden können, wodurch die Inklusivität für Benutzer verbessert wird, die auf die Tastaturnavigation angewiesen sind.
+* **Abwahl der bearbeitbaren Elemente aufheben**: Autoren können jetzt die Auswahl der zuvor ausgewählten bearbeitbaren Elemente auf der Seite aufheben.
+   * Dadurch werden Ablenkungen beseitigt, wenn Autoren die Seite ohne aktive Auswahlgrenzen anzeigen möchten.
+* **Fragmentauswahl**: Auf AEM as a Cloud Service-Instanzen öffnen Fragmentverweise jetzt die Fragmentauswahl als Inhaltsauswahl. Dies bietet verbesserte Funktionen wie das Befolgen erlaubter Inhaltsfragmentmodelle, die Suche nach Inhaltsfragmenten und ein verbessertes Gesamterlebnis.
+   * Dies passt zu anderen Adobe-Benutzeroberflächen und verbessert die Konsistenz.
+   * [Für AEM 6.5-Umgebungen bleibt ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) die vorhandene Inhaltsauswahl in Verwendung.
+* **Container-Beschreibung**: [Die Container-Komponente](/help/implementing/universal-editor/field-types.md#container), die im Bereich [Eigenschaften} verwendet wird, ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) zum Verweisen auf Inhalte, unterstützt jetzt ein Beschreibungsattribut, das über den Containerfeldern angezeigt wird.
+   * Dieser Zusatz verbessert die Klarheit, indem er Autoren einen Kontext zu den gruppierten Feldern bereitstellt, die sie bearbeiten.
 
 ## Andere Verbesserungen {#other-improvements}
 
-* **Korrektur für lange Beschriftungen der Inhaltsstruktur:** Es wurde ein Problem behoben, durch das lange Beschriftungen im Bedienfeld **Inhaltsstruktur** abgeschnitten wurden
-   * Dadurch wird sichergestellt, dass Drag-and-Drop-Griffe immer für die Neuanordnung von Inhalten sichtbar sind.
-* **Korrektur von langen Eigenschaftenbeschriftungen:** Es wurde ein Fehler behoben, durch den sich lange Feldbeschriftungen im Bedienfeld **Eigenschaften** mit Feldvalidierungsinformationen überlappten.
-* **Horizontaler Bildlauf im Bedienfeld „Eigenschaften“:** Es wurde ein Problem behoben, durch das breite Elemente im Bedienfeld **Eigenschaften** einen horizontalen Bildlauf verursachten
-* **Korrektur der während Benachrichtigungen inaktiven Symbolleiste:** Die obere Symbolleiste von **Adobe Experience Cloud** funktioniert jetzt vollständig, wenn [Popup](https://spectrum.adobe.com/page/toast/)-Benachrichtigungen angezeigt werden.
-* **Verbesserte Stabilität:** Es wurden Fehlergrenzen hinzugefügt, mit denen unerwartete Werte verarbeitet werden können. Dadurch wird verhindert, dass die gesamte Benutzeroberfläche abstürzt, wenn ein einzelner Renderer oder Validator fehlschlägt, was die Stabilität verbessert
+* **Rich-Text-Feldsynchronisierung**: Die Synchronisierung von Roh- und wiedergegebenen Inhalten in Rich-Text-Feldern im Eigenschaftenbereich wurde verbessert, um Probleme innerhalb von Edge Delivery Services-Projekten zu beheben, bei denen Rich-Text-Inhalte und die wiedergegebene Darstellung unterschiedlich sein können.
+* **Bearbeitungsmodusereignisse**: Der Universal Editor sendet jetzt zuverlässig Bearbeitungsmodusereignisse, auch nach dem Neuladen von Remote-Apps.
