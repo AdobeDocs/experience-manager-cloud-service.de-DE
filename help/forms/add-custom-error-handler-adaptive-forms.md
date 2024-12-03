@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 100%
+source-wordcount: '2336'
+ht-degree: 94%
 
 ---
 
@@ -222,19 +222,24 @@ Der benutzerdefinierte Fehler-Handler ist eine Funktion (Client-Bibliothek), die
 Um zu verstehen, wie man einen benutzerdefinierten Fehler-Handler mit der Aktion [Aufrufdienst des Regeleditors](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de#invoke) erstellt und verwendet, nehmen wir ein Beispiel für ein adaptives Formular mit zwei Feldern, **Haustier-ID** und **Haustiername** und verwenden einen benutzerdefinierten Fehler-Handler für das Feld **Haustier-ID**, um verschiedene Fehler zu überprüfen, die vom REST-Endpunkt zurückgegeben werden, der zum Aufrufen eines externen Dienstes konfiguriert ist, z. B. `200 - OK`, `404 - Not Found`, `400 - Bad Request`.
 
 So können Sie einen benutzerdefinierten Fehler-Handler zu einem adaptiven Formular hinzufügen und verwenden:
-1. [Erstellen eines benutzerdefinierten Fehler-Handlers](#create-custom-error-message)
-1. [Verwenden des Regeleditors zum Konfigurieren des benutzerdefinierten Fehler-Handlers](#use-custom-error-handler)
+1. [Hinzufügen einer benutzerdefinierten Funktion für Fehler-Handler](#1-add-custom-function-for-error-handler)
+2. [Verwenden des Regeleditors zum Konfigurieren des benutzerdefinierten Fehler-Handlers](#use-custom-error-handler)
 
-#### 1. Erstellen eines benutzerdefinierten Fehler-Handlers {#create-custom-error-message}
+#### 1. Fügen Sie die benutzerdefinierte Funktion für den Fehler-Handler hinzu.
 
-Gehen Sie wie folgt vor, um eine benutzerdefinierte Fehlerfunktion zu erstellen:
+>[!NOTE]
+>
+> Um zu erfahren, wie Sie benutzerdefinierte Funktionen hinzufügen, klicken Sie auf [Benutzerdefinierte Funktionen in einem adaptiven Formular erstellen, das auf Kernkomponenten basiert](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
-1. [Klonen Sie Ihr AEM Forms as a Cloud Service-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
-1. Erstellen Sie einen Ordner unter dem Ordner `[AEM Forms as a Cloud Service repository folder]/apps/`. Erstellen Sie beispielsweise einen Ordner mit dem Namen `experience-league`
-1. Navigieren Sie zu `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` und erstellen Sie einen `ClientLibraryFolder` als `clientlibs`.
-1. Erstellen Sie einen Ordner mit dem Namen `js`.
-1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Fügen Sie eine JavaScript-Datei hinzu, z. B. `function.js`. Die Datei enthält den Code für den benutzerdefinierten Fehler-Handler.
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. Fügen Sie den folgenden Code für den benutzerdefinierten Fehler-Handler in der JavaScript-Datei hinzu, z. B. `function.js`. Die Datei enthält den Code für den benutzerdefinierten Fehler-Handler.
 Fügen Sie folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die vom REST-Dienstendpunkt empfangenen Kopfzeilen in der Browser-Konsole anzuzeigen.
 
    ```javascript
@@ -253,43 +258,45 @@ Fügen Sie folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die vom
        }
    ```
 
-   Zum Aufrufen des Standard-Fehler-Handlers über Ihren benutzerdefinierten Fehler-Handler wird folgende Zeile des Beispiel-Codes verwendet:
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > Fügen Sie in der Datei `.content.xml` die Eigenschaften `allowProxy` und `categories` hinzu.
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >Beispiel: In diesem Fall wird [custom-errorhandler-name] als `customfunctionsdemo` bereitgestellt.
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. Speichern Sie die Datei `function.js`.
-1. Navigieren Sie zum Ordner `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Hinzufügen einer Textdatei als `js.txt`. Die Datei enthält:
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. Speichern Sie die Datei `js.txt`.\
-   Die erstellte Ordnerstruktur sieht wie folgt aus:
 
-   ![Erstellte Ordnerstruktur der Client-Bibliothek](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[!NOTE]
+    >
+    > * Um den Standard-Fehler-Handler von Ihrem benutzerdefinierten Fehler-Handler aufzurufen, wird die folgende Zeile des Beispielcodes verwendet: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) 
+    > * Fügen Sie in der Datei &quot;.content.xml&quot;die Eigenschaften &quot;allowProxy&quot;und &quot;categories&quot;hinzu, um den benutzerdefinierten Fehler-Handler zu verwenden. -Bibliothek in einem adaptiven Formular.
+    >
+    >   * `allowProxy = [Boolean]true`
+    >   * `categories= customfunctionDemo`
+    >       In diesem Fall wird beispielsweise [custom-errorhandler-name] als &quot;customfunctionDemo&quot;bereitgestellt.
 
-   >[!NOTE]
-   >
-   > Um mehr über das Erstellen benutzerdefinierter Funktionen zu erfahren, klicken Sie auf [benutzerdefinierte Funktionen im Regeleditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=de#write-rules).
 
-1. Fügen Sie die Änderungen mit den folgenden Befehlen hinzu, übertragen Sie sie und pushen Sie sie in das Repository:
+1. Fügen Sie die Änderungen hinzu, übertragen Sie sie und übertragen Sie sie in das Repository.
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [Ausführen der Pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline)
 
 Sobald die Pipeline erfolgreich ausgeführt wurde, steht der benutzerdefinierte Fehler-Handler im Regeleditor für adaptive Formulare zur Verfügung. Im Folgenden erfahren Sie, wie Sie einen benutzerdefinierten Fehler-Handler mit dem Aufrufdienst des Regeleditors in AEM Forms konfigurieren und verwenden.
