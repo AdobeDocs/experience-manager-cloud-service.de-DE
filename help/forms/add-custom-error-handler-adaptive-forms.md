@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 94%
+source-wordcount: '2323'
+ht-degree: 95%
 
 ---
 
@@ -185,7 +185,7 @@ Mithilfe der Aktion [Aufrufdienst des Regeleditors](https://experienceleague.ado
 
 Mit dem Regeleditor können Sie:
 * [Standard-Fehler-Handler-Funktion hinzufügen](#add-default-errror-handler)
-* [Hinzufügen einer benutzerdefinierten Fehler-Handler-Funktion](#add-custom-errror-handler)
+* [Hinzufügen einer benutzerdefinierten Fehler-Handler-Funktion](#add-custom-error-handler-function)
 
 
 ### Standard-Fehler-Handler-Funktion hinzufügen {#add-default-errror-handler}
@@ -208,7 +208,7 @@ Aufgrund dieser Regel werden die Werte, die Sie für **Haustier-ID** eingeben, b
 
 ![Anzeigen der Standardfehlermeldung beim Hinzufügen eines Standard-Fehler-Handlers in einem Formular zur Verarbeitung von Fehlerantworten](/help/forms/assets/default-error-message.png)
 
-### Hinzufügen einer benutzerdefinierten Fehler-Handler-Funktion {#add-custom-errror-handler}
+### Hinzufügen einer benutzerdefinierten Fehler-Handler-Funktion
 
 Sie können eine benutzerdefinierte Fehler-Handler-Funktion hinzufügen, um einige der folgenden Aktionen auszuführen:
 
@@ -222,14 +222,12 @@ Der benutzerdefinierte Fehler-Handler ist eine Funktion (Client-Bibliothek), die
 Um zu verstehen, wie man einen benutzerdefinierten Fehler-Handler mit der Aktion [Aufrufdienst des Regeleditors](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de#invoke) erstellt und verwendet, nehmen wir ein Beispiel für ein adaptives Formular mit zwei Feldern, **Haustier-ID** und **Haustiername** und verwenden einen benutzerdefinierten Fehler-Handler für das Feld **Haustier-ID**, um verschiedene Fehler zu überprüfen, die vom REST-Endpunkt zurückgegeben werden, der zum Aufrufen eines externen Dienstes konfiguriert ist, z. B. `200 - OK`, `404 - Not Found`, `400 - Bad Request`.
 
 So können Sie einen benutzerdefinierten Fehler-Handler zu einem adaptiven Formular hinzufügen und verwenden:
-1. [Hinzufügen einer benutzerdefinierten Funktion für Fehler-Handler](#1-add-custom-function-for-error-handler)
+1. [Hinzufügen einer benutzerdefinierten Funktion für Fehler-Handler](#1-add-the-custom-function-for-the-error-handler)
 2. [Verwenden des Regeleditors zum Konfigurieren des benutzerdefinierten Fehler-Handlers](#use-custom-error-handler)
 
 #### 1. Fügen Sie die benutzerdefinierte Funktion für den Fehler-Handler hinzu.
 
->[!NOTE]
->
-> Um zu erfahren, wie Sie benutzerdefinierte Funktionen hinzufügen, klicken Sie auf [Benutzerdefinierte Funktionen in einem adaptiven Formular erstellen, das auf Kernkomponenten basiert](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
+Um zu erfahren, wie Sie benutzerdefinierte Funktionen hinzufügen, klicken Sie auf [Benutzerdefinierte Funktionen in einem adaptiven Formular erstellen, das auf Kernkomponenten basiert](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -258,6 +256,20 @@ Fügen Sie folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die vom
        }
    ```
 
+   >[!NOTE]
+   >
+   > * Um den Standard-Fehler-Handler von Ihrem benutzerdefinierten Fehler-Handler aufzurufen, wird die folgende Zeile des Beispielcodes verwendet: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * Fügen Sie in der Datei `.content.xml` die Eigenschaften `allowProxy` und `categories` hinzu, um die Client-Bibliothek des benutzerdefinierten Fehler-Handlers in einem adaptiven Formular zu verwenden.
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       Beispiel: In diesem Fall wird [custom-errorhandler-name] als `customfunctionsdemo` bereitgestellt.
+
+
+1. Fügen Sie die Änderungen hinzu, übertragen Sie sie und übertragen Sie sie in das Repository.
+
+<!--
+
 <!--
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
@@ -271,22 +283,7 @@ Fügen Sie folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die vom
 3. Save the `js.txt` file.    
 The created folder structure looks like:
 
-    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
-
-
-    >[!NOTE]
-    >
-    > * Um den Standard-Fehler-Handler von Ihrem benutzerdefinierten Fehler-Handler aufzurufen, wird die folgende Zeile des Beispielcodes verwendet: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) 
-    > * Fügen Sie in der Datei &quot;.content.xml&quot;die Eigenschaften &quot;allowProxy&quot;und &quot;categories&quot;hinzu, um den benutzerdefinierten Fehler-Handler zu verwenden. -Bibliothek in einem adaptiven Formular.
-    >
-    >   * `allowProxy = [Boolean]true`
-    >   * `categories= customfunctionDemo`
-    >       In diesem Fall wird beispielsweise [custom-errorhandler-name] als &quot;customfunctionDemo&quot;bereitgestellt.
-
-
-1. Fügen Sie die Änderungen hinzu, übertragen Sie sie und übertragen Sie sie in das Repository.
-
-<!--
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
     using the below commands:
          
     ```javascript
@@ -295,8 +292,8 @@ The created folder structure looks like:
         git commit -a -m "Adding error handling files"
         git push
     ```
-
 -->
+
 1. [Ausführen der Pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline)
 
 Sobald die Pipeline erfolgreich ausgeführt wurde, steht der benutzerdefinierte Fehler-Handler im Regeleditor für adaptive Formulare zur Verfügung. Im Folgenden erfahren Sie, wie Sie einen benutzerdefinierten Fehler-Handler mit dem Aufrufdienst des Regeleditors in AEM Forms konfigurieren und verwenden.
