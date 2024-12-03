@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Erweiterbarkeit der Benutzeroberfläche
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ Sie können Ihre Erweiterungen der Asset-, Ordner- und Sammlungsebene hinzufüge
 >[!IMPORTANT]
 >
 > * Die Erweiterbarkeit der Benutzeroberfläche der AEM Assets-Ansicht ist mit [Assets Ultimate](/help/assets/assets-ultimate-overview.md) verfügbar.
-> * Die Erweiterbarkeit der Assets-Ansicht-Benutzeroberfläche steht Ihnen als Beta-Version zur Verfügung. Um frühzeitigen Zugriff auf die Erweiterbarkeit der Benutzeroberfläche der Assets-Ansicht zu erhalten, erstellen und senden Sie eine Adobe-Support-Anfrage](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).[
+> * Um Zugriff auf die Erweiterbarkeit der Benutzeroberfläche der Assets-Ansicht zu erhalten, erstellen und senden Sie eine Adobe-Support-Anfrage](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).[
 > * Sie können Feedback zur Dokumentation bereitstellen, indem Sie die Optionen für detailliertes Feedback erweitern und auf Problem melden klicken.
 
 ## <a id="1"></a> Zugriff auf die Assets-Ansicht
