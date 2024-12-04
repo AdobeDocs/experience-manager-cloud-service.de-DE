@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
 source-git-commit: ad28fd933a85c8b5ba1cdad4927f0a0a45ad478d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 74%
 | AEM as a Cloud Service | Dieser Artikel |
 
 
-Sie können die Komponente **Scribble-Signatur** verwenden, um eine (Scribble-)Signatur auf ein adaptives Formular zu zeichnen. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
+Sie können die Komponente **Freihandsignatur** verwenden, um eine Signatur (per Freihandfunktion) in ein adaptives Formular zu schreiben. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
 
 ![Dialogfeld für Freihandsignatur](assets/scribble-signature.png)
 
@@ -56,16 +56,16 @@ Sie können auf das Symbol **Konfigurieren** ![configure icon](assets/configure.
 ## Konfigurieren eines adaptiven Formulars zur Verwendung der Freihandsignatur {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus.
-1. Ziehen Sie die Komponente **Freihandsignatur** aus dem Komponentenbrowser in das adaptive Formular.
-1. Klicken Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet und Eigenschaften der Komponente „Freihandsignatur“ angezeigt. [Konfigurieren Sie die Eigenschaften der Scribble-Signatur](#properties-of-scribble-signature-component), wie im nächsten Abschnitt beschrieben.
+1. Ziehen Sie die Komponente **Freihandsignatur** aus dem Komponenten-Browser in das adaptive Formular.
+1. Klicken Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaften-Browser geöffnet und es werden die Eigenschaften der Komponente „Freihandsignatur“ angezeigt. [Konfigurieren Sie die Eigenschaften der Freihandsignatur](#properties-of-scribble-signature-component), wie im nächsten Abschnitt beschrieben.
 
-   ![Scribble-Signatur](/help/forms/assets/scribblesig.png)
+   ![Freihandsignatur](/help/forms/assets/scribblesig.png)
 
 1. Wählen Sie das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png) aus, um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
 
-## Eigenschaften der Scribble-Signatur-Komponente konfigurieren
+## Konfigurieren Sie die Eigenschaften der Komponente „Freihandsignatur“.
 
-Im Dialogfeld &quot;Konfigurieren&quot;können Sie die Scribble-Signatur-Komponente für Besucher einfach anpassen.
+Im Dialogfeld „Konfigurieren“ können Sie die Komponente „Freihandsignatur“ für Besuchende ganz einfach anpassen.
 
 ### Registerkarte „Allgemein“
 
@@ -81,14 +81,14 @@ Im Dialogfeld &quot;Konfigurieren&quot;können Sie die Scribble-Signatur-Kompone
   ![Rich-Text-Unterstützung](/help/forms/assets/richtext-support-title.png)
 
 * **Titel ausblenden**: Wählen Sie die Option aus, um den Titel der Komponente auszublenden.
-* **Erforderliches Feld** - Wählen Sie die Option aus, um das Feld als Pflichtfeld festzulegen.
-* **Erforderliche Feldmeldung** - Die **Erforderliche Feldmeldung** ist eine anpassbare Meldung, die Benutzern angezeigt wird, wenn sie versuchen, ein Formular zu senden, ohne ein Pflichtfeld auszufüllen.
-* **Datenmodell-Bindungsverweis** - Ein Bindungsverweis ist ein Verweis auf ein Datenelement, das in einer externen Datenquelle gespeichert und in einem Formular verwendet wird. Sie können mit dem Bindungsverweis Daten dynamisch an Formularfelder binden, sodass das Formular die aktuellsten Daten aus der Datenquelle anzeigen kann. Beispielsweise kann ein Bindungsverweis verwendet werden, um den Namen und die Adresse von Kundinnen und Kunden in einem Formular anzuzeigen, basierend auf der im Formular eingegebenen Kunden-ID. Der Bindungsverweis kann auch verwendet werden, um die Datenquelle mit den im Formular eingegebenen Daten zu aktualisieren. Auf diese Weise können Sie mit AEM Forms Formulare erstellen, die mit externen Datenquellen interagieren und so eine nahtlose Benutzererfahrung bei der Datenerfassung und Datenverwaltung bieten.
-* **Objekt ausblenden** - Wählen Sie die Option, um die Komponente aus dem Formular auszublenden. Die Komponente bleibt für andere Zwecke verfügbar, z. B. für Berechnungen im Regel-Editor. Dies ist nützlich, wenn Sie Informationen speichern müssen, die Benutzende nicht sehen oder direkt ändern müssen.
-* **Objekt deaktivieren** - Wählen Sie die Option zum Deaktivieren der Komponente aus. Die deaktivierte Komponente ist nicht aktiv und Endbenutzende können sie nicht bearbeiten. Benutzende können den Wert des Felds anzeigen, ihn jedoch nicht ändern. Die Komponente bleibt für andere Zwecke verfügbar, z. B. für Berechnungen im Regel-Editor.
-* **Seitenverhältnis** - Das Seitenverhältnis in einer Freihandsignaturkomponente definiert die proportionale Beziehung zwischen Breite und Höhe.
-* **Feldlayout** - Die Option **Feldlayout** bestimmt, wie Formularelemente, einschließlich Beschriftungen und Fehlermeldungen, relativ zur Komponente positioniert werden. Die **Beschriftung und Fehler als Anfang des Widgets** platzieren die Beschriftung (Beschriftung) des Felds und Fehlermeldungen über der Komponente. **Von Adaptiver Formularkonfiguration übernehmen** verwendet die standardmäßigen Feldlayouteinstellungen, die in der Adaptive Form-Konfiguration angegeben sind.
-* **CSS-Klasse** - Mit der **CSS-Klasse** können Sie benutzerdefinierte Stile auf eine Komponente anwenden, indem Sie eine oder mehrere CSS-Klassen zuweisen, die in Ihrem Stylesheet definiert sind. Sie ermöglicht eine konsistente Formatierung und Layoutanpassung in Ihrem gesamten adaptiven Formular.
+* **Erforderliches Feld**: Wählen Sie diese Option aus, um das Feld als Pflichtfeld festzulegen.
+* **Meldung zu erforderlichem Feld**: Die **Meldung zu erforderlichem Feld** ist eine anpassbare Meldung, die Benutzenden angezeigt wird, wenn sie versuchen, ein Formular zu senden, ohne ein Pflichtfeld auszufüllen.
+* **Datenmodell-Objektverweis**: Ein Objekt- oder Bindungsverweis referenziert ein Datenelement, das in einer externen Datenquelle gespeichert ist und in einem Formular verwendet wird. Sie können mit dem Bindungsverweis Daten dynamisch an Formularfelder binden, sodass das Formular die aktuellsten Daten aus der Datenquelle anzeigen kann. Beispielsweise kann ein Bindungsverweis verwendet werden, um den Namen und die Adresse von Kundinnen und Kunden in einem Formular anzuzeigen, basierend auf der im Formular eingegebenen Kunden-ID. Der Bindungsverweis kann auch verwendet werden, um die Datenquelle mit den im Formular eingegebenen Daten zu aktualisieren. Auf diese Weise können Sie mit AEM Forms Formulare erstellen, die mit externen Datenquellen interagieren und so eine nahtlose Benutzererfahrung bei der Datenerfassung und Datenverwaltung bieten.
+* **Objekt ausblenden**: Wählen Sie diese Option aus, um die Komponente im Formular auszublenden. Die Komponente bleibt für andere Zwecke verfügbar, z. B. für Berechnungen im Regel-Editor. Dies ist nützlich, wenn Sie Informationen speichern müssen, die Benutzende nicht sehen oder direkt ändern müssen.
+* **Objekt deaktivieren**: Wählen Sie diese Option aus, um die Komponente zu deaktivieren. Die deaktivierte Komponente ist nicht aktiv und Endbenutzende können sie nicht bearbeiten. Benutzende können den Wert des Felds anzeigen, ihn jedoch nicht ändern. Die Komponente bleibt für andere Zwecke verfügbar, z. B. für Berechnungen im Regel-Editor.
+* **Seitenverhältnis**: Das Seitenverhältnis in einer Komponente „Freihandsignatur“ definiert die proportionale Beziehung zwischen Breite und Höhe.
+* **Feld-Layout**: Die Option **Feld-Layout** bestimmt, wie Formularelemente, einschließlich Labels (Beschriftungen) und Fehlermeldungen, relativ zur Komponente positioniert werden. Mit **Beschriftung und Fehler oben im Widget** werden die Beschriftung (das Label) des Felds und Fehlermeldungen über der Komponente positioniert. Die Option **Aus Konfiguration des adaptiven Formulars übernehmen** nutzt für das Layout der Felder die standardmäßigen Einstellungen, die in der Konfiguration des adaptiven Formulars angegeben sind.
+* **CSS-Klasse**: Mit der **CSS-Klasse** können Sie benutzerdefinierte Stile auf eine Komponente anwenden, indem Sie eine oder mehrere in Ihrem Stylesheet definierte CSS-Klassen zuweisen. Sie ermöglicht eine konsistente Formatierung und Layout-Anpassung im gesamten adaptiven Formular.
 
 ### Hilfe-Inhalt
 
@@ -98,7 +98,7 @@ Im Dialogfeld &quot;Konfigurieren&quot;können Sie die Scribble-Signatur-Kompone
 
 * **Kurzbeschreibung immer anzeigen**: Aktivieren Sie diese Option, um die Kurzbeschreibung unterhalb der Komponente anzuzeigen.
 
-* **Lange Beschreibung** - Bezieht sich auf zusätzliche Informationen oder Anleitungen, die dem Benutzer bereitgestellt werden, um ihn beim korrekten Ausfüllen eines Formularfelds zu unterstützen. Er erscheint, wenn Benutzende auf das Hilfesymbol (i) neben der Komponente klicken. Es bietet detailliertere Informationen als die Beschriftung oder den Platzhaltertext eines Formularfelds und soll dem Benutzer dabei helfen, die Anforderungen oder Einschränkungen des Felds zu verstehen. Er kann auch Vorschläge oder Beispiele anbieten, um das Ausfüllen des Formulars einfacher und genauer zu gestalten.
+* **Lange Beschreibung**: Diese bezieht sich auf zusätzliche Informationen oder Anleitungen, die den Benutzenden bereitgestellt werden, um sie beim korrekten Ausfüllen eines Formularfelds zu unterstützen. Sie erscheint, wenn Benutzende auf das Hilfesymbol (i) neben der Komponente klicken. Sie enthält detailliertere Informationen als der Label- oder Platzhaltertext eines Formularfelds und soll den Benutzenden dabei helfen, die Anforderungen oder Einschränkungen des Felds zu verstehen. Er kann auch Vorschläge oder Beispiele anbieten, um das Ausfüllen des Formulars einfacher und genauer zu gestalten.
 
 ### Registerkarte „Barrierefreiheit“ {#accessibility}
 
@@ -106,10 +106,10 @@ Im Dialogfeld &quot;Konfigurieren&quot;können Sie die Scribble-Signatur-Kompone
 
 Auf der Registerkarte **„Barrierefreiheit“** werden Werte für [ARIA-Barrierefreiheitsbeschriftungen](https://www.w3.org/WAI/standards-guidelines/aria/) für die Komponente festgelegt. Es stehen verschiedene Optionen zur Verfügung für die Verwendung des Textes für die Bildschirmlesehilfe:
 
-* **Bildschirmpriorität** - Bildschirmlesehilfen-Rangfolge bezieht sich auf zusätzlichen Reader, der speziell für Hilfstechnologien wie Bildschirmlesehilfen vorgesehen ist, die von sehbehinderten Readern verwendet werden. Dieser Text enthält eine Audiobeschreibung des Zwecks des Formularfelds und kann Informationen über den Titel, die Beschreibung, den Namen und alle relevanten Nachrichten (benutzerdefinierten Text) des Felds enthalten. Der Text der Bildschirmlesehilfe hilft sicherzustellen, dass das Formular allen Benutzenden zugänglich ist, auch Personen mit Sehschwäche, und bietet ihnen ein umfassendes Verständnis des Formularfelds und seiner Anforderungen.
+* **Bildschirmlesehilfen-Rangfolge**: Die Bildschirmlesehilfen-Rangfolge bezieht sich auf zusätzlichen Text, der von Hilfstechnologien wie etwa Bildschirmlesehilfen für sehbehinderte Personen vorgelesen wird. Dieser Text enthält eine Audiobeschreibung des Zwecks des Formularfelds und kann Informationen über den Titel, die Beschreibung, den Namen und alle relevanten Nachrichten (benutzerdefinierten Text) des Felds enthalten. Der Text der Bildschirmlesehilfe hilft sicherzustellen, dass das Formular allen Benutzenden zugänglich ist, auch Personen mit Sehschwäche, und bietet ihnen ein umfassendes Verständnis des Formularfelds und seiner Anforderungen.
 
    * **Benutzerdefinierter Text**: Wählen Sie diese Option aus, um den benutzerdefinierten Text für ARIA-Barrierefreiheitsbeschriftungen zu verwenden. Wenn Sie diese Option auswählen, wird das Benutzerdefinierter Dialogfeld „Text“ angezeigt. Sie können relevante Informationen im Benutzerdefinierter Dialogfeld „Text“ hinzufügen.
-   * **Kurze Beschreibung**: Wählen Sie diese Option, um die Beschreibung für ARIA-Barrierefreiheitsbeschriftungen zu verwenden.
+   * **Kurzbeschreibung**: Wählen Sie diese Option aus, um die Beschreibung für ARIA-Barrierefreiheitsbeschriftungen zu verwenden.
    * **Titel**: Wählen Sie diese Option aus, um den Titel für ARIA-Barrierefreiheitsbeschriftungen zu verwenden.
    * **Name**: Wählen Sie diese Option aus, um den Namen für ARIA-Barrierefreiheitsbeschriftungen zu verwenden.
    * **Keine**: Wählen Sie diese Option aus, wenn Sie keine ARIA-Barrierefreiheitsbezeichnungen hinzufügen möchten.

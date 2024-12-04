@@ -5,9 +5,9 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -169,16 +169,16 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Aufnahmefehler aufgrund von Cloud-Umgebung nicht im Bereitschaftszustand {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### Aufnahmefehler aufgrund eines fehlenden Bereitschaftszustands der Cloud-Umgebung {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="Cloud-Umgebung befindet sich nicht im Bereitschaftsstatus"
+>title="Cloud-Umgebung nicht bereit"
 >abstract="In seltenen Fällen kann es in der Ziel-Cloud-Umgebung zu unerwarteten Problemen kommen, die dazu führen, dass die Aufnahme fehlschlägt."
 
-In seltenen Fällen kann es zu unerwarteten Cloud Services in der Zielgruppen-Umgebung der Aufnahme kommen. Daher schlägt die Aufnahme fehl, da die Umgebung nicht im erwarteten Bereitschaftszustand ist. Überprüfen Sie das Aufnahmeprotokoll, um weitere Details zum Fehlerstatus anzuzeigen.
+In seltenen Fällen kann es in der für die Aufnahme vorgesehenen Cloud Service-Zielumgebung zu unerwarteten Problemen kommen. Die Aufnahme schlägt fehl, da sich die Umgebung nicht im erwarteten Bereitschaftszustand befindet. Überprüfen Sie das Aufnahmeprotokoll, um weitere Details zum Fehlerstatus anzuzeigen.
 
-Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie einige Minuten, bevor Sie die Aufnahme erneut versuchen. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support mit dem Fehlerstatus.
+Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie einige Minuten, bevor Sie einen weiteren Aufnahmeversuch unternehmen. Wenn das Problem weiterhin besteht, wenden Sie sich unter Angabe des Fehlerstatus an den Kunden-Support.
 
 ### Fehler bei Auffüllaufnahme aufgrund einer Verletzung der Eindeutigkeitsbeschränkung {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 

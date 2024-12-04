@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,9 +41,9 @@ Das Lizenz-Dashboard von Cloud Manager bietet einfachen Zugriff auf Berechtigung
 
 Das Dashboard ist in drei Abschnitte unterteilt, die Ihnen Folgendes zeigen:
 
-* **Lösungen** - Welche Lösungen haben Sie lizenziert?
-* **Add-ons** - Welche Add-ons zu Ihren lizenzierten Lösungen, die Sie verfügbar haben.
-* **Sonstige Berechtigungen** - Welche Sandbox- und Entwicklungsumgebung und andere Berechtigungen können in Ihrem Mandanten genutzt werden.
+* **Lösungen**: Die von Ihnen lizenzierten Lösungen.
+* **Add-ons**: Die mit Ihren lizenzierten Lösungen verfügbaren Add-ons.
+* **Sonstige Berechtigungen**: Die Sandbox- und Entwicklungsumgebung sowie sonstigen Berechtigungen, die mandantenseitig genutzt werden können.
 
 In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfügbar sind und wie sie verwendet werden. Derzeit werden nur Sites- und Asset-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
 

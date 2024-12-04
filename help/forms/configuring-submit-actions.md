@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
 source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3929'
 ht-degree: 100%
 

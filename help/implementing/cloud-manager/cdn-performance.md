@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Das Dashboard enthält einen Gesamtwert für die CDN-Leistung sowie bei Bedarf T
 
 ![CDN-Leistungs-Dashboard](assets/cdn-performance-dashboard.png)
 
-Klicken Sie für Details zu Ihrer CDN-Leistung und Vorschläge zur Verbesserung auf **Trend anzeigen**.
+Für Details zu Ihrer CDN-Leistung sowie für Vorschläge, wie Sie diese verbessern können, klicken Sie auf **Trend anzeigen**.
 
 ![Leistungs-Trend](assets/cdn-performance-trend.png)
 

@@ -5,9 +5,9 @@ exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 1a55c35814d6651173f7bdeaa677a7dbdec13f73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Die bestehende Verwendung des [Assets-HTTP-API](https://experienceleague.adobe.c
 
 >[!NOTE]
 >
->Für den Zugriff auf die OpenAPI ist eine Autorisierung erforderlich, wenn Sie nicht bei AEM angemeldet sind, z. B. wenn die OpenAPI von einem anderen Produkt im Rahmen einer Integration verwendet wird.
+>Für den Zugriff auf die OpenAPI ist eine Autorisierung erforderlich, wenn Sie nicht bei AEM angemeldet sind, z. B. wenn die OpenAPI von einem anderen Produkt im Rahmen einer Integration verwendet wird.
 >
->Einzelheiten zur Autorisierung Ihres Zugriffs auf die OpenAPI finden Sie unter [OpenAPI-basierte APIs](/help/implementing/developing/open-api-based-apis.md) .
+>Weitere Informationen zur Autorisierung Ihres Zugriffs auf die OpenAPI finden Sie unter [OpenAPI-basierte APIs](/help/implementing/developing/open-api-based-apis.md).
 
 >[!NOTE]
 >

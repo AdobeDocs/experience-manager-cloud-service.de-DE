@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1276'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## Einführung {#introduction}
 
-Inhaltsanfragen beziehen sich auf Anfragen an AEM Sites, einschließlich Anfragen im Zusammenhang mit Edge Delivery Services oder kundenseitig bereitgestellten Caching-Systemen wie einem Content Delivery Network. Diese Anfragen stellen Inhalte oder Daten im HTML-Format über Seitenansichten (z. B. Seiten und Experience Fragments) oder im JSON-Format über API-Aufrufe (Headless) bereit. Inhaltsanfragen werden entweder als ein Seitenaufruf oder als fünf API-Aufrufe gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält.  Bestimmte HTTP-Anfragen werden beim Zählen von Inhaltsanfragen ein- oder ausgeschlossen. Die vollständige Liste der eingeschlossenen und ausgeschlossenen HTTP-Anfragen sowie deren technische Definitionen finden Sie in der Dokumentation.
+Inhaltsanfragen beziehen sich auf Anfragen an AEM Sites, einschließlich Anfragen im Zusammenhang mit Edge Delivery Services oder kundenseitig bereitgestellten Caching-Systemen wie einem Content Delivery Network. Diese Anfragen stellen Inhalte oder Daten im HTML-Format über Seitenansichten (z. B. Seiten und Experience Fragments) oder im JSON-Format über API-Aufrufe (Headless) bereit. Inhaltsanfragen werden entweder als ein Seitenaufruf oder als fünf API-Aufrufe gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält.  Bestimmte HTTP-Anfragen werden beim Zählen von Inhaltsanfragen ein- bzw. ausgeschlossen. Die vollständige Liste der ein- und ausgeschlossenen HTTP-Anfragen sowie deren technische Definitionen finden Sie in der Dokumentation.
 
 ## Über Cloud Service-Inhaltsanfragen {#understanding-cloud-service-content-requests}
 

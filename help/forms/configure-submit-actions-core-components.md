@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
 source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Detaillierte Informationen zur folgenden Übermittlungsaktion finden Sie unter:
 * [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
 * [Aufrufen eines AEM-Workflows](/help/forms/configure-submit-action-workflow.md)
-* [An Marketo-Umgebung übermitteln](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [An Marketo Engage senden](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 Sie können ein adaptives Formular auch an andere Speicherkonfigurationen senden:
 

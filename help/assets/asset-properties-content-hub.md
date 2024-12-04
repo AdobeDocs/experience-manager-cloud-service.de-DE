@@ -1,16 +1,16 @@
 ---
-title: Vorschau des Assets und seiner Eigenschaften in  [!DNL the Content Hub]
-description: Erfahren Sie, wie Sie eine Vorschau von Assets und Eigenschaften in [!DNL Content Hub] anzeigen.
+title: Vorschau von Assets und ihrer Eigenschaften in  [!DNL the Content Hub]
+description: Erfahren Sie, wie Sie in  [!DNL Content Hub] Assets und Eigenschaften in einer Vorschau anzeigen.
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '682'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Asset-Vorschau und Eigenschaften in Content Hub {#asset-properties}
+# Vorschau von Assets und ihrer Eigenschaften in Content Hub {#asset-properties}
 
 | [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -25,17 +25,17 @@ ht-degree: 73%
 
 [!DNL The Content Hub] ermöglicht Ihnen das Anzeigen von Informationen über das Asset, was für eine effiziente Asset-Verteilung von entscheidender Bedeutung ist. Es handelt sich um die Sammlung aller für ein Asset verfügbaren Daten.
 
-Die Anzeige der Asset-Vorschau und der zugehörigen Eigenschaften hilft Ihnen bei der weiteren Kategorisierung von Assets und ist hilfreich, wenn die Menge an digitalen Informationen zunimmt. Es ist möglich, mehrere Hundert Dateien zu verwalten, basierend nur auf den Dateinamen, den Miniaturbildern und dem Speicherbedarf. Dieser Ansatz ist jedoch nicht skalierbar, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Assets steigt. Darüber hinaus steigt der Wert eines digitalen Assets, da sich das Asset in den folgenden Punkten verbessert:
+Durch die Anzeige von Assets und ihrer Eigenschaften in einer Vorschau können Sie Assets genauer einteilen. Außerdem erweist sich dies als nützlich, wenn die Menge digitaler Daten ansteigt. Es ist möglich, mehrere Hundert Dateien zu verwalten, basierend nur auf den Dateinamen, den Miniaturbildern und dem Speicherbedarf. Dieser Ansatz ist jedoch nicht skalierbar, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Assets steigt. Darüber hinaus steigt der Wert eines digitalen Assets, da sich das Asset in den folgenden Punkten verbessert:
 
 * besser zugänglich – Systeme und Benutzende können es leicht finden.
-* Einfacheres Handeln - Sie verfügen über umfassende Informationen zu den Visualisierungen von Assets und den zugehörigen Informationen, damit Sie schneller und vertrauensvoller darauf reagieren können.
+* einfacheres Handeln – Sie verfügen über umfassende Informationen zu den Visualisierungen von Assets und den zugehörigen Informationen und können so schneller und sicherer mit ihnen verfahren.
 * vollständig – das Asset enthält mehr Informationen und Kontext.
 
 ## Voraussetzungen {#prerequisites}
 
 [Content Hub-Benutzende](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel genannten Aktionen ausführen.
 
-## Vorschau des Assets und seiner Eigenschaften {#properties-ui}
+## Anzeigen von Assets und ihrer Eigenschaften in einer Vorschau {#properties-ui}
 
 Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich genauer ansehen. Mit der Vorschaufunktion können Sie nicht nur die Bilder, sondern auch einige andere unterstützte Asset-Typen anzeigen. Sie können nicht nur das Asset, sondern auch seine detaillierten Informationen anzeigen und andere Aktionen durchführen. Um Informationen zu einem Asset anzuzeigen, navigieren Sie zum Asset oder [suchen](search-assets.md) Sie nach dem Asset und klicken Sie dann darauf, um seine Eigenschaften zu öffnen. Die folgende Abbildung zeigt die Felder, die auf einer Seite mit Asset-Eigenschaften verfügbar sind:
 
@@ -54,9 +54,9 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
 * **K:** Vorschaufenster schließen
 * **L:** Informationen zu einem Asset, einschließlich Titel, Format, Größe, Auflösung, Tags, Farb-Tags und Smart-Tags.
 
-## Unterstützte Asset-Formate {#supported-formats}
+## Unterstützte Dateiformate {#supported-formats}
 
-[!DNL Content Hub] unterstützt alle Asset-Typen und -Formate, die das zugrunde liegende [!DNL Assets]-Repository unterstützt. In der folgenden Tabelle sind die wichtigsten Dateiformate in [!DNL the Content Hub] aufgeführt, die zusätzliche Unterstützung für die visuelle Vorschau von Assets bieten:
+[!DNL Content Hub] unterstützt alle Asset-Typen und -Formate, die das zugrunde liegende [!DNL Assets]-Repository unterstützt. In der folgenden Tabelle sind die wichtigsten Dateiformate in [!DNL the Content Hub] aufgeführt, die zusätzliche Unterstützung für eine visuelle Asset-Vorschau bieten:
 
 <table> 
     <tbody>
@@ -106,7 +106,7 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
 
 ### Abgeleitete Eigenschaften {#derived-properties}
 
-Einige Eigenschaften für Assets, die in [!DNL Content Hub] angezeigt werden, werden abgeleitet oder automatisch generiert, wenn Assets in [!DNL Assets] hochgeladen und dann für die Verfügbarkeit auf [!DNL Content Hub] genehmigt werden. Im Folgenden finden Sie eine Liste solcher Eigenschaften:
+Einige Asset-Eigenschaften, die in [!DNL Content Hub] angezeigt werden, werden abgeleitet oder automatisch generiert, wenn Assets in [!DNL Assets] hochgeladen und dann zur Nutzung in [!DNL Content Hub] genehmigt werden. Im Folgenden finden Sie eine Liste einiger dieser Eigenschaften:
 
 * **Größe:** Die Größe entspricht der Größe der im zugrunde liegenden Repository gespeicherten Asset-Binärdatei.
 
@@ -126,10 +126,10 @@ Einige Eigenschaften für Assets, die in [!DNL Content Hub] angezeigt werden, we
 
 Es gibt auch Eigenschaften, die beim Hinzufügen von Assets zu Content Hub angegeben werden. Weitere Informationen finden Sie unter [Hinzufügen markenkonformer Assets zu Content Hub](upload-brand-approved-assets.md). Diese Eigenschaften werden ebenfalls auf der Seite mit den Asset-Eigenschaften angezeigt.
 
-Administratoren können auch die Eigenschaften konfigurieren, die für jedes Asset angezeigt werden:
+Admins können auch die Eigenschaften konfigurieren, die für jedes Asset angezeigt werden:
 
-* In der Benutzeroberfläche für die Asset-Vorschau: siehe [Konfigurieren der Content Hub-Benutzeroberfläche](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
-* Informationen zu Asset-Karten in Suchergebnissen oder Sammlungen: siehe [Konfigurieren der Content Hub-Benutzeroberfläche](configure-content-hub-ui-options.md#asset-card).
+* in der Benutzeroberfläche für die Asset-Vorschau (siehe [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#configure-asset-details-content-hub))
+* auf Asset-Karten in Suchergebnissen oder Sammlungen (siehe [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#asset-card))
 
 <!--
 

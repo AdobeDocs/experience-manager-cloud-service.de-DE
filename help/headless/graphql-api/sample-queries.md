@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
 source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1940'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ berei
 
 >[!IMPORTANT]
 >
->Verschiedene Funktionen der GraphQL-API für die Verwendung mit Inhaltsfragmenten sind über das Early Adopter-Programm verfügbar.
+>Verschiedene Funktionen der GraphQL-API für Inhaltsfragmente sind über das Early-Adopter-Programm verfügbar.
 >
->Informationen zum Status und zur Anwendung bei Interesse finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1492,16 +1492,16 @@ Die folgende Abfrage gibt alle `attachments` zurück – ein bestimmtes Feld (Un
 }
 ```
 
-### Beispielabfragen für ein Inhaltsfragment eines bestimmten Modells mit UUID-Referenzen {#sample-wknd-fragment-specific-model-uuid-references}
+### Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit UUID-Referenzen {#sample-wknd-fragment-specific-model-uuid-references}
 
 Diese Abfragen untersuchen:
 
-* die UUID für ein Inhaltsfragment und für referenzierte Inhaltsfragmente oder Assets
-* das Ergebnis wird über die JSON-Eigenschaft `_id` zurückgegeben
+* die UUID für ein Inhaltsfragment und für referenzierte Inhaltsfragmente oder Assets;
+* das Ergebnis wird über die JSON-Eigenschaft `_id` zurückgegeben.
 
-#### Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mithilfe einer UUID-Referenz {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+#### Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer UUID-Referenz {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
 
-Die folgende Abfrage gibt alle Inhaltsverweise mit `_id` und `_path` zurück:
+Die folgende Abfrage gibt alle Inhaltsreferenzen mit `_id` und `_path` zurück:
 
 ```graphql
 {
@@ -1533,7 +1533,7 @@ Die folgende Abfrage gibt alle Inhaltsverweise mit `_id` und `_path` zurück:
 
 #### Beispielabfrage für Inhaltsfragmente nach UUID-Referenz {#sample-wknd-fragment-specific-model-by-uuid-reference}
 
-Die folgende Abfrage gibt alle Inhaltsverweise zurück, die sich auf ein bestimmtes `_id` beziehen:
+Die folgende Abfrage gibt alle Inhaltsreferenzen zurück, die sich auf eine bestimmte `_id` beziehen:
 
 ```graphql
 {

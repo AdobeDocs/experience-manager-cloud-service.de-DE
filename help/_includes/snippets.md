@@ -1,8 +1,8 @@
 ---
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1323'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -133,7 +133,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 * [Verschiedene Anwendungsfälle des Regeleditors für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
 * [Unterschiede in verschiedenen Editionen des Regeleditors](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Verwenden von asynchronen Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
-* [Aufrufen von Dienstverbesserungen im Visual Rule Editor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [Aufrufen von Diensterweiterungen im visuellen Regeleditor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
 * [Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
 * [Umfangsobjekt in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md)
@@ -151,8 +151,8 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 * [Integrieren von Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
 * [Konfigurieren eines neuen Formulars zur Integration mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Marketo Engage-Datenquelle für vorhandene adaptive Forms konfigurieren](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Konfigurieren der Sendeaktion auf Marketo Engage für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Konfigurieren von Marketo Engage-Datenquellen für vorhandene adaptive Formulare](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Konfigurieren der Aktion „An Marketo Engage senden“ für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#allowlist-frontend-pipeline}
 

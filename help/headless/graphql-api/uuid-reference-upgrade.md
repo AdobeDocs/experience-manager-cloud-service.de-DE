@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren Ihrer Inhaltsfragmente für UUID-Referenzen
-description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte UUID-Referenzen in Adobe Experience Manager as a Cloud Service für die Bereitstellung Headless Content aktualisieren.
+description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte UUID-Referenzen in Adobe Experience Manager as a Cloud Service zur Bereitstellung von Headless-Inhalten aktualisieren.
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5aa04f3b042f8e9f9af97148ceab0288ff210238
-workflow-type: tm+mt
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
+source-git-commit: f740301df609e534f1ef770921ea9431de17f846
+workflow-type: ht
 source-wordcount: '1157'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -14,124 +15,124 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Verschiedene Funktionen der GraphQL-API für die Verwendung mit Inhaltsfragmenten sind über das Early Adopter-Programm verfügbar.
+>Verschiedene Funktionen der GraphQL-API für Inhaltsfragmente sind über das Early-Adopter-Programm verfügbar.
 >
->Informationen zum Status und zur Anwendung bei Interesse finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-Um die Stabilität Ihrer GraphQL-Filter zu optimieren, können Sie die Inhalts- und Fragmentverweise in Ihren Inhaltsfragmenten so aktualisieren, dass sie universell eindeutige IDs (UUID) verwenden.
+Um die Stabilität Ihrer GraphQL-Filter zu optimieren, können Sie die Inhalts- und Fragmentreferenzen in Ihren Inhaltsfragmenten so aktualisieren, dass sie Universally Unique Identifiers (UUIDs) verwenden.
 
-Ursprünglich stellten Inhaltsfragmentmodelle die Datentypen **Inhaltsreferenz** und **Fragmentreferenz** bereit. Beide Verweise verwenden einen Pfad, um auf die referenzierte Ressource zu verweisen. Dieser Pfad kann veraltet sein, wenn die Ressource verschoben wird. Obwohl solche Verweise in den meisten Szenarien mehr als ausreichen, wurden Inhaltsfragmentmodelle erweitert, um auch Verweise auf Grundlage einer UUID bereitzustellen:
+Ursprünglich wurden bei Inhaltsfragmentmodellen die Datentypen **Inhaltsreferenz** und **Fragmentreferenz** bereitgestellt. Beide Referenzen verweisen mithilfe eines Pfads auf die referenzierte Ressource. Dieser Pfad kann veraltet sein, wenn die Ressource verschoben wurde. Obwohl solche Referenzen in den meisten Fällen mehr als ausreichend sind, wurden die Inhaltsfragmentmodelle erweitert, um auch Referenzen auf Grundlage einer UUID bereitzustellen:
 
 * **Inhaltsreferenz (UUID)**
-* **Fragmentverweis (UUID)**.
+* **Fragmentreferenz (UUID)**.
 
-Diese neuen Referenztypen können sowohl in neuen Inhaltsfragmentmodellen und -fragmenten als auch zur Erweiterung vorhandener Instanzen verwendet werden.
+Diese neuen Referenztypen können sowohl in neuen Inhaltsfragmentmodellen und Inhaltsfragmenten als auch zur Erweiterung vorhandener Instanzen verwendet werden.
 
-Um vorhandene Inhaltsfragmente und -modelle zu aktualisieren, können Sie das hier beschriebene Verfahren ausführen.
+Um vorhandene Inhaltsfragmente und Inhaltsfragmentmodelle zu aktualisieren, können Sie das hier beschriebene Verfahren durchführen.
 
 >[!CAUTION]
 >
->Vor dem Ausführen des Aktualisierungsvorgangs sollten Sie immer [einen Probelauf ausführen](#execute-a-dry-run) , um potenzielle Probleme mit Ihrem Inhalt hervorzuheben.
+>Vor der Aktualisierung sollten Sie immer [einen Probelauf ausführen](#execute-a-dry-run), um etwaige Probleme im Zusammenhang mit Ihrem Inhalt zu ermitteln.
 
-## Was wird aktualisiert? {#what-is-upgraded}
+## Was aktualisiert wird {#what-is-upgraded}
 
-Die folgenden Aktualisierungen werden vorgenommen:
+Die folgenden Aktualisierungen werden durchgeführt:
 
 * Felder der Datentypen:
-   * **Inhaltsreferenz** wird in **Inhaltsreferenz (UUID)** konvertiert.
-   * **Fragmentverweis** wird in **Fragmentverweis (UUID)** konvertiert.
-* Die Werte der pfadbasierten Verweise in diesen Feldern werden durch die entsprechenden UUIDs ersetzt
+   * **Inhaltsreferenz** wird in **Inhaltsreferenz (UUID)** umgewandelt.
+   * **Fragmentreferenz** wird in **Fragmentreferenz (UUID)** umgewandelt.
+* Die Werte der pfadbasierten Referenzen in diesen Feldern werden durch die entsprechenden UUIDs ersetzt.
 
 >[!NOTE]
 >
->Nach der Aktualisierung sind beide Datentypen weiterhin im Inhaltsfragmentmodell-Editor verfügbar. Sie können neue Felder basierend auf beiden Typen erstellen (es wird jedoch erwartet, dass Sie die UUID-basierten Typen verwenden) und die Aktualisierung bei Bedarf erneut durchführen.
+>Nach der Aktualisierung sind beide Datentypen weiterhin im Inhaltsfragmentmodelleditor verfügbar. Sie können neue Felder basierend auf beiden Typen erstellen (es wird jedoch die Verwendung der UUID-basierten Typen erwartet) und die Aktualisierung bei Bedarf erneut durchführen.
 
-## Inhalt NICHT aktualisiert {#what-is-not-upgraded}
+## Was NICHT aktualisiert wird {#what-is-not-upgraded}
 
-Die folgenden Referenzen werden nicht aktualisiert:
+Die folgenden Verweise (Referenzen) werden nicht aktualisiert:
 
-* Seitenverweise - UUIDs werden noch nicht unterstützt
-* Alle ungültigen Verweise, z. B. wenn das Ziel des Inhaltsfragmentpfads oder des Asset-Pfads nicht vorhanden ist
+* Seitenverweise – UUIDs werden noch nicht unterstützt.
+* Alle ungültigen Referenzen, z. B. wenn das Ziel des Inhaltsfragment- oder Asset-Pfads nicht vorhanden ist.
 
-   * Ungültige Referenzen werden nicht aktualisiert, da der Inhaltsfragmentpfad oder der Asset-Pfad ungültig ist und keine entsprechende UUID zugewiesen werden kann. Die ursprüngliche Referenz bleibt unberührt.
+   * Ungültige Referenzen werden nicht aktualisiert, wenn der Inhaltsfragmentpfad oder der Asset-Pfad ungültig ist und so keine entsprechende UUID zugewiesen werden kann. Die ursprüngliche Referenz bleibt hiervon unberührt.
 
-   * Verwenden Sie einen [Trockenlauf](#execute-a-dry-run), um ungültige Verweise zu erkennen.
+   * Führen Sie einen [Probelauf](#execute-a-dry-run) durch, um ungültige Referenzen zu erkennen.
 
   >[!NOTE]
   >
-  >Da sie ungültig sind, können sie unabhängig von der Aktualisierung nicht verwendet werden.
+  >Wenn sie ungültig sind, können sie unabhängig von der Aktualisierung nicht verwendet werden.
 
-## Wann sollten Sie nicht aktualisieren? {#when-you-should-not-upgrade}
+## Wann nicht aktualisiert werden sollte {#when-you-should-not-upgrade}
 
-Aktualisieren Sie nicht:
+Es sollte nicht aktualisiert werden:
 
-* Wenn eines Ihrer Inhaltsfragmente Seitenverweise verwendet; da UUIDs für Seitenverweise noch nicht unterstützt werden
+* wenn eines Ihrer Inhaltsfragmente Seitenverweise verwendet, da UUIDs für Seitenverweise noch nicht unterstützt werden.
 
-## Einschränkungen von UUID-Verweisen {#limitations-of-uuid-references}
+## Einschränkungen bei UUID-Referenzen {#limitations-of-uuid-references}
 
-Derzeit gelten die folgenden Einschränkungen bei der Verwendung von Verweisen, die auf einer UUID basieren:
+Derzeit gelten die folgenden Einschränkungen beim Verwenden von Referenzen, die auf einer UUID basieren:
 
 * Modelle
 
-   * Neue Inhaltsfragmentmodelle mit den Feldern &quot;Inhaltsfragment-UUID&quot;oder &quot;Content Reference UUID&quot;können nicht über OpenAPI erstellt werden.
-   * Das Feld `id` für Modelle wurde nicht in UUID-basiert geändert. Es verwendet den dekodierten base64-Pfad des Modells. Modelle können nicht verschoben werden. Daher ist dieser Wert weiterhin stabil.
+   * Neue Inhaltsfragmentmodelle mit Inhaltsfragment-UUID- oder Inhaltsreferenz-UUID-Feldern können nicht über die OpenAPI erstellt werden.
+   * Das Feld `id` für Modelle wurde nicht dahingehend geändert, dass es UUID-basiert ist. Es verwendet den dekodierten base64-Pfad des Modells. Modelle können nicht verschoben werden. Daher ist dieser Wert weiterhin stabil.
 
 * Assets
 
-   * Beim Erstellen eines Inhaltsfragments über OpenAPI müssen die Feldtypen `fragment-reference` oder `content-reference` verwendet werden, um Verweise auf ein Fragment bzw. ein Asset anzugeben - selbst wenn der Wert eines UUID-basierten Referenzfelds festgelegt wird.
+   * Beim Erstellen eines Inhaltsfragments über die OpenAPI müssen die Feldtypen `fragment-reference` oder `content-reference` verwendet werden, um Verweise auf ein Fragment bzw. ein Asset anzugeben. Dies gilt selbst dann, wenn der Wert eines UUID-basierten Referenzfelds festgelegt wird.
 
-## Upgrade-Planung {#upgrade-planning}
+## Aktualisierungsplanung {#upgrade-planning}
 
-Es gibt einige vorbereitende Schritte, bevor Sie Ihr Upgrade ausführen.
+Es gibt einige vorbereitende Schritte, bevor Sie Ihre Aktualisierung ausführen.
 
-### Ausführen eines Trockenlaufs {#execute-a-dry-run}
+### Ausführen eines Probelaufs {#execute-a-dry-run}
 
-Es wird empfohlen, bei jedem *Upgrade Ihres Inhalts zunächst einen Probelauf durchzuführen.* Dadurch werden Protokolldateien mit Einträgen erstellt, die potenzielle Probleme hervorheben:
+Es wird empfohlen, bei *jeder* Aktualisierung Ihres Inhalts zunächst einen Probelauf durchzuführen. Dadurch werden Protokolldateien mit Einträgen erstellt, die auf potenzielle Probleme hinweisen:
 
 * Ungültige Verweise
 * Seitenverweise
 
-Führen Sie das Inhaltsupdate im Modus `dryRun` aus, um:
+Führen Sie die Inhaltsaktualisierung im Modus `dryRun` aus, um:
 
-* Identifizieren Sie ungültige Verweise, indem Sie sie in den Protokolldateien auflisten.
-Sie können diese Verweise dann beheben, bevor Sie die eigentliche Inhaltsaktualisierung ausführen.
-* alle Seitenverweise identifizieren, indem sie sie in den Protokolldateien auflisten
-Wenn Seitenverweise erkannt werden, sollten Sie [nicht die Inhaltsaktualisierung ausführen](#when-you-should-not-upgrade).
+* ungültige Referenzen zu identifizieren, indem Sie sie in den Protokolldateien auflisten.
+Sie können diese Referenzen dann vor der eigentlichen Inhaltsaktualisierung korrigieren.
+* alle Seitenverweise zu identifizieren, indem sie sie in den Protokolldateien auflisten.
+Wenn Seitenverweise erkannt werden, sollten Sie [die Inhaltsaktualisierung nicht ausführen](#when-you-should-not-upgrade).
 
 
-### Erzwingen des Einfrierens von Inhalt {#enforce-a-content-freeze}
+### Erzwingen des Einfrierens von Inhalten {#enforce-a-content-freeze}
 
-Die Durchführung der Aktualisierung des Inhalts sollte während des Einfrierzeitraums des Inhalts geplant werden.
+Inhalte sollten aktualisiert werden, wenn sie eingefroren sind.
 
-Die Dauer des Einfrierens des Inhalts hängt vom Volumen der Inhaltsfragmente ab, die aktualisiert werden. Dementsprechend kann die Aktualisierung zwischen einigen Minuten und einigen Stunden dauern und hängt auch von den Parametern ab, die beim Starten der Inhaltsaktualisierung verwendet werden.
+Wie lange Inhalte eingefroren sind, hängt von der Menge der Inhaltsfragmente ab, die aktualisiert werden. Dementsprechend kann die Aktualisierung zwischen einigen Minuten und einigen Stunden dauern und richtet sich auch nach den Parametern, die beim Starten der Inhaltsaktualisierung verwendet werden.
 
 ## Ausführen der Inhaltsaktualisierung {#running-the-content-upgrade}
 
-Die Inhaltsaktualisierung kann mithilfe des -Endpunkts verwaltet werden: `/libs/dam/cfm/maintenance.json`
+Die Inhaltsaktualisierung kann mithilfe des Endpunkts `/libs/dam/cfm/maintenance.json` gesteuert werden.
 
 >[!NOTE]
 >
->Für den Zugriff auf den Endpunkt benötigt Ihr Konto die Rolle `Administrator` .
+>Für den Zugriff auf den Endpunkt benötigt Ihr Konto die Rolle `Administrator`.
 
-### Inhaltsaktualisierung starten {#start-a-content-upgrade}
+### Starten der Inhaltsaktualisierung {#start-a-content-upgrade}
 
 | Endpunkt | HTTP-Anfragetyp | Kommentar |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `POST` | |
-| **Anforderungsparameter** | **Wert** | |
-| Aktion | `start` | |
+| **Anfrageparameter** | **Wert** | |
+| action | `start` | |
 | serviceTypeId | `uuidUpgradeService` | Die Diensttyp-ID (vordefinierter, fester Wert). |
 |  segmentSize | `1000` | Die Anzahl der Inhaltsfragmente oder Modelle, die in einem Segment (Batch) aktualisiert werden. |
-| basePath | `/conf` | Geben Sie Folgendes an:<ul><li>den Stamm `/conf` , um alle AEM Konfigurationen zu aktualisieren</li><li>einen ausgewählten AEM Konfigurationspfad. für die das Content-Upgrade ausgeführt wird<br>Beispiel: `/conf/wknd-shared` aktualisiert nur den einzelnen Mandanten `wknd-shared`</li></ul> |
-| Intervall | `10` | Intervall in Sekunden, nach dem das nächste Segment von Inhaltsfragmenten oder Modellen aktualisiert wird. |
-| mode | `replicate`, `noReplicate` | <ul><li>`replicate`: repliziert denselben Auftrag auf allen AEM Publish-Instanzen.</li><li>`noReplicate`: Führt den Auftrag nur auf AEM Autoreninstanzen aus</li></ul> |
-| dryRun |  `true`, `false` | <ul><li>`false`: Simulieren Sie die Inhaltsaktualisierung, ohne Inhaltsänderungen zu speichern.</li><li>`true`: Führen Sie die Inhaltsaktualisierung durch und speichern Sie Inhaltsänderungen</li></ul> |
+| basePath | `/conf` | Geben Sie Folgendes an:<ul><li>den Stamm `/conf`, um alle AEM-Konfigurationen zu aktualisieren, ODER</li><li>einen ausgewählten AEM-Konfigurationspfad, für den die Inhaltsaktualisierung ausgeführt wird.<br>Beispiel: `/conf/wknd-shared` aktualisiert nur den einzelnen Mandanten `wknd-shared`.</li></ul> |
+| interval | `10` | Das Intervall in Sekunden, nach dem das nächste Segment von Inhaltsfragmenten oder Modellen aktualisiert wird. |
+| mode | `replicate`, `noReplicate` | <ul><li>`replicate`: Repliziert den gleichen Auftrag in allen AEM-Veröffentlichungsinstanzen.</li><li>`noReplicate`: Führt den Auftrag nur in AEM-Autoreninstanzen aus.</li></ul> |
+| dryRun |  `true`, `false` | <ul><li>`false`: Simuliert die Inhaltsaktualisierung, ohne Inhaltsänderungen zu speichern.</li><li>`true`: Führt die Inhaltsaktualisierung durch und speichert Inhaltsänderungen.</li></ul> |
 | **Antwortdetails** | **Wert** | |
-| jobId | `UUID` |  Die ID des Auftrags, der die Inhaltsaktualisierung ausführt.<ul><li>Diese ID ist bei allen nachfolgenden Aufrufen im Zusammenhang mit dieser Ausführung erforderlich.</li><li>Wenn der Wert `mode` auf `replicate` gesetzt ist, muss die Ausführung auf AEM Publish-Instanzen ebenfalls unter demselben `jobId` erfolgen.</li></ul> |
+| jobId | `UUID` |  Die ID des Auftrags, der die Inhaltsaktualisierung ausführt.<ul><li>Diese ID wird bei allen nachfolgenden Aufrufen im Zusammenhang mit dieser Ausführung benötigt.</li><li>Wenn der Wert `mode` auf `replicate` gesetzt ist, muss die Ausführung in AEM-Veröffentlichungsinstanzen ebenfalls unter derselben `jobId` erfolgen.</li></ul> |
 | Parameter | Die Parameter für die Inhaltsaktualisierung | Dazu gehören die anfänglichen Parameter, die zum Starten der Inhaltsaktualisierung bereitgestellt werden, sowie einige interne Standardeinstellungen. |
 
 
-### Beispiel für eine Anfrage zur Inhaltsaktualisierung {#example-content-upgrade-request}
+### Beispielhafte Anfrage zur Inhaltsaktualisierung {#example-content-upgrade-request}
 
 +++Anfrage
 
@@ -154,7 +155,7 @@ Accept: application/json
 
 +++
 
-++ + Antwort
++++Antwort
 
 ```http
 HTTP/1.1 200 OK
@@ -183,18 +184,18 @@ Content-Length: 386
 
 +++
 
-### Abrufen des Status eines Content-Upgrades {#get-the-status-of-a-content-upgrade}
+### Abrufen des Status einer Inhaltsaktualisierung {#get-the-status-of-a-content-upgrade}
 
 | Endpunkt | HTTP-Anfragetyp | Kommentar |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `GET` | |
-| **Anforderungsparameter** | **Wert** | |
-| Aktion | status | |
-| jobId | `<UUID>` | Die `jobId` , die vom Aufruf zum Starten der Inhaltsaktualisierung zurückgegeben wurde. |
+| **Anfrageparameter** | **Wert** | |
+| action | status | |
+| jobId | `<UUID>` | Die `jobId`, die beim Aufruf zum Starten der Inhaltsaktualisierung zurückgegeben wurde. |
 | **Antwortdetails** | **Wert** | |
-| status | JSON-Werte | Enthält den detaillierten Status der Inhaltsaktualisierung:<ul><li>Aktualisiert nach jedem Intervall (Sekunden).</li><li>Die Ausführung von `uuidUpgradeService` umfasst zwei Phasen:<ol><li>Phase 0 zum Aktualisieren von Inhaltsfragmentmodellen</li><li>Phase 1 zum Aktualisieren von Inhaltsfragmenten</li></ol></li><li>In jeder Phase werden Statistiken nach jedem Intervall aktualisiert.</li><li>&quot;jobStatus&quot;: &quot;COMPLETED&quot;kennzeichnet die Aktualisierung als erfolgreich abgeschlossen.</li><li>Andere Statuswerte sind selbsterklärend.</li></ul> |
+| status | JSON-Werte | Enthält den detaillierten Status der Inhaltsaktualisierung:<ul><li>Wird nach jedem Intervall (Sekunden) aktualisiert.</li><li>Die Ausführung von `uuidUpgradeService` umfasst zwei Phasen:<ol><li>Phase 0 zum Aktualisieren von Inhaltsfragmentmodellen</li><li>Phase 1 zum Aktualisieren von Inhaltsfragmenten</li></ol></li><li>In jeder Phase werden Statistiken nach jedem Intervall aktualisiert.</li><li>„jobStatus“: „COMPLETED“ kennzeichnet die Aktualisierung als erfolgreich abgeschlossen.</li><li>Die anderen Statuswerte sind selbsterklärend.</li></ul> |
 
-### Beispiel für eine Statusanforderung für die Inhaltsaktualisierung {#example-content-upgrade-status-request}
+### Beispiel einer Anfrage zum Status der Inhaltsaktualisierung {#example-content-upgrade-status-request}
 
 +++Anfrage
 
@@ -206,7 +207,7 @@ Accept: application/json
 
 +++
 
-++ + Antwort
++++Antwort
 
 ```http
 HTTP/1.1 200 OK
@@ -265,9 +266,9 @@ Content-Length: 1116
 
 +++
 
-+++Beispielprotokolldateien
++++Beispielhafte Protokolldateien
 
-Zusätzlich zum Status einer laufenden Inhaltsaktualisierung, die vom HTTP-Endpunkt abgerufen wurde, liefern AEM Protokolle detaillierte Informationen zum Fortschritt auf der Inhaltsebene. Zum Beispiel:
+Zusätzlich zum Status einer laufenden Inhaltsaktualisierung, die vom HTTP-Endpunkt abgerufen wurde, liefern AEM-Protokolle detaillierte Informationen zum Fortschritt auf Inhaltsebene. Zum Beispiel:
 
 ```xml
 #Successful model upgrade
@@ -295,23 +296,23 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 
 >[!CAUTION]
 >
->Abbrechen einer Inhaltsaktualisierung (dies ist kein Trockenlauf):
+>Durch den Abbruch einer Inhaltsaktualisierung (kein Probelauf):
 >
->* keine bereits vorgenommenen Änderungen rückgängig machen
->* Ihren Inhalt möglicherweise in einem gemischten Status belassen
+>* werden bereits vorgenommene Änderungen nicht rückgängig gemacht,
+>* werden Ihre Inhalte möglicherweise in einem gemischten Status belassen.
 >
->Verwenden Sie diese Aktion mit Vorsicht.
+>Seien Sie vorsichtig, wenn Sie sich hierfür entscheiden.
 
 | Endpunkt | HTTP-Anfragetyp | Kommentar |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `POST` | |
-| **Anforderungsparameter** | **Wert** | |
-| Aktion | abort | |
-| jobId | `<UUID>` | Die `jobId` , die vom Aufruf zum Starten der Inhaltsaktualisierung zurückgegeben wurde. |
+| **Anfrageparameter** | **Wert** | |
+| action | abort | |
+| jobId | `<UUID>` | Die `jobId`, die beim Aufruf zum Starten der Inhaltsaktualisierung zurückgegeben wurde. |
 | **Antwortdetails** | **Wert** | |
-| status | JSON-Werte | Enthält den detaillierten Status der Inhaltsaktualisierung:<ul><li>Der zu beachtende Status lautet &quot;jobStatus&quot;: &quot;ABORTED&quot;.<br>Nach einer Abbruchaktion werden ausstehende Segmente von Daten nicht verarbeitet.</li><li>Wenn der jobStatus vor einem Abbruch &quot;COMPLETED&quot;lautet, hat der Aufruf keine Auswirkungen.</li></ul> |
+| status | JSON-Werte | Enthält den detaillierten Status der Inhaltsaktualisierung:<ul><li>Der Status, auf den Sie achten sollten, lautet „jobStatus“: „ABORTED“.<br>Nach einer Abbruchaktion werden ausstehende Datensegmente nicht verarbeitet.</li><li>Wenn „jobStatus“ vor einem Abbruch als „COMPLETED“ angegeben wird, hat der Aufruf keine Auswirkungen.</li></ul> |
 
-### Beispiel für Abbruch einer Anfrage zur Inhaltsaktualisierung {#example-abort-content-upgrade-request}
+### Beispielhafte Anfrage zum Abbruch einer Inhaltsaktualisierung {#example-abort-content-upgrade-request}
 
 +++Anfrage
 
@@ -330,7 +331,7 @@ Accept: application/json
 
 +++
 
-++ + Antwort
++++Antwort
 
 ```http
 HTTP/1.1 200 OK
