@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
-workflow-type: ht
-source-wordcount: '2701'
-ht-degree: 100%
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+workflow-type: tm+mt
+source-wordcount: '2724'
+ht-degree: 99%
 
 ---
 
@@ -85,6 +85,9 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
 >[!NOTE]
 >Sie haben die Möglichkeit, das automatische Hochladen in CAM zu überspringen, indem Sie die Option für das Überspringen des automatischen Uploads in CAM **** wählen. Wenn Sie sich für das Überspringen entscheiden, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertedatei herunterladen und die Datei dann in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
+
+>[!IMPORTANT]
+>Beim manuellen Hochladen in die CAM sind die Berichtsgrößen auf ca. 200 MB beschränkt. Für größere Berichte müssen Sie den automatischen Upload nutzen.
 
 1. Die Schaltfläche **Generieren** wird aktiv, wenn ein gültiger Schlüssel angegeben wird. Klicken Sie auf **Erstellen**, um die Erstellung des Berichts einzuleiten.
 

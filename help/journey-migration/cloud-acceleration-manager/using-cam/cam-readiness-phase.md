@@ -4,10 +4,10 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 94%
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -41,9 +41,9 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
 >abstract="Der BPA-Bericht kann in CAM hochgeladen werden, um eine Analyse der Migration zu AEM as a Cloud Service zu erstellen."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Verwenden von Best Practices Analyzer"
 
-1. Klicken Sie in der Karte **Best Practices-Analyse** auf **Überprüfen**.
+1. Klicken Sie auf der Karte **Best-Practices-Analyse** auf **Überprüfen**.
 
-   ![Best Practices-Analyse - Überprüfung](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
+   ![Best-Practices-Analyse – Überprüfung](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Laden Sie Best Practices Analyzer (BPA) herunter.
 
@@ -57,14 +57,14 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
 
 1. Klicken Sie in CAM auf **Upload-Schlüssel abrufen**, damit Sie den Schlüssel erhalten, mit dem Sie Ihr System so konfigurieren, dass BPA-Berichte automatisch direkt in CAM hochgeladen werden.
 
-   ![Upload-Schlüssel abrufen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
+   ![Abrufen des Upload-Schlüssels](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >Der Bericht kann nach wie vor manuell hochgeladen werden, aber mithilfe des Upload-Schlüssels wird der Vorgang optimiert. Beachten Sie, dass der Bericht nicht manuell hochgeladen werden kann, wenn Sie sich im Inkognito-Modus des Browsers befinden.
+   >Der Bericht kann nach wie vor manuell hochgeladen werden, aber mithilfe des Upload-Schlüssels wird der Vorgang optimiert. Beachten Sie, dass der Bericht nicht manuell hochgeladen werden kann, wenn seine Größe etwa 200 MB oder mehr beträgt. Der Bericht kann auch nicht im Inkognito-Modus des Browsers hochgeladen werden.
 
 1. Nachdem ein neuer Bericht hochgeladen wurde, können Sie den Best-Practices-Analyse-Bericht in CAM sehen.
 
-   ![Bericht zur Best Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![Bericht zur Best-Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
    >Beim Hochladen mehrerer unterschiedlicher Berichte wird immer der Bericht mit dem jüngsten Erstellungsdatum (nicht Upload-Datum) detailliert angezeigt.
@@ -104,19 +104,19 @@ Gehen Sie wie folgt vor, um Berichte über die Trend-Linien-Option anzuzeigen:
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf der Karte **Best Practices-Analyse** in der Phase **Bereitschaft** auf **Überprüfen**.
 
-   ![Best Practices-Analyse - Überprüfung](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Best-Practices-Analyse – Überprüfung](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Klicken Sie in der Dropdown-Liste **Ansicht** auf **Trend-Linienbericht**, wie in der Abbildung unten gezeigt.
 
-   ![Trendline-Bericht](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![Trend-Linienbericht](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Wenn Sie auf **Trend-Linienbericht** klicken, wird die Trend-Linienansicht des Berichts geöffnet.
 
-   ![Trendzeilenansicht](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![Trend-Linienansicht](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
-   >Der Trend-Zeilenbericht zeigt die Ergebnisse der historischen BPA-Berichte in einer grafischen Darstellung an.
+   >Der Trend-Linienbericht zeigt die Ergebnisse der historischen BPA-Berichte in einer grafischen Darstellung an.
    >
    >Es werden zwei Diagramme angezeigt, die den Trend zeigen:
    > 
@@ -124,14 +124,14 @@ Gehen Sie wie folgt vor, um Berichte über die Trend-Linien-Option anzuzeigen:
    >1. **Benutzerdefinierte Komponenten und Vorlagen-Trend**
    >
    >Sie können die grafische Ansicht über die Dropdown-Liste hinzufügen oder ändern, wie in der folgenden Abbildung dargestellt:
-   >![Wählen Sie die grafische Ansicht aus](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![Auswählen der grafischen Ansicht](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
-### Überprüfen des Best Practices Analyzer-Berichts {#analysis-report}
+### Überprüfen des Berichts der Best-Practices-Analyse {#analysis-report}
 
 Sehen Sie sich die folgenden Karten auf der Seite „Bericht zur Best Practices-Analyse“ an:
 
-![Bericht zur Best Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+![Bericht der Best-Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Mit jeder Karte können Sie:
@@ -144,7 +144,7 @@ Sehen Sie sich die folgenden Karten auf der Seite „Bericht zur Best Practices-
 
 Die Karte **Berichteigenschaften** enthält Informationen zu Berichteigenschaften wie Berichtsdatum, Dauer, Filtern, Upload-Datum und AEM-Details (Adobe Experience Manager).
 
-![Berichteigenschaften](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
+![Berichtseigenschaften](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Berichtsübersicht {#report-overview}
 
@@ -154,7 +154,7 @@ Die Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrad
 
 Wenn Sie auf diesen Bericht klicken, öffnet sich die Registerkarte **Bericht**.
 
-![Registerkarte &quot;Bericht&quot;](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
+![Berichts-Registerkarte](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 
@@ -189,11 +189,11 @@ Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 
 1. Klicken Sie auf der Karte **Planung und Einrichtung** auf **Ansicht**. Diese Karte enthält alle relevanten Inhalte, die Ihnen helfen, Ihre AEM-Migration zu planen und einzurichten.
 
-   ![Planung und Einrichtung - Ansicht](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
+   ![Planung und Einrichtung – Ansicht](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. Ein Inhaltskarussell zeigt alle relevanten Informationen für diese Phase der Migration an.
 
-   ![Karussell planen und einrichten](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![Planung und Einrichtung – Karussell](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### Löschen eines Best Practices-Analyseberichts aus der Trend-Linienansicht {#delete-trendline}
 
@@ -202,24 +202,24 @@ Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf der Karte **Best Practices-Analyse** in der Phase **Bereitschaft** auf **Überprüfen**.
 
-   ![Best Practices-Analyse - Überprüfung](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Best-Practices-Analyse – Überprüfung](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Klicken Sie auf **…**
 
-   ![Ellipse](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![Auslassungspunkte](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. Klicken Sie in der Dropdown-Liste auf **Trend-Linie anzeigen**, wie in der Abbildung unten gezeigt.
 
-   ![Trendlinie anzeigen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![Ansicht der Trend-Linie](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Klicken Sie auf das Löschsymbol im Bildschirm **Trend-Linienbericht**.
 
-   ![Trendline-Bericht - Löschen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![Trend-Linienbericht – Löschen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Klicken Sie auf **Löschen**, um den Löschvorgang zu bestätigen.
 
    ![Löschen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Sobald Sie wissen, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie sich mit dem nächsten Schritt beschäftigen: der [Implementierungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=de).
