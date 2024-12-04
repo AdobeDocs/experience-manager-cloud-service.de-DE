@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
 workflow-type: tm+mt
 source-wordcount: '5890'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -721,11 +721,11 @@ ht-degree: 98%
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
          + [Entwerfen eines XML-Schemas für ein adaptives Formular](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + Integrieren von Adaptive Forms mit Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+         + Integrieren von adaptiven Formularen mit Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
             + [Integrieren von Adobe Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
             + [Konfigurieren eines neuen Formulars zur Integration mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Adobe Marketo Engage-Datenquelle für vorhandene adaptive Forms konfigurieren](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Konfigurieren der Sendeaktion auf Marketo Engage für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+            + [Konfigurieren von Adobe Marketo Engage-Datenquellen für vorhandene adaptive Formulare](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Konfigurieren der Aktion „An Marketo Engage senden“ für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Adaptive Formulare {#adaptive-forms-authoring}
       + [Erstellen eines adaptiven Formulars](/help/forms/create-an-adaptive-form.md)
       + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments.md)
@@ -751,7 +751,7 @@ ht-degree: 98%
             + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
             + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Verwenden von hCAPTCHA in Kernkomponenten eines adaptiven Formulars](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Verwenden von hCAPTCHA in einem adaptiven Formular (Kernkomponenten)](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -766,7 +766,7 @@ ht-degree: 98%
                + [Operator- und Ereignistypen, die im Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular verfügbar sind](/help/forms/rule-editor-core-components-events-operators.md)
                + [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/rule-editor-core-components-usecases.md)
                + [Verwenden von asynchronen Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md)
-               + [Aufrufen von Dienstverbesserungen im Visual Rule Editor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [Aufrufen von Diensterweiterungen im visuellen Regeleditor für Formulare, die auf Kernkomponenten basieren](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren{#create-and-use-custom-function-core-component}
                + [Einführung in benutzerdefinierte Funktionen für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/create-and-use-custom-functions.md)
                + [Erstellen und Verwenden einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/custom-function-core-component-create-function.md)
@@ -1101,7 +1101,7 @@ ht-degree: 98%
          + [Erfahren Sie mehr über die Definition von Metadaten und Tagging für Inhaltsfragmente](/help/journey-headless/author/metadata-tagging.md)
 + Generative KI {#generative-ai}
    + [Varianten generieren](/help/generative-ai/generate-variations.md)
-   + [Assistenzkraft (limitierte Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Assistent (eingeschränkte Beta-Version)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementieren {#implementing}
    + [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)
    + CQ Cloud Manager {#using-cloud-manager}
@@ -1125,7 +1125,7 @@ ht-degree: 98%
          + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Hinzufügen eines Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Hinzufügen eines privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Externes Repository hinzufügen (eingeschränkte Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Hinzufügen eines externen Repositorys (eingeschränkte Beta-Version)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

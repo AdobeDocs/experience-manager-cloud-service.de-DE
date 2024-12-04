@@ -8,7 +8,7 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2374'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -217,10 +217,10 @@ Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichke
 * Einem PDF-Dokument ein unsichtbares Signaturfeld hinzufügen.
 * Das angegebene Signaturfeld in einem PDF-Dokument signieren.
 * Ein PDF-Dokument zertifizieren
-* Entfernen Sie die Signatur aus dem angegebenen Signaturfeld in einem PDF-Dokument
-* Löschen des angegebenen Signaturfelds aus einem PDF-Dokument
+* Die Signatur aus dem angegebenen Signaturfeld in einem PDF-Dokument entfernen
+* Das angegebene Signaturfeld aus einem PDF-Dokument entfernen
 
-<span class="preview"> Entfernen Sie die Unterschrift aus dem angegebenen Unterschriftsfeld und löschen Sie das angegebene Unterschriftsfeld. Aus einem PDF-Dokument ist es unter dem Programm für frühe Anwender verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+<span class="preview"> Die Funktionen zum Entfernen der Signatur aus dem angegebenen Signaturfeld und zum Löschen des angegebenen Signaturfelds aus einem PDF-Dokument sind im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 
 <!--
