@@ -44,8 +44,8 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 
 >[!NOTE]
 >
-* [Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bildmodifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen als Funktion mit eingeschränkter Verfügbarkeit bereit. Um Zugriff zu erhalten, [senden Sie eine entsprechende Anfrage an den Kunden-Support von Adobe](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
-* Bei [Assets Prime](/help/assets/assets-ultimate-overview.md) ist „Smartes Zuschneiden“ nicht verfügbar.
+>* [Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bildmodifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen als Funktion mit eingeschränkter Verfügbarkeit bereit. Um Zugriff zu erhalten, [senden Sie eine entsprechende Anfrage an den Kunden-Support von Adobe](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>* Bei [Assets Prime](/help/assets/assets-ultimate-overview.md) ist „Smartes Zuschneiden“ nicht verfügbar.
 
 ## Bereitstellungs-API-Endpunkte {#delivery-apis-endpoint}
 
