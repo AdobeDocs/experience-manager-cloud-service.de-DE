@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
-workflow-type: ht
-source-wordcount: '1016'
-ht-degree: 100%
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +86,7 @@ Wenn Sie den Zertifikatstyp *Verwaltetes Adobe-Zertifikat* ausgewählt haben, f�
 
 Um die verwendete Domain zu überprüfen, müssen Sie einen CNAME hinzufügen und überprüfen.
 
-Ein `CNAME`- oder A-Eintrag leitet, sobald er bereitgestellt ist, den gesamten Internet-Traffic für die Domain zu dem Punkt, auf den er verweist. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
+Ein `CNAME` -Record-Typ oder ein `A` -Record-Typ routet nach der Bereitstellung den gesamten Internet-Traffic für die Domäne an den Ort, an den sie verweist. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
 
 Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ein Apex-Eintrag so konfiguriert sein muss, dass Ihr benutzerdefinierter Domain-Name auf den Cloud Manager-Domain-Namen verweist. Die folgenden Abschnitte dieses Dokuments können Ihnen dabei helfen, zu ermitteln, welche Art von Eintrag für Ihre DNS-Konfiguration geeignet ist.
 
@@ -130,7 +130,7 @@ Fügen Sie die folgenden `A`-Einträge über Ihren Domain-Provider in den DNS-Ei
 
 >[!TIP]
 >
->Der *CNAME* oder *A-Eintrag* kann auf dem zuständigen DNS-Server eingerichtet werden, um Zeit zu sparen.
+>Der *CNAME-Eintrag* oder der *Datensatz* kann auf dem herrschenden DNS-Server festgelegt werden, um Ihnen Zeit zu sparen.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
