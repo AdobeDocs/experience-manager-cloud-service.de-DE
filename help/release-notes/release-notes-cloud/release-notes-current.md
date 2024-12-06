@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d424b6f2e0a2ec40ab607dcbdcba3120c7f45a58
-workflow-type: ht
-source-wordcount: '1778'
-ht-degree: 100%
+source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
+workflow-type: tm+mt
+source-wordcount: '1802'
+ht-degree: 98%
 
 ---
 
@@ -34,13 +34,11 @@ Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Man
 
 Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
-<!-- ## Release Video {#release-video}
+## Video zur Version {#release-video}
 
-Have a look at the November 2024 Release Overview video for a summary of the features added in the 2024.11.0 release:
+Sehen Sie sich das Video Versionsübersicht von November 2024 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2024.11.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
