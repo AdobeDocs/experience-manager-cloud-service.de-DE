@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 100%
+source-wordcount: '1377'
+ht-degree: 96%
 
 ---
 
@@ -241,7 +241,7 @@ data:
 
 ## Reaktionsumwandlungen {#response-transformations}
 
-Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das Beispiel oben für Referenzen auf eine Variable, die zuvor in einer Regel zu Anfrageumwandlung festgelegt wurde.
+Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das obige Beispiel für Verweise auf eine Variable, die zuvor in einer Anfrageumwandlungsregel festgelegt wurde. Der Status-Code der Antwort kann ebenfalls festgelegt werden.
 
 Konfigurationsbeispiel:
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **Aktionen**
@@ -291,6 +300,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
 | **set** | reqHeader, Wert | Legt eine bestimmte Kopfzeile auf einen angegebenen Wert in der Antwort fest. |
+|          | respProperty, Wert | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft &quot;status&quot;, um den Statuscode festzulegen. |
 | **nicht gesetzt** | respHeader | Entfernt eine bestimmte Kopfzeile aus der Antwort. |
 
 ## Ursprungs-Auswahlen {#origin-selectors}
