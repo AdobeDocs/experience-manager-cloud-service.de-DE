@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 100%
+source-wordcount: '3322'
+ht-degree: 98%
 
 ---
 
@@ -64,8 +64,9 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
    >[!IMPORTANT]
    > Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Admins** im Ziel-Author-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, finden Sie unter [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) weitere Informationen dazu.
 
-1. Nach Auswahl der Aufnahmeoptionen wird eine geschätzte Dauer angezeigt. Es handelt sich um eine bestmögliche Schätzung auf der Grundlage historischer Daten ähnlicher Aufnahmen.
+1. Nach Auswahl der Aufnahmeoptionen kann eine geschätzte Dauer angezeigt werden. Es handelt sich um eine bestmögliche Schätzung auf der Grundlage historischer Daten ähnlicher Aufnahmen.
 
+   * Diese Schätzung wird für **non-wipe** -Aufnahmen nicht berechnet oder angezeigt, da CAM in diesem Fall nicht weiß, wie viel Inhalt auf dem Zielsystem vorhanden ist.
    * Diese Schätzung wird nur berechnet und angezeigt, wenn die Werte „Größe überprüfen“ der Extraktion erfasst wurden und verfügbar sind.
    * Dieser Wert ist eine Schätzung und sollte, obwohl er sorgfältig berechnet wurde, nicht als exakt angesehen werden. Verschiedene Faktoren können die tatsächliche Dauer ändern.
    * Während die Aufnahme läuft, ist dieser Wert auch im Dauer-Dialog verfügbar, der über die Aktion „**Dauer anzeigen**“ der Aufnahme aufgerufen werden kann.
