@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
-workflow-type: ht
-source-wordcount: '1557'
-ht-degree: 100%
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -74,6 +74,8 @@ Verwalten Sie als Admin die folgenden Konfigurationsoptionen für Ihre Benutzend
 
 * [Abgelaufene Assets](#expired-assets-content-hub)
 
+* [Ausgabedarstellungen](#renditions-content-hub)
+
 * [Benutzerspezifische Links](#configure-custom-links-content-hub)
 
 ### Importieren {#configure-import-options-content-hub}
@@ -119,7 +121,7 @@ Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Asse
 
    >[!NOTE]
    >
-   >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
+   Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
 
 Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jedem verfügbaren Filter klicken, um die Labels zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um einen vorhandenen Filter zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
 
@@ -164,7 +166,6 @@ Sie können auch die wichtigsten Metadatenfelder (maximal 6) konfigurieren, die 
    ![Asset-Karte](/help/assets/assets/asset-card.png)
 
 Sie können auch auf ![Bearbeiten](/help/assets/assets/edit-content-hub.svg) neben jeder verfügbaren Eigenschaft klicken, um erforderliche Änderungen vorzunehmen, oder klicken Sie auf ![Löschen](/help/assets/assets/delete-content-hub.svg), um eine vorhandene Metadateneigenschaft zu löschen. Klicken Sie auf **Speichern**, um alle vorgenommenen Änderungen zu übernehmen.
-
 
 ### Suchen {#configure-metadata-search-content-hub}
 
@@ -223,6 +224,23 @@ Wenn die Admins den Download aktiviert haben, können Content Hub-Benutzende sie
 
 Wenn die Sichtbarkeit abgelaufener Assets aktiviert ist, werden in Content Hub auch Assets, die innerhalb der nächsten 15 Tage ablaufen, mit der Meldung `Expiring in n days` auf der Asset-Karte hervorgehoben.
 
+### Ausgabedarstellungen {#renditions-content-hub}
+
+Ausgabedarstellungen sind angepasste Versionen digitaler Assets wie Bilder, Dokumente usw., die für verschiedene Geräte und Plattformen entwickelt wurden, um eine optimale Leistung zu gewährleisten. Weitere Informationen zu [Ausgabeformaten in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+Content Hub ermöglicht das Herunterladen von statischen Ausgabeformaten. Statische Ausgabeformate sind verschiedene Darstellungen der Originaldatei eines Assets, die nativ generiert werden. Beispiele sind Miniaturansichten oder für Mobilgeräte optimierte Ausgabeformate. Administratoren können die Verfügbarkeit von Asset-Ausgabedarstellungen verwalten und steuern und verwalten, ob Sie Original-Assets herunterladen können oder nicht.
+
+Führen Sie dazu die folgenden Schritte aus:
+
+Klicken Sie in der Benutzeroberfläche von [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Ausgabeformate]**. Die folgenden Optionen sind verfügbar:
+
+* Aktivieren Sie den Umschalter [!UICONTROL Verfügbarkeit statischer Ausgabeformate aktivieren] , um alle statischen Ausgabeformate in Content Hub sichtbar zu machen.
+
+* Aktivieren oder deaktivieren Sie **[!UICONTROL Ermöglichen Sie Benutzern, Original-Assets herunterzuladen]** , um die Verfügbarkeit zum Herunterladen von Original-Assets zu steuern.
+
+  ![Konfigurieren von Ausgabeformaten auf Content Hub](assets/config-renditions.png)
+
+Informationen zum Anzeigen und Herunterladen von statischen Ausgabeformaten in Content Hub finden Sie unter [Herunterladen von Assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Benutzerspezifische Links {#configure-custom-links-content-hub}
 

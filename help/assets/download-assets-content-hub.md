@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie Assets aus dem Content Hub-Portal herunterladen
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28424cb184d0378669498c78e571961227f6539a
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,56 +20,85 @@ ht-degree: 94%
 
 >[!AVAILABILITY]
 >
->Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub-Handbuch als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Mit Content Hub können Sie Assets herunterladen und freigeben. Bei diesen Assets kann es sich um Bilder, Videos oder andere digitale Inhalte handeln. Content Hub verbessert die Barrierefreiheit und Anpassungsfähigkeit und ermöglicht so eine effektive Asset-Verteilung.
+Mit Content Hub können Sie Assets herunterladen und freigeben. In der Content Hub-Benutzeroberfläche werden nur genehmigte Assets angezeigt. Bei diesen Assets kann es sich um Bilder, Videos oder andere digitale Inhalte handeln. Content Hub verbessert die Barrierefreiheit und Anpassungsfähigkeit und ermöglicht so eine effektive Asset-Verteilung.
 
-Sie können ein einzelnes Asset oder mehrere Assets mit Content Hub herunterladen. Es werden die Originalversionen des Assets heruntergeladen.
+Sie können einzelne oder mehrere Assets und deren verfügbare Ausgabeformate mit Content Hub herunterladen.
 
-## Herunterladen eines einzelnen lizenzierten Assets {#single-download-asset}
+## Herunterladen eines Assets und seiner Ausgabeformate {#download-asset-renditions}
 
-Wählen Sie ein Asset aus und klicken Sie in der oberen Leiste auf ![Herunterladen](/help/assets/assets/download-icon.svg). Im Dialogfeld „Asset herunterladen“ wird die Asset-Lizenz angezeigt. Akzeptieren Sie die Lizenzbedingungen und klicken Sie auf **Herunterladen**.
-Alternativ können Sie auf der Asset-Karte auf ![Herunterladen](/help/assets/assets/download-icon.svg) klicken, um das Asset herunterzuladen.
+Führen Sie die folgenden Schritte aus, um ein Asset und seine Ausgabeformate herunterzuladen:
 
-### Herunterladen eines einzelnen lizenzierten Assets über das Dialogfeld „Asset“ {#single-download-from-asset-dialog-box}
+1. Klicken Sie auf das Asset, um seine Eigenschaften anzuzeigen.
 
-1. Klicken Sie auf die Asset-Miniatur. Das Dialogfeld „Asset“ wird angezeigt.
-1. Klicken Sie in der Symbolleiste ganz rechts auf ![Herunterladen](/help/assets/assets/download-icon.svg). Im Download-Bereich werden die Asset-Ausgabedarstellungen sowie das Kontrollkästchen zur Annahme der Lizenzbedingungen angezeigt.
-   ![Dialogfeld zum Herunterladen eines einzelnen Assets](/help/assets/assets/asset-dialog-box-for-single-download.png)
-   * Klicken Sie auf den Link für die Nutzungsbedingungen, um die Lizenzbedingungen im linken Bereich anzuzeigen.
+1. Klicken Sie auf ![Download](/help/assets/assets/download-icon.svg) , um den Download-Prozess zu starten. Im Bereich Download werden alle verfügbaren Asset-Ausgabedarstellungen (Original und andere Ausgabedarstellungen) aufgelistet.
+
+   >[!NOTE]
+   >
+   Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche von [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
+
+1. Wählen Sie die Ausgabedarstellungen aus und klicken Sie auf **[!UICONTROL Download]**.
+
+   ![Herunterladen einzelner Asset-Ausgabedarstellungen](/help/assets/assets/download-single-asset-renditions.png)
+
+
+Wenn Sie ein lizenziertes Asset herunterladen, wählen Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** und klicken Sie dann auf **[!UICONTROL Herunterladen]**. Sie können auch auf **[!UICONTROL Nutzungsbedingungen]** klicken, um die Asset-Lizenz anzuzeigen. Die Lizenzvorschau wird nur angezeigt, wenn das Asset mithilfe der Assets as a Cloud Service Authoring-Umgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+## Herunterladen mehrerer Assets und ihrer Ausgabeformate {#download-multiple-assets-renditions}
+
+Führen Sie die folgenden Schritte aus, um mehrere Assets und deren Ausgabedarstellungen herunterzuladen:
+
+1. Wählen Sie die Assets aus und klicken Sie auf ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. Der Bildschirm [!UICONTROL Assets herunterladen] zeigt eine Liste aller ausgewählten Assets an.
+1. Klicken Sie auf **[!UICONTROL Download]** , um unter den verschiedenen Download-Optionen auszuwählen, mit denen der Download beginnen soll:
+
+   * **Download [!UICONTROL Originale]**: Wählen Sie diese Option, um die ausgewählten Assets im Originalformular herunterzuladen.
+   * **Nur Ausgabedarstellungen herunterladen [!UICONTROL Nur Ausgabedarstellungen]**: Wählen Sie diese Option, um alle verfügbaren Ausgabedarstellungen der Assets mit Ausnahme der Original-Assets herunterzuladen.
+   * **Download [!UICONTROL Originale und alle Ausgabeformate]**: Wählen Sie diese Option, um sowohl Original- als auch Ausgabeformate der ausgewählten Assets herunterzuladen.
+
+     ![Mehrere Ausgabedarstellungen herunterladen](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     Das Kontrollkästchen für die Nutzungsbedingungen wird nur für lizenzierte Assets angezeigt. Darüber hinaus zeigt das Dialogfeld „Asset“ eine Vorschau der Lizenzbedingungen nur für die Assets mit genehmigten Lizenzen an. [Genehmigen Sie die Asset-Lizenz](/help/assets/approve-assets-content-hub.md) vor dem Herunterladen, um die Vorschau der Lizenzbedingungen im Dialogfeld „Asset“ zu aktivieren.
+     Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche von [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
 
-   * Klicken Sie auf das Feld für die **Original-Ausgabedarstellung**, um zur ursprünglichen Asset-Ausgabedarstellung im linken Bereich zurückzukehren.
-1. Akzeptieren Sie die Lizenzbedingungen (für lizenzierte Assets) und klicken Sie auf **Herunterladen**, um das Asset herunterzuladen.
+   Wenn eines der ausgewählten Assets ein lizenziertes Asset ist, klicken Sie im linken Bereich auf die Lizenz des Assets, um dessen Vorschau anzuzeigen. Dadurch können Sie &quot;**[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert&quot;]** auswählen und dann auf &quot;**[!UICONTROL Herunterladen]**&quot; klicken. Die Lizenzvorschau wird nur angezeigt, wenn das Asset mithilfe der Assets as a Cloud Service Authoring-Umgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-## Herunterladen mehrerer lizenzierter Assets{#multi-download}
-
-1. Wählen Sie die Assets aus und klicken Sie in der oberen Leiste auf ![Herunterladen](/help/assets/assets/download-icon.svg). Das angezeigte Dialogfeld hängt davon ab, ob die Download-Liste abgelaufene Assets oder nur nicht abgelaufene Assets enthält. <br/>
-   **Dialogfeld „Abgelaufene Assets herunterladen“:** Dieses Dialogfeld zeigt eine Vorschau der abgelaufenen Assets mit ihrem Ablaufdatum im linken Bereich an. Die Anzahl der abgelaufenen Assets von der insgesamt ausgewählten Anzahl wird im rechten Bereich angezeigt. Klicken Sie auf **Mit allen Assets fortfahren**, um abgelaufene Assets mit anderen Assets herunterzuladen (sofern vorhanden). Das Dialogfeld „Assets herunterladen“ wird angezeigt. Weitergehende Informationen finden Sie unter [Herunterladen von Assets](#Download-asset-dialog-box).
-
-   >[!NOTE]
-   >
-   [Aktivieren Sie die Download-Option für abgelaufene Assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub), um sie herunterzuladen. Nur abgelaufene Assets, für die der Download aktiviert wurde, können heruntergeladen werden.
-
-   <a id="Download-asset-dialog-box"></a> **Dialogfeld „Assets herunterladen“:** Dieses Dialogfeld zeigt die Liste der Lizenzen, die mit den ausgewählten Assets verknüpft sind, im linken Bereich an. Wählen Sie eine Lizenz aus, um im mittleren Bereich eine Vorschau der Nutzungsbedingungen (im PDF-Format) und im rechten Bereich eine Vorschau der zugehörigen Assets samt Anzahl anzuzeigen. Die überprüften Lizenzen sind hellblau hervorgehoben.
-
-   >[!NOTE]
-   >
-   Im Dialogfeld **Asset herunterladen** werden die Lizenzbedingungen nur für die genehmigten Lizenzen in einer Vorschau angezeigt. [Genehmigen Sie die Asset-Lizenzen](/help/assets/approve-assets-content-hub.md), bevor Sie sie herunterladen, um ihre Lizenzbedingungen im Dialogfeld **Asset herunterladen** in einer Vorschau anzuzeigen.
-
-1. Klicken Sie auf ![Enfernen-Symbol](/help/assets/assets/remove-icon.svg), um eine Lizenz aus dem Download-Dialogfeld zu entfernen.
-
-1. Akzeptieren Sie die Nutzungsbedingungen und klicken Sie dann auf **Herunterladen**, um die Assets herunterzuladen, die mit den verfügbaren Lizenzen im linken Bereich verknüpft sind.
    ![Herunterladen mehrerer Lizenzen](/help/assets/assets/download-multiple-license.png)
 
-### Herunterladen nicht lizenzierter Assets {#download-non-licensed-assets}
+<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
+1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
+1. Select **I have read and accept all the terms and conditions mentioned above.** 
+1. Click **Download** to download the selected assets.-->
 
-Um nicht lizenzierte Assets herunterzuladen, wählen Sie die Assets aus und klicken Sie in der oberen Leiste auf ![Herunterladen](/help/assets/assets/download-icon.svg).
+<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+
+
+The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
+**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
+    
+    >[!NOTE]
+    >
+    >[Enable the download option for expired assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) to download them. Only expired assets that have enabled downloading are available for download.
+
+   <a id="Download-asset-dialog-box"></a> **Download assets dialog box:** This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the associated assets' preview and their count in the right pane. Reviewed licenses are highlighted in light blue.
+
+    >[!NOTE]
+    >
+    > The **Download Asset dialog box** previews licensing terms and conditions only for approved licenses. [Approve the assets' licenses](/help/assets/approve-assets-content-hub.md) before downloading them to preview their licensing terms in the **Download Asset dialog box**.
+
+1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
+
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+<!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+
+<!---
+### Download non-licensed Assets {#download-non-licensed-assets}
+
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
 
 
