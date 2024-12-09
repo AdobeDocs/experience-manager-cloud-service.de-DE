@@ -3,10 +3,11 @@ title: Assets Prime
 description: Erfahren Sie mehr über die wichtigsten Aspekte von Assets Prime, wie z. B. die wichtigsten Vorteile, die Benutzertypen und ihre Berechtigungen.
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
-workflow-type: ht
-source-wordcount: '1073'
-ht-degree: 100%
+exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
+source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 95%
 
 ---
 
@@ -34,6 +35,12 @@ Assets as a Cloud Service Prime enthält ein einfaches DAM, mit dem Sie verschie
 * **Integrationen**: Integrationen in andere Adobe- und Adobe-fremde Anwendungen.
 
 * **Dynamic Media (Add-on)**: Tools zum skalierten Transformieren und Bereitstellen von Bildern, Videos und anderen neu entstehenden Inhalten für umfassende interaktive Multimedia-Erlebnisse für alle Geräte.
+
+  >[!NOTE]
+  >
+  >Dynamic Media mit OpenAPI-Funktionen, mit denen Sie auf grundlegende Bildmodifikatoren wie Drehen, Zuschneiden (nur manuell - kein smartes Zuschneiden), Spiegeln, Größe, bevorzugte Webp, Höhe, Breite, Qualität, Format und adaptives Video-Streaming zugreifen können, ist auch mit Assets Prime verfügbar. Wenden Sie sich an das Adobe-Account-Team, um mehr zu erfahren.
+
+1. [Erstellen Sie ein neues Programm](/help/journey-onboarding/create-program.md).
 
 Da die Anforderungen Ihres DAM jedoch steigen und Sie mehr Funktionen wie die Erweiterbarkeit der Benutzeroberfläche, API-gesteuerte Automatisierung und Bereitstellung von benutzerdefiniertem Code benötigen, sollten Sie ein Upgrade auf [Assets Ultimate](/help/assets/assets-ultimate-overview.md) in Erwägung ziehen.
 
