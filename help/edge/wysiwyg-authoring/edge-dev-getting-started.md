@@ -4,8 +4,8 @@ description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Expe
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
-workflow-type: ht
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 100%
 
@@ -180,7 +180,7 @@ Sobald Sie Ihre neue Site mit dem universellen Editor fertig bearbeitet haben, k
 
 1. Öffnen Sie in demselben Browser eine neue Registerkarte und navigieren Sie zur URL Ihrer neuen Site.
 
-   * `https://main--<repository-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.aem.page`
 
 1. Sehen Sie sich Ihren veröffentlichten Inhalt an.
 

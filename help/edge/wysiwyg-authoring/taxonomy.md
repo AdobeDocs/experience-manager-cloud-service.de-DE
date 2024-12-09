@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Taxonomiedaten für die Verwendung von Tags m
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
-workflow-type: ht
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ Sobald Ihre Taxonomie veröffentlicht wurde, können ihre Informationen vom univ
 
 Sie können auf die Taxonomie als JSON-Daten unter der folgenden Adresse zugreifen:
 
-`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
+`https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
 Verwenden Sie den `<taxonomy-json-name>`, den Sie beim [Zuordnen Ihrer Taxonomie zur Datei `paths.json` in Ihrem Projekt definiert haben.](#paths-json) Die Taxonomiedaten werden wie im folgenden Beispiel als JSON-Daten zurückgegeben.
 

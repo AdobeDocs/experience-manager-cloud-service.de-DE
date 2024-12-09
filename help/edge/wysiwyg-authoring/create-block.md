@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Bausteine erstellen, die für den universelle
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
-workflow-type: ht
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 100%
 
@@ -182,7 +182,7 @@ Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt ü
 
 1. Wenn Sie mit dem Inhalt Ihres Zitats zufrieden sind, können Sie die Seite veröffentlichen, indem Sie in der Symbolleiste des universellen Editors auf die Schaltfläche **Veröffentlichen** tippen oder klicken.
 
-1. Stellen Sie sicher, dass der Inhalt veröffentlicht wurde. Navigieren Sie hierzu zur veröffentlichten Seite. Der Link sieht ungefähr so aus: `https://<branch>--<repo>--<owner>.hlx.page`
+1. Stellen Sie sicher, dass der Inhalt veröffentlicht wurde. Navigieren Sie hierzu zur veröffentlichten Seite. Der Link sieht ungefähr so aus: `https://<branch>--<repo>--<owner>.aem.page`
 
    ![Das veröffentlichte Zitat](assets/create-block/quote-published.png)
 
@@ -273,7 +273,7 @@ export default function decorate(block) {
 
 ![Der formatierte Zitatblock im universellen Editor](assets/create-block/quote-styled.png)
 
-8&amp;period; Stellen Sie sicher, dass die Änderungen in die Produktion übertragen wurden. Navigieren Sie hierzu zur veröffentlichten Seite. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;period; Stellen Sie sicher, dass die Änderungen in die Produktion übertragen wurden. Navigieren Sie hierzu zur veröffentlichten Seite. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.aem.page`
 
 ![Der veröffentlichte und formatierte Zitatblock](assets/create-block/quote-styled-published.png)
 
@@ -327,7 +327,7 @@ Durch das Hinzufügen einer `classes`-Eigenschaft zum Block wird die Eigenschaf
 
 In dieser Anleitung erfolgte die Übertragung der Änderungen der Einfachheit halber direkt auf die `main`-Verzweigung. Zum Experimentieren in einem Beispiel-Repository ist dies normalerweise kein Problem. Für die eigentliche Projektarbeit [sollten Sie den Best Practices für die Entwicklung folgen](https://www.aem.live/docs/dev-collab-and-good-practices). Entwickeln Sie hierzu in einer anderen Verzweigung und überprüfen Sie alle Änderungen über Pull-Anfragen, bevor Sie diese mit `main` zusammenführen.
 
-Wenn Sie sich nicht in der `main`-Verzweigung entwickeln, können Sie `?ref=<branch>` in der Speicherortleiste des universellen Editors anfügen, um die Seite von Ihrer Verzweigung zu laden. `<branch>` ist der Name der Verzweigung, wie er auch für die Vorschau Ihres Projekts oder Live-URLs verwendet wird, z. B. `https://<branch>--<repo>--<owner>.hlx.page`.
+Wenn Sie sich nicht in der `main`-Verzweigung entwickeln, können Sie `?ref=<branch>` in der Speicherortleiste des universellen Editors anfügen, um die Seite von Ihrer Verzweigung zu laden. `<branch>` ist der Name der Verzweigung, wie er auch für die Vorschau Ihres Projekts oder Live-URLs verwendet wird, z. B. `https://<branch>--<repo>--<owner>.aem.page`.
 
 ## Wiederverwenden Ihrer Bausteine für das dokumentbasierte Authoring {#reusing-blocks}
 

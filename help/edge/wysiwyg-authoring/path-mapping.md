@@ -3,13 +3,13 @@ title: Pfadzuordnung für Edge Delivery Services
 description: Erfahren Sie, wie Sie in der AEM-Autoreninstanz genutzte Seitenpfade öffentlichen Seitenpfaden zuordnen, die auf der Website verwendet werden, und wie Sie steuern, welcher Inhalt in Edge Delivery Services veröffentlicht wird.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
-workflow-type: ht
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # Pfadzuordnung für Edge Delivery Services {#path-mapping}
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie in der AEM-Autoreninstanz genutzte Seitenpfade öffentlich
 Um WYSIWYG-Inhalte mithilfe von AEM erstellen und in Edge Delivery Services veröffentlichen zu können, müssen Sie die Pfadzuordnung Ihres Projekts einrichten. Diese Zuordnung dient zwei Zwecken.
 
 * Sie ordnet die in Ihrer AEM-Autoreninstanz genutzten Seitenpfade den öffentlichen Seitenpfaden zu, die auf Ihrer Website verwendet werden, und stellt eine Beziehung zwischen ihnen her.
-* Sie steuert, welche Inhalte (Seiten, Blätter, Assets usw.) in Edge Delivery Services veröffentlicht werden.
+* Sie steuert, welche Inhalte (Seiten, Blätter, Assets usw.) für Edge Delivery Services veröffentlicht werden.
 
 Die Pfadzuordnung muss für jedes Projekt einzeln und entsprechend den Inhalten und der URL-Struktur des Projekts konfiguriert werden. Sie wird von AEM während der Veröffentlichung von Inhalten und während der Bearbeitung von Inhalten im [universellen Editor](/help/sites-cloud/authoring/universal-editor/navigation.md) verwendet.
 
@@ -79,7 +79,7 @@ Ihre Pfadzuordnungen können je nach Einrichtung Ihres Projekts auf zwei Arten k
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{
