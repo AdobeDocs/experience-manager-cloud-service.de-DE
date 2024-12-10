@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie 301- oder 302-Umleitungen ohne Zugriff auf Gi
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+source-git-commit: c80454204837529007c1fda7eef4486c213eb509
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,11 +58,11 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Anschließend müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die Zuordnungsdatei konfigurieren, auf die durch die name -Eigenschaft verwiesen wird (`my.map` im obigen Beispiel).
+Anschließend müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die Zuordnungsdatei konfigurieren, auf die durch die name -Eigenschaft verwiesen wird (`my.map` im obigen Beispiel). Nach dem Laden wird diese Zuordnungsdatei im lokalen Dispatcher-Speicher unter dem Speicherort **fixed** location `/tmp/rewrites/` gespeichert.
 
-In der Anweisung `RewriteMap` sollte angeben sein, dass die Daten im (einfachen) DBM(Database Manager)-Dateiformat `sdbm` gespeichert werden.
+Die Anweisung `RewriteMap` sollte angeben, dass die Daten im DBM-Dateiformat (Database Manager) unter Verwendung des Formats `sdbm` (einfaches DBM) gespeichert werden und der vollständige Dateipfad vom Speicherort-Speicherort-Präfix und der name-Eigenschaft abgeleitet wird.
 
-Der Rest der Konfiguration hängt vom Format des `redirectmap.txt` ab. Das einfachste Format, zu sehen im folgenden Beispiel, ist eine 1:1-Zuordnung zwischen der ursprünglichen URL und der zugeordneten URL:
+Der Rest der Konfiguration hängt vom Format der Datei `redirectmap.txt` ab. Das einfachste Format, zu sehen im folgenden Beispiel, ist eine 1:1-Zuordnung zwischen der ursprünglichen URL und der zugeordneten URL:
 
 ```
 # RewriteMap from managed rewrite maps
@@ -76,6 +76,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 Beachten Sie dabei Folgendes:
 
-* Standardmäßig startet Apache beim Laden einer Rewrite-Map, ohne darauf zu warten, dass die vollständigen Map-Dateien geladen werden. Daher kann es temporäre Inkonsistenzen geben, bis die vollständigen Map(s) geladen werden. Diese Einstellung kann so geändert werden, dass Apache darauf wartet, dass der gesamte Zuordnungsinhalt geladen wird, aber der Start von Apache länger dauert. Um dieses Verhalten so zu ändern, dass Apache wartet, fügen Sie `wait:true` zur Datei `managed-rewrite-maps.yaml` hinzu.
+* Standardmäßig startet Apache beim Laden einer Rewrite-Zuordnung, ohne auf das Laden der vollständigen Zuorddnungsdatei(en) zu warten. Daher kann es, bis die vollständigen Zuordnungen geladen sind, vorübergehend zu Inkonsistenzen kommen. Diese Einstellung kann so geändert werden, dass Apache darauf wartet, dass der gesamte Zuordnungsinhalt geladen wird. Es dauert dann jedoch länger, bis Apache gestartet wird. Um dieses Verhalten so zu ändern, dass Apache wartet, fügen Sie `wait:true` zur Datei `managed-rewrite-maps.yaml` hinzu.
 * Um das Intervall zwischen den Ladevorgängen zu ändern, fügen Sie `ttl: <integer>` zur Datei `managed-rewrite-maps.yaml` hinzu. Beispiel: `ttl: 120`.
 * Apache hat eine Längenbeschränkung von 1024 für RewriteMap-Einzeleinträge.
