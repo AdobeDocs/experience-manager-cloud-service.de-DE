@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Eingestellte und entfernte Funktionen in AEM as a Cloud Service"
->abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Auf dieser Registerkarte werden Funktionen und Funktionen vorgestellt, die durch ihre Cloud-nativen Gegenstücke ersetzt wurden."
+>abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Auf dieser Registerkarte werden Funktionen vorgestellt, die durch ihre Cloud-nativen Gegenstücke ersetzt wurden."
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Funktionen zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kundschaft insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] als [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell verwendet, ersetzt es bestimmte Funktionen und Funktionen durch Cloud-native Entsprechungen.
 
