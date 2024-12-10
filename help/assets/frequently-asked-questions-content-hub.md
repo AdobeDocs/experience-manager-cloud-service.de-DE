@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: a509cb6b2d6fea0d8c53c570c46b1feef2a15191
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,23 +18,19 @@ ht-degree: 97%
 
 >[!AVAILABILITY]
 >
->Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub-Handbuch als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## Was ist Content Hub? {#what-is-content-hub}
 
 Content Hub ist eine Funktion von Adobe Experience Manager Assets as a Cloud Service.
 
-Mit Content Hub können größere Teams relevante, genehmigte Assets ganz einfach über ein intuitives Portal entdecken und schnell an ihre Anforderungen anpassen.  Darüber hinaus bietet Content Hub einen Aufnahmemechanismus, der es diesen Benutzenden ermöglicht, beim Hochladen von Assets in das DAM einfach den Self-Service zu nutzen. Auf diese Weise können Unternehmen Inhalte schneller erstellen und gleichzeitig die Markenkonsistenz und die Einhaltung entsprechender Schutzmaßnahmen wahren.
+Mit Content Hub können größere Teams relevante, genehmigte Assets ganz einfach über ein intuitives Portal entdecken und schnell an ihre Anforderungen anpassen.  Darüber hinaus bietet Content Hub einen Aufnahmemechanismus, der es diesen Benutzenden ermöglicht, beim Hochladen von Assets in das DAM einfach den Self-Service zu nutzen. Auf diese Weise können Unternehmen Inhalte schneller erstellen und gleichzeitig die Markenkonsistenz und die Einhaltung entsprechender Schutzmaßnahmen wahren.
 
 ## Warum kann ich Content Hub nicht in meinem Cloud Manager-Programm bzw. meiner Cloud Manager-Umgebung aktivieren? {#cannot-enable-content-hub}
 
-Content Hub ist derzeit nur für AEM Cloud Manager-Produktionsprogramme verfügbar, die eine Assets-Lizenz enthalten. Wenn Sie auf [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) klicken, um es zu aktivieren, wird es bereitgestellt und der Autorenproduktionsumgebung von AEM in diesem Programm zugeordnet. Weitere Informationen und Voraussetzungen finden Sie unter [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md).
-
-Es gibt ein Early-Access-Programm für Content Hub in Sandbox-Programmen/Autorenproduktionsumgebungen. Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Wenden Sie sich an Ihr Adobe-Accountteam, um mehr über das Early-Access-Programm zu erfahren.
-
-Content Hub ist derzeit nicht für produktionsfremde Umgebungen (z. B. Staging, Entwicklung) verfügbar.
+Content Hub ist derzeit nur für AEM Cloud Manager-Produktionsprogramme verfügbar, die eine Assets-Lizenz enthalten (Assets Cloud Service, Assets Ultimate, Assets Prime). Wenn Sie auf [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) klicken, um es zu aktivieren, wird es bereitgestellt und der Autorenproduktionsumgebung von AEM in diesem Programm zugeordnet. Weitere Informationen und Voraussetzungen finden Sie unter [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md).
 
 ## Ich habe Content Hub in meinem Produktionsprogramm oder meiner Produktionsumgebung aktiviert. Kann ich es deaktivieren? {#can-i-disable-content-hub}
 
@@ -55,7 +51,9 @@ Sie können Content Hub auswerten, ohne dass sich dies auf Ihre in AEM as a Clou
 * Die bzw. der Admin Console-Admin fügt [einige ausgewählte Benutzende](/help/assets/deploy-content-hub.md#onboard-content-hub-users) zum Content Hub-Produktprofil hinzu, damit sie mit der Auswertung beginnen können.
 * Nachdem die Auswertung abgeschlossen ist, können AEM-Benutzende in der Autoreninstanz die Genehmigung für die Test-Assets entfernen und Produktions-Assets für Content Hub genehmigen. Anschließend kann die bzw. der Admin Console-Admin alle Benutzenden hinzufügen, die Zugriff auf Content Hub und genehmigte Inhalte benötigen. Herzlichen Glückwunsch! Ihr Content Hub ist jetzt live.
 
-Adobe bietet zudem ein Early-Access-Programm für Content Hub in Staging-Umgebungen. Weitere Informationen finden Sie unter der Frage [Warum kann ich Content Hub nicht in meinem Cloud Manager-Programm bzw. meiner Cloud Manager-Umgebung aktivieren?](#cannot-enable-content-hub).
+Es gibt ein frühzeitiges Zugriffsprogramm für Content Hub in Sandbox-Programmen und deren Autorenproduktionsumgebungen. Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Wenden Sie sich an Ihr Adobe-Accountteam, um mehr über das Early-Access-Programm zu erfahren.
+
+Content Hub ist noch nicht für Nicht-Produktionsumgebungen (Staging und Entwicklung) verfügbar. Die erwartete Verfügbarkeit für Staging-/Entwicklungsumgebungen für Assets Ultimate ist März 2025.
 
 ## Warum werden nach dem Anmelden bei Content Hub keine Assets angezeigt? {#no-assets-in-content-hub}
 
