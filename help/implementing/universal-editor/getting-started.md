@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten 
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 96%
+source-wordcount: '627'
+ht-degree: 87%
 
 ---
 
@@ -20,11 +20,21 @@ Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie m
 >
 >Wenn Sie lieber direkt in ein Beispiel eintauchen möchten, können Sie die [Beispielanwendung des universellen Editors auf GitHub ansehen.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM App als Beispiel. Dieses Dokument führt Sie durch diese Schritte.
+Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM-App als Beispiel. Dieses Dokument führt Sie durch diese Schritte.
 
 ## Instrumentieren der Seite {#instrument-page}
 
-Der Service des universellen Editors erfordert einen [Uniform Resource Name (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu verwenden. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
+Für den universellen Editor ist eine JavaScript-Bibliothek erforderlich, damit die Seite im Editor gerendert und bearbeitet werden kann.
+
+Darüber hinaus benötigt der Universal Editor-Dienst einen [universellen Ressourcennamen (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu nutzen. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
+
+### Include the Universal Editor CORS Library {#cors-library}
+
+Damit der universelle Editor eine Verbindung zu Ihrer App herstellen kann, muss Ihre App über die CORS-Bibliothek des universellen Editors verfügen. Fügen Sie das folgende Skript zu Ihrer App hinzu.
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### Erstellen von Verbindungen {#connections}
 
