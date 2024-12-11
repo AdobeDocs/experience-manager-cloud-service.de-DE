@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '3322'
-ht-degree: 98%
+source-wordcount: '3412'
+ht-degree: 96%
 
 ---
 
@@ -48,6 +48,9 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
 
    >[!NOTE]
    > Wenn es sich bei `Author` um die Zielebene handelt, wird die Authoring-Instanz während der Aufnahmedauer heruntergefahren, sodass sie Benutzenden (wie beispielsweise Autorinnen und Autoren oder anderen, die Wartungsarbeiten durchführen) nicht zur Verfügung steht. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Author-Aufnahme im Ruhezustand befindet.
+
+   >[!NOTE]
+   > Wenn die Zielstufe `Publish` ist, wird die Veröffentlichungsinstanz während der Erfassung weiterhin ausgeführt.  Wenn der Komprimierungsprozess jedoch während der Aufnahme ausgeführt wird, tritt wahrscheinlich ein Konflikt zwischen den beiden Prozessen auf.  Aus diesem Grund deaktiviert der Erfassungsvorgang (1) das zeitgesteuerte Skript der Komprimierung, sodass die Komprimierung nicht während der Aufnahme beginnt, und (2) überprüft, ob die Komprimierung derzeit ausgeführt wird und (falls dies der Fall ist) darauf wartet, dass sie abgeschlossen wird, bevor die Aufnahme fortgesetzt wird.  Wenn die Veröffentlichungsaufnahme länger dauert als erwartet, überprüfen Sie die Aufnahmeprotokolle auf zugehörige Protokollanweisungen.
 
    * **Bereinigen**: Wählen Sie den `Wipe`-Wert aus
       * Die Option **Bereinigen** legt den Startpunkt des Ziels für die Aufnahme fest. Wenn **Bereinigen** aktiviert ist, wird das Ziel einschließlich des gesamten Inhalts auf die in Cloud Manager angegebene AEM-Version zurückgesetzt. Wenn diese Option nicht aktiviert ist, behält das Ziel seinen aktuellen Inhalt als Ausgangspunkt bei.
