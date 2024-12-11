@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 65%
 
 ---
@@ -74,8 +74,6 @@ Das Verarbeitungsprofil kann eine FPO-Ausgabedarstellung (nur für Platzierung) 
 
 ### Erstellen eines Standardprofils {#create-standard-profile}
 
-Gehen Sie wie folgt vor, um ein Standardverarbeitungsprofil zu erstellen:
-
 1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen ein, der Ihnen hilft, das Profil beim Anwenden auf einen Ordner eindeutig zu identifizieren.
 1. Um FPO-Ausgabedarstellungen zu erzeugen, aktivieren Sie auf der Registerkarte **[!UICONTROL Bild]** die Option **[!UICONTROL FPO-Ausgabedarstellung erstellen]**. Geben Sie für die **[!UICONTROL Qualität]** einen Wert von 1–100 ein.
@@ -124,8 +122,6 @@ Entwickler können den [!DNL Asset Compute Service] verwenden, um [benutzerdefin
 >Sie können Standardmetadaten nicht mit den benutzerdefinierten Programmen bearbeiten. Sie können nur benutzerdefinierte Metadaten ändern.
 
 ### Benutzerdefiniertes Profil erstellen {#create-custom-profile}
-
-Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 
 1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** > **[!UICONTROL Erstellen]** zu.
 1. Klicken Sie auf der Seite Verarbeitungsprofil auf die Registerkarte **[!UICONTROL Benutzerdefiniert]** und dann auf **[!UICONTROL Neu hinzufügen]**.
