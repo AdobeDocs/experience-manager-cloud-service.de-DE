@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre GraphQL-Abfragen beim Filtern, Paging un
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1824'
 ht-degree: 100%
 
 ---
@@ -82,16 +82,6 @@ Siehe:
 
 * [Caching persistenter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [Verwaltung des Cache für Ihre persistierten Abfragen](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### Verwenden von AEM GraphQL-Vorab-Caching {#use-aem-graphql-pre-caching}
-
-**Empfehlung**
-
-Diese Funktion ermöglicht es AEM, Inhalte im Rahmen von GraphQL-Abfragen weiter im Cache zu speichern. Diese können dann als Blöcke in der JSON-Ausgabe und nicht zeilenweise zusammengestellt werden.
-
-**Weitere Informationen**
-
-Wenden Sie sich an Adobe, um diese Funktion für Ihr AEM Cloud Service-Programm und Ihre Umgebungen zu aktivieren.
 
 ### GraphQL-Abfrageoptimierung {#graphql-query-optimization}
 
