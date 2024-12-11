@@ -5,19 +5,19 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 99%
+source-wordcount: '2926'
+ht-degree: 65%
 
 ---
 
 # Asset-Microservices und Verarbeitungsprofile verwenden {#get-started-using-asset-microservices}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Asset-Microservices erlauben eine skalierbare und zuverlässige Verarbeitung von Assets mithilfe von Cloud-nativen Programmen (auch als „sekundäre Programme“ bezeichnet). Adobe verwaltet die Service für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen.
+Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe Cloud-nativer Anwendungen (auch als Sekundäre bezeichnet). Adobe verwaltet die Service für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen.
 
 Mit Asset-Microservices können Sie eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von [!DNL Experience Manager] möglich war. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie [!DNL ImageMagick] erforderlich waren.
 
@@ -32,7 +32,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->Die hier beschriebene Asset-Verarbeitung ersetzt das `DAM Update Asset`-Workflow-Modell, das in früheren Versionen von [!DNL Experience Manager] verwendet wurde. Die meisten Schritte zum Generieren von Standardausgabedarstellungen und zum Erstellen von Metadaten werden durch die Verarbeitung von Asset-Microservices ersetzt. Die verbleibenden Schritte können, falls vorhanden, durch die Konfiguration des Nachverarbeitungs-Workflows ersetzt werden.
+>Die hier beschriebene Asset-Verarbeitung ersetzt das `DAM Update Asset`-Workflow-Modell, das in früheren Versionen von [!DNL Experience Manager] verwendet wurde. Die Verarbeitung von Asset-Microservices ersetzt die meisten Schritte zur Generierung von Standardausgabeformaten und zum Erstellen von Metadaten. Die Konfiguration des Nachbearbeitungs-Workflows kann die verbleibenden Schritte ersetzen, sofern vorhanden.
 
 ## Optionen zur Asset-Verarbeitung verstehen {#get-started}
 
@@ -40,9 +40,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 | Option | Beschreibung | Anwendungsfälle |
 |---|---|---|
-| [Standardkonfiguration](#default-config) | Sie ist im Istzustand verfügbar und kann nicht geändert werden. Diese Konfiguration bietet eine sehr einfache Funktion zur Erstellung von Ausgabedarstellungen. | <ul> <li>Standardmäßige Miniaturen, die von der [!DNL Assets]-Benutzeroberfläche verwendet werden (48, 140 und 319 Pixel) </li> <li> Große Vorschau (Web-Ausgabedarstellung – 1.280 Pixel) </li><li> Metadaten und Textextraktion.</li></ul> |
-| [Benutzerdefinierte Konfiguration](#standard-config) | Von Administratoren über die Benutzeroberfläche konfiguriert. Bietet weitere Optionen für die Generierung von Ausgabedarstellungen durch Erweitern der Standardoption. Erweitert die vordefinierte Option, um verschiedene Formate und Ausgabedarstellungen bereitzustellen. | <ul><li>FPO-Ausgabedarstellung. </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingte Anwendung auf konfigurierte Dateitypen. </li> </ul> |
-| [Benutzerdefiniertes Profil](#custom-config) | Von Administratoren über die Benutzeroberfläche konfiguriert, um benutzerdefinierten Code über benutzerdefinierte Programme zum Aufrufen des [Asset Compute-Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=de) zu verwenden. Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
+| [Standardkonfiguration](#default-config) | Sie ist im Istzustand verfügbar und kann nicht geändert werden. Diese Konfiguration bietet eine grundlegende Funktion zur Generierung von Ausgabedarstellungen. | <ul> <li>Standardmäßige Miniaturen, die von der [!DNL Assets]-Benutzeroberfläche verwendet werden (48, 140 und 319 Pixel) </li> <li> Große Vorschau (Web-Ausgabedarstellung – 1.280 Pixel) </li><li> Metadaten und Textextraktion.</li></ul> |
+| [Benutzerdefinierte Konfiguration](#standard-config) | Von Administratoren über die Benutzeroberfläche konfiguriert. Für die Generierung von Ausgabedarstellungen werden durch Erweiterung der Standardoption weitere Optionen bereitgestellt. Erweitert die vordefinierte Option, um verschiedene Formate und Ausgabedarstellungen bereitzustellen. | <ul><li>FPO-Ausgabe (nur für Platzierung). </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingte Anwendung auf konfigurierte Dateitypen. </li> </ul> |
+| [Benutzerdefiniertes Profil](#custom-config) | Von Administratoren über die Benutzeroberfläche konfiguriert, um benutzerdefinierten Code über benutzerdefinierte Programme zum Aufrufen des [Asset Compute-Service](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction) zu verwenden. Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -53,7 +53,7 @@ Asset-Microservices bieten Unterstützung für eine Vielzahl von Dateiformaten, 
 
 ## Standardkonfiguration {#default-config}
 
-Einige Standardwerte sind vorkonfiguriert, um sicherzustellen, dass die in Experience Manager erforderlichen Standardausgabedarstellungen verfügbar sind. Außerdem stellt die Standardkonfiguration sicher, dass Metadatenextraktion und Textextraktion verfügbar sind. Benutzer können sofort mit dem Hochladen oder Aktualisieren von Assets beginnen. Die grundlegende Verarbeitung ist standardmäßig verfügbar.
+Einige Standardwerte sind vorkonfiguriert, um sicherzustellen, dass die in Experience Manager erforderlichen Standardausgabedarstellungen verfügbar sind. Die Standardkonfiguration stellt außerdem sicher, dass Metadatenextraktion und Textextraktion verfügbar sind. Benutzer können sofort mit dem Hochladen oder Aktualisieren von Assets beginnen. Die grundlegende Verarbeitung ist standardmäßig verfügbar.
 
 Bei der Standardkonfiguration wird nur das einfachste Verarbeitungsprofil konfiguriert. Solch ein Verarbeitungsprofil ist in der Benutzeroberfläche nicht sichtbar und kann nicht geändert werden. Es wird immer ausgeführt, um hochgeladene Assets zu verarbeiten. Mit einem standardmäßigen Verarbeitungsprofil wird sichergestellt, dass die von [!DNL Experience Manager] benötigte grundlegende Verarbeitung für alle Assets durchgeführt wird.
 
@@ -62,15 +62,15 @@ Bei der Standardkonfiguration wird nur das einfachste Verarbeitungsprofil konfig
 
 ## Standardkonfiguration {#standard-config}
 
-[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate gemäß den Anforderungen des Benutzers. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Smartphone und Tablet generieren. Das folgende Video zeigt, wie Sie [!UICONTROL Verarbeitungsprofile] erstellen und anwenden und auf die erstellten Ausgabedarstellungen zugreifen.
+[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate entsprechend den Anforderungen des Benutzers. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Mobile und Tablet generieren. Das folgende Video zeigt, wie Sie [!UICONTROL Verarbeitungsprofile] erstellen und anwenden und auf die erstellten Ausgabedarstellungen zugreifen.
 
-* **Breite und Höhe der Ausgabedarstellung**: Eine Angabe der Breite und Höhe der Ausgabedarstellung sorgt für die maximale Größe des generierten Ausgabebilds. Asset-Microservices versuchen, die größtmögliche Ausgabedarstellung zu erstellen, dessen Breite und Höhe nicht größer als die angegebene Breite bzw. Höhe sind. Das Seitenverhältnis wird beibehalten, d. h. es entspricht dem Original. Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen des Originals berücksichtigt werden.
+* **Breite und Höhe der Ausgabedarstellung**: Die Angabe der Breite und Höhe der Ausgabedarstellung bietet die maximale Größe des generierten Ausgabebilds. Asset-Microservices versuchen, die größtmögliche Ausgabedarstellung zu erstellen, dessen Breite und Höhe nicht größer als die angegebene Breite bzw. Höhe sind. Das Seitenverhältnis wird beibehalten, d. h. es entspricht dem Original. Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen des Originals berücksichtigt werden.
 
 * **Einschlussregeln für MIME-Typen**: Wenn ein Asset mit einem bestimmten MIME-Typ verarbeitet wird, wird der MIME-Typ zunächst mit dem Wert für die ausgeschlossenen MIME-Typen für die Ausgabespezifikation verglichen. Wenn er mit dieser Liste übereinstimmt, wird diese spezifische Ausgabedarstellung nicht für das Asset generiert (Blockierungsliste). Andernfalls wird der MIME-Typ mit dem eingeschlossenen MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Ausgabedarstellung generiert (Zulassungsliste).
 
-* **Spezielle FPO-Ausgabedarstellung**: Beim Platzieren großer Assets aus [!DNL Experience Manager] in [!DNL Adobe InDesign]-Dokumenten muss ein Kreativprofi eine ganze Weile warten, nachdem er [ein Asset platziert](https://helpx.adobe.com/de/indesign/using/placing-graphics.html) hat. In der Zwischenzeit kann der Benutzer [!DNL InDesign] nicht verwenden. Dies unterbricht den kreativen Fluss und wirkt sich negativ auf das Kundenerlebnis aus. Adobe ermöglicht die zeitweilige Platzierung kleinformatiger Ausgabedarstellungen in [!DNL InDesign]-Dokumenten. Diese können später bei Assets On-demand in voller Auflösung ersetzt werden. [!DNL Experience Manager] bietet Ausgabedarstellungen, die nur für die Platzierung verwendet werden (FPO). Diese FPO-Ausgabedarstellungen haben eine kleine Dateigröße, weisen aber dasselbe Seitenverhältnis auf.
+* **Spezielle FPO-Ausgabedarstellung**: Beim Platzieren großer Assets aus [!DNL Experience Manager] in [!DNL Adobe InDesign]-Dokumenten muss ein Kreativprofi eine ganze Weile warten, nachdem er [ein Asset platziert](https://helpx.adobe.com/de/indesign/using/placing-graphics.html) hat. In der Zwischenzeit kann der Benutzer [!DNL InDesign] nicht verwenden. Dies unterbricht den kreativen Fluss und wirkt sich negativ auf das Kundenerlebnis aus. Adobe ermöglicht die zeitweilige Platzierung kleinformatiger Ausgabedarstellungen in [!DNL InDesign] -Dokumenten, die später durch Assets bei Bedarf mit voller Auflösung ersetzt werden können. [!DNL Experience Manager] stellt Ausgabedarstellungen bereit, die nur für die Platzierung verwendet werden. Diese FPO-Ausgabedarstellungen haben eine kleine Dateigröße, weisen aber dasselbe Seitenverhältnis auf.
 
-Das Verarbeitungsprofil kann eine FPO-Ausgabedarstellung (nur für Platzierung) enthalten. In der [!DNL Adobe Asset Link] [Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) erfahren Sie, ob Sie es für Ihr Verarbeitungsprofil aktivieren müssen. Weitere Informationen finden Sie in der [vollständigen Dokumentation von Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html).
+Das Verarbeitungsprofil kann eine FPO-Ausgabedarstellung (nur für Platzierung) enthalten. Informationen dazu, ob Sie es für Ihr Verarbeitungsprofil aktivieren müssen, finden Sie in der [!DNL Adobe Asset Link] [Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) . Weitere Informationen finden Sie in der vollständigen Dokumentation zu [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) .
 
 ### Erstellen eines Standardprofils {#create-standard-profile}
 
@@ -104,7 +104,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Benutzerdefiniertes Profil und Anwendungsfälle {#custom-config}
 
-Der [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, z. B. Standardverarbeitung, Verarbeitung von Adobe-spezifischen Formaten wie Photoshop-Dateien und Implementierung benutzerdefinierter oder unternehmensspezifischer Verarbeitungsformate. Die zuvor erforderliche Anpassung des Asset-Workflows zum DAM-Update wird entweder automatisch oder über die Konfiguration von Verarbeitungsprofilen vorgenommen. Wenn diese Verarbeitungsoptionen geschäftlichen Anforderungen nicht gerecht werden, empfiehlt Adobe, die Standardfunktionen mit [!DNL Asset Compute Service] zu entwickeln und zu erweitern. Einen Überblick finden Sie unter [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de).
+Der [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, einschließlich standardmäßiger Verarbeitung und Verarbeitung von Adobe-spezifischen Formaten wie Photoshop-Dateien. Sie ermöglicht auch die Implementierung einer benutzerdefinierten oder unternehmensspezifischen Verarbeitung. Die zuvor erforderliche Anpassung des Workflows DAM-Update-Asset wird entweder automatisch oder über die Konfiguration von Verarbeitungsprofilen durchgeführt. Wenn diese Verarbeitungsoptionen nicht Ihren geschäftlichen Anforderungen entsprechen, empfiehlt Adobe, die Standardfunktionen mit [!DNL Asset Compute Service] zu entwickeln und zu erweitern. Einen Überblick finden Sie unter [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
 
 >[!NOTE]
 >
@@ -112,12 +112,12 @@ Der [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfälle
 
 Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Ausgabedarstellungen umwandeln, einschließlich Miniaturen, extrahiertem Text und Metadaten sowie Archiven.
 
-Entwickler können den [!DNL Asset Compute Service] verwenden, um [benutzerdefinierte Programme](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de) für die unterstützten Anwendungsfälle zu erstellen. [!DNL Experience Manager] kann diese benutzerdefinierten Programme über die Benutzeroberfläche aufrufen, indem benutzerdefinierte Profile verwendet werden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Services:
+Entwickler können den [!DNL Asset Compute Service] verwenden, um [benutzerdefinierte Programme](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application) für die unterstützten Anwendungsfälle zu erstellen. [!DNL Experience Manager] kann diese benutzerdefinierten Programme über die Benutzeroberfläche aufrufen, indem benutzerdefinierte Profile verwendet werden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Services:
 
 * Verwenden Sie die [ImageCutout-API](https://developer.adobe.com/photoshop/photoshop-api-docs/) von [!DNL Adobe Photoshop] und speichern Sie das Ergebnis als Ausgabedarstellung.
-* Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
-* Verwenden Sie die [!DNL Photoshop]-API, um basierend auf der Photoshop-Vorlage verschiedene Ausgabedarstellungen zu erstellen.
-* Verwenden Sie die [Adobe Lightroom-API](https://developer.adobe.com/photoshop/photoshop-api-docs/), um die erfassten Assets zu optimieren und als Ausgabedarstellungen zu speichern.
+* Rufen Sie Drittanbietersysteme auf, um Änderungen vorzunehmen, z. B. ein PIM-System.
+* Verwenden Sie die API [!DNL Photoshop] , um basierend auf der Photoshop-Vorlage eine Vielzahl von Ausgabedarstellungen zu generieren.
+* Verwenden Sie die [Adobe Lightroom-API](https://developer.adobe.com/photoshop/photoshop-api-docs/), um die aufgenommenen Assets zu optimieren und sie als Ausgabedarstellungen zu speichern.
 
 >[!NOTE]
 >
@@ -127,18 +127,18 @@ Entwickler können den [!DNL Asset Compute Service] verwenden, um [benutzerdefin
 
 Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 
-1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
-1. Klicken Sie auf die Registerkarte **[!UICONTROL Benutzerdefiniert]**. Klicken Sie auf **[!UICONTROL Neu hinzufügen]**. Geben Sie den gewünschten Dateinamen der Ausgabedarstellung ein.
-1. Geben Sie die folgenden Informationen ein.
+1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** > **[!UICONTROL Erstellen]** zu.
+1. Klicken Sie auf der Seite Verarbeitungsprofil auf die Registerkarte **[!UICONTROL Benutzerdefiniert]** und dann auf **[!UICONTROL Neu hinzufügen]**.
+1. Geben Sie im Textfeld Name den gewünschten Dateinamen der Ausgabedarstellung ein und geben Sie dann die folgenden Informationen ein.
 
    * Dateiname der jeweiligen Ausgabedarstellung und eine unterstützte Dateierweiterung.
-   * [Endpunkt-URL einer benutzerdefinierten App von App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=de). Die Mobile App muss aus derselben Organisation stammen wie das Experience Manager-Konto.
-   * Fügen Sie Service-Parameter hinzu, um [zusätzliche Informationen oder Parameter an das benutzerdefinierte Programm zu übergeben](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de#extend).
+   * [Endpunkt-URL einer benutzerdefinierten App Builder-App](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). Die Mobile App muss aus derselben Organisation stammen wie das Experience Manager-Konto.
+   * Fügen Sie Service-Parameter hinzu, um [zusätzliche Informationen oder Parameter an das benutzerdefinierte Programm zu übergeben](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend).
    * Schließen Sie MIME-Typen ein und aus, um die Verarbeitung auf einige bestimmte Dateiformate zu beschränken.
 
-   Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**.
 
-Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-Apps von [Project App Builder](https://developer.adobe.com/app-builder/docs/overview/). Die benutzerdefinierte Anwendung erhält alle bereitgestellten Dateien, wenn sie mit einem Verarbeitungsprofil eingerichtet wurden. Die Anwendung muss die Dateien filtern.
+Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-Apps von [Project App Builder](https://developer.adobe.com/app-builder/docs/overview/). Ihr benutzerdefiniertes Programm ruft alle bereitgestellten Dateien ab, wenn sie mit einem Verarbeitungsprofil eingerichtet sind. Die Anwendung muss die Dateien filtern.
 
 >[!CAUTION]
 >
@@ -148,22 +148,22 @@ Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-Apps von [Pr
 
 Zur Veranschaulichung der Nutzung eines benutzerdefinierten Profils sollten wir uns einen Anwendungsfall ansehen, bei dem Kampagnenbilder mit benutzerdefiniertem Text versehen werden. Sie können ein Verarbeitungsprofil erstellen, das die Photoshop-API zum Bearbeiten der Bilder verwendet.
 
-Die Asset Compute-Service-Integration ermöglicht es Experience Manager, diese Parameter mithilfe des Felds [!UICONTROL Dienstparameter] an das benutzerdefinierte Programm zu übergeben. Das benutzerdefinierte Proramm ruft dann die Photoshop-API auf und übergibt die Werte an die API. Sie können beispielsweise Schriftartname, Textfarbe, Textstärke und Textgröße übergeben, um den benutzerdefinierten Text Kampagnenbildern hinzuzufügen.
+Die Asset Compute-Service-Integration ermöglicht es Experience Manager, diese Parameter mithilfe des Felds [!UICONTROL Dienstparameter] an das benutzerdefinierte Programm zu übergeben. Das benutzerdefinierte Programm ruft dann die Photoshop-API auf und übergibt diese Werte an die API. Sie können beispielsweise Schriftartname, Textfarbe, Textstärke und Textgröße übergeben, um den benutzerdefinierten Text Kampagnenbildern hinzuzufügen.
 
 <!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Abbildung: Verwenden Sie das Feld [!UICONTROL Dienstparameter], um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in das benutzerdefinierte Programm eingebunden sind. In diesem Beispiel werden hochgeladene Kampagnenbilder mit `Jumanji`-Text in der `Arial-BoldMT`-Schriftart aktualisiert.*
+*Abbildung: Verwenden Sie das Feld [!UICONTROL Dienstparameter] , um hinzugefügte Informationen an vordefinierte Parameter zu übergeben, die in die benutzerdefinierte Anwendung integriert wurden. In diesem Beispiel werden hochgeladene Kampagnenbilder mit `Jumanji`-Text in der `Arial-BoldMT`-Schriftart aktualisiert.*
 
 ## Verarbeitungsprofile zur Verarbeitung von Assets verwenden {#use-profiles}
 
-Erstellen Sie die zusätzlichen benutzerdefinierten Verarbeitungsprofile und wenden Sie sie auf bestimmte Ordner an, damit Experience Manager sie für Assets verarbeitet, die in diese Ordner hochgeladen oder in diesen aktualisiert wurden. Das standardmäßige integrierte Verarbeitungsprofil wird immer ausgeführt, ist jedoch in der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
+Erstellen Sie zusätzliche benutzerdefinierte Verarbeitungsprofile und wenden Sie sie auf bestimmte Ordner an. Mit diesem Workflow kann Experience Manager Assets verarbeiten, die in diese Ordner hochgeladen oder dort aktualisiert werden. Das standardmäßige integrierte Verarbeitungsprofil wird immer ausgeführt, ist jedoch in der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
 
 Verwenden Sie eine der folgenden Methoden, um Verarbeitungsprofile auf Ordner anzuwenden:
 
-* Admins können unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** eine Verarbeitungsprofildefinition auswählen und die Aktion **[!UICONTROL Profil auf Ordner anwenden]** nutzen. Dadurch wird ein Inhalts-Browser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
-* Die Benutzer können einen Ordner in der Assets-Benutzeroberfläche auswählen, die Aktion **[!UICONTROL Eigenschaften]** zum Öffnen der Ordnereigenschaften verwenden, auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]** klicken, die Liste der [!UICONTROL Verarbeitungsprofile] einfügen und das richtige Verarbeitungsprofil für diesen Ordner auswählen. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
+* Administratoren können eine Verarbeitungsprofildefinition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** auswählen und die Aktion **[!UICONTROL Profil auf Ordner anwenden]** verwenden. Dadurch wird ein Inhaltsbrowser geöffnet, in dem Sie zu bestimmten Ordnern navigieren, diese auswählen und dann die Anwendung des Profils bestätigen können.
+* Benutzer können einen Ordner in der Benutzeroberfläche von Assets auswählen und die Aktion **[!UICONTROL Eigenschaften]** verwenden, um den Bildschirm &quot;Ordnereigenschaften&quot;zu öffnen. Auf der Registerkarte **[!UICONTROL Asset-Verarbeitung]** können sie das entsprechende Verarbeitungsprofil für diesen Ordner aus der Liste [!UICONTROL Verarbeitungsprofil] auswählen. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
   ![Verarbeitungsprofil auf der Registerkarte „Asset-Eigenschaften“ auf einen Ordner anwenden](assets/folder-properties-processing-profile.png)
 
 * Benutzer können Ordner oder bestimmte Assets in der Assets-Benutzeroberfläche auswählen, um ein Verarbeitungsprofil anzuwenden, und dann die Option ![assets reprocess icon](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Assets erneut verarbeiten]** aus den oben verfügbaren Optionen auswählen.
@@ -176,9 +176,9 @@ Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle n
 
 >[!NOTE]
 >
->Ein Verarbeitungsprofil, das auf einen Ordner angewendet wird, funktioniert für die gesamte Struktur, kann aber mit einem anderen Profil überschrieben werden, das auf einen Unterordner angewendet wird. Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn nichts angewendet wird, wird in einem übergeordneten Ordner in der Hierarchie geprüft, ob ein Verarbeitungsprofil angewendet werden soll.
+>Ein Verarbeitungsprofil, das auf einen Ordner angewendet wird, funktioniert für die gesamte Struktur, kann jedoch mit einem anderen Profil überschrieben werden, das auf einen Unterordner angewendet wird. Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn nichts angewendet wird, wird in einem übergeordneten Ordner in der Hierarchie geprüft, ob ein Verarbeitungsprofil angewendet werden soll.
 
-Um sicherzustellen, dass Assets verarbeitet werden, müssen Sie die erzeugten Ausgabedarstellungen in der Ansicht [!UICONTROL Ausgabedarstellungen] in der linken Leiste als Vorschau anzeigen. Öffnen Sie die Asset-Vorschau und dann die linke Leiste, um auf die Ansicht **[!UICONTROL Ausgabedarstellungen]** zuzugreifen. Die spezifischen Ausgabedarstellungen im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den Einschlussregeln des MIME-Typs übereinstimmt, sollten sichtbar und zugänglich sein.
+Um sicherzustellen, dass Assets verarbeitet werden, müssen Sie die erzeugten Ausgabedarstellungen in der Ansicht [!UICONTROL Ausgabedarstellungen] in der linken Leiste als Vorschau anzeigen. Öffnen Sie die Asset-Vorschau und öffnen Sie die linke Leiste, um auf die Ansicht **[!UICONTROL Ausgabedarstellungen]** zuzugreifen. Die spezifischen Ausgabedarstellungen im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den Einschlussregeln des MIME-Typs übereinstimmt, sollten sichtbar und zugänglich sein.
 
 ![Zusätzliche-Ausgabedarstellungen](assets/renditions-additional-renditions.png)
 
@@ -186,20 +186,20 @@ Um sicherzustellen, dass Assets verarbeitet werden, müssen Sie die erzeugten Au
 
 ## Nachbearbeitungs-Workflows {#post-processing-workflows}
 
-In Fällen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden kann, können der Konfiguration zusätzliche Nachbearbeitungs-Workflows hinzugefügt werden. Mit der Nachbearbeitung können Sie zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzufügen.
+In Situationen, in denen zusätzliche Verarbeitungen von Assets erforderlich sind, die mit den Verarbeitungsprofilen nicht erreicht werden können, können der Konfiguration zusätzliche Nachbearbeitungs-Workflows hinzugefügt werden. Mit der Nachbearbeitung können Sie zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzufügen.
 
-Nachbearbeitungs-Workflows oder [automatisch gestartete Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html?lang=de) werden, falls konfiguriert, automatisch von [!DNL Experience Manager] ausgeführt, nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um die Workflows auszulösen. Zu den Beispielen gehören:
+Nachdem die Verarbeitung der Microservices abgeschlossen ist, führt [!DNL Experience Manager] automatisch Nachbearbeitungs-Workflows oder, falls konfiguriert, [Workflows automatisch starten](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/auto-start-workflows) aus. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um die Workflows auszulösen. Zu den Beispielen gehören:
 
 * Benutzerdefinierte Workflow-Schritte zur Verarbeitung von Assets.
 * Integrationen, um Assets von externen Systemen Metadaten oder Eigenschaften hinzuzufügen, z. B. Produkt- oder Prozessinformationen.
-* Zusätzliche Verarbeitung durch externe Services.
+* Die zusätzliche Verarbeitung erfolgt durch externe Dienste.
 
 Gehen Sie wie folgt vor, um [!DNL Experience Manager] eine Workflow-Konfiguration für die Nachbearbeitung hinzuzufügen:
 
-* Erstellen eines oder mehrerer Workflow-Modelle. Diese benutzerdefinierten Modelle werden in dieser Dokumentation als *Workflow-Modelle nach der Verarbeitung* bezeichnet. Es handelt sich um normale [!DNL Experience Manager]-Workflow-Modelle.
+* Erstellen eines oder mehrerer Workflow-Modelle. Diese benutzerdefinierten Modelle werden in dieser Dokumentation als *Nachbearbeitungs-Workflow-Modelle* bezeichnet. Es handelt sich um normale [!DNL Experience Manager] Workflow-Modelle.
 * Fügen Sie diesen Modellen die erforderlichen Workflow-Schritte hinzu. Überprüfen Sie die Schritte aus dem Standard-Workflow und fügen Sie dem benutzerdefinierten Workflow alle erforderlichen Standardschritte hinzu. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt. Wenn beispielsweise Smart-Tagging beim Hochladen von Assets automatisch erfolgen soll, fügen Sie den Schritt zum benutzerdefinierten Workflow-Modell für die Nachbearbeitung hinzu.
-* Fügen Sie am Ende den Schritt [!UICONTROL Abgeschlossener Prozess zum DAM-Workflow eines Asset-Updates] hinzu. Durch Hinzufügen dieses Schritts wird sichergestellt, dass Experience Manager weiß, wann die Verarbeitung abgeschlossen ist, und das Asset als verarbeitet markiert werden kann, d. h., dass beim Asset der Wert *Neu* angezeigt wird.
-* Erstellen Sie eine Konfiguration für den Custom Workflow Runner Service, mit der die Ausführung eines Nachbearbeitungs-Workflow-Modells entweder nach Pfad (Speicherort für Ordner) oder nach regulären Ausdrücken konfiguriert werden kann.
+* Fügen Sie am Ende den Schritt [!UICONTROL DAM Update Asset Workflow Completed Process] hinzu. Durch Hinzufügen dieses Schritts wird sichergestellt, dass Experience Manager weiß, wann die Verarbeitung abgeschlossen ist, und das Asset als verarbeitet markiert werden kann, d. h., dass beim Asset der Wert *Neu* angezeigt wird.
+* Erstellen Sie eine Konfiguration für den Custom Workflow Runner Service , mit der Sie die Ausführung eines Nachbearbeitungs-Workflow-Modells entweder durch einen Pfad (Ordnerspeicherort) oder durch einen regulären Ausdruck konfigurieren können.
 
 Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbearbeitungs-Workflow verwendet werden kann, finden Sie unter [Workflow-Schritte im Nachbearbeitungs-Workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in der Entwicklerreferenz.
 
@@ -207,15 +207,15 @@ Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbea
 
 Nachbearbeitungs-Workflow-Modelle sind normale [!DNL Experience Manager]-Workflow-Modelle. Erstellen Sie verschiedene Modelle, wenn Sie für verschiedene Repository-Standorte oder Asset-Typen eine unterschiedliche Verarbeitung benötigen.
 
-Die Verarbeitungsschritte werden nach Bedarf hinzugefügt. Sie können sowohl die zur Verfügung stehenden unterstützten Schritte als auch beliebige benutzerdefinierte Workflow-Schritte verwenden.
+Die Verarbeitungsschritte werden nach Bedarf hinzugefügt. Sie können sowohl die verfügbaren unterstützten Schritte als auch alle benutzerdefinierten Workflow-Schritte verwenden.
 
-Stellen Sie sicher, dass der letzte Schritt jedes Nachbearbeitungs-Workflows `DAM Update Asset Workflow Completed Process` ist. Der letzte Schritt stellt sicher, dass Experience Manager weiß, wann die Asset-Verarbeitung abgeschlossen ist.
+Stellen Sie sicher, dass der letzte Schritt jedes Nachbearbeitungs-Workflows `DAM Update Asset Workflow Completed Process` ist. Der letzte Schritt stellt sicher, dass der Experience Manager erkennt, wenn die Asset-Verarbeitung abgeschlossen ist.
 
 ### Konfigurieren der Ausführung von Nachbearbeitungs-Workflows {#configure-post-processing-workflow-execution}
 
 Nachdem die Asset-Microservices die Verarbeitung der hochgeladenen Assets abgeschlossen haben, können Sie einen Nachbearbeitungs-Workflow definieren, um die Assets weiter zu verarbeiten. Um die Nachbearbeitung mithilfe von Workflow-Modellen zu konfigurieren, haben Sie folgende Möglichkeiten:
 
-* [Wenden Sie in den Ordnereigenschaften ein Workflow-Modellan](#apply-workflow-model-to-folder).
+* [Wenden Sie ein Workflow-Modell im Ordner Eigenschaften](#apply-workflow-model-to-folder) an.
 * [Konfigurieren Sie den Custom Workflow Runner-Service](#configure-custom-workflow-runner-service).
 
 #### Anwenden eines Workflow-Modells auf einen Ordner {#apply-workflow-model-to-folder}
@@ -223,51 +223,51 @@ Nachdem die Asset-Microservices die Verarbeitung der hochgeladenen Assets abgesc
 Für typische Anwendungsfälle nach der Verarbeitung sollten Sie den Einsatz der Methode, einen Workflow auf einen Ordner anzuwenden, erwägen. Gehen Sie wie folgt vor, um ein Workflow-Modell im Ordner [!UICONTROL Eigenschaften] anzuwenden:
 
 1. Erstellen Sie ein Workflow-Modell.
-1. Wählen Sie einen Ordner aus, klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** und dann auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]**.
+1. Wählen Sie einen Ordner aus, klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** und dann auf die Registerkarte **[!UICONTROL Assets-Verarbeitung]** .
 1. Wählen Sie unter **[!UICONTROL Workflow automatisch starten]** den gewünschten Workflow aus, geben Sie einen Titel für den Workflow ein und speichern Sie dann die Änderungen.
 
    ![Anwenden eines Nachbearbeitungs-Workflows auf einen Ordner in seinen Eigenschaften](assets/post-processing-profile-workflow-for-folders.png)
 
-#### Konfigurieren des Custom Workflow Runner-Services {#configure-custom-workflow-runner-service}
+#### Konfigurieren des benutzerdefinierten Workflow Runner-Dienstes {#configure-custom-workflow-runner-service}
 
-Sie können den benutzerdefinierten Workflow Runner-Service für die erweiterten Konfigurationen konfigurieren, die nicht ohne weiteres erfüllt werden können, indem Sie einen Workflow auf einen Ordner anwenden. Beispiel: ein Workflow, der einen regulären Ausdruck verwendet. Der Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) ist ein OSGi-Service. Er bietet die beiden folgenden Konfigurationsoptionen:
+Sie können den Custom Workflow Runner-Dienst für erweiterte Konfigurationen konfigurieren, die nicht ohne weiteres erfüllt werden können, indem Sie einen Workflow auf einen Ordner anwenden. Beispiel: ein Workflow, der einen regulären Ausdruck verwendet. Der Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) ist ein OSGi-Service. Er bietet die beiden folgenden Konfigurationsoptionen:
 
-* Nachbearbeitungs-Workflows nach Pfad (`postProcWorkflowsByPath`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen Repository-Pfaden aufgeführt werden. Trennen Sie Pfade und Modelle mithilfe eines Doppelpunkts. Einfache Repository-Pfade werden unterstützt. Ordnen Sie diese einem Workflow-Modell im Pfad `/var` zu. Beispiel: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Nachbearbeitungs-Workflows nach Ausdruck (`postProcWorkflowsByExpression`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen regulären Ausdrücken aufgelistet werden. Ausdrücke und Modelle sollten durch einen Doppelpunkt getrennt werden. Der reguläre Ausdruck sollte direkt auf den Asset-Knoten verweisen und nicht auf eine der Ausgabedarstellungen oder Dateien. Beispiel: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Nachbearbeitungs-Workflows nach Pfad (`postProcWorkflowsByPath`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen Repository-Pfaden aufgeführt werden. Trennen Sie Pfade und Modelle mithilfe eines Doppelpunkts. Einfache Repository-Pfade werden unterstützt. Ordnen Sie sie einem Workflow-Modell im Pfad `/var` zu. Beispiel: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Nachbearbeitungs-Workflows nach Ausdruck (`postProcWorkflowsByExpression`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen regulären Ausdrücken aufgelistet werden. Trennen Sie Ausdrücke und Modelle durch einen Doppelpunkt. Zeigen Sie den regulären Ausdruck an, um direkt auf den Asset-Knoten zu verweisen, und nicht auf eine der Ausgabedarstellungen oder Dateien. Beispiel: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Informationen zum Bereitstellen einer OSGi-Konfiguration finden Sie unter [Bereitstellen für [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
 #### Deaktivieren der Ausführung von Nachbearbeitungs-Workflows
 
-Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein „leeres“ Workflow-Modell in der Auswahl __Workflow automatisch starten__.
+Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein „leeres“ Workflow-Modell in der Auswahl **Workflow automatisch starten**.
 
 ##### Erstellen des deaktivierten Modells „Workflow automatisch starten“
 
-1. Gehen Sie zu __Tools > Workflow > Modelle__.
-1. Wählen Sie __Erstellen > Modell erstellen__ in der oberen Aktionsleiste aus.
+1. Gehen Sie zu **Tools** > **Workflow** > **Modelle**.
+1. Klicken Sie in der oberen Aktionsleiste auf **Erstellen** > **Modell erstellen** .
 1. Geben Sie einen Titel und einen Namen für das neue Workflow-Modell an, Beispiel:
    * Titel: Deaktivieren des automatisch gestarteten Workflows
    * Name: disable-auto-start-workflow
-1. Wählen Sie __Fertig__ aus, um das Workflow-Modell zu erstellen.
-1. __Wählen__ Sie das erstellte Workflow-Modell aus und __bearbeiten__ Sie es.
-1. Wählen Sie im Workflow-Modell-Editor die Option __Schritt 1__ aus der Modelldefinition aus und löschen Sie sie.
-1. Öffnen Sie das __seitliche Bedienfeld__ und wählen Sie __Schritte__ aus.
-1. Ziehen Sie den Schritt __Abgeschlossener Prozess zum DAM-Workflow eines Asset-Updates__ in die Modelldefinition.
-1. Wählen Sie die Schaltfläche __Seiteninformationen__ (neben dem Umschalter für das __seitliche Bedienfeld__) und wählen Sie __Eigenschaften öffnen__ aus.
-1. Wählen Sie unter der Registerkarte __Allgemein__ die Option __Übergangs-Workflow__ aus.
-1. Wählen Sie in der oberen Aktionsleiste __Speichern und schließen__ aus.
-1. Wählen Sie in der oberen Aktionsleiste __Synchronisieren__ aus.
+1. Klicken Sie auf **Fertig** , um das Workflow-Modell zu erstellen.
+1. Das erstellte Workflow-Modell auswählen und bearbeiten
+1. Klicken Sie im Workflow-Modell-Editor in der Modelldefinition auf **Schritt 1** und löschen Sie ihn.
+1. Klicken Sie im seitlichen Bedienfeld auf **Schritte**.
+1. Ziehen Sie den Schritt **DAM Update Asset Workflow Completed** in die Modelldefinition.
+1. Klicken Sie auf **Seiteninformationen** (neben dem Umschalter **Seitenbereich**) und klicken Sie auf **Eigenschaften öffnen**.
+1. Klicken Sie auf der Registerkarte Allgemein auf **Übergangs-Workflow**.
+1. Klicken Sie in der oberen Aktionsleiste auf **Speichern und schließen**.
+1. Klicken Sie in der oberen Aktionsleiste auf **Synchronisieren**.
 1. Schließen Sie den Workflow-Modell-Editor.
 
 ##### Anwenden des deaktivierten Modells „Workflow automatisch starten“
 
-Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordner](#apply-workflow-model-to-folder) und legen Sie __Deaktivieren des automatisch gestarteten Workflows__ als __Workflow automatisch starten__ für Ordner fest, für die keine Nachbearbeitung von Assets erforderlich ist.
+Befolgen Sie die unter [Anwenden eines Workflow-Modells auf einen Ordner](#apply-workflow-model-to-folder) beschriebenen Schritte und legen Sie den Workflow &quot;**Automatisches Starten deaktivieren**&quot;für Ordner, für die keine Nachbearbeitung von Assets erforderlich ist, als **Workflow für das automatische Starten** fest.
 
 ## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
-* Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager] viel Speicherplatz beanspruchen. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
+* Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager] viel Speicherplatz beanspruchen. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie entweder [!DNL Experience Manager] anpassen, um bestimmte Ausgabeformate zu löschen, oder die Assets löschen und sie erneut hochladen.
 * Derzeit ist die Unterstützung auf das Erzeugen von Ausgabedarstellungen beschränkt. Das Erstellen neuer Assets wird nicht unterstützt.
-* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
+* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen sehr großer Assets schlägt der Vorgang zum Extrahieren von Metadaten manchmal fehl.
 
 **Siehe auch**
 
@@ -287,9 +287,9 @@ Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordne
 
 >[!MORELIKETHIS]
 >
->* [Einführung in den Asset Compute-Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=de).
->* [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de).
->* [So erstellen Sie benutzerdefinierte Programme](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de).
+>* [Einführung in den Asset Compute-Service](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction).
+>* [Die Erweiterbarkeit und den Verwendungszeitpunkt verstehen](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
+>* [So erstellen Sie benutzerdefinierte Programme](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application).
 >* [Interstützte MIME-Typen für verschiedene Anwendungsfälle](/help/assets/file-format-support.md).
 
 <!-- TBD: 
