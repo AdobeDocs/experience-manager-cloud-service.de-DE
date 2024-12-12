@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der universelle Editor die WYSIWYG-Bearbeitung (W
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 94%
+source-wordcount: '992'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, ohne sich um das Layout küm
 
 * Die zugrunde liegende Aufgabe besteht darin, die Inhaltsstrategie zu skalieren.
 
-### Universeller Editor {#universal-editor}
+### universellen Editor {#universal-editor}
 
 Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bestimmten Kontexts zugeschnitten sind, um ein außergewöhnliches Erlebnis zu bieten.
 
@@ -86,12 +86,11 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bes
 
 Beachten Sie bei der Erkundung des universellen Editors und später bei seiner Implementierung in Ihre eigenen Projekte folgende Einschränkungen:
 
-* Es sollten nicht mehr als 25 AEM Ressourcen (Inhaltsfragmente, Seiten, Experience Fragments, Assets usw.) als Instrumentierung auf einer einzelnen Seite dienen.
-* AEM as a Cloud Service ist das einzige unterstützte AEM-Back-End.
-   * [Die Unterstützung für AEM 6.5 ist im Rahmen eines Programms zur frühzeitigen Annahme verfügbar.](/help/release-notes/universal-editor/current.md#early-adoption)
+* Auf einer einzelnen Seite sollten nicht mehr als 25 AEM-Ressourcen (Inhaltsfragmente, Seiten, Experience Fragments, Assets usw.) als Instrumentierung referenziert werden.
+* AEM as a Cloud Service und [AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sind die einzigen unterstützten AEM Backends.
 * Es ist AEM as a Cloud Service Version `2023.8.13099` oder höher erforderlich.
 * Inhaltsautorinnen und Inhaltsautoren müssen über eigene Experience Cloud-Konten verfügen.
-* Im Rahmen AEM unterstützt der universelle Editor dieselben Desktop-Browser wie AEM.
+* Als Teil von AEM unterstützt der universelle Editor dieselben Desktop-Browser wie AEM.
    * Mobilversionen dieser Browser werden nicht unterstützt.
 
 {{ue-ip-allow-lists}}
