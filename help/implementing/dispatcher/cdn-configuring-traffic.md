@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
+source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 96%
@@ -431,7 +431,7 @@ data:
 Die Speicherorte einer Umleitung können entweder Zeichenfolgenliterale (z. B. https://www.example.com/page) oder das Ergebnis einer Eigenschaft (z. B. Pfad) sein, die optional mit der folgenden Syntax umgewandelt wird:
 
 ```
-experimental_redirects:
+redirects:
   rules:
     - name: country-code-redirect
       when: { reqProperty: path, like: "/" }
