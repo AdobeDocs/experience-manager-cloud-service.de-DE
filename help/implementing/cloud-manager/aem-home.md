@@ -1,56 +1,57 @@
 ---
-title: Adobe Experience Manager - Startseite
-description: Erfahren Sie mehr über die Adobe Experience Manager-Startseite.
+title: Adobe Experience Manager Launchpad
+description: Weitere Informationen zur Adobe Experience Manager Launchpad-Seite.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 529e5919381d6c347f1eb45f913b2b529de80fd6
+source-git-commit: 07fd05fe47d0d2ba13f6289cd6607d97d19c1deb
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 34%
+ht-degree: 7%
 
 ---
 
-# Informationen zur Startseite von Adobe Experience Manager {#aem-home}
+# Über Adobe Experience Manager LaunchPad {#aem-launchpad}
 
-AEM Home bietet einen zentralen Ausgangspunkt für das Verwalten von Inhalten, Assets und Sites in Adobe Experience Manager. AEM Home wurde für ein personalisiertes Erlebnis konzipiert und ermöglicht Ihnen die nahtlose Navigation im AEM-Ökosystem entsprechend Ihren Rollen und Zielen. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem klaren, rollenbasierten Layout gewährleistet AEM Home schnellen Zugriff auf wichtige Tools und ermöglicht so ein optimiertes und effektives Erlebnis für alle AEM-Funktionen.
+AEM Launchpad bietet einen zentralen Ausgangspunkt für die Verwaltung von Inhalten, Assets und Websites in Adobe Experience Manager. AEM Launchpad wurde entwickelt, um Ihnen ein personalisiertes Erlebnis zu bieten und ermöglicht Ihnen eine nahtlose Navigation im AEM-Ökosystem entsprechend Ihren Rollen und Zielen. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem übersichtlichen, personalgesteuerten Layout bietet AEM Launchpad schnellen Zugriff auf wichtige Tools und unterstützt so ein optimiertes und effektives Erlebnis über alle AEM-Funktionen hinweg.
 
-AEM Home steht Early-Adoptern zur Verfügung und bietet ein optimiertes Erlebnis, das auf die Verbesserung von Workflows, die Priorisierung von Zielen und die Bereitstellung von Ergebnissen ausgerichtet ist. Wenn Sie sich dafür entscheiden, können Sie die Entwicklung von AEM Home beeinflussen, indem Sie Feedback geben, um seine Zukunft mitzubestimmen und seinen Wert für die gesamte AEM-Community zu erhöhen.
+AEM Launchpad steht frühen Anwendern zur Verfügung und bietet ein optimiertes Erlebnis, das sich auf die Verbesserung von Workflows, die Priorisierung von Zielen und die Bereitstellung von Ergebnissen konzentriert. Mit dem Opt-in können Sie die Entwicklung von AEM Launchpad beeinflussen, indem Sie Feedback geben, das die Zukunft des Pads mitgestaltet und seinen Wert für die gesamte AEM-Community erhöht.
 
-## AEM Home up close {#aem-home-about}
+## AEM Launchpad von Nahem {#aem-launchpad-about}
 
-Die [Adobe Experience Manager-Seite](https://experience.adobe.com/#/experiencemanager) wurde mit erweiterten Navigations- und interaktiven Widgets aktualisiert. Die vorherige Sammlung von Lösungskarten bot Zugriff auf Tools wie die folgenden:
+Die Seite [Adobe Experience Manager](https://experience.adobe.com/#/experiencemanager) wurde mit erweiterten Navigationsfunktionen und interaktiven Widgets aktualisiert. Die vorherige Sammlung von Lösungskarten bietet Zugriff auf Tools wie die folgenden:
 
-* Universeller Editor
+* universellen Editor
 * Cloud Manager
 * Cloud Acceleration Manager
 * Brand Portal
-* Softwareverteilung und
+* Software-Verteilung und
 * Extension Manager
 
-Diese Lösungen werden jetzt unter **Tools** in die Hauptnavigation verschoben. Darüber hinaus bieten neue Navigationselemente für **Sites** und **Assets** schnellen Zugriff auf wichtige Adobe Experience Manager-Funktionen wie Assets, Sammlungen, Sites und Inhaltsfragmente. Diese Funktionen sind für die primäre Produktionsumgebung verfügbar, auf die Sie Zugriff haben.
+Diese Lösungen werden jetzt in die Hauptnavigation unter &quot;**&quot;**. Darüber hinaus bieten neue Navigationselemente für **Sites** und **Assets** schnellen Zugriff auf wichtige Adobe Experience Manager-Funktionen wie Assets, Sammlungen, Sites und Inhaltsfragmente. Diese Funktionen sind für die primäre Produktionsumgebung verfügbar, auf die Sie Zugriff haben.
 
-![AEM Home-Umgebungen](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
+![AEM LaunchPad-Umgebungen](/help/implementing/cloud-manager/assets/aem-launchpad-author-environments.png)
 
-Als zentrale Anlaufstelle für Adobe Experience Manager erweitert sich die AEM-Startseite, um zusätzliche Widgets und Aktionen bereitzustellen, die auf die Benutzerrollen zugeschnitten sind. Die Seite ist vollständig anpassbar und ermöglicht die Auswahl des optimalen Layouts für Ihren Bildschirm. Widgets können so gefiltert werden, dass nur ausgewählte Widgets auf der Hauptseite angezeigt werden, sodass ein personalisiertes Erlebnis gewährleistet ist.
+Die AEM Launchpad-Seite, die als zentraler Hub für Adobe Experience Manager dient, wird erweitert und enthält zusätzliche Widgets und Aktionen, die auf jede Benutzerrolle zugeschnitten sind. Die Seite ist vollständig anpassbar und ermöglicht die Auswahl des optimalen Layouts für Ihren Bildschirm. Widgets können so gefiltert werden, dass nur ausgewählte Widgets auf der Hauptseite angezeigt werden, was ein personalisiertes Erlebnis gewährleistet.
 
-![AEM Home customized](/help/implementing/cloud-manager/assets/aem-home-custom.png)
+![AEM Launchpad angepasst](/help/implementing/cloud-manager/assets/aem-launchpad-custom.png)
 
-Die Größe von Widgets kann auch angepasst und auf der Seite neu positioniert werden, um Ihren Bedürfnissen und Vorlieben besser zu entsprechen.
+Widgets können auch in der Größe angepasst und auf der Seite neu positioniert werden, um sie besser an Ihre Anforderungen und Präferenzen anzupassen.
 
-![AEM Home widgets](/help/implementing/cloud-manager/assets/aem-home-widgets.png)
+![AEM Launchpad-Widgets](/help/implementing/cloud-manager/assets/aem-launchpad-widgets.png)
 
-Im Abschnitt **Authoring-Umgebungen** werden alle AEM Umgebungen angezeigt, auf die Sie zugreifen können, während im Abschnitt **Zuletzt verwendet** eine Liste der zuletzt besuchten Seiten angezeigt wird, die in den AEM verfolgt wurden.
+Im Abschnitt **Authoring-Umgebungen** werden alle AEM-Umgebungen angezeigt, auf die Sie zugreifen können, während der Abschnitt **Zuletzt verwendet** eine Liste der kürzlich besuchten Seiten enthält, die in den AEM-Systemen nachverfolgt werden.
 
-Zu den Navigationselementen gehören Assets Browse , das das Repository der Produktionsumgebung lädt, auf das der Benutzer zugreifen kann.
+Zu den Navigationselementen gehört Assets Browse , das das Repository der Produktionsumgebung lädt, auf die der Benutzer zugreifen kann.
 
-![AEM Home navigation elements](/help/implementing/cloud-manager/assets/aem-home-navigation.png)
+![AEM Launchpad-Navigationselemente](/help/implementing/cloud-manager/assets/aem-launchpad-navigation.png)
 
-Wenn keine Produktions-AEM Cloud Service-Umgebungen verfügbar sind, werden die Optionen für den Benutzer abgeblendet (nicht verfügbar) angezeigt.
+Wenn keine AEM Cloud Service-Produktionsumgebungen verfügbar sind, werden die Optionen für die Benutzerin bzw. den Benutzer abgeblendet (nicht verfügbar) angezeigt.
 
-![AEM Home in Produktionsumgebungen](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
-.
+![AEM Launchpad in Produktionsumgebungen](/help/implementing/cloud-manager/assets/aem-launchpad-no-prod-environs.png)
+
+
 
