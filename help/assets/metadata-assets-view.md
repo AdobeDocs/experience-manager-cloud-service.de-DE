@@ -5,16 +5,16 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 99%
+source-wordcount: '1904'
+ht-degree: 94%
 
 ---
 
 # Metadaten in der Assets-Ansicht {#metadata}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Metadaten sind Daten oder Beschreibungen zu den Daten. Beispielsweise können Ihre Bilder als Asset Informationen über die Kamera, mit der sie aufgenommen wurden, oder Copyright-Informationen enthalten. Diese Informationen sind Metadaten des Bildes. Metadaten sind für ein effizientes Asset-Management von entscheidender Bedeutung. Metadaten stellen die Sammlung aller für ein Asset verfügbaren Daten dar, sind aber nicht unbedingt im Bild selbst enthalten.
@@ -170,6 +170,19 @@ So entfernen Sie ein Metadatenformular aus einem Ordner:
 1. Wählen Sie den Ordner aus und klicken Sie auf **[!UICONTROL Entfernen]**. Sie können auch mehrere Ordner aus der Liste auswählen.
 
 Sie können auch zur Seite mit den Ordnerdetails navigieren und im Feld **[!UICONTROL Metadatenformulare]** die Option **[!UICONTROL Systemzugeordnete Metadatenformulare]** auswählen, um das zugewiesene Metadatenformular aus einem Ordner zu entfernen.
+
+### Arbeiten mit einer Link-Komponente im Metadatenformular {#link-component-metadata-form}
+
+Die Link-Komponente wird verwendet, um externe URLs zu aktivieren, einschließlich Speicher-Links, Copyright-Informationen, Kontaktformulare usw. Um die Link-Komponente im Metadatenformular zu verwenden, müssen Sie [Metadatenformular konfigurieren](#metadata-forms).
+
+Gehen Sie wie folgt vor, um die Link-Komponente im Metadatenformular zu verwenden:
+
+1. Gehen Sie zur Seite mit Asset-Details und navigieren Sie zu **[!UICONTROL Link-URL]**.
+1. Fügen Sie eine URL hinzu, die Sie für das ausgewählte Asset umleiten möchten.
+1. Klicken Sie **[!UICONTROL Link hinzufügen]**. Führen Sie eine der folgenden Aktionen aus:
+   * Klicken Sie auf ![copy icon](assets/do-not-localize/copy.svg), um die URL zu kopieren.
+   * Klicken Sie ![edit icon](assets/do-not-localize/edit.svg), um die URL zu bearbeiten.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
 ## Nächste Schritte {#next-steps}
 
