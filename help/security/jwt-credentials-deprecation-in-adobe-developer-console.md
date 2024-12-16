@@ -4,9 +4,9 @@ description: Erhalten Sie weitere Informationen zu den Auswirkungen der Einstell
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -65,10 +65,10 @@ Wenn Cloud Manager AEM as a Cloud Service-Umgebungen bereitstellt, wird automati
 Dieser Abschnitt enthält Antworten auf die am häufigsten gestellten Fragen zur Einstellung von JWT-Anmeldeinformationen für automatisch generierte Projekte in AEM as a Cloud Service.
 
 **Wie erstelle ich, welche Projekte automatisch generiert werden?**
+
 Navigieren Sie zur Adobe Developer Console | Abschnitt „Projekte“.  Automatisch erstellte AEM as a Cloud Service-Projekte verfügen über ein Sperrsymbol mit der Kennung „Automatisch generiert“.  Automatisch erstellte Projekte folgen dem Format AEM-P#####-e####### und werden vom Benutzer des technischen Kontos erstellt.
 
-<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
-
+![Automatisch erstellte Projekte](/help/security/assets/jwt-alert.png)
 
 **Was ist, wenn Probleme mit unseren automatisch generierten Projekten auftreten?**
 
