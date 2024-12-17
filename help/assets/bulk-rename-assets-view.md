@@ -2,7 +2,8 @@
 title: Umbenennen und Massenumbenennen von Assets in [!DNL Assets view]
 description: Erfahren Sie, wie Sie Assets mithilfe der neuen Assets-Benutzeroberfläche (Assets-Ansicht) stapelweise umbenennen. Sie bietet die Möglichkeit, mehrere Assets gleichzeitig umzubenennen.
 role: User
-source-git-commit: 8a62db7ecae8b90e05939b031344c226000bb304
+exl-id: e041811b-0246-408f-9246-248da55f66a1
+source-git-commit: 97be9d7eafe5baa55c1314ca431cb0fabca06b5e
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 17%
@@ -50,7 +51,7 @@ Im Folgenden finden Sie einige Beispiele für die Verwendung von KI zum Massenum
 * Entfernen Sie das Präfix und Suffix, behalten Sie nur den mittleren Teil des Namens.
 * Stellen Sie den Dateien 001, 002 usw. als Präfix voran. und ins Englische übersetzen.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440975)
+>[!VIDEO](https://video.tv.adobe.com/v/3440975)
 
 >[!NOTE]
 >
