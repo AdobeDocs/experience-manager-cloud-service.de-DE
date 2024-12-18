@@ -24,13 +24,13 @@ Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwende
 
 ## Instrumentieren der Seite {#instrument-page}
 
-Für den universellen Editor ist eine JavaScript-Bibliothek erforderlich, damit die Seite im Editor gerendert und bearbeitet werden kann.
+Der universelle Editor erfordert eine JavaScript-Bibliothek, um die Seite im Editor zu rendern und zu bearbeiten.
 
-Darüber hinaus benötigt der Universal Editor-Dienst einen [universellen Ressourcennamen (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu nutzen. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
+Darüber hinaus erfordert der Service des universellen Editors einen [Uniform Resource Name (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu verwenden. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
 
-### Include the Universal Editor CORS Library {#cors-library}
+### Einschließen der CORS-Bibliothek des universellen Editors {#cors-library}
 
-Damit der universelle Editor eine Verbindung zu Ihrer App herstellen kann, muss Ihre App über die CORS-Bibliothek des universellen Editors verfügen. Fügen Sie das folgende Skript zu Ihrer App hinzu.
+Damit der universelle Editor eine Verbindung zu Ihrer App herstellen kann, muss Ihre App die CORS-Bibliothek des universellen Editors enthalten. Fügen Sie das folgende Skript zu Ihrer App hinzu.
 
 ```html
  <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
