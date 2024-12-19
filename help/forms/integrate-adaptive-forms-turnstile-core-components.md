@@ -4,7 +4,8 @@ description: Verbessern Sie die Formularsicherheit mit dem Drehkreuz-Service mü
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 24%
@@ -91,13 +92,13 @@ So integrieren Sie AEM Forms mit dem Drehkreuz-Service:
    * **[!UICONTROL Konfigurationseinstellungen]:** Wählen Sie eine Cloud-Konfiguration aus, die für den Turnstile CAPTCHA-Service konfiguriert ist.
      >[!NOTE]
      >* Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Dienst aufgeführt ist, erfahren Sie im Abschnitt [Konfigurieren von Drehkreuz](#steps-to-configure-hcaptcha), wie Sie einen Konfigurations-Container erstellen, um Ihre AEM Forms-Umgebung mit dem Drehkreuz-Dienst zu verbinden.
+
    * **[!UICONTROL Validierung]:** CAPTCHA-Validierung in Form einer Fehlermeldung bereitstellen:
+
       * **Fehlermeldung:** Geben Sie die Fehlermeldung an, die Benutzern angezeigt werden soll, wenn die CAPTCHA-Übermittlung fehlschlägt.
         >[!NOTE]
         >* Eine Fehlermeldung wird nur angezeigt, wenn das CAPTCHA Client-seitig ausgefüllt ist.
-
-
-1. Wählen Sie **[!UICONTROL Fertig]**.
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 
 Für die Formularübermittlung sind jetzt nur noch Formulare zulässig, in denen der Formularbenutzer die vom Dienst „Drehkreuz“ ausgehende Herausforderung erfolgreich löscht.
