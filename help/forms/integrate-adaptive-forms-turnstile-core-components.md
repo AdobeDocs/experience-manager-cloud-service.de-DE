@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
+source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 24%
@@ -98,6 +98,7 @@ So integrieren Sie AEM Forms mit dem Drehkreuz-Service:
       * **Fehlermeldung:** Geben Sie die Fehlermeldung an, die Benutzern angezeigt werden soll, wenn die CAPTCHA-Übermittlung fehlschlägt.
         >[!NOTE]
         >* Eine Fehlermeldung wird nur angezeigt, wenn das CAPTCHA Client-seitig ausgefüllt ist.
+
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 
