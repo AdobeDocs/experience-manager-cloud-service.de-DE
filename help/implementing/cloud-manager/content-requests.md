@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
-workflow-type: ht
-source-wordcount: '1276'
+source-git-commit: 18d19acfedce57a3ae52020d36785689b715ed08
+workflow-type: tm+mt
+source-wordcount: '1249'
 ht-degree: 100%
 
 ---
@@ -79,4 +79,3 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | Commerce Integration Framework-Aufrufe | Ausgeschlossen | Anfragen an AEM, die an das Commerce Integration Framework weitergeleitet werden. Die URL beginnt mit `/api/graphql`. Um eine doppelte Zählung zu vermeiden, sind sie für den Cloud-Service nicht abrechenbar. |
 | Ausschließen von `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf. Es bietet Informationen zur Installation von Websites auf Desktops oder Mobiltelefonen. Adobe sollte eine JSON-Anfrage an `/etc.clientlibs/*/manifest.json` nicht zählen |
 | Ausschließen von `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, wurde festgestellt, dass in einigen Szenarien wie bei SAML-Authentifizierungsabläufen Favicons als HTML zurückgegeben wurden. Daher werden Favicons explizit aus der Zählung ausgeschlossen. |
-| CDN-Proxy zu einem anderen Backend | Ausgeschlossen | Anfragen, die mit der Methode[CDN-Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) an andere AEM-fremde Backends weitergeleitet werden, werden ausgeschlossen, da sie AEM nicht treffen. |
