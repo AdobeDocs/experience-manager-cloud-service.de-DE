@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: 2ce424a7-6bf4-4482-b5cb-5a7998a294e9
 source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 100%
 

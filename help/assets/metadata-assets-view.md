@@ -8,7 +8,7 @@ feature: Metadata
 source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -171,17 +171,17 @@ So entfernen Sie ein Metadatenformular aus einem Ordner:
 
 Sie können auch zur Seite mit den Ordnerdetails navigieren und im Feld **[!UICONTROL Metadatenformulare]** die Option **[!UICONTROL Systemzugeordnete Metadatenformulare]** auswählen, um das zugewiesene Metadatenformular aus einem Ordner zu entfernen.
 
-### Arbeiten mit einer Link-Komponente im Metadatenformular {#link-component-metadata-form}
+### Arbeiten mit der Link-Komponente im Metadatenformular {#link-component-metadata-form}
 
-Die Link-Komponente wird verwendet, um externe URLs zu aktivieren, einschließlich Speicher-Links, Copyright-Informationen, Kontaktformulare usw. Um die Link-Komponente im Metadatenformular zu verwenden, müssen Sie [Metadatenformular konfigurieren](#metadata-forms).
+Die Link-Komponente wird verwendet, um externe URLs wie Speicher-Links, Copyright-Informationen, Kontaktformulare usw. zu aktivieren. Um die Link-Komponente im Metadatenformular zu verwenden, müssen Sie [Metadatenformular konfigurieren](#metadata-forms).
 
 Gehen Sie wie folgt vor, um die Link-Komponente im Metadatenformular zu verwenden:
 
-1. Gehen Sie zur Seite mit Asset-Details und navigieren Sie zu **[!UICONTROL Link-URL]**.
-1. Fügen Sie eine URL hinzu, die Sie für das ausgewählte Asset umleiten möchten.
-1. Klicken Sie **[!UICONTROL Link hinzufügen]**. Führen Sie eine der folgenden Aktionen aus:
-   * Klicken Sie auf ![copy icon](assets/do-not-localize/copy.svg), um die URL zu kopieren.
-   * Klicken Sie ![edit icon](assets/do-not-localize/edit.svg), um die URL zu bearbeiten.
+1. Gehen Sie zur Seite mit den Asset-Details und navigieren Sie zu **[!UICONTROL Link-URL]**.
+1. Fügen Sie eine URL hinzu, die Sie zur Weiterleitung für das ausgewählte Asset verwenden möchten.
+1. Klicken Sie auf **[!UICONTROL Link hinzufügen]**. Führen Sie einen der folgenden Schritte aus:
+   * Klicken Sie auf das ![Symbol „Kopieren“](assets/do-not-localize/copy.svg), um die URL zu kopieren.
+   * Klicken Sie auf das ![ Symbol „Bearbeiten“](assets/do-not-localize/edit.svg), um die URL zu bearbeiten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
 ## Nächste Schritte {#next-steps}

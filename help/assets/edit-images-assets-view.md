@@ -7,13 +7,13 @@ feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Bearbeiten von Bildern in [!DNL Assets view] {#edit-images-in-assets-view}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Die Benutzeroberfläche der Assets-Ansicht ermöglicht eine einfache Bildbearbeitung auf Basis von Adobe Express, das in die Benutzeroberfläche integriert ist. Diese Bearbeitung umfasst Größenanpassung, Hintergrundentfernung, Zuschneiden und Konvertierung zwischen JPEG- und PNG-Formaten. Darüber hinaus ist eine erweiterte Bearbeitung durch die Adobe Express-Benutzeroberfläche möglich, die in die Benutzeroberfläche der Assets-Ansicht integriert ist. 

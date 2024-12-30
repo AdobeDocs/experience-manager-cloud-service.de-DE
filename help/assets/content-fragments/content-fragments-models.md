@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -106,12 +106,12 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 
 * **Einzeilentext**
-   * Feld für eine einzelne Textzeile hinzufügen; die maximale Länge kann definiert werden
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Fügt ein Feld für eine einzelne Textzeile hinzu; die maximale Länge kann definiert werden.
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
 
 * **Mehrzeilentext**
    * Ein Textbereich, der Rich Text, Nur Text oder Markdown sein kann
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
 
   >[!NOTE]
   >
@@ -120,18 +120,18 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
   Dieses Format kann nicht über den [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md), sondern nur vom Modell aus geändert werden.
 
 * **Zahl**
-   * Numerisches Feld hinzufügen
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Fügt ein numerisches Feld hinzu.
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
 
 * **Boolesch**
    * Fügen Sie ein boolesches Kontrollkästchen hinzu.
 
 * **Datum und Uhrzeit**
-   * Datum- und/oder Uhrzeitfeld hinzufügen
+   * Fügt ein Datums- und/oder Zeitfeld hinzu.
 
 * **Aufzählung**
-   * Hinzufügen von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern
-      * Sie können die für den Fragmentautor verfügbaren Optionen festlegen
+   * Fügt einen Satz Kontrollkästchen, Optionsfelder oder Dropdown-Felder hinzu.
+      * Sie können die für Fragmentautorinnen und -autoren verfügbaren Optionen festlegen.
 
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
@@ -139,11 +139,11 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren neue Instanzen des Felds erstellen können
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
 
 * **Fragmentreferenz**
    * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Das Feld kann so konfiguriert werden, dass Fragmentautoren:
+   * Das Feld kann so konfiguriert werden, dass es den Fragmentautorinnen und -autoren Folgendes ermöglicht:
       * Direktes Bearbeiten des referenzierten Fragments
       * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
       * Erstellen neuer Instanzen des Felds
@@ -298,7 +298,7 @@ Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion
 Zum Beispiel:
 
 * Ein Modell, das Details für einen Mitarbeiter definiert, beispielsweise:
-   * Ein Verweis auf das Modell, das den Arbeitgeber definiert (Firma)
+   * Ein Verweis auf das Modell, das den Arbeitgeber (Firma) definiert
 
 ```xml
 type EmployeeModel {
@@ -443,7 +443,7 @@ Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgel
 
 >[!CAUTION]
 >
-Das Löschen eines Inhaltsfragment-Modells kann sich auf abhängige Fragmente auswirken.
+Das Löschen eines Inhaltsfragmentmodells kann sich auf abhängige Fragmente auswirken.
 
 So löschen Sie ein Inhaltsfragmentmodell:
 
@@ -474,7 +474,7 @@ Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
 ## Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells {#unpublishing-a-content-fragment-model}
 
-Die Veröffentlichung von Inhaltsfragmentmodellen kann rückgängig gemacht werden, wenn sie nicht von Fragmenten referenziert werden.
+Die Veröffentlichung von Inhaltsfragmentmodellen kann rückgängig gemacht werden, sofern sie nicht von Fragmenten referenziert werden.
 
 So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 

@@ -6,8 +6,8 @@ feature: Renditions
 role: User
 source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '664'
+ht-degree: 87%
 
 ---
 
@@ -25,17 +25,17 @@ Ausgabedarstellungen werden zwischen statisch und dynamisch klassifiziert, wobei
 ## Statische Ausgabeformate {#static-renditions}
 
 Statische Ausgabedarstellungen sind vorgenerierte Versionen digitaler Assets, die normalerweise bei der Aufnahme oder Änderung von Assets erstellt werden. Diese Ausgabedarstellungen sind für bestimmte Zwecke und Plattformen optimiert, wie Web-Miniaturansichten, mobile Formate für responsives Design oder hochauflösende Druckversionen, um ein effizientes und konsistentes Erlebnis zu gewährleisten.
-Erfahren Sie, wie Sie in Experience Manager Assets statische Ausgabeformate anzeigen und herunterladen können.[](#view-and-download-static-renditions)
+Experience Manager Assets Erfahren Sie, wie [ statische Ausgabedarstellungen in ](#view-and-download-static-renditions) anzeigen und herunterladen können.
 
-### Anzeigen und Herunterladen von statischen Ausgabeformaten{#view-and-download-static-renditions}
+### Anzeigen und Herunterladen statischer Ausgabedarstellungen{#view-and-download-static-renditions}
 
-Gehen Sie wie folgt vor, um die Asset-Ausgabedarstellungen anzuzeigen und sie herunterzuladen:
+Gehen Sie wie folgt vor, um die Asset-Ausgabedarstellungen anzuzeigen und herunterzuladen:
 
 1. Klicken Sie in der Assets-Ansicht auf **Assets**, navigieren Sie zu einem Ordner, wählen Sie ein Asset aus und klicken Sie auf **Details**.
-1. Klicken Sie im rechten Bereich auf das Symbol der Ausgabedarstellung.
-1. Wählen Sie eine Ausgabedarstellung aus, um sie in der Vorschau anzuzeigen, und klicken Sie auf das Symbol ![Download-Symbol](/help/assets/assets/download-icon.svg) , um sie herunterzuladen.
+1. Klicken Sie auf das Symbol für die Ausgabedarstellung im rechten Bereich.
+1. Wählen Sie eine Ausgabedarstellung aus, um sie in der Vorschau anzuzeigen, und klicken Sie auf ![Download-Symbol](/help/assets/assets/download-icon.svg), um sie herunterzuladen.
 
-   ![Dynamische Ausgabeformate anzeigen und herunterladen](/help/assets/assets/view-download-static-rendition.png)
+   ![Dynamische Ausgabedarstellungen anzeigen und herunterladen](/help/assets/assets/view-download-static-rendition.png)
 
 ## Dynamische Ausgabedarstellungen {#dynamic-renditions}
 

@@ -4,7 +4,7 @@ description: Content Credentials sind in AEM Assets integriert und in der Assets
 role: User
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
 

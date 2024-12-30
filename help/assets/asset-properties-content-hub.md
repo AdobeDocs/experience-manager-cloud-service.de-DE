@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie in  [!DNL Content Hub] Assets und Eigenschaft
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 100%
 

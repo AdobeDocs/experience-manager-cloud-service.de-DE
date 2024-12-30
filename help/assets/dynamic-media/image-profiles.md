@@ -6,7 +6,7 @@ feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: 0ad506fc72cb73d3a6a8cdd9eee50f213b52665e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3518'
 ht-degree: 100%
 

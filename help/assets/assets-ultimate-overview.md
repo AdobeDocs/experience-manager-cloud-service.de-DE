@@ -3,8 +3,9 @@ title: Assets Ultimate
 description: Erfahren Sie mehr über die wichtigsten Aspekte von Assets Ultimate, wie z. B. die wichtigsten Vorteile, die Benutzertypen und ihre Berechtigungen.
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
-workflow-type: ht
+exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
 

@@ -5,8 +5,8 @@ role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 source-git-commit: 28424cb184d0378669498c78e571961227f6539a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '439'
+ht-degree: 27%
 
 ---
 
@@ -24,47 +24,47 @@ ht-degree: 0%
 >
 >[!BADGE Content Hub-Handbuch als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Mit Content Hub können Sie Assets herunterladen und freigeben. In der Content Hub-Benutzeroberfläche werden nur genehmigte Assets angezeigt. Bei diesen Assets kann es sich um Bilder, Videos oder andere digitale Inhalte handeln. Content Hub verbessert die Barrierefreiheit und Anpassungsfähigkeit und ermöglicht so eine effektive Asset-Verteilung.
+Mit Content Hub können Sie Assets herunterladen und freigeben. Auf der Content Hub-Benutzeroberfläche werden nur genehmigte Assets angezeigt. Bei diesen Assets kann es sich um Bilder, Videos oder andere digitale Inhalte handeln. Content Hub verbessert die Barrierefreiheit und Anpassungsfähigkeit und ermöglicht so eine effektive Asset-Verteilung.
 
-Sie können einzelne oder mehrere Assets und deren verfügbare Ausgabeformate mit Content Hub herunterladen.
+Mit Content Hub können Sie einzelne oder mehrere Assets und ihre verfügbaren Ausgabedarstellungen herunterladen.
 
-## Herunterladen eines Assets und seiner Ausgabeformate {#download-asset-renditions}
+## Herunterladen von Assets und zugehörigen Ausgabedarstellungen {#download-asset-renditions}
 
-Führen Sie die folgenden Schritte aus, um ein Asset und seine Ausgabeformate herunterzuladen:
+Um ein Asset und seine Ausgabedarstellungen herunterzuladen, führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie auf das Asset, um seine Eigenschaften anzuzeigen.
+1. Klicken Sie auf das Asset, um dessen Eigenschaften anzuzeigen.
 
-1. Klicken Sie auf ![Download](/help/assets/assets/download-icon.svg) , um den Download-Prozess zu starten. Im Bereich Download werden alle verfügbaren Asset-Ausgabedarstellungen (Original und andere Ausgabedarstellungen) aufgelistet.
+1. Klicken Sie ![Herunterladen](/help/assets/assets/download-icon.svg), um den Download-Prozess zu starten. Im Bedienfeld Herunterladen werden alle verfügbaren Asset-Ausgabedarstellungen (Original + andere Ausgabedarstellungen) aufgelistet.
 
    >[!NOTE]
    >
-   Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche von [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
+   Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
 
-1. Wählen Sie die Ausgabedarstellungen aus und klicken Sie auf **[!UICONTROL Download]**.
+1. Wählen Sie die Ausgabedarstellungen aus und klicken Sie auf **[!UICONTROL Herunterladen]**.
 
-   ![Herunterladen einzelner Asset-Ausgabedarstellungen](/help/assets/assets/download-single-asset-renditions.png)
+   ![Herunterladen von Ausgabedarstellungen einzelner Assets](/help/assets/assets/download-single-asset-renditions.png)
 
 
-Wenn Sie ein lizenziertes Asset herunterladen, wählen Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** und klicken Sie dann auf **[!UICONTROL Herunterladen]**. Sie können auch auf **[!UICONTROL Nutzungsbedingungen]** klicken, um die Asset-Lizenz anzuzeigen. Die Lizenzvorschau wird nur angezeigt, wenn das Asset mithilfe der Assets as a Cloud Service Authoring-Umgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+Wenn Sie ein lizenziertes Asset herunterladen, wählen Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** und klicken Sie dann auf **[!UICONTROL Herunterladen]**. Sie können auch auf **[!UICONTROL Nutzungsbedingungen]** klicken, um die Asset-Lizenz anzuzeigen. Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mit der Assets as a Cloud Service Authoring-Umgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-## Herunterladen mehrerer Assets und ihrer Ausgabeformate {#download-multiple-assets-renditions}
+## Herunterladen mehrerer Assets und ihrer Ausgabedarstellungen {#download-multiple-assets-renditions}
 
-Führen Sie die folgenden Schritte aus, um mehrere Assets und deren Ausgabedarstellungen herunterzuladen:
+Um mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie die Assets aus und klicken Sie auf ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. Der Bildschirm [!UICONTROL Assets herunterladen] zeigt eine Liste aller ausgewählten Assets an.
-1. Klicken Sie auf **[!UICONTROL Download]** , um unter den verschiedenen Download-Optionen auszuwählen, mit denen der Download beginnen soll:
+1. Wählen Sie die Assets aus und klicken Sie auf ![Herunterladen](/help/assets/assets/download-icon.svg) **[!UICONTROL Herunterladen]**. Der Bildschirm [!UICONTROL Assets herunterladen] zeigt eine Liste aller ausgewählten Assets an.
+1. Klicken Sie auf **[!UICONTROL Herunterladen]**, um eine der verschiedenen Download-Optionen auszuwählen und mit dem Herunterladen zu beginnen:
 
-   * **Download [!UICONTROL Originale]**: Wählen Sie diese Option, um die ausgewählten Assets im Originalformular herunterzuladen.
-   * **Nur Ausgabedarstellungen herunterladen [!UICONTROL Nur Ausgabedarstellungen]**: Wählen Sie diese Option, um alle verfügbaren Ausgabedarstellungen der Assets mit Ausnahme der Original-Assets herunterzuladen.
-   * **Download [!UICONTROL Originale und alle Ausgabeformate]**: Wählen Sie diese Option, um sowohl Original- als auch Ausgabeformate der ausgewählten Assets herunterzuladen.
+   * **Herunterladen [!UICONTROL Originale]**: Wählen Sie diese Option, um die ausgewählten Assets im Originalformular herunterzuladen.
+   * **Nur [!UICONTROL -Ausgabedarstellungen herunterladen]**: Wählen Sie diese Option, um alle verfügbaren Ausgabedarstellungen der Assets mit Ausnahme der Original-Assets herunterzuladen.
+   * **Herunterladen [!UICONTROL Originale und alle Ausgabedarstellungen]**: Wählen Sie diese Option, um sowohl Original- als auch Ausgabedarstellungen der ausgewählten Assets herunterzuladen.
 
      ![Mehrere Ausgabedarstellungen herunterladen](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche von [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
+     Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
 
-   Wenn eines der ausgewählten Assets ein lizenziertes Asset ist, klicken Sie im linken Bereich auf die Lizenz des Assets, um dessen Vorschau anzuzeigen. Dadurch können Sie &quot;**[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert&quot;]** auswählen und dann auf &quot;**[!UICONTROL Herunterladen]**&quot; klicken. Die Lizenzvorschau wird nur angezeigt, wenn das Asset mithilfe der Assets as a Cloud Service Authoring-Umgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+   Wenn es sich bei einem der ausgewählten Assets um ein lizenziertes Asset handelt, klicken Sie auf die Lizenz des Assets im linken Bereich, um die Vorschau anzuzeigen. Damit können Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** auswählen und dann auf **[!UICONTROL Herunterladen]** klicken. Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mit der Assets as a Cloud Service Authoring-Umgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
    ![Herunterladen mehrerer Lizenzen](/help/assets/assets/download-multiple-license.png)
 

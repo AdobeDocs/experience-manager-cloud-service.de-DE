@@ -16,7 +16,7 @@ ht-degree: 99%
 
 {{work-with-dynamic-media}}
 
-Wenn Sie Adobe Experience Manager as a Cloud Service für verschiedene Umgebungen wie Entwicklung, Staging und Live-Produktion verwenden, konfigurieren Sie Dynamic Media-Cloud Service für jede dieser Umgebungen.
+Wenn Sie Adobe Experience Manager as a Cloud Service für verschiedene Umgebungen wie Entwicklung, Staging und Live-Produktion verwenden, konfigurieren Sie Dynamic Media Cloud Service für jede dieser Umgebungen.
 
 Siehe auch [Konfigurieren eines Firmen-Alias-Kontos für Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
 

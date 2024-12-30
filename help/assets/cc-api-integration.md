@@ -8,13 +8,13 @@ exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Erzeugen von Varianten von Assets mithilfe der [!DNL Adobe Creative Cloud]-Integration {#content-automation}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Das Add-on zur Inhaltsautomatisierung integriert [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] und [!DNL Adobe Creative Cloud]-APIs zur kreativen und skalierten Verarbeitung Ihrer Assets. [!DNL Experience Manager] verwendet Cloud-basierte [Asset-Microservices](/help/assets/asset-microservices-overview.md), um die [!DNL Adobe Creative Cloud]-Funktionen zu verwenden und die Asset-Erstellung und die Medienbearbeitung zu automatisieren.

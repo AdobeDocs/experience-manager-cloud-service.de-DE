@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Bildvorgaben
-description: Erfahren Sie mehr über Bildvorgaben und wie Sie sie erstellen, ändern und verwalten.
+description: Erfahren Sie mehr über Bildvorgaben und darüber, wie Sie diese erstellen, ändern und verwalten können.
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
@@ -14,39 +14,39 @@ ht-degree: 73%
 
 # Verwalten von Bildvorgaben{#managing-image-presets}
 
-Mit Bildvorgaben kann Adobe Experience Manager Assets Bilder dynamisch in unterschiedlichen Größen, Formaten oder mit anderen, dynamisch generierten Bildeigenschaften bereitstellen. Jede Bildvorgabe stellt eine vordefinierte Sammlung von Größenangaben und Formatierungsbefehlen für die Anzeige von Bildern dar. Wenn Sie eine Bildvorgabe erstellen, wählen Sie eine Größe für die Bildbereitstellung aus. Sie wählen auch Formatierungsbefehle, damit das Erscheinungsbild des Bildes optimiert wird, wenn das Bild zur Anzeige bereitgestellt wird.
+Bildvorgaben ermöglichen es Adobe Experience Manager Assets, Bilder in unterschiedlichen Größen, Formaten oder mit anderen dynamisch generierten Bildeigenschaften dynamisch bereitzustellen. Jede Bildvorgabe stellt eine vordefinierte Sammlung von Größenangaben und Formatierungsbefehlen für die Anzeige von Bildern dar. Wenn Sie eine Bildvorgabe erstellen, wählen Sie eine Größe für die Bildbereitstellung aus. Sie wählen auch Formatierungsbefehle, damit das Erscheinungsbild des Bildes optimiert wird, wenn das Bild zur Anzeige bereitgestellt wird.
 
 Admins können Vorgaben für den Asset-Export erstellen. Benutzer können eine Vorgabe auswählen, wenn sie Bilder exportieren, sodass die Bilder entsprechend den Spezifikationen des Administrators umformatiert werden.
 
-Sie können auch responsive Bildvorgaben erstellen. Wenn Sie eine responsive Bildvorgabe auf Ihre Assets anwenden, ändern sich diese je nach Gerät oder Bildschirmgröße, auf dem sie angezeigt werden. Sie können Bildvorgaben so konfigurieren, dass neben RGB oder Grau auch CMYK im Farbraum verwendet wird.
+Sie können auch responsive Bildvorgaben erstellen. Wenn Sie eine responsive Bildvorgabe auf Assets anwenden, ändern sich diese je nach Gerät oder Bildschirmgröße, auf dem sie angezeigt werden. Sie können Bildvorgaben konfigurieren, um im Farbraum zusätzlich zu RGB oder Grau auch CMYK zu verwenden.
 
-In diesem Abschnitt wird beschrieben, wie Sie Bildvorgaben erstellen, ändern und allgemein verwalten. Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe auf ein Bild anwenden. Siehe [Anwenden von Bildvorgaben](/help/assets/dynamic-media/image-presets.md).
+In diesem Abschnitt wird beschrieben, wie Sie Bildvorgaben erstellen, ändern und allgemein verwalten. Sie können eine Bildvorgabe immer dann auf ein Bild anwenden, wenn Sie es in der Vorschau anzeigen. Siehe [Anwenden von Bildvorgaben](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
->Intelligente Bildbearbeitung funktioniert mit vorhandenen Bildvorgaben und reduziert mithilfe der intelligenten Funktionen in der letzten Millisekunde der Bereitstellung die Größe der Bilddatei je nach Browser- oder Netzwerkverbindungsgeschwindigkeit weiter. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
+>Die intelligente Bildbearbeitung funktioniert mit vorhandenen Bildvorgaben und verwendet Intelligenz in der letzten Millisekunde der Bereitstellung, um die Größe der Bilddateien je nach Browser oder Geschwindigkeit der Netzwerkverbindung weiter zu reduzieren. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
 ## Informationen zu Bildvorgaben {#understanding-image-presets}
 
 Wie ein Makro ist eine Bildvorgabe eine vordefinierte Sammlung aus Größenangaben und Formatierungsbefehlen, die unter einem Namen gespeichert wird. Stellen Sie sich folgendes Szenario vor, um ein besseres Verständnis von Bildvorgaben zu erlangen: Für Ihre Website muss jedes Produktbild in unterschiedlichen Größen, Formaten und Kompressionsraten auf Desktop- und Mobilgeräten angezeigt werden.
 
-Sie können zwei Bildvorgaben erstellen: 500 x 500 Pixel für Desktop und 150 x 150 Pixel für Mobilgeräte. Sie können zwei Bildvorgaben erstellen: `Enlarge` (Vergrößern) dient der Anzeige von Bildern mit einer Auflösung von 500 x 500 Pixel, `Thumbnail` (Miniatur) der Anzeige von Bildern mit einer Auflösung von 150 x 150 Pixel. Um Bilder in der Größe `Enlarge` und `Thumbnail` bereitzustellen, sucht Experience Manager nach der Definition von `Enlarge Image Preset` und `Thumbnail Image Preset`. Experience Manager generiert anschließend dynamisch ein Bild anhand der Größen- und Formatierungsspezifikationen der jeweiligen Bildvorgabe.
+Sie können zwei Bildvorgaben erstellen: 500 x 500 Pixel für Desktops und 150 x 150 Pixel für Mobilgeräte. Sie können zwei Bildvorgaben erstellen: `Enlarge` (Vergrößern) dient der Anzeige von Bildern mit einer Auflösung von 500 x 500 Pixel, `Thumbnail` (Miniatur) der Anzeige von Bildern mit einer Auflösung von 150 x 150 Pixel. Zum Übermitteln von Bildern mit der `Enlarge` und `Thumbnail` findet der Experience Manager die Definition der `Enlarge Image Preset` und `Thumbnail Image Preset`. Experience Manager generiert anschließend dynamisch ein Bild anhand der Größen- und Formatierungsspezifikationen der jeweiligen Bildvorgabe.
 
 Bilder, die bei der dynamischen Bereitstellung verkleinert werden, können an Schärfe und Detailgenauigkeit verlieren. Aus diesem Grund enthält jede Bildvorgabe Formatierungssteuerelemente zum Optimieren eines Bildes, wenn es in einer bestimmten Größe bereitgestellt wird. Dadurch wird sichergestellt, dass die Bilder scharf und deutlich auf der Website oder im Programm angezeigt werden.
 
-Admins können Bildvorgaben erstellen. Um eine Bildvorgabe zu erstellen, können Sie von Grund auf neu beginnen oder eine vorhandene Vorgabe unter einem neuen Namen speichern.
+Admins können Bildvorgaben erstellen. Um eine Bildvorgabe zu erstellen, können Sie von Grund auf neu beginnen oder Sie können mit einer vorhandenen beginnen und sie unter einem neuen Namen speichern.
 
 ## Verwalten von Bildvorgaben {#managing-image-presets-1}
 
-Sie verwalten Ihre Bildvorgaben in Experience Manager, indem Sie das Experience Manager-Logo auswählen, um auf die globale Navigationskonsole zuzugreifen. Wählen Sie dann das Werkzeugsymbol aus und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
+Bildvorgaben verwalten Sie im Experience Manager, indem Sie auf das Experience Manager-Logo klicken, um auf die globale Navigationskonsole zuzugreifen. Klicken Sie dann auf das Werkzeugsymbol und gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
 >[!NOTE]
 >
->Alle von Ihnen erstellten Bildvorgaben sind auch als dynamische Ausgabeformate verfügbar, wenn Sie Assets in der Vorschau anzeigen oder bereitstellen.
+>Alle von Ihnen erstellten Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie Assets in der Vorschau anzeigen oder bereitstellen.
 >
->Sie müssen Bildvorgaben *nicht* veröffentlichen, da Bildvorgaben automatisch veröffentlicht werden.
+>Sie *Bildvorgaben* veröffentlichen, da Bildvorgaben automatisch veröffentlicht werden.
 >
 >Siehe [Veröffentlichen von Bildvorgaben](#publishing-image-presets).
 
@@ -56,24 +56,24 @@ Sie verwalten Ihre Bildvorgaben in Experience Manager, indem Sie das Experience 
 
 ### Dateiformate Adobe Illustrator (AI), PostScript® (EPS) und PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
-Wenn Sie die Aufnahme von AI-, EPS- und PDF-Dateien unterstützen möchten, um dynamische Ausgabedarstellungen dieser Dateiformate zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
+Wenn Sie die Aufnahme von AI-, EPS- und PDF-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
 
 Das Dateiformat von Adobe Illustrator ist eine Variante von PDF. Die wichtigsten Unterschiede im Zusammenhang mit Experience Manager Assets sind:
 
 * Adobe Illustrator-Dokumente bestehen aus einer einzelnen Seite mit mehreren Ebenen. Jede Ebene wird als PNG-Teil-Asset unter dem Illustrator-Haupt-Asset extrahiert.
 * PDF-Dokumente bestehen aus einer oder mehreren Seiten. Jede Seite wird als einseitiges PDF-Teil-Asset unter dem mehrseitigen PDF-Hauptdokument extrahiert.
 
-Die Komponente `Create Sub Asset process` erstellt die Teil-Assets innerhalb des übergeordneten `DAM Update Asset`-Workflows. Um diese Prozesskomponente innerhalb des Workflows anzuzeigen, klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
+Die `Create Sub Asset process`-Komponente erstellt die Teil-Assets im gesamten `DAM Update Asset`-Workflow. Um diese Prozesskomponente innerhalb des Workflows anzuzeigen, klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-Sie können die Teil-Assets oder die Seiten anzeigen, wenn Sie das Asset öffnen, auf das Menü „Inhalt“ klicken und **[!UICONTROL Teil-Assets]** oder **[!UICONTROL Seiten]** auswählen. Teil-Assets sind echte Assets. Die Workflow-Komponente `Create Sub Asset` extrahiert die PDF-Seiten. Die Seiten werden dann unter dem Haupt-Asset als `page1.pdf`, `page2.pdf` usw. gespeichert. Nach dem Speichern werden sie vom Workflow `DAM Update Asset` verarbeitet.
+Sie können die Teil-Assets oder die Seiten anzeigen, wenn Sie das Asset öffnen, auf das Menü „Inhalt“ klicken und **[!UICONTROL Teil-Assets]** oder **[!UICONTROL Seiten]** auswählen. Teil-Assets sind echte Assets. Die `Create Sub Asset` Workflow-Komponente extrahiert die PDF-Seiten. Die Seiten werden dann unter dem Haupt-Asset als `page1.pdf`, `page2.pdf` usw. gespeichert. Nach dem Speichern werden sie vom Workflow `DAM Update Asset` verarbeitet.
 
 Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS- oder PDF-Dateien als Vorschau anzuzeigen oder zu generieren, sind folgende Verarbeitungsschritte erforderlich:
 
-1. Im Workflow `DAM Update Asset` rastert die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` die erste Seite des ursprünglichen Assets - mit der konfigurierten Auflösung - in eine `cqdam.preview.png` -Ausgabedarstellung.
+1. Im `DAM Update Asset`-Workflow rastert die `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponente die erste Seite des ursprünglichen Assets mithilfe der konfigurierten Auflösung in einer `cqdam.preview.png` Ausgabedarstellung.
 
-1. Die Prozesskomponente `Dynamic Media Process Image Assets` innerhalb des Workflows optimiert die Wiedergabe von `cqdam.preview.png` in einer PTIFF-Wiedergabe.
+1. Die `Dynamic Media Process Image Assets` Prozesskomponente innerhalb des Workflows optimiert die `cqdam.preview.png`-Ausgabedarstellung in eine PTIFF-Darstellung.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 
 Sie können `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponentenoptionen über den Workflow `DAM Update Asset` aufrufen.
 
-Wählen Sie links oben Adobe Experience Manager aus und klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und dann in der Symbolleiste **[!UICONTROL Bearbeiten]**. Wählen Sie auf der Seite „Workflow DAM-Update-Asset“ die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` doppelt aus, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
+Wählen Sie oben links Adobe Experience Manager aus und klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und dann in der Symbolleiste **[!UICONTROL Bearbeiten]**. Wählen Sie auf der Seite „Workflow DAM-Update-Asset“ die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` doppelt aus, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
 
 #### PDF-/AI-Bildvorschau-Ausgabedarstellung rastern – Optionen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -111,7 +111,7 @@ Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Ma
 
 ### InDesign-Dateiformat (INDD) {#indesign-indd-file-format}
 
-Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um eine dynamische Ausgabe dieses Dateiformats zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
+Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
 
 Für InDesign-Dateien werden nur dann Teil-Assets extrahiert, wenn der Adobe InDesign Server in Experience Manager integriert ist. Referenzierte Assets werden basierend auf ihren Metadaten verknüpft. Für die Verknüpfung ist InDesign Server nicht erforderlich. Die referenzierten Assets müssen jedoch in Experience Manager vorhanden sein, bevor die InDesign-Dateien verarbeitet werden, damit die Verknüpfungen zwischen den InDesign-Dateien und den referenzierten Assets erstellt werden können.
 
@@ -121,7 +121,7 @@ Die Prozesskomponente zum Extrahieren von Medien im Workflow `DAM Update Asset` 
 
 ![Die ExtendScript-Pfade in den Argumenten des Prozesses zum Extrahieren von Medien](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Die ExtendScript-Pfade in den Argumenten der Prozesskomponente &quot;Medienextrahierung&quot;im Workflow DAM-Update-Asset .
+Die ExtendScript-Pfade in den Argumenten der Prozesskomponente zum Extrahieren von Medien im Workflow DAM-Update-Asset .
 
 Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
@@ -129,14 +129,14 @@ Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 | ExtendScript-Name | Standard | Beschreibung |
 |---|---|---|
 | ThumbnailExport.jsx | Ja | Erstellt eine 300 ppi große `thumbnail.jpg`-Ausgabedarstellung, die von der Prozesskomponente `Dynamic Media Process Image Assets` optimiert und in eine PTIFF-Ausgabedarstellung umgewandelt wird. |
-| JPEGPagesExport.jsx | Ja | Generiert für jede Seite ein 300 ppi großes JPEG-Teil-Asset. Das JPEG-Teil-Asset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Der Workflow `DAM Update Asset` optimiert und konvertiert ihn in ein PTIFF-Format. |
+| JPEGPagesExport.jsx | Ja | Generiert für jede Seite ein 300 ppi großes JPEG-Teil-Asset. Das JPEG-Teil-Asset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Der `DAM Update Asset`-Workflow optimiert und wandelt sie in eine PTIFF-Datei um. |
 | PDFPagesExport.jsx | Nein | Generiert für jede Seite ein PDF-Teil-Asset. Das PDF-Teil-Asset wird wie zuvor beschrieben verarbeitet. Da das PDF-Asset nur eine Seite enthält, werden keine Teil-Assets generiert. |
 
-### Größe der Miniaturansicht konfigurieren {#configuring-image-thumbnail-size}
+### Konfigurieren der Größe der Miniaturansicht {#configuring-image-thumbnail-size}
 
 Sie können die Größe von Miniaturen über die Einstellungen im Workflow **[!UICONTROL DAM-Update-Asset]** konfigurieren. Im Workflow sind zwei Schritte enthalten, in denen Sie die Größe der Miniaturen von Bild-Assets konfigurieren können. Einer (**[!UICONTROL Bild-Assets-Prozess für Dynamic Media]**) wird für dynamische Bild-Assets verwendet. Der andere (**[!UICONTROL Prozessminiaturen]**) wird für die Generierung statischer Miniaturen verwendet oder wenn alle anderen Prozesse keine Miniaturen generieren. Unabhängig davon müssen *beide* dieselben Einstellungen haben.
 
-Der Schritt **[!UICONTROL Dynamic Media Process Image Assets]** verwendet den Bildserver zum Generieren von Miniaturansichten, unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** angewendet wird. Das Generieren von Miniaturen mit dem Schritt **[!UICONTROL Miniaturen verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturen.
+Im Schritt **[!UICONTROL Dynamic Media Process Image Assets]** wird der Bildserver verwendet, um Miniaturen zu generieren, unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Process Thumbnails]** angewendet wird. Das Generieren von Miniaturen mit dem Schritt **[!UICONTROL Miniaturen verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturen.
 
 Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL width:height:center]**, z. B. `80:80:false`. Die Breite und die Höhe legen die Größe der Miniatur in Pixel fest. Für den center-Wert ist entweder false oder true festgelegt. Wenn true festgelegt ist, hat das Miniaturbild exakt die in der Konfiguration festgelegte Größe. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
 
@@ -147,7 +147,7 @@ Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL wid
 >* Die Größe der Miniaturen für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
 >
 
-**So konfigurieren Sie die Größe der Miniaturansicht des Bildes:**
+**So konfigurieren Sie die Größe der Miniaturansicht:**
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** und dann die Registerkarte **[!UICONTROL Miniaturen]** aus. Ändern Sie bei Bedarf die Größe der Miniaturen und klicken Sie auf **[!UICONTROL OK]**.
@@ -183,17 +183,17 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 
 ### Erstellen von Bildvorgaben {#creating-image-presets}
 
-Erstellen Sie Bildvorgaben, damit Sie Einstellungen bei der Vorschau oder Veröffentlichung konsistent auf alle Bilder anwenden können.
+Erstellen Sie Bildvorgaben, damit Sie bei der Vorschau oder Veröffentlichung Einstellungen konsistent auf alle Bilder anwenden können.
 
 >[!NOTE]
 >
 >Bei Verwendung von Internet Explorer 9 wird die Erstellung einer Vorgabe nicht sofort nach dem Speichern in der Vorgabenliste angezeigt. Um dieses Problem zu umgehen, deaktivieren Sie den Cache für IE9.
 
-Wenn Sie die Aufnahme von AI-, PDF- und EPS-Dateien unterstützen möchten, um eine dynamische Ausgabe dieser Dateiformate zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
+Wenn Sie die Aufnahme von AI-, PDF- und EPS-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
 
 Siehe [Dateiformate Adobe Illustrator (AI), PostScript® (EPS) und PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
-Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um eine dynamische Ausgabe dieses Dateiformats zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
+Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
 
 Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
@@ -206,7 +206,7 @@ Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
    >[!NOTE]
    >
-   >Damit diese Bildvorgabe responsiv wird, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
+   >Um diese Bildvorgabe dynamisch zu machen, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
 
 1. Geben Sie auf der Seite **[!UICONTROL Bildvorgabe bearbeiten]** auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** die entsprechenden Werte (einschließlich eines Namens) ein. Die Optionen werden unter [Bildvoreinstellungsoptionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
 
@@ -216,13 +216,13 @@ Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
 ### Erstellen von responsiven Bildvorgaben {#creating-a-responsive-image-preset}
 
-Um eine responsive Bildvorgabe zu erstellen, führen Sie die Schritte unter [Bildvorgaben erstellen](#creating-image-presets) aus. Löschen Sie die Werte für Höhe und Breite im Fenster **[!UICONTROL Bildvorgabe bearbeiten]** und lassen Sie sie leer.
+Um eine responsive Bildvorgabe zu erstellen, führen Sie die Schritte unter [Erstellen von Bildvorgaben](#creating-image-presets) aus. Löschen Sie die Werte für Höhe und Breite im Fenster **[!UICONTROL Bildvorgabe bearbeiten]** und lassen Sie sie leer.
 
-Wenn Sie sie leer lassen, wird der Experience Manager informiert, dass diese Bildvorgabe responsiv ist. Sie können die anderen Werte nach Bedarf anpassen.
+Wenn Sie das Feld leer lassen, weist Experience Manager darauf hin, dass diese Bildvorgabe responsiv ist. Sie können die anderen Werte nach Bedarf anpassen.
 
 >[!NOTE]
 >
->Um beim Anwenden einer Bildvorgabe auf ein Asset die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL RESS]** anzuzeigen, muss das Asset veröffentlicht werden.
+>Um die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL RESS]** beim Anwenden einer Bildvorgabe auf ein Asset anzuzeigen, muss das Asset veröffentlicht werden.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -230,7 +230,7 @@ Wenn Sie sie leer lassen, wird der Experience Manager informiert, dass diese Bil
 
 ### Optionen für Bildvorgaben {#image-preset-options}
 
-Beim Erstellen oder Bearbeiten von Bildvorgaben stehen Ihnen die in diesem Abschnitt beschriebenen Optionen zur Verfügung. Adobe empfiehlt zudem für den Anfang als Best Practice die Auswahl der folgenden Optionen:
+Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeiten von Bildvorgaben verfügbar. Adobe empfiehlt zudem für den Anfang als Best Practice die Auswahl der folgenden Optionen:
 
 * **[!UICONTROL Format]** (Registerkarte **[!UICONTROL Allgemein]**) – Wählen Sie **[!UICONTROL JPEG]** oder ein anderes Format, das Ihren Anforderungen entspricht. Alle Webbrowser unterstützen das JPEG-Bildformat; es bietet eine gute Balance zwischen Dateigröße und Bildqualität. Bilder im JPEG-Format nutzen jedoch ein verlustbehaftetes Komprimierungsschema, das unerwünschte Bildartefakte hervorrufen kann, wenn die Komprimierungseinstellung zu niedrig ist. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 einzustellen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
 
@@ -244,7 +244,7 @@ Beim Erstellen oder Bearbeiten von Bildvorgaben stehen Ihnen die in diesem Absch
 | --- | --- |
 | **Name** | Geben Sie einen aussagekräftigen Namen ohne Leerzeichen ein. Um den Benutzern die Identifizierung dieser Bildvorgabe zu erleichtern, nehmen Sie die Angabe der Bildgröße in den Namen auf. |
 | **Breite und Höhe** | Geben Sie die Größe in Pixel ein, in der das Bild übermittelt wird. Breite und Höhe müssen größer als 0 Pixel sein. Wenn einer der beiden Werte 0 ist, wird keine Vorgabe erstellt. Wenn beide Werte leer sind, wird eine responsive Bildvorgabe erstellt. |
-| **Format** | Wählen Sie im Menü ein Format aus.<br>Bei Auswahl von **JPEG** stehen die folgenden anderen Optionen zur Verfügung:<br>• **Qualität**: Die JPEG-Qualitätsskala ist 1–100. Die Skala ist sichtbar, wenn Sie den Schieberegler ziehen.<br> ・ **Aktivieren JPG Chrominance-Downsampling aktivieren** - Da das Auge weniger empfindlich gegenüber hochfrequenten Farbinformationen als gegenüber hochfrequenter Luminanz ist, teilen JPEG-Bilder die Bildinformationen in Luminanz- und Farbkomponenten. Wenn ein JPEG-Bild komprimiert wird, bleibt die Luminanzkomponente bei voller Auflösung, während die Farbkomponenten neu gesampelt werden, indem im Durchschnitt Pixelgruppen zusammengefasst werden. Durch Downsampling wird das Datenvolumen auf die Hälfte oder ein Drittel reduziert, ohne dass sich dies auf die wahrgenommene Qualität auswirkt. Das Downsampling kann nicht auf Graustufenbilder angewendet werden. Durch diese Technik wird die für Bilder mit hohem Kontrast nützliche Komprimierung reduziert (z. B. Bilder mit überlagertem Text).<br><br>Wenn Sie **GIF** oder **GIF mit Alpha** auswählen, erhalten Sie die folgenden zusätzlichen Optionen für die **GIF-Farbquantifizierungsoptionen**:<br>• **Typ**: Wählen Sie **Adaptiv** (Standard), **Web** oder **Macintosh** aus. Wenn Sie **GIF mit Alpha** auswählen, ist die Option „Macintosh“ nicht verfügbar.<br>• **Dithering**: Wählen Sie **Diffus** oder **Aus**.<br>• **Anzahl Farben**: Geben Sie eine Zahl von 2 bis 256 ein.<br>• **Farbliste**: Geben Sie eine kommagetrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz „`000000,888888,ffffff`“ ein.<br><br>Wenn Sie **PDF**, **TIFF** oder **TIFF mit Alpha** auswählen, erhalten Sie die folgende zusätzliche Option:<br>• **Komprimierung**: Wählen Sie einen Komprimierungsalgorithmus. Die Algorithmusoptionen für PDF lauten **Kein**, **ZIP** und **JPEG**. Für TIFF lauten sie **Kein**, **LZW**, **JPEG** und **ZIP**. Für TIFF mit Alpha lauten sie **Kein**, **LZW** und **ZIP**.<br><br>Die Auswahl **PNG**, **PNG mit Alpha** oder **EPS** ergibt keine zusätzlichen Optionen. |
+| **Format** | Wählen Sie im Menü ein Format aus.<br>Bei Auswahl von **JPEG** stehen die folgenden anderen Optionen zur Verfügung:<br>• **Qualität**: Die JPEG-Qualitätsskala ist 1–100. Die Skala wird angezeigt, wenn Sie den Schieberegler bewegen.<br>・ **JPG-Chrominanz-Neuberechnung aktivieren** - Da das Auge weniger empfindlich auf hochfrequente Farbinformationen reagiert als hochfrequente Luminanz, unterteilen JPEG-Bilder Bildinformationen in Luminanz- und Farbkomponenten. Beim Komprimieren eines JPEG-Bildes bleibt die Luminanzkomponente in voller Auflösung erhalten, während die Farbkomponenten durch Mittelung von Pixelgruppen heruntergesampelt werden. Durch Downsampling wird das Datenvolumen auf die Hälfte oder ein Drittel reduziert, wobei die wahrgenommene Qualität minimal beeinträchtigt wird. Die Neuberechnung ist nicht auf Graustufenbilder anwendbar. Mit dieser Methode wird der Komprimierungsgrad für Bilder mit hohem Kontrast (z. B. Bilder mit überlagertem Text) reduziert.<br><br>Wenn Sie **GIF** oder **GIF mit Alpha** auswählen, erhalten Sie die folgenden zusätzlichen Optionen für die **GIF-Farbquantifizierungsoptionen**:<br>• **Typ**: Wählen Sie **Adaptiv** (Standard), **Web** oder **Macintosh** aus. Wenn Sie **GIF mit Alpha** auswählen, ist die Option „Macintosh“ nicht verfügbar.<br>• **Dithering**: Wählen Sie **Diffus** oder **Aus**.<br>• **Anzahl Farben**: Geben Sie eine Zahl von 2 bis 256 ein.<br>• **Farbliste**: Geben Sie eine kommagetrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz „`000000,888888,ffffff`“ ein.<br><br>Wenn Sie **PDF**, **TIFF** oder **TIFF mit Alpha** auswählen, erhalten Sie die folgende zusätzliche Option:<br>• **Komprimierung**: Wählen Sie einen Komprimierungsalgorithmus. Die Algorithmusoptionen für PDF lauten **Kein**, **ZIP** und **JPEG**. Für TIFF lauten sie **Kein**, **LZW**, **JPEG** und **ZIP**. Für TIFF mit Alpha lauten sie **Kein**, **LZW** und **ZIP**.<br><br>Die Auswahl **PNG**, **PNG mit Alpha** oder **EPS** ergibt keine zusätzlichen Optionen. |
 | **Scharfzeichnen** | Wählen Sie die Option **Einfaches Scharfzeichnen aktivieren**, um einen einfachen Scharfzeichnungsfilter auf das Bild anzuwenden, nachdem die Skalierung abgeschlossen wurde. Mit der Scharfzeichnung können Sie unter Umständen Weichzeichnung kaschieren, die durch die Anzeige eines Bildes in einer anderen Größe entsteht. |
 
 #### Optionen auf der Registerkarte „Erweitert“ {#advanced-tab-options}
@@ -268,7 +268,7 @@ Beim Erstellen oder Bearbeiten von Bildvorgaben stehen Ihnen die in diesem Absch
    <td>Sie können den standardmäßigen Rendering-Intent überschreiben. Der Rendering-Intent legt fest, was mit Farben passiert, die im Farbprofil des Ziels nicht wiedergegeben werden können (außerhalb der Farbskala). Der Rendering-Intent wird ignoriert, wenn er nicht mit dem ICC-Profil kompatibel ist.
     <ul>
      <li>Wählen Sie <strong>Wahrnehmungsoptimiert</strong> aus, damit die gesamte Farbskala von einem Farbraum in einen anderen Farbraum komprimiert wird, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
-     <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Farbe des aktuellen Farbraums im Zielfarbraum außerhalb der Farbskala liegt. Und Sie möchten sie der nächstgelegenen Zielfarbskala zuordnen, ohne andere Farben zu verändern. </li>
+     <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Farbe im aktuellen Farbraum im Zielfarbraum außerhalb der Farbskala liegt. Und Sie möchten sie dem nächsten Zielfarbraum zuordnen, ohne andere Farben zu verändern. </li>
      <li>Wählen Sie <strong>Sättigung</strong> aus, um die Sättigung des Originalbilds beim Konvertieren in den Zielfarbraum zu übernehmen. </li>
      <li>Wählen Sie <strong>Absolut farbmetrisch</strong> aus, um Farben exakt und ohne Weißpunkt- oder Schwarzpunktanpassung abzubilden, wodurch die Helligkeit verändert würde.</li>
     </ul> </td>
@@ -279,7 +279,7 @@ Beim Erstellen oder Bearbeiten von Bildvorgaben stehen Ihnen die in diesem Absch
   </tr>
   <tr>
    <td><strong>Dithering</strong></td>
-   <td>Wählen Sie diese Option, um mögliche Farbstreifen-Artefakte zu vermeiden oder zu reduzieren. </td>
+   <td>Wählen Sie diese Option aus, um mögliche Farbbanding-Artefakte zu vermeiden oder zu reduzieren. </td>
   </tr>
   <tr>
    <td><strong>Scharfzeichnungstyp</strong></td>
@@ -287,12 +287,12 @@ Beim Erstellen oder Bearbeiten von Bildvorgaben stehen Ihnen die in diesem Absch
     <ul>
      <li>Wählen Sie <strong>Kein</strong> aus, wenn Sie das Scharfzeichnen deaktivieren möchten.</li>
      <li>Aktivieren Sie <strong>Scharfzeichnen</strong>, um einen einfachen Scharfzeichnungsfilter auf das Bild anzuwenden, nachdem die Skalierung abgeschlossen ist. Mit der Scharfzeichnung können Sie unter Umständen Weichzeichnung kaschieren, die durch die Anzeige eines Bildes in einer anderen Größe entsteht. </li>
-     <li>Wählen Sie <strong> Unschärfemaske</strong> aus, wenn Sie einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild optimieren möchten. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den ignorierten Kontrast festlegen. Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter „Unscharf maskieren“.</li>
+     <li>Wählen Sie <strong> Unschärfemaske aus</strong> wenn Sie einen Scharfzeichnungsfiltereffekt für das endgültige Bild nach dem Downsampling optimieren möchten. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den ignorierten Kontrast steuern. Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter „Unscharf maskieren“.</li>
     </ul> <p>In <strong>Unschärfemaske</strong> sind die folgenden Optionen verfügbar:</p>
     <ul>
      <li><strong>Betrag</strong>: Steuert den auf die Kantenpixel angewendeten Kontrastwert. Der Standardwert für die reelle Zahl ist 1,0. Bei hochauflösenden Bildern können Sie ihn auf bis zu 5,0 erhöhen. Der Wert dient hierbei als ein Maß für die Filterintensität.</li>
      <li><strong>Radius</strong>: Bestimmt die Anzahl der Pixel um die Kantenpixel, die sich auf die Scharfzeichnung auswirken. Geben Sie bei hochauflösenden Bildern eine reale Zahl zwischen 1 und 2 ein. Mit einem niedrigeren Wert werden nur die Kantenpixel scharfgezeichnet, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden. Der richtige Wert hängt von der Bildgröße ab.</li>
-     <li><strong>Schwellenwert</strong> - Bestimmt den Kontrastbereich, der bei Anwendung des Filters "Unschärfemaske"ignoriert werden soll. Mit anderen Worten: Diese Option definiert, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel betrachtet und scharfgezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Ganzzahlwerten von 2 bis 20. </li>
+     <li><strong>Schwellenwert</strong> - Bestimmt den Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert werden soll. Mit anderen Worten: Diese Option definiert, wie viele scharfgezeichnete Pixel sich vom Umgebungsbereich unterscheiden müssen, um als Kantenpixel eingestuft und scharfgezeichnet zu werden. Um Rauschen zu vermeiden, experimentieren Sie mit Ganzzahlwerten von 2 bis 20. </li>
      <li><strong>Anwenden auf</strong>: Bestimmt, ob die Unscharfzeichnung für jede Farbe oder Helligkeit gilt.</li>
     </ul>
     <div>
@@ -332,9 +332,9 @@ Beim Erstellen oder Bearbeiten von Bildvorgaben stehen Ihnen die in diesem Absch
  </tbody>
 </table>
 
-### Bildvorgabenoptionen mit Bildmodifikatoren definieren {#defining-image-preset-options-with-image-modifiers}
+### Definieren von Bildvorgabenoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
 
-Zusätzlich zu den Optionen, die auf den Registerkarten Allgemein und Erweitert verfügbar sind, können Sie Bild-Modifikatoren definieren, um Ihnen beim Definieren von Bildvorgaben mehr Optionen zu bieten. Das Rendern von Bildern basiert auf der Dynamic Media Image Rendering-API und wird ausführlich in der [HTTP-Protokollreferenz](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) beschrieben.
+Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Das Rendern von Bildern basiert auf der Dynamic Media Image Rendering-API und wird ausführlich in der [HTTP-Protokollreferenz](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) beschrieben.
 
 Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modifikatoren.
 

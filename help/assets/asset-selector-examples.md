@@ -4,7 +4,7 @@ description: Beispiele zur Verwendung des Asset-Wählers für Anpassungen gemä�
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 

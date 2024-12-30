@@ -6,7 +6,7 @@ exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 95%
 
 >[!AVAILABILITY]
 >
->Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub-Handbuch als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Wenn Sie über eine große Anzahl von Assets in Ihrem Repository verfügen, kann die Suche nach dem richtigen Asset zeitaufwendig sein. Mit der Suche in [!DNL The Content Hub] können Sie nach den genehmigten Assets suchen, damit Sie zusätzliche Aktionen für sie ausführen können, z. B. Sammlungen herunterladen, freigeben oder erstellen. Sie können verschiedene Funktionen nutzen, um Ihre Suchergebnisse einzugrenzen, z. B. die textbasierte Suche, die Verwendung von Filtern, die Durchführung von Tag- oder Smart-Tag-spezifischen Suchen sowie die Suche nach einem bestimmten Dateiformat.
 
@@ -54,7 +54,7 @@ Suchen Sie beispielsweise nach allen **[!UICONTROL JPEG]**-Bildern mit dem Suchb
 
 1. Navigieren Sie zum Bedienfeld „Filter“ > **[!UICONTROL Format]** und wählen Sie **[!UICONTROL JPEG]** aus.
 
-1. Navigieren Sie zu **[!UICONTROL Geändert]** und geben Sie den Datumsbereich an.
+1. Navigieren Sie zu **[!UICONTROL Geändert]** > und geben Sie den Datumsbereich an.
 
    ![Einfache Suche](assets/basic-search.png)
 

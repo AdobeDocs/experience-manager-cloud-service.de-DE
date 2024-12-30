@@ -3,13 +3,13 @@ title: Bausteine für WYSIWYG-Authoring und dokumentbasiertes Authoring
 description: Erfahren Sie, wie Sie Bausteine erstellen können, die sowohl für das WYSIWYG-Authoring als auch für das dokumentbasierte Authoring verwendet werden können.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
-workflow-type: ht
+exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
 
 ---
-
 
 # Bausteine für WYSIWYG-Authoring und dokumentbasiertes Authoring {#wysiwyg-and-doc-blocks}
 

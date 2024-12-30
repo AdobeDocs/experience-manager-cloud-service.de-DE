@@ -5,7 +5,7 @@ exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 96%
 
 >[!AVAILABILITY]
 >
->Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>Das Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Handbuch für Dynamic Media mit OpenAPI-Funktionen PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Handbuch zu Dynamic Media mit OpenAPI-Funktionen als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Die effektive Verwaltung digitaler Assets ist von entscheidender Bedeutung für das Bereitstellen ansprechender und konsistenter Markenerlebnisse auf verschiedenen Online-Plattformen. Dynamic Media mit OpenAPI-Funktionen verbessert die Verwaltung digitaler Assets, indem eine nahtlose Integration zwischen AEM Sites und AEM Assets as a Cloud Service ermöglicht wird. Mit dieser innovativen Funktion können Sie verschiedene Arten genehmigter digitaler Assets in zahlreichen AEM-Umgebungen freigeben und verwalten und so Workflows für Autorinnen und Autoren von Sites sowie Herausgebende von Inhalten optimieren.
 

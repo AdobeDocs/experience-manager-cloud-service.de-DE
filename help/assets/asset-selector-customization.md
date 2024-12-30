@@ -4,7 +4,7 @@ description: Verwenden Sie Funktionen zum Anpassen des Asset-Wählers in Ihrer A
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 100%
 

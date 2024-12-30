@@ -6,7 +6,7 @@ exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
 source-wordcount: '747'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 90%
 
 >[!AVAILABILITY]
 >
->Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den Adobe Acrobat AI-Assistenten, um Ihre Fragen zu beantworten.
+>Das Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Handbuch für Dynamic Media mit OpenAPI-Funktionen PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Handbuch zu Dynamic Media mit OpenAPI-Funktionen als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Markenverantwortliche und Marketing-Fachleute behalten die strenge Kontrolle über Marken-Assets. Es können nur genehmigte und neueste Versionen des Assets verwendet werden. Dadurch wird die Markenkonsistenz in allen Kanälen und Anwendungen sichergestellt.
 
@@ -102,9 +102,9 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
 
 1. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Details]**.
 
-1. Klicken Sie auf das Dynamic Media-Symbol im rechten Bereich.
+1. Klicken Sie auf das Symbol „Dynamic Media“ im rechten Bedienfeld.
 
-1. Wählen Sie im Bedienfeld **[!UICONTROL Dynamic Media]** die Option **[!UICONTROL Dynamic Media mit OpenAPI]** aus.
+1. Wählen Sie **[!UICONTROL Dynamic Media mit OpenAPI]** aus, das im Bedienfeld **[!UICONTROL Dynamic Media]** verfügbar ist.
 
 1. Klicken Sie auf **[!UICONTROL URL kopieren]**, um die Bereitstellungs-URL des Assets zu kopieren.
    ![Dynamische Ausgabedarstellungen](/help/assets/assets/dm-with-openapi-non-image-assets.png)
@@ -113,4 +113,4 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
    >
    Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
 
-Informationen zu anderen Ausgabeformaten, die im Dynamic Media-Bedienfeld angezeigt werden, finden Sie unter [Anzeigen und Herunterladen von Dynamic Media-Ausgabeformaten](/help/assets/renditions.md#view-download-dm-renditions).
+Informationen zu anderen Ausgabedarstellungen, die im Dynamic Media-Bedienfeld angezeigt werden, finden Sie unter [Anzeigen und Herunterladen von Dynamic Media-Ausgabedarstellungen](/help/assets/renditions.md#view-download-dm-renditions).

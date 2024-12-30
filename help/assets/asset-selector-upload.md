@@ -4,7 +4,7 @@ description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarste
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 100%
 

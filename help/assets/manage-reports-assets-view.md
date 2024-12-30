@@ -7,7 +7,7 @@ role: User, Admin, Developer
 source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
 workflow-type: tm+mt
 source-wordcount: '1564'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Das Asset-Reporting bietet Admins Einblicke in die Aktivitäten in der Ansichtsu
 
 ## Zugreifen auf Berichte {#access-reports}
 
-Alle Benutzer, die dem Produktprofil AEM Administratoren zugewiesen sind, können auf das Insights-Dashboard zugreifen oder benutzerdefinierte Berichte in der Assets-Ansicht erstellen.
+Alle Benutzenden, die dem Produktprofil „AEM-Admins“ zugeordnet sind, können in der Assets-Ansicht auf das Insights-Dashboard zugreifen oder benutzerdefinierte Berichte erstellen.
 
 Navigieren Sie unter **[!UICONTROL Einstellungen]** zu **[!UICONTROL Berichte]**, um auf Berichte zuzugreifen.
 
@@ -48,7 +48,7 @@ Die AEM Assets-Ansicht-Umgebung bietet über das Berichte-Dashboard umfassende B
 
    **Auf der Registerkarte „Konfiguration“:**
 
-   1. **Berichtstyp:** Wählen Sie den Typ [!UICONTROL upload], [!UICONTROL download] oder [Dynamic Media Delivery Report](#dynamic-media-delivery-reports) aus.
+   1. **Berichtstyp:** Wählen Sie den Typ [!UICONTROL Upload], [!UICONTROL Download] oder [Dynamic Media Delivery Report](#dynamic-media-delivery-reports) aus.
    1. **Titel:** Fügen Sie dem Bericht einen Titel hinzu.
    1. **Beschreibung:** Fügen Sie dem Bericht eine optionale Beschreibung hinzu.
    1. **Ordnerpfad auswählen:** Wählen Sie einen Ordnerpfad aus, um den Bericht der hochgeladenen und heruntergeladenen Assets in diesem bestimmten Ordner zu generieren. Wenn Sie beispielsweise den Bericht der Assets benötigen, die in einen Ordner hochgeladen wurden, geben Sie den Pfad zu diesem Ordner an.
@@ -125,24 +125,24 @@ Die AEM Assets-Ansicht-Umgebung bietet über das Berichte-Dashboard umfassende B
      </tr> 
      <tr>
       <td>Referrer</td>
-      <td>Die URL, unter der das Asset bereitgestellt oder eingeschlossen wird</td>
-      <td>Bereitstellung von Dynamic Media</td>
+      <td>Die URL, unter der das Asset bereitgestellt bzw. einbezogen wird</td>
+      <td>Dynamic Media-Bereitstellung</td>
      </tr>  
      <tr>
       <td>Treffer</td>
-      <td>Die Anzahl der Bereitstellungen des Assets (Anzahl der Sendungen)</td>
-      <td>Bereitstellung von Dynamic Media</td>
+      <td>Die Anzahl der Bereitstellungen des Assets (Bereitstellungszählung)</td>
+      <td>Dynamic Media-Bereitstellung</td>
      </tr>          
     </tbody>
    </table>
 
 ## Dynamic Media-Bereitstellungsberichte {#dynamic-media-delivery-reports}
 
-Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Media bereitgestellt werden, mit der Anzahl der Bereitstellungen auf Asset-Ebene, Referrer-Informationen, dem Asset-Pfad in AEM Assets und der eindeutigen Asset-ID. Berichte können für alle Assets generiert werden, die über das Dynamic Media für das AEM Assets-Repository oder für eine bestimmte Ordnerhierarchie in AEM Assets bereitgestellt werden. Darüber hinaus helfen Einblicke in Dynamic Media-Bereitstellungsberichte dabei, den ROI der bereitgestellten Assets zu messen, die Kanalleistung zu messen und informierte Asset-Management-Aufgaben für Assets zu erledigen.
+Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Media bereitgestellt werden, mit der Anzahl der Bereitstellungen auf Asset-Ebene, Referrer-Informationen, dem Asset-Pfad in AEM Assets und der eindeutigen Asset-ID. Berichte können entweder für alle Assets generiert werden, die über Dynamic Media für das AEM Assets-Repository bereitgestellt werden, oder für eine bestimmte Ordnerhierarchie in AEM Assets. Mithilfe von Dynamic Media-Bereitstellungsberichten können Sie den ROI der bereitgestellten Assets oder die Kanalleistung messen und fundierte Asset-Management-Aufgaben für Assets durchführen.
 
 >[!NOTE]
 > 
->Um frühzeitigen Zugriff auf den Dynamic Media-Bereitstellungsbericht für Ihr Dynamic Media-Konto zu erhalten, erstellen und senden Sie eine Adobe-Support-Anfrage ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).[
+>Um frühzeitig Zugang zum Dynamic Media-Bereitstellungsbericht in Ihrem Dynamic Media-Konto zu erhalten, [erstellen Sie eine Anfrage an den Adobe Kundensupport und reichen Sie sie ein](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ### Voraussetzungen {#prereqs-dynamic-media-delivery-reports}
 
@@ -151,37 +151,37 @@ Sie sollten über eine Dynamic Media-Lizenz verfügen, um diesen Bericht zu erst
 >[!IMPORTANT]
 > 
 >* Berichte werden für Assets bereitgestellt, die über Dynamic Media geliefert werden.
->* Berichte werden für die ersten 1 Million Zeilen erstellt. Wenn Sie alle Dateien innerhalb dieses Limits erfassen möchten, können Sie die Referrer-Spalte für kleinere Ordner mit einbeziehen.
+>* Berichte werden für die ersten 1 Million Zeilen erstellt. Wenn Sie alle Dateien innerhalb dieses Limits erfassen möchten, können Sie für kleinere Ordner die Referrer-Spalte mit einbeziehen.
 >* Berichte können nur für die letzten 3 Monate erstellt werden.
 
 ### Erstellen eines Dynamic Media-Bereitstellungsberichts{#create-dynamic-media-delivery-report}
 
-1. Erstellen Sie einen Dynamic Media-Bereitstellungsbericht mit den Schritten, die unter [Bericht erstellen](#create-report) beschrieben sind.
+1. Erstellen Sie einen Dynamic Media-Bereitstellungsbericht mithilfe der Schritte, die unter [Erstellen eines Berichts](#create-report) beschrieben sind.
 
-1. Wählen Sie **[!UICONTROL Dynamic Media-Bereitstellung]** aus der Dropdownliste **[!UICONTROL Berichtstyp]** aus.
+1. Wählen Sie **[!UICONTROL Dynamic Media-Bereitstellung]** aus der Dropdown-Liste **[!UICONTROL Berichtstyp]** aus.
 
-   ![Dropdown-Liste &quot;Dynamic Media-Versandbericht&quot;](assets/dynamic-media-delivery-report-option.png)
+   ![Dynamic Media-Bereitstellungsbericht – Dropdown-Liste](assets/dynamic-media-delivery-report-option.png)
 
 
 1. Auf der Registerkarte **[!UICONTROL Spalten]** können Sie die Spalte **[!UICONTROL Referrer]** auswählen, um sie in Ihren Bericht aufzunehmen.
 
    ![Referrer](assets/referrer.png)
 
-   Alle Spalten des heruntergeladenen Berichts sind schreibgeschützt, mit Ausnahme der Spalte **Referrer** , die Sie ändern können, um sie in den Bericht einzuschließen oder daraus auszuschließen. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+   Alle Spalten des heruntergeladenen Berichts sind schreibgeschützt, mit Ausnahme der Spalte **Referrer**, die Sie ändern können, um sie in den Bericht ein- oder aus ihm auszuschließen. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
-### Aktionen, die im Dynamic Media-Bereitstellungsbericht ausgeführt werden {#actions-performed-dynamic-media-delivery-reports}
+### Aktionen, die mit Dynamic Media-Bereitstellungsberichten ausgeführt werden {#actions-performed-dynamic-media-delivery-reports}
 
-Nach der Erstellung des Berichts können Sie die folgenden Aktionen durchführen:
+Nach dem Erstellen des Berichts können Sie die folgenden Aktionen durchführen:
 
 * **[!UICONTROL Löschen]**: Sie können den ausgewählten Bericht löschen.
-* **[!UICONTROL CSV herunterladen]**: Sie können den ausgewählten Bericht im CSV-Format herunterladen. Der heruntergeladene Bericht besteht aus den Spalten Name, Pfad, DynamicMediaID, Referrer und Treffer .
-   * **Referrer** -Spalte listet die URL auf, unter der das Asset bereitgestellt oder eingeschlossen wird.
+* **[!UICONTROL CSV herunterladen]**: Sie können den ausgewählten Bericht im CSV-Format herunterladen. Der heruntergeladene Bericht enthält die Spalten „Name“, „Pfad“, „DynamicMediaID“, „Referrer“ und „Treffer“.
+   * Die Spalte **Referrer** führt die URL auf, unter der das Asset bereitgestellt bzw. einbezogen wird.
 
-   * Die Spalte **Treffer** gibt an, wie oft das Asset bereitgestellt wurde (Anzahl der Sendungen).
+   * Die Spalte **Treffer** gibt an, wie oft das Asset bereitgestellt wurde (Bereitstellungszählung).
 
-Informationen zum Löschen oder Herunterladen des Dynamic Media-Bereitstellungsberichts als CSV-Datei finden Sie unter [Vorhandenen Bericht anzeigen und herunterladen](#View-and-download-existing-report).
+Informationen zum Löschen oder Herunterladen des Dynamic Media-Bereitstellungsberichts als CSV-Datei finden Sie unter [Anzeigen und Herunterladen von vorhandenen Berichten](#View-and-download-existing-report).
 
-![Heruntergeladene CSV-Datei im Dynamic Media-Bereitstellungsbericht](assets/csv-dynamic-media-delivery-report.png)
+![Heruntergeladene CSV-Datei eines Dynamic Media-Bereitstellungsberichts](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## Anzeigen und Herunterladen von vorhandenen Berichten {#View-and-download-existing-report}

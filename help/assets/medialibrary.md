@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Media Library für grundlegendes Asset-Management
-description: "[!DNL Experience Manager Assets] und Media Library für das Asset-Management."
+title: Media Library für grundlegende Verwaltung von digitalen Assets verwenden
+description: '[!DNL Experience Manager Assets] und Media Library für das Asset-Management.'
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Architect, Leader
@@ -8,7 +8,7 @@ exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Define what is not included
 
 # Verwenden von Media Library für grundlegendes Asset-Management {#manage-assets-using-media-library}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets-Entwicklerdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Version | Artikel-Link |

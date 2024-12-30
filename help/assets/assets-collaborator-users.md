@@ -3,8 +3,9 @@ title: AEM Assets-Mitarbeiter-Benutzende
 description: Erfahren Sie, wie Sie AEM Assets-Mitarbeiter-Benutzende und ihre Berechtigungen verwalten.
 feature: Asset Management
 role: User, Admin
-source-git-commit: 16ce83409044ad54140754112eb4d35b97883b44
-workflow-type: ht
+exl-id: b0be28b8-821c-46a0-9437-2b2fccee95ee
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
 

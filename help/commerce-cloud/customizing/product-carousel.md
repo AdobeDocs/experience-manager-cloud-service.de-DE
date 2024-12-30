@@ -3,7 +3,8 @@ title: Benutzerdefinierte Attribute zum CIF-Produktkarussell
 description: Erfahren Sie, wie Sie die AEM CIF-Produktkarussellkomponente erweitern, indem Sie das Sling-Modell aktualisieren und das Markup anpassen.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+source-git-commit: 11dfb2a69cd8e64c8105e5dd3945b0c341bcdf3b
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 100%

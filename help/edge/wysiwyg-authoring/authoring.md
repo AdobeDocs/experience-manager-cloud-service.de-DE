@@ -7,7 +7,7 @@ role: User
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Der universelle Editor bietet eine moderne und intuitive grafische Benutzeroberf
 
 ![Hinzufügen und Anordnen von Bausteinen im universellen Editor](assets/blocks.png)
 
-Details der Blöcke können dann im Bereich Eigenschaften konfiguriert werden.
+Details zu den Bausteinen können dann im Bedienfeld „Eigenschaften“ konfiguriert werden.
 
 ![Bausteineigenschaften konfigurieren](assets/block-properties.png)
 

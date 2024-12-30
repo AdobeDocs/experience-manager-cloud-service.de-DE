@@ -45,13 +45,13 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 ### Erstellen einer Blockdefinition und eines Modells {#create-block-model}
 
-1\. Klonen Sie das GitHub-Projekt lokal, das Sie im Handbuch [Erste Schritte für Entwickler für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und öffnen Sie es in einem Editor Ihrer Wahl.
+1\ Klonen Sie das GitHub-Projekt lokal, das Sie im Handbuch [Erste Schritte für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und öffnen Sie es in einem Editor Ihrer Wahl.
 
 * Zur Veranschaulichung wird hier Microsoft-Code verwendet.
 
 ![Klonen des Projekts](assets/create-block/clone.png)
 
-2\. Bearbeiten Sie die Datei `component-definition.json` im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
+2\ Bearbeiten Sie die Datei `component-definition.json` im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-3\. Bearbeiten Sie die Datei `component-models.json` im Stammverzeichnis des Projekts, fügen Sie die folgende [Modelldefinition](/help/implementing/universal-editor/field-types.md#model-structure) für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
+3\ Bearbeiten Sie die Datei `component-models.json` im Stammverzeichnis des Projekts, fügen Sie die folgende [Modelldefinition](/help/implementing/universal-editor/field-types.md#model-structure) für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
 
 * Weitere Informationen zu wichtigen Aspekten beim Erstellen von Inhaltsmodellen finden Sie unter [Inhaltsmodellierung beim WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
@@ -119,7 +119,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-4\. Bearbeiten Sie die Datei `component-filters.json` im Stammverzeichnis des Projekts, fügen Sie den Zitatblock zur [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt werden kann, und speichern Sie die Datei.
+4\ Bearbeiten Sie die Datei `component-filters.json` im Stammverzeichnis des Projekts, fügen Sie den Zitatblock zur [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt werden kann, und speichern Sie die Datei.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-5\. Übertragen Sie diese Änderungen mithilfe von Git in Ihre `main`-Verzweigung.
+5\ Übertragen Sie diese Änderungen mithilfe von Git in Ihre `main`-Verzweigung.
 
 * Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
 
@@ -190,13 +190,13 @@ Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt ü
 
 Nachdem Sie nun über einen funktionierenden Zitatblock verfügen, können Sie ihn mit Stilen versehen.
 
-1\. Kehren Sie zum Editor für Ihr Projekt zurück.
+1\ Kehren Sie zum Editor für Ihr Projekt zurück.
 
-2\. Erstellen Sie einen Ordner `quote`unter dem Ordner `blocks`. 
+2\ Erstellen Sie einen Ordner `quote`unter dem Ordner `blocks`. 
 
 ![Erstellen eines neuen Ordners](assets/create-block/new-folder.png)
 
-3\. Fügen Sie im neuen `quote`-Ordner eine Datei `quote.js` hinzu, um die Blockdekoration zu implementieren, indem Sie das folgende JavaScript hinzufügen und die Datei speichern.
+3\ Fügen Sie im neuen `quote`-Ordner eine Datei `quote.js` hinzu, um die Blockdekoration zu implementieren, indem Sie das folgende JavaScript hinzufügen und die Datei speichern.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4\. Fügen Sie im `quote`-Ordner eine Datei `quote.css` hinzu, um den Stil für den Block zu definieren, indem Sie den folgenden CSS-Code hinzufügen und die Datei speichern.
+4\ Fügen Sie im `quote`-Ordner eine Datei `quote.css` hinzu, um den Stil für den Block zu definieren, indem Sie den folgenden CSS-Code hinzufügen und die Datei speichern.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5\. Übertragen Sie diese Änderungen mithilfe von Git in Ihre `main`-Verzweigung.
+5\ Übertragen Sie diese Änderungen mithilfe von Git in Ihre `main`-Verzweigung.
 
 * Die Übertragung auf `main` dient nur zur Veranschaulichung. [Folgen Sie den Best Practices](https://www.aem.live/docs/dev-collab-and-good-practices) und verwenden Sie eine Pull-Anfrage für die tatsächliche Projektarbeit.
 
-6\. Kehren Sie zur Browser-Registerkarte des universellen Editors zurück, wo Sie die Seite Ihres Projekts bearbeitet haben, und laden Sie die Seite neu, um den formatierten Block anzuzeigen.
+6\ Kehren Sie zur Browser-Registerkarte des universellen Editors zurück, wo Sie die Seite Ihres Projekts bearbeitet haben, und laden Sie die Seite neu, um den formatierten Block anzuzeigen.
 
-7\. Sehen Sie sich den nun formatierten Zitatblock auf der Seite an.
+7\ Sehen Sie sich den nun formatierten Zitatblock auf der Seite an.
 
 ![Der formatierte Zitatblock im universellen Editor](assets/create-block/quote-styled.png)
 
-8\. Stellen Sie sicher, dass die Änderungen in die Produktion übertragen wurden. Navigieren Sie hierzu zur veröffentlichten Seite navigieren. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.aem.page`
+8\ Stellen Sie sicher, dass die Änderungen in die Produktion übertragen wurden. Navigieren Sie hierzu zur veröffentlichten Seite navigieren. Der Link sieht ungefähr wie folgt aus: `https://<branch>--<repo>--<owner>.aem.page`
 
 ![Der veröffentlichte und formatierte Zitatblock](assets/create-block/quote-styled-published.png)
 

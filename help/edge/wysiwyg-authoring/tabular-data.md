@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -83,21 +83,21 @@ In diesem Beispiel erstellen Sie eine Kalkulationstabelle, um Umleitungen für I
 
 ## Importieren von Tabellendaten {#importing}
 
-Zusätzlich zur Bearbeitung von Tabellen im AEM Seiteneditor können Sie auch Daten aus einer CSV-Datei importieren.
+Zusätzlich zur Bearbeitung von Tabellen im AEM-Seiteneditor können Sie auch Daten aus einer CSV-Datei importieren.
 
-1. Tippen oder klicken Sie beim Bearbeiten Ihres AEM auf die Schaltfläche **Hochladen** oben links im Bildschirm.
+1. Wenn Sie Ihre Tabelle in AEM bearbeiten, tippen oder klicken Sie auf die Schaltfläche **Hochladen** oben links auf dem Bildschirm.
 1. Wählen Sie in der Dropdown-Liste aus, wie Sie Ihre Daten importieren möchten.
-   * **Ersetzen Sie Doc** , um den Inhalt des gesamten Arbeitsblatts durch den Inhalt der hochzuladenden CSV-Datei zu ersetzen.
-   * **An Doc** anhängen, um die Daten der CSV-Datei, die Sie hochladen, an den vorhandenen Tabelleninhalt anzuhängen.
-1. Wählen Sie im sich öffnenden Dialogfeld Ihre CSV-Datei aus und tippen oder klicken Sie auf **Öffnen**.
+   * **Dokument ersetzen**, um den Inhalt der gesamten Tabelle durch den Inhalt der hochzuladenden CSV-Datei zu ersetzen.
+   * **An Dokument anhängen**, um die Daten der CSV-Datei, die Sie hochladen, an den Inhalt der vorhandenen Tabelle anzuhängen.
+1. Wählen Sie im sich öffnenden Dialogfeld Ihre CSV-Datei aus und tippen oder klicken Sie dann auf **Öffnen**.
 
-Ein Dialogfeld wird geöffnet, während der Import verarbeitet wird. Nach dem Abschluss werden die Daten in der CSV-Datei zum Inhalt des Arbeitsblatts hinzugefügt oder ersetzt. Wenn Fehler auftreten, wie z. B. eine nicht übereinstimmende Anzahl von Spalten, werden diese gemeldet, sodass Sie Ihre CSV-Datei korrigieren können.
+Ein Dialogfeld wird geöffnet, während der Import verarbeitet wird. Nach Abschluss des Vorgangs werden die Daten in der CSV-Datei zum Inhalt der Tabelle hinzugefügt bzw. ersetzen diesen. Wenn Fehler auftreten, wie z. B. eine nicht übereinstimmende Anzahl von Spalten, werden diese gemeldet, sodass Sie Ihre CSV-Datei korrigieren können.
 
 >[!NOTE]
 >
->* Die Überschriften in der CSV-Datei müssen genau mit den Spalten im Arbeitsblatt übereinstimmen.
+>* Die Überschriften in der CSV-Datei müssen genau mit den Spalten in der Tabelle übereinstimmen.
 >* Durch den Import der gesamten CSV-Datei werden die Spaltenüberschriften nicht geändert, sondern nur die Inhaltszeilen.
->* Wenn Sie die Spalten aktualisieren müssen, müssen Sie dies im Seiteneditor AEM tun, bevor Sie den Import der CSV-Datei durchführen.
+>* Wenn Sie die Spalten aktualisieren müssen, müssen Sie dies im AEM-Seiteneditor tun, bevor Sie den Import der CSV-Datei durchführen.
 >* Eine CSV-Datei darf zum Import nicht größer als 10 MB sein.
 
 Abhängig von Ihrer Auswahl von `mode` können Sie Tabellen auch mit dem Befehl `create`, `replace` oder `append` unter Verwendung eines CSV- und cURL-Befehls ähnlich dem folgenden erstellen.
@@ -121,7 +121,7 @@ Der Aufruf gibt eine HTML-Seite mit Informationen zur Auftrags-ID zurück.
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-[Sie können die Konsole **Aufträge** ](/help/operations/asynchronous-jobs.md) verwenden, um den Status des Auftrags anzuzeigen, oder die zurückgegebene ID verwenden, um ihn abzufragen.
+[Sie können die Konsole **Aufträge** verwenden](/help/operations/asynchronous-jobs.md), um den Status des Auftrags anzuzeigen, oder die zurückgegebene ID verwenden, um ihn abzufragen.
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1

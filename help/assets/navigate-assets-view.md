@@ -1,5 +1,5 @@
 ---
-title: „Benutzeroberfläche von [!DNL Assets view]“
+title: Benutzeroberfläche von [!DNL Assets view]
 description: Grundlegendes zur Benutzeroberfläche von und Navigation in [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
@@ -7,7 +7,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Wenn Sie sich bei [!DNL Assets view] anmelden, sehen Sie die folgende Oberfläch
 
 ## Durchsuchen und Anzeigen von Assets und Ordnern {#browse-repository}
 
-Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenleiste durchsuchen. Experience Manager Assets zeigt eine visuelle Vorschau des Ordnerinhalts auf der Ordnerminiaturansicht an, wenn Sie nach Inhalten suchen oder suchen. Dies verbessert die Erkennung von Assets, die im AEM Assets-Repository verfügbar sind. Mit dieser Ordnerminiaturansicht sparen Sie Zeit bei der Suche nach bestimmten Assets in einem Ordner im AEM Assets-Repository.
+Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenleiste durchsuchen. Experience Manager Assets zeigt eine visuelle Vorschau des Ordnerinhalts auf der Ordnerminiaturansicht an, wenn Sie nach Inhalten suchen. Dies verbessert die Erkennung von Assets, die im AEM Assets-Repository verfügbar sind. Mit dieser Ordnerminiaturansicht sparen Sie Zeit bei der Suche nach bestimmten Assets in einem Ordner im AEM Assets-Repository.
 Beim Durchsuchen von Assets in einem Ordner können Sie die Benutzeroberfläche verwenden, um Asset-Miniaturansichten anzuzeigen und auf diese Weise das Repository visuell zu durchsuchen oder um Asset-Details anzuzeigen und so das gewünschte Asset schnell zu finden. Die in der linken Seitenleiste verfügbaren Optionen sind:
 
 * [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md): Assets enthält jetzt einen anpassbaren Arbeitsbereich, der Widgets für den bequemen Zugriff auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen bereitstellt, die für Sie am relevantesten sind. Diese Seite dient als zentrale Anlaufstelle, um einen Überblick über Ihre Arbeitselemente zu erhalten und schnellen Zugriff auf wichtige Workflows zu ermöglichen. Ein bequemerer Zugriff auf diese Optionen erhöht Ihre Effizienz und inhaltliche Geschwindigkeit.
@@ -79,7 +79,7 @@ Um ein Asset in der Vorschau anzuzeigen, wählen Sie es aus und klicken Sie oben
 
 ![Anzeigen einer Vorschau für ein Asset](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Kehren Sie zum aktuellen Ordner oder zum aktuellen Suchergebnis im Repository zurück **B**: Name und Format der Datei, die Sie in der Vorschau anzeigen **C**: Aufgaben zuweisen **D**: Erweiterte Metadaten **E**: Schlüsselwörter und Smart-Tags **F**: Kommentar und Anmerkungen **G**}: Anzeigen von Aufgaben im Zusammenhang mit dem ausgewählten Asset **H**: Anzeigen und Verwalten von Versionen **I**: Anzeigen von Ausgabeformaten des Bildes **J**: Bild bearbeiten **K**: Anzeigen von Dynamic Media-Ausgabeformaten einschließlich smartem Zuschneiden und Dynamic Media mit OpenAPI-Funktionsausgabeformaten. **L**: Grundlegende Metadaten **M**: Erweiterte Metadaten **N**: Keywords und Smart-Tags **O**: Fahren Sie mit dem vorherigen oder nächsten Asset im aktuellen Ordner fort, ohne zum Ordner **P** zurückzukehren: Zeigen Sie eine genauere Vorschau an. Zoom, Vollbild und andere Optionen.
+**A**: Zurück zum aktuellen Ordner oder zum aktuellen Suchergebnis im Repository **B**: Name und Format für die Datei, die Sie in der Vorschau anzeigen **C**: Zuweisen von Aufgaben **D**: Erweiterte Metadaten **E**: Schlagwörter und Smart-Tags **F**: Kommentieren und Versehen von Anmerkungen **G**: Anzeigen von Aufgaben im Zusammenhang mit dem ausgewählten Asset **H**: Anzeigen und Verwalten von Versionen **I**: Anzeigen von Ausgabedarstellungen des Bildes **J**: Bearbeiten des Bildes **K**: Anzeigen von Dynamic Media-Ausgabedarstellungen, einschließlich smartes Zuschneiden und Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen. **L**: Grundlegende Metadaten **M**: Erweiterte Metadaten **N**: Schlagwörter und Smart-Tags **O**: Wechseln zum vorherigen oder nächsten Element im aktuellen Ordner, ohne zum Ordner zurückzukehren **P**: Genauere Vorschau. Zoom, Vollbild und andere Optionen.
 
 Sie können auch eine Vorschau der Videos anzeigen.
 
@@ -99,7 +99,7 @@ Other use cases after previewing.
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General?lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Für jeden Block gilt Folgendes:
 * Die Entwicklerin oder der Entwickler muss den Blocknamen definieren, der in der Tabellenüberschrift des Blocks gerendert wird.
    * Anhand des Blocknamens werden der richtige Stil und das richtige Skript zum Dekorieren des Blocks abgerufen.
 * Die Entwicklerin oder der Entwickler kann eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) definieren.
-   * Die Modell-ID ist ein Verweis auf das Modell der Komponente, das die Felder definiert, die dem Autor im Eigenschaftenbereich zur Verfügung stehen.
+   * Die Modell-ID ist ein Verweis auf das Modell der Komponente, die die Felder definiert, die der Autorin bzw. dem Autor im Bedienfeld „Eigenschaften“ zur Verfügung stehen.
 * Die Entwicklerin oder der Entwickler kann eine [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) definieren.
    * Die Filter-ID ist ein Verweis auf den Filter der Komponente, der es ermöglicht, das Authoring-Verhalten zu ändern, z. B. indem begrenzt wird, welche untergeordneten Elemente zum Block oder Abschnitt hinzugefügt werden können oder welche RTE-Funktionen aktiviert sind.
 

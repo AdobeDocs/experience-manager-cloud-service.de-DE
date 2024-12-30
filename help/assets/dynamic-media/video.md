@@ -6,7 +6,7 @@ feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '10543'
 ht-degree: 100%
 

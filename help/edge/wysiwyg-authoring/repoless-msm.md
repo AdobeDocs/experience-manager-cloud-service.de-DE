@@ -3,13 +3,13 @@ title: Reaktionsloses Multi-Site-Management
 description: Erfahren Sie mehr über Best Practices zum reaktionsschnellen Einrichten eines Projekts mit lokalisierten Sites, die eine einzige Code-Basis nutzen, die jeweils von Edge Delivery Services bereitgestellt wird.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 6fa2ee9f1dbfbd18720d822857a24c3b1256d621
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
 
 ---
-
 
 # Reaktionsloses Multi-Site-Management {#repoless-msm}
 

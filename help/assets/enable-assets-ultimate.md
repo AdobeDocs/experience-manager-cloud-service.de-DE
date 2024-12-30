@@ -3,8 +3,9 @@ title: Aktivieren von Assets Ultimate
 description: Erfahren Sie, wie Sie Assets Ultimate für neue und bestehende Kundschaft aktivieren.
 feature: Asset Management
 role: User, Admin
-source-git-commit: 16ce83409044ad54140754112eb4d35b97883b44
-workflow-type: ht
+exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 100%
 

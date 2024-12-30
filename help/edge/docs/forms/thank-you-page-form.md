@@ -7,47 +7,47 @@ role: Admin, Architect, Developer
 source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung
 
-Nachdem ein Benutzer ein Formular gesendet hat, ist es wichtig, durch eine Dankesnachricht ein nahtloses Erlebnis bereitzustellen. Er bestätigt nicht nur die erfolgreiche Übermittlung, sondern steigert auch die Benutzerzufriedenheit und führt sie bei der Journey weiter.
+Nachdem Benutzende ein Formular abgesendet haben, ist es entscheidend, ihnen durch eine Dankesnachricht ein nahtloses Erlebnis zu bieten. Dies bestätigt nicht nur die erfolgreiche Übermittlung, sondern verbessert zudem die Zufriedenheit der Benutzenden und führt sie weiter auf ihrer Journey.
 
-* **Dankesnachricht**: Eine Dankesnachricht ist ein Eckpfeiler der Benutzererfahrung, der Sicherheit bietet und wichtige Informationen vermittelt und gleichzeitig die Markenidentität stärkt. Sie dient als direkte Bestätigung der Aktion der Benutzenden und gibt ihnen das Gefühl, etwas geschafft zu haben, ein Gefühl von Zufriedenheit.
+* **Dankesnachricht**: Eine Dankesnachricht ist ein Eckpfeiler des Anwendererlebnisses, indem sie eine Rückversicherung bietet, wichtige Informationen vermittelt und gleichzeitig die Markenidentität stärkt. Sie dient als direkte Bestätigung der Aktion der Benutzenden und gibt ihnen das Gefühl, etwas geschafft zu haben, ein Gefühl von Zufriedenheit.
 
-* **Umleitung**: Eine Umleitung spielt eine zentrale Rolle dabei, Benutzende zu relevanten Zielen zu steuern, die Interaktion zu optimieren und letztendlich Konversionsraten zu steigern. Durch eine Umleitung, die Benutzende nahtlos zum nächsten Schritt in der Journey führt, wird ein reibungsloses Navigationserlebnis sichergestellt. Beispielsweise die Umleitung des Benutzers zur Zahlungsseite nach der Erfassung der anfänglichen Details.
+* **Umleitung**: Eine Umleitung spielt eine zentrale Rolle dabei, Benutzende zu relevanten Zielen zu steuern, die Interaktion zu optimieren und letztendlich Konversionsraten zu steigern. Durch eine Umleitung, die Benutzende nahtlos zum nächsten Schritt in der Journey führt, wird ein reibungsloses Navigationserlebnis sichergestellt. Ein Beispiel dafür ist die Weiterleitung einer Person zur Zahlungsseite, nachdem die ersten Details erfasst wurden.
 
-Standardmäßig verhält sich der adaptive Formularbaustein so, dass bei der Übermittlung die folgende Dankesnachricht angezeigt wird. Die Meldung wird bei erfolgreicher Formularübermittlung oben im Formular angezeigt.
+Standardmäßig verhält sich der adaptive Formularbaustein so, dass bei der Übermittlung die folgende Dankesnachricht angezeigt wird. Die Nachricht wird nach erfolgreicher Übermittlung des Formulars oben im Formular angezeigt.
 
 ![Standardmäßige Dankesnachricht](/help/edge/assets/thank-you-message.png)
 
 Sie haben jedoch die Flexibilität, dieses Erlebnis an Ihre individuellen Anforderungen anzupassen. Sie haben unter anderem folgende Möglichkeiten:
 
 * Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung
-* Leiten Sie Benutzer zur weiteren Aktion nach der Übermittlung zu einer anderen Seite um.
+* Umleiten von Benutzenden zu einer anderen Seite nach der Übermittlung zur Durchführung weiterer Aktionen
 
 >[!NOTE]
 >
-> Im folgenden [Fragebogen-Arbeitsblatt](/help/edge/docs/forms/assets/enquiry.xlsx) können Sie die Dankesnachricht an Ihre Anforderungen anpassen.
+> In der folgenden [Abfragetabelle](/help/edge/docs/forms/assets/enquiry.xlsx) finden Sie Informationen zum Anpassen der Dankesnachricht an Ihre Anforderungen.
 
-## Benutzerdefinierte Dankesnachricht konfigurieren
+## Konfigurieren einer benutzerdefinierten Dankesnachricht
 
-Wenn Sie bei erfolgreicher Formularübermittlung eine personalisierte Dankesnachricht anzeigen möchten, können Sie die Tabelle so konfigurieren, dass sie angezeigt wird.
+Wenn Sie nach erfolgreicher Übermittlung des Formulars eine personalisierte Dankesnachricht anzeigen möchten, können Sie Ihre Tabelle so konfigurieren, dass diese angezeigt wird.
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Dankesnachricht für Ihren adaptiven Formularbaustein zu konfigurieren:
 
 1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner „Edge Delivery“ und öffnen Sie die Tabelle.
-1. Fügen Sie in der Spalte `value` eine benutzerdefinierte Dankesnachricht für den Feldtyp `submit` im Arbeitsblatt hinzu.
+1. Fügen Sie in der Spalte `value` eine benutzerdefinierte Dankesnachricht für den Feldtyp `submit` in der Tabelle hinzu.
 
-   ![Benutzerdefinierte Thankyssen-Meldung](/help/edge/docs/forms/assets/thankyou-custommessage.png)
+   ![Benutzerdefinierte Dankesnachricht](/help/edge/docs/forms/assets/thankyou-custommessage.png)
 
-   Fügen Sie beispielsweise die Meldung `Submission Successful!` in die Spalte `value` für den Feldtyp `submit` ein.
+   Fügen Sie beispielsweise für den Feldtyp `submit` die Meldung `Submission Successful!` in die Spalte `value` ein.
 
-1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Sheet mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   ![Benutzerdefinierte Thankyssen-Meldung](/help/edge/docs/forms/assets/customized-thank-you-message.png)
+   ![Benutzerdefinierte Dankesnachricht](/help/edge/docs/forms/assets/customized-thank-you-message.png)
 
 ## Umleiten von Benutzenden zu einer anderen Seite nach der Übermittlung
 
@@ -56,21 +56,21 @@ Wenn Benutzende nach der Formularübermittlung zu einer anderen Seite umgeleitet
 * Nachdem eine Person ein Kaufformular ausgefüllt hat, wird sie auf eine Zahlungsseite umgeleitet, um die Transaktion sicher abzuschließen.
 * Beim Senden eines Registrierungsformulars für eine Veranstaltung oder ein Webinar werden Benutzende auf eine Bestätigungsseite umgeleitet, auf der Details zu dem Ereignis, z. B. Datum, Uhrzeit und Ort, angezeigt werden.
 
-Führen Sie die folgenden Schritte aus, um Benutzer auf eine andere Seite umzuleiten:
+Gehen Sie wie folgt vor, um Benutzende auf eine andere Seite weiterzuleiten:
 
 1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner „Edge Delivery“ und öffnen Sie die Tabelle.
-1. Fügen Sie die URL in die Spalte `value` für den Feldtyp `submit` im Arbeitsblatt ein, um den Benutzer bei erfolgreicher Formularübermittlung umzuleiten.
-Um die Seite auf eine andere Seite umzuleiten, verwenden Sie die Seiten-URL [Edge Delivery Documentation](https://www.aem.live/docs/) .
+1. Fügen Sie die URL in die Spalte `value` für den Feldtyp `submit` in der Tabelle ein, um Benutzende bei erfolgreicher Übermittlung des Formulars weiterzuleiten.
+Um die Seite auf eine andere Seite umzuleiten, verwenden Sie die URL der Seite [Edge Delivery-Dokumentation](https://www.aem.live/docs/) 
 
-   ![Dank der Umleitungs-URL](/help/edge/docs/forms/assets/thankyou-redirecturl.png)
+   ![Umleitungs-URL für Dankesnachricht](/help/edge/docs/forms/assets/thankyou-redirecturl.png)
 
-1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Sheet mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   ![Umleitungs-Thankyou-Meldung](/help/edge/docs/forms/assets/thankyou-redirectpage.gif)
+   ![Umleitungs-Dankesnachricht](/help/edge/docs/forms/assets/thankyou-redirectpage.gif)
 
 Sie können auch eine neue Dokumentdatei erstellen und ihre Vorschau-URL in die Spalte `value` für den Feldtyp `submit` einfügen.
 
-Nachdem ein Benutzer ein Formular gesendet hat, ist es wichtig, eine klare Dankesnachricht bereitzustellen. Er bestätigt, dass die Übermittlung erfolgreich war, und verbessert die Benutzerzufriedenheit.
+Nachdem Benutzende ein Formular abgesendet haben, ist es wichtig, ihnen eine klare Dankesnachricht zu bieten. Sie bestätigt, dass die Übermittlung erfolgreich war, und steigert die Benutzerzufriedenheit.
 
 ## Siehe auch
 

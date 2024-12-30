@@ -227,21 +227,21 @@ Wenn die Sichtbarkeit abgelaufener Assets aktiviert ist, werden in Content Hub a
 
 ### Ausgabedarstellungen {#renditions-content-hub}
 
-Ausgabedarstellungen sind angepasste Versionen digitaler Assets wie Bilder, Dokumente usw., die für verschiedene Geräte und Plattformen entwickelt wurden, um eine optimale Leistung zu gewährleisten. Weitere Informationen zu [Ausgabeformaten in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Ausgabedarstellungen sind benutzerdefinierte Versionen digitaler Assets wie Bilder, Dokumente usw., die für verschiedene Geräte und Plattformen entwickelt wurden, um eine optimale Leistung zu gewährleisten. Weitere Informationen finden Sie [Ausgabedarstellungen in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
-Content Hub ermöglicht das Herunterladen von statischen Ausgabeformaten. Statische Ausgabeformate sind verschiedene Darstellungen der Originaldatei eines Assets, die nativ generiert werden. Beispiele sind Miniaturansichten oder für Mobilgeräte optimierte Ausgabeformate. Administratoren können die Verfügbarkeit von Asset-Ausgabedarstellungen verwalten und steuern und verwalten, ob Sie Original-Assets herunterladen können oder nicht.
+Content Hub ermöglicht das Herunterladen statischer Ausgabedarstellungen. Statische Ausgabedarstellungen sind verschiedene Darstellungen der Originaldatei eines Assets, die nativ generiert werden. Beispiele sind Miniaturansichten oder für Mobilgeräte optimierte Ausgabedarstellungen. Admins können die Verfügbarkeit von Asset-Ausgabedarstellungen verwalten und steuern und festlegen, ob Original-Assets heruntergeladen werden können.
 
 Führen Sie dazu die folgenden Schritte aus:
 
-Klicken Sie in der Benutzeroberfläche von [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Ausgabeformate]**. Die folgenden Optionen sind verfügbar:
+Klicken Sie in [ Benutzeroberfläche ](#access-configuration-options-content-hub)Konfigurationen“ auf **[!UICONTROL Ausgabedarstellungen]**. Die folgenden Optionen sind verfügbar:
 
-* Aktivieren Sie den Umschalter [!UICONTROL Verfügbarkeit statischer Ausgabeformate aktivieren] , um alle statischen Ausgabeformate in Content Hub sichtbar zu machen.
+* Aktivieren Sie den [!UICONTROL Verfügbarmachen statischer Ausgabedarstellungen aktivieren] , um alle statischen Ausgabedarstellungen in Content Hub anzuzeigen.
 
-* Aktivieren oder deaktivieren Sie **[!UICONTROL Ermöglichen Sie Benutzern, Original-Assets herunterzuladen]** , um die Verfügbarkeit zum Herunterladen von Original-Assets zu steuern.
+* Aktivieren oder deaktivieren Sie **[!UICONTROL Benutzer dürfen Original-Assets herunterladen]**-Umschalter, um die Verfügbarkeit zum Herunterladen von Original-Assets zu steuern.
 
-  ![Konfigurieren von Ausgabeformaten auf Content Hub](assets/config-renditions.png)
+  ![Konfigurieren von Ausgabedarstellungen auf Content Hub](assets/config-renditions.png)
 
-Informationen zum Anzeigen und Herunterladen von statischen Ausgabeformaten in Content Hub finden Sie unter [Herunterladen von Assets in Content Hub](/help/assets/download-assets-content-hub.md).
+Informationen zum Anzeigen und Herunterladen statischer Ausgabedarstellungen in Content Hub finden Sie unter [Herunterladen von Assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Benutzerspezifische Links {#configure-custom-links-content-hub}
 

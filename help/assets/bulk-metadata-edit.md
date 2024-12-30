@@ -1,7 +1,8 @@
 ---
 title: Massenbearbeitung von Metadaten in der Assets-Ansicht
 description: Erfahren Sie, wie Sie die Metadaten mehrerer in der Assets-Ansicht verfügbarer Assets gleichzeitig bearbeiten können.
-source-git-commit: 5778d0dac141174c1b950625057f920af0301a8b
+exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
+source-git-commit: 8a61c75acc1be98696eec6206d5b7f1e334820c0
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -38,5 +39,3 @@ Um die auf ein Asset angewendeten Änderungen der Metadaten anzuzeigen, navigier
 >[!NOTE]
 >
 >Status, Ablaufdatum, Autor und Keywords <!-- and Tags--> sind Standard-Metadateneigenschaften, die unabhängig von ordnerspezifischen Metadaten für die Massenbearbeitung verfügbar sind. Diese Metadateneigenschaften werden nur dann auf der Seite mit den Asset-Details angezeigt, wenn sie in dem Metadatenformular enthalten sind, das auf den Ordner des Assets angewendet wurde.  Wenn Sie diese Metadateneigenschaften auf der Seite mit den Asset-Details nicht sehen können, bearbeiten Sie das Metadatenformular des Asset-Ordners, um sie einzuschließen. Unter [Metadaten in der Assets-Ansicht](/help/assets/metadata-assets-view.md) erfahren Sie, wie Sie ein Metadatenformular erstellen oder bearbeiten und es auf einen Ordner anwenden.
-
-

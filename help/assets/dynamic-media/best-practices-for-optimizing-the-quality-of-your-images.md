@@ -1,12 +1,12 @@
 ---
-title: Best Practices für die Optimierung der Bildqualität
+title: 'Best Practices für die Optimierung der Bildqualität  '
 description: Erfahren Sie mehr über Best Practices zur Optimierung der Qualität Ihrer Bild-Assets mit Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 100%
 

@@ -8,11 +8,11 @@ solution: Experience Manager Sites
 source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Anzeigen in der Vorschau – JSON-Repräsentation {#preview-json-representation}
+# Vorschau – JSON-Darstellung {#preview-json-representation}
 
 Beim Entwickeln der Modelle für Inhaltsfragmente als Teil Ihrer AEM Headless-Implementierung sollten Sie ggf. eine JSON-Beispielausgabe für ein Inhaltsfragment auf der Grundlage eines Modells anzeigen. So erhalten Sie beispielsweise eine Vorstellung davon, wie die endgültige Ausgabe aussehen wird. Dies könnte bei der Validierung der Modell-JSON-Struktur hilfreich sein, ggf. mit standardmäßigen Beispielinhalten pro Datentyp.
 
@@ -20,13 +20,13 @@ Beim Entwickeln der Modelle für Inhaltsfragmente als Teil Ihrer AEM Headless-Im
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Verwendung des **Vorschau**-Symbols:
 
 ![Inhaltsfragmente-Editor – Registerkarte „Vorschau“](assets/cfm-preview-01.png)
 
-Sie können die JSON-Repräsentation des aktuellen Fragments anzeigen. Beispiel:
+Sie können die JSON-Repräsentation des aktuellen Fragments anzeigen. Zum Beispiel:
 
 ![Inhaltsfragmente-Editor – Vorschau eines Fragments](assets/cfm-preview-02.png)
 

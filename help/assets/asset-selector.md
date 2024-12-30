@@ -1,12 +1,12 @@
 ---
-title: Asset-Selektor für [!DNL Adobe Experience Manager] als ein [!DNL Cloud Service]
+title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
 contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5339'
 ht-degree: 100%
 
@@ -171,7 +171,7 @@ Die `ImsAuthProps`-Eigenschaften definieren die Authentifizierungsinformationen 
 |---|---|
 | `imsClientId` | Ein Zeichenfolgenwert, der die für Authentifizierungszwecke verwendete IMS-Client-ID darstellt. Dieser Wert wird von Adobe bereitgestellt und ist spezifisch für Ihre Adobe AEM CS-Organisation. |
 | `imsScope` | Beschreibt die bei der Authentifizierung verwendeten Bereiche. Die Bereiche bestimmen den Umfang des Zugriffs, den die Anwendung auf die Ressourcen Ihrer Organisation hat. Mehrere Bereiche werden durch Kommas voneinander getrennt. |
-| `redirectUrl` | Stellt die URL dar, an die Benutzende nach der Authentifizierung weitergeleitet werden. Dieser Wert wird normalerweise auf die aktuelle URL der Anwendung gesetzt. Wenn keine `redirectUrl` bereitgestellt wird, verwendet `ImsAuthService` die zum Registrieren der `imsClientId` verwendete redirectUrl. |
+| `redirectUrl` | Stellt die URL dar, an die Benutzende nach der Authentifizierung weitergeleitet werden. Dieser Wert wird normalerweise auf die aktuelle URL der Anwendung gesetzt. Wenn keine `redirectUrl` bereitgestellt wird, verwendet `ImsAuthService` die zum Registrieren der `imsClientId` verwendete redirectUrl |
 | `modalMode` | Ein boolescher Wert, der angibt, ob der Authentifizierungsfluss in einem Modal (Popup-Fenster) angezeigt werden soll oder nicht. Wenn `true` festgelegt ist, wird der Authentifizierungsfluss in einem Popup-Fenster angezeigt. Wenn `false` festgelegt ist, wird der Authentifizierungsfluss bei vollständigem Neuladen der Seite angezeigt. _Hinweis:_ Für ein besseres Anwendererlebnis können Sie diesen Wert dynamisch steuern, wenn Popup-Fenster des Browsers deaktiviert sind. |
 | `onImsServiceInitialized` | Eine Rückruffunktion, die aufgerufen wird, wenn der Adobe IMS-Authentifizierungsdienst initialisiert wird. Diese Funktion akzeptiert einen Parameter namens `service`, ein Objekt, das den Adobe IMS-Dienst darstellt. Siehe [`ImsAuthService`](#imsauthservice-ims-auth-service) für weitere Informationen. |
 | `onAccessTokenReceived` | Eine Rückruffunktion, die aufgerufen wird, wenn ein `imsToken` vom Adobe IMS-Authentifizierungsdienst empfangen wird. Diese Funktion akzeptiert einen Parameter namens `imsToken`, eine Zeichenfolge, die das Zugriffstoken darstellt. |
@@ -187,7 +187,7 @@ Die `ImsAuthService`-Klasse regelt den Authentifizierungsfluss für den Asset-W�
 |---|---|
 | `isSignedInUser` | Bestimmt, ob die Person derzeit beim Dienst angemeldet ist, und gibt entsprechend einen booleschen Wert zurück. |
 | `getImsToken` | Ruft das Authentifizierungs-`imsToken` für die derzeit angemeldete Person ab, das zum Authentifizieren von Anforderungen für andere Dienste wie zum Beispiel zum Generieren von Asset-Ausgabedarstellungen verwendet werden kann. |
-| `signIn` | Startet den Anmeldeprozess für die Person. Diese Funktion verwendet `ImsAuthProps`, um die Authentifizierung in einem Popup-Fenster oder beim vollständigem Neuladen einer Seite anzuzeigen. |
+| `signIn` | Startet den Anmeldeprozess für die Person. Diese Funktion verwendet `ImsAuthProps`, um die Authentifizierung in einem Popup-Fenster oder beim vollständigem Neuladen einer Seite anzuzeigen |
 | `signOut` | Meldet die Person vom Dienst ab, macht ihr Authentifizierungs-Token ungültig und fordert sie auf, sich erneut anzumelden, um auf geschützte Ressourcen zuzugreifen. Durch Aufrufen dieser Funktion wird die aktuelle Seite neu geladen. |
 | `refreshToken` | Aktualisiert das Authentifizierungs-Token für die derzeit angemeldete Person, verhindert das Ablaufen des Tokens und stellt einen unterbrechungsfreien Zugriff auf geschützte Ressourcen sicher. Gibt ein neues Authentifizierungs-Token zurück, das für nachfolgende Anforderungen verwendet werden kann. |
 
@@ -451,11 +451,11 @@ URL-Format:
 
 Dabei gilt Folgendes:
 
-* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
-* Der API-Stamm lautet `"/adobe/dynamicmedia/deliver"`.
-* `<asset-id>` ist die Asset-Kennung.
-* `<seo-name>` ist der Name eines Assets.
-* `<format>` ist das Ausgabeformat.
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* Der API-Stamm lautet `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` ist die Asset-Kennung
+* `<seo-name>` ist der Name eines Assets
+* `<format>` ist das Ausgabeformat
 * `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt.
 
 **API zur Bereitstellung genehmigter Assets**
@@ -463,9 +463,9 @@ Dabei gilt Folgendes:
 Die dynamische Versand-URL weist die folgende Syntax auf:
 `https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, wobei Folgendes gilt:
 
-* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`.
-* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets/deliver"`.
-* `<asset-id>` ist die Asset-Kennung.
+* Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets/deliver"`
+* `<asset-id>` ist die Asset-Kennung
 * `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann.
 
 +++
@@ -541,9 +541,9 @@ Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie 
 +++**Konfigurieren benutzerdefinierter Filter**
 Mit dem Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die Eigenschaft `filterSchema` wird zum Konfigurieren solcher Eigenschaften verwendet. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht werden, womit die Filter konfiguriert werden können. Dabei gilt Folgendes:
 
-* Bei `metadata` handelt es sich um die Informationen eines Assets.
-* Bei `embedded` handelt es sich um den statischen Parameter, der für die Konfiguration verwendet wird.
-* Bei `<propertyname>` handelt es sich um den Filternamen, den Sie konfigurieren.
+* Bei `metadata` handelt es sich um die Informationen eines Assets
+* Bei `embedded` handelt es sich um den statischen Parameter, der für die Konfiguration verwendet wird
+* Bei `<propertyname>` handelt es sich um den Filternamen, den Sie konfigurieren
 
 Für die Konfiguration werden die auf Ebene `jcr:content/metadata/` definierten Eigenschaften für die zu konfigurierenden Filter als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht.
 
@@ -568,7 +568,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *filterSchema* | Array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen des Asset-Wählers einschränken möchten. |
 | *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispiel: MIME-Typ JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn der Asset-Wähler gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Zum Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie ein anderes Verzeichnis verwenden müssen, geben Sie auch einen Wert für die Eigenschaft `path` an. |
-| *acvConfig* | Objekt | Nein | | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben.  Diese Eigenschaft wird auch mit der Eigenschaft `rail` verwendet, um die Leistenansicht des Asset-Wählers zu aktivieren. |
+| *acvConfig* | Objekt | Nein | | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben. Diese Eigenschaft wird auch mit der Eigenschaft `rail` verwendet, um die Leistenansicht des Asset-Wählers zu aktivieren. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |                 | Wenn die vorkonfigurierten Übersetzungen für die Bedürfnisse Ihrer Anwendung unzureichend sind, können Sie eine Schnittstelle bereitstellen, über die Sie Ihre eigenen lokalisierten Werte durch die Eigenschaft `i18nSymbols` übergeben können. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet. Um die Überschreibung vorzunehmen, müssen Sie ein gültiges [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor)-Objekt an den Schlüssel von `i18nSymbols` übergeben, den Sie überschreiben möchten. |
 | *intl* | Objekt | Nein | | Der Asset-Wähler bietet standardmäßige, vorkonfigurierte Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschema-Zeichenfolge durch die `intl.locale`-Eigenschaft bereitstellen. Zum Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen den [ISO 639 – Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung von Namen von Sprachen. </br></br> Liste der unterstützten Gebietsschemata: Englisch: „en-us“ (Standard), Spanisch: „es-es“, Deutsch: „de-de“, Französisch: „fr-fr“, Italienisch: „it-it“, Japanisch: „ja-jp“, Koreanisch: „ko-kr“, Portugiesisch: „pt-br“, Chinesisch (Vereinfacht): „zh-cn“, Chinesisch (Taiwan): „zh-tw“ |
 | *repositoryId* | Zeichenfolge | Nein | &#39;&#39; | Repository, aus dem der Asset-Wähler den Inhalt lädt. |
@@ -642,7 +642,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 Definieren Sie die Voraussetzungen in der Datei `index.html` oder in einer ähnlichen Datei innerhalb Ihrer Anwendungsimplementierung, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets]-Repository festzulegen. Danach können Sie Code-Fragmente gemäß Ihren Anforderungen hinzufügen.
 
-### Anpassen des Filter-Bedienfelds {#customize-filter-panel}
+### Anpassen des Bedienfelds „Filter“ {#customize-filter-panel}
 
 Sie können das folgende Code-Fragment im Objekt `assetSelectorProps` hinzufügen, um das Filter-Bedienfeld anzupassen:
 
@@ -704,7 +704,7 @@ filterSchema: [
 ],
 ```
 
-### Anpassen von Informationen in der Modal-Ansicht {#customize-info-in-modal-view}
+### Anpassen von Informationen in der modalen Ansicht {#customize-info-in-modal-view}
 
 Sie können die Detailansicht eines Assets anpassen, wenn Sie auf das Symbol ![Infosymbol](assets/info-icon.svg) klicken. Führen Sie den folgenden Code aus:
 
