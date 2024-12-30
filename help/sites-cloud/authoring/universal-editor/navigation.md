@@ -8,7 +8,7 @@ exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Sobald die App für die Verwendung mit dem universellen Editor instrumentiert wu
 
 1. Melden Sie sich beim universellen Editor an. Sie benötigen eine Adobe ID, um sich anzumelden und [Zugang zum universellen Editor zu erhalten.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. Nachdem Sie sich angemeldet haben, geben Sie die URL der Seite, die Sie bearbeiten möchten, in die [Speicherortleiste ein.](#location-bar) , damit Sie mit der Bearbeitung von Inhalten wie Textinhalten oder Medieninhalten beginnen können.
+1. Nachdem Sie sich angemeldet haben, geben Sie die URL der Seite, die Sie bearbeiten möchten, in die [Speicherortleiste ein.](#location-bar) damit Sie mit der Bearbeitung von Inhalten wie Text- oder Medieninhalten beginnen können.
 
 ## Grundlegendes zur Benutzeroberfläche {#ui}
 
@@ -63,7 +63,7 @@ Die Benutzeroberfläche ist in diese Hauptbereiche unterteilt.
 * [Die Kopfzeile von Experience Cloud](#experience-cloud-header)
 * [Die Symbolleiste des universellen Editors](#universal-editor-toolbar)
 * [Der Editor](#editor)
-* [Das Eigenschaftenbedienfeld](#properties-rail)
+* [Das Bedienfeld „Eigenschaften“](#properties-rail)
 
 ![Die Benutzeroberfläche des universellen Editors](assets/ui.png)
 
@@ -224,19 +224,19 @@ Der Editor nimmt den größten Teil des Fensters ein und ist der Ort, an dem die
 
 Wenn sich der Editor im [Vorschaumodus](#preview-mode) befindet, kann durch den Inhalt navigiert werden und Sie können Links folgen, aber den Inhalt nicht bearbeiten.
 
-### Eigenschaftenbereich {#properties-rail}
+### Bedienfeld „Eigenschaften“ {#properties-rail}
 
-Der Eigenschaftenbereich befindet sich immer rechts im Editor. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder die Hierarchie der Seiteninhalte angezeigt werden.
+Das Bedienfeld „Eigenschaften“ befindet sich immer auf der rechten Seite des Editors. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder aber die Hierarchie der Seiteninhalte angezeigt werden.
 
-![Das Eigenschaftenbedienfeld](assets/properties-rail.png)
+![Das Bedienfeld „Eigenschaften“](assets/properties-rail.png)
 
 #### Eigenschaftenmodus {#properties-mode}
 
-Im Eigenschaftenmodus zeigt das Bedienfeld die Eigenschaften der Komponente an, die derzeit im Editor ausgewählt sind. Dies ist der Standardmodus des Eigenschaftenbedienfelds, wenn eine Seite geladen wird.
+Im Eigenschaftenmodus zeigt das Bedienfeld die Eigenschaften der aktuell im Editor ausgewählten Komponente an. Dies ist der Standardmodus des Bedienfelds „Eigenschaften“, wenn eine Seite geladen wird.
 
 ![Eigenschaftenmodus](assets/properties-mode.png)
 
-Je nach ausgewähltem Komponententyp können Details im Eigenschaftenbedienfeld angezeigt und geändert werden.
+Je nach ausgewähltem Komponententyp können im Bedienfeld „Eigenschaften“ Details angezeigt und geändert werden.
 
 ![Komponentendetails](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Beachten Sie, dass nicht alle Komponenten Details aufweisen, die angezeigt und/o
 
 #### Inhaltsstruktur-Modus {#content-tree-mode}
 
-Im Inhaltsstrukturmodus zeigt das Bedienfeld die Hierarchie des Seiteninhalts an.
+Im Inhaltsstruktur-Modus zeigt das Bedienfeld die Hierarchie des Seiteninhalts an.
 
 ![Inhaltsstruktur-Modus](assets/content-tree-mode.png)
 
@@ -262,11 +262,11 @@ Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu dies
 
 ##### Im CF-Editor öffnen {#edit}
 
-Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente im Eigenschaftenbedienfeld angezeigt, in dem Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche **Im CF-Editor öffnen** auswählen.
+Bei der Bearbeitung werden die Optionen für die ausgewählte Komponente im Bedienfeld „Eigenschaften“ angezeigt, in dem Sie die ausgewählte Komponente bearbeiten können. Wenn es sich bei der ausgewählten Komponente um ein Inhaltsfragment handelt, können Sie auch die Schaltfläche **Im CF-Editor öffnen** auswählen.
 
 ![Symbol „Im CF-Editor öffnen“](assets/open-in-cf-editor.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche  **Im CF-Editor öffnen** wird der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte geöffnet. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragmenteditors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
+Durch Tippen oder Klicken auf die Schaltfläche **Im CF-Editor öffnen** wird der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in einer neuen Registerkarte geöffnet. Dadurch können Sie auf die volle Leistungsfähigkeit des Inhaltsfragmenteditors zugreifen, um das zugehörige Inhaltsfragment zu bearbeiten.
 
 Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im universellen Editor oder direkt im Inhaltsfragmenteditor bearbeiten.
 
@@ -276,7 +276,7 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 
 ##### Hinzufügen {#add}
 
-Wenn Sie eine Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Option zum Hinzufügen im Eigenschaftenbereich angezeigt.
+Wenn Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird im Bedienfeld „Eigenschaften“ die Option zum Hinzufügen angezeigt.
 
 ![Symbol „Hinzufügen“](assets/ue-add-component-icon.png)
 
@@ -290,15 +290,15 @@ Durch Tippen oder Klicken auf die Schaltfläche „Hinzufügen“ wird ein Dropd
 
 ##### Duplizieren {#duplicate}
 
-Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Duplikat-Option im Eigenschaftenbereich angezeigt.
+Wenn Sie eine Komponente innerhalb einer Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird im Bedienfeld „Eigenschaften“ die Option zum Duplizieren angezeigt.
 
-![Symbol &quot;Duplizieren&quot;](assets/duplicate.png)
+![Symbol „Duplizieren“](assets/duplicate.png)
 
-Durch Tippen oder Klicken auf die Schaltfläche zum Duplizieren [wird die ausgewählte Komponente dupliziert.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+Durch Tippen oder Klicken auf die Schaltfläche „Duplizieren“ [wird die ausgewählte Komponente dupliziert](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
 ##### Löschen {#delete}
 
-Wenn Sie eine Komponente innerhalb einer Container-Komponente entweder in der Inhaltsstruktur oder im Editor auswählen, wird die Löschoption im Eigenschaftenbereich angezeigt.
+Wenn Sie eine Komponente innerhalb einer Container-Komponente in der Inhaltsstruktur oder im Editor auswählen, wird im Bedienfeld „Eigenschaften“ die Löschoption angezeigt.
 
 ![Symbol „Löschen“](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 
 #### Zusätzliche Schaltflächen {#additional-properties-rail-buttons}
 
-Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn im Eigenschaftenbedienfeld zusätzliche Schaltflächen angezeigt werden, wurde der universelle Editor erweitert.
+Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn Sie im Bedienfeld „Eigenschaften“ weitere Schaltflächen finden, wurde Ihr universeller Editor erweitert.
 
 * Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
 * Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).

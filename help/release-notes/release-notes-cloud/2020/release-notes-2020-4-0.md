@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.4.0
-description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.4.0“
+description: '[!DNL Adobe Experience Manager] as a Cloud Service-Versionshinweise für 2020.4.0.'
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0“
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 feature: Release Information
 role: Admin
@@ -34,7 +34,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] und [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Massenaufnahme von Assets**: Stellen Sie Kunden einen skalierbaren, Cloud-nativen Erfassungsdienst bereit, der die [!DNL Experience Manager] as a Cloud Service Architektur einschließlich Asset-Microservices verwendet. Zu den wichtigsten Anwendungsfällen gehört die skalierte Aufnahme mit Überwachung, Reporting und Planung, während die erstmalige Übertragung von Assets in Cloud-Datenspeicher mithilfe gängiger Cloud-Upload-Tools ermöglicht wird. Weitere Informationen finden Sie unter [Tool zur Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Massenaufnahme von Assets**: Bieten Sie Kundinnen und Kunden einen skalierbaren, Cloud-nativen Aufnahme-Service, der [!DNL Experience Manager] as a Cloud Service-Architektur einschließlich Asset-Microservices verwendet. Zu den wichtigsten Anwendungsfällen gehört die skalierte Aufnahme mit Überwachung, Reporting und Planung, während die erstmalige Übertragung von Assets in Cloud-Datenspeicher mithilfe gängiger Cloud-Upload-Tools ermöglicht wird. Weitere Informationen finden Sie unter [Tool zur Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
   Dieses Tool ist für Systemadministratoren, Berater und Implementierungspartner gedacht. Diese Funktion ermöglicht die Aufnahme in großem Umfang und wird idealerweise bei der ersten Aufnahme oder gelegentlicher großer Aufnahme verwendet. Für kleinere Aufnahmeaufträge verwenden Sie das [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) oder [laden Sie über die Assets-Benutzeroberfläche hoch](/help/assets/add-assets.md#upload-assets).
 
@@ -64,7 +64,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
    * Benutzer können mit der `Tab`-Taste durch das Dialogfeld „E-Mail-Link“ navigieren.
    * Der Workflow zum Erstellen von Videokodierungsprofilen ist durch die Verbesserungen bei den Bildschirmlesehilfen benutzerfreundlicher geworden.
    * Beim Navigieren mit der `Tab`-Taste wird der Fokus auf die entsprechenden Elemente der Benutzeroberfläche im Workflow verschoben, um ein interaktives Video zu erstellen.
-   * Die Seiten „Veröffentlichen“, „Asset bearbeiten“, „Smartes Zuschneiden bearbeiten“ und „Bildset-Editor“ wurden verbessert, um den Web-Standards zu entsprechen. Benutzer von Hilfstechnologien (AT) können jetzt einfach durch diese Seiten navigieren und auf sie reagieren, z. B. Bilder zuschneiden.
+   * Die Seiten „Veröffentlichen“, „Asset bearbeiten“, „Smartes Zuschneiden bearbeiten“ und „Bildset-Editor“ wurden verbessert, um den Web-Standards zu entsprechen. Benutzende von Hilfstechnologien (Assistive Technology, AT) können jetzt einfach auf diesen Seiten navigieren und auf sie reagieren, z. B. Bilder zuschneiden.
    * Die Viewer wurden verbessert, sodass Benutzer mit der Tastatur navigieren können.
    * Benutzer, die Tastatur und Bildschirmlesehilfe verwenden, können die Funktion zum Zuschneiden verwenden.
    * Tastaturbenutzer können die Hotspots besser verwalten.
@@ -75,9 +75,9 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Veröffentlicht CIF Venia-Referenz-Site 2020.11.05, die die neueste Version der CIF Kernkomponenten Version 1.5.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) .
+* Freigabe der CIF Venia-Referenz-Website 2020.11.05, die die aktuelle CIF-Kernkomponenten Version 1.5.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27)Referenz-Site .
 
-* Version 1.5.0 CIF Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) .
+* Version 1.5.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0)}CIF-Kernkomponenten.[
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
@@ -119,7 +119,7 @@ Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme
 
 ### Andere {#others-foundation}
 
-Neue Syntax [ &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) zur Überprüfung auf Apache- und Dispatcher-Konfiguration, die während des Cloud Manager-Builds ausgeführt wird und auch mit den Dispatcher Tools des AEM as a Cloud Service SDK ausgeführt werden kann.
+Neue [ „httpd-t“-Syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) Überprüfen Sie, ob die Apache- und Dispatcher-Konfiguration während des Cloud Manager-Builds ausgeführt wird, der auch mit den Dispatcher-Tools von AEM as a Cloud Service SDK ausgeführt werden kann.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

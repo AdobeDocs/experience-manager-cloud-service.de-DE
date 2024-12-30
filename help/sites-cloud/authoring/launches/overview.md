@@ -8,7 +8,7 @@ role: User
 source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -105,13 +105,13 @@ Launches ermöglichen Folgendes:
 
 ## Die Konsole „Launches“  {#the-launches-console}
 
-Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, auf die aufgelisteten Launches zu reagieren.
+Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, auf diese zu reagieren.
 
 ![Launches-Konsole – Verwalten von Inhalten](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 Auf die Konsole kann wie folgt zugegriffen werden:
 
-* Die Konsole **Tools**: **Tools**, **Allgemein**, **Starts**.
+* Über die Konsole **Tools**: **Tools**, **Allgemein**, **Launches**.
 
 * **Launches-Konsole** unten im Abschnitt **Launches** der Leiste **Verweise**, wenn Sie durch Quellinhalte in der Sites-Konsole navigieren.
 

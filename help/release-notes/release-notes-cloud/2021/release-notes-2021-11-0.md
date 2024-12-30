@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht Dezember 2021](https://video.tv.ado
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Der Smart-Zuschnitt von Dynamic Media-Bildern und Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus werden manuelle Bearbeitungen bei der Neuverarbeitung beibehalten, wenn sich die Breite und Höhe im Bildprofil nicht ändern.
+* Der Smart-Zuschnitt von Dynamic Media-Bildern und Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus bleiben manuelle Bearbeitungen bei der erneuten Verarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
 
 ### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#assets-prerelease-features}
 
@@ -89,7 +89,7 @@ Die nächste Version wurde am 09. Dezember 2021 veröffentlicht.
 * Benutzende können jetzt neue Frontend-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Weitere Informationen finden Sie unter [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
 
   >[!IMPORTANT]
-  >Sie müssen AEM Version `2021.10.5933.20211012T154732Z` oder höher verwenden, um neue Front-End-Pipelines zu verwenden.
+  >Sie müssen AEM Version `2021.10.5933.20211012T154732Z` oder höher verwenden, um neue Frontend-Pipelines verwenden zu können.
 
 * Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Code-Analyse effizienter durchgeführt wird, ohne dass ein ganzes AEM-Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
 

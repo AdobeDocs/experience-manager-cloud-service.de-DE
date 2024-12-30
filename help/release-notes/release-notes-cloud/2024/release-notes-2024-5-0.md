@@ -3,7 +3,8 @@ title: Versionshinweise für Version 2024.5.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2024.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
+source-git-commit: 11dfb2a69cd8e64c8105e5dd3945b0c341bcdf3b
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 100%

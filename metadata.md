@@ -19,7 +19,7 @@ ht-degree: 51%
 
 # Metadaten für die interne Verwendung
 
-Metadaten im GitHub-Authoring-System sind hierarchisch aufgebaut und werden in den folgenden zunehmenden Präzedenzebenen definiert.
+Metadaten im GitHub-Authoring-System sind hierarchisch und werden in den folgenden zunehmenden Präzedenzfällen definiert.
 
 1. metadata.md
 1. IHV
@@ -50,4 +50,4 @@ Artikel
 
 * `title`
 * `description`
-* `contentOwner` (nur für Core-Asset-Inhalt unter `/help/assets`)
+* `contentOwner` (nur auf Asset-Kerninhalte unter `/help/assets`)

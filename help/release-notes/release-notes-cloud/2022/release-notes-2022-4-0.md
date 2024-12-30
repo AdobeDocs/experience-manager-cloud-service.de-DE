@@ -13,7 +13,7 @@ ht-degree: 85%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 {#release-notes}
 
-Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.4.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt werden die Versionshinweise zu den Funktionen der Version 2022.4.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht April 2022](https://video.tv.adobe.
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die Datentypen des Inhaltsmodells können jetzt mit einem einfachen Kontrollkästchen im Inhaltsmodell-Editor als [übersetzbar](/help/assets/content-fragments/content-fragments-models.md#properties) definiert werden. Außerdem werden AEM Übersetzungsregeln und -konfigurationen automatisch aktualisiert.
+* Die Datentypen des Inhaltsmodells können jetzt mit einem einfachen Kontrollkästchen im Inhaltsmodell-Editor als [übersetzbar](/help/assets/content-fragments/content-fragments-models.md#properties) definiert werden. Außerdem werden AEM-Übersetzungsregeln und -konfigurationen automatisch aktualisiert.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -66,7 +66,7 @@ Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme
 
 Vor Kurzem wurde ein neuer Analyzer hinzugefügt:
 
-* `content-packages-validation` - überprüft die gut formulierte Inhaltssyntax und -struktur für Pakete, die während der Bereitstellung installiert werden
+* `content-packages-validation`: Validiert eine gut formulierte Inhaltssyntax und -struktur für Pakete, die während der Bereitstellung installiert werden.
 
 Es wird dringend empfohlen, Ihr Maven-Projekt mit der neuesten Version des Analyzers zu aktualisieren oder den Analyzer einzubinden, falls Sie dies noch nicht getan haben. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de).
 
@@ -74,7 +74,7 @@ Es wird dringend empfohlen, Ihr Maven-Projekt mit der neuesten Version des Analy
 
 ### TLS 1.0, 1.1 veraltet
 
-Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM beabsichtigt, ausschließlich Transport Layer Security (TLS), 1.2-Protokoll zu verwenden. Ältere TLS-Versionen 1.0 und 1.1 werden jetzt nicht mehr unterstützt.
+Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit Benutzersystemen. AEM beabsichtigt, ausschließlich das Protokoll Transport Layer Security (TLS) 1.2 zu verwenden. Ältere TLS-Versionen 1.0 und 1.1 werden jetzt nicht mehr unterstützt.
 
 Wenn Sie weiterhin ältere Versionen von TLS als 1.0 und 1.1 verwenden, können Sie möglicherweise nicht mehr auf Experience Manager as a Cloud Service zugreifen.
 

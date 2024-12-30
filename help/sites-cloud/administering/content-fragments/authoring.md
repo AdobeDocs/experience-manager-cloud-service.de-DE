@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Dieser Editor bietet Folgendes:
 >
 >Der in diesem Abschnitt beschriebene Editor ist *nur* *online* in Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
 
-## Inhaltsfragmenteditor {#content-fragment-editor}
+## Inhaltsfragment-Editor {#content-fragment-editor}
 
 Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezeigt:
 
@@ -52,7 +52,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
 
      >[!WARNING]
      >
-     >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird davon abgeraten, beide Editoren gleichzeitig geöffnet zu haben.
+     >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig geöffnet zu haben.
 
 * linker Bereich: zeigt die **[Varianten](#variations)** für das Inhaltsfragment und dessen **Felder** an:
    * diese Links können verwendet werden, um [in der Inhaltsfragmentstruktur zu navigieren](#navigate-structure)
@@ -60,8 +60,8 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
    * auf der Registerkarte **Eigenschaften** können Sie den **Titel** und die **Beschreibung** für das Fragment oder die **Variante** aktualisieren
 * zentraler Bereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
    * ermöglicht das Bearbeiten des Inhalts
-      * Wenn verschiedene Datentypen im Modell konfiguriert sind (als mehrere), können Sie **Instanzen hinzufügen** des entsprechenden Felds hinzufügen
-   * wenn **Registerkartenplatzhalter**-Felder innerhalb des hier gezeigten Modells definiert werden und für die Navigation verwendet werden können, werden sie entweder horizontal oder als Dropdown-Liste angezeigt.
+      * wenn im Modell (als mehrfach) konfiguriert, ermöglichen verschiedene Datentypen das **Hinzufügen** von Instanzen des relevanten Feldes.
+   * wenn Felder mit **Registerkartenplatzhaltern** innerhalb des hier gezeigten Modells definiert werden und für die Navigation verwendet werden können, werden sie entweder horizontal oder als Dropdown-Liste angezeigt.
 
   >[!NOTE]
   >

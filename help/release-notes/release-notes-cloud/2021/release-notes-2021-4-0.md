@@ -43,7 +43,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Inhaltsmodelle, erweiterter Datentyp Tags – Jetzt ist es möglich, den Datentyp Tags so zu konfigurieren, dass die Inhaltserstellung mit einzelnen oder mehreren Tags möglich ist.
 
-* Inhaltsmodelle, neuer Tabulator-Platzhalterdatentyp - der neue Tabulator-Platzhalterdatentyp ermöglicht die Gruppierung von Datentypen in Abschnitte, die unter Registerkarten im Inhaltsfragment-Editor gerendert werden.
+* Inhaltsmodelle, neuer Datentyp Registerkarten-Platzhalter - Der neue Datentyp Registerkarten-Platzhalter ermöglicht die Gruppierung von Datentypen in Bereichen, die im Inhaltsfragment-Editor auf Registerkarten gerendert werden.
 
 ### Fehlerbehebungen in [!DNL Sites] {#bug-fixes-sites}
 
@@ -85,7 +85,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Wenn auf der Seite Eigenschaften eine Auswahl getroffen wird, um Metadaten zu aktualisieren, reagiert die Benutzeroberfläche nur langsam, wenn das Schema viele Optionen bietet. (CQ-4318538)
 
-* Beim Aktualisieren und Speichern von Metadatenwerten in einem einzeiligen Textfeld werden die Werte im Dropdown-Listenmenü gelöscht, auch wenn die Bearbeitungen im Dropdown-Listenmenü deaktiviert sind. (CQ-4317077)
+* Beim Aktualisieren und Speichern von Metadatenwerten in einem einzeiligen Textfeld werden die Werte im Dropdown-Listenmenü gelöscht, auch wenn die Bearbeitung im Dropdown-Listenmenü deaktiviert ist. (CQ-4317077)
 
 * Sie können die Auslassungszeichen für Anmerkungen verwenden, um Assets zu überprüfen. Wenn kleine Auslassungszeichen verwendet werden, überschneiden sie sich in der Druckversion mit der Nummer der Anmerkung. (CQ-4316792)
 
@@ -167,7 +167,7 @@ Die folgende Version wurde am 06. Mai 2021 veröffentlicht.
 
 * Projekte in der Adobe I/O-Entwickerkonsole, die von Cloud Manager erstellt wurden, können nicht mehr unbeabsichtigt bearbeitet oder gelöscht werden.
 
-* Wenn ein Benutzer eine neue Umgebung hinzufügt, wird ihm mitgeteilt, dass eine Umgebung nach ihrer Erstellung nicht in einen anderen Bereich verschoben werden kann.
+* Wenn ein(e) Benutzende(r) eine neue Umgebung hinzufügt, wird ihm/ihr mitgeteilt, dass eine Umgebung nach ihrer Erstellung nicht in eine andere Region verschoben werden kann.
 
 * Umgebungsvariablen können jetzt auf einen bestimmten Service übertragen werden, entweder in der Autoren- oder der Veröffentlichungsinstanz. Erfordert AEM Version 2021.03.5104.20210328T185548Z oder später.
 

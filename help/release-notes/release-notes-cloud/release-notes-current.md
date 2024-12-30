@@ -36,7 +36,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht von November 2024 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2024.11.0 hinzugefügt wurden:
+Sehen Sie sich das Video Versionsübersicht November 2024 an, das eine Zusammenfassung der Funktionen bietet, die der Version 2024.11.0 hinzugefügt wurden:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 

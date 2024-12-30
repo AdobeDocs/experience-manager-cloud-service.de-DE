@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Version 2020.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0“
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
@@ -49,7 +49,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**: Sie können jetzt das Verhalten sowohl angemeldeter als auch nicht angemeldeter Benutzer (anonym) erfassen und verfolgen, indem Sie Adobe Analytics for Adaptive Forms verwenden, um Benutzereinblicke zu sammeln. Dies hilft Benutzern aus Unternehmen, fundierte Entscheidungen über Inhalt, Layout und Stil adaptiver Formulare basierend auf den gesammelten Erkenntnissen zu treffen.
+* **Analytics für Adaptive Forms**: Sie können jetzt das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für Adaptive Forms erfassen und verfolgen, um Benutzereinblicke zu sammeln. Dies hilft Benutzern aus Unternehmen, fundierte Entscheidungen über Inhalt, Layout und Stil adaptiver Formulare basierend auf den gesammelten Erkenntnissen zu treffen.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms-oct-2021}
 
@@ -57,7 +57,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ### Beta-Funktionen von [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Dienst können Sie Dokumente im synchronen Modus und im Batch-Modus generieren.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren.
 
 Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-Programm anzumelden.
 
@@ -65,9 +65,9 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Veröffentlicht CIF Venia-Referenz-Site 2020.10.2, die die neueste Version der CIF Kernkomponenten Version 1.4.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) .
+* Freigabe der CIF Venia-Referenz-Website 2020.10.2, die die aktuelle CIF-Kernkomponenten Version 1.4.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2)Referenz-Site .
 
-* Version 1.4.0 CIF Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) .
+* Version 1.4.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0)}CIF-Kernkomponenten.[
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
@@ -91,7 +91,7 @@ Die Version 2020.10.0 von Cloud Manager in Experience Manager as a Cloud Servic
 
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
-* Die Umgebungskarte auf der Übersichtsseite listet jetzt bis zu drei Umgebungen auf. Die Benutzer können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite „Umgebung“ zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebungen anzeigen.
+* Die Umgebungskarte auf der Übersichtsseite listet jetzt bis zu drei Umgebungen auf. Die Benutzenden können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite „Umgebung“ zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebungen anzuzeigen.
 Weitere Informationen finden Sie unter [Anzeigen der Umgebung](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}

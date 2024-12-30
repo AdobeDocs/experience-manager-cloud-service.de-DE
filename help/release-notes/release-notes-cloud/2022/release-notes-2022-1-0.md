@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 {#release-notes}
 
-Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.1.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt werden die Versionshinweise zu den Funktionen der Version 2022.1.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -90,9 +90,9 @@ Sehen Sie sich das Video [Versionsübersicht Januar 2022](https://video.tv.adobe
 * Verbesserte myAccount-Komponenten
 * Die Komponente „Produktempfehlung“ unterstützt zusätzliche Seitentypen (Homepage, Warenkorb, Bestellbestätigung).
 * **Wunschliste**
-   * Angemeldete Besucher können Produkte zu einer Warteliste hinzufügen
-   * Die Verwaltung der Wantlist und ihrer Produkte ist über myAccount möglich.
-   * Die Schaltfläche &quot;Zu Wantlist hinzufügen&quot;kann auf Komponentenebene über eine Richtlinie (Beispiel: Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
+   * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
+   * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich
+   * Die Schaltfläche „Zur Wunschliste hinzufügen“ kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
    * Verfügbar als Kernkomponente und in der Venia-Storefront von AEM
 
 <!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->

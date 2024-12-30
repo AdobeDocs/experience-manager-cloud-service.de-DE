@@ -13,7 +13,7 @@ ht-degree: 81%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 {#release-notes}
 
-Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.6.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt werden die Versionshinweise zu den Funktionen der Version 2022.6.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Eine Zusammenfassung der in der Version 2022.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Inhaltsadministratoren und Inhaltsautoren können jetzt eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) verwenden, um Inhaltsfragmente effizient zu verwalten (z. B. Veröffentlichen, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu suchen/zu filtern und Inhaltsfragmente für Headless-Anwendungsfälle zu erstellen.
+* Eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ist jetzt für Inhaltsadministratoren und Inhaltsautoren verfügbar, um Inhaltsfragmente effizient zu verwalten (z. B. Veröffentlichen, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu durchsuchen/filtern und für Headless-Anwendungsfälle zu erstellen.
 
   ![Inhaltsfragment-Konsole](/help/release-notes/assets/cf-ui.png)
 
@@ -49,7 +49,7 @@ Eine Zusammenfassung der in der Version 2022.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können festlegen, wie viele Farben innerhalb eines Bereichs von 1 bis 40 mit einem Bild versehen werden, damit Sie später anhand dieser Farben nach Bildern suchen können.
+Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben zwischen 1 und 40 konfigurieren, mit denen ein Bild getaggt werden kann, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -71,7 +71,7 @@ Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zw
 
 * Verbesserte Kompatibilität und Stabilität für Connectoren von Drittanbietern in I/O Runtime
 
-* Verbesserte Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des Verhaltens beim benutzerdefinierten Caching)
+* Verbesserte Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des benutzerdefinierten Caching-Verhaltens)
 
 * Mehrere Commerce-Endpunkte werden jetzt nativ unterstützt und können über Cloud Manager konfiguriert werden. Details finden Sie im CIF-Blog [hier](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 
@@ -96,7 +96,7 @@ Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zw
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wurde die Option &quot;Struktur hinzufügen&quot;auf der Registerkarte &quot;**Verteilen**&quot;des Administrationsbildschirms des Replikationsagenten entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
+* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wurde die Option „Struktur hinzufügen“ auf der Registerkarte „Verteilen **im Admin-Bildschirm** Replikationsagenten entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
 
 ## Cloud Manager {#cloud-manager}
 

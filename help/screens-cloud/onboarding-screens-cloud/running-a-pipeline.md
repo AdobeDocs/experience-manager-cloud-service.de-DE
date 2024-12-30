@@ -58,6 +58,6 @@ Im folgenden Abschnitt wird beschrieben, wie Sie die CI/CD-Pipeline konfiguriere
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## Wie es weitergeht: {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie erfahren haben, wie Sie eine Umgebung für Ihr Programm in Cloud Manager einrichten, können Sie mit dem nächsten Schritt im Onboarding-Prozess fortfahren, d. h. [Navigieren zu Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

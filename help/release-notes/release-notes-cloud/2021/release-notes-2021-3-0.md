@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0“
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
@@ -57,14 +57,14 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * In der PDF-Ausgabe befinden sich jetzt alle Seiten der InDesign-Vorlage. (CQ-4317305)
 * Auch wenn die Auswahl Teil eines komplexen Metadatenschemas ist, öffnet sich die Tag-Auswahl jetzt schnell. (CQ-4316426)
 * Beim Hochladen eines Assets mit demselben Dateinamen wie ein vorhandener wird jetzt das Dialogfeld für den Namenskonflikt angezeigt, um den Benutzer aufzufordern, eine Version zu erstellen. (CQ-4315424)
-* Die Eigenschaften von Ordnermetadaten können über das Popupmenü auf der Eigenschaftsseite eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie jetzt angezeigt, wenn die Ordnermetadaten-Eigenschaften erneut geöffnet werden. (CQ-4314429)
+* Die Eigenschaften von Ordnermetadaten können über das Popup-Menü auf der Seite Eigenschaften eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie jetzt angezeigt, wenn die Ordnermetadaten-Eigenschaften erneut geöffnet werden. (CQ-4314429)
 * Assets mit Dateinamen, die Leerzeichen oder Sonderzeichen enthalten, werden jetzt über den Browser hochgeladen. (CQ-4318381)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Onboarding- und Registrierungserlebnisse zu bieten. Diese Erlebnisse haben Unternehmen dabei geholfen, Leads in Käufe umzuwandeln, erfasste Kundendaten zu verarbeiten, responsive Erlebnisse basierend auf dem Zielgruppenprofil bereitzustellen und vieles mehr. AEM Forms ist jetzt as a Cloud Service verfügbar.
 
-Sie können [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=de) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen und um Datensatzdokumente (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Service kann auch Ihre bestehenden PDF-Formulare in digitale Formulare konvertieren. Neben den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen.
+Sie können [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=de) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen und um Datensatzdokumente (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Service kann auch Ihre bestehenden PDF-Formulare in digitale Formulare konvertieren. Zusätzlich zu den standardmäßigen AEM Forms-Funktionen bietet der Service mehrere Cloud-native Funktionen wie automatische Skalierung, keine Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen.
 
 Sie können sich an Ihren Adobe-Kundenbetreuer wenden, um eine Demo zu erhalten oder sich für den Service anzumelden.
 
@@ -76,9 +76,9 @@ Sie können sich an Ihren Adobe-Kundenbetreuer wenden, um eine Demo zu erhalten 
 
 * Die Produktdetailkomponente kann jetzt auf jeder Inhaltsseite verwendet und konfiguriert werden.
 
-* Veröffentlicht CIF Venia-Referenz-Site 2021.03.25, die die neueste Version der CIF Kernkomponenten Version 1.9.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) .
+* Freigabe der CIF Venia-Referenz-Website 2021.03.25, die die aktuelle CIF-Kernkomponenten Version 1.9.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)Referenz-Site .
 
-* Version 1.9.0 CIF Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) .
+* Version 1.9.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)}CIF-Kernkomponenten.[
 
 
 ## Cloud Manager {#cloud-manager}
@@ -92,7 +92,7 @@ Die nächste Version ist für den 08. April 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-march}
 
-* Kunden mit Umgebungen mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) und [benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) sehen eine Meldung über ihre zuvor vorhandenen Konfigurationen und können über die Benutzeroberfläche selbst arbeiten.
+* Zulassungsliste Kunden mit Umgebungen mit bereits bestehenden Konfigurationen für benutzerdefinierte Domain-Namen für [IP-](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL-](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) und [benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre bereits bestehenden Konfigurationen und können diese über die Benutzeroberfläche selbst verwalten.
 
 * Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
 
@@ -163,13 +163,13 @@ Best Practices Analyzer 2.1.8 wurde am 22. März 2021 veröffentlicht.
 
 ### Neue Funktionen in Best Practices Analyzer {#what-is-new-bpa}
 
-* Möglichkeit, ACS Commons-Ergebnisse aus dem BPA-Bericht in der Benutzeroberfläche und aus dem als CSV-Datei exportierten Bericht herauszufiltern.
+* Möglichkeit, ACS Commons-Ergebnisse aus dem BPA-Bericht in der Benutzeroberfläche und aus dem Bericht, der als CSV-Datei exportiert wurde, herauszufiltern.
 
 ## Code-Refaktorierungs-Tools {#code-refactoring-tools}
 
 ### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
-* Neue Funktionen und Verbesserungen für Repository Modernizer. Die neueste Version finden Sie unter [GitHub-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) .
+* Neue Funktionen und Verbesserungen für Repository Modernizer. Die [ Version finden Sie unter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)GitHub-Ressource: Repository Modernizer .
    * Normalisieren von OSGi-Konfigurationen (außer RepoInit-Konfigurationen) auf das bevorzugte .cfg.json-Format.
    * Umbenennen von OSGi-Konfigurationsordnern in das angegebene Format.
    * Generieren des Projekts „ui.apps.structure“.

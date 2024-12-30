@@ -2,12 +2,12 @@
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 72%
+ht-degree: 59%
 
 ---
 # Dokumentation zu Adobe Experience Manager as a Cloud Service
 
-Dies ist das Repository für die Dokumentation zu Adobe Experience Manager as a Cloud Service. In dieser Dokumentation werden Installation, Verwaltung, Authoring und die Anpassung von Erlebnis mit as a Cloud Service beschrieben.
+Dies ist das Repository für die Dokumentation zu Adobe Experience Manager as a Cloud Service. Diese Dokumentation behandelt die Installation, die Verwaltung, die Verwendung der Autoreninstanz und die Anpassung von Experience Manager mithilfe von as a Cloud Service.
 
 Ihre Beiträge zur Dokumentation sind willkommen. Sehen Sie sich die folgenden Ressourcen an:
 

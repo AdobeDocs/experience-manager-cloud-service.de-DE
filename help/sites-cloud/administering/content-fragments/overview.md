@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfrag
 >
 >Auf Inhaltsfragmente können Sie über zwei Konsolen zugreifen: **Inhaltsfragmente** und **Assets**.
 >
->Es gibt auch zwei Editoren für die Bearbeitung von Inhaltsfragmenten. Obwohl die grundlegende Funktionalität identisch ist, gibt es einige Unterschiede. Beide Editoren sind in beiden Konsolen verfügbar.
+>Es gibt auch zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. Auf beide Editoren kann von beiden Konsolen aus zugegriffen werden.
 >
 >Dieser Abschnitt befasst sich mit der **Inhaltsfragmentekonsole** und dem *neuen* Inhaltsfragmenteditor. Diese wurden für die Bereitstellung von Headless-Inhalten entwickelt (obwohl sie für alle Szenarien verwendet werden können)
 >
@@ -177,7 +177,7 @@ Inhaltsfragmente werden:
 
 * Verfügbar im [Seiteneditor unter Verwendung der Inhaltsfragmentkomponente](/help/sites-cloud/authoring/fragments/content-fragments.md) (Verweiskomponente):
 
-   * Die [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) steht für Autorinnen und Autoren der Seite zur Verfügung. Sie ermöglicht das Verweisen und Bereitstellen des erforderlichen Inhaltsfragments im HTML- oder JSON-Format.
+   * Die [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) steht für Autorinnen und Autoren der Seite zur Verfügung. Sie ermöglicht das Erstellen von Verweisen für sowie das Bereitstellen des erforderlichen Inhaltsfragments im HTML- oder JSON-Format.
 
 Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
 
@@ -190,7 +190,7 @@ Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
 
 Um Autorinnen und Autoren eine bessere Kontrolle über eigene Inhalte zu ermöglichen, können zu einem Inhaltsfragment Bilder hinzugefügt und/oder darin integriert werden.
 
-Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden; jede hat ihre eigenen Vorteile:
+Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden, mit jeweiligen Vorteilen:
 
 * als **Inhaltsverweis**
 * innerhalb eines **mehrzeiligen Textfelds**

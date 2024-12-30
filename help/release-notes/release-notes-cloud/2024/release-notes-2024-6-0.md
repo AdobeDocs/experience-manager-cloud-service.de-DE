@@ -3,7 +3,8 @@ title: Versionshinweise für Version 2024.6.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2024.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%

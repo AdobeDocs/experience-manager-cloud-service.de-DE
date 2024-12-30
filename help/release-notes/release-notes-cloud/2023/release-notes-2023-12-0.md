@@ -27,7 +27,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) war der Freitag, 14. Dezember 2023. Die nächste Version (2024.1.0) ist für den Donnerstag, 25. Januar 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) ist der Freitag, 14. Dezember 2023. Die nächste Version (2024.1.0) ist für den Donnerstag, 25. Januar 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -47,11 +47,11 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
-**Sie können den Datendienst [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** nutzen, um die clientseitige Erfassung für AEM as a Cloud Service zu aktivieren.
+**Sie können den [Real Use Monitoring (RUM) Data Service) nutzen](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** um die Client-seitige Erfassung für AEM as a Cloud Service zu aktivieren.
 
 Der Real Use Monitoring-Datendienst (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann jetzt außerdem die automatisierte Traffic-Berichterstellung aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com`, zusammen mit Ihrem Domänennamen für die Produktions-, Staging- und Entwicklungsumgebung von Ihrer E-Mail-Adresse, die mit Ihrer Adobe ID verknüpft ist. Das Adobe-Produktteam aktiviert dann den Real Monitoring (RUM) Data Service für Sie.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie eine E-Mail an `aemcs-rum-adopter@adobe.com` sowie Ihren Domain-Namen für die Produktions-, Staging- und Entwicklungsumgebung über Ihre mit Ihrer Adobe ID verknüpfte E-Mail-Adresse. Das Produktteam von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -83,7 +83,7 @@ Sie können jetzt Inhalte einfach finden, indem Sie ein Bild auswählen und ähn
 
 ### Neue Funktionen in [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms bietet eine vorkonfigurierte Integration zum Senden von Formulardaten direkt an eine SharePoint-Liste, sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion &quot;**Senden mit Formulardatenmodell**&quot;verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+* **[Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms bietet eine vorkonfigurierte Integration zum Senden von Formulardaten direkt an eine SharePoint-Liste, sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion **Senden mit Formulardatenmodell** verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
 
 <!-- 
 
@@ -107,16 +107,16 @@ Sie können jetzt Inhalte einfach finden, indem Sie ein Bild auswählen und ähn
 
 ### Early-Adopter-Programm für die CDN-Konfiguration {#cdn-config-early-adopter}
 
-Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), die die optional lizenzierbaren Web Application Firewall (WAF)-Regeln enthalten, besteht die Möglichkeit, die Configuration Pipeline zu verwenden, um andere Typen der CDN-Konfiguration zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
+Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), die die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es die Möglichkeit, die Konfigurations-Pipeline zu verwenden, um andere Arten von CDN-Konfigurationen zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
 * 301/302 Client-seitige Umleitungen
 * Weiterleitungs-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen
 * Festlegen oder Ändern von Anfragen- oder Antwortkopfzeilen
 * benutzerdefinierte Fehlerseiten, wenn das CDN AEM nicht erreichen kann
-* Authentifizierung durch Benutzername/Kennwort
+* Authentifizierung mit Benutzername/Kennwort
 * alle anderen nützlichen CDN-Konfigurationen
 
-Senden Sie eine E-Mail mit Ihrem Feedback von Ihrer offiziellen E-Mail-ID an **aemcs-cdn-config-adopter@adobe.com**.
+Senden Sie von Ihrer offiziellen E-Mail-ID mit **Feedback eine E-Mail an** aemcs-cdn-config-adopter@adobe.com.
 
 ## Cloud Manager {#cloud-manager}
 

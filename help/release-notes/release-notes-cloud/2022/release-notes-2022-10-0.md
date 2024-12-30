@@ -13,7 +13,7 @@ ht-degree: 78%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 {#release-notes}
 
-Im folgenden Abschnitt finden Sie Versionshinweise zu Funktionen für die Version 2022.10.0 von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt werden die Versionshinweise zu den Funktionen der Version 2022.10.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die Registerkarte [Personalization für Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) ermöglicht die Segmentierungsspezifikationsfunktionen für den Experience Fragment-Editor und die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Bis zur Einführung dieser Funktion ist die von AEM angebotene Personalisierung nur für Web-Seiten verfügbar, nicht aber für Experience Fragments.
+* Die [Personalization-Registerkarte für Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) bietet für den Experience Fragment-Editor Funktionen zur Segmentierungsspezifikation und die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Bis zur Einführung dieser Funktion ist die von AEM angebotene Personalisierung nur für Web-Seiten verfügbar, nicht aber für Experience Fragments.
 
 * Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ermöglicht es Benutzenden, übersetzte Inhaltsfragmente effizient zu verwalten. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
 
@@ -50,7 +50,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und mit dem mitgelieferten Document Cloud-Viewer](/help/assets/manage-pdf-documents.md) eine Vorschau davon anzeigen. [ Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
+* Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und [ dem integrierten Document Cloud-Viewer in der Vorschau anzeigen](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
 
   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -67,11 +67,11 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
-* **Adaptiver Forms-Vorlageneditor**: Mit dem Vorlageneditor können Sie die Grundstruktur und das Erscheinungsbild des adaptiven Forms eines Unternehmens vordefinieren. Diese Version enthält die folgenden Verbesserungen am Vorlagen-Editor:
+* **Vorlagen-Editor für adaptive Forms**: Mit dem Vorlagen-Editor können Sie die Grundstruktur und das Erscheinungsbild von adaptiven Forms eines Unternehmens vordefinieren. Diese Version enthält die folgenden Verbesserungen am Vorlagen-Editor:
    * **[Formulardatenmodell im Vorlagen-Editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: Sie können das Schema für ein Formulardatenmodell mit einer Vorlage für adaptive Formulare im Vorlagen-Editor verknüpfen. Dadurch wird die Zeit für die Erstellung eines adaptiven Formulars reduziert. Die Option wird auch zum Editor für adaptive Formulare hinzugefügt, damit Benutzende ein Formulardatenmodell für vorhandene Formulare auswählen oder ändern können.
    * **[Datensatzdokument im Vorlagen-Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Sie können jetzt die Generierung des Datensatzdokuments für alle Formulare standardisieren, die mithilfe einer Vorlage erstellt wurden. Dies trägt dazu bei, die Einhaltung und Standardisierung von Organisationsanforderungen zu verbessern.
 
-* **[Starten des Assistenten für adaptive Formulare von einer AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)**: Die AEM Sites-Seite bietet nun erweiterte Unterstützung für adaptive Formulare. Sie können jetzt ein adaptives Formular erstellen oder ein vorhandenes adaptives Formular einbetten, während Sie auf der AEM Sites-Seite verbleiben.
+* **[Starten des Assistenten für adaptive Formulare von einer AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)**: Die AEM Sites-Seite bietet nun erweiterte Unterstützung für adaptive Formulare. Sie können jetzt ohne Verlassen der AEM Sites-Seite ein adaptives Formular erstellen oder ein vorhandenes adaptives Formular einbetten.
 * **[Ändern der Anzeigenausrichtung für Kontrollkästchen und Optionsfelder im Datensatzdokument](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: Sie können jetzt die gewünschte Ausrichtung (horizontal, vertikal, gleich wie adaptive Formulare) für das Kontrollkästchen und das Optionsfeld im Datensatzdokument festlegen. Diese Option bestimmt die Positionierung von Optionen für Kontrollkästchen und Optionsfelder im Datensatzdokument.
 
 ## CIF-Add-on {#cloud-services-cif}
@@ -87,11 +87,11 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Autoren-Service) wurde mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und mit allen weiteren Experience Cloud-Anwendungen zu vereinheitlichen. Weitere Informationen finden Sie unter AEM als [Cloud Service auf Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) .
+* AEM as a Cloud Service (Autoren-Service) wurde mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und mit allen weiteren Experience Cloud-Anwendungen zu vereinheitlichen. Weitere Informationen finden Sie unter AEM as a [Cloud Service ](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
 
-* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, einschließlich Binärdateien), jetzt nicht mehr unterstützt und durchgesetzt. Unter [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder im Arbeitsablauf für die Publish-Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) finden Sie die empfohlenen Vorgehensweisen zum Replizieren dieser großen Inhaltspakete.[
+* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ohne Binärdateien), jetzt nicht mehr unterstützt und durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den Workflow [Publish-Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) für empfohlene Ansätze zur Replikation dieser großen Inhaltspakete.
 
-* Die Dispatcher-Konfiguration verweist jetzt auf eine Datei, in der gängige Abfrageparameter für Marketing-Kampagnen aufgelistet sind. Kunden können die Auskommentierung der für sie relevanten Parameter aufheben, was zu einer besseren Zwischenspeicherung führt. Weitere Informationen finden Sie unter [Marketing-Kampagnenparameter](/help/implementing/dispatcher/caching.md#marketing-parameters) .
+* Die Dispatcher-Konfiguration verweist jetzt auf eine Datei, in der gängige Abfrageparameter für Marketing-Kampagnen aufgelistet sind. Kunden können die Auskommentierung der für sie relevanten Parameter aufheben, was zu einer besseren Zwischenspeicherung führt. Siehe [Parameter von Marketing-Kampagnen](/help/implementing/dispatcher/caching.md#marketing-parameters) für weitere Details.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -1,6 +1,6 @@
 ---
-title: Vorlagen zum Erstellen von Seiten, die mit dem Seiten-Editor bearbeitet werden können
-description: Sie können den Vorlagen-Editor verwenden, um Vorlagen zu erstellen, mit denen Ihre Inhaltsautoren Seiten erstellen können, die mit dem Seiten-Editor bearbeitet werden können.
+title: Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können
+description: Sie können den Vorlageneditor verwenden, um Vorlagen zu erstellen, mit denen Ihre Inhaltsautorinnen und -autoren Seiten erstellen können, die sich mit dem Seiteneditor bearbeiten lassen.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
@@ -8,24 +8,24 @@ role: User
 source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
 source-wordcount: '4415'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# Vorlagen zum Erstellen von Seiten, die mit dem Seiten-Editor bearbeitet werden können {#creating-page-templates}
+# Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können {#creating-page-templates}
 
-Sie können den Vorlagen-Editor verwenden, um Vorlagen zu erstellen, mit denen Ihre Inhaltsautoren Seiten erstellen können, die mit dem Seiten-Editor bearbeitet werden können.
+Sie können den Vorlageneditor verwenden, um Vorlagen zu erstellen, mit denen Ihre Inhaltsautorinnen und -autoren Seiten erstellen können, die sich mit dem Seiteneditor bearbeiten lassen.
 
 ## Überblick {#overview}
 
-Wenn ein Autor eine Seite erstellt, muss er eine Vorlage auswählen, die als Grundlage für die neue Seite verwendet wird. Die Vorlage definiert die Struktur der resultierenden Seite, den anfänglichen Inhalt und die Komponenten, die beim Bearbeiten der Seite im Seiteneditor verwendet werden können.
+Wenn eine Autorin oder ein Autor eine Seite erstellt, muss sie bzw. er eine Vorlage auswählen, die als Grundlage für die neue Seite dient. Die Vorlage definiert die Struktur der resultierenden Seite, den anfänglichen Inhalt und die Komponenten, die beim Bearbeiten der Seite im Seiteneditor verwendet werden können.
 
 >[!NOTE]
 >
->[Vorlagen sind auch für das Erstellen von Seiten verfügbar, die mit dem universellen Editor bearbeitet werden können.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[Vorlagen sind auch für das Erstellen von Seiten verfügbar, die sich mit dem universellen Editor bearbeiten lassen.](/help/sites-cloud/authoring/universal-editor/templates.md)
 
-Mit dem **Vorlagen-Editor** ist das Erstellen und Verwalten von Vorlagen nicht nur Entwickleraufgaben. Ein Power-User, der als **Vorlagenautor** bezeichnet wird, kann Vorlagen erstellen. Entwickler müssen die Umgebung einrichten, Client-Bibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen vorhanden sind, hat der **Vorlagenautor** jedoch die Flexibilität, Vorlagen zu erstellen und zu konfigurieren, ohne dass ein Entwickler beteiligt ist.
+Mit dem **Vorlageneditor** ist das Erstellen und Verwalten von Vorlagen nicht mehr nur eine Aufgabe für die Entwicklung. Ein Power-Benutzertyp, der als **Vorlagenautor** bezeichnet wird, kann Vorlagen erstellen. Entwicklerinnen und Entwickler müssen die Umgebung einrichten, Client-Bibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen jedoch vorhanden sind, kann **die Vorlagenautorin bzw. der Vorlagenautor** Vorlagen flexibel erstellen und konfigurieren, ohne dass eine Entwicklerin oder ein Entwickler hinzugezogen werden muss.
 
 Mit dem **Vorlageneditor** können Vorlagenautoren:
 
@@ -33,9 +33,9 @@ Mit dem **Vorlageneditor** können Vorlagenautoren:
 * die Komponenten vorkonfigurieren
 * definieren, welche Komponenten auf den Seiten bearbeitet werden können, die mit der Vorlage erstellt wurden.
 
-In diesem Dokument wird erläutert, wie ein **Vorlagenautor** den **Vorlageneditor** zum Erstellen und Verwalten bearbeitbarer Vorlagen verwenden kann.
+In diesem Dokument wird erklärt, wie **Vorlagenautorinen und -autoren** den **Vorlageneditor** verwenden können, um editierbare Vorlagen zu erstellen und zu verwalten.
 
-Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf technischer Ebene finden Sie im Entwicklerdokument [Bearbeitbare Vorlagen](/help/implementing/developing/components/templates.md) .
+Weitere Informationen zur technischen Funktionsweise bearbeitbarer Vorlagen finden Sie im Entwicklerdokument [Bearbeitbare Vorlagen](/help/implementing/developing/components/templates.md).
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Bevor Sie beginnen, sollten Sie beachten, dass das Erstellen einer Vorlage eine 
 
 >[!NOTE]
 >
->Ein Admin muss im **Konfigurations-Browser** einen Vorlagenordner konfigurieren und entsprechende Berechtigungen anwenden, bevor ein Vorlagenautor eine Vorlage in diesem Ordner erstellen kann.
+>Admins müssen im **Konfigurations-Browser** einen Vorlagenordner konfigurieren und entsprechende Berechtigungen anwenden, bevor eine Vorlagenautorin oder ein Vorlagenautor eine Vorlage in diesem Ordner erstellen kann.
 
 ### Rollen {#roles}
 
@@ -93,7 +93,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
 >[!TIP]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die [internationalisiert](/help/implementing/developing/extending/i18n/dev.md) sein müssen.
+>Geben Sie niemals Informationen in eine Vorlage ein, die [internationalisiert](/help/implementing/developing/extending/i18n/dev.md) werden müssen.
 >
 >Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) nutzen.
 
@@ -149,7 +149,7 @@ Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 * Beschreibung
    * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden kann.
 
-Verwenden Sie nach dem Erstellen der Vorlage die **[Vorlagenkonsole](/help/sites-cloud/administering/templates-console.md)** , um die Vorlageneigenschaften anzuzeigen oder zu bearbeiten.
+Verwenden Sie nach dem Erstellen der Vorlage die **[Vorlagenkonsole](/help/sites-cloud/administering/templates-console.md)**, um die Vorlageneigenschaften anzuzeigen oder zu bearbeiten.
 
 #### Vorlagenminiaturbild {#template-thumbnail-image}
 
@@ -210,7 +210,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
 Da beim Rendern einer Seite auf die Vorlage verwiesen wird, muss die vollständig konfigurierte Vorlage veröffentlicht werden, damit sie in der Veröffentlichungsumgebung verfügbar ist.
 
-Publish-Vorlagen mit der **[Vorlagenkonsole](/help/sites-cloud/administering/templates-console.md)**.
+Veröffentlichen Sie Ihre Vorlagen mithilfe der **[Vorlagenkonsole](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Bearbeiten von Vorlagen | Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
 
@@ -647,4 +647,4 @@ Beim Erstellen von Vorlagen sollten Sie Folgendes berücksichtigen:
    >AEM gibt explizite Warnungen aus, wenn der Sperrstatus von Komponenten in Vorlagen geändert wird, die keine Entwürfe mehr sind.
 
 1. [Erstellen Sie Ihre eigenen Ordner](#creating-a-template-folder-admin) für Ihre Site-spezifischen Vorlagen.
-1. [Publish Ihre Vorlagen](#publishing-a-template-template-author) über die Konsole **[Vorlagen .]**(/help/sites-cloud/administering/templates-console.md)
+1. [Veröffentlichen Sie Ihre Vorlagen](#publishing-a-template-template-author) von der **[Vorlagenkonsole aus.]**(/help/sites-cloud/administering/templates-console.md)

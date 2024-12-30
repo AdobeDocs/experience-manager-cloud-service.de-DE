@@ -27,7 +27,7 @@ Die mehrschichtige Struktur wird mithilfe von Verweisen aufgebaut:
    * [Verwalten dieser Verweise](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
    * [Suchen von übergeordneten Verweisen Ihres Fragments](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
 
-## Baumstruktur {#structure-tree}
+## Strukturbaum {#structure-tree}
 
 Öffnen Sie die Registerkarte **Baumstruktur** über die Editor-Symbolleiste, um die hierarchische Struktur des Inhaltsfragments und dessen Verweise anzuzeigen. Verwenden Sie das Link-Symbol, um Verweise zu öffnen.
 

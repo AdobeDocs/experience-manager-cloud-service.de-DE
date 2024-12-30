@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 >[!NOTE]
 >
->Von hier aus können Sie zu den Versionshinweisen früherer Versionen navigieren, z. B. für die Versionen 2020 und 2021.
+>Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die Jahre 2020 und 2021.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht September 2021](https://video.tv.ad
 
 ### Neue Funktion im Kanal für die Vorabversion von [!DNL Sites] {#sites-prerelease-features}
 
-* Inhaltsfragmentmodelle werden jetzt nach ihrer Veröffentlichung automatisch in einen schreibgeschützten Status versetzt, um unbeabsichtigte Umbrüche von Live-API-Abfragen nach der erneuten Veröffentlichung eines bearbeiteten Modells zu vermeiden. Benutzern wird beim Versuch, ein veröffentlichtes Modell zu bearbeiten, eine Warnung angezeigt. Die Bearbeitung ist möglich, sobald die Warnung akzeptiert wurde.
+* Inhaltsfragmentmodelle werden jetzt, sobald sie veröffentlicht werden, automatisch in einen schreibgeschützten Status versetzt, um zu vermeiden, dass Live-API-Abfragen nach der erneuten Veröffentlichung eines bearbeiteten Modells unbeabsichtigt beschädigt werden. Benutzern wird beim Versuch, ein veröffentlichtes Modell zu bearbeiten, eine Warnung angezeigt. Die Bearbeitung ist möglich, sobald die Warnung akzeptiert wurde.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -66,21 +66,21 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Verwenden Sie Adobe Sign-Rollen in einem adaptiven Formular** - Adobe Sign für Unternehmens- und Unternehmensdienstebenen ermöglichen es Ihnen, optional die Rollen für Vertragsempfänger über den Unterzeichner hinaus zu erweitern, damit sie besser den Workflow-Anforderungen entsprechen. Sie können jetzt [jedem Empfänger der Vereinbarung die Konfiguration seiner Rolle in einem adaptiven Formular ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) ermöglichen, wobei der Unterzeichner die Standardrolle ist.
+* **Verwenden von Adobe Sign-Rollen in einem adaptiven Formular** - Mit Adobe Sign für Business- und Enterprise Service-Levels können Sie optional die Rollen für Empfangende von Vereinbarungen über den Unterzeichnenden hinaus erweitern, um deren Workflow-Anforderungen besser zu erfüllen. Sie können jetzt [jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular zu konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) wobei Signer die Standardrolle ist.
 
-* **Analytics für adaptive Forms** - Sie können jetzt das Endbenutzerverhalten über Adobe Analytics für adaptive Forms erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Es hilft, informierte, datenbasierte Entscheidungen zu treffen, um das Endbenutzererlebnis zu verbessern.
+* **Analytics für Adaptive Forms** - Sie können jetzt das Endbenutzerverhalten mit Adobe Analytics for Adaptive Forms erfassen und verfolgen, um Erkenntnisse über Endbenutzern zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Endbenutzererlebnis zu verbessern.
 
-* **Einfaches Verbinden von Adobe Experience Manager (AEM) Forms mit Microsoft® Dynamics und Salesforce** - Der Dienst stellt vordefinierte Datenquellenkonfigurationen und Datenmodelle für Microsoft® Dynamics und Salesforce bereit. Dies erleichtert Entwicklern die Konfiguration von Microsoft® Dynamics und Salesforce als Datenquellen für ein adaptives Formular ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).[
+* **Einfaches Verbinden von Adobe Experience Manager (AEM) Forms mit Microsoft® Dynamics und Salesforce** - Der Service bietet eine sofort einsatzbereite Datenquellenkonfiguration und Datenmodelle für Microsoft® Dynamics und Salesforce. Dadurch können [schneller und einfacher Microsoft® Dynamics und Salesforce als Datenquellen für adaptive Formulare konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
 
-* **E-Signieren eines adaptiven Formulars mit DocuSign** - Sie können mithilfe von DocuSign ein adaptives Formular e-signieren. Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular. Sie können das im Bereich Software-Verteilung verfügbare Package installieren, um die Übermittlungsaktion zu importieren.
+* **E-Signieren eines adaptiven Formulars mit DocuSign** - Sie können DocuSign verwenden, um ein adaptives Formular elektronisch zu unterzeichnen. Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular. Sie können das im Bereich Software-Verteilung verfügbare Package installieren, um die Übermittlungsaktion zu importieren.
 
 ### Beta-Funktionen von [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector** - Verwenden Sie Unified Storage Connector, um Prozessdaten in kundenverwalteten Repositorys zu externalisieren. Sie können beispielsweise 
+* **Unified Storage Connector** - Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise 
    * die Speicher- und Wiederaufnahmefunktion des Formularportals aktivieren und adaptive Formularentwürfe in einem kundenverwalteten Daten-Repository speichern.
    * prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** - [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    * Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
    * Erzeugen Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
    * Erzeugen von PDF-Druckdateien aus einem XFA-Formular-PDF und aus einem Adobe Acrobat-Formular.
@@ -91,7 +91,7 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Die neue Registerkarte &quot;Zugehörige Commerce-Inhalte&quot;im AEM Sites-Editor erhöht die Autoreneffizienz, indem schnell auf relevante AEM Produktinhalte für den aktuellen Kontext zugegriffen wird.
+* Die neue Registerkarte „Zugehörige Commerce-Inhalte“ im AEM Sites-Editor erhöht die Autoreneffizienz, indem schnell auf relevante AEM-Produktinhalte für den aktuellen Kontext zugegriffen werden kann
 
   ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
 
@@ -105,7 +105,7 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 * Das Leeren des Menücache funktioniert jetzt erwartungsgemäß
 
-* JS-Fehler während des AEM CS-Bereitstellungsschritts und bei Nichtverwendung clientseitiger Komponenten
+* JS-Fehler während des AEM CS-Bereitstellungsschritts und bei Nichtverwendung Client-seitiger Komponenten
 
 * CIF-Cloud-Konfiguration kann jetzt auch in Ordnern erstellt werden, die einen sling:configs-Knoten haben
 
@@ -113,7 +113,7 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 ### Neue Funktionen {#what-is-new-screens}
 
-* Screens as a Cloud Service unterstützt jetzt eine einfache Wiedergabe-Überwachung. Der Player meldet jetzt bei jedem Ping (standardmäßig alle 30 Sekunden) verschiedene Wiedergabemetriken. Basierend auf den Metriken kann es verschiedene Edge-Fälle erkennen (festes Erlebnis, leerer Bildschirm, Planungsproblem usw.). Mit dieser Funktion kann das Team remote überwachen, ob ein Player Inhalte ordnungsgemäß wiedergibt. Sie verbessert die Reaktionsrate auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld und verringert das Risiko, dem Benutzer ein fehlerhaftes Erlebnis anzuzeigen.
+* Screens as a Cloud Service unterstützt jetzt eine einfache Wiedergabe-Überwachung. Der Player meldet jetzt bei jedem Ping (standardmäßig alle 30 Sekunden) verschiedene Wiedergabemetriken. Basierend auf den Metriken können verschiedene Randfälle erkannt werden (steckengebliebenes Erlebnis, leerer Bildschirm, Zeitplanprobleme usw.). Mit dieser Funktion kann das Team aus der Ferne überwachen, ob ein Player die Inhalte ordnungsgemäß wiedergibt. Dadurch wird die Reaktionsfähigkeit auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld verbessert und das Risiko verringert, dem Benutzer ein fehlerhaftes Erlebnis anzuzeigen.
 Weitere Informationen finden Sie unter [Einfache Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring).
 
 * Unterstützung von Miniaturansichten für Videos in wird in Screens as a Cloud Service jetzt unterstützt. Inhaltsautorinnen und -autoren können eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet werden können, während das eigentliche Video vom entsprechenden Team fertiggestellt wird. Das Bild kann auch verwendet werden, wenn die Wiedergabe des Videos fehlschlägt.
@@ -121,9 +121,9 @@ Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten fü
 
 ### Fehlerbehebungen {#bug-fixes-screens}
 
-* Der Player konnte keine Inhalte von der eingebetteten Seite anzeigen. Dieses Problem wurde behoben.
+* Der Player konnte keine Inhalte von der eingebetteten Seite anzeigen. Dieses Problem wurde nun behoben.
 
-* Nach erfolgreicher Anmeldung wurde die Seite &quot;Interner Server-Fehler&quot;angezeigt, auf der die Standardseite (Kanäle) aufgerufen wurde.
+* Nach erfolgreicher Anmeldung führte die Navigation zur Standardseite (Kanäle) zu einer internen Server-Fehlerseite.
 
 * Zugehörige Tag-Einträge wurden beim Entfernen von Wiedergabelisten nicht entfernt.
 
@@ -135,7 +135,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten fü
 
 >[!INFO]
 >
->Die erweiterte Netzwerkfunktion ist Teil der Version 2021.9.0 und wurde Mitte Oktober 2021 für Kunden aktiviert.
+>Die Funktion für erweiterte Netzwerke ist Teil der Version 2021.9.0 und wurde Mitte Oktober 2021 für Kunden aktiviert.
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] bietet jetzt mehrere Arten erweiterter Netzwerkfunktionen, darunter:
 
@@ -143,11 +143,11 @@ Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten fü
 * Dedizierte Ausgangs-IP-Adresse, um den Traffic aus AEM as a Cloud Service von einer eindeutigen IP-Adresse aus zu senden, die jetzt alle Ports unterstützt.
 * VPN, um den Datenverkehr zwischen Ihrer Infrastruktur und AEM as a Cloud Service zu sichern.
 
-Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md) , um weitere Informationen zu erhalten, einschließlich der Bereitstellung von Self-Service für erweiterte Netzwerke mit Cloud Manager-APIs.
+Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md), um weitere Informationen zu erhalten, u. a. wie Sie mithilfe von Cloud Manager-APIs erweiterte Netzwerke selbst bereitstellen können.
 
 **Indexoptimierungen**
 
-Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltext-Index zu erreichen. Weitere Informationen finden Sie in der Dokumentation [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations) und wenden Sie sich direkt an den Support von Adobe, wenn Sie Fragen haben.
+Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltextindex auf AEM-Umgebungen in Absprache mit AEM-Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltextindexes zu erreichen. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations), um weitere Informationen zu erhalten, und wenden Sie sich direkt an den Adobe-Support, wenn Sie Fragen haben.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -166,15 +166,15 @@ Die nächste Version wird am 7. Oktober 2021 veröffentlicht.
 
 * Das Protokoll des Schritts „Code-Qualität“ enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scan-Prozess.
 
-* Die Menüoptionen der Aktivitätsseite enthalten jetzt eine Option zum **Herunterladen von Protokollen** für abgeschlossene Code-Generator-Durchläufe. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
+* Die Menüoptionen der Aktivitätsseite enthalten jetzt eine Option zum **Herunterladen von Protokollen** für abgeschlossene Code-Generator-Durchläufe. Wenn Sie diese auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
 
-* Durch Klicken direkt auf die Programmkarte gelangen Sie jetzt zur Cloud Manager-Übersichtsseite.
+* Wenn Sie direkt auf die Programmkarte klicken, navigieren Sie jetzt zur Cloud Manager-Übersichtsseite.
 
 ### Fehlerbehebungen {#bug-fixes-sept}
 
-* Benutzern wird jetzt eine verständlichere Meldung angezeigt, wenn sie versuchen, eine IP-Zulassungsliste in einem Programm hinzuzufügen, das die maximal zulässige Anzahl von IP-auf die Zulassungsliste setzten erreicht hat, die konfiguriert werden können.
+* Benutzern wird jetzt eine verständlichere Meldung angezeigt, wenn sie versuchen, eine IP-Zulassungsliste in ein Programm einzufügen, die die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
 
-* Die falsche URL wurde kopiert, wenn die Menüoption URL kopieren auf dem Bildschirm Repositorys ausgewählt wurde.
+* Es wurde die falsche URL kopiert, wenn die Menüoption „URL kopieren“ auf dem Bildschirm „Repositorys“ ausgewählt wurde.
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -184,7 +184,7 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 4. Oktober 2
 
 ### Neue Funktionen {#what-is-new-cam}
 
-* Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Karte &quot;Best Practices für Analysen&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#best-practices-analysis).
+* Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Karte „Best-Practices-Analyse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#best-practices-analysis).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -217,4 +217,4 @@ Best Practices Analyzer 2.1.18 wurde am 2. September 2021 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* BPA erkannte fälschlicherweise das Vorhandensein von Commerce integration framework.
+* BPA hat fälschlicherweise Commerce integration framework nachgewiesen.

@@ -42,6 +42,6 @@ Im folgenden Abschnitt wird beschrieben, wie Sie mithilfe des Assistenten eine V
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## Wie es weitergeht: {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Wenn Sie gelernt haben, wie Sie in Cloud Manager eine Verzweigung für Ihr Projekt erstellen, sind Sie bereit für den nächsten Schritt im Onboarding-Prozess: [Erstellen und Einrichten der Umgebung](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).

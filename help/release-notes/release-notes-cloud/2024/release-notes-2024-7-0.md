@@ -7,7 +7,7 @@ exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
 source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -61,27 +61,27 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer
 
 **Hochladen von Assets mit dem Asset-Wähler**
 
-Der Asset-Selektor bietet Inhaltsautoren jetzt die Möglichkeit, endgültige Assets direkt aus dem Selektor hochzuladen, indem sie entweder per Drag-and-Drop oder über das lokale Dateisystem navigieren. Mit dieser Funktion können endgültige Assets von der Anwendung Ihrer Wahl in das DAM hochgeladen werden.
+Der Asset-Selektor bietet Inhaltsautoren jetzt die Möglichkeit, fertige Assets direkt aus dem Selektor hochzuladen, indem sie sie entweder aus dem lokalen Dateisystem ziehen oder darin suchen. Mit dieser Funktion können endgültige Assets von der Anwendung Ihrer Wahl in das DAM hochgeladen werden.
 
-### Frühzeitiger Zugriff in Dynamic Media {#dm-early-access}
+### Early-Access-Funktion in Dynamic Media {#dm-early-access}
 
-**KI-generierte Videobeschriftungen**
+**KI-generierte Videountertitel**
 
-KI-generierte Videountertitel in Adobe Dynamic Media verwenden künstliche Intelligenz, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion wurde entwickelt, um die Barrierefreiheit zu verbessern und das Benutzererlebnis zu verbessern, indem genaue Echtzeit-Untertitel bereitgestellt werden. Die KI analysiert den Audio-Track des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zur Genauigkeit oder Anpassung bearbeitet werden können. Diese Untertitel helfen dabei, die Anforderungen an die Barrierefreiheit zu erfüllen und die Videointeraktion für Zielgruppen zu verbessern, die textbasierte Videounterstützung nutzen oder bevorzugen.
+Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Benutzererlebnis verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
 
-Um frühzeitigen Zugriff auf die Unterstützung von durch KI generierten Untertiteln in Ihrem Dynamic Media-Konto zu erhalten, erstellen und senden Sie eine Adobe-Support-Anfrage ](/help/assets/dynamic-media/video.md##enable-dash).[
+Um frühzeitig Zugang zur Unterstützung für KI-generierte Untertitel in Ihrem Dynamic Media-Konto zu erhalten, [erstellen und senden Sie eine Anfrage an den Adobe-Kunden-Support.](/help/assets/dynamic-media/video.md##enable-dash)
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
 
 **Integration der Inhaltsurhebernachweise**
 
-Experience Manager Assets unterstützt jetzt Inhaltsurhebernachweise für unterstützte Bildformate. Diese Funktion bietet Informationen zur Herkunft des Assets und zur Erstellung, einschließlich Informationen dazu, ob es mithilfe von GenAI geändert wurde.
+Experience Manager Assets unterstützt jetzt Inhaltsurhebernachweise für unterstützte Bildformate. Diese Funktion liefert Informationen zur Herkunft des Assets und dazu, wie es erstellt wurde, einschließlich Informationen dazu, ob es mithilfe von GenAI geändert wurde.
 
 ![Inhaltsurhebernachweise](/help/assets/assets/content-credentials.png)
 
 **Visuelle Vorschau des Ordnerinhalts**
 
-Experience Manager Assets zeigt jetzt beim Durchsuchen oder Suchen nach Inhalten eine visuelle Vorschau der Ordnerinhalte in der Ordnerminiaturansicht an, was die Auffindbarkeit der im AEM Assets-Repository verfügbaren Assets verbessert.
+Experience Manager Assets zeigt jetzt beim Durchsuchen oder Suchen nach Inhalten eine visuelle Vorschau der Ordnerinhalte auf der Ordnerminiatur an, was die Auffindbarkeit von im AEM Assets-Repository verfügbaren Assets verbessert.
 
 <!--
 
@@ -102,7 +102,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare
 
-Autoren adaptiver Formulare können wiederholbare Formularfelder und native Funktionen des visuellen Regeleditors verwenden, um komplexe Geschäftslogik in Formularen zu erstellen, ohne dass Anpassungen oder Unterstützung durch das Entwicklungsteam erforderlich sind.
+Autoren von adaptiven Formularen können wiederholbare Formularfelder und vordefinierte Visual Rule Editor-Funktionen verwenden, um komplexe Geschäftslogik in Formularen zu erstellen, ohne dass sie angepasst oder vom Entwicklungs-Team unterstützt werden müssen.
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -112,7 +112,7 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 #### Erstellen adaptiver Formulare mit dem universellen Editor
 
-Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) von Adobe Experience Manager, um adaptive Formulare mithilfe von Drag-and-Drop-Authoring mit WYSIWYG zu erstellen, und zwar sowohl für Headless- als auch für Headful-Anmeldeerlebnisse. Bereitgestellt wird diese Funktion über Edge Delivery Services. Autoren adaptiver Formulare können einfach Experimente für Varianten der Formulare auf den Webseiten erstellen und starten. Mit dieser Fähigkeit können sie die Erlebnisse mit der besten Leistung für Endbenutzer bestimmen.
+Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) von Adobe Experience Manager, um adaptive Formulare mithilfe von Drag-and-Drop-Authoring mit WYSIWYG zu erstellen, und zwar sowohl für Headless- als auch für Headful-Anmeldeerlebnisse. Bereitgestellt wird diese Funktion über Edge Delivery Services. Autoren adaptiver Formulare können auf einfache Weise Experimente für Varianten der Formulare auf den Webseiten erstellen und starten. Auf diese Weise können sie die Erlebnisse für Endbenutzer ermitteln, die am besten funktionieren.
 
 >[!IMPORTANT]
 >
@@ -122,9 +122,9 @@ Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/
 
 ### Bereinigen von Inhalten im CDN mit einem selbst erstellten API-Schlüssel {#purge-cdn}
 
-Das Festlegen von TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. In Szenarien, in denen es wichtig ist, aktualisierte Inhalte sofort bereitzustellen, kann es jedoch von Vorteil sein, den CDN-Cache direkt zu bereinigen.
+Das Festlegen einer TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. Wenn aktualisierte Inhalte jedoch sofort bereitgestellt werden müssen, kann es von Vorteil sein, den CDN-Cache direkt zu bereinigen.
 
-[Erfahren Sie, wie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) die Konfiguration eines Bereinigungs-API-Tokens mithilfe der Cloud Manager-Konfigurations-Pipeline selbst bereitstellen kann, damit Sie [die Bereinigungs-APIs aufrufen können](/help/implementing/dispatcher/cdn-cache-purge.md), mit einer der folgenden Variationen:
+[Erfahren Sie](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) wie Sie die Konfiguration eines Bereinigungs-API-Tokens mithilfe der Cloud Manager-Konfigurations-Pipeline selbst bereitstellen können, damit Sie [ Bereinigungs-APIs ](/help/implementing/dispatcher/cdn-cache-purge.md) einer der folgenden Varianten aufrufen können:
 
 * Einzelne URL
 * Mehrere URLs unter Verwendung eines Tags
@@ -132,13 +132,13 @@ Das Festlegen von TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver
 
 ### Selbst durchgeführte Konfiguration des X-AEM-Edge-Key für das kundenseitig verwaltete CDN {#customermanaged-keys}
 
-Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dieser Workflow ist jetzt Self-Service, indem der Schlüsselwert in einer Konfigurationsdatei deklariert wird, die mithilfe der Configuration Pipeline bereitgestellt wird. Dadurch werden alle Verzögerungen beim Einstieg in eine neue Umgebung beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dieser Workflow ist jetzt Self-Service-fähig, indem der Schlüsselwert in einer Konfigurationsdatei deklariert wird, die mithilfe der Konfigurations-Pipeline bereitgestellt wird. Dadurch werden Verzögerungen beim Onboarding einer neuen Umgebung beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
 
-Mit Traffic-Filterregeln, die die optional lizenzierbaren Web Application Firewall (WAF)-Regeln enthalten, können Sie konfigurieren, welcher Traffic blockiert werden soll.
+Mithilfe von Traffic-Filterregeln, zu denen auch die optional lizenzierbaren WAF-Regeln (Web Application Firewall) gehören, können Sie festlegen, welcher Traffic blockiert werden soll.
 
-Jetzt können Sie [Warnhinweise abonnieren](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts), sobald Ihre Traffic-Filterregeln ausgelöst werden. E-Mail-Benachrichtigungen durch das Aktionszentrum informieren Sie darüber, wenn bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
+Jetzt können Sie [Warnhinweise abonnieren](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) sobald Ihre Traffic-Filterregeln ausgelöst werden. E-Mail-Benachrichtigungen durch das Aktionszentrum informieren Sie darüber, wenn bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
 
 ### Early-Adopter-Programme im Zusammenhang mit der Inhaltsbereitstellung {#foundation-early-adopter}
 

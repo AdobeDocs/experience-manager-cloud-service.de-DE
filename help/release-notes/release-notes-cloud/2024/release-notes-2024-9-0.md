@@ -3,7 +3,8 @@ title: Versionshinweise für Version 2024.9.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2024.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -115,15 +116,15 @@ Die folgenden generativen KI-Funktionen stehen zur Verfügung:
 
 ### Verbesserungen {#improvements-fixes-cif}
 
-* Kategoriebegrenzung anpassbar machen.
+* Kategorielimit anpassen.
 
 ### Fehlerbehebungen {#bug-fixes-cif}
 
 * Commerce-Felder sind nicht ordnungsgemäß mit dem Metadatenschema-Editor von Assets integriert.
 * Problem mit dem Karussell-Produkte-Multifield für Drag-and-Drop.
 * Problem mit Karussellkategorie-Multifield für Drag-and-Drop.
-* Ein Klick funktioniert nicht für die Menüs in den Seiteninformationen auf der Kategorie- und Produkt-Editor-Seite.
-* Die Bestellnummer ist auf der Bestellbestätigungsseite nicht sichtbar.
+* Ein-Klick funktioniert nicht für die Menüs in den Seiteninformationen auf der Kategorie- und Produkteditorseite.
+* Die Bestellnummer ist nicht auf der Bestellbestätigungsseite sichtbar.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
@@ -133,11 +134,11 @@ Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help
 
 ### Grundlegende Authentifizierung im CDN {#basicauth-cdn}
 
-Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Kennwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Config Pipeline bereitgestellt wird, mit einem Verweis auf die Cloud Manager-Umgebungsvariablen des geheimen Typs. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Kennwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird, mit einem Verweis auf Cloud Manager-Umgebungsvariablen vom Typ „Geheime Daten“. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 ### Client-seitige Umleitungen {#client-side-redirects}
 
-Deklarieren Sie [Browserumleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in einer Konfigurationsdatei-Git, die im CDN bereitgestellt und ausgewertet werden. Dies kann für Szenarien nützlich sein, darunter das Löschen von Seiten, die Änderung der Site-Struktur und die SEO-Optimierung.
+Deklarieren Sie [Browser-Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in einer Konfigurationsdatei für Git, die im CDN bereitgestellt und ausgewertet werden. Dies kann für Szenarien wie das Löschen von Seiten, eine geänderte Site-Struktur und die SEO-Optimierung nützlich sein.
 
 ### Neue AEM Developer Console (öffentliche Beta-Version) {#aem-developer-console-beta}
 
@@ -153,7 +154,7 @@ Jeder kann auf die öffentliche Beta-Version zugreifen, indem in der aktuellen A
 
 ### Konfigurations-Pipeline für RDEs (Early-Adopter-Programm) {#config-pipeline-rdes-early-adopter}
 
-Die [Konfigurations-Pipeline](/help/operations/config-pipeline.md) wird verwendet, um YAML-Dateikonfigurationen bereitzustellen, einschließlich CDN-Optionen (Traffic-Filterregeln, Anforderung-/Antworttransformationen usw.). Treten Sie dem Early-Adopter-Programm bei, indem Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>** senden, um dieselben Konfigurationen für schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitzustellen, die eine CLI verwenden.
+Die [Konfigurations-Pipeline](/help/operations/config-pipeline.md) wird verwendet, um YAML-Dateikonfigurationen bereitzustellen, einschließlich CDN-Optionen (Traffic-Filterregeln, Anfrage-/Antworttransformationen usw.). Treten Sie dem Early-Adopter-Programm bei, indem Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>** senden, um dieselben Konfigurationen für schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitzustellen, die eine CLI verwenden.
 
 ## [!DNL Experience Manager] Guides {#guides}
 

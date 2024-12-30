@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
 workflow-type: tm+mt
 source-wordcount: '4019'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Die meisten dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AE
 
 Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für erweiterte Sicherheit oder eine WAF-DDoS Protection-Lizenz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
 
-Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines in Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdatei kann mithilfe der Befehlszeilenwerkzeuge in Rapid Developement Environments (RDEs) bereitgestellt werden.
+Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines in Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in RDEs (Rapid Development Environments) bereitgestellt werden.
 
-[Durchlaufen Sie ein Tutorial](#tutorial), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
+[Absolvieren Sie ein Tutorial](#tutorial), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
 
 >[!NOTE]
 >Weitere Optionen zur Konfiguration des Traffics im CDN, einschließlich der Bearbeitung der Anfrage/Antwort, der Deklaration von Umleitungen und des Proxys zu einem Nicht-AEM-Ursprung, finden Sie im Artikel [Konfiguration von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md).

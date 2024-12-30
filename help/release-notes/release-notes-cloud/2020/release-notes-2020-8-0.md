@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0“
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
@@ -22,7 +22,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Möglichkeit der [Wiederherstellung einer früheren Version von Seiten und Unterseiten (Seitenbäume)](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* Möglichkeit, [Launches zu erstellen](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
+* Möglichkeit zum [Erstellen von Launches](/help/sites-cloud/authoring/launches/overview.md) im AEM-[SPA-Editor](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -35,7 +35,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Ein neues [Asset-Download-Erlebnis](/help/assets/download-assets-from-aem.md) ermöglicht Folgendes:
 
-   * Asynchroner Download für große Downloads, sodass Benutzer nicht warten müssen.
+   * Asynchrone Downloads für große Downloads, sodass Benutzer nicht warten müssen.
    * Eine neue modulare API für die Erweiterbarkeit für Entwickler.
 
 * Die Leistung der Metadatenextraktion für Asset-Microservices wurde verbessert. Sie erhöht den Gesamtdurchsatz der Asset-Erfassung.
@@ -78,7 +78,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
-* Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird in der Pipeline nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt eingefügt, der die Site anhand verschiedener Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Schritt zur Inhaltsprüfung in die Pipeline aufgenommen, wodurch die Site anhand mehrerer Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet wird.
 
 
   >[!NOTE]
@@ -116,7 +116,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 * Es sind ungültige Seiten enthalten, die den Content Audit-Durchschnittswert unter den erwarteten Wert bringen.
 
-* Auf der Registerkarte „Content Audit“ wird die Basis-URL unter Verwendung der Autoren-Domain anstelle der Veröffentlichungs-Domain falsch angezeigt.
+* Auf der Registerkarte „Inhaltsprüfung“ wird die Basis-URL unter Verwendung der Autoren-Domain anstelle der Veröffentlichungs-Domain falsch angezeigt.
 
 * Um den Schritt „Content Audit“ zu aktivieren, müssen Benutzende die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird das Audit auf die Homepage angewendet.
 
@@ -140,8 +140,8 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 ### Neue Funktionen {#what-is-new-refactoring}
 
-* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere Informationen finden Sie unter [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) .
+* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere [ finden Sie unter „Git-Ressource: aio-cli-plugin-aem-cloud-service](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)migration“.
 
-* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Weitere Informationen finden Sie unter [Git-Ressource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) .
+* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Weitere [ finden Sie unter „Git](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)Ressource: AEM Cloud Service Dispatcher Converter“.
 
 * AEM Dispatcher Converter wurde in ` node.js ` neu geschrieben und in das AIO-CLI-Plug-in integriert.

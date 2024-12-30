@@ -17,7 +17,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 >[!NOTE]
 >
->Von hier aus können Sie zu den Versionshinweisen früherer Versionen navigieren, z. B. für die Versionen 2020 und 2021.
+>Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die Jahre 2020 und 2021.
 
 >[!NOTE]
 >
@@ -36,21 +36,21 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr über](/help/implementing/dispatcher/disp-overview.md#validation-debug) diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, damit Sie davon profitieren können.
-* Die Benutzeroberfläche für die Strukturreplikation auf der Registerkarte &quot;Verteilen&quot;des Replikationsagenten sollte als veraltet betrachtet werden und wurde nach dem 30. September 2021 entfernt. [Erfahren Sie mehr](/help/operations/replication.md#tree-activation) über alternative Replikationsstrategien.
+* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr ](/help/implementing/dispatcher/disp-overview.md#validation-debug) diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, damit Sie sie nutzen können.
+* Die Benutzeroberfläche für die Strukturreplikation unter der Registerkarte „Verteilen“ des Replikationsagenten sollte als veraltet betrachtet werden und wurde nach dem 30. September 2021 entfernt. [Erfahren Sie mehr](/help/operations/replication.md#tree-activation) über alternative Replikationsstrategien.
 * Das Bundle `org.apache.sling.datasource-1.0.4.jar` für die Unterstützung der Sling-Datenquelle wurde entfernt, da es veraltete Funktionen aufweist und von Kunden nicht verwendet wird.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Mit der Funktion zur Inhaltsautomatisierung kann [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs verwenden, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit verkürzt und die Anzahl der Iterationen erheblich verringert werden. Die Funktion erfordert keine Programmierung und funktioniert aus dem DAM heraus. Siehe [Erzeugen von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
+* Mit der Funktion zur Inhaltsautomatisierung können [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs verwenden, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit verkürzt und die Anzahl der Iterationen erheblich verringert werden. Die Funktion erfordert keine Programmierung und funktioniert aus dem DAM heraus. Siehe [Erzeugen von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Die im Viewer verfügbaren Steuerelemente umfassen Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Benutzer können auch eine Vorschau der Seiten und Lesezeichen anzeigen und zu ihnen springen. Kommentare zur Datei selbst werden unterstützt. Kommentare und Anmerkungen zu Inhalten in der PDF-Datei sind für eine zukünftige Version geplant.
+* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Die im Viewer verfügbaren Steuerelemente umfassen Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Benutzer können auch eine Vorschau der Seiten und Lesezeichen anzeigen und zu ihnen springen. Kommentare zur Datei selbst werden unterstützt. Kommentare und Anmerkungen zu Inhalten in der PDF-Datei sind für eine künftige Version geplant.
 
   ![PDF-Dateien in [!DNL Experience Manager] in der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* Die Downloadfunktion für die Linkfreigabe verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen. Weitere Informationen finden Sie unter [Herunterladen von Assets, die über die Linkfreigabe freigegeben wurden](/help/assets/download-assets-from-aem.md#link-share-download).
+* Die Download-Funktion Linkfreigabe verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen. Weitere Informationen finden Sie unter [Herunterladen von freigegebenen Assets mithilfe der Linkfreigabe](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
 
@@ -85,8 +85,8 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* Sie können jetzt den Automated forms conversion-Dienst verwenden, um PDF forms in französischer, deutscher und spanischer Sprache](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=de?#language-specific-meta-model) in adaptive Formulare zu konvertieren.[
-* Es wurde ein separates Bedienfeld zum Vorlagen-Editor hinzugefügt, um Fehler im Zusammenhang mit adaptiven Formularkomponenten anzuzeigen. Dies hilft, alle Fehler in adaptiven Formularen an einem Ort zu konsolidieren und die Auflösungszeit zu verkürzen.
+* Sie können jetzt den Automated forms conversion-Service verwenden, um (PDF forms[ in französischer, deutscher und spanischer Sprache) in ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=de?#language-specific-meta-model) Formulare zu konvertieren.
+* Es wurde ein separates Bedienfeld zum Vorlagen-Editor hinzugefügt, um Fehler im Zusammenhang mit Komponenten von adaptiven Formularen anzuzeigen. Dies hilft, alle Fehler in adaptiven Formularen an einem Ort zu konsolidieren und die Auflösungszeit zu verkürzen.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#beta-features-forms}
 
@@ -99,7 +99,7 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 * **Acroform-basiertes aufzuzeichnendes Dokument**: Sie können auch [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) als Vorlage für ein aufzuzeichnendes Dokument neben XFA-basierten Formularvorlagen verwenden.
 
-* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) verbinden. Dadurch können Sie adaptive Formulardaten abrufen und in Microsoft® Azure Storage as a BLOB speichern.
+* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
 
 ## CIF-Add-on {#cloud-services-cif}
 
@@ -116,7 +116,7 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 ### Fehlerbehebungen {#bug-fixes-screens}
 
-* Die Einstellungen des Content Providers werden jetzt bei der Erstellung oder Aktualisierung validiert.
+* Die Einstellungen des Content Providers werden jetzt während der Erstellung oder Aktualisierung validiert.
 
 * Alle Anzeigeansichten verfügen über eine Ordnerspalte.
 
@@ -126,21 +126,21 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 * Der Hilfe-Link wurde entsprechend der neuen Screens-Cloud-Dokumentation aktualisiert.
 
-* Die Zuweisung von Wiedergabelisten aufheben und das Entfernen von Wiedergabelisten mit zugewiesenen Playern deaktivieren, funktioniert jetzt.
+* Die Zuweisung von Wiedergabelisten aufzuheben und das Entfernen von Wiedergabelisten mit zugewiesenen Playern zu verbieten, funktioniert jetzt.
 
-* Der Player lädt Assets jetzt erneut herunter, wenn der Cache &quot;ALL&quot;gelöscht wird.
+* Der Player lädt Assets jetzt erneut herunter, wenn der Cache „ALL“ gelöscht wird.
 
 * Die Wiederholungszeitplanung funktioniert jetzt, wenn die *Endzeit* für den folgenden Tag festgelegt ist.
 
 * `Back&Forward` funktioniert jetzt in der Screens as a Cloud Service-Benutzeroberfläche.
 
-* Tags mit demselben Namen, aber unterschiedlichen Namespaces konnten nicht zuvor erstellt werden.
+* Tags mit demselben Namen, aber unterschiedlichen Namespaces konnten zuvor nicht erstellt werden.
 
 ## XML-Dokumentation für Experience Manager as a Cloud Service {#xml-documentation}
 
 ### Neue Funktionen {#what-is-new-xml-documentation}
 
-Die XML-Dokumentation für Experience Manager as a Cloud Service ist allgemein verfügbar. Kunden von Experience Manager as a Cloud Service können damit ein XML Documentation-Add-on erwerben, mit dem sie technische Inhalte über verschiedene Kanäle (einschließlich Experience Manager Sites) importieren, erstellen, verwalten und bereitstellen können.
+Die XML-Dokumentation für Experience Manager as a Cloud Service ist allgemein verfügbar. Kunden von Experience Manager as a Cloud Service können damit ein XML Documentation-Add-on erwerben, um technische Inhalte zu importieren, zu erstellen, zu verwalten und über mehrere Kanäle, einschließlich Experience Manager Sites, bereitzustellen.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -157,7 +157,7 @@ Die nächste Version wird am 12. August 2021 veröffentlicht.
 
 * Die ausgehende Austritts-IP wird jetzt in der Protokolldatei des Build-Schritts protokolliert.
 
-* Staging- und Produktionsumgebungen, die alte Versionen von AEM ausführen, melden jetzt den Status &quot;**Update verfügbar**&quot;.
+* Staging- und Produktionsumgebungen, die alte Versionen von AEM ausführen, melden jetzt den Status **Update verfügbar**.
 
 * Die maximale Anzahl unterstützter SSL-Zertifikate wurde auf 20 pro Programm erhöht.
 
@@ -181,7 +181,7 @@ Die nächste Version wird am 12. August 2021 veröffentlicht.
 
 ### Bekannte Probleme {#known-issues-cm-july}
 
-Kundschaft, die zur Verwendung der Azul-JDKs wechselt, sollte beachten, dass nicht alle vorhandenen Anwendungen ohne Fehler auf Azul-JDK kompiliert werden. Adobe empfiehlt, dass Sie vor dem Umschalten lokal testen.
+Kundschaft, die zur Verwendung der Azul-JDKs wechselt, sollte beachten, dass nicht alle vorhandenen Anwendungen ohne Fehler auf Azul-JDK kompiliert werden. Adobe empfiehlt, vor dem Wechsel lokal zu testen.
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -191,8 +191,8 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 15. Juli 202
 
 ### Neue Funktionen {#what-is-new-cam}
 
-Cloud Acceleration Manager ist eine Cloud-basierte Anwendung, die IT-Teams während des gesamten Übergangszeitraums von der Planung bis hin zur Live-Schaltung auf dem Cloud-Service begleitet. Richten Sie Ihr Team für eine erfolgreiche Migration ein, mit Best Practices, Tipps, Dokumentationen und Tools, die von der Adobe empfohlen werden und in jeder Phase des Journey helfen, als Cloud Service AEM zu werden. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=de).
+Cloud Acceleration Manager ist eine Cloud-basierte Anwendung, die IT-Teams während des gesamten Übergangszeitraums von der Planung bis hin zur Live-Schaltung auf dem Cloud-Service begleitet. Bereiten Sie Ihr Team auf eine erfolgreiche Migration vor, indem Sie von Adobe empfohlene Best Practices, Tipps, Dokumentationen und Tools bereitstellen, die Sie in jeder Phase des Cloud Service von Journey zu AEM unterstützen. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=de).
 
 >[!NOTE]
 >
-> Sehen Sie sich dieses [Cloud Acceleration Manager-Demovideo](https://video.tv.adobe.com/v/335547) an.
+> Sehen Sie sich dieses Demovideo zu [Cloud Acceleration Manager ](https://video.tv.adobe.com/v/335547).

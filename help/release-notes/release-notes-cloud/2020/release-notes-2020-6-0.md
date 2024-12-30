@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
-description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0“
+description: '[!DNL Adobe Experience Manager] as a Cloud Service-Versionshinweise für 2020.6.0.'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -50,9 +50,9 @@ Version 2.9.0 der [Kernkomponenten](https://experienceleague.adobe.com/docs/exp
 
 ## Neue Funktionen in Foundations in AEM as a Cloud Service {#foundations}
 
-AEM Projekterstellungszeiten werden verbessert, indem alle Verweise in der pom.xml des AEM Projekts auf das Remote-Repository `https://downloads.experiencecloud.adobe.com/content/maven/public` entfernt werden.
+Die Erstellungszeiten von AEM-Projekten werden verbessert, indem alle Verweise in der Datei „pom.xml“ des AEM-Projekts auf die Remote-Repository-`https://downloads.experiencecloud.adobe.com/content/maven/public` entfernt werden.
 
-Das AEM as a Cloud Service SDK-API-JAR, das zuvor an diesem Speicherort gehostet wurde, befindet sich jetzt in Maven Central, dem standardmäßigen Artefakt-Repository von Maven.
+Die AEM as a Cloud Service SDK-API-JAR-Datei, die zuvor an diesem Speicherort gehostet wurde, befindet sich jetzt in Maven Central, dem Standard-Artefakt-Repository von Maven.
 
 ## Neue Funktionen in Cloud Manager {#cloud-manager}
 
@@ -86,7 +86,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Das Erstellungsprotokoll enthält jetzt eine Liste der gefundenen Artefakte, einschließlich übersprungener Inhaltspakete.
 
-* Der Schritt Erstellen überprüft jetzt, ob alle erstellten Inhaltspakete alle obligatorischen Eigenschaften enthalten - Name, Gruppe und Version.
+* Der Build-Schritt überprüft jetzt, ob alle generierten Inhaltspakete alle obligatorischen Eigenschaften enthalten - Name, Gruppe und Version.
 
 * Der Schritt „Erstellen“ überprüft jetzt, ob der Build mindestens ein Inhaltspaket erstellt hat.
 
@@ -178,7 +178,7 @@ Die Version enthält die folgenden zusätzlichen Verbesserungen:
 * Möglichkeit zur erneuten Verarbeitung von Assets mit Asset-Verarbeitungsprofilen, sodass Benutzer die volle Kontrolle über den Prozess haben (vollständige Asset-Verarbeitung ausführen, nur ein bestimmtes Verarbeitungsprofil anwenden und entscheiden, ob der Nachbearbeitungs-Workflow ausgeführt werden soll).
 * Suchanfragen geben jetzt schneller Ergebnisse zurück, wenn die zugrunde liegende Cluster-Instanz hinter den Kulissen neu gestartet wurde (der erste Suchlauf konnte in einem solchen Fall zuvor länger dauern).
 * Sortieren Sie nach „Name“, wenn Sie Assets in der Listenansicht in der Assets-Benutzeroberfläche und in den Suchergebnissen anzeigen. Siehe [Suchen von Assets](/help/assets/search-assets.md#sort).
-* Sortieren Sie nach &quot;Erstellt&quot;(Datum), wenn Sie Assets in der Listenansicht in der Assets-Benutzeroberfläche und in den Suchergebnissen anzeigen. Siehe [Suchen von Assets](/help/assets/search-assets.md#sort).
+* Sortieren Sie bei der Anzeige von Assets in der Listenansicht auf der Assets-Benutzeroberfläche und in den Suchergebnissen nach „Erstellt“ (Datum). Siehe [Suchen von Assets](/help/assets/search-assets.md#sort).
 * Unterstützung für die Konvertierung von EPS-Dateien in Bilder mithilfe von Asset Microservices.
 
 ### Fehlerbehebungen {#assets-bug-fixes}

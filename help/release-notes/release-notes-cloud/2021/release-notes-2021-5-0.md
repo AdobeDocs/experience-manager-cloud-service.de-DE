@@ -47,7 +47,7 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* Sie können die freigegebenen Assets mithilfe der Funktion „Linkfreigabe“ herunterladen. Dieser Download verwendet jetzt einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet, selbst bei sehr großen Downloads. Siehe [Herunterladen von Assets](/help/assets/download-assets-from-aem.md#link-share-download).
+* Sie können die freigegebenen Assets mithilfe der Funktion „Linkfreigabe“ herunterladen. Dieser Download verwendet jetzt einen asynchronen Service, der schnellere und unterbrechungsfreie Downloads ermöglicht, selbst bei sehr großen Downloads. Siehe [Herunterladen von Assets](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
 
@@ -112,7 +112,7 @@ Die nächste Version ist für den 3. Juni 2021 geplant.
 
 * Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
 
-* Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält genauere Informationen zu Fehlern und Erfolgsszenarios.
+* Bereitstellungsprotokoll, das von einem Cloud Manager-Benutzer heruntergeladen wurde, ist aufschlussreicher und enthält Details zu Fehlern und Erfolgsszenarien.
 
 * Beim Pushen von Code an Adobe Git wurden treten jetzt keine Fehler mehr auf.
 
@@ -148,9 +148,9 @@ Das Content Transfer Tool 1.4.6 wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt-latest}
 
-* Dem Fehlerprotokoll des Schnellstarts wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
+* Dem Schnellstart-Fehlerprotokoll wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
 
-* Wenn ein Benutzer einen Migrationssatz aus der CTT-Benutzeroberfläche löscht, wo eine Extraktion durchgeführt wurde, wird der mit diesem Migrationssatz verknüpfte Ordner `tmp` gelöscht, um Speicherplatz zu sparen.
+* Wenn ein Benutzer einen Migrationssatz aus der CTT-Benutzeroberfläche löscht, über die eine Extraktion durchgeführt wurde, wird der mit diesem Migrationssatz verknüpfte `tmp` gelöscht, um Speicherplatz zu sparen.
 
 ### Fehlerbehebungen {#bug-fixes-ctt-latest}
 

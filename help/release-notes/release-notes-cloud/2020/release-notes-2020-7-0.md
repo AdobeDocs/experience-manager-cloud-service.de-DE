@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Version 2020.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0“
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service für 2020.7.0.
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
@@ -41,7 +41,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 * Das Veröffentlichen von Assets in [!DNL Dynamic Media] wurde vereinfacht und stabiler gestaltet, indem es zu einem integralen Bestandteil der gesamten Asset-Verarbeitungs-Pipeline unter Verwendung von Asset-Microservices wird und das Backend bei der Batch-Veröffentlichung verbessert wird.
 
-* Workflow-Schritte, die nicht mit einer Cloud Service-Bereitstellung kompatibel sind, werden jetzt im [!UICONTROL Workflow-Modell]-Editor mit einem Warnhinweis versehen. Beim Ausführen der vorhandenen Workflows in der Cloud Service-Umgebung werden die nicht kompatiblen Workflow-Schritte übersprungen.
+* Workflow-Schritte, die nicht mit einer Cloud Service-Bereitstellung kompatibel sind, werden jetzt im [!UICONTROL Workflow-Modell]-Editor mit einem Warnhinweis versehen. Außerdem werden beim Ausführen der vorhandenen Workflows in der Cloud Service-Umgebung die inkompatiblen Workflow-Schritte übersprungen.
 
 * Von Kunden erstellte Workflow-Modelle, die in `/conf/global` im Git-Projekt bereitgestellten wurden, das der Umgebung in [!DNL Cloud Manager] zugeordnet ist, werden automatisch unter `/var` bereitgestellt und sind daher in [!DNL Experience Manager] verfügbar. Die Produkt-Workflow-Modelle unter `/libs`, an denen Kunden Änderungen vorgenommen haben, werden nicht automatisch in `/var` bereitgestellt.
 
@@ -57,7 +57,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 AEM Commerce ist jetzt in Cloud Service verfügbar.
 
-Weitere Informationen finden Sie unter [Erste Schritte mit AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de) .
+Weitere [ finden Sie unter „Erste Schritte mit AEM Commerce as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de)&quot;.
 
 ## Kernkomponenten {#core-components}
 
@@ -68,7 +68,7 @@ Version 2.11.0 der [AEM-Kernkomponenten](https://experienceleague.adobe.com/doc
 * Einführung einer neuen [PDF-Viewer-Komponente](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Die Kernkomponenten unterstützen jetzt Accelerated Mobile Pages (AMP). Dies hilft, schnellere Kundenerlebnisse zu erzielen, indem Seitenübergänge sofort erfolgen, wenn die Site von einem Google Mobile-Suchergebnis aus aufgerufen wird, was zu Verbesserungen bei Anwenderinteraktionen und SEO führt.
-Weitere Informationen finden Sie unter [AMP-Unterstützung für die Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=de) .
+Siehe [AMP-Unterstützung für die Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=de) für weitere Details.
 
 * Kompatibilität mit Version 1.0.2 der [Adobe Client-Datenschicht](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=de).
 
@@ -92,7 +92,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.7.0 wurde am 9. Juli 2020 veröffen
 
   Weitere Details finden Sie unter „Pipeline-Variablen“.
 
-* Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
+* Authentifizierungsgebundene private Maven-Repositorys werden jetzt unterstützt.
 
 * Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
 Weitere Details finden Sie unter „Verwenden von Java 11-Unterstützung“.
@@ -123,7 +123,7 @@ Weitere Details finden Sie unter „Verwenden von Java 11-Unterstützung“.
 
 ### Neue Funktionen {#what-is-new-foundations}
 
-* [Protokolle können an Splunk-Konten weitergeleitet werden](/help/implementing/developing/introduction/logging.md#splunk-logs), was es Unternehmen ermöglicht, ihre Splunk-Investitionen zu nutzen.
+* [Protokolle können an Splunk-Konten weitergeleitet werden](/help/implementing/developing/introduction/logging.md#splunk-logs) wodurch Unternehmen ihre Splunk-Investition nutzen können.
 
 * [Eine statische, dedizierte Ausgangs-IP-Adresse](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) kann für ausgehenden Traffic zugewiesen werden, der in Java-Code programmiert ist, was bei einigen Integrationen nützlich sein kann.
 
@@ -139,7 +139,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Frühere Versionen des CRA konnten nicht unter Adobe Experience Manager (AEM) 6.1 ausgeführt werden. Es wurde expliziter Support hinzugefügt, um Benutzer für die Administratorgruppe zuzulassen.
 
-  Weitere Informationen finden Sie unter [Installieren von CRA auf AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) .
+  Weitere [ finden Sie unter „Installieren von CRA ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) AEM 6.1“.
 
 * Der im Zusammenfassungsbericht angezeigte Ablaufzeitstempel war nicht korrekt.
 

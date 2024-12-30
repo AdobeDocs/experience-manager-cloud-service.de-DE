@@ -40,6 +40,6 @@ Nachdem die Projekterstellung erfolgreich abgeschlossen wurde, können Sie sehen
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## Wie es weitergeht: {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie gelernt haben, wie Sie in Cloud Manager eine Umgebung für Ihr Programm einrichten, können Sie fortfahren. Der nächste Schritt im Onboarding-Prozess ist das [Ausführen der Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

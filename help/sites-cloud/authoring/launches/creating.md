@@ -8,7 +8,7 @@ role: User
 source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
 source-wordcount: '1100'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -155,10 +155,10 @@ Bei Auswahl von **Fertig** wird erneut die Leiste **Verweise** der Konsole **Sit
 
 ### Klonen eines Launches {#cloning-a-launch}
 
-Sie können einen Launch über die [Launches-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) klonen:
+Sie können einen Launch aus der [Launch-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) klonen:
 
 * Wählen Sie den Launch aus, indem Sie auf die Miniaturansicht tippen/klicken.
-* Die Symbolleiste wird angezeigt. Wählen Sie Klonen aus.
+* Die Symbolleiste wird angezeigt. Wählen Sie „Klonen“ aus.
    * Der Klon wird erstellt und in der Konsole angezeigt.
    * Der **Launch-Titel** gibt an, dass es sich um einen Klon handelt. Sie können den Titel aktualisieren, indem Sie die [Launch-Konfiguration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) (**Eigenschaften**) bearbeiten.
 

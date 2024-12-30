@@ -90,7 +90,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Neue Funktionen in [!DNL Assets] {#ga-features-assets}
 
-* Mit der Funktion zur Inhaltsautomatisierung kann [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs verwenden, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit erheblich verkürzt und Iterationen reduziert werden. Die Funktion erfordert keinen Code und funktioniert innerhalb des DAM.
+* Mit der Funktion zur Inhaltsautomatisierung können [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs verwenden, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit erheblich verkürzt und Iterationen reduziert werden. Die Funktion erfordert keinen Code und funktioniert innerhalb des DAM.
 * [!DNL Adobe Asset Link] v3.0 für [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign] und [!DNL Adobe Asset Link] v2.0 für [!DNL Adobe XD] wurde veröffentlicht. Es bietet:
 
    * Unterstützung für [!DNL Assets Essentials].
@@ -104,7 +104,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 * Die Anzeigeeinstellungen wurden verbessert, sodass Benutzer eine Standardansicht und einen standardmäßigen Sortierparameter wählen können.
 * Die Funktion für den Linkshare-Download verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen.
 * Benutzer können die Ordner anhand von Eigenschaftsprädikaten suchen und filtern.
-* [!DNL Experience Manager Assets] bettet den PDF-Viewer, der von [!DNL Adobe Document Cloud] gespeist wird, ein, um eine Vorschau der unterstützten Dokumente anzuzeigen. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
+* [!DNL Experience Manager Assets] bettet den von [!DNL Adobe Document Cloud] unterstützten PDF-Viewer ein, um eine Vorschau der unterstützten Dokumente anzuzeigen. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
 
 ### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed-assets}
 

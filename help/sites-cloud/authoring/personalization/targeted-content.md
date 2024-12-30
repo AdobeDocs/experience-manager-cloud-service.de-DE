@@ -8,7 +8,7 @@ role: User
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '5282'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -570,7 +570,7 @@ Wenn beim Laden eines Profils unerwartete Inhalte auf der Seite angezeigt werden
 
 >[!NOTE]
 >
->Wenn Sie A/B-Tests verwenden, werden Erlebnisse bei der Simulation basierend auf dem Traffic-Prozentsatz angezeigt. Dies wird von Adobe Target kontrolliert, was zu unerwarteten Ergebnissen für Autorinnen und Autoren führen kann. (Die Autorenaktivität wird mit bestimmten Einstellungen synchronisiert, die eine Neubewertung während der Simulation ermöglichen.) Autorinnen und Autoren müssen die Seite möglicherweise aktualisieren, um die anderen Erlebnisse basierend auf ihren Traffic-Einstellungen anzuzeigen.
+>Wenn Sie A/B-Tests verwenden, werden Erlebnisse bei der Simulation basierend auf dem Traffic-Prozentsatz angezeigt. Dies wird von Adobe Target kontrolliert, was zu unerwarteten Ergebnissen für Autorinnen und Autoren führen kann. (Die _author-Aktivität wird mit bestimmten Einstellungen synchronisiert, die eine Neubewertung während der Simulation ermöglichen.) Autoren müssen möglicherweise aktualisieren, um die anderen Erlebnisse basierend auf ihren Traffic-Einstellungen anzuzeigen.
 
 Verwenden Sie die folgenden Tools, um das Besuchererlebnis zu simulieren:
 

@@ -43,7 +43,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2023“ an, das eine Zusa
 
 ### Neue Funktionen {#assets-features}
 
-**AEM Assets-Add-on für Adobe Expreß**: Experience Manager Assets bietet jetzt ein Add-on für Adobe Expreß an. Mit dem Add-on können Sie über die Adobe Express-Benutzeroberfläche direkt auf die in Experience Manager Assets gespeicherten Assets zugreifen. Sie können in AEM Assets verwaltete Inhalte auf der Express-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern. Das Add-on bietet die folgenden Hauptvorteile:
+**AEM Assets-Add-on für Adobe Express**: Experience Manager Assets bietet jetzt ein Add-on für Adobe Express. Mit dem Add-on können Sie über die Adobe Express-Benutzeroberfläche direkt auf die in Experience Manager Assets gespeicherten Assets zugreifen. Sie können in AEM Assets verwaltete Inhalte auf der Express-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern. Das Add-on bietet die folgenden Hauptvorteile:
 
 * Verbesserte Wiederverwendung von Inhalten durch Bearbeiten und Speichern neuer Assets in AEM
 

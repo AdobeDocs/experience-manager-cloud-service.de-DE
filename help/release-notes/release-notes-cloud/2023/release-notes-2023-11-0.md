@@ -27,7 +27,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) war der Freitag, 30. November 2023. Die nächste Version (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) ist der Freitag, 30. November 2023. Die nächste Version (2023.12.0) ist für den Freitag, 14. Dezember 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -35,7 +35,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht von November 2023 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2023.11.0 hinzugefügt wurden:
+Sehen Sie sich das Video Versionsübersicht November 2023 an, das eine Zusammenfassung der Funktionen bietet, die der Version 2023.11.0 hinzugefügt wurden:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
@@ -43,17 +43,17 @@ Sehen Sie sich das Video Versionsübersicht von November 2023 an, um eine Zusamm
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
-**[Strings in Inhaltsfragmenten suchen und ersetzen](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: Die Inhaltsfragmentkonsole bietet Benutzern eine einfache und intuitive Möglichkeit, eine Zeichenfolge, die in mehreren Inhaltsfragmenten gleichzeitig angezeigt wird, zu ersetzen, um die Content Velocity zu beschleunigen.
+**[Zeichenfolgen in Inhaltsfragmenten suchen und ersetzen](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: Die Inhaltsfragmentkonsole bietet Benutzenden eine einfache und intuitive Möglichkeit, eine Zeichenfolge in mehreren Inhaltsfragmenten gleichzeitig zu ersetzen, um die Geschwindigkeit der Inhaltsbearbeitung zu erhöhen.
 
 ![Suchen und Ersetzen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
-Möchten Sie die Funktion ausprobieren und Feedback geben? Senden Sie eine E-Mail von Ihrer offiziellen E-Mail-ID an **aemcs-headless-adopter@adobe.com** , um mehr über das Programm für frühe Anwender zu erfahren.
+Möchten Sie die Funktion ausprobieren und Feedback geben? Senden Sie von Ihrer offiziellen E-Mail-ID aus eine E-**an** aemcs-headless-adopter@adobe.com, um mehr über das Early-Adopter-Programm zu erfahren.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-features}
 
-* **Eingebetteter Adobe Expreß-Editor in AEM Assets**: Benutzer mit Zugriff auf Express verfügen jetzt über integrierte Bildbearbeitungs- und -erstellungs-Tools von Adobe Express und Adobe Firefly, die direkt in AEM Assets verfügbar sind, um die Wiederverwendung von Inhalten zu verbessern und die Geschwindigkeit der Inhaltswiedergabe zu beschleunigen.
+* **Eingebetteter Adobe Expreß-Editor in AEM Assets**: Benutzende mit Zugriff auf Express verfügen jetzt über integrierte Bildbearbeitungs- und Erstellungs-Tools von Adobe Expreß und Adobe Firefly, die direkt in AEM Assets verfügbar sind, um die Wiederverwendung von Inhalten zu verbessern und die Geschwindigkeit der Inhaltserstellung zu beschleunigen.
 
   ![Zuweisen eines Metadatenformulars zu einem Ordner](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -66,17 +66,17 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Senden Sie eine E-Mai
 -->
 
 
-* **Speicherverwendungsberichte in Insights**: Administratoren können jetzt die Speicherverwendungsberichte anzeigen, die als Teil von Insights verfügbar sind.
+* **Berichte zur Speichernutzung in Insights**: Administratoren haben jetzt die Möglichkeit, die Berichte zur Speichernutzung als Teil von Insights anzuzeigen.
 
   ![Erkenntnisse zur Speichernutzung](/help/assets/assets/storage-usage-insights.png)
 
-* **Erste Startseitenkonfiguration durchsuchen**: Mit Experience Manager Assets können Sie jetzt das Starterlebnis für Ihr Unternehmen konfigurieren. Wenn Sie die Startseite als erste Suche festlegen, können Sie die Ausrichtung des Suchbalkens, das Hintergrundbild und das Logo Ihres Unternehmens konfigurieren.
+* **Konfiguration der ersten Homepage durchsuchen**: Mit Experience Manager Assets können Sie jetzt das Homepage-Erlebnis für Ihr Unternehmen konfigurieren. Wenn Sie die Startseite als erste Suche festlegen, können Sie die Ausrichtung des Suchbalkens, das Hintergrundbild und das Logo Ihres Unternehmens konfigurieren.
 
   ![Erste Konfiguration durchsuchen](/help/assets/assets/search-first-configuration.png)
 
-### Neue Funktionen in der Vorabversion für die Admin-Ansicht {#admin-view-features-prerelease}
+### Neue Funktionen in der Vorabversion für die Administratoransicht {#admin-view-features-prerelease}
 
-**Videovorschau**: AEM Assets generiert jetzt standardmäßig Vorschaudarstellungen aller unterstützten Videoformate, ohne dass ein Verarbeitungsprofil konfiguriert werden muss.
+**Videovorschau**: AEM Assets generiert jetzt standardmäßig Vorschauausgabedarstellungen aller unterstützten Videoformate, ohne dass ein Verarbeitungsprofil konfiguriert werden muss.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -86,15 +86,15 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Senden Sie eine E-Mai
 
 * **[Komponente „Geschäftsbedingungen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Formularautorinnen und -autoren, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzenden die Nutzungsbedingungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente hat das Ziel, Benutzende über die Regeln, Vorschriften und Verpflichtungen zu informieren, denen sie zustimmen, wenn sie das Formular übermitteln.
 
-  ![Kontrollkästchen, Geschäftsbedingungen und vertikale Registerkarten-Komponenten](/help/forms/assets/forms-components.png)
+  ![Kontrollkästchen, Nutzungsbedingungen und vertikale Registerkartenkomponenten](/help/forms/assets/forms-components.png)
 
 * **[Komponente „Vertikale Registerkarten“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt Formularinhalte in einer vertikalen Liste von Registerkarten organisieren und so ein strukturiertes und navigierbares Layout bieten. Die Verwendung von vertikalen Registerkarten in einem Formular kann das gesamte Benutzererlebnis verbessern, indem die Navigation vereinfacht und die Organisation des Formularinhalts verbessert wird, insbesondere in Situationen, in denen ein Formular mehrere Abschnitte oder komplexe Informationen enthält.
 
 
 
-### Neue Funktionen in der Vorabversion von [!DNL Forms] {#prerelease-features-forms}
+### Neue Funktionen in [!DNL Forms] Vorabversion {#prerelease-features-forms}
 
-* **[Verbinden eines adaptiven Forms mit Microsoft® SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms bietet eine OOTB-Integration, um Formulardaten direkt an die SharePoint-Liste zu senden, sodass Sie die Funktionen von SharePoints Listen nutzen können. Sie können die Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion &quot;**Senden mit Formulardatenmodell**&quot;verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+* **[Verbinden eines adaptiven Forms mit der Microsoft® SharePoint-Liste](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms bietet eine vorkonfigurierte Integration zum direkten Senden von Formulardaten an die SharePoint-Liste, sodass Sie die Funktionen von SharePoint-Listen nutzen können. Sie können die Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion **Senden mit Formulardatenmodell** verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
 
 <!-- 
 
@@ -106,7 +106,7 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Senden Sie eine E-Mai
 
 * **Senden eines adaptiven Formulars an das Adobe Workfront Fusion-Szenario**: Forms as a Cloud Service bietet vordefinierte Optionen, um ein adaptives Formular einfach mit Adobe Workfront zu verbinden. Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, indem Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario auslösen können.
 
-* **Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese unterschiedlichen Zielgruppen zu bedienen und RTL-Märkte zu erschließen. In bestimmten Regionen ist es außerdem gesetzlich vorgeschrieben, Formulare in der jeweiligen Regionalsprache bereitzustellen. Durch die Anpassung an lokale Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
+* **Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt in einer RTL-Sprache (Right-to-Left) wie Arabisch, Persisch und Urdu angezeigt werden. RTL-Sprachen werden von über 2 Milliarden Menschen weltweit gesprochen. Durch die Verwendung eines Formulars in RTL-Sprache können Sie die Reichweite Ihrer adaptiven Formulare erweitern, um diese verschiedenen Zielgruppen anzusprechen und RTL-Märkte zu erschließen. In bestimmten Regionen ist es außerdem gesetzlich vorgeschrieben, Formulare in der jeweiligen Regionalsprache bereitzustellen. Durch die Anpassung an lokale Sprachen öffnen Sie nicht nur den Zugang zu einem breiteren Publikum, sondern sorgen auch für die Einhaltung der einschlägigen Gesetze und Vorschriften.
 
   ![Unterstützung von Sprachen mit Rechts-nach-links-Schreibrichtung](/help/forms/assets/right-to-left-language-support.png)
 
@@ -118,24 +118,24 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Senden Sie eine E-Mai
 
 ### WAF-Traffic-Filterregeln können jetzt lizenziert werden {#cdn-waf-license}
 
-Im Oktober wurden Traffic-Filter-Regeln veröffentlicht und es wurde ein Hinweis hinzugefügt, dass die spezielle Kategorie der Web Application Firewall (WAF)-Regeln später in diesem Jahr verfügbar sein würde, um die Regeln zu ergänzen, die bereits für Sites- und Forms-Kunden verfügbar sind. Als Update kann das WAF-DDoS-Schutzangebot jetzt lizenziert werden.
+Traffic-Filterregeln wurden im Oktober veröffentlicht und enthielten den Hinweis, dass die speziellen Regeln der Web Application Firewall (WAF) noch in diesem Jahr verfügbar sein würden, um die Regeln zu ergänzen, die bereits für Sites- und Forms-Kunden verfügbar sind. Als Update kann das WAF-DDoS-Schutzangebot jetzt lizenziert werden.
 
-Nach der Lizenzierung können diese erweiterten WAF-Regeln mithilfe der Cloud Manager Configuration Pipeline im CDN bereitgestellt werden, um eine zusätzliche Schutzebene gegen Web-Angriffe hinzuzufügen.
+Nach der Lizenzierung können diese erweiterten WAF-Regeln mithilfe der Cloud Manager-Konfigurations-Pipeline im CDN bereitgestellt werden, um eine zusätzliche Ebene zum Schutz vor Web-Angriffen hinzuzufügen.
 
-Lesen Sie mehr über [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), einschließlich WAF. Sprechen Sie mit Ihrem AEM-Account-Team über die Lizenzierung von WAF-DDoS-Schutz oder Enhanced Security.
+Erfahren Sie mehr [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) einschließlich WAF. Wenden Sie sich an Ihr AEM-Account-Team, um Informationen zur Lizenzierung von WAF-DDoS Protection bzw. Enhanced Security zu erhalten.
 
 ### Early-Adopter-Programm für die CDN-Konfiguration {#cdn-config-early-adopter}
 
-Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln (einschließlich WAF)](/help/security/traffic-filter-rules-including-waf.md) gibt es eine Möglichkeit, die Konfigurations-Pipeline zu verwenden, um andere Typen der CDN-Konfiguration zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
+Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln (einschließlich WAF)](/help/security/traffic-filter-rules-including-waf.md) gibt es eine Möglichkeit, die Konfigurations-Pipeline zu verwenden, um andere Arten von CDN-Konfigurationen zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
 * 301/302 Client-seitige Umleitungen
 * Weiterleitungs-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen
 * Festlegen oder Ändern von Anfragen- oder Antwortkopfzeilen
 * benutzerdefinierte Fehlerseiten, wenn das CDN AEM nicht erreichen kann
-* Authentifizierung durch Benutzername/Kennwort
+* Authentifizierung mit Benutzername/Kennwort
 * alle anderen nützlichen CDN-Konfigurationen
 
-Senden Sie eine E-Mail mit Ihrem Feedback von Ihrer offiziellen E-Mail-ID an **aemcs-cdn-config-adopter@adobe.com**.
+Senden Sie von Ihrer offiziellen E-Mail-ID mit **Feedback eine E-Mail an** aemcs-cdn-config-adopter@adobe.com.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -147,6 +147,6 @@ Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/h
 
 ## Bekannte Probleme {#known-issues}
 
-* Adaptive Forms kann nicht basierend auf Kernkomponenten gesendet werden. Das Problem tritt bei Adaptive Forms auf, die mit den Kernkomponenten-Versionen 2.0.38 - 2.0.60 erstellt wurde.
+* Adaptive Forms kann nicht basierend auf Kernkomponenten gesendet werden. Das Problem tritt bei adaptiven Forms auf, die mit den Kernkomponenten der Versionen 2.0.38 bis 2.0.60 erstellt wurden.
 
-  Um das Problem zu beheben. Sie können zu Kernkomponenten des adaptiven Formulars Version 2.0.62 oder höher wechseln. Um eine Version der adaptiven Forms-Kernkomponenten für Ihre Umgebung festzulegen, legen Sie die Versionen der Kernkomponenten &quot;core.forms.components.version&quot;, &quot;core.forms.components.af.version&quot;und &quot;core.wcm.components.version&quot;](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) -Abhängigkeiten im as a Cloud Service Forms-Repository oder AEM Archetyp-basierten Projekt fest und stellen Sie die Änderungen in Ihrer Forms-as a Cloud Service Umgebung bereit](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). [[ Die neueste Version der Abhängigkeiten von adaptiven Forms-Kernkomponenten finden Sie unter [Git-Repository für adaptive Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Um das Problem zu beheben. Sie können zu Kernkomponenten für adaptive Formulare Version 2.0.62 oder höher wechseln. Um eine Version der Kernkomponenten von Adaptive Forms für Ihre Umgebung festzulegen, [legen Sie Versionen der Kernkomponenten „core.forms.components.version“, &quot;core.forms.components.af.version“ und „core.wcm.components.version“ ](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) Abhängigkeiten in Ihrem auf dem Forms as a Cloud Service-Repository oder AEM-Archetyp basierenden Projekt fest und [stellen Sie die Änderungen in Ihrer Forms as a Cloud Service-Umgebung bereit](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Die neueste Version der Abhängigkeiten von adaptiven Forms-Kernkomponenten finden Sie im [Git-Repository für adaptive Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components#system-requirements).

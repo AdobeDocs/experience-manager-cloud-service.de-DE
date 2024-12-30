@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) war der Freitag, 28. September 2023. Die nächste Version (2023.10.0) ist für den Freitag, 26. Oktober 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) ist der Freitag, 28. September 2023. Die nächste Version mit neuen Funktionen (2023.10.0) ist für den Freitag, 26. Oktober 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -36,13 +36,13 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom September 2023 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2023.9.0 hinzugefügt wurden:
+Eine Zusammenfassung der in der Version 2023.9.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version von September 2023:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## AEM Edge Delivery Services {#edge-delivery}
+## AEM-Edge Delivery Services {#edge-delivery}
 
-Edge Delivery ist ein neuer Satz von zusammenstellbaren Services, die darauf ausgerichtet sind, die Wirkung von Inhalten zu maximieren, um messbare Geschäftsergebnisse zum Zeitpunkt der Kundeninteraktion zu erzielen.
+Edge Delivery ist ein neues Paket zusammenstellbarer Services, die darauf ausgerichtet sind, die Wirkung von Inhalten zu maximieren, um messbare Geschäftsergebnisse am Punkt der Kundeninteraktion zu erzielen.
 
 Weitere Informationen zu Edge Delivery Services finden Sie im Artikel [hier](/help/edge/overview.md).
 
@@ -52,15 +52,15 @@ Weitere Informationen zu Edge Delivery Services finden Sie im Artikel [hier](/he
 
 **Metadatenformular einem Ordner zuweisen**
 
-Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereitstellung zuweisen. Alle Assets im Ordner, einschließlich Assets in den Unterordnern, zeigen dann die im zugewiesenen Metadatenformular definierten Eigenschaften an.
+Sie können jetzt einem bestimmten Ordner in Ihrer -Bereitstellung Metadatenformulare zuweisen. Alle Assets im Ordner, einschließlich Assets in den Unterordnern, zeigen dann die im zugewiesenen Metadatenformular definierten Eigenschaften an.
 
 ![Metadatenformular einem Ordner zuweisen](/help/release-notes/assets/assign-to-folder.png)
 
 ### Neue Funktionen in der Admin-Ansicht {#admin-view-features}
 
-* **Integrieren von AEM Assets as a Cloud Service in Document-basiertes Authoring für Edge Delivery Services**: Integrieren Sie AEM Assets in Document-basiertes Authoring für Edge Delivery Services, damit Website-Autoren die in AEM Assets-Repositorys verfügbaren Bilder verwenden können, während sie Dokumente in Microsoft Word oder Google Docs erstellen.](/help/edge/using.md#integrate-assets-edge)[
+* **Integrieren von AEM Assets as a Cloud Service mit der dokumentbasierten Inhaltserstellung für Edge Delivery Services**: Integrieren Sie AEM Assets mit der dokumentbasierten Inhaltserstellung für Edge Delivery Services, damit Website-Autoren ([ in AEM Assets-Repositorys verfügbare Bilder beim Erstellen von Dokumenten in Microsoft Word oder Google Docs) ](/help/edge/using.md#integrate-assets-edge) können.
 
-* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die in Experience Manager verwaltet werden, und [die Dateien direkt in Experience Manager zu extrahieren](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
+* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die im Experience Manager verwaltet werden, und [die Dateien direkt in den Experience Manager zu ](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
 
   ![Anheften von Elementen für Gruppen](/help/release-notes/assets/extract-archive.png)
 
@@ -97,7 +97,7 @@ Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereits
 
 * **[Fehlerhandhabung mit benutzerdefinierten Fehler-Handlern im Regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: Sie können nun eine benutzerdefinierte Funktion aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzerinnen und -benutzer bereitstellen. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehler-Codes aufrufen oder die Kundin bzw. den Kunden darüber informieren, dass der Dienst nicht verfügbar ist.
 
-* **[64-Bit-Version von AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfsfähigkeiten und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
+* **[64-Bit-Version von AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Formularerstellung zu verbessern. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfsfähigkeiten und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
 
 ### Early-Adopter-Programm {#forms-early-adopter}
 
@@ -105,7 +105,7 @@ Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereits
 
   Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
-* **[Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de)**: Verwenden Sie Headless Adaptive Forms, um Ihren Entwicklern das Erstellen, Veröffentlichen und Verwalten interaktiver Formulare zu ermöglichen, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
+* **[Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de)**: Verwenden Sie Headless Adaptive Forms, um Entwicklerinnen und Entwicklern die Erstellung, Veröffentlichung und Verwaltung interaktiver Formulare zu ermöglichen, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
 
    * Erstellen hochwertiger Mehrkanal-Formulare in der gewünschten Programmiersprache
    * Native Integration von Formularen in Ihre Desktop- und Mobile Apps, Websites und Chat-Anwendungen
@@ -118,9 +118,9 @@ Sie können jetzt ein Metadatenformular einem bestimmten Ordner in Ihrer Bereits
 
 ### Neues CDN-Caching-Verhalten für kampagnenbezogene URL-Parameter {#cache-url-params}
 
-Bei neuen Umgebungen entfernt das CDN standardmäßig Marketing-bezogene Abfrageparameter, um die Leistung von Marketing-Kampagnen und die Cache-Trefferquoten zu erhöhen. Bestehende Umgebungen sind nicht betroffen. [Weitere Informationen](/help/implementing/dispatcher/caching.md#marketing-parameters)
+In neuen Umgebungen entfernt das CDN standardmäßig Marketing-bezogene Abfrageparameter, um die Leistung der Marketing-Kampagne und die Cache-Trefferraten zu erhöhen. Bestehende Umgebungen sind davon nicht betroffen. [Weitere Informationen](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
-### Regeln für Traffic-Filter (einschließlich WAF-Regeln) für frühe Anwender {#waf-early-adopter}
+### Early-Adopter-Programm für Traffic-Filterregeln (einschließlich WAF-Regeln) {#waf-early-adopter}
 
 Filtern Sie den Traffic im CDN anhand von:
 

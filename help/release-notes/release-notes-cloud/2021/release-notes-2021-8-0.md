@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 58%
+ht-degree: 62%
 
 ---
 
@@ -17,7 +17,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 >[!NOTE]
 >
->Von hier aus können Sie zu den Versionshinweisen früherer Versionen navigieren. Zum Beispiel für die Jahre 2020 und 2021.
+>Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. Zum Beispiel für die Jahre 2020 und 2021.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
   ![Option „URL kopieren“ beim Freigeben eines Assets als Link](/help/assets/assets/link-share-copy-URL-option.png)
   *Abbildung: Beim Freigeben eines Assets als Link können Sie jetzt die URL kopieren, um sie separat freizugeben.*
 
-* Wenn Sie TXT-Dateien hochladen, generieren die Asset-Microservices automatisch eine Miniaturansicht. Die PNG-Miniaturansicht ist ein Ausgabeformat einer TXT-Datei, mit der Benutzer den Inhalt oder die Dateien bis zu einem gewissen Grad identifizieren können, ohne die Dateien zu öffnen. Diese Funktion erfordert keine Konfiguration und funktioniert standardmäßig.
+* Beim Hochladen von TXT-Dateien generieren die Asset-Microservices automatisch eine Miniaturansicht. Die PNG-Miniaturansicht ist eine Ausgabedarstellung einer TXT-Datei, die Benutzern das Identifizieren von Inhalten oder Dateien erleichtert, ohne die Dateien zu öffnen. Diese Funktion erfordert keine Konfiguration und funktioniert standardmäßig.
 
   ![Eine Ausgabedarstellung einer TXT-Datei wird von [!DNL Assets] automatisch im PNG-Format erzeugt](/help/assets/assets/thumbnail-rendition-txt-file.png)
   *Abbildung: Es wird automatisch eine Ausgabedarstellung einer TXT-Datei erzeugt, damit Sie die Datei identifizieren können, ohne sie zu öffnen.*
@@ -55,8 +55,8 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 ### Fehlerbehebungen in [!DNL Assets] {#assets-bugs-fixed}
 
-* Wenn ein Mitglied der Gruppe &quot;Mitarbeiter&quot;zur Konsole &quot;[!DNL Assets]&quot;navigiert, wird eine zusätzliche `POST` -Anfrage generiert, um eine Sammlung zu erstellen. Diese Anfrage ist nicht erforderlich. Sie schlägt aufgrund von Berechtigungsproblemen fehl und führt zu vielen Fehlern in den Protokollen. (CQ-4328856)
-* Wenn Benutzer ein Asset anzeigen und die [!UICONTROL Timeline] aus dem Popup-Menü im linken Bereich auswählen, wird ein Fehler angezeigt. In den Protokollen wurden viele Warnungen aufgrund einer fehlerhaften Abfrage protokolliert. (CQ-4328919)
+* Wenn ein Mitglied der Beitragendengruppe zur [!DNL Assets] Console navigiert, wird eine zusätzliche `POST` generiert, um eine Sammlung zu erstellen. Diese Anfrage ist nicht erforderlich, schlägt aufgrund von Berechtigungsproblemen fehl und verursacht viele Fehler in den Protokollen. (CQ-4328856)
+* Wenn Benutzende ein Asset anzeigen und die [!UICONTROL Zeitleiste] im Popup-Menü im linken Bereich auswählen, wird ein Fehler angezeigt. In den Protokollen wurden viele Warnungen aufgrund einer fehlerhaften Abfrage protokolliert. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -66,15 +66,15 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 * **AcroForm-basiertes Datensatzdokument**: AEM Forms as a Cloud Service unterstützt neben XFA-basierten Formularvorlagen die Verwendung von [Adobe Acrobat Form PDF (AcroForm PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) als Vorlage für Datensatzdokumente (DoR, Documents of Record).
 
-* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) verbinden. Dadurch können Sie adaptive Formulardaten abrufen und in Microsoft® Azure Storage as a BLOB speichern.
+* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
-* **Verwenden Sie Adobe Sign-Rollen in einem adaptiven Formular** - Adobe Sign für Unternehmens- und Unternehmensdienstebenen kann optional die Rollen für Vertragsempfänger über den Unterzeichner hinaus erweitern, um deren Workflow-Anforderungen besser zu erfüllen. Sie können jetzt jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular zu konfigurieren, wobei der Unterzeichner die Standardrolle ist.
+* **Verwenden von Adobe Sign-Rollen in einem adaptiven Formular** - Adobe Sign für Business- und Enterprise Service-Levels kann optional die Rollen für Empfangende von Vereinbarungen über die unterschreibende Person hinaus erweitern, um deren Workflow-Anforderungen besser zu erfüllen. Sie können jetzt jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular zu konfigurieren, wobei „Unterschreibende Person“ die Standardrolle ist.
 
-* **Analytics für adaptive Forms** - Sie können jetzt das Endbenutzerverhalten über Adobe Analytics für adaptive Forms erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Es hilft, informierte, datenbasierte Entscheidungen zu treffen, um das Endbenutzererlebnis zu verbessern.
+* **Analytics für Adaptive Forms** - Sie können jetzt das Endbenutzerverhalten über Adobe Analytics für Adaptive Forms erfassen und verfolgen, um Erkenntnisse über Endbenutzern zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Endbenutzererlebnis zu verbessern.
 
-* **Einfaches Verbinden von AEM Forms mit Microsoft® Dynamics und Salesforce.com** - Der Dienst stellt vordefinierte Datenquellenkonfigurationen und Datenmodelle für Microsoft® Dynamics und Salesforce.com bereit. Dies erleichtert Entwicklern die Konfiguration von Microsoft® Dynamics und Salesforce.com als Datenquellen für adaptive Formulare.
+* **Einfaches Verbinden von AEM Forms mit Microsoft® Dynamics und Salesforce.com** - Der Service stellt vorkonfigurierte Datenquellenkonfigurationen und Datenmodelle für Microsoft® Dynamics und Salesforce.com bereit. Dadurch können Entwickler Microsoft® Dynamics und Salesforce.com schneller und einfacher als Datenquellen für adaptive Formulare konfigurieren.
 
 ## CIF-Add-on {#cloud-services-cif}
 
@@ -97,18 +97,18 @@ Die nächste Version wird am 9. September 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-aug}
 
-* Cloud Service-Kunden können jetzt Berichte zum Service Level Agreement (SLA) in Cloud Manager anzeigen. Dies wird in den nächsten Monaten schrittweise bereitgestellt.
+* Cloud Service-Kunden können jetzt Berichte zum Service Level Agreement (SLA) in Cloud Manager anzeigen. Dies wird in den nächsten Monaten schrittweise zur Verfügung gestellt.
 Siehe [SLA-Berichte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html).
 
-* Typ und Schweregrad des IndexType und der `IndexDamAssetLucene`-Qualitätsregeln haben sich geändert. Dies sind nun beide Fehler der Blocker *Schweregrad*.
+* Typ und Schweregrad des IndexType und der `IndexDamAssetLucene`-Qualitätsregeln haben sich geändert. Dies sind nun beide Bugs of Blocker *Schweregrad*.
 
 * Neue Qualitätsregeln für Oak-Indizes wurden eingeführt, um asynchrone und Tika-Konfigurationen abzudecken.
 
 * Die maximale Anzahl von SSL-Zertifikaten pro Programm wurde auf 50 erhöht.
 
-* Self-Service-Funktion, mit der Benutzer über die Cloud Manager-Benutzeroberfläche mehrere Repositorys erstellen und verwalten können.
+* Eine Self-Service-Funktion, die es Benutzenden ermöglicht, über die Cloud-Manager-Benutzeroberfläche mehrere Repositorys zu erstellen und zu verwalten.
 
-* SonarQube hat unnötigerweise Git-Verlaufsdaten gelesen. Auf großen Code-Basen konnte dies zu einer unnötigen Build-Leistungsbeeinträchtigung führen.
+* SonarQube las unnötigerweise Git-Verlaufsdaten. Auf großen Code-Basen konnte dies zu einer unnötigen Build-Leistungsbeeinträchtigung führen.
 
 * Es ist jetzt eine API verfügbar, um den Maven-Abhängigkeits-Cache pro Pipeline zu invalidieren.
 
@@ -116,11 +116,11 @@ Siehe [SLA-Berichte](https://experienceleague.adobe.com/docs/experience-manager-
 
 ### Fehlerbehebungen {#bug-fixes-aug}
 
-* Update Verfügbar sollte nicht angezeigt werden, wenn die neueste Version kleiner als die aktuelle Version ist.
+* Der Status Update verfügbar wird nicht mehr angezeigt, wenn die neueste Version kleiner als die aktuelle Version ist.
 
 * Das anfängliche Onboarding schlägt bei neuen Organisationen mit langen Namen nicht mehr fehl.
 
-* Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, schlägt dies bei einer der Ausführungen mit dem Fehler *`cannot update pipeline execution status`* fehl.
+* Wenn eine Pipeline aus irgendeinem Grund zweimal ausgelöst wird, schlägt eine der Ausführungen gelegentlich mit einem Fehler *`cannot update pipeline execution status`* fehl.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -130,7 +130,7 @@ Die Version 1.5.6 von Content Transfer Tool wurde am 11. August 2021 veröffent
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
-* Manchmal wurden nicht alle Benutzer in die Zielinstanz migriert. Um diese Korrektur zu erhalten, ist die CTT-Version 1.5.6 zusammen mit aem-ethos-tools 1.2.354 oder einer höheren Version auf der AEM as a Cloud Service-Zielinstanz erforderlich.
+* Manchmal wurden nicht alle Benutzer zur Zielinstanz migriert. Um diese Fehlerbehebung vorzunehmen, ist CTT v1.5.6 zusammen mit aem-ethos-tools 1.2.354 oder einer neueren Version auf der AEM as a Cloud Service-Zielinstanz erforderlich.
 
 * Die Schaltfläche **Aufnahme stoppen** wird jetzt während der Aufnahme in die Veröffentlichungsinstanz nicht mehr deaktiviert. Dies war nicht erforderlich, da es während der Aufnahme der Veröffentlichung keinen Schritt „mongo restore“ gibt.
 
