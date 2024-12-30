@@ -1,6 +1,6 @@
 ---
-title: In diesem Artikel werden verschiedene Anwendungsfälle für eine benutzerdefinierte Funktion in einem adaptiven Formular basierend auf Kernkomponenten beschrieben.
-description: In diesem Artikel werden verschiedene Anwendungsfälle für eine benutzerdefinierte Funktion in einem adaptiven Formular basierend auf Kernkomponenten beschrieben. Benutzerdefinierte Funktionen werden im Regeleditor verwendet, um benutzerdefinierte Regeln für das Formular zu erstellen.
+title: In diesem Artikel werden verschiedene Anwendungsfälle für eine benutzerdefinierte Funktion in einem adaptiven Formular beschrieben, die auf Kernkomponenten basiert.
+description: In diesem Artikel werden verschiedene Anwendungsfälle für eine benutzerdefinierte Funktion in einem adaptiven Formular beschrieben, die auf Kernkomponenten basiert. Benutzerdefinierte Funktionen werden im Regeleditor verwendet, um benutzerdefinierte Regeln für das Formular zu erstellen.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
@@ -8,18 +8,18 @@ exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
 source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
 source-wordcount: '2134'
-ht-degree: 0%
+ht-degree: 34%
 
 ---
 
 # Beispiele für die Entwicklung und Verwendung benutzerdefinierter Funktionen
 
-Der Artikel enthält detaillierte Beispiele für benutzerdefinierte Funktionen für ein adaptives Formular, die auf Kernkomponenten basieren, und bietet wertvolle Einblicke in deren effektive Implementierung in verschiedenen Szenarien. Benutzerdefinierte Funktionen werden im Regeleditor eines AEM Forms verwendet, sodass Entwickler die Logik definieren und steuern können, die das Formularverhalten steuert.
-In diesem Artikel werden verschiedene Implementierungen benutzerdefinierter Funktionen untersucht und gezeigt, wie sie verwendet werden können, um Formulare an bestimmte Anforderungen anzupassen und die Funktionalität insgesamt zu verbessern.
+Der Artikel enthält die detaillierten Beispiele für benutzerdefinierte Funktionen für ein adaptives Formular, das auf Kernkomponenten basiert, und bietet wertvolle Einblicke in ihre effektive Implementierung in verschiedenen Szenarien. Benutzerdefinierte Funktionen werden im Regeleditor einer AEM Forms verwendet und ermöglichen es Entwickelnden, die Logik zu definieren und zu steuern, die das Formularverhalten steuert.
+In diesem Artikel werden verschiedene Implementierungen benutzerdefinierter Funktionen untersucht und gezeigt, wie sie verwendet werden können, um Formulare an spezifische Anforderungen anzupassen und die allgemeine Funktionalität zu verbessern.
 
 ## Füllen der Dropdown-Listenoptionen mit benutzerdefinierten Funktionen
 
-Der Regeleditor in Kernkomponenten unterstützt die Eigenschaft **Optionen festlegen** nicht zum dynamischen Füllen von Dropdown-Listenoptionen zur Laufzeit. Sie können jedoch Dropdown-Listenoptionen mit benutzerdefinierten Funktionen ausfüllen, mit denen Sie Optionen basierend auf einer bestimmten Logik abrufen können. Benutzerdefinierte Funktionen bieten mehr Flexibilität und Kontrolle darüber, wie und wann die Dropdown-Optionen aufgefüllt werden, wodurch das Benutzererlebnis verbessert wird.
+Der Regeleditor in den Kernkomponenten unterstützt die Eigenschaft **Optionen festlegen** nicht, um Dropdown-Listenoptionen zur Laufzeit dynamisch zu füllen. Sie können jedoch Dropdown-Listenoptionen mit benutzerdefinierten Funktionen füllen, mit denen Sie Optionen basierend auf einer bestimmten Logik abrufen können. Benutzerdefinierte Funktionen bieten mehr Flexibilität und Kontrolle darüber, wie und wann die Dropdown-Optionen ausgefüllt werden, und verbessern das Benutzererlebnis.
 
 Um die Dropdown-Listenoptionen mit einer benutzerdefinierten Funktion zu füllen, fügen Sie den folgenden Code hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben:
 
@@ -42,19 +42,19 @@ Um die Dropdown-Listenoptionen mit einer benutzerdefinierten Funktion zu füllen
     }
 ```
 
-Im obigen Code wird `setEnums` verwendet, um die Eigenschaft `enum` festzulegen, und `setEnumNames` wird verwendet, um die Eigenschaft `enumNames` der Dropdown-Liste festzulegen.
+Im obigen Code wird `setEnums` verwendet, um die `enum`-Eigenschaft festzulegen, und `setEnumNames` wird verwendet, um die `enumNames`-Eigenschaft von Dropdown festzulegen.
 
-Erstellen wir eine Regel für die Schaltfläche `Next`, die den Wert der Dropdown-Listenoption festlegt, wenn der Benutzer auf die Schaltfläche `Next` klickt:
+Erstellen wir eine Regel für die Schaltfläche `Next` , die den Wert der Dropdown-Listenoption festlegt, wenn der Benutzer auf die Schaltfläche `Next` klickt:
 
-![Optionen für Dropdown-Listen](/help/forms/assets/drop-down-list-options.png)
+![Dropdown-Listenoptionen](/help/forms/assets/drop-down-list-options.png)
 
-In der folgenden Abbildung sehen Sie, wo die Optionen der Dropdown-Liste beim Klicken auf die Schaltfläche Anzeigen eingestellt sind:
+Anhand der unten stehenden Abbildung können Sie sehen, wo die Optionen der Dropdown-Liste eingestellt sind, wenn Sie auf die Schaltfläche Anzeigen klicken:
 
 ![Dropdown-Optionen im Regeleditor](/help/forms/assets/drop-down-option-rule-editor.png)
 
-## Anzeigen eines Bedienfelds mit der Regel `SetProperty`
+## Anzeigen eines Bereichs mithilfe der `SetProperty`
 
-Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` -Formulars Feld- und globale Objekte verwenden.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Formulars Felder und globale Objekte verwenden.
 
 ![Kontaktformular ](/help/forms/assets/contact-us-form.png)
 
@@ -82,25 +82,25 @@ Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im 
 >[!NOTE]
 >
 > * Sie können die Feldeigenschaften mit den verfügbaren Eigenschaften in `[form-path]/jcr:content/guideContainer.model.json` konfigurieren.
-> * Änderungen am Formular, die mit der Methode `setProperty` des Globals -Objekts vorgenommen werden, sind asynchron und werden bei der Ausführung der benutzerdefinierten Funktion nicht berücksichtigt.
+> * Änderungen am Formular, die mit der Methode `setProperty` des Globals-Objekts vorgenommen werden, sind asynchron und werden bei der Ausführung der benutzerdefinierten Funktion nicht berücksichtigt.
 
 In diesem Beispiel wird das Bedienfeld `personaldetails` durch Klicken auf die Schaltfläche überprüft. Wenn im Bedienfeld keine Fehler erkannt werden, wird ein weiteres Bedienfeld, das Bedienfeld `feedback`, beim Klicken auf die Schaltfläche angezeigt.
 
-Erstellen wir eine Regel für die Schaltfläche `Next` , die das Bedienfeld `personaldetails` validiert und den Bereich `feedback` sichtbar macht, wenn der Benutzer auf die Schaltfläche `Next` klickt.
+Erstellen wir eine Regel für die Schaltfläche `Next`, die das Bedienfeld `personaldetails` validiert und das Bedienfeld `feedback` sichtbar macht, wenn Benutzende auf die Schaltfläche `Next` klicken.
 
 ![Eigenschaft festlegen](/help/forms/assets/custom-function-set-property.png)
 
-In der folgenden Abbildung sehen Sie, wo das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Next` validiert wird. Falls alle Felder innerhalb der `personaldetails` validiert werden, wird das Bedienfeld `feedback` angezeigt.
+In der folgenden Abbildung sehen Sie, wie das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Next` validiert wird. Falls alle Felder innerhalb der `personaldetails` validiert werden, wird das Bedienfeld `feedback` angezeigt.
 
-![Festlegen der Vorschau für die Eigenschaftsform ](/help/forms/assets/set-property-form-preview.png)
+![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/assets/set-property-form-preview.png)
 
-Wenn Fehler in den Feldern des Bereichs `personaldetails` vorhanden sind, werden sie beim Klicken auf die Schaltfläche `Next` auf Feldebene angezeigt und das Bedienfeld `feedback` bleibt unsichtbar.
+Wenn Fehler in den Feldern des Bedienfelds `personaldetails` vorhanden sind, werden sie beim Klicken auf die Schaltfläche `Next` auf Feldebene angezeigt und das Bedienfeld `feedback` bleibt unsichtbar.
 
-![Festlegen der Vorschau für die Eigenschaftsform ](/help/forms/assets/set-property-panel.png)
+![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/assets/set-property-panel.png)
 
-## Validieren des Felds
+## Überprüfen des Felds
 
-Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um das Feld mithilfe eines `Contact Us` -Formulars zu validieren.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um das Feld mithilfe eines `Contact Us` Formulars zu validieren.
 
 Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um das Feld zu validieren.
 
@@ -123,7 +123,7 @@ Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im 
 >
 > Wenn in der Funktion `validate()` kein Argument übergeben wird, wird das Formular validiert.
 
-In diesem Beispiel wird ein benutzerdefiniertes Überprüfungsmuster auf das Feld `contact` angewendet. Benutzer müssen eine Telefonnummer eingeben, die mit `10` gefolgt von `8` Ziffern beginnt. Wenn der Benutzer eine Telefonnummer eingibt, die nicht mit `10` beginnt oder mehr oder weniger als `8` Ziffern enthält, wird beim Klicken auf die Schaltfläche eine Überprüfungsfehlermeldung angezeigt:
+In diesem Beispiel wird ein benutzerdefiniertes Überprüfungsmuster auf das Feld `contact` angewendet. Benutzende müssen eine Telefonnummer eingeben, die mit `10` gefolgt von `8` Ziffern beginnt. Wenn Benutzende eine Telefonnummer eingeben, die nicht mit `10` beginnt oder nicht genau `8` Ziffern enthält, wird beim Klicken auf die Schaltfläche eine Validierungsfehlermeldung angezeigt:
 
 ![Überprüfungsmuster für E-Mail-Adressen](/help/forms/assets/custom-function-validation-pattern.png)
 
@@ -131,19 +131,19 @@ Der nächste Schritt besteht darin, eine Regel für die Schaltfläche `Next` zu 
 
 ![Überprüfungsmuster](/help/forms/assets/custom-function-validate.png)
 
-Beachten Sie die folgende Abbildung, um zu zeigen, dass eine Fehlermeldung auf Feldebene angezeigt wird, wenn der Benutzer eine Telefonnummer eingibt, die nicht mit `10` beginnt:
+Beziehen Sie sich auf die folgende Abbildung, die zeigt, dass eine Fehlermeldung auf Feldebene angezeigt wird, wenn Benutzende eine Telefonnummer eingeben, die nicht mit `10` beginnt:
 
 ![Überprüfungsmuster für E-Mail-Adressen](/help/forms/assets/custom-function-validate-error-message.png)
 
-Wenn der Benutzer eine gültige Telefonnummer eingibt und alle Felder im Bedienfeld `personaldetails` validiert werden, wird das Bedienfeld `feedback` auf dem Bildschirm angezeigt:
+Wenn Benutzende eine gültige Telefonnummer eingeben und alle Felder im Bedienfeld `personaldetails` validiert worden sind, wird das Bedienfeld `feedback` auf dem Bildschirm angezeigt:
 
 ![Überprüfungsmuster für E-Mail-Adressen](/help/forms/assets/validate-form-preview-form.png)
 
 ## Zurücksetzen eines Bedienfelds
 
-Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um das Feld mithilfe eines `Contact Us` -Formulars zurückzusetzen.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um das Feld mithilfe eines `Contact Us` Formulars zurückzusetzen.
 
-Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um den Bereich zurückzusetzen.
+Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um das Bedienfeld zurückzusetzen.
 
 ```javascript
     /**
@@ -165,26 +165,26 @@ Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im 
 >
 > Wenn in der Funktion `reset()` kein Argument übergeben wird, wird das Formular validiert.
 
-In diesem Beispiel wird das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Clear` zurückgesetzt. Als Nächstes erstellen Sie eine Regel für die Schaltfläche `Clear` , mit der das Bedienfeld auf die Schaltfläche zurückgesetzt wird.
+In diesem Beispiel wird das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Clear` zurückgesetzt. Als Nächstes erstellen Sie eine Regel für die Schaltfläche `Clear`, die das Bedienfeld bei einem Klick auf die Schaltfläche zurücksetzt.
 
-![Schaltfläche &quot;Löschen&quot;](/help/forms/assets/custom-function-reset-field.png)
+![Schaltfläche „Löschen“](/help/forms/assets/custom-function-reset-field.png)
 
-In der folgenden Abbildung sehen Sie, dass der Bereich `personaldetails` zurückgesetzt wird, wenn der Benutzer auf die Schaltfläche `clear` klickt:
+In der folgenden Abbildung sehen Sie, dass der Bereich `personaldetails` zurückgesetzt wird, wenn jemand auf die Schaltfläche `clear` klickt:
 
 ![Formular zurücksetzen](/help/forms/assets/custom-function-reset-form.png)
 
-## So zeigen Sie eine benutzerdefinierte Nachricht auf Feldebene an und kennzeichnen das Feld als ungültig
+## So zeigen Sie eine benutzerdefinierte Meldung auf Feldebene an und markieren das Feld als ungültig
 
-Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um eine benutzerdefinierte Meldung auf Feldebene anzuzeigen und das Feld mithilfe eines `Contact Us` -Formulars als ungültig zu kennzeichnen.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um eine benutzerdefinierte Nachricht auf Feldebene anzuzeigen und das Feld mithilfe eines `Contact Us` Formulars als ungültig zu markieren.
 
-Mit der Funktion `markFieldAsInvalid()` können Sie ein Feld als ungültig definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festlegen. Der `fieldIdentifier` -Wert kann `fieldId`, `field qualifiedName` oder `field dataRef` sein. Der Wert des Objekts `option` kann `{useId: true}`, `{useQualifiedName: true}` oder `{useDataRef: true}` sein.
-Die Syntax, mit der ein Feld als ungültig markiert und eine benutzerdefinierte Nachricht festgelegt wird, lautet:
+Mit der Funktion `markFieldAsInvalid()` können Sie ein Feld als ungültig definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festlegen. Der Wert `fieldIdentifier` kann `fieldId`, `field qualifiedName` oder `field dataRef` lauten. Der Wert des Objekts namens `option` kann `{useId: true}`, `{useQualifiedName: true}` oder `{useDataRef: true}` lauten.
+Folgende Syntax wird verwendet, um ein Feld als ungültig zu markieren und eine benutzerdefinierte Nachricht festzulegen:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um eine benutzerdefinierte Nachricht auf Feldebene zu aktivieren.
+Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) erläutert, um eine benutzerdefinierte Nachricht auf Feldebene zu aktivieren.
 
 ```javascript
     /**
@@ -202,29 +202,29 @@ Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im 
 }
 ```
 
-In diesem Beispiel wird eine benutzerdefinierte Meldung auf Feldebene angezeigt, wenn der Benutzer weniger als 15 Zeichen in das Textfeld &quot;Kommentare&quot;eingibt.
+In diesem Beispiel wird eine benutzerdefinierte Meldung auf Feldebene angezeigt, wenn Benutzende weniger als 15 Zeichen in das Textfeld „Kommentare“ eingeben.
 
 Der nächste Schritt besteht darin, eine Regel für das Feld `comments` zu erstellen:
 
 ![Feld als ungültig markieren](/help/forms/assets/custom-function-invalid-field.png)
 
-Sehen Sie sich die unten stehende Demonstration an, um anzuzeigen, dass die Anzeige einer benutzerdefinierten Nachricht auf Feldebene durch die Eingabe von negativem Feedback im Feld `comments` Trigger wird:
+Sehen Sie sich das Beispiel unten an, in dem dargestellt wird, wie die Eingabe von negativem Feedback in das Feld `comments` die Anzeige einer benutzerdefinierten Nachricht auf Feldebene auslöst:
 
-![Feld als ungültiges Vorschauformular markieren](/help/forms/assets/custom-function-invalidfield-form.png)
+![Feld als ungültige Formularvorschau markieren](/help/forms/assets/custom-function-invalidfield-form.png)
 
-Wenn der Benutzer mehr als 15 Zeichen in das Textfeld &quot;Kommentare&quot;eingibt, wird das Feld validiert und das Formular wird gesendet:
+Wenn der/die Benutzende mehr als 15 Zeichen in das Textfeld „Kommentare“ eingibt, wird das Feld validiert und das Formular übermittelt:
 
-![Feld als gültiges Vorschauformular markieren](/help/forms/assets/custom-function-validfield-form.png)
+![Feld als gültige Formularvorschau markieren](/help/forms/assets/custom-function-validfield-form.png)
 
-## Senden veränderter Daten an den Server
+## Senden geänderter Daten an den Server
 
-Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um mithilfe eines `Contact Us` -Formulars auf dem Server bewegte Daten zu senden.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Formulars Felder und globale Objekte verwenden, um bearbeitete Daten auf dem Server zu übermitteln.
 
-Die folgende Codezeile:
+Diese Codezeile
 `globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
 * Das erste Argument sind die zu übermittelnden Daten.
-* Das zweite Argument stellt dar, ob das Formular vor der Übermittlung validiert werden soll. Er ist `optional` und standardmäßig als `true` festgelegt.
-* Das dritte Argument ist der `contentType` der Übermittlung, der ebenfalls optional ist, wobei der Standardwert `multipart/form-data` lautet. Die anderen Werte können `application/json` und `application/x-www-form-urlencoded` sein.
+* Das zweite Argument gibt an, ob das Formular vor der Übermittlung validiert werden soll. Es ist `optional` und standardmäßig auf `true` festgelegt.
+* Das dritte Argument ist der `contentType` der Übermittlung, der ebenfalls optional ist und den Standardwert `multipart/form-data` hat. Die anderen Werte können `application/json` und `application/x-www-form-urlencoded` sein.
 
 Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um die bearbeiteten Daten an den Server zu senden:
 
@@ -247,25 +247,25 @@ Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im 
     }
 ```
 
-Wenn der Benutzer in diesem Beispiel das Textfeld `comments` leer lässt, wird der `NA` beim Senden des Formulars an den Server gesendet.
+Wenn jemand in diesem Beispiel das Textfeld `comments` leer lässt, wird beim Senden des Formulars an den Server `NA` gesendet.
 
-Erstellen Sie nun eine Regel für die `Submit` -Schaltfläche, mit der Daten gesendet werden:
+Erstellen Sie jetzt eine Regel für die `Submit`-Schaltfläche, die Daten sendet:
 
-![Daten übermitteln](/help/forms/assets/custom-function-submit-data.png)
+![Daten senden](/help/forms/assets/custom-function-submit-data.png)
 
-In der Abbildung unten finden Sie die `console window` , die zeigt, dass der Wert als `NA` auf dem Server gesendet wird, wenn der Benutzer das Textfeld `comments` leer lässt:
+In der Abbildung unten finden Sie das `console window`, das zeigt, dass der Wert als `NA` an den Server gesendet wird, wenn jemand das Textfeld `comments` leer lässt:
 
-![Senden von Daten im Konsolenfenster](/help/forms/assets/custom-function-submit-data-form.png)
+![Daten im Konsolenfenster senden](/help/forms/assets/custom-function-submit-data-form.png)
 
 Sie können auch das Konsolenfenster überprüfen, um die an den Server gesendeten Daten anzuzeigen:
 
-![Inspect-Daten im Konsolenfenster](/help/forms/assets/custom-function-submit-data-console-data.png)
+![Daten im Konsolenfenster überprüfen](/help/forms/assets/custom-function-submit-data-console-data.png)
 
-## Überschreiben des Erfolgs der Formularübermittlung und der Fehler-Handler
+## Überschreiben der erfolgreichen Formularübermittlung und der Fehler-Handler
 
-Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` -Formulars Feld- und globale Objekte verwenden, um Übermittlungs-Handler zu überschreiben.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Formulars Feld- und globale Objekte verwenden, um Übermittlungs-Handler zu überschreiben.
 
-Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um die Übermittlung oder Fehlermeldung für Formularübermittlungen anzupassen und die Meldungen zur Formularübermittlung in einem modalen Feld anzuzeigen:
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-features](/help/forms/custom-function-core-component-create-function.md) erläutert, um die Übermittlungs- oder Fehlermeldung für Formularübermittlungen anzupassen und die Formularübermittlungsmeldungen in einem modalen Feld anzuzeigen:
 
 ```javascript
 /**
@@ -350,37 +350,37 @@ function showModal(type, message) {
 }
 ```
 
-In diesem Beispiel werden die Erfolgs- und Fehlermeldungen in einem Modal angezeigt, wenn der Benutzer die benutzerdefinierten Funktionen `customSubmitSuccessHandler` und `customSubmitErrorHandler` verwendet. Die JavaScript-Funktion `showModal(type, message)` wird verwendet, um ein modales Dialogfeld dynamisch zu erstellen und auf einem Bildschirm anzuzeigen.
+Wenn in diesem Beispiel der Benutzer die `customSubmitSuccessHandler` und `customSubmitErrorHandler` benutzerdefinierten Funktionen verwendet, werden die Erfolgs- und Fehlermeldungen in einem modalen Fenster angezeigt. Die JavaScript-`showModal(type, message)` wird verwendet, um ein modales Dialogfeld dynamisch zu erstellen und auf einem Bildschirm anzuzeigen.
 
-Erstellen Sie nun eine Regel für die erfolgreiche Formularübermittlung:
+Erstellen Sie jetzt eine Regel für die erfolgreiche Formularübermittlung:
 
-![Erfolg der Formularübermittlung](/help/forms/assets/form-submission-success.png)
+![Formularübermittlung erfolgreich](/help/forms/assets/form-submission-success.png)
 
-In der unten stehenden Abbildung sehen Sie, wie die Erfolgsmeldung bei erfolgreicher Übermittlung des Formulars in einem Modal dargestellt wird:
+Anhand der folgenden Abbildung können Sie zeigen, dass bei erfolgreicher Übermittlung des Formulars die Erfolgsmeldung in einem modalen Fenster angezeigt wird:
 
 ![Erfolgsmeldung zur Formularübermittlung](/help/forms/assets/form-submission-success-message.png)
 
-Erstellen Sie eine Regel für fehlgeschlagene Formularübermittlungen:
+Erstellen wir analog dazu eine Regel für fehlgeschlagene Formularübermittlungen:
 
-![Fehler bei der Formularübermittlung](/help/forms/assets/form-submission-fail.png)
+![Formularübermittlung schlägt fehl](/help/forms/assets/form-submission-fail.png)
 
-In der folgenden Abbildung sehen Sie, dass die Fehlermeldung in einem Modal angezeigt wird, wenn die Formularübermittlung fehlschlägt:
+Anhand der folgenden Abbildung können Sie zeigen, dass bei fehlgeschlagener Formularübermittlung die Fehlermeldung in einem modalen Fenster angezeigt wird:
 
-![Fehlermeldung bei Formularübermittlung](/help/forms/assets/form-submission-fail-message.png)
+![Meldung „Formularübermittlung fehlgeschlagen“](/help/forms/assets/form-submission-fail-message.png)
 
-Um den Erfolg und das Fehlschlagen der Formularübermittlung standardmäßig anzuzeigen, sind die Funktionen `Default submit Form Success Handler` und `Default submit Form Error Handler` standardmäßig verfügbar.
+Um die erfolgreiche und fehlgeschlagene Übermittlung eines Formulars standardmäßig anzuzeigen, sind die Funktionen `Default submit Form Success Handler` und `Default submit Form Error Handler` standardmäßig verfügbar.
 
-Falls der benutzerdefinierte Übermittlungs-Handler nicht wie erwartet in vorhandenen AEM Projekten oder Formularen ausgeführt werden kann, lesen Sie den Abschnitt [Fehlerbehebung](#troubleshooting) .
+Falls der benutzerdefinierte Übermittlungs-Handler in bestehenden AEM-Projekten oder Formularen nicht wie erwartet funktioniert, lesen Sie den Abschnitt [Fehlerbehebung](#troubleshooting).
 
-## Ausführen von Aktionen in einer bestimmten Instanz des wiederholbaren Bedienfelds
+## Ausführen von Aktionen in einer bestimmten Instanz des wiederholbaren Bereichs
 
-Regeln, die mit dem visuellen Regeleditor in einem wiederholbaren Bereich erstellt wurden, gelten für die letzte Instanz des wiederholbaren Bereichs. Um eine Regel für eine bestimmte Instanz des wiederholbaren Bereichs zu schreiben, können wir eine benutzerdefinierte Funktion verwenden.
+Regeln, die mit dem visuellen Regeleditor in einem wiederholbaren Bereich erstellt wurden, gelten für die letzte Instanz des wiederholbaren Bereichs. Zum Schreiben einer Regel für eine bestimmte Instanz des wiederholbaren Bereichs können wir eine benutzerdefinierte Funktion verwenden.
 
-Erstellen Sie ein anderes Formular als &quot;`Booking Form`&quot;, um Informationen über Reisende zu sammeln, die zu einem Ziel gehen. Ein Reisende-Bedienfeld wird als wiederholbares Bedienfeld hinzugefügt, in dem der Benutzer mithilfe der Schaltfläche `Add Traveler` Details für fünf Reisende hinzufügen kann.
+Erstellen wir ein anderes Formular, `Booking Form` Informationen über Reisende zu sammeln, die zu einem Ziel unterwegs sind. Ein Reisenden-Bedienfeld wird als wiederholbares Bedienfeld hinzugefügt, in dem der Benutzer mithilfe der Schaltfläche `Add Traveler` Details für 5 Reisende hinzufügen kann.
 
 ![Informationen für Reisende](/help/forms/assets/traveler-info-form.png)
 
-Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) erläutert, um Aktionen in einer bestimmten Instanz des wiederholbaren Bereichs durchzuführen, die nicht der letzte ist:
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) erläutert, um Aktionen in einer bestimmten Instanz des wiederholbaren Bereichs durchzuführen, die nicht der letzten ist:
 
 ```javascript
 /**
@@ -395,19 +395,19 @@ function hidePanelInRepeatablePanel(globals)
 }  
 ```
 
-In diesem Beispiel führt die benutzerdefinierte Funktion `hidePanelInRepeatablePanel` eine Aktion in einer bestimmten Instanz des wiederholbaren Bereichs durch. Im obigen Code stellt `travelerinfo` den wiederholbaren Bereich dar. Der Code `repeatablePanel[1].traveler, {visible: false}` blendet das Bedienfeld in der zweiten Instanz des wiederholbaren Bedienfelds aus.
+In diesem Beispiel führt die benutzerdefinierte Funktion `hidePanelInRepeatablePanel` eine Aktion in einer bestimmten Instanz des wiederholbaren Bereichs durch. Im obigen Code stellt `travelerinfo` den wiederholbaren Bereich dar. Der `repeatablePanel[1].traveler, {visible: false}`-Code blendet den Bereich in der zweiten Instanz des wiederholbaren Bereichs aus.
 
-Fügen Sie eine Schaltfläche mit der Bezeichnung `Hide` hinzu und fügen Sie eine Regel hinzu, um die zweite Instanz eines wiederholbaren Bereichs auszublenden.
+Fügen wir eine Schaltfläche mit der Bezeichnung `Hide` hinzu und fügen wir eine Regel hinzu, um die zweite Instanz eines wiederholbaren Bereichs auszublenden.
 
 ![Bereichsregel ausblenden](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Im folgenden Video erfahren Sie, dass beim Klicken auf `Hide` der Bereich in der zweiten wiederholbaren Instanz ausgeblendet wird:
+Anhand des folgenden Videos wird gezeigt, dass beim Klicken auf die `Hide` der Bereich in der zweiten wiederholbaren Instanz ausgeblendet wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
-## Füllen Sie das Feld beim Laden des Formulars mit einem Wert aus
+## Füllen Sie das Feld beim Laden des Formulars mit einem Wert vorab aus
 
-Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen mithilfe eines `Booking Form` Felder und globale Objekte zum Vorbefüllen von Feldern verwenden.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um Felder mithilfe eines `Booking Form` vorzubefüllen.
 
 Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) erläutert, um den vorausgefüllten Wert in ein Feld zu laden, wenn das Formular initialisiert wird:
 
@@ -423,21 +423,21 @@ function testImportData(globals)
 } 
 ```
 
-Im oben genannten Code füllt die Funktion `testImportData` beim Laden des Formulars das Textfeld `Booking Amount` im Voraus aus. Nehmen wir an, das Buchungsformular setzt voraus, dass der Mindestbuchungsbetrag `10,000` ist.
+Im oben genannten Code füllt die Funktion `testImportData` das Textfeld `Booking Amount` vorab aus, wenn das Formular geladen wird. Nehmen wir einmal an, dass das Buchungsformular die `10,000` des Mindestbuchungsbetrags erfordert.
 
-Erstellen wir eine Regel bei der Formularinitialisierung, bei der der Wert im Textfeld `Booking Amount` mit einem angegebenen Wert vorausgefüllt wird, wenn das Formular geladen wird:
+Erstellen wir bei der Initialisierung des Formulars eine Regel, bei der der Wert im `Booking Amount` Textfeld beim Laden des Formulars mit einem angegebenen Wert vorausgefüllt wird:
 
 ![Datenregel importieren](/help/forms/assets/custom-function-import-data.png)
 
-Im folgenden Screenshot wird gezeigt, dass beim Laden des Formulars der Wert im Textfeld `Booking Amount` mit einem angegebenen Wert vorausgefüllt ist:
+Der folgende Screenshot zeigt, dass beim Laden des Formulars der Wert im `Booking Amount` Textfeld mit einem angegebenen Wert vorausgefüllt ist:
 
-![Formular für Datenregel importieren](/help/forms/assets/custom-function-prefill-form.png)
+![Datenregel-Formular importieren](/help/forms/assets/custom-function-prefill-form.png)
 
-## Fokus auf bestimmtes Feld festlegen
+## Fokus auf das spezifische Feld legen
 
-Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen mithilfe von Feld- und globalen Objekten mithilfe eines `Booking Form` den Fokus auf ein bestimmtes Feld legen.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um mithilfe eines `Booking Form` den Fokus auf ein bestimmtes Feld zu legen.
 
-Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) erläutert, um den Fokus auf das angegebene Feld zu legen, wenn auf die Schaltfläche `Submit` geklickt wird:
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) erläutert, um den Fokus auf das angegebene Feld zu legen, wenn auf die `Submit`-Schaltfläche geklickt wird:
 
 ```javascript
 /**
@@ -451,7 +451,7 @@ Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-functio
     }
 ```
 
-Fügen Sie der Schaltfläche `Submit` eine Regel hinzu, um den Fokus beim Klicken auf das Textfeld `Email ID` festzulegen:
+Fügen wir der Schaltfläche `Submit` eine Regel hinzu, um den Fokus auf das Textfeld `Email ID` zu legen, wenn darauf geklickt wird:
 
 ![Fokusregel festlegen](/help/forms/assets/custom-function-set-focus.png)
 
@@ -461,13 +461,13 @@ Der folgende Screenshot zeigt, dass beim Klicken auf die Schaltfläche `Submit` 
 
 >[!NOTE]
 >
-> Sie können den optionalen Parameter `$focusOption` verwenden, wenn Sie sich auf das nächste oder vorherige Feld relativ zum Feld `email` konzentrieren möchten.
+> Sie können den optionalen `$focusOption`-Parameter verwenden, wenn Sie sich relativ zum `email` auf das nächste oder vorherige Feld konzentrieren möchten.
 
-## Hinzufügen oder Löschen wiederholbarer Bereiche mithilfe der Eigenschaft `dispatchEvent`
+## Hinzufügen oder Löschen eines wiederholbaren Bereichs mithilfe der `dispatchEvent`
 
-Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen Felder und globale Objekte verwenden, um wiederholbare Bereiche mithilfe der Eigenschaft `dispatchEvent` mithilfe eines `Booking Form` hinzuzufügen oder zu löschen.
+Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen mithilfe von Feld- und globalen Objekten wiederholbare Bereiche mithilfe der `dispatchEvent`-Eigenschaft mithilfe eines `Booking Form` hinzufügen oder löschen.
 
-Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um beim Klicken auf die Schaltfläche `Add Traveler` mit der Eigenschaft `dispatchEvent` einen Bereich hinzuzufügen:
+Fügen Sie die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um einen Bereich hinzuzufügen, wenn mithilfe der `dispatchEvent`-Eigenschaft auf die Schaltfläche `Add Traveler` geklickt wird:
 
 ```javascript
 /**
@@ -482,15 +482,15 @@ function testAddInstance(globals)
 }
 ```
 
-Fügen Sie der Schaltfläche `Add Traveler` eine Regel hinzu, um das wiederholbare Bedienfeld hinzuzufügen, wenn darauf geklickt wird:
+Fügen wir der Schaltfläche `Add Traveler` eine Regel hinzu, um den wiederholbaren Bereich hinzuzufügen, wenn auf ihn geklickt wird:
 
 ![Bereichsregel hinzufügen](/help/forms/assets/custom-function-add-panel.png)
 
-Beachten Sie das folgende GIF-Dokument, das zeigt, dass beim Klicken auf die Schaltfläche `Add Traveler` das Bedienfeld mithilfe der Eigenschaft `dispatchEvent` hinzugefügt wird:
+Die folgende GIF-Datei veranschaulicht, dass beim Klicken auf die Schaltfläche `Add Traveler` der Bereich mithilfe der `dispatchEvent` hinzugefügt wird:
 
 ![Bedienfeld hinzufügen](/help/forms/assets/custom-function-add-panel.gif)
 
-Fügen Sie auf ähnliche Weise die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) beschrieben, um einen Bereich zu löschen, wenn auf die Schaltfläche `Delete Traveler` mit der Eigenschaft `dispatchEvent` geklickt wird:
+Fügen Sie auf ähnliche Weise die folgende Codezeile hinzu, wie im Abschnitt [create-custom-function](#create-custom-function) erläutert, um einen Bereich zu löschen, wenn mithilfe der `dispatchEvent`-Eigenschaft auf die Schaltfläche `Delete Traveler` geklickt wird:
 
 ```javascript
 /**
@@ -505,23 +505,23 @@ function testRemoveInstance(globals)
 } 
 ```
 
-Fügen Sie der Schaltfläche `Delete Traveler` eine Regel hinzu, um den wiederholbaren Bereich beim Klicken zu löschen:
+Fügen wir der Schaltfläche `Delete Traveler` eine Regel hinzu, um den wiederholbaren Bereich beim Klicken zu löschen:
 
 ![Bereichsregel löschen](/help/forms/assets/custom-function-delete-panel.png)
 
-Beachten Sie das folgende GIF-Dokument, das zeigt, dass beim Klicken auf die Schaltfläche `Delete Traveler` das Reisende-Bedienfeld mithilfe der Eigenschaft `dispatchEvent` gelöscht wird:
+Die nachstehende GIF-Datei zeigt, dass beim Klicken auf die Schaltfläche `Delete Traveler` das Reisenden-Bedienfeld mithilfe der Eigenschaft `dispatchEvent` gelöscht wird:
 
 ![Bedienfeld löschen](/help/forms/assets/custom-function-delete-panel.gif)
 
 
 ## Fehlerbehebung
 
-* Wenn der benutzerdefinierte Übermittlungshandler nicht wie erwartet in bestehenden AEM Projekten oder Formularen ausgeführt werden kann, führen Sie die folgenden Schritte aus:
-   * Stellen Sie sicher, dass die Version der [Kernkomponenten auf Version 3.0.18 und höher](https://github.com/adobe/aem-core-forms-components) aktualisiert ist. Für bestehende AEM Projekte und Formulare sind jedoch weitere Schritte erforderlich:
+* Wenn der benutzerdefinierte Übermittlungs-Handler in bestehenden AEM-Projekten oder Formularen nicht wie erwartet funktioniert, führen Sie die folgenden Schritte aus:
+   * Stellen Sie sicher[ dass die Kernkomponentenversion auf Version 3.0.18 und höher aktualisiert ](https://github.com/adobe/aem-core-forms-components). Für bestehende AEM-Projekte und -Formulare müssen jedoch zusätzliche Schritte ausgeführt werden:
 
-   * Für das AEM Projekt sollte der Benutzer alle Instanzen von `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()` ersetzen und das Projekt über die Cloud Manager-Pipeline bereitstellen.
+   * Für das AEM-Projekt sollte der Benutzer alle Instanzen von `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()` ersetzen und das Projekt über die Cloud Manager-Pipeline bereitstellen.
 
-   * Wenn die benutzerdefinierten Übermittlungs-Handler für vorhandene Formulare nicht ordnungsgemäß funktionieren, muss der Benutzer die Regel `submitForm` mithilfe des Regeleditors auf der Schaltfläche **Senden** öffnen und speichern. Diese Aktion ersetzt die vorhandene Regel von `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()` im Formular.
+   * Wenn die benutzerdefinierten Übermittlungs-Handler für vorhandene Formulare nicht richtig funktionieren, müssen Benutzende die Regel `submitForm` mithilfe des Regeleditors anhand der Schaltfläche **Senden** öffnen und speichern. Diese Aktion ersetzt im Formular die vorhandene Regel `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()`.
 
 ## Siehe auch
 

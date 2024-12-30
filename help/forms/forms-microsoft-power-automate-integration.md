@@ -6,7 +6,7 @@ keywords: Verbinden von AEM Forms mit Power Automate, Power Automate-Automation,
 feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 100%
 

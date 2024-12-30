@@ -8,7 +8,7 @@ role: User, Developer
 source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -228,7 +228,7 @@ Lassen Sie uns nun die `clientlib-it-custom-locale`-Bibliothek in Ihr AEM as a C
 
       ![Einfügen von clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
-1. Pfad `aemLangUrl` in `languageinit.js` aktualisieren
+1. Aktualisieren des Pfads `aemLangUrl` in `languageinit.js`
 
    1. Wechseln Sie in das folgende Verzeichnis in Ihrem [AEMaaCS-Projektverzeichnis]:
 
@@ -236,12 +236,12 @@ Lassen Sie uns nun die `clientlib-it-custom-locale`-Bibliothek in Ihr AEM as a C
       /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
       ```
 
-   1. Öffnen Sie die Datei &quot;`languageinit.js`&quot; in Ihrem Editor.
-   1. Suchen Sie die folgende Zeile in der Datei &quot;`languageinit.js`&quot;:
+   1. Öffnen Sie die Datei `languageinit.js` in ihrem Editor.
+   1. Suchen Sie die folgende Zeile in der Datei `languageinit.js`:
 
       `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
 
-   1. Ersetzen Sie `forms-core-components-it` in der obigen Zeile durch Ihren `<app-id>` (tatsächliche ID Ihrer Anwendung).
+   1. Ersetzen Sie `forms-core-components-it` durch Ihre `<app-id>` (die tatsächliche ID Ihrer Anwendung) in der obigen Zeile.
 
       `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
 

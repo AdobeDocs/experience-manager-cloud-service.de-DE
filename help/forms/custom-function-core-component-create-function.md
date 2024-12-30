@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Hinzufügen von benutzerdefinierten Funktionen in einem adaptiven Formular
-description: AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzer eigene Funktionen im Regeleditor erstellen und verwenden können.
+description: AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzende ihre eigenen Funktionen im Regeleditor erstellen und verwenden können.
 keywords: Im Regeleditor können Sie eine benutzerdefinierte Funktion hinzufügen, eine benutzerdefinierte Funktion verwenden, eine benutzerdefinierte Funktion erstellen oder eine benutzerdefinierte Funktion verwenden.
 feature: Adaptive Forms, Core Components
 role: User, Developer
@@ -14,7 +14,7 @@ ht-degree: 56%
 
 # Erstellen einer benutzerdefinierten Funktion für ein auf Kernkomponenten basierendes adaptives Formular
 
-Adaptive Forms auf der Basis von Kernkomponenten bieten dynamische Benutzererlebnisse, indem Inhalt und Verhalten basierend auf der Benutzereingabe angepasst werden. Benutzerdefinierte Funktionen ermöglichen es Entwicklern, die Funktionalität zu erweitern und sicherzustellen, dass Formulare bestimmte Anforderungen erfüllen können. Durch die Integration benutzerdefinierter Funktionen können Entwickler komplexe Logik implementieren, Prozesse automatisieren und einzigartige Interaktionen einführen, die spezifischen Geschäftsanforderungen oder Benutzererwartungen entsprechen. Dadurch wird sichergestellt, dass sich die Formulare nicht nur an unterschiedliche Bedingungen anpassen, sondern auch eine präzisere und effektivere Lösung für verschiedene Anwendungsfälle bieten.
+Adaptive Forms, die auf Kernkomponenten basieren, bieten dynamische Benutzererlebnisse, indem Inhalte und Verhalten auf der Grundlage von Benutzereingaben angepasst werden. Benutzerdefinierte Funktionen ermöglichen es Entwicklerinnen und Entwicklern, die Funktionalität zu erweitern und sicherzustellen, dass Formulare bestimmte Anforderungen erfüllen können. Durch die Integration benutzerdefinierter Funktionen können Entwickler komplexe Logik implementieren, Prozesse automatisieren und einzigartige Interaktionen einführen, die mit spezifischen Geschäftsanforderungen oder Benutzererwartungen übereinstimmen. Dadurch wird sichergestellt, dass sich die Formulare nicht nur an unterschiedliche Bedingungen anpassen, sondern auch eine präzisere und effektivere Lösung für verschiedene Anwendungsfälle bieten.
 Dieser Artikel führt Sie durch die Schritte zum Erstellen benutzerdefinierter Funktionen für adaptive Forms mithilfe von Kernkomponenten.
 
 ## Überlegungen
@@ -31,7 +31,7 @@ Dieser Artikel führt Sie durch die Schritte zum Erstellen benutzerdefinierter F
 
 ## Voraussetzungen zum Erstellen einer benutzerdefinierten Funktion.
 
-Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adaptiven Forms beginnen, stellen Sie Folgendes sicher:
+Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adaptiven Forms beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 **Software:**
 
@@ -52,25 +52,25 @@ Die Schritte zum Erstellen benutzerdefinierter Funktionen sind die Folgenden:
 
 Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie eine Client-Bibliothek hinzufügen. Um eine Client-Bibliothek zu erstellen, führen Sie die folgenden Schritte aus:
 
-**Repository klonen**
+**Klonen Sie das Repository**
 
 Klonen Sie Ihr [AEM Forms as a Cloud Service-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git):
 
 1. Öffnen Sie die Befehlszeile oder ein Terminal-Fenster.
 
-1. Navigieren Sie zum gewünschten Speicherort auf Ihrem Computer, auf dem Sie das Repository speichern möchten.
+1. Navigieren Sie zum gewünschten Speicherort auf dem Computer, auf dem Sie das Repository speichern möchten.
 
 1. Führen Sie den folgenden Befehl aus, um das Repository zu klonen:
 
    `git clone [Git Repository URL]`
 
-Mit diesem Befehl wird das Repository heruntergeladen und ein lokaler Ordner des geklonten Repositorys auf Ihrem Computer erstellt. In diesem Handbuch wird dieser Ordner als das AEMaaCS-Projektverzeichnis ] bezeichnet.[
+Mit diesem Befehl wird das Repository heruntergeladen und ein lokaler Ordner des geklonten Repositorys auf Ihrem Computer erstellt. In diesem Handbuch wird dieser Ordner als „AEMaaCS[Projektverzeichnis“ ].
 
 **Hinzufügen eines Client-Bibliotheksordners**
 
-Gehen Sie wie folgt vor, um den neuen Client-Bibliotheksordner zum AEMaaCS-Projektverzeichnis ] hinzuzufügen:[
+Gehen Sie wie folgt vor, um dem [AEMaaCS-Projektverzeichnis] einen neuen Client-Bibliotheksordner hinzuzufügen:
 
-1. Öffnen Sie das Verzeichnis [AEMaaCS-Projekt] in einem Editor.
+1. Öffnen Sie das [AEMaaCS-Projektverzeichnis] in einem Editor.
 
    ![Ordnerstruktur der benutzerdefinierten Funktion](/help/forms/assets/custom-library-folder-structure.png)
 
@@ -86,7 +86,7 @@ Fügen Sie dem hinzugefügten Client-Bibliotheksordner Folgendes hinzu:
 
 * .content.xml-Datei
 * js.txt-Datei
-* js-Ordner
+* JS-Ordner
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
 
@@ -164,11 +164,11 @@ Stellen Sie das [AEMaaCS Projektverzeichnis] von AEM as a Cloud Service in Ihrer
 
 1. Stellen Sie den aktualisierten Code bereit:
 
-   1. Trigger einer Bereitstellung Ihres Codes über die vorhandene Vollstapelpipeline. Dadurch wird der aktualisierte Code automatisch erstellt und bereitgestellt.
+   1. Trigger einer Bereitstellung Ihres Codes über die bestehende Full-Stack-Pipeline. Dadurch wird der aktualisierte Code automatisch erstellt und bereitgestellt.
 
 Wenn Sie noch keine Pipeline eingerichtet haben, lesen Sie das Handbuch zur [Einrichtung einer Pipeline für AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline).
 
-Sobald die Pipeline erfolgreich ausgeführt wurde, ist die benutzerdefinierte Funktion, die in der Client-Bibliothek hinzugefügt wurde, im Regeleditor für adaptive Formulare [verfügbar.](/help/forms/rule-editor-core-components.md)
+Sobald die Pipeline erfolgreich ausgeführt wurde, wird die benutzerdefinierte Funktion, die der Client-Bibliothek hinzugefügt wurde, in Ihrem [Regeleditor für adaptive Formulare](/help/forms/rule-editor-core-components.md) verfügbar.
 
 ### Hinzufügen einer Client-Bibliothek zu einem adaptiven Formular{#use-custom-function}
 
@@ -183,15 +183,15 @@ Nachdem Sie Ihre Client-Bibliothek in Ihrer Forms CS-Umgebung bereitgestellt hab
 
    >[!NOTE]
    >
-   > Es können mehrere Kategorien hinzugefügt werden, indem eine kommagetrennte Liste innerhalb des Felds **[!UICONTROL Kategorie der Client-Bibliothek]** angegeben wird.
+   > Mehrere Kategorien können hinzugefügt werden, indem eine kommagetrennte Liste im Feld **[!UICONTROL Client-Bibliothekskategorie]** angegeben wird.
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Sie können die benutzerdefinierte Funktion im Regeleditor [eines adaptiven Formulars](/help/forms/rule-editor-core-components.md) mit den Anmerkungen in [JavaScript](##js-annotations) verwenden.
+Sie können die benutzerdefinierte Funktion im [Regeleditor eines adaptiven Formulars) ](/help/forms/rule-editor-core-components.md) die [JavaScript-Anmerkungen ](##js-annotations).
 
 ## Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular
 
-In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor](/help/forms/rule-editor-core-components.md) verwenden. Fügen Sie der JavaScript-Datei (`Function.js`) den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
+In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) ](/help/forms/rule-editor-core-components.md). Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
 
 ```javascript
     /**
@@ -218,11 +218,11 @@ In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regele
 
 Wenn Benutzende im obigen Beispiel das Geburtsdatum im Format JJJJ-MM-TT eingeben, wird die benutzerdefinierte Funktion `calculateAge` aufgerufen und das Alter zurückgegeben.
 
-![Benutzerdefinierte Funktion &quot;Seite berechnen&quot;im Regeleditor](/help/forms/assets/custom-function-calculate-age.png)
+![Benutzerdefinierte Funktion „Alter berechnen“ im Regeleditor](/help/forms/assets/custom-function-calculate-age.png)
 
 Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefinierten Funktionen über den Regeleditor implementiert werden:
 
-![Benutzerdefinierte Funktion &quot;Seite berechnen&quot;in der Formularvorschau des Regeleditors](/help/forms/assets/custom-function-age-calculate-form.png)
+![Benutzerdefinierte Funktion „Alter berechnen“ im Regeleditor für die Formularvorschau](/help/forms/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
@@ -230,27 +230,27 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 ## Funktionen von benutzerdefinierten Funktionen
 
-Benutzerdefinierte Funktionen in AEM Formularen bieten eine zuverlässige Lösung zum Erweitern und Personalisieren der Funktionalität Ihrer Formulare. Sie können die benutzerdefinierten Funktionen verwenden, um die spezifischen Anforderungen Ihres Unternehmens zu erfüllen.
+Benutzerdefinierte Funktionen in AEM-Formularen bieten eine robuste Lösung für die Erweiterung und Personalisierung der Funktionalität Ihrer Formulare. Sie können die benutzerdefinierten Funktionen verwenden, um die spezifischen Anforderungen Ihres Unternehmens zu erfüllen.
 
-Diese Funktionen unterstützen verschiedene Funktionen, einschließlich der Arbeit mit bestimmten Feldern, der Verwendung globaler Felder und asynchroner Vorgänge sowie der Integration von Zwischenspeicherungsmechanismen. Diese Flexibilität stellt sicher, dass Formulare sich an komplexe Anforderungen anpassen und ein effizientes, benutzerspezifisches Erlebnis bieten können. Mithilfe dieser erweiterten Funktionen können Sie die Interaktionen mit Formularen verbessern und die Leistung optimieren, sodass Ihre AEM-Formulare funktionaler und reaktionsfähiger werden.
+Diese Funktionen unterstützen verschiedene Funktionen, einschließlich der Arbeit mit bestimmten Feldern, der Verwendung globaler Felder und asynchroner Vorgänge sowie der Integration von Caching-Mechanismen. Durch diese Flexibilität können Formulare an komplexe Anforderungen angepasst werden und ein effizientes, maßgeschneidertes Benutzererlebnis bieten. Durch die Nutzung dieser erweiterten Funktionen können Sie die Formularinteraktionen verbessern und die Leistung optimieren, sodass Ihre AEM-Formulare sowohl funktionsfähiger als auch responsiver werden.
 
 Im Folgenden werden die Merkmale von benutzerdefinierten Funktionen vorgestellt.
 
 ### Asynchrone Unterstützung in benutzerdefinierten Funktionen {#support-of-async-functions}
 
-Sie können asynchrone Funktionen im Regeleditor mit benutzerdefinierten Funktionen implementieren. Eine Anleitung dazu finden Sie im Artikel [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md).
+Sie können asynchrone Funktionen im Regeleditor mithilfe benutzerdefinierter Funktionen implementieren. Eine Anleitung dazu finden Sie im Artikel [Verwenden asynchroner Funktionen in einem adaptiven Formular](/help/forms/using-async-funct-in-rule-editor.md).
 
-### Felder und globale Objekte unterstützen benutzerdefinierte Funktionen {#support-field-and-global-objects}
+### Unterstützte Objekte vom Typ Feld und Globaler Umfang in benutzerdefinierten Funktionen {#support-field-and-global-objects}
 
-Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem Formular, z. B. Textfelder und Kontrollkästchen. Das Globals-Objekt enthält schreibgeschützte Variablen wie Formularinstanz, Zielfeldinstanz und Methoden zum Durchführen von Formularänderungen in benutzerdefinierten Funktionen.
+Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente innerhalb eines Formulars, z. B. Textfelder und Kontrollkästchen. Das Globals-Objekt enthält schreibgeschützte Variablen wie Formularinstanz, Zielfeldinstanz und Methoden zum Durchführen von Formularänderungen in benutzerdefinierten Funktionen.
 
 >[!NOTE]
 >
 > Der `param {scope} globals` muss der letzte Parameter sein und wird nicht im Regeleditor eines adaptiven Formulars angezeigt.
 
-Weitere Informationen zu Scope-Objekten finden Sie im Artikel [Scope-Objekte in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md) .
+Weitere Informationen zu Bereichsobjekten finden Sie im Artikel [Bereichsobjekte in benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-scope-function.md) .
 
-### Caching-Unterstützung in benutzerdefinierten Funktionen
+### Caching-Unterstützung in benutzerdefinierter Funktion
 
 Adaptive Formulare nutzen Caching für benutzerdefinierte Funktionen, um die Antwortzeit beim Abrufen der Liste der benutzerdefinierten Funktionen im Regeleditor zu verbessern. In der Datei `error.log` wird eine Meldung `Fetched following custom functions list from cache` angezeigt.
 

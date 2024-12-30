@@ -98,11 +98,11 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
   </tr>
   <tr>
    <td>Zahleneigenschaft<br /> </td>
-   <td>Numerisches Feld mit Subtyp „float“.<br /> </td>
+   <td>Numerisches Feld mit Subtyp „float“<br /> </td>
   </tr>
   <tr>
    <td>Ganzzahl-Eigenschaft<br /> </td>
-   <td>Numerisches Feld mit Subtyp „integer“.<br /> </td>
+   <td>Numerisches Feld mit Subtyp „integer“<br /> </td>
   </tr>
   <tr>
    <td>Boolesche Eigenschaft<br /> </td>
@@ -451,8 +451,8 @@ Das adaptive Formular verwendet die im JSON-Schema verfügbaren Informationen, u
 >[!ENDTABS]
 
 Die wichtigsten Änderungen zwischen den Spezifikationen des JSON-Schemas v4 und des JSON-Schemas 2020-12 lauten wie folgt:
-* Die ID ist als `$id` deklariert.
-* Definitionen sind als `$defs` deklariert.
+* Die ID ist als `$id` deklariert
+* Definitionen sind als `$defs` deklariert
 
 ### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
 

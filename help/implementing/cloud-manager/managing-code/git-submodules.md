@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 24%
 
 Git-Untermodule können verwendet werden, um zum Build-Zeitpunkt den Inhalt mehrerer Verzweigungen über Git-Repositorys hinweg zusammenzuführen.
 
-Wenn der Build-Prozess von Cloud Manager ausgeführt wird, klont er das Repository der Pipeline und checkt die Verzweigung aus. Wenn eine `.gitmodules` -Datei im Stammverzeichnis der Verzweigung vorhanden ist, wird der entsprechende Befehl ausgeführt.
+Wenn der Build-Prozess von Cloud Manager ausgeführt wird, klont er das Repository der Pipeline und prüft dann die Verzweigung. Wenn eine `.gitmodules`-Datei im Stammverzeichnis der Verzweigung vorhanden ist, wird der entsprechende Befehl ausgeführt.
 
-Der folgende Befehl checkt jedes Untermodul in das entsprechende Verzeichnis aus.
+Mit dem folgenden Befehl wird jedes Untermodul in das entsprechende Verzeichnis ausgecheckt.
 
 ```
 $ git submodule update --init
 ```
 
-Diese Technik bietet eine Alternative zu der unter [Arbeiten mit mehreren Source-Git-Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) beschriebenen Lösung. Es ist ideal für Unternehmen, die sich mit Git-Untermodulen auskennen und es vorziehen, keinen externen Zusammenführungsprozess zu verwalten.
+Diese Technik bietet eine Alternative zu der in [Arbeiten mit mehreren Quellen-Git-Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) beschriebenen Lösung. Sie eignet sich ideal für Unternehmen, die mit Git-Submodulen vertraut sind und es vorziehen, keinen externen Zusammenführungsprozess zu verwalten.
 
-Angenommen, es gibt drei Repositorys. Jedes Repository enthält eine einzelne Verzweigung mit dem Namen `main`. Im primären Repository, d. h. dem in den Pipelines konfigurierten, verfügt die `main` -Verzweigung über eine `pom.xml` -Datei, die die in den anderen beiden Repositorys enthaltenen Projekte deklariert:
+Nehmen wir beispielsweise an, dass es drei Repositorys gibt. Jedes Repository enthält eine einzelne Verzweigung mit dem Namen `main`. Im primären Repository, d. h. dem in den Pipelines konfigurierten, verfügt die Verzweigung `main` über eine Datei `pom.xml`, in der die in den beiden anderen Repositorys enthaltenen Projekte deklariert werden.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -46,14 +46,14 @@ Angenommen, es gibt drei Repositorys. Jedes Repository enthält eine einzelne Ve
 </project>
 ```
 
-Anschließend fügen Sie Untermodule für die beiden anderen Repositorys hinzu:
+Anschließend würden Sie Untermodule für die beiden anderen Repositorys hinzufügen:
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-Das Ergebnis ist eine `.gitmodules` -Datei ähnlich der folgenden:
+Dies führt zu einer `.gitmodules`-Datei ähnlich der Folgenden:
 
 ```text
 [submodule "project-a"]
@@ -66,27 +66,27 @@ Das Ergebnis ist eine `.gitmodules` -Datei ähnlich der folgenden:
     branch = main
 ```
 
-Weitere Informationen zu Git-Untermodulen finden Sie im [Git-Referenzhandbuch](https://git-scm.com/book/de/v2/Git-Tools-Submodules) .
+Weitere Informationen zu Git-Untermodulen finden Sie auch im [Git-Referenzhandbuch](https://git-scm.com/book/de/v2/Git-Tools-Submodules) .
 
 ## Einschränkungen und Empfehlungen {#limitations-recommendations}
 
-Beachten Sie bei der Verwendung von Git-Untermodulen mit von Adobe verwalteten Repositorys die folgenden Einschränkungen.
+Beachten Sie beim Verwenden von Git-Untermodulen mit von Adobe verwalteten Repositorys die folgenden Einschränkungen.
 
-* Die Git-URL muss sich genau in der im vorherigen Abschnitt beschriebenen Syntax befinden.
+* Die Git-URL muss genau die im vorherigen Abschnitt beschriebene Syntax haben.
 * Es werden nur Untermodule im Stammverzeichnis der Verzweigung unterstützt.
 * Betten Sie aus Sicherheitsgründen keine Anmeldeinformationen in Git-URLs ein.
 * Sofern nicht anders erforderlich, empfiehlt Adobe die Verwendung von flachen Untermodulen, indem Sie Folgendes ausführen:
   `git config -f .gitmodules submodule.<submodule path>.shallow true` für jedes Untermodul.
-* Für bestimmte Git-Commits werden Git-Untermodulverweise gespeichert. Wenn also Änderungen am Submodul-Repository vorgenommen werden, muss die referenzierte Commit aktualisiert werden.
+* Für bestimmte Git-Commits werden Git-Untermodulverweise gespeichert. Wenn also Änderungen am Untermodul-Repository vorgenommen werden, muss der referenzierte Commit aktualisiert werden.
 Verwenden Sie beispielsweise Folgendes:
 
   `git submodule update --remote`
 
 ## Unterstützung von Git-Untermodulen für private Repositorys {#private-repositories}
 
-Die Unterstützung für Git-Untermodule in [privaten Repositorys](private-repositories.md) ähnelt im Allgemeinen ihrer Verwendung mit Adobe-Repositorys.
+Die Unterstützung für Git-Untermodule in [privaten Repositorys](private-repositories.md) ist weitgehend dieselbe wie bei Verwendung von Adobe-Repositorys.
 
-Nachdem Sie jedoch Ihre `pom.xml` -Datei konfiguriert und die `git submodule` -Befehle ausgeführt haben, müssen Sie eine `.gitmodules` -Datei zum Stammverzeichnis des Aggregator-Repositorys hinzufügen, damit Cloud Manager die Konfiguration des Untermoduls erkennt.
+Nachdem Sie Ihre Datei `pom.xml` eingerichtet haben und die `git submodule`-Befehle ausgeführt werden, müssen Sie jedoch eine `.gitmodules`-Datei zum Stammverzeichnis des Aggregations-Repositorys hinzufügen, damit Cloud Manager die Konfiguration des Untermoduls erkennt.
 
 ![.gitmodules-Datei](assets/gitmodules.png)
 
@@ -96,6 +96,6 @@ Nachdem Sie jedoch Ihre `pom.xml` -Datei konfiguriert und die `git submodule` -B
 
 Beachten Sie bei der Verwendung von Git-Untermodulen mit privaten Repositorys die folgenden Einschränkungen:
 
-* Git-URLs von Untermodulen können im HTTPS- oder SSH-Format vorliegen, müssen aber auf ein GitHub.com -Repository verweisen. Das Hinzufügen eines Adobe-Repository-Untermoduls zu einem GitHub-Aggregator-Repository oder umgekehrt wird nicht unterstützt.
-* GitHub-Untermodule müssen über die Adobe GitHub-App zugänglich sein.
+* Git-URLs von Untermodulen können im HTTPS- oder SSH-Format vorliegen, müssen aber auf ein GitHub.com-Repository verweisen. Das Hinzufügen eines Adobe-Repository-Untermoduls zu einem GitHub-Aggregator-Repository oder umgekehrt wird nicht unterstützt.
+* Die GitHub-Untermodule müssen für die Adobe-GitHub-App zugänglich sein.
 * [Die Einschränkungen bei der Verwendung von Git-Untermodulen mit von Adobe verwalteten Repositorys](#limitations-recommendations) gelten ebenfalls.

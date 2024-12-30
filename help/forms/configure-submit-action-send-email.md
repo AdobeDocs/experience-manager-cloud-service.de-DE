@@ -4,7 +4,7 @@ Description: Explore the process to set up email notifications when submitting a
 keywords: So senden Sie eine E-Mail für ein adaptives Formular, E-Mail-Übermittlungsaktion, E-Mail für adaptive Formulare, E-Mail für Formularübermittlung, E-Mail-Anleitung senden
 feature: Adaptive Forms, Core Components
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: „Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?“
+title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

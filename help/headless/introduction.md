@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
 source-wordcount: '701'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können eine ausführliche Dokumentation der verschiedenen Funktionen lesen 
 
 {{headless-trials-promotion}}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 AEM Headless ist eine CMS-Lösung aus Experience Manager, mit der strukturierte Inhalte (Inhaltsfragmente) in AEM von jeder App über HTTP mithilfe von GraphQL genutzt werden können. Headless-Implementierungen ermöglichen die skalierte Bereitstellung von Erlebnissen über Plattformen und Kanäle hinweg.
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
    * Inhaltsfragmente werden von Inhaltsautorinnen und -autoren mit dem AEM-Inhaltsfragment-Editor erstellt.
    * Inhaltsfragmente werden als AEM-Assets gespeichert, können jedoch entweder über die Assets-Konsole oder die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) verwaltet werden.
 1. **Inhalts-API für die Bereitstellung**
-   * Unter [AEM APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
+   * Unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
 
    * Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de) möglich.
 

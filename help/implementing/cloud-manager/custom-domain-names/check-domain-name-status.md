@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
 source-wordcount: '846'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Der Fehler wird wie folgt behoben:
 
 >[!TIP]
 >
->Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert normalerweise 1 bis 2 Werktage. Aus diesem Grund wird empfohlen, die Domänen lange vor ihrem Live-Datum zu installieren.
+>Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert normalerweise 1 bis 2 Werktage. Daher wird empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren.
 
 >[!NOTE]
 >

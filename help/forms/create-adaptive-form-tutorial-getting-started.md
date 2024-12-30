@@ -17,74 +17,74 @@ ht-degree: 6%
 
 # Erstellen eines adaptiven Formulars (Kernkomponenten) - Tutorial
 
-An diesem Tag und in diesem Alter erwarten die Benutzer ein mobilfreundliches Erlebnis für alle Interaktionen, und Formulare bilden keine Ausnahme. Adaptive Formulare können Ihnen dabei helfen, Formulare zu erstellen, die nicht nur für Mobilgeräte geeignet sind, sondern auch die Benutzerinteraktion verbessern und die Zeit für ihre Bearbeitung verkürzen.
+Heutzutage erwarten die Benutzer ein mobilfreundliches Erlebnis für alle ihre Interaktionen, und Formulare sind keine Ausnahme. Adaptive Formulare können Ihnen dabei helfen, nicht nur mobilfreundliche Formulare zu erstellen, sondern auch die Benutzerinteraktion zu verbessern und die Zeit bis zum Ausfüllen zu verkürzen.
 
-Dieses Tutorial enthält eine schrittweise Anleitung zum Erstellen eines adaptiven Formulars. Er ist in einen Anwendungsfall und mehrere Handbücher unterteilt, die Ihnen jeweils zeigen, wie Sie Ihrem adaptiven Formular eine neue Funktion hinzufügen können.
+In diesem Tutorial erfahren Sie Schritt für Schritt, wie Sie ein adaptives Formular erstellen. Es ist in einen Anwendungsfall und mehrere Handbücher unterteilt, die Ihnen jeweils zeigen, wie Sie Ihrem adaptiven Formular eine neue Funktion hinzufügen.
 
-Am Ende des Tutorials können Sie:
+Am Ende der Schulung sind Sie in der Lage:
 
 * Erstellen eines adaptiven Formulars und seines Datenmodells
 * Gestalten eines adaptiven Formulars
 * Erstellen von Geschäftsregeln mit dem Regeleditor für adaptive Formulare
-* Vorausfüllen adaptiver Formularfelder
-* Hinzufügen von e-Signaturen zu Ihrem Formular
-* Protect Ihres Formulars von Bots mithilfe von Google reCAPTCHA
-* Lokalisieren des adaptiven Formulars für verschiedene Sprachen
-* Formular konfigurieren, um strukturierte Daten zu erstellen
+* Vorausfüllen von Feldern in adaptiven Formularen
+* Hinzufügen von E-Signaturen zu einem Formular
+* Protect des Formulars von Bots mit Google reCAPTCHA
+* Lokalisieren Sie Ihr adaptives Formular in verschiedene Sprachen
+* Konfigurieren des Formulars zur Erstellung strukturierter Daten
 * Einrichten des Formulars zum Senden von Daten an einen REST-Endpunkt
-* Publish Ihres adaptiven Formulars
+* Publish des adaptiven Formulars
 
 
-## Warum erstellen Sie auf Kernkomponenten basierende Formulare?
+## Warum sollten auf Kernkomponenten basierende Formulare erstellt werden?
 
-AEM Forms bietet Foundation-Komponenten und Kernkomponenten zum Erstellen von Formularen. Kernkomponenten sind der moderne und empfohlene Ansatz zum Erstellen neuer Formulare. Warum Kernkomponenten verwenden? Diese Komponenten sind einfach, Open-Source-Komponenten (verfügbar auf GitHub), bieten eine hervorragende Google Lighthouse- und Web-Vitals-Bewertung, sind barrierefrei und bieten alle bekannten Funktionen von AEM Sites (wie Versionierung und Lokalisierung). Darüber hinaus sind diese Komponenten einfacher zu gestalten. Sie können ihr Erscheinungsbild einfach gemäß den Branding-Richtlinien Ihres Unternehmens anpassen. Diese weisen keine Drittanbieterabhängigkeiten auf. Jeder Entwickler mit Kenntnissen von JavaScript und CSS kann diese Komponenten einfach anpassen.
+AEM Forms stellt Foundation-Komponenten und Kernkomponenten zum Erstellen von Forms-Erlebnissen bereit. Kernkomponenten sind der moderne und empfohlene Ansatz zum Erstellen jedes neuen Forms-Erlebnisses. Warum sollten Sie Kernkomponenten verwenden? Diese Komponenten sind einfach, Open-Source-Komponenten (auf GitHub verfügbar), bieten einen hervorragenden Wert für Google Lighthouse und Web Vitals, sind mit der Barrierefreiheit kompatibel und bieten alle bekannten Funktionen von AEM Sites (wie Versionierung und Lokalisierung). Darüber hinaus sind diese Komponenten einfacher zu gestalten. Sie können ihr Erscheinungsbild einfach gemäß den Branding-Richtlinien Ihres Unternehmens anpassen. Diese weisen keine Abhängigkeiten von Drittanbietern auf. Jeder Entwickler mit Kenntnissen in JavaScript und CSS kann diese Komponenten einfach anpassen.
 
-![Warum erstellen Sie Kernkomponenten-basierte adaptive Forms? Diese Komponenten sind einfach, einfacher zu gestalten, bieten hohe Lightthouse-Punktzahl, unterstützen Barrierefreiheitsstandards, leicht anpassbare Open-Source-Elemente, auf GitHub verfügbar, keine Abhängigkeit von Drittanbieter-Bibliotheken und verfügen über fast keine Lernkurve für AEM Entwickler und AEM Autoren. Darüber hinaus verfügen die AEM Forms-Kernkomponenten über alle Funktionen AEM WCM-Kernkomponenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![Warum sollten Sie auf Kernkomponenten basierende adaptive Forms erstellen? Diese Komponenten sind leicht, einfacher zu gestalten, bieten eine hohe Lighthouse-Punktzahl, unterstützen Standards für die Barrierefreiheit, leicht anpassbar, Open-Source-Komponenten, auf GitHub verfügbar, keine Abhängigkeit von Drittanbieterbibliotheken und haben fast keine Lernkurve für AEM-Entwickler und AEM-Autoren Darüber hinaus verfügen AEM Forms-Kernkomponenten über alle Funktionen von AEM WCM-Kernkomponenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
-## Anwendungsfall: Optimierte Eigenheimkreditvorqualifikation mit adaptiver Forms
+## Anwendungsfall: Optimierte Vorqualifizierung für Heimdarlehen mit Adaptive Forms
 
-In diesem Tutorial erstellen Sie ein adaptives Formular für eine große Bank. Der Anwendungsfall lautet:
+In diesem Tutorial erstellen Sie ein adaptives Formular für eine große Bank. Der Anwendungsfall ist:
 
-Potenzielle Eigenheimkäufer besuchen die Website oder Zweigstelle der Bank, um die Möglichkeiten für Eigenheimdarlehen zu erkunden. Der herkömmliche Anwendungsprozess ist langwierig und überwältigend und erfordert häufig eine vorzeitige Dokumentation. Dies hindert einige Käufer daran, den Prozess einzuleiten, was sowohl die Lead-Generierung der Bank als auch die Fähigkeit des Käufers behindert, selbstbewusst nach ihrem Traumhaus zu suchen.
+Potenzielle Eigenheimkäufer besuchen die Website oder Filiale der Bank, um die Möglichkeiten für Eigenheimkredite zu erkunden. Der herkömmliche Bewerbungsprozess ist langwierig und überwältigend und erfordert häufig eine Vorabdokumentation. Dies hält einige Käufer davon ab, den Prozess in Gang zu setzen, was sowohl die Lead-Generierung der Bank als auch die Fähigkeit des Käufers behindert, selbstbewusst nach ihrem Traumhaus zu suchen.
 
-Sie werden gebeten, ein interaktives Formular für die Vorqualifizierung von Hypothekendarlehen zu entwickeln. Dieses Formular würde grundlegende Informationen sammeln, den Kreditnehmer auf der Grundlage seines Inputs vorqualifizieren, geschätzte Darlehensbeträge, potenzielle Ausfallauszahlungserfordernisse und Zinssätze auf der Grundlage verschiedener Darlehensarten anbieten. Vorqualifizierte Benutzer können einen vollständigen Kreditantrag direkt über das Vorqualifizierungsformular einreichen.
+Sie haben die Aufgabe, ein interaktives Formular zur Vorauswahl für Wohnungsbaudarlehen zu entwickeln. Dieses Formular würde grundlegende Informationen sammeln, den Kreditnehmer auf der Grundlage seiner Eingabe vorqualifizieren, geschätzte Darlehensbeträge, potenziellen Anzahlungsbedarf und Zinssätze basierend auf verschiedenen Darlehensarten anbieten. Für vorqualifizierte Nutzer soll ein vollständiger Kreditantrag direkt über das Formular für die Vorqualifizierung gestellt werden.
 
-Das Formular würde mit adaptiven Formularen erstellt. Dies ermöglicht ein personalisiertes Erlebnis bei gleichzeitiger Erfassung der erforderlichen Finanzdaten für eine genaue Vorqualifizierung von Eigenheimdarlehen.
+Das Formular würde mit adaptiven Formularen erstellt. Dies ermöglicht ein personalisiertes Erlebnis bei gleichzeitiger Erfassung der erforderlichen Finanzdaten für eine genaue Präqualifikation für Wohnungsbaudarlehen.
 
-Nach Abschluss des Tutorials würde Ihr Formular wie folgt aussehen und funktionieren:
+Nach Abschluss des Tutorials würde Ihr Formular wie das folgende Formular aussehen und funktionieren:
 
-![Fügen Sie hier ein Arbeitsformular hinzu](/help/forms/assets/cc-tutorial-final-form.png)
+![Hier ein Arbeitsformular hinzufügen](/help/forms/assets/cc-tutorial-final-form.png)
 
 ## Einrichten einer Entwicklungsumgebung
 
-Sie können das adaptive Formular direkt auf Ihrem lokalen Computer erstellen und testen, bevor Sie es in einer Cloud Service-Umgebung bereitstellen. Adobe bietet ein AEM SDK für die lokale Entwicklung, mit dem Sie
+Sie können das adaptive Formular direkt auf Ihrem lokalen Computer erstellen und testen, bevor Sie es in einer Cloud Service-Umgebung bereitstellen. Adobe stellt eine AEM SDK für lokale Entwicklung bereit, mit der Sie
 
-* Lokales Erstellen, Anpassen und Testen von Formularen
-* Designs für Formulare und Build-Konfigurationen lokal erstellen
+* Lokales Erstellen, Anpassen und Testen von Formularen.
+* Designs für Formulare entwerfen und Konfigurationen lokal erstellen,
 * Stellen Sie Ihre fertigen Assets einfach in der Cloud bereit.
 
-Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwicklungsprozess
+Lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwicklungsprozess
 
 
-**Beginnbereit?**
+**Bereit zum Starten?**
 
-1. [Einrichten von Entwicklungstools für AEM Projekte](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): Laden Sie die neueste Version von [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#node-js) und [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-maven) herunter und installieren Sie sie. Installieren Sie außerdem einen Nur-Text-Editor. Die Beispiele in diesem Tutorial basieren auf Visual Studio Code.
+1. [Einrichten von Entwicklungstools für AEM-Projekte](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): Laden Sie die neueste Version von [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#node-js) und [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-maven) herunter und installieren Sie sie. Wenn Sie auch einen Nur-Text-Editor installieren, basieren die Beispiele in diesem Tutorial auf Visual Studio Code.
 
-1. [Installieren Sie das AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Laden Sie die neueste Version des AEM SDK herunter und installieren Sie sie. Dies stellt die wichtigsten Instrumente für AEM Entwicklung dar. Beachten Sie die Version des AEM SDK.
+1. [AEM SDK installieren](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Laden Sie die neueste Version der AEM SDK herunter und installieren Sie sie. Damit stehen die wesentlichen Instrumente für die AEM-Entwicklung zur Verfügung. Notieren Sie sich die Version von AEM SDK.
 
-   ![Softwareverteilung](/help/forms/assets/software-distribution.png)
+   ![Software-Distribution](/help/forms/assets/software-distribution.png)
 
-   ![Installieren AEM SDK](/help/forms/assets/start-aem-sdk.png)
+   ![Installieren von AEM SDK](/help/forms/assets/start-aem-sdk.png)
 
-1. [Hinzufügen des AEM Forms-Add-ons](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Laden Sie das AEM Forms-Add-on herunter und installieren Sie es, das mit der Version Ihres AEM SDK übereinstimmt, über das Portal für Softwareverteilung](https://experience.adobe.com/#/downloads) .[
+1. [AEM Forms-Add-on hinzufügen](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Laden Sie das AEM Forms-Add-on, das der Version Ihrer AEM-SDK entspricht, vom [Software Distribution](https://experience.adobe.com/#/downloads)Portal herunter und installieren Sie es.
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++AEM Forms-Add-on installieren:
+   +++Installieren des AEM Forms-Add-ons:
 
-   So installieren Sie das AEM Forms Add-on:
+   So installieren Sie das AEM Forms-Add-on:
 
-   1. Beenden Sie AEM SDK.
-   1. Fügen Sie die AEM Forms-Add-on-Datei (.far) zum Ordner &quot;`AEM SDK/crx-quickstart/install`&quot;hinzu,
+   1. AEM SDK stoppen.
+   1. Fügen Sie die AEM Forms-Add-on-Datei (.far) zum `AEM SDK/crx-quickstart/install` hinzu.
    1. Starten Sie AEM SDK neu.
 
 +++
@@ -92,19 +92,19 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
 1. [Konfigurieren von Benutzerberechtigungen](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Erstellen Sie Benutzer mit Entwicklungs-, Authoring- und anderen Berechtigungen und fügen Sie diese Benutzer vordefinierten Formulargruppen hinzu.
 
 
-1. [Adaptive Forms-Vorlagen hinzufügen](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Verwenden Sie AEM Archetypen 48 oder höher, um ein neues AEM-Projekt zu erstellen und es in Ihrem AEM SDK bereitzustellen. Das Projekt fügt Ihrem AEM SDK adaptive Forms-Vorlagen hinzu.
+1. [Adaptive Forms-Vorlagen hinzufügen](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Verwenden Sie AEM-Archetypen 48 oder höher, um ein neues AEM-Projekt zu erstellen und es in Ihrer AEM-SDK bereitzustellen. Das Projekt fügt Ihrer AEM-SDK Vorlagen für adaptive Forms hinzu.
 
    ![Adaptive Formularvorlagen](/help/forms/assets/adaptive-forms-templates.png)
 
-   +++ Adaptive Forms-Vorlagen zu Ihrem AEM SDK hinzufügen:
+   +++Hinzufügen von Vorlagen für adaptive Forms zu Ihrer AEM-SDK:
 
-   1. Führen Sie den folgenden Befehl aus, um ein AEM Projekt zu erstellen.
+   1. Führen Sie den folgenden Befehl aus, um ein AEM-Projekt zu erstellen.
 
       ```
       mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="48" -D appTitle=securbank -D appId=securbank -D groupId=com.securbank -D includeFormsenrollment="y" -D aemVersion="cloud"
       ```
 
-      ![AEM-Archetyoe-Project](/help/forms/assets/aem-archetype-project.png)
+      ![AEM-Archetype-Project](/help/forms/assets/aem-archetype-project.png)
 
    1. Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit. Sie können folgenden Befehl verwenden, um die Bereitstellung für Ihre lokale Entwicklungsumgebung durchzuführen.
 
@@ -114,7 +114,7 @@ Die lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwickl
       mvn -PautoInstallPackage clean install
       ```
 
-   Nach der Bereitstellung des AEM können Sie adaptive Forms-Vorlagen in Ihrer Umgebung sehen.
+   Nach der Bereitstellung des AEM-Projekts können Sie Vorlagen für adaptive Forms in Ihrer Umgebung sehen.
 
 +++
 
@@ -125,11 +125,11 @@ Detaillierte Anweisungen und eine schrittweise Anleitung zum Einrichten Ihrer lo
 
 ## Nächster Schritt
 
-Nach dem Konfigurieren der Entwicklungsumgebung können Sie ein adaptives Formular erstellen. Im nächsten Artikel lernen Sie
+Nach dem Konfigurieren der Entwicklungsumgebung können Sie ein adaptives Formular erstellen. Im nächsten Artikel lernen Sie Folgendes
 
 * Erstellen eines adaptiven Formulars aus der leeren Vorlage
-* Layout-Felder zur Anzeige und einfachen Annahme von Informationen.
-* Vorschau des Formulars
+* Layout-Felder zum Anzeigen und einfachen Akzeptieren von Informationen.
+* Vorschau des Formulars anzeigen.
 
 <!-- 
 

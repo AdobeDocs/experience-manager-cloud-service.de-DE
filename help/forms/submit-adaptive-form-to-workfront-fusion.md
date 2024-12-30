@@ -7,7 +7,7 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 100%
 
@@ -178,7 +178,7 @@ So konfigurieren Sie die Übermittlungsaktion des vorhandenen adaptiven Formular
 1. Gehen Sie zu **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Wählen Sie ein adaptives Formular aus und öffnen Sie es in einem Bearbeitungsmodus.
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
 
    ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 

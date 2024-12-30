@@ -1,18 +1,18 @@
 ---
-title: Fehlerbehebung bei Problemen mit SSL-Zertifikaten
+title: Fehlerbehebung bei SSL-Zertifikatsproblemen
 description: Erfahren Sie, wie Sie Probleme mit SSL-Zertifikaten beheben können, indem Sie häufige Ursachen identifizieren, damit Sie sichere Verbindungen aufrechterhalten können.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
+exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-
-# Fehlerbehebung bei Problemen mit SSL-Zertifikaten {#certificate-problems}
+# Fehlerbehebung bei SSL-Zertifikatsproblemen {#certificate-problems}
 
 Erfahren Sie, wie Sie Probleme mit SSL-Zertifikaten beheben können, indem Sie häufige Ursachen identifizieren, damit Sie sichere Verbindungen aufrechterhalten können.
 
@@ -20,15 +20,15 @@ Erfahren Sie, wie Sie Probleme mit SSL-Zertifikaten beheben können, indem Sie h
 
 ## Ungültiges Zertifikat {#invalid-certificate}
 
-Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel verwendet und den Schlüssel im DER-Format bereitgestellt hat.
+Dieser Fehler tritt auf, weil die Kundin bzw. der Kunde einen verschlüsselten privaten Schlüssel verwendet und den Schlüssel im DER-Format bereitgestellt hat.
 
 +++
 
 +++**Der private Schlüssel muss im PKCS 8-Format sein**
 
-## Der private Schlüssel muss das PKCS 8-Format aufweisen. {#pkcs-8}
+## Der private Schlüssel muss im PKCS 8-Format sein. {#pkcs-8}
 
-Dieser Fehler tritt auf, weil der Kunde einen verschlüsselten privaten Schlüssel verwendet und den Schlüssel im DER-Format bereitgestellt hat.
+Dieser Fehler tritt auf, weil die Kundin bzw. der Kunde einen verschlüsselten privaten Schlüssel verwendet und den Schlüssel im DER-Format bereitgestellt hat.
 
 +++
 
@@ -131,22 +131,22 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++**Zertifikatgültigkeit
 
-## Gültigkeit der Bescheinigung {#validity}
+## Zertifikatgültigkeit {#validity}
 
 Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindestens 90 Tage gültig ist. Überprüfen Sie die Gültigkeit der Zertifikatskette.
 
 +++
 
-++**Falsches SAN-Zertifikat wird auf meine Domäne angewendet
++++**Auf meine Domain wird ein falsches SAN-Zertifikat angewendet
 
-## Falsches SAN-Zertifikat wird auf meine Domäne angewendet {#wrong-san-cert}
+## Auf meine Domain wird ein falsches SAN-Zertifikat angewendet {#wrong-san-cert}
 
-Nehmen wir an, Sie möchten `dev.yoursite.com` und `stage.yoursite.com` mit Ihrer Nicht-Produktionsumgebung und `prod.yoursite.com` mit Ihrer Produktionsumgebung verknüpfen.
+Nehmen wir an, Sie möchten `dev.yoursite.com` und `stage.yoursite.com` mit Ihrer produktionsfremden Umgebung und `prod.yoursite.com` mit Ihrer Produktionsumgebung verknüpfen.
 
-Um das CDN für diese Domänen zu konfigurieren, müssen Sie für jede Domäne ein Zertifikat installiert haben. Installieren Sie daher ein Zertifikat, das für Ihre Nicht-Produktions-Domänen `*.yoursite.com` abdeckt, und ein anderes Zertifikat, das auch für Ihre Produktionsdomänen gilt.`*.yoursite.com`
+Um das CDN für diese Domains zu konfigurieren, muss für jede Domain ein Zertifikat installiert sein. Installieren Sie daher ein Zertifikat, das `*.yoursite.com` für Ihre produktionsfremden Umgebungen abdeckt, und ein anderes Zertifikat, das zudem `*.yoursite.com` für Ihre Produktions-Domains abdeckt.
 
-Diese Konfiguration ist gültig. Wenn Sie jedoch eines der Zertifikate aktualisieren, da beide Zertifikate denselben SAN-Eintrag abdecken, installiert das CDN das neueste Zertifikat auf allen entsprechenden Domänen, was unerwartet erscheinen könnte.
+Diese Konfiguration ist gültig. Da beide Zertifikate denselben SAN-Eintrag abdecken, installiert das CDN bei Aktualisierung eines Zertifikats das neueste Zertifikat auf allen entsprechenden Domains, was unerwartet sein kann.
 
-Auch wenn dies unerwartet sein kann, ist dies kein Fehler und das Standardverhalten des zugrunde liegenden CDN. Wenn Sie über zwei oder mehr SAN-Zertifikate verfügen, die denselben SAN-Domäneneintrag abdecken, wird die Domäne für die Domäne installiert, wenn die Domäne durch ein Zertifikat abgedeckt ist und die andere aktualisiert wird.
+Auch wenn dies unerwartet sein kann, ist dies kein Fehler und entspricht dem Standardverhalten des zugrunde liegenden CDNs. Wenn Sie über zwei oder mehr SAN-Zertifikate verfügen, die denselben SAN-Domain-Eintrag abdecken, und diese Domain durch eines der Zertifikate abgedeckt ist und ein anderes aktualisiert wird, wird letzteres nun für die Domain installiert.
 
 +++

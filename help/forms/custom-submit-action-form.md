@@ -8,7 +8,7 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1669'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -73,7 +73,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Wenn Sie Dateien an das adaptive Formular anhängen, validiert der Server die Dateianhänge nach der Übermittlung des adaptiven Formulars und gibt eine Fehlermeldung zurück, wenn eine der folgenden Bedingungen vorliegt:
 
-* Dateianhänge enthalten einen Dateinamen, der mit dem Zeichen (.) beginnt, die Zeichen \ / : * ? &quot; &lt; > | ; % $ beinhaltet oder spezielle Dateinamen enthält, die für das Windows-Betriebssystem reserviert sind, wie `nul`, `prn`, `con`, `lpt` oder `com`.
+* Dateianhänge enthalten einen Dateinamen, der mit dem Zeichen (.) beginnt, enthält \ / : * ? &quot; &lt; > | ; % $ beinhaltet oder spezielle Dateinamen enthält, die für das Windows-Betriebssystem reserviert sind, wie `nul`, `prn`, `con`, `lpt` oder `com`.
 
 * Die Größe des Dateianhangs beträgt 0 Byte.
 

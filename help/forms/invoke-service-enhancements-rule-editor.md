@@ -1,116 +1,116 @@
 ---
-title: Welche Verbesserungen wurden an der VRE für den Invoke-Dienst für Formulare vorgenommen, die auf Kernkomponenten basieren?
-description: Verbesserungen beim Aufrufdienst für den Regeleditor
+title: Welche Verbesserungen gibt es beim VRE-Dienst aufrufen für Formulare, die auf Kernkomponenten basieren?
+description: Verbesserungen am Aufruf-Service für den Regeleditor
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-keywords: Dienstverbesserungen in VRE aufrufen, Dropdown-Optionen mit dem invoke-Dienst ausfüllen, wiederholbares Bedienfeld mit Ausgabe des invoke-Dienstes festlegen, Bedienfeld mit Ausgabe des invoke-Dienstes festlegen und Ausgabeparameter des invoke-Dienstes zum Überprüfen anderer Felder verwenden.
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 4%
 
 ---
 
-
-# Verwenden des Aufrufdienstes im Visual Rule Editor für Formulare, die auf Kernkomponenten basieren
+# Verwenden des Aufrufdienstes im visuellen Regeleditor für Formulare, die auf Kernkomponenten basieren
 
 <span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
 
-Der Visual Rule Editor in einem adaptiven Formular unterstützt die Funktion **Dienst aufrufen** , mit der Sie einen Dienst aus der Liste der für Ihre Instanz konfigurierten Formulardatenmodelle (FDM) auswählen können. Sie können Formularfelder direkt den Eingabeparametern des Dienstes zuordnen. Um Formularfelder den Ausgabeparametern zuzuordnen, verwenden Sie die Ereignis-Payload-Option für den angegebenen Formulardatenmodelldienst. Darüber hinaus können Sie mit dem visuellen Regeleditor Regeln für Erfolgs- und Fehler-Handler für Vorgänge vom Typ **Dienst aufrufen** erstellen, die auf den Ausgabeantworten basieren. Erfolgshandler verwalten die erfolgreiche Ausführung des Vorgangs **Dienst aufrufen** , während Fehler-Handler alle aufgetretenen Fehler beheben.
+Der visuelle Regeleditor in einem adaptiven Formular unterstützt die Funktion **Dienst aufrufen** mit der Sie einen Dienst aus der Liste der für Ihre Instanz konfigurierten Formulardatenmodelle (FDM) auswählen können. Sie können Formularfelder direkt den Eingabeparametern des Dienstes zuordnen. Um Formularfelder den Ausgabeparametern zuzuordnen, verwenden Sie die Payload-Option für das Ereignis für den angegebenen Formulardatenmodell-Service. Darüber hinaus können Sie mit dem visuellen Regeleditor basierend auf den Ausgabeantworten Regeln für Erfolgs- und **für Vorgänge** Dienst aufrufen“ erstellen. Erfolgs-Handler verwalten die erfolgreiche Ausführung des Vorgangs **Service aufrufen** während Fehler-Handler alle Fehler beheben, die auftreten.
 
-### Vorteile der Verwendung des Aufrufdienstes im Regeleditor des Formulars
+### Vorteile der Verwendung des Service „Invoke“ im Regeleditor des Formulars
 
-Im Folgenden finden Sie einige Vorteile der Verwendung des Vorgangs &quot;Invoke Service&quot;im Regeleditor eines Adaotive-Formulars:
+Die Verwendung des Vorgangs „Service aufrufen“ im Regeleditor eines adaptiven Formulars bietet folgende Vorteile:
 
-* **Optimierte Integration**: Der Visual Rule Editor vereinfacht die Integration externer Dienste oder APIs in Ihre adaptive Forms. Mit dem **Aufrufdienst** können Sie Formulare einfach mit verschiedenen Datenquellen und Diensten verbinden, ohne dass eine komplexe Codierung erforderlich ist, wodurch die Formularintegration effizienter wird.
+* **Optimierte Integration**: Der Visual Rule Editor vereinfacht die Integration externer Services oder APIs in Ihren adaptiven Forms. Durch die Verwendung von **Dienst aufrufen** können Sie Formulare einfach mit verschiedenen Datenquellen und Diensten verbinden, ohne dass eine komplexe Codierung erforderlich ist, was die Formularintegration effizienter macht.
 
-* **Dynamische Reaktionsverarbeitung**: Sie können Erfolgs- und Fehlerantworten basierend auf den Ausgabeantworten des **Aufrufdienstes** verwalten, sodass Formulare dynamisch auf verschiedene Szenarien reagieren können. Dadurch wird sichergestellt, dass Formulare unterschiedliche Bedingungen angemessen handhaben, was die Flexibilität und Kontrolle verbessert.
+* **Dynamische Antwortverarbeitung**: Sie können Erfolgs- und Fehlerantworten basierend auf den Ausgabeantworten des **Service aufrufen** verwalten, sodass Formulare dynamisch auf verschiedene Szenarien reagieren können. Dadurch wird sichergestellt, dass Formulare verschiedene Bedingungen ordnungsgemäß verarbeiten, was die Flexibilität und Kontrolle verbessert.
 
-* **Verbesserte Benutzerinteraktion**: Durch die Verwendung des **Aufrufdienstes** im Regeleditor wird eine Echtzeitüberprüfung in Ihren Formularen ermöglicht, was eine bessere Benutzererfahrung ermöglicht. Außerdem wird sichergestellt, dass Daten serverseitig genau validiert werden, wodurch Fehler reduziert und die Formularzuverlässigkeit verbessert wird.
+* **Verbesserte Benutzerinteraktion**: Die Verwendung von **Service aufrufen** im Regeleditor ermöglicht die Echtzeit-Validierung innerhalb Ihrer Formulare und bietet ein besseres Benutzererlebnis. Außerdem wird sichergestellt, dass die Daten Server-seitig genau validiert werden, was Fehler reduziert und die Zuverlässigkeit der Formulare verbessert.
 
 ## Aufrufen von Service-Handlern für Erfolgs- und Fehlerantworten
 
 >[!NOTE]
 >
-> Sie können die Erfolgs- und Fehler-Handler für den **Aufrufdienst** nur für Formulare verwenden, die auf Kernkomponenten basieren. Forms, die auf Foundation-Komponenten basiert, unterstützt keine Erfolgs- und Fehler-Handler für **Aufrufdienst**.
+> Sie können die Handler **Dienst aufrufen** Erfolg und Fehler nur für Formulare verwenden, die auf Kernkomponenten basieren. Auf Foundation-Komponenten basierende Forms unterstützen keine **Service aufrufen** Erfolgs- und Fehlerhandler.
 
-Mit dem visuellen Regeleditor können Sie Regeln für Erfolgs- und Fehler-Handler für Vorgänge vom Typ **Dienst aufrufen** erstellen, die auf den Ausgabeantworten basieren. Die folgende Abbildung zeigt den **Aufrufdienst** im visuellen Regeleditor für ein adaptives Formular:
+Mit dem visuellen Regeleditor können Sie basierend auf den Ausgabeantworten Regeln für Erfolgs **und Fehlerhandler für Vorgänge** Dienst aufrufen“ erstellen. Die folgende Abbildung zeigt den **Service aufrufen** im visuellen Regeleditor für ein adaptives Formular:
 
-![Dienst-Handler aufrufen](/help/forms/assets/invoke-service-rule-editor.png)
+![Service-Handler aufrufen](/help/forms/assets/invoke-service-rule-editor.png)
 
-Um den Erfolgs- oder Fehler-Handler hinzuzufügen, klicken Sie auf **[!UICONTROL Erfolgshandler hinzufügen]** bzw. auf **[!UICONTROL Fehler-Handler hinzufügen]** .
+Um einen Erfolgs- oder Fehlerhandler hinzuzufügen, klicken Sie **[!UICONTROL Erfolgs-Handler hinzufügen]** bzw **[!UICONTROL auf]** Fehler-Handler hinzufügen.
 
-Wenn Sie auf **[!UICONTROL Erfolgshandler hinzufügen]** klicken, wird der Regeleditor **[!UICONTROL Aufrufdienst-Erfolgshandler]** angezeigt, mit dem Sie Regeln oder Logik zur Verwaltung der Ausgabedarstellung für den **Aufrufdienst** festlegen können, wenn der Vorgang erfolgreich war. Sie können Regeln auch ohne Bedingungen angeben. Sie können jedoch Bedingungen für den Erfolgshandler hinzufügen, indem Sie auf die Option **[!UICONTROL Bedingung hinzufügen]** klicken.
+Wenn Sie auf **[!UICONTROL Add Success Handler]** klicken, wird der Regeleditor **[!UICONTROL Invoke Service Success Handler]** angezeigt, in dem Sie Regeln oder Logiken angeben können, um die Antwort **Invoke Service** zu verwalten, wenn der Vorgang erfolgreich war. Sie können Regeln auch ohne Definition von Bedingungen angeben. Sie können jedoch Bedingungen für den Erfolgshandler hinzufügen, indem Sie auf die Option **[!UICONTROL Bedingung hinzufügen]** klicken.
 
-![Aufrufen des Erfolgshadlers des Dienstes](/help/forms/assets/invoke-service-success-handler.png)
+![Service-Erfolgs-Handler aufrufen](/help/forms/assets/invoke-service-success-handler.png)
 
-Sie können mehrere Regeln hinzufügen, um erfolgreiche Antworten für den Vorgang **Dienst aufrufen** zu verarbeiten:
+Sie können mehrere Regeln hinzufügen, um erfolgreiche Antworten für den Vorgang **Service aufrufen** zu verarbeiten:
 
-![Mehrere Erfolgshandler](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
+![Mehrere Erfolgs-Handler](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
-Auf ähnliche Weise können Sie Regeln hinzufügen, um die Ausgabeantwort **Dienst aufrufen** zu verarbeiten, wenn der Vorgang nicht erfolgreich ist. Die folgende Abbildung zeigt den Regeleditor **[!UICONTROL Dienst-Fehler-Handler aufrufen]** :
+Auf ähnliche Weise können Sie Regeln hinzufügen, um die **Service aufrufen**-Ausgabeantwort zu verarbeiten, wenn der Vorgang nicht erfolgreich ist. In der folgenden Abbildung wird der Regeleditor **[!UICONTROL Invoke Service Failure Handler]** angezeigt:
 
-![Aufrufen des Fehler-Handlers des Dienstes](/help/forms/assets/invoke-service-failue-handler.png)
+![Service-Fehler-Handler aufrufen](/help/forms/assets/invoke-service-failue-handler.png)
 
-Sie können auch mehrere Regeln hinzufügen, um nicht erfolgreiche Antworten aus dem Vorgang **Dienst aufrufen** zu verarbeiten.
+Sie können auch mehrere Regeln hinzufügen, um nicht erfolgreiche Antworten aus dem Vorgang **Service aufrufen** zu verarbeiten.
 
-Mit der Funktion **Fehlervalidierung auf Server aktivieren** können vom Autor hinzugefügte Validierungen beim Entwerfen eines adaptiven Formulars auch auf dem Server ausgeführt werden.
+Die Funktion **Fehlervalidierung auf dem Server aktivieren** ermöglicht Validierungen, die vom Autor beim Entwerfen eines adaptiven Formulars hinzugefügt wurden, um auch auf dem Server ausgeführt zu werden.
 
 ## Voraussetzungen für die Verwendung des Aufrufdienstes im Regeleditor
 
-Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Sie den **Aufrufdienst** im Regeleditor verwenden:
+Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Sie **Service aufrufen** im Regeleditor verwenden:
 
-* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier klicken](/help/forms/configure-data-sources.md).
-* Erstellen Sie ein Formulardatenmodell mit der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier klicken](/help/forms/create-form-data-models.md).
+* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier ](/help/forms/configure-data-sources.md).
+* Erstellen Sie ein Formulardatenmodell mithilfe der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier](/help/forms/create-form-data-models.md).
 * Stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Ausführliche Anweisungen zum Aktivieren von Kernkomponenten für Ihre Umgebung finden Sie, indem Sie [hier klicken](/help/forms/enable-adaptive-forms-core-components.md).
 
-## Untersuchen von Invoke Service durch verschiedene Anwendungsfälle
+## Erkunden von Invoke Service durch verschiedene Anwendungsfälle
 
-Mit dem **Aufrufdienst** des Visual Rule Editors können Sie mehrere nützliche Vorgänge ausführen. Sie können sie zum Ausfüllen von Dropdown-Optionen, zum Festlegen wiederholbarer oder einfacher Bedienfelder und zum Überprüfen von Formularfeldern verwenden, die alle auf der Ausgabeantwort des **Aufrufdienstes** basieren. So erhöhen Sie die Flexibilität und Interaktivität Ihrer Formulare.
+Mit dem Service „Invoke **des visuellen Regeleditors** Sie mehrere nützliche Vorgänge ausführen. Sie können damit Dropdown-Optionen ausfüllen, wiederholbare oder einfache Bereiche festlegen und Formularfelder validieren, und zwar alles basierend auf der Ausgabeantwort des **Service aufrufen**. Dadurch wird die Flexibilität und Interaktivität Ihrer Formulare verbessert.
 
-In der folgenden Tabelle werden einige Szenarien beschrieben, in denen der **Aufrufdienst** verwendet werden kann:
+In der folgenden Tabelle werden einige Szenarien beschrieben, in denen der **Service aufrufen** verwendet werden kann:
 
 | **Nutzungsszenario** | **Beschreibung** |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **Füllen von Dropdown-Optionen mithilfe der Ausgabe des Aufrufdienstes** | Füllt Dropdown-Optionen dynamisch basierend auf Daten, die aus der Ausgabe des Aufrufdienstes abgerufen wurden. [Klicken Sie hier](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service), um die Implementierung anzuzeigen. |
-| **Festlegen eines wiederholbaren Bereichs mithilfe der Ausgabe des Aufrufdienstes** | Konfiguriert ein wiederholbares Bedienfeld mithilfe von Daten aus der Ausgabe des Aufrufdienstes, was dynamische Bedienfelder ermöglicht. [Klicken Sie hier](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), um die Implementierung anzuzeigen. |
-| **Bereich mithilfe der Ausgabe des Aufrufdienstes festlegen** | Legt den Inhalt oder die Sichtbarkeit eines Bedienfelds mithilfe bestimmter Werte aus der Ausgabe des Aufrufdienstes fest. [Klicken Sie hier](#use-case-3-set-panel-using-output-of-invoke-service), um die Implementierung anzuzeigen. |
-| **Verwenden Sie den Ausgabeparameter des Aufrufdienstes, um andere Felder zu validieren** | Verwendet bestimmte Ausgabeparameter aus dem Aufrufdienst , um die Formularfelder zu überprüfen. [Klicken Sie hier](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields), um die Implementierung anzuzeigen. |
+| **Füllen von Dropdown-Optionen mithilfe der Ausgabe von „Service aufrufen“** | Dynamisches Füllen der Dropdown-Optionen auf der Grundlage der Daten, die aus der Ausgabe des Service aufrufen abgerufen wurden. [Klicken Sie hier](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service), um die Implementierung zu sehen. |
+| **Festlegen eines wiederholbaren Bereichs mithilfe der Ausgabe von „Service aufrufen“** | Konfiguriert ein wiederholbares Bedienfeld mithilfe von Daten aus der Ausgabe des Aufrufdienstes und ermöglicht so dynamische Bedienfelder. [Klicken Sie hier](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), um die Implementierung zu sehen. |
+| **Bereich mithilfe der Ausgabe von „Service aufrufen“** | Legt den Inhalt oder die Sichtbarkeit eines Bedienfelds anhand bestimmter Werte aus der Ausgabe des aufrufenden Services fest. [Klicken Sie hier](#use-case-3-set-panel-using-output-of-invoke-service), um die Implementierung zu sehen. |
+| **Verwenden Sie den Ausgabeparameter von „Service aufrufen“, um andere Felder zu überprüfen** | Verwendet bestimmte Ausgabeparameter aus dem Service „Invoke“, um die Formularfelder zu validieren. [Klicken Sie hier](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields), um die Implementierung zu sehen. |
 
-Erstellen Sie ein `Get Information` -Formular, das Werte basierend auf der Eingabe im Textfeld `Pet ID` abruft. Der folgende Screenshot zeigt das in diesen Anwendungsfällen verwendete Formular:
+Erstellen Sie ein `Get Information` Formular, das Werte basierend auf der Eingabe abruft, die in das Textfeld `Pet ID` eingegeben wurde. Der folgende Screenshot zeigt das Formular, das in diesen Anwendungsfällen verwendet wird:
 
-![Informationsformular abrufen](/help/forms/assets/get-information-form.png)
+![Formular abrufen](/help/forms/assets/get-information-form.png)
 
 **Formularfelder**
 
-Fügen Sie dem Formular die folgenden Felder hinzu:
-* **Pet-ID eingeben**: Textfeld
+Fügen Sie die folgenden Felder zum Formular hinzu:
+* **Haustier-ID eingeben**: textbox
 * **Foto-URLs auswählen**: Dropdown
 * **Tags**: Bedienfeld
-   * Name: Textbox
-   * ID: Textbox
+   * Name: textbox
+   * ID: Textfeld
 * **Kategorie**: Bedienfeld
-   * Name: Textbox
+   * Name: textbox
 * **Senden**: Senden-Schaltfläche
 
 >[!NOTE]
 >
-> Wählen Sie im Feld **Bindungsverweis** im Dialogfeld **Eigenschaften** der Formularfelder die Option ![folderSearch_18](assets/folder-search-icon.svg) und navigieren Sie zu der binären Eigenschaft, die Sie im Formulardatenmodell (FDM) hinzugefügt haben.
+> Wählen Sie im Feld **Bindungsverweis** im Dialogfeld **Eigenschaften** der Formularfelder ![foldersearch_18](assets/folder-search-icon.svg) aus und navigieren Sie zur binären Eigenschaft, die Sie im Formulardatenmodell (FDM) hinzugefügt haben.
 
 **Konfigurieren von Bedienfeldern**
 
-Legen Sie die Bedienfelder mit den folgenden Einschränkungen als wiederholend fest:
+Legen Sie die Bereiche mit den folgenden Einschränkungen als repetitiv fest:
 * Mindestwert: 1
 * Höchstwert: 4
 
-Sie können die Werte der sich wiederholenden Bedienfelder an Ihre Anforderungen anpassen.
+Sie können die Werte der sich wiederholenden Bereiche an Ihre Anforderungen anpassen.
 
 **Datenquelle**
 
-In diesem Beispiel wird die API [Swagger Petstore](https://petstore.swagger.io/) verwendet, um eine Datenquelle zu konfigurieren. Das [Formulardatenmodell](/help/forms/create-form-data-models.md) ist für den Dienst [getPetById](https://petstore.swagger.io/#/pet/getPetById) konfiguriert, der die Heimtierdetails basierend auf der eingegebenen ID abruft.
+In diesem Beispiel wird die [Swagger Petstore](https://petstore.swagger.io/)-API zum Konfigurieren einer Datenquelle verwendet. Das [Formulardatenmodell](/help/forms/create-form-data-models.md) ist für den Service [getPetById](https://petstore.swagger.io/#/pet/getPetById) konfiguriert, der je nach eingegebener ID Heimtierdetails abruft.
 
-Posten wir die folgende JSON mit dem Dienst [addPet](https://petstore.swagger.io/#/pet/addPet) in der API [Swagger Petstore](https://petstore.swagger.io/) :
+Posten wir die folgende JSON mit dem Service [addPet](https://petstore.swagger.io/#/pet/addPet) in der API [Swagger Petstore](https://petstore.swagger.io/):
 
 ```
 {
@@ -143,93 +143,93 @@ Posten wir die folgende JSON mit dem Dienst [addPet](https://petstore.swagger.io
 ```
 
 
-Regeln und Logiken werden mithilfe der Aktion **Dienst aufrufen** im Regeleditor im Textfeld `Pet ID` implementiert, um die erwähnten Anwendungsfälle zu demonstrieren.
+Regeln und Logik werden mithilfe der Aktion **Service aufrufen** im Regeleditor im `Pet ID`-Textfeld implementiert, um die erwähnten Anwendungsfälle zu demonstrieren.
 
-Im Folgenden wird die Implementierung der einzelnen Anwendungsfälle detailliert beschrieben.
+Im Folgenden wird nun die Implementierung der einzelnen Anwendungsfälle im Detail untersucht.
 
-### Anwendungsfall 1: Füllen von Dropdown-Werten mithilfe der Ausgabe des Invoke Service
+### Anwendungsfall 1: Auffüllen von Dropdown-Werten mithilfe der Ausgabe von „Service aufrufen“
 
-Dieser Anwendungsfall zeigt, wie Dropdown-Optionen dynamisch basierend auf der Ausgabe eines `Invoke Service` gefüllt werden.
+Dieses Anwendungsbeispiel zeigt, wie Dropdown-Optionen basierend auf der Ausgabe eines `Invoke Service` dynamisch aufgefüllt werden.
 
 #### Implementierung
 
-Erstellen Sie dazu eine Regel im Textfeld `Pet ID` , um den Dienst `getPetById` aufzurufen. Setzen Sie in der Regel die Eigenschaft `enum` des Dropdown-Menüs `photo-url` in **[!UICONTROL Erfolgshandler hinzufügen]** auf `photoUrls`.
+Erstellen Sie dazu eine Regel im `Pet ID` Textfeld, um den `getPetById`-Service aufzurufen. Legen Sie in der Regel die `enum`-Eigenschaft des `photo-url`-Dropdown-Menüs unter &quot;**[!UICONTROL hinzufügen“ auf `photoUrls` fest]**.
 
 ![Dropdown-Wert festlegen](/help/forms/assets/set-dropdownoption.png)
 
 #### Ausgabe
 
-Geben Sie `101` in das Textfeld `Pet ID` ein, um die Dropdown-Optionen basierend auf dem eingegebenen Wert dynamisch auszufüllen.
+Geben Sie `101` in das Textfeld `Pet ID` ein, um die Dropdown-Optionen basierend auf dem eingegebenen Wert dynamisch zu füllen.
 
 ![Ergebnis](/help/forms/assets/output1.png)
 
-### Anwendungsfall 2: Festlegen eines wiederholbaren Bereichs mithilfe der Ausgabe des Invoke Service
+### Anwendungsfall 2: Festlegen eines wiederholbaren Bereichs mithilfe der Ausgabe von „Service aufrufen“
 
-Dieser Anwendungsfall zeigt, wie wiederholbare Bedienfelder dynamisch basierend auf der Ausgabe eines **Aufrufdienstes** gefüllt werden.
+Dieses Anwendungsbeispiel zeigt, wie wiederholbare Bereiche basierend auf der Ausgabe eines „Service **&quot; dynamisch** werden.
 
 #### Überlegungen
 
-* Stellen Sie sicher, dass der Name des wiederholbaren Bereichs mit dem Parameter des **Aufrufdienstes** übereinstimmt, für den Sie den Bereich festlegen möchten.
+* Stellen Sie sicher, dass der Name des wiederholbaren Bereichs mit dem Parameter des **Service aufrufen** übereinstimmt, für den Sie den Bereich festlegen möchten.
 * Das Bedienfeld wiederholt sich für die Anzahl der Werte, die vom entsprechenden Feld **Dienst aufrufen** zurückgegeben werden.
 
 #### Implementierung
 
-Erstellen Sie eine Regel im Textfeld `Pet ID` , um den Dienst `getPetById` aufzurufen. Fügen Sie in **[!UICONTROL Erfolgshandler hinzufügen]** eine weitere Antwort des Erfolgshandlers hinzu. Setzen Sie den Wert des Bereichs `tags` in der Regel auf `tags`.
+Erstellen Sie eine Regel für das `Pet ID` Textfeld, um den `getPetById`-Service aufzurufen. Fügen **[!UICONTROL in &quot;]** hinzufügen“ eine weitere Erfolgshandler-Antwort hinzu. Legen Sie in der Regel den Wert des `tags` Bedienfelds auf `tags` fest.
 
-![Regel für wiederholbaren Bereich erstellen](/help/forms/assets/create-rule-repeatable-panel.png)
+![Regel für wiederholbare Bereiche erstellen](/help/forms/assets/create-rule-repeatable-panel.png)
 
 #### Ausgabe
 
-Geben Sie `101` in das Textfeld `Pet ID` ein, um den wiederholbaren Bereich dynamisch basierend auf dem Eingabewert zu füllen.
+Geben Sie `101` in das Textfeld `Pet ID` ein, um den wiederholbaren Bereich basierend auf dem Eingabewert dynamisch zu füllen.
 
 ![Ausgabe](/help/forms/assets/output2.png)
 
-### Nutzungsszenario 3: Bedienfeld mithilfe der Ausgabe des Invoke-Dienstes festlegen
+### Anwendungsfall 3: Festlegen des Bedienfelds mit der Ausgabe von „Service aufrufen“
 
-Dieser Anwendungsfall zeigt, wie Sie den Wert eines Bedienfelds dynamisch festlegen, basierend auf der Ausgabe eines **Aufrufdienstes**.
+Dieser Anwendungsfall zeigt, wie Sie den Wert eines Bedienfelds basierend auf der Ausgabe eines „Service **&quot; dynamisch**.
 
 #### Überlegungen
 
-* Stellen Sie sicher, dass der Name des Bedienfelds mit dem Parameter des **Aufrufdienstes** übereinstimmt, für den Sie den Bereich festlegen möchten.
-* Das Bedienfeld wiederholt sich für die Anzahl der Werte, die vom entsprechenden Feld &quot;Dienst aufrufen&quot;zurückgegeben werden.
+* Stellen Sie sicher, dass der Name des Bedienfelds mit dem Parameter des **Service aufrufen** übereinstimmt, für den Sie das Bedienfeld festlegen möchten.
+* Das Bedienfeld wiederholt sich für die Anzahl der Werte, die vom entsprechenden Feld „Service aufrufen“ zurückgegeben werden.
 
 #### Implementierung
 
-Erstellen Sie eine Regel im Textfeld `Pet ID` , um den Dienst `getPetById` aufzurufen. Fügen Sie in **[!UICONTROL Erfolgshandler hinzufügen]** eine weitere Antwort des Erfolgshandlers hinzu. Setzen Sie den Wert des Textfelds `categoryname` in der Regel auf `category.name`.
+Erstellen Sie eine Regel für das `Pet ID` Textfeld, um den `getPetById`-Service aufzurufen. Fügen **[!UICONTROL in &quot;]** hinzufügen“ eine weitere Erfolgshandler-Antwort hinzu. Legen Sie in der Regel den Wert des `categoryname` Textfelds auf `category.name` fest.
 
-![Regel für wiederholbaren Bereich erstellen](/help/forms/assets/set-panel-values.png)
+![Regel für wiederholbare Bereiche erstellen](/help/forms/assets/set-panel-values.png)
 
 #### Ausgabe
 
-Geben Sie `101` in das Textfeld `Pet ID` ein, um den Bereich dynamisch basierend auf dem Eingabewert zu füllen.
+Geben Sie `101` in das Textfeld `Pet ID` ein, um den Bereich basierend auf dem Eingabewert dynamisch zu füllen.
 
 ![Ausgabe](/help/forms/assets/output3.png)
 
-### Nutzungsszenario 4: Verwenden Sie den Ausgabeparameter des Aufrufdienstes, um andere Felder zu validieren
+### Anwendungsfall 4: Verwenden des Ausgabeparameters „Service aufrufen“, um andere Felder zu validieren
 
-Dieser Anwendungsfall zeigt, wie Sie die Ausgabe eines **Aufrufdienstes** verwenden, um andere Formularfelder dynamisch zu überprüfen.
+Dieser Anwendungsfall zeigt, wie Sie die Ausgabe eines **Service aufrufen** zur dynamischen Validierung anderer Formularfelder verwenden.
 
 #### Implementierung
 
-Erstellen Sie eine Regel im Textfeld `Pet ID` , um den Dienst `getPetById` aufzurufen. Fügen Sie in **[!UICONTROL Fehler-Handler hinzufügen]** eine Antwort des Fehler-Handlers hinzu. Blenden Sie die Schaltfläche **Senden** aus, wenn ein falscher `Pet ID` eingegeben wird.
+Erstellen Sie eine Regel für das `Pet ID` Textfeld, um den `getPetById`-Service aufzurufen. Fügen **[!UICONTROL in „Fehler-Handler]**&quot; eine Fehler-Handler-Antwort hinzu. Blenden Sie die **Senden** aus, wenn eine falsche `Pet ID` eingegeben wurde.
 
-![Fehler-Handler](/help/forms/assets/create-rule-failure-handler.png)
+![Fehlerhandler](/help/forms/assets/create-rule-failure-handler.png)
 
 #### Ausgabe
 
-Geben Sie `102` in das Textfeld `Pet ID` ein, und die Schaltfläche **Senden** ist ausgeblendet.
+Geben Sie `102` in das `Pet ID` Textfeld ein, und die Schaltfläche **Senden** ist ausgeblendet.
 
 ![Ausgabe](/help/forms/assets/output4.png)
 
 ## Häufig gestellte Fragen
 
-**F: Was passiert, wenn ich eine Regel mit dem Invoke-Dienst erstellt und dann auf die neueste Version der Kernkomponenten aktualisiert habe?**
+**F: Was passiert, wenn ich eine Regel mit dem Service „Invoke“ erstellt und dann auf die neueste Version der Kernkomponenten aktualisiert habe?**
 
-**A:** Wenn Sie auf die neueste Version der Kernkomponenten aktualisieren, wird die Regel **Dienst aufrufen** automatisch auf die neueste Benutzeroberfläche aktualisiert, da sie abwärtskompatibel ist.
+**A:** Wenn Sie ein Upgrade auf die neueste Version der Kernkomponenten durchführen, wird die Regel **Service aufrufen** automatisch auf die neueste Benutzeroberfläche aktualisiert, da sie abwärtskompatibel ist.
 
-**Q: Kann ich mehrere Regeln hinzufügen, um erfolgreiche oder fehlgeschlagene Antworten für den Vorgang &quot;Invoke Service&quot;zu verarbeiten?**
+**F: Kann ich mehrere Regeln hinzufügen, um erfolgreiche oder fehlgeschlagene Antworten für den Vorgang „Service aufrufen“ zu verarbeiten?**
 
-**A:** Ja, Sie können mehrere Regeln hinzufügen, um erfolgreiche oder fehlgeschlagene Antworten für den Vorgang **Dienst aufrufen** zu verarbeiten.
+**A:** Ja, Sie können mehrere Regeln hinzufügen, um erfolgreiche oder fehlgeschlagene Antworten für den Vorgang **Service aufrufen** zu verarbeiten.
 
 ## Verwandte Artikel
 
@@ -242,4 +242,3 @@ Geben Sie `102` in das Textfeld `Pet ID` ein, und die Schaltfläche **Senden** i
 ## Zusätzliche Ressourcen
 
 {{see-also-rule-editor}}
-

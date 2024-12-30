@@ -1,6 +1,6 @@
 ---
-title: Was ist der Unterschied zwischen den Regeleditoren für Foundation- und Kernkomponenten?
-description: In diesem Artikel wird der Unterschied zwischen den Regeleditoren für Foundation- und Kernkomponenten erläutert
+title: Was ist der Unterschied zwischen dem Regel-Editor von Foundation und dem Regeleditor für Kernkomponenten?
+description: In diesem Artikel wird der Unterschied zwischen dem Regel-Editor von Foundation und dem Regeleditor für Kernkomponenten erläutert
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
@@ -14,7 +14,7 @@ ht-degree: 16%
 
 # Unterschiede in verschiedenen Editionen des Regeleditors
 
-Dieser Artikel bietet einen umfassenden Vergleich der verschiedenen Editionen, in dem die jeweiligen Funktionen, Stärken und möglichen Einschränkungen hervorgehoben werden. Indem Sie diese Unterschiede untersuchen, können Benutzer fundierte Entscheidungen darüber treffen, welche Version ihren spezifischen Anforderungen und Anforderungen am besten entspricht, und sicherstellen, dass sie das gesamte Potenzial des Regeleditors ausschöpfen.
+Dieser Artikel bietet einen umfassenden Vergleich der verschiedenen Editionen, wobei die unterschiedlichen Funktionen, Stärken und potenziellen Einschränkungen hervorgehoben werden. Durch die Untersuchung dieser Unterschiede können Benutzerinnen und Benutzer fundierte Entscheidungen darüber treffen, welche Edition für ihre spezifischen Anforderungen und Anforderungen am besten geeignet ist, und so sicherstellen, dass sie das volle Potenzial des Regeleditors nutzen.
 
 ## Unterschied zwischen dem Foundation-Regeleditor und dem Kernkomponenten-Regeleditor
 
@@ -22,7 +22,7 @@ Dieser Artikel bietet einen umfassenden Vergleich der verschiedenen Editionen, i
 
 >[!NOTE]
 >
-> Detaillierte Informationen zum Erstellen und Verwenden benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms (Kernkomponenten)](/help/forms/create-and-use-custom-functions.md) .
+> Weitere Informationen zur Erstellung und Verwendung benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms (Kernkomponenten)](/help/forms/create-and-use-custom-functions.md) .
 
 
 ## Siehe auch

@@ -7,7 +7,7 @@ feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 

@@ -8,7 +8,7 @@ exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Bei von Adobe verwalteten CDNs sind bei Verwendung von DV-SSL-Zertifikaten nur S
 
 **So fügen Sie eine CDN-Konfiguration hinzu:**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Führen Sie je nach Anwendungsfall einen der folgenden Schritte aus:
 

@@ -4,13 +4,13 @@ Description: Learn how to integrate your Marketo Engage instance with AEM Forms 
 Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
+source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 9%
 
 ---
-
 
 # Konfigurieren eines neuen Formulars zur Integration mit Marketo Engage
 
@@ -18,55 +18,55 @@ ht-degree: 9%
 
 ![Arbeitsablauf](/help/forms/assets/workflow-marketo-4.png)
 
-Nachdem Sie die Cloud-Service-Konfiguration zur Integration von Marketo Engage in AEM Forms erstellt haben, können Sie ein adaptives Formular konfigurieren, um es in [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) zu integrieren.
+Nachdem Sie die Cloud Service-Konfiguration für die Integration von Marketo Engage mit AEM Forms erstellt haben, können Sie ein adaptives Formular für die Integration mit [Adobe Marketo Engage konfigurieren](https://experienceleague.adobe.com/en/docs/marketo/using/home).
 
-Sie können Marketo Engage mit dem Formularassistenten mit einem adaptiven Formular verbinden, was den Konfigurationsprozess vereinfacht, indem Sie die einzelnen Schritte durchlaufen. Dazu gehören die Auswahl von Vorlagen, Stilen und Datenfeldern sowie die Einrichtung des Daten-Mappings, um sicherzustellen, dass Ihr Formular nach seiner Erstellung für die Kommunikation mit der Marketo Engage bereit ist. Mit dem Formularassistenten können Sie das adaptive Formular auch so konfigurieren, dass Daten bei der Übermittlung direkt an Adobe Marketo Engage gesendet werden.
+Sie können Marketo Engage mithilfe des Formular-Assistenten mit einem adaptiven Formular verbinden, wodurch der Konfigurationsprozess vereinfacht wird, indem Sie durch die einzelnen Schritte geführt werden. Dazu gehört die Auswahl von Vorlagen, Stilen und Datenfeldern sowie die Einrichtung der Datenzuordnung, um sicherzustellen, dass Ihr Formular nach der Erstellung für die Kommunikation mit Marketo Engage bereit ist. Mithilfe des Formular-Assistenten können Sie das adaptive Formular auch so konfigurieren, dass Daten bei der Übermittlung direkt an Adobe Marketo Engage gesendet werden.
 
 ## Überlegungen zum Konfigurieren der Marketo Engage-Datenquelle für Formulare
 
-Beachten Sie beim Konfigurieren der Marketo Engage-Datenquelle für Formulare Folgendes:
+Beim Konfigurieren einer Marketo Engage-Datenquelle für Formulare sind folgende Aspekte zu berücksichtigen:
 
 * Es ist nicht möglich, Edge Delivery Services Forms mit Marketo Engage zu verbinden.
 
-## Voraussetzung für die Verbindung von Marketo Engage mit Formularen
+## Voraussetzung für das Verbinden von Marketo Engage mit Formularen
 
-Voraussetzung für die Verbindung von Marketo Engage mit Formularen:
+Voraussetzung für das Verbinden von Marketo Engage mit Formularen:
 
-* Erstellen Sie die [Cloud-Service-Konfiguration zur Integration von Marketo Engage in Formulare](/help/forms/integrate-form-to-marketo-engage.md).
+* Erstellen Sie die [Cloud-Service-Konfiguration, um Marketo Engage mit Forms zu integrieren](/help/forms/integrate-form-to-marketo-engage.md).
 
-## Wie konfiguriere ich ein neues adaptives Formular für die Integration mit Marketo Engage?
+## Konfigurieren eines neuen adaptiven Formulars für die Integration mit Marketo Engage
 
-Um das neue adaptive Formular für die Integration mit Marketo Engage zu konfigurieren, führen Sie die folgenden Schritte aus:
+Um ein neues adaptives Formular für die Integration mit Marketo Engage zu konfigurieren, führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 
    ![Forms und Dokumente auswählen](/help/forms/assets/select-forms.png)
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptives Formular]**. Der Formularerstellungs-Assistent wird geöffnet.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptives Formular]**. Der Assistent zur Formularerstellung wird geöffnet.
 
-   ![Wählen Sie AF](/help/forms/assets/select-create-forms.png)
+   ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Source]** eine Vorlage aus.
+1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
 
    ![Vorlagen auswählen](/help/forms/assets/select-template.png)
 
-1. Wählen Sie im Bereich **[!UICONTROL Stil]** das Design aus.
+1. Wählen Sie in **[!UICONTROL Stil]** das Design aus.
 
    ![Design auswählen](/help/forms/assets/select-form-theme.png)
 
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Daten]** ein Datenmodell als **Marketo Engage** aus.
+1. Wählen Sie auf **[!UICONTROL Registerkarte]** ein Datenmodell als **Marketo Engage** aus.
 
-1. Wählen Sie die **[!UICONTROL Cloud-Konfiguration]** aus der Dropdown-Liste aus, die im rechten Bereich des Bildschirms angezeigt wird.
-Standardmäßig werden alle Felder der zugehörigen Konfiguration angezeigt. Der Assistent bietet Ihnen die Möglichkeit, mithilfe von Kontrollkästchen selektiv zu wählen, welche Felder im adaptiven Formular enthalten sein sollen.
+1. Wählen Sie **[!UICONTROL Cloud-Konfiguration]** aus der Dropdown-Liste im rechten Bereich des Bildschirms aus.
+Standardmäßig werden alle Felder der zugehörigen Konfiguration angezeigt. Der Assistent bietet den Komfort, dass Sie mithilfe von Kontrollkästchen selektiv auswählen können, welche Felder in das adaptive Formular aufgenommen werden sollen.
 
    ![Datenmodell auswählen](/help/forms/assets/select-marketo-data.png)
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Übermittlung]** die Sendeaktion als **[!UICONTROL An Marketo übermitteln]** aus.
+1. Wählen Sie auf **[!UICONTROL Registerkarte]**&#x200B;Übermittlung“ die Übermittlungsaktion **[!UICONTROL An Marketo übermitteln]**.
 
-   Wenn Sie das Datenmodell als **Marketo Engage** auswählen, wird die Sendeaktion als **An Marketo übermitteln** automatisch ausgewählt. Sie können auf der Registerkarte **[!UICONTROL Übermittlung]** eine andere Sendeaktion auswählen. Auf der Registerkarte **[!UICONTROL Übermittlung]** werden alle verfügbaren Sendeaktionen angezeigt.
+   Wenn Sie das Datenmodell als **Marketo Engage** auswählen, wird die Übermittlungsaktion **An Marketo**) automatisch ausgewählt. Sie können auf der Registerkarte **[!UICONTROL Übermittlung“ eine andere]** auswählen. Auf **[!UICONTROL Registerkarte]**&#x200B;Übermittlung“ werden alle verfügbaren Übermittlungsaktionen angezeigt.
 
-   ![Senden an Marketo engage](/help/forms/assets/select-marketo-engage.png)
+   ![An Marketo Engage übermitteln](/help/forms/assets/select-marketo-engage.png)
 
 1. Wählen Sie **[!UICONTROL Erstellen]**. Geben Sie Titel, Namen und Speicherort für das adaptive Formular an.
 
@@ -78,22 +78,22 @@ Das adaptive Formular ist jetzt für die Verbindung mit der Marketo Engage-Insta
 
 ## Häufig gestellte Fragen (FAQ)
 
-**Q: Können Sie die Sendeaktion für Formulare ändern, die für die Verbindung mit dem Marketo Engage-Schema konfiguriert sind?**
-**A:** Standardmäßig wird die Aktion **An Marketo übermitteln** ausgewählt, wenn ein Formular für die Verbindung mit dem Marketo Engage-Schema konfiguriert ist. Sie können die Sendeaktion für die Formulare jedoch bei Bedarf ändern.
+**F: Kann man die Übermittlungsaktion für Formulare ändern, die für die Verbindung mit dem Marketo Engage-Schema konfiguriert sind?**
+**A:** Standardmäßig ist die Aktion **An Marketo senden** ausgewählt, wenn ein Formular für die Verbindung mit dem Marketo Engage-Schema konfiguriert ist. Sie können jedoch bei Bedarf die Übermittlungsaktion für die Formulare ändern.
 
 
-**Q: Was passiert, wenn Sie den Connector des Formulars ändern?**\
+**F: Was passiert, wenn Sie den Connector des Formulars ändern?**\
 **A:** Wenn Sie den Connector des Formulars ändern, werden die vorhandenen Bindungen ungültig.
 
-**Q: Welche drei Vorgänge sind im Aufrufdienst des Regeleditors für in Marketo Engage integrierte Formulare verfügbar?**\
-**A:** Die drei nativen Vorgänge, die im **Aufrufdienst** für mit Marketo Engage integrierte Formulare verfügbar sind, sind:
-* Synchronisierungsleitung
+**F: Welche drei Vorgänge sind im Aufrufdienst des Regeleditors für Formulare verfügbar, die in Marketo Engage integriert sind?**\
+**A:** Im Abschnitt „Service aufrufen“ stehen für Formulare, die in **Marketo Engage integriert sind** drei vorkonfigurierte Vorgänge zur Verfügung:
+* Lead synchronisieren
 * Lead nach ID abrufen
 * Lead nach Filtertyp abrufen
 
 ## Nächster Schritt
 
-Sie können ein adaptives Formular auch mit der [Munchkin-Bibliothek](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
+Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
 
 ## Verwandte Artikel
 

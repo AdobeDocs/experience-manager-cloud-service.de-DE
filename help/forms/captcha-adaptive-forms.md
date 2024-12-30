@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: e6f986e014e45fad461721d84f18cc49a7bb434e
+exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 100%
 
 ---
-
 
 # Verwenden von reCAPTCHA in adaptiven Formularen {#using-reCAPTCHA-in-adaptive-forms}
 

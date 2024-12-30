@@ -12,7 +12,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
 workflow-type: tm+mt
 source-wordcount: '1380'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Um einen reibungslosen Übergang von AEM Forms 6.5 zur AEM as a Cloud Service-Um
 
   ![Probelaufergebnis](assets/enable-add-on.png)
 
-* In einer Cloud Service-Umgebung funktioniert das Migrationsdienstprogramm in Verbindung mit dem Content Transfer Tool. Das Migrationsdienstprogramm macht [!DNL AEM Forms]-Assets mit Cloud Service kompatibel und das Content Transfer Tool migriert den Inhalt aus Ihrer [!DNL AEM Forms]-Umgebung in eine [!DNL AEM] as a Cloud Service-Umgebung. Bevor Sie das Migrationsdienstprogramm verwenden, machen Sie sich damit vertraut, wie der [Umstieg auf AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=de) funktioniert. Der Prozess verwendet das folgende Tool:
+* In einer Cloud Service-Umgebung arbeitet das Migrationsdienstprogramm mit dem Content Transfer Tool zusammen. Das Migrationsdienstprogramm macht [!DNL AEM Forms]-Assets mit Cloud Service kompatibel und das Content Transfer Tool migriert den Inhalt aus Ihrer [!DNL AEM Forms]-Umgebung in eine [!DNL AEM] as a Cloud Service-Umgebung. Bevor Sie das Migrationsdienstprogramm verwenden, machen Sie sich damit vertraut, wie der [Umstieg auf AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=de) funktioniert. Der Prozess verwendet das folgende Tool:
    * [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration): Mit dem Content Transfer Tool können Sie Inhalte aus Ihrer vorhandenen Umgebung vorbereiten und in eine Cloud Service-Umgebung übertragen. Dies erleichtert Benutzerinnen und Benutzern das einfache Upgrade von AEM Forms auf die Cloud-Umgebung.
 * Konten mit Administratorrechten in [!DNL AEM Forms] as a Cloud Service und Ihrer lokalen [!DNL AEM Forms]-Umgebung.
 * Laden Sie den Best Practice Analyzer, das Content Transfer Tool und das Migrationsdienstprogramm von [!DNL AEM Forms] aus dem [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunter und installieren Sie die Tools.
@@ -81,11 +81,11 @@ Um einen reibungslosen Übergang von AEM Forms 6.5 zur AEM as a Cloud Service-Um
 
 Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Cloud Service kompatibel zu machen und sie in eine [!DNL AEM] as a Cloud Service-Umgebung zu übertragen.
 
-1. Erstellen Sie einen [Klon](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/td-p/363487?profile.language=de) Ihrer bestehenden [!DNL AEM Forms]-Umgebung.
+1. Erstellen Sie einen [Klon](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) Ihrer bestehenden [!DNL AEM Forms]-Umgebung.
 
    >[!NOTE]
    >
-   > Wenn Sie von 6.5 auf den Cloud-Service migrieren, wird empfohlen, eine geklonte Umgebung zu verwenden, um das Content Transfer Tool und das Migrationsdienstprogramm auszuführen. Das Content Transfer Tool und das Migrationsdienstprogramm nehmen einige Änderungen am Inhalt und an den Assets vor. Führen Sie daher weder das Content Transfer Tool noch das Migrationsdienstprogramm in einer Produktionsumgebung aus.
+   > Wenn Sie von 6.5 zum Cloud-Service migrieren, wird empfohlen, eine geklonte Umgebung zum Ausführen des Content Transfer Tool und des Migrationsdienstprogramms zu verwenden. Das Content Transfer Tool und das Migrationsdienstprogramm nehmen einige Änderungen am Inhalt und an den Assets vor. Daher sollten Sie das Content Transfer Tool oder das Migrationsdienstprogramm nicht in einer Produktionsumgebung ausführen.
 
 1. Melden Sie sich mit Administratorrechten bei Ihrer geklonten Umgebung an.
 

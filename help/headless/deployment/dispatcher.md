@@ -5,7 +5,7 @@ feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%
 

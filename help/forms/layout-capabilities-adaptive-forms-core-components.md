@@ -1,18 +1,18 @@
 ---
-title: Welche Layoutfunktionen bietet Adaptive Forms basierend auf Kernkomponenten?
+title: Welche Layout-Funktionen bietet adaptive Forms basierend auf Kernkomponenten?
 description: Layout und Darstellung adaptiver Formulare auf verschiedenen Geräten werden von den Layouteinstellungen geregelt. Machen Sie sich mit den verschiedenen Layouts und ihrer Anwendung vertraut.
 feature: Adaptive Forms, Core Components
-keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, AEM für dynamische Formulare, AEM Cloud Service-Formularlayouts, Formularlayouttypen in AEM Kernkomponenten, Layouts für adaptive Formulare
+keywords: Layout adaptiver Formulare basierend auf Kernkomponenten, Verschiedene Layouts für Formulare, Layouts für dynamische Formulare AEM, Layouts für AEM Cloud Service-Formulare, Formularlayouttypen in AEM-Kernkomponenten, Layouts adaptiver Formulare
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
 source-wordcount: '2104'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
-# Layout-Funktionen von Adaptive Forms basierend auf Kernkomponenten
+# Layout-Möglichkeiten für adaptive Forms basierend auf Kernkomponenten
 
 
 | Version | Artikel-Link |
@@ -21,125 +21,125 @@ ht-degree: 4%
 | AEM as a Cloud Service (Foundation-Komponenten) | [Hier klicken](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (Kernkomponenten) | Dieser Artikel |
 
-Adaptive Forms bietet erstklassige Komponenten für das effektive Layout und Design von Formularen. Das Layout steuert, wie Komponenten in einem Formular angezeigt werden. Adaptive Forms unterstützt verschiedene Layouts: Bedienfeld, Assistent, Akkordeon, Registerkarten oben/horizontal und Registerkarten auf linken/vertikalen Registerkarten.
+Adaptive Forms bietet erstklassige Komponenten zum effektiven Layout und Design der Formulare. Das Layout steuert, wie Komponenten in einem Formular angezeigt werden. Adaptive Forms unterstützt verschiedene Layouts: Bedienfeld, Assistent, Akkordeon, Registerkarten oben/horizontal und Registerkarten links/vertikal.
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Voraussetzung
 
-Bevor Sie die verschiedenen Funktionen eines Layouts erkunden, stellen Sie sicher, dass die Kernkomponenten für Ihre Umgebung aktiviert sind. Ausführliche Anweisungen zum Aktivieren von Kernkomponenten für Ihre Umgebung finden Sie [hier klicken](/help/forms/enable-adaptive-forms-core-components.md).
+Bevor Sie die verschiedenen Funktionen eines Layouts untersuchen, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Detaillierte Anweisungen zum Aktivieren von Kernkomponenten für Ihre Umgebung finden Sie [hier](/help/forms/enable-adaptive-forms-core-components.md).
 
-## Adaptive Forms-Layouttypen
+## Layouttypen für adaptive Forms
 
 Adaptive Formulare, die auf Kernkomponenten basieren, unterstützen die folgenden Layouttypen:
 * **Bedienfeld-Layout**
-* **Assistentenlayout**
+* **Assistenten-Layout**
 * **Vertikales Layout**
 * **Horizontales Layout**
 * **Akkordeon-Layout**
 
 >[!BEGINTABS]
 
->[!TAB Bedienfeldlayout]
+>[!TAB Bedienfeld-Layout]
 
-Das Bedienfeldlayout ist nützlich, um verwandte Felder so zu organisieren, dass es einfacher ist, zu entsprechenden Inhalten zu navigieren und sie zu finden. Das Bedienfeldlayout ordnet Formularkomponenten innerhalb bestimmter Abschnitte oder Bereiche in einem adaptiven Formular an.
+Das Bereichslayout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Bereichslayout ordnet Formularkomponenten in separaten Bereichen oder Bereichen in einem adaptiven Formular an.
 
-![Bedienfeldlayout](/help/forms/assets/panel-layout.png)
+![Bedienfeld-Layout](/help/forms/assets/panel-layout.png)
 
 Bedienfeldlayout
 
-Sie können die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeldlayout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) .
+Sie können die [Bedienfeld-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) .
 
->[!TAB Assistent-Layout]
+>[!TAB Assistentenlayout]
 
-Das Assistentenlayout erleichtert die Arbeit an komplexen Formularen, indem es in unterschiedliche Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar. Benutzer navigieren nacheinander durch die Schritte, oft mit den Schaltflächen **Weiter** und **Zurück**. Sie können das Layout des Assistenten verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
+Das Assistenten-Layout vereinfacht ein komplexes Formular, indem es in verschiedene Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar, und Benutzende navigieren nacheinander durch die Schritte, häufig mit den Schaltflächen **Weiter** und **Zurück**. Sie können das Assistenten-Layout verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
 
-![Assistent-Layout](/help/forms/assets/wizard-layout-compare.gif)
+![Assistentenlayout](/help/forms/assets/wizard-layout-compare.gif)
 
-Assistentenlayout
+Assistenten-Layout
 
-Sie können die [Assistentenkomponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) verwenden, um das Assistentenlayout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Assistentenkomponente finden Sie im Artikel [Assistentenkomponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) .
+Sie können die Komponente [Assistent](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) verwenden, um das Assistenten-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Assistenten-Komponente finden Sie im Artikel [Assistenten-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) .
 
->[!TAB Vertikales Tabulatorlayout]
+>[!TAB Layout für vertikale Registerkarten]
 
-Das Layout der vertikalen Registerkarten wird auch als Registerkarten im linken Layout bezeichnet. Das Layout der vertikalen Registerkarten organisiert Bedienfelder oder Abschnitte auf der linken Seite eines Formulars. Dies ist ein gängiges Layout für Formulare, bei denen Bereiche/Abschnitte zur einfachen Lese- und Navigation vertikal gestapelt werden.
+Das Layout Vertikale Registerkarten wird auch als Registerkarten im linken Layout bezeichnet. Mit dem Layout Vertikale Registerkarten werden Bedienfelder oder Abschnitte auf der linken Seite eines Formulars angeordnet. Dies ist ein gängiges Layout für Formulare, bei dem Bereiche/Abschnitte vertikal gestapelt sind, um die Lektüre und Navigation zu erleichtern.
 
 ![Vertikales Layout](/help/forms/assets/vertical-tab.gif)
 
-Layout mit vertikalen Registerkarten
+Layout vertikaler Registerkarten
 
-Sie können die Komponente [Vertikale Registerkarten ](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) verwenden, um das Layout der vertikalen Registerkarten in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente für vertikale Registerkarten finden Sie im Artikel [Komponente für vertikale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) .
+Sie können die Komponente [Vertikale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) verwenden, um das Layout Vertikale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Vertikale Registerkarten“ finden Sie im Artikel [Komponente „Vertikale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) .
 
 
 >[!TAB Horizontales Registerkarten-Layout]
 
-Das horizontale Layout von Registerkarten wird auch als Registerkarten im oberen Layout bezeichnet. Das Layout der horizontalen Registerkarten ordnet Bedienfelder oder Abschnitte nebeneinander in einer Zeile an. Mit diesem Layout werden die Formularabschnitte über die gesamte Breite des Formulars oder Bedienfelds linear dargestellt.
+Das Layout „Horizontale Registerkarten“ wird auch als Layout „Registerkarten oben“ bezeichnet. Das Layout Horizontale Registerkarten ordnet Bedienfelder oder Abschnitte nebeneinander in einer Zeile an. Dieses Layout stellt die Formularabschnitte linear über die Breite des Formulars oder Bereichs dar.
 
 
 ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
-Horizontales Registerkartenlayout
+Layout horizontaler Registerkarten
 
-Sie können die Komponente [Horizontale Registerkarten ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das horizontale Registerkartenlayout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente &quot;Horizontale Registerkarten&quot;finden Sie im Artikel [Horizontale Registerkarten-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
->[!TAB Accordion-Layout]
+>[!TAB Akkordeon-Layout]
 
-Das Akkordeon-Layout zeigt Inhalte in ausblendbaren Abschnitten oder Bereichen in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt in angezeigt, während andere Abschnitte ausgeblendet bleiben. Dieses Layout eignet sich ideal für die Darstellung großer Datenmengen in kompakter Form.
+Das Akkordeon-Layout zeigt Inhalte in ausblendbaren Abschnitten oder Bereichen in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt darin angezeigt, während andere Abschnitte reduziert bleiben. Dieses Layout ist ideal für die Anzeige großer Informationsmengen in kompakter Form.
 
-![Accordion-Layout](/help/forms/assets/accordion-layout-compare.gif)
+![Akkordeon-Layout](/help/forms/assets/accordion-layout-compare.gif)
 
 Akkordeon-Layout
 
-Sie können die [Accordion-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Accordion-Komponente finden Sie im Artikel [Accordion-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
+Sie können die [Akkordeon-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Akkordeon-Komponente finden Sie im Artikel [Akkordeon-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
 
 >[!ENDTABS]
 
-Informationen zum Einfügen eines Layouts und zum Hinzufügen von Formularkomponenten finden Sie im Abschnitt [Wie fügt man ein Layout ein und fügt ihm Formularkomponenten hinzu?](#how-to-insert-a-layout-and-add-form-components-to-it)
+Informationen zum Einfügen eines Layouts und Hinzufügen von Formularkomponenten finden Sie im Abschnitt mit dem Titel [Wie füge ich ein Layout ein und füge Formularkomponenten hinzu?](#how-to-insert-a-layout-and-add-form-components-to-it)
 
-### Wie wählt man das richtige adaptive Formularlayout aus?
+### Wie wählt man das richtige adaptive Formular-Layout?
 
-Es ist wichtig, das richtige adaptive Formularlayout auszuwählen, um die Benutzerfreundlichkeit und die Formularfunktionen zu optimieren. Die Tabelle vermittelt Ihnen ein besseres Verständnis der verschiedenen verfügbaren Layoutoptionen und leitet Sie bei der Auswahl des am besten geeigneten Layouts entsprechend Ihren spezifischen Anforderungen und Anwendungsfällen:
+Es ist wichtig, das richtige Layout für adaptive Formulare auszuwählen, um das Benutzererlebnis und die Formularfunktionen zu optimieren. Die Tabelle hilft Ihnen, die verschiedenen verfügbaren Layout-Optionen zu verstehen, und führt Sie bei der Auswahl des am besten geeigneten Layouts basierend auf Ihren spezifischen Anforderungen und Anwendungsfällen:
 
-| Funktion | Bedienfeldlayout | Assistentenlayout | Registerkarten im Layout der oberen/vertikalen Registerkarten | Layout mit Registerkarten links/Horizontal | Akkordeon-Layout |
+| Funktion | Bedienfeldlayout | Assistenten-Layout | Registerkarten am oberen/vertikalen Registerkarten-Layout | Registerkarten links/horizontal Registerkarten-Layout | Akkordeon-Layout |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
-| **Zweck** | Gruppiert verwandte Inhalte in verschiedene Abschnitte | Führt Benutzer durch einen mehrstufigen Prozess oder ein Formular | Ermöglicht den Wechsel zwischen Abschnitten/Ansichten auf derselben Seite | Ähnlich wie obere Registerkarten, aber vertikal auf der linken Seite angeordnet | Organisiert Inhalte in ausblendbare Abschnitte |
+| **Zweck** | Gruppiert verwandte Inhalte in separate Abschnitte | Führt Benutzer durch einen mehrstufigen Prozess oder ein mehrstufiges Formular | Ermöglicht das Wechseln zwischen Abschnitten/Ansichten auf derselben Seite | Ähnlich wie obere Registerkarten, aber vertikal auf der linken Seite angeordnet | Organisiert Inhalte in ausblendbaren Abschnitten |
 | **Struktur** | Unterschiedliche Abschnitte | Sequenzielle Schritte/Seiten | Horizontale Registerkarten oben | Vertikale Registerkarten links | Reduzierbare Bereiche/Abschnitte |
-| **Navigation** | Klicken Sie auf die Bedienfeldkopfzeilen, um zu navigieren | - Vorwärts: Schaltfläche &quot;Weiter&quot;<br>- Rückwärts: Schaltfläche &quot;Zurück&quot;<br> - Optionale Schritte zum Überspringen | Klicken Sie auf Registerkarten, um Abschnitte zu wechseln | Klicken Sie auf Registerkarten, um Abschnitte zu wechseln | Klicken Sie auf Kopfzeilen zum Erweitern/Reduzieren von Abschnitten |
-| **Benutzererlebnis** | Organisieren großer Inhaltsmengen auf verwaltbare Weise | Schrittweise Anleitung zur Reduzierung der Überlastung | Klare, barrierefreie Wechseln zwischen Ansichten | Effizienter Einsatz von vertikalem Raum, immer sichtbaren Registerkarten | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
-| **Nutzungsszenario** | Komplexe Formulare mit kategorisierten Abschnitten | Einrichten von Prozessen, komplexen Formularen | Organisieren von Einstellungen oder Inhaltskategorien | Dashboards, komplexe Datenansichten | FAQs, Einstellungsmenüs, detaillierte Inhaltsabschnitte |
+| **Navigation** | Klicken Sie auf die Panel-Kopfzeilen, um zu navigieren | - Vorwärts: „Weiter“-Taste<br>- Rückwärts: „Zurück“-Schaltfläche<br>- Optionale Schritte überspringen | Auf Registerkarten klicken, um Abschnitte zu wechseln | Auf Registerkarten klicken, um Abschnitte zu wechseln | Auf Kopfzeilen klicken, um Abschnitte zu erweitern/reduzieren |
+| **Benutzererlebnis** | Organisiert große Inhaltsmengen auf überschaubare Weise | Schritt-für-Schritt-Anleitung zur Verringerung der Überlastung | Übersichtlicher, barrierefreier Wechsel zwischen Ansichten | Effiziente Nutzung von vertikalem Platz, immer sichtbare Registerkarten | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
+| **Nutzungsszenario** | Komplexe Formulare mit kategorisierten Abschnitten | Einrichtungsprozesse, komplexe Formulare | Organisieren von Einstellungen oder Inhaltskategorien | Dashboards, komplexe Datenansichten | Häufig gestellte Fragen, Einstellungsmenüs, detaillierte Inhaltsabschnitte |
 
 
-## Wie fügt man ein Layout ein und fügt Formularkomponenten hinzu?
+## Einfügen eines Layouts und Hinzufügen von Formularkomponenten?
 
-Das folgende Diagramm zeigt die Schritte zum Einfügen eines Layouts in ein Formular und zum Hinzufügen von Formularkomponenten:
+Im folgenden Diagramm werden die Schritte zum Einfügen eines Layouts in ein Formular und zum Hinzufügen von Formularkomponenten dargestellt:
 
-![Workflow zum Hinzufügen eines Layouts und von Formularkomponenten](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
+![Workflow zum Hinzufügen von Layout- und Formularkomponenten](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-Betrachten Sie das **IT-Anforderungsformular**, das im Abschnitt [Adaptive Forms-Layouttypen](#adaptive-forms-layout-types) angezeigt wird. Das Formular erfasst Informationen von Mitarbeitern, die technische Probleme mit ihrem Netzwerk oder Laptop haben. Er umfasst drei Bereiche:
+Betrachten Sie das **IT-Anforderungsformular** das im Abschnitt [Adaptive Forms-Layouttypen](#adaptive-forms-layout-types) angezeigt wird. Das Formular sammelt Informationen von Mitarbeitern, die technische Probleme im Zusammenhang mit ihrem Netzwerk oder Laptop haben. Es umfasst drei Bereiche:
 
-* **Mitarbeiterdetails**: Das Bedienfeld erfasst Informationen zum Mitarbeiter und enthält drei Textfelder mit den Bezeichnungen Name, E-Mail-ID und Abteilung.
+* **Mitarbeiterdetails**: Das Bedienfeld sammelt Informationen über den Mitarbeiter und enthält drei Textfelder mit der Bezeichnung Name, E-Mail-ID und Abteilung.
 
-* **Problemdetails**: Das Bedienfeld erfasst Details zum Problem. Es enthält ein Kontrollkästchen für die Problemkategorie mit drei Optionen: Netzwerk, Computer oder Sonstige. Es enthält außerdem zwei Textfelder mit der Bezeichnung &quot;Bitte geben und Kommentare&quot;.
+* **Problemdetails**: Das Bedienfeld erfasst Details zum Problem. Es enthält ein Kontrollkästchen für die Problemkategorie mit drei Optionen: Netzwerk, Computer oder Sonstige. Es enthält auch zwei Textfelder mit der Beschriftung Bitte und Anmerkungen.
 
-* **Anlagen**: Der Bereich ermöglicht Benutzern das Hochladen von unterstützenden Dokumenten zum Problem.
+* **Anlagen**: In diesem Bedienfeld können Benutzende unterstützende Dokumente hochladen, die mit dem Problem in Zusammenhang stehen.
 
-Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und zum Hinzufügen von Komponenten erläutert. In diesem Beispiel wird ein horizontales Tabulatorlayout in ein Formular eingefügt.
+Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und Hinzufügen von Komponenten erläutert. In diesem Beispiel wird ein horizontales Registerkarten-Layout in ein Formular eingefügt.
 
-### 1. Fügen Sie eine Layout-Komponente in ein Formular ein
+### 1. Einfügen einer Layout-Komponente in ein Formular
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Instanz an.
-1. Wählen Sie oben links **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]** aus.
-1. Öffnen Sie ein vorhandenes adaptives Formular in einem Bearbeitungsmodus, wenn es bereits erstellt wurde.
+1. Wählen Sie oben links **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
+1. Öffnen Sie ein vorhandenes adaptives Formular im Bearbeitungsmodus, wenn es bereits erstellt wurde.
 
    ![Öffnen eines adaptiven Formulars](/help/forms/assets/insert-layout.png)
 
-   Alternativ können Sie auch [ein neues adaptives Formular erstellen](/help/forms/creating-adaptive-form-core-components.md).
+   Alternativ können Sie auch [neues adaptives Formular erstellen](/help/forms/creating-adaptive-form-core-components.md).
 
-1. Suchen Sie den Abschnitt im Formular-Editor, in dem Sie ein Layout hinzufügen können.
+1. Suchen Sie den Abschnitt im Formular-Editor, mit dem Sie ein Layout hinzufügen können.
 
    ![Formular-Editor](/help/forms/assets/form-editor.png)
-1. Klicken Sie auf das Symbol **Hinzufügen** . Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten anzeigt.
+1. Klicken Sie auf das Symbol **Hinzufügen**. Das Symbol ist ein Pluszeichen (+). Es steht für die Option zum Hinzufügen neuer Komponenten.
 
    ![Layout einfügen](/help/forms/assets/insert-layout-add-icon.png)
 
@@ -147,18 +147,18 @@ Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und zum H
 
    >[!NOTE]
    >
-   > Alternativ können Sie auch [die Layout-Komponente ziehen und ablegen](#extra-bytes).
+   > Alternativ können Sie auch [die Layout-Komponente per Drag-and-Drop verschieben](#extra-bytes).
 
-1. Durchsuchen Sie die verfügbaren Komponenten im Dialogfeld und wählen Sie das gewünschte Layout aus der Liste aus. In unserem Beispiel wählen wir die Komponente Horizontale Registerkarten aus, um das Layout der horizontalen Registerkarten einzufügen.
+1. Durchsuchen Sie die verfügbaren Komponenten im Dialogfeld und wählen Sie das gewünschte Layout in der Liste aus. In unserem Fall wählen wir die Komponente Horizontale Registerkarten aus, um das Layout Horizontale Registerkarten einzufügen.
 
    ![Horizontale Registerkarten auswählen](/help/forms/assets/select-horizontal-tab.png)
 
-   Wenn Sie die Komponente &quot;Horizontale Registerkarten&quot;zum Formular hinzufügen, besteht sie zunächst standardmäßig aus zwei leeren Bedienfeldern namens &quot;Item1&quot;und &quot;Item2&quot;. Sie müssen diesen Bedienfeldern manuell Formularkomponenten hinzufügen.
+   Wenn Sie die Komponente „Horizontale Registerkarten“ zum Formular hinzufügen, besteht es standardmäßig aus zwei leeren Bereichen, einem Element1 und einem Element2. Sie müssen diesen Bedienfeldern manuell Formularkomponenten hinzufügen.
 
    ![Horizontale Registerkarten](/help/forms/assets/insert-tabs-on-top.png)
 
-1. Öffnen Sie die Eigenschaften der Komponente &quot;Horizontale Registerkarten&quot;und geben Sie den Namen für die Komponente an.
-In diesem Fall fügen wir beispielsweise den Namen der horizontalen Registerkarten-Komponente als IT-Anforderungsformular hinzu.
+1. Öffnen Sie die Eigenschaften der Komponente Horizontale Registerkarten und geben Sie den Namen für die Komponente an.
+In diesem Fall fügen wir beispielsweise den Namen der horizontalen Registerkarten-Komponente als IT-Anfrageformular hinzu.
 
    ![Name für horizontale Registerkarten hinzufügen](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
@@ -166,21 +166,21 @@ In diesem Fall fügen wir beispielsweise den Namen der horizontalen Registerkart
 
    ![Horizontale Registerkarten](/help/forms/assets/tabs-on-top-rename-component.png)
 
-Nachdem die Layout-Komponente im Formular hinzugefügt wurde, ändern Sie die Anzahl der Bedienfelder entsprechend den Anforderungen.
+Nachdem die Layout-Komponente zum Formular hinzugefügt wurde, ändern Sie die Anzahl der Bedienfelder entsprechend den Anforderungen.
 
 ### 2. Bedienfelder zum Layout hinzufügen
 
-Fügen Sie der Komponente Horizontale Registerkarten ein neues Bedienfeld hinzu:
+Hinzufügen eines neuen Bedienfelds zur horizontalen Registerkarten-Komponente:
 
-1. Öffnen Sie die Eigenschaften der horizontalen Registerkarten-Komponenten und klicken Sie auf die Registerkarte **Elemente** .
+1. Öffnen Sie die Komponenteneigenschaften der horizontalen Registerkarten und klicken Sie auf die Registerkarte **Elemente** .
 
-   ![Registerkarte &quot;Element&quot;für horizontale Registerkarten](/help/forms/assets/tabs-on-top-items-tab.png)
+   ![Elementregisterkarte für horizontale Registerkarten](/help/forms/assets/tabs-on-top-items-tab.png)
 
-1. Klicken Sie auf das Symbol **Hinzufügen** , um ein neues Bedienfeld hinzuzufügen.
+1. Klicken Sie auf **Hinzufügen**, um ein neues Bedienfeld hinzuzufügen.
 
    ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-add-panel.png)
 
-   Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt.
+   Wenn Sie auf das Symbol **Hinzufügen** klicken, wird **Dialogfeld „Neue Komponente einfügen** angezeigt.
 
 1. Wählen Sie die Bedienfeldkomponente aus.
 
@@ -190,80 +190,80 @@ Fügen Sie der Komponente Horizontale Registerkarten ein neues Bedienfeld hinzu:
 
    ![Neues Bedienfeld hinzufügen](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
-   Geben Sie einen Namen für das neue Bedienfeld ein. Andernfalls können Sie die Eigenschaften der Komponente für horizontale Registerkarten nicht speichern.
+   Geben Sie einen Namen für das neue Bedienfeld ein. Andernfalls können Sie die Eigenschaften der horizontalen Registerkarten-Komponente nicht speichern.
 
-1. Geben Sie die Namen der Bedienfelder an, wie in der folgenden Abbildung dargestellt:
+1. Geben Sie die Namen der Bereiche an, wie in der folgenden Abbildung dargestellt:
 
    ![Bereichsnamen](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. Klicken Sie auf **Fertig**.
 
-   Wenn Sie auf **Fertig** klicken, werden die drei Bedienfelder nebeneinander in einer Zeile angezeigt. Die Bereichsnamen werden für jedes Bedienfeld als Überschriften angezeigt. Sie können jedem Bedienfeld Formularkomponenten hinzufügen.
+   Wenn Sie auf **Fertig** klicken, werden die drei Bedienfelder nebeneinander in einer Zeile angezeigt. Die Bereichsnamen werden als Überschriften für jedes Bedienfeld angezeigt, und Sie können jedem Bedienfeld Formularkomponenten hinzufügen.
 
    ![Bereichsnamen](/help/forms/assets/tabs-on-top-initial-view.png)
 
-   Sie können die Eigenschaften der Bedienfeldkomponente konfigurieren. Beispielsweise enthält das IT-Anforderungsformular keine Bedienfeldtitel. Hier finden Sie die Schritte zum Konfigurieren der Eigenschaften der Bedienfeldkomponente.
+   Sie können die Eigenschaften der Bedienfeldkomponente konfigurieren. Beispielsweise enthält das IT-Anfrageformular keine Bereichstitel. Im Folgenden finden Sie die Schritte zum Konfigurieren der Eigenschaften einer Bereichskomponente.
 
 1. Öffnen Sie die Eigenschaften des ersten Bedienfelds.
 
-   ![Bedienfeld 1 - Eigenschaften](/help/forms/assets/tabs-on-tops-panel1-properties.png)
+   ![Eigenschaften von Panel 1](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
-1. Aktivieren Sie das Kontrollkästchen **Titel ausblenden** auf der Registerkarte **Einfach** .
+1. Aktivieren Sie das Kontrollkästchen **Titel ausblenden** auf der Registerkarte **Allgemein**.
 
    ![Titel ausblenden](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. Klicken Sie auf **Fertig**.
 
-Auf ähnliche Weise können Sie auch Titel für die anderen beiden Bedienfelder ausblenden. Anschließend können Sie mit dem Hinzufügen von Formularkomponenten zu jedem Bedienfeld fortfahren.
+Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Anschließend können Sie jedem Bedienfeld Formularkomponenten hinzufügen.
 
-### 3. Hinzufügen von Formularkomponenten zum Bereich
+### 3. Hinzufügen von Formularkomponenten zum Bedienfeld
 
 <!-- You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
-1. Suchen Sie den Abschnitt innerhalb des Bereichs, in dem Sie Komponenten hinzufügen können.
-1. Klicken Sie auf das Symbol **Hinzufügen** . Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten anzeigt.
+1. Suchen Sie den Abschnitt innerhalb des Bedienfelds, in dem Sie Komponenten hinzufügen können.
+1. Klicken Sie auf das Symbol **Hinzufügen**. Das Symbol ist ein Pluszeichen (+). Es steht für die Option zum Hinzufügen neuer Komponenten.
    ![Layout einfügen](/help/forms/assets/tabs-on-top-add-component.png)
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt, in dem verschiedene Komponenten zum Einfügen angezeigt werden.
 
-   ![Dialogfeld &quot;Neue Komponente einfügen&quot;](/help/forms/assets/insert-new-component.png)
+   ![Dialogfeld „Neue Komponente einfügen“](/help/forms/assets/insert-new-component.png)
 
 1. Durchsuchen Sie die verfügbaren Komponenten im angezeigten Dialogfeld und wählen Sie die gewünschte Komponente aus. Wählen Sie in unserem Fall die Komponente Textfeld aus.
-1. Öffnen Sie die Eigenschaften der hinzugefügten Komponente und geben Sie deren Namen an. Lassen Sie die Eigenschaften der hinzugefügten Textfeldkomponente bearbeiten und ihren Namen angeben.
+1. Öffnen Sie die Eigenschaften der hinzugefügten Komponente und geben Sie ihren Namen an. Bearbeiten Sie die Eigenschaften der hinzugefügten Textfeld-Komponente und geben Sie deren Namen an.
    ![Layout einfügen](/help/forms/assets/tabs-on-top-textbox-component.png)
-1. Fügen Sie auf ähnliche Weise zwei weitere Textfeldkomponenten hinzu und fügen Sie den Namen der Komponenten als E-Mail-ID und Abteilung hinzu.\
+1. Fügen Sie auf ähnliche Weise zwei weitere Textfeld-Komponenten hinzu und benennen Sie die hinzugefügten Komponenten als E-Mail-ID und Abteilung.\
    ![Erstes Bedienfeld](/help/forms/assets/tabs-on-tops-first-panel.png)
 
-   Nachdem die Komponenten im ersten Bereich hinzugefügt wurden, können Sie mit dem Hinzufügen der Komponenten zum zweiten Bereich fortfahren.
+   Nachdem die Komponenten im ersten Bedienfeld hinzugefügt wurden, können Sie mit dem Hinzufügen der Komponenten zum zweiten Bedienfeld fortfahren.
 
-1. Um das Bedienfeld zu wechseln, klicken Sie in der Symbolleiste auf **Bedienfeld auswählen** .
+1. Um das Bedienfeld zu wechseln, klicken Sie **der Symbolleiste auf** Bedienfeld auswählen“.
 
-   ![Bedienfeld wechseln](/help/forms/assets/tabs-on-top-select-panel.png)
+   ![Schalttafel](/help/forms/assets/tabs-on-top-select-panel.png)
 
-   Wenn Sie auf das Feld **Bedienfeld auswählen** klicken, wird die Liste der hinzugefügten Bedienfelder in der Komponente &quot;Horizontale Registerkarten&quot;angezeigt.
+   Wenn Sie auf **Bedienfeld auswählen** klicken, wird die Liste der hinzugefügten Bedienfelder in der Komponente „Horizontale Registerkarten“ angezeigt.
 
-   ![Bedienfeld wechseln](/help/forms/assets/tabs-on-tops-panel2.png)
+   ![Schalttafel](/help/forms/assets/tabs-on-tops-panel2.png)
 
-1. Wählen Sie **2 Bedienfeld** aus der Bedienfeldliste aus und die Ansicht ändert sich vom ersten Bedienfeld zum zweiten Bedienfeld.
+1. Wählen Sie **2 Panel** aus der Bereichsliste aus, und die Ansicht ändert sich vom ersten Bedienfeld zum zweiten Bedienfeld.
 
    ![Zweites Bedienfeld](/help/forms/assets/tabs-on-top-panel2-component.png)
 
-1. Wiederholen Sie die Schritte aus Schritt 2 bis Schritt 4, um die gewünschten Komponenten in Bedienfeld 2 hinzuzufügen, wie in der folgenden Abbildung dargestellt:
+1. Wiederholen Sie die Schritte von Schritt 2 bis Schritt 4, um die gewünschten Komponenten in Bedienfeld 2 hinzuzufügen, wie in der folgenden Abbildung dargestellt:
 
-   ![Zweite Bedienfeldkomponenten](/help/forms/assets/panel-2-components.png)
+   ![Komponenten des zweiten Bedienfelds](/help/forms/assets/panel-2-components.png)
 
-1. Wechseln Sie zum Bereich **3}**, indem Sie die in Schritt 6 und Schritt 7 beschriebenen Schritte ausführen.
+1. Wechseln Sie zum **3** Panel, indem Sie die in Schritt 6 und Schritt 7 beschriebenen Schritte ausführen.
 
-1. Wiederholen Sie die Schritte aus Schritt 2 bis Schritt 4, um die gewünschte Komponente in Bedienfeld 3 hinzuzufügen:
+1. Wiederholen Sie die Schritte von Schritt 2 bis Schritt 4, um die gewünschte Komponente in Bedienfeld 3 hinzuzufügen:
 
    ![Komponenten des dritten Bedienfelds](/help/forms/assets/panel-3-component.png)
 
-1. Klicken Sie oben rechts in Ihrer Authoring-Umgebung auf **[!UICONTROL Vorschau]** .
+1. Klicken Sie **[!UICONTROL Vorschau]** in der oberen rechten Ecke Ihrer Authoring-Umgebung.
    ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
-Sie können auch [ die Komponenten per Drag &amp; Drop verschieben](#extra-bytes), um die Formularkomponenten zu jedem Bedienfeld hinzuzufügen.
+Sie können die [ auch ziehen und ablegen, ](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
 
 
 <!-- #### Drag and drop components into a layout's panel 
@@ -316,54 +316,54 @@ Sie können auch [ die Komponenten per Drag &amp; Drop verschieben](#extra-bytes
 
 
 
-Sie können die Formularkomponente auch über das Symbol ![Löschsymbol](/help/forms/assets/Smock_Delete_18_N.svg) aus dem Bedienfeld löschen.
+Sie können eine Formularkomponente auch mithilfe des Symbols ![Löschen](/help/forms/assets/Smock_Delete_18_N.svg) aus dem Bedienfeld löschen.
 
 ![Löschen einer Komponente](/help/forms/assets/delete-component.png)
 
-Sie können bei Bedarf auch die erforderlichen Überprüfungen für die Komponenten hinzufügen.
+Sie können bei Bedarf auch die erforderlichen Validierungen für die Komponenten hinzufügen.
 
-## Wie wird ein vorhandenes Layout durch ein neues Layout ersetzt?
+## Ersetzen eines vorhandenen Layouts durch ein neues Layout
 
-Sie können ein Layout eines Formulars durch ein neues Layout ersetzen. Dazu gehört die Änderung der Anordnung und Anzeige von Komponenten in einem Formular.
+Sie können ein Layout eines Formulars durch ein neues Layout ersetzen, wobei Sie die Art und Weise ändern müssen, wie Komponenten innerhalb eines Formulars angeordnet und angezeigt werden.
 
 Führen Sie die folgenden Schritte aus, um das vorhandene Layout eines Formulars zu ersetzen:
 
-1. Klicken Sie in der Symbolleiste der Layout-Komponente auf das Symbol Ersetzen und das Dialogfeld **[!UICONTROL Komponente ersetzen]** wird angezeigt.
+1. Klicken Sie in der Symbolleiste der Layout-Komponente auf das Symbol „Ersetzen **[!UICONTROL und das Dialogfeld „Komponente]**&quot; wird angezeigt.
 
    ![Layout ersetzen](/help/forms/assets/replace-layout.png)
 
 1. Wählen Sie das gewünschte Layout im Dialogfeld **[!UICONTROL Komponente ersetzen]** aus.
 
-   ![Dialogfeld &quot;Komponente ersetzen&quot;](/help/forms/assets/replace-component.png)
+   ![Dialogfeld „Komponente ersetzen“](/help/forms/assets/replace-component.png)
 
-   Nach Auswahl des Layouts ändert sich die Anordnung der Komponenten im Layout entsprechend. Wählen Sie beispielsweise die Komponente der vertikalen Registerkarten im Dialogfeld **[!UICONTROL Komponente ersetzen]** aus. Die Anordnung des Bedienfelds ändert sich in Registerkarten auf der linken Seite:
+   Nach Auswahl des Layouts ändert sich entsprechend die Anordnung der Komponenten innerhalb des Layouts. Wählen Sie beispielsweise die Komponente Vertikale Registerkarten im Dialogfeld **[!UICONTROL Komponente ersetzen]** aus. Die Anordnung des Bedienfelds ändert sich in Registerkarten auf der linken Seite:
 
    ![Vertikales Layout](/help/forms/assets/vertical-tab.gif)
 
-## Zusätzliche Byte
+## Zusätzliche Bytes
 
-So ziehen Sie Komponenten per Drag-and-Drop in den Formular-Editor:
+So ziehen Sie Komponenten per Drag-and-Drop in den Formulareditor:
 
 1. Suchen Sie den Abschnitt, in dem Sie Komponenten hinzufügen können.
-1. Navigieren Sie zum linken Bereich in Ihrer Authoring-Umgebung und klicken Sie auf **Komponenten**.
+1. Navigieren Sie zum linken Bedienfeld in Ihrer Authoring-Umgebung und klicken Sie auf **Komponenten**.
 
-   ![Komponentenbereich](/help/forms/assets/add-new-component.png)
+   ![Bedienfeld „Komponente](/help/forms/assets/add-new-component.png)
 
    Wenn Sie auf die Option **Komponenten** klicken, wird die Liste der verfügbaren Komponenten angezeigt.
 
-   ![Komponentenbereich](/help/forms/assets/add-new-component2.png)
+   ![Bedienfeld „Komponente](/help/forms/assets/add-new-component2.png)
 
 1. Durchsuchen Sie die verfügbaren Komponenten und wählen Sie die gewünschte Komponente aus.
 
-1. Ziehen Sie die Komponente, indem Sie auf die ausgewählte Komponente klicken und sie gedrückt halten, und ziehen Sie sie dann in den Bedienfeldbereich, um sie zu platzieren.
+1. Ziehen Sie die Komponente, indem Sie die ausgewählte Komponente anklicken und gedrückt halten, und ziehen Sie sie dann in den Bereich des Bedienfelds, um sie zu platzieren.
 
 1. Ziehen Sie die Komponente in das Bedienfeld, indem Sie die Maus loslassen.
 
 ## Nächste Schritte
 
-Sobald Sie die verschiedenen Layoutfunktionen für ein adaptives Formular kennen, das auf Kernkomponenten basiert, können Sie mit den nächsten Schritten fortfahren:
+Sobald Sie mit den verschiedenen Layout-Funktionen für ein adaptives Formular, das auf Kernkomponenten basiert, vertraut sind, können Sie mit den nächsten Schritten fortfahren:
 
-* [Erstellen Sie Ihr erstes adaptives Formular basierend auf Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md)
+* [Erstellen Ihres ersten adaptiven Formulars basierend auf Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Erstellen und Verwenden von Designs für adaptive Formulare](/help/forms/using-themes-in-core-components.md)
 
 

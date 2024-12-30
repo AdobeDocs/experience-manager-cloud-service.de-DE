@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 
 >[!TIP]
 >
->In der Regel ist das Einrichten benutzerdefinierter Domain-Namen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Delegierung kommen, deren Behebung 1 bis 2 Werktage dauern kann. Aus diesem Grund wird empfohlen, die Domänen lange vor ihrem Live-Datum zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+>In der Regel ist das Einrichten benutzerdefinierter Domain-Namen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Delegierung kommen, deren Behebung 1 bis 2 Werktage dauern kann. Daher wird empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## Einschränkungen {#limitations}
 

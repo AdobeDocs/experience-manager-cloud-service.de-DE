@@ -1,6 +1,6 @@
 ---
-title: In diesem Artikel werden verschiedene Anwendungsfälle für einen Regeleditor in einem adaptiven Formular auf der Basis von Kernkomponenten beschrieben.
-description: Der Artikel beschreibt verschiedene Anwendungsfälle für einen Regeleditor in einem adaptiven Formular, das auf Kernkomponenten basiert.
+title: In diesem Artikel werden verschiedene Anwendungsfälle für einen Regeleditor in einem adaptiven Formular basierend auf Kernkomponenten beschrieben.
+description: In diesem Artikel werden verschiedene Anwendungsfälle für einen Regeleditor in einem adaptiven Formular beschrieben, die auf Kernkomponenten basieren.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
@@ -14,57 +14,57 @@ ht-degree: 47%
 
 # Verschiedene Anwendungsfälle des Regeleditors
 
-Der Artikel enthält detaillierte Beispiele für einen Regeleditor für ein adaptives Formular, das auf Kernkomponenten basiert und Einblicke in die ordnungsgemäße Implementierung für verschiedene Szenarien bietet. Mit dem Regeleditor können Entwickler die Logik definieren und verwalten, die das Verhalten von Formularen steuert.
+Der Artikel enthält ausführliche Beispiele für einen Regeleditor für ein adaptives Formular, das auf Kernkomponenten basiert, und bietet Einblicke in seine ordnungsgemäße Implementierung für verschiedene Szenarien. Mit dem Regeleditor können Entwickler die Logik definieren und verwalten, die das Verhalten von Formularen steuert.
 Lassen Sie uns nun die verschiedenen Implementierungen für einen Regeleditor besprechen.
 
 
-## Navigieren zwischen Bedienfeldern mithilfe der Schaltfläche
+## Navigieren zwischen Bedienfeldern mithilfe einer Schaltfläche
 
-Mit dem Regeleditor können Sie Navigationsschaltflächen zu Ihren Bedienfeldlayouts hinzufügen, z. B. Horizontale Registerkarten, Vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen verbessern das Benutzererlebnis, indem sie die Übergänge zwischen verschiedenen Bedienfeldern in einem Formular vereinfachen und den Fokus auf das ausgewählte Bedienfeld verschieben.
+Mit dem Regeleditor können Sie Bedienfeld-Layouts Navigationsschaltflächen hinzufügen, z. B. horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistenten. Diese Schaltflächen verbessern das Benutzererlebnis, indem sie die Übergänge zwischen verschiedenen Bedienfeldern in einem Formular vereinfachen und den Fokus auf das ausgewählte Bedienfeld verschieben.
 
-Stellen Sie sich vor, Sie interagieren mit dem Profileinstellungsabschnitt einer Anwendung, in dem die Navigation durch Schaltflächen und nicht durch Registerkarten erleichtert wird. Nach Eingabe der Profileinstellungen aus dem Haupt-Dashboard wird eine Reihe von Bedienfeldern angezeigt, die verschiedenen Aspekten ihres Profils gewidmet sind: **Persönliche Informationen**, **Kontosicherheit** und **Benachrichtigungseinstellungen**.
+Angenommen, Sie interagieren mit dem Abschnitt Profileinstellungen einer Anwendung, in dem die Navigation durch Schaltflächen anstelle von Registerkarten erleichtert wird. Beim Eingeben der Profileinstellungen über das Haupt-Dashboard werden Sie mit einer Reihe von Bedienfeldern konfrontiert, die verschiedenen Aspekten ihres Profils gewidmet sind: **Persönliche**, **Kontosicherheit** und **Benachrichtigungseinstellungen**.
 
-Jedes Bedienfeld enthält relevante Felder und Optionen zum Aktualisieren bestimmter Informationen. Navigationsschaltflächen wie `Next` und `Back` sind hervorgehoben platziert und ermöglichen den Wechsel zwischen diesen Bedienfeldern. Klicken Sie auf `Next` , um den Benutzer zum Bereich **Kontosicherheit** zu leiten, und klicken Sie auf `Back` , um zum Bereich **Persönliche Informationen** zurückzukehren. Diese Navigationsmethode gewährleistet einen nahtlosen Übergang zwischen Abschnitten, ohne den Kontext zu verlieren, und sorgt so für ein reibungsloses und intuitives Benutzererlebnis. Die Verwendung von Navigationsschaltflächen vereinfacht die Verwaltung von Profileinstellungen, wodurch die Interaktion besser organisiert und benutzerfreundlicher wird.
+Jedes Bedienfeld enthält relevante Felder und Optionen zum Aktualisieren bestimmter Informationen. Navigationsschaltflächen, wie `Next` und `Back`, sind gut sichtbar platziert, sodass Sie zwischen diesen Bereichen wechseln können. Klicken Sie auf `Next` , um den Benutzer zum Bedienfeld **Kontosicherheit** zu leiten, und klicken Sie auf `Back` , um zum Bedienfeld **Persönliche Informationen** zurückzukehren. Diese Navigationsmethode sorgt für einen nahtlosen Übergang zwischen Abschnitten, ohne den Kontext zu verlieren, und bietet ein reibungsloses und intuitives Benutzererlebnis. Die Verwendung von Navigationsschaltflächen vereinfacht die Verwaltung von Profileinstellungen und macht die Interaktion übersichtlicher und benutzerfreundlicher.
 
-Sie können die Regel `Navigate among the panels` verwenden, um Navigationsregeln für Schaltflächen zu erstellen, die den Wechsel zwischen verschiedenen Bereichen ermöglichen.  Wählen Sie das Attribut `Shift focus to the next item` aus, um den Fokus auf das nächste Bedienfeld im Layout zu verschieben.
+Sie können die `Navigate among the panels` verwenden, um Navigationsregeln für Schaltflächen zu erstellen, die das Wechseln zwischen verschiedenen Bedienfeldern ermöglichen.  Wählen Sie das Attribut `Shift focus to the next item` aus, um den Fokus auf den nächsten Bereich im Layout zu verschieben.
 
-![Nächste Bereichsregel](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+![Regel für das nächste Bedienfeld](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
-Wenn auf die Schaltfläche &quot;`Next`&quot; geklickt wird, wird der Fokus auf den nachfolgenden Bereich im Layout verschoben.
+Wenn Sie auf die Schaltfläche `Next` klicken, wechselt der Fokus zum nachfolgenden Bereich im Layout.
 
-![Navigieren im Bedienfeld mit der Schaltfläche &quot;Weiter&quot;](/help/forms/assets/navigate-in-panel.gif)
+![Navigieren Sie mit der Schaltfläche Weiter in das Bedienfeld](/help/forms/assets/navigate-in-panel.gif)
 
 Auf ähnliche Weise können Sie eine Regel für die Schaltfläche `Previous` erstellen, um den Fokus auf das vorherige Bedienfeld zu verschieben.
 
-![Vorherige Bereichsregel](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
+![Vorherige Bedienfeldregel](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
-## Optimieren komplexer Berechnungen in wiederholbaren Bereichen mit Funktionen
+## Optimierung komplexer Berechnungen in wiederholbaren Bereichen mit Funktionen
 
-Mit dem Regeleditor können Sie native Funktionen wie Summe, Minimum, Maximum und Verbinden direkt für Felder in wiederholbaren Bereichen verwenden. Sie können auch einen wiederholbaren Bereichsfeldwert an die Funktion übergeben, die Zahlenarray, Zeichenfolgen-Array, boolesches Array usw. akzeptiert. Dadurch wird eine leistungsstarke Automatisierung freigesetzt, sodass Sie komplexe Geschäftslogik ohne benutzerdefinierten Code implementieren können.
+Mit dem Regeleditor können Sie vordefinierte Funktionen wie Summe, Min, Max und Zusammenführen direkt für Felder in wiederholbaren Bereichen verwenden. Sie können auch einen wiederholbaren Bereichsfeldwert an die Funktion übergeben, die ein Zahlen-Array, ein Zeichenfolgen-Array, ein boolesches Array usw. akzeptiert. Dies ermöglicht eine leistungsstarke Automatisierung, sodass Sie komplexe Geschäftslogik ohne benutzerdefinierten Code implementieren können.
 
-Stellen Sie sich ein Formular mit einem wiederholbaren Bedienfeld vor, in dem jede Bedienfeldinstanz Informationen über den deklarierten Wert von Assets erfasst.
+Stellen Sie sich ein Formular mit einem wiederholbaren Bereich vor, in dem jede Bereichsinstanz Informationen über den deklarierten Wert von Assets erfasst.
 
-![Wiederholbares Formular](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![Wiederholbare ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
-Mit der Funktion &quot;`Sum`&quot;können Sie den Gesamtwert der Assets in allen Bedienfeldern automatisch berechnen, sodass keine manuellen Berechnungen mehr erforderlich sind und das Fehlerpotenzial verringert wird.
+Mit der Funktion `Sum` können Sie den Gesamtwert der Assets für alle Bedienfelder automatisch berechnen, sodass keine manuellen Berechnungen mehr erforderlich sind und das Fehlerpotenzial reduziert wird.
 
-![Unterstützung wiederholbarer Bereichsfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+![Unterstützung wiederholbarer Bedienfeldfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel.png)
 
-Wenn Sie ein Formular ausfüllen und Instanzen zum Deklarieren der Asset-Werte hinzufügen, berechnet die Schaltfläche `Calculate Asset Value` die Gesamtsumme aller deklarierten Asset-Werte und zeigt das Ergebnis im Textfeld `assetvalue` insgesamt an.
+Wenn Sie ein Formular ausfüllen und Instanzen hinzufügen, um die Asset-Werte zu deklarieren, berechnet die Schaltfläche &quot;`Calculate Asset Value`&quot; die Gesamtsumme aller deklarierten Asset-Werte und zeigt das Ergebnis in der Summe `assetvalue` Textfeld an.
 
-![Unterstützung wiederholbarer Bereichsfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+![Unterstützung wiederholbarer Bedienfeldfelder in OOTB-Funktionen](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 >[!NOTE]
 >
 > Wenn der Wert des wiederholbaren Bereichsfelds an eine Funktion übergeben wird, die kein Array akzeptiert, wird der Feldwert aus der letzten Instanz des wiederholbaren Bereichs an die Funktion übergeben.
 
-Das ist nur ein Beispiel! Erkunden Sie die verfügbaren [Funktionen](#b-form-objects-and-functions-br), um Workflows zu vereinfachen und die Datengenauigkeit in Ihren Formularen zu verbessern.
+Dies ist nur ein Beispiel! Erkunden Sie die verfügbaren [Funktionen](#b-form-objects-and-functions-br), um Workflows zu vereinfachen und die Datengenauigkeit in Ihren Formularen zu verbessern.
 
 ## Verschachtelte Ausdrücke {#nestedexpressions}
 
-Mit dem Regeleditor können Sie mehrere UND- und ODER-Operatoren verwenden, um verschachtelte Regeln zu erstellen. Sie können mehrere UND- und ODER-Operatoren in den Regeln kombinieren.
+Mit dem Regeleditor können Sie mehrere UND- und ODER-Operatoren verwenden, um verschachtelte Regeln zu erstellen. Sie können mehrere UND- und ODER-Operatoren in den Regeln mischen.
 
-Im Folgenden finden Sie ein Beispiel für eine verschachtelte Regel, die dem Benutzer eine Nachricht über die Berechtigung zum Sorgerecht für ein Kind anzeigt, wenn die erforderlichen Bedingungen erfüllt sind.
+Im Folgenden finden Sie ein Beispiel für eine verschachtelte Regel, die dem Benutzer eine Meldung über den Anspruch auf das Sorgerecht für ein Kind anzeigt, wenn die erforderlichen Bedingungen erfüllt sind.
 
 ![Komplexer Ausdruck](assets/complexexpression.png)
 
@@ -76,7 +76,7 @@ Sie können Bedingungen innerhalb einer Regel auch mittels Drag-and-Drop ziehen,
 
 Im Regeleditor können Sie Datenvergleiche verwenden, um Bedingungen zu erstellen.
 
-Im Folgenden finden Sie eine Beispielbedingung, die ein statisches Textobjekt anzeigt, wenn die Hypothek auf das Haus bereits aufgenommen wurde, was der Benutzer durch Ausfüllen des Datumsfelds angibt.
+Im Folgenden finden Sie eine Beispielbedingung, die ein statisches Textobjekt anzeigt, wenn die Hypothek für das Haus bereits abgeschlossen ist, was der Benutzer durch Ausfüllen des Datumsfelds angibt.
 
 Wenn das vom Benutzer eingetragene Datum der Hypothek in der Vergangenheit liegt, wird im adaptiven Formular ein Hinweis über die Einkommensberechnung angezeigt. Die folgende Regel vergleicht das Datum, das vom Benutzer eingetragen wurde, mit dem aktuellen Datum. Wenn dieses Datum vor dem aktuellen Datum liegt, zeigt das Formular die Textmeldung (mit der Bezeichnung „Einkommen“) an.
 
@@ -118,7 +118,7 @@ Die folgende Regel zeigt, wie Sie die Aktion „Service aufrufen“ konfiguriere
 
 ### Auslösen mehrerer Aktionen mithilfe einer Wenn-Regel {#triggering-multiple-actions-using-the-when-rule}
 
-Sie möchten in einem Kreditantrag erfassen, ob dieser von einer Bestandskundin oder einem Bestandskunden gestellt wurde. Basierend auf den Informationen, die der Benutzer bereitstellt, sollte das Feld Kunden-ID ein- oder ausgeblendet werden. Darüber hinaus soll der Fokus auf das Feld für die Kunden-ID gelegt werden, wenn es sich um eine Bestandskundin oder einen Bestandskunden handelt. Der Kreditantrag umfasst die folgenden Komponenten:
+Sie möchten in einem Kreditantrag erfassen, ob dieser von einer Bestandskundin oder einem Bestandskunden gestellt wurde. Basierend auf den Informationen, die der Benutzer bereitstellt, sollte das Feld „Kunden-ID“ ein- oder ausgeblendet werden. Darüber hinaus soll der Fokus auf das Feld für die Kunden-ID gelegt werden, wenn es sich um eine Bestandskundin oder einen Bestandskunden handelt. Der Kreditantrag umfasst die folgenden Komponenten:
 
 * Ein Optionsfeld **[!UICONTROL Sind Sie bereits Geometrixx-Kunde?]**, das die Optionen [!UICONTROL Ja] und [!UICONTROL Nein] anbietet. Der Wert für „Ja“ ist **0**, und der Wert „Nein“ ist **1**.
 
@@ -141,8 +141,8 @@ Rule in the code editor -->
 Ein Bestellformular enthält die folgende Tabelle, in der Benutzer ihre Bestellungen eingeben. In dieser Tabelle gilt:
 
 * Die erste Zeile ist wiederholbar, sodass Benutzende mehrere Produkte bestellen und unterschiedliche Mengen angeben können. Ihr Elementname ist `Row1`.
-* Der Titel der Zelle in der Spalte &quot;Produktmenge&quot;der wiederholbaren Zeile ist &quot;Menge&quot;. Der Elementname für diese Zelle lautet `productquantity`.
-* Die zweite Zeile in der Tabelle ist nicht wiederholbar und der Titel der Zelle in der Spalte &quot;Produktmenge&quot;in dieser Zeile ist Gesamtmenge.
+* Der Titel der Zelle in der Spalte „Produktmenge“ der wiederholbaren Zeile lautet „Menge“. Der Elementname für diese Zelle lautet `productquantity`.
+* Die zweite Zeile in der Tabelle ist nicht wiederholbar, und der Titel der Zelle in der Spalte „Produktmenge“ in dieser Zeile lautet „Menge insgesamt“.
 
 ![Example-function-table](assets/example-function-table.png)
 
@@ -154,7 +154,7 @@ Als Nächstes sollen die in der Spalte „Produktmenge“ angegebenen Mengen fü
 
 ### Validieren eines Feldwerts mithilfe eines Ausdrucks {#validating-a-field-value-using-expression}
 
-Im im vorherigen Beispiel erläuterten Bestellformular möchten Sie den Benutzer daran hindern, mehr als eine Menge eines Produkts zu bestellen, das über 10000 verkauft wird. Um dies zu erreichen, können Sie wie unten gezeigt eine Validierungsregel schreiben.
+Sie möchten verhindern, dass der Benutzer in dem im vorherigen Beispiel erläuterten Bestellformular mehr als eine Menge eines Produkts bestellt, dessen Preis über 10000 liegt. Um dies zu erreichen, können Sie wie unten gezeigt eine Validierungsregel schreiben.
 
 ![Example-validate](assets/example-validate.png)
 

@@ -15,4 +15,4 @@ ht-degree: 72%
 
 ---
 
-# Kreditantragsformular erstellen
+# Erstellen des Kreditantragsformulars

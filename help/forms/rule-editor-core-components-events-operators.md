@@ -1,6 +1,6 @@
 ---
-title: Welche Operatortypen und -ereignisse sind im Regeleditor eines adaptiven Formulars verfügbar, das auf Kernkomponenten basiert?
-description: Der Regeleditor für adaptive Forms unterstützt verschiedene Operatortypen und -ereignisse.
+title: Welche Operatortypen und Ereignisse stehen im Regeleditor eines adaptiven Formulars basierend auf Kernkomponenten zur Verfügung?
+description: Der Regeleditor für adaptive Forms unterstützt verschiedene Typen von Operatoren und Ereignissen.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
@@ -14,13 +14,13 @@ ht-degree: 58%
 
 # Operatortypen und -ereignisse im Regeleditor eines auf Kernkomponenten basierendes adaptiven Formulars
 
-In AEM Forms as a Cloud umfasst der Regeleditor verschiedene Operatortypen und -ereignisse, mit denen Sie komplexe Bedingungen und Aktionen einfach definieren und ausführen können.
+In AEM Forms as a Cloud Service umfasst der Regeleditor verschiedene Operatortypen und Ereignisse, mit denen Sie komplexe Bedingungen und Aktionen mühelos definieren und ausführen können.
 
-Die im Regeleditor eines adaptiven Formulars verfügbaren Operatortypen bieten ein robustes Framework für die Erstellung präziser Bedingungen. Sie ermöglichen die logische und kohärente Manipulation von Daten, die Durchführung von Berechnungen und die Kombination mehrerer Bedingungen. Unabhängig davon, ob Sie Werte vergleichen, arithmetische Operationen durchführen oder Zeichenfolgen bearbeiten, stellen diese Operatoren sicher, dass Ihre Regeln flexibel und leistungsstark sind.
+Die im Regeleditor eines adaptiven Formulars verfügbaren Operatortypen bieten ein robustes Framework für die Erstellung präziser Bedingungen. Sie ermöglichen es Ihnen, Daten zu bearbeiten, Berechnungen durchzuführen und mehrere Bedingungen logisch und kohärent zu kombinieren. Unabhängig davon, ob Sie Werte vergleichen, arithmetische Operationen durchführen oder Zeichenfolgen bearbeiten, stellen diese Operatoren sicher, dass Ihre Regeln sowohl flexibel als auch leistungsstark sind.
 
-Ereignisse im Regeleditor dienen als Trigger, die Ihre Regeln aktivieren. Sie definieren die spezifischen Aktionen, die auftreten, wenn bestimmte Bedingungen erfüllt sind. Durch die Nutzung verschiedener Ereignistypen können Sie Antworten auf eine Vielzahl von Szenarien automatisieren, z. B. Benutzerinteraktionen, terminierte Zeiten, Änderungen der Daten und Systemzustände. Mit der Möglichkeit, diese Trigger anzugeben, können Sie dynamische und responsive Regeln erstellen, die Ihren spezifischen Anforderungen entsprechen.
+Ereignisse im Regeleditor dienen als Trigger zum Aktivieren Ihrer Regeln. Sie definieren die spezifischen Aktionen, die ausgeführt werden, wenn bestimmte Bedingungen erfüllt sind. Durch die Nutzung verschiedener Ereignistypen können Sie die Reaktionen auf eine Vielzahl von Szenarien automatisieren, z. B. Benutzerinteraktionen, geplante Zeiten, Änderungen der Daten und Systemstatus. Mit der Möglichkeit, diese Trigger anzugeben, können Sie dynamische und responsive Regeln erstellen, die Ihren spezifischen Anforderungen entsprechen.
 
-Indem Sie die verfügbaren Operatortypen und -ereignisse verstehen und verwenden, können Sie das gesamte Potenzial des Regeleditors ausschöpfen, wodurch Sie effiziente und effektive Regeln erstellen können, die Ihren individuellen Anforderungen entsprechen und die Systemfunktionalität insgesamt verbessern.
+Durch das Verständnis und die Verwendung der verfügbaren Operatortypen und Ereignisse können Sie das volle Potenzial des Regeleditors ausschöpfen, wodurch Sie effiziente, effektive Regeln erstellen können, die Ihren individuellen Anforderungen entsprechen und die allgemeine Systemfunktionalität verbessern.
 
 ## Verfügbare Typen von Operatoren und Ereignissen im Regeleditor {#available-operator-types-and-events-in-rule-editor}
 
@@ -64,7 +64,7 @@ Einfach ausgedrückt: Eine typische Wenn-Regel ist wie folgt aufgebaut:
 
 `Action 2 on Object B;`
 `AND`
-`Aktion 3 für Objekt C;
+`Aktion 3 auf Objekt C;
 
 `Else, do the following:`
 
@@ -77,13 +77,13 @@ Eine Liste hat beispielsweise vier Optionen: „Rot“, „Blau“, „Grün“ 
 
 ![Anzeigeoptionen für mehrere Werte](assets/multivaluefcdisplaysoptions.png)
 
-Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ auslösen. Die Aktion „Wert löschen von“ löscht den Wert des angegebenen Objekts. Mit der Option Wert löschen von als Option in der Wenn-Anweisung können Sie komplexe Bedingungen mit mehreren Feldern erstellen. Sie können die Anweisung Else hinzufügen, um weitere Bedingungen hinzuzufügen.
+Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ auslösen. Die Aktion „Wert löschen von“ löscht den Wert des angegebenen Objekts. Mit „Wert löschen von“ als Option in der Wenn-Anweisung können Sie komplexe Bedingungen mit mehreren Feldern erstellen. Sie können die Else-Anweisung hinzufügen, um weitere Bedingungen hinzuzufügen
 
 ![Wert löschen von](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> Wenn der Regeltyp nur einstufige then-else -Anweisungen unterstützt.
+> Wenn der Regeltyp nur Dann-Sonst-Anweisungen mit einer Ebene unterstützt.
 
 ##### Felder mit Mehrfachauswahl in [!UICONTROL Wenn] {#allowed-multiple-fields}
 
@@ -99,17 +99,17 @@ UND/ODER
 
 (Objekt B Bedingung 2)
 
-Führen Sie dann die folgenden Schritte aus:
+Gehen Sie dann wie folgt vor:
 
-Aktion 1: Objekt A
+Aktion 1 auf Objekt A
 
 _
 
 ![Felder mit Mehrfachauswahl in „Wenn“](/help/forms/assets/allowed-multiple-field-when.png)
 
-**Überlegungen zur Verwendung von &quot;Zulässige mehrere Felder&quot;in der Funktion &quot;Wenn Bedingung&quot;**
+**Überlegungen bei Verwendung von Zulässigen mehreren Feldern in der Wenn-Bedingungsfunktion**
 
-* Stellen Sie sicher, dass die [Kernkomponente auf Version 3.0.14 oder höher](https://github.com/adobe/aem-core-forms-components) eingestellt ist, um diese Funktion im Regeleditor zu verwenden.
+* Stellen Sie sicher, dass [Kernkomponente auf Version 3.0.14 oder höher eingestellt ist](https://github.com/adobe/aem-core-forms-components) um diese Funktion im Regeleditor zu verwenden.
 * Falls Regeln auf verschiedene Felder in der Wenn-Bedingung angewendet werden, wird die Regel auch dann ausgelöst, wenn nur eines dieser Felder geändert wird.
 
 
@@ -145,19 +145,19 @@ Wenn bei Feldern mit Mehrfachauswahl in der Wenn-Bedingung Probleme auftreten, f
 
 **[!UICONTROL Deaktivieren]**: Deaktiviert das angegebene Objekt.
 
-**[!UICONTROL Dienst aufrufen]** Ruft einen Dienst auf, der in einem Formulardatenmodell (FDM) konfiguriert ist. Wenn Sie den Vorgang „Dienst aufrufen“ wählen, wird ein Feld angezeigt. Beim Antippen des Felds zeigt es sämtliche Dienste an, die in allen Formulardatenmodellen (FDM) in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei der Auswahl eines Formulardatenmodelldienstes werden weitere Felder angezeigt, in denen Sie Formularobjekte Eingabeparametern für den angegebenen Dienst zuordnen können. Sie können die Ausgabeparameter über die Ereignis-Payload-Option für den angegebenen Dienst zuordnen. Sie können auch mithilfe des Regeleditors Regeln für die Verarbeitung von Erfolgs- und Fehlerantworten des Vorgangs &quot;Invoke Service&quot;erstellen.
+**[!UICONTROL Dienst aufrufen]** Ruft einen Dienst auf, der in einem Formulardatenmodell (FDM) konfiguriert ist. Wenn Sie den Vorgang „Dienst aufrufen“ wählen, wird ein Feld angezeigt. Beim Antippen des Felds zeigt es sämtliche Dienste an, die in allen Formulardatenmodellen (FDM) in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Service erscheinen weitere Felder, in denen Sie Formularobjekte mit Eingabeparametern für den angegebenen Service zuordnen können. Sie können die Ausgabeparameter über die Payload-Option für das Ereignis für den angegebenen Service zuordnen. Sie können auch Regeln für die Verarbeitung von Erfolgs- und Fehlerantworten des Vorgangs „Service aufrufen“ mithilfe des Regeleditors erstellen.
 
 >[!NOTE]
 >
-> Um mehr über den Aufrufdienst zu erfahren, klicken Sie hier [.](/help/forms/invoke-service-enhancements-rule-editor.md)
+> Weitere Informationen zum Aufrufen des Service finden Sie [hier](/help/forms/invoke-service-enhancements-rule-editor.md).
 
-Siehe die Beispielregel zum Aufrufen von Formulardatenmodell (FDM)-Diensten.
+Siehe die Beispielregel für den Aufruf von Formulardatenmodell(FDM)-Services.
 
-Zusätzlich zum Formulardatenmodelldienst können Sie eine direkte WSDL-URL angeben, um einen Webdienst aufzurufen. Ein Formulardatenmodell-Service hat jedoch viele Vorteile und stellt den empfohlenen Ansatz zum Aufrufen eines Service dar.
+Zusätzlich zum Formulardatenmodell-Service können Sie eine direkte WSDL-URL angeben, um einen Webservice aufzurufen. Ein Formulardatenmodell-Service hat jedoch viele Vorteile und stellt den empfohlenen Ansatz zum Aufrufen eines Service dar.
 
 Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
-**[!UICONTROL Wert festlegen]**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Sie können den Objektwert auf eine Zeichenfolge, den Wert eines anderen Objekts, den mithilfe eines mathematischen Ausdrucks oder einer Funktion berechneten Wert, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodelldienstes setzen. Wenn Sie die Option „Web-Dienst“ wählen, werden sämtliche Dienste angezeigt, die in allen Formulardatenmodellen (FDM) in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Dienstes werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Dienst zuordnen können.
+**[!UICONTROL Wert festlegen]**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Als Objektwert können Sie eine Zeichenfolge, den Wert eines anderen Objekts, den mithilfe eines mathematischem Ausdrucks oder einer Funktion berechneten Wert, den Wert einer Eigenschaft eines Objekts oder den von einem konfigurierten Formulardatenmodell-Service ausgegebenen Wert festlegen. Wenn Sie die Option „Web-Dienst“ wählen, werden sämtliche Dienste angezeigt, die in allen Formulardatenmodellen (FDM) in Ihrer [!DNL Experience Manager]-Instanz konfiguriert sind. Bei Auswahl eines Formulardatenmodell-Dienstes werden weitere Felder eingeblendet, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Dienst zuordnen können.
 
 Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
@@ -176,7 +176,7 @@ Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert ein
 * enumNames (Zeichenfolge[])
 * chartType (Zeichenfolge)
 
-So können Sie beispielsweise Regeln definieren, die das Textfeld anzeigen, wenn auf eine Schaltfläche geklickt wird. Sie können eine benutzerdefinierte Funktion, ein Formularobjekt, eine Objekteigenschaft oder eine Dienstausgabe verwenden, um eine Regel zu definieren.
+Beispielsweise können Sie damit Regeln definieren, die das Textfeld beim Klicken auf eine Schaltfläche anzeigen. Sie können eine benutzerdefinierte Funktion, ein Formularobjekt, eine Objekteigenschaft oder eine Service-Ausgabe verwenden, um eine Regel zu definieren.
 
 ![Eigenschaft festlegen](assets/set_property_rule_new.png)
 
@@ -184,9 +184,9 @@ Um eine Regel basierend auf einer benutzerdefinierten Funktion zu definieren, w�
 
 Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie **[!UICONTROL Formularobjekt]** in der Dropdown-Liste aus und ziehen Sie ein Formularobjekt per Drag-and-Drop aus der Registerkarte **[!UICONTROL Formularobjekte]**. Wenn die Aktion der Bedingung erfüllt ist, wird das Texteingabefeld im adaptiven Formular angezeigt.
 
-Mit einer auf einer Objekteigenschaft basierenden Regel Eigenschaft festlegen können Sie das Texteingabefeld in einem adaptiven Formular basierend auf einer anderen Objekteigenschaft im adaptiven Formular sichtbar machen.
+Mit einer Regel vom Typ „Eigenschaft festlegen“, die auf einer Objekteigenschaft basiert, können Sie das Texteingabefeld in einem adaptiven Formular basierend auf einer anderen Objekteigenschaft, die im adaptiven Formular enthalten ist, sichtbar machen.
 
-Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Kontrollkästchens basierend auf dem Ausblenden oder Anzeigen eines Textfelds in einem adaptiven Formular:
+Die folgende Abbildung zeigt ein Beispiel für das dynamische Aktivieren des Kontrollkästchens auf der Grundlage des Ausblendens oder Anzeigens eines Textfelds in einem adaptiven Formular:
 
 ![Objekteigenschaft](assets/object_property_set_property_new.png)
 
@@ -204,9 +204,9 @@ Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Ko
 
 **[!UICONTROL Instanz entfernen]**: Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
-**[!UICONTROL Funktionsausgabe]** Definiert eine Regel, die auf vordefinierten Funktionen oder benutzerdefinierten Funktionen basiert.
+**[!UICONTROL Funktionsausgabe]** Definiert eine Regel basierend auf vordefinierten Funktionen oder benutzerdefinierten Funktionen.
 
-**[!UICONTROL Navigieren Sie zu]** Navigieren Sie zu anderen adaptiven Forms, anderen Assets wie Bildern oder Dokumentfragmenten oder einer externen URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigieren zu]** Navigieren Sie zu anderen adaptiven Forms, anderen Assets (wie Bildern oder Dokumentfragmenten) oder zu einer externen URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Dispatch-Ereignis]**: Löst die spezifischen Aktionen oder Verhaltensweisen aus, die auf vordefinierten Bedingungen oder Ereignissen basieren.
 
@@ -216,13 +216,13 @@ Regeln vom Typ **[!UICONTROL Wert festlegen]** ermöglichen es, den Wert eines F
 
 Der Regeltyp **Wert festlegen** steht für manche Formularobjekte nicht zur Verfügung (z. B. nicht für Bereiche und Schaltflächen von Symbolleisten). Eine standardmäßige Regel vom Typ „Wert festlegen“ hat die folgende Struktur:
 
-Setzen Sie den Wert von Objekt A auf:
+Legen Sie für Objekt A den Wert fest auf:
 
-(String ABC) ODER
-(Objekteigenschaft X des Objekts C) ODER
+(Zeichenfolge ABC) ODER
+(Objekteigenschaft X von Objekt C) ODER
 (Wert aus einer Funktion) ODER
 (Wert aus einem mathematischen Ausdruck) ODER
-(Ausgabewert eines Datenmodelldienstes);
+(Ausgabewert eines Datenmodell-Service);
 
 When (optional):
 
@@ -232,7 +232,7 @@ Im folgenden Beispiel wird der Wert von `Question2` als `True` ausgewählt und d
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-Beispiel einer Regel zum Festlegen eines Werts mit dem Formulardatenmodelldienst.
+Beispiel für die Regel „Wert festlegen“ unter Verwendung des Formulardatenmodell-Service.
 
 #### [!UICONTROL Anzeigen] {#show}
 
@@ -300,7 +300,7 @@ Eine typische Regel vom Typ „Deaktivieren“ ist wie folgt strukturiert:
 
 #### [!UICONTROL Validieren] {#validate}
 
-Regeln vom Typ **[!UICONTROL Validieren]** überprüfen den Wert in einem Feld mithilfe eines Ausdrucks. Sie können beispielsweise einen Ausdruck schreiben, um zu überprüfen, ob das Textfeld zur Angabe eines Namens keine Sonderzeichen oder Zahlen enthält.
+Regeln vom Typ **[!UICONTROL Validieren]** überprüfen den Wert in einem Feld mithilfe eines Ausdrucks. Sie können beispielsweise einen Ausdruck schreiben, um zu überprüfen, ob das Textfeld zum Angeben eines Namens keine Sonderzeichen oder Zahlen enthält.
 
 Eine typische Regel vom Typ „Validieren“ ist wie folgt strukturiert:
 
@@ -316,11 +316,11 @@ Eine typische Regel vom Typ „Validieren“ ist wie folgt strukturiert:
 
 ![Script-validation](assets/script-validation.png)
 
-#### [!UICONTROL Zwischen den Bedienfeldern navigieren]
+#### [!UICONTROL Navigieren zwischen den Bedienfeldern]
 
-Mit dem Regeltyp **[!UICONTROL Zwischen Bedienfeldern navigieren]** können Sie den Fokus auf verschiedene Bedienfelder in einem Formular verschieben. Sie können beispielsweise einen Ausdruck erstellen, um den Fokus auf den nächsten Bereich zu verschieben.
+Der **[!UICONTROL Navigieren zwischen den Bereichen]** ermöglicht es Ihnen, den Fokus zwischen verschiedenen Bereichen in einem Formular zu verschieben. Sie können beispielsweise einen Ausdruck erstellen, um den Fokus in den nächsten Bereich zu verschieben.
 
-Eine typische **Navigieren zwischen den Bedienfeldern** -Regel zum Verschieben des Fokus auf den nächsten Bereich ist wie folgt strukturiert:
+Eine typische Regel **Navigieren zwischen den Bereichen** zum Verschieben des Fokus auf den nächsten Bereich ist wie folgt strukturiert:
 
 `Navigate among the panels`
 
@@ -330,7 +330,7 @@ Eine typische **Navigieren zwischen den Bedienfeldern** -Regel zum Verschieben d
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Auf ähnliche Weise können Sie die Regel **Navigieren zwischen den Bedienfeldern** schreiben, um den Fokus auf das vorherige Bedienfeld zu verschieben:
+Ebenso können Sie eine Regel **Navigieren zwischen den Bereichen** schreiben, um den Fokus auf das vorherige Bedienfeld zu verschieben:
 
 `Navigate among the panels`
 
@@ -340,15 +340,15 @@ Auf ähnliche Weise können Sie die Regel **Navigieren zwischen den Bedienfelder
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie unter [Klicken Sie hier](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
 #### [!UICONTROL Async-Funktionsaufruf]
 
 <span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
 
-Mit dem Regeltyp **[!UICONTROL Async Function call]** können Sie asynchrone Funktionen ausführen. Dadurch können Sie einen Funktionsaufruf starten, der unabhängig vom Haupt-Ausführungs-Thread ausgeführt wird, sodass andere Prozesse fortgesetzt werden können, ohne auf den Abschluss der asynchronen Funktion zu warten.
+Der Regeltyp **[!UICONTROL Aufruf der asynchronen Funktion]** ermöglicht die Ausführung asynchroner Funktionen. Dies ermöglicht es Ihnen, einen Funktionsaufruf zu initiieren, der unabhängig vom Haupt-Ausführungs-Thread ausgeführt wird, sodass andere Prozesse weiter ausgeführt werden können, ohne auf den Abschluss der asynchronen Funktion zu warten.
 
-Eine typische Regel für einen asynchronen Funktionsaufruf zum Ausführen der asynchronen Funktion ist wie folgt strukturiert:
+Eine typische Regel für den Aufruf einer asynchronen Funktion zum Ausführen einer asynchronen Funktion ist wie folgt strukturiert:
 
 `When:`
 
@@ -358,7 +358,7 @@ Eine typische Regel für einen asynchronen Funktionsaufruf zum Ausführen der as
 
 `[Callback Function];`
 
-Weitere Informationen zur Verwendung des Aufrufs Async-Funktion im Visual Rule Editor finden Sie im Artikel [Verwenden asynchroner Funktionsaufrufe im Regeleditor](/help/forms/using-async-funct-in-rule-editor.md) .
+Weitere Informationen zur Verwendung des Aufrufs der asynchronen Funktion im visuellen Regeleditor finden Sie im [Verwenden asynchroner Funktionsaufrufe im Regeleditor](/help/forms/using-async-funct-in-rule-editor.md) .
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -382,7 +382,7 @@ To define a rule based on a form data model:
 
 ## Nächster Schritt
 
-Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/rule-editor-core-components-usecases.md) erläutert.
+Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) ](/help/forms/rule-editor-core-components-usecases.md).
 
 ## Siehe auch
 

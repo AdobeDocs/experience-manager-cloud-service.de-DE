@@ -1,21 +1,21 @@
 ---
-title: In diesem Artikel wird die Benutzeroberfläche des Regeleditors für ein adaptives Formular basierend auf Kernkomponenten erläutert.
-description: Der Regeleditor für adaptive Forms unterstützt die Benutzer beim Schreiben von Regeln, die Trigger-Aktionen auf der Grundlage von Bedingungen, Benutzereingaben und Interaktionen durchführen.
+title: In diesem Artikel wird die Benutzeroberfläche des Regeleditors eines adaptiven Formulars, das auf Kernkomponenten basiert, erläutert.
+description: Der Regeleditor für adaptive Forms hilft Benutzenden beim Schreiben von Regeln, die auf Bedingungen, Benutzereingaben und Interaktionen basierende Trigger-Aktionen ermöglichen.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
+source-git-commit: 9f037a7e7d07916cec56f230d5751209c6c254a8
 workflow-type: tm+mt
 source-wordcount: '2298'
-ht-degree: 73%
+ht-degree: 82%
 
 ---
 
+# Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren
 
-# Benutzeroberfläche des Regeleditors für adaptive Forms basierend auf Kernkomponenten
-
-Die Benutzeroberfläche des Regeleditors für die adaptive Forms auf der Basis von Kernkomponenten verbessert den Formularerstellungsprozess in Adobe Experience Manager (AEM). Sie ermöglicht sowohl Unternehmensbenutzern als auch Entwicklern die Implementierung von dynamischem Verhalten und komplexer Logik in Formulare, indem Regeln geschrieben werden, die Trigger-Aktionen auf der Grundlage vordefinierter Bedingungen, Benutzereingaben und Interaktionen durchführen. Diese Funktion unterstützt moderne JavaScript-Funktionen, einschließlich ES10-Funktionen, und bietet einen intuitiven visuellen Editor, der das Schreiben von Regeln vereinfacht.
-Der Regeleditor ist hilfreich, um das Ausfüllen von Formularen zu optimieren und sowohl Genauigkeit als auch Effizienz zu gewährleisten. Sie ermöglicht die Überprüfung oder das Zurücksetzen von Bedienfeldern und Formularen sowie die Ausführung benutzerdefinierter Funktionen zur Berechnung der Werte von Formularobjekten. Mit der Unterstützung verschachtelter Bedingungen und der Möglichkeit, Formulardatenmodelldienste aufzurufen, ist die Benutzeroberfläche des Regeleditors eine entscheidende Komponente für die Erstellung responsiver, benutzerfreundlicher und adaptiver Formulare.
+Die auf Kernkomponenten basierende Benutzeroberfläche des Regeleditors für adaptive Forms verbessert den Prozess der Formularerstellung in Adobe Experience Manager (AEM). Es ermöglicht Geschäftsbenutzern und Entwicklern, dynamisches Verhalten und komplexe Logik in Formulare zu implementieren, indem Regeln geschrieben werden, die Trigger-Aktionen basierend auf vordefinierten Bedingungen, Benutzereingaben und Interaktionen erstellen. Diese Funktion unterstützt moderne JavaScript-Funktionen, einschließlich ES10-Funktionen, und bietet einen intuitiven visuellen Editor, der den Regelerstellungsprozess vereinfacht.
+Der Regeleditor ist für das optimierte Ausfüllen des Formulars von entscheidender Bedeutung, da er sowohl Genauigkeit als auch Effizienz gewährleistet. Dies ermöglicht die Validierung oder das Zurücksetzen von Bereichen und Formularen sowie die Ausführung benutzerdefinierter Funktionen zum Berechnen von Werten von Formularobjekten. Durch die Unterstützung verschachtelter Bedingungen und die Möglichkeit, Formulardatenmodell-Services aufzurufen, ist die Benutzeroberfläche des Regeleditors eine zentrale Komponente für die Erstellung responsiver, benutzerfreundlicher und adaptiver Formulare.
 
 ## Grundlegendes zur Benutzeroberfläche des Regeleditors {#understanding-the-rule-editor-user-interface}
 
@@ -38,7 +38,7 @@ Nachfolgend werden die einzelnen Komponenten der Benutzeroberfläche des Regeled
 
 ### A. Ansicht „Komponente und Regel“ {#a-component-rule-display}
 
-Zeigt den Titel des adaptiven Formularobjekts, über das Sie den Regeleditor aufgerufen haben, sowie den derzeit ausgewählten Regeltyp an. Im obigen Beispiel wird der Regeleditor von einem adaptiven Formularobjekt mit dem Namen Frage 1 gestartet und der Regeltyp ist Wann.
+Zeigt den Titel des adaptiven Formularobjekts, über das Sie den Regeleditor aufgerufen haben, sowie den derzeit ausgewählten Regeltyp an. Im oben gezeigten Beispiel wurde der Regeleditor über ein adaptives Formularobjekt namens „Question 1“ (Frage 1) gestartet und der Regeltyp „Wenn“ ist ausgewählt.
 
 ### B. Formularobjekte und Funktionen {#b-form-objects-and-functions-br}
 
@@ -50,13 +50,13 @@ Die Formularobjekte, auf die eine oder mehrere gültige Regeln angewendet wurden
 
 Die Registerkarte „Funktionen“ enthält eine Reihe integrierter Funktionen (z. B. „Summe von“, „Minimum von“, „Maximum von“, „Durchschnitt von“, „Anzahl von“ und „Formular validieren“). Sie können diese Funktionen verwenden, um Werte in wiederholbaren Bereichen und Tabellenzeilen zu berechnen und sie beim Erstellen von Regeln in den Aktions- und Bedingungsanweisungen zu verwenden. Sie können jedoch auch benutzerdefinierte Funktionen erstellen.
 
-Einige Funktionen werden in der Abbildung dargestellt:
+Einige der Listen von Funktionen werden in der Abbildung angezeigt:
 
 ![Die Registerkarte „Funktionen“](assets/functions.png)
 
 >[!NOTE]
 >
->Sie können auf den Registerkarten &quot;Forms-Objekte und -Funktionen&quot;eine Textsuche nach Namen und Titeln von Objekten und Funktionen durchführen.
+>Sie können auf den Registerkarten &quot;Forms-Objekte“ und „Funktionen“ eine Textsuche nach den Namen und Titeln von Objekten und Funktionen durchführen.
 
 In der linken Baumstruktur der Formularobjekte können Sie die Formularobjekte auswählen, um die Regeln anzuzeigen, die auf die einzelnen Objekte angewendet werden. Sie können nicht nur durch die Regeln der verschiedenen Formularobjekte navigieren, sondern auch Regeln zwischen den Formularobjekten kopieren und einfügen. Weitere Informationen finden Sie unter [Kopieren und Einfügen von Regeln](rule-editor.md#p-copy-paste-rules-p).
 
@@ -87,19 +87,19 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Die Schaltfläche **[!UICONTROL Fertig]** wird verwendet, um eine Regel zu speichern. Sie können eine unvollständige Regel speichern. Unvollständige Regeln sind jedoch ungültig und werden nicht ausgeführt. Gespeicherte Regeln für ein Formularobjekt werden aufgelistet, wenn Sie den Regeleditor das nächste Mal von demselben Formularobjekt aus starten. In dieser Ansicht können Sie vorhandene Regeln verwalten. Weitere Informationen finden Sie unter [Verwalten von Regeln](rule-editor.md#p-manage-rules-p).
 
-Die Schaltfläche **[!UICONTROL Abbrechen]** verwirft alle Änderungen, die Sie an einer Regel vorgenommen haben, und schließt den Regeleditor.
+Die **[!UICONTROL Abbrechen]**-Schaltfläche verwirft alle Änderungen, die Sie an einer Regel vorgenommen haben, und schließt den Regeleditor.
 
 ## Regeln schreiben {#write-rules}
 
-Sie können Regeln mit dem visuellen Regeleditor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. --> schreiben
+Sie können Regeln mit dem visuellen Regeleditor<!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. --> schreiben
 
 Sehen wir uns zunächst an, wie Regeln mit einem visuellen Editor geschrieben werden.
 
 +++
 
-+++ Verwenden des Visual Editor {#using-visual-editor}
++++ Verwenden von Visual Editor {#using-visual-editor}
 
-Im Folgenden wird beschrieben, wie Sie eine Regel in einem Visual Editor mithilfe des folgenden Beispielformulars erstellen.
+Anhand des folgenden Beispielformulars soll das Erstellen einer Regel in einem visuellen Editor verständlich gemacht werden.
 
 ![Create-rule-example](assets/create-rule-example.png)
 
@@ -110,7 +110,7 @@ Im Abschnitt für die Kreditvoraussetzungen in diesem Beispielformular für eine
 
 Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
-1. Schreiben Sie zunächst die Regel, um die Sichtbarkeit des Felds für das Gehalt des Partners/der Partnerin anhand der vom Benutzer für das Optionsfeld Familienstand ausgewählten Option zu steuern.
+1. Schreiben Sie zunächst die Regel, um die Sichtbarkeit des Felds Gehalt des Partners basierend auf der Option zu steuern, die der Benutzer für das Optionsfeld Familienstand auswählt.
 
    Öffnen Sie das Kreditantragsformular im Autorenmodus. Wählen Sie die Komponente **[!UICONTROL Familienstand]** und ![edit-rules](assets/edit-rules-icon.svg) aus. Wählen Sie als Nächstes **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
 
@@ -124,7 +124,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-1. Wählen Sie im Feld **[!UICONTROL String eingeben]** in der Regel **Verheiratet** aus dem Dropdown-Menü aus.
+1. Wählen **[!UICONTROL in der Regel im Feld]** Geben Sie eine Zeichenfolge ein **aus dem Dropdown-Menü die Option** Verheiratet“ aus.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -134,20 +134,20 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
+1. Ziehen Sie das Feld **[!UICONTROL Partnergehalt]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
-   Definieren Sie als Nächstes die Aktion, die ausgeführt werden soll, wenn diese Bedingung False ist.
-1. Klicken Sie auf **[!UICONTROL Else Abschnitt hinzufügen]** , um eine weitere Bedingung für das Feld **[!UICONTROL Gehalt des Partners/der Partnerin]** hinzuzufügen, falls Sie Familienstand als Einzelperson auswählen.
+   Definieren Sie anschließend die Aktion, die ausgeführt werden soll, wenn diese Bedingung „false“ lautet.
+1. Klicken Sie auf **[!UICONTROL Abschnitt „Andernfalls“ hinzufügen]**, um eine weitere Bedingung für das Feld **[!UICONTROL Partnergehalt]** hinzuzufügen, falls für den Familienstand „Einzelperson“ ausgewählt wird.
 
    ![when-else](assets/when-else.png)
 
 
-1. Wählen Sie in der Anweisung &quot;Else&quot;aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** die Option **[!UICONTROL Ausblenden]** aus.
+1. Wählen Sie für die Sonst-Anweisung die Option **[!UICONTROL Ausblenden]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** aus.
    ![when-else](assets/when-else-1.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
+1. Ziehen Sie das Feld **[!UICONTROL Partnergehalt]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
    ![when-else](assets/when-else-2.png)
 
    Die Regel wird im Regeleditor wie folgt angezeigt.
@@ -163,11 +163,11 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 >[!NOTE]
 >
-> Alternativ können Sie eine Regel Anzeigen für das Feld Gehalt des Partners anstelle einer Wenn-Regel für das Feld Familienstand schreiben, um dasselbe Verhalten zu implementieren.
+> Alternativ zu diesem Verfahren können Sie dieses Verhalten auch implementieren, indem Sie für das Feld „Partnergehalt“ lediglich eine Regel vom Typ „Anzeigen“ anstelle zweier Wenn-Regeln für das Feld „Familienstand“ erstellen.
 
 ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
-1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Um dieses Ergebnis zu erzielen, erstellen Sie im Feld &quot;Kreditanspruchsberechtigung&quot;Regeln für den **[!UICONTROL Wert einstellen von]** .
+1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Um dies zu erreichen, erstellen Sie **[!UICONTROL Wert festlegen von]**-Regeln für das Feld „Kreditanspruch“.
 
    Wählen Sie im Autorenmodus das Feld **[!UICONTROL Kreditanspruch]** und dann![edit-rules](assets/edit-rules-icon.svg) aus. Wählen Sie anschließend **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
 
@@ -227,7 +227,7 @@ Sie können auch die Regel „Wert einstellen von“ verwenden, um den Kreditans
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
 
-Sie können eine kombinierte Regel erstellen, um die Sichtbarkeit des Felds für das Gehalt des Partners oder der Partnerin zu steuern und die Kreditanspruchsberechtigung für den Familienstand &quot;Verheiratet&quot;unter Verwendung der Bedingung &quot;Else&quot;zu berechnen.
+Sie können eine kombinierte Regel erstellen, die die Sichtbarkeit des Felds für das Gehalt der Partnerin bzw. des Partners steuert, und mit der Sonst-Bedingung die Darlehensberechtigung für den Familienstand „Verheiratet“ berechnet.
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
@@ -257,7 +257,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Benutzerdefinierte Funktionen im Regeleditor {#custom-functions}
 
-Neben den vordefinierten Funktionen wie *Summe von*, die unter **Funktionsausgabe** aufgeführt sind, können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die Syntax von JavaScript ECMAScript 2019 für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in adaptiven Formularen](/help/forms/create-and-use-custom-functions.md).
+Zusätzlich zu den vorkonfigurierten Funktionen wie beispielsweise *Summe von*, die unter **Funktionsausgabe** aufgeführt sind, können Sie in Ihrem Regeleditor auch benutzerdefinierte Funktionen verwenden. Der Regeleditor unterstützt die JavaScript ECMAScript 2019-Syntax für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in adaptiven Formularen](/help/forms/create-and-use-custom-functions.md).
 
 <!--
 
@@ -441,7 +441,7 @@ Sie können die folgenden Aktionen für die Regeln ausführen:
 
 * **Anzeigen/Reduzieren**: Die Inhaltsspalte in der Regelliste zeigt den Regelinhalt an. Wenn in der Standardansicht nicht der gesamte Regelinhalt sichtbar ist, wählen Sie ![expand-rule-content](assets/Smock_ChevronDown.svg) aus, um die Ansicht zu erweitern.
 
-* **Anordnung ändern**: Jede neue Regel, die Sie erstellen, wird am unteren Rand der Regelliste gestapelt. Die Regeln werden von oben nach unten ausgeführt. Die Regel oben wird zuerst ausgeführt, gefolgt von anderen Regeln desselben Typs. Wenn beispielsweise die Regeln &quot;Wann&quot;, &quot;Anzeigen&quot;, &quot;Aktivieren&quot;und &quot;Wann&quot;an der ersten, zweiten, dritten und vierten Position oben stehen, wird zuerst die Wenn-Regel am oberen Rand und dann die Wenn-Regel an der vierten Position ausgeführt. Danach werden die Anzeigen- und die Aktivieren-Regel ausgeführt.
+* **Anordnung ändern**: Jede neue Regel, die Sie erstellen, wird am unteren Rand der Regelliste gestapelt. Die Regeln werden von oben nach unten ausgeführt. Die Regel oben wird zuerst ausgeführt, gefolgt von anderen Regeln desselben Typs. Wenn Sie beispielsweise die Regeln „Wenn“, „Anzeigen“, „Aktivieren“ und „Wenn“ an der ersten, zweiten, dritten bzw. vierten Position von der obersten Position haben, wird die Wenn-Regel oben zuerst ausgeführt, gefolgt von der Wenn-Regel an der vierten Position. Danach werden die Anzeigen- und die Aktivieren-Regel ausgeführt.
 Sie können die Position einer Regel in der Reihenfolge ändern, indem Sie auf ![sort-rules](assets/sort-rules.svg) für die Regel tippen oder die Regel an die gewünschte Stelle in der Liste ziehen und dort ablegen.
 
 * **Bearbeiten**: Zum Bearbeiten einer Regel aktivieren Sie das Kontrollkästchen neben ihrem Titel. Weitere Optionen zum Bearbeiten und Löschen der Regel werden angezeigt. Wählen Sie **[!UICONTROL Bearbeiten]** aus, um die ausgewählte Regel im Regeleditor zu öffnen.
@@ -478,7 +478,7 @@ Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
 ## Nächster Schritt
 
-Informationen zu den verschiedenen Operatortypen und Ereignissen im Regeleditor eines adaptiven Formulars finden Sie im Artikel [Verfügbare Operatortypen und -ereignisse im Regeleditor eines adaptiven Formulars](/help/forms/rule-editor-core-components-events-operators.md) .
+Informationen zu den verschiedenen Typen von Operatoren und Ereignissen im Regeleditor eines adaptiven Formulars finden Sie im [Verfügbare Typen von Operatoren und Ereignissen im Regeleditor eines adaptiven Formulars](/help/forms/rule-editor-core-components-events-operators.md) .
 
 
 ## Siehe auch

@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Nach dem Hinzufügen können [IP-Zulassungslisten](/help/implementing/cloud-mana
 
 ## Einschränkungen {#limitations}
 
-Bevor Sie IP-Zulassungslisten verwenden, sollten Sie die folgenden Einschränkungen hinsichtlich Funktionalität, Verwendung und Auswirkung auf andere Funktionen kennen.
+Bevor Sie IP-Zulassungslisten verwenden, müssen Sie die folgenden Einschränkungen hinsichtlich Funktionalität, Verwendung und Auswirkung auf andere Funktionen kennen.
 
 ### Allgemeine Einschränkungen von IP-Zulassungslisten {#general}
 
@@ -80,7 +80,7 @@ Wenn Sie die [IP-Zulassungsliste hinzufügen](/help/implementing/cloud-manager/i
 
 Stellen Sie sicher, dass diese Cloud Manager-IP-Zulassungsliste hinzugefügt wird, um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden. Wenden Sie dann die Liste auf die Autorenumgebung an, *bevor* Sie die Pipeline aktivieren.
 
-Weitere Informationen finden Sie unter [Anwenden der IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) und [Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) .
+Weitere Informationen finden Sie unter [Anwenden von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) und [Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 ### Universeller Editor und IP-Zulassungslisten {#universal-editor}
 

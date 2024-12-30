@@ -1,5 +1,5 @@
 ---
-title: Privates GitHub-Repository in Cloud Manager hinzufügen
+title: Hinzufügen eines privaten GitHub-Repositorys in Cloud Manager
 description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigenen privaten GitHub-Repositorys einrichten.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
@@ -7,13 +7,13 @@ role: Admin, Architect, Developer
 source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Privates GitHub-Repository in Cloud Manager hinzufügen {#private-repositories}
+# Hinzufügen eines privaten GitHub-Repositorys in Cloud Manager {#private-repositories}
 
-Durch die Einrichtung von Cloud Manager zur Integration in Ihre privaten GitHub-Repositorys können Sie mithilfe von Cloud Manager Ihren Code direkt in GitHub validieren. Durch diese Konfiguration wird die Anforderung entfernt, Ihren Code regelmäßig mit dem Adobe-Repository zu synchronisieren.
+Durch das Einrichten von Cloud Manager zur Integration in Ihre privaten GitHub-Repositorys können Sie mithilfe von Cloud Manager Ihren Code direkt in GitHub validieren. Mit dieser Konfiguration müssen Sie Ihren Code nicht mehr regelmäßig mit dem Adobe-Repository synchronisieren.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -63,7 +63,7 @@ Die Konfiguration eines privaten GitHub-Repositorys in Cloud Manager erfolgt in 
    | Beschreibung (optional) | Eine längere Beschreibung des Repositorys. |
 
 1. Wählen Sie **Speichern** aus.
-Jetzt können Sie [das Eigentum des privaten Repositorys überprüfen](#validate-ownership).
+Jetzt können Sie [die Eigentümerschaft des privaten Repositorys validieren](#validate-ownership).
 
 >[!TIP]
 >

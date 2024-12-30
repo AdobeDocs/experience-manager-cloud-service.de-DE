@@ -1,6 +1,6 @@
 ---
-title: Wie kann ich Fehler bei der Formularerstellung beheben?
-description: Fehlerbehebung für Fehler bei der Formularerstellung in der AEM Forms as a Cloud Service-Umgebung.
+title: Wie können Fehler bei der Formularerstellung behoben werden?
+description: Fehlerbehebung bei Fehlern bei der Formularerstellung in der AEM Forms as a Cloud Service-Umgebung.
 feature: Adaptive Forms
 role: User
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
@@ -13,24 +13,24 @@ ht-degree: 5%
 
 # Problem beim Veröffentlichen von Formularen{#form-creation-fails}
 
-Nach der Aktualisierung auf AEM Forms as a Cloud Service Version `2024.5.16461`:
+Nach dem Update auf AEM Forms as a Cloud Service Version `2024.5.16461`:
 
-**Bei einigen Benutzern** kann es beim Erstellen von Formularen zu Problemen kommen. Das Problem besteht darin, dass beim Erstellen eines Formulars die folgende Fehlermeldung im Erstellungsdialogfeld angezeigt wird:
+**Bei einigen Benutzern** beim Erstellen von Formularen möglicherweise Probleme auftreten. Wenn ein Benutzer ein Formular erstellt, wird im Dialogfeld zum Erstellen die folgende Fehlermeldung angezeigt:
 
 `A server error occurred. Try again after sometime.`
 
 ## Ursache {#cause-form-creation-fails}
 
-Das Problem tritt auf, weil der Autor das Formular veröffentlicht, ohne dass die darin verwendete Vorlage **zuerst veröffentlicht wurde**. Dies führt dazu, dass der Knoten `jcr:uuid` und andere geschützte und systemgenerierte Eigenschaften zum Knoten `<template-path>/initial/jcr:content` hinzugefügt werden, was bei der nachfolgenden Formularerstellung zu Fehlern führt.
+Das Problem tritt auf, weil der Autor das Formular veröffentlicht, ohne **darin verwendete Vorlage** veröffentlichen. Dadurch werden die `jcr:uuid` und andere geschützte und systemgenerierte Eigenschaften zum `<template-path>/initial/jcr:content` hinzugefügt, was zu Fehlern bei der nachfolgenden Formularerstellung führt.
 
 ## Problemumgehung {#resolution-form-creation-fails}
 
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
-1. Stellen Sie sicher, dass die Vorlage, die Sie in Ihrem Formular verwenden, nicht über die geschützten Eigenschaften `jcr:uuid` und andere vom System erzeugte Eigenschaften im Pfad `<template-path>/initial/jcr:content node` verfügt.
-1. Publish die Vorlage explizit mithilfe der Vorlagenkonsole.
-1. Versuchen Sie jetzt, nach der Veröffentlichung Ihrer Vorlage neue Formulare mithilfe der Vorlage zu erstellen.
-1. Wenn die von Ihnen verwendete Vorlage in zukünftigen Versionen aktualisiert wurde, Publish Sie die Vorlage erneut (wie in Schritt 2 beschrieben), um Probleme bei der Formularerstellung zu vermeiden.
+1. Stellen Sie sicher, dass die Vorlage, die Sie im Formular verwenden, nicht die `jcr:uuid` und andere systemgenerierte geschützte Eigenschaften am `<template-path>/initial/jcr:content node` hat.
+1. Publish verwendet die Vorlage explizit in der Vorlagenkonsole.
+1. Versuchen Sie jetzt nach der Veröffentlichung Ihrer Vorlage, neue Formulare mithilfe der Vorlage zu erstellen.
+1. Wenn die von Ihnen verwendete Vorlage in zukünftigen Versionen aktualisiert wird, führen Sie die Publish-Vorlage erneut aus (wie in Schritt 2 angegeben), um Probleme mit der Formularerstellung zu vermeiden.
 
 
 <!--

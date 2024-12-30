@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren
 
 >[!CAUTION]
 >
->Dies ist ein grundlegendes Beispiel, das die Standardkonfiguration überschreiben kann. Sie müssen sicherstellen, dass Produktaktualisierungen immer auf alle Anpassungen angewendet werden.
+>Dies ist ein grundlegendes Beispiel, das die Standardkonfiguration möglicherweise überschreibt. Sie müssen sicherstellen, dass Produktaktualisierungen immer auf alle Anpassungen angewendet werden.
 
 ```xml
 {
@@ -66,20 +66,20 @@ Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren
 
 Um sicherzustellen, dass Ihre Daten sicher bleiben, müssen Sie Folgendes sicherstellen:
 
-* Der Zugriff ist **nur** für vertrauenswürdige Domänen
+* Zugriff wird **ausschließlich** vertrauenswürdigen Domains gewährt.
 
-* Platzhaltersyntax [`*`] in **nicht** verwendet; dadurch wird sowohl der authentifizierte Zugriff auf den GraphQL-Endpunkt deaktiviert als auch der gesamten Welt angezeigt
+* Eine Platzhaltersyntax [`*`] wird **nicht** verwendet. Dadurch wird der authentifizierte Zugriff auf den GraphQL-Endpunkt deaktiviert und zusätzlich der Öffentlichkeit zugänglich gemacht.
 
-* vertrauliche Informationen werden **nie** offen gelegt; weder direkt noch indirekt:
+* Vertrauliche Informationen werden **nie** offen gelegt; weder direkt noch indirekt:
 
-   * Beispielsweise sind alle [GraphQL-Schemas](/help/headless/graphql-api/content-fragments.md#schema-generation):
+   * Beispielsweise sind alle [GraphQL-Schemata](/help/headless/graphql-api/content-fragments.md#schema-generation):
 
       * von Inhaltsfragmentmodellen abgeleitet, die **aktiviert** wurden
 
-     **and**
+     **und**
 
       * über den GraphQL-Endpunkt lesbar sind
 
-     Dies bedeutet, dass Informationen, die in der Modelldefinition als Feldnamen enthalten sind, verfügbar werden können.
+     Dies bedeutet, dass Informationen verfügbar werden können, die in der Modelldefinition als Feldnamen vorhanden sind.
 
-Sie müssen sicherstellen, dass keine sensiblen Daten auf irgendeine Weise verfügbar sind, sodass solche Informationen sorgfältig geprüft werden müssen.
+Sie müssen sicherstellen, dass keine sensiblen Daten auf irgendeine Weise verfügbar sind. Daher müssen solche Details sorgfältig bedacht werden.

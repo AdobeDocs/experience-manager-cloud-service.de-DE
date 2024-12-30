@@ -5,7 +5,7 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 100%
 

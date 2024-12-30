@@ -10,7 +10,7 @@ role: User, Developer
 source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2323'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -222,12 +222,12 @@ Der benutzerdefinierte Fehler-Handler ist eine Funktion (Client-Bibliothek), die
 Um zu verstehen, wie man einen benutzerdefinierten Fehler-Handler mit der Aktion [Aufrufdienst des Regeleditors](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=de#invoke) erstellt und verwendet, nehmen wir ein Beispiel für ein adaptives Formular mit zwei Feldern, **Haustier-ID** und **Haustiername** und verwenden einen benutzerdefinierten Fehler-Handler für das Feld **Haustier-ID**, um verschiedene Fehler zu überprüfen, die vom REST-Endpunkt zurückgegeben werden, der zum Aufrufen eines externen Dienstes konfiguriert ist, z. B. `200 - OK`, `404 - Not Found`, `400 - Bad Request`.
 
 So können Sie einen benutzerdefinierten Fehler-Handler zu einem adaptiven Formular hinzufügen und verwenden:
-1. [Hinzufügen einer benutzerdefinierten Funktion für Fehler-Handler](#1-add-the-custom-function-for-the-error-handler)
+1. [Hinzufügen einer benutzerdefinierten Funktion für den Fehler-Handler](#1-add-the-custom-function-for-the-error-handler)
 2. [Verwenden des Regeleditors zum Konfigurieren des benutzerdefinierten Fehler-Handlers](#use-custom-error-handler)
 
-#### 1. Fügen Sie die benutzerdefinierte Funktion für den Fehler-Handler hinzu.
+#### 1. Hinzufügen der benutzerdefinierten Funktion für den Fehler-Handler
 
-Um zu erfahren, wie Sie benutzerdefinierte Funktionen hinzufügen, klicken Sie auf [Benutzerdefinierte Funktionen in einem adaptiven Formular erstellen, das auf Kernkomponenten basiert](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
+Um zu erfahren, wie Sie benutzerdefinierte Funktionen hinzufügen, klicken Sie auf [Erstellen von benutzerdefinierten Funktionen in einem adaptiven Formular, das auf Kernkomponenten basiert](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -258,7 +258,7 @@ Fügen Sie folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die vom
 
    >[!NOTE]
    >
-   > * Um den Standard-Fehler-Handler von Ihrem benutzerdefinierten Fehler-Handler aufzurufen, wird die folgende Zeile des Beispielcodes verwendet: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * Zum Aufrufen des standardmäßigen Fehler-Handlers über Ihren benutzerdefinierten Fehler-Handler wird folgende Zeile des Beispiel-Codes verwendet: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
    > * Fügen Sie in der Datei `.content.xml` die Eigenschaften `allowProxy` und `categories` hinzu, um die Client-Bibliothek des benutzerdefinierten Fehler-Handlers in einem adaptiven Formular zu verwenden.
    >
    >   * `allowProxy = [Boolean]true`
@@ -266,7 +266,7 @@ Fügen Sie folgenden Code zur JavaScript-Datei hinzu, um die Antwort und die vom
    >       Beispiel: In diesem Fall wird [custom-errorhandler-name] als `customfunctionsdemo` bereitgestellt.
 
 
-1. Fügen Sie die Änderungen hinzu, übertragen Sie sie und übertragen Sie sie in das Repository.
+1. Fügen Sie die Änderungen hinzu, übertragen Sie sie und pushen Sie sie in das Repository.
 
 <!--
 

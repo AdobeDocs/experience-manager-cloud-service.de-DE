@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,8 +54,8 @@ Benutzende müssen die Rolle **Bereitstellungs-Manager** oder **Geschäftsinhabe
 
 Klicken Sie auf der Seite **Repositorys** oben rechts auf **Repository hinzufügen**.
 
-![Dialogfeld &quot;Repository hinzufügen&quot;](assets/repository-add.png)
-*Dialogfeld &quot;Repository hinzufügen&quot;.*
+![Dialogfeld „Repository hinzufügen“](assets/repository-add.png)
+*Dialogfeld „Repository hinzufügen“.*
 
 Cloud Manager unterstützt zwei Typen von Repositorys: von Adobe verwaltete Repositorys (**Adobe-Repository**) und selbstverwaltete Repositorys (**Privates Repository**). Die Pflichtfelder für das Setup unterscheiden sich je nach dem Repository-Typ, den Sie hinzufügen möchten. Weitere Informationen finden Sie in den folgenden Themen:
 

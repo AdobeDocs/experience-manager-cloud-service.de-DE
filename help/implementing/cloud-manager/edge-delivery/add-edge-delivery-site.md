@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: db661281831dcb07491dca16e73e835b487814a6
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implem
 
 **So fügen Sie eine Edge Delivery-Site zu Cloud Manager hinzu:**
 
-1. Melden Sie sich unter [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
+1. Melden Sie sich unter [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte **Edge Delivery**. Klicken Sie dann unten rechts auf der Seite auf **Edge Delivery-Site hinzufügen**.
@@ -54,6 +54,6 @@ Klicken Sie oben rechts auf der Seite auf **Site hinzufügen**.
 
 1. Klicken Sie auf **Überprüfen**.
 
-Wenn das Repository überprüft wird, wird sein Status in der Edge Delivery Sites-Tabelle aktualisiert. Der Status wird durch einen grünen Kreis mit weißem Häkchen angegeben.
+Sobald das Repository verifiziert wurde, wird sein Status in der Tabelle der Edge Delivery-Sites aktualisiert. Der Status wird durch einen grünen Kreis mit weißem Häkchen angegeben.
 
 Klicken Sie in derselben Tabelle auf ![Informationen zur Edge Delivery-Site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg), um die Site-Details anzuzeigen. Zu diesen Informationen gehören die verifizierte Repository-URL sowie die Vorschau- und Produktions-Website-URLs.

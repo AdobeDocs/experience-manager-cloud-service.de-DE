@@ -5,7 +5,7 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 8d14936ad21dc5879c72383defc3db22ce9a24ef
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 100%
 

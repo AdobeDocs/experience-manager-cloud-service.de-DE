@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
 source-git-commit: ad4feedf07be86680ba0b3193d9110a1e277298a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
 

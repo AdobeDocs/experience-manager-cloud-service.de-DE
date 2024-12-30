@@ -8,7 +8,7 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '6492'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -201,7 +201,7 @@ Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Ko
 
 **[!UICONTROL Navigieren zu]**: Navigiert zu anderen <!--Interactive Communications,--> adaptiven Formularen, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-### [!UICONTROL Wert festlegen] {#set-value-of}
+### [!UICONTROL Wert festlegen von] {#set-value-of}
 
 Regeln vom Typ **[!UICONTROL Wert festlegen]** ermöglichen es, den Wert eines Formularobjekts abhängig davon festzulegen, ob die angegebene Bedingung erfüllt ist oder nicht. Der Wert kann auf den Wert eines anderen Objekts, eine Literal-Zeichenfolge, einen von einem mathematischen Ausdruck oder einer Funktion abgeleiteten Wert, den Wert einer Eigenschaft eines anderen Objekts oder die Ausgabe eines Formulardatenmodell-Service festgelegt werden. In ähnlicher Weise können Sie auf eine Bedingung bei Komponenten, Zeichenfolgen, Eigenschaften oder Werten, die von Funktionen oder mathematischen Ausdrücken abgeleitet wurden, prüfen.
 
@@ -447,7 +447,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
+1. Ziehen Sie das Feld **[!UICONTROL Partnergehalt]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 

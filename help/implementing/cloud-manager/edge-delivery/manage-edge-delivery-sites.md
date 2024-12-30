@@ -29,7 +29,7 @@ Es gibt verschiedene Gründe, um in Adobe Cloud Manager eine Edge Delivery-Site 
 
 **So benennen Sie eine Edge Delivery-Site um:**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm mit konfigurierten Edge Delivery Services aus, in dem eine Edge Delivery-Site hinzugefügt werden soll.
 1. Führen Sie eine der folgenden Aktionen aus:
 
@@ -48,7 +48,7 @@ Wenn Sie eine Edge Delivery Services-Site löschen, werden auch alle zugehörige
 
 **So löschen Sie eine Edge Delivery-Site:**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm mit konfigurierten Edge Delivery Services aus, in dem eine Edge Delivery-Site hinzugefügt werden soll.
 1. Führen Sie eine der folgenden Aktionen aus:
 

@@ -1,5 +1,5 @@
 ---
-title: XFA-Unterstützung in XDP-basierten adaptiven Formularen
+title: 'XFA-Unterstützung in XDP-basierten adaptiven Formularen '
 description: Auflistung unterstützter XFA-Ereignisse, -Eigenschaften, -Skripte und -Validierungen in adaptiven Formularen.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
 source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 100%
 

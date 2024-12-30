@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 Erfahren Sie, wie der Erlebnis-Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der Erlebnis-Audit validiert den Bereitstellungsprozess und stellt sicher, dass die Änderungen bereitgestellt werden:
 
@@ -154,11 +154,11 @@ Wenn Sie auf einen bestimmten Zeitpunkt im Diagramm klicken, wird ein Popup mit 
 
 #### Ergebnisse des Erlebnis-Audit-Scans {#scan-results}
 
-Im Abschnitt **Ergebnisse der Erlebnisprüfung** finden Sie Details zu Bewertungen auf allen geprüften Seiten. Sie können die Ergebnisse mithilfe der Schaltflächen **Zurück** und **Weiter** durchblättern und festlegen, wie viele die Anzeige paginieren soll.
+Der Abschnitt **Ergebnisse des Erlebnis-Audit-Scans** enthält Detailbewertungen für alle gescannten Seiten. Sie können die Ergebnisse mithilfe der Schaltflächen **Zurück** und **Weiter** durchblättern und festlegen, wie viele die Anzeige paginieren soll.
 
 ![Gescannte Seiten](assets/experience-audit-scanned-pages.png)
 
-Klicken Sie auf den Link einer bestimmten Seite, um den Filter **Auswählen** des Bereichs [**Seitenergebnisse — Trend** ](#trend) zu aktualisieren. Der Tab **Rohberichte** zeigt Ihnen Werte für jede Prüfung der Seite. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
+Durch Klicken auf den Link einer bestimmten Seite wird der Filter **Auswählen** des Abschnitts [**Seitenbewertungen – Trend** ](#trend)aktualisiert, und die Registerkarte **Rohberichte** enthält Detailbewertungen für alle Audits der Seite. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
 
 ![Rohberichte](assets/experience-audit-raw-reports.png)
 

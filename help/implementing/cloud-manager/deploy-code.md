@@ -8,23 +8,23 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 
-# Code bereitstellen {#deploy-your-code}
+# Bereitstellen Ihres Codes {#deploy-your-code}
 
 Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service für die Produktion bereitstellen.
 
 ![Produktions-Pipeline-Diagramm](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-Die nahtlose Bereitstellung von Code in der Staging- und dann in der Produktion erfolgt über eine Produktions-Pipeline. Die Ausführung der Produktions-Pipeline gliedert sich in die beiden folgenden logischen Phasen:
+Die nahtlose Bereitstellung von Code zum Staging und dann bis zur Produktion erfolgt über eine Produktions-Pipeline. Die Ausführung der Produktions-Pipeline ist in die beiden folgenden logischen Phasen unterteilt:
 
-1. **Implementierung in die Staging-Umgebung** - Der Code wird erstellt und in der Staging-Umgebung bereitgestellt, um automatisierte Funktionstests, UI-Tests, Erlebnisprüfungen und Benutzerakzeptanztests (UAT) durchzuführen.
-1. **Implementierung in die Produktionsumgebung** - Sobald der Build auf der Bühne validiert und für die Promotion zur Produktion genehmigt wurde, wird dasselbe Build-Artefakt in der Produktionsumgebung bereitgestellt.
+1. **Bereitstellung in der Staging-Umgebung**: Der Code wird erstellt und in der Staging-Umgebung für automatisierte Funktionstests, Benutzeroberflächentests, Erlebnis-Audits und Benutzerakzeptanztests (User Acceptance Testing, UAT) bereitgestellt.
+1. **Bereitstellung in der Produktionsumgebung**: Sobald der Build im Staging überprüft und für die Produktion freigegeben ist, wird das gleiche Build-Artefakt in der Produktionsumgebung bereitgestellt.
 
-_Nur der Pipelinetyp „Full Stack code“ unterstützt das Codescannen, Funktionstests, Benutzeroberflächentests und Erlebnis-Audits._
+_Nur der Pipeline-Typ „Full Stack code“ unterstützt das Scannen von Code, Funktionstests, Benutzeroberflächentests und Erlebnis-Audits._
 
 ## Bereitstellungsprozess {#deployment-process}
 
@@ -32,7 +32,7 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 
 >[!NOTE]
 >
->Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht. Er wird anschließend &quot;aufgewärmt&quot;, bevor die neuen Veröffentlichungsknoten Traffic akzeptieren.
+>Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht. Er wird anschließend „vorgewärmt“, damit die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
 ## Bereitstellen Ihres Codes mit Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
@@ -40,74 +40,74 @@ Sobald Sie [Ihre Produktions-Pipeline einschließlich Repository, Umgebung und T
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das Sie Code bereitstellen möchten.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das Code bereitgestellt werden soll.
 
-1. Klicken Sie auf der Seite **Überblick** im Bereich &quot;Aktionsaufruf&quot;auf **Bereitstellen**.
+1. Klicken Sie auf der Seite **Übersicht** im Bereich „Aktionsaufrufe“ auf **Bereitstellen**.
 
    ![Aktionsaufforderung](assets/deploy-code1.png)
 
-1. Klicken Sie auf der Seite **Für Produktion bereitstellen** auf **Erstellen**.
+1. Klicken Sie auf der Seite **Bereitstellung für Produktion** auf **Build**.
 
    ![Pipeline-Ausführungsbildschirm](assets/deploy-code2.png)
 
-Der Build-Prozess stellt Ihren Code in den folgenden drei geordneten Phasen bereit:
+Der Build-Prozess stellt Ihren Code in diesen drei aufeinanderfolgenden Phasen bereit:
 
-1. [Staging-Bereitstellungsphase](#stage-deployment)
-1. [Staging-Testphase](#stage-testing)
-1. [Produktionsbereitstellungsphase](#production-deployment)
+1. [Phase der Staging-Bereitstellung](#stage-deployment)
+1. [Phase der Staging-Tests](#stage-testing)
+1. [Phase der Produktionsbereitstellung](#production-deployment)
 
 >[!TIP]
 >
 >Sie können die Schritte verschiedener Bereitstellungsprozesse überprüfen, indem Sie die Protokolle lesen oder die Ergebnisse anhand der Testkriterien durchgehen.
 
-### Staging-Bereitstellungsphase {#stage-deployment}
+### Phase der Staging-Bereitstellung {#stage-deployment}
 
-Die Phase der **Staging-Bereitstellung** umfasst die folgenden Schritte:
+Die **Staging-Bereitstellung** umfasst folgende Schritte:
 
 | Schritt zur Staging-Bereitstellung | Beschreibung |
 | --- | --- |
-| Validierung | Stellt sicher, dass die Pipeline für die Verwendung der derzeit verfügbaren Ressourcen konfiguriert ist. Beispielsweise wird getestet, ob die konfigurierte Verzweigung vorhanden ist und ob die Umgebungen verfügbar sind. |
-| Test- und Unit-Tests | Führt einen containerisierten Build-Prozess aus.<br>Weitere Informationen zur Build-Umgebung finden Sie unter [Details zur Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) . |
-| Codescans | Wertet die Qualität Ihres Anwendungscodes aus.<br>Weitere Informationen zum Testprozess finden Sie unter [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md) . |
-| Build-Images | Dieser Prozess konvertiert Inhalte und Dispatcher-Pakete aus dem Schritt &quot;Erstellen&quot;in Docker-Bilder. Es generiert außerdem Kubernetes-Konfigurationen basierend auf diesen Paketen. |
-| Bereitstellung für Staging | Das Bild wird in der Staging-Umgebung bereitgestellt, um die [Staging-Testphase](#stage-testing) vorzubereiten. |
+| Validierung | Dieser Schritt stellt sicher, dass die Pipeline für die Verwendung der derzeit verfügbaren Ressourcen konfiguriert ist. Beispielsweise wird getestet, ob die konfigurierte Verzweigung vorhanden ist und ob die Umgebungen verfügbar sind. |
+| Build- und Unit-Tests | Dieser Schritt führt einen containerisierten Build-Prozess aus.<br>Weitere Informationen zur Build-Umgebung finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). |
+| Scannen von Code | Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes.<br>Weitere Informationen zum Testprozess finden Sie unter [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md). |
+| Build-Images | Dieser Prozess konvertiert Inhalte und Dispatcher-Pakete aus dem Build-Schritt in Docker-Images. Dabei werden zudem Kubernetes-Konfigurationen auf Basis dieser Pakete generiert. |
+| Bereitstellung für Staging | Das Image wird in der Staging-Umgebung bereitgestellt, um die [Staging-Testphase](#stage-testing) vorzubereiten. |
 
 ![Staging-Bereitstellung](assets/stage-deployment.png)
 
-### Staging-Testphase {#stage-testing}
+### Phase der Staging-Tests {#stage-testing}
 
-Die Phase des **Staging-Tests** umfasst die folgenden Schritte:
+Die **Staging-Testphase** umfasst die folgenden Schritte:
 
 | Schritt zu Staging-Tests | Beschreibung |
 | --- | --- |
-| Funktionstests für das Produkt | Die Cloud Manager-Pipeline führt Tests aus, die für die Staging-Umgebung ausgeführt werden.<br>Siehe auch [Funktionstests für das Produkt](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
+| Funktionstests für das Produkt | Die Cloud Manager-Pipeline führt Tests für die Staging-Umgebung aus.<br>Siehe auch [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Benutzerdefinierte Funktionstests | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Wenn der Build keine Test-JAR erzeugt, wird der Test automatisch bestanden.<br>Siehe auch [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
-| Benutzerdefinierte Benutzeroberflächentests | Eine optionale Funktion, mit der automatisch für benutzerdefinierte Anwendungen erstellte UI-Tests ausgeführt werden.<br>UI-Tests sind Selenium-basiert und in einem Docker-Bild verpackt, um Flexibilität in Sprache und Frameworks zu bieten. Mit diesem Ansatz können Sie Java und Maven, Node und WebDriver.io oder ein beliebiges Selenium-basiertes Framework oder jede Selenium-Technologie verwenden.<br>Siehe auch [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Experience Audit | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Während eine Produktions-Pipeline ausgeführt wird, wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt.<ul><li>Die konfigurierten Seiten werden an den Service übermittelt und ausgewertet.</li><li>Die Ergebnisse sind informativer Natur und zeigen die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen.</li><li>Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.</li></ul>Siehe [Verstehen der Ergebnisse von Erlebnisprüfungen](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Benutzerdefinierte Benutzeroberflächentests | Eine optionale Funktion, mit der für benutzerdefinierte Anwendungen erstellte Benutzeroberflächentests automatisch ausgeführt werden.<br>Benutzeroberflächentests sind Selenium-basiert und in einem Docker-Image verpackt, um Flexibilität in Bezug auf Sprachen und Frameworks zu ermöglichen. Mit diesem Ansatz können Sie Java und Maven, Node und WebDriver.io oder ein beliebiges Selenium-basiertes Framework bzw. eine beliebige Selenium-Technologie verwenden.<br>Siehe auch [Benutzerdefinierte Benutzeroberflächentests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
+| Erlebnis-Audit | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Erlebnis-Audit-Schritt eingefügt.<ul><li>Die konfigurierten Seiten werden an den Service übermittelt und ausgewertet.</li><li>Die Ergebnisse sind informativer Natur und zeigen die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen.</li><li>Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.</li></ul>Siehe [Grundlegendes zu Erlebnis-Audit-Ergebnissen](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
 
 ![Staging-Tests](assets/stage-testing.png)
 
-### Produktionsbereitstellungsphase {#production-deployment}
+### Phase der Produktionsbereitstellung {#production-deployment}
 
-Der Bereitstellungsprozess für Produktions-Topologien unterscheidet sich geringfügig, um die Auswirkungen auf Besucher einer AEM Website zu minimieren.
+Der Prozess für die Bereitstellung in Produktionstopologien unterscheidet sich geringfügig, um die Auswirkungen auf die Besuchenden einer AEM-Site zu minimieren.
 
-Produktionsimplementierungen folgen im Allgemeinen den oben beschriebenen Schritten, aber auf rollierende Weise. Dazu gehören die folgenden Schritte:
+Produktionsbereitstellungen nutzen im Allgemeinen die oben beschriebenen Schritte, aber auf rollierende Weise. Dazu gehören die folgenden Schritte:
 
-1. AEM-Pakete werden für den Autor bereitgestellt
-1. Trennen Sie `dispatcher1` vom Lastenausgleich.
-1. Stellen Sie AEM Pakete in `publish1` bereit und das Dispatcher-Paket in `dispatcher1`, und leeren Sie den Dispatcher-Cache.
-1. Setzen Sie `dispatcher1` zurück in den Lastenausgleich.
-1. Wenn `dispatcher1` wieder in Betrieb ist, trennen Sie `dispatcher2` vom Lastenausgleich.
-1. Stellen Sie AEM Pakete in `publish2` bereit und das Dispatcher-Paket in `dispatcher2`, und leeren Sie den Dispatcher-Cache.
-1. Setzen Sie `dispatcher2` zurück in den Lastenausgleich.
+1. AEM-Pakete werden für Author bereitgestellt
+1. `dispatcher1` wird aus dem Lastenausgleich gelöst.
+1. AEM-Pakete werden in `publish1` und das Dispatcher-Paket in `dispatcher1` bereitgestellt und der Dispatcher-Cache geleert.
+1. `dispatcher1` wird in den Lastenausgleich zurückgesetzt.
+1. Sobald `dispatcher1` wieder aktiv ist, wird `dispatcher2` aus dem Lastenausgleich entfernt.
+1. AEM-Pakete werden in `publish2` und das Dispatcher-Paket in `dispatcher2` bereitgestellt und der Dispatcher-Cache geleert.
+1. `dispatcher2` wird in den Lastenausgleich zurückgesetzt.
 
-Dieser Prozess wird fortgesetzt, bis die Bereitstellung alle Publisher und Dispatcher in der Topologie erreicht hat.
+Dieser Vorgang wird fortgesetzt, bis die Bereitstellung alle Publisher und Dispatcher in der Topologie erreicht hat.
 
 ![Phase der Produktionsbereitstellung](assets/production-deployment.png)
 
 ## Zeitüberschreitungen während einer Bereitstellung {#timeouts}
 
-Die folgenden Schritte zeigen ein Timeout, wenn sie während einer Bereitstellung auf Benutzerfeedback warten lassen:
+Bei folgenden Schritten kommt es zu einer Zeitüberschreitung, wenn sie während einer Bereitstellung zu lange auf Benutzer-Feedback warten:
 
 | Schritt | Zeitüberschreitung |
 |--- |--- |
@@ -118,13 +118,13 @@ Die folgenden Schritte zeigen ein Timeout, wenn sie während einer Bereitstellun
 | Planen der Bereitstellung für die Produktion | 14 Tage |
 | CSE-Unterstützung | 14 Tage |
 
-## Produktions-Bereitstellung erneut ausführen {#reexecute-deployment}
+## Erneutes Ausführen einer Produktionsbereitstellung {#reexecute-deployment}
 
-In seltenen Fällen kann es vorkommen, dass Schritte der Produktionsbereitstellung aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die erneute Ausführung des Produktionsbereitstellungsschritts unterstützt, solange der Produktionsbereitstellungsschritt abgeschlossen ist, unabhängig vom Fertigstellungstyp (z. B. abgebrochen oder nicht erfolgreich). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus den folgenden drei Schritten besteht:
+In seltenen Fällen kann es vorkommen, dass Schritte der Produktionsbereitstellung aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die erneute Ausführung des Schritts der Produktionsbereitstellung unterstützt, solange der Schritt der Produktionsbereitstellung abgeschlossen ist, unabhängig von der Art des Abschlusses (wie zum Beispiel abgebrochen oder fehlgeschlagen). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus den folgenden drei Schritten besteht:
 
-1. **Validierung** - Die gleiche Validierung, die während einer normalen Pipeline-Ausführung erfolgt.
-1. **Build** - Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
-1. **Produktionsbereitstellung** - Verwendet dieselbe Konfiguration und dieselben Optionen wie der Produktionsbereitstellungsschritt in einer normalen Pipeline-Ausführung.
+1. **Validierung**: Dieser Schritt führt dieselbe Validierung wie bei einer normalen Pipeline-Ausführung durch.
+1. **Build**: Im Rahmen einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen wirklich neuen Build-Prozess aus.
+1. **Produktionsbereitstellung**: Dieser Schritt verwendet dieselbe Konfiguration und dieselben Optionen wie der Schritt der Produktionsbereitstellung bei einer normalen Pipeline-Ausführung.
 
 In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die Statusseite der Produktions-Pipeline neben der üblichen Option **Build-Protokoll herunterladen** auch die Option **Erneut ausführen**.
 
@@ -137,7 +137,7 @@ In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die S
 ### Einschränkungen {#limitations}
 
 * Das erneute Ausführen des Produktionsbereitstellungsschritts ist nur für die letzte Ausführung verfügbar.
-* Die Neuausführung ist nicht für Push-Update-Ausführungen verfügbar. Wenn die letzte Ausführung eine Push-Update-Ausführung war, ist eine erneute Ausführung nicht möglich.
+* Eine erneute Ausführung ist für Push-Update-Ausführungen nicht verfügbar. Wenn die letzte Ausführung eine Push-Update-Ausführung war, ist eine erneute Ausführung nicht möglich.
 * Wenn die letzte Ausführung vor dem Produktionsbereitstellungsschritt fehlschlug, ist eine erneute Ausführung nicht möglich.
 
 ### Erneutes Ausführen der API {#reexecute-API}
@@ -190,8 +190,8 @@ Diese Verknüpfung ist immer nur für den Schritt der Produktionsbereitstellung 
 
 Die Syntax des href-Werts des HAL-Links ist nur ein Beispiel. Der tatsächliche Wert sollte immer aus dem HAL-Link gelesen und nicht generiert werden.
 
-Die Übermittlung einer PUT-Anfrage an diesen Endpunkt führt bei Erfolg zu einer 201-Antwort und der Antworttext stellt die Darstellung der neuen Ausführung dar. Dieser Workflow ähnelt dem Starten einer regulären Ausführung über die API.
+Das Senden einer PUT-Anfrage an diesen Endpunkt führt zu einer 201-Antwort bei Erfolg, wobei der Antworttext die Darstellung der neuen Ausführung ist. Dieser Workflow ähnelt dem Starten einer regulären Ausführung über die API.
 
-#### Ermitteln einer erneuten Ausführung {#identify-reexecution}
+#### Identifizieren einer Ausführung mit erneuter Ausführung {#identify-reexecution}
 
-Das System erkennt Wiederausführungen, indem es das Feld `trigger` auf den Wert `RE_EXECUTE` setzt.
+Das System identifiziert erneut ausgeführte Ausführungen, indem das Feld `trigger` auf den Wert `RE_EXECUTE` gesetzt wird.

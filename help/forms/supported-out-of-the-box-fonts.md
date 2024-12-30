@@ -5,7 +5,7 @@ feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 100%
 

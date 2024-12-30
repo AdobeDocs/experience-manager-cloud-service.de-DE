@@ -3,25 +3,25 @@ title: Auflisten von Formularen auf einer Adobe Experience Manager Sites-Seite m
 description: Erfahren Sie, wie Sie Formulare auf einer AEM Sites-Seite auflisten.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
+source-git-commit: ad4feedf07be86680ba0b3193d9110a1e277298a
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 14%
+ht-degree: 37%
 
 ---
 
-
 # Auflisten von Formularen auf der Sites-Seite
 
-Stellen Sie sich vor, ein Benutzer besuche die Website der Bank auf der Suche nach einem Formular zur Kontoeröffnung. Die Bank verwendet die Forms Portal-Komponente, um Benutzern zu helfen, das Formular schnell zu finden, indem sie bestimmte Suchbegriffe eingeben oder nach Kategorien wie &quot;Neue Konten&quot;oder &quot;Persönliches Banking&quot;filtern. Dadurch können Benutzer das gewünschte Formular einfach finden, ohne durch längere Listen blättern zu müssen.
+Stellen Sie sich vor, ein Benutzer besucht die Website der Bank auf der Suche nach einem Formular zur Kontoeröffnung. Die Bank verwendet die Forms-Portalkomponente, um Benutzende dabei zu unterstützen, das Formular schnell zu finden, indem sie bestimmte Keywords eingeben oder nach Kategorien wie „Neue Konten“ oder „Personal Banking“ filtern. Außerdem können Benutzende das gewünschte Formular einfach finden, ohne durch lange Listen scrollen zu müssen.
 
-Mit der Komponente **Search &amp; Lister** des Forms-Portals können Sie Formulare auf einer Sites-Seite anzeigen und auflisten. Benutzer können anhand bestimmter Kriterien eine umfassende Liste von Formularen konfigurieren und präsentieren, um organisatorischen Anforderungen zu entsprechen. Anonyme Benutzer können die Sites-Seite besuchen, um die verfügbaren Formulare anzuzeigen und zu durchsuchen. Die aufgeführten Formulare können mithilfe der Dropdownoption **Sortieren nach** oben rechts im Bildschirm in auf- oder absteigender Reihenfolge sortiert werden.
+Mit **Komponente „Search &amp; Lister** des Forms-Portals können Sie Formulare auf einer Sites-Seite anzeigen und auflisten. Benutzer können anhand spezifischer Kriterien eine umfassende Liste von Formularen konfigurieren und präsentieren, um die Anforderungen des Unternehmens zu erfüllen. Anonyme Benutzer können die Sites-Seite besuchen, um die verfügbaren Formulare anzuzeigen und zu durchsuchen. Die aufgelisteten Formulare können mithilfe der Dropdown-Option **Sortieren nach“ in aufsteigender** absteigender Reihenfolge in der oberen rechten Ecke des Bildschirms sortiert werden.
 
 ![Symbol für Suche und Auflister](assets/search-and-lister-component.png)
 
 ## Voraussetzung
 
-Bevor Sie die verschiedenen Funktionen einer Forms Portal-Komponente kennenlernen, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Ausführliche Anweisungen zum Aktivieren von Kernkomponenten für Ihre Umgebung finden Sie [hier klicken](/help/forms/enable-adaptive-forms-core-components.md).
+Bevor Sie die verschiedenen Funktionen einer Formularportal-Komponente erkunden, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Ausführliche Anweisungen zum Aktivieren von Kernkomponenten für Ihre Umgebung finden Sie, indem Sie [hier klicken](/help/forms/enable-adaptive-forms-core-components.md).
 
 <!--
 ## Enable Forms Portal components for your existing environment
@@ -50,67 +50,67 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds). -->
 
-Nach der Bereitstellung der neuesten Kernkomponenten in Ihrer Umgebung können Sie auf die Forms Portal-Komponenten in Ihrer Authoring-Umgebung zugreifen.
+Nach der Bereitstellung der neuesten Kernkomponenten in Ihrer Umgebung können Sie auf die Formularportal-Komponenten in Ihrer Authoring-Umgebung zugreifen.
 
 ## Auflisten von Formularen auf der Sites-Seite
 
-So fügen Sie die Portalkomponente **Search &amp; Lister** zu Ihrer Sites-Seite hinzu:
+Um die Portalkomponente **Search &amp; Lister** zu Ihrer Sites-Seite hinzuzufügen, führen Sie die folgenden Schritte aus:
 
-1. Öffnen Sie die AEM Sites-Seite im Modus **Bearbeiten** .
-1. Navigieren Sie zu **[!UICONTROL Seiteninformationen]** => **[!UICONTROL Vorlage bearbeiten]**
-   ![Vorlagenrichtlinie bearbeiten](/help/forms/assets/save-form-as-draft-edit-template.png)
+1. Öffnen Sie die AEM Sites-Seite in einem **Bearbeitungsmodus**.
+1. Navigieren Sie zu **[!UICONTROL Seiteninformationen]** > **[!UICONTROL Vorlage bearbeiten]**
+   ![Richtlinie zum Bearbeiten von Vorlagen](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Klicken Sie auf die **[!UICONTROL Richtlinie]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Search &amp; Lister]** unter dem AEM **[Archetyp Projektname] - Forms and Communications Portal**.
+1. Klicken Sie auf **[!UICONTROL Richtlinie]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Search &amp; Lister]** unter **[AEM Archetype Project Name] - Forms and Communications Portal**.
 
-   ![Richtlinienauswahl](/help/forms/assets/search-lister-enable-policy.png)
+   ![Auswählen von Richtlinien](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
-1. Öffnen Sie nun die AEM Sites-Seite im Authoring-Modus erneut.
-1. Suchen Sie den Abschnitt im Seiteneditor, in dem Sie die Forms Portal-Komponente hinzufügen können.
+1. Öffnen Sie die AEM Sites-Seite nun im Authoring-Modus erneut.
+1. Suchen Sie im Seiteneditor nach dem Abschnitt, in dem Sie die Formularportal-Komponente hinzufügen können.
 
-1. Klicken Sie auf das Symbol **Hinzufügen** . Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten anzeigt.
+1. Klicken Sie auf das Symbol **Hinzufügen**. Das Symbol ist ein Pluszeichen (+). Es steht für die Option zum Hinzufügen neuer Komponenten.
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt, in dem verschiedene Komponenten zum Einfügen angezeigt werden.
 
    >[!NOTE]
    >
-   > Alternativ können Sie die Komponente auch per Drag-and-Drop verschieben.
+   > Alternativ können Sie die Komponente auch per Drag-and-Drop hinzufügen.
 
-1. Durchsuchen Sie die verfügbaren Komponenten im Dialogfeld und wählen Sie die gewünschte Komponente aus der Liste aus. Wählen Sie beispielsweise die Komponente **Search and Lister** aus der Liste aus, um die Komponente **Search &amp; Lister** Forms Portal hinzuzufügen.
+1. Durchsuchen Sie die verfügbaren Komponenten im Dialogfeld und wählen Sie die gewünschte Komponente aus der Liste aus. Wählen Sie beispielsweise die Komponente **Suche und Auflister** aus der Liste aus, um die Forms-Portalkomponente **Suche und Auflister** hinzuzufügen.
 
-   ![Komponente &quot;Search &amp; Lister&quot;](/help/forms/assets/add-search-lister.png)
+   ![Komponente „Search &amp; Lister“](/help/forms/assets/add-search-lister.png)
 
-Konfigurieren Sie jetzt die Eigenschaften der Komponente **Search and Lister** .
+Konfigurieren Sie nun die Eigenschaften der Komponente **Suche und Auflister**.
 
-## Eigenschaften der Komponente &quot;Search &amp; Lister&quot;
+## Verstehen der Eigenschaften der Komponente „Search und Lister“
 
-Sie können die Komponenteneigenschaften für **Suche und Lister** einfach über das Dialogfeld &quot;Konfigurieren&quot;anpassen, um ein nahtloses Benutzererlebnis zu gewährleisten. Wählen Sie zum Konfigurieren die Komponente und dann das ![Symbol „Konfigurieren“](assets/configure_icon.png) aus. Das Dialogfeld **[!UICONTROL Suche und Auflister]** wird geöffnet.
+Sie können die Komponenteneigenschaften **Suche und Auflister** einfach über das Dialogfeld „Konfigurieren“ anpassen, um ein nahtloses Benutzererlebnis zu gewährleisten. Wählen Sie zum Konfigurieren die Komponente und dann das ![Symbol „Konfigurieren“](assets/configure_icon.png) aus. Das Dialogfeld **[!UICONTROL Suche und Auflister]** wird geöffnet.
 
-### Registerkarte &quot;Anzeige&quot;
+### Registerkarte „Anzeige“
 
-![Registerkarte &quot;Anzeige&quot;](/help/forms/assets/search-and-lister-display-tab.png)
+![Registerkarte „Anzeige“](/help/forms/assets/search-and-lister-display-tab.png)
 
-1. In **[!UICONTROL Titel]** geben Sie den Titel für die Komponente für Suche und Auflister an. Mit einem indikativen Titel können Benutzer eine schnelle Suche in der Formularliste durchführen.
-1. Wählen Sie in der Liste **[!UICONTROL Layout]** das Layout für die Formulare im Karten- oder Listenformat aus.
+1. In **[!UICONTROL Titel]** geben Sie den Titel für die Komponente für Suche und Auflister an. Ein aussagekräftiger Titel ermöglicht es den Benutzenden, die Liste der Formulare schnell zu durchsuchen.
+1. Wählen Sie in **[!UICONTROL Liste]** Layout“ das Layout aus, um die Formulare im Karten- oder Listenformat darzustellen.
 1. Wählen Sie **[!UICONTROL Suche ausblenden]** und **[!UICONTROL Sortierung ausblenden]**, um die Suche und Sortierung nach Funktionen auszublenden.
 1. Geben Sie unter **[!UICONTROL QuickInfo]** die QuickInfo ein, die angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen.
 
-### Asset-Registerkarte
+### Registerkarte „Asset“
 
-![Registerkarte &quot;Asset&quot;](/help/forms/assets/search-and-lister-asset-tab.png)
+![Registerkarte „Asset“](/help/forms/assets/search-and-lister-asset-tab.png)
 
-1. Geben Sie auf der Registerkarte **[!UICONTROL Asset-Ordner]** den Speicherort an, von dem aus die Formulare abgerufen und auf der Seite aufgeführt werden.
-1. Mit dem Befehl **[!UICONTROL Hinzufügen eines weiteren Speicherorts]** können Sie mehrere Ordnerspeicherorte konfigurieren.
+1. Geben **[!UICONTROL auf der Registerkarte]** Asset-Ordner“ den Speicherort an, von dem die Formulare abgerufen und auf der Seite aufgeführt werden.
+1. Mithilfe von **[!UICONTROL Weiteren Speicherort hinzufügen]** können Sie mehrere Ordnerspeicherorte konfigurieren.
 
-### Tab Ergebnisse
+### Registerkarte „Ergebnisse“
 
-![Registerkarte &quot;Anzeige&quot;](/help/forms/assets/search-and-lister-result-tab.png)
+![Registerkarte „Anzeige“](/help/forms/assets/search-and-lister-result-tab.png)
 
 Konfigurieren Sie auf der Registerkarte **[!UICONTROL Ergebnisse]** die maximale Anzahl von Formularen, die pro Seite angezeigt werden sollen. Der Standardwert ist acht Formulare pro Seite.
 
-## Anzeigen von Formularen auf der Sites-Seite mithilfe der Komponente &quot;Search &amp; Lister&quot;
+## Anzeigen von Formularen auf der Sites-Seite mithilfe der Komponente „Search &amp; Lister“
 
-Um die Formularliste anzuzeigen, verwenden Sie die Forms Portal-Komponente **Search &amp; Lister** . Zeigen Sie eine Vorschau der AEM Sites-Seite an, um die Formularliste aus dem Ordner &quot;**Assets**&quot;anzuzeigen, der auf dem Bildschirm angezeigt wird. Sie können auch über die Suchleiste nach einem bestimmten Formular suchen.
+Um die Liste der Formulare anzuzeigen, verwenden Sie die **Search &amp; Lister** Forms Portal-Komponente. Zeigen Sie eine Vorschau der AEM Sites-Seite an, um die Liste der Formulare aus dem Ordner **Assets** auf dem Bildschirm anzuzeigen. Sie können auch über die Suchleiste nach einem bestimmten Formular suchen.
 
 ![Symbol für Suche und Auflister](assets/search-and-lister-component.png)
 
@@ -223,7 +223,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## Nächste Schritte
 
-Im nächsten Artikel erfahren wir [wie Sie Formulare als Entwürfe speichern und sie mithilfe der Forms Portal-Komponente &quot;Drafts &amp; Submissions&quot;auf einer Sites-Seite auflisten](/help/forms/save-core-component-based-form-as-draft.md).
+Im nächsten Artikel erfahren Sie, [ Sie Formulare als Entwürfe speichern und auf einer Sites-Seite mithilfe der Forms-Portalkomponente für Entwürfe und Übermittlungen auflisten](/help/forms/save-core-component-based-form-as-draft.md).
 
 ## Verwandte Artikel
 
