@@ -1,53 +1,53 @@
 ---
 title: OpenAPI-basierte APIs
-description: Informationen zur AEM as a Cloud Service-Unterstützung für OpenAPI-basierte APIs
+description: Erfahren Sie mehr über die AEM as a Cloud Service-Unterstützung für OpenAPI-basierte APIs
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9259b064a0a03db67333c522ebd918883859018f
+exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
+source-git-commit: bb125c5a20dad8afcada0e4325e4d757bfcabd7c
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # OpenAPI-basierte APIs {#openapi-based-apis}
 
 >[!NOTE]
 >
->OpenAPIs sind im Rahmen eines Programms für frühzeitigen Zugriff verfügbar. Wenn Sie daran interessiert sind, darauf zuzugreifen, empfehlen wir Ihnen, [aem-apis@adobe.com](mailto:aem-apis@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls per E-Mail zu versenden.
+>OpenAPIs sind als Teil eines Early-Access-Programms verfügbar. Wenn Sie daran interessiert sind, darauf zuzugreifen, empfehlen wir Ihnen, eine E-Mail an [aem-apis@adobe.com](mailto:aem-apis@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls zu senden.
 
-Neuere AEM as a Cloud Service-APIs folgen der OpenAPI-Spezifikation und erzeugen daher konsistente, gut dokumentierte und benutzerfreundliche APIs. Detaillierte Informationen finden Sie auf den folgenden Seiten:
+Neuere AEM as a Cloud Service-APIs folgen der OpenAPI-Spezifikation und erzeugen somit konsistente, gut dokumentierte und benutzerfreundliche APIs. Detaillierte Informationen finden Sie auf den folgenden Seiten:
 
-* Ein [End-to-End-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) zum Konfigurieren und Aufrufen von OpenAPI-basierten AEM-APIs.
-* Informative [Handbücher](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), einschließlich [API-Konzepten und -Syntax](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
-* API-Endpunkt [verweist auf Dokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/), in der einige APIs auf OpenAPI basieren, z. B. [diese Sites-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de). Die Referenzdokumentation enthält auch einen API-Player, der es einfacher macht, einen Endpunkt mithilfe eines mit Adobe Developer Console generierten Trägertokens auszuprobieren.
+* Ein [-Tutorial ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) Konfigurieren und Aufrufen von OpenAPI-basierten AEM-APIs.
+* Informative [Handbücher](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/) einschließlich [API-Konzepte und -Syntax](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
+* API-Endpunkt [Referenzdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/) wobei einige der APIs OpenAPI-basiert sind, z. B. [diese Sites-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de). Die Referenzdokumentation enthält auch einen API-Playground, der es einfach macht, einen Endpunkt mithilfe eines mit der Adobe Developer Console generierten Bearer-Tokens auszuprobieren.
 
-Ein gängiges API-Nutzungsszenario umfasst Integrationen mit Systemen wie einem CRM oder PIM, bei denen AEM APIs aufgerufen werden, um Daten abzurufen oder beizubehalten. Im Rahmen der Integrationsimplementierung abonnieren Anwendungen möglicherweise [AEM Ereignisse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview), was die Geschäftslogik in Adobe App Builder oder anderen Infrastrukturen Trigger.
+Ein gängiger API-Anwendungsfall umfasst Integrationen mit Systemen wie CRM oder PIM, bei denen AEM-APIs aufgerufen werden, um Daten abzurufen oder beizubehalten. Im Rahmen der Integrationsimplementierung können von Anwendungen [AEM-ausgelöste Ereignisse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview) abonniert werden, wodurch Geschäftslogik in Adobe App Builder oder einer anderen Infrastruktur Trigger werden kann.
 
-Die unterstützten API-Authentifizierungstypen unterscheiden sich je nach Endpunkt, können jedoch OAuth Server-to-Server, OAuth Web App und OAuth Single Page App (SPA) sein.
+Die unterstützten API-Authentifizierungstypen unterscheiden sich je nach Endpunkt, können jedoch OAuth-Server-zu-Server-, OAuth-Web-App- und OAuth-Einzelseiten-App (SPA)-Typen sein.
 
 >[!NOTE]
 >
-> Das Tutorial [End-to-End](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) ist eine empfohlene Ressource, um zu erfahren, wie Sie die OpenAPI-basierten AEM-APIs konfigurieren und aufrufen.
+> Das [End-to-End-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) ist eine empfohlene Ressource, in der Sie erfahren, wie Sie die OpenAPI-basierten AEM-APIs konfigurieren und aufrufen.
 
 
 ## API-Zugriff konfigurieren {#configuring-api-access}
 
-Viele OpenAPI-basierte AEM-APIs erfordern eine Authentifizierung, für die Anmeldeinformationen mit [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) generiert werden müssen. Die Konfiguration umfasst die folgenden Schritte, die im Tutorial veranschaulicht werden:
+Viele OpenAPI-basierte AEM-APIs erfordern eine Authentifizierung, für die Anmeldeinformationen mithilfe von [Adobe Developer Console generiert werden ](https://developer.adobe.com/developer-console/docs/guides/). Die Konfiguration umfasst die folgenden Schritte, die im Tutorial veranschaulicht werden:
 
-1. Stellen Sie sicher, dass die [Produktprofile Ihres AEM-Programms aktualisiert wurden](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles) und ein entsprechender Dienst für den Zugriff auf die gewünschte API aktiviert ist.
-1. Erstellen Sie ein neues Projekt in Adobe Developer Console und fügen Sie die gewünschten APIs zum Projekt hinzu. Wählen Sie außerdem den entsprechenden Authentifizierungstyp aus.
-1. Erstellen Sie die Berechtigung, die später zum Austausch eines Trägertokens beim Aufrufen der API verwendet wird.
-1. Registrieren Sie die Client-ID in der Umgebung, indem Sie eine YAML-Datei konfigurieren, die mithilfe der Config Pipeline (oder der Befehlszeile für RDEs) bereitgestellt wird.
+1. Stellen Sie sicher, dass die [Produktprofile“ Ihres AEM-Programms aktualisiert ](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles) und ein entsprechender Service für den Zugriff auf die gewünschte API aktiviert ist.
+1. Erstellen Sie ein neues Projekt in Adobe Developer Console und fügen Sie die gewünschten API(s) zum Projekt hinzu, wobei Sie auch den entsprechenden Authentifizierungstyp auswählen.
+1. Generieren Sie die Berechtigung, die später beim Aufrufen der API zum Austausch gegen ein Bearer-Token verwendet wird.
+1. Registrieren Sie die Client-ID bei der Umgebung, indem Sie eine YAML-Datei konfigurieren, die mithilfe der Konfigurations-Pipeline (oder der Befehlszeile für RDEs) bereitgestellt wird.
 
 ## Registrieren einer Client-ID {#registering-a-client-id}
 
-Client-IDs ermöglichen den Umfang der APs in einem Adobe Developer Console-Projekt auf bestimmte AEM Umgebungen. Dies wird wie folgt erreicht:
+Client-IDs ermöglichen es den APIs in einem Adobe Developer Console-Projekt, auf bestimmte AEM-Umgebungen zuzugreifen. Dies wird wie folgt erreicht:
 
-1. Erstellen Sie eine Datei mit dem Namen `api.yaml` oder eine ähnliche Datei mit einer Konfiguration wie dem unten stehenden Codefragment, einschließlich der gewünschten Ebenen (Autor, Veröffentlichung, Vorschau). `Client_id` -Werte sollten aus Ihren Adobe Developer Console API-Projekten stammen.
+1. Erstellen Sie eine Datei mit dem Namen `api.yaml` oder ähnlich mit einer Konfiguration wie dem folgenden Ausschnitt, einschließlich der gewünschten Ebenen (Autor, Veröffentlichung, Vorschau). `Client_id` sollten aus Ihren Adobe Developer Console-API-Projekten stammen.
 
-   Die Eigenschaften `kind`, `version` und `metadata` werden im Artikel [Config Pipeline konfigurieren](/help/operations/config-pipeline.md#common-syntax) beschrieben. Der Eigenschaftswert `kind` sollte auf *API* und die Eigenschaft `version` auf *1* gesetzt werden.
+   Die Eigenschaften `kind`, `version` und `metadata` werden im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#common-syntax) beschrieben. Der Wert der `kind`-Eigenschaft sollte auf &quot;*&quot;* und die `version`-Eigenschaft auf &quot;*&quot;*.
 
    ```
    kind: "API"
@@ -64,11 +64,6 @@ Client-IDs ermöglichen den Umfang der APs in einem Adobe Developer Console-Proj
          - "<client_id>"
    ```
 
-1. Platzieren Sie die Datei in einen Ordner der obersten Ebene mit dem Namen `config` oder einen ähnlichen Ordner, wie unter [Config Pipeline](/help/operations/config-pipeline.md#folder-structure) beschrieben.
-1. Erstellen Sie für andere Umgebungstypen als RDE (die Befehlszeilen-Tools verwenden) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager, auf die in [diesem Abschnitt](/help/operations/config-pipeline.md#creating-and-managing) im Artikel Config Pipeline verwiesen wird. Beachten Sie, dass die Konfigurationsdatei nicht von den Pipelines für das vollständige Stapeln und von Pipelines für die Web-Ebene bereitgestellt wird.
+1. Platzieren Sie die Datei an einer beliebigen Stelle in einem Ordner der obersten Ebene mit dem Namen `config` oder Ähnliches, wie unter [Pipeline konfigurieren](/help/operations/config-pipeline.md#folder-structure) beschrieben.
+1. Erstellen Sie für andere Umgebungstypen als RDE (die Befehlszeilen-Tools verwendet) eine zielgerichtete Bereitstellungskonfigurations-Pipeline in Cloud Manager, wie in [diesem Abschnitt) ](/help/operations/config-pipeline.md#creating-and-managing) Artikel „Pipeline konfigurieren“ beschrieben. Beachten Sie, dass Full-Stack-Pipelines und Web-Stufen-Pipelines die Konfigurationsdatei nicht bereitstellen.
 1. Stellen Sie die Konfiguration bereit.
-
-
-
-
-

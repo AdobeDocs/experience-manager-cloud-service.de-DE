@@ -6,8 +6,8 @@ exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
 source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '997'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Nicht-intrusive Wartungsupdates sind automatische Aktualisierungen, die ohne Ein
 #### Aktualisieren von Aktivitäten
 
 Die aktuelle AEM-Version kann wie bisher für jede Umgebung mithilfe des Bedienfelds „Umgebungen der Cloud Manager-Benutzeroberfläche“ überprüft werden. Dieselben Qualitäts-Gates, die in der Pipeline verwendet werden, werden von nicht-intrusiven Wartungs-Updates verwendet, einschließlich der von Kundinnen und Kunden geschriebenen Tests.
-Eine [Cloud Manager UI-Benachrichtigung](/help/implementing/cloud-manager/notifications.md) wird gesendet, sobald eine nicht störende Wartungsaktualisierung auf die Umgebungen Ihres Programms angewendet wird. Sie können dies so konfigurieren, dass sie auch an Ihre E-Mail-Adresse gesendet wird.
+Es wird eine [Benachrichtigung über die Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/notifications.md) gesendet, sobald ein nicht-intrusives Wartungs-Update auf die Umgebungen Ihres Programms angewendet wird. Sie können dies so konfigurieren, dass sie auch an Ihre E-Mail-Adresse gesendet wird.
 
 >[!NOTE]
 >
@@ -108,5 +108,5 @@ Da sowohl die alte als auch die neue Version über ihre eigenen Versionen von `/
 Weitere Informationen zu verwandten Themen:
 
 * [CI/CD-Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-* [Benachrichtigung zur Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/notifications.md)
-* [Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)
+* [Benachrichtigung über die Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/notifications.md)
+* [Die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)

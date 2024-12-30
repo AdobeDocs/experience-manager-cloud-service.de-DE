@@ -163,7 +163,7 @@ Die Seite wird jetzt mit der richtigen JavaScript-Bibliothek geladen, sodass der
 
 >[!NOTE]
 >
->Die zuvor empfohlene Methode zur Einbeziehung der JavaScript-Bibliothek &quot;`<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>`&quot;oder &quot;npmjs.com&quot;wird nicht mehr empfohlen, da das Paket nicht mehr unterstützt wird.
+>Die zuvor empfohlene Methode zum Einschließen der JavaScript-Bibliothek, `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` oder über npmjs.com wird nicht mehr empfohlen, da das Paket veraltet ist.
 >
 >Wenn eine App weiterhin das veraltete Paket verwendet, zeigt der universelle Editor in der Benutzeroberfläche eine Warnung an, dass ein veraltetes Paket erkannt wird.
 

@@ -7,7 +7,7 @@ role: Admin, User, Developer
 source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -278,23 +278,23 @@ Die folgende Abbildung zeigt die AEM-Gruppen, die das Produktprofil „AEM Sites
 
 ### Hinzufügen von Produktprofilen für bestehende Umgebungen {#adding-product-profiles-for-existing-environments}
 
-In Umgebungen, die vor Anfang November 2024 erstellt wurden, fehlt möglicherweise die in den obigen Abschnitten beschriebene Produktinstanz auf Org-Level sowie bestimmte Produktprofile. Bei bestehenden Produktprofilen fehlt auch der Dienst-Umschalter. Es wird empfohlen, diese Produktprofile zu aktualisieren. Dies ist eine Voraussetzung für den Zugriff auf einige zukünftige APIs.
+In Umgebungen, die vor Anfang November 2024 erstellt wurden, fehlt möglicherweise die in den obigen Abschnitten beschriebene Produktinstanz auf Organisationsebene sowie bestimmte Produktprofile. Bei bestehenden Produktprofilen fehlen auch die Service-Umschalter. Es wird empfohlen, diese Produktprofile zu aktualisieren. Dies ist eine Voraussetzung für den Zugriff auf einige zukünftige APIs.
 
-Wenn für eine oder mehrere Umgebungen in einem Programm die Produktprofile aktualisiert werden müssen, wird in Cloud Manager der nachstehende Hinweis angezeigt. Beachten Sie, dass eine Umgebung auf der neuesten AEM Version basieren muss, bevor ihre Produktprofile aktualisiert werden können.
+Wenn für eine oder mehrere Umgebungen in einem Programm die Produktprofile aktualisiert werden müssen, wird in Cloud Manager der nachstehende Hinweis angezeigt. Beachten Sie, dass eine Umgebung auf der neuesten AEM-Version basieren muss, bevor ihre Produktprofile aktualisiert werden können.
 
 ![Modernisieren von Produktprofilen](/help/onboarding/assets/modernize-product-profiles.png)
 
-Durch Klicken auf die Schaltfläche **Produktprofile hinzufügen** wird ein Menü mit Optionen zum Hinzufügen neuer Produktprofile zu allen im Programm oder in einzelnen Umgebungen verfügbaren Umgebungen geöffnet.
+Wenn Sie auf die Schaltfläche **Produktprofile hinzufügen** klicken, wird ein Menü mit Optionen zum Hinzufügen neuer Produktprofile zu allen im Programm verfügbaren Umgebungen oder zu einzelnen Umgebungen geöffnet.
 
-![Umgebungen ersetzen](/help/onboarding/assets/choose-env-r.png)
+![Ersetzen von Umgebungen](/help/onboarding/assets/choose-env-r.png)
 
-Klicken Sie auf **Alle Umgebungen** , um die neuen Produktprofile zu allen Umgebungen im Programm hinzuzufügen. Klicken Sie alternativ auf &quot;**Individuelle Umgebungen**&quot;, um die neuen Produktprofile zu ausgewählten Umgebungen hinzuzufügen. Dadurch wird der Benutzer zu einer Umgebungslistenseite geleitet, auf der über das Symbol &quot;**Mehr Optionen**&quot;die Aktion &quot;**Produktprofile hinzufügen**&quot;ausgewählt werden kann.
+Klicken Sie auf **Alle Umgebungen**, um die neuen Produktprofile zu allen Umgebungen im Programm hinzuzufügen. Alternativ können Sie auf **Individuelle Umgebungen** klicken, um die neuen Produktprofile zu ausgewählten Umgebungen hinzuzufügen. Dadurch gelangen Sie zu einer Seite mit einer Auflistung der Umgebungen, auf der Sie über das Symbol **Weitere Optionen** die Aktion **Produktprofile hinzufügen** auswählen können.
 
 ![Individuelle Umgebungen](/help/onboarding/assets/individual-environments.png)
 
-Sie können ausgewählten Umgebungen auch Produktprofile hinzufügen, indem Sie zum Abschnitt Umgebungen auf der Seite Programmübersicht navigieren, auf das Symbol Weitere Optionen für eine Umgebung klicken und Produktprofile hinzufügen auswählen.
+Sie können auch Produktprofile zu ausgewählten Umgebungen hinzufügen, indem Sie zur Seite „Programmübersicht“ im Abschnitt „Umgebungen“ navigieren, auf das Symbol „Weitere Optionen“ klicken, das einer Umgebung entspricht, und „Produktprofile hinzufügen“ auswählen.
 
-Der Status der Umgebung zeigt &quot;Hinzufügen von Produktprofilen&quot;an, während die neuen Produktprofile hinzugefügt werden, und zeigt anschließend &quot;Wird ausgeführt&quot;an, wenn der Prozess abgeschlossen ist.
+Der Status der Umgebung zeigt das Hinzufügen von Produktprofilen an, während die neuen Produktprofile hinzugefügt werden, und zeigt anschließend „Ausgeführt“ an, wenn der Vorgang abgeschlossen ist.
 
 
 ## Cloud Manager-Produktprofile {#cloud-manager-product-profiles}

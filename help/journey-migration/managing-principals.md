@@ -3,7 +3,7 @@ title: Verwalten von Prinzipalen
 description: Verwalten von Prinzipalen für die Migration mithilfe der Admin Console
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
 source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 

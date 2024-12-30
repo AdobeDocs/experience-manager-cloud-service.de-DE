@@ -1,5 +1,5 @@
 ---
-title: Single Page Applications (SPAs) und Server-seitiges Rendering
+title: 'Single Page Applications (SPAs) und Server-seitiges Rendering '
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 feature: Developing

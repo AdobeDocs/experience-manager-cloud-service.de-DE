@@ -4,7 +4,7 @@ description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Ve
 feature: Release Information
 exl-id: ac2d5839-9c18-4c9d-83fc-4b64e328e54e
 source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 100%
 

@@ -3,8 +3,9 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2024.07
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2024.07.0
 feature: Release Information
 role: Admin
-source-git-commit: 60c7691530ee56a5c8f44bbfd72f20b58ddf5c1b
-workflow-type: ht
+exl-id: 301cd0ed-d7ad-469b-9942-b0fff7ec7ae5
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 100%
 

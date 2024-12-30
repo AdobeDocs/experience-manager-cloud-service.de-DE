@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung im Content Transfer Tool
+title: 'Fehlerbehebung im Content Transfer Tool  '
 description: Erfahren Sie mehr über die Fehlerbehebung beim Content Transfer Tool
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
 feature: Migration

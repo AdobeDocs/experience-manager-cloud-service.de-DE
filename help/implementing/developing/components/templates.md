@@ -1,62 +1,62 @@
 ---
 title: Bearbeitbare Vorlagen
-description: Erfahren Sie, wie bearbeitbare Vorlagen beim Erstellen einer Seite, beim Definieren des anfänglichen Inhalts, des strukturierten Inhalts, der Authoring-Richtlinien und des Layouts verwendet werden.
+description: Erfahren Sie, wie bearbeitbare Vorlagen beim Erstellen einer Seite sowie beim Definieren des anfänglichen Inhalts, des strukturierten Inhalts, der Authoring-Richtlinien und des Layouts verwendet werden.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
 workflow-type: tm+mt
 source-wordcount: '3443'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Bearbeitbare Vorlagen {#editable-templates}
 
-Erfahren Sie, wie bearbeitbare Vorlagen beim Erstellen einer Seite, beim Definieren des anfänglichen Inhalts, des strukturierten Inhalts, der Authoring-Richtlinien und des Layouts verwendet werden.
+Erfahren Sie, wie bearbeitbare Vorlagen beim Erstellen einer Seite sowie beim Definieren des anfänglichen Inhalts, des strukturierten Inhalts, der Authoring-Richtlinien und des Layouts verwendet werden.
 
 ## Überblick {#overview}
 
-Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Die Vorlage kann die Struktur der resultierenden Seite, jeden anfänglichen Inhalt und die Komponenten definieren, die verwendet werden können (Designeigenschaften).
+Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können (Design-Eigenschaften).
 
-* Bearbeitbare Vorlagen ermöglichen es Autoren, Vorlagen zu erstellen und zu verwenden.
-* Bearbeitbare Vorlagen können verwendet werden, um Seiten zu erstellen, die sowohl mit dem
-   * [Seiten-Editor](/help/sites-cloud/authoring/page-editor/templates.md) und
-   * [Universeller Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
+* Mit editierbaren Vorlagen können Autorinnen und Autoren Vorlagen erstellen und verwenden.
+* Mit editierbaren Vorlagen können Seiten erstellt werden sowohl mit dem
+   * [Seiteneditor](/help/sites-cloud/authoring/page-editor/templates.md) als auch mit dem
+   * [universellen Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 Seitenvorlagen zum Erstellen von Seiten, die mit dem universellen Editor bearbeitbar sind, verwenden eine begrenzte Untergruppe bearbeitbarer Vorlagenfunktionen. Daher konzentriert sich der Rest dieses Dokuments auf bearbeitbare Vorlagen, die zum Erstellen von Seiten verwendet werden, die mit dem Seiteneditor bearbeitet werden können.
 
-## Bearbeitbare Vorlagen und Seiten, die mit dem Seiten-Editor bearbeitet wurden {#page-editor}
+## Bearbeitbare Vorlagen und Seiten, die mit dem Seiteneditor bearbeitet wurden {#page-editor}
 
-Beim Erstellen von Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können, werden normalerweise spezialisierte Autoren identifiziert.
+Beim Erstellen von Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können, werden normalerweise spezialisierte Autorinnen und Autoren identifiziert.
 
 * Diese spezialisierten Autoren werden als **Vorlagenautoren** bezeichnet.
 * Vorlagenautoren müssen Mitglieder der Gruppe `template-authors` sein.
-* Bearbeitbare Vorlagen behalten eine dynamische Verbindung zu allen damit erstellten Seiten bei. Dadurch wird sichergestellt, dass alle Änderungen an der Vorlage auf den Seiten widergespiegelt werden.
-* Bearbeitbare Vorlagen machen die Seitenkomponente allgemeiner, sodass die Seitenkomponente ohne Anpassung verwendet werden kann.
+* Editierbare Vorlagen behalten eine dynamische Verbindung zu allen Seiten, die daraus erstellt werden. Dadurch wird sichergestellt, dass alle Änderungen an der Vorlage auf den Seiten widergespiegelt werden.
+* Durch editierbare Vorlagen wird die Seitenkomponente allgemeiner, sodass die Kernseitenkomponente ohne Anpassung verwendet werden kann.
 
-Mit bearbeitbaren Vorlagen werden die Aspekte, die eine Seite bilden, innerhalb von Komponenten isoliert. Sie können die erforderlichen Komponentenkombinationen über eine Benutzeroberfläche konfigurieren. Damit entfällt die Notwendigkeit, für jede Seitenvariante eine neue Seitenkomponente zu entwickeln.
+Mit bearbeitbaren Vorlagen werden die Aspekte, die eine Seite ausmachen, innerhalb von Komponenten isoliert. Sie können die erforderlichen Komponentenkombinationen über eine Benutzeroberfläche konfigurieren. Damit entfällt die Notwendigkeit, für jede Seitenvariante eine neue Seitenkomponente zu entwickeln.
 
 Dieses Dokument:
 
-* Bietet einen Überblick über die Erstellung einer bearbeitbaren Vorlage
+* Gibt einen Überblick über die Erstellung einer editierbaren Vorlage
 * Beschreibt die zum Erstellen bearbeitbarer Vorlagen erforderlichen Aufgaben für Admin-/Entwicklerpersonal
 * Beschreibt die technischen Grundlagen bearbeitbarer Vorlagen
 * beschreibt, wie AEM die Verfügbarkeit einer Vorlage bewertet.
 
 >[!NOTE]
 >
->Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie bereits mit dem Erstellen und Bearbeiten von Vorlagen vertraut sind. Siehe Authoring-Dokument [Vorlagen zum Erstellen von Seiten, die mit dem Seiten-Editor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md), in dem die Funktionen bearbeitbarer Vorlagen beschrieben werden, die dem Vorlagenautor zur Verfügung gestellt werden.
+>Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie bereits mit dem Erstellen und Bearbeiten von Vorlagen vertraut sind. Weitere Informationen finden Sie im Dokument [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md), in dem die Funktionen bearbeitbarer Vorlagen für Vorlagenautorinnen und -autoren ausführlich beschrieben werden.
 
 >[!TIP]
 >
->[Das WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) erläutert die Verwendung bearbeitbarer Vorlagen durch Implementierung eines Beispiels und ist sehr nützlich, um zu verstehen, wie eine Vorlage in einem neuen Projekt eingerichtet wird.
+>[Das WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) erläutert die Verwendung von bearbeitbarer Vorlagen durch Implementierung eines Beispiels und ist sehr nützlich, um zu verstehen, wie eine Vorlage in einem neuen Projekt eingerichtet wird.
 
-## Erstellen einer neuen bearbeitbaren Vorlage {#creating-a-new-template}
+## Erstellen einer neuen editierbaren Vorlage {#creating-a-new-template}
 
 Bearbeitbare Vorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonsole und dem Vorlagen-Editor](/help/sites-cloud/authoring/page-editor/templates.md) erstellt. In diesem Abschnitt finden Sie einen Überblick über diesen Prozess, der anschließend aus technischer Perspektive beleuchtet wird.
 
-Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
+Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
 1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dieser Ordner ist nicht obligatorisch, wird jedoch als Best Practice empfohlen.
 1. Wählen Sie einen [Vorlagentyp](#template-type) aus. Dieser wird kopiert, um die [Vorlagendefinition](#template-definitions) zu erstellen.
@@ -70,11 +70,11 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    **Struktur**
 
    * Die Struktur ermöglicht die Definition von Komponenten und Inhalten für Ihre Vorlage.
-   * Komponenten, die in der Vorlagenstruktur definiert sind, können auf einer resultierenden Seite nicht verschoben oder von dort gelöscht werden.
+   * Komponenten, die in der Vorlagenstruktur definiert sind, können nicht auf einer resultierenden Seite verschoben oder von resultierenden Seiten gelöscht werden.
    * Wenn Sie möchten, dass Seitenautorinnen und -autoren Komponenten hinzufügen und entfernen können, fügen Sie der Vorlage ein Absatzsystem hinzu.
    * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
 
-   Weitere Informationen dazu, wie Vorlagenautoren die Struktur definieren, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Weitere Informationen darüber, wie eine Vorlagenautorin oder ein Vorlagenautor die Struktur definiert, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Technische Details zur Struktur werden in diesem Dokument unter [Struktur](#structure) erläutert.
 
@@ -86,7 +86,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
    * Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
-   Weitere Informationen dazu, wie Vorlagenautoren Richtlinien definieren, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Weitere Informationen darüber, wie eine Vorlagenautorin oder ein Vorlagenautor Richtlinien definiert, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Technische Details zu Richtlinien werden in diesem Dokument unter [Inhaltsrichtlinien](#content-policies) erläutert.
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Der anfängliche Inhalt definiert den Inhalt, der angezeigt wird, wenn eine Seite anfänglich auf Grundlage einer Vorlage erstellt wird.
    * Der anfängliche Inhalt kann dann von Seitenautorinnen bzw. -autoren bearbeitet werden.
 
-   Weitere Informationen dazu, wie Vorlagenautoren die Struktur definieren, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
+   Weitere Informationen darüber, wie eine Vorlagenautorin oder ein Vorlagenautor die Struktur definiert, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
 
    Technische Details zum anfänglichen Inhalt finden Sie unter [Anfänglicher Inhalt](#initial-content) in diesem Dokument.
 
@@ -104,7 +104,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Sie können das Vorlagen-Layout für verschiedene Geräte definieren.
    * Responsives Layout funktioniert für Vorlagen ebenso wie für die Seitenbearbeitung.
 
-   Weitere Informationen dazu, wie Vorlagenautoren das Vorlagenlayout definieren, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
+   Weitere Informationen darüber, wie eine Vorlagenautorin oder ein Vorlagenautor das Vorlagen-Layout definiert, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
 
    Technische Details zum Vorlagen-Layout finden Sie unter [Layout](#layout) in diesem Dokument.
 
@@ -113,7 +113,7 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
    * Eine Vorlage kann aktiviert oder deaktiviert werden, um sie für Vorlagenautorinnen und -autoren verfügbar bzw. nicht verfügbar zu machen.
    * Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verfügbar gemacht werden.
 
-   Weitere Informationen dazu, wie Vorlagenautoren Vorlagen aktivieren, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author).
+   Weitere Informationen darüber, wie eine Vorlagenautorin oder ein Vorlagenautor eine Vorlage aktiviert, finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author).
 
    Technische Details zum Aktivieren von Vorlagen werden in diesem Dokument unter [Aktivieren und Zulassen von Vorlagen](#enabling-and-allowing-a-template-for-use) erläutert.
 
@@ -369,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Erstellen Sie eine Vorlage so wie jede andere Seitenvorlage. Siehe [Vorlagen zum Erstellen von Seiten, die mit dem Seiten-Editor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Diese wird als Grundlage für Ihren Vorlagentyp dienen.
+1. Erstellen Sie eine Vorlage so wie jede andere Seitenvorlage. Weitere Informationen finden Sie unter [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitbar sind](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Diese wird als Grundlage für Ihren Vorlagentyp dienen.
 1. Kopieren Sie mit CRXDE Lite die erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie in der Kopie der Vorlage, die sich unter dem `template-types`-Knoten befindet, alle `cq:template`- und `cq:templateType`-Eigenschaften aus allen `jcr:content`-Knoten.
@@ -449,7 +449,7 @@ Definiert die Struktur der resultierenden Seite:
 * Sie wird beim Erstellen einer Seite mit dem anfänglichen Inhalt (`/initial`) zusammengeführt.
 * Änderungen an der Struktur spiegeln sich in allen Seiten wider, die mit der Vorlage erstellt wurden.
 * Der Knoten `root` (`structure/jcr:content/root`) definiert die Liste der Komponenten, die auf der resultierenden Seite verfügbar sind.
-   * Komponenten, die in der Vorlagenstruktur definiert sind, können auf einer resultierenden Seite nicht verschoben oder von dort gelöscht werden.
+   * Komponenten, die in der Vorlagenstruktur definiert sind, können nicht auf einer resultierenden Seite verschoben oder von resultierenden Seiten gelöscht werden.
    * Nachdem eine Komponente entsperrt wurde, wird die Eigenschaft `editable` auf `true` gesetzt.
    * Nachdem eine Komponente, die bereits Inhalt enthält, entsperrt wurde, wird dieser Inhalt in die Verzweigung `initial` verschoben.
 
@@ -467,7 +467,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 
 ### Layout {#layout}
 
-Beim Bearbeiten einer Vorlage [ können Sie das Layout ](/help/sites-cloud/authoring/page-editor/templates.md) definieren. Dabei wird das standardmäßige responsive Layout [ verwendet, das ](/help/sites-cloud/administering/responsive-layout.md) verwendet und vom Inhaltsautor auf der Seite [ konfiguriert werden kann.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+Beim [Bearbeiten einer Vorlage, in der Sie das Layout definieren können](/help/sites-cloud/authoring/page-editor/templates.md), wird das [standardmäßige responsive Layout](/help/sites-cloud/administering/responsive-layout.md) verwendet, das [auf der Seite von der Autorin bzw. vom Autor des Inhalts konfiguriert werden kann](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 ### Inhaltsrichtlinien {#content-policies}
 

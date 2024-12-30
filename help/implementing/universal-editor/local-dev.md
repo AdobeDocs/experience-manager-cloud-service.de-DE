@@ -1,22 +1,22 @@
 ---
-title: Ausführen eines eigenen universellen Editordienstes
-description: Erfahren Sie, wie Sie Ihren eigenen Universal Editor-Dienst entweder für die lokale Entwicklung oder als Teil Ihrer eigenen Infrastruktur ausführen können.
+title: Ausführen eines eigenen universellen Editor-Dienstes
+description: Erfahren Sie, wie Sie Ihren eigenen universellen Editor-Dienst entweder für die lokale Entwicklung oder als Teil Ihrer eigenen Infrastruktur ausführen können.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
-# Ausführen eines eigenen universellen Editordienstes {#local-ue-service}
+# Ausführen eines eigenen universellen Editor-Dienstes {#local-ue-service}
 
-Erfahren Sie, wie Sie Ihren eigenen Universal Editor-Dienst entweder für die lokale Entwicklung oder als Teil Ihrer eigenen Infrastruktur ausführen können.
+Erfahren Sie, wie Sie Ihren eigenen universellen Editor-Dienst entweder für die lokale Entwicklung oder als Teil Ihrer eigenen Infrastruktur ausführen können.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der Dienst „Universeller Editor“ bindet den universellen Editor und das Backend-System zusammen. Um eine lokale Entwicklung für den universellen Editor durchführen zu können, müssen Sie eine lokale Kopie des Dienstes „Universeller Editor“ ausführen. Der Grund hierfür ist Folgender:
 
@@ -26,18 +26,18 @@ Der Dienst „Universeller Editor“ bindet den universellen Editor und das Back
 
 ## Anwendungsfälle {#use-cases}
 
-Ihre eigene Kopie des Universal Editor-Dienstes ist nützlich, wenn Sie:
+Ihre eigene Kopie des universellen Editor-Dienstes ist nützlich, wenn Sie:
 
-* Lokales Entwickeln auf AEM für die Verwendung mit dem universellen Editor.
-* Führen Sie Ihren eigenen Universal Editor-Dienst als Teil der eigenen Infrastruktur aus, unabhängig von Adobe Universal Editor Service.
+* Lokal auf AEM für die Verwendung mit dem universellen Editor entwickeln.
+* Ihren eigenen universellen Editor-Dienst als Teil Ihrer eigenen Infrastruktur betreiben, unabhängig vom universellen Editor-Dienst von Adobe.
 
-Beide Anwendungsfälle werden unterstützt. In diesem Dokument wird beschrieben, wie Sie AEM in HTTPS zusammen mit einer lokalen Kopie des Universal Editor-Dienstes ausführen.
+Beide Anwendungsfälle werden unterstützt. In diesem Dokument wird beschrieben, wie Sie AEM in HTTPS zusammen mit einer lokalen Kopie des universellen Editor-Dienstes ausführen.
 
-Wenn Sie Ihren eigenen Universal Editor-Dienst als Teil Ihrer eigenen Infrastruktur ausführen möchten, gehen Sie analog zum lokalen Entwicklungsbeispiel vor.
+Wenn Sie Ihren eigenen universellen Editor-Dienst als Teil Ihrer eigenen Infrastruktur ausführen möchten, gehen Sie analog zum lokalen Entwicklungsbeispiel vor.
 
 ## Einrichten von AEM für die Ausführung auf HTTPS {#aem-https}
 
-Innerhalb eines mit HTTPS gesicherten äußeren Rahmens kann kein unsicherer HTTP-Frame geladen werden. Der Dienst „Universeller Editor“ wird auf HTTPS ausgeführt, weshalb AEM oder jede andere Remote-Seite auch auf HTTPS ausgeführt werden muss.
+Innerhalb eines äußeren Frames, der mit HTTPS gesichert ist, kann ein unsicherer HTTP-Frame nicht geladen werden. Der Dienst „Universeller Editor“ wird auf HTTPS ausgeführt, weshalb AEM oder jede andere Remote-Seite auch auf HTTPS ausgeführt werden muss.
 
 Dazu müssen Sie AEM für die Ausführung auf HTTPS einrichten. Zu Entwicklungszwecken können Sie ein selbstsigniertes Zertifikat verwenden.
 
@@ -83,7 +83,7 @@ Dies sind die Mindestwerte, die für die lokale Entwicklung in unserem Beispiel 
 
 >[!NOTE]
 >
->Wenn Sie Chrome-Version 130+ ausführen, müssen Sie das Senden von CORS-Kopfzeilen für den privaten Netzwerkzugriff [1} mithilfe der Option `UES_CORS_PRIVATE_NETWORK` aktivieren.](https://wicg.github.io/private-network-access/#private-network-request)
+>Wenn Sie Chrome in der Version 130+ verwenden, müssen Sie das Senden von CORS-Headern für den [Zugriff auf private Netzwerke](https://wicg.github.io/private-network-access/#private-network-request) mit der Option `UES_CORS_PRIVATE_NETWORK` aktivieren.
 
 
 In der folgenden Tabelle sind diese und zusätzliche Werte aufgeführt.
@@ -101,7 +101,7 @@ In der folgenden Tabelle sind diese und zusätzliche Werte aufgeführt.
 | `UES_SPLUNK_TOKEN` | Ja | Kein | Splunk-Token |
 | `UES_SPLUNK_INDEX` | Ja | Kein | Index zum Schreiben von Protokollen |
 | `UES_SPLUNK_SOURCE` | Ja | `universal-editor-service` | Name der Quelle in den Splunk-Protokollen |
-| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Aktivieren Sie das Senden von CORS-Headern, um das private Netzwerk [zuzulassen.](https://wicg.github.io/private-network-access/#private-network-request) Erforderlich für Benutzer von Chrome Version 130+ |
+| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Aktivieren Sie das Senden von CORS-Headern, um das [private Netzwerk zuzulassen.](https://wicg.github.io/private-network-access/#private-network-request) Erforderlich für Benutzende von Chrome Version 130+ |
 
 >[!NOTE]
 >

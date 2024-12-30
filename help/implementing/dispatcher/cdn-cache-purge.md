@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -75,9 +75,9 @@ curl
 
 Beachten Sie, dass der `X-AEM-Purge`-Header den Wert „all“ enthalten muss.
 
-## Interaktion mit kundenverwaltetem CDN
+## Interaktion mit einem kundenseitig verwalteten CDN
 
-Im Fall eines [vom Kunden verwalteten CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) müssen auch die `X-Forwarded-Host` und `X-AEM-Edge-Key` angegeben werden:
+Bei einem [kundenseitig verwalteten CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) müssen auch `X-Forwarded-Host` und `X-AEM-Edge-Key` angegeben werden:
 
 ```
 curl

@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
 source-wordcount: '574'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `data-aue-resource` | URN zur Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
 | `data-aue-prop` | Attribut der Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
 | `data-aue-type` | [Typ des bearbeitbaren Elements](#item-types) (z. B. Text, Bild, Verweis usw.) |
-| `data-aue-filter` | Definiert:<br> - Welche RTE-Funktionen sind aktiviert<br> - Welche Komponenten können einem Container hinzugefügt werden<br> - Welche Assets können einem Medientyp hinzugefügt werden |
-| `data-aue-label` | Definiert eine benutzerdefinierte Bezeichnung für ein auswählbares Element, das im Editor angezeigt wird |
-| `data-aue-model` | Definiert ein Modell, das für die formularbasierte Bearbeitung im Eigenschaftenbereich verwendet wird |
+| `data-aue-filter` | Definiert:<br>- Welche RTE-Funktionalität aktiviert ist<br>- Welche Komponenten einem Container hinzugefügt werden können<br>- Welche Assets einem Medientyp hinzugefügt werden können |
+| `data-aue-label` | Definiert ein benutzerdefiniertes Label für ein auswählbares Element, das im Editor angezeigt wird |
+| `data-aue-model` | Definiert ein Modell, das für die formularbasierte Bearbeitung im Bedienfeld „Eigenschaften“ verwendet wird |
 | `data-aue-behavior` | Definiert das [Verhalten einer Instrumentierung](#behaviors); zum Beispiel kann ein eigenständiger Text oder ein eigenständiges Bild auch eine Komponente imitieren, um sie verschiebbar oder löschbar zu machen |
 
 ## Elementtypen {#item-types}
@@ -44,15 +44,15 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `richtext` | Der Text kann mit allen Rich-Text-Funktionen bearbeitet werden. RTE wird im rechten Bedienfeld angezeigt | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
 | `media` | Das bearbeitbare Element ist ein Asset, zum Beispiel ein Bild oder Video | Optional | Erforderlich | Optional<br>Liste der Kriterien für Bild- oder Videofilter, die an den Asset-Selektor übergeben werden | Optional | Nicht zutreffend | Optional |
 | `container` | Das bearbeitbare Element verhält sich als Container für Komponenten, auch bekannt als Absatzsystem. | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>eine Liste der zulässigen Komponenten | Optional | Nicht zutreffend | Nicht zutreffend |
-| `component` | Das bearbeitbare Element ist eine Komponente. Es werden keine zusätzlichen Funktionen hinzugefügt. Es ist erforderlich, bewegliche/löschbare Teile des DOM anzugeben und den Eigenschaftenbereich und seine Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
+| `component` | Das bearbeitbare Element ist eine Komponente. Es werden keine zusätzlichen Funktionen hinzugefügt. Es ist erforderlich, um bewegliche/löschbare Teile des DOM anzuzeigen und um das Bedienfeld „Eigenschaften“ sowie seine Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
 | `reference` | Das bearbeitbare Element ist ein Verweis, zum Beispiel ein Inhaltsfragment, Experience Fragment oder Produkt | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>Liste der Filterkriterien für Inhaltsfragmente, Produkte oder Experience Fragments, die an den Referenz-Selektor übergeben werden | Optional | Optional | Nicht zutreffend |
 
-`data-aue-resource` ist immer erforderlich, da dies der Primärschlüssel ist, der angibt, wo Inhaltsänderungen geschrieben werden.
+`data-aue-resource` ist immer erforderlich, da dies der Primärschlüssel ist, der angibt, wohin Inhaltsänderungen geschrieben werden.
 
-* Sie ist nicht direkt für das Tag erforderlich, in dem `data-aue-type` festgelegt ist.
-* Ist dies nicht der Fall, wird das Attribut `data-aue-resource` des nächsten übergeordneten Elements verwendet.
+* Er ist nicht direkt auf dem Tag erforderlich, wo der `data-aue-type` festgelegt ist.
+* Ist er nicht festgelegt, wird das Attribut `data-aue-resource` des nächsten übergeordneten Elements verwendet.
 
-`data-aue-prop` ist immer dann erforderlich, wenn Sie eine Bearbeitung im Kontext durchführen möchten, mit Ausnahme eines Containers, in dem sie optional ist (wenn der Container ein Inhaltsfragment ist und die Prop auf ein Mehrfachreferenzfeld verweist).
+`data-aue-prop` ist immer dann erforderlich, wenn Sie eine Bearbeitung im Kontext vornehmen möchten, außer bei einem Container, bei dem dies optional ist (falls festgelegt, ist der Container ein Inhaltsfragment und die Eigenschaft verweist auf ein Feld mit mehreren Verweisen).
 
 * Die `data-aue-prop` ist das Attribut, das für den Primärschlüssel von `data-aue-resource` aktualisiert werden soll.
 

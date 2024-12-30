@@ -4,8 +4,9 @@ description: Mit Java™- und JavaScript-APIs können Sie Zeichenfolgen internat
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
-workflow-type: ht
+exl-id: 131c485d-8cff-477c-8792-d1547d343495
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 100%
 

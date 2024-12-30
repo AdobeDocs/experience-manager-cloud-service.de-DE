@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -30,10 +30,10 @@ Wie auf der Seite [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/
 
 Im Rahmen der Einrichtung müssen sich das Adobe-CDN und das Kunden-CDN auf einen Wert des HTTP-Headers `X-AEM-Edge-Key` einigen. Dieser Wert wird bei jeder Anfrage im Kunden-CDN festgelegt, bevor er an das Adobe-CDN weitergeleitet wird. Dieses überprüft dann, ob der Wert erwartungsgemäß ist, damit anderen HTTP-Headern vertraut werden kann, einschließlich derer, die dazu beitragen, die Anfrage an den entsprechenden AEM-Ursprung weiterzuleiten.
 
-Der Wert *X-AEM-Edge-Key* wird durch die Eigenschaften `edgeKey1` und `edgeKey2` in einer Datei mit dem Namen `cdn.yaml` oder ähnlich referenziert, die sich unter einem `config`-Ordner der obersten Ebene befindet. Weitere Informationen zur Ordnerstruktur und zur Bereitstellung der Konfiguration finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) .  Die Syntax wird im folgenden Beispiel beschrieben.
+Der Wert *X-AEM-Edge-Key* wird durch die Eigenschaften `edgeKey1` und `edgeKey2` in einer Datei mit dem Namen `cdn.yaml` oder ähnlich referenziert, die sich unter einem `config`-Ordner der obersten Ebene befindet. Under [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) finden Sie weitere Informationen zur Ordnerstruktur und Bereitstellung der Konfiguration.  Die Syntax ist im folgenden Beispiel beschrieben.
 
 >[!WARNING]
->Direkter Zugriff ohne korrekten X-AEM-Edge-Schlüssel wird für alle Anforderungen verweigert, die mit der Bedingung übereinstimmen (im Beispiel unten bedeutet dies alle Anforderungen an die Veröffentlichungsstufe). Wenn Sie die Authentifizierung schrittweise einführen müssen, lesen Sie den Abschnitt [Sichere Migration, um das Risiko von blockiertem Traffic zu verringern](#migrating-safely) .
+>Direkter Zugriff ohne korrekten X-AEM-Edge-Schlüssel wird für alle Anfragen verweigert, die mit der Bedingung übereinstimmen (im Beispiel unten bedeutet dies alle Anfragen an die Veröffentlichungsebene). Wenn Sie die Authentifizierung schrittweise einführen müssen, lesen Sie den Abschnitt [Sichere Migration zur Verringerung des Risikos von blockiertem Traffic](#migrating-safely).
 
 ```
 kind: "CDN"
@@ -79,7 +79,7 @@ Weitere Eigenschaften sind:
 
 ### Sichere Migration zur Verringerung des Risikos von blockiertem Traffic {#migrating-safely}
 
-Wenn Ihre Site bereits live ist, sollten Sie bei der Migration zu einem kundenseitig verwaltetem CDN Vorsicht walten lassen, da eine Fehlkonfiguration öffentlichen Traffic blockieren kann. Dies liegt daran, dass nur Anforderungen mit dem erwarteten Header-Wert X-AEM-Edge-Key vom Adobe CDN akzeptiert werden. Ein Ansatz wird empfohlen, wenn eine zusätzliche Bedingung vorübergehend in die Authentifizierungsregel aufgenommen wird, wodurch die Anfrage nur blockiert wird, wenn eine Testkopfzeile enthalten ist oder ein Pfad übereinstimmt:
+Wenn Ihre Site bereits live ist, sollten Sie bei der Migration zu einem kundenseitig verwaltetem CDN Vorsicht walten lassen, da eine Fehlkonfiguration öffentlichen Traffic blockieren kann. Dies liegt daran, dass nur Anforderungen mit dem erwarteten Header-Wert X-AEM-Edge-Key vom Adobe CDN akzeptiert werden. Es wird ein Ansatz empfohlen, bei dem vorübergehend eine zusätzliche Bedingung in die Authentifizierungsregel aufgenommen wird, wodurch die Anfrage nur dann blockiert wird, wenn ein Test-Header enthalten ist oder ein Pfad übereinstimmt:
 
 ```
     - name: edge-auth-rule

@@ -241,7 +241,7 @@ data:
 
 ## Reaktionsumwandlungen {#response-transformations}
 
-Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das obige Beispiel für Verweise auf eine Variable, die zuvor in einer Anfrageumwandlungsregel festgelegt wurde. Der Status-Code der Antwort kann ebenfalls festgelegt werden.
+Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das obige Beispiel für den Verweis auf eine Variable, die zuvor in einer Anfrage-Umwandlungsregel festgelegt wurde. Der Status-Code der Antwort kann ebenfalls festgelegt werden.
 
 Konfigurationsbeispiel:
 
@@ -300,7 +300,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
 | **set** | reqHeader, Wert | Legt eine bestimmte Kopfzeile auf einen angegebenen Wert in der Antwort fest. |
-|          | respProperty, Wert | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft &quot;status&quot;, um den Statuscode festzulegen. |
+|          | respProperty, value | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft „status“ zum Festlegen des Status-Codes. |
 | **nicht gesetzt** | respHeader | Entfernt eine bestimmte Kopfzeile aus der Antwort. |
 
 ## Ursprungs-Auswahlen {#origin-selectors}

@@ -87,7 +87,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 >Sie haben die Möglichkeit, das automatische Hochladen in CAM zu überspringen, indem Sie die Option für das Überspringen des automatischen Uploads in CAM **** wählen. Wenn Sie sich für das Überspringen entscheiden, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertedatei herunterladen und die Datei dann in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
 
 >[!IMPORTANT]
->Beim manuellen Hochladen in die CAM sind die Berichtsgrößen auf ca. 200 MB beschränkt. Für größere Berichte müssen Sie den automatischen Upload nutzen.
+>Beim manuellen Hochladen in CAM sind die Berichtsgrößen auf ca. 200 MB beschränkt. Für größere Berichte müssen Sie den automatischen Upload nutzen.
 
 1. Die Schaltfläche **Generieren** wird aktiv, wenn ein gültiger Schlüssel angegeben wird. Klicken Sie auf **Erstellen**, um die Erstellung des Berichts einzuleiten.
 

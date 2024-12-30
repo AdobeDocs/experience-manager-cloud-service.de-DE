@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -174,14 +174,14 @@ Weitere technische Informationen finden Sie im [JS-Dokumentationssatz](https://d
 
 ### Unified Shell {#unified-shell}
 
-Siehe [AEM as a Cloud Service unter Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) , wenn Sie Unified Shell als AEM UI verwenden.
+Siehe [AEM as a Cloud Service in Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md), wenn Sie Unified Shell als AEM-UI verwenden.
 
-Wenn Sie Anpassungen vornehmen müssen oder bereits vorgenommen haben, kann Unified Shall deaktiviert werden:
+Wenn Sie Anpassungen vornehmen müssen oder bereits vorgenommen haben, kann Unified Shell deaktiviert werden:
 
 * [über die Benutzeroberfläche](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
-* aus Ihrem Projektcode durch:
+* mit Ihrem Projekt-Code durch:
 
-   * auf `/conf/global/setting/unifiedshell`
+   * unter `/conf/global/setting/unifiedshell`
 
-      * Einstellen der `Boolean` -Eigenschaft `enable` auf `false`
+      * Festlegen der `Boolean`-Eigenschaft `enable` auf `false`

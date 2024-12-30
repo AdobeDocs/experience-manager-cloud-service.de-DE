@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die Payload sind Inhalte vom universellen Editor-Dienst mit Fallback-Inhalten au
 
 ### aue:content-details {#content-details}
 
-Das `aue:content-details` -Ereignis wird ausgelöst, wenn eine Komponente im Eigenschaftenbereich geladen wird.
+Das Ereignis `aue:content-details` wird ausgelöst, wenn eine Komponente im Bedienfeld „Eigenschaften“ geladen wird.
 
 Die Payload ist der Inhalt der Komponente sowie optional ihr Schema.
 
@@ -91,7 +91,7 @@ Die Payload ist die Komponente sowie der Quell- und Ziel-Container.
 
 ### aue:content-patch {#content-patch}
 
-Das Ereignis `aue:content-patch` wird ausgelöst, wenn die Daten einer Komponente im Eigenschaftenbereich aktualisiert werden.
+Das Ereignis `aue:content-patch` wird ausgelöst, wenn die Daten einer Komponente im Bedienfeld „Eigenschaften“ aktualisiert werden.
 
 Die Payload ist ein JSON-Patch der aktualisierten Eigenschaften.
 

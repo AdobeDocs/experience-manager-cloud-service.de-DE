@@ -60,7 +60,7 @@ Die Indizierung der Cloud Service-Zielinstanz wird höchstwahrscheinlich erfolgr
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
-## Wie es weitergeht: {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Sobald die Cloud Service-Zielinstanz indiziert wurde, können Sie die Protokolle der Indizierungsvorgänge anzeigen und nach Details und Fehlern suchen.
 

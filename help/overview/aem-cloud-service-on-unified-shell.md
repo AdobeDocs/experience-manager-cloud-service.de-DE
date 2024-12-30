@@ -7,13 +7,13 @@ role: Admin
 source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service in Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 AEM as a Cloud Service (Author Service) ist in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Die Auswirkungen dieser Integration sind wie unten dargestellt in der oberen Kopfzeile des Programms zu sehen.
 
@@ -46,9 +46,9 @@ Standardmäßig ist Unified Shell in AEM as a Cloud Service aktiviert. Wenn die 
 
 >[!NOTE]
 >
->Unified Shell kann auch über Ihren Projektcode deaktiviert werden. Siehe [Struktur der AEM Benutzeroberfläche - Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+>Unified Shell kann auch über Ihren Projekt-Code deaktiviert werden. Siehe [Struktur der AEM-UI - Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
 
-## Wechsel zum dunklen Design {#changing-to-dark-theme}
+## Wechseln zum dunklen Design {#changing-to-dark-theme}
 
 Um zum dunklen Design zu wechseln, klicken Sie auf Ihr Profilsymbol. Diese Aktion zeigt ein Popover-Fenster an, wie unten dargestellt. Mit dem Umschalter können Sie zu einem dunklen Design für Unified Shell wechseln.
 

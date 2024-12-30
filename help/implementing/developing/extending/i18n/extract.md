@@ -4,8 +4,9 @@ description: Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die überset
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 42b177e6d948a3097bf3edf72362054a10fc8bfb
-workflow-type: ht
+exl-id: ce4adc98-dd3d-4b8a-9ea5-57db3074240e
+source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%
 

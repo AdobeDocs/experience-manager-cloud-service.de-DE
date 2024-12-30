@@ -1,11 +1,11 @@
 ---
-title: Extrahieren von Inhalten aus der Quelle
+title: 'Extrahieren von Inhalten aus der Quelle  '
 description: Erfahren Sie, wie Sie Inhalte aus einer Adobe Experience Manager(AEM)-Quellinstanz extrahieren, um sie später in eine Cloud Service-AEM-Instanz zu übertragen.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
 source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 100%
 

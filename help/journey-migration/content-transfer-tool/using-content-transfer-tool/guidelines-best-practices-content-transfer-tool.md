@@ -1,5 +1,5 @@
 ---
-title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
+title: 'Richtlinien und Best Practices für die Verwendung des Content Transfer Tools  '
 description: Lernen Sie die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools kennen.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -90,10 +90,10 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
 
-* Das Content Transfer Tool (CTT) unterstützt keine Zusammenführungsaufnahmen. Um Inhalte aus mehreren Cloud Services in einer einzigen Inhaltsinstanz zu konsolidieren, können nur  aus einem Quellsystem migriert werden. Dieser Prozess erfordert die Verwendung von Migrationen mit dem Parameter &quot;wipe=false&quot;, was aufgrund der inkrementellen Natur des Vorgangs zu längeren Erfassungszeiten führen kann. Wenn möglich, konsolidieren Sie Inhalte auf einem einzigen Quellsystem, bevor Sie mit der Migration beginnen, um die Notwendigkeit der Zusammenführung von Inhalten zu vermeiden.
+* Das Content Transfer Tool (CTT) unterstützt keine Aufnahmen mit Zusammenführungen. Um Inhalte aus mehreren Systemen in einer einzigen Cloud Service-Instanz zusammenzuführen, können nur aus einem Quellsystem Versionen migriert werden. Dieser Prozess erfordert die Verwendung von Migrationen mit dem Parameter „wipe=false“, was aufgrund der inkrementellen Natur des Vorgangs zu längeren Aufnahmezeiten führen kann. Wenn möglich, konsolidieren Sie Inhalte auf einem einzigen Quellsystem, bevor Sie mit der Migration beginnen, um die Notwendigkeit der Zusammenführung von Inhalten zu vermeiden.
 
 * Ein Migrationssatz läuft nach längerer Inaktivität ab. Danach sind die zugehörigen Daten nicht mehr verfügbar. Weitere Informationen finden Sie unter [Ablauf von Migrationssätzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#migration-set-expiry).
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Nun, da Sie die Richtlinien, Best Practices und wichtigen Überlegungen zur Verwendung des Content Transfer Tool kennen, können Sie das Tool jetzt installieren und verwenden, beginnend mit der Erstellung eines Migrationssatzes. Siehe [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).

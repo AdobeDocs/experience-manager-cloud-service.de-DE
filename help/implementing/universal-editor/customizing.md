@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -75,9 +75,9 @@ Durch das Festlegen des Attributs `components` in einer Filterdefinition auf `
 ]
 ```
 
-### Bedingtes Anzeigen und Ausblenden von Komponenten im Eigenschaftenbedienfeld {#conditionally-hide}
+### Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
-Obwohl eine oder mehrere Komponenten allgemein für Ihre Autorinnen und Autoren verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten im Eigenschaftenbedienfeld ausblenden, indem Sie den Feldern [des Komponentenmodells das Attribut `condition` hinzufügen.](/help/implementing/universal-editor/field-types.md#fields)
+Obwohl eine oder mehrere Komponenten für Ihre Autorinnen und Autoren allgemein verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten im Bedienfeld „Eigenschaften“ ausblenden, indem Sie den [Feldern des Komponentenmodells](/help/implementing/universal-editor/field-types.md#fields) ein `condition`-Attribut hinzufügen.
 
 Bedingungen können mithilfe des [JsonLogic-Schemas definiert werden.](https://jsonlogic.com/) Wenn die Bedingung zutrifft, wird das Feld angezeigt. Wenn die Bedingung nicht zutrifft, wird das Feld ausgeblendet.
 
@@ -132,7 +132,7 @@ Fügen Sie dazu einfach die gewünschte Vorschau-URL wie im folgenden Beispiel i
 
 Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mit App Builder und Experience Manager erweitert werden.
 
-Benutzeroberflächenerweiterungen sind JavaScript-Anwendungen, die mit Adobe App Builder erstellt wurden und in Benutzeroberflächenanwendungen eingebettet werden können, die unter Unified Shell in Adobe Experience Cloud ausgeführt werden, z. B. im universellen Editor. Sie können Ihre eigenen Schaltflächen und Aktionen zum Kopfzeilenmenü und Eigenschaftenbereich hinzufügen sowie eigene Ereignisse für den universellen Editor erstellen.
+Benutzeroberflächenerweiterungen sind JavaScript-Anwendungen, die mit Adobe App Builder erstellt wurden und in Benutzeroberflächenanwendungen eingebettet werden können, die unter Unified Shell in Adobe Experience Cloud ausgeführt werden, z. B. im universellen Editor. Sie können Ihre eigenen Schaltflächen und Aktionen zum Kopfzeilenmenü und zum Bedienfeld „Eigenschaften“ hinzufügen und eigene Ereignisse für den universellen Editor erstellen.
 
 Weitere Informationen zu diesen Möglichkeiten finden Sie in den folgenden Ressourcen:
 

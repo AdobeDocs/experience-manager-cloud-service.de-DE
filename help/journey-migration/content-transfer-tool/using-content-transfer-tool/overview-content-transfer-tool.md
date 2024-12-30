@@ -1,11 +1,11 @@
 ---
-title: Übersicht über das Content Transfer Tool
+title: 'Übersicht über das Content Transfer Tool  '
 description: Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte von einer On-Premise-AEM-Instanz auf AEM as a Cloud Service übertragen können.
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
 source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 100%
 

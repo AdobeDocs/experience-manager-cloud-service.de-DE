@@ -1,11 +1,11 @@
 ---
-title: Erste Schritte mit dem Content Transfer Tool
+title: 'Erste Schritte mit dem Content Transfer Tool  '
 description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
 source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 100%
 

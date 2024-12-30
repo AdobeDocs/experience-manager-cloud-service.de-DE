@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Dokument werden die einzelnen Bausteine und ihr Austausch von Daten be
 ### Editoren {#editors}
 
 * **Universeller Editor** – Der universelle Editor verwendet ein instrumentiertes DOM, um die Bearbeitung von Inhalten im Kontext zu ermöglichen. Lesen Sie [Attribute und Typen](attributes-types.md) für Details zu den notwendigen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
-* **Eigenschaften-Bedienfeld** - Einige Eigenschaften von Komponenten können nicht kontextbezogen bearbeitet werden, z. B. die Drehzeit eines Karussells oder die Registerkarte &quot;Akkordeon&quot;, die immer geöffnet oder geschlossen werden soll. Um die Bearbeitung solcher Komponenteninformationen zu ermöglichen, wird im seitlichen Bedienfeld des Editors ein formularbasierter Editor bereitgestellt.
+* **Bedienfeld „Eigenschaften“**: Einige Eigenschaften von Komponenten können nicht kontextbezogen bearbeitet werden, z. B. die Drehzeit eines Karussells oder welche Akkordeon-Registerkarte immer geöffnet bzw. geschlossen werden soll. Um die Bearbeitung solcher Komponenteninformationen zu ermöglichen, steht im Seitenbedienfeld des Editors ein formularbasierter Editor zur Verfügung.
 
 ### Remote-App {#remote-app}
 
@@ -51,7 +51,7 @@ Der universelle Editor strebt ein minimales SDK an, daher liegt die Instrumentie
 
 ### Persistenzschicht {#persistence-layer}
 
-* **Inhaltsfragmentmodell** - Um den Bereich für die Bearbeitung von Inhaltsfragmenteigenschaften, den Inhaltsfragment-Editor und formularbasierte Editoren zu unterstützen, sind Modelle pro Komponente und Inhaltsfragment erforderlich.
+* **Inhaltsfragmentmodell** – Um das Bedienfeld zum Bearbeiten von Inhaltsfragment-Eigenschaften, den Inhaltsfragmenteditor und formularbasierte Editoren zu unterstützen, sind Modelle pro Komponente und Inhaltsfragment erforderlich.
 * **Inhalt** – Der Inhalt kann an beliebiger Stelle gespeichert werden, z. B. in AEM, Magento usw.
 
 ![Persistenzschicht](assets/persistence-layer.png)

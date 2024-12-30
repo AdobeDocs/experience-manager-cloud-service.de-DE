@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -63,22 +63,22 @@ Der universelle Editor ermöglicht es, beliebige Inhalte direkt zu erstellen, un
 Der universelle Editor funktioniert wie folgt.
 
 1. Eine Entwicklungsperson instrumentiert die Anwendung oder Seite für den universellen Editor. Im Rahmen dieser Instrumentierung wird der Editor angewiesen, welcher Inhalt bearbeitet werden kann und wie er beibehalten werden soll.
-   * Wenn Sie der Dokumentation [Erste Schritte für Entwickler bei der WYSIWYG-Bearbeitung mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) folgen, werden Ihre Seiten automatisch instrumentiert.
+   * Wenn Sie der Dokumentation [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) folgen, werden Ihre Seiten automatisch instrumentiert.
    * Für das Headless-Authoring kann Ihre Anwendung einfach instrumentiert werden.
 1. Die Inhaltsautorin bzw. der Inhaltsautor lädt den universellen Editor, der wiederum Ihre Seite zwecks Bearbeitung lädt. Aufgrund seiner Instrumentierung weiß er, welcher Inhalt bearbeitbar ist und wie dieser dargestellt und beibehalten werden soll.
 1. Die Inhaltsautorin bzw. der Inhaltsautor bearbeitet den Seiteninhalt in einer intuitiven WYSIWYG-Benutzeroberfläche; die Bearbeitung erfolgt dabei direkt.
-1. Der Universal Editor behält die Änderungen automatisch wieder in der Datenquelle bei.
+1. Der universelle Editor speichert die Änderungen automatisch in der Datenquelle.
 
 Weitere Informationen zur Architektur des universellen Editors finden Sie im Dokument [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md).
 
 ## Konzepte des universellen Editors {#concepts}
 
-Damit eine Seite oder App vom universellen Editor bearbeitet werden kann, muss sie ordnungsgemäß instrumentiert werden.
+Damit eine Seite oder Anwendung mit dem universellen Editor bearbeitet werden kann, muss sie ordnungsgemäß instrumentiert sein.
 
 * [Attribute und Typen](/help/implementing/universal-editor/attributes-types.md): Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss sie ordnungsgemäß instrumentiert sein. Dazu gehören auch die korrekten Metadaten, damit der Editor den Inhalt der Anwendung bearbeiten kann.
-* [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md) - Sobald die Metadaten vorhanden sind, um die Bearbeitung einer Komponente zu ermöglichen, definieren Sie im Eigenschaftenbereich des Editors, welche Felder und Komponententypen sie bearbeiten können.
-* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md): Sie können Ihre App weiter anpassen, indem Sie die Bearbeitungserfahrung in Ihrer App verbessern, indem Sie Ereignisse nutzen, die der universelle Editor für Inhalte oder Benutzeroberflächen ausgibt.
+* [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md): Sobald die Metadaten für die Bearbeitung einer Komponente vorhanden sind, definieren Sie im Bedienfeld „Eigenschaften“ des Editors, welche Felder und Komponententypen bearbeitet werden können.
+* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md): Sie können Ihre App weiter anpassen, indem Sie die Bearbeitungserfahrung in Ihrer App dadurch verbessern, dass sie Ereignisse nutzt, die der universelle Editor für Inhalte oder Benutzeroberflächen ausgibt.
 
 Der universelle Editor kann auch an Ihre Projektanforderungen angepasst werden.
 
-* [Anpassen des Authoring-Erlebnisses für den universellen Editor](/help/implementing/universal-editor/customizing.md) - Das Erlebnis für den universellen Editor kann durch Filtern verschiedener Aspekte des Editors oder durch Erweitern der Funktionalität des Editors angepasst werden.
+* [Anpassen des Authoring-Erlebnisses für den universellen Editor](/help/implementing/universal-editor/customizing.md): Das Erlebnis für den universellen Editor kann durch Filtern verschiedener Aspekte des Editors oder durch Erweitern der Funktionalität des Editors angepasst werden.

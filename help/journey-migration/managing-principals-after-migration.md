@@ -3,7 +3,7 @@ title: Verwalten von Prinzipalen nach der Migration
 description: Erfahren Sie, wie Sie Benutzende und Gruppen in IMS und AEM einrichten
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
 source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 100%
 
