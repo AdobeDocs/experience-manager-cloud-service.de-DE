@@ -2,16 +2,16 @@
 source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 # Adobe-Verhaltenskodex
 
-## Adobe Pledge
+## Adobe-Versprechen
 
-Um eine offene und einladende Umgebung zu fördern, verpflichtet sich das Dokumentationsteam der Adobe als Mitwirkende und Betreuer, die Teilnahme an diesem Projekt und an der Community zu einem belästigungsfreien Erlebnis für alle zu machen, unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zugehörigkeit, Geschlechtsidentität und -ausdruck, Erfahrungsniveau, Nationalität, persönlichem Erscheinungsbild, Rasse, Religion oder sexueller Identität und Orientierung.
+Im Interesse der Förderung einer offenen und einladenden Umgebung hat sich das Adobe-Dokumentations-Team - als Mitarbeiter und Betreuer - verpflichtet, die Teilnahme an diesem Projekt und an der Community für alle zu einem Erlebnis ohne Belästigung zu machen, unabhängig von Alter, Körpergröße, Behinderung, Ethnie, Geschlechtsidentität und -ausdruck, Erfahrungsniveau, Nationalität, persönlichem Auftreten, Rasse, Religion oder sexueller Identität und Orientierung.
 
-## Adobe Standards
+## Adobe-Standards
 
 Zu den Beispielen, die zur Schaffung einer positiven Umgebung beitragen, gehören:
 
@@ -29,7 +29,7 @@ Zu Beispielen für inakzeptables Verhalten von Teilnehmern gehören:
 * Veröffentlichung privater Informationen anderer Benutzer, wie z. B. einer physischen oder elektronischen Adresse, ohne ausdrückliche Zustimmung
 * Andere Verhaltensweisen, die in einem professionellen Umfeld als unangemessen betrachtet werden könnten
 
-## Adobe Verantwortlichkeiten
+## Adobe-Zuständigkeiten
 
 Projektverantwortliche haben die Aufgabe, die Standards des akzeptablen Verhaltens zu verdeutlichen, und es wird erwartet, dass sie als Reaktion auf Fälle von inakzeptablem Verhalten geeignete und angemessene Gegenmaßnahmen ergreifen.
 
@@ -47,4 +47,4 @@ Projektverantwortliche, die dem Verhaltenskodex nicht in gutem Glauben folgen od
 
 ## Zuordnung
 
-Dieser Verhaltenskodex wird aus dem [Contributor Covenant](https://www.contributor-covenant.org/), Version 1.4, verfügbar unter [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct/).
+Dieser Verhaltenskodex wurde basierend auf dem [Contributor Covenant](https://www.contributor-covenant.org/), Version 1.4, erstellt, siehe [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct/).
