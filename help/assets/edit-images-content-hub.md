@@ -30,7 +30,7 @@ Es sind Berechtigungen für den Zugriff auf Adobe Express vorhanden und [Content
 
 >[!NOTE]
 >
-Sie können mit [!DNL Adobe Express] Bilder vom Dateityp PNG und JPG/JPEG bearbeiten.
+>Sie können mit [!DNL Adobe Express] Bilder vom Dateityp PNG und JPG/JPEG bearbeiten.
 
 ## Bearbeiten von Bildern mit [!DNL Adobe Express] {#edit-images-using-content-hub}
 
