@@ -5,9 +5,9 @@ exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3160'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -163,9 +163,9 @@ Die Seite wird jetzt mit der richtigen JavaScript-Bibliothek geladen, sodass der
 
 >[!NOTE]
 >
->Die zuvor empfohlene Methode zum Einschließen der JavaScript-Bibliothek, `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` oder über npmjs.com wird nicht mehr empfohlen, da das Paket veraltet ist.
+>Die zuvor empfohlene Methode zum Einschließen der JavaScript-Bibliothek, `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` oder über npmjs.com, wird nicht mehr empfohlen, da das Paket veraltet ist.
 >
->Wenn eine App weiterhin das veraltete Paket verwendet, zeigt der universelle Editor in der Benutzeroberfläche eine Warnung an, dass ein veraltetes Paket erkannt wird.
+>Wenn eine App weiterhin das veraltete Paket verwendet, zeigt der universelle Editor in der Benutzeroberfläche eine Warnung an, dass ein veraltetes Paket erkannt wurde.
 
 ## Definieren einer Verbindung zum Beibehalten von Änderungen {#connection}
 

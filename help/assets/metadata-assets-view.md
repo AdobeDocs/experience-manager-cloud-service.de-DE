@@ -6,9 +6,9 @@ contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1904'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -173,15 +173,15 @@ Sie können auch zur Seite mit den Ordnerdetails navigieren und im Feld **[!UICO
 
 ### Arbeiten mit der Link-Komponente im Metadatenformular {#link-component-metadata-form}
 
-Die Link-Komponente wird verwendet, um externe URLs wie Speicher-Links, Copyright-Informationen, Kontaktformulare usw. zu aktivieren. Um die Link-Komponente im Metadatenformular zu verwenden, müssen Sie [Metadatenformular konfigurieren](#metadata-forms).
+Die Link-Komponente wird verwendet, um externe URLs wie Speicher-Links, Copyright-Informationen, Kontaktformulare usw. zu aktivieren. Um die Link-Komponente im Metadatenformular zu verwenden, müssen Sie das [Metadatenformular konfigurieren](#metadata-forms).
 
-Gehen Sie wie folgt vor, um die Link-Komponente im Metadatenformular zu verwenden:
+Führen Sie die folgenden Schritte aus, um die Link-Komponente im Metadatenformular zu verwenden:
 
 1. Gehen Sie zur Seite mit den Asset-Details und navigieren Sie zu **[!UICONTROL Link-URL]**.
 1. Fügen Sie eine URL hinzu, die Sie zur Weiterleitung für das ausgewählte Asset verwenden möchten.
-1. Klicken Sie auf **[!UICONTROL Link hinzufügen]**. Führen Sie einen der folgenden Schritte aus:
-   * Klicken Sie auf das ![Symbol „Kopieren“](assets/do-not-localize/copy.svg), um die URL zu kopieren.
-   * Klicken Sie auf das ![ Symbol „Bearbeiten“](assets/do-not-localize/edit.svg), um die URL zu bearbeiten.
+1. Klicken Sie auf **[!UICONTROL Link hinzufügen]**. Führe Sie eine der folgenden Aktionen aus:
+   * Klicken Sie auf ![Symbol „Kopieren“](assets/do-not-localize/copy.svg), um die URL zu kopieren.
+   * Klicken Sie auf ![Symbol „Bearbeiten“](assets/do-not-localize/edit.svg), um die URL zu bearbeiten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
 ## Nächste Schritte {#next-steps}

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Wenn Sie den Zertifikatstyp *Verwaltetes Adobe-Zertifikat* ausgewählt haben, f�
 
 Um die verwendete Domain zu überprüfen, müssen Sie einen CNAME hinzufügen und überprüfen.
 
-Ein `CNAME` oder `A` Datensatztyp leitet nach der Bereitstellung den gesamten Internet-Traffic für die Domain an den Zielort weiter. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
+Ein Eintrag vom Typ `CNAME` oder `A` leitet, sobald er bereitgestellt ist, den gesamten Internet-Datenverkehr für die Domain zu dem Punkt, auf den er verweist. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
 
 Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ein Apex-Eintrag so konfiguriert sein muss, dass Ihr benutzerdefinierter Domain-Name auf den Cloud Manager-Domain-Namen verweist. Die folgenden Abschnitte dieses Dokuments können Ihnen dabei helfen, zu ermitteln, welche Art von Eintrag für Ihre DNS-Konfiguration geeignet ist.
 
@@ -130,7 +130,7 @@ Fügen Sie die folgenden `A`-Einträge über Ihren Domain-Provider in den DNS-Ei
 
 >[!TIP]
 >
->Der *CNAME-* oder *A-Eintrag* kann auf dem zuständigen DNS-Server festgelegt werden, um Zeit zu sparen.
+>Der *CNAME-Eintrag* oder *A-Eintrag* kann auf dem zuständigen DNS-Server eingerichtet werden, um Zeit zu sparen.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

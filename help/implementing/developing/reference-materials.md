@@ -5,7 +5,7 @@ exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ AEM bietet anpassbare Komponenten- und Inhaltsbereitstellungsoptionen.
 |  |  |
 | [Assets-API](/help/assets/mac-api-assets.md) | Ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen-Lesen-Aktualisieren-Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen und Kommentaren. Siehe AEM Assets-HTTP-API |
 | [Inhaltsfragment-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | Zugreifen auf Inhaltsfragmentinhalte direkt über die HTTP-API über CRUD-Vorgänge |
-| [HTTP-API für Inhaltsfragment- Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de) | Exaktes Format unterstützter HTTP-Asset-Anfragen |
+| [HTTP-API für Inhaltsfragments- Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de) | Exaktes Format unterstützter HTTP-Asset-Anfragen |
 
 >[!NOTE]
 >

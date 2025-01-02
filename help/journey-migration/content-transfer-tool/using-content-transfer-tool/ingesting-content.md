@@ -5,9 +5,9 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3412'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
    > Wenn es sich bei `Author` um die Zielebene handelt, wird die Authoring-Instanz während der Aufnahmedauer heruntergefahren, sodass sie Benutzenden (wie beispielsweise Autorinnen und Autoren oder anderen, die Wartungsarbeiten durchführen) nicht zur Verfügung steht. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Author-Aufnahme im Ruhezustand befindet.
 
    >[!NOTE]
-   > Wenn die Zielebene `Publish` ist, bleibt die Veröffentlichungsinstanz während der Aufnahme aktiv.  Wenn der Komprimierungsprozess jedoch während der Aufnahme ausgeführt wird, ist ein Konflikt zwischen den beiden Prozessen wahrscheinlich.  Aus diesem Grund deaktiviert der Aufnahmeprozess 1) das Komprimierungs-Zeitintervall-Skript, sodass die Komprimierung während der Aufnahme nicht gestartet wird, und 2) prüft, ob die Komprimierung derzeit ausgeführt wird, und wartet, falls sie ausgeführt wird, bis sie abgeschlossen ist, bevor die Aufnahme fortgesetzt wird.  Wenn die Aufnahme in der Veröffentlichungsinstanz länger als erwartet dauert, überprüfen Sie die Aufnahmeprotokolle auf entsprechende Protokollanweisungen.
+   > Wenn die Zielebene `Publish` ist, bleibt die Veröffentlichungsinstanz während der Aufnahme aktiv.  Wenn der Komprimierungsprozess jedoch während der Aufnahme ausgeführt wird, ist ein Konflikt zwischen den beiden Prozessen wahrscheinlich.  Aus diesem Grund deaktiviert der Aufnahmeprozess das Komprimierungszeitintervallskript, sodass die Komprimierung während der Aufnahme nicht gestartet wird, und prüft außerdem, ob die Komprimierung derzeit ausgeführt wird. Falls sie ausgeführt wird, wartet er, bis sie abgeschlossen ist, bevor die Aufnahme fortgesetzt wird.  Wenn die Aufnahme in der Veröffentlichungsinstanz länger als erwartet dauert, überprüfen Sie die Aufnahmeprotokolle auf entsprechende Protokollanweisungen.
 
    * **Bereinigen**: Wählen Sie den `Wipe`-Wert aus
       * Die Option **Bereinigen** legt den Startpunkt des Ziels für die Aufnahme fest. Wenn **Bereinigen** aktiviert ist, wird das Ziel einschließlich des gesamten Inhalts auf die in Cloud Manager angegebene AEM-Version zurückgesetzt. Wenn diese Option nicht aktiviert ist, behält das Ziel seinen aktuellen Inhalt als Ausgangspunkt bei.
@@ -67,9 +67,9 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
    >[!IMPORTANT]
    > Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Admins** im Ziel-Author-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, finden Sie unter [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) weitere Informationen dazu.
 
-1. Nachdem Sie eine Auswahl zur Aufnahme getroffen haben, kann eine Schätzung der Dauer angezeigt werden. Es handelt sich um eine bestmögliche Schätzung auf der Grundlage historischer Daten ähnlicher Aufnahmen.
+1. Nach Auswahl der Aufnahmeoptionen wird eine geschätzte Dauer angezeigt. Es handelt sich um eine bestmögliche Schätzung auf der Grundlage historischer Daten ähnlicher Aufnahmen.
 
-   * Diese Schätzung wird für Aufnahmen (**Löschen) nicht** oder angezeigt, da CAM in diesem Fall nicht weiß, wie viel Inhalt auf dem Zielsystem vorhanden ist.
+   * Diese Schätzung wird für **nicht-löschende** Aufnahmen weder berechnet noch angezeigt, da CAM in diesem Fall nicht weiß, wie viel Inhalt auf dem Zielsystem vorhanden ist.
    * Diese Schätzung wird nur berechnet und angezeigt, wenn die Werte „Größe überprüfen“ der Extraktion erfasst wurden und verfügbar sind.
    * Dieser Wert ist eine Schätzung und sollte, obwohl er sorgfältig berechnet wurde, nicht als exakt angesehen werden. Verschiedene Faktoren können die tatsächliche Dauer ändern.
    * Während die Aufnahme läuft, ist dieser Wert auch im Dauer-Dialog verfügbar, der über die Aktion „**Dauer anzeigen**“ der Aufnahme aufgerufen werden kann.

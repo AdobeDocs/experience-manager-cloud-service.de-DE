@@ -5,9 +5,9 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '627'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwende
 
 Der universelle Editor erfordert eine JavaScript-Bibliothek, um die Seite im Editor zu rendern und zu bearbeiten.
 
-Darüber hinaus erfordert der Service des universellen Editors einen [Uniform Resource Name (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der bearbeiteten App zu identifizieren und zu verwenden. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
+Der Service des universellen Editors erfordert einen [Uniform Resource Name (URN)](https://de.wikipedia.org/wiki/Uniform_Resource_Name), um das richtige Backend-System für den Inhalt in der in Bearbeitung befindlichen App zu identifizieren und zu verwenden. Daher ist ein URN-Schema erforderlich, um Inhalte wieder Inhaltsressourcen zuzuordnen.
 
 ### Einschließen der CORS-Bibliothek des universellen Editors {#cors-library}
 

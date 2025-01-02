@@ -5,9 +5,9 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
 source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1096'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
    ![Abrufen des Upload-Schlüssels](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >Der Bericht kann nach wie vor manuell hochgeladen werden, aber mithilfe des Upload-Schlüssels wird der Vorgang optimiert. Beachten Sie, dass der Bericht nicht manuell hochgeladen werden kann, wenn seine Größe ca. 200 MB oder mehr beträgt. Der Bericht kann auch nicht im Inkognito-Modus des Browsers hochgeladen werden.
+   >Der Bericht kann nach wie vor manuell hochgeladen werden, aber mithilfe des Upload-Schlüssels wird der Vorgang optimiert. Beachten Sie, dass der Bericht nicht manuell hochgeladen werden kann, wenn seine Größe mehr als etwa 200 MB beträgt. Der Bericht kann auch nicht im Inkognito-Modus des Browsers hochgeladen werden.
 
 1. Nachdem ein neuer Bericht hochgeladen wurde, können Sie den Best-Practices-Analyse-Bericht in CAM sehen.
 

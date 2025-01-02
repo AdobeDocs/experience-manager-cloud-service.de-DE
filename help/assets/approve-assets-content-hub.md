@@ -3,9 +3,9 @@ title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -85,11 +85,11 @@ Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene
    1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam:status_.
    1. Ändern Sie den Standardwert in _genehmigt_.
 
-1. Ziehen Sie ähnlich wie in Schritt 6 ein **[!UICONTROL Einzeiliges Textfeld]** aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt Metadaten im Formular.
-1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
+1. Ziehen Sie ein **[!UICONTROL einzeiliges Textfeld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
+1. Klicken Sie auf das neu hinzugefügte Feld und nehmen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** vor:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Aktivierungsziel_.
    1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam:activationTarget_.
-   1. Ändern Sie den Standardwert in _contentHub_.
+   1. Ändern Sie den Standardwert in _contenthub_.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Metadatenprofile]** das neu erstellte Metadatenprofil aus.

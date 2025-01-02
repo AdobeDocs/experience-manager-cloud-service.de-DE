@@ -5,9 +5,9 @@ feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
 source-git-commit: 41d610728fe92b07db722694432653cf7f03ce9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ AEM as a Cloud Service bietet [mehrere Ansätze](https://experienceleague.adobe.
 
 * Bei den Personen, die für die Umleitungen zuständig sind, handelt es sich um Business-Anwendende, denen die erforderlichen Zugriffsrechte zum Übertragen von Dateiänderungen an die Quell-Code-Verwaltung fehlen oder die nicht die Möglichkeit haben, eine Cloud Manager-Konfigurations-Pipeline auf Web-Ebene auszuführen.
 * Der Umfang reicht von wenigen bis hin zu Zehntausenden von Umleitungen.
-* Sie möchten die Option einer Benutzeroberfläche, entweder erstellt als benutzerdefiniertes Projekt oder mithilfe des [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html).
+* Sie wünschen sich die Möglichkeit einer Benutzeroberfläche, die entweder als benutzerdefiniertes Projekt oder mit dem [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) erstellt wird.
 
 Das Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, eine oder mehrere Rewrite-Zuordnungsdateien (neu) zu laden, die an einem bestimmten Speicherort im Veröffentlichungs-Repository abgelegt wurden. Hierbei ist darauf hinzuweisen, dass die Art und Weise, wie die Dateien dorthin gelangen, außerhalb des Anwendungsbereichs dieser Funktion liegt. Sie können jedoch eine der folgenden Methoden in Betracht ziehen:
 
 * Aufnehmen der Rewrite-Zuordnung als Asset in der Autorenbenutzeroberfläche mit anschließender Veröffentlichung.
-* Installieren des [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([mindestens 6.7.0 Version oder höher](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), der eine Benutzeroberfläche zum Verwalten der URL-Zuordnungen enthält und auch die Rewrite Map-Datei veröffentlichen kann.
+* Installation des [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([mindestens Version 6.7.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), der eine Benutzeroberfläche zum Verwalten der URL-Zuordnungen enthält und auch die Rewrite-Zuordnungsdatei veröffentlichen kann.
 * Volle Flexibilität durch Schreiben einer benutzerdefinierten Anwendung. Beispiel: eine Benutzeroberfläche oder Befehlszeilenschnittstelle zum Verwalten der URL-Zuordnungen oder alternativ ein Formular zum Hochladen einer Rewrite-Zuordnung, die dann AEM-APIs verwendet, um die Rewrite-Zuordnungsdatei zu veröffentlichen.
 
 >[!NOTE]
@@ -61,9 +61,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Als Nächstes müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die Zuordnungsdatei konfigurieren, auf die die Name-Eigenschaft verweist (`my.map` im obigen Beispiel). Nach dem Laden wird diese Zuordnungsdatei im lokalen Dispatcher-Speicher unter dem `/tmp/rewrites/` **fester** Speicherort gespeichert.
+Anschließend müssen Sie in einer Apache-Konfigurationsdatei wie `rewrites/rewrite.rules` oder `<yourfile>.vhost` die durch die Eigenschaft „name“ referenzierte Zuordnungsdatei konfigurieren (`my.map` im obigen Beispiel). Nach dem Laden wird diese Zuordnungsdatei im lokalen Dispatcher-Speicher unter dem **festen** Speicherort gespeichert`/tmp/rewrites/`.
 
-Die `RewriteMap` sollte angeben, dass die Daten im DBM-Dateiformat (Database Manager) unter Verwendung des `sdbm`-Formats (einfaches DBM) gespeichert werden und der vollständige Dateipfad aus dem Speicherort-Präfix und der name-Eigenschaft abgeleitet wird.
+Die Anweisung `RewriteMap` sollte angeben, dass die Daten im DBM-Dateiformat (Database Manager) unter Verwendung des `sdbm`-Formats (einfacher DBM) gespeichert werden und der vollständige Dateipfad aus dem Präfix des Speicherorts und der Eigenschaft „name“ abgeleitet wird.
 
 Der Rest der Konfiguration hängt vom Format der Datei `redirectmap.txt` ab. Das einfachste Format, zu sehen im folgenden Beispiel, ist eine 1:1-Zuordnung zwischen der ursprünglichen URL und der zugeordneten URL:
 

@@ -3,9 +3,9 @@ title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1718'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -227,19 +227,19 @@ Wenn die Sichtbarkeit abgelaufener Assets aktiviert ist, werden in Content Hub a
 
 ### Ausgabedarstellungen {#renditions-content-hub}
 
-Ausgabedarstellungen sind benutzerdefinierte Versionen digitaler Assets wie Bilder, Dokumente usw., die für verschiedene Geräte und Plattformen entwickelt wurden, um eine optimale Leistung zu gewährleisten. Weitere Informationen finden Sie [Ausgabedarstellungen in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Ausgabedarstellungen sind benutzerdefinierte Versionen digitaler Assets wie Bilder, Dokumente usw., die für verschiedene Geräte und Plattformen entwickelt wurden, um eine optimale Leistung zu gewährleisten. Weitere Informationen finden Sie unter [Ausgabedarstellungen in Adobe Experience Manager Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
-Content Hub ermöglicht das Herunterladen statischer Ausgabedarstellungen. Statische Ausgabedarstellungen sind verschiedene Darstellungen der Originaldatei eines Assets, die nativ generiert werden. Beispiele sind Miniaturansichten oder für Mobilgeräte optimierte Ausgabedarstellungen. Admins können die Verfügbarkeit von Asset-Ausgabedarstellungen verwalten und steuern und festlegen, ob Original-Assets heruntergeladen werden können.
+Content-Hub ermöglicht das Herunterladen statischer Ausgabedarstellungen. Statische Ausgabedarstellungen sind verschiedene Darstellungen der Originaldatei eines Assets, die nativ generiert werden. Beispiele sind Miniaturansichten oder für Mobilgeräte optimierte Ausgabedarstellungen. Admins können die Verfügbarkeit von Asset-Ausgabedarstellungen verwalten und steuern und festlegen, ob Original-Assets heruntergeladen werden können.
 
 Führen Sie dazu die folgenden Schritte aus:
 
-Klicken Sie in [ Benutzeroberfläche ](#access-configuration-options-content-hub)Konfigurationen“ auf **[!UICONTROL Ausgabedarstellungen]**. Die folgenden Optionen sind verfügbar:
+Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Ausgabedarstellungen]**. Die folgenden Optionen sind verfügbar:
 
-* Aktivieren Sie den [!UICONTROL Verfügbarmachen statischer Ausgabedarstellungen aktivieren] , um alle statischen Ausgabedarstellungen in Content Hub anzuzeigen.
+* Aktivieren Sie den Umschalter [!UICONTROL Statische Ausgabedarstellungen verfügbar machen], um alle statischen Ausgabedarstellungen in Content Hub anzuzeigen.
 
-* Aktivieren oder deaktivieren Sie **[!UICONTROL Benutzer dürfen Original-Assets herunterladen]**-Umschalter, um die Verfügbarkeit zum Herunterladen von Original-Assets zu steuern.
+* Aktivieren oder deaktivieren Sie den Umschalter **[!UICONTROL Download der Original-Assets zulassen]**, um zu steuern, ob Original-Assets heruntergeladen werden können.
 
-  ![Konfigurieren von Ausgabedarstellungen auf Content Hub](assets/config-renditions.png)
+  ![Konfigurieren von Assets in Content-Hub](assets/config-renditions.png)
 
 Informationen zum Anzeigen und Herunterladen statischer Ausgabedarstellungen in Content Hub finden Sie unter [Herunterladen von Assets in Content Hub](/help/assets/download-assets-content-hub.md).
 

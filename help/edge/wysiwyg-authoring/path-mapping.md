@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie in der AEM-Autoreninstanz genutzte Seitenpfade öffentlich
 Um WYSIWYG-Inhalte mithilfe von AEM erstellen und in Edge Delivery Services veröffentlichen zu können, müssen Sie die Pfadzuordnung Ihres Projekts einrichten. Diese Zuordnung dient zwei Zwecken.
 
 * Sie ordnet die in Ihrer AEM-Autoreninstanz genutzten Seitenpfade den öffentlichen Seitenpfaden zu, die auf Ihrer Website verwendet werden, und stellt eine Beziehung zwischen ihnen her.
-* Es steuert, welche Inhalte (Seiten, Blätter, Assets usw.) in Edge Delivery Services veröffentlicht werden.
+* Sie steuert, welche Inhalte (Seiten, Blätter, Assets usw.) in Edge Delivery Services veröffentlicht werden.
 
 Die Pfadzuordnung muss für jedes Projekt einzeln und entsprechend den Inhalten und der URL-Struktur des Projekts konfiguriert werden. Sie wird von AEM während der Veröffentlichung von Inhalten und während der Bearbeitung von Inhalten im [universellen Editor](/help/sites-cloud/authoring/universal-editor/navigation.md) verwendet.
 

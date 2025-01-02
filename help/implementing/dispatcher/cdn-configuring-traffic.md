@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1377'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -241,7 +241,7 @@ data:
 
 ## Reaktionsumwandlungen {#response-transformations}
 
-Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das obige Beispiel für den Verweis auf eine Variable, die zuvor in einer Anfrage-Umwandlungsregel festgelegt wurde. Der Status-Code der Antwort kann ebenfalls festgelegt werden.
+Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Oben finden Sie auch ein Beispiel für Verweise auf eine Variable, die zuvor in einer Regel zu Anfrageumwandlung festgelegt wurde. Der Status-Code der Antwort kann ebenfalls festgelegt werden.
 
 Konfigurationsbeispiel:
 
@@ -300,7 +300,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
 | **set** | reqHeader, Wert | Legt eine bestimmte Kopfzeile auf einen angegebenen Wert in der Antwort fest. |
-|          | respProperty, value | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft „status“ zum Festlegen des Status-Codes. |
+|          | respProperty, Wert | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft „Status“, um den Status-Code festzulegen. |
 | **nicht gesetzt** | respHeader | Entfernt eine bestimmte Kopfzeile aus der Antwort. |
 
 ## Ursprungs-Auswahlen {#origin-selectors}

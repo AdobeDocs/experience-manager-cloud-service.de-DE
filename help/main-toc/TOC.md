@@ -7,9 +7,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -755,8 +755,8 @@ ht-degree: 99%
             + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
             + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Verwenden von CAPTCHA in Kernkomponenten von adaptiven Formularen](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Verwenden von Drehkreuz-CAPTCHA in Kernkomponenten für adaptive Formulare](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [Verwenden von hCAPTCHA in einem adaptiven Formular (Kernkomponenten)](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Verwenden von Turnstile Captcha in einem adaptiven Formular (Kernkomponenten)](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -968,8 +968,8 @@ ht-degree: 99%
       + [Seiten mit DAM-Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Funktionen für in Arbeit befindliche Sites](/help/edge/wysiwyg-authoring/wip-features.md)
       + [Wiederverwenden von Code in verschiedenen Sites](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Reaktionsloses Multi-Site-Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Reagiert auf Staging- und Produktionsumgebungen](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Multi-Site-Management ohne Repo](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [Staging- und Produktionsumgebungen ohne Repo](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + Dokumentenbasiertes Authoring {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Massenmetadaten](/help/edge/docs/bulk-metadata.md)

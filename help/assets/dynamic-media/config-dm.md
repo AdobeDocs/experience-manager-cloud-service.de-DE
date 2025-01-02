@@ -6,9 +6,9 @@ feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 45eecefbb39476671e90218cd502e0242172c1a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3625'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 {{work-with-dynamic-media}}
 
-Wenn Sie Adobe Experience Manager as a Cloud Service für verschiedene Umgebungen wie Entwicklung, Staging und Live-Produktion verwenden, konfigurieren Sie Dynamic Media Cloud Service für jede dieser Umgebungen.
+Wenn Sie Adobe Experience Manager as a Cloud Service für verschiedene Umgebungen wie Entwicklung, Staging und Live-Produktion verwenden, müssen Sie Dynamic Media Cloud Services für jede dieser Umgebungen konfigurieren.
 
 Siehe auch [Konfigurieren eines Firmen-Alias-Kontos für Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
 
