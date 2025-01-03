@@ -40,7 +40,7 @@ Die Assets, die in Assets as a Cloud Service als `approved` markiert sind, sind 
 
 >[!NOTE]
 >
-Assets as a Cloud Service und Content Hub müssen dieselbe Organisation verwenden, damit die Assets in Content Hub angezeigt werden.
+>Assets as a Cloud Service und Content Hub müssen dieselbe Organisation verwenden, damit die Assets in Content Hub angezeigt werden.
 
 So legen Sie den Asset-Status mithilfe der Assets-Ansicht in AEM as a Cloud Service auf `approved` fest:
 
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene
 
 >[!NOTE]
 > 
-Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen.
+>Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen.
 
 ## Verwalten von mit Content Hub hochgeladenen Assets {#manage-assets-uploaded-using-content-hub}
 
