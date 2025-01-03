@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie mehr über die Version Cloud Manager 2024.12.0 in AEM (Adobe Experi
 
 ## Veröffentlichungsdaten {#release-date}
 
-Cloud Manager 2024.12.0 wurde in AEM as a Cloud Service am Donnerstag, 5. Dezember 2024 veröffentlicht.
+Die Version 2024.12.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, dem 5. Dezember 2024 veröffentlicht.
 
 Die Veröffentlichung der nächsten Version ist für den 23. Januar 2025 geplant.
 
@@ -32,22 +32,22 @@ Die Veröffentlichung der nächsten Version ist für den 23. Januar 2025 geplant
 
     Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
-* **A-Datensatztypen:** Unterstützung für A-Datensatztypen wurde hinzugefügt, um die Live-Schaltung für Domains mithilfe von CDN-Konfigurationen in AEM Cloud Manager zu verbessern. Sie haben jetzt die Möglichkeit, live zu gehen, indem Sie entweder einen CNAME-Datensatztyp oder einen A-Datensatztyp hinzufügen, der die IPs von Fastly darstellt, was das Domain-Routing vereinfacht. Durch diese Verbesserung entfällt die Beschränkung, sich bei der Domain-Einrichtung mit Fastly ausschließlich auf CNAME-Einträge zu verlassen.
+* **A-Datensatztypen:** Es wurde Unterstützung für A-Datensatztypen hinzugefügt, um die Bereitschaft zur Live-Schaltung für Domains mithilfe von CDN-Konfigurationen in AEM Cloud Manager zu verbessern. Sie haben jetzt die Möglichkeit, live zu gehen, indem Sie entweder einen CNAME-Datensatztyp oder einen A-Datensatztyp hinzufügen, der die IPs von Fastly darstellt, was das Domain-Routing vereinfacht. Durch diese Verbesserung entfällt die Beschränkung, sich bei der Domain-Einrichtung mit Fastly ausschließlich auf CNAME-Einträge zu verlassen.
 
-  Siehe [Hinzufügen eines benutzerdefinierten Domain-](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)<!-- CMGR-63076 -->.
+  Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). <!-- CMGR-63076 -->
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
-* **Hinzufügen mehrerer Domains zu einer Edge Delivery-Site:** Sie können einer Edge Delivery-Site (EDS) in AEM Cloud Manager jetzt mehrere Domains hinzufügen, einschließlich Apex- und Nicht-Apex-Domains. Diese Verbesserung beseitigt frühere Einschränkungen, die die Möglichkeit einschränkten, mehrere Domains mit einem EDS-Ursprung zu verknüpfen. Die Aktualisierung sorgt für eine höhere Flexibilität bei der Verwaltung von Domain-Konfigurationen und vereinfacht die Live-Schaltung für Sites mit komplexen Domain-Setups. <!-- CMGR-63007 -->
+* **Hinzufügen mehrerer Domains zu einer Edge Delivery-Site:** Sie können einer Edge Delivery-Site (EDS) in AEM Cloud Manager jetzt mehrere Domains hinzufügen, sowohl Apex- als auch Nicht-Apex-Domains. Diese Verbesserung beseitigt frühere Einschränkungen hinsichtlich der Möglichkeit, mehrere Domains mit einem EDS-Ursprung zu verknüpfen. Die Aktualisierung sorgt für eine höhere Flexibilität bei der Verwaltung von Domain-Konfigurationen und vereinfacht die Live-Schaltung für Sites mit komplexen Domain-Setups. <!-- CMGR-63007 -->
 
-* **Erweiterte Filteroptionen:** Erweiterte Filteroptionen wurden auf den Seiten der Pipeline-Ausführung und des SSL-Zertifikats in AEM Cloud Manager eingeführt. Sie können jetzt nach mehreren Kriterien filtern, um so den Zugriff auf relevante Daten zu beschleunigen und die Bereitstellungseffizienz zu verbessern. <!-- CMGR-26263 -->
+* **Erweiterte Filteroptionen:** Es wurden erweiterte Filteroptionen auf den Seiten der Pipeline-Ausführung und des SSL-Zertifikats in AEM Cloud Manager eingeführt. Sie können jetzt nach mehreren Kriterien filtern, um so den Zugriff auf relevante Daten zu beschleunigen und die Bereitstellungseffizienz zu verbessern. <!-- CMGR-26263 -->
 
-   * **Filterung von Pipeline-Aktivitäten** Umfasst die Filterung von Pipeline-Aktivitäten, mit denen Sie die Suchergebnisse für bestimmte Pipeline-Aktivitäten verfeinern können. Zu den verfügbaren Filtern gehören Pipeline, Aktion und Status.
+   * **Filterung von Pipeline-Aktivitäten** Umfasst die Filterung von Pipeline-Aktivitäten, wodurch Sie die Suchergebnisse für bestimmte Pipeline-Aktivitäten präzisieren können. Zu den verfügbaren Filtern gehören Pipeline, Aktion und Status.
      ![Filtern von Pipeline-Aktivitäten](/help/implementing/cloud-manager/assets/filters-pipeline.png)
 
 
-   * **SSL-Zertifikatfilterung:** Umfasst die Filterung von SSL-Zertifikaten, mit der Sie die Suchergebnisse für bestimmte Zertifikate verfeinern können. Zu den verfügbaren Filtern gehören SSL-Zertifikatname, Eigentümerschaft und Status.
-     ![SSL-Zertifikatfilterung](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
+   * **Filtern von SSL-Zertifikaten:** Umfasst die Filterung von SSL-Zertifikaten, wodurch Sie die Suchergebnisse für bestimmte Zertifikate präzisieren können. Zu den verfügbaren Filtern gehören Name, Eigentümerschaft und Status des SSL-Zertifikats.
+     ![Filtern von SSL-Zertifikaten](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## Early-Adopter-Programm {#early-adoption}
 
@@ -73,8 +73,8 @@ Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, sen
 
 ## Fehlerbehebungen
 
-* Es wurde ein Schutzmechanismus hinzugefügt, um das Löschen von Domains mit aktiven Domain-Zuordnungen in AEM Cloud Manager zu verhindern. Benutzer, die versuchen, solche Domains zu löschen, erhalten jetzt eine Fehlermeldung, die sie anweist, zunächst die Domain-Zuordnung zu löschen, bevor mit dem Löschen der Domain fortgefahren wird. Dieser Workflow stellt die Integrität der Domain sicher und verhindert versehentliche Fehlkonfigurationen. <!-- CMGR-63033 -->
-* In seltenen Fällen konnten Benutzer aufgrund eines falschen Status, der in den jeweiligen Fällen zugewiesen wurde, keinen Domain-Namen hinzufügen oder ein SSL-Zertifikat aktualisieren. <!-- CMGR-62816 -->
+* Es wurde ein Schutzmechanismus hinzugefügt, um das Löschen von Domains mit aktiven Domain-Zuordnungen in AEM Cloud Manager zu verhindern. Benutzende, die versuchen, solche Domains zu löschen, erhalten jetzt eine Fehlermeldung, die sie anweist, zunächst die Domain-Zuordnung zu löschen, bevor mit dem Löschen der Domain fortgefahren wird. Dieser Workflow stellt die Integrität der Domain sicher und verhindert versehentliche Fehlkonfigurationen. <!-- CMGR-63033 -->
+* In seltenen Fällen konnten Benutzende aufgrund eines falschen Status, der in den jeweiligen Fällen zugewiesen wurde, keinen Domain-Namen hinzufügen oder ein SSL-Zertifikat nicht aktualisieren. <!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->

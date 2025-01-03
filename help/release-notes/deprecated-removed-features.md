@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2768'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 83%
 >title="Eingestellte und entfernte Funktionen in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Auf dieser Registerkarte werden Funktionen vorgestellt, die durch ihre Cloud-nativen Gegenstücke ersetzt wurden."
 
-Adobe evaluiert fortlaufend Produktfunktionen, um ältere Funktionen zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kundschaft insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell verwendet, ersetzt es bestimmte Funktionen und Features durch Cloud-native Entsprechungen.
+Adobe evaluiert fortlaufend Produktfunktionen, um ältere Funktionen zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kundschaft insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell verwendet, ersetzt es bestimmte Funktionen und Features durch Cloud-native Entsprechungen.
 
 Für die Bekanntgabe des bevorstehenden Entfernens/Ersetzens von [!DNL Experience Manager]-Funktionen gelten die folgenden Regeln:
 
@@ -29,22 +29,22 @@ Dieser Prozess räumt Kunden mindestens einen Veröffentlichungszyklus ein, um i
 
 ## Veraltete Funktionen {#deprecated-features}
 
-In diesem Abschnitt werden Funktionen aufgeführt, die in [!DNL Experience Manager] as a [!DNL Cloud Service] als veraltet gekennzeichnet wurden. In der Regel werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zuerst eingestellt, wobei eine Alternative bereitgestellt wird.
+In diesem Abschnitt werden Funktionen aufgeführt, die in [!DNL Experience Manager] as a [!DNL Cloud Service] als veraltet gekennzeichnet wurden. In der Regel werden Funktionen, die in einer künftigen Version entfernt werden sollen, zuerst als veraltet gekennzeichnet, wobei eine Alternative bereitgestellt wird.
 
 Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Implementierung nutzen, und die Änderung ihrer Implementierung zu planen, um die bereitgestellte Alternative nutzen zu können.
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |
-| [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. | Die Funktion soll in Kürze entfernt werden. |
+| [!DNL Sites] | Eigenschaften von Experience Fragments für **Social-Media-Status**. | Die Funktion wird in Kürze entfernt werden. |
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
-| [!DNL Foundation] | Die Registerkarte Verteilen im Administrator-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | Integrationen, die Anmeldeinformationen verwenden, die aus Adobe Developer Console-Projekten generiert wurden, verlieren allmählich die Unterstützung für JWT-Anmeldeinformationen (Service Account). Seit dem 1. Mai 2024 können in Adobe Developer Console keine neuen Anmeldedaten für Service-Konten (JWT) mehr erstellt werden. Vorhandene Anmeldeinformationen für Service-Konten (JWT) bleiben bis zum 1. Januar 2025 für konfigurierte Integrationen nutzbar. Danach funktionieren sie nicht mehr, sodass Kunden zu OAuth-Server-zu-Server-Anmeldeinformationen migrieren müssen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
+| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
+| [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Integrationen mit Anmeldedaten, die aus Adobe Developer Console-Projekten generiert wurden, verlieren schrittweise die Unterstützung für Service-Konto-Anmeldedaten (JWT). Seit dem 1. Mai 2024 können in Adobe Developer Console keine neuen Anmeldedaten für Service-Konten (JWT) mehr erstellt werden. Vorhandene Anmeldedaten für Service-Konten (JWT) bleiben bis zum 1. Januar 2025 für konfigurierte Integrationen nutzbar. Danach funktionieren sie nicht mehr, sodass Kundinnen und Kunden zu OAuth-Server-zu-Server-Anmeldedaten migrieren müssen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
 | [!DNL Foundation] | Der Workflow für die Veröffentlichung der Inhaltsstruktur und der zugehörige Workflow-Schritt für die Veröffentlichung der Inhaltsstruktur, der für die Replikationen von Inhaltshierarchien verwendet wurde. | Verwenden Sie den [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation), der leistungsfähiger ist. |
 
 
@@ -55,10 +55,10 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Mana
 | Bereich | Funktion | Ersatz | Zieltermin für die Entfernung |
 | ------------ | ------------------ | ----------- | ------------------- |
 | Benutzeroberfläche | Die Classic-Benutzeroberfläche wurde aus der Produkt-Benutzeroberfläche entfernt. Für einige ausgewählte Funktionen wie Link Checker, Versionsbereinigung und einige Cloud Service-Konfigurationen sind einige Dialogfelder der Classic-Benutzeroberfläche verfügbar. Künftige [Produkt-Updates](/help/release-notes/home.md) können weitere verfügbare Elemente der Classic-Benutzeroberfläche entfernen. | Standard-Benutzeroberfläche | Entfernt |
-| [!DNL Dynamic Media] | Frühere Integrationen mit [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) und dem [Dynamic Media-Hybridmodus](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) sind in [!DNL Experience Manager] as a [!DNL Cloud Service] nicht verfügbar. | Verwenden Sie [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md), das mit [!DNL Experience Manager] as a [!DNL Cloud Service]bereitgestellt wird. | Entfernt |
+| [!DNL Dynamic Media] | Frühere Integrationen mit [Dynamic Media Classic](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) und dem [Dynamic Media-Hybridmodus](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) sind in [!DNL Experience Manager] as a [!DNL Cloud Service] nicht verfügbar. | Verwenden Sie [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md), das mit [!DNL Experience Manager] as a [!DNL Cloud Service]bereitgestellt wird. | Entfernt |
 | [!DNL Sites] | Komponenten „Portal Director“ und „Portlet“ | Diese Funktionen gelten seit [!DNL Experience Manager] 6.4 als veraltet und wurden nun aus [!DNL Experience Manager] entfernt. | Entfernt |
 | [!DNL Sites] | Design-Import-Tool | Diese Funktion wurde entfernt, da auf unveränderliche Abschnitte des [!DNL Experience Manager]-Repositorys nicht zur Laufzeit zugegriffen werden kann. | Entfernt |
-| [!DNL Assets] | [!DNL Assets]-Freigabe für Assets Core Service und Creative Cloud-Services ist nicht verfügbar. | Zur Integration mit [!DNL Adobe Creative Cloud] verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). | Entfernt |
+| [!DNL Assets] | [!DNL Assets]-Freigabe für Marketing Cloud Assets Core Service und Creative Cloud-Services ist nicht verfügbar. | Zur Integration mit [!DNL Adobe Creative Cloud] verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). | Entfernt |
 | [!DNL Foundation] | Unterstützung für Apache Sling-Datenquellen (OSGi-Bundle org.apache.sling.datasource) | Nicht zutreffend | Entfernt |
 | [!DNL Foundation] | Unterstützung für JST-Skriptvorlagen (OSGi-Bundle org.apache.sling.scripting.jst) | Nicht zutreffend | Entfernt |
 | [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | OSGi Http Whiteboard | März 2022 |
@@ -68,7 +68,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Mana
 
 ## AEM-APIs {#aem-apis}
 
-Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das voraussichtliche Datum ihrer Entfernung. Von den Kunden wird erwartet, dass sie die APIs bis zum Zieltermin aus ihrem Code entfernen. Jede Verwendung der API nach dem Entfernungsdatum kann zu Fehlern in der lokalen SDK-/Entwicklungsumgebung und im Cloud Manager-Build-Prozess führen.
+Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das voraussichtliche Datum ihrer Entfernung. Von den Kunden wird erwartet, dass sie die APIs bis zum Zieltermin aus ihrem Code entfernen. Jegliche Verwendung der API nach dem Datum der Entfernung führt zu Fehlern in der lokalen SDK-/Entwicklungsumgebung und beim Build-Prozess von Cloud Manager.
 
 <details>
   <summary>Erweitern, um die Liste veralteter APIs anzuzeigen.</summary>
@@ -82,7 +82,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>Verwenden Sie alternativ die Auth Core/Auth Core SPI-Schnittstellen von Sling. <a href="#org.apache.sling.commons.auth">Siehe die folgenden Hinweise zur Entfernung.</a></td>
+    <td>Verwenden Sie alternativ die Auth Core-/Auth Core SPI-Schnittstellen von Sling. <a href="#org.apache.sling.commons.auth">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>2015</td>
     <td>30.07.2021</td>
   </tr>
@@ -200,14 +200,14 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
-    <td>Util-Klassen, die sich auf Apache Xerces beziehen, werden in späteren Versionen entfernt, was eine größere Versionsänderung zur Folge hat. Da diese Utils für die interne Verwendung in File Vault vorgesehen sind, wird die API in der öffentlichen API-Oberfläche als veraltet gekennzeichnet.</td>
+    <td>Util-Klassen, die sich auf Apache Xerces beziehen, werden in späteren Versionen entfernt, was eine größere Versionsänderung zur Folge hat. Da diese Util-Klassen für den internen Gebrauch im File-Vault bestimmt sind, wird die API aus der öffentlichen API-Oberfläche entfernt.</td>
     <td>01.09.21</td>
     <td>entfernt</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>Alte AEM 6.x-API. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>08.04.2019</td>
-    <td>9/29/21</td>
+    <td>29.09.2021</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
@@ -229,7 +229,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service unterstützt diese interne log4j-API nicht.</td>
+    <td>AEM as a Cloud Service unterstützt diese interne Log4j-API nicht.</td>
     <td>27.01.2022</td>
     <td>24.03.2022</td>
   </tr>
@@ -247,7 +247,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>Aufgrund einer Sicherheitslücke ist ein Upgrade von Handlebars von 4.0.5 auf 4.3.0 erforderlich. Dieses Paket ist in der aktualisierten Handlebars-Version nicht mehr vorhanden.</td>
+    <td>Aufgrund von Sicherheitslücken ist ein Upgrade von Handlebars von 4.0.5 auf 4.3.0 erforderlich. Dieses Paket ist in der aktualisierten Handlebars-Version nicht mehr vorhanden.</td>
     <td>5.5.2022</td>
     <td>5.8.2022</td>
   </tr>
@@ -261,7 +261,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
     <td>com.day.cq.contentsync.handler.util</td>
     <td>Diese API wird nicht mehr unterstützt. Verwenden Sie stattdessen die Builder von Apache Sling.</td>
     <td>31.10.2022</td>
-    <td>1/01/2023</td>
+    <td>01.01.2023</td>
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
     <td>AEM as a Cloud Service unterstützt diese API nicht.</td>
@@ -274,7 +274,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>org.slf4j.event    </td>
-    <td>AEM as a Cloud Service unterstützt diese interne slf4j-API nicht.</td>
+    <td>AEM as a Cloud Service unterstützt diese interne Slf4j-API nicht.</td>
     <td>11.4.2022</td>
     <td>30.08.2024</td>
   </tr>
@@ -314,7 +314,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
 
 ### Entfernung von `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
-Wenn Sie `org.apache.sling.commons.auth`, `org.apache.sling.commons.auth.spi` oder beides verwenden, kann die Verwendung durch eine Migration des Codes zu `org.apache.sling.auth` bzw. ersetzt werden. `org.apache.sling.auth.spi`. Wenn Sie eine alte Version von [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
+Wenn Sie `org.apache.sling.commons.auth` und/oder `org.apache.sling.commons.auth.spi` verwenden, kann die Verwendung ersetzt werden durch eine Migration des Codes zu `org.apache.sling.auth` bzw. `org.apache.sling.auth.spi`. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
 
 Aktionsliste:
 
@@ -323,11 +323,11 @@ Aktionsliste:
 
 ### Entfernung von `org.eclipse.jetty*` {#org.eclipse.jetty}
 
-Wenn Sie Elemente aus dem Package `org.eclipse.jetty` oder einem seiner Unterpakete verwenden, empfiehlt es sich möglicherweise, zu anderen Drittanbieterbibliotheken mit ähnlicher Funktionalität zu migrieren. Wenn die Migration nicht möglich ist, fügen Sie Ihrem Projekt die erforderlichen Bundles aus der folgenden Liste hinzu.
+Wenn Sie Bestandteile aus dem Paket `org.eclipse.jetty` oder einem seiner Unterpakete verwenden, empfiehlt es sich möglicherweise, auf andere Bibliotheken von Drittanbietern mit einer ähnlichen Funktionalität zu migrieren. Wenn die Migration nicht möglich ist, fügen Sie Ihrem Projekt die erforderlichen Bundles aus der folgenden Liste hinzu.
 
 Aktionsliste:
 
-* Ersetzen Sie die Verwendung von `org.eclipse.jetty`-Paketen durch andere Bibliotheken/eigenen Code von Drittanbietern oder
+* Ersetzen Sie die Verwendung von `org.eclipse.jetty`-Paketen durch andere Drittanbieter-Bibliotheken bzw. eigenen Code oder
 * Wählen Sie die erforderlichen Bundles aus dieser Liste aus und fügen Sie sie zu Ihrem Projekt hinzu:
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
@@ -349,11 +349,11 @@ Aktionsliste:
 
 ### Verwendung von `org.apache.abdera*` und `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
-Ersetzen Sie die Verwendung eines Pakets aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch eine Drittanbieterbibliothek, die ähnliche Funktionen oder Ihren eigenen Code bietet.
+Ersetzen Sie die Verwendung von Paketen aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch eine Bibliothek eines Drittanbieters, die ähnliche Funktionen bietet, oder Ihren eigenen Code.
 
 Aktionsliste:
 
-* Ersetzen Sie die Verwendung von Paketen aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch andere Bibliotheken/eigenen Code von Drittanbietern.
+* Ersetzen Sie die Verwendung von Paketen aus `org.apache.abdera` und `org.apache.sling.atom.taglib` durch andere Bibliotheken von Drittanbietern oder eigenen Code.
 
 ### Verwendung von `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
@@ -365,14 +365,14 @@ Aktionsliste:
 
 ## OSGi-Konfiguration {#osgi-configuration}
 
-Die beiden folgenden Listen spiegeln die OSGi-Konfigurationsoberfläche für AEM as a Cloud Service wider und beschreiben, was Kunden konfigurieren können.
+Die beiden folgenden Listen spiegeln die OSGi-Konfigurationsoberfläche für AEM as a Cloud Service wider und beschreiben, was Kundinnen und Kunden konfigurieren können.
 
 1. Kunden-Code darf die aufgelisteten OSGi-Konfigurationen nicht konfigurieren.
 1. Eine Liste der OSGi-Konfigurationen, deren Eigenschaften zwar konfiguriert werden können, aber die angegebenen Validierungsregeln einhalten müssen. Zu diesen Regeln gehört, ob die Deklaration der Eigenschaft erforderlich ist, ihr Typ und in einigen Fällen ihr zulässiger Wertebereich.
 
 Der Kunden-Code kann alle OSGi-Konfigurationen konfigurieren, die nicht aufgeführt sind.
 
-Diese Regeln werden während des Build-Prozesses von Cloud Manager validiert. Im Laufe der Zeit können zusätzliche Regeln hinzugefügt werden, und das erwartete Erzwingungsdatum wird in der Tabelle angegeben. Von Kunden wird erwartet, dass sie diese Regeln bis zum Zieltermin für die Erzwingung einhalten. Werden die Regeln nach dem Entfernungsdatum nicht eingehalten, treten im Cloud Manager-Build-Prozess Fehler auf. Maven-Projekte sollten das [Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) enthalten, um OSGi-Konfigurationsfehler während der lokalen SDK-Entwicklung zu kennzeichnen.
+Diese Regeln werden während des Build-Prozesses von Cloud Manager validiert. Im Laufe der Zeit können zusätzliche Regeln hinzugefügt werden, und das erwartete Erzwingungsdatum wird in der Tabelle angegeben. Von Kunden wird erwartet, dass sie diese Regeln bis zum Zieltermin für die Erzwingung einhalten. Werden die Regeln nach dem Entfernungsdatum nicht eingehalten, treten im Build-Prozess von Cloud Manager Fehler auf. Maven-Projekte sollten das [Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) enthalten, um OSGi-Konfigurationsfehler während der lokalen SDK-Entwicklung zu kennzeichnen.
 
 Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementing/deploying/configuring-osgi.md).
 
@@ -508,7 +508,7 @@ Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementin
       * Typ: boolean
 +++
 
-## Java Runtime-Update auf Version 21 {#java-runtime-update-21}
+## Aktualisierung von Java Runtime auf Version 21 {#java-runtime-update-21}
 
 <!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
 

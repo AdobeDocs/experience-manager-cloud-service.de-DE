@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1802'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht November 2024 an, das eine Zusammenfassung der Funktionen bietet, die der Version 2024.11.0 hinzugefügt wurden:
+Eine Zusammenfassung der in der Version 2024.11.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version November 2024:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
