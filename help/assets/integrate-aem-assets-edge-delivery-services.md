@@ -2,7 +2,7 @@
 title: Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services
 description: Erfahren Sie, wie Sie AEM Assets mit Edge Delivery Services integrieren. Durch diese Integration können Sie AEM Assets mit Microsoft Word und Google Docs integrieren, AEM Assets mit dem universellen Editor integrieren, Dynamic Media mit OpenAPI-Funktionen mit dem universellen Editor integrieren und Dynamic Media mit OpenAPI-Funktionen mit Microsoft Word und Google Docs integrieren.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -78,7 +78,7 @@ In diesem Video erfahren Sie, wie Sie Assets mit Dynamic Media mit OpenAPI-Funkt
 
 ## Beispiel für Edge Delivery Services-Site{#example-of-an-Edge-Delivery-Services-site}
 
-Siehe [WKND-](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home). Diese Site basiert auf den dokumentbasierten Authoring-Funktionen von Edge Delivery Services. Der Inhalt der Site wird in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) erstellt, wobei Dynamic Media mit OpenAPI-Funktionen für die Asset-Bereitstellung verwendet wird. Nach der Erstellung wird der Inhalt direkt aus dem Dokument veröffentlicht. Für dieses dokumentbasierte Authoring-Setup werden alle wichtigen Dateien, Ordner, Konfigurationen, den Stil und die Funktions-Codes der Website in diesem [Git-Repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) gespeichert.
+Siehe [WKND-](http://bit.ly/3DExLnf). Diese Site basiert auf den dokumentbasierten Authoring-Funktionen von Edge Delivery Services. Der Inhalt der Site wird in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) erstellt, wobei Dynamic Media mit OpenAPI-Funktionen für die Asset-Bereitstellung verwendet wird. Nach der Erstellung wird der Inhalt direkt aus dem Dokument veröffentlicht. Für dieses dokumentbasierte Authoring-Setup werden alle wichtigen Dateien, Ordner, Konfigurationen, den Stil und die Funktions-Codes der Website in diesem [Git-Repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) gespeichert.
 
 ## Integrieren von AEM Assets mit auf dem universellen Editor basierenden Authoring-Flüssen für Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
 
