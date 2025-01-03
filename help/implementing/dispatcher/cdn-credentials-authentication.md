@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 100%
+source-wordcount: '1497'
+ht-degree: 92%
 
 ---
 
@@ -28,12 +28,14 @@ Es gibt einen Abschnitt über das [Rotieren von Schlüsseln](#rotating-secrets),
 
 Wie auf der Seite [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) beschrieben, können Kundinnen und Kunden Traffic über ihr eigenes CDN weiterleiten, das als Kunden-CDN (manchmal auch als BYOCDN) bezeichnet wird.
 
-Im Rahmen der Einrichtung müssen sich das Adobe-CDN und das Kunden-CDN auf einen Wert des HTTP-Headers `X-AEM-Edge-Key` einigen. Dieser Wert wird bei jeder Anfrage im Kunden-CDN festgelegt, bevor er an das Adobe-CDN weitergeleitet wird. Dieses überprüft dann, ob der Wert erwartungsgemäß ist, damit anderen HTTP-Headern vertraut werden kann, einschließlich derer, die dazu beitragen, die Anfrage an den entsprechenden AEM-Ursprung weiterzuleiten.
+Im Rahmen der Einrichtung müssen sich das Adobe-CDN und das Kunden-CDN auf einen Wert des HTTP-Headers `X-AEM-Edge-Key` einigen. Dieser Wert wird bei jeder Anfrage im Kunden-CDN festgelegt, bevor er an das Adobe-CDN weitergeleitet wird, wodurch überprüft wird, ob der Wert erwartungsgemäß ist, sodass er anderen HTTP-Kopfzeilen vertrauen kann, einschließlich derjenigen, die dabei helfen, die Anfrage an den entsprechenden AEM-Ursprung weiterzuleiten.
 
 Der Wert *X-AEM-Edge-Key* wird durch die Eigenschaften `edgeKey1` und `edgeKey2` in einer Datei mit dem Namen `cdn.yaml` oder ähnlich referenziert, die sich unter einem `config`-Ordner der obersten Ebene befindet. Under [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) finden Sie weitere Informationen zur Ordnerstruktur und Bereitstellung der Konfiguration.  Die Syntax ist im folgenden Beispiel beschrieben.
 
+Weitere Informationen zur Fehlerbehebung und häufige Fehler finden Sie unter [Häufige Fehler](/help/implementing/dispatcher/cdn.md#common-errors).
+
 >[!WARNING]
->Direkter Zugriff ohne korrekten X-AEM-Edge-Schlüssel wird für alle Anfragen verweigert, die mit der Bedingung übereinstimmen (im Beispiel unten bedeutet dies alle Anfragen an die Veröffentlichungsebene). Wenn Sie die Authentifizierung schrittweise einführen müssen, lesen Sie den Abschnitt [Sichere Migration zur Verringerung des Risikos von blockiertem Traffic](#migrating-safely).
+>Direkter Zugriff ohne korrekten X-AEM-Edge-Schlüssel wird für alle Anfragen verweigert, die mit der Bedingung übereinstimmen (im Beispiel unten bedeutet dies alle Anfragen an die Veröffentlichungsebene). Wenn Sie die Authentifizierung schrittweise einführen müssen, lesen Sie den Abschnitt [Sichere Migration, um das Risiko von blockiertem Traffic zu ](#migrating-safely)).
 
 ```
 kind: "CDN"
@@ -143,11 +145,11 @@ Weitere Eigenschaften sind:
 
 * `data`-Knoten, der einen untergeordneten `authentication`-Knoten enthält.
 * Unter `authentication` ist ein `authenticators`-Knoten und ein `rules`-Knoten vorhanden, bei denen es sich jeweils um Arrays handelt.
-* Authentifizierer: Hiermit können Sie einen Token-Typ oder Anmeldeinformationen deklarieren. In diesem Fall handelt es sich hierbei um einen Bereinigungsschlüssel. Dieser umfasst die folgenden Eigenschaften:
+* Authenticators: Ermöglicht die Deklaration eines Token- oder Berechtigungstyps, bei dem es sich in diesem Fall um einen Bereinigungsschlüssel handelt. Dieser umfasst die folgenden Eigenschaften:
    * name – eine beschreibende Zeichenfolge.
    * type – muss „purge“ sein.
    * purgeKey1 – sein Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“](/help/operations/config-pipeline.md#secret-env-vars) verweisen. Wählen Sie für das Feld „Angewendeter Service“ die Option „Alle“ aus. Es wird empfohlen, dass der Wert (z. B.`${{CDN_PURGEKEY_031224}}`) den Tag widerspiegelt, an dem er hinzugefügt wurde.
-   * purgeKey2 – wird für die Rotation von Geheimnissen verwendet, die unten im Abschnitt [Rotieren von Geheimnissen](#rotating-secrets) beschrieben wird. Von `purgeKey1` und `purgeKey2` muss mindestens einer deklariert werden.
+   * purgeKey2 - wird zum Rotieren von geheimen Daten verwendet, wie im folgenden Abschnitt [rotierende ](#rotating-secrets)&quot; beschrieben. Von `purgeKey1` und `purgeKey2` muss mindestens einer deklariert werden.
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet werden sollen, und ob es sich um die Veröffentlichungs- und/oder die Vorschaustufe handelt.   Folgendes ist enthalten:
    * name – eine beschreibende Zeichenfolge
    * when – eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax im Artikel [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) beurteilt werden soll. Typischerweise umfasst dies einen Vergleich der aktuellen Stufe (z. B. die Veröffentlichungsstufe).
@@ -202,7 +204,7 @@ Darüber hinaus enthält die Syntax Folgendes:
    * name – eine beschreibende Zeichenfolge
    * type – muss `basic` sein.
    * ein Array von bis zu 10 Anmeldeinformationen, die jeweils die folgenden Name/Wert-Paare enthalten, die Endbenutzende im Dialogfeld der einfachen Authentifizierung eingeben können:
-      * user – der Name der Benutzerin oder des Benutzers
+      * user : der Name des Benutzers.
       * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ ](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet und welche Ressourcen geschützt werden sollen. Jede Regel umfasst:
    * name – eine beschreibende Zeichenfolge
