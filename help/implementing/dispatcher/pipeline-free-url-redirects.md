@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie 301- oder 302-Umleitungen ohne Zugriff auf Gi
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
+source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 88%
+source-wordcount: '758'
+ht-degree: 82%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service bietet [mehrere Ansätze](https://experienceleague.adobe.
 * Der Umfang reicht von wenigen bis hin zu Zehntausenden von Umleitungen.
 * Sie möchten die Option einer Benutzeroberfläche, entweder erstellt als benutzerdefiniertes Projekt oder mithilfe des [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) oder [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-Das Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, eine oder mehrere Rewrite-Zuordnungsdateien (neu) zu laden, die an einem bestimmten Speicherort im Veröffentlichungs-Repository abgelegt wurden. Hierbei ist darauf hinzuweisen, dass die Art und Weise, wie die Dateien dorthin gelangen, außerhalb des Anwendungsbereichs dieser Funktion liegt. Sie können jedoch eine der folgenden Methoden in Betracht ziehen:
+Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, eine oder mehrere Rewrite Map-Dateien zu laden (oder neu zu laden), die an einem bestimmten Speicherort im Publish-Repository abgelegt wurden (sodass sie von AEM Publish heruntergeladen werden können). Hierbei ist darauf hinzuweisen, dass die Art und Weise, wie die Dateien dorthin gelangen, außerhalb des Anwendungsbereichs dieser Funktion liegt. Sie können jedoch eine der folgenden Methoden in Betracht ziehen:
 
 * Aufnehmen der Rewrite-Zuordnung als Asset in der Autorenbenutzeroberfläche mit anschließender Veröffentlichung.
 * Installation des [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([mindestens Version 6.7.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), der eine Benutzeroberfläche zum Verwalten der URL-Zuordnungen enthält und auch die Rewrite-Zuordnungsdatei veröffentlichen kann.
