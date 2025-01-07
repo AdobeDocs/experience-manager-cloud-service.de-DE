@@ -4,10 +4,10 @@ description: Erhalten Sie weitere Informationen zu den Auswirkungen der Einstell
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
-workflow-type: ht
-source-wordcount: '770'
-ht-degree: 100%
+source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >AEM 6.5-Kundinnen und -Kunden sollten für weitere Informationen [die vergleichbare Dokumentation für AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) referenzieren.
 
-Mit der [Adobe Developer Console](https://developer.adobe.com/console) können Kundinnen und Kunden von Adobe Anmeldedaten generieren, die den Zugriff auf verschiedene APIs ermöglichen. Dabei können sie unter verschiedenen Anmeldedatentypen wählen, von OAuth Server-zu-Server bis zu Single-Page-App. Einer dieser Anmeldedatentypen, Anmeldedaten für Dienstkonten (JWT), wurde zugunsten der OAuth Server-zu-Server-Anmeldedaten eingestellt. Neue Anmeldedaten für Dienstkonten (JWT) können ab dem 3. Juni 2024 nicht mehr erstellt werden und vorhandene JWT-Anmeldedaten funktionieren ab dem 27. Januar 2025 nicht mehr. [Weitere Information zur Einstellung der JWT-Anmeldedaten finden Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+Mit der [Adobe Developer Console](https://developer.adobe.com/console) können Kundinnen und Kunden von Adobe Anmeldedaten generieren, die den Zugriff auf verschiedene APIs ermöglichen. Dabei können sie unter verschiedenen Anmeldedatentypen wählen, von OAuth Server-zu-Server bis zu Single-Page-App. Einer dieser Anmeldedatentypen, Anmeldedaten für Dienstkonten (JWT), wurde zugunsten der OAuth Server-zu-Server-Anmeldedaten eingestellt. Neue Service-Konto-Anmeldeinformationen (JWT) können am oder nach dem 3. Juni 2024 nicht mehr erstellt werden und vorhandene JWT-Anmeldeinformationen funktionieren ab dem 30. Juni 2025 nicht mehr. [Weitere Information zur Einstellung der JWT-Anmeldedaten finden Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 Dieser Artikel bietet zusätzliche Informationen dazu, wie Kundinnen und Kunden von AEM as a Cloud Service auf diese Einstellung reagieren sollten.
 
@@ -48,7 +48,7 @@ Siehe [Einrichten von IMS-Integrationen für AEM as a Cloud Service](/help/secur
 
 **Relevante AEM-Versionen**: AEM as a Cloud Service
 
-Kundinnen und Kunden erstellen Adobe Developer Console-Projekte, damit sie die [Cloud Manager-APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aufrufen können. Die Anmeldedaten im Adobe Developer-Projekt sollten in den OAuth-Server-zu-Server-Anmeldedatentyp migriert werden, bevor die veralteten JWT-Anmeldedaten im Januar 2025 ablaufen.
+Kundinnen und Kunden erstellen Adobe Developer Console-Projekte, damit sie die [Cloud Manager-APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aufrufen können. Die Anmeldeinformationen im Adobe Developer-Projekt sollten in den OAuth-Server-zu-Server-Anmeldeinformationstyp migriert werden, bevor die veralteten JWT-Anmeldeinformationen im Juni 2025 ablaufen.
 
 ## Automatisch generierte Projekte {#autogen-projects}
 
