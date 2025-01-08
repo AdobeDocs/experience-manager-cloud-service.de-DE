@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 100%
+source-wordcount: '1169'
+ht-degree: 79%
 
 ---
 
@@ -29,21 +29,23 @@ Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfiguri
 
 ## Code-Qualitätsregeln {#understanding-code-quality-rules}
 
-Beim Testen der Code-Qualität wird der Quell-Code gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Dies ist durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices aus dem AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) bezeichnet.
+Beim Testen der Code-Qualität wird der Quell-Code gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mit OakPAL implementiert diesen Schritt. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices aus dem AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) bezeichnet.
 
->[!NOTE]
+Sie können die aktuelle vollständige Liste von Regeln (über [ Link) ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+
+>[!IMPORTANT]
 >
->Sie können die vollständige Liste von Regeln [über diesen Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen.
+>Ab Donnerstag, 13. Februar 2025 (Cloud Manager 2025.2.0), verwendet Cloud Manager Code Quality eine aktualisierte Version SonarQube 9.9 und eine aktualisierte Liste von Regeln, die Sie [ können (hier herunterladen](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Dreistufige Bewertungen {#three-tiered-gate}
 
 Probleme, die durch das Testen der Code-Qualität erkannt werden, werden einer von drei Kategorien zugewiesen.
 
-* **Kritisch**: Hierbei handelt es sich um vom Test identifizierte Probleme, die zu einem sofortigen Pipeline-Fehler führen.
+* **Kritisch**: Probleme, die zu einem sofortigen Pipeline-Fehler führen.
 
-* **Wichtig**: Hierbei handelt es sich um Probleme, durch die die Pipeline angehalten wird. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
+* **Wichtig**: Probleme, durch die die Pipeline angehalten wird. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können die Probleme außer Kraft setzen, sodass die Pipeline fortgesetzt werden kann. Alternativ können sie die Probleme akzeptieren, wodurch die Pipeline mit einem Fehler angehalten wird. 
 
-* **Info**: Hierbei handelt es sich um Probleme, die ausschließlich zu Informationszwecken bereitgestellt werden und keine Auswirkungen auf die Pipeline-Ausführung haben
+* **Info**: Probleme, die ausschließlich zu Informationszwecken bereitgestellt werden und keine Auswirkungen auf die Pipeline-Ausführung haben
 
 >[!NOTE]
 >
@@ -51,7 +53,7 @@ Probleme, die durch das Testen der Code-Qualität erkannt werden, werden einer v
 
 ### Bewertungen {#ratings}
 
-Die Ergebnisse dieses Schritts werden als **Bewertung** bereitgestellt.
+Die Ergebnisse dieses Schritts werden als &quot;**&quot;**.
 
 In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die einzelnen Kategorien „Kritisch“, „Wichtig“ und „Information“ zusammengefasst.
 
@@ -68,7 +70,7 @@ In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die 
 
 >[!NOTE]
 >
->Genauere Definitionen finden Sie unter [Metrikdefinitionen von SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/).
+>Genauere Definitionen finden Sie unter [Metrikdefinitionen von SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
 
 >[!NOTE]
 >
@@ -76,7 +78,7 @@ In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die 
 
 ## Umgang mit falsch positiven Treffern {#dealing-with-false-positives}
 
-Das Verfahren zur Qualitätsprüfung ist nicht perfekt. Mitunter werden fälschlicherweise Probleme identifiziert, die eigentlich nicht problematisch sind. Dies wird als **falsch positiv** bezeichnet.
+Der Prozess zur Qualitätsprüfung ist nicht perfekt und kennzeichnet manchmal fälschlicherweise Probleme, die eigentlich keine Probleme sind. Dieser Status wird als „falsch **&quot;**.
 
 In diesen Fällen kann der Quell-Code mit der standardmäßigen `@SuppressWarnings`-Java-Anmerkung kommentiert werden. Dabei wird die Regel-ID als Anmerkungsattribut angegeben. Ein häufiges Problem besteht etwa darin, dass die SonarQube-Regel zur Erkennung hartcodierter Kennwörter in Bezug auf die Identifizierung eines hartcodierten Kennworts „aggressiv“ sein kann.
 
@@ -87,7 +89,7 @@ Der folgende Code ist in einem AEM-Projekt, das eine Verbindung zu einem externe
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube weist dann auf eine Schwachstelle der Kategorie „Blocker“ hin. Nach Prüfung des Codes erkennen Sie, dass es sich nicht um eine Schwachstelle handelt, und kommentieren dies mit der entsprechenden Regel-ID.
+SonarQube weist auf eine Schwachstelle der Kategorie „Blocker“ hin. Nach Prüfung des Codes erkennen Sie jedoch, dass es sich bei diesem Problem nicht um eine Schwachstelle handelt, und kommentieren dies mit der entsprechenden Regel-ID.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -95,7 +97,7 @@ SonarQube weist dann auf eine Schwachstelle der Kategorie „Blocker“ hin. Nac
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-Wenn der Code allerdings tatsächlich so lautete:
+Wenn der Code allerdings tatsächlich wie folgt lautete:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -106,14 +108,14 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 
 >[!NOTE]
 >
->Obwohl es sich als Best Practice erweist, die `@SuppressWarnings`-Anmerkung so spezifisch wie möglich zu gestalten, d. h. nur die spezifische Anweisung oder den Block, der das Problem verursacht, zu kommentieren, ist es möglich, auf Klassenebene zu kommentieren.
+>Es empfiehlt sich zwar, die `@SuppressWarnings` Anmerkung so spezifisch wie möglich zu gestalten, z. B. nur die Anweisung oder den Block zu kommentieren, der das Problem verursacht, aber es ist auch möglich, auf Klassenebene Anmerkungen zu machen.
 
 >[!NOTE]
 >Es gibt zwar keinen expliziten Schritt für Sicherheitstests, aber beim Schritt der Code-Qualität werden sicherheitsbezogene Regeln für die Code-Qualität evaluiert. Weitere Informationen zur Sicherheit in Cloud Service finden Sie in der [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Optimierung der Inhaltspaketüberprüfung {#content-package-scanning-optimization}
 
-Im Rahmen des Qualitätsanalyseprozesses führt Cloud Manager eine Analyse der vom Maven-Build erzeugten Inhaltspakete durch. Cloud Manager bietet Optimierungen zur Beschleunigung dieses Prozesses an, die wirksam sind, wenn bestimmte Verpackungseinschränkungen beachtet werden. Am wichtigsten ist die Optimierung, die für Projekte durchgeführt wird, die ein einzelnes Inhaltspaket ausgeben, das im Allgemeinen als „all“-Paket bezeichnet wird und eine Reihe andere Inhaltspakete enthält, die durch den Build erzeugt und als übersprungen markiert wurden. Wenn Cloud Manager dieses Szenario erkennt, wird nicht das gesamte Paket entpackt, sondern die einzelnen Inhaltspakete werden direkt gescannt und auf der Grundlage von Abhängigkeiten sortiert. Betrachten Sie zum Beispiel die folgende Build-Ausgabe.
+Im Rahmen des Qualitätsanalyseprozesses führt Cloud Manager eine Analyse der vom Maven-Build erzeugten Inhaltspakete durch. Cloud Manager bietet Optimierungen zur Beschleunigung dieses Prozesses an, der wirksam ist, wenn bestimmte Verpackungseinschränkungen beachtet werden. Die wichtigste Optimierung betrifft Projekte, die ein einzelnes „all“-Paket erzeugen, das mehrere Inhaltspakete aus dem Build enthält, die als übersprungen markiert sind. Wenn Cloud Manager dieses Szenario erkennt, wird nicht das gesamte Paket entpackt, sondern die einzelnen Inhaltspakete werden direkt gescannt und auf der Grundlage von Abhängigkeiten sortiert. Betrachten Sie zum Beispiel die folgende Build-Ausgabe.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (Inhaltspaket)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (übersprungenes Inhaltspaket)
@@ -128,4 +130,4 @@ Ein Sonderfall kann eintreten, wenn das Inhaltspaket „all“ eine Kombination 
 >[!NOTE]
 >
 >* Diese Optimierung hat keine Auswirkungen auf die Pakete, die in AEM bereitgestellt werden.
->* Da der Abgleich zwischen den eingebetteten Inhaltspaketen und den übersprungenen Inhaltspaketen auf Dateinamen basiert, kann diese Optimierung nicht durchgeführt werden, wenn mehrere übersprungene Inhaltspakete genau denselben Dateinamen haben oder wenn der Dateiname während des Einbettens geändert wird.
+>* Der Abgleich zwischen eingebetteten Inhaltspaketen und übersprungenen Inhaltspaketen basiert auf Dateinamen. Diese Optimierung kann nicht erfolgen, wenn mehrere übersprungene Pakete denselben Dateinamen verwenden oder wenn sich der Dateiname während des Einbettens ändert.
