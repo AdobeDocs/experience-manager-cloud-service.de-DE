@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Bausteine erstellen, die für den universelle
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: ht
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 ![Klonen des Projekts](assets/create-block/clone.png)
 
-2\. Bearbeiten Sie die Datei `component-definition.json` im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
+2\. Bearbeiten Sie die [`component-definition.json`-Datei ](/help/implementing/universal-editor/component-definition.md) Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-4\. Bearbeiten Sie die Datei `component-filters.json` im Stammverzeichnis des Projekts, fügen Sie den Zitatblock zur [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt werden kann, und speichern Sie die Datei.
+4\. Bearbeiten Sie die [`component-filters.json`-Datei ](/help/implementing/universal-editor/customizing.md#filtering-components) Stammverzeichnis des Projekts und fügen Sie den Zitatblock zur [Filterdefinition](/help/implementing/universal-editor/customizing.md#filtering-components) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt und die Datei gespeichert werden kann.
 
 >[!BEGINTABS]
 

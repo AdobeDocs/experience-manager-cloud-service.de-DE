@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1378'
+ht-degree: 99%
 
 ---
 
@@ -123,9 +123,12 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 ### Hinzufügen von Komponenten zu Containern {#adding-components}
 
 1. Wählen Sie eine Container-Komponente in der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
-1. Wählen Sie dann das Symbol „Hinzufügen“ im Bedienfeld „Eigenschaften“ aus.
 
    ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-add-component.png)
+
+1. Wählen Sie dann das Symbol „Hinzufügen“ im Bedienfeld „Eigenschaften“ aus.
+
+   ![Symbol hinzufügen auswählen](assets/add-icon.png)
 
 Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet werden.
 
