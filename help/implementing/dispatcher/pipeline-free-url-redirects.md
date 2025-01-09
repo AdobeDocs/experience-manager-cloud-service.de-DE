@@ -7,7 +7,7 @@ exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
 source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -25,20 +25,20 @@ AEM as a Cloud Service bietet [mehrere Ansätze](https://experienceleague.adobe.
 
 * Bei den Personen, die für die Umleitungen zuständig sind, handelt es sich um Business-Anwendende, denen die erforderlichen Zugriffsrechte zum Übertragen von Dateiänderungen an die Quell-Code-Verwaltung fehlen oder die nicht die Möglichkeit haben, eine Cloud Manager-Konfigurations-Pipeline auf Web-Ebene auszuführen.
 * Der Umfang reicht von wenigen bis hin zu Zehntausenden von Umleitungen.
-* Sie möchten die Option einer Benutzeroberfläche, entweder erstellt als benutzerdefiniertes Projekt oder mithilfe des [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) oder [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
+* Am besten geeignet ist die Option einer Benutzeroberfläche, die entweder als benutzerdefiniertes Projekt oder mit [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) oder [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) erstellt wird.
 
 Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, eine oder mehrere Rewrite Map-Dateien zu laden (oder neu zu laden), die an einem bestimmten Speicherort im Publish-Repository abgelegt wurden (sodass sie von AEM Publish heruntergeladen werden können). Hierbei ist darauf hinzuweisen, dass die Art und Weise, wie die Dateien dorthin gelangen, außerhalb des Anwendungsbereichs dieser Funktion liegt. Sie können jedoch eine der folgenden Methoden in Betracht ziehen:
 
 * Aufnehmen der Rewrite-Zuordnung als Asset in der Autorenbenutzeroberfläche mit anschließender Veröffentlichung.
 * Installation des [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([mindestens Version 6.7.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), der eine Benutzeroberfläche zum Verwalten der URL-Zuordnungen enthält und auch die Rewrite-Zuordnungsdatei veröffentlichen kann.
-* Installieren des [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) ([mindestens 6.10.0 Version oder höher](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), der auch eine Benutzeroberfläche zum Verwalten der URL-Zuordnungen enthält und auch die Rewrite-Zuordnungsdatei veröffentlichen kann.
+* Installieren von [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) ([mindestens Version 6.10.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), wobei eine Benutzeroberfläche zum Verwalten der URL-Zuordnungen enthalten ist und außerdem die Rewrite-Zuordnungsdatei veröffentlicht werden kann.
 * Volle Flexibilität durch Schreiben einer benutzerdefinierten Anwendung. Beispiel: eine Benutzeroberfläche oder Befehlszeilenschnittstelle zum Verwalten der URL-Zuordnungen oder alternativ ein Formular zum Hochladen einer Rewrite-Zuordnung, die dann AEM-APIs verwendet, um die Rewrite-Zuordnungsdatei zu veröffentlichen.
 
 >[!NOTE]
 > Für diese Funktion ist die AEM-Version **18311 oder höher** erforderlich.
 
 >[!NOTE]
-> Die Verwendung des Redirect Map Managers durch diese Funktion erfordert ACS Commons Version **6.7.0 oder höher** während die Verwendung des Redirect Managers Version **6.10.0 oder höher erfordert**.
+> Die Verwendung von Redirect Map Manager durch diese Funktion erfordert ACS Commons Version **6.7.0 oder höher**, während die Verwendung von Redirect Manager Version **6.10.0 oder höher** erfordert.
 
 ## Die Rewrite-Zuordnung {#rewrite-map}
 
