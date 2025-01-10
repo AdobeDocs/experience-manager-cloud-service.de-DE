@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 100%
+source-wordcount: '1812'
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ Führen Sie diese Schritte aus, um die Benutzenden Ihres New Relic One-Unterkont
 
    * Sie können auch auf die Option **Benutzer verwalten** zugreifen. Klicken Sie oben auf dem Bildschirm **Umgebungen** Ihres Programms auf das Symbol ![Smock more](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
-1. Geben Sie im Dialogfeld **New Relic-Benutzer verwalten** den Vor- und Nachnamen der Person ein, die Sie hinzufügen möchten, und klicken Sie auf die Schaltfläche **Hinzufügen**. Wiederholen Sie diesen Schritt für alle Benutzenden, die Sie hinzufügen möchten.
+1. Geben **im Dialogfeld New Relic-Benutzer verwalten** den Vor- und Nachnamen der Person ein, die Sie hinzufügen möchten, und klicken Sie auf die Schaltfläche **Hinzufügen**. Wiederholen Sie diesen Schritt für alle Benutzenden, die Sie hinzufügen möchten.
 
    ![Hinzufügen von Benutzenden](assets/newrelic-add-users.png)
 
@@ -174,7 +174,7 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu New Relic One:
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Eingeschränkt** auf. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
+* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Eingeschränkt** auf. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
@@ -193,15 +193,15 @@ Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für I
 
 Ihr New Relic One-Konto ist mit einem primären, von Adobe bereitgestellten Konto verknüpft und erhält Daten von mehreren Programmen: je drei Programmen pro Umgebung in AEM as a Cloud Service.
 
-* Eine Anwendung pro Umgebung für den Autoren-Service
-* Eine Anwendung pro Umgebung für den Veröffentlichungs-Service (einschließlich „Golden Publish“)
-* Eine Anwendung pro Umgebung für den Vorschau-Service
+* Ein Programm für den Autoren-Service pro Umgebung
+* Eine Anwendung pro Umgebung für den `Publish`-Service (einschließlich Golden Publish)
+* Ein Programm für den Vorschau-Service pro Umgebung
 
 Hinweis:
 
 * Pro Anwendung wird ein Lizenzschlüssel verwendet.
 * Umgebungen in AEM as a Cloud Service senden Berichte nur an ein einziges New Relic One-Konto.
-* Vollständige Überwachungsmetriken und Ereignisse für New Relic One werden sieben Tage lang gespeichert.
+* Vollständige Überwachungsmetriken und -ereignisse für beide New Relic One werden drei Monate lang aufbewahrt. &lt;!— CQDOC-22238 - Aktualisierung von sieben Tagen auf drei Monate. >
 +++
 
 +++**Sendet Adobe Warnhinweise über New Relic One?** {#alerting-new-relic}
