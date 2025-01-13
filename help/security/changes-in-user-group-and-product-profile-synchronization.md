@@ -6,7 +6,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
+source-git-commit: 605a8032430b1be4aacebfcf73cfc16ba7691349
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Wenn sich ein Benutzer bei AEM as a Cloud Service anmeldet oder ein Zugriffstoken verwendet wird, werden Adobe Admin Console-Benutzergruppen, Produktprofile und Produktprofildienste als Gruppen im AEM-Repository synchronisiert.
 
-Am 28. Januar werden einige Änderungen am Synchronisierungsverhalten vorgenommen, sodass weniger Gruppen in AEM angezeigt werden, um die Benutzeroberfläche übersichtlicher zu gestalten und die Leistung zu optimieren. Zwei Kategorien von AEM-Gruppen werden entfernt:
+Am 27. Januar werden einige Änderungen am Synchronisierungsverhalten vorgenommen, sodass weniger Gruppen in AEM angezeigt werden, um die Benutzeroberfläche übersichtlicher zu gestalten und die Leistung zu optimieren. Zwei Kategorien von AEM-Gruppen werden entfernt:
 
 1. AEM-Gruppen mit dem Suffix `GROUP_NAME_SUFFIX`. Diese Gruppen werden nicht in der Adobe Developer Console, sondern wie unten dargestellt im AEM-Gruppenverwaltungs-Bildschirm angezeigt. Falls Ihre AEM-Anwendung nicht auf diese Gruppen verweist, verweisen Sie stattdessen auf Adobe Admin Console-Benutzergruppen ohne dieses Suffix.
 
