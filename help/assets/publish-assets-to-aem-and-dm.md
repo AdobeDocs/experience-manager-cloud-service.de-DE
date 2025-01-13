@@ -4,10 +4,10 @@ description: Mit „Quick Publish“ in der Assets-Ansicht können Sie Assets gl
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 100%
+source-wordcount: '1212'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Die Experience Manager Assets-Ansicht bietet die Flexibilität, Assets in AEM od
 
 Konfigurieren Sie diese Einstellungen, um die Veröffentlichungsoptionen für AEM und Dynamic Media anzuzeigen:
 
-* Um die Veröffentlichungsoptionen für Dynamic Media anzuzeigen, konfigurieren Sie die folgenden Einstellungen mithilfe der Admin-Ansicht:
+* Um die Veröffentlichungsoptionen für Dynamic Media anzuzeigen, konfigurieren Sie die folgenden Einstellungen in der Admin-Ansicht:
 
    * [Erstellen Sie eine Dynamic Media-Cloud-Konfiguration](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
    * Legen Sie auf der Ordnerebene den Dynamic Media-Veröffentlichungsmodus fest. Sie können diese Einstellungen auch beim Erstellen der Dynamic Media-Cloud-Konfiguration einrichten. Informationen zum Überschreiben dieser Einstellungen auf Ordnerebene finden Sie unter [Konfigurieren einer selektiven Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
@@ -33,7 +33,7 @@ Konfigurieren Sie diese Einstellungen, um die Veröffentlichungsoptionen für AE
 
 ## Veröffentlichen von Assets beim Hochladen {#piblish-assets-during-upload}
 
-Sie können Assets beim Hochladen von Assets in einen Ordner in AEM und Dynamic Media veröffentlichen. Die angezeigten Veröffentlichungsoptionen hängen vom Dynamic Media-Veröffentlichungsmodus ab, der für den Upload-Ordner der Assets festgelegt ist. Der Dynamic Media-Veröffentlichungsmodus kann wie folgt eingestellt werden:
+Sie können Assets beim Hochladen von Assets in einen Ordner in AEM und Dynamic Media veröffentlichen. Die angezeigten Veröffentlichungsoptionen hängen von den Dynamic Media-Veröffentlichungsmoduseinstellungen des Ordners ab, in den die Assets hochgeladen werden. Der Dynamic Media-Veröffentlichungsmodus kann wie folgt eingestellt werden:
 
 * **Bei Aktivierung:** Wenn Assets in diesen Ordner hochgeladen werden, müssen Sie das Asset zuerst explizit veröffentlichen, bevor eine URL/ein Einbettungs-Link bereitgestellt wird.
 
@@ -42,7 +42,7 @@ Sie können Assets beim Hochladen von Assets in einen Ordner in AEM und Dynamic 
 
 ### Dynamic Media-Veröffentlichungsmodus mit der Einstellung „Bei Aktivierung“ {#dynamic-media-publish-mode-set-to-upon-activation}
 
-So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dynamic Media-Veröffentlichungsmodus auf **Bei Aktivierung** eingestellt ist:
+So veröffentlichen Sie Assets beim Hochladen in einen Ordner, dessen Dynamic Media Publish-Modus auf **Bei Aktivierung**:
 
 1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Veröffentlichungsoptionen** wird als **DM-Veröffentlichungsmodus** die Einstellung **Bei Aktivierung** angezeigt.
    ![Hochladen bei Aktivierung](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dyna
 
 ### Dynamic Media-Veröffentlichungsmodus mit der Einstellung „Unmittelbar“ {#dynamic-media-publish-mode-set-to-immediate}
 
-So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dynamic Media-Veröffentlichungsmodus auf **Unmittelbar** eingestellt ist:
+So veröffentlichen Sie Assets, während Sie sie in einen Ordner hochladen, dessen Dynamic Media Publish-Modus auf **Sofort“**:
 
-1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt „Veröffentlichungsoptionen“ wird als **DM-Veröffentlichungsmodus** die Einstellung **Unmittelbar** angezeigt.
+1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Publish** Optionen wird der **DM Publish Mode** als &quot;**&quot;**.
    ![Datei-Upload – Modus „Unmittelbar“](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Da der Dynamic Media-Veröffentlichungsmodus **Unmittelbar** lautet, werden die hochgeladenen Assets automatisch in Dynamic Media veröffentlicht, wenn Sie auf **Hochladen** klicken.
 
-2. Wählen Sie **In AEM veröffentlichen** aus, um die hochgeladenen Assets in AEM zu veröffentlichen, und klicken Sie auf „Hochladen“.
+2. Wählen Sie **Publish in AEM** aus, um die hochgeladenen Assets in AEM zu veröffentlichen, und klicken Sie auf Hochladen.
 
    Wenn Sie **In AEM veröffentlichen** auswählen, werden die Assets in AEM und Dynamic Media veröffentlicht, andernfalls nur in Dynamic Media.
 
@@ -68,7 +68,7 @@ So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dyna
 
 So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dynamic Media-Veröffentlichungsmodus auf **Selektive Veröffentlichung** eingestellt ist:
 
-1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt „Veröffentlichungsoptionen“ wird für **DM-Veröffentlichungsmodus** die Einstellung **Selektive Veröffentlichung** angezeigt.
+1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Publish** Optionen wird der **DM Publish-Modus** als **Selektive Publish** angezeigt.
    ![Upload – Modus „Selektive Veröffentlichung“](/help/assets/assets/upload-selective.svg)
 
 2. Wählen Sie abhängig von Ihren Anforderungen **In AEM veröffentlichen**, **In Dynamic Media veröffentlichen** oder beide Optionen aus und klicken Sie auf **Hochladen**.
