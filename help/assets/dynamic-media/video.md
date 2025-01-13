@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10564'
-ht-degree: 96%
+source-wordcount: '10560'
+ht-degree: 97%
 
 ---
 
@@ -31,8 +31,8 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
    * Erstellen Sie Ihr eigenes Videokodierungsprofil. Sie können auch einfach das in Dynamic Media bereits integrierte vordefinierte Profil _Adaptive Videokodierung_ verwenden.
 
-      * [Erstellen eines Videocodierungsprofils](/help/assets/dynamic-media/video-profiles.
-      * Die maximale Auflösung der Videokodierung beträgt 8.192 × 4.320 oder 4.320 × 8.192.md#creating-a-video-coding-profile-for-adaptive-streaming).
+      * [Erstellen eines Videokodierungsprofils](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * Die maximale Auflösung der Videoausgabe beträgt 8.192 × 4.320 oder 4.320 × 8.192.md.
       * Erfahren Sie mehr über die [Best Practices für Videokodierung](#best-practices-for-encoding-videos).
 
    * Verknüpfen Sie das Videoverarbeitungsprofil mit den Ordnern, in die Sie die Primärvideos hochladen.
