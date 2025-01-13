@@ -1,17 +1,17 @@
 ---
-title: Reagiert auf Staging- und Produktionsumgebungen
+title: Staging- und Produktionsumgebungen ohne Repo
 description: Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reaktionsfreie Weise separate Sites für Ihre Staging- und Produktionsumgebungen einrichten.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 6fa2ee9f1dbfbd18720d822857a24c3b1256d621
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Reagiert auf Staging- und Produktionsumgebungen {#repoless-stage-prod}
+# Staging- und Produktionsumgebungen ohne Repo {#repoless-stage-prod}
 
 Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reaktionsfreie Weise separate Sites für Ihre Staging- und Produktionsumgebungen einrichten.
 
@@ -73,7 +73,7 @@ Es gibt zwei Schritte zum Konfigurieren einer separaten Produktions-Site.
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

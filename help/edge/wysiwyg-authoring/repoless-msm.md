@@ -1,17 +1,17 @@
 ---
-title: Reaktionsloses Multi-Site-Management
+title: Multi-Site-Management ohne Repo
 description: Erfahren Sie mehr über Best Practices zum reaktionsschnellen Einrichten eines Projekts mit lokalisierten Sites, die eine einzige Code-Basis nutzen, die jeweils von Edge Delivery Services bereitgestellt wird.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 6fa2ee9f1dbfbd18720d822857a24c3b1256d621
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Reaktionsloses Multi-Site-Management {#repoless-msm}
+# Multi-Site-Management ohne Repo {#repoless-msm}
 
 Erfahren Sie mehr über Best Practices zum reaktionsschnellen Einrichten eines Projekts mit lokalisierten Sites, die eine einzige Code-Basis nutzen, die jeweils von Edge Delivery Services bereitgestellt wird.
 
@@ -140,7 +140,7 @@ In diesem Beispiel erstellen wir die `wknd-ch` für die schweizerische Präsenz 
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
