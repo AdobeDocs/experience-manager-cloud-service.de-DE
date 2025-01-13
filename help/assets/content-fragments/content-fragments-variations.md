@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 100%
+source-wordcount: '2518'
+ht-degree: 99%
 
 ---
 
@@ -316,6 +316,10 @@ So fügen Sie eine Anmerkung zu einem Fragment hinzu:
 1. Schließen Sie den Vollbild-Editor. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
    ![Anmerken](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>Die Funktion Anmerkungen zeigt keine Kommentare an, die im neuen [Inhaltsfragment-Editor“ eingegeben ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 ### Anzeigen, Bearbeiten und Löschen von Anmerkungen {#viewing-editing-deleting-annotations}
 

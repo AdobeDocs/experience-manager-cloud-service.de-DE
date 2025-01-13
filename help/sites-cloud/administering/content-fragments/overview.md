@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 100%
+source-wordcount: '1857'
+ht-degree: 97%
 
 ---
 
 # Ein Überblick über das Arbeiten mit Inhaltsfragmenten {#overview-working-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>Verschiedene Funktionen der Inhaltsfragmente und Inhaltsfragmentmodelle sind über das Early-Adopter-Programm verfügbar.
+>
+>Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen es Ihnen, Inhalte so vorzubereiten, dass sie an mehreren Orten und über mehrere Kanäle verwendet werden können, ideal für die [Headless-Bereitstellung](/help/headless/what-is-headless.md) und die [Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -91,8 +97,11 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
 
-* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md): Um auf Ihre Fragmente zuzugreifen, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen
-* [Verwenden des Inhaltsfragmenteditors](/help/sites-cloud/administering/content-fragments/authoring.md): Um Ihre Fragmente zu bearbeiten, sie zu veröffentlichen (als Vorschau oder in der Produktion) und auf sie zu verweisen
+* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md) - zum:
+   * Zugreifen auf, Veröffentlichen (zur Vorschau oder Produktion) und Referenzieren Ihrer Fragmente
+* [Verwenden des Inhaltsfragment-Editors](/help/sites-cloud/administering/content-fragments/authoring.md) - zum:
+   * Bearbeiten, Veröffentlichen (zur Vorschau oder Produktion) und Referenzieren Ihrer Fragmente
+   * mit anderen Autoren über Kommentare zusammenarbeiten
 * [Analysieren](/help/sites-cloud/administering/content-fragments/analysis.md) der Struktur Ihres Inhaltsfragments mithilfe des Editors
 * [Zugreifen auf Ihre Fragmente mit GraphQL, für eine Headless-Bereitstellung an Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Oder Verwenden Ihrer Fragmente für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md)

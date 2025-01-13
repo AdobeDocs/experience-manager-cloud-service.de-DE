@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 100%
+source-wordcount: '2841'
+ht-degree: 95%
 
 ---
 
 # Erstellen von Inhaltsfragmenten {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>Verschiedene Funktionen des Inhaltsfragment-Editors sind über das Early-Adopter-Programm verfügbar.
+>
+>Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Die Erstellung von Inhaltsfragmenten konzentriert sich sowohl auf die Headless-Bereitstellung als auch auf die Seitenbearbeitung.
 
@@ -58,6 +64,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
    * diese Links können verwendet werden, um [in der Inhaltsfragmentstruktur zu navigieren](#navigate-structure)
 * rechter Bereich: enthält Registerkarten [mit den Eigenschaften (Metadaten) und Tags](#view-properties-tags), Informationen über den [Versionsverlauf](#view-version-history) sowie Informationen zu [Sprachkopien](#view-language-copies)
    * auf der Registerkarte **Eigenschaften** können Sie den **Titel** und die **Beschreibung** für das Fragment oder die **Variante** aktualisieren
+   * Auf der **Kommentare** können Sie Kommentare hinzufügen und lesen, um die Zusammenarbeit mit anderen Autoren zu erleichtern
 * zentraler Bereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
    * ermöglicht das Bearbeiten des Inhalts
       * wenn im Modell (als mehrfach) konfiguriert, ermöglichen verschiedene Datentypen das **Hinzufügen** von Instanzen des relevanten Feldes.
@@ -466,6 +473,25 @@ Zum Beispiel:
 >
 >Weitere Informationen zum Übersetzen eines Inhaltsfragments und Erstellen von Sprachkopien finden Sie unter [AEM Headless-Übersetzungs-Journey](/help/journey-headless/translation/overview.md).
 
+## Kommentieren von Fragmenten {#commenting-on-your-fragment}
+
+Die **Kommentare** im rechten Bedienfeld bietet die folgenden Funktionen:
+
+* Neuen Kommentar hinzufügen
+* Tagging bestimmter Benutzer in einem Kommentar
+   * Sie erhalten eine Benachrichtigung mit einem Link zum direkten Öffnen des Fragments
+* Wie ein vorhandener Kommentar
+* Auf einen Kommentar antworten
+* Kommentare formatieren; grundlegende Formatierung ist verfügbar
+* Durchführen einer Textsuche durch vorhandene Kommentare
+* Bearbeiten eines vorhandenen Kommentars
+* Kommentare löschen
+
+![Inhaltsfragment-Editor - Registerkarte „Kommentare“](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>Diese Kommentare sind weder als [Anmerkungen im Original-Editor](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) noch in der [Zeitleiste der Assets-Konsole](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) sichtbar.
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 

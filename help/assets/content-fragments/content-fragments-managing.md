@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 100%
+source-wordcount: '1907'
+ht-degree: 99%
 
 ---
 
@@ -313,6 +313,7 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 >* Im Fragmenteditor eingegeben worden
 >* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
+>Die im neuen Inhaltsfragment[Editor eingegebenen Kommentare werden ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment) angezeigt.
 
 Zum Beispiel:
 
