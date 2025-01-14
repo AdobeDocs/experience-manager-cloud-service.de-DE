@@ -4,7 +4,7 @@ description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zu
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 100%
@@ -20,6 +20,8 @@ Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SP
 >[!NOTE]
 >
 >Dieser Artikel basiert auf dem Angular-Framework. Das entsprechende Dokument für das React-Framework finden Sie unter [Erste Schritte mit SPAs in AEM – React](getting-started-react.md).
+
+{{ue-over-spa}}
 
 ## Einführung {#introduction}
 

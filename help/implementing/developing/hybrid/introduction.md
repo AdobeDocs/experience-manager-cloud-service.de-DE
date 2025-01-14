@@ -4,7 +4,7 @@ description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 100%
@@ -16,6 +16,8 @@ ht-degree: 100%
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwicklungspersonen möchten Sites mit SPA-Frameworks erstellen und Autorinnen bzw. Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
 Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. In diesem Artikel wird die Verwendung einer einfachen SPA zur Inhaltserstellung erläutert und gezeigt, wie sie mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
+
+{{ue-over-spa}}
 
 ## Einführung {#introduction}
 

@@ -5,9 +5,9 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1250'
 ht-degree: 100%
 
 ---
@@ -127,7 +127,6 @@ Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige de
 * [SPA-Einführung und exemplarische Anleitung](/help/implementing/developing/hybrid/introduction.md): Eine gute Einführung in SPA in AEM.
 * [Entwickeln von SPAs für AEM](/help/implementing/developing/hybrid/developing.md) – Orientierungshilfe für die Entwicklung von SPAs für AEM
 * [SPA-Editor – Überblick](/help/implementing/developing/hybrid/editor-overview.md) – Details zur Funktionsweise des SPA-Editors
-* [Server-seitiges Rendern](/help/implementing/developing/hybrid/ssr.md): So konfigurieren Sie SSR für AEM-SPAs
 * [SPA-Referenzdokumente](/help/implementing/developing/hybrid/reference-materials.md): JavaScript-API-Referenzen und Links zu den Open-Source-AEM-SPA-GitHub-Projekten
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) –Anleitung zur Erstellung von Inhaltsfragmenten
 * Der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) ist eine Maven-Vorlage, anhand derer ein minimales, auf Best Practices basierendes Adobe Experience Manager (AEM)-Projekt als Ausgangspunkt für Ihre Website erstellt wird.

@@ -4,7 +4,7 @@ description: In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer un
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # SPA-Seitenkomponente {#spa-page-component}
 
 Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten wird als JSON-Datenstruktur (d. h. das Modell) abgerufen. Die SPA-Komponenten werden dann gemäß dem angegebenen JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den im Vorab gerenderten HTML-Entsprechungen.
+
+{{ue-over-spa}}
 
 ## Seitenmodellverwaltung {#page-model-management}
 

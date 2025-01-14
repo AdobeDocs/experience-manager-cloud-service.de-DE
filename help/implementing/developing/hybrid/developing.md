@@ -4,7 +4,7 @@ description: Dieser Artikel enthält wichtige Fragen, die zu beachten sind, wenn
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 100%
@@ -16,6 +16,8 @@ ht-degree: 100%
 Single Page Applications (SPAs) können Nutzerinnen und Nutzern von Websites ein überzeugendes Erlebnis bieten. Entwicklungspersonen möchten Sites mit SPA-Frameworks erstellen und Autorinnen bzw. Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
 Dieser Artikel stellt wichtige Fragen vor, die bei der Beauftragung von Frontend-Entwicklungspersonen mit der Entwicklung einer SPA für AEM zu beachten sind, und gibt einen Überblick über die Architektur von AEM im Hinblick auf die Bereitstellung von SPAs auf AEM.
+
+{{ue-over-spa}}
 
 ## SPA-Entwicklungsgrundsätze für AEM {#spa-development-principles-for-aem}
 

@@ -4,7 +4,7 @@ description: Adobe Experience Platform Launch ist die empfohlene Methode zur Imp
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # SPA- und Adobe Experience Platform Launch-Integration {#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung von Analytics, Target und Audience Manager in Single Page Applications (SPAs).
+
+{{ue-over-spa}}
 
 ## Tutorial {#tutorial}
 

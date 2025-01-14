@@ -4,7 +4,7 @@ description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vert
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # SPA-Blueprint {#spa-blueprint}
 
 Damit der Autor den AEM-SPA-Editor zum Bearbeiten des Inhalts einer SPA verwenden kann, muss die SPA bestimmte Anforderungen erfüllen.
+
+{{ue-over-spa}}
 
 ## Einführung {#introduction}
 

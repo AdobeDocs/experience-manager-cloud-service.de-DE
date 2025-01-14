@@ -4,7 +4,7 @@ description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Edit
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 100%
@@ -16,6 +16,8 @@ ht-degree: 100%
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwicklungspersonen möchten Sites mit SPA-Frameworks erstellen und Autorinnen bzw. Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
 Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Auf dieser Seite erhalten Sie einen Überblick darüber, wie SPA-Support in AEM strukturiert ist, wie der SPA-Editor funktioniert und wie das SPA-Framework und AEM synchronisiert werden.
+
+{{ue-over-spa}}
 
 ## Einführung {#introduction}
 

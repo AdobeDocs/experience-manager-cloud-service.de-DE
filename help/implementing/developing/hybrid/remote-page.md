@@ -4,7 +4,7 @@ description: Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkompone
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # Die RemotePage-Komponente {#remote-page-component}
 
 Wenn Sie entscheiden, [welchen Grad der Integration](/help/implementing/developing/headful-headless.md) Sie zwischen Ihrer externen SPA und AEM haben möchten, wird oft klar, dass Sie die SPA in AEM anzeigen und bearbeiten können müssen. Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente genau für diesen Zweck.
+
+{{ue-over-spa}}
 
 ## Überblick {#overview}
 

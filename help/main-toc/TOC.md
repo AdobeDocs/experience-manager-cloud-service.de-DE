@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07539e1f0907b87d0b866a2cbcd534bb2c87692b
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '5957'
+source-wordcount: '5954'
 ht-degree: 99%
 
 ---
@@ -1214,6 +1214,7 @@ ht-degree: 99%
       + [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Anpassen von Site-Vorlagen und Designs](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md)
+      + [Deaktivieren der Serialisierung von ResourceResolvers über den Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + Full-Stack-AEM-Entwicklung {#full-stack}
          + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [Struktur der AEM-UI](/help/implementing/developing/introduction/ui-structure.md)
@@ -1277,12 +1278,10 @@ ht-degree: 99%
          + [Modell-Routing](/help/implementing/developing/hybrid/routing.md)
          + [Die RemotePage-Komponente](/help/implementing/developing/hybrid/remote-page.md)
          + [Bearbeiten einer externen SPA in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
-         + [Zusammengesetzte Komponenten in SPA](/help/implementing/developing/hybrid/composite-components.md)
-         + [Server-seitiges Rendering](/help/implementing/developing/hybrid/ssr.md)
+         + [Zusammengesetzte Komponenten in SPAs](/help/implementing/developing/hybrid/composite-components.md)
          + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
          + [Launch-Integration](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA-Referenzdokumente](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Deaktivieren der Serialisierung von ResourceResolvers über den Sling Model Exporter](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + Entwickler-Tools {#developer-tools}
       + [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
       + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)

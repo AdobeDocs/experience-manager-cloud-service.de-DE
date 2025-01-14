@@ -4,16 +4,18 @@ description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen ei
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 100%
+source-wordcount: '2370'
+ht-degree: 99%
 
 ---
 
 # Bearbeiten einer externen SPA in AEM {#editing-external-spa-within-aem}
 
 Bei der Entscheidung, [welchen Grad der Integration](/help/implementing/developing/headful-headless.md) Sie zwischen Ihrer externen SPA und AEM haben möchten, sollten Sie bedenken, dass Sie die SPA häufig in AEM anzeigen und bearbeiten können müssen.
+
+{{ue-over-spa}}
 
 ## Übersicht {#overview}
 
@@ -79,7 +81,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 
 * `path` – Bei der Initialisierung wird das Modell vom definierten Pfad abgerufen und im `ModelStore` gespeichert. Auf diese Weise können Sie bei Bedarf das `rootModel` bei der Initialisierung abrufen.
 * `modelClient` – Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
-* `model` – Ein `model`-Objekt, das als Parameter übergeben wird und typischerweise bei der [Verwendung von SSR](/help/implementing/developing/hybrid/ssr.md) gefüllt wird.
+* `model` : Ein `model`, das als Parameter übergeben wird und normalerweise bei der Verwendung von SSR ausgefüllt wird.
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
 
@@ -375,4 +377,3 @@ Das folgende Referenzmaterial kann hilfreich sein, um SPAs im Kontext der AEM zu
 * [SPA-Referenzmaterialien (API-Referenzen)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA-Blueprint und PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA-Modell-Routing](/help/implementing/developing/hybrid/routing.md)
-* [Single Page Applications (SPAs) und Server-seitiges Rendering](/help/implementing/developing/hybrid/ssr.md)

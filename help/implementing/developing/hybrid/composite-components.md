@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
@@ -18,6 +18,8 @@ Zusammengesetzte Komponenten nutzen den modularen Charakter von AEM-Komponenten,
 Wenn zusammengesetzte Komponenten ordnungsgemäß im Editor-Framework für AEM-Single-Page-Applications (SPA) implementiert sind, können die Inhaltsautorinnen und Inhaltsautoren solche Komponenten wie jede andere Komponente per Drag-and-Drop verschieben, sind jedoch nach wie vor in der Lage, jede Komponente, aus der die zusammengesetzte Komponente besteht, auch einzeln zu bearbeiten.
 
 In diesem Artikel wird gezeigt, wie Sie Ihrer Single Page Application eine zusammengesetzte Komponente hinzufügen können, um nahtlos mit dem AEM SPA Editor zu arbeiten.
+
+{{ue-over-spa}}
 
 ## Nutzungsszenario {#use-case}
 
