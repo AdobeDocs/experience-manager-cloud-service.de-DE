@@ -5,7 +5,7 @@ Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Mar
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 17%
@@ -36,16 +36,18 @@ Voraussetzung für die Verwendung von Marketo Engage-Datenquellen mit Formularen
 
 ## Konfigurieren eines vorhandenen adaptiven Formulars zum Marketo Engage einer Datenquelle
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 Um ein adaptives Formular mit der Marketo Engage-Datenquelle zu konfigurieren, führen Sie die folgenden Schritte aus:
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Autoreninstanz an. 
 
-1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Guide-Container]**.
-1. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren der Datenquelle wird geöffnet.
-1. Öffnen Sie die Registerkarte **[!UICONTROL Datenmodell]** und wählen Sie ein Formularmodell als **Connector** aus.
-1. Wählen Sie den **[!UICONTROL Connector]** aus der Dropdown-Liste aus.
+2. Öffnen Sie das adaptive Formular zum Bearbeiten.
+3. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Guide-Container]**.
+4. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren der Datenquelle wird geöffnet.
+5. Öffnen Sie die Registerkarte **[!UICONTROL Datenmodell]** und wählen Sie ein Formularmodell als **Connector** aus.
+6. Wählen Sie den **[!UICONTROL Connector]** aus der Dropdown-Liste aus.
 
-1. Nach Auswahl von **[!UICONTROL Connector]** können Sie die Cloud-Konfiguration auswählen.
+7. Nach Auswahl von **[!UICONTROL Connector]** können Sie die Cloud-Konfiguration auswählen.
 
    ![Marketo-Connector auswählen](/help/forms/assets/select-marketo-connector.png)
 
@@ -53,7 +55,7 @@ Um ein adaptives Formular mit der Marketo Engage-Datenquelle zu konfigurieren, f
 
    ![Marketo Data Source](/help/forms/assets/marketo-engage-data-source.png)
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+8. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 Alternativ können Sie auch die Eigenschaften des adaptiven Formulars bearbeiten, um die zugehörige Konfiguration zu ändern.
 

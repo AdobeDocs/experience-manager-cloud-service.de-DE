@@ -5,7 +5,7 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
-source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 7%
@@ -66,24 +66,26 @@ Im Folgenden finden Sie die Voraussetzungen für die Verbindung von Marketo Enga
 
 ![Arbeitsablauf](/help/forms/assets/workflow-marketo-1.png)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
+
 Die Cloud-Konfiguration verbindet Ihre Experience Manager-Instanz mit der Adobe Marketo Engage-Instanz. Führen Sie die folgenden Schritte aus, um eine Marketo Engage-Cloud-Konfiguration zu erstellen:
 
 1. Navigieren Sie **Tools** > **Cloud Service** > **Marketo Engage**.
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-1. Öffnen Sie einen Ordner zum Hosten der Konfiguration und klicken Sie auf **Erstellen**. Das Fenster **Marketo Engage-Konfiguration erstellen** wird angezeigt.
+2. Öffnen Sie einen Ordner zum Hosten der Konfiguration und klicken Sie auf **Erstellen**. Das Fenster **Marketo Engage-Konfiguration erstellen** wird angezeigt.
 
    >[!NOTE]
    >
    > Sie können auch [Ordner für Cloud Service-Konfigurationen konfigurieren](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations).
 
-1. Geben Sie den **Titel** der Konfiguration und die Anmeldeinformationen für die Verbindung mit dem Service an. Sie können die Authentifizierungsdaten über das Adobe Marketo Engage-Dashboard abrufen:
+3. Geben Sie den **Titel** der Konfiguration und die Anmeldeinformationen für die Verbindung mit dem Service an. Sie können die Authentifizierungsdaten über das Adobe Marketo Engage-Dashboard abrufen:
    * **Client-ID** und **Client-Geheimnis** sind unter **Admin** > **Integration** > **LaunchPoint** verfügbar, indem Sie den benutzerdefinierten Service auswählen und auf **Details anzeigen** klicken.
    * **Identitäts-URL** ist unter **Admin** > **Integration** > **Web-Services** **Identity** im Abschnitt **REST-API** verfügbar.
 
-1. Klicken Sie auf **Verbinden**.  Bei erfolgreicher Verbindung erscheint die Meldung `Authentication Successful`.
-1. Klicken Sie **[!UICONTROL Erstellen]**, um die Cloud-Konfigurationseinstellungen zu speichern.
+4. Klicken Sie auf **Verbinden**.  Bei erfolgreicher Verbindung erscheint die Meldung `Authentication Successful`.
+5. Klicken Sie **[!UICONTROL Erstellen]**, um die Cloud-Konfigurationseinstellungen zu speichern.
 
 ![Marketo Engage-Cloud-Konfiguration](/help/forms/assets/marketo-engage-cloud-configuration.png)
 

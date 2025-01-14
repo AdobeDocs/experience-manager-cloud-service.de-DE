@@ -5,7 +5,7 @@ Keywords: Submit data to Marketo engage, Configure submit action as Submit to Ma
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 20%
@@ -34,13 +34,15 @@ Voraussetzung für die Konfiguration der Übermittlungsaktion für Marketo Engag
 
 ## Konfigurieren der Übermittlungsaktion für bestehende Formulare für Marketo Engage
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 Sie können die Übermittlungsaktion eines adaptiven Formulars so konfigurieren, dass Daten an Adobe Marketo Engage gesendet werden. Gehen Sie wie folgt vor, um die Übermittlungsaktion für Marketo Engage zu konfigurieren:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Guide-Container]**.
-1. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren der Übermittlungsaktion wird geöffnet.
-1. Öffnen Sie die **[!UICONTROL Übermittlung]** und wählen Sie eine Sendeaktion als **An Marketo Engage senden** aus.
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+2. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Guide-Container]**.
+3. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren der Übermittlungsaktion wird geöffnet.
+4. Öffnen Sie die **[!UICONTROL Übermittlung]** und wählen Sie eine Sendeaktion als **An Marketo Engage senden** aus.
+5. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 ![Marketo-Übermittlungsaktion](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 

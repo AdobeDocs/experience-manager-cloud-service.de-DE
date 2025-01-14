@@ -5,7 +5,7 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 9%
@@ -35,6 +35,8 @@ Voraussetzung für das Verbinden von Marketo Engage mit Formularen:
 * Erstellen Sie die [Cloud-Service-Konfiguration, um Marketo Engage mit Forms zu integrieren](/help/forms/integrate-form-to-marketo-engage.md).
 
 ## Konfigurieren eines neuen adaptiven Formulars für die Integration mit Marketo Engage
+
+>[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
 Um ein neues adaptives Formular für die Integration mit Marketo Engage zu konfigurieren, führen Sie die folgenden Schritte aus:
 
