@@ -3,13 +3,13 @@ title: Komponentendefinition
 description: Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefinition und dem universellen Editor im Detail vertraut.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
 
 ---
-
 
 # Komponentendefinition {#component-definition}
 
@@ -79,7 +79,7 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
 * `title` definiert die textliche Beschreibung der Komponente, die in der Benutzeroberfläche angezeigt wird.
 * `id` identifiziert die Komponente eindeutig.
    * Das [Komponentenmodell](/help/implementing/universal-editor/field-types.md#model-structure) desselben `id` definiert die Felder der Komponente.
-   * Da es eindeutig ist, kann es z. B. in einer [Filterdefinition“ verwendet werden](/help/implementing/universal-editor/customizing.md#filtering-components) um zu bestimmen, welche Komponenten zu einem Container hinzugefügt werden können.
+   * Da es eindeutig ist, kann es z. B. in einer [Filterdefinition“ verwendet werden](/help/implementing/universal-editor/filtering.md) um zu bestimmen, welche Komponenten zu einem Container hinzugefügt werden können.
 
 ## `plugins` {#plugins}
 

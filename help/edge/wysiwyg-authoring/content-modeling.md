@@ -4,7 +4,7 @@ description: Erfahren Sie, wie die Inhaltsmodellierung für WYSIWYG-Authoring-Pr
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 99%
@@ -113,7 +113,7 @@ Für jeden Block gilt Folgendes:
    * Anhand des Blocknamens werden der richtige Stil und das richtige Skript zum Dekorieren des Blocks abgerufen.
 * Die Entwicklerin oder der Entwickler kann eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) definieren.
    * Die Modell-ID ist ein Verweis auf das Modell der Komponente, die die Felder definiert, die der Autorin bzw. dem Autor im Bedienfeld „Eigenschaften“ zur Verfügung stehen.
-* Die Entwicklerin oder der Entwickler kann eine [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) definieren.
+* Die Entwicklerin oder der Entwickler kann eine [Filter-ID](/help/implementing/universal-editor/filtering.md) definieren.
    * Die Filter-ID ist ein Verweis auf den Filter der Komponente, der es ermöglicht, das Authoring-Verhalten zu ändern, z. B. indem begrenzt wird, welche untergeordneten Elemente zum Block oder Abschnitt hinzugefügt werden können oder welche RTE-Funktionen aktiviert sind.
 
 Alle diese Informationen werden in AEM gespeichert, wenn ein Block zu einer Seite hinzugefügt wird. Wenn der Ressourcentyp oder der Blockname fehlt, wird der Block nicht auf der Seite gerendert.
@@ -245,7 +245,7 @@ Ein Beispiel hierfür sind die [Abschnittsmetadaten.](/help/edge/developer/marku
 
 Beide vorherigen Strukturen haben eine einzige Dimension: die Liste der Eigenschaften. Container-Blöcke ermöglichen das Hinzufügen von untergeordneten Elementen (normalerweise vom gleichen Typ oder Modell) und sind daher zweidimensional. Diese Blöcke unterstützen weiterhin ihre eigenen Eigenschaften, die zuerst als Zeilen mit einer Spalte gerendert werden. Sie ermöglichen jedoch auch das Hinzufügen von untergeordneten Elementen, für die jedes Element als Zeile und jede Eigenschaft als Spalte in dieser Zeile gerendert wird.
 
-Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als untergeordnete Elemente. Dabei verfügt jedes verknüpfte Symbol über ein Bild und einen Link. Achten Sie auf die in den Daten des Blocks festgelegte [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components). Darüber wird auf die Filterkonfiguration verwiesen.
+Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als untergeordnete Elemente. Dabei verfügt jedes verknüpfte Symbol über ein Bild und einen Link. Achten Sie auf die in den Daten des Blocks festgelegte [Filter-ID](/help/implementing/universal-editor/filtering.md). Darüber wird auf die Filterkonfiguration verwiesen.
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ Entwickelnde können verschiedene Abschnitte auf die gleiche Weise definieren, a
 
 Das Inhaltsmodell von Edge Delivery Services lässt absichtlich nur eine einzige Verschachtelungsebene zu, d. h. jeder Standard-Content oder -block, der in einem Abschnitt enthalten ist. Um komplexere visuelle Komponenten zu erhalten, die andere Komponenten enthalten können, müssen diese daher als Abschnitte modelliert und mithilfe der Client-seitigen automatischen Blockerstellung kombiniert werden. Typische Beispiele hierfür sind Registerkarten und ausblendbare Abschnitte wie Akkordeons.
 
-Ein Abschnitt kann auf die gleiche Weise wie ein Block definiert werden, jedoch mit dem Ressourcentyp `core/franklin/components/section/v1/section`. Abschnitte können einen Namen und eine [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) haben, die nur vom [universellen Editor](/help/implementing/universal-editor/introduction.md) verwendet wird, sowie eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure), die zum Rendern der Abschnittsmetadaten verwendet wird. Das Modell ist auf diese Weise das Modell des Bereichsmetadatenblocks, der automatisch als Schlüssel-Wert-Block an einen Abschnitt angehängt wird, wenn dieser nicht leer ist.
+Ein Abschnitt kann auf die gleiche Weise wie ein Block definiert werden, jedoch mit dem Ressourcentyp `core/franklin/components/section/v1/section`. Abschnitte können einen Namen und eine [Filter-ID](/help/implementing/universal-editor/filtering.md) haben, die nur vom [universellen Editor](/help/implementing/universal-editor/introduction.md) verwendet wird, sowie eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure), die zum Rendern der Abschnittsmetadaten verwendet wird. Das Modell ist auf diese Weise das Modell des Bereichsmetadatenblocks, der automatisch als Schlüssel-Wert-Block an einen Abschnitt angehängt wird, wenn dieser nicht leer ist.
 
-Die [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) und [Filter-ID](/help/implementing/universal-editor/customizing.md#filtering-components) des Standardabschnitts ist `section`. Sie kann verwendet werden, um das Verhalten des Standardabschnitts zu ändern. Im folgenden Beispiel werden dem Abschnittsmetadatenmodell einige Stile und ein Hintergrundbild hinzugefügt.
+Die [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) und [Filter-ID](/help/implementing/universal-editor/filtering.md) des Standardabschnitts ist `section`. Sie kann verwendet werden, um das Verhalten des Standardabschnitts zu ändern. Im folgenden Beispiel werden dem Abschnittsmetadatenmodell einige Stile und ein Hintergrundbild hinzugefügt.
 
 ```json
 {
