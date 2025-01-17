@@ -1,10 +1,10 @@
 ---
 title: Massenbearbeitung von Metadaten in der Assets-Ansicht
-description: Erfahren Sie, wie Sie die Metadaten mehrerer in der Assets-Ansicht verfügbarer Assets gleichzeitig bearbeiten können.
+description: Erfahren Sie, wie Sie einen vordefinierten Satz von Standard-Metadatenfeldern für mehrere Assets aktualisieren können, die gleichzeitig in der Assets-Ansicht verfügbar sind.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 55cb3bb5771c154191fe5b59e56cf9f077590169
+source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
