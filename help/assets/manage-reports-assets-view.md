@@ -4,9 +4,9 @@ description: Greifen Sie auf die Daten im Abschnitt „Berichte“ der Assets-An
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
+source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1540'
 ht-degree: 100%
 
 ---
@@ -140,9 +140,11 @@ Die AEM Assets-Ansicht-Umgebung bietet über das Berichte-Dashboard umfassende B
 
 Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Media bereitgestellt werden, mit der Anzahl der Bereitstellungen auf Asset-Ebene, Referrer-Informationen, dem Asset-Pfad in AEM Assets und der eindeutigen Asset-ID. Berichte können entweder für alle Assets generiert werden, die über Dynamic Media für das AEM Assets-Repository bereitgestellt werden, oder für eine bestimmte Ordnerhierarchie in AEM Assets. Mithilfe von Dynamic Media-Bereitstellungsberichten können Sie den ROI der bereitgestellten Assets oder die Kanalleistung messen und fundierte Asset-Management-Aufgaben für Assets durchführen.
 
+<!--
 >[!NOTE]
 > 
->Um frühzeitig Zugang zum Dynamic Media-Bereitstellungsbericht in Ihrem Dynamic Media-Konto zu erhalten, [erstellen Sie eine Anfrage an den Adobe Kundensupport und reichen Sie sie ein](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+-->
 
 ### Voraussetzungen {#prereqs-dynamic-media-delivery-reports}
 
