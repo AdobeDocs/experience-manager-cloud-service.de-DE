@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Die Datei [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate
 
 Nicht jeder Block muss über ein Modell verfügen. Einige Blöcke sind einfach [Container](#container) für eine Liste von untergeordneten Elementen. Dabei hat jedes untergeordnete Element ein eigenes Modell.
 
-Außerdem müssen Sie definieren, welche Blöcke vorhanden sind und mit dem universellen Editor zu einer Seite hinzugefügt werden können. In der Datei [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) werden die Komponenten so aufgelistet, wie sie vom universellen Editor bereitgestellt werden.
+Außerdem müssen Sie definieren, welche Blöcke vorhanden sind und mit dem universellen Editor zu einer Seite hinzugefügt werden können. Die Datei [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) listet die Komponenten so auf, wie sie vom universellen Editor zur Verfügung gestellt werden.
 
 ```json
 {

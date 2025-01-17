@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 9441c4e489cc338548aa632a568f45dc567d66cf
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,6 +19,6 @@ Das AEM SPA Editor SDK wurde in einer Reihe von AEM Gems-Sitzungen vorgestellt. 
 
 ## Gem-Sitzungen {#gem-sessions}
 
-* **[AEM-SPA-Editor](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/aem-spa-editor)** – Ein Überblick über den SPA-Editor für Anfänger. Wenn Sie gerade erst mit SPAs in AEM anfangen, beginnen Sie hier.
-* **[SPA Editor SDK-Vertiefung – Teil 1 – React](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-react)** – Ein tiefer Einblick in die Entwicklung von Single Page Applications, die mit dem AEM-Seiteneditor erstellt werden können. Überlegungen und Empfehlungen zur Struktur von Projekten, ein Überblick über alle Schichten, aus denen sich die Architektur eines Projekts zusammensetzt, die Rolle von AEM- und SPA-Komponenten, die Struktur und die wichtigsten JSON-Felder des Modellobjekts und mehr!
-* **[SPA Editor SDK-Vertiefung – Teil 2 – Angular](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-angular)** – Ein detaillierter Einblick in die Entwicklung von Single Page Applications, die mit dem AEM-Seiteneditor erstellt werden können. Überlegungen und Empfehlungen zur Struktur von Projekten, ein Überblick über alle Schichten, aus denen sich die Architektur eines Projekts zusammensetzt, die Rolle von AEM- und SPA-Komponenten, die Struktur und die wichtigsten JSON-Felder des Modellobjekts und mehr!
+* **[AEM-SPA-Editor](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2018/aem-spa-editor)** – Ein Überblick über den SPA-Editor für Anfänger. Wenn Sie gerade erst mit SPAs in AEM anfangen, beginnen Sie hier.
+* **[SPA Editor SDK-Vertiefung – Teil 1 – React](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-react)** – Ein tiefer Einblick in die Entwicklung von Single Page Applications, die mit dem AEM-Seiteneditor erstellt werden können. Überlegungen und Empfehlungen zur Struktur von Projekten, ein Überblick über alle Schichten, aus denen sich die Architektur eines Projekts zusammensetzt, die Rolle von AEM- und SPA-Komponenten, die Struktur und die wichtigsten JSON-Felder des Modellobjekts und mehr!
+* **[SPA Editor SDK-Vertiefung – Teil 2 – Angular](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-angular)** – Ein detaillierter Einblick in die Entwicklung von Single Page Applications, die mit dem AEM-Seiteneditor erstellt werden können. Überlegungen und Empfehlungen zur Struktur von Projekten, ein Überblick über alle Schichten, aus denen sich die Architektur eines Projekts zusammensetzt, die Rolle von AEM- und SPA-Komponenten, die Struktur und die wichtigsten JSON-Felder des Modellobjekts und mehr!

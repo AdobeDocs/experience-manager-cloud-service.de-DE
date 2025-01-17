@@ -8,7 +8,7 @@ role: User
 source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 
 1. Wählen Sie dann das Symbol „Hinzufügen“ im Bedienfeld „Eigenschaften“ aus.
 
-   ![Symbol hinzufügen auswählen](assets/add-icon.png)
+   ![Auswählen des Symbols „Hinzufügen“](assets/add-icon.png)
 
 Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet werden.
 

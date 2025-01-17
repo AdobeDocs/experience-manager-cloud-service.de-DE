@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 ![Klonen des Projekts](assets/create-block/clone.png)
 
-2\. Bearbeiten Sie die [`component-definition.json`-Datei ](/help/implementing/universal-editor/component-definition.md) Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
+2\. Bearbeiten Sie die Datei [`component-definition.json`](/help/implementing/universal-editor/component-definition.md) im Stammverzeichnis des Projekts, fügen Sie die folgende Definition für Ihren neuen Zitatblock hinzu und speichern Sie die Datei.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 >[!ENDTABS]
 
-4\. Bearbeiten Sie die [`component-filters.json`-Datei ](/help/implementing/universal-editor/filtering.md) Stammverzeichnis des Projekts und fügen Sie den Zitatblock zur [Filterdefinition](/help/implementing/universal-editor/filtering.md) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt und die Datei gespeichert werden kann.
+4\. Bearbeiten Sie die Datei [`component-filters.json`](/help/implementing/universal-editor/filtering.md) im Stammverzeichnis des Projekts, fügen Sie den Zitatblock zur [Filterdefinition](/help/implementing/universal-editor/filtering.md) hinzu, damit der Block zu einem beliebigen Abschnitt hinzugefügt werden kann, und speichern Sie die Datei.
 
 >[!BEGINTABS]
 
