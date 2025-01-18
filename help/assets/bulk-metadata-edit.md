@@ -2,7 +2,7 @@
 title: Massenbearbeitung von Metadaten in der Assets-Ansicht
 description: Erfahren Sie, wie Sie einen vordefinierten Satz von Standard-Metadatenfeldern für mehrere Assets aktualisieren können, die gleichzeitig in der Assets-Ansicht verfügbar sind.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
+source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Führen Sie diese Schritte aus, um die Metadaten mehrerer Assets gleichzeitig in
      >
      >Sie können die Metadaten von jeweils 100 Assets gleichzeitig bearbeiten.
 
-Um die angewendeten und auf ein Asset aktualisierten Metadaten anzuzeigen, navigieren Sie zur Seite mit Asset-Details (wählen Sie das Asset aus und klicken Sie auf **Details**) und klicken Sie auf ![](/help/assets/assets/info-icon-solid-black.svg), um die Metadaten des Assets im Bedienfeld **Informationen** anzuzeigen.
+Um die auf ein Asset angewendeten Metadaten-Aktualisierungen anzuzeigen, navigieren Sie zur Asset-Detailseite (wählen Sie das Asset aus und klicken Sie auf **Details**) und klicken Sie auf ![](/help/assets/assets/info-icon-solid-black.svg), um die Metadaten des Assets im Bedienfeld **Informationen** anzuzeigen.
 
 >[!NOTE]
 >
