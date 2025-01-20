@@ -1,7 +1,7 @@
 ---
-source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1371'
 ht-degree: 96%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 96%
 * [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
 * [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
 * [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
+* [Verwenden des Formularübermittlungsdienstes](/help/forms/forms-submission-service.md)
 
 
 ## Der Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten {#rule-editor-diff}

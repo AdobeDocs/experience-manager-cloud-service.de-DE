@@ -4,7 +4,7 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn beispielsweise der Name der Verzweigung `main`, das Repository `wefinance` und der Eigentümer `wkndform` ist, würde die Website unter [https://main--wefinance--wkndforms.aem.page/ ausgeführt](https://main--wefinance--wkndform.aem.page/)
+   Wenn beispielsweise der Name der Verzweigung `main`, das Repository `wefinance` und der Eigentümer `wkndform` ist, würde die Website unter [https://main--wefinance--wkndform.aem.page ausgeführt](https://main--wefinance--wkndform.aem.page)
 
 
 

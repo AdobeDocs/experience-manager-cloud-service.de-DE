@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 74b0c51c00601b645e9eba537c632efb3f48fb79
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '5967'
+source-wordcount: '5971'
 ht-degree: 99%
 
 ---
@@ -1013,6 +1013,7 @@ ht-degree: 99%
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
          + [Regex-Ausdrücke für Validierungen](/help/edge/docs/forms/regex-forms.md)
          + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Verwenden des Forms-Übermittlungsdienstes](/help/forms/forms-submission-service.md)
       + Funktionen {#advanced-features-edge-delivery-services-forms}
          + [Verwenden von Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
          + [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
