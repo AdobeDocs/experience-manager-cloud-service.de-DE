@@ -4,10 +4,10 @@ description: Veröffentlichen von Edge Delivery Services für AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 77%
 
 ---
 
@@ -30,9 +30,9 @@ Sobald Sie bereit sind, Ihr Formular für Ihre Kundschaft zur Datenerfassung ode
 
 1. Öffnen Sie Ihr Microsoft SharePoint- oder Google Drive-Konto und navigieren Sie zu Ihrem AEM Edge Delivery-Projektverzeichnis.
 
-1. Öffnen Sie die Tabelle, die Ihr Formular enthält. Beispiel: die Microsoft Excel-Arbeitsmappe des `enquiry`-Formulars.
+1. Öffnen Sie die Tabelle, die Ihr Formular enthält. Zum Beispiel die Arbeitsmappe [Anfrage](/help/edge/assets/enquiry.xlsx) von Microsoft Excel.
 
-1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Tabelle anzuzeigen.
+1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau des Blattes anzuzeigen.
 
    ![Verwenden von AEM Sidekick zum Anzeigen einer Vorschau der Tabelle](/help/edge/assets/preview-form.png)
 
@@ -44,16 +44,16 @@ Sobald Sie bereit sind, Ihr Formular für Ihre Kundschaft zur Datenerfassung ode
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
    * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn das Repository Ihres Projekts beispielsweise „Portal“ heißt, befindet es sich unter dem Konto „wkndforms“. Wenn Sie die Verzweigung „main“ verwenden, sieht die URL wie folgt aus:
+   Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, es sich unter dem Konto „WKNDorm“ befindet und Sie die Verzweigung „Main“ und das Formular als „Anfrage“ verwenden, sieht die URL wie folgt aus:
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
 
 +++
 
@@ -66,15 +66,15 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
 1. Greifen Sie auf Ihr Microsoft SharePoint- oder Google Drive-Konto zu und navigieren Sie zu Ihrem `[AEM Edge Delivery project directory]`.
 
-1. Öffnen Sie eine Dokumentdatei, in die Sie das Formular einbetten möchten. Sie können beispielsweise die Datei `index.docx` öffnen oder alternativ ein neues Dokument erstellen.
+1. Öffnen Sie eine Dokumentdatei, in die Sie das Formular einbetten möchten. Sie können beispielsweise die Datei &quot;[-form.docx](/help/edge/assets/enquiry-form.docx) öffnen oder alternativ ein neues Dokument erstellen.
 
 1. Identifizieren Sie den gewünschten Abschnitt im Dokument, in den Sie das Formular einfügen möchten, und navigieren Sie entsprechend zu diesem Abschnitt.
 
-1. Fügen Sie der Datei einen Block mit dem Namen „Formular“ hinzu, ähnlich wie im folgenden Beispiel:
+1. Fügen Sie der Datei einen Block mit dem Namen „Formular“ hinzu. Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, befindet es sich unter dem Kontoinhaber „WKNDorm“ und Sie verwenden die Verzweigung „Main“.
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
    ![Hinzufügen eines Blocks mit dem Namen „Formular“ zu der Datei](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -85,25 +85,29 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
    >
    > Stellen Sie sicher, dass die URL als Hyperlink formatiert ist und nicht nur als reiner Text angezeigt wird.
 
-   Verwenden Sie die Vorschau-URL (.page-URL) für Entwicklungs- oder Testzwecke oder die Veröffentlichungs-URL (.live) für die Produktion. Im Folgenden finden Sie Beispiele für Vorschau- und Veröffentlichungs-URLs:
+   Verwenden Sie die Vorschau-URL (.page-URL) für Entwicklungs- oder Testzwecke oder die Veröffentlichungs-URL (.live) für die Produktion.
+
+   Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, befindet es sich unter dem Kontoinhaber „WKNDorm“ und Sie verwenden die Verzweigung „Main“.
+
+   Im Folgenden finden Sie Beispiele für Vorschau- und Veröffentlichungs-URLs:
 
    **Vorschau-URL**
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
    **Veröffentlichungs-URL**
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
-1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Webseite anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Webseite anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](/help/edge/assets/enquiry.xlsx):
 
 
-   ![Beispiel für ein EDS-Formular](/help/edge/assets/eds-form.png)
+   ![Beispiel für ein EDS-Formular](/help/edge/assets/updated-form.png)
 
 1. Verwenden Sie AEM Sidekick, um das Formular zu veröffentlichen. Jetzt können Ihre Kundinnen und Kunden das Formular ausfüllen und absenden.
 

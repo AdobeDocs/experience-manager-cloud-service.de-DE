@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
+source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 7%
+source-wordcount: '1060'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,18 @@ Das Forms-Konvertierungs-Dienstprogramm konvertiert adaptive Forms, die auf ält
 
 * Bei erfolgreichen Konvertierungen werden alle auf das Formular angewendeten Regeln entfernt. Regeln werden nicht automatisch migriert. Sie sollten diese Regeln manuell neu erstellen und auf das konvertierte Formular anwenden.
 * Die im Originalformular verwendeten Übersetzungseinstellungen werden nicht übernommen. Konfigurieren Sie die Übersetzung für das konvertierte Formular neu.
-  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* Wenn das auf Foundation-Komponenten aufbauende Formular Skripte oder benutzerdefinierte Funktionsregeln enthält, müssen Sie diese für das konvertierte Formular auf der Grundlage von Kernkomponenten neu schreiben.
+* Die folgenden vorkonfigurierten Foundation-Komponenten werden in Kernkomponenten noch nicht unterstützt und daher in dem konvertierten Formular gelöscht:
+   * Adobe Sign Block
+   * Diagramm
+   * Auflistung der Dateianhänge
+   * Fußnoten-Platzhalter
+   * Bildauswahl
+   * Schaltfläche „Weiter“
+   * Schaltfläche „Zurück“
+   * Freihändige Unterschrift
+   * Zusammenfassungsschritt
+   * Symbolleiste
 
 ## Voraussetzungen für die Verwendung der AEM-Modernisierungs-Tools
 
@@ -68,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um die AEM-Modernisierungs-Tools in Ihre
 
    `java -jar aem-author-p4502.jar`
 
-1. Klonen Sie das Repository [AEM ](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)Modernisierungs-Tool} in Ihrem lokalen System.
+1. Klonen Sie das Repository [AEM ](https://github.com/adobe/forms-modernizer)Modernisierungs-Tool} in Ihrem lokalen System.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]

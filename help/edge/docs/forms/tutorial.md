@@ -4,10 +4,10 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 100%
+source-wordcount: '1806'
+ht-degree: 92%
 
 ---
 
@@ -61,27 +61,27 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
    >
    > Wenn Sie GitHub Enterprise mit IP-Filterung verwenden, können Sie die folgende IP zur Zulassungsliste hinzufügen: 3.227.118.73
 
-   Herzlichen Glückwunsch! Sie haben eine neue Website auf `https://<branch>--<repo>--<owner>.hlx.page/`.
+   Herzlichen Glückwunsch! Sie haben eine neue Website auf `https://<branch>--<repo>--<owner>.aem.page/`.
 
    * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn der Name der Verzweigung beispielsweise `main` lautet, das Repository `wefinance` und der Eigentümer `wkndforms` ist, würde die Website unter [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/) ausgeführt.
+   Wenn beispielsweise der Name der Verzweigung `main`, das Repository `wefinance` und der Eigentümer `wkndform` ist, würde die Website unter [https://main--wefinance--wkndforms.aem.page/ ausgeführt](https://main--wefinance--wkndform.aem.page/)
 
 
 
 ### Verknüpfen Ihrer eigenen Inhaltsquelle
 
-Ihr neu erstelltes GitHub-Repository verweist auf [Beispielinhalt, der im Ordner „Google Drive“ gespeichert ist](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Dieser schreibgeschützte Inhalt bietet einen guten Ausgangspunkt für Ihre Formulare. Sie können ihn in Ihr eigenes Google Drive kopieren und an Ihre Anforderungen anpassen.
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Beispielinhalt auf Google Drive](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres GitHub-Repositorys auf Ihren eigenen Inhaltsordner:
 
 1. Erstellen Sie einen neuen Ordner speziell für Ihren AEM-Inhalt in Google Drive oder Microsoft SharePoint. In diesem Dokument wird ein Ordner verwendet, der in Microsoft SharePoint erstellt wurde.
 
-1. Geben Sie den Ordner für die Benutzerin bzw. den Benutzer von Adobe Experience Manager frei (helix@adobe.com).
+1. Geben Sie den Ordner für den Adobe Experience Manager-Benutzer frei (forms@adobe.com).
 
    ![SharePoint: Verwenden der Option „Zugriff verwalten“, um Ordner für die AEM-Benutzerin bzw. den Benutzer freizugeben.](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 
    Stellen Sie sicher, dass Sie der Adobe Experience Manager-Benutzerin bzw. dem -Benutzer Bearbeitungsrechte für den Ordner zugewiesen haben.
 
-   ![SharePoint: Freigeben des Ordners für die AEM-Benutzerin bzw. den -Benutzer und Bereitstellen von Bearbeitungsrechten](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![Ordner für AEM-Benutzer freigeben, Bearbeitungsrechte bereitstellen - SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![Google Drive: Freigeben des Ordners für die AEM-Benutzerin bzw. den -Benutzer und Bereitstellen von Bearbeitungsrechten](/help/edge/assets/add-aem-user-google-folder.png)
+   ![Ordner für AEM-Benutzer freigeben, Bearbeitungsrechte gewähren - Google-Laufwerk](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. Kopieren Sie den [Beispielinhalt, der im Google Drive-Ordner gespeichert ist](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_), in Ihren Ordner. So kopieren Sie ihn:
+1. Kopieren Sie den [Beispielinhalt](/help/edge/assets/wefinance1.zip) in Ihren Ordner . So kopieren Sie ihn:
 
-   1. Laden Sie die Dateien zusammen oder als Einzeldateien herunter.
+   1. Entpacken Sie den heruntergeladenen Ordner und kopieren Sie den Inhalt.
 
       ![Herunterladen von Beispielinhalt](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 
    1. Wechseln Sie zum GitHub-Repository, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben.
    1. Öffnen Sie `fstab.yaml` zur Bearbeitung.
-   1. Ersetzen Sie die vorhandene Referenz durch den Pfad zum Ordner, den Sie für die AEM-Benutzerin bzw. den -Benutzer freigegeben haben (helix@adobe.com).
+   1. Ersetzen Sie den vorhandenen Verweis durch den Pfad zu dem Ordner, den Sie für den AEM-Benutzer freigegeben haben (forms@adobe.com).
 
       ![Beispielinhalt auf Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ So zeigen Sie nicht veröffentlichte Inhalte in einer Vorschau an:
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
@@ -183,11 +183,9 @@ So zeigen Sie nicht veröffentlichte Inhalte in einer Vorschau an:
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
 
-   URL.`https://<branch>--<repo>--<owner>.hlx.page/enquiry`
+   URL.`https://<branch>--<repo>--<owner>.aem.page/enquiry`
 
-   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, befindet es sich unter dem Kontobesitzer bzw. der Kontobesitzerin „wkndforms“. Wenn Sie die Verzweigung „main“ verwenden, sieht die URL wie folgt aus:
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page)
+   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, es sich unter dem Kontoinhaber „wkndform“ befindet und Sie die Verzweigung „main“ und den Formularnamen als `enquiry` verwenden, lautet die URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
 
 ### Erstellen eines Formulars
 
@@ -195,11 +193,11 @@ Der Beispielinhalt enthält ein Blatt „enquiry“, das als Vorlage für das Fo
 
 ![Formular „enquiry“](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Aktualisieren wir zunächst einen Feldtitel. Öffnen Sie das Blatt „enquiry“ zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Chat` und verwenden Sie AEM Sidekick, um die Datei in einer Vorschau anzuzeigen und zu veröffentlichen.
+Aktualisieren wir zunächst einen Feldtitel. Öffnen Sie das Blatt „enquiry“ zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Talk` und verwenden Sie AEM Sidekick, um die Datei in einer Vorschau anzuzeigen und zu veröffentlichen.
 
 ![Formular „enquiry“](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Wenn Sie die Datei in einer Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau-URL (.hlx.page) oder die Veröffentlichungs-URL (.hlx.live) der Datei.
+Wenn Sie die Datei in einer Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau- (.aem.page) oder Veröffentlichungs- (.aem.live)-URL der Datei.
 
 ![JSON des Formular-Arbeitsblatts](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ Um eine Vorschau des aktualisierten Formulars „enquiry“ anzuzeigen, gehen Si
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-Der Titel der Senden-Schaltfläche wird in `Let's Chat` geändert.
+Der Titel der Senden-Schaltfläche wird in `Let's Talk` geändert.
 
-![Formular „enquiry“](/help/edge/assets/updated-form.png)
+[![Anfrageformular](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 Ausführliche Informationen zum Erstellen und Veröffentlichen eines neuen Formulars finden Sie in der Anleitung [Erstellen eines Formulars](/help/edge/docs/forms/create-forms.md).
 
@@ -254,8 +255,8 @@ Der Ordner `blocks/form` des adaptiven Formularblocks ist Ihr Spielplatz für St
 
 Bereit zur Präsentation Ihrer Kreation? Verwenden Sie Git, um Ihre Änderungen zu bestätigen und zu übertragen. Dadurch werden Ihre Vorschau- und Produktionsumgebungen aktualisiert, auf die über diese URLs zugegriffen werden kann (Platzhalter durch Ihre Projektdetails ersetzen):
 
-Vorschau: `https://<branch>--<repo>--<owner>.hlx.page/`
-Produktion: `https://<branch>--<repo>--<owner>.hlx.live/`
+Vorschau: `https://<branch>--<repo>--<owner>.aem.page/`
+Produktion: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Herzlichen Glückwunsch! Sie haben Ihre lokale Entwicklungsumgebung erfolgreich eingerichtet und Ihre Änderungen bereitgestellt.
 

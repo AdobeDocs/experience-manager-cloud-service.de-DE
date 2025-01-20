@@ -4,10 +4,10 @@ description: Die Dropdown-Listenoptionen sind in einer gesonderten Tabelle entha
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '472'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,6 @@ Die Vorteile des Ladens von Dropdown-Optionen aus einer separaten Tabelle sind:
 
 * Vereinfachte Verwaltung: Verwaltung von Dropdown-Optionen an einer zentralen Stelle, um Aktualisierungen und Ergänzungen zu erleichtern.
 * Verbesserte Effizienz: Manuelles Hinzufügen langer Optionslisten innerhalb der Formulardefinition ist nicht erforderlich.
-
-
-
 
 ![Dropdown-Optionen](/help/forms/assets/drop-down-options.png)
 
@@ -58,8 +55,8 @@ Geben Sie Ihre Länderoptionen in die Spalte „Option“ (und ggf. in die Spalt
 
 1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt `shared-country` unter Verwendung von [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Die nachfolgende URL öffnet das Blatt `shared-country`: 
-https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, befindet es sich unter dem Kontoinhaber „wkdform“ und Sie verwenden die „Haupt“-Verzweigung, die URL, die das `shared-country` anzeigt:
+   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
 
 >[!NOTE]
 >
@@ -79,13 +76,14 @@ Die `Options`-Eigenschaft eines `select`-Felds akzeptiert eine URL. Die URL gibt
 
    ![Dropdown-Liste für Land](/help/forms/assets/load-dropdown-options-form.png)
 
-Um die URL zum Laden der Dropdown-Listenoptionen hinzuzufügen, rufen Sie die [Abfragetabelle](/help/forms/assets/enquiry-options.xlsx) auf.
+Um die URL zum Laden der Dropdown-Listenoptionen hinzuzufügen, rufen Sie die [Abfragetabelle](/help/edge/assets/enquiry.xlsx) auf.
 
 Nach der Integration der URL in die Formulardefinition zum Laden der Dropdown-Listenoptionen beginnen die Optionen für die Dropdown-Liste `Destination` aus der URL zu erscheinen.
 
-Unter der nachstehenden URL finden Sie das `enquiry`-Formular, in dem die in einem separaten Blatt gespeicherten Optionen angezeigt werden:
+<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form
+[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## Siehe auch
 

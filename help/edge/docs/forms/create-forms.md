@@ -4,10 +4,10 @@ description: Perfekte Formulare im Handumdrehen! ⚡ Dokumentenbasierte Inhaltse
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 100%
+source-wordcount: '790'
+ht-degree: 88%
 
 ---
 
@@ -26,25 +26,24 @@ Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabelle
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
-* Richten Sie ein [AEM-Projekt mit der AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ein oder [fügen Sie einen adaptiven Formularbaustein zu Ihrem bestehenden AEM-Projekt hinzu](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
-In diesem Dokument wird der lokale Ordner Ihres Edge Delivery Service(EDS)-Projekts als `[EDS Project repository]` bezeichnet.
+* Richten Sie ein [AEM-Projekt mit dem AEM Forms-Textbaustein ein](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [Der adaptive Forms-Block wurde zu Ihrem bestehenden AEM-Projekt hinzugefügt](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
+<!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwenden von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
 ## Erstellen eines Formulars
 
-<!-- 
-
+<!--
 +++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
 The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
 1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
-1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
+2. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
 
-1. on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+3. on your local machine and copy the `form` folder. 
+4. **Paste the Adaptive Forms Block's code into your EDS Project:**
 Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
 1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
@@ -59,17 +58,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
 * **Handle Linting Errors:**
-    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++
-
--->
 
 +++ Schritt 1: Erstellen Sie ein Formular mit Microsoft Excel oder Google Tabellen.
 
 Anstatt durch komplexe Prozesse zu navigieren, kann das Erstellen eines Formulars mühelos mithilfe einer Tabelle erfolgen. Sie können die Zeilen und Spalten definieren, aus denen die Formularstruktur besteht. Jede Zeile stellt ein einzelnes [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) dar und die Spaltenüberschriften definieren die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties).
 
-Betrachten Sie beispielsweise die folgende Tabelle, in der die Zeilen Felder für ein `enquiry`-Formular darstellen und die Spaltenüberschriften ihre Eigenschaften definieren:
+Betrachten Sie beispielsweise die folgende Tabelle, in der Zeilen Felder für eine [Abfrage“-Tabelle ](/help/edge/assets/enquiry.xlsx) Spaltenüberschriften ihre Eigenschaften definieren:
 
 ![Abfragetabelle](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -81,7 +78,7 @@ So setzen Sie die Formularerstellung fort:
 
    ![Beispielinhalt auf Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Stellen Sie sicher, dass das Blatt für die entsprechenden AEM-Benutzenden (z. B. `helix@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen freigegeben ist](https://www.aem.live/docs/setup-customer-sharepoint). Gewähren Sie für das Blatt die Berechtigung zum Bearbeiten durch Benutzende.
+1. Stellen Sie sicher, dass das Blatt für die entsprechenden AEM-Benutzenden (z. B. `forms@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen freigegeben ist](https://www.aem.live/docs/setup-customer-sharepoint). Gewähren Sie für das Blatt die Berechtigung zum Bearbeiten durch Benutzende.
 
 1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in „shared-default“ um.
 
@@ -90,7 +87,7 @@ So setzen Sie die Formularerstellung fort:
 1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das Blatt „shared-default“ ein. Jede Zeile sollte ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) darstellen, wobei die Spaltenüberschriften die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties) definieren.
 
 
-   Für einen schnellen Start können Sie den Inhalt der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in Ihre Tabelle kopieren. Speichern Sie die Tabelle, nachdem Sie den Inhalt kopiert haben.
+   Für einen schnellen Start können Sie den Inhalt der [Abfragetabelle](/help/edge/assets/enquiry.xlsx) in Ihre Tabelle kopieren. Speichern Sie die Tabelle, nachdem Sie den Inhalt kopiert haben.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
@@ -103,16 +100,16 @@ So setzen Sie die Formularerstellung fort:
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn das Repository Ihres Projekts beispielsweise „Portal“ heißt, befindet es sich unter dem Konto „wkndforms“. Wenn Sie die Verzweigung „main“ verwenden, sieht die URL wie folgt aus:
+   Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, sich dieses unter dem Konto „WKNDorm“ befindet und Sie die „Haupt“-Verzweigung verwenden, sieht die URL wie folgt aus:
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
 
 
 +++
@@ -126,7 +123,7 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun ei
 
 
 
-1. Öffnen Sie eine Dokumentdatei (zum Beispiel die Index-Datei), um das Formular einzubetten. Alternativ können Sie ein neues Formular erstellen.
+1. Öffnen Sie eine Dokumentdatei (zum Beispiel die Index-Datei), um das Formular einzubetten. Alternativ können Sie [ein neues Dokument erstellen](/help/edge/assets/enquiry-form.docx).
 
 1. Wechseln Sie an die gewünschte Stelle im Dokument, an der Sie das Formular hinzufügen möchten.
 
@@ -134,10 +131,10 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun ei
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
-   ![Hinzufügen eines adaptiven Formularbausteins zu Ihrer Web-Seite](/help/edge/assets/add-adaptive-forms-block.png)
+   ![Hinzufügen eines adaptiven Formularbausteins zu Ihrer Web-Seite](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    Dieser Block dient als Platzhalter, in den das Formular eingebettet ist. Fügen Sie in der zweiten Zeile des Bausteins die Vorschau-URL Ihrer `<form>.json`-Datei als Hyperlink ein.
 
@@ -147,10 +144,10 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun ei
    > Stellen Sie sicher, dass die URL als Hyperlink formatiert ist und nicht nur als reiner Text angezeigt wird.
 
 
-1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau des Dokuments anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau des Dokuments anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](/help/edge/assets/enquiry-form.docx):
 
 
-   [![Beispiel für ein EDS-Formular](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   [![Beispiel für ein EDS-Formular](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.page/enquiry-form)
 
    Füllen Sie nun das Formular aus und klicken Sie auf die Schaltfläche „Absenden“. Es tritt ein Fehler ähnlich dem folgenden auf, da die Tabelle noch nicht für das Akzeptieren der Daten konfiguriert ist.
 
