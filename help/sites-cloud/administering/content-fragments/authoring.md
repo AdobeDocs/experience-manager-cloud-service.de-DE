@@ -1,14 +1,14 @@
 ---
 title: Erstellen von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen und dann je nach Zweck Varianten dieses Inhalts erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
+description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen und dann je nach Zweck Varianten dieses Inhalts erstellen. Inhaltsfragmente bieten zusätzliche Flexibilität sowohl für die Headless-Bereitstellung als auch für die Seitenbearbeitung.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
-ht-degree: 95%
+source-wordcount: '2851'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->Verschiedene Funktionen des Inhaltsfragment-Editors sind über das Early-Adopter-Programm verfügbar.
+>Verschiedene Funktionen des Inhaltsfragmenteditors sind im Rahmen des Early-Adopter-Programms verfügbar.
 >
 >Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
@@ -64,11 +64,13 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
    * diese Links können verwendet werden, um [in der Inhaltsfragmentstruktur zu navigieren](#navigate-structure)
 * rechter Bereich: enthält Registerkarten [mit den Eigenschaften (Metadaten) und Tags](#view-properties-tags), Informationen über den [Versionsverlauf](#view-version-history) sowie Informationen zu [Sprachkopien](#view-language-copies)
    * auf der Registerkarte **Eigenschaften** können Sie den **Titel** und die **Beschreibung** für das Fragment oder die **Variante** aktualisieren
-   * Auf der **Kommentare** können Sie Kommentare hinzufügen und lesen, um die Zusammenarbeit mit anderen Autoren zu erleichtern
+   * Auf der Registerkarte **Kommentare** können Sie Kommentare hinzufügen und lesen und so einfacher mit anderen Autorinnen und Autoren zusammenarbeiten.
 * zentraler Bereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
    * ermöglicht das Bearbeiten des Inhalts
       * wenn im Modell (als mehrfach) konfiguriert, ermöglichen verschiedene Datentypen das **Hinzufügen** von Instanzen des relevanten Feldes.
-   * wenn Felder mit **Registerkartenplatzhaltern** innerhalb des hier gezeigten Modells definiert werden und für die Navigation verwendet werden können, werden sie entweder horizontal oder als Dropdown-Liste angezeigt.
+   * Wenn **Registerkarten-Platzhalter** Felder innerhalb des Modells definiert sind, werden sie hier angezeigt und:
+      * Kann zum Navigieren verwendet werden
+      * Wird entweder horizontal oder als Dropdown-Liste angezeigt
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ Im linken Bereich können Sie Folgendes sehen:
 
 ### Links folgen {#follow-links}
 
-Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Dies kann verwendet werden, um das angezeigte Element zu öffnen, z. B. ein Inhaltsfragmentmodell, einen übergeordneten Verweis oder ein Fragment, auf das verwiesen wird:
+Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Mit diesem Symbol können Sie das angezeigte Element öffnen, z. B. ein Inhaltsfragmentmodell, einen übergeordneten Verweis oder ein referenziertes Fragment:
 
 ![Inhaltsfragmenteditor – Link-Symbol](assets/cf-authoring-link-icon.png)
 
@@ -475,23 +477,23 @@ Zum Beispiel:
 
 ## Kommentieren von Fragmenten {#commenting-on-your-fragment}
 
-Die **Kommentare** im rechten Bedienfeld bietet die folgenden Funktionen:
+Um die produktinterne und kontextbezogene Zusammenarbeit zu ermöglichen, bietet die Registerkarte **Kommentare** im rechten Bedienfeld die folgenden Funktionen:
 
-* Neuen Kommentar hinzufügen
-* Tagging bestimmter Benutzer in einem Kommentar
-   * Sie erhalten eine Benachrichtigung mit einem Link zum direkten Öffnen des Fragments
-* Wie ein vorhandener Kommentar
+* Neue Kommentare hinzufügen
+* Bestimmte Benutzende in einem Kommentar taggen
+   * Benachrichtigung der Benutzenden mit einem Link zum direkten Öffnen des Fragments
+* Vorhandene Kommentare liken
 * Auf einen Kommentar antworten
-* Kommentare formatieren; grundlegende Formatierung ist verfügbar
-* Durchführen einer Textsuche durch vorhandene Kommentare
-* Bearbeiten eines vorhandenen Kommentars
+* Kommentare formatieren; grundlegende Formatierung verfügbar
+* Textsuche in vorhandenen Kommentaren durchführen
+* Vorhandene Kommentare bearbeiten
 * Kommentare löschen
 
-![Inhaltsfragment-Editor - Registerkarte „Kommentare“](assets/cf-authoring-comments.png)
+![Inhaltsfragmenteditor – Registerkarte „Kommentare“](assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >
->Diese Kommentare sind weder als [Anmerkungen im Original-Editor](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) noch in der [Zeitleiste der Assets-Konsole](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) sichtbar.
+>Diese Kommentare sind weder als [Anmerkungen im Originaleditor](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) noch in der [Zeitleiste der Assets-Konsole](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) sichtbar.
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 
