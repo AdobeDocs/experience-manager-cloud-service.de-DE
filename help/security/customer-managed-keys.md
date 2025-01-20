@@ -7,50 +7,50 @@ hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 18fe0125351c635c226bebf0f309710634230e64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1199'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Einrichten von kundenseitig verwalteten Schlüsseln für AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service speichert derzeit Kundendaten in Azure Blob Storage und MongoDB, wobei zur Datensicherung standardmäßig vom Anbieter verwaltete Verschlüsselungsschlüssel verwendet werden. Diese Einrichtung erfüllt zwar die Sicherheitsanforderungen vieler Organisationen, aber Unternehmen in regulierten Branchen oder Unternehmen, die eine verbesserte Datensouveränität benötigen, können eine bessere Kontrolle über ihre Verschlüsselungsverfahren anstreben. Für Unternehmen, die Datensicherheit, Compliance und die Möglichkeit, ihre Verschlüsselungsschlüssel zu verwalten, priorisieren, bietet die CMK-Lösung (Customer-Managed Keys) eine wichtige Verbesserung.
+AEM as a Cloud Service speichert derzeit Kundendaten in Azure Blob Storage und MongoDB, wobei zur Datensicherung standardmäßig vom Anbieter verwaltete Verschlüsselungsschlüssel verwendet werden. Dieses Setup erfüllt zwar die Sicherheitsanforderungen vieler Organisationen, aber Unternehmen in regulierten Branchen oder Unternehmen, die eine verbesserte Datensouveränität benötigen, streben möglicherweise eine bessere Kontrolle über ihre Verschlüsselungsverfahren an. Für Unternehmen, die Datensicherheit, Compliance und die Möglichkeit priorisieren, ihre Verschlüsselungsschlüssel zu verwalten, bietet die CMK-Lösung (Customer-Managed Keys, kundenseitig verwaltete Schlüssel) eine wichtige Verbesserung.
 
 ## Das zu lösende Problem {#the-problem-being-solved}
 
-Anbieter verwaltete Schlüssel können für Unternehmen in Bereichen wie Finanzen, Gesundheitswesen und Behörden, in denen strenge Vorschriften eine umfassende Kontrolle über die Datensicherheit erfordern, problematisch sein. Ohne Kontrolle über das Schlüsselmanagement stehen Unternehmen vor Herausforderungen bei der Einhaltung von Compliance-Anforderungen, der Implementierung benutzerdefinierter Sicherheitsrichtlinien und der Gewährleistung vollständiger Datensouveränität.
+Von Anbietern verwaltete Schlüssel können für Unternehmen in Bereichen wie Finanzen, Gesundheitswesen und Behörden problematisch sein, in denen strenge Vorschriften eine umfassende Kontrolle über die Datensicherheit erfordern. Ohne Kontrolle über das Schlüssel-Management stehen Organisationen vor Herausforderungen bei der Einhaltung von Compliance-Anforderungen, der Implementierung benutzerdefinierter Sicherheitsrichtlinien und der Gewährleistung vollständiger Datensouveränität.
 
-Die Einführung von kundenverwalteten Schlüsseln (CMK) trägt diesen Bedenken Rechnung, indem AEM-Kunden die volle Kontrolle über ihre Verschlüsselungsschlüssel erhalten. Durch die Authentifizierung über die Microsoft Entra ID (ehemals Azure Active Directory) stellt AEM CS eine sichere Verbindung zum Azure-Schlüsseltresor des Kunden her, sodass er den Lebenszyklus seiner Verschlüsselungsschlüssel verwalten kann, einschließlich Schlüsselerstellung, -rotation und -widerruf.
+Durch die Einführung von kundenseitig verwalteten Schlüsseln (CMK) werden diese Bedenken behoben, da AEM-Kundschaft die volle Kontrolle über ihre Verschlüsselungsschlüssel erhält. Durch die Authentifizierung über die Microsoft Entra ID (ehemals Azure Active Directory) stellt AEM CS eine sichere Verbindung zu Azure Key Vault von Kundschaft her, sodass diese den Lebenszyklus ihrer Verschlüsselungsschlüssel verwalten kann, einschließlich Schlüsselerstellung, -rotation und -widerruf.
 
 CMK bietet mehrere Vorteile:
 
-* **Verbesserte Sicherheit:** Kunden können sicherstellen, dass ihre Verschlüsselungsverfahren bestimmten Sicherheitsanforderungen entsprechen, sodass sie sich auf den Datenschutz verlassen können.
-* **Compliance-Flexibilität:** Mit der vollständigen Kontrolle über den wichtigsten Lebenszyklus können sich Unternehmen einfach an sich verändernde Regulierungsstandards wie DSGVO, HIPAA oder CCPA anpassen, um sicherzustellen, dass ihre Compliance-Haltung stark bleibt.
-* **Nahtlose Integration:** Die CMK-Lösung kann direkt mit Azure Blob Storage und MongoDB in AEM CS integriert werden. So wird sichergestellt, dass der Speicherbetrieb und die Benutzerfreundlichkeit nicht beeinträchtigt werden. Gleichzeitig erhalten Kunden leistungsstarke Verschlüsselungsfunktionen.
+* **Verbesserte Sicherheit:** Kundschaft kann sicherstellen, dass ihre Verschlüsselungsverfahren bestimmten Sicherheitsanforderungen entsprechen, sodass sie sich auf den Datenschutz verlassen kann.
+* **Compliance-Flexibilität:** Aufgrund der vollständigen Kontrolle über den Lebenszyklus der Schlüssel können sich Unternehmen einfach an sich verändernde Regulierungsstandards wie DSGVO, HIPAA oder CCPA anpassen und so sicherzustellen, dass ihr Compliance-Status unverändert bleibt.
+* **Nahtlose Integration:** Die CMK-Lösung kann direkt mit Azure Blob Storage und MongoDB in AEM CS integriert werden. So wird sichergestellt, dass der Speichervorgang und die Benutzerfreundlichkeit nicht beeinträchtigt werden. Gleichzeitig erhält Kundschaft leistungsstarke Verschlüsselungsfunktionen.
 
-Durch die Verwendung von CMK können Kunden die Kontrolle über ihre Datensicherheits- und Verschlüsselungsverfahren verbessern, die Compliance verbessern und Risiken mindern, während sie gleichzeitig weiterhin von der Skalierbarkeit und Flexibilität von AEM CS profitieren.
+Durch die Verwendung von CMK kann Kundschaft die Kontrolle über ihre Datensicherheits- und Verschlüsselungsverfahren erhöhen, die Compliance verbessern und Risiken mindern, während sie gleichzeitig weiterhin von der Skalierbarkeit und Flexibilität von AEM CS profitiert.
 
-Mit AEM as a Cloud Service können Sie Ihre eigenen Verschlüsselungsschlüssel für die Verschlüsselung von Daten im Ruhezustand mitbringen. In diesem Handbuch werden die Schritte zum Einrichten eines kundenverwalteten Schlüssels (CMK) in Azure Key Vault für AEM as a Cloud Service beschrieben.
+Mit AEM as a Cloud Service können Sie Ihre eigenen Verschlüsselungsschlüssel für die Verschlüsselung von Daten im Ruhezustand mitbringen. In diesem Handbuch werden die Schritte zum Einrichten eines kundenseitig verwalteten Schlüssels (CMK) in Azure Key Vault für AEM as a Cloud Service beschrieben.
 
 >[!WARNING]
 >
->Nach dem Einrichten von CMK können Sie nicht zu systemverwalteten Schlüsseln zurückkehren. Sie sind dafür verantwortlich, Ihre Schlüssel sicher zu verwalten und den Zugriff auf Ihre Schlüsseltresor-, Schlüssel- und CMK-App in Azure bereitzustellen, um zu verhindern, dass der Zugriff auf Ihre Daten verloren geht.
+>Nach dem Einrichten von CMK können Sie nicht zu systemseitig verwalteten Schlüsseln zurückkehren. Sie sind dafür verantwortlich, Ihre Schlüssel sicher zu verwalten und den Zugriff auf Ihre Key Vault-, Schlüssel- und CMK-App in Azure bereitzustellen, um zu verhindern, dass der Zugriff auf Ihre Daten verloren geht.
 
 Außerdem werden Sie durch die folgenden Schritte zum Erstellen und Konfigurieren der erforderlichen Infrastruktur geführt:
 
 1. Einrichten Ihrer Arbeitsumgebung
-1. Abrufen einer Anwendungs-ID von Adobe
+1. Erhalten einer Anwendungs-ID von Adobe
 1. Erstellen einer neuen Ressourcengruppe
-1. Schlüsselfehler erstellen
-1. Adobe Zugriff auf den Schlüsseltresor gewähren
+1. Erstellen eines Schlüsseltresors
+1. Gewähren des Zugriffs auf den Schlüsseltresor für Adobe
 1. Erstellen eines Verschlüsselungsschlüssels
 
-Sie müssen die Schlüsseltresor-URL, den Verschlüsselungsschlüsselnamen und Informationen über den Schlüsseltresor mit Adobe teilen.
+Sie müssen die Schlüsseltresor-URL, den Verschlüsselungsschlüsselnamen und Informationen über den Schlüsseltresor für Adobe freigeben.
 
 ## Einrichten der Umgebung {#setup-your-environment}
 
-Einzige Voraussetzung für dieses Handbuch ist die Azure Command Line Interface (CLI). Wenn Sie Azure CLI noch nicht installiert haben, befolgen Sie die offiziellen Installationsanweisungen ([) ](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+Einzige Voraussetzung, um den Anweisungen dieses Handbuchs folgen zu können, ist die Azure-Befehlszeilenschnittstelle (CLI). Wenn Sie die Azure-CLI noch nicht installiert haben, befolgen Sie die offiziellen Installationsanweisungen [hier](https://learn.microsoft.com/de-de/cli/azure/install-azure-cli).
 
 Bevor Sie mit dem Rest dieses Handbuchs fortfahren, melden Sie sich bitte mit `az login` bei Ihrer CLI an.
 
@@ -58,9 +58,9 @@ Bevor Sie mit dem Rest dieses Handbuchs fortfahren, melden Sie sich bitte mit `a
 >
 >Obwohl dieses Handbuch die Azure-CLI verwendet, ist es möglich, dieselben Vorgänge über die Azure-Konsole auszuführen. Wenn Sie die Azure-Konsole bevorzugen, verwenden Sie die folgenden Befehle als Referenz.
 
-## Abrufen einer Anwendungs-ID von Adobe {#obtain-an-application-id-from-adobe}
+## Erhalten einer Anwendungs-ID von Adobe {#obtain-an-application-id-from-adobe}
 
-Adobe stellt Ihnen eine Entra-Anwendungs-ID zur Verfügung, die Sie im Rest dieses Handbuchs benötigen. Wenn Sie noch keine Anwendungs-ID haben, wenden Sie sich an Adobe, um eine zu erhalten.
+Adobe stellt Ihnen eine Entra-Anwendungs-ID zur Verfügung, die Sie zum Ausführen der restlichen Anweisungen in diesem Handbuch benötigen. Wenn Sie noch nicht über eine Anwendungs-ID verfügen, wenden Sie sich an Adobe, um eine zu erhalten.
 
 ## Erstellen einer neuen Ressourcengruppe {#create-a-new-resource-group}
 
@@ -75,14 +75,14 @@ $resourceGroup="<RESOURCE GROUP>"
 az group create --location $location --resource-group $resourceGroup
 ```
 
-Wenn Sie bereits über eine Ressourcengruppe verfügen, können Sie diese stattdessen verwenden. Im Rest dieses Handbuchs werden der Speicherort der Ressourcengruppe und ihr Name mit `$location` bzw. `$resourceGroup` identifiziert.
+Wenn Sie bereits über eine Ressourcengruppe verfügen, können Sie stattdessen diese verwenden. Im Rest dieses Handbuchs werden der Speicherort der Ressourcengruppe und ihr Name mit `$location` bzw. `$resourceGroup` bezeichnet.
 
 ## Erstellen eines Schlüsseltresors {#create-a-key-vault}
 
-Sie müssen einen Schlüsseltresor erstellen, der Ihren Verschlüsselungsschlüssel enthält. Für den Schlüsseltresor muss der Bereinigungsschutz aktiviert sein. Bereinigungsschutz ist erforderlich, um Daten im Ruhezustand von anderen Azure-Services zu verschlüsseln. Der Zugriff auf das öffentliche Netzwerk muss ebenfalls aktiviert sein, damit der Adobe-Mandant auf den Schlüsseltresor zugreifen kann.
+Sie müssen einen Schlüsseltresor erstellen, der Ihren Verschlüsselungsschlüssel enthält. Für den Schlüsseltresor muss der Bereinigungsschutz aktiviert sein. Der Bereinigungsschutz ist erforderlich, um Daten im Ruhezustand von anderen Azure-Services zu verschlüsseln. Der Zugriff auf das öffentliche Netzwerk muss ebenfalls aktiviert sein, damit der Adobe-Mandant auf den Schlüsseltresor zugreifen kann.
 
 >[!IMPORTANT]
->Die Erstellung des Schlüsseltresors mit deaktiviertem Zugriff auf das öffentliche Netzwerk erzwingt, dass alle Vorgänge im Zusammenhang mit dem Schlüsseltresor, wie Schlüsselerstellung oder -rotation, von einer Umgebung aus ausgeführt werden müssen, die Netzwerkzugriff auf den Schlüsseltresor hat - z. B. eine VM, die auf den Schlüsseltresor zugreifen kann.
+>Wenn der Schlüsseltresor erstellt wird, während der Zugriff auf das öffentliche Netzwerk deaktiviert ist, wird erzwungen, dass alle Vorgänge im Zusammenhang mit dem Schlüsseltresor, wie Schlüsselerstellung oder -rotation, von einer Umgebung aus ausgeführt werden müssen, die Netzwerkzugriff auf den Schlüsseltresor hat – z. B. eine VM, die auf den Schlüsseltresor zugreifen kann.
 
 ```powershell
 # Reuse this information from the previous step.
@@ -103,11 +103,11 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## Adobe Zugriff auf den Schlüsseltresor gewähren {#grant-adone-access-to-the-key-vault}
+## Gewähren des Zugriffs auf den Schlüsseltresor für Adobe {#grant-adone-access-to-the-key-vault}
 
-In diesem Schritt ermöglichen Sie Adobe den Zugriff auf Ihren Schlüsseltresor über eine Entra-Anwendung. Die ID der Entra-Anwendung sollte bereits von Adobe angegeben worden sein.
+In diesem Schritt ermöglichen Sie Adobe den Zugriff auf Ihren Schlüsseltresor über eine Entra-Anwendung. Die ID der Entra-Anwendung sollte bereits von Adobe zur Verfügung gestellt worden sein.
 
-Zunächst müssen Sie einen Service-Prinzipal erstellen, der an die Entra-Anwendung angehängt ist, und ihr die Rollen **Key Vault-Reader** und **Key Vault-** zuweisen. Die Rollen sind auf den in diesem Handbuch erstellten Schlüsseltresor beschränkt.
+Zunächst müssen Sie einen Dienstprinzipal erstellen, der an die Entra-Anwendung angehängt ist, und diesem die Rollen **Schlüsseltresorleser** und **Schlüsseltresor-Crypto-Benutzer** zuweisen. Die Rollen sind auf den in diesem Handbuch erstellten Schlüsseltresor beschränkt.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -130,9 +130,9 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypt
 
 ## Erstellen eines Verschlüsselungsschlüssels {#create-an-ecryption-key}
 
-Schließlich können Sie einen Verschlüsselungsschlüssel in Ihrem Schlüsseltresor erstellen. Bitte beachten Sie, dass Sie die Rolle **Key Vault Crypto Officer** benötigen, um diesen Schritt abzuschließen. Wenn der angemeldete Benutzer nicht über diese Rolle verfügt, wenden Sie sich an Ihren Systemadministrator, damit Ihnen diese Rolle zugewiesen wird, oder bitten Sie jemanden, der bereits über diese Rolle verfügt, diesen Schritt für Sie auszuführen.
+Schließlich können Sie einen Verschlüsselungsschlüssel in Ihrem Schlüsseltresor erstellen. Bitte beachten Sie, dass Sie die Rolle **Schlüsseltresor-Crypto-Beauftragter** benötigen, um diesen Schritt abzuschließen. Wenn die angemeldete Benutzerin bzw. der angemeldete Benutzer nicht über diese Rolle verfügt, wenden Sie sich an den oder die Systemadmin, damit Ihnen diese Rolle zugewiesen wird, oder bitten Sie jemanden, der bereits über diese Rolle verfügt, diesen Schritt für Sie auszuführen.
 
-Zum Erstellen des Verschlüsselungsschlüssels ist ein Netzwerkzugriff auf den Schlüsseltresor erforderlich. Stellen Sie zunächst sicher, dass Sie auf den Schlüsseltresor zugreifen können, und fahren Sie mit der Erstellung des Schlüssels fort:
+Zum Erstellen des Verschlüsselungsschlüssels ist Netzwerkzugriff auf den Schlüsseltresor erforderlich. Stellen Sie zunächst sicher, dass Sie auf den Schlüsseltresor zugreifen können, und fahren Sie mit der Erstellung des Schlüssels fort:
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -145,9 +145,9 @@ $keyName="<KEY NAME>"
 az keyvault key create --vault-name $keyVaultName --name $keyName
 ```
 
-## Schlüsseltresorinformationen freigeben {#share-the-key-vault-information}
+## Freigeben von Schlüsseltresorinformationen {#share-the-key-vault-information}
 
-An dieser Stelle sind Sie bereit. Sie müssen nur einige erforderliche Informationen mit Adobe teilen, der sich um die Konfiguration Ihrer Umgebung für Sie kümmert.
+An dieser Stelle sind Sie bereit. Sie müssen nur einige erforderliche Informationen an Adobe freigeben und wir kümmern uns um die Konfiguration Ihrer Umgebung für Sie.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -169,19 +169,19 @@ $subscriptionId="<Subscription ID>"
 ```
 
 
-## Auswirkungen der Sperrung des Schlüsselzugriffs {#implications-of-revoking-key-access}
+## Auswirkungen eines Widerrufs des Schlüsselzugriffs {#implications-of-revoking-key-access}
 
-Das Widerrufen oder Deaktivieren des Zugriffs auf die Schlüsseltresor-, Schlüssel- oder CMK-App kann zu erheblichen Unterbrechungen führen, darunter auch zu grundlegenden Änderungen an den Vorgängen Ihrer Plattform. Sobald diese Schlüssel deaktiviert sind, können Daten in Platform nicht mehr zugänglich sein, und nachgelagerte Vorgänge, die auf diese Daten angewiesen sind, funktionieren nicht mehr. Es ist wichtig, die nachgelagerten Auswirkungen vollständig zu verstehen, bevor Sie Änderungen an Ihren wichtigsten Konfigurationen vornehmen.
+Das Widerrufen oder Deaktivieren des Zugriffs auf die Key Vault-, Schlüssel- oder CMK-App kann zu erheblichen Störungen führen, darunter auch zu Änderungen an den Vorgängen Ihrer Plattform, die Probleme verursachen könnten. Sobald diese Schlüssel deaktiviert sind, kann es sein, dass Daten in Platform nicht mehr zugänglich sind, und nachgelagerte Vorgänge, die auf diese Daten angewiesen sind, funktionieren nicht mehr. Es ist wichtig, die nachgelagerten Auswirkungen vollständig zu verstehen, bevor Sie Änderungen an Ihren Schlüsselkonfigurationen vornehmen.
 
-Wenn Sie sich entscheiden, den Platform-Zugriff auf Ihre Daten zu sperren, können Sie dies tun, indem Sie die mit der Anwendung verknüpfte Benutzerrolle aus dem Schlüsseltresor in Azure entfernen.
+Wenn Sie sich entscheiden, den Platform-Zugriff auf Ihre Daten zu widerrufen, können Sie dies tun, indem Sie die mit der Anwendung verknüpfte Benutzerrolle aus dem Schlüsseltresor in Azure entfernen.
 
 ## Nächste Schritte {#next-steps}
 
-Adobe kontaktieren und freigeben:
+Kontaktaufnahme mit Adobe:
 
 * Die URL Ihres Schlüsseltresors. Sie haben sie in diesem Schritt abgerufen und in der Variablen `$keyVaultUri` gespeichert.
-* Der Name Ihres Verschlüsselungsschlüssels. Sie haben den Schlüssel in einem vorherigen Schritt erstellt und in der `$keyName`-Variablen gespeichert.
-* Die `$resourceGroup`, `$subscriptionId` und `$tenantId`, die zum Einrichten der Verbindung mit dem Schlüsseltresor erforderlich sind.
+* Der Name Ihres Verschlüsselungsschlüssels. Sie haben den Schlüssel in einem vorherigen Schritt erstellt und in der Variablen `$keyName` gespeichert.
+* `$resourceGroup`, `$subscriptionId` und `$tenantId`, die zum Einrichten der Verbindung mit dem Schlüsseltresor erforderlich sind.
 
 <!-- Alexandru: hiding this for now
 
@@ -196,8 +196,8 @@ Afterwards, an Adobe Engineer assigned to you will contact you to confirm the cr
 
 Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
 
-## Vom Kunden verwaltete Schlüssel in Private Beta {#customer-managed-keys-in-private-beta}
+## Kundenseitig verwaltete Schlüssel in Private Beta {#customer-managed-keys-in-private-beta}
 
-Das Engineering-Team von Adobe arbeitet derzeit an einer erweiterten Implementierung von CMK unter Verwendung des privaten Links von Azure. Die neue Implementierung ermöglicht die Freigabe Ihres Schlüssels über das Azure-Backbone dank einer direkten privaten Verbindungsverbindung zwischen dem Adobe-Mandanten und Ihrem Schlüsseltresor.
+Das Entwicklungs-Team von Adobe arbeitet derzeit an einer erweiterten Implementierung von CMK unter Verwendung von Azure Private Link. Die neue Implementierung ermöglicht die Freigabe Ihres Schlüssels über Azure-Backbone dank einer direkten Verbindung über Private Link zwischen dem Adobe-Mandanten und Key Vault.
 
-Diese erweiterte Implementierung befindet sich derzeit in Private Beta und kann für ausgewählte Kunden aktiviert werden, die sich damit einverstanden erklären, das Private Beta-Programm zu abonnieren und eng mit Adobe Engineering zusammenzuarbeiten. Wenn Sie an der Private Beta für CMK unter Verwendung des privaten Links interessiert sind, kontaktieren Sie Adobe für weitere Informationen.
+Diese erweiterte Implementierung befindet sich derzeit in Private Beta und kann für ausgewählte Kundinnen und Kunden aktiviert werden, die sich damit einverstanden erklären, das Private Beta-Programm zu abonnieren und eng mit dem Entwicklungs-Team von Adobe zusammenzuarbeiten. Wenn Sie an der Private Beta für CMK unter Verwendung von Private Link interessiert sind, kontaktieren Sie Adobe für weitere Informationen.
