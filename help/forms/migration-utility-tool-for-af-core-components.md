@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 8%
@@ -31,7 +31,7 @@ Das Forms-Konvertierungs-Dienstprogramm konvertiert adaptive Forms, die auf ält
 
 >[!NOTE]
 > 
-> Es wird empfohlen, die AEM-Modernisierungs-Tools in Ihrem lokalen AEM-Setup zu installieren. Migrieren Sie die auf Foundation-Komponenten basierende adaptive Forms in die auf Kernkomponenten basierenden Formulare. Laden Sie das Formular zusammen mit den Assets herunter. Laden Sie dann das Formular und seine Assets in die erforderliche Umgebung hoch.
+>Es wird empfohlen, die AEM-Modernisierungs-Tools in Ihrem lokalen AEM-Setup zu installieren. Migrieren Sie die auf Foundation-Komponenten basierende adaptive Forms in die auf Kernkomponenten basierenden Formulare. Laden Sie das Formular zusammen mit den Assets herunter. Laden Sie dann das Formular und seine Assets in die erforderliche Umgebung hoch.
 
 ## Überlegungen bei Verwendung der AEM-Modernisierungs-Tools {#considerations}
 
@@ -39,6 +39,7 @@ Das Forms-Konvertierungs-Dienstprogramm konvertiert adaptive Forms, die auf ält
 * Die im Originalformular verwendeten Übersetzungseinstellungen werden nicht übernommen. Konfigurieren Sie die Übersetzung für das konvertierte Formular neu.
 * Wenn das auf Foundation-Komponenten aufbauende Formular Skripte oder benutzerdefinierte Funktionsregeln enthält, müssen Sie diese für das konvertierte Formular auf der Grundlage von Kernkomponenten neu schreiben.
 * Die folgenden vorkonfigurierten Foundation-Komponenten werden in Kernkomponenten noch nicht unterstützt und daher in dem konvertierten Formular gelöscht:
+
    * Adobe Sign Block
    * Diagramm
    * Auflistung der Dateianhänge
@@ -54,10 +55,9 @@ Das Forms-Konvertierungs-Dienstprogramm konvertiert adaptive Forms, die auf ält
 
 * [Einrichten einer lokalen Entwicklungsumgebung für AEM Forms](/help/forms/setup-local-development-environment.md)
 * [Aktivieren der Kernkomponenten für adaptive Forms für Ihre Umgebung.](/help/forms/enable-adaptive-forms-core-components.md)
-
 * Fügen Sie Ihre Benutzer zur [!DNL forms-users] hinzu. Die Mitglieder der Gruppe [!DNL forms-users] sind berechtigt, ein adaptives Formular zu erstellen.
-
 * Benutzende mit den folgenden Rollen sind berechtigt, die AEM-Modernisierungs-Tools in einer AEM-Umgebung zu installieren:
+
    * Entwicklerrolle
    * Administratorrolle
 
@@ -68,7 +68,7 @@ Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unte
 So installieren und konfigurieren Sie die AEM-Modernisierungs-Tools:
 
 1. [Installieren der AEM-Modernisierungs-Tools in Ihrer lokalen AEM Forms-Umgebung](#install-aem-modernize-Tools)
-2. [Aktivieren der AEM-Modernisierungs-Tools für Ihre lokale AEM Forms-Umgebung](#enable-aem-modernize-Tools)
+1. [Aktivieren der AEM-Modernisierungs-Tools für Ihre lokale AEM Forms-Umgebung](#enable-aem-modernize-Tools)
 
 ### Installieren der AEM-Modernisierungs-Tools in Ihrer lokalen AEM Forms-Umgebung {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ Führen Sie die folgenden Schritte aus, um die AEM-Modernisierungs-Tools in Ihre
    ```Shell
        mvn clean install 
    ```
+
 ![Image für eine erfolgreiche Installation](/help/forms/assets/aem-modernize-install-steps.png)
 
 Nach erfolgreicher Installation werden die AEM-Modernisierungs-Tools für Ihre Umgebung verfügbar.
@@ -128,10 +129,12 @@ Um die AEM-Modernisierungs-Tools für Ihre AEM-Umgebung zu aktivieren und zu ver
 
 1. Geben Sie den **[!UICONTROL Auftragsnamen]** an.
 1. Auf der Registerkarte **[!UICONTROL Formular]** können Sie eine der folgenden Optionen auswählen:
+
    * **Keine** : Wählen Sie diese Option aus, wenn Sie keine Kopie der auf der Foundation-Komponente basierenden Formulare erstellen möchten, bevor Sie mit der Formularkonvertierung beginnen.
    * **Wiederherstellen** : Wählen Sie diese Option, um das Formular in dem Zustand wiederherzustellen, in dem es sich vor dem Beginn der Formularkonvertierung befand.
    * **In Target kopieren**: Wählen Sie diese Option, um eine Kopie der auf der Foundation-Komponente basierenden Formulare zu erstellen, bevor Sie mit der Formularkonvertierung beginnen.
-In unserem Fall ist die Option **In Target kopieren** ausgewählt. Wenn die Option **In Ziel kopieren** ausgewählt ist, werden die Optionen **[!UICONTROL Source]** und **[!UICONTROL Target Path]** angezeigt.
+
+   In unserem Fall ist die Option **In Target kopieren** ausgewählt. Wenn die Option **In Ziel kopieren** ausgewählt ist, werden die Optionen **[!UICONTROL Source]** und **[!UICONTROL Target Path]** angezeigt.
 
 1. Geben Sie den `source folder` im Pfad **[!UICONTROL Source]** an.
 1. Geben Sie den `target folder` im Feld **[!UICONTROL Zielpfad]** an.
@@ -152,6 +155,7 @@ In unserem Fall ist die Option **In Target kopieren** ausgewählt. Wenn die Opti
    Erfolgreiche Aktualisierung der ![AEM-Tools](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. Wählen Sie das adaptive Formular aus und klicken Sie auf **[!UICONTROL >]**. Die Seite mit den Formulareigenschaften wird geöffnet.
+
    ![Zielordner der AEM-Modernisierungs-Tools](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Wählen Sie **[!UICONTROL Speichern und schließen]** um die Eigenschaften des konvertierten Formulars erneut zu speichern.
