@@ -4,10 +4,10 @@ description: Verwalten von PDF-Dokumenten in  [!DNL Adobe Experience Manager]  a
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 100%
+source-wordcount: '853'
+ht-degree: 97%
 
 ---
 
@@ -19,13 +19,14 @@ ht-degree: 100%
 Experience Manager Assets ist nahtlos mit dem Document Cloud PDF Viewer integriert, mit dem Sie mehrere Seiten eines PDF-Dokuments in der Vorschau anzeigen können. Darüber hinaus können Sie erweiterte PDF-Viewer-Funktionen für Document Cloud verwenden, wie z. B. Anmerkungen, das Durchsuchen nach Texten, das Navigieren im PDF-Dokument mithilfe von Lesezeichen und Miniaturansichten und vieles mehr. Mit Experience Manager Assets können Sie auch Dokumente in anderen unterstützten Formaten hochladen und als PDF-Vorschau anzeigen.
 
 Document Cloud PDF Viewer bietet AEM Assets folgende Vorteile:
+
 * [Unterstützung von PDF Document Cloud Viewer-Komponenten](#pdf-doc-cloud)
 * [Unterstützung der Vorschau mehrerer Seiten und Anmerkungen für PDF-Assets](#multi-page)
 * [Unterstützung der Vorschau mehrerer Seiten von Dokumenten in anderen Formaten](#multi-format)
 
-> Tipp
-> Wenn Sie die Vorschau eines zuvor hochgeladenen PDF-Dokuments nicht für mehrere Seiten anzeigen können, wählen Sie die PDF-Datei aus und klicken Sie auf **![Neuverarbeitung](/help/assets/assets/Reprocess.svg) Assets erneut verarbeiten**.
+>[!TIP]
 >
+> Wenn Sie die Vorschau eines zuvor hochgeladenen PDF-Dokuments nicht für mehrere Seiten anzeigen können, wählen Sie die PDF aus und klicken Sie auf ![Erneut verarbeiten](/help/assets/assets/Reprocess.svg) **Assets erneut verarbeiten**.
 
 ## Unterstützung von PDF Document Cloud Viewer-Komponenten {#pdf-doc-cloud}
 
@@ -57,9 +58,9 @@ Mit Adobe Experience Manager Assets können Sie eine Vorschau eines PDF-Dokument
 
 Sie können auch [Anmerkungen](#pdf-annotations) zum PDF-Dokument in einer mehrseitigen Vorschau anwenden.
 
-> HINWEIS
-> Die maximale Größe eines Assets, das Sie in der Vorschau anzeigen können, beträgt 100 MB.
+>[!NOTE]
 >
+> Die maximale Größe eines Assets, das Sie in der Vorschau anzeigen können, beträgt 100 MB.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ Sie können auch [Anmerkungen](#pdf-annotations) zum PDF-Dokument in einer mehrs
 Mit Experience Manager Assets können Sie einem PDF-Dokument Kommentare hinzufügen. Ein PDF-Dokument kann mehrere Anmerkungen enthalten.
 
 Um einem PDF-Dokument Anmerkungen hinzuzufügen, führen Sie die folgenden Schritte aus:
+
 1. Gehen Sie zur Assets-Benutzeroberfläche und navigieren zum PDF-Dokument, dem Sie Anmerkungen hinzufügen möchten. Der native PDF-Viewer wird rechts mit der Vorschau des ausgewählten PDF-Dokuments geöffnet.
 1. Klicken Sie oben im Menü auf **Anmerken**.
 Im Folgenden finden Sie die Anmerkungen, die auf ein PDF-Dokument angewendet werden können:
@@ -126,15 +128,16 @@ Zusätzlich zu den PDF-Dokumenten können Sie auch eine Vorschau mehrerer Seiten
 ![Mehrseitige Vorschau von Dokumenten in anderen Formaten](/help/assets/assets/multi-page-other-formats.png)
 
 Für die mehrseitige Vorschau anderer unterstützter Dokumentenformate führen Sie die folgenden Schritte aus:
+
 1. Folgen Sie diesen Schritten, um [Assets in AEM hochzuladen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=de).
 1. Durchsuchen Sie das Dokument, das Sie hochladen und in der Vorschau anzeigen möchten.
 1. Öffnen Sie das Dokument.
 1. Wählen Sie im linken Bereich unter dem Abschnitt „Statisch“ die Option PDF aus. Das rechte Bedienfeld zeigt die mehrseitige Vorschau eines Assets an. Wählen Sie im linken Bedienfeld die Option Miniaturansicht aus, um die Seite auszuwählen, die Sie in der Vorschau anzeigen möchten.
 
-> HINWEIS
+>[!NOTE]
+>
 > * Die maximale Größe eines Assets, das Sie in der Vorschau anzeigen können, beträgt 100 MB.
 > * Die maximale Größe von XLS- oder XLSX-Dateien für die Vorschau beträgt 20 MB.
->
 
 **Siehe auch**
 
