@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
+source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
 workflow-type: tm+mt
-source-wordcount: '4863'
-ht-degree: 100%
+source-wordcount: '4990'
+ht-degree: 97%
 
 ---
 
@@ -548,23 +548,23 @@ Durch Zurücksetzen der RDE werden der gesamte benutzerdefinierte Code, Konfigur
 
 Durch Zurücksetzen wird die RDE auf die neueste AEM-Version festgelegt.
 
-<!-- Alexandru: hiding for now, do not delete
+Das Zurücksetzen kann über [Cloud Manager](#reset-the-rde-cloud-manager) oder über die [Befehlszeile](#reset-the-rde-command-line) erfolgen. Das Zurücksetzen dauert einige Minuten, und der gesamte vorhandene Inhalt sowie der gesamte Code werden aus der RDE gelöscht.
 
-Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
-
->[NOTE!]
+>[HINWEIS!]
 >
->You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
+>Ihnen muss die Cloud Manager-Entwicklerrolle zugewiesen sein, um die Funktion zum Zurücksetzen verwenden zu können. Andernfalls führt eine Aktion zum Zurücksetzen zu einem Fehler.
 
-### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
+### Zurücksetzen der RDE über die Befehlszeile {#reset-the-rde-command-line}
 
-You can reset the RDE and return it to a default state by running:
+Sie können die RDE zurücksetzen und sie auf einen Standardstatus zurücksetzen, indem Sie Folgendes ausführen:
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+Dieser Vorgang dauert in der Regel einige Minuten und meldet ```Environment reset.``` bei Erfolg oder ```Failed to reset the environment.```. Eine strukturierte Ausgabe finden Sie weiter unten im Kapitel über ```--json``` Ausgabe.
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+Verwenden Sie den [Statusbefehl](#checking-rde-status), um zu überprüfen, ob die Umgebung wieder bereit ist.
+
+### Zurücksetzen der RDE in Cloud Manager {#reset-the-rde-cloud-manager}
 
 Sie können Cloud Manager verwenden, um Ihre RDE zurückzusetzen, indem Sie die folgenden Schritte ausführen:
 
@@ -942,7 +942,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
 }
 ```
 
-#### Auf Abschluss warten {#wait}
+#### Auf Abschluss warten, erfolgreich zurückgesetzt {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -951,6 +951,18 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+
+#### Warten auf Abschluss, Zurücksetzen fehlgeschlagen {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 
