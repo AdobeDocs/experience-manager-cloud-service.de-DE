@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1975'
 ht-degree: 2%
 
 ---
@@ -31,23 +31,21 @@ Es gibt eine Option für das Routing der AEM- und Apache-/Dispatcher-Protokolle 
 
 Beachten Sie, dass die Netzwerkbandbreite, die mit den an das Protokollierungsziel gesendeten Protokollen verbunden ist, als Teil der Netzwerk-E/A-Nutzung Ihres Unternehmens betrachtet wird.
 
-
 ## Wie dieser Artikel organisiert ist {#how-organized}
 
 Dieser Artikel ist wie folgt aufgebaut:
 
 * Setup - für alle Protokollierungsziele gleich
+* Transport und erweiterte Netzwerkfunktionen: Vor der Erstellung der Protokollierungskonfiguration sollte die Netzwerkeinrichtung berücksichtigt werden.
 * Protokollieren von Zielkonfigurationen - Jedes Ziel hat ein leicht unterschiedliches Format
 * Protokolleintragsformate : Informationen zu den Protokolleintragsformaten
-* Erweiterte Netzwerke - Senden von AEM- und Apache/Dispatcher-Protokollen über einen dedizierten Ausgang oder ein VPN
 * Migration von der alten Protokollweiterleitung - Wie wechselt man von der zuvor per Adobe eingerichteten Protokollweiterleitung zum Self-Service-Ansatz?
-
 
 ## Einrichtung {#setup}
 
 1. Erstellen Sie eine Datei mit dem Namen `logForwarding.yaml`. Sie sollte Metadaten enthalten, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#common-syntax) beschrieben (**kind** sollte auf `LogForwarding` und Version auf „1“ festgelegt sein), mit einer Konfiguration, die der folgenden ähnelt (wir verwenden Splunk als Beispiel).
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ Token in der Konfiguration (z. B. `${{SPLUNK_TOKEN}}`) stellen geheime Daten dar
 
 Es ist möglich, zwischen CDN-Protokollen und AEM-Protokollen (einschließlich Apache/Dispatcher) unterschiedliche Werte festzulegen, indem nach dem Block **default** ein zusätzlicher **cdn**- und/oder **aem**-Block eingefügt wird. Dabei können Eigenschaften die im Block **default** definierten Werte überschreiben. Nur die Eigenschaft „enabled“ ist erforderlich. Ein möglicher Anwendungsfall könnte die Verwendung eines anderen Splunk-Index für CDN-Protokolle sein, wie im folgenden Beispiel veranschaulicht.
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ Es ist möglich, zwischen CDN-Protokollen und AEM-Protokollen (einschließlich A
 
 Ein weiteres Szenario besteht darin, entweder die Weiterleitung der CDN-Protokolle oder der AEM-Protokolle (einschließlich Apache/Dispatcher) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ Ein weiteres Szenario besteht darin, entweder die Weiterleitung der CDN-Protokol
          enabled: false
 ```
 
+## Transport und erweiterte Vernetzung {#transport-advancednetworking}
+
+Einige Organisationen entscheiden sich dafür, einzuschränken, welcher Traffic von den Protokollierungszielen empfangen werden kann. Andere benötigen möglicherweise andere Ports als HTTPS (443).  Wenn ja[ müssen ](/help/security/configuring-advanced-networking.md)Erweiterte Netzwerke“ vor der Bereitstellung der Protokollweiterleitungskonfiguration konfiguriert werden.
+
+In der folgenden Tabelle sehen Sie, welche Anforderungen an die erweiterte Netzwerk- und Protokollierungskonfiguration gestellt werden, je nachdem, ob Sie Port 443 verwenden oder nicht und ob Ihre Protokolle über eine feste IP-Adresse angezeigt werden müssen oder nicht.
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Ziel-Port</th>
+      <th>Sollen Protokolle über eine feste IP-Adresse angezeigt werden?</th>
+      <th>Erweiterte Netzwerkfunktionen erforderlich</th>
+      <th>Port-Definition für logForwarding.yaml erforderlich</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS (443)</td>
+      <td>Nein</td>
+      <td>Nein</td>
+      <td>Nein</td>
+    </tr>
+    <tr>
+      <td>Ja</td>
+      <td>Ja, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">dedizierter Ausgang</a></td>
+      <td>Nein</td>
+    <tr>
+    <tr>
+      <td rowspan="2">Nicht standardmäßiger Port (z. B. 8088)</td>
+      <td>Nein</td>
+      <td>Ja, <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">Flexibler Ausgang</a></td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Ja</td>
+      <td>Ja, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">dedizierter Ausgang</a></td>
+      <td>Ja</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>Ob Ihre Protokolle von einer einzelnen IP-Adresse aus angezeigt werden, hängt von der gewählten erweiterten Netzwerkkonfiguration ab.  Um dies zu erleichtern, muss ein dedizierter Ausgang verwendet werden.
+>
+> Die erweiterte Netzwerkkonfiguration ist ein [zweistufiger Prozess](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) der eine Aktivierung auf Programm- und Umgebungsebene erfordert.
+
+Für AEM-Protokolle (einschließlich Apache/Dispatcher) können Sie, wenn Sie [Erweiterte Netzwerke](/help/security/configuring-advanced-networking.md) konfiguriert haben, die `aem.advancedNetworking`-Eigenschaft verwenden, um sie von einer dedizierten Ausgangs-IP-Adresse oder über ein VPN weiterzuleiten.
+
+Das folgende Beispiel zeigt, wie die Protokollierung an einem Standard-HTTPS-Port mit erweiterten Netzwerkfunktionen konfiguriert wird.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+Für CDN-Protokolle können Sie die IP-Adressen auf die Zulassungsliste setzen, wie unter [Fastly-Dokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn diese Liste freigegebener IP-Adressen zu groß ist, sollten Sie Traffic an einen HTTPS-Server oder (Nicht-Adobe) Azure Blob Store senden, wo Logiken geschrieben werden können, um die Protokolle von einer bekannten IP an ihr endgültiges Ziel zu senden.
+
+>[!NOTE]
+>Es ist nicht möglich, dass CDN-Protokolle von derselben IP-Adresse aus angezeigt werden, von der Ihre AEM-Protokolle stammen. Dies liegt daran, dass Protokolle direkt von Fastly und nicht von AEM Cloud Service gesendet werden.
+
 ## Protokollierungszielkonfiguration {#logging-destinations}
 
 Konfigurationen für die unterstützten Protokollierungsziele sind unten aufgeführt, zusammen mit etwaigen spezifischen Überlegungen.
 
 ### Azure Blob Storage {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ Jeder der global verteilten Logging-Server erzeugt alle paar Sekunden eine neue 
 
 Beispielsweise zu einem bestimmten Zeitpunkt:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 Und dann 30 Sekunden später:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Jede Datei enthält mehrere JSON-Protokolleinträge, die sich jeweils in einer separaten Zeile befinden. Die Protokolleintragsformate werden unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Jeder Protokolleintrag enthält auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-format) unten erwähnt werden.
+Jede Datei enthält mehrere JSON-Protokolleinträge, die sich jeweils in einer separaten Zeile befinden. Die Protokolleintragsformate werden unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Jeder Protokolleintrag enthält auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-formats) unten erwähnt werden.
 
 #### Azure Blob Storage-AEM-Protokolle {#azureblob-aem}
 
@@ -181,10 +256,9 @@ Unter jedem Ordner wird eine einzelne Datei erstellt und an sie angehängt. Kund
 
 Weitere Informationen finden Sie in den Protokolleintragsformaten unter &quot;[ für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Die Protokolleinträge enthalten auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-formats) unten erwähnt werden.
 
-
 ### Datadog {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ data:
 * Das Datadog-Service-Tag ist auf `adobeaemcloud` festgelegt, kann jedoch im Tags-Abschnitt überschrieben werden
 * Wenn Ihre Aufnahme-Pipeline Datadog-Tags verwendet, um den entsprechenden Index für Weiterleitungsprotokolle zu ermitteln, stellen Sie sicher, dass diese Tags in der YAML-Datei für die Protokollweiterleitung korrekt konfiguriert sind. Fehlende Tags können eine erfolgreiche Protokollaufnahme verhindern, wenn die Pipeline von ihnen abhängig ist.
 
-
-
 ### Elasticsearch und OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ data:
 * Für AEM-Protokolle ist `index` auf eines der folgenden festgelegt: `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` oder `aemhttpderror`
 * Die optionale Pipeline-Eigenschaft sollte auf den Namen der Elasticsearch- oder OpenSearch-Aufnahme-Pipeline festgelegt werden, die so konfiguriert werden kann, dass der Protokolleintrag an den entsprechenden Index weitergeleitet wird. Der Prozessortyp der Pipeline muss auf &quot;*&quot;* und die Skriptsprache sollte auf &quot;*&quot;*. Hier finden Sie ein Beispielskript-Snippet zum Routen von Protokolleinträgen in einen Index wie aemaccess_dev_26_06_2024:
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, für die der Wert `aem
 
 #### HTTPS-AEM-Protokolle {#https-aem}
 
-Bei AEM-Protokollen (einschließlich Apache/Dispatcher) werden Web-Anfragen (POSTs) kontinuierlich mit einer JSON-Payload gesendet, die ein Array von Protokolleinträgen mit den verschiedenen Protokolleintragsformaten ist, wie unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-format) unten beschrieben.
+Bei AEM-Protokollen (einschließlich Apache/Dispatcher) werden Web-Anfragen (POSTs) kontinuierlich mit einer JSON-Payload gesendet, die ein Array von Protokolleinträgen mit den verschiedenen Protokolleintragsformaten ist, wie unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-formats) unten beschrieben.
 
 Es gibt auch eine Eigenschaft mit dem Namen `Source-Type`, die auf einen der folgenden Werte eingestellt ist:
 
@@ -292,7 +364,7 @@ Es gibt auch eine Eigenschaft mit dem Namen `Source-Type`, die auf einen der fol
 
 ### Splunk {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ data:
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
 * Wenn die erforderlichen IPs auf die Zulassungsliste gesetzt wurden und die Protokolle immer noch nicht bereitgestellt werden, stellen Sie sicher, dass es keine Firewall-Regeln gibt, die die Splunk-Token-Validierung erzwingen. Fastly führt einen anfänglichen Validierungsschritt durch, bei dem absichtlich ein ungültiges Splunk-Token gesendet wird. Wenn Ihre Firewall so eingestellt ist, dass Verbindungen mit ungültigen Splunk-Token beendet werden, schlägt der Validierungsprozess fehl, was Fastly daran hindert, Protokolle an Ihre Splunk-Instanz zu senden.
 
-
 >[!NOTE]
 >
 > [Bei der Migration](#legacy-migration) von der alten Protokollweiterleitung zu diesem Self-Service-Modell haben sich die Werte des `sourcetype`-Felds, die an Ihren Splunk-Index gesendet werden, möglicherweise geändert. Passen Sie sie daher entsprechend an.
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ Da Protokolle aus mehreren Programmen und Umgebungen an dasselbe Protokollierung
 
 Beispielsweise könnten die Eigenschaften die folgenden Werte aufweisen:
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## Erweiterte Netzwerkfunktionen {#advanced-networking}
-
-Einige Organisationen entscheiden sich dafür, den Traffic einzuschränken, der von den Protokollierungszielen empfangen werden kann.
-
-Für das CDN-Protokoll können Sie die IP-Adressen auf die Zulassungsliste setzen, wie unter [Fastly-Dokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn diese Liste freigegebener IP-Adressen zu groß ist, sollten Sie Traffic an einen HTTPS-Server oder (Nicht-Adobe) Azure Blob Store senden, wo Logiken geschrieben werden können, um die Protokolle von einer bekannten IP an ihr endgültiges Ziel zu senden.
-
-Für AEM-Protokolle (einschließlich Apache/Dispatcher) können Sie, wenn Sie [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md) konfiguriert haben, die Eigenschaft „advancedNetworking“ verwenden, um sie von einer dedizierten Ausgangs-IP-Adresse oder über ein VPN weiterzuleiten.
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## Migration von der alten Protokollweiterleitung {#legacy-migration}
@@ -399,10 +444,6 @@ Wenn Sie zur Migration bereit sind, konfigurieren Sie einfach die YAML-Datei wie
 Es wird empfohlen, aber nicht erforderlich, dass eine Konfiguration in allen Umgebungen bereitgestellt wird, sodass sie alle unter Selbstbedienungssteuerung stehen. Andernfalls können Sie vergessen, welche Umgebungen per Adobe konfiguriert wurden, anstatt diejenigen, die eigenständig konfiguriert wurden.
 
 >[!NOTE]
->
 >Die Werte des `sourcetype`, die an Ihren Splunk-Index gesendet werden, haben sich möglicherweise geändert. Passen Sie sie daher entsprechend an.
-
->[!NOTE]
 >
 >Wenn die Protokollweiterleitung in einer Umgebung bereitgestellt wird, die zuvor vom Adobe-Support konfiguriert wurde, erhalten Sie möglicherweise doppelte Protokolle für bis zu einige Stunden. Dies wird sich schließlich automatisch auflösen.
-
