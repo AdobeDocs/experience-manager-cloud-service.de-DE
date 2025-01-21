@@ -4,9 +4,9 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 92%
 
 ---
@@ -67,9 +67,8 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn beispielsweise der Name der Verzweigung `main`, das Repository `wefinance` und der Eigentümer `wkndform` ist, würde die Website unter [https://main--wefinance--wkndform.aem.page ausgeführt](https://main--wefinance--wkndform.aem.page)
-
-
+   Wenn beispielsweise der Name der Verzweigung `main`, das Repository `wefinance` und der Eigentümer `wkndforms` ist, würde die Website unter `https://main--wefinance--wkndforms.aem.page` ausgeführt
+&lt;!—(https://main--wefinance--wkndform.aem.page)-->
 
 ### Verknüpfen Ihrer eigenen Inhaltsquelle
 
@@ -135,8 +134,6 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 
    1. Übergeben Sie die aktualisierte Datei `fsatb.yaml`, sobald Sie die Referenz aktualisiert haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
 
-
-
       ![Übergeben der aktualisierten Datei fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       Dadurch wird Ihr Inhaltsordner mit Ihrer Website verbunden.  Nach der Aktualisierung der Referenz treten möglicherweise anfänglich Fehler vom Typ „404 nicht gefunden“ auf. Dies liegt daran, dass Ihre Inhalte noch nicht in der Vorschau angezeigt wurden. Im nächsten Abschnitt wird erläutert, wie Sie mit der Bearbeitung und Vorschau Ihres Inhalts beginnen können.
@@ -185,7 +182,8 @@ So zeigen Sie nicht veröffentlichte Inhalte in einer Vorschau an:
 
    URL.`https://<branch>--<repo>--<owner>.aem.page/enquiry`
 
-   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, es sich unter dem Kontoinhaber „wkndform“ befindet und Sie die Verzweigung „main“ und den Formularnamen als `enquiry` verwenden, lautet die URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
+   Wenn sich beispielsweise das Repository Ihres Projekts namens „wefinance“ unter dem Kontoinhaber „wkndform“ befindet und Sie die Verzweigung „main“ und den Formularnamen als `enquiry` verwenden, lautet die URL: `https://main--wefinance--wkndform.aem.live/enquiry`.
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Erstellen eines Formulars
 
@@ -199,7 +197,7 @@ Aktualisieren wir zunächst einen Feldtitel. Öffnen Sie das Blatt „enquiry“
 
 Wenn Sie die Datei in einer Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau- (.aem.page) oder Veröffentlichungs- (.aem.live)-URL der Datei.
 
-![JSON des Formular-Arbeitsblatts](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![JSON des Formular-Arbeitsblatts](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 Öffnen Sie die `enquiry`-Datei und ersetzen Sie die URL im Formularblock durch die URL der im vorherigen Schritt kopierten Datei. Stellen Sie sicher, dass die URL ein Hyperlink ist.
 
@@ -220,9 +218,12 @@ Um eine Vorschau des aktualisierten Formulars „enquiry“ anzuzeigen, gehen Si
 
 Der Titel der Senden-Schaltfläche wird in `Let's Talk` geändert.
 
-[![Anfrageformular](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![Formular „enquiry“](/help/edge/assets/updated-form.png)
 
-URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 Ausführliche Informationen zum Erstellen und Veröffentlichen eines neuen Formulars finden Sie in der Anleitung [Erstellen eines Formulars](/help/edge/docs/forms/create-forms.md).

@@ -4,17 +4,17 @@ description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und 
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 65%
 
 ---
 
 # Einrichten von Google Tabellen- oder Microsoft Excel-Dateien für die Datenaufnahme
 
 
-Sobald Sie [das Formular erstellt und in der Vorschau angezeigt haben](/help/edge/docs/forms/create-forms.md), ist es an der Zeit, die entsprechende Tabelle so zu aktivieren, dass sie Daten empfängt. Sie können die Tabelle manuell für die Datenaufnahme aktivieren oder Admin-APIs verwenden, um Datenaufnahme in einer Tabelle zu ermöglichen.
+Nachdem Sie [das Formular erstellt und in der Vorschau angezeigt](/help/edge/docs/forms/create-forms.md), können Sie die entsprechende Tabelle aktivieren, um mit dem Empfang von Daten zu beginnen. Sie können die Tabelle manuell für die Datenaufnahme aktivieren oder Admin-APIs verwenden, um Datenaufnahme in einer Tabelle zu ermöglichen.
 
 ![Das Ökosystem des dokumentbasierten Authorings](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ So ermöglichen Sie die Datenaufnahme in der Tabelle:
    >
    > Wenn das Blatt `incoming` nicht vorhanden ist, sendet AEM keine Daten an die Tabelle.
 
-2. Fügen Sie aus diesem Blatt eine Tabelle mit dem Namen „intake_form“ ein. Wählen Sie die Anzahl der Spalten aus, die zum Abgleich der Formularfeldnamen erforderlich sind. Navigieren Sie dann in der Symbolleiste zu „Einfügen“ > „Tabelle“ und klicken Sie auf „OK“.
+1. Fügen Sie aus diesem Blatt eine Tabelle mit dem Namen „intake_form“ ein. Wählen Sie die Anzahl der Spalten aus, die zum Abgleich der Formularfeldnamen erforderlich sind. Navigieren Sie dann in der Symbolleiste zu „Einfügen“ > „Tabelle“ und klicken Sie auf „OK“.
 
-3. Ändern Sie den Namen der Tabelle in „intake_form“. Um in Microsoft Excel den Tabellennamen zu ändern, wählen Sie die Tabelle aus und klicken Sie auf „Tabellendesign“.
+1. Ändern Sie den Namen der Tabelle in „intake_form“. Um in Microsoft Excel den Tabellennamen zu ändern, wählen Sie die Tabelle aus und klicken Sie auf „Tabellendesign“.
 
-4. Fügen Sie als Nächstes die Formularfeldnamen als Tabellenkopfzeilen hinzu. Um sicherzustellen, dass die Felder genau gleich sind, können Sie sie aus dem Blatt „shared-default“ kopieren und einfügen.   Wählen Sie auf Ihrem Blatt „shared-default“ die unter der Spalte „Name“ aufgeführten Formular-IDs aus und kopieren Sie sie, mit Ausnahme des Felds „Senden“.
+1. Fügen Sie als Nächstes die Formularfeldnamen als Tabellenkopfzeilen hinzu. Um sicherzustellen, dass die Felder genau identisch sind, können Sie sie aus dem Blatt „shared-aem“ kopieren und einfügen.  Wählen Sie in Ihrem Blatt „Shared-AEM“ die Formular-IDs aus, die unter der Spalte „Name“ aufgeführt sind, und kopieren Sie sie, mit Ausnahme des Felds „Senden“.
 
-5. Wählen Sie im Blatt „eingehend“ die Option „Sonderzeichen einfügen“ > „Zeilen in Spalten exportieren“, um die Feld-IDs als Spaltenkopfzeilen in dieses neue Blatt zu kopieren. Behalten Sie nur die Felder bei, deren Daten erfasst werden müssen. Andere Felder können ignoriert werden.
+1. Wählen Sie im Blatt „eingehend“ die Option „Sonderzeichen einfügen“ > „Zeilen in Spalten exportieren“, um die Feld-IDs als Spaltenkopfzeilen in dieses neue Blatt zu kopieren. Behalten Sie nur die Felder bei, deren Daten erfasst werden müssen. Andere Felder können ignoriert werden.
 
-   Jeder Wert in der Spalte `Name` des Blattes `shared-default`, mit Ausnahme der Senden-Schaltfläche, kann als Kopfzeile im Blatt `incoming` dienen. Betrachten Sie beispielsweise das folgende Bild, das Kopfzeilen für ein Formular „Anfrage“ veranschaulicht:
+   Jeder Wert in der Spalte `Name` des Blattes `shared-aem`, mit Ausnahme der Senden-Schaltfläche, kann als Kopfzeile im Blatt `incoming` dienen. Betrachten Sie beispielsweise das folgende Bild, das Kopfzeilen für ein Formular „Anfrage“ veranschaulicht:
 
    ![Felder für das Formular „contact-us“](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. Verwenden Sie die Erweiterung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Formularaktualisierungen anzuzeigen. Ihr Blatt kann jetzt eingehende Formularübermittlungen aufnehmen.
+1. Verwenden Sie die Erweiterung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Formularaktualisierungen anzuzeigen. Ihr Blatt kann jetzt eingehende Formularübermittlungen aufnehmen.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Nachdem das Blatt für den Datenempfang eingerichtet wurde, können Sie [Vorscha
 
 >[!WARNING]
 >
->  Die Blätter namens „shared-default“ dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, für die Sie keinen öffentlichen Zugriff wünschen.
+>  Die „Shared-AEM“-Blätter sollten niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, bei denen Sie nicht sicher sind, ob sie öffentlich zugänglich sind.
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

@@ -4,10 +4,10 @@ description: Die Dropdown-Listenoptionen sind in einer gesonderten Tabelle entha
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 93%
+source-wordcount: '506'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,8 @@ Geben Sie Ihre Länderoptionen in die Spalte „Option“ (und ggf. in die Spalt
 1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt `shared-country` unter Verwendung von [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, befindet es sich unter dem Kontoinhaber „wkdform“ und Sie verwenden die „Haupt“-Verzweigung, die URL, die das `shared-country` anzeigt:
-   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -80,9 +81,10 @@ Um die URL zum Laden der Dropdown-Listenoptionen hinzuzufügen, rufen Sie die [A
 
 Nach der Integration der URL in die Formulardefinition zum Laden der Dropdown-Listenoptionen beginnen die Optionen für die Dropdown-Liste `Destination` aus der URL zu erscheinen.
 
-<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
+Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Kontoinhaber „wkdform“ befindet und Sie die „Haupt“-Verzweigung verwenden, zeigt die folgende URL das `enquiry` Formular mit den in der separaten Tabelle gespeicherten Optionen an:
 
-[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
 -->
 
 ## Siehe auch

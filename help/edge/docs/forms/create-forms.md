@@ -4,10 +4,10 @@ description: Perfekte Formulare im Handumdrehen! ⚡ Dokumentenbasierte Inhaltse
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 88%
+source-wordcount: '782'
+ht-degree: 86%
 
 ---
 
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ Schritt 1: Erstellen Sie ein Formular mit Microsoft Excel oder Google Tabellen.
 
 Anstatt durch komplexe Prozesse zu navigieren, kann das Erstellen eines Formulars mühelos mithilfe einer Tabelle erfolgen. Sie können die Zeilen und Spalten definieren, aus denen die Formularstruktur besteht. Jede Zeile stellt ein einzelnes [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) dar und die Spaltenüberschriften definieren die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties).
@@ -76,15 +74,15 @@ So setzen Sie die Formularerstellung fort:
 
 1. Erstellen Sie eine Microsoft Excel-Arbeitsmappe oder ein Google-Blatt an einer beliebigen Stelle in Ihrem AEM Edge Delivery-Projektverzeichnis.  Erstellen Sie beispielsweise eine Tabelle mit dem Namen `enquiry` im AEM Edge Delivery-Projektverzeichnis auf Google Drive.
 
-   ![Beispielinhalt auf Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. Stellen Sie sicher, dass das Blatt für die entsprechenden AEM-Benutzenden (z. B. `forms@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen freigegeben ist](https://www.aem.live/docs/setup-customer-sharepoint). Gewähren Sie für das Blatt die Berechtigung zum Bearbeiten durch Benutzende.
 
-1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in „shared-default“ um.
+1. Öffnen Sie die erstellte Tabelle und benennen Sie die Standardtabelle in „shared-aem“ um.
 
    ![Umbenennen des Standardblatts in „shared-default“](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das Blatt „shared-default“ ein. Jede Zeile sollte ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) darstellen, wobei die Spaltenüberschriften die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties) definieren.
+1. Um die Formularfelder hinzuzufügen, fügen Sie Zeilen und Spaltenüberschriften in das Blatt „shared-aem“ ein. Jede Zeile sollte ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) darstellen, wobei die Spaltenüberschriften die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties) definieren.
 
 
    Für einen schnellen Start können Sie den Inhalt der [Abfragetabelle](/help/edge/assets/enquiry.xlsx) in Ihre Tabelle kopieren. Speichern Sie die Tabelle, nachdem Sie den Inhalt kopiert haben.
@@ -109,7 +107,8 @@ So setzen Sie die Formularerstellung fort:
 
    Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, sich dieses unter dem Konto „WKNDorm“ befindet und Sie die „Haupt“-Verzweigung verwenden, sieht die URL wie folgt aus:
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun ei
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![Hinzufügen eines adaptiven Formularbausteins zu Ihrer Web-Seite](/help/edge/assets/enquiry-doc-to-embed-form.png)

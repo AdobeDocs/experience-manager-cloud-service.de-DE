@@ -4,10 +4,10 @@ description: Veröffentlichen von Edge Delivery Services für AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 77%
+source-wordcount: '587'
+ht-degree: 78%
 
 ---
 
@@ -53,7 +53,8 @@ Sobald Sie bereit sind, Ihr Formular für Ihre Kundschaft zur Datenerfassung ode
 
    Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, es sich unter dem Konto „WKNDorm“ befindet und Sie die Verzweigung „Main“ und das Formular als „Anfrage“ verwenden, sieht die URL wie folgt aus:
 
-   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -74,7 +75,7 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![Hinzufügen eines Blocks mit dem Namen „Formular“ zu der Datei](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -95,16 +96,16 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **Veröffentlichungs-URL**
 
    | Formular |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Webseite anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](/help/edge/assets/enquiry.xlsx):
+1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Webseite anzuzeigen. Das Formular wird jetzt auf der Seite angezeigt. Hier basiert das Formular beispielsweise auf der [Abfragetabelle](/help/edge/assets/enquiry-form.docx):
 
 
    ![Beispiel für ein EDS-Formular](/help/edge/assets/updated-form.png)
