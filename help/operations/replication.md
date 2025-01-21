@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der R
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
+source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
 workflow-type: tm+mt
 source-wordcount: '1701'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -99,7 +99,7 @@ So erstellen Sie ein Workflow-Modell, das den Prozessschritt `TreeActivation` ve
 | Name | Beschreibung |
 | ------------- | ------------------------------------------- |
 | onlyModified | Die Knoten, die seit der letzten Veröffentlichung geändert wurden. |
-| onlyPublished | Die Knoten, die zuvor veröffentlicht wurden. |
+| onlyActivated | Die Knoten, die zuvor veröffentlicht wurden. |
 
 
 **Fortsetzung der Unterstützung**
