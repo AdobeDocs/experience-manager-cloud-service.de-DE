@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 42db7e5d4896a4a488643cb54f0b77cf4db86f3e
+source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Einige Vorteile der Verwendung des Forms-Übermittlungs-Service mit Tabellen sin
 Im Folgenden finden Sie die Voraussetzungen für die Verwendung des Forms-Übermittlungsdienstes:
 
 * Stellen Sie sicher, dass Ihr AEM-Projekt über den neuesten adaptiven Formularblock verfügt.
-* Stellen Sie sicher, dass Ihr Git-Repository zur -Zulassungsliste hinzugefügt wird, um den Forms-Übermittlungs-Service zu verwenden. Bitte fügen Sie mailto:aem-forms-ea@adobe.com mit Ihrem GitHub-Organisationsnamen und Repository-Namen hinzu, damit diese zur Zulassungsliste für die Verwendung des Forms Submission Service hinzugefügt werden.
+* Stellen Sie sicher, dass Ihr Git-Repository zur -Zulassungsliste hinzugefügt wird, um den Forms-Übermittlungs-Service zu verwenden. Bitte [mailto:aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit Ihrem GitHub-Organisationsnamen und Repository-Namen angeben, damit diese zur Zulassungsliste hinzugefügt werden, um den Forms Submission Service zu verwenden.
 
 ## Konfigurieren des Forms-Sendedienstes
 
