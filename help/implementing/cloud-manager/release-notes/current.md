@@ -4,14 +4,16 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
+source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 22%
+source-wordcount: '412'
+ht-degree: 19%
 
 ---
 
 # Versionshinweise für Cloud Manager 2025.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+
+<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
 Erfahren Sie mehr über die Version Cloud Manager 2025.1.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
@@ -28,7 +30,7 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 13. Februar 20
 
 ## Neue Funktionen {#what-is-new}
 
-* **Regeln zur Code-Qualität:** Der Schritt &quot;Cloud Manager-Code-Qualität“ beginnt mit der Verwendung von SonarQube Server 9.9 mit Cloud Manager Version 2025.2.0, geplant für Donnerstag, 13. Februar 2025.
+* **Regeln zur Code-Qualität - SonarQube-Server-Upgrade:** Der Schritt &quot;Cloud Manager-Code-Qualität“ wird ab Donnerstag, 13. Februar 2025, die Verwendung von SonarQube-Server 9.9 mit der Version Cloud Manager 2025.2.0 planen.
 
 Zur Vorbereitung sind aktualisierte SonarQube-Regeln jetzt verfügbar unter [Code-Qualitätsregeln](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
@@ -56,6 +58,10 @@ Legen Sie außerdem die folgende Variable fest, um sicherzustellen, dass der Cod
       * Die Java 21-Laufzeit wird beim Erstellen mit Java 17 oder Java 21 bereitgestellt.
       * Der schrittweise Rollout für alle Cloud Manager-Umgebungen beginnt im Februar für Sandboxes und Entwicklungsumgebungen und erstreckt sich im April auf Produktionsumgebungen.
       * Kunden, die mit Java 11 erstellen und die Java 21-Laufzeitumgebung (früher) *möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
+
+* **CDN-Konfigurationen“ in „Domain-Zuordnungen“ umbenannt:** Im Rahmen der Verbesserungen der Benutzeroberfläche in AEM Cloud Manager wird die Bezeichnung „CDN-Konfigurationen“ jetzt in „Domain-Zuordnungen“ umbenannt, um die Terminologieausrichtung an der Funktionalität zu verbessern. <!-- CMGR-64738 -->
+
+  ![CDN-Konfigurationen“ wurden in der Benutzeroberfläche in „Domain-Zuordnungen“ umbenannt](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
 
 <!-- ## Early adoption program {#early-adoption}
