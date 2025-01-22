@@ -3,9 +3,10 @@ title: Versionshinweise für Cloud Manager 2025.1.0 in Adobe Experience Manager 
 description: Erfahren Sie mehr über die Version Cloud Manager 2025.1.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '367'
 ht-degree: 22%
 
 ---
@@ -49,12 +50,12 @@ Legen Sie außerdem die folgende Variable fest, um sicherzustellen, dass der Cod
 
    * **Funktionsaktivierung**
       * Diese Funktion wird am Donnerstag, dem 13. Februar 2025, zeitgleich mit dem standardmäßigen Rollout der neuen SonarQube-Version für alle Kunden aktiviert.
-      * Kunden können sie *sofort aktivieren* indem sie die beiden oben beschriebenen Variablenkonfigurationen für das Upgrade der SonarQube 9.9-Version festlegen.
+      * Kunden können sie *sofort aktivieren* indem sie die beiden oben beschriebenen Variablenkonfigurationen für die Aktualisierung der SonarQube 9.9-Version festlegen.
 
    * **Java 21-Laufzeitbereitstellung**
       * Die Java 21-Laufzeit wird beim Erstellen mit Java 17 oder Java 21 bereitgestellt.
       * Der schrittweise Rollout für alle Cloud Manager-Umgebungen beginnt im Februar für Sandboxes und Entwicklungsumgebungen und erstreckt sich im April auf Produktionsumgebungen.
-      * Kunden, die die Java 21-Laufzeitumgebung (früher *übernehmen möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
+      * Kunden, die mit Java 11 erstellen und die Java 21-Laufzeitumgebung (früher) *möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
 
 
 <!-- ## Early adoption program {#early-adoption}
