@@ -651,7 +651,7 @@ ht-degree: 99%
       + [Verwalten von Sammlungen](/help/assets/manage-collections-assets-view.md)
       + [Überwachen von Assets, Ordnern und Sammlungen](/help/assets/manage-notifications-assets-view.md)
       + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
-      + [Wiederaufbereitung](/help/assets/reprocessing-assets-view.md)
+      + [Erneutes Verarbeiten](/help/assets/reprocessing-assets-view.md)
       + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

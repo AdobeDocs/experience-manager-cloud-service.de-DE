@@ -2,7 +2,7 @@
 source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # Snippets {#snippets}
@@ -233,11 +233,11 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
    * URL der Live-Website. Beispiel: `www.mydomain.com`.
    * URL der Ursprungs-Website (`.hlx`-URL).
 
-## Universeller Editor wird gegenüber SPA-Editor bevorzugt {#ue-over-spa}
+## Universeller Editor gegenüber SPA-Editor bevorzugt {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->Der SPA-Editor wird weiterhin vom Adobe unterstützt, aber die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind jetzt:
+>Der SPA-Editor wird weiterhin vom Adobe unterstützt, aber die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind nun:
 >
->* [Der universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zum visuellen Bearbeiten von Headless-Inhalten.
->* [Der Inhaltsfragment-](/help/assets/content-fragments/content-fragments-managing.md) für die formularbasierte Bearbeitung von Headless-Inhalten.
+>* der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zum visuellen Bearbeiten von Headless-Inhalten.
+>* der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung von Headless-Inhalten
