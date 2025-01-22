@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 100%
@@ -72,13 +72,11 @@ Sie können diese Funktion bestmöglich nutzen, indem Sie die folgenden Optionen
 
 Bevor Sie mit der Erstellung eines adaptiven Formulars beginnen, aktivieren Sie die Kernkomponenten für adaptive Formulare und fügen Sie Ihrer AEM Sites-Seite Client-Bibliotheken für adaptive Formulare hinzu:
 
-+++  Aktivieren der Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung
+### Aktivieren der Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung
 
 Stellen Sie sicher, dass die [Kernkomponenten für adaptive Formulare für Ihre AEM Forms as a Cloud Service-Umgebung aktiviert sind](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Hinzufügen von Client-Bibliotheken für adaptive Formulare zu einer AEM Sites-Seite oder einem Experience Fragment
+### Hinzufügen von Client-Bibliotheken für adaptive Formulare zu einer AEM Sites-Seite oder einem Experience Fragment
 
 Um die vollständige Funktionalität der Container-Komponente für adaptive Formulare zu aktivieren, fügen Sie die Client-Bibliotheken „customHeaderlibs“ und „customfooterlibs“ mithilfe der Bereitstellungs-Pipeline zu Ihrer AEM Sites-Seite hinzu. So werden die Bibliotheken hinzugefügt:
 
@@ -123,9 +121,7 @@ Um die vollständige Funktionalität der Container-Komponente für adaptive Form
 
 1. [Führen Sie die Bereitstellungs-Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=de), um die Client-Bibliotheken in Ihrer AEM as a Cloud Service-Umgebung bereitzustellen.
 
-+++
-
-+++ Aktivieren des Containers für adaptive Formulare für eine AEM Sites-Seite oder ein Experience Fragment
+### Aktivieren des Containers für adaptive Formulare für eine AEM Sites-Seite oder ein Experience Fragment
 
 Um die Komponente [!UICONTROL Container für adaptive Formulare] in der Richtlinie der Vorlage zu aktivieren, führen Sie die folgenden Schritte aus:
 

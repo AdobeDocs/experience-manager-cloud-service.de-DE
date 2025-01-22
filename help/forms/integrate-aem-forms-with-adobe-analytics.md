@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 100%
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um Datenelemente zu konfigurieren:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um das Datenelement zu speichern.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### Konfigurieren von Regeln {#configure-rules}
 
@@ -180,7 +180,7 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 
    Sie können Regeln für alle Ereignistypen erstellen, wie z. B. Abbruch, Fehler, Außendienstbesuche, Hilfe, Ausgaben, Speicherungen und Übermittlungen.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Flüsse veröffentlichen {#publish-flow}

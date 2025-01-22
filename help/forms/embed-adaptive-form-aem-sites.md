@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -75,13 +75,11 @@ Sie können diese Funktion bestmöglich nutzen, indem Sie die folgenden Optionen
 
 Bevor Sie mit der Einbettung eines neuen adaptiven Formulars oder eines bereits vorhandenen adaptiven Formulars mit **[!UICONTROL Adaptive Formulare – Einbettungskomponente (v2)]** beginnen, aktivieren Sie die **Kernkomponenten adaptiver Formulare** und fügen Sie **Client-Bibliotheken für adaptive Formulare** zu Ihrer AEM Sites-Seite hinzu:
 
-+++  Aktivieren der Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung
+### Aktivieren der Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung
 
 Stellen Sie sicher, dass die [Kernkomponenten für adaptive Formulare für Ihre AEM Forms as a Cloud Service-Umgebung aktiviert sind](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Hinzufügen von Client-Bibliotheken für adaptive Formulare zu einer AEM Sites-Seite oder einem Experience Fragment
+### Hinzufügen von Client-Bibliotheken für adaptive Formulare zu einer AEM Sites-Seite oder einem Experience Fragment
 
 Wenn die Option **[!UICONTROL Wenn das Formular die gesamte Breite einer Seite einnimmt]** im Konfigurationsdialogfeld **[!UICONTROL Formular-Container]** ausgewählt ist und adaptive Formulare unter Verwendung von Kernkomponenten verwendet werden, ist es notwendig, die Client-Bibliotheken auf der entsprechenden Seite der Site einzubinden.
 
@@ -130,9 +128,7 @@ Fügen Sie die Client-Bibliotheken **Customheaderlibs** und **Customfooterlibs**
 
 1. [Führen Sie die Bereitstellungs-Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=de), um die Client-Bibliotheken in Ihrer AEM as a Cloud Service-Umgebung bereitzustellen.
 
-+++
-
-+++ Aktivieren der **[!UICONTROL Adaptive Formulare – Einbettungskomponente (v2)]** für Ihre AEM Sites-Seite oder ein Experience Fragment
+### Aktivieren der „Adaptive Forms - Einbettungskomponente (v2)“ für Ihre AEM Sites-Seite oder Ihr Experience Fragment
 
 Führen Sie die folgenden Schritte aus, um die **[!UICONTROL Adaptive Formulare – Einbettungskomponente (v2)]** in der Richtlinie der Vorlage zu aktivieren:
 
@@ -142,8 +138,6 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL Adaptive Formulare 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## Einbetten eines adaptiven Formulars mit der Adaptive Formulare – Einbettungskomponente (v2) {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
