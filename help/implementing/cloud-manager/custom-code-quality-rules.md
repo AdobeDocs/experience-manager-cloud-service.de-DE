@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 100%
+source-wordcount: '4384'
+ht-degree: 99%
 
 ---
 
@@ -21,9 +21,11 @@ ht-degree: 100%
 
 Erfahren Sie mehr über Qualitätsregeln für benutzerspezifischen Code von Cloud Manager, die auf Best Practices von Adobe Experience Manager Engineering basieren, um durch gründliche Tests hochwertigen Code sicherzustellen. Siehe auch [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md).
 
->[!NOTE]
+Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste der *aktuellen* Regeln (über [ Link) ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
+
+>[!IMPORTANT]
 >
->Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen. Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
+>Ab Donnerstag, 13. Februar 2025 (Cloud Manager 2025.2.0), verwendet Cloud Manager Code Quality eine aktualisierte Version von SonarQube 9.9 und eine aktualisierte Liste von Regeln, die Sie [hier herunterladen](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx) können.
 
 >[!NOTE]
 >
@@ -187,7 +189,7 @@ public void orDoThis () {
 ### ResourceResolver-Objekte immer schließen {#resourceresolver-objects-should-always-be-closed}
 
 * **Schlüssel**: CQRules:CQBP-72
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Hoch
 * **Seit**: Version 2018.4.0
 
@@ -229,7 +231,7 @@ public void orDoThis(Session session) throws Exception {
 ### Verwenden Sie keine Sling-Servlet-Pfade zum Registrieren von Servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **Schlüssel**: CQRules:CQBP-75
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Hoch
 * **Seit**: Version 2018.4.0
 
@@ -249,7 +251,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### Erfasste Ausnahmen sollten entweder protokolliert oder ausgelöst werden, aber nicht beides {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Schlüssel**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
@@ -291,7 +293,7 @@ public void orDoThis() throws MyCustomException {
 ### Throw-Anweisungen sollten möglichst nicht unmittelbar auf Log-Anweisungen folgen {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Schlüssel**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
@@ -317,7 +319,7 @@ public void doThis() throws Exception {
 ### Vermeiden Sie beim Verarbeiten von GET- oder HEAD-Anfragen die Protokollierung bei INFO {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **Schlüssel**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 
 Allgemein sollten mit der Protokollebene INFO wichtige Aktionen abgegrenzt werden. Standardmäßig ist Experience Manager so konfiguriert, dass auf der INFO-Ebene oder darüber protokolliert wird. GET- und HEAD-Methoden sollten nur schreibgeschützte Vorgänge sein und stellen daher keine wichtigen Aktionen dar. Eine Protokollierung auf INFO-Ebene als Antwort auf GET- oder HEAD-Anfragen füllt das Protokoll wahrscheinlich mit erheblichen Mengen überflüssiger Informationen, sodass es schwieriger wird, nützliche Informationen in Protokolldateien zu finden. Bei der Verarbeitung von GET- oder HEAD-Anfragen sollte die Protokollierung auf WARN- oder ERROR-Ebene erfolgen, wenn etwas schiefgelaufen ist. Verwenden Sie DEBUG- oder TRACE-Ebenen, wenn detaillierte Informationen zur Fehlerbehebung erforderlich sind.
@@ -345,7 +347,7 @@ public void doGet() throws Exception {
 ### Verwenden Sie nicht Exception.getMessage() als ersten Parameter einer Protokollanweisung {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **Schlüssel**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
@@ -378,7 +380,7 @@ public void doThis() {
 ### Die Protokollierung in Catch-Blöcken sollte auf WARN- oder ERROR-Ebene erfolgen {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Schlüssel**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
@@ -411,7 +413,7 @@ public void doThis() {
 ### Drucken Sie keine Stacktraces in der Konsole {#do-not-print-stack-traces-to-the-console}
 
 * **Schlüssel**: CQRules:CQBP-44---ExceptionPrintStackTrace
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
@@ -444,7 +446,7 @@ public void doThis() {
 ### Nicht an Standardausgabe oder Standardfehler ausgeben {#do-not-output-to-standard-output-or-standard-error}
 
 * **Schlüssel**: CQRules:CQBP-44—LogLevelConsolePrinters
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
@@ -477,7 +479,7 @@ public void doThis() {
 ### Vermeiden hartcodierter apps- und libs-Pfade {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Schlüssel**: CQRules:CQBP-71
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
@@ -502,7 +504,7 @@ public void doThis(Resource resource) {
 ### Sling-Scheduler nicht verwenden {#sonarqube-sling-scheduler}
 
 * **Schlüssel**: CQRules:AMSCORE-554
-* **Typ**: Code Smell/Cloud Service-Kompatibilität
+* **type**: `Code Smell`/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -513,7 +515,7 @@ Weitere Informationen zum Umgang mit Sling-Vorgängen in Cluster-Umgebungen find
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
 * **Schlüssel**: AMSCORE-553
-* **Typ**: Code Smell/Cloud Service-Kompatibilität
+* **type**: `Code Smell`/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -800,7 +802,7 @@ Ein häufig auftretendes Problem ist die Verwendung von Knoten mit der Bezeichnu
 ### Der standardmäßige Authoring-Modus sollte nicht die klassische Benutzeroberfläche verwenden {#oakpal-default-authoring}
 
 * **Schlüssel**: ClassicUIAuthoringMode
-* **Typ**: Code Smell/Cloud Service-Kompatibilität
+* **type**: `Code Smell`/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -809,7 +811,7 @@ Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 ### Komponenten mit Dialogfeldern sollten Dialogfelder für die Touch-Benutzeroberfläche aufweisen {#oakpal-components-dialogs}
 
 * **Schlüssel**: ComponentWithOnlyClassicUIDialog
-* **Typ**: Code Smell/Cloud Service-Kompatibilität
+* **type**: `Code Smell`/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -824,7 +826,7 @@ Die Dokumentation zu den Experience Manager-Modernisierungs-Tools bietet Dokumen
 ### In Paketen sollten veränderliche und unveränderliche Inhalte nicht gemischt werden {#oakpal-packages-immutable}
 
 * **Schlüssel**: ImmutableMutableMixedPackage
-* **Typ**: Code Smell/Cloud Service-Kompatibilität
+* **type**: `Code Smell`/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -839,7 +841,7 @@ Weitere Details finden Sie unter [Experience Manager-Projektstruktur](/help/impl
 ### Verwenden Sie keine Agenten für Rückwärtsreplikation {#oakpal-reverse-replication}
 
 * **Schlüssel**: ReverseReplication
-* **Typ**: Code Smell/Cloud Service-Kompatibilität
+* **type**: `Code Smell`/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -892,7 +894,7 @@ Mit dem Migrations-Tool im [GitHub-Repository für Experience Manager as a Cloud
 ### Es wird empfohlen anstelle von statischen Vorlagen bearbeitbare Vorlagen zu verwenden. {#oakpal-static-template}
 
 * **Schlüssel**: StaticTemplateUsage
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -903,7 +905,7 @@ Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe des [Experi
 ### Die Verwendung veralteter Foundation-Komponenten wird nicht empfohlen {#oakpal-usage-legacy}
 
 * **Schlüssel**: LegacyFoundationComponentUsage
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -914,7 +916,7 @@ Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundatio
 ### Verwenden Sie nur unterstützte Ausführungsmodusnamen und -reihenfolgen {#oakpal-supported-runmodes}
 
 * **Schlüssel**: SupportedRunmode
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -923,7 +925,7 @@ Experience Manager as a Cloud Service erzwingt eine strikte Benennungsrichtlinie
 ### Knoten für benutzerdefinierte Suchindex-Definitionen müssen direkt untergeordnete Knoten von `/oak:index` sein {#oakpal-custom-search}
 
 * **Schlüssel**: OakIndexLocation
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -932,7 +934,7 @@ Experience Manager as a Cloud Service verlangt, dass benutzerdefinierte Suchinde
 ### Knoten für benutzerdefinierte Suchindex-Definitionen benötigen eine compatVersion von 2 {#oakpal-custom-search-compatVersion}
 
 * **Schlüssel**: IndexCompatVersion
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -941,7 +943,7 @@ Experience Manager as a Cloud Service erfordert, dass die Eigenschaft `compatVer
 ### Untergeordnete Knoten von benutzerdefinierten Suchindex-Definitionsknoten müssen dem Typ `nt:unstructured ` entsprechen{#oakpal-descendent-nodes}
 
 * **Schlüssel**: IndexDescendantNodeType
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -950,7 +952,7 @@ Schwer behebbare Probleme können auftreten, wenn ein Knoten einer benutzerdefin
 ### Knoten einer benutzerdefinierten Suchindex-Definition müssen einen untergeordneten Knoten mit dem Namen indexRules enthalten, der wiederum untergeordnete Knoten enthält {#oakpal-custom-search-index}
 
 * **Schlüssel**: IndexRulesNode
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -959,7 +961,7 @@ Ein korrekt definierter benutzerdefinierter Suchindex-Definitionsknoten muss ein
 ### Knoten für benutzerdefinierte Suchindex-Definitionen müssen Benennungskonventionen folgen {#oakpal-custom-search-definitions}
 
 * **Schlüssel**: IndexName
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -977,7 +979,7 @@ Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchind
 ### Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens „seed“ enthalten {#oakpal-property-name-seed}
 
 * **Schlüssel**: IndexSeedProperty
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -986,7 +988,7 @@ Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Such
 ### Knoten für die benutzerdefinierte Suchindex-Definition dürfen keine Eigenschaft namens „reindex“ enthalten  {#oakpal-reindex-property}
 
 * **Schlüssel**: IndexReindexProperty
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
@@ -1031,7 +1033,7 @@ Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument 
 ### Wenn die Definition des benutzerdefinierten Suchindex `compatVersion` enthält, muss diese auf 2 gesetzt werden. {#oakpal-compatVersion}
 
 * **Schlüssel**: IndexCompatVersion
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Hoch
 * **Seit**: Version 2022.1.0
 
@@ -1039,7 +1041,7 @@ Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument 
 ### Ein Indexknoten, der `includedPaths` angibt, sollte auch `queryPaths` mit denselben Werten angeben. {#oakpal-included-paths-without-query-paths}
 
 * **Schlüssel**: IndexIncludedPathsWithoutQueryPaths
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
@@ -1048,7 +1050,7 @@ Konfigurieren Sie `includedPaths` und `queryPaths` bei benutzerdefinierten Indiz
 ### Ein Indexknoten, der `nodeScopeIndex` für den generischen Knotentyp angibt, sollte auch `includedPaths` und `queryPaths` angeben. {#oakpal-full-text-on-generic-node-type}
 
 * **Schlüssel**: IndexFulltextOnGenericType
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
@@ -1094,7 +1096,7 @@ Der Knotentyp `nt:base` kann als „generisch“ betrachtet werden, da alle Kno
 ### Die Eigenschaft queryLimitReads der Abfrage-Engine sollte nicht überschrieben werden. {#oakpal-query-limit-reads}
 
 * **Schlüssel**: OverrideOfQueryLimitReads
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
@@ -1103,7 +1105,7 @@ Das Überschreiben des Standardwerts kann Lesevorgänge von Seiten verlangsamen,
 ### Mehrere aktive Versionen desselben Indexes {#oakpal-multiple-active-versions}
 
 * **Schlüssel**: IndexDetectMultipleActiveVersionsOfSameIndex
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
@@ -1130,7 +1132,7 @@ Das Überschreiben des Standardwerts kann Lesevorgänge von Seiten verlangsamen,
 ### Der Name vollständig benutzerdefinierter Indexdefinitionen sollte den offiziellen Richtlinien entsprechen. {#oakpal-fully-custom-index-name}
 
 * **Schlüssel**: IndexValidFullyCustomName
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
@@ -1191,7 +1193,7 @@ Wenn die analysierte Eigenschaft nicht explizit festgelegt wird, ist der Standar
 ### Tags-Eigenschaft {#tags-property}
 
 * **Schlüssel**: IndexHasValidTagsProperty
-* **Typ**: Code Smell
+* **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
