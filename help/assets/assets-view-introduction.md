@@ -5,10 +5,10 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Freuen Sie sich auf eine Digital Asset Management-Lösung, die die unterschiedli
 
 ![Übersicht über das Dashboard „Mein Arbeitsbereich“](assets/my-workspace-demo.gif)
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### Insights für datenbasierte Entscheidungen {#insights-data}
 
@@ -76,7 +76,7 @@ Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Insights un
 
 ![Insights-Überblick](assets/insights-overview.gif)
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Adobe Photoshop Express-Integration für eine schnellere Zusammenarbeit {#accelerate-collaboration}
 
@@ -86,7 +86,7 @@ Sehen Sie sich dieses Video an, um zu erfahren, wie leistungsstark die Integrati
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 Zukünftige Versionen von Assets as a Cloud Service werden auch eine [Adobe Firefly-Integration über Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838) umfassen.
 
@@ -96,7 +96,7 @@ Richten Sie mithilfe der Assets-Ansicht schnell eine Ordnerstruktur für Ihre Or
 
 ![Hochladen von Ordnern](assets/folder-uploads.gif)
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### Search-First-Ansatz für mehr Effizienz {#search-first}
 
@@ -110,7 +110,7 @@ Die Assets-Ansicht ermöglicht Ihnen die Überwachung der Vorgänge, die mit den
 
 ![Empfangen von Benachrichtigungen](assets/notifications.gif)
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### Vorläufiges Löschen von Assets für eine bessere Kontrolle durch Admins {#soft-delete-assets}
 
@@ -118,7 +118,7 @@ Im Papierkorb-Ordner, der in der Assets-Ansicht verfügbar ist, sind die aus dem
 
 ![Vorläufiges Löschen](assets/soft-delete.gif)
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 Zusätzlich zu diesen Funktionen können Sie mit der Assets-Ansicht auch die folgenden Funktionen ausführen, die in der Admin-Ansicht nicht verfügbar sind:
 
