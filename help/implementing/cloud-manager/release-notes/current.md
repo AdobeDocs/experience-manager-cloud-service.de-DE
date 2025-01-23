@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 19%
+source-wordcount: '695'
+ht-degree: 11%
 
 ---
 
@@ -32,15 +32,15 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 13. Februar 20
 
 * **Regeln zur Code-Qualität - SonarQube-Server-Upgrade:** Der Schritt &quot;Cloud Manager-Code-Qualität“ wird ab Donnerstag, 13. Februar 2025, die Verwendung von SonarQube-Server 9.9 mit der Version Cloud Manager 2025.2.0 planen.
 
-Zur Vorbereitung sind aktualisierte SonarQube-Regeln jetzt verfügbar unter [Code-Qualitätsregeln](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Zur Vorbereitung sind aktualisierte SonarQube-Regeln jetzt verfügbar unter [Code-Qualitätsregeln](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-Sie können die neuen Regeln frühzeitig überprüfen, indem Sie die folgende Pipeline-Textvariable festlegen:
+  Sie können die neuen Regeln frühzeitig überprüfen, indem Sie die folgende Pipeline-Textvariable festlegen:
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Legen Sie außerdem die folgende Variable fest, um sicherzustellen, dass der Code-Qualitätsschritt für denselben Commit ausgeführt wird (normalerweise für denselben `commitId` übersprungen):
+  Legen Sie außerdem die folgende Variable fest, um sicherzustellen, dass der Code-Qualitätsschritt für denselben Commit ausgeführt wird (normalerweise für denselben `commitId` übersprungen):
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![Seite Variablenkonfiguration](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ Legen Sie außerdem die folgende Variable fest, um sicherzustellen, dass der Cod
       * Der schrittweise Rollout für alle Cloud Manager-Umgebungen beginnt im Februar für Sandboxes und Entwicklungsumgebungen und erstreckt sich im April auf Produktionsumgebungen.
       * Kunden, die mit Java 11 erstellen und die Java 21-Laufzeitumgebung (früher) *möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
 
-* **CDN-Konfigurationen“ in „Domain-Zuordnungen“ umbenannt:** Im Rahmen der Verbesserungen der Benutzeroberfläche in AEM Cloud Manager wird die Bezeichnung „CDN-Konfigurationen“ jetzt in „Domain-Zuordnungen“ umbenannt, um die Terminologieausrichtung an der Funktionalität zu verbessern. <!-- CMGR-64738 -->
+* **„CDN-Konfigurationen“ in „Domain-Zuordnungen“ umbenannt:** Im Rahmen der Verbesserungen der Benutzeroberfläche in AEM Cloud Manager wird die Bezeichnung „CDN-Konfigurationen“ jetzt in „Domain-Zuordnungen“ umbenannt. Durch diese Änderung wird die Terminologieausrichtung an die Funktionalität angepasst. <!-- CMGR-64738 -->
 
   ![CDN-Konfigurationen“ wurden in der Benutzeroberfläche in „Domain-Zuordnungen“ umbenannt](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **Bereitstellung einer Edge Delivery-Site mit einem Klick:** Cloud Manager ermöglicht es Benutzenden mit den entsprechenden Berechtigungen und Lizenzen, mit nur einem Klick eine Beispiel-Edge Delivery Services-Site zu erstellen. Dieser optimierte Prozess bietet die folgenden automatisierten Funktionen:
+
+   * **GitHub-Integration**: Erstellt automatisch ein GitHub-Repository innerhalb einer bestehenden Organisation, vorkonfiguriert mit einer Textbausteinvorlage für Edge Delivery Services.
+   * **Installation der AEM-Code-**-App : Installiert die AEM-Code-Synchronisierungsanwendung im Repository, um eine nahtlose Synchronisierung und Bereitstellung sicherzustellen.
+   * **Einrichten von Content Collaboration** - Verknüpft einen spezifischen Google Drive-Ordner für die Speicherung von Inhalten und bietet eine kollaborative Umgebung für das Content-Management.
+   * **Inhaltsveröffentlichung** - Benutzerinnen und Benutzer können jetzt Inhalte für bereitgestellte Websites direkt in der Cloud Manager-Benutzeroberfläche veröffentlichen, wodurch Workflows vereinfacht und die Effizienz verbessert wird.
+   * **Enhanced Collaboration** - Die Plattform ermöglicht es Benutzenden, mehrere Mitwirkende zum Inhaltsspeicherordner von Google Drive hinzuzufügen, was Teamarbeit und Inhaltsbeiträge erleichtert.
+
+  Diese Verbesserungen zielen darauf ab, die Automatisierung zu verbessern, Einrichtungsprozesse zu vereinfachen und die Zusammenarbeit für Edge Delivery Services-Benutzende zu verbessern. <!-- CMGR-59362 -->
+
+  ![Bereitstellung einer Edge Delivery-Site](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![Dialogfeld &quot;Edge Delivery-Site bereitstellen“](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Erweiterte Unterstützung für Edge Delivery Services-Sites:** Cloud Manager unterstützt jetzt das Onboarding für die neuesten Edge Delivery Services-Sites. Dieses Update beinhaltet eine umfassende Überarbeitung des CDN und des Bereitstellungs-Stacks, was zu einer verbesserten Robustheit und Wartbarkeit führt.
+
+* **Early-Adopter-Programm-Update - PR-Validierungsunterstützung für Bitbucket und GitLab:** Cloud Manager unterstützt jetzt die Pull Request (PR)-Validierung sowohl für Cloud- als auch für selbst gehostete Versionen von Bitbucket und GitLab. Mit dieser Funktion können Kundinnen und Kunden ihre Code-Änderungen vor dem Zusammenführen eines PR anhand der Adobe-Code-Qualitätsschwellen testen. Durch Sicherstellung einer höheren Code-Qualität vor dem Zusammenführen verbessert diese Verbesserung die Erfolgsrate von Code-Änderungen in Produktions-Pipelines erheblich, reduziert die Markteinführungszeit und optimiert die Entwicklungs-Workflows.
 
 
 <!-- ## Early adoption program {#early-adoption}

@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 50%
@@ -117,7 +117,7 @@ Beim lokalen Ausführen von AEM mit Java 21 schlagen die Startskripte (`crx-quic
 >Wenn `.cloudmanager/java-version` auf `21` oder `17` gesetzt ist, wird die Java 21-Laufzeitumgebung bereitgestellt. Die Java 21-Laufzeit soll ab Donnerstag, dem 13. Februar 2025, schrittweise für alle Umgebungen (nicht nur für die Umgebungen, deren Code mit Java 11 erstellt wurde) ausgerollt werden. Der Rollout beginnt mit Sandboxes und Entwicklungsumgebungen und führt dann im April 2025 einen Rollout in alle Produktionsumgebungen durch. Kunden, die die Java 21-Laufzeitumgebung (früher *übernehmen möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
 
 
-#### Anforderungen an die Erstellungszeit
+#### Anforderungen an die Erstellungszeit {#build-time-reqs}
 
 Die folgenden Anpassungen sind erforderlich, um das Erstellen des Projekts mit Java 21 und Java 17 zu ermöglichen. Sie können sogar vor der Ausführung von Java 21 und Java 17 aktualisiert werden, da sie mit älteren Java-Versionen kompatibel sind.
 
