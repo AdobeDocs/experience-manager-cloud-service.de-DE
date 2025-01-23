@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Caching-Grundlagen in AEM as a Cloud Se
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
 workflow-type: tm+mt
-source-wordcount: '2897'
-ht-degree: 100%
+source-wordcount: '2924'
+ht-degree: 97%
 
 ---
 
@@ -240,12 +240,24 @@ Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfol
 Zur Verbesserung von Cache-Anforderungen entfernt das CDN gängige Marketing-bezogene Abfrageparameter in Umgebungen, die im Oktober 2023 oder später erstellt wurden, insbesondere diejenigen, die dem folgenden Regex-Muster entsprechen:
 
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-Reichen Sie ein Support-Ticket ein, wenn Sie möchten, dass dieses Verhalten deaktiviert wird.
+Diese Funktion kann mithilfe eines `requestTransformations`-Flags in der [CDN-Konfiguration“ ein- und ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
-Für Umgebungen, die vor Oktober 2023 erstellt wurden, wird empfohlen, die Eigenschaft `ignoreUrlParams` der Dispatcher-Konfiguration zu konfigurieren; siehe [Konfigurieren des Dispatchers – Ignorieren von URL-Parametern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+Um beispielsweise das Entfernen von Marketing-Parametern auf CDN-Ebene zu stoppen, sollten Sie `removeMarketingParams: false` mithilfe einer Konfiguration bereitstellen, die den folgenden Abschnitt enthält.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+Falls `removeMarketingParams` Funktion auf CDN-Ebene deaktiviert ist, wird dennoch empfohlen, die `ignoreUrlParams`-Eigenschaft der Dispatcher-Konfiguration zu konfigurieren. Siehe [ von Dispatcher - Ignorieren von URL-Parametern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
 
 Es gibt zwei Möglichkeiten Marketing-Parameter zu ignorieren. (Wobei die erste Variante bevorzugt wird, um Cache-Busting über Abfrageparameter zu ignorieren):
 
