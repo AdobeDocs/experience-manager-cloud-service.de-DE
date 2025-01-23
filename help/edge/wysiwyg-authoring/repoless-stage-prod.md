@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reakt
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '693'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,10 @@ Es gibt zwei Schritte zum Konfigurieren einer separaten Produktions-Site.
    * Die `code` sollte mit der für die anfängliche Projekterstellung verwendeten Konfiguration übereinstimmen.
    * Der `content` > `source` > `url` muss an den Namen der neuen Site angepasst werden, die Sie erstellen. In diesem Beispiel ist es `wknd-prod`.
    * Das heißt, der Site-Name in der POST-URL und der `content` > `source` > `url` müssen identisch sein.
+   * Passen Sie den `admin` an, um die Benutzer zu definieren, die vollen administrativen Zugriff auf die Website haben sollen.
+      * Es handelt sich um ein Array von E-Mail-Adressen.
+      * Der Platzhalter `*` verwendet werden.
+      * Weitere Informationen finden Sie [ Dokument „Konfigurieren der ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) für Autoren“.
 
    ```text
    curl --request POST \
@@ -71,7 +75,7 @@ Es gibt zwei Schritte zum Konfigurieren einer separaten Produktions-Site.
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

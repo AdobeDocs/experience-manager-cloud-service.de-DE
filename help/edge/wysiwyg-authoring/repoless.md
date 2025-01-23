@@ -4,10 +4,10 @@ description: Wenn Sie viele ähnliche Websites haben, die meist gleich aussehen 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 2%
 
 ---
 
@@ -34,10 +34,11 @@ Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie Folgendes geta
 * Ihre Site ist bereits vollständig eingerichtet. Folgen Sie dazu dem Dokument [Erste Schritte für WYSIWYG-Entwickler mit Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * Sie führen mindestens AEM as a Cloud Service 2024.08 aus.
 
-Sie müssen Adobe auch bitten, zwei Elemente für Sie zu konfigurieren. Wenden Sie sich über Ihren Slack-Kanal an Adobe oder werfen Sie ein Support-Problem auf, um diese Anfragen zu stellen.
+Sie müssen Adobe auch bitten, die folgenden Elemente für Sie zu konfigurieren. Kontaktieren Sie uns über Ihren Slack-Kanal oder werfen Sie ein Support-Problem auf, um Adobe anzufordern, diese Änderungen vorzunehmen:
 
-* Der [aem.live-Konfigurations](https://www.aem.live/docs/config-service-setup#prerequisites)Service ist für Ihre Umgebung aktiv und Sie sind als Administrator konfiguriert.
-* Die Repoless-Funktion muss für Ihr Programm per Adobe aktiviert werden.
+* Bitten Sie darum, den [aem.live-Konfigurationsdienst](https://www.aem.live/docs/config-service-setup#prerequisites) für Ihre Umgebung zu aktivieren und sicherzustellen, dass Sie als Administrator konfiguriert sind.
+* Bitten Sie, die Repoless-Funktion für Ihr Programm per Adobe zu aktivieren.
+* Bitten Sie Adobe, die Organisation für Sie zu erstellen.
 
 ## Antwortfunktion aktivieren {#activate}
 
@@ -64,67 +65,6 @@ Sobald Sie über Ihr Zugriffs-Token verfügen, kann es im Header von cURL-Anfrag
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### Konfigurieren des Konfigurations-Services {#config-service}
-
-Wie unter [Voraussetzungen“ erwähnt](#prerequisites) muss der Konfigurations-Service für Ihre Umgebung aktiviert sein. Sie können die Einrichtung Ihres Konfigurations-Services mit diesem cURL-Befehl überprüfen.
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-Wenn der Konfigurations-Service ordnungsgemäß eingerichtet ist, wird eine JSON-Datei ähnlich der folgenden zurückgegeben.
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-Wenden Sie sich über Ihren Projekt-Slack-Kanal an Adobe oder werfen Sie ein Support-Problem auf, wenn Ihr Konfigurations-Service nicht aktiviert ist. Nachdem Sie Ihr Token konfiguriert und überprüft haben, dass der Konfigurations-Service aktiviert ist, können Sie mit der Konfiguration fortfahren.
-
-1. Vergewissern Sie sich, dass Ihre Inhaltsquelle ordnungsgemäß eingerichtet ist.
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. Fügen Sie der öffentlichen Konfiguration eine Pfadzuordnung hinzu.
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-Nachdem die öffentliche Konfiguration erstellt wurde, können Sie über eine URL wie `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` darauf zugreifen, um sie zu überprüfen.
 
 ### Pfadzuordnung für Site-Konfiguration hinzufügen und technisches Konto festlegen {#access-control}
 
@@ -184,6 +124,11 @@ Sobald die Site-Konfiguration zugeordnet ist, können Sie die Zugriffskontrolle 
 
 1. Legen Sie das technische Konto in Ihrer Konfiguration mit einem cURL-Befehl ähnlich dem folgenden fest.
 
+   * Passen Sie den `admin` an, um die Benutzer zu definieren, die vollen administrativen Zugriff auf die Website haben sollen.
+      * Es handelt sich um ein Array von E-Mail-Adressen.
+      * Der Platzhalter `*` verwendet werden.
+      * Weitere Informationen finden Sie [ Dokument „Konfigurieren der ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) für Autoren“.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ Sobald die Site-Konfiguration zugeordnet ist, können Sie die Zugriffskontrolle 
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
@@ -229,8 +174,8 @@ Ihr Projekt ist jetzt für die Verwendung ohne Gegenmaßnahmen eingerichtet.
 
 Da Ihre Basis-Site nun für die Nutzung ohne Antwort konfiguriert ist, können Sie zusätzliche Sites erstellen, die dieselbe Code-Basis nutzen. Lesen Sie je nach Anwendungsfall die folgende Dokumentation.
 
-* [Reaktionsloses Multi-Site-Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
-* [Reagiert auf Staging- und Produktionsumgebungen](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Multi-Site-Management ohne Repo](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [Staging- und Produktionsumgebungen ohne Repo](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## Fehlerbehebung {#troubleshooting}
 

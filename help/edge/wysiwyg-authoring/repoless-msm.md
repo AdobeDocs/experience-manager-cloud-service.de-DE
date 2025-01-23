@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices zum reaktionsschnellen Einri
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1261'
 ht-degree: 2%
 
 ---
@@ -112,6 +112,10 @@ In diesem Beispiel erstellen wir die `wknd-ch` für die schweizerische Präsenz 
    * Die `code` sollte mit der für die anfängliche Projekterstellung verwendeten Konfiguration übereinstimmen.
    * Der `content` > `source` > `url` muss an den Namen der neuen Site angepasst werden, die Sie erstellen. In diesem Beispiel ist es `wknd-ch`.
    * Das heißt, der Site-Name in der POST-URL und der `content` > `source` > `url` müssen identisch sein.
+   * Passen Sie den `admin` an, um die Benutzer zu definieren, die vollen administrativen Zugriff auf die Website haben sollen.
+      * Es handelt sich um ein Array von E-Mail-Adressen.
+      * Der Platzhalter `*` verwendet werden.
+      * Weitere Informationen finden Sie [ Dokument „Konfigurieren der ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) für Autoren“.
 
    ```text
    curl --request POST \
@@ -138,7 +142,7 @@ In diesem Beispiel erstellen wir die `wknd-ch` für die schweizerische Präsenz 
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
