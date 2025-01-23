@@ -4,7 +4,7 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
+source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 100%
@@ -455,14 +455,17 @@ Mit der Experience Fragment-Auswahl können Sie ein [Experience Fragment](/help/
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
