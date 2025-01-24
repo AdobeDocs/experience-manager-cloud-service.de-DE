@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '1025'
+ht-degree: 79%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL(S
 
 | | Modell | Beschreibung |
 | --- | --- | --- |
-| A | **[Von Adobe verwaltetes SSL-Zertifkat (DV)](#adobe-managed)** | Mit Cloud Manager können Benutzende DV(Domain Validation)-Zertifikate konfigurieren, die von Adobe zur schnellen Einrichtung von Domains bereitgestellt werden. |
+| A | **[Von Adobe verwaltetes SSL-Zertifkat (DV)](#adobe-managed)** | Mit Cloud Manager können Benutzer DV-Zertifikate (Domain-Validierung) konfigurieren, die von Adobe für die schnelle Domain-Einrichtung bereitgestellt werden. |
 | B | **[Kundenseitig verwaltetes SSL-Zertifikat (OV/EV)](#customer-managed)** | Cloud Manager verwendet einen Plattform-TLS(Transport Layer Security)-Dienst, damit Sie Ihre eigenen OV- und EV-SSL-Zertifikate und private Schlüssel von Zertifizierungsstellen von Drittanbietern, z. B. *Let’s Encrypt*, verwalten können. |
 
 Beide Modelle bieten die folgenden allgemeinen Funktionen für die Verwaltung Ihrer Zertifikate:
@@ -73,20 +73,47 @@ OV und EV bieten diese Funktionen zusätzlich über DV-Zertifikate in Cloud Mana
 >
 >Wenn Sie mehrere benutzerdefinierte Domains haben, möchten Sie vielleicht nicht jedes Mal, wenn Sie eine neue Domain hinzufügen, ein Zertifikat hochladen. In diesem Fall können Sie von einem einzigen Zertifikat profitieren, das mehrere Domains abdeckt.
 
->[!NOTE]
->
->Wenn zwei Zertifikate für dieselbe Domain installiert sind, wird das genauere angewendet.
->
->Wenn Ihre Domain beispielsweise `dev.adobe.com` ist und Sie ein Zertifikat für `*.adobe.com` und ein weiteres für `dev.adobe.com` haben, wird das spezifischere Zertifikat (`dev.adobe.com`) verwendet.
-
 #### Anforderungen für kundenseitig verwaltete OV/EV-SSL-Zertifikate {#requirements}
 
 Wenn Sie sich dafür entscheiden, Ihr eigenes EV/OV-SSL-Zertifikat hinzuzufügen, muss es die folgenden Anforderungen erfüllen:
 
-* AEM as a Cloud Service akzeptiert nur Zertifikate, welche die Richtlinien der OV (Organisationsvalidierung) oder EV (erweiterte Validierung) erfüllen.
+* Das Zertifikat muss den OV- (Organisationsvalidierung) oder EV-Richtlinien (erweiterte Validierung) entsprechen.
    * Cloud Manager unterstützt nicht das Hinzufügen eigener DV(Domain Validation)-Zertifikate.
+* Selbstsignierte Zertifikate werden nicht unterstützt.
 * Es muss sich immer um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem passenden privaten 2048-Bit-RSA-Schlüssel handeln.
-* Selbstsignierte Zertifikate werden nicht akzeptiert.
+
+#### Best Practices für die Zertifikatverwaltung
+
+* **Überschneidungen von Zertifikaten vermeiden:**
+
+   * Um eine reibungslose Zertifikatverwaltung zu gewährleisten, sollten Sie vermeiden, sich überschneidende Zertifikate bereitzustellen, die derselben Domain entsprechen. Beispielsweise kann ein Platzhalterzertifikat (*.example.com) neben einem bestimmten Zertifikat (dev.example.com) verwirrend sein.
+   * Die TLS-Ebene priorisiert das spezifischste und zuletzt bereitgestellte Zertifikat.
+
+  Beispielszenarien:
+
+   * „Dev Certificate“ umfasst `dev.example.com` und wird als Domain-Zuordnung für `dev.example.com` bereitgestellt.
+   * Das „Staging-Zertifikat“ deckt `stage.example.com` ab und wird als Domain-Zuordnung für `stage.example.com` bereitgestellt.
+   * Wenn „Staging-Zertifikat“ bereitgestellt/aktualisiert wird *nach* „Dev-Zertifikat“, werden auch Anfragen für `dev.example.com` bearbeitet.
+
+     Um solche Konflikte zu vermeiden, stellen Sie sicher, dass Zertifikate sorgfältig auf ihre vorgesehenen Domains beschränkt sind.
+
+* **Platzhalterzertifikate:**
+
+  Platzhalterzertifikate (z. B. `*.example.com`) werden zwar unterstützt, sollten aber nur verwendet werden, wenn dies notwendig ist. Bei Überschneidungen hat das spezifischere Zertifikat Vorrang. Beispielsweise dient das spezifische Zertifikat `dev.example.com` anstelle des Platzhalters (`*.example.com`).
+
+* **Validierung und Fehlerbehebung:**
+Bevor Sie versuchen, ein Zertifikat mit Cloud Manager zu installieren, empfiehlt Adobe, die Integrität Ihres Zertifikats lokal mit Tools wie `openssl` zu überprüfen. Zum Beispiel:
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### Format für kundenseitig verwaltete Zertifikate {#certificate-format}
 
@@ -112,13 +139,9 @@ Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten v
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->Adobe empfiehlt, die Integrität Ihres Zertifikats lokal mit einem Tool wie `openssl verify -untrusted intermediate.pem certificate.pem` zu überprüfen, bevor Sie versuchen, es mit Cloud Manager zu installieren.
-
 ## Begrenzung der Anzahl installierter SSL-Zertifikate {#limitations}
 
-Cloud Manager ermöglicht zu jedem Zeitpunkt maximal 50 installierte SSL-Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
+Cloud Manager unterstützt immer bis zu 50 installierte Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
 
 Wenn Sie den Grenzwert erreicht haben, überprüfen Sie Ihre Zertifikate und löschen Sie ggf. abgelaufene Zertifikate. Oder gruppieren Sie mehrere Domains im selben Zertifikat, da ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken kann.
 
