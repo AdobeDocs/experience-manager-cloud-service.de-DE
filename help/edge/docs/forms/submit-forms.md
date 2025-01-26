@@ -4,23 +4,31 @@ description: Erstellen Sie leistungsstarke Formulare schneller mit Tabellen und 
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 65%
+source-wordcount: '890'
+ht-degree: 79%
 
 ---
 
 # Einrichten von Google Tabellen- oder Microsoft Excel-Dateien für die Datenaufnahme
 
 
-Nachdem Sie [das Formular erstellt und in der Vorschau angezeigt](/help/edge/docs/forms/create-forms.md), können Sie die entsprechende Tabelle aktivieren, um mit dem Empfang von Daten zu beginnen. Sie können die Tabelle manuell für die Datenaufnahme aktivieren oder Admin-APIs verwenden, um Datenaufnahme in einer Tabelle zu ermöglichen.
+Nachdem Sie [das Formular erstellt und in der Vorschau angezeigt](/help/edge/docs/forms/create-forms.md), können Sie die entsprechende Tabelle aktivieren, um mit dem Empfang von Daten zu beginnen. Sie haben folgende Möglichkeiten:
+
+* [Aktivieren Sie die Tabelle manuell, um Daten zu akzeptieren](#manually-enable-the-spreadsheet-to-accept-data)
+* [Verwenden von Admin-APIs, um das Akzeptieren von Daten durch eine Tabelle zu aktivieren](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Das Ökosystem des dokumentbasierten Authorings](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
+<!--
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
+-->
+
+Sie können [den Forms-Übermittlungsdienst manuell konfigurieren](#configuring-the-forms-submission-service-manually) oder [den Forms-Übermittlungsdienst mithilfe der API konfigurieren](#configuring-the-forms-submission-service-using-api).
 
 
 ## Manuelles Aktivieren der Tabelle für die Datenaufnahme
@@ -60,118 +68,112 @@ Nachdem das Blatt für den Datenempfang eingerichtet wurde, können Sie [Vorscha
 >
 >  Die „Shared-AEM“-Blätter sollten niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, bei denen Sie nicht sicher sind, ob sie öffentlich zugänglich sind.
 
-<!--
-### Use Admin APIs to enable a spreadsheet to accept data
 
-You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
+## Verwenden von Admin-APIs, um das Akzeptieren von Daten durch eine Tabelle zu aktivieren
 
-To use Admin APIs to enable a spreadsheet to accept data: 
+Sie können auch eine POST-Anfrage an das Formular senden, damit es Daten aufnehmen und Kopfzeilen für das Blatt `incoming` konfigurieren kann. Nach Erhalt der POST-Anfrage analysiert der Dienst den Anforderungstext und generiert autonom die für die Datenaufnahme erforderlichen Kopfzeilen und Blätter.
 
-
-1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
-
-    >[!WARNING] 
-    >
-    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
-
-1. Preview the sheet in the sidekick.
-
-    >[!NOTE] 
-    >
-    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
-
-1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
-
-    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
-
-    **Request** 
-    
-    ```JSON
-
-    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "john@wknd.com",
-            "Name": "John",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
+So verwenden Sie Admin-APIs, um das Akzeptieren von Daten durch eine Tabelle zu aktivieren:
 
 
-    **Response**
+1. Öffnen Sie die von Ihnen erstellte Arbeitsmappe und ändern Sie den Namen des Standardblattes in `incoming`.
 
-    ```JSON
+   >[!WARNING]
+   >
+   > Wenn das Blatt `incoming` nicht existiert, sendet AEM keine Daten an diese Arbeitsmappe.
 
-    HTTP/2 200 
-    content-type: application/json
-    x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
-    cache-control: no-store, private, must-revalidate
-    accept-ranges: bytes
-    date: Sat, 10 Feb 2024 09:26:48 GMT
-    via: 1.1 varnish
-    x-served-by: cache-del21736-DEL
-    x-cache: MISS
-    x-cache-hits: 0
-    x-timer: S1707557205.094883,VS0,VE3799
-    strict-transport-security: max-age=31557600
-    content-length: 138
+1. Zeigen Sie eine Vorschau des Blattes im Sidekick an.
 
-    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   >[!NOTE]
+   >
+   >Selbst wenn Sie das Blatt zuvor in der Vorschau angezeigt haben, müssen Sie die Vorschau erneut anzeigen, nachdem Sie das Blatt `incoming` zum ersten Mal erstellt haben.
 
-    ```
+1. Senden Sie die POST-Anfrage, um die entsprechenden Kopfzeilen auf dem Blatt `incoming` zu generieren, und fügen Sie das Blatt `shared-default` zu Ihrer Tabelle hinzu, falls es nicht bereits existiert.
 
-    You can use tools like curl or Postman to execute this POST request, as demonstrated below:
+   Informationen zum Formatieren der POST-Anfrage zum Einrichten des Blattes finden Sie in der [Dokumentation zur Admin-API](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Sie können sich das folgende Beispiel ansehen:
 
-    ```JSON
+   **Anfrage**
 
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-        --header 'Content-Type: application/json' \
-        --data '{
-            "data": {
-                "Email": "john@wknd.com",
-                "Name": "John",
-                "Subject": "Regarding Product Inquiry",
-                "Message": "I have some questions about your products.",
-                "Phone": "123-456-7890",
-                "Company": "Wknd Inc.",
-                "Country": "United States",
-                "PreferredContactMethod": "Email",
-                "SubscribeToNewsletter": true
-        }
-    }'
+   ```JSON
+   POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+   --header 'Content-Type: application/json' \
+   --data '{
+       "data": {
+           "Email": "john@wknd.com",
+           "Name": "John",
+           "Subject": "Regarding Product Inquiry",
+           "Message": "I have some questions about your products.",
+           "Phone": "123-456-7890",
+           "Company": "Adobe Inc.",
+           "Country": "United States",
+           "PreferredContactMethod": "Email",
+           "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-    ```
 
-    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+   **Antwort**
 
-    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
+   ```JSON
+   HTTP/2 200 
+   content-type: application/json
+   x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
+   cache-control: no-store, private, must-revalidate
+   accept-ranges: bytes
+   date: Sat, 10 Feb 2024 09:26:48 GMT
+   via: 1.1 varnish
+   x-served-by: cache-del21736-DEL
+   x-cache: MISS
+   x-cache-hits: 0
+   x-timer: S1707557205.094883,VS0,VE3799
+   strict-transport-security: max-age=31557600
+   content-length: 138
+   
+   {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   ```
 
-## Automatic changes to sheet once it is enabled to accept data. 
+   Sie können Tools wie curl oder Postman verwenden, um diese POST-Anfrage auszuführen, wie unten dargestellt:
 
-Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
+   ```JSON
+   curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+       --header 'Content-Type: application/json' \
+       --data '{
+           "data": {
+               "Email": "john@wknd.com",
+               "Name": "John",
+               "Subject": "Regarding Product Inquiry",
+               "Message": "I have some questions about your products.",
+               "Phone": "123-456-7890",
+               "Company": "Wknd Inc.",
+               "Country": "United States",
+               "PreferredContactMethod": "Email",
+               "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+   Die oben genannte POST-Anfrage enthält Beispieldaten, einschließlich der beiden Formularfelder und ihren entsprechenden Beispielwerten. Diese Daten werden vom Admin-Dienst zum Einrichten des Formulars verwendet.
 
-1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+   Ihr Formular kann jetzt Daten annehmen. Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
 
-    >[!NOTE] 
-    >
-    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+## Automatische Änderungen am Blatt, sobald es zur Datenaufnahme aktiviert ist.
 
-1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+Nachdem das Blatt auf den Empfang von Daten eingestellt wurde, beachten Sie die folgenden Änderungen an Ihrer Tabelle:
 
-    >[!WARNING] 
-    >
-    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+Ein Blatt mit dem Namen „Slack“ wird Ihrer Excel-Arbeitsmappe oder Ihrer Google-Tabelle hinzugefügt. In dieser Tabelle können Sie automatische Benachrichtigungen für einen bestimmten Slack-Kanal konfigurieren, sobald neue Daten in Ihre Tabelle aufgenommen werden. Derzeit unterstützt AEM ausschließlich Benachrichtigungen an die Organisation AEM Engineering Slack und die Organisation Adobe Enterprise Support.
+
+1. Um Slack-Benachrichtigungen einzurichten, geben Sie die „teamId“ des Slack-Arbeitsbereichs und den „Kanalnamen“ bzw. die „ID“ ein. Sie können auch den Slack-Bot (mit dem Debugging-Befehl) nach der „teamId“ und der „Kanal-ID“ fragen. Die Verwendung der „Kanal-ID“ anstelle des „Kanalnamens“ ist vorzuziehen, da sie bei Kanalumbenennungen erhalten bleibt.
+
+   >[!NOTE]
+   >
+   > Bei älteren Formularen war die Spalte „teamId“ nicht vorhanden. Die „teamId“ wurde in die Kanalspalte eingeschlossen, getrennt durch „#“ oder „/“.
+
+1. Geben Sie einen beliebigen Titel ein und geben Sie unter den Feldern die Namen der Felder ein, die in der Slack-Benachrichtigung angezeigt werden sollen. Jede Überschrift sollte durch ein Komma getrennt werden (z. B. Name, E-Mail).
+
+   >[!WARNING]
+   >
+   >  Die Blätter namens „shared-default“ dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, für die Sie keinen öffentlichen Zugriff wünschen.
 
 
 

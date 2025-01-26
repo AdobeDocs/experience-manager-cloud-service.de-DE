@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Sie können auch eine **POST**-Anfrage an das Formular senden, um das `incoming`
 > * Geben Sie das `incoming` für die Adobe Experience Manager-`forms@adobe.com` frei und gewähren Sie Bearbeitungszugriff.
 > * Anzeigen einer Vorschau und Veröffentlichen des `incoming` im Sidekick.
 
-Informationen zum Formatieren der POST-Anfrage für die Einrichtung Ihres Blatts finden Sie in der [API-Dokumentation](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post). Sie können sich das folgende Beispiel ansehen:
+Informationen zum Formatieren der POST-Anfrage für die Einrichtung Ihres Blatts finden Sie in der [API-Dokumentation](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Sie können sich das folgende Beispiel ansehen:
 
 Sie können Tools wie cURL oder Postman verwenden, um diese POST-Anfrage auszuführen, wie unten gezeigt.
 
