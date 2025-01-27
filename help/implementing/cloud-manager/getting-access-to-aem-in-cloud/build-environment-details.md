@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 50%
+source-wordcount: '1374'
+ht-degree: 48%
 
 ---
 
@@ -75,9 +75,7 @@ Der Cloud Manager-Build-Prozess verwendet standardmäßig das Oracle 8-JDK, um P
 
 #### Festlegen der Maven-JDK-Version {#alternate-maven-jdk-version}
 
-Adobe empfiehlt, die JDK-Version der Maven-Ausführung in einer `.cloudmanager/java-version`-Datei auf `21` oder `17` festzulegen.
-
-Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Bearbeiten Sie die Datei so, dass sie nur den Text, die `21` oder die `17` enthält. Cloud Manager akzeptiert zwar auch den Wert `8`, jedoch wird diese Version nicht mehr für AEM Cloud Service-Projekte unterstützt. Alle anderen Werte werden ignoriert. Wenn `21` oder `17` angegeben ist, wird Oracle Java 21 oder Oracle Java 17 verwendet. <!-- Removed this last part as per Brian's feedback on Slack. ...and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-21` or `/usr/lib/jvm/jdk-17`. -->
+Um das Maven-Ausführungs-JDK festzulegen, erstellen Sie eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Bearbeiten Sie die Datei so, dass sie nur den Text, die `21` oder die `17` enthält. Cloud Manager akzeptiert zwar auch den Wert `8`, jedoch wird diese Version nicht mehr für AEM Cloud Service-Projekte unterstützt. Alle anderen Werte werden ignoriert. Wenn `21` oder `17` angegeben ist, wird Oracle Java 21 oder Oracle Java 17 verwendet.
 
 
 #### Voraussetzungen für die Migration zu einem Build mit Java 21 oder Java 17 {#prereq-for-building}
@@ -99,27 +97,31 @@ Die Java 21-Laufzeit wird für Builds mit Java 21 und Java 17 verwendet und nach
 
 Bibliotheksaktualisierungen können jederzeit angewendet werden, da sie mit älteren Java-Versionen kompatibel bleiben.
 
-* **Mindestversion von `org.objectweb.asm`:**
-Aktualisieren Sie die Verwendung von `org.objectweb.asm` auf Version 9.5 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
+* **Mindestversion von ASM:**
+Aktualisieren Sie die Verwendung des Java-Pakets`org.objectweb.asm`, das häufig in `org.ow2.asm.*` Artefakten gebündelt ist, auf Version 9.5 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
 
-* **Mindestversion von `org.apache.groovy`:**
-Aktualisieren Sie die Verwendung von `org.apache.groovy` auf Version 4.0.22 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
+* **Mindestversion von Groovy:**
+Aktualisieren Sie die Verwendung der Java-Pakete `org.apache.groovy` oder `org.codehaus.groovy` auf Version 4.0.22 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
 
   Dieses Paket kann indirekt durch Hinzufügen von Abhängigkeiten von Dritten wie der AEM Groovy Console eingeschlossen werden.
+
+AEM Cloud Service SDK ist mit Java 21 kompatibel und kann verwendet werden, um die Kompatibilität Ihres Projekts mit Java 21 zu überprüfen, bevor Sie eine Cloud Manager-Pipeline ausführen.
 
 * **Laufzeitparameter bearbeiten:**
 Beim lokalen Ausführen von AEM mit Java 21 schlagen die Startskripte (`crx-quickstart/bin/start` oder `crx-quickstart/bin/start.bat`) aufgrund des `MaxPermSize` fehl. Entfernen Sie als Abhilfe entweder `-XX:MaxPermSize=256M` aus dem Skript oder definieren Sie die `CQ_JVM_OPTS` der Umgebungsvariable, indem Sie sie auf `-Xmx1024m -Djava.awt.headless=true` setzen.
 
-  Adobe plant, dieses Problem in einer zukünftigen Version zu beheben.
+  Dieses Problem wurde in der AEM Cloud Service SDK-Version 19149 und höher behoben.
 
 >[!IMPORTANT]
 >
->Wenn `.cloudmanager/java-version` auf `21` oder `17` gesetzt ist, wird die Java 21-Laufzeitumgebung bereitgestellt. Die Java 21-Laufzeit soll ab Donnerstag, dem 13. Februar 2025, schrittweise für alle Umgebungen (nicht nur für die Umgebungen, deren Code mit Java 11 erstellt wurde) ausgerollt werden. Der Rollout beginnt mit Sandboxes und Entwicklungsumgebungen und führt dann im April 2025 einen Rollout in alle Produktionsumgebungen durch. Kunden, die die Java 21-Laufzeitumgebung (früher *übernehmen möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
+>Wenn `.cloudmanager/java-version` auf `21` oder `17` gesetzt ist, wird die Java 21-Laufzeitumgebung bereitgestellt. Die Java 21-Laufzeitumgebung soll ab Dienstag, dem 4. Februar 2025, schrittweise für alle Umgebungen (nicht nur für die Umgebungen, deren Code mit Java 11 erstellt wurde) bereitgestellt werden. Der Rollout beginnt mit Sandboxes und Entwicklungsumgebungen und führt dann im April 2025 einen Rollout in alle Produktionsumgebungen durch. Kunden, die die Java 21-Laufzeitumgebung (früher *übernehmen möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
 
 
 #### Anforderungen an die Erstellungszeit {#build-time-reqs}
 
 Die folgenden Anpassungen sind erforderlich, um das Erstellen des Projekts mit Java 21 und Java 17 zu ermöglichen. Sie können sogar vor der Ausführung von Java 21 und Java 17 aktualisiert werden, da sie mit älteren Java-Versionen kompatibel sind.
+
+AEM Cloud Service-Kunden wird empfohlen, ihre Projekte so früh wie möglich mit Java 21 zu erstellen, um neue Sprachfunktionen nutzen zu können.
 
 * **Mindestversion von `bnd-maven-plugin`:**
 Aktualisieren Sie die Verwendung von `bnd-maven-plugin` auf Version 6.4.0, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
