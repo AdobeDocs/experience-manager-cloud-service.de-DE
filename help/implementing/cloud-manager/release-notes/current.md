@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 10%
+source-wordcount: '841'
+ht-degree: 9%
 
 ---
 
@@ -59,7 +59,7 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 13. Februar 20
       * Der schrittweise Rollout für alle Cloud Manager-Umgebungen beginnt im Februar für Sandboxes und Entwicklungsumgebungen und erstreckt sich im April auf Produktionsumgebungen.
       * Kunden, die mit Java 11 erstellen und die Java 21-Laufzeitumgebung (früher) *möchten,* sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe.
 
-* **„CDN-Konfigurationen“ in „Domain-Zuordnungen“ umbenannt:** Im Rahmen der Verbesserungen der Benutzeroberfläche in AEM Cloud Manager wird die Bezeichnung „CDN-Konfigurationen“ jetzt in „Domain-Zuordnungen“ umbenannt. Durch diese Änderung wird die Terminologieausrichtung an die Funktionalität angepasst. <!-- CMGR-64738 -->
+* **„CDN-Konfigurationen“ in „Domain-Zuordnungen“ umbenannt :** Im Rahmen der Verbesserungen der Benutzeroberfläche in AEM Cloud Manager wird die Bezeichnung „CDN-Konfigurationen“ jetzt in „Domain-Zuordnungen“ umbenannt. Durch diese Änderung wird die Terminologieausrichtung an die Funktionalität angepasst. <!-- CMGR-64738 -->
 
   ![CDN-Konfigurationen“ wurden in der Benutzeroberfläche in „Domain-Zuordnungen“ umbenannt](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
@@ -80,6 +80,8 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 13. Februar 20
 * **Erweiterte Unterstützung für Edge Delivery Services-Sites:** Cloud Manager unterstützt jetzt das Onboarding für die neuesten Edge Delivery Services-Sites. Dieses Update beinhaltet eine umfassende Überarbeitung des CDN und des Bereitstellungs-Stacks, was zu einer verbesserten Robustheit und Wartbarkeit führt.
 
 * **Early-Adopter-Programm-Update - PR-Validierungsunterstützung für Bitbucket und GitLab:** Cloud Manager unterstützt jetzt die Pull Request (PR)-Validierung sowohl für Cloud- als auch für selbst gehostete Versionen von Bitbucket und GitLab. Mit dieser Funktion können Kundinnen und Kunden ihre Code-Änderungen vor dem Zusammenführen eines PR anhand der Adobe-Code-Qualitätsschwellen testen. Durch Sicherstellung einer höheren Code-Qualität vor dem Zusammenführen verbessert diese Verbesserung die Erfolgsrate von Code-Änderungen in Produktions-Pipelines erheblich, reduziert die Markteinführungszeit und optimiert die Entwicklungs-Workflows.
+
+Weitere Informationen zu „Bring Your Own Git“ - jetzt mit Unterstützung für GitLab und Bitbucket - und zur Anmeldung als Early Adopter finden Sie in den Versionshinweisen zu [Cloud Manager Oktober 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Erweiterte Filteroptionen für Pipelines:** Cloud Manager bietet jetzt auf der Seite Pipelines erweiterte Filteroptionen, mit denen Sie schnell auf relevante Daten zugreifen und die Bereitstellungseffizienz verbessern können. Zu den wichtigsten Funktionen gehören die folgenden:
 
