@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7122022c4245887ec576d4c1cd9af288b440f0c2
+source-git-commit: 64270a0d3b65ac327b14826117631deeb749c95f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1000'
 ht-degree: 15%
 
 ---
@@ -32,12 +32,13 @@ Die Hauptstärke des universellen Editors liegt in seinem robusten Funktionssatz
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche"> 
     <h3>WYSIWYG-Benutzeroberfläche</h3>
-    <p>Der universelle Editor bietet eine WYSIWYG-Oberfläche für den Formularentwurf. Es bietet eine vordefinierte Komponentenbibliothek, Unterstützung für responsives Design und eine vorlagenbasierte Formularerstellung. Sie können Formularfelder sofort hinzufügen oder entfernen und Feldeigenschaften ändern (z. B. Kennzeichnung, Datenbindung, Validierung). Sie können auch benutzerdefinierte Formularkomponenten in den universellen Editor einbinden.</p>
+    <p>Der universelle Editor bietet eine WYSIWYG-Benutzeroberfläche für den Formularentwurf mit einer vordefinierten Komponentenbibliothek, responsivem Design, vorlagenbasierter Erstellung und Änderungen an Echtzeit-Feldern.
+ </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Regeleditor">
     <h3>Regeleditor</h3>
-    <p>Der Regeleditor ermöglicht die Erstellung komplexer Formularinteraktionen mit ereignisgesteuerten Regeln, sofortiger Validierung und Fehlerbehandlung durch einfache JavaScript- und JSON-basierte Definitionen.</p>
+    <p>Entwerfen Sie responsive Formulare, die sich nahtlos geräteübergreifend anpassen. Erstellen Sie eine Vorschau und testen Sie Designs für Desktops, Tablets und Mobilgeräte im responsiven Modus.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Aktionen übermitteln">
@@ -49,17 +50,17 @@ Die Hauptstärke des universellen Editors liegt in seinem robusten Funktionssatz
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Schnittstelle alt=" WYSIWYG Interface"> 
     <h3>Personalisierung</h3>
-    <p>Personalisierung</p>
+    <p>Personalization verwendet Benutzerdaten, um benutzerspezifische Formularerlebnisse bereitzustellen und Inhalte, Layouts oder Optionen basierend auf den Benutzereinstellungen dynamisch anzupassen.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Regeleditor">
-    <h3>Authentifizierungs-Header</h3>
-    <p>Der Regeleditor ermöglicht die Erstellung komplexer Formularinteraktionen mit ereignisgesteuerten Regeln, sofortiger Validierung und Fehlerbehandlung durch einfache JavaScript- und JSON-basierte Definitionen.</p>
+    <h3>A/B-Tests</h3>
+    <p>A/B-Tests (Experimente) ermöglichen es Unternehmen, mit verschiedenen Formularentwürfen, Layouts und Funktionen zu experimentieren, um die Varianten mit der besten Leistung zu ermitteln.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Aktionen übermitteln">
-    <h3> Veröffentlichen/Rückgängigmachen der Veröffentlichung </h3>
-    <p>Kontrollieren Sie auf einfache Weise die Sichtbarkeit Ihrer Formulare, indem Sie sie mit nur wenigen Klicks veröffentlichen und die Veröffentlichung aufheben.</p>
+    <h3> Aufgabenverwaltung </h3>
+    <p>Durch die Integration mit Adobe Workfront können Teams Aufgaben für die Erstellung und Wartung von Formularen verwalten und so eine nahtlose Zusammenarbeit und optimierte Workflows sicherstellen.</p>
   </div>
 </div>
 
@@ -67,17 +68,17 @@ Die Hauptstärke des universellen Editors liegt in seinem robusten Funktionssatz
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Vorbefüllungs-Services">
     <h3>Vorbefüllungs-Services</h3>
-    <p>Vorbefüllungs-Services verbessern das Benutzererlebnis, indem Formularfelder intelligent mit relevanten Daten aus verschiedenen Quellen ausgefüllt werden, wodurch die manuelle Dateneingabe reduziert wird.</p>
+    <p>Vorbefüllungs-Services füllen Formularfelder automatisch mit relevanten Benutzerdaten aus verschiedenen Quellen, wodurch die manuelle Eingabe reduziert und das Benutzererlebnis verbessert wird.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Datenbindung">
     <h3>Datenbindung</h3>
-    <p>Die Datenbindung ermöglicht direkte, dynamische Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt die Echtzeit-Synchronisierung und komplexe Datenzuordnung.</p>
+    <p>Die Datenbindung ermöglicht direkte Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt Echtzeit-Updates und erweiterte Datenzuordnung.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Internationalisierung/Lokalisierung">
-    <h3>Lokalisierung</h3>
-    <p>Die Internationalisierungsunterstützung gewährleistet globale Barrierefreiheit durch mehrsprachiges Rendering, Sprachkompatibilität von rechts nach links und gebietsschemaspezifische Formatierung.</p>
+    <h3>Veröffentlichen/Rückgängigmachen der Veröffentlichung</h3>
+    <p>Kontrollieren Sie ganz einfach die Sichtbarkeit Ihrer Formulare - veröffentlichen oder heben Sie die Veröffentlichung mit nur wenigen Klicks auf, um die Verfügbarkeit, den Benutzerzugriff und Inhaltsaktualisierungen dynamisch zu verwalten.</p>
   </div>
 </div>
 
@@ -85,17 +86,17 @@ Die Hauptstärke des universellen Editors liegt in seinem robusten Funktionssatz
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Analytics und Tracking">
     <h3>Analytics und Tracking</h3>
-    <p>Integrierte Analyse- und Tracking-Mechanismen bieten Einblicke in Formularinteraktionen, Übermittlungsraten und das Benutzerverhalten, was eine kontinuierliche Optimierung ermöglicht.</p>
+    <p>Gewinnen Sie mit der integrierten Analyse und Verfolgung Einblicke in das Benutzerverhalten, Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Experimentieren (A/B-Tests)">
-    <h3>Experimentieren (A/B-Tests)</h3>
-    <p>Experimente ermöglichen es Unternehmen, A/B-Tests an Formularentwürfen durchzuführen, um die Layouts oder Funktionen mit der besten Leistung zu ermitteln.</p>
+    <h3>Aktionen übermitteln</h3>
+    <p>Übermittlungsaktionen unterstützen Backend-Integration, Logik für die bedingte Übermittlung, sichere Endpunkte und Präprozessoren und optimieren so die Übermittlungs-Workflows.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Aufgabenverwaltung">
-    <h3>Aufgabenverwaltung</h3>
-    <p>Die Integration mit Adobe Workfront ermöglicht es Teams, Aufgaben im Zusammenhang mit der Erstellung und Pflege von Formularen zu verwalten und so eine optimierte Zusammenarbeit sicherzustellen.</p>
+    <h3>Benutzerdefinierte Komponenten</h3>
+    <p>Benutzerdefinierte Komponenten ermöglichen es Entwicklerinnen und Entwicklern, die Formularfunktionen durch die Erstellung eindeutiger Elemente zu erweitern, die auf bestimmte Anwendungsfälle im Unternehmen zugeschnitten sind.</p>
   </div>
 </div>
 
@@ -108,12 +109,12 @@ Die Hauptstärke des universellen Editors liegt in seinem robusten Funktionssatz
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Einbetten von Forms">
     <h3>Einbetten von Forms</h3>
-    <p>Der universelle Editor unterstützt das Einbetten von Formularen direkt in Edge Deliver Services Sites-Seiten. Dies kann mit der vordefinierten Einbettungskomponente erfolgen.</p>
+    <p>Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein, um ein nahtloses Benutzererlebnis zu gewährleisten.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Benutzerdefinierte Komponenten">
     <h3>Benutzerdefinierte Komponenten</h3>
-    <p>Benutzerdefinierte Komponenten ermöglichen es Entwicklerinnen und Entwicklern, die Funktionalität von Formularen zu erweitern, indem sie individuelle Formularelemente erstellen, die auf bestimmte Anwendungsfälle zugeschnitten sind 
+    <p>Benutzerdefinierte Komponenten ermöglichen es Entwicklerinnen und Entwicklern, die Formularfunktionen durch die Erstellung eindeutiger Elemente zu erweitern, die auf bestimmte Anwendungsfälle im Unternehmen zugeschnitten sind.
     </p>
   </div>
 </div>
@@ -122,12 +123,12 @@ Die Hauptstärke des universellen Editors liegt in seinem robusten Funktionssatz
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Dankeskonfiguration">
     <h3>Dankeskonfiguration</h3>
-    <p>Passen Sie die Bestätigungsmeldung oder -seite an, die nach der Formularübermittlung angezeigt wird.</p>
+    <p>Einfaches Anpassen der Bestätigungsmeldung oder -seite, die Benutzern nach erfolgreicher Formularübermittlung angezeigt wird.</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Aktionen übermitteln">
     <h3>Aktionen übermitteln</h3>
-    <p>Übermittlungsaktionen vereinfachen Formularübermittlungs-Workflows mit Backend-Integrationsoptionen, Datenvorprozessoren, bedingter Übermittlungslogik und sicheren Endpunktverbindungen.</p>
+    <p>Übermittlungsaktionen erleichtern Workflows für die Formularübermittlung mit Backend-Integration und sicheren Endpunktverbindungen.</p>
   </div>
 </div>
 
