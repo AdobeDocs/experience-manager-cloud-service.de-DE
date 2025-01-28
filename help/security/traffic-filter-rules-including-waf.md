@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 
 | **Eigenschaft** | **Typ** | **Beschreibung** |
 |---|---|---|
-| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von:<br><ul><li>`path`: Gibt den vollständigen Pfad einer URL ohne die Abfrageparameter zurück. (`pathRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`url`: Gibt die vollständige URL einschließlich der Abfrageparameter zurück. (`urlRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`queryString`: Gibt den Abfrageteil einer URL zurück</li><li>`method`: Gibt die in der Anfrage verwendete HTTP-Methode zurück.</li><li>`tier`: Gibt entweder `author`, `preview` oder `publish` zurück.</li><li>`domain`: Gibt die Eigenschaft der Domain (wie in der `Host`-Kopfzeile definiert) in Kleinschreibung zurück</li><li>`clientIp`: Gibt die Client-IP zurück.</li><li>`forwardedDomain`: Gibt die erste Domain zurück, die in der `X-Forwarded-Host`-Kopfzeile in Kleinbuchstaben definiert ist.</li><li>`forwardedIp`: Gibt die erste IP in `X-Forwarded-For` Kopfzeile zurück.</li><li>`clientCountry`: Gibt einen aus zwei Buchstaben bestehenden Code ([Regionales Indikatorsymbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) zurück, der angibt, in welchem Land sich die Kundin bzw. der Kunde befindet.</li></ul> |
+| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von:<br><ul><li>`path`: Gibt den vollständigen Pfad einer URL ohne die Abfrageparameter zurück. (`pathRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`url`: Gibt die vollständige URL, einschließlich der Abfrageparameter zurück. (`urlRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`queryString`: Gibt den Abfrageteil einer URL zurück</li><li>`method`: Gibt die in der Anfrage verwendete HTTP-Methode zurück.</li><li>`tier`: Gibt entweder `author`, `preview` oder `publish` zurück.</li><li>`domain`: Gibt die Eigenschaft der Domain (wie in der `Host`-Kopfzeile definiert) in Kleinschreibung zurück</li><li>`clientIp`: Gibt die Client-IP zurück.</li><li>`forwardedDomain`: Gibt die erste Domain wie in der `X-Forwarded-Host`-Kopfzeile definiert in Kleinschreibung zurück</li><li>`forwardedIp`: Gibt die erste IP in der `X-Forwarded-For`-Kopfzeile zurück.</li><li>`clientCountry`: Gibt einen aus zwei Buchstaben bestehenden Code ([Regionales Indikatorsymbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) zurück, der angibt, in welchem Land sich die Kundin bzw. der Kunde befindet.</li></ul> |
 | reqHeader | `string` | Gibt die Anfragekopfzeile mit dem angegebenen Namen zurück |
 | queryParam | `string` | Gibt den Abfrageparameter mit dem angegebenen Namen zurück |
 | reqCookie | `string` | Gibt ein Cookie mit dem angegebenen Namen zurück |
