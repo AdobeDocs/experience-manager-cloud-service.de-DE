@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 100%
+source-wordcount: '1045'
+ht-degree: 95%
 
 ---
 
@@ -33,15 +33,15 @@ Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise [zus�
 
 1. Geben Sie im Assistenten *Erstellen Sie Ihr Programm* im Textfeld **Programmname** den gewünschten Namen für das Programm ein.
 
-1. Wählen Sie unter **Programmziel** die Option **`Set up for production`** aus.
+1. Wählen **unter &quot;**&quot; die Option ![Globussymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**Für Produktion einrichten** aus.
 
    ![Assistent zum Erstellen von Programmen](assets/create-production-program.png)
 
 1. (Optional) Führen Sie unten rechts im Dialogfeld des Assistenten einen der folgenden Schritte aus:
 
-   * Ziehen Sie eine Bilddatei per Drag-and-Drop auf das Ziel **Programmbild hinzufügen**.
-   * Klicken Sie auf **Programmbild hinzufügen** und wählen Sie dann ein Bild aus einem Datei-Browser aus.
-   * Klicken Sie auf das Papierkorbsymbol, um ein hinzugefügtes Bild zu löschen.
+   * Ziehen Sie eine Bilddatei per Drag-and-Drop auf das Ziel ![Bildsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Programmbild hinzufügen**.
+   * Klicken Sie auf ![Bildsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Programmbild hinzufügen** und wählen Sie dann ein Bild aus einem Datei-Browser aus.
+   * Klicken Sie auf ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg), um ein hinzugefügtes Bild zu löschen.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -52,13 +52,13 @@ Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise [zus�
    * Wählen Sie **Edge Deliver Services** für eine vollständig verwaltete CDN-Lösung, die digitale Erlebnisse optimiert. Siehe [Informationen zur Verwendung von Edge Delivery Services zum Bereitstellen Ihres Cloud Manager-Projekts](#edge-overview)
    * Wenn Sie die Option **[Erweiterte Sicherheit aktivieren](#security)** ausgewählt haben, können Sie nur diejenigen Lösungen auswählen, für die HIPAA-Berechtigungen verfügbar sind.
 
-   ![Lösungen auswählen](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+     ![Lösungen auswählen](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. Klicken Sie auf den Pfeil links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
+   * Klicken Sie ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
 
    ![Add-ons auswählen](assets/setup-prod-commerce.png)
 
-1. Klicken Sie nach der Auswahl von Lösungen und Add-ons auf **Weiter**.
+1. Wenn Sie Ihre Lösungen und Add-ons ausgewählt haben, klicken Sie auf **Weiter**.
 
 1. Geben Sie auf der Registerkarte **Tag der Veröffentlichung** das Datum ein, an dem Ihr Produktionsprogramm veröffentlicht werden soll.
 
@@ -69,7 +69,7 @@ Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise [zus�
 
 1. Klicken Sie auf **Erstellen**. Cloud Manager erstellt Ihr Programm und zeigt es zur Auswahl auf der Landingpage an.
 
-![Übersicht über Cloud Manager](assets/navigate-cm.png)
+   ![Übersicht über Cloud Manager](assets/navigate-cm.png)
 
 ## Zusätzliche Optionen für Produktionsprogramme {#options}
 
