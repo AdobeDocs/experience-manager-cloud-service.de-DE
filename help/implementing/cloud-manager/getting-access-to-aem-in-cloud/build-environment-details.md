@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
+source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 48%
+source-wordcount: '1489'
+ht-degree: 44%
 
 ---
 
@@ -84,6 +84,12 @@ Um mit Java 21 oder Java 17 zu Building zu migrieren, müssen Sie zunächst ein 
 
 Wenn Sie Ihre Anwendung auf eine neue Java-Build-Version und Laufzeitversion migrieren, testen Sie sie gründlich in Entwicklungs- und Staging-Umgebungen, bevor Sie sie in der Produktion bereitstellen.
 
+Wir empfehlen die folgende Bereitstellungsstrategie:
+
+1. Führen Sie Ihre lokale SDK mit Java 21 aus, die Sie von https://experience.adobe.com/#/downloads herunterladen können, und stellen Sie Ihr Programm dafür bereit und überprüfen Sie die Funktionalität. Überprüfen Sie die Protokolle auf Fehler, die auf Probleme beim Classloading oder Bytecode Weaving hinweisen.
+1. Konfigurieren Sie eine Verzweigung im Cloud Manager-Repository für die Verwendung von Java 21 als Java-Version zur Build-Zeit, konfigurieren Sie eine DEV-Pipeline für die Verwendung dieser Verzweigung und führen Sie die Pipeline aus. Führen Sie Ihre Validierungstests durch.
+1. Wenn alles gut aussieht, konfigurieren Sie Ihre Staging-/Produktions-Pipeline so, dass Java 21 als Build-Time-Java-Version verwendet wird, und führen Sie die Pipeline aus.
+
 ##### Über einige Übersetzungsfunktionen {#translation-features}
 
 Die folgenden Funktionen funktionieren beim Erstellen mit Java 21 oder Java 17 möglicherweise nicht ordnungsgemäß und Adobe geht davon aus, dass sie Anfang 2025 behoben werden:
@@ -93,7 +99,7 @@ Die folgenden Funktionen funktionieren beim Erstellen mit Java 21 oder Java 17 m
 
 #### Laufzeitanforderungen {#runtime-requirements}
 
-Die Java 21-Laufzeit wird für Builds mit Java 21 und Java 17 verwendet und nach und nach auch auf Java 11-Builds angewendet (siehe Hinweis unten). Um die Kompatibilität sicherzustellen, sind die folgenden Anpassungen erforderlich.
+Die Java 21-Laufzeit wird für Builds mit Java 21 und Java 17 verwendet und nach und nach auch auf Java 11-Builds angewendet (siehe Hinweis unten). Um das Java 21-Update zu erhalten, muss die Umgebung auf AEM-Version 17098 oder neuer sein. Um die Kompatibilität sicherzustellen, sind die folgenden Anpassungen erforderlich.
 
 Bibliotheksaktualisierungen können jederzeit angewendet werden, da sie mit älteren Java-Versionen kompatibel bleiben.
 
