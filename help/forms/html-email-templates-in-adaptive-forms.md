@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ Im Folgenden finden Sie einen kurzen Überblick über die erforderlichen Schritt
 
 ## Konfigurieren einer HTML-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail nach dem Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
 
 ### Option 1: Eine Datei mit der HTML-Vorlage auswählen
 
@@ -43,10 +43,13 @@ Bevor Sie fortfahren, stellen Sie sicher, dass Sie die HTML-Vorlage in Ihre AEM 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
 1. Wechseln Sie zum **Inhaltsbrowser**, wählen Sie den **Guide-Container** und tippen Sie auf das Symbol Eigenschaften . Ein Dialogfeld mit dem Titel &quot;`Adaptive Form Container`&quot; wird angezeigt.
 1. Wechseln Sie zur Registerkarte **Übermittlung** und wählen Sie die Übermittlungsaktion **E-Mail senden** aus.
+
+   ![Übermittlungsaktion E-Mail senden](/help/forms/assets/send-email-action.png)
+
 1. Aktivieren Sie die Option **Externe Vorlage verwenden**.
 1. Aktivieren Sie die **HTML-Vorlage verwenden**.
 1. Klicken Sie auf das Ordnersymbol für die Option Pfad für externe Vorlage und wählen Sie Ihre HTML-Vorlage aus.
-1. Klicken Sie auf Fertig , um die Konfiguration zu speichern.
+1. Klicken Sie **Fertig**, um die Konfiguration zu speichern.
 
 Ihre HTML-Vorlage ist jetzt für das adaptive Formular konfiguriert.
 
@@ -55,14 +58,13 @@ Ihre HTML-Vorlage ist jetzt für das adaptive Formular konfiguriert.
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
 1. Wechseln Sie zum **Inhaltsbrowser**, wählen Sie den **Guide-Container** und tippen Sie auf das Symbol Eigenschaften . Ein Dialogfeld mit dem Titel &quot;`Adaptive Form Container`&quot; wird angezeigt.
 1. Wechseln Sie zur Registerkarte **Übermittlung** und wählen Sie die Übermittlungsaktion **E-Mail senden** aus.
-1. Aktivieren Sie die Option **Externe Vorlage verwenden**.
 1. Aktivieren Sie die **HTML-Vorlage verwenden**.
 1. Geben Sie Ihren HTML-Code direkt in das bereitgestellte Feld **E-Mail-Vorlage** ein.
 
 
 ## Konfigurieren einer Nur-Text-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail nach dem Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
 
 ### Option 1: Wählen Sie eine Datei aus, die die Vorlage enthält
 
@@ -149,8 +151,6 @@ Im Folgenden finden Sie ein Beispiel für eine Nur-Text-E-Mail-Vorlage:
     Best regards,
     Your Team
 ```
-
-Ersetzen Sie die Platzhalter (${name}, ${email} usw.) durch die entsprechenden Formularfeldnamen in Ihrem adaptiven Formular.
 
 ## Best Practices für das HTML von E-Mail-Vorlagen
 

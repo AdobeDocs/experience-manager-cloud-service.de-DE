@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '980'
 ht-degree: 14%
 
 ---
@@ -78,7 +78,7 @@ Die Funktionen des universellen Editors sind sorgfältig darauf ausgelegt, ein s
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Internationalisierung/Lokalisierung">
     <h3>Veröffentlichen/Rückgängigmachen der Veröffentlichung</h3>
-    <p>Kontrollieren Sie ganz einfach die Sichtbarkeit Ihrer Formulare - veröffentlichen oder heben Sie die Veröffentlichung mit nur wenigen Klicks auf, um Verfügbarkeit und Inhaltsaktualisierungen dynamisch zu verwalten.</p>
+    <p>Kontrollieren Sie ganz einfach die Sichtbarkeit Ihrer Formulare - veröffentlichen oder heben Sie die Veröffentlichung mit nur wenigen Klicks direkt im Editor auf. So können Sie die Verfügbarkeit, den Benutzerzugriff und Inhaltsaktualisierungen in Echtzeit dynamisch verwalten und sicherstellen, dass Ihre Formulare immer auf dem neuesten Stand und nach Bedarf abrufbar sind.</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ Die Funktionen des universellen Editors sind sorgfältig darauf ausgelegt, ein s
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Editor-Anpassung">
     <h3>Editor-Anpassung</h3>
-    <p>Entwickler können die Funktionalität des universellen Editors durch Benutzeroberflächenerweiterungen erweitern, was maßgeschneiderte Lösungen ermöglicht, die spezifischen organisatorischen Anforderungen entsprechen.</p>
+    <p>Entwickler können die Funktionalität des Editors durch Benutzeroberflächenerweiterungen erweitern und so maßgeschneiderte Lösungen für spezifische organisatorische Anforderungen ermöglichen.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG-Benutzeroberfläche" alt="Einbetten von Forms">
