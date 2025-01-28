@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Kunden mit einer -Lizenz bei einem Protokollierungsanbieter oder die ein Protoko
 * HTTPS
 * Splunk
 
-Die Protokollweiterleitung wird im Self-Service-Modus konfiguriert, indem eine Konfiguration in Git deklariert und über die Cloud Manager-Konfigurations-Pipeline für RDE-, Entwicklungs-, Staging- und Produktionsumgebungstypen in Produktionsprogrammen (ohne Sandbox) bereitgestellt wird.
+Die Protokollweiterleitung wird im Self-Service-Modus konfiguriert, indem eine Konfiguration in Git deklariert wird, und kann über Cloud Manager-Konfigurations-Pipelines für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilen-Tools in schnellen Entwicklungsumgebungen (RDEs) bereitgestellt werden.
 
 Es gibt eine Option für das Routing der AEM- und Apache-/Dispatcher-Protokolle über die erweiterte AEM-Netzwerkinfrastruktur, z. B. die dedizierte Ausgangs-IP.
 

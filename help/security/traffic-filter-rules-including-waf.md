@@ -4,9 +4,9 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
+source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
-source-wordcount: '4053'
+source-wordcount: '4049'
 ht-degree: 98%
 
 ---
@@ -24,7 +24,7 @@ Die meisten dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AE
 
 Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für erweiterte Sicherheit oder eine WAF-DDoS Protection-Lizenz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: WAF-Regeln) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
 
-Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines in Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in RDEs (Rapid Development Environments) bereitgestellt werden.
+Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines für die Umgebungstypen „Entwicklung“, „Staging“ und „Produktion“ bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilen-Tools in schnellen Entwicklungsumgebungen (RDEs) bereitgestellt werden.
 
 [Absolvieren Sie ein Tutorial](#tutorial), um rasch konkrete Kenntnisse zu dieser Funktion zu erwerben.
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
+source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a
 
 Eine Cloud Manager-Konfigurations-Pipeline stellt Konfigurationsdateien (die im YAML-Format erstellt wurden) in einer Zielumgebung bereit. Auf diese Weise kann eine Reihe von Funktionen in AEM as a Cloud Service konfiguriert werden, darunter die Protokollweiterleitung, Bereinigungsaufgaben sowie verschiedene CDN-Funktionen.
 
-Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungen in Produktionsprogrammen (ohne Sandbox) bereitgestellt werden. Die Konfigurationsdateien können mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
+Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdateien können mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
 In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick über wichtige Informationen dazu, wie Konfigurations-Pipelines verwendet werden können und wie Konfigurationen für diese strukturiert sein sollten. Es werden allgemeine Konzepte beschrieben, die für alle oder eine Teilmenge der von Konfigurations-Pipelines unterstützten Funktionen freigegeben werden.
 

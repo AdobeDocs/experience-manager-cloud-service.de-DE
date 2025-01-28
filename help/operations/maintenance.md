@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 100%
+source-wordcount: '2043'
+ht-degree: 99%
 
 ---
 
@@ -267,7 +267,7 @@ Beachten Sie Folgendes, damit die Konfiguration gültig ist:
 * Alle Eigenschaften müssen definiert sein. Es gibt keine geerbten Standardwerte.
 * Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
 
-**4** Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im [Artikel zu Konfigurations-Pipelines.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxes und schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) unterstützen keine Bereinigungen.
+**4**: Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Pipeline konfigurieren“ beschrieben](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ### Versionsbereinigung {#version-purge}
 
