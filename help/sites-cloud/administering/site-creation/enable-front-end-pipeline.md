@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 87%
 
 ---
 
@@ -66,3 +66,14 @@ Jetzt kann Ihre Site die Frontend-Pipeline verwenden. Weitere Informationen zur 
 * [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](site-rail.md)
 * [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md): Diese Dokumentations-Tour gibt Ihnen einen umfassenden Überblick über den Prozess der schnellen Bereitstellung einer Website mithilfe der Frontend-Pipeline und des Tools zur schnellen Site-Erstellung.
 * [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end): In diesem Dokument wird die Frontend-Pipeline im Kontext der Full-Stack- und Web-Stufen-Pipelines beschrieben.
+
+## Frontend-Pipeline und benutzerdefinierte Domains {#custom-domains}
+
+Wie im Abschnitt [Technische Details](#technical-details) beschrieben, werden beim Aktivieren der Frontend-Pipeline-Funktion für eine Site ein `SiteConfig` und `HtmlPageItemsConfig` Knoten unter `/conf/<site-name>/sling:configs` erstellt.
+
+Wenn Sie die benutzerdefinierte Domain-Funktion von [Cloud Manager ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Ihre Site zusammen mit der Frontend-Pipeline verwenden möchten, müssen diesen Knoten zusätzliche Eigenschaften hinzugefügt werden.
+
+1. Legen Sie die `customFrontendPrefix` Eigenschaft in `SiteConfig` für die Site fest.
+1. Dadurch wird der `prefixPath` der `HtmlPageItemsConfig` mit der benutzerdefinierten Domain aktualisiert.
+
+Seiten für die Site verweisen dann auf Design-Artefakte aus dieser aktualisierten URL.

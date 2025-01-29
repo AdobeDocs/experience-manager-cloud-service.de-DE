@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 100%
+source-wordcount: '720'
+ht-degree: 97%
 
 ---
 
@@ -75,6 +75,7 @@ Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Rei
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden.
 * AEM as a Cloud Service unterstützt keine Platzhalterdomänen `*.example.com`.
 * Vor dem Hinzufügen eines benutzerdefinierten Domain-Namens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domain-Namen enthält, für Ihr Programm installiert werden (Platzhalterzertifikate sind gültig). 
+* Für die Verwendung eines benutzerdefinierten Domain-Namens mit der Funktion „Frontend[Pipeline“ sind zusätzliche Konfigurationsschritte erforderlich](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)
 
 ## Erste Schritte {#get-started}
 
