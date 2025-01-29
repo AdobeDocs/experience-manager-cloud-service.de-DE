@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 43%
+ht-degree: 93%
 
 ---
 
@@ -59,44 +59,44 @@ Die Veröffentlichung der nächsten Version ist für Donnerstag, den 13. Februar
       * Der schrittweise Rollout für alle Cloud Manager-Umgebungen beginnt im Februar für Sandboxes und Entwicklungsumgebungen und wird im April auf Produktionsumgebungen ausgeweitet.
       * Kundinnen und Kunden, die mit Java 11 erstellen und die Java 21-Laufzeitumgebung *früher* übernehmen möchten, können sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe wenden.
 
-* **„CDN-Konfigurationen“ in „Domain-Zuordnungen“ umbenannt :** Im Rahmen der Verbesserungen der Benutzeroberfläche in AEM Cloud Manager wird die Bezeichnung „CDN-Konfigurationen“ jetzt in „Domain-Zuordnungen“ umbenannt. Durch diese Änderung wird die Terminologieausrichtung an die Funktionalität angepasst. <!-- CMGR-64738 -->
+* **„CDN-Konfigurationen“ in „Domain-Zuordnungen“ umbenannt**: Im Rahmen der Verbesserungen der Benutzeroberfläche in AEM Cloud Manager wird die Bezeichnung „CDN-Konfigurationen“ jetzt in „Domain-Zuordnungen“ umbenannt. Durch diese Änderung wird die terminologische Angleichung an die Funktionalität verbessert. <!-- CMGR-64738 -->
 
   ![„CDN-Konfigurationen“ wurden in der Benutzeroberfläche in „Domain-Zuordnungen“ umbenannt](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
-* **Bereitstellung einer Edge Delivery-Site mit einem Klick:** Cloud Manager ermöglicht es Benutzenden mit den entsprechenden Berechtigungen und Lizenzen, mit nur einem Klick eine Beispiel-Edge Delivery Services-Site zu erstellen. Dieser optimierte Prozess bietet die folgenden automatisierten Funktionen:
+* **Bereitstellung einer Edge Delivery-Site mit einem Klick**: Cloud Manager ermöglicht es Benutzenden mit den entsprechenden Berechtigungen und Lizenzen nun, mit nur einem Klick eine beispielhafte Edge Delivery Services-Site zu erstellen. Dieser optimierte Prozess bietet die folgenden automatisierten Funktionen:
 
-   * **GitHub-Integration**: Erstellt automatisch ein GitHub-Repository innerhalb einer bestehenden Organisation, vorkonfiguriert mit einer Textbausteinvorlage für Edge Delivery Services.
-   * **Installation der AEM-Code-**-App : Installiert die AEM-Code-Synchronisierungsanwendung im Repository, um eine nahtlose Synchronisierung und Bereitstellung sicherzustellen.
-   * **Einrichten von Content Collaboration** - Verknüpft einen spezifischen Google Drive-Ordner für die Speicherung von Inhalten und bietet eine kollaborative Umgebung für das Content-Management.
-   * **Inhaltsveröffentlichung** - Benutzerinnen und Benutzer können jetzt Inhalte für bereitgestellte Websites direkt in der Cloud Manager-Benutzeroberfläche veröffentlichen, wodurch Workflows vereinfacht und die Effizienz verbessert wird.
-   * **Enhanced Collaboration** - Die Plattform ermöglicht es Benutzenden, mehrere Mitwirkende zum Inhaltsspeicherordner von Google Drive hinzuzufügen, was Teamarbeit und Inhaltsbeiträge erleichtert.
+   * **GitHub-Integration**: Es wird automatisch ein GitHub-Repository innerhalb einer bestehenden Organisation erstellt, vorkonfiguriert mit einer Bausteinvorlage für Edge Delivery Services.
+   * **Installation der AEM-Code-Synchronisierungsanwendung**: Die Installation der AEM-Code-Synchronisierungsanwendung im Repository sorgt für eine nahtlose Synchronisierung und Bereitstellung.
+   * **Einrichten einer Umgebung für Zusammenarbeit an Content**: Es wird ein bestimmter Google Drive-Ordner für die Inhaltsspeicherung verknüpft und so eine gemeine Arbeitsumgebung zum Content-Management bereitgestellt.
+   * **Inhaltsveröffentlichung**: Benutzende können nun Inhalte für bereitgestellte Sites direkt in der Cloud Manager-Benutzeroberfläche veröffentlichen. Das Ergebnis: einfachere Workflows und höhere Effizienz.
+   * **Verbesserte Zusammenarbeit**: Die Plattform ermöglicht es Benutzenden, mehrere Mitarbeitende zum Google Drive-Ordner für die Inhaltsspeicherung hinzuzufügen, was Team-Arbeit und Inhaltsbeiträge vereinfacht.
 
-  Diese Verbesserungen zielen darauf ab, die Automatisierung zu verbessern, Einrichtungsprozesse zu vereinfachen und die Zusammenarbeit für Edge Delivery Services-Benutzende zu verbessern. <!-- CMGR-59362 -->
+  Diese Verbesserungen zielen darauf ab, die Automatisierung zu optimieren, Einrichtungsprozesse zu vereinfachen und die Zusammenarbeit für Edge Delivery Services-Benutzende zu verbessern. <!-- CMGR-59362 -->
 
-  ![Bereitstellung einer Edge Delivery-Site](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+  ![Bereitstellen einer Edge Delivery-Site](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
 
-  ![Dialogfeld &quot;Edge Delivery-Site bereitstellen“](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+  ![Dialogfeld zum Bereitstellen einer Edge Delivery-Site](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
 
-* **Erweiterte Unterstützung für Edge Delivery Services-Sites:** Cloud Manager unterstützt jetzt das Onboarding für die neuesten Edge Delivery Services-Sites. Dieses Update beinhaltet eine umfassende Überarbeitung des CDN und des Bereitstellungs-Stacks, was zu einer verbesserten Robustheit und Wartbarkeit führt.
+* **Erweiterte Unterstützung für Edge Delivery Services-Sites**: Cloud Manager unterstützt nun das Onboarding für die neuesten Edge Delivery Services-Sites. Dieses Update beinhaltet eine umfassende Überarbeitung des CDN und Bereitstellungs-Stacks und führt so zu mehr Robustheit und besserer Wartbarkeit.
 
-* **Erweiterte Filteroptionen für Pipelines:** Cloud Manager bietet jetzt auf der Seite Pipelines erweiterte Filteroptionen, mit denen Sie schnell auf relevante Daten zugreifen und die Bereitstellungseffizienz verbessern können. Zu den wichtigsten Funktionen gehören die folgenden:
+* **Erweiterte Filteroptionen für Pipelines**: Cloud Manager bietet nun auf der Pipelines-Seite erweiterte Filteroptionen, mit denen Sie schnell auf relevante Daten zugreifen und die Bereitstellungseffizienz verbessern können. Zu den wichtigsten Funktionen gehören u. a.:
 
-   * **Filter mit mehreren Kriterien:** Verfeinern Sie Suchergebnisse mit Filtern wie Pipeline-Name, Umgebung und Bereitstellungs-Code.
-   * **Optimierte Pipeline-Suche** Einfaches Auffinden bestimmter Pipelines für schnellere Navigation und verbessertes Workflow-Management.
+   * **Filterung mit mehreren Kriterien**: Verfeinern Sie Suchergebnisse mit Filtern wie Pipeline-Name, Umgebung und Bereitstellungs-Code.
+   * **Optimierte Pipeline-Suche**: Finden Sie bestimmte Pipelines nun einfacher und profitieren Sie von einer schnelleren Navigation und verbessertem Workflow-Management.
 
-  Insgesamt machen diese Verbesserungen die Verwaltung und Bereitstellung von Pipelines effizienter und benutzerfreundlicher.
+  Alles in allem wird sowohl die Verwaltung von Pipelines als auch deren Bereitstellung durch diese Verbesserungen effizienter und benutzerfreundlicher.
 
-  ![Pipeline-Filter-Funktion](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+  ![Pipeline-Filterfunktion](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
 
-* **Self-Service-CDN-Konfiguration für den Edge Delivery-Service:** Neue Anwender von Edge Delivery Service können ihr CDN jetzt unabhängig über Cloud Manager konfigurieren. Dieses Update erweitert die Unterstützung von `.hlx.page/live` auf die neue `.aem.page/live` und bietet Anwendern mehr Flexibilität und optimierte Einrichtung.
+* **Selfservice-CDN-Konfiguration für Edge Delivery Service**: Neue Anwendende von Edge Delivery Service können ihr CDN nun unabhängig über Cloud Manager konfigurieren. Dieses Update erweitert die Unterstützung von `.hlx.page/live` auf die neue `.aem.page/live` und bietet so mehr Flexibilität und eine optimierte Einrichtung.
 
 ## Early-Adopter-Programm {#early-adoption}
 
 Nehmen Sie am Early-Adopter-Programm von Cloud Manager teil und nutzen Sie die Möglichkeit, zukünftige Funktionen zu testen.
 
-* **Early-Adopter-Programm-Update - PR-Validierungsunterstützung für Bitbucket und GitLab:** Cloud Manager unterstützt jetzt die Pull Request (PR)-Validierung sowohl für Cloud- als auch für selbst gehostete Versionen von Bitbucket und GitLab. Mit dieser Funktion können Kundinnen und Kunden ihre Code-Änderungen vor dem Zusammenführen eines PR anhand der Adobe-Code-Qualitätsschwellen testen. Durch Sicherstellung einer höheren Code-Qualität vor dem Zusammenführen verbessert diese Verbesserung die Erfolgsrate von Code-Änderungen in Produktions-Pipelines erheblich, reduziert die Markteinführungszeit und optimiert die Entwicklungs-Workflows.
+* **Early-Adopter-Programm-Update – PR-Validierungsunterstützung für Bitbucket und GitLab**: Cloud Manager unterstützt jetzt die Pull Request(PR)-Validierung sowohl für Cloud- als auch für selbst gehostete Versionen von Bitbucket und GitLab. Mit dieser Funktion können Kundinnen und Kunden ihre Code-Änderungen vor dem Zusammenführen einer PR anhand der Adobe-Qualitätsschwellen für Code testen. Durch eine höhere Code-Qualität vor dem Zusammenführen verbessert diese Erweiterung die Erfolgsrate von Code-Änderungen in Produktions-Pipelines erheblich, sie reduziert die Time-to-Market und optimiert Entwicklungs-Workflows.
 
-Weitere Informationen zu „Bring Your Own Git“ - jetzt mit Unterstützung für GitLab und Bitbucket - und zur Anmeldung als Early Adopter finden Sie in den Versionshinweisen zu [Cloud Manager Oktober 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+Weitere Informationen zum Einbringen eines eigenen Gits („Bring Your Own Git“) – nun mit Unterstützung für GitLab und Bitbucket – und zum Registrieren als Early Adopter finden Sie in den [Versionshinweisen zur Cloud Manager-Version von Oktober 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Erweiterte Testumgebung** Eine speziell entwickelte Lösung, die die Lücke zwischen Entwicklung und Produktion schließt. Diese Umgebung ist auf die Unternehmensanforderungen zugeschnitten und repliziert Spezifikationen auf Produktionsebene, um genaue Benutzerakzeptanztests (UAT) und gründliche Leistungsbewertungen zu unterstützen.
 
