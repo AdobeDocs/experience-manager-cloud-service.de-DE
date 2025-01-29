@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 45%
+source-wordcount: '923'
+ht-degree: 43%
 
 ---
 
@@ -79,10 +79,6 @@ Die Veröffentlichung der nächsten Version ist für Donnerstag, den 13. Februar
 
 * **Erweiterte Unterstützung für Edge Delivery Services-Sites:** Cloud Manager unterstützt jetzt das Onboarding für die neuesten Edge Delivery Services-Sites. Dieses Update beinhaltet eine umfassende Überarbeitung des CDN und des Bereitstellungs-Stacks, was zu einer verbesserten Robustheit und Wartbarkeit führt.
 
-* **Early-Adopter-Programm-Update - PR-Validierungsunterstützung für Bitbucket und GitLab:** Cloud Manager unterstützt jetzt die Pull Request (PR)-Validierung sowohl für Cloud- als auch für selbst gehostete Versionen von Bitbucket und GitLab. Mit dieser Funktion können Kundinnen und Kunden ihre Code-Änderungen vor dem Zusammenführen eines PR anhand der Adobe-Code-Qualitätsschwellen testen. Durch Sicherstellung einer höheren Code-Qualität vor dem Zusammenführen verbessert diese Verbesserung die Erfolgsrate von Code-Änderungen in Produktions-Pipelines erheblich, reduziert die Markteinführungszeit und optimiert die Entwicklungs-Workflows.
-
-Weitere Informationen zu „Bring Your Own Git“ - jetzt mit Unterstützung für GitLab und Bitbucket - und zur Anmeldung als Early Adopter finden Sie in den Versionshinweisen zu [Cloud Manager Oktober 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
-
 * **Erweiterte Filteroptionen für Pipelines:** Cloud Manager bietet jetzt auf der Seite Pipelines erweiterte Filteroptionen, mit denen Sie schnell auf relevante Daten zugreifen und die Bereitstellungseffizienz verbessern können. Zu den wichtigsten Funktionen gehören die folgenden:
 
    * **Filter mit mehreren Kriterien:** Verfeinern Sie Suchergebnisse mit Filtern wie Pipeline-Name, Umgebung und Bereitstellungs-Code.
@@ -94,10 +90,19 @@ Weitere Informationen zu „Bring Your Own Git“ - jetzt mit Unterstützung fü
 
 * **Self-Service-CDN-Konfiguration für den Edge Delivery-Service:** Neue Anwender von Edge Delivery Service können ihr CDN jetzt unabhängig über Cloud Manager konfigurieren. Dieses Update erweitert die Unterstützung von `.hlx.page/live` auf die neue `.aem.page/live` und bietet Anwendern mehr Flexibilität und optimierte Einrichtung.
 
+## Early-Adopter-Programm {#early-adoption}
 
-<!-- ## Early adoption program {#early-adoption}
+Nehmen Sie am Early-Adopter-Programm von Cloud Manager teil und nutzen Sie die Möglichkeit, zukünftige Funktionen zu testen.
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+* **Early-Adopter-Programm-Update - PR-Validierungsunterstützung für Bitbucket und GitLab:** Cloud Manager unterstützt jetzt die Pull Request (PR)-Validierung sowohl für Cloud- als auch für selbst gehostete Versionen von Bitbucket und GitLab. Mit dieser Funktion können Kundinnen und Kunden ihre Code-Änderungen vor dem Zusammenführen eines PR anhand der Adobe-Code-Qualitätsschwellen testen. Durch Sicherstellung einer höheren Code-Qualität vor dem Zusammenführen verbessert diese Verbesserung die Erfolgsrate von Code-Änderungen in Produktions-Pipelines erheblich, reduziert die Markteinführungszeit und optimiert die Entwicklungs-Workflows.
+
+Weitere Informationen zu „Bring Your Own Git“ - jetzt mit Unterstützung für GitLab und Bitbucket - und zur Anmeldung als Early Adopter finden Sie in den Versionshinweisen zu [Cloud Manager Oktober 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+
+* **Erweiterte Testumgebung** Eine speziell entwickelte Lösung, die die Lücke zwischen Entwicklung und Produktion schließt. Diese Umgebung ist auf die Unternehmensanforderungen zugeschnitten und repliziert Spezifikationen auf Produktionsebene, um genaue Benutzerakzeptanztests (UAT) und gründliche Leistungsbewertungen zu unterstützen.
+
+Wenn Sie daran interessiert sind, am Early-Adopter-Programm teilzunehmen, füllen Sie [dieses Formular aus](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAA8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz IILCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDCPbG1adUaNZQ%3D&amp;reserved=0) und senden Sie uns eine E-Mail (Details folgen) mit Ihrem `OrgID`.
+
+
 
 <!-- ## Bug fixes -->
 
