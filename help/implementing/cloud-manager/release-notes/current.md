@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
+source-git-commit: 613a5602706d4d0d63fce7a20bf52660d9a9d335
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 93%
@@ -96,11 +96,11 @@ Nehmen Sie am Early-Adopter-Programm von Cloud Manager teil und nutzen Sie die M
 
 * **Early-Adopter-Programm-Update – PR-Validierungsunterstützung für Bitbucket und GitLab**: Cloud Manager unterstützt jetzt die Pull Request(PR)-Validierung sowohl für Cloud- als auch für selbst gehostete Versionen von Bitbucket und GitLab. Mit dieser Funktion können Kundinnen und Kunden ihre Code-Änderungen vor dem Zusammenführen einer PR anhand der Adobe-Qualitätsschwellen für Code testen. Durch eine höhere Code-Qualität vor dem Zusammenführen verbessert diese Erweiterung die Erfolgsrate von Code-Änderungen in Produktions-Pipelines erheblich, sie reduziert die Time-to-Market und optimiert Entwicklungs-Workflows.
 
-Weitere Informationen zum Einbringen eines eigenen Gits („Bring Your Own Git“) – nun mit Unterstützung für GitLab und Bitbucket – und zum Registrieren als Early Adopter finden Sie in den [Versionshinweisen zur Cloud Manager-Version von Oktober 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+  Weitere Informationen zum Einbringen eines eigenen Gits („Bring Your Own Git“) – nun mit Unterstützung für GitLab und Bitbucket – und zum Registrieren als Early Adopter finden Sie in den [Versionshinweisen zur Cloud Manager-Version von Oktober 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Erweiterte Testumgebung** Eine speziell entwickelte Lösung, die die Lücke zwischen Entwicklung und Produktion schließt. Diese Umgebung ist auf die Unternehmensanforderungen zugeschnitten und repliziert Spezifikationen auf Produktionsebene, um genaue Benutzerakzeptanztests (UAT) und gründliche Leistungsbewertungen zu unterstützen.
 
-Wenn Sie am Early-Adopter-Programm teilnehmen möchten, füllen Sie [dieses Formular aus](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAA8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz IILCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDCPbG1adUaNZQ%3D&amp;reserved=0) und senden Sie eine E-Mail an [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) mit Ihrem `OrgID`.
+  Wenn Sie am Early-Adopter-Programm teilnehmen möchten, füllen Sie [dieses Formular aus](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAA8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz IILCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDCPbG1adUaNZQ%3D&amp;reserved=0) und senden Sie eine E-Mail an [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) mit Ihrem `OrgID`.
 
 
 
