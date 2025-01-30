@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 47%
+source-wordcount: '1812'
+ht-degree: 44%
 
 ---
 
@@ -59,7 +59,7 @@ Die mindestens unterstützte AEM as a Cloud Service-Version für neue Administra
 
 **Verbesserte Inhaltsfragmente**
 
-Verbesserte [Verweise auf Inhaltsfragmente mit eindeutigen ID-basierten Verweisen](/help/headless/graphql-api/uuid-reference-upgrade.md), um stabile Links sicherzustellen, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden, sodass keine Aktualisierungen oder erneute Veröffentlichung mehr erforderlich sind. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn Seiten in Inhaltsfragmenten referenziert werden, sollte diese Funktion nicht verwendet werden.
+Verbesserte [Inhaltsfragmentverweise mit eindeutigen ID-basierten Verweisen](/help/headless/graphql-api/uuid-reference-upgrade.md), um sicherzustellen, dass GraphQL-Abfragen für einzelne Inhaltsfragmente stabil bleiben können, selbst wenn das Fragment an einen anderen Speicherort verschoben wurde. Dies ist jetzt mit „ByID“-Abfragen möglich. Während sich Pfade ändern können, was möglicherweise zu laufenden „ByPath“-Abfragen führen kann, sind UUIDs stabil. Die neuen IDs können auch als Eigenschaften in jeder Abfrage oder einer anderen anwendbaren API-Anfrage zurückgegeben werden. Aktuelle Einschränkung (2025.1): Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn Seiten in Inhaltsfragmenten referenziert werden, sollte diese Funktion nicht verwendet werden. Diese Einschränkung soll mit der nächsten AEM as a Cloud Service-Version entfernt werden.
 
 **AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten**
 
