@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
-workflow-type: ht
-source-wordcount: '2513'
-ht-degree: 100%
+source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+workflow-type: tm+mt
+source-wordcount: '2543'
+ht-degree: 99%
 
 ---
 
@@ -35,6 +35,8 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
+| Sites | [PWA-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Keine |
+| Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- [Der universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) für die visuelle Bearbeitung.<br>- [Der Inhaltsfragment-](/help/assets/content-fragments/content-fragments-managing.md)) für die formularbasierte Bearbeitung. |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Eigenschaften von Experience Fragments für **Social-Media-Status**. | Die Funktion wird in Kürze entfernt werden. |
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |

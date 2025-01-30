@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
-workflow-type: ht
-source-wordcount: '1802'
-ht-degree: 100%
+source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+workflow-type: tm+mt
+source-wordcount: '1759'
+ht-degree: 47%
 
 ---
 
@@ -18,7 +18,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 >[!NOTE]
 >
->Von hier aus können Sie zu den Versionshinweisen früherer Versionen wie 2022 oder 2023 navigieren.
+>Von hier aus können Sie zu den Versionshinweisen früherer Versionen wie 2023 oder 2024 navigieren.
 >
 >Sehen Sie sich die [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) an, um mehr über die bevorstehenden Funktionsaktivierungen für [!DNL Experience Manager] as a Cloud Service zu erfahren.
 
@@ -28,77 +28,109 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.11.0) ist der 21. November 2024. Die nächste Version (2025.1.0) ist für den 30. Januar 2024 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.1.0) ist der Freitag, 30. Januar 2025. Die nächste Version (2025.2.0) ist für den Freitag, 27. Februar 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
 Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
-## Video zur Version {#release-video}
+<!-- 
 
-Eine Zusammenfassung der in der Version 2024.11.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version November 2024:
+## Release Video {#release-video}
+
+Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
+-->
+
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**[!DNL Edge Delivery Services]Seitenvorlagen mit Authoring mit dem universellen Editor**
+**Kommentare zum Inhaltsfragment-Editor jetzt allgemein verfügbar**
 
-Verwandeln Sie schnell eine beliebige Edge Delivery-Seite in eine Seitenvorlage. Auf diese Weise können Sie eine neue Seite mit einer vordefinierten Struktur und einem vordefinierten Inhalt anstelle einer leeren Seite beginnen. [Weitere Informationen](/help/sites-cloud/authoring/universal-editor/templates.md).
+Sie können bei der Erstellung von AEM-Inhaltsfragmenten einfach mit Kollegen zusammenarbeiten, indem Sie den neuen und modernisierten Kommentardienst im AEM-Inhaltsfragment-Editor verwenden.
+[Weitere Informationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
-**[!DNL Edge Delivery Services]CSV-Importer für das Publishing über eine AEM-Instanz**
+**Inhaltsfragment-Editor und Admin-Benutzeroberflächen, aktualisierte AEM as a Cloud Service-Versionsunterstützung**
 
-Verwalten Sie Ihre Edge Delivery-Tabellenkalkulationsdaten (z. B. Umleitungen) effizient in Ihrem bevorzugten Tabellenkalkulations-Tool und laden Sie sie über den neuen CSV-Importer in AEM hoch. [Weitere Informationen](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
-
-### Funktionen in der Vorabversion in AEM Sites
-
-Verbesserte [Referenzierung von Inhaltsfragmenten mit eindeutigen ID-basierten Referenzen](/help/headless/graphql-api/uuid-reference-upgrade.md), wodurch stabile Links sichergestellt werden, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden – sodass Aktualisierungen oder erneutes Veröffentlichen nicht mehr erforderlich sind. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn Seiten in Inhaltsfragmenten referenziert werden, sollte diese Funktion nicht verwendet werden.
+Die mindestens unterstützte AEM as a Cloud Service-Version für neue Administrator- und Editor-Benutzeroberflächen für Inhaltsfragmente ist jetzt 2023.8.13099. Frühere Versionen von vor der allgemeinen Verfügbarkeit der neuen Benutzeroberflächen werden nicht mehr unterstützt
 
 ### Early-Adopter-Programm {#sites-early-adopter}
+
+**Verbesserte Inhaltsfragmente**
+
+Verbesserte [Verweise auf Inhaltsfragmente mit eindeutigen ID-basierten Verweisen](/help/headless/graphql-api/uuid-reference-upgrade.md), um stabile Links sicherzustellen, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden, sodass keine Aktualisierungen oder erneute Veröffentlichung mehr erforderlich sind. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn Seiten in Inhaltsfragmenten referenziert werden, sollte diese Funktion nicht verwendet werden.
 
 **AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten**
 
 Die [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-rest-openapi-content-fragment-delivery.md) ist jetzt für AEM as a Cloud Service verfügbar.
 
+### Veraltete Funktionen {#sites-deprecated}
+
+#### SPA-Editor {#spa-editor}
+
+[Der SPA-](/help/implementing/developing/hybrid/introduction.md) wird für neue Projekte ab Version 2025.1.0 nicht mehr unterstützt. Der SPA-Editor wird für bestehende Projekte weiterhin unterstützt, sollte jedoch nicht für neue Projekte verwendet werden.
+
+Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind jetzt:
+
+* [Der universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) für die visuelle Bearbeitung.
+* [Der Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) für die formularbasierte Bearbeitung
+
+#### PWA-Funktionen {#pwa-features}
+
+[Die Funktionen der Progressive Web App (PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) für AEM Sites werden jetzt für neue Projekte ab Version 2025.1.0 nicht mehr unterstützt. Diese Funktion wird für bestehende Projekte weiterhin unterstützt, sollte jedoch nicht für neue Projekte verwendet werden
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Early-Access-Funktionen in Dynamic Media {#dm-early-access}
+### Neue Funktionen in AEM Assets {#new-features-assets}
+
+**Dynamic Media-Vorlagen**
+
+Personalisieren Sie Bild- und Textbanner direkt mit einem benutzerfreundlichen WYSIWYG Dynamic Media-Vorlageneditor, indem Sie die URL in eine Erstanbieter- oder Drittanbieteranwendung einbetten, um mit Echtzeit-Bannerinhalten ansprechende Erlebnisse zu schaffen.
+
+![Dynamische Ausgabedarstellungen](/help/assets/assets/dm-templates-smart-text-resize.png)
+
+**Dynamic Media-Versandberichte**
+
+Gewinnen Sie Einblicke in den Versand für Assets, die über Dynamic Media bereitgestellt werden, einschließlich der Anzahl der Sendungen auf Asset-Ebene, Referrer-Details, Asset-Pfade in AEM Assets und eindeutiger Asset-IDs. Generieren von Berichten für alle Assets im AEM Assets-Repository oder für bestimmte Ordnerhierarchien. Mit diesen Einblicken können Sie den ROI der bereitgestellten Assets messen, die Kanalleistung bewerten und fundierte Entscheidungen für das Asset-Management treffen.
+
+![Dynamische Ausgabedarstellungen](/help/assets/assets/referrer.png)
+
+**Dynamic Media Multi-Audio und Untertitel**
+
+[Unterstützung für mehrere Untertitel und Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - Sie können jetzt auf einfache Weise mehrere Untertitel und mehrere Audiospuren zu einem Primärvideo hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+
+**Unterstützung von dynamischem adaptivem Streaming über HTTP**
+
+Neue Protokollunterstützung (DASH – Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF) eingeführt:
+
+* Adaptives Streaming (DASH/HLS) sorgt für ein besseres Anwendererlebnis bei der Videoanzeige.
+
+* DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weithin verwendet
+
+**Asset-Beziehungen**
+
+Die Assets-Ansicht unterstützt jetzt das Anzeigen und Bearbeiten von Asset-Beziehungen in einem vereinfachten Bedienfeld mit Asset-Details. Fügen Sie mühelos Beziehungen wie Source und Derivative zu Inhalten hinzu, damit Benutzer relevante Hero-Inhalte effektiver finden können.
+
+**Assets erneut verarbeiten**
+
+Die Assets-Ansicht unterstützt jetzt die Neuverarbeitung von Assets, die in einem Ordner verfügbar sind. Sie können entweder die Option **Vollständiger Prozess** verwenden oder erweiterte Optionen wie standardmäßige Vorschau-Ausgabedarstellungen, Metadaten, Nachbearbeitungs-Workflow und Verarbeitungsprofil verwenden.
+
+### Early Access-Funktionen in AEM Assets {#early-access-features-assets}
 
 **KI-generierte Videountertitel**
 
-Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Benutzererlebnis verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
-
-Um frühzeitig Zugang zur Unterstützung für KI-generierte Untertitel in Ihrem Dynamic Media-Konto zu erhalten, [erstellen und senden Sie eine Anfrage an den Adobe-Kunden-Support.](/help/assets/dynamic-media/video.md##enable-dash)
-
-**Dynamic Media-Bereitstellungsbericht**
-
-Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Media bereitgestellt werden, mit der Anzahl der Bereitstellungen auf Asset-Ebene, Referrer-Informationen, dem Asset-Pfad in AEM Assets und der eindeutigen Asset-ID. Berichte können für alle Assets generiert werden, die über Dynamic Media für das AEM Assets-Repository bereitgestellt werden, oder für eine bestimmte Ordnerhierarchie in AEM Assets. Mithilfe von Insights können Sie den ROI der bereitgestellten Assets messen, die Kanalleistung messen und fundierte Asset-Management-Aufgaben für Assets durchführen.
-
-Um frühzeitig Zugang zum Dynamic Media-Bereitstellungsbericht in Ihrem Dynamic Media-Konto zu erhalten, [erstellen und senden Sie eine Anfrage an den Adobe-Kunden-Support](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
-
-### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
-
-**Dynamic Media-Bedienfeld**
-
-Die Assets-Ansicht ermöglicht Ihnen jetzt den Zugriff auf Dynamic Media und Dynamic Media mit OpenAPI-Ausgabedarstellungen über ein separates Bedienfeld, das Ihnen zur Verfügung gestellt wird. Sie können die Bereitstellungs-URL kopieren oder die Ausgabedarstellungen entsprechend dem Asset- und Ausgabetyp herunterladen. Weitere Informationen finden Sie unter [Dynamic Media-Ausgabedarstellungen](/help/assets/renditions.md#dynamic-media-renditions) und [Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen](/help/assets/renditions.md#dm-with-openapi-renditions).
-
-![Dynamische Ausgabedarstellungen](/help/assets/assets/dm-scene7-renditions.png)
+Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Benutzererlebnis verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Untertitel werden aus dem Originalaudio, zusätzlichen Audiospuren oder zusätzlichen Untertiteln generiert, die in der Registerkarte „Untertitel und Audio“ auf der Seite mit den Videoeigenschaften bereitgestellt werden. Da mehr als 60 Sprachen unterstützt werden, können Untertitel vor der Veröffentlichung des Videos überprüft und in der Vorschau angezeigt werden.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
-* **[Adobe Sign-Bereiche einfach aktualisieren](/help/forms/adobe-sign-integration-adaptive-forms.md)**: Sie können die Bereiche einer Adobe Sign-Konfiguration direkt auf der Seite „AEM Cloud-Konfigurationen“ ändern, um bestehende Konfigurationen schneller und leichter zu aktualisieren.
-
-* **[Unterstützung von asynchronen Funktionen für adaptive Formulare](/help/forms/using-async-funct-in-rule-editor.md)**: Wenn für Ihr adaptives Formular asynchrone Vorgänge erforderlich sind, z. B. das Warten auf externe Prozesse oder das Abrufen von Daten, können Sie diese Vorgänge mit benutzerdefinierten Funktionen implementieren und im Regel-Editor konfigurieren.
-
-### Vorabversionsfunktionen in AEM Forms {#forms-new-prerelease-features}
-
-* **Veröffentlichung verwalten**: Sie können den Workflow „Veröffentlichung verwalten“ verwenden, um Formulare in verschiedenen Umgebungen zu veröffentlichen oder deren Veröffentlichung rückgängig zu machen, normalerweise von der Autoreninstanz zur Veröffentlichungs- und Vorschauinstanz(en). Er ermöglicht es Benutzenden, Inhalte zu veröffentlichen, ihre Veröffentlichung rückgängig zu machen oder ihre Veröffentlichung effizient zu planen.
+* **Veröffentlichung verwalten**: Sie können den Workflow „Veröffentlichung verwalten“ verwenden, um Formulare in Umgebungen zu veröffentlichen oder die Veröffentlichung rückgängig zu machen, normalerweise von der Autoreninstanz bis zur Veröffentlichungs- und Vorschauinstanz. Er ermöglicht es Benutzenden, Inhalte zu veröffentlichen, ihre Veröffentlichung rückgängig zu machen oder ihre Veröffentlichung effizient zu planen.
 
 * **[Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare](/help/forms/save-core-component-based-form-as-draft.md)**: Benutzende können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
 
-* **[Verbesserungen des Regeleditors](/help/forms/invoke-service-enhancements-rule-editor.md)**: Für adaptive Formulare, die auf Kernkomponenten basieren, können Sie jetzt Dropdown-Optionen mit der Ausgabe des Aufrufdienstes füllen, wiederholbare Bedienfelder mithilfe der Ausgabe des Aufrufdienstes festlegen, einzelne Bedienfelder mithilfe der Ausgabe des Aufrufdienstes festlegen und den Ausgabeparameter des Aufrufdienstes verwenden, um andere Felder zu validieren.
+* **[Verbesserungen des Regeleditors](/help/forms/invoke-service-enhancements-rule-editor.md)**: Für adaptive Forms, die auf Kernkomponenten basieren, können Sie die Ausgabe von „Service aufrufen“ verwenden, um Dropdown-Optionen auszufüllen und wiederholbare oder einzelne Bedienfelder festzulegen. Darüber hinaus kann diese Ausgabe zur Validierung anderer Felder verwendet werden.
 
 * **[Verbessern des Anwendererlebnisses mit Navigations-Schaltflächen in Bedienfeld-Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: Sie können Ihren Bedienfeld-Layouts jetzt Navigations-Schaltflächen hinzufügen, z. B. horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen verbessern das Anwendererlebnis, indem sie die Übergänge zwischen Bedienfeldern vereinfachen und sich auf das ausgewählte Bedienfeld konzentrieren.
 
@@ -109,73 +141,48 @@ Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit,
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
-#### Integrationen
+#### [HTML von E-Mail-Vorlagen in adaptiven Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-* **[Integration adaptiver Formulare in Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service bietet jetzt eine benutzerfreundliche Option, um adaptive Formulare mit Adobe Marketo Engage zu verbinden. Mit dieser Integration können Sie adaptive Formulare direkt mit der Marketo Engage-Lead-Erfassung und zugehörigen benutzerdefinierten Objekten erstellen. Sie können jetzt Formularfelder mit Daten aus Marketo Engage vorab ausfüllen und Daten zurücksenden, um Workflows wie intelligente Kampagnen und E-Mail-Automatisierung zu automatisieren. Sie können auch ein adaptives Formular mit der Munchkin-Bibliothek verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
+Adaptive Forms ermöglicht die Verwendung von HTML-E-Mail-Vorlagen. HTML-E-Mail-Vorlagen ermöglichen es Ihnen, beim Senden eines Formulars ansprechende, personalisierte und visuell ansprechende E-Mails zu senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei Adaptive Forms können Sie entweder eine Datei hochladen, die eine HTML-Vorlage enthält, oder einen Texteditor verwenden, um diese Vorlagen zu erstellen.
 
-#### Adaptive Formulare und HTML5-Formulare
+![HTML-E-Mail-Vorlagen](/help/forms/assets/html-email.png)
 
-* **[Erstellen adaptiver Formulare basierend auf vorhandener XFA-Vorlage](/help/forms/create-adaptive-form-using-xfa-templates.md)**: Sie können jetzt auf Kernkomponenten basierende adaptive Formulare mit XFA-Formularvorlagen (*.XDP-Dateien) erstellen. Diese Funktion ermöglicht es AEM Forms On-Premise-Kundinnen und -Kunden mit bereits getätigten Investitionen in XFA-Technologien, AEM Forms as a Cloud Service zu übernehmen.
+#### Erweiterte Cloud-Speicher-Unterstützung: Direkter PDF-Upload in Azure Blob Storage
 
-* **HTML5 Forms (XFA-basierte Web-Formulare)**: AEM Forms On-Premise-Kundinnen und -Kunden, die XFA-Technologie verwenden, können jetzt mühelos auf AEM Forms as a Cloud Service umsteigen und gleichzeitig ihr bestehendes Anwendererlebnis mit HTML5 Forms (XFA-basierte Web-Formulare) beibehalten. Diese Funktion ermöglicht die Wiedergabe von XFA-Formularvorlagen im HTML5-Format, sodass Formulare auf Geräten verfügbar sind, die XFA-basierte PDF-Formulare nicht unterstützen.
-
-  ![HTML Forms (XFA-basierte Web-Formulare)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
-
+AEM Forms Document Generation-APIs unterstützen jetzt das direkte Hochladen generierter PDF-Dokumente in Azure Blob Storage. Diese Verbesserung optimiert die Speicherung und den Abruf und verbessert die Effizienz und Integration mit Cloud-Workflows.
 
 * **[Base64-codierte Zeichenfolgenunterstützung für Dateianlagen](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: Die Dateianlagenkomponente im adaptiven Formularen, die auf Kernkomponenten basiert, enthält jetzt eine Option zum Senden angehängter Dateien als Base64-codierte Zeichenfolgen.
-
-#### Interaktive Kommunikationen und Kommunikations-APIs
-
-* **Editor für interaktive Kommunikationen**: Der Editor für interaktive Kommunikationen ist ein benutzerfreundliches, grafisches Tool zum Design von Kommunikationen, das die Erstellung personalisierter, datengesteuerter Korrespondenz vereinfacht und in jedem modernen Browser ausgeführt werden kann. Es unterstützt die nahtlose Datenintegration, die komplexe Logikdefinition und die Rich-Media-Integration, um eine professionelle und konforme Erstellung von Dokumenten, Kommunikationen und Vorlagen für verschiedene geschäftliche Anforderungen zu gewährleisten.
-
-  ![Editor für interaktive Kommunikationen](/help/forms/assets/ic-editor.png)
-
-
-* **[Verbesserungen bei der PDF/A-Compliance](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: Sie können jetzt Kommunikations-APIs verwenden, um PDF-Dokumente für Archivierungszwecke in PDF/A-Formate (1a, 2a, 3a) zu konvertieren und dabei die Zugänglichkeit sicherzustellen und die Einhaltung dieser Standards zu überprüfen.
-
-
-* **[Signature-API (Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: Eine neue RESTful-API in Kommunikations-APIs ermöglicht die einfache Verwaltung von PDF-Signaturen. Sie unterstützt Vorgänge wie:
-   * Signatur löschen: Entfernt eine Signatur aus einem angegebenen Feld.
-   * Signaturfeld entfernen: Löscht ein angegebenes Signaturfeld.
-
-
-<!-- 
-* **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
-intuitive and improving the mobile form-filling experience.
-
-* **Masked Field with Eye Icon (Password Box Component)**: The Password Box is a text input field that masks the characters typed into it by displaying placeholder symbols. It allows users to securely input sensitive information, such as passwords and enables them to toggle visibility on demand using the eye icon.
-
--->
-
-## Service zur automatisierten Formularkonvertierung
-
-* **[PDF-Formulare in Kernkomponenten-basierte adaptive Formulare konvertieren](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: Sie können jetzt den Service zur automatisierten Formularkonvertierung verwenden, um PDF-Formulare, AcroForms oder XFA-basierte Formulare in Kernkomponenten-basierte adaptive Formulare umzuwandeln.
-
 
 >[!IMPORTANT]
 >
 > Möchten Sie am Early-Access-Programm für Forms-Innovationen teilnehmen? Senden Sie von Ihrer offiziellen E-Mail-Adresse eine Nachricht an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit der Liste der Funktionen, an denen Sie interessiert sind.## CIF-Add-on {#cloud-services-cif}
 
-## CIF-Add-on {#cif}
-
-### Fehlerbehebungen {#bug-fixes-cif}
-
-* Die Benutzeroberflächentests funktionieren jetzt ordnungsgemäß mit den CIF-Kernkomponenten.
-* Es wurde ein Problem behoben, durch das das URL-Format „Kategorie“ in der Cloud-Instanz nicht wie erwartet funktionierte.
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
-### Verbesserte Leistung bei der Strukturreplikation (und Einstellung der Verwendung des Workflows für die Veröffentlichung einer Inhaltsstruktur) {#tree-replication-performance}
+### Java 21-Unterstützung {#java21}
 
-Der [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) ist ein neuer Workflow-Modellschritt, der zum Replizieren von tiefen Inhaltshierarchien empfohlen wird. Beachten Sie, dass unabhängige Replikationen (z. B. durch schnelle Veröffentlichung oder Verwalten der Veröffentlichung) parallel zum laufenden Workflow für die Strukturreplikation fortgesetzt werden können. Dies ist besonders nützlich, wenn Sie zeitkritische Inhalte veröffentlichen müssen, während eine Massenreplikation noch läuft. Der Strukturreplikationsschritt ersetzt den Workflow für die Veröffentlichung der Inhaltsstruktur und den zugehörigen Workflow-Schritt, der jetzt nicht mehr unterstützt wird.
+Sie können jetzt mit Java 21 Code erstellen, der neue Funktionen (z. B. Mustervergleich für Switch-Anweisungen, versiegelte Klassen) und Leistungsverbesserungen enthält. Java 17-Builds werden ebenfalls neu unterstützt. Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie im Artikel [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) .
+
+Die leistungsfähigere Java 21 **Laufzeitumgebung** wird automatisch bereitgestellt, wenn ein Java 17- oder Java 21-Build erkannt wird. Wir empfehlen jedoch auch, sich für Umgebungen, die mit Java 11 erstellt wurden, bei der Java 21-Laufzeitumgebung anzumelden, indem Sie eine E-Mail an [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) senden. Erfahren Sie mehr über [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+
+>[!IMPORTANT]
+>
+> Java 21 **runtime** wird schrittweise in **allen**-Umgebungen bereitgestellt (abgesehen von den bereits mit Java 17 oder 21 erstellten Umgebungen, die bereits Java 21-Laufzeitumgebungen haben), beginnend mit Sandboxes und dev/rde im Februar und dann mit Staging/Produktion im April.
+
+### Sandbox-Programme unterstützen Konfigurations-Pipelines {#sandbox-config-pipelines}
+
+Sandbox-Programme unterstützen jetzt Konfigurations-Pipelines, die in Cloud Manager so konfiguriert werden können, dass sie YAML-Dateien bereitstellen, die in Git persistiert werden.
+
+[Erfahren Sie mehr](/help/operations/config-pipeline.md) über Konfigurations-Pipelines, die die Konfiguration des CDN, die Protokollweiterleitung und Wartungsaufgaben für die Versionsbereinigung/Auditprotokollbereinigung ermöglichen.
 
 ### OpenAPI-basierte APIs – Early-Adopter-Programm {#open-apis-earlyadopter}
 
-Entwickelnde können AEM as a Cloud Service-Funktionen in ihre eigenen Anwendungen und Tools integrieren. Neue AEM as a Cloud Service-APIs folgen der OpenAPI-Spezifikation, weil sie konsistent, gut dokumentiert und benutzerfreundlich sein sollen. Anmeldeinformationen für Endpunkte, für die eine Authentifizierung erforderlich ist, werden durch Erstellen von Adobe Developer Console-Projekten generiert.
+Entwickelnde können AEM as a Cloud Service-Funktionen in ihre eigenen Anwendungen und Tools integrieren. Neue AEM as a Cloud Service-APIs folgen der OpenAPI-Spezifikation mit dem Ziel, konsistent, gut dokumentiert und benutzerfreundlich zu sein. Anmeldeinformationen für Endpunkte, für die eine Authentifizierung erforderlich ist, werden durch Erstellen von Adobe Developer Console-Projekten generiert.
 
 Erfahren Sie mehr über [OpenAPI-basierte AEM-APIs](/help/implementing/developing/open-api-based-apis.md) und probieren Sie ein [End-to-End-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) aus, in dem Konfiguration und Verwendung veranschaulicht werden.
 
 Konkret sind die unten aufgeführten API-Endpunkte im Rahmen eines Early-Adopter-Programms verfügbar. Wenn Sie daran interessiert sind, senden Sie eine E-Mail an [aem-apis@adobe.com](mailto:aem-apis@adobe.com), in der Sie beschreiben, wie Sie die API-Endpunkte verwenden möchten.
+
 * [Sites-Inhaltsfragmente-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de)
 * [Assets-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites- und Assets-Ordner-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
@@ -183,7 +190,7 @@ Konkret sind die unten aufgeführten API-Endpunkte im Rahmen eines Early-Adopter
 
 ### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
 
-Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Als Input für die Roadmap würden wir gerne von Ihnen hören, ob Sie diese Technologie als nützlich für AEM-Projekte für Veröffentlichungsbereitstellungs- und Edge-Bereitstellungsdienste erachten würden und wofür Sie sie voraussichtlich verwenden würden. Schreiben Sie eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) mit Fragen und Kommentaren!
+Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Adobe würde es begrüßen zu hören, wenn Sie diese Technologie für AEM Publish Delivery and Edge Delivery Services-Projekte nützlich finden. Teilen Sie uns außerdem mit, was Sie sich vorstellen, um es als Input für die Produkt-Roadmap zu verwenden. Schreiben Sie eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) mit Fragen und Kommentaren!
 
 ### Neue AEM Developer Console (öffentliche Beta-Version) {#aem-developer-console-beta}
 
