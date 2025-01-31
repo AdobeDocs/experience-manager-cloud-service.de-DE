@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihrem Produktions- oder Sandbox-Programm eine
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 100%
+source-wordcount: '498'
+ht-degree: 92%
 
 ---
 
@@ -48,12 +48,12 @@ Klicken Sie oben rechts auf der Seite auf **Site hinzufügen**.
 
    | Schritt | Beschreibung |
    | - | - |
-   | **1** | Fügen Sie eine Datei mit dem Pfad und dem Namen `well-known/adobe/cloudmanager-challenge.txt` zur Verzweigung `main` des Git-Repositorys hinzu, das im Feld **Repository-URL** aufgeführt ist. Fügen Sie am Anfang des Speicherortpfads *keinen* Punkt hinzu.<br>Klicken Sie bei Bedarf auf ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Pfad in die Zwischenablage zu kopieren. |
-   | **2** | Fügen Sie den im Textfeld in Schritt 2 angezeigten Code der Datei hinzu, die Sie gerade in Schritt 1 erstellt haben.<br>Klicken Sie bei Bedarf auf ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Code in die Zwischenablage zu kopieren. |
+   | **1** | Fügen Sie eine Datei mit dem Pfad und dem Namen `well-known/adobe/cloudmanager-challenge.txt` zur Verzweigung `main` des Git-Repositorys hinzu, das im Feld **Repository-URL** aufgeführt ist. Fügen Sie am Anfang des Speicherortpfads *keinen* Punkt hinzu.<br>Klicken Sie ggf. auf ![Symbol „Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Pfad in die Zwischenablage zu kopieren. |
+   | **2** | Fügen Sie den im Textfeld in Schritt 2 angezeigten Code der Datei hinzu, die Sie gerade in Schritt 1 erstellt haben.<br>Klicken Sie ggf. auf ![Symbol „Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Code in die Zwischenablage zu kopieren. |
    | **3** | Erstellen Sie eine Pull-Anfrage für die soeben erstellten Änderungen im Git-Repository und führen Sie sie dann mit `main` zusammen, um den Code zu übertragen. |
 
 1. Klicken Sie auf **Überprüfen**.
 
 Sobald das Repository verifiziert wurde, wird sein Status in der Tabelle der Edge Delivery-Sites aktualisiert. Der Status wird durch einen grünen Kreis mit weißem Häkchen angegeben.
 
-Klicken Sie in derselben Tabelle auf ![Informationen zur Edge Delivery-Site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg), um die Site-Details anzuzeigen. Zu diesen Informationen gehören die verifizierte Repository-URL sowie die Vorschau- und Produktions-Website-URLs.
+Klicken Sie in derselben Tabelle auf ![Information about Edge Delivery site icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg), um Site-Details anzuzeigen. Zu diesen Informationen gehören die verifizierte Repository-URL sowie die Vorschau- und Produktions-Website-URLs.

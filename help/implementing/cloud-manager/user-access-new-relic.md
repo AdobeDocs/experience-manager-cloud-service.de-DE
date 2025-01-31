@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1818'
 ht-degree: 96%
 
 ---
@@ -49,7 +49,7 @@ Für ein neu erstelltes Programm wird ein New Relic One-Unterkonto für Sie erst
 
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das die New Relic One-Benutzenden verwaltet werden sollen.
 
-1. Klicken Sie auf der Seite „Programmübersicht“ unten auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg und wählen Sie **New Relic aktivieren** aus.
+1. Klicken Sie auf der Programmübersichtsseite auf der Karte **Umgebungen** unten auf das ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und wählen Sie **New Relic aktivieren**.
 
    ![Benutzer verwalten](assets/newrelic-activate-sub-account.png)
 
@@ -71,13 +71,13 @@ Führen Sie diese Schritte aus, um die Benutzenden Ihres New Relic One-Unterkont
 
 1. Klicken Sie auf das Programm, für das Sie Ihre New Relic One-Benutzenden verwalten möchten.
 
-1. Klicken Sie auf der Seite „Programmübersicht“ unten auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg und wählen Sie **Benutzer verwalten** aus.
+1. Klicken Sie auf der Programmübersichtsseite auf der Karte **Umgebungen** unten auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und wählen Sie **Benutzer verwalten**.
 
    ![Benutzer verwalten](assets/newrelic-manage-users.png)
 
    * Sie können auch auf die Option **Benutzer verwalten** zugreifen. Klicken Sie oben auf dem Bildschirm **Umgebungen** Ihres Programms auf das Symbol ![Smock more](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
-1. Geben **im Dialogfeld New Relic-Benutzer verwalten** den Vor- und Nachnamen der Person ein, die Sie hinzufügen möchten, und klicken Sie auf die Schaltfläche **Hinzufügen**. Wiederholen Sie diesen Schritt für alle Benutzenden, die Sie hinzufügen möchten.
+1. Geben Sie im Dialogfeld **New Relic-Benutzer verwalten** den Vor- und Nachnamen der Person ein, die Sie hinzufügen möchten, und klicken Sie auf die Schaltfläche **Hinzufügen**. Wiederholen Sie diesen Schritt für alle Benutzenden, die Sie hinzufügen möchten.
 
    ![Hinzufügen von Benutzenden](assets/newrelic-add-users.png)
 
@@ -121,7 +121,7 @@ Nachdem Sie [Ihr New Relic-Konto aktiviert haben](#activate-account), können Si
 
 1. Klicken Sie auf das Programm, für das Sie auf New Relic One zugreifen möchten.
 
-1. Klicken Sie auf der Seite „Programmübersicht“ unten auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg und wählen Sie **New Relic öffnen** aus.
+1. Klicken Sie auf der Programmübersichtsseite auf der Karte **Umgebungen** unten auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und wählen Sie **New Relic öffnen**.
 
    ![Benutzer verwalten](assets/newrelic-access.png)
 
@@ -194,14 +194,14 @@ Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für I
 Ihr New Relic One-Konto ist mit einem primären, von Adobe bereitgestellten Konto verknüpft und erhält Daten von mehreren Programmen: je drei Programmen pro Umgebung in AEM as a Cloud Service.
 
 * Ein Programm für den Autoren-Service pro Umgebung
-* Eine Anwendung pro Umgebung für den `Publish`-Service (einschließlich Golden Publish)
+* Eine Anwendung für den `Publish`-Service pro Umgebung (einschließlich „Golden Publish“)
 * Ein Programm für den Vorschau-Service pro Umgebung
 
 Hinweis:
 
 * Pro Anwendung wird ein Lizenzschlüssel verwendet.
 * Umgebungen in AEM as a Cloud Service senden Berichte nur an ein einziges New Relic One-Konto.
-* Vollständige Überwachungsmetriken und -ereignisse für beide New Relic One werden drei Monate lang aufbewahrt. &lt;!— CQDOC-22238 - Aktualisierung von sieben Tagen auf drei Monate. >
+* Vollständige Überwachungsmetriken und Ereignisse für New Relic One werden drei Monate lang gespeichert. &lt;!- CQDOC-22238 – Änderung von sieben Tagen zu drei Monaten. >
 +++
 
 +++**Sendet Adobe Warnhinweise über New Relic One?** {#alerting-new-relic}

@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 100%
+source-wordcount: '698'
+ht-degree: 95%
 
 ---
 
@@ -26,11 +26,11 @@ Der Ruhezustand kann entweder automatisch oder manuell aktiviert werden.
 
 Es kann einige Minuten dauern, bis Sandbox-Programmumgebungen in den Ruhezustand wechseln. Daten werden im Ruhezustand beibehalten.
 
-### Manuelles Aktivieren des Ruhezustands einer Sandbox-Programmumgebung {#using-manual-hibernation}
+### Manuelles Versetzen einer Sandbox-Programmumgebung in den Ruhezustand {#using-manual-hibernation}
 
 Über die Developer Console können Sie Ihr Sandbox-Programm manuell in den Ruhezustand versetzen. Der Zugriff auf die Developer Console für ein Sandbox-Programm steht allen Cloud Manager-Benutzenden zur Verfügung.
 
-**So versetzen Sie eine Sandbox-Programmumgebung manuell in den Ruhezustand:**
+**So setzen Sie eine Sandbox-Programmumgebung manuell in den Ruhezustand:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -60,7 +60,7 @@ Klicken Sie in der Entwicklerkonsole auf den Link **Umgebungen** in den Breadcru
 
 ![Liste der Umgebungen, die in den Ruhezustand versetzt werden sollen](assets/hibernate-1b.png)
 
-## Manuelles Deaktivieren des Ruhezustands eines Sandbox-Programms über die Developer Console {#de-hibernation-introduction}
+## So deaktivieren Sie den Ruhezustand eines Sandbox-Programms manuell aus Developer Console {#de-hibernation-introduction}
 
 Über die Developer Console können Sie Ihr Sandbox-Programm manuell in den Ruhezustand versetzen.
 
@@ -68,13 +68,13 @@ Klicken Sie in der Entwicklerkonsole auf den Link **Umgebungen** in den Breadcru
 >
 >Benutzende mit der Rolle **Entwickler** können den Ruhezustand einer Sandbox-Programmumgebung aufheben.
 
-**So heben Sie den Ruhezustand eines Sandbox-Programms manuell über die Developer Console auf:**
+**So heben Sie den Ruhezustand eines Sandbox-Programms in Developer Console manuell auf:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das der Ruhezustand aufgehoben werden soll, um dessen Details anzuzeigen.
 
-1. Klicken Sie auf der Karte **Umgebungen** auf https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg und dann auf **Entwicklerkonsole**.
+1. Klicken Sie auf der Karte **Umgebungen** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Entwicklerkonsole**.
 
    * Siehe [Aufrufen der Entwicklerkonsole](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console), um weitere Informationen zur Entwicklerkonsole zu erhalten.
 
