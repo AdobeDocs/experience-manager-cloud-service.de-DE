@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 44%
+source-wordcount: '1750'
+ht-degree: 42%
 
 ---
 
@@ -150,12 +150,6 @@ Adaptive Forms ermöglicht die Verwendung von HTML-E-Mail-Vorlagen. HTML-E-Mail-
 #### Erweiterte Cloud-Speicher-Unterstützung: Direkter PDF-Upload in Azure Blob Storage
 
 AEM Forms Document Generation-APIs unterstützen jetzt das direkte Hochladen generierter PDF-Dokumente in Azure Blob Storage. Diese Verbesserung optimiert die Speicherung und den Abruf und verbessert die Effizienz und Integration mit Cloud-Workflows.
-
-* **[Base64-codierte Zeichenfolgenunterstützung für Dateianlagen](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: Die Dateianlagenkomponente im adaptiven Formularen, die auf Kernkomponenten basiert, enthält jetzt eine Option zum Senden angehängter Dateien als Base64-codierte Zeichenfolgen.
-
->[!IMPORTANT]
->
-> Möchten Sie am Early-Access-Programm für Forms-Innovationen teilnehmen? Senden Sie von Ihrer offiziellen E-Mail-Adresse eine Nachricht an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit der Liste der Funktionen, an denen Sie interessiert sind.## CIF-Add-on {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
