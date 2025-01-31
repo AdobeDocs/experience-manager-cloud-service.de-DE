@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
+source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
 workflow-type: tm+mt
-source-wordcount: '6006'
+source-wordcount: '6020'
 ht-degree: 99%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 99%
       + [Migrieren von [!DNL AEM 6.5 Forms] oder früher zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
+      + [Publish Adaptive Forms mit „Veröffentlichung verwalten“](/help/forms/manage-publication.md)
    + Erste Schritte {#getting-started-forms}
       + [Anwendungsfall und Einrichtung der Entwicklungsumgebung](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Erstellen des Kreditantragsformulars](/help/forms/create-adaptive-form-tutorial.md)
@@ -1022,6 +1023,8 @@ ht-degree: 99%
          + [Verwenden des Forms-Übermittlungsdienstes](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [Übersicht - Universeller Editor für Edge Delivery Services für Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Erste Schritte](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Hinzufügen von Regeln zu mithilfe des Regeleditors](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Funktionen {#advanced-features-edge-delivery-services-forms}
          + [Verwenden von Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
          + [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
