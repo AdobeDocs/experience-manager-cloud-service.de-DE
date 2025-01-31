@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 98%
@@ -29,7 +29,7 @@ Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive W
 
 >[!IMPORTANT]
 >
->Die Funktionen der Progressive Web App (PWA) für AEM Sites werden nicht mehr unterstützt.
+>Die Funktionen der Progressive Web App (PWA) für AEM Sites [veraltet.](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
 >
 >Vorhandene Projekte, die diese Funktion verwenden, werden weiterhin unterstützt, aber neue Projekte sollten diese Funktion nicht verwenden.
 
