@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 100%
+source-wordcount: '447'
+ht-degree: 91%
 
 ---
 
@@ -31,8 +31,8 @@ Bei von Adobe verwalteten CDNs sind bei Verwendung von DV-SSL-Zertifikaten nur S
 
    | Anwendungsfall | Schritte |
    | --- | --- |
-   | CDN-Konfiguration zu einer *vorhandenen* Edge Delivery-Site in Cloud Manager hinzufügen | a. Klicken Sie im linken Seitenmenü unter **Services** auf **Edge Delivery-Sites**.<br>b. Klicken Sie in der Edge Delivery-Tabelle am Ende einer Zeile, der keine Domain zugeordnet ist, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Klicken Sie auf **CDN konfigurieren**. |
-   | CDN-Konfiguration in Cloud Manager hinzufügen | a. Klicken Sie im linken Seitenmenü unter **Services** auf **CDN-Konfigurationen**.<br>b. Klicken Sie oben rechts auf der Seite „CDN-Konfigurationen“ auf **Hinzufügen**. |
+   | CDN-Konfiguration zu einer *vorhandenen* Edge Delivery-Site in Cloud Manager hinzufügen | a. Klicken Sie im linken Menü unter **Services** auf ![Webpages-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.<br>b. Klicken Sie in der Edge Delivery-Tabelle am Ende einer Zeile, der keine Domain zugeordnet ist, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Klicken Sie auf **CDN konfigurieren**. |
+   | CDN-Konfiguration in Cloud Manager hinzufügen | a. Klicken Sie im linken Menü unter **Dienste** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.<br> B. Klicken Sie oben rechts auf der Seite mit den Domain-Zuordnungen auf **Hinzufügen**. |
 
 1. Wählen Sie im Dialogfeld **CDN konfigurieren** in der Dropdown-Liste **Herkunft** eine der folgenden Optionen aus:
 

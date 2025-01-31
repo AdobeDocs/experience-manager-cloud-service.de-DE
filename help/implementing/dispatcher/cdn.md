@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 90%
+source-wordcount: '1729'
+ht-degree: 93%
 
 ---
 
@@ -23,12 +23,12 @@ AEM as a Cloud Service verfügt über ein integriertes CDN, das die Latenz verri
 
 Das von AEM verwaltete CDN erfüllt die meisten Leistungs- und Sicherheitsanforderungen des Kunden bzw. der Kundin. Für die Veröffentlichungsebene können Kundinnen und Kunden Traffic durch ihr eigenes CDN leiten, welches sie verwalten müssen. Diese Option ist von Fall zu Fall verfügbar, insbesondere wenn Kundinnen und Kunden über bestehende ältere Integrationen mit einem CDN-Anbieter verfügen, die schwer zu ersetzen sind.
 
-Kundinnen und Kunden, die auf Ebene der Edge Delivery Services veröffentlichen möchten, können von dem von Adobe verwalteten CDN profitieren. Siehe [Adobe verwaltetes CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Kundinnen und Kunden, die auf Ebene der Edge Delivery Services veröffentlichen möchten, können von dem von Adobe verwalteten CDN profitieren. Siehe [Von Adobe verwaltetes CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe-verwaltetes CDN {#aem-managed-cdn}
+## Von Adobe verwaltetes CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -37,7 +37,7 @@ Zur Vorbereitung auf die Inhaltsbereitstellung mit dem integrierten CDN von AEM 
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Einführung in SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Konfigurieren eines CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Beschränken des Traffics**
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Wenn Sie Ihr eigenes CDN verwenden, müssen Sie keine Domänen und Zertifikate in Cloud Manager installieren. Das Routing im Adobe-CDN erfolgt unter Verwendung der Standard-Domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, die im `Host`-Header der Anfrage gesendet werden sollte. Das Überschreiben der Anfrage-`Host`-Kopfzeile mit einem benutzerdefinierten Domain-Namen kann die Anfrage falsch über das Adobe-CDN weiterleiten oder zu 421-Fehlern führen.
+>Wenn Sie Ihr eigenes CDN verwenden, müssen Sie keine Domänen und Zertifikate in Cloud Manager installieren. Das Routing im Adobe-CDN erfolgt unter Verwendung der Standard-Domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, die im `Host`-Header der Anfrage gesendet werden sollte. Das Überschreiben des `Host`-Headers der Anfrage mit einem benutzerdefinierten Domain-Namen kann dazu führen, dass die Anfrage vom Adobe-CDN falsch weitergeleitet wird oder 421-Fehler auftreten.
 
 >[!NOTE]
 >
@@ -134,9 +134,9 @@ Der zusätzliche Sprung zwischen dem Kunden-CDN und dem AEM-CDN ist nur im Fall 
 
 Diese kundenspezifische CDN-Konfiguration wird für die Veröffentlichungsebene unterstützt, aber nicht vor der Autorenebene.
 
-### Debugging-Konfiguration
+### Debuggen von Konfigurationen
 
-Um eine BYOCDN-Konfiguration zu debuggen, verwenden Sie die `x-aem-debug`-Kopfzeile mit dem Wert `edge=true`. Zum Beispiel:
+Um eine BYOCDN-Konfiguration zu debuggen, verwenden Sie den `x-aem-debug`-Header mit dem Wert `edge=true`. Zum Beispiel:
 
 Unter Linux®:
 
@@ -150,13 +150,13 @@ Unter Windows:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
 ```
 
-Dies spiegelt bestimmte Eigenschaften wider, die in der Anfrage im `x-aem-debug`-Antwort-Header verwendet werden. Zum Beispiel:
+Dieser Prozess spiegelt bestimmte Eigenschaften wider, die in der Anfrage im `x-aem-debug`-Antwort-Header verwendet werden. Zum Beispiel:
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-Mit diesem kann man zum Beispiel die Werte des Hosts überprüfen, wenn die Edge-Authentifizierung konfiguriert ist, sowie den Wert der x-forward-host-header überprüfen, wenn ein Edge-Schlüssel gesetzt ist und welcher Schlüssel verwendet wird (wenn ein Schlüssel übereinstimmt).
+Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, der Edge-Authentifizierungskonfiguration und dem Wert der x-forward-host-Kopfzeile. Außerdem wird angegeben, ob ein Edge-Schlüssel festgelegt ist und welcher Schlüssel verwendet wird, wenn eine Übereinstimmung vorliegt.
 
 ### Beispielkonfigurationen von CDN-Anbietern {#sample-configurations}
 
@@ -187,8 +187,7 @@ Wenn eine Anfrage eine unzulässige Antwort vom Typ 403 erhält, bedeutet dies, 
 
 **Fehler 421 Fehlgeleitete Weiterleitung**
 
-Wenn eine Anfrage einen 421-Fehler mit einem -Hauptteil um `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` erhält, bedeutet dies, dass der HTTP-`Host`-Satz mit keinen Hosts auf den Zertifikaten für den Host übereinstimmt. Dies weist in der Regel darauf hin, dass entweder `Host` oder die SNI-Einstellung falsch ist. Stellen Sie sicher, dass sowohl `Host`- als auch SNI-Einstellungen auf das Veröffentlichungs-p&lt;PROGRAM_ID>-e verweisen.<ENV-ID>.adobeaemcloud.com Host.
-
+Ein 421-Fehler mit der Meldung `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` zeigt an, dass die HTTP-`Host` mit keinen der im Zertifikat aufgeführten Hosts übereinstimmt. Dieses Problem weist in der Regel darauf hin, dass entweder `Host` oder die SNI-Einstellung falsch ist. Stellen Sie sicher, dass sowohl `Host`- als auch SNI-Einstellungen auf den Host „publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com&quot; verweisen.
 
 **Schleife „Zu viele Umleitungen“**
 

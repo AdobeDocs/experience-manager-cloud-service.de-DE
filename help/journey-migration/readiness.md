@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, u
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 100%
+source-wordcount: '1915'
+ht-degree: 99%
 
 ---
 
@@ -196,7 +196,7 @@ Ein typischer Bericht sollte die folgenden Eingaben enthalten:
 * Dokumentation mit Details zum Funktionssatz Ihrer jeweiligen AEM-Installation
 * Details zu Ihren benutzerdefinierten AEM-Konfigurationen und zum Code
 * Produktions-Dispatcher-Konfigurationen
-* CDN-Konfigurationen (falls vorhanden)
+* Domain-Zuordnungen (CDN-Konfigurationen) (falls vorhanden)
 
 **Verteilen des Berichts**
 

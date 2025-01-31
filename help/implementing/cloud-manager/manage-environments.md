@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
-ht-degree: 60%
+source-wordcount: '2374'
+ht-degree: 59%
 
 ---
 
@@ -194,9 +194,9 @@ Wenn Sie zusätzliche Veröffentlichungsregionen aktiviert haben, können Sie de
 
 Alternativ können Sie auf die gleichen Informationen über die Registerkarte **Umgebungen** zugreifen.
 
-1. Wählen Sie auf der Seite **Übersicht** die Registerkarte **Umgebungen** aus.
+1. Klicken Sie auf der **Übersicht**-Seite auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
 
-1. Wählen Sie auf der Registerkarte **Umgebungen** im linken Seitenmenü die Umgebung aus, die abgefragt werden soll.
+1. Wählen Sie auf **Seite** Umgebungen“ im Menü links die Umgebung aus, die Sie abfragen möchten.
 
 1. Nachdem eine Umgebung ausgewählt wurde:
 
@@ -306,7 +306,7 @@ Diese Option ist auch über die Registerkarte **Umgebung** des Fensters **Übers
 
      ![Lokale Anmeldung](assets/environ-login-locally.png)
 
-   * Klicken Sie im linken Seitenbereich auf **Umgebungen**. Klicken Sie auf der **Umgebungen** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Lokale Anmeldung**.
+   * Klicken Sie im linken Seitenbereich auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der **Umgebungen** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Lokale Anmeldung**.
 
      ![Lokale Anmeldung über die Registerkarte „Umgebungen“](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Benutzerdefinierte Domain-Namen werden in Programmen von Cloud Manager for Sites
 
 In Cloud Manager wird eine IP-Zulassungsliste für Autoren-, Veröffentlichungs- und Vorschau-Services für Sites-Programme unterstützt.
 
-Um IP-Zulassungslisten zu verwalten, gehen Sie zur Registerkarte **Umgebungen** der Seite **Überblick** Ihres Programms. Klicken Sie auf eine einzelne Umgebung, damit Sie deren Details verwalten können.
+Um IP-Zulassungslisten zu verwalten, gehen Sie zur Seite ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen** der Seite **Übersicht** Ihres Programms. Klicken Sie auf eine einzelne Umgebung, damit Sie deren Details verwalten können.
 
 ### Übernehmen einer IP-Zulassungsliste {#apply-ip-allow-list}
 

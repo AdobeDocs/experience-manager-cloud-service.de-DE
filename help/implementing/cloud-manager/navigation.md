@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 100%
+source-wordcount: '1665'
+ht-degree: 98%
 
 ---
 
@@ -215,7 +215,7 @@ Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und
 * ![Webseiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery Sites:](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) Verwalten von Edge Delivery-Sites
 * ![Einstellungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain-Einstellungen:](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Verwalten benutzerdefinierter Domain-Namen für das Programm
 * ![Symbol für geschlossenes Schloss](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL-Zertifikate:](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) Verwalten von SSL-Zertifikaten für das Programm
-* ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN-Konfigurationen:](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Verwalten von CDN-Konfigurationen
+* ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Domain-Zuordnungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Domain-Zuordnungen verwalten
 * ![Aufgabenlisten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP-Zulassungslisten:](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) Definieren von Zulassungslisten für bestimmte IP-Adressen
 * ![Kisten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content-Sets:](/help/implementing/developing/tools/content-copy.md) Sets von Inhalten, die für Kopierzwecke erstellt wurden
 * ![Verlaufs-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Aktivität zum Kopieren von Inhalten:](/help/implementing/developing/tools/content-copy.md) Aktivitäten zur Inhaltskopie
@@ -243,7 +243,7 @@ Bei einem Live-Programm den Status Ihrer letzten Bereitstellung mit Links zu Det
 
 Die Karte **Umgebungen** gibt Ihnen einen Überblick über Ihre Umgebungen und stellt Links für Schnellaktionen bereit.
 
-Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf **Alle anzeigen**, um alle Umgebungen des Programms zu sehen.
+Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf ![Workflow](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)Symbol **Alle anzeigen**, um alle Umgebungen des Programms anzuzeigen.
 
 Weitere Informationen finden Sie auch unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
@@ -251,7 +251,7 @@ Weitere Informationen finden Sie auch unter [Verwalten von Umgebungen](/help/imp
 
 Die Karte **Pipelines** gibt Ihnen einen Überblick über Ihre Pipelines und stellt Links für Schnellaktionen bereit.
 
-Auf der Karte **Pipelines** sind nur drei Pipelines aufgeführt. Klicken Sie auf **Alle anzeigen**, um alle Pipelines des Programms zu sehen.
+Auf der Karte **Pipelines** sind nur drei Pipelines aufgeführt. Klicken Sie auf ![Workflow](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)Symbol **Alle anzeigen**, um alle Pipelines des Programms anzuzeigen.
 
 Weitere Informationen zur Verwaltung Ihrer Pipelines finden Sie unter [Verwalten von Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md).
 

@@ -1,22 +1,22 @@
 ---
-title: Verwalten von CDN-Konfigurationen
+title: Verwalten von Domain-Zuordnungen
 description: Erfahren Sie, wie Sie mit Cloud Manager CDN-Konfigurationen für eine Edge Delivery-Site oder eine Cloud Manager-Umgebung bearbeiten, aktualisieren oder löschen können.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 68%
 
 ---
 
-# Verwalten von CDN-Konfigurationen {#manage-cdn-configurations}
+# Verwalten von Domain-Zuordnungen {#manage-cdn-configurations}
 
 Erfahren Sie, wie Sie mit Cloud Manager CDN-Konfigurationen für eine Edge Delivery-Site oder eine Cloud Manager-Umgebung bearbeiten oder löschen können.
 
-## Bearbeiten einer CDN-Konfiguration auf der Seite „CDN-Konfigurationen“ {#edit-cdn}
+## Bearbeiten einer CDN-Konfiguration über die Seite „Domain-Zuordnungen“ {#edit-cdn}
 
 In Adobe Cloud Manager kann es verschiedene Gründe geben, dass Sie eine CDN-Konfiguration (Content Delivery Network) einschließlich der Umgebungsebene (Veröffentlichung oder Vorschau) und des SSL-Zertifikats bearbeiten möchten.
 
@@ -28,11 +28,11 @@ Sie können eine Konfiguration bearbeiten, ohne die vorhandene Konfiguration vol
 
 Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um diese Aufgabe abzuschließen.
 
-**So bearbeiten Sie eine CDN-Konfiguration auf der Seite „CDN-Konfigurationen“:**
+**So bearbeiten Sie eine CDN-Konfiguration über die Seite „Domain-Zuordnungen“:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
-1. Klicken Sie im linken Seitenmenü unter **Services** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN-Konfigurationen**.
-1. Klicken Sie in der Tabelle **CDN-Konfigurationen** auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren CDN-Konfiguration Sie aktualisieren möchten.
+1. Klicken Sie im linken Menü unter **Dienste** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.
+1. Klicken Sie in **Tabelle** Domain-Zuordnungen“ auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren CDN-Konfiguration Sie aktualisieren möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Bearbeiten**.
 
@@ -42,22 +42,22 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 1. Klicken Sie auf **Aktualisieren**.
 
-   Der Status des bearbeiteten CDN wird in der Tabelle **CDN-Konfigurationen** aktualisiert, um die vorgenommenen Änderungen widerzuspiegeln.
+   Der Status des bearbeiteten CDN wird in der Tabelle **Domain-Zuordnungen** aktualisiert, um die von Ihnen vorgenommenen Änderungen widerzuspiegeln.
 
 
 ## Bearbeiten einer CDN-Konfiguration auf der Seite „Umgebungen“
 
-Die Schritte zum Bearbeiten einer CDN-Konfiguration von der Seite **Umgebungen** aus sind dieselben wie beim [Bearbeiten einer CDN-Konfiguration von der Seite „CDN-Konfigurationen“ aus](#edit-cdn), der Einstiegspunkt ist jedoch ein anderer.
+Die Schritte zum Bearbeiten einer CDN-Konfiguration auf der Seite **Umgebungen** sind fast identisch mit denen beim [Bearbeiten einer CDN-Konfiguration auf der Seite ](#edit-cdn)Domain-Zuordnungen“, aber der Einstiegspunkt unterscheidet sich.
 
 **So bearbeiten Sie eine CDN-Konfiguration auf der Seite „Umgebungen“:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Klicken Sie im linken Seitenmenü auf **Umgebungen**.
+1. Klicken Sie im Menü links auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
 
 1. Wählen Sie auf der Seite **Umgebungen** eine Umgebung von Interesse aus.
 
-1. Klicken Sie auf der Seite mit den Umgebungsdetails in der Gruppierung „CDN-Konfigurationen“ auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), das der CDN-Konfiguration entspricht, die Sie bearbeiten möchten.
+1. Klicken Sie auf der Seite „Umgebungsdetails“ in der Gruppierung „Domain-Zuordnungen“ auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) das der CDN-Konfiguration entspricht, die Sie bearbeiten möchten.
 
 1. Klicken Sie im Popup-Menü auf **Bearbeiten**.
 
@@ -83,9 +83,9 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Klicken Sie im Menü auf der linken Seite unter **Services** auf **CDN-Konfigurationen**.
+1. Klicken Sie im linken Menü unter **Dienste** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.
 
-1. Klicken Sie in der Tabelle „CDN-Konfigurationen“ am Ende einer Zeile, die einem zu entfernenden CDN entspricht, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Löschen**.
+1. Klicken Sie in der Tabelle der Domain![Zuordnungen am ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) einer Zeile, die einem zu entfernenden CDN entspricht, auf „Mehr“ und dann auf **Löschen**.
 
 1. Klicken Sie im Dialogfeld **CDN-Konfiguration löschen** auf **Löschen**.
 
@@ -94,17 +94,17 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 ## Löschen einer CDN-Konfiguration auf der Seite „Umgebungen“
 
-Die Schritte zum Löschen einer CDN-Konfiguration auf der Seite **Umgebungen** sind nahezu mit denen beim [Löschen einer CDN-Konfiguration auf der Seite „CDN-Konfigurationen“](#edit-cdn) identisch, der Einstiegspunkt ist jedoch ein anderer.
+Die Schritte zum Löschen einer CDN-Konfiguration auf der Seite **Umgebungen** sind fast identisch mit denen beim [Löschen einer CDN-Konfiguration von der Seite ](#edit-cdn)Domain-Zuordnungen“, aber der Einstiegspunkt unterscheidet sich.
 
 **So löschen Sie eine CDN-Konfiguration auf der Seite „Umgebungen“:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Klicken Sie im linken Seitenmenü auf **Umgebungen**.
+1. Klicken Sie im Menü links auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
 
 1. Wählen Sie auf der Seite **Umgebungen** eine Umgebung von Interesse aus.
 
-1. Klicken Sie auf der Seite mit den Umgebungsdetails in der Gruppierung **CDN-Konfigurationen** auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), das der zu entfernenden CDN-Konfiguration entspricht. Klicken Sie dann auf **Löschen**.
+1. Klicken Sie auf der Seite mit den Umgebungsdetails in der **Domain-**) auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), das der zu entfernenden CDN-Konfiguration entspricht, und klicken Sie dann auf **Löschen**.
 
 1. Klicken Sie im Dialogfeld **CDN-Konfiguration löschen** auf **Löschen**.
 

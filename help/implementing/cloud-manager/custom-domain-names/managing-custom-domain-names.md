@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 100%
+source-wordcount: '795'
+ht-degree: 96%
 
 ---
 
@@ -33,9 +33,9 @@ Es könnte aus folgenden Gründen erforderlich sein, dass Sie die Konfiguration 
 
 1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das linke Seitenmenü anzuzeigen.
 
-1. Klicken Sie unter der Überschrift **Services** auf **CDN-Konfigurationen**.
+1. Klicken Sie unter **Dienste** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.
 
-1. Klicken Sie auf der Seite **CDN-Konfigurationen** auf das Symbol ![Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende der Zeile, deren CDN Sie bearbeiten möchten.
+1. Klicken Sie auf der **Domain** Zuordnungen“ auf ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren CDN Sie bearbeiten möchten.
 
 1. Klicken Sie auf **Bearbeiten**.
 
