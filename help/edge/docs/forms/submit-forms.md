@@ -7,14 +7,14 @@ role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
 # Einrichten von Google Tabellen- oder Microsoft Excel-Dateien für die Datenaufnahme
 
 
-Nachdem Sie [das Formular erstellt und in der Vorschau angezeigt](/help/edge/docs/forms/create-forms.md), können Sie die entsprechende Tabelle aktivieren, um mit dem Empfang von Daten zu beginnen. Sie haben folgende Möglichkeiten:
+Sobald Sie das [Formular erstellt und in einer Vorschau angezeigt](/help/edge/docs/forms/create-forms.md) haben, ist es an der Zeit, dafür zu sorgen, dass die entsprechende Tabelle Daten empfängt. Sie haben folgende Möglichkeiten:
 
 * [Aktivieren Sie die Tabelle manuell, um Daten zu akzeptieren](#manually-enable-the-spreadsheet-to-accept-data)
 * [Verwenden von Admin-APIs, um das Akzeptieren von Daten durch eine Tabelle zu aktivieren](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
@@ -32,7 +32,7 @@ Nachdem Sie [das Formular erstellt und in der Vorschau angezeigt](/help/edge/doc
 
 So ermöglichen Sie die Datenaufnahme in der Tabelle:
 
-1. Öffnen Sie das Arbeitsblatt, in dem sich Ihr Formular befindet, und fügen Sie ein neues Arbeitsblatt an, indem Sie es in `incoming` umbenennen. Zum Beispiel die Arbeitsmappe [Anfrage](/help/edge/assets/enquiry.xlsx) von Microsoft Excel.
+1. Öffnen Sie die Tabelle, die Ihr Formular hat, und fügen Sie ein neues Blatt hinzu, das Sie in `incoming` umbenennen. Beispiel: die Microsoft Excel-Arbeitsmappe des Formulars [enquiry](/help/edge/assets/enquiry.xlsx).
 
    >[!WARNING]
    >
@@ -42,15 +42,15 @@ So ermöglichen Sie die Datenaufnahme in der Tabelle:
 
 1. Ändern Sie den Namen der Tabelle in „intake_form“. Um in Microsoft Excel den Tabellennamen zu ändern, wählen Sie die Tabelle aus und klicken Sie auf „Tabellendesign“.
 
-1. Fügen Sie als Nächstes die Formularfeldnamen als Tabellenkopfzeilen hinzu. Um sicherzustellen, dass die Felder genau identisch sind, können Sie sie aus dem Blatt „shared-aem“ kopieren und einfügen.  Wählen Sie in Ihrem Blatt „Shared-AEM“ die Formular-IDs aus, die unter der Spalte „Name“ aufgeführt sind, und kopieren Sie sie, mit Ausnahme des Felds „Senden“.
+1. Fügen Sie als Nächstes die Formularfeldnamen als Tabellenkopfzeilen hinzu. Um sicherzustellen, dass die Felder genau gleich sind, können Sie sie aus dem Blatt „shared-aem“ kopieren und einfügen.  Wählen Sie in Ihrem Blatt „shared-aem“ die unter der Spalte „Name“ aufgeführten Formular-IDs aus und kopieren Sie sie, mit Ausnahme des Felds „submit“.
 
 1. Wählen Sie im Blatt „eingehend“ die Option „Sonderzeichen einfügen“ > „Zeilen in Spalten exportieren“, um die Feld-IDs als Spaltenkopfzeilen in dieses neue Blatt zu kopieren. Behalten Sie nur die Felder bei, deren Daten erfasst werden müssen. Andere Felder können ignoriert werden.
 
-   Jeder Wert in der Spalte `Name` des Blattes `shared-aem`, mit Ausnahme der Senden-Schaltfläche, kann als Kopfzeile im Blatt `incoming` dienen. Betrachten Sie beispielsweise das folgende Bild, das Kopfzeilen für ein Formular „Anfrage“ veranschaulicht:
+   Jeder Wert in der Spalte `Name` des Blattes `shared-aem`, mit Ausnahme der Senden-Schaltfläche, kann als Kopfzeile im Blatt `incoming` dienen. Sehen Sie sich beispielsweise die folgende Abbildung an, die Kopfzeilen für ein Anfrageformular zeigt:
 
    ![Felder für das Formular „contact-us“](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Verwenden Sie die Erweiterung [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau der Formularaktualisierungen anzuzeigen. Ihr Blatt kann jetzt eingehende Formularübermittlungen aufnehmen.
+1. Verwenden Sie die [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)-Erweiterung, um die Formularaktualisierungen in einer Vorschau anzuzeigen. Ihr Blatt kann jetzt eingehende Formularübermittlungen aufnehmen.
 
    >[!NOTE]
    >
@@ -59,11 +59,11 @@ So ermöglichen Sie die Datenaufnahme in der Tabelle:
 
 Nachdem die Feldnamen zu dem Blatt `incoming` hinzugefügt wurden, kann Ihr Formular Übermittlungen annehmen. Sie können das Formular in der Vorschau anzeigen und damit Daten an das Blatt senden, das es verwendet.
 
-Nachdem das Blatt für den Datenempfang eingerichtet wurde, können Sie [Vorschau des Formulars anzeigen](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> um mit dem Senden von Daten an das Blatt zu beginnen.
+Wenn das Blatt für den Empfang von Daten eingerichtet ist, können Sie das [Formular in einer Vorschau anzeigen](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)<!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)-->, um mit dem Senden von Daten an das Blatt zu beginnen.
 
 >[!WARNING]
 >
->  Die „Shared-AEM“-Blätter sollten niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, bei denen Sie nicht sicher sind, ob sie öffentlich zugänglich sind.
+>  Die Blätter „shared-aem“ dürfen niemals persönlich identifizierbare Informationen oder vertrauliche Daten enthalten, die nicht öffentlich zugänglich sein sollen.
 
 
 ## Verwenden von Admin-APIs, um das Akzeptieren von Daten durch eine Tabelle zu aktivieren

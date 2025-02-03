@@ -88,7 +88,7 @@ ht-degree: 99%
          + [Versionshinweise für 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
-      + {#2025} 2025
+      + 2025 {#2025}
          + [Wartungversionshinweise für 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
          + [Wartungversionshinweise für 2024.11.0](/help/release-notes/maintenance/2024/2024-11-0.md)
@@ -1020,7 +1020,7 @@ ht-degree: 99%
          + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
          + [Regex-Ausdrücke für Validierungen](/help/edge/docs/forms/regex-forms.md)
          + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Verwenden des Forms-Übermittlungsdienstes](/help/forms/forms-submission-service.md)
+         + [Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [Übersicht - Universeller Editor für Edge Delivery Services für Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Erste Schritte](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1032,7 +1032,7 @@ ht-degree: 99%
          + [Verwenden von reCAPTCHA zum Schutz von Formularen](/help/edge/docs/forms/recaptacha-forms.md)
          + [Benutzerdefinierte Komponenten](/help/edge/docs/forms/custom-components-forms.md)
          + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Veröffentlichen von Forms für Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [Veröffentlichung von Formularen für Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + Verweise {#forms-references}
          + [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
    + Edge Delivery-Ressourcen {#resources}

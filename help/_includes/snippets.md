@@ -24,7 +24,7 @@ ht-degree: 97%
 * [Verwenden von CAPTCHA in einem adaptiven AEM-Formular](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Generieren einer PDF-Version (DoR) eines adaptiven AEM-Formulars](/help/forms/generate-document-of-record-core-components.md)
 * [Übersetzen eines adaptiven AEM-Formulars](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-* [Aktivieren von Adobe Analytics für ein adaptives Formular, um die Formularnutzung zu verfolgen.](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Aktivieren von Adobe Analytics für ein adaptives Formular, um die Formularnutzung zu verfolgen](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
 * [Verbinden eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Verbinden eines adaptiven Formulars mit Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
@@ -66,7 +66,7 @@ ht-degree: 97%
 * [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
 * [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
 * [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
-* [Verwenden des Formularübermittlungsdienstes](/help/forms/forms-submission-service.md)
+* [Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
 
 
 ## Der Unterschied zwischen dem Regeleditor in Kernkomponenten und dem Regeleditor in Foundation-Komponenten {#rule-editor-diff}
