@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 91%
+source-wordcount: '453'
+ht-degree: 89%
 
 ---
 
@@ -22,6 +22,8 @@ Bei von Adobe verwalteten CDNs sind bei Verwendung von DV-SSL-Zertifikaten nur S
 >[!IMPORTANT]
 >
 >Haben Sie [einen benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) bzw. [ein SSL-Zertifikat hinzugefügt](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)? Andernfalls müssen Sie diese beiden Aufgaben ausführen, bevor Sie eine CDN-Konfiguration hinzufügen können.
+
+Siehe auch [Adobe verwaltetes CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
 **So fügen Sie eine CDN-Konfiguration hinzu:**
 
