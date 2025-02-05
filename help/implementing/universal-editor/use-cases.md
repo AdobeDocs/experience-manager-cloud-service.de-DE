@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die wichtigsten Anwendungsfälle des univer
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '858'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

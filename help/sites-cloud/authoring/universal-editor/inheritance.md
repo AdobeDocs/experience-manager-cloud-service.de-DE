@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 100%
+source-wordcount: '475'
+ht-degree: 89%
 
 ---
 
@@ -42,7 +42,7 @@ Um einen Teil des Inhalts der Kopien zu ändern, unterbrechen Autorinnen und Aut
 
 Wenn eine Seite Teil des MSM oder eines Launches ist und Inhalte mit dem universellen Editor bearbeitet werden, deaktiviert der Editor automatisch die Vererbung für alle Änderungen, die von Autorinnen und Autoren auf dieser Seite vorgenommen werden. Dadurch wird sichergestellt, dass geänderte Inhalte beibehalten werden, wenn Aktualisierungen aus dem Blueprint synchronisiert werden.
 
-Die Autorin oder der Autor muss zum Deaktivieren der Vererbung nicht erst auf eine Schaltfläche klicken oder andere Schritte unternehmen, bevor sie oder er lokale Bearbeitungen vornimmt. Sobald eine Änderung vorgenommen wurde, wird die Vererbung implizit abgebrochen. Dieses Verhalten steht im Gegensatz zum [Seiteneditor](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
+Die Autorin oder der Autor muss zum Deaktivieren der Vererbung nicht erst auf eine Schaltfläche klicken oder andere Schritte unternehmen, bevor sie oder er lokale Bearbeitungen vornimmt. Sobald eine Änderung vorgenommen wurde, wird die Vererbung implizit abgebrochen. Dieser Workflow steht im Gegensatz zum [Seiteneditor](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 Der universelle Editor wirkt sich nicht auf den zugrundeliegenden Mechanismus der Vererbung aus. Weitere Informationen zur Funktionsweise der Vererbung finden Sie in der folgenden Dokumentation.
 
@@ -55,6 +55,6 @@ Der universelle Editor wirkt sich nicht auf den zugrundeliegenden Mechanismus de
    * Die Rücksetzung der Vererbung ist nur für die gesamte Seite möglich, und zwar über die
       * [Konsole „Live Copy-Übersicht“](/help/sites-cloud/administering/msm/live-copy-overview.md)
       * [Launch-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Verwenden Sie die Schaltfläche **Zurücksetzen** auf der Registerkarte **Live Copy** des [Fensters mit den Seiteneigenschaften.](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      * mithilfe der **Zurücksetzen** auf der Registerkarte **Live Copy** des Fensters [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md).
 * Autorinnen und Autoren verfügen über kein visuelles Feedback, um zu sehen, für welche Komponenten ihre Vererbung deaktiviert ist und welche sie weiterhin beibehalten haben.
-* Diese Funktionen sind derzeit auf Komponenten auf Seiten beschränkt und gelten noch nicht für [Inhaltsfragmente,](/help/sites-cloud/administering/content-fragments/overview.md), obwohl sie auch MSM- und Launch-Funktionen aufweisen.
+* Diese Funktionen sind derzeit auf Komponenten auf Seiten beschränkt und gelten noch nicht für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) obwohl diese auch über MSM- und Launch-Funktionen verfügen.

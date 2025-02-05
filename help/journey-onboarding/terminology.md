@@ -4,20 +4,20 @@ description: Bevor Sie sich bei AEMaaCS anmelden, sollten Sie einige Begriffe de
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # Terminologie von AEM as a Cloud Service {#terminology}
 
-In diesem Teil der [Onboarding-Tour](overview.md) lernen Sie die Terminologie von AEM as a Cloud Service und seine Grundstruktur kennen.
+In diesem Teil der [Onboarding-Journey](overview.md) lernen Sie die Terminologie von AEM as a Cloud Service und seine Grundstruktur kennen.
 
 ## Ziel {#objective}
 
-Nachdem Sie nun durch das Lesen des Dokuments [Vorbereitung auf das Onboarding](preparation.md) wissen, wie Sie sich auf den Onboarding-Prozess vorbereiten können, sollten Sie sich vor der Anmeldung mit einigen Begriffen des Systems und seiner grundlegende Struktur vertraut machen.
+Nachdem Sie nun durch das Lesen des Dokuments [Onboarding-Vorbereitung](preparation.md) wissen, wie Sie sich auf den Onboarding-Prozess vorbereiten können, sollten Sie sich vor der Anmeldung mit einigen Begriffen des Systems und seiner Grundstruktur vertraut machen.
 
 AEM as a Cloud Service ist ein leistungsstarkes, flexibles Tool. Und wie bei jedem Tool, das Sie verwenden, sollten Sie auch hier den Aufbau und die zur Beschreibung genutzte Terminologie kennen. In diesem Dokument werden die wichtigste Begriffe erläutert, die Sie verstehen sollten, bevor Sie mit der Verwendung des Systems beginnen.
 

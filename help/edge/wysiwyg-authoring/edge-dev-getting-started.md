@@ -4,10 +4,10 @@ description: In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Expe
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '1223'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ In diesem Handbuch erfahren Sie, wie Sie mit einer neuen Adobe Experience Manage
 
 Bevor Sie mit diesem Handbuch beginnen, sollten Sie bereits mit den Grundlagen der Edge Delivery Services vertraut sein und Zugriff auf diese haben. Hierzu zählt u. a. Folgendes:
 
-* Sie haben das [Edge Delivery Services-Tutorial](/help/edge/developer/tutorial.md) abgeschlossen.
+* Sie haben das [Tutorial zum Edge Delivery-Service abgeschlossen](/help/edge/developer/tutorial.md).
 * Sie haben Zugriff auf eine [AEM Cloud Service-Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
-* Sie haben den [universellen Editor in derselben Sandbox-Umgebung aktiviert](/help/implementing/universal-editor/getting-started.md).
+* Sie haben [den universellen Editor in derselben Sandbox-Umgebung aktiviert](/help/implementing/universal-editor/getting-started.md).
 
 ## Grundlegende Konzepte bei der Entwicklung für Edge Delivery Services {#core-concepts}
 
@@ -52,7 +52,7 @@ Websites werden automatisch für jede Ihrer Verzweigungen erstellt, von der Inha
 
 ## Erste Schritte mit WYSIWYG-Authoring und Edge Delivery Services {#getting-started}
 
-Sobald Sie die [Voraussetzungen](#prerequisites) erfüllt und sich für [die Verwendung des universellen Editors entschieden haben,](#editor-choice) können Sie mit Ihrem eigenen Projekt beginnen.
+Sobald Sie die [Voraussetzungen](#prerequisites) erfüllt und [die Wahl getroffen haben, den universellen Editor zu verwenden](#editor-choice), können Sie mit Ihrem eigenen Projekt beginnen.
 
 ### Erstellen Ihres GitHub-Projekts {#create-github-project}
 
@@ -128,7 +128,7 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 
 1. Laden Sie die neueste Site-Vorlage für das WYSIWYG-Authoring mit Edge Delivery Services von GitHub unter [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) herunter.
 
-1. Melden Sie sich bei Ihrer AEM as a Cloud Service-Authoring-Instanz an, navigieren Sie zur Sites-Konsole und tippen oder klicken Sie auf **Erstellen** > **Site aus Vorlage**.
+1. Melden Sie sich bei Ihrer AEM as a Cloud Service-Autoreninstanz an, navigieren Sie zur Sites-Konsole und klicken Sie auf **Erstellen** > **Site aus Vorlage**.
 
    ![Erstellen einer neuen Site über die Konsole](assets/edge-dev-getting-started/create-site-console.png)
 
@@ -140,23 +140,23 @@ Nachdem Sie nun über ein GitHub-Projekt verfügen, müssen Sie eine neue AEM-Si
 
    * Die Vorlage darf nur einmal hochgeladen werden. Nach dem Hochladen kann sie wiederverwendet werden, um zusätzliche Sites zu erstellen.
 
-1. Nach dem Import wird die Vorlage im Assistenten angezeigt. Tippen oder klicken Sie, um sie auszuwählen, und tippen oder klicken Sie dann auf **Weiter**.
+1. Nach dem Import wird die Vorlage im Assistenten angezeigt. Klicken Sie, um sie auszuwählen, und klicken Sie dann auf **Weiter**.
 
    ![Auswählen der Vorlage](assets/edge-dev-getting-started/select-template.png)
 
 1. Füllen Sie die folgenden Felder aus und tippen oder klicken Sie auf **Erstellen**.
 
    * **Site-Titel**: Fügen Sie einen beschreibenden Titel für die Site hinzu.
-   * **Site-Name**: Verwenden Sie den `<site-name>`, den Sie im [vorherigen Schritt](#create-github-project) definiert haben.
+   * **Site-Titel** - Verwenden Sie die `<site-name>`, die Sie im [vorherigen Schritt](#create-github-project) definiert haben.
    * **GitHub-URL**: Verwenden Sie die URL des GitHub-Projekts, das Sie im vorherigen Schritt erstellt haben.
 
    ![Site-Details](assets/edge-dev-getting-started/create-site-details.png)
 
-1. AEM bestätigt die Site-Erstellung mit einem Dialogfeld. Tippen oder klicken Sie zum Quittieren auf **OK**.
+1. AEM bestätigt die Site-Erstellung mit einem Dialogfeld. Klicken Sie auf **OK**, um den Vorgang zu schließen.
 
    ![Bestätigung der Site-Erstellung](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. Navigieren Sie in der Sites-Konsole zur Datei `index.html` der neu erstellten Site und tippen oder klicken Sie in der Symbolleiste auf **Bearbeiten**.
+1. Navigieren Sie in der Sites-Konsole zum `index.html` der neu erstellten Site und klicken Sie in der Symbolleiste **Bearbeiten**.
 
    ![Bearbeiten der neuen Site](assets/edge-dev-getting-started/new-site.png)
 
@@ -194,4 +194,4 @@ Weitere Informationen finden Sie in der Anleitung [Erstellen von für den univer
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem AEM GEMs-Webinar](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für das WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [ Webinar zu AEM GEMs](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

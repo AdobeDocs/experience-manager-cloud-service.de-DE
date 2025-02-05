@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihr
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,15 +17,15 @@ Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Site erstellen](create-site.md), haben Sie eine neue Demo-Site basierend auf den Vorlagen des Referenz-Demo-Add-ons erstellt. Sie sollten jetzt:
+Im vorherigen Dokument der Journey mit dem AEM-Referenz-Demo-Add-on, [Site erstellen](create-site.md), haben Sie eine neue Demo-Site basierend auf den Vorlagen des Referenz-Demo-Add-ons erstellt. Sie sollten jetzt:
 
 * Verstehen, wie Sie auf die AEM Authoring-Umgebung zugreifen.
 * Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.
 * Die Grundlagen der Navigation in der Site-Struktur und der Bearbeitung einer Seite verstehen.
 
-Wenn Sie auch [AEM Screens für Ihre Demo-Site aktiviert haben,](screens.md) sollten Sie ebenfalls:
+Wenn Sie auch [AEM Screens für Ihren Demo-Standort aktiviert haben](screens.md) sollten Sie außerdem:
 
-* die Grundlagen von AEM Screens kennen.
+* Die Grundlagen von AEM Screens kennen.
 * Den Demoinhalt von We.Cafe verstehen.
 * wissen, wie man AEM Screens für We.Cafe konfiguriert.
 

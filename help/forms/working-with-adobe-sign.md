@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 98%
@@ -93,7 +93,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 
    * Wenn Sie keine benutzerdefinierte Formularvorlage haben, wählen Sie die Option **[!UICONTROL Datensatzdokument erzeugen]**. Wenn Sie diese Option verwenden, zeigt das zum Signieren gesendete Dokument alle Felder des adaptiven Formulars an.
 
-1. Wählen Sie **[!UICONTROL Erstellen.]** Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL Adobe Sign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
+1. Wählen Sie **[!UICONTROL Erstellen]**. Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL Adobe Sign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
 
 #### Aktivieren von [!DNL Adobe Sign] für ein adaptives Formular {#editafsign}
 

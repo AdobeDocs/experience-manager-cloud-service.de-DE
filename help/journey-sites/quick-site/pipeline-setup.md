@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zu AEM Quick Site Creation, [Erstellen einer Site aus einer Vorlage](create-site.md), haben Sie gelernt, wie Sie mit einer Site-Vorlage schnell eine AEM-Site erstellen können, die mithilfe von Frontend-Tools weiter angepasst werden kann. Jetzt sollten Sie:
+Im vorherigen Dokument der Journey zur schnellen Site-Erstellung in der AEM, [Erstellen einer Site aus einer Vorlage](create-site.md), haben Sie gelernt, wie Sie mit einer Site-Vorlage schnell eine AEM-Site erstellen können, die mithilfe von Frontend-Tools weiter angepasst werden kann. Jetzt sollten Sie:
 
 * Wissen, wie Sie AEM-Site-Vorlagen abrufen.
 * Wissen, wie Sie mit einer Vorlage eine neue Site erstellen.
@@ -114,12 +114,12 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Erfahren Sie, was eine Frontend-Pipeline ist.
 * Erfahren Sie, wie Sie eine Frontend-Pipeline in Cloud Manager einrichten.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Tour zu AEM Quick Site Creation fort, indem Sie als Nächstes das Dokument [Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md) durchlesen, in dem Sie erfahren, wie Sie Frontend-Entwickler in Cloud Manager einbinden, damit sie Zugriff auf das Git-Repository und die Pipeline Ihrer AEM-Site haben.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Journey zur schnellen Site-Erstellung der AEM fort, indem Sie als Nächstes das Dokument [Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md) lesen, in dem Sie erfahren, wie Sie Frontend-Entwickler in Cloud Manager integrieren, damit sie Zugriff auf das Git-Repository und die Pipeline Ihrer AEM-Site haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, mit dem nächsten Teil der Tour zu Quick Site Creation fortzufahren, indem Sie das Dokument [Anpassen des Site-Themas](customize-theme.md) lesen. Im Folgenden finden Sie einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um die Tour fortzusetzen.
+Es wird zwar empfohlen, mit dem nächsten Teil der Journey Quick Site Creation fortzufahren, indem Sie das Dokument [Anpassen des Site-Designs](customize-theme.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Journey fortzufahren.
 
-* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
+* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de) – Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sehen Sie sich die ausführlichen technischen Dokumente an.
 * [Cloud Manager-Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md): Weitere Informationen zum Einrichten und Verwalten von Git-Repositorys für Ihr AEMaaCS-Projekt finden Sie in diesem Dokument.
 * [Konfigurieren der CI/CD-Pipeline – Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – Weitere Informationen zum Einrichten von Pipelines, sowohl für den vollständigen Stapel als auch für das Frontend, finden Sie in diesem Dokument.

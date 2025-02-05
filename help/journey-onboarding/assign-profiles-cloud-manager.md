@@ -4,21 +4,21 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder den Cloud Ma
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
 # Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen {#assign-team-members}
 
-In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen.
+In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen.
 
 ## Ziel {#objective}
 
-Im vorherigen Schritt dieser Tour [Zugang zur Admin Console](admin-console.md) haben Sie erfahren, wie Sie sich bei der Admin Console anmelden und Ihre Berechtigungen als Systemadministrator prüfen können. Jetzt lernen Sie, wie Sie Ihren Team-Mitgliedern Zugriff auf Cloud Manager gewähren. Dazu weisen Sie Produktprofile zu.
+Im vorherigen Schritt auf dieser Journey [Zugriff auf die Admin Console ](admin-console.md) haben Sie gelernt, sich bei der Admin Console anzumelden und Ihre Berechtigungen als Systemadministrator zu überprüfen. Jetzt lernen Sie, wie Sie Ihren Team-Mitgliedern Zugriff auf Cloud Manager gewähren. Dazu weisen Sie Produktprofile zu.
 
 Wenn Sie Benutzenden Zugriff auf eine bestimmte Adobe-Lösung gewähren, möchten Sie ihnen nicht unbedingt uneingeschränkten Zugriff gewähren. Mit Produktprofilen kann jeder Lösung ein eigener Satz von Benutzerberechtigungen zugewiesen werden. Sie verwenden die Admin Console, um Produktprofile zuzuweisen.
 
@@ -177,7 +177,7 @@ In diesem Teil der Onboarding-Tour haben Sie alles über das Zuweisen Ihrer Team
 * Überblick über die drei zentralen Cloud Manager-Produktprofile: **Geschäftsinhaber**, **Bereitstellungs-Manager** und **Entwickler**.
 * Sie können Team-Mitglieder den Cloud Manager-Produktprofilen zuordnen.
 
-Sie sind nun bereit, Ihre Onboarding-Tour fortzusetzen, indem Sie als Nächstes das Dokument [Zugriff auf Cloud Manager](cloud-manager.md) durcharbeiten. Hier wird beschrieben, wie Sie auf Cloud Manager zugreifen und Ihre Projektressourcen erstellen.
+Sie können jetzt mit dem Onboarding-Journey fortfahren, indem Sie als Nächstes das Dokument [Zugriff auf Cloud Manager](cloud-manager.md) lesen, in dem Sie erfahren, wie Sie auf Cloud Manager zugreifen und Ihre Projektressourcen erstellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

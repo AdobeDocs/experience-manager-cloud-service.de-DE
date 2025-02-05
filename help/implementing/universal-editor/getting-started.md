@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten 
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 66%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie m
 
 >[!TIP]
 >
->Wenn Sie lieber direkt in ein Beispiel eintauchen möchten, können Sie die [Beispielanwendung des universellen Editors auf GitHub ansehen.](https://github.com/adobe/universal-editor-sample-editable-app)
+>Wenn Sie lieber direkt in ein Beispiel eintauchen möchten, können Sie die Beispielanwendung [Universeller Editor“ auf GitHub ](https://github.com/adobe/universal-editor-sample-editable-app).
 
 Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM-App als Beispiel. Dieses Dokument führt Sie durch diese Schritte.
 
@@ -120,50 +120,50 @@ Wenn Sie nur bestimmte Erweiterungen für eine Seite aktivieren möchten, könne
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## Legen Sie fest, für welche Inhaltspfade oder `sling:resourceType` der universelle Editor geöffnet werden soll. (Optional) {#content-paths}
+## Definieren, für welche Inhaltspfade oder `sling:resourceType`s der universelle Editor geöffnet werden soll. (Optional) {#content-paths}
 
-Wenn Sie über ein vorhandenes AEM-Projekt mit [dem Seiteneditor) verfügen, werden ](/help/sites-cloud/authoring/page-editor/introduction.md) beim Bearbeiten von Seiten durch Inhaltsautorinnen und -autoren die Seiten automatisch mit dem Seiteneditor geöffnet. Sie können festlegen, welche Editor-AEM basierend auf den Inhaltspfaden oder dem `sling:resourceType` geöffnet werden soll, sodass das Erlebnis für Ihre Autoren nahtlos ist, unabhängig davon, welcher Editor für die ausgewählten Inhalte erforderlich ist.
+Wenn Sie über ein vorhandenes AEM-Projekt mit [dem Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verfügen, werden die Seiten beim Bearbeiten von Seiten durch Inhaltsautoren automatisch mit dem Seiteneditor geöffnet. Sie können festlegen, welchen Editor AEM basierend auf den Inhaltspfaden oder dem `sling:resourceType` öffnen soll. Dadurch profitieren Ihre Autorinnen und Autoren von einem nahtlosen Erlebnis, unabhängig davon, welcher Editor für die ausgewählten Inhalte erforderlich ist.
 
 1. Öffnen Sie den Configuration Manager. 
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. Suchen Sie **Universal Editor URL Service** in der Liste und klicken Sie auf **Konfigurationswerte bearbeiten**.
+1. Suchen Sie **Universal Editor URL Service** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 
-1. Legen Sie fest, für welche Inhaltspfade oder `sling:resourceType` der universelle Editor geöffnet werden soll.
+1. Definieren Sie, für welche Inhaltspfade oder `sling:resourceType`s der universelle Editor geöffnet werden soll.
 
-   * Geben Sie im Feld **Öffnen der universellen Editor-Zuordnung** die Pfade an, für die der universelle Editor geöffnet wird.
-   * Geben Sie im Feld **sling:resourceTypes, das vom universellen Editor geöffnet werden soll** eine Liste der Ressourcen an, die direkt vom universellen Editor geöffnet werden.
+   * Geben Sie im Feld **Universal Editor Opening Mapping** (Universeller Editor – Zuordnung zum Öffnen) die Pfade an, für die der universelle Editor geöffnet wird.
+   * Geben Sie im Feld **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) eine Liste der Ressourcen an, die direkt vom universellen Editor geöffnet werden.
 
 1. Klicken Sie auf **Speichern**.
 
 AEM öffnet den universellen Editor für Seiten, die auf dieser Konfiguration basieren, in der folgenden Reihenfolge.
 
 1. AEM prüft die Zuordnungen unter `Universal Editor Opening Mapping`. Wenn sich der Inhalt unter einem der dort definierten Pfade befindet, wird der universelle Editor dafür geöffnet.
-1. Bei Inhalten, die nicht unter in `Universal Editor Opening Mapping` definierten Pfaden enthalten sind, prüft AEM, ob die `resourceType` des Inhalts mit den in **sling:resourceTypes, die vom universellen Editor geöffnet werden sollen, definierten** übereinstimmt, und wenn der Inhalt mit einem dieser Typen übereinstimmt, wird der universelle Editor für ihn bei `${author}${path}.html` geöffnet.
+1. Bei Inhalten, die nicht unter den in `Universal Editor Opening Mapping` definierten Pfaden enthalten sind, prüft AEM, ob der `resourceType` des Inhalts zu den unter **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) definierten gehört. Wenn der Inhalt einem dieser Typen entspricht, wird dafür der universelle Editor unter `${author}${path}.html` geöffnet.
 1. Andernfalls öffnet AEM den Seiteneditor.
 
-Die folgenden Variablen stehen zur Definition Ihrer Zuordnungen im Feld **Öffnen der Zuordnung im universellen Editor** zur Verfügung.
+Die folgenden Variablen stehen zur Definition Ihrer Zuordnungen im Feld **Universal Editor Opening Mapping** (Universeller Editor – Zuordnung zum Öffnen) zur Verfügung.
 
 * `path`: Inhaltspfad der zu öffnenden Ressource
-* `localhost`: Externalizer-Eintrag für `localhost` ohne Schema, z. B. `localhost:4502`
-* `author`: Externalizer-Eintrag für Autor ohne Schema, z. B. `localhost:4502`
-* `publish`: Externalizer-Eintrag für Veröffentlichung ohne Schema, z. B. `localhost:4503`
-* `preview`: Externalizer-Eintrag für Vorschau ohne Schema, z. B. `localhost:4504`
+* `localhost`: Externalizer-Eintrag für `localhost` ohne Schema, z. B. `localhost:4502`
+* `author`: Externalizer-Eintrag für die Autorin bzw. den Autor ohne Schema, z. B. `localhost:4502`
+* `publish`: Externalizer-Eintrag für die Veröffentlichung ohne Schema, z. B. `localhost:4503`
+* `preview`: Externalizer-Eintrag für die Vorschau ohne Schema, z. B. `localhost:4504`
 * `env`: `prod`, `stage`, `dev` basierend auf den definierten Sling-Ausführungsmodi
-* `token`: Abfrage-Token für die `QueryTokenAuthenticationHandler` erforderlich
+* `token`: Für `QueryTokenAuthenticationHandler` erforderliches Abfrage-Token
 
 ### Beispielzuordnungen {#example-mappings}
 
 * Öffnen Sie alle Seiten unter `/content/foo` in der AEM-Autoreninstanz:
 
    * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Dies führt zu `https://localhost:4502/content/foo/x.html?login-token=<token>`
+   * Dadurch wird `https://localhost:4502/content/foo/x.html?login-token=<token>` geöffnet.
 
-* Öffnen Sie alle Seiten unter `/content/bar` auf einem Remote-NextJS-Server und geben Sie alle Variablen als Informationen an:
+* Öffnen Sie alle Seiten unter `/content/bar` auf einem NextJS-Remote-Server und geben Sie alle Variablen als Informationen an:
 
    * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Dies führt zu `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+   * Dadurch wird `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>` geöffnet.
 
 ## Sie können den universellen Editor nun verwenden {#youre-ready}
 

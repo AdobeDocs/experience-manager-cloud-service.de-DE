@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
-workflow-type: ht
-source-wordcount: '3412'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '3411'
+ht-degree: 99%
 
 ---
 
@@ -182,7 +182,7 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 
 In seltenen Fällen kann es in der für die Aufnahme vorgesehenen Cloud Service-Zielumgebung zu unerwarteten Problemen kommen. Die Aufnahme schlägt fehl, da sich die Umgebung nicht im erwarteten Bereitschaftszustand befindet. Überprüfen Sie das Aufnahmeprotokoll, um weitere Details zum Fehlerstatus anzuzeigen.
 
-Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie einige Minuten, bevor Sie einen weiteren Aufnahmeversuch unternehmen. Wenn das Problem weiterhin besteht, wenden Sie sich unter Angabe des Fehlerstatus an den Kunden-Support.
+Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie einige Minuten, bevor Sie einen weiteren Aufnahmeversuch unternehmen. Wenn das Problem weiterhin besteht, wenden Sie sich mit dem aufgetretenen Fehlerstatus an den Support.
 
 ### Fehler bei Auffüllaufnahme aufgrund einer Verletzung der Eindeutigkeitsbeschränkung {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 

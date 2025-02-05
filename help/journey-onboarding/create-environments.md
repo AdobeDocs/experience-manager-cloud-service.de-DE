@@ -4,20 +4,20 @@ description: Erfahren Sie, wie Sie mit Cloud Manager Ihre ersten Umgebungen erst
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # Erstellen von Umgebungen {#create-environments}
 
-In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie mit Cloud Manager Ihre ersten Umgebungen erstellen.
+In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie mit Cloud Manager Ihre ersten Umgebungen erstellen.
 
 ## Ziel {#objective}
 
-Nach dem Lesen des vorherigen Dokuments in dieser Onboarding-Tour, [Erstellen von Programmen,](create-program.md), verfügen Sie jetzt über ein eigenes Cloud Manager-Programm. Jetzt können Sie lernen, wie Sie mit Cloud Manager Ihre ersten Umgebungen für dieses Programm erstellen.
+Nach dem Lesen des vorherigen Dokuments auf dieser Onboarding-Journey, [Erstellen von Programmen](create-program.md), verfügen Sie jetzt über ein eigenes Cloud Manager-Programm. Jetzt können Sie lernen, wie Sie mit Cloud Manager Ihre ersten Umgebungen für dieses Programm erstellen.
 
 Nach dem Lesen dieses Dokuments können Sie Folgendes:
 

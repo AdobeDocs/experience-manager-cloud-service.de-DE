@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Adobe Experience Manager (AEM) as a Cloud Service
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ Wenn ein Regressionsfehler auftritt, reichen Sie einen Support-Fall über die Ad
 
 ## Zusammengesetzter Knotenspeicher {#composite-node-store}
 
-Normalerweise verursachen Aktualisierungen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Rollierende Aktualisierungen sind aufgrund [der Composite Node Store-Funktion in Oak möglich. ](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+Normalerweise verursachen Aktualisierungen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Rollierende Aktualisierungen sind aufgrund der [Composite Node Store-Funktion in Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html) möglich.
 
 Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In einer [rollierenden Implementierung](/help/implementing/deploying/overview.md#how-rolling-deployments-work) enthält die neue AEM-Version ein eigenes `/libs` (das auf TarMK basierende, unveränderliche Repository). Es unterscheidet sich von der älteren AEM-Version, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content`, `/conf` und `/etc` enthält.
 

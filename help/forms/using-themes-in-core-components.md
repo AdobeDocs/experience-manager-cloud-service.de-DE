@@ -5,10 +5,10 @@ keywords: Kernkomponenten zum Formatieren von adaptiven Formularen. Verwenden ei
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: ad4feedf07be86680ba0b3193d9110a1e277298a
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2816'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess des Änderns, Formatiere
 
 * Wenn Sie sich mit dem [Einrichten einer Pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline) vertraut machen und über grundlegende Kenntnisse zum Einrichten einer Pipeline verfügen, können Sie Ihre Design-Anpassungen effizient verwalten und bereitstellen.
 * Erfahren Sie, wie [Benutzende mit der Rolle „Mitwirkende“ konfiguriert werden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=de). Wenn Sie wissen, wie Sie Benutzende mit der Rolle „Mitwirkende“ konfigurieren, können Sie die erforderlichen Berechtigungen für die Design-Anpassung erteilen.
-* Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Tool zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Design-Anpassung verfügen.
+* Installieren Sie die neueste Version von [Apache Maven](https://maven.apache.org/download.cgi). Apache Maven ist ein Tool zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Design-Anpassung verfügen.
 * Installieren Sie einen Nur-Text-Editor. Beispielsweise Microsoft® Visual Studio Code. Die Verwendung eines Texteditors wie Microsoft® Visual Studio Code bietet eine benutzerfreundliche Umgebung zum Bearbeiten und Ändern von Design-Dateien.
 
 ### Einrichten Ihrer Arbeitsumgebung
@@ -373,7 +373,7 @@ Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-S
 
 ##### 5.3. Ausführen der Frontend-Pipeline {#run-a-frontend-pipeline}
 
-Das Design wird mithilfe der [Frontend-Pipeline bereitgestellt.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de). Um das Design bereitzustellen, führen Sie die folgenden Schritte aus:
+Das Design wird mithilfe der [Frontend-Pipeline) ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de). Um das Design bereitzustellen, führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei Ihrem AEM Cloud Manager-Repository an.
 1. Klicken Sie im Abschnitt **[!UICONTROL Pipelines]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**.

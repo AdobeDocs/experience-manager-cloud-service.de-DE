@@ -4,10 +4,10 @@ description: Taggen Sie Inhalte und verwenden Sie die AEM Tagging-Infrastruktur,
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -24,9 +24,9 @@ Dieser Artikel konzentriert sich auf das zugrunde liegende Framework, das Taggin
 
 Taggen Sie Inhalte und nutzen Sie die AEM-Tagging-Infrastruktur wie folgt:
 
-* Das Tag muss unterhalb des [Stammknotens der Taxonomie](#taxonomy-root-node) als Knoten vom Typ [`cq:Tag`](#cq-tag-node-type) vorhanden sein.
+* Das Tag muss als Knoten vom Typ [`cq:Tag`](#cq-tag-node-type) unter dem Stammknoten der [Taxonomie“ ](#taxonomy-root-node).
 * Der `NodeType` des mit Tags versehenen Inhaltsknotens muss das Mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) beinhalten.
-* Die [`TagID`](#tagid) wird der Eigenschaft [`cq:tags`](#cq-tags-property) des Inhaltsknotens hinzugefügt und ergibt einen Knoten vom Typ [`cq:Tag`.](#cq-tag-node-type)
+* Die [`TagID`](#tagid) wird zur Eigenschaft [`cq:tags`](#cq-tags-property) des Inhaltsknotens hinzugefügt, was einen Knoten vom Typ [`cq:Tag`](#cq-tag-node-type) ergibt.
 
 ## Knotentyp cq:Tag {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ Das Tagging-Framework schränkt außerdem Autorinnen bzw. Autoren sowie Site-Bes
 ### Tag-Eigenschaften {#tag-characteristics}
 
 * Der Knotentyp ist `cq:Tag`.
-* Der Knotenname ist eine Komponente der [`TagID`.](#tagid)
-* Die [`TagID`](#tagid) umfasst immer einen [Namespace](#tag-namespace).
+* Der Knotenname ist eine Komponente der [`TagID`](#tagid).
+* Die [`TagID`](#tagid) enthält immer einen [Namespace](#tag-namespace).
 * Die Eigenschaft `jcr:title` (der Titel, der in der Benutzeroberfläche angezeigt werden soll) ist optional.
 * Die Eigenschaft `jcr:description` ist optional.
-* Wird als [Container-Tag](#container-tags) bezeichnet, wenn untergeordnete Knoten enthalten sind.
-* Das Tag wird im Repository unterhalb eines Basispfads gespeichert, der als [Stammknoten der Taxonomie](#taxonomy-root-node) bezeichnet wird.
+* Wenn untergeordnete Knoten enthalten sind, wird als „Container[Tag“ ](#container-tags).
+* Das Tag wird im Repository unter einem Basispfad gespeichert, der als [Stammknoten der Taxonomie“ bezeichnet ](#taxonomy-root-node).
 
 ### TagID (Tag-ID) {#tagid}
 
 Eine `TagID` identifiziert einen Pfad, der einen Tag-Knoten im Repository ergibt.
 
-Normalerweise ist die `TagID` eine kurze `TagID`, die mit dem Namespace beginnt. Sie kann auch eine absolute `TagID` sein, die mit dem [Stammknoten der Taxonomie](#taxonomy-root-node) beginnt.
+Normalerweise ist die `TagID` eine kurze `TagID`, die mit dem Namespace beginnt. Sie kann auch eine absolute `TagID` sein, die mit dem „Stammknoten [ Taxonomie“ ](#taxonomy-root-node).
 
 Wenn Inhalte mit Tags versehen werden, aber noch nicht vorhanden sind, wird dem Inhaltsknoten die Eigenschaft [`cq:tags`](#cq-tags-property) und dem `String`-Array-Wert der Eigenschaft die `TagID` hinzugefügt.
 
@@ -68,7 +68,7 @@ In AEM ist der Basispfad `/content/cq:tags` und der Stammknoten ist vom Typ `cq:
 
 Mithilfe von Namespaces können Sie Elemente gruppieren. Der häufigste Anwendungsfall besteht darin, einen Namespace pro Website (z. B. öffentlich versus intern) oder pro größerer Anwendung (z. B. Sites oder Assets) zu verwenden. Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
 
-Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt.](#taxonomy-root-node) Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
+Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
 
 Alle Tags haben einen Namespace. Wenn kein Namespace angegeben ist, wird das Tag dem standardmäßigen Namespace zugeordnet, nämlich `TagID` `default`, d. h. `/content/cq:tags/default`. Der Titel wird in diesen Fällen standardmäßig auf `Standard Tags`gesetzt.
 
@@ -107,7 +107,7 @@ Weitere Informationen finden Sie unter folgenden Themen:
 
 ### Zugriffssteuerung {#access-control}
 
-Tags bestehen als Knoten im Repository unter dem [Stammknoten der Taxonomie.](#taxonomy-root-node) Sie erlauben oder verweigern Autoren und Website-Besuchern die Erstellung von Tags in einem jeweiligen Namespace, indem Sie im Repository entsprechende ACLs festlegen.
+Tags bestehen als Knoten im Repository unter dem [Stammknoten der Taxonomie](#taxonomy-root-node). Sie erlauben oder verweigern Autorinnen und Autoren sowie Besucherinnen und Besuchern von Sites die Erstellung von Tags in einem bestimmten Namespace, indem im Repository entsprechende ACLs festgelegt werden.
 
 Durch das Verweigern von Leseberechtigungen für bestimmte Tags oder Namespaces wird die Möglichkeit gesteuert, Tags auf bestimmte Inhalte anzuwenden.
 

@@ -5,10 +5,10 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie die Seiten Ihrer Website in AEM verwalten, einschließlich
 
 >[!TIP]
 >
->Bevor Sie mit der Verwaltung Ihrer Seiten beginnen, sollten Sie sich damit vertraut machen, [wie Ihre Seiten in AEM organisiert sind](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
+>Bevor Sie mit der Verwaltung Ihrer Seiten beginnen, sollten Sie sich mit dem Thema [wie Ihre Seiten in AEM organisiert sind“ ](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die Systemadmins zu 
 
 ## Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
-Wenn Sie [eine Seite erstellt haben](/help/sites-cloud/authoring/sites-console/creating-pages.md) bzw. in [der **Sites-Konsole** zu einer bereits vorhandenen Seite navigiert sind](/help/sites-cloud/authoring/sites-console/introduction.md), können Sie diese zur Bearbeitung öffnen.
+Nachdem [eine Seite erstellt](/help/sites-cloud/authoring/sites-console/creating-pages.md) oder mit der [Sites-Konsole **zu einer vorhandenen** navigiert ](/help/sites-cloud/authoring/sites-console/introduction.md), können Sie sie zur Bearbeitung öffnen.
 
-1. Öffnen Sie [die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie bearbeiten möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Methoden aus:
 
@@ -53,7 +53,7 @@ Wenn Sie [eine Seite erstellt haben](/help/sites-cloud/authoring/sites-console/
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
-1. Öffnen [Sie die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie kopieren möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Optionen aus:
 
@@ -95,7 +95,7 @@ Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen u
 
 AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite führen, die umbenannt oder verschoben wird. Dies kann seitenweise erfolgen, um volle Flexibilität zu bieten.
 
-1. Öffnen [Sie die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie verschieben möchten.
 1. Wählen Sie Ihre Seite mit einer der folgenden Optionen aus:
 
@@ -181,7 +181,7 @@ Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Auftr
 
 ### Löschen einer Seite {#deleting-a-page}
 
-1. Öffnen Sie [die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie löschen möchten.
 1. Wählen Sie mit dem [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) die gewünschte Seite aus, bevor Sie in der Symbolleiste die Option **Löschen** auswählen:
 
@@ -212,7 +212,7 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite [eine Sei
 
 Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 
-1. Öffnen Sie [die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md). 
+1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zum gewünschten Speicherort.
 1. Um die Optionsliste zu öffnen, wählen Sie **Erstellen** in der Symbolleiste aus.
 1. Wählen Sie **Ordner** aus, um das Dialogfeld zu öffnen. Hier können Sie den **Namen** und den **Titel** eingeben:

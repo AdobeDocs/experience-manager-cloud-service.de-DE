@@ -5,10 +5,10 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -137,7 +137,7 @@ Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
 
 >[!NOTE]
 >
->Falls er noch nicht verfügbar ist, muss der **Layout-Container** explizit [für ein Absatzsystem/eine Seite aktiviert werden.](/help/sites-cloud/administering/responsive-layout.md)
+>Falls er noch nicht verfügbar ist **muss der** Layout-Container[ explizit für ein Absatzsystem/eine Seite aktiviert ](/help/sites-cloud/administering/responsive-layout.md).
 
 1. Der **Layout-Container** ist als Standardkomponente im [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) verfügbar. Von hier können Sie ihn an die gewünschte Position auf der Seite ziehen. Anschließend wird der Platzhalter **Komponenten hierher ziehen** angezeigt.
 1. Anschließend können Sie dem Layout-Container Komponenten hinzufügen. Diese Komponenten enthalten den tatsächlichen Inhalt:
@@ -184,7 +184,7 @@ Der **Layout**-Modus kann auf zwei Arten aktiviert werden.
 * Durch Verwenden des [Modusmenüs in der Symbolleiste](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) und Auswählen des **Layout**-Modus
    * Wählen Sie den **Layout**-Modus so aus, wie Sie den Modus **Bearbeiten** oder **Targeting** auswählen.
    * Der **Layout**-Modus wird zunächst automatisch beibehalten. Sie können den **Layout**-Modus nur beenden, indem Sie über die Modusauswahl einen anderen Modus auswählen.
-* Beim [Bearbeiten einer einzelnen Komponente.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Beim [Bearbeiten einer einzelnen Komponente](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Durch Verwendung der Option **Layout** im Schnellaktionsmenü der Komponente können Sie in den **Layout**-Modus wechseln.
    * Der **Layout**-Modus bleibt während der Bearbeitung der Komponente bestehen und kehrt in den Modus **Bearbeiten** zurück, sobald der Fokus zu einer anderen Komponente wechselt.
 

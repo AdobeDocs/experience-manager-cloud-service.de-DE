@@ -4,10 +4,10 @@ description: Responsives Design ermöglicht die effektive Darstellung derselben 
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ Das [WKND-Tutorial](develop-wknd-tutorial.md) verwendet diese Strategie zur Defi
 
 ### Verwenden von Medienabfragen bei AEM-Seiten {#using-media-queries-with-aem-pages}
 
-[Das WKND-Beispielprojekt](/help/implementing/developing/introduction/develop-wknd-tutorial.md) und der [AEM-Projekt-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) verwenden die [Seitenkernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=de), die die Client-Bibliotheken über die Seitenrichtlinie enthält.
+[Das WKND-Beispielprojekt](/help/implementing/developing/introduction/develop-wknd-tutorial.md) und der [AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)Projektarchetyp verwenden die [Seitenkernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=de), die die Clientlibs über die Seitenrichtlinie enthält.
 
 Wenn Ihre eigene Seitenkomponente nicht auf der Seitenkernkomponente basiert, können Sie auch den Client-Bibliotheksordner in das HTL- oder JSP-Skript einschließen. Dadurch wird die CSS-Datei mit den Medienabfragen generiert und referenziert, die für die Funktion des responsiven Rasters erforderlich sind.
 

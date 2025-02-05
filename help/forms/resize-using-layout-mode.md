@@ -5,10 +5,10 @@ role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -127,7 +127,7 @@ Sie können den Layout-Modus für Formulare mit altem responsivem Layout deaktiv
 Gehen Sie wie folgt vor, um den Layout-Modus zu deaktivieren:
 
 1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die Vorlage, die im Formular im Modus **[!UICONTROL Bearbeiten]** verwendet wird.
-1. Wählen Sie den Formular-Container im linken Fenster aus und wählen Sie dann **[!UICONTROL Richtlinie]**.
+1. Wählen Sie den Formular-Container im linken Fensterbereich aus und klicken Sie auf **[!UICONTROL Richtlinie]**.
 
    ![Deaktivieren des Layout-Modus](assets/policy_disable_layout_mode.png)
 

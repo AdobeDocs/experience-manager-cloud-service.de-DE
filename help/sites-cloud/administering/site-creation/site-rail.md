@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,7 @@ Das Site-Bedienfeld wird verwendet, um Informationen zu Designs und Vorlagen fü
 
 ## Herunterladen von Design-Quellen {#downloading-theme-sources}
 
-Wenn Sie in AEM eine Site erstellen, die auf einer [Site-Vorlage](site-templates.md) basiert, können Sie Ihr [Site-Design](site-themes.md) über das Site-Bedienfeld herunterladen.
+Wenn Sie eine Site in AEM erstellen, die auf einer [Site-Vorlage](site-templates.md) basiert, können Sie Ihr [Site-Design](site-themes.md) über das Site-Bedienfeld herunterladen.
 
 Wenn das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen.
 
@@ -44,7 +44,7 @@ Wählen Sie **Design-Quellen herunterladen** aus, um eine lokale Kopie des Site-
 
 ## Herunterladen von Vorlagenressourcen {#downloading-template-resources}
 
-[Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem [Site-Design Informationen enthalten.](site-themes.md) Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
+[Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem [Site-Design](site-themes.md) Informationen enthalten. Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
 
 Wenn Ihre Site auf einer Site-Vorlage basiert und das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen, einschließlich zusätzlicher Site-Ressourcen.
 
@@ -84,4 +84,4 @@ Wenn das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das St
 
 ![Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Weitere Informationen finden Sie im Dokument [Aktivieren der Frontend-Pipeline.](enable-front-end-pipeline.md)
+Weitere Informationen finden Sie im Dokument [Aktivieren der Frontend-Pipeline](enable-front-end-pipeline.md).

@@ -4,17 +4,17 @@ description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit den
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2497'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
 # Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service {#using-client-side-libraries}
 
-Digitale Erlebnisse beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Client-seitige Bibliotheken von AEM (clientlibs) ermöglichen es Ihnen, diese Client-seitigen Bibliotheken zentral im Repository zu organisieren und zu speichern. In Verbindung mit dem [Frontend-Build-Mechanismus im AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) gestaltet sich die Verwaltung Ihres Fronend-Codes für Ihr AEM Projekt unkompliziert.
+Digitale Erlebnisse beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Client-seitige Bibliotheken von AEM (clientlibs) ermöglichen es Ihnen, diese Client-seitigen Bibliotheken zentral im Repository zu organisieren und zu speichern. In Kombination mit dem [Frontend-Build-Prozess im AEM-](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de)) wird die Verwaltung Ihres Frontend-Codes für Ihr AEM-Projekt sehr einfach.
 
 Vorteile der Verwendung Client-seitiger Bibliotheken in AEM:
 
@@ -27,7 +27,7 @@ Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung vo
 
 >[!TIP]
 >
->Frontend-Entwicklerinnen und -Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
+>Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte erstellen, sollten sich auch mit dem [AEM-Projektarchetyp und seinem automatisierten Frontend-Build-Prozess vertraut ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de).
 
 ## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM erfasst die CSS- und JavaScript-Elemente der Site in einer einzigen Datei an
 
 ## Frontend-Entwicklung für AEM as a Cloud Service {#fed-for-aemaacs}
 
-Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) Die Flexibilität des Archetyps ermöglicht es Ihnen, Ihre bevorzugten modernen Webtools zu nutzen, um diese Ressourcen zu erstellen und zu verwalten.
+Alle JavaScript-, CSS- und anderen Frontend-Assets sollten im [ui.frontend-Modul des AEM-Projektarchetyps) ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) werden. Dank der Flexibilität des Archetyps können Sie Ihre modernen Web-Tools Ihrer Wahl zum Erstellen und Verwalten dieser Ressourcen verwenden.
 
 Der Archetyp kann die Ressourcen dann in einzelne CSS- und JS-Dateien kompilieren und sie automatisch in einen `cq:clientLibraryFolder` im Repository einbetten.
 
@@ -92,7 +92,7 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
 1. Wenn Sie statische Ressourcen verwalten müssen, erstellen Sie einen Unterordner mit dem Namen `resources` unter dem Client-Bibliotheksordner.
    * Wenn Sie statische Ressourcen an einem anderen Ort als im Ordner `resources` speichern, können diese nicht in einer Veröffentlichungsinstanz referenziert werden.
 1. Fügen Sie die Quelldateien zum Bibliotheksordner hinzu.
-   * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de).
+   * Dies erfolgt normalerweise durch den Frontend-Build-Prozess des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de).
    * Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
 1. Wählen Sie den Client-Bibliotheksordner aus und klicken Sie auf **Erstellen > Datei erstellen**.
 1. Geben Sie in das Dateinamenfeld einen der folgenden Dateinamen ein und klicken Sie auf „OK“:
@@ -109,7 +109,7 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
 
 ## Bereitstellen Client-seitiger Bibliotheken {#serving-clientlibs}
 
-Sobald Ihr Client-Bibliotheksordner [wie erforderlich konfiguriert ist](#creating-clientlib-folders), können Ihre Client-seitige Bibliotheken über einen Proxy angefordert werden. Beispiel:
+Sobald Ihr Client-Bibliotheksordner [wie erforderlich konfiguriert](#creating-clientlib-folders) ist, können Ihre Clientlibs über einen Proxy angefordert werden. Beispiel:
 
 * Sie verfügen über eine Client-seitige Bibliothek unter `/apps/myproject/clientlibs/foo`.
 * Sie verfügen über ein statisches Bild unter `/apps/myprojects/clientlibs/foo/resources/icon.png`.

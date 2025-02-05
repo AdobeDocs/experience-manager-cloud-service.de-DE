@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline ein
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um d
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument zum AEM-Referenzdemo-Add-on von Adobe Experience Manager (AEM), [Grundlagen zur Installation des Referenz-Demo-Add-ons](installation.md), haben Sie gelernt, wie der Installationsprozess des Referenzdemo-Add-ons funktioniert. Dabei wurde gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
+Im vorherigen Dokument der Referenz-Demo-Add-on-Journey zu Adobe Experience Manager (AEM), [Grundlegendes zur Installation des Referenz-Demo-Add-ons](installation.md), haben Sie gelernt, wie der Installationsprozess des Referenz-Demo-Add-ons funktioniert. Dabei wurde gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
 
 * Sollten Sie über grundlegende Kenntnisse zu Cloud Manager verfügen.
 * Wissen Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.

@@ -4,7 +4,7 @@ description: Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefini
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Die `component-definition.json` definiert die Komponenten, die den Inhaltsautore
 
 >[!TIP]
 >
->Einen Überblick über den Inhaltsmodellierungsprozess finden Sie im Dokument [Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten.](/help/edge/wysiwyg-authoring/content-modeling.md)
+>Einen Überblick über den Inhaltsmodellierungsprozess finden Sie im Dokument [Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
 
 ## `groups` {#groups}
 
-`groups` definiert die Komponentengruppen, die der Autor im universellen Editor sieht, wenn er auf das Symbol **Hinzufügen** im Eigenschaftenbereich des Editors klickt, um [ Seite eine neue Komponente hinzuzufügen.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) helfen beim Organisieren der Komponenten. Häufige Gruppen sind **Allgemeine Komponenten** und **Erweiterte Komponenten**.
+`groups` definiert die Komponentengruppen, die der Autor im universellen Editor sieht, wenn er auf das Symbol **Hinzufügen** im Eigenschaftenbereich des Editors klickt, um [einer Seite eine neue Komponente hinzuzufügen](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Gruppen helfen beim Organisieren der Komponenten. Häufige Gruppen sind **Allgemeine Komponenten** und **Erweiterte Komponenten**.
 
 * `title` wird die textliche Beschreibung der Gruppe definiert, die in der Editor-Benutzeroberfläche angezeigt wird.
 * `id` identifiziert die Gruppe eindeutig.
@@ -94,7 +94,7 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
 Nachdem die `plugin` definiert wurde, müssen Sie angeben, ob sie seitenbezogen oder fragmentbezogen ist.
 
 * `page` gibt an, dass sich die Komponente auf der aktuellen Seite befindet.
-* `cf` gibt an, dass die Komponente mit Inhalten in einem [Inhaltsfragment“ verbunden ist](/help/assets/content-fragments/content-fragments.md)
+* `cf` gibt an, dass die Komponente mit Inhalten in einem [Inhaltsfragment“ ](/help/assets/content-fragments/content-fragments.md).
 
 ### `page` {#page}
 

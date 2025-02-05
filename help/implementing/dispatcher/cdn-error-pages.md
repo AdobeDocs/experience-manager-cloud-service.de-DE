@@ -4,17 +4,17 @@ description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
 
 # Konfigurieren von CDN-Fehlerseiten {#cdn-error-pages}
 
-Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) den AEM-Ursprung nicht erreichen kann, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die standardmäßige Fehlerseite außer Kraft setzen, indem Sie statische Dateien einer selbstgehosteten Datenspeicherung wie Amazon S3 oder Azure Blob Storage hosten und darauf in einer Konfigurationsdatei verweisen, die mithilfe der Cloud Manager-[Konfigurations-Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager) bereitgestellt wird.
+Im unwahrscheinlichen Fall, dass das [Adobe-verwaltete CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) den AEM-Ursprung nicht erreichen kann, gibt das CDN standardmäßig eine ungebrandete, generische Fehlerseite aus, die angibt, dass der Server nicht erreicht werden kann. Sie können die Standardfehlerseite überschreiben, indem Sie statische Dateien in selbst gehostetem Speicher wie Amazon S3 oder Azure Blob Storage hosten und in einer Konfigurationsdatei darauf verweisen, die mithilfe der Cloud Manager-[Konfigurations-Pipeline) bereitgestellt ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Setup {#setup}
 

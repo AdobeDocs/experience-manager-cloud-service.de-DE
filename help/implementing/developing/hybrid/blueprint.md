@@ -4,10 +4,10 @@ description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vert
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Mod
 * `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt bietet keine Garantie für die Reihenfolge seiner Felder. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
 * `:path`: Inhaltspfad eines Elements (vorhanden bei Elementen, die eine Seite darstellen)
 
-Siehe auch [Erste Schritte mit AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de).
+Siehe auch [ Schritte mit AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de).
 
 ### Framework-spezifisches Modul {#framework-specific-module}
 

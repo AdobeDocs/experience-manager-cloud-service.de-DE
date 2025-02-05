@@ -5,10 +5,10 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie der Front-End-Entwickler Cloud Manager verwendet, um auf Git-R
 
 Wenn Sie ein Front-End-Entwickler sind, der nur für die Anpassung des Sitedesigns verantwortlich ist, benötigen Sie keine Kenntnisse darüber, wie AEM eingerichtet wurde, und können zum Abschnitt [Ziel](#objective) dieses Dokuments wechseln.
 
-Wenn Sie auch in der Rolle eines Cloud Manager- oder AEM-Admins sowie einer Frontend-Entwicklungsperson arbeiten, haben Sie im vorherigen Dokument der Tour zur schnellen AEM-Site-Erstellung, [Gewähren von Zugriff für Frontend-Entwicklungspersonen](grant-access.md), gelernt, wie Sie eine Frontend-Entwicklungsperson integrieren, damit sie Zugriff auf das Git-Repository hat, und Sie sollten jetzt Folgendes wissen:
+Wenn Sie auch in der Rolle eines Cloud Manager- oder AEM-Administrators und eines Frontend-Entwicklers arbeiten, haben Sie im vorherigen Dokument der Journey zur schnellen Site-Erstellung von AEM, [Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md), gelernt, wie Sie den Frontend-Entwickler integrieren, damit er Zugriff auf das Git-Repository hat, und Sie sollten jetzt Folgendes wissen:
 
 * Wie ein Front-End-Entwickler als Benutzer hinzugefügt wird.
 * Wie dem Front-End-Entwickler die erforderlichen Rollen zugewiesen werden.
@@ -114,10 +114,10 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Erfahren Sie ganz allgemein, was Cloud Manager ist.
 * Rufen Sie Ihre Anmeldeinformationen ab, um auf AEM-Git zuzugreifen, damit Sie Ihre Anpassungen übernehmen können.
 
-Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie das Dokument [Anpassen des Sitedesigns](customize-theme.md) lesen. Hier erfahren Sie, wie das Sitedesign erstellt, angepasst und mit Live-AEM-Inhalten getestet werden kann.
+Bauen Sie auf diesen Kenntnissen auf und fahren Sie mit der Journey zur schnellen Site-Erstellung der AEM fort, indem Sie als Nächstes das Dokument [Anpassen des Site-Designs](customize-theme.md) lesen, in dem Sie erfahren, wie das Site-Design erstellt wird, wie es angepasst wird und wie Sie es mit Live-AEM-Inhalten testen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, mit dem nächsten Teil der Journey zur schnellen Site-Erstellung fortzufahren, indem Sie das Dokument [Anpassen des Sitedesigns](customize-theme.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um die Journey fortzusetzen.
+Es wird zwar empfohlen, mit dem nächsten Teil der Journey Quick Site Creation fortzufahren, indem Sie das Dokument [Anpassen des Site-Designs](customize-theme.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Journey fortzufahren.
 
 * [Dokumentation zu Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) – Vollständige Details zu den Funktionen finden Sie in der Dokumentation zu Cloud Manager.

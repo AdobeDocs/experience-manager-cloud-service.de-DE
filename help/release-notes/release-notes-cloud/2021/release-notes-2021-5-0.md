@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience M
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 #### Neue Funktionen in Dynamic Media {#what-is-new-dm}
 
-* DPR-Optimierung (Device Pixel Ratio, Gerätepixelverhältnis) für die intelligente Bildbearbeitung und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) und [Bildoptimierung mit den Bildformaten der nächsten Generation, WebP und AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* DPR-Optimierung (Device Pixel Ratio, Gerätepixelverhältnis) für die intelligente Bildbearbeitung und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) und [Bildoptimierung mit den Bildformaten der nächsten Generation, WebP und AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Unterstützung für AVIF, das Bildformat der nächsten Generation, bei der Bereitstellung von Dynamic Media (fmt-URL-Modifikator) wurde eingeführt.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

@@ -4,10 +4,10 @@ description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhä
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Frontend-Build-Vertrag {#front-end-build-contract}
 
-Ähnlich wie die [Full-Stack-Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) verfügt die Frontend-Pipeline über eine eigene Umgebung. Entwickelnde haben eine gewisse Flexibilität bei Verwendung dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
+Ähnlich wie die [Full-Stack-Build-](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)) verfügt die Frontend-Pipeline über eine eigene Umgebung. Entwickelnde haben eine gewisse Flexibilität bei Verwendung dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
 
 Die Frontend-Pipeline erfordert, dass das Projekt „Frontend-Node.js“ die `build`-Skriptanweisung verwendet, um den Build zu generieren, den sie bereitstellt. Dies liegt daran, dass Cloud Manager den Befehl `npm run build` verwendet, um das bereitstellbare Projekt für den Frontend-Build zu generieren.
 

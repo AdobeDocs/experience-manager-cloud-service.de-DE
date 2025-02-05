@@ -4,10 +4,10 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -142,7 +142,7 @@ So generieren Sie neue Assets mit [!DNL Adobe Firefly]:
 
    ![Integration mit Firefly](assets/firefly-integration.png)
 
-   Die neuen Assets wurden erfolgreich generiert. Darüber hinaus können Sie die Bildbeschreibung ändern, indem Sie den neuen Text-Prompt in das Beschreibungsfeld eingeben. [Erfahren Sie, wie Sie einen guten KI-Prompt schreiben, um außergewöhnliche und relevante Inhalte zu generieren.](https://helpx.adobe.com/de/firefly/using/tips-and-tricks.html) Alternativ können Sie [Bilder mit verschiedenen anderen Funktionen bearbeiten, wie dem Ändern von Stil, Bildabmessungen und mehr.](https://helpx.adobe.com/de/firefly/using/text-to-image.html)
+   Die neuen Assets wurden erfolgreich generiert. Darüber hinaus können Sie die Bildbeschreibung ändern, indem Sie den neuen Text-Prompt in das Beschreibungsfeld eingeben. [Erfahren Sie, wie Sie eine gute KI-Aufforderung schreiben, um außergewöhnliche und relevante Inhalte zu generieren](https://helpx.adobe.com/de/firefly/using/tips-and-tricks.html). Alternativ können Sie [Bild mit verschiedenen anderen Funktionen wie Ändern des Stils, der Bildabmessungen und mehr bearbeiten](https://helpx.adobe.com/de/firefly/using/text-to-image.html).
 
    ![Integration mit Firefly](assets/bugatti-type-57.png)
 

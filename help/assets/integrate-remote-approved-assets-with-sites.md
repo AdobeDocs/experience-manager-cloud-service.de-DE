@@ -2,10 +2,10 @@
 title: Integrieren der Remote-Version von AEM Assets mit AEM Sites
 description: Erfahren Sie, wie Sie AEM Sites mit genehmigtem AEM Assets konfigurieren und verbinden.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,6 @@ Für die Unterstützung von Remote-Assets mit Dynamic Media mit OpenAPI-Funktion
 * Richten Sie die folgenden [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md#add-variables) für AEM as a Cloud Service ein:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
-
      `pXXXX` bezeichnet die Programm-ID <br>
      `eYYYY` bezeichnet die Umgebungs-ID
 
@@ -128,7 +127,7 @@ Führen Sie die folgenden Schritte aus, um Remote-Assets im AEM-Inhaltsfragment 
 
    >[!NOTE]
    >
-   >Wenn Sie über kein AEM-Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [eines erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models).
+   Wenn Sie über kein AEM-Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [eines erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models).
 
 1. Klicken Sie auf das Symbol ![Häkchen](/help/assets/assets/do-not-localize/checkmark-icon.svg) neben der Textkomponente.
 1. Wählen Sie **[!UICONTROL Remote]** aus, um das Asset aus dem Remote-DAM abzurufen. <br>

@@ -4,10 +4,10 @@ description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhal
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
    ![Ordner erstellen](../assets/assets-folder-create.png)
 1. Wählen Sie den erstellten Ordner aus, indem Sie den Mauszeiger über das Häkchen bewegen und darauf tippen. Wählen Sie anschließend **Eigenschaften** in der Symbolleiste (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
-1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
+1. Wählen Sie für **Cloud-** die [zuvor erstellte Konfiguration](create-configuration.md).
    ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
 1. Wählen Sie **Speichern und schließen**.
 1. Wählen Sie **OK** im Bestätigungsfenster aus.

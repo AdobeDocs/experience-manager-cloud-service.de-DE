@@ -4,10 +4,10 @@ description: Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek v
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurier
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Erstellen eines Programms](create-program.md), haben Sie den ersten Konfigurationsschritt ausgeführt, um ein Programm zu Testzwecken zu erstellen, und eine Pipeline verwendet, um den Add-on-Inhalt bereitzustellen. Sie sollten jetzt zu Folgendem in der Lage sein:
+Im vorherigen Dokument der AEM-Referenzdemo-Add-on-Journey, [Erstellen eines Programms](create-program.md), haben Sie den ersten Konfigurationsschritt ausgeführt, um ein Programm zu Testzwecken zu erstellen, und eine Pipeline verwendet, um den Add-on-Inhalt bereitzustellen. Sie sollten jetzt zu Folgendem in der Lage sein:
 
 * Verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
 * Sie sollten nun wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren.
@@ -105,8 +105,8 @@ Nachdem Sie nun diesen Teil der Tour zum Referenzdemo-Add-on von Adobe Experienc
 
 Sie können jetzt die Funktionen von AEM mithilfe von Add-On-Inhalten testen. Sie haben zwei Möglichkeiten, um mit der Tour fortzufahren:
 
-* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie, wie zuvor beschrieben, eine Site basierend auf der **We.Cafe-Site-Vorlage** bereitgestellt haben und fahren Sie mit [Aktivieren von AEM Screens für Ihre Demo-Site](screens.md) fort.
-* Wenn Sie nur Inhalte von Demo-Sites zeigen möchten, fahren Sie mit dem Abschnitt [Verwalten Ihrer Demo-Sites](manage.md) fort. Dort erfahren Sie, welche Tools Ihnen bei der Verwaltung Ihrer Demo-Sites helfen und wie Sie sie entfernen können.
+* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie, wie zuvor beschrieben, eine Site basierend auf der **We.Cafe-Site** bereitgestellt haben und [AEM Screens für Ihre Demo-Site aktivieren](screens.md).
+* Wenn Sie nur Inhalte von Demo-Sites zeigen möchten, fahren Sie mit dem Abschnitt [Verwalten Ihrer Demo-Sites](manage.md) fort, in dem Sie mehr über die Tools erfahren, die Ihnen bei der Verwaltung Ihrer Demo-Sites zur Verfügung stehen und wie Sie sie entfernen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

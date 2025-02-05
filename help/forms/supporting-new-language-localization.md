@@ -4,10 +4,10 @@ description: Bei adaptiven Formularen können Sie Gebietsschemata für weitere S
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für 
 #### 1. Klonen Sie das Repository. {#clone-the-repository}
 
 1. Navigieren Sie über die Befehlszeile an die Stelle, an der Sie das Forms Cloud Service-Repository klonen möchten.
-1. Führen Sie den Befehl aus, den Sie [von Cloud Manager abgerufen haben.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git) Er sieht in etwa so aus: `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Führen Sie den Befehl aus, den Sie [von Cloud Manager abgerufen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git). Es ist ähnlich wie `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Verwenden Sie den Git-Benutzernamen und das Passwort, um das Repository zu klonen.
 1. Öffnen Sie den geklonten Forms Cloud Service-Repository-Ordner im Editor Ihrer Wahl.
 

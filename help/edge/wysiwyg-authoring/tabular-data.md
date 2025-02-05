@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Tabellen zur Verwaltung von Tabellendaten fü
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -34,11 +34,11 @@ In diesem Dokument wird anhand des Beispiels für Umleitungen veranschaulicht, w
 
 >[!TIP]
 >
->Weitere Informationen zur allgemeinen Funktionsweise von Tabellen mit Edge Delivery Services finden Sie im Dokument [Kalkulationstabellen und JSON.](/help/edge/developer/spreadsheets.md)
+>Weitere Informationen dazu, wie Kalkulationstabellen im Allgemeinen mit Edge Delivery Services funktionieren, finden Sie im Dokument [Kalkulationstabellen und JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->Kalkulationstabellen sollten nur zur Verwaltung von Tabellendaten verwendet werden. [Sehen Sie sich die Funktionen von AEM Headless](/help/headless/introduction.md) zum Speichern strukturierter Daten an.
+>Kalkulationstabellen sollten nur zur Verwaltung von Tabellendaten verwendet werden. Zum Speichern strukturierter Daten ([ Sie sich die Headless-Funktionen von AEM ](/help/headless/introduction.md).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -150,7 +150,7 @@ Damit AEM die Daten in Ihrer Tabelle veröffentlichen kann, müssen Sie zusätzl
 
    >[!NOTE]
    >
-   >Dieser Eintrag in `paths.json` basiert auf dem Beispiel der Erstellung von Umleitungen mithilfe tabellarischer Daten. Aktualisieren Sie den Pfad entsprechend dem [Typ der Tabelle, die Sie erstellen](#other).
+   >Dieser Eintrag in `paths.json` basiert auf dem Beispiel der Erstellung von Umleitungen mithilfe tabellarischer Daten. Stellen Sie sicher, dass Sie den Pfad entsprechend dem [Typ der zu erstellenden Tabelle](#other) aktualisieren.
 
 1. Klicken Sie auf **Änderungen bestätigen…**, um die Änderungen an `main` zu speichern.
 
@@ -174,7 +174,7 @@ Die Umleitungstabelle ist jetzt veröffentlicht und öffentlich zugänglich.
 
 >[!TIP]
 >
->Weitere Informationen zu Pfadzuordnungen finden Sie im Dokument [Pfadzuordnung für Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Weitere Informationen zu Pfadzuordnungen finden Sie im Dokument [Pfadzuordnung für Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Andere Tabellenarten {#other}
 
@@ -205,7 +205,7 @@ Darüber hinaus können Sie [Ihre eigene Kalkulationstabelle erstellen](#own-spr
 
 ## Erstellen einer eigenen Tabelle {#own-spreadsheet}
 
-1. Führen Sie dieselben Schritte im Abschnitt [Erstellen einer Tabelle](#spreadsheet) aus.
+1. Führen Sie dieselben Schritte im Abschnitt [Tabelle erstellen](#spreadsheet) aus.
 
 1. Wählen Sie bei der Auswahl der Vorlage **Tabelle** aus.
 

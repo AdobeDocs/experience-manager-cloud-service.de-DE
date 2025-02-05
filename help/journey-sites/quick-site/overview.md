@@ -5,10 +5,10 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Indem es Entwicklerwissen für die Site-Erstellung unnötig macht, keine Anforde
 
 ## Videoüberblick {#video-overview}
 
-Einen kurzen Überblick über diese Funktion in Aktion [sehen Sie in dieser 5-minütigen Einführung](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
+Einen kurzen Überblick über diese Funktion in Aktion ([ Sie sich diese fünfminütige Einführung ansehen](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
 
 Diese Dokumentations-Tour führt Sie schrittweise und detailliert durch alle Funktionen des Videos, sodass Sie den Workflow verstehen und den Prozess in Ihrer eigenen Umgebung reproduzieren können.
 
@@ -70,7 +70,7 @@ Jetzt sind Sie bereit, mit Ihrer Tour zu AEM Quick Site Creation zu beginnen.
 
 * Wenn Sie AEM- oder Cloud Manager-Admin sind oder sowohl Frontend-Entwickler- als auch Admin-Rollen verwenden oder einfach den durchgängigen Prozess in AEM verstehen möchten, beginnen Sie am Anfang der Tour mit [Grundlegendes zu Cloud Manager](cloud-manager.md), wie unten beschrieben.
 * Wenn Sie nur für die Frontend-Entwicklung verantwortlich sind und mit den Admins von AEM und Cloud Manager interagieren, können Sie direkt zu [Git-Repository-Zugriffsinformationen abrufen](retrieve-access.md) springen, um Zugriff auf das AEM-Git-Repository zu erhalten und mit der Anpassung zu beginnen.
-* Wenn Sie bereits wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, und direkt mit der Konfiguration beginnen möchten, können Sie [direkt zum Erstellen einer neuen Site aus einer Vorlage springen](create-site.md).
+* Wenn Sie bereits wissen, dass AEM Sites und Cloud Manager zusammenarbeiten, und direkt mit der Konfiguration beginnen möchten, können Sie [direkt zum Erstellen einer Site aus einer Vorlage springen](create-site.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

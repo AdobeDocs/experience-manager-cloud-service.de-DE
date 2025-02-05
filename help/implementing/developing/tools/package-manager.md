@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3772'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -197,7 +197,7 @@ Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als reg
 | include | „include“ umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die dem regulären Ausdruck entsprechen. „include“ schließt andere Dateien oder Ordner unter dem angegebenen Stammpfad **nicht** mit ein. |
 | exclude | „exclude“ schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
 
-Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
+Paketfilter werden meistens definiert, wenn Sie das Paket [ erstellen](#creating-a-new-package). Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ Es gibt viele Aktionen, die mit einem Paket durchgeführt werden können.
 
 ### Erstellen eines Pakets {#creating-a-new-package}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Klicken Sie auf **Paket erstellen**.
 
@@ -266,7 +266,7 @@ Es gibt viele Aktionen, die mit einem Paket durchgeführt werden können.
 
    ![Neues Paket](assets/new-package.png)
 
-1. Klicken Sie auf **Bearbeiten**, um den [Paketinhalt zu definieren.](#package-contents) Klicken Sie auf **Speichern**, nachdem Sie die Bearbeitung der Einstellungen abgeschlossen haben.
+1. Klicken Sie **Bearbeiten**, um den [Paketinhalt](#package-contents) zu definieren. Klicken Sie **Speichern** nachdem Sie die Bearbeitung der Einstellungen abgeschlossen haben.
 
 1. Sie können nun das Paket [aufbauen](#building-a-package).
 
@@ -274,13 +274,13 @@ Es ist nicht zwingend erforderlich, das Paket sofort nach seiner Erstellung aufz
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Pakete zu erstellen](#package-size).
 
 ### Aufbauen eines Pakets {#building-a-package}
 
 Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) aufgebaut, aber Sie können zu einem späteren Zeitpunkt zurückkehren, um das Paket entweder aufzubauen oder neu aufzubauen. Dies kann nützlich sein, wenn sich der Inhalt im Repository geändert hat oder sich die Paketfilter geändert haben.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -290,13 +290,13 @@ Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) a
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Pakete zu erstellen](#package-size).
 
 ### Bearbeiten eines Pakets {#edit-package}
 
 Nachdem ein Paket in AEM hochgeladen wurde, können Sie seine Einstellungen ändern.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -310,7 +310,7 @@ Möglicherweise müssen Sie [das Paket neu aufbauen](#building-a-package), um se
 
 Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Inhalt des Pakets geändert wird.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -324,7 +324,7 @@ Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken
 
 Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeigt wird, kann Package Manager andere Versionen eines ausgewählten Pakets finden.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -334,7 +334,7 @@ Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeig
 
 Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -348,7 +348,7 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 ### Herunterladen von Paketen in das Dateisystem {#downloading-packages-to-your-file-system}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -358,11 +358,11 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Pakete zu erstellen](#package-size).
 
 ### Hochladen von Paketen vom Dateisystem {#uploading-packages-from-your-file-system}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Klicken Sie auf den Gruppenordner, in den Sie das Paket hochladen wollen.
 
@@ -381,7 +381,7 @@ Der Paketinhalt ist jetzt in AEM vorhanden. Um den Inhalt jedoch verfügbar zu m
 
 >[!TIP]
 >
->Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe, [keine großen Pakete zu erstellen.](#package-size)
+>Um Zeitüberschreitungen zu vermeiden, empfiehlt Adobe [keine großen Pakete zu erstellen](#package-size).
 
 ### Validieren von Paketen {#validating-packages}
 
@@ -471,14 +471,14 @@ Anhand der von der Validierung bereitgestellten Informationen können die betrof
 
 Die Validierung von Paketen kann auf zwei verschiedene Arten erfolgen:
 
-* [Über die Package Manager-Benutzeroberfläche](#via-package-manager)
-* [Über HTTP-POST-Anfragen, wie z. B. mit cURL](#via-post-request)
+* [Über die Package Manager-Benutzeroberfläche](#via-package-manager).
+* [Über HTTP-POST-Anfragen wie mit cURL](#via-post-request).
 
 Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren eines Pakets durch.
 
 ##### Paketvalidierung über Package Manager {#via-package-manager}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -516,7 +516,7 @@ Bei der Validierung über eine POST-Anfrage wird die Antwort als JSON-Objekt zur
 
 Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen, Filter eines Pakets auf Ihren vorhandenen Repository-Inhalt anzuwenden, um anzuzeigen, welcher Inhalt des Repositorys von der Filterdefinition des Pakets abgedeckt wird.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -534,7 +534,7 @@ Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt
 
 Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, falls Sie das Paket deinstallieren.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie in der Paketliste die Paketdetails des Pakets, das Sie installieren möchten, indem Sie auf den Paketnamen klicken.
 
@@ -556,7 +556,7 @@ Sobald die Installation abgeschlossen und erfolgreich war, wird die Paketliste a
 
 ### Neuinstallation von Paketen {#reinstalling-packages}
 
-Bei der Neuinstallation von Paketen werden für ein bereits installiertes Paket die gleichen Schritte durchgeführt, die auch bei der [Erstinstallation des Pakets](#installing-packages) durchgeführt werden.
+Bei der Neuinstallation von Paketen werden für ein bereits installiertes Paket die gleichen Schritte ausgeführt, die auch bei der [Erstinstallation des Pakets) ](#installing-packages) werden.
 
 ### Dateisystembasiertes Hochladen und Installieren {#file-system-based-upload-and-installation}
 
@@ -576,7 +576,7 @@ Wenn die Instanz nicht ausgeführt wird, werden Pakete, die sich im Ordner `inst
 
 Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Schnappschuss zurückgesetzt, der von Package Manager vor der Installation automatisch erstellt wurde.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie deinstallieren möchten, indem Sie in der Paketliste auf den Paketnamen klicken.
 
@@ -590,7 +590,7 @@ Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Sc
 
 Beim Löschen eines Pakets werden nur dessen Details aus Package Manager gelöscht. Falls dieses Paket bereits installiert wurde, werden die installierten Inhalte nicht gelöscht.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie aus der Paketliste löschen möchten, indem Sie auf den Paketnamen klicken.
 
@@ -602,7 +602,7 @@ Beim Löschen eines Pakets werden nur dessen Details aus Package Manager gelösc
 
 Replizieren Sie den Inhalt eines Pakets, um es auf der Veröffentlichungsinstanz zu installieren.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Zugriff auf Package Manager](#accessing).
 
 1. Öffnen Sie in der Paketliste die Paketdetails des Pakets, das Sie replizieren möchten, indem Sie auf den Paketnamen klicken.
 
@@ -616,4 +616,4 @@ AEM-Pakete können verwendet werden, um Inhalte über AEMaaCS-Umgebungen hinweg 
 
 [Software-Verteilung](https://downloads.experiencecloud.adobe.com) stellt AEM-Pakete für die Verwendung im lokalen AEM SDK zur Entwicklung bereit. AEM-Pakete, die über Software-Verteilung bereitgestellt werden, dürfen nicht in Cloud-Umgebungen von AEMaaCS installiert werden, es sei denn, dies wird ausdrücklich vom Adobe-Support genehmigt.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+Weitere Informationen finden Sie unter [Software Distribution-Dokumentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).

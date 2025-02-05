@@ -4,33 +4,33 @@ description: Dies sind die Versionshinweise für die Version 2025.01.16 des univ
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 14bc45917f56ecf358278848e7e830afb1fedccd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 19%
+ht-degree: 77%
 
 ---
 
 
 # Universeller Editor – Versionshinweise für 2025.01.16 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 16. Januar 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 16. Januar 2025 des universellen Editors.
 
 >[!TIP]
 >
->Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
+>Die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service finden Sie auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Neue Funktionen {#what-is-new}
 
-* **Einstellung der CORS-Bibliothek &lt; 3.0.0** - Um für die zukünftige Kompatibilität zu sorgen und die Sicherheit zu verbessern, unterstützt der universelle Editor jetzt ausschließlich Version 3.0.0 oder höher des
-  Bibliothek `@Adobe Express/universal-editor-cors`.
-   * Die Bibliothek wird jetzt ausschließlich über [`universal-editor-service.adobe.io/cors.js` bereitgestellt.](http://universal-editor-service.adobe.io/cors.js)
-   * Benutzer werden beim Öffnen einer Seite, die ältere Versionen der CORS-Bibliothek verwendet, über das Verwerfen informiert und aufgefordert, sie zu aktualisieren.
-* **Erweiterungspunkt für Landingpage** - [Ein neuer Erweiterungspunkt](/help/implementing/universal-editor/customizing.md#extending) wurde eingeführt, damit Erweiterungen in der Seitenleiste der Landingpage des universellen Editors angezeigt werden.
-   * Jetzt können Entwickler angeben, ob Erweiterungen für den Editor, die Landingpage oder beides gelten, was eine bessere Anpassung und Benutzerfreundlichkeit bietet.
+* **Einstellung der CORS-Bibliothek &lt; 3.0.0**: Um die zukünftige Kompatibilität sicherzustellen und die Sicherheit zu verbessern, unterstützt der universelle Editor nun ausschließlich die Version 3.0.0 oder höher der
+  `@Adobe Express/universal-editor-cors`-Bibliothek.
+   * Die Bibliothek wird jetzt ausschließlich über [`universal-editor-service.adobe.io/cors.js`](http://universal-editor-service.adobe.io/cors.js) bereitgestellt.
+   * Benutzende werden beim Öffnen einer Seite, die ältere Versionen der CORS-Bibliothek verwendet, über die Einstellung dieser Version informiert und aufgefordert, sie zu aktualisieren.
+* **Erweiterungspunkt für Landingpage**: [Ein neuer Erweiterungspunkt](/help/implementing/universal-editor/customizing.md#extending) wurde eingeführt, damit Erweiterungen in der Seitenleiste der Landingpage des universellen Editors angezeigt werden.
+   * Nun können Entwickelnde angeben, ob Erweiterungen für den Editor, die Landingpage oder beides gelten. Dies sorgt für bessere Anpassungsmöglichkeiten und eine größere Benutzerfreundlichkeit.
 
 ## Andere Verbesserungen {#other-improvements}
 
-* **Ungültige URLs in „Zuletzt ausgewertet“ auf der Landingpage wurden behoben** Es wurden Probleme behoben, bei denen die in der Liste „Zuletzt ausgewertet“ auf der Landingpage des universellen Editors angezeigten URLs beschädigt waren.
-* **Design-Synchronisation in Unified Shell** - Der universelle Editor synchronisiert das Design jetzt dynamisch mit den Unified Shell-Einstellungen des Systems und passt sich automatisch zwischen dem hellen und dem dunklen Modus an.
-   * Dadurch wird ein konsistentes visuelles Erscheinungsbild über Mikro-Frontends hinweg sichergestellt, einschließlich Fragment- und Asset-Selektoren.
+* **Ungültige URLs in „Zuletzt ausgewertet“ auf der Landingpage wurden behoben** - Es wurden Probleme behoben, bei denen die in der Liste „Zuletzt ausgewertet“ auf der Landingpage des universellen Editors angezeigten URLs beschädigt waren.
+* **Design-Synchronisation in Unified Shell**: Der universelle Editor synchronisiert das Design nun dynamisch mit den Unified Shell-Einstellungen des Systems und führt eine automatische Anpassung zwischen hellem und dunklem Modus durch.
+   * Dadurch wird ein konsistentes visuelles Erscheinungsbild über Mikro-Frontends hinweg sichergestellt, einschließlich Fragment- und Asset-Auswahl.

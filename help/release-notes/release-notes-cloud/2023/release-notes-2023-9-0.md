@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2023.9.0 von [!DNL Adobe Experience 
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 84%
@@ -118,7 +118,7 @@ Sie können jetzt einem bestimmten Ordner in Ihrer -Bereitstellung Metadatenform
 
 ### Neues CDN-Caching-Verhalten für kampagnenbezogene URL-Parameter {#cache-url-params}
 
-In neuen Umgebungen entfernt das CDN standardmäßig Marketing-bezogene Abfrageparameter, um die Leistung der Marketing-Kampagne und die Cache-Trefferraten zu erhöhen. Bestehende Umgebungen sind davon nicht betroffen. [Weitere Informationen](/help/implementing/dispatcher/caching.md#marketing-parameters)
+In neuen Umgebungen entfernt das CDN standardmäßig Marketing-bezogene Abfrageparameter, um die Leistung der Marketing-Kampagne und die Cache-Trefferraten zu erhöhen. Bestehende Umgebungen sind davon nicht betroffen. [Weitere Informationen](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
 ### Early-Adopter-Programm für Traffic-Filterregeln (einschließlich WAF-Regeln) {#waf-early-adopter}
 

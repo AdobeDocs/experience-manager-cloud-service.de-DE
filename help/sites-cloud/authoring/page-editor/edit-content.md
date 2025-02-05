@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn si
 
   ![Platzhalter beim Hinzufügen einer neuen Komponente zu einer Seite](assets/edit-content-component-placeholder.png)
 
-* Wenn Sie [eine vorhandene Komponente verschieben](#movging-components), wird sie als blaues Quadrat angezeigt.
+* Beim [Verschieben einer vorhandenen Komponente](#movging-components) wird sie als blaues Quadrat angezeigt.
 
   ![Platzhalter beim Verschieben einer vorhandenen Komponente auf einer Seite](assets/edit-content-move-placeholder.png)
 
@@ -54,7 +54,7 @@ In beiden Fällen wird das ausgewählte Ziel blau umrandet unter der Komponente 
 
 Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) hinzufügen. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird.
 
-1. Stellen Sie sicher, dass sich der Seiteneditor im [**Bearbeitungsmodus** ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)befindet.
+1. Stellen Sie sicher, dass sich der Seiteneditor im Modus [**Bearbeiten** befindet](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 1. Ziehen Sie die benötigte Komponente an die [passende Position](#component-placeholder) und lassen Sie los.
 1. [Bearbeiten](#edit-content) Sie die neu platzierte Komponente.
@@ -67,7 +67,7 @@ Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud
 
 Sie können eine neue Komponente über den Platzhalter **Komponenten hierher ziehen** des Absatzsystems hinzufügen. 
 
-1. Stellen Sie sicher, dass sich der Seiteneditor im [**Bearbeitungsmodus** ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)befindet.
+1. Stellen Sie sicher, dass sich der Seiteneditor im Modus [**Bearbeiten** befindet](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. Es gibt zwei Möglichkeiten, eine neue Komponente aus dem Absatzsystem auszuwählen und hinzuzufügen:
 
    * Wählen Sie die Option **Komponente einfügen** (+) aus der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierherziehen**.
@@ -87,13 +87,13 @@ Sie können eine neue Komponente über den Platzhalter **Komponenten hierher zie
 
 ## Hinzufügen eines Assets {#adding-asset}
 
-Sie können der Seite auch eine neue Komponente hinzufügen, indem Sie ein Asset aus dem [Asset-Browser ziehen. ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) Dadurch wird automatisch eine Komponente des entsprechenden Typs erstellt, die das Asset enthält.
+Sie können der Seite auch eine neue Komponente hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) ziehen. Dadurch wird automatisch eine Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
 Dieses Verhalten kann für Ihre Installation konfiguriert werden. Weitere Informationen finden Sie im Dokument [Komponenten-Referenzhandbuch](/help/implementing/developing/components/reference.md#component-placeholders).
 
 So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. Öffnen Sie den [Asset-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 1. Ziehen Sie die benötigte Komponente an die passende Position. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente sich befindet und ein Ziel zeigt an, wo sie eingefügt wird.
 1. Lassen Sie das Asset auf dem Ziel los. Eine für den Asset-Typ geeignete Komponente wird am erforderlichen Speicherort erstellt und enthält das ausgewählte Asset.
@@ -133,7 +133,7 @@ Die in der Komponenten-Symbolleiste verfügbaren Aktionen sind für die ausgewä
 
   ![Schaltfläche „Löschen“](assets/edit-content-delete.png)
 
-* **Komponente einfügen** öffnet das Dialogfeld für das [Hinzufügen einer neuen Komponente](#adding-a-component-from-the-paragraph-system).
+* **Komponente einfügen** öffnet das Dialogfeld [Neue Komponente hinzufügen](#adding-a-component-from-the-paragraph-system).
 
   ![Schaltfläche „Einfügen“](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
    ![Schaltfläche „Layout“ der Komponenten-Symbolleiste](assets/edit-content-layout.png)
 
-1. Sobald die Layout-Aktion ausgewählt ist, können Sie das Layout der Komponente so wie im [Layout-Modus](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode) ändern.
+1. Sobald die Layout-Aktion ausgewählt ist, können Sie das Layout der Komponente wie im [Layout-Modus) ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
    * Die Größenänderungsgriffe für die Komponente werden angezeigt.
    * Oben im Bildschirm wird die Emulator-Symbolleiste angezeigt.

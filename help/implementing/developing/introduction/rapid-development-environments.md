@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Develo
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4990'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ Für Produktionsprogramme (ohne Sandbox) können zusätzliche RDEs lizenziert we
 
 Führen Sie die folgenden Schritte aus, um Cloud Manager zum Erstellen einer RDE für Ihr Programm zu verwenden:
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie auf das Programm, dem Sie eine RDE hinzufügen möchten, um deren Details anzuzeigen.
 
@@ -548,11 +548,11 @@ Durch Zurücksetzen der RDE werden der gesamte benutzerdefinierte Code, Konfigur
 
 Durch Zurücksetzen wird die RDE auf die neueste AEM-Version festgelegt.
 
-Das Zurücksetzen kann über [Cloud Manager](#reset-the-rde-cloud-manager) oder über die [Befehlszeile](#reset-the-rde-command-line) erfolgen. Das Zurücksetzen dauert einige Minuten, und der gesamte vorhandene Inhalt sowie der gesamte Code werden aus der RDE gelöscht.
+Die Rücksetzung kann über [Cloud Manager](#reset-the-rde-cloud-manager) oder über die [Befehlszeile](#reset-the-rde-command-line) erfolgen. Dieser Vorgang dauert einige Minuten. Der gesamte vorhandene Inhalt samt Code wird dabei gelöscht.
 
 >[HINWEIS!]
 >
->Ihnen muss die Cloud Manager-Entwicklerrolle zugewiesen sein, um die Funktion zum Zurücksetzen verwenden zu können. Andernfalls führt eine Aktion zum Zurücksetzen zu einem Fehler.
+>Ihnen muss die Cloud Manager-Entwicklerrolle zugewiesen sein, um die Funktion zum Zurücksetzen verwenden zu können. Andernfalls führt eine Rücksetzungsaktion zu einem Fehler.
 
 ### Zurücksetzen der RDE über die Befehlszeile {#reset-the-rde-command-line}
 
@@ -560,7 +560,7 @@ Sie können die RDE zurücksetzen und sie auf einen Standardstatus zurücksetzen
 
 `aio aem:rde:reset`
 
-Dieser Vorgang dauert in der Regel einige Minuten und meldet ```Environment reset.``` bei Erfolg oder ```Failed to reset the environment.```. Eine strukturierte Ausgabe finden Sie weiter unten im Kapitel über ```--json``` Ausgabe.
+Dieser Vorgang dauert in der Regel einige Minuten und meldet ```Environment reset.``` im Erfolgsfall bzw. ```Failed to reset the environment.```, wenn Fehler aufgetreten sind. Eine strukturierte Ausgabe finden Sie weiter unten im Kapitel über ```--json```-Ausgaben.
 
 Verwenden Sie den [Statusbefehl](#checking-rde-status), um zu überprüfen, ob die Umgebung wieder bereit ist.
 
@@ -568,7 +568,7 @@ Verwenden Sie den [Statusbefehl](#checking-rde-status), um zu überprüfen, ob d
 
 Sie können Cloud Manager verwenden, um Ihre RDE zurückzusetzen, indem Sie die folgenden Schritte ausführen:
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Klicken Sie auf das Programm, für das Sie die RDE zurücksetzen möchten.
 
@@ -954,7 +954,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
 }
 ```
 
-#### Warten auf Abschluss, Zurücksetzen fehlgeschlagen {#wait-failed}
+#### Auf Abschluss warten, Zurücksetzen fehlgeschlagen {#wait-failed}
 
 ```$ aio aem rde reset --json```
 
@@ -1062,7 +1062,7 @@ Informationen zu RDE in AEM as a Cloud Service finden Sie im Video-Tutorial, das
 
 ### Abrufen der neuesten AEM-Version für eine vorhandene RDE {#get-latest-aem-version}
 
-Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Beim [Zurücksetzen einer RDE](#reset-rde), das mit Cloud Manager oder dem Befehl `aio aem:rde:reset` durchgeführt werden kann, wird die RDE überprüft und auf die neueste AEM-Version festgelegt.
+Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Ein [RDE-Zurücksetzen](#reset-rde) das mit Cloud Manager oder dem `aio aem:rde:reset`-Befehl durchgeführt werden kann, durchläuft die RDE und setzt sie auf die neueste AEM-Version.
 
 ## Fehlerbehebung für aio RDE-Plug-ins {#aio-rde-plugin-troubleshooting}
 

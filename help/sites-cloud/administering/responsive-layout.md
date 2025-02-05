@@ -5,16 +5,16 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Konfigurieren von Layout-Container und Layout-Modus {#configuring-layout-container-and-layout-mode}
 
-Ein [responsives Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) ist eine Methode, um ein [responsives Webdesign zu realisieren.  ](https://de.wikipedia.org/wiki/Responsive_Webdesign) Dies ermöglicht es der Inhaltsautorinnen und Inhaltsautoren, Web-Seiten zu erstellen, deren Layout und Abmessungen von den Geräten abhängen, die ihre Benutzenden verwenden.
+Ein [responsives Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) ist eine Methode, um ein [responsives Webdesign](https://de.wikipedia.org/wiki/Responsive_Webdesign) zu realisieren. Dadurch kann der Inhaltsautor Web-Seiten erstellen, deren Layout und Abmessungen von den Geräten abhängen, die ihre Benutzer verwenden.
 
 Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von Mechanismen ermöglicht:
 
@@ -228,4 +228,4 @@ Damit Autorinnen und Autoren weitere responsive Raster zu den Inhaltsseiten hinz
 
 ### Konfigurieren des Rasters des Layout-Containers {#configure-the-grid-of-the-layout-container}
 
-Sie können die Anzahl der für jede spezifische Instanz des Layout-Containers [verfügbaren Spalten konfigurieren, indem Sie Ihre Seitenvorlagen bearbeiten.](/help/sites-cloud/authoring/page-editor/templates.md)
+Sie können die Anzahl der verfügbaren Spalten für jede spezifische Instanz des Layout-Containers konfigurieren [indem Sie Ihre Seitenvorlagen bearbeiten](/help/sites-cloud/authoring/page-editor/templates.md).

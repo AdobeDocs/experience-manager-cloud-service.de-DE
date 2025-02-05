@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 100%
 
 Das Framework für die Übersetzungsintegration integriert Übersetzungsdienstleistungen von Drittanbietern, um die Übersetzung von AEM-Inhalten zu orchestrieren. Dies umfasst drei grundlegende Schritte.
 
-1. [Verbinden Sie sich mit Ihrem Übersetzungsdienstleister.](#connecting-to-a-translation-service-provider)
-1. [Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration.](#creating-a-translation-integration-configuration)
-1. [Verknüpfen Sie die Cloud-Konfigurationen mit Ihren Seiten.](#configuring-pages-for-translation)
+1. [Verbinden Sie sich mit Ihrem Übersetzungsdienstleister](#connecting-to-a-translation-service-provider).
+1. [Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration](#creating-a-translation-integration-configuration).
+1. [Verknüpfen Sie die Cloud-Konfigurationen mit Ihren Seiten](#configuring-pages-for-translation).
 
 Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhalten Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](overview.md).
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine AEM- oder Übersetzungserfahrung haben.
 
 ## Herstellen einer Verbindung zu einem Übersetzungsdienstleister {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ Nachdem Sie ein Framework für die Übersetzungsintegration erstellt haben, kön
 
 Eine einzelne Konfiguration des Frameworks steuert, wie Seiteninhalte und Assets übersetzt werden. So erstellen Sie eine Übersetzungskonfiguration:
 
-1. Wählen Sie im [globalen Navigationsmenü](/help/sites-cloud/authoring/basic-handling.md#global-navigation) **Tools > Cloud-Services > Übersetzungs-Cloud-Services** aus.
+1. Wählen Sie im [globalen Navigationsmenü](/help/sites-cloud/authoring/basic-handling.md#global-navigation) die Option **Tools > Cloud Service &amp; Translation Cloud Service** aus.
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf eine bestimmte Site oder kann global sein.
 1. Geben Sie die folgenden Informationen in die Felder ein und wählen Sie dann **Erstellen** aus.:
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus.

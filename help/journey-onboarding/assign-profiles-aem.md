@@ -4,10 +4,10 @@ description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie I
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 >title="Zuweisen von AEM-Produktprofilen"
 >abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Kontaktieren Sie diesbezüglich Ihre Admins."
 
-In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
+In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
 
 ## Ziel {#objective}
 
-Nachdem Sie das vorherige Dokument [Umgebungen erstellen](create-environments.md) in dieser Onboarding-Tour gelesen und Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
+Nachdem Sie das vorherige Dokument „Umgebungen erstellen“ auf dieser Onboarding-Journey gelesen [ und Ihre Cloud](create-environments.md)Ressourcen konfiguriert haben, gewähren Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf die AEM selbst. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
 
 Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
 
@@ -64,7 +64,7 @@ Wenn Sie diesen Abschnitt lesen, sollten Sie über die folgenden Informationen z
 
 Führen Sie diese Schritte aus, um die AEM-Produktprofile aus Admin Console anzuzeigen.
 
-1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com` an.](https://adminconsole.adobe.com)
+1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) an.
 
 1. Wählen Sie auf der Seite **Übersicht** die Option **Adobe Experience Manager as a Cloud Service** auf der Karte **Produkte und Services** aus.
 

@@ -5,10 +5,10 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -18,9 +18,9 @@ Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf 
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zu AEM Quick Site Creation, [Einrichten der Pipeline](pipeline-setup.md), haben Sie gelernt, wie Sie eine Frontend-Pipeline erstellen, um die Anpassung des Designs Ihrer Site zu verwalten, und sollten jetzt:
+Im vorherigen Dokument der Journey zur schnellen Site-Erstellung in der AEM, [Einrichten der Pipeline](pipeline-setup.md), haben Sie gelernt, wie Sie eine Frontend-Pipeline erstellen, um die Anpassung des Designs Ihrer Site zu verwalten, und sollten jetzt:
 
-* Wissen, was eine Front-End-Pipeline ist.
+* Erfahren Sie, was eine Frontend-Pipeline ist.
 * Erfahren Sie, wie Sie eine Frontend-Pipeline in Cloud Manager einrichten.
 
 Sie müssen Ihrem Frontend-Entwickler jetzt über den Onboarding-Prozess Zugriff auf Cloud Manager gewähren, damit der Frontend-Entwickler auf das AEM-Git-Repository und die von Ihnen erstellte Pipeline zugreifen kann.
@@ -101,10 +101,10 @@ Nachdem Sie nun diesen Teil der Tour zu AEM Quick Site Creation abgeschlossen ha
 * Wie ein Front-End-Entwickler als Benutzer hinzugefügt wird.
 * Wie dem Front-End-Entwickler die erforderlichen Rollen zugewiesen werden.
 
-Nutzen Sie dieses Wissen und fahren Sie mit der Tour zu AEM Quick Site Creation fort, indem Sie das Dokument [Abrufen von Git-Repository-Zugriffsinformationen](retrieve-access.md) lesen. Hier wird die Perspektive ausschließlich auf den Frontend-Entwickler gelegt und erklärt, wie die Frontend-Entwickler Cloud Manager verwenden, um auf Git-Repository-Informationen zuzugreifen.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Journey zur schnellen Site-Erstellung von AEM fort, indem Sie als Nächstes das Dokument [Abrufen von Git-Repository-Zugriffsinformationen](retrieve-access.md) lesen, in dem die Perspektive ausschließlich auf den Frontend-Entwickler gelegt wird und erklärt wird, wie die Frontend-Entwickler Cloud Manager verwenden, um auf Git-Repository-Informationen zuzugreifen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Tour zu Quick Site Creation fortzufahren, indem Sie das Dokument [Abrufen von Git-Repository-Zugriffsinformationen](retrieve-access.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Aber sie sind nicht erforderlich, um mit der Tour fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Journey zu Quick Site Creation fortzufahren, indem Sie das Dokument [Abrufen von Frontend-Entwickleranmeldeinformationen](retrieve-access.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Journey fortzufahren.
 
 * [Onboarding-Tour](/help/journey-onboarding/overview.md) – Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.

@@ -5,10 +5,10 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie das Site-Design erstellt wird, wie Sie es anpassen und wie Sie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Tour zu AEM Quick Site Creation, [Abrufen von Git-Repository-Zugriffsinformationen](retrieve-access.md), haben Sie gelernt, wie Frontend-Entwickler Cloud Manager benutzen, um auf Git-Repository-Informationen zuzugreifen. Sie sollten jetzt zu Folgendem in der Lage sein:
+Im vorherigen Dokument der Journey „Schnelle Site-Erstellung für AEM&quot;, [Abrufen von Git-Repository-Zugriffsinformationen](retrieve-access.md), haben Sie gelernt, wie Frontend-Entwicklerinnen und -Entwickler Cloud Manager verwenden, um auf Git-Repository-Informationen zuzugreifen. Sie sollten jetzt:
 
 * Erfahren Sie ganz allgemein, was Cloud Manager ist.
 * Rufen Sie Ihre Anmeldeinformationen ab, um auf AEM-Git zuzugreifen, damit Sie Ihre Anpassungen übernehmen können.
@@ -111,7 +111,7 @@ Sie können das Design weiterhin an die Anforderungen anpassen, die Sie vom AEM-
 Sobald Ihre Anpassungen abgeschlossen sind, können Sie diese im AEM-Git-Repository bestätigen. Zuerst müssen Sie das Repository auf Ihren lokalen Computer klonen.
 
 1. Navigieren Sie über die Befehlszeile an die Stelle, an der Sie das Repository klonen möchten.
-1. Führen Sie den Befehl aus, den Sie [zuvor aus Cloud Manager abgerufen haben.](retrieve-access.md) Dieser sollte ähnlich wie `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` sein. Verwenden Sie den Git-Benutzernamen und das Passwort, das [Sie im vorherigen Teil dieser Tour abgerufen haben](retrieve-access.md).
+1. Führen Sie den Befehl aus[ den Sie zuvor aus Cloud Manager abgerufen ](retrieve-access.md). Es sollte ähnlich wie `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` sein. Verwenden Sie den Git-Benutzernamen und das Passwort[ das Sie im vorherigen Teil dieser Journey abgerufen ](retrieve-access.md).
 
    ![Klonen des Repository](assets/clone-repo.png)
 
@@ -138,11 +138,11 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Verstehen, wie Sie Ihre Design-Anpassungen mit echten AEM-Inhalten über einen lokalen Proxy testen können.
 * Wissen, wie Sie Ihre Änderungen in das AEM Git-Repository übertragen.
 
-Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie das Dokument [Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md) durchgehen. Darin erfahren Sie, wie Sie das Design mithilfe der Frontend-Pipeline bereitstellen.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Journey zur schnellen Site-Erstellung der AEM fort, indem Sie als Nächstes das Dokument [Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md) lesen, in dem Sie erfahren, wie Sie das Design mithilfe der Frontend-Pipeline bereitstellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, zum nächsten Teil der Tour zu Quick Site Creation voranzuschreiten, indem Sie das Dokument [Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md) lesen. Allerdings finden Sie im Folgenden einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Aber sie sind nicht erforderlich, um mit der Tour fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Journey zu Quick Site Creation fortzufahren, indem Sie das Dokument [Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Journey fortzufahren.
 
 * [AEM-Site-Design](https://github.com/adobe/aem-site-template-standard-theme-e2e) - Dies ist das GitHub-Repository des AEM-Site-Designs.
 * [npm](https://www.npmjs.com) - AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, die auf nmp basieren.

@@ -3,13 +3,13 @@ title: Filtern von Komponenten
 description: Erfahren Sie, wie Sie die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken können.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 63%
 
 ---
-
 
 # Filtern von Komponenten {#filtering-components}
 
@@ -53,4 +53,4 @@ Durch das Festlegen des Attributs `components` in einer Filterdefinition auf `
 
 >[!TIP]
 >
->Weitere Informationen zu anderen Anpassungs- und Erweiterungsoptionen, die dem universellen Editor im Dokument [Anpassen und Erweitern des universellen Editors“ zur Verfügung stehen](/help/implementing/universal-editor/customizing.md)
+>Weitere Informationen zu anderen Anpassungs- und Erweiterungsoptionen, die dem universellen Editor zur Verfügung stehen, finden Sie im Dokument [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).

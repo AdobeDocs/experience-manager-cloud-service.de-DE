@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie Vorlagen erstellen, die zum Erstellen von Seiten verwendet
 
 >[!NOTE]
 >
->[Vorlagen sind auch für das Erstellen von Seiten verfügbar, die mit dem Seiteneditor bearbeitet werden können.](/help/sites-cloud/authoring/page-editor/templates.md)
+>[Vorlagen sind auch für das Erstellen von Seiten verfügbar, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md).
 
 ## Was sind Seitenvorlagen? {#what-are}
 
@@ -33,17 +33,17 @@ Um Vorlagen zum Erstellen von Seiten zu verwenden, die mit dem universellen Edit
 
 Aktivieren Sie zunächst bearbeitbare Vorlagen für die Konfiguration Ihrer Site.
 
-1. Verwenden Sie die Konsole **Sites** und [wählen Sie das Stammverzeichnis Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
+1. Verwenden Sie die **Sites**-Konsole und [wählen Sie den Stamm Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol [**Eigenschaften** in der Symbolleiste.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 1. Notieren Sie sich den Wert im Feld **Cloud-Konfiguration** auf der Registerkarte **Erweitert** des Eigenschaftendialogfelds.
 1. Wählen Sie im Hauptnavigationsmenü **Tools** > **Allgemein** > **Konfigurations-Browser** aus.
-1. Wählen Sie im **[Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md)** die Konfiguration aus, die Sie im vorherigen Schritt notiert haben, und tippen oder klicken Sie in der Symbolleiste auf **Eigenschaften**.
+1. Wählen **[im Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md)** Konfiguration aus, die Sie im vorherigen Schritt angegeben haben, und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
 1. Aktivieren Sie im Fenster **Konfigurationseigenschaften** die Option **Bearbeitbare Vorlagen**.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
 Sobald die Konfiguration aktiviert ist, müssen Sie Vorlagen für Ihre Site zulassen.
 
-1. Verwenden Sie die Konsole **Sites** und [wählen Sie das Stammverzeichnis Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
+1. Verwenden Sie die **Sites**-Konsole und [wählen Sie den Stamm Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol ](/help/sites-cloud/authoring/sites-console/page-properties.md) [**Eigenschaften** in der Symbolleiste.
 1. Tippen oder klicken Sie auf der Registerkarte **Erweitert** des Eigenschaftsdialogs unter dem Abschnitt **Vorlageneinstellungen** auf die Schaltfläche **Hinzufügen**.
 1. Fügen Sie in dem neuen, leeren Feld, das unter **Zulässige Vorlagen** angezeigt wird, den Pfad `/conf/<site>/settings/wcm/templates/.*` hinzu.
@@ -67,7 +67,7 @@ Ihre neue Seite kann jetzt beim Erstellen neuer Seiten als Vorlage verwendet wer
 
 ## Erstellen einer Seite aus einer Vorlage {#creating-from-template}
 
-Das Erstellen einer Seite aus einer Vorlage, die mit dem universellen Editor bearbeitet werden kann, entspricht demselben Workflow wie bei der [Erstellung jeder anderen Seite.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+Das Erstellen einer Seite aus einer Vorlage, die mit dem universellen Editor bearbeitet werden kann, entspricht dem Arbeitsablauf [Erstellen einer anderen Seite](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
 1. Verwenden Sie die **Sites**-Konsole, um [zu dem Speicherort zu navigieren](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources), an dem Sie die neue Seite erstellen möchten.
 
@@ -87,6 +87,6 @@ Seitenvorlagen definieren nur den anfänglichen Inhalt von Seiten. Seiten könne
 
 ## Bearbeitbare Vorlagen {#editable-templates}
 
-Mit dem [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) erstellte Seiten können ebenfalls auf Vorlagen basieren. Vorlagen, die zum Erstellen von Seiten für den universellen Editor und den Seiteneditor verwendet werden, nutzen die [editierbaren Vorlagen](/help/implementing/developing/components/templates.md) von AEM.
+Mit dem [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) erstellte Seiten können ebenfalls auf Vorlagen basieren. Vorlagen, die zum Erstellen von Seiten für den universellen Editor und den Seiteneditor verwendet werden, nutzen beide die [bearbeitbaren Vorlagen](/help/implementing/developing/components/templates.md) von AEM.
 
 Vorlagen, mit denen mit dem Seiteneditor bearbeitbare Seiten erstellt werden, nutzen alle Funktionen bearbeitbarer Vorlagen. Vorlagen zum Erstellen von Seiten, die mit dem universellen Editor bearbeitbar sind, verwenden nur die Funktion für den anfänglichen Inhalt.

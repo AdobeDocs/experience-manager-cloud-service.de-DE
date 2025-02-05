@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
-source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Internationalisieren Sie Komponenten und Dialogfelder, damit die zugehörigen Ze
 
 Verwenden Sie den folgenden Prozess, um Ihre Komponenten zu internationalisieren und die Benutzeroberfläche in verschiedenen Sprachen bereitzustellen:
 
-1. [Implementieren Sie Ihre Komponenten mit Code, der Zeichenfolgen internationalisiert.](/help/implementing/developing/extending/i18n/dev.md)Ihr Code identifiziert die zu übersetzenden Zeichenfolgen und wählt die Sprache aus, die zur Laufzeit angezeigt werden soll.
+1. [Implementieren Sie Ihre Komponenten mit Code, der Zeichenfolgen internationalisiert](/help/implementing/developing/extending/i18n/dev.md). Ihr Code identifiziert die zu übersetzenden Zeichenfolgen und wählt die Sprache aus, die zur Laufzeit angezeigt werden soll.
 1. Erstellen Sie Wörterbücher und fügen Sie die zu übersetzenden englischen Zeichenfolgen hinzu.
 1. Exportieren Sie das Wörterbuch in das XLIFF-Format, übersetzen Sie die Zeichenfolgen und importieren Sie dann die XLIFF-Dateien zurück in AEM. 
 1. Integrieren Sie das Wörterbuch in den Versionsverwaltungsprozess Ihrer Anwendung.

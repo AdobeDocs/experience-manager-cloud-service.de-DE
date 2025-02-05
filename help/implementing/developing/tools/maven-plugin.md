@@ -4,10 +4,10 @@ description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Verwenden Sie das Adobe Content Package Maven-Plug-in, um Paketbereitstellungs- und -verwaltungsaufgaben in Ihre Maven-Projekte zu integrieren.
 
-Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM [Package Manager](/help/implementing/developing/tools/package-manager.md) ausgeführt werden:
+Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM (Package [) ausgeführt ](/help/implementing/developing/tools/package-manager.md)
 
 * Erstellen Sie neue Pakete anhand der Dateien im Dateisystem.
 * Installieren und deinstallieren Sie Pakete in AEM.
@@ -23,7 +23,7 @@ Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package M
 * Rufen Sie eine Liste der in AEM installierten Pakete ab.
 * Entfernen Sie ein Paket aus AEM.
 
-In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten können. Es ist jedoch auch wichtig zu verstehen, [wie AEM Projekte und ihre Pakete strukturiert sind.](#aem-project-structure)
+In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten können. Es ist jedoch auch wichtig zu verstehen, [wie AEM-Projekte und ihre Pakete strukturiert sind](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 
 >[!NOTE]
 >
->Die **Paketerstellung** wird jetzt über das [Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/) durchgeführt.
+>Das Paket **Erstellung** wird jetzt vom Plug-[ „Apache Jackrabbit FileVault Package Maven“ ](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
 >Dieser Artikel beschreibt die **Bereitstellung** der erstellten Pakete in AEM, die vom Adobe Content Package Maven-Plug-in durchgeführt wird.
 

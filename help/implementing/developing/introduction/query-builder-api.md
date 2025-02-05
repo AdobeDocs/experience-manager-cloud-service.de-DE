@@ -4,10 +4,10 @@ description: Die Funktionalität der Query Builder-Komponente für die Asset-Fre
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -487,7 +487,7 @@ Verwenden Sie den AEM-Query Builder-Debugger, um eine erläuterbare XPath-Abfra
 >
 >Die Konfiguration der Protokollfunktionen wird im Dokument [Protokollierung](/help/implementing/developing/introduction/logging.md) beschrieben.
 
-Die Protokollausgabe (INFO-Ebene) der Query Builder-Implementierung beim Ausführen der Abfrage, die im vorherigen Abschnitt unter [Testen und Debuggen](#testing-and-debugging) beschrieben wurde:
+Die Protokollausgabe (INFO-Ebene) der Query Builder-Implementierung beim Ausführen der im vorherigen Abschnitt beschriebenen Abfrage [Testen und Debuggen](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

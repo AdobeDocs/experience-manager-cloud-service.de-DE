@@ -5,10 +5,10 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Wenn eine Autorin oder ein Autor eine Seite erstellt, muss sie bzw. er eine Vorl
 
 >[!NOTE]
 >
->[Vorlagen sind auch für das Erstellen von Seiten verfügbar, die sich mit dem universellen Editor bearbeiten lassen.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[Vorlagen sind auch für das Erstellen von Seiten verfügbar, die mit dem universellen Editor bearbeitet werden können](/help/sites-cloud/authoring/universal-editor/templates.md).
 
 Mit dem **Vorlageneditor** ist das Erstellen und Verwalten von Vorlagen nicht mehr nur eine Aufgabe für die Entwicklung. Ein Power-Benutzertyp, der als **Vorlagenautor** bezeichnet wird, kann Vorlagen erstellen. Entwicklerinnen und Entwickler müssen die Umgebung einrichten, Client-Bibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen jedoch vorhanden sind, kann **die Vorlagenautorin bzw. der Vorlagenautor** Vorlagen flexibel erstellen und konfigurieren, ohne dass eine Entwicklerin oder ein Entwickler hinzugezogen werden muss.
 
@@ -95,7 +95,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 >
 >Geben Sie niemals Informationen in eine Vorlage ein, die [internationalisiert](/help/implementing/developing/extending/i18n/dev.md) werden müssen.
 >
->Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) nutzen.
+>Verwenden Sie für Vorlagenelemente wie Kopf- und Fußzeilen, die lokalisiert werden müssen[ die Lokalisierungsfunktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de).
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
 Da beim Rendern einer Seite auf die Vorlage verwiesen wird, muss die vollständig konfigurierte Vorlage veröffentlicht werden, damit sie in der Veröffentlichungsumgebung verfügbar ist.
 
-Veröffentlichen Sie Ihre Vorlagen mithilfe der **[Vorlagenkonsole](/help/sites-cloud/administering/templates-console.md)**.
+Publish-Vorlagen unter Verwendung der **[Vorlagenkonsole](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Bearbeiten von Vorlagen | Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
 
@@ -647,4 +647,4 @@ Beim Erstellen von Vorlagen sollten Sie Folgendes berücksichtigen:
    >AEM gibt explizite Warnungen aus, wenn der Sperrstatus von Komponenten in Vorlagen geändert wird, die keine Entwürfe mehr sind.
 
 1. [Erstellen Sie Ihre eigenen Ordner](#creating-a-template-folder-admin) für Ihre Site-spezifischen Vorlagen.
-1. [Veröffentlichen Sie Ihre Vorlagen](#publishing-a-template-template-author) von der **[Vorlagenkonsole aus.]**(/help/sites-cloud/administering/templates-console.md)
+1. [Publish-Vorlagen](#publishing-a-template-template-author) über die **[Vorlagenkonsole]**(/help/sites-cloud/administering/templates-console.md).

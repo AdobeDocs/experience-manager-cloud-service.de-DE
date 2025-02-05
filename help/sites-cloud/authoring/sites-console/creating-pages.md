@@ -5,10 +5,10 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie mithilfe der **Sites-Konsole** neue Seiten für Ihre Websi
 
 >[!TIP]
 >
->Bevor Sie mit der Erstellung neuer Seiten beginnen, sollten Sie sich damit vertraut machen, [wie Ihre Seiten in AEM organisiert sind](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
+>Bevor Sie mit der Erstellung neuer Seiten beginnen, machen Sie sich mit dem [Wie Ihre Seiten in AEM organisiert sind“ ](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 ## Zugriff auf Berechtigungen {#access-privileges}
 
@@ -31,8 +31,8 @@ Wenn Sie auf Probleme stoßen, wenden Sie sich an Ihre Systemadmins.
 
 Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Seite erstellen, es sei denn, alle Seiten wurden bereits für Sie erstellt:
 
-1. Öffnen Sie [die **Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md).
-1. Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.
+1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Navigieren Sie zum Speicherort, an dem Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie **Seite** aus der Liste aus:
 
    ![Erstellen von Seiten](/help/sites-cloud/authoring/assets/organizing-create-page.png)

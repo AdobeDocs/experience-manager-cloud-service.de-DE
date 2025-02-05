@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Best Practices zum reaktionsschnellen Einri
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Sie können MSM verwenden, um eine gesamte Inhaltsstruktur für Ihre Marke über
 Um MSM in einem Anwendungsfall ohne Antwort zu konfigurieren, müssen Sie zunächst eine Reihe von Aufgaben abschließen.
 
 * In diesem Dokument wird davon ausgegangen, dass Sie bereits eine Site für Ihr Projekt erstellt haben, die auf dem Handbuch [Erste Schritte für WYSIWYG-Entwickler mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) basiert.
-* Sie müssen die [-Funktion bereits für Ihr Projekt aktiviert haben.](/help/edge/wysiwyg-authoring/repoless.md)
+* Sie müssen die [-Funktion bereits für Ihr Projekt aktiviert ](/help/edge/wysiwyg-authoring/repoless.md).
 
 ## Anwendungsfall {#use-case}
 
@@ -55,9 +55,9 @@ Die Inhalte in `language-masters` sind die Quelle der Live Copies für die lokal
 
 Es gibt mehrere Schritte zum Konfigurieren des Anwendungsfalls „MSM-Antworten“.
 
-1. [Aktualisieren Sie AEM-Site-Konfigurationen.](#update-aem-configurations)
-1. [Erstellen Sie neue Edge Delivery Services-Sites für Ihre lokalisierten Seiten.](#create-edge-sites)
-1. [Aktualisieren Sie die Cloud-Konfiguration in AEM für Ihre lokalisierten Sites.](#update-cloud-configurations)
+1. [AEM-Site-Konfigurationen aktualisieren](#update-aem-configurations).
+1. [Erstellen Sie neue Edge Delivery Services-Sites für Ihre lokalisierten Seiten](#create-edge-sites).
+1. [Aktualisieren der Cloud-Konfiguration in AEM für Ihre lokalisierten Sites](#update-cloud-configurations).
 
 ### AEM-Site-Konfigurationen aktualisieren {#update-aem-configurations}
 

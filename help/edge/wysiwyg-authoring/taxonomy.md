@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Taxonomiedaten für die Verwendung von Tags m
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 85%
+ht-degree: 65%
 
 ---
 
@@ -26,9 +26,9 @@ Der universelle Editor funktioniert nur mit den IDs Ihrer Tags. Durch Erstellung
 
 ## Erstellen einer Taxonomieseite {#creating}
 
-Eine Taxonomie wird wie [jede andere Seite in AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md) erstellt.
+Eine Taxonomie wird erstellt wie [jede andere Seite in AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
-1. Navigieren Sie zur Konsole [**Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigieren Sie zur [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Wählen Sie den Ort aus, an dem Ihre Taxonomie erstellt werden soll.
 
@@ -46,7 +46,7 @@ Eine Taxonomie wird wie [jede andere Seite in AEM](/help/sites-cloud/authoring/s
 
 1. Tippen oder klicken Sie auf **Erstellen**.
 
-Die Taxonomieseite wird erstellt. Tippen oder klicken Sie im Dialogfeld **Erfolg** auf **Fertig**, um die Meldung zu schließen, oder auf **Öffnen**, um die Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) zu bearbeiten.
+Die Taxonomieseite wird erstellt. Im Dialogfeld **Erfolg** können Sie auf das Dialogfeld **Fertig** tippen oder klicken, um die Nachricht zu schließen, oder auf **Öffnen**, um die Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) bearbeiten.
 
 Notieren Sie sich den Namen der resultierenden Taxonomieseite (er wird noch in den folgenden Schritten gebraucht).
 
@@ -54,7 +54,7 @@ Notieren Sie sich den Namen der resultierenden Taxonomieseite (er wird noch in d
 
 Sie beginnen mit der Bearbeitung einer Taxonomieseite wie bei jeder anderen Seite in AEM.
 
-1. Navigieren Sie zur Konsole [**Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigieren Sie zur [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Wählen Sie die Taxonomie aus, die bearbeitet werden soll.
 
@@ -82,7 +82,7 @@ AEM aktualisiert den Inhalt der Taxonomieseite automatisch, wenn Sie die zugrund
 
 ## Aktualisieren von „paths.json“ für die Taxonomieveröffentlichung {#paths-json}
 
-Wie beim [Verwalten und Veröffentlichen von Tabellendaten für Ihre Edge Delivery Services-Site](/help/edge/wysiwyg-authoring/tabular-data.md) müssen Sie die Datei `paths.json` Ihres Projekts aktualisieren, um eine Veröffentlichung Ihrer Taxonomiedaten zu ermöglichen.
+Wie beim [Verwalten und Veröffentlichen von Tabellendaten für Ihre Edge Delivery Services-Site](/help/edge/wysiwyg-authoring/tabular-data.md) müssen Sie Ihre `paths.json`-Datei Ihres Projekts aktualisieren, um die Veröffentlichung Ihrer Taxonomiedaten zu ermöglichen.
 
 1. Öffnen Sie den Stamm Ihres Projekts in GitHub.
 
@@ -101,7 +101,7 @@ Wie beim [Verwalten und Veröffentlichen von Tabellendaten für Ihre Edge Delive
    }
    ```
 
-   * `<taxonomy-page-name>` muss mit dem Namen der [von Ihnen erstellten Taxonomieseite übereinstimmen](#creating).
+   * `<taxonomy-page-name>` muss mit dem Namen der von [ erstellten Taxonomieseite ](#creating).
    * `<taxonomy-json-name>` kann ein beliebiger gültiger Name sein.
 
 1. Klicken Sie auf **Änderungen bestätigen…**, um die Änderungen an `main` zu speichern.
@@ -118,14 +118,14 @@ Dieser Vorgang muss nur einmal pro Taxonomieseite durchgeführt werden. Danach k
 
 Eine Taxonomie steht dem universellen Editor oder Ihren Benutzenden erst nach deren Veröffentlichung zur Verfügung.
 
-Taxonomieseiten werden wie jede andere Seite [durch Verwendung der Symbole **Quick Publish** oder **Veröffentlichung verwalten** der Symbolleiste veröffentlicht](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+Taxonomieseiten werden wie jede andere Seite veröffentlicht, indem [ die Symbole **Quick Publish** oder **Veröffentlichung verwalten** in der Symbolleiste ](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 Sie müssen Ihre Taxonomieseite jedes Mal erneut veröffentlichen, wenn Sie:
 
 * die Seite bearbeiten,
 * die in Ihrer Taxonomieseite enthaltenen Tags und Namespaces bearbeiten oder neue hinzufügen.
 
-Wenn Sie eine neue Taxonomieseite erstellen, müssen Sie zunächst [der Datei `paths.json` in Ihrem Projekt eine Zuordnung hinzufügen](#paths-json).
+Wenn Sie eine neue Taxonomieseite erstellen, müssen Sie zunächst [eine Zuordnung zur `paths.json`-Datei in Ihrem Projekt hinzufügen](#paths-json).
 
 ## Zugreifen auf Taxonomieinformationen {#accessing}
 
@@ -135,7 +135,7 @@ Sie können auf die Taxonomie als JSON-Daten unter der folgenden Adresse zugreif
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-Verwenden Sie den `<taxonomy-json-name>`, den Sie beim [Zuordnen Ihrer Taxonomie zur Datei `paths.json` in Ihrem Projekt definiert haben.](#paths-json) Die Taxonomiedaten werden wie im folgenden Beispiel als JSON-Daten zurückgegeben.
+Verwenden Sie die `<taxonomy-json-name>`, die Sie beim [Zuordnen Ihrer Taxonomie zur `paths.json`-Datei in Ihrem Projekt“ definiert ](#paths-json). Die Taxonomiedaten werden wie im folgenden Beispiel als JSON-Daten zurückgegeben.
 
 ```json
 {
@@ -166,11 +166,11 @@ Verwenden Sie den `<taxonomy-json-name>`, den Sie beim [Zuordnen Ihrer Taxonomie
 
 Diese JSON-Daten werden automatisch aktualisiert, wenn Sie die Taxonomie aktualisieren und erneut veröffentlichen. Ihre Anwendung kann für Ihre Benutzenden programmgesteuert auf diese Informationen zugreifen.
 
-[Wenn Sie Tags in mehreren Sprachen verwalten](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages), können Sie auf diese Sprachen zugreifen, indem Sie den ISO2-Sprach-Code als Wert eines `sheet=`-Parameters übergeben.
+[Wenn Sie Tags in mehreren Sprachen ](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages), können Sie auf diese Sprachen zugreifen, indem Sie den ISO2-Sprach-Code als Wert eines `sheet=` übergeben.
 
 ## Anzeigen zusätzlicher Tag-Eigenschaften {#additional-properties}
 
-Standardmäßig enthält Ihre Taxonomie `tag`- und `title`, wie [ vorherigen Beispiel gezeigt.](#accessing) Sie können Ihre Taxonomie so konfigurieren, dass zusätzliche Tag-Eigenschaften verfügbar gemacht werden. In diesem Beispiel stellen wir die Tag-Beschreibung bereit.
+Standardmäßig enthält Ihre Taxonomie `tag`- und `title`, wie [ vorherigen Beispiel ](#accessing). Sie können Ihre Taxonomie so konfigurieren, dass zusätzliche Tag-Eigenschaften verfügbar gemacht werden. In diesem Beispiel stellen wir die Tag-Beschreibung bereit.
 
 1. Wählen Sie über die Sites-Konsole die von Ihnen erstellte Taxonomie aus.
 1. Tippen oder klicken Sie auf **Symbolleiste auf** Symbol „Eigenschaften“.
@@ -179,7 +179,7 @@ Standardmäßig enthält Ihre Taxonomie `tag`- und `title`, wie [ vorherigen Bei
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 1. Tippen oder klicken Sie bei weiterhin ausgewählter Taxonomie in der Symbolleiste **Quick Publish**.
 
-Jetzt [ (wenn Sie auf Ihre Taxonomie zugreifen, ](#accessing) die Tag-Beschreibung (oder die Eigenschaft, die Sie offen legen möchten) in die JSON-Datei aufgenommen.
+Wenn [ nun auf Ihre Taxonomie zugreifen](#accessing) wird die Tag-Beschreibung (oder die Eigenschaft, die Sie bereitstellen möchten) in die JSON-Datei aufgenommen.
 
 ```json
 {

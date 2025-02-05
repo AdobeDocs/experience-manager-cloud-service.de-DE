@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 87%
+ht-degree: 79%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 87%
 
 Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu nutzen und Ihre Site schneller anzupassen.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Die Frontend-Pipeline ist ein Mechanismus, der schnell nur den Frontend-Code Ihrer Websites bereitstellt, basierend auf [Site-Designs](site-themes.md) und [Site-Vorlagen](site-templates.md).
+Die Frontend-Pipeline ist ein Mechanismus, der schnell nur den Frontend-Code Ihrer Websites bereitstellt, basierend auf [Site-](site-themes.md) und [Site-Vorlagen](site-templates.md).
 
 Diese Pipeline verarbeitet nur Frontend-Code, wodurch der Bereitstellungsprozess schneller ist als Full-Stack-Bereitstellungen. Dadurch können Frontend-Entwickelnde Ihre Site einfach anpassen, ohne Kenntnisse über AEM zu benötigen.
 
@@ -44,7 +44,7 @@ Wenn Sie die Frontend-Pipeline für eine Site aktivieren, nimmt AEM die folgende
 
 ## Voraussetzungen {#requirements}
 
-AEM kann Ihre vorhandene Site automatisch an die Frontend-Pipeline anpassen. Um diesen Workflow auszuführen, muss Ihre Site [v2 oder neuer der Seitenkomponente der Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/wcm-components/page) verwenden.
+AEM kann Ihre vorhandene Site automatisch an die Frontend-Pipeline anpassen. Um diesen Workflow durchführen zu können, muss Ihre Site [v2 oder neuer der Seitenkomponente der Kernkomponenten ](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Aktivieren der Frontend-Pipeline {#enabling}
 

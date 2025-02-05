@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 72%
@@ -30,7 +30,7 @@ Wählen Sie die Methode aus, die für Sie zum Bearbeiten der Dokumentation in Gi
 
 >[!NOTE]
 >
->Eingereichte Beiträge unterliegen den [Allgemeinen Nutzungsbedingungen von Adobe.](https://www.adobe.com/de/legal/terms.html)
+>Eingereichte Beiträge unterliegen den [Allgemeinen Nutzungsbedingungen von Adobe](https://www.adobe.com/de/legal/terms.html).
 
 ### Erstellen eines Problems {#create-an-issue}
 
@@ -42,7 +42,7 @@ Mithilfe von Problemen können Sie Ihre Verbesserungsidee für Dokumente einfach
 
 Wenn Sie ein Problem sehen und genau wissen, wie Sie es beheben können, sollten Sie eine Pull-Anfrage erstellen. Mithilfe von Pull-Anfragen können Sie Ihre eigenen Änderungen an der Dokumentation vornehmen, die dann von einem Mitglied des AEM Docs Teams zur Aufnahme geprüft werden. Klicken Sie einfach auf **[!UICONTROL Diese Seite bearbeiten]** oben im rechten Navigationsbereich auf einer beliebigen Seite auf den Link, um Ihre vorgeschlagenen Änderungen vorzunehmen und die Pull-Anfrage zu erstellen.
 
-Für Pull-Anfragen muss eine [Lizenzvereinbarung für Mitwirkende (CLA) unterzeichnet werden.](https://opensource.adobe.com/cla.html)  Damit kann Adobe Ihre Beiträge als Teil des Projekts weitervertreiben. Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie also bereits eine übermittelt haben, können Sie sofort loslegen!
+Für Pull-Anfragen muss eine [Lizenzvereinbarung für Mitwirkende (CLA) unterzeichnet werden](https://opensource.adobe.com/cla.html). Damit kann Adobe Ihre Beiträge als Teil des Projekts weitervertreiben. Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie also bereits eine übermittelt haben, können Sie sofort loslegen!
 
 ### Kurze Videoeinführung
 

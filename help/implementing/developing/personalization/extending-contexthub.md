@@ -4,10 +4,10 @@ description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn 
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-In den meisten Fällen ist nur ein Kandidat erforderlich und die Priorität kann auf `0` gesetzt werden. Wenn Sie Interesse daran haben, können Sie mehr über [erweiterte Registrierungen](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) erfahren, die es ermöglichen, auf Basis der JavaScript-Bedingung (`applies`) und Kandidatenpriorität eine von mehreren Store-Implementierungen auszuwählen.
+In den meisten Fällen ist nur ein Kandidat erforderlich und die Priorität kann auf `0` festgelegt werden. Bei Interesse können Sie sich jedoch mit [fortgeschritteneren Registrierungen](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) vertraut machen, sodass eine von wenigen Store-Implementierungen basierend auf der JavaScript-Bedingung (`applies`) und der Kandidatenpriorität ausgewählt werden kann.
 
 ## Erstellen von Typen von ContextHub-Benutzeroberflächenmodulen {#creating-contexthub-ui-module-types}
 

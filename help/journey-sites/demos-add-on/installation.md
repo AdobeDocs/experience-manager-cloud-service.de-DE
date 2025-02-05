@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Cloud Manager und dessen Verwendung für di
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ Nachdem Sie nun diesen Teil der Tour zum AEM-Referenzdemo-Add-on abgeschlossen h
 * Wissen Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
 * Sehen, wie mit Vorlagen in nur wenigen Klicks neue Sites erstellt werden können, die mit Demo-Inhalten gefüllt sind.
 
-Nutzen Sie diese Kenntnisse und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie als Nächstes das Dokument [Erstellen eines Programms und einer Pipeline](create-program.md) lesen. Hier erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
+Nutzen Sie diese Kenntnisse und fahren Sie mit der Journey zur schnellen Site-Erstellung in der AEM fort, indem Sie [Erstellen eines Programms und einer Pipeline](create-program.md) lesen. Hier erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

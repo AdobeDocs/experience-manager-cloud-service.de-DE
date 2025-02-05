@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in der Admin Console Benutzerprofile erstelle
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Von Zeit zu Zeit kontaktiert Adobe Benutzende bezüglich ihrer AEM as a Cloud Se
 * **Benachrichtigung bei Vorfällen**: Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem bei Ihrer AEM as a Cloud Service-Umgebung erkannt hat.
 * **Proaktive Benachrichtigung**: Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service-Umgebung von Vorteil sein kann.
 
-Benutzende können diese Benachrichtigungen abhängig von ihren [benutzerdefinierten Gruppenberechtigungen](/help/implementing/cloud-manager/custom-permissions.md) auch für bestimmte Programme erhalten.
+Benutzer können diese Benachrichtigungen auch für bestimmte Programme basierend auf ihren [benutzerdefinierten Gruppenberechtigungen](/help/implementing/cloud-manager/custom-permissions.md) erhalten.
 
 Darüber hinaus wird die Zuweisung von Gruppen zu proaktiven Benachrichtigungen unterstützt und Benutzende und Gruppen können den Produktprofilen direkt zugewiesen werden.
 
@@ -43,7 +43,7 @@ Da Benutzergruppen in der Admin Console erstellt und gepflegt werden, müssen vo
 
 Um den Empfang von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie zwei Benutzerprofile erstellen. Diese Schritte werden nur einmal ausgeführt.
 
-1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com` an.](https://adminconsole.adobe.com)
+1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) an.
 
 1. Stellen Sie sicher, dass Sie sich in der richtigen Organisation befinden.
 
@@ -103,7 +103,7 @@ Führen Sie diese Schritte aus, um Benutzende hinzuzufügen, für die noch keine
 
    ![Benutzer](assets/product_services.png)
 
-1. Wenn die Federated ID für Ihre Team-Mitglieder noch nicht eingerichtet wurde, klicken Sie in der oberen Navigationsleiste auf die Registerkarte **Benutzer** und wählen dann **Benutzer hinzufügen** aus. Andernfalls gehen Sie zum Abschnitt [Hinzufügen von vorhandenen Benutzenden zu Profilen](#existing-users).
+1. Wenn die Federated ID für Ihre Team-Mitglieder noch nicht eingerichtet wurde, klicken Sie in der oberen Navigationsleiste auf die Registerkarte **Benutzer** und wählen dann **Benutzer hinzufügen** aus. Andernfalls gehen Sie zum Abschnitt [Hinzufügen vorhandener Benutzer zu Profilen](#existing-users).
 
    ![Benutzer](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Führen Sie diese Schritte aus, um Benutzende hinzuzufügen, für die bereits Fe
 
 1. Wählen Sie in der oberen Navigationsleiste die Registerkarte **Benutzer** aus.
 
-1. Wenn die Federated ID bereits für das Team-Mitglied vorhanden ist, das Sie zu einem Benachrichtigungsprofil hinzufügen möchten, suchen Sie diese Person in der Liste und klicken Sie auf sie. Andernfalls fahren Sie mit dem Abschnitt [Hinzufügen von neuen Benutzenden zu Profilen](#add-user) fort.
+1. Wenn die Federated ID bereits für das Team-Mitglied vorhanden ist, das Sie zu einem Benachrichtigungsprofil hinzufügen möchten, suchen Sie diese Person in der Liste und klicken Sie auf sie. Andernfalls gehen Sie zum Abschnitt [Hinzufügen neuer Benutzer zu Profilen](#add-user).
 
 1. Klicken Sie im Abschnitt **Produkte** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Bearbeiten** aus.
 

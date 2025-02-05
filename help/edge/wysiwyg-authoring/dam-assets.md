@@ -4,7 +4,7 @@ description: Erfahren Sie, welche Einstellungen erforderlich sind, um sicherzust
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
-source-git-commit: c6bba42c29236af03d25e9579f333b0f58aa0bfe
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -21,8 +21,8 @@ Beim Bearbeiten von Inhalten für den universellen Editor können Sie natürlich
 
 Um dieses nahtlose Verhalten sicherzustellen, müssen AEM und Edge Delivery Services angemessenen Zugriff auf das DAM haben, um veröffentlichen zu können. Hierzu gehört Folgendes:
 
-* [Sicherstellen, dass Asset-Ordner zugänglich sind.](#accessible)
-* [Sicherstellen, dass dem Asset-Ordner die richtige Konfiguration zugewiesen wird (nach Bedarf).](#configuration)
+* [Sicherstellen, dass Asset-Ordner zugänglich sind](#accessible).
+* [Sicherstellen, dass dem Asset-Ordner die richtige Konfiguration zugewiesen wurde (nach Bedarf)](#configuration).
 
 ## Sicherstellen, dass auf Assets-Ordner zugegriffen werden kann {#accessible}
 

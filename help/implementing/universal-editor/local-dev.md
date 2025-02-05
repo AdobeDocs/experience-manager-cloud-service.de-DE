@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihren eigenen universellen Editor-Dienst entw
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -101,7 +101,7 @@ In der folgenden Tabelle sind diese und zusätzliche Werte aufgeführt.
 | `UES_SPLUNK_TOKEN` | Ja | Kein | Splunk-Token |
 | `UES_SPLUNK_INDEX` | Ja | Kein | Index zum Schreiben von Protokollen |
 | `UES_SPLUNK_SOURCE` | Ja | `universal-editor-service` | Name der Quelle in den Splunk-Protokollen |
-| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Aktivieren Sie das Senden von CORS-Headern, um das [private Netzwerk zuzulassen.](https://wicg.github.io/private-network-access/#private-network-request) Erforderlich für Benutzende von Chrome Version 130+ |
+| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Aktivieren Sie das Senden von CORS-Headern, um [privates Netzwerk“ ](https://wicg.github.io/private-network-access/#private-network-request). Erforderlich für Benutzer von Chrome ab Version 130 |
 
 >[!NOTE]
 >
@@ -152,9 +152,9 @@ Nach der Festlegung sollte jeder Inhaltsaktualisierungsaufruf an `https://localh
 
 ## Bearbeiten einer Seite mit dem lokalen Dienst „Universeller Editor“ {#editing}
 
-Mit dem [lokal ausgeführten Dienst „Universeller Editor“](#running-ue) und Ihrer [Inhaltsseite, die für die Verwendung des lokalen Dienstes instrumentiert wurde, ](#using-loca-ue)können Sie jetzt den Editor starten.
+Da der [universelle Editor-Dienst lokal ausgeführt wird ](#running-ue) Ihre [Inhaltsseite“ für die Verwendung des lokalen ](#using-loca-ue) instrumentiert ist, können Sie den Editor jetzt starten.
 
 1. Öffnen Sie in Ihrem Browser `https://localhost:8000/ping`.
-1. Weisen Sie Ihren Browser an, um [Ihr selbstsigniertes Zertifikat](#ue-https) zu akzeptieren.
+1. Weisen Sie Ihren Browser an, [Ihr selbstsigniertes Zertifikat](#ue-https) zu akzeptieren.
 1. Sobald das selbstsignierte Zertifikat als vertrauenswürdig eingestuft wurde, können Sie die Seite mit Ihrem lokalen Dienst „Universeller Editor“ bearbeiten.
 

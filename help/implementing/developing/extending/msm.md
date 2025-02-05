@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers erweit
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ In diesem Dokument erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers 
 
 >[!TIP]
 >
->Diese Seite ist im Kontext des Dokuments [Wiederverwenden von Inhalten: Multi-Site-Manager](/help/sites-cloud/administering/msm/overview.md) leichter zu verstehen.
+>Diese Seite ist im Kontext des Dokuments „Wiederverwenden von [: Multi Site Manager“ ](/help/sites-cloud/administering/msm/overview.md).
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Das folgende Verfahren setzt voraus, dass Sie das `adobe-public`-Profil zu Ihrer
    * **`artifactName`**: `MyLiveActionFactory package`
    * **`packageGroup`**: `myPackages`
 
-1. Starten Sie Eclipse und [importieren Sie das Maven-Projekt.](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)
+1. Starten Sie Eclipse und [importieren Sie das Maven-Projekt](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse).
 
 ### Hinzufügen von Abhängigkeiten zur POM-Datei {#add-dependencies-to-the-pom-file}
 

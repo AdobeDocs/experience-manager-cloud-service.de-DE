@@ -4,10 +4,10 @@ description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verf�
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Die Benutzeroberfläche von CRXDE Lite besteht aus vielen Teilen und Funktionen.
 
 ### Obere Wechselleiste {#top-switcher-bar}
 
-Mit der oberen Umschaltleiste können Sie schnell zwischen CRXDE Lite und dem [Package Manager](package-manager.md) umschalten.
+Mit der oberen Umschaltleiste können Sie schnell zwischen CRXDE Lite und [Package Manager](package-manager.md) wechseln.
 
 ### Knotenpfad-Widget {#node-path-widget}
 
@@ -91,7 +91,7 @@ Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 
 >[!NOTE]
 >
->Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
+Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
 
 ### Registerkarte „Replikation“ {#replication-tab}
 
@@ -183,7 +183,7 @@ So erstellen Sie einen Ordner mit CRXDE Lite:
 So erstellen Sie einen Knoten mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im [**Explorer-Fenster**,](#explorer-pane) mit der rechten Maustaste auf den Knoten, in dem Sie den neuen Knoten erstellen möchten, wählen Sie **Erstellen** und dann **Knoten erstellen** aus.
+1. Klicken [**im Explorer**](#explorer-pane) Fenster mit der rechten Maustaste auf den Knoten, in dem Sie den neuen Knoten erstellen möchten, wählen Sie **Erstellen** und dann **Knoten erstellen**.
 1. Geben Sie den **Namen** ein und wählen Sie den **Typ** aus.
 1. Klicken Sie auf **OK**.
 1. Klicken Sie auf [**Alle speichern**](#save-all-button), um die Änderungen auf dem Server zu speichern.
@@ -192,16 +192,16 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 
 >[!NOTE]
 >
->Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
+Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
->Die Prüfung, ob der erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
+Die Prüfung, ob der erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 
 So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Wählen Sie im [**Explorer-Fenster**,](#explorer-pane) den Knoten aus, bei dem Sie die neue Eigenschaft hinzufügen möchten.
+1. Wählen [**im Explorer**](#explorer-pane) Fenster den Knoten aus, bei dem Sie die neue Eigenschaft hinzufügen möchten.
 1. Geben Sie auf der Registerkarte [**Eigenschaften**](#properties-tab) im unteren Fensterbereich den **Namen**, den **Typ** und den **Wert** ein.
 1. Klicken Sie auf **Hinzufügen**.
 1. Klicken Sie auf [**Alle speichern**](#save-all-button), um die Änderungen auf dem Server zu speichern.
@@ -211,10 +211,10 @@ So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 So wird eine neue Datei mit CRXDE Lite erstellt:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im [**Explorer-Fenster**,](#explorer-pane) mit der rechten Maustaste auf die Komponente, für die Sie die Datei erstellen möchten, wählen Sie **Erstellen** und dann **Datei erstellen** aus.
+1. Klicken Sie im [**Explorer-Fenster**](#explorer-pane) mit der rechten Maustaste auf die Komponente, für die Sie die Datei erstellen möchten, wählen Sie **Erstellen** und dann **Datei erstellen** aus.
 1. Geben Sie den **Dateinamen** mit der Erweiterung ein.
 1. Klicken Sie auf **OK**.
-1. Die neue Datei wird als Registerkarte im [**Bearbeitungsfenster** ](#edit-pane)geöffnet.
+1. Die neue Datei wird als Registerkarte im Bereich [**Bearbeiten“**](#edit-pane).
 1. Bearbeiten Sie die Datei.
 1. Klicken Sie auf [**Alle speichern**](#save-all-button), um die Änderungen zu speichern.
 

@@ -4,7 +4,7 @@ description: Wenn Sie viele ähnliche Websites haben, die meist gleich aussehen 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Standardmäßig ist AEM eng an Ihr Code-Repository gebunden, das die meisten Anw
 
 Anstatt mehrere GitHub-Repositorys zu erstellen und jede Site in einem dedizierten GitHub-Repository auszuführen und dabei synchron zu halten, unterstützt AEM das Ausführen mehrerer Sites von derselben Codebasis aus.
 
-Diese vereinfachte Einrichtung, die die Notwendigkeit der Code-Replikation beseitigt, wird auch als &quot;[ Repoless“ bezeichnet](https://www.aem.live/docs/repoless) da alle außer Ihrer ersten Site kein eigenes GitHub-Repository benötigen.
+Diese vereinfachte Einrichtung, die die Notwendigkeit der Code-Replikation beseitigt, wird auch als &quot;[&quot; bezeichnet](https://www.aem.live/docs/repoless) da alle außer Ihrer ersten Site kein eigenes GitHub-Repository benötigen.
 
 Wenn für Ihr Projekt die Flexibilität der Code-Wiederverwendung auf allen Sites erforderlich ist, können Sie die Funktion aktivieren.
 
@@ -31,7 +31,7 @@ Unabhängig davon, wie viele Sites Sie letztendlich auf reaktionsfreie Weise ers
 
 Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie Folgendes getan haben.
 
-* Ihre Site ist bereits vollständig eingerichtet. Folgen Sie dazu dem Dokument [Erste Schritte für WYSIWYG-Entwickler mit Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Ihre Site ist bereits vollständig eingerichtet. Folgen Sie dazu dem Dokument [Erste Schritte für WYSIWYG-Entwickler mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Sie führen mindestens AEM as a Cloud Service 2024.08 aus.
 
 Sie müssen Adobe auch bitten, die folgenden Elemente für Sie zu konfigurieren. Kontaktieren Sie uns über Ihren Slack-Kanal oder werfen Sie ein Support-Problem auf, um Adobe anzufordern, diese Änderungen vorzunehmen:
@@ -70,7 +70,7 @@ Sobald Sie über Ihr Zugriffs-Token verfügen, kann es im Header von cURL-Anfrag
 
 Sie müssen eine Site-Konfiguration erstellen und sie zu Ihrer Pfadzuordnung hinzufügen.
 
-1. Erstellen Sie eine neue Seite im Stammverzeichnis Ihrer Site und wählen Sie die Vorlage [**Konfiguration** aus](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Erstellen Sie eine neue Seite im Stammverzeichnis Ihrer Site und wählen Sie die Vorlage [**Konfiguration** aus](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * Sie können die Konfiguration nur mit den vordefinierten Spalten `key` und `value` leer lassen. Sie müssen sie nur erstellen.
 1. Erstellen Sie in der öffentlichen Konfiguration eine Zuordnung zur Site-Konfiguration mithilfe eines cURL-Befehls ähnlich dem folgenden.
 

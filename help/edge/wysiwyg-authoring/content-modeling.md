@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die Inhaltsmodellierung für WYSIWYG-Authoring-Pr
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie die Inhaltsmodellierung für WYSIWYG-Authoring-Projekte mit Ed
 
 ## Voraussetzungen {#prerequisites}
 
-Projekte, die WYSIWYG-Authoring mit Edge Delivery Services verwenden, erben den Großteil der Mechanismen anderer Edge Delivery Services-Projekte, und zwar unabhängig von der Inhaltsquelle oder [Authoring-Methode](/help/edge/wysiwyg-authoring/authoring.md).
+Projekte, die das WYSIWYG-Authoring mit Edge Delivery Services verwenden, übernehmen den Großteil der Mechanismen anderer Edge Delivery Services-Projekte, unabhängig von der Inhaltsquelle oder der [Authoring-Methode](/help/edge/wysiwyg-authoring/authoring.md).
 
 Bevor Sie mit der Modellierung von Inhalten für Ihr Projekt beginnen, lesen Sie zunächst Folgendes:
 
@@ -39,7 +39,7 @@ In AEM werden diese Inhalte als Komponenten mit sehr einfachen, vordefinierten M
 * **Bild**: Quelle, Beschreibung
 * **Schaltfläche**: Text, Titel, URL, Typ (Standard, primär, sekundär)
 
-Das Modell dieser Komponenten ist Teil der [Vorlage für das WYSIWYG-Authoring mit Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
+Das Modell dieser Komponenten ist Teil von [Textbaustein für das WYSIWYG-Authoring mit Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Bausteine {#blocks}
 
@@ -111,9 +111,9 @@ Für jeden Block gilt Folgendes:
 * Die Entwicklerin oder der Entwickler muss den Ressourcentyp `core/franklin/components/block/v1/block` verwenden, die generische Implementierung der Blocklogik in AEM.
 * Die Entwicklerin oder der Entwickler muss den Blocknamen definieren, der in der Tabellenüberschrift des Blocks gerendert wird.
    * Anhand des Blocknamens werden der richtige Stil und das richtige Skript zum Dekorieren des Blocks abgerufen.
-* Die Entwicklerin oder der Entwickler kann eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) definieren.
+* Sie können eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) definieren.
    * Die Modell-ID ist ein Verweis auf das Modell der Komponente, die die Felder definiert, die der Autorin bzw. dem Autor im Bedienfeld „Eigenschaften“ zur Verfügung stehen.
-* Die Entwicklerin oder der Entwickler kann eine [Filter-ID](/help/implementing/universal-editor/filtering.md) definieren.
+* Sie können eine [Filter-ID“ ](/help/implementing/universal-editor/filtering.md).
    * Die Filter-ID ist ein Verweis auf den Filter der Komponente, der es ermöglicht, das Authoring-Verhalten zu ändern, z. B. indem begrenzt wird, welche untergeordneten Elemente zum Block oder Abschnitt hinzugefügt werden können oder welche RTE-Funktionen aktiviert sind.
 
 Alle diese Informationen werden in AEM gespeichert, wenn ein Block zu einer Seite hinzugefügt wird. Wenn der Ressourcentyp oder der Blockname fehlt, wird der Block nicht auf der Seite gerendert.
@@ -181,7 +181,7 @@ Im folgenden Beispiel wird zuerst das Bild im Modell und dann der Text definiert
 
 >[!ENDTABS]
 
-Sie stellen möglicherweise fest, dass einige Werttypen die Ableitung von Semantik im Markup zulassen und Eigenschaften in einzelnen Zellen kombiniert werden. Dieses Verhalten wird unter [Typableitung](#type-inference) beschrieben.
+Sie stellen möglicherweise fest, dass einige Werttypen die Ableitung von Semantik im Markup zulassen und Eigenschaften in einzelnen Zellen kombiniert werden. Dieses Verhalten wird im Abschnitt &quot;[&quot; ](#type-inference).
 
 #### Schlüssel-Wert-Block {#key-value}
 
@@ -189,7 +189,7 @@ In vielen Fällen wird empfohlen, das gerenderte semantische Markup zu dekoriere
 
 In anderen Fällen wird der Block jedoch als eine Schlüssel-Wert-Paar-ähnliche Konfiguration gelesen.
 
-Ein Beispiel hierfür sind die [Abschnittsmetadaten.](/help/edge/developer/markup-sections-blocks.md#sections) In diesem Anwendungsfall kann der Block so konfiguriert werden, dass er als Schlüssel-Wert-Paar-Tabelle gerendert wird. Weitere Informationen finden Sie unter [Abschnitte und Abschnittsmetadaten](#sections-metadata).
+Ein Beispiel dafür ist der [Abschnittsmetadaten](/help/edge/developer/markup-sections-blocks.md#sections). In diesem Anwendungsfall kann der Block so konfiguriert werden, dass er als Schlüssel-Wert-Paartabelle gerendert wird. Weitere Informationen finden Sie unter [Abschnitte und Abschnittsmetadaten](#sections-metadata).
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ Im folgenden Beispiel akzeptiert ein Block eine Liste verknüpfter Symbole als u
 
 ### Erstellen semantischer Inhaltsmodelle für Blöcke {#creating-content-models}
 
-Auf Grundlage der [erläuterten Mechanismen der Blockstruktur](#block-structure) ist es nun möglich, ein Inhaltsmodell zu erstellen, das die in AEM gespeicherten Inhalte der Bereitstellungsebene eins zu eins zuordnet.
+Nachdem Sie die [Mechanismen der Blockstruktur](#block-structure) erläutert haben, ist es möglich, ein Inhaltsmodell zu erstellen, das persistierte Inhalte in AEM eins zu eins der Bereitstellungsebene zuordnet.
 
-In der Frühphase jedes Projekts muss ein Inhaltsmodell für jeden Block sorgfältig überdacht werden. Es muss unabhängig von der Inhaltsquelle und dem Authoring-Erlebnis sein. Nur so können sie von Autorinnen und Autoren gewechselt oder kombiniert werden, bei Wiederverwendung von Blockimplementierungen und Stilen. Weitere Informationen und allgemeine Leitlinien finden Sie unter [Davids Modell (Take 2).](https://www.aem.live/docs/davidsmodel) Genauer gesagt, enthält die [Blocksammlung](/help/edge/developer/block-collection.md) einen umfangreichen Satz an Inhaltsmodellen für spezifische Anwendungsfälle gängiger Benutzeroberflächenmuster.
+In der Frühphase jedes Projekts muss ein Inhaltsmodell für jeden Block sorgfältig überdacht werden. Es muss unabhängig von der Inhaltsquelle und dem Authoring-Erlebnis sein. Nur so können sie von Autorinnen und Autoren gewechselt oder kombiniert werden, bei Wiederverwendung von Blockimplementierungen und Stilen. Weitere Details und allgemeine Anleitungen finden Sie in [Davids Modell (Take 2)](https://www.aem.live/docs/davidsmodel). Genauer gesagt enthält [Blocksammlung](/help/edge/developer/block-collection.md) einen umfangreichen Satz von Inhaltsmodellen für bestimmte Anwendungsfälle gängiger Benutzeroberflächenmuster.
 
 Beim WYSIWYG-Authoring mit Edge Delivery Services wirft dies die Frage auf, wie ein überzeugendes semantisches Inhaltsmodell bereitgestellt werden kann, wenn die Informationen mit aus mehreren Feldern bestehenden Formularen erstellt werden, anstatt semantisches Markup so wie Rich-Text kontextbezogen zu bearbeiten.
 
@@ -345,7 +345,7 @@ Für einige Werte kann die semantische Bedeutung aus den Werten selbst abgeleite
 * **Bilder**: Wenn eine Referenz auf eine Ressource in AEM ein Asset mit einem MIME-Typ ist, der mit `image/` beginnt, wird die Referenz als `<picture><img src="${reference}"></picture>` gerendert.
 * **Links**: Wenn eine Referenz in AEM vorhanden ist, die kein Bild ist, oder wenn der Wert mit `https?://` oder `#` beginnt, wird die Referenz als `<a href="${reference}">${reference}</a>` gerendert.
 * **Rich-Text**: Wenn ein abgeschnittener Wert mit einem Absatz beginnt (`p`, `ul`, `ol`, `h1`-`h6` usw.), wird der Wert als Rich-Text gerendert.
-* **Klassennamen**: Die `classes`-Eigenschaft wird als [Blockoptionen](/help/edge/developer/markup-sections-blocks.md#block-options) behandelt und in der Tabellenkopfzeile für [einfache Blöcke](#simple) bzw. als Werteliste für Elemente in einem [Container-Block gerendert.](#container) Sie ist nützlich, wenn Sie [einen Block anders gestalten](/help/edge/wysiwyg-authoring/create-block.md#block-options), aber keinen völlig neuen Block erstellen möchten.
+* **Klassennamen** - Die `classes`-Eigenschaft wird als [Blockoptionen](/help/edge/developer/markup-sections-blocks.md#block-options) behandelt und in der Tabellenkopfzeile für [einfache Blöcke](#simple) oder als Werteliste für Elemente in einem [Container-Block](#container). Dies ist nützlich, wenn Sie [einen Block anders formatieren](/help/edge/wysiwyg-authoring/create-block.md#block-options) jedoch keinen völlig neuen Block erstellen müssen.
 * **Wertelisten**: Wenn es sich bei einem Wert um eine Eigenschaft mit mehreren Werten handelt und der erste Wert keiner der vorherigen ist, werden alle Werte als kommagetrennte Liste verkettet.
 
 Alles andere wird als einfacher Text gerendert.
@@ -532,11 +532,11 @@ Die Elementgruppierung verwendet eine Namenskonvention, bei der der Gruppenname 
 
 ## Abschnitte und Abschnittsmetadaten {#sections-metadata}
 
-Entwickelnde können verschiedene Abschnitte auf die gleiche Weise definieren, auf die sie auch mehrere [Blöcke](#blocks) definieren und modellieren.
+Auf die gleiche Weise können Entwicklerinnen und Entwickler mehrere [ definieren und modellieren ](#blocks)Blöcke), können sie auch verschiedene Abschnitte definieren.
 
 Das Inhaltsmodell von Edge Delivery Services lässt absichtlich nur eine einzige Verschachtelungsebene zu, d. h. jeder Standard-Content oder -block, der in einem Abschnitt enthalten ist. Um komplexere visuelle Komponenten zu erhalten, die andere Komponenten enthalten können, müssen diese daher als Abschnitte modelliert und mithilfe der Client-seitigen automatischen Blockerstellung kombiniert werden. Typische Beispiele hierfür sind Registerkarten und ausblendbare Abschnitte wie Akkordeons.
 
-Ein Abschnitt kann auf die gleiche Weise wie ein Block definiert werden, jedoch mit dem Ressourcentyp `core/franklin/components/section/v1/section`. Abschnitte können einen Namen und eine [Filter-ID](/help/implementing/universal-editor/filtering.md) haben, die nur vom [universellen Editor](/help/implementing/universal-editor/introduction.md) verwendet wird, sowie eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure), die zum Rendern der Abschnittsmetadaten verwendet wird. Das Modell ist auf diese Weise das Modell des Bereichsmetadatenblocks, der automatisch als Schlüssel-Wert-Block an einen Abschnitt angehängt wird, wenn dieser nicht leer ist.
+Ein Abschnitt kann auf die gleiche Weise wie ein Block definiert werden, jedoch mit dem Ressourcentyp `core/franklin/components/section/v1/section`. Abschnitte können einen Namen und eine [Filter-ID](/help/implementing/universal-editor/filtering.md) aufweisen, die nur vom [universellen Editor](/help/implementing/universal-editor/introduction.md) verwendet werden, sowie eine [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure), die zum Rendern der Abschnittsmetadaten verwendet wird. Das Modell ist auf diese Weise das Modell des Bereichsmetadatenblocks, der automatisch als Schlüssel-Wert-Block an einen Abschnitt angehängt wird, wenn dieser nicht leer ist.
 
 Die [Modell-ID](/help/implementing/universal-editor/field-types.md#model-structure) und [Filter-ID](/help/implementing/universal-editor/filtering.md) des Standardabschnitts ist `section`. Sie kann verwendet werden, um das Verhalten des Standardabschnitts zu ändern. Im folgenden Beispiel werden dem Abschnittsmetadatenmodell einige Stile und ein Hintergrundbild hinzugefügt.
 
@@ -595,7 +595,7 @@ Im folgenden Beispiel wird ein Registerkartenabschnitt definiert, der zum Erstel
 
 ## Seitenmetadaten {#page-metadata}
 
-Dokumente können eine Seite [Metadatenblock](https://www.aem.live/developer/block-collection/metadata) enthalten, mit der definiert wird, welche `<meta>`-Elemente im `<head>` einer Seite gerendert werden. Die Seiteneigenschaften von Seiten in AEM as a Cloud Service sind denen zugeordnet, die standardmäßig für Edge Delivery Services verfügbar sind, z. B. `title`, `description`, `keywords`.
+Dokumente können eine Seite [Metadatenblock) aufweisen](https://www.aem.live/developer/block-collection/metadata) mit der definiert wird, welche `<meta>` Elemente im `<head>` einer Seite gerendert werden. Die Seiteneigenschaften von Seiten in AEM as a Cloud Service sind denen zugeordnet, die standardmäßig für Edge Delivery Services verfügbar sind, z. B. `title`, `description`, `keywords`.
 
 Bevor Sie weitere Informationen zum Definieren Ihrer eigenen Metadaten erhalten, lesen Sie zunächst die folgenden Dokumente, um das Konzept der Seitenmetadaten zu verstehen.
 
@@ -645,5 +645,5 @@ Wenn Sie bereits mit der Erstellung von Blöcken vertraut sind, lesen Sie bitte 
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem AEM GEMs-Webinar](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für das WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [ Webinar zu AEM GEMs](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
 

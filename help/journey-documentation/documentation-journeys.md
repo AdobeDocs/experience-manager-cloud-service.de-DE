@@ -5,10 +5,10 @@ exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Dokumentations-Touren bieten eine erzählerische Struktur innerhalb der AEM-Doku
 
 Eine Dokumentations-Tour verbindet viele verschiedene und komplexe Themen und Funktionen durch eine Erzählung, die dem Leser, der mit AEM nicht vertraut ist, hilft, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder AEM vorausgesetzt werden.
 
-Die Dokumentations-Touren stehen im Gegensatz zu den bestehenden technischen Dokumentationen von AEM, die sich in erster Linie auf ein einzelnes Feature und die Dokumentation von Aufgaben konzentrieren, wobei eine Vertrautheit mit AEM vorausgesetzt wird. Durch die Konzentration auf die Konzepte und den Verzicht auf ausführliche Details in der vorhandenen technischen Dokumentation bieten die Dokumentationstouren den Leserinnen und Lesern, die AEM noch nicht kennen, einen Einstieg in die Nutzung der Plattform, indem sie Best Practice zur Bewältigung allgemeiner Geschäftsanforderungen und Arbeitsabläufe verwenden. Aus diesem Grund dienen Dokumentations-Touren als Ergänzung und nicht als Ersatz für [in AEM vorhandene technische Dokumentationen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)
+Die Dokumentations-Touren stehen im Gegensatz zu den bestehenden technischen Dokumentationen von AEM, die sich in erster Linie auf ein einzelnes Feature und die Dokumentation von Aufgaben konzentrieren, wobei eine Vertrautheit mit AEM vorausgesetzt wird. Durch die Konzentration auf die Konzepte und den Verzicht auf ausführliche Details in der vorhandenen technischen Dokumentation bieten die Dokumentationstouren den Leserinnen und Lesern, die AEM noch nicht kennen, einen Einstieg in die Nutzung der Plattform, indem sie Best Practice zur Bewältigung allgemeiner Geschäftsanforderungen und Arbeitsabläufe verwenden. Aus diesem Grund dienen Dokumentations-Journey als Ergänzung und nicht als Ersatz für die bestehende technische Dokumentation von [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de).
 
 ### Erlernen durch Erzählungen {#narrative}
 

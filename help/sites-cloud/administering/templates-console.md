@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 600f567e58e760a173e4099955e797ae44cfd3c6
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Erfahren Sie, wie die Vorlagenkonsole als zentraler Speicherort zum Anzeigen und
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Mit den bearbeitbaren Vorlagen von [AEM](/help/implementing/developing/components/templates.md) können Sie die Struktur der resultierenden Seite, jeden anfänglichen Inhalt und die verwendbaren Komponenten (Design-Eigenschaften) definieren.
 
-Inhaltsautoren werden eine Auswahl verfügbarer Vorlagen angezeigt, wenn sie in der Sites[Konsole neue Seiten erstellen.](/help/sites-cloud/authoring/sites-console/creating-pages.md) Vorlagen können verwendet werden, um Seiten zu erstellen, die bearbeitet werden können mit:
+Inhaltsautoren werden eine Auswahl verfügbarer Vorlagen angezeigt, wenn sie [neue Seiten in der Sites-Konsole erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md). Vorlagen können verwendet werden, um Seiten zu erstellen, die bearbeitet werden können mit:
 
 * [Der Seiteneditor](/help/sites-cloud/authoring/page-editor/templates.md) oder
 * [Der universelle Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -73,7 +73,7 @@ Wenn ein Autor eine Vorlage erstellt, die mit dem bereits aktivierten Vorlagened
 
 ## Eigenschaften {#properties}
 
-Sie können die [Eigenschaften der Vorlage](/help/sites-cloud/authoring/page-editor/templates.md) ähnlich wie [Seiteneigenschaften bearbeiten.Zu den ](/help/sites-cloud/authoring/sites-console/page-properties.md) gehören:
+Sie können die [Eigenschaften der Vorlage](/help/sites-cloud/authoring/page-editor/templates.md) ähnlich wie die folgenden bearbeiten [Seiteneigenschaften bearbeiten](/help/sites-cloud/authoring/sites-console/page-properties.md).Vorlageneigenschaften enthalten:
 
 * Vorlagentitel
 * Beschreibung
@@ -135,6 +135,6 @@ Wählen Sie die Vorlage aus und tippen oder klicken Sie auf **Löschen** um sie 
 
 ## Erstellen von Vorlagen {#create}
 
-Verwenden Sie die **Erstellen** in der Konsole, um eine neue Vorlage an Ihrem aktuellen Speicherort zu erstellen. Weitere Informationen zum Erstellen einer Vorlage finden Sie im Dokument [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können“](/help/sites-cloud/authoring/page-editor/templates.md)
+Verwenden Sie die **Erstellen** in der Konsole, um eine neue Vorlage an Ihrem aktuellen Speicherort zu erstellen. Weitere Informationen zum Erstellen einer Vorlage finden Sie im Dokument [Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können](/help/sites-cloud/authoring/page-editor/templates.md).
 
 Die **Erstellen**-Schaltfläche wird nur verwendet, um Vorlagen zu erstellen, die mit dem Seiteneditor bearbeitet werden können. Weitere Informationen zum Erstellen [ Vorlagen auf der Grundlage von Seiten, die mit dem universellen Editor erstellt wurden, finden Sie ](/help/sites-cloud/authoring/universal-editor/templates.md) Dokument „Vorlagen zum Erstellen von Seiten, die mit dem universellen Editor bearbeitet werden können“.

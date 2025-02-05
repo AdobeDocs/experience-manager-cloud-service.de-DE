@@ -4,10 +4,10 @@ description: Der Query Builder in AEM bietet eine einfache, anpassbare Möglichk
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ Das Gruppieren von Metadatenprädikaten einer Replikation mit einem benutzerdefi
 
 >[!TIP]
 >
->Die Einrichtung neuer AEM-Projekte, einschließlich der Verwendung von Maven, wird im [WKND-Tutorial](develop-wknd-tutorial.md) ausführlich erklärt.
+>Die Einrichtung neuer AEM-Projekte, einschließlich der Verwendung von Maven, wird im Abschnitt [WKND-Tutorial](develop-wknd-tutorial.md) ausführlich erläutert.
 
 Sie müssen zunächst die Maven-Abhängigkeiten Ihres Projekts aktualisieren. `PredicateEvaluator` ist Teil des `cq-search`-Artefakts und muss zur POM-Datei von Maven hinzugefügt werden.
 

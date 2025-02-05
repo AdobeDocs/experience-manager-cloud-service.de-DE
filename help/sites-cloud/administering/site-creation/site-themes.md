@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ Sites, die mit AEM-Site-Vorlagen erstellt wurden, ermöglichen den einfachen Dow
 
 Site-Designs werden auf zwei verschiedene Arten verwendet:
 
-* Sie werden als Teil einer Site-Vorlage verwendet, um beim [Erstellen einer Site](create-site.md) den Stil zu bestimmen.
+* Sie werden als Teil einer Site-Vorlage verwendet, um beim [Erstellen einer Site](create-site.md) den Stil zu definieren.
 * Sie werden heruntergeladen, nachdem eine Site basierend auf einer Site-Vorlage erstellt wurde, sodass ein Frontend-Entwickler den Stil weiter anpassen kann.
 
 >[!TIP]

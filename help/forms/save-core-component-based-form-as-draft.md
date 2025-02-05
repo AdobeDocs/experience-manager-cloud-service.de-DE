@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie auf Kernkomponenten basierende adaptive Formu
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 16%
@@ -22,7 +22,7 @@ Erwägen Sie einen Benutzer, der mit dem Ausfüllen eines Formulars beginnt, abe
 
 ## Voraussetzungen
 
-* [Aktivieren der Kernkomponenten für adaptive Forms für Ihre Umgebung.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Aktivieren der Kernkomponenten adaptiver Formulare für Ihre Umgebung](/help/forms/enable-adaptive-forms-core-components.md).
 
   Nach der Bereitstellung der neuesten Kernkomponenten in Ihrer Umgebung können Sie auf die Formularportal-Komponenten in Ihrer Authoring-Umgebung zugreifen.
 

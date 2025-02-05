@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reakt
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reaktionsfreie Wei
 
 ## Überblick {#overview}
 
-Sie können auch eine von Ihrer Staging-Umgebung getrennte Site für Ihre Produktionsumgebung einrichten. Die Einrichtung eines zweiten Standorts für eine separate Staging- und Produktionseinrichtung ähnelt der [Einrichtung, die für die Verwaltung mehrerer Standorte erforderlich ist.](/help/edge/wysiwyg-authoring/repoless-msm.md) Tatsächlich kann sie bei Bedarf mit MSM-Site-Strukturen kombiniert werden.
+Sie können auch eine von Ihrer Staging-Umgebung getrennte Site für Ihre Produktionsumgebung einrichten. Die Einrichtung eines zweiten Standorts für eine separate Staging- und Produktionseinrichtung ähnelt der [Einrichtung für die Verwaltung mehrerer Standorte erforderlich](/help/edge/wysiwyg-authoring/repoless-msm.md). Tatsächlich kann sie bei Bedarf mit MSM-Site-Strukturen kombiniert werden.
 
 In diesem Dokument wird ein typisches Beispiel für separate Staging- und Produktionsumgebungen verwendet. Sie können für jede gewünschte Umgebung separate Umgebungen erstellen.
 
@@ -33,8 +33,8 @@ In diesem Beispiel gehen wir davon aus, dass bereits eine Produktions-Site für 
 
 Es gibt zwei Schritte zum Konfigurieren einer separaten Produktions-Site.
 
-1. [Erstellen Sie neue Edge Delivery Services-Sites für Ihre Produktionsumgebung.](#create-edge-site)
-1. [Aktualisieren Sie die Cloud-Konfiguration in AEM für Ihren Produktions-Standort.](#update-cloud-configuration)
+1. [Erstellen Sie neue Edge Delivery Services-Sites für Ihre Produktionsumgebung](#create-edge-site).
+1. [Aktualisieren Sie die Cloud-Konfiguration in AEM für Ihren Produktions-Standort](#update-cloud-configuration).
 
 ### Erstellen neuer Edge Delivery Services-Sites für Ihre Produktionsumgebung {#create-edge-site}
 

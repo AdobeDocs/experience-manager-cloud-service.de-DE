@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Bausteine erstellen, die für den universelle
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -22,9 +22,9 @@ Diese Anleitung enthält schrittweise Anweisungen zum Erstellen von Bausteine, d
 
 Diese Anleitung setzt Kenntnisse über WYSIWYG-Authoring-Projekte mit Edge Delivery Services sowie über den universellen Editor voraus. Bevor Sie beginnen, sollten Sie bereits Zugriff auf Edge Delivery Services haben und mit den zugehörigen Grundlagen vertraut sein. Das heißt:
 
-* Sie haben das [Edge Delivery Services-Tutorial](/help/edge/developer/tutorial.md) abgeschlossen.
+* Sie haben das [Tutorial zum Edge Delivery-Service abgeschlossen](/help/edge/developer/tutorial.md).
 * Sie haben Zugriff auf eine [AEM Cloud Service-Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
-* Sie haben den [universellen Editor in derselben Sandbox-Umgebung aktiviert](/help/implementing/universal-editor/getting-started.md).
+* Sie haben [den universellen Editor in derselben Sandbox-Umgebung aktiviert](/help/implementing/universal-editor/getting-started.md).
 * Sie haben das [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) durchgearbeitet.
 
 Diese Anleitung baut auf der Arbeit auf, die im Rahmen des [Erste-Schritte-Handbuchs für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) durchgeführt wurde.
@@ -155,7 +155,7 @@ Im folgenden Beispiel für ein Zitat wird dieser Ansatz angewendet.
 
 Nachdem Ihr standardmäßiger Zitatblock definiert und in das Beispielprojekt übertragen wurde, können Sie einer vorhandenen Seite einen Zitatblock hinzufügen.
 
-1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. Navigieren Sie [mithilfe der Sites-Konsole](/help/sites-cloud/authoring/basic-handling.md) zu der Site, die Sie im Rahmen des [Erste-Schritte-Handbuchs für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und wählen Sie eine Seite aus.
+1. Melden Sie sich in einem Browser bei AEM as a Cloud Service an. [Navigieren Sie in der Sites](/help/sites-cloud/authoring/basic-handling.md)Konsole zu der Site, die Sie im Handbuch [Erste Schritte für Entwickler für das WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben, und wählen Sie eine Seite aus.
 
    * In diesem Fall wird `index` zur Veranschaulichung verwendet.
 
@@ -281,7 +281,7 @@ Herzlichen Glückwunsch! Sie verfügen nun über einen voll funktionierenden und
 
 ### Blockoptionen {#block-options}
 
-Wenn Sie einen Block benötigen, der je nach bestimmten Umständen etwas anders aussieht oder sich etwas anders verhalten soll, sich aber nicht stark genug unterscheidet, um selbst zu einem neuen Block zu werden, können Sie die Autorinnen und Autoren aus den [Blockoptionen](content-modeling.md#type-inference) auswählen lassen.
+Wenn ein Block basierend auf bestimmten Bedingungen etwas anders aussehen oder sich geringfügig anders verhalten soll, aber nicht unterschiedlich genug ist, um selbst zu einem neuen Block zu werden, können Sie Autorinnen und Autoren die Wahl aus [Blockoptionen](content-modeling.md#type-inference) lassen.
 
 Durch das Hinzufügen einer `classes`-Eigenschaft zum Block wird die Eigenschaft in der Tabellenkopfzeile für einfache Blöcke bzw. als Wertliste für Elemente in einem Container-Block gerendert.
 
@@ -343,4 +343,4 @@ Lesen Sie das Dokument [Inhaltsmodellierung beim WYSIWYG-Authoring mit Edge Deli
 
 >[!TIP]
 >
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem AEM GEMs-Webinar](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für das WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [ Webinar zu AEM GEMs](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

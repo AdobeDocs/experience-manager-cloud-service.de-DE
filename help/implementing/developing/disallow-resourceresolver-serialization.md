@@ -4,7 +4,7 @@ description: Deaktivieren der Serialisierung von ResourceResolvers über den Sli
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a64c17943332782814bdacd7484e056cd445d3a9
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 35%
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 Die Sling Model Exporter-Funktion ermöglicht das Serialisieren von Sling-Modell-Objekten in das JSON-Format. Diese Funktion wird häufig verwendet, da sie es SPAs (Single Page Applications) ermöglicht, einfach auf Daten aus AEM zuzugreifen. Auf der Implementierungsseite wird die Jackson-Datenbindungsbibliothek verwendet, um diese Objekte zu serialisieren.
 
-Die Serialisierung ist ein rekursiver Vorgang. Ausgehend von einem „Stammobjekt“ durchläuft es rekursiv alle geeigneten Objekte und serialisiert sie und ihre untergeordneten Elemente. Eine Beschreibung der serialisierten Felder finden Sie im Artikel [Jackson - Decide What Fields Get Serialized/Deserialized.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)
+Die Serialisierung ist ein rekursiver Vorgang. Ausgehend von einem „Stammobjekt“ durchläuft es rekursiv alle geeigneten Objekte und serialisiert sie und ihre untergeordneten Elemente. Eine Beschreibung der serialisierten Felder finden Sie im Artikel [Jackson - Decide What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
 Bei diesem Ansatz werden alle Objekttypen in JSON serialisiert. Natürlich kann es auch ein Sling-`ResourceResolver` serialisieren, wenn es von den Serialisierungsregeln abgedeckt wird. Dies ist problematisch, da der `ResourceResolver`-Dienst (und damit auch das Dienstobjekt, das ihn darstellt) potenziell vertrauliche Informationen enthält, die nicht offen gelegt werden sollten. Zum Beispiel:
 
@@ -49,6 +49,6 @@ Diese Protokollmeldung bedeutet, dass während des Serialisierungsprozesses von 
 
 Adobe fordert alle Kunden auf, ihre Anwendungsprotokolle und Code-Basen zu überprüfen, um festzustellen, ob sie von diesem Problem betroffen sind, und die benutzerdefinierte Anwendung bei Bedarf zu ändern, sodass diese Warnmeldung nicht mehr in den Protokollen angezeigt wird.
 
-Es wird davon ausgegangen, dass diese erforderlichen Änderungen in den meisten Fällen unkompliziert sind. Die `ResourceResolver` Objekte sind in der JSON-Ausgabe überhaupt nicht erforderlich, da die dort enthaltenen Informationen normalerweise von Frontend-Anwendungen nicht benötigt werden, was in den meisten Fällen ausreichen sollte, um das `ResourceResolver` Objekt von der Berücksichtigung durch Jackson auszuschließen (siehe [rules.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not))
+Es wird davon ausgegangen, dass diese erforderlichen Änderungen in den meisten Fällen unkompliziert sind. Die `ResourceResolver` Objekte sind in der JSON-Ausgabe überhaupt nicht erforderlich, da die dort enthaltenen Informationen normalerweise von Frontend-Anwendungen nicht benötigt werden, was in den meisten Fällen ausreichen sollte, um das `ResourceResolver` Objekt von der Berücksichtigung durch Jackson auszuschließen (siehe [Regeln](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).)
 
 Wenn ein Sling-Modell von diesem Problem betroffen, aber nicht geändert wird, erzwingt die explizite Deaktivierung der Serialisierung des `ResourceResolver`-Objekts (wie durch Adobe als zweiter Schritt ausgeführt) eine Änderung in der JSON-Ausgabe.

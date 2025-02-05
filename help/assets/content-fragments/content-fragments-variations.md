@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 99%
@@ -107,7 +107,7 @@ Der Vollbild-Texteditor bietet Folgendes:
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
-* [Format](#formats) auswählen ([Rich-Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown))
+* Wählen Sie [format](#formats) ([Rich-Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown))
 
 * [Inhalt hochladen](#uploading-content)
 
@@ -319,7 +319,7 @@ So fügen Sie eine Anmerkung zu einem Fragment hinzu:
 
 >[!NOTE]
 >
->Die Funktion Anmerkungen zeigt keine Kommentare an, die im neuen [Inhaltsfragment-Editor“ eingegeben ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
+>Die Funktion „Anmerkungen“ zeigt keine im neuen [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment) eingegebenen Kommentare an.
 
 ### Anzeigen, Bearbeiten und Löschen von Anmerkungen {#viewing-editing-deleting-annotations}
 

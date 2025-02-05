@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Erweiterungspunkte und an
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 95%
+ht-degree: 73%
 
 ---
 
@@ -41,13 +41,13 @@ Die Schaltfläche **Veröffentlichen** kann daher in einer App vollständig unte
 
 ### Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden Sie [ Dokument ](/help/implementing/universal-editor/filtering.md)Filterkomponenten“.
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ### Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
-Obwohl eine oder mehrere Komponenten für Ihre Autorinnen und Autoren allgemein verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten im Bedienfeld „Eigenschaften“ ausblenden, indem Sie den [Feldern des Komponentenmodells](/help/implementing/universal-editor/field-types.md#fields) ein `condition`-Attribut hinzufügen.
+Obwohl eine oder mehrere Komponenten für Ihre Autorinnen und Autoren allgemein verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten im Bedienfeld Eigenschaften ausblenden, indem Sie den [Feldern des Komponentenmodells“ ein `condition`-Attribut ](/help/implementing/universal-editor/field-types.md#fields).
 
-Bedingungen können mithilfe des [JsonLogic-Schemas definiert werden.](https://jsonlogic.com/) Wenn die Bedingung zutrifft, wird das Feld angezeigt. Wenn die Bedingung nicht zutrifft, wird das Feld ausgeblendet.
+Bedingungen können mithilfe des JsonLogic[Schemas definiert ](https://jsonlogic.com/). Wenn die Bedingung erfüllt ist, wird das Feld angezeigt. Wenn die Bedingung nicht zutrifft, wird das Feld ausgeblendet.
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ Bedingungen können mithilfe des [JsonLogic-Schemas definiert werden.](https://j
 
 ### Benutzerdefinierte Vorschau-URLs {#custom-preview-urls}
 
-Sie können eine benutzerdefinierte Vorschau-URL über eine Meta-Konfiguration `urn:adobe:aue:config:preview` angeben, die beim Klicken auf die Schaltfläche **Seite öffnen** in der [oberen rechten Symbolleiste des Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) geöffnet wird.
+Sie können eine benutzerdefinierte Vorschau-URL über eine `urn:adobe:aue:config:preview` Meta-Konfiguration angeben, die geöffnet wird, wenn Sie auf die Schaltfläche **Seite öffnen** in der Symbolleiste [Editor oben rechts](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) klicken.
 
-Dies ist besonders nützlich für Anwendungen mit bestimmten Vorschauanforderungen, z. B. bei der Verwendung von [Edge Delivery Services mit WYSIWYG-Authoring.](/help/edge/wysiwyg-authoring/authoring.md)
+Dies ist besonders für Programme mit bestimmten Vorschauanforderungen nützlich, z. B. solche, [die Edge Delivery Services mit WYSIWYG Authoring verwenden](/help/edge/wysiwyg-authoring/authoring.md).
 
 Fügen Sie dazu einfach die gewünschte Vorschau-URL wie im folgenden Beispiel in ein Meta-Tag der instrumentierten App ein.
 
@@ -110,6 +110,6 @@ Weitere Informationen zu diesen Möglichkeiten finden Sie in den folgenden Resso
 
 >[!TIP]
 >
->Wenn Sie es vorziehen, anhand von Beispielen zu lernen, sehen Sie sich bitte das folgende Tutorial an: [Tutorial zur Erweiterbarkeit der AEM-Benutzeroberfläche.](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Obwohl der Fokus des Tutorials auf der Erweiterung der Inhaltsfragment-Konsole liegt, ist das Konzept zur Implementierung einer Benutzeroberflächenerweiterung im universellen Editor identisch.
+>Wenn Sie es vorziehen, anhand von Beispielen zu lernen, lesen Sie bitte das Tutorial zur Erweiterbarkeit der [AEM-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Obwohl sie sich auf die Erweiterung der Inhaltsfragmentkonsole konzentriert, sind die Konzepte zur Implementierung einer Benutzeroberflächenerweiterung im universellen Editor dieselben.
 
-Mit dem [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/) können Sie Ihre Erweiterungen auf Instanzbasis aktivieren oder deaktivieren, auf Erweiterungen von Adobe zugreifen, einschließlich der Erweiterungen für den universellen Editor, und vieles mehr.
+[Mit dem Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/) können Sie Ihre Erweiterungen für jede Instanz aktivieren oder deaktivieren, auf die Adobe-Erstanbietererweiterungen zugreifen, einschließlich der Erweiterungen für den universellen Editor, und vieles mehr.

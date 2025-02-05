@@ -5,10 +5,10 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1936'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 
 ### Veröffentlichungen im Seiteneditor {#publishing-from-the-page-editor}
 
-Wenn Sie eine Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) bearbeiten, kann sie direkt im Editor veröffentlicht werden.
+Wenn Sie eine Seite im [Seiteneditor) bearbeiten](/help/sites-cloud/authoring/page-editor/introduction.md) kann sie direkt im Editor veröffentlicht werden.
 
 1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen, und danach die Option **Seite veröffentlichen**.
 

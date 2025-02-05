@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die d
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -150,7 +150,7 @@ Ein `add`-Aufruf erfolgt, wenn Sie mit dem universellen Editor eine neue Kompone
 
 Die Payload enthält ein `path`-Objekt, das den Pfad enthält, wo der Inhalt hinzugefügt werden soll.
 
-Es enthält auch ein `content`-Objekt mit zusätzlichen Objekten für endpunktspezifische Details des zu speichernden Inhalts [für jedes Plug-in.](/help/implementing/universal-editor/architecture.md) Wenn Ihre App beispielsweise auf Inhalten von AEM und Magento basiert, enthält die Payload ein Datenobjekt für jedes System.
+Es enthält auch ein `content` mit zusätzlichen Objekten für endpunktspezifische Details des zu speichernden Inhalts [für jedes Plug-in](/help/implementing/universal-editor/architecture.md). Wenn Ihre App beispielsweise auf Inhalten aus AEM und Magento basiert, würde die Payload für jedes System ein Datenobjekt enthalten.
 
 >[!BEGINTABS]
 

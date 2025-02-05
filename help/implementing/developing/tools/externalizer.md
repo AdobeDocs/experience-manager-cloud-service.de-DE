@@ -4,10 +4,10 @@ description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie Ressourcenpfade p
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 

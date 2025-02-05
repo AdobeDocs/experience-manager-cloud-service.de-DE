@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwend
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -185,7 +185,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 
    - Wenn Sie keine benutzerdefinierte Formularvorlage haben, wählen Sie die Option **[!UICONTROL Datensatzdokument erzeugen]**. Wenn Sie diese Option verwenden, zeigt das zum Signieren gesendete Dokument alle Felder des adaptiven Formulars an.
 
-1. Wählen Sie **[!UICONTROL Erstellen.]** Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL DocuSign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
+1. Wählen Sie **[!UICONTROL Erstellen]**. Es wird ein signaturfähiges adaptives Formular erstellt. Sie können Ihre [!DNL DocuSign]-Felder zum Formular hinzufügen und dieses zum Signieren senden.
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus. Wählen Sie auf der Registerkarte **[!UICONTROL Inhalt]** die Option **[!UICONTROL Formular-Container]** und dann ![Konfigurieren](assets/configure-icon.svg).
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Senden mit DocuSign-E-Signaturen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.

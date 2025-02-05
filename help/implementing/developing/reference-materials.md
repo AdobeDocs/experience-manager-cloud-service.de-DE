@@ -4,10 +4,10 @@ description: AEM verfügt über umfangreiche und leistungsstarke APIs, die Sie f
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -22,8 +22,8 @@ Die folgenden APIs sind zentraler Bestandteil von AEM.
 | API | Beschreibung |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Produktabstraktionen wie Seiten, Assets und Workflows. |
-| [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Open Web Stack von Adobe mit verschiedenen wichtigen Komponenten (die 6.5 Granite-Materialien gelten für AEMaaCS) |
-| [Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/documentation/) | Der visuelle Stil von Adobe für Cloud-Benutzeroberflächen und ein konsistentes Benutzererlebnis |
+| [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe auf Open Web Stack, der verschiedene wesentliche Komponenten bereitstellt (die 6.5 Granite-Materialien gelten für AEMaaCS) |
+| [Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/documentation/) | Visueller Stil der Adobe für Cloud-Benutzeroberflächen, der für ein konsistentes Benutzererlebnis sorgt |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -55,11 +55,11 @@ AEM basiert auf den folgenden vier primären Java-API-Sätzen in absteigender Re
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Daten- und Inhaltsabstraktionen wie Knoten, Eigenschaften und Sitzungen. |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi-Programm-Container-Abstraktionen wie Services und (OSGi-) Komponenten. |
 
-Wenn eine API von AEM bereitgestellt wird, sollten Sie sie Sling-, JCR- und OSGi-APIs vorziehen. Wenn AEM keine API bereitstellt, sollten Sie die Sling-API JCR- und OSGi-APIs vorziehen.
+Wenn eine API von AEM bereitgestellt wird, sollten Sie sie Sling-, JCR- und OSGi-APIs vorziehen. Wenn AEM keine API bereitstellt, sollten Sie Sling JCR und OSGi vorziehen.
 
 >[!TIP]
 >
->Weitere Informationen zu diesen Richtlinien finden Sie im Dokument [Grundlegendes zu den Best Practices für Java-APIs](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=de).
+>Weitere Informationen zu diesen Richtlinien finden Sie im Dokument [Grundlegendes zu den Best Practices für Java-API](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=de).
 
 ## AEM-Bereitstellungs- und -Content-Management-Services und -APIs {#delivery-apis}
 

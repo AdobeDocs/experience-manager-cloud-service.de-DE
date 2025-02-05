@@ -5,10 +5,10 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -18,9 +18,9 @@ Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site ers
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM-Journey zur schnellen Site-Erstellung, [Grundlegendes zu Cloud Manager und zum Workflow für die schnelle Site-Erstellung](cloud-manager.md), haben Sie sich mit Cloud Manager vertraut gemacht und erfahren, wie sich der Prozess zur schnellen Site-Erstellung zusammensetzt. Sie sollten jetzt:
+Im vorherigen Dokument der Journey zur schnellen Site-Erstellung in der AEM, [Grundlegendes zu Cloud Manager und zum Workflow für die schnelle Site-Erstellung](cloud-manager.md), haben Sie sich mit Cloud Manager vertraut gemacht und erfahren, wie sich der Prozess zur schnellen Site-Erstellung zusammensetzt. Sie sollten jetzt:
 
-* Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Front-End-Entwicklung zu erleichtern.
+* Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Frontend-Entwicklung zu erleichtern.
 * Erfahren haben, dass der Frontend-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
 
 Dieser Artikel baut auf diesen Grundlagen auf. Sie können also den ersten Konfigurationsschritt durchführen und eine Site für eine Vorlage erstellen, die Sie später mithilfe von Frontend-Tools anpassen können.
@@ -54,7 +54,7 @@ Vorlagen sind leistungsstark, da sie wiederverwendbar sind, sodass Ihre Inhaltsa
 
 ## Abrufen einer Site-Vorlage {#obtaining-template}
 
-Am einfachsten beginnen Sie, indem [Sie die neueste Version der AEM-Standard-Site-Vorlage aus dem GitHub-Repository herunterladen](https://github.com/adobe/aem-site-template-standard/releases).
+Am einfachsten beginnen Sie, indem Sie [die neueste Version der AEM-Standard-Site-Vorlage aus dem GitHub-Repository herunterladen](https://github.com/adobe/aem-site-template-standard/releases).
 
 Nach dem Herunterladen können Sie sie wie jedes andere Paket in Ihre AEM-Umgebung hochladen. Im Abschnitt [Zusätzliche Ressourcen](#additional-resources) finden Sie Details zur Arbeit mit Paketen, wenn Sie weitere Informationen zu diesem Thema benötigen.
 
@@ -177,11 +177,11 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Wissen, wie Sie mit einer Vorlage eine neue Site erstellen.
 * Erfahren haben, wie Sie die Vorlage von Ihrer neuen Site herunterladen, um sie für den Front-End-Entwickler bereitzustellen.
 
-Fahren Sie aufbauend auf diesen Kenntnissen mit der AEM-Journey zur schnellen Site-Erstellung fort, indem Sie als Nächstes das Dokument [Einrichten der Pipeline](pipeline-setup.md) lesen. Darin erstellen Sie eine Front-End-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Journey zur schnellen Site-Erstellung mit der AEM fort, indem Sie als Nächstes das Dokument [Einrichten der Pipeline](pipeline-setup.md) lesen, in dem Sie eine Frontend-Pipeline erstellen, um die Anpassung des Designs Ihrer Site zu verwalten.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Journey zur schnellen Site-Erstellung fortzufahren, indem Sie das Dokument [Einrichten der Pipeline](pipeline-setup.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Aber sie sind nicht erforderlich, um die Journey fortzusetzen.
+Es wird zwar empfohlen, mit dem nächsten Teil der Journey zu Quick Site Creation fortzufahren, indem Sie das Dokument [Einrichten der Pipeline](pipeline-setup.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Journey fortzufahren.
 
 * [AEM-Standard-Site-Vorlage](https://github.com/adobe/aem-site-template-standard) – Dies ist das GitHub-Repository der AEM-Standard-Site-Vorlage.
 * [Organisieren von Seiten](/help/sites-cloud/authoring/sites-console/organizing-pages.md) – In dieser Anleitung wird beschrieben, wie Sie die Seiten Ihrer AEM-Site organisieren.

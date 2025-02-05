@@ -4,10 +4,10 @@ description: Prädikatsreferenz für die Query Builder-API in AEM as a Cloud Ser
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

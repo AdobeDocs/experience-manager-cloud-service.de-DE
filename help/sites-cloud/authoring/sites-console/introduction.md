@@ -5,10 +5,10 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 100%
+source-wordcount: '1625'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z
 
 ![Beispiel für die Auswahl des seitlichen Bedienfelds](assets/sites-console-side-panel-selector.png)
 
-Weitere Informationen zum seitlichen Bedienfeld finden Sie im Dokument [Seitliches Bedienfeld der Sites-Konsole](/help/sites-cloud/authoring/sites-console/console-side-panel.md).
+Weitere Informationen zum Seitenbereich finden Sie unter [Seitenbereich der Sites-Konsole](/help/sites-cloud/authoring/sites-console/console-side-panel.md).
 
 ### Breadcrumbs {#breadcrumbs}
 
@@ -194,7 +194,7 @@ In der Listenansicht werden Informationen für jede Ressource in der aktuellen E
 ![Listenansicht](assets/sites-console-list-view.png)
 
 * Sie können in der Struktur nach unten navigieren, indem Sie auf den Ressourcennamen tippen/klicken, und mithilfe der [Breadcrumbs in der Kopfzeile](#the-header) wieder nach oben navigieren.
-* Um alle Elemente in der Liste auf einfache Weise auszuwählen, aktivieren Sie das Kontrollkästchen [**Alle auswählen** in der Symbolleiste.](#select-all)
+* Um alle Elemente in der Liste einfach auszuwählen, verwenden Sie das Kontrollkästchen [**Alle auswählen** in der Symbolleiste](#select-all).
 
 * Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 

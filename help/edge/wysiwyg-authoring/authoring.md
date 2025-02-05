@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die Inhaltserstellung mit Edge Delivery Services 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ Details zu den Bausteinen können dann im Bedienfeld „Eigenschaften“ konfigu
 
 ![Bausteineigenschaften konfigurieren](assets/block-properties.png)
 
-Weitere Informationen zum Verfassen mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Weitere Informationen zum Erstellen von Inhalten mit dem universellen Editor finden Sie im Dokument [Authoring von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 Lesen Sie hierzu das [Erste-Schritte-Handbuch für Entwickelnde für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
 

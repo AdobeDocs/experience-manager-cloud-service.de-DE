@@ -4,10 +4,10 @@ description: Erfahren Sie, wie bearbeitbare Vorlagen beim Erstellen einer Seite 
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -225,7 +225,7 @@ Zum Erstellen eines Ordners stehen Ihnen die folgenden Optionen zur Auswahl:
 
 >[!NOTE]
 >
->Im [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) können Sie den globalen Ordner bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
+>Im [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Dies ist jedoch keine empfohlene Best Practice.
 
 ### ACLs und Gruppen {#acls-and-groups}
 
@@ -467,7 +467,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 
 ### Layout {#layout}
 
-Beim [Bearbeiten einer Vorlage, in der Sie das Layout definieren können](/help/sites-cloud/authoring/page-editor/templates.md), wird das [standardmäßige responsive Layout](/help/sites-cloud/administering/responsive-layout.md) verwendet, das [auf der Seite von der Autorin bzw. vom Autor des Inhalts konfiguriert werden kann](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
+Beim [Bearbeiten einer Vorlage können Sie das Layout definieren](/help/sites-cloud/authoring/page-editor/templates.md) wird [responsives Standard-Layout](/help/sites-cloud/administering/responsive-layout.md) verwendet, das [auf der Seite vom Inhaltsautor konfiguriert werden kann](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 ### Inhaltsrichtlinien {#content-policies}
 

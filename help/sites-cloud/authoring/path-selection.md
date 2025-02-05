@@ -5,10 +5,10 @@ exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werde
 
 ## Pfadfelder {#path-fields}
 
-Im vorliegenden Beispiel wird zur Verdeutlichung die Bildkomponente verwendet. Weitere Informationen zur Verwendung und Bearbeitung von Komponenten finden Sie unter [Komponenten für die Seitenbearbeitung.](/help/sites-cloud/authoring/page-editor/components.md)
+Im vorliegenden Beispiel wird zur Verdeutlichung die Bildkomponente verwendet. Weitere Informationen zur Verwendung und Bearbeitung von Komponenten finden Sie unter [Komponenten für die Seitenbearbeitung](/help/sites-cloud/authoring/page-editor/components.md).
 
 Die Pfadfelder bieten auch automatisches Ausfüllen und Vorausschau auf Eingaben, um die Suche nach Ressourcen zu vereinfachen.
 
@@ -32,7 +32,7 @@ Alternativ können Sie etwas in das Pfadfeld eingeben und AEM schlägt Ihrer Ein
 
 ## Pfad-Browser {#path-browser}
 
-Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/basic-handling.md#column-view) der [**Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md) aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
+Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/basic-handling.md#column-view) der [**Sites**-](/help/sites-cloud/authoring/sites-console/introduction.md) aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 
 ![Pfad-Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 

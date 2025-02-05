@@ -4,10 +4,10 @@ description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM H
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funkt
 
 ## Was sind Inhaltsfragmentmodelle? {#what-are-content-fragment-models}
 
-[Nachdem Sie nun eine Konfiguration erstellt haben](create-configuration.md), können Sie damit Inhaltsfragmentmodelle erstellen.
+[Nachdem Sie eine Konfiguration erstellt haben](create-configuration.md) können Sie sie zum Erstellen von Inhaltsfragmentmodellen verwenden.
 
 Inhaltsfragmentmodelle definieren die Struktur der Daten und Inhalte, die Sie in AEM erstellen und verwalten. Sie dienen als Gerüst für Ihre Inhalte. Bei der Erstellung von Inhalten wählen Ihre Autoren aus den von Ihnen definierten Inhaltsfragmentmodellen aus, die sie bei der Erstellung von Inhalten anleiten.
 
@@ -67,7 +67,7 @@ Sie können mehrere Modelle erstellen. Modelle können auf andere Inhaltsfragmen
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie nun die Strukturen der Inhaltsfragmente durch die Erstellung von Modellen definiert haben, können Sie zum dritten Teil der Anleitung für den Einstieg übergehen und [Ordner erstellen, in denen Sie die Fragmente selbst speichern](create-assets-folder.md).
+Nachdem Sie nun die Strukturen Ihrer Inhaltsfragmente definiert haben, indem Sie Modelle erstellt haben, können Sie mit dem dritten Teil der ersten Schritte fortfahren und [Ordner erstellen, in denen Sie die Fragmente selbst speichern](create-assets-folder.md).
 
 >[!TIP]
 >

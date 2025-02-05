@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -91,4 +91,4 @@ Wenn eine eigenständige Seite gefunden wird, benennt MSM diese Seite um und ers
 
 Eine solche eigenständige Seite in einer Live Copy-Unterstruktur ist normalerweise das Ergebnis der Aktion **Trennen** oder die vorherige Live Copy-Seite wurde von einer Autorin oder einem Autor manuell gelöscht und dann mit demselben Namen neu erstellt.
 
-Um dies zu vermeiden, verwenden Sie die Funktion **Aussetzen** für die Live Copy anstelle von **Trennen**. Weitere Informationen zur Aktion **Trennen** finden Sie in [diesem Artikel.](creating-live-copies.md)
+Um dies zu vermeiden, verwenden Sie die Funktion **Aussetzen** für die Live Copy anstelle von **Trennen**. Weitere Informationen zur Aktion **Trennen** finden Sie in [diesem Artikel](creating-live-copies.md).

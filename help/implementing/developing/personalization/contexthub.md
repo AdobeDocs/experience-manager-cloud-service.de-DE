@@ -4,10 +4,10 @@ description: ContextHub ist ein Framework zum Speichern, Ändern und Darstellen 
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ Die Client-seitige JavaScript-API ermöglicht Ihnen den Zugriff auf die Daten zu
 
 ## Präsentation {#presentation}
 
-Die [ContextHub-Symbolleiste](/help/sites-cloud/authoring/personalization/contexthub.md) ermöglicht es Marketern und Autoren, gespeicherte Daten anzuzeigen und zu bearbeiten, um das Anwendererlebnis beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von UI-Modulen, die den Zugriff auf [ContextHub-Speicher](#persistence) ermöglichen, in denen ContextHub-Daten auf dem Client beibehalten werden.
+Die [ContextHub-Symbolleiste](/help/sites-cloud/authoring/personalization/contexthub.md) ermöglicht es Marketern und Autoren, gespeicherte Daten anzuzeigen und zu bearbeiten, um das Anwendererlebnis beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von Benutzeroberflächenmodulen, die Zugriff auf [ContextHub-Stores](#persistence) bieten, die ContextHub-Daten auf dem Client persistieren.
 
 Jedes ContextHub-UI-Modul ist eine Instanz eines vordefinierten Modultyps:
 

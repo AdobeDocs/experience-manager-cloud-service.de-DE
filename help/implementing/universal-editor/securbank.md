@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über den universellen Editor anhand eines prakti
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -24,12 +24,12 @@ Erfahren Sie mehr über den universellen Editor anhand eines praktischen Beispie
 
 Die Installation der SecurBank-Anwendung ist an sich unkompliziert. Aber da sie viele Bereiche von AEM as a Cloud Service berührt, ist eine Reihe von Schritten erforderlich. Nachstehend finden Sie eine Übersicht der wesentlichen Schritte:
 
-1. [Erstellen eines Sandbox-Programms in Cloud Manager.](#create-sandbox-program)
-1. [Klonen des Git-Repositorys des Programms und Aktualisieren des Repositorys mit SecurBank-AEM-Projektinhalten.](#clone-and-update)
-1. [Ausführen der Pipeline zur Bereitstellung des SecurBank-AEM-Projekts.](#run-pipeline)
-1. [Abrufen von Cloud Manager-Anmeldedaten für die lokale Web-Anwendungsentwicklung.](#retrieve-credentials)
-1. [Herunterladen und Konfigurieren der SecurBank-Web-Anwendung.](#download-web-app)
-1. [Ausführen der SecurBank-Web-Anwendung.](#run-web-app)
+1. [Erstellen eines Sandbox-Programms in Cloud Manager](#create-sandbox-program).
+1. [Klonen Sie das Git-Repository des Programms und aktualisieren Sie mit den Inhalten des Projekts SecurBank AEM](#clone-and-update).
+1. [Führen Sie die Pipeline aus, um das SecurBank AEM-Projekt bereitzustellen](#run-pipeline).
+1. [Abrufen von Cloud Manager-Anmeldeinformationen für die lokale Entwicklung von Web-Apps](#retrieve-credentials).
+1. [Laden Sie die SecurBank-Web-App herunter und konfigurieren Sie sie](#download-web-app).
+1. [Ausführen der SecurBank-Web-App](#run-web-app).
 
 In den folgenden Abschnitten werden die einzelnen erforderlichen Aufgaben beschrieben.
 
@@ -48,7 +48,7 @@ Sie benötigen ein neues Cloud Manager-Programm, in dem Sie SecurBank installier
 
 1. Nachdem das Programm erstellt wurde, öffnen Sie es und tippen oder klicken Sie auf der Registerkarte **Repositorys** auf die Schaltfläche **Auf Repository-Informationen zugreifen**. Daraufhin wird das Dialogfeld **Repository-Informationen** mit den Anmeldedaten angezeigt, die für den Zugriff auf das Git-Repository für die Sandbox-Umgebung erforderlich sind.
 
-   * Weitere Informationen zum Zugriff auf Ihre Repository-Informationen finden Sie im Dokument [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   * Weitere Informationen zum Zugriff auf Ihre Repository-Informationen finden Sie im Dokument [Zugriff auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Klonen Sie mithilfe der Anmeldedaten im Dialogfeld **Repository-Informationen** das Repository auf Ihrem lokalen Computer.
 

@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Dieser Leitfaden führt Sie durch die wichtigsten Themen der Headless-Übersetzu
 
 Ziel ist es, Ihnen ein breites Verständnis der Headless-Technologie sowie davon, wie AEM Headless-Inhalte bereitstellt und wie Sie es übersetzen können, zu vermitteln. Wenn Sie mit keinem dieser Themen vertraut sind, ist dies Ihr idealer Ausgangspunkt.
 
-Wenn Sie bereits mit AEM, Headless und Übersetzung vertraut sind, verfügen Sie vielleicht schon über das Grundwissen aus dieser Tour. Ziehen Sie auch unsere technische Dokumentation zu Rate, die im [Abschnitt Zusätzliche Ressourcen unten verlinkt ist.](#additional-resources)
+Wenn Sie bereits mit AEM, Headless und Übersetzung vertraut sind, verfügen Sie vielleicht schon über das Grundwissen aus dieser Tour. Ziehen Sie auch unsere technische Dokumentation zu Rate, die im Abschnitt [Zusätzliche Ressourcen unten“ verlinkt ](#additional-resources).
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 

@@ -5,10 +5,10 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Dokument erfahren Sie, wie das Tool AEM Quick Site Creation funktionie
 
 Dieses Dokument behandelt vorrangig die grundlegenden Bestandteile für die schnelle Site-Erstellung. Im nächsten Schritt der Tour beginnen Sie mit der Konfiguration.
 
-Es wird empfohlen, diese Tour Schritt für Schritt durchzuführen. Wenn Sie aber bereits wissen, dass AEM Sites und Cloud Manager zusammenarbeiten, und Sie direkt mit der Konfiguration beginnen möchten, können Sie [zum nächsten Schritt der Tour springen](create-site.md).
+Es wird empfohlen, diese Journey Schritt für Schritt durchzuführen. Wenn Sie aber bereits wissen, dass AEM Sites und Cloud Manager zusammenarbeiten, und Sie direkt mit der Konfiguration beginnen möchten, können Sie [zum nächsten Schritt der Journey springen](create-site.md).
 
 ## Verantwortliche Rolle {#responsible-role}
 
@@ -122,11 +122,11 @@ Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgesc
 * Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Frontend-Entwicklung zu erleichtern.
 * Erfahren haben, dass der Frontend-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
 
-Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie als Nächstes das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) durchgehen, in dem Sie lernen, wie Sie eine neue AEM-Site mithilfe einer Vorlage schnell erstellen können.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Journey zur schnellen Site-Erstellung von AEM fort, indem Sie als Nächstes das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) lesen, in dem Sie lernen, wie Sie eine neue AEM-Site mithilfe einer Vorlage schnell erstellen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Tour zu Quick Site Creation fortzufahren, indem Sie das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) durchgehen, Sie finden aber im Folgenden noch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen. Diese sind jedoch nicht zwingend erforderlich, um mit der Tour fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Journey zu Quick Site Creation fortzufahren, indem Sie das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um mit der Journey fortzufahren.
 
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
 * [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=de): Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Weitere Informationen zu diesen Rollen und deren Verwaltung finden Sie in diesem Dokument.

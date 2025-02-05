@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ Kundinnen und Kunden können proaktive Maßnahmen ergreifen, um Angriffe auf Anw
 
 Auf der Apache-Ebene können Kundinnen und Kunden beispielsweise das [Dispatcher-Modul](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) konfigurieren, um den Zugriff auf bestimmte Inhalte zu beschränken.
 
-Wie in diesem Artikel beschrieben, können Traffic-Filterregeln auf dem von Adobe verwalteten CDN bereitgestellt werden. Verwendet werden dazu die in Cloud Manager verfügbaren [Konfigurations-Pipelines.](/help/operations/config-pipeline.md) Zusätzlich zu Traffic-Filterregeln, die auf Eigenschaften wie IP-Adresse, Pfad und Headern basieren, oder Regeln, die auf der Festlegung von Ratenbeschränkungen beruhen, können Kundinnen und Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die sogenannten WAF-Regeln.
+Wie in diesem Artikel beschrieben, können Traffic-Filterregeln mithilfe der Cloud Manager-Pipelines (config[ im Adobe-verwalteten CDN bereitgestellt ](/help/operations/config-pipeline.md). Zusätzlich zu Traffic-Filterregeln, die auf Eigenschaften wie IP-Adresse, Pfad und Kopfzeilen basieren, oder Regeln, die auf der Festlegung von Ratenbeschränkungen beruhen, können Kundinnen und Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die sogenannten WAF-Regeln.
 
 ## Vorgeschlagener Prozess {#suggested-process}
 
@@ -105,11 +105,11 @@ Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die 
 
 1. Wenn WAF-Regeln lizenziert sind, sollten Sie die Funktion in Cloud Manager aktivieren, wie unten für sowohl neue als auch bestehende Programmszenarien beschrieben.
 
-   1. Um WAF in einem neuen Programm zu konfigurieren, markieren Sie das Kontrollkästchen **WAF-DDOS-Schutz** auf der Registerkarte **Sicherheit**, wenn Sie [ein Produktionsprogramm hinzufügen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+   1. Um WAF auf einem neuen Programm zu konfigurieren, aktivieren Sie das Kontrollkästchen **WAF-DDOS-Schutz** auf der Registerkarte **Sicherheit**, wenn Sie [ein Produktionsprogramm hinzufügen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
    1. Um WAF für ein vorhandenes Programm zu konfigurieren, können Sie jederzeit Ihr [Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) und auf der Registerkarte **Sicherheit** die Option **WAF-DDOS** deaktivieren oder aktivieren.
 
-1. Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im Artikel zu [Konfigurations-Pipelines.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Die Pipeline verweist auf einen Ordner der obersten Ebene mit dem Namen `config`. Die Datei `cdn.yaml` ist in der Hierarchie darunter abgelegt, siehe [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure).
+1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im [Artikel zur Konfigurations-Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben. Die Pipeline verweist auf einen `config` der obersten Ebene, wobei die `cdn.yaml` irgendwo unten platziert ist, siehe [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntax für Traffic-Filterregeln {#rules-syntax}
 

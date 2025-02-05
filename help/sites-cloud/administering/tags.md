@@ -5,10 +5,10 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -75,8 +75,8 @@ So greifen Sie auf die Tagging-Konsole zu:
 Es gibt mehrere Schritte zum Erstellen und Verwenden von Tags zum Organisieren Ihrer Inhalte.
 
 1. [Erstellen Sie einen Namespace für Ihre Tags](#creating-namespaces) (oder wählen Sie einen vorhandenen, der wiederverwendet werden soll).
-1. [Erstellen Sie ein neues Tag.](#creating-tags)
-1. [Veröffentlichen Sie das Tag.](#publishing-tags)
+1. [Erstellen Sie ein neues Tag](#creating-tags).
+1. [Publish das Tag](#publishing-tags).
 
 ### Erstellen von Namespaces {#creating-namespaces}
 
@@ -96,7 +96,7 @@ Ein Namespace wird zum Organisieren anderer Tags verwendet. Er kann als Tag der 
 
 Der Namespace wird erstellt. In der Tagging-Konsole befinden sich die Namespaces auf der niedrigsten Ebene (in der Spalte ganz links in der Konsole) und werden durch Ordnersymbole dargestellt, die ihre Art als „Container“ oder Gruppierung anderer Tags widerspiegeln.
 
-Sie können in diesem Namespace jetzt [neue Tags erstellen](#creating-tags) oder [vorhandene Tags verwalten.](#managing-tags)
+Sie können jetzt [neue Tags erstellen](#creating-tags) in diesem Namespace oder [vorhandene Tags verwalten](#managing-tags).
 
 Ein Namespace darf keine Unter-Tags enthalten. Da ein Namespace selbst ein Tag ist, kann er wie jedes andere Tag zur Organisation Ihrer Inhalte verwendet werden. Um jedoch mit der Erstellung einer strukturierten Tagging-Taxonomie fortzufahren, können Sie in diesem Namespace basierend auf Ihren Projektanforderungen [Unter-Tags erstellen](#creating-tags).
 
@@ -104,7 +104,7 @@ Ein Namespace darf keine Unter-Tags enthalten. Da ein Namespace selbst ein Tag i
 
 Tags werden im Allgemeinen zu Namespaces hinzugefügt.
 
-1. Um ein Tag zu erstellen, öffnen Sie die [Tagging-Konsole.](#tagging-console)
+1. Um ein Tag zu erstellen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
 1. Wählen Sie den Namespace aus, in dem Sie das Tag erstellen möchten. Oder wählen Sie ein anderes Tag aus, um ein untergeordnetes Tag darunter zu erstellen.
 
@@ -206,13 +206,13 @@ Tags und Namespaces können nach dem Erstellen bearbeitet werden.
 
 Detaillierte Informationen zum Hinzufügen von Übersetzungen finden Sie im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](#managing-tags-in-different-languages).
 
-Wenn die von Ihnen vorgenommenen Änderungen an einem bereits veröffentlichten Tag vorgenommen wurden, sollten Sie [es erneut veröffentlichen](#publishing-tags).
+Wenn es sich bei den von Ihnen vorgenommenen Änderungen um ein bereits veröffentlichtes Tag handelt, sollten Sie es [erneut veröffentlichen](#publishing-tags).
 
 ### Rückgängigmachen der Veröffentlichung {#unpublishing-tags}
 
 Um das Tag in Ihrer Autoreninstanz zu deaktivieren und es aus Ihrer Veröffentlichungsinstanz zu entfernen, können Sie seine Veröffentlichung aufheben.
 
-1. Um die Veröffentlichung eines Tags aufzuheben, öffnen Sie die [Tagging-Konsole](#tagging-console).
+1. Um die Veröffentlichung eines Tags rückgängig zu machen, öffnen Sie die [Tagging-Konsole](#tagging-console).
 
 1. Wählen Sie die Tags, deren Veröffentlichung aufgehoben werden soll, und dann in der Symbolleiste die Option **Veröffentlichung aufheben** aus.
 
@@ -258,7 +258,7 @@ Es kann erforderlich sein, Ihre Tagging-Taxonomie zu bereinigen oder anderweitig
 >
 >Es ist Best Practice, dass nur Admins Tags verschieben und umbenennen dürfen.
 
-1. Um ein Tag zu verschieben oder umzubenennen, öffnen Sie die [Tagging-Konsole](#tagging-console).
+1. Um ein Tag zu verschieben oder umzubenennen, öffnen Sie die &quot;[-Konsole](#tagging-console).
 
 1. Wählen Sie das zu verschiebende oder umzubenennende Tag und dann in der Symbolleiste die Option **Verschieben** aus.
 
