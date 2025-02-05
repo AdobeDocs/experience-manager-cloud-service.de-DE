@@ -4,7 +4,7 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
+source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 100%
@@ -158,7 +158,10 @@ Ein AEM-Inhaltskomponententyp aktiviert eine AEM-Inhaltsauswahl, die zum Auswäh
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -332,7 +335,10 @@ Mit der Auswahl für Inhaltsfragmente können Sie ein [Inhaltsfragment](/help/si
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
