@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 30%
+source-wordcount: '2056'
+ht-degree: 29%
 
 ---
 
@@ -111,7 +111,19 @@ Bereit zum Start? Die folgenden Artikel enthalten detaillierte Anweisungen zur V
 
 ### HTML von E-Mail-Vorlagen in Adaptive Forms
 
-Adaptive Forms ermöglicht die Verwendung von HTML-E-Mail-Vorlagen. HTML-E-Mail-Vorlagen ermöglichen es Ihnen, beim Senden eines Formulars ansprechende, personalisierte und visuell ansprechende E-Mails zu senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei Adaptive Forms können Sie entweder eine Datei hochladen, die eine HTML-Vorlage enthält, oder einen Texteditor verwenden, um diese Vorlagen zu erstellen.
+
+Adaptive Forms ermöglicht die Verwendung von [HTML-E-Mail-Vorlagen](/help/forms/html-email-templates-in-adaptive-forms.md). HTML-E-Mail-Vorlagen ermöglichen es Ihnen, beim Senden eines Formulars ansprechende, personalisierte und visuell ansprechende E-Mails zu senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei Adaptive Forms können Sie entweder eine Datei hochladen, die eine HTML-Vorlage enthält, oder einen Texteditor verwenden, um diese Vorlagen zu erstellen.
+
+![HTML-E-Mail-Vorlagen](/help/forms/assets/html-email.png)
+
+### Übermittlungsaktion für RESTful-Webservices
+
+Adaptive Forms kann jetzt mithilfe der neuen Übermittlungsaktion RESTful-Web-Services erfasste Daten nahtlos an authentifizierte externe REST-Endpunkte senden:
+
+* Unterstützte Standards: Swagger 2.0 und 3.0 für einfache API-Integration
+* Sichere Authentifizierung: OAuth 2.0, einfache Authentifizierung, API-Schlüssel und benutzerdefinierte Authentifizierung
+* Flexible Datenformate: Mehrteilige Formulardaten, JSON und URL-codierte (Schlüssel-Wert-Paare)
+
 
 
 ### Unterstützung von RTL-Sprachen (Right-to-Left - von rechts nach links)
