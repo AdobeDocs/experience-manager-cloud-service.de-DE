@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '950'
 ht-degree: 21%
 
 ---
@@ -56,6 +56,11 @@ Die Funktionsaktivierung von 2025.2.0 wird den vollen Funktionsumfang für diese
 
 ### Behobene Probleme {#fixed-issues-19352}
 
+* CQ-4356756: Keine Unterstützung für zugehörige Assets übersetzen.
+* CQ-4358206: Die Planung für wiederholte Übersetzungen funktioniert nicht für Übersetzungsprojekte.
+* CQ-4358126: Im Übersetzungs-Cloud-Service kann kein Konfigurationsunterordner ausgewählt werden.
+* FORMS-18098, FORMS-17954: Adaptive Forms werden im Internet Explorer-Modus des Microsoft Edge-Browsers nicht geladen.
+* FORMS-17162: Das Veröffentlichen eines Assets führt zum Ausführen von vorkonfigurierten Abfragen, was die Veröffentlichungsleistung beeinträchtigt.
 * SITES-28415: Edge Delivery mit universellem Editor: Korrigieren Sie die Schaltfläche Offene Eigenschaften für Tabellen.
 * SITES-26669: Edge Delivery mit universellem Editor: Beheben von Problemen beim Hochladen von CSV-Dateien, die in UTF-8 mit einer STL als Tabelle kodiert sind.
 * SITES-26543: Edge Delivery mit universellem Editor: Korrigieren Sie leere Blöcke, ohne dass ein Modell falsches Markup rendert.
@@ -85,8 +90,6 @@ Die Funktionsaktivierung von 2025.2.0 wird den vollen Funktionsumfang für diese
 * SITES-26660: Der Vergleich der Inhaltsfragmentversion ist möglicherweise fehlerhaft, wenn @ContentType vom Typ „Zeichenfolge“ ist.
 * SITES-26626: Fehlende customErrorMessage in Zahlen- und booleschen Feldern.
 * SITES-26268: Fehlerhafter Status-Code wird zurückgegeben, wenn ein Verweis beim Erstellen eines Fragments ungültig ist.
-* FORMS-18098, FORMS-17954: Adaptive Forms werden im Internet Explorer-Modus des Microsoft Edge-Browsers nicht geladen.
-* FORMS-17162: Das Veröffentlichen eines Assets führt zum Ausführen von vorkonfigurierten Abfragen, was die Veröffentlichungsleistung beeinträchtigt.
 
 ### Bekannte Probleme {#known-issues-19352}
 
