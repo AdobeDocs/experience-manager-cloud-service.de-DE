@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 22%
+source-wordcount: '919'
+ht-degree: 21%
 
 ---
 
@@ -85,6 +85,8 @@ Die Funktionsaktivierung von 2025.2.0 wird den vollen Funktionsumfang für diese
 * SITES-26660: Der Vergleich der Inhaltsfragmentversion ist möglicherweise fehlerhaft, wenn @ContentType vom Typ „Zeichenfolge“ ist.
 * SITES-26626: Fehlende customErrorMessage in Zahlen- und booleschen Feldern.
 * SITES-26268: Fehlerhafter Status-Code wird zurückgegeben, wenn ein Verweis beim Erstellen eines Fragments ungültig ist.
+* FORMS-18098, FORMS-17954: Adaptive Forms werden im Internet Explorer-Modus des Microsoft Edge-Browsers nicht geladen.
+* FORMS-17162: Das Veröffentlichen eines Assets führt zum Ausführen von vorkonfigurierten Abfragen, was die Veröffentlichungsleistung beeinträchtigt.
 
 ### Bekannte Probleme {#known-issues-19352}
 

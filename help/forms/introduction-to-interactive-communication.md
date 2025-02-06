@@ -3,7 +3,7 @@ title: Einführung in die interaktive Kommunikation
 description: Entwickeln Sie mit AEM Forms Interactive Communications auf einfache Weise dynamische, datengesteuerte Kommunikationen
 feature: Release Information
 role: Admin
-source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 3%
@@ -18,12 +18,12 @@ Sie können unser intuitives grafisches Design-Tool (interaktiver Kommunikations
 
 Von Finanzinstituten, die Kontoauszüge generieren, bis hin zu Regierungsbehörden, die Mitteilungen über finanzielle Leistungen optimieren, ist Interactive Communications das erste Tool zur Erstellung von hochwertiger, sicherer und gesetzeskonformer Korrespondenz mit Leichtigkeit und Effizienz.
 
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+>[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 -->
+
 ## Kernfunktionen
 
 Die Kernfunktionen des Editors für interaktive Kommunikation sind:
