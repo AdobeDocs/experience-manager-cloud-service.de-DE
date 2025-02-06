@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 99%
+source-wordcount: '4129'
+ht-degree: 98%
 
 ---
 
@@ -275,6 +275,28 @@ Sie können dem Übersetzungsauftrag Ihres Übersetzungsprojekts Seiten, Assets 
 >[!TIP]
 >
 >Diese Methode fügt dem Projekt Seiten/Assets und deren untergeordnete Elemente hinzu. Wählen Sie **Asset/Seite (ohne untergeordnete Elemente)** aus, wenn Sie nur die übergeordneten Elemente hinzufügen möchten.
+
+### Hinzufügen von i18n-Wörterbüchern zu einem Übersetzungsauftrag {#adding-i-n-dictionaries-to-a-translation-job}
+
+Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. Hinzufügen eines i18n-Wörterbuchs:
+
+1. Klicken Sie unten im Übersetzungsprojekt auf der Kachel „Übersetzungsauftrag“ auf die Auslassungspunkte.
+
+   ![Kachel des Übersetzungsauftrags](../assets/translation-job.png)
+
+1. Klicken Sie auf „Hinzufügen“ und „I18N-Wörterbuch“.
+
+   ![i18n-Wörterbuch hinzufügen](../assets/add-i18n.png)
+
+1. Wählen Sie **Stammverzeichnis** und das Wörterbuch (falls erforderlich), das Sie hinzufügen möchten, und wählen Sie dann **Hinzufügen**.
+
+   ![i18n-Wörterbuch auswählen](../assets/select-i18n.png)
+
+Ihr Wörterbuch befindet sich jetzt in Ihrem Übersetzungsauftrag und der Übersetzungsprozess kann dann gestartet werden, um die Wörterbuchsprachkopien in `/content/cq:i18n` zu erstellen und diese Wörterbuchsprachkopien zur Übersetzung zu senden.
+
+>[!NOTE]
+>
+>Weitere Informationen zu i18n-Wörterbüchern finden Sie im Abschnitt [Verwenden des Übersetzers zur Verwaltung von Wörterbüchern](/help/implementing/developing/extending/i18n/translator.md).
 
 ### Hinzufügen von Tags zu einem Übersetzungsauftrag {#adding-tags-to-a-translation-job}
 

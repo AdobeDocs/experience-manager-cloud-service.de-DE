@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 401685af02c720994d72cd95d36f0cfcdf15d198
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 93%
+source-wordcount: '355'
+ht-degree: 90%
 
 ---
 
@@ -21,9 +21,9 @@ Internationalisieren Sie Komponenten und Dialogfelder, damit die zugehörigen Ze
 
 Verwenden Sie den folgenden Prozess, um Ihre Komponenten zu internationalisieren und die Benutzeroberfläche in verschiedenen Sprachen bereitzustellen:
 
-1. [Implementieren Sie Ihre Komponenten mit Code, der Zeichenfolgen internationalisiert](/help/implementing/developing/extending/i18n/dev.md). Ihr Code identifiziert die zu übersetzenden Zeichenfolgen und wählt die Sprache aus, die zur Laufzeit angezeigt werden soll.
-1. Erstellen Sie Wörterbücher und fügen Sie die zu übersetzenden englischen Zeichenfolgen hinzu.
-1. Exportieren Sie das Wörterbuch in das XLIFF-Format, übersetzen Sie die Zeichenfolgen und importieren Sie dann die XLIFF-Dateien zurück in AEM. 
+1. [Implementieren Sie Ihre Komponenten mit Code, der Zeichenfolgen internationalisiert.](/help/implementing/developing/extending/i18n/dev.md)Ihr Code identifiziert die zu übersetzenden Zeichenfolgen und wählt die Sprache aus, die zur Laufzeit angezeigt werden soll.
+1. [Erstellen von ](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary).
+1. [Exportieren](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary) Sie das Wörterbuch in das XLIFF-Format, übersetzen Sie die Zeichenfolgen und importieren Sie dann die XLIFF-Dateien wieder in AEM.
 1. Integrieren Sie das Wörterbuch in den Versionsverwaltungsprozess Ihrer Anwendung.
 
 >[!NOTE]
@@ -37,10 +37,11 @@ Das AEM-Internationalisierungs6Framework verwendet Wörterbücher im Repository,
 * Code ist leicht zu lesen.
 * Die Standardsprache ist immer verfügbar.
 
-Änderungen an der Übersetzung müssen von Git über die [CI/C-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM as a Cloud Service vorgenommen werden.
+Mit [Übersetzungs-Tool](/help/implementing/developing/extending/i18n/translator.md) können Sie alle Wörterbücher an einer zentralen Stelle verwalten.
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 
+Änderungen an der Übersetzung müssen von Git über die [CI/C-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM as a Cloud Service vorgenommen werden.
 
 ### Überschreiben von Zeichenfolgen in Systemwörterbüchern {#overlaying-strings-in-system-dictionaries}
 
