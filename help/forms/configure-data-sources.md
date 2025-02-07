@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 100%
+source-wordcount: '2339'
+ht-degree: 94%
 
 ---
 
@@ -123,7 +123,10 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
 
-RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/v2/) im JSON- oder YAML-Format in einer [!DNL Swagger]-Definitionsdatei beschrieben werden. Um den RESTful-Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie entweder die [!DNL Swagger]-Datei ([Swagger Version 2.0](https://swagger.io/specification/v2/)) oder [!DNL Swagger]-Datei ([Swagger Version 3.0](https://swagger.io/specification/v3/)) auf Ihrem Dateisystem oder die URL, unter der die Datei gehostet wird.
+RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/v2/) im JSON- oder YAML-Format in einer [!DNL Swagger]-Definitionsdatei oder einem Service-Endpunkt beschrieben werden.
+
+>[!NOTE]
+> Um den RESTful-Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie entweder die [!DNL Swagger]-Datei ([Swagger Version 2.0](https://swagger.io/specification/v2/)) oder [!DNL Swagger]-Datei ([Swagger Version 3.0](https://swagger.io/specification/v3/)) auf Ihrem Dateisystem oder die URL, unter der die Datei gehostet wird.
 
 ### Konfigurieren von RESTful-Services für Open API Spezifikation Version 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -177,6 +180,31 @@ Einige der von RESTful Services Open API Specifikation Version 3.0 nicht unterst
 * Verschiedene Anfrageinstanzen für verschiedene MIME-Typen für einen einzelnen Vorgang
 
 Weitere Informationen finden Sie unter [OpenAPI 3.0-Spezifikation](https://swagger.io/specification/v3/).
+
+### Konfigurieren von RESTful-Services mithilfe des Service-Endpunkts {#configure-restful-services-service-endpoint}
+
+<span class="preview"> Die Funktion „Service-Endpunkt“ befindet sich im Early-Adopter-Programm und gilt nur für Kernkomponenten. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+
+1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
+
+   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
+
+1. Wählen Sie **[!UICONTROL Erstellen]** aus, um den **[!UICONTROL Konfigurationsassistenten für Data Source zu]**.
+
+1. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
+
+1. Wählen Sie auf der nächsten Seite **[!UICONTROL Service-Endpunkt]** aus dem **[!UICONTROL RESTful-Service-Dropdown]** aus.
+
+   ![Service-Endpunkt](/help/forms/assets/select-service-endpoint.png)
+
+1. Geben Sie **[!UICONTROL Dienstendpunkt-URL]** an.
+
+   >[!NOTE]
+   > Standardmäßig ist der Methodentyp POST.
+1. Wählen Sie einen der Inhaltstypen aus der Dropdown-Liste aus, den Sie auswählen möchten. Inhaltstypen sind mehrteilige Formulardaten, JSON und URL-codiert (Schlüssel-Wert-Paar).
+1. Wählen Sie nun einen der Authentifizierungstypen wie OAuth 2.0, Standardauthentifizierung, API-Schlüssel, benutzerdefinierte Authentifizierung aus der Dropdown-Liste aus.
+   ![Authentifizierungstyp des Service-Endpunkts](/help/forms/assets/service-endpoint-authtype.png)
+1. Klicken Sie auf „Erstellen“.
 
 ### HTTP-Client-Konfiguration eines Formulardatenmodells (FDM) zur Leistungsoptimierung {#fdm-http-client-configuration}
 

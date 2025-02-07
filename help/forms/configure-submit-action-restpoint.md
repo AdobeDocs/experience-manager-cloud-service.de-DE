@@ -3,13 +3,12 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: AEM Forms REST-Endpunkt, An REST-Endpunkt übermitteln, Daten an REST-URL posten, REST-Endpoint-Aktion konfigurieren
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +29,7 @@ Einige Vorteile der Konfiguration der Übermittlungsaktion **[!UICONTROL An REST
 
 ## Konfigurieren der Übermittlungsaktion als „An REST-Endpunkt übermitteln“ {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-So konfigurieren Sie die Übermittlungsaktion:
+So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
@@ -68,6 +67,20 @@ So konfigurieren Sie die Übermittlungsaktion:
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
+
+### Konfigurieren der Sendeaktion basierend auf dem Service-REST-Endpunkt {#config-service-endpoint-auth}
+
+<span class="preview"> Die Funktion „Service-Endpunkt“ befindet sich im Early-Adopter-Programm und gilt nur für Kernkomponenten. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+
+1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL An REST-Endpunkt übermitteln]**.
+1. Aktivieren Sie die POST-Anfrage.
+1. Geben Sie die REST-Endpunkt-URL an.
+1. Wählen Sie die Konfiguration aus, die Sie für Ihren Service-REST-Endpunkt-Authentifizierungstyp und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   ![Konfigurieren des REST-Endpunkts](assets/rest-service-endpoint-config.png)
+1. Klicken Sie auf „Fertig“.
 
 ## Best Practices
 
