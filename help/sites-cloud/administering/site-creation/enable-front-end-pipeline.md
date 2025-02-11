@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 79%
+ht-degree: 92%
 
 ---
 
@@ -69,11 +69,11 @@ Jetzt kann Ihre Site die Frontend-Pipeline verwenden. Weitere Informationen zur 
 
 ## Frontend-Pipeline und benutzerdefinierte Domains {#custom-domains}
 
-Wie im Abschnitt [Technische Details](#technical-details) beschrieben, werden beim Aktivieren der Frontend-Pipeline-Funktion für eine Site ein `SiteConfig` und `HtmlPageItemsConfig` Knoten unter `/conf/<site-name>/sling:configs` erstellt.
+Wie im Abschnitt [Technische Details](#technical-details) beschrieben, werden beim Aktivieren der Funktion „Frontend-Pipeline“ für eine Site die Knoten `SiteConfig` und `HtmlPageItemsConfig` unter `/conf/<site-name>/sling:configs` erstellt.
 
-Wenn Sie die benutzerdefinierte Domain-Funktion von [Cloud Manager ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Ihre Site zusammen mit der Frontend-Pipeline verwenden möchten, müssen diesen Knoten zusätzliche Eigenschaften hinzugefügt werden.
+Wenn Sie die [Funktion „Benutzerdefinierte Domains“ von Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) zusammen mit der Frontend-Pipeline für Ihre Site verwenden möchten, müssen diesen Knoten zusätzliche Eigenschaften hinzugefügt werden.
 
-1. Legen Sie die `customFrontendPrefix` Eigenschaft in `SiteConfig` für die Site fest.
-1. Dadurch wird der `prefixPath` der `HtmlPageItemsConfig` mit der benutzerdefinierten Domain aktualisiert.
+1. Legen Sie die Eigenschaft `customFrontendPrefix` in `SiteConfig` für die Site fest. 
+1. Dadurch wird der `prefixPath`-Wert der `HtmlPageItemsConfig` mit der benutzerdefinierten Domain aktualisiert.
 
 Seiten für die Site verweisen dann auf Design-Artefakte aus dieser aktualisierten URL.

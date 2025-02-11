@@ -8,7 +8,7 @@ role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1926'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive W
 >
 >Die Funktionen der Progressive Web App (PWA) für AEM Sites [veraltet](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features).
 >
->Vorhandene Projekte, die diese Funktion verwenden, werden weiterhin unterstützt, aber neue Projekte sollten diese Funktion nicht verwenden.
+>Vorhandene Projekte, die diese Funktion verwenden, werden zwar weiterhin unterstützt, aber neue Projekte sollten diese Funktion nicht verwenden.
 
 ## Einführung {#introduction}
 

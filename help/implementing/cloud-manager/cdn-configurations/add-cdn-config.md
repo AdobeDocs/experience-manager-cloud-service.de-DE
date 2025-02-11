@@ -8,7 +8,7 @@ exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -33,8 +33,8 @@ Siehe auch [Adobe verwaltetes CDN](https://www.aem.live/docs/byo-cdn-adobe-manag
 
    | Anwendungsfall | Schritte |
    | --- | --- |
-   | CDN-Konfiguration zu einer *vorhandenen* Edge Delivery-Site in Cloud Manager hinzufügen | a. Klicken Sie im linken Menü unter **Services** auf ![Webpages-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.<br>b. Klicken Sie in der Edge Delivery-Tabelle am Ende einer Zeile, der keine Domain zugeordnet ist, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Klicken Sie auf **CDN konfigurieren**. |
-   | CDN-Konfiguration in Cloud Manager hinzufügen | a. Klicken Sie im linken Menü unter **Dienste** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.<br> B. Klicken Sie oben rechts auf der Seite mit den Domain-Zuordnungen auf **Hinzufügen**. |
+   | CDN-Konfiguration zu einer *vorhandenen* Edge Delivery-Site in Cloud Manager hinzufügen | a. Klicken Sie im linken Seitenmenü unter **Services** auf ![Web-Seiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery-Sites**.<br>b. Klicken Sie in der Edge Delivery-Tabelle am Ende einer Zeile, der keine Domain zugeordnet ist, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Klicken Sie auf **CDN konfigurieren**. |
+   | CDN-Konfiguration in Cloud Manager hinzufügen | Klicken Sie im linken Seitenmenü unter **Services** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.<br>b. Klicken Sie oben rechts auf der Seite „Domain-Zuordnungen“ auf **Hinzufügen**. |
 
 1. Wählen Sie im Dialogfeld **CDN konfigurieren** in der Dropdown-Liste **Herkunft** eine der folgenden Optionen aus:
 

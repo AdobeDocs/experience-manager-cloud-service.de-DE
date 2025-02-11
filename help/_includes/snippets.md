@@ -2,7 +2,7 @@
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 # Snippets {#snippets}
@@ -237,7 +237,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 >[!IMPORTANT]
 >
->Der SPA-[ (wird nicht mehr ](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated)) für neue Projekte. Es wird weiterhin von Adobe für bestehende Projekte unterstützt, sollte jedoch nicht für neue Projekte verwendet werden. Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind jetzt:
+>Der SPA-Editor wird für neue Projekte [nicht mehr unterstützt](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated). Er wird von Adobe zwar weiterhin für bestehende Projekte unterstützt, sollte jedoch nicht für neue Projekte verwendet werden. Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind nun:
 >
 >* der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zum visuellen Bearbeiten von Headless-Inhalten.
 >* der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung von Headless-Inhalten

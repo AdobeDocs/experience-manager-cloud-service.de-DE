@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -158,7 +158,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 | **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (die einzige unterstützte Eigenschaft ist „path“) oder einen Anforderungs-Header, Abfrageparameter oder Cookie in Bezug auf einen bestimmten Wert, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
 |         | var | Entfernt eine angegebene Variable. |
 |         | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
-|         | queryParamDoesNotMatch | Entfernt alle Abfrageparameter, die nicht mit einem angegebenen regulären Ausdruck übereinstimmen. |
+|         | queryParamDoesNotMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck nicht entsprechen. |
 | **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie or var), Übereinstimmung, Ersetzung | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies oder der Variable durch einen neuen Wert. |
 |              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie oder var) | Setzt den Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder Anfrage-Header, Abfrageparameter oder Cookie oder die Variable auf den entsprechenden Wert in Kleinbuchstaben. |
 

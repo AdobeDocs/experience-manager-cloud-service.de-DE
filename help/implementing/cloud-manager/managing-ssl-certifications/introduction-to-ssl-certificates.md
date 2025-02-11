@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 64%
+ht-degree: 83%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL(S
 
 | | Modell | Beschreibung |
 | --- | --- | --- |
-| A | **[Adobe-verwaltetes SSL-Zertifikat (DV)](#adobe-managed)** | Mit Cloud Manager können Benutzer DV-Zertifikate (Domain-Validierung) konfigurieren, die von Adobe für die schnelle Domain-Einrichtung bereitgestellt werden. |
+| A | **[Adobe-verwaltetes SSL-Zertifikat (DV)](#adobe-managed)** | Mit Cloud Manager können Benutzende DV(Domain Validation)-Zertifikate konfigurieren, die von Adobe zur schnellen Einrichtung von Domains bereitgestellt werden. |
 | B | **[Kundenverwaltetes SSL-Zertifikat (OV/EV)](#customer-managed)** | Cloud Manager verwendet einen Plattform-TLS(Transport Layer Security)-Dienst, damit Sie Ihre eigenen OV- und EV-SSL-Zertifikate und private Schlüssel von Zertifizierungsstellen von Drittanbietern, z. B. *Let’s Encrypt*, verwalten können. |
 
 Beide Modelle bieten die folgenden allgemeinen Funktionen für die Verwaltung Ihrer Zertifikate:
@@ -78,7 +78,7 @@ OV und EV bieten diese Funktionen zusätzlich über DV-Zertifikate in Cloud Mana
 Wenn Sie Ihr eigenes kundenverwaltetes SSL-Zertifikat hinzufügen möchten, muss es die folgenden aktualisierten Anforderungen erfüllen:
 
 * DV-Zertifikate (Domain Validation) und selbstsignierte Zertifikate werden nicht unterstützt.
-* Das Zertifikat muss den OV- (Organisationsvalidierung) oder EV-Richtlinien (erweiterte Validierung) entsprechen.
+* Das Zertifikat muss OV(Organization Validation)- oder EV(Extended Validation)-Richtlinien entsprechen.
 * Das Zertifikat muss ein X.509-TLS-Zertifikat sein, das von einer vertrauenswürdigen Zertifizierungsstelle (CA) ausgestellt wird.
 * Folgende kryptografische Schlüsseltypen werden unterstützt:
 
@@ -93,24 +93,24 @@ RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-RS
 >Wenn Ihr Unternehmen die Einhaltung von Richtlinien mit 3072-Bit-RSA-Schlüsseln fordert, ist die von der Adobe empfohlene Alternative die Verwendung von ECDSA-Zertifikaten (`secp256r1` oder `secp384r1`).
 
 
-#### Best Practices für die Zertifikatverwaltung
+#### Best Practices für die Zertifikatsverwaltung
 
-* **Überschneidungen von Zertifikaten vermeiden:**
+* **Vermeiden von sich überschneidenden Zertifikaten:**
 
-   * Um eine reibungslose Zertifikatverwaltung zu gewährleisten, sollten Sie vermeiden, sich überschneidende Zertifikate bereitzustellen, die derselben Domain entsprechen. Beispielsweise kann ein Platzhalterzertifikat (*.example.com) neben einem bestimmten Zertifikat (dev.example.com) verwirrend sein.
+   * Um eine reibungslose Zertifikatsverwaltung sicherzustellen, sollten Sie die Bereitstellung sich überschneidender Zertifikate vermeiden, die derselben Domain entsprechen. Beispielsweise kann ein Platzhalterzertifikat (*.example.com) neben einem bestimmten Zertifikat (dev.example.com) zu Verwirrung führen.
    * Die TLS-Ebene priorisiert das spezifischste und zuletzt bereitgestellte Zertifikat.
 
   Beispielszenarien:
 
-   * „Dev Certificate“ umfasst `dev.example.com` und wird als Domain-Zuordnung für `dev.example.com` bereitgestellt.
-   * Das „Staging-Zertifikat“ deckt `stage.example.com` ab und wird als Domain-Zuordnung für `stage.example.com` bereitgestellt.
-   * Wenn „Staging-Zertifikat“ bereitgestellt/aktualisiert wird *nach* „Dev-Zertifikat“, werden auch Anfragen für `dev.example.com` bearbeitet.
+   * Ein „Dev-Zertifikat“ umfasst `dev.example.com` und wird als Domain-Zuordnung für `dev.example.com` bereitgestellt.
+   * Das „Staging-Zertifikat“ umfasst `stage.example.com` und wird als Domain-Zuordnung für `stage.example.com` bereitgestellt.
+   * Wenn das „Staging-Zertifikat“ *nach* dem „Dev-Zertifikat“ bereitgestellt/aktualisiert wird, bedient es auch Anfragen für `dev.example.com`.
 
-     Um solche Konflikte zu vermeiden, stellen Sie sicher, dass Zertifikate sorgfältig auf ihre vorgesehenen Domains beschränkt sind.
+     Um solche Konflikte zu vermeiden, stellen Sie sicher, dass Zertifikate genau auf ihre vorgesehenen Domains beschränkt bleiben.
 
-* **Platzhalterzertifikate:**
+* **Platzhalterzertifikate**
 
-  Platzhalterzertifikate (z. B. `*.example.com`) werden zwar unterstützt, sollten aber nur verwendet werden, wenn dies notwendig ist. Bei Überschneidungen hat das spezifischere Zertifikat Vorrang. Beispielsweise dient das spezifische Zertifikat `dev.example.com` anstelle des Platzhalters (`*.example.com`).
+  Platzhalterzertifikate (z. B. `*.example.com`) werden zwar unterstützt, sollten aber nur verwendet werden, wenn dies notwendig ist. Bei Überschneidungen hat das spezifischere Zertifikat Vorrang. Beispielsweise bedient das spezifische Zertifikat `dev.example.com` anstelle des Platzhalters (`*.example.com`).
 
 * **Validierung und Fehlerbehebung:**
 Bevor Sie versuchen, ein Zertifikat mit Cloud Manager zu installieren, empfiehlt Adobe, die Integrität Ihres Zertifikats lokal mit Tools wie `openssl` zu überprüfen. Zum Beispiel:
@@ -152,7 +152,7 @@ Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten v
 
 ## Begrenzung der Anzahl installierter SSL-Zertifikate {#limitations}
 
-Cloud Manager unterstützt immer bis zu 50 installierte Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
+Cloud Manager unterstützt immer bis zu 50 installierte Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
 
 Wenn Sie den Grenzwert erreicht haben, überprüfen Sie Ihre Zertifikate und löschen Sie ggf. abgelaufene Zertifikate. Oder gruppieren Sie mehrere Domains im selben Zertifikat, da ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken kann.
 

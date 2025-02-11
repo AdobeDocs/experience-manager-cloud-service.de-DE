@@ -7,7 +7,7 @@ exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 65%
+ht-degree: 75%
 
 ---
 
@@ -78,7 +78,7 @@ Sie beginnen mit der Bearbeitung einer Taxonomieseite wie bei jeder anderen Seit
 
 Die im Seiteneditor angezeigte Seite ist schreibgeschützt, da der Inhalt der Taxonomie automatisch anhand der ausgewählten Tags und Namespaces generiert wird. Sie dienen als eine Art Filter für die automatische Generierung des Inhalts der Taxonomie. Daher gibt es keinen Grund, die Seite direkt im Editor zu bearbeiten.
 
-AEM aktualisiert den Inhalt der Taxonomieseite automatisch, wenn Sie die zugrunde liegenden Tags und Namespaces aktualisieren. Sie müssen [ Taxonomie jedoch nach ](#publishing) Änderungen erneut veröffentlichen, um diese Änderungen für Ihre Benutzer verfügbar zu machen.
+AEM aktualisiert den Inhalt der Taxonomieseite automatisch, wenn Sie die zugrunde liegenden Tags und Namespaces aktualisieren. Sie müssen die Taxonomie jedoch nach jeder Änderung [erneut veröffentlichen](#publishing), um diese Änderungen Ihren Benutzenden zur Verfügung zu stellen.
 
 ## Aktualisieren von „paths.json“ für die Taxonomieveröffentlichung {#paths-json}
 
@@ -168,16 +168,16 @@ Diese JSON-Daten werden automatisch aktualisiert, wenn Sie die Taxonomie aktuali
 
 [Wenn Sie Tags in mehreren Sprachen ](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages), können Sie auf diese Sprachen zugreifen, indem Sie den ISO2-Sprach-Code als Wert eines `sheet=` übergeben.
 
-## Anzeigen zusätzlicher Tag-Eigenschaften {#additional-properties}
+## Freilegen zusätzlicher Tag-Eigenschaften {#additional-properties}
 
-Standardmäßig enthält Ihre Taxonomie `tag`- und `title`, wie [ vorherigen Beispiel ](#accessing). Sie können Ihre Taxonomie so konfigurieren, dass zusätzliche Tag-Eigenschaften verfügbar gemacht werden. In diesem Beispiel stellen wir die Tag-Beschreibung bereit.
+Standardmäßig enthält Ihre Taxonomie `tag`- und `title`, wie [ vorherigen Beispiel ](#accessing). Sie können Ihre Taxonomie so konfigurieren, dass zusätzliche Tag-Eigenschaften verfügbar gemacht werden. In diesem Beispiel legen wir die Tag-Beschreibung frei.
 
 1. Wählen Sie über die Sites-Konsole die von Ihnen erstellte Taxonomie aus.
-1. Tippen oder klicken Sie auf **Symbolleiste auf** Symbol „Eigenschaften“.
-1. Tippen **oder klicken Sie** Abschnitt „Zusätzliche Eigenschaften“ auf **Hinzufügen** um ein Feld hinzuzufügen.
-1. Geben Sie im neuen Feld den JRC-Eigenschaftsnamen ein, der angezeigt werden soll. Geben Sie in diesem Fall `jcr:description` für die Tag-Beschreibung ein.
+1. Tippen oder klicken Sie in der Symbolleiste auf das Symbol **Eigenschaften**.
+1. Tippen oder klicken Sie im Abschnitt **Zusätzliche Eigenschaften** auf **Hinzufügen**, um ein Feld hinzuzufügen.
+1. Geben Sie in das neue Feld den JRC-Eigenschaftsnamen ein, der freigelegt werden soll. Geben Sie in diesem Fall `jcr:description` als Tag-Beschreibung ein.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
-1. Tippen oder klicken Sie bei weiterhin ausgewählter Taxonomie in der Symbolleiste **Quick Publish**.
+1. Tippen oder klicken Sie bei weiterhin ausgewählter Taxonomie in der Symbolleiste auf **Quick Publish**.
 
 Wenn [ nun auf Ihre Taxonomie zugreifen](#accessing) wird die Tag-Beschreibung (oder die Eigenschaft, die Sie bereitstellen möchten) in die JSON-Datei aufgenommen.
 

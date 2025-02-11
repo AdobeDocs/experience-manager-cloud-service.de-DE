@@ -637,7 +637,7 @@ ht-degree: 99%
    + Arbeiten mit der Assets-Ansicht {#assets-view}
       + [Einführung](/help/assets/assets-view-introduction.md)
       + [Erste Schritte](/help/assets/get-started-assets-view.md)
-      + [Mein Workspace](/help/assets/my-workspace-assets-view.md)
+      + [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
       + [Unterstützte Dateitypen und Anwendungsfälle](/help/assets/supported-file-formats-assets-view.md)
       + [Anzeigen von Assets](/help/assets/navigate-assets-view.md)
       + [Hochladen und Hinzufügen von Assets](/help/assets/add-delete-assets-view.md)
@@ -708,7 +708,7 @@ ht-degree: 99%
       + [Migrieren von [!DNL AEM 6.5 Forms] oder früher zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
-      + [Publish Adaptive Forms mit „Veröffentlichung verwalten“](/help/forms/manage-publication.md)
+      + [Veröffentlichen adaptiver Formulare mit „Veröffentlichung verwalten“](/help/forms/manage-publication.md)
    + Erste Schritte {#getting-started-forms}
       + [Anwendungsfall und Einrichtung der Entwicklungsumgebung](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Erstellen des Kreditantragsformulars](/help/forms/create-adaptive-form-tutorial.md)
@@ -774,7 +774,7 @@ ht-degree: 99%
             + [Vergleichen adaptiver Formulare](/help/forms/compare-forms.md)
             + [Erstellen einer benutzerdefinierten Sendeaktion](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Konvertieren adaptiver Formulare basierend auf Foundation-Komponenten in auf Kernkomponenten basierenden Formularen mithilfe des Migrationsdienstprogramm-Tools](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [E-Mail-Vorlagen in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [E-Mail-Vorlagen in adaptiven Formularen](/help/forms/html-email-templates-in-adaptive-forms.md)
             + Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren{#rule-editor-core-components}
                + [Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components.md)
                + [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1026,9 +1026,9 @@ ht-degree: 99%
          + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
          + [Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
-         + [Übersicht - Universeller Editor für Edge Delivery Services für Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Überblick – Universeller Editor für Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Erste Schritte](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Hinzufügen von Regeln zu mithilfe des Regeleditors](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Hinzufügen von Regeln mit dem Regeleditor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Funktionen {#advanced-features-edge-delivery-services-forms}
          + [Verwenden von Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
          + [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
