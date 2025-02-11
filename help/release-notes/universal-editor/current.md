@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Dies sind die Versionshinweise für die Version vom 16. Januar 2025 des univer
 
 >[!TIP]
 >
->Die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service finden Sie auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Neue Funktionen {#what-is-new}
 
@@ -31,6 +31,6 @@ Dies sind die Versionshinweise für die Version vom 16. Januar 2025 des univer
 
 ## Andere Verbesserungen {#other-improvements}
 
-* **Ungültige URLs in „Zuletzt ausgewertet“ auf der Landingpage wurden behoben** - Es wurden Probleme behoben, bei denen die in der Liste „Zuletzt ausgewertet“ auf der Landingpage des universellen Editors angezeigten URLs beschädigt waren.
+* **Ungültige URLs unter „Zuletzt verwendet“ auf der Landingpage korrigiert**: Es wurde ein Problem behoben, durch das die URLs, die in der Liste „Zuletzt verwendet“ auf der Landingpage des universellen Editors angezeigt wurden, beschädigt waren.
 * **Design-Synchronisation in Unified Shell**: Der universelle Editor synchronisiert das Design nun dynamisch mit den Unified Shell-Einstellungen des Systems und führt eine automatische Anpassung zwischen hellem und dunklem Modus durch.
    * Dadurch wird ein konsistentes visuelles Erscheinungsbild über Mikro-Frontends hinweg sichergestellt, einschließlich Fragment- und Asset-Auswahl.

@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau bevorstehender 
 
 ## Einführung {#introduction}
 
-Adobe Experience Manager as a Cloud Service entwickelt regelmäßig neue Funktionen entsprechend der Roadmap für [Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service).
+Adobe Experience Manager as a Cloud Service veröffentlicht regelmäßig neue Funktionen entsprechend der [Roadmaß für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service).
 
 Um sich mit den Funktionen vertraut zu machen, die in der nächsten Version verfügbar sein werden, können Sie den Vorabversionskanal abonnieren, auf den Sie durch eine entsprechende Konfiguration Ihrer Entwicklungsumgebungen oder beliebiger Sandbox-Umgebungen zugreifen können. Sie können Änderungen, auf die über die AEM-Benutzeroberfläche zugegriffen werden kann, in der Vorschau anzeigen und Code für alle neuen Vorabversions-APIs erstellen.
 
@@ -50,7 +50,7 @@ Die effektive Nutzung des Vorabversionskanals erfordert vier Schritte.
 
 ## Markieren der Termine im Kalender {#mark-calendars}
 
-Die Funktionsveröffentlichungen sind weit im Voraus geplant, und ihre Aktivierungstermine werden auf [Adobe Experience League veröffentlicht](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service).
+Die Funktionsveröffentlichungen sind weit im Voraus geplant; ihre Aktivierungstermine werden auf [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service) veröffentlicht.
 
 Notieren Sie sich die Veröffentlichungstermine und planen Sie Zeit ein, um die bevorstehenden Funktionen zu überprüfen und zu testen.
 
@@ -83,7 +83,7 @@ Um eine Cloud-Umgebung zu aktualisieren und die Vorabversion zu verwenden, müss
 
 1. Wählen Sie die Umgebung aus, in der Sie die Vorabversion aktivieren möchten, und greifen Sie über **Programm** > **Umgebung** > **Umgebungskonfiguration** auf ihre Konfiguration zu.
 
-1. Fügen Sie eine neue [Umgebungsvariable“ ](../implementing/cloud-manager/environment-variables.md)
+1. Fügen Sie eine neue [Umgebungsvariable](../implementing/cloud-manager/environment-variables.md) hinzu:
 
    | Name | Wert | Service angewendet | Typ |
    |------|-------|-----------------|------|
@@ -97,7 +97,7 @@ Um eine Cloud-Umgebung zu aktualisieren und die Vorabversion zu verwenden, müss
 
 Sie können auch die Cloud Manager-API und -CLI verwenden, um die Umgebungsvariablen zu aktualisieren.
 
-* Cloud Manager Legen Sie mithilfe des Umgebungsvariablen-Endpunkts der ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)-API die `AEM_RELEASE_CHANNEL` Umgebungsvariable auf den Wert `prerelease` fest.[
+* Legen Sie mithilfe des [Umgebungsvariablen-Endpunkts der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) die Umgebungsvariable `AEM_RELEASE_CHANNEL` auf den Wert `prerelease` fest.
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables

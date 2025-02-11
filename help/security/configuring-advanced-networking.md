@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Dieser Artikel stellt die verschiedenen erweiterten Netzwerkfunktionen in AEM as
 
 >[!TIP]
 >
->Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die Sie durch die erweiterten Netzwerkoptionen an diesem [Speicherort](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/advanced-networking) führen.
+>Zusätzlich zu dieser Dokumentation finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/advanced-networking) eine Reihe von Tutorials, die Sie durch die erweiterten Netzwerkoptionen führen.
 
 ## Überblick {#overview}
 
@@ -41,7 +41,7 @@ In diesem Artikel wird jede dieser Optionen zunächst im Detail beschrieben und 
 Bei der Konfiguration erweiterter Netzwerkfunktionen gelten die folgenden Einschränkungen.
 
 * Ein Programm kann eine einzelne erweiterte Netzwerkoption (flexibler Port-Ausgang, dedizierte Ausgangs-IP-Adresse oder VPN) bereitstellen.
-* Erweiterte Netzwerke sind für [Sandbox-Programme“ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+* Erweiterte Netzwerke sind für [Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) nicht verfügbar.
 * Benutzende müssen über die **Administrator**-Rolle verfügen, um die Netzwerkinfrastruktur in ihrem Programm hinzuzufügen und zu konfigurieren.
 * Die Produktionsumgebung muss erstellt werden, bevor in Ihrem Programm eine Netzwerkinfrastruktur hinzugefügt werden kann.
 * Ihre Netzwerkinfrastruktur muss sich in derselben Region befinden wie die primäre Region Ihrer Produktionsumgebung.
@@ -54,8 +54,8 @@ Bei der Konfiguration erweiterter Netzwerkfunktionen gelten die folgenden Einsch
 
 Die Verwendung erweiterter Netzwerkfunktionen erfordert zwei Schritte:
 
-1. Die Konfiguration der erweiterten Netzwerkoption, ob [flexibler Port-Ausgang](#flexible-port-egress), [dedizierte Ausgangs-IP-](#dedicated-egress-ip-address) oder [VPN](#vpn), muss zunächst auf Programmebene erfolgen.
-1. Damit sie verwendet werden kann, muss die Option Erweiterte Netzwerke [auf Umgebungsebene aktiviert](#enabling) sein.
+1. Die Konfiguration der erweiterten Netzwerkoption, ob [Flexibler Port-Ausgang](#flexible-port-egress), [Dedizierte Ausgangs-IP-Adresse](#dedicated-egress-ip-address) oder [VPN](#vpn), muss zunächst auf der Programmebene erfolgen.
+1. Damit sie verwendet werden kann, muss die erweiterte Netzwerkoption [auf Umgebungsebene aktiviert](#enabling) sein.
 
 Beide Schritte können entweder über die Cloud Manager-Benutzeroberfläche oder die Cloud Manager-API durchgeführt werden.
 
@@ -109,7 +109,7 @@ Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastr
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [kann der API-Dokumentation entnommen ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz der Parameter, die genaue Syntax und wichtige Informationen, z. B. welche Parameter später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### Traffic-Routing {#flexible-port-egress-traffic-routing}
 
@@ -220,7 +220,7 @@ Dieselbe dedizierte IP wird auf alle Umgebungen in einem Programm angewendet und
 
 Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von IPs, die mit anderen Kundinnen und Kunden von AEM as a Cloud Service gemeinsam genutzt werden.
 
-Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt [flexibler Port-Ausgang](#flexible-port-egress). Der Hauptunterschied besteht darin, dass der Traffic nach der Konfiguration immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Falls sie aber doch geändert werden muss, wird vorher eine Benachrichtigung gesendet.
+Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Port-Ausgang](#flexible-port-egress). Der Hauptunterschied besteht darin, dass der Traffic nach der Konfiguration immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Falls sie aber doch geändert werden muss, wird vorher eine Benachrichtigung gesendet.
 
 >[!TIP]
 >
@@ -270,7 +270,7 @@ Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastr
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [kann der API-Dokumentation entnommen ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### Traffic-Routing {#dedicated-egress-ip-traffic-routing}
 
@@ -400,7 +400,7 @@ Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte I
 
 Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Dies kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern, z. B. einem CRM-Anbieter, der VPN unterstützt.
 
-Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die Informationen in der Spalte **RouteBased configuration instructions** in [this list of devices](https://learn.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Konfigurieren Sie das Gerät wie in der Tabelle beschrieben.
+Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die Informationen in der Spalte **RouteBased-Konfigurationsanweisungen** in [dieser Geräteliste](https://learn.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Konfigurieren Sie das Gerät, wie in der Tabelle beschrieben.
 
 >[!NOTE]
 >
@@ -465,7 +465,7 @@ Nach dem Aufruf dauert es in der Regel zwischen 45 und 60 Minuten, bis die Netzw
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [kann der API-Dokumentation entnommen ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### Traffic-Routing {#vpn-traffic-routing}
 
@@ -653,11 +653,11 @@ Auch wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics gibt (Ho
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [kann der API-Dokumentation entnommen ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ## Bearbeiten und Löschen erweiterter Netzwerkkonfigurationen in Umgebungen {#editing-deleting-environments}
 
-Nach [Aktivieren erweiterter Netzwerkkonfigurationen für Umgebungen](#enabling) können Sie die Details dieser Konfigurationen aktualisieren oder löschen.
+Nach der [Aktivierung der erweiterten Netzwerkkonfigurationen für Umgebungen](#enabling) können Sie die Details dieser Konfigurationen aktualisieren oder löschen.
 
 >[!NOTE]
 >
@@ -675,7 +675,7 @@ Nach [Aktivieren erweiterter Netzwerkkonfigurationen für Umgebungen](#enabling)
 
 1. Wählen Sie im Menü mit den Auslassungspunkten entweder **Bearbeiten** oder **Löschen** aus.
 
-   * Wenn Sie **Bearbeiten** wählen, aktualisieren Sie die Informationen gemäß den Schritten, die im vorherigen Abschnitt &quot;[ in der Benutzeroberfläche aktivieren](#enabling-ui) beschrieben sind, und klicken Sie auf **Speichern**.
+   * Wenn Sie sich für **Bearbeiten** entscheiden, aktualisieren Sie die Informationen gemäß den im vorherigen Abschnitt [Aktivieren über die Benutzeroberfläche](#enabling-ui) beschriebenen Schritten und klicken Sie auf **Speichern**.
    * Wenn Sie sich für **Löschen** entscheiden, bestätigen Sie den Löschvorgang im Dialogfeld **Netzwerkkonfiguration löschen** mit **Löschen** oder brechen Sie ihn mit **Abbrechen** ab.
 
 Die Änderungen werden auf der Registerkarte **Umgebungen** widergespiegelt.
@@ -686,7 +686,7 @@ Um eine erweiterte Netzwerkkonfiguration für eine bestimmte Umgebung zu lösche
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [kann der API-Dokumentation entnommen ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ## Bearbeiten und Löschen der Netzwerkinfrastruktur eines Programms {#editing-deleting-program}
 
@@ -729,10 +729,10 @@ Es ist nur möglich, jeweils eine Art von erweiterter Netzwerkinfrastruktur für
 
 Wenn Sie einen anderen erweiterten Netzwerkinfrastrukturtyp als den bereits konfigurierten benötigen, löschen Sie den vorhandenen und erstellen Sie einen neuen. Gehen Sie folgendermaßen vor:
 
-1. [Erweiterte Netzwerke in allen Umgebungen löschen](#editing-deleting-environments).
-1. [Löschen der Infrastruktur für erweiterte Netzwerke](#editing-deleting-program).
-1. Erstellen Sie den erweiterten Netzwerkinfrastrukturtyp, den Sie jetzt benötigen, entweder [flexibler Port-Ausgang](#flexible-port-egress), [dedizierte Ausgangs-IP-](#dedicated-egress-ip-address) oder [VPN](#vpn).
-1. [Erneutes Aktivieren der erweiterten Vernetzung auf Umgebungsebene](#enabling).
+1. [Löschen Sie die erweiterte Netzwerkkonfiguration in allen Umgebungen.](#editing-deleting-environments)
+1. [Löschen Sie die erweiterte Netzwerkinfrastruktur.](#editing-deleting-program)
+1. Erstellen Sie den von Ihnen nun benötigten erweiterten Netzwerkinfrastrukturtyp: [Flexibler Port-Ausgang](#flexible-port-egress), [Dedizierte Ausgangs-IP-Adresse](#dedicated-egress-ip-address) oder [VPN](#vpn).
+1. [Aktivieren Sie die erweiterte Netzwerkkonfiguration auf Umgebungsebene erneut.](#enabling)
 
 >[!WARNING]
 >
