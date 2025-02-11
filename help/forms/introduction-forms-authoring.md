@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
 source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2468'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
-> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zum [Erstellen eines neuen adaptiven Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von adaptivem Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Forms mithilfe von Foundation-Komponenten beschrieben.
+> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für die Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben.
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -193,7 +193,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Verwenden Sie „Numerische Schritte“ in Ihrem Formular, damit Ihre Kundschaft einen numerischen Wert eingeben kann, den sie basierend auf einem vordefinierten numerischen Schritt erhöhen oder verringern kann.</td>
   </tr>
   <tr>
-   <td>Bereich</td>
+   <td>Bedienfeld</td>
    <td><p>Fügt einen Bereich oder Unterbereich hinzu.</p> <p>Sie können auch eine Bedienfeldkomponente aus der Symbolleiste des übergeordneten Bedienfelds hinzufügen, indem Sie die Schaltfläche <span class="uicontrol">„Untergeordnetes Bedienfeld“</code> hinzufügen. In ähnlicher Weise können Sie mit der Funktion <span class="uicontrol">„Panel-Symbolleiste hinzufügen“ eine bedienfeldspezifische Symbolleiste</code> hinzufügen. Sie können die Position der Bedienfeld-Symbolleiste mithilfe des Dialogfelds „Bedienfeld bearbeiten“ konfigurieren.</p> </td>
   </tr>
   <tr>
@@ -209,7 +209,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Fügt Optionsfelder hinzu.</td>
   </tr>
   <tr>
-   <td>Zurücksetzen-Schaltfläche</td>
+   <td>Schaltfläche „Zurücksetzen“</td>
    <td>Fügt eine Schaltfläche zum Zurücksetzen von Formularfeldern hinzu.</td>
   </tr>
   <tr>
@@ -233,7 +233,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Ermöglicht es Ihnen, statischen Text anzugeben.</td>
   </tr>
   <tr>
-   <td>Schaltfläche „Absenden“</td>
+   <td>Schaltfläche „Senden“</td>
    <td>Fügt eine Schaltfläche zum Senden hinzu, um das Formular an die konfigurierte Übermittlungsaktion zu übergeben.</td>
   </tr>
   <tr>

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Sobald Sie das [Formular erstellt und in einer Vorschau angezeigt](/help/edge/docs/forms/create-forms.md) haben, ist es an der Zeit, dafür zu sorgen, dass die entsprechende Tabelle Daten empfängt. Sie haben folgende Möglichkeiten:
 
-* [Aktivieren Sie die Tabelle manuell, um Daten zu akzeptieren](#manually-enable-the-spreadsheet-to-accept-data)
+* [Manuelles Aktivieren der Tabelle für die Datenaufnahme](#manually-enable-the-spreadsheet-to-accept-data)
 * [Verwenden von Admin-APIs, um das Akzeptieren von Daten durch eine Tabelle zu aktivieren](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Das Ökosystem des dokumentbasierten Authorings](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
@@ -154,7 +154,7 @@ So verwenden Sie Admin-APIs, um das Akzeptieren von Daten durch eine Tabelle zu 
 
    Ihr Formular kann jetzt Daten annehmen. Beachten Sie auch die folgenden Änderungen in Ihrer Tabelle:
 
-## Automatische Änderungen am Blatt, sobald es zur Datenaufnahme aktiviert ist.
+## Automatische Änderungen am Blatt, sobald die Datenaufnahme aktiviert wurde.
 
 Nachdem das Blatt auf den Empfang von Daten eingestellt wurde, beachten Sie die folgenden Änderungen an Ihrer Tabelle:
 

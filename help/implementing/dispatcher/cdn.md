@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1729'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Diese kundenspezifische CDN-Konfiguration wird für die Veröffentlichungsebene 
 
 ### Debuggen von Konfigurationen
 
-Um eine BYOCDN-Konfiguration zu debuggen, verwenden Sie den `x-aem-debug`-Header mit dem Wert `edge=true`. Zum Beispiel:
+Um eine BYOCDN-Konfiguration zu debuggen, verwenden Sie die Kopfzeile `x-aem-debug` mit dem Wert `edge=true`. Zum Beispiel:
 
 Unter Linux®:
 
@@ -150,13 +150,13 @@ Unter Windows:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
 ```
 
-Dieser Prozess spiegelt bestimmte Eigenschaften wider, die in der Anfrage im `x-aem-debug`-Antwort-Header verwendet werden. Zum Beispiel:
+Dieser Prozess spiegelt bestimmte Eigenschaften wider, die in der Anfrage im Antwort-Header `x-aem-debug` verwendet werden. Zum Beispiel:
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, der Edge-Authentifizierungskonfiguration und dem Wert der x-forward-host-Kopfzeile. Außerdem wird angegeben, ob ein Edge-Schlüssel festgelegt ist und welcher Schlüssel verwendet wird, wenn eine Übereinstimmung vorliegt.
+Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, der Edge-Authentifizierungskonfiguration und dem Wert des Headers x-forwarded-host. Außerdem identifiziert er, ob ein Edge-Schlüssel festgelegt ist und welcher Schlüssel verwendet wird, falls eine Übereinstimmung vorliegt.
 
 ### Beispielkonfigurationen von CDN-Anbietern {#sample-configurations}
 
@@ -187,7 +187,7 @@ Wenn eine Anfrage eine unzulässige Antwort vom Typ 403 erhält, bedeutet dies, 
 
 **Fehler 421 Fehlgeleitete Weiterleitung**
 
-Ein 421-Fehler mit der Meldung `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` zeigt an, dass die HTTP-`Host` mit keinen der im Zertifikat aufgeführten Hosts übereinstimmt. Dieses Problem weist in der Regel darauf hin, dass entweder `Host` oder die SNI-Einstellung falsch ist. Stellen Sie sicher, dass sowohl `Host`- als auch SNI-Einstellungen auf den Host „publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com&quot; verweisen.
+Ein 421-Fehler mit der Meldung `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` gibt an, dass der HTTP-`Host` mit keinen der im Zertifikat aufgeführten Hosts übereinstimmt. Dieses Problem deutet in der Regel darauf hin, dass entweder der `Host` oder die SNI-Einstellung falsch ist. Stellen Sie sicher, dass sowohl `Host` als auch die SNI-Einstellungen auf den Host publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com verweisen.
 
 **Schleife „Zu viele Umleitungen“**
 

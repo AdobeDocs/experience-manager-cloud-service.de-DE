@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise [zus�
 
 1. Geben Sie im Assistenten *Erstellen Sie Ihr Programm* im Textfeld **Programmname** den gewünschten Namen für das Programm ein.
 
-1. Wählen **unter &quot;**&quot; die Option ![Globussymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**Für Produktion einrichten** aus.
+1. Wählen Sie unter **Programmziel** die Option ![Weltkugelsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **Für die Produktion einrichten**.
 
    ![Assistent zum Erstellen von Programmen](assets/create-production-program.png)
 
@@ -54,11 +54,11 @@ Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise [zus�
 
      ![Lösungen auswählen](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-   * Klicken Sie ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
+   * Klicken Sie auf ![Pfeilsymbol Größe 300 links](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) neben einem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
 
    ![Add-ons auswählen](assets/setup-prod-commerce.png)
 
-1. Wenn Sie Ihre Lösungen und Add-ons ausgewählt haben, klicken Sie auf **Weiter**.
+1. Wenn Sie mit der Auswahl Ihrer Lösungen und Add-ons fertig sind, klicken Sie auf **Fortsetzen**.
 
 1. Geben Sie auf der Registerkarte **Tag der Veröffentlichung** das Datum ein, an dem Ihr Produktionsprogramm veröffentlicht werden soll.
 
@@ -119,7 +119,7 @@ Wenn die [Anforderungen](#sla-requirements) für die Aktivierung von 99,99 % SL
 
 ## Zugriff auf ein Programm {#accessing}
 
-1. Wenn Ihre Programmkarte auf der Landingpage angezeigt wird, klicken Sie auf ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um die für Sie verfügbaren Menüoptionen anzuzeigen.
+1. Wenn Sie Ihre Programmkarte auf der Landingpage sehen, klicken Sie auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um die für Sie verfügbaren Menüoptionen anzuzeigen.
 
    ![Programmübersicht](assets/program-overview.png)
 

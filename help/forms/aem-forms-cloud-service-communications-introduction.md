@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2435'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,9 +62,9 @@ Sie können die API zum Erzeugen von Dokumenten verwenden, um ein PDF-Dokument z
 ![Erstellen von PDF-Dokumenten](assets/outPutPDF_popup.png)
 Abbildung: Typischer Workflow zum Erstellen eines PDF-Dokuments
 
-Die Dokumenterstellungs-API gibt das generierte PDF-Dokument zurück. Optional können Sie auch die generierten PDF in Azure Blob Storage hochladen.
+Die API zur Dokumenterstellung gibt das generierte PDF-Dokument zurück. Optional können Sie auch die generierten PDF-Dateien in Azure Blob Storage hochladen.
 
-<span class="preview"> Das Hochladen der generierten PDF mit der Dokumenterstellungs-API in die Azure Blob Storage-Funktion ist unter [Early-Adopter-Programm](/help/forms/early-access-ea-features.md). Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+<span class="preview"> Das Hochladen der generierten PDF-Dateien mit der API zur Dokumenterstellung in die Azure Blob Storage-Funktion erfolgt im Rahmen des [Early-Adopter-Programms](/help/forms/early-access-ea-features.md). Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 
 ### Erstellen des Dokuments im Format PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) {#create-PS-PCL-ZPL-documents}

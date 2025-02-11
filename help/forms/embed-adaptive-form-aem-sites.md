@@ -6,9 +6,9 @@ role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3145'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Fügen Sie die Client-Bibliotheken **Customheaderlibs** und **Customfooterlibs**
 
 1. [Führen Sie die Bereitstellungs-Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=de), um die Client-Bibliotheken in Ihrer AEM as a Cloud Service-Umgebung bereitzustellen.
 
-### Aktivieren der „Adaptive Forms - Einbettungskomponente (v2)“ für Ihre AEM Sites-Seite oder Ihr Experience Fragment
+### Aktivieren der „Adaptive Formulare – Einbettungskomponente (v2)“ für Ihre AEM Sites-Seite oder ein Experience Fragment
 
 Führen Sie die folgenden Schritte aus, um die **[!UICONTROL Adaptive Formulare – Einbettungskomponente (v2)]** in der Richtlinie der Vorlage zu aktivieren:
 
@@ -246,7 +246,7 @@ Sie können die erweiterten Einstellungen der **[!UICONTROL Adaptive Formulare �
 * **Nach dem Senden**: Wählen Sie die Aktion aus, die bei der Formularübermittlung ausgelöst werden soll. Sie können auswählen, dass eine Dankesnachricht oder eine Dankeseite angezeigt werden soll.
    * **Dankesnachricht anzeigen**: Verfassen Sie im Rich-Text-Editor eine Nachricht, die beim Absenden des Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesnachricht angezeigt werden soll.
    * **Dankesseite anzeigen**: Suchen und wählen Sie die Seite aus, die bei Übermittlung eines Formulars angezeigt wird. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
-   * **Umleiten zur Dankeseite**: Aktivieren Sie die Option, um die Seite mit dem eingebetteten adaptiven Formular durch die Dankeseite zu ersetzen. Andernfalls ersetzt die Dankesseite das adaptive Formular in der **[!UICONTROL Adaptive Formulare – Einbettungskomponente]**, ohne die darunter liegenden Seiten zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie gewählt haben, dass eine Dankesseite angezeigt werden soll.
+   * **Umleiten zur Dankeseite**: Aktivieren Sie die Option, um die Seite mit dem eingebetteten adaptiven Formular durch die Dankeseite zu ersetzen. Andernfalls ersetzt die Dankesseite das adaptive Formular in der **[!UICONTROL Adaptive Formulare – Einbettungskomponente]**, ohne die darunter liegenden Seiten zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
    * **Dankesnachricht**: Kurze Bestätigung, die nach dem erfolgreichen Senden eines Formulars auf dem Bildschirm angezeigt wird.
    * **Dankesseite**: Suchen und wählen Sie die Seite aus, die nach dem erfolgreichen Senden eines Formulars angezeigt wird. 
 

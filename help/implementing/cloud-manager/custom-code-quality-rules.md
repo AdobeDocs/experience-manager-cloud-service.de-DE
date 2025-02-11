@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4384'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 Erfahren Sie mehr über Qualitätsregeln für benutzerspezifischen Code von Cloud Manager, die auf Best Practices von Adobe Experience Manager Engineering basieren, um durch gründliche Tests hochwertigen Code sicherzustellen. Siehe auch [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md).
 
-Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste der *aktuellen* Regeln (über [ Link) ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
+Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste *aktueller* Regeln [über diesen Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen. Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu sehen.
 
 >[!IMPORTANT]
 >
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 ### Sling-Scheduler nicht verwenden {#sonarqube-sling-scheduler}
 
 * **Schlüssel**: CQRules:AMSCORE-554
-* **type**: `Code Smell`/Cloud Service-Kompatibilität
+* **Typ**: `Code Smell`/Cloud-Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -515,7 +515,7 @@ Weitere Informationen zum Umgang mit Sling-Vorgängen in Cluster-Umgebungen find
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
 * **Schlüssel**: AMSCORE-553
-* **type**: `Code Smell`/Cloud Service-Kompatibilität
+* **Typ**: `Code Smell`/Cloud-Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -802,7 +802,7 @@ Ein häufig auftretendes Problem ist die Verwendung von Knoten mit der Bezeichnu
 ### Der standardmäßige Authoring-Modus sollte nicht die klassische Benutzeroberfläche verwenden {#oakpal-default-authoring}
 
 * **Schlüssel**: ClassicUIAuthoringMode
-* **type**: `Code Smell`/Cloud Service-Kompatibilität
+* **Typ**: `Code Smell`/Cloud-Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -811,7 +811,7 @@ Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 ### Komponenten mit Dialogfeldern sollten Dialogfelder für die Touch-Benutzeroberfläche aufweisen {#oakpal-components-dialogs}
 
 * **Schlüssel**: ComponentWithOnlyClassicUIDialog
-* **type**: `Code Smell`/Cloud Service-Kompatibilität
+* **Typ**: `Code Smell`/Cloud-Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -826,7 +826,7 @@ Die Dokumentation zu den Experience Manager-Modernisierungs-Tools bietet Dokumen
 ### In Paketen sollten veränderliche und unveränderliche Inhalte nicht gemischt werden {#oakpal-packages-immutable}
 
 * **Schlüssel**: ImmutableMutableMixedPackage
-* **type**: `Code Smell`/Cloud Service-Kompatibilität
+* **Typ**: `Code Smell`/Cloud-Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
@@ -841,7 +841,7 @@ Weitere Details finden Sie unter [Experience Manager-Projektstruktur](/help/impl
 ### Verwenden Sie keine Agenten für Rückwärtsreplikation {#oakpal-reverse-replication}
 
 * **Schlüssel**: ReverseReplication
-* **type**: `Code Smell`/Cloud Service-Kompatibilität
+* **Typ**: `Code Smell`/Cloud-Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 

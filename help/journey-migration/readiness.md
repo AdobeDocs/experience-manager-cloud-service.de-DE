@@ -5,9 +5,9 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -196,9 +196,9 @@ Ein typischer Bericht sollte die folgenden Eingaben enthalten:
 * Dokumentation mit Details zum Funktionssatz Ihrer jeweiligen AEM-Installation
 * Details zu Ihren benutzerdefinierten AEM-Konfigurationen und zum Code
 * Produktions-Dispatcher-Konfigurationen
-* Domain-Zuordnungen (CDN-Konfigurationen) (falls vorhanden)
+* Domain-Zuordnungen (CDN-Konfigurationen), falls vorhanden
 
-**Verteilen des Berichts**
+**Weitergeben des Berichts**
 
 Sobald die Best Practices Analyzer-Berichte abgeschlossen sind, geben Sie sie an die entsprechenden Teams weiter, um Ihre Ergebnisse zu bestätigen und die nächsten Schritte zu planen. Je nach Vorlieben können Sie auch eine gedruckte Version des Berichts verteilen, indem Sie die [Druckvorschau](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam) verwenden.
 

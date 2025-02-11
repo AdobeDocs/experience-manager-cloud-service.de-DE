@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6492'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
-> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zum [Erstellen eines neuen adaptiven Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Hinzufügen von adaptivem Forms zu AEM Sites-Seiten](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Forms mithilfe von Foundation-Komponenten beschrieben.
+> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für die Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben.
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -477,13 +477,13 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
+1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
 1. Gehen Sie in diesem Ausdrucksfeld wie folgt vor:
 
-   * Wählen Sie das Feld **[!UICONTROL Gehalt]**   im ersten Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]** aus oder ziehen Sie es von der Registerkarte „Formularobjekt“ hierhin.
+   * Wählen Sie das Feld **[!UICONTROL Gehalt]** im ersten Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]** aus oder ziehen Sie es von der Registerkarte „Formularobjekt“ hierhin.
 
    * Wählen Sie aus dem Feld **[!UICONTROL Operator auswählen]** die Option **[!UICONTROL plus]** aus.
 
@@ -569,8 +569,7 @@ Weitere Informationen finden Sie unter [jsdoc.app](https://jsdoc.app/).
 Unterstützte `jsdoc`-Tags:
 
 * **Private** (Privat)
-Syntax: `@private`  
-Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
+Syntax: `@private` Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
 
 * **Name**
 Syntax: `@name funcName <Function Name>`
@@ -588,9 +587,9 @@ Alternativ dazu ist es möglich, `@argument` `{type} name <Parameter Description
 Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens).
   `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
 
-   1. String (Zeichenfolge)
+   1. Zeichenfolge
    1. Number (Zahl)
-   1. Boolean (Boolesch)
+   1. Boolesch
    1. Scope (Umfang)
 
   Scope bezieht sich auf Felder eines adaptiven Formulars. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
@@ -603,9 +602,9 @@ Alternativ ist es möglich, `@returns {type}` zu verwenden.
 Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
 Die Zeichenfolge „{type}“ gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
-   1. String (Zeichenfolge)
+   1. Zeichenfolge
    1. Number (Zahl)
-   1. Boolean (Boolesch)
+   1. Boolesch
 
   Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien. Keine Angabe wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 

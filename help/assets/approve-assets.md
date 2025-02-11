@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmige
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1115'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -37,17 +37,17 @@ Sie müssen das entsprechende Metadatenschema in der Admin-Ansicht einmalig aktu
 1. Wählen Sie das entsprechende Metadatenschema aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. <br>Der **[!UICONTROL Metadatenschema-Formular-Editor]** wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]** ist hervorgehoben.
 1. Scrollen Sie nach unten und klicken Sie auf **[!UICONTROL Überprüfungsstatus]**.
 1. Klicken Sie im Bedienfeld auf der rechten Seite auf die Registerkarte **[!UICONTROL Regeln]**.
-1. Deaktivieren Sie **[!UICONTROL Bearbeitung]**.
+1. Deaktivieren Sie **[!UICONTROL Bearbeitung deaktivieren]**.
 Um die Eigenschaft anzuzeigen, der das Feld **[!UICONTROL Überprüfungsstatus]** zugeordnet ist, navigieren Sie zur Registerkarte **[!UICONTROL Einstellungen]** und zeigen Sie den Wert `./jcr:content/metadata/dam:status` im Feld **[!UICONTROL Zu Eigenschaft zuordnen]** an.
-1. Ziehen Sie ein Feld **[!UICONTROL Dropdown]** aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt Metadaten im Formular.
+1. Ziehen Sie ein **[!UICONTROL Dropdown-Feld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und nehmen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** vor:
-   1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Genehmigungsziel_.
+   1. Ändern Sie den **[!UICONTROL Feldtitel]** in _Genehmigungsziel_.
    1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam:activationTarget_.
    1. Fügen Sie die Auswahlmöglichkeiten mit `contenthub` und `delivery` als Optionswerte hinzu.
 
    >[!NOTE]
    >
-   Wenn Sie die Validierungszielgruppe als Content Hub mithilfe der Assets-Ansicht auswählen, werden die Assets in Content Hub für die Benutzenden verfügbar gemacht, die Teil derselben Organisation sind. Wenn Sie Validierungsziel als Versand auswählen, stehen die Assets allen Benutzern zur Verfügung.
+   Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -85,15 +85,15 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
    1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam:status_.
    1. Ändern Sie den Standardwert in _genehmigt_.
 
-1. Ziehen Sie ein Feld **[!UICONTROL Dropdown]** aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt Metadaten im Formular.
+1. Ziehen Sie ein **[!UICONTROL Dropdown-Feld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und nehmen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** vor:
-   1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Genehmigungsziel_.
+   1. Ändern Sie den **[!UICONTROL Feldtitel]** in _Genehmigungsziel_.
    1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam:activationTarget_.
    1. Fügen Sie die Auswahlmöglichkeiten mit `contenthub` und `delivery` als Optionswerte hinzu.
 
    >[!NOTE]
    >
-   Wenn Sie die Validierungszielgruppe als Content Hub mithilfe der Assets-Ansicht auswählen, werden die Assets in Content Hub für die Benutzenden verfügbar gemacht, die Teil derselben Organisation sind. Wenn Sie Validierungsziel als Versand auswählen, stehen die Assets allen Benutzern zur Verfügung.
+   Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Metadatenprofile]** das neu erstellte Metadatenprofil aus.
 1. Klicken Sie in der oberen Aktionsleiste auf **[!UICONTROL Metadatenprofil auf Ordner anwenden]**.
@@ -112,18 +112,18 @@ So genehmigen Sie gleichzeitig mehrere Assets in einem Ordner in der Assets-Ansi
 
 1. Wählen Sie im rechten Bereich im Abschnitt [!UICONTROL Eigenschaften] im Feld **[!UICONTROL Status]** die Option **[!UICONTROL Genehmigt]** aus.
 
-   Wenn Sie den Status als `Approved` auswählen und [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) oder [Content Hub](/help/assets/product-overview.md) oder beide für Ihre Experience Manager Assets aktiviert sind, können Sie `Delivery` und `Content Hub` Optionen anzeigen, die im Feld **[!UICONTROL Validierungsziel]** verfügbar sind.
+   Wenn Sie als Status `Approved` auswählen und [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) und/oder [Content Hub](/help/assets/product-overview.md) für Experience Manager Assets aktiviert sind, können Sie die Optionen für `Delivery` und `Content Hub` anzeigen, die im Feld **[!UICONTROL Genehmigungsziel]** verfügbar sind.
 
    * Wählen Sie **[!UICONTROL Bereitstellung]** aus, um die Assets sowohl für Dynamic Media mit OpenAPI-Funktionen als auch für Content Hub verfügbar zu machen. Wenn Sie Content Hub nicht aktiviert haben, werden die Assets bei Auswahl dieser Option nur für Dynamic Media mit OpenAPI-Funktionen verfügbar.
    * Wählen Sie **[!UICONTROL Content Hub]** aus, um die Assets für Content Hub verfügbar zu machen.
 
    ![Genehmigungsstatus](/help/assets/assets/approval-status-delivery.png)
 
-   Wenn Sie nicht das Standard-Metadatenformular verwenden und das Feld **[!UICONTROL Validierungsziel]** nicht anzeigen können, [bearbeiten Sie Ihr Metadatenformular](/help/assets/metadata-assets-view.md#metadata-forms), um das Feld **[!UICONTROL Validierung für]** aus den verfügbaren Komponenten in Ihr Metadatenformular zu ziehen, und klicken Sie auf **[!UICONTROL Speichern]**.
+   Wenn Sie nicht das Standard-Metadatenformular verwenden und das Feld **[!UICONTROL Genehmigungsziel]** nicht anzeigen können, [bearbeiten Sie Ihr Metadatenformular](/help/assets/metadata-assets-view.md#metadata-forms), um das Feld **[!UICONTROL Genehmigung für]** aus den verfügbaren Komponenten in Ihr Metadatenformular zu ziehen, und klicken Sie auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
    >
-   Wenn Sie die Validierungszielgruppe `Content Hub` mithilfe der Assets-Ansicht innerhalb eines Unternehmens auswählen, werden die Assets in Content Hub für die Benutzenden verfügbar gemacht, die Teil desselben Unternehmens sind.
+   Wenn Sie mithilfe der Assets-Ansicht einer Organisation `Content Hub` als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 

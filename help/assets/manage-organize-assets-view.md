@@ -6,9 +6,9 @@ contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1633'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -140,46 +140,46 @@ Wenn Sie Dynamic Media mit OpenAPI-Funktionen für Ihre Umgebung bereitgestellt 
 
 
 
-### Validierungsziel festlegen {#set-approval-target}
+### Festlegen des Genehmigungsziels {#set-approval-target}
 
-Mit der Assets-Ansicht können Sie genehmigte Assets in Dynamic Media veröffentlichen, wobei die OpenAPI-Funktionen, Content Hub oder beides auf dem Wert basieren, den Sie im Feld **Validierungsziel** auf der Seite „Asset-Details“ festgelegt haben.
+Mit der Assets-Ansicht können Sie genehmigte Assets in Dynamic Media veröffentlichen, wobei OpenAPI-Funktionen, Content Hub oder beides auf dem Wert basieren, den Sie im Feld **Genehmigungsziel** auf der Seite „Asset-Details“ festgelegt haben.
 
-So legen Sie die Validierungszielgruppe fest:
+So legen Sie das Genehmigungsziel fest:
 
 1. Wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Details]**.
 
 1. Wählen Sie in der Registerkarte **[!UICONTROL Allgemein]** den Asset-Status aus der Dropdown-Liste **[!UICONTROL Status]** aus. Zu den zulässigen Werten gehören „Genehmigt“, „Abgelehnt“ und „Kein Status“ (Standard).
 
-1. Wenn Sie in Schritt 2 **Genehmigt** auswählen, wählen Sie eine Validierungszielgruppe aus. Zu den möglichen Werten gehören Versand und Content Hub.
+1. Wenn Sie in Schritt 2 **Genehmigt** auswählen, wählen Sie ein Genehmigungsziel aus. Zu den möglichen Werten gehören „Bereitstellung“ und „Content Hub“.
 
-   * **Versand** ist die im Dropdown-Menü ausgewählte Standardoption. Das Asset wird sowohl in [Dynamic Media mit OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) als auch in [Content Hub](/help/assets/product-overview.md) veröffentlicht, sofern beide für Experience Manager Assets aktiviert sind.
+   * **Bereitstellung** ist die im Dropdown-Menü ausgewählte Standardoption. Das Asset wird sowohl in [Dynamic Media mit OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) als auch in [Content Hub](/help/assets/product-overview.md) veröffentlicht, sofern beide für Experience Manager Assets aktiviert sind.
 
-   * Durch Auswahl von **Content Hub** wird das Asset nur in Content Hub veröffentlicht. Content Hub wird nur dann als Option angezeigt, wenn es für Experience Manager Assets aktiviert ist.
+   * Bei Auswahl von **Content Hub** wird das Asset nur in Content Hub veröffentlicht. Content Hub wird nur dann als Option angezeigt, wenn es für Experience Manager Assets aktiviert ist.
 
-   * Wenn Sie keine Option aus der Dropdown-Liste auswählen, wird die für Ihre AEM as a Cloud Service-Umgebung aktivierte Standardoption automatisch auf das Asset angewendet.
+   * Wenn Sie keine Option aus der Dropdown-Liste auswählen, wird automatisch die für Ihre AEM as a Cloud Service-Umgebung aktivierte Standardoption auf das Asset angewendet.
 
 
-   Weitere Informationen zu den verfügbaren Optionen finden Sie unter [Standardmäßige Validierungszielgruppe und Veröffentlichungsziele für genehmigte Assets](#default-approval-target-options-publish-destinations).
+   Weitere Informationen zu den verfügbaren Optionen finden Sie unter [Standardmäßige Genehmigungsziele und Veröffentlichungsziele für genehmigte Assets](#default-approval-target-options-publish-destinations).
 
    >[!NOTE]
    >
-   >Das Festlegen eines Validierungsziels ist eine Funktion mit begrenzter Verfügbarkeit. Sie können sie aktivieren oder deaktivieren, indem Sie ein Support-Ticket erstellen. Wenn Sie Dynamic Media mit aktiviertem OpenAPI haben, ist es standardmäßig aktiviert.
+   >Das Festlegen eines Genehmigungsziels ist eine Funktion mit begrenzter Verfügbarkeit. Sie können dies aktivieren oder deaktivieren, indem Sie ein Support-Ticket erstellen. Wenn Sie Dynamic Media mit aktiviertem OpenAPI nutzen, ist es standardmäßig aktiviert.
 
    ![Genehmigungsstatus](/help/assets/assets/approval-status-delivery.png)
 
 1. Geben Sie andere Asset-Eigenschaften an und klicken Sie auf **[!UICONTROL Speichern]**.
 
-Zu den weiteren zu beachtenden Punkten gehören:
+Weitere zu beachtende Punkte sind:
 
-* Wenn Sie das Standard-Metadatenformular nicht verwenden und das Feld **[!UICONTROL Validierungsziel]** nicht anzeigen können, [bearbeiten Sie Ihr Metadatenformular](/help/assets/metadata-assets-view.md#metadata-forms), um das Feld **[!UICONTROL Validierung für]** aus den verfügbaren Komponenten in Ihr Metadatenformular zu ziehen, und klicken Sie auf **[!UICONTROL Speichern]**.
+* Wenn Sie nicht das Standard-Metadatenformular verwenden und das Feld **[!UICONTROL Genehmigungsziel]** nicht sehen können, [bearbeiten Sie Ihr Metadatenformular](/help/assets/metadata-assets-view.md#metadata-forms), indem Sie das Feld **[!UICONTROL Genehmigung für]** aus den verfügbaren Komponenten in Ihr Metadatenformular ziehen, und klicken Sie auf **[!UICONTROL Speichern]**.
 
-* Wenn Sie die Validierungszielgruppe `Content Hub` mithilfe der Assets-Ansicht auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören.
+* Wenn Sie das Genehmigungsziel mithilfe der Assets-Ansicht als `Content Hub` auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören.
 
-#### Standard-Validierungsziel und Veröffentlichungsziele für genehmigte Assets {#default-approval-target-options-publish-destinations}
+#### Standardmäßige Genehmigungsziele und Veröffentlichungsziele für genehmigte Assets {#default-approval-target-options-publish-destinations}
 
-Die folgende Tabelle zeigt die Voraussetzungen für die Anzeige `Approval Target` Dropdown-Liste und des Standard-Validierungsziels basierend auf der Aktivierung von DM mit OpenAPI und Content Hub in Ihrer AEM as a Cloud Service-Umgebung:
+Die folgende Tabelle zeigt die Voraussetzungen für die Anzeige der Dropdown-Liste `Approval Target` und des standardmäßigen Validierungsziels, basierend auf der Aktivierung von DM mit OpenAPI und Content Hub in Ihrer AEM as a Cloud Service-Umgebung:
 
-| Dynamic Media mit OpenAPI | Content Hub | Die Dropdown-Liste Validierungsziel wird angezeigt? | Standard-Validierungsziel für genehmigte Assets | Publish-Ziel |
+| Dynamic Media mit OpenAPI | Content Hub | Wird die Dropdown-Liste „Genehmigungsziel“ angezeigt? | Standardmäßiges Genehmigungsziel für genehmigte Assets | Veröffentlichungsziel |
 | --- | --- | --- | --- |---|
 | Aktiviert | Aktiviert | Ja | Bereitstellung | Dynamic Media mit OpenAPI und Content Hub |
 | Nicht aktiviert | Aktiviert | Ja | Content Hub | Content Hub |

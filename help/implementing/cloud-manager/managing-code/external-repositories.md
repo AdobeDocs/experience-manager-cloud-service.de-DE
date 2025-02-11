@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Clou
 
 >[!NOTE]
 >
->Diese Funktion ist nur über das Early-Adoption-Programm verfügbar. Weitere Informationen und die Möglichkeit, sich als frühzeitiger Anwender anzumelden, finden Sie unter [Eigenes Git einbringen - jetzt mit Unterstützung für GitLab und Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
+>Diese Funktion ist nur für das Early-Adopter-Programm verfügbar. Weitere Informationen und die Möglichkeit, sich als Early Adopter anzumelden, finden Sie unter [Bringen Sie Ihren eigenen Git mit – jetzt mit Unterstützung für GitLab und Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
 
 ## Konfigurieren eines externen Repositorys
 

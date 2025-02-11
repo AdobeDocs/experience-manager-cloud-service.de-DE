@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f57d90078b5fc0e0c8a79ca60cbc19e7b37323cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1250'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | URL für Kundinnen und Kunden zur Überwachung ihres Cloud Service-Programms | Ausgeschlossen | Adobe empfiehlt, die URL zu verwenden, um die Verfügbarkeit oder Konsistenzprüfung extern zu überwachen.<br><br>`/system/probes/health` |
 | Pod-Warm-up-Service für AEM as a Cloud Service | Ausgeschlossen |
 | Agent: skyline-service-warmup/1.* |
-| Bekannte Suchmaschinen, soziale Netzwerke und HTTP-Bibliotheken (mit Tags von Fastly) | Ausgeschlossen | Bekannte Dienste, die die Website regelmäßig besuchen, um ihren Suchindex oder -service zu aktualisieren:<br><br>Beispiele:<br>・ AddSearchBot<br>・ AhrefsBot<br>・ Applebot<br>・ Ask Jeeves Corporate Spider<br>・ Bingbot<br>・ BingPreview<br>・ BLEXBot<br>・ BuiltWith<br>・ Bytespider<br>・ CrawlerKengo<br>・ FacebookExternalhit<br>・ Google AdsBot<br> Google AdsBot Mobile<br>・ GoogleBot Mobile<br>・ lmspider<br>・ LucidWorks<br>・ `MJ12bot`<br>・ Pinterest<br>・ SiteImimproving<br>・ StashBot<br>・ StatusCake<br>・ YandexBot<br> <br> <br> <br>・ ContentKingBot |
+| Bekannte Suchmaschinen, soziale Netzwerke und HTTP-Bibliotheken (mit Tags von Fastly) | Ausgeschlossen | Bekannte Dienste, die die Site regelmäßig besuchen, um ihren Suchindex oder Dienst zu aktualisieren:<br><br>Beispiele:<br>• AddSearchBot<br>• AhrefsBot<br>• Applebot<br>• Ask Jeeves Corporate Spider<br>• Bingbot<br>• BingPreview<br>• BLEXBot<br>• BuiltWith<br>• Bytespider<br>• CrawlerKengo<br>• Facebookexternalhit<br>• Google AdsBot<br>• Google AdsBot Mobile<br>• Googlebot<br>• Googlebot Mobile<br>• lmspider<br>• LucidWorks<br>• `MJ12bot`<br>• Pinterest<br>• SemrushBot<br>• SiteImprove<br>• StashBot<br>• StatusCake<br>• YandexBot<br>• ContentKing<br>• Claudebot |
 | Commerce Integration Framework-Aufrufe | Ausgeschlossen | Anfragen an AEM, die an das Commerce Integration Framework weitergeleitet werden. Die URL beginnt mit `/api/graphql`. Um eine doppelte Zählung zu vermeiden, sind sie für den Cloud-Service nicht abrechenbar. |
 | Ausschließen von `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf. Es bietet Informationen zur Installation von Websites auf Desktops oder Mobiltelefonen. Adobe sollte eine JSON-Anfrage an `/etc.clientlibs/*/manifest.json` nicht zählen |
 | Ausschließen von `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, wurde festgestellt, dass in einigen Szenarien wie bei SAML-Authentifizierungsabläufen Favicons als HTML zurückgegeben wurden. Daher werden Favicons explizit aus der Zählung ausgeschlossen. |
