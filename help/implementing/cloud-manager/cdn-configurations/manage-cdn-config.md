@@ -6,7 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
 
@@ -100,7 +100,7 @@ Die Schritte zum Löschen einer CDN-Konfiguration auf der Seite **Umgebungen** s
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Klicken Sie im linken Seitenmenü auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
+1. Klicken Sie im linken Seitenmenü auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. 
 
 1. Wählen Sie auf der Seite **Umgebungen** eine Umgebung von Interesse aus.
 

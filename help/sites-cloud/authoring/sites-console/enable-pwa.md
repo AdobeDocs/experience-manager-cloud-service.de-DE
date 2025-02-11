@@ -63,7 +63,7 @@ Die Kernkomponenten-Version 2.15.0 und höher unterstützt die PWA-Funktionen vo
 
 >[!NOTE]
 >
->Beim Adobe wird nicht empfohlen, die PWA-Funktionen für benutzerdefinierte Komponenten oder Komponenten zu verwenden, die nicht [ausgehend von den Kernkomponenten erweitert](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de).
+>Es wird von Adobe nicht empfohlen, die PWA-Funktionen für benutzerdefinierte Komponenten oder Komponenten zu verwenden[ die nicht ausgehend von den Kernkomponenten erweitert ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de).
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -138,7 +138,7 @@ Ihre Site ist jetzt konfiguriert und Sie können [als lokale App installieren](#
 
 ## Verwenden Ihrer PWA-fähigen Site {#using-pwa-enabled-site}
 
-Nachdem Sie nun [Ihre Site für die Unterstützung von PWA konfiguriert](#enabling-pwa-for-your-site) können Sie sie selbst erleben.
+Nachdem Sie Ihre [ zur Unterstützung von PWA konfiguriert haben](#enabling-pwa-for-your-site) können Sie sie selbst erleben.
 
 1. Rufen Sie die Site in einem [unterstützten Browser](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary) auf.
 1. In der Adressleiste des Browsers wird ein neues Symbol angezeigt, das darauf hinweist, dass die Site als lokale App installiert werden kann.
@@ -149,7 +149,7 @@ Nachdem Sie nun [Ihre Site für die Unterstützung von PWA konfiguriert](#enabli
 
 ## Detaillierte Optionen {#detailed-options}
 
-Im folgenden Abschnitt finden Sie weitere Informationen zu den verfügbaren Optionen beim [Konfigurieren Ihrer Site für das PWA](#enabling-pwa-for-your-site).
+Im folgenden Abschnitt finden Sie weitere Informationen zu den verfügbaren Optionen beim [Konfigurieren Ihrer Site für PWA](#enabling-pwa-for-your-site).
 
 ### Konfigurieren installierbarer Erlebnisse {#configure-installable-experience}
 

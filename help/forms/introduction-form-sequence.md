@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
 source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 100%
 

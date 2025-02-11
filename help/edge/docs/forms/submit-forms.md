@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmige
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 100%
 

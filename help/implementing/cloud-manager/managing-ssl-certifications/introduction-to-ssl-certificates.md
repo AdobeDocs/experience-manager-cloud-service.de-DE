@@ -53,7 +53,7 @@ Beide Modelle bieten die folgenden allgemeinen Funktionen für die Verwaltung Ih
 >
 >[Um eine benutzerdefinierte Domain hinzuzufügen und mit einer Umgebung zu verknüpfen](/help/implementing/cloud-manager/custom-domain-names/introduction.md), müssen Sie über ein gültiges SSL-Zertifikat verfügen, das die Domain abdeckt.
 
-### Adobe-verwaltete SSL-Zertifikate (DV) {#adobe-managed}
+### Von Adobe verwaltete SSL-Zertifikate (DV) {#adobe-managed}
 
 DV-Zertifikate stehen für die einfachste SSL-Zertifizierungsstufe und werden häufig zu Testzwecken oder zum Schützen von Websites mit einer einfachen Verschlüsselung verwendet. DV-Zertifikate sind in [Produktions- und Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) verfügbar.
 
@@ -85,12 +85,12 @@ Wenn Sie Ihr eigenes kundenverwaltetes SSL-Zertifikat hinzufügen möchten, muss
    * RSA 2048-Bit, Standard Support.
 RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-RSA-Schlüssel) werden derzeit nicht unterstützt.
    * Elliptische Kurve (EC) `prime256v1` (`secp256r1`) und `secp384r1`
-   * Zertifikate des Elliptic Curve Digital Signature Algorithm (ECDSA). Solche Zertifikate werden im Adobe-Modus gegenüber RSA empfohlen, um die Leistung, Sicherheit und Effizienz zu verbessern.
+   * Zertifikate des Elliptic Curve Digital Signature Algorithm (ECDSA). Solche Zertifikate werden von Adobe gegenüber RSA empfohlen, um Leistung, Sicherheit und Effizienz zu verbessern.
 
 * Zertifikate müssen korrekt formatiert sein, damit die Validierung erfolgreich ist. Private Schlüssel müssen im `PKCS#8` Format vorliegen.
 
 >[!NOTE]
->Wenn Ihr Unternehmen die Einhaltung von Richtlinien mit 3072-Bit-RSA-Schlüsseln fordert, ist die von der Adobe empfohlene Alternative die Verwendung von ECDSA-Zertifikaten (`secp256r1` oder `secp384r1`).
+>Wenn Ihr Unternehmen die Einhaltung von Richtlinien mithilfe von 3072-Bit-RSA-Schlüsseln fordert, besteht die von Adobe empfohlene Alternative darin, ECDSA-Zertifikate (`secp256r1` oder `secp384r1`) zu verwenden.
 
 
 #### Best Practices für die Zertifikatsverwaltung

@@ -6,7 +6,7 @@ hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
 source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 100%
 

@@ -6,7 +6,7 @@ exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
 source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 100%
 

@@ -5,7 +5,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 100%
 
