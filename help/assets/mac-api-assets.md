@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 83%
+source-wordcount: '1709'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 83%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-## Überblick {#overview}
+## Erste Schritte mit der AEM [!DNL Assets] der HTTP-API {#overview}
 
 Die AEM [!DNL Assets] HTTP-API ermöglicht CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) für digitale Assets über eine REST-Schnittstelle unter /`api/assets`. Diese Vorgänge gelten für Asset-Metadaten, Ausgabedarstellungen und Kommentare. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -41,7 +41,7 @@ Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-
 >
 >Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabedarstellungen) werden für die Bereitstellung von [!DNL Experience Manager] as a [!DNL Cloud Service] nicht mehr unterstützt. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload).
 
-## Inhaltsfragmente {#content-fragments}
+## Verwalten von Inhaltsfragmenten {#content-fragments}
 
 Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein strukturiertes Asset, das Text, Zahlen und Daten speichert. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
@@ -53,7 +53,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 >
 >Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
 
-## Datenmodell {#data-model}
+## Prüfen des Datenmodells {#data-model}
 
 Die [!DNL Assets]-HTTP-API stellt in erster Linie zwei Elemente bereit: Ordner und Standard-Assets. Sie enthält auch detaillierte Elemente für benutzerdefinierte Datenmodelle, die in Inhaltsfragmenten verwendet werden. Weitere Informationen finden Sie unter Inhaltsfragmentdatenmodelle. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
@@ -61,7 +61,7 @@ Die [!DNL Assets]-HTTP-API stellt in erster Linie zwei Elemente bereit: Ordner u
 >
 >Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
 
-### Ordner {#folders}
+### Ordner verwalten {#folders}
 
 Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner können Assets, Unterordner oder beides enthalten. Ordner enthalten folgende Komponenten:
 
@@ -82,7 +82,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner 
 * `parent`: Ein Link zum übergeordneten Ordner.
 * `thumbnail` (Optional): Ein Link zu einem Ordner-Miniaturbild.
 
-### Assets {#assets}
+### Verwalten von Assets {#assets}
 
 In [!DNL Experience Manager] enthalten Assets die folgenden Elemente:
 
@@ -103,7 +103,7 @@ In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 * Eigenschaften.
 * Links.
 
-## Verfügbare Funktionen {#available-features}
+## Verfügbare API-Vorgänge erkunden {#available-features}
 
 Die [!DNL Assets]-HTTP-API bietet die folgenden Funktionen:
 
@@ -293,7 +293,7 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Tipps, Best Practices und Einschränkungen {#tips-limitations}
+## Befolgen Sie die Best Practices und beachten Sie Einschränkungen {#tips-limitations}
 
 * Assets und die zugehörigen Ausgabedarstellungen sind nicht mehr über die [!DNL Assets]-Web-Oberfläche und die HTTP-API verfügbar, wenn die [!UICONTROL Ausschaltzeit] erreicht ist. Die API gibt einen 404-Fehler zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft liegt oder [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
@@ -301,7 +301,7 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 * Einige Eigenschaften des Ordners oder Assets werden einem anderen Präfix zugeordnet, wenn sie mit APIs aktualisiert wurden. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
 
-**Siehe auch**
+**Entdecken Sie verwandte Ressourcen**
 
 * [Assets übersetzen](translate-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
