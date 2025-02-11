@@ -1,22 +1,32 @@
 ---
 title: Responsives Layout
-description: AEM bietet Ihnen die Möglichkeit, Ihre Seiten mit einem responsiven Layout zu gestalten.
+description: Mit AEM können Sie ein responsives Layout für Ihre Seiten erstellen, indem Sie die Layout-Container -Komponente verwenden.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 99%
+source-wordcount: '1789'
+ht-degree: 92%
 
 ---
+
 
 # Responsives Layout {#responsive-layout}
 
 AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente **Layout-Container**.
 
-Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout-Modus**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+>[!TIP]
+>
+>Dieses Dokument bietet einen Überblick über die Funktionen des Layout-Containers, der für Inhaltsautorinnen und -autoren verfügbar ist. Zusätzliche Ressourcen sind verfügbar:
+>
+>* Für Site-Admins werden Informationen zum Konfigurieren des Layout-Containers für Ihre Sites im Dokument [Konfigurieren des Layout-Containers und des Layout-Modus“ beschrieben](/help/sites-cloud/administering/responsive-layout.md)
+>* Für Entwicklerinnen und Entwickler werden Details zum Layout-Container und zum responsiven Raster im Dokument [Responsives Design“ beschrieben, das ](/help/implementing/developing/introduction/responsive-design.md) und Tipps zur Verwendung von Layout-Containern und responsivem Raster beim Entwerfen Ihrer Site enthält.
+
+## Überblick {#overview}
+
+Die **Layout-Container**-Komponente bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout-Modus**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
@@ -49,10 +59,6 @@ Mit diesen responsiven Rastermechanismen können Sie:
 * Realisieren einer Spaltensteuerung.
 
 Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem für Ihre Seiten oder als Komponente verwendet werden, die über den Komponenten-Browser zu Ihrer Seite hinzugefügt werden kann (oder beides).
-
->[!TIP]
->
->Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwicklerinnen und -entwicklern zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM Sites zu erstellen.
 
 >[!NOTE]
 >

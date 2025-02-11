@@ -1,18 +1,18 @@
 ---
 title: Assets-HTTP-API
-description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Experience Manager Assets].
+description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
 workflow-type: tm+mt
-source-wordcount: '1720'
-ht-degree: 100%
+source-wordcount: '1693'
+ht-degree: 83%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets]-HTTP-API {#assets-http-api}
+# Verwalten digitaler Assets mit der [!DNL Adobe Experience Manager Assets] HTTP-API{#assets-http-api}
 
 | [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## Überblick {#overview}
 
-Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
+Die AEM [!DNL Assets] HTTP-API ermöglicht CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) für digitale Assets über eine REST-Schnittstelle unter /`api/assets`. Diese Vorgänge gelten für Asset-Metadaten, Ausgabedarstellungen und Kommentare. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-
 
 ## Inhaltsfragmente {#content-fragments}
 
-Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Es kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
+Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein strukturiertes Asset, das Text, Zahlen und Daten speichert. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
 Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -55,7 +55,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 
 ## Datenmodell {#data-model}
 
-Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets). Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
+Die [!DNL Assets]-HTTP-API stellt in erster Linie zwei Elemente bereit: Ordner und Standard-Assets. Sie enthält auch detaillierte Elemente für benutzerdefinierte Datenmodelle, die in Inhaltsfragmenten verwendet werden. Weitere Informationen finden Sie unter Inhaltsfragmentdatenmodelle. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Asse
 
 ### Ordner {#folders}
 
-Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner können nur Assets, nur Ordner oder Ordner und Assets enthalten. Ordner enthalten folgende Komponenten:
+Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner können Assets, Unterordner oder beides enthalten. Ordner enthalten folgende Komponenten:
 
 **Entitäten**: Zu den Entitäten eines Ordners zählen die untergeordneten Elemente, z. B. die Ordner und Assets.
 
 **Eigenschaften**:
 
-* `name` ist der Name des Ordners. Dies entspricht dem letzten Segment im URL-Pfad ohne die Erweiterung.
-* `title` Ist ein optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann.
+* `name`: Der Name des Ordners (das letzte Segment des URL-Pfads, ohne Erweiterung).
+* `title`: Ein optionaler Titel, der anstelle des Ordnernamens angezeigt wird.
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner 
 
 **Links**-Ordner stellen drei Links bereit:
 
-* `self`: Link zu sich selbst.
-* `parent`: Link zum übergeordneten Ordner.
-* `thumbnail`: (Optionaler) Link zu einem Ordnerminiaturbild.
+* `self`: Ein Link zum Ordner selbst.
+* `parent`: Ein Link zum übergeordneten Ordner.
+* `thumbnail` (Optional): Ein Link zu einem Ordner-Miniaturbild.
 
 ### Assets {#assets}
 
 In [!DNL Experience Manager] enthalten Assets die folgenden Elemente:
 
-* Die Eigenschaften und Metadaten des Assets.
-* Die ursprünglich hochgeladene Binärdatei des Assets.
-* Mehrere Ausgabedarstellungen, wie konfiguriert. Dabei kann es sich um Bilder unterschiedlicher Größe, Videos unterschiedlicher Kodierungen oder extrahierte Seiten aus PDF- oder [!DNL Adobe InDesign]-Dateien handeln.
-* Optionale Kommentare.
+* **Eigenschaften und Metadaten** Beschreibende Informationen zum Asset.
+* **Binärdatei:** die ursprünglich hochgeladene Datei.
+* **Ausgabedarstellungen:** mehrere konfigurierte Ausgabedarstellungen (z. B. Bilder in verschiedenen Größen, verschiedene Videokodierungen oder extrahierte Seiten aus PDF-/Adobe InDesign-Dateien).
+* **Kommentare (optional):** von Benutzern bereitgestellte Anmerkungen.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -173,7 +173,7 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Informationen zum Erstellen eines Assets finden Sie unter [Asset-Upload](developer-reference-material-apis.md). Mit der HTTP-API kann kein Asset erstellt werden.
+Die Erstellung von Assets wird über diese HTTP-API nicht unterstützt. Verwenden Sie für die Asset-Erstellung die [Asset-Upload](developer-reference-material-apis.md)-API.
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
@@ -181,7 +181,7 @@ Informationen zum Aktualisieren von Asset-Binärdateien finden Sie unter [Asset-
 
 ## Aktualisieren von Metadaten eines Assets {#update-asset-metadata}
 
-Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:`-Namespace aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr`-Namespace. Die API synchronisiert die Eigenschaften unter den beiden Namespaces nicht.
+Dieser Vorgang aktualisiert die Metadaten des Assets. Beim Aktualisieren von Eigenschaften im `dc:`-Namespace wird die entsprechende `jcr:` aktualisiert. Die API synchronisiert jedoch nicht die Eigenschaften unter den beiden Namespaces.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,7 +196,10 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 
 Erstellt eine neue Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anfrageparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
 
-**Parameter**: Die Parameter sind `name` für den Namen der Ausgabedarstellung und `file` als ein Dateiverweis.
+**Parameter**: Die Parameter sind:
+
+`name`: für den Namen der Ausgabedarstellung.
+`file`: Die Binärdatei für die Ausgabedarstellung als Referenz.
 
 **Anfrage**
 
@@ -292,9 +295,9 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 ## Tipps, Best Practices und Einschränkungen {#tips-limitations}
 
-* Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
+* Assets und die zugehörigen Ausgabedarstellungen sind nicht mehr über die [!DNL Assets]-Web-Oberfläche und die HTTP-API verfügbar, wenn die [!UICONTROL Ausschaltzeit] erreicht ist. Die API gibt einen 404-Fehler zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft liegt oder [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
-* Die Assets-HTTP-API gibt nicht die vollständigen Metadaten zurück. Die Namespaces sind fest kodiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
+* Die Assets-HTTP-API gibt nur eine Teilmenge von Metadaten zurück. Die Namespaces sind fest kodiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
 
 * Einige Eigenschaften des Ordners oder Assets werden einem anderen Präfix zugeordnet, wenn sie mit APIs aktualisiert wurden. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
 

@@ -4,14 +4,26 @@ description: Responsives Design ermöglicht die effektive Darstellung derselben 
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 97%
+source-wordcount: '1165'
+ht-degree: 77%
 
 ---
 
+
 # Responsives Design {#responsive-design}
+
+Responsives Design ermöglicht die effektive Darstellung derselben Erlebnisse auf verschiedenen Geräten in verschiedenen Ausrichtungen.
+
+>[!TIP]
+>
+>Dieses Dokument bietet einen Überblick über responsives Design für Entwicklerinnen und Entwickler und darüber, wie Funktionen in AEM realisiert werden. Zusätzliche Ressourcen sind verfügbar:
+>
+>* Für Inhaltsautorinnen und -autoren sind Details zur Verwendung responsiver Design-Funktionen auf einer Inhaltsseite im Dokument [Responsives Layout“ verfügbar](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Für Site-Admins werden Informationen zum Konfigurieren des Layout-Containers für Ihre Sites im Dokument [Konfigurieren des Layout-Containers und des Layout-Modus“ beschrieben](/help/sites-cloud/administering/responsive-layout.md)
+
+## Überblick {#overview}
 
 Gestalten Sie Ihre Erlebnisse so, dass sie sich dem Client-Darstellungsfeld anpassen, auf dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Abbildung zeigt einige Möglichkeiten, wie eine Seite auf Größenänderungen des Darstellungsfelds reagieren kann:
 
@@ -132,4 +144,65 @@ Responsive Seiten passen sich dynamisch an das Gerät an, auf dem sie gerendert 
 
 Mit dem Layout-Container von AEM können Sie ein responsives Layout effizient und effektiv implementieren, um die Seitendimensionen an den Client-Viewport anzupassen.
 
-Im Dokument [Konfiguration von Layout-Container und Layout-Modus](/help/sites-cloud/administering/responsive-layout.md) finden Sie weitere Informationen darüber, wie der Layout-Container funktioniert und wie Sie responsive Layouts für Ihre Inhalte aktivieren.
+>[Die GitHub-](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) des responsiven Rasters ist ein Verweis, der Frontend-Entwicklern gegeben werden kann, sodass sie das AEM-Raster außerhalb von AEM verwenden können, z. B. beim Erstellen von statischen HTML-Mockups für eine zukünftige AEM-Site.
+
+>[!TIP]
+>
+>Im Dokument [Konfiguration von Layout-Container und Layout-Modus](/help/sites-cloud/administering/responsive-layout.md) finden Sie weitere Informationen darüber, wie der Layout-Container funktioniert und wie Sie responsive Layouts für Ihre Inhalte aktivieren.
+
+## Verschachtelte responsive Raster {#nested-responsive-grids}
+
+Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass es sich als Best Practice für die Adobe empfiehlt, die Struktur so flach wie möglich zu halten.
+
+Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, stellen Sie Folgendes sicher:
+
+* Alle Container (Container, Registerkarten, Akkordeons usw.) haben die Eigenschaft `layout = responsiveGrid`.
+* Mischen Sie nicht die Eigenschaft `layout = simple` in der Container-Hierarchie.
+
+Dazu gehören alle strukturellen Container aus der Seitenvorlage.
+
+Die Spaltennummer des inneren Containers sollte nie größer sein als die des äußeren Containers. Das folgende Beispiel erfüllt diese Bedingung. Während die Spaltennummer des äußeren Containers für den Standardbildschirm (Desktop) 8 beträgt, ist die Spaltennummer des inneren Containers 4.
+
+>[!BEGINTABS]
+
+>[!TAB Beispielknotenstruktur]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Beispiel für resultierendes HTML]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+>[!ENDTABS]
