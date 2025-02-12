@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.10.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: c3beecaab03c3721ad2fb70658a335d17f9a66d0
+source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 100%
@@ -64,7 +64,7 @@ Die [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headl
 
 **KI-generierte Videountertitel**
 
-Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Benutzererlebnis verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
+Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion hat das Ziel, die Barrierefreiheit und das Benutzererlebnis zu verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
 
 Um frühzeitig Zugang zur Unterstützung für KI-generierte Untertitel in Ihrem Dynamic Media-Konto zu erhalten, [erstellen und senden Sie eine Anfrage an den Adobe-Kunden-Support.](/help/assets/dynamic-media/video.md##enable-dash)
 
@@ -82,7 +82,7 @@ Berichte können jetzt in der Assets-Ansicht automatisch mit einem wiederkehrend
 
 Unternehmen können jetzt die Lizenzkonformität erhöhen und das Risiko der Freigabe von Assets mit Lizenzbedingungen minimieren, indem sie DRM für lizenzierte Assets für Benutzende von Content Hub nutzen. Benutzende müssen die Lizenzbedingungen überprüfen und akzeptieren, bevor sie lizenzierte Assets herunterladen können. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+![Herunterladen mehrerer Lizenzen](/help/assets/assets/download-multiple-license.png)
 
 **Konfiguration der Asset-Karten-Metadaten**
 
@@ -194,7 +194,7 @@ Jeder kann auf die öffentliche Beta-Version zugreifen, indem in der aktuellen A
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0).
+Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

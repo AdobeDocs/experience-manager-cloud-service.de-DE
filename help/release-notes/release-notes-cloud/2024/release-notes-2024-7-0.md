@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.7.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 84%
@@ -67,17 +67,17 @@ Der Asset-Selektor bietet Inhaltsautoren jetzt die Möglichkeit, fertige Assets 
 
 **KI-generierte Videountertitel**
 
-Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Benutzererlebnis verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
+Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion hat das Ziel, die Barrierefreiheit und das Benutzererlebnis zu verbessern, indem akkurate Untertitel in Echtzeit bereitgestellt werden. Die KI analysiert die Audiospur des Videos, um Sprache zu transkribieren und Untertitel zu erstellen, die zwecks Korrektheit oder Anpassung bearbeitet werden können. Diese Untertitel dienen der Barrierefreiheit und machen Videos für Zielgruppen attraktiver, die textbasierte Videounterstützung nutzen bzw. bevorzugen.
 
 Um frühzeitig Zugang zur Unterstützung für KI-generierte Untertitel in Ihrem Dynamic Media-Konto zu erhalten, [erstellen und senden Sie eine Anfrage an den Adobe-Kunden-Support.](/help/assets/dynamic-media/video.md##enable-dash)
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-new-features}
 
-**Integration der Inhaltsurhebernachweise**
+**Integration von Content Credentials**
 
-Experience Manager Assets unterstützt jetzt Inhaltsurhebernachweise für unterstützte Bildformate. Diese Funktion liefert Informationen zur Herkunft des Assets und dazu, wie es erstellt wurde, einschließlich Informationen dazu, ob es mithilfe von GenAI geändert wurde.
+Experience Manager Assets unterstützt jetzt Content Credentials für unterstützte Bildformate. Diese Funktion liefert Informationen zur Herkunft des Assets und dazu, wie es erstellt wurde, einschließlich Informationen dazu, ob es mithilfe von GenAI geändert wurde.
 
-![Inhaltsurhebernachweise](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **Visuelle Vorschau des Ordnerinhalts**
 
@@ -190,7 +190,7 @@ Sie erhalten über das Aktionszentrum eine proaktive Benachrichtigung, wenn fest
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Eine vollständige Liste der neuen und verbesserten Funktionen der neuesten Version der Adobe Experience Manager Guides finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
