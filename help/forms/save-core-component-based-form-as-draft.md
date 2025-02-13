@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie auf Kernkomponenten basierende adaptive Formu
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 508265c72f458b062e1667fd42403743fa293586
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 16%
@@ -16,7 +16,7 @@ ht-degree: 16%
 
 <span class="preview"> Dieser Artikel enthält Inhalte zur Funktion **Entwürfe** einer Vorabversion-Funktion. Die Vorabveröffentlichungsfunktion ist nur über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugänglich.</span>
 
-Erwägen Sie einen Benutzer, der mit dem Ausfüllen eines Formulars beginnt, aber später anhalten und zurückkehren muss. AEM bietet eine `save-as-draft` Option, mit der Benutzende das Formular als Entwurf für die zukünftige Vervollständigung speichern können. Um dies zu erleichtern, stellt AEM die **Entwürfe und Übermittlungen** Formularportal-Komponente standardmäßig bereit, die Entwürfe und Übermittlungen auf AEM Sites-Seiten anzeigt. Die Komponente listet Formulare auf, die als Entwürfe für den späteren Abschluss gespeichert wurden, sowie die gesendeten Formulare. Nur angemeldete Benutzer können ihre Entwürfe bearbeiten oder ihre gesendeten Formulare anzeigen. Wenn ein anonymer Benutzer jedoch mithilfe der Komponente **Suche und Auflister** durch die Liste der Formulare navigiert und ein Formular als Entwurf speichert, wird dieser Entwurf nicht durch die Komponente **Entwürfe und Sendungen** aufgeführt. Um Entwürfe und Übermittlungen anzuzeigen, müssen Benutzer zum Zeitpunkt der Formularübermittlung angemeldet sein.
+Erwägen Sie einen Benutzer, der mit dem Ausfüllen eines Formulars beginnt, aber später anhalten und zurückkehren muss. AEM bietet eine `save-as-draft` Option, mit der Benutzende das Formular als Entwurf für den zukünftigen Abschluss speichern können. Um dies zu erleichtern, stellt AEM die Forms **Portalkomponente „Entwürfe und Übermittlungen** bereit, die Entwürfe und Übermittlungen auf AEM Sites-Seiten anzeigt. Die Komponente listet Formulare auf, die als Entwürfe für den späteren Abschluss gespeichert wurden, sowie die gesendeten Formulare. Nur angemeldete Benutzer können ihre Entwürfe bearbeiten oder ihre gesendeten Formulare anzeigen. Wenn ein anonymer Benutzer jedoch mithilfe der Komponente **Suche und Auflister** durch die Liste der Formulare navigiert und ein Formular als Entwurf speichert, wird dieser Entwurf nicht durch die Komponente **Entwürfe und Sendungen** aufgeführt. Um Entwürfe und Übermittlungen anzuzeigen, müssen Benutzer zum Zeitpunkt der Formularübermittlung angemeldet sein.
 
 ![Symbol für Entwürfe](assets/drafts-component.png)
 

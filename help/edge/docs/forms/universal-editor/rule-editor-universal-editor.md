@@ -6,14 +6,14 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 100%
+source-wordcount: '2236'
+ht-degree: 77%
 
 ---
 
-# Einführung in den Regeleditor im universellen Editor
+# Einführung in den Regeleditor beim Authoring in WYSIWYG
 
 Sie können ein dynamisches Formularverhalten mit dem Regeleditor hinzufügen, mit dem Sie Regeln erstellen können. Diese Regeln ermöglichen eine bedingte Sichtbarkeit von Feldern oder die Automatisierung von Berechnungen auf der Grundlage von Benutzereingaben, was das allgemeine Anwendererlebnis verbessert. Durch das Optimieren der Formularausfüllung trägt der Regeleditor zur Genauigkeit und Effizienz bei.
 
@@ -41,21 +41,23 @@ Detaillierte Schritt-für-Schritt-Anweisungen finden Sie unter [Hinzufügen eine
 
 ## Wie wird die Erweiterung des Regeleditors aktiviert?
 
-Im universellen Editor ist der Regeleditor nicht standardmäßig aktiviert. Um die Erweiterung des Regeleditors für Ihre Umgebung zu aktivieren, senden Sie eine E-Mail mit Ihrer Anfrage von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+Im universellen Editor ist die Erweiterung des Regeleditors nicht standardmäßig aktiviert. Um die Erweiterung des Regeleditors zu aktivieren, schreiben Sie uns unter [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-ID.
 
 Nachdem die Erweiterung des Regeleditors für Ihre Umgebung aktiviert wurde, wird das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) in der oberen rechten Ecke des Editors angezeigt.
 
 ![Regeleditor des universellen Editors](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Wählen Sie das Formularobjekt aus, für das Sie eine Regel schreiben möchten, und klicken Sie auf das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt.
+Wählen Sie die Formularkomponente aus, für die Sie eine Regel erstellen möchten, und klicken Sie auf das Symbol ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Die Benutzeroberfläche des Regeleditors wird angezeigt.
 
 ![Benutzeroberfläche des Regeleditors](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+
+In diesem Artikel werden `form object` und `form component` synonym verwendet.
 
 Jetzt können Sie mit dem Schreiben von Regeln oder Geschäftslogik für das ausgewählte Formularfeld beginnen, indem Sie die [verfügbaren Regeltypen im Regeleditor](#available-rule-types-in-rule-editor) verwenden.
 
 ## Grundlegendes zur Benutzeroberfläche des Regeleditors
 
-Der visuelle Editor des Regeleditors wird geöffnet, wenn Sie auf das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) klicken:
+Der Editor des Regeleditors wird geöffnet, wenn Sie auf das Symbol ![edit-rules](/help/forms/assets/edit-rules-icon.svg) klicken:
 
 ![Benutzeroberfläche des Regeleditors](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -68,20 +70,20 @@ Der visuelle Editor des Regeleditors wird geöffnet, wenn Sie auf das Symbol ![R
   </thead>
   <tbody>
     <tr>
-      <td>1. Ansicht „Komponente-Regel“</td>
-      <td>Hier werden der Titel des Formularobjekts, über das Sie den Regeleditor aufgerufen haben, sowie der derzeit ausgewählte Regeltyp angezeigt.</td>
+      <td>1. Titel</td>
+      <td>Zeigt den Titel der Formularkomponente und den ausgewählten Regeltyp an. Beispielsweise ist „Bruttogehalt eingeben“ eine Textfeldkomponente, für die der Regeltyp „Wann“ ausgewählt ist. </td>
     </tr>
     <tr>
       <td>2. Formularobjekte und Funktionen</td>
-      <td>Die Registerkarte <b>Formularobjekte</b> zeigt eine hierarchische Ansicht aller Objekte an, die im Formular enthalten sind. Die Registerkarte <b>Funktionen</b> enthält eine Reihe integrierter Funktionen.</td>
+      <td>Die Registerkarte <b>Forms</b>Objekte“ zeigt eine hierarchische Ansicht aller im Formular enthaltenen Komponenten an. Die <b>Funktionen</b> enthält eine Reihe integrierter Funktionen im Regeleditor.</td>
     </tr>
     <tr>
       <td>3. Umschalten zwischen Formularobjekten und Funktionen</td>
-      <td>Durch Tippen auf die Schaltfläche schalten Sie zwischen den Bereichen für Formularobjekte und Funktionen um.</td>
+      <td>Mit der Umschaltfläche werden die Formularobjekte und der Funktionsbereich abwechselnd ein- oder ausgeblendet. </td>
     </tr>
     <tr>
       <td>4. Visueller Regeleditor</td>
-      <td>Der visuelle Regeleditor ist der Bereich im visuellen Editormodus der Benutzeroberfläche des Regeleditors, in dem Sie Regeln schreiben.</td>
+      <td>Der visuelle Regeleditor ist die Oberfläche, auf der Sie Regeln für die Formularkomponenten erstellen können.</td>
     </tr>
     <tr>
       <td>5. Schaltflächen „Fertig“ und „Abbrechen“</td>
@@ -90,7 +92,7 @@ Der visuelle Editor des Regeleditors wird geöffnet, wenn Sie auf das Symbol ![R
   </tbody>
 </table>
 
-Wenn Sie das Objekt auswählen, werden alle vorhandenen Regeln für ein Formularobjekt aufgelistet. Sie können den Titel und eine Vorschau der Regelzusammenfassung im visuellen Regeleditor anzeigen. Außerdem können Sie die Reihenfolge der Regeln ändern, Regeln bearbeiten, Regeln aktivieren/deaktivieren oder Regeln löschen.
+Wenn Sie die Komponente auswählen, werden alle vorhandenen Regeln für eine Formularkomponente aufgelistet. Sie können den Titel und eine Vorschau der Regelzusammenfassung im Regeleditor anzeigen. Außerdem können Sie die Reihenfolge der Regeln ändern, Regeln bearbeiten, Regeln aktivieren/deaktivieren oder Regeln löschen.
 
 ![Anzeigen der verfügbaren Regeln eines Formularobjekts](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -108,51 +110,55 @@ Der Regeleditor bietet eine Reihe vordefinierter Regeltypen, mit denen Sie Regel
   <tbody>
     <tr>
       <td>Wert festlegen</td>
-      <td>Legt den Wert eines Formularobjekts in Abhängigkeit davon fest, ob die angegebene Bedingung erfüllt ist.</td>
+      <td>Legt den Wert einer Formularkomponente in Abhängigkeit davon fest, ob die angegebene Bedingung erfüllt ist oder nicht.</td>
     </tr>
     <tr>
       <td>Wert löschen von</td>
-      <td>Löscht den Wert des angegebenen Objekts.</td>
+      <td>Löscht den Wert der angegebenen Formularkomponente.</td>
     </tr>
     <tr>
       <td>Ausblenden/Anzeigen</td>
-      <td>Blendet ein Formularobjekt in Abhängigkeit davon aus oder ein, ob eine Bedingung erfüllt ist oder nicht.</td>
+      <td>Blendet eine Formularkomponente aus oder ein, je nachdem, ob eine Bedingung erfüllt ist oder nicht.</td>
     </tr>
     <tr>
       <td>Aktivieren/Deaktivieren</td>
-      <td>Aktiviert oder deaktiviert ein Formularobjekt in Abhängigkeit davon, ob eine Bedingung erfüllt ist oder nicht.</td>
+      <td>Aktiviert oder deaktiviert eine Formularkomponente, je nachdem, ob eine Bedingung erfüllt ist oder nicht.</td>
     </tr>
     <tr>
       <td>Validieren</td>
-      <td>Überprüft das Formular oder ein angegebenes Objekt.</td>
+      <td>Überprüft die Formularkomponente auf Grundlage einer Bedingung und zeigt einen Fehler an, wenn die Bedingung nicht erfüllt ist. </td>
     </tr>
     <tr>
       <td>Wenn</td>
-      <td>Folgt dem Aktionsregelkonstrukt <i>Bedingung-Aktion-Alternative</i> oder dem Regelkonstrukt <i>Bedingung-Aktion</i>. Dieser Regeltype gibt eine auszuwertende Bedingung an und dann eine Aktion, die ausgelöst werden soll, wenn die Bedingung erfüllt ist.</td>
+      <td>Sie gibt eine auszuwertende Bedingung und anschließend eine Aktion zum Trigger an, wenn die Bedingung erfüllt ist. Es folgt dem <i>condition-action-alternative</i> Aktionsregelkonstrukt oder <i>condition-action</i> Regelkonstrukt. </td>
     </tr>
     <tr>
       <td>Format</td>
-      <td>Formatiert ein Formularobjekt anhand einer Funktion oder eines regulären Ausdrucks.</td>
+      <td> Ändert den Anzeigewert der Formularkomponente, die den angegebenen Ausdruck verwendet, wenn sich ihr Wert ändert.</td>
     </tr>
     <tr>
       <td>Dienst aufrufen</td>
-      <td>Ruft einen Dienst auf, der in einem Formulardatenmodell (FDM) konfiguriert ist. </td>
+      <td>Ruft einen Service auf, der mithilfe externer APIs, eines Formulardatenmodells oder RESTful-Web-Services konfiguriert wurde.</td>
     </tr>
     <tr>
       <td>Eigenschaft festlegen</td>
-      <td>Legt den Wert einer Eigenschaft des angegebenen Objekts in Abhängigkeit von einer Bedingung fest.</td>
+      <td>Legt den Wert einer Eigenschaft der angegebenen Formularkomponente auf Grundlage einer Bedingung fest.</td>
     </tr>
     <tr>
       <td>Fokus festlegen</td>
-      <td>Legt den Fokus auf das angegebene Objekt.</td>
+      <td>Setzt den Fokus auf die angegebene Formularkomponente.</td>
     </tr>
     <tr>
       <td>Formular speichern</td>
-      <td>Speichert das Formular.</td>
+      <td>Damit können Benutzende das Formular mithilfe der Forms-Portalkomponente für Entwürfe und Übermittlungen als Entwurf speichern. </td>
     </tr>
     <tr>
-      <td>Formular senden/zurücksetzen</td>
-      <td>Sendet das Formular oder setzt es zurück.</td>
+      <td>Formular senden</td>
+      <td>Sendet das Formular.</td>
+    </tr>
+    <tr>
+      <td>Formular zurücksetzen</td>
+      <td>Setzt das Formular zurück.</td>
     </tr>
     <tr>
       <td>Instanz hinzufügen/entfernen</td>
@@ -208,10 +214,10 @@ So erstellen Sie ein Formular im universellen Editor:
 1. Öffnen Sie ein Formular im universellen Editor zur Bearbeitung.
 1. Fügen Sie die folgenden Formularkomponenten hinzu:
    * Steuerberechnungsformular (Titel)
-   * Bruttogehalt (Texteingabe)
-   * Zusätzlicher Abzug (Texteingabe)
-   * Steuerpflichtiges Einkommen (Texteingabe)
-   * Zu zahlende Steuer (Texteingabe)
+   * Bruttogehalt (Zahleneingabe)
+   * Zusätzlicher Abzug (Zahleneingabe)
+   * Steuerpflichtiges Einkommen (Zahleneingabe)
+   * Steuerschuld (Zahleneingabe)
    * Senden (Schaltfläche „Senden“)
 1. Blenden Sie das Formularfeld `Additional Deduction` aus, indem Sie dessen `Properties` öffnen.
 
@@ -221,11 +227,10 @@ So erstellen Sie ein Formular im universellen Editor:
 
 Nachdem Sie das Formular erstellt haben, schreiben Sie die erste Regel, damit das Feld `Additional Deduction` nur angezeigt wird, wenn das Bruttogehalt 50.000 US-Dollar überschreitet. So fügen Sie eine bedingte Regel hinzu:
 
-1. Öffnen Sie ein Formular im universellen Editor zur Bearbeitung.
-1. Wählen Sie in der Inhaltsstruktur die Komponente **[!UICONTROL Bruttogehalt]** aus und klicken Sie auf ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg).
+1. Öffnen Sie ein Formular im universellen Editor zur Bearbeitung und wählen Sie das Feld **[!UICONTROL Bruttogehalt]** in der Inhaltsstruktur aus und wählen Sie ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Alternativ können Sie das Feld **[!UICONTROL Bruttogehalt]** direkt im Bereich **[!UICONTROL Forms-Objekt]** auswählen.
    ![Beispiel1 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor3.png)
 Die Benutzeroberfläche des visuellen Regeleditors wird angezeigt.
-1. Klicken Sie auf **[!UICONTROL Erstellen]**, um den Regeleditor zu starten.
+1. Klicken Sie **[!UICONTROL Erstellen]**, um Regeln zu erstellen.
    ![Beispiel2 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor4.png)
 Standardmäßig ist der Regeltyp `Set Value Of` ausgewählt. Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp auszuwählen.\
    ![Beispiel3 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -258,7 +263,8 @@ Die Regel wird im Regeleditor wie folgt angezeigt.
 
 Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Dies ist die Differenz zwischen `Gross Salary` und `Additional Deduction` (falls vorhanden). Um eine Berechnungsregel für das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** hinzuzufügen, führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie im Autorenmodus das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** und dann das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) aus. Wählen Sie dann **[!UICONTROL Erstellen]**, um den Regeleditor zu starten.
+1. Wählen Sie im Autorenmodus das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** und dann das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) aus. Alternativ können Sie das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** direkt im Bereich **[!UICONTROL Forms-Objekt]** auswählen.
+1. Wählen Sie anschließend **[!UICONTROL Erstellen]**, um die Regel zu erstellen.
    ![Beispiel13 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor16.png)
 1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
    ![Beispiel14 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -276,7 +282,7 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
 
    Fügen Sie nun eine Regel für das Feld `Tax Payable ` hinzu, das durch die Multiplikation des steuerpflichtigen Einkommens mit dem Steuersatz bestimmt wird. Zur Einfachheit nehmen wir einen festen Steuersatz von `10%` an.
 
-1. Wählen Sie im Autorenmodus das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** und dann das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) aus. Wählen Sie als Nächstes **[!UICONTROL Erstellen]** aus, um den Regeleditor zu starten.
+1. Wählen Sie im Autorenmodus das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** und dann das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) aus. Wählen Sie anschließend **[!UICONTROL Erstellen]**, um Regeln zu erstellen.
    ![Beispiel16 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor19.png)
 1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
    ![Beispiel17 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -364,9 +370,15 @@ So verwenden Sie die benutzerdefinierte Funktion im Regeleditor:
 
    ![Benutzerdefinierte Funktion im Regeleditor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Vorschau des Formulars**: Zeigen Sie das Formular mit der neu implementierten Funktion in einer Vorschau an.
+1. **Vorschau des Formulars**: Vorschau des Formulars mit der neu implementierten Funktion anzeigen.
 
-## Ähnliche Artikel
+## Zusätzliche Informationen
+
+>[!NOTE]
+>
+> Im universellen Editor werden statische und dynamische Importe in benutzerdefinierten Funktionsskripten nicht unterstützt. Sie müssen den vollständigen Code in der `../[blocks]/form/functions.js`-Datei hinzufügen.
+
+Dieser Artikel enthält eingeschränkte Informationen zum Regeleditor , der im universellen Editor verfügbar ist. Weitere Informationen zum Regeleditor und zu benutzerdefinierten Funktionen finden Sie in den folgenden Artikeln:
 
 {{see-also-rule-editor}}
 

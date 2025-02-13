@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 100%
+source-wordcount: '1778'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,6 @@ Dieses Tutorial führt Sie durch die Erstellung, Vorschau und Veröffentlichung 
 ## Voraussetzungen
 
 * Sie verfügen über ein GitHub-Konto und sind mit den Git-Grundlagen vertraut.
-* Sie verfügen über ein Google- oder Microsoft SharePoint-Konto.
 * Sie sind mit den Grundlagen von HTML, CSS und JavaScript vertraut.
 * Sie haben Node/npm für die lokale Entwicklung installiert.
 
@@ -156,14 +155,33 @@ Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den adaptiven 
 >[!NOTE]
 >
 >
-> Dieser Schritt gilt für Projekte, die mit dem [AEM-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-xwalk) erstellt wurden. Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt haben, können Sie diesen Schritt überspringen.
+> Dieser Schritt gilt für Projekte, die mit dem [AEM-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-xwalk) erstellt wurden. Wenn Sie Ihr AEM-Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt haben, können Sie diesen Schritt überspringen.
 
-So integrieren Sie ihn:
+Zur Integration:
+1. **Erforderliche Dateien und Ordner hinzufügen**
+   1. Kopieren Sie die folgenden Ordner und Dateien aus dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) und fügen Sie sie in Ihr AEM-Projekt ein:
 
-1. Klonen Sie das GitHub-Repository des adaptiven Formularblocks, [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms), auf Ihren Computer.
-1. Suchen Sie im heruntergeladenen Verzeichnis den Ordner `blocks/form` und kopieren Sie ihn.
-1. Klonen Sie das GitHub-Repository Ihres AEM-Projekts auf Ihren Computer.
-1. Navigieren Sie nun zum Ordner `blocks` in Ihrem lokalen AEM-Projekt-Repository und fügen Sie den kopierten Formularordner dort ein.
+      * [Formularblock](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) Ordner
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) Ordner
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) Ordner
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)-Datei
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)-Datei
+
+1. **Aktualisieren von Komponentendefinitionen und Modelldateien**
+   1. Navigieren Sie zur `../models/_component-definition.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-definition.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+
+   1. Navigieren Sie zur `../models/_component-models.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-models.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+
+1. **Hinzufügen des Formulareditors im Skripteditor**
+   1. Navigieren Sie zur `../scripts/editor-support.js` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [editor-support.js“ im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Aktualisieren der ESLint-Konfigurationsdatei**
+   1. Navigieren Sie zur `../.eslintignore` in Ihrem AEM-Projekt und fügen Sie die folgende Codezeile hinzu, um Fehler im Zusammenhang mit der Formularblock-Regel-Engine zu vermeiden:
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
 1. Bestätigen Sie diese Änderungen und übertragen Sie sie in Ihr AEM-Projekt-Repository auf GitHub.
 
 Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie können [mit dem Erstellen und Hinzufügen von Formularen zu Ihren AEM-Seiten beginnen](#add-edge-delivery-services-forms-to-aem-site-project).
@@ -173,14 +191,14 @@ Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie
 Sie können Ihr AEM-Projekt zwecks WYSIWYG-Authoring im universellen Editor öffnen. Darin können Sie das Projekt bearbeiten und den Abschnitt „Adaptives Formular“ hinzufügen, um Edge Delivery Services-Formulare in AEM-Projektseiten einzuschließen.
 
 1. Fügen Sie den Abschnitt „Adaptives Formular“ zu Ihrer AEM-Projektseite hinzu. Gehen Sie dazu wie folgt vor:
-   1. Navigieren Sie zu Ihrem AEM-Projekt in der Sites-Konsole und klicken Sie auf **Bearbeiten**. Die AEM-Projektseite wird im universellen Editor zur Bearbeitung geöffnet.
+   1. Navigieren Sie in der Sites-Konsole zu Ihrem AEM-Projekt, wählen Sie die zu bearbeitende Sites-Seite aus und klicken Sie auf **Bearbeiten**. Die AEM-Projektseite wird im universellen Editor zur Bearbeitung geöffnet.
 In diesem Fall wird die Seite `index.html` zur Veranschaulichung verwendet.
-   1. Öffnen Sie die Inhaltsstruktur und navigieren Sie zu der Stelle, an der der Abschnitt „Adaptives Formular“ hinzugefügt werden soll.
+   1. Öffnen Sie die Inhaltsstruktur und navigieren Sie zu einem Abschnitt, in dem Sie den Abschnitt für das adaptive Formular hinzufügen möchten.
    1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die Komponente **[!UICONTROL Adaptives Formular]** aus der Komponentenliste aus.
 
    ![Inhaltsstruktur](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   Der Abschnitt „Adaptives Formular“ wird an der angegebenen Stelle hinzugefügt. Sie können nun damit beginnen, Formularkomponenten zur AEM-Projektseite hinzuzufügen.
+   Der Abschnitt „Adaptives Formular“ wird hinzugefügt. Sie können nun damit beginnen, Formularkomponenten zur AEM-Projektseite hinzuzufügen.
 
 1. Fügen Sie Formularkomponenten zum hinzugefügten Abschnitt „Adaptives Formular“ hinzu. So fügen Sie Formularkomponenten hinzu:
    1. Navigieren Sie in der Inhaltsstruktur zum hinzugefügten Abschnitt „Adaptives Formular“.
@@ -198,13 +216,16 @@ In diesem Fall wird die Seite `index.html` zur Veranschaulichung verwendet.
 
       ![Öffnen von Eigenschaften](/help/edge/docs/forms/assets/component-properties.png)
 
-      Im folgenden Screenshot wird das Formular angezeigt, das mittels WYSIWYG-Authoring im AEM-Projekt erstellt wurde:
+   1. Vorschau des Formulars anzeigen.
+Im folgenden Screenshot wird das Formular angezeigt, das mittels WYSIWYG-Authoring im AEM-Projekt erstellt wurde:
 
       ![Hinzugefügtes Formular](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-   >[!NOTE]
-   >
-   > Es ist wichtig, die AEM-Projektseite erneut zu veröffentlichen, nachdem Sie Änderungen vorgenommen haben. Andernfalls sind die Aktualisierungen nicht im Browser sichtbar.
+      Sobald der Benutzer mit der Vorschau zufrieden ist, kann er die Seite veröffentlichen.
+
+      >[!NOTE]
+      >
+      > Es ist wichtig, die AEM-Projektseite erneut zu veröffentlichen, nachdem Sie Änderungen vorgenommen haben. Andernfalls sind die Aktualisierungen nicht im Browser sichtbar.
 
 1. Veröffentlichen Sie die AEM-Projektseite erneut.
 
@@ -257,8 +278,9 @@ Sie können lokale Änderungen im Ordner `blocks/form` für adaptive Formularbl�
 
 Nachdem Sie Ihre Änderungen abgeschlossen haben, verwenden Sie Git-Befehle, um sie zu bestätigen und zu übertragen. Dadurch werden Ihre Vorschau- und Produktionsumgebungen aktualisiert, auf die über die folgenden URLs zugegriffen werden kann (Platzhalter durch Ihre Projektdetails ersetzen):
 
-Vorschau: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
-Produktion: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
+Vorschau: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+
+Produktion: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
 
 ## Beheben von Build-Problemen in GitHub
@@ -268,5 +290,9 @@ Stellen Sie einen reibungslosen Build-Prozess in GitHub sicher, indem Sie potenz
 * **Beheben von Linting-Fehlern:**
 Sollten Sie auf Linting-Fehler stoßen, können Sie diese umgehen. Öffnen Sie die Datei [EDS Project]/package.json und ändern Sie das Skript „lint“ von `"lint": "npm run lint:js && npm run lint:css"` zu `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
 
-<!-- * **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. -->
+* **Auflösen des Modulpfadfehlers:**
+Wenn der Fehler „Pfad zum Modul ‚../../scripts/lib-franklin.js‘ kann nicht aufgelöst werden“ auftritt, navigieren Sie zu [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei „lib-franklin.js“ durch die Datei „aem.js“ ersetzen.
+
+## Siehe auch
+
+{{see-more-forms-eds}}

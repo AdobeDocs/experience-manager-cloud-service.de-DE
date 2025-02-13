@@ -4,9 +4,9 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1920'
 ht-degree: 92%
 
 ---
@@ -67,8 +67,8 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn beispielsweise der Name der Verzweigung `main`, das Repository `wefinance` und der Eigentümer `wkndforms` ist, würde die Website unter `https://main--wefinance--wkndforms.aem.page` ausgeführt
-&lt;!—(https://main--wefinance--wkndform.aem.page)-->
+   Wenn beispielsweise der Name der Verzweigung `main`, das Repository `wefinance` und die verantwortliche Person `wkndforms` lauten, wird die Website ausgeführt unter: `https://main--wefinance--wkndforms.aem.page`
+&lt;!--(https://main--wefinance--wkndform.aem.page)-->
 
 ### Verknüpfen Ihrer eigenen Inhaltsquelle
 
@@ -80,20 +80,20 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 
 1. Erstellen Sie einen neuen Ordner speziell für Ihren AEM-Inhalt in Google Drive oder Microsoft SharePoint. In diesem Dokument wird ein Ordner verwendet, der in Microsoft SharePoint erstellt wurde.
 
-1. Geben Sie den Ordner für den Adobe Experience Manager-Benutzer frei (forms@adobe.com).
+1. Geben Sie den Ordner für die Benutzerin bzw. den Benutzer von Adobe Experience Manager frei (forms@adobe.com).
 
-   ![SharePoint: Verwenden der Option „Zugriff verwalten“, um Ordner für die AEM-Benutzerin bzw. den Benutzer freizugeben.](/help/edge/assets/share-folder-with-aem-user.png)
+   ![SharePoint: Verwenden der Option „Zugriff verwalten“, um Ordner für die AEM-Benutzerin bzw. den Benutzer freizugeben](/help/edge/assets/share-folder-with-aem-user.png)
 
-   ![Google Drive: Verwenden der Option „Zugriff verwalten“, um Ordner für die AEM-Benutzerin bzw. den Benutzer freizugeben.](/help/edge/assets/share-google-drive-folder.png)
+   ![Google Drive: Verwenden der Option „Zugriff verwalten“, um Ordner für die AEM-Benutzerin bzw. den Benutzer freizugeben](/help/edge/assets/share-google-drive-folder.png)
 
 
    Stellen Sie sicher, dass Sie der Adobe Experience Manager-Benutzerin bzw. dem -Benutzer Bearbeitungsrechte für den Ordner zugewiesen haben.
 
-   ![Ordner für AEM-Benutzer freigeben, Bearbeitungsrechte bereitstellen - SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
+   ![Sharepoint: Freigeben des Ordners für die AEM-Benutzerin bzw. den AEM-Benutzer und Bereitstellen von Bearbeitungsrechten](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![Ordner für AEM-Benutzer freigeben, Bearbeitungsrechte gewähren - Google-Laufwerk](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
+   ![Google Drive: Freigeben des Ordners für die AEM-Benutzerin bzw. den AEM-Benutzer und Bereitstellen von Bearbeitungsrechten](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. Kopieren Sie den [Beispielinhalt](/help/edge/assets/wefinance1.zip) in Ihren Ordner . So kopieren Sie ihn:
+1. Kopieren Sie den [Beispielinhalt](/help/edge/assets/wefinance1.zip) in Ihren Ordner. So kopieren Sie ihn:
 
    1. Entpacken Sie den heruntergeladenen Ordner und kopieren Sie den Inhalt.
 
@@ -112,7 +112,7 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 
    1. Wechseln Sie zum GitHub-Repository, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben.
    1. Öffnen Sie `fstab.yaml` zur Bearbeitung.
-   1. Ersetzen Sie den vorhandenen Verweis durch den Pfad zu dem Ordner, den Sie für den AEM-Benutzer freigegeben haben (forms@adobe.com).
+   1. Ersetzen Sie die vorhandene Referenz durch den Pfad zum Ordner, den Sie für die AEM-Benutzerin bzw. den AEM-Benutzer freigegeben haben (forms@adobe.com).
 
       ![Beispielinhalt auf Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -136,7 +136,7 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 
       ![Übergeben der aktualisierten Datei fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 
-      Dadurch wird Ihr Inhaltsordner mit Ihrer Website verbunden.  Nach der Aktualisierung der Referenz treten möglicherweise anfänglich Fehler vom Typ „404 nicht gefunden“ auf. Dies liegt daran, dass Ihre Inhalte noch nicht in der Vorschau angezeigt wurden. Im nächsten Abschnitt wird erläutert, wie Sie mit der Bearbeitung und Vorschau Ihres Inhalts beginnen können.
+      Dadurch wird Ihr Inhaltsordner mit Ihrer Website verbunden. Nach der Aktualisierung der Referenz treten möglicherweise anfänglich Fehler vom Typ „404 nicht gefunden“ auf. Dies liegt daran, dass Ihre Inhalte noch nicht in der Vorschau angezeigt wurden. Im nächsten Abschnitt wird erläutert, wie Sie mit der Bearbeitung und Vorschau Ihres Inhalts beginnen können.
 
 
 
@@ -182,8 +182,8 @@ So zeigen Sie nicht veröffentlichte Inhalte in einer Vorschau an:
 
    URL.`https://<branch>--<repo>--<owner>.aem.page/enquiry`
 
-   Wenn sich beispielsweise das Repository Ihres Projekts namens „wefinance“ unter dem Kontoinhaber „wkndform“ befindet und Sie die Verzweigung „main“ und den Formularnamen als `enquiry` verwenden, lautet die URL: `https://main--wefinance--wkndform.aem.live/enquiry`.
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
+   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Konto „wkndform“ befindet und Sie die Verzweigung „main“ und den Formularnamen `enquiry` verwenden, lautet die URL wie folgt:`https://main--wefinance--wkndform.aem.live/enquiry`.
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Erstellen eines Formulars
 
@@ -195,7 +195,7 @@ Aktualisieren wir zunächst einen Feldtitel. Öffnen Sie das Blatt „enquiry“
 
 ![Formular „enquiry“](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Wenn Sie die Datei in einer Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau- (.aem.page) oder Veröffentlichungs- (.aem.live)-URL der Datei.
+Wenn Sie die Datei in einer Vorschau anzeigen oder veröffentlichen, wird eine JSON-Version der Datei auf einer neuen Registerkarte angezeigt. Kopieren Sie die Vorschau-URL (.aem.page) oder die Veröffentlichungs-URL (.aem.live) der Datei.
 
 ![JSON des Formular-Arbeitsblatts](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
@@ -220,10 +220,10 @@ Der Titel der Senden-Schaltfläche wird in `Let's Talk` geändert.
 
 ![Formular „enquiry“](/help/edge/assets/updated-form.png)
 
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 URL: `https://main--wefinance--wkndform.aem.live/enquiry`
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 Ausführliche Informationen zum Erstellen und Veröffentlichen eines neuen Formulars finden Sie in der Anleitung [Erstellen eines Formulars](/help/edge/docs/forms/create-forms.md).
@@ -277,12 +277,31 @@ Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den adaptiven 
 
 So integrieren Sie ihn:
 
-1. Klonen Sie das Repository des adaptiven Formularblocks, [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms), auf Ihren Computer.
+1. **Erforderliche Dateien und Ordner hinzufügen**
+   1. Kopieren Sie die folgenden Ordner und Dateien aus dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) und fügen Sie sie in Ihr AEM-Projekt ein:
 
-1. Suchen Sie im heruntergeladenen Ordner nach dem Ordner `blocks/form`. Kopieren Sie diesen Ordner.  Navigieren Sie nun zum lokalen Ordner `blocks` Ihres AEM-Projekts und fügen Sie den kopierten Formularordner hier ein.
+      * [Formularblock](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) Ordner
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) Ordner
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) Ordner
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)-Datei
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)-Datei
 
-1. Bestätigen Sie diese Änderungen und übertragen Sie sie in Ihr AEM-Projekt auf GitHub.
+1. **Aktualisieren von Komponentendefinitionen und Modelldateien**
+   1. Navigieren Sie zur `../models/_component-definition.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-definition.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
+   1. Navigieren Sie zur `../models/_component-models.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-models.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+
+1. **Hinzufügen des Formulareditors im Skripteditor**
+   1. Navigieren Sie zur `../scripts/editor-support.js` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [editor-support.js“ im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Aktualisieren der ESLint-Konfigurationsdatei**
+   1. Navigieren Sie zur `../.eslintignore` in Ihrem AEM-Projekt und fügen Sie die folgende Codezeile hinzu, um Fehler im Zusammenhang mit der Formularblock-Regel-Engine zu vermeiden:
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. Bestätigen Sie diese Änderungen und übertragen Sie sie in Ihr AEM-Projekt-Repository auf GitHub.
 
 Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie können mit der Erstellung und dem Hinzufügen von Formularen zu Ihren AEM-Seiten beginnen.
 

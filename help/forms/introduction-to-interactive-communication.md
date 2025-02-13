@@ -3,13 +3,13 @@ title: Einführung in die interaktive Kommunikation
 description: Entwickeln Sie mit AEM Forms Interactive Communications auf einfache Weise dynamische, datengesteuerte Kommunikationen
 feature: Release Information
 role: Admin
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 3%
 
 ---
-
 
 # Interaktive Kommunikationen
 
@@ -19,7 +19,17 @@ Sie können unser intuitives grafisches Design-Tool (interaktiver Kommunikations
 
 Von Finanzinstituten, die Kontoauszüge generieren, bis hin zu Regierungsbehörden, die Mitteilungen über finanzielle Leistungen optimieren, ist Interactive Communications das erste Tool zur Erstellung von hochwertiger, sicherer und gesetzeskonformer Korrespondenz mit Leichtigkeit und Effizienz.
 
+
+<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
+
 ![Editor für interaktive Kommunikationen](/help/forms/assets/ic-editor.png)
+
 
 ## Kernfunktionen
 
@@ -31,7 +41,7 @@ Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 | **Datenintegration** | Verbindung zu Schemas, Datenbanken und Web-Services für die Generierung dynamischer Inhalte herstellen |
 | **Multi-Channel-Design** | Einheitliche Erlebnisse für Print- und digitale Formate bei Einhaltung behördlicher Auflagen erstellen |
 | **Dynamische Inhalte** | Generieren personalisierter Inhalte mithilfe von Business-Logik und Datenbindung |
-| **Formatflexibilität** | Ausgabe in den Formaten PDF, HTML, PCL, PostScript® und ZPL |
+| **Formatflexibilität** | Ausgabe in die Formate PDF, HTML, PCL, PostScript® und ZPL |
 | **Sprachunterstützung** | Erstellen von Kommunikation in mehreren Sprachen mit Unterstützung benutzerdefinierter Schriftarten |
 | **Rich Media** | Nahtlose Integration von Text, Bildern und interaktiven Elementen |
 | **Versionskontrolle** | Änderungen verfolgen und Dokumentenverlauf verwalten |
@@ -41,7 +51,7 @@ Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 
 ## Onboarding
 
-Der Editor für interaktive Kommunikation, der unter Early Access für Forms as a Cloud Service-Bereitstellungen verfügbar ist. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.comanzufordern. Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
+Der Editor für interaktive Kommunikation, der unter Early Access-Programm für Forms as a Cloud Service-Bereitstellungen verfügbar ist. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern. Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
 
 
 ## Weiter
