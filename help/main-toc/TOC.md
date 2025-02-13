@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 901172d201e968ec00eb8c988107a6a9fb7a5e7b
+source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -737,7 +737,8 @@ ht-degree: 99%
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung über den OAuth 2.0-Client-Anmeldedatenfluss](/help/forms/aem-forms-salesforce-integration.md)
          + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
-         + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
+         + [Konfigurieren von [!DNL Microsoft Dynamics 365] Cloud-Services](/help/forms/configure-msdynamics.md)
+         + [Konfigurieren von Salesforce Cloud Services](/help/forms/configure-salesforce.md)
          + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
@@ -761,8 +762,11 @@ ht-degree: 99%
             + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
             + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
+            + Verbinden eines adaptiven Formulars mit Microsoft® SharePoint{#connect-to-sharepoint}
+               + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [An SharePoint-Dokumentbibliothek senden](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [An SharePoint-Liste senden](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
             + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
             + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)

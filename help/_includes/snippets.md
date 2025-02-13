@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 98%
+source-wordcount: '1394'
+ht-degree: 97%
 
 ---
 # Snippets {#snippets}
@@ -43,7 +43,8 @@ ht-degree: 98%
 ## Übermittlungsaktionen für adaptive Formulare {#af-submit-action}
 
 * [E-Mail senden](/help/forms/configure-submit-action-send-email.md)
-* [An SharePoint senden](/help/forms/configure-submit-action-sharepoint.md)
+* [An SharePoint-Dokumentbibliothek senden](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [An SharePoint-Liste senden](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Mit Formulardatenmodell senden](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [An Azure Blob Storage senden](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
@@ -52,7 +53,7 @@ ht-degree: 98%
 * [An Power Automate senden](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An Workfront Fusion senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/aem-forms-salesforce-integration.md)
-* [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-msdynamics.md)
 * [Verbinden eines adaptiven Formulars mit Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Erstellen einer benutzerdefinierten Sendeaktion](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 

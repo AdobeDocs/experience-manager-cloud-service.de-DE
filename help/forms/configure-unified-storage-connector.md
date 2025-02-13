@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Unified Storage Connector (USC) für AEM Form
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 100%
+source-wordcount: '637'
+ht-degree: 99%
 
 ---
 
@@ -73,5 +73,5 @@ Im Folgenden finden Sie die Richtlinien für die Verwendung von AEM-Workflows un
 >
 >* [Konfigurieren von Datenquellen für AEM Forms](/help/forms/configure-data-sources.md)
 >* [Konfigurieren von Azure Storage für AEM-Formulare](/help/forms/configure-azure-storage.md)
->* [Integrieren von Microsoft Dynamics 365 und Salesforce mit adaptiven Formularen](/help/forms/configure-msdynamics-salesforce.md)
+>* [Integrieren von Microsoft Dynamics 365](/help/forms/configure-msdynamics.md)
 >  [Hinzufügen des Formularportals zu einer AEM Sites-Seite](/help/forms/configure-forms-portal.md)
