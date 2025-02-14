@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.2.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
+source-git-commit: aaef376b733c10643e44205e55a0921c22008990
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 18%
@@ -65,7 +65,7 @@ Die Veröffentlichung der nächsten Version ist für Donnerstag, den Freitag, 13
 * **Unterstützung für EC (Elliptic Curve) Private Keys (secp384r1)**
 
   Cloud Manager unterstützt jetzt `secp384r1` privaten EC-Schlüssel (Elliptic Curve) und bietet so verbesserte Sicherheit und Compliance für kundenverwaltete OV/EV-SSL-Zertifikate.
-Weitere Informationen finden Sie unter [Anforderungen für kundenverwaltete OV/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md). <!-- CMGR-63636 -->
+Weitere Informationen finden Sie unter [Anforderungen für kundenverwaltete OV/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
 
 * **Spezialisierte Testumgebungen**
 
