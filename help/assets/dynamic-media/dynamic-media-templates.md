@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorl
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f5fa8f1f23d35d239f7bb0e22e104627f9f84317
+source-git-commit: 2fcbcaf5fe4794d8ea52386583dc592c0c1983d5
 workflow-type: tm+mt
-source-wordcount: '2722'
-ht-degree: 100%
+source-wordcount: '2801'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Zu den wichtigsten Vorteilen von Dynamic Media-Vorlagen gehören:
 * **Sicherstellung konsistenter Omni-Channel-Erlebnisse:** Gewährleisten Sie die Markenkonsistenz kanalübergreifend.
 * **Effektive Wiederverwendung von Inhalten:** Vermeiden Sie Inhalte für die einmalige Verwendung und skalieren Sie mit dynamischen, parametrisierten Vorlagen.
 * **Minderung von Risiken:** Aktualisieren Sie Preise, Rabatte und Links in Echtzeit.
-* **Verbesserung der Kundeninteraktion:** Fördern Sie interaktive, kontextuell relevante Erlebnisse.
+* **Kundeninteraktion verbessern:** interaktive, kontextbezogene Erlebnisse fördern.
 
 >[!NOTE]
 >
@@ -45,6 +45,9 @@ Um eine Dynamic Media-Vorlage zu erstellen, benötigen Sie Folgendes:
 
 1. Zugriff auf Dynamic Media.
 1. [Die in Ihrer AEM Assets-Instanz verfügbaren Bilder müssen mit Dynamic Media synchronisiert worden sein, um sie für die Erstellung der Vorlage verwenden zu können](/help/assets/dynamic-media/config-dm.md).
+1. Überprüfen Sie Folgendes in der Touch-optimierten Benutzeroberfläche:
+   * Auf der **[!UICONTROL Seite Dynamic Media-Konfiguration bearbeiten]** wird **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**, der auf **[!UICONTROL Standardmäßig deaktiviert]** festgelegt ist, nicht auf alle AEM-Ordner angewendet (**[!UICONTROL Alle Inhalte synchronisieren]** ist deaktiviert). Weitere Informationen [ Sie unter „Konfigurieren von Dynamic Media ](/help/assets/dynamic-media/config-dm.md) Cloud Service&quot;.
+   * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** ist für den Zielordner oder Unterordner, in **[!UICONTROL Sie die Vorlage nach der Erstellung speichern, auf Für Unterordner aktivieren]** festgelegt. Weitere Informationen [ Sie unter „Konfigurieren von Dynamic Media ](/help/assets/dynamic-media/config-dm.md) Cloud Service&quot;.
 
 ## Erstellen einer Dynamic Media-WYSIWYG-Vorlage{#how-to-create-dynamic-media-wysiwyg-template}
 
@@ -62,13 +65,13 @@ Führen Sie die folgenden Schritte aus, um eine leere Arbeitsfläche zu erstelle
 
 1. Navigieren Sie zur Assets-Ansicht und klicken Sie im linken Bedienfeld auf **[!UICONTROL Dynamic Media-Assets]**.
 
-   ![Dynamic Media-Vorlagen](/help/assets/assets/dm-templates/DM-Assets1.png)
+   ![Dynamic Media-Vorlagen](/help/assets/assets/DM-Assets1.png)
 
 1. Klicken Sie auf **[!UICONTROL Vorlage erstellen]**, um die Vorlage unter Dynamic Media-Assets zu speichern, oder navigieren Sie zu einem Ordner und klicken Sie auf **[!UICONTROL Vorlage erstellen]**, um die Vorlage in diesem Ordner zu speichern. Das Dialogfeld **[!UICONTROL Neue Vorlage]** wird angezeigt.
-   ![So erstellen Sie dynamische Vorlagen, die in Echtzeit angepasst werden können:](/help/assets/assets/dm-templates/new-template.png)
+   ![So erstellen Sie dynamische Vorlagen, die in Echtzeit angepasst werden können:](/help/assets/assets/new-template.png)
 Zum [Erstellen eines Ordners](/help/assets/add-delete-assets-view.md) unter **[!UICONTROL Dynamic Media-Assets]** müssen Sie einen Ordner unter **[!UICONTROL Assets]** erstellen. Die Ordnerstruktur unter **[!UICONTROL Assets]** wird unter **[!UICONTROL Dynamic Media-Assets]** repliziert.
 1. Geben Sie einen Namen für die Vorlage an, definieren Sie die Breite und Höhe der Arbeitsfläche und klicken Sie auf **[!UICONTROL Erstellen]**. Es wird eine leere Arbeitsfläche mit Menüoptionen auf beiden Seiten angezeigt, die zum Erstellen der Vorlage verwendet werden können. Bewegen Sie den Mauszeiger über die Menüoptionen, um deren QuickInfo anzuzeigen.
-   ![In Echtzeit anpassbare Vorlage](/help/assets/assets/dm-templates/blank-canvas-page.png)
+   ![In Echtzeit anpassbare Vorlage](/help/assets/assets/blank-canvas-page.png)
 
 >[!NOTE]
 >
@@ -76,23 +79,23 @@ Zum [Erstellen eines Ordners](/help/assets/add-delete-assets-view.md) unter **[!
 
 **Menüoptionen im rechten Bereich:** Verwenden Sie diese Optionen, um der Arbeitsfläche die erforderlichen Bilder und Textebenen hinzuzufügen.
 
-* ![DM-Vorlagen](/help/assets/assets/dm-templates/add-image.svg): Klicken Sie, um der Arbeitsfläche Bilder hinzuzufügen.
-* ![Anpassbare Vorlagen](/help/assets/assets/dm-templates/add-text.svg): Klicken Sie, um der Arbeitsfläche Texte hinzuzufügen.
-* ![Anpassbare Vorlagen](/help/assets/assets/dm-templates/show-layers-list.svg): Klicken Sie, um die Liste aller Ebenen (Bild und Text) auf der Arbeitsfläche anzuzeigen. Jedes Bild und jeder Text, das bzw. der der Arbeitsfläche hinzugefügt wird, wird als separate Ebene dargestellt.
+* ![DM-Vorlagen](/help/assets/assets/add-image.svg): Klicken Sie, um der Arbeitsfläche Bilder hinzuzufügen.
+* ![Anpassbare Vorlagen](/help/assets/assets/add-text.svg): Klicken Sie, um der Arbeitsfläche Texte hinzuzufügen.
+* ![Anpassbare Vorlagen](/help/assets/assets/show-layers-list.svg): Klicken Sie, um die Liste aller Ebenen (Bild und Text) auf der Arbeitsfläche anzuzeigen. Jedes Bild und jeder Text, das bzw. der der Arbeitsfläche hinzugefügt wird, wird als separate Ebene dargestellt.
 
 **Menüoptionen im linken Bereich:** Verwenden Sie diese Optionen für allgemeine Editoraktionen, wie unten beschrieben.
 
-* ![DM-Vorlagen](/help/assets/assets/dm-templates/layer-selector.svg): Wählen Sie eine Ebene aus.
-* ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/dm-templates/bring-forward.svg): Klicken Sie, um eine ausgewählte Ebene in den Vordergrund zu bringen, oder drücken Sie **Strg**+**]** (Windows) bzw. **Befehlstaste**+**]** (Mac).
-* ![Erstellen einer Vorlage, die einfach angepasst werden kann](/help/assets/assets/dm-templates/send-backward.svg): Klicken Sie, um eine ausgewählte Ebene nach hinten zu senden, oder drücken Sie **Strg**+**[** (Windows) bzw. **Befehlstaste**+**[** (Mac).
-* ![Erstellen einer Vorlage, die sofort angepasst werden kann](/help/assets/assets/dm-templates/undo.svg): Klicken Sie, um die letzte Aktion rückgängig zu machen, oder drücken Sie **Strg**+**Z** (Windows) bzw. **Befehlstaste**+**Z** (Mac).
-* ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/dm-templates/redo.svg): Klicken Sie, um die letzte Aktion wiederherzustellen, oder drücken Sie **Strg**+**Y** (Windows) bzw. **Befehlstaste**+**Y** (Mac).
-* ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/dm-templates/zoomin.svg): Klicken Sie, um die Arbeitsfläche zu vergrößern, oder drücken Sie **Strg**+**+** (Windows) bzw. Befehlstaste+**+** (Mac).
-* ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/dm-templates/zoomout.svg): Klicken Sie, um die Arbeitsfläche zu verkleinern, oder drücken Sie **Strg**+**-** (Windows) oder **Befehlstaste**+**-** (Mac).
+* ![DM-Vorlagen](/help/assets/assets/layer-selector.svg): Wählen Sie eine Ebene aus.
+* ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg): Klicken Sie, um eine ausgewählte Ebene in den Vordergrund zu bringen, oder drücken Sie **Strg**+**]** (Windows) bzw. **Befehlstaste**+**]** (Mac).
+* ![Erstellen einer Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg): Klicken Sie, um eine ausgewählte Ebene nach hinten zu senden, oder drücken Sie **Strg**+**[** (Windows) bzw. **Befehlstaste**+**[** (Mac).
+* ![Erstellen einer Vorlage, die sofort angepasst werden kann](/help/assets/assets/undo.svg): Klicken Sie, um die letzte Aktion rückgängig zu machen, oder drücken Sie **Strg**+**Z** (Windows) bzw. **Befehlstaste**+**Z** (Mac).
+* ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/redo.svg): Klicken Sie, um die letzte Aktion wiederherzustellen, oder drücken Sie **Strg**+**Y** (Windows) bzw. **Befehlstaste**+**Y** (Mac).
+* ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/zoom-in.svg): Klicken Sie, um die Arbeitsfläche zu vergrößern, oder drücken Sie **Strg**+**+** (Windows) bzw. Befehlstaste+**+** (Mac).
+* ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/Zoom-out.svg): Klicken Sie, um die Arbeitsfläche zu verkleinern, oder drücken Sie **Strg**+**-** (Windows) oder **Befehlstaste**+**-** (Mac).
 * Drücken Sie die **Rücktaste** oder **Entf**, um die ausgewählte Ebene zu löschen, wenn kein Text oder keine Eigenschaft bearbeitet wird.
 
-Klicken Sie in der Arbeitsflächenebene auf ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/dm-templates/show-layers-list.svg) **>** Weitere Optionen (![](/help/assets/assets/dm-templates/three-dots.svg)), um die Abmessungen der Arbeitsfläche jederzeit beim Erstellen der Vorlage zu bearbeiten.
-![](/help/assets/assets/dm-templates/edit-canvas1.png)
+Klicken Sie in der Arbeitsflächenebene auf ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/show-layers-list.svg) **>** Weitere Optionen (![](/help/assets/assets/three-dots.svg)), um die Abmessungen der Arbeitsfläche jederzeit beim Erstellen der Vorlage zu bearbeiten.
+![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
 >
@@ -102,19 +105,19 @@ Klicken Sie in der Arbeitsflächenebene auf ![Vorlage zum schnellen Erstellen vo
 
 Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Bilder hinzuzufügen:
 
-1. Klicken Sie auf ![Banner im Handumdrehen erstellen](/help/assets/assets/dm-templates/add-image.svg), um das Bedienfeld [Asset-Wähler](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) anzuzeigen. Das Bedienfeld zeigt die Bilder in Ihrer AEM Assets-Instanz an, die mit Dynamic Media synchronisiert werden.
+1. Klicken Sie auf ![Banner im Handumdrehen erstellen](/help/assets/assets/add-image.svg), um das Bedienfeld [Asset-Wähler](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) anzuzeigen. Das Bedienfeld zeigt die Bilder in Ihrer AEM Assets-Instanz an, die mit Dynamic Media synchronisiert werden.
 1. Durchsuchen Sie das Bedienfeld oder verwenden Sie Keywords in der Suchleiste, um nach einem bestimmten Bild zu suchen.
 1. Ziehen Sie ein Bild per Drag-and-Drop auf die Arbeitsfläche, um es zu verwenden. Zum Ändern der Größe oder Neupositionieren einer Ebene auf der Arbeitsfläche gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer).
-   ![Erstellen eines Banners innerhalb von Sekunden](/help/assets/assets/dm-templates/add-image-to-canvas.png)
+   ![Erstellen eines Banners innerhalb von Sekunden](/help/assets/assets/add-image-to-canvas.png)
 
 ### Hinzufügen von Textebenen zur Arbeitsfläche{#add-text-to-the-canvas}
 
 Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Textebenen hinzuzufügen:
 
-1. Klicken Sie auf ![Schnelles Erstellen neuer Banner](/help/assets/assets/dm-templates/add-text.svg), um der Arbeitsfläche eine Textebene hinzuzufügen und das Bedienfeld „Eigenschaften“ zu öffnen.
+1. Klicken Sie auf ![Schnelles Erstellen neuer Banner](/help/assets/assets/add-text.svg), um der Arbeitsfläche eine Textebene hinzuzufügen und das Bedienfeld „Eigenschaften“ zu öffnen.
 1. Wählen Sie die Ebene aus und klicken Sie zum Aktualisieren auf den Text.
 1. Aktivieren Sie Option zur **[!UICONTROL intelligenten Textgrößenänderung]** im Bedienfeld „Eigenschaften“, um die Textlänge und den Schriftgrad automatisch und optimal an den vorgesehenen Bereich anzupassen.
-   ![Optimal anpassbare Banner](/help/assets/assets/dm-templates/add-text-layer.png)
+   ![Optimal anpassbare Banner](/help/assets/assets/add-text-layer.png)
 
 Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Schriftart, Größe, Farbe, Stil und Ausrichtung (auf der Ebene) des Textes nach Ihren Wünschen, indem Sie die Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern.
 
@@ -126,8 +129,8 @@ Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen 
 
 Führen Sie die folgenden Schritte aus, um eine Arbeitsflächenebene zu bearbeiten oder zu löschen:
 
-1. Klicken Sie auf ![Vorlagen mit Unterstützung für dynamische Aktualisierungen](/help/assets/assets/dm-templates/show-layers-list.svg) und wählen Sie die Ebene entweder auf der Arbeitsfläche oder über die Liste „Ebenen“ aus.
-1. Klicken Sie auf **Weitere Optionen** (![Vorlagen mit Unterstützung für Echtzeitaktualisierungen](/help/assets/assets/dm-templates/three-dots.svg)), um die Ebene zu bearbeiten oder zu löschen.
+1. Klicken Sie auf ![Vorlagen mit Unterstützung für dynamische Aktualisierungen](/help/assets/assets/show-layers-list.svg) und wählen Sie die Ebene entweder auf der Arbeitsfläche oder über die Liste „Ebenen“ aus.
+1. Klicken Sie auf **Weitere Optionen** (![Vorlagen mit Unterstützung für Echtzeitaktualisierungen](/help/assets/assets/three-dots.svg)), um die Ebene zu bearbeiten oder zu löschen.
 1. Klicken Sie auf **[!UICONTROL Löschen]**, um die Ebene zu löschen.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]**, um die Ebene mithilfe des [**[!UICONTROL Bedienfelds „Eigenschaften“]**](#reposition-resize-delete-a-layer) zu bearbeiten.
    ![Schnelle Bannererstellung](/help/assets/assets/dm-templates/edit-delete-layer.png)
@@ -136,12 +139,12 @@ Führen Sie die folgenden Schritte aus, um eine Arbeitsflächenebene zu bearbeit
 
 So navigieren Sie zum Bedienfeld „Eigenschaften“ einer Ebene:
 
-1. Klicken Sie auf ![Schnelle Inhaltserstellung](/help/assets/assets/dm-templates/show-layers-list.svg).
+1. Klicken Sie auf ![Schnelle Inhaltserstellung](/help/assets/assets/show-layers-list.svg).
 1. Wählen Sie die Ebene aus der Liste aus.
 
 In diesem Bedienfeld werden die Position des Mittelpunkts der Ebene auf der Arbeitsflächenebene (X- und Y-Werte) und die Abmessungen (Breite und Höhe) der Ebene zusammen mit Optionen für die Textformatierung angezeigt.
 
-![Schnelle Inhaltserstellung](/help/assets/assets/dm-templates/properties-panel.png)
+![Schnelle Inhaltserstellung](/help/assets/assets/properties-panel.png)
 
 Wählen Sie im Bedienfeld „Eigenschaften“ einer Ebene eine andere Ebene auf der Arbeitsfläche aus, um zum zugehörigen Bedienfeld „Eigenschaften“ zu navigieren.
 
@@ -160,7 +163,7 @@ Sehen Sie sich die folgenden allgemeinen Ebenenbearbeitungsaktionen an, um eine 
 Formatieren Sie Schriftart, Größe, Farbe, Stil und Ausrichtung (auf der Ebene) des Textes nach Ihren Wünschen, indem Sie die Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern.
 
 **[!UICONTROL Intelligente Textgrößenänderung:]** Schließen Sie **[!UICONTROL Intelligente Textgrößenänderung]** ([Copyfit](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) ein, um einen beliebigen Text im vorgesehenen Bereich durch die intelligente Anpassung von Schriftgröße und -länge optimal anzupassen. Diese Funktion verhindert einen Textüberlauf und minimiert zusätzliche Leerzeichen am unteren Rand des Textes.
-![Inhaltserstellung im Handumdrehen](/help/assets/assets/dm-templates/smart-text-resize.png)
+![Inhaltserstellung im Handumdrehen](/help/assets/assets/smart-text-resize.png)
 
 ### Parametrisieren von Ebenen {#parameterise-a-layer}
 
@@ -168,11 +171,11 @@ Nachdem Sie eine Vorlage mit mehreren Bild- und Textebenen erstellt haben, param
 
 So parametrisieren Sie eine Ebene:
 
-1. Klicken Sie auf ![Sofortige Inhaltserstellung](/help/assets/assets/dm-templates/show-layers-list.svg), wählen Sie eine Ebene aus und klicken Sie auf **[!UICONTROL Parameter]**. Das Bedienfeld **[!UICONTROL Parameter]** wird angezeigt.
+1. Klicken Sie auf ![Sofortige Inhaltserstellung](/help/assets/assets/show-layers-list.svg), wählen Sie eine Ebene aus und klicken Sie auf **[!UICONTROL Parameter]**. Das Bedienfeld **[!UICONTROL Parameter]** wird angezeigt.
 1. Schalten Sie **[!UICONTROL Parameter einschließen]** um, um eine Eigenschaft zu parametrisieren. Informationen zum Verhalten der Eigenschaft nach der Parametrisierung finden Sie [hier](#parameterisation-options-or-allowed-parameters).
 1. **Optional:** Benennen Sie den Parameter um. Ein Parametername hat einen Ebenennamen, gefolgt von einem Suffix. Für eine ausgewählte Ebene verwenden alle parametrisierten Eigenschaften denselben Ebenennamen, gefolgt von einem variierenden Suffix. Benennen Sie den Ebenennamen um, indem Sie der semantischen Namenskonvention folgen, sodass bei Aufnahme des Parameters in die URL der Parametername selbst den Inhalt oder den Zweck der Ebene erklärt.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-   ![Sofortige Inhaltserstellung](/help/assets/assets/dm-templates/parameterise-a-layer.png)
+   ![Sofortige Inhaltserstellung](/help/assets/assets/parameterise-a-layer.png)
 Um zwischen dem Bedienfeld „Parameter“ eines Bildes und der Textebene zu wechseln, wählen Sie die Ebene auf der Arbeitsfläche aus und klicken Sie auf **[!UICONTROL Parameter]**.
 
 #### Option des Bedienfelds „Parameter“ {#parameterisation-options-or-allowed-parameters}
@@ -201,7 +204,7 @@ Schließen Sie die folgenden Parameter ein, um den Text, seine Schriftart, Farbe
 
 Eine weitere Möglichkeit, Ihre Vorlagen flexibel zu halten, besteht in der Verwendung eines einzelnen Parameternamens, um mehrere Ebenen zu steuern. Diese Strategie ist hilfreich für den Parameter „Sichtbarkeit“ (Ebenen ausblenden oder anzeigen), um das Design oder die Grafiken aus einer einzigen Vorlage zu aktualisieren.
 
-Führen Sie diese Schritte aus, um den Ausblendungsparametern (![schnelle Inhaltserstellung](/help/assets/assets/dm-templates/Visibility-icon.svg)) mehrerer Ebenen denselben Namen zuzuweisen, sodass Sie sie gleichzeitig ausblenden oder anzeigen können.
+Führen Sie diese Schritte aus, um den Ausblendungsparametern (![schnelle Inhaltserstellung](/help/assets/assets/Visibility-icon.svg)) mehrerer Ebenen denselben Namen zuzuweisen, sodass Sie sie gleichzeitig ausblenden oder anzeigen können.
 
 1. Navigieren Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#parameterise-a-layer) einer Ebene.
 1. Schalten Sie den Parameter **[!UICONTROL Ausblenden]** ein, falls er nicht zuvor parametrisiert wurde.
@@ -219,7 +222,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage in der Vorschau anzuzeige
 1. Klicken Sie auf der Seite „Arbeitsfläche“ auf **[!UICONTROL Vorschau]**. Sie können auch zu **[!UICONTROL Assets-Ansicht]** **>** **[!UICONTROL Dynamic Media-Assets]** **** navigieren, Ihre Vorlage suchen und auswählen und dann **** auf **** Vorlage bearbeiten **** sowie auf **[!UICONTROL Vorschau]** klicken. Auf der Seite „Vorschau“ werden die Vorlage, ihre Parameter (parametrisierte Ebenen und Eigenschaften), der Veröffentlichungsstatus und die Option **[!UICONTROL Veröffentlichen]** angezeigt.
 1. Wählen Sie Parameter aus dem Bedienfeld **[!UICONTROL Vorlagenparameter]** aus, um ihre Werte zu bearbeiten und den Inhalt, die Größe, die Position oder die Textformatierung der entsprechenden Vorlagenebene in der Vorschau sofort zu aktualisieren. Zum Beispiel:
    1. Auswählen einer Textebene und Bearbeiten ihres Textes oder
-   1. Wählen Sie eine Bildebene aus, klicken Sie auf ![Inhalt spontan erstellen](/help/assets/assets/dm-templates/add-image.svg), wählen Sie ein Bild aus der Asset-Auswahl aus und klicken Sie auf **[!UICONTROL Aktualisieren]**.
+   1. Wählen Sie eine Bildebene aus, klicken Sie auf ![Inhalt spontan erstellen](/help/assets/assets/add-image.svg), wählen Sie ein Bild aus der Asset-Auswahl aus und klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
    Die Vorlage wird sofort aktualisiert, wobei der bearbeitete Text angezeigt und das vorherige Bild durch das neue Bild ersetzt wird. Darüber hinaus spiegelt der Bildparameterwert den neuen Bildpfad wider. Auf ähnliche Weise können Sie die Größe einer Ebene ändern, indem Sie ihre Werte anpassen. Die Änderungen werden dann in Echtzeit auf die Vorlage angewendet.
 1. Wählen Sie den Parameter „Ausblenden“ für [gruppierte Ebenen](#group-layers) aus der Liste aus, um sie zusammen in der Vorlage ein- oder auszublenden.

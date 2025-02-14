@@ -4,10 +4,10 @@ description: Verwalten von PDF-Dokumenten in  [!DNL Adobe Experience Manager]  a
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 1652df9e774d8212b1bcc2898ca5d57e2a0d13bc
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Document Cloud PDF Viewer bietet AEM Assets folgende Vorteile:
 
 >[!TIP]
 >
-> Wenn Sie die Vorschau eines zuvor hochgeladenen PDF-Dokuments nicht für mehrere Seiten anzeigen können, wählen Sie die PDF aus und klicken Sie auf ![Erneut verarbeiten](/help/assets/assets/Reprocess.svg) **Assets erneut verarbeiten**.
+> Wenn Sie die Vorschau eines zuvor hochgeladenen PDF-Dokuments nicht für mehrere Seiten anzeigen können, wählen Sie die PDF-Datei aus und klicken Sie auf ![Erneut verarbeiten](/help/assets/assets/Reprocess.svg) **Assets erneut verarbeiten**.
 
 ## Unterstützung von PDF Document Cloud Viewer-Komponenten {#pdf-doc-cloud}
 
@@ -40,7 +40,7 @@ Der native PDF Doc Cloud-Viewer verfügt in AEM Assets über die folgenden Kompo
 
 * **Seite nach oben / Seite nach unten** Verwenden Sie ![Seite nach oben](/help/assets/assets/ArrowUp.svg) oder ![Seite nach unten](/help/assets/assets/ArrowDown.svg), um durch das Dokument zu scrollen.
 
-* **Auszoomen/Einzoomen** Verwenden Sie ![Auszoomen](/help/assets/assets/ZoomOut.svg) oder ![Einzoomen](/help/assets/assets/ZoomIn.svg), um das Dokument zu verkleinern oder zu vergrößern.
+* **Auszoomen/Einzoomen** Verwenden Sie ![Auszoomen](/help/assets/assets/Zoom-out.svg) oder ![Einzoomen](/help/assets/assets/zoom-in.svg), um das Dokument zu verkleinern oder zu vergrößern.
 
 * **Seitengröße** Verwenden Sie die Breite und Höhe, um das Dokument entsprechend der Bildschirmgröße anzupassen.
 
