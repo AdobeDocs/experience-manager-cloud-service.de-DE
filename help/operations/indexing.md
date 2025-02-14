@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
+source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 100%
+source-wordcount: '2767'
+ht-degree: 88%
 
 ---
 
@@ -359,9 +359,50 @@ Manchmal ist es erforderlich, eine Änderung in einer Indexdefinition rückgäng
 
 ### Entfernen eines Index {#removing-an-index}
 
-Nachfolgendes gilt nur für anwenderdefinierte Indizes. Produktindizes können nicht entfernt werden, da sie von AEM verwendet werden.
+Folgendes gilt nur für Anpassungen von vorkonfigurierten Indizes und vollständig benutzerdefinierten Indizes. Beachten Sie, dass die ursprünglichen OOTB-Indizes nicht entfernt werden können, da sie von AEM verwendet werden.
 
-Ein benutzerdefinierter Index kann in einer späteren Version der Kundenanwendung entfernt werden, indem er aus dem Kunden-Repository entfernt wird. Ein Index, der aus dem Repository entfernt wird, wird nicht für Abfragen in AEM verwendet, obwohl er möglicherweise noch eine Weile in den Instanzen vorhanden ist. Es gibt einen Bereinigungsmechanismus, der regelmäßig ausgeführt wird, um ältere Versionen von Indizes aus den Instanzen zu bereinigen.
+Um die Systemintegrität und -stabilität sicherzustellen, sollten Indexdefinitionen nach der Bereitstellung als unveränderlich behandelt werden. Um das Entfernen eines benutzerdefinierten Index oder einer Anpassung zu erzielen, erstellen Sie eine neue Version des benutzerdefinierten oder angepassten Index mit einer Definition, die das Entfernen des Index effektiv simuliert.
+
+Sobald eine neue Version eines Index bereitgestellt wurde, wird die ältere Version desselben Index nicht mehr von Abfragen verwendet.
+Die ältere Version wird nicht sofort aus der Umgebung gelöscht.
+Die Speicherbereinigung wird jedoch durch einen Bereinigungsmechanismus möglich, der regelmäßig ausgeführt wird.
+Nach einer Übergangsphase, die eine Wiederherstellung im Falle von Fehlern ermöglicht
+(derzeit werden 7 Tage ab dem Zeitpunkt gezählt, zu dem die Indizierung entfernt wurde, aber Änderungen unterliegen),
+Dieser Bereinigungsmechanismus löscht die nicht verwendeten Indexdaten,
+und deaktiviert oder entfernt die alte Version des Index aus der Umgebung.
+
+Im Folgenden beschreiben wir die beiden möglichen Fälle: Entfernen der Anpassungen eines vorkonfigurierten Index und Entfernen eines vollständig benutzerdefinierten Index.
+
+#### Entfernen von Anpassungen eines vordefinierten Index
+
+Führen Sie die unter „Rückgängigmachen [ Änderung](#undoing-a-change-undoing-a-change) beschriebenen Schritte aus, indem Sie die Definitionen des vorkonfigurierten Index als neue Version verwenden. Wenn Sie beispielsweise bereits `damAssetLucene-8-custom-3` bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8` zurückkehren möchten, müssen Sie ein `damAssetLucene-8-custom-4` hinzufügen, das die Indexdefinition von `damAssetLucene-8` enthält.
+
+#### Entfernen eines vollständig benutzerdefinierten Index
+
+Führen Sie die unter [Rückgängigmachen einer Änderung](#undoing-a-change-undoing-a-change) beschriebenen Schritte aus, indem Sie einen Platzhalterindex als neue Version verwenden. Ein Platzhalterindex wird nie für Abfragen verwendet und enthält keine Daten, sodass der Effekt derselbe ist, als ob der Index nicht vorhanden wäre. Sie können ihn beispielsweise `/oak:index/acme.product-custom-3` nennen. Dadurch wird der Index `/oak:index/acme.product-custom-2` ersetzt. Ein Beispiel für einen solchen Platzhalterindex ist:
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+</acme.product-custom-3>
+```
+
+
 
 ## Index- und Abfrageoptimierung {#index-query-optimizations}
 
