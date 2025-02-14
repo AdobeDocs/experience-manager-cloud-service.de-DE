@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 87%
@@ -53,8 +53,7 @@ Der adaptive Formularbaustein bietet eine standardisierte HTML-Struktur, die die
 * **Aktualisieren von Standardstilen**: Sie können die Standardstile eines Formulars ändern, indem Sie die `/blocks/form/form.css file` bearbeiten. Diese Datei bietet eine umfassende Formatierung für ein Formular, das mehrstufige Assistentenformulare unterstützt. Der Schwerpunkt liegt auf der Verwendung benutzerdefinierter CSS-Variablen für eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. &lt;!- Anweisungen zum Hinzufügen des adaptiven Forms-Blocks zu Ihrem Projekt finden Sie unter [Erstellen eines ](/help/edge/docs/forms/create-forms.md)).
 
 * **CSS-Stile für Forms**: Um sicherzustellen, dass Ihre Stile korrekt angewendet werden, schließen Sie Ihre formularspezifische CSS-Datei in den `main .form form`-Selektor ein. Dadurch wird sichergestellt, dass Ihre Stile nur auf die Formularelemente innerhalb des Hauptinhaltsbereichs abzielen, wodurch Konflikte mit anderen Teilen der Website vermieden werden.
-
-  Zum Beispiel:
+Zum Beispiel:
 
   ```css
   main .form form input {
@@ -68,8 +67,7 @@ Der adaptive Formularbaustein bietet eine standardisierte HTML-Struktur, die die
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
+  
 ## Komponentenstruktur
 
 Der adaptive Formularbaustein bietet eine konsistente HTML-Struktur für verschiedene Formularelemente, wodurch Formatierungen und die Verwaltung vereinfacht werden. Sie können die Komponenten mithilfe von CSS für Formatierungszwecke bearbeiten.
