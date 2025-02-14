@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
+source-git-commit: e5404de6baae5373aefe5d03894864965b47b049
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 100%
+source-wordcount: '1526'
+ht-degree: 97%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 100%
 # Build-Umgebung {#build-environment}
 
 Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
+
+>[!TIP]
+>
+>In diesem Dokument wird die Build-Umgebung von Cloud Manager für die Entwicklung Ihres AEM as a Cloud Service-Projekts beschrieben. Einzelheiten zu den von AEM as a Cloud Service für die Inhaltserstellung unterstützten Client-Plattformen finden Sie im Dokument [Unterstützte Client-Plattformen.](/help/overview/supported-platforms.md)
 
 ## Details der Build-Umgebung {#build-environment-details}
 
