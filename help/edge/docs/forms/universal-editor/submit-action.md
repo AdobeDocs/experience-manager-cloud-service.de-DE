@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '735'
 ht-degree: 18%
 
 ---
@@ -140,3 +140,8 @@ Mit der Option Bei Übermittlung können Sie eine Nachricht mit einer Übermittl
 1. Beim Klicken wird die folgende Option angezeigt:
    * **[!UICONTROL Beim Senden]**: Mit dem Senden können Sie eine Nachricht anpassen, die beim Senden eines Formulars angezeigt werden soll. Standardmäßig wird dem Benutzer bei erfolgreicher Übermittlung eines Formulars die benutzerdefinierte Meldung „Vielen Dank für die Übermittlung des Formulars“ angezeigt.
 Sie können die Dankesnachricht beim Absenden des Formulars auch anpassen, indem Sie die Option **[!UICONTROL Nachricht anzeigen]** auswählen und Ihre Nachricht im Rich-Text-**Editor) hinzufügen/**.
+
+
+## Siehe auch
+
+{{see-more-forms-eds}}

@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
+source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 87%
@@ -46,6 +46,29 @@ Das Verstehen [grundlegender CSS-Konzepte](https://www.w3schools.com/css/css_int
 * [Box-Modell](https://www.w3schools.com/css/css_boxmodel.asp): Das CSS-Box-Modell beschreibt die Struktur von HTML-Elementen als Inhaltsbereich, der von Abstand, Rahmen und Rändern umgeben ist.
 * Flexbox/Raster: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)- und [Raster-Layouts](https://www.w3schools.com/css/css_grid.asp) sind leistungsstarke Tools zum Erstellen responsiver und flexibler Designs.
 
+## Formatieren eines Formulars für den adaptiven Formularbaustein
+
+Der adaptive Formularbaustein bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
+
+* **Aktualisieren von Standardstilen**: Sie können die Standardstile eines Formulars ändern, indem Sie die `/blocks/form/form.css file` bearbeiten. Diese Datei bietet eine umfassende Formatierung für ein Formular, das mehrstufige Assistentenformulare unterstützt. Der Schwerpunkt liegt auf der Verwendung benutzerdefinierter CSS-Variablen für eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. &lt;!- Anweisungen zum Hinzufügen des adaptiven Forms-Blocks zu Ihrem Projekt finden Sie unter [Erstellen eines ](/help/edge/docs/forms/create-forms.md)).
+
+* **CSS-Stile für Forms**: Um sicherzustellen, dass Ihre Stile korrekt angewendet werden, schließen Sie Ihre formularspezifische CSS-Datei in den `main .form form`-Selektor ein. Dadurch wird sichergestellt, dass Ihre Stile nur auf die Formularelemente innerhalb des Hauptinhaltsbereichs abzielen, wodurch Konflikte mit anderen Teilen der Website vermieden werden.
+
+  Zum Beispiel:
+
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+  
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+  
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
 
 ## Komponentenstruktur
 
@@ -137,30 +160,6 @@ main .form form .field-first-name input {
   border-radius: 4px;
 }
 ```
-
-**Formatieren eines Formulars für den adaptiven Forms-Block**
-
-Der adaptive Formularbaustein bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
-
-* **Aktualisieren von Standardstilen**: Sie können die Standardstile eines Formulars ändern, indem Sie die `/blocks/form/form.css file` bearbeiten. Diese Datei bietet eine umfassende Formatierung für ein Formular, das mehrstufige Assistentenformulare unterstützt. Der Schwerpunkt liegt auf der Verwendung benutzerdefinierter CSS-Variablen für eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen. &lt;!- Anweisungen zum Hinzufügen des adaptiven Forms-Blocks zu Ihrem Projekt finden Sie unter [Erstellen eines ](/help/edge/docs/forms/create-forms.md)).
-
-* **CSS-Stile für Forms**: Um sicherzustellen, dass Ihre Stile korrekt angewendet werden, schließen Sie Ihre formularspezifische CSS-Datei in den `main .form form`-Selektor ein. Dadurch wird sichergestellt, dass Ihre Stile nur auf die Formularelemente innerhalb des Hauptinhaltsbereichs abzielen, wodurch Konflikte mit anderen Teilen der Website vermieden werden.
-
-  Zum Beispiel:
-
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-  
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-  
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
 
 +++
 
