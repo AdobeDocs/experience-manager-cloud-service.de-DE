@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 18%
 
 ---
-
 
 # Übermittlungsaktion für adaptive Formulare
 
@@ -44,7 +44,7 @@ So konfigurieren Sie einen REST-Endpunkt:
 1. Geben Sie die REST-Endpunkt-URL an.
 1. Sie können auch **POST-Anfrage aktivieren** und eine URL eingeben, um die Anfrage zu veröffentlichen.
 
-{width=50%,height=50%}![Aktivieren der POST-Anfrage für adaptive Formulare](/help/forms/assets/enable-post-request-ue.png)
+![Aktivieren einer POST-Anfrage für adaptive Formulare](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Mit der Übermittlungsaktion E-Mail senden können Sie nach erfolgreicher Überm
 1. Dies trägt zur Optimierung des Workflows bei, indem Formularübermittlungen direkt in E-Mail-Benachrichtigungen integriert werden.
 1. Es hilft Unternehmen, die E-Mail-Inhalte individuell anzupassen, sodass sie für spezifische Kommunikationsanforderungen geeignet sind.
 
-{width=50%,height=50%}![Adaptive Formulareigenschaften im universellen Editor](/help/forms/assets/submit-actions-ue.png)
+![Eigenschaften adaptiver Formulare im universellen Editor](/help/forms/assets/submit-actions-ue.png)
 
 
 So konfigurieren Sie eine Übermittlungsaktion als E-Mail für die Übermittlung Ihres Formulars:
@@ -140,5 +140,3 @@ Mit der Option Bei Übermittlung können Sie eine Nachricht mit einer Übermittl
 1. Beim Klicken wird die folgende Option angezeigt:
    * **[!UICONTROL Beim Senden]**: Mit dem Senden können Sie eine Nachricht anpassen, die beim Senden eines Formulars angezeigt werden soll. Standardmäßig wird dem Benutzer bei erfolgreicher Übermittlung eines Formulars die benutzerdefinierte Meldung „Vielen Dank für die Übermittlung des Formulars“ angezeigt.
 Sie können die Dankesnachricht beim Absenden des Formulars auch anpassen, indem Sie die Option **[!UICONTROL Nachricht anzeigen]** auswählen und Ihre Nachricht im Rich-Text-**Editor) hinzufügen/**.
-
-
