@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Sie können jedes **EDS-basierte adaptive Formular** in Edge Delivery veröffent
 1. Um den Veröffentlichungsstatus des Formulars zu überprüfen, klicken Sie erneut **Veröffentlichen**.
    ![Veröffentlichungsstatus](/help/forms/assets/publish-status.png)
 
-1. Um **Veröffentlichung** Formulars aufzuheben, öffnen Sie das Formular im Editor, klicken Sie auf das Dreipunkt-Menü in der oberen rechten Ecke und wählen Sie **Veröffentlichung aufheben**.
+1. Um **Veröffentlichung** Formulars aufzuheben, öffnen Sie das Formular im Editor, klicken Sie auf das Dreipunkt-Menü in der oberen rechten Ecke und klicken Sie auf **Veröffentlichung aufheben**.
    ![Veröffentlichung aufheben](/help/forms/assets/unpublish--form.png)
 
 ## Aktivieren der Formularübermittlung in Edge Delivery durch Konfigurieren eines Referrer-Filters für AEM Publisher
