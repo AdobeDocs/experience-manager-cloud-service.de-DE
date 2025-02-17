@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
+exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 6%
+source-wordcount: '1736'
+ht-degree: 5%
 
 ---
-
 
 # Erstellen benutzerdefinierter Komponenten beim WYSIWYG-Authoring
 
@@ -173,24 +173,25 @@ In diesem Beispiel fügen wir den Schrittwert als benutzerdefinierte Eigenschaft
 
 Um die benutzerdefinierte Eigenschaft Schrittwert hinzuzufügen, hängen Sie das Komponentenmodell mit den folgenden Codezeilen in der Datei ` _<component>.json` an:
 
-```javascript
+    „javascript
     {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
+    „component“: „number“,
+    „name“: „stepValue“,
+    „label“: „Step Value“,
+    „valueType“: „number“
     }
-    ```
-The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
+    &quot;
 
-* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-* **label**: The display name of the property as seen in the Property dialog. 
-* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+Das JSON-Snippet definiert eine benutzerdefinierte Eigenschaft mit der Bezeichnung **Schrittwert** für eine Komponente **Bereich**. Nachstehend finden Sie eine Aufschlüsselung der einzelnen Felder:
 
-You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+* **component**: Gibt den Typ des Eingabefelds an, das im Dialogfeld „Eigenschaft“ verwendet wird. In diesem Fall gibt `number` an, dass das Feld numerische Werte akzeptiert.
+* **name**: Der Bezeichner für die Eigenschaft, mit der in der Komponentenlogik darauf verwiesen wird. Hier stellt der `stepValue` die Schrittwerteinstellung für den Bereich dar.
+* **label**: Der Anzeigename der Eigenschaft, wie er im Dialogfeld „Eigenschaft“ angezeigt wird.
+* **valueType**: Definiert den für die Eigenschaft erwarteten Datentyp. Der `number` stellt sicher, dass nur numerische Eingaben zulässig sind.
 
-Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
+Sie können jetzt `stepValue` als benutzerdefinierte Eigenschaft in den JSON-Eigenschaften von `range.js` verwenden und dynamisches Verhalten basierend auf seinem Wert zur Laufzeit implementieren.
+
+Daher lautet die endgültige `_range.json` nach dem Hinzufügen der Komponentendefinition, des Komponentenmodells und der benutzerdefinierten Eigenschaften wie folgt:
 
 ```javascript
  {
@@ -322,6 +323,10 @@ const OOTBComponentDecorators = ['file-input',
 Nach Abschluss der oben genannten Schritte wird die benutzerdefinierte Komponente im universellen Editor in der Komponentenliste des Formulars angezeigt. Anschließend können Sie es per Drag-and-Drop in den Formularabschnitt ziehen.
 
 ![Bereichskomponente](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+Der folgende Screenshot zeigt die Eigenschaften der `range` Komponente, die dem Komponentenmodell hinzugefügt wurde und die Eigenschaften angibt, die der Formularautor konfigurieren kann:
+
+![Eigenschaften der Bereichskomponente](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Sie können jetzt das Laufzeitverhalten Ihrer benutzerdefinierten Komponente definieren, indem Sie Stile und Funktionen hinzufügen.
 
