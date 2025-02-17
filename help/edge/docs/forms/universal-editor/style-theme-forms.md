@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
+source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1844'
 ht-degree: 87%
 
 ---
@@ -45,6 +45,7 @@ Das Verstehen [grundlegender CSS-Konzepte](https://www.w3schools.com/css/css_int
 * [Eigenschaften](https://www.w3schools.com/css/css_syntax.asp): CSS-Eigenschaften definieren das visuelle Erscheinungsbild von Elementen. Zu den allgemeinen Eigenschaften für die Formatierung von Formularfeldern gehören u. a. Farbe, Hintergrundfarbe, Rahmen, Abstand und Rand.
 * [Box-Modell](https://www.w3schools.com/css/css_boxmodel.asp): Das CSS-Box-Modell beschreibt die Struktur von HTML-Elementen als Inhaltsbereich, der von Abstand, Rahmen und Rändern umgeben ist.
 * Flexbox/Raster: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)- und [Raster-Layouts](https://www.w3schools.com/css/css_grid.asp) sind leistungsstarke Tools zum Erstellen responsiver und flexibler Designs.
+
 
 ## Formatieren eines Formulars für den adaptiven Formularbaustein
 
