@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 88%
 
 ---
 
@@ -16,6 +16,16 @@ ht-degree: 100%
 # Veröffentlichen von Inhalten mit dem universellen Editor {#publishing}
 
 Erfahren Sie, wie Inhalte mit dem universellen Editor veröffentlicht werden und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
+
+## Veröffentlichen von Inhalten als Autor {#publishing-content}
+
+Wenn Sie als Inhaltsautor bereit sind, Ihre Inhalte zu veröffentlichen, müssen Sie einfach auf [das Symbol **Veröffentlichen** in der Symbolleiste des universellen Editors tippen oder klicken.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+
+Sie können auch [über die Sites-Konsole veröffentlichen](/help/sites-cloud/authoring/sites-console/publishing-pages.md) was nützlich sein kann, wenn Sie mehrere Inhaltsseiten veröffentlichen möchten.
+
+>[!NOTE]
+>
+>Der universelle Editor unterstützt [Erweiterungen und UI-Erweiterbarkeit](/help/implementing/universal-editor/extending.md), damit Workflows Ihren Veröffentlichungsprozess unterstützen können.
 
 ## Ähnlichkeiten mit AEM {#similarities}
 

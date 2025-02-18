@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 76%
+source-wordcount: '1616'
+ht-degree: 74%
 
 ---
 
@@ -213,7 +213,7 @@ Beispielsweise ist über die Schaltfläche mit den Auslassungspunkten die Mögli
 
 Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Symbolleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
 
-* Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
+* Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md).
 * Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### Der Editor {#editor}
@@ -308,9 +308,9 @@ Durch Tippen oder Klicken auf die Schaltfläche Löschen [löscht die Komponente
 >
 >Verwenden Sie den Hotkey `Shift+Backspace`, um eine ausgewählte Komponente aus einem Container zu löschen.
 
-#### Zusätzliche Schaltflächen {#additional-properties-rail-buttons}
+## Zusätzliche Funktionen {#additional-features}
 
-Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn Sie im Bedienfeld „Eigenschaften“ weitere Schaltflächen finden, wurde Ihr universeller Editor erweitert.
+Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn im Eigenschaftenbereich oder in der Symbolleiste zusätzliche Schaltflächen oder Optionen angezeigt werden, wurde Ihr universeller Editor erweitert.
 
 * Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
 * Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).

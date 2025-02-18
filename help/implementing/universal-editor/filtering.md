@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die zulässigen Komponenten pro Container im 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 63%
+source-wordcount: '153'
+ht-degree: 62%
 
 ---
 
@@ -53,4 +53,7 @@ Durch das Festlegen des Attributs `components` in einer Filterdefinition auf `
 
 >[!TIP]
 >
->Weitere Informationen zu anderen Anpassungs- und Erweiterungsoptionen, die dem universellen Editor zur Verfügung stehen, finden Sie im Dokument [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
+>Erfahren Sie mehr über andere Anpassungs- und Erweiterungsoptionen, die dem universellen Editor in den Dokumenten zur Verfügung stehen:
+>
+>* [Anpassen des universellen Editors](/help/implementing/universal-editor/customizing.md)
+>* [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md)
