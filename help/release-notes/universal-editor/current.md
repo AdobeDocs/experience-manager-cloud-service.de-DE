@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2054.01.16
-description: Dies sind die Versionshinweise für die Version 2025.01.16 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.02.17
+description: Dies sind die Versionshinweise für die Version 2025.02.17 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '236'
-ht-degree: 100%
+source-git-commit: af04ad7e3f89247580c48c276cb371d78ac56a49
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 22%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.01.16 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.02.17 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 16. Januar 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 17. Februar 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -22,15 +22,14 @@ Dies sind die Versionshinweise für die Version vom 16. Januar 2025 des univer
 
 ## Neue Funktionen {#what-is-new}
 
-* **Einstellung der CORS-Bibliothek &lt; 3.0.0**: Um die zukünftige Kompatibilität sicherzustellen und die Sicherheit zu verbessern, unterstützt der universelle Editor nun ausschließlich die Version 3.0.0 oder höher der
-  `@Adobe Express/universal-editor-cors`-Bibliothek.
-   * Die Bibliothek wird jetzt ausschließlich über [`universal-editor-service.adobe.io/cors.js`](http://universal-editor-service.adobe.io/cors.js) bereitgestellt.
-   * Benutzende werden beim Öffnen einer Seite, die ältere Versionen der CORS-Bibliothek verwendet, über die Einstellung dieser Version informiert und aufgefordert, sie zu aktualisieren.
-* **Erweiterungspunkt für Landingpage**: [Ein neuer Erweiterungspunkt](/help/implementing/universal-editor/customizing.md#extending) wurde eingeführt, damit Erweiterungen in der Seitenleiste der Landingpage des universellen Editors angezeigt werden.
-   * Nun können Entwickelnde angeben, ob Erweiterungen für den Editor, die Landingpage oder beides gelten. Dies sorgt für bessere Anpassungsmöglichkeiten und eine größere Benutzerfreundlichkeit.
+* **In Vorschau veröffentlichen** - Beim Veröffentlichen (oder Rückgängigmachen der Veröffentlichung) Ihrer Inhalte mit dem universellen Editor können Sie jetzt auswählen, ob Sie zusätzlich zu Ihrer Veröffentlichungsumgebung in Ihrer Vorschau veröffentlichen möchten
+   * Dies ermöglicht die Überprüfung Ihrer Inhalte vor der öffentlichen Veröffentlichung.
+* **Modell und Filter können in der Komponentendefinition definiert werden** - Sie können jetzt definieren, welches Modell und welcher Filter eine Komponente in der Komponentendefinition verwendet.
+   * Diese Informationen können zentral in der Definition verwaltet werden und müssen nicht in der Instrumentierung angegeben werden.
+   * Auf diese Weise können Sie Komponenten über Container hinweg verschieben.
+* **Untergeordnete Elemente von Containern werden implizit als Komponenten betrachtet** - Wenn ein Element mit einem `data-aue-resource` als direkt untergeordnetes Element in einem Container platziert wird, wird es als Komponente betrachtet und kann verschoben werden, ohne dass `data-aue-behavior="component"` angegeben werden muss.
 
 ## Andere Verbesserungen {#other-improvements}
 
-* **Ungültige URLs unter „Zuletzt verwendet“ auf der Landingpage korrigiert**: Es wurde ein Problem behoben, durch das die URLs, die in der Liste „Zuletzt verwendet“ auf der Landingpage des universellen Editors angezeigt wurden, beschädigt waren.
-* **Design-Synchronisation in Unified Shell**: Der universelle Editor synchronisiert das Design nun dynamisch mit den Unified Shell-Einstellungen des Systems und führt eine automatische Anpassung zwischen hellem und dunklem Modus durch.
-   * Dadurch wird ein konsistentes visuelles Erscheinungsbild über Mikro-Frontends hinweg sichergestellt, einschließlich Fragment- und Asset-Auswahl.
+* **AEM 6.5-Asset-Wähler** - Der 6.5-Asset-Wähler wird jetzt ordnungsgemäß geöffnet, wenn der universelle Editor mit AEM 6.5 ausgeführt wird.
+
