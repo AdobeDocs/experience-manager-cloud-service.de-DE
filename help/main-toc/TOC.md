@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
+source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6081'
 ht-degree: 98%
 
 ---
@@ -374,10 +374,10 @@ ht-degree: 98%
          + [Stilsystem](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Einschränkungen für „Rückgängig machen“ und „Wiederholen“](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universeller Editor {#universal-editor}
-         + [Navigieren im universellen Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-         + [Inhaltsvererbung im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Veröffentlichung](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Vererbung](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Seitenvorlagen](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Fragmente {#fragments}
          + [Inhaltsfragmente](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -1287,6 +1287,7 @@ ht-degree: 98%
          + [Attribute und Elementtypen](/help/implementing/universal-editor/attributes-types.md)
          + [Komponentendefinition](/help/implementing/universal-editor/component-definition.md)
          + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
+         + [Veröffentlichung](/help/implementing/universal-editor/publishing.md)
          + [SecurBank-Beispiel-App](/help/implementing/universal-editor/securbank.md)
          + [Ereignisse](/help/implementing/universal-editor/events.md)
          + [Filtern von Komponenten](/help/implementing/universal-editor/filtering.md)

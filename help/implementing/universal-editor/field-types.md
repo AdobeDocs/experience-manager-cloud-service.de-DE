@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 95%
+source-wordcount: '1496'
+ht-degree: 86%
 
 ---
 
@@ -43,11 +43,41 @@ Die Modelldefinition ist eine JSON-Struktur, die mit einem Array von Modellen be
 
 Im Abschnitt **[Felder](#fields)** in diesem Dokument finden Sie weitere Informationen zum Definieren des `fields`-Arrays.
 
+Sie können ein Modell auf zwei Arten mit einer Komponente verknüpfen: mit der [Komponentendefinition](#component-definition) oder [über die Instrumentierung.](#instrumentation)
+
+### Verknüpfen mithilfe der Komponentendefinition {#component-definition}
+
+Dies ist die bevorzugte Methode zum Verknüpfen des Modells mit der Komponente. Auf diese Weise können Sie den Link zentral in der Komponentendefinition verwalten und Komponenten über Container ziehen.
+
+Fügen Sie einfach die `model`-Eigenschaft in die `template`-Direktive in die Datei „component-definition.json“ ein.
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+Weitere Informationen finden Sie im Dokument [Komponentendefinition.](/help/implementing/universal-editor/component-definition.md)
+
+### Verknüpfen mithilfe von Instrumentierung {#instrumentation}
+
 Um die Modelldefinition mit einer Komponente zu verwenden, kann das Attribut `data-aue-model` verwendet werden.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>Der universelle Editor prüft zunächst, ob ein Modell über die Instrumentierung verknüpft ist, und verwendet dieses Modell, bevor er die Komponentendefinition überprüft. Das bedeutet:
+>
+>* Projekte, bei denen die Verknüpfung mit dem Modell über die Instrumentierung implementiert wurde, funktionieren weiterhin unverändert, ohne dass Änderungen erforderlich sind.
+>* Wenn Sie das Modell in der [Komponentendefinition](#component-definition) sowie in der Instrumentierung definieren, wird immer die Instrumentierung verwendet.
 
 ## Laden einer Modelldefinition {#loading-model}
 

@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 74%
+source-wordcount: '1623'
+ht-degree: 72%
 
 ---
 
@@ -191,9 +191,9 @@ Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie ger
 >
 >Die Vorschau-URL für Ihre App [kann angepasst werden](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
-#### Veröffentlichen {#publish}
+#### Publish {#publish}
 
-Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am Inhalt für Ihre Leserinnen und Leser live zu veröffentlichen.
+Wählen Sie die Schaltfläche Veröffentlichen aus, damit Sie die Änderungen am Inhalt für Ihre Leser live oder zur Überprüfung in einer Vorschauumgebung veröffentlichen können.
 
 ![Schaltfläche „Veröffentlichen“](assets/publish.png)
 

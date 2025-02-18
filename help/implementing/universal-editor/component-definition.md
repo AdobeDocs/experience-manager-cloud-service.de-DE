@@ -4,9 +4,9 @@ description: Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefini
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -33,35 +33,42 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ Nachdem die `plugin` definiert wurde, müssen Sie angeben, ob sie seitenbezogen 
 
 Wenn es sich bei der Komponente um Inhalt auf der Seite handelt, können Sie die folgenden Informationen angeben.
 
-* `name` definiert einen optionalen Namen, der im JCR für die neu erstellte Komponente gespeichert wird.
-   * Nur informativ, wird aber in der Benutzeroberfläche nicht so angezeigt, wie die `title` ist.
 * `resourceType` definiert den [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md)-`resourceType`, der zum Rendern der Komponente verwendet wird.
-* `template` definiert optionale Schlüssel/Werte, die automatisch in die neu erstellte Komponente geschrieben werden.
+* `template` definiert optionale Schlüssel/Werte, die automatisch in die neu erstellte Komponente geschrieben werden, und definiert, welcher Filter und/oder welches Modell auf die Komponente angewendet werden soll.
    * Nützlich für erklärenden Text, Beispiel- oder Platzhaltertext.
+
+#### `template` {#template}
+
+Durch Bereitstellung optionaler Schlüssel/Wert-Paare können `template` diese automatisch in die neue Komponente schreiben. Darüber hinaus können auch die folgenden optionalen Werte angegeben werden.
+
+* `model` definiert, [Modell](/help/implementing/universal-editor/field-types.md#model-structure) mit der Komponente verwendet wird.
+   * Das Modell wird dabei zentral in der Komponentendefinition gepflegt und muss nicht ([ der Instrumentierung) angegeben werden](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Auf diese Weise können Sie Komponenten über Container hinweg verschieben.
+* `filter` definiert[ welcher ](/help/implementing/universal-editor/filtering.md) mit der Komponente verwendet werden soll.
 
 ### `cf` {#cf}
 
