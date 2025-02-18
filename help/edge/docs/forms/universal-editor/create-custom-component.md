@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
+source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1725'
 ht-degree: 5%
 
 ---
@@ -173,14 +173,14 @@ In diesem Beispiel fügen wir den Schrittwert als benutzerdefinierte Eigenschaft
 
 Um die benutzerdefinierte Eigenschaft Schrittwert hinzuzufügen, hängen Sie das Komponentenmodell mit den folgenden Codezeilen in der Datei ` _<component>.json` an:
 
-    „javascript
-    {
-    „component“: „number“,
-    „name“: „stepValue“,
-    „label“: „Step Value“,
-    „valueType“: „number“
-    }
-    &quot;
+```javascript
+      {
+      "component": "number",
+      "name": "stepValue",
+      "label": "Step Value",
+      "valueType": "number"
+      }
+```
 
 Das JSON-Snippet definiert eine benutzerdefinierte Eigenschaft mit der Bezeichnung **Schrittwert** für eine Komponente **Bereich**. Nachstehend finden Sie eine Aufschlüsselung der einzelnen Felder:
 

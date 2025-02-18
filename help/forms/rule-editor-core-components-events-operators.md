@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 58%
+source-wordcount: '2171'
+ht-degree: 57%
 
 ---
 
@@ -111,7 +111,7 @@ _
 
 * Stellen Sie sicher, dass [Kernkomponente auf Version 3.0.14 oder höher eingestellt ist](https://github.com/adobe/aem-core-forms-components) um diese Funktion im Regeleditor zu verwenden.
 * Falls Regeln auf verschiedene Felder in der Wenn-Bedingung angewendet werden, wird die Regel auch dann ausgelöst, wenn nur eines dieser Felder geändert wird.
-
+* Sie können die mehreren Felder nur in der Wenn **Bedingung** eine **AND)-** hinzufügen. Eine OR-Regel **nicht**.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.

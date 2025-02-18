@@ -7,7 +7,7 @@ feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manag
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 2%
@@ -19,32 +19,32 @@ ht-degree: 2%
 Als Adobe Experience Manager (AEM) Forms-Administrator können Sie Formulare von Ihrer Autoreninstanz in Experience Manager Forms veröffentlichen. Sie haben außerdem die Möglichkeit, die Veröffentlichung eines Formulars oder Ordners für ein späteres Datum oder eine spätere Uhrzeit zu planen. Nach der Veröffentlichung können Benutzer auf die Formulare zugreifen und sie ausfüllen.
 
 In Experience Manager Forms können Sie ein Formular mit einer der folgenden Methoden veröffentlichen:
-* [Publish-Option](#publish-forms-using-the-publish-option)
+* [Option Veröffentlichen](#publish-forms-using-the-publish-option)
 * [Veröffentlichungsoption verwalten](#publish-forms-using-the-manage-publication-option)
 
 ## Zu beachtende Punkte
 
 * Nur Mitglieder der `forms-users` können die Option **Veröffentlichung verwalten** verwenden, um die Formulare zu veröffentlichen.
-* Änderungen an Formularen oder Ordnern in Experience Manager Forms werden erst dann in der **Publish**-Instanz angezeigt, wenn sie erneut veröffentlicht wurden. Dadurch wird sichergestellt, dass laufende Aktualisierungen in der **Publish-Instanz nicht verfügbar**. Nur von einem Administrator explizit veröffentlichte Änderungen werden in der **Publish**-Instanz übernommen.
+* Änderungen an Formularen oder Ordnern in Experience Manager Forms werden erst dann in der **Veröffentlichungsinstanz** angezeigt, wenn sie erneut veröffentlicht wurden. Dadurch wird sichergestellt, dass laufende Aktualisierungen in der Veröffentlichungsinstanz nicht **werden**. Nur von einem Administrator explizit veröffentlichte Änderungen werden in der **Publish**-Instanz übernommen.
 
-## Publish Forms mit der Option &quot;Publish&quot;
+## Veröffentlichen von Formularen mit der Option Veröffentlichen
 
-Mit der Option **Publish** können Sie ein Formular sofort veröffentlichen. So veröffentlichen Sie ein Experience Manager-Formular mithilfe der Schaltfläche **Publish** in der Symbolleiste. So veröffentlichen Sie Formulare mit der Option Publish :
+Mit **Option „Veröffentlichen** können Sie ein Formular sofort veröffentlichen. So veröffentlichen Sie ein Experience Manager-Formular mithilfe **Schaltfläche Veröffentlichen** der Symbolleiste. So veröffentlichen Sie Formulare mit der Option Veröffentlichen :
 
 1. Navigieren Sie in der Experience Manager Forms-Konsole zum übergeordneten Ordner und wählen Sie ein Formular aus, das Sie veröffentlichen möchten.
-1. Klicken Sie auf die Option **Publish** in der Symbolleiste, um sich alle Referenz-Assets anzusehen, die mit dem Formular veröffentlicht werden sollen.
+1. Klicken Sie auf **Option** Veröffentlichen“ auf der Symbolleiste, um alle Referenz-Assets anzuzeigen, die mit dem Formular veröffentlicht werden sollen.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
-   ![Publish und Formular zum Rückgängigmachen der Veröffentlichung](/help/edge/docs/forms/assets/publish-form-option.png)
+   ![Formular veröffentlichen und Veröffentlichung aufheben](/help/edge/docs/forms/assets/publish-form-option.png)
 
    Nachdem das Formular und die zugehörigen Assets erfolgreich veröffentlicht wurden, wird **Dialogfeld** Erfolg“ angezeigt.
 1. Klicken Sie auf **Schließen**.
 
-   ![Dialogfeld „Erfolg“](/help/forms/assets/publish-success.png)
+   ![Dialogfeld „Erfolg“](/help/forms/assets/publish-success1.png)
 
 ### Veröffentlichung des Formulars aufheben
 
-Nach der erfolgreichen Veröffentlichung des Formulars mit der Option **Publish** und den zugehörigen Assets können Sie die Veröffentlichung sogar aufheben, indem Sie die Schaltfläche **[!UICONTROL Veröffentlichung aufheben]** in der Symbolleiste verwenden. So heben Sie die Veröffentlichung eines Formulars auf:
+Nach der erfolgreichen Veröffentlichung des Formulars mit der Option **Veröffentlichen** und den zugehörigen Assets können Sie die Veröffentlichung sogar aufheben, indem Sie die Schaltfläche **[!UICONTROL Veröffentlichung aufheben]** in der Symbolleiste verwenden. So heben Sie die Veröffentlichung eines Formulars auf:
 
 1. Um die Veröffentlichung des Formulars und der zugehörigen Assets rückgängig zu machen, wählen Sie das Formular aus und klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]** auf der Symbolleiste
 
@@ -58,7 +58,7 @@ Nach der erfolgreichen Veröffentlichung des Formulars mit der Option **Publish*
 
    ![Veröffentlichung erfolgreich aufgehoben](/help/forms/assets/unpublishing-start.png)
 
-## Publish-Formulare mit der Option Veröffentlichung verwalten
+## Veröffentlichen von Formularen mit der Option Veröffentlichung verwalten
 
 Mit Veröffentlichung verwalten können Sie Inhalte am ausgewählten Ziel veröffentlichen oder die Veröffentlichung rückgängig machen, Inhalte aus dem gesamten `forms&documents` Ordner zur Veröffentlichungsliste hinzufügen, Verweise zur Veröffentlichung auswählen und die Veröffentlichung für ein späteres Datum oder eine spätere Uhrzeit planen.  So veröffentlichen Sie Formulare mit der Option **Veröffentlichung verwalten**:
 
@@ -75,23 +75,23 @@ Mit Veröffentlichung verwalten können Sie Inhalte am ausgewählten Ziel veröf
 
    * **Aktionen**
 
-      * **Publish**: Publish-Formulare für das ausgewählte Ziel
+      * **Veröffentlichen**: Veröffentlichen von Formularen im ausgewählten Ziel
       * **Veröffentlichung aufheben**: Veröffentlichung von Formularen im Ziel aufheben
 
    * **Ziel**
 
-      * **Publish**: Publish-Instanz von Publish Forms an Experience Manager Forms (AEM).
-      * **Vorschau**: Vorschau für Publish Forms in Experience Manager Forms (AEM).
+      * **Veröffentlichen**: Veröffentlichen von Formularen in der Veröffentlichungsinstanz von Experience Manager Forms (AEM).
+      * **Vorschau**: Veröffentlichen von Formularen in der Vorschauinstanz von Experience Manager Forms (AEM).
 
    * **Zeitplan**
 
-      * **Jetzt**: Publish-Formulare sofort
-      * **Später**: Publish-Formulare basierend auf dem **Aktivierungsdatum** oder der Uhrzeit
+      * **Jetzt**: Formulare sofort veröffentlichen
+      * **Später**: Veröffentlichen von Formularen basierend auf dem **Aktivierungsdatum** oder der Uhrzeit
 
 1. Klicken Sie **Weiter** um fortzufahren.
 1. (Optional) Verwenden Sie auf der Registerkarte **Umfang** die Option [Inhalt hinzufügen](#add-content), um weitere Inhalte für die Veröffentlichung hinzuzufügen. Sie können beispielsweise weitere Forms- oder Datensatzdokumentdateien hinzufügen.
    ![Registerkarte „Umfang“](/help/forms/assets/scope-tab.png)
-1. Klicken Sie auf **[!UICONTROL Publish]**, um die Formulare und zugehörigen Assets zu veröffentlichen. Daraufhin wird die Erfolgsmeldung angezeigt.
+1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**, um die Formulare und zugehörigen Assets zu veröffentlichen. Daraufhin wird die Erfolgsmeldung angezeigt.
    ![Erfolgreiche Nachricht veröffentlichen](/help/forms/assets/publish-successful.png)
 
 ### Inhalt hinzufügen
@@ -143,7 +143,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         * -->
 
 
-### Publish oder Rückgängigmachen der Veröffentlichung eines Formulars
+### Späteres Veröffentlichen eines Formulars oder Rückgängigmachen der Veröffentlichung
 
 Mit der Option „Später veröffentlichen“ oder „Veröffentlichung aufheben“ können Sie Formulare nicht nur zu einem späteren Zeitpunkt veröffentlichen, sondern auch einen Workflow konfigurieren. Die Formulare werden nach Abschluss des Workflows veröffentlicht oder ihre Veröffentlichung wird rückgängig gemacht.
 
@@ -154,10 +154,10 @@ So planen Sie die Veröffentlichung oder das Rückgängigmachen der Veröffentli
 
    ![Veröffentlichung verwalten](/help/forms/assets/manage-publication.png)
 
-1. Klicken Sie auf **Publish** oder **Veröffentlichung aufheben** in **[!UICONTROL Action]**.
+1. Klicken Sie **Veröffentlichen** oder **Veröffentlichung aufheben** in **[!UICONTROL Aktion]**.
 1. Wählen Sie das **[!UICONTROL Ziel]** aus, in dem Sie die Veröffentlichung des Inhalts vornehmen oder aufheben möchten.
    * **Vorschau**: Verwenden Sie die Option **Vorschau** zum Veröffentlichen oder Rückgängigmachen der Veröffentlichung in einer Experience Manager Forms-Vorschauumgebung. Die Experience Manager Forms-Vorschauumgebungen werden zum Testen unter „Entwicklungsformulare“ verwendet.
-   * **Publish**: Verwenden Sie die Experience Manager Forms-**Publish**-Option, um das Formular an die Experience Manager Forms-Veröffentlichungsumgebung zu senden, nachdem das Formular für die Verwendung in einer Produktionsumgebung bereit ist.
+   * **Veröffentlichen** **: Verwenden Sie die Option „Veröffentlichen** von Experience Manager Forms, um das Formular an die Experience Manager Forms-Veröffentlichungsumgebung zu senden, nachdem das Formular zur Verwendung in einer Produktionsumgebung bereit ist.
 
 1. Wählen Sie **[!UICONTROL Später]** unter **Planung** aus.
 
@@ -169,7 +169,7 @@ So planen Sie die Veröffentlichung oder das Rückgängigmachen der Veröffentli
    ![Veröffentlichung verwalten - Inhalte später hinzufügen](/help/forms/assets/publish-later-add-content.png)
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie auf **Registerkarte** einen **[!UICONTROL Workflow-Titel]** an.
-1. Klicken Sie auf **[!UICONTROL Publish Later]**.
+1. Klicken Sie **[!UICONTROL Später veröffentlichen]**.
 
    ![Verwalten des Veröffentlichungs-Workflows](/help/forms/assets/manage-publication-workflows.png)
 
