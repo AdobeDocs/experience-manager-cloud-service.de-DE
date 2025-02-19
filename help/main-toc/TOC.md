@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e4398678566b53412ae0aeea0a18cd0172268ec1
 workflow-type: tm+mt
 source-wordcount: '6083'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -863,9 +863,9 @@ ht-degree: 98%
          + [Erstellen und Verwalten von Überprüfungen eines adaptiven Formulars](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Adaptive Formulare – Suchbegriffe](/help/forms/adaptive-forms-keywords.md)
       + [Formularvorschau](/help/forms/previewing-forms.md)
-   + Interaktive {#interactive-communocation}
+   + Interaktive Kommunikation {#interactive-communocation}
       + [Einführung in die interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
-      + [Erstellen der ersten interaktiven Kommunikation](/help/forms/create-your-first-communication.md)
+      + [Erstellen Ihrer ersten interaktiven Kommunikation](/help/forms/create-your-first-communication.md)
       + [Häufig gestellte Fragen](/help/forms/interactive-communications-faq.md)
    + Formularzentrierte Workflows {#create-form-centric-workflows}
       + [Einführung in den formularzentrierten Workflow](/help/forms/aem-forms-workflow.md)

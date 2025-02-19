@@ -57,7 +57,7 @@ Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen S
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren XFA-Vorlagen (XDP-Dateien) angezeigt. Wählen Sie die entsprechende Datei aus. Stellen Sie außerdem sicher, dass dasselbe Schema (Datenschema) für das adaptive Formular und die ausgewählte XFA-Vorlage (XDP-Datei) verwendet wird.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für das Datensatzdokument verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
+Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für den Nachweis verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
 
 ## Erzeugen eines AcroForm-basierten Datensatzdokuments {#generate-an-Acroform-based-document-of-record}
 
@@ -70,7 +70,7 @@ Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führ
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren Acrobat-PDF (AcroForm) angezeigt. Wählen Sie die entsprechende Datei aus.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage für das Datensatzdokument verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
+Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage für den Nachweis verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
 
 ## Automatisches Generieren eines Datensatzdokuments {#auto-generate-a-document-of-record}
 

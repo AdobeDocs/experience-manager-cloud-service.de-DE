@@ -1,8 +1,8 @@
 ---
 source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 97%
+source-wordcount: '1347'
+ht-degree: 99%
 
 ---
 # Snippets {#snippets}
@@ -165,7 +165,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
 >
 >**Cloud Manager-IP-Zulassungsliste**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,52.254.107.0/28,52.254.107.32/28,40.70.154.136/29,52.254.106.160/28,20.14.241.153,52.254.107.16/28,52.254.106.208/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Hinzufügen von Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#add-cm-allowlist-frontend-pipeline}
@@ -187,12 +187,12 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!IMPORTANT]
 >
->Der universelle Editor ist nicht kompatibel mit [IP-Zulassungslisten ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Der universelle Editor ist nicht mit [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) kompatibel.
 >
 >Wenn Sie den universellen Editor verwenden möchten, müssen Sie entweder:
 >
 >* Die IP-Zulassungslisten nicht aktivieren.
->* [Führen Sie Ihre eigene Instanz des universellen Editor-Dienstes ](/help/implementing/universal-editor/local-dev.md).
+>* [Oder Ihre eigene Instanz des universellen Editor-Dienstes ausführen](/help/implementing/universal-editor/local-dev.md).
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 

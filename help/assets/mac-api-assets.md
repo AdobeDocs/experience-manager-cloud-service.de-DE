@@ -8,7 +8,7 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
 source-wordcount: '1709'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 81%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-## Erste Schritte mit der AEM [!DNL Assets] der HTTP-API {#overview}
+## Erste Schritte mit der AEM [!DNL Assets]-HTTP-API {#overview}
 
-Die AEM [!DNL Assets] HTTP-API ermöglicht CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) für digitale Assets über eine REST-Schnittstelle unter /`api/assets`. Diese Vorgänge gelten für Asset-Metadaten, Ausgabedarstellungen und Kommentare. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
+Die AEM [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) für digitale Assets über eine REST-Schnittstelle, die unter /`api/assets` verfügbar ist. Diese Vorgänge gelten für Asset-Metadaten, Ausgabedarstellungen und Kommentare. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-
 
 ## Verwalten von Inhaltsfragmenten {#content-fragments}
 
-Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein strukturiertes Asset, das Text, Zahlen und Daten speichert. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
+Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein strukturiertes Asset, das Text, Zahlen und Datumsangaben speichert. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
 Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -55,7 +55,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 
 ## Prüfen des Datenmodells {#data-model}
 
-Die [!DNL Assets]-HTTP-API stellt in erster Linie zwei Elemente bereit: Ordner und Standard-Assets. Sie enthält auch detaillierte Elemente für benutzerdefinierte Datenmodelle, die in Inhaltsfragmenten verwendet werden. Weitere Informationen finden Sie unter Inhaltsfragmentdatenmodelle. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
+Die [!DNL Assets]-HTTP-API legt in erster Linie zwei Elemente frei: Ordner und Standard-Assets. Sie stellt zudem ausführlichere Elemente für benutzerdefinierte Datenmodelle bereit, die in Inhaltsfragmenten verwendet werden. Weitere Informationen finden Sie unter „Datenmodelle für Inhaltsfragmente“. Weitere Informationen finden Sie unter [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 >[!NOTE]
 >
@@ -80,16 +80,16 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner 
 
 * `self`: Ein Link zum Ordner selbst.
 * `parent`: Ein Link zum übergeordneten Ordner.
-* `thumbnail` (Optional): Ein Link zu einem Ordner-Miniaturbild.
+* `thumbnail` (Optional): Ein Link zu einem Ordnerminiaturbild.
 
 ### Verwalten von Assets {#assets}
 
 In [!DNL Experience Manager] enthalten Assets die folgenden Elemente:
 
 * **Eigenschaften und Metadaten** Beschreibende Informationen zum Asset.
-* **Binärdatei:** die ursprünglich hochgeladene Datei.
-* **Ausgabedarstellungen:** mehrere konfigurierte Ausgabedarstellungen (z. B. Bilder in verschiedenen Größen, verschiedene Videokodierungen oder extrahierte Seiten aus PDF-/Adobe InDesign-Dateien).
-* **Kommentare (optional):** von Benutzern bereitgestellte Anmerkungen.
+* **Binärdatei:** Die ursprünglich hochgeladene Datei.
+* **Ausgabedarstellungen:** Mehrere konfigurierte Ausgabedarstellungen (z. B. Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder aus PDF-/Adobe InDesign-Dateien extrahierte Seiten).
+* **Kommentare (optional):** Anmerkungen von Benutzenden.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -181,7 +181,7 @@ Informationen zum Aktualisieren von Asset-Binärdateien finden Sie unter [Asset-
 
 ## Aktualisieren von Metadaten eines Assets {#update-asset-metadata}
 
-Dieser Vorgang aktualisiert die Metadaten des Assets. Beim Aktualisieren von Eigenschaften im `dc:`-Namespace wird die entsprechende `jcr:` aktualisiert. Die API synchronisiert jedoch nicht die Eigenschaften unter den beiden Namespaces.
+Bei diesem Vorgang werden die Metadaten des Assets aktualisiert. Beim Aktualisieren von Eigenschaften im `dc:`-Namespace wird die entsprechende `jcr:`-Eigenschaft aktualisiert. Die API synchronisiert die Eigenschaften unter den beiden Namespaces jedoch nicht.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -198,7 +198,7 @@ Erstellt eine neue Ausgabedarstellung für ein Asset. Wenn der Name nicht als An
 
 **Parameter**: Die Parameter sind:
 
-`name`: für den Namen der Ausgabedarstellung.
+`name`: Für den Ausgabedarstellungsnamen.
 `file`: Die Binärdatei für die Ausgabedarstellung als Referenz.
 
 **Anfrage**
@@ -295,7 +295,7 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 ## Befolgen Sie die Best Practices und beachten Sie Einschränkungen {#tips-limitations}
 
-* Assets und die zugehörigen Ausgabedarstellungen sind nicht mehr über die [!DNL Assets]-Web-Oberfläche und die HTTP-API verfügbar, wenn die [!UICONTROL Ausschaltzeit] erreicht ist. Die API gibt einen 404-Fehler zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft liegt oder [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
+* Assets und die zugehörigen Ausgabedarstellungen sind nicht mehr über die [!DNL Assets]-Web-Benutzeroberfläche und die HTTP-API verfügbar, wenn die [!UICONTROL Ausschaltzeit] erreicht ist. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
 * Die Assets-HTTP-API gibt nur eine Teilmenge von Metadaten zurück. Die Namespaces sind fest kodiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
 

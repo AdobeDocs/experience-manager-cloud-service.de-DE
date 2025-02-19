@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 52%
+ht-degree: 81%
 
 ---
 
@@ -36,9 +36,9 @@ Sie können die zulässigen Komponenten pro Container im universellen Editor mit
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
-Obwohl eine oder mehrere Komponenten für Ihre Autorinnen und Autoren allgemein verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten im Bedienfeld Eigenschaften ausblenden, indem Sie den [Feldern des Komponentenmodells“ ein `condition`-Attribut ](/help/implementing/universal-editor/field-types.md#fields).
+Obwohl eine oder mehrere Komponenten für Ihre Autorinnen und Autoren allgemein verfügbar sein können, kann es in bestimmten Situationen vorkommen, dass dies nicht sinnvoll ist. In solchen Fällen können Sie Komponenten im Bedienfeld „Eigenschaften“ ausblenden, indem Sie den [Feldern des Komponentenmodells](/help/implementing/universal-editor/field-types.md#fields) ein `condition`-Attribut hinzufügen.
 
-Bedingungen können mithilfe des JsonLogic[Schemas definiert ](https://jsonlogic.com/). Wenn die Bedingung erfüllt ist, wird das Feld angezeigt. Wenn die Bedingung nicht zutrifft, wird das Feld ausgeblendet.
+Bedingungen können mithilfe des [JsonLogic-Schemas](https://jsonlogic.com/) definiert werden. Wenn die Bedingung zutrifft, wird das Feld angezeigt. Wenn die Bedingung nicht zutrifft, wird das Feld ausgeblendet.
 
 >[!BEGINTABS]
 
@@ -77,9 +77,9 @@ Bedingungen können mithilfe des JsonLogic[Schemas definiert ](https://jsonlogic
 
 ## Benutzerdefinierte Vorschau-URLs {#custom-preview-urls}
 
-Sie können eine benutzerdefinierte Vorschau-URL über eine `urn:adobe:aue:config:preview` Meta-Konfiguration angeben, die geöffnet wird, wenn Sie auf die Schaltfläche **Seite öffnen** in der Symbolleiste [Editor oben rechts](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) klicken.
+Sie können eine benutzerdefinierte Vorschau-URL über eine Meta-Konfiguration `urn:adobe:aue:config:preview` angeben, die beim Klicken auf die Schaltfläche **Seite öffnen** in der [oberen rechten Symbolleiste des Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) geöffnet wird.
 
-Dies ist besonders für Programme mit bestimmten Vorschauanforderungen nützlich, z. B. solche, [ Edge Delivery Services mit WYSIWYG Authoring ](/help/edge/wysiwyg-authoring/authoring.md).
+Dies ist besonders nützlich für Anwendungen mit bestimmten Vorschauanforderungen, z. B. bei der [Verwendung von Edge Delivery Services mit WYSIWYG-Authoring](/help/edge/wysiwyg-authoring/authoring.md).
 
 Fügen Sie dazu einfach die gewünschte Vorschau-URL wie im folgenden Beispiel in ein Meta-Tag der instrumentierten App ein.
 

@@ -8,13 +8,13 @@ solution: Experience Manager Sites
 source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
-Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) die als Grundlage für Ihren Headless-Content dienen.
+Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) und dienen als Grundlage für Ihre Headless-Inhalte.
 
 So verwenden Sie Inhaltsfragmentmodelle:
 

@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie m
 
 >[!TIP]
 >
->Wenn Sie lieber direkt in ein Beispiel eintauchen möchten, können Sie die Beispielanwendung [Universeller Editor“ auf GitHub ](https://github.com/adobe/universal-editor-sample-editable-app).
+>Wenn Sie lieber direkt in ein Beispiel eintauchen möchten, können Sie die [Beispielanwendung des universellen Editors auf GitHub](https://github.com/adobe/universal-editor-sample-editable-app) ansehen.
 
 Obwohl der universelle Editor Inhalte aus jeder Quelle bearbeiten kann, verwendet dieses Dokument eine AEM-App als Beispiel. Dieses Dokument führt Sie durch diese Schritte.
 
@@ -122,7 +122,7 @@ Wenn Sie nur bestimmte Erweiterungen für eine Seite aktivieren möchten, könne
 
 ## Definieren, für welche Inhaltspfade oder `sling:resourceType`s der universelle Editor geöffnet werden soll. (Optional) {#content-paths}
 
-Wenn Sie über ein vorhandenes AEM-Projekt mit [dem Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verfügen, werden die Seiten beim Bearbeiten von Seiten durch Inhaltsautoren automatisch mit dem Seiteneditor geöffnet. Sie können festlegen, welchen Editor AEM basierend auf den Inhaltspfaden oder dem `sling:resourceType` öffnen soll. Dadurch profitieren Ihre Autorinnen und Autoren von einem nahtlosen Erlebnis, unabhängig davon, welcher Editor für die ausgewählten Inhalte erforderlich ist.
+Wenn Inhaltsautorinnen und -autoren bei einem vorhandenen AEM-Projekt, bei dem [der Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verwendet wird, Seiten bearbeiten, werden die Seiten automatisch mit dem Seiteneditor geöffnet. Sie können festlegen, welchen Editor AEM basierend auf den Inhaltspfaden oder dem `sling:resourceType` öffnen soll. Dadurch profitieren Ihre Autorinnen und Autoren von einem nahtlosen Erlebnis, unabhängig davon, welcher Editor für die ausgewählten Inhalte erforderlich ist.
 
 1. Wenden Sie sich zur Nutzung dieser Konfigurationsfunktion an die Adobe-Kundenunterstützung, um den Zugriff auf den universellen Editor-URL-Service für Ihr Programm zu aktivieren.
 

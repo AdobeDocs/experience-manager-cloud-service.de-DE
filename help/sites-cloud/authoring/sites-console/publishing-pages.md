@@ -8,7 +8,7 @@ role: User
 source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
 workflow-type: tm+mt
 source-wordcount: '1926'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -65,7 +65,7 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 
 ### Veröffentlichungen im Seiteneditor {#publishing-from-the-page-editor}
 
-Wenn Sie eine Seite im [Seiteneditor) bearbeiten](/help/sites-cloud/authoring/page-editor/introduction.md) kann sie direkt im Editor veröffentlicht werden.
+Wenn Sie eine Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) bearbeiten, kann sie direkt im Editor veröffentlicht werden.
 
 1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen, und danach die Option **Seite veröffentlichen**.
 

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -182,7 +182,7 @@ Wenn „AEM-Versionsaktualisierungen“ aktiv ist (d. h. Aktualisierungen werden
 
 In seltenen Fällen kann es in der für die Aufnahme vorgesehenen Cloud Service-Zielumgebung zu unerwarteten Problemen kommen. Die Aufnahme schlägt fehl, da sich die Umgebung nicht im erwarteten Bereitschaftszustand befindet. Überprüfen Sie das Aufnahmeprotokoll, um weitere Details zum Fehlerstatus anzuzeigen.
 
-Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie einige Minuten, bevor Sie einen weiteren Aufnahmeversuch unternehmen. Wenn das Problem weiterhin besteht, wenden Sie sich mit dem aufgetretenen Fehlerstatus an den Support.
+Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie einige Minuten, bevor Sie einen weiteren Aufnahmeversuch unternehmen. Wenn das Problem weiterhin besteht, wenden Sie sich unter Angabe des Fehlerstatus an den Kunden-Support.
 
 ### Fehler bei Auffüllaufnahme aufgrund einer Verletzung der Eindeutigkeitsbeschränkung {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
