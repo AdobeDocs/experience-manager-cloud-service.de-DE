@@ -4,9 +4,9 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1499'
 ht-degree: 86%
 
 ---
@@ -49,18 +49,7 @@ Sie können ein Modell auf zwei Arten mit einer Komponente verknüpfen: mit der 
 
 Dies ist die bevorzugte Methode zum Verknüpfen des Modells mit der Komponente. Auf diese Weise können Sie den Link zentral in der Komponentendefinition verwalten und Komponenten über Container ziehen.
 
-Fügen Sie einfach die `model`-Eigenschaft in die `template`-Direktive in die Datei „component-definition.json“ ein.
-
-```json
-...
-"template":{
-                  "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  ...
-           }
-...
-```
+Schließen Sie einfach die `model`-Eigenschaft im Komponentenobjekt in das `components`-Array in der `component-definition.json` ein.
 
 Weitere Informationen finden Sie im Dokument [Komponentendefinition.](/help/implementing/universal-editor/component-definition.md)
 
