@@ -3,7 +3,8 @@ title: Konfigurieren von vorkonfigurierten Microsoft Dynamics 365-Formulardatenm
 description: Erfahren Sie, wie Sie Microsoft Dynamics 365 mit Adaptive Forms integrieren.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 16%
@@ -51,6 +52,7 @@ Erstellen Sie ein Konto im **Power Platform Admin Center**, um:
    * Aktivieren von Microsoft Dynamics 365-Anwendungen
 
    Gehen Sie wie im Video beschrieben vor, um ein Konto im Power Platform Admin Center zu erstellen. In diesem Video wurde zu Demonstrationszwecken ein Testkonto erstellt.
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Registrieren einer Anwendung für [!DNL Microsoft® Dynamics 365] in Azure Active Directory**

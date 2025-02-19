@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 5%
@@ -157,6 +157,7 @@ Die benutzerdefinierte Komponente enthält ein Komponentenmodell, das angibt, we
    }
    ]
    ```
+
    >[!NOTE]
    >
    > Um dem Dialogfeld **Eigenschaft** einer benutzerdefinierten Komponente ein neues Feld hinzuzufügen, halten Sie sich an das [definierte Schema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).

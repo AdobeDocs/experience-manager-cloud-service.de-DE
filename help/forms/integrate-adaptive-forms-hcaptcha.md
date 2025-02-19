@@ -6,7 +6,7 @@ keywords: CAPTCHA&reg; -Service, Adaptive Forms, CAPTCHA-Herausforderung, Bot-Ve
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
-source-git-commit: 36832b02ac12c1ade70fb81b2cb2c267b5eebdfe
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 33%
@@ -54,13 +54,13 @@ Um hCAPTCHA® mit AEM Forms zu konfigurieren, müssen Sie den [hCAPTCHA®-SiteKe
          1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Konfigurieren des Cloud-Service:
-   1. Wechseln Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** und wählen Sie **[!UICONTROL hCaptcha®]**.
+   1. Wechseln Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® in der Benutzeroberfläche](assets/hcaptcha-in-ui.png)
    1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
       ![Konfiguration hCAPTCHA®](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für den hCAPTCHA®-Service [erhalten in PREREQUISITE](#prerequisite). Wählen Sie **[!UICONTROL Erstellen]** aus.
 
-      ![Konfigurieren Sie den Cloud Service für die Verbindung Ihrer AEM Forms-Umgebung mit hCaptcha®](assets/create-hcaptcha-config.png)
+      ![Konfigurieren Sie die Cloud Service, um Ihre AEM Forms-Umgebung mit hCaptcha zu verbinden®](assets/create-hcaptcha-config.png)
 
 >[!NOTE]
 > Benutzende müssen die Client[seitige JavaScript-Validierungs-URL ](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht ändern, da sie bereits für die hCAPTCHA®-Validierung vorausgefüllt sind. Für einige Länder können die Endpunkte unterschiedlich sein. Weitere Informationen finden Sie in [hCaptcha® ](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) FAQs).
@@ -92,8 +92,10 @@ Sobald der CAPTCHA-Dienst konfiguriert ist, kann er in einem adaptiven Formular 
       * Bei einer Benutzeraktion.
    * **[!UICONTROL CAPTCHA-]:** Wählen Sie Ihren CAPTCHA-Service aus, hier wählen Sie den hCAPTCHA®-Service aus.
    * **[!UICONTROL CAPTCHA-]:** Wählen Sie eine Cloud-Konfiguration aus, die für hCAPTCHA® konfiguriert ist.
+
      >[!NOTE]
-     >Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit hCAPTCHA®](#connect-your-forms-environment-with-hcaptcha-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem hCAPTCHA®-Service verbindet.
+     >
+     > Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit hCAPTCHA®](#connect-your-forms-environment-with-hcaptcha-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem hCAPTCHA®-Service verbindet.
 
    * **Fehlermeldung:** Geben Sie die Fehlermeldung an, die Benutzern angezeigt werden soll, wenn die CAPTCHA-Übermittlung fehlschlägt.
    * **CAPTCHA-Größe** Sie wählen die Anzeigegröße des Dialogfelds „hCAPTCHA®-Herausforderung“ aus. Verwenden Sie die **[!UICONTROL Compact]**-Option zum Anzeigen einer kleinen Größe und die **[!UICONTROL Normal]**-Option zum Anzeigen eines relativ großen hCAPTCHA®-Dialogfelds oder **[!UICONTROL Unsichtbar]** zum Überprüfen von hCAPTCHA®, ohne das Kontrollkästchen-Widget auf der Benutzeroberfläche explizit zu rendern.

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 99%
+source-wordcount: '1705'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 99%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=de) |
-| AEM as a Cloud Service | Dieser Artikel |
+| AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM as a Cloud Service (Foundation-Komponenten) | Dieser Artikel |
 
 Ein adaptives Formular stellt mehrere vordefinierte Sende-Aktionen zur Verfügung. Eine Sende-Aktion gibt Details zu den Aktionen an, die mit den über das adaptive Formular erfassten Daten durchgeführt werden sollen. Beispielsweise das Senden von Daten in einer E-Mail.
 
@@ -108,25 +109,29 @@ Bei einer Sende-Aktion handelt es sich um ein sling:Folder-Objekt, das Folgendes
 
 ## Erstellen einer benutzerdefinierten Sende-Aktion {#creating-a-custom-submit-action}
 
+>[!NOTE]
+>
+> Informationen zum Erstellen einer benutzerdefinierten Übermittlungsaktion für Kernkomponenten finden Sie unter [Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Forms (Kernkomponenten)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Sende-Aktion zu erstellen, die die Daten im CRX-Repository speichert und Ihnen anschließend eine E-Mail sendet. Das adaptive Formular enthält die vordefinierte Sende-Aktion „Inhalt speichern“ (veraltet), mit der die Daten im CRX-Repository gespeichert werden. Zudem stellt AEM eine [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole konfigurieren. Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 
 1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, falls er noch nicht vorhanden ist.
 
    ![Screenshot zur Erstellung eines Knotens mit der Eigenschaft „sling:Folder“](assets/step1.png)
 
-1. **Füllen Sie die erforderlichen Konfigurationsfelder aus.**
+2. **Füllen Sie die erforderlichen Konfigurationsfelder aus.**
 
    Fügen Sie die Konfiguration hinzu, die für die Speichern-Aktion erforderlich ist. Kopieren Sie den Knoten **cq:dialog** der Speichern-Aktion aus dem Ordner /libs/fd/af/components/guidesubmittype/store in den Ordner „action“ unter /apps/custom_submit_action/store_and_email.
 
    ![Screenshot zum Kopieren des Knotens „dialog“ in den Ordner „action“](assets/step2.png)
 
-1. **Geben Sie Konfigurationsfelder an, um den Autor zur E-Mail-Konfiguration aufzufordern.**
+3. **Geben Sie Konfigurationsfelder an, um den Autor zur E-Mail-Konfiguration aufzufordern.**
 
    Das adaptive Formular enthält auch eine E-Mail-Aktion, die E-Mails an Benutzer sendet. Passen Sie diese Aktion basierend auf Ihren Anforderungen an. Navigieren Sie zu /libs/fd/af/components/guidesubmittype/email/dialog. Kopieren Sie die Knoten aus dem Knoten „cq:dialog“ in den Knoten „cq:dialog“ Ihrer Sende-Aktion (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Anpassen der E-Mail-Aktion](assets/step3.png)
 
-1. **Machen Sie die Aktion im Dialogfeld für die Bearbeitung adaptiver Formulare verfügbar.**
+4. **Machen Sie die Aktion im Dialogfeld für die Bearbeitung adaptiver Formulare verfügbar.**
 
    Fügen Sie im Knoten „store_and_email“ die folgenden Eigenschaften ein:
 
@@ -138,11 +143,11 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Sende-Aktion 
 
    * **submitService** vom Typ **String** mit dem Wert **Store and Email**. Weitere Informationen finden Sie unter [Planen der Übermittlung adaptiver Formulare für benutzerdefinierte Aktionen](#schedule-adaptive-form-submission).
 
-1. Öffnen Sie ein beliebiges adaptives Formular. Klicken Sie auf die Schaltfläche **Bearbeiten** neben **Start**, um das Dialogfeld **Bearbeiten** des Containers für adaptive Formulare zu öffnen. Die neue Aktion wird auf der Registerkarte **Aktionen übermitteln** angezeigt. Wenn Sie die Aktion **Store and Email** auswählen, wird die im Knoten „dialog“ hinzugefügte Konfiguration angezeigt.
+5. Öffnen Sie ein beliebiges adaptives Formular. Klicken Sie auf die Schaltfläche **Bearbeiten** neben **Start**, um das Dialogfeld **Bearbeiten** des Containers für adaptive Formulare zu öffnen. Die neue Aktion wird auf der Registerkarte **Aktionen übermitteln** angezeigt. Wenn Sie die Aktion **Store and Email** auswählen, wird die im Knoten „dialog“ hinzugefügte Konfiguration angezeigt.
 
    ![Dialogfeld mit Konfiguration der Sende-Aktion](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **Verwenden Sie die Aktion, um eine Aufgabe durchzuführen.**
+6. **Verwenden Sie die Aktion, um eine Aufgabe durchzuführen.**
 
    Fügen Sie der Aktion das Skript „post.POST.jsp“ hinzu. (/apps/custom_submit_action/store_and_mail/).
 

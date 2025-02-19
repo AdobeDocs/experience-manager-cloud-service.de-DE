@@ -1,12 +1,12 @@
 ---
-title: Verwenden von hCAPTCHA&reg; in Kernkomponenten für adaptive AEM-Formulare
+title: Verwenden von hCAPTCHA&reg; in Kernkomponenten für adaptive Formulare in AEM
 description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimieren. Schrittweise Anleitung enthalten!
 topic-tags: Adaptive Forms, author
 keywords: CAPTCHA&reg; -Service, Adaptive Forms, CAPTCHA-Herausforderung, Bot-Prävention, Kernkomponenten, Sicherheit bei der Formularübermittlung, Spam-Abwehr bei Formularen
 feature: Adaptive Forms, Core Components
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 42%
@@ -56,13 +56,13 @@ Um AEM Forms mit dem hCAPTCHA®-Service zu integrieren, führen Sie die folgende
          1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Konfigurieren des Cloud-Service:
-   1. Wechseln Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** und wählen Sie **[!UICONTROL hCaptcha®]**.
+   1. Wechseln Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® in der Benutzeroberfläche](assets/hcaptcha-in-ui.png)
    1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
       ![Konfiguration hCAPTCHA®](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für den hCAPTCHA®-Service [erhalten in PREREQUISITE](#prerequisite) an. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
-      ![Konfigurieren Sie den Cloud Service für die Verbindung Ihrer AEM Forms-Umgebung mit hCaptcha®](assets/create-hcaptcha-config.png)
+      ![Konfigurieren Sie die Cloud Service, um Ihre AEM Forms-Umgebung mit hCaptcha zu verbinden®](assets/create-hcaptcha-config.png)
 
    >[!NOTE]
    > Benutzende müssen die Client[seitige JavaScript-Validierungs-URL ](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht ändern, da sie bereits für die hCAPTCHA®-Validierung vorausgefüllt sind.
@@ -91,9 +91,11 @@ Um AEM Forms mit dem hCAPTCHA®-Service zu integrieren, führen Sie die folgende
    * **CAPTCHA-Größe** Sie können die Anzeigegröße des Dialogfelds für die hCAPTCHA®-Abfrage auswählen. Verwenden Sie die Option **[!UICONTROL Kompakt]** zur Anzeige eines kleinen und die Option **[!UICONTROL Normal]** zur Anzeige eines relativ großen Dialogfelds für den hCaptcha®-Test.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL Validierungsmeldung]:** Geben Sie bei der Formularübermittlung eine Validierungsmeldung für Ihre CAPTCHA-Validierung ein.
    * **[!UICONTROL Meldung zur Skriptvalidierung]**: Mit dieser Option können Sie eine Meldung eingeben, die angezeigt werden soll, wenn die Skriptvalidierung fehlschlägt.
+
      >[!NOTE]
      >Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit hCAPTCHA®](#connect-your-forms-environment-with-hcaptcha-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem hCAPTCHA®-Service verbindet.
-     <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
+
+   <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
 
 1. Wählen Sie **[!UICONTROL Fertig]**.
 

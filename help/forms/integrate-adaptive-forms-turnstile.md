@@ -1,11 +1,11 @@
 ---
-title: Verwenden von Drehkreuz in einem adaptiven AEM-Formular
+title: Verwenden von Drehkreuz in einem adaptiven Formular von AEM
 description: Verbessern Sie die Formularsicherheit mit dem Drehkreuz-Service mühelos. Schrittweise Anleitung enthalten!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 36832b02ac12c1ade70fb81b2cb2c267b5eebdfe
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 26%
@@ -51,7 +51,7 @@ Um das Drehkreuz für AEM Forms zu konfigurieren, müssen Sie den [Standortschl�
          1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Konfigurieren des Cloud-Service:
-   1. Wechseln Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** und wählen Sie **[!UICONTROL Drehkreuz]**.
+   1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL Drehkreuz]**.
       ![Drehkreuz in der Benutzeroberfläche](assets/turnstile-in-ui.png)
    1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
       ![Konfigurations-Drehkreuz](assets/config-hcaptcha.png)
@@ -89,8 +89,10 @@ Sobald der Service „Drehkreuz-CAPTCHA“ konfiguriert ist, kann er in einem ad
       * Bei einer Benutzeraktion.
    * **[!UICONTROL CAPTCHA-]:** Wählen Sie Ihren CAPTCHA-Dienst aus, hier wählen Sie Cloudfare Turnstile CAPTCHA-Dienst.
    * **[!UICONTROL CAPTCHA-Konfiguration]:** Wählen Sie eine Cloud-Konfiguration aus, die für Drehkreuz konfiguriert ist. Hier wählen Sie beispielsweise den **verwalteten Schlüssel** aus.
+
      >[!NOTE]
-     >Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit Turnstile](#connect-your-forms-environment-with-turnstile-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem Turnstile-Service verbindet.
+     >
+     > Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit Turnstile](#connect-your-forms-environment-with-turnstile-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem Turnstile-Service verbindet.
 
    * **Fehlermeldung:** Geben Sie die Fehlermeldung an, die Benutzern angezeigt werden soll, wenn die CAPTCHA-Übermittlung fehlschlägt.
    * **CAPTCHA-Größe** Sie wählen die Anzeigegröße des Dialogfelds „Drehkreuz-Herausforderung“ aus. Verwenden Sie die Option **[!UICONTROL Kompakt]**, um eine kleine Größe anzuzeigen, und die Option **[!UICONTROL Normal]**, um ein relativ großes Dialogfeld für die Drehkreuz-Herausforderung anzuzeigen.

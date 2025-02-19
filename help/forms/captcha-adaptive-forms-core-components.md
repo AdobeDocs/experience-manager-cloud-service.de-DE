@@ -6,7 +6,7 @@ keywords: Google reCAPTCHA-Dienst, adaptive Formulare, CAPTCHA-Herausforderung, 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um 
 
 1. Erstellen oder wählen Sie ein [Google Cloud-Projekt](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) und aktivieren Sie [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
 1. Beziehen Sie die [Projekt-ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) und erstellen Sie einen [API-Schlüssel](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) und einen [Site-Schlüssel für Websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
-1. Erstellen Sie einen Konfigurations-Container für Cloud Services.
+1. Erstellen Sie einen Konfigurations-Container für Cloud-Dienste.
 
    1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**.
    1. Wählen Sie einen Ordner aus oder erstellen Sie einen Ordner und aktivieren Sie ihn für Cloud-Konfigurationen, indem Sie folgende Schritte ausführen:
@@ -123,10 +123,12 @@ Verwenden von reCAPTCHA in adaptiven Formularen:
    * **[!UICONTROL Titel]:** Geben Sie einen Titel für das CAPTCHA-Widget an. Der Standardwert ist **CAPTCHA**. Wählen Sie **Titel ausblenden**, wenn der Titel nicht angezeigt werden soll. Wählen Sie **Rich-Text für Titel zulassen** aus, um den Titel im Rich-Text-Format zu bearbeiten. Sie können Ihren Titel auch als **ungebundenes Formularelement** markieren.
    * **[!UICONTROL CAPTCHA-Konfiguration]:** Wählen Sie eine Konfiguration aus dem Dropdown-Menü „Einstellungen“ für **reCAPTCHA Enterprise** oder **reCAPTCHA v2** aus, um das Google reCAPTCHA-Dialogfeld für das Formular anzuzeigen:
       1. Wenn Sie die Version **reCAPTCHA Enterprise** auswählen, kann der Schlüsseltyp **Kontrollkästchen** oder **punktebasiert** sein. Er basiert auf Ihrer Auswahl bei der Konfiguration des [Site-Schlüssels für Websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
+
          >[!NOTE]
          >
          >* In der Cloud-Konfiguration mit **Schlüsseltyp** als **Kontrollkästchen** erscheint die angepasste Fehlermeldung als Inline-Meldung, wenn die Captcha-Validierung fehlschlägt.
          >* In der Cloud-Konfiguration mit **Schlüsseltyp** als **punktebasiert** wird die benutzerdefinierte Fehlermeldung als Popup-Meldung angezeigt, wenn die Captcha-Validierung fehlschlägt.
+
       1. Sie können zwischen den Größen **[!UICONTROL Normal]** und **[!UICONTROL Kompakt]** wählen.
 
      >[!NOTE]

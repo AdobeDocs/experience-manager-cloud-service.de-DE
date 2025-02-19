@@ -4,7 +4,7 @@ description: Wie erstelle ich markenorientierte und personalisierte Kommunikatio
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 100%
@@ -78,9 +78,10 @@ Vor der Verwendung eines Batch-Vorgangs:
 * Erstellen der Batch-Datenspeicherkonfiguration
 * Hochladen von Vorlagen und anderen Assets in Ihre Experience Manager Forms Cloud Service-Instanz
 
-### Hochladen von Kundendaten (XML-Dateien) in den Azure-Speicher {#upload-customer-data-to-Azure-Storage}
+### Hochladen von Kundendaten (XML-Dateien) in den Azure-Speicher
 
 Erstellen Sie im Microsoft Azure-Speicher [Container](https://docs.microsoft.com/de-de/azure/vs-azure-tools-storage-explorer-blobs) und [laden Sie Kundendaten (XML)](https://docs.microsoft.com/de-de/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) in die [Ordner](https://docs.microsoft.com/de-de/azure/storage/blobs/storage-quickstart-blobs-portal) innerhalb der Container hoch.
+
 >[!NOTE]
 >
 >Sie können den Microsoft Azure-Speicher so konfigurieren, dass der Eingabeordner automatisch bereinigt oder der Inhalt des Ausgabeordners in terminierten Intervallen an einen anderen Speicherort verschoben wird. Stellen Sie jedoch sicher, dass Ordner nicht bereinigt werden, falls ein Batch-Vorgang, der auf die Ordner verweist, weiterhin ausgeführt wird.

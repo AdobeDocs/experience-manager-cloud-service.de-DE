@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
+source-git-commit: 35834ba89d20d719a40b930ca672ec242d81d376
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1130'
+ht-degree: 97%
 
 ---
 
@@ -27,47 +27,76 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
 
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+ <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG-Benutzeroberfläche"> 
     <h3>WYSIWYG-Benutzeroberfläche</h3>
-    <p>Der universelle Editor bietet eine WYSIWYG-Benutzeroberfläche für Formularentwürfe – mit einer vorkonfigurierten Komponentenbibliothek, responsivem Design, vorlagenbasierter Erstellung und Echtzeitänderungen von Feldern.
- </p>
+    <p>Der universelle Editor bietet eine WYSIWYG-Benutzeroberfläche für Formularentwürfe – mit einer vorkonfigurierten Komponentenbibliothek, responsivem Design, vorlagenbasierter Erstellung und Echtzeitänderungen von Feldern.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Regeleditor">
     <h3>Regeleditor</h3>
     <p>Mit dem Regeleditor können Benutzende mithilfe ereignisgesteuerter Regeln, sofortiger Validierung und einer auf einfachem JavaScript und JSON basierenden Fehlerbehandlung dynamische Formularinteraktionen erstellen.</p>
   </div>
+</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Übermittlungsaktionen">
+    <h3>Übermittlungsaktionen</h3>
+    <p>Übermittlungsaktionen unterstützen Backend-Integration, Logik für bedingte Übermittlungen, sichere Endpunkte sowie Präprozessoren und optimieren so Übermittlungs-Workflows.</p>
+  </div>
+</a>
+<div>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Veröffentlichen/Aufheben der Veröffentlichung">
+    <h3>Veröffentlichen/Aufheben der Veröffentlichung</h3>
+    <p>Steuern Sie ganz einfach die Sichtbarkeit Ihrer Formulare: Nur mit wenigen Klicks im Editor können Sie sie veröffentlichen oder ihre Veröffentlichung aufheben, was Ihnen ein dynamisches Echtzeit-Management von Verfügbarkeit und Inhaltsaktualisierungen ermöglicht.</p>
+  </div>
+</a>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Responsiver Modus">
     <h3>Responsiver Modus </h3>
     <p>Entwerfen Sie Formulare, die sich nahtlos auf allen Geräten (Desktop-PCs, Tablets und Mobilgeräten) anpassen. Verwenden Sie den responsiven Modus, um Formulare für verschiedene Bildschirmgrößen in einer Vorschau anzuzeigen und zu testen.</p>
   </div>
-</div>
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Personalisierung"> 
-    <h3>Personalisierung</h3>
-    <p>Bei der Personalisierung werden anhand von Benutzerdaten individuelle Formularerlebnisse bereitgestellt und Inhalte, Layouts oder Optionen basierend auf den Benutzervoreinstellungen dynamisch angepasst.</p>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Benutzerdefinierte Komponenten">
+    <h3>Benutzerdefinierte Komponenten</h3>
+    <p>Benutzerdefinierte Komponenten ermöglichen es Entwickelnden, die Formularfunktionen durch Erstellung eindeutiger Elemente zu erweitern, die auf bestimmte Anwendungsfälle der Organisation zugeschnitten sind.</p>
   </div>
+</a>
+</div>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Stile">
+    <h3>Stile</h3>
+    <p>Die Formatierung mit CSS ermöglicht es Entwicklerinnen und Entwicklern, das Erscheinungsbild von Formularelementen anzupassen und ein visuell ansprechendes Design zu erstellen, das mit der Ästhetik der Website übereinstimmt.</p>
+  </div>
+</a>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Service zum Vorausfüllen">
     <h3>Service zum Vorausfüllen</h3>
     <p>Services zum Vorausfüllen füllen Formularfelder automatisch mit relevanten Benutzerdaten aus verschiedenen Quellen auf, was weniger manuelle Eingaben erfordert und das Anwendererlebnis verbessert.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Regeleditor">
+  <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="A/B-Tests">
     <h3>A/B-Tests</h3>
     <p>A/B-Tests (Experimente) ermöglichen es Organisationen, verschiedene Formularentwürfe, Layouts und Funktionen auszuprobieren, um die Varianten mit der besten Leistung zu ermitteln.</p>
   </div>
+</a>
 </div>
-
 <div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+  <a href="https://www.aem.live/developer/martech-integration" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analyse und Tracking">
     <h3>Analyse und Tracking</h3>
     <p>Verschaffen Sie sich mit der integrierten Analyse- und Tracking-Funktion Erkenntnisse zum Benutzerverhalten sowie zu Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen.</p>
   </div>
+</a>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Integration mit Adobe Workfront">
     <h3> Aufgabenverwaltung </h3>
@@ -82,24 +111,6 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Internationalisierung/Lokalisierung">
-    <h3>Veröffentlichen/Aufheben der Veröffentlichung</h3>
-    <p>Steuern Sie ganz einfach die Sichtbarkeit Ihrer Formulare: Nur mit wenigen Klicks im Editor können Sie sie veröffentlichen oder ihre Veröffentlichung aufheben, was Ihnen ein dynamisches Echtzeit-Management von Verfügbarkeit und Inhaltsaktualisierungen ermöglicht.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Übermittlungsaktionen">
-    <h3>Übermittlungsaktionen</h3>
-    <p>Übermittlungsaktionen unterstützen Backend-Integration, Logik für bedingte Übermittlungen, sichere Endpunkte sowie Präprozessoren und optimieren so Übermittlungs-Workflows.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Aufgabenverwaltung">
-    <h3>Benutzerdefinierte Komponenten</h3>
-    <p>Benutzerdefinierte Komponenten ermöglichen es Entwickelnden, die Formularfunktionen durch Erstellung eindeutiger Elemente zu erweitern, die auf bestimmte Anwendungsfälle der Organisation zugeschnitten sind.</p>
-  </div>
-</div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Editoranpassung">
     <h3>Editoranpassung</h3>
     <p>Entwickelnde können die Funktionalität des Editors durch Benutzeroberflächenerweiterungen erweitern und so maßgeschneiderte Lösungen für spezifische betriebliche Anforderungen ermöglichen.</p>
@@ -109,12 +120,13 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
     <h3>Einbetten von Formularen</h3>
     <p>Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein, um ein nahtloses Anwendererlebnis zu gewährleisten.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Benutzerdefinierte Komponenten">
+  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Danksagungskonfiguration">
     <h3>Danksagungskonfiguration</h3>
-    <p>Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen.
-    </p>
+    <p>Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen.</p>
   </div>
+</a>
 </div>
 </div>
 

@@ -4,7 +4,7 @@ description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) f
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 100%
@@ -131,6 +131,7 @@ Der Entwickler lädt die aktualisierte Vorlage hoch und wendet sie auf das adapt
 ![Bindungsfehler](assets/we-retail-binding-error.png)
 
 Der Formularentwickler bindet die Felder des adaptiven Formulars an die entsprechende Datensatzdokument-Vorlage.
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Beim Versenden des adaptiven Formulars wird nun fortan ein aktualisiertes Datensatzdokument erstellt.
