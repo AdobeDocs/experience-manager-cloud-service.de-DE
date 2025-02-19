@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten 
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
+source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 95%
+source-wordcount: '1018'
+ht-degree: 87%
 
 ---
 
@@ -124,7 +124,9 @@ Wenn Sie nur bestimmte Erweiterungen für eine Seite aktivieren möchten, könne
 
 Wenn Sie über ein vorhandenes AEM-Projekt mit [dem Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verfügen, werden die Seiten beim Bearbeiten von Seiten durch Inhaltsautoren automatisch mit dem Seiteneditor geöffnet. Sie können festlegen, welchen Editor AEM basierend auf den Inhaltspfaden oder dem `sling:resourceType` öffnen soll. Dadurch profitieren Ihre Autorinnen und Autoren von einem nahtlosen Erlebnis, unabhängig davon, welcher Editor für die ausgewählten Inhalte erforderlich ist.
 
-1. Öffnen Sie den Configuration Manager. 
+1. Wenden Sie sich zur Nutzung dieser Konfigurationsfunktion an die Adobe-Kundenunterstützung, um den Zugriff auf den universellen Editor-URL-Service für Ihr Programm zu aktivieren.
+
+1. Sobald die Kundenunterstützung den Zugriff auf den URL-Service des universellen Editors aktiviert hat, öffnen Sie den Konfigurations-Manager.
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -137,7 +139,15 @@ Wenn Sie über ein vorhandenes AEM-Projekt mit [dem Seiteneditor](/help/sites-cl
 
 1. Klicken Sie auf **Speichern**.
 
-AEM öffnet den universellen Editor für Seiten, die auf dieser Konfiguration basieren, in der folgenden Reihenfolge.
+1. Überprüfen Sie Ihre [Externalizer](/help/implementing/developing/tools/externalizer.md)Konfiguration und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
+
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+Sobald diese Konfigurationsschritte abgeschlossen sind, öffnet AEM den universellen Editor für Seiten in der folgenden Reihenfolge.
 
 1. AEM prüft die Zuordnungen unter `Universal Editor Opening Mapping`. Wenn sich der Inhalt unter einem der dort definierten Pfade befindet, wird der universelle Editor dafür geöffnet.
 1. Bei Inhalten, die nicht unter den in `Universal Editor Opening Mapping` definierten Pfaden enthalten sind, prüft AEM, ob der `resourceType` des Inhalts zu den unter **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) definierten gehört. Wenn der Inhalt einem dieser Typen entspricht, wird dafür der universelle Editor unter `${author}${path}.html` geöffnet.
