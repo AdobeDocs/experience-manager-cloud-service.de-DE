@@ -4,7 +4,7 @@ description: Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefini
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -41,15 +41,15 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -58,9 +58,7 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -87,6 +85,10 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
 * `id` identifiziert die Komponente eindeutig.
    * Das [Komponentenmodell](/help/implementing/universal-editor/field-types.md#model-structure) desselben `id` definiert die Felder der Komponente.
    * Da es eindeutig ist, kann es z. B. in einer [Filterdefinition“ verwendet werden](/help/implementing/universal-editor/filtering.md) um zu bestimmen, welche Komponenten zu einem Container hinzugefügt werden können.
+* `model` definiert, [Modell](/help/implementing/universal-editor/field-types.md#model-structure) mit der Komponente verwendet wird.
+   * Das Modell wird dabei zentral in der Komponentendefinition gepflegt und muss nicht ([ der Instrumentierung) angegeben werden](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Auf diese Weise können Sie Komponenten über Container hinweg verschieben.
+* `filter` definiert[ welcher ](/help/implementing/universal-editor/filtering.md) mit der Komponente verwendet werden soll.
 
 ## `plugins` {#plugins}
 
@@ -114,11 +116,6 @@ Wenn es sich bei der Komponente um Inhalt auf der Seite handelt, können Sie die
 #### `template` {#template}
 
 Durch Bereitstellung optionaler Schlüssel/Wert-Paare können `template` diese automatisch in die neue Komponente schreiben. Darüber hinaus können auch die folgenden optionalen Werte angegeben werden.
-
-* `model` definiert, [Modell](/help/implementing/universal-editor/field-types.md#model-structure) mit der Komponente verwendet wird.
-   * Das Modell wird dabei zentral in der Komponentendefinition gepflegt und muss nicht ([ der Instrumentierung) angegeben werden](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * Auf diese Weise können Sie Komponenten über Container hinweg verschieben.
-* `filter` definiert[ welcher ](/help/implementing/universal-editor/filtering.md) mit der Komponente verwendet werden soll.
 
 ### `cf` {#cf}
 
