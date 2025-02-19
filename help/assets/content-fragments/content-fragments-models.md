@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -261,6 +261,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
+
      >[!NOTE]
      >
      Diese Methode ist in Verbindung mit der [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
@@ -434,6 +435,7 @@ So konfigurieren Sie die **Richtlinien** für **Zulässige Inhaltsfragmentmodell
 1. **Speichern** Sie die Änderungen.
 
 Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgelöst:
+
 * Die **Richtlinien** für **Zulässige Inhaltsfragmentmodelle**.
 * Falls leer, versuchen Sie, die Richtlinie mithilfe der Vererbungsregeln zu bestimmen.
 * Wenn die Vererbungskette kein Ergebnis liefert, prüfen Sie die **Cloud Services**-Konfiguration für diesen Ordner (auch zuerst direkt und dann über Vererbung).
@@ -510,7 +512,7 @@ Diese Funktion bietet Governance für Inhaltsfragmentmodelle, die veröffentlich
 
 ### Die Voraussetzungen {#the-requirements}
 
-* Anwender wurden auf die Risiken aufmerksam gemacht, die bei der Bearbeitung von Modellen auftreten, die bereits für die Bereitstellung von Live-Inhalten verwendet werden (d. h. von Modellen, die veröffentlicht wurden).
+* Benutzer auf die Risiken aufmerksam zu machen, die beim Bearbeiten von Modellen auftreten, die bereits für die Bereitstellung von Live-Inhalten verwendet werden, d. h. von Modellen, die veröffentlicht wurden.
 
 * Außerdem die Vermeidung von unbeabsichtigten Änderungen.
 
