@@ -4,9 +4,9 @@ description: In diesem Artikel wird erläutert, wie Sie mit verschiedenen Emulat
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 18%
 
 ---
@@ -23,16 +23,16 @@ Der responsive Modus ermöglicht es Entwicklerinnen und Entwicklern, Layouts zu 
 
 ## Vorschau von Forms im responsiven Modus für verschiedene Geräte
 
-Der universelle Editor bietet ein **Emulator**-Symbol ![Emulator-Symbol](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%,width=3%} in der oberen rechten Ecke des Bildschirms, mit dem Sie Seiten über verschiedene Gerätegrößen hinweg in der Vorschau anzeigen und das Verhalten Ihres responsiven Designs testen können, um das Benutzererlebnis zu verbessern.
+Der universelle Editor bietet ein **Emulator**-Symbol oben rechts im Bildschirm, mit dem Sie Seiten über verschiedene Gerätegrößen hinweg in der Vorschau anzeigen und das Verhalten Ihres responsiven Designs testen können, um ein besseres Benutzererlebnis zu erzielen.
 
 Führen Sie die folgenden Schritte aus, um zu sehen, wie der universelle Editor Formulare in verschiedenen Bildschirmgrößen rendert:
 
 1. Öffnen Sie das Formular im universellen Editor zur Bearbeitung.
-1. Wählen Sie das ![Emulator-Symbol](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%,width=3%} aus, das in der Symbolleiste des universellen Editors verfügbar ist, und klicken Sie auf das Emulator-Symbol, um die Option anzuzeigen.
+2. Wählen Sie das ![Emulator-Symbol](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} aus, das in der Symbolleiste des universellen Editors verfügbar ist, und klicken Sie auf das Emulator-Symbol, um die Option anzuzeigen.
 
    ![Responsiver Modus](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. Wählen Sie die Option zum Emulieren eines Mobilgeräts und im universellen Editor aus
+3. Wählen Sie die Option zum Emulieren eines Mobilgeräts und im universellen Editor aus
 
    ![Responsiver Modus](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -47,19 +47,19 @@ Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorscha
     </tr>
     <tr>
         <td>Desktop</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop-Emulator"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop-Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Tablet</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tablet-Emulator"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tablet-Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Mobilgeräte</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobile-Emulator" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobile-Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Benutzerdefiniertes Gerät</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Benutzerdefinierter Geräteemulator"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Benutzerdefinierter Geräteemulator" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
