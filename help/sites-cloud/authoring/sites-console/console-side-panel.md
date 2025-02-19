@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '827'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -108,11 +108,11 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 
 ## Site {#site}
 
-Die **Site**-Ansicht des Seitenbereichs zeigt Details zu Sites an, [ mithilfe einer Site-Vorlage erstellt ](/help/sites-cloud/administering/site-creation/create-site.md).
+Die Ansicht **Site** des seitlichen Bedienfelds zeigt Details zu Sites an, [die mit einer Site-Vorlage erstellt wurden](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Site-Bedienfeld](assets/console-side-panel-site-paenl.png)
 
-Im Dokument [Verwenden des Site-Bedienfelds zum Verwalten des Site-Designs](/help/sites-cloud/administering/site-creation/site-rail.md) finden Sie weitere Informationen darüber, wie Sie das Bedienfeld zum Verwalten des [Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-themes.md) verwenden können.
+Unter [Verwenden des Site-Bedienfelds zum Verwalten Ihres Site-Designs](/help/sites-cloud/administering/site-creation/site-rail.md) finden Sie weitere Einzelheiten darüber, wie Sie das Bedienfeld zur Verwaltung des [Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-themes.md) verwenden können.
 
 Wenn Sie die Frontend-Pipeline noch nicht eingerichtet haben, um die Design-basierte Site-Erstellung zu aktivieren, bietet das seitliche Bedienfeld diese Option an.
 

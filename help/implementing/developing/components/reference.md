@@ -5,9 +5,9 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3481'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Ke
 
 >[!TIP]
 >
->Bevor Sie sich auf dieses Dokument beziehen, stellen Sie sicher, dass Sie das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) abgeschlossen haben und somit mit den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und dem [AEM-Projektarchetyp vertraut ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de).
+>Bevor Sie sich auf dieses Dokument beziehen, stellen Sie sicher, dass Sie das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) abgeschlossen haben und somit mit den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) vertraut sind.
 
 Da das WKND-Tutorial die meisten Anwendungsfälle abdeckt, ist dieses Dokument nur als Ergänzung zu diesen Ressourcen gedacht. Es enthält ausführliche technische Details zur Struktur und Konfiguration von Komponenten in AEM und ist nicht als Anleitung für die ersten Schritte gedacht.
 
@@ -105,29 +105,29 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 * **Stammknoten**:
    * `<mycomponent> (cq:Component)` – Hierarchieknoten der Komponente.
 * **Wichtige Eigenschaften**:
-   * `jcr:title` - Komponententitel; wird beispielsweise als Bezeichnung verwendet, wenn die Komponente im [Komponenten-Browser“ ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md) aufgeführt wird
-   * `jcr:description` - Beschreibung der Komponente; wird als Mouseover-Hinweis im Komponenten-Browser oder in der Komponentenkonsole genutzt.
-   * Weitere Informationen finden Sie [ Abschnitt ](#component-icon)Komponentensymbol).
+   * `jcr:title` – Komponententitel; wird beispielsweise als Titel genutzt, wenn die Komponente im [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) oder in der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md) aufgeführt wird.
+   * `jcr:description` – Beschreibung der Komponente; wird als Mouseover-Hinweis im Komponenten-Browser oder in der Komponentenkonsole genutzt.
+   * Weitere Informationen finden Sie im Abschnitt [Komponentensymbol](#component-icon).
 * **Wichtige untergeordnete Knoten**:
-   * `cq:editConfig (cq:EditConfig)` - Definiert die Bearbeitungseigenschaften der Komponente und ermöglicht es, dass die Komponente im Komponenten-Browser angezeigt wird.
+   * `cq:editConfig (cq:EditConfig)` – Definiert die Bearbeitungseigenschaften der Komponente und ermöglicht es, dass die Komponente im Komponenten-Browser aufgeführt wird.
       * Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponenten-Browser oder Sidekick aufgeführt, selbst wenn die cq:editConfig nicht vorhanden ist.
    * `cq:childEditConfig (cq:EditConfig)` – Steuert Aspekte der Autoren-Benutzeroberfläche für untergeordnete Komponenten, die keine eigene `cq:editConfig` definieren.
    * `cq:dialog (nt:unstructured)` – Dialogfeld für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
-   * `cq:design_dialog (nt:unstructured)` - Design-Bearbeitung für diese Komponente.
+   * `cq:design_dialog (nt:unstructured)` – Design-Bearbeitung für diese Komponente.
 
 #### Komponentensymbol {#component-icon}
 
 Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
 
-1. `cq:icon` - Zeichenfolgeneigenschaft, die auf ein Standardsymbol in der [Bibliothek der Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/examples/#icon) verweist, das im Komponenten-Browser angezeigt werden soll.
+1. `cq:icon`: Zeichenfolgeneigenschaft, die auf ein Standardsymbol in der [Bibliothek der Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/examples/#icon) verweist, das im Komponenten-Browser angezeigt werden soll.
    * Verwenden Sie den Wert des HTML-Attributs des Coral-Symbols.
-1. `abbreviation` - Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
+1. `abbreviation`: Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
    * Bei einer leeren Zeichenfolge wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
-      * Beispiel: „im“ für „image“.
+      * Beispiel: „Gr“ für „Grafik“.
       * Zum Erstellen der Abkürzung wird der lokalisierte Titel verwendet.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
-1. `cq:icon.png` oder `cq:icon.svg` - Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird.
+1. `cq:icon.png` oder `cq:icon.svg` – Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird.
    * Symbole von Standardkomponenten haben eine Größe von 20 x 20 Pixeln.
       * Größere Symbole werden (Client-seitig) herunterskaliert.
    * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070.
@@ -172,7 +172,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 | `cq:isContainer` | `Boolean` | Dies zeigt an, ob es sich bei der Komponente um eine Containerkomponente handelt, die andere Komponenten wie ein Absatzsystem enthalten kann. |
 | `cq:dialog` | `nt:unstructured` | Dies ist die Definition des Bearbeitungsdialogs der Komponente. |
 | `cq:design_dialog` | `nt:unstructured` | Dies ist die Definition des Design-Dialogs der Komponente. |
-| `cq:editConfig` | `cq:EditConfig` | Dadurch wird die [Bearbeitungskonfiguration der Komponente“ ](#edit-behavior). |
+| `cq:editConfig` | `cq:EditConfig` | Dadurch wird die [Bearbeitungskonfiguration der Komponente](#edit-behavior) definiert. |
 | `cq:htmlTag` | `nt:unstructured` | Dies gibt zusätzliche Tag-Attribute zurück, die zum umgebenden HTML-Tag hinzugefügt werden. Ermöglicht das Hinzufügen von Attributen zu den automatisch generierten div-Tags. |
 | `cq:noDecoration` | `Boolean` | Bei „true“ wird die Komponente nicht mit automatisch erstellten div- und CSS-Klassen gerendert. |
 | `cq:template` | `nt:unstructured` | Wenn vorhanden, wird dieser Knoten als Inhaltsvorlage genutzt, wenn die Komponente vom Komponenten-Browser hinzugefügt wird. |
@@ -339,7 +339,7 @@ Das typische HTL-Skript, das den obigen Platzhalter-HTML-Code rendert, lautet wi
 
 Im vorherigen Beispiel ist `isEmpty` eine Variable, die nur dann wahr ist, wenn die Komponente keinen Inhalt hat und für den Autor unsichtbar ist.
 
-Um Wiederholungen zu vermeiden, empfiehlt Adobe den Implementierern von Komponenten, eine HTL-Vorlage für diese Platzhalter zu verwenden [wie sie von den Kernkomponenten bereitgestellt ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
+Um Wiederholungen zu vermeiden, empfiehlt Adobe den Implementierenden von Komponenten, eine HTL-Vorlage für diese Platzhalter zu verwenden, [wie sie von den Kernkomponenten bereitgestellt wird](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 Die Verwendung der Vorlage im vorherigen Link erfolgt dann mit der folgenden HTL-Zeile:
 
@@ -350,7 +350,7 @@ Die Verwendung der Vorlage im vorherigen Link erfolgt dann mit der folgenden HTL
 
 Im vorherigen Beispiel ist `model.text` die Variable, die nur dann wahr ist, wenn die Komponente einen Inhalt hat und sichtbar ist.
 
-Eine beispielhafte Verwendung dieser Vorlage ist in den Kernkomponenten zu sehen ([. B. in der Titelkomponente](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
+Eine beispielhafte Verwendung dieser Vorlage ist in den Kernkomponenten zu sehen, [wie z. B. in der Titelkomponente](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
 ### Konfigurieren mit untergeordneten cq:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
 

@@ -5,9 +5,9 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -267,7 +267,7 @@ Beachten Sie Folgendes, damit die Konfiguration gültig ist:
 * Alle Eigenschaften müssen definiert sein. Es gibt keine geerbten Standardwerte.
 * Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
 
-**4**: Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Konfiguration der Pipeline“ ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+**4**: Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im [Artikel zu Konfigurations-Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Versionsbereinigung {#version-purge}
 

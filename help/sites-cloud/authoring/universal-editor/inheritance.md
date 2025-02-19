@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -55,6 +55,6 @@ Der universelle Editor wirkt sich nicht auf den zugrundeliegenden Mechanismus de
    * Die Rücksetzung der Vererbung ist nur für die gesamte Seite möglich, und zwar über die
       * [Konsole „Live Copy-Übersicht“](/help/sites-cloud/administering/msm/live-copy-overview.md)
       * [Launch-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * mithilfe der **Zurücksetzen** auf der Registerkarte **Live Copy** des Fensters [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md).
-* Autorinnen und Autoren verfügen über kein visuelles Feedback, um zu sehen, für welche Komponenten ihre Vererbung deaktiviert ist und welche sie weiterhin beibehalten haben.
-* Diese Funktionen sind derzeit auf Komponenten auf Seiten beschränkt und gelten noch nicht für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) obwohl diese auch über MSM- und Launch-Funktionen verfügen.
+      * Verwenden Sie die Schaltfläche **Zurücksetzen** auf der Registerkarte **Live Copy** des [Fensters „Seiteneigenschaften“](/help/sites-cloud/authoring/sites-console/page-properties.md).
+* Autorinnen und Autoren verfügen über kein visuelles Feedback, um zu sehen, für welche Komponenten ihre Vererbung deaktiviert ist und für welche sie weiterhin beibehalten wird.
+* Diese Funktionen sind derzeit auf Komponenten auf Seiten beschränkt und gelten noch nicht für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md), obwohl diese ebenfalls MSM- und Launch-Funktionen aufweisen.

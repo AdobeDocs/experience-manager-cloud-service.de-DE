@@ -3,9 +3,9 @@ title: Integrieren der Remote-Version von AEM Assets mit AEM Sites
 description: Erfahren Sie, wie Sie AEM Sites mit genehmigtem AEM Assets konfigurieren und verbinden.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

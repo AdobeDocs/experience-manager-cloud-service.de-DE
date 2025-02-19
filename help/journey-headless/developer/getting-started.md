@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3068'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit AEM Headless as a Cloud Service {#getting-started}
 
-In diesem Teil der [AEM Headless-Entwickler-Journey](overview.md) erfahren Sie, was erforderlich ist, um Ihr eigenes Projekt mit AEM Headless zu starten.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, was erforderlich ist, um Ihr eigenes Projekt mit AEM Headless zu starten.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Headless-Tour, [Informationen zur CMS-Headless-Entwicklung](learn-about.md), haben Sie die grundlegende Theorie gelernt, was ein Headless-CMS ist, und sollten jetzt:
 
@@ -65,7 +65,7 @@ Auf der einfachsten Ebene erfordert das Erstellen digitaler Erlebnisse in AEM di
 1. Wenn diese Inhalte fertig sind, werden sie auf die Veröffentlichungsinstanz repliziert.
 1. Anschließend können APIs aufgerufen werden, um diese Inhalte abzurufen.
 
-AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zum Verwalten von Headless-Inhalten bereitgestellt werden[ die im nächsten Abschnitt beschrieben ](#aem-headless-basics).
+AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zum Verwalten von Headless-Inhalten bereitgestellt werden, die [im nächsten Abschnitt beschrieben werden](#aem-headless-basics).
 
 ## AEM Headless-Grundlagen {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ Die Ordnerhierarchie kann zwei wesentliche Probleme im Zusammenhang mit dem Cont
 * [Übersetzung](#translation): AEM verwaltet die Übersetzung von Inhalten, indem Kopien von Inhalten in gebietsschemaspezifischen Ordnern verwaltet werden.
 * Organisation: Ordner werden verwendet, um eine Inhaltshierarchie zu definieren, die zur Unterstützung der Anforderungen an die Übersetzung sowie zur logischen Verwaltung von Inhaltsfragmenten erforderlich ist.
 
-AEM ermöglicht eine sehr flexible Inhaltsstruktur und eine Hierarchie kann beliebig groß sein. Es ist jedoch wichtig zu verstehen, dass Änderungen an der Ordnerstruktur unbeabsichtigte Folgen für bestehende Abfragen haben können, die ([ auf den Inhaltspfad angewiesen) ](#developer). Daher kann eine klar definierte Hierarchie, die im Voraus festgelegt ist, für Inhaltsautoren äußerst hilfreich sein.
+AEM ermöglicht eine sehr flexible Inhaltsstruktur und eine Hierarchie kann beliebig groß sein. Es ist jedoch wichtig zu verstehen, dass Änderungen an der Ordnerstruktur unbeabsichtigte Folgen für bestehende Abfragen haben können, die [auf den Inhaltspfad angewiesen sind](#developer). Daher kann eine klar definierte Hierarchie, die im Voraus festgelegt ist, für Inhaltsautorinnen und -autoren äußerst hilfreich sein.
 
 Ordner können auch darauf beschränkt werden, nur bestimmte Inhaltstypen zuzulassen (basierend auf Inhaltsfragmentmodellen). Es wird allgemein empfohlen, immer explizit anzugeben, welche Modelle für alle Ordner in der Hierarchie zulässig sind. Das Angeben von zulässigen Inhalten für einen bestimmten Ordner:
 
@@ -241,7 +241,7 @@ Entwickler sollten bei der Planung ihrer Abfragen einige grundlegende Empfehlung
 * Für eine optimale Abfrageleistung sollten Sie immer persistente Abfragen in AEM verwenden. Diese werden später in der Tour erläutert.
 * GraphQL ist deklarativ und folgt dem Motto „Fragen Sie nach genau dem, was Sie brauchen, und erhalten Sie genau das.“ Dies bedeutet, dass Sie beim Erstellen von GraphQL-Abfragen immer `select *`-Abfragen vermeiden sollten, die Sie möglicherweise in einer relationalen Datenbank erstellen würden.
 
-Für eine [typische Headless-Implementierung mit AEM](#level-1) benötigt der Entwickler keine Programmierkenntnisse für AEM.
+Für eine [typische Headless-Implementierung mit AEM](#level-1) benötigen Entwickelnde keine Programmierkenntnisse für AEM.
 
 ### Leistungsanforderungen {#performance-requirements}
 
@@ -267,7 +267,7 @@ Oft haben verschiedene Bereiche von Erlebnissen unterschiedliche Häufigkeiten v
 * Müssen bestimmte Inhaltstypen nach einem bestimmten Zeitraum ablaufen?
 * Gibt es Elemente, die benutzerspezifisch sind und daher nicht zwischengespeichert werden können?
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 
@@ -280,7 +280,7 @@ Sie sollten Ihre AEM-Headless-Tour fortsetzen, indem Sie als Nächstes das Dokum
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwicklungs-Journey fortzufahren, indem Sie das Dokument [Der Weg zu Ihrem ersten Erlebnis mit AEM Headless](path-to-first-experience.md) lesen, aber im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fortzufahren, indem Sie das Dokument [Gestalten Ihres ersten Erlebnisses mit AEM Headless](path-to-first-experience.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen, die aber nicht erforderlich sind, um die Headless-Tour fortzusetzen.
 
 * [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 * [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Grundlegendes zur Struktur von AEM as a Cloud Service

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der Tour durch die AEM Headless-Übersetzung, [Konfigurieren der Übersetzungsintegration](configure-connector.md), haben Sie gelernt, wie Sie Ihre Übersetzungs-Integration installieren und konfigurieren. Sie sollten jetzt:
 
@@ -79,7 +79,7 @@ In der Benutzeroberfläche der **Übersetzungskonfiguration** stehen verschieden
 1. Wählen Sie den erstellten Kontext und dann **Bearbeiten** aus. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
 1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Übernehmen von`/content/dam`**, um der Konfiguration zusätzliche Felder hinzuzufügen.
-1. Wenn diese Option deaktiviert ist **fügen Sie im Abschnitt** die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert) ](getting-started.md#content-models).
+1. Ist diese Option deaktiviert, fügen Sie im Abschnitt **Allgemein** der Liste die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert haben](getting-started.md#content-models).
    1. Geben Sie den Eigenschaftsnamen in das Feld **Neue Eigenschaft** ein. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.
    1. Wählen Sie **Hinzufügen**.
    1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
@@ -94,7 +94,7 @@ Es gibt verschiedene weitere Eigenschaften, die als Teil Ihrer Übersetzungsrege
 
 Solche Funktionen sind im Allgemeinen nicht erforderlich, um mit der Lokalisierung Ihrer Headless-Inhalte zu beginnen. Sie finden jedoch weitere Informationen dazu im Abschnitt [Zusätzliche Ressourcen](#additional-resources), wenn Sie Interesse haben.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 

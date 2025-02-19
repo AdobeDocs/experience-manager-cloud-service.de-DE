@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Ihre erste Überlegung sollte sein, wie Sie Ihre Inhalte bereitstellen möchten.
 Dies kann Ihnen bei der Entscheidung helfen, ob Sie Folgendes benötigen:
 
 * [AEM als Headless-CMS](/help/headless/introduction.md) mit dem Inhaltsfragmenteditor und/oder dem universellen Editor.
-* AEM-Edge Delivery Services, die die [dokumentenbasierte Bearbeitung](/help/edge/docs/authoring.md) oder das [WYSIWYG-Authoring mit dem universellen Editor verwenden](/help/edge/wysiwyg-authoring/authoring.md).
+* AEM Edge Delivery Services mit der [dokumentenbasierten Bearbeitung](/help/edge/docs/authoring.md) oder dem [WYSIWYG-Authoring mit dem universellen Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Präferenzen für die Inhaltserstellung {#content-authoring}
 
@@ -64,7 +64,7 @@ Als Nächstes sollten Sie überlegen, wie Sie Ihren Inhalt erstellen möchten. D
 
 Dies kann Ihnen bei der Entscheidung helfen, ob Sie Folgendes benötigen:
 
-* AEM-Edge Delivery Services, die die [dokumentenbasierte Bearbeitung](/help/edge/docs/authoring.md) verwenden.
+* AEM Edge Delivery Services mit der [dokumentenbasierten Bearbeitung](/help/edge/docs/authoring.md).
 * [WYSIWYG-Authoring mit dem universellen Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Projektziele {#project-goals}

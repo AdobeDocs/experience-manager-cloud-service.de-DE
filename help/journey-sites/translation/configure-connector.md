@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Sites-Übersetzungs-Tour, [Erste Schritte mit der AEM Sites-Übersetzung](learn-about.md), haben Sie gelernt, wie Sie Ihre Inhalte organisieren und wie Übersetzungs-Tools von AEM funktionieren. Sie sollten jetzt:
 
@@ -123,20 +123,20 @@ Gehen Sie dazu zum Sprachstamm Ihrer Inhalte. Für unsere Beispielzwecke ist die
 1. Gehen Sie zur globalen Navigation und dann zu **Navigation** > **Assets** > **Dateien**.
 1. Wählen Sie in der Assets-Konsole den zu konfigurierenden Sprachstamm und anschließend **Eigenschaften** aus.
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
-1. Wählen Sie unter **Cloud Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** Ihren Connector aus. Er sollte in der Dropdown-Liste erscheinen, wenn Sie das Paket wie [ zuvor beschrieben installiert ](#connect-translation-provider).
+1. Wählen Sie unter **Cloud Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** Ihren Connector aus. Er sollte in der Dropdown-Liste erscheinen, wenn Sie das Paket [wie oben beschrieben](#connect-translation-provider) installiert haben.
 1. Wählen Sie unter **Cloud Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** auch Ihre Konfiguration aus.
 1. Wählen Sie **Speichern und schließen**.
 
 ![Wählen Sie Cloud-Service-Konfigurationen aus.](assets/select-cloud-service-configurations.png)
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Journey fort, indem Sie als Nächstes das Dokument [Übersetzungsregeln konfigurieren](translation-rules.md) lesen, in dem Sie erfahren, wie Sie festlegen, welche Inhalte übersetzt werden sollen.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der AEM Sites-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren von Übersetzungsregeln](translation-rules.md) lesen, in dem Sie erfahren, wie Sie festlegen, welche Inhalte übersetzt werden sollen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

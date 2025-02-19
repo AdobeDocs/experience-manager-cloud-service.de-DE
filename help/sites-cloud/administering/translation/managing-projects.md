@@ -6,9 +6,9 @@ role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
 source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4129'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mithilfe von Übersetzungsprojekten können Sie die Übersetzung von AEM-Inhalte
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine AEM- oder Übersetzungserfahrung haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die noch keine Erfahrung mit AEM oder Übersetzungen haben.
 
 Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Übersetzungsauftrag für sie erstellt. Vorgänge enthalten Befehle und Statusinformationen, mit denen Sie die Workflows für menschliche und maschinelle Übersetzungen verwalten, die für die Ressourcen ausgeführt werden.
 
@@ -286,13 +286,13 @@ Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftr
 
 1. Klicken Sie auf „Hinzufügen“ und „I18N-Wörterbuch“.
 
-   ![i18n-Wörterbuch hinzufügen](../assets/add-i18n.png)
+   ![Hinzufügen eines i18n-Wörterbuchs](../assets/add-i18n.png)
 
 1. Wählen Sie **Stammverzeichnis** und das Wörterbuch (falls erforderlich), das Sie hinzufügen möchten, und wählen Sie dann **Hinzufügen**.
 
-   ![i18n-Wörterbuch auswählen](../assets/select-i18n.png)
+    ![Auswählen eines I18n-Wörterbuchs](../assets/select-i18n.png)
 
-Ihr Wörterbuch befindet sich jetzt in Ihrem Übersetzungsauftrag und der Übersetzungsprozess kann dann gestartet werden, um die Wörterbuchsprachkopien in `/content/cq:i18n` zu erstellen und diese Wörterbuchsprachkopien zur Übersetzung zu senden.
+Ihr Wörterbuch befindet sich nun in Ihrem Übersetzungsauftrag und der Übersetzungsprozess kann dann gestartet werden, um die Wörterbuchsprachkopien in `/content/cq:i18n` zu erstellen und diese Wörterbuchsprachkopien zwecks Übersetzung zu senden.
 
 >[!NOTE]
 >

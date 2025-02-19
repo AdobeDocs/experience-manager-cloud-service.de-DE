@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs {#access-your-content}
 
-In diesem Teil der [AEM Headless Developer Journey](overview.md) erfahren Sie, wie Sie mit GraphQL-Abfragen auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese in Ihr Programm einfließen lassen können (Headless-Bereitstellung).
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie mit GraphQL-Abfragen auf den Inhalt Ihrer Inhaltsfragmente zugreifen und ihn an Ihr Programm weiterleiten können (Headless-Bereitstellung).
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Headless-Tour, [So modellieren Sie Ihre Inhalte](model-your-content.md), haben Sie die Grundlagen der Inhaltsmodellierung in AEM gelernt. Daher sollten Sie jetzt verstehen, wie Sie Ihre Inhaltsstruktur modellieren und dann diese Struktur mithilfe von AEM-Inhaltsfragmentmodellen und -Inhaltsfragmenten umsetzen:
 
@@ -353,7 +353,7 @@ Ausführliche Informationen zur Verwendung der AEM-GraphQL-API sowie zur Konfigu
 * Beispielstruktur für Inhaltsfragmente
 * Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headless-Content zugreifen und ihn abfragen können, können Sie sich nun damit vertraut machen, [wie Sie mit einer REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren](update-your-content.md).
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Dieser Leitfaden führt Sie durch die wichtigsten Themen der Headless-Übersetzu
 
 Ziel ist es, Ihnen ein breites Verständnis der Headless-Technologie sowie davon, wie AEM Headless-Inhalte bereitstellt und wie Sie es übersetzen können, zu vermitteln. Wenn Sie mit keinem dieser Themen vertraut sind, ist dies Ihr idealer Ausgangspunkt.
 
-Wenn Sie bereits mit AEM, Headless und Übersetzung vertraut sind, verfügen Sie vielleicht schon über das Grundwissen aus dieser Tour. Ziehen Sie auch unsere technische Dokumentation zu Rate, die im Abschnitt [Zusätzliche Ressourcen unten“ verlinkt ](#additional-resources).
+Wenn Sie bereits mit AEM, Headless und Übersetzung vertraut sind, verfügen Sie vielleicht schon über das Grundwissen aus dieser Tour. Ziehen Sie auch unsere technische Dokumentation zu Rate, die im [Abschnitt „Zusätzliche Ressourcen“ unten verlinkt ist](#additional-resources).
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
@@ -73,7 +73,7 @@ Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch,
 | 4 | [Übersetzen von Inhalten](translate-content.md) | Verwenden Sie die Übersetzungsintegration und -regeln, um Ihre Headless-Inhalte zu übersetzen. |
 | 5 | [Veröffentlichen übersetzter Inhalte](publish-content.md) | Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzung aktualisieren können, wenn sich die zugrunde liegenden Inhalte ändern. |
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Übersetzungs-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Erfahren Sie mehr über Headless-Inhalte und wie man sie in AEM übersetzt](learn-about.md) zu lesen.
 

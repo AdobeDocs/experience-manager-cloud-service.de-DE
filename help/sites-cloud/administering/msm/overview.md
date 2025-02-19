@@ -6,9 +6,9 @@ role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2721'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Erstellen einer Live Copy** (**Sites**)
 
-   * MSM ermöglicht [ Erstellung einer (einmaligen) Ad-hoc-Live Copy der einzelnen Seite oder der Unterverzweigung einer Website](creating-live-copies.md#creating-a-live-copy-of-a-page). Duplizieren Sie beispielsweise eine Unterverzweigung, um Informationen über eine neue/aktualisierte Version eines Produkts bereitzustellen. Erstellen einer Live Copy auf diese Weise:
+   * Mit MSM können Sie [eine (einmalige) Ad-hoc-Live Copy einer einzelnen Seite oder einer Unterverzweigung einer Website erstellen](creating-live-copies.md#creating-a-live-copy-of-a-page), z. B. eine Unterverzweigung duplizieren, um Informationen über eine neue/aktualisierte Version eines Produkts bereitzustellen. Erstellen einer Live Copy auf diese Weise:
       * Erstellt eine Ad-hoc-Live Copy (keine Blueprint-Konfiguration erforderlich).
       * Kann verwendet werden, um (sofort) eine Live Copy einer beliebigen Seite/Verzweigung zu erstellen.
       * Erfordert die Option **Synchronisieren** (die **Rollout**-Schaltfläche wird nicht bereitgestellt).
@@ -137,7 +137,7 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Live Copy-Übersicht** (**Sites**)
 
-   * In dieser Konsole können Sie [Blueprint und deren Live Copies anzeigen und ](live-copy-overview.md).
+   * Diese Konsole ermöglicht Ihnen die [Ansicht und Verwaltung Ihres Blueprints und dessen Live Copies](live-copy-overview.md).
 
 * **Blueprints** (**Tools** – **Sites**)
 
@@ -293,7 +293,7 @@ Rollout-Konfigurationen können wiederverwendet werden, sodass mehr als eine Liv
 
 ### Rollout-Konflikte {#rollout-conflicts}
 
-Rollouts können kompliziert werden, insbesondere wenn Autorinnen und Autoren Inhalte sowohl in der Quelle als auch in der Live Copy bearbeiten. Daher ist es nützlich, sich bewusst zu sein, wie AEM mit ([, die während des Rollouts auftreten können](rollout-conflicts.md) umgeht.
+Rollouts können kompliziert werden, insbesondere wenn Autorinnen und Autoren Inhalte sowohl in der Quelle als auch in der Live Copy bearbeiten. Daher ist es nützlich, sich darüber im Klaren zu sein, wie AEM mit [möglichen Konflikten während des Rollouts](rollout-conflicts.md) verfährt.
 
 ### Aussetzen und Abbrechen der Vererbung und Synchronisierung {#suspending-and-cancelling-inheritance-and-synchronization}
 

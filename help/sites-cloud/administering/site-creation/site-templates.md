@@ -6,9 +6,9 @@ role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 91%
 
 Erfahren Sie, wie AEM-Site-Vorlagen verwendet werden können, um die Site-Struktur und den anfänglichen Inhalt vorab zu definieren, damit Sie Sites schnell erstellen können.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Es ist praktisch, vordefinierte Strukturen zur Verfügung zu haben, um schnell eine auf einem Satz vorhandener Standards basierte Site bereitzustellen. Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handlichen und wiederverwendbaren Paket zu kombinieren.
 
-Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Strukturen sowie Informationen zum Site-Styling, dem [Site-Design](site-themes.md), um schnell eine neue Site zu starten. Administratoren wählen (während des Site-Erstellungsprozesses) eine Site[Vorlage aus, auf der die Site basieren ](create-site.md).
+Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Strukturen sowie Informationen zum Site-Styling, dem sogenannten [Site-Design](site-themes.md), um schnell eine neue Site zu starten. Admins wählen [während des Prozesses der Site-Erstellung](create-site.md) eine Site-Vorlage aus, auf der die Site basieren soll.
 
 Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in Ihrer AEM-Installation mehrere Vorlagen zur Verfügung stehen, können Sie verschiedene Sites erstellen, um unterschiedlichen geschäftlichen Anforderungen gerecht zu werden.
 
@@ -67,7 +67,7 @@ Site-Vorlagen sind schlicht Pakete mit einer logischen Struktur, die den Zweck d
 
 ## Standard-Site-Vorlage {#standard-site-template}
 
-Adobe bietet eine Best-Practices-Referenzvorlage, die Sie als Grundlage für die Erstellung Ihrer eigenen Vorlagen verwenden können. [Die Standard-Site-Vorlage ist auf GitHub ](https://github.com/adobe/aem-site-template-standard).
+Adobe bietet eine Best-Practices-Referenzvorlage, die Sie als Grundlage für die Erstellung Ihrer eigenen Vorlagen verwenden können. [Die Standard-Site-Vorlage ist auf GitHub verfügbar](https://github.com/adobe/aem-site-template-standard).
 
 [Die neueste Version der Standard-Site-Vorlage](https://github.com/adobe/aem-site-template-standard/releases) kann heruntergeladen werden und direkt für die [Erstellung neuer Sites](create-site.md) verwendet werden.
 

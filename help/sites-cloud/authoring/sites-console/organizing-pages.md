@@ -6,16 +6,16 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Organisieren von Seiten {#creating-and-organizing-pages}
 
-Erfahren Sie, wie Sie Ihre Website mit AEM organisieren.  Sobald Sie wissen, wie Sie Ihre Seiten organisieren müssen, können Sie [neue Seiten erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md) und [bestehende Seiten verwalten](/help/sites-cloud/authoring/sites-console/managing-pages.md).
+Erfahren Sie, wie Sie Ihre Website mit AEM organisieren.  Sobald Sie wissen, wie Sie Ihre Seiten organisieren müssen, können Sie [neue Seiten erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md) und [existierende Seiten verwalten](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
@@ -51,7 +51,7 @@ Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://experiencel
    /...
 ```
 
-Diese Struktur kann über die [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) angezeigt werden, über die Sie durch die Seiten Ihrer Website navigieren und Aktionen auf den Seiten durchführen können.
+Diese Struktur kann über die [**Sites-Konsole** angezeigt werden](/help/sites-cloud/authoring/sites-console/introduction.md). Von dort aus können Sie durch die Seiten Ihrer Website navigieren und Aktionen auf den Seiten durchführen. 
 
 ## Seitenbenennungskonventionen {#page-naming-conventions}
 
@@ -130,7 +130,7 @@ Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfüg
 
 ## Komponenten {#components}
 
-[Komponenten](/help/implementing/developing/components/overview.md) sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe vordefinierter Komponenten, die als &quot;[&quot; bezeichnet werden und ](/help/implementing/developing/components/overview.md#core-components) umfangreiche Funktionen bieten. Beispiele für die Komponenten sind:
+[Komponenten](/help/implementing/developing/components/overview.md) sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe vordefinierter Komponenten, die als [die Kernkomponenten](/help/implementing/developing/components/overview.md#core-components) bezeichnet werden und eine umfassende Funktionalität bieten. Beispiele für die Komponenten sind:
 
 * Text
 * Bild

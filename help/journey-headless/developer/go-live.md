@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie ein Headless-Programm live bereitstellen, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Headless-Tour, [So stellen Sie alles zusammen – Ihre Mobile App und Ihren Inhalt in AEM Headless](put-it-all-together.md), haben Sie gelernt, wie Sie mit den AEM-Entwicklungs-Tools alle Facetten Ihres Projekts zusammenführen können.
 
@@ -129,7 +129,7 @@ Sie haben entweder bereits Ihr erstes AEM Headless-Projekt gestartet oder verfü
 
 Die Headless-Stores in AEM müssen hier jedoch nicht enden. Im Abschnitt mit den [ersten Schritten der AEM Headless-Entwickler-Tour](getting-started.md#integration-levels) haben wir kurz besprochen, inwiefern AEM nicht nur Headless-Bereitstellungen und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
 
-Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der Journey fort: [Erstellen von Single Page Applications (SPA) mit AEM](create-spa.md).
+Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der Tour fort: [Erstellen von Single Page Applications (SPAs) mit AEM](create-spa.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,9 +62,9 @@ Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch,
 | 3 | [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](references.md) | Erfahren Sie, wie Sie Verweise in Inhaltsfragmenten verwenden. Mit diesen können Sie auch mithilfe von verschachtelten Fragmenten mehrere Strukturebenen für Ihr Headless-CMS erstellen und verwalten. |
 | 4 | [Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente](metadata-tagging.md) | Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente. |
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
-Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel [Authoring für AEM Headless as a Cloud Service - Einführung](introduction.md) zu lesen.
+Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Authoring für AEM Headless as a Cloud Service – Einführung](introduction.md) zu lesen.
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

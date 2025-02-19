@@ -5,9 +5,9 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '864'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Folgen Sie diesen Schritten, um zu Cloud Manager zu navigieren.
 
 1. Navigieren Sie zur Anmeldeseite von Cloud Manager unter [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
-1. Wählen Sie das Programm aus der Cloud Manager-Seite **Programme und Produkte** aus, um die Seite **Überblick** zu starten.
+1. Wählen Sie das Programm auf der Cloud Manager-Seite **Programme und Produkte** aus, um die Seite **Überblick** zu starten.
 
 Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch zur Seite „Programme und Produkte“ von Cloud Manager navigieren.
 

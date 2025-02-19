@@ -5,9 +5,9 @@ exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,4 +44,4 @@ In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Perso
 
 ## Nächster Schritt {#next-step}
 
-An weiteren Informationen interessiert? Lesen Sie dann zunächst den ersten Teil der Headless-Einrichtung: [Erstellen einer Konfiguration](create-configuration.md).
+An weiteren Informationen interessiert? Dann lesen Sie zunächst den ersten Teil der Headless-Einrichtung: [Erstellen einer Konfiguration](create-configuration.md).

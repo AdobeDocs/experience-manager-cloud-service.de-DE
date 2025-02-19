@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie die Seiten Ihrer Website in AEM verwalten, einschließlich
 
 >[!TIP]
 >
->Bevor Sie mit der Verwaltung Ihrer Seiten beginnen, sollten Sie sich mit dem Thema [wie Ihre Seiten in AEM organisiert sind“ ](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
+>Bevor Sie mit der Verwaltung Ihrer Seiten beginnen, sollten Sie sich damit vertraut machen, [wie Ihre Seiten in AEM organisiert sind](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
@@ -32,7 +32,7 @@ Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die Systemadmins zu 
 
 ## Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
-Nachdem [eine Seite erstellt](/help/sites-cloud/authoring/sites-console/creating-pages.md) oder mit der [Sites-Konsole **zu einer vorhandenen** navigiert ](/help/sites-cloud/authoring/sites-console/introduction.md), können Sie sie zur Bearbeitung öffnen.
+Wenn Sie [eine Seite erstellt haben](/help/sites-cloud/authoring/sites-console/creating-pages.md) bzw. in [der **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) zu einer bereits vorhandenen Seite navigiert sind, können Sie diese zur Bearbeitung öffnen.
 
 1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigieren Sie zu der Seite, die Sie bearbeiten möchten.
@@ -212,7 +212,7 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite [eine Sei
 
 Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 
-1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Öffnen Sie [die **Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md). 
 1. Navigieren Sie zum gewünschten Speicherort.
 1. Um die Optionsliste zu öffnen, wählen Sie **Erstellen** in der Symbolleiste aus.
 1. Wählen Sie **Ordner** aus, um das Dialogfeld zu öffnen. Hier können Sie den **Namen** und den **Titel** eingeben:

@@ -5,9 +5,9 @@ exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Organisationen können bis zu drei zusätzliche Veröffentlichungsregionen lizen
 >[!NOTE]
 >
 >* Diese Funktion ist für die Sites- und Forms-Lösungen verfügbar.
->* Diese Funktion kann nicht auf [Sandbox-Programme“ angewendet ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+>* Sie kann nicht auf [Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) angewendet werden.
 >* Für diese Funktion muss Ihr Programm auf die AEM-Version 12142 oder höher aktualisiert werden.
 
 ## Anwendungsfälle {#use-cases}

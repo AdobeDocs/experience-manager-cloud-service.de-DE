@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktion
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1150'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Bei Autoren-Services von AEM Cloud Service sowie beim Asset-Wähler wird das IMS
 
 >[!NOTE]
 >
-Weitere Informationen zur Aktivierung der IMS-Authentifizierung bei auf AEM Asset Selector basierenden Integrationen erhalten Sie vom Enterprise Support
+Wenden Sie sich an den Enterprise Support, um weitere Informationen zum Aktivieren der IMS-Authentifizierung bei Integrationen zu erhalten, die auf dem AEM Asset-Wähler basieren.
 
 1. Für Erlebnisse, die nicht auf dem Asset-Wähler basieren, unterstützen AEM as a Cloud Service und Dynamic Media mit OpenAPI-Funktionen derzeit Server-seitige API-Integrationen und können IMS-Bearer-Token generieren.
    * Befolgen Sie die Anweisungen [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow), um Service-to-Server-API-Integrationen durchzuführen, mit denen die IMS-Bearer-Token über die [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) abgerufen werden können

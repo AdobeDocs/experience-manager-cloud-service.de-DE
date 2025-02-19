@@ -5,9 +5,9 @@ exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ AEM-Site-Vorlagen sind Pakete, die vordefinierten Inhalt und eine vordefinierte 
 
 Das AEM-Referenzdemo-Add-on enthält mehrere Vorlagen für verschiedene Test- und Demonstrationsanforderungen. Nachdem Sie Ihr Programm erstellt und die Pipeline bereitgestellt haben, um das Add-on zu installieren, können Sie sich bei AEM anmelden und Sites basierend auf vielen Demo-Vorlagen erstellen.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der Tour zum AEM-Referenzdemo-Add-on abgeschlossen haben, sollten Sie wie folgt vorgehen:
 
@@ -104,7 +104,7 @@ Nachdem Sie nun diesen Teil der Tour zum AEM-Referenzdemo-Add-on abgeschlossen h
 * Wissen Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
 * Sehen, wie mit Vorlagen in nur wenigen Klicks neue Sites erstellt werden können, die mit Demo-Inhalten gefüllt sind.
 
-Nutzen Sie diese Kenntnisse und fahren Sie mit der Journey zur schnellen Site-Erstellung in der AEM fort, indem Sie [Erstellen eines Programms und einer Pipeline](create-program.md) lesen. Hier erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
+Bauen Sie auf diesem Wissen auf und fahren Sie mit der Tour zur schnellen AEM-Site-Erstellung fort, indem Sie als Nächstes das Dokument [Erstellen eines Programms und einer Pipeline](create-program.md) lesen. Hier erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

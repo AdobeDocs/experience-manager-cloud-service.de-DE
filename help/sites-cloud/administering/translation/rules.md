@@ -6,9 +6,9 @@ role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1288'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,17 +18,17 @@ Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine AEM- oder Übersetzungserfahrung haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
 
 ## Inhaltsfragmente und Übersetzungsregeln {#content-fragments}
 
-Die in diesem Dokument beschriebenen Übersetzungsregeln gelten nur dann für Inhaltsfragmente, wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** auf der Konfigurationsebene des [Translation Integration Framework](integration-framework.md#assets-configuration-properties) nicht aktiviert wurde.
+Die in diesem Dokument beschriebenen Übersetzungsregeln gelten nur dann für Inhaltsfragmente, wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** auf der [Konfigurationsebene des Übersetzungs-Integrations-Frameworks](integration-framework.md#assets-configuration-properties) nicht aktiviert wurde.
 
 Wenn die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** aktiv ist, verwendet AEM das Feld **Übersetzbar** bei [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties), um zu bestimmen, ob das Feld übersetzt werden soll, und um automatisch Übersetzungsregeln zu erstellen. Diese Option ersetzt ggf. von Ihnen erstellte Übersetzungsregeln und erfordert keine Eingriffe oder zusätzlichen Schritte.
 
 Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, muss die Option **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** in der Framework-Konfiguration für die Übersetzungsintegration deaktiviert sein und Sie müssen die unten beschriebenen Schritte ausführen, um Ihre Regeln zu erstellen.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die Seiten und Assets werden als Knoten im JCR-Repository dargestellt. Bei dem extrahierten Inhalt handelt es sich um einen oder mehrere Eigenschaftswerte des Knotens. Die Übersetzungsregeln identifizieren die Eigenschaften, die den zu extrahierenden Inhalt enthalten.
 

@@ -5,9 +5,9 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 Verwenden Sie das Adobe Content Package Maven-Plug-in, um Paketbereitstellungs- und -verwaltungsaufgaben in Ihre Maven-Projekte zu integrieren.
 
-Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM (Package [) ausgeführt ](/help/implementing/developing/tools/package-manager.md)
+Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package-Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM [Package Manager](/help/implementing/developing/tools/package-manager.md) ausgeführt werden:
 
 * Erstellen Sie neue Pakete anhand der Dateien im Dateisystem.
 * Installieren und deinstallieren Sie Pakete in AEM.
@@ -31,7 +31,7 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 
 >[!NOTE]
 >
->Das Paket **Erstellung** wird jetzt vom Plug-[ „Apache Jackrabbit FileVault Package Maven“ ](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
+>Die **Paketerstellung** wird jetzt über das [Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/) durchgeführt.
 >
 >Dieser Artikel beschreibt die **Bereitstellung** der erstellten Pakete in AEM, die vom Adobe Content Package Maven-Plug-in durchgeführt wird.
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service hält sich an die neuesten Best Practices für Package-Ma
 >
 >Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.
 
-## Abrufen des Content Package Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
+## Abrufen des Content Package-Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
 
 Das Plug-in ist im [Maven Central Repository](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public) verfügbar.
 

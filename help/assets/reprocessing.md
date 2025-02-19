@@ -6,9 +6,9 @@ exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Lesen Sie mehr zum [Erneuten Verarbeiten von Metadatenprofilen](https://experien
 
 ### Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner {#reprocessing-dynamic-media}
 
-Sie können Assets in einem Ordner neu verarbeiten, der bereits über ein später von Ihnen geändertes Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt. Weitere Informationen finden Sie unter [Dynamic Media-Assets in einem Ordner erneut ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=de).
+Sie können Assets in einem Ordner neu verarbeiten, der bereits über ein später von Ihnen geändertes Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt. Weitere Informationen finden Sie unter [Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=de).
 
 >[!NOTE]
 >

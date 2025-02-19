@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Grundlegendes zur CMS-Headless-Entwicklung {#learn-about}
 
-In diesem Teil der [AEM Headless-Entwickler-Journey](overview.md) erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 
 ## Ziel {#objective}
 
@@ -115,7 +115,7 @@ Als Branchenführer im Bereich Digital Experience Management hat Adobe erkannt, 
 
 Diese Tour konzentriert sich auf das reine Headless-Modell der Inhaltsbereitstellung. Sobald Sie jedoch über dieses Grundwissen verfügen, können Sie weiter erkunden, wie Sie die Leistungsfähigkeit beider Modelle nutzen können.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Danke für Ihren Einstieg in die AEM Headless-Tour! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 
@@ -127,7 +127,7 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM-Headless-Tour fort, inde
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwicklungs-Journey fortzufahren, indem Sie das Dokument [Erste Schritte mit AEM Headless as a Cloud Service](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit AEM Headless as a Cloud Service](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um die Headless-Tour fortzusetzen.
 
 * [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Grundlegendes zur Struktur von AEM as a Cloud Service
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)

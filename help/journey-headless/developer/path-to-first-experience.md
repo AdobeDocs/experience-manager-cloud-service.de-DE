@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1956'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Gestalten Ihres ersten Erlebnisses mit AEM Headless {#path-to-first-experience}
 
-In diesem Teil der [AEM Headless-Entwickler-Journey](overview.md) erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Überlegungen zur Planung, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Planungsüberlegungen, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument zur AEM Headless-Entwickler-Tour, [Erste Schritte mit AEM as a Cloud Service](getting-started.md), haben Sie sich mit den Grundlagen zu Headless-CMS-Lösungen vertraut gemacht. Nun verfügen Sie über folgenden Voraussetzungen:
 
@@ -77,7 +77,7 @@ Inhaltsautorinnen und Inhaltsautoren erstellen Inhalte auf Basis der Inhaltsmode
 
 ## Einrichtung {#setup}
 
-Bevor Sie Headless-Technologie in AEM nutzen können, müssen Sie sicherstellen, dass alle erforderlichen Funktionen aktiviert sind. Diese werden nachfolgend beschrieben. Die einzelnen Schritte werden später auf der [AEM Headless-Entwickler-Journey erläutert](#overview.md).
+Bevor Sie Headless-Technologie in AEM nutzen können, müssen Sie sicherstellen, dass alle erforderlichen Funktionen aktiviert sind. Diese werden nachfolgend beschrieben. Die einzelnen Schritte werden im Verlauf der [AEM Headless-Entwickler-Tour](#overview.md) näher erläutert.
 
 Optional können Sie auch [zusätzliche Ressourcen](#additional-resources) für weitere Informationen zu den einzelnen Themen einsehen.
 
@@ -123,7 +123,7 @@ Der Erfolg eines Headless-Projekts hängt nicht nur von der implementierten Tech
 * Nutzen Sie alle Funktionen Ihres Übersetzungstechnologiesystems, die Sie in AEM integrieren können, etwa ein Translation Memory.
 * Bringen Sie in Erfahrung, ob Rich-Media-Content wie Bilder und Videos lokalisiert werden müssen.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 
@@ -143,7 +143,7 @@ Egal, welcher Lernstil Ihnen liegt: Adobe möchte, dass Sie erfolgreich sind, we
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwicklungs-Journey fortzufahren, indem Sie das Dokument [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle](model-your-content.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fortzufahren, indem Sie das Dokument [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle](model-your-content.md) lesen. Im Folgenden finden Sie jedoch noch zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um die Headless-Tour fortzusetzen.
 
 * [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 * [Headless-Entwicklung für AEM Sites as a Cloud Service](/help/headless/introduction.md) – eine kurze Einführung in die erforderlichen Funktionen, die AEM Headless-Entwickelnden eine Orientierungshilfe bietet.

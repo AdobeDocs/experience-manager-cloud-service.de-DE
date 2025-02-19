@@ -1,14 +1,14 @@
 ---
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
+title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen
 keywords: Anleitung zum Auswählen einer Sendeaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Um eine Übermittlungsaktion für ein adaptives Formular zu definieren, verwende
 * Registerkarte „Formulardatenmodell“
 * Registerkarte „Übermittlung“
 
-Sie können die Eigenschaften des Formular-Containers im Dialogfeld „Konfigurieren“ definieren. Weitere Informationen zum Dialogfeld „Konfigurieren“ einer Formular-Container-Komponente finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=de).
+Sie können die Eigenschaften des Formular-Containers im Dialogfeld „Konfigurieren“ definieren. Für weitere Informationen zum Dialogfeld „Konfigurieren“ einer Formular-Container-Komponente [klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=de).
 
 ## Auswählen und Konfigurieren einer Übermittlungsaktion für ein adaptives Formular {#select-and-configure-submit-action}
 

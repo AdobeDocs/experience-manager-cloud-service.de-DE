@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, sollten Sie b
 
 ## So geht es weiter {#what-is-next}
 
-Um zu beginnen, schauen Sie sich den nächsten Artikel an: [Erfahren Sie mehr über die CMS Headless-Entwicklung](learn-about.md),
+Um zu beginnen, schauen Sie sich den nächsten Artikel an: [Erfahren Sie mehr über die Entwicklung von CMS Headless](learn-about.md).
 
 ### Wählen Sie Ihren eigenen Weg {#choose-your-path}
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Der universelle Editor bietet eine moderne und intuitive grafische Benutzeroberf
 
 Details zu den Bausteinen können dann im Bedienfeld „Eigenschaften“ konfiguriert werden.
 
-![Bausteineigenschaften konfigurieren](assets/block-properties.png)
+![Konfigurieren der Bausteineigenschaften](assets/block-properties.png)
 
-Weitere Informationen zum Erstellen von Inhalten mit dem universellen Editor finden Sie im Dokument [Authoring von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
+Weitere Informationen zum Verfassen mit dem universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 Lesen Sie hierzu das [Erste-Schritte-Handbuch für Entwickelnde für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), um zu erfahren, wie Sie Ihr eigenes Projekt mit AEM und Edge Delivery Services erstellen können.
 

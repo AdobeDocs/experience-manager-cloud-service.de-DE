@@ -5,9 +5,9 @@ exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Dieser Artikel konzentriert sich auf das zugrunde liegende Framework, das Taggin
 
 Taggen Sie Inhalte und nutzen Sie die AEM-Tagging-Infrastruktur wie folgt:
 
-* Das Tag muss als Knoten vom Typ [`cq:Tag`](#cq-tag-node-type) unter dem Stammknoten der [Taxonomie“ ](#taxonomy-root-node).
+* Das Tag muss unterhalb des [Stammknotens der Taxonomie](#taxonomy-root-node) als Knoten vom Typ [`cq:Tag`](#cq-tag-node-type) vorhanden sein
 * Der `NodeType` des mit Tags versehenen Inhaltsknotens muss das Mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) beinhalten.
 * Die [`TagID`](#tagid) wird zur Eigenschaft [`cq:tags`](#cq-tags-property) des Inhaltsknotens hinzugefügt, was einen Knoten vom Typ [`cq:Tag`](#cq-tag-node-type) ergibt.
 
@@ -42,17 +42,17 @@ Das Tagging-Framework schränkt außerdem Autorinnen bzw. Autoren sowie Site-Bes
 
 * Der Knotentyp ist `cq:Tag`.
 * Der Knotenname ist eine Komponente der [`TagID`](#tagid).
-* Die [`TagID`](#tagid) enthält immer einen [Namespace](#tag-namespace).
+* Die [`TagID`](#tagid) umfasst immer einen [Namespace](#tag-namespace).
 * Die Eigenschaft `jcr:title` (der Titel, der in der Benutzeroberfläche angezeigt werden soll) ist optional.
 * Die Eigenschaft `jcr:description` ist optional.
-* Wenn untergeordnete Knoten enthalten sind, wird als „Container[Tag“ ](#container-tags).
-* Das Tag wird im Repository unter einem Basispfad gespeichert, der als [Stammknoten der Taxonomie“ bezeichnet ](#taxonomy-root-node).
+* Wird als [Container-Tag](#container-tags) bezeichnet, wenn untergeordnete Knoten enthalten sind.
+* Das Tag wird im Repository unterhalb eines Basispfads gespeichert, der als [Stammknoten der Taxonomie](#taxonomy-root-node) bezeichnet wird.
 
 ### TagID (Tag-ID) {#tagid}
 
 Eine `TagID` identifiziert einen Pfad, der einen Tag-Knoten im Repository ergibt.
 
-Normalerweise ist die `TagID` eine kurze `TagID`, die mit dem Namespace beginnt. Sie kann auch eine absolute `TagID` sein, die mit dem „Stammknoten [ Taxonomie“ ](#taxonomy-root-node).
+Normalerweise ist die `TagID` eine kurze `TagID`, die mit dem Namespace beginnt. Sie kann auch eine absolute `TagID` sein, die mit dem [Stammknoten der Taxonomie](#taxonomy-root-node) beginnt.
 
 Wenn Inhalte mit Tags versehen werden, aber noch nicht vorhanden sind, wird dem Inhaltsknoten die Eigenschaft [`cq:tags`](#cq-tags-property) und dem `String`-Array-Wert der Eigenschaft die `TagID` hinzugefügt.
 

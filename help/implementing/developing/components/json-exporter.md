@@ -5,9 +5,9 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
   >[!NOTE]
   >
-  >Obwohl es sich nicht um eine Standardimplementierung [mehrere Selektoren werden unterstützt](enabling-json-exporter.md#multiple-selectors) muss `model` jedoch die erste sein.
+  >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt](enabling-json-exporter.md#multiple-selectors), jedoch muss `model` der erste sein.
 
 ### Weiterführende Informationen {#further-information}
 

@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4990'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1062,7 +1062,7 @@ Informationen zu RDE in AEM as a Cloud Service finden Sie im Video-Tutorial, das
 
 ### Abrufen der neuesten AEM-Version für eine vorhandene RDE {#get-latest-aem-version}
 
-Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Ein [RDE-Zurücksetzen](#reset-rde) das mit Cloud Manager oder dem `aio aem:rde:reset`-Befehl durchgeführt werden kann, durchläuft die RDE und setzt sie auf die neueste AEM-Version.
+Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Das [Zurücksetzen einer RDE](#reset-rde), das mit Cloud Manager oder dem Befehl `aio aem:rde:reset` durchgeführt werden kann, führt einen Zyklus der RDE durch und setzt sie auf die neueste AEM-Version.
 
 ## Fehlerbehebung für aio RDE-Plug-ins {#aio-rde-plugin-troubleshooting}
 

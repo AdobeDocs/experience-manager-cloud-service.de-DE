@@ -5,9 +5,9 @@ exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragment
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Navigation** > **Inhaltsfragmente** aus.
 
-1. Wählen Sie den [zuvor erstellten Ordner](create-assets-folder.md) aus.
+1. Wählen Sie den [zuvor von Ihnen erstellten Ordner](create-assets-folder.md).
 1. Wählen Sie **Erstellen** aus.
 1. Die Erstellung eines Inhaltsfragments wird als Dialogfeld angezeigt.
 Wählen Sie den Speicherort und das Modell aus, das Sie zum Erstellen Ihres Inhaltsfragments verwenden möchten.
@@ -49,7 +49,7 @@ Inhaltsfragmente können auch auf andere Assets in AEM verweisen. [Diese Assets 
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie nun ein Inhaltsfragment erstellt haben, können Sie mit dem letzten Teil der ersten Schritte fortfahren und [API-Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen](create-api-request.md).
+Nachdem Sie nun ein Inhaltsfragment erstellt haben, können Sie zum letzten Teil der Anleitung für den Einstieg übergehen und [API-Anfragen erstellen, um auf Inhaltsfragmente zuzugreifen und diese bereitzustellen](create-api-request.md).
 
 >[!TIP]
 >

@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 93%
 >title="Zuweisen von AEM-Produktprofilen"
 >abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Kontaktieren Sie diesbezüglich Ihre Admins."
 
-In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
+In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
 
 ## Ziel {#objective}
 
-Nachdem Sie das vorherige Dokument „Umgebungen erstellen“ auf dieser Onboarding-Journey gelesen [ und Ihre Cloud](create-environments.md)Ressourcen konfiguriert haben, gewähren Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf die AEM selbst. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
+Nachdem Sie das vorherige Dokument [Erstellen von Umgebungen](create-environments.md) in dieser Onboarding-Tour gelesen und Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
 
 Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
 

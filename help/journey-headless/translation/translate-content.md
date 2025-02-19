@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2120'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 Verwenden Sie die Übersetzungsintegration, um Ihre Headless-Inhalte zu übersetzen.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Konfigurieren des Übersetzungs-Connectors](configure-connector.md), haben Sie etwas über das Übersetzungs-Framework in AEM erfahren. Sie sollten jetzt folgende Punkte erfüllen:
 
@@ -72,7 +72,7 @@ Sie erhalten eine Nachricht, dass das Projekt erstellt wurde.
 
 >[!NOTE]
 >
->Es wird davon ausgegangen, dass die erforderliche Sprachstruktur für die Übersetzungssprachen bereits im Rahmen der [Definition Ihrer Inhaltsstruktur“ erstellt ](getting-started.md#content-structure). Dies sollte in Zusammenarbeit mit dem Inhaltsarchitekten erfolgen.
+>Es wird davon ausgegangen, dass die für die Sprachen der Übersetzungen erforderliche Sprachstruktur bereits im Rahmen der [Definition der Inhaltsstruktur erstellt wurde](getting-started.md#content-structure). Dies sollte in Zusammenarbeit mit der Inhaltsarchitektin bzw. dem Inhaltsarchitekten erfolgen.
 >
 >Wenn die Sprachordner nicht vorab erstellt werden, können Sie keine Sprachkopien, wie in den vorherigen Schritten beschrieben, erstellen.
 
@@ -187,7 +187,7 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 >
 >Der Pfad-Browser ist ein leistungsstarkes Tool, mit dem Sie Inhalte suchen, filtern und darin navigieren können. Wählen Sie die Schaltfläche **Nur Inhalt/Filter** zum Umschalten des Seitenbereichs und zum Einblenden erweiterter Filter wie **Änderungsdatum** oder **Übersetzungsstatus**.
 >
->Weitere Informationen zum Pfad-Browser finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
+>Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt „Zusätzlichen Ressourcen“](#additional-resources).
 
 Sie können die vorherigen Schritte verwenden, um die erforderlichen Inhalte zu allen Sprachen (Aufträgen) für das Projekt hinzuzufügen. Nachdem Sie alle Inhalte ausgewählt haben, können Sie mit der Übersetzung beginnen.
 
@@ -205,7 +205,7 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 
 ## Überprüfen übersetzter Inhalte {#reviewing}
 
-[Wie bereits erwähnt](#using-translation-project) fließen maschinell übersetzte Inhalte mit dem Status **Genehmigt“ zurück in AEM** da davon ausgegangen wird, dass aufgrund der maschinellen Übersetzung kein menschliches Eingreifen erforderlich ist. Es ist jedoch noch möglich, die übersetzten Inhalte zu überprüfen.
+[Wie bereits erwähnt](#using-translation-project), fließen maschinell übersetzte Inhalte mit dem Status **Genehmigt** zurück in AEM, da davon ausgegangen wird, dass aufgrund der maschinellen Übersetzung kein menschliches Eingreifen erforderlich ist. Es ist jedoch noch möglich, die übersetzten Inhalte zu überprüfen.
 
 Wechseln Sie einfach zum abgeschlossenen Übersetzungsauftrag und wählen Sie ein Zeilenelement aus, indem Sie auf das Kontrollkästchen tippen oder klicken. Das Symbol **In Inhaltsfragment anzeigen** wird in der Symbolleiste angezeigt.
 
@@ -237,7 +237,7 @@ Wenn Ihr Übersetzungsdienstleister menschliche Übersetzung bereitstellt, biete
 
 Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments. Abgesehen von den zusätzlichen Genehmigungsoptionen ist der Workflow für menschliche Übersetzungen mit dem für maschinelle Übersetzungen identisch, wie in dieser Tour beschrieben.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 
@@ -249,7 +249,7 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-J
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Journey fortzufahren, indem Sie das Dokument [Mit Publish übersetzte Inhalte](publish-content.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Veröffentlichen übersetzter Inhalte](publish-content.md) lesen. Im Folgenden finden Sie jedoch noch zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um die Headless-Tour fortzusetzen.
 
 * [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md) – Erfahren Sie mehr über die Einzelheiten von Übersetzungsprojekten und über zusätzliche Funktionen wie Workflows für menschliche Übersetzung und mehrsprachige Projekte.
 * [Autorenumgebung und Tools](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM bietet verschiedene Mechanismen für die Organisation und Bearbeitung von Inhalten, einschließlich eines robusten Pfad-Browsers.

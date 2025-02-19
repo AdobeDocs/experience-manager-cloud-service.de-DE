@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Aufgaben von Entwickelnden und Bereitstellungs-Managern {#developer-deployment-manager}
 
-In diesem optionalen Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Entwicklende und Bereitstellungs-Manager auf Git zugreifen können, um Anwendungen zu entwickeln und Pipelines zur Bereitstellung zu verwenden.
+In diesem optionalen Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Entwickelnde und Implementierungs-Manager auf Git zugreifen können, um Anwendungen zu entwickeln und Pipelines zur Bereitstellung zu verwenden.
 
 ## Ihre bisherige Tour {#story-so-far}
 
-Sie sind in Ihrer Onboarding-Tour weit gekommen! Herzlichen Glückwunsch! Der Systemadministrator bzw. die Systemadministratorin hat die Onboarding-Journey abgeschlossen, indem er/sie die erforderlichen Cloud-Ressourcen eingerichtet und Zugriff auf das Dokument [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) gewährt hat.
+Sie sind in Ihrer Onboarding-Tour weit gekommen! Herzlichen Glückwunsch! Die Systemadministratorin bzw. der Systemadministrator hat die Onboarding-Tour abgeschlossen, indem die erforderlichen Cloud-Ressourcen eingerichtet und Zugriff gemäß [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) gewährt wurde.
 
 Jetzt können Ihre Entwickelnden und Bereitstellungs-Manager mit der Erstellung eigener Anwendungen beginnen und Ihre AEM-Benutzenden mit der Erstellung von Inhalten. Ihr Onboarding ist jetzt abgeschlossen und Sie können Ihr neues AEM as a Cloud Service-System verwenden, das in diesem Dokument veranschaulicht wird.
 
@@ -127,7 +127,7 @@ Sie können die Details der Ausführung sehen, indem Sie erneut auf die Schaltfl
 
 Herzlichen Glückwunsch! Sie haben jetzt Code aus Ihrem Git-Repository in einer Nicht-Produktionsumgebung bereitgestellt!
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Nachdem Sie dieses Dokument gelesen haben, wissen Sie Folgendes:
 
@@ -136,7 +136,7 @@ Nachdem Sie dieses Dokument gelesen haben, wissen Sie Folgendes:
 
 Sie haben als Entwickler bzw. Entwicklerin oder Bereitstellungs-Manager nicht nur Kenntnisse über Cloud Manager, sondern auch über Arbeitsumgebungen, Repositorys und Pipelines erhalten! Aber es gibt noch mehr über die leistungsstarken CI/CD-Tools von AEM as a Cloud Service zu erfahren. Weitere Details finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
 
-Wenn Sie wissen möchten, wie Inhaltsautoren und -autorinnen auf AEM as a Cloud Service zugreifen und die entsprechenden Funktionen verwenden können, fahren Sie mit dem letzten Teil der Onboarding-Journey fort: [AEM-Benutzeraufgaben](aem-users.md).
+Wenn Sie wissen möchten, wie Inhaltsautorinnen und -autoren auf AEM as a Cloud Service zugreifen und die entsprechenden Funktionen verwenden können, fahren Sie mit dem letzten Teil der Onboarding-Tour, [AEM-Benutzeraufgaben](aem-users.md), fort.
 
 >[!TIP]
 >

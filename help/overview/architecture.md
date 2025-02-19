@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2713'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Der Code und die Konfiguration für AEM-Projekte werden in einem Code-Repository
    * Zum Speichern von Server-seitigem Java-Code und OSGi-Konfigurationen für die AEM-Autoren- und Veröffentlichungsebenen.
 * AEM-Frontend:
    * Zum Speichern von Client-seitigem JS-, CSS- und HTML-Code für die AEM-Autoren- und -Veröffentlichungsebenen.
-Weitere Informationen zu Client-Bibliotheken finden Sie unter [Verwenden Client-seitiger Bibliotheken auf AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+Weitere Details zu Client-seitigen Bibliotheken finden Sie unter [Verwenden Client-seitiger Bibliotheken in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 * AEM-Web-Ebene:
    * Speichert die Dispatcher-Konfigurationsdateien für die AEM-Veröffentlichungsebene.
 * AEM-Konfiguration:

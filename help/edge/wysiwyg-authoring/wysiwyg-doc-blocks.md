@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie Bausteine erstellen können, die sowohl für das WYSIWYG-A
 
 ## Überblick {#overview}
 
-Bei bestimmten Projekten können Sie sowohl das [WYSIWYG-Authoring mit dem universellen Editor ](/help/edge/wysiwyg-authoring/authoring.md) auch das [dokumentbasierte Authoring“ ](/help/edge/docs/authoring.md). Um die Entwicklungszeit zu minimieren und sicherzustellen, dass dieselbe Site-Erfahrung vorhanden ist, können Sie einen Satz von Blöcken erstellen, um beide Anwendungsfälle zu unterstützen.
+Bei bestimmten Projekten sollten Sie sowohl das [WYSIWYG-Authoring mit dem universellen Editor](/help/edge/wysiwyg-authoring/authoring.md) als auch das [dokumentenbasierte Authoring unterstützen](/help/edge/docs/authoring.md). Um die Entwicklungszeit zu minimieren und dasselbe Site-Erlebnis sicherzustellen, können Sie einen Satz von Bausteinen erstellen, um beide Anwendungsfälle zu unterstützen.
 
 Dazu müssen Sie sowohl für Ihre WYSIWYG-Authoring-Einrichtung als auch für Ihre dokumentbasierte Authoring-Einrichtung denselben Inhaltsmodellierungsansatz verwenden.
 

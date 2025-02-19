@@ -5,19 +5,19 @@ exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Terminologie von AEM as a Cloud Service {#terminology}
 
-In diesem Teil der [Onboarding-Journey](overview.md) lernen Sie die Terminologie von AEM as a Cloud Service und seine Grundstruktur kennen.
+In diesem Teil der [Onboarding-Tour](overview.md) lernen Sie die Terminologie von AEM as a Cloud Service und seine Grundstruktur kennen.
 
 ## Ziel {#objective}
 
-Nachdem Sie nun durch das Lesen des Dokuments [Onboarding-Vorbereitung](preparation.md) wissen, wie Sie sich auf den Onboarding-Prozess vorbereiten können, sollten Sie sich vor der Anmeldung mit einigen Begriffen des Systems und seiner Grundstruktur vertraut machen.
+Nachdem Sie nun durch das Lesen des Dokuments [Onboarding-Vorbereitung](preparation.md) wissen, wie Sie sich auf den Onboarding-Prozess vorbereiten können, sollten Sie sich vor der Anmeldung mit einigen Begriffen des Systems und seiner grundlegenden Struktur vertraut machen.
 
 AEM as a Cloud Service ist ein leistungsstarkes, flexibles Tool. Und wie bei jedem Tool, das Sie verwenden, sollten Sie auch hier den Aufbau und die zur Beschreibung genutzte Terminologie kennen. In diesem Dokument werden die wichtigste Begriffe erläutert, die Sie verstehen sollten, bevor Sie mit der Verwendung des Systems beginnen.
 
@@ -48,7 +48,7 @@ Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 * **Repositorys** dienen der Speicherung des benutzerdefinierten Codes und der Programme für WKND-Magazin und WKND-Medien.
 * Verschiedene **Tools und Workflows** arbeiten über die Repositorys hinweg, um Code über CI/CD-Pipelines bereitzustellen, auf Protokolle zuzugreifen, auf AEM zuzugreifen und so weiter.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM-Onboarding-Tour abgeschlossen haben, wissen Sie über Folgendes Bescheid:
 

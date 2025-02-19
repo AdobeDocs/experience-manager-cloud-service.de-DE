@@ -5,9 +5,9 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Ungültige persistierte GraphQL-Abfrage | Vorfall | Korrigieren Sie die ungültige GraphQL-Abfrage, indem Sie auf die [Dokumentation zur Fehlerbehebung bei persistierten GraphQL-Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=de) verweisen |
 | Traffic-Spitze am Ursprung | Vorfall | Schützen Sie Ihren Ursprung, indem Sie Traffic-Filterregeln zur Ratenbegrenzung konfigurieren, die bei niedrigeren Schwellenwerten ausgelöst werden als die Warnung bei standardmäßiger Traffic-Spitze am Ursprung.  Weitere Informationen finden Sie im Abschnitt [Blockieren von DoS- und DDoS-Angriffen mithilfe von Traffic-Regeln](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) in der Dokumentation zu den Traffic-Filterregeln, die auf ein Tutorial verweist. |
 | Ausgelöste Regeln für CDN-Traffic-Filter | Vorfall | Wenn die passende Traffic-Filterregel einen Angriff widerspiegelt und Ihre Site diesen Traffic nicht blockiert, schützen Sie Ihre Site, indem Sie eine Traffic-Filterregel im Blockierungsmodus konfigurieren. Weitere Informationen finden Sie im Abschnitt [Schützen von Websites mit Traffic-Filterregeln (einschließlich WAF-Regeln)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) in der Dokumentation zu den Traffic-Filterregeln, wo auf ein Tutorial verwiesen wird. |
-| Fehler bei der Splunk-Protokollweiterleitung | Vorfall | Überprüfen Sie, ob Ihr Splunk-Endpunkt funktioniert und über Ihre AEM Cloud Service-Umgebung erreichbar ist. Weitere Informationen zur Protokollweiterleitung finden Sie in der Dokumentation [Splunk-Protokollweiterleitung](/help/implementing/developing/introduction/logging.md#splunk-logs). Wenn Sie Hilfe bei der Fehlerbehebung benötigen oder Ihre Protokollierungskonfiguration ändern müssen, erstellen Sie ein Support-Ticket mit Adobe. |
+| Fehler bei der Splunk-Protokollweiterleitung | Vorfall | Überprüfen Sie, ob Ihr Splunk-Endpunkt funktioniert und über Ihre AEM Cloud Service-Umgebung erreichbar ist. Weitere Informationen zur Protokollweiterleitung finden Sie in der [Dokumentation zur Splunk-Protokollweiterleitung](/help/implementing/developing/introduction/logging.md#splunk-logs). Wenn Sie Hilfe bei der Fehlerbehebung benötigen oder Änderungen an Ihrer Protokollierungskonfiguration vornehmen müssen, erstellen Sie ein Support-Ticket bei Adobe. |
 | Seiten enthalten eine große Anzahl von Knoten | Proaktiv | Reduzieren Sie die Gesamtanzahl der Knoten auf einer Seite. Siehe die [Dokumentation zur Seitenkomplexität](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Große Anzahl an laufenden Workflow-Instanzen | Proaktiv | Beenden Sie laufende Workflows, die nicht mehr benötigt werden. Erfahren Sie, wie Sie einen [Bereinigungsauftrag konfigurieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance). |               |
 | Ablaufendes S2S-Zertifikat | Proaktiv | Erfahren Sie in der Dokumentation [Erstellen von Zugriffstoken für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials), wie Sie eine Berechtigung aktualisieren können. | Hohe Verbindungsanzahl | Proaktiv | Erfahren Sie mehr über das Pooling von Verbindungen in der [Dokumentation über das Pooling von Verbindungen im Zusammenhang mit erweiterten Netzwerkfunktionen](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

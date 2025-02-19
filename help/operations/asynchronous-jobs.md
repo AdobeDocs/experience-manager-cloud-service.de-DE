@@ -5,9 +5,9 @@ exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert übe
 
 1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
-1. Öffnen Sie in der Web-Konsole den **[!UICONTROL Standardmäßige Warteschlangenkonfiguration für asynchrone Prozesse]**.
+1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Standardwarteschlange für asynchrone Vorgänge]**.
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Assets]** den Schwellenwert für die Anzahl von Assets/Ordnern für die asynchrone Verarbeitung von Löschvorgängen an.
 
    ![Schwellenwert zum Löschen von Assets](assets/async-delete-threshold.png)
@@ -117,7 +117,7 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 
 1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
-1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration Verarbeitung von asynchronen]**&quot;.
+1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Verschiebeaufträge]**.
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Assets/Verweise]** den Schwellenwert für Assets/Ordner oder Verweise für die asynchrone Verarbeitung von Verschiebevorgängen fest.
 
    ![Schwellenwert für das Verschieben von Assets](assets/async-move-threshold.png)
@@ -129,7 +129,7 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 
 1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
-1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration Verarbeitung von asynchronen Seitenverschiebungsvorgängen]**.
+1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
 1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 
    ![Konfigurieren eines MSM](assets/async-msm.png)

@@ -5,15 +5,15 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Zugang zur Admin Console {#accessing-admin-console}
 
-In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie mehr über die erforderlichen Vorbereitungsmaßnahmen, bevor Sie sich erstmals in das System einloggen können.
+In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie mehr über die erforderlichen Vorbereitungsmaßnahmen, bevor Sie sich erstmals in das System einloggen können.
 
 ## Ziel {#objective}
 
@@ -94,7 +94,7 @@ Sollten Sie Probleme haben, erhalten Sie über die Admin Console Zugang zum Adob
 
 Über die Registerkarte können Sie Fälle erstellen und verwalten, direkt mit dem Support-Personal von Adobe chatten und Sitzungen mit Expertinnen und Experten arrangieren. System- und Support-Administratoren müssen sich anmelden, um Zugriff auf die Funktionen zur Verwaltung von Support-Fällen und Expertensitzungen zu erhalten.
 
-## Wie geht es weiter? {#whats-next}
+## So geht es weiter {#whats-next}
 
 Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 

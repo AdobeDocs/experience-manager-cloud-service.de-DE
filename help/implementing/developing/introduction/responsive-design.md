@@ -5,9 +5,9 @@ exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,10 +18,10 @@ Responsives Design ermöglicht die effektive Darstellung derselben Erlebnisse au
 
 >[!TIP]
 >
->Dieses Dokument bietet einen Überblick über responsives Design für Entwicklerinnen und Entwickler und darüber, wie Funktionen in AEM realisiert werden. Zusätzliche Ressourcen sind verfügbar:
+>Dieses Dokument bietet einen Überblick über das responsive Design für Entwickelnde und darüber, wie Funktionen in AEM umgesetzt werden. Zusätzliche Ressourcen sind verfügbar:
 >
->* Für Inhaltsautorinnen und -autoren sind Details zur Verwendung responsiver Design-Funktionen auf einer Inhaltsseite im Dokument [Responsives Layout“ verfügbar](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
->* Für Site-Admins werden Informationen zum Konfigurieren des Layout-Containers für Ihre Sites im Dokument [Konfigurieren des Layout-Containers und des Layout-Modus“ beschrieben](/help/sites-cloud/administering/responsive-layout.md)
+>* Informationen zur Verwendung von responsiven Design-Funktionen auf einer Inhaltsseite für Inhaltsautorinnen und -autoren finden Sie im Dokument [Responsives Layout für Ihre Inhaltsseiten](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
+>* Für Site-Admins werden Details zum Konfigurieren des Layout-Containers für Ihre Sites unter [Konfigurieren von Layout-Container und Layout-Modus](/help/sites-cloud/administering/responsive-layout.md) beschrieben.
 
 ## Überblick {#overview}
 
@@ -85,7 +85,7 @@ Das [WKND-Tutorial](develop-wknd-tutorial.md) verwendet diese Strategie zur Defi
 
 ### Verwenden von Medienabfragen bei AEM-Seiten {#using-media-queries-with-aem-pages}
 
-[Das WKND-Beispielprojekt](/help/implementing/developing/introduction/develop-wknd-tutorial.md) und der [AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)Projektarchetyp verwenden die [Seitenkernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=de), die die Clientlibs über die Seitenrichtlinie enthält.
+Das [WKND-Beispielprojekt](/help/implementing/developing/introduction/develop-wknd-tutorial.md) und der [AEM-Projekt-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) verwenden die [Seitenkernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=de), die die Client-Bibliotheken über die Seitenrichtlinie enthält.
 
 Wenn Ihre eigene Seitenkomponente nicht auf der Seitenkernkomponente basiert, können Sie auch den Client-Bibliotheksordner in das HTL- oder JSP-Skript einschließen. Dadurch wird die CSS-Datei mit den Medienabfragen generiert und referenziert, die für die Funktion des responsiven Rasters erforderlich sind.
 
@@ -144,7 +144,7 @@ Responsive Seiten passen sich dynamisch an das Gerät an, auf dem sie gerendert 
 
 Mit dem Layout-Container von AEM können Sie ein responsives Layout effizient und effektiv implementieren, um die Seitendimensionen an den Client-Viewport anzupassen.
 
->[Die GitHub-](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) des responsiven Rasters ist ein Verweis, der Frontend-Entwicklern gegeben werden kann, sodass sie das AEM-Raster außerhalb von AEM verwenden können, z. B. beim Erstellen von statischen HTML-Mockups für eine zukünftige AEM-Site.
+>Die [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Raster ist eine Referenz, die Frontend-Entwickelnden zur Verfügung gestellt werden kann, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM-Sites zu erstellen.
 
 >[!TIP]
 >
@@ -152,20 +152,20 @@ Mit dem Layout-Container von AEM können Sie ein responsives Layout effizient un
 
 ## Verschachtelte responsive Raster {#nested-responsive-grids}
 
-Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass es sich als Best Practice für die Adobe empfiehlt, die Struktur so flach wie möglich zu halten.
+Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass Adobe als Best Practice empfiehlt, die Struktur so flach wie möglich zu halten.
 
 Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, stellen Sie Folgendes sicher:
 
 * Alle Container (Container, Registerkarten, Akkordeons usw.) haben die Eigenschaft `layout = responsiveGrid`.
 * Mischen Sie nicht die Eigenschaft `layout = simple` in der Container-Hierarchie.
 
-Dazu gehören alle strukturellen Container aus der Seitenvorlage.
+Dies betrifft alle strukturellen Container aus der Seitenvorlage.
 
-Die Spaltennummer des inneren Containers sollte nie größer sein als die des äußeren Containers. Das folgende Beispiel erfüllt diese Bedingung. Während die Spaltennummer des äußeren Containers für den Standardbildschirm (Desktop) 8 beträgt, ist die Spaltennummer des inneren Containers 4.
+Die Spaltenanzahl des inneren Containers darf nie größer sein als die des äußeren Containers. Das folgende Beispiel erfüllt diese Bedingung. Die Spaltenanzahl des äußeren Containers für den Standardbildschirm (Desktop) beträgt 8 und die des inneren Containers 4.
 
 >[!BEGINTABS]
 
->[!TAB Beispielknotenstruktur]
+>[!TAB Beispiel einer Knoten-Struktur]
 
 ```text
 container
@@ -184,7 +184,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Beispiel für resultierendes HTML]
+>[!TAB Beispiel des HTML-Ergebnisses]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

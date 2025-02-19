@@ -5,9 +5,9 @@ exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 
 ## Debuggen von ContextHub {#debugging-contexthub}
 
-Es gibt verschiedene Optionen zum Debugging von ContextHub, einschließlich der Erstellung von Protokollen. Weitere [ finden Sie unter „Konfigurieren von ContextHub](configuring-contexthub.md#logging-debug-messages-for-contexthub).
+Es gibt verschiedene Optionen zum Debugging von ContextHub, einschließlich der Erstellung von Protokollen. Weitere Informationen finden Sie unter [Konfigurieren von ContextHub](configuring-contexthub.md#logging-debug-messages-for-contexthub).
 
 ## Überblick über das ContextHub-Framework {#see-an-overview-of-the-contexthub-framework}
 

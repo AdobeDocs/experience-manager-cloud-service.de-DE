@@ -5,9 +5,9 @@ exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Alle Ereignisse folgen einer Namenskonvention.
 
 Zum Beispiel `aue:content-update` und `aue:ui-select`
 
-Ereignisse umfassen die Payload der Anfrage und der Antwort und werden ausgelöst, sobald der entsprechende Aufruf erfolgreich gewesen ist. Weitere Informationen zu Aufrufen und Beispiele für ihre Payloads finden Sie im Dokument [universelle Editor-Aufrufe](/help/implementing/universal-editor/calls.md).
+Ereignisse umfassen die Payload der Anfrage und der Antwort und werden ausgelöst, sobald der entsprechende Aufruf erfolgreich gewesen ist. Weitere Informationen zu Aufrufen und Beispielen für deren Payloads finden Sie im Dokument [Aufrufe im universellen Editor](/help/implementing/universal-editor/calls.md).
 
 ## Ereignisse zur Inhaltsaktualisierung {#content-events}
 

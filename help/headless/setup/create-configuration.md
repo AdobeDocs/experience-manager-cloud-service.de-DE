@@ -5,9 +5,9 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Der Konfigurations-Browser bietet eine generische Konfigurations-API, eine Inhal
 
 Stellen Sie sich im Kontext von Headless-Content-Management in AEM eine Konfiguration als einen Arbeitsplatz in AEM vor, an dem Sie Ihre Inhaltsmodelle erstellen können, die die Struktur Ihrer zukünftigen Inhalte und Inhaltsfragmente definieren. Sie können über mehrere Konfigurationen verfügen, um diese Modelle zu trennen.
 
-Wenn Sie mit [Seitenvorlagen in einer Full-Stack-AEM-](/help/sites-cloud/authoring/page-editor/templates.md) vertraut sind, werden ähnliche Konfigurationen für die Verwaltung von Inhaltsmodellen verwendet.
+Wenn Sie mit [Seitenvorlagen in einer Full-Stack-AEM-Implementierung](/help/sites-cloud/authoring/page-editor/templates.md) vertraut sind, ist die Verwendung von Konfigurationen für die Verwaltung von Inhaltsmodellen ähnlich.
 
 ## Erstellen einer Konfiguration {#how-to-create-a-configuration}
 
@@ -49,7 +49,7 @@ Sie können bei Bedarf mehrere Konfigurationen erstellen. Konfigurationen könne
 
 ## Nächste Schritte {#next-steps}
 
-Mit dieser Konfiguration können Sie jetzt mit dem zweiten Teil der ersten Schritte fortfahren und [Erstellen von Inhaltsfragmentmodellen](create-content-model.md).
+Mit dieser Konfiguration können Sie nun mit dem zweiten Teil der ersten Schritte fortfahren und [Inhaltsfragmentmodelle](create-content-model.md) erstellen.
 
 >[!TIP]
 >

@@ -6,9 +6,9 @@ role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ AEM bietet einen integrierten Connector für [Microsoft Translator](https://www.
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine AEM- oder Übersetzungserfahrung haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
 
 | Eigenschaft | Beschreibung |
 |---|---|
@@ -29,7 +29,7 @@ AEM bietet einen integrierten Connector für [Microsoft Translator](https://www.
 
 Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
-1. Wählen Sie im [Navigationsbereich](/help/sites-cloud/authoring/basic-handling.md#first-steps) die Option **Tools** > **Cloud Service** > **Übersetzungs-Cloud Service**.
+1. Wählen Sie im [Bedienfeld „Navigation“](/help/sites-cloud/authoring/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
 1. Navigieren Sie zu dem Ort, an dem Sie die Konfiguration erstellen möchten. Normalerweise ist dies in Ihrem Site-Stammverzeichnis oder es kann eine globale Standardkonfiguration sein.
 1. Wählen Sie die Schaltfläche **Erstellen**.
 1. Legen Sie Ihre Konfiguration fest.

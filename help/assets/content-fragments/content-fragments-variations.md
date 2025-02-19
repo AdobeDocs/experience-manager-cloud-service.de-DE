@@ -6,9 +6,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2518'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Der Vollbild-Texteditor bietet Folgendes:
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
-* Wählen Sie [format](#formats) ([Rich-Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown))
+* Wählen Sie das [Format](#formats) aus ([Rich-Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown)).
 
 * [Inhalt hochladen](#uploading-content)
 

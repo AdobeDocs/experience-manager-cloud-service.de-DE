@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Für eine detailliertere Beschreibung der Komponente können Sie (falls verfügb
 
 ![Komponenten-Browser-Informationen](assets/editor-side-panel-component-description.png)
 
-Weitere Informationen zu den verfügbaren Komponenten finden Sie unter [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md)
+Weitere Informationen zu den verfügbaren Komponenten finden Sie in der [Komponentenkonsole](/help/sites-cloud/authoring/components-console.md).
 
 ## Asset-Browser {#assets-browser}
 

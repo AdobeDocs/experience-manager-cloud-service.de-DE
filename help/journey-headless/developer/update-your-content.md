@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Aktualisieren Ihres Inhalts über AEM Assets-APIs {#update-your-content}
 
-In diesem Teil der [AEM Headless Developer Journey](overview.md) erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Headless-Tour, [Zugriff auf Ihre Inhalte über AEM-Bereitstellungs-APIs](access-your-content.md) haben Sie erfahren, wie Sie über die AEM-GraphQL-API auf Ihre Headless-Inhalte in AEM zugreifen können. Nun sollten Sie:
 
@@ -307,7 +307,7 @@ Weitere Informationen zur Verwendung der AEM Assets REST-API finden Sie in folge
 * Adobe Experience Manager Assets-HTTP-API (Zusätzliche Ressourcen)
 * Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API (Zusätzliche Ressourcen)
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 

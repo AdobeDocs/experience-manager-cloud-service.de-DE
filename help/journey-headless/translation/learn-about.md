@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Im weiteren Verlauf der Tour erfahren Sie mehr darüber, wie AEM Inhalte überse
 1. Ein Übersetzungsprojekt wird erstellt, um die Inhalte zu erfassen, sie an den Übersetzungsdienst zu senden und die Ergebnisse zu erhalten.
 1. Die übersetzten Inhalte werden überprüft und veröffentlicht.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Danke für Ihren Einstieg in die AEM Headless-Übersetzungs-Tour! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 
@@ -78,7 +78,7 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-T
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Journey fortzufahren, indem Sie das Dokument [Erste Schritte mit der AEM-Headless-Übersetzung](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit der AEM Headless-Übersetzung](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um mit der Headless-Tour fortzufahren.
 
 * [MSM und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md) – Die Details des Multi-Site-Managers von AEM und wie er mit seinen Übersetzungs-Tools zusammenarbeitet.
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)

@@ -6,19 +6,19 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1431'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Der AEM-Seiteneditor {#editing-page-content}
 
-Sobald Ihre Seite in der [**Sites**-](/help/sites-cloud/authoring/sites-console/introduction.md) erstellt wurde, können Sie den Inhalt der Seite mit dem AEM-Seiteneditor bearbeiten, einem leistungsstarken Tool für die Inhaltserstellung.
+Sobald Ihre Seite in der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) erstellt wurde, können Sie den Seiteninhalt mit dem AEM-Seiteneditor bearbeiten. Dieser ist ein leistungsstarkes Tool zur Inhaltserstellung.
 
 >[!NOTE]
 >
->Beim Bearbeiten einer Seite in der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) [ öffnet die Konsole den der Seitenvorlage entsprechenden Editor, entweder ](/help/sites-cloud/authoring/page-editor/templates.md) in diesem Dokument beschriebenen Seiteneditor oder [universeller Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
+>Beim Bearbeiten einer Seite in der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) öffnet die Konsole den entsprechenden Editor gemäß der [Vorlage](/help/sites-cloud/authoring/page-editor/templates.md) der Seite: entweder den in diesem Dokument beschriebenen Seiteneditor oder den [universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Die Symbolleiste der Seite bietet Zugriff auf die zum jeweiligen Kontext zugehö
 
 #### Seitliches Bedienfeld {#side-panel-button}
 
-Dadurch wird das [seitliche Bedienfeld](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) geöffnet/geschlossen, das den Asset-Browser, den Komponenten-Browser und die Inhaltsstruktur enthält.
+Dadurch wird das [seitliche Bedienfeld](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), das den Asset-Browser, den Komponenten-Browser und die Inhaltsstruktur enthält, geöffnet/geschlossen.
 
 ![Seitliches Bedienfeld ein/aus](assets/page-editor-side-panel-toggle.png)
 
@@ -78,7 +78,7 @@ Blendet die [Emulator-Symbolleiste](/help/sites-cloud/authoring/page-editor/resp
 
 #### ContextHub {#context-hub}
 
-Dadurch wird der [ContextHub“ ](/help/sites-cloud/authoring/personalization/contexthub.md). Sie ist nur im Modus **Vorschau** verfügbar.
+Öffnet den [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Ist nur im **Vorschaumodus** verfügbar.
 
 ![Schaltfläche „ContextHub“](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 
 #### Vorschau {#preview}
 
-Die Schaltfläche **Vorschau** aktiviert [Vorschaumodus](#preview-mode) und zeigt die Seite so an, wie sie bei der Veröffentlichung angezeigt wird.
+Die Schaltfläche **Vorschau** aktiviert den [Vorschaumodus](#preview-mode). Dieser zeigt die Seite so an, wie sie bei der Veröffentlichung angezeigt wird.
 
 ![Schaltfläche „Vorschau“](assets/page-editor-preview.png)
 

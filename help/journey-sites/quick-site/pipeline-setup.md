@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '949'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 85%
 
 Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
-Im vorherigen Dokument der Journey zur schnellen Site-Erstellung in der AEM, [Erstellen einer Site aus einer Vorlage](create-site.md), haben Sie gelernt, wie Sie mit einer Site-Vorlage schnell eine AEM-Site erstellen können, die mithilfe von Frontend-Tools weiter angepasst werden kann. Jetzt sollten Sie:
+Im vorherigen Dokument der Tour zur schnellen AEM-Site-Erstellung, [Erstellen einer Site aus einer Vorlage](create-site.md), haben Sie gelernt, wie Sie mit einer Site-Vorlage schnell eine AEM-Site erstellen können, die mithilfe von Frontend-Tools weiter angepasst werden kann. Jetzt sollten Sie:
 
-* Wissen, wie Sie AEM-Site-Vorlagen abrufen.
+* wissen, wie Sie AEM-Site-Vorlagen abrufen,
 * Wissen, wie Sie mit einer Vorlage eine neue Site erstellen.
-* Erfahren haben, wie Sie die Vorlage von Ihrer neuen Site herunterladen, um sie für den Front-End-Entwickler bereitzustellen.
+* Erfahren haben, wie Sie die Vorlage von Ihrer neuen Site herunterladen, um sie für die Frontend-Entwicklung bereitzustellen.
 
 Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie eine Frontend-Pipeline einrichten können, die der Frontend-Entwickler später zur Bereitstellung von Frontend-Anpassungen verwendet.
 
@@ -107,19 +107,19 @@ Die neue Pipeline wird erstellt und im Abschnitt **Pipelines** im Cloud Manager-
 >
 >Wenn Sie bereits mit Pipelines in AEMaaCS vertraut sind und mehr über die Unterschiede zwischen den verschiedenen Pipelines erfahren möchten, einschließlich weiterer Informationen zur Frontend-Pipeline, lesen Sie die Informationen unter „Konfigurieren der CI/CD-Pipeline – Cloud Services“, worauf im Abschnitt [Zusätzliche Ressourcen](#additional-resources) unten verlinkt wird.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgeschlossen haben, sollten Sie:
 
 * Erfahren Sie, was eine Frontend-Pipeline ist.
 * Erfahren Sie, wie Sie eine Frontend-Pipeline in Cloud Manager einrichten.
 
-Bauen Sie auf diesem Wissen auf und fahren Sie mit der Journey zur schnellen Site-Erstellung der AEM fort, indem Sie als Nächstes das Dokument [Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md) lesen, in dem Sie erfahren, wie Sie Frontend-Entwickler in Cloud Manager integrieren, damit sie Zugriff auf das Git-Repository und die Pipeline Ihrer AEM-Site haben.
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Tour zur schnellen AEM-Site-Erstellung fort, indem Sie als Nächstes das Dokument [Gewähren des Zugriffs für die Frontend-Entwicklungsperson](grant-access.md) durchlesen. Darin erfahren Sie, wie Sie Frontend-Entwickelnde in Cloud Manager einbinden, damit sie Zugriff auf das Git-Repository und die Pipeline Ihrer AEM-Site haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Journey Quick Site Creation fortzufahren, indem Sie das Dokument [Anpassen des Site-Designs](customize-theme.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Tour zur schnellen Site-Erstellung fortzufahren, indem Sie das Dokument [Anpassen des Site-Designs](customize-theme.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen, die aber nicht erforderlich sind, um die Tour fortzusetzen.
 
-* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de) – Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sehen Sie sich die ausführlichen technischen Dokumente an.
+* [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sehen Sie sich die ausführlichen technischen Dokumente an.
 * [Cloud Manager-Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md): Weitere Informationen zum Einrichten und Verwalten von Git-Repositorys für Ihr AEMaaCS-Projekt finden Sie in diesem Dokument.
 * [Konfigurieren der CI/CD-Pipeline – Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – Weitere Informationen zum Einrichten von Pipelines, sowohl für den vollständigen Stapel als auch für das Frontend, finden Sie in diesem Dokument.

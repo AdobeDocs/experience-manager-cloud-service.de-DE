@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1377'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ Erfahren Sie, wie Sie Layout-Container und Layout-Modus konfigurieren, um respon
 
 >[!TIP]
 >
->In diesem Dokument wird beschrieben, wie ein Site-Administrator den Layout-Container konfigurieren kann, um responsives Webdesign zu unterstützen. Zusätzliche Ressourcen sind verfügbar:
+>Dieses Dokument beschreibt, wie Site-Admins den Layout-Container so konfigurieren können, dass er responsives Webdesign unterstützt. Zusätzliche Ressourcen sind verfügbar:
 >
->* Für Inhaltsautorinnen und -autoren sind Details zur Verwendung responsiver Design-Funktionen auf einer Inhaltsseite im Dokument [Responsives Layout“ verfügbar](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
->* Für Entwicklerinnen und Entwickler werden Details zum Layout-Container und zum responsiven Raster im Dokument [Responsives Design“ beschrieben, das ](/help/implementing/developing/introduction/responsive-design.md) und Tipps zur Verwendung von Layout-Containern und responsivem Raster beim Entwerfen Ihrer Site enthält.
+>* Informationen zur Verwendung von responsiven Design-Funktionen auf einer Inhaltsseite für Inhaltsautorinnen und -autoren finden Sie im Dokument [Responsives Layout für Ihre Inhaltsseiten](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
+>* Details zum Layout-Container und zum responsiven Raster werden für Entwickelnde im [Dokument „Responsives Design“](/help/implementing/developing/introduction/responsive-design.md) beschrieben, das Tipps zur Verwendung von Layout-Containern und einem responsiven Raster beim Entwerfen Ihrer Site enthält.
 
 ## Überblick {#overview}
 
-Responsives Layout ist ein Mechanismus zur Realisierung [responsiven Webdesigns](https://de.wikipedia.org/wiki/Responsive_Webdesign). Dadurch kann der Inhaltsautor Web-Seiten erstellen, deren Layout und Abmessungen von den Geräten abhängen, die ihre Benutzer verwenden.
+Ein responsives Layout ist eine Methode, um ein [responsives Webdesign](https://de.wikipedia.org/wiki/Responsive_Webdesign) zu realisieren. Dies ermöglicht es Inhaltsautorinnen und -autoren, Web-Seiten zu erstellen, deren Layout und Abmessungen von den Geräten abhängen, die ihre Benutzenden verwenden.
 
 Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von Mechanismen ermöglicht:
 
@@ -240,10 +240,10 @@ Damit Autorinnen und Autoren weitere responsive Raster zu den Inhaltsseiten hinz
 
 ### Konfigurieren des Rasters des Layout-Containers {#configure-the-grid-of-the-layout-container}
 
-Sie können die Anzahl der verfügbaren Spalten für jede spezifische Instanz des Layout-Containers konfigurieren [indem Sie Ihre Seitenvorlagen bearbeiten](/help/sites-cloud/authoring/page-editor/templates.md).
+Sie können die Anzahl der für jede spezifische Instanz des Layout-Containers verfügbaren Spalten konfigurieren, [indem Sie Ihre Seitenvorlagen bearbeiten](/help/sites-cloud/authoring/page-editor/templates.md).
 
 ### Verschachtelte responsive Raster {#nested-responsive-grids}
 
-Es wird empfohlen, die Adobe-Struktur so flach wie möglich zu halten.
+Adobe empfiehlt als Best Practice, die Struktur so flach wie möglich zu halten.
 
-Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, lesen Sie bitte das Entwicklerdokument [Responsives Design.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)
+Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, lesen Sie das Entwicklerdokument [Responsives Design](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids).

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Um WYSIWYG-Inhalte mithilfe von AEM erstellen und in Edge Delivery Services ver�
 * Sie ordnet die in Ihrer AEM-Autoreninstanz genutzten Seitenpfade den öffentlichen Seitenpfaden zu, die auf Ihrer Website verwendet werden, und stellt eine Beziehung zwischen ihnen her.
 * Sie steuert, welche Inhalte (Seiten, Blätter, Assets usw.) in Edge Delivery Services veröffentlicht werden.
 
-Die Pfadzuordnung muss für jedes Projekt einzeln und entsprechend den Inhalten und der URL-Struktur des Projekts konfiguriert werden. Er wird von AEM während der Inhaltsveröffentlichung und bei der Bearbeitung von Inhalten im [universellen Editor) ](/help/sites-cloud/authoring/universal-editor/navigation.md).
+Die Pfadzuordnung muss für jedes Projekt einzeln und entsprechend den Inhalten und der URL-Struktur des Projekts konfiguriert werden. Sie wird von AEM während der Veröffentlichung von Inhalten und während der Bearbeitung von Inhalten im [universellen Editor](/help/sites-cloud/authoring/universal-editor/navigation.md) verwendet.
 
 ## Konfigurationsformat {#configuration-format}
 

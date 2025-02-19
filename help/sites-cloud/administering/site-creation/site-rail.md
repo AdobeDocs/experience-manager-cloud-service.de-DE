@@ -6,9 +6,9 @@ role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Das Site-Bedienfeld wird verwendet, um Informationen zu Designs und Vorlagen fü
 
 ## Herunterladen von Design-Quellen {#downloading-theme-sources}
 
-Wenn Sie eine Site in AEM erstellen, die auf einer [Site-Vorlage](site-templates.md) basiert, können Sie Ihr [Site-Design](site-themes.md) über das Site-Bedienfeld herunterladen.
+Wenn Sie in AEM eine Site erstellen, die auf einer [Site-Vorlage](site-templates.md) basiert, können Sie Ihr [Site-Design](site-themes.md) über das Site-Bedienfeld herunterladen.
 
 Wenn das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen.
 

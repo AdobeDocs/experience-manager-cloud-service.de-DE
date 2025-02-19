@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '991'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 
 ## Erstellen und Verwalten von Konfigurations-Pipelines {#creating-and-managing}
 
-Informationen zum Erstellen und Konfigurieren von Pipelines finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+Informationen zum Erstellen und Konfigurieren von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 Achten Sie beim Erstellen einer Konfigurations-Pipeline in Cloud Manager darauf, dass Sie beim Konfigurieren der Pipeline eine **zielgerichtete Bereitstellung** anstelle eines **Full-Stack-Codes** auswählen.
 
@@ -95,7 +95,7 @@ oder
     cdn.yaml
 ```
 
-Die Ordner- und Dateinamen unter `/config` sind beliebig. Die YAML-Datei muss jedoch einen gültigen Wert für die [`kind` enthalten](#configurations).
+Die Ordner- und Dateinamen unter `/config` sind beliebig. Die YAML-Datei muss jedoch einen gültigen [`kind`-Eigenschaftswert enthalten](#configurations).
 
 In der Regel werden Konfigurationen für alle Umgebungen bereitgestellt. Wenn alle Eigenschaftswerte für jede Umgebung identisch sind, reicht eine einzelne YAML-Datei aus. Es ist jedoch üblich, dass sich Eigenschaftswerte zwischen Umgebungen unterscheiden, z. B. beim Testen einer niedrigeren Umgebung.
 

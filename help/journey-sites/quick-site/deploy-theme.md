@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 95%
 
 Erfahren Sie, wie Sie das Design der Site mithilfe der Pipeline bereitstellen.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
-Im vorherigen Dokument der Journey zur schnellen Site-Erstellung in der AEM, [Anpassen des Site-Designs](customize-theme.md), haben Sie gelernt, wie das Design erstellt wird, wie es angepasst wird und wie es mithilfe von Live-AEM-Inhalten getestet wird. Jetzt sollten Sie:
+Im vorherigen Dokument der Tour zur schnellen AEM-Site-Erstellung, [Anpassen des Site-Designs](customize-theme.md), haben Sie gelernt, wie das Design erstellt wird, wie es angepasst wird und wie es mithilfe von AEM-Live-Inhalten getestet wird. Jetzt sollten Sie:
 
 * Die grundlegende Struktur des Site-Designs und dessen Bearbeitung verstehen.
 * Verstehen, wie Sie Ihre Design-Anpassungen mit echten AEM-Inhalten über einen lokalen Proxy testen können.
@@ -78,7 +78,7 @@ Sie können den Status der Pipeline überprüfen, um sich über die Details des 
 Sobald die Pipeline abgeschlossen ist, können Sie den Administrator bitten, die Änderungen zu validieren. Der Administrator wird dann:
 
 1. Die AEM-Authoring-Umgebung öffnen.
-1. Navigieren Sie [die zuvor vom Administrator erstellte Site](create-site.md).
+1. Navigieren Sie zu [der von der bzw. dem Admin zuvor erstellten Site](create-site.md).
 1. Bearbeiten Sie eine der Inhaltsseiten.
 1. Sehen Sie sich die angewendeten Änderungen an.
 

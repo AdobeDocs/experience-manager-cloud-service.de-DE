@@ -1,14 +1,14 @@
 ---
 title: Responsives Layout
-description: Mit AEM können Sie ein responsives Layout für Ihre Seiten erstellen, indem Sie die Layout-Container -Komponente verwenden.
+description: AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente „Layout-Container“.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilf
 >
 >Dieses Dokument bietet einen Überblick über die Funktionen des Layout-Containers, der für Inhaltsautorinnen und -autoren verfügbar ist. Zusätzliche Ressourcen sind verfügbar:
 >
->* Für Site-Admins werden Informationen zum Konfigurieren des Layout-Containers für Ihre Sites im Dokument [Konfigurieren des Layout-Containers und des Layout-Modus“ beschrieben](/help/sites-cloud/administering/responsive-layout.md)
->* Für Entwicklerinnen und Entwickler werden Details zum Layout-Container und zum responsiven Raster im Dokument [Responsives Design“ beschrieben, das ](/help/implementing/developing/introduction/responsive-design.md) und Tipps zur Verwendung von Layout-Containern und responsivem Raster beim Entwerfen Ihrer Site enthält.
+>* Für Site-Admins werden Details zum Konfigurieren des Layout-Containers für Ihre Sites unter [Konfigurieren von Layout-Container und Layout-Modus](/help/sites-cloud/administering/responsive-layout.md) beschrieben.
+>* Details zum Layout-Container und zum responsiven Raster werden für Entwickelnde im [Dokument „Responsives Design“ beschrieben](/help/implementing/developing/introduction/responsive-design.md), das Tipps zur Verwendung von Layout-Containern und responsivem Raster beim Entwerfen Ihrer Site enthält.
 
 ## Überblick {#overview}
 
-Die **Layout-Container**-Komponente bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout-Modus**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Die Komponente **Layout-Container** bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout-Modus**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
@@ -143,7 +143,7 @@ Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
 
 >[!NOTE]
 >
->Falls er noch nicht verfügbar ist **muss der** Layout-Container[ explizit für ein Absatzsystem/eine Seite aktiviert ](/help/sites-cloud/administering/responsive-layout.md).
+>Falls er noch nicht verfügbar ist, muss der **Layout-Container** [explizit für ein Absatzsystem/eine Seite aktiviert werden](/help/sites-cloud/administering/responsive-layout.md).
 
 1. Der **Layout-Container** ist als Standardkomponente im [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) verfügbar. Von hier können Sie ihn an die gewünschte Position auf der Seite ziehen. Anschließend wird der Platzhalter **Komponenten hierher ziehen** angezeigt.
 1. Anschließend können Sie dem Layout-Container Komponenten hinzufügen. Diese Komponenten enthalten den tatsächlichen Inhalt:

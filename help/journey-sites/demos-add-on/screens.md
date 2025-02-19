@@ -5,9 +5,9 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Scre
 >
 >Für die AEM Screens-Demo muss das Screens-Add-on zum Cloud Manager-Programm hinzugefügt werden. Unter [Hinzufügen von Screens als Add-on zu einem neuen Programm in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) erfahren Sie, wie das Hinzufügen funktioniert.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
-Im vorherigen Dokument der Journey mit AEM-Referenz-Demos, [Erstellen einer Demo-Site](create-site.md), haben Sie eine Demo-Site basierend auf den Vorlagen des Referenz-Demo-Add-ons erstellt. Sie sollten jetzt:
+Im vorherigen Dokument der Tour zum AEM-Referenzdemo-Add-on, [Erstellen einer Demo-Site](create-site.md), haben Sie eine Demo-Site basierend auf den Vorlagen des Referenzdemo-Add-ons erstellt. Sie sollten jetzt:
 
 * Verstehen, wie Sie auf die AEM Authoring-Umgebung zugreifen.
 * Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.
@@ -104,8 +104,8 @@ Wenn der Assistent abgeschlossen ist, finden Sie die bereitgestellten Inhalte un
 
 Nachdem Sie jetzt über Demoinhalte für We.Cafe verfügen, können Sie entscheiden, wie Sie AEM Screens testen möchten:
 
-* Wenn Sie die Inhalte nur in der AEM Sites-Konsole erkunden möchten, können Sie einfach loslegen und mehr im Abschnitt [Zusätzliche Ressourcen](#additional-resources) entdecken. Es sind keine weiteren Maßnahmen erforderlich.
-* Wenn Sie die vollen dynamischen Funktionen von AEM Screens erleben möchten, fahren Sie mit dem nächsten Abschnitt fort: &quot;[ von Screens-Inhalten ](#dynamically-change).
+* Wenn Sie die Inhalte nur in der AEM Sites-Konsole erkunden möchten, können Sie einfach loslegen und mehr im Abschnitt [Zusätzliche Ressourcen](#additional-resources) entdecken. Es ist keine weitere Aktion erforderlich.
+* Wenn Sie die vollen dynamischen Funktionen von AEM Screens erleben möchten, fahren Sie mit dem nächsten Abschnitt fort: [Dynamische Änderung von Screens-Inhalten](#dynamically-change).
 
 ## Dynamisches Ändern von Screens-Inhalten {#dynamically-change}
 
@@ -382,7 +382,7 @@ Nachdem Sie einem Player ein Display zugewiesen haben, stellt AEM Screens as a C
 
 ![Querformat am Eingang](assets/entrance-landscape.jpg)
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der Tour durch das AEM-Referenzdemo-Add-on abgeschlossen haben, sollten Sie:
 
@@ -390,7 +390,7 @@ Nachdem Sie nun diesen Teil der Tour durch das AEM-Referenzdemo-Add-on abgeschlo
 * Den Demoinhalt von We.Cafe verstehen.
 * Wissen, wie man AEM Screens für We.Cafe konfiguriert.
 
-Sie können jetzt die Funktionen von AEM Screens mit Ihren eigenen Demo-Standorten erkunden. Fahren Sie mit dem nächsten Abschnitt der Journey, [Verwalten Ihrer Demo-Standorte](manage.md), fort. Hier erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Standorte zur Verfügung stehen und wie Sie sie entfernen können.
+Sie können jetzt die Funktionen von AEM Screens mit Ihren eigenen Demo-Standorten erkunden. Fahren Sie mit dem nächsten Abschnitt der Tour fort, [Verwalten Ihrer Demo-Sites](manage.md). Hier erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites zur Verfügung stehen, und darüber, wie Sie sie entfernen können.
 
 Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 

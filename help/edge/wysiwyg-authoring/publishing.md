@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Mit Edge Delivery Services erfolgt die Veröffentlichung von Inhalten unabhängi
 
 ## Ablauf beim Veröffentlichen aus AEM {#publishing-flow}
 
-Wenn Sie AEM-Inhalte mit dem universellen Editor erstellen, müssen Sie zum Veröffentlichen lediglich im universellen Editor auf **Veröffentlichen** klicken. Siehe das Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md).
+Wenn Sie AEM-Inhalte mit dem universellen Editor erstellen, müssen Sie zum Veröffentlichen lediglich im universellen Editor auf **Veröffentlichen** klicken. Weitere Informationen finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md).
 
 Der Informationsfluss beim Veröffentlichen sieht folgendermaße aus. Sobald der Autor oder die Autorin die Veröffentlichung startet, ist dieser Ablauf automatisch und wird hier zu Informationszwecken dargestellt.
 

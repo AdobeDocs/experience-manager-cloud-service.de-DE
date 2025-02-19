@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1267'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,8 +129,8 @@ Damit können Sie zusätzliche Inhalte [zwischen (d. h. Zwischeninhalte)](/help
 
 Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
-* Hinzufügen von Komponenten aus dem [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Hinzufügen von Assets aus dem Assets-Browser [](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Hinzufügen von Komponenten über den [Komponenten-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Hinzufügen von Assets über den [Assets-Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * [Zugehörige Inhalte](#using-associated-content) als Quelle für Zwischeninhalte verwenden.
 
 >[!CAUTION]

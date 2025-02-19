@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie mithilfe der **Sites-Konsole** neue Seiten für Ihre Websi
 
 >[!TIP]
 >
->Bevor Sie mit der Erstellung neuer Seiten beginnen, machen Sie sich mit dem [Wie Ihre Seiten in AEM organisiert sind“ ](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
+>Bevor Sie mit der Erstellung neuer Seiten beginnen, sollten Sie sich damit vertraut machen, [wie Ihre Seiten in AEM organisiert sind](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 ## Zugriff auf Berechtigungen {#access-privileges}
 

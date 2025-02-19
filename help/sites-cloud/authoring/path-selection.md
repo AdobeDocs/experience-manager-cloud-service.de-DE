@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Alternativ können Sie etwas in das Pfadfeld eingeben und AEM schlägt Ihrer Ein
 
 ## Pfad-Browser {#path-browser}
 
-Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/basic-handling.md#column-view) der [**Sites**-](/help/sites-cloud/authoring/sites-console/introduction.md) aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
+Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/basic-handling.md#column-view) der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 
 ![Pfad-Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 

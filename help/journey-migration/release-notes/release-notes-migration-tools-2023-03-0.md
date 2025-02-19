@@ -5,7 +5,7 @@ feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '301'
 ht-degree: 100%
 

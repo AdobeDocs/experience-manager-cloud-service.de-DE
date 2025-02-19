@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Sites-Übersetzungs-Tour, [Konfigurieren des Übersetzungs-Connectors](configure-connector.md), haben Sie gelernt, wie Sie Ihren Übersetzungs-Connector installieren und konfigurieren, und sollten jetzt:
 
@@ -93,7 +93,7 @@ Es gibt verschiedene weitere Eigenschaften, die als Teil Ihrer Übersetzungsrege
 
 Diese Funktionen sind im Allgemeinen nicht erforderlich, um mit der Lokalisierung Ihrer Inhalte zu beginnen. Sie können sie jedoch im Abschnitt [Zusätzliche Ressourcen](#additional-resources) nachlesen, wenn Sie Interesse haben.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 
@@ -104,6 +104,6 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Übersetzungs-Tour durch AEM
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Übersetzungs-Journey fortzufahren, indem Sie das Dokument [Inhalte übersetzen](translate-content.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Übersetzen von Inhalten](translate-content.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen, aber nicht erforderlich sind, um die Tour fortzusetzen.
 
-* [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
+* [Ermitteln der zu übersetzenden Inhalte](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Sie mit Übersetzungsregeln Inhalte ermitteln können, die übersetzt werden müssen.

@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2816'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -373,7 +373,7 @@ Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-S
 
 ##### 5.3. Ausführen der Frontend-Pipeline {#run-a-frontend-pipeline}
 
-Das Design wird mithilfe der [Frontend-Pipeline) ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de). Um das Design bereitzustellen, führen Sie die folgenden Schritte aus:
+Das Design wird mithilfe der [Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de) bereitgestellt. Um das Design bereitzustellen, führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei Ihrem AEM Cloud Manager-Repository an.
 1. Klicken Sie im Abschnitt **[!UICONTROL Pipelines]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**.

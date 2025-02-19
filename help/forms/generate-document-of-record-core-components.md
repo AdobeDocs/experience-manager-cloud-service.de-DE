@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3131'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Generieren eines Datensatzdokuments für adaptive Formulare (Kernkomponenten)
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Wenn ein Formular ausgefüllt oder übermittelt wird, können Sie das Formular drucken oder als Dokument speichern. Dies wird als Datensatzdokument (DoR) bezeichnet. Es handelt sich dabei um eine druckoptimierte Kopie des gesendeten Formulars. Auch können Sie im Datensatzdokument mittels Verweis Informationen erfassen, die Kunden zu einem späteren Zeitpunkt eingegeben haben, oder mithilfe des Datensatzdokuments Formulare und zugehörige Inhalte gemeinsam im PDF-Format archivieren.
 
@@ -46,7 +46,7 @@ Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen S
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren XFA-Vorlagen (XDP-Dateien) angezeigt. Wählen Sie die entsprechende Datei aus. Stellen Sie außerdem sicher, dass dasselbe Schema (Datenschema) für das adaptive Formular und die ausgewählte XFA-Vorlage (XDP-Datei) verwendet wird.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für das Datensatzdokument verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
+Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für den Nachweis verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
 
 ## Erzeugen eines AcroForm-basierten Datensatzdokuments {#generate-an-Acroform-based-document-of-record}
 
@@ -59,7 +59,7 @@ Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führ
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Gerät verfügbaren Acrobat-PDFs (AcroForm) angezeigt. Wählen Sie das AcroForm aus, das Sie verwenden möchten.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage für das Datensatzdokument verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
+Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage für den Nachweis verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
 
 ## Automatisches Generieren eines Datensatzdokuments {#auto-generate-a-document-of-record}
 
@@ -205,8 +205,8 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
    <td> </td>
   </tr>
   <tr>
-   <td>Optionsfeld</td>
-   <td>Optionsfeld</td>
+   <td>Optionsschaltfläche</td>
+   <td>Optionsschaltfläche</td>
    <td>Ja</td>
    <td> </td>
   </tr>

@@ -5,9 +5,9 @@ exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Mit der benutzerdefinierten Überwachung können Kundinnen und Kunden optional b
 
 >[!NOTE]
 >
-> Diese Funktion steht nur Produktionsumgebungen und Kunden mit &quot;[ Cloud-Support“ ](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=de#support-add-ons). Bei Fragen wenden Sie sich bitte an Ihr Adobe-Account-Team.
+> Diese Funktion steht nur für Produktionsumgebungen sowie Kundinnen und Kunden mit [erweitertem Cloud-Support](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=de#support-add-ons) zur Verfügung. Wenden Sie sich bei Fragen an das Adobe-Accountteam.
 
 ## Interne Modulüberwachung {#module-monitoring}
 

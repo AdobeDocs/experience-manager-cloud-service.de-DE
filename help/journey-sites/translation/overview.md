@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Sites ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler
 
 AEM bietet ebenso leistungsstarke Tools zur Übersetzung Ihrer Inhalte, mit denen Sie diese so schnell wie möglich für Ihre Zielgruppen in anderen Regionen bereitstellen können. Diese Dokumentations-Tour führt Sie in die Authoring-Tools ein, damit Sie verstehen, wie Inhalte in AEM erstellt und verwaltet werden. Anschließend erfahren Sie, was Sie für die Verwaltung Ihres eigenen Übersetzungsprojekts wissen müssen.
 
-Wenn Sie bereits mit AEM Sites und Ihren Übersetzungsanforderungen vertraut sind, verfügen Sie möglicherweise bereits über grundlegendes Wissen aus dieser Tour. Wenn ja, verweisen wir Sie auf unsere technische Dokumentation, die im Abschnitt [Zusätzliche Ressourcen unten“ verlinkt ](#additional-resources).
+Wenn Sie bereits mit AEM Sites und Ihren Übersetzungsanforderungen vertraut sind, verfügen Sie möglicherweise bereits über grundlegendes Wissen aus dieser Tour. In diesem Fall verweisen wir Sie auf unsere technische Dokumentation, die im [Abschnitt „Zusätzliche Ressourcen“ weiter unten](#additional-resources) verlinkt ist.
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
@@ -68,7 +68,7 @@ Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch,
 | 5 | [Übersetzen von Inhalten](translate-content.md) | Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Website-Inhalte zu übersetzen. |
 | 6 | [Veröffentlichen übersetzter Inhalte](publish-content.md) | Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzung aktualisieren können, wenn sich die zugrunde liegenden Inhalte ändern. |
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Jetzt sind Sie bereit, mit Ihrer Adobe-Sites-Übersetzung-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Erfahren Sie mehr über den Inhalt von Websites und wie man ihn in AEM übersetzt](learn-about.md) zu lesen.
 

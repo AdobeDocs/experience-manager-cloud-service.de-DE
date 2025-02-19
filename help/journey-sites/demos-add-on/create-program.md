@@ -5,9 +5,9 @@ exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 94%
 
 Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
-Im vorherigen Dokument der Referenz-Demo-Add-on-Journey zu Adobe Experience Manager (AEM), [Grundlegendes zur Installation des Referenz-Demo-Add-ons](installation.md), haben Sie gelernt, wie der Installationsprozess des Referenz-Demo-Add-ons funktioniert. Dabei wurde gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
+Im vorherigen Dokument zum AEM-Referenzdemo-Add-on von Adobe Experience Manager (AEM), [Grundlegendes zur Installation des Referenzdemo-Add-ons](installation.md), haben Sie gelernt, wie der Installationsprozess des Referenzdemo-Add-ons funktioniert. Dabei wurde gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
 
 * Sollten Sie über grundlegende Kenntnisse zu Cloud Manager verfügen.
 * Wissen Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
@@ -81,7 +81,7 @@ Nach der Anmeldung bei Cloud Manager können Sie ein Sandbox-Programm für Ihre 
 
 Die Fertigstellung der Pipeline kann mehrere Minuten dauern. Sobald die Pipeline abgeschlossen ist, sind das Add-on und der zugehörige Demoinhalt für die Verwendung in der Authoring-Umgebung von AEM verfügbar.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der Tour durch das AEM-Referenzdemo-Add-on abgeschlossen haben, sollten Sie:
 

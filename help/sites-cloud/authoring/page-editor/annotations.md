@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Neben der Anzeige der Anmerkungen können Sie im Anmerkungsmodus Anmerkungen fü
 
 1. Wenn Sie mit dem Bearbeiten einer bestimmten Anmerkung fertig sind, können Sie Folgendes tun:
 
-   * Wählen Sie die Textmarkierung aus, um die Anmerkung zu öffnen. Sobald sie geöffnet ist, können Sie den vollständigen Text anzeigen, Änderungen vornehmen oder [die Anmerkung löschen](#deleting-annotations).
+   * Wählen Sie die Textmarkierung aus, um die Anmerkung zu öffnen. Sobald sie geöffnet ist, können Sie den vollständigen Text sehen, Änderungen vornehmen oder [die Anmerkung löschen](#deleting-annotations).
    * Positionieren Sie die Textmarkierung neu.
    * Wählen Sie eine Zeichnung aus, um diese Zeichnung auszuwählen und sie auf die gewünschte Position zu ziehen.
    * Verschieben oder Kopieren einer Komponente

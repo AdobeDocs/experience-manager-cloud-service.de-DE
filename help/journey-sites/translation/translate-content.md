@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2526'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Inhalte zu übersetzen.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Sites-Übersetzungs-Tour, [Übersetzungsregeln konfigurieren](translation-rules.md), haben Sie gelernt, wie Sie die Übersetzungsregeln von AEM verwenden, um Ihre zu übersetzenden Inhalte zu ermitteln. Sie sollten jetzt:
 
@@ -76,7 +76,7 @@ Sie erhalten eine Nachricht, dass das Projekt erstellt wurde.
 
 >[!NOTE]
 >
->Es wird davon ausgegangen, dass die erforderliche Sprachstruktur für die Übersetzungssprachen bereits im Rahmen der [Definition Ihrer Inhaltsstruktur“ erstellt ](getting-started.md#content-structure). Dies sollte in Zusammenarbeit mit dem Inhaltsarchitekten erfolgen.
+>Es wird davon ausgegangen, dass die für die Sprachen der Übersetzungen erforderliche Sprachstruktur bereits im Rahmen der [Definition der Inhaltsstruktur erstellt wurde](getting-started.md#content-structure). Dies sollte in Zusammenarbeit mit der Inhaltsarchitektin bzw. dem Inhaltsarchitekten erfolgen.
 >
 >Wenn die Sprachordner nicht vorab erstellt werden, können Sie keine Sprachkopien, wie in den vorherigen Schritten beschrieben, erstellen.
 
@@ -126,7 +126,7 @@ Das Projekt ist in mehrere Karten unterteilt.
 
 * **Zusammenfassung**: Diese Karte zeigt die grundlegenden Kopfzeileninformationen des Projekts, einschließlich des Verantwortlichen, der Sprache und des Übersetzungsdienstleisters.
 * **Übersetzungsauftrag**: Diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprach-Code an den Auftragsnamen angehängt wird.
-   * Beim [automatischen Erstellen von Übersetzungsaufträgen](#automatically-creating) erstellt AEM die Aufträge asynchron, und sie werden möglicherweise nicht sofort im Projekt angezeigt.
+   * Wenn [automatisch Übersetzungsaufträge erstellt werden](#automatically-creating), erstellt AEM die Aufträge asynchron und sie erscheinen möglicherweise nicht sofort im Projekt.
 * **Team**: Auf dieser Karte werden die Benutzer angezeigt, die an diesem Übersetzungsprojekt mitarbeiten. Diese Tour behandelt dieses Thema nicht.
 * **Aufgaben**: Zusätzliche Aufgaben im Zusammenhang mit der Übersetzung der Inhalte, z. B. zum Erstellen von Elementen oder Workflow-Elementen. Diese Tour behandelt dieses Thema nicht.
 
@@ -175,7 +175,7 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 
 >[!NOTE]
 >
->Wenn Sie die Projektoption **Launch nach Weiterleitung löschen** nicht deaktiviert haben ([ im vorherigen Abschnitt beschrieben](#using-translation-project) werden übersetzte Elemente mit dem Status **Gelöscht** angezeigt. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
+>Wenn Sie die Projektoption **Launch nach der Veröffentlichung löschen** nicht deaktiviert haben, wie [im vorherigen Abschnitt beschrieben](#using-translation-project), erscheinen übersetzte Elemente mit dem Status **Gelöscht**. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
 >
 >Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie mehr darüber erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie den Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
 
@@ -213,7 +213,7 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 >
 >Der Pfad-Browser ist ein leistungsstarkes Tool, mit dem Sie Inhalte suchen, filtern und darin navigieren können. Wählen Sie die Schaltfläche **Nur Inhalt/Filter** zum Umschalten des Seitenbereichs und zum Einblenden erweiterter Filter wie **Änderungsdatum** oder **Übersetzungsstatus**.
 >
->Weitere Informationen zum Pfad-Browser finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
+>Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt „Zusätzliche Ressourcen“](#additional-resources).
 
 Sie können die vorherigen Schritte verwenden, um die erforderlichen Inhalte zu allen Sprachen (Aufträgen) für das Projekt hinzuzufügen. Nachdem Sie alle Inhalte ausgewählt haben, können Sie mit der Übersetzung beginnen.
 
@@ -235,13 +235,13 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 
 >[!NOTE]
 >
->Wenn Sie die Projektoption **Launch nach Weiterleitung löschen** nicht deaktiviert haben ([ im vorherigen Abschnitt beschrieben](#using-translation-project) werden übersetzte Elemente mit dem Status **Gelöscht** angezeigt. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
+>Wenn Sie die Projektoption **Launch nach der Veröffentlichung löschen** nicht deaktiviert haben, wie [im vorherigen Abschnitt beschrieben](#using-translation-project), erscheinen übersetzte Elemente mit dem Status **Gelöscht**. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
 >
 >Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie mehr darüber erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie den Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
 
 ## Überprüfen übersetzter Inhalte {#reviewing}
 
-[Wie bereits erwähnt](#using-translation-project) fließen maschinell übersetzte Inhalte mit dem Status **Genehmigt“ zurück in AEM** da davon ausgegangen wird, dass aufgrund der maschinellen Übersetzung kein menschliches Eingreifen erforderlich ist. Es ist jedoch noch möglich, die übersetzten Inhalte zu überprüfen.
+[Wie bereits erwähnt](#using-translation-project), fließen maschinell übersetzte Inhalte mit dem Status **Genehmigt** zurück in AEM, da davon ausgegangen wird, dass aufgrund der maschinellen Übersetzung kein menschliches Eingreifen erforderlich ist. Es ist jedoch noch möglich, die übersetzten Inhalte zu überprüfen.
 
 Wechseln Sie einfach zum abgeschlossenen Übersetzungsauftrag und wählen Sie ein Zeilenelement aus, indem Sie auf das Kontrollkästchen tippen oder klicken. Das Symbol **Vorschau in Sites** wird in der Symbolleiste angezeigt.
 
@@ -273,7 +273,7 @@ Wenn Ihr Übersetzungsdienstleister menschliche Übersetzung bereitstellt, biete
 
 Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments. Abgesehen von den zusätzlichen Genehmigungsoptionen ist der Workflow für menschliche Übersetzungen mit dem für maschinelle Übersetzungen identisch, wie in dieser Tour beschrieben.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 
@@ -285,7 +285,7 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Jour
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Übersetzungs-Journey fortzufahren, indem Sie das Dokument [Publish Translated Content](publish-content.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Veröffentlichen übersetzter Inhalte](publish-content.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um die Tour fortzusetzen.
 
 * [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md) – Erfahren Sie mehr über die Einzelheiten von Übersetzungsprojekten und über zusätzliche Funktionen wie Workflows für menschliche Übersetzung und mehrsprachige Projekte.
 * [Autorenumgebung und Tools](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM bietet verschiedene Mechanismen für die Organisation und Bearbeitung von Inhalten, einschließlich eines robusten Pfad-Browsers.

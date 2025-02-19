@@ -3,12 +3,13 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: AEM Forms REST-Endpunkt, An REST-Endpunkt übermitteln, Daten an REST-URL posten, REST-Endpoint-Aktion konfigurieren
 feature: Adaptive Forms, Core Components
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
+title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
 role: User, Developer
-source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
-workflow-type: tm+mt
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+source-git-commit: cc9b72fbebc673aeb29032915f371c8f5e156b28
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -68,9 +69,9 @@ So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open AP
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-### Konfigurieren der Sendeaktion basierend auf dem Service-REST-Endpunkt {#config-service-endpoint-auth}
+### Konfigurieren der Übermittlungsaktion basierend auf dem Dienst-REST-Endpunkt {#config-service-endpoint-auth}
 
-<span class="preview"> Die Funktion „Service-Endpunkt“ befindet sich im Early-Adopter-Programm und gilt nur für Kernkomponenten. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+<span class="preview"> Die Funktion „Dienstendpunkt“ ist im Rahmen des Early-Adopter-Programms verfügbar und gilt nur für Kernkomponenten. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
@@ -78,7 +79,7 @@ So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open AP
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL An REST-Endpunkt übermitteln]**.
 1. Aktivieren Sie die POST-Anfrage.
 1. Geben Sie die REST-Endpunkt-URL an.
-1. Wählen Sie die Konfiguration aus, die Sie für Ihren Service-REST-Endpunkt-Authentifizierungstyp und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+1. Wählen Sie die Konfiguration aus, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
    ![Konfigurieren des REST-Endpunkts](assets/rest-service-endpoint-config.png)
 1. Klicken Sie auf „Fertig“.
 

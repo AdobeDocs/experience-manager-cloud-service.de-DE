@@ -5,9 +5,9 @@ exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -30,16 +30,16 @@ In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verw
 Die folgenden Modelle zur Unterstützung der Anwendungsfälle der zusammengesetzten Komponente haben die folgenden Voraussetzungen.
 
 * Ihre AEM-Entwicklungsinstanz wird lokal an Port 4502 mit einem Beispielprojekt ausgeführt.
-* Sie haben eine funktionierende externe React-App [zur Bearbeitung in AEM aktiviert](editing-external-spa.md).
-* Die React-App wird im AEM-Editor geladen [mithilfe der RemotePage-Komponente](remote-page.md).
+* Sie haben eine funktionierende externe React-App [für die Bearbeitung in AEM aktiviert](editing-external-spa.md).
+* Die React-App wird im AEM-Editor [mit der RemotePage-Komponente](remote-page.md) geladen.
 
 ## Hinzufügen von zusammengesetzten Komponenten zu einer SPA {#adding-composite-components}
 
 Je nach SPA-Implementierung in AEM gibt es drei verschiedene Modelle für die Implementierung Ihrer zusammengesetzten Komponente.
 
-* [Die Komponente ist nicht in Ihrem AEM-Projekt ](#component-does-not-exist).
+* [Die Komponente ist nicht in Ihrem AEM-Projekt vorhanden](#component-does-not-exist).
 * [Die Komponente ist in Ihrem AEM-Projekt vorhanden, die erforderlichen Inhalte jedoch nicht](#content-does-not-exist).
-* [Die Komponente und die erforderlichen Inhalte sind beide in Ihrem AEM-Projekt ](#both-exist).
+* [Die Komponente und die erforderlichen Inhalte sind beide in Ihrem AEM-Projekt vorhanden](#both-exist).
 
 In den folgenden Abschnitten finden Sie Beispiele für die Implementierung der einzelnen Fälle mit der Kartenkomponente als Beispiel.
 
@@ -134,7 +134,7 @@ In diesem Fall wird die Kartenkomponente bereits in Ihrem AEM-Projekt mit Titel-
 
 Anschließend können Sie es zu Ihrer SPA hinzufügen und die Inhalte abrufen.
 
-1. Erstellen Sie hierfür eine entsprechende Komponente in der SPA. Stellen Sie sicher, dass die untergeordneten Komponenten den entsprechenden AEM-Ressourcentypen im SPA-Projekt zugeordnet sind. In diesem Beispiel verwenden wir dieselben `AEMText`- und `AEMImage` wie [im vorherigen Fall](#component-does-not-exist).
+1. Erstellen Sie hierfür eine entsprechende Komponente in der SPA. Stellen Sie sicher, dass die untergeordneten Komponenten den entsprechenden AEM-Ressourcentypen im SPA-Projekt zugeordnet sind. In diesem Beispiel verwenden wir dieselben `AEMText`- und `AEMImage`-Komponenten, wie [im vorherigen Fall](#component-does-not-exist) beschrieben.
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ Wenn der Inhalt in AEM vorhanden ist, kann er direkt in die SPA eingefügt werde
 
 ![Pfad für zusammengesetzte Komponente in Knotenstruktur](assets/composite-path.png)
 
-Die `AEMCard`-Komponente entspricht der Definition [im vorherigen Anwendungsfall](#content-does-not-exist). Hier wird der Inhalt, der am oben genannten Speicherort im AEM-Projekt definiert ist, in die SPA aufgenommen.
+Die Komponente `AEMCard` entspricht der Definition [im vorherigen Anwendungsfall](#content-does-not-exist). Hier wird der Inhalt, der am oben genannten Speicherort im AEM-Projekt definiert ist, in die SPA aufgenommen.

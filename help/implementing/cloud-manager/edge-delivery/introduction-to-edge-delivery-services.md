@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Je nachdem, wie ein Projekt aufgesetzt wurde, können Edge Delivery Services auf
 
 Die **Aufgabenliste von Edge Delivery** in Cloud Manager ist eine Checkliste für Onboarding-Aufgaben, die Sie durch das Onboarding und die Verwaltung Ihrer Edge Delivery-Site bis hin zur [Live-Schaltung](/help/journey-onboarding/go-live-checklist.md) führt.
 
-![Aufgabenliste der Edge Delivery-Site in Cloud Manager.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Site-Aufgabenliste von Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Aufgabe | Beschreibung |
 | --- | --- | --- |

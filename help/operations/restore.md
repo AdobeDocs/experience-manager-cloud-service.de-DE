@@ -5,9 +5,9 @@ exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1338'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und Ihre 
 
 >[!TIP]
 >
->Es ist auch möglich, Sicherungskopien (mithilfe [ öffentlichen API) ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
+>Es ist auch möglich, Sicherungskopien [über die öffentliche API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) wiederherzustellen.
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und Ihre 
 
 Bevor Sie eine vollständige Inhaltswiederherstellung vornehmen, sollten Sie diese Optionen in Erwägung ziehen, um Ihre Inhalte leichter wiederherzustellen.
 
-* Wenn ein Paket für den gelöschten Pfad verfügbar ist, installieren Sie das Paket erneut mit dem [Package Manager](/help/implementing/developing/tools/package-manager.md).
-* Wenn der gelöschte Pfad eine Seite in Sites war, verwenden Sie die Funktion [Baum wiederherstellen](/help/sites-cloud/authoring/sites-console/page-versions.md).
-* Wenn es sich beim gelöschten Pfad um einen Asset-Ordner handelte und die Originaldateien verfügbar sind, laden Sie sie erneut über [die Assets-Konsole](/help/assets/add-assets.md) hoch.
-* Wenn es sich bei dem Löschinhalt um Assets handelte, sollten Sie [frühere Versionen der Assets wiederherstellen](/help/assets/manage-digital-assets.md).
+* Wenn ein Paket für den gelöschten Pfad verfügbar ist, installieren Sie das Paket mit dem [Paket-Manager](/help/implementing/developing/tools/package-manager.md) erneut.
+* Wenn der gelöschte Pfad eine Seite in Sites war, verwenden Sie die [Funktion „Baum wiederherstellen“](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Wenn der gelöschte Pfad ein Asset-Ordner war und die Originaldateien verfügbar sind, laden Sie sie erneut über die [Assets-Konsole](/help/assets/add-assets.md) hoch.
+* Wenn es sich bei dem gelöschten Inhalt um Assets handelt, sollten Sie das [Wiederherstellen früherer Versionen der Assets](/help/assets/manage-digital-assets.md) in Betracht ziehen.
 
 Wenn keine der oben genannten Optionen funktioniert und der Inhalt des gelöschten Pfads signifikant ist, führen Sie eine Inhaltswiederherstellung durch, wie in den folgenden Abschnitten beschrieben.
 
@@ -59,7 +59,7 @@ Standardmäßig ist keine Benutzerin und kein Benutzer berechtigt, Inhaltswieder
 1. Stellen Sie die **Inhaltswiederherstellungs**-Berechtigung je nach Anwendungsfall für die erforderliche Umgebung oder alle Umgebungen des Programms bereit.
 1. Weisen Sie dem Profil Benutzende zu.
 
-Weitere Informationen zum Verwalten von Berechtigungen finden Sie in [ Dokumentation ](/help/implementing/cloud-manager/custom-permissions.md)Benutzerdefinierte Berechtigungen“.
+Weitere Informationen zum Verwalten von Berechtigungen finden Sie in der Dokumentation [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## Wiederherstellen von Inhalten {#restoring-content}
 
@@ -93,7 +93,7 @@ Bestimmen Sie zunächst den Zeitrahmen der Inhalte, die Sie wiederherstellen mö
 
    ![Verfügbare Sicherungskopien](assets/backup-available.png)
 
-1. Suchen Sie die Sicherungskopie, die Sie wiederherstellen möchten, indem Sie das Informationssymbol verwenden, um Informationen über die in dieser Sicherungskopie enthaltene Version des Codes und der AEM-Version anzuzeigen und die Auswirkungen einer Wiederherstellung bei der [Auswahl der Sicherungskopie“ ](#choosing-the-right-backup).
+1. Suchen Sie die Sicherungskopie, die Sie wiederherstellen möchten, indem Sie das Informationssymbol verwenden, um Informationen über die in dieser Sicherungskopie enthaltene Version des Codes und der AEM-Version anzuzeigen, und berücksichtigen Sie die Auswirkungen einer Wiederherstellung bei der [Auswahl der Sicherungskopie](#choosing-the-right-backup).
 
    ![Sicherungsinformationen](assets/backup-info.png)
 

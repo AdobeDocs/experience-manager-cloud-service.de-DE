@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
 # AEM-Benutzeraufgaben {#aem-user-tasks}
 
-In diesem optionalen Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie AEM-Benutzende auf AEM as a Cloud Service zugreifen können, um Inhalte zu erstellen.
+In diesem optionalen Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie AEM-Benutzende auf AEM as a Cloud Service zugreifen können, um Inhalte zu verfassen.
 
 ## Ihre bisherige Tour {#story-so-far}
 
-Sie sind in Ihrer Onboarding-Tour weit gekommen! Herzlichen Glückwunsch! Der Systemadministrator bzw. die Systemadministratorin hat die Onboarding-Journey abgeschlossen, indem er/sie die erforderlichen Cloud-Ressourcen eingerichtet und Zugriff auf das Dokument [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) gewährt hat.
+Sie sind in Ihrer Onboarding-Tour weit gekommen! Herzlichen Glückwunsch! Die Systemadministratorin bzw. der Systemadministrator hat die Onboarding-Tour abgeschlossen, indem die erforderlichen Cloud-Ressourcen eingerichtet und Zugriff gemäß [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) gewährt wurde.
 
 Ab diesem Zeitpunkt können Ihre AEM-Benutzer mit der Erstellung von Inhalten beginnen. In diesem Sinne ist Ihr Onboarding abgeschlossen, und jetzt ist es an der Zeit, Ihr neues System von AEM as a Cloud Service zu verwenden, was in diesem Dokument erläutert wird.
 
@@ -50,7 +50,7 @@ Als AEM-Autor müssen Sie sich bei AEM anmelden, um Inhalte erstellen zu können
 
 1. Navigieren Sie zur Anmeldeseite von Cloud Manager unter [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
-1. Wählen Sie das entsprechende Programm aus der Cloud Manager-Seite **Programme und Produkte** aus, um die Seite **Übersicht** zu starten. Fragen Sie Ihren Systemadministrator, wenn Sie nicht sicher sind, auf welches Programm Sie zugreifen müssen.
+1. Wählen Sie das entsprechende Programm aus der Cloud Manager-Seite **Programme und Produkte** aus, um die Seite **Übersicht** aufzurufen. Fragen Sie Ihre Systemadmins, wenn Sie sich nicht sicher sind, auf welches Programm Sie zugreifen müssen.
 
 1. Klicken Sie auf der Seite **Überblick** in Cloud Manager auf den Link „Autor“ auf der Karte **Umgebungen**.
 
@@ -73,7 +73,7 @@ Nachdem Sie dieses Dokument gelesen haben, sollten Sie wissen, wie Sie:
 
 Herzlichen Glückwunsch! Sie sind jetzt bereit, AEM-Inhalte zu erstellen und zu veröffentlichen. Im Abschnitt [Zusätzliche Ressourcen](#additional-resources) finden Sie weitere Informationen zum Verfassen von Inhalten in AEM und zur Verwaltung dieser Inhalte.
 
-Wenn Sie daran interessiert sind, wie Entwicklende und Bereitstellungs-Manager benutzerdefinierte Programme für AEM as a Cloud Service erstellen und verwalten, fahren Sie mit dem zweiten, optionalen Teil der Onboarding-Journey fort: [AEM-Entwickleraufgaben](developers.md).
+Wenn Sie daran interessiert sind, wie Entwickelnde und Bereitstellungsverantwortliche benutzerdefinierte Anwendungen für AEM as a Cloud Service erstellen und verwalten, fahren Sie mit dem zweiten, optionalen Teil der Onboarding-Tour, [AEM-Entwickleraufgaben](developers.md), fort.
 
 >[!TIP]
 >

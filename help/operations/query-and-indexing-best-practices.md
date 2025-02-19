@@ -6,9 +6,9 @@ exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3088'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,14 +62,14 @@ Eine ähnliche Strategie kann verwendet werden, um das Ergebnis in einem Arbeits
 
 ## Optimieren von Abfragen {#optimizing-queries}
 
-Die Oak-Dokumentation bietet [allgemeine Übersicht über die Ausführung von Abfragen](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). Dies bildet die Grundlage für alle in diesem Dokument beschriebenen Optimierungsaktivitäten.
+Die Oak-Dokumentation bietet eine [allgemeine Übersicht über die Ausführung von Abfragen](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). Dies bildet die Grundlage für alle in diesem Dokument beschriebenen Optimierungsaktivitäten.
 
 AEM as a Cloud Service bietet das [Abfrageleistungs-Werkzeug](#query-performance-tool), das die Implementierung effizienter Abfragen unterstützt.
 
 * Dabei werden bereits ausgeführte Abfragen mit ihren jeweiligen Leistungsmerkmalen und dem Abfrageplan angezeigt.
 * Die Durchführung von Ad-hoc-Abfragen ist auf verschiedenen Ebenen möglich, von der bloßen Anzeige des Abfrageplans bis zur Ausführung der vollständigen Abfrage.
 
-Das Abfrageleistungs-Tool kann über die [Developer Console in Cloud Manager aufgerufen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de#queries). Das Abfrageleistungs-Tool von AEM as a Cloud Service liefert mehr Informationen über die Details der Abfrageausführung als die AEM-Version 6.x.
+Das Abfrageleistungs-Tool kann über die [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de#queries) aufgerufen werden. Das Abfrageleistungs-Tool von AEM as a Cloud Service liefert mehr Informationen über die Details der Abfrageausführung in den AEM 6.x-Versionen.
 
 Dieses Diagramm zeigt den allgemeinen Ablauf zur Verwendung des Abfrageleistungs-Tools zur Optimierung von Abfragen.
 

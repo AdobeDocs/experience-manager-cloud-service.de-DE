@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Erstellen eines Programms {#create-program}
 
-In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
+In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
 
 ## Ziel {#objective}
 
-Nachdem Sie das vorherige Dokument auf dieser Onboarding-Journey, [Zugriff auf Cloud Manager](cloud-manager.md), gelesen haben, haben Sie sichergestellt, dass Sie angemessenen Zugriff auf Cloud Manager haben. Jetzt können Sie Ihr erstes Programm erstellen.
+Nachdem Sie in dieser Onboarding-Tour das vorherige Dokument [Zugreifen auf Cloud Manager](cloud-manager.md) durchgelesen haben, haben Sie sichergestellt, dass Sie angemessenen Zugriff auf Cloud Manager haben. Jetzt können Sie Ihr erstes Programm erstellen.
 
 Nach dem Lesen dieses Dokuments können Sie Folgendes:
 
@@ -66,9 +66,9 @@ Auf der Landingpage wird eine neue Sandbox-Programmkarte mit einer Statusanzeige
 
 Sobald das Programm abgeschlossen ist, können sich Mitglieder Ihrer Organisation, die dem Produktprofil **Entwickler** zugewiesen sind, bei Cloud Manager anmelden und Cloud Manager-Git-Repositories verwalten.
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
-Nachdem Ihr erstes Programm erstellt wurde, können Sie Umgebungen dafür erstellen. Setzen Sie Ihre Onboarding-Journey mit dem Lesen des Dokuments [Erstellen von Umgebungen](create-environments.md) fort.
+Nachdem Ihr erstes Programm erstellt wurde, können Sie Umgebungen dafür erstellen. Sie sollten Ihre Onboarding-Tour fortsetzen, indem Sie das Dokument [Erstellen von Umgebungen](create-environments.md) lesen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

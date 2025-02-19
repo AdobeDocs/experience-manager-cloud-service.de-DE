@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 92%
 
 Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
-Im vorherigen Dokument der AEM Sites-Übersetzungs-Journey, [Inhalte übersetzen](configure-connector.md), haben Sie gelernt, wie Sie mithilfe von AEM-Übersetzungsprojekten Inhalte übersetzen können. Sie sollten jetzt:
+Im vorherigen Dokument der AEM Sites-Übersetzungs-Tour, [Übersetzen von Inhalten](configure-connector.md), haben Sie gelernt, wie Sie mit AEM-Übersetzungsprojekten Inhalte übersetzen können. Sie sollten jetzt:
 
 * Verstehen, was ein Übersetzungsprojekt ist.
 * Neue Übersetzungsprojekte erstellen können.
@@ -122,7 +122,7 @@ Sie sehen, dass dem Projekt eine neue Auftragskarte hinzugefügt wurde. In diese
 
 Sie werden feststellen, dass die auf der neuen Karte aufgeführten Statistiken unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur die Inhalte einschließt, die übersetzt werden müssen. Dazu gehören die erneute Übersetzung aktualisierter Inhalte sowie die Erstübersetzung neuer Inhalte.
 
-Von diesem Punkt an [ Sie „Ihren Übersetzungsauftrag genauso starten und verwalten wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
+Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genauso wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
 
 ### Aktualisieren eines manuell erstellten Übersetzungsprojekts {#updating-manual-project}
 
@@ -144,15 +144,15 @@ Um eine Übersetzung zu aktualisieren, können Sie Ihrem vorhandenen Projekt ein
    ![Zielsprache auswählen](assets/select-target-language.png)
 
 1. Sobald die Zielsprache Ihres neuen Übersetzungsauftrags festgelegt ist, wählen Sie unten auf der Auftragskarte die Schaltfläche mit den Auslassungspunkten aus, um die Details des Auftrags anzuzeigen.
-1. Der Auftrag ist beim ersten Erstellen leer. Fügen Sie Inhalte zum Auftrag hinzu, indem Sie auf die Schaltfläche **Hinzufügen** klicken und den Pfad-Browser verwenden [wie zuvor beim Erstellen des Übersetzungsprojekts](translate-content.md##manually-creating).
+1. Der Auftrag ist beim ersten Erstellen leer. Fügen Sie Inhalte zum Auftrag hinzu, indem Sie auf die Schaltfläche **Hinzufügen** tippen oder klicken und den Pfad-Browser verwenden, [wie Sie es bereits bei der ursprünglichen Erstellung des Übersetzungsprojekts getan haben](translate-content.md##manually-creating).
 
 >[!TIP]
 >
 >Die leistungsstarken Filter des Pfad-Browsers können wieder nützlich sein, um nur die aktualisierten Inhalte zu finden.
 >
->Weitere Informationen zum Pfad-Browser finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
+>Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt „Zusätzliche Ressourcen“](#additional-resources).
 
-Von diesem Punkt an [ Sie „Ihren Übersetzungsauftrag genauso starten und verwalten wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
+Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genauso wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
 
 ## Tour beendet? {#end-of-journey}
 

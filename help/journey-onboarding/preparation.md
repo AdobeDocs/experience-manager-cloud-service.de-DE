@@ -5,15 +5,15 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Onboarding-Vorbereitung {#onboarding-preparation}
 
-Nachdem Sie nun wissen, was Sie im Onboarding-Prozess erwartet, nachdem Sie den Artikel [AEM as a Cloud Service Onboarding Journey-Einführung](overview.md) gelesen haben, sind Sie wahrscheinlich bereit, loszulegen. Bevor jedoch der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin überblicken muss, bevor er sich beim System anmeldet.
+Da Sie nun wissen, was Sie im Onboarding-Prozess erwartet, nachdem Sie den Artikel [Einführung in die Onboarding-Tour für AEM as a Cloud Service](overview.md) gelesen haben, sind Sie bereit, loszulegen. Bevor jedoch der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin überblicken muss, bevor er sich beim System anmeldet.
 
 ## Ziel {#objective}
 

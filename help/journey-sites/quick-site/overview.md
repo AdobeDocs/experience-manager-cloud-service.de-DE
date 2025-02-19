@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Indem es Entwicklerwissen für die Site-Erstellung unnötig macht, keine Anforde
 
 ## Videoüberblick {#video-overview}
 
-Einen kurzen Überblick über diese Funktion in Aktion ([ Sie sich diese fünfminütige Einführung ansehen](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
+Einen kurzen Überblick über diese Funktion in Aktion [sehen Sie in dieser 5-minütigen Einführung](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
 
 Diese Dokumentations-Tour führt Sie schrittweise und detailliert durch alle Funktionen des Videos, sodass Sie den Workflow verstehen und den Prozess in Ihrer eigenen Umgebung reproduzieren können.
 
@@ -64,13 +64,13 @@ Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folge
 | 6 | [Anpassen des Site-Designs](customize-theme.md) | Erfahren Sie, wie ein Site-Design erstellt wird, wie Sie es anpassen und wie Sie es mit AEM-Live-Inhalten testen können. | Frontend-Entwicklungsperson |
 | 7 | [Bereitstellen eines benutzerdefinierten Designs](deploy-theme.md) | Erfahren Sie, wie Sie das Design der Site mithilfe der Pipeline bereitstellen. | Frontend-Entwicklungsperson |
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Jetzt sind Sie bereit, mit Ihrer Tour zu AEM Quick Site Creation zu beginnen.
 
 * Wenn Sie AEM- oder Cloud Manager-Admin sind oder sowohl Frontend-Entwickler- als auch Admin-Rollen verwenden oder einfach den durchgängigen Prozess in AEM verstehen möchten, beginnen Sie am Anfang der Tour mit [Grundlegendes zu Cloud Manager](cloud-manager.md), wie unten beschrieben.
 * Wenn Sie nur für die Frontend-Entwicklung verantwortlich sind und mit den Admins von AEM und Cloud Manager interagieren, können Sie direkt zu [Git-Repository-Zugriffsinformationen abrufen](retrieve-access.md) springen, um Zugriff auf das AEM-Git-Repository zu erhalten und mit der Anpassung zu beginnen.
-* Wenn Sie bereits wissen, dass AEM Sites und Cloud Manager zusammenarbeiten, und direkt mit der Konfiguration beginnen möchten, können Sie [direkt zum Erstellen einer Site aus einer Vorlage springen](create-site.md).
+* Wenn Sie bereits wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, und direkt mit der Konfiguration beginnen möchten, können Sie [direkt zum Erstellen einer Site aus einer Vorlage springen](create-site.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -5,16 +5,16 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1497'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Konfigurieren der CDN-Anmeldeinformationen und der Authentifizierung {#cdn-credentials-authentication}
 
-Das von Adobe bereitgestellte CDN verfügt über mehrere Funktionen und Dienste, von denen einige auf Anmeldeinformationen und eine Authentifizierung angewiesen sind, um ein angemessenes Maß an Unternehmenssicherheit zu gewährleisten. Indem Sie Regeln in einer Konfigurationsdatei deklarieren, die mithilfe der Cloud Manager [Konfigurations-Pipeline](/help/operations/config-pipeline.md) bereitgestellt wird, können Kunden im Self-Service Folgendes konfigurieren:
+Das von Adobe bereitgestellte CDN verfügt über mehrere Funktionen und Dienste, von denen einige auf Anmeldeinformationen und eine Authentifizierung angewiesen sind, um ein angemessenes Maß an Unternehmenssicherheit zu gewährleisten. Durch die Deklaration von Regeln in einer Konfigurationsdatei, die über die [Konfigurationspipeline](/help/operations/config-pipeline.md) des Cloud Managers bereitgestellt wird, können Kundinnen und Kunden Folgendes selbst konfigurieren:
 
 * Den HTTP-Header-Wert des X-AEM-Edge-Key, der vom Adobe-CDN verwendet wird, um Anforderungen zu überprüfen, die von einem kundenseitig verwalteten CDN stammen.
 * Das API-Token, mit dem Ressourcen im CDN-Cache gelöscht werden.

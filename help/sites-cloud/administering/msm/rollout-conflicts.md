@@ -6,9 +6,9 @@ role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ Benutzerdefinierte Konflikt-Handler können:
 
 ### Verhalten, wenn die Konflikt-Behandlung deaktiviert ist {#behavior-when-conflict-handling-deactivated}
 
-Wenn Sie [Konfliktbehandlung deaktivieren](#rollout-manager-and-conflict-handling) führt AEM keine Maßnahmen für konfliktbehaftete Seiten durch. Für Seiten, die keine Konflikte aufweisen, wird der Rollout erwartungsgemäß durchgeführt.
+Wenn Sie die [Konfliktbehandlung manuell deaktivieren](#rollout-manager-and-conflict-handling), führt AEM keine Maßnahmen für konfliktbehaftete Seiten durch. Für Seiten, die keine Konflikte aufweisen, wird der Rollout erwartungsgemäß durchgeführt.
 
 >[!CAUTION]
 >

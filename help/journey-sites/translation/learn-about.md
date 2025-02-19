@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Auf allgemeiner Ebene besteht die Übersetzung in AEM aus vier einfachen Schritt
 
 Im weiteren Verlauf der Tour erfahren Sie Schritt für Schritt, wie AEM Inhalte übersetzt.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Danke für Ihren Einstieg in die AEM Sites-Übersetzungs-Tour! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 
@@ -63,7 +63,7 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzung-Tour 
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Sites-Übersetzungs-Journey fortzufahren, indem Sie das Dokument [Erste Schritte mit der AEM Sites-Übersetzung](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Journey fortzufahren.
+Es wird zwar empfohlen, mit dem nächsten Teil der Sites-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit der AEM Sites-Übersetzung](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um mit der Tour fortzufahren.
 
 * [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/quick-start.md) – Ein kurzer Überblick über die wichtigsten Konzepte zur Inhaltserstellung mit AEM Sites
 * [MSM und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md) – Die Details des Multi-Site-Managers von AEM und wie er mit seinen Übersetzungs-Tools zusammenarbeitet.
