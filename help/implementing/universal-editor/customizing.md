@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 81%
+source-wordcount: '334'
+ht-degree: 72%
 
 ---
 
@@ -28,6 +28,16 @@ Die Schaltfläche **Veröffentlichen** kann daher in einer App vollständig unte
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## Deaktivieren der Veröffentlichung in der Vorschau {#publish-preview}
+
+Bestimmte Authoring-Workflows verhindern möglicherweise die Veröffentlichung im [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (falls verfügbar).
+
+Die **Vorschau**-Option im Veröffentlichungsfenster kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## Filtern von Komponenten {#filtering-components}
