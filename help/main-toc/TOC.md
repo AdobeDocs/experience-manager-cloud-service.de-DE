@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e4398678566b53412ae0aeea0a18cd0172268ec1
+source-git-commit: 1f77a8adc461a78bb40efc608d39686e67a9811a
 workflow-type: tm+mt
 source-wordcount: '6083'
 ht-degree: 99%
@@ -1064,7 +1064,7 @@ ht-degree: 99%
          + [Sidekick-Bibliothek](/help/edge/docs/sidekick-library.md)
       + [Häufig gestellte Fragen](/help/edge/docs/faq.md)
       + [Admin-API](https://www.aem.live/docs/admin.html)
-      + [AEM-Status](https://www.aemstatus.net)
+      + [AEM-Status](https://status.adobe.com)
       + Tools {#tools}
          + [AEM-Sidekick-Chrome-Erweiterung](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github-Bot](https://github.com/apps/aem-code-sync)
