@@ -4,10 +4,10 @@ description: In diesem Artikel wird erläutert, wie Sie mit verschiedenen Emulat
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 18%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -67,14 +67,7 @@ Mit dem Symbol **Bildschirmdrehung** können Sie bei der Vorschau eines Formular
 
 ## Siehe auch
 
-* [Erste Schritte mit Edge Delivery Services für AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen des Formulars und Starten der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
-* [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
-* [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
-* [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
-* [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 

@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 78%
+source-wordcount: '1038'
+ht-degree: 84%
 
 ---
 
@@ -36,9 +36,8 @@ Im Folgenden finden Sie das Layout mit Karten mit gleicher Breite (unter Verwend
 
 | ![Veröffentlichen/Rückgängigmachen der Veröffentlichung](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Responsiver Modus](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Benutzerdefinierte Komponenten](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**Veröffentlichen/Rückgängigmachen der Veröffentlichung**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Responsiver Modus**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Benutzerdefinierte Komponenten**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| Steuern Sie ganz einfach die Sichtbarkeit Ihrer Formulare - veröffentlichen Sie sie oder heben Sie ihre Veröffentlichung mit nur wenigen Klicks direkt im Editor auf. | Entwerfen von Formularen, die sich nahtlos auf allen Geräten (Desktop-PCs, Tablets und Mobilgeräte) anpassen. Verwenden Sie den responsiven Modus, um Formulare für verschiedene Bildschirmgrößen in der Vorschau anzuzeigen und zu testen. | Benutzerdefinierte Komponenten ermöglichen es Entwicklerinnen und Entwicklern, die Formularfunktionen durch die Erstellung eindeutiger Elemente zu erweitern, die auf bestimmte Anwendungsfälle im Unternehmen zugeschnitten sind. |
+| Steuern Sie ganz einfach die Sichtbarkeit Ihrer Formulare - veröffentlichen Sie sie oder heben Sie ihre Veröffentlichung mit nur wenigen Klicks direkt im Editor auf. | Entwerfen Sie Formulare, die sich nahtlos auf allen Geräten (Desktop-PCs, Tablets und Mobilgeräten) anpassen. Verwenden Sie den responsiven Modus, um Formulare für verschiedene Bildschirmgrößen in einer Vorschau anzuzeigen und zu testen. | Benutzerdefinierte Komponenten ermöglichen es Entwickelnden, die Formularfunktionen durch Erstellung eindeutiger Elemente zu erweitern, die auf bestimmte Anwendungsfälle der Organisation zugeschnitten sind. |
 
 | ![Stile](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Vorbefüllungs-Services](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B-Tests](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -52,9 +51,8 @@ Im Folgenden finden Sie das Layout mit Karten mit gleicher Breite (unter Verwend
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Einbetten von Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Dankeskonfiguration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | **Editor-Anpassung** | **Einbetten von Forms** | [**Dankeskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| Entwickler können die Funktionalität des Editors durch Benutzeroberflächenerweiterungen erweitern und so maßgeschneiderte Lösungen für spezifische organisatorische Anforderungen ermöglichen. | Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein. | Einfaches Anpassen der Bestätigungsmeldung oder -seite, die Benutzern nach erfolgreicher Formularübermittlung angezeigt wird. |
+| Entwickelnde können die Funktionalität des Editors durch Benutzeroberflächenerweiterungen erweitern und so maßgeschneiderte Lösungen für spezifische betriebliche Anforderungen ermöglichen. | Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein. | Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -246,13 +244,5 @@ Der universelle Editor enthält integrierte Analyse- und Tracking-Tools zur Übe
 
 ## Beginnen mit dem Erstellen von Formularen
 
-* [Erste Schritte mit Edge Delivery Services für AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
-* [Veröffentlichen des Formulars und Starten der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
-* [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
-* [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
-* [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
-* [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 
