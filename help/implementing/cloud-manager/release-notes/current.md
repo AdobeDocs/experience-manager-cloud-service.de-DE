@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: aaef376b733c10643e44205e55a0921c22008990
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -30,46 +30,46 @@ Die Veröffentlichung der nächsten Version ist für Donnerstag, dem 13. März 2
 
 * **Aktualisierung der Code-Qualitätsregeln**
 
-  Ab Donnerstag, dem 13. Februar 2025, verwendet der Cloud Manager-Code-Qualitätsschritt jetzt SonarQube-9.9.5.90363.
+  Seit Donnerstag, dem 13. Februar 2025, verwendet der Qualitätsschritt im Cloud Manager-Code jetzt SonarQube 9.9.5.90363.
 
-  Die aktualisierten Regeln, die für Cloud Manager auf AEM as a Cloud Service unter [diesem Link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) verfügbar sind, bestimmen Sicherheitsbewertungen und Code-Qualität für Cloud Manager-Pipelines.
+  Die aktualisierten Regeln, die für Cloud Manager in AEM as a Cloud Service unter [diesem Link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) verfügbar sind, gelten für die Sicherheitsbewertungen und die Code-Qualität für Cloud Manager-Pipelines.
 
-* SonarQube 9.9 ist jetzt die Standard-Engine zur Überprüfung der Code-Qualität für alle Kunden.
+* SonarQube 9.9 ist jetzt für alle Kundinnen und Kunden die Standard-Engine zur Überprüfung der Code-Qualität.
 
-* **Java 17- und Java 21-Build-Unterstützung**
+* **Build-Unterstützung für Java 17 und Java 21**
 
   Kundinnen und Kunden können jetzt mit Java 17 oder Java 21 erstellen und erhalten Zugriff auf Leistungsverbesserungen und neue Sprachfunktionen. Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Wenn die Build-Version auf Java 17 oder Java 21 festgelegt ist, wird Java 21 als Laufzeit bereitgestellt.
 
-* **99,99 % SLA Uptime-Reporting für Edge Delivery Services**
+* **SLA-Reporting mit Verfügbarkeit von 99,99 % für Edge Delivery Services**
 
-  Für qualifizierte Edge Delivery Services-Programme ist jetzt ein Hochverfügbarkeits-Reporting zu 99,99 % verfügbar. Um diese Funktion zu aktivieren, müssen Kundinnen bzw. Kunden ihre Edge Delivery Services-Sites erfolgreich integrieren und ihr Service Level Agreement (SLA) von 99,99 % in Cloud Manager anwenden.
+  Für qualifizierte Edge Delivery Services-Programme ist jetzt ein Reporting mit einer hohen Verfügbarkeit von 99,99 % verfügbar. Um diese Funktion zu aktivieren, müssen Kundinnen bzw. Kunden ihre Edge Delivery Services-Sites erfolgreich integrieren und ihr Service Level Agreement (SLA) von 99,99 % in Cloud Manager anwenden.
 
   Weitere Informationen finden Sie unter [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
 
-* **Verbessertes Benutzereinladungs-Erlebnis für Edge Delivery Services**
+* **Verbessertes Einladen von Benutzenden für Edge Delivery Services**
 
-  Das Erlebnis, Benutzende in das mit Edge Delivery Services verknüpfte Inhalts-Repository einzuladen, wurde verbessert. <!-- CMGR-65331 -->
+  Das Verfahren zum Einladen von Benutzenden in das mit Edge Delivery Services verknüpfte Content-Repository wurde verbessert. <!-- CMGR-65331 -->
 
-* **Automatische Erstellung von Administratorprofilen auf Veröffentlichungsinstanzen**
+* **Automatische Erstellung von Admin-Profilen auf Veröffentlichungsinstanzen**
 
-  Zuvor ermöglichte Cloud Manager die manuelle Erstellung von Administratorprofilen auf Veröffentlichungsinstanzen, unterstützte jedoch nicht standardmäßig die automatische Erstellung. Mit diesem Update werden jetzt automatisch Admin-Profile in Veröffentlichungsinstanzen erstellt, was die Benutzerfreundlichkeit verbessert und die Einrichtungszeit für Kundinnen und Kunden reduziert.
+  Zuvor ermöglichte Cloud Manager die manuelle Erstellung von Admin-Profilen auf Veröffentlichungsinstanzen, unterstützte jedoch nicht standardmäßig die automatische Erstellung. Mit diesem Update werden jetzt automatisch Admin-Profile in Veröffentlichungsinstanzen erstellt, was die Benutzerfreundlichkeit verbessert und die Einrichtungszeit für Kundinnen und Kunden reduziert.
 
   Weitere Informationen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 
   ![Filtern von Pipeline-Aktivitäten](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-* **Wechsel zu OAuth für Cloud Service-Umgebungen**
+* **Übergang zu OAuth für Cloud Service-Umgebungen**
 
-  In neuen Cloud Service-Umgebungen wird jetzt die OAuth-basierte Service-zu-Service-Authentifizierung für Adobe Developer Console-Integrationsprojekte anstelle der zuvor verwendeten JWT-Authentifizierungsmethode verwendet. Die JWT-Authentifizierung wird nicht mehr unterstützt und ihre Einstellung ist für Juni 2025 geplant.
+  In neuen Cloud Service-Umgebungen wird jetzt die OAuth-basierte Service-to-Service-Authentifizierung für Adobe Developer Console-Integrationsprojekte anstelle der zuvor verwendeten JWT-Authentifizierungsmethode verwendet. Die JWT-Authentifizierung wird nicht mehr unterstützt und ihre Einstellung ist für Juni 2025 geplant.
 
-* **Unterstützung für EC (Elliptic Curve) Private Keys (secp384r1)**
+* **Unterstützung für private EC-Schlüssel (Elliptic Curve) (secp384r1)**
 
-  Cloud Manager unterstützt jetzt `secp384r1` privaten EC-Schlüssel (Elliptic Curve) und bietet so verbesserte Sicherheit und Compliance für kundenverwaltete OV/EV-SSL-Zertifikate.
-Weitere Informationen finden Sie unter [Anforderungen für kundenverwaltete OV/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
+  Cloud Manager unterstützt jetzt private `secp384r1`-EC-Schlüssel (Elliptic Curve) und bietet so verbesserte Sicherheit und Compliance für kundenseitig verwaltete OV/EV-SSL-Zertifikate.
+Weitere Informationen finden Sie unter [Anforderungen für kundenseitig verwaltete OV/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
 
 * **Spezialisierte Testumgebungen**
 
-  Ab dem 27. Februar 2025 steht für Early Adopters eine neue Entwicklungsumgebung mit erweiterten Ressourcen zur Verfügung.
+  Ab dem 27. Februar 2025 steht Early Adoptern eine neue Entwicklungsumgebung mit erweiterten Ressourcen zur Verfügung.
 
 
 <!--
