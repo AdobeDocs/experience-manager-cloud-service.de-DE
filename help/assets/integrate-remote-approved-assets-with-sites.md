@@ -43,6 +43,7 @@ Für die Unterstützung von Remote-Assets mit Dynamic Media mit OpenAPI-Funktion
 * Richten Sie die folgenden [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md#add-variables) für AEM as a Cloud Service ein:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` bezeichnet die Programm-ID <br>
      `eYYYY` bezeichnet die Umgebungs-ID
 
@@ -127,7 +128,7 @@ Führen Sie die folgenden Schritte aus, um Remote-Assets im AEM-Inhaltsfragment 
 
    >[!NOTE]
    >
-   Wenn Sie über kein AEM-Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [eines erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models).
+   >Wenn Sie über kein AEM-Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [eines erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models).
 
 1. Klicken Sie auf das Symbol ![Häkchen](/help/assets/assets/do-not-localize/checkmark-icon.svg) neben der Textkomponente.
 1. Wählen Sie **[!UICONTROL Remote]** aus, um das Asset aus dem Remote-DAM abzurufen. <br>
