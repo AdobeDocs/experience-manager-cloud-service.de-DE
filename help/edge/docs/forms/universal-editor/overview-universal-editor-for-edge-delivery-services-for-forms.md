@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
+source-git-commit: 5680e2381f5826a48e731906aa8aab9d06a0e944
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 84%
+source-wordcount: '1109'
+ht-degree: 85%
 
 ---
 
@@ -31,17 +31,17 @@ Im Folgenden finden Sie das Layout mit Karten mit gleicher Breite (unter Verwend
 
 | ![WYSIWYG-Schnittstelle](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![Regeleditor](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![Übermittlungsaktionen](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**WYSIWYG-Schnittstelle**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**Regeleditor**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**Übermittlungsaktionen**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| [**WYSIWYG-Schnittstelle**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**Regeleditor**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Übermittlungsaktionen**](/help/edge/docs/forms/universal-editor/submit-action.md) |
 | Der universelle Editor bietet eine WYSIWYG-Benutzeroberfläche für Formularentwürfe – mit einer vorkonfigurierten Komponentenbibliothek, responsivem Design, vorlagenbasierter Erstellung und Echtzeitänderungen von Feldern. | Mit dem Regeleditor können Benutzende mithilfe ereignisgesteuerter Regeln, sofortiger Validierung und einer auf einfachem JavaScript und JSON basierenden Fehlerbehandlung dynamische Formularinteraktionen erstellen. | Übermittlungsaktionen unterstützen Backend-Integration, Logik für bedingte Übermittlungen, sichere Endpunkte sowie Präprozessoren und optimieren so Übermittlungs-Workflows. |
 
 | ![Veröffentlichen/Rückgängigmachen der Veröffentlichung](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Responsiver Modus](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Benutzerdefinierte Komponenten](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Veröffentlichen/Rückgängigmachen der Veröffentlichung**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **Responsiver Modus** | [**Benutzerdefinierte Komponenten**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| [**Veröffentlichen/Rückgängigmachen der Veröffentlichung**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Responsiver Modus**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Benutzerdefinierte Komponenten**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | Steuern Sie ganz einfach die Sichtbarkeit Ihrer Formulare - veröffentlichen Sie sie oder heben Sie ihre Veröffentlichung mit nur wenigen Klicks direkt im Editor auf. | Entwerfen Sie Formulare, die sich nahtlos auf allen Geräten (Desktop-PCs, Tablets und Mobilgeräten) anpassen. Verwenden Sie den responsiven Modus, um Formulare für verschiedene Bildschirmgrößen in einer Vorschau anzuzeigen und zu testen. | Benutzerdefinierte Komponenten ermöglichen es Entwickelnden, die Formularfunktionen durch Erstellung eindeutiger Elemente zu erweitern, die auf bestimmte Anwendungsfälle der Organisation zugeschnitten sind. |
 
 | ![Stile](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Vorbefüllungs-Services](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B-Tests](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Stile**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **Vorbefüllungs-Services** (in Kürze verfügbar) | [**A/B-Tests**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Vorbefüllungs-Services** (in Kürze verfügbar) | [**A/B-Tests**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Die Formatierung mit CSS ermöglicht es Entwicklerinnen und Entwicklern, das Erscheinungsbild von Formularelementen anzupassen und ein visuell ansprechendes Design zu erstellen, das mit der Ästhetik der Website übereinstimmt. | Services zum Vorausfüllen füllen Formularfelder automatisch mit relevanten Benutzerdaten aus verschiedenen Quellen auf, was weniger manuelle Eingaben erfordert und das Anwendererlebnis verbessert. | A/B-Tests ermöglichen es Unternehmen, mit verschiedenen Formularentwürfen, Layouts und Funktionen zu experimentieren, um die leistungsstärksten Varianten zu ermitteln. |
 
 | ![Analytics und Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Aufgabenverwaltung](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Datenbindung](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
@@ -51,7 +51,7 @@ Im Folgenden finden Sie das Layout mit Karten mit gleicher Breite (unter Verwend
 
 | ![Editor-Anpassung](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![Einbetten von Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Dankeskonfiguration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **Editor-Anpassung** | **Einbetten von Forms** | [**Dankeskonfiguration**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| **Editor-Anpassung** | **Einbetten von Forms** | [**Dankeskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Entwickelnde können die Funktionalität des Editors durch Benutzeroberflächenerweiterungen erweitern und so maßgeschneiderte Lösungen für spezifische betriebliche Anforderungen ermöglichen. | Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein. | Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen. |
 
 
