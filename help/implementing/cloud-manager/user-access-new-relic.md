@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 100%
+source-wordcount: '1809'
+ht-degree: 97%
 
 ---
 
@@ -179,7 +179,7 @@ Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu Ne
 
 >[!NOTE]
 >
->Wenn in Ihrem New Relic One-Unterkonto mindestens 90 Tage lang keine Aktivität erkannt wurde, wird der APM-Agent angehalten.
+>Wenn in Ihrem New Relic One-Unterkonto mindestens 30 Tage lang keine Aktivität erkannt wurde, wird der APM-Agent angehalten.
 >
 >Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
 
@@ -191,7 +191,7 @@ Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für I
 
 Über das Java-Plug-in von New Relic One überwacht Adobe die Autoren-, Veröffentlichungs- und Vorschau-Services (sofern verfügbar) von AEM as a Cloud Service. Adobe ermöglicht benutzerspezifische Telemetrie und Überwachung mit New Relic One APM in Nicht-Produktions- und Produktionsumgebungen in AEM as a Cloud Service.
 
-Ihr New Relic One-Konto ist mit einem primären, von Adobe bereitgestellten Konto verknüpft und erhält Daten von mehreren Programmen: je drei Programmen pro Umgebung in AEM as a Cloud Service.
+Ihr New Relic One-Konto ist an ein primäres von Adobe verwaltetes Konto angehängt und erhält Berichte von mehreren Programmen, davon drei pro AEM as a Cloud Service-Umgebung.
 
 * Ein Programm für den Autoren-Service pro Umgebung
 * Eine Anwendung für den `Publish`-Service pro Umgebung (einschließlich „Golden Publish“)
@@ -201,7 +201,8 @@ Hinweis:
 
 * Pro Anwendung wird ein Lizenzschlüssel verwendet.
 * Umgebungen in AEM as a Cloud Service senden Berichte nur an ein einziges New Relic One-Konto.
-* Vollständige Überwachungsmetriken und Ereignisse für New Relic One werden drei Monate lang gespeichert. &lt;!- CQDOC-22238 – Änderung von sieben Tagen zu drei Monaten. >
+* Vollständige Überwachungsmetriken und -ereignisse für beide New Relic One werden drei Monate lang aufbewahrt.
+
 +++
 
 +++**Sendet Adobe Warnhinweise über New Relic One?** {#alerting-new-relic}
@@ -235,5 +236,5 @@ Der Adobe-Support überwacht AEM as a Cloud Service mit New Relic One und andere
 
 +++**Der APM-Agent für mein New Relic One-Konto wurde angehalten. Was ist passiert?** {#deactivated}
 
-[APM-Agenten werden angehalten](#limitations), wenn mindestens 90 Tage lang keine Aktivität erkannt wurde. Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
+[APM-Agenten werden angehalten](#limitations), wenn mindestens 30 Tage lang keine Aktivität erkannt wurde. Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
 +++
