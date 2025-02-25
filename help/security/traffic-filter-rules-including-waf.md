@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4215'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +206,7 @@ Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedin
 
 **Anmerkungen**
 
-* Die Anfrageeigenschaft `clientIp` kann nur mit den folgenden Prädikaten verwendet werden: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kann bei auch mit IP-Bereichen verglichen werden, wenn die Prädikate `in` und `notIn` verwendet werden. Im folgenden Beispiel wird eine Bedingung implementiert, um zu prüfen, ob sich eine Client-IP im IP-Bereich von 192.168.0.0/24 befindet (also von 192.168.0.0 bis 192.168.0.255):
+* Die Anfrageeigenschaft `clientIp` kann nur mit den folgenden Prädikaten verwendet werden: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kann bei auch mit IP-Bereichen verglichen werden, wenn die Prädikate `in` und `notIn` verwendet werden. Im folgenden Beispiel wird eine Bedingung implementiert, um zu bewerten, ob eine Client-IP im IP-Bereich von 192.168.0.0/24 liegt (also von 192.168.0.0 bis 192.168.0.255):
 
 ```
 when:
@@ -214,7 +214,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe empfiehlt die Verwendung von [regex101](https://regex101.com/) und [Fastly Fiddle](https://fiddle.fastly.dev/) bei der Arbeit mit Regex. Weitere Informationen darüber, wie Fastly mit Regex umgeht, finden Sie in der [Fastly-Dokumentation – Reguläre Ausdrücke in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe empfiehlt bei der Arbeit mit Regex die Verwendung von [regex101](https://regex101.com/) und [Fastly Fiddle](https://fiddle.fastly.dev/). Weitere Informationen darüber, wie Fastly mit Regex umgeht, finden Sie in der [Fastly-Dokumentation – Reguläre Ausdrücke in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Aktionsstruktur {#action-structure}
@@ -235,12 +235,12 @@ Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, d
 
 Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln verwendet werden kann, kann auf Folgendes verweisen:
 
-#### Schadverkehr
+#### Schädlicher Traffic
 
 | **Flag-ID** | **Flag-Name** | **Beschreibung** |
 |---|---|---|
-| ANSCHLAG | Attacke | Markierung zur Identifizierung von Anfragen, die einen oder mehrere der in dieser Tabelle aufgelisteten Angriffstypen enthalten |
-| ATTACK-FROM-BAD-IP | Angriff von schlechter IP | Markierung zur Identifizierung von Anfragen, die von `BAD-IP` kommen und einen oder mehrere der in dieser Tabelle aufgelisteten Angriffstypen enthalten |
+| ATTACK | Angriff | Markierung zur Identifizierung von Anfragen, die eine oder mehrere der in dieser Tabelle aufgelisteten Angriffsarten enthalten |
+| ATTACK-FROM-BAD-IP | Angriff von bösartiger IP | Markierung zur Identifizierung von Anfragen, die von `BAD-IP` kommen und eine oder mehrere der in dieser Tabelle aufgelisteten Angriffsarten enthalten |
 | SQLI | SQL-Injektion | SQL-Injektion ist der Versuch, durch die Ausführung beliebiger Datenbankabfragen Zugriff auf eine Anwendung zu erhalten oder privilegierte Informationen zu erhalten. |
 | BACKDOOR | Backdoor | Ein Backdoor-Signal ist eine Anfrage, die versucht festzustellen, ob eine gemeinsame Backdoor-Datei auf dem System vorhanden ist. |
 | CMDEXE | Befehlsausführung | Befehlsausführung ist der Versuch, durch beliebige Systembefehle mithilfe von Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder ein Zielsystem zu beschädigen. |
@@ -249,17 +249,17 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | TRAVERSAL | Verzeichnistraversierung | Verzeichnistraversierung ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
 | USERAGENT | Angriffs-Tooling | Angriffs-Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Anfälligkeit auszunutzen. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Log4Shell-Anfälligkeit](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 auszunutzen. |
-| CVE | CVE | Markierung zur Identifizierung eines CVE. Wird immer mit einem `CVE-<CVE Number>` kombiniert. Wenden Sie sich an Adobe, um mehr darüber zu erfahren, vor welchen CVEs Adobe Sie schützen wird. |
+| CVE | CVE | Markierung zur Identifizierung eines CVE. Wird immer mit einer `CVE-<CVE Number>`-Markierung kombiniert. Wenden Sie sich an Adobe, um mehr darüber zu erfahren, vor welchen CVEs Adobe Sie schützt. |
 
-#### Verdächtiger Datenverkehr
+#### Verdächtiger Traffic
 
 | **Flag-ID** | **Flag-Name** | **Beschreibung** |
 |---|---|---|
 | ABNORMALPATH | Anormaler Pfad | Anormaler Pfad bedeutet, dass der ursprüngliche Pfad vom normalisierten Pfad abweicht (z. B. `/foo/./bar` wird normalisiert in `/foo/bar`) |
-| FEHLERHAFT | Fehlerhafte IP | Markieren Sie diese Option, um Anfragen von IP-Adressen als ungültig zu kennzeichnen, entweder weil sie als bösartige Quellen identifiziert werden (`SANS`, `TORNODE`) oder weil sie von WAF als ungültig erkannt wurden, nachdem sie zu viele bösartige Anfragen gesendet haben |
+| BAD-IP | Bösartige IP | Markierung zur Identifizierung von Anfragen von IP-Adressen als bösartig, entweder weil sie als schädliche Quellen identifiziert werden (`SANS`, `TORNODE`) oder weil sie von der WAF als bösartig erkannt wurden, nachdem sie zu viele schädliche Anfragen gesendet haben |
 | BHH | Bad Hop Headers | Bad Hop Headers weisen auf einen HTTP-Schmuggelversuch durch einen fehlerhaften Transfer-Encoding (TE)- oder Content-Length(CL)-Header oder einen korrekt formatierten TE- und CL-Header hin. |
 | CODEINJECTION | Code-Injektion | Code-Injektion ist der Versuch, über beliebige Anwendungs-Code-Befehle mittels Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder es zu beschädigen. |
-| KOMPRIMIERT | Komprimierung erkannt | Der POST-Anfragetext ist komprimiert und kann nicht überprüft werden. Wenn beispielsweise eine Kopfzeile für eine `Content-Encoding: gzip`-Anfrage angegeben ist und der POST-Hauptteil kein einfacher Text ist. |
+| COMPRESSED | Komprimierung erkannt | Der POST-Anfragetext ist komprimiert und kann nicht überprüft werden. Das trifft zu, wenn beispielsweise ein `Content-Encoding: gzip`-Anfrage-Header angegeben ist und der POST-Text normaler Text ist. |
 | RESPONSESPLIT | HTTP-Antwortaufteilung | Gibt an, wann CRLF-Zeichen als Eingabe an die Anwendung gesendet werden, um Kopfzeilen in die HTTP-Antwort einzufügen. |
 | NOTUTF8 | Ungültige Codierung | Eine ungültige Codierung kann dazu führen, dass der Server böswillige Zeichen aus einer Anfrage in eine Antwort übersetzt, was entweder zu einer Dienstverweigerung oder zu XSS führt |
 | MALFORMED-DATA | Fehlerhafte Daten im Anfrageinhalt | Ein POST-, PUT- oder PATCH-Anfrageinhalt, der gemäß der Anfragekopfzeile „Inhaltstyp“ fehlerhaft ist. Wenn beispielsweise eine Anfragekopfzeile „Content-Type: application/x-www-form-urlencoded“ angegeben ist und ein POST-Hauptteil vorliegt, der JSON ist. Dies ist häufig ein Programmierfehler, eine automatisierte oder schädliche Anfrage. Erfordert Agent 3.2 oder höher. |
@@ -267,11 +267,11 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | NO-CONTENT-TYPE | Fehlende Anfragekopfzeile „Content-Type“ | Eine Anfrage vom Typ POST, PUT oder PATCH, die keine Anfragekopfzeile vom Typ „Content-Type“ enthält. Standardmäßig sollten Anwendungs-Server in diesem Fall von „Content-Type: text/plain; charset=us-ascii“ ausgehen. Bei vielen automatisierten und böswilligen Anfragen fehlt möglicherweise „Content-Type“. |
 | NOUA | Kein Benutzeragent | Gibt an, dass eine Anforderung keine „Benutzeragent“-Kopfzeile enthält bzw. dass der Kopfzeilenwert nicht festgelegt wurde. |
 | NULLBYTE | Null-Byte | Null-Bytes werden normalerweise nicht in einer Anfrage angezeigt und weisen darauf hin, dass die Anfrage falsch formatiert ist und möglicherweise schädlich ist. |
-| OOB-DOMAIN | Out-of-Band-Domäne | Out-of-Band-Domains werden in der Regel bei Penetrationstests verwendet, um Sicherheitslücken zu identifizieren, bei denen der Netzwerkzugriff zulässig ist. |
+| OOB-DOMAIN | Out-of-Band-Domain | Out-of-Band-Domains werden in der Regel bei Penetrationstests verwendet, um Sicherheitslücken zu identifizieren, bei denen Netzwerkzugriff erlaubt wird. |
 | PRIVATEFILE | Private Dateien | Private Dateien sind vertraulich, wie z. B. eine Apache `.htaccess`-Datei oder eine Konfigurationsdatei, der vertrauliche Informationen entnommen werden könnten. |
 | SCANNER | Scanner | Identifiziert beliebte Scan-Dienste und -Werkzeuge. |
 
-#### sonstiger Verkehr
+#### Sonstiger Traffic
 
 | **Flag-ID** | **Flag-Name** | **Beschreibung** |
 |---|---|---|
@@ -299,7 +299,7 @@ Es folgen einige Regelbeispiele. Weitere Informationen zu Beispielen für Ratenb
 
 **Beispiel 1**
 
-Diese Regel blockiert Anfragen von **IP-192.168.1.1**:
+Diese Regel blockiert Anfragen von der **IP192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -339,7 +339,7 @@ data:
 
 **Beispiel 3**
 
-Diese Regel blockiert Anfragen zur Veröffentlichung, die den Abfrageparameter `foo` enthalten, lässt jedoch jede Anfrage von IP-192.168.1.1 zu:
+Diese Regel blockiert Anfragen bei der Veröffentlichung, die den Abfrageparameter `foo` enthalten, erlaubt jedoch jede Anfrage von der IP 192.168.1.1:
 
 ```
 kind: "CDN"

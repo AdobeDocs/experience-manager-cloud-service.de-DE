@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1750'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Inte
 
 #### Veröffentlichung verwalten
 
-Sie können den Workflow [Veröffentlichung verwalten](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) verwenden, um Formulare in Umgebungen zu veröffentlichen oder die Veröffentlichung rückgängig zu machen, normalerweise von der Autoreninstanz bis zur Veröffentlichungs- und Vorschauinstanz. Er ermöglicht es Benutzenden, Inhalte zu veröffentlichen, ihre Veröffentlichung rückgängig zu machen oder ihre Veröffentlichung effizient zu planen.
+Sie können den Workflow [Veröffentlichung verwalten](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) verwenden, um Formulare in verschiedenen Umgebungen zu veröffentlichen oder deren Veröffentlichung rückgängig zu machen, normalerweise von der Autoreninstanz zu Veröffentlichungs- und Vorschauinstanzen. Er ermöglicht es Benutzenden, Inhalte zu veröffentlichen, ihre Veröffentlichung rückgängig zu machen oder ihre Veröffentlichung effizient zu planen.
 
 #### Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare
 
