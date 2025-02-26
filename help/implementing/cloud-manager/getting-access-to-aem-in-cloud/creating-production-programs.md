@@ -5,23 +5,24 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 100%
+source-wordcount: '1098'
+ht-degree: 79%
 
 ---
 
 
 # Erstellen von Produktionsprogrammen {#create-production-program}
 
-Ein Produktionsprogramm richtet sich an Benutzende, die mit AEM und Cloud Manager vertraut sind und Code schreiben, erstellen und testen können, um ihn für Live-Traffic bereitzustellen.
+Ein Produktionsprogramm ist für Benutzende gedacht, die mit Adobe Experience Manager (AEM) und Cloud Manager vertraut sind und Code schreiben, erstellen und testen können, um ihn für den Live-Traffic bereitzustellen.
 
 Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmtypen](program-types.md).
 
 ## Erstellen eines Produktionsprogramms {#create}
 
-Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise [zusätzliche Optionen](#options) angezeigt, wenn Sie Ihr Programm hinzufügen.
+Abhängig von den Berechtigungen Ihres Unternehmens werden beim Hinzufügen Ihres Programms möglicherweise zusätzliche Produktionsprogrammoptionen angezeigt.
+Siehe [Zusätzliche Produktions-Programmoptionen](#options).
 
 **So erstellen Sie ein Produktionsprogramm:**
 
@@ -73,7 +74,7 @@ Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise [zus�
 
 ## Zusätzliche Optionen für Produktionsprogramme {#options}
 
-Je nachdem, welche Berechtigungen Ihrer Organisation zur Verfügung stehen, stehen Ihnen beim Erstellen eines Produktionsprogramms möglicherweise zusätzliche Optionen zur Verfügung.
+Je nachdem, welche Berechtigungen Ihrer Organisation zur Verfügung stehen, stehen Ihnen beim Erstellen eines Produktionsprogramms möglicherweise die folgenden zusätzlichen Optionen zur Verfügung.
 
 ### Sicherheit {#security}
 
@@ -98,23 +99,25 @@ Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkar
 
 ![SLA-Optionen](assets/create-production-program-sla.png)
 
-AEM Sites und Forms bieten standardmäßig ein Service Level Agreement (SLA) mit 99,99 % an. Die Option **Service Level Agreement von 99,99 %** ermöglicht einen minimalen Betriebszeitprozentsatz von 99,99 % für Ihre Sites- und/oder Forms-Produktionsumgebungen.
+Sites und Forms bieten standardmäßig 99,9 % service level agreement (SLA). Die **99,99 % Service level agreement**-Option garantiert eine minimale Betriebszeit von 99,99 % für Ihre Produktionsumgebungen, unabhängig davon, ob für Sites, Forms, Edge Delivery Services oder alle drei Umgebungen.
 
-99,99 % SLA bietet Vorteile wie höhere Verfügbarkeit und geringere Latenz und erfordert, dass eine [zusätzliche Veröffentlichungsregion](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) auf die Produktionsumgebung im Programm angewendet wird.
+99,99 % SLA bietet Vorteile, einschließlich höherer Verfügbarkeit und geringerer Latenz.
 
-Wenn die [Anforderungen](#sla-requirements) für die Aktivierung von 99,99 % SLA erfüllt sind, müssen Sie eine [Full-Stack-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausführen, um sie zu aktivieren.
+Für Sites- und Forms-Programme erfordert die 99,99%ige SLA eine [zusätzliche Veröffentlichungsregion](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) die in der Programmversion auf die Produktionsumgebung angewendet werden muss. Wenn die [Anforderungen](#sla-requirements) für die Aktivierung von 99,99 % SLA erfüllt sind, müssen Sie eine [Full-Stack-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausführen, um sie zu aktivieren.
+
+Für Edge Delivery Services gibt es *keine* andere Anforderung als die Konfiguration der 99,99%igen SLA-Lizenz im Programm.
 
 #### Anforderungen für 99,99 % SLA {#sla-requirements}
 
-Über die erforderlichen Berechtigungen hinaus gelten für 99,99 % SLA zusätzliche Nutzungsanforderungen.
+Zusätzlich zu den erforderlichen Berechtigungen umfasst die Verwendung des 99,99%igen SLA für Sites- oder Forms-Programms die folgenden zusätzlichen Anforderungen:
 
 * Sowohl 99,99 % SLA als auch zusätzliche Berechtigungen für die Veröffentlichungsregion müssen der Organisation zur Verfügung stehen, wenn 99,99 % SLA auf das Programm angewendet wird.
 * Cloud Manager überprüft, ob eine nicht verwendete Berechtigung für [zusätzliche Veröffentlichungsregion](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) verfügbar ist, bevor 99,99 % SLA auf das Programm angewendet wird.
 * Wenn ein Programm bereits eine Produktionsumgebung mit mindestens einer zusätzlichen Veröffentlichungsregion enthält, prüft Cloud Manager beim Bearbeiten nur die Verfügbarkeit einer SLA-Berechtigung von 99,99 %.
 * Damit 99,99 % SLA und die Berichterstellung aktiviert werden können, muss die [Produktions-/Staging-Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-environments) erstellt worden sein und es muss mindestens eine zusätzliche Veröffentlichungsregion auf die Produktions-/Staging-Umgebung angewendet worden sein.
    * Wenn Sie ein [erweitertes Netzwerk](/help/security/configuring-advanced-networking.md) verwenden, stellen Sie sicher, dass Sie die Empfehlungen im Dokument [Hinzufügen mehrerer Veröffentlichungsregionen zu einer neuen Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-regions) befolgen, damit die Konnektivität im Falle eines regionalen Ausfalls erhalten bleibt.
-* Mindestens eine zusätzliche Veröffentlichungsregion muss in Ihrem 99,99 %-SLA-Programm verbleiben. Benutzende dürfen den letzten zusätzlichen Veröffentlichungsbereich nicht aus Ihrem 99,99 %-SLA-Programm löschen.
-* Ein SLA von 99,99 % wird für Produktionsprogramme unterstützt, für die die Sites- oder Forms-Lösung aktiviert ist.
+* Ihr SLA-Programm mit 99,99 % muss immer mindestens eine zusätzliche Veröffentlichungsregion enthalten. Benutzer dürfen die letzte verbleibende zusätzliche Veröffentlichungsregion nicht aus dem Programm löschen.
+* Ihre 99,99%ige SLA wird für Produktionsprogramme unterstützt, für die die Sites- oder Forms-Lösung aktiviert ist.
 * Führen Sie eine [vollständige Stack-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) aus, um das SLA von 99,99 % zu aktivieren (bzw. zu deaktivieren, wenn Sie ein Programm bearbeiten).
 
 ## Zugriff auf ein Programm {#accessing}
