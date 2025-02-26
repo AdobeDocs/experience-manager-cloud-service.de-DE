@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '6094'
-ht-degree: 98%
+source-wordcount: '6193'
+ht-degree: 95%
 
 ---
 
@@ -1024,37 +1024,36 @@ ht-degree: 98%
    + Erstellen von Formularen {#build-forms}
       + [Überblick](/help/edge/docs/forms/overview.md)
       + [Wie funktioniert Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + Erste Schritte {#getting-started-edge-delivery-services-forms}
-         + [Erste Schritte](/help/edge/docs/forms/tutorial.md)
-         + [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-         + [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
-         + [Veröffentlichen des Formulars und Starten der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
-         + [Hinzufügen von Validierungen zu Formularfeldern](/help/edge/docs/forms/validate-forms.md)
-         + [Laden von Optionen aus einer URL in ein Formular](/help/edge/docs/forms/load-options-from-url.md)
-         + [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
-         + [Verwenden von Regeln zum Hinzufügen von dynamischem Verhalten zu einem Formular](/help/edge/docs/forms/rules-forms.md)
-         + [Regex-Ausdrücke für Validierungen](/help/edge/docs/forms/regex-forms.md)
-         + [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
+      + Dokumentenbasierte Authoring-{#getting-started-edge-delivery-services-forms}
+         + [Erstellen Sie Ihr erstes Formular: Schnellstartanleitung mit Google Sheets und Excel](/help/edge/docs/forms/tutorial.md)
+         + [So erstellen Sie Forms mit Google Sheets oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)
+         + [Verbinden Ihres Formulars mit Google Sheets: Einrichtungshandbuch für die Datenerfassung](/help/edge/docs/forms/submit-forms.md)
+         + [Formular live schalten: Handbuch zur Veröffentlichung und Datenerfassung](/help/edge/docs/forms/publish-forms.md)
+         + [Formularfeldvalidierung: Hinzufügen von Fehlerprüfungen zu Ihrer Forms](/help/edge/docs/forms/validate-forms.md)
+         + [Design Beautiful Forms: Handbuch zu Stil und Anpassung](/help/edge/docs/forms/style-theme-forms.md)
+         + [Erstellen von Erfolgsnachrichten: Passen Sie die Dankeseite Ihres Formulars an](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Anleitung zur Formularübermittlung: Verwenden des Forms-Übermittlungsdienstes](/help/forms/forms-submission-service.md)
+         + [Dynamische Formularfelder: Optionen aus URLs werden geladen](/help/edge/docs/forms/load-options-from-url.md)
+         + [Intelligentes Verhalten hinzufügen: Formularregeln und Logikhandbuch](/help/edge/docs/forms/rules-forms.md)
+         + [Erweiterte Formularvalidierung: Handbuch zu regulären Ausdrücken](/help/edge/docs/forms/regex-forms.md)
+         + [Wiederverwendbare Forms erstellen: Handbuch zu Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
+         + [Erstellen einer dynamischen Forms: Hinzufügen wiederholbarer Abschnitte](/help/edge/docs/forms/repeatable-forms.md)
+         + [Ihr Formular global gestalten: Handbuch zur Formularübersetzung](/help/edge/docs/forms/translate-forms.md)
+         + [Schützen der Forms: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
+         + [Überwachen der Formularleistung: Handbuch zur Überwachung der realen Verwendung](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Bereitstellen von Forms auf Edge: Veröffentlichungshandbuch für Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG {#universal-editor}
-         + [Überblick – Universeller Editor für Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Erste Schritte](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Grundlegendes zur Benutzeroberfläche von WYSIWYG](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Hinzufügen von Regeln zu mithilfe des Regeleditors](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Erstellen benutzerdefinierter Komponenten](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Verwenden von reCAPTCHA in Formularen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Übermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Forms veröffentlichen](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Anpassen der Formatierung von Formularen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Responsiver Modus](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + Funktionen {#advanced-features-edge-delivery-services-forms}
-         + [Verwenden von Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
-         + [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
-         + [Übersetzen des Formulars](/help/edge/docs/forms/translate-forms.md)
-         + [Verwenden von reCAPTCHA zum Schutz von Formularen](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Benutzerdefinierte Komponenten](/help/edge/docs/forms/custom-components-forms.md)
-         + [Echtzeit-Benutzerüberwachung für Formulare](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Veröffentlichung von Formularen für Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [Einführung in den universellen Editor von Forms für Edge Delivery Services - vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Erstellen Ihres ersten Formulars mit dem universellen Editor - Tutorial „Schritt für Schritt“](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Handbuch zur Benutzeroberfläche des universellen Editors: Tools, Funktionen und Navigation - Erklärung](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Mobiles Arbeiten mit Forms: Responsives Design im universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Design Beautiful Forms: Stil- und Design-Anleitung für den universellen Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Hinzufügen von dynamischem Verhalten zu Forms: Vollständiges Handbuch zum Regeleditor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Anleitung zur Formularübermittlung: Konfigurieren und Anpassen von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Forms vor Spam schützen: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Veröffentlichen und Bereitstellen von Forms: Veröffentlichungshandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Verweise {#forms-references}
          + [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
    + Edge Delivery-Ressourcen {#resources}

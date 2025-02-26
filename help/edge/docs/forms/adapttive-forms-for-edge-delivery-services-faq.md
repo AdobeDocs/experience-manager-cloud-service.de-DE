@@ -1,0 +1,58 @@
+---
+title: Häufig gestellte Fragen zu AEM Forms mit Edge Delivery Services
+description: Erhalten Sie Antworten auf häufig gestellte Fragen zu AEM Forms mit Edge Delivery Services und dem universellen Editor. Erfahren Sie mehr über mehrsprachige Formulare, globale Vorlagen, Formularfragmente, Analysen und Datenintegrationsfunktionen.
+feature: Edge Delivery Services
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 0%
+
+---
+
+
+
+# Häufig gestellte Fragen (FAQ)
+
+## Mehrsprachiger Support und globale Nutzung
+
+### F: Wie werden mehrsprachige Formulare im EDS und im universellen Editor gehandhabt?
+
+**A:** Mehrsprachige Formulare folgen demselben Übersetzungs-Workflow wie AEM Sites. Forms kann mithilfe der standardmäßigen AEM-Übersetzungsfunktionen in mehreren Sprachen erstellt werden, um verschiedene Märkte zu bedienen.
+
+### F.: Kann ich globale Vorlagen und Formularfragmente erstellen und verwenden?
+
+**A:** Ja, EDS und der universelle Editor unterstützen sowohl globale Vorlagen als auch Formularfragmente. Auf diese Weise können Sie wiederverwendbare Komponenten erstellen, die in mehreren Formularen verwendet werden können.
+
+### F.: Ist es möglich, ein Formular einmal zu erstellen und es auf mehreren Web-Seiten zu verwenden?
+
+**A:** Ja, Sie können ein Formular an einem Ort erstellen und es über mehrere Web-Seiten hinweg referenzieren, ähnlich wie die Funktionalität der Formularkomponente „Einbetten“ in Adaptive Forms.
+
+## Datenintegration und -zuordnung
+
+### F: Wie funktioniert die Integration des Formulardatenmodells (FDM) mit dem universellen Editor?
+
+**A:** Derzeit kann die FDM-Integration über den Regeleditor für einzelne Felder konfiguriert werden. Die Funktion für die automatische Feldzuordnung (ähnlich dem Formulardatenmodell-Assistenten in Adaptive Forms) ist in Entwicklung und wird in Kürze verfügbar sein.
+
+## Analytics und Tracking
+
+### F.: Welche Optionen werden für die Formularanalyse und -verfolgung empfohlen?
+
+**A:** Es gibt mehrere Optionen für die Analyse und das Tracking:
+
+- Adobe Experience Platform Web SDK (primäre Empfehlung)
+- Echtes Benutzermonitoring (RUM) für abgefragte Metriken
+- Integration mit anderen Analysesystemen nach Bedarf
+
+## Dokumentation und Ressourcen
+
+### F: Wo finde ich die Dokumentation zu diesen Funktionen?
+
+**A:** Eine ausführliche Dokumentation finden Sie unter:
+
+- Forms Crosswalk-Dokumentation
+- Standarddokumentation zu AEM Sites für Übersetzungs-Workflows
+- Dokumentation zum universellen Editor für die Formularerstellung
+

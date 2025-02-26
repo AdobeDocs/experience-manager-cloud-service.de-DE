@@ -2,18 +2,19 @@
 title: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: d5ba87ec6199522f026d572d1bdb1bfbeb9849ee
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1773'
 ht-degree: 5%
 
 ---
 
 # Erstellen benutzerdefinierter Komponenten beim WYSIWYG-Authoring
+
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+
 
 Edge Delivery Services Forms bietet eine Anpassung, die es Frontend-Entwicklerinnen und -Entwicklern ermöglicht, maßgeschneiderte Formularkomponenten zu erstellen. Diese benutzerdefinierten Komponenten lassen sich nahtlos in das Authoring-Erlebnis von WYSIWYG integrieren und ermöglichen es Formularautoren, sie einfach im Formulareditor hinzuzufügen, zu konfigurieren und zu verwalten. Mit benutzerdefinierten Komponenten können Autoren die Funktionalität verbessern und gleichzeitig einen reibungslosen und intuitiven Authoring-Prozess sicherstellen.
 
@@ -71,7 +72,7 @@ Fügen Sie neue Ordner und Dateien für Ihre neue benutzerdefinierte Komponente 
    * **id**: Eine eindeutige Kennung der Komponente.
    * **fieldType**: Forms unterstützt verschiedene **fieldType** zur Erfassung bestimmter Typen von Benutzereingaben. Den [unterstützten fieldType finden Sie im Abschnitt Extra Byte](#supported-fieldtypes).
    * **resourceType**: Jeder benutzerdefinierten Komponente ist ein Ressourcentyp auf Grundlage ihres fieldType zugeordnet. Den [unterstützten resourceType finden Sie im Abschnitt Extra Byte](#supported-resourcetype).
-   * **jcr:title**: Es ähnelt einem Titel, wird jedoch innerhalb der Komponentenstruktur gespeichert.
+   * **jcr:title**: Es ähnelt einem Titel, wird jedoch in der Komponentenstruktur gespeichert.
    * **fd:viewType**: Stellt den Namen der benutzerdefinierten Komponente dar. Dies ist die eindeutige Kennung der Komponente. Es ist erforderlich, eine benutzerdefinierte Ansicht für die Komponente zu erstellen.
 
 Nach dem Hinzufügen der Komponentendefinition lautet die `_range.json` wie folgt:
@@ -186,7 +187,7 @@ Um die benutzerdefinierte Eigenschaft Schrittwert hinzuzufügen, hängen Sie das
 Das JSON-Snippet definiert eine benutzerdefinierte Eigenschaft mit der Bezeichnung **Schrittwert** für eine Komponente **Bereich**. Nachstehend finden Sie eine Aufschlüsselung der einzelnen Felder:
 
 * **component**: Gibt den Typ des Eingabefelds an, das im Dialogfeld „Eigenschaft“ verwendet wird. In diesem Fall gibt `number` an, dass das Feld numerische Werte akzeptiert.
-* **name**: Der Bezeichner für die Eigenschaft, mit der in der Komponentenlogik darauf verwiesen wird. Hier stellt der `stepValue` die Schrittwerteinstellung für den Bereich dar.
+* **name**: Die Kennung für die Eigenschaft, die verwendet wird, um in der Komponentenlogik darauf zu verweisen. Hier stellt der `stepValue` die Schrittwerteinstellung für den Bereich dar.
 * **label**: Der Anzeigename der Eigenschaft, wie er im Dialogfeld „Eigenschaft“ angezeigt wird.
 * **valueType**: Definiert den für die Eigenschaft erwarteten Datentyp. Der `number` stellt sicher, dass nur numerische Eingaben zulässig sind.
 

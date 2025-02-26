@@ -3,16 +3,17 @@ title: Grundlegendes zum universellen Editor - Responsiver Modus
 description: In diesem Artikel wird erläutert, wie Sie mit verschiedenen Emulatoren im universellen Editor eine Vorschau von Formularen anzeigen können, um ihr Erscheinungsbild während des Authorings zu visualisieren.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 2%
+source-wordcount: '408'
+ht-degree: 1%
 
 ---
 
 # Responsiver Modus beim WYSIWYG-Authoring
+
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+
 
 Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ermöglicht die Vorschau von Edge Delivery Services Forms mit verschiedenen Emulatoren, um das Erscheinungsbild des Formulars während des Authorings zu sehen.
 
