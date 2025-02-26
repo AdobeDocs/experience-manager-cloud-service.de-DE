@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der R
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 99%
 
 ---
@@ -59,8 +59,8 @@ So erstellen Sie ein Workflow-Modell, das den Prozessschritt `TreeActivation` ve
 1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**.
 1. Klicken Sie auf der Seite „Workflow-Modelle“ in der oberen rechten Ecke des Bildschirms auf **Erstellen**.
 1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de).
-1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**.
-1. Löschen Sie im folgenden Fenster den standardmäßig angezeigten Schritt.
+1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**
+1. Löschen Sie im folgenden Fenster den standardmäßig angezeigten Schritt
 1. Ziehen Sie den Prozessschritt per Drag-and-Drop in den aktuellen Modellfluss:
 
    ![Prozessschritt](/help/operations/assets/processstep.png)
@@ -84,27 +84,27 @@ So erstellen Sie ein Workflow-Modell, das den Prozessschritt `TreeActivation` ve
 
 | Name | default | Beschreibung |
 | -------------- | ------- | --------------------------------------------------------------- |
-| path |         | Der Stammpfad zum Starten. |
-| agentId | publish | Der Name des zu verwendenden Replikationsagenten. |
-| chunkSize | 50 | Die Anzahl der Pfade, die in einer einzelnen Replikation gebündelt werden sollen. |
-| maxTreeSize | 500000 | Die maximale Anzahl von Knoten, damit eine Baumstruktur als klein gilt. |
-| maxQueueSize | 10 | Die maximale Anzahl von Elementen in der Replikationswarteschlange. |
-| enableVersion | false | Aktivierung der Versionierung. |
-| dryRun | false | Wenn „true“ festgelegt ist, wird die Replikation nicht tatsächlich aufgerufen. |
-| userId |         | Nur für den Job. Beim Workflow wird die Person verwendet, die den Workflow aufruft. |
-| filters |         | Liste mit den Namen der Knotenfilter. Siehe „Unterstützte Filter“ unten. |
+| path |         | Der Stammpfad zum Starten |
+| agentId | publish | Der Name des zu verwendenden Replikationsagenten |
+| chunkSize | 50 | Die Anzahl der Pfade, die in einer einzelnen Replikation gebündelt werden sollen |
+| maxTreeSize | 500000 | Die maximale Anzahl von Knoten, damit eine Baumstruktur als klein gilt |
+| maxQueueSize | 10 | Die maximale Anzahl von Elementen in der Replikationswarteschlange |
+| enableVersion | false | Aktivierung der Versionierung |
+| dryRun | false | Wenn „true“ festgelegt ist, wird die Replikation nicht tatsächlich aufgerufen |
+| userId |         | Nur für den Job. Beim Workflow wird die Person verwendet, die den Workflow aufruft |
+| filters |         | Liste mit den Namen der Knotenfilter. Siehe „Unterstützte Filter“ unten |
 
 **Unterstützte Filter**
 
 | Name | Beschreibung |
 | ------------- | ------------------------------------------- |
-| onlyModified | Die Knoten, die seit der letzten Veröffentlichung geändert wurden. |
-| onlyActivated | Die Knoten, die zuvor veröffentlicht wurden. |
+| onlyModified | Knoten (neu und bereits vorhanden), die seit der letzten Veröffentlichung geändert wurden |
+| onlyActivated | Die Knoten, die zuvor veröffentlicht wurden |
 
 
 **Fortsetzung der Unterstützung**
 
-Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des vollständigen zu veröffentlichenden Inhalts darstellt. Wenn der Workflow vom System angehalten wird, wird er dort fortgesetzt, wo er abgebrochen wurde.
+Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des vollständigen zu veröffentlichenden Inhalts darstellt.  Wenn der Workflow vom System angehalten wird, wird er dort fortgesetzt, wo er abgebrochen wurde.
 
 **Überwachen des Workflow-Fortschritts**
 
@@ -142,7 +142,7 @@ Alternativ können Sie auch ein Workflow-Modell erstellen, das den Prozessschrit
 1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**.
 1. Klicken Sie auf der Seite „Workflow-Modelle“ in der oberen rechten Ecke des Bildschirms auf **Erstellen**.
 1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de).
-1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**.
+1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**
 1. Ziehen Sie im folgenden Fenster den Prozessschritt per Drag-and-Drop in den aktuellen Modellfluss:
 
    ![Prozessschritt](/help/operations/assets/processstep.png)
@@ -271,14 +271,14 @@ Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer se
 
 Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Authoring-Service:
 
-1. Navigieren Sie im AEM-Startmenü zu **Tools** > **Bereitstellung** > **Verteilung**.
-1. Wählen Sie die Karte **Veröffentlichen** aus.
+1. Navigieren Sie im AEM-Startmenü zu **Tools** > **Bereitstellung** > **Verteilung**
+1. Wählen Sie die Karte **Veröffentlichen** aus
 
    ![Status](assets/publish-status.png "Status")
 
-1. Überprüfen des Warteschlangenstatus, der grün sein sollte.
-1. Sie können die Verbindung zum Replikations-Service testen.
-1. Wählen Sie die Registerkarte **Protokolle** aus, auf der der Verlauf der Inhaltsveröffentlichungen angezeigt wird.
+1. Überprüfen des Warteschlangenstatus, der grün sein sollte
+1. Sie können die Verbindung zum Replikations-Service testen
+1. Wählen Sie die Registerkarte **Protokolle** aus, auf der der Verlauf der Inhaltsveröffentlichungen angezeigt wird
 
 ![Protokolle](assets/publish-logs.png "Protokolle")
 
