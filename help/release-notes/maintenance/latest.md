@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 81e3ce8cdceee37a22e76e74008452f88b6bf003
-workflow-type: ht
-source-wordcount: '186'
-ht-degree: 100%
+source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 84%
 
 ---
 
@@ -16,33 +16,33 @@ ht-degree: 100%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 19586 {#19586}
+## Version 19687 {#19687}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 19586, die am 19. Februar 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 19567.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 19687 , die am 26. Februar 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 19586.
 
 Die Funktionsaktivierung von 2025.2.0 wird den vollen Funktionsumfang für diese Wartungsversion bieten. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-19586}
+### Verbesserungen {#enhancements-19687}
 
 Keine.
 
-### Behobene Probleme {#fixed-issues-19586}
+### Behobene Probleme {#fixed-issues-19687}
 
-* SITES-29314: GraphQL-Endpunkte lösen möglicherweise eine InvalidSchemaException für gültige Anfragen aus.
+* SKYOPS-97524: Der Umschalter-Status der Funktion ist möglicherweise falsch, was gelegentlich verschiedene AEM-Funktionen betrifft.
 
-### Bekannte Probleme {#known-issues-19586}
+### Bekannte Probleme {#known-issues-19687}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-19586}
+### Eingestellte Funktionen und APIs {#deprecated-19687}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-19586}
+### Sicherheitskorrekturen {#security-19687}
 
 Keine.
 
-### Eingebettete Technologien {#embedded-tech-19586}
+### Eingebettete Technologien {#embedded-tech-19687}
 
 | Technologie | Version | Link |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
