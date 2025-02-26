@@ -5,9 +5,9 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: e6f5414454f79f46421593440587e81941a8f4c2
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '474'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Das Liniendiagramm eines ausgewählten Jahres enthält Datenpunkte für jeden Mo
 
 1. Klicken Sie auf **SLA-Berichte**.
 
-   ![Liniendiagramm des SLA-Berichts](/help/implementing/cloud-manager/assets/cm-sla-report.png)
+   ![Liniendiagramm des SLA-Berichts](/help/implementing/cloud-manager/assets/cm-sla-report2.png)
 
 1. Klicken Sie auf das gewünschte Jahr, um ein Liniendiagramm der SLA-Daten anzuzeigen.
 
@@ -49,8 +49,6 @@ Das Liniendiagramm eines ausgewählten Jahres enthält Datenpunkte für jeden Mo
    * Bewegen Sie den Cursor über einen Datenpunkt im Liniendiagramm, um die spezifischen Werte für diesen Punkt anzuzeigen.
    * Klicken Sie unter dem Jahr des Liniendiagramms auf das Symbol „Herunterladen“, um eine PNG-Bilddatei des Liniendiagramms zu speichern.
    * Klicken Sie auf den Namen einer Metrik, um nur die Daten dieser Metrik anzuzeigen. Oder drücken Sie auf der Tastatur auf `Shift`, während Sie einen oder mehrere Metriknamen auswählen oder die Auswahl für Metriknamen aufheben.
-
-   ![Anzeigen von detaillierten Daten](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Ereignisanalyse {#event-analysis}
 
@@ -70,3 +68,4 @@ Die SLA-Berichterstellung gibt Ihnen einen Einblick in die Leistung Ihrer AEM-Pr
 ## Vorschau-Umgebungen {#preview}
 
 Die Vorschau-Umgebung ist als Tool für Autorinnen und Autoren von Inhalten gedacht, um das endgültige Erlebnis des Inhalts vor der Veröffentlichung zu überprüfen. Aufgrund dieser Funktionalität sind Vorschau-Umgebungen nicht mit hoher Verfügbarkeit konzipiert und verfügen nicht über ein zugehöriges SLA.
+
