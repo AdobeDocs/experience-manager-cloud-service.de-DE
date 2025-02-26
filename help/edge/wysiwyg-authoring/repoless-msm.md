@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices zum reaktionsschnellen Einri
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ Erfahren Sie mehr über Best Practices zum reaktionsschnellen Einrichten eines P
 
 [Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) und seine Live Copy-Funktionen ermöglichen die Verwendung derselben Site-Inhalte an mehreren Orten und lassen gleichzeitig Varianten zu. Sie können Inhalte einmal erstellen und Live Copies erstellen. MSM behält Live-Beziehungen zwischen Quellinhalten und deren Live Copies bei, sodass beim Ändern des Quellinhalts die Quelle und die Live Copies synchronisiert werden können.
 
-Sie können MSM verwenden, um eine gesamte Inhaltsstruktur für Ihre Marke über Gebietsschemata und Sprachen hinweg zu erstellen und die Inhalte zentral zu erstellen. Ihre lokalisierten Websites können dann von den jeweiligen Edge Delivery Services bereitgestellt werden, wobei eine zentrale Codebasis genutzt wird.
+Sie können MSM verwenden, um eine gesamte Inhaltsstruktur für Ihre Marke über Gebietsschemata und Sprachen hinweg zu erstellen und die Inhalte zentral zu erstellen. Ihre lokalisierten Websites können dann jeweils über Edge Delivery Services bereitgestellt werden, wobei eine zentrale Code-Basis genutzt wird.
 
 ## Voraussetzungen {#requirements}
 
-Um MSM in einem Anwendungsfall ohne Antwort zu konfigurieren, müssen Sie zunächst eine Reihe von Aufgaben abschließen.
+Um MSM in einem Anwendungsfall ohne Antwort zu konfigurieren, müssen Sie zunächst die folgenden Aufgaben ausführen:
 
-* In diesem Dokument wird davon ausgegangen, dass Sie bereits eine Site für Ihr Projekt erstellt haben, die auf dem Handbuch [Erste Schritte für WYSIWYG-Entwickler mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) basiert.
+* In diesem Dokument wird davon ausgegangen, dass Sie bereits eine Site für Ihr Projekt auf der Grundlage des Handbuchs [Erste Schritte für WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) erstellt haben.
 * Sie müssen die [-Funktion bereits für Ihr Projekt aktiviert ](/help/edge/wysiwyg-authoring/repoless.md).
 
 ## Anwendungsfall {#use-case}
@@ -49,19 +49,19 @@ In diesem Dokument wird davon ausgegangen, dass Sie bereits eine grundlegende lo
 /content/wknd/de/en
 ```
 
-Die Inhalte in `language-masters` sind die Quelle der Live Copies für die lokalisierten Websites: Deutschland (`de`) und Schweiz (`ch`). Ziel dieses Dokuments ist es, Edge Delivery Services-Sites zu erstellen, die für jede lokalisierte Site dieselbe Codebasis verwenden.
+Die Inhalte in `language-masters` sind die Quelle der Live Copies für die lokalisierten Websites: Deutschland (`de`) und Schweiz (`ch`). Ziel dieses Dokuments ist es, Edge Delivery Services-Sites zu erstellen, die alle dieselbe Codebasis für jede lokalisierte Site verwenden.
 
 ## Konfiguration {#configuration}
 
 Es gibt mehrere Schritte zum Konfigurieren des Anwendungsfalls „MSM-Antworten“.
 
-1. [AEM-Site-Konfigurationen aktualisieren](#update-aem-configurations).
+1. [Aktualisieren der AEM-Site-Konfigurationen](#update-aem-configurations).
 1. [Erstellen Sie neue Edge Delivery Services-Sites für Ihre lokalisierten Seiten](#create-edge-sites).
 1. [Aktualisieren der Cloud-Konfiguration in AEM für Ihre lokalisierten Sites](#update-cloud-configurations).
 
-### AEM-Site-Konfigurationen aktualisieren {#update-aem-configurations}
+### Aktualisieren von AEM-Site-Konfigurationen {#update-aem-configurations}
 
-[Konfigurationen](/help/implementing/developing/introduction/configurations.md) können als Arbeitsbereiche betrachtet werden, die verwendet werden können, um Gruppen von Einstellungen und deren zugehörigen Inhalt für organisatorische Zwecke zu erfassen. Wenn Sie eine Site in AEM erstellen, wird automatisch eine -Konfiguration dafür erstellt.
+[Konfigurationen](/help/implementing/developing/introduction/configurations.md) können als Arbeitsbereiche betrachtet werden, die verwendet werden können, um Gruppen von Einstellungen und deren zugehörigen Inhalt für organisatorische Zwecke zu erfassen. Wenn Sie eine Site in AEM erstellen, wird automatisch eine Konfiguration dafür erstellt.
 
 Im Allgemeinen möchten Sie bestimmte Inhalte zwischen Sites freigeben, z. B.:
 
@@ -99,11 +99,11 @@ Nachdem die Konfigurationen erstellt wurden, müssen Sie sicherstellen, dass sie
 
 Weisen Sie den zusätzlichen lokalisierten Sites die entsprechenden Konfigurationen zu. Im Fall von wknd müssen Sie die `/conf/wknd/de`-Konfiguration auch der Website Deutschland zuweisen.
 
-### Erstellen Sie neue Edge Delivery Services-Sites für Ihre lokalisierten Seiten {#create-edge-sites}
+### Erstellen Sie neue Edge Delivery Services Sites für Ihre lokalisierten Seiten {#create-edge-sites}
 
-Um mehrere Websites mit Edge Delivery Services für eine Einrichtung einer Website mit mehreren Regionen und Sprachen zu verbinden, müssen Sie für jede Ihrer AEM MSM-Websites eine neue Website aem.live einrichten. Es besteht eine 1:1-Beziehung zwischen AEM MSM-Sites und aem.live-Sites mit einem gemeinsamen Git-Repository und einer Code-Basis.
+Um mehrere Sites mit Edge Delivery Services für eine regionenübergreifende mehrsprachige Site-Einrichtung zu verbinden, müssen Sie für jede Ihrer AEM MSM-Sites eine neue Website aem.live einrichten. Es besteht eine 1:1-Beziehung zwischen AEM MSM-Sites und aem.live-Sites mit einem gemeinsamen Git-Repository und einer gemeinsamen Code-Basis.
 
-In diesem Beispiel erstellen wir die `wknd-ch` für die schweizerische Präsenz von wknd, dessen lokalisierter Inhalt sich unter dem AEM-Pfad `/content/wknd/ch` befindet.
+In diesem Beispiel erstellen wir die `wknd-ch` für die schweizerische Präsenz von WKND, dessen lokalisierte Inhalte sich unter dem Pfad &quot;AEM&quot; `/content/wknd/ch`.
 
 1. Rufen Sie Ihr Authentifizierungs-Token und das technische Konto für Ihr Programm ab.
    * Lesen Sie das Dokument **Wiederverwenden von Code über Sites hinweg**, um Details zum [Abrufen Ihres Zugriffs-Tokens](/help/edge/wysiwyg-authoring/repoless.md#access-token) und zum [technischen Konto](/help/edge/wysiwyg-authoring/repoless.md#access-control) für Ihr Programm zu erhalten.
@@ -111,7 +111,7 @@ In diesem Beispiel erstellen wir die `wknd-ch` für die schweizerische Präsenz 
    * Der Projektname in der POST-URL muss der neue Site-Name sein, den Sie erstellen. In diesem Beispiel ist es `wknd-ch`.
    * Die `code` sollte mit der für die anfängliche Projekterstellung verwendeten Konfiguration übereinstimmen.
    * Der `content` > `source` > `url` muss an den Namen der neuen Site angepasst werden, die Sie erstellen. In diesem Beispiel ist es `wknd-ch`.
-   * Das heißt, der Site-Name in der POST-URL und der `content` > `source` > `url` müssen identisch sein.
+   * D. h. der Site-Name in der POST-URL und der `content` > `source` > `url` müssen identisch sein.
    * Passen Sie den `admin` an, um die Benutzer zu definieren, die vollen administrativen Zugriff auf die Website haben sollen.
       * Es handelt sich um ein Array von E-Mail-Adressen.
       * Der Platzhalter `*` verwendet werden.
@@ -177,11 +177,11 @@ In diesem Beispiel erstellen wir die `wknd-ch` für die schweizerische Präsenz 
 
 Wiederholen Sie die Schritte, um weitere lokalisierte Sites zu erstellen. Im Falle von wknd müssten Sie auch eine `wknd-de` für die deutsche Präsenz erstellen.
 
-### Aktualisieren Sie Cloud-Konfigurationen in AEM für Ihre lokalisierten Seiten {#update-cloud-configurations}
+### Aktualisieren der Cloud-Konfigurationen in AEM für Ihre lokalisierten Seiten {#update-cloud-configurations}
 
 Ihre Seiten in AEM müssen so konfiguriert sein, dass die neuen Edge Delivery Sites verwendet werden, die Sie im vorherigen Abschnitt für Ihre lokalisierte Präsenz erstellt haben. In diesem Beispiel muss Inhalt unter `/content/wknd/ch` wissen, wie die von Ihnen erstellte `wknd-ch`-Site verwendet werden soll. Entsprechend müssen Inhalte unter `/content/wknd/de` die `wknd-de`-Site verwenden.
 
-1. Melden Sie sich bei der AEM-Autoreninstanz an und gehen Sie zu **Tools** -> **Cloud Service** -> **Edge Delivery Services-Konfiguration**.
+1. Melden Sie sich bei der AEM-Autoreninstanz an und gehen Sie zu **Tools** -> **Cloud Services** -> **Edge Delivery Services-Konfiguration**.
 1. Wählen Sie die automatisch für Ihr Projekt erstellte Konfiguration und dann den Ordner aus, der für die lokalisierte Seite erstellt wurde. In diesem Fall wäre das die Schweiz (`ch`).
 1. Tippen oder klicken Sie auf **Erstellen** > **Konfiguration** in der Symbolleiste.
 1. Im Fenster **Edge Delivery Services** Konfiguration:

@@ -4,9 +4,9 @@ description: Wenn Sie viele ähnliche Websites haben, die meist gleich aussehen 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Wenn Sie viele ähnliche Websites haben, die meist gleich aussehen und sich verh
 
 Standardmäßig ist AEM eng an Ihr Code-Repository gebunden, das die meisten Anwendungsfälle erfüllt. Sie können jedoch mehrere Sites haben, die sich größtenteils in ihren Inhalten unterscheiden, aber dieselbe Code-Basis nutzen können.
 
-Anstatt mehrere GitHub-Repositorys zu erstellen und jede Site in einem dedizierten GitHub-Repository auszuführen und dabei synchron zu halten, unterstützt AEM das Ausführen mehrerer Sites von derselben Codebasis aus.
+Anstatt mehrere GitHub-Repositorys zu erstellen und jede Site in einem dedizierten GitHub-Repository auszuführen und dabei synchron zu halten, unterstützt AEM die Ausführung mehrerer Sites aus derselben Codebasis.
 
 Diese vereinfachte Einrichtung, die die Notwendigkeit der Code-Replikation beseitigt, wird auch als &quot;[&quot; bezeichnet](https://www.aem.live/docs/repoless) da alle außer Ihrer ersten Site kein eigenes GitHub-Repository benötigen.
 
@@ -31,13 +31,13 @@ Unabhängig davon, wie viele Sites Sie letztendlich auf reaktionsfreie Weise ers
 
 Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie Folgendes getan haben.
 
-* Ihre Site ist bereits vollständig eingerichtet. Folgen Sie dazu dem Dokument [Erste Schritte für WYSIWYG-Entwickler mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+* Ihre Site ist bereits vollständig eingerichtet. Folgen Sie dazu dem Dokument [Erste Schritte für Entwickler mit WYSIWYG Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Sie führen mindestens AEM as a Cloud Service 2024.08 aus.
 
-Sie müssen Adobe auch bitten, die folgenden Elemente für Sie zu konfigurieren. Kontaktieren Sie uns über Ihren Slack-Kanal oder werfen Sie ein Support-Problem auf, um Adobe anzufordern, diese Änderungen vorzunehmen:
+Außerdem müssen Sie Adobe bitten, die folgenden Elemente für Sie zu konfigurieren. Kontaktieren Sie uns über Ihren Slack-Kanal oder werfen Sie ein Support-Problem auf, um Adobe aufzufordern, diese Änderungen vorzunehmen:
 
 * Bitten Sie darum, den [aem.live-Konfigurationsdienst](https://www.aem.live/docs/config-service-setup#prerequisites) für Ihre Umgebung zu aktivieren und sicherzustellen, dass Sie als Administrator konfiguriert sind.
-* Bitten Sie, die Repoless-Funktion für Ihr Programm per Adobe zu aktivieren.
+* Bitten Sie Adobe, die Funktion „Antworten“ für Ihr Programm zu aktivieren.
 * Bitten Sie Adobe, die Organisation für Sie zu erstellen.
 
 ## Antwortfunktion aktivieren {#activate}
@@ -47,7 +47,7 @@ Es gibt mehrere Schritte, um die Repoless-Funktion für Ihr Projekt zu aktiviere
 1. [Zugriffstoken abrufen](#access-token)
 1. [Einrichten des Konfigurationsdienstes](#config-service)
 1. [Hinzufügen der Site-Konfiguration und des technischen Kontos](#access-control)
-1. [AEM-Konfiguration aktualisieren](#update-aem)
+1. [Aktualisieren der AEM-Konfiguration](#update-aem)
 1. [Authentifizieren einer Site](#authenticate-site)
 
 Bei diesen Schritten wird beispielhaft der Site-`https://wknd.site` verwendet. Ersetzen Sie Ihre eigenen entsprechend.
@@ -56,7 +56,7 @@ Bei diesen Schritten wird beispielhaft der Site-`https://wknd.site` verwendet. E
 
 Sie benötigen zunächst ein Zugriffstoken, um den Konfigurations-Service zu verwenden und ihn für den Anwendungsfall „Antwortlos“ zu konfigurieren.
 
-1. Navigieren Sie zu `https://admin.hlx.page/login` und verwenden Sie die `login_adobe`, um sich beim Adobe-Identitätsanbieter anzumelden.
+1. Navigieren Sie zu `https://admin.hlx.page/login` und verwenden Sie die `login_adobe`, um sich beim Adobe Identity Provider anzumelden.
 1. Sie werden an `https://admin.hlx.page/profile` weitergeleitet.
 1. Kopieren Sie mithilfe der Entwickler-Tools Ihres Browsers den Wert der `x-auth-token` entweder aus dem JSON-Web-Token-Cookie, das auf der `admin.hlx.page` gesetzt wird.
 
@@ -155,15 +155,15 @@ Da Sie jetzt den Konfigurations-Service verwenden, können Sie `fstab.yaml` und 
 >
 >Wenn Sie den Konfigurations-Service verwenden und die Pfadzuordnung über `config.json` verfügbar machen, wird die `path.json`-Datei ignoriert.
 
-Sobald AEM für die Verwendung als Antwort konfiguriert ist, müssen Sie den Konfigurations-Service verwenden und eine gültige `config.json` mit der Pfadzuordnung angeben.
+Sobald AEM für die Verwendung als Antwortserver konfiguriert ist, müssen Sie den Konfigurations-Service verwenden und eine gültige `config.json` mit den Zuordnungspfaden angeben.
 
-### AEM-Konfiguration aktualisieren {#update-aem}
+### Aktualisieren der AEM-Konfiguration {#update-aem}
 
-Jetzt können Sie die erforderlichen Änderungen an Ihren Edge Delivery Services in AEM vornehmen.
+Jetzt können Sie die erforderlichen Änderungen an Ihrer Edge Delivery Services in AEM vornehmen.
 
-1. Melden Sie sich bei der AEM-Autoreninstanz an, wechseln Sie zu **Tools** -> **Cloud Service** -> **Edge Delivery Services-Konfiguration** und wählen Sie die automatisch für Ihre Site erstellte Konfiguration aus und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
+1. Melden Sie sich bei der AEM-Autoreninstanz an, wechseln Sie zu **Tools** -> **Cloud Services** -> **Edge Delivery Services-** und wählen Sie die automatisch für Ihre Site erstellte Konfiguration aus und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
 1. Ändern Sie im Fenster **Edge Delivery Services** Konfiguration den Projekttyp in &quot;**.live mit Repoless-Konfiguration** und tippen oder klicken Sie auf **Speichern und schließen**.
-   Konfiguration von ![Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
+   ![Edge Delivery Services-Konfiguration](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. Kehren Sie mit dem universellen Editor zu Ihrer Site zurück und stellen Sie sicher, dass sie weiterhin ordnungsgemäß gerendert wird.
 1. Ändern Sie einige Ihrer Inhalte und veröffentlichen Sie sie erneut.
 1. Besuchen Sie Ihre veröffentlichte Site unter `https://main--<your-aem-project>--<your-github-org>.aem.page/` und überprüfen Sie, ob die Änderungen korrekt widergespiegelt werden.
@@ -176,13 +176,14 @@ Da Ihre Basis-Site nun für die Nutzung ohne Antwort konfiguriert ist, können S
 
 * [Multi-Site-Management ohne Repo](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Staging- und Produktionsumgebungen ohne Repo](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Site-Authentifizierung für die Inhaltserstellung](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Fehlerbehebung {#troubleshooting}
 
 Das häufigste Problem nach der Konfiguration des Anwendungsfalls „Antworten“ ist, dass Seiten im universellen Editor nicht mehr gerendert werden oder Sie eine weiße Seite oder eine generische AEM as a Cloud Service-Fehlermeldung erhalten. In solchen Fällen:
 
 * Anzeigen der Quelle der gerenderten Seite.
-   * Gibt es tatsächlich etwas gerendert (korrekter HTML-Kopf mit `scripts.js`-, `aem.js`- und editorbezogenen JSON-Dateien)?
+   * Gibt es tatsächlich etwas gerendert (korrektes HTML-Head mit `scripts.js`-, `aem.js`- und editorbezogenen JSON-Dateien)?
 * Prüfen Sie die AEM-`error.log` der Autoreninstanz auf Ausnahmen.
    * Das häufigste Problem ist, dass die Seitenkomponente mit 404-Fehlern fehlschlägt.
    * `config.json or paths.json` kann nicht geladen werden
