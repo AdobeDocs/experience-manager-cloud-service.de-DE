@@ -3,13 +3,11 @@ title: Universeller Editor für Edge Delivery Services für Forms
 description: Verwenden Sie den universellen Editor für Edge Delivery Services für Forms, um adaptive Forms zu erstellen.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 72%
+source-wordcount: '1087'
+ht-degree: 70%
 
 ---
 
@@ -47,14 +45,14 @@ Im Folgenden finden Sie das Layout mit Karten mit gleicher Breite (unter Verwend
 | [**Stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Vorbefüllungs-Services** (in Kürze verfügbar) | [**A/B-Tests**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Die Formatierung mit CSS ermöglicht es Entwicklerinnen und Entwicklern, das Erscheinungsbild von Formularelementen anzupassen und ein visuell ansprechendes Design zu erstellen, das mit der Ästhetik der Website übereinstimmt. | Services zum Vorausfüllen füllen Formularfelder automatisch mit relevanten Benutzerdaten aus verschiedenen Quellen auf, was weniger manuelle Eingaben erfordert und das Anwendererlebnis verbessert. | A/B-Tests ermöglichen es Unternehmen, mit verschiedenen Formularentwürfen, Layouts und Funktionen zu experimentieren, um die leistungsstärksten Varianten zu ermitteln. |
 
-| ![Analytics und Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Aufgabenverwaltung](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Datenbindung](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![Analytics und Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Formularfragmente](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Datenbindung](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics und Tracking**](https://www.aem.live/developer/martech-integration) | **Aufgabenverwaltung** (in Kürze verfügbar) | **Datenbindung** (in Kürze verfügbar) |
-| Verschaffen Sie sich mit der integrierten Analyse- und Tracking-Funktion Erkenntnisse zum Benutzerverhalten sowie zu Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen. | Durch die Integration mit Adobe Workfront können Teams Aufgaben für die Erstellung und Pflege von Formularen verwalten und so optimierte Workflows sicherstellen. | Die Datenbindung ermöglicht direkte Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt Echtzeit-Updates und erweiterte Datenzuordnung. |
+| [**Analytics und Tracking**](https://www.aem.live/developer/martech-integration) | **Formularfragmente** (in Kürze verfügbar) | **Datenbindung** (in Kürze verfügbar) |
+| Verschaffen Sie sich mit der integrierten Analyse- und Tracking-Funktion Erkenntnisse zum Benutzerverhalten sowie zu Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen. | Formularfragmente ermöglichen die Wiederverwendbarkeit, indem häufig verwendete Abschnitte einmal erstellt und in mehreren Formularen wiederverwendet werden können, wodurch Konsistenz gewährleistet und der Wartungsaufwand reduziert wird. | Die Datenbindung ermöglicht direkte Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt Echtzeit-Updates und erweiterte Datenzuordnung. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Einbetten von Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Dankeskonfiguration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Einbetten von Forms** | [**Dankeskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Einbetten von Forms** (in Kürze verfügbar) | [**Dankeskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Verwenden Sie reCAPTCHA, um Formulare vor automatischen Bots zu schützen und so eine sichere und zuverlässige Datenerfassung zu gewährleisten. | Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein. | Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen. |
 
 
