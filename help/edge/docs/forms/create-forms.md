@@ -4,10 +4,10 @@ description: Perfekte Formulare im Handumdrehen! ⚡ Dokumentenbasierte Inhaltse
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '781'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabelle
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
-* Richten Sie ein [AEM-Projekt mit dem AEM Forms-Textbaustein ein](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [Der adaptive Forms-Block wurde zu Ihrem bestehenden AEM-Projekt hinzugefügt](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
+* Richten Sie ein [AEM-Projekt mit der AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [ein, fügen Sie einen adaptiven Formularblock zu Ihrem bestehenden AEM-Projekt hinzu](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwenden von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
@@ -64,7 +64,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 Anstatt durch komplexe Prozesse zu navigieren, kann das Erstellen eines Formulars mühelos mithilfe einer Tabelle erfolgen. Sie können die Zeilen und Spalten definieren, aus denen die Formularstruktur besteht. Jede Zeile stellt ein einzelnes [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) dar und die Spaltenüberschriften definieren die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties).
 
-Betrachten Sie beispielsweise die folgende Tabelle, in der Zeilen Felder für eine [Abfrage“-Tabelle ](/help/edge/assets/enquiry.xlsx) Spaltenüberschriften ihre Eigenschaften definieren:
+Sehen Sie sich beispielsweise die folgende Tabelle an, bei der die Zeilen Felder für eine Tabelle [enquiry](/help/edge/assets/enquiry.xlsx) darstellen und die Spaltenüberschriften ihre Eigenschaften definieren:
 
 ![Abfragetabelle](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -72,17 +72,17 @@ So setzen Sie die Formularerstellung fort:
 
 1. Rufen Sie den AEM Edge Delivery-Projektordner in Microsoft SharePoint oder Google Drive auf.
 
-1. Erstellen Sie eine Microsoft Excel-Arbeitsmappe oder ein Google-Blatt an einer beliebigen Stelle in Ihrem AEM Edge Delivery-Projektverzeichnis.  Erstellen Sie beispielsweise eine Tabelle mit dem Namen `enquiry` im AEM Edge Delivery-Projektverzeichnis auf Google Drive.
+1. Erstellen Sie eine Microsoft Excel-Arbeitsmappe oder ein Google-Blatt an einer beliebigen Stelle in Ihrem AEM Edge Delivery-Projektverzeichnis. Erstellen Sie beispielsweise eine Tabelle mit dem Namen `enquiry` im AEM Edge Delivery-Projektverzeichnis auf Google Drive.
 
    <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. Stellen Sie sicher, dass das Blatt für die entsprechenden AEM-Benutzenden (z. B. `forms@adobe.com`) [gemäß den für Ihr Projekt angegebenen Konfigurationen freigegeben ist](https://www.aem.live/docs/setup-customer-sharepoint). Gewähren Sie für das Blatt die Berechtigung zum Bearbeiten durch Benutzende.
 
-1. Öffnen Sie die erstellte Tabelle und benennen Sie die Standardtabelle in „shared-aem“ um.
+1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in „shared-aem“ um.
 
    ![Umbenennen des Standardblatts in „shared-default“](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Um die Formularfelder hinzuzufügen, fügen Sie Zeilen und Spaltenüberschriften in das Blatt „shared-aem“ ein. Jede Zeile sollte ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) darstellen, wobei die Spaltenüberschriften die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties) definieren.
+1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das Blatt „shared-aem“ ein. Jede Zeile sollte ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) darstellen, wobei die Spaltenüberschriften die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties) definieren.
 
 
    Für einen schnellen Start können Sie den Inhalt der [Abfragetabelle](/help/edge/assets/enquiry.xlsx) in Ihre Tabelle kopieren. Speichern Sie die Tabelle, nachdem Sie den Inhalt kopiert haben.
@@ -105,15 +105,15 @@ So setzen Sie die Formularerstellung fort:
    * `<repository>` bezeichnet Ihr GitHub-Repository.
    * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, sich dieses unter dem Konto „WKNDorm“ befindet und Sie die „Haupt“-Verzweigung verwenden, sieht die URL wie folgt aus:
+   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Konto „wkndform“ befindet und Sie die Verzweigung „main“ verwenden, sieht die URL wie folgt aus:
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
-&lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
+&lt;!--(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
 
-+++ Schritt 2: Zeigen Sie mithilfe Ihrer Edge Delivery Service(EDS)-Seite eine Vorschau des Formulars an.
++++ Schritt 2: Vorschau des Formulars mit der Edge Delivery Services-Seite.
 
 
 Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun eine Vorschau des Formulars an:
@@ -122,7 +122,7 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun ei
 
 
 
-1. Öffnen Sie eine Dokumentdatei (zum Beispiel die Index-Datei), um das Formular einzubetten. Alternativ können Sie [ein neues Dokument erstellen](/help/edge/assets/enquiry-form.docx).
+1. Öffnen Sie eine Dokumentdatei (zum Beispiel die Index-Datei), um das Formular einzubetten. Sie können auch ein [neues Dokument erstellen](/help/edge/assets/enquiry-form.docx).
 
 1. Wechseln Sie an die gewünschte Stelle im Dokument, an der Sie das Formular hinzufügen möchten.
 

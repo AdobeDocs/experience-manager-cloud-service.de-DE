@@ -3,10 +3,11 @@ title: Grundlegendes zum universellen Editor - Responsiver Modus
 description: In diesem Artikel wird erläutert, wie Sie mit verschiedenen Emulatoren im universellen Editor eine Vorschau von Formularen anzeigen können, um ihr Erscheinungsbild während des Authorings zu visualisieren.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
+source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
@@ -66,6 +67,54 @@ Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorscha
 </table>
 
 Mit dem Symbol **Bildschirmdrehung** können Sie bei der Vorschau eines Formulars auf verschiedenen Geräten zwischen Hoch- und Querformat hin- und herschalten. Damit können Entwickler testen, wie sich das responsive Design an Bildschirmrotationen auf verschiedenen Geräten anpasst.
+
+Der universelle Editor unterstützt die verschiedenen Formularlayouts. Weitere Informationen zu den verschiedenen Layouts finden Sie im Abschnitt [Layout](#layout-capabilities)Funktionen.
+
+## Layout-Funktionen
+
+Mit dem universellen Editor können Sie benutzerfreundliche Formulare erstellen, die Endbenutzern dynamische Erlebnisse bieten. Das Formular-Layout steuert, wie Elemente oder Komponenten in einem Formular angezeigt werden.
+
+Der universelle Editor unterstützt die folgenden Arten von Layouts für Formulare:
+* [Bereichslayout](#panel-layout)
+* [Assistenten-Layout](#wizard-layout)
+* [Akkordeon-Layout](#accordion-layout)
+
+### Bedienfeldlayout
+
+Das Bereichslayout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Bereichslayout ordnet Formularkomponenten in separaten Bereichen oder Bereichen in Formularen an.
+
+![Bedienfeld-Layout](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+
+Sie können die [Bedienfeld-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) .
+
+### Assistenten-Layout
+
+
+Das Assistenten-Layout vereinfacht ein komplexes Formular, indem es in verschiedene Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar, und Benutzende navigieren nacheinander durch die Schritte, häufig mit den Schaltflächen **Weiter** und **Zurück**. Sie können das Assistenten-Layout verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
+
+![Assistentenlayout](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+
+Sie können die Komponente [Assistent](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) verwenden, um das Assistenten-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Assistenten-Komponente finden Sie im Artikel [Assistenten-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) .
+
+### Akkordeon-Layout
+
+Das Akkordeon-Layout zeigt Inhalte in ausblendbaren Abschnitten oder Bereichen in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt darin angezeigt, während andere Abschnitte reduziert bleiben. Dieses Layout ist ideal für die Anzeige großer Informationsmengen in kompakter Form.
+
+![Akkordeon-Layout](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+
+Sie können die [Akkordeon-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Akkordeon-Komponente finden Sie im Artikel [Akkordeon-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
+
+### Wie wählt man das richtige Layout?
+
+Es ist wichtig, das richtige Layout auszuwählen, um das Benutzererlebnis und die Formularfunktionen zu optimieren. Die Tabelle hilft Ihnen, die verschiedenen verfügbaren Layout-Optionen zu verstehen, und führt Sie bei der Auswahl des am besten geeigneten Layouts basierend auf Ihren spezifischen Anforderungen und Anwendungsfällen:
+
+| Funktion | Bedienfeldlayout | Assistenten-Layout | Akkordeon-Layout |
+|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Zweck** | Gruppiert verwandte Inhalte in separate Abschnitte | Führt Benutzer durch einen mehrstufigen Prozess oder ein mehrstufiges Formular | Organisiert Inhalte in ausblendbaren Abschnitten |
+| **Struktur** | Unterschiedliche Abschnitte | Sequenzielle Schritte/Seiten | Reduzierbare Bereiche/Abschnitte |
+| **Navigation** | Klicken Sie auf die Panel-Kopfzeilen, um zu navigieren | - Vorwärts: „Weiter“-Taste<br>- Rückwärts: „Zurück“-Schaltfläche<br>- Optionale Schritte überspringen | Auf Kopfzeilen klicken, um Abschnitte zu erweitern/reduzieren |
+| **Benutzererlebnis** | Organisiert große Inhaltsmengen auf überschaubare Weise | Schritt-für-Schritt-Anleitung zur Verringerung der Überlastung | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
+| **Nutzungsszenario** | Komplexe Formulare mit kategorisierten Abschnitten | Einrichtungsprozesse, komplexe Formulare | Häufig gestellte Fragen, Einstellungsmenüs, detaillierte Inhaltsabschnitte |
 
 ## Siehe auch
 

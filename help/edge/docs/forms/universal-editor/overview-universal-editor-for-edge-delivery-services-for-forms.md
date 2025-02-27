@@ -1,24 +1,24 @@
 ---
-title: Universeller Editor für Edge Delivery Services for Forms (EDS Forms Block)
-description: Verwenden Sie den universellen Editor für Edge Delivery Services for Forms (EDS Forms Block), um adaptive Formulare zu erstellen.
+title: Universeller Editor für Edge Delivery Services für Forms
+description: Verwenden Sie den universellen Editor für Edge Delivery Services für Forms, um adaptive Forms zu erstellen.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 80%
+source-wordcount: '1077'
+ht-degree: 72%
 
 ---
 
 
-# Universeller Editor für Edge Delivery Services for Forms (EDS Forms Block)
+# Universeller Editor für Edge Delivery Services für Forms
 
 <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
 
-Der universelle Editor revolutioniert die Formularerstellung für Adobe Edge Delivery Services (EDS), indem er eine einfache, visuelle und intuitive What You See Is What You Get(WYSIWYG)-Benutzeroberfläche bereitstellt. Er wurde für Personen, die Inhalte und Formulare erstellen, entwickelt und vereinfacht die herkömmlichen komplexen Formularerstellungsprozesse, sodass er auch von Benutzenden ohne technischen Hintergrund verwendet werden kann.
+Der universelle Editor revolutioniert die Formularerstellung für Adobe Edge Delivery Services, indem er eine einfache, visuelle und intuitive Benutzeroberfläche für What You See Is What You Get (WYSIWYG) bietet. Er wurde für Personen, die Inhalte und Formulare erstellen, entwickelt und vereinfacht die herkömmlichen komplexen Formularerstellungsprozesse, sodass er auch von Benutzenden ohne technischen Hintergrund verwendet werden kann.
 
 Mit dem universellen Editor können Sie schnell responsive, interaktive Formulare mithilfe vorkonfigurierter Komponenten wie Textfelder, Kontrollkästchen und Optionsfelder entwerfen. Die robusten Funktionen unterstützen dynamische Regeln, eine nahtlose Datenintegration und eine erweiterte Personalisierung, sodass jedes Formular auf Ihre Bedürfnisse zugeschnitten ist.
 
@@ -26,7 +26,7 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
 
 ![Universeller Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
-## Hauptfunktionen des universellen Editors für EDS-Formulare
+## Wichtige Funktionen des universellen Editors für Edge Delivery Services für Forms
 
 
 
@@ -49,13 +49,13 @@ Im Folgenden finden Sie das Layout mit Karten mit gleicher Breite (unter Verwend
 
 | ![Analytics und Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Aufgabenverwaltung](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Datenbindung](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics und Tracking**](https://www.aem.live/developer/martech-integration) | **Aufgabenverwaltung** | **Datenbindung** |
+| [**Analytics und Tracking**](https://www.aem.live/developer/martech-integration) | **Aufgabenverwaltung** (in Kürze verfügbar) | **Datenbindung** (in Kürze verfügbar) |
 | Verschaffen Sie sich mit der integrierten Analyse- und Tracking-Funktion Erkenntnisse zum Benutzerverhalten sowie zu Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen. | Durch die Integration mit Adobe Workfront können Teams Aufgaben für die Erstellung und Pflege von Formularen verwalten und so optimierte Workflows sicherstellen. | Die Datenbindung ermöglicht direkte Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt Echtzeit-Updates und erweiterte Datenzuordnung. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Einbetten von Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Dankeskonfiguration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **Editor-Anpassung** | **Einbetten von Forms** | [**Dankeskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| Entwickelnde können die Funktionalität des Editors durch Benutzeroberflächenerweiterungen erweitern und so maßgeschneiderte Lösungen für spezifische betriebliche Anforderungen ermöglichen. | Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein. | Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen. |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Einbetten von Forms** | [**Dankeskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| Verwenden Sie reCAPTCHA, um Formulare vor automatischen Bots zu schützen und so eine sichere und zuverlässige Datenerfassung zu gewährleisten. | Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services Sites-Seiten ein. | Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.

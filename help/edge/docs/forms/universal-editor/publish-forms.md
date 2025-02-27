@@ -4,9 +4,9 @@ description: Veröffentlichen Sie Ihre Edge Delivery Services-Formulare schnell 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Wenn Ihr Formular fertig gestellt und einsatzbereit ist, können Sie es veröffe
 
 ## Voraussetzungen
 
-* Ein Formular, das mit der Vorlage **Edge Delivery Services (EDS) erstellt**. [Weitere Informationen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) zum Erstellen eines EDS-basierten Formulars.
+* Ein Formular, das mit der Vorlage **Edge Delivery Services erstellt**. [Weitere Informationen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) zum Erstellen eines EDS-basierten Formulars.
 
 ## Formular veröffentlichen
 
