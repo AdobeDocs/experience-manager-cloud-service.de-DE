@@ -1,34 +1,26 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.02.17
-description: Dies sind die Versionshinweise für die Version 2025.02.17 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.02.25
+description: Dies sind die Versionshinweise für die Version 2025.02.25 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
-workflow-type: ht
-source-wordcount: '206'
-ht-degree: 100%
+source-git-commit: ad72a4a724cd69376a936a2beb4fc8fd9d7a730e
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 46%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.02.17 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.02.25 {#release-notes}
 
-Dies sind die Versionshinweise für die Version des universellen Editors vom 17. Februar 2025.
+Dies sind die Versionshinweise für die Version vom 25. Februar 2025 des universellen Editors.
 
 >[!TIP]
 >
 >Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
-## Neue Funktionen {#what-is-new}
-
-* **In der Vorschau veröffentlichen**: [Beim Veröffentlichen (oder Aufheben der Veröffentlichung) Ihrer Inhalte](/help/sites-cloud/authoring/universal-editor/publishing.md) mit dem universellen Editor können Sie jetzt auswählen, ob Sie die Inhalte nicht nur in Ihrer Veröffentlichungsumgebung, sondern auch in Ihrer [Vorschauumgebung](/help/sites-cloud/authoring/sites-console/previewing-content.md) veröffentlichen möchten
-   * Dies ermöglicht die Überprüfung Ihrer Inhalte vor der öffentlichen Veröffentlichung.
-* **Modell und Filter können in der Komponentendefinition definiert werden**: Sie können jetzt [in der Komponentendefinition](/help/implementing/universal-editor/component-definition.md#template) definieren, welches Modell und welchen Filter eine Komponente verwendet.
-   * Diese Informationen können zentral in der Definition verwaltet werden und brauchen nicht in der Instrumentierung angegeben zu werden.
-   * Dies ermöglicht es Ihnen, Komponenten über Container hinweg zu verschieben.
-* **Untergeordnete Elemente von Containern werden implizit als Komponenten betrachtet**: Wenn [ein Element mit `data-aue-resource`](/help/implementing/universal-editor/attributes-types.md#data-properties) als direkt untergeordnetes Element in einen Container eingefügt wird, wird es als Komponente betrachtet und kann verschoben werden, ohne dass `data-aue-behavior="component"` angegeben werden muss.
-
 ## Andere Verbesserungen {#other-improvements}
 
-* **AEM 6.5-Asset-Selektor**: Der 6.5-Asset-Selektor wird jetzt ordnungsgemäß geöffnet, wenn [der universelle Editor mit AEM 6.5 ausgeführt wird.](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **Tag-Auswahl für AEM 6.5** - Die Tag-Auswahl wird jetzt ordnungsgemäß geöffnet, wenn [der universelle Editor mit AEM 6.5 ausgeführt wird.](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **Asset-Selektor für AEM 6.5** - Der 6.5-Asset-Selektor wird jetzt ordnungsgemäß geöffnet, wenn [der universelle Editor mit AEM 6.5 ausgeführt wird.](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
