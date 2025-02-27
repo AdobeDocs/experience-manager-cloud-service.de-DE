@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Taxonomiedaten für die Verwendung von Tags m
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ Tagging ist eine wichtige Funktion, mit der Sie Ihre Seiten organisieren und ver
 Diese Tags sind nicht nur für Sie und Ihre Autorenschaft bei der Organisation Ihrer Inhalte nützlich, sondern möglicherweise auch für Ihre Leserinnen und Leser. Tags und ihre Taxonomie können in Komponenten auf der Seite verwendet werden, um Ihren Leserinnen und Lesern beim Navigieren durch Ihre Inhalte zu helfen.
 
 Der universelle Editor funktioniert nur mit den IDs Ihrer Tags. Durch Erstellung einer Taxonomieseite für Ihre Inhalte stellen Sie die Beschreibungen dieser Tags in allen Sprachen für den universellen Editor bereit, damit diese Informationen beim Rendern von Inhalten verwendet werden können.
+
+>[!TIP]
+>
+>Weitere Informationen zum AEM-Tag[Feld, das im universellen Editor verfügbar ist und mit Ihrer Taxonomie verwendet werden kann, finden Sie im Dokument ](/help/implementing/universal-editor/field-types.md)Modelldefinitionen, -felder und -Komponententypen“.
 
 ## Erstellen einer Taxonomieseite {#creating}
 

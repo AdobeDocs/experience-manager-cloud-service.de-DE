@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 90%
+source-wordcount: '1526'
+ht-degree: 88%
 
 ---
 
@@ -155,6 +155,10 @@ Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von
 ![Screenshot des AEM-Tag-Komponententyps](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
+
+>[!TIP]
+>
+>Weitere Informationen dazu, wie Sie Ihre Taxonomiedaten für [ Edge Delivery Services-Projekt mithilfe von Tabellen verwalten können](/help/edge/wysiwyg-authoring/taxonomy.md) finden Sie im Dokument Verwalten von Taxonomiedaten .
 
 #### AEM-Inhalt {#aem-content}
 
