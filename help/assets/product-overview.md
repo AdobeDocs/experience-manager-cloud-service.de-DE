@@ -2,7 +2,7 @@
 title: Content Hub erkunden
 description: Erfahren Sie mehr über Content Hub, seine wichtigsten Vorteile, den Zugriff darauf und das Feedback zu den in Content Hub verfügbaren Optionen.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 90%
@@ -84,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um Content Hub für Ihr Team einzurichte
 
 1. [Genehmigte Assets in Experience Manager Assets als DAM-Autor oder -Administrator](approve-assets.md).
 
-1. [Konfigurieren der Benutzeroberfläche von Content Hub für andere Benutzer als Administrator](configure-content-hub-ui-options.md)..
+1. [Konfigurieren der Benutzeroberfläche von Content Hub für andere Benutzer als Administrator](configure-content-hub-ui-options.md).
 
 1. [Gewähren Sie Content Hub Zugriff auf weitere Benutzende aus dem Team](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
