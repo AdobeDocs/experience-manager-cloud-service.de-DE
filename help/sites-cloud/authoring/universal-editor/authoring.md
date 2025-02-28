@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1370'
-ht-degree: 100%
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 98%
 
 ---
 
@@ -177,6 +177,14 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 >[!NOTE]
 >
 >Komponenten können nicht zwischen Containern verschoben werden, wenn zwischen Quell- und Ziel-Container nicht der gleiche [Komponentenfilter](/help/implementing/universal-editor/filtering.md) festgelegt ist.
+
+### Erstellen von Varianten mit GenAI durch Variantengenerierung {#generate-variations-ai}
+
+Verwenden Sie generative Varianten, um die generative KI zu nutzen und so die Inhaltserstellung zu beschleunigen.
+
+Öffnen Sie den universellen Editor, um den Einstiegspunkt zum Generieren von Varianten zu finden.
+
+Weitere [ finden Sie unter „Generieren von Varianten - Integriert ](/help/generative-ai/generate-variations-integrated-editor.md) AEM-Editoren“.
 
 ## Vorschau von Inhalten {#previewing-content}
 
