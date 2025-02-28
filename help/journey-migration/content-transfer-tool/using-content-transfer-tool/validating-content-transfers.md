@@ -4,7 +4,7 @@ description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer 
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 100%
@@ -47,7 +47,7 @@ Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispiele
 
 * **Extraktion (Überschreiben)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **Aufnahme (Löschen)**
 
@@ -61,7 +61,7 @@ Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispiele
 
 * **Extraktion**
 
-  ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **Aufnahme**
 

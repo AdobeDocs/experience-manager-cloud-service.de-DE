@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
-workflow-type: ht
-source-wordcount: '2724'
-ht-degree: 100%
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+workflow-type: tm+mt
+source-wordcount: '2796'
+ht-degree: 97%
 
 ---
 
@@ -78,6 +78,20 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 1. Klicken Sie auf **Bericht generieren**, um den Best Practices Analyzer auszuführen.
 
    ![Bericht erzeugen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+
+>[!NOTE]
+> Ab der BPA-Version 2.1.54 wurde eine neue Funktion eingeführt, um den Lighthouse-Score zu erhalten.
+1. Nachdem Sie auf **Bericht generieren** geklickt haben, wird ein Popup angezeigt, in dem Sie die URL der öffentlichen AEM-Site für den Lighthouse-Score anfordern. Der Benutzer muss eine gültige URL in das angegebene Feld eingeben.
+
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. Wenn die URL gültig ist, wird eine Erfolgsmeldung angezeigt.
+
+      ![Bild](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. Wenn die URL ungültig ist, wird eine Fehlermeldung angezeigt.
+
+      ![Bild](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
 1. Geben Sie den BPA-Upload-Schlüssel an, um den generierten BPA-Bericht automatisch in [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md) hochzuladen. Um den Upload-Schlüssel zu erhalten, navigieren Sie zur [Best-Practices-Analyse in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis).
 

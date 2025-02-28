@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhalte aus einer Adobe Experience Manager(AE
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
+source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 100%
+source-wordcount: '789'
+ht-degree: 92%
 
 ---
 
@@ -37,11 +37,11 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
    >[!IMPORTANT]
    >
    >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig und nicht kurz vor seinem Ablaufdatum ist. Wenn das Ablaufdatum kurz bevorsteht, können Sie den Extraktionsschlüssel verlängern, indem Sie den Migrationssatz auswählen und auf „Eigenschaften“ klicken. Klicken Sie auf **Verlängern**. Dies führt Sie zum Cloud Acceleration Manager, wo Sie auf **Extraktionsschlüssel kopieren** klicken können. Jedes Mal, wenn Sie auf **Extraktionsschlüssel kopieren** klicken, wird ein neuer Extraktionsschlüssel generiert, der ab Erstellung 14 Tage lang gültig ist.
-   >![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. Dadurch wird das Dialogfeld „Extraktion“ angezeigt. Klicken Sie auf **Extrahieren**, um die Extraktionsphase zu starten.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png)
 
    >[!NOTE]
    >Sie haben die Option, Staging-Container während der Extraktionsphase zu überschreiben. Wenn **Staging-Container überschreiben** deaktiviert ist, kann dies die Extraktion für nachfolgende Migrationen beschleunigen, bei denen die Einstellungen für Inhaltspfade oder eingeschlossene Versionen nicht geändert wurden. Wenn sich jedoch die Einstellungen für Inhaltspfade oder eingeschlossene Versionen geändert haben, dann sollte **Staging-Container überschreiben** aktiviert sein.
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
    Sie können auf **Fortschritt anzeigen** klicken, um einen detaillierten Überblick über die laufende Extraktion zu erhalten.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    Sie können auch den Fortschritt der Extraktionsphase von Cloud Acceleration Manager überwachen, indem Sie die Seite für den Inhaltstransfer aufrufen und ihn sich durch Klicken auf **…** > **Details anzeigen** anzeigen lassen.
 
@@ -71,6 +71,12 @@ Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle A
 >Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Falls Sie den Schritt der Vorabkopie für die erste vollständige Extraktion verwendet haben, können Sie die Vorabkopie für nachfolgende Auffüllextraktionen überspringen (sofern die Größe des Auffüllmigrationssatzes weniger als 200 GB beträgt). Dadurch kann sich nämlich der gesamte Vorgang verlängern.
 >Darüber hinaus ist es wichtig, dass die Inhaltsstruktur vorhandener Inhalte von dem Zeitpunkt an nicht geändert wird, zu dem die erste Extraktion erfolgt, bis zum Zeitpunkt der Ausführung der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Achten Sie darauf, dies während des Migrationsprozesses entsprechend einzuschränken.
 
+>[!NOTE]
+>Nachdem Inhaltspfade in den Staging-Container migriert wurden, können diese Pfade oder alle darin enthaltenen Unterpfade nicht mehr entfernt oder von nachfolgenden Auffüllmigrationen ausgeschlossen werden.
+>Beispiel: Erstmigration: content/dam/weRetail,
+>Nächster Versuch eines Auffüllausschlusses: content/dam/weRetail/ab.
+>In diesem Szenario ist das Ausschließen von content/dam/weRetail/ab nicht möglich, da die Daten bereits in den Staging-Container migriert wurden.
+
 Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllextraktion übertragen.
 
 Führen Sie dazu folgende Schritte durch:
@@ -83,7 +89,7 @@ Führen Sie dazu folgende Schritte durch:
 
    >[!IMPORTANT]
    >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## Wie geht es weiter {#whats-next}

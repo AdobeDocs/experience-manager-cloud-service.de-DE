@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfe
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
+source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 100%
+source-wordcount: '1572'
+ht-degree: 86%
 
 ---
 
@@ -131,26 +131,49 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
    >
    >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig und nicht kurz vor seinem Ablaufdatum ist. Diese Informationen finden Sie im Dialogfeld **Migrationssatz erstellen**, nachdem Sie den Extraktionsschlüssel eingefügt haben. Wenn Sie einen Verbindungsfehler erhalten, finden Sie unter [Konnektivität der Quellumgebung](#source-environment-connectivity) weitere Informationen.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. Wählen Sie dann die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
    1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
 
-      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
 
+      >[!NOTE]
+      >Ab der CTT-Version (3.0.24) wurden neue Funktionen in das Content Transfer Tool aufgenommen, die den Prozess des Ein- und Ausschließens von Pfaden verbessern. Zuvor mussten Pfade einzeln ausgewählt werden, was mühsam und zeitaufwendig war. Jetzt können Benutzer Pfade direkt über die Benutzeroberfläche einbeziehen oder eine CSV-Datei entsprechend ihren Anforderungen hochladen.
 
-   1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl.
-
+   1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl. Benutzende können nur eine Option zum Einschließen von Pfaden auswählen: entweder über die Benutzeroberfläche oder durch Hochladen einer CSV-Datei.
       >[!IMPORTANT]
       >Die folgenden Pfade sind beim Erstellen eines Migrationssatzes eingeschränkt:
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc` (einige `/etc`-Pfade können in CTT ausgewählt werden)
+
+      ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
+
+      1. Nur die Pfadauswahl ist zulässig und mindestens ein Pfad muss vorhanden sein. Wenn kein Pfad ausgewählt ist, tritt ein Server-Fehler auf.
+
+         ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
+
+      1. Bei Verwendung der **CSV-Upload**-Option muss die CSV-Datei gültige Pfade enthalten.
+
+         ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
+
+      1. Um zur Pfadauswahl zurückzukehren, müssen Benutzende die Seite aktualisieren und von vorne beginnen.
+
+      1. Wenn **ungültige Pfade** in der hochgeladenen CSV gefunden werden, werden die ungültigen Pfade in einem separaten Dialogfeld angezeigt.
+
+         ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
+
+      1. Benutzer müssen die CSV-Datei korrigieren und erneut hochladen oder die Benutzeroberfläche aktualisieren, um Pfade über die Pfadauswahl auszuwählen.
+
+   1. **Auszuschließende Pfade**: Eine neue Funktion ermöglicht es Benutzenden, bestimmte Pfade auszuschließen, wenn sie diese nicht einschließen möchten. Wenn der Pfad im Include-Abschnitt beispielsweise &quot;/content/dam“ lautet, können Benutzerinnen und Benutzer jetzt Pfade wie &quot;/content/dam/catalogs“ ausschließen.
+
+      ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Migrationssatz erstellen** ausgefüllt haben.
 
@@ -184,7 +207,7 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
 1. Dadurch wird das Dialogfeld **Größe überprüfen** angezeigt.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. Klicken Sie auf **Größe überprüfen**, um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung sehen, die besagt, dass eine **Größenprüfung** ausgeführt wird.
 
@@ -192,7 +215,7 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
 1. Sobald der Prozess **Größe überprüfen** abgeschlossen ist, ändert sich der Status in **BEENDET**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
 
 1. Wenn die Ergebnisse des Prozesses **Größe überprüfen** darauf hindeuten, dass entweder nicht genügend Speicherplatz vorhanden ist und/oder der Migrationssatz die Produktbeschränkungen überschreitet, wird der Status **WARNUNG** angezeigt.
 
