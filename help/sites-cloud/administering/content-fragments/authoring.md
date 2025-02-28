@@ -1,14 +1,14 @@
 ---
 title: Erstellen von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen und dann je nach Zweck Varianten dieses Inhalts erstellen. Inhaltsfragmente bieten zusätzliche Flexibilität sowohl für die Headless-Bereitstellung als auch für die Seitenbearbeitung.
+description: Erfahren Sie, wie Sie Inhalte für Ihre Inhaltsfragmente verfassen und dann je nach Zweck Varianten dieses Inhalts erstellen. Inhaltsfragmente bieten mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 97%
+source-wordcount: '2657'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Die Erstellung von Inhaltsfragmenten konzentriert sich sowohl auf die Headless-B
 Es gibt zwei Editoren für Inhaltsfragmente. Der Editor, der in diesem Abschnitt beschrieben wird:
 
 * wurde für die Bereitstellung von Headless-Inhalten entwickelt (obwohl er für alle Szenarien verwendet werden kann)
-* ist über die **Inhaltsfragmentkonsole** verfügbar.
+* ist über die **Inhaltsfragmentkonsole** verfügbar
 
 Dieser Editor bietet Folgendes:
 
@@ -64,13 +64,13 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
    * diese Links können verwendet werden, um [in der Inhaltsfragmentstruktur zu navigieren](#navigate-structure)
 * rechter Bereich: enthält Registerkarten [mit den Eigenschaften (Metadaten) und Tags](#view-properties-tags), Informationen über den [Versionsverlauf](#view-version-history) sowie Informationen zu [Sprachkopien](#view-language-copies)
    * auf der Registerkarte **Eigenschaften** können Sie den **Titel** und die **Beschreibung** für das Fragment oder die **Variante** aktualisieren
-   * Auf der Registerkarte **Kommentare** können Sie Kommentare hinzufügen und lesen und so einfacher mit anderen Autorinnen und Autoren zusammenarbeiten.
+   * Auf der Registerkarte **Kommentare** können Sie Kommentare hinzufügen und lesen und so einfacher mit anderen Autorinnen und Autoren zusammenarbeiten
 * zentraler Bereich: zeigt die tatsächlichen Felder und den Inhalt der ausgewählten Variante an
    * ermöglicht das Bearbeiten des Inhalts
-      * wenn im Modell (als mehrfach) konfiguriert, ermöglichen verschiedene Datentypen das **Hinzufügen** von Instanzen des relevanten Feldes.
-   * Wenn **Registerkarten-Platzhalter** Felder innerhalb des Modells definiert sind, werden sie hier angezeigt und:
-      * Kann zum Navigieren verwendet werden
-      * Wird entweder horizontal oder als Dropdown-Liste angezeigt
+      * wenn im Modell (als mehrfach) konfiguriert, ermöglichen verschiedene Datentypen das **Hinzufügen** von Instanzen des relevanten Feldes
+   * wenn **Registerkartenplatzhalter**-Felder innerhalb des Modells definiert sind, werden sie hier angezeigt und:
+      * können für die Navigation verwendet werden
+      * werden entweder horizontal oder als Dropdown-Liste angezeigt
 
   >[!NOTE]
   >
@@ -104,7 +104,7 @@ Im linken Bereich können Sie Folgendes sehen:
 
 ### Links folgen {#follow-links}
 
-Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Mit diesem Symbol können Sie das angezeigte Element öffnen, z. B. ein Inhaltsfragmentmodell, einen übergeordneten Verweis oder ein referenziertes Fragment:
+Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Dieses Symbol kann verwendet werden, um das angezeigte Element zu öffnen, z. B. ein Inhaltsfragmentmodell, einen übergeordneten Verweis oder ein Fragment, auf das verwiesen wird:
 
 ![Inhaltsfragmenteditor – Link-Symbol](assets/cf-authoring-link-icon.png)
 
@@ -174,40 +174,9 @@ So benennen Sie eine **Variante** um:
 
 Verwenden Sie generative Varianten, um die generative KI zu nutzen und so die Inhaltserstellung zu beschleunigen.
 
-So verwenden Sie die generativen Varianten im Inhaltsfragmenteditor:
+Öffnen Sie den Inhaltsfragment-Editor, um den Einstiegspunkt zum Generieren von Varianten zu finden.
 
-1. Öffnen Sie den Inhaltsfragmenteditor. In der Kopfzeile finden Sie den Einstiegspunkt zur Variantengenerierung:
-
-   ![Generieren von Varianten im Inhaltsfragmenteditor](assets/cfm-generate-variations1.png)
-
-1. „Varianten generieren“ wird auf einer neuen Registerkarte geöffnet. In der linken Leiste können Sie die AEM Cloud-Instanz und das Inhaltsfragment sehen, für das Sie Inhalte erstellen. Wählen Sie den zu verwendenden Prompt aus oder erstellen Sie einen neuen Prompt.
-
-   >[!NOTE]
-   >
-   >Die Zahl der verfügbaren Vorlagen für Adobe-Prompts ist aktuell eingeschränkt, aber in zukünftigen Versionen werden mehr hinzugefügt.
-
-   ![Exportieren, um Varianten im Inhaltsfragment zu generieren](assets/cfm-generate-variations2.png)
-
-1. Erstellen Sie Inhalte, indem Sie die Prompts ausfüllen. Das Inhaltsmodell aus dem Fragment wird automatisch verwendet, um Inhalte mithilfe von GenAI zu generieren.
-
-   >[!NOTE]
-   >
-   >Derzeit unterstützen wir nur Textfelder.
-
-   ![Exportieren, um Varianten im Inhaltsfragment zu generieren](assets/cfm-generate-variations3.png)
-
-1. Wählen Sie die gewünschte Variante aus und wählen Sie „Variante exportieren“. Bestätigen Sie den Namen der Inhaltsfragmentvariante und wählen Sie eine der folgenden Optionen aus:
-
-   * **Export**: Exportieren Sie die Variante in das Inhaltsfragment und bleiben Sie in der Anwendung zum Generieren von Varianten.
-   * **Exportieren und öffnen**: Exportieren Sie die Variante in das Inhaltsfragment und öffnen Sie eine neue Registerkarte, auf der das Inhaltsfragment mit der neuen Variante von GenAI angezeigt wird.
-
-     ![Exportieren, um Varianten im Inhaltsfragment zu generieren](assets/cfm-generate-variations4.png)
-
-1. Die erzeugten Varianten werden im Hauptinhaltsfragmenteditor angezeigt.
-
-   ![Anzeigen von „Varianten generieren“ im Inhaltsfragment](assets/cfm-generate-variations5.png)
-
-Weitere Informationen finden Sie unter [Varianten generieren](/help/generative-ai/generate-variations.md).
+Weitere [ finden Sie unter „Generieren von Varianten - Integriert ](/help/generative-ai/generate-variations-integrated-editor.md) AEM-Editoren“.
 
 ### Löschen einer Variante {#delete-variation}
 
@@ -297,10 +266,10 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
-* stellt die Aktion **Synchronisieren** zur Verfügung, die den Inhalt der **Hauptvariante** mit der aktuellen Variante synchronisiert.
+* stellt die Aktion **Synchronisieren** zur Verfügung, die den Inhalt der **Hauptvariante** mit der aktuellen Variante synchronisiert
 
-   * wenn die **Hauptvariante** aktualisiert wurde, werden diese Änderungen in die Variante übertragen.
-   * wenn die Variante aktualisiert wurde, werden diese Änderungen mit dem Inhalt der **Hauptvariante** überschrieben.
+   * wenn die **Hauptvariante** aktualisiert wurde, werden diese Änderungen in die Variante übertragen
+   * wenn die Variante aktualisiert wurde, werden diese Änderungen mit dem Inhalt der **Hauptvariante** überschrieben
 
   >[!CAUTION]
   >
@@ -446,8 +415,8 @@ Es wird eine Ansicht geöffnet, die Unterschiede zwischen der aktuellen Version 
 
 Unterschiede sind farblich gekennzeichnet:
 
-* Grün zeigt an, dass Inhalte (zur aktuellen Version) hinzugefügt wurden.
-* Rot zeigt an, dass Inhalte (aus der aktuellen Version) entfernt wurden.
+* Grün zeigt an, dass Inhalte (zur aktuellen Version) hinzugefügt wurden
+* Rot zeigt an, dass Inhalte (aus der aktuellen Version) entfernt wurden
 
 ![Inhaltsfragmenteditor – Versionsverlauf-Vergleich](assets/cf-authoring-version-history-compare-versions.png)
 
@@ -477,7 +446,7 @@ Zum Beispiel:
 
 ## Kommentieren von Fragmenten {#commenting-on-your-fragment}
 
-Um die produktinterne und kontextbezogene Zusammenarbeit zu ermöglichen, bietet die Registerkarte **Kommentare** im rechten Bedienfeld die folgenden Funktionen:
+Um eine produkt- und kontextbezogene Zusammenarbeit zu ermöglichen, stellt die Registerkarte **Kommentare** im rechten Bedienfeld die folgenden Funktionen zur Verfügung:
 
 * Neue Kommentare hinzufügen
 * Bestimmte Benutzende in einem Kommentar taggen

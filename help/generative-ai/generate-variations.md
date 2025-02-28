@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Funktion „Varianten generieren“, au
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '3262'
-ht-degree: 100%
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,10 @@ Sie können wie folgt [auf „Varianten generieren“ zugreifen](#access-genera
 >[!NOTE]
 >
 >In allen Fällen müssen Sie zur Verwendung von „Varianten generieren“ sicherstellen, dass die [Voraussetzungen für den Zugriff](#access-prerequisites) erfüllt sind.
+
+>[!NOTE]
+>
+>Sie können auch auf [in AEM-Editoren integrierte Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md) zugreifen.
 
 Sie haben dann folgende Möglichkeiten:
 
