@@ -5,9 +5,9 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
 source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2767'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -359,27 +359,27 @@ Manchmal ist es erforderlich, eine Änderung in einer Indexdefinition rückgäng
 
 ### Entfernen eines Index {#removing-an-index}
 
-Folgendes gilt nur für Anpassungen von vorkonfigurierten Indizes und vollständig benutzerdefinierten Indizes. Beachten Sie, dass die ursprünglichen OOTB-Indizes nicht entfernt werden können, da sie von AEM verwendet werden.
+Folgendes gilt nur für Anpassungen von vorkonfigurierten Indizes und vollständig benutzerdefinierten Indizes. Beachten Sie, dass die ursprünglichen vorkonfigurierten Indizes nicht entfernt werden können, da sie von AEM verwendet werden.
 
-Um die Systemintegrität und -stabilität sicherzustellen, sollten Indexdefinitionen nach der Bereitstellung als unveränderlich behandelt werden. Um das Entfernen eines benutzerdefinierten Index oder einer Anpassung zu erzielen, erstellen Sie eine neue Version des benutzerdefinierten oder angepassten Index mit einer Definition, die das Entfernen des Index effektiv simuliert.
+Um die Systemintegrität und -stabilität sicherzustellen, sollten Indexdefinitionen nach der Bereitstellung als unveränderlich behandelt werden. Um das Entfernen eines benutzerdefinierten Index oder einer Anpassung umzusetzen, erstellen Sie eine neue Version des benutzerdefinierten oder angepassten Index mit einer Definition, die das Entfernen des Index effektiv simuliert.
 
 Sobald eine neue Version eines Index bereitgestellt wurde, wird die ältere Version desselben Index nicht mehr von Abfragen verwendet.
 Die ältere Version wird nicht sofort aus der Umgebung gelöscht.
-Die Speicherbereinigung wird jedoch durch einen Bereinigungsmechanismus möglich, der regelmäßig ausgeführt wird.
-Nach einer Übergangsphase, die eine Wiederherstellung im Falle von Fehlern ermöglicht
-(derzeit werden 7 Tage ab dem Zeitpunkt gezählt, zu dem die Indizierung entfernt wurde, aber Änderungen unterliegen),
-Dieser Bereinigungsmechanismus löscht die nicht verwendeten Indexdaten,
+Die Speicherbereinigung wird jedoch durch einen Bereinigungsmechanismus ermöglicht, der regelmäßig ausgeführt wird.
+Nach einer Nachfrist, die eine Wiederherstellung im Falle von Fehlern ermöglicht
+(derzeit 7 Tage ab dem Zeitpunkt, zu dem die Indizierung entfernt wurde, Änderungen sind jedoch möglich),
+löscht dieser Bereinigungsmechanismus die nicht verwendeten Indexdaten
 und deaktiviert oder entfernt die alte Version des Index aus der Umgebung.
 
 Im Folgenden beschreiben wir die beiden möglichen Fälle: Entfernen der Anpassungen eines vorkonfigurierten Index und Entfernen eines vollständig benutzerdefinierten Index.
 
-#### Entfernen von Anpassungen eines vordefinierten Index
+#### Entfernen der Anpassungen eines vordefinierten Index
 
-Führen Sie die unter „Rückgängigmachen [ Änderung](#undoing-a-change-undoing-a-change) beschriebenen Schritte aus, indem Sie die Definitionen des vorkonfigurierten Index als neue Version verwenden. Wenn Sie beispielsweise bereits `damAssetLucene-8-custom-3` bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8` zurückkehren möchten, müssen Sie ein `damAssetLucene-8-custom-4` hinzufügen, das die Indexdefinition von `damAssetLucene-8` enthält.
+Führen Sie die unter [Rückgängigmachen einer Änderung](#undoing-a-change-undoing-a-change) beschriebenen Schritte aus. Verwenden Sie dabei die Definitionen des vorkonfigurierten Index als neue Version. Wenn Sie beispielsweise `damAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen Index `damAssetLucene-8` zurückwechseln möchten, müssen Sie einen Index `damAssetLucene-8-custom-4` hinzufügen, der die Indexdefinition von `damAssetLucene-8` enthält.
 
 #### Entfernen eines vollständig benutzerdefinierten Index
 
-Führen Sie die unter [Rückgängigmachen einer Änderung](#undoing-a-change-undoing-a-change) beschriebenen Schritte aus, indem Sie einen Platzhalterindex als neue Version verwenden. Ein Platzhalterindex wird nie für Abfragen verwendet und enthält keine Daten, sodass der Effekt derselbe ist, als ob der Index nicht vorhanden wäre. Sie können ihn beispielsweise `/oak:index/acme.product-custom-3` nennen. Dadurch wird der Index `/oak:index/acme.product-custom-2` ersetzt. Ein Beispiel für einen solchen Platzhalterindex ist:
+Führen Sie die unter [Rückgängigmachen einer Änderung](#undoing-a-change-undoing-a-change) beschriebenen Schritte aus. Verwenden Sie dabei einen Platzhalterindex als neue Version. Ein Platzhalterindex wird nie für Abfragen verwendet und enthält keine Daten, sodass der Effekt derselbe ist, als ob der Index nicht vorhanden wäre. Sie können ihn beispielsweise `/oak:index/acme.product-custom-3` nennen. Dadurch wird der Index `/oak:index/acme.product-custom-2` ersetzt. Beispiel für einen solchen Platzhalterindex:
 
 ```xml
 <acme.product-custom-3

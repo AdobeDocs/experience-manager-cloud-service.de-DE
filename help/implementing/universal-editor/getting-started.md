@@ -5,9 +5,9 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -124,9 +124,9 @@ Wenn Sie nur bestimmte Erweiterungen für eine Seite aktivieren möchten, könne
 
 Wenn Inhaltsautorinnen und -autoren bei einem vorhandenen AEM-Projekt, bei dem [der Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verwendet wird, Seiten bearbeiten, werden die Seiten automatisch mit dem Seiteneditor geöffnet. Sie können festlegen, welchen Editor AEM basierend auf den Inhaltspfaden oder dem `sling:resourceType` öffnen soll. Dadurch profitieren Ihre Autorinnen und Autoren von einem nahtlosen Erlebnis, unabhängig davon, welcher Editor für die ausgewählten Inhalte erforderlich ist.
 
-1. Wenden Sie sich zur Nutzung dieser Konfigurationsfunktion an die Adobe-Kundenunterstützung, um den Zugriff auf den universellen Editor-URL-Service für Ihr Programm zu aktivieren.
+1. Wenden Sie sich zur Nutzung dieser Konfigurationsfunktion an die Adobe-Kundenunterstützung, um den Zugriff auf den URL-Service für den universellen Editor für Ihr Programm zu aktivieren.
 
-1. Sobald die Kundenunterstützung den Zugriff auf den URL-Service des universellen Editors aktiviert hat, öffnen Sie den Konfigurations-Manager.
+1. Sobald die Kundenunterstützung den Zugriff auf den URL-Service für den universellen Editor aktiviert hat, öffnen Sie den Konfigurations-Manager.
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -139,7 +139,7 @@ Wenn Inhaltsautorinnen und -autoren bei einem vorhandenen AEM-Projekt, bei dem [
 
 1. Klicken Sie auf **Speichern**.
 
-1. Überprüfen Sie Ihre [Externalizer](/help/implementing/developing/tools/externalizer.md)Konfiguration und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
+1. Überprüfen Sie Ihre [Externalizer-Konfiguration](/help/implementing/developing/tools/externalizer.md) und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",

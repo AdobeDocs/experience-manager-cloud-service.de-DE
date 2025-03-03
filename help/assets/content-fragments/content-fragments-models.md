@@ -6,9 +6,9 @@ feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
 source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3120'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -512,7 +512,7 @@ Diese Funktion bietet Governance für Inhaltsfragmentmodelle, die veröffentlich
 
 ### Die Voraussetzungen {#the-requirements}
 
-* Benutzer auf die Risiken aufmerksam zu machen, die beim Bearbeiten von Modellen auftreten, die bereits für die Bereitstellung von Live-Inhalten verwendet werden, d. h. von Modellen, die veröffentlicht wurden.
+* Die Benutzenden wurden auf die Risiken aufmerksam gemacht, die bei der Bearbeitung von Modellen auftreten, die bereits für die Bereitstellung von Live-Inhalten verwendet werden (d. h. von Modellen, die veröffentlicht wurden).
 
 * Außerdem die Vermeidung von unbeabsichtigten Änderungen.
 

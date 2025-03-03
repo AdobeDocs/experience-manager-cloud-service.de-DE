@@ -8,38 +8,38 @@ hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
 source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
 # Edge Delivery Services Forms
 
-Adobe Edge Delivery Services Forms verändert die Art und Weise, wie Formulare erstellt, ausgeführt und verarbeitet werden. Durch die Nutzung von Edge Delivery Services können Unternehmen schnelle, sichere und hochverfügbare digitale Formulare erstellen, die das Benutzererlebnis und die betriebliche Effizienz mit einer schnellen Entwicklungsumgebung verbessern. Mit Edge Delivery Services Forms können Sie Konversionen steigern, Kosten senken und die Bereitstellung von Inhalten beschleunigen.
+Adobe Edge Delivery Services Forms verändert die Art und Weise, wie Formulare erstellt, ausgeführt und verarbeitet werden. Durch die Nutzung von Edge Delivery Services können Unternehmen schnelle, sichere und hochverfügbare digitale Formulare erstellen, die das Benutzererlebnis und die betriebliche Effizienz mit einer schnellen Entwicklungsumgebung verbessern. Mit Edge Delivery Services Forms können Sie Konvertierungen steigern, Kosten senken und die Bereitstellung von Inhalten beschleunigen.
 
 ## Vorteile von Edge Delivery Services Forms
 
-* **Schnellere Formularerstellung**: Erstellen Sie leistungsstarke Formulare mit einem perfekten Lighthouse-Wert und überwachen Sie deren tatsächliche Leistung kontinuierlich mithilfe der Echtzeit-Benutzerüberwachung (Real User Monitoring, RUM).
+* **Schnellere Formularerstellung**: Erstellen Sie leistungsstarke Formulare mit einer perfekten Lighthouse-Bewertung und überwachen Sie deren tatsächliche Leistung kontinuierlich mithilfe von Real User Monitoring (RUM).
 
-* **Optimierter Authoring-Prozess**: Einfaches Verwalten von Inhalten aus mehreren Quellen für mehr Flexibilität. Standardmäßig können Sie Formulare mit WYSIWYG und dokumentbasiertem Authoring erstellen und so eine nahtlose Integration verschiedener Inhaltsformate ermöglichen.
+* **Optimierter Authoring-Prozess**: Verwalten Sie Inhalte aus mehreren Quellen ganz einfach, um mehr Flexibilität zu erreichen. Standardmäßig können Sie Formulare mit WYSIWYG und dokumentenbasiertem Authoring erstellen und so eine nahtlose Integration verschiedener Inhaltsformate ermöglichen.
 
-* **Benutzerfreundlichkeit für nicht-technische Benutzer**: Mit Edge Delivery Services können Nicht-Programmierer Formulare einfach verwalten und veröffentlichen, ohne dass umfangreiche Programmierkenntnisse erforderlich sind.
+* **Benutzerfreundlichkeit für nicht technische Benutzende**: Mit Edge Delivery Services können auch Personen ohne umfangreiche Programmierkenntnisse Formulare ganz einfach verwalten und veröffentlichen.
 
-* **Verbessertes Benutzererlebnis**: Stellen Sie schnelle Ladezeiten und reibungslose Interaktionen sicher, sodass Benutzende minimale Wartezeiten und ein intuitives Ausfüllen des Formulars erhalten.
+* **Verbessertes Benutzererlebnis**: Sie stellen schnelle Ladezeiten und reibungslose Interaktionen sicher, was den Benutzenden minimale Wartezeiten und ein intuitives Ausfüllen des Formulars ermöglicht.
 
-* **Server-lose Ausführung**: Edge Delivery Services ermöglicht die Server-lose Ausführung der Formularlogik. Hierzu gehört Folgendes:
+* **Ausführung ohne Server**: Edge Delivery Services ermöglicht die Ausführung von Formularlogik ohne Server. Hierzu gehört Folgendes:
 
-   * **Client-seitige Validierung**: Die Formularfeldvalidierung erfolgt Client-seitig, wodurch Roundtrip-Verzögerungen reduziert werden.
+   * **Client-seitige Validierung**: Die Formularfeldvalidierung erfolgt auf dem Client, wodurch Roundtrip-Verzögerungen reduziert werden.
 
-   * **Vorbefüllen und Personalization**: Das Vorbefüllen von Formulardaten erfolgt Client-seitig, um ein nahtloses Benutzererlebnis zu gewährleisten.
+   * **Vorausfüllen und Personalisierung**: Das Vorausfüllen von Formulardaten erfolgt auf dem Client, um ein nahtloses Benutzererlebnis zu gewährleisten.
 
-   * **Übermittlungsverarbeitung**: Formularübermittlungen werden ohne zentralen Server validiert und sicher weitergeleitet
+   * **Übermittlungsverarbeitung**: Formularübermittlungen werden ohne zentralen Server validiert und sicher weitergeleitet.
 
 ## Wie funktioniert Edge Delivery Services Forms?
 
-Anwender können Edge Delivery Services Forms mit dokumentbasierten Authoring-Tools wie Google Drive, SharePoint oder dem universellen Editor (WYSIWYG Authoring) erstellen und dabei die grundlegenden Stil-, Verhaltens- und Komponentenfunktionen nutzen, die im GitHub-Repository verfügbar sind. Nach der Erstellung kann Edge Delivery Services Forms mithilfe des Forms-Übermittlungs-Service Daten an beliebige Plattformen senden.
+Benutzende können Edge Delivery Services Forms mit dokumentenbasierten Authoring-Tools wie Google Drive, SharePoint oder dem universellen Editor (WYSIWYG-Authoring) erstellen und dabei die grundlegenden Stile, Verhaltensweisen und Komponenten nutzen, die im GitHub-Repository verfügbar sind. Nach der Erstellung können Edge Delivery Services Forms mithilfe des Formularübermittlungsdiensts Daten an beliebige Plattformen senden.
 
 ![Funktionsweise von Edge Delivery Services Forms](/help/edge/docs/forms/assets/eds-forms-working.png)
 
@@ -47,11 +47,11 @@ Anwender können Edge Delivery Services Forms mit dokumentbasierten Authoring-To
 
 Die Hauptkomponenten von Edge Delivery Services Forms sind:
 
-* **GitHub-Repository**: Das GitHub-Repository dient als Textbaustein für die Erstellung von Edge Delivery Services Forms. Die Formulare nutzen grundlegende Stile und Funktionen aus dem Repository und ermöglichen es Benutzenden, Anpassungen und benutzerdefinierte Komponenten zur Edge Delivery Services Forms hinzuzufügen.
+* **GitHub-Repository**: Das GitHub-Repository dient als Textbaustein für die Erstellung von Edge Delivery Services Forms. Die Formulare nutzen grundlegende Stile und Funktionen aus dem Repository und ermöglichen es Benutzenden, Anpassungen und benutzerdefinierte Komponenten zu Edge Delivery Services Forms hinzuzufügen.
 
-* **Formularbearbeitung**: Edge Delivery Services Forms unterstützt zwei Arten der Bearbeitung: WYSIWYG und die dokumentbasierte Bearbeitung. Die dokumentbasierte Inhaltserstellung ermöglicht es Benutzenden, Formulare mit vertrauten Tools wie Google Docs und Microsoft Office zu erstellen. Mit der WYSIWYG-Inhaltserstellung können Benutzende Formulare visuell mit dem universellen Editor entwerfen, wodurch es für Benutzende ohne technischen Hintergrund einfach ist, Formulare zu erstellen und zu verwalten. Der universelle Editor bietet ein intuitives Erlebnis bei der Formularerstellung und Zugriff auf zahlreiche Formularfunktionen.
+* **Formularbearbeitung**: Edge Delivery Services Forms unterstützt zwei Arten der Bearbeitung: WYSIWYG- und dokumentenbasiertes Authoring. Das dokumentenbasierte Authoring ermöglicht es Benutzenden, Formulare mit vertrauten Tools wie Google Docs und Microsoft Office zu erstellen. Mit dem WYSIWYG-Authoring können Benutzende Formulare visuell mit dem universellen Editor entwerfen, wodurch es auch für Benutzende ohne technischen Hintergrund einfach ist, Formulare zu erstellen und zu verwalten. Der universelle Editor bietet ein intuitives Erlebnis bei der Formularerstellung und ermöglicht Zugriff auf zahlreiche Formularfunktionen.
 
-* **Forms Submission Service**: Mit dem Forms Submission Service können Sie Daten aus Formularübermittlungen auf jeder Plattform speichern, z. B. OneDrive, SharePoint oder Google Sheets, um den Zugriff auf und die Verwaltung von Formulardaten in Ihrem bevorzugten System zu erleichtern.
+* **Formularübermittlungsdienst**: Mit dem Formularübermittlungsdienst können Sie Daten aus Formularübermittlungen auf beliebigen Plattformen speichern, z. B. OneDrive, SharePoint oder Google Sheets. Dadurch wird der Zugriff auf und die Verwaltung von Formulardaten in Ihrem bevorzugten System erleichtert.
 
 ## Erstellen eines Formulars
 

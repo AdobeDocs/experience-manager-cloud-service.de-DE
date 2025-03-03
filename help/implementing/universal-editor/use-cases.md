@@ -5,9 +5,9 @@ exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -81,5 +81,5 @@ Damit eine Seite oder Anwendung mit dem universellen Editor bearbeitet werden ka
 
 Der universelle Editor kann auch an Ihre Projektanforderungen angepasst werden.
 
-* [Anpassen des universellen Editors](/help/implementing/universal-editor/customizing.md) - Das universelle Editor-Erlebnis kann angepasst werden, indem verschiedene Aspekte des Editors gefiltert oder die Funktionalität des Editors erweitert wird.
-* [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md) - Die Benutzeroberfläche des universellen Editors kann erweitert werden, um seine Funktionen entsprechend Ihren Projektanforderungen zu erweitern.
+* [Anpassen des universellen Editors](/help/implementing/universal-editor/customizing.md): Das Erlebnis für den universellen Editor kann durch Filtern verschiedener Aspekte des Editors oder durch Erweitern der Funktionalität des Editors angepasst werden.
+* [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md): Die Benutzeroberfläche des universellen Editors kann erweitert werden, damit sie die Anforderungen Ihrer Projekte erfüllt.

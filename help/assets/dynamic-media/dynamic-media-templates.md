@@ -5,9 +5,9 @@ hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 source-git-commit: 2fcbcaf5fe4794d8ea52386583dc592c0c1983d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2801'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Zu den wichtigsten Vorteilen von Dynamic Media-Vorlagen gehören:
 * **Sicherstellung konsistenter Omni-Channel-Erlebnisse:** Gewährleisten Sie die Markenkonsistenz kanalübergreifend.
 * **Effektive Wiederverwendung von Inhalten:** Vermeiden Sie Inhalte für die einmalige Verwendung und skalieren Sie mit dynamischen, parametrisierten Vorlagen.
 * **Minderung von Risiken:** Aktualisieren Sie Preise, Rabatte und Links in Echtzeit.
-* **Kundeninteraktion verbessern:** interaktive, kontextbezogene Erlebnisse fördern.
+* **Verbesserung der Kundeninteraktion:** Fördern Sie interaktive, kontextuell relevante Erlebnisse.
 
 >[!NOTE]
 >
@@ -46,8 +46,8 @@ Um eine Dynamic Media-Vorlage zu erstellen, benötigen Sie Folgendes:
 1. Zugriff auf Dynamic Media.
 1. [Die in Ihrer AEM Assets-Instanz verfügbaren Bilder müssen mit Dynamic Media synchronisiert worden sein, um sie für die Erstellung der Vorlage verwenden zu können](/help/assets/dynamic-media/config-dm.md).
 1. Überprüfen Sie Folgendes in der Touch-optimierten Benutzeroberfläche:
-   * Auf der **[!UICONTROL Seite Dynamic Media-Konfiguration bearbeiten]** wird **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**, der auf **[!UICONTROL Standardmäßig deaktiviert]** festgelegt ist, nicht auf alle AEM-Ordner angewendet (**[!UICONTROL Alle Inhalte synchronisieren]** ist deaktiviert). Weitere Informationen [ Sie unter „Konfigurieren von Dynamic Media ](/help/assets/dynamic-media/config-dm.md) Cloud Service&quot;.
-   * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** ist für den Zielordner oder Unterordner, in **[!UICONTROL Sie die Vorlage nach der Erstellung speichern, auf Für Unterordner aktivieren]** festgelegt. Weitere Informationen [ Sie unter „Konfigurieren von Dynamic Media ](/help/assets/dynamic-media/config-dm.md) Cloud Service&quot;.
+   * Auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** wird **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**, der auf **[!UICONTROL Standardmäßig deaktiviert]** festgelegt ist, nicht auf alle AEM-Ordner angewendet (**[!UICONTROL Alle Inhalte synchronisieren]** ist deaktiviert). Weitere Informationen Sie unter [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md).
+   * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** ist für den Zielordner oder den Unterordner, in dem Sie die Vorlage nach der Erstellung speichern, auf **[!UICONTROL Für Unterordner aktivieren]** festgelegt. Weitere Informationen finden Sie unter [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md).
 
 ## Erstellen einer Dynamic Media-WYSIWYG-Vorlage{#how-to-create-dynamic-media-wysiwyg-template}
 

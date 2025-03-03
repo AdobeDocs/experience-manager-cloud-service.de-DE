@@ -6,9 +6,9 @@ feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1709'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 ## Erste Schritte mit der AEM [!DNL Assets]-HTTP-API {#overview}
 
-Die AEM [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) für digitale Assets über eine REST-Schnittstelle, die unter /`api/assets` verfügbar ist. Diese Vorgänge gelten für Asset-Metadaten, Ausgabedarstellungen und Kommentare. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
+Die AEM [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen-Lesen-Aktualisieren-Löschen) für digitale Assets über eine REST-Schnittstelle unter /`api/assets`. Diese Vorgänge gelten für Asset-Metadaten, Ausgabedarstellungen und Kommentare. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 >
 >Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
 
-## Prüfen des Datenmodells {#data-model}
+## Untersuchen des Datenmodells {#data-model}
 
 Die [!DNL Assets]-HTTP-API legt in erster Linie zwei Elemente frei: Ordner und Standard-Assets. Sie stellt zudem ausführlichere Elemente für benutzerdefinierte Datenmodelle bereit, die in Inhaltsfragmenten verwendet werden. Weitere Informationen finden Sie unter „Datenmodelle für Inhaltsfragmente“. Weitere Informationen finden Sie unter [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
@@ -61,7 +61,7 @@ Die [!DNL Assets]-HTTP-API legt in erster Linie zwei Elemente frei: Ordner und S
 >
 >Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
 
-### Ordner verwalten {#folders}
+### Verwalten von Ordnern {#folders}
 
 Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner können Assets, Unterordner oder beides enthalten. Ordner enthalten folgende Komponenten:
 
@@ -103,7 +103,7 @@ In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 * Eigenschaften.
 * Links.
 
-## Verfügbare API-Vorgänge erkunden {#available-features}
+## Erkunden der verfügbaren API-Vorgänge {#available-features}
 
 Die [!DNL Assets]-HTTP-API bietet die folgenden Funktionen:
 
@@ -293,7 +293,7 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Befolgen Sie die Best Practices und beachten Sie Einschränkungen {#tips-limitations}
+## Befolgen Sie die Best Practices und beachten Sie die Einschränkungen {#tips-limitations}
 
 * Assets und die zugehörigen Ausgabedarstellungen sind nicht mehr über die [!DNL Assets]-Web-Benutzeroberfläche und die HTTP-API verfügbar, wenn die [!UICONTROL Ausschaltzeit] erreicht ist. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
@@ -301,7 +301,7 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 * Einige Eigenschaften des Ordners oder Assets werden einem anderen Präfix zugeordnet, wenn sie mit APIs aktualisiert wurden. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
 
-**Entdecken Sie verwandte Ressourcen**
+**Erkunden Sie verwandte Ressourcen**
 
 * [Assets übersetzen](translate-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)

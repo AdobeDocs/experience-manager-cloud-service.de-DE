@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1926'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 90%
 
 Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und überprüft haben, ist es Ihr Ziel, ihn auf Ihrer [öffentlichen Website (Ihrer Publishing-Umgebung) zur Verfügung zu stellen](/help/sites-cloud/authoring/author-publish.md).
 
-Dies wird als Veröffentlichen einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als Aufheben der Veröffentlichung bezeichnet. Beim Veröffentlichen und Rückgängigmachen der Veröffentlichung bleibt die Seite in der Autorenumgebung für weitere Änderungen verfügbar, bis Sie sie löschen.
+Dies wird als Veröffentlichen einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als Aufheben der Veröffentlichung bezeichnet. Beim Veröffentlichen und beim Aufheben der Veröffentlichung bleibt die Seite in der Autorenumgebung für weitere Änderungen verfügbar, bis Sie diese löschen.
 
 Sie können eine Seite sofort oder zu einem vordefinierten künftigen Zeitpunkt (Datum/Uhrzeit) veröffentlichen bzw. ihre Veröffentlichung rückgängig machen.
 
 >[!NOTE]
 >
->Das Veröffentlichen eines [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) folgt im Wesentlichen dem gleichen Verfahren wie das Veröffentlichen einer Seite, allerdings über die Experience Fragments-Konsole oder den Editor.
+>Das Veröffentlichen eines [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) folgt im Wesentlichen dem gleichen Verfahren wie das Veröffentlichen einer Seite, allerdings in der Konsole oder im Editor für Experience Fragments.
 
 ## Terminologie {#terminology}
 
 Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie auf unterschiedliche Begriffe im Zusammenhang mit der Veröffentlichung stoßen.
 
 * **Veröffentlichen/Veröffentlichung rückgängig machen**
-   * Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungs- und/oder Vorschauumgebung(en) öffentlich verfügbar machen (oder nicht).
+   * Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungs- und/oder Vorschauumgebung verfügbar machen (oder dies rückgängig machen).
    * Dies sind die in der AEM-Dokumentation verwendeten Begriffe.
 * **Aktivieren/Deaktivieren**
    * Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
    * Diese Begriffe wurden in früheren Versionen von AEM verwendet.
 * **Replizieren/Replikation**
-   * Dies sind die technischen Begriffe, die beim Veröffentlichen einer Seite (z. B. von der Autoren- zur Vorschauinstanz) für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Services verwendet werden.
+   * Dies sind die technischen Begriffe, die beim Veröffentlichen einer Seite für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Services verwendet werden (z. B. vom Erstellen zur Vorschau).
    * Diese Begriffe werden hauptsächlich von Entwicklern verwendet.
 
 ## Veröffentlichen von Seiten {#publishing-pages-1}
@@ -63,7 +63,7 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 >* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Informationen zur Reihenfolge auf der übergeordneten Seite gespeichert sind)
 >* wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
 
-### Veröffentlichungen im Seiteneditor {#publishing-from-the-page-editor}
+### Veröffentlichen vom Seiteneditor aus {#publishing-from-the-page-editor}
 
 Wenn Sie eine Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) bearbeiten, kann sie direkt im Editor veröffentlicht werden.
 
@@ -125,7 +125,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 #### Veröffentlichung verwalten {#manage-publication}
 
-**Veröffentlichung verwalten** bietet mehr Optionen als **Quick Publish**. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, bei Bedarf in einem Vorschau-Service veröffentlichen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
+**Veröffentlichung verwalten** bietet mehr Optionen als **Schnell veröffentlichen**. Mit diesen können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, etwas in einem Vorschau-Service veröffentlichen (sofern verfügbar), alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
 So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. machen ihre Veröffentlichung rückgängig:
 
@@ -141,7 +141,7 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
    * **Ziel**
 
-     Wählen Sie aus, ob Sie im Veröffentlichungs-Service (Standard) oder im Vorschau-Service veröffentlichen möchten. Nur verfügbar, wenn Sie einen [Vorschau-Service konfiguriert haben.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+     Wählen Sie aus, ob Sie im Veröffentlichungs-Service (Standard) oder im Vorschau-Service veröffentlichen möchten. Nur verfügbar, wenn Sie einen [Vorschau-Service konfiguriert haben](/help/sites-cloud/authoring/sites-console/previewing-content.md).
 
    * **Zeitplan**
 
@@ -155,7 +155,7 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
      >[!NOTE]
      >
-     >Die Planung von Inhalten für die Veröffentlichung ist nicht dasselbe wie [**Einschaltzeit** und **Ausschaltzeit** die in den Seiteneigenschaften verfügbar sind, ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) kann aber unter ähnlichen Umständen verwendet werden.
+     >Die Planung von Inhalten für die Veröffentlichung ist nicht dasselbe wie [**Einschaltzeit** und **Ausschaltzeit**, die in den Seiteneigenschaften verfügbar sind,](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) kann aber unter ähnlichen Umständen verwendet werden.
 
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 

@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1542'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -131,7 +131,7 @@ Wenn dieser Projektarchetyp über die CM-Pipeline bereitgestellt wird, liefert d
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] Benutzer die geheimen Werte mit Kryptounterstützung verschlüsseln können, finden Sie weitere Informationen unter [Verschlüsselungsunterstützung für Konfigurationseigenschaften](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=de#enabling-encryption-support) und platzieren Sie verschlüsselten Text in den Wert, nachdem [kontextabhängige Konfigurationen in Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=de#runmode-specific-context-aware-config) verfügbar sind.
+      >Benutzende von [!DNL Adobe Managed Service] können die geheimen Werte mithilfe der Kryptounterstützung verschlüsseln (weitere Informationen finden Sie unter [Verschlüsselungsunterstützung für Konfigurationseigenschaften](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=de#enabling-encryption-support)) und verschlüsselten Text in den Wert einfügen, sobald [kontextabhängige Konfigurationen in Service Pack 6.5.13.0 verfügbar sind](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=de#runmode-specific-context-aware-config).
 
 1. Aktualisieren Sie die Datenquellendefinitionen mithilfe der Option zum Aktualisieren von Datenquellendefinitionen im [Formulardatenmodell-Editor](#data-sources), um den FDM-Cache über die FDM-Benutzeroberfläche zu aktualisieren und die neueste Konfiguration zu erhalten.
 

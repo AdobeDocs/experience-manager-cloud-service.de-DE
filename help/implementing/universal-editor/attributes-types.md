@@ -5,9 +5,9 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '557'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `data-aue-filter` | Definiert:<br>- Welche RTE-Funktionalität aktiviert ist<br>- Welche Komponenten einem Container hinzugefügt werden können<br>- Welche Assets einem Medientyp hinzugefügt werden können |
 | `data-aue-label` | Definiert ein benutzerdefiniertes Label für ein auswählbares Element, das im Editor angezeigt wird |
 | `data-aue-model` | Definiert ein Modell, das für die formularbasierte Bearbeitung im Bedienfeld „Eigenschaften“ verwendet wird |
-| `data-aue-behavior` | Veraltet. Es war einmal das Verhalten einer Instrumentierung definiert worden, mit der eigenständige Text, Rich-Text und Medien Komponenten nachahmen konnten, sodass sie auch auf der Seite verschoben und gelöscht werden konnten, sodass nur ein potenzieller Wert von `component` zur Verfügung stand. Diese Eigenschaft wird jetzt ignoriert. Wenn ein Element mit `data-aue-resource` einem Container direkt untergeordnet ist, wird es automatisch als Komponente betrachtet. |
+| `data-aue-behavior` | Veraltet. Damit wurde das Verhalten einer Instrumentierung so definiert, dass eigenständiger Text, Rich-Text und Medien Komponenten nachahmen konnten, sodass sie auch auf der Seite verschoben und gelöscht werden konnten und nur ein einziger potenzieller Wert für `component` zur Verfügung stand. Diese Eigenschaft wird jetzt ignoriert. Wenn ein Element mit `data-aue-resource` einem Container direkt untergeordnet ist, wird es automatisch als Komponente betrachtet. |
 
 ## Elementtypen {#item-types}
 

@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1705'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=de) |
-| AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service (Foundation-Komponenten) | Dieser Artikel |
 
 Ein adaptives Formular stellt mehrere vordefinierte Sende-Aktionen zur Verfügung. Eine Sende-Aktion gibt Details zu den Aktionen an, die mit den über das adaptive Formular erfassten Daten durchgeführt werden sollen. Beispielsweise das Senden von Daten in einer E-Mail.
@@ -74,7 +74,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Wenn Sie Dateien an das adaptive Formular anhängen, validiert der Server die Dateianhänge nach der Übermittlung des adaptiven Formulars und gibt eine Fehlermeldung zurück, wenn eine der folgenden Bedingungen vorliegt:
 
-* Dateianhänge enthalten einen Dateinamen, der mit dem Zeichen (.) beginnt, enthält \ / : * ? &quot; &lt; > | ; % $ beinhaltet oder spezielle Dateinamen enthält, die für das Windows-Betriebssystem reserviert sind, wie `nul`, `prn`, `con`, `lpt` oder `com`.
+* Dateianhänge enthalten einen Dateinamen, der mit dem Zeichen (.) beginnt, die Zeichen \ / : * ?  &quot; &lt; > | ; % $ beinhaltet oder spezielle Dateinamen enthält, die für das Windows-Betriebssystem reserviert sind, wie `nul`, `prn`, `con`, `lpt` oder `com`.
 
 * Die Größe des Dateianhangs beträgt 0 Byte.
 
@@ -111,7 +111,7 @@ Bei einer Sende-Aktion handelt es sich um ein sling:Folder-Objekt, das Folgendes
 
 >[!NOTE]
 >
-> Informationen zum Erstellen einer benutzerdefinierten Übermittlungsaktion für Kernkomponenten finden Sie unter [Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Forms (Kernkomponenten)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+> Informationen zum Erstellen einer benutzerdefinierten Übermittlungsaktion für Kernkomponenten finden Sie unter [Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Formulare (Kernkomponenten)](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Sende-Aktion zu erstellen, die die Daten im CRX-Repository speichert und Ihnen anschließend eine E-Mail sendet. Das adaptive Formular enthält die vordefinierte Sende-Aktion „Inhalt speichern“ (veraltet), mit der die Daten im CRX-Repository gespeichert werden. Zudem stellt AEM eine [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole konfigurieren. Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 

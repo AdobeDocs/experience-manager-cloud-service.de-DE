@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -21,42 +21,42 @@ Erfahren Sie, wie Inhalte mit dem universellen Editor veröffentlicht werden und
 >
 >Der hier beschriebene Veröffentlichungsprozess ist die standardmäßige vordefinierte Funktion des universellen Editors.
 >
->Der universelle Editor unterstützt auch [Erweiterungen und UI-Erweiterbarkeit](/help/implementing/universal-editor/extending.md), damit Workflows Ihren Veröffentlichungsprozess unterstützen können, sodass Ihr Veröffentlichungsablauf variieren kann.
+>Der universelle Editor unterstützt auch [Erweiterungen und die Erweiterbarkeit der Benutzeroberfläche](/help/implementing/universal-editor/extending.md), damit Workflows Ihren Veröffentlichungsprozess unterstützen können, sodass Ihr Veröffentlichungsablauf variieren kann.
 
-## Veröffentlichen von Inhalten über den universellen Editor {#publishing-content}
+## Veröffentlichen von Inhalten aus dem universellen Editor {#publishing-content}
 
-Wenn Sie als Inhaltsautor bereit sind, Ihre Inhalte zu veröffentlichen, müssen Sie einfach auf das Symbol **Veröffentlichen** in der Symbolleiste des universellen Editors tippen oder klicken.
+Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffentlichen, brauchen Sie einfach nur auf das Symbol **Veröffentlichen** auf der Symbolleiste des universellen Editors zu tippen oder klicken.
 
 ![Veröffentlichen von Seiten](assets/publish-menu.png)
 
-1. Tippen oder klicken Sie im universellen Editor auf [ Symbol **Veröffentlichen** in der Symbolleiste des universellen Editors.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder **Vorschau** oder **Veröffentlichen**.
-1. Im Abschnitt **Elemente** werden die Inhalte aufgelistet, die in der Veröffentlichung enthalten sind, einschließlich:
-   * **Neu** Elemente, die noch nicht veröffentlicht wurden.
-   * **Geändert** Inhalt, der veröffentlicht, aber seit der letzten Veröffentlichung geändert wurde.
-   * **Veröffentlicht** Inhalte, die seit dieser Veröffentlichung veröffentlicht und nicht geändert wurden.
+1. Tippen oder klicken Sie im universellen Editor auf das [Symbol **Veröffentlichen** auf der Symbolleiste des universellen Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#publish).
+1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder als **Vorschau** oder zum **Veröffentlichen**.
+1. Im Abschnitt **Elemente** werden die Inhalte aufgelistet, die in der Veröffentlichung enthalten sind, einschließlich der folgenden:
+   * **Neue** Elemente, die noch nicht veröffentlicht wurden.
+   * **Geänderte** Inhalte, die veröffentlicht, aber seit der letzten Veröffentlichung geändert wurden.
+   * **Veröffentlichte** Inhalte, die veröffentlicht und seit dieser Veröffentlichung nicht geändert wurden.
 
-   Tippen oder klicken Sie auf die Kontrollkästchen neben den Elementen, um sie nach Bedarf in die Veröffentlichung einzubeziehen bzw. von ihr auszuschließen. Tippen oder klicken Sie auf **Erweitern**, um einzelne Elemente anzuzeigen, die in den Gesamtwerten für die drei Kategorien enthalten sind, und um sie einzeln ein- oder ausschließen zu können.
+   Tippen oder klicken Sie auf die Kontrollkästchen neben den Elementen, um sie nach Bedarf in die Veröffentlichung ein- bzw. von ihr auszuschließen. Tippen oder klicken Sie auf **Erweitern**, um die einzelnen Elemente anzuzeigen, die in den Elementen dieser drei Kategorien enthalten sind, und um sie einzeln ein- oder ausschließen zu können.
 
-   ![Elemente veröffentlichen](assets/publish-items.png)
+   ![Veröffentlichen von Elementen](assets/publish-items.png)
 
-   Tippen oder klicken Sie auf den Pfeil nach hinten neben der Überschrift **Elemente**, um zur Übersicht zurückzukehren.
+   Tippen oder klicken Sie auf den Pfeil nach links neben der Überschrift **Elemente**, um zur Übersicht zurückzukehren.
 
 1. Tippen oder klicken Sie auf **Veröffentlichen**, um zu veröffentlichen, oder auf **Abbrechen**, um den Vorgang abzubrechen.
 
-## Rückgängigmachen der Veröffentlichung von Inhalten im universellen Editor {#unpublishing-content}
+## Aufheben der Veröffentlichung von Inhalten mit dem universellen Editor {#unpublishing-content}
 
-Das Rückgängigmachen der Veröffentlichung von Inhalten funktioniert ähnlich wie das Veröffentlichen von Inhalten. Wenn Sie als Inhaltsautor bereit sind, Inhalte aus der Veröffentlichung zu entfernen, tippen oder klicken Sie auf das Symbol mit den Auslassungspunkten in der Symbolleiste des universellen Editors und dann **Veröffentlichung rückgängig machen**.
+Das Aufheben der Veröffentlichung von Inhalten funktioniert ähnlich wie das Veröffentlichen von Inhalten. Wenn Sie bereit sind, Inhalte aus der Veröffentlichung zu entfernen, tippen oder klicken Sie auf das Symbol mit den Auslassungspunkten auf der Symbolleiste des universellen Editors und dann auf **Veröffentlichung aufheben**.
 
-In diesem Fall haben Sie dieselben Optionen zum Rückgängigmachen der Veröffentlichung von Inhalten wie beim [Veröffentlichen von Inhalten“.](#publishing-content) einschließlich Rückgängigmachen der Veröffentlichung über eine Vorschauinstanz, falls verfügbar, und welche Elemente in die Rückgängigmachung der Veröffentlichung einbezogen werden sollen.
+Dann haben Sie dieselben Optionen zum Aufheben der Veröffentlichung von Inhalten wie beim [Veröffentlichen von Inhalten.](#publishing-content) Dazu gehört auch das Aufheben der Veröffentlichung über eine Vorschauinstanz, falls verfügbar, und das Festlegen der Elemente, die in das Aufheben der Veröffentlichung eingeschlossen werden sollen.
 
-## Veröffentlichen und Rückgängigmachen der Veröffentlichung über die Sites-Konsole {#publishing-sites-console}
+## Veröffentlichen und Aufheben der Veröffentlichung über die Sites-Konsole {#publishing-sites-console}
 
-Sie können auch [über die Sites-Konsole) veröffentlichen](/help/sites-cloud/authoring/sites-console/publishing-pages.md) was nützlich sein kann, wenn Sie mehrere Inhaltsseiten veröffentlichen oder die Veröffentlichung oder das Rückgängigmachen der Veröffentlichung planen möchten.
+Sie können Inhalte auch [über die Sites-Konsole](/help/sites-cloud/authoring/sites-console/publishing-pages.md) veröffentlichen. Dies kann nützlich sein, wenn Sie mehrere Inhaltsseiten veröffentlichen oder die Veröffentlichung bzw. das Aufheben der Veröffentlichung planen möchten.
 
 ## Ähnlichkeiten mit dem Seiteneditor {#similarities}
 
-Für Benutzende des [AEM-Seiteneditors ](/help/sites-cloud/authoring/page-editor/introduction.md) der Prozess zum Veröffentlichen von Inhalten mit dem universellen Editor wie gewohnt: Bei der Veröffentlichung in AEM wird der Inhalt von der Autorenebene in die Veröffentlichungsebene repliziert.
+Für Benutzende des [AEM-Seiteneditors](/help/sites-cloud/authoring/page-editor/introduction.md) funktioniert der Prozess zum Veröffentlichen von Inhalten mit dem universellen Editor wie gewohnt: Bei der Veröffentlichung in AEM wird der Inhalt von der Autorenebene in die Veröffentlichungsebene repliziert.
 
 ## Unterschiede {#differences}
 

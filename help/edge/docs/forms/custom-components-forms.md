@@ -5,10 +5,11 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +19,7 @@ Mit Edge Delivery Services für AEM Forms können Sie die [nativen HTML-Formular
 
 ![Benutzerdefinierte Komponente](/help/edge/assets/custom-component-image.png)
 
-In diesem Dokument werden die Schritte zum Erstellen benutzerdefinierter Komponenten durch Formatieren der nativen HTML-Formularkomponenten beschrieben, um das Anwendererlebnis zu verbessern und die visuelle Attraktivität des Formulars zu erhöhen.
+In diesem Dokument werden die Schritte zum Erstellen benutzerdefinierter Komponenten durch Formatieren der nativen HTML-Formularkomponenten beschrieben, um das Anwendererlebnis zu verbessern und den visuellen Reiz des Formulars zu erhöhen.
 
 Nehmen wir als Beispiel eine `range`-Komponente, die die `Estimated trip cost` in einem Formular anzeigt. Die `range`-Komponente wird als gerade Linie dargestellt, ohne Werte wie den minimalen, maximalen oder ausgewählten Wert anzuzeigen.
 
@@ -58,7 +59,7 @@ Die unter `[../Form Block/components]` hinzugefügte benutzerdefinierte Funktion
 So fügen Sie eine benutzerdefinierte Funktion hinzu:
 
 1. Navigieren Sie zu `[../Form Block/components]`.
-1. Suchen Sie eine Datei mit dem Namen `range.js`. Wenn nicht vorhanden, erstellen Sie sie.
+1. Suchen Sie nach einer Datei mit dem Namen `range.js`. Wenn sie nicht vorhanden ist, erstellen Sie sie.
 1. Fügen Sie die folgende Code-Zeile hinzu:
 
    ```javascript
@@ -214,7 +215,7 @@ Stellen Sie die aktualisierten Dateien `range.js`, `mapping.js` und `form.css` i
 
 ### Anzeigen einer Vorschau des Formulars mit dem AEM Sidekick
 
-Zeigen Sie eine Vorschau des Formulars mit der neu implementierten Funktion an, die die `range` formatiert.
+Zeigen Sie eine Vorschau Ihres Formulars mit der neu implementierten Funktion an, die die Komponente `range` formatiert.
 
 ![Benutzerdefiniertes Komponentenformular](/help/edge/assets/custom-componet-form.png)
 
@@ -361,7 +362,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## Siehe auch
 
 {{see-more-forms-eds}}
-
-
-
-

@@ -6,9 +6,9 @@ role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
 source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -69,41 +69,41 @@ Jetzt kann Ihre Site die Frontend-Pipeline verwenden. Weitere Informationen zur 
 
 ## Frontend-Pipeline und benutzerdefinierte Domains {#custom-domains}
 
-Die Frontend-Pipeline kann mit der benutzerdefinierten Domain-Funktion von [Cloud Manager verwendet werden](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Beachten Sie jedoch die folgenden Anforderungen, wenn Sie beide Funktionen zusammen verwenden.
+Die Frontend-Pipeline kann mit der [benutzerdefinierten Domain-Funktion von Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) verwendet werden. Beachten Sie jedoch die folgenden Anforderungen, wenn Sie beide Funktionen zusammen verwenden.
 
 ### Statische Frontend-Dateien {#static-files}
 
-Statische Frontend-Assets, die über die Frontend-Pipeline bereitgestellt werden, werden standardmäßig aus der vordefinierten statischen Domain von Adobe bereitgestellt.
+Statische Frontend-Assets, die über die Frontend-Pipeline bereitgestellt werden, werden standardmäßig über die vordefinierte statische Domain von Adobe bereitgestellt.
 
-Wenn Sie eine benutzerdefinierte Domain für Frontend-Assets benötigen, können Sie eine benutzerdefinierte Domain auf der Veröffentlichungsebene installieren und die Dispatcher so konfigurieren, dass bestimmte Pfade (wie `/static/`) zum statischen Hosting-Speicherort von Adobe weitergeleitet werden. Für diese Methode müssen Ihre [Dispatcher-Regeln](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/dispatcher) aktualisiert werden, damit Anfragen für statische Assets ordnungsgemäß weitergeleitet und zwischengespeichert werden können.
+Wenn Sie eine benutzerdefinierte Domain für Frontend-Assets benötigen, können Sie eine benutzerdefinierte Domain auf der Veröffentlichungsebene installieren und den Dispatcher so konfigurieren, dass bestimmte Pfade (wie `/static/`) zum statischen Hosting-Speicherort von Adobe weitergeleitet werden. Für diese Methode müssen Ihre [Dispatcher-Regeln](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/dispatcher) aktualisiert werden, damit Anfragen für statische Assets ordnungsgemäß weitergeleitet und zwischengespeichert werden können.
 
-Nachdem Sie Ihre benutzerdefinierte Domain und Ihren Dispatcher konfiguriert haben, können Sie AEM so konfigurieren, dass Ihre Frontend-Assets aus der statischen Domain bereitgestellt werden.
+Nachdem Sie Ihre benutzerdefinierte Domain und den Dispatcher konfiguriert haben, können Sie AEM so konfigurieren, dass Ihre Frontend-Assets von der statischen Domain bereitgestellt werden.
 
 ### Konfiguration {#configuration}
 
 Wie im Abschnitt [Technische Details](#technical-details) beschrieben, werden beim Aktivieren der Funktion „Frontend-Pipeline“ für eine Site die Knoten `SiteConfig` und `HtmlPageItemsConfig` unter `/conf/<site-name>/sling:configs` erstellt.
 
-Wenn Sie die benutzerdefinierte Domain-Funktion von Cloud Manager für Ihre Site zusammen mit der Frontend-Pipeline für Status-Assets verwenden möchten, müssen diesen Knoten zusätzliche Eigenschaften hinzugefügt werden.
+Wenn Sie die Funktion „Benutzerdefinierte Domains“ von Cloud Manager zusammen mit der Frontend-Pipeline für Status-Assets für Ihre Site verwenden möchten, müssen zu diesen Knoten zusätzliche Eigenschaften hinzugefügt werden.
 
 1. Legen Sie die Eigenschaft `customFrontendPrefix` in `SiteConfig` für die Site fest. 
    1. Navigieren Sie zu `/conf/<site-name>/sling:configs/com.adobe.aem.wcm.site.manager.config.SiteConfig`.
-   1. Fügen Sie die `customFrontendPrefix = "https://your-custom-domain.com/static/"` hinzu oder aktualisieren Sie sie.
+   1. Fügen Sie die Eigenschaft `customFrontendPrefix = "https://your-custom-domain.com/static/"` hinzu oder aktualisieren Sie sie.
 1. Dadurch wird der `prefixPath`-Wert der `HtmlPageItemsConfig` mit der benutzerdefinierten Domain aktualisiert.
    1. Navigieren Sie zu `/conf/<site-name>/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig`.
-   1. Stellen Sie sicher, dass die `prefixPath` Ihre benutzerdefinierte Domain wie `prefixPath = "https://your-custom-domain.com/static/<hash>/..."` widerspiegelt.
+   1. Stellen Sie sicher, dass `prefixPath` Ihre benutzerdefinierte Domain wie etwa `prefixPath = "https://your-custom-domain.com/static/<hash>/..."` widerspiegelt.
    * Dieser Wert kann bei Bedarf auch manuell überschrieben werden.
 1. Überprüfen Sie Ihr Setup.
    1. Vergewissern Sie sich nach der Bereitstellung, dass die Seiten korrekt auf Design-Artefakte aus der benutzerdefinierten Domain verweisen.
-   1. Öffnen Sie die Entwickler-Tools Ihres Browsers und überprüfen Sie die `theme.css` und `theme.js` Dateipfade, um sicherzustellen, dass sie von der richtigen Domain geladen werden.
+   1. Öffnen Sie die Entwickler-Tools Ihres Browsers und überprüfen Sie die Dateipfade `theme.css` und `theme.js`, um sicherzustellen, dass sie von der richtigen Domain geladen werden.
 
 Seiten für die Site verweisen dann auf Design-Artefakte aus dieser aktualisierten URL. Der Dispatcher leitet dann Anfragen für diese Ressourcen an die statische Domain weiter.
 
-## Best Practices für Frontend-Entwickler {#best-practices}
+## Best Practices für Frontend-Entwickelnde {#best-practices}
 
-Wenn Sie Frontend-Assets lokal entwickeln und testen müssen, bevor Sie sie über die Frontend-Pipeline bereitstellen, sollten Sie die folgenden Ansätze berücksichtigen:
+Wenn Sie Frontend-Assets lokal entwickeln und testen müssen, bevor Sie sie über die Frontend-Pipeline bereitstellen, berücksichtigen Sie die folgenden Ansätze:
 
-* Verwenden Sie den [Proxymodus des Site-Design-Builders](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) um Design-Artefakte lokal zum Testen zu überschreiben.
-* Stellen Sie Ihre Design-Dateien manuell von einem lokalen Entwicklungs-Server bereit und aktualisieren Sie die `prefixPath` in `HtmlPageItemsConfig` so, dass sie mit der lokalen Server-Adresse übereinstimmen.
-* Stellen Sie sicher, dass die Browser-Zwischenspeicherung während des Tests deaktiviert ist, um Live-Aktualisierungen anzuzeigen.
+* Verwenden Sie den [Proxy-Modus des Site-Design-Builders](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy), um Design-Artefakte lokal zum Testen zu überschreiben.
+* Stellen Sie Ihre Design-Dateien manuell über einen lokalen Entwicklungs-Server bereit und aktualisieren Sie `prefixPath` in `HtmlPageItemsConfig` in Übereinstimmung mit der lokalen Server-Adresse.
+* Stellen Sie sicher, dass das Browser-Caching während des Tests deaktiviert ist, um Live-Aktualisierungen anzuzeigen.
 
-Weitere Informationen zur lokalen Frontend-Entwicklung finden Sie in der [Site Theme Builder-Dokumentation.](https://github.com/adobe/aem-site-theme-builder)
+Weitere Informationen zur lokalen Frontend-Entwicklung finden Sie in der [Dokumentation zum Site-Design-Builder](https://github.com/adobe/aem-site-theme-builder).
