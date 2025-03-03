@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 19687 {#19687}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 19687 , die am 26. Februar 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 19586.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 19687, die am 26. Februar 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 19586.
 
 Die Funktionsaktivierung von 2025.2.0 wird den vollen Funktionsumfang für diese Wartungsversion bieten. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -28,7 +28,7 @@ Keine.
 
 ### Behobene Probleme {#fixed-issues-19687}
 
-* SKYOPS-97524: Der Umschalter-Status der Funktion ist möglicherweise falsch, was gelegentlich verschiedene AEM-Funktionen betrifft.
+* SKYOPS-97524: Der Umschalter-Status der Funktion ist möglicherweise falsch, was gelegentlich verschiedene AEM-Funktionen beeinträchtigt.
 
 ### Bekannte Probleme {#known-issues-19687}
 
