@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2268'
-ht-degree: 100%
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+workflow-type: tm+mt
+source-wordcount: '2296'
+ht-degree: 98%
 
 ---
 
@@ -119,6 +119,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 * **Vorlageneinstellungen**
 
    * **Erlaubte Vorlagen**: [Definiert die Liste der Vorlagen, die innerhalb dieses Unterzweigs verfügbar sind](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
+   * **Seite als Vorlage verwenden** - [Erstellen Sie eine neue Vorlage basierend auf der aktuellen Seite.](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Gilt nur für Seiten, die für die Verwendung mit dem universellen Editor unter Verwendung von Edge Delivery Services erstellt wurden.
 
 * **Authentifizierungspflicht**
 
