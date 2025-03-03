@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 97%
@@ -81,6 +81,8 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
 >[!NOTE]
 > Ab der BPA-Version 2.1.54 wurde eine neue Funktion eingeführt, um den Lighthouse-Score zu erhalten.
+
+
 1. Nachdem Sie auf **Bericht generieren** geklickt haben, wird ein Popup angezeigt, in dem Sie die URL der öffentlichen AEM-Site für den Lighthouse-Score anfordern. Der Benutzer muss eine gültige URL in das angegebene Feld eingeben.
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
