@@ -2,7 +2,7 @@
 source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 # Snippets {#snippets}
@@ -43,8 +43,8 @@ ht-degree: 96%
 ## Übermittlungsaktionen für adaptive Formulare {#af-submit-action}
 
 * [E-Mail senden](/help/forms/configure-submit-action-send-email.md)
-* [An SharePoint-Dokumentbibliothek senden](/help/forms/connect-forms-to-sharepoint-document-library.md)
-* [An SharePoint-Liste senden](/help/forms/connect-forms-to-sharepoint-list.md)
+* [Übermitteln an eine SharePoint-Dokumentbibliothek](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Übermitteln an eine SharePoint-Liste](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Mit Formulardatenmodell senden](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [An Azure Blob Storage senden](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
@@ -175,7 +175,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
 >
 >**Cloud Manager-IP-Zulassungsliste**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,52.254.107.0/28,52.254.107.32/28,40.70.154.136/29,52.254.106.160/28,20.14.241.153,52.254.107.16/28,52.254.106.208/28,52.254.106.0/28,4.152.211.251
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Hinzufügen von Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#add-cm-allowlist-frontend-pipeline}

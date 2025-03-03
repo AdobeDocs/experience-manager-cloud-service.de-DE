@@ -8,7 +8,7 @@ exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -169,7 +169,7 @@ Sie können auch ein Mobilgerät im universellen Editor emulieren:
 
 * Ausrichtung definieren
 * Breite und Höhe definieren
-* Ausrichtung ändern
+* Ändern der Ausrichtung
 
 #### Vorschaumodus {#preview-mode}
 
@@ -195,9 +195,9 @@ Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie ger
 >
 >Die Vorschau-URL für Ihre App [kann angepasst werden](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
-#### Publish {#publish}
+#### Veröffentlichen {#publish}
 
-Wählen Sie die Schaltfläche Veröffentlichen aus, damit Sie die Änderungen am Inhalt für Ihre Leser live oder zur Überprüfung in einer Vorschauumgebung veröffentlichen können.
+Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am Inhalt für Ihre Leserinnen und Leser live oder zur Prüfung in einer Vorschauumgebung zu veröffentlichen.
 
 ![Schaltfläche „Veröffentlichen“](assets/publish.png)
 
@@ -217,7 +217,7 @@ Beispielsweise ist über die Schaltfläche mit den Auslassungspunkten die Mögli
 
 Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Symbolleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
 
-* Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md).
+* Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md).
 * Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### Der Editor {#editor}
@@ -314,7 +314,7 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 
 ## Zusätzliche Funktionen {#additional-features}
 
-Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn im Eigenschaftenbereich oder in der Symbolleiste zusätzliche Schaltflächen oder Optionen angezeigt werden, wurde Ihr universeller Editor erweitert.
+Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn Sie im Bedienfeld „Eigenschaften“ oder auf der Symbolleiste weitere Schaltflächen oder Optionen finden, wurde Ihr universeller Editor erweitert.
 
 * Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
 * Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).

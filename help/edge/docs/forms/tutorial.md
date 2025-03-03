@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
 source-wordcount: '1656'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Im heutigen digitalen Zeitalter ist die Erstellung benutzerfreundlicher Formular
 
 Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabellen-Datei, sodass Sie ein dynamisches Ökosystem und robuste APIs von Google Tabellen, Microsoft Excel und Microsoft SharePoint verwenden können, um die übermittelten Daten einfach zu verarbeiten oder einen bestehenden Business-Workflow zu initiieren.
 
-AEM Forms bietet einen Bock, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um aufgenommene Daten zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt erstellen, das mit dem adaptiven Forms-Block vorkonfiguriert ist](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
+AEM Forms bietet einen Bock, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Formulare erstellen können, um aufgenommene Daten zu erfassen und zu speichern. Sie können [ein neues, mit dem adaptiven Formularblock vorkonfiguriertes AEM-Projekt erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
 
 Dieses AEM Forms-Tutorial führt Sie durch das Erstellen, Anzeigen einer Vorschau und Veröffentlichen Ihres eigenen benutzerdefinierten Formulars mit einem neuen Adobe Experience Manager (AEM) Forms-Projekt.
 
@@ -59,7 +59,7 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
    >[!NOTE]
    >
    >
-   > Wenn Sie GitHub Enterprise mit IP-Filterung verwenden, können Sie der Zulassungsliste die folgende IP-Adresse hinzufügen: 3.227.118.73
+   > Wenn Sie GitHub Enterprise mit IP-Filterung verwenden, können Sie die folgende IP zur Zulassungsliste hinzufügen: 3.227.118.73
 
    Herzlichen Glückwunsch! Sie haben eine neue Website auf `https://<branch>--<repo>--<owner>.aem.page/`.
 

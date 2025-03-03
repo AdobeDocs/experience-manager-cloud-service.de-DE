@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie s
 
 >[!TIP]
 >
->In diesem Dokument wird die Build-Umgebung von Cloud Manager für die Entwicklung Ihres AEM as a Cloud Service-Projekts beschrieben. Einzelheiten zu den von AEM as a Cloud Service für die Inhaltserstellung unterstützten Client-Plattformen finden Sie im Dokument [Unterstützte Client-Plattformen.](/help/overview/supported-platforms.md)
+>In diesem Dokument wird die Build-Umgebung von Cloud Manager für die Entwicklung Ihres AEM as a Cloud Service-Projekts beschrieben. Einzelheiten zu den von AEM as a Cloud Service für die Inhaltserstellung unterstützten Client-Plattformen finden Sie im Dokument [Unterstützte Client-Plattformen](/help/overview/supported-platforms.md).
 
 ## Details der Build-Umgebung {#build-environment-details}
 

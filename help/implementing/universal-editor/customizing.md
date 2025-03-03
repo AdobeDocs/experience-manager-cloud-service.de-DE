@@ -1,24 +1,24 @@
 ---
 title: Anpassen des universellen Editors
-description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des universellen Editors, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des universellen Editors, um die Anforderungen bei der Inhaltserstellung zu unterstützen.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 72%
+ht-degree: 88%
 
 ---
 
 
 # Anpassen des universellen Editors {#customizing}
 
-Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des universellen Editors, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des universellen Editors, um die Anforderungen bei der Inhaltserstellung zu unterstützen.
 
 >[!TIP]
 >
->Der universelle Editor bietet außerdem viele [Erweiterungspunkte](/help/implementing/universal-editor/extending.md) sodass Sie seine Funktionalität entsprechend Ihren Projektanforderungen erweitern können.
+>Der universelle Editor bietet außerdem viele [Erweiterungspunkte](/help/implementing/universal-editor/extending.md), sodass Sie seine Funktionalität entsprechend Ihren Projektanforderungen erweitern können.
 
 ## Deaktivieren der Veröffentlichung {#disable-publish}
 

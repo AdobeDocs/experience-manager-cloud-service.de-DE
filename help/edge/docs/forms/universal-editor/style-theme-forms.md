@@ -1,13 +1,13 @@
 ---
 title: Anpassen des Designs und Stils für Edge Delivery Services für AEM Forms
-description: Passen Sie das Design und den Stil für AEM Forms effektiv an, die über Edge Delivery Services bereitgestellt werden, und sorgen Sie so für ein kohärentes und markenspezifisches Benutzererlebnis.
+description: Passen Sie effektiv das Design und den Stil für AEM Forms-Assets an, die über Edge Delivery Services bereitgestellt werden, und sorgen Sie so für ein kohärentes Benutzererlebnis mit Branding.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1876'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ In diesem Dokument wird die HTML-Struktur für verschiedene Formularkomponenten 
 Am Ende des Artikels werden Sie Folgendes erreicht haben:
 
 * Sie gewinnen ein Verständnis der Struktur der standardmäßigen CSS-Datei, die im adaptiven Formularbaustein enthalten ist.
-* Sie erhalten ein Verständnis der HTML-Struktur der Formularkomponenten, die vom adaptiven Forms-Block bereitgestellt werden, einschließlich allgemeiner Komponenten und spezifischer Komponenten wie Dropdown-Listen, Optionsfeldgruppen und Kontrollkästchengruppen.
+* Sie gewinnen ein Verständnis der HTML-Struktur von Formularkomponenten, die vom adaptiven Formularbaustein bereitgestellt werden, einschließlich allgemeiner Komponenten und spezifischer Komponenten wie Dropdown-Listen, Optionsfeld- und Kontrollkästchengruppen.
 * Sie lernen, wie Sie Formularfelder mithilfe der CSS-Auswahlen basierend auf dem Feldtyp und den Feldnamen formatieren, was eine konsistente oder eindeutige Formatierung basierend auf Anforderungen ermöglicht.
 
 ## Grundlagen zu Formularfeldtypen
@@ -52,9 +52,9 @@ Das Verstehen [grundlegender CSS-Konzepte](https://www.w3schools.com/css/css_int
 
 Der adaptive Formularbaustein bietet eine standardisierte HTML-Struktur, die die Auswahl und Formatierung von Formularkomponenten vereinfacht:
 
-* **Aktualisieren von Standardstilen**: Sie können die Standardstile eines Formulars ändern, indem Sie die `/blocks/form/form.css file` bearbeiten. Diese Datei bietet eine umfassende Formatierung für ein Formular, das mehrstufige Assistentenformulare unterstützt. Der Schwerpunkt liegt auf der Verwendung benutzerdefinierter CSS-Variablen, um die Anpassung, Wartung und einheitliche Formatierung in allen Formularen zu erleichtern.
+* **Aktualisieren von Standardstilen**: Sie können die Standardstile eines Formulars ändern, indem Sie die `/blocks/form/form.css file` bearbeiten. Diese Datei bietet eine umfassende Formatierung für ein Formular, das mehrstufige Assistentenformulare unterstützt. Der Schwerpunkt liegt auf der Verwendung benutzerdefinierter CSS-Variablen für eine einfache Anpassung, Wartung und einheitliche Formatierung in allen Formularen.
 
-* **CSS-Stile für Forms**: Um sicherzustellen, dass Ihre Stile korrekt angewendet werden, schließen Sie Ihre formularspezifische CSS-Datei in den `main .form form`-Selektor ein. Dadurch wird sichergestellt, dass Ihre Stile nur auf die Formularelemente innerhalb des Hauptinhaltsbereichs abzielen, wodurch Konflikte mit anderen Teilen der Website vermieden werden.
+* **CSS-Stile für Formulare**: Um sicherzustellen, dass Ihre Stile richtig angewendet werden, schließen Sie Ihren formularspezifischen CSS-Stil in die Auswahl `main .form form` ein. Dadurch wird sichergestellt, dass Ihre Stile nur auf die Formularelemente innerhalb des Hauptinhaltsbereichs angewendet werden, wodurch Konflikte mit anderen Teilen der Website vermieden werden.
 Zum Beispiel:
 
   ```css
@@ -93,7 +93,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 * Klassen: Das div-Element verfügt über mehrere Klassen, die auf bestimmte Elemente und die Formatierung abzielen. Sie benötigen die Klassen `{Type}-wrapper` oder `field-{Name}` zum Entwickeln einer CSS-Auswahl, um ein Formularfeld zu formatieren:
 * {Type}: Identifiziert die Komponente nach Feldtyp. Zum Beispiel: text (text-wrapper), number (number-wrapper), date (date-wrapper).
 * {Name}: Identifiziert die Komponente anhand des Namens. Der Name des Felds darf nur alphanumerische Zeichen enthalten. Mehrere aufeinander folgende Gedankenstriche im Namen werden durch einen einzigen Bindestrich ersetzt `(-)`, und die Start- und Endabstände in einem Feldnamen werden entfernt. Zum Beispiel: first-name (field-first-name field-wrapper).
-* {FieldId}: Dies ist eine eindeutige Kennung für das Feld, die automatisch generiert wird.
+* {FieldId}: Eine eindeutige Kennung für das Feld, die automatisch generiert wird.
 * {Required}: Ein boolescher Wert, der angibt, ob das Feld erforderlich ist.
 * Titel: Das Element `label` liefert einen beschreibenden Text für das Feld und ordnet ihn dem Eingabeelement mithilfe des `for`-Attributs zu.
 * Eingabe: Das `input`-Element definiert den einzugebenden Datentyp. Zum Beispiel : text, number, email.
@@ -141,7 +141,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
   
 ```
 * `.{Type}-wrapper`: Wählt das äußere `div`-Element basierend auf dem Feldtyp als Ziel aus. Zum Beispiel wählt `.text-wrapper` alle Textfelder als Ziel aus.
-* `.field-{Name}`: Wählt das Element weiter auf Grundlage des spezifischen Feldnamens aus. Beispielsweise zielt `.field-first-name` auf das Textfeld „Vorname“ ab. Dieser Selektor kann zwar für die Zielgruppenbestimmung von Elementen mithilfe der Klasse &quot;{Name}&quot; verwendet werden, es ist jedoch eine gewisse Vorsicht geboten. In diesem speziellen Fall wäre es nicht nützlich, Eingabefelder zu formatieren, da es nicht nur die Eingabe selbst, sondern auch die Elemente label und description ansprechen würde. Es wird empfohlen, spezifischere Selektoren zu verwenden, wie Sie sie zum Targeting von Texteingabefeldern haben (.text-wrapper input).
+* `.field-{Name}`: Wählt das Element weiter auf Grundlage des spezifischen Feldnamens aus. Beispielsweise wählt `.field-first-name` das Textfeld „Vorname“ als Ziel aus. Diese Auswahl kann für das Abzielen auf Elemente mit der Klasse „field-{Name}“ verwendet werden. Sie müssen jedoch vorsichtig sein. In diesem speziellen Fall wäre es für die Formatierung von Eingabefeldern nicht hilfreich, da nicht nur die Eingabe selbst, sondern auch die Titel- und Beschreibungselemente ausgewählt würden. Es empfiehlt sich, eine spezifischere Auswahl zu verwenden, z. B. eine, die für das Abzielen auf Texteingabefelder verfügbar ist (.text-wrapper-Eingabe).
 
 **Beispiel einer CSS-Auswahl für allgemeine Komponenten**
 
@@ -341,7 +341,7 @@ main .form form .field-color .radio-wrapper label {
 
 +++ CSS-Auswahl für Kontrollkästchengruppen
 
-* Ausgewählt für den äußeren Wrapper: Diese Selektoren zielen auf die äußersten Container von Optionsfeld- und Kontrollkästchengruppen ab und ermöglichen es, allgemeine Stile auf die gesamte Gruppenstruktur anzuwenden. Dies ist nützlich zum Festlegen von Abstand, Ausrichtung oder anderen Layout-bezogenen Eigenschaften.
+* Auf den äußeren Wrapper abzielen: Diese Auswahl wählt die äußersten Container von Optionsfeld- und Kontrollkästchengruppen als Ziel aus, sodass Sie allgemeine Stile auf die gesamte Gruppenstruktur anwenden können. Dies ist nützlich zum Festlegen von Abstand, Ausrichtung oder anderen Layout-bezogenen Eigenschaften.
 
 ```CSS
   
@@ -461,7 +461,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 
 * Das fieldset-Element dient als Bedienfeld-Container mit dem Klassen-Bedienfeld-Wrapper und zusätzlichen Klassen zur Gestaltung basierend auf dem Bedienfeldnamen (Feldanmeldung).
 * Das legend-Element (<legend>) dient als Bedienfeldtitel mit dem Text „Anmeldeinformationen“ und der Klassenfeldbezeichnung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
-* Innerhalb der Feldgruppe mehrere.{Type}-Wrapper-Elemente (in diesem Fall „.text-wrapper“ und „.password-wrapper“x) für einzelne Formularfelder im Bedienfeld.
+* In diesem Feldsatz gibt es mehrere.{Type}-Wrapper-Elemente (in diesem Fall „.text-wrapper“ und „.password-wrapper“x) für einzelne Formularfelder im Bedienfeld.
 * Jeder Wrapper enthält eine Bezeichnung, ein Eingabefeld und eine Beschreibung, ähnlich wie bei den vorherigen Beispielen.
 
 +++

@@ -1,29 +1,29 @@
 ---
 title: Übermittlungsaktionen
-description: Konfigurieren von Übermittlungsaktionen für adaptive Formulare.
+description: Konfigurieren Sie Übermittlungsaktionen für ein adaptives Formular.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 # Übermittlungsaktion für adaptive Formulare
 
-Eine Sende-Aktion gibt das Ziel für die Daten an, die über ein adaptives Formular erfasst werden. Der Übermittlungsprozess beginnt, wenn der Benutzer im Formular auf **[!UICONTROL Schaltfläche]** Senden“ klickt. AEM Forms bietet zwei Arten von Übermittlungsaktionen, die unten beschrieben werden, und ermöglicht es Ihnen, benutzerdefinierte Übermittlungsaktionen zu erstellen und zu verwenden, um Ihre spezifischen Anforderungen zu erfüllen. Die vordefinierten Übermittlungsaktionen sind:
+Eine Übermittlungsaktion gibt das Ziel für die Daten an, die über ein adaptives Formular erfasst werden. Der Übermittlungsprozess beginnt, wenn die Benutzenden im Formular auf die Schaltfläche **[!UICONTROL Senden]** klicken. AEM Forms bietet zwei Arten von Übermittlungsaktionen, die unten beschrieben werden, und ermöglicht es Ihnen, benutzerdefinierte Übermittlungsaktionen zu erstellen und zu verwenden, die Ihre spezifischen Anforderungen erfüllen. Vordefinierte Übermittlungsaktionen:
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [An REST-Endpunkt übermitteln](#rest-endpoint-submission-ue)
+* [An REST-Endpunkt senden](#rest-endpoint-submission-ue)
 * [E-Mail senden](#email-submission-ue)
 
 
 ### An REST-Endpunkt senden {#rest-endpoint-submission-ue}
 
-Die Aktion An REST-Endpunkt übermitteln wird verwendet, um die übermittelten Formulardaten an einen angegebenen REST-Endpunkt zu senden. Der Endpunkt kann entweder zu einem internen Server, auf dem das Formular gehostet wird, oder zu einem externen Server gehören, indem ein relativer Pfad oder ein absoluter Pfad verwendet wird. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Um Daten an einen anderen Server zu senden, verwenden Sie den absoluten Pfad.
+Die Aktion „An REST-Endpunkt senden“ wird verwendet, um die übermittelten Formulardaten an einen angegebenen REST-Endpunkt zu senden. Der Endpunkt kann entweder zu einem internen Server gehören, auf dem das Formular gehostet wird, er kann aber auch zu einem externen Server gehören, indem ein relativer Pfad oder ein absoluter Pfad verwendet wird. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an einen Server senden, verwenden Sie den absoluten Pfad.
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
 * It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
@@ -35,14 +35,14 @@ Die Aktion An REST-Endpunkt übermitteln wird verwendet, um die übermittelten F
 
 So konfigurieren Sie einen REST-Endpunkt:
 
-1. Öffnen Sie Ihr adaptives Formular in **[!UICONTROL Editor]**.
-1. Wählen Sie **[!UICONTROL Adaptiver Formularblock]**.
-1. Klicken Sie auf das Symbol ![Eigenschaften](/help/forms/assets/Smock_Properties_18_N.svg).
-1. Wählen Sie **[!UICONTROL An einen REST-Endpunkt übermitteln]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
-1. Geben Sie die REST-Endpunkt-URL an.
-1. Sie können auch **POST-Anfrage aktivieren** und eine URL eingeben, um die Anfrage zu veröffentlichen.
+1. Öffnen Sie das adaptive Formular im **[!UICONTROL Editor]**.
+1. Wählen Sie **[!UICONTROL Adaptiver Formularblock]** aus.
+1. Klicken Sie auf das Symbol „Eigenschaften“ ![Eigenschaften](/help/forms/assets/Smock_Properties_18_N.svg).
+1. Wählen Sie **[!UICONTROL An REST-Endpunkt senden]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
+1. Geben Sie die URL des REST-Endpunkts an.
+1. Sie können auch **POST-Anforderungen aktivieren** und eine URL eingeben, um die Anforderung zu veröffentlichen.
 
-![Aktivieren einer POST-Anfrage für adaptive Formulare](/help/forms/assets/enable-post-request-ue.png)
+![Aktivieren einer POST-Anforderung für adaptive Formulare](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -51,22 +51,22 @@ So konfigurieren Sie einen REST-Endpunkt:
 
 ### E-Mail senden {#email-submission-ue}
 
-Mit der Übermittlungsaktion E-Mail senden können Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger senden. Mit der Konfiguration E-Mail senden können Sie eine E-Mail erstellen, die Formulardaten in einem vordefinierten Format enthalten kann. Betrachten Sie beispielsweise die folgende Vorlage, bei der Kundenname, Versandadresse, Bundesland und Postleitzahl aus den übermittelten Formulardaten abgerufen werden. [Weitere Informationen zu E-Mail-Vorlagen finden Sie in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md). Einige Vorteile der Konfiguration eines adaptiven Formulars mit der Sendeaktion „E-Mail senden“ sind:
+Bei der Übermittlungsaktion „E-Mail senden“ können Sie nach erfolgreicher Übermittlung des Formulars eine E-Mail an die Empfängerinnen und Empfänger senden. Mit der Konfiguration „E-Mail senden“ können Sie eine E-Mail erstellen, die Formulardaten in einem vordefinierten Format enthalten kann. Betrachten Sie beispielsweise die folgende Vorlage, bei der Kundenname, Versandadresse, Ländername und Postleitzahl aus den übermittelten Formulardaten abgerufen werden. [Weitere Informationen zu E-Mail-Vorlagen in adaptiven Formularen](/help/forms/html-email-templates-in-adaptive-forms.md). Einige Vorteile der Konfiguration eines adaptiven Formulars mit der Sendeaktion „E-Mail senden“ sind:
 
-1. Dies ermöglicht eine schnelle Kommunikation, da Formulardaten direkt an bestimmte E-Mail-Empfänger gesendet werden.
+1. Sie ermöglicht eine schnelle Kommunikation, da Formulardaten direkt an bestimmte E-Mail-Empfängerinnen und -Empfänger gesendet werden.
 1. Dies trägt zur Optimierung des Workflows bei, indem Formularübermittlungen direkt in E-Mail-Benachrichtigungen integriert werden.
 1. Es hilft Unternehmen, die E-Mail-Inhalte individuell anzupassen, sodass sie für spezifische Kommunikationsanforderungen geeignet sind.
 
 ![Eigenschaften adaptiver Formulare im universellen Editor](/help/forms/assets/submit-actions-ue.png)
 
 
-So konfigurieren Sie eine Übermittlungsaktion als E-Mail für die Übermittlung Ihres Formulars:
+So konfigurieren Sie für die Übermittlung Ihres Formulars eine Übermittlungsaktion als E-Mail:
 
-1. Öffnen Sie Ihr adaptives Formular in **Editor**.
-1. Wählen Sie Ihren **[!UICONTROL adaptiven Formularblock]**.
-1. Klicken Sie auf das Symbol ![Eigenschaften](/help/forms/assets/Smock_Properties_18_N.svg).
-1. Wählen Sie die **[!UICONTROL E-Mail senden]** aus der Dropdown **[!UICONTROL Liste „Übermittlungsaktion]** aus.
-1. Nachdem Sie die Option E-Mail senden ausgewählt haben, können Sie die folgenden Eigenschaften konfigurieren, wie in der Abbildung unten dargestellt.
+1. Öffnen Sie das adaptive Formular im **Editor**.
+1. Wählen Sie Ihren **[!UICONTROL adaptiven Formularblock]** aus.
+1. Klicken Sie auf das Symbol „Eigenschaften“ ![Eigenschaften](/help/forms/assets/Smock_Properties_18_N.svg).
+1. Wählen Sie die Option **[!UICONTROL E-Mail senden]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
+1. Nachdem Sie die Option „E-Mail senden“ ausgewählt haben, können Sie die folgenden Eigenschaften konfigurieren, wie in der Abbildung unten dargestellt.
 
 <table>
   <thead>
@@ -80,19 +80,19 @@ So konfigurieren Sie eine Übermittlungsaktion als E-Mail für die Übermittlung
     <tr>
     <td rowspan="7"><img src="/help/forms/assets/email-config-ue.png" alt="E-Mail-Konfiguration"></td> 
     <td><b>Von</td>
-    <td>Geben Sie die E-Mail-Adresse des Absenders an.</td>
+    <td>Geben Sie die E-Mail-Adresse des Absenders oder der Absenderin an.</td>
     </tr>
     <tr>
-      <td><b>To</td>
-      <td>Geben Sie die primären Empfänger der E-Mail an. Mehrere E-Mail-Adressen können hinzugefügt werden, indem sie durch Kommas getrennt werden.</td>
+      <td><b>An</td>
+      <td>Geben Sie die primären Empfängerinnen und Empfänger der E-Mail an. Es können mehrere E-Mail-Adressen hinzugefügt werden, indem sie durch Kommas getrennt werden.</td>
     </tr>
     <tr>
       <td><b>CC</td>
-      <td>Geben Sie die Empfänger an, die eine Kopie (CC) der E-Mail erhalten sollen.</td>
+      <td>Geben Sie die Empfängerinnen und Empfänger an, die eine Kopie (CC) der E-Mail erhalten sollen.</td>
     </tr>
     <tr>
       <td><b>BCC</td>
-      <td>Geben Sie die Empfänger an, die eine Blindkopie (BCC) der E-Mail erhalten sollen.</td>
+      <td>Geben Sie die Empfängerinnen und Empfänger an, die eine Blindkopie (BCC) der E-Mail erhalten sollen.</td>
     </tr>
     <tr>
       <td><b>Betreff</td>
@@ -100,11 +100,11 @@ So konfigurieren Sie eine Übermittlungsaktion als E-Mail für die Übermittlung
     </tr>
     <tr>
       <td><b>Externe Vorlage verwenden</td>
-      <td>Aktiviert die Verwendung einer externen E-Mail-Vorlage zum Formatieren des E-Mail-Inhalts. Geben Sie die URL oder den Pfad zur externen Vorlage an, um eine vordefinierte E-Mail-Vorlage zu integrieren, die in Ihrem AEM Assets-Ordner gehostet wird.</td>
+      <td>Ermöglicht die Verwendung einer externen E-Mail-Vorlage zum Formatieren des E-Mail-Inhalts. Geben Sie die URL oder den Pfad zur externen Vorlage an, um eine vordefinierte E-Mail-Vorlage zu integrieren, die in Ihrem AEM Assets-Ordner gehostet wird.</td>
     </tr>
     <tr>
-      <td><b>Anhang einschließen</td>
-      <td>Gibt an, ob die übermittelten Formulardaten eine Anlage enthalten sollen, die über das Formular in der E-Mail übermittelt wurde. Unterstützte Anlagenformate sind PDF, XML und JSON.</td>
+      <td><b>Anlagen einschließen</td>
+      <td>Gibt an, ob die übermittelten Formulardaten eine Anlage enthalten sollen, die mit dem Formular in der E-Mail übermittelt wird. Unterstützte Anlagenformate sind PDF, XML und JSON.</td>
     </tr>
   </tbody>
 </table>
@@ -128,16 +128,16 @@ So konfigurieren Sie eine Übermittlungsaktion als E-Mail für die Übermittlung
 
 -->
 
-## Eine benutzerdefinierte Dankesnachricht beim Senden des adaptiven Formulars anzeigen {#submit-action-message-ue}
+## Anzeigen einer benutzerdefinierten Dankesnachricht nach der Übermittlung des adaptiven Formulars {#submit-action-message-ue}
 
-Mit der Option Bei Übermittlung können Sie eine Nachricht mit einer Übermittlungsaktion konfigurieren, die bei Übermittlung eines adaptiven Formulars erscheint, um eine Nachricht mit einer Übermittlungsaktion für Ihr Formular zu konfigurieren:
+Mit der Option „Beim Senden“ können Sie eine Nachricht für die Übermittlungsaktion bei der Übermittlung eines adaptiven Formulars konfigurieren. So konfigurieren Sie eine Nachricht für die Übermittlungsaktion für Ihr Formular:
 
-1. Öffnen Sie Ihr adaptives Formular in **Editor**.
-1. Wählen Sie Ihren **[!UICONTROL adaptiven Formularblock]**.
-1. Klicken Sie auf das Symbol ![Eigenschaften](/help/forms/assets/Smock_Properties_18_N.svg).
+1. Öffnen Sie das adaptive Formular im **Editor**.
+1. Wählen Sie Ihren **[!UICONTROL adaptiven Formularblock]** aus.
+1. Klicken Sie auf das Symbol „Eigenschaften“ ![Eigenschaften](/help/forms/assets/Smock_Properties_18_N.svg).
 1. Beim Klicken wird die folgende Option angezeigt:
-   * **[!UICONTROL Beim Senden]**: Mit dem Senden können Sie eine Nachricht anpassen, die beim Senden eines Formulars angezeigt werden soll. Standardmäßig wird dem Benutzer bei erfolgreicher Übermittlung eines Formulars die benutzerdefinierte Meldung „Vielen Dank für die Übermittlung des Formulars“ angezeigt.
-Sie können die Dankesnachricht beim Absenden des Formulars auch anpassen, indem Sie die Option **[!UICONTROL Nachricht anzeigen]** auswählen und Ihre Nachricht im Rich-Text-**Editor) hinzufügen/**.
+   * **[!UICONTROL Beim Senden]**: Mit „Beim Senden“ können Sie eine Nachricht anpassen, die beim Senden eines Formulars angezeigt werden soll. Standardmäßig bekommen die Benutzenden bei erfolgreicher Übermittlung eines Formulars die benutzerdefinierte Nachricht „Vielen Dank für die Übermittlung des Formulars“ angezeigt.
+Sie können die Dankesnachricht bei der Formularübermittlung auch anpassen, indem Sie die Option **[!UICONTROL Nachricht anzeigen]** auswählen und Ihre Nachricht im **Rich-Text-Editor** hinzufügen/bearbeiten.
 
 
 ## Siehe auch

@@ -7,7 +7,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -157,27 +157,27 @@ Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den adaptiven 
 >[!NOTE]
 >
 >
-> Dieser Schritt gilt für Projekte, die mit dem [AEM-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-xwalk) erstellt wurden. Wenn Sie Ihr AEM-Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt haben, können Sie diesen Schritt überspringen.
+> Dieser Schritt gilt für Projekte, die mit dem [AEM-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-xwalk) erstellt wurden. Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt haben, können Sie diesen Schritt überspringen.
 
-Zur Integration:
-1. **Erforderliche Dateien und Ordner hinzufügen**
+So integrieren Sie ihn:
+1. **Hinzufügen von erforderlichen Dateien und Ordnern**
    1. Kopieren Sie die folgenden Ordner und Dateien aus dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) und fügen Sie sie in Ihr AEM-Projekt ein:
 
-      * [Formularblock](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) Ordner
-      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) Ordner
-      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) Ordner
-      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)-Datei
-      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)-Datei
+      * Ordner [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
+      * Ordner [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * Ordner [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
+      * Datei [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
+      * Datei [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 
 1. **Aktualisieren von Komponentendefinitionen und Modelldateien**
-   1. Navigieren Sie zur `../models/_component-definition.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-definition.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+   1. Navigieren Sie zur Datei `../models/_component-definition.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-definition.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
-   1. Navigieren Sie zur `../models/_component-models.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-models.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+   1. Navigieren Sie zur Datei `../models/_component-models.json` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [_component-models.json im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
 1. **Hinzufügen des Formulareditors im Skripteditor**
-   1. Navigieren Sie zur `../scripts/editor-support.js` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [editor-support.js“ im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+   1. Navigieren Sie zur Datei `../scripts/editor-support.js` in Ihrem AEM-Projekt und aktualisieren Sie sie mit den Änderungen in der Datei [editor-support.js im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
 1. **Aktualisieren der ESLint-Konfigurationsdatei**
-   1. Navigieren Sie zur `../.eslintignore` in Ihrem AEM-Projekt und fügen Sie die folgende Codezeile hinzu, um Fehler im Zusammenhang mit der Formularblock-Regel-Engine zu vermeiden:
+   1. Navigieren Sie zur Datei `../.eslintignore` in Ihrem AEM-Projekt und fügen Sie die folgende Code-Zeile hinzu, um Fehler im Zusammenhang mit der Formularblock-Regel-Engine zu vermeiden:
 
       ```
           blocks/form/rules/formula/*
@@ -193,9 +193,9 @@ Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie
 Sie können Ihr AEM-Projekt zwecks WYSIWYG-Authoring im universellen Editor öffnen. Darin können Sie das Projekt bearbeiten und den Abschnitt „Adaptives Formular“ hinzufügen, um Edge Delivery Services-Formulare in AEM-Projektseiten einzuschließen.
 
 1. Fügen Sie den Abschnitt „Adaptives Formular“ zu Ihrer AEM-Projektseite hinzu. Gehen Sie dazu wie folgt vor:
-   1. Navigieren Sie in der Sites-Konsole zu Ihrem AEM-Projekt, wählen Sie die zu bearbeitende Sites-Seite aus und klicken Sie auf **Bearbeiten**. Die AEM-Projektseite wird im universellen Editor zur Bearbeitung geöffnet.
+   1. Navigieren Sie in der Sites-Konsole zu Ihrem AEM-Projekt, wählen Sie die zu bearbeitende Site-Seite aus und klicken Sie auf **Bearbeiten**. Die AEM-Projektseite wird im universellen Editor zur Bearbeitung geöffnet.
 In diesem Fall wird die Seite `index.html` zur Veranschaulichung verwendet.
-   1. Öffnen Sie die Inhaltsstruktur und navigieren Sie zu einem Abschnitt, in dem Sie den Abschnitt für das adaptive Formular hinzufügen möchten.
+   1. Öffnen Sie die Inhaltsstruktur und navigieren Sie zu dem Abschnitt, in dem Sie den Abschnitt „Adaptives Formular“ hinzufügen möchten.
    1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die Komponente **[!UICONTROL Adaptives Formular]** aus der Komponentenliste aus.
 
    ![Inhaltsstruktur](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
@@ -218,12 +218,12 @@ In diesem Fall wird die Seite `index.html` zur Veranschaulichung verwendet.
 
       ![Öffnen von Eigenschaften](/help/edge/docs/forms/assets/component-properties.png)
 
-   1. Vorschau des Formulars anzeigen.
-Im folgenden Screenshot wird das Formular angezeigt, das mittels WYSIWYG-Authoring im AEM-Projekt erstellt wurde:
+   1. Zeigen Sie das Formular in einer Vorschau an.
+ Im folgenden Screenshot wird das Formular angezeigt, das mittels WYSIWYG-Authoring im AEM-Projekt erstellt wurde:
 
       ![Hinzugefügtes Formular](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-      Sobald der Benutzer mit der Vorschau zufrieden ist, kann er die Seite veröffentlichen.
+      Sobald Sie mit der Vorschau zufrieden sind, können Sie die Seite veröffentlichen.
 
       >[!NOTE]
       >

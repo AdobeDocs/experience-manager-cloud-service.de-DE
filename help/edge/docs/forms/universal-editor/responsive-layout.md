@@ -1,13 +1,13 @@
 ---
-title: Grundlegendes zum universellen Editor - Responsiver Modus
-description: In diesem Artikel wird erläutert, wie Sie mit verschiedenen Emulatoren im universellen Editor eine Vorschau von Formularen anzeigen können, um ihr Erscheinungsbild während des Authorings zu visualisieren.
+title: Grundlegendes zum universellen Editor – responsiver Modus
+description: In diesem Artikel wird erläutert, wie Sie mit verschiedenen Emulatoren im universellen Editor eine Vorschau von Formularen anzeigen können, um während des Authorings ihr Erscheinungsbild zu visualisieren.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 2%
+ht-degree: 34%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 2%
 <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
 
 
-Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ermöglicht die Vorschau von Edge Delivery Services Forms mit verschiedenen Emulatoren, um das Erscheinungsbild des Formulars während des Authorings zu sehen.
+Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ermöglicht die Vorschau von Edge Delivery Services Forms mit verschiedenen Emulatoren, um während des Authorings das Erscheinungsbild des Formulars zu sehen.
 
-Der responsive Modus ermöglicht es Entwicklerinnen und Entwicklern, Layouts zu entwerfen, die sich automatisch an verschiedene Bildschirmgrößen anpassen, einschließlich Desktops, Tablets und Mobilgeräten. Der universelle Editor unterstützt Emulatoren für Desktop-, Tablet- und Mobilgeräte. Sie können die Höhe und Breite entsprechend Ihrer Bildschirmgröße festlegen und die folgenden Aktionen ausführen:
+Der responsive Modus ermöglicht es Entwicklerinnen und Entwicklern, Layouts zu entwerfen, die sich automatisch an unterschiedliche Bildschirmgrößen anpassen. Dazu zählen auch Desktops, Tablets und Mobilgeräte. Der universelle Editor unterstützt Emulatoren für Desktops, Tablets und Mobilgeräte. Sie können die Höhe und Breite entsprechend Ihrer Bildschirmgröße festlegen und die folgenden Aktionen ausführen:
 
-* Ausrichtung festlegen
-* Breite und Höhe angeben
-* Ausrichtung ändern
+* Festlegen der Ausrichtung
+* Angeben von Breite und Höhe
+* Ändern der Ausrichtung
 
-## Vorschau von Forms im responsiven Modus für verschiedene Geräte
+## Anzeigen einer Vorschau von Formularen im responsiven Modus für unterschiedliche Geräte
 
 Der universelle Editor bietet ein **Emulator**-Symbol oben rechts im Bildschirm, mit dem Sie Seiten über verschiedene Gerätegrößen hinweg in der Vorschau anzeigen und das Verhalten Ihres responsiven Designs testen können, um ein besseres Benutzererlebnis zu erzielen.
 
-Führen Sie die folgenden Schritte aus, um zu sehen, wie der universelle Editor Formulare in verschiedenen Bildschirmgrößen rendert:
+Führen Sie die folgenden Schritte aus, um zu sehen, wie der universelle Editor Formulare in unterschiedlichen Bildschirmgrößen rendert:
 
 1. Öffnen Sie das Formular im universellen Editor zur Bearbeitung.
 1. Wählen Sie das ![Emulator-Symbol](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} aus, das in der Symbolleiste des universellen Editors verfügbar ist, und klicken Sie auf das Emulator-Symbol, um die Option anzuzeigen.
@@ -39,9 +39,9 @@ Führen Sie die folgenden Schritte aus, um zu sehen, wie der universelle Editor 
 
    ![Responsiver Modus](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
-   Standardmäßig wird der Editor in einem Desktop-Layout geöffnet, wobei Höhe und Breite automatisch vom Browser bestimmt werden. Alternativ können Sie ein Formular auf einem Mobilgerät oder Tablet-Gerät emulieren. Sie können auch die Bildschirmbreite und -höhe für benutzerdefinierte Geräte anpassen.
+   Standardmäßig wird der Editor im Desktop-Layout geöffnet, wobei Höhe und Breite automatisch vom Browser bestimmt werden. Alternativ können Sie ein Formular auf einem Mobilgerät oder einem Tablet emulieren. Sie können auch die Bildschirmbreite und -höhe für benutzerdefinierte Geräte anpassen.
 
-Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorschau von Formularen auf verschiedenen Geräten. In der folgenden Tabelle sind die verfügbaren Emulatortypen zusammen mit den entsprechenden Gerätedarstellungen aufgeführt:
+Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorschau von Formularen auf unterschiedlichen Geräten. In der folgenden Tabelle sind die verfügbaren Emulatortypen zusammen mit den entsprechenden Gerätedarstellungen aufgeführt:
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
@@ -57,16 +57,16 @@ Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorscha
         <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tablet-Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td style="width: 20%">Mobilgeräte</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobile-Emulator" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Mobilgerät</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobilgerät-Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td style="width: 20%">Benutzerdefiniertes Gerät</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Benutzerdefinierter Geräteemulator" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulator für benutzerdefinierte Geräte" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
-Mit dem Symbol **Bildschirmdrehung** können Sie bei der Vorschau eines Formulars auf verschiedenen Geräten zwischen Hoch- und Querformat hin- und herschalten. Damit können Entwickler testen, wie sich das responsive Design an Bildschirmrotationen auf verschiedenen Geräten anpasst.
+Mit dem Symbol **Bildschirmdrehung** können Sie bei der Vorschau eines Formulars auf unterschiedlichen Geräten zwischen Hoch- und Querformat umschalten. Damit können Entwicklerinnen und Entwickler testen, wie sich das responsive Design an Bildschirmdrehungen auf unterschiedlichen Geräten anpasst.
 
 Der universelle Editor unterstützt die verschiedenen Formularlayouts. Weitere Informationen zu den verschiedenen Layouts finden Sie im Abschnitt [Layout](#layout-capabilities)Funktionen.
 

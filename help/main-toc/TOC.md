@@ -376,7 +376,7 @@ ht-degree: 95%
          + [Einschränkungen für „Rückgängig machen“ und „Wiederholen“](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universeller Editor {#universal-editor}
          + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Erstellung](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Veröffentlichung](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Vererbung](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Seitenvorlagen](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -741,7 +741,7 @@ ht-degree: 95%
          + [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung über den OAuth 2.0-Client-Anmeldedatenfluss](/help/forms/aem-forms-salesforce-integration.md)
          + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics 365] Cloud-Services](/help/forms/configure-msdynamics.md)
-         + [Konfigurieren von Salesforce Cloud Services](/help/forms/configure-salesforce.md)
+         + [Konfigurieren von Salesforce-Cloud-Services](/help/forms/configure-salesforce.md)
          + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
@@ -767,8 +767,8 @@ ht-degree: 95%
             + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + Verbinden eines adaptiven Formulars mit Microsoft® SharePoint{#connect-to-sharepoint}
                + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [An SharePoint-Dokumentbibliothek senden](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [An SharePoint-Liste senden](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [Übermitteln an eine SharePoint-Dokumentbibliothek](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [Übermitteln an eine SharePoint-Liste](/help/forms/connect-forms-to-sharepoint-list.md)
                + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
             + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
@@ -784,7 +784,7 @@ ht-degree: 95%
             + [Erstellen einer benutzerdefinierten Sendeaktion](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Konvertieren adaptiver Formulare basierend auf Foundation-Komponenten in auf Kernkomponenten basierenden Formularen mithilfe des Migrationsdienstprogramm-Tools](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [E-Mail-Vorlagen in adaptiven Formularen](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [&#x200B;Veröffentlichung in Experience Manager Forms verwalten](/help/forms/manage-publication.md)
+            + [Verwalten der Veröffentlichung in Experience Manager Forms](/help/forms/manage-publication.md)
             + Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren{#rule-editor-core-components}
                + [Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components.md)
                + [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
@@ -997,7 +997,7 @@ ht-degree: 95%
       + [Konfigurieren der Site-Authentifizierung](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [Funktionen für in Arbeit befindliche Sites](/help/edge/wysiwyg-authoring/wip-features.md)
    + Dokumentenbasiertes Authoring {#document-authoring}
-      + [Authoring](/help/edge/docs/authoring.md)
+      + [Erstellung](/help/edge/docs/authoring.md)
       + [Massenmetadaten](/help/edge/docs/bulk-metadata.md)
       + [Platzhalter](/help/edge/docs/placeholders.md)
       + [Sitemap](/help/edge/developer/sitemap.md)
@@ -1024,7 +1024,7 @@ ht-degree: 95%
       + [Umleitungen](/help/edge/docs/redirects.md)
    + Erstellen von Formularen {#build-forms}
       + [Überblick](/help/edge/docs/forms/overview.md)
-      + [Wie funktioniert Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Funktionsweise von Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Häufig gestellte Fragen](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Dokumentenbasierte Authoring-{#getting-started-edge-delivery-services-forms}
          + [Erstellen Sie Ihr erstes Formular: Schnellstartanleitung mit Google Sheets und Excel](/help/edge/docs/forms/tutorial.md)

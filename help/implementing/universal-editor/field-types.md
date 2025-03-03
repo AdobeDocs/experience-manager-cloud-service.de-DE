@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -43,17 +43,17 @@ Die Modelldefinition ist eine JSON-Struktur, die mit einem Array von Modellen be
 
 Im Abschnitt **[Felder](#fields)** in diesem Dokument finden Sie weitere Informationen zum Definieren des `fields`-Arrays.
 
-Sie können ein Modell auf zwei Arten mit einer Komponente verknüpfen: mit der [Komponentendefinition](#component-definition) oder [über die Instrumentierung.](#instrumentation)
+Sie können ein Modell auf zwei Arten mit einer Komponente verknüpfen: mit der [Komponentendefinition](#component-definition) oder [über die Instrumentierung](#instrumentation).
 
-### Verknüpfen mithilfe der Komponentendefinition {#component-definition}
+### Verknüpfen mit der Komponentendefinition {#component-definition}
 
-Dies ist die bevorzugte Methode zum Verknüpfen des Modells mit der Komponente. Auf diese Weise können Sie den Link zentral in der Komponentendefinition verwalten und Komponenten über Container ziehen.
+Dies ist die bevorzugte Methode zum Verknüpfen des Modells mit der Komponente. Sie können so die Verknüpfung zentral in der Komponentendefinition verwalten und Komponenten per Drag-and-Drop über Container hinweg ziehen.
 
-Schließen Sie einfach die `model`-Eigenschaft im Komponentenobjekt in das `components`-Array in der `component-definition.json` ein.
+Schließen Sie einfach die Eigenschaft `model` in das Komponentenobjekt im Array `components` in der Datei `component-definition.json` ein.
 
-Weitere Informationen finden Sie im Dokument [Komponentendefinition.](/help/implementing/universal-editor/component-definition.md)
+Weitere Informationen finden Sie im Dokument [Komponentendefinition](/help/implementing/universal-editor/component-definition.md).
 
-### Verknüpfen mithilfe von Instrumentierung {#instrumentation}
+### Verknüpfen über die Instrumentierung {#instrumentation}
 
 Um die Modelldefinition mit einer Komponente zu verwenden, kann das Attribut `data-aue-model` verwendet werden.
 
@@ -66,7 +66,7 @@ Um die Modelldefinition mit einer Komponente zu verwenden, kann das Attribut `d
 >Der universelle Editor prüft zunächst, ob ein Modell über die Instrumentierung verknüpft ist, und verwendet dieses Modell, bevor er die Komponentendefinition überprüft. Das bedeutet:
 >
 >* Projekte, bei denen die Verknüpfung mit dem Modell über die Instrumentierung implementiert wurde, funktionieren weiterhin unverändert, ohne dass Änderungen erforderlich sind.
->* Wenn Sie das Modell in der [Komponentendefinition](#component-definition) sowie in der Instrumentierung definieren, wird immer die Instrumentierung verwendet.
+>* Wenn Sie das Modell in der [Komponentendefinition](#component-definition) und in der Instrumentierung definieren, wird immer die Instrumentierung verwendet.
 
 ## Laden einer Modelldefinition {#loading-model}
 
