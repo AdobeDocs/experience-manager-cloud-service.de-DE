@@ -4,10 +4,10 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '1846'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 97%
 Im heutigen digitalen Zeitalter sind benutzerfreundliche Formulare für jede Organisation schlicht unverzichtbar. Edge Delivery Services-Formulare werden mit dem universellen Editor erstellt, der WYSIWYG(What You See Is What You Get)-Funktionen bietet. Dieser verfügt über eine moderne, intuitive Benutzeroberfläche zur effizienten Formularerstellung.
 
 AEM Forms umfasst einen Block, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Edge Delivery Services-Formulare erstellen können, um Daten zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt vorkonfiguriert mit einem adaptiven Formularblock erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [den adaptiven Formularblock einem bestehenden AEM-Projekt hinzufügen](#add-adaptive-forms-block-to-your-existing-aem-project).
+
+![GitHub-Repository-Workflow](/help/edge/assets/repo-workflow.png)
 
 Dieses Tutorial führt Sie durch die Erstellung, Vorschau und Veröffentlichung Ihres eigenen Formulars mit einem neuen oder vorhandenen Adobe Experience Manager Sites-Projekt mithilfe der WYSIWYG-Bearbeitungsfunktion des universellen Editors.
 
@@ -252,6 +254,10 @@ In diesem Fall wird die Seite `index.html` zur Veranschaulichung verwendet.
    ![Indexseite](/help/edge/docs/forms/assets/publish-index-page.png)
 
 Sie können die Edge Delivery Services-Formulare gestalten, indem Sie die `.css`- und `.js`-Dateien im adaptiven Formularblock bearbeiten und [eine lokale AEM-Entwicklungsumgebung einrichten](#set-up-local-aem-development-environment), um die Änderungen sofort in Ihrem Browser anzuzeigen.
+
+>[!NOTE]
+>
+> Sie können auch [ein eigenständiges Formular im universellen Editor erstellen und es in Edge Delivery Services veröffentlichen](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 ## Einrichten einer lokalen AEM-Entwicklungsumgebung
 

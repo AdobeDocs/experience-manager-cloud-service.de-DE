@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 95%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 95%
          + [Schützen der Forms: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
          + [Überwachen der Formularleistung: Handbuch zur Überwachung der realen Verwendung](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Bereitstellen von Forms auf Edge: Veröffentlichungshandbuch für Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG-Authoring {#universal-editor}
          + [Einführung in den universellen Editor von Forms für Edge Delivery Services - vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Erstellen Ihres ersten Formulars mit dem universellen Editor - Tutorial „Schritt für Schritt“](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Beginnen des Authorings mit dem universellen Editor - Tutorial Schritt für Schritt](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Erstellen des ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Handbuch zur Benutzeroberfläche des universellen Editors: Tools, Funktionen und Navigation - Erklärung](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Mobiles Arbeiten mit Forms: Responsives Design im universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Design Beautiful Forms: Stil- und Design-Anleitung für den universellen Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

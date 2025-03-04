@@ -7,8 +7,8 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: ht
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Adobe Experience Manager bietet und unterstützt mehrere Editoren zur Formularer
 
 Der universelle Editor ist ein vielseitiger visueller Editor mit WYSIWYG(What You See Is What You Get)-Funktion bietet, der eine intuitive Formularerstellung ermöglicht. Es wird empfohlen, beim Erstellen neuer Formulare den universellen Editor zu verwenden, da dieser ein modernes, benutzerfreundliches Design und eine praktische Drag-and-Drop-Oberfläche bietet.
 
-Um Formulare mit dem universellen Editor zu erstellen, werden die in der AEM-Umgebung verfügbaren Edge Delivery Services-Vorlagen verwendet. Diese Formulare übernehmen ihr Look-and-Feel von den Konfigurationen im Edge Delivery Services-GitHub-Repository. [Eine Verbindung zwischen Ihrer AEM-Umgebung und dem Edge Delivery Services-GitHub-Repository](/help/edge/docs/forms/publishing-forms.md) wird hergestellt, um die Veröffentlichung dieser Formulare in Edge Delivery Services zu ermöglichen.
+Um Formulare mit dem universellen Editor zu erstellen, werden die in der AEM-Umgebung verfügbaren Edge Delivery Services-Vorlagen verwendet. Diese Formulare übernehmen ihr Look-and-Feel von den Konfigurationen im Edge Delivery Services-GitHub-Repository. [Eine Verbindung zwischen Ihrer AEM-Umgebung und dem Edge Delivery Services-GitHub-Repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) wird hergestellt, um die Veröffentlichung dieser Formulare in Edge Delivery Services zu ermöglichen.
 
 Ausführliche Anweisungen zum Authoring mit dem universellen Editor finden Sie unter [Inhaltserstellung mit dem universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring).
 
