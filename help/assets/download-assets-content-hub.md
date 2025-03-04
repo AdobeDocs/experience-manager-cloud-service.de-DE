@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie Assets aus dem Content Hub-Portal herunterladen
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 50%
+source-wordcount: '778'
+ht-degree: 49%
 
 ---
 
@@ -128,7 +128,7 @@ Weitere Informationen über [Anzeigen und Verwalten von Ausgabedarstellungen in 
 
 >[!NOTE]
 > 
-* Um frühzeitig auf das Dynamic Media-Konto zugreifen zu können, [erstellen und senden Sie einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+* Die Funktion für dynamische und smarte Zuschnitte befindet sich in der Early-Adopter-Phase. Um Zugriff auf die Funktion zu erhalten, [erstellen und senden Sie einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 * Neu eingegliederte Kundinnen und Kunden auf [Open-API-Services für Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) müssen ihre vorhandenen Bildvorgaben überarbeiten, um sie zu genehmigen.
 
 
