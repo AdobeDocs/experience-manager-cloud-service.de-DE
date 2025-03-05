@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 91%
@@ -50,7 +50,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
 * obere Symbolleiste: für wichtige Informationen und Aktionen
    * ein Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
    * Informationen zum Modell und Ordner
-   * Links zur [Vorschau (wenn das URL-Standardmuster für die Vorschau für das Modell konfiguriert ist)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+   * Links zur [Vorschau (wenn das URL-Standardmuster für die Vorschau für das Modell konfiguriert ist)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
    * die Aktionen [Veröffentlichen](#publish-content-fragment) und [Veröffentlichung aufheben](#unpublish-content-fragment)
    * eine Option zum Anzeigen aller **übergeordneten Verweise** (Verknüpfungssymbol)
    * der **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** des Fragments und Informationen über die letzte Speicherung
@@ -508,7 +508,7 @@ Der Inhaltsfragmenteditor bietet Autorinnen und Autoren die Möglichkeit, die Vo
 Für die Verwendung dieser Funktion müssen Sie zunächst wie folgt vorgehen:
 
 * Arbeiten Sie mit Ihrem IT-Team zusammen, um die externe Frontend-Anwendung einzurichten, die das Inhaltsfragment rendert, indem sie die JSON-Ausgabe nutzt.
-* Wenn die externe Frontend-Anwendung eingerichtet ist, muss das **Standard-URL-Vorschaumuster** als [-Eigenschaft des entsprechenden Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) definiert werden.
+* Wenn die externe Frontend-Anwendung eingerichtet ist, muss das **Standard-URL-Vorschaumuster** als [-Eigenschaft des entsprechenden Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties) definiert werden.
 
 Wenn die URL definiert wurde, wird die Schaltfläche **Vorschau** aktiv. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
 

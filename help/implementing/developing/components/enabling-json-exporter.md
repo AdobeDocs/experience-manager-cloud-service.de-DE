@@ -4,7 +4,7 @@ description: Komponenten können angepasst werden, um einen JSON-Export ihrer In
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 100%
@@ -79,6 +79,6 @@ Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und de
 ## Verwandte Dokumentation {#related-documentation}
 
 * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)

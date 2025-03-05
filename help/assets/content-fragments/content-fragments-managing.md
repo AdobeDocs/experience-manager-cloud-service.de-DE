@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die **Assets-Konsole** verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die **Assets-Konsole** verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
 >
 >Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
@@ -198,7 +198,7 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
    * **Geändert**: orange
    * **Deaktiviert**: rot
 
-* Mit einer Schaltfläche können Sie den **neuen Editor testen**, indem Sie den *neuen* [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) direkt öffnen. Auf ihn können Sie über die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) zugreifen.
+* Mit einer Schaltfläche können Sie den **neuen Editor testen**, indem Sie den *neuen* [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) direkt öffnen. Auf ihn können Sie über die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) zugreifen.
 
   >[!WARNING]
   >
@@ -313,7 +313,7 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 >* Im Fragmenteditor eingegeben worden
 >* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
->Die im neuen Inhaltsfragment[Editor eingegebenen Kommentare werden ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment) angezeigt.
+>Keine von beiden zeigen die im neuen [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment) eingegebenen Kommentare an.
 
 Zum Beispiel:
 

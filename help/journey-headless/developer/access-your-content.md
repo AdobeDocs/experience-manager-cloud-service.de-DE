@@ -5,8 +5,8 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 100%
 
@@ -375,7 +375,7 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
    * [Beispielabfrage – alle Städte mit einer gegebenen Variante](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
-   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Verstehen von Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors))
 * [Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Dispatcher](/help/headless/deployment/dispatcher-caching.md)

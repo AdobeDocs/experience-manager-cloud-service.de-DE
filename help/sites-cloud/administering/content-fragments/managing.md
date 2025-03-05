@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 99%
+source-wordcount: '2629'
+ht-degree: 94%
 
 ---
 
@@ -22,9 +22,18 @@ ht-degree: 99%
 
 Erfahren Sie, wie Sie Ihre **Inhaltsfragmente** in Adobe Experience Manager (AEM) as a Cloud Service über die dedizierte [Inhaltsfragmentkonsole](#content-fragments-console) und den [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor) verwalten. Diese Inhaltsfragmente können als Grundlage für Ihren Headless-Inhalt oder für die Seitenbearbeitung verwendet werden.
 
+>[!IMPORTANT]
+>
+>Verschiedene Funktionen der Inhaltsfragmentkonsole sind über das Early-Adopter-Programm verfügbar.
+>
+>Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
->Ihr Projekt-Team kann die Konsole und den Editor bei Bedarf anpassen. Weitere Details hierzu finden Sie unter [Anpassen von Inhaltsfragmentkonsole und Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md).
+>Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Inhaltsfragmente angezeigt werden. Für andere Bedienfelder siehe:
+>
+>* [Verwalten von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [Anzeigen und Verwalten von Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese für Folgendes verwenden:
 
@@ -45,41 +54,13 @@ Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert h
 >
 >Inhaltsfragmente werden als **Assets** gespeichert. Sie werden hauptsächlich über die **Inhaltsfragment**-Konsole verwaltet, können jedoch auch über die [Assets](/help/assets/content-fragments/content-fragments-managing.md)-Konsole verwaltet werden.
 
-## Die Inhaltsfragmentkonsole {#content-fragments-console}
+## Grundlegende Struktur und Handhabung von Inhaltsfragmenten in der Konsole {#basic-structure-handling-content-fragments-console}
 
-Die Inhaltsfragmentkonsole dient der Verwaltung, Suche und Erstellung von Inhaltsfragmenten. Sie wurde für die Verwendung in einem Headless-Kontext optimiert, wird aber auch beim Erstellen von Inhaltsfragmenten für die Seitenbearbeitung verwendet.
+Sie können das ganz linke Bedienfeld der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) verwenden, um **Inhaltsfragmente** als Ressourcentyp zum Anzeigen, Durchsuchen und Verwalten auszuwählen:
 
-Die Inhaltsfragmentkonsole bietet direkten Zugriff auf Ihre Fragmente und zugehörige Aufgaben. Die Konsole kann direkt von der obersten Ebene der globalen Navigation aus aufgerufen werden.
-
-![Globale Navigation – Inhaltsfragmentkonsole](assets/cf-managing-global-navigation.png)
-
-Weitere Einzelheiten finden Sie unter:
-
-* [Grundlegende Struktur und Handhabung der Inhaltsfragmentkonsole](#basic-structure-handling-content-fragments-console)
-
-* [Die bereitgestellten Informationen zu Ihren Inhaltsfragmenten](#information-content-fragments)
-
-* [Aktionen für ein Inhaltsfragment in der Inhaltsfragmentkonsole](#actions-selected-content-fragment)
-
-* [Auswählen der Spalten, die in der Konsole angezeigt werden](#select-columns-console)
-
-* [Suchen und Filtern in der Inhaltsfragmentkonsole](#filtering-fragments)
-
-* In dieser Konsole stehen verschiedene [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) zur Verfügung
-
->[!NOTE]
->
->In dieser Konsole werden nur Inhaltsfragmente angezeigt. Andere Asset-Typen wie Bilder und Videos werden nicht angezeigt.
-
->[!CAUTION]
->
->Diese Konsole ist *nur* online in Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
-
-### Grundlegende Struktur und Handhabung der Konsole {#basic-structure-handling-content-fragments-console}
+![Inhaltsfragmentkonsole – Navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 Wenn Sie **Inhaltsfragmente** auswählen, wird die Konsole in einer neuen Registerkarte geöffnet.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Inhaltsfragmentkonsole – Übersicht](assets/cf-managing-console-overview.png)
 
@@ -90,10 +71,11 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Zeigt auch Ihre IMS-Organisation an
    * Bietet verschiedene [Aktionen](#actions-unselected)
 * Das linke Bedienfeld
+   * Hier können Sie Links zu den Bereichen komprimieren oder erweitern
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
-   * Sie können zwischen der Anzeige von Inhaltsfragmenten oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) wählen.
+   * Neben Inhaltsfragmenten können Sie auch [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen. Sie können auch Links zu den Bedienfeldern komprimieren oder erweitern
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.
@@ -105,7 +87,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
          * Informationen zu Verweisen anzeigen,
          * Informationen zu Sprachversionen des Fragments anzeigen.
       * [Bestimmte andere Informationsfelder](#information-content-fragments) über ein Inhaltsfragment können für [Schnelles Filtern](#fast-filtering) verwendet werden:
-         * Auswählen eines Wertes in der Spalte, der sofort als Filter angewendet wird
+         * Wählen Sie einen Wert in der Spalte aus und er wird sofort als Filter angewendet
          * „Schnelles Filtern“ wird nur für die Spalten **Modell**, **Status**, **Geändert von**, **Tags** und **Veröffentlicht von** unterstützt.
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
          * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
@@ -114,58 +96,9 @@ Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist
       * Ein oder mehrere Fragmente für weitere [Aktionen](#actions-selected-content-fragment) wählen
    * Das Feld [Suchen](#searching-fragments) verwenden
    * Den [Filterbereich](#filtering-fragments) öffnen
+   * In dieser Konsole stehen verschiedene [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) zur Verfügung
 
-### Aktionen {#actions}
-
-In der Konsole gibt es eine Reihe von Aktionen, die Sie entweder direkt oder nach Auswahl eines bestimmten Fragments verwenden können:
-
-* Verschiedene Aktionen sind direkt [von der Konsole aus verfügbar](#actions-unselected)
-* Sie können [ein oder mehrere Inhaltsfragmente auswählen, um entsprechende Aktionen anzuzeigen](#actions-selected-content-fragment)
-
-#### Aktionen (nicht ausgewählt) {#actions-unselected}
-
-Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhaltsfragment auszuwählen:
-
-* Ein neues Inhaltsfragment **[erstellen](#creating-a-content-fragment)**
-* Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
-* Die Inhaltsfragmente [durchsuchen](#searching-fragments)
-* [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#select-columns-console)
-* Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der **Assets**-Konsole zu öffnen
-
-  >[!NOTE]
-  >
-  >Die **Assets-Konsole** wird verwendet, um auf Assets wie Bilder und Videos zuzugreifen. Auf die Konsole kann wie folgt zugegriffen werden:
-  >
-  >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
-  >* direkt über das globale **Navigationsfenster**
-
-#### Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
-
-Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
-
-<!-- CQDOC-21349: screenshot -->
-
-![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[In neuem Editor öffnen](#editing-the-content-of-your-fragment)**
-* **[Öffnen](/help/assets/content-fragments/content-fragments-variations.md)** (im ursprünglichen Editor)
-* **[Veröffentlichen](#publishing-and-previewing-a-fragment)** (und **[Veröffentlichung rückgängig machen](#unpublishing-a-fragment)**)
-* **[Tags verwalten](#manage-tags)**
-* **[Kopieren](/help/assets/manage-digital-assets.md)**
-* **[Verschieben](/help/assets/manage-digital-assets.md)**
-* **[Umbenennen](/help/assets/manage-digital-assets.md)**
-* **[Löschen](#deleting-a-fragment)**
-* **[Ersetzen](#find-and-replace)**
-
->[!NOTE]
->
->Verwenden Sie die Option **Öffnen**, um das ausgewählte Fragment im *ursprünglichen* Editor zu öffnen.
-
->[!NOTE]
->
->Aktionen wie Veröffentlichen, Veröffentlichung aufheben, Löschen, Verschieben, Umbenennen und Kopieren lösen einen asynchronen Vorgang aus. Der Fortschritt dieses Vorgangs kann über die AEM-Benutzeroberfläche für asynchrone Vorgänge überwacht werden.
-
-### Die bereitgestellten Informationen zu Ihren Inhaltsfragmenten {#information-content-fragments}
+## Die bereitgestellten Informationen zu Ihren Inhaltsfragmenten {#information-content-fragments}
 
 Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von Informationen zu Ihren Inhaltsfragmenten. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
 
@@ -214,6 +147,53 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
 
+## Aktionen {#actions}
+
+In der Konsole gibt es eine Reihe von Aktionen, die Sie entweder direkt oder nach Auswahl eines bestimmten Fragments verwenden können:
+
+* Verschiedene Aktionen sind direkt [von der Konsole aus verfügbar](#actions-unselected)
+* Sie können [ein oder mehrere Inhaltsfragmente auswählen, um entsprechende Aktionen anzuzeigen](#actions-selected-content-fragment)
+
+### Aktionen (nicht ausgewählt) {#actions-unselected}
+
+Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhaltsfragment auszuwählen:
+
+* Ein neues Inhaltsfragment **[erstellen](#creating-a-content-fragment)**
+* Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
+* Die Inhaltsfragmente [durchsuchen](#searching-fragments)
+* [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#select-columns-console)
+* Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der **Assets**-Konsole zu öffnen
+
+  >[!NOTE]
+  >
+  >Die **Assets-Konsole** wird verwendet, um auf Assets wie Bilder und Videos zuzugreifen. Auf die Konsole kann wie folgt zugegriffen werden:
+  >
+  >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
+  >* direkt über das globale **Navigationsfenster**
+
+### Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
+
+Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
+
+![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[In neuem Editor öffnen](#editing-the-content-of-your-fragment)**
+* **[Öffnen](/help/assets/content-fragments/content-fragments-variations.md)** (im ursprünglichen Editor)
+* **[Veröffentlichen](#publishing-and-previewing-a-fragment)** (und **[Veröffentlichung rückgängig machen](#unpublishing-a-fragment)**)
+* **[Tags verwalten](#manage-tags)**
+* **[Kopieren](/help/assets/manage-digital-assets.md)**
+* **[Verschieben](/help/assets/manage-digital-assets.md)**
+* **[Umbenennen](/help/assets/manage-digital-assets.md)**
+* **[Löschen](#deleting-a-fragment)**
+* **[Ersetzen](#find-and-replace)**
+
+>[!NOTE]
+>
+>Verwenden Sie die Option **Öffnen**, um das ausgewählte Fragment im *ursprünglichen* Editor zu öffnen.
+
+>[!NOTE]
+>
+>Aktionen wie Veröffentlichen, Veröffentlichung aufheben, Löschen, Verschieben, Umbenennen und Kopieren lösen einen asynchronen Vorgang aus. Der Fortschritt dieses Vorgangs kann über die AEM-Benutzeroberfläche für asynchrone Vorgänge überwacht werden.
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
@@ -221,7 +201,7 @@ Vor der Erstellung des Inhaltsfragments muss das zugrunde liegende Inhaltsfragme
 
 ### Erstellen eines Inhaltsmodells {#creating-a-content-model}
 
-[Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) müssen vor dem Erstellen von Inhaltsfragmenten mit strukturiertem Inhalt aktiviert und erstellt werden.
+[Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) müssen vor dem Erstellen von Inhaltsfragmenten mit strukturiertem Inhalt aktiviert und erstellt werden.
 
 ### Erstellen eines Inhaltsfragments {#creating-a-content-fragment}
 
@@ -248,7 +228,7 @@ So erstellen Sie ein Inhaltsfragment:
 
 ## Status von Inhaltsfragmenten {#statuses-content-fragments}
 
-Während seines Bestehens kann ein Inhaltsfragment mehrere Status haben, wie in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) und dem [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) gezeigt:
+Während seines Bestehens kann ein Inhaltsfragment mehrere Status haben, wie in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) und dem [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) gezeigt:
 
 * **Neu** (Grau)
 Im Inhaltsfragmenteditor wurde ein neues Inhaltsfragment erstellt, es hat jedoch keinen Inhalt und wurde nie bearbeitet oder geöffnet.
@@ -319,7 +299,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
 >[!CAUTION]
 >
->Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model).
+>Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 >
 >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
@@ -382,8 +362,6 @@ Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den gewünschten S
 
 ## Suchen und Ersetzen {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 Die Aktion **Ersetzen** ist verfügbar (in der oberen Symbolleiste), um den angegebenen Text in den ausgewählten Inhaltsfragmenten zu suchen und zu ersetzen.
 
 ![Suchen und Ersetzen](assets/cf-managing-find-replace.png)
@@ -395,8 +373,6 @@ Vor dem Ersetzen werden die Validierungskriterien überprüft und Sie werden üb
 >Die Aktion „Suchen und Ersetzen“ kann nur für maximal 20 ausgewählte Inhaltsfragmente (gleichzeitig) ausgeführt werden.
 >
 >Wenn Sie mehr als 20 Inhaltsfragmente auswählen, wird die Nachricht **Suchen und Ersetzen ist nicht möglich** angezeigt.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
 
@@ -464,8 +440,6 @@ Der Filterbereich bietet folgende Optionen:
 
 Nach der Auswahl werden die Optionen **Filtern nach** angezeigt (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Zum Beispiel:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Inhaltsfragmentkonsole – Filtern](assets/cf-managing-console-filter.png)
 
 ### Schnelles Filtern {#fast-filtering}
@@ -488,13 +462,9 @@ Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entspre
 
 Das Suchfeld unterstützt die Volltextsuche. Geben Sie Ihre Suchbegriffe in das Suchfeld ein:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Konsole „Inhaltsfragmente“ – Suchen](assets/cf-managing-console-search-specification.png)
 
 Die ausgewählten Ergebnisse werden bereitgestellt:
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Konsole „Inhaltsfragmente“ – Suchergebnisse](assets/cf-managing-console-search-results.png)
 

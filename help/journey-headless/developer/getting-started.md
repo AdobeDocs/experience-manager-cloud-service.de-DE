@@ -5,8 +5,8 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
 
@@ -295,7 +295,7 @@ Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fort
 * [Multi Site Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
 * [AEM-Workflows](/help/sites-cloud/authoring/workflows/overview.md): Technische Dokumentation zur Automatisierung von Workflows in AEM
 * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md): Technische Dokumentation für Inhaltsfragmente.
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.
 * [Technische Dokumentation zu GraphQL](https://graphql.org): Die GraphQL-Definition (externer Link).
 * [GraphQL-API](/help/headless/graphql-api/content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden.
 * [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden.

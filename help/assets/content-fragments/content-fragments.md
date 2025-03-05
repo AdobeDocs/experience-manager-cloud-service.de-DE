@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
 workflow-type: tm+mt
-source-wordcount: '2231'
-ht-degree: 100%
+source-wordcount: '2247'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die **Assets-Konsole** verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
+>Inhaltsfragmente und Inhaltsfragmentmodelle werden jetzt hauptsächlich mit der **[Inhaltsfragmente“-](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, Inhaltsfragmente können jedoch weiterhin über die **Assets**-Konsole und Inhaltsfragmentmodelle über die **Tools**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die Konsolen {**}Assets** und **Tools“ beschrieben.**
 >
 >Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 

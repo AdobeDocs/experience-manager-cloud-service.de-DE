@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
@@ -271,7 +271,7 @@ Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig d
 
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) – die Einführungsseite für Inhaltsfragmente
    * [Inhaltsfragmente im Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) – Aktivieren der Funktion „Inhaltsfragment“ im Konfigurations-Browser
-   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – Erstellen und Bearbeiten von Inhaltsfragmentmodellen
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) – Erstellen und Bearbeiten von Inhaltsfragmentmodellen
    * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md) – Erstellen und Bearbeiten von Inhaltsfragmenten. Diese Seite führt Sie zu anderen detaillierten Abschnitten.
 * [AEM-GraphQL-Schemata](access-your-content.md) – So setzt GraphQL Modelle um
 * [Beispielstruktur für Inhaltsfragmente](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
