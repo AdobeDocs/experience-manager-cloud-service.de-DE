@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 100%
+source-wordcount: '1972'
+ht-degree: 98%
 
 ---
 
@@ -1886,6 +1886,10 @@ Für die Bereitstellung der URL an ein Dynamic Media-Asset
 * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Bildverweis](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
 * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Mehrere Verweise](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+Für die Bereitstellung von Remote-Assets, die nicht lokal in der aktuellen AEM-Instanz vorhanden sind, über den Inhaltsfragment-Editor.
+
+* Siehe [Beispielabfrage für Dynamic Media zur Unterstützung von OpenAPI-Assets (Remote-Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## Die Struktur des Beispielinhaltsfragments (verwendet mit GraphQL) {#content-fragment-structure-graphql}
 

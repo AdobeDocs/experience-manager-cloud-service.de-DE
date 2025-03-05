@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 99%
+source-wordcount: '2847'
+ht-degree: 91%
 
 ---
 
@@ -312,10 +312,11 @@ Alternativ können Sie [**Neues Fragment erstellen** auswählen, um das Dialogfe
 
 #### Auf Bilder verweisen {#reference-images}
 
-In **Inhaltsverweis**-Feldern haben Sie beide Möglichkeiten:
+In **Inhaltsreferenz**-Feldern können Sie:
 
-* Auf Assets verweisen, die bereits im Repository vorhanden sind
-* Sie können sie direkt in das Feld hochladen, wodurch es nicht nötig ist, die **Assets**-Konsole zum Hochladen zu verwenden
+* Referenzieren von Assets, die bereits in Ihrem lokalen Repository vorhanden sind
+* Referenzieren von Assets, die sich in einem Remote-Repository befinden
+* Laden Sie Assets direkt in das Feld hoch. Dadurch wird vermieden, dass Sie die **Assets**-Konsole zum Hochladen verwenden müssen
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ In **Inhaltsverweis**-Feldern haben Sie beide Möglichkeiten:
   >* Es muss über einen definierten **Stammpfad** verfügen (im [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Dieser gibt an, wo das Bild gespeichert wird.
   >* Es muss ein **Bild** entsprechend der Liste der akzeptierten Inhaltstypen enthalten
 
-Um ein Asset hinzuzufügen, haben Sie folgende Möglichkeiten:
+##### Lokale Assets referenzieren {#reference-local-assets}
+
+Um auf ein lokales Asset zu verweisen, haben Sie folgende Möglichkeiten:
 
 * ziehen Sie die neue Asset-Datei direkt (z. B. aus Ihrem Dateisystem) in das Feld **Inhaltsverweis**
 * verwenden Sie die Aktion **Asset hinzufügen** und wählen Sie anschließend entweder **Assets durchsuchen** oder **Hochladen** aus, um die entsprechende Auswahl zu öffnen, die Sie verwenden möchten:
 
   ![Inhaltsfragmenteditor – Asset-Optionen hinzufügen](assets/cf-authoring-add-asset-options.png)
+
+##### Remote-Assets referenzieren {#reference-remote-assets}
+
+So verweisen Sie auf Remote-Assets:
+
+1. Geben Sie das Remote-**Repository** beim Suchen nach Assets an:
+
+   ![Inhaltsfragment-Editor - Asset aus Remote-](assets/cf-authoring-remote-asset-01.png) auswählen
+
+2. Nach der Auswahl wird der Speicherort in den Asset-Informationen angezeigt:
+
+   ![Inhaltsfragment-Editor - Asset aus Remote-Repository](assets/cf-authoring-remote-asset-02.png)
+
+###### Remote Assets - Einschränkungen {#remote-assets-limitations}
+
+Es gibt einige Einschränkungen beim Referenzieren von Remote-Assets:
+
+* Nur [genehmigte](/help/assets/approve-assets.md) Assets sind in einem Remote-Asset-Repository für Referenzzwecke verfügbar.
+
+* Wenn ein referenziertes Asset aus dem Remote-Repository entfernt wird, führt dies zu einer fehlerhaften Inhaltsreferenz.
+
+* Alle Repositorys für Bereitstellungs-Assets, auf die der Benutzer Zugriff hat, stehen zur Auswahl. Die verfügbare Liste kann nicht beschränkt werden.
+
+* Sowohl die AEM-Instanz als auch die Remote-Asset-Repository-Instanz müssen dieselbe Version aufweisen.
+
+* Es werden keine Asset-Metadaten über die Verwaltungs-API oder die Bereitstellungs-API bereitgestellt. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen:
+
+   * Die einzelnen Asset-Metadaten: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * Abrufen von Massenmetadateninformationen mit der Such-API (experimentell): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>Siehe auch [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten - Dynamic Media für die Unterstützung von OpenAPI-Assets (Remote-Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Auf Seiten verweisen {#reference-pages}
 

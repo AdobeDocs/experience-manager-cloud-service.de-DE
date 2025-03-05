@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 100%
+source-wordcount: '6021'
+ht-degree: 96%
 
 ---
 
@@ -1084,6 +1084,110 @@ query allTeams {
   }
 } 
 ```
+
+## Unterstützung von Dynamic Media für OpenAPI-Assets (Remote Assets) {#dynamic-media-for-openapi-asset-support}
+
+[Remote-Assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets)-Integration ermöglicht es Ihnen, im Inhaltsfragment-Editor auf Assets zu verweisen, die nicht lokal in der aktuellen AEM-Instanz sind. Sie wird von Dynamic Media für die OpenAPI-Asset-Unterstützung im Inhaltsfragment-Editor und in GraphQL JSON implementiert.
+
+### Beispielabfrage für Dynamic Media zur OpenAPI-Asset-Unterstützung (Remote Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+Im Folgenden finden Sie eine Beispielanfrage:
+
+* So veranschaulichen Sie das Konzept der Referenzierung von Remote-Assets
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* Die Antwort
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**Einschränkungen**
+
+Die aktuellen Einschränkungen sind:
+
+* Die Bereitstellung von GraphQL unterstützt nur `repositoryId` und `assetId` (andere Asset-Metadaten werden nicht zurückgegeben)
+
+  >[!NOTE]
+  >
+  >Die vollständige URL muss dann clientseitig basierend auf der „Asset-Bereitstellungs[API“ erstellt ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
+* Nur *Genehmigte* Assets stehen für Referenzen aus den Remote-Repositorys zur Verfügung
+* Wenn ein Asset, auf das verwiesen wird, aus dem Remote-Repository entfernt wird, führt dies zu einer beschädigten Asset-Referenz für Inhaltsfragmente.
+* Alle Repositorys für Bereitstellungs-Assets, auf die der Benutzer Zugriff hat, stehen zur Auswahl. Die verfügbare Liste kann nicht beschränkt werden.
+* Sowohl die AEM-Instanz als auch die Remote-Asset-Repository-Instanz müssen dieselbe Version aufweisen.
+* Es werden keine Asset-Metadaten über die [Verwaltungs-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de) und [Bereitstellungs-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/) bereitgestellt. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
 
 ## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
 
