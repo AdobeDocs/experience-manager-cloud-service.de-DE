@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
 
 # Forms Submission Service mit Edge Delivery Services Forms
+
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+
 
 Mit dem Forms-Übermittlungs-Service können Sie Daten aus den Formularübermittlungen in jeder Tabelle speichern, z. B. in OneDrive, SharePoint oder Google Sheets, sodass Sie einfach auf Formulardaten in Ihrer bevorzugten Tabellenplattform zugreifen und diese verwalten können.
 
@@ -84,7 +87,7 @@ Führen Sie die folgenden Schritte aus, um den Forms Submission Service mit den 
 
    ![Verknüpfen einer Tabelle](/help/forms/assets/form-submission-sheet-linking.png)
 
-1. Zeigen Sie eine Vorschau an und veröffentlichen Sie die Tabelle mithilfe der [AEM Sidekick](https://www.aem.live/docs/sidekick) mit dem aktualisierten Formularübermittlungs-Service.
+1. Zeigen Sie eine Vorschau an und veröffentlichen Sie die Tabelle mit dem [AEM Sidekick](https://www.aem.live/docs/sidekick) mit aktualisiertem Formularübermittlungs-Service.
 
 >[!NOTE]
 >
@@ -100,9 +103,9 @@ Sie können auch eine **POST**-Anfrage an das Formular senden, um das `incoming`
 > * Geben Sie das `incoming` für die Adobe Experience Manager-`forms@adobe.com` frei und gewähren Sie Bearbeitungszugriff.
 > * Anzeigen einer Vorschau und Veröffentlichen des `incoming` im Sidekick.
 
-Informationen zum Formatieren der POST-Anfrage für die Einrichtung Ihres Blatts finden Sie in der [API-Dokumentation](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Sie können sich das folgende Beispiel ansehen:
+Informationen zum Formatieren der POST-Anfrage zur Einrichtung Ihres Blatts finden Sie in der [API-Dokumentation](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Sie können sich das folgende Beispiel ansehen:
 
-Sie können Tools wie cURL oder Postman verwenden, um diese POST-Anfrage auszuführen, wie unten gezeigt.
+Sie können Tools wie curl oder Postman verwenden, um diese POST-Anfrage auszuführen, wie unten gezeigt.
 
 * **Verwenden von Postman**:
 
@@ -174,7 +177,7 @@ Führen Sie beispielsweise den folgenden Befehl nach dem Ersetzen im Terminal od
     
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
     —Header „Content-Type: application/json“ ^
-    —Header „x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
+    —Header „x-adobe-routing: tier=live,bucket=main—[site/repository]—[organisation]&quot; ^
     —data &quot;{\„data\&quot;: {\„startDate\&quot;: \„2025-01-10\&quot;, \„endDate\&quot;: \„2025-01-25\&quot;, \„destination\&quot;: \„Australia\&quot;, \„class\&quot; \„Erste Klasse\&quot;, \„budget\&quot;: \„2000\&quot;, \„amount\&quot;: \„1000000\&quot;, \„name\&quot;: \„Joe\&quot;, \„age\&quot;: \„35\&quot;, \„subscribe\&quot;: null, \„email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;

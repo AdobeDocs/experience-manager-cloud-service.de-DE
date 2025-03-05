@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 97%
+source-wordcount: '1505'
+ht-degree: 94%
 
 ---
 # Snippets {#snippets}
@@ -252,3 +252,25 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 >
 >* der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zum visuellen Bearbeiten von Headless-Inhalten.
 >* der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung von Headless-Inhalten
+
+## universellen Editor{#ue-see-also}
+
+* [Erstellen des ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Dynamisches Verhalten zu Forms hinzufügen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Konfigurieren und Anpassen von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Veröffentlichen und Bereitstellen von Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: Styling und Design Anleitung](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Erstellen benutzerdefinierter Formularkomponenten](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Forms vor Spam schützen: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## Siehe auch {#see-more-eds-forms}
+
+* [Erste Schritte mit Edge Delivery Services für AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Erstellen eines Formulars mit Google Tabellen oder Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Einrichten von Google Tabellen- oder Microsoft Excel-Dateien, um Daten zu akzeptieren](/help/edge/docs/forms/submit-forms.md)
+* [Veröffentlichen des Formulars und Starten der Datenerfassung](/help/edge/docs/forms/publish-forms.md)
+* [Anpassen des Erscheinungsbilds von Formularen](/help/edge/docs/forms/style-theme-forms.md)
+* [Hinzufügen wiederholbarer Abschnitte zu einem Formular](/help/edge/docs/forms/repeatable-forms.md)
+* [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
+* [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
+* [Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)

@@ -4,10 +4,10 @@ description: Verwenden Sie den universellen Editor für Edge Delivery Services f
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 84%
+source-wordcount: '1078'
+ht-degree: 83%
 
 ---
 
@@ -22,13 +22,11 @@ Mit dem universellen Editor können Sie schnell responsive, interaktive Formular
 
 Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Browser-übergreifende Kompatibilität sicherstellen oder strenge Barrierefreiheitsstandards befolgen, bietet der universelle Editor eine optimierte Lösung für die Erstellung und Verwaltung von Formularen.
 
-![Universeller Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
+![Universeller Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Wichtige Funktionen des universellen Editors für Edge Delivery Services für Forms
 
 
-
-Im Folgenden sehen Sie das Layout mit Karten mit gleicher Breite (unter Verwendung von Spalten mit fester Breite):
 
 | ![WYSIWYG-Benutzeroberfläche](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![Regeleditor](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![Aktionen übermitteln](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
