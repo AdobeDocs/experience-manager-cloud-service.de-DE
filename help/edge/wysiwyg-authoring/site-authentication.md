@@ -3,13 +3,13 @@ title: Konfigurieren der Site-Authentifizierung für die Inhaltserstellung
 description: Erfahren Sie, wie AEM Live die Token-basierte Authentifizierung unterstützt und wie Sie AEM so konfigurieren können, dass die Authentifizierung mit WYSIWYG Authoring verwendet wird.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurieren der Site-Authentifizierung für die Inhaltserstellung {#site-authentication}
 
@@ -46,11 +46,13 @@ Diese Elemente sind erforderlich, um die Konfiguration der Site-Authentifizierun
 Sobald die Site-Authentifizierung konfiguriert ist, können Sie sie in Ihrer AEM-Authoring-Umgebung aktivieren.
 
 1. Melden Sie sich bei der AEM-Autoreninstanz an, wechseln Sie zu **Tools** -> **Cloud Services** -> **Edge Delivery Services-** und wählen Sie die automatisch für Ihre Site erstellte Konfiguration aus und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
-1. Wählen Sie im Fenster **Edge Delivery Services** Konfiguration die Registerkarte **Authentifizierung** und geben Sie die folgenden Werte ein, die Sie bei der Konfiguration der Site-Authentifizierung angegeben haben.
-
-   * **Die ID des technischen Kontos**
-   * **Site-Authentifizierungstoken**
+1. Wählen Sie im Fenster **Edge Delivery Services** Konfiguration die Registerkarte **Authentifizierung** und geben Sie das **Site Authentication Token** ein, das Sie zuvor kopiert haben.
 
    ![Edge Delivery Services-Konfiguration](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. Stellen Sie sicher, dass **Die ID des technischen Kontos** mit der zuvor kopierten ID übereinstimmt.
+
+   * Dieses Feld ist schreibgeschützt und vordefiniert.
+   * Das technische Konto ist für alle Sites in einer einzigen AEM-Autorenumgebung gleich.
 
 1. Tippen oder klicken Sie auf **Speichern und schließen**.

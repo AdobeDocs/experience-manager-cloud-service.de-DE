@@ -4,9 +4,9 @@ description: Wenn Sie viele ähnliche Websites haben, die meist gleich aussehen 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ Sie müssen eine Site-Konfiguration erstellen und sie zu Ihrer Pfadzuordnung hin
 
 Sobald die Site-Konfiguration zugeordnet ist, können Sie die Zugriffskontrolle konfigurieren, indem Sie Ihr technisches Konto so definieren, dass es über Berechtigungen zum Veröffentlichen verfügt.
 
-1. Rufen Sie in Ihrem Browser das technische Konto in der Antwort des folgenden Links ab.
+1. Melden Sie sich bei der AEM-Autoreninstanz an, wechseln Sie zu **Tools** -> **Cloud Services** -> **Edge Delivery Services-** und wählen Sie die automatisch für Ihre Site erstellte Konfiguration aus und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. Wählen Sie im Fenster **Edge Delivery Services-** die Registerkarte **Authentifizierung** und kopieren Sie den Wert für **Die ID des technischen Kontos**.
 
-1. Die Antwort ähnelt der folgenden.
+   * Er sieht in etwa so aus: `<tech-account-id>@techacct.adobe.com`
+   * Das technische Konto ist für alle Sites in einer einzigen AEM-Autorenumgebung gleich.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. Legen Sie das technische Konto in Ihrer Konfiguration mit einem cURL-Befehl ähnlich dem folgenden fest.
+1. Legen Sie das technische Konto für Ihre Konfiguration „repoless“ mithilfe der von Ihnen kopierten ID des technischen Kontos mit einem cURL-Befehl ähnlich dem folgenden fest.
 
    * Passen Sie den `admin` an, um die Benutzer zu definieren, die vollen administrativen Zugriff auf die Website haben sollen.
       * Es handelt sich um ein Array von E-Mail-Adressen.
