@@ -5,31 +5,33 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # Ihr Wertschöpfungs-Dashboard
 
 ![Dashboard zur Wertschöpfung](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> Bei dieser Funktion handelt es sich um eine Beta-Funktion, die nur für einige ausgewählte Kunden aktiviert ist. </span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com. <span>
+
 
 Willkommen bei Ihrer zentralen Anlaufstelle, um den Wert Ihrer Formulare zu verstehen! Dieses Dashboard bietet Ihnen wertvolle Einblicke, um Ihre Formulare zu optimieren, Workflows zu optimieren und letztendlich Ihre Ziele schneller zu erreichen.
 
-Dieser Artikel bietet einen konzeptionellen Überblick über das Dashboard zur Wertschöpfung und seine Vorteile. Detaillierte Anweisungen zur Nutzung und Interpretation von Metriken finden Sie unter [Interpretieren von Einblicken aus der Formularnutzung mithilfe des Dashboards zur Wertschöpfung](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+Dieser Artikel bietet einen konzeptionellen Überblick über das Dashboard zur Wertschöpfung und seine Vorteile. Detaillierte Anweisungen zur Nutzung und Interpretation von Metriken finden Sie unter [Interpretieren von Einblicken aus der Formularnutzung mithilfe des Dashboards zur Wertschöpfung](/help/forms/using-the-value-realization-dashboard.md).
 
 
-![Dashboard zur Wertschöpfung](/help/forms/assets/forms-usage-insights.png)
+
 
 ## Was steht im Dashboard? {#content-of-dashboard}
 
 Dieses Dashboard bietet Ihnen einen Einblick in die Welt Ihrer Formularnutzung. Im Folgenden finden Sie eine Aufschlüsselung der wichtigsten Abschnitte:
+
 
 ### Formular- und Dokumentenaktivität im Zeitverlauf
 
@@ -44,8 +46,6 @@ Dieses Dashboard bietet Ihnen einen Einblick in die Welt Ihrer Formularnutzung. 
 * **Wiederverwendung von Formularfragmenten**: Messen Sie, wie oft diese Fragmente in verschiedenen Formularen verwendet werden.
 
 
-
-
 ## Welchen Nutzen hat das für Sie? {#benefits-to-you}
 
 Mit diesem Dashboard können Sie datengesteuerte Entscheidungen zu Ihren Formularen treffen. So geht&#39;s:
@@ -53,6 +53,8 @@ Mit diesem Dashboard können Sie datengesteuerte Entscheidungen zu Ihren Formula
 * **Beliebte Forms identifizieren**: Hohe Übermittlungsraten deuten auf wertvolle Formulare hin. Analysieren Sie diese auf Best Practices, die in anderen repliziert werden können.
 * **Formularerstellung optimieren**: Reduzieren Sie die Erstellungszeiten, indem Sie Engpässe identifizieren. Erkunden Sie vorgefertigte Vorlagen oder optimierte Workflows.
 * **Wiederverwendung von Fragmenten**: Fördern Sie die Zusammenarbeit und das Auffinden wiederverwendbarer Fragmente. Gut organisierte Fragmentbibliotheken können die Effizienz erheblich verbessern.
+
+  ![Dashboard zur Wertschöpfung](/help/forms/assets/forms-usage-insights.png)
 
 
 ## Erkenntnisse in Taten umsetzen {#turning-insights-into-actions}
@@ -75,4 +77,4 @@ Denken Sie daran, dieses Dashboard ist Ihr Verbündeter! Durch die effektive Ver
 
 ## Siehe auch
 
-* [Interpretieren von Nutzungseinblicken](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [Verwenden des Dashboards zur Analyse der Nutzung von Forms und Dokumenten](/help/forms/using-the-value-realization-dashboard.md)
