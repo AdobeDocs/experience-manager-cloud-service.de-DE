@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Verschiedene Funktionen der Inhaltsfragmente und Inhaltsfragmentmodelle sind über das Early-Adopter-Programm verfügbar.
+>Verschiedene Funktionen von Inhaltsfragmenten und Inhaltsfragmentmodellen sind im Rahmen des Early-Adopter-Programms verfügbar.
 >
 >Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
@@ -237,6 +237,7 @@ So erstellen Sie ein Inhaltsfragment:
 
    * **Speicherort** – Dies wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
    * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
+   * **Automatisches Tagging** - Wenn Sie diese Option auswählen, werden alle dem Inhaltsfragmentmodell zugewiesenen Tags vom neuen Inhaltsfragment übernommen und hinzugefügt.
    * **Titel**
    * **Name** – Dies wird basierend auf dem **Titel** automatisch ausgefüllt, kann jedoch bei Bedarf bearbeitet werden.
    * **Beschreibung**
