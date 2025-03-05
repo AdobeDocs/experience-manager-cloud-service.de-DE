@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 29%
+source-wordcount: '2155'
+ht-degree: 31%
 
 ---
 
@@ -76,7 +76,7 @@ Conversational Forms sind mehr als nur ein neuer Look - sie sind eine Wende im B
 
 ### WYSIWYG-Authoring für Edge Delivery Services
 
-WYSIWYG-Authoring bietet WYSIWYG-Schnittstellen (universeller Editor und adaptiver Forms-Editor) zum Erstellen und Veröffentlichen adaptiver Formulare für Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen [Dokumentenbasierten Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features) sowie eine Vielzahl zusätzlicher Funktionen:
+WYSIWYG-Authoring bietet WYSIWYG-Schnittstellen (universeller Editor und adaptiver Forms-Editor) zum Erstellen und Veröffentlichen adaptiver Formulare in Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen [Dokumentenbasierten Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features) sowie eine Vielzahl zusätzlicher Funktionen:
 
 * Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
 * Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
@@ -104,15 +104,37 @@ Bereit zum Start? Die folgenden Artikel enthalten detaillierte Anweisungen zur V
 
 * [Integrieren von Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
 * [Integrieren eines adaptiven Formulars mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Konfigurieren einer Marketo Engage-Anzeigendatenquelle für ein vorhandenes adaptives Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Konfigurieren der Marketo Engage-Anzeigendatenquelle für vorhandene adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Senden eines vorhandenen adaptiven Formulars an Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### Dashboard zur Wertschöpfung
+
+Verfolgen und analysieren Sie die Leistung Ihrer Formulare mit dem Dashboard zur Wertschöpfung . Mit diesem Analysetool können Sie datengesteuerte Entscheidungen treffen, um Ihre Formularstrategie zu optimieren.
+
+![Dashboard für Forms Usage Insights](/help/forms/assets/forms-usage-insights.png)
+
+**Wichtigste Funktionen:**
+
+* Überwachen von Formularübermittlungen, Dokumentwiedergaben und Metriken zur Formularerstellung/-veröffentlichung
+* Tracking der Nutzung und Wiederverwendung von Formularfragmenten in Ihrer gesamten Organisation
+* Identifizieren von Trends, Spitzenzeiten und Verbesserungsmöglichkeiten
+
+Das Dashboard bietet Einblicke in zwei Hauptabschnitte:
+
+* **Formular- und Dokumentaktivität im Zeitverlauf**: Verfolgt Übermittlungen, Ausgabedarstellungen und die Erstellung/Veröffentlichung eines Formulars
+* **Verwendung von Fragmenten**: Überwacht die Annahme und Wiederverwendung von Fragmenten
+
+Ausführliche Informationen:
+
+* [Ihr Wertschöpfungs-Dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+* [Interpretieren von Formular- und Dokumentennutzungseinblicken](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## Zusätzliche Early-Access-Innovationen
 
-### HTML von E-Mail-Vorlagen in Adaptive Forms
+### HTML-E-Mail-Vorlagen in adaptiven Formularen
 
 
-Adaptive Forms ermöglicht die Verwendung von [HTML-E-Mail-Vorlagen](/help/forms/html-email-templates-in-adaptive-forms.md). HTML-E-Mail-Vorlagen ermöglichen es Ihnen, beim Senden eines Formulars ansprechende, personalisierte und visuell ansprechende E-Mails zu senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei Adaptive Forms können Sie entweder eine Datei hochladen, die eine HTML-Vorlage enthält, oder einen Texteditor verwenden, um diese Vorlagen zu erstellen.
+Adaptive Formulare ermöglichen die Verwendung von [HTML-E-Mail-Vorlagen](/help/forms/html-email-templates-in-adaptive-forms.md). Mit HTML-E-Mail-Vorlagen können Sie beim Übermitteln eines Formulars umfangreiche, personalisierte und visuell ansprechende E-Mails senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei adaptiven Formularen können Sie entweder eine Datei mit einer HTML-Vorlage hochladen oder diese Vorlagen mit einem Texteditor erstellen.
 
 ![HTML-E-Mail-Vorlagen](/help/forms/assets/html-email.png)
 
@@ -161,26 +183,26 @@ Sind Sie bereit, eine dieser CAPTCHA-Lösungen in Ihre adaptiven Formulare zu in
 ### Doc Assurance-APIs
 
 
-AEM Forms Doc Assurance-APIs sind eine Reihe von Tools innerhalb der AEM Forms-Cloud Service-Kommunikations-APIs, mit denen Sie die Sicherheit und Benutzerinteraktion Ihrer PDF-Dokumente verwalten können.
+AEM Forms Doc Assurance-APIs sind eine Reihe von Tools innerhalb der AEM Forms Cloud Service-Kommunikations-APIs, mit denen Sie die Sicherheit und Benutzerinteraktion Ihrer PDF-Dokumente verwalten können.
 
 Im Folgenden finden Sie eine Aufschlüsselung der Funktionen von Doc Assurance-APIs:
 
-* **Dokumente verschlüsseln und entschlüsseln**: Protect macht Ihre Dokumente durch Verschlüsselung unlesbar. Sie haben die Kontrolle darüber, welche Teile des PDF verschlüsselt werden, einschließlich des gesamten Dokuments, bestimmter Inhalte, Metadaten oder Anlagen.
+* **Dokumente verschlüsseln und entschlüsseln**: Schützen Sie Ihre Dokumente, indem Sie deren Inhalt mit Verschlüsselung unlesbar machen. Sie haben die Kontrolle darüber, welche Teile der PDF verschlüsselt werden, einschließlich des gesamten Dokuments, bestimmter Inhalte, Metadaten oder Anlagen.
 
 * **Dokumente digital signieren**: Digitale Signaturen zu Ihren Dokumenten hinzufügen, um sie zu validieren und fälschungssicher zu überprüfen. Dies kann für Zertifizierungszwecke oder zur Gewährleistung der Dokumentenintegrität verwendet werden
 
-* **Reader - Dokumente erweitern (Verwendungsrechte für PDF-Dokumente anwenden oder bearbeiten)**: Ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte.
+* **Reader - Dokumente erweitern (Verwendungsrechte von PDF-Dokumenten anwenden oder bearbeiten)**: Ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte.
 
   Die APIs für Reader-Erweiterungen (Verwendungsrechte) fügen einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
-  Wenn das PDF von Dokumenten die entsprechenden Verwendungsrechte hinzugefügt hat, können Empfängerinnen und Empfänger aktivierte Aktivitäten aus Adobe Reader heraus durchführen.
+  Wenn PDF-Dokumente die entsprechenden Verwendungsrechte hinzugefügt haben, können Empfängerinnen und Empfänger aktivierte Aktivitäten aus Adobe Reader heraus durchführen.
 
 Insgesamt helfen [Doc Assurance-APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) die Dokumentensicherheit und Compliance zu verbessern, indem sie eine zusätzliche Kontrollebene hinzufügen.
 
 
 ### Forms Service-APIs
 
-Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Es kann auch zum Importieren/Exportieren von Daten in/von einem bestehenden interaktiven PDF-Formular und zur Validierung gesendeter Daten verwendet werden. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
+Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Sie können damit auch Daten in ein bestehendes interaktives PDF-Formular importieren/exportieren und gesendete Daten validieren. Im Folgenden finden Sie eine Aufschlüsselung der Funktionen:
 
 * **Rendern von Formularen**: Generieren Sie ein interaktives PDF-Formular aus einer Vorlage, die mit AEM Forms Designer und (optional) mit XML-Daten erstellt wurde. Dadurch wird im Wesentlichen ein ausfüllbares PDF-Formular erzeugt, das optional mit Daten vorausgefüllt ist.
 
@@ -190,23 +212,23 @@ Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Es
 
 ### API zur Dokumenterstellung
 
-Die Document Generation-API enthält eine optionale Funktion, die das direkte Hochladen generierter PDF in den Azure Blob-Speicher ermöglicht. Einige wichtige Vorteile beim Hochladen von PDFs direkt in Azure Blob Storage mithilfe der Document Generation-API sind:
+Die Document Generation-API enthält eine optionale Funktion, die das direkte Hochladen generierter PDFs in Azure Blob Storage ermöglicht. Einige wichtige Vorteile beim Hochladen von PDFs direkt in Azure Blob Storage mithilfe der Document Generation-API sind:
 
 * **Nahtlose Integration mit Cloud-**:
-Das direkte Hochladen generierter PDF-Dateien in Azure Blob Storage macht zusätzliche manuelle oder programmgesteuerte Schritte zur Dateiübertragung, Optimierung von Workflows und Steigerung der Effizienz überflüssig.
+Das direkte Hochladen generierter PDFs in Azure Blob Storage macht zusätzliche manuelle oder programmgesteuerte Schritte zur Übertragung von Dateien, zur Optimierung von Workflows und zur Steigerung der Effizienz überflüssig.
 
 * **Zentralisiertes Dokumentenmanagement**:
-Das Speichern von PDF-Dateien im Azure Blob-Speicher ermöglicht die zentralisierte Verwaltung von Dokumenten und erleichtert so das Organisieren, Abrufen und Verwalten generierter Dateien in verschiedenen Anwendungsfällen.
+Das Speichern von PDFs im Azure Blob-Speicher ermöglicht die zentralisierte Verwaltung von Dokumenten und erleichtert so das Organisieren, Abrufen und Verwalten generierter Dateien in verschiedenen Anwendungsfällen.
 
 * **Verbesserte Sicherheit**: Durch die Nutzung der integrierten Sicherheitsfunktionen von Azure, wie z. B. Verschlüsselung im Ruhezustand und rollenbasierte Zugriffssteuerung (RBAC), bleiben sensible Dokumente während der Speicherung geschützt.
 
-* **Anpassbare Speicherpfade**: Die Möglichkeit, benutzerdefinierte Ordnerpfade zu definieren, stellt sicher, dass generierte PDF an organisierten und anwendungsspezifischen Speicherorten gespeichert werden, was das Dateimanagement verbessert.
+* **Anpassbare Speicherpfade**: Die Möglichkeit, benutzerdefinierte Ordnerpfade zu definieren, stellt sicher, dass generierte PDF-Dateien an organisierten und anwendungsspezifischen Speicherorten gespeichert werden, was das Dateimanagement verbessert.
 
 ## Siehe auch
 
 * [Neueste Innovationen in AEM Forms](/help/forms/latest-innovations.md)
 
-* [Funktionen von AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Funktionen von AEM Forms as a Cloud Services](/help/forms/home.md)
 
-* [Unterschied zwischen AEM 6.5 Forms (AMS und On-Premise) und AEM Forms as a Cloud Service (AEM CS Forms)](/help/forms/notable-changes.md)
+* [Unterschied zwischen AEM 6.5 Forms (AMS und On-Premise) und AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
 
