@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # Verwenden des Dashboards zur Wertschöpfung zur Analyse der Nutzung von Formularen und Dokumenten
 
 <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com. <span>
 
 ![Dashboard zur Wertschöpfung](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
 
 Durch die regelmäßige Überwachung der im Dashboard „Nutzungseinblicke zu Forms&quot; dargestellten Metriken können Sie wertvolle Einblicke in die Leistung Ihrer Formulare, Dokumente und Formularfragmente gewinnen. Verwenden Sie diese Daten, um fundierte Entscheidungen zum Formularentwurf, zur Fragmentverwaltung und zur allgemeinen Formularstrategie zu treffen.
 
