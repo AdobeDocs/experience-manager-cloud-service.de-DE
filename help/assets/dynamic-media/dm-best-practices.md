@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4071'
 ht-degree: 100%
 
 ---
@@ -345,11 +345,6 @@ Möchten Sie mehr erfahren? Navigieren Sie zu [Best Practices für die Verschlü
 Beim adaptiven Streaming wird die Videoqualität basierend auf der Geschwindigkeit der Internet-Verbindung und den Gerätefunktionen der Betrachtenden angepasst.
 Es verwendet Protokolle wie HLS (HTTP Live Streaming) oder DASH (`Dynamic Adaptive Streaming over HTTP`), um eine optimale Wiedergabequalität sicherzustellen.
 Im Gegensatz zu progressivem Streaming, bei dem Videos linear bereitgestellt werden, minimiert das adaptive Streaming die Pufferung und bietet ein nahtloses Zuschauererlebnis.
-
-* **Aktivieren von DASH in Ihrem Konto (digitales adaptives Streaming über HTTP):**
-DASH stellt Videoinhalte dynamisch über adaptives Streaming bereit.
-Um DASH zu aktivieren, erstellen Sie ein Support-Ticket für Ihre Umgebung.
-Möchten Sie mehr erfahren? Navigieren Sie zu [Aktivieren von DASH in Ihrem Dynamic Media-Konto](/help/assets/dynamic-media/video.md#enable-dash).
 
 ### Internationalisierung von Videos für den mehrsprachigen Gebrauch
 
