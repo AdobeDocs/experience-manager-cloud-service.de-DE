@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie [!DNL Dynamic Media] Prime- und Ultimate-Ange
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 3962b687a7d0d3f5551b23fbe5c2ee2c21bd1d89
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -28,9 +28,11 @@ Führen Sie die folgenden Schritte in Ihrer Cloud Service-Umgebung aus, um [!DNL
 1. [Konfigurieren [!DNL Dynamic Media] Lösungen](#configure-dynamic-media-solutions)
 1. [Erstellen und Auflisten  [!DNL Dynamic Media]  Unternehmen](#create-and-list-dynamic-media-companies)
 1. [Benutzerdefinierte Domain in der Bereitstellungsebene konfigurieren](#configure-custom-domain-in-delivery-tier)
+
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
+
 Wenn Sie [!DNL Dynamic Media Prime] aktivieren müssen, lesen Sie die unter „Aktivieren[ bereitgestellten  [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
 
 ### Aktivieren [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
