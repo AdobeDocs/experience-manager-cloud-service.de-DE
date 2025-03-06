@@ -4,7 +4,7 @@ description: Veröffentlichen Sie Ihre Edge Delivery Services-Formulare schnell 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 87%
@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # Veröffentlichen Ihres adaptiven Formulars mit Edge Delivery Services
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
 
 
 Wenn Ihr Formular fertig gestellt und einsatzbereit ist, können Sie es veröffentlichen, um es Ihrer Kundschaft zur Datenerfassung und -übermittlung zugänglich zu machen. Durch die Veröffentlichung wird sichergestellt, dass das Formular in Edge Delivery verfügbar ist, sodass die Benutzenden nahtlos damit interagieren können. Auf diese Weise kann Ihre Kundschaft das Formular in Echtzeit ausfüllen und übermitteln. Dadurch wird eine effiziente Datenerfassung und eine optimierte Verarbeitung gewährleistet.
