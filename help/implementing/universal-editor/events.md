@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die verschiedenen Ereignisse, die der unive
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '575'
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+workflow-type: tm+mt
+source-wordcount: '520'
 ht-degree: 100%
 
 ---
@@ -180,29 +180,6 @@ Antwort-Payload:
 
 ## Benutzeroberflächen-Ereignisse {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-Das Ereignis `aue:ui-publish` wird ausgelöst, wenn der Inhalt veröffentlicht wird (mit einem Aufruf auf `BODY`-Ebene).
-
-Die Payload ist eine Liste von Element-IDs sowie ihr Veröffentlichungsstatus.
-
-### aue:ui-select {#ui-select}
-
-Das Ereignis `aue:ui-select` wird ausgelöst, wenn eine Komponente ausgewählt wird.
-
-Die Payload ist die Element-ID, Elementeigenschaften und der Elementtyp der ausgewählten Komponente.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 Das Ereignis `aue:ui-preview` wird ausgelöst, wenn der Bearbeitungsmodus der Seite in **Vorschau** geändert wird.
@@ -271,7 +248,6 @@ Die Payload für dieses Ereignis ist leer.
 
 | Ereignis | Verhalten |
 |---|---|
-| `aue:ui-publish` | Nichts |
 | `aue:ui-select` | Scrollen zum ausgewählten Element |
 | `aue:ui-preview` | Hinzufügen von `class="adobe-ue-preview"` zum HTML-Tag |
 | `aue:ui-edit` | Hinzufügen von `class=adobe-ue-edit"` zum HTML-Tag |
