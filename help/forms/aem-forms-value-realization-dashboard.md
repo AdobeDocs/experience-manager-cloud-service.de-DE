@@ -1,14 +1,14 @@
 ---
 title: Dashboard zur Wertschöpfung in AEM Forms
-description: Überwachen Sie mühelos Formularübermittlungen auf Ihren AEM Forms-Instanzen mit unserem intuitiven Tracking-Dashboard.
+description: Überwachen Sie mühelos Formularübermittlungen auf Ihren AEM Forms-Instanzen mit einem intuitiven Tracking-Dashboard.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 Willkommen bei Ihrer zentralen Anlaufstelle, um den Wert Ihrer Formulare zu verstehen! Dieses Dashboard bietet Ihnen wertvolle Einblicke, um Ihre Formulare zu optimieren, Workflows zu optimieren und letztendlich Ihre Ziele schneller zu erreichen.
 
-Dieser Artikel bietet einen konzeptionellen Überblick über das Dashboard zur Wertschöpfung und seine Vorteile. Detaillierte Anweisungen zur Nutzung und Interpretation von Metriken finden Sie unter [Interpretieren von Einblicken aus der Formularnutzung mithilfe des Dashboards zur Wertschöpfung](/help/forms/using-the-value-realization-dashboard.md).
-
-
+Dieser Artikel bietet einen konzeptionellen Überblick über das Dashboard zur Wertschöpfung und seine Vorteile. Detaillierte Anweisungen zur Nutzung und Interpretation der Metriken finden Sie unter [Verwenden des Dashboards zur Wertschöpfung zur Analyse der Nutzungstrends von Formularen und Dokumenten](/help/forms/using-the-value-realization-dashboard.md).
 
 
 ## Was steht im Dashboard? {#content-of-dashboard}
@@ -50,7 +48,7 @@ Dieses Dashboard bietet Ihnen einen Einblick in die Welt Ihrer Formularnutzung. 
 
 Mit diesem Dashboard können Sie datengesteuerte Entscheidungen zu Ihren Formularen treffen. So geht&#39;s:
 
-* **Beliebte Forms identifizieren**: Hohe Übermittlungsraten deuten auf wertvolle Formulare hin. Analysieren Sie diese auf Best Practices, die in anderen repliziert werden können.
+* **Beliebte Forms identifizieren**: Hohe Übermittlungsraten deuten auf wertvolle Formulare hin. Analysieren Sie diese Formulare auf Best Practices, die Sie in anderen replizieren können.
 * **Formularerstellung optimieren**: Reduzieren Sie die Erstellungszeiten, indem Sie Engpässe identifizieren. Erkunden Sie vorgefertigte Vorlagen oder optimierte Workflows.
 * **Wiederverwendung von Fragmenten**: Fördern Sie die Zusammenarbeit und das Auffinden wiederverwendbarer Fragmente. Gut organisierte Fragmentbibliotheken können die Effizienz erheblich verbessern.
 
