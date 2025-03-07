@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
+source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 48%
@@ -46,25 +46,23 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### Neue Funktionen in AEM Sites {#new-features-sites}
 
-** für das automatische Tagging von Inhaltsfragmenten **
+**Automatisches Tagging von Inhaltsfragmenten**
 
 Beim Erstellen von Inhaltsfragmenten ist es jetzt möglich, automatisch Tags zu erben, die dem Inhaltsmodell zugewiesen wurden. Dies ermöglicht eine leistungsstarke automatische Klassifizierung von Inhalten, die in Inhaltsfragmenten gespeichert sind.
 
-** zur Unterstützung der **-Inhaltsfragment-UUID
+**Unterstützung der Inhaltsfragment-UUID**
 
 Die Unterstützung der Inhaltsfragment-UUID ist jetzt allgemein verfügbar. Die neue Funktion ändert nicht das pfadbasierte Verhalten von Vorgängen innerhalb von AEM, z. B. Verschieben, Umbenennen, Rollout, bei denen Pfade automatisch angepasst werden. Sie kann jedoch die externe Verwendung von Inhaltsfragmenten vereinfachen und stabiler gestalten, insbesondere wenn GraphQL-Abfragen verwendet werden, die direkt einzelne Fragmente mit ByPath-Abfragen ansprechen. Solche Abfragen können fehlschlagen, wenn sich ein Fragmentpfad ändert. Bei Verwendung des neuen Abfragetyps ById bleibt die Abfrage jetzt stabil, da sich die UUID eines Fragments in Fällen, in denen Pfade dies tun, nicht ändert.
 
-** von Dynamic Media mit OpenAPI-Unterstützung im Inhaltsfragment-Editor und in GraphQL **
+**Dynamic Media mit OpenAPI-Unterstützung im Inhaltsfragment-Editor und in GraphQL**
 
 Assets, die in anderen AEM as a Cloud Service-Programmen als Inhaltsfragmenten gespeichert sind und die mit der neuen Dynamic Media-Funktion mit OpenAPI-Funktion aktiviert sind, können jetzt in Inhaltsfragmenten verwendet werden. Mit der Bildauswahl im neuen Inhaltsfragment-Editor können jetzt „Remote“-Repositorys als Quelle für Bild-Assets ausgewählt werden, auf die im Fragment verwiesen werden soll. Und bei der Bereitstellung solcher Inhaltsfragmente mit AEM GraphQL enthält die JSON-Antwort jetzt die erforderlichen Eigenschaften für Remote-Assets (assetId, repositoryId), damit Client-Anwendungen entsprechende Dynamic Media-Dateien mit OpenAPI-URLs erstellen können, um das Bild abzurufen.
 
-**-Übersetzungs-HTTP-API-**
+**Übersetzungs-HTTP-API**
 
 Die AEM Translation HTTP REST-API, die sich seit einiger Zeit im Early-Adopter-Modus befindet, ist jetzt allgemein verfügbar. Die Dokumentation finden Sie [hier](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). Die -API ermöglicht die Automatisierung erforderlicher Schritte im Übersetzungs-Management-Prozess für Inhalte in AEM.
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
