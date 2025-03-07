@@ -1,17 +1,17 @@
 ---
-title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service Sites – Bereitschaft
-description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (Consumer Privacy Act) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
+title: Datenschutzbestimmungen - Einhaltung von AEM Sites
+description: Erfahren Sie mehr über die Unterstützung von Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (CCPA) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '989'
+ht-degree: 93%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service Sites – Bereitschaft für Datenschutzbestimmungen {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Experience Manager Sites - Einhaltung von Datenschutzbestimmungen {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
