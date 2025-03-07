@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Dieser Artikel enthält detaillierte Nutzungsanweisungen und Interpretationen de
 So greifen Sie auf das Dashboard Forms Usage Insights zu:
 
 1. Navigieren Sie zu **Forms** > **Forms und Dokumente**
-1. Klicken Sie **Insights-Dashboard**. Das Dashboard wird in einem neuen Fenster geöffnet.
+1. Klicken Sie auf **InProduct-Dashboard**. Das Dashboard wird in einem neuen Fenster geöffnet.
 
    ![Dashboard zur Wertschöpfung](/help/forms/assets/forms-usage-insights.png)
 
