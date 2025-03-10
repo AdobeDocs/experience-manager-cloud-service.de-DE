@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie [!DNL Dynamic Media] Prime- und Ultimate-Ange
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
+source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie de
 
 1. [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Ihr Programm umfasst  [!DNL Dynamic Media]  Lösungen](#configure-dynamic-media-solutions).
-1. Ihr Unternehmen hat mit OpenAPI-Credits [!DNL Dynamic Media].
+1. Sie haben [!DNL Dynamic Media] Prime- oder Ultimate-Lizenz.
 
 #### Aktivieren von [!DNL Dynamic Media with OpenAPI] in Ihrer Cloud Service-Umgebung {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -97,7 +97,7 @@ Konfigurieren Sie [!UICONTROL Dynamic Media]-Lösungen für die Verwendung der g
 Stellen Sie sicher, dass Sie Folgendes zum Konfigurieren von [!UICONTROL Dynamic Media]Lösungen haben:
 
 1. [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. Ihr Unternehmen verfügt über [!DNL Dynamic Media with OpenAPI] Credits.
+1. Sie haben [!DNL Dynamic Media] Ultimate-Lizenz.
 
 #### Konfigurieren von [!DNL Dynamic Media]-Lösungen für die Asset-Bereitstellung {#configure-dynamic-media-solutions-for-asset-delivery}
 
