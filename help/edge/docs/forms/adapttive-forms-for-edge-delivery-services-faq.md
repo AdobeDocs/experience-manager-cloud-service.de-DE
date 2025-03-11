@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen zu AEM Forms mit Edge Delivery Services
-description: Erhalten Sie Antworten auf häufig gestellte Fragen zu AEM Forms mit Edge Delivery Services und dem universellen Editor. Erfahren Sie mehr über mehrsprachige Formulare, globale Vorlagen, Formularfragmente, Analysen und Datenintegrationsfunktionen.
+description: Antworten auf häufig gestellte Fragen zu AEM Forms mit Edge Delivery Services und dem universellen Editor. Erfahren Sie mehr über mehrsprachige Formulare, globale Vorlagen, Formularfragmente, Analysen und Datenintegrationsfunktionen.
 feature: Edge Delivery Services
 role: User, Developer
 hide: true
@@ -9,18 +9,18 @@ exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Häufig gestellte Fragen (FAQ)
 
 
-## Mehrsprachiger Support und globale Nutzung
+## Unterstützung für mehrere Sprachen und globale Nutzung
 
 ### F: Wie werden mehrsprachige Formulare im EDS und im universellen Editor gehandhabt?
 
-**A:** Mehrsprachige Formulare folgen demselben Übersetzungs-Workflow wie AEM Sites. Forms kann mithilfe der standardmäßigen AEM-Übersetzungsfunktionen in mehreren Sprachen erstellt werden, um verschiedene Märkte zu bedienen.
+**A:** Mehrsprachige Formulare folgen demselben Übersetzungs-Workflow wie AEM Sites. Formulare können mithilfe der standardmäßigen AEM-Übersetzungsfunktionen in mehreren Sprachen erstellt werden, um verschiedene Märkte zu bedienen.
 
 ### F.: Kann ich globale Vorlagen und Formularfragmente erstellen und verwenden?
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ### F.: Ist es möglich, ein Formular einmal zu erstellen und es auf mehreren Web-Seiten zu verwenden?
 
-**A:** Ja, Sie können ein Formular an einem Ort erstellen und es über mehrere Web-Seiten hinweg referenzieren, ähnlich wie die Funktionalität der Formularkomponente „Einbetten“ in Adaptive Forms.
+**A:** Ja, Sie können ein Formular an einem Ort erstellen und über mehrere Web-Seiten hinweg darauf verweisen, ähnlich wie die Formularfunktion „Einbettungskomponente“ in Adaptive Forms.
 
 ## Datenintegration und -zuordnung
 
@@ -36,14 +36,14 @@ ht-degree: 0%
 
 **A:** Derzeit kann die FDM-Integration über den Regeleditor für einzelne Felder konfiguriert werden. Die Funktion für die automatische Feldzuordnung (ähnlich dem Formulardatenmodell-Assistenten in Adaptive Forms) ist in Entwicklung und wird in Kürze verfügbar sein.
 
-## Analytics und Tracking
+## Analyse und Tracking
 
-### F.: Welche Optionen werden für die Formularanalyse und -verfolgung empfohlen?
+### F.: Welche Optionen werden für Formularanalyse und Tracking empfohlen?
 
 **A:** Es gibt mehrere Optionen für die Analyse und das Tracking:
 
 - Adobe Experience Platform Web SDK (primäre Empfehlung)
-- Echtes Benutzermonitoring (RUM) für abgefragte Metriken
+- Real User Monitoring (RUM) für gesampelte Metriken
 - Integration mit anderen Analysesystemen nach Bedarf
 
 ## Dokumentation und Ressourcen

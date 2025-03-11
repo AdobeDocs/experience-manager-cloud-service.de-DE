@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -174,9 +174,9 @@ So benennen Sie eine **Variante** um:
 
 Verwenden Sie generative Varianten, um die generative KI zu nutzen und so die Inhaltserstellung zu beschleunigen.
 
-Öffnen Sie den Inhaltsfragment-Editor, um den Einstiegspunkt zum Generieren von Varianten zu finden.
+Öffnen Sie den Inhaltsfragmenteditor. Dort finden Sie den Einstiegspunkt zur Variantengenerierung:
 
-Weitere [ finden Sie unter „Generieren von Varianten - Integriert ](/help/generative-ai/generate-variations-integrated-editor.md) AEM-Editoren“.
+Weitere Informationen finden Sie unter [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md).
 
 ### Löschen einer Variante {#delete-variation}
 

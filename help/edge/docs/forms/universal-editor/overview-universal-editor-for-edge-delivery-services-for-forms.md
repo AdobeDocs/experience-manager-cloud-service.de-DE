@@ -1,22 +1,22 @@
 ---
-title: Universeller Editor für Edge Delivery Services für Forms
-description: Verwenden Sie den universellen Editor für Edge Delivery Services für Forms, um adaptive Forms zu erstellen.
+title: Universeller Editor für Edge Delivery Services for Forms
+description: Verwenden Sie den universellen Editor für Edge Delivery Services for Forms, um adaptive Formulare zu erstellen.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
 
-# Universeller Editor für Edge Delivery Services für Forms
+# Universeller Editor für Edge Delivery Services for Forms
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
-Der universelle Editor revolutioniert die Formularerstellung für Adobe Edge Delivery Services, indem er eine einfache, visuelle und intuitive Benutzeroberfläche für What You See Is What You Get (WYSIWYG) bietet. Er wurde für Personen, die Inhalte und Formulare erstellen, entwickelt und vereinfacht die herkömmlichen komplexen Formularerstellungsprozesse, sodass er auch von Benutzenden ohne technischen Hintergrund verwendet werden kann.
+Der universelle Editor revolutioniert die Formularerstellung für Adobe Edge Delivery Services, indem er eine einfache, visuelle und intuitive WYSIWYG-Benutzeroberfläche (What You See Is What You Get) bereitstellt. Er wurde für Personen, die Inhalte und Formulare erstellen, entwickelt und vereinfacht die herkömmlichen komplexen Formularerstellungsprozesse, sodass er auch von Benutzenden ohne technischen Hintergrund verwendet werden kann.
 
 Mit dem universellen Editor können Sie schnell responsive, interaktive Formulare mithilfe vorkonfigurierter Komponenten wie Textfelder, Kontrollkästchen und Optionsfelder entwerfen. Die robusten Funktionen unterstützen dynamische Regeln, eine nahtlose Datenintegration und eine erweiterte Personalisierung, sodass jedes Formular auf Ihre Bedürfnisse zugeschnitten ist.
 
@@ -24,7 +24,7 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
 
 ![Universeller Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
-## Wichtige Funktionen des universellen Editors für Edge Delivery Services für Forms
+## Die wichtigsten Funktionen des universellen Editors für Edge Delivery Services for Forms
 
 
 
@@ -46,11 +46,11 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
 | ![Analyse und Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Formularfragmente](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Datenbindung](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**Analyse und Tracking**](https://www.aem.live/developer/martech-integration) | **Formularfragmente** (in Kürze verfügbar) | **Datenbindung** (in Kürze verfügbar) |
-| Verschaffen Sie sich mit der integrierten Analyse- und Tracking-Funktion Erkenntnisse zum Benutzerverhalten sowie zu Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen. | Formularfragmente ermöglichen die Wiederverwendbarkeit, indem häufig verwendete Abschnitte einmal erstellt und in mehreren Formularen wiederverwendet werden können, wodurch Konsistenz gewährleistet und der Wartungsaufwand reduziert wird. | Die Datenbindung ermöglicht direkte Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt Echtzeitaktualisierungen und erweiterte Datenzuordnungen. |
+| Verschaffen Sie sich mit der integrierten Analyse- und Tracking-Funktion Erkenntnisse zum Benutzerverhalten sowie zu Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen. | Formularfragmente ermöglichen die Wiederverwendbarkeit, indem häufig verwendete Abschnitte einmal erstellt und in mehreren Formularen wiederverwendet werden können. Dies sorgt für Konsistenz und reduziert den Wartungsaufwand. | Die Datenbindung ermöglicht direkte Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt Echtzeitaktualisierungen und erweiterte Datenzuordnungen. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Einbetten von Formularen](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Danksagungskonfiguration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Einbetten von Forms** (in Kürze verfügbar) | [**Danksagungskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Einbetten von Formularen** (in Kürze verfügbar) | [**Danksagungskonfiguration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Verwenden Sie reCAPTCHA, um Formulare vor automatischen Bots zu schützen und so eine sichere und zuverlässige Datenerfassung zu gewährleisten. | Betten Sie Formulare mithilfe der integrierten Einbettungskomponente des universellen Editors direkt in Edge Delivery Services-Sites-Seiten ein. | Sie können die Bestätigungsmeldung oder -seite, die den Benutzenden nach einer erfolgreichen Formularübermittlung angezeigt wird, ganz einfach anpassen. |
 
 

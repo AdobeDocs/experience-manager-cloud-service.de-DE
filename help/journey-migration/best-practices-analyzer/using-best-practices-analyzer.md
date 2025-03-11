@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,10 +80,10 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
    ![Bericht erzeugen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 >[!NOTE]
-> Ab der BPA-Version 2.1.54 wurde eine neue Funktion eingeführt, um den Lighthouse-Score zu erhalten.
+> Mit der BPA-Version 2.1.54 wurde eine neue Funktion zur Ermittlung des Lighthouse-Scores eingeführt.
 
 
-1. Nachdem Sie auf **Bericht generieren** geklickt haben, wird ein Popup angezeigt, in dem Sie die URL der öffentlichen AEM-Site für den Lighthouse-Score anfordern. Der Benutzer muss eine gültige URL in das angegebene Feld eingeben.
+1. Nachdem Sie auf **Bericht erzeugen** geklickt haben, wird für den Lighthouse-Score über ein Popup die URL der öffentlichen AEM-Site angefordert. Die Benutzerin bzw. der Benutzer muss eine gültige URL in das angegebene Feld eingeben.
 
    ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
 

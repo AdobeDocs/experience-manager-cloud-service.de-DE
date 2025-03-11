@@ -7,14 +7,14 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '2214'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
 
 # Einführung in den Regeleditor im WYSIWYG-Authoring
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
 
 Sie können ein dynamisches Formularverhalten mit dem Regeleditor hinzufügen, mit dem Sie Regeln erstellen können. Diese Regeln ermöglichen eine bedingte Sichtbarkeit von Feldern oder die Automatisierung von Berechnungen auf der Grundlage von Benutzereingaben, was das allgemeine Anwendererlebnis verbessert. Durch das Optimieren der Formularausfüllung trägt der Regeleditor zur Genauigkeit und Effizienz bei.

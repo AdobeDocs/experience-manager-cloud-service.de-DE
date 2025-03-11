@@ -7,14 +7,14 @@ exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1285'
-ht-degree: 8%
+ht-degree: 42%
 
 ---
 
 
 # Responsiver Modus beim WYSIWYG-Authoring
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
 ## Einführung in Responsive Forms
 
@@ -24,7 +24,7 @@ Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-univers
 
 ## Anzeigen einer Vorschau von Formularen im responsiven Modus für unterschiedliche Geräte
 
-Der universelle Editor bietet ein **Emulator**-Symbol oben rechts im Bildschirm, mit dem Sie Seiten über verschiedene Gerätegrößen hinweg in der Vorschau anzeigen und das Verhalten Ihres responsiven Designs testen können, um ein besseres Benutzererlebnis zu erzielen.
+Der universelle Editor bietet ein **Emulator**-Symbol oben rechts auf dem Bildschirm, mit dem Sie Seiten in unterschiedlichen Gerätegrößen in der Vorschau anzeigen und das Verhalten Ihres responsiven Designs testen können, um das Benutzererlebnis zu verbessern.
 
 So zeigen Sie eine Vorschau eines Formulars im responsiven Modus an:
 
@@ -65,19 +65,19 @@ Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorscha
     </tr>
 </table>
 
-## Layout-Funktionen
+## Layout-Möglichkeiten
 
-Mit dem universellen Editor können Sie benutzerfreundliche Formulare erstellen, die Endbenutzern dynamische Erlebnisse bieten. Das Formular-Layout steuert, wie Elemente oder Komponenten in einem Formular angezeigt werden.
+Mit dem universellen Editor können Sie benutzerfreundliche Formulare erstellen, die Endbenutzenden dynamische Erlebnisse bieten. Das Formular-Layout steuert, wie Elemente oder Komponenten in einem Formular angezeigt werden.
 
 Der universelle Editor unterstützt die folgenden Arten von Layouts für Formulare:
 
-- [Bereichslayout](#panel-layout)
+- [Panel-Layout](#panel-layout)
 - [Assistenten-Layout](#wizard-layout)
 - [Akkordeon-Layout](#accordion-layout)
 
-### Bedienfeldlayout
+### Panel-Layout
 
-Das Bereichslayout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Bereichslayout ordnet Formularkomponenten in separaten Abschnitten oder Bereichen in Formularen an.
+Das Bedienfeld-Layout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Bereichslayout ordnet Formularkomponenten in separaten Abschnitten oder Bereichen in Formularen an.
 
 ![Bereichslayout mit mehreren unterschiedlichen Abschnitten innerhalb eines Formulars](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
@@ -85,11 +85,11 @@ Das Bereichslayout ist nützlich, um verwandte Felder so zu organisieren, dass d
 
 **Responsives Verhalten:** Auf kleineren Bildschirmen werden Bedienfelder normalerweise vertikal gestapelt, wobei ihre unterschiedlichen Gruppierungen beibehalten und gleichzeitig die schmalere Breite angepasst wird.
 
-Sie können die [Bedienfeld-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) .
+Sie können die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 ### Assistenten-Layout
 
-Das Assistenten-Layout vereinfacht ein komplexes Formular, indem es in verschiedene Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar, und Benutzende navigieren nacheinander durch die Schritte, häufig mit den Schaltflächen **Weiter** und **Zurück**. Sie können das Assistenten-Layout verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
+Das Assistenten-Layout vereinfacht ein komplexes Formular, indem es in verschiedene Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar, und Benutzende navigieren häufig mit den Schaltflächen **Weiter** und **Zurück** nacheinander durch die Schritte. Sie können das Assistenten-Layout verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
 
 ![Assistentenlayout mit einem mehrstufigen Formular mit Navigationssteuerelementen](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
@@ -97,11 +97,11 @@ Das Assistenten-Layout vereinfacht ein komplexes Formular, indem es in verschied
 
 **Responsives Verhalten:** Auf Mobilgeräten behält der Assistent seinen Schritt-für-Schritt-Ansatz bei, passt den Inhalt jedoch in jedem Schritt an den schmaleren Bildschirm an und stapelt häufig Elemente, die auf größeren Bildschirmen nebeneinander angezeigt würden.
 
-Sie können die Komponente [Assistent](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) verwenden, um das Assistenten-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Assistenten-Komponente finden Sie im Artikel [Assistenten-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) .
+Sie können die [Assistenten-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) verwenden, um das Assistenten-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Assistenten-Komponente finden Sie im Artikel [Assistenten-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 ### Akkordeon-Layout
 
-Das Akkordeon-Layout zeigt Inhalte in ausblendbaren Abschnitten oder Bereichen in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt darin angezeigt, während andere Abschnitte reduziert bleiben. Dieses Layout ist ideal für die Anzeige großer Informationsmengen in kompakter Form.
+Das Akkordeon-Layout zeigt Inhalte in reduzierbaren Abschnitten oder Bedienfeldern in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt darin angezeigt, während andere Abschnitte reduziert bleiben. Dieses Layout eignet sich ideal für das Anzeigen großer Informationsmengen in kompakter Form.
 
 ![Akkordeon-Layout mit erweiterbaren Abschnitten in einem Formular](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
@@ -109,18 +109,18 @@ Das Akkordeon-Layout zeigt Inhalte in ausblendbaren Abschnitten oder Bereichen i
 
 **Responsives Verhalten:** Akkordeons eignen sich besonders gut für Mobilgeräte, da sie auf natürliche Weise vertikalen Raum sparen, indem sie nur den erweiterten Inhaltsbereich anzeigen, was sie ideal für kleinere Bildschirme macht.
 
-Sie können die [Akkordeon-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Akkordeon-Komponente finden Sie im Artikel [Akkordeon-Komponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
+Sie können die [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Akkordeon-Komponente finden Sie im Artikel [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
-### Wie wählt man das richtige Layout?
+### Auswählen des richtigen Layouts?
 
-Es ist wichtig, das richtige Layout auszuwählen, um das Benutzererlebnis und die Formularfunktionen zu optimieren. Die Tabelle hilft Ihnen, die verschiedenen verfügbaren Layout-Optionen zu verstehen, und führt Sie bei der Auswahl des am besten geeigneten Layouts basierend auf Ihren spezifischen Anforderungen und Anwendungsfällen:
+Für die Optimierung des Benutzererlebnisses und der Formularfunktionen ist die Auswahl des richtigen Layouts von entscheidender Bedeutung. Die Tabelle hilft Ihnen, die verschiedenen verfügbaren Layout-Optionen zu verstehen, und dient Ihnen als Orientierung bei der Auswahl des am besten geeigneten Layouts basierend auf Ihren spezifischen Anforderungen und Anwendungsszenarien:
 
-| Funktion | Bedienfeldlayout | Assistenten-Layout | Akkordeon-Layout |
+| Funktion | Panel-Layout | Assistenten-Layout | Akkordeon-Layout |
 |----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| **Zweck** | Gruppiert verwandte Inhalte in separate Abschnitte | Führt Benutzer durch einen mehrstufigen Prozess oder ein mehrstufiges Formular | Organisiert Inhalte in ausblendbaren Abschnitten |
-| **Struktur** | Unterschiedliche Abschnitte | Sequenzielle Schritte/Seiten | Reduzierbare Bereiche/Abschnitte |
-| **Navigation** | Klicken Sie auf die Panel-Kopfzeilen, um zu navigieren | - Vorwärts: „Weiter“-Taste<br>- Rückwärts: „Zurück“-Schaltfläche<br>- Optionale Schritte überspringen | Auf Kopfzeilen klicken, um Abschnitte zu erweitern/reduzieren |
-| **Benutzererlebnis** | Organisiert große Inhaltsmengen auf überschaubare Weise | Schritt-für-Schritt-Anleitung zur Verringerung der Überlastung | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
+| **Zweck** | Gruppiert verwandte Inhalte in unterschiedliche Abschnitte | Führt Benutzende durch einen mehrstufigen Prozess oder ein mehrstufiges Formular | Organisiert Inhalte in reduzierbare Abschnitte |
+| **Struktur** | Unterschiedliche Abschnitte | Sequenzielle Schritte/Seiten | Reduzierbare Bedienfelder/Abschnitte |
+| **Navigation** | Klicken Sie zum Navigieren auf die Bedienfeldkopfzeilen | - Vorwärts: „Weiter“-Taste<br>- Rückwärts: „Zurück“-Schaltfläche<br>- Optionale Schritte überspringen | Anklickbare Kopfzeilen zum Erweitern/Reduzieren von Abschnitten |
+| **Anwendererlebnis** | Organisiert große Inhaltsmengen auf überschaubare Weise | Schrittweise Anleitung zur Verringerung der Überlastung | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
 | **Nutzungsszenario** | Komplexe Formulare mit kategorisierten Abschnitten | Einrichtungsprozesse, komplexe Formulare | Häufig gestellte Fragen, Einstellungsmenüs, detaillierte Inhaltsabschnitte |
 | **Am besten für Mobilgeräte** | Mittelgroß - Panels werden vertikal gestapelt | Gut - Fokus bleibt nur auf aktuellen Schritt | Hervorragend - Platz sparend mit ausklappbaren Abschnitten |
 

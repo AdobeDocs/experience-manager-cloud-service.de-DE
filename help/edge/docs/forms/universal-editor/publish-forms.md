@@ -7,20 +7,20 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
 # Veröffentlichen Ihres adaptiven Formulars mit Edge Delivery Services
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
 
 Wenn Ihr Formular fertig gestellt und einsatzbereit ist, können Sie es veröffentlichen, um es Ihrer Kundschaft zur Datenerfassung und -übermittlung zugänglich zu machen. Durch die Veröffentlichung wird sichergestellt, dass das Formular in Edge Delivery verfügbar ist, sodass die Benutzenden nahtlos damit interagieren können. Auf diese Weise kann Ihre Kundschaft das Formular in Echtzeit ausfüllen und übermitteln. Dadurch wird eine effiziente Datenerfassung und eine optimierte Verarbeitung gewährleistet.
 
 ## Voraussetzungen
 
-* Ein Formular, das mit der Vorlage **Edge Delivery Services erstellt**. [Weitere Informationen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) zum Erstellen eines EDS-basierten Formulars.
+* Ein Formular, das mit der **Vorlage „Edge Delivery Services“** erstellt wurde. [Weitere Informationen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) zum Erstellen eines EDS-basierten Formulars.
 
 ## Veröffentlichen des Formulars
 
@@ -38,7 +38,7 @@ Sie können **EDS-basierte adaptive Formulare** in Edge Delivery veröffentliche
 1. Klicken Sie erneut auf **Veröffentlichen**. Daraufhin wird ein Bestätigungs-Popup angezeigt, das angibt, dass Ihr Formular jetzt veröffentlicht wurde.
    ![Erfolgreiche Veröffentlichung](/help/forms/assets/publish-success.png)
 
-1. Um den Veröffentlichungsstatus des Formulars zu überprüfen, klicken Sie erneut **Veröffentlichen**.
+1. Um den Veröffentlichungsstatus des Formulars zu überprüfen, klicken Sie erneut auf **Veröffentlichen**.
    ![Veröffentlichungsstatus](/help/forms/assets/publish-status.png)
 
 1. Um **die Veröffentlichung eines Formulars aufzuheben**, öffnen Sie das Formular im Editor, klicken Sie auf das Menü mit den drei Punkten oben rechts und klicken Sie dann auf **Veröffentlichung aufheben**.

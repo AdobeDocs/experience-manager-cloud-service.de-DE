@@ -7,14 +7,14 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
 
 # Erste Schritte mit Edge Delivery Services für AEM Forms mithilfe des universellen Editors (WYSIWYG)
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Organisationsname adobe und der Repository-Name abc.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
 
 Im heutigen digitalen Zeitalter sind benutzerfreundliche Formulare für jede Organisation schlicht unverzichtbar. Edge Delivery Services-Formulare werden mit dem universellen Editor erstellt, der WYSIWYG(What You See Is What You Get)-Funktionen bietet. Dieser verfügt über eine moderne, intuitive Benutzeroberfläche zur effizienten Formularerstellung.

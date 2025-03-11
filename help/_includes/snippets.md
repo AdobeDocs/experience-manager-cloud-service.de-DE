@@ -2,7 +2,7 @@
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -57,15 +57,15 @@ ht-degree: 94%
 * [Verbinden eines adaptiven Formulars mit Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Erstellen einer benutzerdefinierten Sendeaktion](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
-## universellen Editor{#universal-editor-see-also}
+## Universeller Editor{#universal-editor-see-also}
 
-* [Erstellen des ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Dynamisches Verhalten zu Forms hinzufügen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Konfigurieren und Anpassen von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Veröffentlichen und Bereitstellen von Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Design Beautiful Forms: Styling und Design Anleitung](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Erstellen Ihres ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Hinzufügen von dynamischem Verhalten zu Formularen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Konfigurieren und Anpassen von Sendeaktionen für Formulare](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Veröffentlichen und Bereitstellen von Formularen](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Entwerfen ansprechender Formulare: Anleitung zur Gestaltung und Themenerstellung](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [Erstellen benutzerdefinierter Formularkomponenten](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Forms vor Spam schützen: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Schützen Ihrer Formulare vor Spam: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Siehe auch {#see-more-forms-eds}
 
@@ -253,15 +253,15 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 >* der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zum visuellen Bearbeiten von Headless-Inhalten.
 >* der [Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung von Headless-Inhalten
 
-## universellen Editor{#ue-see-also}
+## Universeller Editor{#ue-see-also}
 
-* [Erstellen des ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Dynamisches Verhalten zu Forms hinzufügen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Konfigurieren und Anpassen von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Veröffentlichen und Bereitstellen von Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Design Beautiful Forms: Styling und Design Anleitung](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Erstellen Ihres ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Hinzufügen von dynamischem Verhalten zu Formularen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Konfigurieren und Anpassen von Sendeaktionen für Formulare](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Veröffentlichen und Bereitstellen von Formularen](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Entwerfen ansprechender Formulare: Anleitung zur Gestaltung und Themenerstellung](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [Erstellen benutzerdefinierter Formularkomponenten](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Forms vor Spam schützen: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Schützen Ihrer Formulare vor Spam: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Siehe auch {#see-more-eds-forms}
 

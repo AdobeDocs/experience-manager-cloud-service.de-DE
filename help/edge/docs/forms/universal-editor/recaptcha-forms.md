@@ -8,7 +8,7 @@ exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Warum sollten Sie reCAPTCHA in Ihren Formularen verwenden?
 
-| ![Sicherheit](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![Bot-Schutz](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![Benutzererlebnis](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+| ![Sicherheit](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![Bot-Schutz](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![Anwendererlebnis](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Erweiterte Sicherheit** | **Bot- und Spam-Schutz** | **Nahtloses Benutzererlebnis** |
 | Schützen Sie Ihre Formulare vor betrügerischen Aktivitäten und böswilligen Angriffen | Verhindern Sie, dass automatisierte Bots Ihre Formulare mit irrelevanten oder schädlichen Inhalten überfluten | Das unsichtbare reCAPTCHA funktioniert hinter den Kulissen, ohne rechtmäßige Benutzer zu stören |

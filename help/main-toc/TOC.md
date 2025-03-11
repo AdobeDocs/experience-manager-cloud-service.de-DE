@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
 workflow-type: tm+mt
 source-wordcount: '6239'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -1035,34 +1035,34 @@ ht-degree: 95%
       + [Funktionsweise von Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Häufig gestellte Fragen](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG-Authoring {#universal-editor}
-         + [Einführung in den universellen Editor von Forms für Edge Delivery Services - vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Einführung in den universellen Editor von Forms für Edge Delivery Services – vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Beginnen des Authorings mit dem universellen Editor - Tutorial Schritt für Schritt](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Erstellen des ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Handbuch zur Benutzeroberfläche des universellen Editors: Tools, Funktionen und Navigation - Erklärung](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Handbuch zur Benutzeroberfläche des universellen Editors: Erklärung der Tools, Funktionen und Navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Mobiles Arbeiten mit Forms: Responsives Design im universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Design Beautiful Forms: Stil- und Design-Anleitung für den universellen Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Entwerfen ansprechender Formulare: Anleitung zur Gestaltung und Themenerstellung für den universellen Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [Hinzufügen von dynamischem Verhalten zu Forms: Vollständiges Handbuch zum Regeleditor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Anleitung zur Formularübermittlung: Konfigurieren und Anpassen von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Forms vor Spam schützen: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Veröffentlichen und Bereitstellen von Forms: Veröffentlichungshandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Handbuch zum Senden von Formularen: Konfigurieren und Anpassen von Sendeaktionen für Formulare](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Schützen Ihrer Formulare vor Spam: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Veröffentlichen und Bereitstellen von Formularen: Veröffentlichungshandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + Dokumentenbasierte Authoring-{#getting-started-edge-delivery-services-forms}
-         + [Erstellen Sie Ihr erstes Formular: Schnellstartanleitung mit Google Sheets und Excel](/help/edge/docs/forms/tutorial.md)
-         + [So erstellen Sie Forms mit Google Sheets oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)
+      + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
+         + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
+         + [Erstellen von Formularen mit Google Tabellen oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)
          + [Verschiedene Komponenten des adaptiven Formularblocks](/help/edge/docs/forms/form-components.md)
-         + [Verbinden Ihres Formulars mit Google Sheets: Einrichtungshandbuch für die Datenerfassung](/help/edge/docs/forms/submit-forms.md)
-         + [Formular live schalten: Handbuch zur Veröffentlichung und Datenerfassung](/help/edge/docs/forms/publish-forms.md)
-         + [Formularfeldvalidierung: Hinzufügen von Fehlerprüfungen zu Ihrer Forms](/help/edge/docs/forms/validate-forms.md)
-         + [Design Beautiful Forms: Handbuch zu Stil und Anpassung](/help/edge/docs/forms/style-theme-forms.md)
-         + [Erstellen von Erfolgsnachrichten: Passen Sie die Dankeseite Ihres Formulars an](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Anleitung zur Formularübermittlung: Verwenden des Forms-Übermittlungsdienstes](/help/forms/forms-submission-service.md)
-         + [Dynamische Formularfelder: Optionen aus URLs werden geladen](/help/edge/docs/forms/load-options-from-url.md)
-         + [Intelligentes Verhalten hinzufügen: Formularregeln und Logikhandbuch](/help/edge/docs/forms/rules-forms.md)
-         + [Erweiterte Formularvalidierung: Handbuch zu regulären Ausdrücken](/help/edge/docs/forms/regex-forms.md)
-         + [Wiederverwendbare Forms erstellen: Handbuch zu Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
-         + [Erstellen einer dynamischen Forms: Hinzufügen wiederholbarer Abschnitte](/help/edge/docs/forms/repeatable-forms.md)
-         + [Ihr Formular global gestalten: Handbuch zur Formularübersetzung](/help/edge/docs/forms/translate-forms.md)
-         + [Schützen der Forms: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Verbinden Ihres Formulars mit Google Tabellen: Anleitung zur Einrichtung der Datenerfassung](/help/edge/docs/forms/submit-forms.md)
+         + [Live-Schalten Ihres Formulars: Anleitung zur Veröffentlichung und Datenerfassung](/help/edge/docs/forms/publish-forms.md)
+         + [Formularfeldvalidierung: Hinzufügen von Fehlerprüfungen zu Ihren Formularen](/help/edge/docs/forms/validate-forms.md)
+         + [Entwerfen ansprechender Formulare: Anleitung zur Gestaltung und Anpassung](/help/edge/docs/forms/style-theme-forms.md)
+         + [Erstellen von Erfolgsmeldungen: Anpassen der Dankeseite Ihres Formulars](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Anleitung zur Formularübermittlung: Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
+         + [Dynamische Formularfelder: Laden von Optionen aus URLs](/help/edge/docs/forms/load-options-from-url.md)
+         + [Hinzufügen von intelligentem Verhalten: Anleitung zu Formularregeln und -logik](/help/edge/docs/forms/rules-forms.md)
+         + [Erweiterte Formularvalidierung: Anleitung zu regulären Ausdrücken](/help/edge/docs/forms/regex-forms.md)
+         + [Erstellen wiederverwendbarer Formulare: Anleitung zu Formularfragmenten](/help/edge/docs/forms/form-fragments.md)
+         + [Erstellen dynamischer Formulare: Hinzufügen wiederholbarer Abschnitte](/help/edge/docs/forms/repeatable-forms.md)
+         + [Globalisieren Ihres Formulars: Anleitung zur Formularübersetzung](/help/edge/docs/forms/translate-forms.md)
+         + [Schützen Ihrer Formulare: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
          + [Überwachen der Formularleistung: Handbücher zur realen Überwachung](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery-Ressourcen {#resources}
@@ -1156,7 +1156,7 @@ ht-degree: 95%
          + [Erfahren Sie mehr über die Definition von Metadaten und Tagging für Inhaltsfragmente](/help/journey-headless/author/metadata-tagging.md)
 + Generative KI {#generative-ai}
    + [Varianten generieren](/help/generative-ai/generate-variations.md)
-   + [Varianten generieren - in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Assistent (eingeschränkte Beta-Version)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementieren {#implementing}
    + [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)

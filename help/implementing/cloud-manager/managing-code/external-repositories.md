@@ -7,7 +7,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
 workflow-type: tm+mt
 source-wordcount: '1614'
-ht-degree: 43%
+ht-degree: 46%
 
 ---
 
@@ -50,7 +50,7 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt in drei Sc
    | Feld | Beschreibung |
    | --- | --- |
    | **Repository-Name** | Erforderlich. Ein aussagekräftiger Name für Ihr neues Repository. |
-   | **Repository-URL** | Erforderlich. Die URL des Repositorys.<br><br>Wenn Sie ein von GitHub gehostetes Repository verwenden, muss der Pfad auf `.git` enden.<br>Beispiel: *`https://github.com/org-name/repo-name.git`* (URL-Pfad dient nur zu Illustrationszwecken).<br><br>Wenn Sie ein externes Repository verwenden, muss es das folgende URL-Pfadformat verwenden:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> oder <br>`https://self-hosted-domain/org-name/repo-name.git`<br>. Außerdem muss es mit Ihrem Git-Anbieter übereinstimmen. |
+   | **Repository-URL** | Erforderlich. Die URL des Repositorys.<br><br>Wenn Sie ein von GitHub gehostetes Repository verwenden, muss der Pfad mit `.git` enden.<br>Beispiel: *`https://github.com/org-name/repo-name.git`* (URL-Pfad dient nur zu Illustrationszwecken).<br><br>Wenn Sie ein externes Repository verwenden, muss es das folgende URL-Pfadformat verwenden:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> oder <br>`https://self-hosted-domain/org-name/repo-name.git`<br>. Außerdem muss es mit Ihrem Git-Anbieter übereinstimmen. |
    | **Repository-Typ auswählen** | Erforderlich. Wählen Sie den verwendeten Repository-Typ aus:<ul><li>**GitHub** (GitHub Enterprise Server und die selbst gehostete Version von GitHub)</li><li>**GitLab** (sowohl `gitlab.com` als auch die selbst gehostete Version von GitLab) </li><li>**Bitbucket** (sowohl `bitbucket.org` als auch Bitbucket Server und die selbst gehostete Version von Bitbucket)</li></ul>Wenn der obige Repository-URL-Pfad den Namen des Git-Anbieters enthält, z. B. GitLab oder Bitbucket, ist der Repository-Typ bereits für Sie vorausgewählt. |
    | **Beschreibung** | Optional. Eine längere Beschreibung des Repositorys. |
 
@@ -210,7 +210,7 @@ Es gelten die folgenden Verhaltensweisen:
 ## Einschränkungen
 
 * Externe Repositorys können nicht mit Konfigurations-Pipelines verknüpft werden.
-* Pipelines mit externen Repositorys (nicht auf GitHub gehostet) und dem Trigger „Bei Git-Änderungen“ werden nicht automatisch gestartet. Sie können nur manuell initiiert werden.
+* Pipelines mit externen Repositorys (die nicht von GitHub gehostet werden) und der Auslöser „Bei Git-Änderungen“ starten nicht automatisch. Sie können nur manuell gestartet werden.
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
