@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Erfahren Sie, wie die Vorlagenkonsole als zentraler Speicherort zum Anzeigen und
 
 ## Überblick {#overview}
 
-Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Mit den bearbeitbaren Vorlagen von [AEM](/help/implementing/developing/components/templates.md) können Sie die Struktur der resultierenden Seite, jeden anfänglichen Inhalt und die verwendbaren Komponenten (Design-Eigenschaften) definieren.
+Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. [Bearbeitbare Vorlagen von AEM](/help/implementing/developing/components/templates.md) können die Struktur der resultierenden Seite, jeden anfänglichen Inhalt und die Komponenten definieren, die verwendet werden können (Design-Eigenschaften).
 
 Inhaltsautoren werden eine Auswahl verfügbarer Vorlagen angezeigt, wenn sie [neue Seiten in der Sites-Konsole erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md). Vorlagen können verwendet werden, um Seiten zu erstellen, die bearbeitet werden können mit:
 
@@ -49,7 +49,7 @@ Wählen Sie eine Vorlage aus, um die in der Symbolleiste verfügbaren Optionen a
 * [Bearbeiten](#edit-edit)
 * [Eigenschaften](#properties)
 * [Deaktivieren/Aktivieren](#enable-disable)
-* [Publish](#publish)
+* [Veröffentlichen](#publish)
 * [Kopieren](#copy)
 * [Löschen](#delete)
 
@@ -95,12 +95,12 @@ Wenn eine Vorlage erstellt wird, befindet sie sich standardmäßig entweder im S
 
 Eine Vorlage muss aktiviert sein, damit sie von Inhaltsautoren zum Erstellen von Seiten verwendet werden kann. Wenn eine Vorlage nicht mehr benötigt wird, kann sie deaktiviert werden, sodass sie nicht mehr im Seitenerstellungsassistenten angezeigt wird.
 
-* Wählen Sie die Vorlage aus und klicken oder tippen Sie auf **Deaktivieren**, um die Vorlage zu deaktivieren.
-* Wählen Sie die Vorlage aus und klicken oder tippen Sie auf **Aktivieren**, um die Vorlage zu aktivieren.
+* Wählen Sie die Vorlage aus und klicken Sie auf **Deaktivieren**, um die Vorlage zu deaktivieren.
+* Wählen Sie die Vorlage aus und klicken Sie auf **Aktivieren**, um die Vorlage zu aktivieren.
 
 ## Veröffentlichung {#publish}
 
-Eine mit dem Vorlageneditor erstellte Vorlage kann erst nach ihrer Veröffentlichung verwendet werden. Wählen Sie die Vorlage aus und klicken oder tippen Sie zum Veröffentlichen auf **0}Publish.**
+Eine mit dem Vorlageneditor erstellte Vorlage kann erst nach ihrer Veröffentlichung verwendet werden. Wählen Sie die Vorlage aus und klicken Sie auf **Veröffentlichen**, um sie zu veröffentlichen.
 
 Mit dem universellen Editor erstellte Vorlagen müssen nicht veröffentlicht werden, damit sie verwendet werden können.
 
@@ -117,7 +117,7 @@ Nach dem Einfügen können Sie:
 * [Bearbeiten Sie die Vorlage](#edit) um sie nach Bedarf anzupassen.
 * [Verwenden Sie das Fenster „Eigenschaften](#properties), um den Vorlagentitel zu aktualisieren.
 * [Aktivieren Sie die ](#enable-disable), damit sie zum Erstellen der Seite verwendet werden kann.
-* [Publish die Vorlage](#publish) falls erforderlich.
+* [Veröffentlichen Sie bei ](#publish) die Vorlage.
 
 >[!TIP]
 >
