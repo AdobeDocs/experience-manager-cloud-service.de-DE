@@ -2,10 +2,10 @@
 title: Gruppenmigration
 description: Überblick über die Gruppenmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: bb041cf13d5e82fc4135f0849b03eeeed9a5d009
-workflow-type: ht
-source-wordcount: '1476'
-ht-degree: 100%
+source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+workflow-type: tm+mt
+source-wordcount: '1914'
+ht-degree: 57%
 
 ---
 
@@ -60,24 +60,50 @@ Die CTT-Version 3.0.20 und höher enthält eine Option zur Deaktivierung der Mig
 * Deaktivieren Sie die Option **Gruppen in die Migration einbeziehen**, um Gruppenmigrationen zu deaktivieren
 * Klicken Sie auf **Speichern**, um sicherzustellen, dass die Konfiguration auf dem Server gespeichert wird und aktiv ist
 
-Wenn diese Einstellung deaktiviert ist, werden keine Gruppen migriert und es gibt weder einen Bericht zur Prinzipalmigration noch einen Benutzerbericht.
+Wenn diese Einstellung deaktiviert ist, werden Gruppen nicht migriert und es wird kein Prinzipalmigrationsbericht und kein Benutzerbericht angezeigt (siehe unten).
 
-## Benutzerbericht {#user-report}
+## Bericht zur Prinzipalmigration und Benutzerbericht {#principal-migration-report}
 
-Während der Migration werden Benutzende zwar nicht migriert, aber die Benutzergruppenbeziehungen im Quellsystem gehen verloren, es sei denn, sie werden auf irgendeine Weise erfasst.  Der Benutzerbericht erfasst einige dieser Informationen im Textformat in einem Benutzerbericht. Jede Benutzerin und jeder Benutzer wird gemeldet (eine Person pro Zeile) sowie eine Liste der Gruppen, denen die Person angehört (nicht migrierte Gruppen werden jedoch nicht in diese Liste aufgenommen), es sei denn, die Liste der Gruppen ist leer. In diesem Fall wird die Person nicht angezeigt. Die mit jeder Benutzerin bzw. jedem Benutzer gemeldeten Gruppen sind diejenigen, denen die Person direkt oder indirekt im Quellsystem angehört. Da es sein kann, dass Gruppen im Quellsystem verschachtelt sind, aber im Zielsystem nicht, unterstützt diese Gruppenliste die neue reduzierte Gruppenstruktur in IMS.
+Wenn während der Migration Gruppen enthalten sind (Standard), wird ein Bericht zur Prinzipalmigration gespeichert, in dem beschrieben wird, was während der Migration mit den einzelnen Gruppen passiert.  So laden Sie diesen Bericht nach erfolgreicher Aufnahme herunter:
+* Wechseln Sie in CAM zu Inhaltstransfer und wählen Sie Aufnahmevorgänge aus.
+* Klicken Sie auf die Auslassungszeichen (…) in der Zeile der betreffenden Aufnahme und wählen Sie „Prinzipalzusammenfassung anzeigen“.
+* Wählen Sie im angezeigten Dialogfeld in der Dropdown-Liste unter „Datei herunterladen…“ die Option „Prinzipalmigrationsbericht“ und klicken Sie auf die Schaltfläche Herunterladen .
+* Speichern Sie die resultierende CSV-Datei.
 
-Bei einer löschenden und einer anschließenden nicht löschenden Aufnahme enthalten die Gruppen in der Liste einer Benutzerin oder eines Benutzers die Gruppen, die in beiden Phasen migriert wurden.
+Einige der aufgezeichneten Informationen pro Gruppe sind:
+* Bei einer Migration der Pfad zur ersten ACL oder CUG, die die Migration der Gruppe verursacht hat.
+* Gibt an, ob die Gruppe zuvor migriert wurde. Wenn die aktuelle Aufnahme eine Nicht-Löschaufnahme war, wurden einige Gruppen möglicherweise während einer vorherigen Aufnahme migriert.
+* Ob die Gruppe eine integrierte Gruppe ist; diese Gruppen werden nicht migriert, da sie sich immer in der AEMaaCS-Zielumgebung befinden.
+* Wenn die Gruppe nicht Teil einer ACL oder CUG für den migrierten Inhalt war, wurde sie nicht migriert.
+* Handelt es sich bei der Gruppe um eine lokale Gruppe, z. B. eine Gruppe, die durch eine Assets-Sammlung erstellt wurde, wurde sie möglicherweise migriert. In diesem Fall wird dem Bericht für diese Gruppe das Wort „lokal“ hinzugefügt.
 
-Neben den Gruppen für jede Benutzerin und jeden Benutzer gibt es ein Feld im Bericht, in dem für die Person Notizen hinzugefügt werden können (eine detaillierte Beschreibung der Bedeutung der Notiz ist ebenfalls im Bericht enthalten).  Mögliche Notizen sind:
+Während der Migration werden Benutzende nicht migriert, aber die Benutzergruppenbeziehungen im Quellsystem gehen verloren, sofern sie nicht auf andere Weise erfasst werden. Der Aufnahmeprozess erfasst einige dieser Informationen im Textformat in einem Benutzerbericht, der sich am Ende des Prinzipalmigrationsberichts befindet.
 
-* Benutzende, auf die direkt in einer ACL verwiesen wird, haben in ihrem Hinweisabschnitt den Eintrag *Hinweis-A*, da dies kein empfohlener Anwendungsfall und keine empfohlene Best Practice ist.
-* Benutzende, die direkte Mitglieder einer integrierten Gruppe sind, haben in ihrem Hinweisabschnitt den Eintrag *Hinweis-B*, da dies ebenfalls kein empfohlener Anwendungsfall und keine empfohlene Best Practice ist.
+### Benutzerbericht {#user-report}
 
-Diese Fälle können gleichzeitig auftreten, aber auch zur selben Zeit wie die früheren Fälle.
+Im Abschnitt Benutzerbericht werden Benutzer (einer pro Zeile) zusammen mit ihrer E-Mail-Adresse und einer Liste von IMS-aktivierten Gruppen gemeldet, die während dieser Aufnahme migriert wurden.  Gruppen, die nicht migriert wurden, bei einer früheren Aufnahme migriert wurden oder lokale Gruppen sind, sind nicht in der Liste enthalten.   Wenn ein(e) Benutzende(r) keiner migrierten IMS-aktivierten Gruppe angehört und keine zusätzlichen Hinweise hat, die darauf hinweisen, dass es sich um einen Sonderfall handelt (siehe **Hinweise** unten), wird dieser/_Benutzende_ im Bericht angezeigt. Bei den für jeden Benutzer gemeldeten Gruppen handelt es sich um die Gruppen, denen der Benutzer direkt oder indirekt im Quellsystem angehört. Da Gruppen im Quellsystem verschachtelt sein können, im Zielsystem aber nicht, wird die neue reduzierte Gruppenstruktur in IMS von dieser Gruppenliste unterstützt.
 
-Der Benutzerbericht wird am Ende des Berichts zur Prinzipalmigration hinzugefügt und ist daher Teil dieses Berichts (siehe [Endgültige Zusammenfassung und Bericht](#final-summary-and-report) unten).  Mit den Informationen in diesem Bericht, einschließlich der für jede Benutzerin und jeden Benutzer gemeldeten Gruppen, kann eine Massen-Benutzer-Upload-Datei erstellt werden, die in der Admin Console verwendet werden kann, um in IMS eine große Anzahl von Benutzenden zu erstellen.  Vorhandene IMS-Benutzende können auch massenhaft bearbeitet werden.
+Im Falle einer Löschvorgang- und dann einer Nicht-Löschaufnahme sind die Gruppen in der Benutzerliste aus der Nicht-Löschaufnahme nur die Gruppen, die während der Nicht-Löschphase migriert wurden.
 
-Weitere Informationen zur Massenerstellung oder -bearbeitung von Benutzenden über die Admin Console finden Sie unter [Verwalten mehrerer Benutzender | CSV-Massen-Upload](https://helpx.adobe.com/de/enterprise/using/bulk-upload-users.html).
+#### Anmerkungen {#user-report-notes}
+
+Zusätzlich zu den Gruppen für jeden Benutzer gibt es ein Feld im Benutzerbericht, in dem Hinweise zum Benutzer zu Informationszwecken bereitgestellt werden können (und eine detaillierte Beschreibung der Bedeutung der Anmerkung ist auch im Bericht enthalten).  Mögliche Hinweise sind:
+
+* **Hinweis-A** Benutzer, auf die direkt in einer ACL verwiesen wird, haben *Hinweis-A* in ihrem Notizenabschnitt, da dies kein empfohlener Anwendungsfall oder keine Best Practice ist.
+* **Hinweis-B** Benutzer, die direkte Mitglieder einer integrierten Gruppe sind, haben *Hinweis-B* in ihrem Notizenabschnitt, da dies auch kein empfohlener Anwendungsfall oder keine Best Practice ist.
+* **Hinweis-C** Benutzer, die direkt oder indirekt Mitglieder einer migrierten lokalen Gruppe sind (z. B. einer Gruppe, die durch eine Assets-Sammlung erstellt wurde), haben *Hinweis-C* im Abschnitt „Anmerkungen“, da lokale Gruppen nicht für die Verwaltung durch IMS konfiguriert sind.
+
+Diese Fälle können gleichzeitig und auch gleichzeitig mit den früheren Fällen auftreten.  _Weitere Informationen dazu, auf welche Gruppen sich die einzelnen Notizen für die einzelnen Benutzenden beziehen, finden Sie im Aufnahmeprotokoll. Es enthält diese Informationen für jeden einzelnen Benutzenden._
+
+Der Benutzerbericht wird am Ende des Hauptmigrationsberichts hinzugefügt (und ist daher Teil des Berichts zur Migration (siehe [Endgültige Zusammenfassung und Bericht](#final-summary-and-report) unten), um Kunden ein vollständigeres Verständnis der Gruppen und Benutzer und ihrer Beziehungen zu vermitteln.
+
+## Massen-Upload von Dateien {#bulk-upload-files}
+
+Da Gruppen nur nach AEM as a Cloud Service migriert werden, müssen sie auch zu IMS hinzugefügt werden, damit sie ordnungsgemäß mit AEM in der Cloud arbeiten können. Darüber hinaus werden Benutzer nicht migriert, sodass sie auch zu IMS hinzugefügt werden müssen. Das CTT/CAM-Migrations-Tool führt diesen Schritt nicht aus, aber der Aufnahmeprozess erstellt zwei Massen-Upload-Dateien, eine für Gruppen und eine für Benutzende. Diese Dateien können bearbeitet und dann zusammen mit der Massen-Upload-Funktion von Admin Console verwendet werden, um IMS-Gruppen und -Benutzende basierend auf Ihren AEM-Gruppen und -Benutzenden zu erstellen.
+
+Unter [Massen-Upload von Gruppen und Benutzenden in IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md) finden Sie weitere Informationen zur Verwendung von Massen-Upload-Dateien zum Erstellen von Benutzenden und Gruppen mit der Admin Console.
+
+Siehe auch [Verwalten von Benutzern](https://helpx.adobe.com/ca/enterprise/using/users.html) für weitere Informationen zur Verwaltung von AEM as a Cloud Service-Benutzern.
 
 ## Zusätzliche Überlegungen {#additional-considerations}
 

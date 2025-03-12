@@ -4,10 +4,10 @@ description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer 
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 100%
+source-wordcount: '1220'
+ht-degree: 96%
 
 ---
 
@@ -145,13 +145,14 @@ Navigieren Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf die Schaltfläche **Bericht herunterladen**, um den vollständigen Bericht im durch Kommas getrennten Format (CSV) herunterzuladen.  Beachten Sie außerdem, dass sich am Ende dieses Berichts der Benutzerbericht befindet, der für die Benutzerverwaltung nach der Migration verwendet werden kann.
+Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Um den vollständigen kommagetrennten (CSV) Prinzipalmigrationsbericht herunterzuladen, wählen Sie **Prinzipalmigrationsbericht** aus der Dropdown-Liste unter **Datei herunterladen…** und klicken Sie auf die Schaltfläche **Herunterladen**. Beachten Sie außerdem, dass sich am Ende dieses Berichts der Benutzerbericht befindet, der für die Benutzerverwaltung nach der Migration verwendet werden kann.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 Im Bericht „Prinzipalmigration“ wird Folgendes angegeben:
 
 * Jede migrierte Gruppe und der erste Inhaltspfad, der die Migration dieser Gruppe ausgelöst hat. Die Gruppe kann sich auch auf anderen Pfaden befinden, es wird jedoch nur der erste gemeldet, der für eine bestimmte Gruppe gefunden wird. Es wird auch gemeldet, ob der Pfad in einer ACL- oder einer CUG-Richtlinie gefunden wurde.
+* Jede Gruppe, die als lokale Gruppe migriert wird, hat das Wort „local“ in der Zeile der Gruppe.
 * Jede nicht migrierte Gruppe und der Grund, aus dem sie nicht migriert wurde.  In der Regel liegt einer der folgenden Gründe vor:
    * Es handelt sich um eine integrierte Gruppe
    * Sie befindet sich bereits im Zielsystem
