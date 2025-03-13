@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Es könnte aus folgenden Gründen erforderlich sein, dass Sie die Konfiguration 
 
 1. Klicken Sie auf **Bearbeiten**.
 
-1. Gehen Sie im Dialogfeld **CDN-Konfiguration bearbeiten** wie folgt vor:
+1. Gehen Sie **Dialogfeld Domain** Konfiguration bearbeiten wie folgt vor:
 
    * Wählen Sie aus der Dropdown-Liste **Ebene** die Ebene (Veröffentlichung oder Vorschau) aus, die Sie verwenden möchten.
    * Wählen Sie in der Dropdown-Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das Sie verwenden möchten.
@@ -112,7 +112,7 @@ Benutzende mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** 
 
 1. Navigieren Sie von der Seite **Umgebungen** zum Bildschirm „Umgebungsdetails“ der betreffenden Umgebung.
 
-1. Ermitteln Sie in der Tabelle mit den Domain-Namen die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie löschen möchten.
+1. Identifizieren Sie in der Tabelle der Domain-Zuordnungen die Zeile des benutzerdefinierten Domain-Namens, den Sie löschen möchten.
 
 1. Klicken Sie ganz rechts in der Zeile auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
