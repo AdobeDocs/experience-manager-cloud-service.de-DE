@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 48%
+source-wordcount: '1493'
+ht-degree: 46%
 
 ---
 
@@ -59,6 +59,10 @@ Die Unterstützung der Inhaltsfragment-UUID ist jetzt allgemein verfügbar. Die 
 **Dynamic Media mit OpenAPI-Unterstützung im Inhaltsfragment-Editor und in GraphQL**
 
 Assets, die in anderen AEM as a Cloud Service-Programmen als Inhaltsfragmenten gespeichert sind und die mit der neuen Dynamic Media-Funktion mit OpenAPI-Funktion aktiviert sind, können jetzt in Inhaltsfragmenten verwendet werden. Mit der Bildauswahl im neuen Inhaltsfragment-Editor können jetzt „Remote“-Repositorys als Quelle für Bild-Assets ausgewählt werden, auf die im Fragment verwiesen werden soll. Und bei der Bereitstellung solcher Inhaltsfragmente mit AEM GraphQL enthält die JSON-Antwort jetzt die erforderlichen Eigenschaften für Remote-Assets (assetId, repositoryId), damit Client-Anwendungen entsprechende Dynamic Media-Dateien mit OpenAPI-URLs erstellen können, um das Bild abzurufen.
+
+**Rollout des Inhaltsfragment-Editors**
+
+Wir werden den neuen, auf der Spectrum-Benutzeroberfläche basierenden Inhaltsfragment-Editor in AEM as a Cloud Service weiterhin aktivieren. Nachdem sie im November 2024 zur Standardeinstellung für alle Cloud Service-Entwicklungsumgebungen wurde, wird sie ab dem 1. April 2025 für alle Staging-Umgebungen und ab dem 1. Mai 2025 für alle Produktionsumgebungen als Standard festgelegt. In allen Fällen haben Benutzende weiterhin die Möglichkeit, zum herkömmlichen Inhaltsfragment-Editor in der Touch-optimierten AEM-Benutzeroberfläche zurückzukehren.
 
 **Übersetzungs-HTTP-API**
 
