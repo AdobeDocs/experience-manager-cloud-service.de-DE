@@ -1,76 +1,48 @@
 ---
-title: Versionshinweise für Cloud Manager 2025.2.0 in Adobe Experience Manager as a Cloud Service
-description: Erfahren Sie mehr über die Version Cloud Manager 2025.2.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service
+description: Erfahren Sie mehr über die Version Cloud Manager 2025.3.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: aaef376b733c10643e44205e55a0921c22008990
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 31%
 
 ---
 
-# Versionshinweise für Cloud Manager 2025.2.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
+<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Erfahren Sie mehr über die Version Cloud Manager 2025.2.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Erfahren Sie mehr über die Version Cloud Manager 2025.3.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 
 Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Veröffentlichungsdaten {#release-date}
 
-Die Version 2025.2.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, dem 13. Februar 2025 veröffentlicht.
+Die Version 2025.3.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, dem Freitag, 13. März 2025 veröffentlicht.
 
-Die Veröffentlichung der nächsten Version ist für Donnerstag, dem 13. März 2025 geplant.
+Die Veröffentlichung der nächsten Version ist für Donnerstag, dem Freitag, 10. April 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Aktualisierung der Code-Qualitätsregeln**
+* **Mehrere Pipelines ausführen**
 
-  Seit Donnerstag, dem 13. Februar 2025, verwendet der Qualitätsschritt im Cloud Manager-Code jetzt SonarQube 9.9.5.90363.
+  Die Möglichkeit, mehrere Pipelines gleichzeitig auszuführen, wurde auf der Seite Pipelines eingeführt. Benutzer müssen mindestens eine Pipeline, aber nicht mehr als zehn auswählen. Klicken Sie oben rechts auf der Seite Pipelines auf **Ausgewählte ausführen (x)**. Es wird ein modales Dialogfeld angezeigt, in dem alle Pipelines aufgelistet sind, die nicht gestartet werden können. Klicken Sie **Ausführen**, um alle gültigen Pipelines zu starten.
 
-  Die aktualisierten Regeln, die für Cloud Manager in AEM as a Cloud Service unter [diesem Link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) verfügbar sind, gelten für die Sicherheitsbewertungen und die Code-Qualität für Cloud Manager-Pipelines.
+  ![Dialogfeld „Ausgewählte Pipelines ausführen“](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
 
-* SonarQube 9.9 ist jetzt für alle Kundinnen und Kunden die Standard-Engine zur Überprüfung der Code-Qualität.
+* **Die Unterstützung wurde auf Node.js-Versionen erweitert**
 
-* **Build-Unterstützung für Java 17 und Java 21**
+  Die Frontend-Build-Umgebung unterstützt jetzt die folgenden `Node.js`:
 
-  Kundinnen und Kunden können jetzt mit Java 17 oder Java 21 erstellen und erhalten Zugriff auf Leistungsverbesserungen und neue Sprachfunktionen. Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Wenn die Build-Version auf Java 17 oder Java 21 festgelegt ist, wird Java 21 als Laufzeit bereitgestellt.
+   * 23
+   * 22
+   * 20
 
-* **SLA-Reporting mit Verfügbarkeit von 99,99 % für Edge Delivery Services**
-
-  Für qualifizierte Edge Delivery Services-Programme ist jetzt ein Reporting mit einer hohen Verfügbarkeit von 99,99 % verfügbar. Um diese Funktion zu aktivieren, müssen Kundinnen bzw. Kunden ihre Edge Delivery Services-Sites erfolgreich integrieren und ihr Service Level Agreement (SLA) von 99,99 % in Cloud Manager anwenden.
-
-  Weitere Informationen finden Sie unter [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
-
-* **Verbessertes Einladen von Benutzenden für Edge Delivery Services**
-
-  Das Verfahren zum Einladen von Benutzenden in das mit Edge Delivery Services verknüpfte Content-Repository wurde verbessert. <!-- CMGR-65331 -->
-
-* **Automatische Erstellung von Admin-Profilen auf Veröffentlichungsinstanzen**
-
-  Zuvor ermöglichte Cloud Manager die manuelle Erstellung von Admin-Profilen auf Veröffentlichungsinstanzen, unterstützte jedoch nicht standardmäßig die automatische Erstellung. Mit diesem Update werden jetzt automatisch Admin-Profile in Veröffentlichungsinstanzen erstellt, was die Benutzerfreundlichkeit verbessert und die Einrichtungszeit für Kundinnen und Kunden reduziert.
-
-  Weitere Informationen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
-
-  ![Filtern von Pipeline-Aktivitäten](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
-
-* **Übergang zu OAuth für Cloud Service-Umgebungen**
-
-  In neuen Cloud Service-Umgebungen wird jetzt die OAuth-basierte Service-to-Service-Authentifizierung für Adobe Developer Console-Integrationsprojekte anstelle der zuvor verwendeten JWT-Authentifizierungsmethode verwendet. Die JWT-Authentifizierung wird nicht mehr unterstützt und ihre Einstellung ist für Juni 2025 geplant.
-
-* **Unterstützung für private EC-Schlüssel (Elliptic Curve) (secp384r1)**
-
-  Cloud Manager unterstützt jetzt private `secp384r1`-EC-Schlüssel (Elliptic Curve) und bietet so verbesserte Sicherheit und Compliance für kundenseitig verwaltete OV/EV-SSL-Zertifikate.
-Weitere Informationen finden Sie unter [Anforderungen für kundenseitig verwaltete OV/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
-
-* **Spezialisierte Testumgebungen**
-
-  Ab dem 27. Februar 2025 steht Early Adoptern eine neue Entwicklungsumgebung mit erweiterten Ressourcen zur Verfügung.
-
+  Siehe auch [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions). <!-- CMGR-65307 -->
 
 <!--
 ## Early adoption program {#early-adoption}
@@ -80,16 +52,13 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ## Fehlerbehebungen
 
-* **(UI) Es wurde ein Problem behoben, das die CDN-Konfiguration für Domains in Cloud Manager verhinderte.**
-Bei Kundinnen und Kunden, die versuchten, eine CDN-Konfiguration in Cloud Manager hinzuzufügen, trat ein Bildschirmfehler auf, wenn sie eine Domain aus dem Dropdown-Menü auswählten. Dieser Benutzeroberflächenfehler verhinderte die Domain-Zuordnung in Produktionsumgebungen und blockierte so den Konfigurationsprozess.
+* **(UI)-Fehlerbehebung für Aktualisierungen der „erweiterten Netzwerkkonfiguration“ in Cloud Manager**
 
-  Darüber hinaus war der Zugriff auf einige Domains im Backend weiterhin nicht möglich, obwohl diese aus der Benutzeroberfläche entfernt wurden. Dieses Problem führte zu Konflikten mit vorhandenen CDN-Konfigurationen.
+  Ein seltenes Problem, das Aktualisierungen der **erweiterten Netzwerkkonfiguration“**, wenn eine Benachrichtigung „Update verfügbar“ vorhanden war, wurde behoben. Zuvor wurden Konfigurationsänderungen, einschließlich erweiterter Netzwerkeinstellungen, von Cloud Manager gesperrt, um Konflikte während eines Updates zu vermeiden. Kunden können jetzt die ausstehende Aktualisierung manuell mit Triggern versehen, um die erforderlichen Änderungen ohne Einschränkungen anzuwenden. <!-- CMGR-65913 and CMGR-65788 -->
 
-  Mit dieser Fehlerbehebung können Sie jetzt eine Domain erfolgreich aus dem Dropdown-Menü auswählen, ohne dass ein Fehler auftritt. Backend-Inkonsistenzen, die eine Domain-Neukonfiguration verhinderten, wurden behoben. Schließlich stellt die verbesserte Validierung jetzt sicher, dass widersprüchliche Domains ordnungsgemäß entfernt werden, bevor sie erneut hinzugefügt werden.<!-- CMGR-64888 -->
-* **(Backend) Es wurde ein Problem behoben, bei dem SSL-Ablaufbenachrichtigungen mehrmals gesendet wurden.**
-Es wurde ein Fehler entdeckt, durch den die SSL-Ablaufbenachrichtigungsplanung, die einmal täglich um Mitternacht ausgeführt werden soll, fälschlicherweise zweimal täglich um Mitternacht und erneut um 00:30 Uhr ausgelöst wurde. Dieses Problem führte dazu, dass mehrere redundante Benachrichtigungen zu ablaufenden SSL-Zertifikaten gesendet wurden.
+* **(UI)-Fehlerbehebung für Aktualisierungen der IP-Zulassungsliste, die im Status „Wird aktualisiert“ stecken bleiben**
 
-  Die Benachrichtigungsplanung wird jetzt korrekt nur einmal pro Tag, wie vorgesehen, ausgeführt. Außerdem erhalten Sie keine doppelten SSL-Ablaufbenachrichtigungen mehr. <!-- CMGR-64748 -->
+  Ein seltenes Problem, bei dem IP-Konfigurationsaktualisierungen in Cloud Manager aufgrund einer doppelten aktiven Domain-Zulassungsliste für eine Umgebung im Status „Wird aktualisiert“ blieben, wurde behoben. Zuvor kam es bei Kunden zu unbegrenzten Verarbeitungsverzögerungen bei der Aktualisierung von IP-Zulassungslisten, was die erforderlichen Anpassungen des Netzwerkzugriffs verhinderte. Durch diese Fehlerbehebung wird sichergestellt, dass Aktualisierungen der IP-Zulassungsliste jetzt erfolgreich abgeschlossen werden können, ohne hängen zu bleiben. <!-- CMGR-65786 -->
 
 
 
