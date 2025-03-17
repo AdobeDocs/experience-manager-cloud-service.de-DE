@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Ein Formulardatenmodell (FDM) ist eine Erweiterung des JSON-Schemas, die Sie fü
 * [Erstellen adaptiver Formulare und Fragmente](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Vorschau mit Beispieldaten](#preview-ic)
-* [den Formulardatenmodell-Service](#prefill)
+* [Verwenden des Formulardatenmodell-Service](#prefill)
 * [Zurückschreiben von übermittelten adaptiven Formulardaten in Datenquellen](#write-af)
 * [Aufrufen von Services über Regeln für adaptive Formulare](#invoke-services)
 

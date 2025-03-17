@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6d6b857bf36771b92b8f11db5ce6608023d1fac0
+source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6082'
 ht-degree: 98%
 
 ---
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + WYSIWYG-Authoring {#universal-editor}
          + [Einführung in den universellen Editor von Forms für Edge Delivery Services – vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Beginnen des Authorings mit dem universellen Editor - Tutorial Schritt für Schritt](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Erstellen des ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Erstellen Ihres ersten Formulars mit dem universellen Editor – Schrittweises Tutorial](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Handbuch zur Benutzeroberfläche des universellen Editors: Erklärung der Tools, Funktionen und Navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Mobiles Arbeiten mit Forms: Responsives Design im universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Entwerfen ansprechender Formulare: Anleitung zur Gestaltung und Themenerstellung für den universellen Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1046,6 +1046,7 @@ ht-degree: 98%
          + [Schützen Ihrer Formulare vor Spam: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Veröffentlichen und Bereitstellen von Formularen: Veröffentlichungshandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [Formulardatenmodellintegration: Integrieren von Forms mit dem Formulardatenmodell](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
          + [Erstellen von Formularen mit Google Tabellen oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)
