@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 100%
+source-wordcount: '1377'
+ht-degree: 85%
 
 ---
 
@@ -95,6 +95,23 @@ Sie können auch auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe
 Sie können die Details der Ausführung sehen, indem Sie erneut auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) klicken und dann **[Details anzeigen](#view-details)** auswählen.
 
 Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, indem Sie erneut auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) klicken und **Abbrechen** auswählen.
+
+## Mehrere Pipelines ausführen {#run-multiple-pipelines}
+
+Mit Cloud Manager können Sie mehrere Pipelines gleichzeitig ausführen, was die Bereitstellungseffizienz für AEM as a Cloud Service-Kunden verbessert. Mit **Funktion „Ausgewählte** ausführen“ können Sie mehrere Pipelines auswählen und Trigger für ihre gleichzeitige Ausführung einrichten. Dies reduziert den manuellen Aufwand, der mit der individuellen Ausführung von Pipelines verbunden ist, und optimiert Build- und Bereitstellungs-Workflows.
+
+**So führen Sie mehrere Pipelines aus:**
+
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
+1. Klicken Sie im Menü links auf ![Workflow-Symbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)Pipelines ****.
+1. Aktivieren Sie in der Tabelle auf **Seite**Pipeline) die Kontrollkästchen neben den Pipelines, die Sie ausführen möchten.
+Klicken Sie bei Bedarf auf ![Filtersymbol, ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**Filter**, um Pipelines nach Name, Umgebung oder bereitgestelltem Code-Typ oder einer Kombination aus allen drei Typen zu sortieren.
+1. Klicken Sie oben rechts auf der Seite auf **Ausgewählte ausführen (x)**.
+1. Klicken **im Dialogfeld „Ausgewählte Pipelines ausführen (x** auf **Ausführen (x)**.
+
+   Die Schaltfläche **Ausführen** gibt die Anzahl der Pipelines an, die fortgesetzt werden können. Sie haben beispielsweise vier Pipelines ausgewählt, von denen jedoch eine bereits ausgeführt wird. Oder es existiert keine mit einer ausgewählten Pipeline verknüpfte Umgebung mehr. In solchen Fällen passt sich das System entsprechend an. Die Schaltfläche wird in „Ausführen (3)“ aktualisiert, um anzugeben, dass drei Pipelines fortgesetzt werden können.
+
+1. Pipelines werden ausgeführt und ihr Status wird in der Liste **Pipelines** aktualisiert.
 
 ## Bearbeiten einer Pipeline {#editing-pipelines}
 
