@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 98%
 
 ---
@@ -161,7 +161,7 @@ Die ausgewählte Komponente wird gelöscht.
 >
 >Verwenden Sie den Hotkey `Shift+Backspace`, um die ausgewählte Komponente aus ihrem Container zu löschen.
 
-### Neuanordnen von Komponenten in Containern {#reordering-components}
+### Neuanordnen von Komponenten {#reordering-components}
 
 1. Wechseln Sie in den [Inhaltsstruktur-Modus](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), falls dieser nicht bereits aktiviert ist.
 1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
@@ -176,15 +176,15 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 
 >[!NOTE]
 >
->Komponenten können nicht zwischen Containern verschoben werden, wenn zwischen Quell- und Ziel-Container nicht der gleiche [Komponentenfilter](/help/implementing/universal-editor/filtering.md) festgelegt ist.
+>Komponenten können nur dann zwischen Containern verschoben werden, wenn die Ziel-Container [Komponentenfilter](/help/implementing/universal-editor/filtering.md) die ausgewählte Komponente zulassen.
 
 ### Erstellen von Varianten mit GenAI durch Variantengenerierung {#generate-variations-ai}
 
 Verwenden Sie generative Varianten, um die generative KI zu nutzen und so die Inhaltserstellung zu beschleunigen.
 
-Öffnen Sie den universellen Editor, um den Einstiegspunkt zum Generieren von Varianten zu finden.
+Öffnen Sie den universellen Editor. Dort finden Sie den Einstiegspunkt zur Variantengenerierung:
 
-Weitere [ finden Sie unter „Generieren von Varianten - Integriert ](/help/generative-ai/generate-variations-integrated-editor.md) AEM-Editoren“.
+Weitere Informationen finden Sie unter [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md).
 
 ## Vorschau von Inhalten {#previewing-content}
 
