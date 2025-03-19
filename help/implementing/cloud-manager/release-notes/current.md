@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.3.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '329'
 ht-degree: 31%
 
 ---
@@ -33,6 +33,8 @@ Die Veröffentlichung der nächsten Version ist für Donnerstag, dem Freitag, 10
   Die Möglichkeit, mehrere Pipelines gleichzeitig auszuführen, wurde auf der Seite Pipelines eingeführt. Benutzer müssen mindestens eine Pipeline, aber nicht mehr als zehn auswählen. Klicken Sie oben rechts auf der Seite Pipelines auf **Ausgewählte ausführen (x)**. Es wird ein modales Dialogfeld angezeigt, in dem alle Pipelines aufgelistet sind, die nicht gestartet werden können. Klicken Sie **Ausführen**, um alle gültigen Pipelines zu starten.
 
   ![Dialogfeld „Ausgewählte Pipelines ausführen“](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+
+  Siehe auch [Mehrere Pipelines ausführen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
 
 * **Die Unterstützung wurde auf Node.js-Versionen erweitert**
 
