@@ -4,9 +4,9 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1857'
 ht-degree: 98%
 
 ---
@@ -195,7 +195,7 @@ So integrieren Sie ihn:
 
 Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie können [mit dem Erstellen und Hinzufügen von Formularen zu Ihren AEM-Seiten beginnen](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Erstellen von AEM-Formularen mit WYSIWYG
+## Erstellen von Forms mit WYSIWYG
 
 Sie können Ihr AEM-Projekt zwecks WYSIWYG-Authoring im universellen Editor öffnen. Darin können Sie das Projekt bearbeiten und den Abschnitt „Adaptives Formular“ hinzufügen, um Edge Delivery Services-Formulare in AEM-Projektseiten einzuschließen.
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6098'
 ht-degree: 98%
 
 ---
@@ -1047,7 +1047,8 @@ ht-degree: 98%
          + [Schützen Ihrer Formulare vor Spam: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Veröffentlichen und Bereitstellen von Formularen: Veröffentlichungshandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Formulardatenmodellintegration: Integrieren von Forms mit dem Formulardatenmodell](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Integration des Formulardatenmodells: Integrieren von Forms mit dem Formulardatenmodell](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Wiederverwendbare, modulare und eigenständige Segmente: Erstellen und Verwenden von Formularfragmenten in Formularen](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
          + [Erstellen von Formularen mit Google Tabellen oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)

@@ -1,17 +1,17 @@
 ---
-title: Erstellen eines Formulardatenmodells (FDM) für ein Formular im universellen Editor
+title: Integrieren des Formulardatenmodells (FDM) für ein Formular im universellen Editor
 description: Erfahren Sie, wie Sie Formulare erstellen, die auf einem Formulardatenmodell (FDM) basieren. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 11%
 
 ---
-
 
 # Integrieren von Formularen mit dem Formulardatenmodell im universellen Editor
 
@@ -128,7 +128,7 @@ Wenn Sie ein nicht schemabasiertes Formular erstellen, wird keine Datenquelle ko
 
    ![Formular erstellen](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   Sie können die Datenbindung auch manuell zu einem Formularelement hinzufügen, indem Sie sie in den **Bindungsverweis**-Eigenschaften des Formularelements angeben.
+   Sie müssen die Datenbindung manuell zu einem Formularelement hinzufügen, indem Sie sie in den **Bindungsverweis**-Eigenschaften des Formularelements angeben.
 Fügen wir beispielsweise einen Datenbindungsverweis auf das Textfeld **Haustiername** hinzu, das bereits im Formular vorhanden ist:
 
    ![Manuelles Hinzufügen der Datensuche für ein Formularfeld](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)

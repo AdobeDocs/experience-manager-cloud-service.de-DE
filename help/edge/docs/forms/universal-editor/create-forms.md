@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 51%
+source-wordcount: '1215'
+ht-degree: 46%
 
 ---
 
@@ -52,8 +52,9 @@ Um ein eigenständiges adaptives Formular mit dem universellen Editor zu erstell
 
 1. **Erstellen eines adaptiven Formulars auf der AEM Forms-Autoreninstanz**
 
-   1. Greifen Sie auf Ihre Autoreninstanz in AEM Forms as a Cloud Service zu.
-   1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** und dann **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]** aus. Der Assistent wird geöffnet.
+   1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
+   1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
+   1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
    1. Wählen Sie auf der Registerkarte {**}Source eine Edge Delivery Services-basierte Formularvorlage aus:**
 
       ![EDS-Forms erstellen](/help/edge/assets/create-eds-forms.png)
@@ -150,6 +151,63 @@ So greifen Sie auf das Formular in Edge Delivery Services zu:
 Die URL-Struktur bleibt für Staging- und Live-Versionen gleich. Der angezeigte Inhalt unterscheidet sich jedoch je nach Kontext:
 
 ![Veröffentlichtes Formular anzeigen](/help/edge/assets/eds-view-publish-form.png)
+
+## Verwalten von Formularen
+
+Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit einem Formular durchführen.
+
+1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
+1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
+
+1. Wenn Sie ein Formular auswählen, werden in der Symbolleiste die folgenden Vorgänge angezeigt, die Sie mit dem ausgewählten Formular durchführen können.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Vorgang</strong></p> </td>
+   <td><p><strong>Beschreibung</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Bearbeiten</p> </td>
+   <td><p>Öffnet das Formular im Bearbeitungsmodus.<br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>Eigenschaften</p> </td>
+   <td><p>Bietet Optionen zum Ändern der Eigenschaften des Formulars.<br /> <br /> </p> </td>
+  </tr>
+  <td><p>Kopieren</p> </td>
+   <td><p> Bietet Optionen zum Kopieren des Formulars und Einfügen an der gewünschten Position. <br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>Vorschau</p> </td>
+   <td><p>Bietet Optionen zum Anzeigen einer Vorschau des Formulars als HTML oder zum Ausführen einer benutzerdefinierten Vorschau, indem Daten aus einer XML-Datei mit dem Formular zusammengeführt werden. <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Herunterladen</p> </td>
+   <td><p>Lädt das ausgewählte Formular herunter.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Review starten/verwalten</p> </td>
+   <td><p>Initiieren und Verwalten einer Überprüfung des ausgewählten Formulars.<br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>Veröffentlichen/Veröffentlichung rückgängig machen</p> </td>
+   <td><p>Veröffentlicht das ausgewählte Formular bzw. hebt die Veröffentlichung auf<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Löschen</p> </td>
+   <td><p>Löscht das ausgewählte Formular.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Vergleichen</p> </td>
+   <td><p>Vergleicht zwei verschiedene Formulare zu Vorschauzwecken.<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table>
 
 ## Fehlerbehebung
 
