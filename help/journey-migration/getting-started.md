@@ -4,10 +4,10 @@ description: Beginnen Sie Ihre Migrationstour, indem Sie sich mit den Grundlagen
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 08da72724fb8c6e8760ae8013dcf739585ac6903
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ Eine detailliertere, feiner abgestimmte Ansicht der Migrationstour sehen Sie auc
 
 Zusätzlich zu den Schritten, die in dieser Tour beschrieben werden, bietet Adobe Ihnen mit Cloud Acceleration Manager ein Cloud-basiertes Programm, das Ihre IT-Teams während der gesamten Wechseltour von der Planung bis zum Go-Live in Cloud Service begleitet. Bereiten Sie Ihre Teams auf eine erfolgreiche Migration vor, indem Sie von Adobe empfohlene Best Practices, Tipps, Dokumentationen und Tools bereitstellen, um die Teams in jeder Phase des Wechsels zu AEM as a Cloud Service zu unterstützen.
 
-Ziehen Sie hierzu die [Dokumentation zu Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) zurate oder sehen Sie sich ein [Einführungsvideo](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=de#dashboard/learning) an, um Ihre Migrationstour zu starten.
+Ziehen Sie hierzu die [Dokumentation zu Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) zurate oder sehen Sie sich ein [Einführungsvideo](https://experienceleague.adobe.com/en/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning) an, um Ihre Migrationstour zu starten.
 
 ## Wie geht es weiter {#what-is-next}
 
