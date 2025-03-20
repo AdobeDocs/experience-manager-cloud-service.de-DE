@@ -2,27 +2,27 @@
 title: Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services
 description: Erfahren Sie, wie Sie AEM Assets mit Edge Delivery Services integrieren. Durch diese Integration können Sie AEM Assets mit Microsoft Word und Google Docs integrieren, AEM Assets mit dem universellen Editor integrieren, Dynamic Media mit OpenAPI-Funktionen mit dem universellen Editor integrieren und Dynamic Media mit OpenAPI-Funktionen mit Microsoft Word und Google Docs integrieren.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 105081c9124a85581240b19866adc271ea8bb190
+source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '757'
 ht-degree: 3%
 
 ---
 
 # Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
 
-![EDS2](/help/assets/assets/EDS2.png)
+![AEM-Assets mit UE](/help/assets/assets/EDS2.png)
 
-[Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview) ist ein zusammenstellbarer Satz von Services, der Ihnen ein hohes Maß an Flexibilität bei der Erstellung und Bereitstellung von Inhalten auf Ihrer Website ermöglicht. Sie können sowohl das [AEM](/help/sites-cloud/authoring/author-publish.md)Content-Management als auch das [WYSIWYG-Authoring mit dem universellen Editor sowie das dokumentbasierte Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview) ist ein zusammenstellbarer Satz von Services, der Ihnen ein hohes Maß an Flexibilität bei der Erstellung und Bereitstellung von Inhalten auf Ihrer Website ermöglicht. Sie können sowohl das [AEM-Content](/help/sites-cloud/authoring/author-publish.md)Management als auch das [WYSIWYG-Authoring mit dem universellen Editor sowie das dokumentbasierte Authoring ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 Sie können Inhalte in folgenden Bereichen bearbeiten:
 
-* [Dokumente zu Microsoft Word oder Google](#integrate-aem-assets-with-document-based-authoring-tools)
-* [universellen Editor](#integrate-aem-assets-with-universal-editor)
+* [Microsoft Word oder Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
+* [Universeller Editor](#integrate-aem-assets-with-universal-editor)
 
 Nachdem Sie den Inhalt bearbeitet haben, können Sie ihn in Edge Delivery Services veröffentlichen.
 
-## Integrieren von AEM Assets mit dokumentbasierten Authoring-Flüssen für Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
+## Integrieren von AEM Assets mit dokumentenbasierten Authoring-Flüssen für Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
 Die Integration von AEM Assets mit den dokumentbasierten Authoring-Tools wie Microsoft Word oder Google Docs bietet einen Asset-Selektor direkt in Ihrem Editor. Verwenden Sie diesen Asset-Wähler, um auf die AEM Assets zuzugreifen, und fügen Sie genehmigte Assets in Ihr Dokument ein.
 
@@ -32,38 +32,38 @@ Wenn Sie bereits über eine Edge Delivery Services-Website verfügen, finden Sie
 
 Bevor Sie beginnen, stellen Sie sicher, dass Ihre dokumentbasierte Authoring-Umgebung bereit ist:
 
-* Integrieren Sie AEM in ein dokumentbasiertes Authoring-Tool, um die Authoring-Umgebung einzurichten. Siehe [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial) zum Einrichten der Authoring-Umgebung.
+* Integrieren von AEM mit einem dokumentbasierten Authoring-Tool zum Einrichten der Authoring-Umgebung. Siehe [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial) zum Einrichten der Authoring-Umgebung.
 
 ### Integrieren von AEM Assets in die dokumentbasierte Authoring-Umgebung{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
-Konfigurieren Sie das AEM Assets Sidekick-Plug-in für die Verwendung von Assets beim Erstellen von Inhalten in Microsoft Word- oder Google-Dokumenten.
+Konfigurieren Sie das AEM Assets Sidekick-Plug-in für die Verwendung von Assets beim Erstellen von Inhalten in Microsoft Word oder Google Docs.
 
-* Unter [Adobe Experience Manager Assets Sidekick-Plug](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) erfahren Sie, wie Sie in Microsoft Word- oder Google-Dokumenten auf AEM Assets zugreifen und diese verwenden können.
+* Unter [Adobe Experience Manager Assets Sidekick-Plug](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) erfahren Sie, wie Sie in Microsoft Word oder Google Docs auf AEM Assets zugreifen und diese verwenden können.
 * Siehe [Konfigurieren des Adobe Experience Manager Assets Sidekick-Plug](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin) für Konfigurationsdetails.
-  ![my-assets-sidebar](/help/assets/assets/my-assets-sidebar.png)
+  ![Verwenden von Dynamic Media mit OpenAPI-Funktionen in Microsoft Word- und Google-Dokumenten](/help/assets/assets/my-assets-sidebar.png)
 
 ## Bereitstellen von Assets mit Dynamic Media mit OpenAPI-Funktionen {#integrate-Dynamic-Media-with-OpenAPI-capabilities-with-Microsoft-Word-Google-Docs-and-universal-editor}
 
 Sie können auch Assets verwenden, die mithilfe von DM mit OpenAPI-Funktionen bereitgestellt werden. Es bietet viele Vorteile, wie zum Beispiel:
 
-* Nur Zugriff auf markenbestätigte Assets (Bilder, Videos, PDF und andere Asset-Typen) von AEM Assets Cloud Service aus.
+* Nur Zugriff auf markenbestätigte Assets (Bilder, Videos, PDFs und andere Asset-Typen) von AEM Assets Cloud Services aus.
 * Governance (Verweise vs. Kopien des Assets), die bei der automatischen Weiterleitung von Asset-Lebenszyklus-Ereignissen wie Ablauf, Löschung und Aktualisierungen hilft.
 * Dynamische Bildausgabedarstellungen und smartes Zuschneiden.
-* Optimierung und Bereitstellung von Rich-Media, z. B. vorkonfiguriertes adaptives Video-Streaming und Bereitstellung von Original-Assets für PDF.
+* Optimierung und Bereitstellung von Rich-Media, z. B. standardmäßig adaptives Video-Streaming und Bereitstellung von Original-Assets für PDFs.
 * Impressionsbericht auf Asset-Ebene ([begrenzte Verfügbarkeit](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
 
-Weitere Informationen zu den Funktionen finden Sie in der Dokumentation zu [Dynamic Media mit OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)Funktionen.
+Weitere Informationen zu den Funktionen finden Sie in der Dokumentation [Dynamic Media mit OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)Funktionen.
 
 ### Voraussetzungen {#prerequisites-for-dm-with-openapi-capabilities-to-use-aem-assets}
 
 Um einen Asset-Verweis zu verwenden, müssen Sie über Folgendes verfügen:
 
-* Berechtigung für eine Assets-Cloud Service-Umgebung, in der Dynamic Media mit Open API-Funktionen aktiviert ist.
+* Berechtigung für eine Assets Cloud Service-Umgebung, in der Dynamic Media mit Open API-Funktionen aktiviert ist.
 * Eine Dynamic Media-Lizenz.
 * Das AEM Assets Sidekick-Plug-in mit aktiviertem Kopierverweis für Bild-Assets. Weitere Informationen finden Sie unter [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) für die dokumentbasierte Bearbeitung und unter [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) für die universelle Editor-basierte Bearbeitung.
-* Assets, die genehmigt wurden. Genehmigte Assets wurden über das Assets Cloud Service-Backend oder Benutzeroberflächenaktionen `dam:status=Approved`.
+* Assets, die genehmigt wurden. Genehmigte Assets wurden über das Assets Cloud Services-Backend oder Benutzeroberflächenaktionen `dam:status=Approved`.
 
-### Verwenden von mit Dynamic Media bereitgestellten Assets mit OpenAPI-Funktionen{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
+### Verwenden von Assets, die mithilfe von Dynamic Media mit OpenAPI-Funktionen bereitgestellt werden{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
 Informationen zur Verwendung von Assets, die mit Dynamic Media mit OpenAPI-Funktionen beim Erstellen von Inhalten bereitgestellt werden, finden Sie unter:
 
