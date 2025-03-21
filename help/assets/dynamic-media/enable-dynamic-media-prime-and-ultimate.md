@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Dynamic Media] Prime und Ultimate aktivieren'
+title: Aktivieren von [!DNL Dynamic Media] Prime and Ultimate
 description: Erfahren Sie, wie Sie [!DNL Dynamic Media] Prime- und Ultimate-Angebote aktivieren.
 feature: Asset Management
 role: User, Admin
@@ -7,201 +7,201 @@ exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
 source-git-commit: 42c90ae69af31b1b54f5b4ed01100df0cbe5dad2
 workflow-type: tm+mt
 source-wordcount: '1074'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Aktivieren [!DNL Dynamic Media] Prime und Ultimate {#enable-dynamic-media-prime-and-ultimate}
+# Aktivieren von [!DNL Dynamic Media] Prime und Ultimate {#enable-dynamic-media-prime-and-ultimate}
 
 | [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-[!DNL Adobe Experience Manager] as a Cloud Service ermöglicht Ihnen den Zugriff auf [!DNL Dynamic Media] Prime- und Ultimate-Angebote, um Ihre digitalen Workflows zu optimieren und das Content-Management zu optimieren. Unter [Dynamic Media Prime und Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md) erfahren Sie mehr über die Vorteile und die wichtigsten Unterschiede zwischen ihnen.
+[!DNL Adobe Experience Manager] as a Cloud Service ermöglicht Ihnen den Zugriff auf [!DNL Dynamic Media] Prime- und Ultimate-Angebote, um Ihre digitalen Workflows und das Content-Management zu optimieren. Unter [Dynamic Media Prime und Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md) erfahren Sie mehr über die Vorteile und die wichtigsten Unterschiede.
 
 Dieser Artikel enthält den kompletten Workflow zur Aktivierung der [!DNL Dynamic Media] Prime- und Ultimate-Angebote.
 
-## [!DNL Dynamic Media] Ultimate aktivieren {#enable-dynamic-media-ultimate}
+## Aktivieren von [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
 Führen Sie die folgenden Schritte in Ihrer Cloud Service-Umgebung aus, um [!DNL Dynamic Media] Ultimate zu aktivieren:
 
 1. [Aktivieren [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
-1. [Konfigurieren [!DNL Dynamic Media] Lösungen](#configure-dynamic-media-solutions)
-1. [Erstellen und Auflisten  [!DNL Dynamic Media]  Unternehmen](#create-and-list-dynamic-media-companies)
-1. [Benutzerdefinierte Domain in der Bereitstellungsebene konfigurieren](#configure-custom-domain-in-delivery-tier)
+1. [Konfigurieren von [!DNL Dynamic Media] -Lösungen](#configure-dynamic-media-solutions)
+1. [Erstellen und Auflisten von  [!DNL Dynamic Media] -Unternehmen](#create-and-list-dynamic-media-companies)
+1. [Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene](#configure-custom-domain-in-delivery-tier)
 
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
 
-Wenn Sie [!DNL Dynamic Media Prime] aktivieren müssen, lesen Sie die unter „Aktivieren[ bereitgestellten  [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
+Wenn Sie [!DNL Dynamic Media Prime] aktivieren müssen, sehen Sie sich die unter [Aktivieren [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime) bereitgestellten Schnell-Links an.
 
-### Aktivieren [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
+### Aktivieren von [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
 
-[!DNL Dynamic Media] mit den OpenAPI-Funktionen bildet das DAM den Kern eines agilen und effizienten Ökosystems für die Bereitstellung von Inhalten, um die Asset-Governance und -Bereitstellung sicherzustellen.
+[!DNL Dynamic Media] mit OpenAPI-Funktionen stellt das DAM in den Mittelpunkt eines agilen und effizienten Content-Lieferkettenökosystems, um die Governance und Bereitstellung von Assets sicherzustellen.
 
-Der erste Schritt im Prozess der Aktivierung [!DNL Dynamic Media] Ultimate besteht darin, [[!DNL Dynamic Media] mit OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) für Ihre Cloud Service-Umgebung zu aktivieren.
+Der erste Schritt bei der Aktivierung von [!DNL Dynamic Media] Ultimate besteht darin, [[!DNL Dynamic Media] mit OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) für Ihre Cloud Service-Umgebung zu aktivieren.
 
-#### Bereiten Sie sich auf den Einstieg vor {#prerequisites}
+#### Vorbereiten auf die ersten Schritte {#prerequisites}
 
 Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie den Aktivierungsprozess starten:
 
 1. [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. [Ihr Programm umfasst  [!DNL Dynamic Media]  Lösungen](#configure-dynamic-media-solutions).
-1. Sie haben [!DNL Dynamic Media] Prime- oder Ultimate-Lizenz.
+1. [Ihr Programm umfasst  [!DNL Dynamic Media] -Lösungen](#configure-dynamic-media-solutions).
+1. Sie verfügen über eine [!DNL Dynamic Media] Prime- oder Ultimate-Lizenz.
 
-#### Aktivieren von [!DNL Dynamic Media with OpenAPI] in Ihrer Cloud Service-Umgebung {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
+#### Aktivieren der [!DNL Dynamic Media with OpenAPI]-Funktionen in Ihrer Cloud Service-Umgebung {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
-Führen Sie die folgenden Schritte aus, um [!DNL Dynamic Media with OpenAPI] für Ihre Cloud Service-Umgebung zu aktivieren:
+Führen Sie diese Schritte aus, um [!DNL Dynamic Media with OpenAPI] für Ihre Cloud Service-Umgebung zu aktivieren:
 
-1. [Navigieren Sie zur Cloud Manager-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [Navigieren Sie zur Benutzeroberfläche von Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. [Erstellen einer Umgebung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments) wenn Sie keinen Zugriff auf eine vorhandene haben.
+1. [Erstellen Sie eine Umgebung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments), falls Sie keinen Zugriff auf eine vorhandene Umgebung haben.
 
-1. Wählen **[!UICONTROL Zum Aktivieren klicken]** in der Zeile **[!UICONTROL Dynamic]**) des Abschnitts **[!UICONTROL Umgebungsinformationen]** auf der Seite Umgebungsdetails aus.
+1. Wählen Sie im Abschnitt **[!UICONTROL Umgebungsinformationen]** auf der Seite mit den Umgebungsdetails in der Zeile **[!UICONTROL Dynamic Media]** die Option **[!UICONTROL Zum Aktivieren klicken]** aus.
 
    ![Aktivieren von Dynamic Media mit OpenAPI-Funktionen](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png)
 
-1. Klicken **[!UICONTROL im]** auf „Aktivieren“, um den [!DNL Dynamic Media with OpenAPI] zu starten. Nach erfolgreicher Aktivierung zeigt die Cloud Manager die folgenden Statusaktualisierungen an:
-   1. **[!UICONTROL Umgebungsstufe]**: **[!UICONTROL Läuft]**
-   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen sind aktiviert ]**
+1. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Aktivieren]**, um den Aktivierungsprozess für [!DNL Dynamic Media with OpenAPI] zu starten. Nach erfolgreicher Aktivierung zeigt Cloud Manager die folgenden Statusaktualisierungen an:
+   1. **[!UICONTROL Umgebungsschritt]**: **[!UICONTROL Wird ausgeführt]**
+   1. ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen sind aktiviert ]**
 
       ![Aktivierung erfolgreich](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
-#### Aktivierung wiederholen {#retry-activation}
+#### Wiederholen der Aktivierung {#retry-activation}
 
-Wenn die Aktivierung fehlschlägt, zeigt die Cloud Manager die folgenden Statusaktualisierungen an:
+Wenn die Aktivierung fehlschlägt, zeigt Cloud Manager die folgenden Statusaktualisierungen an:
 
-* **[!UICONTROL Umgebungsstufe]**: **[!UICONTROL DM mit OpenAPI fehlgeschlagen]**
-* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen konnten nicht aktiviert werden ]**
+* **[!UICONTROL Umgebungsschritt]**: **[!UICONTROL DM mit OpenAPI fehlgeschlagen]**
+* ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen konnten nicht aktiviert werden ]**
 
-  ![Aktivierung erneut versuchen](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
+  ![Aktivierung wiederholen](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
-Wählen Sie **[!UICONTROL Zum Wiederholen klicken]**, um die Aktivierung neu zu starten.
+Wählen Sie **[!UICONTROL Für erneuten Versuch klicken]** aus, um die Aktivierung neu zu starten.
 
 Führen Sie alternativ die folgenden Schritte aus, um den Aktivierungsprozess neu zu starten:
 
 1. Navigieren Sie zu der Seite, auf der alle Umgebungen aufgelistet sind.
 
-1. Klicken Sie auf Weitere Optionen ![weitere Optionen](/help/assets/assets/three-dots.svg) am Ende der Zeile „Umgebung“.
+1. Klicken Sie auf „Weitere Optionen“ (![weitere Optionen](/help/assets/assets/three-dots.svg)) am Ende der Zeile „Umgebung“.
 
-1. Wählen Sie **[!UICONTROL DM mit OpenAPI Activation erneut ausführen]**, um die Aktivierung neu zu starten.
+1. Wählen Sie **[!UICONTROL DM mit OpenAPI-Aktivierung erneut versuchen]**, um die Aktivierung neu zu starten.
 
-   ![Wiederholen Sie die Aktivierung über die Seite mit den Umgebungsdetails](/help/assets/assets/restart-activation-process-from-list-environment-page.png)
+   ![Wiederholen der Aktivierung über die Seite mit den Umgebungsdetails](/help/assets/assets/restart-activation-process-from-list-environment-page.png)
 
-### Konfigurieren von [!DNL Dynamic Media] {#configure-dynamic-media-solutions}
+### Konfigurieren von [!DNL Dynamic Media]-Lösungen {#configure-dynamic-media-solutions}
 
 Konfigurieren Sie [!UICONTROL Dynamic Media]-Lösungen für die Verwendung der grundlegenden und erweiterten Funktionen von [Dynamic Media mit OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) in bestehenden oder neuen Umgebungen, die in Cloud Manager verfügbar sind.
 
-#### Bereiten Sie sich auf den Einstieg vor {#prerequisites-to-configure-dynamic-media-solutions}
+#### Vorbereiten auf die ersten Schritte {#prerequisites-to-configure-dynamic-media-solutions}
 
-Stellen Sie sicher, dass Sie Folgendes zum Konfigurieren von [!UICONTROL Dynamic Media]Lösungen haben:
+Stellen Sie sicher, dass Sie zum Konfigurieren von [!UICONTROL Dynamic Media]-Lösungen über Folgendes verfügen:
 
 1. [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. Sie haben [!DNL Dynamic Media] Ultimate-Lizenz.
+1. Sie verfügen über eine [!DNL Dynamic Media] Ultimate-Lizenz.
 
 #### Konfigurieren von [!DNL Dynamic Media]-Lösungen für die Asset-Bereitstellung {#configure-dynamic-media-solutions-for-asset-delivery}
 
 Führen Sie die folgenden Schritte aus:
 
-1. [Erstellen Sie ein neues Programm](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) oder navigieren Sie zu einem vorhandenen Programm und klicken Sie auf **[!UICONTROL Bearbeiten]**. Auf **[!UICONTROL Seite „Für Produktion einrichten]** wird die Registerkarte **[!UICONTROL Lösungen und Add-ons]** angezeigt.
+1. [Erstellen Sie ein neues Programm](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) oder navigieren Sie zu einem vorhandenen Programm und klicken Sie auf **[!UICONTROL Bearbeiten]**. Auf der Seite **[!UICONTROL Für die Produktion einrichten]** wird die Registerkarte **[!UICONTROL Lösungen und Add-ons]** angezeigt.
 
-1. Wählen Sie **[!UICONTROL Assets]**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** oder **[!UICONTROL Sites]** aus, um Ihrem Programm die **[!UICONTROL Dynamic Media]**-Lösung hinzuzufügen.
+1. Wählen Sie **[!UICONTROL Assets]**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** oder **[!UICONTROL Sites]** aus, um die **[!UICONTROL Dynamic Media]**-Lösung zu Ihrem Programm hinzuzufügen.
 
-1. Wählen Sie **[!UICONTROL Dynamic Media]**-Lösung aus und klicken Sie auf **[!UICONTROL Weiter]**, um **[!UICONTROL Dynamic Media]**-Lösung zu Ihrem Programm hinzuzufügen. Mit dieser Aktion werden alle vorhandenen Umgebungen in Ihrem Programm neu gestartet und die [!DNL Dynamic Media] Lösung hinzugefügt. Außerdem wird jede neue Umgebung, die Sie unter Ihrem Programm erstellen, automatisch [!DNL Dynamic Media].
+1. Wählen Sie die **[!UICONTROL Dynamic Media]**-Lösung aus und klicken Sie auf **[!UICONTROL Fortfahren]**, um die **[!UICONTROL Dynamic Media]**-Lösung zu Ihrem Programm hinzuzufügen. Mit dieser Aktion werden alle vorhandenen Umgebungen in Ihrem Programm neu gestartet und ihnen wird die [!DNL Dynamic Media]-Lösung hinzugefügt. Außerdem erhält jede neue Umgebung, die Sie unter Ihrem Programm erstellen, automatisch [!DNL Dynamic Media].
 
    ![Für die Produktion einrichten](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 Unter [Aktivieren [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) finden Sie Informationen darüber, wie Sie die Funktionen von [!DNL Dynamic Media] mit OpenAPI-Funktionen in Ihrer Umgebung nutzen können.
 
-### Erstellen und Auflisten [!DNL Dynamic Media] Unternehmen {#create-and-list-dynamic-media-companies}
+### Erstellen und Auflisten von [!DNL Dynamic Media]-Unternehmen {#create-and-list-dynamic-media-companies}
 
-Erstellen Sie [!DNL Dynamic Media] Unternehmen in Ihrer AEM Cloud Service-Umgebung und listen Sie sie auf, um Konfigurationen in Ihrer AEM-Umgebung zu verwalten.
+Sie können [!DNL Dynamic Media]-Unternehmen in Ihrer AEM Cloud Service-Umgebung erstellen und auflisten, um Konfigurationen in Ihrer AEM-Umgebung zu verwalten.
 
-#### Bereiten Sie sich auf den Einstieg vor {#prerequisites-to-create-and-list-dynamic-media-companies}
+#### Vorbereiten auf die ersten Schritte {#prerequisites-to-create-and-list-dynamic-media-companies}
 
-Um die vorhandenen Unternehmen (Konten) anzuzeigen oder ein neues [!DNL Dynamic Media] Unternehmen (Konto) in Ihrer IMS-Organisation hinzuzufügen, benötigen Sie Folgendes:
+Um die vorhandenen Unternehmen (Konten) anzuzeigen oder ein neues [!DNL Dynamic Media]-Unternehmen (Konto) in Ihrer IMS-Organisation hinzuzufügen, benötigen Sie Folgendes:
 
 1. [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. Sie haben [!DNL Dynamic Media] Ultimate-Lizenz.
+1. Sie verfügen über eine [!DNL Dynamic Media] Ultimate-Lizenz.
 
-#### Erstellen und Auflisten [!DNL Dynamic Media] Unternehmen in Ihrer IMS-Organisation {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
+#### Erstellen und Auflisten von [!DNL Dynamic Media]-Unternehmen in Ihrer IMS-Organisation {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
-Führen Sie die folgenden Schritte aus, um ein neues [!DNL Dynamic Media] (Konto) zu erstellen und aufzulisten, das in Ihrer [!DNL AEM] konfiguriert werden kann:
+Führen Sie die folgenden Schritte aus, um ein neues [!DNL Dynamic Media]-Unternehmen (Konto), das in Ihrer [!DNL AEM]-Umgebung konfiguriert werden kann, zu erstellen und aufzulisten:
 
-1. Navigieren Sie zur Lizenzseite für [Cloud Manager](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
+1. Navigieren Sie zur [Lizenzseite für Cloud Manager](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
 
-1. Klicken Sie auf **[!UICONTROL Firma hinzufügen]**. Das Dialogfeld **[!UICONTROL Dynamic Media-Firma erstellen]** wird angezeigt.
+1. Klicken Sie auf **[!UICONTROL Unternehmen hinzufügen]**. Daraufhin wird das Dialogfeld **[!UICONTROL Dynamic Media-Unternehmen erstellen]** angezeigt.
 
-1. Geben Sie einen eindeutigen [!DNL Dynamic Media] Unternehmensnamen an, wählen Sie eine Unternehmensregion aus und fügen Sie eine Liste der E-Mail-IDs für Unternehmensadministratoren hinzu, getrennt durch Kommas.
+1. Geben Sie einen eindeutigen [!DNL Dynamic Media]-Unternehmensnamen an, wählen Sie eine Unternehmensregion aus und fügen Sie eine Liste mit E-Mail-IDs für Unternehmensadmins hinzu, die durch Kommas getrennt sind.
 
-   ![Dynamic Media-Unternehmen erstellen](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
+   ![Erstellen eines Dynamic Media-Unternehmens](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
-1. Klicken Sie **[!UICONTROL Erstellen]**, um mit der Erstellung Ihrer Firma zu beginnen. Mit dieser Aktion wird eine neue Zeile zum Abschnitt **[!UICONTROL [!DNL Dynamic Media]Unternehmen hinzugefügt]** der **[!UICONTROL Wird eingerichtet]** als **[!UICONTROL des Unternehmens]**.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**, um mit der Erstellung Ihres Unternehmens zu beginnen. Mit dieser Aktion wird eine neue Zeile zum Abschnitt „**[!UICONTROL [!DNL Dynamic Media]-Unternehmen“]** hinzugefügt und **[!UICONTROL Wird eingerichtet]** wird als **[!UICONTROL Status]** des Unternehmens angezeigt.
 
-   ![Initiierte Dynamic Media-Unternehmenserstellung](/help/assets/assets/dm-company-creation-initiated.png)
+   ![Initiierte Erstellung eines Dynamic Media-Unternehmens](/help/assets/assets/dm-company-creation-initiated.png)
 
-1. **Optional:** Klicken Sie auf ![Infosymbol](/help/assets/assets/info-icon-solid-black.svg), um die Details des Unternehmens anzuzeigen. Der **[!UICONTROL STATUS]** wird auf **[!UICONTROL Bereit]** aktualisiert, wenn das Unternehmen erstellt wird.
+1. **Optional:** Klicken Sie auf ![Infosymbol](/help/assets/assets/info-icon-solid-black.svg), um die Details des Unternehmens anzuzeigen. Der **[!UICONTROL Status]** wird auf **[!UICONTROL Bereit]** aktualisiert, nachdem das Unternehmen erstellt worden ist.
 
-   ![Unternehmensinformationen für Dynamic Media](/help/assets/assets/dm-company-information.png)
+   ![Informationen zum Dynamic Media-Unternehmen](/help/assets/assets/dm-company-information.png)
 
-1. Überprüfen Sie als Dynamic Media-Administrator Ihr Postfach auf eine Begrüßungs-E-Mail, die eine Liste von Schritten enthält, um [ Unternehmen in Ihrer [!DNL AEM] Cloud Service-Umgebung zu konfigurieren [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) um zu beginnen.
+1. Überprüfen Sie als Dynamic Media-Admin Ihr Postfach auf eine Begrüßungs-E-Mail, die eine Liste von Schritten zum [ Konfigurieren des [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)-Unternehmens in Ihrer [!DNL AEM] Cloud Service-Umgebung enthält.
 
-   ![Willkommens-E-Mail](/help/assets/assets/welcome-email.png)
+   ![Begrüßungs-E-Mail](/help/assets/assets/welcome-email.png)
 
-#### Unternehmenserstellung wiederholen {#retry-company-creation}
+#### Erstellen des Unternehmens wiederholen {#retry-company-creation}
 
-Wenn [!DNL Dynamic Media] Erstellung des Unternehmens fehlschlägt, führen Sie die folgenden Schritte basierend auf dem Fehlerstatus aus:
+Wenn das Erstellen des [!DNL Dynamic Media]-Unternehmens fehlschlägt, führen Sie je nach dem Fehlerstatus die folgenden Schritte aus:
 
-1. Wenn **[!UICONTROL Status]** „Ausstehend“ ist, wenden Sie sich zur Lösung des Problems an das Support-Team.
+1. Wenn „Ausstehend“ als **[!UICONTROL Status]** angegeben ist, wenden Sie sich zur Lösung des Problems an den Kunden-Support.
 
-   ![Status „Ausstehend](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+   ![Status „Ausstehend“](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
-1. Wenn **[!UICONTROL Status]** fehlgeschlagen ist, versuchen Sie es basierend auf der Fehlerursache erneut.
+1. Wenn „Fehlgeschlagen“ als **[!UICONTROL Status]** angegeben ist, versuchen Sie es abhängig von der Fehlerursache erneut.
 
-   ![Status „Fehlgeschlagen](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![Status „Fehlgeschlagen“](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### Optional: Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene {#configure-custom-domain-in-delivery-tier}
 
-AEM as a Cloud Service verfügt zwar über eine Standard-Domain, kann jedoch nach Bedarf angepasst werden. Hängen Sie mithilfe von Cloud Manager eine benutzerdefinierte Domain an die Bereitstellungsebene an.
+AEM as a Cloud Service verfügt zwar über eine Standard-Domain, Sie können sie aber nach Bedarf anpassen. Hängen Sie mithilfe von Cloud Manager eine benutzerdefinierte Domain an die Bereitstellungsebene an.
 
-#### Bereiten Sie sich auf den Einstieg vor {#prerequisites-to-configure-custom-domain-in-delivery-tier}
+#### Vorbereiten auf die ersten Schritte {#prerequisites-to-configure-custom-domain-in-delivery-tier}
 
 Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie den Konfigurationsprozess starten:
 
-1. [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. [Bereits  [!DNL Dynamic Media with OpenAPI]  Ihrer Umgebung aktiviert](#activate-dynamic-media-with-openapi).
-1. Aktivierte [!DNL Dynamic Media with OpenAPI] im Status „Bereit“.
-1. EV- oder OV-Zertifikat für die Domain, die für die Bereitstellungsebene verwendet werden soll. Weitere Informationen finden [ unter „Einführung ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) SSL-Zertifikate“.
+1. [Sie haben Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [ [!DNL Dynamic Media with OpenAPI] ist bereits in Ihrer Umgebung aktiviert](#activate-dynamic-media-with-openapi).
+1. [!DNL Dynamic Media with OpenAPI] ist mit dem Status „Bereit“ aktiviert.
+1. Es liegt ein EV- oder OV-Zertifikat für die Domain vor, die für die Bereitstellungsebene verwendet werden soll. Weitere Informationen finden Sie in der [Einführung in SSL-Zertifikate](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates).
 
 #### Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene mithilfe von Cloud Manager {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
 Führen Sie die folgenden Schritte in Cloud Manager aus, um eine benutzerdefinierte Domain in der Bereitstellungsebene zu konfigurieren:
 
-1. [Hinzufügen eines vom Kunden verwalteten SSL-Zertifikats](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
+1. [Fügen Sie ein kundenseitig verwaltetes SSL-Zertifikat hinzu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
 
-1. [Benutzerdefinierten Domain-Namen hinzufügen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
+1. [Fügen Sie einen benutzerdefinierten Domain-Namen hinzu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. Navigieren Sie zur Seite mit den Umgebungsdetails und [ Sie eine CDN-Konfiguration ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config). Wählen Sie beim Hinzufügen der Konfiguration **[!UICONTROL Versand]** im Feld **[!UICONTROL Ebene]** im Dialogfeld **[!UICONTROL CDN konfigurieren]** aus.
+1. Navigieren Sie zur Seite mit den Umgebungsdetails und [fügen Sie eine CDN-Konfiguration hinzu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config). Wählen Sie beim Hinzufügen der Konfiguration im Dialogfeld **[!UICONTROL CDN konfigurieren]** im Feld **[!UICONTROL Ebene]** die Option **[!UICONTROL Bereitstellung]** aus.
 
-   ![Konfigurieren von CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
+   ![CDN konfigurieren](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
-   Nach dem Hinzufügen der Konfigurationen wird **[!UICONTROL STATUS]** von **[!UICONTROL CDN-Konfigurationen]** auf **[!UICONTROL Applied]** aktualisiert.
+   Nach dem Hinzufügen der Konfigurationen ändert sich der **[!UICONTROL STATUS]** der **[!UICONTROL CDN-Konfigurationen]** zu **[!UICONTROL Angewendet]**.
 
    ![Konfigurieren des CDN-Bereitstellungsstatus](/help/assets/assets/cdn-configuration-deployment-status.png)
 
-1. Klicken Sie auf Weitere Optionen ![weitere Optionen](/help/assets/assets/three-dots.svg) und wählen Sie **[!UICONTROL Go-Live-Bereitschaft]** aus, um das Dialogfeld **[!UICONTROL Go-Live-]**&quot; anzuzeigen.
+1. Klicken Sie auf „Weitere Optionen“ (![weitere Optionen](/help/assets/assets/three-dots.svg)) und wählen Sie **[!UICONTROL Bereitschaft zur Live-Schaltung]** aus, um das gleichnamige Dialogfeld **** anzuzeigen.
 
-   ![Option „Go-Live-Bereitschaft“](/help/assets/assets/go-live-readiness-option.png)
+   ![Option „Bereitschaft zur Live-Schaltung“](/help/assets/assets/go-live-readiness-option.png)
 
-1. Führen Sie die Schritte **[!UICONTROL Konfigurieren von CNAME]** aus, um [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME-Eintrag) im DNS-Eintrag des DNS-Dienstanbieters zuzuordnen. Diese Zuordnung stellt sicher, dass in der benutzerdefinierten Domain empfangene Anfragen an das CDN von Adobe weitergeleitet werden.
+1. Führen Sie die Schritte **[!UICONTROL CNAME konfigurieren]** aus, um [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME-Eintrag) im DNS-Eintrag des DNS-Dienstanbieters zuzuordnen. Diese Zuordnung stellt sicher, dass in der benutzerdefinierten Domain empfangene Anfragen an das CDN von Adobe weitergeleitet werden.
 
-   ![Dialogfeld „Live-Bereitschaft“](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
+   ![Dialogfeld „Bereitschaft zur Live-Schaltung“](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
-1. Klicken Sie auf **[!UICONTROL OK]**, wird **[!UICONTROL STATUS]** auf **[!UICONTROL Verifiziert]**. Die benutzerdefinierte Domain kann jetzt in der Versand-URL verwendet werden.
+1. Klicken Sie auf **[!UICONTROL OK]**. Darauf ändert sich der **[!UICONTROL STATUS]** zu **[!UICONTROL Überprüft]**. Die benutzerdefinierte Domain kann jetzt in der Versand-URL verwendet werden.
 
 
-   ![Konfigurieren von CDN](/help/assets/assets/cdn-configurations-varified.png)
+   ![CDN konfigurieren](/help/assets/assets/cdn-configurations-varified.png)
 
 
 
@@ -270,7 +270,7 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 TBD: Wiki in progress..
 -->
 
-## [!DNL Dynamic Media] Prime aktivieren {#enable-dynamic-media-prime}
+## Aktivieren von [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
 Führen Sie die folgenden Schritte in Ihrer Cloud Service-Umgebung aus, um [!DNL Dynamic Media] Prime zu aktivieren:
 

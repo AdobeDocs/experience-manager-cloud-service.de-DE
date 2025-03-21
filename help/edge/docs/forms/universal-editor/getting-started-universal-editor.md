@@ -7,7 +7,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -262,7 +262,7 @@ Sie können die Edge Delivery Services-Formulare gestalten, indem Sie die `.css`
 
 >[!NOTE]
 >
-> Sie können auch [ein eigenständiges Formular im universellen Editor erstellen und es in Edge Delivery Services veröffentlichen](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Sie können auch [ein eigenständiges Formular im universellen Editor erstellen und in Edge Delivery Services veröffentlichen](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 ## Einrichten einer lokalen AEM-Entwicklungsumgebung
 

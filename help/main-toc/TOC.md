@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
 workflow-type: tm+mt
 source-wordcount: '6103'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -895,9 +895,9 @@ ht-degree: 98%
    + Transaktionsberichte {#using-communications}
       + [Abrechenbare APIs für Transaktionsberichte](/help/forms/transaction-reports-billable-apis.md)
       + [Aufzeichnen einer Transaktion für eine benutzerdefinierte Implementierung](/help/forms/record-transaction-custom-implementation.md)
-   + Dashboard-{#vr-dashboard} zur Wertschöpfung
-      + [Ihr Wertschöpfungs-Dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [Verwenden des Dashboards zur Wertschöpfung zur Analyse der Nutzung von Formularen und Dokumenten](/help/forms/using-the-value-realization-dashboard.md)
+   + Dashboard zur Wertentwicklung {#vr-dashboard}
+      + [Verstehen des Dashboards zur Wertentwicklung](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Verwenden des Dashboards zur Wertentwicklung zur Analyse der Nutzungstrends von Formularen und Dokumenten](/help/forms/using-the-value-realization-dashboard.md)
    + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
       + [API-Referenz für adaptive Formulare](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Kommunikations-API-Referenz zu AEM Forms Cloud Service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + [Häufig gestellte Fragen](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG-Authoring {#universal-editor}
          + [Einführung in den universellen Editor von Forms für Edge Delivery Services – vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Beginnen des Authorings mit dem universellen Editor - Tutorial Schritt für Schritt](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Erste Schritte beim Erstellen mit dem universellen Editor – Schrittweises Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Erstellen Ihres ersten Formulars mit dem universellen Editor – Schrittweises Tutorial](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Handbuch zur Benutzeroberfläche des universellen Editors: Erklärung der Tools, Funktionen und Navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Mobiles Arbeiten mit Forms: Responsives Design im universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
@@ -1067,7 +1067,7 @@ ht-degree: 98%
          + [Globalisieren Ihres Formulars: Anleitung zur Formularübersetzung](/help/edge/docs/forms/translate-forms.md)
          + [Schützen Ihrer Formulare: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
-         + [Überwachen der Formularleistung: Handbücher zur realen Überwachung](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Überwachen der Formularleistung: Handbücher zum Real Use Monitoring](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery-Ressourcen {#resources}
       + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
