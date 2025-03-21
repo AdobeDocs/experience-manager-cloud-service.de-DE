@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
+source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6103'
 ht-degree: 98%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 98%
    + Cloud Manager - Versionshinweise {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
-         + [2 025,2,0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
+         + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
          + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
       + 2024 {#2024}
          + [2024.12.0](/help/implementing/cloud-manager/release-notes/2024/2024-12-0.md)
@@ -1388,7 +1388,8 @@ ht-degree: 98%
          + [Internationalisieren von Komponenten](/help/implementing/developing/extending/i18n/components.md)
          + [Internationalisierung von UI-Zeichenfolgen](/help/implementing/developing/extending/i18n/dev.md)
          + [Verwalten von Wörterbüchern mithilfe des Übersetzers](/help/implementing/developing/extending/i18n/translator.md)
-         + [Extrahieren von Zeichenfolgen zum Übersetzen](/help/implementing/developing/extending/i18n/extract.md)
+         + [Extrahieren von Zeichenfolgen zur Übersetzung](/help/implementing/developing/extending/i18n/extract.md)
+      + [Erweiterungen und die Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + Bereitstellen für AEM as a Cloud Service {#deploying}
       + [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)
