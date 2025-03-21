@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Tabellen zur Verwaltung von Tabellendaten fü
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1284'
-ht-degree: 100%
+source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 99%
 
 ---
 
@@ -180,10 +180,10 @@ Die Umleitungstabelle ist jetzt veröffentlicht und öffentlich zugänglich.
 
 Nachdem Sie nun wissen, wie Sie eine Umleitungstabelle erstellen, können Sie einen beliebigen anderen Standardtyp für Tabellen erstellen:
 
-* Platzhalter
-* Metadaten
-* Kopfzeilen
-* Konfiguration
+* [Platzhalter](https://www.aem.live/docs/placeholders)
+* [Metadaten](https://www.aem.live/docs/bulk-metadata)
+* [Kopfzeilen](https://www.aem.live/docs/custom-headers)
+* [Konfiguration](https://www.aem.live/docs/configuration) - z. B. für [Cache-Invalidierung](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Führen Sie einfach die gleichen Schritte in den Abschnitten [Erstellen einer Tabelle](#spreadsheet) und [Aktualisieren von paths.json](#paths-json) aus, wählen Sie die entsprechende Vorlage aus und aktualisieren Sie die Datei `paths.json` entsprechend.
