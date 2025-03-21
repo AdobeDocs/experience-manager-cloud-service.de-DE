@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Real Use Monitoring (RUM), einen automatisi
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
+source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Der Real Use Monitoring-Dienst wurde so konzipiert, dass das Sammeln von persön
 * Der Checkpoint oder Name eines bestimmten Ereignisses in der Abfolge des Ladens der Seite. Oder die Interaktion mit ihr als Besucherin bzw. Besucher.
 * Die Quelle oder die Kennung des DOM-Elements, mit dem die Person für den oben genannten Checkpoint interagiert. Dies kann beispielsweise ein Bild sein
 * Die Zielgruppe oder der Link zu einer externen Seite oder Ressource, mit der die Person für den oben genannten Checkpoint interagiert. Beispiel: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* Die Leistungsmetriken „Core Web Vitals“ (CWV), einschließlich „Largest Contentful Paint“ (LCP), „First Input Delay“ (FID) und „Cumulative Layout Shift“ (CLS), sowie „Time To First Byte“ (TTFB), die die Erlebnisqualität der Besucherin oder des Besuchers beschreiben.
+* Die [Core Web Vitals (CWV)](https://web.dev/articles/lcp) Leistungsmetriken [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [Interaction to Next Paint (INP)](https://web.dev/articles/inp) und [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), die die Erlebnisqualität des Besuchers beschreiben.
 
 ## Funktionsweise von Real Use Monitoring für Kundinnen und Kunden {#how-rum-works-for-a-customer}
 
