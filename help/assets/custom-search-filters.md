@@ -3,9 +3,9 @@ title: Benutzerdefinierte Suchfilter
 description: Erfahren Sie mehr über das Anpassen von Suchfiltern in Formularen
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 0484b8ac158f0590d5ada7536cf8b547c71ab686
+source-git-commit: 859254142976f15f92df400f6d62cc0d89eaabb8
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1294'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 Suchfilter ermöglichen es Ihnen, Suchergebnisse basierend auf verschiedenen Parametern wie Datum, Dateityp, Tags und Relevanz zu verfeinern, wodurch die Präzision von Suchabfragen verbessert wird. Durch die Anwendung von Filtern können Sie schnell und effizient die relevantesten Ergebnisse durchsuchen. Dies spart nicht nur Zeit, sondern verbessert auch das Gesamterlebnis bei der Suche, indem die Ergebnisse auf spezifische Voreinstellungen und Bedürfnisse zugeschnitten werden.
 Weitere Informationen über [Suche](search-assets-view.md).
 
-Benutzerdefinierte Suchfilter können nur Einträgen in Ihrem durchsuchbaren Eigenschaftsindex zugeordnet werden. Stellen Sie sicher, dass alle benutzerdefinierten Metadaten enthalten sind, bevor Sie Ihr benutzerdefiniertes Filtererlebnis konfigurieren. [!DNL Assets view] können Suchfilter angepasst werden, um den Suchvorgang zu optimieren. Um die Suchfiltervorlage anzupassen, führen Sie die folgenden Schritte aus:
+Anpassen von Suchfiltern AEM Assets kann nur Einträgen in Ihrem durchsuchbaren Eigenschaftsindex zugeordnet werden. Stellen Sie sicher, dass alle benutzerdefinierten Metadaten enthalten sind, bevor Sie Ihr benutzerdefiniertes Filtererlebnis konfigurieren. [!DNL Assets view] können Suchfilter angepasst werden, um den Suchvorgang zu optimieren. Um die benutzerdefinierten Suchfilter von AEM Assets anzupassen, führen Sie die folgenden Schritte aus:
 
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Suche]**. Klicken Sie **[!UICONTROL Anpassen]**, um Ihr Suchformular zu konfigurieren.
@@ -39,7 +39,7 @@ Die Assets-Ansicht bietet die folgenden benutzerdefinierten Filter, die je nach 
 
 ### Filterelemente {#filter-elements}
 
-Sie können eine Sammlung von Filterelementen auf der Arbeitsfläche für benutzerdefinierte Suchfilter verwenden. Diese Elemente können basierend auf der Verwendbarkeit von Sucheigenschaftsattributen neu konfiguriert werden. Sie können jedoch die [Filtereigenschaften](#filter-properties) Ihren Anforderungen entsprechend anpassen. Die folgenden Filterelemente sind in [!DNL Assets view] verfügbar:
+Benutzerdefinierte Filter In AEM Assets können Sie eine Sammlung von Filterelementen auf der Arbeitsfläche für benutzerdefinierte Suchfilter verwenden. Diese Elemente können basierend auf der Verwendbarkeit von Sucheigenschaftsattributen neu konfiguriert werden. Sie können jedoch die [Filtereigenschaften](#filter-properties) Ihren Anforderungen entsprechend anpassen. Die folgenden Filterelemente sind in [!DNL Assets view] verfügbar:
 
 <table>
     <tr>
@@ -328,7 +328,7 @@ Die vorkonfigurierten Filter sind Voreinstellungen, mit denen Sie sie direkt auf
 
 #### Filtern von Eigenschaften {#filter-properties}
 
-Jedes Filterelement ist mit einer Reihe von Eigenschaften verknüpft. Die folgenden Eigenschaften werden im Filter und in den vorkonfigurierten Elementen verwendet:
+Jedes Filterelement ist mit einer Reihe von Eigenschaften verknüpft. AEM Assets passt Suchfilter an und verwendet die folgenden Eigenschaften in den Filter- und vorkonfigurierten -Elementen:
 
 <table>
     <tr>
