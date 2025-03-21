@@ -4,17 +4,51 @@ description: Mit „Quick Publish“ in der Assets-Ansicht können Sie Assets gl
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 86%
+source-wordcount: '1240'
+ht-degree: 97%
 
 ---
 
 # Veröffentlichen von Assets in AEM und Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Mit Experience Manager Assets können Sie über die Asset-Ansicht Assets schnell in Experience Manager und Dynamic Media veröffentlichen. Dadurch wird sichergestellt, dass Sie Ihre Assets verwalten und dann mithilfe der Assets-Ansicht veröffentlichen können, [ohne zur Admin-Ansicht zu wechseln](/help/assets/overview.md##persona-based-experiences).
 
@@ -24,7 +58,7 @@ Die Experience Manager Assets-Ansicht bietet die Flexibilität, Assets in AEM od
 
 Konfigurieren Sie diese Einstellungen, um die Veröffentlichungsoptionen für AEM und Dynamic Media anzuzeigen:
 
-* Um die Veröffentlichungsoptionen für Dynamic Media anzuzeigen, konfigurieren Sie die folgenden Einstellungen in der Admin-Ansicht:
+* Um die Veröffentlichungsoptionen für Dynamic Media anzuzeigen, konfigurieren Sie die folgenden Einstellungen mithilfe der Admin-Ansicht:
 
    * [Erstellen Sie eine Dynamic Media-Cloud-Konfiguration](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
    * Legen Sie auf der Ordnerebene den Dynamic Media-Veröffentlichungsmodus fest. Sie können diese Einstellungen auch beim Erstellen der Dynamic Media-Cloud-Konfiguration einrichten. Informationen zum Überschreiben dieser Einstellungen auf Ordnerebene finden Sie unter [Konfigurieren einer selektiven Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
@@ -33,7 +67,7 @@ Konfigurieren Sie diese Einstellungen, um die Veröffentlichungsoptionen für AE
 
 ## Veröffentlichen von Assets beim Hochladen {#piblish-assets-during-upload}
 
-Sie können Assets beim Hochladen von Assets in einen Ordner in AEM und Dynamic Media veröffentlichen. Die angezeigten Veröffentlichungsoptionen hängen von den Dynamic Media-Veröffentlichungsmoduseinstellungen des Ordners ab, in den die Assets hochgeladen werden. Der Dynamic Media-Veröffentlichungsmodus kann wie folgt eingestellt werden:
+Sie können Assets beim Hochladen von Assets in einen Ordner in AEM und Dynamic Media veröffentlichen. Die angezeigten Veröffentlichungsoptionen hängen von den Einstellungen für den Dynamic Media-Veröffentlichungsmodus ab, die für den Upload-Ordner der Assets festgelegt sind. Der Dynamic Media-Veröffentlichungsmodus kann wie folgt eingestellt werden:
 
 * **Bei Aktivierung:** Wenn Assets in diesen Ordner hochgeladen werden, müssen Sie das Asset zuerst explizit veröffentlichen, bevor eine URL/ein Einbettungs-Link bereitgestellt wird.
 
@@ -42,7 +76,7 @@ Sie können Assets beim Hochladen von Assets in einen Ordner in AEM und Dynamic 
 
 ### Dynamic Media-Veröffentlichungsmodus mit der Einstellung „Bei Aktivierung“ {#dynamic-media-publish-mode-set-to-upon-activation}
 
-So veröffentlichen Sie Assets beim Hochladen in einen Ordner, dessen Dynamic Media Publish-Modus auf **Bei Aktivierung**:
+So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dynamic Media-Veröffentlichungsmodus auf **Bei Aktivierung** eingestellt ist:
 
 1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Veröffentlichungsoptionen** wird als **DM-Veröffentlichungsmodus** die Einstellung **Bei Aktivierung** angezeigt.
    ![Hochladen bei Aktivierung](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +84,15 @@ So veröffentlichen Sie Assets beim Hochladen in einen Ordner, dessen Dynamic Me
 
 ### Dynamic Media-Veröffentlichungsmodus mit der Einstellung „Unmittelbar“ {#dynamic-media-publish-mode-set-to-immediate}
 
-So veröffentlichen Sie Assets, während Sie sie in einen Ordner hochladen, dessen Dynamic Media Publish-Modus auf **Sofort“**:
+So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dynamic Media-Veröffentlichungsmodus auf **Unmittelbar** eingestellt ist:
 
-1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Publish** Optionen wird der **DM Publish Mode** als &quot;**&quot;**.
+1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Veröffentlichungsoptionen** wird für den **DM-Veröffentlichungsmodus** die Einstellung **Unmittelbar** angezeigt.
    ![Datei-Upload – Modus „Unmittelbar“](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Da der Dynamic Media-Veröffentlichungsmodus **Unmittelbar** lautet, werden die hochgeladenen Assets automatisch in Dynamic Media veröffentlicht, wenn Sie auf **Hochladen** klicken.
 
-2. Wählen Sie **Publish in AEM** aus, um die hochgeladenen Assets in AEM zu veröffentlichen, und klicken Sie auf Hochladen.
+2. Wählen Sie **In AEM veröffentlichen** aus, um die hochgeladenen Assets in AEM zu veröffentlichen, und klicken Sie auf „Hochladen“.
 
    Wenn Sie **In AEM veröffentlichen** auswählen, werden die Assets in AEM und Dynamic Media veröffentlicht, andernfalls nur in Dynamic Media.
 
@@ -68,7 +102,7 @@ So veröffentlichen Sie Assets, während Sie sie in einen Ordner hochladen, dess
 
 So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der Dynamic Media-Veröffentlichungsmodus auf **Selektive Veröffentlichung** eingestellt ist:
 
-1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Publish** Optionen wird der **DM Publish-Modus** als **Selektive Publish** angezeigt.
+1. Klicken Sie auf **Assets hinzufügen** > **Durchsuchen** > **Dateien durchsuchen**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **Veröffentlichungsoptionen** wird für den **DM-Veröffentlichungsmodus** die Einstellung **Selektive Veröffentlichung** angezeigt.
    ![Upload – Modus „Selektive Veröffentlichung“](/help/assets/assets/upload-selective.svg)
 
 2. Wählen Sie abhängig von Ihren Anforderungen **In AEM veröffentlichen**, **In Dynamic Media veröffentlichen** oder beide Optionen aus und klicken Sie auf **Hochladen**.

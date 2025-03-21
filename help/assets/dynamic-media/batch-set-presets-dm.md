@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 100%
+source-wordcount: '3480'
+ht-degree: 97%
 
 ---
 
 # Über Stapelsatzvorgaben {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um die Erstellung und Organisation mehrerer Assets in einem Bildset oder Rotationsset zu erleichtern, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen. Sie können die Vorgaben zusammen mit den von Ihnen in [!DNL Dynamic Media] eingeplanten Asset-Importaufträgen ausführen lassen. Jede Vorgabe ist ein eindeutig benannter, in sich abgeschlossener Satz von Anweisungen, die definieren, wie das Bildset oder Rotationsset mithilfe von Bildern erstellt wird, die den definierten Benennungskonventionen im Vorgabenrezept entsprechen.
 
@@ -44,7 +81,7 @@ Sie können so viele Stapelsatzvorgaben wie nötig erstellen, um alle erforderli
 
 Der Bereich **[!UICONTROL Asset-Benennungskonvention]** auf der Seite **[!UICONTROL Stapelsatzvorgabe]** enthält zwei Elemente, mit denen Sie Ihre Stapelsatzvorgabe definieren können: **[!UICONTROL Übereinstimmung]** und **[!UICONTROL Grundname]**. Mit diesen Elementen können Sie eine Namenskonvention definieren und den Teil der Konvention identifizieren, der zum Benennen des Sets verwendet wird, das diese Elemente enthält. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-Für die individuelle Namenskonvention eines Unternehmens werden oft eine oder mehrere Zeilen der Definition aus jedem dieser Elemente verwendet. Sie können für Ihre eindeutige Definition so viele Zeilen wie erforderlich verwenden und sie zu eindeutigen Elementen gruppieren, beispielsweise Elementen für Hauptbild, Farbe, alternative Ansicht und Muster.
+Die individuelle Namenskonvention eines Unternehmens verwendet häufig eine oder mehrere Zeilen der Definition aus jedem dieser beiden Elemente. Sie können für Ihre eindeutige Definition so viele Zeilen wie erforderlich verwenden und sie zu eindeutigen Elementen gruppieren, beispielsweise Elementen für Hauptbild, Farbe, alternative Ansicht und Muster.
 
 Beispielsweise könnte die Syntax für einen regulären Ausdruck mit einer wörtlichen Übereinstimmung wie folgt aussehen:
 
@@ -110,7 +147,7 @@ Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für e
 | Vorgabenname | Schreibgeschützt. Der Name, den Sie beim ersten Erstellen des Stapelsatzes angegeben haben. Wenn Sie die Vorgabe erneut benennen müssen, können Sie die vorhandene Stapelsatzvorgabe kopieren und einen neuen Namen angeben. Weitere Informationen finden Sie unter [Kopieren einer vorhandenen Stapelsatzvorgabe](#copy-bsp). |
 | Typ | Schreibgeschützt. Der Typ wurde beim ersten Erstellen des Stapelsatzes angegeben. Durch Kopieren einer bestehenden Stapelsatzvorgabe können Sie deren [!UICONTROL Typ] nicht ändern. Sie müssen stattdessen eine Vorgabe erstellen. |
 | Abgeleitete Assets einschließen | Optional. Wenn das IPS von [!DNL Dynamic Media] generierte oder „abgeleitete“ Bilder mit dem Rotationsset oder Bildset enthalten soll, wählen Sie **[!UICONTROL Ja]** (Standard) aus. Ein abgeleitetes Asset ist ein Bild, das nicht direkt von einem Benutzer hochgeladen wurde. Stattdessen wurde das Asset vom IPS erzeugt, wenn ein primäres Asset hochgeladen wurde. Zum Beispiel wird ein Bild-Asset, das IPS aus einer Seite in einer PDF-Datei generiert hat, als die PDF-Datei in [!DNL Dynamic Media] hochgeladen wurde, als abgeleitetes Asset betrachtet. |
-| Zielordner | Optional. Falls Sie eine große Anzahl von Bildsets oder Rotationssets definieren, empfiehlt Adobe, diese Sets von den Ordnern, die die Assets selbst enthalten, getrennt zu halten. Daher sollten Sie die Erstellung eines Ordners für Bildsets oder Rotationssets erwägen und das Programm so umstellen, dass es im Stapelsatz generierte Sets hier ablegt.<br>Geben Sie in diesem Fall an, für welchen Ordner in der Experience Manager Assets-Ordnerstruktur (`/content/dam`) die Stapelsatzvorgabe aktiv sein soll. Stellen Sie sicher, dass der Ordner für die [!DNL Dynamic Media]-Synchronisierung aktiviert ist, damit er als Zielordner zulässig ist. Weitere Informationen finden Sie unter [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Eine bestimmte Stapelsatzvorgabe kann mehr als einem Ordner zugewiesen werden, wenn Sie die Vorgabe für die **[!UICONTROL Eigenschaften]** des Ordners anwenden. Weitere Informationen finden Sie unter [Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners](#apply-bsp-to-folders-via-properties).<br>Wenn Sie keinen Ordner angeben, wird das von der Stapelsatzvorgabe erstellte Bildset oder Rotationsset im selben Ordner erstellt wie der Asset-Ordner, in den Sie hochgeladen haben. |
+| Zielordner | Optional. Falls Sie eine große Anzahl von Bildsets oder Rotationssets definieren, empfiehlt Adobe, diese Sets von den Ordnern, die die Assets selbst enthalten, getrennt zu halten. Daher sollten Sie die Erstellung eines Ordners für Bildsets oder Rotationssets erwägen und das Programm so umstellen, dass es im Stapelsatz generierte Sets hier ablegt.<br>Geben Sie in diesem Fall an, für welchen Ordner in der Experience Manager Assets-Ordnerstruktur (`/content/dam`) die Stapelsatzvorgabe aktiv sein soll. Stellen Sie sicher, dass der Ordner für die [!DNL Dynamic Media]-Synchronisierung aktiviert ist, damit er als Zielordner zulässig ist. Weitere Informationen finden Sie unter [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Eine bestimmte Stapelsatzvorgabe kann mehr als einem Ordner zugewiesen werden, wenn Sie die Vorgabe für die (Eigenschaften **[!UICONTROL des Ordners]**. Weitere Informationen finden Sie unter [Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners](#apply-bsp-to-folders-via-properties).<br>Wenn Sie keinen Ordner angeben, wird das von der Stapelsatzvorgabe erstellte Bildset oder Rotationsset im selben Ordner erstellt wie der Asset-Ordner, in den Sie hochgeladen haben. |
 | **[!UICONTROL Benennungskonvention festlegen]** |  |
 | Präfix<br>oder<br>Suffix | Optional. Geben Sie entweder ein Präfix, ein Suffix oder beide in die entsprechenden Felder ein.<br>Mit den Präfix- und Suffix-Feldern können Sie beliebig viele Stapelsatzvorgaben mit einer alternativen, benutzerdefinierten Dateinamenkonvention für einen bestimmten Satz von Inhalten erstellen. Diese Methode ist besonders in Fällen nützlich, in denen es eine Ausnahme vom definierten Standardbenennungsschema eines Unternehmens gibt.<br>Das Präfix oder Suffix wird dem **[!UICONTROL Grundnamen]** hinzugefügt, den Sie im Bereich **[!UICONTROL Asset-Benennungskonvention]** festlegen. Durch das Hinzufügen eines Präfixes oder Suffixes stellen Sie sicher, dass Ihr Bildset oder Rotationsset exklusiv und unabhängig von anderen Assets erstellt wird. Dies kann auch dazu dienen, anderen bei der Identifizierung von Dateitypen zu helfen. Um beispielsweise einen verwendeten Farbmodus zu bestimmen, können Sie `rgb` oder `cmyk` als Präfix oder Suffix hinzufügen.<br>Obwohl die Angabe einer Benennungskonvention nicht erforderlich ist, um die Funktionalität der Stapelsatzvorgaben zu verwenden, wird als Best Practice empfohlen, die festgelegte Benennungskonvention zu verwenden. Auf diese Weise können Sie beliebig viele Elemente Ihrer Benennungskonvention festlegen, die in einem Satz gruppiert werden sollen, um die Erstellung von Stapelsätzen zu optimieren. |
 | **[!UICONTROL Regelresultate – RegX]** |  |

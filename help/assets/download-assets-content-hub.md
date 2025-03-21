@@ -3,17 +3,51 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie Assets aus dem Content Hub-Portal herunterladen
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 49%
+source-wordcount: '806'
+ht-degree: 96%
 
 ---
 
 # Herunterladen von Assets aus Content Hub {#download-assets}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Herunterladen von Assets](assets/download-asset-genstudio.jpeg)
@@ -28,7 +62,7 @@ Mit Content Hub können Sie Assets herunterladen und freigeben. Auf der Content 
 
 Mit Content Hub können Sie einzelne oder mehrere Assets und ihre verfügbaren Ausgabedarstellungen herunterladen.
 
-Siehe [In Content Hub verfügbare Ausgabedarstellungen](#types-of-renditions).
+Siehe [Typen von in Content Hub verfügbaren Ausgabedarstellungen](#types-of-renditions).
 
 ## Herunterladen von Assets und zugehörigen Ausgabedarstellungen {#download-asset-renditions}
 
@@ -36,12 +70,12 @@ Um ein Asset und seine Ausgabedarstellungen herunterzuladen, führen Sie die fol
 
 1. Klicken Sie auf das Asset, um dessen Eigenschaften anzuzeigen.
 
-1. Klicken Sie auf ![Herunterladen](/help/assets/assets/download-icon.svg), um den Download-Prozess zu starten. Im Bedienfeld Herunterladen werden alle verfügbaren Asset-Ausgabedarstellungen aufgelistet.
+1. Klicken Sie auf ![Herunterladen](/help/assets/assets/download-icon.svg), um den Download-Prozess zu starten. Im Panel „Herunterladen“ werden alle verfügbaren Asset-Ausgabedarstellungen aufgelistet.
 
    >[!NOTE]
    >
    * Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
-   * Sie können alle ([, dynamischen und smarten Zuschnitt-Ausgabedarstellungen) ](#types-of-renditions) Herunterladen eines Assets herunterladen.
+   * Sie können alle [statischen bzw. dynamischen Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt](#types-of-renditions) beim Download eines Assets herunterladen.
 
 1. Wählen Sie mindestens eine Ausgabedarstellung aus und klicken Sie auf **[!UICONTROL Herunterladen]**.
 
@@ -52,7 +86,7 @@ Wenn Sie ein lizenziertes Asset herunterladen, wählen Sie **[!UICONTROL Ich hab
 
 >[!NOTE]
 >
-Benutzerinnen und Benutzer mit Zugriff auf [Dynamic Media mit Open API-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) können Ausgabedarstellungen für dynamisches und smartes Zuschneiden anzeigen und herunterladen.
+Benutzende mit Zugriff auf [Dynamic Media mit Open API-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt anzeigen und herunterladen.
 
 ## Herunterladen mehrerer Assets und ihrer Ausgabedarstellungen {#download-multiple-assets-renditions}
 
@@ -62,15 +96,15 @@ Um mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führen Sie die
 1. Klicken Sie auf **[!UICONTROL Herunterladen]**, um eine der verschiedenen Download-Optionen auszuwählen und mit dem Herunterladen zu beginnen:
 
    * **[!UICONTROL Originale herunterladen]**: Wählen Sie diese Option aus, um die ausgewählten Assets im Originalformular herunterzuladen.
-   * **Nur [!UICONTROL  Ausgabedarstellungen herunterladen]**: Wählen Sie diese Option, um alle verfügbaren statischen Ausgabedarstellungen von Assets mit Ausnahme der Original-Assets herunterzuladen.
-   * **Herunterladen [!UICONTROL Originale und statische Ausgabedarstellungen]**: Wählen Sie diese Option, um sowohl ursprüngliche als auch statische Ausgabedarstellungen der ausgewählten Assets herunterzuladen.
+   * **[!UICONTROL Nur statische Ausgabedarstellungen herunterladen]**: Wählen Sie diese Option aus, um alle verfügbaren statischen Ausgabedarstellungen der Assets mit Ausnahme der Original-Assets herunterzuladen.
+   * **[!UICONTROL Originale und statische Ausgabedarstellungen herunterladen]**: Wählen Sie diese Option aus, um sowohl Original- als auch statische Ausgabedarstellungen der ausgewählten Assets herunterzuladen.
 
      ![Mehrere Ausgabedarstellungen herunterladen](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
      * Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
-     * Sie können nur ([ Ausgabedarstellungen) ](#types-of-renditions) Herunterladen mehrerer Assets herunterladen.
+     * Beim Download mehrerer Assets können Sie nur [statische Ausgabedarstellungen](#types-of-renditions) herunterladen.
 
    Wenn es sich bei einem der ausgewählten Assets um ein lizenziertes Asset handelt, klicken Sie auf die Lizenz des Assets im linken Bereich, um die Vorschau anzuzeigen. Damit können Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** auswählen und dann auf **[!UICONTROL Herunterladen]** klicken. Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mithilfe der Authoring-Umgebung von Assets as a Cloud Service genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -111,25 +145,25 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## Typen von Ausgabedarstellungen {#types-of-renditions}
 
-Bei Asset-Ausgabedarstellungen handelt es sich um verschiedene Darstellungen der Originaldatei eines Assets. Dazu können Miniaturansichten, optimierte Versionen für Web- oder Mobilgeräte, mit Wasserzeichen oder DRM-geschützte Dateien oder sogar dynamische Elemente wie smartes Zuschneiden gehören. Sie müssen nicht mit dem ursprünglichen Dateityp übereinstimmen. Stattdessen dienen sie der Darstellung des Assets in verschiedenen Anwendungsfällen.
+Bei Asset-Ausgabedarstellungen handelt es sich um verschiedene Darstellungen der Originaldatei eines Assets. Dazu können Miniaturansichten, optimierte Versionen für Web oder Mobilgeräte, mit Wasserzeichen versehene bzw. DRM-geschützte Dateien oder sogar dynamische Elemente wie intelligente Zuschnitte gehören. Sie müssen nicht mit dem ursprünglichen Dateityp übereinstimmen. Vielmehr dienen sie zur Darstellung des Assets in verschiedenen Anwendungsfällen.
 
-Weitere Informationen über [Anzeigen und Verwalten von Ausgabedarstellungen in Experience Manager Assets](/help/assets/renditions.md).
+Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in Experience Manager Assets](/help/assets/renditions.md).
 
-[!DNL Experience Manager Assets] unterstützt die folgenden Arten von Ausgabedarstellungen:
+[!DNL Experience Manager Assets] unterstützt die folgenden Typen von Ausgabedarstellungen:
 
-* [Statische Ausgabedarstellungen](/help/assets/renditions.md#static-renditions): Statische Ausgabedarstellungen sind vorerstellte Versionen digitaler Assets, die normalerweise während der Asset-Aufnahme oder -Änderung generiert werden. Sie sind für bestimmte Verwendungen und Plattformen optimiert, z. B. für Web-Miniaturansichten, für mobile Formate für responsive Designs oder für den Druck hochauflösender Dateien, was ein optimiertes und konsistentes Erlebnis bietet.
+* [Statische Ausgabedarstellungen](/help/assets/renditions.md#static-renditions): Statische Ausgabedarstellungen sind vorab erstellte Versionen digitaler Assets, die normalerweise bei der Aufnahme oder Änderung von Assets generiert werden. Sie sind für bestimmte Zwecke und Plattformen optimiert, wie Web-Miniaturansichten, mobile Formate für responsive Designs oder hochauflösende Dateiversionen für den Druck, und sorgen für ein effizientes und konsistentes Erlebnis.
 
-* [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeit-Versionen von Assets, um verschiedene Aktionen auszuführen, z. B. das Ändern der Bildgröße für verschiedene Geräteauflösungen oder das Zuschneiden zur Anpassung an verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in [!DNL Adobe Experience Manager Assets] Autorenumgebung erstellt.
+* [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeitversionen von Assets, um verschiedene Aktionen auszuführen, z. B. die Größenanpassung von Bildern an verschiedene Geräteauflösungen oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in der [!DNL Adobe Experience Manager Assets]-Autorenumgebung erstellt.
 
-* [Smartes Zuschneiden](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Das smarte Zuschneiden konzentriert sich während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Dynamic Media Smart Crop for nutzt die von Adobe Sensei unterstützte künstliche Intelligenz zur Verfolgung des POI, um sicherzustellen, dass unsere Assets auf allen Bildschirmgrößen wie die besten aussehen. [!DNL Adobe Experience Manager] smartes Zuschneiden zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Weitere Informationen finden Sie unter [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Der intelligente Zuschnitt legt den Fokus während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Der intelligente Zuschnitt in Dynamic Media nutzt die künstliche Intelligenz von Adobe Sensei, um einen Point of Interest zu verfolgen und sicherzustellen, dass Assets auf allen Bildschirmgrößen ideal aussehen. Der intelligente Zuschnitt in [!DNL Adobe Experience Manager] zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Siehe [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   ![Ausgabedarstellungstypen](/help/assets/assets/renditions-types.png)
 
 
 >[!NOTE]
 > 
-* Die Funktion für dynamische und smarte Zuschnitte befindet sich in der Early-Adopter-Phase. Um Zugriff auf die Funktion zu erhalten, [erstellen und senden Sie einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
-* Neu eingegliederte Kundinnen und Kunden auf [Open-API-Services für Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) müssen ihre vorhandenen Bildvorgaben überarbeiten, um sie zu genehmigen.
+* Die Funktion für dynamische Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt befindet sich in der Early-Adopter-Phase. Um Zugriff auf die Funktion zu erhalten, [senden Sie eine entsprechende Anfrage an den Kunden-Support von Adobe](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+* Neu für [Dynamic Media Open API-Services](/help/assets/dynamic-media-open-apis-overview.md) aufgenommene Kundschaft muss ihre vorhandenen Bildvorgaben zur Genehmigung überarbeiten.
 
 
 

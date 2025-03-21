@@ -3,17 +3,51 @@ title: Genehmigen von Assets in Experience Manager
 description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmigen.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 100%
+source-wordcount: '1143'
+ht-degree: 97%
 
 ---
 
 # Genehmigen von Assets in [!DNL Experience Manager]
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -47,13 +81,13 @@ Um die Eigenschaft anzuzeigen, der das Feld **[!UICONTROL Überprüfungsstatus]*
 
    >[!NOTE]
    >
-   >Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
+   Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 >[!NOTE]
 >
->Wenn Ihre Assets oder Ordner ein anderes Standardschema aufweisen, stellen Sie sicher, dass diese Aktualisierung in diesem Schema vorgenommen wird.
+Wenn Ihre Assets oder Ordner ein anderes Standardschema aufweisen, stellen Sie sicher, dass diese Aktualisierung in diesem Schema vorgenommen wird.
 
 ## Genehmigen von Assets {#approve-assets}
 
@@ -93,7 +127,7 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 
    >[!NOTE]
    >
-   >Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
+   Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Metadatenprofile]** das neu erstellte Metadatenprofil aus.
 1. Klicken Sie in der oberen Aktionsleiste auf **[!UICONTROL Metadatenprofil auf Ordner anwenden]**.
@@ -104,7 +138,7 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 
 >[!NOTE]
 > 
->Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Erneut verarbeiten]** verwenden, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
+Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Erneut verarbeiten]** verwenden, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
 
 So genehmigen Sie gleichzeitig mehrere Assets in einem Ordner in der Assets-Ansicht:
 
@@ -123,7 +157,7 @@ So genehmigen Sie gleichzeitig mehrere Assets in einem Ordner in der Assets-Ansi
 
    >[!NOTE]
    >
-   >Wenn Sie mithilfe der Assets-Ansicht einer Organisation `Content Hub` als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören.
+   Wenn Sie mithilfe der Assets-Ansicht einer Organisation `Content Hub` als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -144,6 +178,6 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
 
    >[!NOTE]
    >
-   >Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
+   Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
 
 Informationen zu anderen Ausgabedarstellungen, die im Dynamic Media-Bedienfeld angezeigt werden, finden Sie unter [Anzeigen und Herunterladen von Dynamic Media-Ausgabedarstellungen](/help/assets/renditions.md#view-download-dm-renditions).

@@ -2,17 +2,51 @@
 title: Integrieren der Remote-Version von AEM Assets mit AEM Sites
 description: Erfahren Sie, wie Sie AEM Sites mit genehmigtem AEM Assets konfigurieren und verbinden.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1028'
-ht-degree: 100%
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+workflow-type: tm+mt
+source-wordcount: '1056'
+ht-degree: 97%
 
 ---
 
 # Integrieren der Remote-Version von AEM Assets mit AEM Sites  {#integrate-approved-assets}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -43,7 +77,6 @@ Für die Unterstützung von Remote-Assets mit Dynamic Media mit OpenAPI-Funktion
 * Richten Sie die folgenden [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md#add-variables) für AEM as a Cloud Service ein:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
-
      `pXXXX` bezeichnet die Programm-ID <br>
      `eYYYY` bezeichnet die Umgebungs-ID
 
@@ -128,7 +161,7 @@ Führen Sie die folgenden Schritte aus, um Remote-Assets im AEM-Inhaltsfragment 
 
    >[!NOTE]
    >
-   >Wenn Sie über kein AEM-Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [eines erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models).
+   Wenn Sie über kein AEM-Inhaltsfragmentmodell verfügen, müssen Sie möglicherweise [eines erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models).
 
 1. Klicken Sie auf das Symbol ![Häkchen](/help/assets/assets/do-not-localize/checkmark-icon.svg) neben der Textkomponente.
 1. Wählen Sie **[!UICONTROL Remote]** aus, um das Asset aus dem Remote-DAM abzurufen. <br>

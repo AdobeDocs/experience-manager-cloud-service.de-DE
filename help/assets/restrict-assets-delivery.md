@@ -3,17 +3,51 @@ title: Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-
 description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktionen einschränken können.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1150'
-ht-degree: 100%
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 97%
 
 ---
 
 # Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-Funktionen {#restrict-access-to-assets}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -40,7 +74,7 @@ Sie können die Bereitstellung von Assets innerhalb von [!DNL Experience Manager
 
 >[!NOTE]
 >
->Diese Funktion gibt derzeit nicht als Self-Service. Um die Asset-Bereitstellung für IMS-[Benutzende](https://helpx.adobe.com/de/enterprise/using/manage-directory-users.html) und -[Gruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html) zu beschränken, wenden Sie sich an Ihr Unternehmens-Supportteam, um zu erfahren, wie Sie die Informationen abrufen können, die zum Einschränken des Zugriffs über das [Adobe Admin Console](https://adminconsole.adobe.com/)-Portal erforderlich sind, und wie Sie den Zugriff im Autoren-Service von AEM as a Cloud Service konfigurieren.
+Diese Funktion gibt derzeit nicht als Self-Service. Um die Asset-Bereitstellung für IMS-[Benutzende](https://helpx.adobe.com/de/enterprise/using/manage-directory-users.html) und -[Gruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html) zu beschränken, wenden Sie sich an Ihr Unternehmens-Supportteam, um zu erfahren, wie Sie die Informationen abrufen können, die zum Einschränken des Zugriffs über das [Adobe Admin Console](https://adminconsole.adobe.com/)-Portal erforderlich sind, und wie Sie den Zugriff im Autoren-Service von AEM as a Cloud Service konfigurieren.
 
 ### Beschränken der Bereitstellung von Assets mit Datum und Uhrzeit für das Ein- und Ausschalten {#restrict-delivery-assets-date-time}
 
@@ -88,7 +122,7 @@ Bei Autoren-Services von AEM Cloud Service sowie beim Asset-Wähler wird das IMS
 
 >[!NOTE]
 >
->Wenden Sie sich an den Enterprise Support, um weitere Informationen zum Aktivieren der IMS-Authentifizierung bei Integrationen zu erhalten, die auf dem AEM Asset-Wähler basieren.
+Wenden Sie sich an den Enterprise Support, um weitere Informationen zum Aktivieren der IMS-Authentifizierung bei Integrationen zu erhalten, die auf dem AEM Asset-Wähler basieren.
 
 1. Für Erlebnisse, die nicht auf dem Asset-Wähler basieren, unterstützen AEM as a Cloud Service und Dynamic Media mit OpenAPI-Funktionen derzeit Server-seitige API-Integrationen und können IMS-Bearer-Token generieren.
    * Befolgen Sie die Anweisungen [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow), um Service-to-Server-API-Integrationen durchzuführen, mit denen die IMS-Bearer-Token über die [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) abgerufen werden können

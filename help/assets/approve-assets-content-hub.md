@@ -2,17 +2,51 @@
 title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
-workflow-type: ht
-source-wordcount: '837'
-ht-degree: 100%
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+workflow-type: tm+mt
+source-wordcount: '865'
+ht-degree: 96%
 
 ---
 
 # Genehmigen von Assets für Content Hub {#approve-assets-content-hub}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Genehmigen von Assets für Content Hub](assets/content-hub-approve-assets.png)
 
@@ -40,7 +74,7 @@ Die Assets, die in Assets as a Cloud Service als `approved` markiert sind, sind 
 
 >[!NOTE]
 >
->Assets as a Cloud Service und Content Hub müssen dieselbe Organisation verwenden, damit die Assets in Content Hub angezeigt werden.
+Assets as a Cloud Service und Content Hub müssen dieselbe Organisation verwenden, damit die Assets in Content Hub angezeigt werden.
 
 So legen Sie den Asset-Status mithilfe der Assets-Ansicht in AEM as a Cloud Service auf `approved` fest:
 
@@ -101,7 +135,7 @@ Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene
 
 >[!NOTE]
 > 
->Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen.
+Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen.
 
 ## Verwalten von mit Content Hub hochgeladenen Assets {#manage-assets-uploaded-using-content-hub}
 

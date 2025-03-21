@@ -3,17 +3,51 @@ title: Bereitstellungs-APIs
 description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 100%
+source-wordcount: '655'
+ht-degree: 95%
 
 ---
 
 # Bereitstellungs-APIs {#delivery-apis}
 
-| [Best Practices für die Suche](/help/assets/search-best-practices.md) | [Best Practices für Metadaten](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) | [Entwicklerdokumentation zu AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -44,8 +78,8 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 
 >[!NOTE]
 >
->* [Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bildmodifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen als Funktion mit eingeschränkter Verfügbarkeit bereit. Um Zugriff zu erhalten, [senden Sie eine entsprechende Anfrage an den Kunden-Support von Adobe](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
->* Bei [Assets Prime](/help/assets/assets-ultimate-overview.md) ist „Smartes Zuschneiden“ nicht verfügbar.
+* [Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bildmodifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen als Funktion mit eingeschränkter Verfügbarkeit bereit. Um Zugriff zu erhalten, [senden Sie eine entsprechende Anfrage an den Kunden-Support von Adobe](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+* Bei [Assets Prime](/help/assets/assets-ultimate-overview.md) ist „Smartes Zuschneiden“ nicht verfügbar.
 
 ## Bereitstellungs-API-Endpunkte {#delivery-apis-endpoint}
 
