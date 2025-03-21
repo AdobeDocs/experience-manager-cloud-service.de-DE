@@ -2,9 +2,9 @@
 title: Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services
 description: Erfahren Sie, wie Sie AEM Assets mit Edge Delivery Services integrieren. Durch diese Integration können Sie AEM Assets mit Microsoft Word und Google Docs integrieren, AEM Assets mit dem universellen Editor integrieren, Dynamic Media mit OpenAPI-Funktionen mit dem universellen Editor integrieren und Dynamic Media mit OpenAPI-Funktionen mit Microsoft Word und Google Docs integrieren.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 3%
 Sie können Inhalte in folgenden Bereichen bearbeiten:
 
 * [Microsoft Word oder Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
-* [Universeller Editor](#integrate-aem-assets-with-universal-editor)
+* [Universeller Editor](#integrate-aem-assets-with-UE-universal-editor)
 
 Nachdem Sie den Inhalt bearbeitet haben, können Sie ihn in Edge Delivery Services veröffentlichen.
 
 ## Integrieren von AEM Assets mit dokumentenbasierten Authoring-Flüssen für Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
-Die Integration von AEM Assets mit den dokumentbasierten Authoring-Tools wie Microsoft Word oder Google Docs bietet einen Asset-Selektor direkt in Ihrem Editor. Verwenden Sie diesen Asset-Wähler, um auf die AEM Assets zuzugreifen, und fügen Sie genehmigte Assets in Ihr Dokument ein.
-
-Wenn Sie bereits über eine Edge Delivery Services-Website verfügen, finden Sie unter [AEM Assets-Plug](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) weitere Informationen zur Integration von AEM Assets in Ihr bestehendes AEM-Projekt. Wenn Sie keine Edge Delivery Services-Website haben, lesen Sie [Voraussetzungen](#integrate-aem-assets-with-microsoft-word-and-google-docs) und [Integrieren von AEM Assets in eine dokumentbasierte Autorenumgebung](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) die folgenden Abschnitte.
+Wenn AEM Assets mit den dokumentbasierten Authoring-Tools wie Microsoft Word oder Google Docs integriert ist, steht ein Asset-Selektor in Ihrem Editor zur Verfügung. Verwenden Sie diesen Asset-Wähler, um auf die AEM Assets zuzugreifen, und fügen Sie genehmigte Assets in Ihr Dokument ein.
+Wenn Sie bereits über eine Edge Delivery Services-Website verfügen, erfahren Sie im Dokument [AEM Assets-Plug](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) , wie Sie AEM Assets in Ihr bestehendes AEM-Projekt integrieren können.
+Befolgen Sie die folgenden [Voraussetzungen](#integrate-aem-assets-with-microsoft-word-and-google-docs) und [Integrieren von AEM Assets in eine dokumentbasierte Authoring-Umgebung](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs), wenn Sie keine Edge Delivery Services-Website haben, um Ihre AEM Assets einschließlich der in dokumentbasierten Authoring-Tools erstellten Inhalte zu veröffentlichen.
 
 ### Voraussetzungen{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 Bevor Sie beginnen, stellen Sie sicher, dass Ihre dokumentbasierte Authoring-Umgebung bereit ist:
 
-* Integrieren von AEM mit einem dokumentbasierten Authoring-Tool zum Einrichten der Authoring-Umgebung. Siehe [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial) zum Einrichten der Authoring-Umgebung.
+* Integrieren von AEM mit einem dokumentbasierten Authoring-Tool zum Einrichten der Authoring-Umgebung. Unter [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial) erfahren Sie, wie Sie die Authoring-Umgebung einrichten.
 
 ### Integrieren von AEM Assets in die dokumentbasierte Authoring-Umgebung{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
@@ -65,23 +65,23 @@ Um einen Asset-Verweis zu verwenden, müssen Sie über Folgendes verfügen:
 
 ### Verwenden von Assets, die mithilfe von Dynamic Media mit OpenAPI-Funktionen bereitgestellt werden{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-Informationen zur Verwendung von Assets, die mit Dynamic Media mit OpenAPI-Funktionen beim Erstellen von Inhalten bereitgestellt werden, finden Sie unter:
+Wählen Sie die folgenden Links aus, um zu erfahren, wie Sie Dynamic Media mit OpenAPI-Funktionen verwenden können, um Bilder, Videos und andere Asset-Typen in Ihren Inhalten bereitzustellen:
 
-* [Verwenden von Bildverweisen](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
-* [Verwenden von Videoverweisen](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [Verwenden von Asset-Referenzen für Nicht-Bild- und Video-Assets wie PDF, ZIP-Dateien und mehr](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [Hinzufügen von Bildern zu Inhalten](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
+* [Hinzufügen von Videos zu Inhalten](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [Fügen Sie Nicht-Bild- und Video-Assets wie PDF, ZIP-Dateien und mehr zu Ihrem Inhalt hinzu](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-In diesem Video erfahren Sie, wie Sie Assets mit Dynamic Media mit OpenAPI-Funktionen bereitstellen.
+In diesem Video erfahren Sie, wie Sie Assets in Ihren Inhalten mit Dynamic Media mit OpenAPI-Funktionen bereitstellen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
 ## Beispiel für Edge Delivery Services-Site{#example-of-an-Edge-Delivery-Services-site}
 
-Siehe [WKND-](http://bit.ly/3DExLnf). Diese Site basiert auf den dokumentbasierten Authoring-Funktionen von Edge Delivery Services. Der Inhalt der Site wird in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) erstellt, wobei Dynamic Media mit OpenAPI-Funktionen für die Asset-Bereitstellung verwendet wird. Nach der Erstellung wird der Inhalt direkt aus dem Dokument veröffentlicht. Für dieses dokumentbasierte Authoring-Setup werden alle wichtigen Dateien, Ordner, Konfigurationen, den Stil und die Funktions-Codes der Website in diesem [Git-Repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) gespeichert.
+Siehe [WKND Travel](http://bit.ly/3DExLnf), eine Site, die mithilfe der dokumentbasierten Authoring-Funktionen von Edge Delivery Services erstellt wurde. Der Inhalt der Site wird in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) verfasst und Dynamic Media mit OpenAPI-Funktionen wird verwendet, um Assets im Inhalt bereitzustellen. Nach dem Authoring wird der Inhalt direkt aus dem Dokument veröffentlicht. In diesem [Git-Repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) erfahren Sie mehr über alle wichtigen Dateien, Ordner, Konfigurationen, den Stil und die Funktions-Codes der Website, die zum Erstellen des dokumentbasierten Authoring-Setups für diese Edge Delivery Services (EDS)-Site verwendet werden.
 
-## Integrieren von AEM Assets mit auf dem universellen Editor basierenden Authoring-Flüssen für Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
+## Integrieren von AEM Assets mit auf dem universellen Editor basierenden Authoring-Flüssen für Edge Delivery Services {#integrate-aem-assets-with-UE-universal-editor}
 
 Einrichten des universellen Editors für die Integration mit AEM Assets. Durch diese Integration können Sie Dynamic Media mit OpenAPI-Funktionen verwenden, um Assets bereitzustellen.
 
-* Siehe [Konfiguration in Edge Delivery Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site), um eine benutzerdefinierte Asset-Auswahlfunktion im universellen Editor hinzuzufügen. Mit der benutzerdefinierten Asset-Auswahl können Sie Assets direkt in Ihre Inhalte im universellen Editor einfügen.
+* Unter [Konfiguration in Edge Delivery Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) erfahren Sie, wie Sie eine benutzerdefinierte Asset-Auswahlfunktion im universellen Editor hinzufügen. Mit der benutzerdefinierten Asset-Auswahl können Sie Assets direkt in Ihre Inhalte im universellen Editor einfügen.
 * Unter [Übersicht über Erweiterungen](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) erfahren Sie, wie Sie auf AEM Assets zugreifen und die Assets beim Authoring im universellen Editor einfügen können.
