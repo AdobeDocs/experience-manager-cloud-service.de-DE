@@ -9,10 +9,10 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
-ht-degree: 99%
+source-wordcount: '4095'
+ht-degree: 98%
 
 ---
 
@@ -355,7 +355,7 @@ Nach der Veröffentlichung haben Sie zwei Optionen.
    * **Direktes Verknüpfen:**
 Verwenden Sie die bereitgestellte URL, um eine direkte Verknüpfung zum Video herzustellen. Verknüpfen Sie es entsprechend mit einem Hyperlink auf Ihrer Marketing-Site.
    * **Einbetten des Videos:**
-Kopieren Sie den bereitgestellten Einbettungs-Code und fügen Sie ihn in das HTML Ihrer Web-Seite ein, auf der das Video angezeigt werden soll. Hierdurch kann das Video direkt auf Ihrer Site wiedergegeben werden.
+Kopieren Sie den bereitgestellten eingebetteten Code und fügen Sie ihn in die HTML Ihrer Web-Seite ein, auf der das Video angezeigt werden soll. Hierdurch kann das Video direkt auf Ihrer Site wiedergegeben werden.
 
 Möchten Sie mehr erfahren? Navigieren Sie zu [Video](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -410,7 +410,7 @@ Die Internationalisierung von Videos für den mehrsprachigen Gebrauch ist für d
    * Wenn Sie AEM als Ihr WCM-System (Web Content Management) verwenden, können Sie Ihren Web-Seiten direkt Videos hinzufügen.
    * Wenn Sie das WCM-System eines Drittanbieters verwenden, können Sie Videos mithilfe von URLs oder Einbettungs-Codes auf Ihren Web-Seiten verknüpfen oder einbetten.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Unterstützung für mehrfache Untertitel und Audiospuren bei Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) oder sehen SIe sich [Hinzufügen mehrfacher Untertitel und Audiospuren zu einem Video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) an (1 Minute, 41 Sekunden).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Über die Unterstützung mehrerer Untertitel und Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Bereitstellen von Assets an Kundinnen und Kunden
