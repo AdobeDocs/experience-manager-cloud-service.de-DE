@@ -3,13 +3,13 @@ title: Entwickeln von AEM Commerce für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie ein Commerce-fähiges AEM-Projekt mithilfe des AEM-Projektarchetyps generieren. Erfahren Sie, wie Sie das Projekt mithilfe des AEM as a Cloud Service-SDK in einer lokalen Entwicklungsumgebung erstellen und bereitstellen.
 topics: Commerce, Development
 feature: Commerce Integration Framework
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 100%
