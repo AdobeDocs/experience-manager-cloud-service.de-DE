@@ -5,51 +5,14 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 98%
+source-wordcount: '1397'
+ht-degree: 100%
 
 ---
 
-# Invalidierung des CDN-Cache mithilfe von Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
+# Ungültig machen des CDN-Cache mithilfe von Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeichert, um eine schnelle Bereitstellung an Ihre Kunden zu ermöglichen. Wenn Sie diese Assets aktualisieren, wollen Sie jedoch, dass die Änderungen auf Ihrer Website sofort wirksam werden. Durch Löschen oder Invalidierung des CDN-Cache können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen nicht mehr warten, bis der Cache mit einem TTL-Wert (Time To Live) abläuft (der Standardwert ist zehn Stunden). Stattdessen können Sie eine Anfrage über die Dynamic Media-Benutzeroberfläche senden, damit der Cache innerhalb von Minuten abläuft.
 

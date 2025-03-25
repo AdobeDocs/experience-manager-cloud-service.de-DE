@@ -5,51 +5,14 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
 workflow-type: tm+mt
-source-wordcount: '3211'
-ht-degree: 99%
+source-wordcount: '3165'
+ht-degree: 100%
 
 ---
 
 # Hinzufügen von Dynamic Media-Assets zu Seiten{#adding-dynamic-media-assets-to-pages}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 Um die Dynamic Media-Funktionen zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponente für **Dynamic Media**, **Interaktive Medien**, **Panorama Medien** oder **360-Grad-Videomedien** direkt auf der Seite hinzufügen. Sie wechseln in den Layout-Modus und aktivieren die Dynamic Media-Komponenten. Anschließend fügen Sie der Seite diese Komponenten und der Komponente Assets hinzu. Die Komponenten für Dynamic Media sind smart – sie erkennen, ob Sie ein Bild oder ein Video hinzufügen. Die verfügbaren Konfigurationsoptionen ändern sich entsprechend.
 

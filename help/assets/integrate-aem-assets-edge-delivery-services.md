@@ -2,9 +2,9 @@
 title: Integrieren  [!DNL AEM Assets]  Erstellen von Inhalten für [!DNL Edge Delivery Services]
 description: Erfahren Sie, wie Sie  [!DNL AEM Assets] mit [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] mit [!DNL Microsoft Word] und [!DNL Google Docs], integrate [!DNL AEM Assets] mit [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities]  [!DNL Universal Editor]  und  [!DNL Dynamic Media with OpenAPI capabilities] mit [!DNL Microsoft Word] und [!DNL Google Docs] integrieren.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
+source-git-commit: fe3286bf792f387c2209d7b827ba195b50c586b5
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-![AEM-Assets mit UE](/help/assets/assets/EDS2.png)
+![Integration von AEM-Assets mit dem universellen Editor](/help/assets/assets/EDS2.png)
 
 [[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview) ist ein zusammenstellbarer Satz von Services, der Ihnen ein hohes Maß an Flexibilität bei der Erstellung und Bereitstellung von Inhalten auf Ihrer Website ermöglicht. Sie können sowohl das [AEM-Content](/help/sites-cloud/authoring/author-publish.md)Management als auch das [WYSIWYG-Authoring mit  [!DNL Universal Editor]  sowie das dokumentbasierte Authoring verwenden](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 

@@ -5,51 +5,14 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 97%
+source-wordcount: '1281'
+ht-degree: 100%
 
 ---
 
 # Verknüpfen von URLs mit einer Web-Anwendung {#linking-urls-to-your-web-application}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 Ihre Websites und Programme greifen über URL-Aufrufe auf Dynamic Media-Services zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamic Media“ aktiviert. Sie können diese URLs zum Testen in einen Webbrowser einfügen.
 
