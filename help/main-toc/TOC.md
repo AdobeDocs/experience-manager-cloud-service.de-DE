@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
+source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
 workflow-type: tm+mt
-source-wordcount: '6103'
+source-wordcount: '6106'
 ht-degree: 99%
 
 ---
@@ -1318,6 +1318,7 @@ ht-degree: 99%
       + Hybrid- und SPA-Entwicklung {#hybrid}
          + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
+         + [Einstellung des SPA-Editors](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Einführung in SPAs und exemplarische Anleitung](/help/implementing/developing/hybrid/introduction.md)
          + [SPA-WKND-Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Erste Schritte mit React](/help/implementing/developing/hybrid/getting-started-react.md)
