@@ -1,11 +1,11 @@
 ---
 title: Massen-Upload von Prinzipalen in IMS nach Verwendung von CTT
-description: Übersicht über Massen-Upload-Dateien für Gruppen und Benutzende und wie diese auf der Admin Console zum Erstellen von Gruppen und Benutzenden in IMS verwendet werden.
+description: Übersicht über Massen-Upload-Dateien für Gruppen und Benutzende und wie diese in der Admin Console zum Erstellen von Gruppen und Benutzenden in IMS verwendet werden.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
 >title="Massen-Upload von Prinzipalen"
->abstract="Übersicht über Massen-Upload-Dateien für Gruppen und Benutzende und wie diese auf der Admin Console zum Erstellen von Gruppen und Benutzenden in IMS verwendet werden."
+>abstract="Übersicht über Massen-Upload-Dateien für Gruppen und Benutzende und wie diese in der Admin Console zum Erstellen von Gruppen und Benutzenden in IMS verwendet werden."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console-Dokumentation"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
