@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,9 +60,9 @@ Die UUID-Unterstützung für Inhaltsfragmente ist jetzt allgemein verfügbar. Di
 
 Assets, die in anderen AEM as a Cloud Service-Programmen als Inhaltsfragmenten gespeichert sind, und die mit der neuen „Dynamic Media mit OpenAPI“-Funktion aktiviert sind, können jetzt in Inhaltsfragmenten verwendet werden. Mit der Bildauswahl im neuen Inhaltsfragment-Editor können jetzt „Remote“-Repositorys als Quelle für Bild-Assets ausgewählt werden, auf die im Fragment verwiesen werden soll. Und bei der Bereitstellung solcher Inhaltsfragmente mit AEM GraphQL enthält die JSON-Antwort jetzt die erforderlichen Eigenschaften für Remote-Assets (assetId, repositoryId), damit Client-Anwendungen entsprechende „Dynamic Media mit OpenAPI“-URLs erstellen können, um das Bild abzurufen.
 
-**Rollout des Inhaltsfragment-Editors**
+**Inhaltsfragmenteditor – Rollout**
 
-Wir werden den neuen, auf der Spectrum-Benutzeroberfläche basierenden Inhaltsfragment-Editor in AEM as a Cloud Service weiterhin aktivieren. Nachdem sie im November 2024 zur Standardeinstellung für alle Cloud Service-Entwicklungsumgebungen wurde, wird sie ab dem 1. April 2025 für alle Staging-Umgebungen und ab dem 1. Mai 2025 für alle Produktionsumgebungen als Standard festgelegt. In allen Fällen haben Benutzende weiterhin die Möglichkeit, zum herkömmlichen Inhaltsfragment-Editor in der Touch-optimierten AEM-Benutzeroberfläche zurückzukehren.
+Die Aktivierung des neuen, auf der Spectrum-Benutzeroberfläche basierenden Inhaltsfragmenteditors in AEM as a Cloud Service wird fortgesetzt. Nachdem er im November 2024 bereits zur Standardeinstellung für alle Cloud Service-Entwicklungsumgebungen wurde, wird er ab dem 1. April 2025 auch für alle Staging-Umgebungen und ab dem 1. Mai 2025 für alle Produktionsumgebungen als Standard festgelegt. In allen Fällen haben Benutzende weiterhin die Möglichkeit, zum herkömmlichen Inhaltsfragmenteditor in der Touch-optimierten Benutzeroberfläche von AEM zurückzukehren.
 
 **Übersetzungs-HTTP-API**
 
