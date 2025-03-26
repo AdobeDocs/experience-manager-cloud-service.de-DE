@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie 301- oder 302-Umleitungen ohne Zugriff auf Gi
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
+source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 94%
+source-wordcount: '781'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service bietet [mehrere Ansätze](https://experienceleague.adobe.
 * Der Umfang reicht von wenigen bis hin zu Zehntausenden von Umleitungen.
 * Am besten geeignet ist die Option einer Benutzeroberfläche, die entweder als benutzerdefiniertes Projekt oder mit [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) oder [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) erstellt wird.
 
-Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, eine oder mehrere Rewrite Map-Dateien zu laden (oder neu zu laden), die an einem bestimmten Speicherort im Publish-Repository abgelegt wurden (sodass sie von AEM Publish heruntergeladen werden können). Hierbei ist darauf hinzuweisen, dass die Art und Weise, wie die Dateien dorthin gelangen, außerhalb des Anwendungsbereichs dieser Funktion liegt. Sie können jedoch eine der folgenden Methoden in Betracht ziehen:
+Das Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, eine oder mehrere Rewrite-Zuordnungsdateien (neu) zu laden, die an einem bestimmten Speicherort im Veröffentlichungs-Repository abgelegt wurden (sodass sie vom AEM-Veröffentlichungsdienst heruntergeladen werden können). Hierbei ist darauf hinzuweisen, dass die Art und Weise, wie die Dateien dorthin gelangen, außerhalb des Anwendungsbereichs dieser Funktion liegt. Sie können jedoch eine der folgenden Methoden in Betracht ziehen:
 
 * Aufnehmen der Rewrite-Zuordnung als Asset in der Autorenbenutzeroberfläche mit anschließender Veröffentlichung.
 * Installation des [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([mindestens Version 6.7.0](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), der eine Benutzeroberfläche zum Verwalten der URL-Zuordnungen enthält und auch die Rewrite-Zuordnungsdatei veröffentlichen kann.
@@ -39,6 +39,8 @@ Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, eine
 
 >[!NOTE]
 > Die Verwendung von Redirect Map Manager durch diese Funktion erfordert ACS Commons Version **6.7.0 oder höher**, während die Verwendung von Redirect Manager Version **6.10.0 oder höher** erfordert.
+
+Eine detaillierte schrittweise Implementierung finden Sie im Tutorial [Implementieren von Pipeline-freien URL-Umleitungen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) .
 
 ## Die Rewrite-Zuordnung {#rewrite-map}
 
@@ -75,7 +77,6 @@ RewriteCond ${map.foo:$1} !=""
 RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 ```
 
-
 ## Überlegungen {#considerations}
 
 Beachten Sie dabei Folgendes:
@@ -83,3 +84,8 @@ Beachten Sie dabei Folgendes:
 * Standardmäßig startet Apache beim Laden einer Rewrite-Zuordnung, ohne auf das Laden der vollständigen Zuorddnungsdatei(en) zu warten. Daher kann es, bis die vollständigen Zuordnungen geladen sind, vorübergehend zu Inkonsistenzen kommen. Diese Einstellung kann so geändert werden, dass Apache darauf wartet, dass der gesamte Zuordnungsinhalt geladen wird. Es dauert dann jedoch länger, bis Apache gestartet wird. Um dieses Verhalten so zu ändern, dass Apache wartet, fügen Sie `wait:true` zur Datei `managed-rewrite-maps.yaml` hinzu.
 * Um das Intervall zwischen den Ladevorgängen zu ändern, fügen Sie `ttl: <integer>` zur Datei `managed-rewrite-maps.yaml` hinzu. Beispiel: `ttl: 120`.
 * Apache hat eine Längenbeschränkung von 1024 für RewriteMap-Einzeleinträge.
+
+## Tutorials {#tutorials}
+
+1. [Implementieren von Pipeline-freien URL-Umleitungen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL-Umleitungen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/url-redirection)
