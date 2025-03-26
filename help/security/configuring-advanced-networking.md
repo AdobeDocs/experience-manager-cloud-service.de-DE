@@ -1,24 +1,51 @@
 ---
-title: Konfigurieren der erweiterten Netzwerkfunktionen für AEM as a Cloud Service
+title: Erweiterte Netzwerke für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '5524'
-ht-degree: 100%
+source-git-commit: 08a73fcadf65e37b621fbbfba1e4e0b8a5e61b91
+workflow-type: tm+mt
+source-wordcount: '5606'
+ht-degree: 73%
 
 ---
 
 
-# Konfigurieren der erweiterten Netzwerkfunktionen für AEM as a Cloud Service {#configuring-advanced-networking}
+# Erweiterte Netzwerke für AEM as a Cloud Service konfigurieren {#configuring-advanced-networking}
 
-Dieser Artikel stellt die verschiedenen erweiterten Netzwerkfunktionen in AEM as a Cloud Service vor, einschließlich der Bereitstellung von VPN im Self-Service, nicht standardmäßiger Ports und dedizierter Ausgangs-IP-Adressen.
+In diesem Artikel werden die erweiterten Netzwerkfunktionen vorgestellt, die in AEM as a Cloud Service verfügbar sind. Zu diesen Funktionen gehören Self-Service und API-Bereitstellung von VPNs, nicht standardmäßige Ports und dedizierte Ausgangs-IP-Adressen.
 
->[!TIP]
+Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die Sie durch die einzelnen erweiterten Netzwerkoptionen führen. Siehe [Erweiterte Netzwerke](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+
+>[!IMPORTANT]
 >
->Zusätzlich zu dieser Dokumentation finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/advanced-networking) eine Reihe von Tutorials, die Sie durch die erweiterten Netzwerkoptionen führen.
+>Erweiterte Netzwerke in AEM as a Cloud Service können entweder über die Cloud Manager-Benutzeroberfläche oder mithilfe der Cloud Manager-API (z. B. cURL) konfiguriert werden.
+>
+>Dieser Artikel konzentriert sich auf die Verwendung der UI-Methode. Wenn Sie die Konfiguration lieber über die API automatisieren möchten, finden Sie weitere Informationen im [Virtual Private Network (VPN)-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>
+>**Automatisieren erweiterter Netzwerke mit der API**
+>Zur Automatisierung der erweiterten Netzwerkeinrichtung (z. B. VPN-Erstellung) können Sie die Cloud Manager-API verwenden:
+>
+>```bash
+>curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
+>   -H "Authorization: Bearer {ACCESS_TOKEN}" \
+>   -H "x-api-key: {API_KEY}" \
+>   -H "Content-Type: application/json" \
+>   -d '{
+>       "providerId": "aws",
+>       "portMappings": [
+>           {
+>               "name": "SSH",
+>               "protocol": "TCP",
+>               "port": 22
+>           }
+>       ]
+>   }'
+>```
+>
+>Das vollständige Tutorial und weitere API-Beispiele finden Sie im Tutorial [Virtuelles privates Netzwerk (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>
 
 ## Überblick {#overview}
 
@@ -42,12 +69,12 @@ Bei der Konfiguration erweiterter Netzwerkfunktionen gelten die folgenden Einsch
 
 * Ein Programm kann eine einzelne erweiterte Netzwerkoption (flexibler Port-Ausgang, dedizierte Ausgangs-IP-Adresse oder VPN) bereitstellen.
 * Erweiterte Netzwerke sind für [Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) nicht verfügbar.
-* Benutzende müssen über die **Administrator**-Rolle verfügen, um die Netzwerkinfrastruktur in ihrem Programm hinzuzufügen und zu konfigurieren.
+* Ein Benutzer muss über die Rolle **Administrator** verfügen, um eine Netzwerkinfrastruktur in Ihrem Programm hinzuzufügen und zu konfigurieren.
 * Die Produktionsumgebung muss erstellt werden, bevor in Ihrem Programm eine Netzwerkinfrastruktur hinzugefügt werden kann.
 * Ihre Netzwerkinfrastruktur muss sich in derselben Region befinden wie die primäre Region Ihrer Produktionsumgebung.
    * Wenn Ihre Produktionsumgebung über [zusätzliche Veröffentlichungsregionen](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) verfügt, können Sie zusätzliche Netzwerkinfrastrukturen erstellen, die jede zusätzliche Region widerspiegeln.
    * Sie dürfen nicht mehr Netzwerkinfrastrukturen erstellen als die in Ihrer Produktionsumgebung konfigurierte maximale Anzahl von Regionen.
-   * Sie können so viele Netzwerkinfrastrukturen definieren, wie Regionen in Ihrer Produktionsumgebung verfügbar sind. Die neue Infrastruktur muss jedoch vom gleichen Typ sein wie die zuvor erstellte Infrastruktur.
+   * Sie können so viele Netzwerkinfrastrukturen wie verfügbare Regionen in Ihrer Produktionsumgebung definieren, aber die neue Infrastruktur muss vom gleichen Typ sein wie die zuvor erstellte Infrastruktur.
    * Beim Erstellen mehrerer Infrastrukturen dürfen Sie nur die Regionen auswählen, in denen keine erweiterte Netzwerkinfrastruktur erstellt wurde.
 
 ### Konfigurieren und Aktivieren erweiterter Netzwerke {#configuring-enabling}
@@ -69,7 +96,7 @@ Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service s
 
 >[!TIP]
 >
->Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse empfiehlt es sich, den flexiblen Port-Ausgang zu wählen, wenn eine bestimmte IP-Adresse nicht erforderlich ist. Der Grund dafür ist, dass Adobe die Leistung des flexiblen Port-Ausgangs-Traffics optimieren kann.
+>Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse empfiehlt es sich, den flexiblen Port-Ausgang zu wählen, wenn eine bestimmte IP-Adresse nicht erforderlich ist. Der Grund dafür ist, dass Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann.
 
 >[!NOTE]
 >
@@ -85,7 +112,8 @@ Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service s
 
    ![Netzwerkinfrastruktur hinzufügen](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. Wählen Sie im Assistenten **Netzwerkinfrastruktur hinzufügen** aus dem Dropdown-Menü **Region** die Option **Flexibler Port-Ausgang** und die Region, in der er erstellt werden soll, und klicken Sie auf **Fortfahren**.
+1. Wählen Sie im **Netzwerkinfrastruktur hinzufügen**-Assistenten die Option **Flexibler Port-Ausgang**.
+1. Wählen Sie **Dropdown** Menü „Region“ die gewünschte Region aus und klicken Sie dann auf **Weiter**.
 
    ![Konfigurieren des flexiblen Port-Ausgangs](assets/advanced-networking-ui-flexible-port-egress.png)
 
@@ -93,7 +121,7 @@ Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service s
 
    ![Bestätigen der Konfiguration des flexiblen Port-Ausgangs](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
-Unter der Überschrift **Netzwerkinfrastruktur** im seitlichen Bedienfeld erscheint ein neuer Eintrag mit Details zum Typ der Infrastruktur, dem Status, der Region und den Umgebungen, für die er aktiviert wurde.
+Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Seitenbereich angezeigt. Sie enthält Details wie den Typ der Infrastruktur, den Status, die Region und die Umgebungen, in denen sie aktiviert ist.
 
 ![Neuer Eintrag unter „Netzwerkinfrastruktur“](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -115,8 +143,8 @@ Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastr
 
 Für HTTP- oder HTTPS-Traffic, der an andere Ports als 80 oder 443 geleitet wird, sollte ein Proxy mit den folgenden Host- und Port-Umgebungsvariablen konfiguriert werden:
 
-* für HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
-* für HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
+* für HTTP: `AEM_PROXY_HOST`/ `AEM_HTTP_PROXY_PORT ` (standardmäßig `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
+* für HTTPS: `AEM_PROXY_HOST`/ `AEM_HTTPS_PROXY_PORT ` (standardmäßig `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
 
 Hier finden Sie Beispiel-Code zum Senden einer Anfrage an `www.example.com:8443`:
 
@@ -196,7 +224,7 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben:
 
 #### Apache-/Dispatcher-Konfiguration {#apache-dispatcher}
 
-Die `mod_proxy`-Direktive der Apache/Dispatcher-Schicht von AEM as a Cloud Service kann mithilfe der oben beschriebenen Eigenschaften konfiguriert werden.
+Die `mod_proxy`-Direktive der Apache/Dispatcher-Stufe von AEM Cloud Service kann mithilfe der oben beschriebenen Eigenschaften konfiguriert werden.
 
 ```
 ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
@@ -214,23 +242,23 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Dedizierte Ausgangs-IP-Adresse {#dedicated-egress-ip-address}
 
-Eine dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service erhöhen, die eine Zulassungsliste von IP-Adressen anbieten. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud-Service der Kundschaft in den externen Service fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
+Eine dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service erhöhen, die eine Zulassungsliste von IP-Adressen anbieten. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud-Service der Kundschaft in den externen Service fließen darf. Dieser Ansatz kommt zu dem zulässigen Traffic von anderen IPs hinzu.
 
 Dieselbe dedizierte IP wird auf alle Umgebungen in einem Programm angewendet und gilt gleichermaßen für Autoren- und Veröffentlichungs-Service.
 
-Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von IPs, die mit anderen Kundinnen und Kunden von AEM as a Cloud Service gemeinsam genutzt werden.
+Wenn die Funktion für dedizierte IP-Adressen nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service durch einen freigegebenen Satz von IPs. Diese IPs werden von anderen Kunden von AEM as a Cloud Service verwendet.
 
-Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Port-Ausgang](#flexible-port-egress). Der Hauptunterschied besteht darin, dass der Traffic nach der Konfiguration immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Falls sie aber doch geändert werden muss, wird vorher eine Benachrichtigung gesendet.
+Die Konfiguration einer dedizierten Ausgangs-IP-Adresse ähnelt [flexibler Port-Ausgang](#flexible-port-egress). Der Hauptunterschied besteht darin, dass der Traffic nach der Konfiguration immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Falls sie aber doch geändert werden muss, wird vorher eine Benachrichtigung gesendet.
 
 >[!TIP]
 >
->Bei der Wahl zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse ist der flexible Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist. Der Grund dafür ist, dass Adobe die Leistung des flexiblen Port-Ausgangs-Traffics optimieren kann.
+>Bei der Wahl zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse ist der flexible Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist. Der Grund dafür ist, dass Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann.
 
 >[!NOTE]
 >
 >Wenn Ihnen vor dem 30.09.2021 (d. h. vor der Version September 2021) eine dedizierte Ausgangs-IP bereitgestellt wurde, unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
 >
->Dazu gehören HTTP/1.1 und bei Verschlüsselung HTTP/2. Darüber hinaus kann ein dedizierter Ausgangsendpunkt nur über HTTP/HTTPS an den Ports 80/443 mit einem beliebigen Ziel kommunizieren.
+>Dieses Ergebnis umfasst HTTP/1.1 und HTTP/2 bei Verschlüsselung. Außerdem kann ein dedizierter Ausgangs-Endpunkt nur über HTTP/HTTPS an den Ports 80/443 mit einem beliebigen Ziel kommunizieren.
 
 >[!NOTE]
 >
@@ -246,7 +274,8 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Po
 
    ![Netzwerkinfrastruktur hinzufügen](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. Wählen Sie in dem sich öffnenden Assistenten **Netzwerkinfrastruktur hinzufügen** aus dem Dropdown-Menü **Region** die Option **Dedizierte Ausgangs-IP-Adresse** und die Region, in der sie erstellt werden soll, aus und klicken Sie auf **Fortfahren**.
+1. Klicken Sie im **Netzwerkinfrastruktur hinzufügen** auf „Dedizierte Ausgangs **IP-Adresse**.
+1. Wählen Sie **Dropdown** Menü „Region“ die gewünschte Region aus und klicken Sie dann auf **Weiter**.
 
    ![Konfigurieren der dedizierten Ausgangs-IP-Adresse](assets/advanced-networking-ui-dedicated-egress.png)
 
@@ -254,7 +283,7 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Po
 
    ![Bestätigen der Konfiguration des flexiblen Port-Ausgangs](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-Unter der Überschrift **Netzwerkinfrastruktur** im seitlichen Bedienfeld erscheint ein neuer Eintrag mit Details zum Typ der Infrastruktur, dem Status, der Region und den Umgebungen, für die er aktiviert wurde.
+Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Seitenbereich angezeigt. Sie enthält Details wie den Typ der Infrastruktur, den Status, die Region und die Umgebungen, in denen sie aktiviert ist.
 
 ![Neuer Eintrag unter „Netzwerkinfrastruktur“](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -270,7 +299,7 @@ Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastr
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz der Parameter, die genaue Syntax und wichtige Informationen, z. B. welche Parameter später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### Traffic-Routing {#dedicated-egress-ip-traffic-routing}
 
@@ -316,7 +345,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td></td>
-    <td>Durch die HTTP-Proxy-Konfiguration, die standardmäßig für den HTTP/s-Traffic mithilfe der standardmäßigen Java™-HTTP-Client-Bibliothek konfiguriert ist</td>
+    <td>Über die HTTP-Proxy-Konfiguration, die standardmäßig für den HTTP/s-Traffic mit der standardmäßigen Java™-HTTP-Client-Bibliothek konfiguriert ist</td>
     <td>Alle</td>
     <td>Über die dedizierte Ausgangs-IP</td>
     <td></td>
@@ -354,7 +383,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ### Verwendung der Funktion {#feature-usage}
 
-Die Funktion ist mit Java™-Code oder Bibliotheken kompatibel, die zu ausgehendem Traffic führen, sofern sie Standard-Java™-Systemeigenschaften für Proxy-Konfigurationen verwenden. In der Praxis sollte dies die gängigsten Bibliotheken umfassen.
+Die Funktion ist mit Java™-Code oder Bibliotheken kompatibel, die zu ausgehendem Traffic führen, sofern sie Standard-Java™-Systemeigenschaften für Proxy-Konfigurationen verwenden. In der Praxis sollte dieser Ansatz die meisten gängigen Bibliotheken umfassen.
 
 Nachfolgend finden Sie ein Code-Beispiel:
 
@@ -398,7 +427,7 @@ Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte I
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
-Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Dies kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern, z. B. einem CRM-Anbieter, der VPN unterstützt.
+Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem Rechenzentrum von der Autoren-, Veröffentlichungs- oder Vorschauinstanz aus. Diese Fähigkeit kann beispielsweise nützlich sein, um den Zugriff auf eine Datenbank zu sichern. Es ermöglicht auch die Verbindung zu SaaS-Anbietern, z. B. einem CRM-Anbieter, der VPN unterstützt.
 
 Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die Informationen in der Spalte **RouteBased-Konfigurationsanweisungen** in [dieser Geräteliste](https://learn.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Konfigurieren Sie das Gerät, wie in der Tabelle beschrieben.
 
@@ -421,13 +450,13 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 
 1. In dem sich öffnenden Assistenten **Netzwerkinfrastruktur hinzufügen** wählen Sie **Virtuelles privates Netzwerk** und geben die erforderlichen Informationen ein, bevor Sie auf **Fortfahren** klicken.
 
-   * **Region**: Dies ist die Region, in der Infrastruktur erstellt werden sollte.
+   * **Region** - Die Region, in der die Infrastruktur erstellt werden soll.
    * **Adressraum**: Der Adressraum darf nur ein /26 CIDR- (64 IP-Adressen) oder ein größerer IP-Bereich in Ihrem eigenen Bereich sein.
       * Dieser Wert kann später nicht mehr geändert werden.
-   * **DNS-Informationen**: Dies ist eine Liste der Remote-DNS-Resolver.
+   * **DNS-Informationen** - Eine Liste von Remote-DNS-Resolvern.
       * Drücken Sie nach dem Eingeben einer DNS-Server-Adresse auf `Enter`, um eine weitere einzugeben.
       * Klicken Sie auf das `X` hinter einer Adresse, um sie zu entfernen.
-   * **Gemeinsam genutzter Schlüssel**: Dies ist Ihr vorab freigegebener VPN-Schlüssel.
+   * **Freigegebener Schlüssel** - Ihr vorab freigegebener VPN-Schlüssel.
       * Wählen Sie **Freigegebenen Schlüssel anzeigen** aus, um den Schlüssel anzuzeigen und dessen Wert nochmals zu prüfen.
 
    ![Konfigurieren des VPN](assets/advanced-networking-ui-vpn.png)
@@ -436,11 +465,11 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 
    ![Hinzufügen einer Verbindung](assets/advanced-networking-ui-vpn-add-connection.png)
 
-1. Im Dialog **Verbindung hinzufügen** definieren Sie Ihre VPN-Verbindung und klicken dann auf **Speichern**.
+1. Definieren **im Dialogfeld „Verbindung hinzufügen** Ihre VPN-Verbindung und klicken Sie dann auf **Speichern**.
 
-   * **Verbindungsname**: Dies ist ein beschreibender Name Ihrer VPN-Verbindung, den Sie im vorherigen Schritt angegeben haben und der hier aktualisiert werden kann.
-   * **Adresse**: Dies ist die IP-Adresse des VPN-Geräts.
-   * **Adressraum**: Dies sind die IP-Adressbereiche, die über das VPN weitergeleitet werden.
+   * **Verbindungsname** - Ein beschreibender Name Ihrer VPN-Verbindung, den Sie im vorherigen Schritt angegeben haben und der hier aktualisiert werden kann.
+   * **Adresse** - Die IP-Adresse des VPN-Geräts.
+   * **Adressraum** - Die IP-Adressbereiche, die über das VPN weitergeleitet werden sollen.
       * Drücken Sie nach dem Eingeben eines Bereichs auf `Enter`, um einen weiteren einzugeben.
       * Klicken Sie auf das `X` hinter einem Bereich, um ihn zu entfernen.
    * **IP-Sicherheitsrichtlinie**: Passen Sie diese bei Bedarf ausgehend von den Standardwerten an.
@@ -455,13 +484,13 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 
    ![Bestätigen der Konfiguration des flexiblen Port-Ausgangs](assets/advanced-networking-ui-vpn-confirm.png)
 
-Unter der Überschrift **Netzwerkinfrastruktur** im seitlichen Bedienfeld erscheint ein neuer Eintrag mit Details zum Typ der Infrastruktur, dem Status, der Region und den Umgebungen, für die er aktiviert wurde.
+Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Seitenbereich angezeigt. Sie enthält Details wie den Typ der Infrastruktur, den Status, die Region und die Umgebungen, in denen sie aktiviert ist.
 
 ### API-Konfiguration {#configuring-vpn-api}
 
-Einmal pro Programm wird der POST-Endpunkt `/program/<programId>/networkInfrastructures` aufgerufen. Er übergibt eine Payload von Konfigurationsinformationen. Diese Informationen umfassen den Wert von **vpn** für den Parameter `kind`, Region, Adressraum (Liste der CIDRs – beachten Sie, dass dies später nicht mehr geändert werden kann), DNS-Resolver (zur Auflösung von Namen in Ihrem Netzwerk). Es enthält auch VPN-Verbindungsinformationen wie Gateway-Konfiguration, freigegebenen VPN-Schlüssel und die IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status.
+Einmal pro Programm wird der POST-Endpunkt `/program/<programId>/networkInfrastructures` aufgerufen. Er übergibt eine Payload von Konfigurationsinformationen. Zu diesen Informationen gehören der Wert **vpn** für den `kind` Parameter, die Region, den Adressraum (Liste der CIDRs - beachten Sie, dass dieser Wert später nicht mehr geändert werden kann), DNS-Resolver (für die Auflösung von Namen in Ihrem Netzwerk). Es enthält auch VPN-Verbindungsinformationen wie Gateway-Konfiguration, freigegebenen VPN-Schlüssel und die IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status.
 
-Nach dem Aufruf dauert es in der Regel zwischen 45 und 60 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Die GET-Methode in der API kann aufgerufen werden, um den Status zurückzugeben, der schließlich von `creating` zu `ready` wechselt. In der API-Dokumentation finden Sie alle Status.
+Nach dem Aufruf dauert es in der Regel 45 bis 60 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Die GET-Methode in der API kann aufgerufen werden, um den Status zurückzugeben, der schließlich von `creating` zu `ready` wechselt. In der API-Dokumentation finden Sie alle Status.
 
 >[!TIP]
 >
@@ -505,21 +534,21 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben.
   </tr>
   <tr>
     <td></td>
-    <td>Wenn die IP-Adresse in den <i>Adressbereich des VPN-Gateways</i> fällt, durch die HTTP-Proxy-Konfiguration (standardmäßig für HTTP/s-Traffic unter Verwendung der Standard-Java™-HTTP-Client-Bibliothek konfiguriert)</td>
+    <td>Wenn die IP in den <i>Adressbereich des VPN</i>Gateways fällt, durch die HTTP-Proxy-Konfiguration (standardmäßig für HTTP/s-Traffic unter Verwendung der standardmäßigen Java™-HTTP-Client-Bibliothek konfiguriert)</td>
     <td>Alle</td>
     <td>Durch das VPN</td>
     <td><code>10.0.0.1:443</code><br>Es kann auch ein Hostname sein.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Wenn die IP nicht zum <i>Adressbereich des VPN-Gateways</i> gehört, durch die HTTP-Proxy-Konfiguration (standardmäßig für den HTTP/s-Traffic mit der standardmäßigen Java™-HTTP-Client-Bibliothek konfiguriert)</td>
+    <td>Wenn die IP nicht in den Adressbereich des <i>VPN-Gateways</i> fällt, durch die HTTP-Proxy-Konfiguration (standardmäßig für HTTP/s-Traffic unter Verwendung der standardmäßigen Java™-HTTP-Client-Bibliothek konfiguriert)</td>
     <td>Alle</td>
     <td>Über die dedizierte Ausgangs-IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Ignoriert die HTTP-Proxy-Konfiguration (z. B. wenn diese explizit aus der standardmäßigen Java™-HTTP-Client-Bibliothek entfernt wurde oder wenn eine Java™-Bibliothek verwendet wird, die die standardmäßige Proxy-Konfiguration ignoriert)
+    <td>Ignoriert die HTTP-Proxy-Konfiguration (z. B. wenn diese explizit aus der standardmäßigen Java™-HTTP-Client-Bibliothek entfernt wurde oder wenn eine Java™-Bibliothek verwendet wird, die die standardmäßige Proxy-Konfiguration ignoriert)
 </td>
     <td>80 oder 443</td>
     <td>Über die freigegebenen Cluster-IPs</td>
@@ -527,7 +556,7 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben.
   </tr>
   <tr>
     <td></td>
-    <td>Ignoriert die HTTP-Proxy-Konfiguration (z. B. wenn diese explizit aus der standardmäßigen Java™-HTTP-Client-Bibliothek entfernt wurde oder wenn eine Java™-Bibliothek verwendet wird, die die standardmäßige Proxy-Konfiguration ignoriert)</td>
+    <td>Ignoriert die HTTP-Proxy-Konfiguration (z. B. wenn diese explizit aus der standardmäßigen Java™-HTTP-Client-Bibliothek entfernt wurde oder wenn eine Java™-Bibliothek verwendet wird, die die standardmäßige Proxy-Konfiguration ignoriert)</td>
     <td>Ports außerhalb 80 oder 443</td>
     <td>Blockiert</td>
     <td></td>
@@ -574,12 +603,12 @@ Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains un
   <tr>
     <td><code>p{PROGRAM_ID}.external.adobeaemcloud.com</code></td>
     <td>Dedizierte Ausgangs-IP-Adresse für Traffic, der zum Internet statt über private Netzwerke geleitet wird </td>
-    <td>Verbindungen des VPN würden beim CDN als von dieser IP kommend angezeigt. Um für den Eingang in AEM nur Verbindungen vom VPN zuzulassen, konfigurieren Sie Cloud Manager so, dass nur diese IP zugelassen und alles andere blockiert wird. Weitere Informationen finden Sie im Abschnitt „Eingänge auf VPN-Verbindungen beschränken“.</td>
+    <td>Verbindungen des VPN würden beim CDN als von dieser IP kommend angezeigt. Um nur Verbindungen vom VPN in AEM zuzulassen, konfigurieren Sie Cloud Manager so, dass nur diese IP zugelassen und alles andere blockiert wird. Weitere Informationen finden Sie im Abschnitt „Eingänge auf VPN-Verbindungen beschränken“.</td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>Nicht zutreffend</td>
-    <td>Die IP des VPN-Gateways auf der Seite von AEM. Ihr Netzwerk-Engineering-Team kann dies verwenden, um zu Ihrem VPN-Gateway von einer bestimmten IP-Adresse aus nur VPN-Verbindungen zuzulassen. </td>
+    <td>Die IP des VPN-Gateways auf der Seite von AEM. Ihr Netzwerk-Engineering-Team kann diese IP verwenden, um nur VPN-Verbindungen von einer bestimmten IP-Adresse zu Ihrem VPN-Gateway zuzulassen. </td>
   </tr>
 </tbody>
 </table>
@@ -590,14 +619,14 @@ Sobald Sie eine erweiterte Netzwerkoption für ein Programm konfiguriert haben, 
 
 Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, können Sie auch optionale Port-Weiterleitungen und Nicht-Proxy-Hosts aktivieren. Parameter können je nach Umgebung konfiguriert werden, um Flexibilität zu bieten.
 
-* **Port-Weiterleitung**: Für alle Ziel-Ports außer 80/443 sollten Port-Weiterleitungsregeln deklariert werden. Allerdings nur, wenn nicht das HTTP- oder HTTPS-Protokoll verwendet wird.
+* **Portweiterleitung** - Regeln für die Portweiterleitung sollten für alle Ziel-Ports mit Ausnahme von 80/443 deklariert werden, jedoch nur, wenn kein HTTP- oder HTTPS-Protokoll verwendet wird.
    * Port-Weiterleitungsregeln werden definiert, indem Ziel-Hosts (Namen oder IP sowie Ports) angegeben werden.
-   * Die Client-Verbindung, die den Port 80/443 über HTTP/HTTPS verwendet, muss in ihrer Verbindung weiterhin Proxy-Einstellungen verwenden, damit die erweiterten Netzwerkeigenschaften auf die Verbindung angewendet werden. 
+   * Die Client-Verbindung, die Port 80/443 über HTTP/HTTPS verwendet, muss weiterhin Proxy-Einstellungen in ihrer Verbindung verwenden, damit die Eigenschaften der erweiterten Vernetzung auf die Verbindung angewendet werden.
    * Für jeden Ziel-Host müssen Sie den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
    * Port-Weiterleitungsregeln sind für alle erweiterten Netzwerktypen verfügbar.
 
 * **Nicht-Proxy-Hosts**: Nicht-Proxy-Hosts ermöglichen es Ihnen, eine Gruppe von Hosts zu deklarieren, bei denen die Weiterleitung über einen gemeinsamen IP-Adressbereich und nicht über die dedizierte IP erfolgen soll.
-   * Dies kann nützlich sein, da der über gemeinsam genutzte IPs ausgehende Traffic weiter optimiert werden kann.
+   * Dieser Ansatz kann nützlich sein, da der Traffic, der über freigegebene IPs ausgeht, weiter optimiert werden kann.
    * Nicht-Proxy-Hosts sind nur für die erweiterten Netzwerktypen „Dedizierte Ausgangs-IP-Adresse“ und „VPN“ verfügbar.
 
 >[!NOTE]
@@ -614,7 +643,7 @@ Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, k�
 
    ![Auswahl der Umgebung, damit Sie erweiterte Netzwerke aktivieren können](assets/advanced-networking-ui-enable-environments.png)
 
-1. Daraufhin wird das Dialogfeld zum Festlegen der **erweiterten Netzwerkkonfiguration** geöffnet.
+1. Das **Konfigurieren der erweiterten**&quot; wird geöffnet.
 
 1. Auf der Registerkarte **Nicht-Proxy-Hosts** können Sie für dedizierte Ausgangs-IP-Adressen und VPNs optional eine Reihe von Hosts definieren. Diese definierten Hosts sollten über einen gemeinsam genutzten IP-Adressbereich geroutet werden und nicht über die dedizierte IP, indem Sie den Hostnamen in das Feld **Nicht-Proxy-Host** eingeben und auf **Hinzufügen** klicken.
 
@@ -647,7 +676,7 @@ Die API sollte in nur wenigen Sekunden antworten und den Status `updating` anzei
 
 Die umgebungsabhängigen Port-Weiterleitungsregeln können aktualisiert werden, indem der Endpunkt `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` aufgerufen und dabei alle Konfigurationsparameter und nicht nur eine Teilmenge eingeschlossen werden.
 
-Die erweiterten Netzwerkkonfigurationstypen „Dedizierte Ausgangs-IP-Adresse“ und „VPN“ unterstützen den `nonProxyHosts`-Parameter. Auf diese Weise können Sie eine Gruppe von Hosts deklarieren, bei denen die Weiterleitung über einen gemeinsamen IP-Adressbereich und nicht über die dedizierte IP erfolgen soll. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
+Die erweiterten Netzwerkkonfigurationstypen „Dedizierte Ausgangs-IP-Adresse“ und „VPN“ unterstützen den `nonProxyHosts`-Parameter. Durch diese Unterstützung können Sie eine Reihe von Hosts deklarieren, die über einen freigegebenen IP-Adressbereich anstatt über die dedizierte IP-Adresse routen sollten. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
 
 Auch wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics gibt (Hosts oder Bypässe), muss `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` trotzdem aufgerufen werden, nur mit einer leeren Payload.
 
@@ -676,7 +705,7 @@ Nach der [Aktivierung der erweiterten Netzwerkkonfigurationen für Umgebungen](#
 1. Wählen Sie im Menü mit den Auslassungspunkten entweder **Bearbeiten** oder **Löschen** aus.
 
    * Wenn Sie sich für **Bearbeiten** entscheiden, aktualisieren Sie die Informationen gemäß den im vorherigen Abschnitt [Aktivieren über die Benutzeroberfläche](#enabling-ui) beschriebenen Schritten und klicken Sie auf **Speichern**.
-   * Wenn Sie sich für **Löschen** entscheiden, bestätigen Sie den Löschvorgang im Dialogfeld **Netzwerkkonfiguration löschen** mit **Löschen** oder brechen Sie ihn mit **Abbrechen** ab.
+   * Wenn Sie sich für **Löschen** entscheiden, bestätigen Sie den Löschvorgang im Dialogfenster **Netzwerkkonfiguration löschen** mit **Löschen** oder brechen Sie den Vorgang mit **Abbrechen** ab.
 
 Die Änderungen werden auf der Registerkarte **Umgebungen** widergespiegelt.
 
@@ -707,15 +736,19 @@ Sobald die Netzwerkinfrastruktur für ein Programm erstellt wurde, können nur b
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Navigieren Sie auf der Seite **Programmübersicht** zur Registerkarte **Umgebungen** und wählen Sie im linken Bedienfeld die Option **Netzwerkinfrastruktur** aus. Klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten neben der Infrastruktur, die Sie löschen möchten.
+1. Navigieren Sie auf der **Programmübersicht** zur Registerkarte **Umgebungen**.
+1. Klicken Sie im linken Bedienfeld auf **Netzwerkinfrastruktur**.
+1. Klicken Sie ![Mehr-Symbol, ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)) neben der Infrastruktur, die Sie löschen möchten.
 
    ![Auswählen der Bearbeitung oder Löschung erweiterter Netzwerkkonfigurationen auf Programmebene](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. Wählen Sie im Menü mit den Auslassungspunkten entweder **Bearbeiten** oder **Löschen** aus.
+1. Klicken Sie entweder **Bearbeiten** oder **Löschen**.
 
-1. Wenn Sie sich für **Bearbeiten** entscheiden, wird der Assistent **Netzwerkinfrastruktur bearbeiten** geöffnet. Bearbeiten Sie die Infrastruktur wie gewünscht und führen Sie dazu die Schritte durch, die im Abschnitt zum Erstellen der Infrastruktur beschrieben sind.
+1. Führen Sie einen der folgenden Schritte aus:
 
-1. Wenn Sie sich für **Löschen** entscheiden, bestätigen Sie den Löschvorgang im Dialogfenster **Netzwerkkonfiguration löschen** mit **Löschen** oder brechen Sie den Vorgang mit **Abbrechen** ab.
+   * Wenn Sie **Bearbeiten** auswählen, wird der **Netzwerkinfrastruktur bearbeiten** geöffnet. Bearbeiten Sie die Infrastruktur wie gewünscht und führen Sie dazu die Schritte durch, die im Abschnitt zum Erstellen der Infrastruktur beschrieben sind.
+
+   * Wenn Sie **Löschen** ausgewählt haben, bestätigen Sie den Löschvorgang im Dialogfeld **Netzwerkkonfiguration löschen** mit **Löschen** oder brechen Sie mit **Abbrechen** ab.
 
 Die Änderungen werden auf der Registerkarte **Umgebungen** widergespiegelt.
 
@@ -725,7 +758,7 @@ Um die Netzwerkinfrastruktur für ein Programm zu **löschen**, rufen Sie `DELET
 
 ## Ändern des Typs der erweiterten Netzwerkinfrastruktur eines Programms {#changing-program}
 
-Es ist nur möglich, jeweils eine Art von erweiterter Netzwerkinfrastruktur für ein Programm zu konfigurieren. Die erweiterte Netzwerkinfrastruktur muss entweder einen flexiblen Port-Ausgang, eine dedizierte Ausgangs-IP-Adresse oder ein VPN haben.
+Es ist jeweils nur möglich, für ein Programm jeweils einen Typ von erweiterter Netzwerkinfrastruktur zu konfigurieren. Die Infrastruktur des erweiterten Netzwerks muss entweder ein flexibler Port-Ausgang, eine dedizierte Ausgangs-IP-Adresse oder ein VPN sein.
 
 Wenn Sie einen anderen erweiterten Netzwerkinfrastrukturtyp als den bereits konfigurierten benötigen, löschen Sie den vorhandenen und erstellen Sie einen neuen. Gehen Sie folgendermaßen vor:
 
@@ -741,7 +774,7 @@ Wenn Sie einen anderen erweiterten Netzwerkinfrastrukturtyp als den bereits konf
 
 ## Erweiterte Netzwerkkonfiguration für andere Veröffentlichungsregionen {#advanced-networking-configuration-for-additional-publish-regions}
 
-Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der bereits ein erweitertes Netzwerk konfiguriert ist, wird der Traffic aus der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Wenn die primäre Region jedoch nicht verfügbar ist, wird der erweiterte Netzwerk-Traffic abgebrochen, wenn in der zusätzlichen Region das erweiterte Netzwerk nicht aktiviert wurde. Wenn Sie die Latenz optimieren und die Verfügbarkeit im Falle eines Ausfalls in einer der Regionen erhöhen möchten, ist es erforderlich, für die zusätzlichen Veröffentlichungsregionen ein erweitertes Netzwerk zu aktivieren. In den folgenden Abschnitten werden zwei verschiedene Szenarien beschrieben.
+Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der das erweiterte Netzwerk bereits konfiguriert ist, folgt der Traffic aus der zusätzlichen Veröffentlichungsregion den vorhandenen Regeln. Standardmäßig wird der übereinstimmende Traffic durch die primäre Region geleitet. Wenn die primäre Region jedoch nicht verfügbar ist, wird der erweiterte Netzwerk-Traffic abgebrochen, wenn in der zusätzlichen Region das erweiterte Netzwerk nicht aktiviert wurde. Wenn Sie die Latenz optimieren und die Verfügbarkeit im Falle eines Ausfalls in einer der Regionen erhöhen möchten, ist es erforderlich, für die zusätzlichen Veröffentlichungsregionen ein erweitertes Netzwerk zu aktivieren. In den folgenden Abschnitten werden zwei verschiedene Szenarien beschrieben.
 
 >[!NOTE]
 >
@@ -753,22 +786,22 @@ Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der bereit
 
 Wenn in der primären Region bereits eine erweiterte Netzwerkkonfiguration aktiviert ist, führen Sie die folgenden Schritte aus:
 
-1. Wenn Sie Ihre Infrastruktur so eingeschränkt haben, dass die dedizierte AEM-IP-Adresse auf der Zulassungsliste steht, deaktivieren Sie vorübergehend alle Ablehnungsregeln in dieser Infrastruktur. Andernfalls werden Anfragen von den IP-Adressen der neuen Region für eine kurze Zeit von Ihrer eigenen Infrastruktur abgelehnt. Dies ist nicht erforderlich, wenn Sie Ihre Infrastruktur über einen vollständig qualifizierten Domain-Namen (Fully Qualified Domain Name, FQDN) gesperrt haben (z. B. `p1234.external.adobeaemcloud.com`), da alle AEM-Regionen den erweiterten Netzwerk-Traffic von demselben FQDN ausgeben
+1. Wenn Sie Ihre Infrastruktur so eingeschränkt haben, dass die dedizierte AEM-IP-Adresse auf der Zulassungsliste steht, deaktivieren Sie vorübergehend alle Ablehnungsregeln in dieser Infrastruktur. Wenn Sie diesen Schritt überspringen, verweigert Ihre Infrastruktur vorübergehend Anfragen von den IP-Adressen der neuen Region. Dieser Schritt ist nicht erforderlich, wenn Sie Ihre Infrastruktur mit einem vollqualifizierten Domänennamen (FQDN) wie `p1234.external.adobeaemcloud.com` gesperrt haben. Alle AEM-Regionen geben den erweiterten Netzwerkdatenverkehr vom selben FQDN aus.
 1. Erstellen Sie die programmweite Netzwerkinfrastruktur für die sekundäre Region durch einen POST-Aufruf an die Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur, wie in der Dokumentation zu erweiterten Netzwerken beschrieben. Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
-1. Wenn Ihre Infrastruktur nach IP gesperrt werden muss, um AEM-Traffic zu ermöglichen, fügen Sie die IPs hinzu, die mit `p1234.external.adobeaemcloud.com` übereinstimmen. Pro Region sollte es eine geben.
+1. Wenn Sie Ihre Infrastruktur per IP sperren müssen, um AEM-Traffic zuzulassen, fügen Sie die IPs hinzu, die `p1234.external.adobeaemcloud.com` entsprechen. Pro Region sollte es eine geben.
 
 #### Noch kein erweitertes Netzwerk in einer Region konfiguriert {#not-yet-configured}
 
 Das Verfahren ähnelt größtenteils den vorherigen Anweisungen. Wenn die Produktionsumgebung jedoch noch nicht für erweiterte Netzwerke aktiviert wurde, besteht die Möglichkeit, die Konfiguration zu testen, indem sie zuerst in einer Staging-Umgebung aktiviert wird:
 
-1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch einen POST-Aufruf an die [Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
+1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch einen POST-Aufruf an die [Cloud Manager Create Network Infrastructure-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload in Bezug auf die primäre Region ist die Regionseigenschaft.
 1. Aktivieren und konfigurieren Sie für die Staging-Umgebung das erweiterte Netzwerk, das im Umgebungsumfang verfügbar ist, indem Sie `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` ausführen. Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration).
 1. Sperren Sie ggf. die externe Infrastruktur, vorzugsweise nach FQDN (z. B. `p1234.external.adobeaemcloud.com`). Andernfalls können Sie auch die IP-Adresse verwenden.
 1. Wenn die Staging-Umgebung erwartungsgemäß funktioniert, aktivieren und konfigurieren Sie die erweiterte Netzwerkkonfiguration der Umgebung für die Produktion.
 
 #### VPN {#vpn-regions}
 
-Das Verfahren ist fast identisch mit den Anweisungen für dedizierte Ausgangs-IP-Adressen. Der einzige Unterschied besteht darin, dass nicht nur die Eigenschaft „Region“ anders als die primäre Region konfiguriert werden kann, sondern dass auch das Feld `connections.gateway` optional konfiguriert werden kann. Die Konfiguration kann zu einem anderen VPN-Endpunkt weitergeleitet werden, der von Ihrer Organisation betrieben wird und geografisch näher an der neuen Region liegt.
+Das Verfahren ist fast identisch mit den Anweisungen für dedizierte Ausgangs-IP-Adressen. Der einzige Unterschied besteht darin, dass die Eigenschaft Region anders als die primäre Region konfiguriert ist. Darüber hinaus können Sie optional das Feld `connections.gateway` konfigurieren. Die Konfiguration kann zu einem anderen VPN-Endpunkt weitergeleitet werden, der von Ihrer Organisation betrieben wird und geografisch näher an der neuen Region liegt.
 
 ## Fehlerbehebung
 
@@ -776,33 +809,33 @@ Beachten Sie, dass die folgenden Punkte als informative Richtlinien bereitgestel
 
 ### Verbindungs-Pools {#connection-pooling-advanced-networking}
 
-Verbindungs-Pools sind eine Technik zur Erstellung und Aufrechterhaltung eines Repositorys von Verbindungen, die für die sofortige Verwendung durch jeden Thread bereit sind, der sie benötigt. Zahlreiche Verbindungs-Pool-Techniken finden Sie auf verschiedenen Online-Plattformen und -Ressourcen, jeweils mit ihren einzigartigen Vorteilen und Details. Wir empfehlen unserer Kundschaft, sich über diese Methoden zu informieren und diejenigen auszusuchen, die mit der Architektur ihres Systems am kompatibelsten sind.
+Verbindungs-Pools sind eine Technik zur Erstellung und Aufrechterhaltung eines Repositorys von Verbindungen, die für die sofortige Verwendung durch jeden Thread bereit sind, der sie benötigt. Zahlreiche Verbindungs-Pool-Techniken finden Sie auf verschiedenen Online-Plattformen und -Ressourcen, jeweils mit ihren einzigartigen Vorteilen und Details. Adobe empfiehlt Kunden, diese Methoden zu untersuchen, um die zu ermitteln, die mit der Systemarchitektur am besten kompatibel ist.
 
-Die Implementierung einer geeigneten Strategie zur Bündelung von Verbindungen ist eine proaktive Maßnahme, um ein gängiges Problem bei der Systemkonfiguration zu korrigieren, die zu einer suboptimalen Leistung führen. Durch die ordnungsgemäße Einrichtung eines Verbindungs-Pools kann Adobe Experience Manager (AEM) die Effizienz externer Aufrufe verbessern. Dies reduziert nicht nur den Ressourcenverbrauch, sondern verkleinert auch das Risiko von Dienstunterbrechungen sowie die Wahrscheinlichkeit fehlschlagender Anfragen bei der Kommunikation mit Upstream-Servern.
+Die Implementierung einer geeigneten Strategie zur Bündelung von Verbindungen ist eine proaktive Maßnahme, um ein gängiges Problem bei der Systemkonfiguration zu korrigieren, die zu einer suboptimalen Leistung führen. Durch die ordnungsgemäße Einrichtung eines Verbindungs-Pools kann Adobe Experience Manager (AEM) die Effizienz externer Aufrufe verbessern. Dieser Ansatz reduziert nicht nur den Ressourcenverbrauch, sondern auch das Risiko von Service-Unterbrechungen und verringert die Wahrscheinlichkeit, bei der Kommunikation mit Upstream-Servern auf fehlgeschlagene Anfragen zu stoßen.
 
-Somit empfiehlt Adobe, Ihre aktuelle AEM-Konfiguration zu überprüfen und die gezielte Einrichtung von Verbindungs-Pools zusammen mit erweiterten Netzwerkeinstellungen zu erwägen. Durch die Verwaltung der Anzahl paralleler Verbindungen und die Reduzierung des Auftretens veralteter Verbindungen führen diese Maßnahmen zu einer Verringerung des Risikos, dass Proxy-Server ihre Verbindungsgrenzen erreichen. Diese strategische Implementierung soll somit die Wahrscheinlichkeit verringern, dass Anfragen externe Endpunkte nicht erreichen.
+Auf Grundlage dieser Informationen empfiehlt Adobe, Ihre aktuelle AEM-Konfiguration zu überprüfen. Erwägen Sie auch, absichtlich Verbindungspools zusammen mit Ihren erweiterten Netzwerkeinstellungen zu verwenden. Die Verwaltung der Anzahl paralleler Verbindungen und die Reduzierung veralteter Verbindungen trägt zur Optimierung der Netzwerkleistung bei. Diese Aktionen verringern das Risiko, dass Proxy-Server ihre Verbindungsbeschränkungen erreichen. Diese strategische Implementierung soll somit die Wahrscheinlichkeit verringern, dass Anfragen externe Endpunkte nicht erreichen.
 
 #### Häufig gestellte Fragen zu Verbindungsbeschränkungen
 
-Bei der Verwendung der erweiterten Netzwerkfunktionen ist die Anzahl der Verbindungen begrenzt, um die Stabilität in allen Umgebungen zu gewährleisten und zu verhindern, dass niedrigere Umgebungen die verfügbaren Verbindungen nicht ausschöpfen.
+Bei Verwendung erweiterter Netzwerke ist die Anzahl der Verbindungen begrenzt, um die Stabilität in allen Umgebungen zu gewährleisten und zu verhindern, dass die verfügbaren Verbindungen in niedrigeren Umgebungen ausgeschöpft werden.
 
 Die Verbindungen sind auf 1000 Verbindungen pro AEM-Instanz beschränkt, und bei Erreichen von 750 Verbindungen werden Warnhinweise an Kundinnen und Kunden gesendet.
 
 ##### Wird die Verbindungsbeschränkung nur auf ausgehenden Traffic aus nicht standardmäßigen Ports oder auf den gesamten ausgehenden Traffic angewendet?
 
-Die Beschränkung gilt nur für Verbindungen, die erweiterte Netzwerkfunktionen nutzen (Ausgang auf nicht standardmäßigen Ports, mittels dedizierter Ausgangs-IP oder VPN).
+Das Limit gilt nur für Verbindungen, die erweiterte Netzwerke verwenden (Egress an nicht standardmäßigen Ports, unter Verwendung einer dedizierten Ausgangs-IP oder VPN).
 
-##### Wir sehen keinen signifikanten Unterschied in der Anzahl der ausgehenden Verbindungen. Warum erhalten wir die Benachrichtigung jetzt?
+##### Offenbar gibt es keinen signifikanten Anstieg der Anzahl der ausgehenden Verbindungen. Warum wird die Benachrichtigung jetzt empfangen?
 
 Wenn die Kundin oder der Kunde dynamisch Verbindungen erstellt (z. B. eine oder mehrere Verbindungen für jede Anfrage), kann ein Anstieg des Traffics zu einer Spitze der Verbindungen führen.
 
-##### Ist es möglich, dass in der Vergangenheit eine ähnliche Situation eingetreten ist, ohne dass wir darüber informiert wurden?
+##### Hätte sich in der Vergangenheit eine ähnliche Situation ergeben, ohne dass ein Warnhinweis ausgelöst worden wäre?
 
 Warnhinweise werden nur gesendet, wenn die weiche Grenze erreicht ist.
 
 ##### Was passiert, wenn die Höchstgrenze erreicht wird?
 
-Wenn die harte Grenze erreicht ist, werden neue Ausgangsverbindungen von AEM über erweiterte Netzwerkfunktionen (Ausgang auf nicht standardmäßigen Ports, mittels dedizierter Ausgangs-IP oder VPN) entfernt, um sich vor einem DoS-Angriff zu schützen.
+Wenn das feste Limit erreicht ist, werden neue Ausgangs-Verbindungen von AEM über erweiterte Netzwerke (Ausgang an nicht standardmäßigen Ports, unter Verwendung einer dedizierten Ausgangs-IP oder VPN) entfernt, um sich vor einem DoS-Angriff zu schützen.
 
 ##### Kann die Grenze angehoben werden?
 
@@ -810,20 +843,20 @@ Nein. Eine große Anzahl von Verbindungen kann erhebliche Leistungseinbußen ver
 
 ##### Werden die Verbindungen nach einem bestimmten Zeitraum automatisch vom AEM geschlossen?
 
-Ja. Verbindungen werden auf JVM-Ebene und an verschiedenen Punkten in der Netzwerkinfrastruktur geschlossen. Dies wird jedoch für jeden Produktionsdienst zu spät sein. Verbindungen sollten explizit geschlossen werden, wenn sie nicht mehr benötigt werden, oder bei Verwendung von Verbindungs-Pools zum Pool zurückgegeben werden. Andernfalls ist der Ressourcenverbrauch zu hoch und kann zu einer Erschöpfung der Ressourcen führen.
+Ja, die Verbindungen werden auf JVM-Ebene und an verschiedenen Stellen der Netzwerkinfrastruktur geschlossen. Dieser Workflow ist jedoch für einen Produktions-Service zu spät. Verbindungen sollten explizit geschlossen werden, wenn sie nicht mehr benötigt werden, oder bei Verwendung von Verbindungs-Pools zum Pool zurückgegeben werden. Andernfalls ist der Ressourcenverbrauch zu hoch und kann zur Erschöpfung der Ressourcen führen.
 
 ##### Wenn die maximale Verbindungsgrenze erreicht ist, wirkt sich dies auf irgendwelche Lizenzen aus und verursacht zusätzliche Kosten?
 
 Nein. Mit dieser Grenze sind keine Lizenzen oder Kosten verbunden. Es handelt sich um eine technische Grenze.
 
-##### Wie nahe kommen wir der Grenze? Wie hoch ist die Höchstgrenze?
+##### Wie nah ist die aktuelle Nutzung am Limit? Was ist die maximal zulässige Grenze?
 
 Der Warnhinweis wird ausgelöst, wenn die Anzahl von 750 Verbindungen überschritten wird. Die Höchstgrenze beträgt 1000 Verbindungen pro AEM Instanz.
 
 ##### Gilt diese Grenze für VPNs?
 
-Ja, die Grenze gilt für Verbindungen, die erweiterte Netzwerkfunktionen verwenden, einschließlich VPNs.
+Ja, die Beschränkung gilt für Verbindungen, die erweiterte Netzwerke einschließlich VPNs verwenden.
 
-##### Gilt diese Grenze weiterhin, wenn wir eine dedizierte Ausgangs-IP verwenden?
+##### Gilt das Limit weiterhin bei Verwendung einer dedizierten Ausgangs-IP?
 
 Ja. Die Grenze gilt bei Verwendung einer dedizierten Ausgangs-IP weiterhin.
