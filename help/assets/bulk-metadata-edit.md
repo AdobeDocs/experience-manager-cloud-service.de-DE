@@ -2,9 +2,9 @@
 title: Massenbearbeitung von Metadaten in [!DNL Assets View]
 description: Erfahren Sie, wie Sie einen vordefinierten Satz von Standard-Metadatenfeldern für mehrere Assets aktualisieren können, die im [DNL! Assets-Ansicht] gleichzeitig anzeigen.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-Die **[!DNL Bulk Metadata Edit]** Funktion von [!DNL Assets View] ermöglicht es Ihnen, einen vordefinierten Satz von Standard-Metadatenfeldern für mehrere Asset-Dateien gleichzeitig zu bearbeiten. Wählen Sie mehrere Assets aus und führen Sie eine Massenaktualisierung ihres vordefinierten Satzes von Standardmetadaten gleichzeitig durch, anstatt diese Standardmetadaten für jedes Asset einzeln zu aktualisieren. Diese Funktion, mit der Sie den Standardsatz von Metadateneigenschaften für mehrere Assets gleichzeitig in großen Mengen bearbeiten können, sorgt für die Effizienz, Konsistenz und Genauigkeit dieser Standard-Metadateneigenschaften in allen Assets, wodurch die Durchsuchbarkeit und Organisation dieser Assets verbessert wird.
+Die **[!DNL Bulk Metadata Edit]** Funktion von [!DNL Assets View] ermöglicht es Ihnen, einen vordefinierten Satz von Standard-Metadatenfeldern für mehrere Asset-Dateien gleichzeitig zu bearbeiten. Wählen Sie mehrere Assets aus und führen Sie eine Massenaktualisierung ihres vordefinierten Satzes von Standardmetadaten gleichzeitig durch, anstatt diese Standardmetadaten für jedes Asset einzeln zu aktualisieren. Diese Funktion sorgt für die Effizienz, Konsistenz und Genauigkeit des Satzes von Standard-Metadateneigenschaften in allen großen Sätzen von Assets und verbessert die Durchsuchbarkeit und Organisation dieser Assets.
 
 ## Massenbearbeitung von Asset-Metadaten {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
