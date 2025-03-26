@@ -3,10 +3,11 @@ title: Versionshinweise für Version 2025.1.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 92%
 
 ---
 
@@ -80,17 +81,33 @@ Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind n
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Neue Funktionen in der AEM Assets-Ansicht {#new-features-assets}
+### Neue Funktionen in AEM Assets {#new-features-assets}
 
-**Anpassen von Suchfiltern**
+**Dynamic Media-Bereitstellungsberichte**
 
-Benutzerdefinierte Suchfilter verbessern die Genauigkeit und Effizienz beim Auffinden relevanter Informationen. Sie ermöglicht eine besser auf die Bedürfnisse zugeschnittene Suche, bei der Daten nach bestimmten Attributen wie Marke, Produkt, Kategorie oder anderen Schlüsselkennungen gefiltert werden. Dies verbessert die Organisation, verringert die Zeit, die mit dem Durchsuchen irrelevanter Ergebnisse verbracht wird, und ermöglicht eine schnellere Entscheidungsfindung. Es unterstützt auch die Skalierbarkeit, da große Datensätze leichter navigiert und analysiert werden können.
+Verschaffen Sie sich Erkenntnisse zu den mit Dynamic Media bereitgestellten Assets, darunter zur Anzahl der Bereitstellungen auf Asset-Ebene sowie zu Referrer-Details, Asset-Pfaden in AEM Assets und eindeutigen Asset-IDs. Generieren Sie Berichte für alle Assets im AEM Assets-Repository oder für bestimmte Ordnerhierarchien. Mit diesen Erkenntnissen können Sie den ROI der bereitgestellten Assets messen, die Kanalleistung bewerten und fundierte Entscheidungen für das Asset-Management treffen.
 
-![Benutzerdefinierte Suchfilter](/help/assets/assets/custom-search-filters.png)
+![Dynamische Ausgabedarstellungen](/help/assets/assets/referrer.png)
 
-### Neue Funktionen in Content Hub {#new-features-content-hub}
+**Mehrere Audiospuren und mehrfache Untertitel in Dynamic Media**
 
-Beschreibung
+[Unterstützung für mehrfache Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können nun ganz einfach mehrfache Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen.  Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+
+**Unterstützung für Dynamic Adaptive Streaming über HTTP**
+
+Neue Protokollunterstützung (DASH – Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF) eingeführt:
+
+* Adaptives Streaming (DASH/HLS) sorgt für ein besseres Zuschauererlebnis bei der Videoanzeige.
+
+* DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weithin verwendet
+
+**Asset-Beziehungen**
+
+Die Assets-Ansicht unterstützt nun das Anzeigen und Bearbeiten von Asset-Beziehungen in einem vereinfachten Bedienfeld mit Asset-Details. Fügen Sie mühelos Beziehungen wie „Quelle“ und „Bearbeitung“ zu Inhalten hinzu, damit Benutzende relevante Hero-Inhalte effektiver finden können.
+
+**Erneutes Verarbeiten von Assets**
+
+Die Assets-Ansicht unterstützt nun die erneute Verarbeitung von Assets, die in einem Ordner verfügbar sind. Sie können entweder die Option **Vollständiger Prozess** auswählen oder erweiterte Optionen wie „Standarddarstellungen für die Vorschau“, „Metadaten“, „Nachbearbeitungs-Workflow“ und „Verarbeitungsprofil“ verwenden.
 
 ### Early-Access-Funktionen in AEM Assets {#early-access-features-assets}
 
