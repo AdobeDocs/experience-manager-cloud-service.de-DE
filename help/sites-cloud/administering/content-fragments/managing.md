@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
 source-wordcount: '2629'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ Erfahren Sie, wie Sie Ihre **Inhaltsfragmente** in Adobe Experience Manager (AEM
 
 >[!IMPORTANT]
 >
->Verschiedene Funktionen der Inhaltsfragmentkonsole sind über das Early-Adopter-Programm verfügbar.
+>Verschiedene Funktionen der Inhaltsfragmentkonsole sind im Rahmen des Early-Adopter-Programms verfügbar.
 >
 >Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
->Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Inhaltsfragmente angezeigt werden. Für andere Bedienfelder siehe:
+>Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Inhaltsfragmente angezeigt werden. Für andere Panels siehe:
 >
 >* [Verwalten von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 >* [Anzeigen und Verwalten von Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
@@ -56,9 +56,9 @@ Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert h
 
 ## Grundlegende Struktur und Handhabung von Inhaltsfragmenten in der Konsole {#basic-structure-handling-content-fragments-console}
 
-Sie können das ganz linke Bedienfeld der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) verwenden, um **Inhaltsfragmente** als Ressourcentyp zum Anzeigen, Durchsuchen und Verwalten auszuwählen:
+Sie können in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) im Panel ganz links **Inhaltsfragmente** als Ressourcentyp auswählen, um Folgendes anzuzeigen, zu durchsuchen und zu verwalten:
 
-![Inhaltsfragmentkonsole – Navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Inhaltsfragmentkonsole – Navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-fragments-navigation.png)
 
 Wenn Sie **Inhaltsfragmente** auswählen, wird die Konsole in einer neuen Registerkarte geöffnet.
 
@@ -70,12 +70,12 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Bietet die standardmäßigen AEM-Funktionen
    * Zeigt auch Ihre IMS-Organisation an
    * Bietet verschiedene [Aktionen](#actions-unselected)
-* Das linke Bedienfeld
-   * Hier können Sie Links zu den Bereichen komprimieren oder erweitern
+* Das linke Panel
+   * Hier können Sie Links zu den Panels komprimieren oder erweitern
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
-   * Neben Inhaltsfragmenten können Sie auch [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen. Sie können auch Links zu den Bedienfeldern komprimieren oder erweitern
+   * Neben Inhaltsfragmenten können Sie auch [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen. Sie können auch Links zu den Panels komprimieren oder erweitern.
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.
@@ -87,7 +87,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
          * Informationen zu Verweisen anzeigen,
          * Informationen zu Sprachversionen des Fragments anzeigen.
       * [Bestimmte andere Informationsfelder](#information-content-fragments) über ein Inhaltsfragment können für [Schnelles Filtern](#fast-filtering) verwendet werden:
-         * Wählen Sie einen Wert in der Spalte aus und er wird sofort als Filter angewendet
+         * Auswählen eines Wertes in der Spalte, der sofort als Filter angewendet wird
          * „Schnelles Filtern“ wird nur für die Spalten **Modell**, **Status**, **Geändert von**, **Tags** und **Veröffentlicht von** unterstützt.
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
          * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
@@ -217,7 +217,7 @@ So erstellen Sie ein Inhaltsfragment:
 
    * **Speicherort** – Dies wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
    * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
-   * **Automatisches Tagging** - Wenn Sie diese Option auswählen, werden alle dem Inhaltsfragmentmodell zugewiesenen Tags vom neuen Inhaltsfragment übernommen und hinzugefügt.
+   * **Automatisches Taggen**: Wenn Sie diese Option auswählen, werden alle dem Inhaltsfragmentmodell zugewiesenen Tags vom neuen Inhaltsfragment übernommen und diesem hinzugefügt.
    * **Titel**
    * **Name** – Dies wird basierend auf dem **Titel** automatisch ausgefüllt, kann jedoch bei Bedarf bearbeitet werden.
    * **Beschreibung**

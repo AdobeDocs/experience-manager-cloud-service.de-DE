@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie Inhaltsfragmentmodelle verwalten. Diese diene
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 50%
+source-wordcount: '2288'
+ht-degree: 51%
 
 ---
 
@@ -19,13 +20,13 @@ In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service 
 
 >[!IMPORTANT]
 >
->Verschiedene Funktionen der Inhaltsfragmentkonsole sind über das Early-Adopter-Programm verfügbar.
+>Verschiedene Funktionen der Inhaltsfragmentkonsole sind im Rahmen des Early-Adopter-Programms verfügbar.
 >
 >Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
->Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Inhaltsfragmentmodelle angezeigt werden. Für andere Bedienfelder siehe:
+>Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Inhaltsfragmentmodelle angezeigt werden. Für andere Panels siehe:
 >
 >* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)   
 >* [Anzeigen und Verwalten von Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
@@ -49,7 +50,7 @@ Einen schnellen Überblick bietet die Arbeit mit Inhaltsfragmentmodellen:
 
 Sie können das ganz linke Bedienfeld der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) verwenden, um **Inhaltsfragmentmodelle** als Ressourcentyp zum Anzeigen, Durchsuchen und Verwalten auszuwählen:
 
-![Inhaltsfragmentkonsole – Navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Inhaltsfragmentkonsole – Navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Dadurch wird die Ansicht für Inhaltsfragmentmodelle geöffnet:
 
@@ -61,8 +62,8 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Bietet die standardmäßigen AEM-Funktionen
    * Zeigt auch Ihre IMS-Organisation an
    * Bietet verschiedene [Aktionen](#actions-unselected)
-* Das linke Bedienfeld
-   * Zeigt alle [Konfigurationen](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) die als Ordner aufgelistet sind
+* Das linke Panel
+   * Zeigt die [Pfade zu allen Konfigurationen](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) aufgeführt als Ordner
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Ordner des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen (Unterkonfigurationen)
@@ -75,10 +76,10 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
          * [Sie können auswählen, welche Spalten angezeigt werden sollen.](#select-columns-console)
       * [Verschiedene Informationsfelder](#information-content-fragment-models) zu einem Inhaltsfragmentmodell stellen Links bereit. Je nach Feld können diese:
          * Öffnen Sie das entsprechende Modell im Editor
-         * Informationen zur Konfiguration anzeigen
+         * Informationen über den Pfad zur Konfiguration anzeigen
          * Zeigt Informationen zum Status des Modells an
       * [Bestimmte andere Informationsfelder](#information-content-fragments) über ein Inhaltsfragmentmodell können für die [Schnellfilterung“ verwendet ](#fast-filtering):
-         * Wählen Sie einen Wert in der Spalte aus und er wird sofort als Filter angewendet
+         * Auswählen eines Wertes in der Spalte, der sofort als Filter angewendet wird
          * Die Schnellfilterung wird für die Spalten **Geändert von**, **Veröffentlicht von** und **Status** unterstützt
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
          * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
@@ -96,8 +97,8 @@ Das Haupt-/rechte Bedienfeld (Tabellenansicht) der Konsole bietet eine Reihe von
    * Stellt einen Link zum Öffnen des Modells im Editor bereit.
 * Gesperrt
    * Wenn das Modell gesperrt ist, wird dies durch ein Vorhängeschloss-Symbol angezeigt.
-* **Konfiguration**
-   * Stellt einen Link zum Öffnen der Konfiguration in der Konsole bereit.
+* **Pfad**
+   * Stellt den Pfad als Link zum Öffnen der Konfiguration in der Konsole bereit.
 Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 * **Status**
    * Nur Informationen.
@@ -123,7 +124,7 @@ Wenn Sie ein bestimmtes Modell auswählen, werden die Eigenschaften dieses Model
 
 ![Inhaltsfragmentkonsole - Informationen für ein ausgewähltes Inhaltsfragmentmodell](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[Konfiguration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Pfad](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
 * **Titel**
 * **Tags**
@@ -233,7 +234,7 @@ Wählen Sie beispielsweise &quot;**&quot;** der Spalte **Status** aus. Nach der 
    >* Wenn die [Verwendung von Inhaltsfragmentmodellen aktiviert wurde](/help/sites-cloud/administering/content-fragments/setup.md)
    >* Wenn Sie den Ordner ausgewählt haben, in dem Sie das Modell erstellen möchten.
 
-1. Wählen Sie **Konfiguration** und geben Sie den **Namen** an.
+1. Wählen Sie den **Pfad** zur Konfiguration aus und geben Sie den **Namen** an.
 
    >[!NOTE]
    >
