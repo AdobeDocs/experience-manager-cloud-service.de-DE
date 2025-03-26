@@ -1,35 +1,25 @@
 ---
-title: Erstellen von eigenständigen adaptiven Formularen mit dem universellen Editor?
-description: In diesem Artikel wird erläutert, wie Sie adaptive Formulare mit dem Assistenten zur Formularerstellung in der AEM-Autoreninstanz erstellen und Formulare in AEM Edge Delivery Services veröffentlichen.
+title: Erstellen von eigenständigen Formularen basierend auf einer Edge Delivery Services-Vorlage mit dem universellen Editor
+description: In diesem Artikel wird erläutert, wie Sie mit dem universellen Editor Formulare erstellen können, indem Sie im Assistenten zur Formularerstellung eine Edge Delivery Services-basierte Vorlage auswählen. Sie können die Formulare auch in AEM Edge Delivery Services veröffentlichen.
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
+source-git-commit: 979aad24ebbd0ef1d4d1fc92d402fca20bc27a44
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 85%
+source-wordcount: '1078'
+ht-degree: 68%
 
 ---
 
-# Erstellen eigenständiger Formulare mit dem universellen Editor (WYSIWYG)
+# Schrittweise Anleitung zum Erstellen eigenständiger Formulare im universellen Editor
 
 <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Namen des Repositorys von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
-Dieser Artikel führt Sie durch den Prozess zum Erstellen der eigenständigen Formulare mit dem universellen Editor, indem Sie eine auf Edge Delivery Services basierende Vorlage aus dem Assistenten zur Formularerstellung auswählen. Sie können die erstellten Formulare auch mit dem universellen Editor in AEM Edge Delivery Services veröffentlichen.
+Dieser Artikel führt Sie durch den Prozess der Erstellung und Bearbeitung der eigenständigen Formulare mit dem universellen Editor, indem Sie eine Edge Delivery Services-basierte Vorlage aus dem Assistenten zur Formularerstellung auswählen. Sie können die erstellten Formulare auch mit dem universellen Editor in AEM Edge Delivery Services veröffentlichen.
 
-<!--To publish forms to Edge Delivery Services, you must first establish a connection between your AEM environment and your GitHub repository. Once connected, you can author the forms using the Universal Editor, which follows a WYSIWYG (What You See Is What You Get) approach for a seamless and consistent user experience with Sites.-->
-
-Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, die Ihnen zur Verfügung stehen:
-
-* [Edge Delivery Services für AEM Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ist ein zusammenstellbarer Satz von Diensten, der eine schnelle Entwicklungsumgebung ermöglicht, in der Autorinnen und Autoren (neue) Formulare mit dem universellen Editor schnell aktualisieren, veröffentlichen und live schalten können.  Der universelle Editor vereinfacht die Formularerstellung für Adobe Edge Delivery Services mit einer benutzerfreundlichen, visuellen WYSIWYG-Oberfläche.
-
-* [Kernkomponenten adaptiver Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de): Dies sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre Erlebnisse bei der digitalen Registrierung. Entwickelnde können diese Komponenten einfach anpassen und gestalten. Sie können unter [https://aemcomponents.dev/](https://aemcomponents.dev/) die verfügbaren Kernkomponenten in Aktion anzeigen **Adobe empfiehlt die Verwendung dieser modernen und erweiterbaren Komponenten zur Entwicklung von adaptiven Formularen**.
-
-* [Foundation-Komponenten adaptiver Formulare](/help/forms/creating-adaptive-form.md): Hierbei handelt es sich um klassische (alte) Datenerfassungskomponenten. Sie können diese weiterhin verwenden, um Ihre vorhandenen Foundation-Komponenten auf Grundlage des adaptiven Formulars zu bearbeiten. Wenn Sie neue Formulare erstellen, empfiehlt Adobe die Verwendung von  [Kernkomponenten von adaptiven Formularen, um ein adaptives Formular zu erstellen](#create-an-adaptive-form-core-components).
-
-AEM Forms umfasst einen Block, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Edge Delivery Services-Formulare erstellen können, um Daten zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt vorkonfiguriert mit einem adaptiven Formularblock erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [den adaptiven Formularblock zu einem bestehenden AEM-Projekt hinzufügen](#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms umfasst einen Block, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Edge Delivery Services-Formulare erstellen können, um Daten zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt vorkonfiguriert mit einem adaptiven Formularblock erstellen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [den adaptiven Formularblock zu einem bestehenden AEM-Projekt hinzufügen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 ![GitHub-Repository-Workflow](/help/edge/assets/repo-workflow.png)
 
@@ -40,67 +30,70 @@ AEM Forms umfasst einen Block, der als adaptiver Formularblock bezeichnet wird u
 * Die AEM Forms-Autoreninstanz enthält eine Vorlage, die auf Edge Delivery Services basiert. Stellen Sie sicher, dass die [neueste Version der Kernkomponenten](https://github.com/adobe/aem-core-forms-components) in Ihrer Umgebung installiert ist.
 * Halten Sie die URL Ihrer AEM Forms as a Cloud Service-Autoreninstanz und Ihres GitHub-Repositorys bereit.
 
-## Erstellen eines adaptiven Formulars mit dem universellen Editor
+## Arbeiten mit Formularen im universellen Editor
 
-Mit dem universellen Editor können Sie responsive und interaktive, eigenständige Formulare schnell mithilfe vorgefertigter Komponenten wie Textfeldern, Kontrollkästchen und Optionsfeldern entwerfen. Er bietet leistungsstarke Funktionen wie dynamische Regeln, reibungslose Datenintegration und Anpassungsoptionen, mit denen Sie Formulare entsprechend Ihren genauen Anforderungen erstellen können.
+Mit dem universellen Editor können Sie responsive und interaktive, eigenständige Formulare schnell mithilfe vorgefertigter Komponenten wie Textfeldern, Kontrollkästchen und Optionsfeldern entwerfen. Es bietet leistungsstarke Funktionen wie dynamische Regeln, reibungslose Datenintegration und Anpassungsoptionen, mit denen Sie Formulare entsprechend Ihren genauen Anforderungen erstellen können. Sie können die Formulare auch in AEM Edge Delivery Services veröffentlichen. Sie können die folgenden Aktionen für Formulare im universellen Editor durchführen:
+* [Erstellen eines Formulars](#create-a-form)
+* [Formular erstellen](#author-a-form)
+* [Formular veröffentlichen](#publish-a-form)
+* [Formular verwalten](#manage-a-form)
 
 >[!NOTE]
 >
 > Sie können auch [ein Formular in AEM Sites mithilfe der Site-Vorlage von Edge Delivery Services Site im universellen Editor erstellen und in Edge Delivery Services veröffentlichen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
 
-Um ein eigenständiges adaptives Formular mit dem universellen Editor zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. **Erstellen eines adaptiven Formulars auf der AEM Forms-Autoreninstanz**
+### Erstellen eines Formulars
 
-   1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
-   1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
-   1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
-   1. Wählen Sie auf der Registerkarte **Quelle** eine auf Edge Delivery Services basierende Formularvorlage aus:
+1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
+1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
+1. Wählen Sie auf der Registerkarte **Quelle** eine auf Edge Delivery Services basierende Formularvorlage aus:
 
-      ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
+   ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
 
 
-      Wenn Sie eine Edge Delivery Services-basierte Vorlage auswählen, ist **[!UICONTROL Schaltfläche]** aktiviert.
-   1. Source (Optional) Auf den Registerkarten **[!UICONTROL Daten]** oder **[!UICONTROL Übermittlung]** können Sie eine Datenquelle oder eine Übermittlungsaktion auswählen.
-   1. (Optional) Auf der Registerkarte **[!UICONTROL Versand]** können Sie ein Datum für die Veröffentlichung oder das Rückgängigmachen der Veröffentlichung eines adaptiven Formulars angeben.
+   Wenn Sie eine Edge Delivery Services-basierte Vorlage auswählen, ist **[!UICONTROL Schaltfläche]** aktiviert.
+1. Source (Optional) Auf den Registerkarten **[!UICONTROL Daten]** oder **[!UICONTROL Übermittlung]** können Sie eine Datenquelle oder eine Übermittlungsaktion auswählen.
+1. (Optional) Auf der Registerkarte **[!UICONTROL Versand]** können Sie ein Datum für die Veröffentlichung oder das Rückgängigmachen der Veröffentlichung eines Formulars angeben.
 
-   1. Klicken Sie auf **[!UICONTROL Erstellen]**. Daraufhin wird der Assistent **Formular erstellen** angezeigt.
-   1. Geben Sie die **Name** und **Title** an.
-   1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
-      `https://github.com/wkndforms/edsforms`
-   1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. Daraufhin wird der Assistent **Formular erstellen** angezeigt.
+1. Geben Sie die **Name** und **Title** an.
+1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
+   `https://github.com/wkndforms/edsforms`
+1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-      ![Assistent für die Formularerstellung](/help/edge/assets/create-form-wizard.png)
+   ![Assistent für die Formularerstellung](/help/edge/assets/create-form-wizard.png)
 
-      Wenn Sie auf **[!UICONTROL Erstellen]** klicken, wird das Formular zwecks Erstellung im universellen Editor geöffnet.
+   Wenn Sie auf **[!UICONTROL Erstellen]** klicken, wird das Formular zwecks Erstellung im universellen Editor geöffnet.
 
-      ![Erstellen des Formulars](/help/edge/assets/author-form.png)
+   ![Erstellen des Formulars](/help/edge/assets/author-form.png)
 
-      <!-- >[!NOTE]
+   <!-- >[!NOTE]
         >
         > The Edge Delivery Services configuration for the forms based on Edge Delivery Services template is created automatically at the form's configuration container.-->
 
-      Wenn Sie auf **[!UICONTROL Erstellen]** klicken, wird das Formular zwecks Erstellung im universellen Editor geöffnet.
+   Wenn Sie auf **[!UICONTROL Erstellen]** klicken, wird das Formular zwecks Erstellung im universellen Editor geöffnet.
 
-1. **Erstellen des Formulars im universellen Editor**
+### Formular erstellen
 
-   1. Öffnen Sie den Inhalts-Browser und navigieren Sie in der **Inhaltsstruktur** zur Komponente **[!UICONTROL Adaptives Formular]**.
+1. Öffnen Sie den Inhalts-Browser und navigieren Sie in der **Inhaltsstruktur** zur Komponente **[!UICONTROL Adaptives Formular]**.
 
-      ![Inhaltsstruktur](/help/edge/assets/content-tree.png)
+   ![Inhaltsstruktur](/help/edge/assets/content-tree.png)
 
-   1. Klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und fügen Sie die gewünschten Komponenten aus der Liste der **adaptiven Formularkomponenten** hinzu.
+1. Klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und fügen Sie die gewünschten Komponenten aus der Liste der **adaptiven Formularkomponenten** hinzu.
 
-      ![Hinzufügen der Komponente](/help/edge/assets/add-component.png)
+   ![Hinzufügen der Komponente](/help/edge/assets/add-component.png)
 
-   1. Wählen Sie die hinzugefügte adaptive Formularkomponente aus und aktualisieren Sie ihre Eigenschaften mithilfe von **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie die hinzugefügte adaptive Formularkomponente aus und aktualisieren Sie ihre Eigenschaften mithilfe von **[!UICONTROL Eigenschaften]**.
 
-      ![Öffnen von Eigenschaften](/help/edge/assets/component-properties.png)
+   ![Öffnen von Eigenschaften](/help/edge/assets/component-properties.png)
 
-      Im folgenden Screenshot sehen Sie das einfache Formular `Registration Form`, das im universellen Editor erstellt wurde:
+   Im folgenden Screenshot sehen Sie das einfache Formular `Registration Form`, das im universellen Editor erstellt wurde:
 
-      ![Kontaktformular](/help/edge/assets/contact-us.png)
+   ![Kontaktformular](/help/edge/assets/contact-us.png)
 
-      Nun können Sie [Übermittlungsaktionen für Formulare konfigurieren und anpassen](/help/edge/docs/forms/universal-editor/submit-action.md).
+   Nun können Sie [Übermittlungsaktionen für Formulare konfigurieren und anpassen](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--
@@ -122,7 +115,7 @@ Um ein eigenständiges adaptives Formular mit dem universellen Editor zu erstell
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-## Veröffentlichen des Formulars
+### Formular veröffentlichen
 
 Veröffentlichen Sie das eigenständige Formular nun in Edge Delivery Services, indem Sie oben rechts im universellen Editor auf die Schaltfläche **[!UICONTROL Veröffentlichen]** klicken.
 
@@ -152,7 +145,7 @@ Die URL-Struktur bleibt für Staging- und Live-Versionen gleich. Der angezeigte 
 
 ![Anzeigen veröffentlichter Formulare](/help/edge/assets/eds-view-publish-form.png)
 
-## Verwalten von Formularen
+### Formular verwalten
 
 Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit einem Formular durchführen.
 
