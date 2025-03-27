@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reakt
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reaktionsfreie Weise separate Sites für Ihre Staging- und Produktionsumgebungen einrichten.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können auch eine von Ihrer Staging-Umgebung getrennte Site für Ihre Produktionsumgebung einrichten. Die Einrichtung eines zweiten Standorts für eine separate Staging- und Produktionseinrichtung ähnelt der [Einrichtung für die Verwaltung mehrerer Standorte erforderlich](/help/edge/wysiwyg-authoring/repoless-msm.md). Tatsächlich kann sie bei Bedarf mit MSM-Site-Strukturen kombiniert werden.
 
@@ -141,3 +141,9 @@ Nachdem Sie nun alle erforderlichen Konfigurationsänderungen vorgenommen haben,
 1. Besuchen Sie Ihre neue Edge Delivery Services-Site für diese Seite unter `https://main--wknd-prod--<your-github-org>.aem.page`.
 
 Wenn die von Ihnen vorgenommenen Änderungen angezeigt werden, funktioniert die Einrichtung Ihrer separaten Produktions-Site ordnungsgemäß.
+
+## Verwendung {#usage}
+
+Nachdem Sie Ihr Projekt mit responsiven Staging- und Produktionsumgebungen konfiguriert haben, können Sie den Code für sie unabhängig verwalten. Die folgende Abbildung zeigt die Beziehung der Inhalte in Ihren verschiedenen Umgebungen in AEM, Edge Delivery Services Sites und Ihren GitHub-Repositorys.
+
+![Abbildung von AEM-Umgebungen und reaktionslosen Produktions-/Staging-Umgebungen](assets/repoless/aem-edge-github.png)
