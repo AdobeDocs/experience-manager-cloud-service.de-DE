@@ -4,10 +4,10 @@ description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Edit
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -188,6 +188,6 @@ Das AEM SPA Editor SDK wird von Adobe vollständig unterstützt und ständig wei
 * Konfigurationen bearbeiten (z. B. Listener)
 * Rückgängig/Wiederholen
 * Seitenvergleich und Zeitverzerrung
-* Funktionen, die Server-seitig HTML-Umschreibungen durchführen, wie Link Checker, CDN-Umschreibe-Service, URL-Verkürzung usw.
+* Funktionen zum serverseitigen HTML-Rewriter, z. B[ Link Checker, ](/help/operations/link-checker.md) CDN Rewriter Service, URL-Verkürzung usw.
 * Entwicklermodus
 * AEM-Launches
