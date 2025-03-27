@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 96%
 
 ---
 
@@ -177,16 +177,17 @@ Beispiel:
 
 AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellieren können:
 
-* Einzeiliger Text
-* Mehrzeiliger Text
+* Einzeilentext
+* Mehrzeilentext
 * Zahl
 * Boolesch
 * Datum und Uhrzeit
 * Aufzählung
 * Tags
-* Inhaltsreferenz
-* Fragmentreferenz
+* Fragmentreferenz/Fragmentreferenz-UUID
+* Inhaltsreferenz/Inhaltsreferenz-UUID
 * JSON-Objekt
+* Registerkartenplatzhalter
 
 ### Verweise und verschachtelte Inhalte {#references-nested-content}
 
@@ -213,7 +214,9 @@ Zunächst müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Dies ges
 >
 >Siehe „Zusätzliche Ressourcen – Inhaltsfragmente im Konfigurations-Browser“
 
-Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter **Tools** > **Allgemein** > **Inhaltsfragmentmodelle** erfolgen. Zum Beispiel:
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann alles in der Inhaltsfragmentkonsole erfolgen. Wählen Sie in der -Konsole das Bedienfeld für Inhaltsfragmentmodelle aus, navigieren Sie zum entsprechenden Ordner und verwenden Sie **Erstellen**, um das Dialogfeld **Neues Inhaltsfragmentmodell** zu öffnen.
+
+Nach der Erstellung können Sie Ihr Modell bearbeiten. Zum Beispiel:
 
 ![Inhaltsfragmentmodell](assets/cfm-model.png)
 
@@ -227,9 +230,7 @@ Inhaltsfragmente basieren immer auf einem Inhaltsfragmentmodell. Das Modell stel
 
 ### Auswählen des entsprechenden Modells {#select-model}
 
-Der erste Schritt zur tatsächlichen Erstellung Ihrer Inhalte besteht darin, ein Inhaltsfragment zu erstellen. Dies geschieht über „Erstellen“ > „Inhaltsfragment“ unter „Assets“ > „Dateien“ im erforderlichen Ordner. Der Assistent führt Sie durch die Schritte.
-
-Ein Inhaltsfragment basiert auf einem bestimmten Inhaltsfragmentmodell, das Sie als ersten Schritt des Erstellungsprozesses auswählen.
+Der erste Schritt zur tatsächlichen Erstellung Ihrer Inhalte besteht darin, ein Inhaltsfragment zu erstellen. Dazu verwenden Sie **Erstellen** auf der Registerkarte **Inhaltsfragmente** der Inhaltsfragmentkonsole.
 
 ### Erstellen und Bearbeiten von strukturierten Inhalten {#create-edit-structured-content}
 
@@ -247,7 +248,7 @@ Nachdem das Fragment erstellt wurde, können Sie es im Inhaltsfragmenteditor öf
 
 Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragment-Editor geöffnet:
 
-![Inhaltsfragmente-Editor](assets/cfm-editor.png)
+![Inhaltsfragmenteditor – Überblick](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
