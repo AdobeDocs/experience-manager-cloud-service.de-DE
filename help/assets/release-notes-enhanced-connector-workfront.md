@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1724'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 98%
     </tr>
 </table>
 
-Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront for Experience Manager enhanced connector]
+Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront for Experience Manager enhanced connector].
 
 Das Veröffentlichungsdatum für die neueste Version 1.9.20 von [!DNL Workfront for Experience Manager enhanced connector] ist der 6. September 2024.
 
@@ -231,7 +231,7 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
       1. Notieren Sie die Ereignisabonnement-ID.
 
-      1. Löschen Sie das falsche Ereignisabonnement. Führen Sie einen Delete-API-Aufruf für `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` durch.
+      1. Löschen Sie das falsche Ereignisabonnement. Führen Sie einen Delete-API-Aufruf für `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` durch
 
          `200` als Antwort-Code gibt das erfolgreiche Löschen falscher Ereignisabonnements an.
   >[!NOTE]
