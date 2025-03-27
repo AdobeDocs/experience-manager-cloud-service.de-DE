@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 97%
 
 ---
 
@@ -44,6 +44,13 @@ Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise un
 
 Inhaltsverweise tun genau das – sie ermöglichen es Ihnen, auf beliebige andere Inhalte zu verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Inhaltselement auswählen können.
 
+Es gibt zwei Typen:
+
+* **Inhaltsreferenz**
+   * Gibt den Pfad zur referenzierten Ressource an
+* **Inhaltsreferenz (UUID)**
+   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
+
 ## Asset-/Medienverweise {#assets-media-references}
 
 Mithilfe der Option **Asset einfügen** können Sie innerhalb eines Textblocks auf Assets (z. B. Bilder oder Medien) verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Asset auswählen können.
@@ -75,6 +82,13 @@ Und das ist nur für den Einstieg. Je nach Komplexität kann eine Auszeichnung f
 Die Repräsentation dieser Beziehungen kann mit Fragmentverweisen erreicht werden, da diese sowohl von Ihnen (dem Autor) als auch von den Headless-Programmen verstanden werden.
 
 Als Autorin bzw. Autor sind Sie nicht für die Definition dieser Beziehungen verantwortlich (das wird im Rahmen der Inhaltsarchitektur beim Erstellen des Inhaltsfragmentmodells vorgenommen), Sie müssen jedoch wissen, wie Sie die Verweise erkennen und bearbeiten können.
+
+Es gibt zwei Arten:
+
+* **Fragmentreferenz**
+   * Gibt den Pfad zur referenzierten Ressource an
+* **Fragmentreferenz (UUID)**
+   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
