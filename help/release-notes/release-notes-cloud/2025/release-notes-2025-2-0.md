@@ -1,20 +1,18 @@
 ---
-title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Versionshinweise für Version 2025.2.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Versionshinweise für Version 2025.2.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 1964d4a40d1272baf661473641381ace900407d1
+source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 76%
+source-wordcount: '1500'
+ht-degree: 100%
 
 ---
 
-# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2025.2.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
+Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der Version 2025.2.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) ist der Freitag, 27. März 2025. Die nächste Version mit neuen Funktionen (2025.4.0) ist für den Freitag, 24. April 2025 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.2.0) ist der 4. März 2025. Die nächste Version (2025.3.0) ist für den 27. März 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -44,20 +42,59 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Neue Funktionen in AEM Sites {#new-features-sites}
+
+**Automatisches Tagging für Inhaltsfragmente**
+
+Beim Erstellen von Inhaltsfragmenten ist es jetzt möglich, automatisch Tags zu erben, die dem Inhaltsmodell zugewiesen wurden. Dies ermöglicht eine wirksame automatische Klassifizierung von Inhalten, die in Inhaltsfragmenten gespeichert sind.
+
+**UUID-Unterstützung für Inhaltsfragmente**
+
+Die UUID-Unterstützung für Inhaltsfragmente ist jetzt allgemein verfügbar. Die neue Funktion ändert nicht das pfadbasierte Verhalten von Vorgängen innerhalb von AEM, z. B. Verschieben, Umbenennen, Rollout, bei denen Pfade automatisch angepasst werden. Sie kann jedoch die externe Verwendung von Inhaltsfragmenten vereinfachen und stabiler gestalten, insbesondere wenn GraphQL-Abfragen verwendet werden, die direkt auf einzelne Fragmente mit ByPath-Abfragen abzielen. Solche Abfragen können fehlschlagen, wenn sich ein Fragmentpfad ändert. Bei Verwendung des neuen Abfragetyps „ById“ bleibt die Abfrage jetzt stabil, da sich die UUID eines Fragments nicht ändert, auch wenn Pfade dies tun.
+
+**Dynamic Media mit OpenAPI-Unterstützung im Inhaltsfragment-Editor und in GraphQL**
+
+Assets, die in anderen AEM as a Cloud Service-Programmen als Inhaltsfragmenten gespeichert sind, und die mit der neuen „Dynamic Media mit OpenAPI“-Funktion aktiviert sind, können jetzt in Inhaltsfragmenten verwendet werden. Mit der Bildauswahl im neuen Inhaltsfragment-Editor können jetzt „Remote“-Repositorys als Quelle für Bild-Assets ausgewählt werden, auf die im Fragment verwiesen werden soll. Und bei der Bereitstellung solcher Inhaltsfragmente mit AEM GraphQL enthält die JSON-Antwort jetzt die erforderlichen Eigenschaften für Remote-Assets (assetId, repositoryId), damit Client-Anwendungen entsprechende „Dynamic Media mit OpenAPI“-URLs erstellen können, um das Bild abzurufen.
+
+**Inhaltsfragmenteditor – Rollout**
+
+Die Aktivierung des neuen, auf der Spectrum-Benutzeroberfläche basierenden Inhaltsfragmenteditors in AEM as a Cloud Service wird fortgesetzt. Nachdem er im November 2024 bereits zur Standardeinstellung für alle Cloud Service-Entwicklungsumgebungen wurde, wird er ab dem 1. April 2025 auch für alle Staging-Umgebungen und ab dem 1. Mai 2025 für alle Produktionsumgebungen als Standard festgelegt. In allen Fällen haben Benutzende weiterhin die Möglichkeit, zum herkömmlichen Inhaltsfragmenteditor in der Touch-optimierten Benutzeroberfläche von AEM zurückzukehren.
+
+**Übersetzungs-HTTP-API**
+
+Die AEM-Übersetzungs-HTTP-REST-API, die sich seit einiger Zeit im Early-Adopter-Modus befindet, ist jetzt allgemein verfügbar. Die Dokumentation finden Sie [hier](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). Die API ermöglicht die Automatisierung erforderlicher Schritte im Übersetzungs-Management-Prozess für Inhalte in AEM.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Neue Funktionen in Dynamic Media {#new-features-dynamic-media}
+### Neue Funktionen in AEM Assets {#new-features-assets}
 
-**Unterstützung von langen Formularen für Videos, die mit Dynamic Media mit Open API bereitgestellt werden**
+**Neue Verpackungsstruktur in Dynamic Media**
 
-Dynamic Media mit OpenAPI unterstützt jetzt Videos in langer Form. Die Videos in langer Form unterstützen bis zu 50 GB und 2 Stunden.
+Eine überarbeitete Verpackungsstruktur in Dynamic Media ist jetzt verfügbar, die besser auf Markterwartungen ausgerichtet ist und Tracking unterstützt. Die neue Verpackungsstruktur umfasst:
 
-### Neue Funktionen in der Assets-Ansicht {#new-features-assets-view}
+* Dynamic Media Prime, einschließlich Dynamic Media mit OpenAPIs und Videos, um die Bereitstellung zu verbessern.
 
+* Mit Dynamic Media Ultimate werden Bereitstellungs- und Umwandlungsfunktionen hinzugefügt, um höhere Nutzungsanforderungen zu erfüllen.
 
-**Unterstützung für Root-Tags**
+Sie müssen über Assets as a Cloud Service Prime oder Ultimate verfügen, um von der neuen Verpackungsstruktur zu profitieren.
 
-AEM Assets unterstützt jetzt die Zuordnung einer Tag-Eigenschaft in einem Metadatenformular zu benutzerdefinierten Metadaten. Darüber hinaus können Sie als Administrator die Verfügbarkeit von Tags für Benutzer einschränken, indem Sie den Zugriff auf ein bestimmtes Root-Tag und die Tags beschränken, die unter dem Root-Tag vorhanden sind.
+**KI-generierte Videountertitel**
+
+Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Anwendererlebnis verbessern, indem akkurate Untertitel bereitgestellt werden. Untertitel werden aus dem Originalaudio, zusätzlichen Audiospuren oder Untertiteln generiert, die auf der Registerkarte „Beschriftungen und Audiospuren“ auf der Seite mit den Videoeigenschaften bereitgestellt werden. Es werden mehr als 60 Sprachen unterstützt. Die Untertitel können dabei vor der Veröffentlichung des Videos überprüft und in einer Vorschau angezeigt werden.
+
+**Anpassen der Suchfilter**
+
+Benutzerdefinierte Suchfilter verbessern die Genauigkeit und Effizienz beim Auffinden relevanter Informationen. Sie ermöglichen spezifischere Suchvorgänge, bei denen Daten nach bestimmten Attributen wie Marke, Produkt, Kategorie oder anderen wichtigen Identifikatoren gefiltert werden. Dies führt zu einer besseren Organisation sowie einem reduziertem Zeitaufwand, weil keine irrelevanten Ergebnisse durchgesehen werden müssen, und ermöglicht eine schnellere Entscheidungsfindung. Darüber hinaus wird Skalierbarkeit unterstützt, da in großen Datensätzen leichter navigiert und eine einfachere Analyse durchgeführt werden kann.
+
+![Anpassen von Suchfiltern](/help/assets/assets/custom-search-filters.png)
+
+### Early-Access-Funktionen in Content Hub {#early-access-content-hub}
+
+Mit Content Hub können Sie nun neben den bereits vorhandenen statischen Ausgabedarstellungen auch dynamische Ausgabedarstellungen sowie Ausgabedarstellungen für den intelligenten Zuschnitt anzeigen und herunterladen. Als Content Hub-Admin können Sie auch über die Benutzeroberfläche „Konfiguration“ die Verfügbarkeit dieser Ausgabedarstellungen für Benutzende konfigurieren.
+
+![Dynamische Ausgabedarstellungen](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -87,15 +124,7 @@ Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wen
 
 >[!IMPORTANT]
 >
-> Die Java **21-** wurde im Februar in Ihren Entwicklungs-/RDE-Umgebungen bereitgestellt und wird am 28. und 29. **auf Ihre Staging-/Produktionsumgebungen**. Beachten Sie, **Erstellen von Code** mit Java 21 (oder Java 17) unabhängig von der Java 21-Laufzeit ist - Sie müssen explizit Schritte zum Erstellen von Code mit Java 21 (oder Java 17) ausführen.
-
-### AEM-Protokollweiterleitung an weitere Ziele - Beta-Programm {#log-forwarding-earlyadopter}
-
-Jetzt in der Beta-Phase können Sie AEM-Protokolle an New Relic (mithilfe von HTTPS), Amazon S3 und Sumo Logic weiterleiten. Beachten Sie, dass AEM-Protokolle (einschließlich Apache/Dispatcher) unterstützt werden, jedoch keine CDN-Protokolle. Zugriff per E-Mail ](mailto:aemcs-logforwarding-beta@adobe.com)0}aemcs-logforwarding-beta@adobe.com&quot;.[
-
-Während Protokolle von Cloud Manager heruntergeladen werden können, ist es für viele Unternehmen von Vorteil, diese Protokolle an ein bevorzugtes Protokollierungsziel zu streamen. AEM unterstützt bereits die (GA) AEM- und CDN-Protokollweiterleitung an Azure Blob Storage, Datadog, HTTPS, Elasticsearch (und OpenSearch) und Splunk. Diese Funktion wird im Selbstbedienungsmodus konfiguriert und mithilfe der Konfigurations-Pipeline bereitgestellt.
-
-Weitere Informationen finden Sie in [ Dokumentation zur ](/help/implementing/developing/introduction/log-forwarding.md).
+> Im Februar wurde Java 21 **Runtime** in Entwicklungs-/RDE-Umgebungen bereitgestellt (mit Ausnahme der bereits mit Java 17 oder 21 erstellten Umgebungen, die bereits über die Java 21 Runtime verfügen). Java 21 wird im April auf Staging-/Produktionsumgebungen angewendet.
 
 ### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
 
