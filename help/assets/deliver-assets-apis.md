@@ -3,10 +3,10 @@ title: Bereitstellungs-APIs
 description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 95%
+source-wordcount: '634'
+ht-degree: 92%
 
 ---
 
@@ -75,11 +75,7 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 | [Player-Container für das Video-Asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Gibt den Player-Container für das Video-Asset zurück. Sie können den Player in ein iFrame-HTML-Element einbetten und das Video abspielen. |
 | [Wiedergabe-Manifeste im ausgewählten Ausgabeformat](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Gibt die Wiedergabe-Manifestdatei für das angegebene Video-Asset im ausgewählten Ausgabeformat zurück. Sie müssen einen benutzerdefinierten Player erstellen, der adaptives Streaming über HLS- oder DASH-Protokolle ermöglicht, um die Wiedergabe-Manifestdatei abzurufen und das Video abzuspielen. |
 
-
->[!NOTE]
->
-* [Bildvorgaben, intelligente Bildbearbeitung und zusätzliche Bildmodifikatoren](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) stehen als Funktion mit eingeschränkter Verfügbarkeit bereit. Um Zugriff zu erhalten, [senden Sie eine entsprechende Anfrage an den Kunden-Support von Adobe](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
-* Bei [Assets Prime](/help/assets/assets-ultimate-overview.md) ist „Smartes Zuschneiden“ nicht verfügbar.
+Informationen zu den verfügbaren Dynamic Media-Angeboten und deren Funktionen finden Sie unter [Dynamic Media Prime und Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 ## Bereitstellungs-API-Endpunkte {#delivery-apis-endpoint}
 
