@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 30b5d5838087a35a457939cdbaa13c5735df144e
+source-git-commit: 67b9a5f73f1f8c599e902a0ac0d8efbc614c7f75
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 53%
+source-wordcount: '517'
+ht-degree: 32%
 
 ---
 
@@ -16,47 +16,61 @@ ht-degree: 53%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 19823 {#19823}
+## Version X {#X}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 19823, die am Mittwoch, 4. März 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 19687.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion X, die am 1. April 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 19823.
 
-Die Funktionsaktivierung von 2025.3.0 wird den vollen Funktionsumfang für diese Wartungsversion bieten. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese Wartungsversion bieten. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-19823}
+### Verbesserungen {#enhancements-X}
 
-* ASSETS-46491: OSGi-Ereignis-Handler für die Statusänderung der Asset-Verarbeitung.
-* ASSETS-45613: Senden von Ereignissen zum Rückgängigmachen der Veröffentlichung, wenn Assets gelöscht oder verschoben werden.
-* ASSETS-45131: Unterstützung benutzerdefinierter Tag-Eigenschaften in Content Hub.
+FORMS-19068: Übermittlungsaktionen für den AEP-Connector in Forms Manager-APIs werden nun unterstützt, um die Funktionen zur Formulardatenintegration zu verbessern.
 
-### Behobene Probleme {#fixed-issues-19823}
+FORMS-18513: Es wurde Unterstützung für die Umwandlung von Datenbäumen in AEP Connector implementiert, um die Assistentenfunktionen und Datenverarbeitungsfunktionen zu erweitern.
 
-* ASSETS-20433: Probleme bei der Dynamic Media-Aufnahme mit kennwortgeschützten PDFs.
-* ASSETS-24675: Bildverarbeitungsoptionen werden für reine Musterbildprofile nicht angezeigt.
-* ASSETS-41257: Asset-Versionsvergleich rendert Assets mit einem falschen Seitenverhältnis. Asset-Versionen werden in der Zeitleiste in falscher Reihenfolge angezeigt.
-* ASSETS-44894: Lesezeichen für die Assets-Ansicht sind möglicherweise nicht anklickbar.
-* ASSETS-45015: Breite und Höhe des smarten Zuschnitts werden auf null festgelegt, wenn der Asset-Handler für smartes Zuschneiden nicht gefunden wird.
-* ASSETS-45192: Reduzieren Sie die Pulsanforderungsfrequenz.
-* ASSETS-45724: Stellen Sie sicher, dass der DM-Upload wiederholt wird, wenn kein Upload-Auftrag zugewiesen ist.
-* ASSETS-46425: Probleme bei der Adobe Stock-Integrationssuche.
-* ASSETS-27400: Der Ordnervorschau-Generator versucht möglicherweise, das Original zu öffnen.
-* CQ-4358722: Verarbeiten Sie verschiedene Gebietsschema-Codes in Java 11 und Java 17.
-* SITES-29369: Nach der Aktivierung/Deaktivierung eines Assets ausgelöste Ereignisse für die Veröffentlichung/Rückgängigmachung der Veröffentlichung der Seite.
-* SITES-24074: Beheben der Barrierefreiheit von Tastaturen unter Unified Shell.
-* SITES-28058: Assets-Ordnertitel wird nicht in die Live Copy übertragen.
+FORMS-18432: Es wurde eine formularspezifische (Regex-basierte) Client-seitige Vorbefüllungskonfiguration implementiert, um eine selektive Vorbefüllungsfunktion ohne Änderungen auf OSGi-Ebene zu ermöglichen.
 
-### Bekannte Probleme {#known-issues-19823}
+FORMS-17551: Es wurde Unterstützung für Datensatzdokumente (DoR) für SharePoint-Listenintegrationen hinzugefügt.
+
+### Behobene Probleme {#fixed-issues-X}
+
+FORMS-19028: Die Client-seitige Vorbefüllungsfunktion unterbricht die Formularereignisverarbeitung, was verhindert, dass Value Commit- und DOMContentLoaded-Ereignisse beim Laden des Formulars ordnungsgemäß ausgelöst werden.
+
+FORMS-18360: Verbesserte Verwaltung des SharePoint-Listenbereichs für Team-Sites in Forms Document Management zur Verbesserung der Datenorganisation und Zugriffskontrolle.
+
+FORMS-18325: Die Cloud-Konfiguration für Adobe Experience Platform (AEP) wurde hinzugefügt, um die Funktionen für die Integration und Verarbeitung von Formulardaten zu verbessern.
+
+FORMS-18213: Es wurde eine Funktion zum Ausblenden/Ausschließen deaktivierter Felder aus dem Datensatzdokument (DoR) implementiert, um die Dokumentklarheit und das Benutzererlebnis zu verbessern.
+
+FORMS-18189: Die Handhabung benutzerdefinierter Funktionen wurde geändert, um die Fehlerprotokollierung für leere Client-Bibliotheken zu verhindern und die Fehleranzeige in der Benutzeroberfläche zu verbessern.
+
+FORMS-18426: Die SharePoint-Listensuchfunktion schlägt fehl, wenn Listennamen Sonderzeichen enthalten (z. B. &quot;-„), was sich auf die Formularintegration mit SharePoint-Listen auswirkt.
+
+FORMS-18375: Auf Foundation-Komponenten basierende Formulare wählen fälschlicherweise reCAPTCHA-Konfigurationen aus `conf/global` Ordner aus, wenn kein bestimmter Konfigurations-Container ausgewählt ist.
+
+FORMS-18304: PDF/A-1b-Dokumente, die die Validierung in Acrobat und LiveCycle ES4 bestehen, werden in AEM 6.5 Forms aufgrund von geräteabhängigen Farbfehlern fälschlicherweise als nicht konform gekennzeichnet.
+
+FORMS-18271: Der Forms-Design-Editor zeigt nicht lokalisierte Fehlermeldungen an, die das Benutzererlebnis bei der Konfiguration von Formularen und der Anpassung von Designs beeinträchtigen.
+
+FORMS-18068: Probleme mit der fett gedruckten Textwiedergabe im Datensatzdokument (DoR) für Optionsfeld- und Kontrollkästchen-Gruppen unter Verwendung von Rich-Text-Feldern.
+
+FORMS-7016: Die Reihenfolge des Tastaturfokus im Formular-Editor folgt nicht der logischen Navigation.
+
+FORMS-6950: Es wurden erforderliche ARIA-Rollen und -Attribute zu den Strukturansichtskomponenten des Dateisystemnavigators hinzugefügt, um die Barrierefreiheit der Sprachausgabe zu verbessern und den WCAG 4.1.2-Standard für Name, Rolle und Wert (Stufe A) zu erfüllen.
+
+### Bekannte Probleme {#known-issues-X}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-19823}
+### Eingestellte Funktionen und APIs {#deprecated-X}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-19823}
+### Sicherheitskorrekturen {#security-X}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 6 identifizierte Schwachstellen und sorgt somit für einen noch robusteren Systemschutz.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt X identifizierte Schwachstellen und verstärkt unser Engagement für zuverlässigen Systemschutz.
 
-### Eingebettete Technologien {#embedded-tech-19823}
+### Eingebettete Technologien {#embedded-tech-X}
 
 | Technologie | Version | Link |
 |---|---|---|
