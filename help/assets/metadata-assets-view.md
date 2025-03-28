@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 98%
+source-wordcount: '2124'
+ht-degree: 91%
 
 ---
 
@@ -217,6 +217,39 @@ Führen Sie die folgenden Schritte aus, um die Link-Komponente im Metadatenformu
    * Klicken Sie auf ![Symbol „Kopieren“](assets/do-not-localize/copy.svg), um die URL zu kopieren.
    * Klicken Sie auf ![Symbol „Bearbeiten“](assets/do-not-localize/edit.svg), um die URL zu bearbeiten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
+
+
+### Arbeiten mit Tags-Komponenten im Metadatenformular {#tag-component-metadata-form}
+
+Das Stammelement stellt die Baumstruktur der Tags dar, die Sie mit den Assets verknüpfen können, und hilft Ihnen, das Asset anhand des ihm zugewiesenen Tags zu identifizieren. Darüber hinaus können Sie beim Konfigurieren des Metadatenformulars im Metadaten-Editor den Zugriff auf eine bestimmte Taxonomie einschränken.
+
+#### Konfiguration der Tags-Komponente {#tags-component-configuration}
+
+Konfigurieren Sie die Tag-Komponente, indem Sie die folgenden Schritte ausführen:
+
+1. Wechseln Sie zum Metadaten-Editor, navigieren Sie zu **[!UICONTROL Tags]** und platzieren Sie ihn auf der Arbeitsfläche.
+1. Benennen Sie die Komponente auf der Arbeitsfläche um. Navigieren Sie dazu zu **[!UICONTROL Beschriftung]** unter [!UICONTROL Metadateneigenschaft] im Einstellungsbereich und fügen Sie den Text für die Identifizierung hinzu.
+1. Suchen Sie unter [!UICONTROL Metadateneigenschaft] im Bedienfeld Einstellungen nach der Metadateneigenschaft, die Sie der Komponente zuweisen möchten.
+1. Klicken Sie **[!UICONTROL Auf bestimmte Taxonomie beschränken]**, um den Stammpfad der Taxonomie zu beschränken. Durchsuchen Sie dazu Tags und wählen Sie die Taxonomie für den jeweiligen Pfad aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
+
+   ![Konfiguration von Stamm-Tags](assets/root-tag-config.png)
+
+1. [Zuweisen von Metadatenformularen zu Ordnern](#assign-metadata-form-folder).
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+Um die konfigurierten Stamm-Tags anzuzeigen, gehen Sie zur Detailseite des Assets, wo die Zuordnung zwischen dem Metadatenformular und Stamm-Tags durchgeführt wird.
 
 ## Nächste Schritte {#next-steps}
 
