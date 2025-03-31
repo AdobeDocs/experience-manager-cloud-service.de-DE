@@ -2,10 +2,10 @@
 title: Gruppenmigration
 description: Überblick über die Gruppenmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 57%
+source-wordcount: '1921'
+ht-degree: 54%
 
 ---
 
@@ -48,7 +48,7 @@ Die meisten migrierten Gruppen sind so konfiguriert, dass sie von IMS verwaltet 
 
 Beachten Sie, dass migrierte Gruppen nicht mehr als „lokale Gruppen“ von AEM angesehen werden. Sie sind IMS-kompatible Gruppen in AEM, obwohl sie möglicherweise noch nicht in IMS existieren.   Sie müssen in IMS separat neu erstellt werden, damit sie zwischen AEM und IMS synchronisiert werden können.  Gruppen können in IMS unter anderem über die Admin Console einzeln oder massenhaft erstellt werden.  Weitere Informationen zum Erstellen von Gruppen (einzeln oder in großer Anzahl) in der Admin Console finden Sie unter [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
 
-Die Ausnahme für diese IMS-Konfiguration sind Gruppen, die von Assets-Sammlungen erstellt wurden. Wenn eine Sammlung in AEM erstellt wird, werden Gruppen für den Zugriff auf diese Sammlung erstellt. Diese Gruppen werden in das Cloud-System migriert, sind jedoch nicht für die Verwaltung durch IMS konfiguriert.  Um diesen Gruppen IMS-Benutzende hinzuzufügen, müssen sie auf der Seite „Gruppeneigenschaften“ in der Assets-Benutzeroberfläche entweder einzeln oder gemeinsam als Teil einer anderen IMS-Gruppe hinzugefügt werden.
+Die Ausnahme von dieser IMS-Konfiguration betrifft Gruppen, die von Assets-Sammlungen und privaten Ordnern erstellt wurden. Wenn eine Sammlung oder ein privater Ordner in AEM erstellt wird, werden Gruppen für den Zugriff auf diese Inhalte erstellt. Diese Gruppen werden in das Cloud-System migriert, sind jedoch nicht für die Verwaltung durch IMS konfiguriert.  Um diesen Gruppen IMS-Benutzende hinzuzufügen, müssen sie auf der Seite „Gruppeneigenschaften“ in der Assets-Benutzeroberfläche entweder einzeln oder gemeinsam als Teil einer anderen IMS-Gruppe hinzugefügt werden.
 
 
 ## Deaktivieren der Gruppenmigration {#group-migration-option}
