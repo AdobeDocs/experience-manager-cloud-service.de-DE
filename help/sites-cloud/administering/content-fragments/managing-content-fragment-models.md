@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 51%
 
 ---
@@ -80,7 +80,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
          * Zeigt Informationen zum Status des Modells an
       * [Bestimmte andere Informationsfelder](#information-content-fragments) über ein Inhaltsfragmentmodell können für die [Schnellfilterung“ verwendet ](#fast-filtering):
          * Auswählen eines Wertes in der Spalte, der sofort als Filter angewendet wird
-         * Die Schnellfilterung wird für die Spalten **Geändert von**, **Veröffentlicht von** und **Status** unterstützt
+         * Die Schnellfilterung wird für die Spalten **Geändert von**, **Veröffentlicht** und **Status** unterstützt.
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
          * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
 Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
@@ -95,7 +95,7 @@ Das Haupt-/rechte Bedienfeld (Tabellenansicht) der Konsole bietet eine Reihe von
 
 * **Name**
    * Stellt einen Link zum Öffnen des Modells im Editor bereit.
-* Gesperrt
+* **Gesperrt** (Schlosssymbol)
    * Wenn das Modell gesperrt ist, wird dies durch ein Vorhängeschloss-Symbol angezeigt.
 * **Pfad**
    * Stellt den Pfad als Link zum Öffnen der Konfiguration in der Konsole bereit.
