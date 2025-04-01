@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 100%
@@ -15,8 +15,6 @@ ht-degree: 100%
 # Authoring für AEM als Headless-CMS – eine Einführung {#author-headless-introduction}
 
 In diesem Teil der [AEM Headless-Inhalts-Autoren-Tour](overview.md) klernen Sie die (grundlegenden) Konzepte und die Terminologie kennen, die notwendig sind, um die Erstellung von Inhalten bei der Verwendung von Adobe Experience Manager (AEM) as a Cloud Service als Headless-CMS zu verstehen. Dazu gehört die Strukturierung und Erstellung von Inhalten für die Headless Inhaltsbereitstellung.
-
-{{headless-trials-promotion}}
 
 ## Ziel {#objective}
 
