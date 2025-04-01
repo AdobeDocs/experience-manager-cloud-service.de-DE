@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2025.1.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
+source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 92%
+source-wordcount: '1740'
+ht-degree: 93%
 
 ---
 
@@ -33,15 +33,11 @@ Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Man
 
 Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Video zur Version {#release-video}
 
-## Release Video {#release-video}
+Sehen Sie sich das Video zur Versionsübersicht von Januar 2025 an, das eine Zusammenfassung der Funktionen gibt, die in Version 2025.1.0 hinzugefügt wurden:
 
-Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
