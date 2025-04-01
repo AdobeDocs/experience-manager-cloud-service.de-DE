@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 3%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 3%
 
 Kunden mit einer Lizenz bei einem Protokollierungsanbieter oder die ein Protokollierungsprodukt hosten, können AEM-Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an das zugehörige Protokollierungsziel weitergeleitet bekommen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
 
-* Amazon S3 (private Betaversion, siehe [^1])
+* Amazon S3 (private Betaversion, siehe Hinweis unten)
 * Azure Blob Storage
 * Datadog
 * Elasticsearch oder OpenSearch
 * HTTPS
 * Splunk
-* Sumo-Logik (private Betaversion, siehe [^1])
+* Sumo Logic (private Betaversion, siehe Hinweis unten)
 
 Die Protokollweiterleitung wird im Self-Service-Modus konfiguriert, indem eine Konfiguration in Git deklariert wird, und kann über Cloud Manager-Konfigurations-Pipelines für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
@@ -33,7 +33,9 @@ Es gibt eine Option für die Weiterleitung der AEM- und Apache/Dispatcher-Protok
 
 Beachten Sie, dass die Netzwerkbandbreite, die mit den an das Protokollierungsziel gesendeten Protokollen verbunden ist, als Teil der Netzwerk-E/A-Nutzung Ihres Unternehmens betrachtet wird.
 
-[^1] Amazon S3 und Sumo Logic befinden sich in Private Beta und unterstützen nur AEM-Protokolle (einschließlich Apache/Dispatcher).  New Relic über HTTPS befindet sich ebenfalls in der privaten Betaversion. aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+>[!NOTE]
+>
+>Amazon S3 und Sumo Logic befinden sich in Private Beta und unterstützen nur AEM-Protokolle (einschließlich Apache/Dispatcher).  New Relic über HTTPS befindet sich ebenfalls in der privaten Betaversion. aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
 ## Wie dieser Artikel organisiert ist {#how-organized}
 
@@ -192,6 +194,7 @@ Konfigurationen für die unterstützten Protokollierungsziele sind unten aufgef�
 
 ### Amazon S3 {#amazons3}
 
+>[!NOTE]
 >
 >In S3 werden regelmäßig alle 10 Minuten für jeden Protokolldateityp Protokolle geschrieben.  Dies kann zu einer anfänglichen Verzögerung für das Schreiben von Protokollen in S3 führen, sobald die Funktion aktiviert/deaktiviert wird.  Weitere Informationen dazu, warum dieses Verhalten existiert, finden Sie [hier](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
@@ -384,7 +387,7 @@ data:
 
 aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
->
+>[!NOTE]
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Siehe [hier](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) für die Dokumentation zu New Relic.
 
 #### HTTPS-CDN-Protokolle {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > Sie benötigen ein Sumo Logic Enterprise-Abonnement, um die Indexfeldfunktion nutzen zu können.  Bei Nicht-Enterprise-Abonnements werden die Protokolle standardmäßig an die `sumologic_default`-Partition weitergeleitet.  Weitere Informationen finden [ in der ](https://help.sumologic.com/docs/search/optimize-search-partitions/) zur Sumo-Logikpartitionierung.
 
 ## Protokolleintragsformate {#log-formats}
