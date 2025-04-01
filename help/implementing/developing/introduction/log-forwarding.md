@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
+source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
 workflow-type: tm+mt
-source-wordcount: '1985'
-ht-degree: 2%
+source-wordcount: '2275'
+ht-degree: 3%
 
 ---
 
@@ -15,21 +15,25 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Die Protokollweiterleitung wird jetzt im Self-Service-Modus konfiguriert, der sich von der veralteten Methode unterscheidet, die die Übermittlung eines Adobe-Support-Tickets erforderte. Siehe den Abschnitt [Migration](#legacy-migration), wenn Ihre Protokollweiterleitung per Adobe eingerichtet wurde.
+>Die Protokollweiterleitung wird jetzt im Self-Service konfiguriert, was sich von der veralteten Methode unterscheidet, für die ein Adobe-Support-Ticket gesendet werden musste. Siehe den [Migrieren](#legacy-migration), wenn Ihre Protokollweiterleitung von Adobe eingerichtet wurde.
 
-Kunden mit einer -Lizenz bei einem Protokollierungsanbieter oder die ein Protokollierungsprodukt hosten, können AEM-Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an das zugehörige Protokollierungsziel weitergeleitet bekommen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
+Kunden mit einer Lizenz bei einem Protokollierungsanbieter oder die ein Protokollierungsprodukt hosten, können AEM-Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an das zugehörige Protokollierungsziel weitergeleitet bekommen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
 
+* Amazon S3 (private Betaversion, siehe [^1])
 * Azure Blob Storage
 * Datadog
 * Elasticsearch oder OpenSearch
 * HTTPS
 * Splunk
+* Sumo-Logik (private Betaversion, siehe [^1])
 
-Die Protokollweiterleitung wird im Self-Service-Modus konfiguriert, indem eine Konfiguration in Git deklariert wird, und kann über Cloud Manager-Konfigurations-Pipelines für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilen-Tools in schnellen Entwicklungsumgebungen (RDEs) bereitgestellt werden.
+Die Protokollweiterleitung wird im Self-Service-Modus konfiguriert, indem eine Konfiguration in Git deklariert wird, und kann über Cloud Manager-Konfigurations-Pipelines für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
-Es gibt eine Option für das Routing der AEM- und Apache-/Dispatcher-Protokolle über die erweiterte AEM-Netzwerkinfrastruktur, z. B. die dedizierte Ausgangs-IP.
+Es gibt eine Option für die Weiterleitung der AEM- und Apache/Dispatcher-Protokolle über die erweiterte Netzwerkinfrastruktur von AEM, z. B. eine dedizierte Ausgangs-IP.
 
 Beachten Sie, dass die Netzwerkbandbreite, die mit den an das Protokollierungsziel gesendeten Protokollen verbunden ist, als Teil der Netzwerk-E/A-Nutzung Ihres Unternehmens betrachtet wird.
+
+[^1] Amazon S3 und Sumo Logic befinden sich in Private Beta und unterstützen nur AEM-Protokolle (einschließlich Apache/Dispatcher).  New Relic über HTTPS befindet sich ebenfalls in der privaten Betaversion. aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
 ## Wie dieser Artikel organisiert ist {#how-organized}
 
@@ -39,7 +43,7 @@ Dieser Artikel ist wie folgt aufgebaut:
 * Transport und erweiterte Netzwerkfunktionen: Vor der Erstellung der Protokollierungskonfiguration sollte die Netzwerkeinrichtung berücksichtigt werden.
 * Protokollieren von Zielkonfigurationen - Jedes Ziel hat ein leicht unterschiedliches Format
 * Protokolleintragsformate : Informationen zu den Protokolleintragsformaten
-* Migration von der alten Protokollweiterleitung - Wie wechselt man von der zuvor per Adobe eingerichteten Protokollweiterleitung zum Self-Service-Ansatz?
+* Migration von der alten Protokollweiterleitung - Wie wechselt man von der zuvor von Adobe eingerichteten Protokollweiterleitung zum Self-Service-Ansatz?
 
 ## Einrichtung {#setup}
 
@@ -87,7 +91,7 @@ Es ist möglich, zwischen CDN-Protokollen und AEM-Protokollen (einschließlich A
          index: "AEMaaCS_CDN"   
 ```
 
-Ein weiteres Szenario besteht darin, entweder die Weiterleitung der CDN-Protokolle oder der AEM-Protokolle (einschließlich Apache/Dispatcher) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
+Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder AEM-Protokolle (einschließlich Apache/Dispatcher) zu deaktivieren. Um beispielsweise nur die CDN-Protokolle weiterzuleiten, können Sie Folgendes konfigurieren:
 
 ```yaml
    kind: "LogForwarding"
@@ -177,14 +181,51 @@ data:
       advancedNetworking: true
 ```
 
-Für CDN-Protokolle können Sie die IP-Adressen auf die Zulassungsliste setzen, wie unter [Fastly-Dokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn diese Liste freigegebener IP-Adressen zu groß ist, sollten Sie Traffic an einen HTTPS-Server oder (Nicht-Adobe) Azure Blob Store senden, wo Logiken geschrieben werden können, um die Protokolle von einer bekannten IP an ihr endgültiges Ziel zu senden.
+Für CDN-Protokolle können Sie die IP-Adressen auf die Zulassungsliste setzen, wie unter [Fastly-Dokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn diese Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen HTTPS-Server oder Azure Blob Store (außer Adobe) senden, in den Logiken geschrieben werden können, um die Protokolle von einer bekannten IP an ihr endgültiges Ziel zu senden.
 
 >[!NOTE]
->Es ist nicht möglich, dass CDN-Protokolle von derselben IP-Adresse aus angezeigt werden, von der Ihre AEM-Protokolle stammen. Dies liegt daran, dass Protokolle direkt von Fastly und nicht von AEM Cloud Service gesendet werden.
+>Es ist nicht möglich, dass CDN-Protokolle von derselben IP-Adresse aus angezeigt werden, von der Ihre AEM-Protokolle stammen, da Protokolle direkt von Fastly und nicht von AEM Cloud Service gesendet werden.
 
 ## Protokollierungszielkonfiguration {#logging-destinations}
 
 Konfigurationen für die unterstützten Protokollierungsziele sind unten aufgeführt, zusammen mit etwaigen spezifischen Überlegungen.
+
+### Amazon S3 {#amazons3}
+
+>
+>In S3 werden regelmäßig alle 10 Minuten für jeden Protokolldateityp Protokolle geschrieben.  Dies kann zu einer anfänglichen Verzögerung für das Schreiben von Protokollen in S3 führen, sobald die Funktion aktiviert/deaktiviert wird.  Weitere Informationen dazu, warum dieses Verhalten existiert, finden Sie [hier](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+
+```yaml
+kind: "LogForwarding"
+version: "1.0"
+data:
+  awsS3:
+    default:
+      enabled: true
+      region: "your-bucket-region"
+      bucket: "your_bucket_name"
+      accessKey: "${{AWS_S3_ACCESS_KEY}}"
+      secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+```
+
+Um die S3-Protokollweiterleitung zu verwenden, müssen Sie einen AWS IAM-Benutzer mit der entsprechenden Richtlinie für den Zugriff auf Ihren S3-Bucket vorkonfigurieren.  Siehe [hier](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) für die Erstellung von IAM-Benutzeranmeldeinformationen.
+
+Die IAM-Richtlinie sollte es dem Benutzer ermöglichen, `s3:putObject` zu verwenden.  Zum Beispiel:
+
+```json
+{
+   "Version": "2012-10-17",
+   "Statement": [{
+       "Effect": "Allow",
+       "Action": [
+           "s3:PutObject"
+       ],
+       "Resource": "arn:aws:s3:::your_bucket_name/*"
+   }]
+}
+```
+
+Weitere Informationen [ Implementierung der Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)Richtlinie von AWS finden Sie hier.
 
 ### Azure Blob Storage {#azureblob}
 
@@ -241,7 +282,7 @@ aemcdn/
 
 Jede Datei enthält mehrere JSON-Protokolleinträge, die sich jeweils in einer separaten Zeile befinden. Die Protokolleintragsformate werden unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Jeder Protokolleintrag enthält auch die zusätzlichen Eigenschaften, die im Abschnitt [Protokolleintragsformate](#log-formats) unten erwähnt werden.
 
-#### Azure Blob Storage-AEM-Protokolle {#azureblob-aem}
+#### Azure Blob Storage - AEM-Protokolle {#azureblob-aem}
 
 AEM-Protokolle (einschließlich Apache/Dispatcher) werden unter einem Ordner mit der folgenden Namenskonvention angezeigt:
 
@@ -308,7 +349,7 @@ data:
 
 ![Elastic-Bereitstellungsanmeldeinformationen](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* Für AEM-Protokolle ist `index` auf eines der folgenden festgelegt: `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` oder `aemhttpderror`
+* Für AEM-Protokolle ist `index` auf einen der Werte `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` oder `aemhttpderror` festgelegt
 * Die optionale Pipeline-Eigenschaft sollte auf den Namen der Elasticsearch- oder OpenSearch-Aufnahme-Pipeline festgelegt werden, die so konfiguriert werden kann, dass der Protokolleintrag an den entsprechenden Index weitergeleitet wird. Der Prozessortyp der Pipeline muss auf &quot;*&quot;* und die Skriptsprache sollte auf &quot;*&quot;*. Hier finden Sie ein Beispielskript-Snippet zum Routen von Protokolleinträgen in einen Index wie aemaccess_dev_26_06_2024:
 
 ```text
@@ -339,6 +380,13 @@ data:
 * Die URL-Zeichenfolge muss **https://** enthalten. Andernfalls schlägt die Validierung fehl.
 * Die URL kann einen Port enthalten. Beispiel: `https://example.com:8443/aem_logs/aem`. Wenn in der URL-Zeichenfolge kein Port enthalten ist, wird Port 443 (der standardmäßige HTTPS-Port) angenommen.
 
+#### New Relic-Protokoll-API {#newrelic-https}
+
+aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+
+>
+>New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Siehe [hier](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) für die Dokumentation zu New Relic.
+
 #### HTTPS-CDN-Protokolle {#https-cdn}
 
 Web-Anfragen (POSTs) werden kontinuierlich mit einer JSON-Payload gesendet, die ein Array von Protokolleinträgen ist, wobei das unter „Protokollierung für AEM as a Cloud Service[ beschriebene Protokolleintragsformat verwendet ](/help/implementing/developing/introduction/logging.md#cdn-log). Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-formats) unten beschrieben.
@@ -349,7 +397,7 @@ Es gibt auch eine Eigenschaft mit dem Namen `sourcetype`, für die der Wert `aem
 >
 > Bevor der erste CDN-Protokolleintrag gesendet wird, muss Ihr HTTP-Server eine einmalige Anfrage erfolgreich abschließen: Eine Anfrage, die an den Pfad gesendet wird, muss ``/.well-known/fastly/logging/challenge`` mit einem Sternchen ``*`` im Hauptteil und 200-Status-Code antworten.
 
-#### HTTPS-AEM-Protokolle {#https-aem}
+#### HTTPS AEM-Protokolle {#https-aem}
 
 Bei AEM-Protokollen (einschließlich Apache/Dispatcher) werden Web-Anfragen (POSTs) kontinuierlich mit einer JSON-Payload gesendet, die ein Array von Protokolleinträgen mit den verschiedenen Protokolleintragsformaten ist, wie unter [Protokollierung für AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) beschrieben. Weitere Eigenschaften werden im Abschnitt [Protokolleintragsformate](#log-formats) unten beschrieben.
 
@@ -389,24 +437,30 @@ data:
 >
 > [Bei der Migration](#legacy-migration) von der alten Protokollweiterleitung zu diesem Self-Service-Modell haben sich die Werte des `sourcetype`-Felds, die an Ihren Splunk-Index gesendet werden, möglicherweise geändert. Passen Sie sie daher entsprechend an.
 
-<!--
 ### Sumo Logic {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+Bei der Konfiguration der Sumo-Logik für die Datenaufnahme erhalten Sie eine „HTTP-Source-Adresse“, die den Host, den Receiver-URI und den privaten Schlüssel in einer einzigen Zeichenfolge bereitstellt.  Zum Beispiel:
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+Sie müssen den letzten Abschnitt der URL (ohne den vorherigen `/`) kopieren und als [Cloud Manager-Geheimnis-Umgebungsvariable](/help/operations/config-pipeline.md#secret-env-vars) hinzufügen, wie oben im Abschnitt [Setup](#setup) beschrieben, und dann in Ihrer Konfiguration auf diese Variable verweisen.  Nachfolgend finden Sie ein Beispiel.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  sumologic:
+    default:
+      enabled: true
+      collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+      privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+      index: "aem-logs"
+```
+
+>
+> Sie benötigen ein Sumo Logic Enterprise-Abonnement, um die Indexfeldfunktion nutzen zu können.  Bei Nicht-Enterprise-Abonnements werden die Protokolle standardmäßig an die `sumologic_default`-Partition weitergeleitet.  Weitere Informationen finden [ in der ](https://help.sumologic.com/docs/search/optimize-search-partitions/) zur Sumo-Logikpartitionierung.
 
 ## Protokolleintragsformate {#log-formats}
 
@@ -432,16 +486,16 @@ aem_tier: author
 
 Bevor die Konfiguration der Protokollweiterleitung über ein Self-Service-Modell durchgeführt wurde, wurden Kunden aufgefordert, Support-Tickets zu öffnen, bei denen Adobe die Integration initiieren würde.
 
-Kunden, die auf diese Weise durch Adobe eingerichtet wurden, sind willkommen, sich nach Belieben an das Self-Service-Modell anzupassen. Es gibt mehrere Gründe für diesen Übergang:
+Kunden, die von Adobe auf diese Weise eingerichtet wurden, können sich jederzeit an das Self-Service-Modell anpassen. Es gibt mehrere Gründe für diesen Übergang:
 
 * Eine neue Umgebung (z. B. eine neue Entwicklungsumgebung oder RDE) wurde bereitgestellt.
 * Änderungen an Ihrem vorhandenen Splunk-Endpunkt oder Ihren Anmeldedaten.
-* Adobe hatte die Protokollweiterleitung eingerichtet, bevor CDN-Protokolle verfügbar waren, und Sie möchten CDN-Protokolle erhalten.
+* Adobe hatte die Protokollweiterleitung eingerichtet, bevor CDN-Protokolle verfügbar waren und Sie CDN-Protokolle erhalten möchten.
 * Eine bewusste Entscheidung, sich proaktiv an das Self-Service-Modell anzupassen, damit Ihr Unternehmen über das Wissen verfügt, noch bevor eine zeitkritische Änderung erforderlich ist.
 
 Wenn Sie zur Migration bereit sind, konfigurieren Sie einfach die YAML-Datei wie in den vorherigen Abschnitten beschrieben. Verwenden Sie die Cloud Manager-Konfigurations-Pipeline, um sie in jeder Umgebung bereitzustellen, in der die Konfiguration angewendet werden soll.
 
-Es wird empfohlen, aber nicht erforderlich, dass eine Konfiguration in allen Umgebungen bereitgestellt wird, sodass sie alle unter Selbstbedienungssteuerung stehen. Andernfalls können Sie vergessen, welche Umgebungen per Adobe konfiguriert wurden, anstatt diejenigen, die eigenständig konfiguriert wurden.
+Es wird empfohlen, aber nicht erforderlich, dass eine Konfiguration in allen Umgebungen bereitgestellt wird, sodass sie alle unter Selbstbedienungssteuerung stehen. Andernfalls können Sie vergessen, welche Umgebungen von Adobe konfiguriert wurden, im Vergleich zu den Umgebungen, die eigenständig konfiguriert wurden.
 
 >[!NOTE]
 >Die Werte des `sourcetype`, die an Ihren Splunk-Index gesendet werden, haben sich möglicherweise geändert. Passen Sie sie daher entsprechend an.
