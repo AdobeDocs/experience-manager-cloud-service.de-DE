@@ -5,7 +5,7 @@ landing-page-description: Erfahren Sie, wie Sie Headless in Adobe Experience Man
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
+source-git-commit: 920045ab4e79dc223706219bf64347649af14125
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 100%
@@ -22,8 +22,6 @@ Sie können eine ausführliche Dokumentation der verschiedenen Funktionen lesen 
 >[!NOTE]
 >
 >Siehe auch [Was ist Headless?](/help/headless/what-is-headless.md) für eine Einführung in Headless-Konzepte und -Terminologie.
-
-{{headless-trials-promotion}}
 
 ## Überblick {#overview}
 
