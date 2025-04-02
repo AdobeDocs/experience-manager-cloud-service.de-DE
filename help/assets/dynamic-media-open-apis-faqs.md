@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 description: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1600'
 ht-degree: 98%
 
 ---
@@ -136,6 +136,12 @@ Weitere Informationen finden Sie unter [Beschränken des Zugriffs auf Assets in 
 +++**Wie erhalten Sie Berechtigungen zum Bearbeiten des Genehmigungsstatus eines Assets?**
 
 Als DAM-Benutzerin oder -Benutzer verfügen Sie möglicherweise nicht über die Berechtigungen für das [Genehmigen von Assets](approve-assets.md#approve-assets). Um die Berechtigungen für das Bearbeiten des Genehmigungsstatus eines Assets zu erhalten, können Admins das standardmäßige oder jedes andere Metadatenschema bearbeiten, das auf den Asset-Ordner angewendet wird, um dem Feld **[!UICONTROL Überprüfungsstatus]** Bearbeitungsberechtigungen zu erteilen. Weitere Informationen finden Sie unter [Deaktivieren der Bearbeitung für das Feld „Überprüfungsstatus“](approve-assets.md#configuration).
+
++++
+
++++**Welche Dateigröße wird für Videos unterstützt?**
+
+Dynamic Media mit OpenAPI-Funktionen unterstützt Videos in langer Form. Die Videos unterstützen bis zu 50 GB und 2 Stunden.
 
 +++
 

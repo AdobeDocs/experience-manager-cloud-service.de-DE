@@ -3,10 +3,10 @@ title: Bereitstellungs-APIs
 description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 92%
+source-wordcount: '653'
+ht-degree: 94%
 
 ---
 
@@ -74,6 +74,8 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 | [Asset-Metadaten](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Gibt die mit einem Asset verknüpften Eigenschaften zurück, z. B. Titel, Beschreibung, Erstelldatum, Änderungsdatum usw. |
 | [Player-Container für das Video-Asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Gibt den Player-Container für das Video-Asset zurück. Sie können den Player in ein iFrame-HTML-Element einbetten und das Video abspielen. |
 | [Wiedergabe-Manifeste im ausgewählten Ausgabeformat](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Gibt die Wiedergabe-Manifestdatei für das angegebene Video-Asset im ausgewählten Ausgabeformat zurück. Sie müssen einen benutzerdefinierten Player erstellen, der adaptives Streaming über HLS- oder DASH-Protokolle ermöglicht, um die Wiedergabe-Manifestdatei abzurufen und das Video abzuspielen. |
+
+Dynamic Media mit OpenAPI-Funktionen unterstützt auch Videos in langer Form. Die Videos unterstützen bis zu 50 GB und 2 Stunden.
 
 Informationen zu den verfügbaren Dynamic Media-Angeboten und deren Funktionen finden Sie unter [Dynamic Media Prime und Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 

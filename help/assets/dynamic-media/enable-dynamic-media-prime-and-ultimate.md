@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie [!DNL Dynamic Media] Prime- und Ultimate-Ange
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Dieser Artikel enthält den kompletten Workflow zur Aktivierung der [!DNL Dynami
 
 ## Aktivieren von [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
-Führen Sie die folgenden Schritte in Ihrer Cloud Service-Umgebung aus, um [!DNL Dynamic Media] Ultimate zu aktivieren:
+So aktivieren Sie [!DNL Dynamic Media] Ultimate:
 
 1. [Aktivieren [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [Konfigurieren von [!DNL Dynamic Media] -Lösungen](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ Wenn das Erstellen des [!DNL Dynamic Media]-Unternehmens fehlschlägt, führen S
 
 1. Wenn „Ausstehend“ als **[!UICONTROL Status]** angegeben ist, wenden Sie sich zur Lösung des Problems an den Kunden-Support.
 
-   ![Status „Ausstehend“](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![Status „Ausstehend“](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. Wenn „Fehlgeschlagen“ als **[!UICONTROL Status]** angegeben ist, versuchen Sie es abhängig von der Fehlerursache erneut.
 
-   ![Status „Fehlgeschlagen“](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![Status „Fehlgeschlagen“](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### Optional: Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## Aktivieren von [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
-Führen Sie die folgenden Schritte in Ihrer Cloud Service-Umgebung aus, um [!DNL Dynamic Media] Prime zu aktivieren:
+So aktivieren Sie [!DNL Dynamic Media] Prime:
 
 1. [Aktivieren von Dynamic Media mit OpenAPI](#activate-dynamic-media-with-openapi)
 1. [Optional: Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene](#configure-custom-domain-in-delivery-tier)
