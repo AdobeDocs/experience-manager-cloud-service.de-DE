@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 100%
+source-wordcount: '2364'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden 
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
-* Die CDN-Protokollierung, die, wie ihr Name besagt, die Protokollierung im CDN durchführt. Diese Funktion wird Anfang September schrittweise für Kundinnen und Kunden eingeführt.
+* Die CDN-Protokollierung führt, wie der Name schon sagt, die Protokollierung im CDN durch.
 
 ## AEM-Protokollierung {#aem-logging}
 
