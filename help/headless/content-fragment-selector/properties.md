@@ -2,13 +2,13 @@
 title: Eigenschaften des Micro-Front-End-Inhaltsfragment-Selektors für Adobe Experience Manager as a Cloud Service
 description: Eigenschaften zum Konfigurieren des Micro-Front-End-Inhaltsfragment-Selektors zum Suchen, Suchen und Abrufen von Inhaltsfragmenten aus Ihrer Anwendung.
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 48%
 
 ---
-
 
 # Inhaltsfragment-Selektor - Verwandte Eigenschaften {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ Sie können die folgenden Eigenschaften verwenden, um anzupassen, wie der Inhalt
 | `filters` | FragmentFilter | Nein | | Für die Liste der Inhaltsfragmente anzuwendende Filter. Standardmäßig werden Fragmente unter `/content/dam` angezeigt. Standardwert: `{ folder: "/content/dam" }` |
 | `isOpen` | Boolesch | Ja | `false` | Trigger Markieren Sie, um den Selektor zu öffnen oder zu schließen. |
 | `onDismiss` | () => void | Ja | | Funktion, die aufgerufen werden soll, wenn **Verwerfen** ausgewählt ist. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Funktion, die aufgerufen wird, wenn **Auswählen** nach Auswahl eines oder mehrerer Inhaltsfragmente verwendet wird. <br><br>Die Funktion erhält:<br><ul><li> die ausgewählten Inhaltsfragmente mit `id` und `path` Feldern</li><li>und Domain-Namen, die mit der Programm-ID und der Umgebungs-ID des Repositorys verknüpft sind und den Status `ready` und die `tier` Veröffentlichung haben</li></ul><br>Wenn keine Domain-Namen vorhanden sind, wird die Veröffentlichungsinstanz als Fallback-Domain verwendet. |
-| `theme` | „Leicht“ | „Dunkel“ | Nein | | Design des Inhaltsfragment-Selektors. Das Standarddesign ist auf das Design der UnifiedShell-Umgebung festgelegt. |
-| `selectionType` | „single“ | „Mehrere“ | Nein | `single` | Auswahltyp, der verwendet werden kann, um die Auswahl für den Fragment-Selektor einzuschränken. |
-| `dialogSize` | „Vollbild“ | „fullscreenTakeover“ | Nein | `fullscreen` | Optionale Eigenschaft zum Steuern der Dialogfeldgröße. |
+| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Ja | | Funktion, die aufgerufen wird, wenn **Auswählen** nach Auswahl eines oder mehrerer Inhaltsfragmente verwendet wird. <br><br>Die Funktion erhält:<br><ul><li> die ausgewählten Inhaltsfragmente mit `id` und `path` Feldern</li><li>und Domain-Namen, die mit der Programm-ID und der Umgebungs-ID des Repositorys verknüpft sind und den Status `ready` und die `tier` Veröffentlichung haben</li></ul><br>Wenn keine Domain-Namen vorhanden sind, wird die Veröffentlichungsinstanz als Fallback-Domain verwendet. |
+| `theme` | „Hell“ oder „Dunkel“ | Nein | | Design des Inhaltsfragment-Selektors. Das Standarddesign ist auf das Design der UnifiedShell-Umgebung festgelegt. |
+| `selectionType` | „Einzel“ oder „Mehrere“ | Nein | `single` | Auswahltyp, der verwendet werden kann, um die Auswahl für den Fragment-Selektor einzuschränken. |
+| `dialogSize` | „fullscreen“ oder „fullscreenTakeover“ | Nein | `fullscreen` | Optionale Eigenschaft zum Steuern der Dialogfeldgröße. |
 | `waitForImsToken` | Boolesch | Nein | `false` | Gibt an, ob der Inhaltsfragmentselektor im Kontext des SUSI-Flusses gerendert wird und warten muss, bis der `imsToken` bereit ist. |
 | `imsAuthInfo` | IMS-AuthInfo | Nein | | Objekt, das die IMS-Authentifizierungsinformationen des angemeldeten Benutzers enthält |
 | `runningInUnifiedShell` | Boolesch | Nein | | Gibt an, ob der Inhaltsfragmentselektor unter UnifiedShell oder eigenständig ausgeführt wird. |
