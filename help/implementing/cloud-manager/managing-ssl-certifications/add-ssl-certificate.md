@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 100%
+source-wordcount: '1021'
+ht-degree: 97%
 
 ---
 
@@ -92,6 +92,10 @@ Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/cdn-co
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
 Benötigen Sie Hilfe, um sich für Ihre Domain zwischen einem von Adobe verwalteten SSL-Zertifikat (empfohlen) oder einem kundenseitig verwalteten SSL-Zertifikat zu entscheiden? Dann sollten Sie unter [Auswählen des hinzuzufügenden SSL-Zertifikats](#which-ssl-to-add) nachlesen.
+
+>[!IMPORTANT]
+>
+>Fügen Sie beim Hinzufügen oder Aktualisieren eines SSL-Zertifikats das neue Zertifikat nicht in die Zertifikatskette ein. Dadurch wird verhindert, dass der Upload erfolgreich abgeschlossen werden kann.
 
 **So fügen Sie ein kundenseitig verwaltetes SSL-Zertifikat (OV/EV) hinzu:**
 

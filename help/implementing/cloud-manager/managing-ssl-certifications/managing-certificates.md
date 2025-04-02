@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 100%
+source-wordcount: '1048'
+ht-degree: 97%
 
 ---
 
@@ -39,6 +39,10 @@ Die Seite **SSL-Zertifikate** zeigt den Status Ihrer SSL-Zertifikate.
 Wenn ein kundenseitig verwaltetes Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Durch das Aktualisieren Ihrer Zertifikate wird sichergestellt, dass Ihre Domain weiterhin wie gewünscht funktioniert.
 
 Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um diese Aufgabe abzuschließen.
+
+>[!IMPORTANT]
+>
+>Fügen Sie beim Hinzufügen oder Aktualisieren eines SSL-Zertifikats das neue Zertifikat nicht in die Zertifikatskette ein. Dadurch wird verhindert, dass der Upload erfolgreich abgeschlossen werden kann.
 
 **Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats:**
 
