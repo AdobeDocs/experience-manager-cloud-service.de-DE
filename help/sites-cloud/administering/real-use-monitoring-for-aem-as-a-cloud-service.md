@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Real Use Monitoring (RUM), einen automatisi
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
+source-git-commit: f3091a3868ac57150afd6f1640709ce3e9566bac
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 96%
+source-wordcount: '913'
+ht-degree: 95%
 
 ---
 
@@ -27,13 +27,7 @@ Der RUM(Real Use Monitoring)-Dienst ist eine Technologie zur Leistungsüberwachu
 
 ## Wer kann vom Real Use Monitoring-Dienst profitieren? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring hilft Kundinnen und Kunden sowie Adobe, zu verstehen, wie Endbenutzende mit AEM Sites interagieren. Real Use Monitoring diagnostiziert Leistungsprobleme und misst die Effektivität von Experimenten. Real Use Monitoring bewahrt die Privatsphäre der Besucherinnen und Besucher durch Stichproben. Nur ein kleiner Teil aller Seitenansichten wird überwacht, und dabei werden keine persönlich identifizierbaren Informationen (PII) erfasst.
-
-## Real Use Monitoring-Dienst und Datenschutz {#rum-service-and-privacy}
-
-Der Real Use Monitoring-Dienst in AEM bewahrt die Privatsphäre der Besucherinnen und Besucher und minimiert die Datenerfassung. Als Besucherin bzw. Besucher bedeutet dies für Sie, dass die Website, die Sie besuchen oder Adobe zur Verfügung gestellt haben, keine persönlichen Daten erfasst.
-
-Als Site-Operator bedeutet dies für Sie, dass kein zusätzliches Opt-in erforderlich ist, um die Überwachung durch diese Funktion zu aktivieren. Es gibt kein zusätzliches Popup oder Einverständnisformular, das von den Endbenutzenden für die Aktivierung von RUM akzeptiert werden muss.
+Real Use Monitoring hilft Kundinnen und Kunden sowie Adobe, zu verstehen, wie Endbenutzende mit AEM Sites interagieren. Bei der Überwachung der tatsächlichen Nutzung wird der Datenschutz der Besucher durch begrenzte Datenerfassung und Stichprobenerhebung gewahrt - nur ein kleiner Teil aller Seitenansichten wird überwacht.
 
 ## Daten-Sampling für den Real Use Monitoring-Dienst {#rum-service-data-sampling}
 
@@ -43,7 +37,7 @@ Da die Entscheidung darüber, ob die Daten erfasst werden, jeweils für jede ein
 
 ## Welche Daten werden erfasst? {#what-data-is-being-collected}
 
-Der Real Use Monitoring-Dienst wurde so konzipiert, dass das Sammeln von persönlich identifizierbaren Informationen verhindert wird. Die vollständigen Informationen, die vom RUM erfasst werden, finden Sie im Folgenden:
+Der Real Use Monitoring -Service wurde entwickelt, um die Datenerfassung zu minimieren. Die vollständigen Informationen, die vom RUM erfasst werden, finden Sie im Folgenden:
 
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`
@@ -55,7 +49,7 @@ Der Real Use Monitoring-Dienst wurde so konzipiert, dass das Sammeln von persön
 * Der Checkpoint oder Name eines bestimmten Ereignisses in der Abfolge des Ladens der Seite. Oder die Interaktion mit ihr als Besucherin bzw. Besucher.
 * Die Quelle oder die Kennung des DOM-Elements, mit dem die Person für den oben genannten Checkpoint interagiert. Dies kann beispielsweise ein Bild sein
 * Die Zielgruppe oder der Link zu einer externen Seite oder Ressource, mit der die Person für den oben genannten Checkpoint interagiert. Beispiel: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* Die [Core Web Vitals (CWV)](https://web.dev/articles/lcp) Leistungsmetriken [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [Interaction to Next Paint (INP)](https://web.dev/articles/inp) und [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), die die Erlebnisqualität des Besuchers beschreiben.
+* Die Leistungsmetriken [Core Web Vitals (CWV)](https://web.dev/articles/lcp), [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [First Input Delay (FID)](https://web.dev/articles/inp) und [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), die die Erlebnisqualität der Besucherin bzw. des Besuchers beschreiben.
 
 ## Funktionsweise von Real Use Monitoring für Kundinnen und Kunden {#how-rum-works-for-a-customer}
 
@@ -105,7 +99,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Die RUM-Bibliothek und die RUM-Erfassung zählen nicht als Inhaltsanfragen und erhöhen nicht die gemeldete Anzahl von Seitenansichten oder API-Aufrufen. Darüber hinaus bildet für Kundinnen und Kunden, die das vordefinierte CDN mit AEM as a Cloud Service verwenden, die [Server-seitige Erfassung](#serverside-collection) die Grundlage für Inhaltsanfragen.
 
-1. **Wie kann ich mich abmelden?**
+1. **Wie kann ich RUM deaktivieren?**
 
    Adobe empfiehlt die Verwendung des Real Use Monitoring (RUM) aufgrund seiner wesentlichen Vorteile und weil es Adobe ermöglicht, Ihre digitalen Erlebnisse zu optimieren, indem die Website-Leistung verbessert wird. Der Dienst ist nahtlos konzipiert und hat keine Auswirkungen auf die Leistung Ihrer Website.
 
