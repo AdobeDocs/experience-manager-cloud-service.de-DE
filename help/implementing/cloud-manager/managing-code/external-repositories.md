@@ -7,7 +7,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: e18368b1f16033790c91038d746c96d04a05ba21
 workflow-type: tm+mt
 source-wordcount: '1928'
-ht-degree: 71%
+ht-degree: 74%
 
 ---
 
@@ -137,7 +137,7 @@ Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis 
 1. Klicken Sie auf **Schließen**.
 1. Navigieren Sie zu Ihrer Git-Anbieterlösung (GitHub Enterprise, GitLab oder Bitbucket).
 
-   Alle Details zur Webhook-Konfiguration und die für jeden Anbieter erforderlichen Ereignisse finden Sie unter „Hinzufügen [ externen Repositorys](#add-ext-repo). Beachten Sie unter Schritt 8 die Tabelle.
+   Alle Details zur Webhook-Konfiguration und den für jeden Anbieter erforderlichen Ereignissen finden Sie unter [Hinzufügen eines externen Repositorys](#add-ext-repo). Sehen Sie sich die Tabelle unter Schritt 8 an.
 
 1. Gehen Sie in der Lösung zum Abschnitt mit den **Webhook**-Einstellungen.
 1. Fügen Sie die zuvor kopierte Webhook-URL in das URL-Textfeld ein.

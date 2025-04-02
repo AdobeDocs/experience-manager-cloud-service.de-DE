@@ -92,7 +92,7 @@ ht-degree: 99%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
-         + [Wartungversionshinweise für 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
+         + [Neueste Wartungversionshinweise für 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
          + [Wartungversionshinweise für 2025.2.0](/help/release-notes/maintenance/2025/2025-2-0.md)
          + [Wartungversionshinweise für 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
@@ -116,7 +116,7 @@ ht-degree: 99%
          + [Neueste Wartungversionshinweise für 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [Neueste Wartungversionshinweise für 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [Neueste Wartungversionshinweise für 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Cloud Manager - Versionshinweise {#cloud-manager}
+   + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -144,7 +144,7 @@ ht-degree: 99%
          + [2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [,3,0 ](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -1048,7 +1048,7 @@ ht-degree: 99%
          + [Schützen Ihrer Formulare vor Spam: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Veröffentlichen und Bereitstellen von Formularen: Veröffentlichungshandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Integration des Formulardatenmodells: Integrieren von Forms mit dem Formulardatenmodell](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Integration eines Formulardatenmodells: Integrieren von Formularen mit dem Formulardatenmodell](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [Wiederverwendbare, modulare und eigenständige Segmente: Erstellen und Verwenden von Formularfragmenten in Formularen](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
@@ -1394,7 +1394,7 @@ ht-degree: 99%
          + [Internationalisierung von UI-Zeichenfolgen](/help/implementing/developing/extending/i18n/dev.md)
          + [Verwalten von Wörterbüchern mithilfe des Übersetzers](/help/implementing/developing/extending/i18n/translator.md)
          + [Extrahieren von Zeichenfolgen zur Übersetzung](/help/implementing/developing/extending/i18n/extract.md)
-      + [Erweiterungen und die Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+      + [Erweiterungen und der Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + Bereitstellen für AEM as a Cloud Service {#deploying}
       + [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)

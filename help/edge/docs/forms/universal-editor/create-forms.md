@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 67%
+ht-degree: 83%
 
 ---
 
@@ -53,12 +53,12 @@ Mit dem universellen Editor können Sie responsive und interaktive, eigenständi
    ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
 
 
-   Wenn Sie eine Edge Delivery Services-basierte Vorlage auswählen, ist **[!UICONTROL Schaltfläche]** aktiviert.
-1. Source (Optional) Auf den Registerkarten **[!UICONTROL Daten]** oder **[!UICONTROL Übermittlung]** können Sie eine Datenquelle oder eine Übermittlungsaktion auswählen.
+   Wenn Sie eine auf Edge Delivery Services basierende Vorlage auswählen, ist die Schaltfläche **[!UICONTROL Erstellen]** aktiviert.
+1. (Optional) Auf der Registerkarte **[!UICONTROL Datenquelle]** oder **[!UICONTROL Übermittlung]** können Sie eine Datenquelle oder eine Übermittlungsaktion auswählen.
 1. (Optional) Auf der Registerkarte **[!UICONTROL Versand]** können Sie ein Datum für die Veröffentlichung oder das Rückgängigmachen der Veröffentlichung eines Formulars angeben.
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Daraufhin wird der Assistent **Formular erstellen** angezeigt.
-1. Geben Sie die **Name** und **Title** an.
+1. Geben Sie den **Namen** und den **Titel** an.
 1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
    `https://github.com/wkndforms/edsforms`
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
@@ -147,7 +147,7 @@ Die URL-Struktur bleibt für Staging- und Live-Versionen gleich. Der angezeigte 
 
 ### Formular verwalten
 
-Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit einem Formular durchführen.
+Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für das Formular ausführen.
 
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
 1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
@@ -162,26 +162,26 @@ Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit ei
   </tr>
   <tr>
    <td><p>Bearbeiten</p> </td>
-   <td><p>Öffnet das Formular im Bearbeitungsmodus.<br /> <br /> </p> </td>
+   <td><p>Öffnen Sie das Formular im Bearbeitungsmodus.<br /> <br /> </p> </td>
   </tr>
     <tr>
    <td><p>Eigenschaften</p> </td>
    <td><p>Bietet Optionen zum Ändern der Eigenschaften des Formulars.<br /> <br /> </p> </td>
   </tr>
   <td><p>Kopieren</p> </td>
-   <td><p> Bietet Optionen zum Kopieren des Formulars und Einfügen an der gewünschten Position. <br /> <br /> </p> </td>
+   <td><p> Bietet Optionen, um das Formular zu kopieren und an der gewünschten Position einzufügen. <br /> <br /> </p> </td>
   </tr>
    <tr>
    <td><p>Vorschau</p> </td>
-   <td><p>Bietet Optionen zum Anzeigen einer Vorschau des Formulars als HTML oder zum Ausführen einer benutzerdefinierten Vorschau, indem Daten aus einer XML-Datei mit dem Formular zusammengeführt werden. <br /> </p> </td>
+   <td><p>Bietet Optionen zum Anzeigen einer HTML-Vorschau des Formulars oder für eine benutzerdefinierte Vorschau des Formulars durch Zusammenführen von Daten aus einer XML-Datei und dem Formular.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>Herunterladen</p> </td>
-   <td><p>Lädt das ausgewählte Formular herunter.<br /> <br /> </p> </td>
+   <td><p>Lädt das ausgewählte Formular herunter.<br /><br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Review starten/verwalten</p> </td>
-   <td><p>Initiieren und Verwalten einer Überprüfung des ausgewählten Formulars.<br /> <br /> </p> </td>
+   <td><p>Überprüfung starten/Überprüfung verwalten</p> </td>
+   <td><p>Ermöglicht das Initiieren und Verwalten einer Überprüfung des ausgewählten Formulars.<br /> <br /> </p> </td>
   </tr>
   <!--<tr>
    <td><p>Add Dictionary</p> </td>
@@ -189,7 +189,7 @@ Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit ei
   </tr>-->
   <tr>
    <td><p>Veröffentlichen/Veröffentlichung rückgängig machen</p> </td>
-   <td><p>Veröffentlicht das ausgewählte Formular bzw. hebt die Veröffentlichung auf<br /> <br /> </p> </td>
+   <td><p>Veröffentlicht das ausgewählte Formular bzw. hebt die Veröffentlichung auf.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Löschen</p> </td>
