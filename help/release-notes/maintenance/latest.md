@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
+source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1501'
 ht-degree: 21%
 
 ---
@@ -25,7 +25,7 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 ### Verbesserungen {#enhancements-20133}
 
 * ASSETS-47850: Hinzufügen von Scene7-Konfigurationen beschränken, wenn AEM CS ES aktiviert ist.
-* CQ-4359547: Vollständige Entfernung von Guava aus dem Repository https://git.corp.adobe.com/target-sdk/tsdk-core.
+* CQ-4359547: Vollständiges Entfernen von Guava aus dem Git-Repository.
 * FORMS-17551: Es wurde Unterstützung für Datensatzdokumente (DoR) für SharePoint-Listenintegrationen hinzugefügt.
 * FORMS-18432: Es wurde eine formularspezifische (Regex-basierte) Client-seitige Vorbefüllungskonfiguration implementiert, um eine selektive Vorbefüllungsfunktion ohne Änderungen auf OSGi-Ebene zu ermöglichen.
 * FORMS-18513: Es wurde Unterstützung für die Umwandlung von Datenbäumen in AEP Connector implementiert, um die Assistentenfunktionen und Datenverarbeitungsfunktionen zu erweitern.
@@ -57,16 +57,16 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 * SITES-28549: Erstellen Sie `/cf/domains`, um die Domain-ID basierend auf der AEM-Ebene zurückzugeben.
 * SITES-29026: Es wurde ein optionaler Parameter hinzugefügt, der das Gebietsschema des Inhaltsfragments angibt, wobei eine Sprache und ein Länder-Code verwendet werden.
 * SITES-29031: Verbesserte Logik für PATCH-ING-Fragmente und damit höhere Leistung.
-* SITES-29169: Alle veröffentlichten Ressourcen (unabhängig davon, ob sie sich im Status VERÖFFENTLICHT oder GEÄNDERT befinden) werden erneut veröffentlicht, wenn sie auf eine Ressource verweisen, die verschoben, umbenannt oder gelöscht wurde.
+* SITES-29169: Ressourcen mit dem Status VERÖFFENTLICHT werden erneut veröffentlicht, wenn sie auf eine Ressource verweisen, die verschoben, umbenannt oder gelöscht wurde.
 * SITES-29376: Umschalter „Code hinzufügen“ zur Validierung des Löschens veröffentlichter Ressourcen.
-* SITES-29417: Aktualisieren Sie /libs/cq/Page/proxy.jsp , um die Anfrage an den jcr:content-Knoten weiterzuleiten, anstatt Folgendes einzuschließen.
+* SITES-29417: Aktualisieren Sie `/libs/cq/Page/proxy.jsp`, um die Anfrage an den jcr:content-Knoten weiterzuleiten, anstatt Folgendes einzuschließen.
 * SITES-2947: Erstellen/ändern Sie die Kibana-Visualisierung, um Veröffentlichungsraps zu vergleichen.
 * SITES-29733: Erhöhte Leistung der Modellsuche durch Tags von Inhaltsfragmenten.
 * SITES-8316: Inhaltsrichtlinien: Speichern Sie den ContentPolicyManager zwischen.
-* SITES-24906: Edge Delivery mit universellem Editor: Unterstützen von durch Autoren erstellten Tabellen ohne Zuordnung (früher Zugriff)
-* SITES-24907: Edge Delivery mit universellem Editor: Unterstützung der Veröffentlichung von Assets auf mehreren Sites für MSM-Anwendungsfälle (früher Zugriff)
-* SITES-27956: Edge Delivery mit universellem Editor: Verbesserung des Veröffentlichungsdurchsatzes (frühzeitiger Zugriff)
-* SITES-27956: Edge Delivery mit universellem Editor: Verbessern der Fehlerbehandlung bei der Veröffentlichung in Edge Delivery Services (frühzeitiger Zugriff)
+* SITES-24906: Edge Delivery mit universellem Editor: Unterstützen von durch Autoren erstellten Tabellen ohne Zuordnung (früher Zugriff).
+* SITES-24907: Edge Delivery mit universellem Editor: Unterstützt die Veröffentlichung von Assets auf mehreren Sites für MSM-Anwendungsfälle (früher Zugriff).
+* SITES-27956: Edge Delivery mit universellem Editor: Verbessern des Veröffentlichungsdurchsatzes (frühzeitiger Zugriff).
+* SITES-27956: Edge Delivery mit universellem Editor: Verbessern der Fehlerbehandlung für die Veröffentlichung in Edge Delivery Services (früher Zugriff).
 
 ### Behobene Probleme {#fixed-issues-20133}
 
