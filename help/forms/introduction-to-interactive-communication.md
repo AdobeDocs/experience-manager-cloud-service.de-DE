@@ -3,63 +3,63 @@ title: Einführung in die interaktive Kommunikation
 description: Entwickeln Sie mit AEM Forms Interactive Communications auf einfache Weise dynamische, datengesteuerte Kommunikationen
 feature: Release Information
 role: Admin
-exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
+hide: true
+hidefromtoc: true
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '440'
 ht-degree: 3%
 
 ---
+
 
 # Interaktive Kommunikationen
 
 Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Anordnung und Bereitstellung datengesteuerter interaktiver Korrespondenzen wie Geschäftskorrespondenz, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-E-Mails, Rechnungen und Begrüßungspakete.
 
-Sie können unser intuitives grafisches Design-Tool (interaktiver Kommunikations-Editor) verwenden, um Korrespondenzen und Geschäftsdokumente für den Druck, das Web oder die Archivierung zu generieren. Sie können den Editor verwenden, um Korrespondenzen zu entwerfen, sie mit einer Datenquelle zu verbinden, ihre Logik zu definieren und sie zu ändern, sodass sie ihren Papiergegenständen entsprechen oder strengen gesetzlichen Anforderungen entsprechen.
+Sie können unser intuitives grafisches Design-Tool (interaktiver Kommunikations-Editor) verwenden, um Korrespondenzen und Geschäftsdokumente für den Druck, das Web oder die Archivierung zu generieren. Sie können den Editor verwenden, um Korrespondenzen zu entwerfen, sie mit einer Datenquelle zu verbinden, ihre Logik zu definieren und sie zu ändern, sodass sie ihren Papiergegenständen entsprechen oder strengen gesetzlichen Anforderungen entsprechen. Der Editor wird in der Cloud ausgeführt. Sie können ihn verwenden, ohne sich Gedanken über die Installation oder Aktualisierung auf die neueste Version machen zu müssen.
 
-Von Finanzinstituten, die Kontoauszüge generieren, bis hin zu Regierungsbehörden, die Mitteilungen über finanzielle Leistungen optimieren, ist Interactive Communications das erste Tool zur Erstellung von hochwertiger, sicherer und gesetzeskonformer Korrespondenz mit Leichtigkeit und Effizienz.
-
-
-<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
-
- ![Interactive Communication Editor](/help/assets/ic-editor.png)
-
--->
+Im Gegensatz zu AEM Forms Desktop Designer, das nur auf Windows-Computern installiert werden kann **wird der Editor für interaktive Kommunikation in jedem modernen Browser ausgeführt, ohne dass eine Installation erforderlich ist**. Dieser Cloud-basierte Ansatz beseitigt Installationsprobleme, bietet plattformübergreifende Barrierefreiheit und ermöglicht die Zusammenarbeit von einem beliebigen Standort aus mit Internetzugang.
 
 ![Editor für interaktive Kommunikationen](/help/forms/assets/ic-editor.png)
+
+Von Finanzinstituten, die Kontoauszüge generieren, bis hin zu Regierungsbehörden, die Mitteilungen über finanzielle Leistungen optimieren: Interaktive Kommunikation ist das Werkzeug, um hochwertige, sichere und gesetzeskonforme Korrespondenz mit Leichtigkeit und Effizienz zu erstellen.
 
 
 ## Kernfunktionen
 
 Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 
-| Funktion | Beschreibung |
-|------------|-------------|
-| **Benutzerfreundliches Design** | Intuitive Point-and-Click-Oberfläche, die nur minimale technische Kenntnisse erfordert |
-| **Datenintegration** | Verbindung zu Schemas, Datenbanken und Web-Services für die Generierung dynamischer Inhalte herstellen |
-| **Multi-Channel-Design** | Einheitliche Erlebnisse für Print- und digitale Formate bei Einhaltung behördlicher Auflagen erstellen |
-| **Dynamische Inhalte** | Generieren personalisierter Inhalte mithilfe von Business-Logik und Datenbindung |
-| **Formatflexibilität** | Ausgabe in die Formate PDF, HTML, PCL, PostScript® und ZPL |
-| **Sprachunterstützung** | Erstellen von Kommunikation in mehreren Sprachen mit Unterstützung benutzerdefinierter Schriftarten |
-| **Rich Media** | Nahtlose Integration von Text, Bildern und interaktiven Elementen |
-| **Versionskontrolle** | Änderungen verfolgen und Dokumentenverlauf verwalten |
-| **Vorlagenunterstützung** | Von Grund auf neu erstellen oder Vorlagen für eine effiziente Dokumenterstellung verwenden |
-| **Cloud-Integration** | Dokumente direkt in AEM Forms as a Cloud Service bearbeiten |
-
+| Funktion | Beschreibung | Verfügbarkeit |
+|------------|-------------|--------------|
+| Benutzerfreundliches Design | Intuitive Point-and-Click-Oberfläche, die nur minimale technische Kenntnisse erfordert | ✅ verfügbar |
+| -Datenintegration | Verbindung zu Schemas, Datenbanken und Web-Services für die Generierung dynamischer Inhalte herstellen | ✅ verfügbar |
+| Rich Media | Nahtlose Integration von Text, Bildern und interaktiven Elementen | ✅ verfügbar |
+| Versionskontrolle | Änderungen verfolgen und Dokumentenverlauf verwalten | ✅ verfügbar |
+| Vorlagenunterstützung | Von Grund auf neu erstellen oder Vorlagen für eine effiziente Dokumenterstellung verwenden | ✅ verfügbar |
+| Cloud-Integration | Dokumente direkt in AEM Forms as a Cloud Service bearbeiten | ✅ verfügbar |
+| Dokumentfragmente | Wiederverwendung modularer Inhaltsbausteine für mehrere Dokumente, um Konsistenz und Effizienz zu gewährleisten | ✅ verfügbar |
+| Inline-Datenbindung | Binden von Daten direkt in Inhalten für Echtzeit-Personalisierung ohne externe Konfigurationen | ✅ verfügbar |
+| Mehrere Komponenten | Verwenden verschiedener Komponenten zum Erstellen komplexer und ansprechender Dokumente | ✅ verfügbar |
+| Multi-Channel-Design | Einheitliche Erlebnisse für Print- und digitale Formate bei Einhaltung behördlicher Auflagen erstellen | ?? Teilweise verfügbar |
+| Dynamische Inhalte | Generieren personalisierter Inhalte mithilfe von Business-Logik und Datenbindung | ?? Teilweise verfügbar |
+| Formatflexibilität | Ausgabe in die Formate PDF, HTML PostScript, PCL, ®️ und ZPL | ?? Teilweise verfügbar |
+| Sprachunterstützung | Erstellen von Kommunikation in mehreren Sprachen mit Unterstützung benutzerdefinierter Schriftarten | ⏳ in Kürze verfügbar |
 
 ## Onboarding
 
-Der Editor für interaktive Kommunikation, der unter Early Access-Programm für Forms as a Cloud Service-Bereitstellungen verfügbar ist. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern. Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
+Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
 
-
-## Weiter
-
-* Erste Korrespondenz erstellen
-* Häufig gestellte Fragen
+Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
 
 <!-- 
+
+## Next
+
+* Create your first correspondence
+* Frequently asked issues
+
+
 * Familiarize yourself with terminology and concepts
 * Walkthrough of interactive communications editor
 * Create a fragment
