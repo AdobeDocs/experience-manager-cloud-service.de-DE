@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produk
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
+source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 100%
+source-wordcount: '2062'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service ist ein vollständig Cloud-natives Angebot, das AEM als S
 
 >[!NOTE]
 >
-> Einige der in diesem Artikel beschriebenen Produktinstanzen und Produktprofile werden möglicherweise nur für neu erstellte Umgebungen angezeigt. Ein zukünftiger Mechanismus wird auch die Aktualisierung bestehender Umgebungen ermöglichen.
+> Einige der in diesem Artikel beschriebenen Produktinstanzen und Produktprofile werden möglicherweise nur für neu erstellte Umgebungen angezeigt. Informationen [ Modernisierung Ihrer Umgebungen finden Sie ](#adding-product-profiles-for-existing-environments) Abschnitt „Hinzufügen von Produktprofilen für bestehende Umgebungen“.
 
 Wenn Adobe die Lizenzierung einer AEM-Lösung zum ersten Mal verarbeitet, werden in der Adobe Admin Console unter dem Adobe Experience Manager as a Cloud Service-Produkt zwei Produktinstanzen angezeigt:
 
@@ -278,7 +278,7 @@ Die folgende Abbildung zeigt die AEM-Gruppen, die das Produktprofil „AEM Sites
 
 ### Hinzufügen von Produktprofilen für bestehende Umgebungen {#adding-product-profiles-for-existing-environments}
 
-In Umgebungen, die vor Anfang November 2024 erstellt wurden, fehlt möglicherweise die in den obigen Abschnitten beschriebene Produktinstanz auf Organisationsebene sowie bestimmte Produktprofile. Bei bestehenden Produktprofilen fehlen auch die Service-Umschalter. Es wird empfohlen, diese Produktprofile zu aktualisieren. Dies ist eine Voraussetzung für den Zugriff auf einige zukünftige APIs.
+In Umgebungen, die vor Anfang April 2024 erstellt wurden, fehlen möglicherweise die in den obigen Abschnitten beschriebene Produktinstanz auf Organisationsebene sowie bestimmte Produktprofile. Bei bestehenden Produktprofilen fehlen auch die Service-Umschalter. Es wird empfohlen, diese Produktprofile zu aktualisieren. Dies ist eine Voraussetzung für den Zugriff auf einige zukünftige APIs.
 
 Wenn für eine oder mehrere Umgebungen in einem Programm die Produktprofile aktualisiert werden müssen, wird in Cloud Manager der nachstehende Hinweis angezeigt. Beachten Sie, dass eine Umgebung auf der neuesten AEM-Version basieren muss, bevor ihre Produktprofile aktualisiert werden können.
 
