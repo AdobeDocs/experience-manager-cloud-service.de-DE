@@ -3,10 +3,10 @@ title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: Verwenden Sie Funktionen zum Anpassen des Asset-Wählers in Ihrer Anwendung.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 97%
+source-wordcount: '1293'
+ht-degree: 99%
 
 ---
 
@@ -57,6 +57,7 @@ Mit dem Asset-Wähler können Sie verschiedene Komponenten entsprechend Präfere
 * [Auswahl von Assets](#selection-of-assets)
 * [Anpassen abgelaufener Assets](#customize-expired-assets)
 * [Kontextaufruffilter](#contextual-invocation-filter)
+* [dragOptions-Eigenschaft](#drag-options-property)
 
 Sie müssen die Voraussetzungen in der Datei **index.html** oder in einer ähnlichen Datei innerhalb Ihrer Anwendungsimplementierung definieren, um die Authentifizierungsdetails für den Zugriff auf das [!DNL Experience Manager Assets]-Repository festzulegen. Danach können Sie Code-Fragmente gemäß Ihren Anforderungen hinzufügen.
 
@@ -641,6 +642,18 @@ const ControlledUploadExample = () => {
         </Flex>
     )
 }
+```
+
+### dragOptions-Eigenschaft {#drag-options-property}
+
+```
+dragOptions: {
+            allowList: {
+                '*': true,          // allow all types to be dragged
+                'folder': false,    // except those explicitly set to disallow
+                'image/jpeg': false // or those with specific mimeTypes
+            },
+         }
 ```
 
 >[!MORELIKETHIS]

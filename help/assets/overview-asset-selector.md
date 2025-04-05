@@ -3,10 +3,10 @@ title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellungen von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1427'
+ht-degree: 94%
 
 ---
 
@@ -81,7 +81,11 @@ Der Asset-Selektor bietet viele Vorteile, z. B.:
 
 Sie müssen die folgenden Kommunikationsmethoden sicherstellen:
 
-* Die Anwendung wird unter HTTPS ausgeführt.
+* Die Hostanwendung wird auf HTTPS ausgeführt.
+* Sie können die Anwendung nicht auf `localhost` ausführen. Wenn Sie den Asset-Wähler auf Ihrem lokalen Computer integrieren möchten, müssen Sie eine benutzerdefinierte Domain erstellen, z. B. `[https://<your_campany>.localhost.com:<port_number>]`, und diese benutzerdefinierte Domain dem `redirectUrl list` hinzufügen.
+* Sie können `ADOBE_PROVIDED_CLIENT_ID` konfigurieren und zur AEM Cloud Service-Umgebungsvariablen mit den entsprechenden `imsClientId` hinzufügen.
+  ![Asset-Wähler IMS-Client-ID-Umgebung](assets/asset-selector-ims-client-id-env.png)
+* Die Liste der IMS-Bereiche muss in der Umgebungskonfiguration definiert werden.
 * Die URL der Anwendung befindet sich in der Zulassungsliste der Umleitungs-URLs des IMS-Clients.
 * Der IMS-Anmeldefluss wird mithilfe eines Popup-Fensters im Webbrowser konfiguriert und gerendert. Daher sollten Popup-Fenster im Ziel-Browser aktiviert oder zugelassen werden.
 
@@ -91,7 +95,7 @@ Die oben genannten Voraussetzungen müssen erfüllt sein, wenn Sie einen IMS-Aut
 
 * [Integrieren des Asset-Wählers in eine Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrieren des Asset-Wählers in eine Adobe-fremde Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integrieren des Asset-Wählers in Dynamic Media-OpenAPIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Asset-Wähler in Dynamic Media integrieren - offene APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
@@ -197,9 +201,6 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
 * ![Rasteransicht](assets/do-not-localize/grid-view.png) [!UICONTROL **Rasteransicht**]: Die Rasteransicht zeigt scrollbare Dateien und Ordner in einem Raster aus Zeilen und Spalten an.
 * ![Galerieansicht](assets/do-not-localize/gallery-view.png) [!UICONTROL **Galerieansicht**]: Die Galerie-Ansicht zeigt Dateien oder Ordner in einer zentrierten, horizontalen Liste an.
 * ![Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Wasserfallansicht**]: Die Wasserfallansicht zeigt Dateien oder Ordner in Form einer Brücke an.
-
-**Übersichtsgrafik**
-
 
 ## Weitere Informationen zu wichtigen Funktionen {#key-capabilities-asset-selector}
 
