@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: deab7ac707527e62f7a0fa3581080171e499cd32
+source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2273'
 ht-degree: 72%
 
 ---
@@ -51,12 +51,11 @@ ht-degree: 72%
     </tr>
 </table>
 
-<!--
-| Version | Article link |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en)                  |
-| AEM as a Cloud Service     | This article         |
--->
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
+
 Der [!DNL Adobe Stock]-Service bietet Designern und Unternehmen Zugang zu Millionen von hochwertigen, kuratierten und gebührenfreien Fotos, Vektorgrafiken, Illustrationen, Videos, Vorlagen und 3D-Assets für sämtliche Kreativprojekte. 
 
 Das Angebot von [!DNL Adobe Stock] für Unternehmen umfasst standardmäßig Freigabeberechtigungen innerhalb der Organisation. Nachdem ein Asset von einem Benutzer Ihrer Organisation lizenziert wurde, können andere Benutzer Ihrer Organisation dieses Asset identifizieren, herunterladen und verwenden, ohne es erneut lizenzieren zu müssen. Sobald ein Asset von Ihrer Organisation lizenziert wurde, ist das Recht zur Verwendung dieses Assets dauerhaft.
