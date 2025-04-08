@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 77%
 
 ---
@@ -87,7 +87,7 @@ Bevor eine benutzerdefinierte Domain Traffic bereitstellen kann, müssen Sie die
    | Option | Schritte |
    | --- | --- |
    | A-EINTRAG konfigurieren | Empfohlen für Stammdomänen wie `example.com`<br><ol><li>Melden Sie sich beim Portal Ihres DNS-Dienstanbieters an.<li>Navigieren Sie zum Abschnitt DNS-Einträge .<li>Erstellen Sie einen A-Eintrag, um auf alle aufgelisteten IP-Adressen zu verweisen.</li></ol> |
-   | CNAME konfigurieren | Empfohlen für benutzerdefinierte Domains wie `www.example.com`<br><ol><li>Melden Sie sich beim Portal Ihres DMS-Dienstanbieters an.<li>Navigieren Sie zum Abschnitt DNS-Einträge .<li>Ordnen Sie [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (CNAME-Eintrag) dem DNS-Eintrag des DNS-Dienstanbieters (Ihre benutzerdefinierte Domain) zu. Diese Zuordnung stellt sicher, dass in der benutzerdefinierten Domain empfangene Anfragen an das CDN von Adobe weitergeleitet werden.</li></ol> |
+   | CNAME konfigurieren | Empfohlen für benutzerdefinierte Domains wie `www.example.com`<br><ol><li>Melden Sie sich beim Portal Ihres DMS-Dienstanbieters an.<li>Navigieren Sie zum Abschnitt DNS-Einträge .<li>Ordnen Sie `cdn.adobeaemcloud.com` (CNAME-Eintrag) dem DNS-Eintrag des DNS-Dienstanbieters (Ihrer benutzerdefinierten Domain) zu. Diese Zuordnung stellt sicher, dass in der benutzerdefinierten Domain empfangene Anfragen an das CDN von Adobe weitergeleitet werden.</li></ol> |
 
 1. Klicken Sie **Dialogfeld** Go-Live-Bereitschaft **auf OK**, um den Datensatz zu speichern.
 
