@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Dynamic Media Prime und Ultimate, ihre Vort
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
 source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
 ht-degree: 100%
 
