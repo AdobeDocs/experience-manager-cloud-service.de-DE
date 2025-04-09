@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
+source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 21%
+source-wordcount: '1577'
+ht-degree: 20%
 
 ---
 
@@ -67,6 +67,10 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 * SITES-24907: Edge Delivery mit universellem Editor: Unterstützt die Veröffentlichung von Assets auf mehreren Sites für MSM-Anwendungsfälle (früher Zugriff).
 * SITES-27956: Edge Delivery mit universellem Editor: Verbessern des Veröffentlichungsdurchsatzes (frühzeitiger Zugriff).
 * SITES-27956: Edge Delivery mit universellem Editor: Verbessern der Fehlerbehandlung für die Veröffentlichung in Edge Delivery Services (früher Zugriff).
+* SITES-29602: CIF: Entfernung der Guava-Nutzung im core-cif-components-core.
+* SITES-25785: CIF: Hinzufügen der Auswahl von Produktvarianten für den CIF-Produktverweis-Datentyp.
+* SITES-26392: CIF[Experimental]: JSON+LD in CIF-Kernkomponenten in PDPs.
+* SITES-21278: CIF[Experimental]: Möglichkeit von CIF, den Cache zu löschen.
 
 ### Behobene Probleme {#fixed-issues-20133}
 
@@ -111,6 +115,9 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 * SITES-29363: Die Schaltfläche „Live Copy zurücksetzen“ funktioniert nicht für verschachtelte Live Copy-Inhaltshierarchie.
 * SITES-29369: Assets-Ereignisproblem in der Organisation der Luft- und Raumfahrtindustrien | Falsches Auslösen von Ereignissen des Typs „Veröffentlichung/Rückgängigmachung der Veröffentlichung“.
 * SITES-29972: Löschen und Umbenennen von Aktionen führen manchmal zu unwahren Workflow-Kommentaren.
+* SITES-24631: CIF: Problem im Produktfeld suchen.
+* SITES-24902: CIF: Produkt-URL-Format funktioniert für #variant_sku nicht wie erwartet.
+* SITES-29191: CIF: Es können nicht mehr als 20 SKUs zur Produktlistenkomponente hinzugefügt werden.
 
 ### Bekannte Probleme {#known-issues-20133}
 
