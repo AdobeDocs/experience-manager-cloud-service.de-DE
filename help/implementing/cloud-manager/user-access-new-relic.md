@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
+source-git-commit: 3323da83584c4511b15145c0106031df4597891c
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 91%
+source-wordcount: '1833'
+ht-degree: 99%
 
 ---
 
@@ -174,12 +174,12 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu New Relic One:
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Eingeschränkt** auf. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
-* AEM as a Cloud Service bietet nur die **New Relic One APM**-Lösung und bietet keine Unterstützung für Infrastrukturüberwachung, Warnhinweise, Protokollierung oder API-Integrationen.
+* New Relic hinzugefügte Benutzer sind vom Typ **Einfach**. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
 >
->Wenn in Ihrem New Relic One **Unterkonto seit 30 Tagen oder länger keine Aktivität vom Typ „Benutzeranmeldung** erkannt wird, wird der APM-Agent gestoppt und es werden keine Daten vom AEM Cloud Service an New Relic gesendet.  **Daten werden erst dann erneut gesendet, wenn Ihr Unterkonto wieder aktiviert wurde.**
+>Wenn in Ihrem New Relic One-Unterkonto seit 30 Tagen oder länger keine Aktivität vom Typ **Benutzeranmeldung** erkannt wird, wird der APM-Agent gestoppt und es werden keine Daten vom AEM Cloud Service an New Relic gesendet.  **Daten werden erst dann erneut gesendet, wenn Ihr Unterkonto wieder aktiviert wurde.**
 >
 >Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
 
@@ -191,7 +191,7 @@ Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für I
 
 Über das Java-Plug-in von New Relic One überwacht Adobe die Autoren-, Veröffentlichungs- und Vorschau-Services (sofern verfügbar) von AEM as a Cloud Service. Adobe ermöglicht benutzerspezifische Telemetrie und Überwachung mit New Relic One APM in Nicht-Produktions- und Produktionsumgebungen in AEM as a Cloud Service.
 
-Ihr New Relic One-Konto ist an ein primäres von Adobe verwaltetes Konto angehängt und erhält Berichte von mehreren Programmen, davon drei pro AEM as a Cloud Service-Umgebung.
+Ihr New Relic One-Konto ist mit einem primären, von Adobe bereitgestellten Konto verknüpft und erhält von mehreren Anwendungen Daten; je drei Anwendungen pro Umgebung in AEM as a Cloud Service.
 
 * Ein Programm für den Autoren-Service pro Umgebung
 * Eine Anwendung für den `Publish`-Service pro Umgebung (einschließlich „Golden Publish“)
@@ -201,16 +201,16 @@ Hinweis:
 
 * Pro Anwendung wird ein Lizenzschlüssel verwendet.
 * Umgebungen in AEM as a Cloud Service senden Berichte nur an ein einziges New Relic One-Konto.
-* Vollständige Überwachungsmetriken und -ereignisse für beide New Relic One werden drei Monate lang aufbewahrt.
+* Vollständige Überwachungsmetriken und Ereignisse für New Relic One werden drei Monate lang gespeichert. 
 
 +++
 
-+++**Sendet Adobe Warnbenachrichtigungen von New Relic One?**
++++**Sendet Adobe Warnhinweise über New Relic One?**
 
 Adobe bietet Zugriff auf New Relic One nur zu Beobachtungszwecken und nutzt ihn nicht für Kundenwarnungen oder interne betriebliche Warnungen. Benachrichtigungen über Vorfälle werden über [Benutzerbenachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md) gesendet.
 +++
 
-+++**Wer kann auf die Daten des New Relic One Cloud Service zugreifen?**
++++**Wer kann auf die Daten des Cloud-Service von New Relic One zugreifen?**
 
 Bis zu 30 Mitgliedern Ihres Teams wird vollständiger Lesezugriff gewährt. Sie erhalten für alle APM-Metriken, die vom New Relic One-Agenten erfasst werden, Lesezugriff.
 +++
@@ -220,7 +220,7 @@ Bis zu 30 Mitgliedern Ihres Teams wird vollständiger Lesezugriff gewährt. Sie 
 Das von Adobe bereitgestellte New Relic One-Konto unterstützt keine benutzerdefinierte SSO-Konfiguration.
 +++
 
-+++**Was ist, wenn ich bereits über ein New Relic-On-Premise-Abonnement verfüge?**
++++**Was ist, wenn ich bereits über ein lokales New Relic-Abonnement verfüge?**
 
 New Relic One ist die neue Beobachtungsplattform von New Relic und ermöglicht es dem Support von Adobe und Ihren Teams, Metriken und Ereignisse an einem zentralen Ort zu beobachten, zu überwachen und anzuzeigen.
 
@@ -236,5 +236,5 @@ Der Adobe-Support überwacht AEM as a Cloud Service mit New Relic One und andere
 
 +++**Der APM-Agent für mein New Relic One-Konto wurde angehalten. Was ist passiert?**
 
-[APM-Agenten werden angehalten](#limitations), wenn mindestens 30 Tage lang keine Aktivität erkannt wurde. Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
+[APM-Agents werden angehalten](#limitations), wenn mindestens 30 Tage lang keine Aktivität erkannt wurde. Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
 +++
