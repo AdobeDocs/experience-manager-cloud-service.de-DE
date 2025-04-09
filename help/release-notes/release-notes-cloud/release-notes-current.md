@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 65%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) ist der Freitag, 27. März 2025. Die nächste Version mit neuen Funktionen (2025.4.0) ist für den Freitag, 24. April 2025 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) ist der 27. März 2025. Die nächste Version mit neuen Funktionen (2025.4.0) ist für den 24. April 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -48,9 +48,9 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ### Neue Funktionen in Dynamic Media {#new-features-dynamic-media}
 
-**Unterstützung von langen Formularen für Videos, die mit Dynamic Media mit Open API bereitgestellt werden**
+**Unterstützung für langformatige Videos, die mit Dynamic Media mit Open API bereitgestellt werden**
 
-Dynamic Media mit OpenAPI unterstützt jetzt Videos in langer Form. Die Videos in langer Form unterstützen bis zu 50 GB und 2 Stunden.
+Dynamic Media mit OpenAPI unterstützt jetzt langformatige Videos. Die Videos in langer Form unterstützen bis zu 50 GB und 2 Stunden.
 
 ### Dynamic Media Classic {#dmc}
 
@@ -64,9 +64,9 @@ Siehe [Bandbreite und Speicher, Berichtstypen](https://experienceleague.adobe.co
 ## Neue Funktionen in der Assets-Ansicht {#new-features-assets-view}
 
 
-**Unterstützung für Root-Tags**
+**Unterstützung für Stamm-Tags**
 
-AEM Assets unterstützt jetzt die Zuordnung einer Tag-Eigenschaft in einem Metadatenformular zu benutzerdefinierten Metadaten. Darüber hinaus können Sie als Administrator die Verfügbarkeit von Tags für Benutzer einschränken, indem Sie den Zugriff auf ein bestimmtes Root-Tag und die Tags beschränken, die unter dem Root-Tag vorhanden sind.
+AEM Assets unterstützt jetzt das Zuordnen einer Tag-Eigenschaft in einem Metadatenformular zu benutzerdefinierten Metadaten. Darüber hinaus können Sie als Admin die Verfügbarkeit von Tags für Benutzende einschränken, indem Sie den Zugriff auf ein bestimmtes Stamm-Tag und die Tags, die unter dem Stamm-Tag vorhanden sind, beschränken.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,15 +96,15 @@ Die leistungsfähigere Java 21-Version **runtime** wird automatisch bereitgestel
 
 >[!IMPORTANT]
 >
-> Die Java 21 **Laufzeitumgebung** wurde im Februar in Ihren Entwicklungs-/RDE-Umgebungen bereitgestellt. Sie wird am 28. **und 29.** auf Ihre Staging-/Produktionsumgebungen angewendet. Beachten Sie, **Erstellen von Code** mit Java 21 (oder Java 17) unabhängig von der Java 21-Laufzeit ist - Sie müssen explizit Schritte zum Erstellen von Code mit Java 21 (oder Java 17) ausführen.
+> Die Java 21 **Laufzeitumgebung** wurde im Februar in Ihren Entwicklungs-/RDE-Umgebungen bereitgestellt. Sie wird am 28. **und 29.** auf Ihre Staging-/Produktionsumgebungen angewendet. Beachten Sie, dass das **Erstellen von Code** mit Java 21 (oder Java 17) unabhängig von der Java 21-Laufzeit erfolgt. Sie müssen explizit Schritte zum Erstellen von Code mit Java 21 (oder Java 17) ausführen.
 
-### AEM-Protokollweiterleitung an weitere Ziele - Beta-Programm {#log-forwarding-earlyadopter}
+### AEM-Protokollweiterleitung an weitere Ziele – Beta-Programm {#log-forwarding-earlyadopter}
 
-Jetzt in der Beta-Phase können Sie AEM-Protokolle an New Relic (mithilfe von HTTPS), Amazon S3 und Sumo Logic weiterleiten. Beachten Sie, dass AEM-Protokolle (einschließlich Apache/Dispatcher) unterstützt werden, jedoch keine CDN-Protokolle. Zugriff per E-Mail ](mailto:aemcs-logforwarding-beta@adobe.com)0}aemcs-logforwarding-beta@adobe.com&quot;.[
+In der Beta-Version können Sie AEM-Protokolle an New Relic (mithilfe von HTTPS), Amazon S3 und Sumo Logic weiterleiten. Beachten Sie, dass zwar AEM-Protokolle (einschließlich Apache/Dispatcher) unterstützt werden, jedoch keine CDN-Protokolle. Schreiben Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um Zugriff zu erhalten.
 
-Während Protokolle von Cloud Manager heruntergeladen werden können, ist es für viele Unternehmen von Vorteil, diese Protokolle an ein bevorzugtes Protokollierungsziel zu streamen. AEM unterstützt bereits die (GA) AEM- und CDN-Protokollweiterleitung an Azure Blob Storage, Datadog, HTTPS, Elasticsearch (und OpenSearch) und Splunk. Diese Funktion wird im Selbstbedienungsmodus konfiguriert und mithilfe der Konfigurations-Pipeline bereitgestellt.
+Die Protokolle können zwar von Cloud Manager heruntergeladen werden, aber viele Unternehmen ziehen es vor, diese Protokolle an ein bevorzugtes Protokollierungsziel weiterzuleiten. AEM unterstützt bereits die (allgemein verfügbare) AEM- und CDN-Protokollweiterleitung an Azure Blob Storage, Datadog, HTTPS, Elasticsearch (und OpenSearch) und Splunk. Diese Funktion wird eigenständig konfiguriert und mithilfe der Konfigurations-Pipeline bereitgestellt.
 
-Weitere Informationen finden Sie in [ Dokumentation zur ](/help/implementing/developing/introduction/log-forwarding.md).
+Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md).
 
 ### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
 
