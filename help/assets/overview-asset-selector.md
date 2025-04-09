@@ -3,9 +3,9 @@ title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellungen von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 94%
 
 ---
@@ -83,8 +83,9 @@ Sie müssen die folgenden Kommunikationsmethoden sicherstellen:
 
 * Die Hostanwendung wird auf HTTPS ausgeführt.
 * Sie können die Anwendung nicht auf `localhost` ausführen. Wenn Sie den Asset-Wähler auf Ihrem lokalen Computer integrieren möchten, müssen Sie eine benutzerdefinierte Domain erstellen, z. B. `[https://<your_campany>.localhost.com:<port_number>]`, und diese benutzerdefinierte Domain dem `redirectUrl list` hinzufügen.
-* Sie können `ADOBE_PROVIDED_CLIENT_ID` konfigurieren und zur AEM Cloud Service-Umgebungsvariablen mit den entsprechenden `imsClientId` hinzufügen.
-  ![Asset-Wähler IMS-Client-ID-Umgebung](assets/asset-selector-ims-client-id-env.png)
+* Sie können die Client-ID konfigurieren und der AEM Cloud Service-Umgebungsvariablen mit den entsprechenden `imsClientId` hinzufügen.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * Die Liste der IMS-Bereiche muss in der Umgebungskonfiguration definiert werden.
 * Die URL der Anwendung befindet sich in der Zulassungsliste der Umleitungs-URLs des IMS-Clients.
 * Der IMS-Anmeldefluss wird mithilfe eines Popup-Fensters im Webbrowser konfiguriert und gerendert. Daher sollten Popup-Fenster im Ziel-Browser aktiviert oder zugelassen werden.
@@ -148,7 +149,7 @@ Sobald der Asset-Selektor eingerichtet ist und Sie für die Verwendung mit Ihrem
 * **G**: [Sortierung nach auf- oder absteigender Reihenfolge](#sorting)
 * **H**: [Ansicht](#types-of-view)
 
-### Bedienfeld aus-/einblenden {#hide-show-panel}
+### Panel zum Aus-/Einblenden {#hide-show-panel}
 
 Um Ordner im linken Navigationsbereich auszublenden, klicken Sie auf das Symbol **[!UICONTROL Ordner ausblenden]**. Um die Änderungen rückgängig zu machen, klicken Sie erneut auf das Symbol **[!UICONTROL Ordner ausblenden]**.
 
