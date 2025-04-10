@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten 
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
-workflow-type: ht
-source-wordcount: '1018'
+source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+workflow-type: tm+mt
+source-wordcount: '981'
 ht-degree: 100%
 
 ---
@@ -124,9 +124,7 @@ Wenn Sie nur bestimmte Erweiterungen für eine Seite aktivieren möchten, könne
 
 Wenn Inhaltsautorinnen und -autoren bei einem vorhandenen AEM-Projekt, bei dem [der Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verwendet wird, Seiten bearbeiten, werden die Seiten automatisch mit dem Seiteneditor geöffnet. Sie können festlegen, welchen Editor AEM basierend auf den Inhaltspfaden oder dem `sling:resourceType` öffnen soll. Dadurch profitieren Ihre Autorinnen und Autoren von einem nahtlosen Erlebnis, unabhängig davon, welcher Editor für die ausgewählten Inhalte erforderlich ist.
 
-1. Wenden Sie sich zur Nutzung dieser Konfigurationsfunktion an die Adobe-Kundenunterstützung, um den Zugriff auf den URL-Service für den universellen Editor für Ihr Programm zu aktivieren.
-
-1. Sobald die Kundenunterstützung den Zugriff auf den URL-Service für den universellen Editor aktiviert hat, öffnen Sie den Konfigurations-Manager.
+1. Öffnen Sie den Configuration Manager. 
 
    `http://<host>:<port>/system/console/configMgr`
 
