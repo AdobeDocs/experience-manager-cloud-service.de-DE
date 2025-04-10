@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 61992513d7c965d1c0b1f3d1134d35cc53bebe2f
+source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
 workflow-type: tm+mt
-source-wordcount: '6132'
-ht-degree: 99%
+source-wordcount: '6134'
+ht-degree: 100%
 
 ---
 
@@ -120,6 +120,7 @@ ht-degree: 99%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
          + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
       + 2024 {#2024}
@@ -1104,9 +1105,9 @@ ht-degree: 99%
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
       + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=de)
-   + Inhaltsfragmentauswahl-{#content-fragment-selector}
-      + [Micro-Front-End-Inhaltsfragmentauswahl - Übersicht](/help/headless/content-fragment-selector/overview.md)
-      + [Inhaltsfragment-Selektor - Verwandte Eigenschaften](/help/headless/content-fragment-selector/properties.md)
+   + Inhaltsfragment-Selektor {#content-fragment-selector}
+      + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
+      + [Inhaltsfragment-Selektor – Verwandte Eigenschaften](/help/headless/content-fragment-selector/properties.md)
    + [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL-API {#graphql-api}
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)
@@ -1435,7 +1436,7 @@ ht-degree: 99%
    + [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md)
    + [Entfernen des generischen Lucene-Index](/help/operations/removal-generic-lucene-index.md)
    + [Best Practices für Abfragen und Indizierung](/help/operations/query-and-indexing-best-practices.md)
-   + [Link-Checker](/help/operations/link-checker.md)
+   + [Link-Prüfer](/help/operations/link-checker.md)
 + Compliance {#compliance}
    + [Konformität in AEM as a Cloud Service](/help/compliance/home.md)
    + Einhaltung von Datenschutzbestimmungen {#data-privacy}
