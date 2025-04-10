@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
+source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1589'
 ht-degree: 94%
 
 ---
@@ -43,7 +43,7 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 * SITES-27781: Es wurde eine Validierung auf Modellebene für Inhaltsfragmentverweise implementiert, was die Validierung referenzierter Fragmente anhand ihrer Modelleinschränkungen und erforderlichen Tags ermöglicht.
 * SITES-27784: Aktualisieren der SQL-Abfragegenerierung, um die PATH-Funktion anstelle von `jcr:path` zu verwenden.
 * SITES-28040: Adobe Target ExperienceFragmentsReplicationListener ist fehlerhaft.
-* SITES-28051: Abrufen der Berechtigungen des aktuellen Benutzers für ein Inhaltsfragment: GET /cf/fragments/{fragmentId}/permissions.
+* SITES-28051: Abrufen der Berechtigungen der oder des aktuellen Benutzenden für ein Inhaltsfragment: GET /cf/fragments/{fragmentId}/permissions.
 * SITES-28190: Einrichtung für den Vorschau-Integrationstest.
 * SITES-28227: Beim Hinzufügen von Assets als Referenzen zu einem Fragment überprüfen wir, ob das Asset vorhanden ist.
 * SITES-28248: Umschalten von Sites-Ereignissen basierend auf der OSGi-Konfiguration.
@@ -121,7 +121,7 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 
 ### Bekannte Probleme {#known-issues-20133}
 
-Keine.
+* SITES-30727: Drag-and-Drop kann bei Unterkomponenten im AEM-Editor fehlschlagen.
 
 ### Eingestellte Funktionen und APIs {#deprecated-20133}
 
