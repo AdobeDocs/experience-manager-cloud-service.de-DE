@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorl
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 99%
+source-wordcount: '3050'
+ht-degree: 92%
 
 ---
 
@@ -305,6 +305,41 @@ Gehen Sie wie folgt vor, um die Vorlage zu bearbeiten:
 2. Navigieren Sie zum Speicherort der Vorlage.
 3. Wählen Sie die Vorlage aus.
 4. Klicken Sie auf **[!UICONTROL Vorlage bearbeiten]**. Auf der Vorlagenarbeitsfläche werden die Vorlage und die Liste aller zugehörigen Ebenen im Bedienfeld „Ebenen“ angezeigt. Bearbeiten Sie Ihre Vorlage gemäß Ihren Anforderungen.
+
+## Fügen Sie den Link Aktionsaufruf zu Ihrer Vorlagenebene hinzu{#add-CTA-in-dynamic-media-templates}
+
+Wandeln Sie eine Bild- oder Textebene Ihrer Dynamic Media-Vorlage in einen Hyperlink um, indem Sie einen CTA-Link hinzufügen, der Benutzer zu einer Zielseite weiterleitet. Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufügen:
+
+1. Navigieren Sie zu Ihrem Vorlagenspeicherort, wählen Sie die Vorlage aus und klicken Sie auf ![Bearbeiten](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Vorlage bearbeiten]**. Die Vorlage wird auf der Arbeitsfläche angezeigt.
+1. Wählen Sie die Vorlagenebene aus und [navigieren Sie zum Eigenschaften](#edit-or-delete-a-layer), um ihr einen CTA-Link hinzuzufügen.
+1. Wählen Sie im Bedienfeld Eigenschaften die Option **[!UICONTROL CTA hinzufügen]**, geben Sie die Ziel-URL in das Feld **[!UICONTROL URL]** ein und klicken Sie auf **[!UICONTROL Speichern]**.
+   ![CTA hinzufügen](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. Klicken Sie **[!UICONTROL Vorschau]**, um eine Vorschau Ihrer Vorlage anzuzeigen und die definierten Parameter anzuzeigen.
+1. Klicken Sie auf **[!UICONTROL Veröffentlichen]** und wählen Sie **[!UICONTROL Ja]** aus, um Ihre Vorlage zu veröffentlichen, falls sie nicht zuvor veröffentlicht wurde.
+1. Navigieren Sie zu dem Ordner, in dem diese Vorlage gespeichert ist, wählen Sie diese Vorlage aus und klicken Sie auf ![Detailseite](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
+1. Klicken Sie auf **[!UICONTROL Optionen kopieren]** und wählen Sie **[!UICONTROL Einbettungs-Code kopieren]** aus.
+
+   ![Einbettungs-Code kopieren](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   Im Folgenden finden Sie ein Beispiel für den Einbettungs-Code:
+
+   ```
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. Fügen Sie den kopierten Einbettungs-Code zur HTML-Datei Ihrer Site hinzu und führen Sie ihn in Ihrem Browser aus, um die Vorlage anzuzeigen.
+
+Klicken Sie auf das CTA-Element in der Vorlage, um zur Zielseite zu navigieren.
+
+Sehen Sie sich dieses Video Schritt für Schritt an, um zu erfahren, wie Sie einen CTA-Link zu einer Vorlagenebene hinzufügen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## Wichtige Hinweise {#important-points-to-note}
 
