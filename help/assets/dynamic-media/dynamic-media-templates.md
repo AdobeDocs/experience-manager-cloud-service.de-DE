@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorl
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
+source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 92%
@@ -314,7 +314,7 @@ Wandeln Sie eine Bild- oder Textebene Ihrer Dynamic Media-Vorlage in einen Hyper
 1. Wählen Sie die Vorlagenebene aus und [navigieren Sie zum Eigenschaften](#edit-or-delete-a-layer), um ihr einen CTA-Link hinzuzufügen.
 1. Wählen Sie im Bedienfeld Eigenschaften die Option **[!UICONTROL CTA hinzufügen]**, geben Sie die Ziel-URL in das Feld **[!UICONTROL URL]** ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
-![CTA hinzufügen](/help/assets/assets/add-cta.png)
+   ![CTA hinzufügen](/help/assets/assets/add-cta.png)
 
 1. Klicken Sie **[!UICONTROL Vorschau]**, um eine Vorschau Ihrer Vorlage anzuzeigen und die definierten Parameter anzuzeigen.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichen]** und wählen Sie **[!UICONTROL Ja]** aus, um Ihre Vorlage zu veröffentlichen, falls sie nicht zuvor veröffentlicht wurde.
@@ -327,7 +327,7 @@ Wandeln Sie eine Bild- oder Textebene Ihrer Dynamic Media-Vorlage in einen Hyper
 
    ```json
     <div class="adobe-dynamicmedia-template-embed-container">
-    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
     <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
