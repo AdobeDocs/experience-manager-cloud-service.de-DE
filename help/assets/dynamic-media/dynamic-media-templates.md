@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorl
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 92%
@@ -313,13 +313,15 @@ Wandeln Sie eine Bild- oder Textebene Ihrer Dynamic Media-Vorlage in einen Hyper
 1. Navigieren Sie zu Ihrem Vorlagenspeicherort, wählen Sie die Vorlage aus und klicken Sie auf ![Bearbeiten](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Vorlage bearbeiten]**. Die Vorlage wird auf der Arbeitsfläche angezeigt.
 1. Wählen Sie die Vorlagenebene aus und [navigieren Sie zum Eigenschaften](#edit-or-delete-a-layer), um ihr einen CTA-Link hinzuzufügen.
 1. Wählen Sie im Bedienfeld Eigenschaften die Option **[!UICONTROL CTA hinzufügen]**, geben Sie die Ziel-URL in das Feld **[!UICONTROL URL]** ein und klicken Sie auf **[!UICONTROL Speichern]**.
-   ![CTA hinzufügen](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![CTA hinzufügen](/help/assets/assets/add-cta.png)
+
 1. Klicken Sie **[!UICONTROL Vorschau]**, um eine Vorschau Ihrer Vorlage anzuzeigen und die definierten Parameter anzuzeigen.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichen]** und wählen Sie **[!UICONTROL Ja]** aus, um Ihre Vorlage zu veröffentlichen, falls sie nicht zuvor veröffentlicht wurde.
 1. Navigieren Sie zu dem Ordner, in dem diese Vorlage gespeichert ist, wählen Sie diese Vorlage aus und klicken Sie auf ![Detailseite](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Klicken Sie auf **[!UICONTROL Optionen kopieren]** und wählen Sie **[!UICONTROL Einbettungs-Code kopieren]** aus.
 
-   ![Einbettungs-Code kopieren](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![Einbettungs-Code kopieren](/help/assets/assets/copy-options1.png)
 
    Im Folgenden finden Sie ein Beispiel für den Einbettungs-Code:
 
