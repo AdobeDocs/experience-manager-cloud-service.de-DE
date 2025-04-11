@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 98%
+source-wordcount: '1734'
+ht-degree: 89%
 
 ---
 
@@ -135,17 +135,37 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
   ![Option zum Hochladen einer neuen Version eines Assets aus dem Versionsverlauf](assets/view-asset-versions2.png)
 
-### Anzeigen von Versionen eines Assets {#view-versions}
+### Anzeigen und Vergleichen von Versionen eines Assets {#view-and-compare-versions}
 
-Beim Hochladen eines Duplikats oder einer geänderten Kopie eines Assets können Sie dessen Versionen erstellen. Mit der Versionierung können Sie historische Assets überprüfen und bei Bedarf zu einer früheren Version zurückkehren.
+Laden Sie ein Duplikat oder eine geänderte Kopie eines Assets hoch, um seine Versionen zu erstellen. Mit der Versionierung können Sie die Änderungen an einem Asset im Laufe der Zeit verfolgen und bei Bedarf zu einer früheren Version zurückkehren.
 
-Um Versionen anzuzeigen, öffnen Sie die Vorschau eines Assets und klicken Sie in der rechten Seitenleiste auf **[!UICONTROL Versionen]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png). Um eine bestimmte Version in der Vorschau anzuzeigen, wählen Sie sie aus. Um zu ihr zurückzukehren, klicken Sie auf **[!UICONTROL Neueste erstellen]**.
+So zeigen Sie Versionen an und vergleichen sie:
 
-Sie können Versionen auch aus der Versions-Zeitleiste erstellen. Wählen Sie die neueste Version aus, klicken Sie auf **[!UICONTROL Neue Version]** und laden Sie eine neue Kopie des Assets aus Ihrem lokalen Dateisystem hoch.
+1. Navigieren Sie zur Detailseite des Assets.
+1. Klicken Sie ![ rechten Bereich ](/help/assets/assets/Clock.svg)Versionen“, um das Bedienfeld **[!UICONTROL Versionen“]**. In diesem Bedienfeld werden die Miniaturansichten des ursprünglichen Assets und seiner hochgeladenen Versionen angezeigt.
+1. Wählen Sie eine Version im Bedienfeld aus, um sie im Vorschaubereich in der Vorschau anzuzeigen.
+1. Wählen Sie eine andere Version als die neueste aus und klicken Sie auf **[!UICONTROL Neueste erstellen]**, um sie als neueste Version festzulegen.
+1. Ziehen Sie den Regler in der Vorschau nach links und rechts, um die ausgewählte Version eines Bildes und die neueste Version in einer einzigen Vorschau zu sehen. Auf diese Weise können Sie die ausgewählte Version des Bildes schnell mit der neuesten Version vergleichen.
 
-![Anzeigen von Versionen eines Assets](assets/view-asset-versions1.png)
+   >[!NOTE]
+   >
+   > Der Versionsvergleich ist nur für Bild-Assets aktiviert.
 
-*Abbildung: Zeigen Sie Versionen eines Assets an, kehren Sie zu einer früheren Version zurück oder laden Sie eine andere neue Version hoch.*
+   ![Vergleichen von Asset-Versionen](/help/assets/assets/version-compare2.png)
+
+<!-- old content
+To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
+-->
+
+Wählen Sie die neueste Version aus und klicken Sie auf **[!UICONTROL Neue Version]**, um eine neue Kopie des Assets aus Ihrem lokalen Dateisystem hochzuladen und eine Asset-Version zu erstellen.
+
+<!-- old content
+You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
+
+![View versions of an asset](assets/view-asset-versions1.png)
+
+*Figure: View versions of an asset, revert to a previous version, or upload another new version.* 
+-->
 
 ## Verwalten des Asset-Status {#manage-asset-status}
 
