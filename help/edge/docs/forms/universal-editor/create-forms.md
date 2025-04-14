@@ -1,6 +1,6 @@
 ---
 title: Erstellen von eigenständigen Formularen basierend auf einer Edge Delivery Services-Vorlage mit dem universellen Editor
-description: In diesem Artikel wird erläutert, wie Sie mit dem universellen Editor Formulare erstellen können, indem Sie im Assistenten zur Formularerstellung eine Edge Delivery Services-basierte Vorlage auswählen. Sie können die Formulare auch in AEM Edge Delivery Services veröffentlichen.
+description: In diesem Artikel wird beschrieben, wie Sie mit dem universellen Editor Formulare erstellen können, indem Sie im Assistenten für die Formularerstellung eine auf Edge Delivery Services basierende Vorlage auswählen. Sie können die Formulare auch in AEM Edge Delivery Services veröffentlichen.
 feature: Edge Delivery Services
 role: User
 hide: true
@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -35,17 +35,17 @@ Dieser Artikel führt Sie durch den Prozess der Erstellung und Bearbeitung der e
 ## Arbeiten mit Formularen im universellen Editor
 
 Mit dem universellen Editor können Sie einfach responsive und interaktive eigenständige Formulare erstellen. Sie können die folgenden Aktionen für Formulare im universellen Editor durchführen:
-* [Erstellen eines Formulars](#create-a-form)
+* [Formular erstellen](#create-a-form)
 * [Formular erstellen](#author-a-form)
-* [Formular veröffentlichen](#publish-a-form)
-* [Formular verwalten](#manage-a-form)
+* [Veröffentlichen eines Formulars](#publish-a-form)
+* [Verwalten eines Formulars](#manage-a-form)
 
 >[!NOTE]
 >
-> Sie können auch [ein Formular in AEM Sites mithilfe der Site-Vorlage von Edge Delivery Services Site im universellen Editor erstellen und in Edge Delivery Services veröffentlichen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
+> Sie können auch [ein Formular in AEM Sites mithilfe der Site-Vorlage von Edge Delivery Services Site im universellen Editor verfassen und in Edge Delivery Services veröffentlichen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
 
 
-### Erstellen eines Formulars
+### Formular erstellen
 
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
 1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
@@ -117,7 +117,7 @@ Mit dem universellen Editor können Sie einfach responsive und interaktive eigen
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-### Formular veröffentlichen
+### Veröffentlichen eines Formulars
 
 Veröffentlichen Sie das eigenständige Formular nun in Edge Delivery Services, indem Sie oben rechts im universellen Editor auf die Schaltfläche **[!UICONTROL Veröffentlichen]** klicken.
 
@@ -147,7 +147,7 @@ Die URL-Struktur bleibt für Staging- und Live-Versionen gleich. Der angezeigte 
 
 ![Anzeigen veröffentlichter Formulare](/help/edge/assets/eds-view-publish-form.png)
 
-### Formular verwalten
+### Verwalten eines Formulars
 
 Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für das Formular ausführen.
 

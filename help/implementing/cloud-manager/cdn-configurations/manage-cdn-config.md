@@ -8,7 +8,7 @@ exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -68,32 +68,32 @@ Die Schritte zum Bearbeiten einer CDN-Konfiguration von der Seite **Umgebungen**
 1. Klicken Sie auf **Aktualisieren**.
 
 
-## Go-Live-Bereitschaft: DNS-Einstellungen für eine benutzerdefinierte Domain konfigurieren {#go-live-readiness}
+## Go-Live-Bereitschaft: Konfigurieren von DNS-Einstellungen für eine benutzerdefinierte Domain {#go-live-readiness}
 
-Bevor eine benutzerdefinierte Domain Traffic bereitstellen kann, müssen Sie die DNS-Konfiguration mit Ihrem DNS-Anbieter abschließen. Nach Bereitstellung einer Domain-Zuordnung und Klicken auf **Live schalten** zeigt Cloud Manager ein Dialogfeld an, das Sie durch den Einrichtungsprozess des DNS-Eintrags führt. Sie haben die Möglichkeit, live zu gehen, indem Sie entweder einen CNAME-Datensatztyp oder einen A-Datensatztyp hinzufügen.
+Bevor eine benutzerdefinierte Domain Traffic bereitstellen kann, müssen Sie die DNS-Konfiguration mit Ihrem DNS-Anbieter durchführen. Nachdem Sie eine Domain-Zuordnung bereitgestellt und auf **Live-Schaltung** geklickt haben, zeigt Cloud Manager ein Dialogfeld an, das Sie durch den Einrichtungsprozess für den DNS-Eintrag führt. Sie haben nun die Möglichkeit, live zu gehen, indem Sie entweder einen CNAME-Eintrag oder einen A-Eintrag hinzufügen. 
 
 <!-- See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record). -->
 
-**So konfigurieren Sie die Live-Schaltung:**
+**So konfigurieren Sie die Go-Live-Bereitschaft:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 1. Klicken Sie im linken Seitenmenü unter **Services** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.
-1. Klicken Sie in der Tabelle der Domain **Zuordnungen am Ende einer Zeile,** einem CDN entspricht, dessen Bereitschaft zur Live-Schaltung Sie konfigurieren möchten, auf „Live-Schaltung“.
+1. Klicken Sie in der Tabelle „Domain-Zuordnungen“ am Ende einer Zeile, die einem CDN entspricht, dessen Go-Live-Bereitschaft konfiguriert werden soll, auf **Live-Schaltung**.
 
-   ![Dialogfeld „Live-Bereitschaft“](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
+   ![Dialogfeld „Go-Live-Bereitschaft“](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
 
-1. Führen **im Dialogfeld** Go-Live-Bereitschaft“ einen der folgenden Schritte aus:
+1. Führen Sie im Dialogfeld **Go-Live-Bereitschaft** einen der folgenden Schritte aus: 
 
    | Option | Schritte |
    | --- | --- |
-   | A-EINTRAG konfigurieren | Empfohlen für Stammdomänen wie `example.com`<br><ol><li>Melden Sie sich beim Portal Ihres DNS-Dienstanbieters an.<li>Navigieren Sie zum Abschnitt DNS-Einträge .<li>Erstellen Sie einen A-Eintrag, um auf alle aufgelisteten IP-Adressen zu verweisen.</li></ol> |
-   | CNAME konfigurieren | Empfohlen für benutzerdefinierte Domains wie `www.example.com`<br><ol><li>Melden Sie sich beim Portal Ihres DMS-Dienstanbieters an.<li>Navigieren Sie zum Abschnitt DNS-Einträge .<li>Ordnen Sie `cdn.adobeaemcloud.com` (CNAME-Eintrag) dem DNS-Eintrag des DNS-Dienstanbieters (Ihrer benutzerdefinierten Domain) zu. Diese Zuordnung stellt sicher, dass in der benutzerdefinierten Domain empfangene Anfragen an das CDN von Adobe weitergeleitet werden.</li></ol> |
+   | A-Eintrag konfigurieren | Empfohlen für Stamm-Domains wie `example.com`<br>.<ol><li>Melden Sie sich beim Portal Ihres DNS-Dienstleisters an.<li>Navigieren Sie zum Abschnitt mit den DNS-Einträgen.<li>Erstellen Sie einen A-Eintrag, um auf alle aufgelisteten IP-Adressen zu verweisen.</li></ol> |
+   | CNAME konfigurieren | Empfohlen für benutzerdefinierte Domains wie `www.example.com`<br>.<ol><li>Melden Sie sich beim Portal Ihres DNS-Dienstleisters an.<li>Navigieren Sie zum Abschnitt mit den DNS-Einträgen.<li>Ordnen Sie `cdn.adobeaemcloud.com` (CNAME-Eintrag) dem DNS-Eintrag des DNS-Dienstanbieters (Ihrer benutzerdefinierten Domain) zu. Diese Zuordnung stellt sicher, dass in der benutzerdefinierten Domain empfangene Anfragen an das CDN von Adobe weitergeleitet werden.</li></ol> |
 
-1. Klicken Sie **Dialogfeld** Go-Live-Bereitschaft **auf OK**, um den Datensatz zu speichern.
+1. Klicken Sie im Dialogfeld **Go-Live-Bereitschaft** auf **OK**, um den Eintrag zu speichern.
 
-   Warten Sie auf die DNS-Verbreitung. Dies kann einige Minuten bis zu ein paar Stunden dauern.
+   Warten Sie auf die DNS-Weitergabe. Dies kann wenige Minuten oder aber mehrere Stunden dauern.
 
-   Wenn die Spalte **[!UICONTROL Status]** in der Tabelle der Domain-Zuordnungen auf **[!UICONTROL Verifiziert]** aktualisiert wird, ist die benutzerdefinierte Domain einsatzbereit. Möglicherweise müssen Sie auf ![Aktualisierungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) klicken, um den Status zu aktualisieren.
+   Wenn sich die Spalte **[!UICONTROL Status]** in der Tabelle „Domain-Zuordnungen“ in **[!UICONTROL Überprüft]** ändert, ist die benutzerdefinierte Domain einsatzbereit. Möglicherweise müssen Sie auf ![Aktualisierungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) klicken, um den Status zu aktualisieren.
 
 ## Löschen einer CDN-Konfiguration {#delete-cdn}
 
