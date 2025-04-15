@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 10.
 
 ## Neue Erweiterungen für den universellen Editor {#extensions}
 
-Auf [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) wurden für den universellen Editor eine Reihe neuer Erweiterungen veröffentlicht, die das Authoring-Erlebnis verbessern.
+Über den [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) wurden mehrere neue Erweiterungen für den universellen Editor veröffentlicht, die das Authoring-Erlebnis verbessern.
 
-* **MSM-Erweiterung**: Mit dieser Erweiterung können Sie jetzt die Vererbung von Komponenten/Blöcken unterbrechen und reinstanziieren.
-* **Seiteneigenschaften-Erweiterung**: Greifen Sie über diese Erweiterung direkt im universellen Editor auf das Seiteneigenschaften-Fenster der Seite zu.
-* **Workflow-Erweiterung**: Verwenden Sie Workflows auf Seiten und Inhaltsfragmenten, die auf der Seite mit dieser Erweiterung eingerichtet sind.
-* **Seitensperren-Erweiterung**: Verwenden Sie diese Erweiterung, um eine Seite direkt im universellen Editor zu sperren und zu entsperren.
+* **Erweiterung für MSM**: Mit dieser Erweiterung können Sie nun die Vererbung von Komponenten/Blöcken unterbrechen und erneut instanziieren.
+* **Erweiterung für Seiteneigenschaften**: Über diese Erweiterung können Sie direkt im universellen Editor auf das Fenster „Seiteneigenschaften“ einer Seite zugreifen.
+* **Erweiterung für Workflows**: Sie können mit dieser Erweiterung Workflows auf Seiten und in Inhaltsfragmenten verwenden, die auf einer Seite instrumentiert sind.
+* **Erweiterung für Seitensperren**: Verwenden Sie diese Erweiterung, um eine Seite direkt vom universellen Editor aus zu sperren und zu entsperren.
 
 ## Andere Verbesserungen {#other-improvements}
 
