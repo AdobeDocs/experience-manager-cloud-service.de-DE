@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.03.10
-description: Dies sind die Versionshinweise für die Version 2025.03.10 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.04.04
+description: Dies sind die Versionshinweise für die Version 2025.04.04 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
-workflow-type: ht
-source-wordcount: '295'
-ht-degree: 100%
+source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 46%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.03.10 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.04.04 {#release-notes}
 
-Dies sind die Versionshinweise für die Version des universellen Editors vom 10. März 2025.
+Dies sind die Versionshinweise für die Version 4. April 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -22,26 +22,10 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 10.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Verschieben von Komponenten:** [Beim Verschieben von Komponenten zwischen Containern](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) wird jetzt der Komponentenfilter des Ziel-Containers angewendet.
-   * Es ist nicht mehr erforderlich, dieselbe [Filterdefinition](/help/implementing/universal-editor/filtering.md) sowohl für Target- als auch für Ziel-Container zu verwenden, um die Komponente zwischen den Containern zu verschieben.
-* **Gesperrte Seiten:** Der Dienst „Universeller Editor“ hält sich an den [Sperrstatus einer Seite](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) und schreibt nur in Seiten, die nicht gesperrt sind oder von Benutzerseite gesperrt werden.
-
-## Neue Erweiterungen für den universellen Editor {#extensions}
-
-Über den [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) wurden mehrere neue Erweiterungen für den universellen Editor veröffentlicht, die das Authoring-Erlebnis verbessern.
-
-* **Erweiterung für MSM**: Mit dieser Erweiterung können Sie nun die Vererbung von Komponenten/Blöcken unterbrechen und erneut instanziieren.
-* **Erweiterung für Seiteneigenschaften**: Über diese Erweiterung können Sie direkt im universellen Editor auf das Fenster „Seiteneigenschaften“ einer Seite zugreifen.
-* **Erweiterung für Workflows**: Sie können mit dieser Erweiterung Workflows auf Seiten und in Inhaltsfragmenten verwenden, die auf einer Seite instrumentiert sind.
-* **Erweiterung für Seitensperren**: Verwenden Sie diese Erweiterung, um eine Seite direkt vom universellen Editor aus zu sperren und zu entsperren.
+* **Dynamic Media mit OpenAPI-Unterstützung** - [Der Asset-Selektor](/help/assets/overview-asset-selector.md#repository-switcher) im universellen Editor unterstützt jetzt [Dynamic Media mit OpenAPI und Remote-Assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Es wurden Fehlerbehebungen vorgenommen, um die Validierung für die Headless-Arbeitsfläche zu korrigieren.
-
-## Abschaffung {#deprecation}
-
-* Die über npm oder `https://unviersal-editor-service.experiencecloud.live/corslib/*` bereitgestellte Bibliothek `universal-editor-cors` sollte nicht mehr verwendet werden.
-   * Stattdessen sollte ein Skript-Tag verwendet werden, das auf `https://universal-editor-service.adobe.io/cors.js` verweist.
-   * Weitere Informationen zur richtigen Instrumentierung Ihrer Seite für die Verwendung mit dem universellen Editor finden Sie in der [Übersicht über den universellen Editor für AEM-Entwicklerinnen und -entwickler](/help/implementing/universal-editor/developer-overview.md).
-   * Benutzenden wird einmal täglich eine Meldung zur kommenden Abschaffung angezeigt, wenn die falsche Methode verwendet wird.
+* Der entfernte Layout-Kontext wurde korrigiert.
+* E2E-Tests wurden verbessert.
+* Abhängigkeitsaktualisierungen und Code-Bereinigung wurden durchgeführt.
