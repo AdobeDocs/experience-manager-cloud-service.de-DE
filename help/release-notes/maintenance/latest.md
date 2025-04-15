@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 94%
+source-wordcount: '1588'
+ht-degree: 99%
 
 ---
 
@@ -67,10 +67,10 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 * SITES-24907: Edge Delivery mit universellem Editor: Unterstützen der Veröffentlichung von Assets auf mehreren Sites für MSM-Anwendungsfälle (frühzeitiger Zugriff).
 * SITES-26087: Edge Delivery mit universellem Editor: Verbessern des Veröffentlichungsdurchsatzes (frühzeitiger Zugriff).
 * SITES-27956: Edge Delivery mit universellem Editor: Verbessern der Fehlerverarbeitung für die Veröffentlichung in Edge Delivery Services (frühzeitiger Zugriff).
-* SITES-29602: CIF: Entfernung der Guava-Nutzung im core-cif-components-core.
-* SITES-25785: CIF: Hinzufügen der Auswahl von Produktvarianten für den CIF-Produktverweis-Datentyp.
+* SITES-29602: CIF: Entfernung der Guava-Nutzung in core-cif-components-core.
+* SITES-25785: CIF: Hinzufügen einer Auswahl von Produktvarianten für CIF-Produktverweis-Datentyp.
 * SITES-26392: CIF[Experimental]: JSON+LD in CIF-Kernkomponenten in PDPs.
-* SITES-21278: CIF[Experimental]: Möglichkeit von CIF, den Cache zu löschen.
+* SITES-21278: CIF[Experimental]: CIF-Funktion zur Cache-Löschung.
 
 ### Behobene Probleme {#fixed-issues-20133}
 
@@ -115,9 +115,9 @@ Die Funktionsaktivierung von 2025.4.0 wird den vollen Funktionsumfang für diese
 * SITES-29363: Die Schaltfläche „Live Copy zurücksetzen“ funktioniert nicht für eine verschachtelte Live Copy-Inhaltshierarchie.
 * SITES-29369: Assets-Ereignisproblem in AIO | Falsches Auslösen von Ereignissen des Typs „Seite veröffentlicht/Seite nicht veröffentlicht“.
 * SITES-29972: Die Aktionen „Löschen“ und „Umbenennen“ erzeugen manchmal einen falschen Workflow-Kommentar.
-* SITES-24631: CIF: Problem im Produktfeld suchen.
+* SITES-24631: CIF: Suchproblem im Produktfeld.
 * SITES-24902: CIF: Produkt-URL-Format funktioniert für #variant_sku nicht wie erwartet.
-* SITES-29191: CIF: Es können nicht mehr als 20 SKUs zur Produktlistenkomponente hinzugefügt werden.
+* SITES-29191: CIF: Der Produktlistenkomponente können nicht mehr als 20 SKUs hinzugefügt werden.
 
 ### Bekannte Probleme {#known-issues-20133}
 
