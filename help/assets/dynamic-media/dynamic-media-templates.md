@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorl
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3071'
 ht-degree: 92%
 
 ---
@@ -87,6 +87,7 @@ Um eine Dynamic Media-Vorlage zu erstellen, benötigen Sie Folgendes:
 
 Um eine Dynamic Media-Vorlage zu erstellen, führen Sie die folgenden Schritte aus:
 
+1. Navigieren Sie zu Ihrer [!DNL AEM Assets] Homepage und [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM] - [!DNL Dynamic Media] -](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation), um sie zum Erstellen der Vorlage zu verwenden.
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
 1. [Hinzufügen von Bildern zur Arbeitsfläche](#add-images-to-the-canvas)
 1. [Hinzufügen von Textebenen zur Arbeitsfläche](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ So kopieren Sie die in der Vorschau angezeigte URL der veröffentlichten Vorlage
 1. Verwenden Sie diese URL für das schnelle Merchandising Ihrer Produkte oder Services. Sie können diese URL für Ihre Kundschaft freigeben oder in Ihre Website oder eine nachgelagerte Drittanbieteranwendung integrieren, um das Banner anzuzeigen und Aktualisierungen daran in Echtzeit vorzunehmen, sodass die laufenden Angebote widergespiegelt werden.
 
 In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine Dynamic Media-Vorlage erstellen.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Vornehmen von Aktualisierungen an der Vorlage in Echtzeit über die URL{#update-the-template-from-the-url}
 
