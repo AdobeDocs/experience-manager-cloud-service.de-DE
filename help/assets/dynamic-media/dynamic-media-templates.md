@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorl
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
+source-git-commit: c9b007626fc9ed8518ae6be054fc147be88c6a3c
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3072'
 ht-degree: 92%
 
 ---
@@ -283,7 +283,7 @@ So kopieren Sie die in der Vorschau angezeigte URL der veröffentlichten Vorlage
 1. Verwenden Sie diese URL für das schnelle Merchandising Ihrer Produkte oder Services. Sie können diese URL für Ihre Kundschaft freigeben oder in Ihre Website oder eine nachgelagerte Drittanbieteranwendung integrieren, um das Banner anzuzeigen und Aktualisierungen daran in Echtzeit vorzunehmen, sodass die laufenden Angebote widergespiegelt werden.
 
 In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine Dynamic Media-Vorlage erstellen.
->[!VIDEO](https://video.tv.adobe.com/v/3457616)
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Vornehmen von Aktualisierungen an der Vorlage in Echtzeit über die URL{#update-the-template-from-the-url}
 
@@ -307,7 +307,7 @@ Gehen Sie wie folgt vor, um die Vorlage zu bearbeiten:
 3. Wählen Sie die Vorlage aus.
 4. Klicken Sie auf **[!UICONTROL Vorlage bearbeiten]**. Auf der Vorlagenarbeitsfläche werden die Vorlage und die Liste aller zugehörigen Ebenen im Bedienfeld „Ebenen“ angezeigt. Bearbeiten Sie Ihre Vorlage gemäß Ihren Anforderungen.
 
-## Fügen Sie den Link Aktionsaufruf zu Ihrer Vorlagenebene hinzu{#add-CTA-in-dynamic-media-templates}
+## Fügen Sie einen Link für Aktionsaufrufe (CTA) zu Ihrer Vorlagenebene hinzu{#add-CTA-in-dynamic-media-templates}
 
 Wandeln Sie eine Bild- oder Textebene Ihrer Dynamic Media-Vorlage in einen Hyperlink um, indem Sie einen CTA-Link hinzufügen, der Benutzer zu einer Zielseite weiterleitet. Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufügen:
 
@@ -342,7 +342,7 @@ Klicken Sie auf das CTA-Element in der Vorlage, um zur Zielseite zu navigieren.
 
 Sehen Sie sich dieses Video Schritt für Schritt an, um zu erfahren, wie Sie einen CTA-Link zu einer Vorlagenebene hinzufügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Wichtige Hinweise {#important-points-to-note}
 
