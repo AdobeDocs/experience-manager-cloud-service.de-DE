@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.11.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 100%
@@ -57,7 +57,7 @@ Verbesserte [Referenzierung von Inhaltsfragmenten mit eindeutigen ID-basierten R
 
 **AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten**
 
-Die [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-rest-openapi-content-fragment-delivery.md) ist jetzt für AEM as a Cloud Service verfügbar.
+Die [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-content-fragment-delivery-with-openapi.md) ist jetzt für AEM as a Cloud Service verfügbar.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

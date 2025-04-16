@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2025.1.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 93%
@@ -58,7 +58,7 @@ Die [Referenzierung von Inhaltsfragmenten mit eindeutigen ID-basierten Referenze
 
 **AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten**
 
-Die [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-rest-openapi-content-fragment-delivery.md) ist nun für AEM as a Cloud Service verfügbar.
+Die [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-content-fragment-delivery-with-openapi.md) ist nun für AEM as a Cloud Service verfügbar.
 
 ### Veraltete Funktionen {#sites-deprecated}
 
@@ -73,7 +73,7 @@ Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind n
 
 #### PWA-Funktionen {#pwa-features}
 
-[Die Funktionen der Progressive Web App (PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) für AEM Sites werden jetzt für neue Projekte ab Version 2025.1.0 nicht mehr unterstützt. Diese Funktion wird für bestehende Projekte weiterhin unterstützt, sollte jedoch nicht für neue Projekte verwendet werden
+[Die Progressive Web-Anwendung (PWA)-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md) für AEM Sites sind ab Version 2025.1.0 für neue Projekte veraltet. Diese Funktion wird weiterhin für bestehende Projekte unterstützt, sollte jedoch nicht für neue Projekte verwendet werden
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -115,11 +115,11 @@ Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Inte
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
-* **Veröffentlichung verwalten**: Sie können den Workflow [Veröffentlichung verwalten](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) verwenden, um Formulare in Umgebungen zu veröffentlichen oder die Veröffentlichung rückgängig zu machen, normalerweise von der Autoreninstanz bis zur Veröffentlichungs- und Vorschauinstanz. Er ermöglicht es Benutzenden, Inhalte zu veröffentlichen, ihre Veröffentlichung rückgängig zu machen oder ihre Veröffentlichung effizient zu planen.
+* **Veröffentlichung** verwalten: Sie können den [arbeitsablauf &quot;Veröffentlichung](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) verwalten&quot; verwenden, um Formulare umgebungsübergreifend zu veröffentlichen oder zu Veröffentlichung rückgängig machen, in der Regel vom Autor Instanz bis hin zu den veröffentlichen- und Vorschau-Instanzen. Er ermöglicht es Benutzenden, Inhalte zu veröffentlichen, ihre Veröffentlichung rückgängig zu machen oder ihre Veröffentlichung effizient zu planen.
 
 * **[Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare](/help/forms/save-core-component-based-form-as-draft.md)**: Benutzende können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
 
-* **[Verbesserungen des Regeleditors](/help/forms/invoke-service-enhancements-rule-editor.md)**: Für adaptive Forms, die auf Kernkomponenten basieren, können Sie die Ausgabe von „Service aufrufen“ verwenden, um Dropdown-Optionen auszufüllen und wiederholbare oder einzelne Bedienfelder festzulegen. Darüber hinaus kann diese Ausgabe zur Validierung anderer Felder verwendet werden.
+* **[Verbesserungen](/help/forms/invoke-service-enhancements-rule-editor.md)** bei der Regel Bearbeiter: Für adaptive Forms, die auf Kernkomponenten basieren, können Sie die Ausgabe von Invoke Dienst verwenden, um Dropdown-Optionen auszufüllen und wiederholbare oder Kontakt Bedienfelder festzulegen. Darüber hinaus kann diese Ausgabe zur Validierung anderer Felder verwendet werden.
 
 * **[Verbessern des Anwendererlebnisses mit Navigations-Schaltflächen in Bedienfeld-Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: Sie können Ihren Bedienfeld-Layouts jetzt Navigations-Schaltflächen hinzufügen, z. B. horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistent. Diese Schaltflächen verbessern das Anwendererlebnis, indem sie die Übergänge zwischen Bedienfeldern vereinfachen und sich auf das ausgewählte Bedienfeld konzentrieren.
 
@@ -130,15 +130,15 @@ Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit,
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
-#### [HTML-E-Mail-Vorlagen in adaptivem Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### [HTML E-Mail-Vorlagen in adaptiven Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-Adaptive Forms ermöglicht die Verwendung von HTML-E-Mail-Vorlagen. Mit HTML-E-Mail-Vorlagen können Sie beim Übermitteln eines Formulars umfangreiche, personalisierte und visuell ansprechende E-Mails senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei adaptiven Formularen können Sie entweder eine Datei mit einer HTML-Vorlage hochladen oder diese Vorlagen mit einem Texteditor erstellen.
+Mit der adaptiven Forms können Sie HTML E-Mail-Vorlagen verwenden. Mit HTML-E-Mail-Vorlagen können Sie beim Übermitteln eines Formulars umfangreiche, personalisierte und visuell ansprechende E-Mails senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei adaptiven Formularen können Sie entweder eine Datei mit einer HTML-Vorlage hochladen oder diese Vorlagen mit einem Texteditor erstellen.
 
 ![HTML-E-Mail-Vorlagen](/help/forms/assets/html-email.png)
 
 #### Erweiterte Cloud-Speicher-Unterstützung: Direkter PDF-Upload in Azure Blob Storage
 
-AEM Forms Document Generation-APIs unterstützen jetzt das direkte Hochladen generierter PDF-Dokumente in Azure Blob Storage. Diese Erweiterung optimiert Speicherung und Abruf und verbessert so die Effizienz und Integration mit Cloud-Workflows.
+APIs zur AEM Forms Dokumenterstellung unterstützen jetzt die direkte Upload generierter PDF-Dokumente in Azure Blob Storage. Diese Erweiterung optimiert Speicherung und Abruf und verbessert so die Effizienz und Integration mit Cloud-Workflows.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 

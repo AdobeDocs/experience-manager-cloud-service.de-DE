@@ -1,20 +1,20 @@
 ---
 title: Aktualisieren Ihres Inhalts über AEM-APIs
-description: In diesem Teil der AEM Headless-Entwickler-Journey erfahren Sie, wie Sie mit den verfügbaren APIs auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
+description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit den verfügbaren APIs auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d8e4fdc4f79e40a43a6845ab083dc231444b9c99
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 78%
+source-wordcount: '578'
+ht-degree: 97%
 
 ---
 
 # Aktualisieren Ihres Inhalts über AEM-APIs {#update-your-content}
 
-In diesem Teil der [AEM Headless-Entwickler-Journey](overview.md) erfahren Sie, wie Sie mit den verfügbaren APIs auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie mit den verfügbaren APIs auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 
 ## Ihre bisherige Tour {#story-so-far}
 
@@ -29,13 +29,13 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
 ## Ziel {#objective}
 
 * **Zielgruppe**: Fortgeschrittene
-* **Ziel**: Erfahren Sie mehr über die APIs, die für den Zugriff auf und die Aktualisierung der Inhalte Ihrer Inhaltsfragmente verfügbar sind.
+* **Ziele**: Sie erfahren, wie Sie mit den verfügbaren APIs auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können:
 
 ## AEM-APIs zur Verwendung mit Inhaltsfragmenten {#aem-apis-for-use-with-content-fragments}
 
 Adobe Experience Manager (AEM) as a Cloud Service bietet mehrere APIs für die Bereitstellung strukturierter Inhalte über Inhaltsfragmente und die Verwaltung von Inhaltsfragmenten. Weitere Informationen zu den spezifischen APIs finden Sie auf den einzelnen Seiten.
 
-* AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten
+* Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI
    * Diese API erstellt JSON-Antworten für die Bereitstellung strukturierter Inhalte aus Inhaltsfragmenten in AEM.
    * Sie verwendet einen Pfad zu einem Inhaltsfragment als Endpunkt.
    * Diese API basiert auf REST.
@@ -47,7 +47,7 @@ Adobe Experience Manager (AEM) as a Cloud Service bietet mehrere APIs für die B
    * Diese APIs sind für die Verwaltung strukturierter Inhalte vorgesehen.
    * Die jeweiligen GET-Operatoren sind nicht für die Inhaltsbereitstellung optimiert.
    * Diese API basiert auf REST.
-* Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API
+* Unterstützung von Inhaltsfragmenten im AEM Assets-HTTP-API
    * Die ursprüngliche API für die JSON-Ausgabe für die Bereitstellung strukturierter Inhalte in AEM.
       * Diese API ist zwar robust und bewährt, liefert jedoch keine *vollständig hydrierte* JSON-Ausgabe. Verweise werden nur als Pfade ausgegeben, sodass sekundäre API-Anfragen zum Abrufen weiterer Inhalte erforderlich sind.
    * Die Assets-HTTP-API kann auch zum Verwalten der Inhaltsfragmente und Inhaltsfragmentmodelle (CRUD) verwendet werden.
@@ -58,8 +58,8 @@ Adobe Experience Manager (AEM) as a Cloud Service bietet mehrere APIs für die B
 
 Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 
-* Die verfügbaren AEM-APIs verstehen.
-* Erfahren Sie, wie Inhaltsfragmente in diesen APIs unterstützt werden.
+* Grundlegendes zu verfügbaren AEM-APIs.
+* Grundlegendes dazu, wie Inhaltsfragmente in diesen APIs unterstützt werden.
 
 Sie sollten Ihre AEM-Headless-Tour fortsetzen, indem Sie als Nächstes das Dokument [Wie man alles zusammenfügt – Ihre App und Ihre Inhalte in AEM Headless](put-it-all-together.md) lesen, in dem Sie sich mit den Grundlagen der AEM-Architektur und den Tools vertraut machen, die Sie zum Zusammenstellen Ihrer Anwendung benötigen.
 
@@ -67,10 +67,10 @@ Sie sollten Ihre AEM-Headless-Tour fortsetzen, indem Sie als Nächstes das Dokum
 
 * [Adobe Experience Manager as a Cloud Service-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md)
-* [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+* [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
 * [AEM-GraphQL-API für die Bereitstellung von Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md)
 * [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md)
-* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
+* [Unterstützung von Inhaltsfragmenten im AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 * [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 * [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

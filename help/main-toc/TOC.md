@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6152'
 ht-degree: 95%
 
 ---
@@ -1122,7 +1122,7 @@ ht-degree: 95%
       + [Aktualisieren Ihrer Inhaltsfragmente für UUID-Referenzen](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Beispiele für GraphQL-Abfragen](/help/headless/graphql-api/sample-queries.md)
       + [Fehlerbehebung bei GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [OpenAPIs für Inhaltsfragmente und -modelle](/help/headless/content-fragment-openapis.md)
    + [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=de)
    + Sicherheit {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 95%
       + Universeller Editor {#universal-editor}
          + [Einführung](/help/implementing/universal-editor/introduction.md)
          + [Anwendungsfälle](/help/implementing/universal-editor/use-cases.md)
+         + [Der universelle Editor und der Sites-Editor](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Attribute und Elementtypen](/help/implementing/universal-editor/attributes-types.md)
          + [Komponentendefinition](/help/implementing/universal-editor/component-definition.md)
          + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
