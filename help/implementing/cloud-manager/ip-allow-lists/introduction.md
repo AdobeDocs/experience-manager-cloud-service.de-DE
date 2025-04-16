@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 100%
 
 ---
@@ -81,7 +81,3 @@ Wenn Sie die [IP-Zulassungsliste hinzufügen](/help/implementing/cloud-manager/i
 Stellen Sie sicher, dass diese Cloud Manager-IP-Zulassungsliste hinzugefügt wird, um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden. Wenden Sie dann die Liste auf die Autorenumgebung an, *bevor* Sie die Pipeline aktivieren.
 
 Weitere Informationen finden Sie unter [Anwenden von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) und [Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
-
-### Universeller Editor und IP-Zulassungslisten {#universal-editor}
-
-{{ip-allow-lists-ue}}
