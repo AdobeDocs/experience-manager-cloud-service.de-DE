@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 | [Traffic-Filterregeln, einschließlich WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Deklarieren von Regeln zur Verhinderung von schädlichem Traffic |
 | [Anfrageumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form der Traffic-Anforderung |
 | [Reaktionsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form für die Antwort für eine gegebene Anfrage |
-| [Client-seitige Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Deklarieren von Client-seitigen Umleitungen im Stil 301/302 |
+| [Server-seitige Weiterleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Server-seitige Weiterleitungen im Stil 301/302 deklarieren |
 | [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Deklarieren von Regeln, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen |
 | [CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Überschreiben der standardmäßigen Fehlerseite, wenn der AEM-Ursprung nicht erreicht werden kann, und Referenzieren des Speicherorts des selbst-gehosteten statischen Inhalts in der Konfigurationsdatei |
 | [CDN-Bereinigung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Deklarieren der API-Bereinigungsschlüssel für die Bereinigung des CDN |

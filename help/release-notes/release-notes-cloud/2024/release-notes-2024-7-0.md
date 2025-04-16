@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.7.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
+source-git-commit: 47b6d7871201cd7dbc1db77620879e69bce4ad3a
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -61,7 +61,7 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Sie können von Ihrer
 
 **Hochladen von Assets mit dem Asset-Wähler**
 
-Der Asset-Selektor bietet Inhaltsautoren jetzt die Möglichkeit, fertige Assets direkt aus dem Selektor hochzuladen, indem sie sie entweder aus dem lokalen Dateisystem ziehen oder darin suchen. Mit dieser Funktion können endgültige Assets von der Anwendung Ihrer Wahl in das DAM hochgeladen werden.
+Asset Selector now offers the ability for content authors to upload final assets directly from the selector, by either dragging or by browsing from the local file system. This functionality allows final assets to be uploaded to the DAM from the application of your choice.
 
 ### Early-Access-Funktion in Dynamic Media {#dm-early-access}
 
@@ -75,13 +75,13 @@ Um frühzeitig Zugang zur Unterstützung für KI-generierte Untertitel in Ihrem 
 
 **Integration von Content Credentials**
 
-Experience Manager Assets unterstützt jetzt Content Credentials für unterstützte Bildformate. Diese Funktion liefert Informationen zur Herkunft des Assets und dazu, wie es erstellt wurde, einschließlich Informationen dazu, ob es mithilfe von GenAI geändert wurde.
+Experience Manager Assets unterstützt jetzt Content Credentials für unterstützte Bildformate. This ability provides information on the lineage of the asset and how it was created, including if it was modified using GenAI.
 
 ![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **Visuelle Vorschau des Ordnerinhalts**
 
-Experience Manager Assets zeigt jetzt beim Durchsuchen oder Suchen nach Inhalten eine visuelle Vorschau der Ordnerinhalte auf der Ordnerminiatur an, was die Auffindbarkeit von im AEM Assets-Repository verfügbaren Assets verbessert.
+Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within the AEM Assets repository.
 
 <!--
 
@@ -102,7 +102,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare
 
-Autoren von adaptiven Formularen können wiederholbare Formularfelder und vordefinierte Visual Rule Editor-Funktionen verwenden, um komplexe Geschäftslogik in Formularen zu erstellen, ohne dass sie angepasst oder vom Entwicklungs-Team unterstützt werden müssen.
+Adaptive form authors can use repeatable form fields and out-of-the-box visual rule editor functions to create complex business logic in forms without needing customization or support from the development team.
 
 ### Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -112,7 +112,7 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 #### Erstellen adaptiver Formulare mit dem universellen Editor
 
-Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) von Adobe Experience Manager, um adaptive Formulare mithilfe von Drag-and-Drop-Authoring mit WYSIWYG zu erstellen, und zwar sowohl für Headless- als auch für Headful-Anmeldeerlebnisse. Bereitgestellt wird diese Funktion über Edge Delivery Services. Autoren adaptiver Formulare können auf einfache Weise Experimente für Varianten der Formulare auf den Webseiten erstellen und starten. Auf diese Weise können sie die Erlebnisse für Endbenutzer ermitteln, die am besten funktionieren.
+Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) von Adobe Experience Manager, um adaptive Formulare mithilfe von Drag-and-Drop-Authoring mit WYSIWYG zu erstellen, und zwar sowohl für Headless- als auch für Headful-Anmeldeerlebnisse. Bereitgestellt wird diese Funktion über Edge Delivery Services. Adaptive form authors can easily create and launch experiments for variations of the forms in the web pages. This ability lets them determine the best performing experiences for end users.
 
 >[!IMPORTANT]
 >
@@ -124,7 +124,7 @@ Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/
 
 Das Festlegen einer TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. Wenn aktualisierte Inhalte jedoch sofort bereitgestellt werden müssen, kann es von Vorteil sein, den CDN-Cache direkt zu bereinigen.
 
-[Erfahren Sie](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) wie Sie die Konfiguration eines Bereinigungs-API-Tokens mithilfe der Cloud Manager-Konfigurations-Pipeline selbst bereitstellen können, damit Sie [ Bereinigungs-APIs ](/help/implementing/dispatcher/cdn-cache-purge.md) einer der folgenden Varianten aufrufen können:
+[Learn how](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to self-serve the configuration of a purge API token using the Cloud Manager configuration pipeline, so you can [invoke the purge APIs](/help/implementing/dispatcher/cdn-cache-purge.md), with any of these variations:
 
 * Einzelne URL
 * Mehrere URLs unter Verwendung eines Tags
@@ -132,13 +132,13 @@ Das Festlegen einer TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiv
 
 ### Selbst durchgeführte Konfiguration des X-AEM-Edge-Key für das kundenseitig verwaltete CDN {#customermanaged-keys}
 
-Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. Dieser Workflow ist jetzt Self-Service-fähig, indem der Schlüsselwert in einer Konfigurationsdatei deklariert wird, die mithilfe der Konfigurations-Pipeline bereitgestellt wird. Dadurch werden Verzögerungen beim Onboarding einer neuen Umgebung beseitigt. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, der für die Konfiguration eines kundenseitig verwalteten CDN erforderlich war. This workflow is now self-service by declaring the key value in a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
 
-Mithilfe von Traffic-Filterregeln, zu denen auch die optional lizenzierbaren WAF-Regeln (Web Application Firewall) gehören, können Sie festlegen, welcher Traffic blockiert werden soll.
+Traffic filter rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be blocked.
 
-Jetzt können Sie [Warnhinweise abonnieren](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) sobald Ihre Traffic-Filterregeln ausgelöst werden. E-Mail-Benachrichtigungen durch das Aktionszentrum informieren Sie darüber, wenn bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
+Now, you can [subscribe to alerts](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) whenever your traffic filter rules are triggered. E-Mail-Benachrichtigungen durch das Aktionszentrum informieren Sie darüber, wenn bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
 
 ### Early-Adopter-Programme im Zusammenhang mit der Inhaltsbereitstellung {#foundation-early-adopter}
 
@@ -148,9 +148,9 @@ Senden Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>**, die angibt, 
 
 Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Passwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird – mit Verweis auf die geheimen Cloud Manager-Umgebungsvariablen. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Client-seitige Weiterleitungen (Early-Adopter-Programm) {#client-side-redirects-early-adopter}
+#### Server-Side Redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
 
-Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Verwaltung des Quell-Codes und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Configure 301/302 server-side redirects in source control, and deploy to the CDN. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
 
 #### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
 

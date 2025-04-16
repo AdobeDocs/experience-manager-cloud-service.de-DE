@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.8.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 61b40acf4f51c16a694b7c3b13ee1c480670ee3f
+source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -134,9 +134,9 @@ Senden Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>**, die angibt, 
 
 Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Passwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird – mit Verweis auf die geheimen Cloud Manager-Umgebungsvariablen. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Client-seitige Weiterleitungen (Early-Adopter-Programm) {#client-side-redirects-early-adopter}
+#### Server-seitige Weiterleitungen (Early-Adopter-Programm) {#server-side-redirects-early-adopter}
 
-Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Verwaltung des Quell-Codes und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Konfigurieren Sie Server-seitige 301/302-Weiterleitungen in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
 
 #### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
 

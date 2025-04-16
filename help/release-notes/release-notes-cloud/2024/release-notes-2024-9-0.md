@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.9.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -136,9 +136,9 @@ Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help
 
 Schützen Sie bestimmte Inhaltsressourcen mithilfe eines einfachen Authentifizierungsdialogfelds als Popup, das einen Benutzernamen und ein Passwort erforderlich macht. Diese Funktion ist in erster Linie für leichte Authentifizierungsfälle wie die Überprüfung von Inhalten durch geschäftliche Stakeholder und nicht als umfassende Lösung für Zugriffsrechte von Endbenutzenden gedacht. Die Liste der Benutzernamen und Kennwörter wird über eine Konfigurationsdatei in Git verwaltet, die über die Konfigurations-Pipeline bereitgestellt wird, mit einem Verweis auf Cloud Manager-Umgebungsvariablen vom Typ „Geheime Daten“. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-### Client-seitige Umleitungen {#client-side-redirects}
+### Server-seitige Weiterleitungen {#server-side-redirects}
 
-Deklarieren Sie [Browser-Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in einer Konfigurationsdatei für Git, die im CDN bereitgestellt und ausgewertet werden. Dies kann für Szenarien wie das Löschen von Seiten, eine geänderte Site-Struktur und die SEO-Optimierung nützlich sein.
+Deklarieren Sie [Browser-Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) in einer Konfigurationsdatei für Git, die im CDN bereitgestellt und ausgewertet werden. Dies kann für Szenarien wie das Löschen von Seiten, eine geänderte Site-Struktur und die SEO-Optimierung nützlich sein.
 
 ### Neue AEM Developer Console (öffentliche Beta-Version) {#aem-developer-console-beta}
 

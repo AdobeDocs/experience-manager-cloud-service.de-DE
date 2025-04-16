@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service bietet eine Reihe von Funktionen, die auf der Ebene [Adob
 
 * [Anforderungsumwandlungen](#request-transformations) – Änderung von Aspekten eingehender Anfragen, einschließlich Kopfzeilen, Pfaden und Parametern.
 * [Reaktionsumwandlungen](#response-transformations) – Änderung von Kopfzeilen, die sich auf dem Weg zurück zum Client befinden (z. B. einen Webbrowser).
-* [Client-seitige Umleitungen](#client-side-redirectors) – Auslösen einer Browser-Umleitung.
+* [Server-seitige](#server-side-redirectors) Weiterleitungen lösen eine Browser Redirect aus.
 * [Ursprungs-Auswahlen](#origin-selectors) – Proxy zu einem anderen Ursprungs-Backend.
 
 Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF), die steuern, welcher Traffic vom CDN erlaubt oder verweigert wird. Diese Funktion wurde bereits veröffentlicht. Weitere Informationen dazu finden Sie auf der Seite [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
@@ -393,7 +393,7 @@ data:
 > Da das von Adobe verwaltete CDN verwendet wird, konfigurieren Sie die Push-Invalidierung im Modus **managed**. Folgen Sie dazu der [Dokumentation zum Einrichten der Push-Invalidierung](https://www.aem.live/docs/byo-dns#setup-push-invalidation) für Edge Delivery Services.
 
 
-## Client-seitige Umleitungen {#client-side-redirectors}
+## Server seitige Weiterleitungen {#server-side-redirectors}
 
 Sie können Regeln für die Client-seitige Weiterleitung für 301, 302 und ähnliche Client-seitige Weiterleitungen verwenden. Wenn eine Regel übereinstimmt, antwortet das CDN mit einer Statuszeile, die den Status-Code und die Meldung enthält (z. B. HTTP/1.1 301 Permanent verschoben), sowie mit dem Speicherort-Kopfzeilen-Satz.
 

@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.4.0 von [!DNL Adobe Experience 
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -186,9 +186,9 @@ Für den unwahrscheinlichen Fall, dass das CDN nicht in der Lage ist, den Traffi
 
 ### Early-Adopter-Programm {#foundation-early-adopter}
 
-#### Client-seitige Weiterleitungen (Early Adopter-Programm) {#client-side-redirects-early-adopter}
+#### Server-seitige Weiterleitungen (Early-Adopter-Programm) {#server-side-redirects-early-adopter}
 
-Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) und Teilnahme am Early-Adopter-Programm unter **<aemcs-cdn-config-adopter@adobe.com>**.
+Konfigurieren Sie Server-seitige 301/302-Weiterleitungen in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) und Teilnahme am Early-Adopter-Programm unter **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Warnhinweise zu Traffic-Filterregeln (Early-Adopter-Programm) {#traffic-filter-rules-alerts-early-adopter}
 

@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.6.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
+source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
 workflow-type: tm+mt
 source-wordcount: '1972'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Eine Zusammenfassung der in der Version 2024.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktion in Experience Manager Sites {#new-feature-sites}
 
-**Real Use Monitoring-Datendienst (RUM)** {#real-use-monitoring}
+**Real Use Monitoring (RUM)-Datendienst** {#real-use-monitoring}
 
 Der [Real Use Monitoring-Datendienst (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) ist jetzt allgemein verfügbar und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service. Dieser Dienst gibt Benutzerinteraktionen genauer wieder und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Er liefert Kundinnen und Kunden erweiterte Einblicke in den Traffic und die Performance ihrer Seite. Damit bietet er eine wertvolle Möglichkeit, die Seiten-Performance zu verstehen und zu optimieren.
 
@@ -211,9 +211,9 @@ Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, 
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Client-seitige Weiterleitungen (Early-Adopter-Programm) {#client-side-redirects-early-adopter}
+#### Server-seitige Weiterleitungen (Early-Adopter-Programm) {#server-side-redirects-early-adopter}
 
-Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Verwaltung des Quell-Codes und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Konfigurieren Sie Server-seitige 301/302-Weiterleitungen in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
 
 #### Warnhinweise zu Traffic-Filterregeln (Early-Adopter-Programm) {#traffic-filter-rules-alerts-early-adopter}
 

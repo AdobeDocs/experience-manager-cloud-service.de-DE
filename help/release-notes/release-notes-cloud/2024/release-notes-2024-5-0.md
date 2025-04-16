@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.5.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: 11dfb2a69cd8e64c8105e5dd3945b0c341bcdf3b
+source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -214,9 +214,9 @@ Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, 
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Client-seitige Weiterleitungen (Early Adopter-Programm) {#client-side-redirects-early-adopter}
+#### Server-side redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
 
-Konfigurieren Sie Client-seitige Weiterleitungen vom Typ 301/302 in der Verwaltung des Quell-Codes und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Configure 301/302 server-side redirects in source control, and deploy to the CDN. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
 
 #### Warnhinweise zu Traffic-Filterregeln (Early-Adopter-Programm) {#traffic-filter-rules-alerts-early-adopter}
 

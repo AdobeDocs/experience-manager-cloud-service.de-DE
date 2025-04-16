@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie 301- oder 302-Umleitungen ohne Zugriff auf Gi
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Mögliche Szenarien sind etwa:
 * eine umbenannte HTML-Seite,
 * SEO-Optimierung.
 
-AEM as a Cloud Service bietet [mehrere Ansätze](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/url-redirection) zur Implementierung Client-seitiger Umleitungen. Die in diesem Artikel beschriebene Strategie Pipeline-freier Umleitungen ist allerdings in folgenden Fällen eine gute Wahl:
+AEM as a Cloud Service offers [several approaches](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/url-redirection) to implement server-side redirects, but the strategy described in this article, pipeline-free redirects, is a good choice when:
 
 * Bei den Personen, die für die Umleitungen zuständig sind, handelt es sich um Business-Anwendende, denen die erforderlichen Zugriffsrechte zum Übertragen von Dateiänderungen an die Quell-Code-Verwaltung fehlen oder die nicht die Möglichkeit haben, eine Cloud Manager-Konfigurations-Pipeline auf Web-Ebene auszuführen.
 * Der Umfang reicht von wenigen bis hin zu Zehntausenden von Umleitungen.
@@ -40,7 +40,7 @@ Das Kernstück dieser Funktion ist die Möglichkeit für AEM Apache/Dispatcher, 
 >[!NOTE]
 > Die Verwendung von Redirect Map Manager durch diese Funktion erfordert ACS Commons Version **6.7.0 oder höher**, während die Verwendung von Redirect Manager Version **6.10.0 oder höher** erfordert.
 
-Eine detaillierte schrittweise Implementierung finden Sie im Tutorial [Implementieren von Pipeline-freien URL-Umleitungen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) .
+Eine detaillierte Schritt-für-Schritt-Anleitung zur Implementierung finden Sie im Tutorial [Implementieren von Pipeline-freien URL-Umleitungen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
 
 ## Die Rewrite-Zuordnung {#rewrite-map}
 
@@ -87,5 +87,5 @@ Beachten Sie dabei Folgendes:
 
 ## Tutorials {#tutorials}
 
-1. [Implementieren von Pipeline-freien URL-Umleitungen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [Implementieren von Pipeline-freien URL-Umleitungen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
 1. [URL-Umleitungen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/url-redirection)
