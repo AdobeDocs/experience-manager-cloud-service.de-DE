@@ -1,17 +1,17 @@
 ---
-title: Wie werden Dynamic Media-Vorlagen verwaltet?
-description: Erfahren Sie, wie Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorlageneditor erstellen und mehrere Bilder und Textebenen einschließen, um Banner und Flyer schnell zu erstellen und in nachgelagerten Programmen zu verwenden.
+title: Wie werden Vorlagen  [!DNL Dynamic Media] ?
+description: Erfahren Sie, wie Sie  [!DNL Dynamic Media]  Vorlagen mit einem WYSIWYG-Vorlageneditor erstellen und mehrere Bilder und Textebenen enthalten können, um Banner und Flyer schnell zu erstellen und sie in nachgelagerten Anwendungen zu verwenden.
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c9b007626fc9ed8518ae6be054fc147be88c6a3c
+source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
 workflow-type: tm+mt
-source-wordcount: '3072'
-ht-degree: 92%
+source-wordcount: '3029'
+ht-degree: 62%
 
 ---
 
-# Dynamic Media-Vorlagen{#dynamic-media-templates}
+# Vorlagen [!DNL Dynamic Media]{#dynamic-media-templates}
 
 <table>
     <tr>
@@ -50,17 +50,17 @@ ht-degree: 92%
     </tr>
 </table>
 
-Erstellen Sie Dynamic Media-Vorlagen mit einem WYSIWYG-Vorlageneditor und schließen Sie mehrere Bilder und Textebenen ein, um Banner und Flyer schnell zu erstellen und in nachgelagerten Anwendungen zu verwenden. Sie können auch Parameter zu den Bildern und Textebenen in der Vorlage hinzufügen und [Dynamic Media-URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) verwenden, um die Werte für diese Ebenen in Echtzeit zu aktualisieren.
+Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mithilfe [!DNL Dynamic Media] Vorlagen, eines WYSIWYG-Vorlageneditors. Verwenden Sie Ihre [!DNL Dynamic Media] Vorlage in nachgelagerten Anwendungen. Eine [!DNL Dynamic Media]-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
 
 Zu den Hauptfunktionen gehören:
 
-* **Dynamic Media WYSIWYG-Vorlageneditor:** Erstellen Sie anpassbare Banner mit Bild- und Textebenen.
+* **[!DNL Dynamic Media]WYSIWYG-Vorlageneditor:** Sie anpassbare Banner mit Bild- und Textebenen.
 * **Ebenenparametrisierung:** Definieren Sie dynamische Schlüssel-Wert-Paare für Ebenen, um Aktualisierungen in Echtzeit zu ermöglichen.
-* **Dynamic Media-URL-Unterstützung:** Verwenden Sie Dynamic Media-URLs für Vorlagen und integrieren Sie personalisierte Werte aus Anwendungen von Erst- oder Drittanbietern.
+* Unterstützung für **[!DNL Dynamic Media]-URLs** Verwenden Sie [!DNL Dynamic Media]-URLs für Vorlagen und integrieren Sie personalisierte Werte aus Programmen von Erstanbietern oder Drittanbietern.
 * **Steuerung der Ebenensichtbarkeit:** Blenden Sie Ebenen nach Bedarf dynamisch aus oder ein.
 * **Intelligente Textgrößenänderung:** Passen Sie die Textgröße automatisch an bestimmte Bereiche an.
 
-Zu den wichtigsten Vorteilen von Dynamic Media-Vorlagen gehören:
+Zu den wichtigsten Vorteilen [!DNL Dynamic Media] Vorlagen gehören:
 
 * **1:1-Optimierung von der Personalisierung:** Passen Sie Inhalte an Echtzeit-Kundensignale an.
 * **Weniger manueller Aufwand:** Automatisieren und beschleunigen Sie die Inhaltserstellung und -verwaltung.
@@ -71,23 +71,24 @@ Zu den wichtigsten Vorteilen von Dynamic Media-Vorlagen gehören:
 
 >[!NOTE]
 >
->Kundinnen und Kunden mit Abonnements für die SKU für erweiterte Sicherheit können in diesem Cloud Service-Programm keine Dynamic Media-Funktionen, einschließlich Dynamic Media-Vorlagen, verwenden.
+>Kunden mit Abonnements für die SKU für erweiterte Sicherheit können in diesem Cloud Services-Programm keine [!DNL Dynamic Media]-Funktionen, einschließlich [!DNL Dynamic Media]-Vorlagen, verwenden.
 
 ## Voraussetzungen{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-Um eine Dynamic Media-Vorlage zu erstellen, benötigen Sie Folgendes:
+Um eine [!DNL Dynamic Media] Vorlage zu erstellen, benötigen Sie Folgendes:
 
-1. Zugriff auf Dynamic Media.
-1. [Die in Ihrer AEM Assets-Instanz verfügbaren Bilder müssen mit Dynamic Media synchronisiert worden sein, um sie für die Erstellung der Vorlage verwenden zu können](/help/assets/dynamic-media/config-dm.md).
+1. Zugriff auf [!DNL Dynamic Media].
+1. [Die in Ihrer Instanz verfügbaren Bilder wurden mit synchronisiert [!DNL AEM Assets] um sie  [!DNL Dynamic Media]  Erstellen der Vorlage zu verwenden](/help/assets/dynamic-media/config-dm.md).
 1. Überprüfen Sie Folgendes in der Touch-optimierten Benutzeroberfläche:
-   * Auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** wird **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**, der auf **[!UICONTROL Standardmäßig deaktiviert]** festgelegt ist, nicht auf alle AEM-Ordner angewendet (**[!UICONTROL Alle Inhalte synchronisieren]** ist deaktiviert). Weitere Informationen Sie unter [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md).
-   * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** ist für den Zielordner oder den Unterordner, in dem Sie die Vorlage nach der Erstellung speichern, auf **[!UICONTROL Für Unterordner aktivieren]** festgelegt. Weitere Informationen finden Sie unter [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md).
+   * Auf der **[!UICONTROL Seite &quot;[!DNL Dynamic Media] bearbeiten]** wird **[!UICONTROL [!DNL Dynamic Media]Synchronisierungsmodus]** der standardmäßig auf **[!UICONTROL Deaktiviert]** festgelegt ist, nicht auf alle AEM-Ordner angewendet (**[!UICONTROL Alle Inhalte synchronisieren]** ist deaktiviert). Weitere Informationen Sie unter [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md).
+   * **[!UICONTROL [!DNL Dynamic Media]Synchronisierungsmodus]** für den Zielordner oder Unterordner, in **[!UICONTROL Sie die Vorlage nach]** Erstellung speichern, auf Aktivieren für Unterordner) festgelegt. Weitere Informationen [ Sie unter  [!DNL Dynamic Media] ](/help/assets/dynamic-media/config-dm.md)Cloud Service konfigurieren.
 
-## Erstellen einer Dynamic Media-WYSIWYG-Vorlage{#how-to-create-dynamic-media-wysiwyg-template}
+## Erstellen [!DNL Dynamic Media] WYSIWYG-Vorlage{#how-to-create-dynamic-media-wysiwyg-template}
 
-Um eine Dynamic Media-Vorlage zu erstellen, führen Sie die folgenden Schritte aus:
+Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media] Vorlage zu erstellen:
 
-1. Navigieren Sie zu Ihrer [!DNL AEM Assets] Homepage und [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM] - [!DNL Dynamic Media] -](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation), um sie zum Erstellen der Vorlage zu verwenden.
+1. Navigieren Sie zu Ihrem [!DNL Assets View] und [erstellen Sie einen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in **[!UICONTROL Assets]**. Die Ordnerstruktur in **[!UICONTROL Assets]** wird in **[!UICONTROL Dynamic Media Assets]** repliziert. Verwenden Sie diesen [!UICONTROL Dynamic Media Assets]-Ordner, um Ihre [!DNL Dynamic Media] zu einem späteren Zeitpunkt zu speichern.
+1. Wählen Sie **[!UICONTROL Assets]** aus [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM] / [!DNL Dynamic Media] gleichzeitig](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation), um sie zum Erstellen der Vorlage zu verwenden.
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
 1. [Hinzufügen von Bildern zur Arbeitsfläche](#add-images-to-the-canvas)
 1. [Hinzufügen von Textebenen zur Arbeitsfläche](#add-text-to-the-canvas)
@@ -98,19 +99,19 @@ Um eine Dynamic Media-Vorlage zu erstellen, führen Sie die folgenden Schritte a
 
 Führen Sie die folgenden Schritte aus, um eine leere Arbeitsfläche zu erstellen:
 
-1. Navigieren Sie zur Assets-Ansicht und klicken Sie im linken Bedienfeld auf **[!UICONTROL Dynamic Media-Assets]**.
+1. Navigieren Sie zu [!DNL Assets View] und wählen Sie **[!UICONTROL Dynamic Media Assets]** im linken Bedienfeld aus.
 
    ![Dynamic Media-Vorlagen](/help/assets/assets/DM-Assets1.png)
 
-1. Klicken Sie auf **[!UICONTROL Vorlage erstellen]**, um die Vorlage unter Dynamic Media-Assets zu speichern, oder navigieren Sie zu einem Ordner und klicken Sie auf **[!UICONTROL Vorlage erstellen]**, um die Vorlage in diesem Ordner zu speichern. Das Dialogfeld **[!UICONTROL Neue Vorlage]** wird angezeigt.
-   ![So erstellen Sie dynamische Vorlagen, die in Echtzeit angepasst werden können:](/help/assets/assets/new-template.png)
-Zum [Erstellen eines Ordners](/help/assets/add-delete-assets-view.md) unter **[!UICONTROL Dynamic Media-Assets]** müssen Sie einen Ordner unter **[!UICONTROL Assets]** erstellen. Die Ordnerstruktur unter **[!UICONTROL Assets]** wird unter **[!UICONTROL Dynamic Media-Assets]** repliziert.
+1. Wählen Sie **[!UICONTROL Seite]** Vorlage erstellen“ aus oder navigieren Sie zu Ihrem **[!UICONTROL Dynamic Media Assets]**-Ordner und wählen Sie **[!UICONTROL Vorlage erstellen]** aus. Die Vorlage wird an dem Ort gespeichert, an dem Sie sie erstellen - entweder im Stammordner wie **[!UICONTROL Dynamic Media Assets]** oder in einem Ordner im Stammordner. Nachdem Sie auf **[!UICONTROL Vorlage erstellen]** geklickt haben, ]**das Dialogfeld**[!UICONTROL Neue Vorlage“ angezeigt.
+   ![Erstellen dynamischer Vorlagen, die in Echtzeit angepasst werden können](/help/assets/assets/new-template.png)
+
 1. Geben Sie einen Namen für die Vorlage an, definieren Sie die Breite und Höhe der Arbeitsfläche und klicken Sie auf **[!UICONTROL Erstellen]**. Es wird eine leere Arbeitsfläche mit Menüoptionen auf beiden Seiten angezeigt, die zum Erstellen der Vorlage verwendet werden können. Bewegen Sie den Mauszeiger über die Menüoptionen, um deren QuickInfo anzuzeigen.
    ![In Echtzeit anpassbare Vorlage](/help/assets/assets/blank-canvas-page.png)
 
->[!NOTE]
->
-> Der zulässige Breiten- und Höhenbereich liegt zwischen 50 und 5.000.
+   >[!NOTE]
+   >
+   > Der zulässige Breiten- und Höhenbereich liegt zwischen 50 und 5.000.
 
 **Menüoptionen im rechten Bereich:** Verwenden Sie diese Optionen, um der Arbeitsfläche die erforderlichen Bilder und Textebenen hinzuzufügen.
 
@@ -140,7 +141,7 @@ Klicken Sie in der Arbeitsflächenebene auf ![Vorlage zum schnellen Erstellen vo
 
 Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Bilder hinzuzufügen:
 
-1. Klicken Sie auf ![Banner im Handumdrehen erstellen](/help/assets/assets/add-image.svg), um das Bedienfeld [Asset-Wähler](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) anzuzeigen. Das Bedienfeld zeigt die Bilder in Ihrer AEM Assets-Instanz an, die mit Dynamic Media synchronisiert werden.
+1. Klicken Sie auf ![Banner im Handumdrehen erstellen](/help/assets/assets/add-image.svg), um das Bedienfeld [Asset-Wähler](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) anzuzeigen. Das Bedienfeld zeigt die Bilder in Ihrer AEM Assets-Instanz an, die mit [!DNL Dynamic Media] synchronisiert werden.
 1. Durchsuchen Sie das Bedienfeld oder verwenden Sie Keywords in der Suchleiste, um nach einem bestimmten Bild zu suchen.
 1. Ziehen Sie ein Bild per Drag-and-Drop auf die Arbeitsfläche, um es zu verwenden. Zum Ändern der Größe oder Neupositionieren einer Ebene auf der Arbeitsfläche gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer).
    ![Erstellen eines Banners innerhalb von Sekunden](/help/assets/assets/add-image-to-canvas.png)
@@ -151,21 +152,21 @@ Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Textebenen hinzuzu
 
 1. Klicken Sie auf ![Schnelles Erstellen neuer Banner](/help/assets/assets/add-text.svg), um der Arbeitsfläche eine Textebene hinzuzufügen und das Bedienfeld „Eigenschaften“ zu öffnen.
 1. Wählen Sie die Ebene aus und klicken Sie zum Aktualisieren auf den Text.
-1. Aktivieren Sie Option zur **[!UICONTROL intelligenten Textgrößenänderung]** im Bedienfeld „Eigenschaften“, um die Textlänge und den Schriftgrad automatisch und optimal an den vorgesehenen Bereich anzupassen.
+1. Wählen Sie **[!UICONTROL Smart Text Resize]** im Bedienfeld Eigenschaften aus, um die Textlänge und Schriftgröße automatisch so anzupassen, dass sie in den vorgesehenen Bereich optimal passen.
    ![Optimal anpassbare Banner](/help/assets/assets/add-text-layer.png)
 
-Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Schriftart, Größe, Farbe, Stil und Ausrichtung (auf der Ebene) des Textes nach Ihren Wünschen, indem Sie die Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern.
+Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Ihren Text in der erforderlichen Schriftart, Größe, Farbe, Stil und Ausrichtung (in der Ebene), indem Sie deren Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern.
 
 >[!NOTE]
 >
-> Um eine andere Schriftart als die standardmäßige Schriftfamilie Adobe Sans F2 zu verwenden, müssen Sie die Schriftartdatei hochladen und für AEM Assets und Dynamic Media veröffentlichen. Wenn einige alte Schriftarten in Ihrer Instanz vorhanden sind, führen Sie eine [erneute Verarbeitung](/help/assets/reprocessing-assets-view.md) durch, damit sie im Vorlageneditor angezeigt werden.
+> Um eine andere Schriftart als die standardmäßige Adobe Sans F2-Schriftfamilie zu verwenden, müssen Sie die Schriftartdatei hochladen und in [!AEM Assets] und [!DNL Dynamic Media] veröffentlichen. Wenn einige alte Schriftarten in Ihrer Instanz vorhanden sind, führen Sie eine [erneute Verarbeitung](/help/assets/reprocessing-assets-view.md) durch, damit sie im Vorlageneditor angezeigt werden.
 
 ### Bearbeiten oder Löschen einer Ebene {#edit-or-delete-a-layer}
 
 Führen Sie die folgenden Schritte aus, um eine Arbeitsflächenebene zu bearbeiten oder zu löschen:
 
 1. Klicken Sie auf ![Vorlagen mit Unterstützung für dynamische Aktualisierungen](/help/assets/assets/show-layers-list.svg) und wählen Sie die Ebene entweder auf der Arbeitsfläche oder über die Liste „Ebenen“ aus.
-1. Klicken Sie auf **Weitere Optionen** (![Vorlagen mit Unterstützung für Echtzeitaktualisierungen](/help/assets/assets/three-dots.svg)), um die Ebene zu bearbeiten oder zu löschen.
+1. Klicken Sie auf **[!UICONTROL Weitere Optionen]** (![Vorlagen mit Unterstützung für Echtzeitaktualisierungen](/help/assets/assets/three-dots.svg)), um die Ebene zu bearbeiten oder zu löschen.
 1. Klicken Sie auf **[!UICONTROL Löschen]**, um die Ebene zu löschen.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]**, um die Ebene mithilfe des [**[!UICONTROL Bedienfelds „Eigenschaften“]**](#reposition-resize-delete-a-layer) zu bearbeiten.
    ![Schnelle Bannererstellung](/help/assets/assets/dm-templates/edit-delete-layer.png)
@@ -195,9 +196,9 @@ Sehen Sie sich die folgenden allgemeinen Ebenenbearbeitungsaktionen an, um eine 
 
 #### Optionen für die Textformatierung{#text-formatting-options-on-properties-panel}
 
-Formatieren Sie Schriftart, Größe, Farbe, Stil und Ausrichtung (auf der Ebene) des Textes nach Ihren Wünschen, indem Sie die Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern.
+Formatieren Sie Ihren Text in die erforderliche Schriftart, Größe, Farbe, Stil, Ausrichtung (innerhalb der Ebene), indem Sie deren Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern.
+Stellen Sie sicher, **[!UICONTROL einzuschließen (Smart Text Resize]**. [!UICONTROL Smart Text Resize] arbeitet mit dem [Copyfit](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)-Algorithmus, um Text im Textbereich optimal auszufüllen, Textüberlauf zu verhindern und zusätzlichen Platz am unteren Rand des Textes zu minimieren.
 
-**[!UICONTROL Intelligente Textgrößenänderung:]** Schließen Sie **[!UICONTROL Intelligente Textgrößenänderung]** ([Copyfit](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) ein, um einen beliebigen Text im vorgesehenen Bereich durch die intelligente Anpassung von Schriftgröße und -länge optimal anzupassen. Diese Funktion verhindert einen Textüberlauf und minimiert zusätzliche Leerzeichen am unteren Rand des Textes.
 ![Inhaltserstellung im Handumdrehen](/help/assets/assets/smart-text-resize.png)
 
 ### Parametrisieren von Ebenen {#parameterise-a-layer}
@@ -207,7 +208,7 @@ Nachdem Sie eine Vorlage mit mehreren Bild- und Textebenen erstellt haben, param
 So parametrisieren Sie eine Ebene:
 
 1. Klicken Sie auf ![Sofortige Inhaltserstellung](/help/assets/assets/show-layers-list.svg), wählen Sie eine Ebene aus und klicken Sie auf **[!UICONTROL Parameter]**. Das Bedienfeld **[!UICONTROL Parameter]** wird angezeigt.
-1. Schalten Sie **[!UICONTROL Parameter einschließen]** um, um eine Eigenschaft zu parametrisieren. Informationen zum Verhalten der Eigenschaft nach der Parametrisierung finden Sie [hier](#parameterisation-options-or-allowed-parameters).
+1. Schalten Sie **[!UICONTROL Parameter einschließen]** um, um eine Eigenschaft zu parametrisieren. Siehe [Option für das Bedienfeld „Parameter](#parameterisation-options-or-allowed-parameters), um das Verhalten der Eigenschaft nach der Parametrisierung zu erfahren.
 1. **Optional:** Benennen Sie den Parameter um. Ein Parametername hat einen Ebenennamen, gefolgt von einem Suffix. Für eine ausgewählte Ebene verwenden alle parametrisierten Eigenschaften denselben Ebenennamen, gefolgt von einem variierenden Suffix. Benennen Sie den Ebenennamen um, indem Sie der semantischen Namenskonvention folgen, sodass bei Aufnahme des Parameters in die URL der Parametername selbst den Inhalt oder den Zweck der Ebene erklärt.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
    ![Sofortige Inhaltserstellung](/help/assets/assets/parameterise-a-layer.png)
@@ -219,21 +220,21 @@ Die parametrisierten Eigenschaften können als URL-Parameter in die Vorlagen-URL
 
 **Bildparameter:**
 
-**X:** Fügen Sie dies ein, um die Ebene horizontal entlang ihrer Mittellinie parallel zur x-Achse der Vorlagenebene zu verschieben, indem der Wert des Parameters in der URL geändert wird.
-**Y:** Fügen Sie dies ein, um die Ebene vertikal entlang ihrer Mittellinie parallel zur y-Achse der Vorlagenebene zu verschieben, indem der Wert des Parameters in der URL geändert wird.
-**Breite:** Fügen Sie dies ein, um die Breite der Ebene anzupassen, indem der Wert des Parameters in der URL geändert wird.
-**Höhe** Fügen Sie dies ein, um die Höhe der Ebene anzupassen, indem der Wert des Parameters in der URL geändert wird.
-**Ausblenden:** Fügen Sie dies ein, um die Ebene in der Vorlage mit 0 (Anzeigen) und 1 (Ausblenden) ein- oder auszublenden.
-**Quelle:** Fügen Sie dies ein, um das Bild der Ebene durch ein neues Bild zu ersetzen, indem der Bildpfad im Wert des Parameters in der URL geändert wird.
+**[!UICONTROL X]:** Einfügen, um die Ebene horizontal entlang ihrer Mittellinie parallel zur X-Achse der Vorlagenebene zu verschieben, indem der Parameterwert in der URL geändert wird.
+**[!UICONTROL Y]:** Einfügen, um die Ebene vertikal entlang ihrer Mittellinie parallel zur Y-Achse der Vorlagenebene zu verschieben, indem der Parameterwert in der URL geändert wird.
+**[!UICONTROL Breite]:** Sie ein, um die Breite der Ebene anzupassen, indem Sie den Wert des Parameters in der URL ändern.
+**[!UICONTROL Höhe]:** Sie ein, um die Höhe der Ebene anzupassen, indem Sie den Parameterwert in der URL ändern.
+**[!UICONTROL Ausblenden]:** Einschließen, um die Ebene in der Vorlage mit 0 (Anzeigen) und 1 (Ausblenden) ein- oder auszublenden.
+**[!UICONTROL Source]:** Include, um das Ebenenbild durch ein neues Bild zu ersetzen, indem der Bildpfad im Parameterwert in der URL geändert wird.
 
 **Textformatierungsparameter:**
 
 Schließen Sie die folgenden Parameter ein, um den Text, seine Schriftart, Farbe und Größe aus der URL zu bearbeiten, indem Sie die Werte des Parameters in der URL aktualisieren.
 
-**Text:** Fügen Sie dies ein, um Text in der URL zu aktualisieren.
-**Schriftfamilie:** Fügen Sie dies ein, um die Schriftart des Textes in der URL zu aktualisieren.
-**Schriftgröße:** Fügen Sie dies ein, um die Schriftgröße des Textes in der URL zu aktualisieren.
-**Textfarbe:** Fügen Sie dies ein, um die Schriftfarbe des Textes in der URL zu aktualisieren.
+**[!UICONTROL Text]:** Include , um Text aus der URL zu aktualisieren.
+**[!UICONTROL Schriftfamilie]:** Include , um die Schriftart des Textes in der URL zu aktualisieren.
+**[!UICONTROL Schriftgröße]:** Einschließen, um die Schriftgröße des Textes in der URL zu aktualisieren.
+**[!UICONTROL Textfarbe]:** Einfügen, um die Schriftfarbe des Textes in der URL zu aktualisieren.
 
 ### Gruppieren von Ebenen für die gleichzeitige Steuerung Ihrer Sichtbarkeit{#group-layers}
 
@@ -243,8 +244,8 @@ Führen Sie diese Schritte aus, um den Ausblendungsparametern (![schnelle Inhalt
 
 1. Navigieren Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#parameterise-a-layer) einer Ebene.
 1. Schalten Sie den Parameter **[!UICONTROL Ausblenden]** ein, falls er nicht zuvor parametrisiert wurde.
-1. **Optional:** Benennen Sie den Parameter „Ausblenden“ um.
-1. Kopieren Sie den Namen „Parameter ausblenden“.
+1. **Optional:** Benennen Sie den Parameter **[!UICONTROL Ausblenden]** um.
+1. Kopieren Sie den **[!UICONTROL Hide]**-Parameternamen.
 1. Wechseln Sie zum Bedienfeld „Parameter“ anderer Ebenen, indem Sie sie auf der Arbeitsfläche auswählen und ihren Parameter **[!UICONTROL Ausblenden]** umschalten, falls er nicht parametrisiert ist.
 1. Ersetzen Sie den Namen **[!UICONTROL Parameter ausblenden]** durch den kopierten Namen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Ebenen zu gruppieren.
@@ -260,8 +261,8 @@ Führen Sie die folgenden Schritte aus, um die Vorlage in der Vorschau anzuzeige
    1. Wählen Sie eine Bildebene aus, klicken Sie auf ![Inhalt spontan erstellen](/help/assets/assets/add-image.svg), wählen Sie ein Bild aus der Asset-Auswahl aus und klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
    Die Vorlage wird sofort aktualisiert, wobei der bearbeitete Text angezeigt und das vorherige Bild durch das neue Bild ersetzt wird. Darüber hinaus spiegelt der Bildparameterwert den neuen Bildpfad wider. Auf ähnliche Weise können Sie die Größe einer Ebene ändern, indem Sie ihre Werte anpassen. Die Änderungen werden dann in Echtzeit auf die Vorlage angewendet.
-1. Wählen Sie den Parameter „Ausblenden“ für [gruppierte Ebenen](#group-layers) aus der Liste aus, um sie zusammen in der Vorlage ein- oder auszublenden.
-1. **Optional:** Ändern Sie den Wert des Parameters **[!UICONTROL Ausblenden]** von 0 auf 1 oder umgekehrt und klicken Sie auf **[!UICONTROL Aktualisieren]**, um die Änderungen anzuzeigen. Ebenen mit demselben Parameter „Ausblenden“ werden zusammen ausgeblendet oder angezeigt. Auf ähnliche Weise können Sie die Sichtbarkeit der Ebenen über die URL steuern.
+1. Wählen Sie den **[!UICONTROL Ausblenden]** für [gruppierte Ebenen](#group-layers) aus der Liste aus, um sie zusammen in der Vorlage ein- oder auszublenden.
+1. **Optional:** Ändern Sie den Wert des Parameters **[!UICONTROL Ausblenden]** von 0 auf 1 oder umgekehrt und klicken Sie auf **[!UICONTROL Aktualisieren]**, um die Änderungen anzuzeigen. Ebenen mit demselben Parameter **[!UICONTROL Ausblenden]** werden zusammen ausgeblendet oder angezeigt. Auf ähnliche Weise können Sie die Sichtbarkeit der Ebenen über die URL steuern.
 
    ![Inhalt spontan erstellen](/help/assets/assets/dm-templates-publish-status.png)
 Sie können auch **[!UICONTROL Alle Parameter einbeziehen]** umschalten, um alle angezeigten Parameterwerte zu bearbeiten und die Aktualisierungen in der Vorlagenvorschau anzuzeigen.
@@ -278,11 +279,11 @@ Die ausgewählten Parameter auf der Seite **[!UICONTROL Vorschau]** werden zu de
 
 So kopieren Sie die in der Vorschau angezeigte URL der veröffentlichten Vorlage:
 
-1. Klicken Sie auf **[!UICONTROL URL kopieren]**. Das Dialogfeld **[!UICONTROL URL kopieren]** wird angezeigt. Wählen Sie die angezeigte URL aus und kopieren Sie sie. Beachten Sie, dass der erste Parameter in der URL nach einem Fragezeichen (**?)** beginnt, während ein Schlüssel-Wert-Paar mit **$** beginnt und mit **&amp;** endet. Schlüssel und Wert werden durch ein Gleichheitszeichen (**=**) getrennt, wobei sich der Schlüssel links und der Wert rechts befindet.
+1. Klicken Sie auf **[!UICONTROL URL kopieren]**. Das Dialogfeld **[!UICONTROL URL kopieren]** wird angezeigt. Wählen Sie die angezeigte URL aus und kopieren Sie sie. Der erste Parameter in der URL beginnt nach einem Fragezeichen **([!UICONTROL ?])** und ein Schlüssel-Wert-Paar beginnt mit **[!UICONTROL $]** und endet mit **[!UICONTROL &amp;]**. Schlüssel und Wert werden durch ein Gleichheitszeichen **([!UICONTROL =])** getrennt, wobei der Schlüssel links und der Wert rechts liegen.
 1. Fügen Sie diese URL in Ihre Browser-Registerkarte ein und sehen Sie sich Ihre Live-Vorlage an. Passen Sie die Vorlage in Echtzeit an, indem Sie den erforderlichen Parameterwert (Schlüsselwert) in der URL direkt aktualisieren, wie in [Schritt 2](#preview-and-publish-template-and-copy-template-deliver-url) des Abschnitts **Vorschau und Veröffentlichung** gezeigt.
 1. Verwenden Sie diese URL für das schnelle Merchandising Ihrer Produkte oder Services. Sie können diese URL für Ihre Kundschaft freigeben oder in Ihre Website oder eine nachgelagerte Drittanbieteranwendung integrieren, um das Banner anzuzeigen und Aktualisierungen daran in Echtzeit vorzunehmen, sodass die laufenden Angebote widergespiegelt werden.
 
-In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine Dynamic Media-Vorlage erstellen.
+In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine [!DNL Dynamic Media] erstellen.
 >[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Vornehmen von Aktualisierungen an der Vorlage in Echtzeit über die URL{#update-the-template-from-the-url}
@@ -291,8 +292,8 @@ Das direkte Bearbeiten von Parametern in der URL kann mühsam sein. Zur Vereinfa
 
 1. Kopieren Sie die URL und fügen Sie sie in einen Editor ein.
 1. Verwenden Sie Befehlstaste+F (Mac) bzw. Strg+F (Windows), um die Parameterwerte zu finden und zu bearbeiten. Beispiel:
-   * Ersetzen von Bildpfaden für Bildebenen.
-   * Passen Sie die Dimensionen und Positionen von Ebenen an (falls sie [parametrisiert](#parameterise-a-layer) sind).
+   * Suchen und Ersetzen von Bildpfaden für Bildebenen.
+   * Finden Sie die [parametrisierten) Koordinaten, Breite und Höhe ](#parameterise-a-layer) Ebene, um ihre Werte anzupassen.
    * Bearbeiten Sie Text, Schriftart, Farbe, Größe oder Ausrichtung für Textebenen.
    * Ändern Sie die Sichtbarkeitswerte zwischen 0 und 1.
 
@@ -302,14 +303,14 @@ Fügen Sie diese aktualisierte URL in Ihren Browser ein, um die Änderungen anzu
 
 Gehen Sie wie folgt vor, um die Vorlage zu bearbeiten:
 
-1. Klicken Sie in der Assets-Ansicht auf die Option für **[!UICONTROL Dynamic Media-Assets]**.
+1. Klicken Sie [!DNL Assets view] auf **[!UICONTROL Dynamic Media Assets]**.
 2. Navigieren Sie zum Speicherort der Vorlage.
 3. Wählen Sie die Vorlage aus.
 4. Klicken Sie auf **[!UICONTROL Vorlage bearbeiten]**. Auf der Vorlagenarbeitsfläche werden die Vorlage und die Liste aller zugehörigen Ebenen im Bedienfeld „Ebenen“ angezeigt. Bearbeiten Sie Ihre Vorlage gemäß Ihren Anforderungen.
 
 ## Fügen Sie einen Link für Aktionsaufrufe (CTA) zu Ihrer Vorlagenebene hinzu{#add-CTA-in-dynamic-media-templates}
 
-Wandeln Sie eine Bild- oder Textebene Ihrer Dynamic Media-Vorlage in einen Hyperlink um, indem Sie einen CTA-Link hinzufügen, der Benutzer zu einer Zielseite weiterleitet. Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufügen:
+Wandeln Sie eine Bild- oder Textebene Ihrer [!DNL Dynamic Media] in einen Hyperlink um, indem Sie einen CTA-Link hinzufügen, der Benutzer zu einer Zielseite weiterleitet. Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufügen:
 
 1. Navigieren Sie zu Ihrem Vorlagenspeicherort, wählen Sie die Vorlage aus und klicken Sie auf ![Bearbeiten](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Vorlage bearbeiten]**. Die Vorlage wird auf der Arbeitsfläche angezeigt.
 1. Wählen Sie die Vorlagenebene aus und [navigieren Sie zum Eigenschaften](#edit-or-delete-a-layer), um ihr einen CTA-Link hinzuzufügen.
@@ -348,12 +349,12 @@ Sehen Sie sich dieses Video Schritt für Schritt an, um zu erfahren, wie Sie ein
 
 * Nachdem Sie eine Vorlage mit parametrisierten Bildebenen für dynamische Aktualisierungen erstellt haben, stellen Sie sicher, dass die für zukünftige Aktualisierungen vorgesehenen Bilder dieselben Abmessungen wie die parametrisierten Bilder aufweisen. Dadurch passen die Bilder perfekt in die Ebenen, ohne Überlauf oder leere Räume. Derzeit unterstützt die Vorlage keine automatischen Anpassungen der Abmessungen, um Bilder in die Ebenen einzupassen.
 * In einer Textebene werden keine Unterzeichenfolgen unterstützt. Benutzende können auf die Unterzeichenfolge einer Textebene keine anderen Schrifteigenschaften anwenden.
-* Die Unterstützung mehrerer Dynamic Media-Unternehmen ist bei Dynamic Media-Vorlagen derzeit nicht verfügbar.
-* Beim Kopieren oder Verschieben zeigt die Zielauswahl alle Ordner an (einschließlich nicht mit Dynamic Media synchronisierter Ordner). Außerdem werden derzeit nicht die Dynamic Media-Vorlagen-Assets angezeigt (beides sind Einschränkungen der Zielauswahl).
-* Jeder Aktualisierungsvorgang für einen Ordner (z. B. Veröffentlichen oder Löschen) über den Abschnitt „Assets“ wirkt sich auf die in diesem Ordner verfügbaren Dynamic Media-Vorlagen aus.
-* Der Papierkorb kann für Dynamic Media-Vorlagen nicht verwendet werden. Wenn ein Asset in den Papierkorb verschoben und dann wiederhergestellt wird, wird das Asset in AEM wiederhergestellt, aber nicht in Dynamic Media. Dasselbe gilt für Dynamic Media-Vorlagen.
+* Die Unterstützung mehrerer [!DNL Dynamic Media] Unternehmen ist derzeit nicht mit [!DNL Dynamic Media] Vorlagen verfügbar.
+* Bei Kopieren oder Verschieben zeigt der Zielselektor alle Ordner an (einschließlich nicht [!DNL Dynamic Media] synchronisierter Ordner). Außerdem werden derzeit nicht die Assets der [!DNL Dynamic Media]-Vorlage angezeigt (beides sind Einschränkungen der Zielauswahl).
+* Jeder Aktualisierungsvorgang eines Ordners (z. B. Veröffentlichen oder Löschen) aus dem Abschnitt Assets wirkt sich auf die in diesem Ordner verfügbaren [!DNL Dynamic Media] aus.
+* Papierkorb funktioniert nicht für [!DNL Dynamic Media] Vorlagen. Wenn ein Asset in den Papierkorb verschoben und dann wiederhergestellt wird, wird das Asset in AEM wiederhergestellt, jedoch nicht in [!DNL Dynamic Media]. Dasselbe gilt für [!DNL Dynamic Media] Vorlagen.
 
 ## Siehe auch
 
-1. Erkunden von [Dynamic Media und seinen Funktionen](/help/assets/dynamic-media/dynamic-media.md)
-1. Erkunden von [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md)
+1. Erkunden Sie [[!DNL Dynamic Media] und seine Möglichkeiten](/help/assets/dynamic-media/dynamic-media.md)
+1. Erkunden Sie [[!DNL Dynamic Media] mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md)
