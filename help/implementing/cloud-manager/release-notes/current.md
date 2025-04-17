@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 6d6e3e452b7910148e22d95a222c1a3b674ea83b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -15,34 +15,34 @@ ht-degree: 60%
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Erfahren Sie mehr über die Cloud Manager-Version 2025.4.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Erfahren Sie mehr über die Version Cloud Manager 2025.4.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 
 Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Veröffentlichungsdaten {#release-date}
 
-Die Version 2025.4.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, dem Freitag, 10. April 2025 veröffentlicht.
+Die Version 2025.4.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, dem 10. April 2025 veröffentlicht.
 
-Die Veröffentlichung der nächsten Version ist für Donnerstag, den Freitag, 8. Mai 2025 geplant.
+Die Veröffentlichung der nächsten Version ist für Donnerstag, den 8. Mai 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
 * **(UI) Verbesserte Sichtbarkeit der Bereitstellung**
 
-  Die Seite mit den Details zur Pipeline-Ausführung in Cloud Manager zeigt jetzt eine Statusmeldung (“*Warten - Andere Aktualisierung läuft*) an, wenn eine Bereitstellung darauf wartet, dass eine andere Bereitstellung abgeschlossen wird. Dieser Workflow erleichtert das Verständnis der Sequenzierung während der Umgebungsbereitstellung.  <!-- CMGR-66890 -->
+  Die Seite mit den Details zur Pipeline-Ausführung in Cloud Manager zeigt jetzt eine Statusmeldung („*Warten – andere Aktualisierung wird durchgeführt*“) an, wenn eine Bereitstellung darauf wartet, dass eine andere Bereitstellung abgeschlossen wird. Dieser Workflow erleichtert es, die Sequenzierung während der Umgebungsbereitstellung zu verstehen.  <!-- CMGR-66890 -->
 
   ![Dialogfeld „Entwicklungsbereitstellung“ mit Details und Aufschlüsselung](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-* Verbesserung der **(UI)-Domain-Validierung**
+* **(UI) Optimierung der Domain-Validierung**
 
-  Beim Hinzufügen einer Domain zeigt Cloud Manager jetzt einen Fehler an, wenn die Domain bereits in einem Fastly-Konto installiert ist: &quot;*Die Domain ist bereits in einem Fastly-Konto installiert. Bitte entfernen Sie sie zuerst von dort, bevor Sie sie zu Cloud Service hinzufügen.*&quot;
+  Beim Hinzufügen einer Domain zeigt Cloud Manager jetzt einen Fehler an, wenn die Domain bereits in einem Fastly-Konto installiert ist: „*Die Domain ist bereits in einem Fastly-Konto installiert. Bitte entfernen Sie sie zuerst aus dem Konto, bevor Sie sie zu Cloud Service hinzufügen.*“
 
 ## Early-Adopter-Programm {#early-adoption}
 
-Nehmen Sie am Early-Adoption-Programm von Cloud Manager teil, um exklusiven Zugriff auf bevorstehende Funktionen vor deren allgemeiner Veröffentlichung zu erhalten.
+Nehmen Sie am Early-Adopter-Programm von Cloud Manager teil, um exklusiven Zugriff auf bevorstehende Funktionen vor ihrer regulären Veröffentlichung zu erhalten.
 
-Derzeit stehen die folgenden Möglichkeiten für eine frühzeitige Einführung zur Verfügung:
+Derzeit stehen die folgenden Möglichkeiten für eine frühzeitige Verwendung zur Verfügung:
 
 ### Bringen Sie Ihren eigenen Git mit – jetzt mit Unterstützung für GitLab und Bitbucket {#gitlab-bitbucket}
 
@@ -75,17 +75,17 @@ Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, sen
 
 ## Fehlerbehebungen
 
-* **Bei Zertifikaten fehlt das Feld „Allgemeiner Name (CN)**
+* **Problem mit fehlendem Feld „Allgemeiner Name (CN)“ bei Zertifikaten**
 
-  Cloud Manager löst beim Verarbeiten von EV/OV-Zertifikaten, die keinen Gebrauchsnamen (Common Name, CN) im Feld „Betreff“ enthalten, keine NullPointerException (NPE) und keine HTTP-Antwort vom Typ 500 mehr aus. Moderne Zertifikate lassen häufig die CN weg und verwenden stattdessen Subject Alternative Name (SAN). Diese Fehlerbehebung stellt sicher, dass die Abwesenheit von CN nicht mehr zu einem Fehler während des Konfigurationserstellungsprozesses führt, wenn SAN vorhanden ist. <!-- CMGR-67548 -->
+  Cloud Manager löst beim Verarbeiten von EV/OV-Zertifikaten, die keinen allgemeinen Namen (Common Name, CN) im Feld „Betreff“ enthalten, keine NullPointerException (NPE) und keine HTTP-Antwort vom Typ 500 mehr aus. Moderne Zertifikate lassen den CN häufig weg und verwenden stattdessen einen Subject Alternative Name (SAN). Diese Fehlerbehebung stellt sicher, dass die Abwesenheit des CN nicht mehr zu einem Fehler während des Konfigurationserstellungsprozesses führt, wenn ein SAN vorhanden ist. <!-- CMGR-67548 -->
 
-* **Domain-Verifizierungsproblem mit falscher Zertifikatübereinstimmung**
+* **Problem bei der Domain-Verifizierung mit falschem Zertifikatsabgleich**
 
-  Cloud Manager überprüft Domains nicht mehr fälschlicherweise mit falschen Zertifikaten. Zuvor verwendete die Validierungslogik musterbasierte Übereinstimmungen anstelle exakter Übereinstimmungen, was dazu führte, dass Domains wie `should-not-be-verified.example.com` aufgrund von Überschneidungen mit gültigen Zertifikaten für `example.com` als überprüft angezeigt wurden. Durch diese Fehlerbehebung wird sichergestellt, dass bei der Domain-Validierung jetzt auf exakte Übereinstimmungen geprüft wird, sodass fehlerhafte Zertifikatverknüpfungen vermieden werden. <!-- CMGR-67225 -->
+  Cloud Manager verifiziert Domains nicht mehr fälschlicherweise mit falschen Zertifikaten. Zuvor verwendete die Validierungslogik einen musterbasierten Abgleich anstelle exakter Übereinstimmungen, was dazu führte, dass Domains wie `should-not-be-verified.example.com` aufgrund von Überschneidungen mit gültigen Zertifikaten für `example.com` als verifiziert angezeigt wurden. Durch diese Fehlerbehebung wird sichergestellt, dass bei der Domain-Validierung jetzt auf exakte Übereinstimmungen geprüft wird, sodass fehlerhafte Zertifikatsverknüpfungen vermieden werden. <!-- CMGR-67225 -->
 
-* **Erzwungene Eindeutigkeit für Vorwärtsnamen von erweiterten Netzwerk-Ports**
+* **Erzwungene Eindeutigkeit für die Namen der Port-Weiterleitungen von erweiterten Netzwerkfunktionen**
 
-  Cloud Manager erzwingt jetzt eine eindeutige Benennung für die Weiterleitung erweiterter Netzwerk-Ports. Zuvor waren doppelte Namen zulässig, was zu Konflikten führen konnte. Diese Fehlerbehebung stellt sicher, dass jeder Port-Forward-Eintrag einen eigenen Namen hat, der mit den Best Practices für die Netzwerkkonfigurationsintegrität übereinstimmt. <!-- CMGR-67082 -->
+  Cloud Manager erzwingt jetzt eine eindeutige Benennung für die Port-Weiterleitungen erweiterter Netzwerkfunktionen. Zuvor waren doppelte Namen zulässig, was zu Konflikten führen konnte. Diese Fehlerbehebung stellt sicher, dass jeder Eintrag zu einer Port-Weiterleitung einen eindeutigen Namen hat, was den Best Practices für die Integrität der Netzwerkkonfiguration entspricht. <!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
