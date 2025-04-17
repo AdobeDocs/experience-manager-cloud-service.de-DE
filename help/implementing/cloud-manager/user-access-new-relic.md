@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 99%
+source-wordcount: '1820'
+ht-degree: 96%
 
 ---
 
@@ -169,9 +169,7 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 * [Fügen Sie New Relic gegebenenfalls zu Ihrer E-Mail-Zulassungsliste hinzu](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
 * Wenn keiner dieser Vorschläge hilft, geben Sie Feedback zum Support-Ticket.
 
-## Einschränkungen {#limitations}
-
-Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu New Relic One:
+## Nutzungshinweise {#usage-notes}
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
 * New Relic hinzugefügte Benutzer sind vom Typ **Einfach**. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
@@ -179,7 +177,7 @@ Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu Ne
 
 >[!NOTE]
 >
->Wenn in Ihrem New Relic One-Unterkonto seit 30 Tagen oder länger keine Aktivität vom Typ **Benutzeranmeldung** erkannt wird, wird der APM-Agent gestoppt und es werden keine Daten vom AEM Cloud Service an New Relic gesendet.  **Daten werden erst dann erneut gesendet, wenn Ihr Unterkonto wieder aktiviert wurde.**
+>Wenn in **New Relic One-Unterkonto seit 30 Tagen oder länger keine Aktivität** Benutzeranmeldung“ erkannt wird, wird der APM-Agent gestoppt. Daten werden nicht von AEM Cloud Service an New Relic gesendet. *Daten werden erst dann erneut gesendet, wenn Ihr Unterkonto erneut aktiviert wurde.*
 >
 >Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
 

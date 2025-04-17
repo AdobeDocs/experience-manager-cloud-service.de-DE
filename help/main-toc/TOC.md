@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
 workflow-type: tm+mt
 source-wordcount: '6152'
 ht-degree: 95%
@@ -1193,7 +1193,7 @@ ht-degree: 95%
          + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Hinzufügen eines Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Hinzufügen eines privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Hinzufügen eines externen Repositorys (eingeschränkte Beta-Version)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Hinzufügen eines externen Repositorys (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 100%
+source-wordcount: '503'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Sandbox-Programme ermöglichen eine automatische Erstellung. Bei der [Erstellung
 
 Ein Sandbox-Programm hat nur eine Entwicklungsumgebung.
 
-## Einschränkungen und Bedingungen {#limitations}
+## Nutzungsbedingungen {#usage-notes-conditions}
 
 Da Sandbox-Programme nicht für Live-Traffic vorgesehen sind, haben sie bestimmte Einschränkungen und Bedingungen für ihre Verwendung, was sie von Produktionsprogrammen unterscheidet.
 

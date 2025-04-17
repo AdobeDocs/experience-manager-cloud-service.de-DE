@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 99%
 
 ---
 
@@ -63,9 +63,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 >
 >In der Regel ist das Einrichten benutzerdefinierter Domain-Namen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Delegierung kommen, deren Behebung 1 bis 2 Werktage dauern kann. Daher wird empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-## Einschränkungen {#limitations}
-
-Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Reihe von Einschränkungen.
+## Nutzungshinweise {#usage-notes}
 
 * Benutzerdefinierte Domain-Namen werden in Cloud Manager nur für Veröffentlichungs- und Vorschau-Services für Sites-Programme unterstützt.
    * Benutzerdefinierte Domänen für Autoren-Services werden nicht unterstützt.

@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 100%
+source-wordcount: '423'
+ht-degree: 99%
 
 ---
 
@@ -36,11 +36,7 @@ Nach dem Hinzufügen können [IP-Zulassungslisten](/help/implementing/cloud-mana
 >
 >Wenn keine IP-Zulassungsliste angewendet wird, sind standardmäßig alle IP-Adressen zulässig. Wenn eine IP-Zulassungsliste angewendet wird, sind keine IP-Adressen außer den Adressen auf der IP-Zulassungsliste zulässig.
 
-## Einschränkungen {#limitations}
-
-Bevor Sie IP-Zulassungslisten verwenden, müssen Sie die folgenden Einschränkungen hinsichtlich Funktionalität, Verwendung und Auswirkung auf andere Funktionen kennen.
-
-### Allgemeine Einschränkungen von IP-Zulassungslisten {#general}
+## Nutzungshinweise {#usage-notes}
 
 * Ihrem Programm können maximal 50 IP-Zulassungslisten hinzugefügt werden.
 * Jeder IP-Zulassungsliste können maximal 50 IP/CIDR-Adressen hinzugefügt werden.

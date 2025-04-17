@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Git-Untermodule dazu verwenden können, den I
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 100%
+source-wordcount: '391'
+ht-degree: 98%
 
 ---
 
@@ -68,9 +68,7 @@ Dies führt zu einer `.gitmodules`-Datei ähnlich der Folgenden:
 
 Weitere Informationen zu Git-Untermodulen finden Sie auch im [Git-Referenzhandbuch](https://git-scm.com/book/de/v2/Git-Tools-Submodules) .
 
-## Einschränkungen und Empfehlungen {#limitations-recommendations}
-
-Beachten Sie beim Verwenden von Git-Untermodulen mit von Adobe verwalteten Repositorys die folgenden Einschränkungen.
+## Nutzungshinweise {#usage-notes}
 
 * Die Git-URL muss genau die im vorherigen Abschnitt beschriebene Syntax haben.
 * Es werden nur Untermodule im Stammverzeichnis der Verzweigung unterstützt.
@@ -92,9 +90,7 @@ Nachdem Sie Ihre Datei `pom.xml` eingerichtet haben und die `git submodule`-Bef
 
 ![Aggregator](assets/aggregator.png)
 
-### Einschränkungen und Empfehlungen {#limitations-recommendations-private-repos}
-
-Beachten Sie bei der Verwendung von Git-Untermodulen mit privaten Repositorys die folgenden Einschränkungen:
+### Nutzungshinweise {#usage-notes-recommendations-private-repos}
 
 * Git-URLs von Untermodulen können im HTTPS- oder SSH-Format vorliegen, müssen aber auf ein GitHub.com-Repository verweisen. Das Hinzufügen eines Adobe-Repository-Untermoduls zu einem GitHub-Aggregator-Repository oder umgekehrt wird nicht unterstützt.
 * Die GitHub-Untermodule müssen für die Adobe-GitHub-App zugänglich sein.

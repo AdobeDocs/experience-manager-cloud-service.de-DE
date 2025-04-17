@@ -1,23 +1,23 @@
 ---
-title: Hinzufügen externer Repositorys in Cloud Manager - Eingeschränkte Beta
+title: Hinzufügen externer Repositorys in Cloud Manager - Early Adopter
 description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Cloud Manager unterstützt die Integration mit GitHub Enterprise-, GitLab- und Bitbucket-Repositorys.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
+source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 77%
+source-wordcount: '2307'
+ht-degree: 62%
 
 ---
 
-# Hinzufügen von externen Repositorys in Cloud Manager – begrenzte Beta-Version {#external-repositories}
+# Hinzufügen externer Repositorys in Cloud Manager - Early Adopter {#external-repositories}
 
 Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Cloud Manager unterstützt die Integration mit GitHub Enterprise-, GitLab- und Bitbucket-Repositorys.
 
 >[!NOTE]
 >
->Diese Funktion ist nur für das Early-Adopter-Programm verfügbar. Weitere Informationen und die Möglichkeit, sich als Early Adopter anzumelden, finden Sie unter [Bringen Sie Ihren eigenen Git mit – jetzt mit Unterstützung für GitLab und Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
+>Die in diesem Artikel beschriebenen Funktionen sind nur über das Early-Adoption-Programm verfügbar. Weitere Informationen und die Möglichkeit, sich als frühzeitiger Anwender anzumelden, finden Sie unter [Eigenes Git mitbringen](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## Konfigurieren eines externen Repositorys
 
@@ -31,6 +31,14 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt in drei Sc
 
 
 ## Hinzufügen eines externen Repositorys {#add-ext-repo}
+
+>[!NOTE]
+>
+>Externe Repositorys können nicht mit Konfigurations-Pipelines verknüpft werden.
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -206,12 +214,88 @@ Es zeigt sich das folgende Verhalten:
 * Wenn die PR-Validierung oder die Pipeline-Trigger nicht funktionieren, stellen Sie sicher, dass das Webhook-Geheimnis sowohl in Cloud Manager als auch bei Ihrem Git-Anbieter auf dem neuesten Stand ist.
 
 
-## Einschränkung
+## Bereitstellen in einer schnellen Entwicklungsumgebung von externen Git-Anbietern {#deploy-to-rde}
 
-* Externe Repositorys können nicht mit Konfigurations-Pipelines verknüpft werden.
+>[!NOTE]
+>
+>Diese Funktion ist über das Early-Adopter-Programm verfügbar. Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:cloudmanager_byog@adobe.com) an [CloudManager_BYOG@adobe.com. Geben Sie unbedingt an, welche Git-Plattform Sie verwenden möchten und ob Sie sich in einer privaten/öffentlichen oder einer Unternehmens-Repository-Struktur befinden.
+
+Cloud Manager unterstützt die Bereitstellung von Code in schnellen Entwicklungsumgebungen (RDEs) direkt von externen Git-Anbietern bei Verwendung der [Bring Your Own Git (BYOG)-Konfiguration](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+Für die Bereitstellung in RDEs aus einem externen Git-Repository ist Folgendes erforderlich:
+
+* Die Verwendung eines externen Git-Repositorys, das in Cloud Manager integriert ist (BYOG-Setup).
+* Für Ihr Projekt muss mindestens eine RDE-Umgebung bereitgestellt werden.
+* Wenn Sie `github.com` verwenden, müssen Sie die aktualisierte GitHub-App-Installation überprüfen und akzeptieren, um die erforderlichen neuen Berechtigungen zu gewähren.
+
+**Nutzungshinweise**
+
+* Die Bereitstellung in der RDE wird derzeit nur für AEM-Inhalte und Dispatcher-Pakete unterstützt.
+* Die Bereitstellung anderer Pakettypen (z. B. vollständige AEM-Anwendungspakete) wird noch nicht unterstützt.
+* Derzeit wird das Zurücksetzen einer RDE-Umgebung mithilfe eines Kommentars nicht unterstützt. Kunden müssen die vorhandenen AIO-CLI-Befehle verwenden, wie [hier beschrieben](/help/implementing/developing/introduction/rapid-development-environments.md).
+
+**Funktionsweise**
+
+1. **Validierungsmeldung zur Code-Qualität.**
+
+   Trigger Wenn eine Pull Request (PR) eine Code-Qualitäts-Pipeline ausführt, geben die Validierungsergebnisse an, ob die Bereitstellung in einer RDE-Umgebung fortgesetzt werden kann.
+
+   So sieht es auf GitHub Enterprise aus:
+   ![Validierungsmeldung zur Code-Qualität auf GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+
+   So sieht es auf GitLab aus:
+   ![Validierungsmeldung zur Code-Qualität auf GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+
+   Wie es auf Bitbucket aussieht:
+   ![Validierungsmeldung der Code-Qualität auf Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
+
+1. **Trigger-Bereitstellung unter Verwendung eines Kommentars.**
+
+   Um die Bereitstellung zu starten, fügen Sie dem PR einen Kommentar im folgenden Format hinzu: `deploy on rde-environment-<envName>`
+
+   ![Trigger-Bereitstellung unter Verwendung eines Kommentars](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+
+   Der `<envName>` muss mit dem Namen einer vorhandenen RDE-Umgebung übereinstimmen. Wenn der Name nicht gefunden wird, wird ein Kommentar zurückgegeben, der angibt, dass die Umgebung ungültig ist.
+
+   Wenn der Umgebungsstatus nicht bereit ist, erhalten Sie den folgenden Kommentar:
+
+   ![Umgebung ist nicht bereit zur Bereitstellung](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
+1. **Umgebungsprüfung und Artefaktbereitstellung.**
+
+   Wenn die RDE bereit ist, sendet Cloud Manager eine neue Prüfung an den PR.
+
+   So sieht es auf GitHub Enterprise aus:
+
+   ![Status der Umgebung auf GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
+
+   So sieht es auf GitLab aus:
+
+   ![Status der Umgebung auf GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+   Wie es auf Bitbucket aussieht:
+
+   ![Status der Umgebung auf Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+
+
+1. **Erfolgreiche Bereitstellungsmeldung.**
+
+   Wenn die Bereitstellung abgeschlossen ist, veröffentlicht Cloud Manager eine Erfolgsmeldung, in der die in der Zielumgebung bereitgestellten Artefakte zusammengefasst werden.
+
+   So sieht es auf GitHub Enterprise aus:
+
+   ![Bereitstellungsstatus der Umgebung auf GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+
+   So sieht es auf GitLab aus:
+
+   ![Bereitstellungsstatus der Umgebung auf GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+   Wie es auf Bitbucket aussieht:
+
+   ![Bereitstellungsstatus der Umgebung auf Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 
