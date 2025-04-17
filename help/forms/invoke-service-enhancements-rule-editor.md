@@ -6,16 +6,14 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 4%
+source-wordcount: '1566'
+ht-degree: 3%
 
 ---
 
 # Verwenden des Aufrufdienstes im visuellen Regeleditor für Formulare, die auf Kernkomponenten basieren
-
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
 
 Der visuelle Regeleditor in einem adaptiven Formular unterstützt die Funktion **Dienst aufrufen** mit der Sie einen Dienst aus der Liste der für Ihre Instanz konfigurierten Formulardatenmodelle (FDM) auswählen können. Sie können Formularfelder direkt den Eingabeparametern des Dienstes zuordnen. Um Formularfelder den Ausgabeparametern zuzuordnen, verwenden Sie die Payload-Option für das Ereignis für den angegebenen Formulardatenmodell-Service. Darüber hinaus können Sie mit dem visuellen Regeleditor basierend auf den Ausgabeantworten Regeln für Erfolgs- und **für Vorgänge** Dienst aufrufen“ erstellen. Erfolgs-Handler verwalten die erfolgreiche Ausführung des Vorgangs **Service aufrufen** während Fehler-Handler alle Fehler beheben, die auftreten.
 
@@ -47,7 +45,7 @@ Wenn Sie auf **[!UICONTROL Add Success Handler]** klicken, wird der Regeleditor 
 
 Sie können mehrere Regeln hinzufügen, um erfolgreiche Antworten für den Vorgang **Service aufrufen** zu verarbeiten:
 
-![Mehrere Erfolgs-Handler](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
+![Multiple Success Handler](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 Auf ähnliche Weise können Sie Regeln hinzufügen, um die **Service aufrufen**-Ausgabeantwort zu verarbeiten, wenn der Vorgang nicht erfolgreich ist. In der folgenden Abbildung wird der Regeleditor **[!UICONTROL Invoke Service Failure Handler]** angezeigt:
 

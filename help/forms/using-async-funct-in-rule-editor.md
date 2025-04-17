@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
-source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 8%
+source-wordcount: '1409'
+ht-degree: 7%
 
 ---
 
@@ -38,8 +38,6 @@ Sie können die asynchronen Funktionen für adaptive Forms mithilfe der folgende
 * [Funktionsausgabe](#how-to-use-function-output-rule-type)
 
 ## Wie wird der Regeltyp „Aufruf der asynchronen Funktion“ verwendet?
-
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
 
 Sie können die [benutzerdefinierten Funktionen](/help/forms/custom-function-core-component-create-function.md) für asynchrone Vorgänge schreiben und die asynchronen Funktionen mithilfe des Regeltyps **[!UICONTROL Asynchroner Funktionsaufruf]** im Regeleditor konfigurieren.
 
@@ -215,9 +213,9 @@ Im obigen Beispiel ist die Funktion „asyncFunction“ eine `asynchronous funct
 
 Fügen wir eine Schaltfläche hinzu und erstellen Sie eine Regel für die Schaltfläche, die beim Klicken auf eine Schaltfläche die asynchrone Funktion aufruft, damit sie funktioniert.
 
-![Regel für asynchrone Funktion wird erstellt](/help/forms/assets/rule-for-async-funct.png){width=50%}
+![Erstellen einer Regel für eine asynchrone Funktion](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-Im folgenden Screenshot des Konsolenfensters wird gezeigt, dass beim Klicken auf die Schaltfläche `Fetch` die benutzerdefinierte `callAsyncFunction` aufgerufen wird, die wiederum eine asynchrone `asyncFunction` aufruft. Inspect zeigt das Konsolenfenster an, in dem die Reaktion auf das Klicken auf die Schaltfläche angezeigt wird:
+Im folgenden Screenshot des Konsolenfensters wird gezeigt, dass beim Klicken auf die Schaltfläche `Fetch` die benutzerdefinierte `callAsyncFunction` aufgerufen wird, die wiederum eine asynchrone `asyncFunction` aufruft. Überprüfen Sie das Konsolenfenster, um die Antwort auf den Klick auf die Schaltfläche anzuzeigen:
 
 ![Konsolenfenster](/help/forms/assets/async-custom-funct-console.png)
 
