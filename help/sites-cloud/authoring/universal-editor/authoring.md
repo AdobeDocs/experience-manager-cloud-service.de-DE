@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
+source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 98%
+source-wordcount: '1395'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren is
 
 ## Einführung {#introduction}
 
-Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, sodass Sie außergewöhnliche Erlebnisse bereitstellen und die Inhaltsgeschwindigkeit erhöhen können.
 
 Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautoren eine intuitive Benutzeroberfläche, die nur eine minimale Schulung erfordert, damit sie gleich loslegen und mit der Bearbeitung von Inhalten beginnen können. In diesem Dokument wird das Authoring-Erlebnis mit dem universellen Editor beschrieben.
 
@@ -176,7 +176,7 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 
 >[!NOTE]
 >
->Komponenten können nur dann zwischen Containern verschoben werden, wenn die Ziel-Container [Komponentenfilter](/help/implementing/universal-editor/filtering.md) die ausgewählte Komponente zulassen.
+>Komponenten können nur dann zwischen Containern verschoben werden, wenn der [Komponentenfilter](/help/implementing/universal-editor/filtering.md) des Ziel-Containers die ausgewählte Komponente zulässt.
 
 ### Erstellen von Varianten mit GenAI durch Variantengenerierung {#generate-variations-ai}
 
@@ -200,7 +200,7 @@ Informationen zum Veröffentlichen von Inhalten mit dem universellen Editor find
 
 Weitere Informationen zu den technischen Details zum universellen Editor finden Sie in diesen Entwicklerdokumenten.
 
-* [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+* [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md) - Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, sodass Sie außergewöhnliche Erlebnisse bereitstellen und die Inhaltsgeschwindigkeit erhöhen können.
 * [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](/help/implementing/universal-editor/attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
