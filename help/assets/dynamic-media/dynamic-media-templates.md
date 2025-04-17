@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie  [!DNL Dynamic Media]  Vorlagen mit einem WYS
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
-ht-degree: 62%
+source-wordcount: '3106'
+ht-degree: 55%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 62%
     </tr>
 </table>
 
-Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mithilfe [!DNL Dynamic Media] Vorlagen, eines WYSIWYG-Vorlageneditors. Verwenden Sie Ihre [!DNL Dynamic Media] Vorlage in nachgelagerten Anwendungen. Eine [!DNL Dynamic Media]-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
+Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mithilfe [!DNL Dynamic Media] Vorlagen, eines WYSIWYG-Vorlageneditors. Veröffentlichen Sie Ihre [!DNL Dynamic Media] Vorlage und verwenden Sie sie in nachgelagerten Anwendungen. Eine [!DNL Dynamic Media]-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
 
 Zu den Hauptfunktionen gehören:
 
@@ -88,7 +88,7 @@ Um eine [!DNL Dynamic Media] Vorlage zu erstellen, benötigen Sie Folgendes:
 Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media] Vorlage zu erstellen:
 
 1. Navigieren Sie zu Ihrem [!DNL Assets View] und [erstellen Sie einen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. Die Ordnerstruktur in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** wird in **[!UICONTROL Dynamic Media Assets]** repliziert. Speichern Sie Ihre [!DNL Dynamic Media] in diesem [!UICONTROL Dynamic Media Assets]-Ordner.
-1. Wählen Sie ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**aus [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM]  und  [!DNL Dynamic Media]  gleichzeitig](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) um sie zum Erstellen der Vorlage zu verwenden.
+1. Wählen Sie ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**aus [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM]  und  [!DNL Dynamic Media]  gleichzeitig](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) um sie zum Erstellen der Vorlage zu verwenden. Das Veröffentlichen von Bildern ist erforderlich, um die Bereitstellungs-URL der Vorlage zu generieren, die in nachgelagerten Anwendungen verwendet werden kann.
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
 1. [Hinzufügen von Bildern zur Arbeitsfläche](#add-images-to-the-canvas)
 1. [Hinzufügen von Textebenen zur Arbeitsfläche](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ Führen Sie die folgenden Schritte aus, um eine leere Arbeitsfläche zu erstelle
    >[!NOTE]
    >
    >  Die Vorlage wird an dem Ort gespeichert, an dem Sie sie erstellen. Wählen Sie auf [!DNL Assets View] Startseite **[!UICONTROL Dynamic Media Assets]** und klicken Sie auf **[!UICONTROL Vorlage erstellen]**, um die Vorlage im Stammordner **[!UICONTROL Dynamic Media Assets]** zu speichern.
+
 1. Geben Sie einen Namen für die Vorlage an, definieren Sie die Breite und Höhe der Arbeitsfläche und klicken Sie auf **[!UICONTROL Erstellen]**. Es wird eine leere Arbeitsfläche mit Menüoptionen auf beiden Seiten angezeigt, die zum Erstellen der Vorlage verwendet werden können. Bewegen Sie den Mauszeiger über die Menüoptionen, um deren QuickInfo anzuzeigen.
    ![In Echtzeit anpassbare Vorlage](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ Führen Sie die folgenden Schritte aus, um eine leere Arbeitsfläche zu erstelle
 * ![Anpassbare Vorlagen](/help/assets/assets/add-text.svg): Klicken Sie, um der Arbeitsfläche Texte hinzuzufügen.
 * ![Anpassbare Vorlagen](/help/assets/assets/show-layers-list.svg): Klicken Sie, um die Liste aller Ebenen (Bild und Text) auf der Arbeitsfläche anzuzeigen. Jedes Bild und jeder Text, das bzw. der der Arbeitsfläche hinzugefügt wird, wird als separate Ebene dargestellt.
 
-**Menüoptionen im linken Bereich:** Verwenden Sie diese Optionen für allgemeine Editoraktionen, wie unten beschrieben.
+**Menüoptionen im linken Bereich:** Sie diese Optionen für die folgenden allgemeinen Editor-Aktionen.
 
-* ![DM-Vorlagen](/help/assets/assets/layer-selector.svg): Wählen Sie eine Ebene aus.
-* ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg): Klicken Sie, um eine ausgewählte Ebene in den Vordergrund zu bringen, oder drücken Sie **Strg**+**]** (Windows) bzw. **Befehlstaste**+**]** (Mac).
-* ![Erstellen einer Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg): Klicken Sie, um eine ausgewählte Ebene nach hinten zu senden, oder drücken Sie **Strg**+**[** (Windows) bzw. **Befehlstaste**+**[** (Mac).
-* ![Erstellen einer Vorlage, die sofort angepasst werden kann](/help/assets/assets/undo.svg): Klicken Sie, um die letzte Aktion rückgängig zu machen, oder drücken Sie **Strg**+**Z** (Windows) bzw. **Befehlstaste**+**Z** (Mac).
-* ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/redo.svg): Klicken Sie, um die letzte Aktion wiederherzustellen, oder drücken Sie **Strg**+**Y** (Windows) bzw. **Befehlstaste**+**Y** (Mac).
-* ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/zoom-in.svg): Klicken Sie, um die Arbeitsfläche zu vergrößern, oder drücken Sie **Strg**+**+** (Windows) bzw. Befehlstaste+**+** (Mac).
-* ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/Zoom-out.svg): Klicken Sie, um die Arbeitsfläche zu verkleinern, oder drücken Sie **Strg**+**-** (Windows) oder **Befehlstaste**+**-** (Mac).
+* ![DM-Vorlagen](/help/assets/assets/layer-selector.svg): Wählen Sie ![DM-Vorlagen](/help/assets/assets/layer-selector.svg) und klicken Sie auf eine Ebene auf der Arbeitsfläche, um sie auszuwählen.
+* ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg): Klicken Sie auf ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg) oder verwenden Sie den Tastaturbefehl **Strg** + **]** (Windows) oder **Cmd** + **]** (Mac), um eine ausgewählte Ebene nach vorne zu bringen.
+* ![So erstellen Sie eine Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg): Klicken Sie auf ![So erstellen Sie eine Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg) oder verwenden Sie den Tastaturbefehl **Strg** + **[** (Windows) oder **Cmd** + **[** (Mac), um eine ausgewählte Ebene rückwärts zu senden.
+* ![Erstellen einer Vorlage, die sofort angepasst werden kann](/help/assets/assets/undo.svg): Klicken Sie auf ![Erstellen einer Vorlage, die sofort angepasst werden kann](/help/assets/assets/undo.svg) oder verwenden Sie den Tastaturbefehl **Strg** + **Z** (Windows) oder **Cmd** + **Z** (Mac), um die letzte Aktion rückgängig zu machen.
+* ![Vorlage, um Banner schnell zu erstellen](/help/assets/assets/redo.svg): Klicken Sie auf ![Vorlage, um Banner schnell zu erstellen](/help/assets/assets/redo.svg) oder verwenden Sie den Tastaturbefehl **Strg** + **Y** (Windows) oder **Cmd** + **Y** (Mac), um die letzte Aktion wiederherzustellen.
+* ![Vorlage, um schnell Flyer zu erstellen](/help/assets/assets/zoom-in.svg): Klicken Sie auf ![Vorlage, um schnell Flyer zu erstellen](/help/assets/assets/zoom-in.svg) oder verwenden Sie den Tastaturbefehl **Strg** + **+** (Windows) oder **Cmd** + **+** (Mac), um die Arbeitsfläche zu zoomen.
+* ![Vorlage, um Banner schnell zu erstellen](/help/assets/assets/Zoom-out.svg): Klicken Sie auf ![Vorlage, um Banner schnell zu erstellen](/help/assets/assets/Zoom-out.svg) oder verwenden Sie den Tastaturbefehl **Strg** + **-** (Windows) oder **Cmd** + **-** (Mac), um die Arbeitsfläche auszuzoomen.
 * Drücken Sie die **Rücktaste** oder **Entf**, um die ausgewählte Ebene zu löschen, wenn kein Text oder keine Eigenschaft bearbeitet wird.
 
-Klicken Sie in der Arbeitsflächenebene auf ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/show-layers-list.svg) **>** Weitere Optionen (![](/help/assets/assets/three-dots.svg)), um die Abmessungen der Arbeitsfläche jederzeit beim Erstellen der Vorlage zu bearbeiten.
+Klicken Sie auf ![Vorlage, um Flyer schnell zu erstellen](/help/assets/assets/show-layers-list.svg) und wählen Sie weitere Optionen (![](/help/assets/assets/three-dots.svg)) auf der Arbeitsflächen-Ebene aus, um die Arbeitsflächen-Dimensionen jederzeit beim Erstellen der Vorlage zu bearbeiten.
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ Klicken Sie in der Arbeitsflächenebene auf ![Vorlage zum schnellen Erstellen vo
 
 Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Bilder hinzuzufügen:
 
-1. Klicken Sie auf ![Banner im Handumdrehen erstellen](/help/assets/assets/add-image.svg), um das Bedienfeld [Asset-Wähler](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) anzuzeigen. Das Bedienfeld zeigt die Bilder in Ihrer AEM Assets-Instanz an, die mit [!DNL Dynamic Media] synchronisiert werden.
+1. Klicken Sie auf ![Banner im Handumdrehen erstellen](/help/assets/assets/add-image.svg), um das Bedienfeld [Asset-Auswahl](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) zu öffnen. Das Bedienfeld zeigt die Bilder in Ihrer AEM Assets-Instanz an, die mit [!DNL Dynamic Media] synchronisiert werden.
 1. Durchsuchen Sie das Bedienfeld oder verwenden Sie Keywords in der Suchleiste, um nach einem bestimmten Bild zu suchen.
 1. Ziehen Sie ein Bild per Drag-and-Drop auf die Arbeitsfläche, um es zu verwenden. Zum Ändern der Größe oder Neupositionieren einer Ebene auf der Arbeitsfläche gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer).
    ![Erstellen eines Banners innerhalb von Sekunden](/help/assets/assets/add-image-to-canvas.png)
