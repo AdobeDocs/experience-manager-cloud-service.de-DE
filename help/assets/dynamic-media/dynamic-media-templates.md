@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie  [!DNL Dynamic Media]  Vorlagen mit einem WYS
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
+source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3026'
 ht-degree: 62%
 
 ---
@@ -87,8 +87,8 @@ Um eine [!DNL Dynamic Media] Vorlage zu erstellen, benötigen Sie Folgendes:
 
 Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media] Vorlage zu erstellen:
 
-1. Navigieren Sie zu Ihrem [!DNL Assets View] und [erstellen Sie einen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in **[!UICONTROL Assets]**. Die Ordnerstruktur in **[!UICONTROL Assets]** wird in **[!UICONTROL Dynamic Media Assets]** repliziert. Verwenden Sie diesen [!UICONTROL Dynamic Media Assets]-Ordner, um Ihre [!DNL Dynamic Media] zu einem späteren Zeitpunkt zu speichern.
-1. Wählen Sie **[!UICONTROL Assets]** aus [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM] / [!DNL Dynamic Media] gleichzeitig](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation), um sie zum Erstellen der Vorlage zu verwenden.
+1. Navigieren Sie zu Ihrem [!DNL Assets View] und [erstellen Sie einen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. Die Ordnerstruktur in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** wird in **[!UICONTROL Dynamic Media Assets]** repliziert. Speichern Sie Ihre [!DNL Dynamic Media] in diesem [!UICONTROL Dynamic Media Assets]-Ordner.
+1. Wählen Sie ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**aus [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM]  und  [!DNL Dynamic Media]  gleichzeitig](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) um sie zum Erstellen der Vorlage zu verwenden.
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
 1. [Hinzufügen von Bildern zur Arbeitsfläche](#add-images-to-the-canvas)
 1. [Hinzufügen von Textebenen zur Arbeitsfläche](#add-text-to-the-canvas)
@@ -99,13 +99,15 @@ Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media] Vorlage zu 
 
 Führen Sie die folgenden Schritte aus, um eine leere Arbeitsfläche zu erstellen:
 
-1. Navigieren Sie zu [!DNL Assets View] und wählen Sie **[!UICONTROL Dynamic Media Assets]** im linken Bedienfeld aus.
+1. Navigieren Sie zu [!DNL Assets View], wählen Sie **[!UICONTROL Dynamic Media Assets]** im linken Bereich aus und navigieren Sie zu Ihrem Ordner, um Ihre Vorlage in diesem Ordner zu speichern.
 
    ![Dynamic Media-Vorlagen](/help/assets/assets/DM-Assets1.png)
 
-1. Wählen Sie **[!UICONTROL Seite]** Vorlage erstellen“ aus oder navigieren Sie zu Ihrem **[!UICONTROL Dynamic Media Assets]**-Ordner und wählen Sie **[!UICONTROL Vorlage erstellen]** aus. Die Vorlage wird an dem Ort gespeichert, an dem Sie sie erstellen - entweder im Stammordner wie **[!UICONTROL Dynamic Media Assets]** oder in einem Ordner im Stammordner. Nachdem Sie auf **[!UICONTROL Vorlage erstellen]** geklickt haben, ]**das Dialogfeld**[!UICONTROL Neue Vorlage“ angezeigt.
+1. Wählen Sie **[!UICONTROL Vorlage erstellen]** aus. Das Dialogfeld **[!UICONTROL Neue Vorlage]** wird angezeigt.
    ![Erstellen dynamischer Vorlagen, die in Echtzeit angepasst werden können](/help/assets/assets/new-template.png)
-
+   >[!NOTE]
+   >
+   >  Die Vorlage wird an dem Ort gespeichert, an dem Sie sie erstellen. Wählen Sie auf [!DNL Assets View] Startseite **[!UICONTROL Dynamic Media Assets]** und klicken Sie auf **[!UICONTROL Vorlage erstellen]**, um die Vorlage im Stammordner **[!UICONTROL Dynamic Media Assets]** zu speichern.
 1. Geben Sie einen Namen für die Vorlage an, definieren Sie die Breite und Höhe der Arbeitsfläche und klicken Sie auf **[!UICONTROL Erstellen]**. Es wird eine leere Arbeitsfläche mit Menüoptionen auf beiden Seiten angezeigt, die zum Erstellen der Vorlage verwendet werden können. Bewegen Sie den Mauszeiger über die Menüoptionen, um deren QuickInfo anzuzeigen.
    ![In Echtzeit anpassbare Vorlage](/help/assets/assets/blank-canvas-page.png)
 
@@ -267,7 +269,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage in der Vorschau anzuzeige
    ![Inhalt spontan erstellen](/help/assets/assets/dm-templates-publish-status.png)
 Sie können auch **[!UICONTROL Alle Parameter einbeziehen]** umschalten, um alle angezeigten Parameterwerte zu bearbeiten und die Aktualisierungen in der Vorlagenvorschau anzuzeigen.
    <br>
-1. Um die Vorlage auf der Vorschauseite zu veröffentlichen, klicken Sie auf **[!UICONTROL Veröffentlichen]** und bestätigen Sie die Veröffentlichung. Es wird die Meldung „Veröffentlichung abgeschlossen“ angezeigt, und der Veröffentlichungsstatus wird auf „Veröffentlicht“ aktualisiert.
+1. Um die Vorlage auf der Vorschauseite zu veröffentlichen, klicken Sie auf **[!UICONTROL Veröffentlichen]** und bestätigen Sie die Veröffentlichung. **[!UICONTROL Veröffentlichung abgeschlossen]** wird angezeigt und der Veröffentlichungsstatus wird in &quot;**[!UICONTROL &quot;]**.
 
 >[!NOTE]
 >
