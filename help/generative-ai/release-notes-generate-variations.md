@@ -4,10 +4,10 @@ description: Versionshinweise für die Funktion „Varianten generieren“, auf 
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 83%
+source-wordcount: '284'
+ht-degree: 89%
 
 ---
 
@@ -23,17 +23,17 @@ Auf dieser Seite sind die Versionshinweise für die Funktion „Varianten generi
 
 Die aktuelle Version ist die Version 3.0.0.
 
-### 3,0,0 {#release-notes-3-0-0}
+### 3.0.0 {#release-notes-3-0-0}
 
-Sie können [Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) über die folgenden Editoren zugreifen ([nachdem sie konfiguriert wurden](#access-generate-variations)):
+Sie können über die folgenden Editoren auf [„Varianten generieren“ zugreifen](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) ([sobald sie konfiguriert wurden](#access-generate-variations)):
 
-* [innerhalb der Sidekick von AEM Edge Delivery Services; für dokumentbasiertes Authoring](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [innerhalb des Sidekick von AEM Edge Delivery Services; für dokumentenbasiertes Authoring](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
 * [im universellen Editor](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
 * [im Inhaltsfragmenteditor](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
 
 >[!NOTE]
 >
->Auf die vorherige Version von [Varianten generieren“ kann weiterhin direkt zugegriffen ](/help/generative-ai/generate-variations.md).
+>Es wird empfohlen, Version 3.0.0 zu verwenden, da die vorherige Version von [Varianten generieren noch direkt zugänglich ](/help/generative-ai/generate-variations.md), sie in Zukunft nicht mehr unterstützt wird.
 
 ### 2.2.0 {#release-notes-2-2-0}
 
