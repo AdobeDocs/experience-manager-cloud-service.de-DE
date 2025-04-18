@@ -1,5 +1,5 @@
 ---
-title: Über AEM LaunchPad &ndash; Early Adopter
+title: Über AEM LaunchPad
 description: Weitere Informationen zur Adobe Experience Manager Launchpad-Seite.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,18 +7,19 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
+source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 7%
+source-wordcount: '341'
+ht-degree: 9%
 
 ---
 
-# Über AEM LaunchPad - Early Adopter {#aem-launchpad}
+# Über AEM LaunchPad {#aem-launchpad}
 
 AEM Launchpad bietet einen zentralen Ausgangspunkt für die Verwaltung von Inhalten, Assets und Websites in Adobe Experience Manager. Mit AEM Launchpad, das für ein personalisiertes Erlebnis entwickelt wurde, können Sie gemäß Ihren Rollen und Zielen nahtlos durch das AEM-Ökosystem navigieren. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem klaren, personalisierten Layout bietet AEM Launchpad schnellen Zugriff auf wichtige Tools und unterstützt so ein optimiertes und effektives Erlebnis über alle AEM-Funktionen hinweg.
 
-AEM Launchpad steht frühen Anwendern zur Verfügung und bietet ein optimiertes Erlebnis, das sich auf die Verbesserung von Workflows, die Priorisierung von Zielen und die Bereitstellung von Ergebnissen konzentriert. Mit dem Opt-in können Sie die Entwicklung von AEM Launchpad beeinflussen, indem Sie Feedback geben, das die Zukunft des Pads mitgestaltet und seinen Wert für die gesamte AEM-Community erhöht.
+<!--
+Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## AEM Launchpad aus der Nähe {#aem-launchpad-about}
 
@@ -29,7 +30,7 @@ Die Seite [Adobe Experience Manager](https://experience.adobe.com/#/experiencema
 * Cloud Manager
 * Extension Manager
 * Software Distribution
-* universellen Editor
+* Universeller Editor
 
 Diese Lösungen werden jetzt in die Hauptnavigation unter &quot;**&quot;**. Darüber hinaus bieten neue Navigationselemente für **Sites** und **Assets** schnellen Zugriff auf wichtige Adobe Experience Manager-Funktionen wie Assets, Sammlungen, Sites und Inhaltsfragmente. Diese Funktionen sind für die primäre Produktionsumgebung verfügbar, auf die Sie Zugriff haben.
 

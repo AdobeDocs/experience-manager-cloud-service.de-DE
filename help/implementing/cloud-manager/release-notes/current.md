@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.4.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '614'
 ht-degree: 100%
 
 ---
@@ -62,16 +62,17 @@ Siehe [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing
 
 Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com). Geben Sie unbedingt an, welche Git-Plattform Sie verwenden möchten und ob Sie sich in einer privaten/öffentlichen oder einer Unternehmens-Repository-Struktur befinden.
 
+<!--
 ### AEM Home {#aem-home}
 
-AEM Home bietet einen zentralen Ausgangspunkt für das Verwalten von Inhalten, Assets und Sites in Adobe Experience Manager. AEM Home wurde für ein personalisiertes Erlebnis konzipiert und ermöglicht Ihnen die nahtlose Navigation im AEM-Ökosystem entsprechend Ihren Rollen und Zielen. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem klaren, rollenbasierten Layout gewährleistet AEM Home schnellen Zugriff auf wichtige Tools und ermöglicht so ein optimiertes und effektives Erlebnis für alle AEM-Funktionen.
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-AEM Home steht Early-Adoptern zur Verfügung und bietet ein optimiertes Erlebnis, das auf die Verbesserung von Workflows, die Priorisierung von Zielen und die Bereitstellung von Ergebnissen ausgerichtet ist. Wenn Sie sich dafür entscheiden, können Sie die Entwicklung von AEM Home beeinflussen, indem Sie Feedback geben, um seine Zukunft mitzubestimmen und seinen Wert für die gesamte AEM-Community zu erhöhen.
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 
-Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com). Stellen Sie sicher, dass Sie die folgenden Informationen angeben:
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
 
-* Die Rolle, die Ihrem Profil am besten entspricht: Inhaltsautor, Entwickler, Geschäftsinhaber, Admin oder Sonstige (geben Sie eine Beschreibung an).
-* Ihre primäre Oberfläche für den Zugriff auf AEM: AEM Sites, AEM Assets, AEM Forms, Cloud Manager oder Sonstige (Beschreibung angeben).
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
 
 ## Fehlerbehebungen
 
