@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie  [!DNL Dynamic Media]  Vorlagen mit einem WYS
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3191'
-ht-degree: 53%
+source-wordcount: '3222'
+ht-degree: 51%
 
 ---
 
@@ -88,7 +88,7 @@ Um eine [!DNL Dynamic Media] Vorlage zu erstellen, benötigen Sie Folgendes:
 Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media] Vorlage zu erstellen:
 
 1. Navigieren Sie zu Ihrem [!DNL Assets View] und [erstellen Sie einen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. Die Ordnerstruktur in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** wird in **[!UICONTROL Dynamic Media Assets]** repliziert. Speichern Sie Ihre [!DNL Dynamic Media] in diesem [!UICONTROL Dynamic Media Assets]-Ordner.
-1. Wählen Sie ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**aus [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM]  und  [!DNL Dynamic Media]  gleichzeitig](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) um sie bei der Erstellung der Vorlage zu verwenden. Das Veröffentlichen von Bildern ist erforderlich, um die Bereitstellungs-URL der Vorlage zu generieren, nachdem die Vorlage erstellt wurde, die in nachgelagerten Anwendungen verwendet werden kann.
+1. Wählen Sie ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**aus [laden Sie Ihre Bilder hoch und veröffentlichen Sie sie  [!DNL AEM]  und  [!DNL Dynamic Media]  gleichzeitig](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) um sie bei der Erstellung der Vorlage zu verwenden. Das Veröffentlichen von Bildern ist erforderlich, um die Versand-URL der Vorlage zu generieren, nachdem die Vorlage erstellt wurde. Die Versand-URL kann in nachgelagerten Anwendungen verwendet werden.
 1. [Führen Sie diese Schritte zum Hochladen und Veröffentlichen von Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation), um eine Schriftartdatei gleichzeitig in AEM und Dynamic Media hochzuladen und zu veröffentlichen und beim Erstellen der Vorlage zu verwenden. [!UICONTROL Adobe Sans F2] ist die einzige Standardschriftart, die in der Textebene verfügbar ist. [Folgende Schriftartformate werden unterstützt: AFM, OTF, PFB, PFM, FotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Stellen Sie sicher[ dass ](/help/assets/reprocessing-assets-view.md) vorhandenen Schriftarten, die sie bei der Erstellung der Vorlage verwenden sollen, neu verarbeitet werden (klicken Sie auf [!DNL Assets View] Startseite auf ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, navigieren Sie zum Speicherort der Schriftartdatei, wählen Sie die Schriftartdatei einzeln aus und klicken Sie auf ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). Siehe [Schriftarten](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts), um mehr über Schriftarten zu erfahren.
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
 1. [Hinzufügen von Bildern zur Arbeitsfläche](#add-images-to-the-canvas)
@@ -159,7 +159,7 @@ Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Textebenen hinzuzu
 1. Wählen Sie **[!UICONTROL Smart Text Resize]** im Bedienfeld Eigenschaften aus, um die Textlänge und Schriftgröße automatisch so anzupassen, dass sie in den vorgesehenen Bereich optimal passen.
    ![Optimal anpassbare Banner](/help/assets/assets/add-text-layer.png)
 
-Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Ihren Text in der erforderlichen Schriftart, Größe, Farbe, Stil und Ausrichtung (in der Ebene), indem Sie deren Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern. Das Feld **[!UICONTROL Schriftfamilie]** zeigt die neu verarbeiteten vorhandenen Schriftarten sowie die neu hochgeladenen und veröffentlichten Schriftarten an. Weitere Informationen finden Sie [Schritt 3  [!DNL Dynamic Media]  Abschnitt Erstellen](#how-to-create-dynamic-media-template)Vorlage) oben.
+Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Ihren Text in der erforderlichen Schriftart, Größe, Farbe, Stil und Ausrichtung (in der Ebene), indem Sie deren Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Bedienfelds ändern. Das Feld **[!UICONTROL Schriftfamilie]** zeigt die Standardschriftart [!UICONTROL Adobe Sans F2], die neu verarbeiteten vorhandenen Schriftarten sowie die neu hochgeladenen und veröffentlichten Schriftarten an. Weitere Informationen finden Sie [Schritt 3  [!DNL Dynamic Media]  Abschnitt Erstellen](#how-to-create-dynamic-media-template)Vorlage) oben.
 
 ### Bearbeiten oder Löschen einer Ebene {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ Führen Sie die folgenden Schritte aus, um die Vorlage in der Vorschau anzuzeige
    ![Inhalt spontan erstellen](/help/assets/assets/dm-templates-publish-status.png)
 Sie können auch **[!UICONTROL Alle Parameter einbeziehen]** umschalten, um alle angezeigten Parameterwerte zu bearbeiten und die Aktualisierungen in der Vorlagenvorschau anzuzeigen.
    <br>
-1. Um die Vorlage auf der Vorschauseite zu veröffentlichen, klicken Sie auf **[!UICONTROL Veröffentlichen]** und bestätigen Sie die Veröffentlichung. **[!UICONTROL Veröffentlichung abgeschlossen]** wird angezeigt und der Veröffentlichungsstatus wird in &quot;**[!UICONTROL &quot;]**.
+1. Um die Vorlage auf der Vorschauseite zu veröffentlichen, klicken Sie auf **[!UICONTROL Veröffentlichen]** und bestätigen Sie die Veröffentlichung. Eine **[!UICONTROL Veröffentlichen abgeschlossen]** wird angezeigt und der Veröffentlichungsstatus wird in &quot;**[!UICONTROL &quot;]**.
 
->[!NOTE]
->
->Zum Veröffentlichen der Vorlage müssen zuerst die Bilder der Vorlage veröffentlicht werden.
+   >[!NOTE]
+   >
+   >Zum Veröffentlichen der Vorlage müssen zuerst die Bilder der Vorlage veröffentlicht werden.
 
 ### Kopieren der Bereitstellungs-URL
 
 Die ausgewählten Parameter auf der Seite **[!UICONTROL Vorschau]** werden zu den URL-Parametern in der Vorlagen-URL.
 
-So kopieren Sie die in der Vorschau angezeigte URL der veröffentlichten Vorlage:
+Stellen Sie sicher, dass die Bilder in der Vorlage in AEM und Dynamic Media veröffentlicht werden, um eine Versand-URL der veröffentlichten Vorlage zu generieren.
+
+Führen Sie die folgenden Schritte aus, um die Versand-URL der Vorlage zu kopieren:
 
 1. Klicken Sie auf **[!UICONTROL URL kopieren]**. Das Dialogfeld **[!UICONTROL URL kopieren]** wird angezeigt. Wählen Sie die angezeigte URL aus und kopieren Sie sie. Der erste Parameter in der URL beginnt nach einem Fragezeichen **([!UICONTROL ?])** und ein Schlüssel-Wert-Paar beginnt mit **[!UICONTROL $]** und endet mit **[!UICONTROL &amp;]**. Schlüssel und Wert werden durch ein Gleichheitszeichen **([!UICONTROL =])** getrennt, wobei der Schlüssel links und der Wert rechts liegen.
 1. Fügen Sie diese URL in Ihre Browser-Registerkarte ein und sehen Sie sich Ihre Live-Vorlage an. Passen Sie die Vorlage in Echtzeit an, indem Sie den erforderlichen Parameterwert (Schlüsselwert) in der URL direkt aktualisieren, wie in [Schritt 2](#preview-and-publish-template-and-copy-template-deliver-url) des Abschnitts **Vorschau und Veröffentlichung** gezeigt.
