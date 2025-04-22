@@ -4,7 +4,10 @@ description: Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reakt
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 2%
@@ -15,7 +18,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie mithilfe einer einzelnen Code-Basis auf reaktionsfreie Weise separate Sites für Ihre Staging- und Produktionsumgebungen einrichten.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Sie können auch eine von Ihrer Staging-Umgebung getrennte Site für Ihre Produktionsumgebung einrichten. Die Einrichtung eines zweiten Standorts für eine separate Staging- und Produktionseinrichtung ähnelt der [Einrichtung für die Verwaltung mehrerer Standorte erforderlich](/help/edge/wysiwyg-authoring/repoless-msm.md). Tatsächlich kann sie bei Bedarf mit MSM-Site-Strukturen kombiniert werden.
 

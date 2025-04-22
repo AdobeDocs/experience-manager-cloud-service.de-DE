@@ -1,10 +1,13 @@
 ---
 title: Veröffentlichen von Seiten mit DAM Assets mithilfe von Edge Delivery Services
-description: Erfahren Sie, welche Einstellungen erforderlich sind, um sicherzustellen, dass Ihre DAM-Assets für Ihre Seiten nahtlos für Edge Delivery Services veröffentlicht werden.
+description: Erfahren Sie, welche Einstellungen erforderlich sind, um sicherzustellen, dass Ihre DAM-Assets für Ihre Seiten nahtlos in Edge Delivery Services veröffentlicht werden.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -13,7 +16,7 @@ ht-degree: 2%
 
 # Veröffentlichen von Seiten mit DAM Assets mithilfe von Edge Delivery Services {#dam-assets}
 
-Erfahren Sie, welche Einstellungen erforderlich sind, um sicherzustellen, dass Ihre DAM-Assets für Ihre Seiten nahtlos für Edge Delivery Services veröffentlicht werden.
+Erfahren Sie, welche Einstellungen erforderlich sind, um sicherzustellen, dass Ihre DAM-Assets für Ihre Seiten nahtlos in Edge Delivery Services veröffentlicht werden.
 
 ## Universeller Editor, DAM Assets und Edge Delivery {#overview}
 
@@ -26,7 +29,7 @@ Um dieses nahtlose Verhalten sicherzustellen, müssen AEM und Edge Delivery Serv
 
 ## Sicherstellen, dass auf Assets-Ordner zugegriffen werden kann {#accessible}
 
-Beim Veröffentlichen von Seiten aus AEM in Edge Delivery Services wird [ein technisches Konto](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) verwendet. Dieses Konto mit einem Namen im Format `<hash>@techacct.adobe.com` wird von Cloud Manager automatisch als Benutzer in AEM erstellt, wenn Sie eine mit dem universellen Editor erstellte Seite zum ersten Mal veröffentlichen.
+Beim Veröffentlichen von Seiten aus AEM in Edge Delivery Services [ „ein technisches ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)&quot; verwendet. Dieses Konto mit einem Namen im Format `<hash>@techacct.adobe.com` wird von Cloud Manager automatisch als Benutzer in AEM erstellt, wenn Sie eine mit dem universellen Editor erstellte Seite zum ersten Mal veröffentlichen.
 
 ![Technisches Konto](/help/edge/wysiwyg-authoring/assets/dam-assets/technical-account.png)
 
@@ -41,8 +44,8 @@ Im Allgemeinen reicht es aus, sicherzustellen, dass Ihr technisches Konto Zugrif
 
 In zwei weiteren Fällen ist jedoch eine zusätzliche Konfiguration erforderlich:
 
-* Wenn Sie Seiten mit Nicht-Bild-Assets wie PDF oder Videos auf Edge Delivery Services veröffentlichen möchten.
-* Wenn Sie Bild-Assets unabhängig von Seiten für Edge Delivery Services veröffentlichen möchten.
+* Wenn Sie Seiten mit Nicht-Bild-Assets wie PDFs oder Videos in Edge Delivery Services veröffentlichen möchten.
+* Wenn Sie Bild-Assets unabhängig von Seiten in Edge Delivery Services veröffentlichen möchten.
 
 Um beide Anwendungsfälle zu unterstützen, [ dem DAM](/help/implementing/developing/introduction/configurations.md)Ordner eine -Konfiguration zugewiesen werden.
 
@@ -53,5 +56,5 @@ Um beide Anwendungsfälle zu unterstützen, [ dem DAM](/help/implementing/develo
    * Dieser wird automatisch erstellt, wenn Sie Ihre Site im Format `/conf/<site-name>` erstellen.
 1. Tippen oder klicken Sie **Abbrechen** im Eigenschaftenfenster, navigieren Sie zu **Assets** -> **Dateien** und wählen Sie Ihren DAM-Ordner aus.
 1. Tippen oder klicken Sie **der Symbolleiste** Eigenschaften“.
-1. Wählen Sie auf der **** Cloud Service **im Feld „Cloud-**&quot; dieselbe Konfiguration wie zuvor beschrieben aus.
+1. Wählen Sie auf der Registerkarte **Cloud** des Eigenschaftenfensters im Feld **Cloud-Konfiguration** dieselbe Konfiguration aus wie zuvor beschrieben.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
