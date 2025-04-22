@@ -1,19 +1,19 @@
 ---
 title: Seiten-Editor und universeller Editor
-description: Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der universelle Editor bietet neue Projektmöglichkeiten.
+description: Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der universelle Editor bietet aufregende Möglichkeiten für Ihre neuen Projekte.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 16%
 
 ---
 
-
 # Seiten-Editor und universeller Editor {#page-editor-universal-editor}
 
-Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der universelle Editor bietet neue Projektmöglichkeiten.
+Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der universelle Editor bietet aufregende Möglichkeiten für Ihre neuen Projekte.
 
 ## Hintergrund {#background}
 
@@ -46,17 +46,17 @@ Da die Funktionslücke zwischen den beiden Editoren ständig kleiner wird, lesen
 
 ### Persistenz {#persistence}
 
-|  | Seiteneditor | Hinweis | Universeller Editor | Anmerkungen |
+|  | Seiteneditor | Anmerkungen | Universeller Editor | Anmerkungen |
 |---|---|---|---|---|
 | Bearbeiten von Seitenkomponenten | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | Bearbeiten [Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) | [!BADGE nicht verfügbar]{type=Negative} |  | [!BADGE Verfügbar]{type=Positive} | Einschließen neuer Fragmente und Neuanordnung der Fragmente |
 
 ### Funktionen {#capabilities}
 
-|  | Seiteneditor | Hinweis | Universeller Editor | Anmerkungen |
+|  | Seiteneditor | Anmerkungen | Universeller Editor | Anmerkungen |
 |---|---|---|---|---|
 | Seitenvorlagen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Der universelle Editor ist unabhängig vom verwendeten Vorlagensystem. Das typische Implementierungsmuster begünstigt jedoch Entwicklerdefinierte Vorlagen, da moderne Frontend-Tools es Entwicklerinnen und Entwicklern viel einfacher machen, Vorlagenlogik direkt im Code zu definieren und zu verwalten. |
-| WYSIWYG-Bearbeitung | [!BADGE Verfügbar]{type=Positive} Auf Seiten beschränkt |  | [!BADGE Verfügbar]{type=Positive} | Unterstützende Seiten und Inhaltsfragmente |
+| WYSIWYG-Bearbeitung | [!BADGE Verfügbar]{type=Positive} | Auf Seiten beschränkt | [!BADGE Verfügbar]{type=Positive} | Unterstützende Seiten und Inhaltsfragmente |
 | [Varianten generieren](/help/generative-ai/generate-variations.md) | [!BADGE nicht verfügbar]{type=Negative} |  | [!BADGE Verfügbar]{type=Positive} | [Verfügbar als Erweiterung](/help/implementing/universal-editor/extending.md) |
 | Neuen Block einfügen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | Block neu anordnen | [!BADGE Verfügbar]{type=Positive} | Möglich mit Drag-and-Drop im Kontext, aber nicht im Seitenbereich „Baumansicht“ | [!BADGE Verfügbar]{type=Positive} | Möglich per Drag-and-Drop im Seitenbereich „Baumansicht“, aber noch nicht im Kontext (geplant) |
