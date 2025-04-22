@@ -4,9 +4,9 @@ description: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 98%
 >
 >Das Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Handbuch zu Dynamic Media mit OpenAPI-Funktionen als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Handbuch zu Dynamic Media mit OpenAPI-Funktionen als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/de/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 +++**Sind alle Assets im Experience Manager Assets as a Cloud Service-Repository für die Suche und Bereitstellung mit Dynamic Media mit OpenAPI-Funktionen verfügbar?**
 
@@ -141,7 +141,7 @@ Als DAM-Benutzerin oder -Benutzer verfügen Sie möglicherweise nicht über die 
 
 +++**Welche Dateigröße wird für Videos unterstützt?**
 
-Dynamic Media mit OpenAPI-Funktionen unterstützt Videos in langer Form. Die Videos unterstützen bis zu 50 GB und 2 Stunden.
+Dynamic Media mit OpenAPI-Funktionen unterstützt langformatige Videos. Es werden Videos mit bis zu 50 GB und einer Länge von bis zu 2 Stunden unterstützt.
 
 +++
 

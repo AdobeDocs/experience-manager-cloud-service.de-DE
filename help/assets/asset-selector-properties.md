@@ -4,9 +4,9 @@ description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeforma
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
 source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -70,12 +70,12 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *dropOptions* | `{allowList?: Object}` | Nein | | Konfiguriert Ablagefunktionen mithilfe der „Zulassungsliste“. |
 | *colorScheme* | Zeichenfolge | Nein | | Design konfigurieren (`light` oder `dark`) für den Asset-Wähler. |
 | *Theme* | Zeichenfolge | Nein | Standard | Wenden Sie „theme“ auf den Asset-Wähler zwischen `default` und `express` an. Zudem wird `@react-spectrum/theme-express` unterstützt. |
-| *handleSelection* | Funktion | Nein | | Wird mit einem Array von Asset-Elementen aufgerufen, wenn Assets ausgewählt sind und die Schaltfläche `Select` im Modal angeklickt wird. Diese Funktion wird nur in der modalen Ansicht aufgerufen. Verwenden Sie für die Leistenansicht die Funktionen `handleAssetSelection` oder `onDrop`. Beispiel: <pre>handleSelection=(assets: Asset[])==> {...}</pre> Weitere Informationen finden Sie unter [Auswahl von Assets](/help/assets/asset-selector-customization.md#selection-of-assets). |
-| *handleAssetSelection* | Funktion | Nein | | Wird mit einem Array von Elementen aufgerufen, während die Assets ausgewählt oder deren Auswahl aufgehoben wird. Dies ist nützlich, wenn Sie auf Assets warten möchten, während die Benutzenden sie auswählen. Beispiel: <pre>handleSelection=(assets: Asset[])==> {...}</pre> Weitere Informationen finden Sie unter [Auswahl von Assets](/help/assets/asset-selector-customization.md#selection-of-assets). |
+| *handleSelection* | Funktion | Nein | | Wird mit einem Array von Asset-Elementen aufgerufen, wenn Assets ausgewählt sind und die Schaltfläche `Select` im Modal angeklickt wird. Diese Funktion wird nur in der modalen Ansicht aufgerufen. Verwenden Sie für die Leistenansicht die Funktionen `handleAssetSelection` oder `onDrop`. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Weitere Informationen finden Sie unter [Auswahl von Assets](/help/assets/asset-selector-customization.md#selection-of-assets). |
+| *handleAssetSelection* | Funktion | Nein | | Wird mit einem Array von Elementen aufgerufen, während die Assets ausgewählt oder deren Auswahl aufgehoben wird. Dies ist nützlich, wenn Sie auf Assets warten möchten, während die Benutzenden sie auswählen. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Weitere Informationen finden Sie unter [Auswahl von Assets](/help/assets/asset-selector-customization.md#selection-of-assets). |
 | *onClose* | Funktion | Nein | | Wird aufgerufen, wenn die `Close`-Schaltfläche in der modalen Ansicht gedrückt wird. Dies wird nur in der `modal`-Ansicht aufgerufen und in der `rail`-Ansicht nicht beachtet. |
 | *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn Benutzende andere Filterkriterien ändern. |
 | *selectionType* | Zeichenfolge | Nein | Einzeln | Konfiguration für `single`- oder `multiple`-Auswahl von Assets auf einmal. |
-| *dragOptions.allowList* | Boolesch | Nein | | Die -Eigenschaft wird verwendet, um das Ziehen von nicht auswählbaren Assets zu erlauben oder zu verweigern. Siehe [dragOptions-Eigenschaft](/help/assets/asset-selector-customization.md#drag-options-property) |
+| *dragOptions.allowList* | Boolesch | Nein | | Die Eigenschaft wird verwendet, um das Ziehen von nicht auswählbaren Assets zuzulassen oder zu verweigern. Siehe [dragOptions-Eigenschaft](/help/assets/asset-selector-customization.md#drag-options-property). |
 | *aemTierType* | Zeichenfolge | Nein |  | Sie können damit festlegen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder beiden Ebenen angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Wenn zum Beispiel beide Ebenen `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für Author und Bereitstellung an. |
 | *handleNavigateToAsset* | Funktion | Nein | | Es handelt sich um eine Rückruffunktion, die die Auswahl eines Assets verarbeitet. |
 | *noWrap* | Boolesch | Nein | | Die Eigenschaft *noWrap* hilft beim Rendern des Asset-Wählers im Bedienfeld der Seitenleiste. Wenn diese Eigenschaft nicht erwähnt wird, wird standardmäßig die *Dialogfeldansicht* gerendert. |

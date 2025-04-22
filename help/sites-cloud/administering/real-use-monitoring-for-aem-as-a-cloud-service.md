@@ -5,9 +5,9 @@ exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
 source-git-commit: f3091a3868ac57150afd6f1640709ce3e9566bac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Der RUM(Real Use Monitoring)-Dienst ist eine Technologie zur Leistungsüberwachu
 
 ## Wer kann vom Real Use Monitoring-Dienst profitieren? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring hilft Kundinnen und Kunden sowie Adobe, zu verstehen, wie Endbenutzende mit AEM Sites interagieren. Bei der Überwachung der tatsächlichen Nutzung wird der Datenschutz der Besucher durch begrenzte Datenerfassung und Stichprobenerhebung gewahrt - nur ein kleiner Teil aller Seitenansichten wird überwacht.
+Real Use Monitoring hilft Kundinnen und Kunden sowie Adobe, zu verstehen, wie Endbenutzende mit AEM Sites interagieren. Real Use Monitoring bewahrt die Privatsphäre der Besucherinnen und Besucher durch eine begrenzte Datenerfassung und Stichproben. Nur ein kleiner Teil aller Seitenansichten wird überwacht.
 
 ## Daten-Sampling für den Real Use Monitoring-Dienst {#rum-service-data-sampling}
 
@@ -37,7 +37,7 @@ Da die Entscheidung darüber, ob die Daten erfasst werden, jeweils für jede ein
 
 ## Welche Daten werden erfasst? {#what-data-is-being-collected}
 
-Der Real Use Monitoring -Service wurde entwickelt, um die Datenerfassung zu minimieren. Die vollständigen Informationen, die vom RUM erfasst werden, finden Sie im Folgenden:
+Der Real Use Monitoring-Dienst wurde entwickelt, um die Datenerfassung zu minimieren. Die vollständigen Informationen, die vom RUM erfasst werden, finden Sie im Folgenden:
 
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`

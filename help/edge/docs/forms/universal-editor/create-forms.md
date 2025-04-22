@@ -7,23 +7,23 @@ hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Erstellen von adaptivem Forms mit dem universellen Editor
+# Erstellen adaptiver Formulare mit dem universellen Editor
 
 <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Namen des Repositorys von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
-Der universelle Editor ist ein vielseitiger visueller Editor, der Formularen das Erlebnis bietet, was Sie sehen können, was Sie erhalten (WYSIWYG). Dies vereinfacht die Erstellung responsiver und benutzerfreundlicher Formulare mithilfe einer Drag-and-Drop-Funktion, indem verfügbare adaptive Forms-Komponenten wie Textfelder, Optionsfelder und Kontrollkästchen verwendet werden.
+Der universelle Editor ist ein vielseitiger visueller Editor, der ein WYSIWYG-Erlebnis (What You See Is What You Get) für die Bearbeitung von Formularen bietet. Er vereinfacht die Erstellung responsiver und benutzerfreundlicher Formulare mithilfe einer Drag-and-Drop-Funktion, die verfügbare adaptive Formularkomponenten wie Textfelder, Optionsfelder und Kontrollkästchen nutzt.
 
-AEM bietet einen -Block, den so genannten adaptiven Forms-Block, mit dem Sie Edge Delivery Services Forms einfach erstellen können, um Daten mit dem universellen Editor zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt vorkonfiguriert mit einem adaptiven Formularblock erstellen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [den adaptiven Formularblock zu einem bestehenden AEM-Projekt hinzufügen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM bietet einen Block, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Edge Delivery Services-Formulare erstellen können, um Daten über den universellen Editor zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt vorkonfiguriert mit einem adaptiven Formularblock erstellen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [den adaptiven Formularblock zu einem bestehenden AEM-Projekt hinzufügen](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 ![GitHub-Repository-Workflow](/help/edge/assets/repo-workflow.png)
 
-Dieser Artikel führt Sie durch den Prozess der Erstellung und Bearbeitung der eigenständigen Formulare mit dem universellen Editor, indem Sie eine Edge Delivery Services-basierte Vorlage aus dem Assistenten zur Formularerstellung auswählen.
+Dieser Artikel führt Sie durch die Erstellung eigenständiger Formulare mit dem universellen Editor, indem Sie eine auf Edge Delivery Services basierende Vorlage aus dem Assistenten für die Formularerstellung auswählen.
 
 ## Voraussetzungen
 
@@ -95,7 +95,7 @@ Mit dem universellen Editor können Sie einfach responsive und interaktive eigen
 
    ![Kontaktformular](/help/edge/assets/contact-us.png)
 
-   Jetzt können Sie [Übermittlungsaktionen für Formulare konfigurieren und ](/help/edge/docs/forms/universal-editor/submit-action.md).
+   Nun können Sie [die Übermittlungsaktionen für Formulare konfigurieren und anpassen](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--

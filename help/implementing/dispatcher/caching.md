@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
 source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3071'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,18 +20,18 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache invalidiert wir
 
 ## Caching {#caching}
 
-Das Caching von HTTP-Antworten im CDN von AEM as a Cloud Service wird durch die folgenden HTTP-Antwort-Header aus der Quelle gesteuert: `Cache-Control`, `Surrogate-Control` oder `Expires`.
+Das Caching von HTTP-Antworten im AEM as a Cloud Service-CDN wird durch die folgenden HTTP-Antwort-Header der ursprünglichen Elemente `Cache-Control`, `Surrogate-Control` oder `Expires` gesteuert.  
 
-Diese Cache-Kopfzeilen werden normalerweise in AEM Dispatcher-vhost-Konfigurationen mit mod_headers festgelegt, können aber auch in benutzerdefiniertem Java™-Code festgelegt werden, der in AEM Publish selbst ausgeführt wird (siehe [Aktivieren von CDN-Caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+Diese Cache-Header werden normalerweise in vhost-Konfigurationen in AEM Dispatcher mithilfe von mod_headers festgelegt, können aber auch in benutzerdefiniertem Java™-Code festgelegt werden, der in AEM Publish selbst ausgeführt wird (siehe [Aktivieren des CDN-Cachings](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
 
-Der Cache-Schlüssel für CDN-Ressourcen enthält die vollständige Anfrage-URL, einschließlich Abfrageparametern, sodass jeder andere Abfrageparameter einen anderen Cache-Eintrag erzeugt. Erwägen Sie, unerwünschte Abfrageparameter zu entfernen. [siehe unten](#marketing-parameters) um die Cache-Trefferquote zu verbessern.
+Der Cache-Schlüssel für CDN-Ressourcen enthält die vollständige Anfrage-URL, einschließlich Abfrageparametern, sodass bei jedem unterschiedlichen Abfrageparameter ein anderer Cache-Eintrag erzeugt wird. Entfernen Sie ggf. unerwünschte Abfrageparameter. [Nachstehend](#marketing-parameters) finden Sie Informationen dazu, wie Sie die Cache-Trefferquote verbessern können.
 
-Ursprungsantworten, die `private`, `no-cache` oder `no-store` in `Cache-Control` enthalten, werden nicht vom CDN des AEM as a Cloud Service zwischengespeichert (siehe [Deaktivieren der CDN-Zwischenspeicherung)
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) für weitere Details).  Zudem werden Antworten, die Cookies setzen, also eine `Set-Cookie` Antwort-Kopfzeile haben, nicht vom CDN zwischengespeichert.
+Ursprungsantworten, die `private`, `no-cache` oder `no-store` in `Cache-Control` enthalten, werden nicht vom AEM as a Cloud Service-CDN zwischengespeichert (weitere Informationen unter [Deaktivieren des CDN-Cachings
+](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)).  Zudem werden Antworten, die Cookies setzen, also einen `Set-Cookie`-Antwort-Header aufweisen, nicht vom CDN zwischengespeichert.
 
 ### HTML/Text {#html-text}
 
-Die Dispatcher-Konfiguration legt einige standardmäßige Caching-Kopfzeilen für `text/html` Inhaltstyp fest.
+Die Dispatcher-Konfiguration legt einige standardmäßige Caching-Header für den Content-Typ `text/html` fest.
 
 * standardmäßig wird vom Browser fünf Minuten lang zwischengespeichert, basierend auf der `cache-control`-Kopfzeile, die von der Apache-Ebene ausgegeben wird. Das CDN berücksichtigt diesen Wert ebenfalls.
 * Die Standardeinstellung für die HTML/Text-Zwischenspeicherung kann deaktiviert werden, indem die Variable `DISABLE_DEFAULT_CACHING` in `global.vars` definiert wird:
@@ -302,7 +302,7 @@ Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. 
 Wie bei früheren Versionen von AEM wird beim Veröffentlichen oder Aufheben der Veröffentlichung von Seiten der Inhalt aus dem Dispatcher-Cache gelöscht. Wenn ein Caching-Problem vermutet wird, sollten Sie die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der dem `ServerAlias`-Localhost entspricht, der für die Dispatcher-Cache-Invalidierung erforderlich ist.
 
 >[!NOTE]
->Stellen Sie für eine ordnungsgemäße Dispatcher-Invalidierung sicher, dass Anfragen von &quot;127.0.0.1&quot;, „localhost“, &quot;\*.local“, &quot;\*.adobeaemcloud.com“ und &quot;\*.adobeaemcloud.net“ von einer vhost-Konfiguration abgeglichen und verarbeitet werden, damit die Anfrage bereitgestellt werden kann. Sie können diese Aufgabe ausführen, indem Sie die globale Übereinstimmung „*“ in einer alle Fälle abdeckenden vhost-Konfiguration verwenden, entsprechend dem Muster in der Referenz zum [AEM-Archetyp](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Sie können auch sicherstellen, dass die zuvor erwähnte Liste von einem der virtuellen Hosts erfasst wird.
+>Stellen Sie für eine ordnungsgemäße Dispatcher-Invalidierung sicher, dass Anfragen von „127.0.0.1“, „localhost“, „\*.local“, „\*.adobeaemcloud.com“ und „\*.adobeaemcloud.net“ von einer vhost-Konfiguration abgeglichen und verarbeitet werden, damit sie bereitgestellt werden können. Sie können diese Aufgabe ausführen, indem Sie die globale Übereinstimmung „*“ in einer alle Fälle abdeckenden vhost-Konfiguration verwenden, entsprechend dem Muster in der Referenz zum [AEM-Archetyp](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Sie können auch sicherstellen, dass die zuvor erwähnte Liste von einem der virtuellen Hosts erfasst wird.
 
 Wenn die Publishing-Instanz eine neue Version einer Seite oder eines Assets von Author erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene aus dem Dispatcher-Cache entfernt (Sie können diese Ebene mit [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level) konfigurieren).
 

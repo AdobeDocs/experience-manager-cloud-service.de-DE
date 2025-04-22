@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Benötigen Sie Hilfe, um sich für Ihre Domain zwischen einem von Adobe verwalte
 
 >[!IMPORTANT]
 >
->Fügen Sie beim Hinzufügen oder Aktualisieren eines SSL-Zertifikats das neue Zertifikat nicht in die Zertifikatskette ein. Dadurch wird verhindert, dass der Upload erfolgreich abgeschlossen werden kann.
+>Schließen Sie beim Hinzufügen oder Aktualisieren eines SSL-Zertifikats das neue Zertifikat nicht in die Zertifikatskette ein. Sonst wird das erfolgreiche Abschließen des Uploads verhindert.
 
 **So fügen Sie ein kundenseitig verwaltetes SSL-Zertifikat (OV/EV) hinzu:**
 

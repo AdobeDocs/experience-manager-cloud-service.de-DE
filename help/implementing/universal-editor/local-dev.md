@@ -5,9 +5,9 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie Ihren eigenen universellen Editor-Dienst entweder für die
 
 >[!NOTE]
 >
->Lokale universelle Editor-Dienste sind für Projekte, die AEM-Authoring mit Edge Delivery Services verwenden, nicht erforderlich oder werden nicht unterstützt.
+>Lokale Dienste des universellen Editors sind für Projekte, die AEM-Authoring mit Edge Delivery Services verwenden, nicht erforderlich oder werden nicht unterstützt.
 
 ## Überblick {#overview}
 

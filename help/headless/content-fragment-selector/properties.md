@@ -4,9 +4,9 @@ description: Eigenschaften zum Konfigurieren des Micro-Frontend-Inhaltsfragment-
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
 source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,8 +29,8 @@ Sie können mithilfe der folgenden Eigenschaften anpassen, wie der Inhaltsfragme
 | `isOpen` | Boolesch | Ja | `false` | Markierung, um auszulösen, dass der Selektor geöffnet oder geschlossen wird. |
 | `onDismiss` | () => void | Ja | | Funktion, die aufgerufen werden soll, wenn **Verwerfen** ausgewählt wird. |
 | `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Ja | | Funktion, die aufgerufen wird, wenn **Auswählen** nach Auswahl eines oder mehrerer Inhaltsfragmente verwendet wird. <br><br>Die Funktion empfängt:<br><ul><li> die ausgewählten Inhaltsfragmente mit den Feldern `id` und `path`</li><li>sowie Domain-Namen, die mit der Programm-ID und der Umgebungs-ID des Repositorys verknüpft sind, die den Status `ready` und „Veröffentlichen“ als `tier` aufweisen</li></ul><br>Wenn keine Domain-Namen vorhanden sind, wird die Veröffentlichungsinstanz als Fallback-Domain verwendet. |
-| `theme` | „Hell“ oder „Dunkel“ | Nein | | Design des Inhaltsfragment-Selektors. Als Standard-Design ist das Design der UnifiedShell-Umgebung eingestellt. |
-| `selectionType` | „Einzel“ oder „Mehrere“ | Nein | `single` | Auswahltyp, der zur Einschränkung der Auswahl für den Fragment-Selektor verwendet werden kann. |
+| `theme` | „hell“ oder „dunkel“ | Nein | | Design des Inhaltsfragment-Selektors. Als Standard-Design ist das Design der UnifiedShell-Umgebung eingestellt. |
+| `selectionType` | „einfach“ oder „mehrfach“ | Nein | `single` | Auswahltyp, der zur Einschränkung der Auswahl für den Fragment-Selektor verwendet werden kann. |
 | `dialogSize` | „fullscreen“ oder „fullscreenTakeover“ | Nein | `fullscreen` | Optionale Eigenschaft zum Steuern der Dialogfeldgröße. |
 | `waitForImsToken` | Boolesch | Nein | `false` | Gibt an, ob der Inhaltsfragment-Selektor im Kontext des SUSI-Flusses gerendert wird und warten muss, bis das `imsToken` bereit ist. |
 | `imsAuthInfo` | ImsAuthInfo | Nein | | Objekt, das die IMS-Authentifizierungsinformationen der bzw. des angemeldeten Benutzenden enthält |
