@@ -6,11 +6,11 @@ exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
-# Micro-Frontend-Asset-Selektor {#Overview}
+# Micro-Frontend-Asset-Wähler {#Overview}
 
 <table>
     <tr>
@@ -81,8 +81,8 @@ Der Asset-Selektor bietet viele Vorteile, z. B.:
 
 Sie müssen die folgenden Kommunikationsmethoden sicherstellen:
 
-* Die Hostanwendung wird auf HTTPS ausgeführt.
-* Sie können die Anwendung nicht auf `localhost` ausführen. Wenn Sie den Asset-Wähler auf Ihrem lokalen Computer integrieren möchten, müssen Sie eine benutzerdefinierte Domain erstellen, z. B. `[https://<your_campany>.localhost.com:<port_number>]`, und diese benutzerdefinierte Domain dem `redirectUrl list` hinzufügen.
+* Die Host-Anwendung wird unter HTTPS ausgeführt.
+* Sie können die Anwendung nicht auf `localhost` ausführen. Wenn Sie den Asset-Wähler auf Ihrem lokalen Computer integrieren möchten, müssen Sie eine benutzerdefinierte Domain erstellen, z. B. `[https://<your_campany>.localhost.com:<port_number>]`, und diese benutzerdefinierte Domain in der `redirectUrl list` hinzufügen.
 * Sie können die Client-ID konfigurieren und der AEM Cloud Service-Umgebungsvariablen mit den entsprechenden `imsClientId` hinzufügen.
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
@@ -96,7 +96,7 @@ Die oben genannten Voraussetzungen müssen erfüllt sein, wenn Sie einen IMS-Aut
 
 * [Integrieren des Asset-Wählers in eine Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrieren des Asset-Wählers in eine Adobe-fremde Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Asset-Wähler in Dynamic Media integrieren - offene APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrieren des Asset-Wählers in Dynamic Media-OpenAPIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
