@@ -4,10 +4,10 @@ description: Der universelle Editor ist ein modernes visuelles Authoring-Tool, m
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Der universelle Editor wird unterstützt von:
 
 * AEM as a Cloud Service (Version `2023.8.13099` oder höher)
 * AEM 6.5 (Service Pack 21 oder 22 plus ein Feature Pack)
-   * Sowohl On-Premise- als auch AMS-Hosting werden unterstützt.
+   * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
 
 Diese Dokumentation ist für die Verwendung des universellen Editors mit AEM as a Cloud Service vorgesehen. Informationen zur Verwendung des universellen Editors mit AEM 6.5 [finden Sie in der Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction).
 
@@ -108,7 +108,7 @@ Beachten Sie bei der Erkundung des universellen Editors und später bei seiner I
 * Als Teil von AEM [unterstützt der universelle Editor dieselben Desktop-Browser wie AEM](/help/overview/supported-platforms.md).
    * Mobilversionen dieser Browser werden nicht unterstützt.
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## Nächste Schritte {#next-steps}
 

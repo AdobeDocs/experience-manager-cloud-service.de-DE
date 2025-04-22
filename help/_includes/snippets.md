@@ -1,13 +1,13 @@
 ---
-source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 99%
+source-wordcount: '1459'
+ht-degree: 98%
 
 ---
 # Snippets {#snippets}
 
-## Headless-Testversionen (Programm wurde eingestellt) {#headless-trials-promotion}
+## Headless-Tests (Programm wurde eingestellt) {#headless-trials-promotion}
 
 ## Erstellen von Edge Delivery Services {#edge-delivery-authoring}
 
@@ -187,20 +187,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!IMPORTANT]
 >
->[Der universelle Editor](/help/implementing/universal-editor/introduction.md) ist nicht mit IP-Zulassungslisten kompatibel.
->
->Wenn Sie den universellen Editor verwenden wollen, dürfen keine IP-Zulassungslisten aktiviert sein.
-
-## Universeller Editor und IP-Zulassungslisten {#ue-ip-allow-lists}
-
->[!IMPORTANT]
->
->Der universelle Editor ist nicht mit [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) kompatibel.
->
->Wenn Sie den universellen Editor verwenden möchten, müssen Sie entweder:
->
->* Die IP-Zulassungslisten nicht aktivieren.
->* [Oder Ihre eigene Instanz des universellen Editor-Dienstes ausführen](/help/implementing/universal-editor/local-dev.md).
+>Wenn Sie den [Der universelle Editor für die Inhaltserstellung](/help/implementing/universal-editor/introduction.md) verwenden, müssen Sie auch [eine Zulassungsliste mit den IP-Adressen des universellen Editor-Dienstes hinzufügen und anwenden.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 

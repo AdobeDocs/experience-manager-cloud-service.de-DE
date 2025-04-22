@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Version 2025.04.04 des univ
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a016213f4bfb7826113317b2a5c7ac9ef92474c1
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 37%
@@ -23,7 +23,7 @@ Dies sind die Versionshinweise für die Version 4. April 2025 des universellen E
 ## Neue Funktionen {#what-is-new}
 
 * **Dynamic Media mit OpenAPI-Unterstützung** - [Der Asset-Selektor](/help/assets/overview-asset-selector.md#repository-switcher) im universellen Editor unterstützt jetzt [Dynamic Media mit OpenAPI und Remote-Assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **IP-Zulassungsauflistung** - Der universelle Editor unterstützt jetzt [IP-Zulassungslisten.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) Sie können die IPs des universellen Editor-Dienstes mit [diesem Endpunkt) überprüfen](http://universal-editor-service.adobe.io/ip-ranges)
+* **IP-Zulassungsauflistung** - Der universelle Editor unterstützt jetzt [IP-Zulassungslisten.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) Sie können die IPs des universellen Editor-Dienstes mit [diesem Endpunkt) überprüfen](http://universal-editor-service.adobe.io/ip-ranges)
 
 ## Andere Verbesserungen {#other-improvements}
 

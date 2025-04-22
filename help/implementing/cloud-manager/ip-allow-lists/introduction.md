@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 99%
+source-wordcount: '515'
+ht-degree: 81%
 
 ---
 
@@ -77,3 +77,13 @@ Wenn Sie die [IP-Zulassungsliste hinzufügen](/help/implementing/cloud-manager/i
 Stellen Sie sicher, dass diese Cloud Manager-IP-Zulassungsliste hinzugefügt wird, um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden. Wenden Sie dann die Liste auf die Autorenumgebung an, *bevor* Sie die Pipeline aktivieren.
 
 Weitere Informationen finden Sie unter [Anwenden von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) und [Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+
+### Der universelle Editor und die IP-Zulassungslisten {#universal-editor}
+
+Wenn Sie den universellen Editor zum Erstellen Ihrer Inhalte verwenden möchten, müssen Sie die IP-Adressen, die der universelle Editor-Dienst verwendet, zu einer Zulassungsliste hinzufügen und anwenden.
+
+1. Rufen Sie die vom universellen Editor-Dienst verwendeten IP-Adressen vom folgenden API-Endpunkt ab: `http://universal-editor-service.adobe.io/ip-ranges`.
+1. Erstellen Sie eine Zulassungsliste mit diesen IP-Adressen und benennen Sie sie `Universal Editor Service` oder ähnlich.
+1. Wenden Sie die `Universal Editor Service` Zulassungsliste an.
+
+Die Liste der vom universellen Editor-Dienst verwendeten IP-Adressen kann sich ändern, und Sie müssen Ihre Zulassungsliste entsprechend aktualisieren.
