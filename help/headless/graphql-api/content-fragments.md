@@ -4,21 +4,15 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
-ht-degree: 96%
+source-wordcount: '5993'
+ht-degree: 99%
 
 ---
 
 
 # AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->Verschiedene Funktionen der GraphQL-API für Inhaltsfragmente sind über das Early-Adopter-Programm verfügbar.
->
->Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 
@@ -1085,15 +1079,15 @@ query allTeams {
 } 
 ```
 
-## Unterstützung von Dynamic Media für OpenAPI-Assets (Remote Assets) {#dynamic-media-for-openapi-asset-support}
+## Dynamic Media für die Unterstützung von OpenAPI-Assets (Remote-Assets) {#dynamic-media-for-openapi-asset-support}
 
-[Remote-Assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets)-Integration ermöglicht es Ihnen, im Inhaltsfragment-Editor auf Assets zu verweisen, die nicht lokal in der aktuellen AEM-Instanz sind. Sie wird von Dynamic Media für die OpenAPI-Asset-Unterstützung im Inhaltsfragment-Editor und in GraphQL JSON implementiert.
+Dank der Integration von [Remote-Assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) können Sie im Inhaltsfragmenteditor auf Assets verweisen, die nicht lokal in der aktuellen AEM-Instanz vorhanden sind. Sie wird von Dynamic Media für die Unterstützung von OpenAPI-Assets im Inhaltsfragmenteditor und in GraphQL JSON implementiert.
 
-### Beispielabfrage für Dynamic Media zur OpenAPI-Asset-Unterstützung (Remote Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
+### Beispielabfrage für Dynamic Media für die Unterstützung von OpenAPI-Assets (Remote-Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
 
-Im Folgenden finden Sie eine Beispielanfrage:
+Es folgt eine Beispielabfrage:
 
-* So veranschaulichen Sie das Konzept der Referenzierung von Remote-Assets
+* So lässt sich das Konzept der Referenzierung von Remote-Assets veranschaulichen
 
   ```graphql
   {
@@ -1132,7 +1126,7 @@ Im Folgenden finden Sie eine Beispielanfrage:
   }
   ```
 
-* Die Antwort
+* die Antwort
 
   ```graphql
   {
@@ -1175,19 +1169,19 @@ Im Folgenden finden Sie eine Beispielanfrage:
 
 **Einschränkungen**
 
-Die aktuellen Einschränkungen sind:
+Derzeit gelten folgende Einschränkungen:
 
-* Die Bereitstellung von GraphQL unterstützt nur `repositoryId` und `assetId` (andere Asset-Metadaten werden nicht zurückgegeben)
+* Die Bereitstellung von GraphQL unterstützt nur `repositoryId` und `assetId` (andere Asset-Metadaten werden nicht zurückgegeben).
 
   >[!NOTE]
   >
-  >Die vollständige URL muss dann clientseitig basierend auf der „Asset-Bereitstellungs[API“ erstellt ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >Die vollständige URL muss dann Client-seitig und basierend auf der [Asset-Bereitstellungs-API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) erstellt werden.
 
-* Nur *Genehmigte* Assets stehen für Referenzen aus den Remote-Repositorys zur Verfügung
+* Nur *genehmigte* Assets stehen für Verweise aus den Remote-Repositorys zur Verfügung.
 * Wenn ein Asset, auf das verwiesen wird, aus dem Remote-Repository entfernt wird, führt dies zu einer beschädigten Asset-Referenz für Inhaltsfragmente.
-* Alle Repositorys für Bereitstellungs-Assets, auf die der Benutzer Zugriff hat, stehen zur Auswahl. Die verfügbare Liste kann nicht beschränkt werden.
+* Alle Repositorys für Bereitstellungs-Assets, auf die Benutzende Zugriff haben, stehen zur Auswahl. Die Liste „Verfügbar“ kann nicht beschränkt werden.
 * Sowohl die AEM-Instanz als auch die Remote-Asset-Repository-Instanz müssen dieselbe Version aufweisen.
-* Es werden keine Asset-Metadaten über die [Verwaltungs-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de) und [Bereitstellungs-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/) bereitgestellt. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
+* Über die [Management Sites-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de) und die [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) werden keine Asset-Metadaten verfügbar gemacht. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
 
 ## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
 
