@@ -1,8 +1,8 @@
 ---
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 98%
+source-wordcount: '1467'
+ht-degree: 97%
 
 ---
 # Snippets {#snippets}
@@ -187,7 +187,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!IMPORTANT]
 >
->Wenn Sie den [Der universelle Editor für die Inhaltserstellung](/help/implementing/universal-editor/introduction.md) verwenden, müssen Sie auch [eine Zulassungsliste mit den IP-Adressen des universellen Editor-Dienstes hinzufügen und anwenden.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Wenn Sie den [Der universelle Editor für die Inhaltserstellung](/help/implementing/universal-editor/introduction.md) verwenden und auch [IP-Zulassungslisten verwenden möchten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) müssen Sie auch [eine Zulassungsliste mit den IP-Adressen des universellen Editor-Dienstes hinzufügen und anwenden.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 
