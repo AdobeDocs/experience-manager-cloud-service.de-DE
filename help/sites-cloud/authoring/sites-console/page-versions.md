@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 100%
+source-wordcount: '1574'
+ht-degree: 96%
 
 ---
 
@@ -25,6 +25,13 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version.
    * Unterschiede bei Text und Bildern werden hervorgehoben.
 * Timewarp nutzt hierbei die Seitenversionen, um den Status der Veröffentlichungsumgebung zu ermitteln.
+
+>[!NOTE]
+>
+>Im AEM-Repository wird nur der Inhalt versioniert. Dynamische Ressourcen wie Code, CSS und JavaScript werden nicht versioniert.
+>
+>* Beim Anzeigen von Versionen wird der Inhalt mit dem aktuellen Code, CSS und JavaScript des Repositorys angezeigt.
+>* Beim Wiederherstellen von Versionen wird nur der Inhalt wiederhergestellt und der aktuelle Code, CSS und JavaScript des Repositorys werden darauf angewendet.
 
 ## Erstellen einer neuen Version {#creating-a-new-version}
 
