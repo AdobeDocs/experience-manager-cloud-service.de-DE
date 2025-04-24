@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfe
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 86%
+source-wordcount: '1642'
+ht-degree: 94%
 
 ---
 
@@ -95,11 +95,13 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem entsprechende Warnungen auf der Projektkarte und in den Tabellenzeilen für den Migrationsvorgang über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
 
+   Bei der Erstellung des Migrationssatzes können Sie die geografische Region auswählen, in der die temporären Migrationsdaten gespeichert werden.  Es wird empfohlen, die Region auszuwählen, die Ihrer Cloud-Zielumgebung am nächsten ist, um eine optimale Leistung bei der Aufnahme sicherzustellen.  Die Region kann nach der Erstellung des Migrationssatzes nicht mehr geändert werden. Um eine andere Region zu verwenden, müssen Sie einen neuen Migrationssatz erstellen.
+
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >Der Name muss denselben Konventionen wie bei einem AEM-Knoten entsprechen, d. h., er darf keines der folgenden Zeichen enthalten: . / : [ ] | *
+   >Der Name muss den Konventionen eines AEM-Knotens entsprechen und darf daher keines der folgenden Zeichen enthalten: &quot;. / : [ ] | * &lt; > ^ ? { } % # „Keine ungewöhnlichen Symbole oder Emojis.
 
 1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Klicken Sie auf Drei-Punkte-Symbol (**…**), um die Dropdown-Liste zu öffnen, und wählen Sie **Extraktionsschlüssel kopieren** aus. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
 
@@ -143,9 +145,9 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
       >Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
 
       >[!NOTE]
-      >Ab der CTT-Version (3.0.24) wurden neue Funktionen in das Content Transfer Tool aufgenommen, die den Prozess des Ein- und Ausschließens von Pfaden verbessern. Zuvor mussten Pfade einzeln ausgewählt werden, was mühsam und zeitaufwendig war. Jetzt können Benutzer Pfade direkt über die Benutzeroberfläche einbeziehen oder eine CSV-Datei entsprechend ihren Anforderungen hochladen.
+      >Mit der CTT-Version (3.0.24) wurden neue Funktionen in das Content Transfer Tool aufgenommen, die das Ein- und Ausschließen von Pfaden optimieren. Zuvor mussten Pfade einzeln ausgewählt werden, was mühsam und zeitaufwändig war. Jetzt können Benutzende Pfade direkt über die Benutzeroberfläche einschließen oder eine CSV-Datei entsprechend ihren Anforderungen hochladen.
 
-   1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl. Benutzende können nur eine Option zum Einschließen von Pfaden auswählen: entweder über die Benutzeroberfläche oder durch Hochladen einer CSV-Datei.
+   1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl. Benutzende können nur eine Option zum Einfügen von Pfaden auswählen: entweder über die Benutzeroberfläche oder durch Hochladen einer CSV-Datei.
       >[!IMPORTANT]
       >Die folgenden Pfade sind beim Erstellen eines Migrationssatzes eingeschränkt:
       >* `/apps`
@@ -159,19 +161,19 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
 
          ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
 
-      1. Bei Verwendung der **CSV-Upload**-Option muss die CSV-Datei gültige Pfade enthalten.
+      1. Bei Verwendung der **Option „CSV-Upload“** muss die CSV-Datei gültige Pfade enthalten.
 
          ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
 
       1. Um zur Pfadauswahl zurückzukehren, müssen Benutzende die Seite aktualisieren und von vorne beginnen.
 
-      1. Wenn **ungültige Pfade** in der hochgeladenen CSV gefunden werden, werden die ungültigen Pfade in einem separaten Dialogfeld angezeigt.
+      1. Wenn **ungültige Pfade** in der hochgeladenen CSV-Datei gefunden werden, werden die ungültigen Pfade in einem gesonderten Dialogfeld angezeigt.
 
          ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
 
-      1. Benutzer müssen die CSV-Datei korrigieren und erneut hochladen oder die Benutzeroberfläche aktualisieren, um Pfade über die Pfadauswahl auszuwählen.
+      1. Benutzende müssen die CSV-Datei korrigieren und erneut hochladen oder die Benutzeroberfläche aktualisieren, um Pfade über die Pfadauswahl auszuwählen.
 
-   1. **Auszuschließende Pfade**: Eine neue Funktion ermöglicht es Benutzenden, bestimmte Pfade auszuschließen, wenn sie diese nicht einschließen möchten. Wenn der Pfad im Include-Abschnitt beispielsweise &quot;/content/dam“ lautet, können Benutzerinnen und Benutzer jetzt Pfade wie &quot;/content/dam/catalogs“ ausschließen.
+   1. **Auszuschließende Pfade**: Eine neue Funktion ermöglicht es Benutzenden, bestimmte Pfade auszuschließen, wenn diese nicht eingeschlossen werden sollen. Wenn der Pfad im Abschnitt „Einschließen“ beispielsweise „/content/dam“ lautet, können Benutzende jetzt Pfade wie „/content/dam/catalogs“ ausschließen.
 
       ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
