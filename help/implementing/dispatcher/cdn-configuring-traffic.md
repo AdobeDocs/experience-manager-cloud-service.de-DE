@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 99%
+source-wordcount: '1493'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service bietet eine Reihe von Funktionen, die auf der Ebene [Adob
 
 * [Anforderungsumwandlungen](#request-transformations) – Änderung von Aspekten eingehender Anfragen, einschließlich Kopfzeilen, Pfaden und Parametern.
 * [Reaktionsumwandlungen](#response-transformations) – Änderung von Kopfzeilen, die sich auf dem Weg zurück zum Client befinden (z. B. einen Webbrowser).
-* [Server-seitige](#server-side-redirectors) Weiterleitungen lösen eine Browser Redirect aus.
+* [Server-seitige Weiterleitungen](#server-side-redirectors) - Trigger einer Browser-Umleitung.
 * [Ursprungs-Auswahlen](#origin-selectors) – Proxy zu einem anderen Ursprungs-Backend.
 
 Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF), die steuern, welcher Traffic vom CDN erlaubt oder verweigert wird. Diese Funktion wurde bereits veröffentlicht. Weitere Informationen dazu finden Sie auf der Seite [Traffic-Filterregeln, einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
@@ -106,7 +106,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +113,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +120,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -134,7 +131,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -145,6 +141,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **Aktionen**
@@ -153,12 +156,20 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty oder reqHeader oder queryParam oder reqCookie), Wert | Legt einen angegebenen Anforderungsparameter (die einzige unterstützte Eigenschaft ist „path“) oder einen Anforderungs-Header, Abfrageparameter oder Cookie auf einen bestimmten Wert fest, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
-|     | var, Wert | Legt einen bestimmten Anfrageparameter auf einen angegebenen Wert fest. |
-| **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (die einzige unterstützte Eigenschaft ist „path“) oder einen Anforderungs-Header, Abfrageparameter oder Cookie in Bezug auf einen bestimmten Wert, bei dem es sich um einen Zeichenfolgenliteral oder einen Anforderungsparameter handeln kann. |
-|         | var | Entfernt eine angegebene Variable. |
-|         | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
-|         | queryParamDoesNotMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck nicht entsprechen. |
+| **set** | reqProperty, value | Legt einen angegebenen Anforderungsparameter fest (nur die Eigenschaft „path“ wird unterstützt) |
+|     | reqHeader, Wert | Setzt einen angegebenen Anfrage-Header auf einen bestimmten Wert. |
+|     | queryParam, Wert | Legt einen bestimmten Abfrageparameter auf einen angegebenen Wert fest. |
+|     | reqCookie, Wert | Setzt ein angegebenes Anforderungs-Cookie auf einen bestimmten Wert. |
+|     | logProperty, Wert | Setzt eine angegebene CDN-Protokolleigenschaft auf einen bestimmten Wert. |
+|     | var, Wert | Legt eine bestimmte Variable auf einen angegebenen Wert fest. |
+| **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (nur die Eigenschaft „path“ wird unterstützt) |
+|     | reqHeader, Wert | Entfernt einen angegebenen Anfrage-Header. |
+|     | queryParam, Wert | Entfernt einen angegebenen Abfrageparameter. |
+|     | reqCookie, Wert | Entfernt ein angegebenes Cookie. |
+|     | logProperty, Wert | Entfernt eine angegebene CDN-Protokolleigenschaft. |
+|     | var | Entfernt eine angegebene Variable. |
+|     | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
+|     | queryParamDoesNotMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck nicht entsprechen. |
 | **Transformieren** | op:replace, (reqProperty oder reqHeader oder queryParam oder reqCookie or var), Übereinstimmung, Ersetzung | Ersetzt einen Teil des Anfrageparameters (nur die „Pfad“-Eigenschaft wird unterstützt) oder des Anfrage-Headers, des Abfrageparameters oder des Cookies oder der Variable durch einen neuen Wert. |
 |              | op:tolower, (reqProperty oder reqHeader oder queryParam oder reqCookie oder var) | Setzt den Anfrageparameter (nur die „Pfad“-Eigenschaft wird unterstützt) oder Anfrage-Header, Abfrageparameter oder Cookie oder die Variable auf den entsprechenden Wert in Kleinbuchstaben. |
 
@@ -240,9 +251,60 @@ data:
             value: some header value
 ```
 
+### Log-Eigenschaft {#logproperty}
+
+Sie können Ihre eigenen Protokolleigenschaften in Ihren CDN-Protokollen hinzufügen, indem Sie Anfrage- und Antworttransformationen verwenden.
+
+Konfigurationsbeispiel:
+
+```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
+
+Beispiel für ein Protokoll:
+
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
 ## Reaktionsumwandlungen {#response-transformations}
 
-Mit Regeln zur Reaktionsumwandlung können Sie Kopfzeilen der ausgehenden Antworten des CDN festlegen und aufheben. Oben finden Sie auch ein Beispiel für Verweise auf eine Variable, die zuvor in einer Regel zu Anfrageumwandlung festgelegt wurde. Der Status-Code der Antwort kann ebenfalls festgelegt werden.
+Mit Regeln zur Antwortumwandlung können Sie Kopfzeilen, Cookies und den Status der ausgehenden CDN-Antworten festlegen und deaktivieren. Siehe auch das Beispiel oben für Referenzen auf eine Variable, die zuvor in einer Regel zu Anfrageumwandlung festgelegt wurde.
 
 Konfigurationsbeispiel:
 
@@ -262,7 +324,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -270,8 +331,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -283,7 +342,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -291,7 +349,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **Aktionen**
@@ -300,9 +376,15 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, Wert | Legt eine bestimmte Kopfzeile auf einen angegebenen Wert in der Antwort fest. |
-|          | respProperty, Wert | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft „Status“, um den Status-Code festzulegen. |
-| **nicht gesetzt** | respHeader | Entfernt eine bestimmte Kopfzeile aus der Antwort. |
+| **set** | respProperty, Wert | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft „Status“, um den Status-Code festzulegen. |
+|     | respHeader, Wert | Setzt einen angegebenen Antwort-Header auf einen bestimmten Wert. |
+|     | respCookie, Attribute (expires, domain, path, secure, httpOnly, extension), value | Setzt ein angegebenes Anfrage-Cookie mit bestimmten Attributen auf einen bestimmten Wert. |
+|     | logProperty, Wert | Setzt eine angegebene CDN-Protokolleigenschaft auf einen bestimmten Wert. |
+|     | var, Wert | Legt eine bestimmte Variable auf einen angegebenen Wert fest. |
+| **unset** | respHeader | Entfernt eine bestimmte Kopfzeile aus der Antwort. |
+|     | respCookie, Wert | Entfernt ein angegebenes Cookie. |
+|     | logProperty, Wert | Entfernt eine angegebene CDN-Protokolleigenschaft. |
+|     | var | Entfernt eine angegebene Variable. |
 
 ## Ursprungs-Auswahlen {#origin-selectors}
 
@@ -393,7 +475,7 @@ data:
 > Da das von Adobe verwaltete CDN verwendet wird, konfigurieren Sie die Push-Invalidierung im Modus **managed**. Folgen Sie dazu der [Dokumentation zum Einrichten der Push-Invalidierung](https://www.aem.live/docs/byo-dns#setup-push-invalidation) für Edge Delivery Services.
 
 
-## Server seitige Weiterleitungen {#server-side-redirectors}
+## Server-seitige Weiterleitungen {#server-side-redirectors}
 
 Sie können Regeln für die Client-seitige Weiterleitung für 301, 302 und ähnliche Client-seitige Weiterleitungen verwenden. Wenn eine Regel übereinstimmt, antwortet das CDN mit einer Statuszeile, die den Status-Code und die Meldung enthält (z. B. HTTP/1.1 301 Permanent verschoben), sowie mit dem Speicherort-Kopfzeilen-Satz.
 

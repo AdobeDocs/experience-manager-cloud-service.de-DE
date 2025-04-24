@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2377'
 ht-degree: 99%
 
 ---
@@ -19,7 +19,7 @@ Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden 
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
-* Die CDN-Protokollierung führt, wie der Name schon sagt, die Protokollierung im CDN durch.
+* Die CDN-Protokollierung, die, wie ihr Name besagt, die Protokollierung im CDN durchführt.
 
 ## AEM-Protokollierung {#aem-logging}
 
@@ -411,7 +411,7 @@ Verwenden Sie zum Festlegen der Protokollstufe pro Umgebung den entsprechenden b
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Verwenden Sie zum Festlegen der Protokollstufe pro Umgebung den entsprechenden b
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 | *pop* | das Rechenzentrum des CDN-Cache-Servers. |
 | *rules* | Die Namen aller übereinstimmenden [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) und WAF-Flags, die auch angeben, ob die Übereinstimmung zu einer Blockierung führte. Leer, wenn keine Regeln übereinstimmten. |
 
+Die CDN-Protokolle können mit Ihren eigenen Eigenschaften mithilfe von [Anfrage-/Antworttransformationen“ erweitert ](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## Zugriff auf Protokolle {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ AEM-Protokolle befinden sich im Ordner `crx-quickstart/logs`, in dem die folgend
 * AEM-Protokollierung von HTTP-Anfragen: `request.log`
 * AEM-Protokollierung von HTTP-Zugriffen: `access.log`
 
-Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Container, in dem sich der Dispatcher befindet. Informationen zum Starten des Dispatchers finden Sie in der [Dispatcher-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=de).
+Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Container, in dem sich der Dispatcher befindet. Informationen zum Starten des Dispatchers finden Sie in der [Dispatcher-Dokumentation](/help/implementing/dispatcher/disp-overview.md).
 
 Abrufen der Protokolle:
 
