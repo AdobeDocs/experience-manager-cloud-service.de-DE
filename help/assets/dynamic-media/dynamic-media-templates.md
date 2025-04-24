@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie  [!DNL Dynamic Media]  Vorlagen mit einem WYS
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 52%
 
 ---
@@ -322,8 +322,7 @@ Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufü
 
    ![CTA hinzufügen](/help/assets/assets/add-cta.png)
 
-1. Klicken Sie **[!UICONTROL Vorschau]**, um eine Vorschau Ihrer Vorlage anzuzeigen und die definierten Parameter anzuzeigen.
-1. Klicken Sie auf **[!UICONTROL Veröffentlichen]** und wählen Sie **[!UICONTROL Ja]** aus, um Ihre Vorlage zu veröffentlichen, falls sie nicht zuvor veröffentlicht wurde.
+1. Klicken Sie auf **[!UICONTROL Vorschau]** und wählen Sie **[!UICONTROL Veröffentlichen]** aus, um Ihre Vorlage zu veröffentlichen, falls sie nicht zuvor veröffentlicht wurde.
 1. Navigieren Sie zu dem Ordner, in dem diese Vorlage gespeichert ist, wählen Sie diese Vorlage aus und klicken Sie auf ![Detailseite](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Klicken Sie auf **[!UICONTROL Optionen kopieren]** und wählen Sie **[!UICONTROL Einbettungs-Code kopieren]** aus. Stellen Sie sicher, dass Sie die Vorlagenbilder in [!DNL AEM and Dynamic Media] veröffentlichen, um den Einbettungs-Code zu kopieren.
 
