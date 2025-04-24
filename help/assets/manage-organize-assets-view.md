@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 89%
+source-wordcount: '1700'
+ht-degree: 88%
 
 ---
 
@@ -214,10 +214,6 @@ So legen Sie das Genehmigungsziel fest:
 
 
    Weitere Informationen zu den verfügbaren Optionen finden Sie unter [Standardmäßige Genehmigungsziele und Veröffentlichungsziele für genehmigte Assets](#default-approval-target-options-publish-destinations).
-
-   >[!NOTE]
-   >
-   >Das Festlegen eines Genehmigungsziels ist eine Funktion mit begrenzter Verfügbarkeit. Sie können dies aktivieren oder deaktivieren, indem Sie ein Support-Ticket erstellen. Wenn Sie Dynamic Media mit aktiviertem OpenAPI nutzen, ist es standardmäßig aktiviert.
 
    ![Genehmigungsstatus](/help/assets/assets/approval-status-delivery.png)
 
