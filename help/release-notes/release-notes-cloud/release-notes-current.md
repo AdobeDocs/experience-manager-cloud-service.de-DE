@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 48%
+source-wordcount: '1713'
+ht-degree: 43%
 
 ---
 
@@ -162,6 +162,20 @@ Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wen
 >[!IMPORTANT]
 >
 > Die Java 21 **Runtime** wurde im Februar für Ihre Entwicklungs-/RDE-Umgebungen bereitgestellt und wird am **28. und 29. April** auf Ihre Staging-/Produktionsumgebungen angewendet. Beachten Sie, dass das **Erstellen von Code** mit Java 21 (oder Java 17) unabhängig von der Java 21-Laufzeit erfolgt. Sie müssen explizit Schritte zum Erstellen von Code mit Java 21 (oder Java 17) ausführen.
+
+### Durchsetzung der Protokollierungskonfigurationsrichtlinie von AEM {#logconfig-policy}
+
+Um eine effektive Überwachung von Kundenumgebungen zu gewährleisten, müssen die AEM Java-Protokolle ein konsistentes Format aufweisen und sollten nicht durch benutzerdefinierte Konfigurationen überschrieben werden. Die Protokollausgabe muss an die Standarddateien weitergeleitet bleiben. Für AEM-Produkt-Code müssen die standardmäßigen Protokollebenen beibehalten werden. Es ist jedoch akzeptabel, die Protokollebenen für den vom Kunden entwickelten Code anzupassen.
+
+Zu diesem Zweck sollten Änderungen an den folgenden OSGi-Eigenschaften nicht vorgenommen werden:
+* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *alle Eigenschaften*
+* **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+Mitte Mai wird AEM eine Richtlinie durchsetzen, durch die alle benutzerdefinierten Änderungen an diesen Eigenschaften ignoriert werden. Bitte überprüfen und passen Sie Ihre nachgelagerten Prozesse entsprechend an. Wenn Sie beispielsweise die Protokollweiterleitungsfunktion verwenden:
+* Wenn Ihr Protokollierungsziel ein benutzerdefiniertes (nicht standardmäßiges) Protokollformat erwartet, müssen Sie möglicherweise Ihre Aufnahmeregeln aktualisieren.
+* Wenn Änderungen an den Protokollebenen die Protokollierbarkeit reduzieren, beachten Sie, dass die standardmäßigen Protokollebenen zu einer erheblichen Erhöhung des Protokollierungsvolumens führen können.
 
 ### AEM-Protokollweiterleitung an weitere Ziele - Beta-Programm {#log-forwarding-earlyadopter}
 
