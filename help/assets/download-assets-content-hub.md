@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie Assets aus dem Content Hub-Portal herunterladen
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 96%
+source-wordcount: '938'
+ht-degree: 80%
 
 ---
 
@@ -74,8 +74,8 @@ Um ein Asset und seine Ausgabedarstellungen herunterzuladen, führen Sie die fol
 
    >[!NOTE]
    >
-   * Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
-   * Sie können alle [statischen bzw. dynamischen Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt](#types-of-renditions) beim Download eines Assets herunterladen.
+   >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
+   >* Sie können alle [statischen bzw. dynamischen Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt](#types-of-renditions) beim Download eines Assets herunterladen.
 
 1. Wählen Sie mindestens eine Ausgabedarstellung aus und klicken Sie auf **[!UICONTROL Herunterladen]**.
 
@@ -86,7 +86,7 @@ Wenn Sie ein lizenziertes Asset herunterladen, wählen Sie **[!UICONTROL Ich hab
 
 >[!NOTE]
 >
-Benutzende mit Zugriff auf [Dynamic Media mit Open API-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt anzeigen und herunterladen.
+> Benutzende mit Zugriff auf [Dynamic Media mit Open API-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt anzeigen und herunterladen.
 
 ## Herunterladen mehrerer Assets und ihrer Ausgabedarstellungen {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Um mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führen Sie die
 
      >[!NOTE]
      >
-     * Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
-     * Beim Download mehrerer Assets können Sie nur [statische Ausgabedarstellungen](#types-of-renditions) herunterladen.
+     >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
+     >* Beim Download mehrerer Assets können Sie nur [statische Ausgabedarstellungen](#types-of-renditions) herunterladen.
 
    Wenn es sich bei einem der ausgewählten Assets um ein lizenziertes Asset handelt, klicken Sie auf die Lizenz des Assets im linken Bereich, um die Vorschau anzuzeigen. Damit können Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** auswählen und dann auf **[!UICONTROL Herunterladen]** klicken. Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mithilfe der Authoring-Umgebung von Assets as a Cloud Service genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -153,17 +153,35 @@ Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in 
 
 * [Statische Ausgabedarstellungen](/help/assets/renditions.md#static-renditions): Statische Ausgabedarstellungen sind vorab erstellte Versionen digitaler Assets, die normalerweise bei der Aufnahme oder Änderung von Assets generiert werden. Sie sind für bestimmte Zwecke und Plattformen optimiert, wie Web-Miniaturansichten, mobile Formate für responsive Designs oder hochauflösende Dateiversionen für den Druck, und sorgen für ein effizientes und konsistentes Erlebnis.
 
-* [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeitversionen von Assets, um verschiedene Aktionen auszuführen, z. B. die Größenanpassung von Bildern an verschiedene Geräteauflösungen oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in der [!DNL Adobe Experience Manager Assets]-Autorenumgebung erstellt.
+* [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeitversionen von Assets, um verschiedene Aktionen auszuführen, z. B. die Größenanpassung von Bildern an verschiedene Geräteauflösungen oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in [!DNL Adobe Experience Manager Assets] Autorenumgebung erstellt. Informationen zu den Schritten, die zum Aktivieren dynamischer Ausgabedarstellungen erforderlich sind, finden Sie unter [Aktivieren dynamischer Ausgabedarstellungen](#enable-dynamic-media-renditions).
 
 * [Intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Der intelligente Zuschnitt legt den Fokus während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Der intelligente Zuschnitt in Dynamic Media nutzt die künstliche Intelligenz von Adobe Sensei, um einen Point of Interest zu verfolgen und sicherzustellen, dass Assets auf allen Bildschirmgrößen ideal aussehen. Der intelligente Zuschnitt in [!DNL Adobe Experience Manager] zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Siehe [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
+  Ausgabedarstellungen für smartes Zuschneiden werden angezeigt und stehen nur dann zum Download zur Verfügung, wenn Sie Zugriff auf [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) haben. Ausgabedarstellungen für smartes Zuschneiden sind nur für Bild-Assets verfügbar.
+
   ![Ausgabedarstellungstypen](/help/assets/assets/renditions-types.png)
 
+### Dynamische Ausgabedarstellungen aktivieren {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* Die Funktion für dynamische Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt befindet sich in der Early-Adopter-Phase. Um Zugriff auf die Funktion zu erhalten, [senden Sie eine entsprechende Anfrage an den Kunden-Support von Adobe](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
-* Neu für [Dynamic Media Open API-Services](/help/assets/dynamic-media-open-apis-overview.md) aufgenommene Kundschaft muss ihre vorhandenen Bildvorgaben zur Genehmigung überarbeiten.
+So aktivieren Sie dynamische Ausgabedarstellungen:
+
+1. Stellen Sie sicher, dass Sie Zugriff auf [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) haben.
+
+   Sobald Sie Zugriff auf Dynamic Media mit OpenAPI-Funktionen haben, sind alle als `Approved` markierten Assets für die öffentliche Bereitstellung mit Dynamic Media verfügbar.
+
+1. Legen Sie das [Genehmigungsziel des Assets) auf Content Hub fest](/help/assets/approve-assets-content-hub.md#set-approval-target) um Assets nur für Content Hub zu genehmigen.
+
+1. Aktivieren Sie **[!UICONTROL Umschalter „Verfügbarkeit von Ausgabedarstellungen aktivieren]** auf der Registerkarte **[!UICONTROL Ausgabedarstellungen]** der Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
+
+1. Speichern Sie die vorhandenen Bildvorgaben erneut, um sie in Content Hub verfügbar zu machen. Dies gilt nur, wenn Sie mit OpenAPI neu in Dynamic Media integriert haben.
+
+   Um die vorhandenen Bildvorgaben erneut zu speichern, navigieren Sie zur Admin-Ansicht und wählen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**. Wählen Sie eine Vorgabe aus, klicken Sie auf **[!UICONTROL Bearbeiten]** und dann auf **[!UICONTROL Speichern]**.
+
+
+
+   >[!NOTE]
+   > 
+   > Dynamische Ausgabedarstellungen sind nur für Bild-Assets verfügbar.
 
 
 
