@@ -4,10 +4,10 @@ description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. 
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3929'
-ht-degree: 100%
+source-wordcount: '3957'
+ht-degree: 99%
 
 ---
 
@@ -239,7 +239,12 @@ Sie können die erstellte Konfiguration für die SharePoint-Dokumentbibliothek i
 Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliothekspeicher gespeichert.
 Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/submission_id/data`.
 
-### Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
+>[!NOTE]
+>
+> Anlagen werden auch im `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anlagen mit Originalnamen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
+> ![Bild](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
+
+### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
@@ -274,7 +279,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Listenspeicherkonfiguration in einem adaptiven Formular zu verwenden:
 
-1. [Erstellen eines Formulardatenmodells (FDM) mit der Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
+1. [Erstellen eines Formulardatenmodells (FDM) mithilfe von Microsoft](/help/forms/create-form-data-models.md)
 1. [Konfigurieren des Formulardatenmodells (FDM) zum Abrufen und Senden von Daten](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
 1. [Konfigurieren einer Sendeaktion mit einem Formulardatenmodell (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)

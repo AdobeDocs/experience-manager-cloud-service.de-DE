@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument für 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3131'
-ht-degree: 100%
+source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+workflow-type: tm+mt
+source-wordcount: '3152'
+ht-degree: 99%
 
 ---
 
@@ -103,6 +103,9 @@ Sie können Aktionen wie „E-Mail senden“, „AEM-Workflow aufrufen“, „Po
 ![Bildübermittlungsaktionen](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> Sie können das Datensatzdokument für jedes Formulardatenmodell speichern, indem Sie die Eigenschaft **[!UICONTROL Bindungsverweis für das Datensatzdokument]** verwenden.
 
 ## Inkrementelle Aktualisierungen der Datensatzdokument-Vorlage {#document-of-record-template-incremental-updates}
 

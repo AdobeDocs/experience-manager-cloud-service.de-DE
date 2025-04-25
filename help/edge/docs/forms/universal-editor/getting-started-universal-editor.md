@@ -4,7 +4,7 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 99%
@@ -17,7 +17,7 @@ ht-degree: 99%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | Auf dem universellen Editor basierendes Authoring | Dieser Artikel |
-| Dokumentbasiertes Authoring | [Hier klicken](/help/edge/docs/forms/tutorial.md) |
+| Dokumentenbasiertes Authoring | [Hier klicken](/help/edge/docs/forms/tutorial.md) |
 
 
 <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> und geben Sie den Namen Ihrer GitHub-Organisation und des Repositorys an. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
@@ -26,7 +26,8 @@ Im heutigen digitalen Zeitalter sind benutzerfreundliche Formulare für jede Org
 
 AEM Forms umfasst einen Block, der als adaptiver Formularblock bezeichnet wird und mit dem Sie mühelos Edge Delivery Services-Formulare erstellen können, um Daten zu erfassen und zu speichern. Sie können [ein neues AEM-Projekt vorkonfiguriert mit einem adaptiven Formularblock erstellen](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oder [den adaptiven Formularblock einem bestehenden AEM-Projekt hinzufügen](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![GitHub-Repository-Workflow](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+<!-->
+![GitHub-Repository-Workflow](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}—>
 
 Dieses Tutorial führt Sie durch die Erstellung, Vorschau und Veröffentlichung Ihres eigenen Formulars mit einem neuen oder vorhandenen Adobe Experience Manager Sites-Projekt mithilfe der WYSIWYG-Bearbeitungsfunktion des universellen Editors.
 
@@ -195,7 +196,7 @@ So integrieren Sie ihn:
 
 Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie können [mit dem Erstellen und Hinzufügen von Formularen zu Ihren AEM-Seiten beginnen](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Erstellen von Forms mit WYSIWYG
+## Verfassen von Formularen mit WYSIWYG
 
 Sie können Ihr AEM-Projekt zwecks WYSIWYG-Authoring im universellen Editor öffnen. Darin können Sie das Projekt bearbeiten und den Abschnitt „Adaptives Formular“ hinzufügen, um Edge Delivery Services-Formulare in AEM-Projektseiten einzuschließen.
 

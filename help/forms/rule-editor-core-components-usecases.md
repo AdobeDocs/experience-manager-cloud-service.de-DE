@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 47%
+source-wordcount: '1561'
+ht-degree: 42%
 
 ---
 
@@ -17,6 +17,21 @@ ht-degree: 47%
 Der Artikel enthält ausführliche Beispiele für einen Regeleditor für ein adaptives Formular, das auf Kernkomponenten basiert, und bietet Einblicke in seine ordnungsgemäße Implementierung für verschiedene Szenarien. Mit dem Regeleditor können Entwickler die Logik definieren und verwalten, die das Verhalten von Formularen steuert.
 Lassen Sie uns nun die verschiedenen Implementierungen für einen Regeleditor besprechen.
 
+## Fokus auf ein anderes Bedienfeld legen, wenn beim Klicken auf die Schaltfläche das erste Bedienfeld gültig ist
+
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
+
+Mit dem Regeleditor können Sie Bereichslayouts wie horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistenten beim Klicken auf eine Schaltfläche überprüfen und den Fokus auf ein Formularobjekt in einem anderen Bereich setzen. Sie können diese Funktion verwenden, um die Formularnavigation und das Benutzererlebnis zu verbessern.
+
+Stellen Sie sich ein mehrstufiges Anwendungsformular mit einem Assistenten-Layout vor. Sie müssen das Bedienfeld `Personal Information` ausfüllen, bevor Sie zu `Employment Details` wechseln. Wenn Sie auf die Schaltfläche `Next` klicken, validiert der Regeleditor das `Personal Information`. Wenn alle erforderlichen Felder korrekt ausgefüllt sind, verlagert das Formular automatisch den Fokus auf das `Employment Details`. Andernfalls wird eine Fehlermeldung angezeigt, die Benutzer auffordert, die fehlenden Felder auszufüllen.
+
+Sie können auf der Schaltfläche `Next` eine Regel erstellen, um das erste Bedienfeld zu validieren:
+
+![Regel für nächste Schaltfläche](/help/forms/assets/next-rule.png){width=50%}
+
+Wenn Sie auf die Schaltfläche **Weiter** klicken, wird das Bedienfeld **Persönliche Informationen** validiert. Wenn die eingegebenen Details korrekt sind, wird der Fokus auf das Bedienfeld **Kontosicherheit** verschoben. Andernfalls werden Sie durch eine Fehlermeldung aufgefordert, die fehlenden Details auszufüllen.
+
+<!--![Video]()-->
 
 ## Navigieren zwischen Bedienfeldern mithilfe einer Schaltfläche
 
@@ -28,7 +43,7 @@ Jedes Bedienfeld enthält relevante Felder und Optionen zum Aktualisieren bestim
 
 Sie können die `Navigate among the panels` verwenden, um Navigationsregeln für Schaltflächen zu erstellen, die das Wechseln zwischen verschiedenen Bedienfeldern ermöglichen.  Wählen Sie das Attribut `Shift focus to the next item` aus, um den Fokus auf den nächsten Bereich im Layout zu verschieben.
 
-![Regel für das nächste Bedienfeld](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+![Regel des nächsten Bedienfelds](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
 Wenn Sie auf die Schaltfläche `Next` klicken, wechselt der Fokus zum nachfolgenden Bereich im Layout.
 

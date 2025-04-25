@@ -3,17 +3,19 @@ title: Erstellen von Formularfragmenten für das WYSIWYG-basierte Authoring
 description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erstellen und zu Formularen hinzufügen können.
 feature: Edge Delivery Services
 role: Admin, User, Developer
-hide: true
-hidefromtoc: true
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 615f4686fed0d17b7d7aa5cd86c545b11952d792
-workflow-type: ht
-source-wordcount: '1324'
-ht-degree: 100%
+source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 90%
 
 ---
 
-# Erstellen und Verwenden von Edge Delivery Services-Formularfragmenten im universellen Editor
+# Erstellen von Formularfragmenten im universellen Editor
+
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Namen des Repositorys von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
+
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
 
 Formulare enthalten häufig allgemeine Abschnitte wie Kontaktinformationen, Identifizierungsangaben oder Einverständniserklärungen. Die Formularentwickelnden erstellen diese Abschnitte jedes Mal, wenn sie ein neues Formular erstellen, was monoton und zeitaufwändig ist.
 Um diesen doppelten Aufwand zu vermeiden, bietet der universelle Editor eine Möglichkeit, wiederverwendbare Formularsegmente wie Panels oder Feldergruppen nur einmal zu erstellen und sie in verschiedenen Formularen wiederzuverwenden. Diese wiederverwendbaren, modularen und unabhängigen Segmente werden als Formularfragmente bezeichnet. Beispielsweise kann dasselbe Fragment für Notfallkontakte in verschiedenen Abschnitten eines Formulars verwendet werden, z. B. für Kontaktdetails von Mitarbeitenden und Vorgesetzten.
@@ -22,8 +24,12 @@ Am Ende des Artikels erfahren Sie, wie Sie mit dem universellen Editor Fragmente
 
 ## Funktionen von Edge Delivery Services-Formularfragmenten
 
-* **Gewährleisten von Konsistenz mit Formularfragmenten**
-Sie können Fragmente in verschiedene Formulare integrieren, wodurch Sie konsistente Layouts und standardisierte Inhalte beibehalten können. Mit dem Ansatz „Einmal ändern, überall widerspiegeln“ wird jede Aktualisierung eines Fragments automatisch auf alle Formulare angewendet.
+* **Konsistenz mit Formularfragmenten gewährleisten**
+Sie können Fragmente in verschiedene Formulare integrieren, wodurch Sie konsistente Layouts und standardisierte Inhalte beibehalten können.
+
+  >[!NOTE]
+  >
+  > Mit dem Ansatz „Einmal ändern, überall widerspiegeln“ wird jede Aktualisierung eines Fragments automatisch auf alle Formulare im Vorschaumodus angewendet. Im Veröffentlichungsmodus müssen Sie das Fragment jedoch veröffentlichen oder das Formular erneut veröffentlichen, damit die Änderungen übernommen werden.
 
 * **Mehrfaches Hinzufügen von Formularfragmenten innerhalb eines Formulars**
 Sie können ein Formularfragment mehrmals innerhalb eines Formulars hinzufügen und seine Datenbindungseigenschaften für Datenquellen oder Schemata konfigurieren.
@@ -38,13 +44,13 @@ Sie können verschachtelte Formularfragmente erstellen, d. h. ein Fragment in e
 ## Überlegungen bei der Verwendung von Edge Delivery Services-Formularfragmenten
 
 * Sie müssen in dem Fragment sowie in dem Formular, in dem Sie das Fragment verwenden möchten, dieselbe GitHub-URL hinzufügen.
-* Ein Formularfragment, das als Verweis eingefügt wurde, kann nicht von einem Formular aus bearbeitet werden. Ändern Sie zum Bearbeiten das eigenständige Formularfragment.
+* Sie können ein Formularfragment nicht in einem Formular bearbeiten. Um Änderungen vorzunehmen, ändern Sie das eigenständige Formularfragment.
 
-## Voraussetzungen für das Erstellen von Edge Delivery Services-Formularfragmenten
+## Voraussetzungen
 
 * [Richten Sie Ihr GitHub-Repository so ein](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template), dass eine Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository hergestellt wird.
 * Wenn Sie bereits Edge Delivery Services verwenden, fügen Sie Ihrem GitHub-Repository die neueste Version des [adaptiven Formularblocks](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) hinzu.
-* Die AEM Forms-Autoreninstanz enthält eine Vorlage, die auf Edge Delivery Services basiert. Stellen Sie sicher, dass die [neueste Version der Kernkomponenten](https://github.com/adobe/aem-core-forms-components) in Ihrer Umgebung installiert ist.
+* Die AEM Forms-Autoreninstanz enthält eine Vorlage, die auf Edge Delivery Services basiert.
 * Halten Sie die URL Ihrer AEM Forms as a Cloud Service-Autoreninstanz und Ihres GitHub-Repositorys bereit.
 
 ## Arbeiten mit Edge Delivery Services-Formularfragmenten
@@ -108,7 +114,7 @@ Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt
 
 ### Hinzufügen von Formularfragmenten zu einem Formular
 
-Erstellen wir ein nun einfaches Formular `Employee Details`, das Informationen sowohl zu Mitarbeitenden als auch zu Verantwortlichen enthält. Sie können das Fragment `Contact Details` sowohl im Panel für Mitarbeitende als auch im Panel für Verantwortliche verwenden. Um das Formularfragment in Ihrem Formular zu verwenden, führen Sie die folgenden Schritte aus:
+Erstellen wir ein einfaches `Employee Details` Formular, das sowohl Mitarbeiter- als auch Vorgesetzte-Informationen enthält. Sie können das Fragment `Contact Details` sowohl im Panel für Mitarbeitende als auch im Panel für Verantwortliche verwenden. Um das Formularfragment in Ihrem Formular zu verwenden, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
 1. Fügen Sie die Komponente „Formularfragment“ dem Formular hinzu.
@@ -132,7 +138,7 @@ Erstellen wir ein nun einfaches Formular `Employee Details`, das Informationen s
 
 1. Klicken Sie auf **[!UICONTROL Auswählen]**.
 
-   Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert. Dies bedeutet, dass jegliche Änderungen am Fragment über alle Instanzen hinweg gespiegelt werden, in denen das Fragment in Formulare integriert ist.
+   Das Formularfragment wird per Verweis auf das Formular hinzugefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert.
 
    ![Fragment im Formular](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 

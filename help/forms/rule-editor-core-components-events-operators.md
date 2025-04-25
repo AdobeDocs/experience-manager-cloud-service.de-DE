@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 57%
+source-wordcount: '2333'
+ht-degree: 50%
 
 ---
 
@@ -26,17 +26,21 @@ Durch das Verständnis und die Verwendung der verfügbaren Operatortypen und Ere
 
 Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit deren Hilfe Sie Regeln erstellen können.
 
-* **Ist gleich**
-* **Ist nicht gleich**
-* **Beginnt mit**
-* **Endet mit**
-* **Enthält**
-* **Enthält nicht**
-* **Ist leer**
-* **Ist nicht leer**
-* **Hat ausgewählt:** Gibt „true“ zurück, wenn der Benutzer eine bestimmte Option für ein Kontrollkästchen, ein Dropdown-Element oder ein Optionsfeld auswählt.
-* **Ist initialisiert (Ereignis):** Gibt „true“ zurück, wenn ein Formularobjekt im Browser dargestellt wird.
-* **Wird geändert (Ereignis):** Gibt „true“ zurück, wenn der Benutzer den eingegebenen Wert oder die ausgewählte Option für ein Formularobjekt ändert.
+* **Ist gleich** - Prüft, ob das Formularobjekt mit einem angegebenen Wert übereinstimmt.
+* **Ist nicht gleich** - Prüft, ob das Formularobjekt einem angegebenen Wert nicht entspricht.
+* **Beginnt mit** - Prüft, ob das Formularobjekt mit einer angegebenen Zeichenfolge beginnt.
+* **Endet mit** - Prüft, ob das Formularobjekt mit einer angegebenen Zeichenfolge endet.
+* **Enthält** - Prüft, ob das Formularobjekt eine angegebene Unterzeichenfolge enthält.
+* **Enthält nicht** - Prüft, ob das Formularobjekt eine angegebene Unterzeichenfolge nicht enthält.
+* **Ist leer** - Prüft, ob das Formularobjekt leer ist oder nicht angegeben wurde.
+* **Ist nicht leer** - Prüft, ob ein Formularobjekt vorhanden und nicht leer ist.
+* **Hat ausgewählt** - Gibt „true“ zurück, wenn ein Benutzer eine bestimmte Kontrollkästchen-, Dropdown- oder Optionsfeldoption auswählt.
+* **Ist initialisiert (Ereignis)** - Gibt „true“ zurück, wenn ein Formularobjekt im Browser gerendert wird.
+* **Wird geändert (Ereignis)** - Gibt „true“ zurück, wenn ein Benutzer den Wert oder die Auswahl eines Formularobjekts ändert.
+* **Wird angeklickt (Ereignis)** - Gibt „true“ zurück, wenn ein Benutzer auf ein Formularobjekt klickt, z. B. eine Schaltfläche. Ein Benutzer kann [mehrere Bedingungen zum Klick auf die Schaltfläche hinzufügen](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
+* **Ist gültig** - Prüft, ob ein Formularobjekt die Validierungskriterien erfüllt.
+* **Ist ungültig** - Prüft, ob ein Formularobjekt bei der Validierung fehlschlägt.
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -112,6 +116,10 @@ _
 * Stellen Sie sicher, dass [Kernkomponente auf Version 3.0.14 oder höher eingestellt ist](https://github.com/adobe/aem-core-forms-components) um diese Funktion im Regeleditor zu verwenden.
 * Falls Regeln auf verschiedene Felder in der Wenn-Bedingung angewendet werden, wird die Regel auch dann ausgelöst, wenn nur eines dieser Felder geändert wird.
 * Sie können die mehreren Felder nur in der Wenn **Bedingung** eine **AND)-** hinzufügen. Eine OR-Regel **nicht**.
+
+>[!NOTE]
+>
+> Um mehrere Bedingungen hinzuzufügen, die ein Schaltflächen-Klickereignis enthalten, stellen Sie sicher, dass das Schaltflächen-Klickereignis als erste Bedingung platziert wird. Beispielsweise ist &quot;`When button is clicked AND text input equals '5'`&quot; gültig, während &quot;`When text input equals '5' AND button is clicked`&quot; nicht unterstützt wird.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.

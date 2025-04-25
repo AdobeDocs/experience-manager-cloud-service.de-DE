@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Verbinden der SharePoint-Dokumentbibliothek für ein adaptives Formular, Senden an SharePoint, Erstellen einer SharePoint-Dokumentbibliothek, Verwenden der Übermittlungsaktion „An SharePoint senden“ in einem adaptiven Formular, AEM Forms-Datenmodell SharePoint-Dokumentbibliothek, Forms-Datenmodell SharePoint-Dokumentbibliothek, Integrieren des Forms-Datenmodells in die SharePoint-Dokumentbibliothek
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 82%
+source-wordcount: '635'
+ht-degree: 75%
 
 ---
-
 
 # Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Dokumentbibliothek {#connect-af-sharepoint-doc-library}
 
@@ -75,9 +75,15 @@ Sie können die erstellte Konfiguration für die SharePoint-Dokumentbibliothek i
 1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
-Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliothekspeicher gespeichert.
-Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
+>[!NOTE]
+>
+> Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliotheksspeicher gespeichert. Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
 
-## Ähnliche Artikel
+>[!NOTE]
+>
+> Anlagen werden auch im `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anlagen mit Originalnamen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
+> ![Bild](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
+
+## Verwandte Artikel
 
 {{af-submit-action}}
