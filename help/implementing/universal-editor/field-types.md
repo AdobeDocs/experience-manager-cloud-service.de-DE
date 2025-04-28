@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 98%
+source-wordcount: '1500'
+ht-degree: 99%
 
 ---
 
@@ -158,9 +158,9 @@ Ein AEM Tag-Komponententyp aktiviert eine AEM Tag-Auswahl, die zum Anhängen von
 
 >[!TIP]
 >
->Weitere Informationen dazu, wie Sie Ihre Taxonomiedaten für [ Edge Delivery Services-Projekt mithilfe von Tabellen verwalten können](/help/edge/wysiwyg-authoring/taxonomy.md) finden Sie im Dokument Verwalten von Taxonomiedaten .
+>Im Dokument [Verwalten von Taxonomiedaten](/help/edge/wysiwyg-authoring/taxonomy.md) finden Sie weitere Informationen dazu, wie Sie Tabellen zur Verwaltung Ihrer Taxonomiedaten für Ihr Edge Delivery Services-Projekt verwenden können.
 
-#### AEM-Inhalt {#aem-content}
+#### AEM-Inhalte {#aem-content}
 
 Ein AEM-Inhaltskomponententyp aktiviert eine AEM-Inhaltsauswahl, die zum Auswählen von beliebigen AEM-Ressourcen verwendet werden kann. Im Gegensatz zur [Referenzkomponente](#reference), die nur Assets auswählen kann, kann die AEM-Inhaltskomponente auf jeden AEM-Inhalt verweisen. Sie bietet einen zusätzlichen Validierungstyp.
 
@@ -703,12 +703,7 @@ Ein Referenz-Komponententyp ermöglicht einen Verweis auf ein anderes Datenobjek
 
 #### Rich-Text {#rich-text}
 
-Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. Er bietet zusätzliche Validierungstypen.
-
-| Validierungstyp | Werttyp | Beschreibung | Erforderlich |
-|---|---|---|---|
-| `maxSize` | `number` | Maximale Anzahl erlaubter Zeichen | Nein |
-| `customErrorMsg` | `string` | Meldung, die angezeigt wird, wenn `maxSize` überschritten wird. | Nein |
+Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe.
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. Er bietet zusätzliche
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Beispiel 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
