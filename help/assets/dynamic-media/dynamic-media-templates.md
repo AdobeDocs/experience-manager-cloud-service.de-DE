@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie  [!DNL Dynamic Media]  Vorlagen mit einem WYS
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
+source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3165'
 ht-degree: 52%
@@ -72,6 +72,9 @@ Zu den wichtigsten Vorteilen [!DNL Dynamic Media] Vorlagen gehören:
 >[!NOTE]
 >
 >Kunden mit Abonnements für die SKU für erweiterte Sicherheit können in diesem Cloud Services-Programm keine [!DNL Dynamic Media]-Funktionen, einschließlich [!DNL Dynamic Media]-Vorlagen, verwenden.
+
+In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine [!DNL Dynamic Media] erstellen.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Voraussetzungen{#prerequisites-for-dynamic-media-wysiwyg-template}
 
@@ -284,9 +287,6 @@ Führen Sie die folgenden Schritte aus, um die Versand-URL der Vorlage zu kopier
 1. Klicken Sie auf **[!UICONTROL URL kopieren]**. Das Dialogfeld **[!UICONTROL URL kopieren]** wird angezeigt. Wählen Sie die angezeigte URL aus und kopieren Sie sie. Der erste Parameter in der URL beginnt nach einem Fragezeichen **([!UICONTROL ?])** und ein Schlüssel-Wert-Paar beginnt mit **[!UICONTROL $]** und endet mit **[!UICONTROL &amp;]**. Schlüssel und Wert werden durch ein Gleichheitszeichen **([!UICONTROL =])** getrennt, wobei der Schlüssel links und der Wert rechts liegen.
 1. Fügen Sie diese URL in Ihre Browser-Registerkarte ein und sehen Sie sich Ihre Live-Vorlage an. Passen Sie die Vorlage in Echtzeit an, indem Sie den erforderlichen Parameterwert (Schlüsselwert) in der URL direkt aktualisieren, wie in [Schritt 2](#preview-and-publish-template-and-copy-template-deliver-url) des Abschnitts **Vorschau und Veröffentlichung** gezeigt.
 1. Verwenden Sie diese URL für das schnelle Merchandising Ihrer Produkte oder Services. Sie können diese URL für Ihre Kundschaft freigeben oder in Ihre Website oder eine nachgelagerte Drittanbieteranwendung integrieren, um das Banner anzuzeigen und Aktualisierungen daran in Echtzeit vorzunehmen, sodass die laufenden Angebote widergespiegelt werden.
-
-In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine [!DNL Dynamic Media] erstellen.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Vornehmen von Aktualisierungen an der Vorlage in Echtzeit über die URL{#update-the-template-from-the-url}
 
