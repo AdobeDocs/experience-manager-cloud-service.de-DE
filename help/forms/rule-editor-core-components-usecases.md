@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 42%
@@ -31,7 +31,8 @@ Sie können auf der Schaltfläche `Next` eine Regel erstellen, um das erste Bedi
 
 Wenn Sie auf die Schaltfläche **Weiter** klicken, wird das Bedienfeld **Persönliche Informationen** validiert. Wenn die eingegebenen Details korrekt sind, wird der Fokus auf das Bedienfeld **Kontosicherheit** verschoben. Andernfalls werden Sie durch eine Fehlermeldung aufgefordert, die fehlenden Details auszufüllen.
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## Navigieren zwischen Bedienfeldern mithilfe einer Schaltfläche
 
