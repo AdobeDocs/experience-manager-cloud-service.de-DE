@@ -4,10 +4,10 @@ description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere w
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1116'
-ht-degree: 100%
+source-git-commit: 821dd9f172ea286a7a3de74cf8dec8001e9afee9
+workflow-type: tm+mt
+source-wordcount: '1133'
+ht-degree: 98%
 
 ---
 
@@ -87,4 +87,5 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Fehlende JCR-Inhalte | Proaktiv | Fügen Sie den fehlenden JCR-Inhaltsknoten hinzu. Siehe die [Dokumentation zu Assets Content Validator](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Abgeschlossene Workflows werden nicht bereinigt | Proaktiv | Minimieren Sie die Anzahl der Workflow-Instanzen und optimieren Sie die Leistung, indem Sie mehr als 90 Tage alte Workflow-Instanzen bereinigen. Erfahren Sie, wie Sie [Wartungsaufgaben konfigurieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance). | |
 | Fehlender Sling-Ressourcentyp in Seite | Proaktiv | Fügen Sie den Knoten des fehlenden Sling-Ressourcentyps hinzu. Siehe die [Dokumentation zu Assets Content Validator](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
-| Langsame Abfrage | Proaktiv | Beheben Sie langsame Abfragen, indem Sie die richtigen Indexdefinitionen definieren, wie in der [JCR-Abfrage-Schnellübersicht](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) vorgeschlagen. |
+| Langsame Abfrage | Proaktiv | Beheben Sie langsame Abfragen, indem Sie die richtigen Indexdefinitionen definieren, wie in der [JCR-Abfrage-Schnellübersicht](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) vorgeschlagen. | |
+| Abfrage ohne Index | Proaktiv | Vermeiden Sie die Ausführung von Abfragen, die keinen Index verwenden ([ zur Indizierungsdokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/indexing) |
