@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05c34d45e27a8ef22c1ebca72d362529669339fa
+source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 43%
@@ -98,8 +98,8 @@ Sie können jetzt mithilfe der Assets-Ansicht schnell eine beliebige Version ein
 * **Regeleditor**:
    * [Binäre Bedingung mit Klickereignis in der Wenn-Klausel](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): Der Regeleditor ermöglicht jetzt die Kombination eines Schaltflächen-Klickereignisses (_Wird angeklickt_) mit anderen Bedingungen innerhalb der Wenn-Klausel. Dies ermöglicht eine präzisere Kontrolle der Regelausführung basierend auf der Benutzerinteraktion und anderen Faktoren. Hinweis: Bei Verwendung mehrerer Bedingungen muss das Klickereignis die erste aufgeführte Bedingung sein.
    * [Validierungsbedingungen für Felder und Bereiche](/help/forms/rule-editor-core-components-usecases.md): Der Regeleditor enthält jetzt _IsValid_ und _IsNotValid_ Bedingungen. Damit können Sie den Validierungsstatus bestimmter Felder oder ganzer Bedienfelder (einschließlich Layouts wie horizontale Registerkarten, vertikale Registerkarten, Akkordeons und Assistenten) überprüfen und die Formularnavigation und das Benutzererlebnis auf der Grundlage der Validierungsergebnisse verbessern.
-* **Verbesserte Bereichsverwaltung für SharePoint-Listen**: SharePoint-Sites unterstützen jetzt alle verwalteten Pfade, z. B. /sites und /teams. Diese Verbesserung ermöglicht eine breitere Integration über verschiedene Site-Strukturen von SharePoint hinweg und bietet mehr Flexibilität bei der Verbindung mit organisatorischen Inhalten.
-* **Unterstützung für das Speichern des Datensatzdokuments in der SharePoint-Liste**: Forms, das mit einem auf SharePoint-Listen basierenden Formulardatenmodell (FDM) erstellt wurde, kann jetzt das Datensatzdokument (DoR) in SharePoint-Listen speichern, indem die Feldeigenschaft „Bindungsverweis für Datensatzdokument“ konfiguriert wird. Diese Verbesserung ermöglicht die nahtlose Integration unterstützter Formulardaten und Dokumente in den SharePoint-Speicher.
+* [Verbesserte Bereichsverwaltung für SharePoint-Listen](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint-Sites unterstützen jetzt alle verwalteten Pfade, z. B. /sites und /teams. Diese Verbesserung ermöglicht eine breitere Integration über verschiedene Site-Strukturen von SharePoint hinweg und bietet mehr Flexibilität bei der Verbindung mit organisatorischen Inhalten.
+* [Unterstützung für das Speichern des Datensatzdokuments in der SharePoint-Liste](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms, das mit einem auf SharePoint-Listen basierenden Formulardatenmodell (FDM) erstellt wurde, kann jetzt das Datensatzdokument (DoR) in SharePoint-Listen speichern, indem die Feldeigenschaft „Bindungsverweis für Datensatzdokument“ konfiguriert wird. Diese Verbesserung ermöglicht die nahtlose Integration unterstützter Formulardaten und Dokumente in den SharePoint-Speicher.
 
 ### Early Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
