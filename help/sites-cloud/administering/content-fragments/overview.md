@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 94%
+source-wordcount: '1977'
+ht-degree: 100%
 
 ---
 
 # Ein Überblick über das Arbeiten mit Inhaltsfragmenten {#overview-working-with-content-fragments}
-
->[!IMPORTANT]
->
->Verschiedene Funktionen von Inhaltsfragmenten und Inhaltsfragmentmodellen sind im Rahmen des Early-Adopter-Programms verfügbar.
->
->Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen es Ihnen, Inhalte so vorzubereiten, dass sie an mehreren Orten und über mehrere Kanäle verwendet werden können, ideal für die [Headless-Bereitstellung](/help/headless/what-is-headless.md) und die [Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -92,7 +86,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden von Inhaltsfragmenten beschrieben:
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/sites-cloud/administering/content-fragments/setup.md)
-* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - Aktivieren, Erstellen und [ Ihrer ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) – Aktivieren, Erstellen und [Definieren](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) Ihrer Modelle
 * [Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (mithilfe der Inhaltsfragmentkonsole)
 
 Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
@@ -211,7 +205,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 * **Fragmentelementen**
 
    * Elemente korrelieren mit den Datenfeldern, die Inhalte enthalten.
-   * Verwenden Sie ein [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md), um das Inhaltsfragment zu erstellen. Die Elemente (Felder) [im Modell angegeben) definieren die Struktur des Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md). Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
+   * Verwenden Sie ein [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md), um das Inhaltsfragment zu erstellen. [Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments.](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
 
 * **Fragmentabsätze**
 
@@ -277,17 +271,17 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
 
 ## Die Inhaltsfragmentkonsole {#content-fragments-console}
 
-Die Inhaltsfragmentkonsole dient der Verwaltung, Suche und Erstellung von [Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md), [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) und [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). Sie wurde für die Verwendung in einem Headless-Kontext optimiert, wird aber auch beim Erstellen von Inhaltsfragmenten und Inhaltsfragmentmodellen für die Verwendung bei der Seitenbearbeitung verwendet.
+Die Inhaltsfragmentkonsole dient der Verwaltung, Suche und Erstellung von [Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md), [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) und [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). Sie wurde für die Verwendung in einem Headless-Kontext optimiert, wird aber auch beim Erstellen von Inhaltsfragmenten und Inhaltsfragmentmodellen für das Erstellen von Seiten verwendet.
 
 Die Konsole kann direkt von der obersten Ebene der globalen Navigation aus aufgerufen werden.
 
 ![Globale Navigation – Inhaltsfragmentkonsole](assets/cf-managing-global-navigation.png)
 
-Sie können das Bedienfeld ganz links verwenden, um den Ressourcentyp zum Anzeigen, Durchsuchen und Verwalten auszuwählen:
+Sie können im Panel ganz links den Ressourcentyp auswählen, um Folgendes anzuzeigen, zu durchsuchen und zu verwalten:
 
 ![Inhaltsfragmentkonsole – Navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
-Detaillierte Informationen finden Sie unter:
+Ausführliche Informationen finden Sie unter:
 
 * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md)
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)

@@ -1,14 +1,14 @@
 ---
 title: Anzeigen und Verwalten von Assets in der Inhaltsfragmentkonsole
-description: Erfahren Sie, wie Sie Assets in der Inhaltsfragmentkonsole von Adobe Experience Manager as a Cloud Service anzeigen und verwalten können.
+description: Erfahren Sie, wie Sie Assets in der Inhaltsfragmentkonsole von Adobe Experience Manager as a Cloud Service anzeigen und verwalten.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 80%
+source-wordcount: '247'
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,9 @@ Standardmäßig zeigt die [Inhaltsfragmentkonsole](/help/sites-cloud/administeri
 
 Sie können jedoch auch alle anderen Arten von **Assets** in dieser **Inhaltsfragmentkonsole** anzeigen und verwalten.
 
->[!IMPORTANT]
->
->Verschiedene Funktionen der Inhaltsfragmentkonsole sind über das Early-Adopter-Programm verfügbar.
->
->Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 >[!NOTE]
 >
->Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Assets angezeigt wird. Für andere Bedienfelder siehe:
+>Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Assets angezeigt wird. Für andere Panels siehe:
 >
 >* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)   
 >* [Verwalten von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)

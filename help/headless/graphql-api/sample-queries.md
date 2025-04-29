@@ -4,22 +4,16 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1938'
+ht-degree: 100%
 
 ---
 
 # Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
-
->[!IMPORTANT]
->
->Verschiedene Funktionen der GraphQL-API für Inhaltsfragmente sind über das Early-Adopter-Programm verfügbar.
->
->Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1887,9 +1881,9 @@ Für die Bereitstellung der URL an ein Dynamic Media-Asset
 
 * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Mehrere Verweise](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
-Für die Bereitstellung von Remote-Assets, die nicht lokal in der aktuellen AEM-Instanz vorhanden sind, über den Inhaltsfragment-Editor.
+Für die Bereitstellung von Remote-Assets, die nicht lokal in der aktuellen AEM-Instanz vorhanden sind, über den Inhaltsfragmenteditor.
 
-* Siehe [Beispielabfrage für Dynamic Media zur Unterstützung von OpenAPI-Assets (Remote-Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
+* Siehe [Beispielabfrage für Dynamic Media für die Unterstützung von OpenAPI-Assets (Remote-Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## Die Struktur des Beispielinhaltsfragments (verwendet mit GraphQL) {#content-fragment-structure-graphql}
 

@@ -4,20 +4,14 @@ description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte UUID-Re
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: f740301df609e534f1ef770921ea9431de17f846
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1123'
 ht-degree: 100%
 
 ---
 
 # Aktualisieren Ihrer Inhaltsfragmente für UUID-Referenzen {#upgrade-content-fragments-for-UUID-references}
-
->[!IMPORTANT]
->
->Verschiedene Funktionen der GraphQL-API für Inhaltsfragmente sind über das Early-Adopter-Programm verfügbar.
->
->Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Um die Stabilität Ihrer GraphQL-Filter zu optimieren, können Sie die Inhalts- und Fragmentreferenzen in Ihren Inhaltsfragmenten so aktualisieren, dass sie Universally Unique Identifiers (UUIDs) verwenden.
 

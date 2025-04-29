@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2290'
+source-wordcount: '2260'
 ht-degree: 51%
 
 ---
@@ -17,12 +17,6 @@ ht-degree: 51%
 In der Inhaltsfragmentkonsole können Sie Ihre Inhaltsfragmentmodelle verwalten und dann [den Editor öffnen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) um die Struktur zu definieren.
 
 In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service wird die Struktur des Inhalts Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) definiert. Diese Fragmente können dann als Grundlage für Ihre Headless-Inhalte oder für die Seitenbearbeitung verwendet werden.
-
->[!IMPORTANT]
->
->Verschiedene Funktionen der Inhaltsfragmentkonsole sind im Rahmen des Early-Adopter-Programms verfügbar.
->
->Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -255,7 +249,7 @@ Wenn Sie zuerst **Titel** eingeben, wird **Name** daraus generiert.
 
    ![Titel und Beschreibung](assets/cf-managing-content-fragment-models-create.png)
 
-1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern, oder **Erstellen und öffnen**.
+1. Wählen Sie **Erstellen** aus, um das leere Modell zu speichern, oder verwenden Sie **Erstellen und öffnen**.
 
 ### Aktivieren eines Inhaltsfragmentmodells {#enabling-a-content-fragment-model}
 

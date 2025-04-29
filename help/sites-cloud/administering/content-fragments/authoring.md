@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 92%
+source-wordcount: '2817'
+ht-degree: 100%
 
 ---
 
 # Erstellen von Inhaltsfragmenten {#authoring-content-fragments}
-
->[!IMPORTANT]
->
->Verschiedene Funktionen des Inhaltsfragmenteditors sind im Rahmen des Early-Adopter-Programms verfügbar.
->
->Den Status und Informationen zur Bewerbung für das Programm finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Die Erstellung von Inhaltsfragmenten konzentriert sich sowohl auf die Headless-Bereitstellung als auch auf die Seitenbearbeitung.
 
@@ -312,11 +306,11 @@ Alternativ können Sie [**Neues Fragment erstellen** auswählen, um das Dialogfe
 
 #### Auf Bilder verweisen {#reference-images}
 
-In **Inhaltsreferenz**-Feldern können Sie:
+In Feldern vom Typ **Inhaltsverweis** haben Sie folgende Möglichkeiten:
 
-* Referenzieren von Assets, die bereits in Ihrem lokalen Repository vorhanden sind
-* Referenzieren von Assets, die sich in einem Remote-Repository befinden
-* Laden Sie Assets direkt in das Feld hoch. Dadurch wird vermieden, dass Sie die **Assets**-Konsole zum Hochladen verwenden müssen
+* Verweisen auf Assets, die bereits in Ihrem lokalen Repository vorhanden sind
+* Verweisen auf Assets, die sich in einem Remote-Repository befinden
+* Direktes Hochladen von Assets in das Feld, wodurch es nicht nötig ist, die Konsole **Assets** zum Hochladen zu verwenden
 
   >[!NOTE]
   >
@@ -325,7 +319,7 @@ In **Inhaltsreferenz**-Feldern können Sie:
   >* Es muss über einen definierten **Stammpfad** verfügen (im [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Dieser gibt an, wo das Bild gespeichert wird.
   >* Es muss ein **Bild** entsprechend der Liste der akzeptierten Inhaltstypen enthalten
 
-##### Lokale Assets referenzieren {#reference-local-assets}
+##### Verweisen auf lokale Assets {#reference-local-assets}
 
 Um auf ein lokales Asset zu verweisen, haben Sie folgende Möglichkeiten:
 
@@ -334,39 +328,39 @@ Um auf ein lokales Asset zu verweisen, haben Sie folgende Möglichkeiten:
 
   ![Inhaltsfragmenteditor – Asset-Optionen hinzufügen](assets/cf-authoring-add-asset-options.png)
 
-##### Remote-Assets referenzieren {#reference-remote-assets}
+##### Verweisen auf Remote-Assets {#reference-remote-assets}
 
 So verweisen Sie auf Remote-Assets:
 
-1. Geben Sie das Remote-**Repository** beim Suchen nach Assets an:
+1. Geben Sie beim Suchen nach Assets das Remote-**Repository** an:
 
-   ![Inhaltsfragment-Editor - Asset aus Remote-](assets/cf-authoring-remote-asset-01.png) auswählen
+   ![Inhaltsfragmenteditor – Asset remote auswählen](assets/cf-authoring-remote-asset-01.png)
 
 2. Nach der Auswahl wird der Speicherort in den Asset-Informationen angezeigt:
 
-   ![Inhaltsfragment-Editor - Asset aus Remote-Repository](assets/cf-authoring-remote-asset-02.png)
+   ![Inhaltsfragmenteditor – Asset aus Remote-Repository](assets/cf-authoring-remote-asset-02.png)
 
-###### Remote Assets - Einschränkungen {#remote-assets-limitations}
+###### Remote-Assets – Einschränkungen {#remote-assets-limitations}
 
-Es gibt einige Einschränkungen beim Referenzieren von Remote-Assets:
+Es gibt einige Einschränkungen beim Verweisen auf Remote-Assets:
 
-* Nur [genehmigte](/help/assets/approve-assets.md) Assets sind in einem Remote-Asset-Repository für Referenzzwecke verfügbar.
+* Nur [genehmigte](/help/assets/approve-assets.md) Assets sind in einem Remote-Asset-Repository für Verweise verfügbar.
 
-* Wenn ein referenziertes Asset aus dem Remote-Repository entfernt wird, führt dies zu einer fehlerhaften Inhaltsreferenz.
+* Wenn ein referenziertes Asset aus dem Remote-Repository entfernt wird, führt dies zu einem fehlerhaften Inhaltsverweis.
 
-* Alle Repositorys für Bereitstellungs-Assets, auf die der Benutzer Zugriff hat, stehen zur Auswahl. Die verfügbare Liste kann nicht beschränkt werden.
+* Alle Repositorys für Bereitstellungs-Assets, auf die Benutzende Zugriff haben, stehen zur Auswahl. Die Liste „Verfügbar“ kann nicht beschränkt werden.
 
 * Sowohl die AEM-Instanz als auch die Remote-Asset-Repository-Instanz müssen dieselbe Version aufweisen.
 
-* Es werden keine Asset-Metadaten über die Verwaltungs-API oder die Bereitstellungs-API bereitgestellt. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen:
+* Es werden keine Asset-Metadaten über die Verwaltungs-API oder die Bereitstellungs-API bereitgestellt. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
 
    * Die einzelnen Asset-Metadaten: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
 
-   * Abrufen von Massenmetadateninformationen mit der Such-API (experimentell): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * Abrufen von Informationen zu Massenmetadaten mit der Such-API (experimentell): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
 
 >[!NOTE]
 >
->Siehe auch [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten - Dynamic Media für die Unterstützung von OpenAPI-Assets (Remote-Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
+>Siehe auch [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten – Dynamic Media für die Unterstützung von OpenAPI-Assets (Remote-Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Auf Seiten verweisen {#reference-pages}
 
