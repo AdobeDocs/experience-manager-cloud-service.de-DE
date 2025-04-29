@@ -5,9 +5,9 @@ exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ AEM bietet anpassbare Komponenten- und Inhaltsbereitstellungsoptionen.
 | [JSON Exporter](/help/implementing/developing/components/json-exporter.md) | Bereitstellen des Inhalts einer beliebigen AEM-Seite im JSON-Datenmodellformat |
 | [Aktivieren eines JSON-Exports für eine Komponente](/help/implementing/developing/components/enabling-json-exporter.md) | Generieren eines JSON-Exports von Komponenteninhalten basierend auf einem Modeler-Framework |
 | [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) | OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle |
-| [AEM von Inhaltsfragmenten Lieferung mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) | Eine HTTP-REST-API für AEM Edge Delivery Services, die zur Bereitstellung strukturierter Inhalte aus Inhaltsfragmenten im JSON-Format entwickelt wurde. |
+| [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) | Eine HTTP-REST-API für AEM Edge Delivery Services, die zur Bereitstellung strukturierter Inhalte aus Inhaltsfragmenten im JSON-Format entwickelt wurde. |
 | [Inhaltsfragment-GraphQL-API](/help/headless/graphql-api/content-fragments.md) | Effiziente Bereitstellung von Inhaltsfragmenten für JavaScript-Clients in Headless-CMS-Implementierungen |
 |  |  |
 | [Assets-API](/help/assets/mac-api-assets.md) | Ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen-Lesen-Aktualisieren-Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen und Kommentaren. Siehe AEM Assets-HTTP-API |

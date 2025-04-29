@@ -1,13 +1,13 @@
 ---
 title: Schnelle Entwicklungsumgebungen
-description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle Entwicklungsiterationen in einer Cloud-Umgebung verwenden.
+description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle Entwicklungsiterationen in einer Cloud-Umgebung nutzen können.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5392'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 51%
 
 Zur Bereitstellung von Änderungen erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und -Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
 
-RDEs ermöglichen es Entwicklerinnen und Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen, wodurch der Zeitaufwand für das Testen von Funktionen, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren, minimiert wird.
+RDEs ermöglichen es Entwicklerinnen und Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen und so den Zeitaufwand für das Testen von Funktionen zu minimieren, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren.
 
 Sobald die Änderungen in einer RDE getestet wurden, können sie über die Cloud Manager-Pipeline in einer regulären Cloud-Entwicklungsumgebung bereitgestellt werden.
 
 >[!NOTE]
-> Wenden Sie sich an die RDE-Entwickler auf dem Adobe-Kanal [Discord](https://discord.com/channels/1131492224371277874/1245304281184079872). Sie können Fragen stellen oder Feedback zu RDE-Themen geben.
+> Kontaktieren Sie die RDE-Entwickelnden über den [Discord-Kanal](https://discord.com/channels/1131492224371277874/1245304281184079872) von Adobe. Sie können Fragen stellen oder Feedback zu RDE-Themen geben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Sie können sich weitere Videos ansehen, in denen die [Einrichtung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [Verwendung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) und der [Entwicklungslebenszyklus](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) mit RDE gezeigt werden.
+Sie können sich weitere Videos ansehen, in denen die [Einrichtung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [Verwendung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) und der [Entwicklungslebenszyklus](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) mit RDE gezeigt werden.
 
 ## Einführung {#introduction}
 
@@ -35,11 +35,11 @@ Jedes Programm verfügt über eine RDE. Wenn Sandbox-Konten vorhanden sind, werd
 
 Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Beim Zurücksetzen einer RDE, das mit Cloud Manager durchgeführt werden kann, wird die RDE überprüft und auf die neueste AEM-Version festgelegt.
 
-Normalerweise wird eine RDE von einem einzelnen Entwickler zu einer bestimmten Zeit zum Testen und Debuggen einer bestimmten Funktion verwendet. Wenn die Entwicklungssitzung abgeschlossen ist, kann die RDE für die nächste Verwendung in einen Standardstatus zurückgesetzt werden.
+Normalerweise wird eine RDE immer nur von einer einzelnen Entwicklerin bzw. einem einzelnen Entwickler zum Testen und Debuggen einer bestimmten Funktion verwendet. Wenn die Entwicklungssitzung abgeschlossen ist, kann die RDE für die nächste Verwendung in einen Standardstatus zurückgesetzt werden.
 
 Für Produktionsprogramme (ohne Sandbox) können zusätzliche RDEs lizenziert werden.
 
-## Aktivieren der RDE in einem Programm {#enabling-rde-in-a-program}
+## Aktivieren einer RDE in einem Programm {#enabling-rde-in-a-program}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -47,7 +47,7 @@ Für Produktionsprogramme (ohne Sandbox) können zusätzliche RDEs lizenziert we
 
    * RDEs können sowohl zu [Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) als auch zu [Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) hinzugefügt werden.
 
-1. Klicken Sie auf der **&quot;**&quot; auf der Karte **Umgebungen** auf **Umgebung hinzufügen**.
+1. Klicken Sie auf der Seite **Programmübersicht** unter der Karte **Umgebungen** auf **Umgebung hinzufügen**.
 
    ![Karte „Umgebung“](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -73,7 +73,7 @@ Der Bildschirm **Überblick** zeigt nun in der Karte **Umgebungen** Ihre neue Um
 
 Nach der Erstellung werden RDEs auf die neueste AEM Version eingestellt. Das Zurücksetzen einer RDE, das auch mit Cloud Manager durchgeführt werden kann, führt einen Zyklus der RDE durch und setzt sie auf die neueste AEM Version.
 
-Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebungen, zum Verwalten von Zugriffsrechten und zum Zuweisen benutzerdefinierter Domains finden Sie unter [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) in der Dokumentation zu Cloud Manager.
+Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebungen, zum Verwalten von Zugriffsrechten und zum Zuweisen benutzerdefinierter Domains finden Sie in der Dokumentation zu Cloud Manager unter [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Installieren der RDE-Befehlszeilen-Tools {#installing-the-rde-command-line-tools}
 
@@ -81,29 +81,29 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Version 20 von [Node und NPM installiert ](https://nodejs.org/en/download/), damit die Adobe I/O (AIO) CLI und die zugehörigen Plug-ins ordnungsgemäß funktionieren.
+>Stellen Sie sicher, dass Sie Version 20 von [Node und NPM installiert haben](https://nodejs.org/en/download/), damit Adobe I/O (AIO) CLI und die zugehörigen Plug-ins richtig funktionieren.
 
 
-1. Installieren Sie die AIO-CLI-Tools gemäß diesem [Verfahren](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Installieren Sie das AEM-RDE-Plug-in der AIO-CLI-Tools:
+1. Installieren Sie die AIO-CLI-Tools gemäß dem [hier](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) beschriebenen Verfahren.
+1. So installieren Sie das AEM-RDE-Plug-in für AIO-CLI-Tools:
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. Melden Sie sich mit dem Adobe I/O-Client (AIO) an.
+1. Melden Sie sich mit dem Adobe I/O (AIO)-Client an.
 
    ```
    aio login
    ```
 
-   Die Anmeldeinformationen (Token) werden in der globalen aio-Konfiguration gespeichert und unterstützen daher nur eine einzige Anmeldung und Organisation. Wenn Sie mehrere RDEs verwenden möchten, die unterschiedliche Anmeldungen oder Organisationen benötigen, führen Sie das folgende Beispiel aus, indem Sie Kontexte einführen.
+   Die Anmeldeinformationen (Token) werden in der globalen AIO-Konfiguration gespeichert und unterstützen daher nur eine einzige Anmeldung und Organisation. Wenn Sie mehrere RDEs verwenden möchten, die unterschiedliche Anmeldungen oder Organisationen benötigen, folgen Sie dem Beispiel unten, wo Kontexte eingeführt werden.
 
-   <details><summary>Mit diesem Beispiel können Sie einen lokalen Kontext für eine Ihrer RDE-Anmeldungen einrichten</summary>
-   Gehen Sie wie folgt vor, um die Anmeldeinformationen lokal in einer Datei ".aio“ im aktuellen Verzeichnis in einem bestimmten Kontext zu speichern. Ein Kontext ist auch eine clevere Möglichkeit, eine CI/CD-Umgebung oder ein Skript einzurichten.  Um diese Funktion zu verwenden, stellen Sie sicher, dass Sie mindestens aio-cli Version 10.3.1 verwenden. Aktualisieren Sie sie mit „npm install -g @adobe/aio-cli“.
+   <details><summary>Beispiel zum Einrichten eines lokalen Kontexts für eine Ihrer RDE-Anmeldungen</summary>
+   Führen Sie die folgenden Schritte aus, um in einem bestimmten Kontext die Anmeldeinformationen lokal in einer .aio-Datei im aktuellen Verzeichnis zu speichern. Ein Kontext ist auch eine geschickte Möglichkeit, um eine CI/CD-Umgebung oder ein Skript einzurichten.  Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie mindestens die aio-cli-Version 10.3.1 verwenden. Führen Sie mit „npm install -g @adobe/aio-cli“ eine Aktualisierung durch.
 
-   Erstellen Sie nun einen Kontext mit dem Namen m`ycontext`, den Sie mithilfe des Authentifizierungs-Plug-ins als Standardkontext festlegen, bevor Sie den Anmeldebefehl aufrufen.
+   Erstellen Sie einen Kontext namens „m`ycontext`“, der dann mithilfe des auth-Plug-ins als Standardkontext festgelegt wird, bevor Sie den Anmeldebefehl aufrufen.
 
    ```
    aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
@@ -112,26 +112,26 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    ```
 
    >[!NOTE]
-   > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standardbrowser zu öffnen. Sie können sie kopieren und mit einem **Inkognito**-Fenster Ihres Browsers öffnen. Dadurch wird sichergestellt, dass Ihre aktuelle Sitzung im Hauptfenster des Browsers nicht beeinträchtigt wird, sodass Sie sich mit dem spezifischen Konto und der Organisation anmelden können, die für Ihre Aufgabe erforderlich sind.
+   > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standard-Browser zu öffnen. So können Sie sie kopieren und mit einem **Inkognito**-Fenster Ihres Browsers öffnen. Dadurch wird sichergestellt, dass sich dies nicht auf Ihre aktuelle Sitzung im Hauptfenster des Browsers auswirkt, sodass Sie sich mit dem spezifischen Konto und der Organisation anmelden können, die für Ihre Aufgabe erforderlich sind.
 
-   Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen `.aio`-Konfigurationsdatei (die Datei wird bei Bedarf erstellt). Der zweite Befehl legt den Kontext `mycontext` den „aktuellen“ Kontext fest, d. h. den Standardwert.
+   Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen `.aio`-Konfigurationsdatei (die Datei wird bei Bedarf erstellt). Der zweite Befehl legt den Kontext `mycontext` als „aktuellen“ Kontext fest, d. h. als Standard.
 
    Mit dieser Konfiguration speichert der Anmeldebefehl automatisch die Anmelde-Token im Kontext `mycontext` und behält sie somit lokal bei.
 
    Mehrere Kontexte können durch Speichern lokaler Konfigurationen in mehreren Ordnern verwaltet werden. Alternativ können Sie auch mehrere Kontexte in einer einzelnen Konfigurationsdatei einrichten und zwischen ihnen wechseln, indem Sie den „aktuellen“ Kontext ändern.
    </details>
 
-1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt dem Benutzer interaktiv eine Liste der Programme in seiner Organisation bereit und zeigt die RDE-Umgebungen in diesem Programm zur Auswahl an.
+1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt Benutzenden interaktiv eine Liste der Programme in ihrer Organisation zur Verfügung und zeigt RDE-Umgebungen in diesem Programm an, aus denen gewählt werden kann.
 
    ```
    aio aem:rde:setup
    ```
 
-   Sie können den Einrichtungsschritt überspringen, wenn Sie eine skriptbasierte Umgebung verwenden. Schließen Sie in diesem Fall die Werte für Organisation, Programm und Umgebung direkt in jeden Befehl ein. [Weitere Informationen finden Sie unter RDE-Befehle ](#rde-cli-commands).
+   Sie können den Setup-Schritt überspringen, wenn Sie eine skriptbasierte Umgebung verwenden. Schließen Sie in diesem Fall die Werte für Organisation, Programm und Umgebung direkt in jeden Befehl ein. [Weitere Informationen finden Sie unten bei den RDE-Befehlen](#rde-cli-commands).
 
 ### Interaktives Setup {#installing-the-rde-command-line-tools-interactive}
 
-Der Setup-Befehl fragt, ob die angegebene Konfiguration lokal oder global gespeichert werden soll.
+Der Setup-Befehl fragt, ob die bereitgestellte Konfiguration lokal oder global gespeichert werden soll.
 
 ```
 Setup the CLI configuration necessary to use the RDE commands.
@@ -143,33 +143,33 @@ Wählen Sie `no`, um
 * Organisation, Programm und Umgebung global in Ihrer aio-Konfiguration zu speichern.
 * nur mit einer einzigen RDE zu arbeiten.
 
-Wählen Sie `yes` aus, um Folgendes zu tun:
+Wählen Sie `yes` aus, um:
 
-* Speichern Sie Organisation, Programm und Umgebung lokal im aktuellen Verzeichnis in einer `.aio`. Dieser Ansatz ist praktisch, wenn Sie die Datei in die Versionskontrolle übertragen möchten, damit andere Benutzer, die das Git-Repository klonen, sie verwenden können.
-* Sie können mit vielen RDEs arbeiten, sodass beim Wechsel zu einem anderen Verzeichnis stattdessen diese Konfiguration verwendet wird.
-* Verwenden Sie die Konfiguration in einem programmgesteuerten Kontext wie einem Skript, das darauf verweisen kann.
+* Organisation, Programm und Umgebung lokal im aktuellen Verzeichnis in einer `.aio`-Datei zu speichern. Dies ist praktisch, wenn Sie die Datei in die Versionskontrolle übertragen möchten, sodass andere, die das Git-Repository klonen, sie verwenden können.
+* mit vielen RDEs zu arbeiten, sodass beim Wechsel zu einem anderen Verzeichnis stattdessen diese Konfiguration verwendet wird.
+* die Konfiguration in einem programmgesteuerten Kontext zu verwenden, z. B. in einem Skript, das darauf verweisen kann.
 
 
-Sobald die lokale oder globale Konfiguration ausgewählt ist, versucht der Befehl setup , die Organisations-ID aus Ihrer aktuellen Anmeldung zu lesen und dann die Programme des Unternehmens zu lesen. Falls die Organisation nicht gefunden werden kann, können Sie sie mithilfe von Anweisungen manuell eingeben.
+Sobald die lokale oder globale Konfiguration ausgewählt ist, versucht der Setup-Befehl, Ihre Organisations-ID aus Ihrer aktuellen Anmeldung und anschließend die Programme der Organisation zu lesen. Falls die Organisation nicht gefunden werden kann, können Sie sie mithilfe von Anweisungen manuell eingeben.
 
 ```
 Selected only organization: XYXYXYXYXYXYXYXXYY
 retrieving programs of your organization ...
 ```
 
-Sobald die Programme abgerufen wurden, kann der Benutzer aus der Liste auswählen und auch eingeben, um zu filtern. Wenn das Programm ausgewählt ist, wird eine Liste der RDE-Umgebungen aufgelistet, aus denen Sie auswählen können. Wenn nur ein Programm, nur eine RDE-Umgebung oder beides verfügbar ist, wird sie automatisch ausgewählt.
+Nach dem Abrufen der Programme können Benutzende aus der Liste auswählen und auch filtern. Nach der Auswahl des Programms wird eine Liste mit RDE-Umgebungen aufgeführt, unter denen gewählt werden kann. Wenn nur ein Programm, nur eine RDE-Umgebung oder beides verfügbar ist, erfolgt die Auswahl automatisch.
 
-Führen Sie die folgenden Schritte aus, um den aktuellen Umgebungskontext anzuzeigen:
+Um den aktuellen Umgebungskontext anzuzeigen, führen Sie Folgendes aus:
 
 ```aio aem rde setup --show```
 
-Der Befehl antwortet mit einem Ergebnis, das dem folgenden ähnelt:
+Der Befehl antwortet mit einem Ergebnis ähnlich Folgendem:
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
 ### Manuelles Setup in einer nicht interaktiven Umgebung {#manual-setup}
 
-In Umgebungen, in denen kein Benutzer den Setup-Befehl interaktiv ausführen kann (z. B. CI/CD oder Skripte), ist eine manuelle Konfiguration erforderlich. Sie können die Parameter für Organisation, Programm und Umgebung wie folgt festlegen.
+In Umgebungen, in denen niemand den Setup-Befehl interaktiv ausführen kann (z. B. CI/CD oder Skripte), ist eine manuelle Konfiguration erforderlich. Sie können die Parameter für Organisation, Programm und Umgebung mithilfe der nachfolgend beschriebenen Schritte festlegen.
 
 
 <details>
@@ -179,7 +179,7 @@ In Umgebungen, in denen kein Benutzer den Setup-Befehl interaktiv ausführen kan
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Ihre eigene Organisations-ID kann mithilfe der unter [Anzeigen Ihrer Organisations-ID](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) dokumentierten Methode nachgeschlagen werden.
+   * Ihre eigene Organisations-ID kann mithilfe der unter [Anzeigen Ihrer Organisations-ID](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) dokumentierten Methode nachgeschlagen werden.
 
 1. Konfigurieren Sie anschließend Ihre Programm-ID:
 
@@ -195,14 +195,14 @@ In Umgebungen, in denen kein Benutzer den Setup-Befehl interaktiv ausführen kan
 
    Für diese Schritte müssen Sie Mitglied des Cloud Manager-Produktprofils **Entwickler – Cloud Service** sein müssen. Weitere Informationen finden Sie unter [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen – Zuweisen des Entwicklerproduktprofils](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
-Sehen Sie sich für weitere Informationen und Demonstrationen das Video-Tutorial [Einrichten eines RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup) an.
+Sehen Sie sich für weitere Informationen und Demonstrationen das Video-Tutorial [Einrichten einer RDE (06:24)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup) an.
 </details>
 
-## Verwenden der RDE bei der Entwicklung einer neuen Funktion {#using-rde-while-developing-a-new-feature}
+## Verwenden einer RDE bei der Entwicklung einer neuen Funktion {#using-rde-while-developing-a-new-feature}
 
 Adobe empfiehlt den folgenden Workflow für die Entwicklung einer neuen Funktion:
 
-* Wenn ein Zwischenmeilenstein erreicht und erfolgreich lokal mit AEM as a Cloud Service SDK validiert wurde, committen Sie den Code an einen Git-Funktionszweig. Der Zweig sollte noch nicht Teil des Hauptstamms sein. Der Commit an Git ist jedoch optional. Was ein „Zwischenmeilenstein“ ist, hängt von den Gewohnheiten des jeweiligen Teams ab. Beispiele wären etwa einige neue Code-Zeilen, ein halber Arbeitstag oder das Fertigstellen einer Unterfunktion.
+* Wenn ein Zwischenmeilenstein erreicht und erfolgreich lokal mit dem AEM as a Cloud Service-SDK validiert wurde, committen Sie den Code in einen Git-Funktionszweig. Der Zweig sollte noch nicht Teil des Hauptstamms sein. Der Commit an Git ist jedoch optional. Was ein „Zwischenmeilenstein“ ist, hängt von den Gewohnheiten des jeweiligen Teams ab. Beispiele wären etwa einige neue Code-Zeilen, ein halber Arbeitstag oder das Fertigstellen einer Unterfunktion.
 
 * Setzen Sie die RDE zurück, wenn sie von einer anderen Funktion verwendet wurde und Sie sie [auf den Standardstatus zurücksetzen](#reset-rde) möchten. <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->Das Zurücksetzen dauert einige Minuten, und der gesamte vorhandene Inhalt samt Code wird gelöscht. Sie können den RDE-Statusbefehl verwenden, um zu bestätigen, dass die RDE bereit ist. Die RDE wird mit der neuesten Version von AEM wiederhergestellt.
 
@@ -211,10 +211,10 @@ Adobe empfiehlt den folgenden Workflow für die Entwicklung einer neuen Funktion
   >Wenn Ihre Staging- und Produktionsumgebungen keine automatischen AEM-Versionsaktualisierungen erhalten und sich hinter der neuesten Version befinden, kann die RDE eine andere Version von AEM ausführen. Daher stimmt das Code-Verhalten in der RDE möglicherweise nicht mit der Funktionsweise in der Staging- und Produktionsumgebung überein. In diesem Fall ist es wichtig, den Code beim Staging gründlich zu testen, bevor er in der Produktion bereitgestellt wird.
 
 
-* Synchronisieren Sie den lokalen Code über die RDE-Befehlszeilenschnittstelle mit der RDE. Sie können verschiedene Arten von Dateien installieren, darunter die folgenden:
+* Synchronisieren Sie den lokalen Code über die RDE-Befehlszeilenschnittstelle mit der RDE. Sie können verschiedene Arten von Dateien installieren, z. B.:
 
    * Inhaltspakete
-   * Spezifische Bundles
+   * bestimmte Bundles
    * OSGi-Konfigurationsdateien
    * Inhaltsdateien
    * ZIP-Dateien mit Apache-/Dispatcher-Konfigurationen
@@ -227,23 +227,23 @@ Adobe empfiehlt den folgenden Workflow für die Entwicklung einer neuen Funktion
 
 * Sobald sich der Code erwartungsgemäß verhält, committen Sie den Code an den Git-Funktionszweig.
 
-* Der mit der RDE synchronisierte Code verwendet keine Cloud Manager-Pipeline. Daher sollten Sie jetzt eine produktionsfremde Cloud Manager-Pipeline verwenden, um den Git-Funktionszweig in der Cloud-Entwicklungsumgebung bereitzustellen. Durch diesen Prozess wird überprüft, ob der Code die Cloud Manager-Qualitätstests besteht, und Sie können sicher sein, dass der Code später mithilfe der Cloud Manager-Produktions-Pipeline erfolgreich bereitgestellt wird.
+* Der mit der RDE synchronisierte Code verwendet keine Cloud Manager-Pipeline. Daher sollten Sie jetzt eine Nicht-Produktions-Pipeline von Cloud Manager verwenden, um den Git-Funktionszweig in der Cloud-Entwicklungsumgebung bereitzustellen. Dadurch wird überprüft, ob der Code die Qualitäts-Gates von Cloud Manager erfolgreich durchläuft, und Sie können sicher sein, dass der Code später über die Cloud Manager-Produktions-Pipeline erfolgreich bereitgestellt wird.
 
 * Wiederholen Sie die obigen Schritte für jeden Zwischenmeilenstein, bis der gesamte Code für die Funktion bereit ist und sowohl in der RDE als auch in der Cloud-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
 
 * Implementieren Sie den Code über die Cloud Manager-Produktions-Pipeline.
 
-## Verwenden der RDE zum Debuggen einer vorhandenen Funktion {#use-rde-to-debug-an-existing-feature}
+## Verwenden einer RDE zum Debuggen einer vorhandenen Funktion {#use-rde-to-debug-an-existing-feature}
 
-Der Workflow entspricht in etwa der Entwicklung einer neuen Funktion. Der Unterschied besteht darin, dass der mit der RDE synchronisierte Code die Git-Kennzeichnung dessen widerspiegelt, was in die Umgebung gepusht wurde, in der das Problem aufgetreten ist. Dieser Workflow sorgt für Konsistenz bei der Untersuchung oder Reproduktion des Problems. Darüber hinaus kann es nützlich sein, Inhalte bereitzustellen, die der vorgelagerten Umgebung entsprechen. Dieser Ansatz kann durch den Export und Import von Inhaltspaketen erreicht werden.
+Der Workflow entspricht in etwa der Entwicklung einer neuen Funktion. Der Unterschied besteht darin, dass der mit der RDE synchronisierte Code die Git-Markierung des Codes enthält, der in die Umgebung gepusht wurde, in der das Problem aufgetreten ist. Dieser Workflow sorgt für Konsistenz bei der Untersuchung oder Reproduktion des Problems. Darüber hinaus kann es nützlich sein, Inhalte bereitzustellen, die der vorgelagerten Umgebung entsprechen. Dies kann durch den Export und Import von Inhaltspaketen erreicht werden.
 
-## Zusammenarbeit mehrerer Entwickler an derselben RDE {#multiple-developers-collaborating-on-the-same-rde}
+## Zusammenarbeit von mehreren Entwickelnden in derselben RDE {#multiple-developers-collaborating-on-the-same-rde}
 
 Eine RDE unterstützt immer nur jeweils ein Projekt. Da Code von einer lokalen Entwicklungsumgebung mit der RDE-Umgebung synchronisiert wird, wird sie normalerweise von einem Entwickler bzw. einer Entwicklerin allein verwendet.
 
-Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnde gleichzeitig an der Prüfung einer Funktion oder der Behebung eines Fehlers arbeiten. Entscheidend ist dabei, dass alle Entwickler ihre lokalen Projekte synchron halten, sodass von einem bestimmten Entwickler bzw. einer Entwicklerin vorgenommene Code-Änderungen von den anderen Entwicklerinnen und Entwicklern übernommen werden. Andernfalls könnte ein Entwickler versehentlich den Code des anderen überschreiben. Es wird empfohlen, dass alle Entwickelnden ihre Änderungen vor der Synchronisierung mit der RDE an eine gemeinsame Git-Verzweigung committen, sodass die anderen Entwickelnden die Änderungen abrufen, bevor sie ihre eigenen Änderungen vornehmen.
+Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnde gleichzeitig an der Prüfung einer Funktion oder der Behebung eines Fehlers arbeiten. Entscheidend ist hierbei, dass alle Entwickelnden ihre lokalen Projekte synchron halten, sodass von einer Person vorgenommene Code-Änderungen von den anderen übernommen werden. Andernfalls könnte eine Person versehentlich den Code einer anderen überschreiben. Die empfohlene Vorgehensweise besteht darin, dass alle Entwickelnden ihre Änderungen vor der Synchronisierung mit der RDE an einen gemeinsam genutzten Git-Zweig committen, sodass die anderen Entwickelnden die Änderungen abrufen, bevor sie selbst Änderungen vornehmen.
 
-## RDE-Befehlszeilen-Tools - Befehle {#rde-cli-commands}
+## Befehle der RDE-Befehlszeilen-Tools {#rde-cli-commands}
 
 ### Hilfe/allgemeine Informationen {#help}
 
@@ -261,23 +261,23 @@ Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnd
 
   `aio aem rde <command> --quiet`
 
-  Diese Markierung entfernt bestimmte Elemente wie beispielsweise Spinner und Fortschrittsbalken und begrenzt den Bedarf an Benutzereingaben.
+  Dieses Flag entfernt bestimmte Elemente wie Spinner und Fortschrittsbalken und schränkt die Benutzereingabe ein.
 
 * Verwenden Sie für JSON anstelle der Konsolenprotokollausgabe das JSON-Flag:
 
   `aio aem rde <command> --json`
 
-  Dieses Flag gibt ein gültiges JSON zurück, während die Konsolenausgabe unterdrückt wird. Weitere Informationen finden Sie in den JSON-Beispielen weiter unten.
+  Dieses Flag gibt eine gültige JSON-Datei zurück und unterdrückt die Konsolenausgabe. Weitere Informationen finden Sie in den JSON-Beispielen weiter unten.
 
 * Um zu vermeiden, dass die RDE-Verbindungsinformationen mit dem Setup-Befehl oder einer beliebigen aio-Konfigurationserstellung konfigurieren werden, verwenden Sie die drei Flags für Organisation, Programm und Umgebung:
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  Erfordert die Durchführung eines ```aio login```.
+  Erfordert eine ```aio login```-Ausführung.
 
 ### Bereitstellen in einer RDE {#deploying-to-rde}
 
-In diesem Abschnitt wird erläutert, wie Sie mit der RDE-CLI verschiedene Ressourcen bereitstellen, installieren oder aktualisieren können. Zu diesen Ressourcen gehören die folgenden:
+In diesem Abschnitt wird erläutert, wie Sie mit der RDE-CLI verschiedene Ressourcen bereitstellen, installieren oder aktualisieren können. Zu diesen Ressourcen gehören:
 
 * Inhaltspakete
 * OSGi-Konfigurationen
@@ -304,13 +304,13 @@ Optional können Sie auf ein Remote-Repository verweisen:
 
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
-Standardmäßig werden die Artefakte sowohl auf der Autoren- als auch auf der Veröffentlichungsebene bereitgestellt, aber mit der `-s`-Markierung kann eine bestimmte Ebene ausgewählt werden.
+Standardmäßig werden die Artefakte sowohl auf der Autoren- als auch auf der Veröffentlichungsebene bereitgestellt, aber mit dem Flag `-s` kann eine bestimmte Ebene ausgewählt werden.
 
-Jedes AEM-Paket kann bereitgestellt werden, z. B. Pakete mit Code, Inhalt oder ein [Container-Paket](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (auch als „all“-Paket bezeichnet).
+Jedes AEM-Paket kann bereitgestellt werden, z. B. Pakete mit Code, Inhalt oder ein [Container-Paket](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (auch als „all“-Paket bezeichnet).
 
 >[!IMPORTANT]
 >
->Die obige Inhaltspaketinstallation stellt die Dispatcher-Konfiguration für das WKND-Projekt nicht bereit. Stellen Sie sie separat bereit, indem Sie die Schritte „Bereitstellen einer Apache-/Dispatcher-Konfiguration“ befolgen.
+>Im Rahmen der obigen Inhaltspaketinstallation wird die Dispatcher-Konfiguration für das WKND-Projekt nicht bereitgestellt. Stellen Sie sie separat bereit, indem Sie die Schritte „Bereitstellen einer Apache-/Dispatcher-Konfiguration“ befolgen.
 
 #### Bereitstellen einer OSGi-Konfiguration {#deploy-OSGI-config}
 
@@ -323,7 +323,7 @@ Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich aus wie die folg
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-#### Bundle bereitstellen {#deploy-bundle}
+#### Bereitstellen eines Bundles {#deploy-bundle}
 
 Verwenden Sie zum Bereitstellen eines Bundles Folgendes:
 
@@ -401,18 +401,18 @@ The analyser found the following errors for publish :
 
 Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Paket nicht aufgelöst wird. In diesem Fall wird es „bereitgehalten“ und erst dann installiert, wenn die jeweiligen Anforderungen (in diesem Fall fehlende Importe) durch Installation von weiterem Code erfüllt werden.
 
-#### Pipeline-bezogene Konfiguration für Konfiguration bereitstellen (YAML-Konfigurationen) {#deploy-config-pipeline}
+#### Bereitstellen einer auf eine Konfigurations-Pipeline bezogenen Konfiguration (YAML-Konfigurationen) {#deploy-config-pipeline}
 
 Die im Artikel [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md) beschriebenen umgebungsspezifischen Konfigurationen (eine oder mehrere YAML-Dateien) können wie folgt bereitgestellt werden:
 
 `aio aem:rde:install -t env-config ./my-config-folder`
-Dabei ist `my-config-folder` der übergeordnete Ordner, der Ihre YAML-Konfigurationen enthält.
+Dabei ist `my-config-folder` der übergeordnete Ordner, der die YAML-Konfigurationen enthält.
 
 Alternativ können Sie auch eine ZIP-Datei installieren, die die Baumstruktur des Konfigurationsordners enthält:
 
 `aio aem:rde:install -t env-config config.zip`
 
-Beachten Sie, dass das envTypes-Array der yaml-Datei den Wert `rde` enthält, wie im folgenden Beispiel gezeigt:
+Beachten Sie, dass das Array „envTypes“ der YAML-Datei den Wert `rde` enthalten sollte, wie im folgenden Beispiel gezeigt:
 
 ```
 kind: "CDN"
@@ -423,13 +423,13 @@ metadata:
 
 ### Bereitstellen von Frontend-Code basierend auf Site-Designs und Site-Vorlagen {#deploying-themes-to-rde}
 
-RDEs unterstützen Frontend-Code, der mit [Site-](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) erstellt wurde. Anstatt die Cloud Manager [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) wie andere Umgebungstypen zu verwenden, stellen RDEs Frontend-Pakete mithilfe einer Befehlszeilenanweisung bereit.
+RDEs unterstützen Frontend-Code, der auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) basiert. Anstatt die [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) in Cloud Manager wie andere Umgebungstypen zu verwenden, stellen RDEs Frontend-Pakete mithilfe einer Befehlszeilenanweisung bereit.
 
-Erstellen Sie wie gewohnt Ihr Frontend-Paket mit npm:
+Erstellen Sie wie gewohnt Ihr Frontend-Paket mithilfe von npm:
 
 `npm run build`
 
-Es wird ein `dist/` Ordner generiert, sodass Ihr Frontend-Paketordner eine `package.json`-Datei und `dist` Ordner enthält:
+Es generiert einen Ordner `dist/`, sodass Ihr Frontend-Paketordner eine Datei `package.json` und einen Ordner `dist` enthält:
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -466,22 +466,22 @@ Logs:
 >
 >Die Benennung der Dateien im Frontend-Paket muss den folgenden Benennungskonventionen entsprechen:
 >
-> * `dist` für den NPM-Build-Ausgabepaket-Ordner
-> * `package.json` für das npm dependencies-Paket
+> * Ordner `dist`, für den Ordner des NPM-Build-Ausgabepakets
+> * Datei `package.json`, für das NPM-Abhängigkeitspaket
 
 >[!TIP]
 >
->Wenn Sie Ihre RDE vor April 2023 erstellt haben und bei der ersten Verwendung der Frontend-Funktion auf die `UNEXPECTED_API_ERROR` stoßen, kann dies auf ein veraltetes Setup zurückzuführen sein. Um dieses Problem zu beheben, löschen Sie die Umgebung und erstellen Sie eine neue.
+>Wenn Sie Ihre RDE vor April 2023 erstellt haben und bei der ersten Verwendung der Frontend-Funktion der Fehler `UNEXPECTED_API_ERROR` auftritt, kann dies an einem veralteten Setup liegen. Um dieses Problem zu beheben, löschen Sie die Umgebung und erstellen Sie eine neue.
 
 ### Überprüfen des Status der RDE {#checking-rde-status}
 
-Sie können die RDE-CLI verwenden, um zu überprüfen, ob die Umgebung bereit für die Implementierung ist und welche Implementierungen über das RDE-Plug-in vorgenommen wurden.
+Sie können die RDE-CLI verwenden, um zu überprüfen, ob die Umgebung bereit für die Implementierung ist, und zu sehen, welche Implementierungen über das RDE-Plug-in vorgenommen wurden.
 
-Folgendes ausführen:
+Bei Ausführung von Folgendem:
 
 `aio aem:rde:status`
 
-Gibt mit folgendem Inhalt zurück:
+Wird Folgendes zurückgegeben:
 
 ```
 Info for cm-p12345-e987654
@@ -498,7 +498,7 @@ Environment: Ready
 
 Selbst wenn der Befehl einen Hinweis zur Bereitstellung von Instanzen zurückgibt, können Sie mit der nächsten Aktualisierung fortfahren, doch Ihre letzte Aktualisierung ist möglicherweise noch nicht in der Instanz sichtbar.
 
-### Bereitstellungsverlauf anzeigen {#show-deployment-history}
+### Anzeigen des Bereitstellungsverlaufs {#show-deployment-history}
 
 Sie können den Verlauf der in der RDE vorgenommenen Bereitstellungen überprüfen, indem Sie Folgendes ausführen:
 
@@ -508,13 +508,13 @@ Daraufhin wird eine Antwort in folgendem Format zurückgegeben:
 
 `#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
 
-### Aus RDE löschen {#deleting-from-rde}
+### Löschen aus einer RDE {#deleting-from-rde}
 
-Sie können die CLI-Tools verwenden, um Konfigurationen und Bundles zu löschen, die Sie zuvor in der RDE bereitgestellt haben. Verwenden Sie den Befehl `status` , um eine Liste der zu löschenden Elemente zu erhalten. Diese Liste enthält die `bsn` für Bundles und `pid` für Konfigurationen, auf die im Löschbefehl verwiesen werden muss.
+Sie können die CLI-Tools verwenden, um Konfigurationen und Bundles zu löschen, die Sie zuvor in der RDE bereitgestellt haben. Verwenden Sie den Befehl `status`, um eine Liste der zu löschenden Elemente zu erhalten. Diese Liste enthält `bsn` für Bundles und `pid` für Konfigurationen, auf die im Löschbefehl verwiesen werden muss.
 
 Wenn beispielsweise `com.adobe.granite.demo.MyServlet.cfg.json` installiert wurde, dann lautet `bsn` einfach `com.adobe.granite.demo.MyServlet`, ohne das Suffix **cfg.json**.
 
-Das Löschen von Inhaltspaketen oder Inhaltsdateien wird nicht unterstützt. Um sie zu entfernen, setzen Sie die RDE zurück, wodurch sie auf den Standardstatus zurückgesetzt wird.
+Das Löschen von Inhaltspaketen oder Inhaltsdateien wird nicht unterstützt. Um sie zu entfernen, setzen Sie die RDE zurück, sodass der Standardzustand wiederhergestellt wird.
 
 Weitere Informationen finden Sie im folgenden Beispiel:
 
@@ -524,14 +524,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Weitere Informationen und Demonstrationen finden Sie im Video-Tutorial [Verwendung von RDE-Befehlen (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Weitere Informationen und Demonstrationen finden Sie im Video-Tutorial [Verwendung von RDE-Befehlen (10:01)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Bereitstellen in einer RDE von externen Git-Anbietern {#deploy-to-rde}
 
 >[!NOTE]
 >
->Diese Funktion ist über das Early-Adopter-Programm verfügbar. Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:cloudmanager_byog@adobe.com) an [CloudManager_BYOG@adobe.com. Geben Sie unbedingt an, welche Git-Plattform Sie verwenden möchten und ob Sie sich in einer privaten/öffentlichen oder einer Unternehmens-Repository-Struktur befinden.
+>Diese Funktion ist über das Early-Adopter-Programm verfügbar. Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com). Geben Sie unbedingt an, welche Git-Plattform Sie verwenden möchten und ob Sie sich in einer privaten/öffentlichen oder einer Unternehmens-Repository-Struktur befinden.
 
 Cloud Manager unterstützt die Bereitstellung von Code in einer RDE direkt von externen Git-Anbietern bei Verwendung der [Bring Your Own Git (BYOG)-Konfiguration](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -544,67 +544,67 @@ Für die Bereitstellung in RDEs aus einem externen Git-Repository ist Folgendes 
 **Nutzungshinweise**
 
 * Die Bereitstellung in der RDE wird derzeit nur für AEM-Inhalte und Dispatcher-Pakete unterstützt.
-* Die Bereitstellung anderer Pakettypen (z. B. vollständige AEM-Anwendungspakete) wird noch nicht unterstützt.
-* Derzeit wird das Zurücksetzen einer RDE-Umgebung mithilfe eines Kommentars nicht unterstützt. Stattdessen müssen Sie den vorhandenen AIO-Befehlszeilenbefehl zum Zurücksetzen verwenden, wie [hier beschrieben](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line).
+* Die Bereitstellung anderer Pakettypen (z. B. vollständiger AEM-Anwendungspakete) wird noch nicht unterstützt.
+* Derzeit wird das Zurücksetzen einer RDE-Umgebung mithilfe eines Kommentars nicht unterstützt. Stattdessen müssen Sie den vorhandenen AIO-CLI-Befehl zum Zurücksetzen verwenden, wie [hier beschrieben](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line).
 
 **Funktionsweise**
 
 1. **Validierungsmeldung zur Code-Qualität.**
 
-   Trigger Wenn eine Pull Request (PR) eine Code-Qualitäts-Pipeline ausführt, geben die Validierungsergebnisse an, ob die Bereitstellung in einer RDE-Umgebung fortgesetzt werden kann.
+   Wenn eine Pull-Anfrage (Pull Request, PR) die Ausführung einer Code-Qualitäts-Pipeline auslöst, wird über die Validierungsergebnisse angegeben, ob die Bereitstellung in einer RDE-Umgebung fortgesetzt werden kann.
 
-   So sieht es auf GitHub Enterprise aus:
-   ![Validierungsmeldung zur Code-Qualität auf GitHub Enterprise](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+   So sieht dies in GitHub Enterprise aus:
+   ![Validierungsmeldung zur Code-Qualität in GitHub Enterprise](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
-   So sieht es auf GitLab aus:
-   ![Validierungsmeldung zur Code-Qualität auf GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+   So sieht es in GitLab aus:
+   ![Validierungsmeldung zur Code-Qualität in GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
-   Wie es auf Bitbucket aussieht:
-   ![Validierungsmeldung der Code-Qualität auf Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
+   So sieht es in Bitbucket aus:
+   ![Validierungsmeldung zur Code-Qualität in Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
 
-1. **Trigger-Bereitstellung unter Verwendung eines Kommentars.**
+1. **Auslösen der Bereitstellung mit einem Kommentar.**
 
-   Um die Bereitstellung zu starten, fügen Sie dem PR einen Kommentar im folgenden Format hinzu: `deploy on rde-environment-<envName>`
+   Fügen Sie der PR einen Kommentar im folgenden Format hinzu, um die Bereitstellung zu initiieren: `deploy on rde-environment-<envName>`.
 
-   ![Trigger-Bereitstellung unter Verwendung eines Kommentars](/help/implementing/developing/introduction/assets/rde-trigger-deployment-using-comment.png)
+   ![Auslösen der Bereitstellung mit einem Kommentar](/help/implementing/developing/introduction/assets/rde-trigger-deployment-using-comment.png)
 
-   Der `<envName>` muss mit dem Namen einer vorhandenen RDE-Umgebung übereinstimmen. Wenn der Name nicht gefunden wird, wird ein Kommentar zurückgegeben, der angibt, dass die Umgebung ungültig ist.
+   Der `<envName>` muss mit dem Namen einer vorhandenen RDE-Umgebung übereinstimmen. Wenn der Name nicht gefunden wird, wird ein Kommentar zurückgegeben, dass die Umgebung ungültig ist.
 
-   Wenn der Umgebungsstatus nicht bereit ist, erhalten Sie den folgenden Kommentar:
+   Wenn der Umgebungsstatus nicht „Bereit“ lautet, erhalten Sie den folgenden Kommentar:
 
    ![Umgebung ist nicht bereit zur Bereitstellung](/help/implementing/developing/introduction/assets/rde-environment-not-ready.png)
 
 1. **Umgebungsprüfung und Artefaktbereitstellung.**
 
-   Wenn die RDE bereit ist, sendet Cloud Manager eine neue Prüfung an den PR.
+   Wenn die RDE bereit ist, sendet Cloud Manager eine neue Prüfung an die PR.
 
-   So sieht es auf GitHub Enterprise aus:
+   So sieht dies in GitHub Enterprise aus:
 
-   ![Status der Umgebung auf GitHub](/help/implementing/developing/introduction/assets/rde-github-environment-status-is-ready.png)
+   ![Status der Umgebung in GitHub](/help/implementing/developing/introduction/assets/rde-github-environment-status-is-ready.png)
 
-   So sieht es auf GitLab aus:
+   So sieht es in GitLab aus:
 
-   ![Status der Umgebung auf GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-1.png)
+   ![Status der Umgebung in GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-1.png)
 
-   Wie es auf Bitbucket aussieht:
+   So sieht es in Bitbucket aus:
 
-   ![Status der Umgebung auf Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-1.png)
+   ![Status der Umgebung in Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-1.png)
 
-1. **Erfolgreiche Bereitstellungsmeldung.**
+1. **Meldung nach erfolgreicher Bereitstellung.**
 
    Wenn die Bereitstellung abgeschlossen ist, veröffentlicht Cloud Manager eine Erfolgsmeldung, in der die in der Zielumgebung bereitgestellten Artefakte zusammengefasst werden.
 
-   So sieht es auf GitHub Enterprise aus:
+   So sieht dies in GitHub Enterprise aus:
 
-   ![Bereitstellungsstatus der Umgebung auf GitHub](/help/implementing/developing/introduction/assets/rde-github-environment-deployed-artifacts.png)
+   ![Bereitstellungsstatus der Umgebung in GitHub](/help/implementing/developing/introduction/assets/rde-github-environment-deployed-artifacts.png)
 
-   So sieht es auf GitLab aus:
+   So sieht es in GitLab aus:
 
-   ![Bereitstellungsstatus der Umgebung auf GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-2.png)
+   ![Bereitstellungsstatus der Umgebung in GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-2.png)
 
-   Wie es auf Bitbucket aussieht:
+   So sieht es in Bitbucket aus:
 
-   ![Bereitstellungsstatus der Umgebung auf Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
+   ![Bereitstellungsstatus der Umgebung in Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
 
@@ -613,7 +613,7 @@ Für die Bereitstellung in RDEs aus einem externen Git-Repository ist Folgendes 
 
 Wie andere Umgebungstypen können auch die Protokollebenen durch Ändern von OSGi-Konfigurationen festgelegt werden. Wie oben beschrieben, verwendet das Bereitstellungsmodell für RDEs jedoch eine Befehlszeile und keine Cloud Manager-Implementierung. Weitere Informationen zum Anzeigen, Herunterladen und Interpretieren von Protokollen finden Sie in der [Protokollierungsdokumentation](/help/implementing/developing/introduction/logging.md).
 
-Die RDE-CLI verfügt außerdem über einen eigenen Protokollbefehl, mit dem schnell konfiguriert werden kann, welche Klassen und Pakete auf welcher Protokollebene protokolliert werden. Diese Konfigurationen können als temporär betrachtet werden, da sie die OSGi-Eigenschaften in der Versionskontrolle nicht ändern. Diese Funktion konzentriert sich auf das Verfolgen von Protokollen in Echtzeit, anstatt nach Protokollen aus der weit zurückliegenden Vergangenheit zu suchen.
+Die RDE-CLI verfügt auch über einen eigenen Protokollbefehl, mit dem schnell konfiguriert werden kann, welche Klassen und Pakete auf welcher Protokollebene protokolliert werden. Diese Konfigurationen können als temporär betrachtet werden, da sie die OSGi-Eigenschaften in der Versionskontrolle nicht ändern. Diese Funktion konzentriert sich auf das Verfolgen von Protokollen in Echtzeit, anstatt nach Protokollen aus der weit zurückliegenden Vergangenheit zu suchen.
 
 Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket auf eine Debugging-Protokollebene und zwei Pakete (durch Leerzeichen getrennt) auf eine Info-Debugging-Ebene eingestellt sind. Eine Ausgabe, die ein **auth**-Paket enthält, ist hervorgehoben.
 
@@ -621,7 +621,7 @@ Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket
 
 >[!TIP]
 >
->Falls der Fehler `RDECLI:UNEXPECTED_API_ERROR` angezeigt wird, wenn Sie die Protokollbefehle für den Author-Service ausprobieren, setzen Sie Ihre Umgebung zurück und versuchen Sie es erneut. Dieser Fehler wird ausgegeben, wenn Ihr letzter Zurücksetzungsvorgang vor Ende Mai 2024 erfolgte.
+>Falls der Fehler `RDECLI:UNEXPECTED_API_ERROR` angezeigt wird, wenn Sie die Protokollbefehle für den Author-Service ausprobieren, setzen Sie Ihre Umgebung zurück und versuchen Sie es erneut. Dieser Fehler wird ausgegeben, wenn der letzte Vorgang zum Zurücksetzen vor Ende Mai 2024 stattgefunden hat.
 >
 >```
 >aio aem:rde:reset
@@ -629,7 +629,7 @@ Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket
 
 Weitere Informationen zum vollständigen Satz von Befehlszeilenoptionen finden Sie unter `aio aem:rde:logs --help`.
 
-Zu den Funktionen gehören:
+Die Funktionen umfassen Folgendes:
 
 * Deklarieren von Protokollebenen auf Paket- oder Klassenebene
 * Anpassen des Protokollausgabeformats
@@ -641,23 +641,23 @@ Beachten Sie, dass Protokolle im Speicher der RDE gespeichert werden. Diese Prot
 
 ## Zurücksetzen der RDE {#reset-rde}
 
-Durch Zurücksetzen der RDE werden der gesamte benutzerdefinierte Code, Konfigurationen und Inhalte aus der Autoren- und Veröffentlichungsinstanz entfernt. Das Zurücksetzen der RDE ist hilfreich, wenn Sie mit dem Testen einer Funktion fertig sind und die Umgebung in einen Standardzustand zurückversetzen möchten, bevor Sie eine andere testen.
+Durch das Zurücksetzen der RDE werden der gesamte benutzerdefinierte Code, die Konfigurationen und alle Inhalte aus der Autoren- und Veröffentlichungsinstanz entfernt. Das Zurücksetzen der RDE ist hilfreich, wenn Sie mit dem Testen einer Funktion fertig sind und die Umgebung in einen Standardzustand zurückversetzen möchten, bevor Sie eine andere testen.
 
-Durch Zurücksetzen wird die RDE auf die neueste AEM-Version festgelegt.
+Durch das Zurücksetzen wird die RDE auf die neueste AEM-Version festgelegt.
 
-Sie können die RDE entweder mit [Cloud Manager](#reset-the-rde-cloud-manager) oder der [Befehlszeile“ ](#reset-the-rde-command-line). Dieser Vorgang dauert einige Minuten. Der gesamte vorhandene Inhalt samt Code wird dabei gelöscht.
+Sie können die RDE entweder über [Cloud Manager](#reset-the-rde-cloud-manager) oder die [Befehlszeile](#reset-the-rde-command-line) zurücksetzen. Dieser Vorgang dauert einige Minuten. Der gesamte vorhandene Inhalt samt Code wird dabei gelöscht.
 
 >[!NOTE]
 >
->Vergewissern Sie sich, dass Ihnen die Cloud Manager-Entwicklerrolle zugewiesen wurde, bevor Sie die Funktion zum Zurücksetzen verwenden. Andernfalls schlägt die Aktion zum Zurücksetzen mit einem Fehler fehl.
+>Vergewissern Sie sich, dass Ihnen die Cloud Manager-Entwicklerrolle zugewiesen wurde, bevor Sie die Funktion zum Zurücksetzen verwenden. Andernfalls schlägt die Aktion zum Zurücksetzen mit einer Fehlermeldung fehl.
 
 ### Zurücksetzen der RDE über die Befehlszeile {#reset-the-rde-command-line}
 
-Sie können die RDE zurücksetzen und sie auf einen Standardstatus zurücksetzen, indem Sie Folgendes ausführen:
+Sie können die RDE zurücksetzen und sie auf einen Standardstatus zurückbringen, indem Sie Folgendes ausführen:
 
 `aio aem:rde:reset`
 
-Dieser Vorgang dauert in der Regel einige Minuten und meldet ```Environment reset.``` bei Erfolg oder ```Failed to reset the environment.``` von Fehlern. Eine strukturierte Ausgabe finden Sie weiter unten im Kapitel über ```--json```-Ausgaben.
+Dieser Vorgang dauert in der Regel einige Minuten und meldet ```Environment reset.``` im Erfolgsfall bzw. ```Failed to reset the environment.```, wenn Fehler aufgetreten sind. Eine strukturierte Ausgabe finden Sie weiter unten im Kapitel über ```--json```-Ausgaben.
 
 Verwenden Sie den [Statusbefehl](#checking-rde-status), um zu überprüfen, ob die Umgebung wieder bereit ist.
 
@@ -693,7 +693,7 @@ Sie können Cloud Manager verwenden, um Ihre RDE zurückzusetzen, indem Sie die 
 
    ![Zurücksetzen der Banner-Benachrichtigung](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Nachdem das Zurücksetzen der RDE gestartet wurde, dauert es in der Regel einige Minuten, bis der Vorgang abgeschlossen ist und die Umgebung wieder ihren Standardstatus annimmt. Sie können den Zurücksetzungsstatus jederzeit in der Spalte **Status** der Karte **Umgebungen** oder im Fenster einsehen.
+Nach dem Start der RDE-Zurücksetzung dauert es in der Regel einige Minuten, bis sie abgeschlossen ist und die Umgebung in den Standardzustand zurückversetzt wurde. Sie können den Status der Zurücksetzung jederzeit in der Spalte **Status** der Karte **Umgebungen** oder im Fenster einsehen.
 
 ![RDE-Zurücksetzungsstatus](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -1027,7 +1027,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
 <details>
   <summary>Erweitern, um Beispiele zum Zurücksetzen anzuzeigen</summary>
 
-#### Feuern und vergessen, kein Warten {#fire-no-wait}
+#### Fire-and-Forget, keine Wartezeit {#fire-no-wait}
 
 ```$ aio aem rde reset --no-wait --json```
 
@@ -1051,7 +1051,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
 }
 ```
 
-#### Warten auf Abschluss, Zurücksetzen fehlgeschlagen {#wait-failed}
+#### Auf Abschluss warten, Zurücksetzen fehlgeschlagen {#wait-failed}
 
 ```$ aio aem rde reset --json```
 
@@ -1068,7 +1068,7 @@ Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsole
 ### Neu starten {#restart}
 
 <details>
-  <summary>Erweitern um Neustartbeispiele zu sehen</summary>
+  <summary>Erweitern, um Beispiele zum Neustarten anzuzeigen</summary>
 
 ```$ aio aem rde restart --json```
 
@@ -1096,15 +1096,15 @@ Allgemeine Informationen zu den Ausführungsmodi finden Sie in der [Dokumentatio
 >
 >Die RDE-OSGi-Konfiguration ist insofern eindeutig, als sie die Werte aller OSGi-Eigenschaften erbt, die durch den `dev`-Ausführungsmodus des Bundles deklariert wurden.
 
-RDEs unterscheiden sich von anderen Umgebungen darin, dass Inhalte in einem `install.rde` Ordner (oder `install.author.rde` oder `install.publish.rde`) unter `/apps` installiert werden können. Mit dieser Funktion können Sie Inhalte mithilfe der Befehlszeilen-Tools an Git übertragen und an die RDE übermitteln.
+RDEs unterscheiden sich von anderen Umgebungen darin, dass Inhalte in einem Ordner `install.rde` (bzw. `install.author.rde` oder `install.publish.rde`) unter `/apps` installiert werden können. Mit dieser Fähigkeit können Sie Inhalte mithilfe des Befehlszeilen-Tools an Git übertragen und an die RDE übermitteln.
 
-## Mit Inhalt füllen {#populating-content}
+## Befüllen mit Inhalten {#populating-content}
 
 Wenn eine RDE zurückgesetzt wird, werden alle Inhalte entfernt, sodass, falls gewünscht, explizit Maßnahmen ergriffen werden müssen, um Inhalte hinzuzufügen. Als Best Practice empfiehlt es sich, einen Satz von Inhalten zusammenzustellen, die als Testinhalt für die Validierung oder das Debugging von Funktionen in der RDE verwendet werden können. Es gibt mehrere mögliche Strategien zum Ausfüllen der RDE mit diesem Inhalt:
 
 1. Synchronisieren Sie das Inhaltspaket explizit mit der RDE mithilfe der Befehlszeilen-Tools
 
-1. Platzieren und übertragen Sie den Beispielinhalt in Git in einem `install.rde` Ordner unter `/apps` und synchronisieren Sie dann das übergeordnete Inhaltspaket mit der RDE mithilfe der Befehlszeilen-Tools.
+1. Platzieren und übertragen Sie den Beispielinhalt in Git in einem Ordner `install.rde` unter `/apps` und synchronisieren Sie dann das übergeordnete Inhaltspaket mit der RDE mithilfe des Befehlszeilen-Tools.
 
 1. Verwenden Sie das [Tool zum Kopieren von Inhalten](/help/implementing/developing/tools/content-copy.md), um ein definiertes Inhaltsset aus einer Produktions-, Staging- oder Entwicklungsumgebung oder aus einer anderen RDE zu kopieren.
 
@@ -1113,11 +1113,11 @@ Wenn eine RDE zurückgesetzt wird, werden alle Inhalte entfernt, sodass, falls g
 Sie sind beim Synchronisieren von Inhaltspaketen auf 1 GB beschränkt.
 
 
-## Wie unterscheiden sich RDEs von Cloud-Entwicklungsumgebungen? {#how-are-rds-different-from-cloud-development-environments}
+## Worin unterscheiden sich RDEs von Cloud-Entwicklungsumgebungen? {#how-are-rds-different-from-cloud-development-environments}
 
-Obwohl die RDE in vielerlei Hinsicht einer Cloud-Entwicklungsumgebung ähnelt, gibt es einige geringfügige Unterschiede in der Architektur, die eine schnelle Synchronisierung von Code ermöglichen. Bei RDEs wird Code über eine lokale Entwicklungsumgebung synchronisiert. Bei Cloud-Entwicklungsumgebungen wird Code hingegen über Cloud Manager bereitgestellt.
+Die RDE ähnelt zwar in vielerlei Hinsicht einer Cloud-Entwicklungsumgebung, es gibt jedoch einige geringfügige Unterschiede in der Architektur, um eine schnelle Synchronisierung von Code zu ermöglichen. Ein Unterschied besteht darin, wie Code zur RDE transferiert wird: Bei RDEs wird der Code über eine lokale Entwicklungsumgebung synchronisiert, während bei Cloud-Entwicklungsumgebungen der Code über Cloud Manager bereitgestellt wird.
 
-Aus diesen Gründen wird empfohlen, den Code nach der Validierung in einer RDE mithilfe der produktionsfremden Pipeline in einer Cloud-Entwicklungsumgebung bereitzustellen. Testen Sie schließlich den Code, bevor Sie ihn mit der Produktions-Pipeline bereitstellen.
+Aus diesen Gründen wird empfohlen, den Code nach seiner Validierung in einer RDE mithilfe der Nicht-Produktions-Pipeline in einer Cloud-Entwicklungsumgebung bereitzustellen. Testen Sie schließlich den Code, bevor Sie ihn mit der Produktions-Pipeline bereitstellen.
 
 Beachten Sie außerdem die folgenden Überlegungen:
 
@@ -1129,15 +1129,15 @@ Beachten Sie außerdem die folgenden Überlegungen:
 
 Für jede lizenzierte Lösung steht eine RDE zur Verfügung. Darüber hinaus bietet Adobe zusätzliche RDEs an, die für Produktionsprogramme (ohne Sandbox) lizenziert werden können.
 
-Die Anzahl der benötigten RDEs hängt von der Zusammensetzung und den Prozessen eines Unternehmens ab. Das flexibelste Model ist das, bei dem ein Unternehmen für jedes Mitglied seines Entwicklungsteams von AEM Cloud Service eine dedizierte RDE erwirbt. In diesem Modell kann jeder Entwickler seinen Code in der RDE testen, ohne sich mit anderen Team-Mitgliedern darüber abzustimmen, ob eine RDE-Umgebung verfügbar ist.
+Die Anzahl der benötigten RDEs hängt von der Zusammensetzung und den Prozessen eines Unternehmens ab. Das flexibelste Model ist das, bei dem ein Unternehmen für jedes Mitglied seines Entwicklungsteams von AEM Cloud Service eine dedizierte RDE erwirbt. In diesem Modell können alle Entwickelnden den eigenen Code auf der RDE testen, ohne sich mit anderen Team-Mitgliedern darüber abzustimmen, ob eine RDE-Umgebung verfügbar ist.
 
-Auf der anderen Seite kann sich ein Team mit nur einer RDE auf die interne Koordinierung verlassen, um zu entscheiden, welcher Entwickler die Umgebung zu einem bestimmten Zeitpunkt verwendet. Dieser Ansatz funktioniert gut, wenn ein Entwickler einen Funktions-Meilenstein erreicht und seine Arbeit in einer Cloud-Umgebung mit der Flexibilität validieren muss, schnelle Änderungen vorzunehmen.
+Auf der anderen Seite kann ein Team mit nur einer RDE auf die interne Koordination zurückgreifen, um zu entscheiden, welche Person die Umgebung zu einem bestimmten Zeitpunkt verwenden kann. Dieser Ansatz funktioniert gut, wenn eine Person einen Funktions-Meilenstein erreicht und ihre Arbeit in einer Cloud-Umgebung validieren muss, die flexibel genug ist, um Änderungen schnell vornehmen zu können.
 
 Bei einem Zwischenmodell kauft ein Unternehmen mehrere RDEs, sodass eine höhere Wahrscheinlichkeit besteht, dass eine nicht verwendete RDE verfügbar ist. Eine Strategie könnte darin bestehen, pro Scrum-Team oder Hauptfunktion eine RDE zuzuweisen. Interne Prozesse können zur Koordinierung der Nutzung der Umgebungen verwendet werden.
 
-## Wie unterscheidet sich eine AEM Forms Cloud Service-RDE von anderen Umgebungen? {#how-are-forms-rds-different-from-cloud-development-environments}
+## Wie unterscheidet sich eine RDE in AEM Forms Cloud Service von anderen Umgebungen? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms-Entwicklerinnen und -Entwickler können die schnelle Entwicklungsumgebung von AEM Forms Cloud Service verwenden, um schnell adaptive Forms, Workflows und Anpassungen zu entwickeln, z. B. die Anpassung von Kernkomponenten, Integrationen mit Drittanbietersystemen und mehr. Die schnelle Entwicklungsumgebung (RDE) in AEM Forms Cloud Service unterstützt keine Kommunikations-APIs. Sie unterstützt auch keine Funktionen, für die ein Datensatzdokument erforderlich ist, z. B. das Generieren eines Datensatzdokuments bei der Übermittlung eines adaptiven Formulars. Die folgenden aufgelisteten Funktionen von AEM Forms sind in einer schnellen Enticklungsumgebung (RDE) nicht verfügbar:
+Entwicklerinnen und Entwickler von Forms können die schnelle Entwicklungsumgebung in AEM Forms Cloud Service verwenden, um schnell adaptive Formulare, Workflows und Anpassungen zu entwickeln, z. B. die Anpassung von Kernkomponenten, Integrationen mit Drittanbietersystemen und mehr. Die schnelle Entwicklungsumgebung (RDE) in AEM Forms Cloud Service unterstützt keine Kommunikations-APIs. Sie unterstützt auch keine Funktionen, für die ein Datensatzdokument erforderlich ist, z. B. das Generieren eines Datensatzdokuments bei der Übermittlung eines adaptiven Formulars. Die folgenden aufgelisteten Funktionen von AEM Forms sind in einer schnellen Enticklungsumgebung (RDE) nicht verfügbar:
 
 * Konfigurieren eines Datensatzdokuments für ein adaptives Formular
 * Generieren eines Datensatzdokuments bei Übermittlung eines adaptiven Formulars oder mit einem Workflow-Schritt
@@ -1147,7 +1147,7 @@ Forms-Entwicklerinnen und -Entwickler können die schnelle Entwicklungsumgebung 
 
 >[!NOTE]
 >
-> Es gibt keinen Unterschied zwischen der Benutzeroberfläche der schnellen Entwicklungsumgebung (RDE) und anderen Cloud Service-Umgebungen für Forms. Alle mit dem Datensatzdokument verbundenen Optionen, z. B. die Auswahl einer Datensatzdokumentvorlage für ein adaptives Formular, werden weiterhin in der Benutzeroberfläche angezeigt. Diese Umgebungen verfügen über keine Kommunikations-APIs und Datensatzdokument-Funktionen, um solche Optionen zu testen. Wenn Sie also eine Option auswählen, für die Kommunikations-APIs oder Datensatzdokumentfunktionen erforderlich sind, führt das System die Aktion nicht aus. Stattdessen wird eine Fehlermeldung angezeigt.
+> Es gibt keinen Unterschied zwischen der Benutzeroberfläche der schnellen Entwicklungsumgebung (RDE) und anderen Cloud Service-Umgebungen für Forms. Alle mit einem Nachweis verbundenen Optionen, z. B. die Auswahl einer Nachweisvorlage für ein adaptives Formular, werden weiterhin in der Benutzeroberfläche angezeigt. Diese Umgebungen verfügen über keine Kommunikations-APIs und Nachweis-Funktionen, um solche Optionen zu testen. Wenn Sie also eine Option auswählen, für die Kommunikations-APIs oder Nachweisfunktionen erforderlich sind, führt das System die Aktion nicht aus. Stattdessen wird eine Fehlermeldung angezeigt.
 
 ## RDE-Tutorial
 
@@ -1155,46 +1155,46 @@ Informationen zu RDE in AEM as a Cloud Service finden Sie im Video-Tutorial, das
 
 ## Fehlerbehebung {#troubleshooting}
 
-### Fehlerbehebung bei RDE (#rde-troublehooting)
+### Fehlerbehebung der RDE (#rde-troublehooting)
 
 #### Abrufen der neuesten AEM-Version für eine vorhandene RDE {#get-latest-aem-version}
 
-Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Ein [RDE-Zurücksetzen](#reset-rde) das mit Cloud Manager oder dem `aio aem:rde:reset`-Befehl durchgeführt werden kann, durchläuft die RDE und setzt sie auf die neueste AEM-Version.
+Nach der Erstellung werden RDEs auf die neueste verfügbare Adobe Experience Manager(AEM)-Version festgelegt. Das [Zurücksetzen einer RDE](#reset-rde), das mit Cloud Manager oder dem Befehl `aio aem:rde:reset` durchgeführt werden kann, führt einen RDE-Zyklus durch und setzt sie auf die neueste AEM-Version.
 
-### Fehlerbehebung beim aio-RDE-Plug-in {#aio-rde-plugin-troubleshooting}
+### Fehlerbehebung des aio-RDE-Plug-ins {#aio-rde-plugin-troubleshooting}
 
 #### Fehler wegen unzureichender Berechtigungen {#insufficient-permissions}
 
 Um das RDE-Plug-in verwenden zu können, müssen Sie Mitglied des Cloud Manager-Produktprofils **Entwickler – Cloud Service** sein. Weitere Informationen finden Sie unter [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen – Zuweisen des Entwicklerproduktprofils](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
-Alternativ können Sie durch Ausführen des folgenden Befehls bestätigen, dass Sie über diese Entwicklerrolle verfügen, wenn Sie sich bei der Entwicklerkonsole anmelden:
+Sie können auch bestätigen, dass Sie über diese Entwicklerrolle verfügen, indem Sie sich bei der Developer Console durch Ausführen des folgenden Befehls anmelden:
 
 `aio cloudmanager:environment:open-developer-console`
 
 >[!TIP]
 >
->Wenn Sie den `Warning: cloudmanager:* is not a aio command.` Fehler sehen, müssen Sie den [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) installieren, indem Sie den folgenden Befehl ausführen:
+>Wenn Sie den Fehler `Warning: cloudmanager:* is not a aio command.` sehen, müssen Sie [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) installieren, indem Sie den folgenden Befehl ausführen:
 >
 >```
 >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
 >```
 
-Vergewissern Sie sich, dass die Anmeldung erfolgreich abgeschlossen wurde, indem Sie Folgendes ausführen:
+Überprüfen Sie, ob die Anmeldung erfolgreich abgeschlossen wurde, indem Sie den folgenden Befehl ausführen:
 
 `aio cloudmanager:list-programs`
 
-Dieser Prozess listet alle Programme unter Ihrer konfigurierten Organisation auf und bestätigt, dass Ihnen die richtige Rolle zugewiesen wurde.
+Dieser Prozess listet alle Programme unter Ihrer konfigurierten Organisation auf und bestätigt, dass Ihnen die richtige Rolle zugewiesen ist.
 
-#### Veraltete `aio-cli-plugin-cloudmanager` verwenden {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+#### Verwenden des veralteten Kontexts `aio-cli-plugin-cloudmanager` {#aio-rde-plugin-troubleshooting-deprecatedcontext}
 
-Aufgrund des Verlaufs der `aio-cli-plugin-aem-rde` wurde der Kontextname `aio-cli-plugin-cloudmanager` einige Zeit verwendet. Das RDE-Plug-in verwendet jetzt die IMS-Methode zur Verwaltung von Kontextinformationen, sodass Sie Kontext entweder global oder lokal speichern können. Sie können auch einen Standardkontext konfigurieren, der automatisch auf alle AIO-Aufrufe angewendet wird. Der konfigurierte Standardkontext wird lokal gespeichert und ermöglicht es den Entwickelnden, einzelne Kontexte und deren Informationen in einem Ordner zu verfolgen und zu verwenden. Weitere Informationen finden Sie [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
+Aufgrund der Geschichte von `aio-cli-plugin-aem-rde` wurde für einige Zeit der Kontextname `aio-cli-plugin-cloudmanager` verwendet. Das RDE-Plug-in verwendet jetzt die IMS-Methode zum Umgang mit Kontextdaten, sodass Sie Kontext entweder global oder lokal speichern können. Sie können auch einen Standardkontext konfigurieren, der automatisch auf alle AIO-Aufrufe angewendet wird. Der konfigurierte Standardkontext wird lokal gespeichert und ermöglicht es den Entwickelnden, einzelne Kontexte und deren Informationen in einem Ordner zu verfolgen und zu verwenden. Weitere Informationen finden Sie im obigen [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
 
-Entwickler, die beide Plug-ins, das `aio-cli-plugin-cloudmanager` und das `aio-cli-plugin-aem-rde`, verwenden und alle Informationen im selben Kontext behalten möchten, haben jetzt zwei Möglichkeiten:
+Entwicklerinnen und Entwickler, die beide Plug-ins (`aio-cli-plugin-cloudmanager` und `aio-cli-plugin-aem-rde`) verwenden und alle Informationen im selben Kontext beibehalten möchten, haben jetzt folgende Optionen:
 
-##### Weiter `aio-cli-plugin-cloudmanager` verwenden
+##### Weiterverwendung des Kontexts `aio-cli-plugin-cloudmanager`
 
-Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird eine Warnung vor veralteten Elementen angezeigt. Diese Warnung kann im ```--quiet```-Modus weggelassen werden. Neuere Versionen des RDE-Plug-ins bieten nicht mehr die Möglichkeit, den Kontext `aio-cli-plugin-cloudmanager` lesen. Um ihn weiterhin zu verwenden, konfigurieren Sie einfach den Standardkontext für `aio-cli-plugin-cloudmanager`. Siehe [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
+Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird eine Warnung angezeigt, dass er veraltet ist. Diese Warnung kann durch Verwenden des Modus ```--quiet``` ignoriert werden. Neuere Versionen des RDE-Plug-ins bieten keine Ausweichmöglichkeit, um den Kontext `aio-cli-plugin-cloudmanager` länger zu lesen. Um ihn weiterhin zu verwenden, konfigurieren Sie einfach den Standardkontext für `aio-cli-plugin-cloudmanager`. Siehe das [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
 
-##### Verwenden Sie einen anderen Kontextnamen auch für das Cloud Manager-Plug-in.
+##### Verwenden eines anderen Kontextnamens auch für das Cloud Manager-Plug-in
 
-Die Cloud Manager-Plug-ins bieten einen -Parameter zum Definieren eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie dazu das RDE-Plug-in mit [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, bei jedem Aufruf `myContext` wie ```--imsContextName=myContext``` zu verwenden.
+Die Cloud Manager-Plug-ins bieten einen Parameter zur Definition eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie hierzu das RDE-Plug-in anhand des [Beispiels zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, bei jedem Aufruf `myContext` wie ```--imsContextName=myContext``` zu verwenden.

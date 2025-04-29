@@ -5,9 +5,9 @@ role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Um ein Asset in der Vorschau anzuzeigen, wählen Sie es aus und klicken Sie oben
 
 ![Anzeigen einer Vorschau für ein Asset](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Zum aktuellen Ordner oder zum aktuellen Suchergebnis im Repository zurückkehren **B**: Name und Format der Datei, die Sie in der Vorschau anzeigen **C**: Aufgaben zuweisen **D**: Erweiterte Metadaten **E**: Wörter und Smart-Tags **F**: Kommentare und Anmerkungen **G**: Aufgaben im Zusammenhang mit dem ausgewählten Asset anzeigen **H**: [Anzeigen und verwalten](/help/assets/manage-organize-assets-view.md#versions-of-assets)I **** **** **: Ausgabedarstellungen des Bildes anzeigenJ**: Dynamic Media-Ausgabedarstellungen bearbeiten: Ansicht einschließlich smartem Zuschneiden und Dynamic Media-API-Ausgabedarstellungen. **L**: Grundlegende Metadaten **M**: Erweiterte Metadaten **N**: Schlagwörter und Smart-Tags **O**: Wechseln zum vorherigen oder nächsten Element im aktuellen Ordner, ohne zum Ordner zurückzukehren **P**: Genauere Vorschau. Zoom, Vollbild und andere Optionen.
+**A**: Zurück zum aktuellen Ordner oder zum aktuellen Suchergebnis im Repository **B**: Name und Format für die Datei, die Sie in der Vorschau anzeigen **C**: Zuweisen von Aufgaben **D**: Erweiterte Metadaten **E**: Keywords und Smart-Tags **F**: Kommentieren und Versehen von Anmerkungen **G**: Anzeigen von Aufgaben im Zusammenhang mit dem ausgewählten Asset **H**: [Anzeigen und Verwalten von Versionen](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: Anzeigen von Ausgabedarstellungen des Bildes **J**: Bearbeiten des Bildes **K**: Anzeigen von Dynamic Media-Ausgabedarstellungen, einschließlich intelligenter Zuschnitt und Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen. **L**: Grundlegende Metadaten **M**: Erweiterte Metadaten **N**: Schlagwörter und Smart-Tags **O**: Wechseln zum vorherigen oder nächsten Element im aktuellen Ordner, ohne zum Ordner zurückzukehren **P**: Genauere Vorschau. Zoom, Vollbild und andere Optionen.
 
 Sie können auch eine Vorschau der Videos anzeigen.
 

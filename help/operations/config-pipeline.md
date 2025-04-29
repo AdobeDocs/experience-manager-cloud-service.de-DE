@@ -1,19 +1,19 @@
 ---
 title: Verwenden von Konfigurations-Pipelines
-description: Erfahren Sie, wie Sie mithilfe von Konfigurations-Pipelines verschiedene Konfigurationen in AEM as a Cloud Service bereitstellen können, z. B. Protokollweiterleitungseinstellungen, Wartungsaufgaben im Zusammenhang mit der Bereinigung und verschiedene CDN-Konfigurationen.
+description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a Cloud Service verschiedene Konfigurationen wie Einstellungen für die Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen bereitzustellen.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Verwenden von Konfigurations-Pipelines {#config-pipelines}
 
-Erfahren Sie, wie Sie mithilfe von Konfigurations-Pipelines verschiedene Konfigurationen in AEM as a Cloud Service bereitstellen können, z. B. Protokollweiterleitungseinstellungen, Wartungsaufgaben im Zusammenhang mit der Bereinigung und verschiedene CDN-Konfigurationen.
+Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a Cloud Service verschiedene Konfigurationen wie Einstellungen für die Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen bereitzustellen.
 
 ## Überblick {#overview}
 
@@ -38,7 +38,7 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 | [Traffic-Filterregeln, einschließlich WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Deklarieren von Regeln zur Verhinderung von schädlichem Traffic |
 | [Anfrageumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form der Traffic-Anforderung |
 | [Reaktionsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form für die Antwort für eine gegebene Anfrage |
-| [Server-seitige Weiterleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Server-seitige Weiterleitungen im Stil 301/302 deklarieren |
+| [Server-seitige Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Deklarieren von Server-seitigen Umleitungen im Stil 301/302 |
 | [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Deklarieren von Regeln, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen |
 | [CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Überschreiben der standardmäßigen Fehlerseite, wenn der AEM-Ursprung nicht erreicht werden kann, und Referenzieren des Speicherorts des selbst-gehosteten statischen Inhalts in der Konfigurationsdatei |
 | [CDN-Bereinigung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Deklarieren der API-Bereinigungsschlüssel für die Bereinigung des CDN |
@@ -46,8 +46,8 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 | [Standardauthentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Deklarieren Sie die Benutzernamen und Kennwörter für einen einfachen Authentifizierungsdialog, der bestimmte URLs schützt. |
 | [Wartungsaufgabe zur Versionsbereinigung](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Repositorys durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Inhaltsversionen |
 | [Wartungsaufgabe zur Bereinigung des Auditprotokolls](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Auditprotokolls für eine verbesserte Leistung durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Protokollen |
-| [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Konfigurieren Sie die Endpunkte und Anmeldeinformationen für die Weiterleitung von Protokollen an verschiedene Ziele, einschließlich Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk |
-| [Registrieren einer Client-ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Beschränken Sie Adobe Developer Console-API-Projekte durch Registrierung der Client-ID auf eine bestimmte AEM-Umgebung. Dies ist für die Verwendung von OpenAPI-basierten APIs erforderlich, die eine Authentifizierung erfordern |
+| [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Konfigurieren Sie die Endpunkte und Anmeldedaten für die Weiterleitung von Protokollen an verschiedene Ziele, einschließlich Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk. |
+| [Registrieren einer Client-ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Beschränken Sie Adobe Developer Console-API-Projekte durch Registrieren der Client-ID auf eine bestimmte AEM-Umgebung. Dies ist bei der Verwendung von OpenAPI-basierten APIs erforderlich, die eine Authentifizierung benötigen. |
 
 ## Erstellen und Verwalten von Konfigurations-Pipelines {#creating-and-managing}
 

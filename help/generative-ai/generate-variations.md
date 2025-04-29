@@ -5,9 +5,9 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3287'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Es wird empfohlen, auf [in AEM-Editoren integrierte Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md) zuzugreifen, da die auf dieser Seite beschriebene Version in Zukunft nicht mehr unterstützt wird.
+>Es wird empfohlen, auf [die in AEM-Editoren integrierte Option „Varianten generieren“](/help/generative-ai/generate-variations-integrated-editor.md) zuzugreifen, da die auf dieser Seite beschriebene Version in Zukunft nicht mehr unterstützt wird.
 
 Wenn Sie nach einer Möglichkeit suchen, Ihre digitalen Kanäle zu optimieren und die Inhaltserstellung zu beschleunigen, können Sie „Varianten generieren“ verwenden. Die Funktion „Varianten generieren“ verwendet generative künstliche Intelligenz (KI), um Inhaltsvarianten basierend auf Prompts zu erstellen. Diese Prompts werden entweder von Adobe bereitgestellt oder von Benutzenden erstellt und verwaltet. Nachdem Sie Varianten erstellt haben, können Sie den Inhalt auf Ihrer Website verwenden und deren Erfolg außerdem mithilfe der Funktion [Experimente](https://www.aem.live/docs/experimentation) von [Edge Delivery Services](/help/edge/overview.md) messen.
 

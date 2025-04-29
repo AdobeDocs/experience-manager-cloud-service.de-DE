@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
 source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

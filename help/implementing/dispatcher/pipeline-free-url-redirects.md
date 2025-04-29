@@ -5,9 +5,9 @@ feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
 source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Mögliche Szenarien sind etwa:
 * eine umbenannte HTML-Seite,
 * SEO-Optimierung.
 
-AEM as a Cloud Service offers [several approaches](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/url-redirection) to implement server-side redirects, but the strategy described in this article, pipeline-free redirects, is a good choice when:
+AEM as a Cloud Service bietet [mehrere Ansätze](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/administration/url-redirection) zur Implementierung Server-seitiger Umleitungen. Die in diesem Artikel beschriebene Strategie Pipeline-freier Umleitungen ist allerdings in folgenden Fällen eine gute Wahl:
 
 * Bei den Personen, die für die Umleitungen zuständig sind, handelt es sich um Business-Anwendende, denen die erforderlichen Zugriffsrechte zum Übertragen von Dateiänderungen an die Quell-Code-Verwaltung fehlen oder die nicht die Möglichkeit haben, eine Cloud Manager-Konfigurations-Pipeline auf Web-Ebene auszuführen.
 * Der Umfang reicht von wenigen bis hin zu Zehntausenden von Umleitungen.
