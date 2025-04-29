@@ -8,7 +8,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
 source-wordcount: '1700'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -137,15 +137,15 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ### Anzeigen und Vergleichen von Versionen eines Assets {#view-and-compare-versions}
 
-Laden Sie ein Duplikat oder eine geänderte Kopie eines Assets hoch, um seine Versionen zu erstellen. Mit der Versionierung können Sie die Änderungen an einem Asset im Laufe der Zeit verfolgen und bei Bedarf zu einer früheren Version zurückkehren.
+Laden Sie ein Duplikat oder eine geänderte Kopie eines Assets hoch, um dessen Versionen zu erstellen. Mit der Versionierung können Sie die Änderungen an einem Asset im Laufe der Zeit verfolgen und bei Bedarf zu einer früheren Version zurückkehren.
 
-So zeigen Sie Versionen an und vergleichen sie:
+Anzeigen und Vergleichen von Versionen:
 
-1. Navigieren Sie zur Detailseite des Assets.
-1. Klicken Sie ![ rechten Bereich ](/help/assets/assets/Clock.svg)Versionen“, um das Bedienfeld **[!UICONTROL Versionen“]**. In diesem Bedienfeld werden die Miniaturansichten des ursprünglichen Assets und seiner hochgeladenen Versionen angezeigt.
-1. Wählen Sie eine Version im Bedienfeld aus, um sie im Vorschaubereich in der Vorschau anzuzeigen.
-1. Wählen Sie eine andere Version als die neueste aus und klicken Sie auf **[!UICONTROL Neueste erstellen]**, um sie als neueste Version festzulegen.
-1. Ziehen Sie den Regler in der Vorschau nach links und rechts, um die ausgewählte Version eines Bildes und die neueste Version in einer einzigen Vorschau zu sehen. Auf diese Weise können Sie die ausgewählte Version des Bildes schnell mit der neuesten Version vergleichen.
+1. Navigieren Sie zur Seite mit den Asset-Details.
+1. Klicken Sie im rechten Bereich auf ![Versionen](/help/assets/assets/Clock.svg), um das Panel **[!UICONTROL Versionen]** anzuzeigen. In diesem Panel werden die Miniaturen des ursprünglichen Assets und seiner hochgeladenen Versionen angezeigt.
+1. Wählen Sie eine Version im Panel aus, um sie im Vorschaubereich in der Vorschau anzuzeigen.
+1. Wählen Sie eine andere Version als die neueste aus und klicken Sie auf **[!UICONTROL Als Neuestes festlegen]**, um sie als neueste Version festzulegen.
+1. Ziehen Sie den Regler in der Vorschau nach links und rechts, um die ausgewählte Version eines Bildes und dessen neueste Version in einer einzigen Vorschau zu sehen. Auf diese Weise können Sie die ausgewählte Version des Bildes schnell mit der neuesten Version vergleichen.
 
    >[!NOTE]
    >

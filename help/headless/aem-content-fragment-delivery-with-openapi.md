@@ -1,19 +1,19 @@
 ---
 title: Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI
-description: Informationen zur Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI
+description: Erfahren Sie mehr über die Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 84%
+ht-degree: 96%
 
 ---
 
 # Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI {#aem-content-fragment-delivery-with-openapi}
 
-In Adobe Experience Manager (AEM) as a Cloud Service die AEM OpenAPI für die Bereitstellung von Inhaltsfragmenten:
+In Adobe Experience Manager (AEM) as a Cloud Service umfasst die AEM OpenAPI für die Bereitstellung von Inhaltsfragmenten Folgendes:
 
 * Sie ist eine HTTP-REST-API für [AEM Edge Delivery Services](/help/edge/overview.md), mit der strukturierte Inhalte aus Inhaltsfragmenten im JSON-Format bereitgestellt werden können.
 * Sie bietet eine moderne CDN-Integration, die die Invalidierung aktiver Inhalte ermöglicht.

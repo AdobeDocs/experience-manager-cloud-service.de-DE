@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
 workflow-type: tm+mt
 source-wordcount: '6134'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1303,7 +1303,7 @@ ht-degree: 99%
       + Universeller Editor {#universal-editor}
          + [Einführung](/help/implementing/universal-editor/introduction.md)
          + [Anwendungsfälle](/help/implementing/universal-editor/use-cases.md)
-         + [Der universelle Editor und der Sites-Editor](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [Universeller Editor und Sites-Editor](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Attribute und Elementtypen](/help/implementing/universal-editor/attributes-types.md)
          + [Komponentendefinition](/help/implementing/universal-editor/component-definition.md)
          + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
@@ -1351,7 +1351,7 @@ ht-degree: 99%
       + [Package Manager](/help/implementing/developing/tools/package-manager.md)
       + [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md)
       + [Der Repository-Browser](/help/implementing/developing/tools/repository-browser.md)
-   + Personalisierung    {#personalization}
+   + Personalisierung {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Konfigurieren von ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
       + [Hinzufügen von ContextHub zu Seiten](/help/implementing/developing/personalization/adding-contexthub.md)
@@ -1390,7 +1390,7 @@ ht-degree: 99%
       + [Erweitern der Seiteneigenschaften](/help/implementing/developing/extending/page-properties.md)
       + [Entwickeln des Bulk Editors](/help/implementing/developing/extending/bulk-editor.md)
       + [Erweitern von MSM](/help/implementing/developing/extending/msm.md)
-      + Internationalisierung {#internationalization}
+      + Internationalisierung{#internationalization}
          + [Internationalisieren von Komponenten](/help/implementing/developing/extending/i18n/components.md)
          + [Internationalisierung von UI-Zeichenfolgen](/help/implementing/developing/extending/i18n/dev.md)
          + [Verwalten von Wörterbüchern mithilfe des Übersetzers](/help/implementing/developing/extending/i18n/translator.md)
