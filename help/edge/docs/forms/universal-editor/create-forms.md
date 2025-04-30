@@ -4,9 +4,9 @@ description: In diesem Artikel wird erläutert, wie Sie adaptive Forms erstellen
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
+source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1626'
 ht-degree: 29%
 
 ---
@@ -97,13 +97,13 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
 1. Source Wählen Sie auf der Registerkarte **eine** Kernkomponentenbasierte Vorlage“ aus **und** Design **ist die Schaltfläche**[!UICONTROL  Erstellen ]**aktiviert:**
 
-![Kernkomponentenbasierte Vorlage](/help/forms/assets/core-component-based-template.png)
+   ![Kernkomponentenbasierte Vorlage](/help/forms/assets/core-component-based-template.png)
 
 1. (Optional) Auf der Registerkarte **[!UICONTROL Datenquelle]** oder **[!UICONTROL Übermittlung]** können Sie eine Datenquelle oder eine Übermittlungsaktion auswählen.
 1. (Optional) Auf der Registerkarte **[!UICONTROL Versand]** können Sie ein Datum für die Veröffentlichung oder das Rückgängigmachen der Veröffentlichung eines Formulars angeben.
 1. Klicken Sie **[!UICONTROL Erstellen]** und der Assistent **Formular erstellen** wird angezeigt für:
    1. Geben Sie den **Namen** und den **Titel** an.
-   2. Geben Sie im Feld **den Speicherort** adaptiven Formulars an.
+   1. Geben Sie im Feld **den Speicherort** adaptiven Formulars an.
 
    ![Assistent für die Formularerstellung](/help/forms/assets/create-cc-form.png)
 
@@ -174,30 +174,30 @@ Um ein adaptives Formular in Edge Delivery Services zu veröffentlichen, müssen
 Führen Sie die folgenden Schritte aus, um die Edge Delivery Services-Konfiguration zu erstellen:
 
 >[!BEGINTABS]
->[!TAB Für Formulare, die mit der Edge Delivery Services-basierten Vorlage erstellt wurden]
+>[!TAB Edge Delivery Services-basierte Vorlage]
 
 
 Die Edge Delivery Services-Konfiguration für Formulare, die auf der Edge Delivery Services-basierten Vorlage basieren, wird automatisch im Konfigurations-Container des Formulars erstellt.
 
 ![Edge Delivery Services-Konfiguration](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB Für Formulare, die mit der auf Kernkomponenten basierenden Vorlage erstellt wurden]
+>[!TAB Kernkomponentenbasierte Vorlage]
 
 1. Navigieren Sie in Ihrer Autoreninstanz in AEM Forms as a Cloud Service- zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Edge Delivery Services-Konfiguration]**.
 
    ![Edge Delivery Services-Konfiguration auswählen](/help/edge/assets/select-eds-conf.png)
 
-1. Wählen Sie den Ordner aus, der dem Namen des Formulars entspricht. Wenn Ihr Formular beispielsweise `enrollment-form` heißt, wählen Sie den `forms/enrollment-form` aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Konfiguration]**:
+2. Wählen Sie den Ordner aus, der dem Namen des Formulars entspricht. Wenn Ihr Formular beispielsweise `enrollment-form` heißt, wählen Sie den `forms/enrollment-form` aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Konfiguration]**:
 
    ![Edge Delivery Services-Konfiguration](/help/forms/assets/create-eds-conf.png)
 
-1. Klicken Sie auf die **[!UICONTROL Edge Delivery Services]** Konfiguration und anschließend auf **[!UICONTROL Eigenschaften]**, um die Eigenschaften zu öffnen:
+3. Klicken Sie auf die **[!UICONTROL Edge Delivery Services]** Konfiguration und anschließend auf **[!UICONTROL Eigenschaften]**, um die Eigenschaften zu öffnen:
 
    ![Automatisch erstellte Konfiguration](/help/forms/assets/eds-conf.png)
 
    Die Edge Delivery Services-Konfiguration wird angezeigt.
 
-1. Geben Sie in der Edge Delivery Services-Konfiguration Folgendes an:
+4. Geben Sie in der Edge Delivery Services-Konfiguration Folgendes an:
 
    * **Organisation**: Geben Sie Ihren GitHub-Organisationsnamen an.
 
@@ -206,7 +206,7 @@ Die Edge Delivery Services-Konfiguration für Formulare, die auf der Edge Delive
    * **(Optional) Edge-Host**: Lassen Sie die Option &quot;Edge-Host“ unverändert. Das Formular wird sowohl in der Vorschau-Umgebung (.page) als auch in der Live-Umgebung (.live) veröffentlicht.
    * **(Optional) Site-Authentifizierungstoken**: Verwenden Sie das Site-Authentifizierungstoken, um Anfragen zwischen Ihrer AEM-Instanz und Edge Delivery Services sicher zu authentifizieren.
 
-1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Die Konfiguration wird erstellt.
+5. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Die Konfiguration wird erstellt.
 
 >[!ENDTABS]
 
@@ -254,7 +254,7 @@ Um auf das Formular in Edge Delivery Services zuzugreifen, muss das Formular ver
 In den folgenden Screenshots werden URLs von gestaffelten und Live-Formularen sowie visuelle Vorschauen für Formulare verglichen, die mit Edge Delivery Services-basierten und Kernkomponenten-basierten Vorlagen erstellt wurden:
 
 >[!BEGINTABS]
->[!TAB Zugriff auf Formulare, die mit einer Edge Delivery Services-basierten Vorlage erstellt wurden]
+>[!TAB Edge Delivery Services-basierte Vorlage]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -275,7 +275,7 @@ In den folgenden Screenshots werden URLs von gestaffelten und Live-Formularen so
     </tbody>
   </table>
 
->[!TAB Zugriff auf Formulare, die mit einer auf Kernkomponenten basierenden Vorlage erstellt wurden]
+>[!TAB Kernkomponentenbasierte Vorlage]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
