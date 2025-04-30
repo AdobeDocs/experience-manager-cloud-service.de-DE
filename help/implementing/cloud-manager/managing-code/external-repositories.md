@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
+source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 99%
+source-wordcount: '1872'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Clou
 
 ## Konfigurieren eines externen Repositorys
 
-Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt in drei Schritten:
+Die Konfiguration eines externen Repositorys in Cloud Manager umfasst die folgenden Schritte:
 
 1. Fügen Sie einem ausgewählten Programm [ein externes Repository hinzu](#add-external-repo).
 1. Stellen Sie ein Zugriffs-Token für das externe Repository bereit.
