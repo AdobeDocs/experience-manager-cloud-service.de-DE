@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie einer Edge Delivery-Site eine CDN-Konfigurati
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: f8135fea6cb1e43ec27a250d4664b12fa577ed4b
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '712'
+ht-degree: 76%
 
 ---
 
@@ -61,6 +61,109 @@ Klicken Sie auf ![Symbol zum Löschen der Edge Delivery-Site](https://spectrum.a
 Klicken Sie in der Tabelle der Edge Delivery-Sites auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren Site entfernt werden soll. Klicken Sie auf ![Symbol zum Löschen der Edge Delivery-Site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Löschen** und dann erneut auf **Löschen**, um das Entfernen der Site zu bestätigen.
 
      ![Hinzufügen einer Edge Delivery-Site über die Schaltfläche „Edge Delivery-Sites“](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+## Verwalten einer Edge Delivery-Site zwischen Helix 4 und Helix 5
+
+Verwenden Sie den API-Endpunkt `/program/{programId}/site/{siteId}` , um eine Edge Delivery-Site zwischen Helix 4 und Helix 5 zu migrieren.
+
+CDN-Konfigurationen für Helix 4-Websites können nicht automatisch zu Helix 5 migriert werden. Diese Einschränkung besteht, da die Produktionsstandorte der Kunden möglicherweise weiterhin auf Helix 4 ausgeführt werden, während sich deren Helix 5-Versionen noch in der Entwicklung befinden.
+
+**Voraussetzungen**
+
+* Die `sitename` muss bereits vorhanden sein.
+* Kenntnis der entsprechenden `branchName`-, Helix-`version`- und `repo`.
+* Durch die Migration werden nur `branchName`, Helix `version` und `repo` geändert. Das Besitzerfeld kann nicht geändert werden.
+
+**API-Format**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**Parameter des Anfragetexts**
+Erstellt eine Überschreibung für eine Edge Delivery-Site, um den im Anfragetext angegebenen Ursprung zu erzwingen.
+
+```json
+{
+  "sitename": "<required site name>",
+  "branchName": "<git branch>",
+  "version": "v4" | "v5",
+  "repo": "<git repository name>"
+}
+```
+
+### Beispiel 1: Zu Helix 5 migrieren
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**JSON**
+
+```json
+{
+  "sitename": "test-site-new-helix5",
+  "branchName": "branch",
+  "version": "v5",
+  "repo": "my-website"
+}
+```
+
+**Ursprungs-URL-Ergebnis**
+Gibt eine Edge Delivery-Site mit der folgenden Ursprungs-URL zurück:
+
+`"origin": "branch--my-website–Teo48.aem.live"`
+
+
+### Beispiel 2: Zu Helix 4 migrieren
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**JSON**
+
+```json
+{
+  "sitename": "test-site-new-helix4",
+  "branchName": "branch",
+  "version": "v4",
+  "repo": "my-website"
+}
+```
+
+**Ursprungs-URL-Ergebnis**
+Gibt eine Edge Delivery-Site mit der folgenden Ursprungs-URL zurück:
+
+`"origin": "branch--my-website--Teo48.hlx.live"`
+
+### Beispiel 3: Repoless-Site nach Helix 5 migrieren
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**JSON**
+
+```json
+{
+  "sitename": "test-reposless-website",
+  "branchName": "main",
+  "version": "v5",
+  "repo": "my-reposless-website"
+}
+```
+
+**Ursprungs-URL-Ergebnis**
+Gibt eine Edge Delivery-Site mit der folgenden Ursprungs-URL zurück:
+
+`"origin": "main--my-repoless-website--Teo48.aem.live"`
 
 ## Einreichen eines Support-Tickets {#eds-support-ticket}
 
