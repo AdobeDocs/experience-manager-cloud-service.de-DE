@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 100%
+source-wordcount: '1925'
+ht-degree: 91%
 
 ---
 
@@ -37,11 +37,19 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 
 >[!NOTE]
 >
->Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
+>Inhaltsfragmente sind eine **Sites**-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die **Assets-Konsole** verwaltet werden. In diesem Abschnitt wird die Verwaltung über die **Assets**-Konsole beschrieben.
+>Sie werden hauptsächlich mit der Konsole **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die Konsole **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** verwaltet werden.
 >
->Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
+>Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten - den neuen Editor und den ursprünglichen Editor. Der neue Editor ist der Standard. Obwohl die grundlegenden Funktionen identisch sind, gibt es einige Unterschiede.
+>
+>In diesem Abschnitt wird der ursprüngliche Editor behandelt.
+>
+>Der Standard-Editor für [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) ist der neue Editor, auf den sowohl über die **Inhaltsfragmente“-** als auch über die **Assets**-Konsole zugegriffen wird. Weitere Informationen zum neuen Editor finden [ in der Sites](/help/sites-cloud/administering/content-fragments/authoring.md)Dokumentation „Inhaltsfragmente - Authoring“.
+>
+>Um den [Original-Editor](/help/assets/content-fragments/content-fragments-variations.md) zu verwenden, öffnen Sie zunächst den neuen Editor und deaktivieren Sie dann den Umschalter **Neuer Editor**.
+>
+>Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
-So öffnen Sie ein Fragment zur Bearbeitung:
+So öffnen Sie ein Fragment zur Bearbeitung im Original-Editor:
 
 >[!CAUTION]
 >
 >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
 
-1. Navigieren Sie in der **Assets**-Konsole zum Speicherort des gewünschten Inhaltsfragments.
-1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
+1. Navigieren Sie zum Speicherort des Inhaltsfragments.
 
-   * Klicken/tippen Sie auf das Fragment oder den Fragment-Link (abhängig von der Konsolenansicht).
-   * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
+1. Öffnen Sie das Fragment zur Bearbeitung.
 
-1. Der Fragmenteditor wird geöffnet. Nehmen Sie die gewünschten Änderungen vor:
+1. Das Fragment wird im neuen Editor geöffnet. Deaktivieren Sie den **Neuer Editor** Schalter (oben rechts), um den ursprünglichen Editor zu öffnen:
 
    ![Fragmenteditor](assets/cfm-managing-03.png)
 
-1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie nach Bedarf die Optionen **Speichern**, **Speichern und schließen** oder **Schließen**.
+1. Nehmen Sie die erforderlichen Änderungen vor.
+
+1. Wenn Sie bereit sind, verwenden **Speichern**, **Speichern und schließen** oder **Schließen** nach Bedarf.
 
    >[!NOTE]
    >

@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+workflow-type: tm+mt
+source-wordcount: '2530'
+ht-degree: 96%
 
 ---
 
@@ -20,9 +20,13 @@ ht-degree: 100%
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten - den neuen Editor und den ursprünglichen Editor. Der neue Editor ist der Standard. Obwohl die grundlegenden Funktionen identisch sind, gibt es einige Unterschiede.
+>
+>In diesem Abschnitt wird der ursprüngliche Editor behandelt. Dieser wird [über den neuen Editor geöffnet](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>Ausführliche Informationen zum neuen Editor finden Sie in der Sites[Dokumentation ](/help/sites-cloud/administering/content-fragments/authoring.md)Inhaltsfragmente - Authoring).
 
-Auf der Registerkarte **Varianten** haben Sie folgende Optionen:
+Auf der Registerkarte **Varianten** können Sie Folgendes tun:
 
 * [Eingeben des Inhalts](#authoring-your-content) für Ihr Fragment,
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts,
@@ -47,7 +51,7 @@ Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp 
 
 ## Verfassen Ihres Inhalts {#authoring-your-content}
 
-Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, ist die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
+Wenn Sie Ihr Inhaltsfragment zur Bearbeitung im ursprünglichen Editor öffnen, ist **Registerkarte** Varianten“ standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
 
 Zum Beispiel:
 
