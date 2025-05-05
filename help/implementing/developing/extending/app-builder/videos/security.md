@@ -20,4 +20,4 @@ ht-degree: 100%
 
 Erfahren Sie mehr über Adobe Runtime-Aktionssicherheit, Benutzer- und AppBuilder-Authentifizierung und -Autorisierung.
 
->[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343376/?quality=12&learn=on&captions=ger)

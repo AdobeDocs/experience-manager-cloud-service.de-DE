@@ -20,4 +20,4 @@ ht-degree: 100%
 
 Erfahren Sie, wie Sie Ihre App Builder-Anwendung zur Überprüfung und Genehmigung einreichen und wie Sie eine neu veröffentlichte Anwendung ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343372/?quality=12&learn=on&captions=ger)

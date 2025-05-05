@@ -50,7 +50,7 @@ Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
 ### Über die Benutzeroberfläche von Cloud Manager (Standard) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343434?quality=12&learn=on&captions=ger)
 
 Diese Konfiguration kann über ein Dialogfeld auf der Seite „Umgebungsdetails“ erfolgen. Wenn Sie diese Seite für ein Commerce-fähiges Programm anzeigen, wird eine Schaltfläche angezeigt, wenn der Endpunkt derzeit nicht konfiguriert ist:
 

@@ -22,16 +22,16 @@ ht-degree: 100%
 
 Erfahren Sie mehr über App Builder-Speicheroptionen und darüber, warum die Speicherung in einem App Builder-Programm wichtig ist.
 
->[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345394/?quality=12&learn=on&captions=ger)
 
 ## Verwenden der Statusspeicherbibliothek
 
 Erfahren Sie, wie Sie die Statusspeicherbibliothek im App Builder-Programm installieren und zum Verwalten des Status verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345395/?quality=12&learn=on&captions=ger)
 
 ## Verwenden der Dateispeicherbibliothek
 
 Erfahren Sie, wie Sie die Dateispeicherbibliothek im App Builder-Programm installieren, um Daten zu speichern, abzurufen und zu löschen.
 
->[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345396/?quality=12&learn=on&captions=ger)

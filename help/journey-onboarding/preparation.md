@@ -32,7 +32,7 @@ Machen Sie sich keine Sorgen, wenn Sie nicht mit allen auf dieser Seite verwende
 
 In diesem Video wird der in dieser Journey beschriebene Onboarding-Prozess zusammengefasst. Dies soll als Überblick über die Optionen dienen. Alle Themen im Video werden in der Journey im Detail vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431498/?quality=12&learn=on&captions=ger)
 
 ## Ihr Vertrag {#contract}
 

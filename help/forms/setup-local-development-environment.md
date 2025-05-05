@@ -379,7 +379,7 @@ Ein Upgrade des SDK auf eine neue Version erfordert das Ersetzen der gesamten lo
 
 Beim Upgrade des SDK werden ganz neue Autoren- und Veröffentlichungsinstanzen erstellt, einschließlich eines neuen Repositorys ([Einrichten eines AEM-Projekts](#forms-cloud-service-local-development-environment)), d. h. alle Änderungen, die an einem früheren SDK-Repository vorgenommen wurden, gehen verloren. Durchführbare Strategien für die Beibehaltung von Inhalten zwischen SDK-Upgrades finden Sie unter [Vermeiden von Inhaltsverlusten beim Upgrade des AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=de#optional-local-aem-runtime-set-up-tasks)
 
-<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
+<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/33376?quality=9&captions=ger).
 
 ## Upgrade your local development environment {#update-local-setup}
 
