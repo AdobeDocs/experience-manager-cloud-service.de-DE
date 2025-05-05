@@ -44,6 +44,7 @@ Das folgende Diagramm zeigt die Schritte zum Erstellen einer benutzerdefinierten
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **Wo finden Sie diese Informationen?**
 
    Eine schrittweise Anleitung zum Auffinden dieser Details finden Sie im Adobe Experience League-Artikel [Zugriff auf Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
@@ -67,6 +68,7 @@ Das folgende Diagramm zeigt die Schritte zum Erstellen einer benutzerdefinierten
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **Wichtig**: Ersetzen Sie `<app-id>` durch Ihre tatsächliche Anwendungs-ID.
 
 1. Erstellen Sie einen neuen Ordner für Ihre benutzerdefinierte Übermittlungsaktion und geben Sie ihr einen Namen Ihrer Wahl. Benennen Sie beispielsweise den Ordner als `customsubmitaction`.
@@ -79,7 +81,7 @@ Das folgende Diagramm zeigt die Schritte zum Erstellen einer benutzerdefinierten
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: ersetzen <app-id> mit Ihrer tatsächlichen Anwendungs-ID.
+   `Important`: ersetzen &lt;app-id> mit Ihrer tatsächlichen Anwendungs-ID.
 
 1. Erstellen Sie eine neue Konfigurationsdatei.
 Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.content.xml`.
@@ -117,6 +119,7 @@ Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.con
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    Fügen Sie beispielsweise die folgende Codezeile hinzu, um den `customsubmitaction` Ordner in der `filter.xml`-Datei hinzuzufügen:
 
    ```
@@ -131,7 +134,7 @@ Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.con
 
 1. Navigieren Sie in Ihrem `[AEMaaCS project directory]` zum folgenden Verzeichnis:
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: ersetzen <app-id> mit Ihrer tatsächlichen Anwendungs-ID.
+   `Important`: ersetzen &lt;app-id> mit Ihrer tatsächlichen Anwendungs-ID.
 1. Erstellen Sie eine neue Java-Datei, um den Service für die hinzugefügte Übermittlungsaktion zu implementieren. Fügen Sie beispielsweise eine neue Java-Datei als `CustomSubmitService.java` hinzu.
 
    ![Ordner für benutzerdefinierte Sende-Aktionen](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -198,6 +201,7 @@ Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.con
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![Lokale Bereitstellung](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Stellen Sie den Code für die Cloud Service-Umgebung bereit**

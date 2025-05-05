@@ -695,7 +695,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
 1. Navigieren Sie auf einer neuen Browser-Registerkarte zur [Adobe Developer Console](https://developer.adobe.com/console/integrations).
 
-1. Klicken Sie auf der Seite {0 ]**Adobe Developer Console-Integrationen**[!UICONTROL  rechts oben auf „Neue Integration ]**.**[!UICONTROL 
+1. Klicken Sie auf der Seite &lbrace;0 **Adobe Developer Console-Integrationen**&#x200B;[!UICONTROL &#x200B; rechts oben auf „Neue Integration &#x200B;]&#x200B;**.**
 1. Vergewissern Sie sich, dass im Dialogfeld **[!UICONTROL Neue Integration erstellen]** die Optionsschaltfläche **[!UICONTROL Zugriff auf API]** ausgewählt ist, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)

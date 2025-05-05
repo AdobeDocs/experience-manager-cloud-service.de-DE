@@ -81,13 +81,13 @@ Um die Eigenschaft anzuzeigen, der das Feld **[!UICONTROL Überprüfungsstatus]*
 
    >[!NOTE]
    >
-   Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
+   >Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 >[!NOTE]
 >
-Wenn Ihre Assets oder Ordner ein anderes Standardschema aufweisen, stellen Sie sicher, dass diese Aktualisierung in diesem Schema vorgenommen wird.
+>Wenn Ihre Assets oder Ordner ein anderes Standardschema aufweisen, stellen Sie sicher, dass diese Aktualisierung in diesem Schema vorgenommen wird.
 
 ## Genehmigen von Assets {#approve-assets}
 
@@ -112,7 +112,7 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Erstellen]**.
 1. Fügen Sie einen Profiltitel hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Das Metadatenprofil wird erstellt.
-1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**ist hervorgehoben.
+1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**&#x200B;wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**&#x200B;ist hervorgehoben.
 1. Ziehen Sie ein **[!UICONTROL einzeiliges Textfeld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Genehmigte Assets_.
@@ -127,7 +127,7 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 
    >[!NOTE]
    >
-   Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
+   >Wenn Sie mithilfe der Assets-Ansicht „Content Hub“ als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören. Wenn Sie „Genehmigungsziel“ für die Bereitstellung auswählen, stehen die Assets allen Benutzenden zur Verfügung.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Metadatenprofile]** das neu erstellte Metadatenprofil aus.
 1. Klicken Sie in der oberen Aktionsleiste auf **[!UICONTROL Metadatenprofil auf Ordner anwenden]**.
@@ -138,7 +138,7 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 
 >[!NOTE]
 > 
-Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Erneut verarbeiten]** verwenden, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
+>Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Erneut verarbeiten]** verwenden, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
 
 So genehmigen Sie gleichzeitig mehrere Assets in einem Ordner in der Assets-Ansicht:
 
@@ -157,7 +157,7 @@ So genehmigen Sie gleichzeitig mehrere Assets in einem Ordner in der Assets-Ansi
 
    >[!NOTE]
    >
-   Wenn Sie mithilfe der Assets-Ansicht einer Organisation `Content Hub` als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören.
+   >Wenn Sie mithilfe der Assets-Ansicht einer Organisation `Content Hub` als Genehmigungsziel auswählen, werden die Assets in Content Hub für die Benutzenden bereitgestellt, die derselben Organisation angehören.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -178,6 +178,6 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
 
    >[!NOTE]
    >
-   Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
+   >Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
 
 Informationen zu anderen Ausgabedarstellungen, die im Dynamic Media-Bedienfeld angezeigt werden, finden Sie unter [Anzeigen und Herunterladen von Dynamic Media-Ausgabedarstellungen](/help/assets/renditions.md#view-download-dm-renditions).

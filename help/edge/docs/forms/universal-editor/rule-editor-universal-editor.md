@@ -278,6 +278,7 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
    * Wählen Sie **[!UICONTROL Minus]** aus dem Feld **[!UICONTROL Operator wählen]**.
 
    * Wählen Sie das Feld **[!UICONTROL Zusätzlicher Abzug]** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das andere Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**.
+
      ![Beispiel15 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
@@ -295,6 +296,7 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
    * Wählen Sie **[!UICONTROL Multipliziert mit]** aus dem Feld **[!UICONTROL Operator wählen]**.
 
    * Wählen Sie **Zahl** aus dem Feld **[!UICONTROL Option auswählen]** und geben Sie den Wert als `10` in das Feld **[!UICONTROL Zahl eingeben]** ein.
+
      ![Beispiel18 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Klicken Sie als Nächstes in den hervorgehobenen Bereich um das Ausdrucksfeld und wählen Sie dann **[!UICONTROL Ausdruck erweitern]** aus.
    ![Beispiel19 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -360,6 +362,7 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
+
 ![Hinzufügen einer benutzerdefinierten Funktion](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Verwenden einer benutzerdefinierten Funktion im Regeleditor

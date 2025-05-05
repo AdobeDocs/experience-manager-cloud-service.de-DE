@@ -68,7 +68,7 @@ Einfach ausgedrückt: Eine typische Wenn-Regel ist wie folgt aufgebaut:
 
 `Action 2 on Object B;`
 `AND`
-`Aktion 3 auf Objekt C;
+&grave;Aktion 3 auf Objekt C;
 
 `Else, do the following:`
 

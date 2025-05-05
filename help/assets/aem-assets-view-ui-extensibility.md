@@ -63,7 +63,7 @@ Führen Sie die in der folgenden Abbildung genannten Schritte aus, um auf die [!
 
 ## Anzeigen von Benutzeroberflächenerweiterungen in [!DNL Assets View] {#ui-extensibility-panel-assets-view}
 
-Navigieren Sie in [!DNL Assets View] zur **[!UICONTROL Details]** eines Assets, Ordners oder einer Sammlung. Auf **[!UICONTROL Seite]**Details“ wird die hinzugefügte Benutzeroberflächenerweiterung in einem speziellen Bedienfeld angezeigt.
+Navigieren Sie in [!DNL Assets View] zur **[!UICONTROL Details]** eines Assets, Ordners oder einer Sammlung. Auf **[!UICONTROL Seite]**&#x200B;Details“ wird die hinzugefügte Benutzeroberflächenerweiterung in einem speziellen Bedienfeld angezeigt.
 ![Mein Arbeitsbereich](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## Voraussetzungen für das Hinzufügen der Erweiterbarkeitskomponente{#assets-view-ui-extensibility}

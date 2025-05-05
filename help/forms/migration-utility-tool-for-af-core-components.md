@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um die AEM-Modernisierungs-Tools in Ihre
 
    `java -jar aem-author-p4502.jar`
 
-1. Klonen Sie das Repository [AEM ](https://github.com/adobe/forms-modernizer)Modernisierungs-Tool} in Ihrem lokalen System.
+1. Klonen Sie das Repository [AEM ](https://github.com/adobe/forms-modernizer)Modernisierungs-Tool&rbrace; in Ihrem lokalen System.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -146,7 +146,7 @@ Um die AEM-Modernisierungs-Tools für Ihre AEM-Umgebung zu aktivieren und zu ver
 
 1. Klicken Sie **[!UICONTROL Auswählen]**.
 1. Klicken Sie **[!UICONTROL Auftrag planen]**, um den Konvertierungsprozess zu starten.
-1. Klicken Sie **** Dialogfeld **[!UICONTROL Seiten konvertieren]** auf „Konvertieren“.
+1. Klicken Sie **&#x200B;**&#x200B;Dialogfeld **[!UICONTROL Seiten konvertieren]** auf „Konvertieren“.
 
    ![AEM-Modernisierungs-Tools konvertieren Seiten](/help/forms/assets/aem-modernize-tools-convert-form.png)
 

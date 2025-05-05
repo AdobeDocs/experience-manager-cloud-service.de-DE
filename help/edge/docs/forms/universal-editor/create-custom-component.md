@@ -392,6 +392,7 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    float: right;
    }
    ```
+
    Mit dem Code können Sie die Formatierung und das visuelle Erscheinungsbild der benutzerdefinierten Komponente definieren.
 
 1. Um die Funktionen hinzuzufügen, navigieren Sie zur Datei `/blocks/form/components/range/range.js` und fügen Sie die folgende Code-Zeile hinzu:

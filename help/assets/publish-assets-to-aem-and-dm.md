@@ -82,13 +82,13 @@ So veröffentlichen Sie Assets beim Hochladen in einen Ordner, dessen [!DNL Dyna
    ![Hochladen bei Aktivierung](/help/assets/assets/upload-uactivation.svg)
 2. Wählen Sie **[!UICONTROL In AEM und Dynamic Media veröffentlichen]** aus und klicken Sie auf **[!UICONTROL Hochladen]**. Die Assets werden gleichzeitig in [!DNL AEM and Dynamic Media] veröffentlicht. Informationen zum aktualisierten Veröffentlichungsstatus für diese Assets finden Sie unter [Überprüfen des Veröffentlichungsstatus](#check-publish-status).
 
-### [!UICONTROL Veröffentlichungsmodus für Dynamic Media] auf &quot;[!UICONTROL &quot; ] {#dynamic-media-publish-mode-set-to-immediate}
+### [!UICONTROL Veröffentlichungsmodus für Dynamic Media] auf &quot;[!UICONTROL &quot; &#x200B;] {#dynamic-media-publish-mode-set-to-immediate}
 
 So veröffentlichen Sie Assets beim Hochladen in einen Ordner, dessen [!UICONTROL Veröffentlichungsmodus für Dynamic Media] auf &quot;**[!UICONTROL &quot;]**:
 
 1. Klicken Sie auf **[!UICONTROL Assets hinzufügen]** > **[!UICONTROL Durchsuchen]** > **[!UICONTROL Dateien durchsuchen]**, um zum entsprechenden Ordner für den Asset-Upload zu navigieren. Im Abschnitt **[!UICONTROL Veröffentlichungsoptionen]** wird für den **[!UICONTROL DM-Veröffentlichungsmodus]** die Einstellung **[!UICONTROL Unmittelbar]** angezeigt.
    ![Bild zum Datei-Upload - Sofortiger Modus](/help/assets/assets/resized-image-pdf-svg-new.svg)
-Da der [!UICONTROL Veröffentlichungsmodus für Dynamic ] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
+Da der [!UICONTROL Veröffentlichungsmodus für Dynamic &#x200B;] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
 
 2. Wählen Sie **In AEM veröffentlichen** aus, um die hochgeladenen Assets in [!DNL AEM] zu veröffentlichen, und klicken Sie auf **[!UICONTROL Hochladen]**.
 
@@ -96,7 +96,7 @@ Da der [!UICONTROL Veröffentlichungsmodus für Dynamic ] auf **[!UICONTROL Sofo
 
    Informationen zum aktualisierten Veröffentlichungsstatus für diese Assets finden Sie unter [Überprüfen des Veröffentlichungsstatus](#check-publish-status).
 
-### [!UICONTROL Veröffentlichungsmodus für Dynamic Media] auf &quot;[!UICONTROL  Veröffentlichung“ ] {#dynamic-media-publish-mode-set-to-selective-publish}
+### [!UICONTROL Veröffentlichungsmodus für Dynamic Media] auf &quot;[!UICONTROL &#x200B; Veröffentlichung“ &#x200B;] {#dynamic-media-publish-mode-set-to-selective-publish}
 
 Zum Veröffentlichen von Assets während des Uploads in einen Ordner mit [!UICONTROL Veröffentlichungsmodus für Dynamic Media] auf **[!UICONTROL Selektive Veröffentlichung]**:
 
@@ -131,7 +131,7 @@ So veröffentlichen Sie Assets über die Seite mit den Asset-Suchergebnissen:
 Die Option zum Veröffentlichen in [!DNL Dynamic Media] auf der Suchergebnisseite hängt davon ab, welcher Veröffentlichungsmodus [!DNL Dynamic Media] für den Ordner festgelegt wurde, in dem das Asset im Repository verfügbar ist.
    >[!NOTE]
    >
-   >Wenn Sie einen Ordner auswählen und auf der ]**auf**[!UICONTROL  Veröffentlichen“ klicken, zeigt [!DNL Experience Manager Assets] eine Option zum Veröffentlichen von Assets in [!DNL AEM] an, [!DNL Dynamic Media] unabhängig von den [!DNL Dynamic Media] Veröffentlichungsmoduseinstellungen für den Ordner.
+   >Wenn Sie einen Ordner auswählen und auf der **auf** Veröffentlichen“ klicken, zeigt [!DNL Experience Manager Assets] eine Option zum Veröffentlichen von Assets in [!DNL AEM] an, [!DNL Dynamic Media] unabhängig von den [!DNL Dynamic Media] Veröffentlichungsmoduseinstellungen für den Ordner.
 
 ## Überprüfen des Veröffentlichungsstatus {#check-publish-status}
 

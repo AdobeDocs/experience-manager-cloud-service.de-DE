@@ -82,7 +82,7 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 * Freigabe der CIF Venia-Referenz-Website 2021.02.24, die die aktuelle CIF-Kernkomponenten Version 1.8.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24)Referenz-Site .
 
-* Version 1.8.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)}CIF-Kernkomponenten.[
+* Version 1.8.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[&#128279;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)}CIF-Kernkomponenten.
 
 ## Cloud Manager {#cloud-manager}
 

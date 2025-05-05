@@ -52,8 +52,10 @@ Um das Drehkreuz für AEM Forms zu konfigurieren, müssen Sie den [Standortschl�
 
 1. Konfigurieren des Cloud-Service:
    1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL Drehkreuz]**.
+
       ![Drehkreuz in der Benutzeroberfläche](assets/turnstile-in-ui.png)
    1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
+
       ![Konfigurations-Drehkreuz](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Widget-Typ]** als verwaltet an. Der Widget-Typ kann sich ändern, was von dem Schlüssel abhängt, der in den Voraussetzungen **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für den Drehkreuz-Dienst [erhalten in Voraussetzung](#prerequisite) wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
 

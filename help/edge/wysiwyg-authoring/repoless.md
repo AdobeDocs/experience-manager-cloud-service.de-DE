@@ -94,6 +94,7 @@ Sie müssen eine Site-Konfiguration erstellen und sie zu Ihrer Pfadzuordnung hin
        }
    }'
    ```
+
 1. Überprüfen Sie, ob die öffentliche Konfiguration festgelegt wurde und mit einem cURL-Befehl ähnlich dem folgenden verfügbar ist.
 
    ```text

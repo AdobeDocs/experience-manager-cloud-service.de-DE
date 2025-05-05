@@ -128,6 +128,7 @@ So konfigurieren Sie die Metadatenzuordnung mit einem neuen Metadatenformular in
    1. Geben Sie `Project Name` im Feld **[!UICONTROL Feldbezeichnung]** an.
 
    1. Geben Sie `./jcr:content/metadata/wm:projectName` im Feld **[!UICONTROL Zu Eigenschaft zuordnen]** an. Verwenden Sie als Richtlinie die folgende Vorlage, um die Feldzuordnungen in Experience Manager Assets zu definieren:
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Beim Konfigurieren von Zuordnungen in Workfront haben Sie das `wm:projectName` Experience Manager Assets-Feld dem Feld „Projekt“ > „Name Workfront“ zugeordnet.

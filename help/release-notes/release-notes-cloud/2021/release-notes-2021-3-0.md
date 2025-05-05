@@ -78,7 +78,7 @@ Sie können sich an Ihren Adobe-Kundenbetreuer wenden, um eine Demo zu erhalten 
 
 * Freigabe der CIF Venia-Referenz-Website 2021.03.25, die die aktuelle CIF-Kernkomponenten Version 1.9.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)Referenz-Site .
 
-* Version 1.9.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)}CIF-Kernkomponenten.[
+* Version 1.9.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[&#128279;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)}CIF-Kernkomponenten.
 
 
 ## Cloud Manager {#cloud-manager}

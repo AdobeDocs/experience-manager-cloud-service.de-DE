@@ -60,6 +60,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
+
         [Vorschau von Videos anzeigen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets anzeigen](/help/assets/dynamic-media/previewing-assets.md)
         [Verwalten von Videoausgabedarstellungen](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -69,6 +70,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Arbeiten mit Videometadaten
 
       * So bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
+
         [Bearbeiten von Videoeigenschaften](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Wenn Sie das WCM-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
+
         [Verknüpfen von URLs mit Ihrer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrieren von Videos mithilfe von Einbettungs-Code auf einer Website:
+
         [Einbetten des Video-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
 
    * [Erzeugen von Videoberichten](#viewing-video-reports).

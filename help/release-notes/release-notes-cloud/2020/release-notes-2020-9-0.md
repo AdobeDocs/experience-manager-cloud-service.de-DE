@@ -52,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Version 1.3.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0)}CIF-Kernkomponenten.[
+* Version 1.3.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[&#128279;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0)}CIF-Kernkomponenten.
 
 * Es gibt nun eine Vorschaufunktion mit Produkt/Kategorie für Produkt- und Kategorievorlagen. So können Geschäftsbenutzer/Marketing-Experten in AEM die Produkt-/Kategorievorlagen mit echten Daten anzeigen.
 

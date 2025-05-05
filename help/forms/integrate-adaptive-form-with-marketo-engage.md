@@ -48,7 +48,7 @@ Um ein neues adaptives Formular für die Integration mit Marketo Engage zu konfi
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
+1. Wählen Sie auf der Registerkarte {**}Source eine Vorlage aus**
 
    ![Vorlagen auswählen](/help/forms/assets/select-template.png)
 

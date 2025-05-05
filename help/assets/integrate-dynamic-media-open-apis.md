@@ -67,6 +67,6 @@ Der Micro-Frontend-Asset-Wähler von Adobe bietet eine Benutzeroberfläche, die 
 
 >[!MORELIKETHIS]
 >
-* [Integrieren des Asset-Wählers mit verschiedenen Anwendungen](/help/assets/integrate-asset-selector.md)
-* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
-* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
+>* [Integrieren des Asset-Wählers mit verschiedenen Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)

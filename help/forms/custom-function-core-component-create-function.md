@@ -109,6 +109,7 @@ Fügen Sie dem hinzugefügten Client-Bibliotheksordner Folgendes hinzu:
          #base=js
        function.js
    ```
+
 1. Fügen Sie im Ordner `js` die JavaScript-Datei, die die benutzerdefinierten Funktionen enthält, als `function.js` hinzu:
 
    ```javascript
@@ -133,6 +134,7 @@ Fügen Sie dem hinzugefügten Client-Bibliotheksordner Folgendes hinzu:
     return age;
     }
    ```
+
 1. Speichern Sie die Dateien.
 
 ![Ordnerstruktur der benutzerdefinierten Funktionen](/help/forms/assets/custom-function-added-files.png)

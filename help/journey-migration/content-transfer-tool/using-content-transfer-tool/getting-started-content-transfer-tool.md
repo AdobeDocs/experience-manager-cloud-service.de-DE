@@ -148,6 +148,7 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
       >Mit der CTT-Version (3.0.24) wurden neue Funktionen in das Content Transfer Tool aufgenommen, die das Ein- und Ausschließen von Pfaden optimieren. Zuvor mussten Pfade einzeln ausgewählt werden, was mühsam und zeitaufwändig war. Jetzt können Benutzende Pfade direkt über die Benutzeroberfläche einschließen oder eine CSV-Datei entsprechend ihren Anforderungen hochladen.
 
    1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl. Benutzende können nur eine Option zum Einfügen von Pfaden auswählen: entweder über die Benutzeroberfläche oder durch Hochladen einer CSV-Datei.
+
       >[!IMPORTANT]
       >Die folgenden Pfade sind beim Erstellen eines Migrationssatzes eingeschränkt:
       >* `/apps`

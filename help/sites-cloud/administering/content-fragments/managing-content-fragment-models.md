@@ -61,7 +61,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Ordner des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen (Unterkonfigurationen)
-   * Neben Inhaltsfragmentmodellen können Sie [Inhaltsfragmente“ oder {](/help/sites-cloud/administering/content-fragments/managing.md)}Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen. Sie können auch Links zu den Bedienfeldern komprimieren oder erweitern[
+   * Neben Inhaltsfragmentmodellen können Sie [Inhaltsfragmente“ oder {](/help/sites-cloud/administering/content-fragments/managing.md)}Assets[&#128279;](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen. Sie können auch Links zu den Bedienfeldern komprimieren oder erweitern
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Zeigen Sie die Liste aller Inhaltsfragmentmodelle an, die sich im ausgewählten Ordner befinden:
       * Inhaltsfragmentmodelle aus dem ausgewählten Ordner und allen Unterordnern werden angezeigt:
