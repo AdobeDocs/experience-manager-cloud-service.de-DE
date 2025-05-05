@@ -42,4 +42,4 @@ In unserer digitalen Welt kann fast alles gemessen werden. Die Wahl der drei KPI
 
 >[!TIP]
 >
->[**KPI-Methodenvorlage herunterladen**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**KPI-Methodenvorlage herunterladen**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=de)

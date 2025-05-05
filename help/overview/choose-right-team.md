@@ -50,7 +50,7 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 ![Überprüfen der Rollen für die Implementierung](assets/team_involvement.png)
 
-**Überprüfen Sie diese Liste mit Ihrem Implementierungs-Team** und stellen Sie sicher, dass Sie in jeder Rolle über entsprechende Qualifikationen verfügen. Team-Mitglieder, die mit Adobe Experience Cloud weniger vertraut sind, können sich mithilfe von [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager)-Lernressourcen über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren lassen.
+**Überprüfen Sie diese Liste mit Ihrem Implementierungs-Team** und stellen Sie sicher, dass Sie in jeder Rolle über entsprechende Qualifikationen verfügen. Team-Mitglieder, die mit Adobe Experience Cloud weniger vertraut sind, können sich mithilfe von [Experience League](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager)-Lernressourcen über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren lassen.
 
 ## **Schlüsselrollen für AEM Experience Manager Assets**
 
@@ -79,4 +79,4 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 >[!TIP]
 >
-> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen in [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.
+> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen in [Experience League](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.

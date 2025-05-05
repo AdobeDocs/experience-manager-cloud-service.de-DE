@@ -49,7 +49,7 @@ AEM Sites kann jetzt als Inhaltsquelle für Edge Delivery Services verwendet wer
 
 ![AEM-Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905?lang=de)
+Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=de#M43905?lang=de)
 
 **Universeller Editor für Headless-Implementierungen**
 

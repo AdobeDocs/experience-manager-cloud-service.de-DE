@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Von Hotlinking spricht man, wenn eine Drittanbieter-Website HTML-Code verwendet, um ein Bild von Ihrer Website anzuzeigen. Sie beanspruchen bei jedem Aufruf des Bildes Ihre Bandbreite, da der Browser des Besuchers direkt über Ihren Server darauf zugreift. Der Hotlink-*Schutz* ist eine Methode, um das direkte Verknüpfen anderer Websites mit Bildern, CSS oder JavaScript auf Ihren Web-Seiten zu verhindern. Dadurch können Sie unnötige Bandbreitennutzung in Ihrem Dynamic Media-Konto reduzieren.
 
-[Der Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home) kann einen Referrer-Filter auf CDN-Ebene konfigurieren. Dadurch wird sichergestellt, dass Dynamic Media-Inhalte nur Websites zur Verfügung gestellt werden, die auf Ihrer Liste der zulässigen Websites für die Domain stehen.
+[Der Adobe-Support](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&amp;lang=de#home) kann einen Referrer-Filter auf CDN-Ebene konfigurieren. Dadurch wird sichergestellt, dass Dynamic Media-Inhalte nur Websites zur Verfügung gestellt werden, die auf Ihrer Liste der zulässigen Websites für die Domain stehen.
 
 >[!NOTE]
 >

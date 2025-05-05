@@ -90,7 +90,7 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    * Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
    * Erzeugen Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
    * Erzeugen von PDF-Druckdateien aus einem XFA-Formular-PDF und aus einem Adobe Acrobat-Formular.
@@ -99,7 +99,7 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 * **Acroform-basiertes aufzuzeichnendes Dokument**: Sie können auch [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) als Vorlage für ein aufzuzeichnendes Dokument neben XFA-basierten Formularvorlagen verwenden.
 
-* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
+* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=de). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
 
 ## CIF-Add-on {#cloud-services-cif}
 

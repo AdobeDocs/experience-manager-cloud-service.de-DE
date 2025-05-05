@@ -21,7 +21,7 @@ Neuere AEM as a Cloud Service-APIs folgen der OpenAPI-Spezifikation und bieten d
 
 Bei Endpunkten, für die eine Authentifizierung erforderlich ist, unterscheidet sich der Authentifizierungsansatz je nach Endpunkt, verwendet jedoch möglicherweise OAuth Server-zu-Server, OAuth Web App oder OAuth Single Page App (SPA). Anmeldeinformationen werden über Projekte in [Adobe Developer Console konfiguriert](https://developer.adobe.com/developer-console/).
 
-Häufige API-Anwendungsfälle umfassen Integrationen mit Systemen wie CRM oder PIM, bei denen AEM-APIs aufgerufen werden, um Daten abzurufen oder beizubehalten. Im Rahmen der Integrationsimplementierung können Anwendungen [von AEM ausgelöste Ereignisse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview) abonnieren, wodurch Geschäftslogik in Adobe App Builder oder einer anderen Infrastruktur Trigger werden kann.
+Häufige API-Anwendungsfälle umfassen Integrationen mit Systemen wie CRM oder PIM, bei denen AEM-APIs aufgerufen werden, um Daten abzurufen oder beizubehalten. Im Rahmen der Integrationsimplementierung können Anwendungen [von AEM ausgelöste Ereignisse](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-eventing/overview) abonnieren, wodurch Geschäftslogik in Adobe App Builder oder einer anderen Infrastruktur Trigger werden kann.
 
 Dieses Dokument dient als Übersicht, eine ausführlichere Dokumentation ist jedoch auf den folgenden Seiten verfügbar:
 
@@ -29,9 +29,9 @@ Dieses Dokument dient als Übersicht, eine ausführlichere Dokumentation ist jed
 
 * Informative [Handbücher](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/) einschließlich [API-Konzepte und -Syntax](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
 
-* Ein Tutorial auf oberster Ebene, in dem [Authentifizierungsansätze](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) und andere Konzepte beschrieben werden.
+* Ein Tutorial auf oberster Ebene, in dem [Authentifizierungsansätze](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) und andere Konzepte beschrieben werden.
 
-* Ein Tutorial mit Video, das sich auf [ Konfiguration der OpenAPI-basierten APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+* Ein Tutorial mit Video, das sich auf [ Konfiguration der OpenAPI-basierten APIs ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 * [Ein Tutorial mit allen Schritten](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) zum Konfigurieren und Aufrufen von OpenAPIs mit der Server-zu-Server-Authentifizierungsstrategie. Ähnliche Tutorials finden Sie auch für Authentifizierungsansätze für Web-Anwendungen und Einzelseiten-Apps.
 
@@ -45,7 +45,7 @@ Einige OpenAPI-basierte AEM-APIs müssen authentifiziert werden. Dazu müssen An
 1. Konfigurieren Sie das ADC-Projekt. Dadurch werden Anmeldeinformationen generiert, die beim Aufrufen der API später zum Austausch gegen ein Bearer-Token verwendet werden.
 1. Konfigurieren Sie die AEM-Instanz, um die ADC-Projektkommunikation zu aktivieren. Dazu müssen Sie die Client-ID bei der Umgebung registrieren, indem Sie eine YAML-Datei konfigurieren und bereitstellen, wie im Abschnitt [Registrieren einer Client-ID](#registering-a-client-id) unten beschrieben.
 
-Detaillierte schrittweise Anweisungen finden Sie im Tutorial [Einrichten von OpenAPI-basierten APIs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+Detaillierte schrittweise Anweisungen finden Sie im Tutorial [Einrichten von OpenAPI-basierten APIs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ### Registrieren einer Client-ID {#registering-a-client-id}
 

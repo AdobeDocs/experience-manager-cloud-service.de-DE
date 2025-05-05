@@ -66,7 +66,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 * **AcroForm-basiertes Datensatzdokument**: AEM Forms as a Cloud Service unterstützt neben XFA-basierten Formularvorlagen die Verwendung von [Adobe Acrobat Form PDF (AcroForm PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) als Vorlage für Datensatzdokumente (DoR, Documents of Record).
 
-* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
+* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=de). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
@@ -98,7 +98,7 @@ Die nächste Version wird am 9. September 2021 veröffentlicht.
 ### Neue Funktionen {#what-is-new-aug}
 
 * Cloud Service-Kunden können jetzt Berichte zum Service Level Agreement (SLA) in Cloud Manager anzeigen. Dies wird in den nächsten Monaten schrittweise zur Verfügung gestellt.
-Siehe [SLA-Berichte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html).
+Siehe [SLA-Berichte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=de).
 
 * Typ und Schweregrad des IndexType und der `IndexDamAssetLucene`-Qualitätsregeln haben sich geändert. Dies sind nun beide Bugs of Blocker *Schweregrad*.
 

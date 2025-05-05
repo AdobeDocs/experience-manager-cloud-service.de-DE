@@ -22,7 +22,7 @@ Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die S
 >
 >Erweiterte Netzwerke in AEM as a Cloud Service können entweder über die Cloud Manager-Benutzeroberfläche oder mithilfe der Cloud Manager-API (z. B. cURL) konfiguriert werden.
 >
->Dieser Artikel konzentriert sich auf die Verwendung der UI-Methode. Wenn Sie die Konfiguration lieber über die API automatisieren möchten, finden Sie weitere Informationen im [Virtual Private Network (VPN)-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Dieser Artikel konzentriert sich auf die Verwendung der UI-Methode. Wenn Sie die Konfiguration lieber über die API automatisieren möchten, finden Sie weitere Informationen im [Virtual Private Network (VPN)-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**Automatisieren erweiterter Netzwerke mit der API**
 >Zur Automatisierung der erweiterten Netzwerkeinrichtung (z. B. VPN-Erstellung) können Sie die Cloud Manager-API verwenden:
@@ -44,7 +44,7 @@ Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die S
 >   }'
 >```
 >
->Das vollständige Tutorial und weitere API-Beispiele finden Sie im Tutorial [Virtuelles privates Netzwerk (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Das vollständige Tutorial und weitere API-Beispiele finden Sie im Tutorial [Virtuelles privates Netzwerk (VPN)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Überblick {#overview}
@@ -59,7 +59,7 @@ In diesem Artikel wird jede dieser Optionen zunächst im Detail beschrieben und 
 
 >[!CAUTION]
 >
->Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home).
+>Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&amp;lang=de#home).
 >
 >Der Versuch, erweiterte Netzwerke mit einer veralteten Egress-Technologie zu konfigurieren, kann sich auf die Konnektivität der Site auswirken.
 

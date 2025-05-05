@@ -31,7 +31,7 @@ Darüber hinaus werden manche Kundinnen und Kunden, die zuvor AEM 6.5 oder früh
 
 ## Erstellen für das SDK {#building-for-the-sdk}
 
-Das AEM as a Cloud Service-SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Siehe die [Dokumentation zum AEM-Projektarchetyp](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using). Im Allgemeinen werden die folgenden Schritte ausgeführt:
+Das AEM as a Cloud Service-SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Siehe die [Dokumentation zum AEM-Projektarchetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/using). Im Allgemeinen werden die folgenden Schritte ausgeführt:
 
 * **Code kompilieren** - Source-Code wird kompiliert und generiert die resultierenden Inhaltspakete.
 * **Artefakte erstellen** - Artefakte werden während dieses Prozesses erstellt.

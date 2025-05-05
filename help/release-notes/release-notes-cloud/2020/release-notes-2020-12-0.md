@@ -32,7 +32,7 @@ Die folgende Version (2021.1.0) wurde am 28. Januar 2021 veröffentlicht.
 
 * [!DNL Dynamic Media] Funktionen sind jetzt über AEM- [!DNL Sites] bildbasierte Kernkomponenten verfügbar. Autoren können Komponenten schnell konfigurieren, um Bildvorgaben, smarte Zuschnitte und Bildmodifikatoren beim Erstellen von Web-Seiten zu verwenden. Weitere Informationen finden Sie unter [Kernkomponenten Version 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* Mit dem [!DNL Experience Manager] Desktop-Programm können Benutzer Dateien und Ordner hochladen, indem sie die Dateien aus dem Windows Explorer oder Mac Finder auf die Benutzeroberfläche des Desktop-Programms ziehen. Siehe [Hinzufügen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
+* Mit dem [!DNL Experience Manager] Desktop-Programm können Benutzer Dateien und Ordner hochladen, indem sie die Dateien aus dem Windows Explorer oder Mac Finder auf die Benutzeroberfläche des Desktop-Programms ziehen. Siehe [Hinzufügen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -66,7 +66,7 @@ Die Version as a Cloud Service 2020.12.0 von Cloud Manager in Adobe Experience M
 
 ### Neue Funktionen in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für AEM Dispatcher Converter und Repository Modernizer und unterstützt außerdem ein neues Dienstprogramm: Index Converter. Weitere [ zu diesem Plug-in finden ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) unter „Einheitliches“.
+* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für AEM Dispatcher Converter und Repository Modernizer und unterstützt außerdem ein neues Dienstprogramm: Index Converter. Weitere [ zu diesem Plug-in finden ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) unter „Einheitliches“.
 
 * Index Converter ist ein Dienstprogramm, mit dem Sie die benutzerdefinierten Oak-Indexdefinitionen eines Kunden in AEM as a Cloud Service-kompatible Oak-Indexdefinitionen umwandeln können. Weitere Informationen finden [ unter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)Index Converter“.
 

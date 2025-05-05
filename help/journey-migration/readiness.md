@@ -219,7 +219,7 @@ Sobald Sie den Umfang der Änderungen kennen, die erforderlich sind, um zu AEM a
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Erste Schritte mit Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) – Eine umfassende Anleitung zur Verwendung von Cloud Acceleration Manager, um den Wechsel zur Cloud zu beschleunigen.
-* [AEM as a Cloud Service: Einführung, Architektur und neuer Ansatz](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=de#dashboard/learning)
+* [AEM as a Cloud Service: Einführung, Architektur und neuer Ansatz](https://experienceleague.adobe.com/de?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=de#dashboard/learning)
 * [Startseite von AEM as a Cloud Service](/help/overview/introduction.md) – Beginnen Sie hier, um einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service zu erhalten.
 * [Überblick über AEM as a Cloud Service](/help/overview/introduction.md) – Dieses Handbuch bietet einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie und Architektur.
 * [Onboarding-Tour](/help/journey-onboarding/overview.md) – Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugriffsmöglichkeiten und der Einrichtung des Teams.

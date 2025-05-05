@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->Unter [Zugriff auf AEM für Admins konfigurieren](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem?lang=de) finden Sie eine Einführung in die Authentifizierung von Benutzenden über Adobe IMS bei AEM as a Cloud Service. Erfahren Sie außerdem, wie Adobe IMS-Benutzende, Benutzergruppen und Produktprofile verwendet werden, um den Zugriff auf AEM und dessen Funktionen zu steuern. Adobe ID ist erforderlich.
+>Unter [Zugriff auf AEM für Admins konfigurieren](https://experienceleague.adobe.com/?lang=de&recommended=ExperienceManager-A-1-2020.1.aem?lang=de) finden Sie eine Einführung in die Authentifizierung von Benutzenden über Adobe IMS bei AEM as a Cloud Service. Erfahren Sie außerdem, wie Adobe IMS-Benutzende, Benutzergruppen und Produktprofile verwendet werden, um den Zugriff auf AEM und dessen Funktionen zu steuern. Adobe ID ist erforderlich.
 
 ## Wichtige Highlights {#key-highlights}
 
