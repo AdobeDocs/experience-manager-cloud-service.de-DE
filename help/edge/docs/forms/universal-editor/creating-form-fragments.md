@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erst
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
-workflow-type: ht
+source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
+workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt
    ![Erstellen eines Fragments](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    Der Assistent zum **Erstellen von adaptiven Formularfragmenten** wird angezeigt.
-1. Wählen Sie auf der Registerkarte **Vorlage auswählen** die auf Edge Delivery Services basierende Vorlage aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie die Edge Delivery Services-basierte Vorlage auf der Registerkarte **Vorlage auswählen** aus und klicken Sie auf **[!UICONTROL Weiter]**.
    ![Auswählen einer Edge Delivery Services-Vorlage](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
