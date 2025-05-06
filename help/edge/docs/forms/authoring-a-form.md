@@ -3,10 +3,8 @@ title: Erstellen von Workflows in AEM?
 description: Erfahren Sie mehr über die verschiedenen Formularerstellungsplattformen, die in Adobe Experience Manager (AEM) verfügbar sind, und wie Sie die richtige Plattform für Ihre Anforderungen auswählen.
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: f6c6b4c17482eb519fb0d4287704d775d0a5da00
-workflow-type: ht
+source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
+workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
 
