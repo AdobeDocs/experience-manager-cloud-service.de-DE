@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
 1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
-1. Wählen Sie auf der Registerkarte **0}Source** eine **Edge Delivery Services-basierte Vorlage:**
+1. Wählen Sie auf der Registerkarte **0&rbrace;Source** eine **Edge Delivery Services-basierte Vorlage:**
 
    ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
 
@@ -79,6 +79,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 
    1. Geben Sie den **Namen** und den **Titel** an.
    1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
+
       `https://github.com/wkndforms/edsforms`
 
    ![Assistent für die Formularerstellung](/help/edge/assets/create-form-wizard.png)
@@ -95,7 +96,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
 1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
-1. Source Wählen Sie auf der Registerkarte **eine** Kernkomponentenbasierte Vorlage“ aus **und** Design **ist die Schaltfläche**[!UICONTROL  Erstellen ]**aktiviert:**
+1. Source Wählen Sie auf der Registerkarte **eine** Kernkomponentenbasierte Vorlage“ aus **und** Design **ist die Schaltfläche**&#x200B;[!UICONTROL &#x200B; Erstellen &#x200B;]&#x200B;**aktiviert:**
 
    ![Kernkomponentenbasierte Vorlage](/help/forms/assets/core-component-based-template.png)
 
