@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3152'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Sie können Aktionen wie „E-Mail senden“, „AEM-Workflow aufrufen“, „Po
 
 >[!NOTE]
 >
-> Sie können das Datensatzdokument für jedes Formulardatenmodell speichern, indem Sie die Eigenschaft **[!UICONTROL Bindungsverweis für das Datensatzdokument]** verwenden.
+> Sie können den Nachweis für jedes Formulardatenmodell speichern, indem Sie die Eigenschaft **[!UICONTROL Bindungsverweis für Nachweis]** verwenden.
 
 ## Inkrementelle Aktualisierungen der Datensatzdokument-Vorlage {#document-of-record-template-incremental-updates}
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1574'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

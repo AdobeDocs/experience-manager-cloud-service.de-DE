@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Assets aus dem Content Hub-Portal herunterlad
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -153,15 +153,15 @@ Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in 
 
 * [Statische Ausgabedarstellungen](/help/assets/renditions.md#static-renditions): Statische Ausgabedarstellungen sind vorab erstellte Versionen digitaler Assets, die normalerweise bei der Aufnahme oder Änderung von Assets generiert werden. Sie sind für bestimmte Zwecke und Plattformen optimiert, wie Web-Miniaturansichten, mobile Formate für responsive Designs oder hochauflösende Dateiversionen für den Druck, und sorgen für ein effizientes und konsistentes Erlebnis.
 
-* [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeitversionen von Assets, um verschiedene Aktionen auszuführen, z. B. die Größenanpassung von Bildern an verschiedene Geräteauflösungen oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in [!DNL Adobe Experience Manager Assets] Autorenumgebung erstellt. Informationen zu den Schritten, die zum Aktivieren dynamischer Ausgabedarstellungen erforderlich sind, finden Sie unter [Aktivieren dynamischer Ausgabedarstellungen](#enable-dynamic-media-renditions).
+* [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeitversionen von Assets, um verschiedene Aktionen auszuführen, z. B. die Größenanpassung von Bildern an verschiedene Geräteauflösungen oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in der [!DNL Adobe Experience Manager Assets]-Autorenumgebung erstellt. Informationen zu den Schritten, die zum Aktivieren dynamischer Ausgabedarstellungen erforderlich sind, finden Sie unter [Aktivieren dynamischer Ausgabedarstellungen](#enable-dynamic-media-renditions).
 
 * [Intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Der intelligente Zuschnitt legt den Fokus während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Der intelligente Zuschnitt in Dynamic Media nutzt die künstliche Intelligenz von Adobe Sensei, um einen Point of Interest zu verfolgen und sicherzustellen, dass Assets auf allen Bildschirmgrößen ideal aussehen. Der intelligente Zuschnitt in [!DNL Adobe Experience Manager] zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Siehe [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
-  Ausgabedarstellungen für smartes Zuschneiden werden angezeigt und stehen nur dann zum Download zur Verfügung, wenn Sie Zugriff auf [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) haben. Ausgabedarstellungen für smartes Zuschneiden sind nur für Bild-Assets verfügbar.
+  Ausgabedarstellungen für smartes Zuschneiden werden angezeigt und stehen nur dann zum Download zur Verfügung, wenn Sie Zugriff auf [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) haben. Diese Ausgabedarstellungen sind nur für Bild-Assets verfügbar.
 
   ![Ausgabedarstellungstypen](/help/assets/assets/renditions-types.png)
 
-### Dynamische Ausgabedarstellungen aktivieren {#enable-dynamic-media-renditions}
+### Aktivieren von dynamischen Ausgabedarstellungen {#enable-dynamic-media-renditions}
 
 So aktivieren Sie dynamische Ausgabedarstellungen:
 
@@ -169,13 +169,13 @@ So aktivieren Sie dynamische Ausgabedarstellungen:
 
    Sobald Sie Zugriff auf Dynamic Media mit OpenAPI-Funktionen haben, sind alle als `Approved` markierten Assets für die öffentliche Bereitstellung mit Dynamic Media verfügbar.
 
-1. Legen Sie das [Genehmigungsziel des Assets) auf Content Hub fest](/help/assets/approve-assets-content-hub.md#set-approval-target) um Assets nur für Content Hub zu genehmigen.
+1. Legen Sie das [Genehmigungsziel des Assets](/help/assets/approve-assets-content-hub.md#set-approval-target) auf Content Hub fest, um Assets nur für Content Hub zu genehmigen.
 
-1. Aktivieren Sie **[!UICONTROL Umschalter „Verfügbarkeit von Ausgabedarstellungen aktivieren]** auf der Registerkarte **[!UICONTROL Ausgabedarstellungen]** der Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
+1. Aktivieren Sie den Umschalter **[!UICONTROL Verfügbarkeit von Ausgabedarstellungen aktivieren]** auf der Registerkarte **[!UICONTROL Ausgabedarstellungen]** der Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 
-1. Speichern Sie die vorhandenen Bildvorgaben erneut, um sie in Content Hub verfügbar zu machen. Dies gilt nur, wenn Sie mit OpenAPI neu in Dynamic Media integriert haben.
+1. Speichern Sie die vorhandenen Bildvorgaben erneut, um sie in Content Hub verfügbar zu machen. Dies gilt nur, wenn Sie gerade das Onboarding bei Dynamic Media mit OpenAPI durchgeführt haben.
 
-   Um die vorhandenen Bildvorgaben erneut zu speichern, navigieren Sie zur Admin-Ansicht und wählen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**. Wählen Sie eine Vorgabe aus, klicken Sie auf **[!UICONTROL Bearbeiten]** und dann auf **[!UICONTROL Speichern]**.
+   Um die vorhandenen Bildvorgaben erneut zu speichern, navigieren Sie zur Admin-Ansicht und wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]** aus. Wählen Sie eine Vorgabe aus, klicken Sie auf **[!UICONTROL Bearbeiten]** und dann auf **[!UICONTROL Speichern]**.
 
 
 

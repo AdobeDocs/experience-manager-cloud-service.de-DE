@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
 source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3957'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -241,8 +241,8 @@ Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/
 
 >[!NOTE]
 >
-> Anlagen werden auch im `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anlagen mit Originalnamen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
-> ![Bild](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
+> Anlagen werden auch im Verzeichnis `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anhänge mit dem ursprünglichen Namen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
+> ![image](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
 
 ### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 

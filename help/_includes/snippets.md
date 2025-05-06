@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -187,7 +187,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!IMPORTANT]
 >
->Wenn Sie den [Der universelle Editor für die Inhaltserstellung](/help/implementing/universal-editor/introduction.md) verwenden und auch [IP-Zulassungslisten verwenden möchten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) müssen Sie auch [eine Zulassungsliste mit den IP-Adressen des universellen Editor-Dienstes hinzufügen und anwenden.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Wenn Sie den [universellen Editor für die Inhaltserstellung](/help/implementing/universal-editor/introduction.md) verwenden und auch [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) verwenden möchten, müssen Sie auch [eine Zulassungsliste mit den IP-Adressen des Dienstes „Universeller Editor“ hinzufügen und anwenden.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Arbeiten mit Dynamic Media {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 

@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -156,17 +156,17 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
-| **set** | reqProperty, value | Legt einen angegebenen Anforderungsparameter fest (nur die Eigenschaft „path“ wird unterstützt) |
-|     | reqHeader, Wert | Setzt einen angegebenen Anfrage-Header auf einen bestimmten Wert. |
+| **set** | reqProperty, Wert | Legt einen bestimmten Anforderungsparameter fest (nur die Eigenschaft „path“ wird unterstützt) |
+|     | reqHeader, Wert | Legt einen bestimmten Anfrage-Header auf einen angegebenen Wert fest. |
 |     | queryParam, Wert | Legt einen bestimmten Abfrageparameter auf einen angegebenen Wert fest. |
-|     | reqCookie, Wert | Setzt ein angegebenes Anforderungs-Cookie auf einen bestimmten Wert. |
-|     | logProperty, Wert | Setzt eine angegebene CDN-Protokolleigenschaft auf einen bestimmten Wert. |
+|     | reqCookie, Wert | Legt ein bestimmtes Anfrage-Cookie auf einen angegebenen Wert fest. |
+|     | logProperty, Wert | Legt eine bestimmte CDN-Protokolleigenschaft auf einen angegebenen Wert fest. |
 |     | var, Wert | Legt eine bestimmte Variable auf einen angegebenen Wert fest. |
-| **unset** | reqProperty | Entfernt einen angegebenen Anforderungsparameter (nur die Eigenschaft „path“ wird unterstützt) |
-|     | reqHeader, Wert | Entfernt einen angegebenen Anfrage-Header. |
+| **unset** | reqProperty | Entfernt einen bestimmten Anfrageparameter (nur die Eigenschaft „path“ wird unterstützt) |
+|     | reqHeader, Wert | Entfernt einen bestimmten Anfrage-Header. |
 |     | queryParam, Wert | Entfernt einen angegebenen Abfrageparameter. |
-|     | reqCookie, Wert | Entfernt ein angegebenes Cookie. |
-|     | logProperty, Wert | Entfernt eine angegebene CDN-Protokolleigenschaft. |
+|     | reqCookie, Wert | Entfernt ein bestimmtes Cookie. |
+|     | logProperty, Wert | Entfernt eine bestimmte CDN-Protokolleigenschaft. |
 |     | var | Entfernt eine angegebene Variable. |
 |     | queryParamMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck entsprechen. |
 |     | queryParamDoesNotMatch | Entfernt alle Abfrageparameter, die einem angegebenen regulären Ausdruck nicht entsprechen. |
@@ -251,7 +251,7 @@ data:
             value: some header value
 ```
 
-### Log-Eigenschaft {#logproperty}
+### Protokolleigenschaft {#logproperty}
 
 Sie können Ihre eigenen Protokolleigenschaften in Ihren CDN-Protokollen hinzufügen, indem Sie Anfrage- und Antworttransformationen verwenden.
 
@@ -304,7 +304,7 @@ Beispiel für ein Protokoll:
 
 ## Reaktionsumwandlungen {#response-transformations}
 
-Mit Regeln zur Antwortumwandlung können Sie Kopfzeilen, Cookies und den Status der ausgehenden CDN-Antworten festlegen und deaktivieren. Siehe auch das Beispiel oben für Referenzen auf eine Variable, die zuvor in einer Regel zu Anfrageumwandlung festgelegt wurde.
+Mit Regeln zur Reaktionsumwandlung können Sie Header, Cookies und Status der ausgehenden Antworten des CDN festlegen und aufheben. Siehe auch das Beispiel oben für Referenzen auf eine Variable, die zuvor in einer Regel zu Anfrageumwandlung festgelegt wurde.
 
 Konfigurationsbeispiel:
 
@@ -377,13 +377,13 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 | Name | Eigenschaften | Bedeutung |
 |-----------|--------------------------|-------------|
 | **set** | respProperty, Wert | Legt eine Antworteigenschaft fest. Unterstützt nur die Eigenschaft „Status“, um den Status-Code festzulegen. |
-|     | respHeader, Wert | Setzt einen angegebenen Antwort-Header auf einen bestimmten Wert. |
-|     | respCookie, Attribute (expires, domain, path, secure, httpOnly, extension), value | Setzt ein angegebenes Anfrage-Cookie mit bestimmten Attributen auf einen bestimmten Wert. |
-|     | logProperty, Wert | Setzt eine angegebene CDN-Protokolleigenschaft auf einen bestimmten Wert. |
+|     | respHeader, Wert | Legt einen bestimmten Antwort-Header auf einen angegebenen Wert fest. |
+|     | respCookie, Attribute (expires, domain, path, secure, httpOnly, extension), Wert | Legt ein bestimmtes Anfrage-Cookie mit bestimmten Attributen auf einen angegebenen Wert fest. |
+|     | logProperty, Wert | Legt eine bestimmte CDN-Protokolleigenschaft auf einen angegebenen Wert fest. |
 |     | var, Wert | Legt eine bestimmte Variable auf einen angegebenen Wert fest. |
 | **unset** | respHeader | Entfernt eine bestimmte Kopfzeile aus der Antwort. |
-|     | respCookie, Wert | Entfernt ein angegebenes Cookie. |
-|     | logProperty, Wert | Entfernt eine angegebene CDN-Protokolleigenschaft. |
+|     | respCookie, Wert | Entfernt ein bestimmtes Cookie. |
+|     | logProperty, Wert | Entfernt eine bestimmte CDN-Protokolleigenschaft. |
 |     | var | Entfernt eine angegebene Variable. |
 
 ## Ursprungs-Auswahlen {#origin-selectors}

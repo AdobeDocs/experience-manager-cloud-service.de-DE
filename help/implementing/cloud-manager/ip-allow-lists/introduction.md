@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -78,12 +78,12 @@ Stellen Sie sicher, dass diese Cloud Manager-IP-Zulassungsliste hinzugefügt wir
 
 Weitere Informationen finden Sie unter [Anwenden von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) und [Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
-### Der universelle Editor und die IP-Zulassungslisten {#universal-editor}
+### Der universelle Editor und IP-Zulassungslisten {#universal-editor}
 
-Wenn Sie den universellen Editor zum Erstellen Ihrer Inhalte verwenden möchten, müssen Sie die IP-Adressen, die der universelle Editor-Dienst verwendet, zu einer Zulassungsliste hinzufügen und anwenden.
+Wenn Sie den universellen Editor zum Erstellen Ihrer Inhalte verwenden möchten, müssen Sie die IP-Adressen, die der Dienst „Universeller Editor“ verwendet, zu einer Zulassungsliste hinzufügen und anwenden.
 
-1. Rufen Sie die vom universellen Editor-Dienst verwendeten IP-Adressen vom folgenden API-Endpunkt ab: `http://universal-editor-service.adobe.io/ip-ranges`.
-1. Erstellen Sie eine Zulassungsliste mit diesen IP-Adressen und benennen Sie sie `Universal Editor Service` oder ähnlich.
-1. Wenden Sie die `Universal Editor Service` Zulassungsliste an.
+1. Rufen Sie die vom Dienst „Universeller Editor“ verwendeten IP-Adressen vom folgenden API-Endpunkt ab: `http://universal-editor-service.adobe.io/ip-ranges`.
+1. Erstellen Sie eine Zulassungsliste mit diesen IP-Adressen und nennen Sie sie „`Universal Editor Service`“ oder ähnlich.
+1. Wenden Sie die Zulassungsliste „`Universal Editor Service`“ an.
 
-Die Liste der vom universellen Editor-Dienst verwendeten IP-Adressen kann sich ändern, und Sie müssen Ihre Zulassungsliste entsprechend aktualisieren.
+Die Liste der vom Dienst „Universeller Editor“ verwendeten IP-Adressen kann sich ändern und Sie müssen Ihre Zulassungsliste entsprechend aktualisieren.

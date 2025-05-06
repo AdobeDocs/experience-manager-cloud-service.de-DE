@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
 source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5993'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1181,7 +1181,7 @@ Derzeit gelten folgende Einschränkungen:
 * Wenn ein Asset, auf das verwiesen wird, aus dem Remote-Repository entfernt wird, führt dies zu einer beschädigten Asset-Referenz für Inhaltsfragmente.
 * Alle Repositorys für Bereitstellungs-Assets, auf die Benutzende Zugriff haben, stehen zur Auswahl. Die Liste „Verfügbar“ kann nicht beschränkt werden.
 * Sowohl die AEM-Instanz als auch die Remote-Asset-Repository-Instanz müssen dieselbe Version aufweisen.
-* Über die [Management Sites-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de) und die [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) werden keine Asset-Metadaten verfügbar gemacht. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
+* Über das [Management Sites-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de) und die [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/?lang=de) werden keine Asset-Metadaten verfügbar gemacht. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
 
 ## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
 

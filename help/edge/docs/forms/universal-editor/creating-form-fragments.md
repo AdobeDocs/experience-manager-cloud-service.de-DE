@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ Am Ende des Artikels erfahren Sie, wie Sie mit dem universellen Editor Fragmente
 
 ## Funktionen von Edge Delivery Services-Formularfragmenten
 
-* **Konsistenz mit Formularfragmenten gewährleisten**
-Sie können Fragmente in verschiedene Formulare integrieren, wodurch Sie konsistente Layouts und standardisierte Inhalte beibehalten können.
+* **Gewährleisten von Konsistenz mit Formularfragmenten**
+Sie können Fragmente in verschiedene Formulare integrieren, wodurch Sie konsistente Layouts und standardisierte Inhalte beibehalten können. 
 
   >[!NOTE]
   >
@@ -44,13 +44,13 @@ Sie können verschachtelte Formularfragmente erstellen, d. h. ein Fragment in e
 ## Überlegungen bei der Verwendung von Edge Delivery Services-Formularfragmenten
 
 * Sie müssen in dem Fragment sowie in dem Formular, in dem Sie das Fragment verwenden möchten, dieselbe GitHub-URL hinzufügen.
-* Sie können ein Formularfragment nicht in einem Formular bearbeiten. Um Änderungen vorzunehmen, ändern Sie das eigenständige Formularfragment.
+* Sie können ein Formularfragment nicht in einem Formular bearbeiten. Ändern Sie zum Bearbeiten das eigenständige Formularfragment.
 
 ## Voraussetzungen
 
 * [Richten Sie Ihr GitHub-Repository so ein](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template), dass eine Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository hergestellt wird.
 * Wenn Sie bereits Edge Delivery Services verwenden, fügen Sie Ihrem GitHub-Repository die neueste Version des [adaptiven Formularblocks](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) hinzu.
-* Die AEM Forms-Autoreninstanz enthält eine Vorlage, die auf Edge Delivery Services basiert.
+* Die AEM Forms-Autoreninstanz enthält eine Vorlage, die auf Edge Delivery Services basiert. 
 * Halten Sie die URL Ihrer AEM Forms as a Cloud Service-Autoreninstanz und Ihres GitHub-Repositorys bereit.
 
 ## Arbeiten mit Edge Delivery Services-Formularfragmenten
@@ -114,7 +114,7 @@ Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt
 
 ### Hinzufügen von Formularfragmenten zu einem Formular
 
-Erstellen wir ein einfaches `Employee Details` Formular, das sowohl Mitarbeiter- als auch Vorgesetzte-Informationen enthält. Sie können das Fragment `Contact Details` sowohl im Panel für Mitarbeitende als auch im Panel für Verantwortliche verwenden. Um das Formularfragment in Ihrem Formular zu verwenden, führen Sie die folgenden Schritte aus:
+Erstellen wir ein nun einfaches Formular „`Employee Details`“, das Informationen sowohl zu Mitarbeitenden als auch zu Verantwortlichen enthält. Sie können das Fragment `Contact Details` sowohl im Panel für Mitarbeitende als auch im Panel für Verantwortliche verwenden. Um das Formularfragment in Ihrem Formular zu verwenden, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
 1. Fügen Sie die Komponente „Formularfragment“ dem Formular hinzu.
@@ -138,7 +138,7 @@ Erstellen wir ein einfaches `Employee Details` Formular, das sowohl Mitarbeiter-
 
 1. Klicken Sie auf **[!UICONTROL Auswählen]**.
 
-   Das Formularfragment wird per Verweis auf das Formular hinzugefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert.
+   Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert. 
 
    ![Fragment im Formular](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 

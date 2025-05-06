@@ -5,9 +5,9 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1500'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -703,7 +703,7 @@ Ein Referenz-Komponententyp ermöglicht einen Verweis auf ein anderes Datenobjek
 
 #### Rich-Text {#rich-text}
 
-Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe.
+Rich-Text ermöglicht eine mehrzeilige Rich-Text-Eingabe. 
 
 >[!BEGINTABS]
 

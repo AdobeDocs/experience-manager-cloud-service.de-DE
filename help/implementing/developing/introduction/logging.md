@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2377'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -554,7 +554,7 @@ Die CDN-Protokolle unterscheiden sich von den anderen Protokollen insofern, als 
 | *pop* | das Rechenzentrum des CDN-Cache-Servers. |
 | *rules* | Die Namen aller übereinstimmenden [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) und WAF-Flags, die auch angeben, ob die Übereinstimmung zu einer Blockierung führte. Leer, wenn keine Regeln übereinstimmten. |
 
-Die CDN-Protokolle können mit Ihren eigenen Eigenschaften mithilfe von [Anfrage-/Antworttransformationen“ erweitert ](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
+Die CDN-Protokolle können mit Ihren eigenen Eigenschaften mithilfe von [Anfrage-/Antworttransformationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty) erweitert werden.
 
 ## Zugriff auf Protokolle {#how-to-access-logs}
 

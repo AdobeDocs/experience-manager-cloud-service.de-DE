@@ -5,9 +5,9 @@ hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3165'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -76,16 +76,16 @@ Zu den wichtigsten Vorteilen von [!DNL Dynamic Media]-Vorlagen gehören:
 In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine [!DNL Dynamic Media]-Vorlage erstellen.
 >[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
-## Voraussetzungen{#prerequisites-for-dynamic-media-wysiwyg-template}
+## Bevor Sie beginnen{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-Sie müssen folgende Voraussetzungen erfüllen, um eine [!DNL Dynamic Media] Vorlage zu erstellen und ihre Versand-URL zu generieren:
+Sie müssen folgende Voraussetzungen erfüllen, um eine [!DNL Dynamic Media]-Vorlage zu erstellen und ihre Versand-URL zu generieren:
 
 1. Sie haben Zugriff auf [!DNL Dynamic Media].
-1. Auf der [!DNL Assets View] Homepage befindet sich ein Ordner in **[!UICONTROL Dynamic Media Assets]** zum Speichern der Vorlage. [Erstellen eines Ordners](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**, um diesen Ordner in&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;zu replizieren.
-1. [Synchronisieren Sie die in Ihrer  [!DNL AEM Assets] -Instanz verfügbaren Bilder mit [!DNL Dynamic Media] , um sie für die Erstellung der Vorlage zu verwenden](/help/assets/dynamic-media/config-dm.md).
+1. Auf der [!DNL Assets View]-Homepage befindet sich ein Ordner in **[!UICONTROL Dynamic Media Assets]** zum Speichern der Vorlage. [Erstellen Sie einen Ordner](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, um diesen Ordner in**[!UICONTROL  Dynamic Media Assets ]**zu replizieren.
+1. [Die in Ihrer Instanz von  [!DNL AEM Assets]  verfügbaren Bilder müssen mit  [!DNL Dynamic Media]  synchronisiert worden sein, damit sie für die Erstellung der Vorlage verwendet werden können](/help/assets/dynamic-media/config-dm.md).
 1. Veröffentlichen Sie die Bilder, die bei der Erstellung der Vorlage verwendet werden sollen, um nach der Erstellung die Versand-URL der Vorlage zu generieren. Die Bereitstellungs-URL kann in nachgelagerten Anwendungen verwendet werden.
-1. Um eine andere Schriftart als die standardmäßige [!UICONTROL Adobe Sans F2]-Schriftart in der Textebene der Vorlage zu verwenden, [ Sie die Schriftartdatei gleichzeitig in AEM und Dynamic Media hoch und ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Folgende Schriftformate werden unterstützt: AFM, OTF, PFB, PFM, FotoFont, TTC und TTF](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Stellen Sie außerdem sicher[ dass ](/help/assets/reprocessing-assets-view.md) vorhandenen Schriftarten (erneut) verarbeitet werden, um sie zu verwenden. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
-1. Überprüfen Sie Folgendes in der Touch-optimierten Benutzeroberfläche:
+1. Um eine andere als die standardmäßige Schriftart [!UICONTROL Adobe Sans F2] in der Textebene der Vorlage zu verwenden, [laden Sie die Schriftartdatei gleichzeitig in AEM und Dynamic Media hoch](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Folgende Schriftformate werden unterstützt: AFM, OTF, PFB, PFM, FotoFont, TTC und TTF](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Stellen Sie außerdem sicher, dass vorhandene Schriftarten [erneut verarbeitet](/help/assets/reprocessing-assets-view.md) werden, um sie zu verwenden. Weitere Informationen finden Sie unter [Schriftarten](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Überprüfen Sie Folgendes im Touch-UI:
    * Auf der Seite **[!UICONTROL [!DNL Dynamic Media]-Konfiguration bearbeiten]** wird der **[!UICONTROL [!DNL Dynamic Media]-Synchronisierungsmodus]**, der auf **[!UICONTROL Standardmäßig deaktiviert]** festgelegt ist, nicht auf alle AEM-Ordner angewendet (die Option **[!UICONTROL Alle Inhalte synchronisieren]** ist deaktiviert). Weitere Informationen Sie unter [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md).
    * Der **[!UICONTROL [!DNL Dynamic Media]-Synchronisierungsmodus]** ist für den Zielordner oder den Unterordner, in dem Sie die Vorlage nach der Erstellung speichern, auf **[!UICONTROL Für Unterordner aktivieren]** festgelegt. Weitere Informationen finden Sie unter [Konfigurieren von [!DNL Dynamic Media] Cloud Services](/help/assets/dynamic-media/config-dm.md).
 
@@ -93,9 +93,9 @@ Sie müssen folgende Voraussetzungen erfüllen, um eine [!DNL Dynamic Media] Vor
 
 Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media]-Vorlage zu erstellen:
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
 1. [Hinzufügen von Bildern zur Arbeitsfläche](#add-images-to-the-canvas)
@@ -133,8 +133,8 @@ Führen Sie die folgenden Schritte aus, um eine leere Arbeitsfläche zu erstelle
 **Menüoptionen im linken Bereich:** Verwenden Sie diese Optionen für die folgenden gängigen Editoraktionen.
 
 * ![DM-Vorlagen](/help/assets/assets/layer-selector.svg): Wählen Sie ![DM-Vorlagen](/help/assets/assets/layer-selector.svg) aus und klicken Sie auf eine Ebene auf der Arbeitsfläche, um sie auszuwählen.
-* ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg): Klicken Sie auf ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg) oder verwenden Sie den Tastaturbefehl **Strg**+**&rbrack;** (Windows) bzw. **Befehlstaste**+**&rbrack;** (Mac), um eine ausgewählte Ebene nach vorne zu bringen.
-* ![Erstellen einer Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg): Klicken Sie auf ![Erstellen einer Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg) oder verwenden Sie den Tastaturbefehl **Strg**+**&lbrack;** (Windows) bzw. **Befehlstaste**+**&lbrack;** (Mac), um eine ausgewählte Ebene nach hinten zu bringen.
+* ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg): Klicken Sie auf ![Vorlagen, die Anpassungen unterstützen](/help/assets/assets/bring-forward.svg) oder verwenden Sie den Tastaturbefehl **Strg**+**]** (Windows) bzw. **Befehlstaste**+**]** (Mac), um eine ausgewählte Ebene nach vorne zu bringen.
+* ![Erstellen einer Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg): Klicken Sie auf ![Erstellen einer Vorlage, die einfach angepasst werden kann](/help/assets/assets/send-backward.svg) oder verwenden Sie den Tastaturbefehl **Strg**+**[** (Windows) bzw. **Befehlstaste**+**[** (Mac), um eine ausgewählte Ebene nach hinten zu bringen.
 * ![Erstellen einer Vorlage, die sofort angepasst werden kann](/help/assets/assets/undo.svg): Klicken Sie auf ![Erstellen einer Vorlage, die sofort angepasst werden kann](/help/assets/assets/undo.svg) oder verwenden Sie den Tastaturbefehl **Strg**+**Z** (Windows) bzw. **Befehlstaste**+**Z** (Mac), um die letzte Aktion rückgängig zu machen.
 * ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/redo.svg): Klicken Sie auf ![Vorlage zum schnellen Erstellen von Bannern](/help/assets/assets/redo.svg) oder verwenden Sie den Tastaturbefehl **Strg**+**Y** (Windows) bzw. **Befehlstaste**+**Y** (Mac), um die letzte Aktion wiederherzustellen.
 * ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/zoom-in.svg): Klicken Sie auf ![Vorlage zum schnellen Erstellen von Flyern](/help/assets/assets/zoom-in.svg) oder verwenden Sie den Tastaturbefehl **Strg**+**+** (Windows) bzw. **Befehlstaste**+**+** (Mac), um die Arbeitsfläche heranzuzoomen.
@@ -166,7 +166,7 @@ Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Textebenen hinzuzu
 1. Wählen Sie im Panel „Eigenschaften“ die Option **[!UICONTROL Intelligente Textgrößenänderung]** aus, um die Textlänge und den Schriftgrad automatisch und optimal an den vorgesehenen Bereich anzupassen.
    ![Optimal anpassbare Banner](/help/assets/assets/add-text-layer.png)
 
-Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Schriftart, Größe, Farbe, Stil und Ausrichtung (auf der Ebene) des Textes wie erforderlich, indem Sie die Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Panels ändern. Das Feld **[!UICONTROL Schriftfamilie]** zeigt die Standardschriftart [!UICONTROL Adobe Sans F2], die neu verarbeiteten vorhandenen Schriftarten sowie die neu hochgeladenen und veröffentlichten Schriftarten an. Weitere Informationen finden Sie unter [ 5 ](#prerequisites-for-dynamic-media-wysiwyg-template) Abschnitt „Bevor Sie beginnen“.
+Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Schriftart, Größe, Farbe, Stil und Ausrichtung (auf der Ebene) des Textes wie erforderlich, indem Sie die Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Panels ändern. Das Feld **[!UICONTROL Schriftfamilie]** zeigt die Standardschriftart [!UICONTROL Adobe Sans F2], die neu verarbeiteten vorhandenen Schriftarten sowie die neu hochgeladenen und veröffentlichten Schriftarten an. Weitere Informationen finden Sie unter Punkt 5 im Abschnitt [Bevor Sie beginnen](#prerequisites-for-dynamic-media-wysiwyg-template).
 
 ### Bearbeiten oder Löschen einer Ebene {#edit-or-delete-a-layer}
 
@@ -262,7 +262,7 @@ Führen Sie diese Schritte aus, um den Ausblendungsparametern (![schnelle Inhalt
 
 Führen Sie die folgenden Schritte aus, um die Vorlage in der Vorschau anzuzeigen und zu veröffentlichen und die Bereitstellungs-URL zu kopieren:
 
-1. Klicken Sie auf der Seite „Arbeitsfläche“ auf **[!UICONTROL Vorschau]**. Sie können auch zu **[!UICONTROL Assets-Ansicht]** **>** **[!UICONTROL Dynamic Media-Assets]** **&#x200B;**&#x200B;navigieren, Ihre Vorlage suchen und auswählen und dann **&#x200B;**&#x200B;auf **&#x200B;**&#x200B;Vorlage bearbeiten **&#x200B;**&#x200B;sowie auf **[!UICONTROL Vorschau]** klicken. Auf der Seite „Vorschau“ werden die Vorlage, ihre Parameter (parametrisierte Ebenen und Eigenschaften), der Veröffentlichungsstatus und die Option **[!UICONTROL Veröffentlichen]** angezeigt.
+1. Klicken Sie auf der Seite „Arbeitsfläche“ auf **[!UICONTROL Vorschau]**. Sie können auch zu **[!UICONTROL Assets-Ansicht]** **>** **[!UICONTROL Dynamic Media-Assets]** **** navigieren, Ihre Vorlage suchen und auswählen und dann **** auf **** Vorlage bearbeiten **** sowie auf **[!UICONTROL Vorschau]** klicken. Auf der Seite „Vorschau“ werden die Vorlage, ihre Parameter (parametrisierte Ebenen und Eigenschaften), der Veröffentlichungsstatus und die Option **[!UICONTROL Veröffentlichen]** angezeigt.
 1. Wählen Sie Parameter aus dem Bedienfeld **[!UICONTROL Vorlagenparameter]** aus, um ihre Werte zu bearbeiten und den Inhalt, die Größe, die Position oder die Textformatierung der entsprechenden Vorlagenebene in der Vorschau sofort zu aktualisieren. Zum Beispiel:
    1. Auswählen einer Textebene und Bearbeiten ihres Textes oder
    1. Wählen Sie eine Bildebene aus, klicken Sie auf ![Inhalt spontan erstellen](/help/assets/assets/add-image.svg), wählen Sie ein Bild aus der Asset-Auswahl aus und klicken Sie auf **[!UICONTROL Aktualisieren]**.
@@ -280,7 +280,7 @@ Sie können auch **[!UICONTROL Alle Parameter einbeziehen]** umschalten, um alle
 
 Die ausgewählten Parameter auf der Seite **[!UICONTROL Vorschau]** werden zu den URL-Parametern in der Vorlagen-URL.
 
-Stellen Sie sicher, dass die Bilder in der Vorlage bereits in AEM und Dynamic Media veröffentlicht wurden, um die Bereitstellungs-URL der Vorlage zu generieren.
+Stellen Sie sicher, dass die Bilder bereits in der Vorlage in AEM und Dynamic Media veröffentlicht sind, um eine Bereitstellungs-URL der veröffentlichten Vorlage zu generieren.
 
 Führen Sie die folgenden Schritte aus, um die Bereitstellungs-URL der Vorlage zu kopieren:
 
@@ -312,7 +312,7 @@ Gehen Sie wie folgt vor, um die Vorlage zu bearbeiten:
 
 ## Hinzufügen eines CTA-Links zu Ihrer Vorlagenebene{#add-CTA-in-dynamic-media-templates}
 
-Wandeln Sie eine Bild- oder Textebene Ihrer [!DNL Dynamic Media] in einen Hyperlink um, indem Sie einen CTA-Link hinzufügen, der Benutzer zu einer Zielseite weiterleitet.
+Verwandeln Sie eine Bild- oder Textebene Ihrer [!DNL Dynamic Media]-Vorlage in einen Hyperlink, indem Sie einen Link für Aktionsaufrufe hinzufügen, der Benutzende zu einer Zielseite weiterleitet.
 
 Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufügen:
 
@@ -322,7 +322,7 @@ Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufü
 
    ![CTA hinzufügen](/help/assets/assets/add-cta.png)
 
-1. Klicken Sie auf **[!UICONTROL Vorschau]** und wählen Sie **[!UICONTROL Veröffentlichen]** aus, um Ihre Vorlage zu veröffentlichen, falls sie nicht zuvor veröffentlicht wurde.
+1. Klicken Sie auf **[!UICONTROL Vorschau]** und wählen Sie **[!UICONTROL Veröffentlichen]** aus, um Ihre Vorlage zu veröffentlichen, sofern sie nicht schon zuvor veröffentlicht wurde.
 1. Navigieren Sie zu dem Ordner, in dem diese Vorlage gespeichert ist, wählen Sie die Vorlage aus und klicken Sie auf ![Detailseite](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Klicken Sie auf **[!UICONTROL Optionen kopieren]** und wählen Sie **[!UICONTROL Einbettungs-Code kopieren]** aus. Stellen Sie sicher, dass Sie die Vorlagenbilder in [!DNL AEM and Dynamic Media] veröffentlichen, um den Einbettungs-Code zu kopieren.
 

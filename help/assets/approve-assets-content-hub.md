@@ -3,7 +3,7 @@ title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1276'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Markenverantwortliche und Marketing-Fachleute behalten die strenge Kontrolle üb
 
 Sie können Assets mithilfe von AEM Assets as a Cloud Service genehmigen, um das Asset-Management zu optimieren und so einen kontrollierten und effizienten Prozess für die Verarbeitung von Assets sicherzustellen.
 
-## Voraussetzungen {#pre-requisites}
+## Bevor Sie beginnen {#pre-requisites}
 
 Bevor Sie beginnen, sollten Sie über Folgendes verfügen:
 
