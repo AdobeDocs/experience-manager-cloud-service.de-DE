@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie einer Edge Delivery-Site eine CDN-Konfigurati
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
+source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 76%
@@ -66,7 +66,9 @@ Klicken Sie in der Tabelle der Edge Delivery-Sites auf das Symbol ![Mehr](https:
 
 Verwenden Sie den API-Endpunkt `/program/{programId}/site/{siteId}` , um eine Edge Delivery-Site zwischen Helix 4 und Helix 5 zu migrieren.
 
-CDN-Konfigurationen für Helix 4-Websites können nicht automatisch zu Helix 5 migriert werden. Diese Einschränkung besteht, da die Produktionsstandorte der Kunden möglicherweise weiterhin auf Helix 4 ausgeführt werden, während sich deren Helix 5-Versionen noch in der Entwicklung befinden.
+>[!IMPORTANT]
+>
+>CDN-Konfigurationen für Helix 4-Websites können nicht automatisch zu Helix 5 migriert werden. Diese Einschränkung besteht, da die Produktionsstandorte der Kunden möglicherweise weiterhin auf Helix 4 ausgeführt werden, während sich deren Helix 5-Versionen noch in der Entwicklung befinden.
 
 **Voraussetzungen**
 
