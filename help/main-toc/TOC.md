@@ -992,7 +992,7 @@ ht-degree: 99%
          + [Benutzerdefinierte Attribute zum CIF-Produktkarussell](/help/commerce-cloud/customizing/product-carousel.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
-   + [FAQs](/help/commerce-cloud/faq.md)
+   + [Häufig gestellte Fragen](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Überblick über Edge Delivery Services](/help/edge/overview.md)
    + [Verwenden von Edge Delivery Services mit AEM](/help/edge/using.md)

@@ -1,45 +1,45 @@
 ---
 title: Erstellen von eigenständigen Formularen basierend auf Kernkomponenten- oder Edge Delivery Services-Vorlagen und Veröffentlichen in Edge Delivery Services
-description: In diesem Artikel wird erläutert, wie Sie adaptive Forms erstellen, indem Sie im Assistenten zur Formularerstellung eine auf Kernkomponenten oder Edge Delivery Services basierende Vorlage auswählen. Sie können die Formulare auch in AEM Edge Delivery Services veröffentlichen.
+description: In diesem Artikel wird erläutert, wie Sie adaptive Formulare erstellen, indem Sie im Assistenten zur Formularerstellung eine auf Kernkomponenten oder Edge Delivery Services basierende Vorlage auswählen. Sie können die Formulare auch in AEM Edge Delivery Services veröffentlichen.
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 29%
+ht-degree: 50%
 
 ---
 
 
-# Von der Bearbeitung bis zur Veröffentlichung: AEM Forms auf Edge Delivery Services
+# Von der Erstellung bis zur Veröffentlichung: AEM Forms auf Edge Delivery Services
 
 <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Namen des Repositorys von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
-Mit Adobe Experience Manager (AEM) können Sie Formulare erstellen, die ansprechend, reaktionsfähig und dynamisch sind. Es bietet mehrere Authoring-Methoden, die jeweils für unterschiedliche Anforderungen und Benutzerkompetenzen geeignet sind&#x200B;
+Mit Adobe Experience Manager (AEM) können Sie Formulare erstellen, die ansprechend, reaktionsfähig und dynamisch sind. Es bietet mehrere Authoring-Methoden, die jeweils für unterschiedliche Anforderungen und Benutzerkompetenzen geeignet sind.
 
-Dieser Artikel konzentriert sich auf den Ansatz, bei dem Formulare in der AEM-Umgebung erstellt und über Edge Delivery Services veröffentlicht werden. Forms, das mit Kernkomponenten-basierten Vorlagen erstellt wurde, kann sowohl auf AEM als auch auf Edge Delivery Services veröffentlicht werden, was eine flexible Bereitstellung ermöglicht. Formulare, die mit Edge Delivery Services-basierten Vorlagen erstellt wurden, können hingegen nur in Edge Delivery Services veröffentlicht werden&#x200B;
+Dieser Artikel konzentriert sich auf den Ansatz, bei dem Formulare in der AEM-Umgebung erstellt und über Edge Delivery Services veröffentlicht werden. Formulare, die mit auf Kernkomponenten basierenden Vorlagen erstellt wurden, können sowohl in AEM als auch in Edge Delivery Services veröffentlicht werden, was eine flexible Bereitstellung ermöglicht. Formulare, die mit auf Edge Delivery Services basierenden Vorlagen erstellt wurden, können hingegen nur in Edge Delivery Services veröffentlicht werden.
 
-![Verfassen und Veröffentlichen von adaptiven Formularen](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
+![Erstellen und Veröffentlichen von adaptiven Formularen](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
 
 ## Vorteile der Erstellung von Formularen in AEM und der Veröffentlichung mit Edge Delivery Services:
 
-* **Beibehaltung bestehender AEM-Workflows**: Unternehmen können weiterhin ihre etablierten AEM-Workflows und Governance-Strukturen nutzen, um Konsistenz und Kontrolle über die Inhaltserstellung sicherzustellen&#x200B;
+* **Beibehaltung bestehender AEM-Workflows**: Organisationen können weiterhin ihre etablierten AEM-Workflows und Governance-Strukturen nutzen, um Konsistenz und Kontrolle über die Inhaltserstellung sicherzustellen.
 
-* **Verbesserte Leistung**: Die Veröffentlichung über Edge Delivery Services führt zu schnelleren Rendering-Zeiten, einem verbesserten Benutzererlebnis und kürzeren Seitenladezeiten&#x200B;
+* **Verbesserte Leistung**: Die Veröffentlichung über Edge Delivery Services führt zu schnelleren Rendering-Zeiten, einem verbesserten Benutzererlebnis und kürzeren Seitenladezeiten.
 
-* **Verbessertes SEO**: Edge Delivery Services wurde entwickelt, um Inhalte mit hohen Google Lighthouse-Bewertungen bereitzustellen, was zu einer besseren Suchmaschinenoptimierung und einer erhöhten Sichtbarkeit führen kann&#x200B;
+* **Verbessertes SEO**: Edge Delivery Services wurde entwickelt, um Inhalte mit hohen Google Lighthouse-Bewertungen bereitzustellen, was zu einer besseren Suchmaschinenoptimierung und einer erhöhten Sichtbarkeit führen kann.
 
-* **Flexible Bereitstellungsoptionen**: Forms, das mit Kernkomponenten erstellt wurde, kann sowohl auf AEM als auch auf Edge Delivery Services veröffentlicht werden, was Flexibilität bei Bereitstellungsstrategien bietet&#x200B;
+* **Flexible Bereitstellungsoptionen**: Formulare, die mit Kernkomponenten erstellt wurden, können sowohl in AEM als auch in Edge Delivery Services veröffentlicht werden, was Flexibilität bei Bereitstellungsstrategien bietet.
 
 ## Bevor Sie beginnen
 
 Bevor Sie mit dem Erstellen von Formularen in AEM und deren Veröffentlichung über Edge Delivery Services beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 * Stellen Sie sicher, dass Sie ein GitHub-Repository für Edge Delivery Services konfiguriert haben.
-   * Wenn Sie kein Repository haben, [neues AEM-Projekt mit dem adaptiven Forms-Block vorkonfiguriert](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
-   * Wenn Sie über ein Repository verfügen, fügen Sie den adaptiven Forms-Block zu Ihrem vorhandenen Repository hinzu. Detaillierte Anweisungen finden Sie unter [ Schritte mit Edge Delivery Services für AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
-* Herstellen einer Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository [Wie geht das?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
+   * Wenn Sie kein Repository haben, benötigen Sie ein [neues AEM-Projekt mit vorkonfiguriertem adaptiven Formularbaustein](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
+   * Wenn Sie über ein Repository verfügen, fügen Sie den adaptiven Formularbaustein zu Ihrem vorhandenen Repository hinzu. Detaillierte Anweisungen finden Sie unter [Erste Schritte mit Edge Delivery Services für AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+* Stellen Sie eine Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository her. [Wie wird sie hergestellt?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
 Ein Entscheidungsflussdiagramm, das die Einrichtung und Veröffentlichung von Adaptive Forms anleitet:
 
@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
 1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
-1. Wählen Sie auf der Registerkarte **0&rbrace;Source** eine **Edge Delivery Services-basierte Vorlage:**
+1. Wählen Sie auf der Registerkarte **0}Source** eine **Edge Delivery Services-basierte Vorlage:**
 
    ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
 
@@ -79,7 +79,6 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 
    1. Geben Sie den **Namen** und den **Titel** an.
    1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
-
       `https://github.com/wkndforms/edsforms`
 
    ![Assistent für die Formularerstellung](/help/edge/assets/create-form-wizard.png)
@@ -96,7 +95,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
 1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptive Formulare]**. Der Assistent wird geöffnet.
-1. Source Wählen Sie auf der Registerkarte **eine** Kernkomponentenbasierte Vorlage“ aus **und** Design **ist die Schaltfläche**&#x200B;[!UICONTROL &#x200B; Erstellen &#x200B;]&#x200B;**aktiviert:**
+1. Source Wählen Sie auf der Registerkarte **eine** Kernkomponentenbasierte Vorlage“ aus **und** Design **ist die Schaltfläche**[!UICONTROL  Erstellen ]**aktiviert:**
 
    ![Kernkomponentenbasierte Vorlage](/help/forms/assets/core-component-based-template.png)
 
