@@ -313,7 +313,7 @@ Um „Varianten generieren“ im Sidekick (von Edge Delivery Services) verwenden
 
 ### Zugriff über den universellen Editor von AEM {#access-aem-universal-editor}
 
-Der Zugriff über den universellen Editor {](/help/sites-cloud/authoring/universal-editor/authoring.md)} von AEM wird als Erweiterung implementiert.[
+Der Zugriff über den universellen Editor {[&#128279;](/help/sites-cloud/authoring/universal-editor/authoring.md)} von AEM wird als Erweiterung implementiert.
 
 * Weitere Informationen zum Zugriff auf das Generieren von Varianten im universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor“](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
 * Weitere Informationen zum Aktivieren der Erweiterung finden Sie im Dokument [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
