@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produk
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: ht
-source-wordcount: '2062'
-ht-degree: 100%
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -143,11 +143,10 @@ In der folgenden Tabelle wird eine Liste der möglichen Produktprofile unter ein
         <td>AEM Assets-Mitarbeiter-Benutzende</td>
         <td>
         <ul>
-                <li>Dient dem schreibgeschützten Zugriff auf das DAM. Benutzende in diesem Produktprofil sind Mitglieder der AEM-Gruppe „Mitwirkende“, die automatisch in AEM erstellt wird.
+                <li>mit Assets aus Experience Manager über Integrationen von Assets arbeiten, die für ihre Organisation in anderen Adobe-Produkten und Adobe-fremden Anwendungen verfügbar sind,
                 </li>
-                <li>
-                Es stellt außerdem die Adobe Express-Berechtigungen zum Erstellen von Asset-Varianten bereit.
-                </li>
+                <li>mit integriertem Adobe Express und Firefly Assets erstellen und bearbeiten, indem sie professionell entworfene Vorlagen, Marken-Kits, Adobe Stock-Assets usw. nutzen,</li>
+                <li>über das AEM Assets Content Hub-Portal auf genehmigte Assets in ihrer Organisation zugreifen und diese nutzen.</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ In der folgenden Tabelle wird eine Liste der möglichen Produktprofile unter ein
         <td>AEM Assets-Power-Benutzende</td>
 <td>
         <ul>
-                <li>Dient dem schreibgeschützten Zugriff auf das DAM. Benutzende in diesem Produktprofil sind Mitglieder der AEM-Gruppe „Mitwirkende“, die automatisch in AEM erstellt wird.
+                <li>auf alle AEM Assets-Funktionen zugreifen, einschließlich des Managements von Assets sowie Metadaten und der allgemeinen Governance und Automatisierung digitaler Assets,</li>
+                <li>mit Assets aus Experience Manager über Integrationen von Assets arbeiten, die für ihre Organisation in anderen Adobe-Produkten und Adobe-fremden Anwendungen verfügbar sind,
                 </li>
-                <li>
-                Es stellt außerdem die Adobe Express-Berechtigungen zum Erstellen von Asset-Varianten bereit.
-                </li>
+                <li>mit integriertem Adobe Express und Firefly Assets erstellen und bearbeiten, indem sie professionell entworfene Vorlagen, Marken-Kits, Adobe Stock-Assets usw. nutzen,</li>
+                <li>über das AEM Assets Content Hub-Portal auf genehmigte Assets in ihrer Organisation zugreifen und diese nutzen.</li>
           <ul>
 </td>
     </tr>
