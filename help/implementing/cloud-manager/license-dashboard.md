@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
+source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Häufig gestellte Fragen {#faq}
 
-+++**Was ist eine Inhaltsanfrage?**{#what-is-a-content-request}
+### Was ist eine Inhaltsanfrage?{#what-is-a-content-request}
 
 Bei einer Inhaltsanfrage handelt es sich um eine an AEM Sites oder ein von der Kundschaft bereitgestelltes Caching-System, wie z. B. ein Netzwerk zur Inhaltsbereitstellung. Sie ruft Inhalte oder Daten im HTML-Format für Seitenansichten ab. Oder im JSON-Format für API-Aufrufe.
 
@@ -109,29 +109,25 @@ Für jeden Seitenaufruf oder für jeweils fünf API-Aufrufe wird 1 Inhaltsanfrag
 Inhaltsanfragen schließen Anfragen oder Aktivitäten aus, die von oder für Adobe allein zum Zweck der Bereitstellung von Produkten und Dienstleistungen initiiert wurden. Auch der von Adobe identifizierte Benutzeragenten-Traffic von Bots, Crawlern und Spidern im Zusammenhang mit gängigen Suchmaschinen und Social-Media-Services ist ausgeschlossen.
 
 Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Wie misst Adobe Experience Manager Inhaltsanfragen?**{#how-are-content-requests-measured}
+### Wie misst Adobe Experience Manager Inhaltsanfragen?{#how-are-content-requests-measured}
 
 Inhaltsanfragen werden auf den Edge-Servern von AEM as a Cloud Service erfasst. Der Ursprungs-Traffic zählt nicht für Inhaltsanfragen. Das in AEM as a Cloud Service integrierte CDN verfolgt gültige HTML- und JSON-Anfragen.
 
 AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Services, die die Site regelmäßig besuchen, um ihren Suchindex oder -Service zu aktualisieren.
 
 Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Warum zeigt mein Analytics-Bericht andere Ergebnisse an als die AEM-Inhaltsanfragen?**{#why-are-reports-different}
+### Warum zeigt mein Analytics-Bericht andere Ergebnisse an als die AEM-Inhaltsanfragen?{#why-are-reports-different}
 
 Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools eines Unternehmens auf. Weitere Informationen finden Sie unter [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Was ist, wenn ich mehr über mein Inhaltsanfragevolumen erfahren möchte?**{#current-request-volumes}
+### Wie erfahre ich mehr über mein Inhaltsanfragevolumen?{#current-request-volumes}
 
 Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an den Adobe-Kunden-Support, um einen Bericht über die hauptsächliche Nutzung anzufordern.
-+++
 
-+++**Was passiert, wenn ich mein eigenes CDN verwende?**{#using-own-cdn}
+### Was passiert, wenn ich mein eigenes CDN verwende?{#using-own-cdn}
 
 Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden. Wenn Sie sich für das Mitbringen Ihres eigenen CDN (BYOCDN) entscheiden, melden Sie das in Ihrem Vertrag festgelegte Inhaltsanfragevolumen einmal jährlich an Adobe.
-+++
+
 
