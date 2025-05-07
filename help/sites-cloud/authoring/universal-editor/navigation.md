@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 96%
+source-wordcount: '1729'
+ht-degree: 92%
 
 ---
 
@@ -219,9 +219,9 @@ Beispielsweise ist über die Schaltfläche mit den Auslassungspunkten die Mögli
 
 Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Symbolleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
 
-* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie [ der Authoring-Dokumentation des universellen Editors](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
-* Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md).
-* Weitere Informationen zur Installation einer einzelnen Erweiterung finden Sie in der [Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie [ der Authoring-Dokumentation des universellen Editors](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors.](/help/implementing/universal-editor/extending.md)
+* Weitere Informationen zur Installation einer einzelnen Erweiterung finden Sie in der Dokumentation zu [Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### Der Editor {#editor}
 
@@ -236,6 +236,8 @@ Wenn sich der Editor im [Vorschaumodus](#preview-mode) befindet, können Sie dur
 Das Bedienfeld „Eigenschaften“ befindet sich immer auf der rechten Seite des Editors. Je nach Modus können Details zu einer im Inhalt ausgewählten Komponente oder aber die Hierarchie der Seiteninhalte angezeigt werden.
 
 ![Das Bedienfeld „Eigenschaften“](assets/properties-rail.png)
+
+Abhängig von der Konfiguration Ihres Programms kann es auch [zusätzliche Funktionen, die von Ihrem Administrator als Erweiterungen aktiviert wurden, enthalten.](#additional-properties-panel-buttons)
 
 #### Eigenschaftenmodus {#properties-mode}
 
@@ -315,12 +317,13 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 >
 >Verwenden Sie den Hotkey `Shift+Backspace`, um eine ausgewählte Komponente aus einem Container zu löschen.
 
-## Zusätzliche Funktionen {#additional-features}
+#### Zusätzliche Schaltflächen {#additional-properties-panel-buttons}
 
-Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn Sie im Bedienfeld „Eigenschaften“ oder auf der Symbolleiste weitere Schaltflächen oder Optionen finden, wurde Ihr universeller Editor erweitert.
+Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn Sie im Bedienfeld „Eigenschaften“ weitere Schaltflächen finden, wurde Ihr universeller Editor erweitert.
 
-* Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Anpassen und Erweitern des universellen Editors](/help/implementing/universal-editor/customizing.md).
-* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie [ der Authoring-Dokumentation des universellen Editors](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors.](/help/implementing/universal-editor/extending.md)
+* Weitere Informationen zur Installation einer einzelnen Erweiterung finden Sie in der Dokumentation zu [Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## Nächste Schritte {#next-steps}
 

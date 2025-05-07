@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 17%
+source-wordcount: '559'
+ht-degree: 16%
 
 ---
 
@@ -29,6 +29,7 @@ Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen
 * **[AEM Page Lock Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: Anzeigen und Ändern des Seitensperrstatus im universellen Editor
 * **[AEM Workflows-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Starten Sie Workflows auf der Seite und Seiteninhalte über den universellen Editor
 * **[AEM Universal Editor Dev Login-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Einfache Authentifizierung bei Ihrer lokalen AEM SDK bei der lokalen Entwicklung
+* **[Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md)**: Verwenden Sie generative künstliche Intelligenz (KI), um Varianten für Ihre Inhalte direkt im Eigenschaftenbereich zu erstellen.
 * **[AEM-Produktauswahl für universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrieren Sie Adobe Commerce-Daten, indem Sie Produktdaten aus dem Editor auswählen oder daraus entfernen.
 * **[Inhaltsentwürfe im universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Erstellen, Bearbeiten und Verwalten mehrerer Inhaltsentwürfe.
 * **[Konfigurierbare Asset-Auswahl](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: Aktivieren Sie die Asset-Auswahl aus anderen Repositorys als dem, der von der bearbeiteten Seite verwendet wird.
