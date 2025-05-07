@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
+source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 88%
+source-wordcount: '1595'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 >[!NOTE]
 >
->Cloud Manager gibt keine bestimmte Version des `jacoco-maven-plugin` an, aber die erforderliche Version hängt von der Java-Version des Projekts ab. Für Java 8 muss die Plug-in-Version mindestens `0.7.5.201505241946` sein, während neuere Java-Versionen möglicherweise eine neuere Version erfordern.
+>Cloud Manager gibt keine bestimmte Version des `jacoco-maven-plugin` an, aber die erforderliche Version hängt von der Java-Version des Projekts ab. Für Java 8 muss die Plug-in-Version mindestens `0.7.5.201505241946` sein, während neuere Java-Versionen möglicherweise eine noch neuere Version erfordern.
 
 ## HTTPS-Maven-Repositorys {#https-maven}
 
@@ -84,15 +84,15 @@ Erstellen Sie zum Festlegen der JDK-Version zur Maven-Ausführung eine Datei mit
 
 #### Voraussetzungen für die Migration zur Build-Erstellung mit Java 21 oder Java 17 {#prereq-for-building}
 
-Um zur Build-Erstellung mit Java 21 oder Java 17 zu migrieren, müssen Sie zunächst ein Upgrade auf die neueste SonarQube-Version durchführen. Weitere Details finden Sie in den [Versionshinweisen für Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/current.md#what-is-new).
+Zum Erstellen mit Java 21 oder Java 17 verwendet Cloud Manager jetzt SonarQube 9.9, das mit diesen Java-Versionen kompatibel ist. Diese Änderung wurde mit Cloud Manager Version 2025.1.0 eingeführt. Für ein Upgrade von SonarQube ist keine Kundenaktion erforderlich. Weitere Informationen und Informationen zur Änderung finden Sie unter [Versionshinweise für Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
 Wenn Sie Ihre Anwendung auf eine neue Java-Build- und Runtime-Version migrieren, testen Sie sie gründlich in Entwicklungs- und Staging-Umgebungen, bevor Sie sie in der Produktion bereitstellen.
 
 Adobe empfiehlt die folgende Bereitstellungsstrategie:
 
-1. Führen Sie Ihr lokales SDK mit Java 21 aus, das Sie unter https://experience.adobe.com/#/downloads herunterladen können, stellen Sie Ihre Anwendung dafür bereit und überprüfen Sie die Funktionalität. Überprüfen Sie die Protokolle auf Fehler, die auf Probleme beim Laden von Klassen oder beim Weben von Bytcodes hinweisen.
-1. Konfigurieren Sie eine Verzweigung im Cloud Manager-Repository für die Verwendung von Java 21 als Java-Version für die Build-Zeit, konfigurieren Sie eine DEV-Pipeline für die Verwendung dieser Verzweigung und führen Sie die Pipeline aus. Führen Sie Validierungstests durch.
-1. Wenn alles gut aussieht, konfigurieren Sie Ihre Staging-/Produktions-Pipeline so, dass Java 21 als Java-Version für die Build-Zeit verwendet wird, und führen Sie die Pipeline aus.
+1. Führen Sie Ihr lokales SDK mit Java 21 aus, das Sie unter https://experience.adobe.com/#/downloads herunterladen können, stellen Sie Ihre Anwendung dafür bereit und überprüfen Sie die Funktionalität. Überprüfen Sie die Protokolle auf Fehler, die auf Probleme beim Laden von Klassen oder Bytecode-Weaving hinweisen.
+1. Konfigurieren Sie eine Verzweigung im Cloud Manager-Repository so, dass Java 21 als Java-Version zur Build-Zeit verwendet wird. Konfigurieren Sie eine DEV-Pipeline für die Verwendung dieser Verzweigung und führen Sie die Pipeline aus. Führen Sie Validierungstests durch.
+1. Wenn alles gut aussieht, konfigurieren Sie Ihre Staging-/Produktions-Pipeline so, dass Java 21 als Java-Version zur Build-Zeit verwendet wird, und führen Sie die Pipeline aus.
 
 ##### Über bestimmte Übersetzungsfunktionen {#translation-features}
 
@@ -103,12 +103,12 @@ Die folgenden Funktionen funktionieren möglicherweise nicht ordnungsgemäß, we
 
 #### Laufzeitanforderungen {#runtime-requirements}
 
-Die Java 21-Laufzeitumgebung wird für Builds mit Java 21 und Java 17 verwendet und nach und nach auch auf Java 11-Builds angewendet (siehe Hinweis unten). Eine Umgebung muss auf AEM Version 17098 oder neuer ausgeführt werden, um das Java 21-Update zu erhalten. Zur Sicherstellung der Kompatibilität sind die folgenden Anpassungen erforderlich.
+Die Java 21-Laufzeit wird für Builds mit Java 21 und Java 17 verwendet und auch auf Java 11-Builds schrittweise angewendet (siehe Hinweis unten). Eine Umgebung muss auf AEM Version 17098 oder neuer ausgeführt werden, um das Java 21-Update zu erhalten. Zur Sicherstellung der Kompatibilität sind die folgenden Anpassungen erforderlich.
 
 Bibliotheksaktualisierungen können jederzeit angewendet werden, da sie mit älteren Java-Versionen kompatibel bleiben.
 
 * **Mindestversion von ASM:**
-Aktualisieren Sie die Verwendung des Java-Pakets`org.objectweb.asm`, das häufig in `org.ow2.asm.*` Artefakten gebündelt ist, auf Version 9.5 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
+Aktualisieren Sie die Verwendung des Java-Pakets`org.objectweb.asm`, das häufig in Artefakten vom Typ `org.ow2.asm.*` gebündelt ist, auf Version 9.5 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
 
 * **Mindestversion von Groovy:**
 Aktualisieren Sie die Verwendung der Java-Pakete `org.apache.groovy` oder `org.codehaus.groovy` auf Version 4.0.22 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
@@ -118,7 +118,7 @@ Aktualisieren Sie die Verwendung der Java-Pakete `org.apache.groovy` oder `org.c
 * **Mindestversion von Aries SPIFly:**
 Aktualisieren Sie die Verwendung des Java-Pakets `org.apache.aries.spifly.dynamic.bundle` auf Version 1.3.6 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
 
-Die AEM Cloud Service-SDK unterstützt Java 21 und ermöglicht es Ihnen, die Kompatibilität Ihres Projekts mit Java 21 zu überprüfen, bevor Sie eine Cloud Manager-Pipeline ausführen.
+Das AEM Cloud Service SDK unterstützt Java 21 und ermöglicht es, die Kompatibilität Ihres Projekts mit Java 21 zu überprüfen, bevor eine Cloud Manager-Pipeline ausgeführt wird.
 
 * **Laufzeitparameter bearbeiten:**
 Beim lokalen Ausführen von AEM mit Java 21 schlagen die Startskripte (`crx-quickstart/bin/start` oder `crx-quickstart/bin/start.bat`) aufgrund des Parameters `MaxPermSize` fehl. Entfernen Sie als Abhilfe entweder `-XX:MaxPermSize=256M` aus dem Skript oder definieren Sie die Umgebungsvariable `CQ_JVM_OPTS`, indem Sie sie auf `-Xmx1024m -Djava.awt.headless=true` setzen.
@@ -127,7 +127,7 @@ Beim lokalen Ausführen von AEM mit Java 21 schlagen die Startskripte (`crx-quic
 
 >[!IMPORTANT]
 >
->Wenn `.cloudmanager/java-version` auf `21` oder `17` festgelegt ist, wird die Java 21-Laufzeitumgebung bereitgestellt. Die Java 21-Laufzeitumgebung wird seit Dienstag, dem 4. Februar 2025, schrittweise für alle Umgebungen (nicht nur für die Umgebungen, deren Code mit Java 11 erstellt wurde) bereitgestellt. Die Rollouts beginnen mit Sandboxes und Entwicklungsumgebungen, gefolgt von allen Produktionsumgebungen im April 2025. Kundinnen und Kunden, die die Java 21-Laufzeitumgebung *früher* übernehmen möchten, können sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe wenden.
+>Wenn `.cloudmanager/java-version` auf `21` oder `17` festgelegt ist, wird die Java 21-Laufzeitumgebung bereitgestellt. Die Java 21-Laufzeitumgebung wird seit Dienstag, dem 4. Februar 2025, schrittweise für alle Umgebungen (nicht nur für die Umgebungen, deren Code mit Java 11 erstellt wurde) bereitgestellt. Die Rollouts erfolgen zunächst für Sandboxes und Entwicklungsumgebungen und werden im April 2025 auf alle Produktionsumgebungen ausgeweitet. Kundinnen und Kunden, die die Java 21-Laufzeitumgebung *früher* übernehmen möchten, können sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe wenden.
 
 
 #### Anforderungen zur Build-Zeit: {#build-time-reqs}
