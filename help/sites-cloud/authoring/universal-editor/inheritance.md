@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 82%
 
 ---
 
@@ -44,17 +44,25 @@ Wenn eine Seite Teil des MSM oder eines Launches ist und Inhalte mit dem univers
 
 Die Autorin oder der Autor muss zum Deaktivieren der Vererbung nicht erst auf eine Schaltfläche klicken oder andere Schritte unternehmen, bevor sie oder er lokale Bearbeitungen vornimmt. Sobald eine Änderung vorgenommen wurde, wird die Vererbung implizit abgebrochen. Dieser Workflow steht im Gegensatz zum [Seiteneditor](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
+Die Vererbung kann für die gesamte Seite über Folgendes rückgängig gemacht werden:
+
+* [Konsole „Live Copy-Übersicht“](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [Launch-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* Verwenden Sie die Schaltfläche **Zurücksetzen** auf der Registerkarte **Live Copy** des [Fensters „Seiteneigenschaften“](/help/sites-cloud/authoring/sites-console/page-properties.md).
+
 Der universelle Editor wirkt sich nicht auf den zugrundeliegenden Mechanismus der Vererbung aus. Weitere Informationen zur Funktionsweise der Vererbung finden Sie in der folgenden Dokumentation.
 
 * [Multi-Site-Management (MSM)](/help/sites-cloud/administering/msm/overview.md)
 * [Launches](/help/sites-cloud/authoring/launches/overview.md)
 
+### AEM-Erweiterung für Multi-Site-Management (MSM) {#msm-extension}
+
+Sofern installiert, zeigt die Erweiterung **AEM Multi-Site-Management (MSM)** den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die Vererbung auf Komponentenebene zu unterbrechen oder wiederherzustellen.
+
+Weitere Informationen finden Sie in [ Dokumentation zur Bearbeitung ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
 ## Einschränkungen {#limitations}
 
-* Autorinnen und Autoren können die Vererbung für einzelne Komponenten nicht zurücksetzen.
-   * Die Rücksetzung der Vererbung ist nur für die gesamte Seite möglich, und zwar über die
-      * [Konsole „Live Copy-Übersicht“](/help/sites-cloud/administering/msm/live-copy-overview.md)
-      * [Launch-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Verwenden Sie die Schaltfläche **Zurücksetzen** auf der Registerkarte **Live Copy** des [Fensters „Seiteneigenschaften“](/help/sites-cloud/authoring/sites-console/page-properties.md).
-* Autorinnen und Autoren verfügen über kein visuelles Feedback, um zu sehen, für welche Komponenten ihre Vererbung deaktiviert ist und für welche sie weiterhin beibehalten wird.
+* Um die Vererbung für Einzelkomponenten rückgängig zu machen, muss die Erweiterung für die **AEM-Verwaltung mehrerer Websites (**) aktiviert sein.
+* Um mit visuellem Feedback zu ermitteln, für welche Komponenten die Vererbung deaktiviert ist und für welche die Vererbung weiterhin beibehalten wird, muss die Erweiterung für die **AEM-** (MSM) aktiviert sein.
 * Diese Funktionen sind derzeit auf Komponenten auf Seiten beschränkt und gelten noch nicht für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md), obwohl diese ebenfalls MSM- und Launch-Funktionen aufweisen.

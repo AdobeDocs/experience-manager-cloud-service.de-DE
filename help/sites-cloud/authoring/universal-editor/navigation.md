@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 97%
+source-wordcount: '1698'
+ht-degree: 96%
 
 ---
 
@@ -69,7 +69,7 @@ Die Benutzeroberfläche ist in diese Hauptbereiche unterteilt.
 
 >[!TIP]
 >
->Der universelle Editor bietet eine Reihe von [Anpassungsoptionen](/help/implementing/universal-editor/customizing.md) und [Erweiterungspunkten](/help/implementing/universal-editor/extending.md) die die Funktionalität des Editors ändern und erweitern können. Aus diesem Grund werden möglicherweise andere Optionen angezeigt als die hier dokumentierten Standardoptionen.
+>Der universelle Editor bietet eine Reihe von [Anpassungsoptionen](/help/implementing/universal-editor/customizing.md) und [Erweiterungspunkten](/help/implementing/universal-editor/extending.md), die die Funktionalität des Editors ändern und erweitern können. Aus diesem Grund werden möglicherweise andere Optionen angezeigt als die hier dokumentierten Standardoptionen.
 
 ### Die Kopfzeile von Experience Cloud {#experience-cloud-header}
 
@@ -116,6 +116,8 @@ Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre
 ### Die Symbolleiste des universellen Editors {#universal-editor-toolbar}
 
 Die Symbolleiste des universellen Editors befindet sich immer oben im Bildschirm, direkt unter der [Kopfzeile von Experience Cloud](#experience-cloud-header). Dadurch erhalten Sie schnellen Zugriff auf eine andere Seite zum Bearbeiten und Veröffentlichen der aktuellen Seite.
+
+Abhängig von der Konfiguration Ihres Programms kann es auch [zusätzliche Funktionen, die von Ihrem Administrator als Erweiterungen aktiviert wurden, enthalten.](#additional-toolbar-buttons)
 
 ![Die Symbolleiste des universellen Editors](assets/universal-editor-toolbar.png)
 
@@ -217,8 +219,9 @@ Beispielsweise ist über die Schaltfläche mit den Auslassungspunkten die Mögli
 
 Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Symbolleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
 
+* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie [ der Authoring-Dokumentation des universellen Editors](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
 * Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md).
-* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Weitere Informationen zur Installation einer einzelnen Erweiterung finden Sie in der [Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### Der Editor {#editor}
 

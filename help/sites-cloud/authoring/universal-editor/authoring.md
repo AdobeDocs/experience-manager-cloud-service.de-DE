@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
-workflow-type: ht
-source-wordcount: '1395'
-ht-degree: 100%
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+workflow-type: tm+mt
+source-wordcount: '2133'
+ht-degree: 65%
 
 ---
 
@@ -192,6 +192,122 @@ Wenn Sie mit der Bearbeitung von Inhalten fertig sind, möchten Sie häufig durc
 
 Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die gleiche Reaktion erfolgt, wie es bei einer Person, die den Inhalt liest, der Fall wäre. Wenn Sie den Inhalt zum Bearbeiten auswählen möchten, verlassen Sie in den [Vorschaumodus](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
+## Bearbeiten der Komponentenvererbung {#inheritance}
+
+Vererbung ist der Mechanismus, durch den Inhalte so verknüpft werden können, dass Inhaltsänderungen automatisch übernommen werden. 
+
+Mit dem universellen Editor können Sie die Vererbung für Inhalte abbrechen, indem Sie den Inhalt einfach aktualisieren. Der Editor deaktiviert automatisch die Vererbung für alle Änderungen, die von Autorinnen und Autoren auf dieser Seite vorgenommen werden. Dadurch wird sichergestellt, dass geänderte Inhalte beibehalten werden, wenn Aktualisierungen aus dem Blueprint synchronisiert werden.
+
+Wenn die Erweiterung **AEM Multi-Site-Management (MSM)** für Ihr Programm aktiviert ist, verfügen Sie über [zusätzliche Symbolleistenoptionen](#inheritance-extension) um den Vererbungsstatus einer einzelnen Komponente im universellen Editor anzuzeigen und zu ändern.
+
+Weitere Informationen zur Funktionsweise der Vererbung mit dem universellen Editor finden Sie im Dokument [Vererbung von Inhalten im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+
+
+## Optionale Symbolleistenoptionen{#toolbar-options}
+
+Zusätzliche Funktionen sind als Erweiterungen des universellen Editors verfügbar, die Sie bei der weiteren Verwaltung Ihrer Seiten und Inhalte unterstützen. [Diese Erweiterungen müssen in Ihrem Programm von einem Administrator aktiviert werden](/help/implementing/universal-editor/extending.md) bevor sie für Sie als Inhaltsautor in der Symbolleiste [ universellen Editors sichtbar sind.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+### Vererbung {#inheritance-extension}
+
+Die Erweiterung **AEM Multi-Site-Management (MSM** zeigt den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die Vererbung zu [ oder wiederherzustellen.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+Das Symbol **Vererbung installiert** in der Symbolleiste des universellen Editors zeigt an, dass die Vererbung für die ausgewählte Komponente weiterhin aktiv ist.
+
+![Symbol „Vererbung installiert“](assets/inheritance-installed-icon.png)
+
+Tippen oder klicken Sie auf das Symbol, um die Vererbung für die ausgewählte Komponente aufzuheben. Die Vererbung wird automatisch unterbrochen, wenn Sie die Komponente bearbeiten.
+
+Das Symbol **Vererbung unterbrochen** zeigt an, dass die Vererbung für die ausgewählte Komponente unterbrochen wurde.
+
+![Symbol „Beschädigte Vererbung“](assets/inheritance-broken-icon.png)
+
+Tippen oder klicken Sie auf das Symbol , um die Vererbung für die ausgewählte Komponente wieder zu aktivieren. Sie müssen die Seite neu laden, um den Inhalt zu aktualisieren und die übernommenen Inhalte anzuzeigen.
+
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>Die Symbole **Installierte Vererbung** und **Beschädigte Vererbung** werden nur angezeigt, wenn eine Komponente ausgewählt wurde und die Seite auf einer Blueprint basiert.
+
+>[!NOTE]
+>
+>Die Erweiterung **AEM Multi-Site-Management (MSM** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+
+### Zugreifen auf Seiteneigenschaften {#page-properties}
+
+Die Erweiterung **AEM** Seiteneigenschaften ermöglicht den schnellen Zugriff auf das Fenster [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) für die aktuell bearbeitete Seite.
+
+![Symbol „Seiteneigenschaften“](assets/page-properties-icon.png)
+
+Tippen oder klicken Sie auf das Symbol **Seiteneigenschaften** in der Symbolleiste des universellen Editors, um die Seiteneigenschaften für die Seite in einer neuen Browser-Registerkarte zu öffnen.
+
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>Die Erweiterung der **AEM** Seiteneigenschaften funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+
+### Zugriff auf die Sites-Konsole {#sites-console}
+
+Die **AEM Site Admin-Erweiterung** ermöglicht den schnellen Zugriff auf die Seite, die in der [Sites-Konsole von AEM bearbeitet wird, ](/help/sites-cloud/authoring/sites-console/introduction.md) ermöglicht Ihnen die Navigation in der Site-Baumstruktur oder das Ausführen von Aktionen auf Seitenebene in der Konsole.
+
+![In Site Admin-Symbol öffnen](assets/open-in-site-admin-icon.png)
+
+Tippen oder klicken Sie auf das Symbol , um die Sites-Konsole in einer neuen Browser-Registerkarte zu öffnen, und navigieren Sie zur Seite, die sich derzeit im Editor befindet.
+
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Sperren und Entsperren von Seiten {#locking-pages}
+
+Die **AEM-Seitensperrerweiterung** zeigt den aktuellen Sperrstatus der Seite im Editor an und ermöglicht es Ihnen, die Seite zu [ oder zu entsperren.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+Das Symbol **Entsperrt** in der Symbolleiste des universellen Editors zeigt an, dass die aktuell im Editor befindliche Seite nicht gesperrt ist.
+
+![Symbol „Entsperrt“](assets/unlocked-icon.png)
+
+Tippen oder klicken Sie auf das Symbol, um die Seite zu sperren.
+
+Das Symbol **Gesperrt** in der Symbolleiste des universellen Editors zeigt an, dass die aktuell im Editor befindliche Seite gesperrt ist. Zeigen Sie mit der Maus auf das Symbol für eine QuickInfo, die den Benutzer angibt, der die Seite gesperrt hat.
+
+![Sperrsymbol](assets/locked-icon.png)
+
+Tippen oder klicken Sie auf das Symbol, um die Seite zu entsperren, wenn Sie der Benutzer sind, der sie gesperrt hat.
+
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>Die **AEM Page Lock-Erweiterung** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+
+### Workflows {#workflows}
+
+Mit der Erweiterung **AEM Workflows** können Sie [einen Workflow starten](/help/sites-cloud/authoring/workflows/overview.md) auf der Seite, die sich derzeit im Editor befindet.
+
+![Workflows-Symbol](assets/workflows-icon.png)
+
+Tippen oder klicken Sie auf das Symbol **Workflows** in der Symbolleiste des universellen Editors, um das Modal **Workflow starten** zu öffnen. Im Fenster werden die möglichen Inhalte aufgelistet, auf die Sie einen Workflow anwenden können.
+
+![Workflow-Modal starten](assets/start-a-workflow.png)
+
+1. Wählen Sie in **Dropdown-Liste** Workflow-Modell“ den anzuwendenden Workflow aus.
+1. Geben Sie eine Beschreibung für den Workflow im Feld **Name** an.
+1. Aktivieren Sie in **Liste „In Workflow einzuschließender Inhalt** die Kontrollkästchen, um festzulegen, welche Inhalte in den Workflow aufgenommen werden sollen.
+1. Tippen oder klicken Sie auf **Workflow starten**, um den Workflow zu starten, oder **Schließen**, um ihn abzubrechen.
+
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Developer Login {#developer-login}
+
+Die **AEM Universal Editor Dev Login Extension** ist für Entwicklerinnen und Entwickler nützlich, die lokal entwickeln, und ermöglicht eine praktische Methode zur Authentifizierung bei einer lokalen AEM SDK zu Testzwecken.
+
+![Entwickleranmeldesymbol](assets/developer-login-icon.png)
+
+Tippen oder klicken Sie auf das Symbol **Entwickleranmeldung** in der Symbolleiste des universellen Editors, um Ihre lokalen Anmeldedaten für die Anmeldung bei Ihrem lokalen AEM SDK anzugeben.
+
+![Modal zur Entwickleranmeldung](assets/developer-login.png)
+
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+
 ## Zusätzliche Ressourcen {#additional-resources}
 
 Informationen zum Veröffentlichen von Inhalten mit dem universellen Editor finden Sie in diesem Dokument.
@@ -205,11 +321,3 @@ Weitere Informationen zu den technischen Details zum universellen Editor finden 
 * [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](/help/implementing/universal-editor/attributes-types.md) – Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
 * [Authentifizierung beim universellen Editor](/help/implementing/universal-editor/authentication.md) – Erfahren Sie, wie beim universellen Editor authentifiziert wird.
-
-## Bearbeiten der Komponentenvererbung {#inheritance}
-
-Vererbung ist der Mechanismus, durch den Inhalte so verknüpft werden können, dass Inhaltsänderungen automatisch übernommen werden. 
-
-Mit dem universellen Editor können Sie die Vererbung für Inhalte abbrechen, indem Sie den Inhalt einfach aktualisieren. Der Editor deaktiviert automatisch die Vererbung für alle Änderungen, die von Autorinnen und Autoren auf dieser Seite vorgenommen werden. Dadurch wird sichergestellt, dass geänderte Inhalte beibehalten werden, wenn Aktualisierungen aus dem Blueprint synchronisiert werden.
-
-Weitere Informationen zur Funktionsweise der Vererbung mit dem universellen Editor finden Sie im Dokument [Vererbung von Inhalten im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).

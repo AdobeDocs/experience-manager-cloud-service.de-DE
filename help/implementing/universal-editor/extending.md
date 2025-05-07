@@ -3,13 +3,13 @@ title: Erweitern des universellen Editors
 description: Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung der Funktionen des universellen Editors, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0cab4a807be4aa402667feddb6a948f0d2db371f
+exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
+source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 6%
+source-wordcount: '541'
+ht-degree: 17%
 
 ---
-
 
 # Erweitern des universellen Editors {#extending}
 
@@ -23,6 +23,12 @@ Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung der Funktione
 
 Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mithilfe von App Builder und Experience Manager erweitert werden. Adobe bietet viele vorgefertigte Erweiterungen, die Sie für Ihr Projekt verwenden können.
 
+* **[Erweiterung für AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Unterbrechen oder reaktivieren Sie die Vererbung auf Komponentenebene
+* **[Erweiterung der AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)** Seiteneigenschaften: Rufen Sie das Seiteneigenschaftsfenster der Seite im universellen Editor auf
+* **[AEM Site Admin-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Öffnen Sie die Sites-Konsole zum Speicherort der Seite im universellen Editor
+* **[AEM Page Lock Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: Anzeigen und Ändern des Seitensperrstatus im universellen Editor
+* **[AEM Workflows-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Starten Sie Workflows auf der Seite und Seiteninhalte über den universellen Editor
+* **[AEM Universal Editor Dev Login-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Einfache Authentifizierung bei Ihrer lokalen AEM SDK bei der lokalen Entwicklung
 * **[AEM-Produktauswahl für universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrieren Sie Adobe Commerce-Daten, indem Sie Produktdaten aus dem Editor auswählen oder daraus entfernen.
 * **[Inhaltsentwürfe im universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Erstellen, Bearbeiten und Verwalten mehrerer Inhaltsentwürfe.
 * **[Konfigurierbare Asset-Auswahl](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: Aktivieren Sie die Asset-Auswahl aus anderen Repositorys als dem, der von der bearbeiteten Seite verwendet wird.
@@ -42,9 +48,9 @@ Wenn Sie die Möglichkeiten zum Erstellen Ihrer eigenen Erweiterungen erkunden m
 
 >[!TIP]
 >
->Wenn Sie es vorziehen, anhand von Beispielen zu lernen, lesen Sie bitte das [Tutorial zur Erweiterbarkeit der AEM-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Obwohl sie sich auf die Erweiterung der Inhaltsfragmentkonsole konzentriert, sind die Konzepte zur Implementierung einer Benutzeroberflächenerweiterung im universellen Editor dieselben.
+>Wenn Sie es vorziehen, anhand von Beispielen zu lernen, sehen Sie sich das [Tutorial zur Erweiterbarkeit der AEM-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) an. Obwohl der Fokus des Tutorials auf der Erweiterung der Inhaltsfragmentkonsole liegt, ist das Konzept zur Implementierung einer Benutzeroberflächenerweiterung im universellen Editor identisch.
 
-[Mit Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/) können Sie Ihre Erweiterungen für jede Instanz aktivieren oder deaktivieren, auf die First-Party-Erweiterungen von Adobe zugreifen, einschließlich der Erweiterungen für den universellen Editor, und vieles mehr.
+Mit dem [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/) können Sie Ihre Erweiterungen auf Instanzbasis aktivieren oder deaktivieren, auf Erweiterungen von Adobe zugreifen, einschließlich der Erweiterungen für den universellen Editor, und vieles mehr.
 
 ## Erweiterungspunkte {#extension-points}
 
