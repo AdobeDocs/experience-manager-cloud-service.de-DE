@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 82%
+source-wordcount: '549'
+ht-degree: 79%
 
 ---
 
@@ -59,7 +59,9 @@ Der universelle Editor wirkt sich nicht auf den zugrundeliegenden Mechanismus de
 
 Sofern installiert, zeigt die Erweiterung **AEM Multi-Site-Management (MSM)** den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die Vererbung auf Komponentenebene zu unterbrechen oder wiederherzustellen.
 
-Weitere Informationen finden Sie in [ Dokumentation zur Bearbeitung ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+Weitere Informationen zur Verwendung [ Erweiterung finden Sie in der Authoring-Dokumentation ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Einschränkungen {#limitations}
 

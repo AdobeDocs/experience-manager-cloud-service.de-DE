@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 61%
@@ -214,7 +214,7 @@ Das Symbol **Vererbung unterbrochen** zeigt an, dass die Vererbung für die ausg
 
 Tippen oder klicken Sie auf das Symbol , um die Vererbung für die ausgewählte Komponente wieder zu aktivieren. Sie müssen die Seite neu laden, um den Inhalt zu aktualisieren und die übernommenen Inhalte anzuzeigen.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ Die Erweiterung **AEM** Seiteneigenschaften ermöglicht den schnellen Zugriff au
 
 Tippen oder klicken Sie auf das Symbol **Seiteneigenschaften** in der Symbolleiste des universellen Editors, um die Seiteneigenschaften für die Seite in einer neuen Browser-Registerkarte zu öffnen.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Die **AEM Site Admin-Erweiterung** ermöglicht den schnellen Zugriff auf die Sei
 
 Tippen oder klicken Sie auf das Symbol , um die Sites-Konsole in einer neuen Browser-Registerkarte zu öffnen, und navigieren Sie zur Seite, die sich derzeit im Editor befindet.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Sperren und Entsperren von Seiten {#locking-pages}
 
@@ -264,7 +264,7 @@ Das Symbol **Gesperrt** in der Symbolleiste des universellen Editors zeigt an, d
 
 Tippen oder klicken Sie auf das Symbol, um die Seite zu entsperren, wenn Sie der Benutzer sind, der sie gesperrt hat.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Tippen oder klicken Sie auf das Symbol **Workflows** in der Symbolleiste des uni
 1. Aktivieren Sie in **Liste „In Workflow einzuschließender Inhalt** die Kontrollkästchen, um festzulegen, welche Inhalte in den Workflow aufgenommen werden sollen.
 1. Tippen oder klicken Sie auf **Workflow starten**, um den Workflow zu starten, oder **Schließen**, um ihn abzubrechen.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Developer Login {#developer-login}
 
@@ -297,7 +297,7 @@ Tippen oder klicken Sie auf das Symbol **Entwickleranmeldung** in der Symbolleis
 
 ![Modal zur Entwickleranmeldung](assets/developer-login.png)
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Optionale Funktionen des Bedienfelds „Eigenschaften“ {#properties-panel-options}
 
@@ -311,7 +311,7 @@ Mit **Erweiterung „Varianten**&quot; können Sie generative künstliche Intell
 
 Tippen oder klicken Sie im Bedienfeld Eigenschaften des universellen Editors auf **Varianten erstellen**, um Empfehlungen zu erhalten und Varianten zu erstellen. Weitere Informationen zur Funktionsweise [ Generierung von Varianten finden Sie im Dokument ](/help/generative-ai/generate-variations-integrated-editor.md)Generieren von Varianten - integriert in AEM-Editoren“.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/)
+Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

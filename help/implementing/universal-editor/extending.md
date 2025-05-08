@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 16%
 
 ---
@@ -21,7 +21,7 @@ Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung der Funktione
 
 ## Erweiterungen {#extensions}
 
-Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mithilfe von App Builder und Experience Manager erweitert werden. Adobe bietet viele vorgefertigte Erweiterungen, die Sie für Ihr Projekt verwenden können.
+Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mithilfe von App Builder und Experience Manager erweitert werden. Adobe bietet viele vorgefertigte Erweiterungen, die über die [Extension Manager](https://experience.adobe.com/aem/extension-manager) verfügbar sind und die Sie für Ihr Projekt verwenden können.
 
 * **[Erweiterung für AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Unterbrechen oder reaktivieren Sie die Vererbung auf Komponentenebene
 * **[Erweiterung der AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)** Seiteneigenschaften: Rufen Sie das Seiteneigenschaftsfenster der Seite im universellen Editor auf
@@ -36,6 +36,8 @@ Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen
 * **Forms-Regeleditor**: Dynamisches Verhalten visuell, ohne Kodierung, zu AEM Forms-Feldern hinzufügen.
 * **[Exportieren von Inhaltsfragmenten nach Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: Exportieren Sie Inhaltsfragmente, die in Adobe Experience Manager as a Cloud Service erstellt wurden, nach Adobe Target, um sie als Angebote in Target-Aktivitäten zu verwenden und skaliert zu testen und zu personalisieren.
 * **[Inhaltsfragment-Workflows](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: Starten eines AEM-Workflows für ausgewählte Inhaltsfragmente.
+
+Informationen zum Aktivieren dieser Erweiterungen finden [ in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Erweitern der Benutzeroberfläche {#extending-ui}
 
