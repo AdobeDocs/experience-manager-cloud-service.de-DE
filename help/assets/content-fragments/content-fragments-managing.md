@@ -6,9 +6,9 @@ feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
 source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1925'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,15 +39,15 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >
 >Inhaltsfragmente sind eine **Sites**-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden hauptsächlich mit der Konsole **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die Konsole **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** verwaltet werden.
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**-Konsole verwaltet werden. 
 >
->Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten - den neuen Editor und den ursprünglichen Editor. Der neue Editor ist der Standard. Obwohl die grundlegenden Funktionen identisch sind, gibt es einige Unterschiede.
+>Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten – den neuen Editor und den ursprünglichen Editor. Der neue Editor ist die Standardeinstellung. Obwohl die grundlegenden Funktionen identisch sind, gibt es einige Unterschiede.
 >
 >In diesem Abschnitt wird der ursprüngliche Editor behandelt.
 >
->Der Standard-Editor für [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) ist der neue Editor, auf den sowohl über die **Inhaltsfragmente“-** als auch über die **Assets**-Konsole zugegriffen wird. Weitere Informationen zum neuen Editor finden [ in der Sites](/help/sites-cloud/administering/content-fragments/authoring.md)Dokumentation „Inhaltsfragmente - Authoring“.
+>Der Standard-Editor für [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) ist der neue Editor, auf den sowohl über die **Inhaltsfragmente-** als auch über die **Assets**-Konsole zugegriffen werden kann. Weitere Informationen zum neuen Editor finden Sie in der Sites-Dokumentation unter [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 >
->Um den [Original-Editor](/help/assets/content-fragments/content-fragments-variations.md) zu verwenden, öffnen Sie zunächst den neuen Editor und deaktivieren Sie dann den Umschalter **Neuer Editor**.
+>Um den [ursprünglichen Editor](/help/assets/content-fragments/content-fragments-variations.md) zu verwenden, öffnen Sie zunächst den neuen Editor und deaktivieren Sie dann den Schalter **Neuer Editor**.
 >
 >Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
@@ -140,7 +140,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
-So öffnen Sie ein Fragment zur Bearbeitung im Original-Editor:
+Öffnen eines Fragments zur Bearbeitung im ursprünglichen Editor
 
 >[!CAUTION]
 >
@@ -148,15 +148,15 @@ So öffnen Sie ein Fragment zur Bearbeitung im Original-Editor:
 
 1. Navigieren Sie zum Speicherort des Inhaltsfragments.
 
-1. Öffnen Sie das Fragment zur Bearbeitung.
+1. Öffnen Sie das Fragment zur Bearbeitung. 
 
-1. Das Fragment wird im neuen Editor geöffnet. Deaktivieren Sie den **Neuer Editor** Schalter (oben rechts), um den ursprünglichen Editor zu öffnen:
+1. Das Fragment wird im neuen Editor geöffnet. Deaktivieren Sie den Schalter **Neuer Editor** (oben rechts), um den ursprünglichen Editor zu öffnen:
 
    ![Fragmenteditor](assets/cfm-managing-03.png)
 
-1. Nehmen Sie die erforderlichen Änderungen vor.
+1. Nehmen Sie die gewünschten Änderungen vor.
 
-1. Wenn Sie bereit sind, verwenden **Speichern**, **Speichern und schließen** oder **Schließen** nach Bedarf.
+1. Nachdem Sie die Änderungen vorgenommen haben, verwenden Sie nach Bedarf die Optionen **Speichern**, **Speichern und schließen** oder **Schließen**.
 
    >[!NOTE]
    >

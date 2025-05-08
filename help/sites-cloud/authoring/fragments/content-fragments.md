@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
 source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service werden [al
 >
 >Inhaltsfragmente sind eine **Sites**-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden hauptsächlich mit der Konsole **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, können jedoch weiterhin über die Konsole **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** verwaltet werden.
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**-Konsole verwaltet werden. 
 >
->Der Standardeditor für [Inhaltsfragmente - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) ist der neue Editor, auf den sowohl über die **Inhaltsfragmente“-** als auch über die **Assets**-Konsole zugegriffen wird.
+>Der Standardeditor für [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) ist der neue Editor, auf den sowohl über die **Inhaltsfragmente-** als auch über die **Assets**-Konsole zugegriffen werden kann.
 >
->Um den [Original-Editor](/help/assets/content-fragments/content-fragments-variations.md) zu verwenden, öffnen Sie zunächst den neuen Editor und deaktivieren Sie dann den Umschalter **Neuer Editor**.
+>Um den [ursprünglichen Editor](/help/assets/content-fragments/content-fragments-variations.md) zu verwenden, öffnen Sie zunächst den neuen Editor und deaktivieren Sie dann den Schalter **Neuer Editor**.
 
 >[!NOTE]
 >

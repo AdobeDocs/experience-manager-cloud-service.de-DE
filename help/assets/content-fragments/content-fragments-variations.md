@@ -6,9 +6,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager Sites
 source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2530'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 96%
 >
 >Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten - den neuen Editor und den ursprünglichen Editor. Der neue Editor ist der Standard. Obwohl die grundlegenden Funktionen identisch sind, gibt es einige Unterschiede.
+>Es gibt zwei Editoren für das Erstellen von Inhaltsfragmenten – den neuen Editor und den ursprünglichen Editor. Der neue Editor ist die Standardeinstellung. Obwohl die grundlegenden Funktionen identisch sind, gibt es einige Unterschiede.
 >
->In diesem Abschnitt wird der ursprüngliche Editor behandelt. Dieser wird [über den neuen Editor geöffnet](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>In diesem Abschnitt wird der ursprüngliche Editor behandelt. Er wird [über den neuen Editor geöffnet](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
 >
->Ausführliche Informationen zum neuen Editor finden Sie in der Sites[Dokumentation ](/help/sites-cloud/administering/content-fragments/authoring.md)Inhaltsfragmente - Authoring).
+>Ausführliche Informationen zum neuen Editor finden Sie in der Sites-Dokumentation unter [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Auf der Registerkarte **Varianten** können Sie Folgendes tun:
 
@@ -51,7 +51,7 @@ Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp 
 
 ## Verfassen Ihres Inhalts {#authoring-your-content}
 
-Wenn Sie Ihr Inhaltsfragment zur Bearbeitung im ursprünglichen Editor öffnen, ist **Registerkarte** Varianten“ standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
+Wenn Sie Ihr Inhaltsfragment zur Bearbeitung im ursprünglichen Editor öffnen, ist die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
 
 Zum Beispiel:
 
@@ -504,7 +504,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 >[!CAUTION]
 >
->Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**&#x200B;in die Variante* zu kopieren.
+>Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
 >
 >Nur das aktuelle Element der Variante wird synchronisiert.
 >
