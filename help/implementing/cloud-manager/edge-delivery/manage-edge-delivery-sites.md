@@ -7,7 +7,7 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -64,17 +64,17 @@ Klicken Sie in der Tabelle der Edge Delivery-Sites auf das Symbol ![Mehr](https:
 
 ## Verwalten einer Edge Delivery-Site zwischen Helix 4 und Helix 5
 
-Verwenden Sie den API-Endpunkt `/program/{programId}/site/{siteId}` , um eine Edge Delivery-Site zwischen Helix 4 und Helix 5 zu migrieren.
+Verwenden Sie den API-Endpunkt `/program/{programId}/site/{siteId}`, um eine Edge Delivery-Site zwischen Helix 4 und Helix 5 zu migrieren.
 
 >[!IMPORTANT]
 >
->CDN-Konfigurationen für Helix 4-Websites können nicht automatisch zu Helix 5 migriert werden. Diese Einschränkung besteht, da die Produktionsstandorte der Kunden möglicherweise weiterhin auf Helix 4 ausgeführt werden, während sich deren Helix 5-Versionen noch in der Entwicklung befinden.
+>CDN-Konfigurationen für Helix 4-Websites können nicht automatisch zu Helix 5 migriert werden. Diese Einschränkung besteht, da die Produktions-Sites der Kundinnen und Kunden möglicherweise weiterhin auf Helix 4 ausgeführt werden, während sich deren Helix 5-Versionen noch in der Entwicklung befinden.
 
 **Voraussetzungen**
 
-* Die `sitename` muss bereits vorhanden sein.
-* Kenntnis der entsprechenden `branchName`-, Helix-`version`- und `repo`.
-* Durch die Migration werden nur `branchName`, Helix `version` und `repo` geändert. Das Besitzerfeld kann nicht geändert werden.
+* Der `sitename` muss bereits vorhanden sein.
+* Kenntnis der entsprechenden `branchName`-, Helix-`version`- und `repo`-Werte.
+* Durch die Migration werden nur `branchName`, Helix `version` und `repo` geändert. Das Inhaber-Feld kann nicht geändert werden.
 
 **API-Format**
 
@@ -102,7 +102,7 @@ Erstellt eine Überschreibung für eine Edge Delivery-Site, um den im Anfragetex
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**JSON**
+**json**
 
 ```json
 {
@@ -127,7 +127,7 @@ Gibt eine Edge Delivery-Site mit der folgenden Ursprungs-URL zurück:
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**JSON**
+**json**
 
 ```json
 {
@@ -143,7 +143,7 @@ Gibt eine Edge Delivery-Site mit der folgenden Ursprungs-URL zurück:
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### Beispiel 3: Repoless-Site nach Helix 5 migrieren
+### Beispiel 3: Site ohne Repo nach Helix 5 migrieren
 
 **http**
 
@@ -151,7 +151,7 @@ Gibt eine Edge Delivery-Site mit der folgenden Ursprungs-URL zurück:
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**JSON**
+**json**
 
 ```json
 {
