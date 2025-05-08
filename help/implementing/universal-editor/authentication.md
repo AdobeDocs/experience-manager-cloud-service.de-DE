@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der universelle Editor die Authentifizierung mit 
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 100%
+source-wordcount: '191'
+ht-degree: 93%
 
 ---
 
@@ -31,3 +31,7 @@ Um den universellen Editor zu verwenden, müssen Benutzende bei Unified Shell an
 Wenn Benutzende einen CRUD-Vorgang ausführen, wird ein Aufruf an den universellen Editor-Dienst mit dem IMS-Bearer-Token im HTTP-Header gesendet. Der universelle Editor-Dienst verwendet dann das Bearer-Token, um die Anfrage gegenüber dem AEM Backend-System zu authentifizieren, um Vorgänge im Namen der Person auszuführen.
 
 ![Standard-Authentifizierungablauf](assets/standard-flow.png)
+
+In diesem Diagramm und Artikel wird die interne Authentifizierung des universellen Editors selbst beschrieben.
+
+{{ue-headless-auth}}

@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die wichtigsten Anwendungsfälle des univer
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: ht
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 100%
 
@@ -55,6 +55,8 @@ Wenn dies Ihr Anwendungsfall ist, sehen Sie sich als nächsten Schritt das folge
 * [SecurBank-Beispielanwendung für den universellen Editor](/help/implementing/universal-editor/securbank.md)
 
 Nachdem Sie dieses Dokument gelesen haben, können Sie auf diese Seite zurückkehren, um mehr über den Anwendungsfall „WYSIWYG-Authoring“ und die allgemeine Funktionsweise des universellen Editors zu erfahren.
+
+{{ue-headless-auth}}
 
 ## Funktionsweise des universellen Editors {#how-ue-works}
 

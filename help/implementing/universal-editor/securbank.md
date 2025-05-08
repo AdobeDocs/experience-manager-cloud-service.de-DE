@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über den universellen Editor anhand eines prakti
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
 
@@ -137,3 +137,6 @@ Herzlichen Glückwunsch! Die SecurBank-Anwendung sollte nun in Ihrem Browser erf
 Wenn der Inhalt noch nicht angezeigt wird, stellen Sie sicher, dass die von Ihnen ausgeführte Pipeline **Bereitstellung für Entwickler** erfolgreich abgeschlossen wurde.
 
 ![SecurBank-Anwendung im Browser](assets/securbank.png)
+
+{{ue-headless-auth}}
+

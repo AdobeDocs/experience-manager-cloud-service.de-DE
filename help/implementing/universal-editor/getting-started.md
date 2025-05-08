@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten 
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
-workflow-type: ht
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 100%
 
@@ -178,6 +178,8 @@ Die folgenden Variablen stehen zur Definition Ihrer Zuordnungen im Feld **Univer
 Ihre App ist jetzt für die Verwendung des universellen Editors instrumentiert!
 
 Unter [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
+
+{{ue-headless-auth}}
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

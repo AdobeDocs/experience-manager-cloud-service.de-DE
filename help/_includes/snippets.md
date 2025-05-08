@@ -1,8 +1,8 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 98%
 
 ---
 # Snippets {#snippets}
@@ -222,7 +222,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 
@@ -259,3 +259,9 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 * [Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularübermittlung](/help/edge/docs/forms/thank-you-page-form.md)
 * [Komponenten von adaptiven Formularblöcken und ihre Eigenschaften](/help/edge/docs/forms/form-components.md)
 * [Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
+
+## Authentifizierung beim universellen Editor für Headless {#ue-headless-auth}
+
+>[!NOTE]
+>
+>Wenn Sie den universellen Editor in einem Headless-Anwendungsfall verwenden, muss Ihre Headless-App ihre eigene Authentifizierung verwalten.
