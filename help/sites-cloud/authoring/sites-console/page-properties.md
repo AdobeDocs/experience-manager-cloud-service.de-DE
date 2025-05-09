@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 98%
+source-wordcount: '2454'
+ht-degree: 93%
 
 ---
 
@@ -119,8 +119,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 * **Vorlageneinstellungen**
 
    * **Erlaubte Vorlagen**: [Definiert die Liste der Vorlagen, die innerhalb dieses Unterzweigs verfügbar sind](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
-   * **Seite als Vorlage verwenden** - [Erstellen Sie eine neue Vorlage basierend auf der aktuellen Seite.](/help/sites-cloud/authoring/universal-editor/templates.md)
-      * Gilt nur für Seiten, die für die Verwendung mit dem universellen Editor unter Verwendung von Edge Delivery Services erstellt wurden.
+   * **Seite als Vorlage verwenden**: [Erstellt eine neue Vorlage basierend auf der aktuellen Seite.](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Gilt nur für Seiten, die für den universellen Editor unter Verwendung von Edge Delivery Services erstellt wurden.
 
 * **Authentifizierungspflicht**
 
@@ -242,7 +242,9 @@ Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt P
 
 >[!NOTE]
 >
->Siehe [Aktivieren der Progressive Web App-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Weitere [ finden Sie unter „Aktivieren der Funktionen ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) progressiven Web-Apps“.
+
+{{pwa-deprecation}}
 
 * **Konfigurieren eines installierbaren Erlebnisses**
 
@@ -337,3 +339,35 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
       * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
+
+## Vererbung von Eigenschaften {#inheritance}
+
+Wenn die Seite auf einem Blueprint basiert oder anderweitig Inhalte von einer anderen Seite erbt, wird die Vererbung im Fenster **Seiteneigenschaften** für das jeweilige Feld angezeigt.
+
+![Vererbte Eigenschaften](assets/property-inhertiance.png)
+
+Vererbte Eigenschaften können nicht bearbeitet werden. Tippen oder klicken Sie auf das Symbol **Vererbung abbrechen** neben einem bestimmten Feld, um dessen Vererbung abzubrechen.
+
+![Vererbung abbrechen](assets/cancel-inheritance.png)
+
+Bestätigen Sie den Abbruch im Modal **Vererbung abbrechen**.
+
+![Modal zur Bestätigung des Abbruchs der Vererbung](assets/cancel-inheriance-confirmation.png)
+
+Sobald die Vererbung für ein Feld abgebrochen wurde, kann es bearbeitet werden.
+
+![Abgebrochene Vererbung](assets/property-inheritance-broken.png)
+
+Um die Vererbung wiederherzustellen, tippen oder klicken Sie auf das Symbol **Vererbung zurücksetzen** neben dem Feld.
+
+![Vererbung zurücksetzen](assets/revert-inheritance.png)
+
+Bestätigen Sie die Wiederherstellung im **Vererbung zurücksetzen**.
+
+![Modal zur Bestätigung der Vererbung zurücksetzen](assets/revert-inhertiance-confirmation.png)
+
+Wählen Sie **Seite nach Wiederherstellung der Vererbung synchronisieren** aus, um das Feld mit den neuesten Werten in der Blueprint zu aktualisieren. Andernfalls werden die Werte bei der nächsten Synchronisierung der Live Copy aktualisiert.
+
+>[!TIP]
+>
+>Weitere Informationen zur Vererbung finden Sie im Dokument [Multi-Site-Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md)

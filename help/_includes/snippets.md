@@ -1,7 +1,7 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1523'
 ht-degree: 98%
 
 ---
@@ -222,7 +222,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 
@@ -265,3 +265,11 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 >[!NOTE]
 >
 >Wenn Sie den universellen Editor in einem Headless-Anwendungsfall verwenden, muss Ihre Headless-App ihre eigene Authentifizierung verwalten.
+
+## Einstellung von PWA {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>Die Funktionen der Progressive Web App (PWA) für AEM Sites [werden nicht mehr verwendet](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>
+>Vorhandene Projekte, die diese Funktion verwenden, werden zwar weiterhin unterstützt, aber neue Projekte sollten diese Funktion nicht verwenden.
