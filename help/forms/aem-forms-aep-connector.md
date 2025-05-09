@@ -56,16 +56,16 @@ Das folgende Video enthält eine schrittweise Anleitung zu den Voraussetzungen (
 Bevor Sie den AEP-Connector in AEM Forms einrichten, stellen Sie sicher, dass Sie Folgendes in Adobe Experience Platform abgeschlossen haben:
 
 1. Schema-Setup
-   * [Erstellen eines XDM-Schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [Aktivieren eines Schemas für die Profilerstellung](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [Identitätsfeld definieren](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Erstellen eines XDM-Schemas](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [Aktivieren eines Schemas für die Profilerstellung](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Identitätsfeld definieren](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Datenkonfiguration
-   * [Erstellen eines Datensatzes](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [Streaming-Verbindung einrichten](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (Sie benötigen die Streaming-Endpunkt-URL später. Notieren Sie sich diese also jetzt.)
+   * [Erstellen eines Datensatzes](https://experienceleague.adobe.com/de/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [Streaming-Verbindung einrichten](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (Sie benötigen die Streaming-Endpunkt-URL später. Notieren Sie sich diese also jetzt.)
 
 3. Authentifizierung
-   * [Generieren von API-](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (Client-ID und Client-Geheimnis) aus Adobe Developer Console
+   * [Generieren von API-](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (Client-ID und Client-Geheimnis) aus Adobe Developer Console
 
 
 ## Implementierungsschritte
@@ -156,7 +156,7 @@ A: Dieser Connector funktioniert sowohl mit Kernkomponenten von Adaptive Forms a
 A.: Derzeit kann jedes Formular nur an einen Datensatz gesendet werden.
 
 **F: Gibt es eine Begrenzung dafür, wie viele Formularübermittlungen verarbeitet werden können?**
-A.: Formularübermittlungen unterliegen der Streaming-Aufnahme in AEP [Kontingente und ](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota)).
+A.: Formularübermittlungen unterliegen der Streaming-Aufnahme in AEP [Kontingente und ](https://experienceleague.adobe.com/de/docs/experience-platform/data-lifecycle/api/quota)).
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -196,8 +196,8 @@ Erste Schritte mit dieser Integration:
 * [Dokumentation zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de)
 * [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)
 * [XDM-System - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)
-* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
-* [Übersicht über das Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=de)
+* [Übersicht über das Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de)
 * [AEM Forms EARLY ACCESS-Funktionen](/help/forms/early-access-ea-features.md)
 * [Erstellen von adaptiven Forms mit Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Verwenden von Formulardatenmodellen in AEM Forms](/help/forms/using-form-data-model.md)
