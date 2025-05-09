@@ -5,10 +5,10 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -43,7 +43,7 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 1. Wählen Sie im Listenfeld **Lösungen und Add-ons** eine oder mehrere Lösungen aus, die im Programm enthalten sein sollen.
 
    * Klicken Sie auf den Pfeil links neben dem Lösungsnamen, um alle verfügbaren optionalen Add-ons anzuzeigen, die in eine ausgewählte Lösung aufgenommen werden sollen.
-   * Die Lösungen **Sites**, **Assets** und **Edge Deliver Services** sind beim Erstellen eines Sandbox-Programms standardmäßig immer ausgewählt. Sie können sie nicht abwählen.
+   * Die Lösungen **Sites**, **Assets** und **Edge Delivery Services** sind beim Erstellen eines Sandbox-Programms immer standardmäßig ausgewählt. Sie können sie nicht abwählen.
 
    ![Auswählen von Lösungen und Add-ons für eine Sandbox](assets/sandbox-solutions-add-ons.png)
 
