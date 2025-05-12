@@ -1,93 +1,209 @@
 ---
-title: Versionshinweise für Cloud Manager 2025.4.0
-description: Erfahren Sie mehr über die Version Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2025.5.0
+description: Erfahren Sie mehr über die Version Cloud Manager 2025.5.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
-workflow-type: ht
-source-wordcount: '614'
-ht-degree: 100%
+source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 21%
 
 ---
 
-# Versionshinweise für Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2025.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Erfahren Sie mehr über die Version Cloud Manager 2025.4.0 in AEM (Adobe Experience Manager) as a Cloud Service.
-
+Erfahren Sie mehr über die Version Cloud Manager 2025.5.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Veröffentlichungsdaten {#release-date}
 
-Die Version 2025.4.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, dem 10. April 2025 veröffentlicht.
+Die Version 2025.5.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, dem Freitag, 8. Mai 2025 veröffentlicht.
 
-Die Veröffentlichung der nächsten Version ist für Donnerstag, den 8. Mai 2025 geplant.
+Die Veröffentlichung der nächsten Version ist für Donnerstag, den Freitag, 5. Juni 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* **(UI) Verbesserte Sichtbarkeit der Bereitstellung**
+### Ändern der Inhaltsquelle mit einem Klick für Edge Delivery Services
 
-  Die Seite mit den Details zur Pipeline-Ausführung in Cloud Manager zeigt jetzt eine Statusmeldung („*Warten – andere Aktualisierung wird durchgeführt*“) an, wenn eine Bereitstellung darauf wartet, dass eine andere Bereitstellung abgeschlossen wird. Dieser Workflow erleichtert es, die Sequenzierung während der Umgebungsbereitstellung zu verstehen.  <!-- CMGR-66890 -->
+Adobe Experience Manager (AEM) Edge Delivery Services ermöglicht die Bereitstellung von Inhalten aus mehreren Quellen wie Google Drive, SharePoint oder AEM selbst mithilfe eines schnellen, global verteilten Edge-Netzwerks.
 
-  ![Dialogfeld „Entwicklungsbereitstellung“ mit Details und Aufschlüsselung](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+Die Konfiguration der Inhaltsquellen unterscheidet sich zwischen Helix 4 und Helix 5 wie folgt:
 
-* **(UI) Optimierung der Domain-Validierung**
+| Version | Konfigurationsmethode |
+| --- | --- |
+| Helix 4 | YAML-Datei (`fstab.yaml`) |
+| Helix 5 | Konfigurations-Service-API (*keine`fstab.yaml`*) |
 
-  Beim Hinzufügen einer Domain zeigt Cloud Manager jetzt einen Fehler an, wenn die Domain bereits in einem Fastly-Konto installiert ist: „*Die Domain ist bereits in einem Fastly-Konto installiert. Bitte entfernen Sie sie zuerst aus dem Konto, bevor Sie sie zu Cloud Service hinzufügen.*“
+Dieser Artikel enthält umfassende Konfigurationsschritte, Beispiele und Validierungsanweisungen für beide Versionen.
+
+B **Bevor Sie beginnen**
+
+Wenn Sie Edge Delivery mit [ Klick in Cloud Manager verwenden, ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) Ihre Website Helix 5 mit einem einzigen Repository. Befolgen Sie die Helix 5-Anweisungen und verwenden Sie die bereitgestellte Helix 4 YAML-Version als Ausweichlösung.
+
+**Helix-Version ermitteln**
+
+* Helix 4: Ihr Projekt enthält eine `fstab.yaml`.
+* Helix 5: Ihr Projekt ** verwendet keine `fstab.yaml` und wurde über die Edge Delivery Services-Benutzeroberfläche oder -API eingerichtet.
+
+Bestätigen Sie dies anhand der Repository-Metadaten oder wenden Sie sich an Ihren Administrator, wenn Sie sich noch nicht sicher sind.
+
+#### Konfigurieren der Inhaltsquelle (Helix 4)
+
+In Helix 4 wird die Inhaltsquelle in einer YAML-Konfigurationsdatei mit dem Namen `fstab.yaml` definiert, die sich im Stammverzeichnis Ihres GitHub-Repositorys befindet.
+
+##### YAML-Dateiformat
+
+Die `fstab.yaml` definiert Bereitstellungspunkte (URL-Pfadpräfixe, die Inhaltsquellen-URLs zugeordnet sind) ähnlich dem folgenden Beispiel (nur zu Veranschaulichungszwecken):
+
+```yaml
+mountpoints:
+  /: https://drive.google.com/drive/folders/your-folder-id
+```
+
+##### Inhaltsquelle ändern
+
+Die Schritte variieren je nach verwendetem Quellsystem.
+
+* **Google Drive**
+
+   1. Erstellen Sie einen Google Drive-Ordner.
+   1. Freigeben des Ordners für `helix@adobe.com`.
+   1. Abrufen des Links für freigebbare Ordner .
+   1. Aktualisieren Sie Ihre `fstab.yaml` wie folgt:
+
+      ```yaml
+      mountpoints: 
+          /: https://drive.google.com/drive/folders/<folder-id>
+      ```
+
+   1. Übertragen Sie Änderungen und übertragen Sie sie auf GitHub.
+
+* **SharePoint**
+
+   1. Erstellen Sie einen SharePoint-Ordner oder eine Dokumentbibliothek.
+   1. Freigeben des Zugriffs für `helix@adobe.com`
+   1. Abrufen der Ordner-URL.
+   1. Aktualisieren Sie Ihre `fstab.yaml` wie folgt:
+
+      ```yaml
+      mountpoints:
+        /: https://<tenant>.sharepoint.com/sites/<site>/Shared%20Documents/<folder>
+      ```
+
+   1. Übertragen Sie Änderungen und übertragen Sie sie auf GitHub.
+
+* **AEM**
+
+   1. Identifizieren Sie Ihren AEM-Inhaltspfad.
+   1. Verwenden Sie die AEM-Inhaltsexport-URL wie folgt:
+
+      ```yaml
+      mountpoints:
+        /: https://author.<your-aem-instance>.com/bin/franklin.delivery/<org>/<repo>/main
+      ```
+
+   1. Übertragen Sie Änderungen und übertragen Sie sie auf GitHub.
+
+##### Validierung
+
+* Klicken Sie mithilfe der AEM Sidekick Chrome-Erweiterung auf **Vorschau** > **Veröffentlichen** > **Live-Site testen**.
+* URL validieren: `https://main--<repo>--<org>.hlx.page/`
+
+#### Konfigurieren der Inhaltsquelle (Helix 5)
+
+Helix 5 ist reaktionslos, verwendet keine `fstab.yaml` und unterstützt mehrere Websites, die denselben Ordner teilen. Die Konfiguration wird über die Konfigurations-Service-API oder die Edge Delivery Services-Benutzeroberfläche verwaltet. Die Konfiguration erfolgt auf Site-Ebene (nicht auf Repository-Ebene).
+
+##### Konzeptionelle Unterschiede
+
+| Aspekt | Helix 4 | Helix 5 |
+| --- | --- | --- |
+| Konfigurationsdatei | `fstab.yaml` | API- oder UI-Konfiguration |
+| Bereitstellungspunkte | YAML-definiert | Nicht erforderlich (impliziter Stamm) |
+
+##### Inhaltsquelle ändern
+
+Verwenden Sie die Konfigurations-Service-API.
+
+1. Authentifizierung über einen API-Schlüssel oder ein Zugriffstoken.
+1. Führen Sie den folgenden `PUT`-API-Aufruf aus:
+
+   ```bash
+   PUT /api/{program}/{programId}/site/{siteId}
+   Content-Type: application/json
+   
+   {
+     "sitename": "my-site",
+     "branchName": "main",
+     "version": "v5",
+     "repo": "my-content-repo-link"
+   }
+   ```
+
+1. Antwort validieren (erwartet: HTTP 200 OK).
+
+##### Validierung
+
+* Klicken Sie mithilfe der AEM Sidekick Chrome-Erweiterung auf **Vorschau** > **Veröffentlichen** > **Live-Site testen**.
+* URL validieren: `https://main--<repo>--<org>.aem.page/`
+* (Optional) Überprüfen Sie die aktuelle Konfiguration mithilfe des folgenden `GET`-API-Aufrufs:
+
+  ```bash
+  GET /api/{program}/{programId}/site/{siteId}
+  ```
+
+<!--
+* **AI-powered build summaries now available for internal use**
+
+    Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
+
+    ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
+-->
+
 
 ## Early-Adopter-Programm {#early-adoption}
 
-Nehmen Sie am Early-Adopter-Programm von Cloud Manager teil, um exklusiven Zugriff auf bevorstehende Funktionen vor ihrer regulären Veröffentlichung zu erhalten.
+Nehmen Sie am Early-Adopter-Programm von Cloud Manager teil, um exklusiven Zugriff auf bevorstehende Funktionen vor deren allgemeiner Veröffentlichung zu erhalten.
 
-Derzeit stehen die folgenden Möglichkeiten für eine frühzeitige Verwendung zur Verfügung:
+Die folgenden Early-Adopter-Möglichkeiten stehen derzeit zur Verfügung:
 
-### Bringen Sie Ihren eigenen Git mit – jetzt mit Unterstützung für GitLab und Bitbucket {#gitlab-bitbucket}
+### Pipeline von Edge Delivery hinzufügen {#add-eds-pipeline}
+
+**Pipelines** werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, wodurch diese Funktion über Cloud Service-Umgebungen hinaus erweitert wird. Sie können **Pipelines** verwenden, um Einstellungen wie Traffic-Filterregeln und gegebenenfalls Konfigurationen der Web Application Firewall (WAF) zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
+
+<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an [grp-aemeds-config-pipeline-adopter@adobe.com.
+
+### Holen Sie Ihr eigenes Git - jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-Die Funktion zum **Einbringen des eigenen Git** wurde erweitert und unterstützt jetzt auch externe Repositorys wie GitLab und Bitbucket. Diese neue Unterstützung ergänzt die bereits vorhandene Unterstützung für private und Unternehmens-GitHub-Repositorys. Wenn Sie diese neuen Repositorys hinzufügen, können Sie sie auch direkt mit Ihren Pipelines verknüpfen. Sie können diese Repositorys auf öffentlichen Cloud-Plattformen oder in Ihrer privaten Cloud oder Infrastruktur hosten. Durch diese Integration entfällt auch die Notwendigkeit der konstanten Code-Synchronisation mit dem Adobe-Repository. Sie bietet weiterhin die Möglichkeit, Pull-Anfragen zu überprüfen, bevor sie in einer Hauptverzweigung zusammengeführt werden.
+Kunden können jetzt ihre Azure DevOps-Git-Repositorys in Cloud Manager integrieren, wobei sowohl moderne Azure DevOps- als auch ältere VSTS-Repositorys (Visual Studio Team Services) unterstützt werden.
 
-Pipelines, die externe Repositorys (ausgenommen GitHub-gehostete Repositorys) und die Option **Bereitstellungsauslöser** **Bei Git-Änderungen** verwenden, starten jetzt automatisch.
+* Für Edge Delivery Services-Benutzer kann das integrierte Repository zum Synchronisieren und Bereitstellen von Site-Code verwendet werden.
+* Für Benutzende von AEM as a Cloud Service und Adobe Managed Services (AMS) kann das Repository mit Full-Stack- und Frontend-Pipelines verknüpft werden.
+
+Die Unterstützung für zusätzliche Pipeline-Typen und die Validierung von Pull-Anforderungen durch Code-Qualitäts-Pipelines wird bald verfügbar sein.
 
 Siehe [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-![Dialogfeld „Repository hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->Derzeit sind vorkonfigurierte Code-Qualitätsprüfungen für Pull-Anfragen ausschließlich für von GitHub gehostete Repositorys verfügbar. Es ist jedoch ein Update in Arbeit, um diese Funktionen auf andere Git-Anbieter zu erweitern.
+![Dialogfeld „Repository hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com). Geben Sie unbedingt an, welche Git-Plattform Sie verwenden möchten und ob Sie sich in einer privaten/öffentlichen oder einer Unternehmens-Repository-Struktur befinden.
 
 <!--
-### AEM Home {#aem-home}
+## Bug fixes
 
-AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+* Issue
 
-Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+* Issue
 
-If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
-
-* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
-* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
-
-## Fehlerbehebungen
-
-* **Problem mit fehlendem Feld „Allgemeiner Name (CN)“ bei Zertifikaten**
-
-  Cloud Manager löst beim Verarbeiten von EV/OV-Zertifikaten, die keinen allgemeinen Namen (Common Name, CN) im Feld „Betreff“ enthalten, keine NullPointerException (NPE) und keine HTTP-Antwort vom Typ 500 mehr aus. Moderne Zertifikate lassen den CN häufig weg und verwenden stattdessen einen Subject Alternative Name (SAN). Diese Fehlerbehebung stellt sicher, dass die Abwesenheit des CN nicht mehr zu einem Fehler während des Konfigurationserstellungsprozesses führt, wenn ein SAN vorhanden ist. <!-- CMGR-67548 -->
-
-* **Problem bei der Domain-Verifizierung mit falschem Zertifikatsabgleich**
-
-  Cloud Manager verifiziert Domains nicht mehr fälschlicherweise mit falschen Zertifikaten. Zuvor verwendete die Validierungslogik einen musterbasierten Abgleich anstelle exakter Übereinstimmungen, was dazu führte, dass Domains wie `should-not-be-verified.example.com` aufgrund von Überschneidungen mit gültigen Zertifikaten für `example.com` als verifiziert angezeigt wurden. Durch diese Fehlerbehebung wird sichergestellt, dass bei der Domain-Validierung jetzt auf exakte Übereinstimmungen geprüft wird, sodass fehlerhafte Zertifikatsverknüpfungen vermieden werden. <!-- CMGR-67225 -->
-
-* **Erzwungene Eindeutigkeit für die Namen der Port-Weiterleitungen von erweiterten Netzwerkfunktionen**
-
-  Cloud Manager erzwingt jetzt eine eindeutige Benennung für die Port-Weiterleitungen erweiterter Netzwerkfunktionen. Zuvor waren doppelte Namen zulässig, was zu Konflikten führen konnte. Diese Fehlerbehebung stellt sicher, dass jeder Eintrag zu einer Port-Weiterleitung einen eindeutigen Namen hat, was den Best Practices für die Integrität der Netzwerkkonfiguration entspricht. <!-- CMGR-67082 -->
-
+* Issue
+-->
 
 <!-- ## Known issues {#known-issues} -->
 
