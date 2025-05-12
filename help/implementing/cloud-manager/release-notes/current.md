@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.5.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 21%
+source-wordcount: '780'
+ht-degree: 22%
 
 ---
 
@@ -40,7 +40,7 @@ Die Konfiguration der Inhaltsquellen unterscheidet sich zwischen Helix 4 und Hel
 
 Dieser Artikel enthält umfassende Konfigurationsschritte, Beispiele und Validierungsanweisungen für beide Versionen.
 
-B **Bevor Sie beginnen**
+**Bevor Sie beginnen**
 
 Wenn Sie Edge Delivery mit [ Klick in Cloud Manager verwenden, ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) Ihre Website Helix 5 mit einem einzigen Repository. Befolgen Sie die Helix 5-Anweisungen und verwenden Sie die bereitgestellte Helix 4 YAML-Version als Ausweichlösung.
 
@@ -131,7 +131,7 @@ Verwenden Sie die Konfigurations-Service-API.
 1. Authentifizierung über einen API-Schlüssel oder ein Zugriffstoken.
 1. Führen Sie den folgenden `PUT`-API-Aufruf aus:
 
-   ```bash
+   ```bash {.line-numbering}
    PUT /api/{program}/{programId}/site/{siteId}
    Content-Type: application/json
    
@@ -176,7 +176,7 @@ Die folgenden Early-Adopter-Möglichkeiten stehen derzeit zur Verfügung:
 
 <!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an grp-aemeds-config-pipeline-adopter@adobe.com.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an [grp-aemeds-config-pipeline-adopter@adobe.com.
 
 ### Holen Sie Ihr eigenes Git - jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
