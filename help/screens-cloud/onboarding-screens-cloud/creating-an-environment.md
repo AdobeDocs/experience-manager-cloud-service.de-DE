@@ -4,10 +4,10 @@ description: Auf dieser Seite wird das Erstellen einer Umgebung in Cloud Manager
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 66cb3b49836d9bb52d7955edcf1f0b7f87b22802
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ In diesem Abschnitt wird beschrieben, wie Sie eine Umgebung für Ihr Programm in
 
 Im folgenden Abschnitt wird beschrieben, wie Sie eine Umgebung für Ihr Programm in Cloud Manager erstellen.
 
-## Schritte zum Erstellen einer Umgebung für Ihr Screens-Projekt in Cloud Manager {#steps-branch-creation}
+## Schritte zum Erstellen einer Umgebung für Ihr Projekt in Cloud Manager {#steps-branch-creation}
 
 Nachdem die Projekterstellung erfolgreich abgeschlossen wurde, können Sie sehen, wie die Karte mit dem Aktionsaufruf auf der Übersichtsseite von Cloud Manager aktualisiert wird.
 
