@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.5.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
+source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 22%
+source-wordcount: '830'
+ht-degree: 20%
 
 ---
 
@@ -27,13 +27,13 @@ Die Veröffentlichung der nächsten Version ist für Donnerstag, den Freitag, 5.
 
 ## Neue Funktionen {#what-is-new}
 
-### Ändern der Inhaltsquelle mit einem Klick für Edge Delivery Services
+### Konfigurieren der Inhaltsquelle für Edge Delivery Services mit einem Klick
 
 Adobe Experience Manager (AEM) Edge Delivery Services ermöglicht die Bereitstellung von Inhalten aus mehreren Quellen wie Google Drive, SharePoint oder AEM selbst mithilfe eines schnellen, global verteilten Edge-Netzwerks.
 
 Die Konfiguration der Inhaltsquellen unterscheidet sich zwischen Helix 4 und Helix 5 wie folgt:
 
-| Version | Konfigurationsmethode |
+| Version | Konfigurationsmethode der Inhaltsquelle |
 | --- | --- |
 | Helix 4 | YAML-Datei (`fstab.yaml`) |
 | Helix 5 | Konfigurations-Service-API (*keine`fstab.yaml`*) |
@@ -42,7 +42,7 @@ Dieser Artikel enthält umfassende Konfigurationsschritte, Beispiele und Validie
 
 **Bevor Sie beginnen**
 
-Wenn Sie Edge Delivery mit [ Klick in Cloud Manager verwenden, ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) Ihre Website Helix 5 mit einem einzigen Repository. Befolgen Sie die Helix 5-Anweisungen und verwenden Sie die bereitgestellte Helix 4 YAML-Version als Ausweichlösung.
+Wenn Sie Edge Delivery mit [ Klick in Cloud Manager verwenden, ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) Ihre Website Helix 5 mit einem einzigen Repository. Befolgen Sie die Helix 5-Anweisungen und verwenden Sie die bereitgestellte Helix 4 YAML-Version der Anweisungen als Ausweichlösung.
 
 **Helix-Version ermitteln**
 
@@ -51,20 +51,18 @@ Wenn Sie Edge Delivery mit [ Klick in Cloud Manager verwenden, ](/help/implement
 
 Bestätigen Sie dies anhand der Repository-Metadaten oder wenden Sie sich an Ihren Administrator, wenn Sie sich noch nicht sicher sind.
 
-#### Konfigurieren der Inhaltsquelle (Helix 4)
+#### Konfigurieren der Inhaltsquelle für Helix 4
 
-In Helix 4 wird die Inhaltsquelle in einer YAML-Konfigurationsdatei mit dem Namen `fstab.yaml` definiert, die sich im Stammverzeichnis Ihres GitHub-Repositorys befindet.
-
-##### YAML-Dateiformat
-
-Die `fstab.yaml` definiert Bereitstellungspunkte (URL-Pfadpräfixe, die Inhaltsquellen-URLs zugeordnet sind) ähnlich dem folgenden Beispiel (nur zu Veranschaulichungszwecken):
+In Helix 4 definiert die Datei fstab.yaml die Inhaltsquelle für Ihre Site. Diese Datei befindet sich im Stammverzeichnis Ihres GitHub-Repositorys und ordnet URL-Pfadpräfixe (so genannte mountpoints) externen Inhaltsquellen zu. Ein typisches Beispiel sieht wie folgt aus:
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-##### Inhaltsquelle ändern
+Dieses Beispiel dient nur zur Veranschaulichung. Die eigentliche URL sollte auf Ihre Inhaltsquelle verweisen, z. B. auf einen bestimmten Google Drive-Ordner, ein SharePoint-Verzeichnis oder einen AEM-Pfad.
+
+**So konfigurieren Sie die Inhaltsquelle für Helix 4:**
 
 Die Schritte variieren je nach verwendetem Quellsystem.
 
@@ -113,22 +111,20 @@ Die Schritte variieren je nach verwendetem Quellsystem.
 * Klicken Sie mithilfe der AEM Sidekick Chrome-Erweiterung auf **Vorschau** > **Veröffentlichen** > **Live-Site testen**.
 * URL validieren: `https://main--<repo>--<org>.hlx.page/`
 
-#### Konfigurieren der Inhaltsquelle (Helix 5)
+#### Konfigurieren der Inhaltsquelle für Helix 5
 
-Helix 5 ist reaktionslos, verwendet keine `fstab.yaml` und unterstützt mehrere Websites, die denselben Ordner teilen. Die Konfiguration wird über die Konfigurations-Service-API oder die Edge Delivery Services-Benutzeroberfläche verwaltet. Die Konfiguration erfolgt auf Site-Ebene (nicht auf Repository-Ebene).
+Helix 5 ist reaktionslos, verwendet keine `fstab.yaml` und unterstützt mehrere Websites, die dasselbe Verzeichnis gemeinsam nutzen. Die Konfiguration wird über die Konfigurations-Service-API oder die Edge Delivery Services-Benutzeroberfläche verwaltet. Die Konfiguration erfolgt auf Site-Ebene (nicht auf Repository-Ebene).
 
-##### Konzeptionelle Unterschiede
+Die konzeptionellen Unterschiede sind:
 
 | Aspekt | Helix 4 | Helix 5 |
 | --- | --- | --- |
-| Konfigurationsdatei | `fstab.yaml` | API- oder UI-Konfiguration |
-| Bereitstellungspunkte | YAML-definiert | Nicht erforderlich (impliziter Stamm) |
+| Konfiguration | Erledigt durch `fstab.yaml` | Erledigt über die API oder die Benutzeroberfläche anstelle von YAML. |
+| Bereitstellungspunkte | Definiert in `fstab.yaml`. | Nicht erforderlich. Der Stamm wird implizit verstanden. |
 
-##### Inhaltsquelle ändern
+**So konfigurieren Sie die Inhaltsquelle für Helix 5:**
 
-Verwenden Sie die Konfigurations-Service-API.
-
-1. Authentifizierung über einen API-Schlüssel oder ein Zugriffstoken.
+1. Authentifizieren Sie sich mithilfe der Konfigurations-Service-API über einen API-Schlüssel oder ein Zugriffstoken.
 1. Führen Sie den folgenden `PUT`-API-Aufruf aus:
 
    ```bash {.line-numbering}
@@ -176,7 +172,7 @@ Die folgenden Early-Adopter-Möglichkeiten stehen derzeit zur Verfügung:
 
 <!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an grp-aemeds-config-pipeline-adopter@adobe.com.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an [grp-aemeds-config-pipeline-adopter@adobe.com.
 
 ### Holen Sie Ihr eigenes Git - jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
