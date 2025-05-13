@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
-workflow-type: ht
-source-wordcount: '3441'
-ht-degree: 100%
+source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
+workflow-type: tm+mt
+source-wordcount: '3467'
+ht-degree: 99%
 
 ---
 
@@ -259,6 +259,7 @@ Manchmal kann es unerwartet zeitweise auftretende Probleme aufgrund fehlgeschlag
 * `Atlas prescale timeout error` – In der Aufnahmephase wird versucht, die Ziel-Cloud-Datenbank vorab auf eine geeignete Größe zu skalieren, die der Größe des aufzunehmenden Migrationssatzinhalts entspricht. In seltenen Fällen wird dieser Vorgang nicht innerhalb des erwarteten Zeitraums abgeschlossen.
 * `Exhausted mongo restore retries` – Die Versuche, eine lokale Sicherungskopie des aufgenommenen Migrationssatzinhalts in die Cloud-Datenbank wiederherzustellen, sind ausgeschöpft. Dies weist auf ein allgemeines Konsistenz-/Netzwerkproblem mit MongoDB hin, das sich häufig nach einigen Minuten selbst behebt.
 * `Mongo network error` – Manchmal kann das Herstellen einer Verbindung mit MongoDB fehlschlagen, was dazu führt, dass der Aufnahmeprozess vorzeitig beendet und als fehlgeschlagen gemeldet wird. Es sollte dann einfach ein erneuter Versuch der Aufnahme unternommen werden.
+* `Mongo server selection error` : Dies ist ein seltener Client-seitiger Mongo-Zeitüberschreitungsfehler, der aus einer Reihe von zugrunde liegenden Gründen auftreten kann. Ein nachfolgender erneuter Versuch wird das Problem höchstwahrscheinlich beheben.
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 
