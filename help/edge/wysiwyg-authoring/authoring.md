@@ -59,4 +59,4 @@ Lesen Sie hierzu das [Erste-Schritte-Handbuch für Entwickelnde für WYSIWYG-Aut
 
 WYSIWYG-Authoring ist ein leistungsstarkes und intuitives Tool für Inhaltsautorinnen und -autoren. Es gibt jedoch viele verschiedene Anwendungsfälle für das Authoring, weshalb AEM zusätzliche Authoring-Lösungen anbietet.
 
-Weitere Informationen zu den Authoring-Lösungen, einschließlich ](/help/edge/overview.md#authoring-method) und Headless, die AEM anbietet, finden Sie im Dokument [Überblick über Edge Delivery Services .
+Weitere Informationen zu den Authoring-Lösungen, einschließlich [&#128279;](/help/edge/overview.md#authoring-method) und Headless, die AEM anbietet, finden Sie im Dokument Überblick über Edge Delivery Services .
