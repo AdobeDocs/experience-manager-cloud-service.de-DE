@@ -8,7 +8,7 @@ role: User
 source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
-ht-degree: 61%
+ht-degree: 99%
 
 ---
 
@@ -190,67 +190,67 @@ Vererbung ist der Mechanismus, durch den Inhalte so verknüpft werden können, d
 
 Mit dem universellen Editor können Sie die Vererbung für Inhalte abbrechen, indem Sie den Inhalt einfach aktualisieren. Der Editor deaktiviert automatisch die Vererbung für alle Änderungen, die von Autorinnen und Autoren auf dieser Seite vorgenommen werden. Dadurch wird sichergestellt, dass geänderte Inhalte beibehalten werden, wenn Aktualisierungen aus dem Blueprint synchronisiert werden.
 
-Wenn die Erweiterung **AEM Multi-Site-Management (MSM)** für Ihr Programm aktiviert ist, verfügen Sie über [zusätzliche Symbolleistenoptionen](#inheritance-extension) um den Vererbungsstatus einer einzelnen Komponente im universellen Editor anzuzeigen und zu ändern.
+Wenn die **AEM-Erweiterung für Multi-Site-Management (MSM)** für Ihr Programm aktiviert ist, verfügen Sie über [zusätzliche Symbolleistenoptionen](#inheritance-extension), um den Vererbungsstatus einer einzelnen Komponente im universellen Editor anzuzeigen und zu ändern.
 
 Weitere Informationen zur Funktionsweise der Vererbung mit dem universellen Editor finden Sie im Dokument [Vererbung von Inhalten im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).
 
 ## Optionale Symbolleistenfunktionen {#toolbar-options}
 
-Zusätzliche Funktionen sind als Erweiterungen des universellen Editors verfügbar, die Sie bei der weiteren Verwaltung Ihrer Seiten und Inhalte unterstützen. [Diese Erweiterungen müssen in Ihrem Programm von einem Administrator aktiviert werden](/help/implementing/universal-editor/extending.md) bevor sie für Sie als Inhaltsautor in der Symbolleiste [ universellen Editors sichtbar sind.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+Zusätzliche Funktionen sind als Erweiterungen des universellen Editors verfügbar, die Sie bei der weiteren Verwaltung Ihrer Seiten und Inhalte unterstützen. [Diese Erweiterungen müssen in Ihrem Programm von einer bzw. einem Admin aktiviert werden](/help/implementing/universal-editor/extending.md), bevor sie für Sie als Inhaltsautorin bzw. Inhaltsautor in der [Symbolleiste des universellen Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) sichtbar sind.
 
 ### Vererbung {#inheritance-extension}
 
-Die Erweiterung **AEM Multi-Site-Management (MSM** zeigt den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die Vererbung zu [ oder wiederherzustellen.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+Die **AEM-Erweiterung für Multi-Site-Management (MSM)** zeigt den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die [Vererbung zu unterbrechen oder wiederherzustellen](/help/sites-cloud/authoring/universal-editor/inheritance.md).
 
 Das Symbol **Vererbung installiert** in der Symbolleiste des universellen Editors zeigt an, dass die Vererbung für die ausgewählte Komponente weiterhin aktiv ist.
 
 ![Symbol „Vererbung installiert“](assets/inheritance-installed-icon.png)
 
-Tippen oder klicken Sie auf das Symbol, um die Vererbung für die ausgewählte Komponente aufzuheben. Die Vererbung wird automatisch unterbrochen, wenn Sie die Komponente bearbeiten.
+Tippen oder klicken Sie auf das Symbol, um die Vererbung für die ausgewählte Komponente zu unterbrechen. Die Vererbung wird automatisch unterbrochen, wenn Sie die Komponente bearbeiten.
 
 Das Symbol **Vererbung unterbrochen** zeigt an, dass die Vererbung für die ausgewählte Komponente unterbrochen wurde.
 
-![Symbol „Beschädigte Vererbung“](assets/inheritance-broken-icon.png)
+![Symbol „Vererbung unterbrochen“](assets/inheritance-broken-icon.png)
 
-Tippen oder klicken Sie auf das Symbol , um die Vererbung für die ausgewählte Komponente wieder zu aktivieren. Sie müssen die Seite neu laden, um den Inhalt zu aktualisieren und die übernommenen Inhalte anzuzeigen.
+Tippen oder klicken Sie auf das Symbol, um die Vererbung für die ausgewählte Komponente wiederherzustellen. Sie müssen die Seite neu laden, um den Inhalt zu aktualisieren und die übernommenen Inhalte anzuzeigen.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
->[!NOTE]
->
->Die Symbole **Installierte Vererbung** und **Beschädigte Vererbung** werden nur angezeigt, wenn eine Komponente ausgewählt wurde und die Seite auf einer Blueprint basiert.
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 >[!NOTE]
 >
->Die Erweiterung **AEM Multi-Site-Management (MSM** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+>Die Symbole **Vererbung installiert** und **Vererbung unterbrochen** werden nur angezeigt, wenn eine Komponente ausgewählt wurde und die Seite auf einer Blueprint basiert.
+
+>[!NOTE]
+>
+>Die **AEM-Erweiterung für Multi-Site-Management (MSM)** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
 
 ### Zugreifen auf Seiteneigenschaften {#page-properties}
 
-Die Erweiterung **AEM** Seiteneigenschaften ermöglicht den schnellen Zugriff auf das Fenster [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) für die aktuell bearbeitete Seite.
+Die **AEM-Erweiterung für Seiteneigenschaften** ermöglicht den schnellen Zugriff auf das [Fenster „Seiteneigenschaften“](/help/sites-cloud/authoring/sites-console/page-properties.md) für die aktuell in Bearbeitung befindliche Seite.
 
 ![Symbol „Seiteneigenschaften“](assets/page-properties-icon.png)
 
-Tippen oder klicken Sie auf das Symbol **Seiteneigenschaften** in der Symbolleiste des universellen Editors, um die Seiteneigenschaften für die Seite in einer neuen Browser-Registerkarte zu öffnen.
+Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Symbol **Seiteneigenschaften**, um die Seiteneigenschaften für die Seite in einem neuen Browser-Tab zu öffnen.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 >[!NOTE]
 >
->Die Erweiterung der **AEM** Seiteneigenschaften funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+>Die **AEM-Erweiterung für Seiteneigenschaften** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
 
-### Zugriff auf die Sites-Konsole {#sites-console}
+### Zugreifen auf die Sites-Konsole {#sites-console}
 
-Die **AEM Site Admin-Erweiterung** ermöglicht den schnellen Zugriff auf die Seite, die in der [Sites-Konsole von AEM bearbeitet wird, ](/help/sites-cloud/authoring/sites-console/introduction.md) ermöglicht Ihnen die Navigation in der Site-Baumstruktur oder das Ausführen von Aktionen auf Seitenebene in der Konsole.
+Die **AEM-Erweiterung für Site Admin** ermöglicht den schnellen Zugriff auf die Seite, die in der [Sites-Konsole von AEM bearbeitet wird](/help/sites-cloud/authoring/sites-console/introduction.md), und ermöglicht Ihnen die Navigation in der Site-Baumstruktur oder das Ausführen von Aktionen auf Seitenebene in der Konsole.
 
-![In Site Admin-Symbol öffnen](assets/open-in-site-admin-icon.png)
+![Symbol „In Site Admin öffnen“](assets/open-in-site-admin-icon.png)
 
-Tippen oder klicken Sie auf das Symbol , um die Sites-Konsole in einer neuen Browser-Registerkarte zu öffnen, und navigieren Sie zur Seite, die sich derzeit im Editor befindet.
+Tippen oder klicken Sie auf das Symbol, um die Sites-Konsole in einem neuen Browser-Tab zu öffnen, und navigieren Sie zu der Seite, die sich derzeit im Editor befindet.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 ### Sperren und Entsperren von Seiten {#locking-pages}
 
-Die **AEM-Seitensperrerweiterung** zeigt den aktuellen Sperrstatus der Seite im Editor an und ermöglicht es Ihnen, die Seite zu [ oder zu entsperren.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+Die **AEM-Erweiterung für Seitensperren** zeigt den aktuellen Sperrstatus der Seite im Editor an und ermöglicht es Ihnen, die Seite zu [sperren oder zu entsperren](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page).
 
 Das Symbol **Entsperrt** in der Symbolleiste des universellen Editors zeigt an, dass die aktuell im Editor befindliche Seite nicht gesperrt ist.
 
@@ -258,60 +258,60 @@ Das Symbol **Entsperrt** in der Symbolleiste des universellen Editors zeigt an, 
 
 Tippen oder klicken Sie auf das Symbol, um die Seite zu sperren.
 
-Das Symbol **Gesperrt** in der Symbolleiste des universellen Editors zeigt an, dass die aktuell im Editor befindliche Seite gesperrt ist. Zeigen Sie mit der Maus auf das Symbol für eine QuickInfo, die den Benutzer angibt, der die Seite gesperrt hat.
+Das Symbol **Gesperrt** in der Symbolleiste des universellen Editors zeigt an, dass die aktuell im Editor befindliche Seite gesperrt ist. Bewegen Sie den Mauszeiger über das Symbol für eine QuickInfo mit Angabe der Person, die die Seite gesperrt hat.
 
-![Sperrsymbol](assets/locked-icon.png)
+![Symbol „Gesperrt“](assets/locked-icon.png)
 
-Tippen oder klicken Sie auf das Symbol, um die Seite zu entsperren, wenn Sie der Benutzer sind, der sie gesperrt hat.
+Tippen oder klicken Sie auf das Symbol, um die Seite zu entsperren, wenn Sie die Person sind, die sie gesperrt hat.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 >[!NOTE]
 >
->Die **AEM Page Lock-Erweiterung** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+>Die **AEM-Erweiterung für Seitensperren** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
 
 ### Workflows {#workflows}
 
-Mit der Erweiterung **AEM Workflows** können Sie [einen Workflow starten](/help/sites-cloud/authoring/workflows/overview.md) auf der Seite, die sich derzeit im Editor befindet.
+Die **AEM-Erweiterung für Workflows** ermöglicht das [Starten eines Workflows](/help/sites-cloud/authoring/workflows/overview.md) für die aktuell im Editor befindliche Seite.
 
-![Workflows-Symbol](assets/workflows-icon.png)
+![Symbol „Workflows“](assets/workflows-icon.png)
 
-Tippen oder klicken Sie auf das Symbol **Workflows** in der Symbolleiste des universellen Editors, um das Modal **Workflow starten** zu öffnen. Im Fenster werden die möglichen Inhalte aufgelistet, auf die Sie einen Workflow anwenden können.
+Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Symbol **Workflows**, um das Modal **Workflow starten** zu öffnen. Im Fenster werden die möglichen Inhalte aufgelistet, auf die Sie einen Workflow anwenden können.
 
-![Workflow-Modal starten](assets/start-a-workflow.png)
+![Modal „Workflow starten“](assets/start-a-workflow.png)
 
-1. Wählen Sie in **Dropdown-Liste** Workflow-Modell“ den anzuwendenden Workflow aus.
-1. Geben Sie eine Beschreibung für den Workflow im Feld **Name** an.
-1. Aktivieren Sie in **Liste „In Workflow einzuschließender Inhalt** die Kontrollkästchen, um festzulegen, welche Inhalte in den Workflow aufgenommen werden sollen.
-1. Tippen oder klicken Sie auf **Workflow starten**, um den Workflow zu starten, oder **Schließen**, um ihn abzubrechen.
+1. Wählen Sie in der Dropdown-Liste **Workflow-Modell** den anzuwendenden Workflow aus.
+1. Geben Sie im Feld **Name** eine Beschreibung für den Workflow an.
+1. Legen Sie in der Liste **In den Workflow aufzunehmender Content** anhand der Kontrollkästchen fest, welche Inhalte in den Workflow aufgenommen werden sollen.
+1. Tippen oder klicken Sie auf **Workflow starten**, um den Workflow zu starten, oder auf **Schließen**, um ihn abzubrechen.
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
-### Developer Login {#developer-login}
+### Anmeldung als Entwicklerin oder Entwickler {#developer-login}
 
-Die **AEM Universal Editor Dev Login Extension** ist für Entwicklerinnen und Entwickler nützlich, die lokal entwickeln, und ermöglicht eine praktische Methode zur Authentifizierung bei einer lokalen AEM SDK zu Testzwecken.
+Die **AEM-Erweiterung für die Anmeldung als Entwicklerin oder Entwickler beim universellen Editor** ist für Entwicklerinnen und Entwickler nützlich, die lokal entwickeln, und ermöglicht eine praktische Methode zur Authentifizierung bei einem lokalen AEM-SDK zu Testzwecken.
 
-![Entwickleranmeldesymbol](assets/developer-login-icon.png)
+![Symbol „Anmeldung als Entwicklerin oder Entwickler“](assets/developer-login-icon.png)
 
-Tippen oder klicken Sie auf das Symbol **Entwickleranmeldung** in der Symbolleiste des universellen Editors, um Ihre lokalen Anmeldedaten für die Anmeldung bei Ihrem lokalen AEM SDK anzugeben.
+Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Symbol **Anmeldung als Entwicklerin oder Entwickler**, um Ihre lokalen Anmeldedaten für die Anmeldung bei Ihrem lokalen AEM-SDK anzugeben.
 
-![Modal zur Entwickleranmeldung](assets/developer-login.png)
+![Modal „Anmeldung als Entwicklerin oder Entwickler“](assets/developer-login.png)
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
-## Optionale Funktionen des Bedienfelds „Eigenschaften“ {#properties-panel-options}
+## Optionale Funktionen des Panels „Eigenschaften“ {#properties-panel-options}
 
-Zusätzliche Funktionen sind als Erweiterungen des universellen Editors verfügbar, die Sie bei der weiteren Verwaltung Ihres Seiteninhalts unterstützen. [Diese Erweiterungen müssen in Ihrem Programm von einem Administrator aktiviert werden](/help/implementing/universal-editor/extending.md) bevor sie für Sie als Inhaltsautor bzw. Inhaltsautorin im [Eigenschaftenbereich des universellen Editors sichtbar sind.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Zusätzliche Funktionen sind als Erweiterungen des universellen Editors verfügbar und unterstützen Sie bei der weiteren Verwaltung Ihrer Seiteninhalte. [Diese Erweiterungen müssen in Ihrem Programm von einer bzw. einem Admin aktiviert werden](/help/implementing/universal-editor/extending.md), bevor sie für Sie als Inhaltsautorin bzw. Inhaltsautor in der [Symbolleiste des universellen Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) sichtbar sind.
 
 ### Varianten generieren {#generate-variations}
 
-Mit **Erweiterung „Varianten**&quot; können Sie generative künstliche Intelligenz (KI) verwenden, um Varianten für Ihre Inhalte direkt im Eigenschaftenbereich zu erstellen.
+Mit der Erweiterung **Varianten generieren** können Sie generative künstliche Intelligenz (KI) verwenden, um Varianten für Ihre Inhalte direkt im Panel „Eigenschaften“ zu erstellen.
 
 ![Symbol „Varianten generieren“](assets/generate-variations-icon.png)
 
-Tippen oder klicken Sie im Bedienfeld Eigenschaften des universellen Editors auf **Varianten erstellen**, um Empfehlungen zu erhalten und Varianten zu erstellen. Weitere Informationen zur Funktionsweise [ Generierung von Varianten finden Sie im Dokument ](/help/generative-ai/generate-variations-integrated-editor.md)Generieren von Varianten - integriert in AEM-Editoren“.
+Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Symbol **Varianten generieren**, um Empfehlungen zu erhalten und Varianten zu erstellen. Weitere Informationen zum Generieren von Varianten finden Sie im Dokument [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md).
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

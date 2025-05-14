@@ -8,7 +8,7 @@ exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 79%
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Wenn eine Seite Teil des MSM oder eines Launches ist und Inhalte mit dem univers
 
 Die Autorin oder der Autor muss zum Deaktivieren der Vererbung nicht erst auf eine Schaltfläche klicken oder andere Schritte unternehmen, bevor sie oder er lokale Bearbeitungen vornimmt. Sobald eine Änderung vorgenommen wurde, wird die Vererbung implizit abgebrochen. Dieser Workflow steht im Gegensatz zum [Seiteneditor](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
-Die Vererbung kann für die gesamte Seite über Folgendes rückgängig gemacht werden:
+Die Rücksetzung der Vererbung ist für die gesamte Seite möglich, und zwar über die
 
 * [Konsole „Live Copy-Übersicht“](/help/sites-cloud/administering/msm/live-copy-overview.md)
 * [Launch-Konsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
@@ -57,14 +57,14 @@ Der universelle Editor wirkt sich nicht auf den zugrundeliegenden Mechanismus de
 
 ### AEM-Erweiterung für Multi-Site-Management (MSM) {#msm-extension}
 
-Sofern installiert, zeigt die Erweiterung **AEM Multi-Site-Management (MSM)** den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die Vererbung auf Komponentenebene zu unterbrechen oder wiederherzustellen.
+Sofern installiert, zeigt die **AEM-Erweiterung für Multi-Site-Management (MSM)** den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die Vererbung auf Komponentenebene zu unterbrechen oder wiederherzustellen.
 
 Weitere Informationen zur Verwendung [ Erweiterung finden Sie in der Authoring-Dokumentation ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
 
-Informationen zum Aktivieren dieser Erweiterung finden [ in der Extension Manager-Dokumentation](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 ## Einschränkungen {#limitations}
 
-* Um die Vererbung für Einzelkomponenten rückgängig zu machen, muss die Erweiterung für die **AEM-Verwaltung mehrerer Websites (**) aktiviert sein.
-* Um mit visuellem Feedback zu ermitteln, für welche Komponenten die Vererbung deaktiviert ist und für welche die Vererbung weiterhin beibehalten wird, muss die Erweiterung für die **AEM-** (MSM) aktiviert sein.
+* Um die Vererbung für einzelne Komponenten zurückzusetzen, muss die **AEM-Erweiterung für Multi-Site-Management** aktiviert sein.
+* Um mithilfe von visuellem Feedback zu ermitteln, für welche Komponenten die Vererbung deaktiviert ist und für welche die Vererbung weiterhin beibehalten wird, muss die **AEM-Erweiterung für Multi-Site-Management (MSM)** aktiviert sein.
 * Diese Funktionen sind derzeit auf Komponenten auf Seiten beschränkt und gelten noch nicht für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md), obwohl diese ebenfalls MSM- und Launch-Funktionen aufweisen.

@@ -8,8 +8,8 @@ breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 3a35378389765538fc085fdf009816807c417f1f
 workflow-type: tm+mt
-source-wordcount: '6157'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -765,7 +765,7 @@ ht-degree: 99%
          + [Entwerfen eines XML-Schemas für ein adaptives Formular](/help/forms/adaptive-form-xml-schema-form-model.md)
    + Adaptive Formulare {#adaptive-forms-authoring}
       + [Erstellen eines adaptiven Formulars](/help/forms/create-an-adaptive-form.md)
-      + [Welche adaptiven Forms eignen sich am besten für Sie?](/help/edge/docs/forms/authoring-a-form.md)
+      + [Welche adaptiven Formulare eignen sich am besten für Sie?](/help/edge/docs/forms/authoring-a-form.md)
       + [Erstellen eines adaptiven Formularfragments](/help/forms/adaptive-form-fragments.md)
       + [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Kernkomponenten {#authoring-adaptive-forms-core-components}
