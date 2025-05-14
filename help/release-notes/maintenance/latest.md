@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 14%
 
 ---
@@ -33,9 +33,8 @@ Die Funktionsaktivierung von 2025.5.0 wird den vollen Funktionsumfang für diese
 * SITES-27775: Optimierte Referenzsuche während der Veröffentlichung.
 * SITES-30885: Optimierte JSON-Verarbeitung in persistierten Abfragen.
 * SITES-25433: Edge Delivery mit universellem Editor: Unterstützt das vollständige Seiten-Rendering beim Vergleichen alter Versionen.
-* SITES-27792: Edge Delivery mit universellem Editor: Verschieben der EDS-Konfiguration vollständig in die CA-Konfiguration.
+* SITES-27792: Edge Delivery mit universellem Editor: Spezifische Vorlage für Edge Delivery-Service-Konfigurationen hinzufügen
 * SITES-19754: Edge Delivery mit universellem Editor: Überzeugende Fehlermeldung, wenn das Setup beschädigt ist.
-* SITES-30267: Edge Delivery mit universellem Editor: Blatt V2 (Early Access).
 * SITES-30328: Edge Delivery mit universellem Editor: Vorschau von der Sidekick-Unterstützung.
 * SITES-23499: Edge Delivery mit universellem Editor: Lassen Sie die Verwendung mehrerer Felder für Blockoptionen zu.
 * SITES-29987: Hinzufügen einer Funktion zum Festlegen von `previewUrlPattern` beim Erstellen von Inhaltsfragmentmodellen.
