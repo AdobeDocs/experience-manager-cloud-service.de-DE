@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1729'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre
 
 Die Symbolleiste des universellen Editors befindet sich immer oben im Bildschirm, direkt unter der [Kopfzeile von Experience Cloud](#experience-cloud-header). Dadurch erhalten Sie schnellen Zugriff auf eine andere Seite zum Bearbeiten und Veröffentlichen der aktuellen Seite.
 
-Abhängig von der Konfiguration Ihres Programms kann es auch [zusätzliche Funktionen, die von Ihrem Administrator als Erweiterungen aktiviert wurden, enthalten.](#additional-toolbar-buttons)
+Abhängig von der Konfiguration Ihres Programms kann es auch [zusätzliche Funktionen enthalten, die von Ihrer bzw. Ihrem Admin als Erweiterungen aktiviert wurden.](#additional-toolbar-buttons)
 
 ![Die Symbolleiste des universellen Editors](assets/universal-editor-toolbar.png)
 
@@ -219,9 +219,9 @@ Beispielsweise ist über die Schaltfläche mit den Auslassungspunkten die Mögli
 
 Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn zusätzliche Schaltflächen in der Symbolleiste angezeigt werden, wurde Ihr universeller Editor erweitert.
 
-* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie [ der Authoring-Dokumentation des universellen Editors](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
-* Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors.](/help/implementing/universal-editor/extending.md)
-* Weitere Informationen zur Installation einer einzelnen Erweiterung finden Sie in der Dokumentation zu [Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung [finden Sie in der Dokumentation zum Authoring im universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options).
+* Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md).
+* Weitere Informationen zum Installieren einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### Der Editor {#editor}
 
@@ -237,7 +237,7 @@ Das Bedienfeld „Eigenschaften“ befindet sich immer auf der rechten Seite des
 
 ![Das Bedienfeld „Eigenschaften“](assets/properties-rail.png)
 
-Abhängig von der Konfiguration Ihres Programms kann es auch [zusätzliche Funktionen, die von Ihrem Administrator als Erweiterungen aktiviert wurden, enthalten.](#additional-properties-panel-buttons)
+Abhängig von der Konfiguration Ihres Programms kann es auch [zusätzliche Funktionen enthalten, die von Ihrer bzw. Ihrem Admin als Erweiterungen aktiviert wurden.](#additional-properties-panel-buttons)
 
 #### Eigenschaftenmodus {#properties-mode}
 
@@ -321,9 +321,9 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 
 Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebnis. Wenn Sie im Bedienfeld „Eigenschaften“ weitere Schaltflächen finden, wurde Ihr universeller Editor erweitert.
 
-* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung finden Sie [ der Authoring-Dokumentation des universellen Editors](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
-* Weitere Informationen zu Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors.](/help/implementing/universal-editor/extending.md)
-* Weitere Informationen zur Installation einer einzelnen Erweiterung finden Sie in der Dokumentation zu [Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Weitere Informationen zur Funktionsweise einer einzelnen Erweiterung [finden Sie in der Dokumentation zum Authoring im universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options).
+* Weitere Informationen zu den Erweiterungsmöglichkeiten finden Sie unter [Erweitern des universellen Editors](/help/implementing/universal-editor/extending.md).
+* Weitere Informationen zum Installieren einer einzelnen Erweiterung finden Sie in der [Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Nächste Schritte {#next-steps}
 

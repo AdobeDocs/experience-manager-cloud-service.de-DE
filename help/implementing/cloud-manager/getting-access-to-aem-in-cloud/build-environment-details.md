@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1595'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Erstellen Sie zum Festlegen der JDK-Version zur Maven-Ausführung eine Datei mit
 
 #### Voraussetzungen für die Migration zur Build-Erstellung mit Java 21 oder Java 17 {#prereq-for-building}
 
-Zum Erstellen mit Java 21 oder Java 17 verwendet Cloud Manager jetzt SonarQube 9.9, das mit diesen Java-Versionen kompatibel ist. Diese Änderung wurde mit Cloud Manager Version 2025.1.0 eingeführt. Für ein Upgrade von SonarQube ist keine Kundenaktion erforderlich. Weitere Informationen und Informationen zur Änderung finden Sie unter [Versionshinweise für Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
+Zum Erstellen mit Java 21 oder Java 17 verwendet Cloud Manager jetzt SonarQube 9.9, das mit diesen Java-Versionen kompatibel ist. Diese Änderung wurde mit Cloud Manager Version 2025.1.0 eingeführt. Für ein Upgrade von SonarQube ist keine Kundenaktion erforderlich. Weitere Informationen zur Änderung finden Sie in den [Versionshinweisen für Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
 Wenn Sie Ihre Anwendung auf eine neue Java-Build- und Runtime-Version migrieren, testen Sie sie gründlich in Entwicklungs- und Staging-Umgebungen, bevor Sie sie in der Produktion bereitstellen.
 
@@ -103,7 +103,7 @@ Die folgenden Funktionen funktionieren möglicherweise nicht ordnungsgemäß, we
 
 #### Laufzeitanforderungen {#runtime-requirements}
 
-Die Java 21-Laufzeit wird für Builds mit Java 21 und Java 17 verwendet und auch auf Java 11-Builds schrittweise angewendet (siehe Hinweis unten). Eine Umgebung muss auf AEM Version 17098 oder neuer ausgeführt werden, um das Java 21-Update zu erhalten. Zur Sicherstellung der Kompatibilität sind die folgenden Anpassungen erforderlich.
+Die Java 21-Laufzeitumgebung wird für Builds mit Java 21 und Java 17 verwendet und nach und nach auch auf Java 11-Builds angewendet (siehe Hinweis unten). Eine Umgebung muss auf AEM Version 17098 oder neuer ausgeführt werden, um das Java 21-Update zu erhalten. Zur Sicherstellung der Kompatibilität sind die folgenden Anpassungen erforderlich.
 
 Bibliotheksaktualisierungen können jederzeit angewendet werden, da sie mit älteren Java-Versionen kompatibel bleiben.
 

@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2546'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration fes
 
 >[!NOTE]
 >
->Für eine effektive Überwachung der Kundenumgebungen darf die standardmäßige Protokollebene nicht geändert werden. Ändern Sie außerdem nicht das standardmäßige Protokollierungsformat. Die Protokollausgabe muss an die Standarddateien weitergeleitet bleiben. Spezifische [ finden Sie ](#configuration-loggers) Abschnitt unten.
+>Um eine effektive Überwachung von Kundenumgebungen zu gewährleisten, darf die standardmäßige Protokollebene nicht geändert werden. Auch das standardmäßige Protokollierungsformat darf nicht geändert werden. Die Protokollausgabe muss an die Standarddateien weitergeleitet bleiben. Spezifische Richtlinien finden Sie [im folgenden Abschnitt](#configuration-loggers).
 
 **Beispiel einer Protokollausgabe**
 
@@ -158,12 +158,12 @@ Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete �
 
 Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM as a Cloud Service führen.
 
-Wie im vorherigen Abschnitt erwähnt, um eine effektive Überwachung von Kundenumgebungen sicherzustellen:
+Wie im vorherigen Abschnitt erwähnt, ist Folgendes erforderlich, um eine effektive Überwachung von Kundenumgebungen sicherzustellen:
 * Java-Protokolle für den Produkt-Code von AEM müssen die standardmäßige Protokollebene „INFO“ beibehalten und dürfen nicht durch benutzerdefinierte Konfigurationen überschrieben werden.
-* Es ist akzeptabel, die Protokollebenen für Produkt-Code auf DEBUG zu setzen. Verwenden Sie sie jedoch sparsam, um eine Leistungsbeeinträchtigung zu verhindern und wieder auf INFO zurückzusetzen, wenn sie nicht mehr benötigt wird.
-* Es ist akzeptabel, die Protokollebenen für vom Kunden entwickelten Code anzupassen.
-* Alle Protokolle - sowohl für den AEM-Produkt-Code als auch für den vom Kunden entwickelten Code - müssen das standardmäßige Protokollierungsformat beibehalten.
-* Die Protokollausgabe muss an die Standarddatei &quot;logs/error.log&quot; weitergeleitet bleiben.
+* Es ist akzeptabel, die Protokollebenen für Produkt-Code auf DEBUG zu setzen. Verwenden Sie die Option jedoch sparsam, um eine Leistungsbeeinträchtigung zu verhindern, und setzen Sie sie wieder auf INFO zurück, wenn sie nicht mehr benötigt wird.
+* Es ist akzeptabel, die Protokollebenen für den von der Kundin oder dem Kunden entwickelten Code anzupassen.
+* Alle Protokolle müssen das standardmäßige Protokollierungsformat beibehalten. Dies gilt sowohl für den AEM-Produkt-Code als auch für den von der Kundin oder dem Kunden entwickelten Code.
+* Die Protokollausgabe muss an die Standarddatei „logs/error.log“ weitergeleitet bleiben. 
 
 Zu diesem Zweck dürfen keine Änderungen an den folgenden OSGi-Eigenschaften vorgenommen werden:
 * **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) – *alle Eigenschaften*

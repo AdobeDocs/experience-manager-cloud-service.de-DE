@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -313,10 +313,10 @@ Um „Varianten generieren“ im Sidekick (von Edge Delivery Services) verwenden
 
 ### Zugriff über den universellen Editor von AEM {#access-aem-universal-editor}
 
-Der Zugriff über den universellen Editor {[&#128279;](/help/sites-cloud/authoring/universal-editor/authoring.md)} von AEM wird als Erweiterung implementiert.
+Der Zugriff über den [universellen Editor von AEM](/help/sites-cloud/authoring/universal-editor/authoring.md) wird als Erweiterung implementiert.
 
-* Weitere Informationen zum Zugriff auf das Generieren von Varianten im universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor“](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
-* Weitere Informationen zum Aktivieren der Erweiterung finden Sie im Dokument [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+* Weitere Informationen zum Zugriff auf „Varianten generieren“ über den universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations).
+* Weitere Informationen zum Aktivieren der Erweiterung finden Sie im Dokument [Extension Manager in AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/).
 
 ### Zugriff über den AEM-Inhaltsfragmenteditor {#access-aem-content-fragment-editor}
 
@@ -330,7 +330,7 @@ Weitere Informationen finden Sie auch unter:
 * [Experimente mit Edge Delivery Services](https://www.aem.live/docs/experimentation)
 * [Generative KI in Experience Cloud-Produkten](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai)
 
-   * [Generative KI in Experience Cloud-Produkten - Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai#aem)
+   * [Generative KI in Experience Cloud-Produkten – Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai#aem)
 
 ## Versionsverlauf {#release-history}
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Das Dashboard ist in drei Abschnitte unterteilt, die Ihnen Folgendes zeigen:
 * **Add-ons**: Die mit Ihren lizenzierten Lösungen verfügbaren Add-ons.
 * **Sonstige Berechtigungen**: Die Sandbox- und Entwicklungsumgebung sowie sonstigen Berechtigungen, die mandantenseitig genutzt werden können.
 
-In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfügbar sind und wie sie verwendet werden. Derzeit werden nur Sites- und Assets-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
+In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfügbar sind und wie sie verwendet werden. Derzeit werden nur Sites- und Asset-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
 
 * In der Spalte **Status** wird die Anzahl der nicht verwendeten Berechtigungen im Vergleich zur Gesamtanzahl angezeigt, die für den Mandanten verfügbar sind.
 * Die Spalte **Konfiguriert in** gibt die Programme an, auf die die Lösungsberechtigungen angewendet wurden.
@@ -118,7 +118,7 @@ AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlic
 
 Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
 
-### Warum zeigt mein Analytics-Bericht andere Ergebnisse an als die AEM-Inhaltsanfragen?{#why-are-reports-different}
+### Warum zeigt mein Analytics-Bericht andere Ergebnisse als die AEM-Inhaltsanfragen an?{#why-are-reports-different}
 
 Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools eines Unternehmens auf. Weitere Informationen finden Sie unter [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
 
@@ -128,6 +128,6 @@ Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, 
 
 ### Was passiert, wenn ich mein eigenes CDN verwende?{#using-own-cdn}
 
-Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden. Wenn Sie sich für das Mitbringen Ihres eigenen CDN (BYOCDN) entscheiden, melden Sie das in Ihrem Vertrag festgelegte Inhaltsanfragevolumen einmal jährlich an Adobe.
+Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden. Wenn Sie sich für ein eigenes CDN (BYOCDN) entscheiden, melden Sie das in Ihrem Vertrag festgelegte Inhaltsanfragevolumen einmal jährlich an Adobe.
 
 
