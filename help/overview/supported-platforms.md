@@ -5,13 +5,13 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 22d4e6b5f87221b2739cf1dd9d59b4652a014316
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 26%
 
 ---
-
 
 # Unterstützte Client-Plattformen {#supported-platforms}
 
@@ -35,9 +35,9 @@ Adobe definiert die folgenden Unterstützungsebenen für die Clientplattformen v
 
 Die Benutzeroberfläche von AEM ist für größere Bildschirme optimiert, die sich in Notebooks, Desktop-Computern und Tablet-Geräten (wie Apple iPad oder Microsoft Surface) befinden. Der Telefon-Formfaktor wird für keinen Anwendungsfall beim Authoring unterstützt.
 
-Die Benutzeroberfläche von Adobe Experience Manager funktioniert je nach Authoring[Methode mit den folgenden Clientplattformen](/help/edge/authoring-methods.md)
+Die Benutzeroberfläche von Adobe Experience Manager funktioniert je nach Authoring[Methode mit den folgenden Clientplattformen](/help/edge/overview.md#authoring-method)
 
-* [universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
+* [Universeller Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md)
 * [Dokumentenbasiertes Authoring](/help/edge/docs/authoring.md) mithilfe der [Sidekick](/help/edge/docs/sidekick.md)
 
