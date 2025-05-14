@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
-workflow-type: ht
-source-wordcount: '2767'
-ht-degree: 100%
+source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
+workflow-type: tm+mt
+source-wordcount: '2850'
+ht-degree: 96%
 
 ---
 
@@ -31,9 +31,9 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 
 Beschränkungen:
 
-* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt.
-* Es werden nur Standard-Analyzer unterstützt (d. h. die Analyzer, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
+* Derzeit wird die Indexverwaltung auf AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt. Das bedeutet, dass alle Indexanpassungen vom Typ `lucene` sein müssen. Die `async`-Eigenschaft kann nur eine der folgenden Eigenschaften sein: `[async]`, `[async,nrt]` oder `[fulltext-async]`.
 * Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen für den `damAssetLucene`-Index geschrieben wurden, können auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für die Anwendung und die Benutzenden normalerweise nicht sichtbar, jedoch melden bestimmte Tools wie die `explain`-Funktion einen anderen Index. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie in der [Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können kundenseitig nicht direkt konfiguriert werden.
+* Es werden nur Standard-Analyzer unterstützt (d. h. die Analyzer, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 * Die Suche nach ähnlichen Funktionsvektoren (`useInSimilarity = true`) wird nicht unterstützt.
 
 >[!TIP]
@@ -78,6 +78,9 @@ Bereiten Sie für Anpassungen eines vorkonfigurierten Indexes ein neues Paket vo
 Bereiten Sie für einen vollständig angepassten Index ein neues Indexdefinitionspaket vor, das die Indexdefinition enthält und diesem Namensmuster folgt:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
+
+Wie in den Abschnitten Einschränkungen erwähnt, muss der `type` der angepassten Indexdefinition immer auf `lucene` festgelegt werden, auch wenn die extrahierte Indexdefinition unter Verwendung von Package Manager einen anderen Typ aufweist (z. B. `elasticsearch`).
+Die `async`-Eigenschaft muss auch geändert werden, wenn die extrahierte Indexdefinition auf `elastic-async` festgelegt ist. Für die `async` Indexdefinition muss eine der folgenden Eigenschaften festgelegt werden: `[async]`, `[async,nrt]` oder `[fulltext-async]`.
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
