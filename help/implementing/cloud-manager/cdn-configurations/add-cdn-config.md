@@ -1,19 +1,19 @@
 ---
-title: Hinzufügen einer CDN-Konfiguration
-description: Erfahren Sie, wie Sie eine CDN-Konfiguration für eine Edge Delivery-Site oder eine Cloud Manager-Umgebung hinzufügen.
+title: Hinzufügen einer Domain-Zuordnung
+description: Erfahren Sie, wie Sie eine Domain-Zuordnung für eine Edge Delivery-Site oder eine Cloud Manager-Umgebung hinzufügen.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
-workflow-type: ht
+source-git-commit: b3254d0a2194cb90d9eafd39978dcbdbd5e93610
+workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 
-# Hinzufügen einer CDN-Konfiguration {#add-cdn}
+# Hinzufügen einer Domain-Zuordnung {#add-cdn}
 
 Um eine Domain mit einem SSL-Zertifikat im von Adobe verwalteten CDN in Ihrem Programm zu verknüpfen, müssen Sie eine CDN(Content Delivery Network)-Konfiguration hinzufügen.
 
@@ -25,7 +25,7 @@ Bei von Adobe verwalteten CDNs sind bei Verwendung von DV-SSL-Zertifikaten nur S
 
 Siehe auch [Von Adobe verwaltetes CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
-**So fügen Sie eine CDN-Konfiguration hinzu:**
+**So fügen Sie eine Domain-Zuordnung hinzu:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
