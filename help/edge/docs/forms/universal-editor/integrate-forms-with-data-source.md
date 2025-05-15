@@ -3,13 +3,11 @@ title: Wie lässt sich das Formulardatenmodell (FDM) für ein Formular im univer
 description: Erfahren Sie, wie Sie Formulare basierend auf einem Formulardatenmodell (FDM) zu erstellen. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
-hide: true
-hidefromtoc: true
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +15,13 @@ ht-degree: 100%
 
 Durch das Integrieren von Formularen mit einem Formulardatenmodell (FDM) im universellen Editor können Sie verschiedene Backend-Datenquellen verwenden, um ein Formulardatenmodell (FDM) zu erstellen. Sie können das Formulardatenmodell (FDM) als Schema in verschiedenen Formular-Workflows verwenden. Konfigurieren Sie die Datenquellen und erstellen Sie ein Formulardatenmodell (FDM) basierend auf den Datenmodellobjekten und Diensten, die in den Datenquellen verfügbar sind. 
 
-## Überlegung
+## Überlegungen
+
+* Wenn das Symbol **Datenquellen** in der Benutzeroberfläche des universellen Editors oder die Eigenschaft **Bindungsverweis** im rechten Eigenschaftenbereich nicht angezeigt wird, aktivieren Sie die Erweiterung **Datenquelle** in der **Extension Manager**.
+
+  ![Erweiterungs-Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+
+  Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) Sie im Artikel [Extension Manager-Feature-Highlights .
 
 * Der Vorbefüllungsdienst für Formulare im universellen Editor wird derzeit nicht unterstützt.
 
@@ -32,6 +36,7 @@ Vor dem Konfigurieren des Formulardatenmodells im universellen Editor müssen Si
 ## Erstellen von Formularen mit dem Formulardatenmodell im universellen Editor
 
 Im universellen Editor können Sie Folgendes erstellen:
+
 * [Schemabasiertes Formular](#schema-based-form): Ein schemabasiertes Formular verwendet eine Datenquelle, die während der Formularerstellung auf der Registerkarte **Daten** konfiguriert wurde, um Daten automatisch an Formularfelder zu binden.
 * [Nicht schemabasiertes Formular](#non-schema-based-form): Bei einem nicht schemabasierten Formular müssen Sie manuell eine Datenquelle hinzufügen und jedes Feld aus der Inhaltsstruktur binden.
 
@@ -44,14 +49,14 @@ Diese Methoden bieten Ihnen die Flexibilität, Datenmodelle je nach Bedarf mit F
 Wenn Sie ein schemabasiertes Formular erstellen, wird es automatisch mit einer Datenquelle konfiguriert, wobei die Formularfelder bereits über Datenbindungen mit den Daten verknüpft sind. Um ein schemabasiertes Formular mithilfe des Assistenten für die Formularerstellung zu erstellen, führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Autoreninstanz an.
-2. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wenn Sie sich angemeldet haben, wählen Sie in der oberen linken Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
-3. Klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptives Formular]**. Der Assistent wird geöffnet. Wählen Sie auf der Registerkarte **Quelle** eine Vorlage aus:
+1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wenn Sie sich angemeldet haben, wählen Sie in der oberen linken Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptives Formular]**. Der Assistent wird geöffnet. Wählen Sie auf der Registerkarte **Quelle** eine Vorlage aus:
 
    ![Vorlage von Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
    Wenn Sie eine auf Edge Delivery Services basierende Vorlage auswählen, ist die Schaltfläche **[!UICONTROL Erstellen]** aktiviert. Sie können die Registerkarte **[!UICONTROL Datenquelle]** oder **[!UICONTROL Übermittlung]** verwenden, um eine Datenquelle oder eine Übermittlungsaktion auszuwählen.
 
-4. Auf der Registerkarte **Daten** können Sie eines der folgenden Datenmodelle auswählen:
+1. Auf der Registerkarte **Daten** können Sie eines der folgenden Datenmodelle auswählen:
 
    * **Formulardatenmodell (FDM)**: Zum Integrieren von Datenmodellobjekten und Diensten aus Datenquellen in Ihr Formular. Wählen Sie „Formulardatenmodell (FDM)“, wenn Ihr Formular das Lesen und Schreiben von Daten aus mehreren Quellen erfordert.
 
@@ -64,11 +69,11 @@ Wenn Sie ein schemabasiertes Formular erstellen, wird es automatisch mit einer D
 
      Standardmäßig werden alle Felder des zugehörigen JSON-Schemas oder Formdatenmodells (FDM) automatisch ausgewählt und in entsprechende Formularkomponenten konvertiert, was den Erstellungsprozess vereinfacht. Im Assistenten können Sie mithilfe von Kontrollkästchen auch selektiv auswählen, welche Felder in das Formular aufgenommen werden sollen.
 
-5. Klicken Sie auf **[!UICONTROL Erstellen]**. Daraufhin wird der Assistent **Formular erstellen** angezeigt.
-6. Geben Sie den **Namen** und den **Titel** an.
-7. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. Daraufhin wird der Assistent **Formular erstellen** angezeigt.
+1. Geben Sie den **Namen** und den **Titel** an.
+1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
    `https://github.com/wkndforms/edsforms`
-8. Klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![Erstellen eines schemabasierten Formulars](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
@@ -128,12 +133,29 @@ Wenn Sie ein nicht schemabasiertes Formular erstellen, wird keine Datenquelle ko
 
    ![Erstellen eines Formulars](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   Sie müssen die Datenbindung manuell zu einem Formularelement hinzufügen, indem Sie sie in den **Bindungsverweis**-Eigenschaften des Formularelements angeben.
-Fügen wir beispielsweise einen Datenbindungsverweis auf das Textfeld **Haustiername** hinzu, das bereits im Formular vorhanden ist:
+Sie können einem Formularfeld Datenbindung hinzufügen, indem Sie es aus der Eigenschaft &quot;**&quot;**. Fügen wir beispielsweise einen Datenbindungsverweis auf das Textfeld **id** hinzu, das bereits im Formular vorhanden ist.
+Um die Datenbindung für das Formularfeld aus der Datenquellenstruktur auszuwählen, führen Sie die folgenden Schritte aus:
+
+1. Öffnen Sie die Eigenschaften des Formularfelds, für das Sie den Datenbindungsverweis hinzufügen möchten.
+1. Wechseln Sie zur Eigenschaft **Bindungsverweis** und klicken Sie auf das Symbol **Durchsuchen**.
 
    ![Manuelles Hinzufügen der Datenbindung für ein Formularfeld](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-   Sie können jetzt die [Übermittlungsaktion](/help/edge/docs/forms/universal-editor/submit-action.md) für Ihr Formular hinzufügen und konfigurieren.
+1. Wählen Sie die Datenbindungsreferenz aus der Datenquellenstruktur im **Bindungsverweis auswählen** .
+
+   ![Datenbindungsverweis auswählen](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+
+1. Wählen Sie das Datenelement in der Datenquellenstruktur aus, das Sie an das Formularfeld binden möchten, und klicken Sie auf **Auswählen**.
+
+   ![Datenelement auswählen](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+
+   Das Formularfeld wird an das Datenelement gebunden und in der Eigenschaft &quot;**&quot;**.
+
+   ![Automatische Datenbindung](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+
+   Sie können die Eigenschaft **Bindungsverweis** für das Formularfeld auch manuell bearbeiten.
+
+Sie können jetzt die [Übermittlungsaktion](/help/edge/docs/forms/universal-editor/submit-action.md) für Ihr Formular hinzufügen und konfigurieren.
 
 ## Siehe auch
 
