@@ -44,7 +44,7 @@ Aktivieren Sie zunächst bearbeitbare Vorlagen für die Konfiguration Ihrer Site
 Sobald die Konfiguration aktiviert ist, müssen Sie Vorlagen für Ihre Site zulassen.
 
 1. Verwenden Sie die **Sites**-Konsole und [wählen Sie das Stammverzeichnis Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
-1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol ](/help/sites-cloud/authoring/sites-console/page-properties.md) [**Eigenschaften** in der Symbolleiste.
+1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol [&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md) **Eigenschaften** in der Symbolleiste.
 1. Tippen oder klicken Sie auf der Registerkarte **Erweitert** des Eigenschaftsdialogs unter dem Abschnitt **Vorlageneinstellungen** auf die Schaltfläche **Hinzufügen**.
 1. Fügen Sie in dem neuen, leeren Feld, das unter **Zulässige Vorlagen** angezeigt wird, den Pfad `/conf/<site>/settings/wcm/templates/.*` hinzu.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
