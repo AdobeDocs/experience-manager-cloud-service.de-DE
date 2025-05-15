@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2025.5.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1050'
 ht-degree: 16%
 
 ---
@@ -166,13 +166,13 @@ Nehmen Sie am Early-Adopter-Programm von Cloud Manager teil, um exklusiven Zugri
 
 Die folgenden Early-Adopter-Möglichkeiten stehen derzeit zur Verfügung:
 
-### Pipeline von Edge Delivery hinzufügen {#add-eds-pipeline}
+### Edge Delivery-Konfigurations-Pipeline hinzufügen {#add-eds-pipeline}
 
-**Pipelines** werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, wodurch diese Funktion über Cloud Service-Umgebungen hinaus erweitert wird. Sie können **Pipelines** verwenden, um Einstellungen wie Traffic-Filterregeln und gegebenenfalls Konfigurationen der Web Application Firewall (WAF) zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
+Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, wodurch diese Funktion über Cloud Service-Umgebungen hinaus erweitert wird. Sie können **Konfigurations-Pipelines** verwenden, um Einstellungen wie Traffic-Filterregeln und gegebenenfalls Konfigurationen der Web Application Firewall (WAF) zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![Edge Delivery-Pipeline hinzufügen in der Dropdown-Liste „Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an grp-aemeds-config-pipeline-adopter@adobe.com.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an [grp-aemeds-config-pipeline-adopter@adobe.com.
 
 ### Holen Sie Ihr eigenes Git - jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
