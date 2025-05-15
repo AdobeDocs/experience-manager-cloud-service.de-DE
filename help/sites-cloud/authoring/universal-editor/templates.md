@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Schließen Sie den Assistenten wie bei jeder anderen Seite ab. Jetzt haben Sie d
 
 Seitenvorlagen definieren nur den anfänglichen Inhalt von Seiten. Seiten können dann mit dem universellen Editor vollständig bearbeitet werden.
 
-* Aus Seitenvorlagen erstellte Seiten sind unabhängige Kopien der Vorlage.
+* Seiten, die aus Seitenvorlagen erstellt wurden, sind unabhängige Kopien der Vorlage.
 * Wenn sich die Vorlage ändert, bleiben die vorhandenen Seiten, die auf dieser Vorlage basieren, unverändert.
 * Die Inhaltsautorin bzw. der Inhaltsautor kann den Inhalt der resultierenden Seite nach Bedarf ändern und aktualisieren, ohne Einschränkungen durch die Vorlage zu unterliegen.
 
@@ -89,4 +89,4 @@ Seitenvorlagen definieren nur den anfänglichen Inhalt von Seiten. Seiten könne
 
 Mit dem [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) erstellte Seiten können ebenfalls auf Vorlagen basieren. Vorlagen, die zum Erstellen von Seiten für den universellen Editor und den Seiteneditor verwendet werden, nutzen die [bearbeitbaren Vorlagen](/help/implementing/developing/components/templates.md) von AEM.
 
-Vorlagen, mit denen mit dem Seiteneditor bearbeitbare Seiten erstellt werden, nutzen alle Funktionen bearbeitbarer Vorlagen. Vorlagen zum Erstellen von Seiten, die mit dem universellen Editor bearbeitbar sind, verwenden nur die Funktion für den anfänglichen Inhalt.
+Vorlagen, mit denen mit dem Seiteneditor bearbeitbare Seiten erstellt werden, nutzen alle Funktionen bearbeitbarer Vorlagen. Vorlagen, die zum Erstellen von mit dem universellen Editor bearbeitbaren Seiten verwendet werden, verwenden nur die anfängliche Inhaltsfunktion.
