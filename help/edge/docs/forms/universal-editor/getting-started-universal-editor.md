@@ -71,6 +71,7 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
       ![Öffnen der Datei „fstab.yaml“](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. Bearbeiten Sie die Datei **fstab.yaml**, um den Bereitstellungspunkt Ihres Projekts zu aktualisieren. Ersetzen Sie die URL durch die URL Ihrer AEM as a Cloud Service-Autoreninstanz.
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![Bearbeiten der Datei „fstab.yaml“ ](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -344,7 +345,7 @@ Sie können eine lokale AEM-Entwicklungsumgebung einrichten, um benutzerdefinier
        npm install -g @adobe/aem-cli
    ```
 
-1. **GitHub-Projekt klonen**: Klonen Sie Ihr AEM-Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie die Platzhalter <owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und <repo> mit dem Repository-Namen:
+1. **GitHub-Projekt klonen**: Klonen Sie Ihr AEM-Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie die Platzhalter &lt;owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und &lt;repo> mit dem Repository-Namen:
 
    ```
    git clone https://github.com/<owner>/<repo>

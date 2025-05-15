@@ -21,7 +21,7 @@ Durch das Integrieren von Formularen mit einem Formulardatenmodell (FDM) im univ
 
   ![Erweiterungs-Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) Sie im Artikel [Extension Manager-Feature-Highlights .
+  Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) Sie im Artikel Extension Manager-Feature-Highlights .
 
 * Der Vorbefüllungsdienst für Formulare im universellen Editor wird derzeit nicht unterstützt.
 
