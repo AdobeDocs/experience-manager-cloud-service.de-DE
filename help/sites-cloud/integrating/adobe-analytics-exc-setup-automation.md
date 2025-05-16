@@ -5,14 +5,18 @@ feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 100%
+source-wordcount: '727'
+ht-degree: 98%
 
 ---
 
 # Integrieren von Adobe Analytics mit Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
+
+>[!CAUTION]
+>
+>Die Funktion zur Automatisierung der Einrichtung von Experience Cloud wird nicht mehr unterstützt.
 
 Die Automatisierung der Einrichtung von Experience Cloud bietet einen einfachen und automatisierten Weg zur Integration und Instrumentalisierung von Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche mit Assistenten.
 

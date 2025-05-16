@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
+source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2560'
 ht-degree: 97%
 
 ---
@@ -48,6 +48,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Integrationen mit Anmeldedaten, die aus Adobe Developer Console-Projekten generiert wurden, verlieren schrittweise die Unterstützung für Service-Konto-Anmeldedaten (JWT). Seit dem 1. Mai 2024 können in Adobe Developer Console keine neuen Anmeldedaten für Service-Konten (JWT) mehr erstellt werden. Vorhandene Anmeldedaten für Service-Konten (JWT) bleiben bis zum 1. Januar 2025 für konfigurierte Integrationen nutzbar. Danach funktionieren sie nicht mehr, sodass Kundinnen und Kunden zu OAuth-Server-zu-Server-Anmeldedaten migrieren müssen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
 | [!DNL Foundation] | Der Workflow für die Veröffentlichung der Inhaltsstruktur und der zugehörige Workflow-Schritt für die Veröffentlichung der Inhaltsstruktur, der für die Replikationen von Inhaltshierarchien verwendet wurde. | Verwenden Sie den [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation), der leistungsfähiger ist. |
+| Sites | [Automatisierung der Experience Cloud-Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Keine |
 
 
 ## Entfernte Funktionen {#removed-features}
