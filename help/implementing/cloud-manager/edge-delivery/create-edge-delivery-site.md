@@ -1,21 +1,23 @@
 ---
-title: Erstellen einer Edge Delivery-Site in Cloud Manager mit einem Klick
+title: Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick
 description: Erfahren Sie, wie Sie mit einem Klick in Cloud Manager schnell eine Edge Delivery-Site erstellen können.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 767b1f89f42340cc9307a43ff9e97e9a074e592e
+source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 97%
+source-wordcount: '945'
+ht-degree: 95%
 
 ---
 
-# Über die Erstellung einer Edge Delivery-Site in Cloud Manager mit einem Klick{#about-one-click-edge-delivery-site}
+# Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick{#about-one-click-edge-delivery-site}
 
-Die Funktion zum Erstellen einer Edge Delivery-Site wurde entwickelt, um das Onboarding und die Bereitstellung von Edge Delivery-Sites in Cloud Manager zu automatisieren. Dies vereinfacht den Prozess erheblich, da Sie nur auf eine einzige Schaltfläche klicken müssen. Mit diesem einen Klick erreichen Sie, dass die erforderliche Infrastruktur bereitgestellt, eine Integration mit GitHub zur Versionskontrolle durchgeführt und Ihr Dokument- und Asset-Speicher in Google Drive konfiguriert wird.
+Die Erstellung Ihrer ersten Edge Delivery-Site mit einem Klick hilft Ihnen bei der Automatisierung des Onboarding und der Bereitstellung von Edge Delivery-Sites in Cloud Manager. Dies vereinfacht den Prozess erheblich, da Sie nur auf eine einzige Schaltfläche klicken müssen. Mit diesem einen Klick erreichen Sie, dass die erforderliche Infrastruktur bereitgestellt, eine Integration mit GitHub zur Versionskontrolle durchgeführt und Ihr Dokument- und Asset-Speicher in Google Drive konfiguriert wird.
 
 Diese Automatisierung trägt dazu bei, den manuellen Aufwand bei der Einrichtung Ihrer ersten Site zu reduzieren. Auf diese Weise werden nicht nur nahtlose Workflows sowie Skalierbarkeit sichergestellt, sondern auch die Leistung Ihrer Teams bei der Verwaltung von Inhalten am Edge verbessert.
+
+<!-- ADD LINK TO DORU'S VIDEO DEMO -->
 
 <!-- >
 ## Practical use cases {#use-cases}
