@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '2566'
-ht-degree: 100%
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
+workflow-type: tm+mt
+source-wordcount: '2567'
+ht-degree: 99%
 
 ---
 
@@ -166,14 +166,14 @@ Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, d
 ![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[In neuem Editor öffnen](#editing-the-content-of-your-fragment)**
-* **[Öffnen](/help/assets/content-fragments/content-fragments-variations.md)** (im ursprünglichen Editor)
 * **[Veröffentlichen](#publishing-and-previewing-a-fragment)** (und **[Veröffentlichung rückgängig machen](#unpublishing-a-fragment)**)
 * **[Tags verwalten](#manage-tags)**
-* **[Kopieren](/help/assets/manage-digital-assets.md)**
-* **[Verschieben](/help/assets/manage-digital-assets.md)**
-* **[Umbenennen](/help/assets/manage-digital-assets.md)**
-* **[Löschen](#deleting-a-fragment)**
+* **Kopieren**
 * **[Ersetzen](#find-and-replace)**
+* **Verschieben**
+* **Umbenennen**
+* **[Löschen](#deleting-a-fragment)** (nur für nicht veröffentlichte Fragmente verfügbar)
+
 
 >[!NOTE]
 >
