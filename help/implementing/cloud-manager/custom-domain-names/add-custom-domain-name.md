@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-custom-domain-name-settings}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -75,7 +75,7 @@ Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://`
 
    >[!NOTE]
    >
-   >Wenn Sie Ihr eigenes kundenverwaltetes SSL-Zertifikat (OV/EV oder DV) verwenden, müssen Sie kein SSL-Zertifikat hinzufügen. Diese Regel gilt auch, wenn Sie planen, ein vom Kunden verwaltetes CDN (Content Delivery Network) (***)***. Gehen Sie stattdessen direkt zu [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md), sobald Sie dazu bereit sind.
+   >Wenn Sie Ihr eigenes kundenseitig verwaltetes SSL-Zertifikat (OV/EV oder DV) verwenden, müssen Sie kein SSL-Zertifikat hinzuzufügen. Diese Regel gilt auch, wenn Sie planen, einen ***Anbieter*** eines kundenseitig verwalteten CDNs (Content Delivery Network) zu verwenden. Gehen Sie stattdessen direkt zu [Domain-Zuordnung hinzufügen](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) wenn Sie bereit sind.
 
 
 ### Schritte bei verwalteten Adobe-Zertifikaten {#adobe-managed-cert-steps}

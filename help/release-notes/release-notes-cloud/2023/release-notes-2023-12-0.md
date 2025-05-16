@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2023.12.0 von [!DNL Adobe Experience
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -51,7 +51,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 Der Real Use Monitoring-Datendienst (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann jetzt außerdem die automatisierte Traffic-Berichterstellung aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie eine E-Mail an `aemcs-rum-adopter@adobe.com` sowie Ihren Domain-Namen für die Produktions-, Staging- und Entwicklungsumgebung über Ihre mit Ihrer Adobe ID verknüpfte E-Mail-Adresse. Das Produktteam von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie eine E-Mail an `aemcs-rum-adopter@adobe.com` sowie Ihren Domain-Namen für die Produktions-, Staging- und Entwicklungsumgebung über Ihre mit Ihrer Adobe ID verknüpfte E-Mail-Adresse. Das Produkt-Team von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -105,7 +105,7 @@ Sie können jetzt Inhalte einfach finden, indem Sie ein Bild auswählen und ähn
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
-### Early-Adopter-Programm für die CDN-Konfiguration {#cdn-config-early-adopter}
+### Early-Adopter-Programm für die Domain-Zuordnung {#cdn-config-early-adopter}
 
 Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), die die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es die Möglichkeit, die Konfigurations-Pipeline zu verwenden, um andere Arten von CDN-Konfigurationen zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
 * 301/302 Client-seitige Umleitungen

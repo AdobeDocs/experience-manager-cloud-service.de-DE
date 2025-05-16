@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
-workflow-type: ht
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+workflow-type: tm+mt
 source-wordcount: '1713'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,7 +60,7 @@ Zur weiteren Vervollständigung der Liste der neuen Client-seitigen Benutzerober
 
 Dynamic Media (Scene7) auf AEM as a Cloud Service ist nicht HIPAA-fähig und kann nicht in AEM-Umgebungen verwendet werden, in denen die erweiterte Sicherheit aktiviert ist.
 
-Ab der AEM as a Cloud Service-Version vom April 2025 verhindert eine technische Einschränkung, dass Dynamic Media (Scene7) in Umgebungen mit verbesserter Sicherheit konfiguriert wird. Infolgedessen ist die Karte **Dynamic Media-Konfiguration** unter **Tools** > **Cloud Services** in diesen Umgebungen nicht mehr sichtbar.
+Ab der AEM as a Cloud Service-Version April 2025 verhindert eine technische Einschränkung, dass Dynamic Media (Scene7) in Umgebungen mit verbesserter Sicherheit konfiguriert wird. Infolgedessen ist die Karte **Dynamic Media-Konfiguration** unter **Tools** > **Cloud Services** in diesen Umgebungen nicht mehr sichtbar.
 
 Kunden, die AEM 6.5 verwenden, sollten außerdem beachten, dass der Stack von Dynamic Media (Scene7) nicht HIPAA-fähig ist.
 
@@ -137,7 +137,7 @@ In diesem Video erfahren Sie, wie Sie ein authentifiziertes API für die später
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-### Verbesserungen bei der CDN-Konfiguration {#cdn-enhancements}
+### Verbesserungen bei der Domain-Zuordnung {#cdn-enhancements}
 
 Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel [Konfigurations-Pipelines konfigurieren](/help/operations/config-pipeline.md#configurations) beschrieben. Im Folgenden finden Sie einige aktuelle Funktionen:
 

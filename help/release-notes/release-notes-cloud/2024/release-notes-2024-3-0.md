@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.3.0 von [!DNL Adobe Experience 
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2293'
 ht-degree: 95%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Werfen Sie einen Blick auf das Video „Versionsübersicht März 2024“ für eine Zusammenfassung der neuen Funktionen in der Version 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450368?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ AEM Sites kann jetzt als Inhaltsquelle für Edge Delivery Services verwendet wer
 
 ![AEM-Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=de#M43905?lang=de)
+Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905?lang=de)
 
 **Universeller Editor für Headless-Implementierungen**
 
@@ -191,7 +191,7 @@ Der Real Use Monitoring-Datendienst (RUM) bietet eine präzisere Darstellung der
 
   Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in der E-Mail den Domain-Namen für jede Umgebung an, für die Sie RUM aktivieren möchten. Das Produkt-Team von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
 
 ### Early-Adopter-Programm {#foundation-early-adopter}
 
@@ -201,7 +201,7 @@ Die kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-fi
 
 Sie können jetzt eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>** senden, um dem Early-Adopter-Programm beizutreten, damit Sie benachrichtigt werden, sobald Ihre Traffic-Filterregeln ausgelöst werden. Aktionszentrum-E-Mail-Benachrichtigungen informieren Sie darüber, wann bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
 
-#### CDN-Konfiguration (Early-Adopter-Programm) {#cdn-config-early-adopter}
+#### Domain-Zuordnung (Early-Adopter-Programm) {#cdn-config-early-adopter}
 
 Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), welche die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es eine Möglichkeit, die Konfigurations-Pipeline zum Deklarieren und Bereitstellen anderer Typen von CDN-Konfigurationen zu verwenden. [Weitere Informationen dazu finden Sie hier](/help/implementing/dispatcher/cdn-configuring-traffic.md). Sie haben außerdem die Möglichkeit, dem Early-Adopter-Programm beitreten. Schreiben Sie einfach eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>**, um Zugriff zu den folgenden Ressourcen zu erhalten:
 

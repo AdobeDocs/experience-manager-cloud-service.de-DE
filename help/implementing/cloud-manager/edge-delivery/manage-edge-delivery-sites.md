@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie einer Edge Delivery-Site eine CDN-Konfigurati
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
-workflow-type: ht
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 Erfahren Sie, wie Sie Edge Delivery-Sites in Cloud Manager verwalten, indem Sie einer vorhandenen Site eine CDN-Konfiguration hinzufügen. oder eine Edge Delivery-Site löschen.
 
-## Hinzufügen einer CDN-Konfiguration zu einer vorhandenen Edge Delivery-Site {#add-cdn-to-edge-delivery-site}
+## Hinzufügen einer Domain-Zuordnung zu einer bestehenden Edge Delivery-Site {#add-cdn-to-edge-delivery-site}
 
-Siehe [Hinzufügen einer CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+Siehe [Hinzufügen einer Domain-Zuordnung](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 ## Umbenennen einer Edge Delivery-Site (#rename-edge-delivery-site)
 

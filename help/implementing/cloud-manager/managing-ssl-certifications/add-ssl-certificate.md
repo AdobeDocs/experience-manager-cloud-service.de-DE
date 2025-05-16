@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
-workflow-type: ht
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie mit Cloud Ihr eigenes SSL- oder ein von Adobe verwaltetes 
 
 >[!NOTE]
 >
->Wenn Sie ein kundenseitig verwaltetes (OV/EV) SSL-Zertifikat und einen kundenseitig verwalteten CDN-Anbieter verwenden, brauchen Sie kein SSL-Zertifikat hinzuzufügen und können direkt zu [CDN-Konfiguration hinzufügen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) gehen, sobald Sie bereit sind.
+>Wenn Sie ein kundenverwaltetes (OV/EV) SSL-Zertifikat und einen kundenverwalteten CDN-Anbieter verwenden, können Sie das Hinzufügen eines SSL-Zertifikats überspringen und direkt zu [Domain-Zuordnung hinzufügen](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) wechseln, wenn Sie bereit sind.
 
 Die Bereitstellung eines Zertifikats kann mehrere Tage dauern. Adobe empfiehlt daher, dass Sie Ihr eigenes Zertifikat frühzeitig vor Ablauf einer Frist oder dem Tag der Veröffentlichung bereitstellen, um Verzögerungen zu vermeiden.
 
@@ -85,7 +85,7 @@ Benötigen Sie Hilfe, um sich für Ihre Domain zwischen einem von Adobe verwalte
 
 Sie haben nun ein funktionierendes von Adobe verwaltetes DV-SSL-Zertifikat für Ihr Projekt hinzugefügt. Dieser Schritt ist oft der erste, um einen benutzerdefinierten Domain-Namen einzurichten.
 
-Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) hinzufügen.
+Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) hinzufügen.
 
 ## Hinzufügen eines kundenseitig verwalteten SSL-Zertifikats (OV/EV) {#add-customer-managed-ssl-cert}
 
@@ -132,7 +132,7 @@ Dieses Feld dient nur zu Informationszwecken. Der Name kann so gewählt werden, 
 
 Sie haben jetzt ein funktionierendes SSL-Zertifikat für Ihr Projekt hinzugefügt. Dieser Schritt ist oft der erste, um einen benutzerdefinierten Domain-Namen einzurichten.
 
-Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) hinzufügen.
+Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) hinzufügen.
 
 
 

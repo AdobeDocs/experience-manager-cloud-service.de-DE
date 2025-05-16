@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.1.0 von [!DNL Adobe Experience 
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 96%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Video zur Versionsübersicht von Januar 2024 an, das eine Zusammenfassung der Funktionen gibt, die in Version 2024.1.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448938?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -98,7 +98,7 @@ Mit Assets Essentials können Sie jetzt eine Blockierungsliste mit Wörtern fest
 * **[Sie können den Real Use Monitoring (RUM)-Datendienst nutzen](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** um die Client-seitige Erfassung für AEM as a Cloud Service zu aktivieren.
 Der Real Use Monitoring-Datendienst (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann jetzt außerdem die automatisierte Traffic-Berichterstellung aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
-  Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in der E-Mail den Domain-Namen für jede Umgebung an, für die Sie RUM aktivieren möchten. Das Produktteam von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
+  Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in der E-Mail den Domain-Namen für jede Umgebung an, für die Sie RUM aktivieren möchten. Das Produkt-Team von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
@@ -110,7 +110,7 @@ Dynatrace-Kundinnen und -Kunden können ihre AEM-Nutzung überwachen. [Lesen Sie
 
 [Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) unterstützen jetzt Frontend-Code basierend auf [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) und [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md) für Early Adopters. Bei RDEs erfolgt dies über eine Befehlszeilenanweisung und nicht über eine [Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Bitte wenden Sie sich an **aemcs-rde-support@adobe.com**, um dies auszuprobieren und Feedback zu hinterlassen.
 
-### Early-Adopter-Programm für die CDN-Konfiguration {#cdn-config-early-adopter}
+### Early-Adopter-Programm für die Domain-Zuordnung {#cdn-config-early-adopter}
 
 Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), welche die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es eine Möglichkeit, die Konfigurations-Pipeline zum Deklarieren und Bereitstellen [anderer Typen von CDN-Konfigurationen](/help/implementing/dispatcher/cdn-configuring-traffic.md) zu verwenden. Wenn Sie am Early-Adopter-Programm teilnehmen möchten, senden Sie eine E-Mail an **aemcs-cdn-config-adopter@adobe.com**, um Zugriff auf Folgendes zu erhalten:
 * 301/302 Client-seitige Umleitungen

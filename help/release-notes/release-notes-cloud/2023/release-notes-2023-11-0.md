@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -35,7 +35,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht November 2023 an, das eine Zusammenfassung der Funktionen bietet, die der Version 2023.11.0 hinzugefügt wurden:
+Eine Zusammenfassung der in der Version 2023.11.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version November 2023:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
@@ -53,7 +53,7 @@ Möchten Sie die Funktion ausprobieren und Feedback geben? Senden Sie von Ihrer 
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-features}
 
-* **Eingebetteter Adobe Expreß-Editor in AEM Assets**: Benutzende mit Zugriff auf Express verfügen jetzt über integrierte Bildbearbeitungs- und Erstellungs-Tools von Adobe Expreß und Adobe Firefly, die direkt in AEM Assets verfügbar sind, um die Wiederverwendung von Inhalten zu verbessern und die Geschwindigkeit der Inhaltserstellung zu beschleunigen.
+* **Eingebetteter Adobe Express-Editor in AEM Assets**: Benutzende mit Zugriff auf Express verfügen jetzt über integrierte Bildbearbeitungs- und -erstellungs-Tools von Adobe Express und Adobe Firefly, die direkt in AEM Assets verfügbar sind, um die Wiederverwendung von Inhalten zu verbessern und die Geschwindigkeit der Inhaltserstellung zu beschleunigen.
 
   ![Zuweisen eines Metadatenformulars zu einem Ordner](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -124,7 +124,7 @@ Nach der Lizenzierung können diese erweiterten WAF-Regeln mithilfe der Cloud Ma
 
 Erfahren Sie mehr [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) einschließlich WAF. Wenden Sie sich an Ihr AEM-Account-Team, um Informationen zur Lizenzierung von WAF-DDoS Protection bzw. Enhanced Security zu erhalten.
 
-### Early-Adopter-Programm für die CDN-Konfiguration {#cdn-config-early-adopter}
+### Early-Adopter-Programm für die Domain-Zuordnung {#cdn-config-early-adopter}
 
 Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln (einschließlich WAF)](/help/security/traffic-filter-rules-including-waf.md) gibt es eine Möglichkeit, die Konfigurations-Pipeline zu verwenden, um andere Arten von CDN-Konfigurationen zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
 * 301/302 Client-seitige Umleitungen

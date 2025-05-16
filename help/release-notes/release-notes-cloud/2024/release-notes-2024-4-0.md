@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.4.0 von [!DNL Adobe Experience 
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Übersichtsvideo zur Version April 2024 an, das eine Zusammenfassung der Funktionen bietet, die in Version 2024.4.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446318?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -168,9 +168,9 @@ Der Real Use Monitoring-Datendienst (RUM) bietet eine präzisere Darstellung der
 
   Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in der E-Mail den Domain-Namen für jede Umgebung an, für die Sie RUM aktivieren möchten. Das Produkt-Team von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
 
-### CDN-Konfiguration {#cdn-config}
+### Domain-Zuordnung {#cdn-config}
 
 Konfigurieren Sie den Traffic auf dem Adobe-CDN wie folgt:
 
