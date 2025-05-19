@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 15%
+source-wordcount: '1482'
+ht-degree: 14%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 15%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 20783 {#20783}
+## Version 20936 {#20936}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 20783, die am Mittwoch, 13. Mai 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 20626.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 20936, die am Dienstag, 19. Mai 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 20626.
 
 Die Funktionsaktivierung von 2025.5.0 wird den vollen Funktionsumfang für diese Wartungsversion bieten. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-20783}
+>[!NOTE]
+>
+>Version 20783 wurde am 19. Mai als privat eingestuft und durch Version 20936 ersetzt.
+
+### Verbesserungen {#enhancements-20936}
 
 * FORMS-19125: Der Editor für adaptive Formulare der Kernkomponente wurde verbessert, um die automatische Zuordnung verfügbarer adaptiver Formularfragmente zu unterstützen, wenn ein entsprechender Abschnitt aus der Datenquellenstruktur auf der Arbeitsfläche des Formulars abgelegt wird. Dies bringt eine wichtige Produktivitätsfunktion vom Foundation-Editor zu den Kernkomponenten.
 * FORMS-17107: AEM Forms bietet jetzt ein verbessertes Client-seitiges benutzerdefiniertes Funktions-Parsing. Dazu gehört die Unterstützung moderner JavaScript-Funktionen (ECMAScript ES10+), z. B. die optionale Verkettung, und es wird die Möglichkeit eingeführt, statische Importe in benutzerdefinierten Funktionsskripten zu verwenden. Auf diese Weise können Entwickelnde Code besser organisieren, ESM-Module verwenden und frühere Einschränkungen entfernen, die bei benutzerdefinierten Funktionen in Adaptive Forms auf der Grundlage von Kernkomponenten und Edge Delivery Services aufgetreten sind, insbesondere für Benutzende, die zuvor Problemumgehungen für diese Funktionen benötigten.
@@ -46,7 +50,7 @@ Die Funktionsaktivierung von 2025.5.0 wird den vollen Funktionsumfang für diese
 * SITES-26711: Links für RTE-Textfelder werden nicht so aktualisiert, dass sie auf die Live Copy beim MSM-Rollout verweisen.
 * SITES-25976: Links in Experience Fragments werden nach dem MSM-Rollout nicht angepasst.
 
-### Behobene Probleme {#fixed-issues-20783}
+### Behobene Probleme {#fixed-issues-20936}
 
 * ASSETS-50994: Eingehender Traffic wird bei AemRequestEventFilter blockiert.
 * CQ-4358591: Fehlende Projekte für einige Sprachen, wenn Sprachkopien über das Bedienfeld „Sites-Referenz“ mit der Option „Übersetzungsprojekte erstellen“ erstellt werden.
@@ -92,21 +96,22 @@ Die Funktionsaktivierung von 2025.5.0 wird den vollen Funktionsumfang für diese
 * SITES-31020: Verbesserte Benutzeroberfläche zum Erstellen von Live Copy-Aufträgen , um dem Kunden den Fortschritt zu zeigen.
 * SITES-29816: Fehler „Ressource nicht gefunden“ beim Erstellen einer Live Copy des Experience Fragments.
 * SITES-29363: Die Schaltfläche „Live Copy zurücksetzen“ funktioniert nicht für eine verschachtelte Live Copy-Inhaltshierarchie.
+* SITES-31467: JS-Fehler von `contexthub.authoring-hook.js` im Seiteneditor.
 * SKYOPS-106509: Zusätzliche Add-Open-Flags zur Unterstützung des GSON-reflektierenden Zugriffs auf Java 21 hinzufügen.
 
-### Bekannte Probleme {#known-issues-20783}
+### Bekannte Probleme {#known-issues-20936}
 
-Keine.
+* SITES-28030: Option „Target starten“ fehlt bei der Auswahl der Zielgruppenoption.
 
-### Eingestellte Funktionen und APIs {#deprecated-20783}
+### Eingestellte Funktionen und APIs {#deprecated-20936}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-20783}
+### Sicherheitskorrekturen {#security-20936}
 
 Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 19 identifizierte Schwachstellen und sorgt somit für einen noch robusteren Systemschutz.
 
-### Eingebettete Technologien {#embedded-tech-20783}
+### Eingebettete Technologien {#embedded-tech-20936}
 
 | Technologie | Version | Link |
 |---|---|---|
