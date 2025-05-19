@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
-workflow-type: ht
-source-wordcount: '2546'
+source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+workflow-type: tm+mt
+source-wordcount: '2540'
 ht-degree: 100%
 
 ---
@@ -154,7 +154,6 @@ Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete �
 |---|---|
 | `org.apache.sling.commons.log.names` | Die Java-Pakete, für die Protokolleinträge gesammelt werden sollen. |
 | `org.apache.sling.commons.log.level` | Die Protokollebene, auf der die Java-Pakete protokolliert werden sollen, angegeben durch: `org.apache.sling.commons.log.names` |
-| `org.apache.sling.commons.log.file` | Zum Festlegen des Ausgabeziels: `logs/error.log` |
 
 Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM as a Cloud Service führen.
 
