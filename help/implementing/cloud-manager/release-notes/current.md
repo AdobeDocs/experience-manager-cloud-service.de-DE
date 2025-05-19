@@ -48,7 +48,7 @@ Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Deli
 
 ![Edge Delivery-Pipeline hinzufügen in der Dropdown-Liste „Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an [grp-aemeds-config-pipeline-adopter@adobe.com.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) an grp-aemeds-config-pipeline-adopter@adobe.com.
 
 ### Holen Sie Ihr eigenes Git - jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
