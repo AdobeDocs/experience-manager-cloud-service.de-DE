@@ -1,19 +1,21 @@
 ---
-title: Integrieren eines adaptiven Formulars in Microsoft® Power Automate?
-description: Integrieren Sie ein adaptives Formular mit Microsoft Power Automate.
+title: Integrieren eines adaptiven Formulars mit Microsoft&reg; Power Automate
+description: Integrieren eines adaptiven Formulars mit Microsoft&reg; Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: Verbinden von AEM Forms mit Power Automate, Power Automate-Automation, AEM Forms, Integrieren von Power Automate in adaptive Formulare, Senden von Daten von adaptiven Formularen an Power Automate
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
+source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 100%
+source-wordcount: '1243'
+ht-degree: 95%
 
 ---
 
 
 # Verbinden eines adaptiven Formulars mit Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+
+<span class="preview"> Wenn Sie sich in GovCloud befinden und eine Verbindung zu einem GCC (Government Cloud Computing)-Mandanten herstellen müssen, senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com , um den Zugriff über das Early-Adopter-Programm anzufordern. </span>
 
 Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung ein Cloud-Fluss bei Microsoft® Power Automate ausgeführt wird. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungserlebnisse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren.
 
@@ -215,7 +217,7 @@ Nachdem Sie [Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Aut
 * [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 * [Configure a Submit Action](configure-submit-actions-core-components.md)
 * [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [Connect Adaptive Form to Microsoft® Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Connect Adaptive Form to Microsoft&reg; Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 -->
 
 
