@@ -216,7 +216,7 @@ Führen Sie die folgenden Schritte in Cloud Manager aus, um eine benutzerdefinie
 
 1. [Fügen Sie einen benutzerdefinierten Domain-Namen hinzu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. Navigieren Sie zur Seite mit den Umgebungsdetails und [fügen Sie eine CDN-Konfiguration hinzu](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Wählen Sie beim Hinzufügen der Konfiguration im Dialogfeld **[!UICONTROL CDN konfigurieren]** im Feld **[!UICONTROL Ebene]** die Option **[!UICONTROL Bereitstellung]** aus.
+1. Navigieren Sie zur Seite mit den Umgebungsdetails und [fügen Sie eine CDN-Konfiguration hinzu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Wählen Sie beim Hinzufügen der Konfiguration im Dialogfeld **[!UICONTROL CDN konfigurieren]** im Feld **[!UICONTROL Ebene]** die Option **[!UICONTROL Bereitstellung]** aus.
 
    ![CDN konfigurieren](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
