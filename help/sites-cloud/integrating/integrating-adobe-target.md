@@ -14,7 +14,7 @@ ht-degree: 98%
 
 # Integrieren mit Adobe Target{#integrating-with-adobe-target}
 
-Als Teil von Adobe Experience Cloud ermöglicht [Adobe Target](https://experienceleague.adobe.com/en/docs/target) Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM as a Cloud Service erfordert Folgendes:
+Als Teil von Adobe Experience Cloud ermöglicht [Adobe Target](https://experienceleague.adobe.com/de/docs/target) Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM as a Cloud Service erfordert Folgendes:
 
 * Die Verwendung der Touch-optimierte Benutzeroberfläche, um eine Target-Konfiguration in AEM as a Cloud Service zu erstellen (IMS-Konfiguration erforderlich)
 * Das Hinzufügen und Konfigurieren von Adobe Target als Erweiterung in [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=de)
@@ -29,7 +29,7 @@ Für den Export von Experience Fragments und/oder Inhaltsfragmenten nach Target 
 
 >[!NOTE]
 >
->Siehe auch die Adobe Target-Dokumentation: [Integration von Target mit Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration).
+>Siehe auch die Adobe Target-Dokumentation: [Integration von Target mit Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/de/docs/target/using/integrate/aem/aem-target-integration).
 
 ## Erstellen der Adobe Target-Konfiguration {#create-configuration}
 
