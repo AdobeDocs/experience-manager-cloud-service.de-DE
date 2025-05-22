@@ -124,7 +124,7 @@ Sie können auf die Ansicht der Touch-optimierten Benutzeroberfläche für Berec
 
 ![Karte für die Touch-optimierte Benutzeroberfläche](assets/image-2025-2-5_15-37-59.png)
 
-Sobald Sie die Berechtigungsansicht gestartet haben, können Sie je nach Ihren bevorzugten Anzeigeoptionen in **** oberen rechten Ecke **Knotenansicht“ oder** Gefilterte Ansicht“ klicken.
+Sobald Sie die Berechtigungsansicht gestartet haben, können Sie je nach Ihren bevorzugten Anzeigeoptionen in **&#x200B;**&#x200B;oberen rechten Ecke **Knotenansicht“ oder** Gefilterte Ansicht“ klicken.
 
 #### Knotenansicht
 
