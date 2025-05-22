@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.5.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2024.5.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version vom Mai 2024:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448071?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,9 @@ Aktionen zur Übersetzung von Inhalten und Workflows lösen jetzt Ereignisse aus
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Real Use Monitoring-Datendienst (RUM) {#real-use-monitoring}
+#### Telemetrieservice {#real-use-monitoring}
 
-* **[Der Real Use Monitoring-Datendienst (RUM) ist jetzt allgemein verfügbar](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service.
+* **[Operational Telemetry Service ist jetzt allgemein verfügbar](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** was Client-seitige Datenerfassung für AEM as a Cloud Service ermöglicht.
 Der Real User Monitoring-Dienst, die Client-seitige Erfassung, bietet eine präzisere Darstellung der Interaktionen und stellt eine zuverlässige Messung der Website-Interaktionen sicher. Dadurch erhält die Kundschaft erweiterte Einblicke in ihren Seiten-Traffic und die Performance. Es ist eine großartige Möglichkeit, mehr über Ihre Seiten-Performance zu erfahren und Einblicke zu gewinnen, um sie zu verbessern.
 
 #### AEM-Authoring für Edge Delivery Services {#edge-enhancements}
@@ -214,9 +214,9 @@ Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, 
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Server-side redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
+#### Server-seitige Weiterleitungen (Early-Adopter-Programm) {#server-side-redirects-early-adopter}
 
-Configure 301/302 server-side redirects in source control, and deploy to the CDN. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Konfigurieren Sie Server-seitige 301/302-Weiterleitungen in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
 
 #### Warnhinweise zu Traffic-Filterregeln (Early-Adopter-Programm) {#traffic-filter-rules-alerts-early-adopter}
 

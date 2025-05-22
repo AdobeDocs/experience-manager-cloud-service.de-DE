@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.3.0 von [!DNL Adobe Experience 
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 95%
+source-wordcount: '2283'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Werfen Sie einen Blick auf das Video „Versionsübersicht März 2024“ für eine Zusammenfassung der neuen Funktionen in der Version 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450368?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ AEM Sites kann jetzt als Inhaltsquelle für Edge Delivery Services verwendet wer
 
 ![AEM-Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=de#M43905?lang=de)
+Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905?lang=de)
 
 **Universeller Editor für Headless-Implementierungen**
 
@@ -123,7 +123,7 @@ Mit Assets Essentials können Admins die Zugriffsebenen für private Sammlungen 
 Diese Dienste ermöglichen Ihnen Folgendes:
 
 * Arbeiten Sie mit mehreren Inhaltsquellen auf derselben Formular-Site und verwenden Sie Ihre bevorzugten Authoring-Tools wie Microsoft Excel, Google Tabellen oder den Editor für adaptive Formulare.
-* Bereitstellen digitaler Registrierungserlebnisse, die schnell geladen und gerendert werden können, und kontinuierliche Überwachung der Formularleistung durch Real-Use-Monitoring (RUM).
+* Bereitstellen digitaler Registrierungserlebnisse, die schnell geladen und gerendert werden können, und kontinuierliche Überwachung der Formularleistung mit operativer Telemetrie.
 * Verwenden Sie einfaches HTML, modernes CSS und Vanilla JavaScript, um außergewöhnliche Erlebnisse zu erstellen und so die steile Lernkurve eines bestimmten Frameworks zu vermeiden.
 
 
@@ -186,10 +186,10 @@ Diese Aktualisierung sorgt dank Verbesserungen bei der Navigation, der Klarheit 
 
   Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.
 
-* **[Sie können den Real Use Monitoring (RUM)-Datendienst nutzen](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** um die Client-seitige Erfassung für AEM as a Cloud Service zu aktivieren.
-Der Real Use Monitoring-Datendienst (RUM) bietet eine präzisere Darstellung der Benutzerinteraktionen und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann jetzt außerdem die automatisierte Traffic-Berichterstellung aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
+* **[Sie können den Operational Telemetry Service nutzen](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** um die Client-seitige Erfassung für AEM as a Cloud Service zu aktivieren.
+Operational Telemetry Service bietet eine präzisere Reflektion der Benutzerinteraktionen, wodurch ein zuverlässiges Maß an Website-Interaktion gewährleistet ist. Dies ist eine großartige Gelegenheit, erweiterte Einblicke in Ihre Seitenleistung zu erhalten. Dies ist nützlich für Kundinnen und Kunden, die entweder ein von Adobe verwaltetes CDN oder ein nicht von Adobe verwaltetes CDN verwenden. Für diejenigen, die ein nicht von Adobe verwaltetes CDN verwenden, kann jetzt außerdem die automatisierte Traffic-Berichterstellung aktiviert werden, sodass keine Traffic-Berichte mehr für Adobe freigegeben werden müssen.
 
-  Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an `aemcs-rum-adopter@adobe.com`. Geben Sie in der E-Mail den Domain-Namen für jede Umgebung an, für die Sie RUM aktivieren möchten. Das Produkt-Team von Adobe wird dann den Real Use Monitoring (RUM)-Datendienst für Sie aktivieren.
+  Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com` sowie Ihren Domain-Namen für jede Umgebung, für die Sie operative Telemetrie aktivieren möchten, über Ihre mit Ihrer Adobe ID verknüpfte E-Mail-Adresse. Das Produkt-Team von Adobe wird dann den operativen Telemetrieservice für Sie aktivieren.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
 

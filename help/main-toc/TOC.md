@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8c53a27f7b4c076b92cf62df184018fd4b949656
+source-git-commit: b246b1729d7e598dc593ecce05bd8975d4752f5a
 workflow-type: tm+mt
-source-wordcount: '6175'
+source-wordcount: '6173'
 ht-degree: 99%
 
 ---
@@ -495,7 +495,7 @@ ht-degree: 99%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-   + [Real Use Monitoring (RUM) für AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [Operative Telemetrie für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
    + [Wesentliche Änderungen in [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -1078,7 +1078,7 @@ ht-degree: 99%
          + [Globalisieren Ihres Formulars: Anleitung zur Formularübersetzung](/help/edge/docs/forms/translate-forms.md)
          + [Schützen Ihrer Formulare: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
-         + [Überwachen der Formularleistung: Handbücher zum Real Use Monitoring](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Überwachen der Formularleistung: Leitfäden für die operative Telemetrie](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Edge Delivery-Ressourcen {#resources}
       + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)

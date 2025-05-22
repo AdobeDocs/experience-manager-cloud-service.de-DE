@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.6.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1967'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Eine Zusammenfassung der in der Version 2024.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktion in Experience Manager Sites {#new-feature-sites}
 
-**Real Use Monitoring (RUM)-Datendienst** {#real-use-monitoring}
+**Operativer Telemetriedaten-Service** {#real-use-monitoring}
 
-Der [Real Use Monitoring-Datendienst (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) ist jetzt allgemein verfügbar und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service. Dieser Dienst gibt Benutzerinteraktionen genauer wieder und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Er liefert Kundinnen und Kunden erweiterte Einblicke in den Traffic und die Performance ihrer Seite. Damit bietet er eine wertvolle Möglichkeit, die Seiten-Performance zu verstehen und zu optimieren.
+Der [Operational Telemetry Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) ist jetzt allgemein verfügbar und ermöglicht die Client-seitige Datenerfassung für AEM as a Cloud Service. Dieser Dienst gibt Benutzerinteraktionen genauer wieder und stellt so eine zuverlässige Messung der Website-Interaktionen sicher. Er liefert Kundinnen und Kunden erweiterte Einblicke in den Traffic und die Performance ihrer Seite. Damit bietet er eine wertvolle Möglichkeit, die Seiten-Performance zu verstehen und zu optimieren.
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 

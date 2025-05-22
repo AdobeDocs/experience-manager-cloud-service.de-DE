@@ -6,10 +6,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 **A:** Es gibt mehrere Optionen für die Analyse und das Tracking:
 
 - Adobe Experience Platform Web SDK (primäre Empfehlung)
-- Real User Monitoring (RUM) für gesampelte Metriken
+- Operative Telemetrie für abgetastete Metriken
 - Integration mit anderen Analysesystemen nach Bedarf
 
 ## Dokumentation und Ressourcen
