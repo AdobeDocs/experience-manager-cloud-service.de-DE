@@ -43,7 +43,7 @@ Maximieren Sie die Vorteile, die Ihnen Adobe bietet, indem Sie über Cloud Manag
 * [Nutzen Sie das SLA-Reporting](/help/implementing/cloud-manager/sla-reporting.md) (*in Kürze verfügbar*)
 * [Nutzen Sie den Adobe-Support](/help/edge/overview.md#support-ticket) für Ihre registrierten Produktionsprogramme.
 
-Wenn Sie über eine Edge Delivery Services (EDS)-Lizenz verfügen, können Sie ein von Adobe verwaltetes CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) für Ihre Edge Delivery-Site verwenden und Funktionen wie Self-Service-CDN-Verwaltung und automatische Verlängerung von DV-Zertifikaten alle drei Monate nutzen, es sei denn, es wird gelöscht.[
+Wenn Sie über eine Edge Delivery Services (EDS)-Lizenz verfügen, können Sie ein von Adobe verwaltetes CDN[&#128279;](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) für Ihre Edge Delivery-Site verwenden und Funktionen wie Self-Service-CDN-Verwaltung und automatische Verlängerung von DV-Zertifikaten alle drei Monate nutzen, es sei denn, es wird gelöscht.
 
 Wenn Sie Ihr CDN (d. h. ein nicht von Adobe verwaltetes CDN) unabhängig von Ihrer Edge Delivery Services-Lizenz verwenden möchten, müssen Sie es auf der `aem.live` konfigurieren. Siehe [BYO CDN-Einrichtung](https://www.aem.live/docs/byo-cdn-setup).
 
