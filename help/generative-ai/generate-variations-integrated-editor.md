@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Funktion „Varianten generieren“, au
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 743f9c43b90a6ad9c9fd41f4089680da44a9c8ff
+source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 99%
+source-wordcount: '1416'
+ht-degree: 98%
 
 ---
 
@@ -333,6 +333,8 @@ Weitere Informationen finden Sie auch unter:
    * [Generative KI in Experience Cloud-Produkten – Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai#aem)
 
 * [Landingpage für Varianten in Experience Cloud generieren](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+
+* [Generativ in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## Versionsverlauf {#release-history}
 

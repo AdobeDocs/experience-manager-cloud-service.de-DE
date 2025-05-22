@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Funktion „Varianten generieren“, au
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: ht
-source-wordcount: '3287'
-ht-degree: 100%
+source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
+workflow-type: tm+mt
+source-wordcount: '3294'
+ht-degree: 99%
 
 ---
 
@@ -490,6 +490,7 @@ Weitere Informationen finden Sie auch unter:
 
 * [GenAI – Generieren von Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Experimente mit Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [Generativ in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## Häufig gestellte Fragen {#faqs}
 
