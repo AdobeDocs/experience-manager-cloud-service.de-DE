@@ -6,30 +6,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 18fe0125351c635c226bebf0f309710634230e64
-workflow-type: ht
-source-wordcount: '1199'
-ht-degree: 100%
+source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 86%
 
 ---
 
 # Einrichten von kundenseitig verwalteten Schlüsseln für AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service speichert derzeit Kundendaten in Azure Blob Storage und MongoDB, wobei zur Datensicherung standardmäßig vom Anbieter verwaltete Verschlüsselungsschlüssel verwendet werden. Dieses Setup erfüllt zwar die Sicherheitsanforderungen vieler Organisationen, aber Unternehmen in regulierten Branchen oder Unternehmen, die eine verbesserte Datensouveränität benötigen, streben möglicherweise eine bessere Kontrolle über ihre Verschlüsselungsverfahren an. Für Unternehmen, die Datensicherheit, Compliance und die Möglichkeit priorisieren, ihre Verschlüsselungsschlüssel zu verwalten, bietet die CMK-Lösung (Customer-Managed Keys, kundenseitig verwaltete Schlüssel) eine wichtige Verbesserung.
+AEM as a Cloud Service speichert derzeit Kundendaten in Azure Blob Storage und MongoDB, wobei zur Datensicherung standardmäßig vom Anbieter verwaltete Verschlüsselungsschlüssel verwendet werden. Diese Einrichtung erfüllt zwar die Sicherheitsanforderungen vieler Unternehmen, aber Unternehmen in regulierten Branchen oder Unternehmen, die eine erhöhte Datensicherheit benötigen, wünschen möglicherweise mehr Kontrolle über ihre Verschlüsselungsverfahren. Für Unternehmen, die Datensicherheit, Compliance und die Möglichkeit priorisieren, ihre Verschlüsselungsschlüssel zu verwalten, bietet die CMK-Lösung (Customer-Managed Keys, kundenseitig verwaltete Schlüssel) eine wichtige Verbesserung.
 
 ## Das zu lösende Problem {#the-problem-being-solved}
 
-Von Anbietern verwaltete Schlüssel können für Unternehmen in Bereichen wie Finanzen, Gesundheitswesen und Behörden problematisch sein, in denen strenge Vorschriften eine umfassende Kontrolle über die Datensicherheit erfordern. Ohne Kontrolle über das Schlüssel-Management stehen Organisationen vor Herausforderungen bei der Einhaltung von Compliance-Anforderungen, der Implementierung benutzerdefinierter Sicherheitsrichtlinien und der Gewährleistung vollständiger Datensouveränität.
+Vom Anbieter verwaltete Schlüssel können zu Bedenken für Unternehmen führen, die zusätzliche Datenschutz- und Integritätsanforderungen stellen. Ohne Kontrolle über das Schlüsselmanagement stehen Unternehmen vor Herausforderungen bei der Einhaltung von Compliance-Anforderungen, der Implementierung benutzerdefinierter Sicherheitsrichtlinien und der Gewährleistung vollständiger Datensicherheit.
 
 Durch die Einführung von kundenseitig verwalteten Schlüsseln (CMK) werden diese Bedenken behoben, da AEM-Kundschaft die volle Kontrolle über ihre Verschlüsselungsschlüssel erhält. Durch die Authentifizierung über die Microsoft Entra ID (ehemals Azure Active Directory) stellt AEM CS eine sichere Verbindung zu Azure Key Vault von Kundschaft her, sodass diese den Lebenszyklus ihrer Verschlüsselungsschlüssel verwalten kann, einschließlich Schlüsselerstellung, -rotation und -widerruf.
 
 CMK bietet mehrere Vorteile:
 
-* **Verbesserte Sicherheit:** Kundschaft kann sicherstellen, dass ihre Verschlüsselungsverfahren bestimmten Sicherheitsanforderungen entsprechen, sodass sie sich auf den Datenschutz verlassen kann.
-* **Compliance-Flexibilität:** Aufgrund der vollständigen Kontrolle über den Lebenszyklus der Schlüssel können sich Unternehmen einfach an sich verändernde Regulierungsstandards wie DSGVO, HIPAA oder CCPA anpassen und so sicherzustellen, dass ihr Compliance-Status unverändert bleibt.
-* **Nahtlose Integration:** Die CMK-Lösung kann direkt mit Azure Blob Storage und MongoDB in AEM CS integriert werden. So wird sichergestellt, dass der Speichervorgang und die Benutzerfreundlichkeit nicht beeinträchtigt werden. Gleichzeitig erhält Kundschaft leistungsstarke Verschlüsselungsfunktionen.
+* **Steuern der Daten- und Anwendungsverschlüsselung:** Erhöhen Sie die Sicherheit mit direkter Governance Ihrer AEM-Anwendung und kryptografischen Datenschlüsseln.
+* **Erhöhen der Vertraulichkeit und Integrität:** Reduzieren Sie die Wahrscheinlichkeit des unbeabsichtigten Zugriffs und der Offenlegung sensibler oder proprietärer Daten mit vollständiger Verschlüsselungsverwaltung.
+* **Unterstützung von Azure Key Vault:** Verwendung von Azure Key Vault ermöglicht die Speicherung von Schlüsseln, die Verarbeitung von geheimen Daten und die Durchführung von Schlüsselrotationen.
 
-Durch die Verwendung von CMK kann Kundschaft die Kontrolle über ihre Datensicherheits- und Verschlüsselungsverfahren erhöhen, die Compliance verbessern und Risiken mindern, während sie gleichzeitig weiterhin von der Skalierbarkeit und Flexibilität von AEM CS profitiert.
+Durch die Verwendung von CMK können Kunden die Kontrolle über ihre Datensicherheits- und Verschlüsselungsverfahren verbessern, die Sicherheit erhöhen und Risiken mindern, während sie gleichzeitig weiterhin von der Skalierbarkeit und Flexibilität von AEM CS profitieren.
 
 Mit AEM as a Cloud Service können Sie Ihre eigenen Verschlüsselungsschlüssel für die Verschlüsselung von Daten im Ruhezustand mitbringen. In diesem Handbuch werden die Schritte zum Einrichten eines kundenseitig verwalteten Schlüssels (CMK) in Azure Key Vault für AEM as a Cloud Service beschrieben.
 
@@ -103,7 +103,7 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## Gewähren des Zugriffs auf den Schlüsseltresor für Adobe {#grant-adone-access-to-the-key-vault}
+## Gewähren des Zugriffs auf den Schlüsseltresor für Adobe {#grant-adobe-access-to-the-key-vault}
 
 In diesem Schritt ermöglichen Sie Adobe den Zugriff auf Ihren Schlüsseltresor über eine Entra-Anwendung. Die ID der Entra-Anwendung sollte bereits von Adobe zur Verfügung gestellt worden sein.
 
