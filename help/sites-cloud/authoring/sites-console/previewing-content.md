@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
+source-wordcount: '306'
+ht-degree: 82%
 
 ---
 
@@ -19,11 +19,15 @@ AEM bietet den Sites Preview Service, der Entwicklern und Inhaltsautoren die Vor
 
 Dies erleichtert die Vorschau von Seitenerlebnissen, die sonst nicht in der Autorenumgebung sichtbar wären, wie Seitenübergänge und andere Inhalte, die nur auf der Veröffentlichungsseite verfügbar sind.
 
+>[!IMPORTANT]
+>
+>Für den Zugriff auf die Vorschau-Umgebung ist die Konfiguration einer IP-Zulassungsliste erforderlich. Weitere Informationen finden Sie [Zugriff auf den Vorschau-Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
+>
+>Weitere Informationen zu allen Umgebungen finden Sie unter [Umgebungen verwalten](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
 >[!NOTE]
 >
->Sobald der Inhalt in der Vorschauumgebung *veröffentlicht* wird, ist er über die URL zugänglich (er erfordert also keinen Zugriff auf AEM).
-
-Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Da der Inhalt in *Vorschauumgebung veröffentlicht*, ist er über eine URL zugänglich.
 
 ## Veröffentlichen von Inhalten in der Vorschau {#publishing-content-to-preview}
 
@@ -48,7 +52,7 @@ Alternativ dazu können Sie auch die im Assistenten angezeigten URLs verwenden, 
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie im Dokument [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
+Weitere Informationen [ Abrufen der URLs für Ihre ](/help/implementing/cloud-manager/manage-environments.md) finden Sie unter „Verwalten von Umgebungen“.
 
 Inhalte können auch zur Vorschau veröffentlicht werden, indem ein [Workflow zur Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) verwendet wird, wobei der Parameter `agentId` für die Vorschau auf `preview` festgelegt ist, oder indem die [Replikations-API](/help/operations/replication.md#replication-api) mit einem für die Vorschau konfigurierten `AgentFilter` verwendet wird.
 
