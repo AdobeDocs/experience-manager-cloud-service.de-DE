@@ -2,7 +2,7 @@
 title: Überblick über Content Hub
 description: Erfahren Sie mehr über Content Hub, seine wichtigsten Vorteile, den Zugriff darauf und das Feedback zu den in Content Hub verfügbaren Optionen.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 89c565a28cabe50ac539defd29ce9054c231297f
+source-git-commit: f728e29110808b6b5a8181120086ab82349c9835
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 99%
@@ -77,7 +77,7 @@ Mit Content Hub können Sie neue Inhalte mit Adobe Express erstellen (falls Sie 
 
 ## Content Hub-Demo {#content-hub-demo}
 
->[!VIDEO](https://video.tv.adobe.com/v/3459544)
+>[!VIDEO](https://video.tv.adobe.com/v/3459547)
 
 ## Voraussetzungen {#prerequisites-content-hub}
 
