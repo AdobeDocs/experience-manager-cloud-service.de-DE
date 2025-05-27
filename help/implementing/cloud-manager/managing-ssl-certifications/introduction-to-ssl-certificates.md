@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
+source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 100%
+source-wordcount: '1160'
+ht-degree: 93%
 
 ---
 
@@ -58,6 +58,10 @@ Beide Modelle bieten die folgenden allgemeinen Funktionen für die Verwaltung Ih
 DV-Zertifikate stehen für die einfachste SSL-Zertifizierungsstufe und werden häufig zu Testzwecken oder zum Schützen von Websites mit einer einfachen Verschlüsselung verwendet. DV-Zertifikate sind in [Produktions- und Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) verfügbar.
 
 Nachdem das DV-Zertifikat erstellt wurde, erneuert Adobe es automatisch alle drei Monate, es sei denn, es wird gelöscht.
+
+>[!IMPORTANT]
+>
+>Wenn Ihre Umgebung (DV) SSL-Zertifikate mit einer CNAME-basierten Validierung verwendet, beachten Sie, dass das Entfernen des CNAME-Eintrags vor der automatischen Zertifikatsverlängerung dazu führen kann, dass die Verlängerung fehlschlägt. Die Entfernung kann zur Gültigkeitsdauer des Zertifikats und zur Unterbrechung des Services führen. Um dieses Problem zu vermeiden, stellen Sie sicher, dass der CNAME-Eintrag während des gesamten Erneuerungsprozesses bestehen bleibt. Der Erneuerungsprozess beruht auf dem Vorhandensein des CNAME-Eintrags für die Domain-Eigentümervalidierung.
 
 ### Kundenseitig verwaltete SSL-Zertifikate (OV/EV) {#customer-managed}
 
