@@ -392,7 +392,7 @@ ht-degree: 99%
       + Universeller Editor {#universal-editor}
          + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [Veröffentlichung](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Vererbung](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Seitenvorlagen](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Fragmente {#fragments}
@@ -909,7 +909,7 @@ ht-degree: 99%
       + [Aufzeichnen einer Transaktion für eine benutzerdefinierte Implementierung](/help/forms/record-transaction-custom-implementation.md)
    + Dashboard zur Wertentwicklung  {#vr-dashboard}
       + [Verstehen des Dashboards zur Wertentwicklung](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [Verwenden des Dashboards zur Wertentwicklung zur Analyse der Nutzungstrends von Formularen und Dokumenten](/help/forms/using-the-value-realization-dashboard.md)
+      + [Verwenden des Dashboards zur Wertentwicklung zur Analyse der Nutzungs-Trends von Formularen und Dokumenten](/help/forms/using-the-value-realization-dashboard.md)
    + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
       + [API-Referenz für adaptive Formulare](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Kommunikations-API-Referenz zu AEM Forms Cloud Service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1013,8 +1013,8 @@ ht-degree: 99%
       + [WYSIWYG und dokumentbasierte Blöcke](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [Seiten mit DAM-Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Wiederverwenden von Code in verschiedenen Sites](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Multi-Site-Management ohne Repo](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Staging- und Produktionsumgebungen ohne Repo](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Multi-Site-Management ohne Repository](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [Staging- und Produktionsumgebungen ohne Repository](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
       + [Konfigurieren der Site-Authentifizierung](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [Funktionen für in Arbeit befindliche Sites](/help/edge/wysiwyg-authoring/wip-features.md)
    + Dokumentenbasiertes Authoring {#document-authoring}
@@ -1314,7 +1314,7 @@ ht-degree: 99%
          + [Attribute und Elementtypen](/help/implementing/universal-editor/attributes-types.md)
          + [Komponentendefinition](/help/implementing/universal-editor/component-definition.md)
          + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
-         + [Veröffentlichung](/help/implementing/universal-editor/publishing.md)
+         + [Publishing](/help/implementing/universal-editor/publishing.md)
          + [SecurBank-Beispiel-App](/help/implementing/universal-editor/securbank.md)
          + [Ereignisse](/help/implementing/universal-editor/events.md)
          + [Filtern von Komponenten](/help/implementing/universal-editor/filtering.md)

@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 >[!IMPORTANT]
 >
 >Erfahren Sie, warum Sie Ihre Edge Delivery Services-Site in Cloud Manager integrieren müssen.
->Siehe [Vorteile der Verwendung des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Weitere Informationen finden Sie unter [Vorteile des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **So fügen Sie eine Edge Delivery-Site zu Cloud Manager hinzu:**
 
