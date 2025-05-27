@@ -1,13 +1,13 @@
 ---
-title: Erstellen eines Formulars mit dem adaptiven Forms-Block
-description: Erste Schritte mit Edge Delivery Services für AEM Forms. Perfekte Formulare im Handumdrehen! AEM Forms Edge Delivery doc-basiertes Authoring = unglaubliche Geschwindigkeit und SEO-freundliche Formulare für zufriedene Anwender und Suchmaschinen.
+title: Erstellen eines Formulars mithilfe des adaptiven Formularbausteins
+description: Erste Schritte mit Edge Delivery Services für AEM Forms. Perfekte Formulare im Handumdrehen! Dokumentenbasierte Inhaltserstellung mit AEM Forms Edge Delivery = Atemberaubende Geschwindigkeit und SEO-freundliche Formulare für glücklichere Benutzende und Suchmaschinen.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

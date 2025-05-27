@@ -1,8 +1,8 @@
 ---
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -222,7 +222,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 
@@ -266,7 +266,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 >
 >Wenn Sie den universellen Editor in einem Headless-Anwendungsfall verwenden, muss Ihre Headless-App ihre eigene Authentifizierung verwalten.
 
-## Einstellung von PWA {#pwa-deprecation}
+## Einstellung der PWA {#pwa-deprecation}
 
 >[!IMPORTANT]
 >

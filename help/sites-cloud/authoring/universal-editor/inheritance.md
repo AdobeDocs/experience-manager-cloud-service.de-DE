@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Der universelle Editor wirkt sich nicht auf den zugrundeliegenden Mechanismus de
 
 Sofern installiert, zeigt die **AEM-Erweiterung für Multi-Site-Management (MSM)** den aktuellen Vererbungsstatus der ausgewählten Komponente an und ermöglicht es Ihnen, die Vererbung auf Komponentenebene zu unterbrechen oder wiederherzustellen.
 
-Weitere Informationen zur Verwendung [ Erweiterung finden Sie in der Authoring-Dokumentation ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+Weitere [Informationen zum Verwenden dieser Erweiterung finden Sie in der Dokumentation zum Authoring.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
 
 Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 

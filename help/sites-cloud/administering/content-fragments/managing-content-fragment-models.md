@@ -1,22 +1,22 @@
 ---
 title: Verwalten von Inhaltsfragmentmodellen
-description: Erfahren Sie, wie Sie Inhaltsfragmentmodelle verwalten. Diese dienen als Grundlage für Ihre Inhaltsfragmente in AEM, sodass Sie strukturierte Inhalte für die Headless-Bereitstellung oder die Seitenbearbeitung erstellen können.
+description: Erfahren Sie, wie Sie Inhaltsfragmentmodelle verwalten. Sie dienen in AEM als Grundlage für Ihre Inhaltsfragmente, damit Sie strukturierte Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung erstellen können.
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
 source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2260'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Inhaltsfragmentmodellen {#managing-content-fragment-models}
 
-In der Inhaltsfragmentkonsole können Sie Ihre Inhaltsfragmentmodelle verwalten und dann [den Editor öffnen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) um die Struktur zu definieren.
+In der Inhaltsfragmentkonsole können Sie Ihre Inhaltsfragmentmodelle verwalten und dann [den Editor öffnen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md), um die Struktur zu definieren.
 
-In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service wird die Struktur des Inhalts Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) definiert. Diese Fragmente können dann als Grundlage für Ihre Headless-Inhalte oder für die Seitenbearbeitung verwendet werden.
+In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service wird die Struktur des Inhalts Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) definiert. Diese Fragmente können anschließnd als Grundlage für Ihren Headless-Inhalt oder für die Seitenbearbeitung verwendet werden.
 
 >[!NOTE]
 >
@@ -27,28 +27,28 @@ In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service 
 
 >[!NOTE]
 >
->Inhaltsfragmente werden als **Assets** gespeichert. Inhaltsfragmentmodelle werden hauptsächlich über die Konsole **Inhaltsfragmente** verwaltet, können jedoch auch über die Konsole [Assets](/help/assets/content-fragments/content-fragments-managing.md) und die Option [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) verwaltet werden, die unter **Tools** - **Allgemein** ist.
+>Inhaltsfragmente werden als **Assets** gespeichert. Inhaltsfragmentmodelle werden hauptsächlich über die Konsole **Inhaltsfragmente** verwaltet, können jedoch auch über die Konsole [Assets](/help/assets/content-fragments/content-fragments-managing.md) sowie die Option [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) verwaltet werden, die unter **Tools** – **Allgemein** verfügbar ist.
 
 ## Arbeiten mit Inhaltsfragmentmodellen {#how-to-work-with-content-fragment-models}
 
-Einen schnellen Überblick bietet die Arbeit mit Inhaltsfragmentmodellen:
+Ein schneller Überblick über die Arbeit mit Inhaltsfragmentmodellen:
 
 1. [Aktivieren Sie die Funktion für Inhaltsfragmentmodelle für Ihre Instanz.](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [Erstellen](#creating-a-content-fragment-model) Ihres Inhaltsfragmentmodells.
-   * An dieser Stelle können Sie auch **Aktivieren** das Modell auswählen (zur Verwendung beim Erstellen von Inhaltsfragmenten).
-1. [Definieren](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) die Struktur Ihres Modells.
-1. [Aktivieren Sie Ihr Inhaltsfragmentmodell](#enabling-a-content-fragment-model) falls noch nicht geschehen.
+1. [Erstellen](#creating-a-content-fragment-model) Sie Ihr Inhaltsfragmentmodell.
+   * An dieser Stelle können Sie auch das Modell **aktivieren** (zur Verwendung beim Erstellen von Inhaltsfragmenten).
+1. [Definieren](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) Sie die Struktur Ihres Modells.
+1. [Aktivieren Sie Ihr Inhaltsfragmentmodell](#enabling-a-content-fragment-model), falls noch nicht geschehen.
 1. [Lassen Sie Ihre Inhaltsfragmentmodelle in den erforderlichen Asset-Ordnern zu](#allowing-content-fragment-models-assets-folder), indem Sie **Richtlinien** konfigurieren.
 
-## Grundlegende Struktur und Handhabung von Inhaltsfragmentmodellen in der Konsole {#basic-structure-handling-content-fragment-models-console}
+## Grundlegende Struktur und Handhabung von Inhaltsfragmenten in der Konsole {#basic-structure-handling-content-fragment-models-console}
 
-Sie können das ganz linke Bedienfeld der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) verwenden, um **Inhaltsfragmentmodelle** als Ressourcentyp zum Anzeigen, Durchsuchen und Verwalten auszuwählen:
+Sie können in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) im Panel ganz links **Inhaltsfragmenmodelle** als Ressourcentyp auswählen, um Folgendes anzuzeigen, zu durchsuchen und zu verwalten:
 
 ![Inhaltsfragmentkonsole – Navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Dadurch wird die Ansicht für Inhaltsfragmentmodelle geöffnet:
 
-![Inhaltsfragmentkonsole - Verwalten von Inhaltsfragmentmodellen](assets/cf-managing-content-fragment-models.png)
+![Inhaltsfragmentkonsole – Verwalten von Inhaltsfragmentmodellen](assets/cf-managing-content-fragment-models.png)
 
 Hier können Sie sehen, dass es drei Hauptbereiche gibt:
 
@@ -57,40 +57,40 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Zeigt auch Ihre IMS-Organisation an
    * Bietet verschiedene [Aktionen](#actions-unselected)
 * Das linke Panel
-   * Zeigt die [Pfade zu allen Konfigurationen](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) aufgeführt als Ordner
+   * Zeigt die [Pfade zu allen Konfigurationen](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) aufgeführt als Ordner an
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Ordner des Baums auswählen
-   * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen (Unterkonfigurationen)
-   * Neben Inhaltsfragmentmodellen können Sie [Inhaltsfragmente“ oder {](/help/sites-cloud/administering/content-fragments/managing.md)}Assets[&#128279;](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen. Sie können auch Links zu den Bedienfeldern komprimieren oder erweitern
-* Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
-   * Zeigen Sie die Liste aller Inhaltsfragmentmodelle an, die sich im ausgewählten Ordner befinden:
-      * Inhaltsfragmentmodelle aus dem ausgewählten Ordner und allen Unterordnern werden angezeigt:
+   * Die Größe kann geändert werden, um verschachtelte Ordner (Unterkonfigurationen) anzuzeigen
+   * Neben Inhaltsfragmentmodellen können Sie auch [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md) oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen und Sie können auch Links zu den Panels komprimieren oder erweitern
+* Das Haupt-/rechte Panel – von hier aus können Sie:
+   * Eine Liste aller Inhaltsfragmentmodelle im ausgewählten Ordner anzeigen:
+      * Es werden die Inhaltsfragmentmodelle aus dem ausgewählten Ordner und dazu alle Unterordner angezeigt:
          * Der Speicherort wird durch die Breadcrumbs angegeben. Diese können auch verwendet werden, um den Speicherort zu ändern:
-      * [Es werden Informationen zu jedem Modell angezeigt](#information-content-fragment-models)
-         * [Sie können auswählen, welche Spalten angezeigt werden sollen.](#select-columns-console)
+      * [Es werden Informationen zu den einzelnen Modellen angezeigt](#information-content-fragment-models)
+         * [Sie können auswählen, welche Spalten angezeigt werden sollen](#select-columns-console)
       * [Verschiedene Informationsfelder](#information-content-fragment-models) zu einem Inhaltsfragmentmodell stellen Links bereit. Je nach Feld können diese:
-         * Öffnen Sie das entsprechende Modell im Editor
+         * Das entsprechende Modell im Editor öffnen
          * Informationen über den Pfad zur Konfiguration anzeigen
-         * Zeigt Informationen zum Status des Modells an
-      * [Bestimmte andere Informationsfelder](#information-content-fragments) über ein Inhaltsfragmentmodell können für die [Schnellfilterung“ verwendet ](#fast-filtering):
+         * Informationen zum Status des Modells anzeigen
+      * [Bestimmte andere Informationsfelder](#information-content-fragments) über ein Inhaltsfragmentmodell können für [Schnelles Filtern](#fast-filtering) verwendet werden:
          * Auswählen eines Wertes in der Spalte, der sofort als Filter angewendet wird
-         * Die Schnellfilterung wird für die Spalten **Geändert von**, **Veröffentlicht** und **Status** unterstützt.
+         * Schnelles Filtern wird nur für die Spalten **Geändert von**, **Veröffentlicht von** und **Status** unterstützt.
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
          * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
 Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
          * Ändern Sie die Größe der Spalte – entweder mithilfe der Aktion oder der Breitenregler
-      * Wählen Sie ein oder mehrere Modelle für weitere [Aktionen](#actions-selected-content-fragment-models)
-   * Den [Filterbereich](#filter-content-fragment-models) öffnen
+      * Wählen Sie ein oder mehrere Fragmente für weitere [Aktionen](#actions-selected-content-fragment-models) aus
+   * Öffnen des [Filterbereichs](#filter-content-fragment-models)
    * In dieser Konsole stehen verschiedene [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) zur Verfügung
 
 ## Die bereitgestellten Informationen zu Ihren Inhaltsfragmentmodellen {#information-content-fragment-models}
 
-Das Haupt-/rechte Bedienfeld (Tabellenansicht) der Konsole bietet eine Reihe von Informationen zu Ihren Inhaltsfragmentmodellen. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
+Das Haupt-/rechte Panel (Tabellenansicht) der Konsole enthält eine Reihe von Informationen zu Ihren Inhaltsfragmentmodellen. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
 
 * **Name**
    * Stellt einen Link zum Öffnen des Modells im Editor bereit.
 * **Gesperrt** (Schlosssymbol)
-   * Wenn das Modell gesperrt ist, wird dies durch ein Vorhängeschloss-Symbol angezeigt.
+   * Wenn das Modell gesperrt ist, wird dies durch ein Schlosssymbol angezeigt.
 * **Pfad**
    * Stellt den Pfad als Link zum Öffnen der Konfiguration in der Konsole bereit.
 Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
@@ -104,7 +104,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Tags**
    * Nur Informationen.
-   * Zeigt alle Tags im Zusammenhang mit dem Modell an.
+   * Zeigt alle Tags an, die sich auf das Modell beziehen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Veröffentlicht um**
    * Nur Informationen.
@@ -114,18 +114,18 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
 ## Modelleigenschaften {#model-properties}
 
-Wenn Sie ein bestimmtes Modell auswählen, werden die Eigenschaften dieses Modells angezeigt (wie beim Erstellen [ Modells definiert](#creating-a-content-fragment-model). Wenn das Modell nicht **gesperrt** ist, können einige Elemente aktualisiert werden. Sie können auch das Informationssymbol (neben dem Modell **Titel**) verwenden, um dieses Informationsfenster zu öffnen und zu schließen.
+Wenn Sie ein bestimmtes Modell auswählen, werden die Eigenschaften dieses Modells angezeigt (wie beim [Erstellen des Modells](#creating-a-content-fragment-model) definiert). Wenn das Modell nicht **gesperrt** ist, können einige Elemente aktualisiert werden. Sie können auch das Informationssymbol (neben dem Modell **Titel**) verwenden, um das Panel „Informationen“ zu öffnen und zu schließen.
 
-![Inhaltsfragmentkonsole - Informationen für ein ausgewähltes Inhaltsfragmentmodell](assets/cf-managing-content-fragment-models-selected.png)
+![Inhaltsfragmentkonsole – Informationen für ein ausgewähltes Inhaltsfragmentmodell](assets/cf-managing-content-fragment-models-selected.png)
 
 * **[Pfad](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
 * **Titel**
 * **Tags**
 * **Beschreibung**
-* **Vorschau des URL-Musters**
+* **Muster für URL-Vorschau**
 
-  Inhaltsfragmentmodelle ermöglichen es Autoren **ihren Inhalt** einer externen Frontend-Anwendung in der Vorschau anzuzeigen. Sobald der **Vorschau-Service** konfiguriert ist, können Sie die URL für die Frontend-Anwendung hinzufügen.
+  Inhaltsfragmentmodelle ermöglichen es Autorinnen und Autoren, ihren Inhalt in einer externen Frontend-Anwendung in der **Vorschau** anzuzeigen. Sobald der **Vorschau-Service** konfiguriert ist, können Sie die URL für die Frontend-Anwendung hinzufügen.
 
   Die Vorschau-URL sollte diesem Muster entsprechen:
 `https://<preview_url>?param=${expression}`
@@ -153,27 +153,27 @@ Wenn Sie ein bestimmtes Modell auswählen, werden die Eigenschaften dieses Model
 
 ## Aktionen {#actions}
 
-Nachdem Sie einen Ordner ausgewählt haben (im linken Bereich), gibt es eine Reihe von Aktionen, die Sie entweder direkt oder nach Auswahl eines bestimmten Modells verwenden können:
+Nachdem Sie einen Ordner ausgewählt haben (im linken Panel), gibt es eine Reihe von Aktionen, die Sie entweder direkt oder nach Auswahl eines bestimmten Modells verwenden können:
 
 * Verschiedene Aktionen sind direkt [von der Konsole aus verfügbar](#actions-unselected)
 * Sie können [ein oder mehrere Inhaltsfragmentmodelle auswählen, um entsprechende Aktionen anzuzeigen](#actions-selected-content-fragment)
 
 ### Aktionen (nicht ausgewählt) {#actions-unselected}
 
-Bestimmte Aktionen sind über die Konsole verfügbar - nachdem Sie einen Ordner ausgewählt haben, aber ohne ein bestimmtes Inhaltsfragmentmodell auszuwählen:
+Bestimmte Aktionen sind über die Konsole verfügbar, nachdem Sie einen Ordner, aber kein bestimmtes Inhaltsfragmentmodell ausgewählt haben:
 
 * **[Erstellen](#creating-a-content-fragment-model)** eines neuen (leeren) Modells
 
 ### Aktionen für ein Inhaltsfragmentmodell in der Inhaltsfragmentkonsole {#actions-selected-content-fragment-models}
 
-Wenn Sie ein bestimmtes Modell auswählen, wird eine Symbolleiste geöffnet, die die für dieses Modell verfügbaren Aktionen anzeigt. Sie können auch mehrere Modelle auswählen. Die verfügbaren Aktionen werden entsprechend angepasst.
+Wenn Sie ein bestimmtes Modell auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Modell anzeigt. Sie können auch mehrere Modelle auswählen. Die Auswahl der verfügbaren Aktionen wird dann entsprechend angepasst.
 
 * **[Bearbeiten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)**, um Ihr Inhaltsfragmentmodell zu definieren.
-* **Veröffentlichen** entweder auf der [Veröffentlichen](/help/implementing/cloud-manager/manage-environments.md#environment-types) oder [Vorschau](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) Ebene.
-* **lock**/**unlock**, um zu steuern, ob ein Benutzer berechtigt ist, das Modell zu ändern.
-* **[Aktivieren](#enabling-a-content-fragment-model)**/**[Deaktivieren](#disabling-a-content-fragment-model)**, um zu steuern, ob ein Benutzer Inhaltsfragmente auf Grundlage dieses Modells erstellen darf.
+* **Veröffentlichen** entweder auf der [Veröffentlichungs-](/help/implementing/cloud-manager/manage-environments.md#environment-types) oder der [Vorschau](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)-Ebene.
+* **Sperren**/**Entsperren**, um zu steuern, ob eine Person zum Ändern des Modells berechtigt ist.
+* **[Aktivieren](#enabling-a-content-fragment-model)**/**[Deaktivieren](#disabling-a-content-fragment-model)**, um zu steuern, ob eine Person Inhaltsfragmente auf Grundlage dieses Modells erstellen darf.
 
-Wenn Sie ein einzelnes Modell auswählen, werden [Modelleigenschaften](#properties) im rechten Bereich angezeigt.
+Wenn Sie ein einzelnes Modell auswählen, werden im rechten Panel auch die [Modelleigenschaften](#properties) angezeigt.
 
 ## Auswählen der Spalten, die in der Konsole angezeigt werden {#select-columns-console}
 
@@ -187,61 +187,61 @@ Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeige
 
 ## Filtern von Inhaltsfragmentmodellen {#filter-content-fragment-models}
 
-Der Filterbereich bietet folgende Optionen:
+Der Panel zum Filtern bietet folgende Optionen:
 
 * eine Auswahl von Prädikaten;
-   * Einschließlich Statusfeldern, Tags, Benutzern usw
-   * es kann ein Prädikat ausgewählt oder auch mehrere kombiniert werden, um den Filter zu erstellen.
+   * einschließlich Statusfeldern, Tags, Benutzenden usw.
+   * es kann ein Prädikat ausgewählt oder auch mehrere kombiniert werden, um den Filter zu erstellen
 
 <!--
 * the opportunity to **Save** your filter
 * the option to retrieve a saved search filter for reuse
 -->
 
-Nach der Auswahl **die Optionen** Filtern nach“ angezeigt (oben im Hauptbedienfeld). Sie können von dort aus abgewählt werden. Zum Beispiel:
+Nach der Auswahl werden die Optionen zum **Filtern nach** angezeigt (oben im Haupt-Panel). Sie können von dort aus abgewählt werden. Zum Beispiel:
 
-![Inhaltsfragmentkonsole - Filtern von Inhaltsfragmentmodellen](assets/cf-managing-content-fragment-models-filter.png)
+![Inhaltsfragmentkonsole – Filtern von Inhaltsfragmentmodellen](assets/cf-managing-content-fragment-models-filter.png)
 
 ### Schnelles Filtern {#fast-filtering}
 
 Sie können auch ein Prädikat auswählen, indem Sie auf einen bestimmten Spaltenwert in der Liste klicken. Sie können einen oder mehrere Werte auswählen, um Eigenschaften zu kombinieren.
 
-Wählen Sie beispielsweise &quot;**&quot;** der Spalte **Status** aus. Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste wird entsprechend gefiltert.
+Wählen Sie zum Beispiel **Aktiviert** in der Spalte **Status** aus. Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entsprechend gefiltert.
 
 >[!NOTE]
 >
->Die Schnellfilterung wird nur für die Spalten **Status**, **Geändert**, **Tags** und **Veröffentlicht von** unterstützt.
+>Schnelles Filtern wird nur für die Spalten **Status**, **Geändert von**, **Tags** und **Veröffentlicht von** unterstützt.
 
 >[!NOTE]
 >
->Die Schnellfilterung funktioniert auf die gleiche Weise wie für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#fast-filtering) in der Konsole.
+>Schnelles Filtern funktioniert auf dieselbe Weise wie [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/managing.md#fast-filtering) in der Konsole.
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
 1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration oder Unterkonfiguration](/help/sites-cloud/administering/content-fragments/setup.md) entspricht.
-1. Verwenden **Erstellen** um das Dialogfeld zu öffnen.
+1. Verwenden Sie **Erstellen**, um das Dialogfeld zu öffnen.
 
    >[!CAUTION]
    >
-   >Die **Erstellen**-Option ist nur verfügbar:
+   >Die Option **Erstellen** ist nur in folgenden Fällen verfügbar:
    >
-   >* Wenn die [Verwendung von Inhaltsfragmentmodellen aktiviert wurde](/help/sites-cloud/administering/content-fragments/setup.md)
+   >* Wenn die [Verwendung von Inhaltsfragmentmodellen aktiviert wurde](/help/sites-cloud/administering/content-fragments/setup.md).
    >* Wenn Sie den Ordner ausgewählt haben, in dem Sie das Modell erstellen möchten.
 
 1. Wählen Sie den **Pfad** zur Konfiguration aus und geben Sie den **Namen** an.
 
    >[!NOTE]
    >
-   >Die Konfiguration wird automatisch mit der aktuellen Konfiguration ausgefüllt (dem Ordner, in dem Sie sich derzeit befinden).
+   >Die Konfiguration wird automatisch mit der aktuellen Konfiguration ausgefüllt (der Ordner, in dem Sie sich derzeit befinden).
    >
    >Sie können die Konfiguration auch ändern, indem Sie auf das Ordnersymbol klicken.
 
    Sie können auch verschiedene Eigenschaften definieren:
 
    * **Titel**
-Wenn Sie zuerst **Titel** eingeben, wird **Name** daraus generiert.
-   * a **Beschreibung**
-   * **Modell aktivieren**, um [Modell zu aktivieren](#enabling-disabling-a-content-fragment-model)
+Wenn Sie zuerst den **Titel** eingeben, wird der **Name** daraus generiert.
+   * eine **Beschreibung**
+   * **Modell aktivieren**, um [das Modell zu aktivieren](#enabling-disabling-a-content-fragment-model)
 
    >[!NOTE]
    >
@@ -259,11 +259,11 @@ Nachdem ein Modell erstellt wurde, muss es aus folgenden Gründen aktiviert werd
 * Damit es in einem Inhaltsfragmentmodell referenziert werden kann.
 * Damit es für GraphQL verfügbar ist, sodass das Schema generiert wird.
 
-Sie können **Modell** aktivieren):
+Sie können ein Modell in folgenden Fällen **aktivieren**:
 
-* Beim Erstellen eines neuen Modells
-   * Eine Option wird im Dialogfeld angezeigt.
-* Wenn ein Modell speziell deaktiviert **deaktiviert**
+* Wenn ein neues Modell erstellt wird
+   * Eine entsprechende Option wird im Dialogfeld angezeigt.
+* Wenn ein Modell explizit **deaktiviert** wurde
    * Wenn das gewünschte Modell ausgewählt ist, ist die Aktion **Aktivieren** in der oberen Symbolleiste verfügbar.
 
 ### Deaktivieren eines Inhaltsfragmentmodells {#disabling-a-content-fragment-model}
@@ -276,7 +276,7 @@ Ein Modell lässt sich auch aus folgenden Gründen deaktivieren:
    * Inhaltsfragmente, die auf dem Modell basieren, können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 * Das Modell kann nicht mehr referenziert werden. Vorhandene Referenzen bleiben jedoch unverändert und können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 
-Um ein Modell zu deaktivieren, das als **Aktiviert** gekennzeichnet ist, verwenden Sie die Option **Deaktivieren** aus:
+Um ein Modell zu deaktivieren, das als **Aktiviert** gekennzeichnet ist, verwenden Sie die Option **Deaktivieren** über:
 
 * Die obere Symbolleiste, wenn das erforderliche Modell ausgewählt ist.
 
@@ -341,16 +341,16 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 
 So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
-1. Navigieren Sie zu und wählen Sie Ihr Inhaltsfragmentmodell aus. Sie können mehrere Modelle auswählen.
+1. Navigieren Sie zu Ihrem Inhaltsfragmentmodell und wählen Sie dieses aus. Sie können mehrere Modelle auswählen.
 
-1. Wählen Sie **Veröffentlichen** aus der Symbolleiste aus.
+1. Wählen Sie in der Symbolleiste die Option **Veröffentlichen** aus. 
 
-1. Wählen Sie im Dialogfeld „Veröffentlichen“ die **Ziel**:
+1. Wählen Sie im Dialogfeld „Veröffentlichen“ das **Ziel** aus:
 
    * **Veröffentlichungs-Service**
    * **Vorschau-Service**
 
-1. Der Workflow zum Veröffentlichen der ausgewählten Modelle und ihrer Referenzen wird gestartet. Der Veröffentlichungsstatus wird dann in der Konsole angezeigt.
+1. Der Workflow zum Veröffentlichen der ausgewählten Modelle und ihrer Referenzen wird gestartet. Der Status „Veröffentlicht“ wird daraufhin in der Konsole angezeigt.
 
 <!--
 ## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
@@ -398,7 +398,7 @@ In beiden Fällen können Abfragen beschädigt werden, wenn die geänderten Mode
 
 ### Die Lösung {#the-solution}
 
-Um diese Probleme zu lösen, werden die Inhaltsfragmentmodelle in der Autorenumgebung durch einen SCHREIBGESCHÜTZTEN Modus *gesperrt*, sobald sie veröffentlicht wurden. Dieser Status wird durch &quot;**&quot;**.
+Um diese Probleme zu lösen, werden die Inhaltsfragmentmodelle in der Autorenumgebung durch einen SCHREIBGESCHÜTZTEN Modus *gesperrt*, sobald sie veröffentlicht wurden. Dieser Status wird durch **Gesperrt** angezeigt.
 
 Wenn das Modell **Gesperrt** ist (im schreibgeschützten Modus), können Sie die Inhalte und die Struktur der Modelle anzeigen, sie jedoch nicht bearbeiten.
 
@@ -408,9 +408,9 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
   In der Konsole können Sie den SCHREIBGESCHÜTZTEN Modus mit den Aktionen **Entsperren** und **Sperren** in der Symbolleiste verwalten.
 
-   * Sie können ein Modell zum Aktivieren von Bearbeitungen **Entsperren**.
+   * Sie können ein Modell zum Aktivieren von Bearbeitungen **entsperren**.
 
-     Wenn Sie **Entsperren** auswählen, wird eine Warnung angezeigt, und Sie müssen die Aktion **Entsperren** bestätigen.
+     Wenn Sie **Entsperren** auswählen, wird eine Warnung angezeigt und Sie müssen die Aktion **Entsperren** bestätigen.
 
      Anschließend können Sie das Modell zum Bearbeiten öffnen.
 
@@ -419,9 +419,9 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
 * Modell-Editor
 
-   * Wenn Sie ein gesperrtes Modell öffnen, werden Sie gewarnt und es werden Ihnen drei Aktionen angezeigt: **Abbrechen**, **Schreibgeschützt anzeigen**, **Bearbeiten**.
+   * Wenn Sie ein gesperrtes Modell öffnen, werden Sie gewarnt und es werden drei Aktionen angezeigt: **Abbrechen**, **Anzeigen (schreibgeschützt)** und **Bearbeiten**.
 
-   * Wenn Sie **Schreibgeschützt anzeigen** auswählen, können Sie den Inhalt und die Struktur des Modells sehen.
+   * Wenn Sie **Anzeigen (schreibgeschützt)** auswählen, können Sie den Inhalt und die Struktur des Modells sehen.
 
    * Wenn Sie **Bearbeiten** auswählen, können Sie Ihre Änderungen bearbeiten und speichern:
 

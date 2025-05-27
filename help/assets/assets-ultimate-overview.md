@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
 source-git-commit: ccd2334528ed7309c271d069209adec333de356c
-workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '882'
+ht-degree: 100%
 
 ---
 
@@ -138,6 +138,6 @@ In der folgenden Tabelle sind die verfügbaren AEM Assets-Benutzertypen, ihre Be
 | AEM > Produktions-Autoreninstanz > AEM-Admins | − | − | − | ✓ |
 | **Weitere Informationen** | Siehe [Aktivieren von Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | Siehe [Onboarding von Mitarbeiter-Benutzenden](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Siehe [Onboarding von Power-Benutzenden](/help/assets/enable-assets-ultimate.md#onboard-power-users) | – |
 
-Informationen zu den ersten Schritten mit Assets Ultimate finden Sie unter [Aktivieren von AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Wenn Sie von vorhandenen AEM Assets-Benutzenden gefragt werden, wann Sie ein Upgrade auf Assets Ultimate durchführen können, wenden Sie sich an Ihren Adobe-Kundenbetreuer. Weitere Informationen finden Sie [Aktivieren von Assets Ultimate für Bestandskunden](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) .
+Informationen zu den ersten Schritten mit Assets Ultimate finden Sie unter [Aktivieren von AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Wenn Sie von vorhandenen AEM Assets-Benutzenden gefragt werden, wann Sie ein Upgrade auf Assets Ultimate durchführen können, wenden Sie sich an die Adobe-Kundenbetreuung. Weitere Informationen finden Sie unter [Aktivieren von Assets Ultimate für bestehende Kundschaft](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers).
 
 AEM Assets bietet außerdem ein einfacheres DAM für Kundinnen und Kunden ohne weitergehende Anforderungen wie Erweiterbarkeit der Benutzeroberfläche, API-gesteuerte Automatisierung und Bereitstellung von benutzerdefiniertem Code. Weitere Informationen finden Sie unter [AEM Assets Prime](/help/assets/assets-prime.md).

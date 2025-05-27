@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1476'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Das System zählt die Inhaltsanfragen, wenn eine Benutzerin oder ein Benutzer ei
 
 >[!NOTE]
 >
->Die in der Ansicht „Inhaltsanfragen“ angezeigten Daten werden alle 24 Stunden aktualisiert.
+>Die in der Ansicht „Inhaltsanfragen“ angezeigten Daten werden alle 24 Stunden aktualisiert.
 
 ## Über Cloud Service-Inhaltsanfragen {#understanding-cloud-service-content-requests}
 

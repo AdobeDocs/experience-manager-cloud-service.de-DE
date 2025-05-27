@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2454'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -242,7 +242,7 @@ Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt P
 
 >[!NOTE]
 >
->Weitere [ finden Sie unter „Aktivieren der Funktionen ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) progressiven Web-Apps“.
+>Weitere Informationen finden Sie unter [Aktivieren der Progressive Web App-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
 
 {{pwa-deprecation}}
 
@@ -352,22 +352,22 @@ Vererbte Eigenschaften können nicht bearbeitet werden. Tippen oder klicken Sie 
 
 Bestätigen Sie den Abbruch im Modal **Vererbung abbrechen**.
 
-![Modal zur Bestätigung des Abbruchs der Vererbung](assets/cancel-inheriance-confirmation.png)
+![Modal mit Bestätigung des Abbruchs der Vererbung](assets/cancel-inheriance-confirmation.png)
 
 Sobald die Vererbung für ein Feld abgebrochen wurde, kann es bearbeitet werden.
 
 ![Abgebrochene Vererbung](assets/property-inheritance-broken.png)
 
-Um die Vererbung wiederherzustellen, tippen oder klicken Sie auf das Symbol **Vererbung zurücksetzen** neben dem Feld.
+Um die Vererbung zu reaktivieren, tippen oder klicken Sie auf das Symbol **Vererbung wiederherstellen** neben dem Feld.
 
-![Vererbung zurücksetzen](assets/revert-inheritance.png)
+![Vererbung wiederherstellen](assets/revert-inheritance.png)
 
-Bestätigen Sie die Wiederherstellung im **Vererbung zurücksetzen**.
+Bestätigen Sie die Wiederherstellung im Modal **Vererbung wiederherstellen**.
 
-![Modal zur Bestätigung der Vererbung zurücksetzen](assets/revert-inhertiance-confirmation.png)
+![Modal mit Bestätigung der Wiederherstellung der Vererbung](assets/revert-inhertiance-confirmation.png)
 
-Wählen Sie **Seite nach Wiederherstellung der Vererbung synchronisieren** aus, um das Feld mit den neuesten Werten in der Blueprint zu aktualisieren. Andernfalls werden die Werte bei der nächsten Synchronisierung der Live Copy aktualisiert.
+Wählen Sie **Seite nach Zurücksetzen der Vererbung synchronisieren** aus, um das Feld mit den neuesten Werten im Blueprint zu aktualisieren. Andernfalls werden die Werte bei der nächsten Synchronisierung der Live Copy aktualisiert.
 
 >[!TIP]
 >
->Weitere Informationen zur Vererbung finden Sie im Dokument [Multi-Site-Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md)
+>Weitere Informationen zur Vererbung finden Sie im Dokument [Multi-Site-Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md).
