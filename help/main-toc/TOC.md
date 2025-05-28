@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b246b1729d7e598dc593ecce05bd8975d4752f5a
+source-git-commit: 35d50bc3c2663ff9113ed89dbaeb9b9a82cd9bb1
 workflow-type: tm+mt
-source-wordcount: '6173'
+source-wordcount: '6185'
 ht-degree: 99%
 
 ---
@@ -439,6 +439,8 @@ ht-degree: 99%
          + [Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analysieren der Struktur](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [Inhaltsfragmente mit Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+         + [Erweiterung für Inhaltsfragmentmodelle in AJO - externe Verweise](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)

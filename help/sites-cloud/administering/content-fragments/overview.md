@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '1977'
-ht-degree: 100%
+source-git-commit: 3950df27533bf545d33da39a9f5fe9819820134a
+workflow-type: tm+mt
+source-wordcount: '1987'
+ht-degree: 99%
 
 ---
 
@@ -98,6 +98,7 @@ Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
    * Zusammenarbeiten mit anderen Autorinnen und Autoren mithilfe von Kommentaren
 * [Analysieren](/help/sites-cloud/administering/content-fragments/analysis.md) der Struktur Ihres Inhaltsfragments mithilfe des Editors
 * [Zugreifen auf Ihre Fragmente mit GraphQL, für eine Headless-Bereitstellung an Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+* [Integrieren und Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
 * [Oder Verwenden Ihrer Fragmente für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
