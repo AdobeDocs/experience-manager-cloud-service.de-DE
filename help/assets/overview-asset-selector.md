@@ -3,10 +3,10 @@ title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellungen von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
+workflow-type: tm+mt
+source-wordcount: '1598'
+ht-degree: 88%
 
 ---
 
@@ -203,6 +203,46 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
 * ![Galerieansicht](assets/do-not-localize/gallery-view.png) [!UICONTROL **Galerieansicht**]: Die Galerie-Ansicht zeigt Dateien oder Ordner in einer zentrierten, horizontalen Liste an.
 * ![Wasserfallansicht](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Wasserfallansicht**]: Die Wasserfallansicht zeigt Dateien oder Ordner in Form einer Brücke an.
 
+### Asset-Details und Metadaten {#asset-details-and-metadata}
+
+Die Seite „Asset-Details“ bietet eine umfassende Ansicht eines bestimmten Assets, in der alle wichtigen Informationen an einem Ort zusammengefasst sind. Sie enthält einen Überblick mit dem Namen, dem Dateiformat, dem Status und einer kurzen Beschreibung sowie eine Vorschau oder Miniaturansicht, um eine einfache visuelle Identifizierung zu ermöglichen. Es enthält auch Metadaten eines Assets wie Erstellungsdatum, Autor, Größe, Farbschema usw. Diese Attribute ermöglichen eine effiziente Suche, Filterung und Klassifizierung eines Assets. Das Bedienfeld „Asset-Details“ ist sowohl in der Leisten- als auch in der modalen Ansicht des Asset-Wählers verfügbar. In der Leistenansicht ist es erforderlich, `onDrop` Eigenschaft zu aktivieren und zu konfigurieren, damit ein Asset zurückgegeben wird. In der modalen Ansicht gibt `handleSelection` Eigenschaft alternativ ein Asset zurück. Siehe [Asset-Wähler-Eigenschaften](asset-selector-properties.md).
+
+Gehen Sie wie folgt vor, um Details zu einem Asset und zu Metadaten anzuzeigen:
+
+1. Öffnen Sie den Asset-Wähler-Modus und navigieren Sie zu einem Asset.
+1. Bewegen Sie den Mauszeiger über das Asset und klicken Sie auf ![Infosymbol](/help/assets/assets/info-icon-solid-black.svg).
+1. Gehen Sie zur Registerkarte **[!UICONTROL Info]**, um die Details des Assets anzuzeigen. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+Informationen zum Anpassen des Detailansichtsbereichs eines Assets finden Sie unter [Anpassen von Informationen in der modalen Ansicht](asset-selector-customization.md#customize-info-in-modal-view).
+
+![Asset-Details](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## Weitere Informationen zu wichtigen Funktionen {#key-capabilities-asset-selector}
 
 <table>
@@ -216,39 +256,39 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers in Adobe-Anwendungen"><br/>
-<a href="integrate-asset-selector.md">Integrieren des Asset-Wählers in Adobe-Anwendungen</a>
+<a href="integrate-asset-selector-adobe-app.md">Integrieren des Asset-Wählers in Adobe-Anwendungen</a>
         <p>
         <em>Entdecken Sie, wie Sie den Asset-Wähler in verschiedene Adobe-Anwendungen integrieren können.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers"><br/>
-<a href="integrate-asset-selector.md">Integrieren des Asset-Wählers in Anwendungen von Drittanbietern</a>
+<a href="integrate-asset-selector-non-adobe-app.md">Integrieren des Asset-Wählers in Anwendungen von Drittanbietern</a>
         <p>
         <em>Entdecken Sie die Funktionen zum Integrieren des Asset-Wählers in Adobe-fremde Anwendungen.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers"><br/>
-<a href="integrate-asset-selector.md">Integrieren des Asset-Wählers in Dynamic Media-OpenAPIs</a>
+<a href="integrate-asset-selector-dynamic-media-open-api.md">Integrieren des Asset-Wählers in Dynamic Media-OpenAPIs</a>
         <p>
         <em>Erfahren Sie, wie Sie den Asset-Wähler in Dynamic Media-OpenAPIs integrieren.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Grafik zu den Eigenschaften des Asset-Wählers"><br/>
-<a href="asset-selector-customization.md">Eigenschaften des Asset-Wählers</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Grafik zu Beispielen für den Asset-Wähler"><br/>
+<a href="asset-selector-properties.md">Eigenschaften des Asset-Wählers</a>
         <p>
-        <em>Erfahren Sie mehr über die Grundlagen zum Anpassen verschiedener Komponenten des Asset-Wählers, wie Filter, Auswahl von Assets und abgelaufene Assets. </em>
+        <em>Lernen Sie, die Verwendung von Eigenschaften auf praktische Weise zu verstehen. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Grafik zu Beispielen für den Asset-Wähler"><br/>
-<a href="asset-selector-customization.md">Beispiele für den Asset-Wähler</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Grafik zu den Eigenschaften des Asset-Wählers"><br/>
+<a href="asset-selector-examples.md">Beispiele für den Asset-Wähler</a>
         <p>
-        <em>Lernen Sie, die Verwendung von Eigenschaften auf praktische Weise zu verstehen. </em>
+        <em>Erfahren Sie mehr über die Grundlagen zum Anpassen verschiedener Komponenten des Asset-Wählers, wie Filter, Auswahl von Assets und abgelaufene Assets. </em>
         </p>
     </td>
     <td>
@@ -269,7 +309,7 @@ Mit dem Asset-Selektor können Sie das Asset in vier verschiedenen Ansichten anz
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Grafik zu Sammlungen des Asset-Wählers"><br/>
 <a href="asset-selector-collections.md">Sammlungen des Asset-Wählers</a>
         <p>
-        <em>Erfahren Sie, wie Sie Sammlungen im Asset-Wähler mithilfe des Experience Manager-Repositorys verwenden. </em>
+        <em>Erfahren Sie, wie Sie Sammlungen im Asset-Selektor mithilfe des Experience Manager-Repositorys verwenden. </em>
         </p>
     </td>
     <td>

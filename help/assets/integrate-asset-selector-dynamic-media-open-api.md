@@ -1,12 +1,12 @@
 ---
-title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Integrieren des Asset-Wählers mit der Open API von Dynamic Media
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 96%
+source-wordcount: '933'
+ht-degree: 99%
 
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Anpassen des Asset-Wähler-Programms
 description: Verwenden Sie Funktionen zum Anpassen des Asset-Wählers in Ihrer Anwendung.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+workflow-type: tm+mt
+source-wordcount: '1292'
+ht-degree: 99%
 
 ---
 

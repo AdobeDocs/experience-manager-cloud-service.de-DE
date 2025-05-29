@@ -4,10 +4,10 @@ description: Erfahren Sie, wie AEM Assets und Dynamic Media die effektive Bildve
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Gehen Sie folgendermaßen vor, um dynamische Ausgabedarstellungen von Bildern in
 
 ## Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen {#dm-with-openapi-renditions}
 
-### Voraussetzungen
+### Voraussetzungen {#prereqs-dm-with-openapi-renditions}
 
 * Sie müssen eine Benutzerin bzw. ein Benutzer mit AEM Dynamic Media-Lizenz sein.
 * Assets müssen für die Anzeige von Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen genehmigt werden. Weitere Informationen finden Sie unter [Genehmigen von Assets in Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets).

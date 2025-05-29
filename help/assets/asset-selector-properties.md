@@ -1,12 +1,12 @@
 ---
-title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Asset-Selektor-Eigenschaften für die Anpassung
 description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
-workflow-type: ht
-source-wordcount: '1326'
-ht-degree: 100%
+source-git-commit: 89a7346f5b6bc1d65524c5ead935aa4a2a764ebb
+workflow-type: tm+mt
+source-wordcount: '1403'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendeter IMS-Bearer-Token. Das `imsToken` ist erforderlich, wenn Sie eine [!DNL Adobe]-Anwendung für die Integration verwenden. |
 | *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. Der `apiKey` ist erforderlich, wenn Sie eine Integration mit einer [!DNL Adobe]-Anwendung verwenden. |
 | *filterSchema* | Array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen des Asset-Wählers einschränken möchten. |
-| *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispiel: MIME-Typ JPG, PNG, GIF. |
+| *filterForm-Props* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispiel: MIME-Typ JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn der Asset-Wähler gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Zum Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie ein anderes Verzeichnis verwenden müssen, geben Sie auch einen Wert für die Eigenschaft `path` an. |
 | *acvConfig* | Objekt | Nein | | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben. Diese Eigenschaft wird auch mit der Eigenschaft `rail` verwendet, um die Leistenansicht des Asset-Wählers zu aktivieren. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |                 | Wenn die vorkonfigurierten Übersetzungen für die Bedürfnisse Ihrer Anwendung unzureichend sind, können Sie eine Schnittstelle bereitstellen, über die Sie Ihre eigenen lokalisierten Werte durch die Eigenschaft `i18nSymbols` übergeben können. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet. Um die Überschreibung vorzunehmen, müssen Sie ein gültiges [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor)-Objekt an den Schlüssel von `i18nSymbols` übergeben, den Sie überschreiben möchten. |
@@ -66,7 +66,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *repositoryId* | Zeichenfolge | Nein | &#39;&#39; | Repository, aus dem der Asset-Wähler den Inhalt lädt. |
 | *additionalAemSolutions* | `Array<string>` | Nein | [ ] | Damit können Sie eine Liste mit zusätzlichen AEM-Repositorys hinzufügen. Wenn in dieser Eigenschaft keine Informationen bereitgestellt werden, werden nur die Medienbibliothek oder AEM Assets-Repositorys berücksichtigt. |
 | *hideTreeNav* | Boolesch | Nein |  | Gibt an, ob die Navigationsseitenleiste der Asset-Baumstruktur ein- oder ausgeblendet werden soll. Sie wird nur in der modalen Ansicht verwendet und daher gibt es keine Auswirkung dieser Eigenschaft in der Leistenansicht. |
-| *onDrop* | Funktion | Nein | | Die Eigenschaft ermöglicht die Ablagefunktion eines Assets. |
+| *onDrop* | Funktion | Nein | | Die Funktion „Beim Ablegen“ wird verwendet, um ein Asset per Drag-and-Drop auf einen festgelegten Ablagebereich zu ziehen. Es ermöglicht interaktive Benutzeroberflächen, über die Assets nahtlos verschoben und verarbeitet werden können. |
 | *dropOptions* | `{allowList?: Object}` | Nein | | Konfiguriert Ablagefunktionen mithilfe der „Zulassungsliste“. |
 | *colorScheme* | Zeichenfolge | Nein | | Design konfigurieren (`light` oder `dark`) für den Asset-Wähler. |
 | *Theme* | Zeichenfolge | Nein | Standard | Wenden Sie „theme“ auf den Asset-Wähler zwischen `default` und `express` an. Zudem wird `@react-spectrum/theme-express` unterstützt. |
@@ -94,11 +94,20 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *onFilesChange* | Funktion | Nein | | Es handelt sich dabei um eine Rückruffunktion, mit der das Verhalten des Uploads angezeigt wird, wenn eine Datei geändert wird. Sie gibt das neue Array der Dateien, die zum Hochladen ausstehen, und den Quelltyp des Uploads weiter. Der Quelltyp kann im Fehlerfall null sein. Die Syntax lautet `(newFiles: File[], uploadType: UploadType) => void` |
 | *uploadingPlaceholder* | Zeichenfolge | | | Es handelt sich dabei um ein Platzhalterbild, das das Metadatenformular ersetzt, wenn der Upload des Assets initiiert wird. Die Syntax lautet `{ href: string; alt: string; } ` |
 | *uploadConfig* | Objekt | | | Es handelt sich um ein Objekt, das benutzerdefinierte Konfigurationen für den Upload enthält. |
-| *featureSet* | Array | Zeichenfolge | | Die Eigenschaft `featureSet:[ ]` wird verwendet, um eine bestimmte Funktion in der Anwendung „Asset-Wähler“ zu aktivieren oder zu deaktivieren. Um die Komponente oder eine Funktion zu aktivieren, können Sie einen Zeichenfolgewert im Array weitergeben oder das Array leer lassen, um diese Komponente zu deaktivieren. Wenn Sie beispielsweise die Upload-Funktion im Asset-Wähler aktivieren möchten, verwenden Sie die Syntax `featureSet:[0:"upload"]`. |
+| *featureSet* | Array | Zeichenfolge | | Die Eigenschaft `featureSet:[ ]` wird verwendet, um eine bestimmte Funktion in der Anwendung „Asset-Wähler“ zu aktivieren oder zu deaktivieren. Um die Komponente oder eine Funktion zu aktivieren, können Sie einen Zeichenfolgenwert im Array übergeben oder das Array leer lassen, um diese Komponente zu deaktivieren.  Wenn Sie z. B. die Upload-Funktion im Asset-Wähler aktivieren möchten, verwenden Sie die `featureSet:[0:"upload"]`. Ebenso können Sie `featureSet:[0:"collections"]` verwenden, um Sammlungen im Asset-Wähler zu aktivieren. Verwenden Sie außerdem `featureSet:[0:"detail-panel"]`, um [Detailbereich](overview-asset-selector.md#asset-details-and-metadata) eines Assets zu aktivieren. Um diese Funktionen zusammen zu verwenden, wird die Syntax `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--
+| *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Asset Selector. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. Also, `featureSet:[0:"dm-renditions"]` to show Dynamic Media renditions of an asset.|
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
+>* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrieren des Asset-Wählers mit Anwendungen von Drittanbietern](/help/assets/integrate-asset-selector-non-adobe-app.md)

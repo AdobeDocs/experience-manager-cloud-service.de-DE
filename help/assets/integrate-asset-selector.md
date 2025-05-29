@@ -1,12 +1,12 @@
 ---
-title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Integrieren des Asset-Wählers mithilfe von Vanilla JS
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 87%
+source-wordcount: '225'
+ht-degree: 100%
 
 ---
 
