@@ -5,24 +5,25 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 100%
+source-wordcount: '1529'
+ht-degree: 91%
 
 ---
 
 
 # Erlebnis-Audit-Dashboard {#experience-audit-dashboard}
 
-Erfahren Sie, wie der Erlebnis-Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+Erfahren Sie, wie Experience Audit Ihren Bereitstellungsprozess validiert und sicherstellt, dass die Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO (Suchmaschinenoptimierung) entsprechen. Es bietet eine klare und informative Dashboard-Oberfläche zum Verfolgen dieser Metriken.
 
 ## Überblick {#overview}
 
 Der Erlebnis-Audit validiert den Bereitstellungsprozess und stellt sicher, dass die Änderungen bereitgestellt werden:
 
-1. Die Grundanforderungen an Leistung, Barrierefreiheit, Best Practices und SEO (Suchmaschinenoptimierung) werden erfüllt.
-
+1. Erfüllen Sie Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO.
 1. Es werden keine Regressionen eingeführt.
 
 Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Benutzenden auf der Site höchsten Standards entspricht.
@@ -35,9 +36,9 @@ Die Erlebnisprüfung basiert auf [Google Lighthouse](https://developer.chrome.co
 
 Die Erlebnisprüfung ist für folgende Cloud Manager-Pipelines verfügbar:
 
-* (Standard) Produktions-Pipelines für Sites
-* (Optional) Entwicklung von Full-Stack-Pipelines
-* (Optional) Entwicklung von Frontend-Pipelines
+* (Standard) Sites-Produktions-Pipelines.
+* (Optional) Entwicklung von Full-Stack-Pipelines.
+* (Optional) Entwicklung von Frontend-Pipelines.
 
 Weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen finden Sie im [Konfigurationsabschnitt](#configuration).
 
@@ -49,9 +50,9 @@ Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. 
 
 1. Führen Sie je nach Typ der Pipeline, die konfiguriert werden soll, einen der folgenden Schritte aus:
 
-   * Fügen Sie eine neue [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) hinzu, um die Pfade zu definieren, die das Audit auswerten soll.
-   * Fügen Sie eine neue [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) hinzu, wenn Sie das Audit für eine Frontend- oder Full-Stack-Entwicklungs-Pipeline aktivieren möchten.
-   * Oder Sie können [eine vorhandene Pipeline bearbeiten](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
+   * [Produktions-Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) definieren Sie die Pfade, die der Audit auswerten soll.
+   * [Fügen Sie eine produktionsfremde Pipeline hinzu](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), wenn Sie die Prüfung für eine Frontend- oder Entwicklungs-Full-Stack-Pipeline aktivieren möchten.
+   * [Bearbeiten einer vorhandenen Pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und Aktualisieren der vorhandenen Optionen.
 
 1. Um den Erlebnis-Audit beim Hinzufügen oder Bearbeiten einer Nicht-Produktions-Pipeline zu verwenden, aktivieren Sie das Kontrollkästchen **Erlebnis-Audit**. Diese Option finden Sie auf der Registerkarte **Quell-Code**.
 
@@ -80,7 +81,7 @@ Die Erlebnisprüfung ist standardmäßig für Produktions-Pipelines verfügbar. 
 
 ## Ergebnisse des Erlebnis-Audits {#results}
 
-Die Ergebnisse des Experience Audit werden im Schritt **Staging-Tests** der Produktions-Pipeline über die [Ausführungsseite der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md) präsentiert.
+Die Ergebnisse des Experience Audit werden in der Phase **Staging-Tests** der Produktions-Pipeline über die Seite [Ausführung der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md) vorgestellt.
 
 ![Dashboard in der Pipeline](assets/experience-audit-dashboard.png)
 
@@ -148,7 +149,7 @@ Wenn Sie den Mauszeiger über das Diagramm bewegen, zeigt eine QuickInfo die Wer
 
 ![Trend-Details](assets/experience-audit-trend-details.png)
 
-Wenn Sie auf einen bestimmten Zeitpunkt im Diagramm klicken, wird ein Popup mit Details zu diesem Scan geöffnet. Klicken Sie auf **Erlebnis-Audit-Scan öffnen**, um diese Scan-Ergebnisse im Abschnitt **[Ergebnisse des Erlebnis-Audit-Scans](#scan-results)** zu laden.
+Wenn Sie zu einem bestimmten Zeitpunkt auf das Diagramm klicken, wird ein Popup mit Details zu diesem Scan geöffnet. Klicken Sie auf **Erlebnis-Audit-Scan öffnen**, um diese Scan-Ergebnisse im Abschnitt **[Ergebnisse des Erlebnis-Audit-Scans](#scan-results)** zu laden.
 
 ![Anderen Scan auswählen](assets/experience-audit-open-scan.png)
 
