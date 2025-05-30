@@ -118,7 +118,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 >[!NOTE]
 >
 >Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Sie können jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell verknüpfen. Es ist möglich, dasselbe Bild mit verschiedenen Tags zu versehen, die zu verschiedenen Tag-Modellen gehören.
->>Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
+>&#x200B;>Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
 
 ## Trainieren des Modelle für Ihre benutzerdefinierten Tags {#train-model}
 
@@ -161,7 +161,7 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 >[!NOTE]
 >
 >Was passiert, wenn ich Smart-Tags-Schulungen über einen Export von einer Instanz auf eine andere übertragen möchte?
->>Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur gleichen IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in allen IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
+>&#x200B;>Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur gleichen IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in allen IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
 
 ## Einschränkungen und Best Practices im Zusammenhang mit Smart-Tags {#limitations-smart-tags-training}
 
@@ -172,4 +172,4 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 >[!NOTE]
 >
 >Die Fähigkeit der Smart-Tags, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab.
->>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
+>&#x200B;>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
