@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 91%
+source-wordcount: '2448'
+ht-degree: 86%
 
 ---
 
@@ -219,23 +219,23 @@ Führen Sie die folgenden Schritte aus, um die Link-Komponente im Metadatenformu
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
 
-### Arbeiten mit Tags-Komponenten im Metadatenformular {#tag-component-metadata-form}
+### Arbeiten mit der Komponente „Tags“ im Metadatenformular {#tag-component-metadata-form}
 
-Das Stammelement stellt die Baumstruktur der Tags dar, die Sie mit den Assets verknüpfen können, und hilft Ihnen, das Asset anhand des ihm zugewiesenen Tags zu identifizieren. Darüber hinaus können Sie beim Konfigurieren des Metadatenformulars im Metadaten-Editor den Zugriff auf eine bestimmte Taxonomie einschränken.
+Das Stammelement stellt die Baumstruktur der Tags dar, die Sie mit den Assets verknüpfen können, und identifiziert das Asset anhand des ihm zugewiesenen Tags. Darüber hinaus können Sie beim Konfigurieren des Metadatenformulars im Metadaten-Editor den Zugriff auf eine bestimmte Taxonomie beschränken.
 
-#### Konfiguration der Tags-Komponente {#tags-component-configuration}
+#### Konfigurieren der Komponente „Tags“ {#tags-component-configuration}
 
-Konfigurieren Sie die Tag-Komponente, indem Sie die folgenden Schritte ausführen:
+Gehen Sie wie folgt vor, um die Komponente „Tags“ zu konfigurieren:
 
-1. Wechseln Sie zum Metadaten-Editor, navigieren Sie zu **[!UICONTROL Tags]** und platzieren Sie ihn auf der Arbeitsfläche.
-1. Benennen Sie die Komponente auf der Arbeitsfläche um. Navigieren Sie dazu zu **[!UICONTROL Beschriftung]** unter [!UICONTROL Metadateneigenschaft] im Einstellungsbereich und fügen Sie den Text für die Identifizierung hinzu.
-1. Suchen Sie unter [!UICONTROL Metadateneigenschaft] im Bedienfeld Einstellungen nach der Metadateneigenschaft, die Sie der Komponente zuweisen möchten.
-1. Klicken Sie **[!UICONTROL Auf bestimmte Taxonomie beschränken]**, um den Stammpfad der Taxonomie zu beschränken. Durchsuchen Sie dazu Tags und wählen Sie die Taxonomie für den jeweiligen Pfad aus.
+1. Wechseln Sie zum Metadaten-Editor, navigieren Sie zu **[!UICONTROL Tags]** und platzieren Sie die Komponente auf der Arbeitsfläche.
+1. Benennen Sie die Komponente auf der Arbeitsfläche um. Navigieren Sie dazu im Panel „Einstellungen“ unter [!UICONTROL Metadaten-Eigenschaft] zu **[!UICONTROL Label]** und fügen Sie den Text zur Identifizierung der Komponente hinzu.
+1. Suchen Sie im Panel „Einstellungen“ unter [!UICONTROL Metadaten-Eigenschaft] nach der Metadateneigenschaft, die der Komponente zugewiesen werden soll.
+1. Klicken Sie auf **[!UICONTROL Auf bestimmte Taxonomie beschränken]**, um den Stammpfad der Taxonomie zu beschränken. Durchsuchen Sie dazu die Tags und wählen Sie die Taxonomie für den jeweiligen Pfad aus.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
    ![Konfiguration von Stamm-Tags](assets/root-tag-config.png)
 
-1. [Zuweisen von Metadatenformularen zu Ordnern](#assign-metadata-form-folder).
+1. [Zuweisen eines Metadatenformulars zu Ordnern](#assign-metadata-form-folder).
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -249,7 +249,34 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-Um die konfigurierten Stamm-Tags anzuzeigen, gehen Sie zur Detailseite des Assets, wo die Zuordnung zwischen dem Metadatenformular und Stamm-Tags durchgeführt wird.
+Um die konfigurierten Stamm-Tags anzuzeigen, gehen Sie zur Seite mit den Asset-Details, wo die Zuordnung zwischen dem Metadatenformular und den Stamm-Tags erfolgt.
+
+## Verbessern der Inhaltssuche mit KI-generierten Smart-Tags {#ai-smart-tags}
+
+Anstatt sich auf die manuelle Eingabe zu verlassen, weist KI digitalen Assets automatisch beschreibende Tags zu. Diese KI-generierten Tags verbessern die Metadatenqualität und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung manueller Tags, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher. Wenn das Asset beispielsweise ein Bild ist, kann KI Objekte, Szenen, Emotionen oder sogar Markenlogos darin identifizieren und relevante Tags wie „Sonnenuntergang“, „Strand“, „Urlaub“ oder „Lächeln“ generieren. KI-generierte Inhalte können die Suche nach Assets verbessern, indem sie sowohl semantische als auch lexikalische Suchtechniken nutzen. Weitere Informationen finden [Assets durchsuchen](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![Optimierte Smart-Tags](assets/enhanced-smart-tags.png)
+
+### Verwenden von KI-generierten Smart-Tags {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Schritte aus:
+
+1. Wechseln Sie in der [!DNL Experience Manager] zum gewünschten Ordner und klicken Sie auf **[!UICONTROL Assets hinzufügen]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Die kompatiblen Bilddateiformate sind `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` und `bmp`.
+
+1. Warten Sie, bis das neu hochgeladene Asset verarbeitet wurde. Navigieren Sie abschließend zu den Asset-Details.
+
+1. Wechseln Sie **[!UICONTROL Registerkarte]** KI-generiert“. Wenn [!DNL Experience Manager] Version inkompatibel ist oder nicht aktualisiert wird, ist diese Registerkarte nicht sichtbar. Die mindestens erforderliche AEM-Release-Version ist `20626`. Die folgenden Felder sind vorhanden:
+
+   * **[!UICONTROL Erstellter Titel]:** Der Titel bietet eine klare und knappe Überschrift, die die Kernidee eines hochgeladenen Assets erfasst und es auf einen Blick leicht verständlich macht. Wenn Sie beim Hinzufügen eines Assets einen Titel angeben (in `dc:title`), wird dieser in der Ansicht zum Durchsuchen von Assets angezeigt. Wenn Sie das Feld leer lassen, wird automatisch ein von KI generierter Titel zugewiesen.
+   * **[!UICONTROL Erzeugte Beschreibung]:** Die Beschreibung bietet eine kurze, aber informative Zusammenfassung dessen, worum es bei dem Asset geht, und hilft Benutzern und Suchmodulen, seine Relevanz schnell zu verstehen.
+   * **[!UICONTROL Erzeugte Keywords]:** Die Keywords sind zielgerichtete Begriffe, die die Hauptthemen eines Assets darstellen und beim Tagging und Filtern von Inhalten helfen.
+
+1. [Optional] Sie können zusätzliche Tags hinzufügen oder eigene erstellen, wenn Sie der Meinung sind, dass relevante Tags fehlen. Schreiben Sie dazu Ihre Tags in das Feld **[!UICONTROL Erzeugte Keywords]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Nächste Schritte {#next-steps}
 
@@ -259,7 +286,7 @@ Um die konfigurierten Stamm-Tags anzuzeigen, gehen Sie zur Detailseite des Asset
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&amp;lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
