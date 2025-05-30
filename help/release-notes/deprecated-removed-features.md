@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 3d294b2b4fbd11f16ee8b0fbb5a9a46ab039dbae
+source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
 workflow-type: tm+mt
-source-wordcount: '2858'
-ht-degree: 89%
+source-wordcount: '2889'
+ht-degree: 88%
 
 ---
 
@@ -39,6 +39,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zur visuellen Bearbeitung<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Eigenschaften von Experience Fragments für **Social-Media-Status**. | Die Funktion wird in Kürze entfernt werden. |
+| Sites | [Automatisierung der Experience Cloud-Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Keine |
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
@@ -48,8 +49,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Integrationen mit Anmeldedaten, die aus Adobe Developer Console-Projekten generiert wurden, verlieren schrittweise die Unterstützung für Service-Konto-Anmeldedaten (JWT). Seit dem 1. Mai 2024 können in Adobe Developer Console keine neuen Anmeldedaten für Service-Konten (JWT) mehr erstellt werden. Vorhandene Anmeldedaten für Service-Konten (JWT) bleiben bis zum 1. Januar 2025 für konfigurierte Integrationen nutzbar. Danach funktionieren sie nicht mehr, sodass Kundinnen und Kunden zu OAuth-Server-zu-Server-Anmeldedaten migrieren müssen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
 | [!DNL Foundation] | Der Workflow für die Veröffentlichung der Inhaltsstruktur und der zugehörige Workflow-Schritt für die Veröffentlichung der Inhaltsstruktur, der für die Replikationen von Inhaltshierarchien verwendet wurde. | Verwenden Sie den [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation), der leistungsfähiger ist. |
-| Sites | [Automatisierung der Experience Cloud-Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Keine |
-
+| [!DNL Foundation] | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. | Adobe empfiehlt Kunden, für ihre Implementierung zum Google Closure Compiler (GCC) zu wechseln. |
 
 ## Entfernte Funktionen {#removed-features}
 
