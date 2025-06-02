@@ -4,10 +4,10 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 91%
+source-wordcount: '1922'
+ht-degree: 90%
 
 ---
 
@@ -189,6 +189,10 @@ Der Beispielinhalt enthält ein Blatt „enquiry“, das als Vorlage für das Fo
 
 ![Formular „enquiry“](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**Das Blatt, in dem das Formular erstellt wurde, unterliegt Einschränkungen hinsichtlich dessen, welchen Namen es haben kann. Nur `helix-default` und `shared-aem` können als Tabellennamen verwendet werden.**
+
 Aktualisieren wir zunächst einen Feldtitel. Öffnen Sie das Blatt „enquiry“ zur Bearbeitung, ändern Sie den Titel der Senden-Schaltfläche in `Let's Talk` und verwenden Sie AEM Sidekick, um die Datei in einer Vorschau anzuzeigen und zu veröffentlichen.
 
 ![Formular „enquiry“](/help/edge/assets/enquiry-form-preview-publish.png)
@@ -237,7 +241,7 @@ Gehen Sie wie folgt vor, um in kürzester Zeit über eine lokale AEM-Entwicklung
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub-Projekt klonen: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie &lt;owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und &lt;repo> mit dem Repository-Namen:
+1. GitHub-Projekt klonen: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie <owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und <repo> mit dem Repository-Namen:
 
    ```
    git clone https://github.com/<owner>/<repo>

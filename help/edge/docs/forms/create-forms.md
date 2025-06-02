@@ -4,10 +4,10 @@ description: Erste Schritte mit Edge Delivery Services für AEM Forms. Perfekte 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 97%
 
 ---
 
@@ -81,6 +81,10 @@ So setzen Sie die Formularerstellung fort:
 1. Öffnen Sie die erstellte Tabelle und benennen Sie das Standardblatt in „shared-aem“ um.
 
    ![Umbenennen des Standardblatts in „shared-default“](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+   >[!IMPORTANT]
+   >
+   >**Das Blatt, in dem das Formular erstellt wurde, unterliegt Einschränkungen hinsichtlich dessen, welchen Namen es haben kann. Nur `helix-default` und `shared-aem` können als Tabellennamen verwendet werden.**
 
 1. Fügen Sie zum Hinzufügen der Formularfelder Zeilen und Spaltenüberschriften in das Blatt „shared-aem“ ein. Jede Zeile sollte ein [Formularfeld](/help/edge/docs/forms/form-components.md#available-components) darstellen, wobei die Spaltenüberschriften die entsprechenden [Feldeigenschaften](/help/edge/docs/forms/form-components.md#components-properties) definieren.
 
