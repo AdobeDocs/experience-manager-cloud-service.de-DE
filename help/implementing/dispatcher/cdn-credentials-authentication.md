@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1497'
-ht-degree: 100%
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+workflow-type: tm+mt
+source-wordcount: '1712'
+ht-degree: 85%
 
 ---
 
@@ -23,6 +23,12 @@ Das von Adobe bereitgestellte CDN verfügt über mehrere Funktionen und Dienste,
 Jede dieser Optionen, einschließlich der Konfigurationssyntax, wird in einem eigenen Abschnitt unten beschrieben. 
 
 Es gibt einen Abschnitt über das [Rotieren von Schlüsseln](#rotating-secrets), welches eine gute Sicherheitspraxis ist.
+
+>[!NOTE]
+> Geheime Daten, die als Umgebungsvariablen definiert sind, sollten als unveränderlich betrachtet werden. Anstatt den Wert zu ändern, sollten Sie neue geheime Daten mit einem neuen Namen erstellen und in der Konfiguration auf diese geheimen Daten verweisen. Andernfalls erfolgt eine unzuverlässige Aktualisierung der Geheimnisse.
+
+>[!WARNING]
+>Entfernen Sie nicht die Umgebungsvariablen, auf die in Ihrer CDN-Konfiguration verwiesen wird. Dies kann zu Fehlern bei der Aktualisierung Ihrer CDN-Konfiguration führen (z. B. beim Aktualisieren von Regeln oder benutzerdefinierten Domains und Zertifikaten).
 
 ## HTTP-Header-Wert des kundenseitig verwalteten CDN {#CDN-HTTP-value}
 
@@ -216,7 +222,9 @@ Darüber hinaus enthält die Syntax Folgendes:
 
 ## Rotieren von Geheimnissen {#rotating-secrets}
 
-1. Es gilt als gute Sicherheitspraxis, die Anmeldeinformationen gelegentlich zu ändern. Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge Keys erreicht werden, wobei dieselbe Strategie auch für Bereinigungsschlüssel verwendet wird.
+Es empfiehlt sich, die Anmeldeinformationen regelmäßig zu ändern. Beachten Sie, dass Umgebungsvariablen nicht direkt geändert werden sollten, sondern stattdessen ein neues Geheimnis erstellen und auf den neuen Namen in der Konfiguration verweisen sollten.
+
+Dieser Anwendungsfall wird im Folgenden am Beispiel eines Edge-Schlüssels veranschaulicht, obwohl dieselbe Strategie auch für Purge-Schlüssel verwendet werden kann.
 
 1. Zunächst wurde nur `edgeKey1` definiert, der in diesem Fall als `${{CDN_EDGEKEY_052824}}` referenziert wird, was als empfohlene Konvention das Erstellungsdatum widerspiegelt.
 
@@ -260,3 +268,47 @@ Darüber hinaus enthält die Syntax Folgendes:
          edgeKey2: ${{CDN_EDGEKEY_041425}}
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
+
+Beim Rotieren von geheimen Daten, die in Anfrage-Headern festgelegt sind, z. B. zur Authentifizierung gegen ein Backend, wird empfohlen, die Rotation in zwei Schritten durchzuführen, um sicherzustellen, dass der Header-Wert ohne temporäre Lücken gewechselt wird.
+
+1. Erstkonfiguration vor der Rotation. In diesem Zustand wird der alte Schlüssel an das Backend gesendet.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+   ```
+
+1. Führen Sie die neue `API_KEY_2` ein, indem Sie dieselbe Kopfzeile zweimal festlegen (der neue Schlüssel sollte nach dem alten Schlüssel festgelegt werden). Nach der Bereitstellung wird der neue Schlüssel im Backend angezeigt.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+1. Entfernen Sie den alten `API_KEY_1` aus der Konfiguration. Nach der Bereitstellung wird der neue Schlüssel im Backend angezeigt und es ist sicher, die Umgebungsvariable des alten Schlüssels zu entfernen.
+
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+
