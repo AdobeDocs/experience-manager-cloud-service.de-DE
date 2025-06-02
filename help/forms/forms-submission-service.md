@@ -37,7 +37,7 @@ Im Folgenden finden Sie die Voraussetzungen für die Verwendung des Forms-Überm
 
 ## Konfigurieren des Forms-Sendedienstes
 
-Erstellen Sie ein neues AEM-Projekt, das mit dem adaptiven Forms-Block konfiguriert ist. Weitere Informationen zum Erstellen [ neuen AEM-Projekts finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) Artikel Erste Schritte - Entwickler-Tutorial . Aktualisieren Sie die `fstab.yaml` in Ihrem Projekt. Ersetzen Sie den vorhandenen Verweis durch den Pfad zu dem Ordner, den Sie für die `forms@adobe.com` freigegeben haben.
+Erstellen Sie ein neues AEM-Projekt, das mit dem adaptiven Forms-Block konfiguriert ist. Weitere Informationen zum Erstellen [ neuen AEM-Projekts finden Sie ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) Artikel Erste Schritte - Entwickler-Tutorial . Aktualisieren Sie die `fstab.yaml` in Ihrem Projekt. Ersetzen Sie den vorhandenen Verweis durch den Pfad zu dem Ordner, den Sie für die `forms@adobe.com` freigegeben haben.
 
 Sie können [den Forms-Übermittlungsdienst manuell konfigurieren](#configuring-the-forms-submission-service-manually) oder [den Forms-Übermittlungsdienst mithilfe der API konfigurieren](#configuring-the-forms-submission-service-using-api).
 
@@ -47,7 +47,7 @@ Sie können [den Forms-Übermittlungsdienst manuell konfigurieren](#configuring-
 
 #### &#x200B;1. Erstellen eines Formulars mit einer Formulardefinition
 
-Erstellen Sie ein Formular mit Google Sheets oder Microsoft Excel. Um zu erfahren, wie Sie ein Formular mithilfe einer Formulardefinition in Microsoft Excel oder Google Sheets erstellen, klicken [ hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Erstellen Sie ein Formular mit Google Sheets oder Microsoft Excel. Um zu erfahren, wie Sie ein Formular mithilfe einer Formulardefinition in Microsoft Excel oder Google Sheets erstellen, klicken [ hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 Im folgenden Screenshot wird die Formulardefinition angezeigt, die zum Erstellen eines Formulars verwendet wird:
 
@@ -59,7 +59,7 @@ Im folgenden Screenshot wird die Formulardefinition angezeigt, die zum Erstellen
 
 #### &#x200B;2. Aktivieren Sie das Arbeitsblatt, um Daten zu akzeptieren.
 
-Nachdem Sie das Formular erstellt und in der Vorschau angezeigt haben, aktivieren Sie die entsprechende Tabelle, um mit dem Empfang von Daten zu beginnen. Fügen Sie wie `incoming` ein neues Blatt hinzu. Sie können [manuell aktivieren, damit die Tabelle Daten akzeptiert](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+Nachdem Sie das Formular erstellt und in der Vorschau angezeigt haben, aktivieren Sie die entsprechende Tabelle, um mit dem Empfang von Daten zu beginnen. Fügen Sie wie `incoming` ein neues Blatt hinzu. Sie können [manuell aktivieren, damit die Tabelle Daten akzeptiert](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Eingehendes Blatt](/help/forms/assets/form-submission-incoming-sheet.png)
 
