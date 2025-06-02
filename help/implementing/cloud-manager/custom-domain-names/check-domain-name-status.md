@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 96%
+source-wordcount: '920'
+ht-degree: 89%
 
 ---
 
@@ -62,7 +62,13 @@ Im Folgenden finden Sie einige häufige Fehler bei der Überprüfung des Domain-
 
 ### Fehler „Domain nicht installiert“ {#domain-not-installed}
 
-Dieser Fehler kann bei der Domain-Validierung des EV/OV-Zertifikats auftreten, selbst wenn Sie überprüft haben, ob das Zertifikat ordnungsgemäß aktualisiert worden ist.
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+Wenn Sie eine Domain-Zuordnung in Cloud Manager hinzufügen, kann die folgende Fehlermeldung auftreten:
+
+*Die Domain ist bereits in einem Fastly-Konto installiert. Entfernen Sie sie zuerst von dort, bevor Sie sie zu Cloud Service hinzufügen.*
+
+Diese Meldung weist darauf hin, dass die Domain derzeit mit einem anderen Fastly-Konto verknüpft ist - in der Regel außerhalb der Kontrolle von Adobe. Um fortzufahren, muss die Domain vom anderen Konto getrennt werden, bevor sie zur von Adobe verwalteten Cloud Service hinzugefügt werden kann. Dieses Problem tritt normalerweise auf, wenn dieselbe Domain bereits einer anderen Herkunft in einer Nicht-Adobe Fastly-Konfiguration zugeordnet ist.
 
 #### Fehlerursache {#cause}
 
@@ -88,7 +94,7 @@ Der Fehler wird wie folgt behoben:
 
 ## Bereits vorhandene CDN-Konfigurationen für benutzerdefinierte Domain-Namen {#pre-existing-cdn}
 
-Wenn Sie bereits über eine CDN-Konfiguration (Content Delivery Network) für Ihre benutzerdefinierten Domain-Namen verfügen, wird auf den Seiten **Benutzerdefinierte Domain-Namen** und **Umgebung** eine informative Meldung angezeigt. In dieser wird empfohlen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager verwaltet und angezeigt werden können.
+Wenn Sie bereits über eine CDN(Content Delivery Network)-Konfiguration für Ihre benutzerdefinierten Domain-Namen verfügen, wird auf den Seiten **Individuelle Domain-Namen** und **Umgebung** eine informative Meldung angezeigt. In dieser wird empfohlen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager verwaltet und angezeigt werden können.
 
 Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 
