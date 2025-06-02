@@ -14,19 +14,19 @@ ht-degree: 6%
 
 # Inhaltsfragmente mit Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
-Mit [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) können Sie Ihren Kunden vernetzte, kontextuelle und personalisierte Erlebnisse bereitstellen. Durch die Integration von Adobe Experience Manager (AEM) as a Cloud Service mit Adobe Journey Optimizer (AJO) können Sie AEM-Inhalte in Ihren ausgehenden AJO-Kanälen wiederverwenden, einschließlich Web, SMS und E-Mail.
+Mit [Adobe Journey Optimizer](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/get-started/get-started) können Sie Ihren Kunden vernetzte, kontextuelle und personalisierte Erlebnisse bereitstellen. Durch die Integration von Adobe Experience Manager (AEM) as a Cloud Service mit Adobe Journey Optimizer (AJO) können Sie AEM-Inhalte in Ihren ausgehenden AJO-Kanälen wiederverwenden, einschließlich Web, SMS und E-Mail.
 
 Sie haben beispielsweise folgende Möglichkeiten:
 
-* Nahtlose Integration Ihrer [AEM-Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) in Ihre [Journey Optimizer-E-Mail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/get-started-email)Inhalte
+* Nahtlose Integration Ihrer [AEM-Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) in Ihre [Journey Optimizer-E-Mail](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/email/get-started-email)Inhalte
 * Vorschau des AJO-Erlebnisses direkt aus AEM
 
 Die Verbindung zwischen Inhaltsfragmenten und AJO vereinfacht den Zugriff auf und die Nutzung von AEM-Inhalten und ermöglicht die Erstellung personalisierter und dynamischer Kampagnen und Journey.
 
 Weitere Informationen erhalten Sie in der Dokumentation zu AJO:
 
-* [Verwenden von Inhaltsfragmenten in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
-* [Integration von AJO-Angeboten mit Inhaltsfragmenten](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+* [Verwenden von Inhaltsfragmenten in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=de#integrations)
+* [Integration von AJO-Angeboten mit Inhaltsfragmenten](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## Weiterführende Informationen {#further-information}
 
