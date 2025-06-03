@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Früher nur als CLI-Dienstprogramme verfügbar, bieten die Refaktorierungs-Tools jetzt eine einheitliche Oberfläche mit Funktionen wie automatisierte Inspektion, Konfigurationserstellung und Auftragsausführung, wodurch der manuelle Overhead reduziert und die Sichtbarkeit verbessert wurde.
 
-&#x200B;---
+---
 
 ## Prüf-Workflow {#inspection-workflow}
 
@@ -34,7 +34,7 @@ Der **Inspektions-Workflow** vereinfacht den Vorbereitungsprozess für die Ausf�
 * **Konfigurationserstellung** - Die Tools überprüfen den hochgeladenen Quell-Code und generieren die erforderlichen Konfigurationen.
 * **Payload-Übermittlung** - Diese Konfigurationen werden zur Ausführung direkt an die ausgewählten Tools übergeben.
 
-&#x200B;---
+---
 
 ## Verfügbare Refaktorierungs-Tools
 
@@ -46,7 +46,7 @@ Der **Repository Modernizer** strukturiert das Repository-Layout und die Inhalte
 
 Der **Code Transformer** verwendet intelligente Mustererkennung und KI-gesteuerte Analyse, um Code-Segmente zu erkennen und zu aktualisieren, die mit AEMaaCS nicht kompatibel sind. Dieses Tool vereinfacht den Migrationsaufwand und reduziert manuelle Code-Änderungen.
 
-&#x200B;---
+---
 
 ## Workflow-Phasen umgestalten {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ Die Refaktorierungs-Tools folgen einem strukturierten zweiphasigen Prozess:
 >[!NOTE]
 >Während des Inspektionsprozesses ist das Hochladen eines anderen Projekts nicht zulässig.
 
-&#x200B;---
+---
 
 ### Phase 2: Trigger eines Refaktorierungsauftrags
 
