@@ -35,7 +35,7 @@ Verwenden Sie das Refaktorierungs-Tool, um Ihren Code aus Kompatibilitätsgründ
 
    ![Bild](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
----
+&#x200B;---
 
 ## Hochladen von Source-Code {#uploading}
 
@@ -72,7 +72,7 @@ Wenn Kunden zum ersten Mal auf **Refaktorierungs-Tools** zugreifen, wird ihnen i
 >[!NOTE]
 >Umgestaltungsaufträge können nur ausgeführt werden, wenn der Quell-Code-Upload erfolgreich war.
 
----
+&#x200B;---
 
 ## Refaktorierungsaufträge {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ Wenn Sie auf die Registerkarte **Umgestaltungsauftrag** klicken, wird eine Liste
 >[!NOTE]
 >Sie können einzelne Refaktorierungsaufträge in einen Trigger überführen oder alle verfügbaren Tools in einem Schritt ausführen, indem Sie die Option **Alle Tools zusammen** verwenden.
 
----
+&#x200B;---
 
 ### &#x200B;2. Auftragsstatus
 
