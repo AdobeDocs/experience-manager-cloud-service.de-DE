@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie bestehende Projektpakete umstrukturieren und 
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6920651420da9b427510518b7add0637479adef5
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
@@ -28,6 +28,7 @@ Der Repository Modernizer erstellt eine kompatible AEM Cloud Service-Projektstru
 * Das Paket `all` ist ein Container-Paket, das die Unterpakete `ui.apps` und `ui.content` enthält.
 
 >[!NOTE]
+>
 >Die Projektstruktur basiert auf *Archetyp 24* für Pakete und deren `pom.xml/filter.xml files`. Weitere Informationen finden Sie unter [Archetype 24](https://github.com/adobe/aem-project-archetype).
 
 ## Verwenden von Repository Modernizer {#using-repo-modernizer}
