@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
-workflow-type: ht
-source-wordcount: '1595'
-ht-degree: 100%
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
+workflow-type: tm+mt
+source-wordcount: '1547'
+ht-degree: 94%
 
 ---
 
@@ -103,9 +103,7 @@ Die folgenden Funktionen funktionieren möglicherweise nicht ordnungsgemäß, we
 
 #### Laufzeitanforderungen {#runtime-requirements}
 
-Die Java 21-Laufzeitumgebung wird für Builds mit Java 21 und Java 17 verwendet und nach und nach auch auf Java 11-Builds angewendet (siehe Hinweis unten). Eine Umgebung muss auf AEM Version 17098 oder neuer ausgeführt werden, um das Java 21-Update zu erhalten. Zur Sicherstellung der Kompatibilität sind die folgenden Anpassungen erforderlich.
-
-Bibliotheksaktualisierungen können jederzeit angewendet werden, da sie mit älteren Java-Versionen kompatibel bleiben.
+Die Java 21-Laufzeitumgebung wurde auf alle zulässigen Umgebungen angewendet, d. h. Umgebungen auf AEM-Version 17098 oder höher, die die folgenden Kriterien erfüllen. Wenn eine Umgebung die Kriterien nicht erfüllt, müssen Sie Anpassungen vornehmen, um Leistung, Verfügbarkeit und Sicherheit sicherzustellen.
 
 * **Mindestversion von ASM:**
 Aktualisieren Sie die Verwendung des Java-Pakets`org.objectweb.asm`, das häufig in Artefakten vom Typ `org.ow2.asm.*` gebündelt ist, auf Version 9.5 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
@@ -127,8 +125,7 @@ Beim lokalen Ausführen von AEM mit Java 21 schlagen die Startskripte (`crx-quic
 
 >[!IMPORTANT]
 >
->Wenn `.cloudmanager/java-version` auf `21` oder `17` festgelegt ist, wird die Java 21-Laufzeitumgebung bereitgestellt. Die Java 21-Laufzeitumgebung wird seit Dienstag, dem 4. Februar 2025, schrittweise für alle Umgebungen (nicht nur für die Umgebungen, deren Code mit Java 11 erstellt wurde) bereitgestellt. Die Rollouts erfolgen zunächst für Sandboxes und Entwicklungsumgebungen und werden im April 2025 auf alle Produktionsumgebungen ausgeweitet. Kundinnen und Kunden, die die Java 21-Laufzeitumgebung *früher* übernehmen möchten, können sich unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) an Adobe wenden.
-
+>Wenn eine Umgebung noch nicht automatisch auf die Java 21-Laufzeit aktualisiert wurde, können Sie sie durch Erstellen von Triggern mit Java 17 oder 21 aktualisieren. Dies geschieht, indem `.cloudmanager/java-version` auf `21` oder `17` gesetzt wird. Wenden Sie sich bei Fragen an Adobe ](mailto:aemcs-java-adopter@adobe.com) [aemcs-java-adopter@adobe.com.
 
 #### Anforderungen zur Build-Zeit: {#build-time-reqs}
 
