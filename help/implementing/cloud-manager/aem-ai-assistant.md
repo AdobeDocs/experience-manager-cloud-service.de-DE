@@ -7,19 +7,19 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 36832b02ac12c1ade70fb81b2cb2c267b5eebdfe
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '1122'
 ht-degree: 1%
 
 ---
 
 # Über den KI-Assistenten in Adobe Experience Manager {#aem-home}
 
-Der KI-Assistent in AEM (Adobe Experience Manager) bietet eine Gesprächsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre Adobe Experience Manager-bezogenen Abfragen zu optimieren. Es hilft Ihnen, auf Produktwissen zuzugreifen, Probleme zu beheben und die auf Experience League verfügbaren Informationen zu erkunden. Während des eingeschränkten Beta-Programms unterstützt der KI-Assistent Adobe Experience Manager as a Cloud Service, einschließlich Sites, Assets, Forms und Cloud Manager.
+Der KI-Assistent in AEM (Adobe Experience Manager) bietet eine Gesprächsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre Adobe Experience Manager-bezogenen Abfragen zu optimieren. Es hilft Ihnen, auf Produktwissen zuzugreifen, Probleme zu beheben und die in Experience League verfügbaren Informationen zu erkunden. Während des eingeschränkten Beta-Programms unterstützt der KI-Assistent Adobe Experience Manager as a Cloud Service, einschließlich Sites, Assets, Forms und Cloud Manager.
 
 >[!IMPORTANT]
->Sie müssen die Benutzervereinbarung gelesen und eingereicht haben, damit Adobe die Funktion des KI-Assistenten aktivieren kann, damit Sie sie testen und am Beta-Programm teilnehmen können.
+>Sie müssen die Benutzervereinbarung gelesen und eingereicht haben, damit Adobe die KI-Assistentenfunktion aktivieren kann, damit Sie sie testen und am Beta-Programm teilnehmen können.
 >
 >Bei Fragen senden Sie eine E-Mail an [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse.
 
@@ -37,7 +37,7 @@ In diesem Artikel werden die vertrauensorientierten Funktionen beschrieben, die 
 
 ## Lernen Sie den KI-Assistenten für Produktkenntnisse kennen {#ai-prod-insights}
 
-Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Adobe Experience League abgeleitet wurden. Diese Fragen lassen sich in die folgenden Untergruppen einteilen:
+Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adobe Experience League abgeleitet wurden. Diese Fragen lassen sich in die folgenden Untergruppen einteilen:
 
 | Produktkenntnisse | Beispiele |
 | --- | --- |
@@ -46,6 +46,46 @@ Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Ado
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
 
 Der aktuelle Umfang des KI-Assistenten konzentriert sich auf Fragen zum Produktwissen von Adobe Experience Manager as a Cloud Service. Dieser Umfang umfasst umfassende Unterstützung für wichtige Bereiche wie Sites, Assets, Forms und Cloud Manager.
+
+## KI-Assistent für AEM Forms (Forms Experience Builder) {#ai-forms-builder}
+
+Zusätzlich zum allgemeinen KI-Assistenten für Produktkenntnisse bietet AEM einen speziellen **KI-Assistenten für AEM Forms (Forms Experience Builder)**. Dieser erweiterte Assistent kann Sie aktiv bei der Erstellung und Konfiguration von Formularen unterstützen, indem Sie in natürlicher Sprache Aufforderungen erhalten und formularspezifische Fragen beantworten.
+
+### Schlüsselfunktionen
+
+Der KI-Assistent für AEM Forms bietet:
+
+* **Formularerstellung**: Erstellen neuer Formulare von Grund auf mithilfe von Beschreibungen in natürlicher Sprache
+* **Design-Import**: Konvertieren vorhandener Designs (PDF, Figma, Bilder) in funktionale AEM-Formulare
+* **Formularkonfiguration**: Felder, Bereiche, Validierungsregeln und bedingte Logik hinzufügen
+* **Layout-**: Organisieren der Formularstruktur und Optimierung für verschiedene Geräte
+* **Integrations-Setup**: Konfigurieren von Formularübermittlungen und Datenverarbeitung
+* **Produktkenntnisse**: Antworten auf Fragen zu den Funktionen und Best Practices von AEM Forms
+
+### Wo zugegriffen werden kann
+
+Der KI-Assistent für AEM Forms ist verfügbar unter:
+
+* **Universeller Editor**: Für Edge Delivery Services-Formulare mit visuellen Bearbeitungsfunktionen
+* **Adaptiver Forms-Editor**: Für eine detaillierte Formularkonfiguration und erweiterte Funktionen
+* **Benutzeroberfläche für die Verwaltung von Forms**: Für allgemeine Aufgaben zur Formularerstellung und -verwaltung
+
+### Erste Schritte
+
+>[!NOTE]
+>
+> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um den Zugriff anzufordern.
+
+Weitere Informationen zur Verwendung des KI-Assistenten für AEM Forms, einschließlich detaillierter Beispiele und Best Practices, finden Sie in der Dokumentation zum KI-Assistenten für AEM Forms .
+
+### Beispiel-Anwendungsfälle
+
+* **„Erstellen Sie ein Formular für Kunden-Feedback mit den Feldern Name, E-Mail, Bewertung und Kommentare“**
+* **„Konvertieren Sie dieses hochgeladene PDF-Anwendungsformular in ein digitales adaptives Formular“**
+* **„Bedingte Logik hinzufügen, um Ehepartner-Informationen nur dann anzuzeigen, wenn der Familienstand „Verheiratet“ ist“**
+* **„Konfigurieren Sie dieses Formular, um Daten an unser CRM-System zu senden“**
+
+Dieser spezielle Forms-KI-Assistent stellt die nächste Evolution bei der Formularerstellung dar, indem er die Leistungsfähigkeit von KI mit den robusten Formularfunktionen von AEM kombiniert, um Ihren Arbeitsablauf für die Formularerstellung zu optimieren.
 
 ## Wie man effektive Fragen formuliert {#ai-craft-questions}
 
@@ -110,9 +150,9 @@ Im Folgenden finden Sie Antworten auf einige häufig gestellte Fragen zum KI-Ass
 
 * **Werden die Informationen vom KI-Assistenten in Echtzeit bereitgestellt?**\
   Nein. Der KI-Assistent bezieht seinen Inhalt aus der Adobe Experience League-Dokumentation. Es kann einige Zeit dauern, bis Aktualisierungen des Inhalts in den Antworten widergespiegelt werden.
-* **Welche Adobe-Anwendungen unterstützt AI Assistant?**\
+* **Welche Adobe-Programme unterstützt AI Assistant?**\
   Derzeit unterstützt AI Assistant AEM as a Cloud Service, einschließlich Sites, Assets, Forms und Cloud Manager, speziell für Anfragen zum Produktwissen.
 * **Welche Funktionen hat der KI-Assistent?**\
-  Der KI-Assistent beantwortet Fragen zum Adobe von Produktkenntnissen.
+  Der KI-Assistent beantwortet Fragen zu Adobe-Produktkenntnissen.
 * **Verwendet der KI-Assistent personenbezogene Daten für Trainingsdaten?**\
   Nein. AI Assistant verwendet keine personenbezogenen Daten für Trainingszwecke. Vermeiden Sie es, persönliche Informationen über sich selbst oder andere, einschließlich Namen oder Kontaktdaten, mit dem KI-Assistenten zu teilen.

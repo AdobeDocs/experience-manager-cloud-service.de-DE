@@ -5,22 +5,26 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '2061'
 ht-degree: 2%
 
 ---
+
 
 # KI-Assistent für AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> Die Funktion KI-Assistent für AEM Forms (Forms Experience Builder) ist im Early-Adopter-Programm verfügbar. Bei Interesse senden Sie eine kurze E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com, um den Zugriff auf die Funktion anzufordern.
+> Die Funktion KI-Assistent für AEM Forms (Forms Experience Builder) ist unter dem **Early-Adopter-Programm** verfügbar. Bei Interesse senden Sie eine kurze E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com, um den Zugriff auf die Funktion anzufordern.
 
+>[!IMPORTANT]
+>
+> **Dokumentation kann sich ändern**: Diese Dokumentation wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Funktionen, Befehle und Beispiele können sich ändern, während sich der KI-Assistent für AEM Forms während des Early-Adopter-Programms weiterentwickelt.
 
-Der KI-Assistent für AEM Forms (Forms Experience Builder) verbessert das Authoring-Erlebnis, indem allgemeine Formularerstellungsaufgaben durch natürliche Sprachaufforderungen optimiert werden. Er ist in Forms Manager, dem Editor für adaptive Forms und dem universellen Editor verfügbar und ermöglicht Ihnen durch die Unterstützung von Erstellungs- und Konfigurationsaktionen intelligenteres und schnelleres Erstellen. Dieses Handbuch hilft Ihnen bei den ersten Schritten und dem optimalen Nutzen der Funktionen.
+Der KI-Assistent für AEM Forms (Forms Experience Builder) verbessert das Authoring-Erlebnis, indem allgemeine Formularerstellungsaufgaben durch natürliche Sprachaufforderungen optimiert werden. Er ist in der Forms-Verwaltungsoberfläche, im Editor für adaptive Forms und im universellen Editor verfügbar und ermöglicht es Ihnen, durch die Unterstützung von Erstellungs- und Konfigurationsaktionen intelligenter und schneller zu erstellen. Dieses Handbuch hilft Ihnen bei den ersten Schritten und dem optimalen Nutzen der Funktionen.
 
 ## Erste Schritte
 
@@ -30,7 +34,7 @@ Bevor wir in die Tiefe gehen, erläutern wir die Grundlagen des Zugriffs auf den
 
 Sie können von drei verschiedenen Standorten in AEM Forms aus auf den KI-Assistenten zugreifen:
 
-1. **Forms Manager**
+1. **Forms-Verwaltungsoberfläche**
    - Navigieren Sie zu: Adobe Experience Manager > Forms > Forms und Dokumente
    - Suchen Sie auf der linken Seite der Benutzeroberfläche nach dem Symbol KI-Assistent .
    - Klicken Sie auf das Symbol, um das Bedienfeld KI-Assistent zu öffnen
@@ -57,6 +61,7 @@ Der KI-Assistent passt seine Funktionen an Ihren aktuellen Standort und Ihre Auf
 - Geben Sie Ihre Anfrage einfach in natürlicher Sprache ein.
 - Verwenden Sie `/` , um eine Liste der verfügbaren Befehle oder Schnellaktionen anzuzeigen.
 - Referenzieren Sie bestimmte Formularfelder mithilfe von `@fieldName` (z. B. `@firstName`, `@emailAddress`), wenn Sie möchten, dass der Assistent dieses bestimmte Feld konfiguriert oder aktualisiert.
+- Sie können Bilder, PDFs, Figa-Dateien oder andere Design-Assets hochladen, damit der KI-Assistent Ihre Anforderungen besser versteht.
 
 
 ### Schnellstart
@@ -72,13 +77,13 @@ In diesem Video wird der Start des Assistenten in allen Umgebungen, grundlegende
 
 | Befehl | Beschreibung | Zweck | Nutzungskontext | Beispiele | Wichtigste Funktionen |
 |---------|-------------|---------|---------------|----------|--------------|
-| /create-form | Starten eines neuen Formulars in Forms Manager oder Forms Editor | Startet die Erstellung eines komplett neuen Formulars von Grund auf | Forms Manager, Editor für adaptive Forms | Umfrage zum Kunden-Feedback in /create-form | Bietet Optionen für die Formularstruktur und erstellt das Formular |
-| /add-form | Hinzufügen eines neuen Formulars im universellen Editor | Fügt einen neuen Formularblock oder eine neue Komponente im universellen Editor hinzu. | Universeller Editor für Edge Delivery Services | /add-form Kontaktformular mit Namen und E-Mail | Fügt Formularblöcke ein, arbeitet mit blockbasierter Bearbeitung |
+| /create-form | Beginnen Sie ein neues Formular in der Forms-Verwaltungsoberfläche oder im Forms-Editor | Startet die Erstellung eines komplett neuen Formulars von Grund auf | Benutzeroberfläche für die Verwaltung von Forms, Editor für adaptive Forms | Umfrage zum Kunden-Feedback auf der Grundlage des angehängten PDF | Stellt Optionen für die Formularstruktur bereit und erstellt das Formular. **Unterstützt Anlagen** für Design-Verweise |
+| /add-form | Hinzufügen eines neuen Formulars im universellen Editor | Fügt einen neuen Formularblock oder eine neue Komponente im universellen Editor hinzu. | Universeller Editor für Edge Delivery Services | /add-form Kontaktformular mit Namen und E-Mail | Fügt Formularblöcke ein, arbeitet mit blockbasierter Bearbeitung. **Unterstützt Anlagen** für Layout-Anleitungen |
 | /update-layout | Ändern des Layouts des Formulars in ein Akkordeon, einen tabulatorbasierten Assistenten oder ein responsives Design für eine einzelne Seite | Ändert das allgemeine strukturelle Layout und Navigationsmuster | Alle Bearbeitungsumgebungen | /update-layout-assistent mit 3 Schritten | Akkordeon, Registerkarten, Assistent, responsive Optionen für eine einzelne Seite |
-| /update-field | Ändern der Eigenschaften und Konfiguration vorhandener Formularfelder | Ändert Feldattribute wie Beschriftungen, Validierung, Formatierung, Verhalten | Alle Bearbeitungsumgebungen | /update-field @email bei der Validierung erforderlich sein | Kennzeichnungen, Validierungsregeln, Feldtypen, Standardwerte, Sichtbarkeit |
+| /update-field | Ändern der Eigenschaften und Konfiguration vorhandener Formularfelder | Ändert Feldattribute wie Beschriftungen, Validierung, Formatierung, Verhalten | Alle Bearbeitungsumgebungen | /update-field @email bei der Validierung erforderlich sein | Kennzeichnungen, Validierungsregeln, Feldtypen, Standardwerte, Sichtbarkeit. **Unterstützt Anlagen** für Beispiele für den Feldentwurf |
 | /create-rule | Erstellen eines dynamischen Verhaltens und einer bedingten Logik für Formulare | Implementiert Geschäftslogik, Berechnungen, bedingte Interaktionen | Alle Bearbeitungsumgebungen | /create-rule - @spouseName anzeigen, wenn @maritalStatus gleich „Verheiratet“ ist | Bedingte Sichtbarkeit, Berechnungen, Validierung, Werteinstellung |
-| /create-panel | Erstellen eines neuen Bedienfelds (Container für die Gruppierung verwandter Felder) | Fügt strukturelle Container hinzu, um Formularfelder logisch zu organisieren | Alle Bearbeitungsumgebungen | /create-panel Persönliche Informationen mit Name, E-Mail, Telefon | Feldergruppierung, Titel, Layout-Optionen, ausblendbare Abschnitte |
-| /add-panel | Konvertieren eines Bilds in einen Formularbereich im universellen Editor | Verwendet KI zur Analyse hochgeladener Bilder und zur Konvertierung in strukturierte Formularbereiche | Universeller Editor | /add-panel aus hochgeladenem Formularbild | Bilderkennung, visuelle Umwandlung in eine Funktion, Beibehaltung des Layouts |
+| /create-panel | Erstellen eines neuen Bedienfelds (Container für die Gruppierung verwandter Felder) | Fügt strukturelle Container hinzu, um Formularfelder logisch zu organisieren | Alle Bearbeitungsumgebungen | /create-panel Persönliche Informationen mit Name, E-Mail, Telefon | Feldergruppierung, Titel, Layout-Optionen, ausblendbare Abschnitte. **Unterstützt Anlagen** für Bereichslayoutverweise |
+| /add-panel | Konvertieren eines Bilds in einen Formularbereich im universellen Editor | Verwendet KI zur Analyse hochgeladener Bilder und zur Konvertierung in strukturierte Formularbereiche | Universeller Editor | /add-panel aus hochgeladenem Formularbild | Bilderkennung, visuelle Umwandlung in eine Funktion, Beibehaltung des Layouts. **Erfordert Anhänge** für die Bildanalyse |
 | /configure-submit | Einrichten von Formularübermittlungsaktionen und Datenverarbeitung | Definiert, was passiert, wenn Benutzer das ausgefüllte Formular senden | Alle Bearbeitungsumgebungen | /configure-submit zum Senden von E-Mails an `support@company.com` | E-Mail, REST-API, Workflows, Tabellen, Datenbanken, Power Automate |
 | /help | Zugriff auf Hilfe und Dokumentation innerhalb des KI-Assistenten | Bietet kontextuelle Hilfe, Anleitungen und Antworten zu AEM Forms | Alle Bearbeitungsumgebungen | /help Wie erstelle ich mehrstufige Formulare? | Funktionserklärungen, Handbücher, Best Practices, Fehlerbehebung |
 
@@ -107,7 +112,7 @@ In diesem Video wird der Start des Assistenten in allen Umgebungen, grundlegende
 
 | Umgebung | Verfügbare Befehle | Besonderheiten |
 |-------------|-------------------|------------------|
-| Forms Manager | /create-form, /help | Erstellung und Verwaltung auf Formularebene |
+| Forms-Verwaltungsoberfläche | /create-form, /help | Erstellung und Verwaltung auf Formularebene |
 | Adaptiver Forms-Editor und universeller Editor | Alle Befehle | Vollständiger Funktionssatz, detaillierte Konfiguration |
 
 
@@ -142,17 +147,17 @@ Der KI-Assistent versteht eine Vielzahl von Befehlen. Im Folgenden finden Sie ei
 
 | Funktionskategorie | Beschreibung | Beispiel-Eingabeaufforderungen |
 | ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Formularerstellung** | Beginnen Sie ein neues Formular von Grund auf neu oder basierend auf einer Beschreibung. | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` |
-| **Design importieren** | Konvertieren eines bestehenden Designs (image, Figma, PDF) in ein AEM-Formular. | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` |
-| **Hinzufügen von Komponenten und Bedienfeldern** | Fügen Sie verschiedene Formularfelder und strukturelle Container (Bedienfelder) hinzu. | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` |
-| **Layout-Anpassungen** | Ändern Sie die Struktur und das Erscheinungsbild des Formularlayouts. | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` |
+| **Formularerstellung** | Beginnen Sie ein neues Formular von Grund auf neu oder basierend auf einer Beschreibung. | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` <br> `Create a form based on the attached PDF template.` |
+| **Design importieren** | Konvertieren eines bestehenden Designs (image, Figma, PDF) in ein AEM-Formular. | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` <br> `Recreate the form shown in the attached screenshot with modern styling.` |
+| **Hinzufügen von Komponenten und Bedienfeldern** | Fügen Sie verschiedene Formularfelder und strukturelle Container (Bedienfelder) hinzu. | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` <br> `Add a panel matching the layout shown in the attached design mockup.` |
+| **Layout-Anpassungen** | Ändern Sie die Struktur und das Erscheinungsbild des Formularlayouts. | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` <br> `Update the form layout to match the attached wireframe.` |
 | **Regelerstellung und Logik** | Implementieren Sie dynamisches Verhalten, Berechnungen und bedingte Sichtbarkeit. | `Make the 'Spouse Name' field visible only if 'Marital Status' is selected as 'Married'.` <br> `Calculate the 'Total Amount' by multiplying @quantity and @price.` <br> `Enable the submit button only when the @termsAndConditions checkbox is checked.` <br> `Set the value of @countryCode to '+1' if @country is 'United States'.` <br> `If @age is less than 18, show a message 'Must be 18 or older'.` |
-| **Aktualisierung der Feldeigenschaften** | Ändern von Attributen bestimmter Formularfelder wie Beschriftungen, Platzhalter usw. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` |
+| **Aktualisierung der Feldeigenschaften** | Ändern von Attributen bestimmter Formularfelder wie Beschriftungen, Platzhalter usw. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` <br> `Style the @email field to match the design shown in the attached image.` |
 | **Aktionen übermitteln** | Definieren, was passiert, wenn ein Benutzer das Formular sendet. | `Configure the form to submit data to the REST endpoint /api/v2/application-submit.` <br> `Set up an email submission to hr@example.com and sales@example.com on successful submission.` <br> `Trigger an AEM workflow named 'NewLeadProcessing' when this form is submitted.` <br> `On submit, redirect the user to a thank you page at /content/thankyou.html.` |
-| **Themen** | Vorhandene AEM Forms-Designs auf das Formular anwenden. | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` |
+| **Themen** | Vorhandene AEM Forms-Designs auf das Formular anwenden. | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` <br> `Apply styling that matches the brand guidelines shown in the attached style guide.` |
 | **Navigation und Struktur** | Fügen Sie Navigationselemente hinzu oder organisieren Sie Teile des Formulars neu. | `Add a 'Next' button to the current panel and a 'Previous' button to the next panel.` <br> `Create a Table of Contents based on the form's panels.` <br> `Move the 'Address' panel to be before the 'Contact Information' panel.` |
 | **Validierung** | Legen Sie spezifische Validierungsregeln für Felder fest. | `Set a regex pattern for the @employeeID field to be 'EMP\d{5}'.` <br> `Ensure the @age field only accepts numeric values between 18 and 99.` <br> `Validate the @email field to ensure it is a valid email format.` |
-| **Plan überprüfen** (universeller Editor) | Vorschau der vorgeschlagenen Änderungen des Assistenten vor der Ausführung | `Add a contact form with fields for name, email, subject, and message.` (Der Assistent zeigt einen Plan der von ihm erstellten Komponenten und Eigenschaften an und klickt dann auf „Anwenden„). |
+| **Plan überprüfen** (universeller Editor) | Vorschau der vorgeschlagenen Änderungen des Assistenten vor der Ausführung | `Add a contact form with fields for name, email, subject, and message.` (Der Assistent zeigt einen Plan der von ihm erstellten Komponenten und Eigenschaften an und klickt dann auf „Anwenden„). <br> `Create a form based on the attached design file.` (Der Assistent analysiert den Anhang und zeigt vor der Implementierung einen detaillierten Plan an.) |
 
 ## Best Practices für optimale Ergebnisse
 
@@ -184,7 +189,7 @@ Fragen können an den Assistenten gerichtet werden wie:
 
 ### So bitten Sie um Hilfe:
 
-1. Öffnen Sie den KI-Assistenten in Forms Manager oder im Editor für adaptive Forms.
+1. Öffnen Sie den KI-Assistenten in der Verwaltungsoberfläche von Forms oder im Editor für adaptive Forms.
 2. Geben Sie Ihre Frage in natürlicher Sprache ein (z. B. „Wie füge ich ein wiederholbares Bedienfeld hinzu?„).
 3. Der Assistent antwortet mit:
    - Schrittweise Anleitungen.
@@ -201,7 +206,7 @@ Fragen können an den Assistenten gerichtet werden wie:
 ## Beheben häufiger Probleme
 
 - **Assistent reagiert nicht:**
-   - Stellen Sie sicher, dass Sie aktiv in einer unterstützten Umgebung (Forms Manager, adaptiver Forms-Editor oder universeller Editor) arbeiten.
+   - Stellen Sie sicher, dass Sie aktiv in einer unterstützten Umgebung arbeiten (Forms-Verwaltungsoberfläche, Editor für adaptive Forms oder universeller Editor).
    - Überprüfen Sie Ihre Internetverbindung.
    - Versuchen Sie, das Bedienfeld „KI-Assistent“ zu schließen und erneut zu öffnen.
 
@@ -231,3 +236,65 @@ Ihr Beitrag ist für die kontinuierliche Verbesserung des KI-Assistenten von uns
 ## Verwandte Inhalte
 
 [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+
+## Arbeiten mit Anhängen
+
+Der KI-Assistent unterstützt Dateianhänge, um die Formularerstellung und -konfiguration zu verbessern. Sie können verschiedene Dateitypen anhängen, um visuellen Kontext, Entwurfsverweise oder vorhandene Formulare zum Konvertieren bereitzustellen.
+
+### Unterstützte Anlagentypen
+
+| Dateityp | Anwendungsfälle | Befehle, die Anhänge unterstützen | Beispiele |
+|-----------|-----------|-----------------------------------|----------|
+| **images** (PNG, JPG, JPEG, GIF) | Formular-Layout-Referenzen, UI-Mockups, Scans von Papierformularen | /create-form, /add-form, /create-panel, /add-panel, /update-field | Hochladen eines Screenshots des gewünschten Layouts |
+| **PDF-Dateien** | Bestehende Formulare zum Konvertieren, Entwurfsspezifikationen | /create-form, /add-form, /create-panel, /add-panel | Konvertieren von PDF-Anwendungsformularen |
+| **FIGMA-Dateien** | Design-Systemverweise, Benutzeroberflächen-Prototypen | /create-form, /add-form, /create-panel | Importieren von Figma-Designrahmen |
+| **Design-Dateien** (Skizze, Adobe XD-Exporte) | Visuelle Entwurfsverweise | /create-form, /add-form, /create-panel | Komponenten des Referenzentwurfssystems |
+
+### Verwendung von Anhängen
+
+1. **Fügen Sie vor oder mit Ihrem Befehl hinzu:**
+
+   - Klicken Sie auf das Anlagensymbol in der Benutzeroberfläche des KI-Assistenten.
+   - Datei(en) auf dem Gerät auswählen
+   - Geben Sie den Befehl ein, der auf die angehängte Datei verweist
+
+2. **Referenzanlagen in Befehlen:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Mehrere Anhänge:**
+
+   - Sie können mehrere Dateien zum Vergleich oder zur Referenz anhängen
+   - Angabe, welcher Anhang verwendet werden soll: „Verwenden des ersten angehängten Bildes“ oder „basierend auf der PDF-Datei“
+
+### Best Practices für Anhänge
+
+- **Klare, hochwertige Bilder:** Stellen Sie sicher, dass hochgeladene Bilder klar und lesbar sind, um eine bessere KI-Analyse zu ermöglichen
+- **Relevante Dateinamen:** Verwenden Sie beschreibende Dateinamen, damit die KI den Kontext besser versteht.
+- **Einzelfokus** Jede Anlage sollte sich auf einen bestimmten Aspekt (Layout, Felddesign usw.)
+- **Unterstützte Formate:** Für optimale Kompatibilität an gängigen Formaten (PNG, JPG, PDF) festhalten
+- **Dateigröße:** Anlagen unter 10 MB für optimale Verarbeitungsgeschwindigkeit
+
+### Beispiel für Anhänge-Workflows
+
+**Konvertieren eines Papierformulars:**
+
+1. Scannen oder fotografieren Sie das Papierformular deutlich
+2. Hochladen der Bilddatei
+3. Befehl verwenden: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Abgleichen eines Entwurfssystems:**
+
+1. Exportieren oder Screenshot relevanter Design-Komponenten
+2. Design-Referenz anfügen
+3. Befehl verwenden: `/create-panel following the visual style and layout shown in the attached design`
+
+**Feldstil-Referenz:**
+
+1. Screenshot des gewünschten Felderscheinungsbildes anfügen
+2. Befehl verwenden: `/update-field @email to match the styling and layout shown in the attached image`
