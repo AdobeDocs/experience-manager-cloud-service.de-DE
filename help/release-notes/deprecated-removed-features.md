@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
+source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 88%
+source-wordcount: '2912'
+ht-degree: 87%
 
 ---
 
@@ -35,6 +35,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
+| Sites | [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>zusammen mit<br> [OpenAPIs zur Verwaltung von Inhaltsfragmenten und Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Keine |
 | Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zur visuellen Bearbeitung<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |

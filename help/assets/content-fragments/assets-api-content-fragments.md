@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1827'
-ht-degree: 100%
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
+workflow-type: tm+mt
+source-wordcount: '1859'
+ht-degree: 98%
 
 ---
 
@@ -19,6 +19,12 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
+
+>[!CAUTION]
+>
+>Die Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API ist jetzt [veraltet](/help/release-notes/deprecated-removed-features.md).
+>
+>Sie wurde ersetzt durch [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) zusammen mit [OpenAPIs für die Verwaltung von Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md).
 
 Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in Adobe Experience Manager (AEM).
 

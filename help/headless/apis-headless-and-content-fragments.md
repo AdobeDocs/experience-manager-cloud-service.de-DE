@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die APIs, die für die Bereitstellung struk
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 94%
 
 ---
 
@@ -27,12 +27,10 @@ Adobe Experience Manager (AEM) as a Cloud Service bietet mehrere APIs für die B
    * Diese APIs sind für die Verwaltung strukturierter Inhalte vorgesehen.
    * Die jeweiligen GET-Operatoren sind nicht für die Inhaltsbereitstellung optimiert.
    * Diese API basiert auf REST.
-* [Unterstützung von Inhaltsfragmenten im AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * Die ursprüngliche API für die JSON-Ausgabe für die Bereitstellung strukturierter Inhalte in AEM.
-      * Diese API ist zwar robust und bewährt, liefert jedoch keine *vollständig hydrierte* JSON-Ausgabe. Verweise werden nur als Pfade ausgegeben, sodass sekundäre API-Anfragen zum Abrufen weiterer Inhalte erforderlich sind.
-   * Die Assets-HTTP-API kann auch zum Verwalten der Inhaltsfragmente und Inhaltsfragmentmodelle (CRUD) verwendet werden.
-   * Diese API basiert auf REST.
-   * Die Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API wird in Zukunft eingestellt, da sie durch die Edge Delivery Services-JSON-REST-API ersetzt wird. Der Zeitplan steht noch nicht fest.
+
+>[!NOTE]
+>
+>[Unterstützung von Inhaltsfragmenten in der Assets-HTTP](/help/assets/content-fragments/assets-api-content-fragments.md)API ist jetzt [veraltet](/help/release-notes/deprecated-removed-features.md). Sie wurde ersetzt durch [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) zusammen mit [OpenAPIs für die Verwaltung von Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md).
 
 ## REST im Vergleich zu GraphQL {#rest-vs-graphql}
 
