@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
@@ -50,10 +50,9 @@ Alle Browser werden mit dem Standardsatz von Plug-ins und Add-ons getestet.
 | Mozilla Firefox (Evergreen) | A: Unterstützt | A: Unterstützt | Z: Nicht unterstützt |
 | Aktuelle ESR von Mozilla Firefox [1] | A: Unterstützt | A: Unterstützt | Z: Nicht unterstützt |
 | Safari auf macOS (Evergreen) | A: Unterstützt | A: Unterstützt | Z: Nicht unterstützt |
-| Safari auf iOS (Evergreen) [2] | Z: Nicht unterstützt | A: Unterstützt | Z: Nicht unterstützt |
+| Safari auf iPadOS (Evergreen) | Z: Nicht unterstützt | A: Unterstützt | Z: Nicht unterstützt |
 
 1. Version mit erweiterter Unterstützung von Firefox ([weitere Informationen dazu finden Sie auf mozilla.org](https://www.mozilla.org/de-DE/firefox/enterprise/))
-1. Unterstützung nur für Apple iPad
 
 >[!NOTE]
 >
