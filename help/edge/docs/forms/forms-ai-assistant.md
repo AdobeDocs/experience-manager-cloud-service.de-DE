@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 2%
 
 ---
@@ -232,6 +232,69 @@ Ihr Beitrag ist für die kontinuierliche Verbesserung des KI-Assistenten von uns
 - **Feedback geben:** Verwenden Sie den integrierten **Befehl oder die Schaltfläche „Feedback geben** in der Benutzeroberfläche des KI-Assistenten, um Ihre Erlebnisse mitzuteilen, Probleme zu melden oder Verbesserungen vorzuschlagen. (Sie können z. B. `/feedback` eingeben oder nach einem Feedback-Symbol suchen.)
 - **Offizieller Support:** Bei kritischen Problemen oder weiterer Unterstützung wenden Sie sich bitte über die offiziellen Adobe-Support-Kanäle oder die vom Unternehmen benannten Support-Kontakte.
 
+
+
+## Arbeiten mit Anhängen
+
+Der KI-Assistent unterstützt Dateianhänge, um die Formularerstellung und -konfiguration zu verbessern. Sie können verschiedene Dateitypen anhängen, um visuellen Kontext, Entwurfsverweise oder vorhandene Formulare zum Konvertieren bereitzustellen.
+
+### Unterstützte Anlagentypen
+
+| Dateityp | Anwendungsfälle | Befehle, die Anhänge unterstützen | Beispiele |
+|-----------|-----------|-----------------------------------|----------|
+| **images** (PNG, JPG, JPEG, GIF) | Formular-Layout-Referenzen, UI-Mockups, Scans von Papierformularen | /create-form, /add-form, /create-panel, /add-panel, /update-field | Hochladen eines Screenshots des gewünschten Layouts |
+| **PDF-Dateien** | Bestehende Formulare zum Konvertieren, Entwurfsspezifikationen | /create-form, /add-form, /create-panel, /add-panel | Konvertieren von PDF-Anwendungsformularen |
+| **FIGMA-Dateien** | Design-Systemverweise, Benutzeroberflächen-Prototypen | /create-form, /add-form, /create-panel | Importieren von Figma-Designrahmen |
+| **Design-Dateien** (Skizze, Adobe XD-Exporte) | Visuelle Entwurfsverweise | /create-form, /add-form, /create-panel | Komponenten des Referenzentwurfssystems |
+
+### Verwendung von Anhängen
+
+1. **Fügen Sie vor oder mit Ihrem Befehl hinzu:**
+
+   - Klicken Sie auf das Anlagensymbol in der Benutzeroberfläche des KI-Assistenten.
+   - Datei(en) auf dem Gerät auswählen
+   - Geben Sie den Befehl ein, der auf die angehängte Datei verweist
+
+2. **Referenzanlagen in Befehlen:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Mehrere Anhänge:**
+
+   - Sie können mehrere Dateien zum Vergleich oder zur Referenz anhängen
+   - Angabe, welcher Anhang verwendet werden soll: „Verwenden des ersten angehängten Bildes“ oder „basierend auf der PDF-Datei“
+
+### Best Practices für Anhänge
+
+- **Klare, hochwertige Bilder:** Stellen Sie sicher, dass hochgeladene Bilder klar und lesbar sind, um eine bessere KI-Analyse zu ermöglichen
+- **Relevante Dateinamen:** Verwenden Sie beschreibende Dateinamen, damit die KI den Kontext besser versteht.
+- **Einzelfokus** Jede Anlage sollte sich auf einen bestimmten Aspekt (Layout, Felddesign usw.)
+- **Unterstützte Formate:** Für optimale Kompatibilität an gängigen Formaten (PNG, JPG, PDF) festhalten
+- **Dateigröße:** Anlagen unter 10 MB für optimale Verarbeitungsgeschwindigkeit
+
+### Beispiel für Anhänge-Workflows
+
+**Konvertieren eines Papierformulars:**
+
+1. Scannen oder fotografieren Sie das Papierformular deutlich
+2. Hochladen der Bilddatei
+3. Befehl verwenden: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Abgleichen eines Entwurfssystems:**
+
+1. Exportieren oder Screenshot relevanter Design-Komponenten
+2. Design-Referenz anfügen
+3. Befehl verwenden: `/create-panel following the visual style and layout shown in the attached design`
+
+**Feldstil-Referenz:**
+
+1. Screenshot des gewünschten Felderscheinungsbildes anfügen
+2. Befehl verwenden: `/update-field @email to match the styling and layout shown in the attached image`
 
 ## Verwandte Inhalte
 

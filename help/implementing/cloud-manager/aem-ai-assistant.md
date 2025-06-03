@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Der aktuelle Umfang des KI-Assistenten konzentriert sich auf Fragen zum Produktw
 
 ## KI-Assistent für AEM Forms (Forms Experience Builder) {#ai-forms-builder}
 
-Zusätzlich zum allgemeinen KI-Assistenten für Produktkenntnisse bietet AEM einen speziellen **KI-Assistenten für AEM Forms (Forms Experience Builder)**. Dieser erweiterte Assistent kann Sie aktiv bei der Erstellung und Konfiguration von Formularen unterstützen, indem Sie in natürlicher Sprache Aufforderungen erhalten und formularspezifische Fragen beantworten.
+Zusätzlich zum allgemeinen KI-Assistenten für Produktkenntnisse bietet AEM einen speziellen **[KI-Assistenten für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. Dieser erweiterte Assistent kann Sie aktiv bei der Erstellung und Konfiguration von Formularen unterstützen, indem Sie in natürlicher Sprache Aufforderungen erhalten und formularspezifische Fragen beantworten.
 
 ### Schlüsselfunktionen
 
@@ -76,7 +76,7 @@ Der KI-Assistent für AEM Forms ist verfügbar unter:
 >
 > Der KI-Assistent für AEM Forms (Forms Experience Builder) ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um den Zugriff anzufordern.
 
-Weitere Informationen zur Verwendung des KI-Assistenten für AEM Forms, einschließlich detaillierter Beispiele und Best Practices, finden Sie in der Dokumentation zum KI-Assistenten für AEM Forms .
+Weitere Informationen zur Verwendung des KI-Assistenten für AEM Forms, einschließlich detaillierter Beispiele und Best Practices, finden Sie in der Dokumentation [KI-Assistent für AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md).
 
 ### Beispiel-Anwendungsfälle
 
