@@ -125,7 +125,7 @@ Beim lokalen Ausführen von AEM mit Java 21 schlagen die Startskripte (`crx-quic
 
 >[!IMPORTANT]
 >
->Wenn eine Umgebung noch nicht automatisch auf die Java 21-Laufzeit aktualisiert wurde, können Sie sie durch Erstellen von Triggern mit Java 17 oder 21 aktualisieren. Dies geschieht, indem `.cloudmanager/java-version` auf `21` oder `17` gesetzt wird. Wenden Sie sich bei Fragen an Adobe ](mailto:aemcs-java-adopter@adobe.com) [aemcs-java-adopter@adobe.com.
+>Wenn eine Umgebung noch nicht automatisch auf die Java 21-Laufzeit aktualisiert wurde, können Sie sie durch Erstellen von Triggern mit Java 17 oder 21 aktualisieren. Dies geschieht, indem `.cloudmanager/java-version` auf `21` oder `17` gesetzt wird. Wenden Sie sich bei Fragen an Adobe [&#128279;](mailto:aemcs-java-adopter@adobe.com) aemcs-java-adopter@adobe.com.
 
 #### Anforderungen zur Build-Zeit: {#build-time-reqs}
 
