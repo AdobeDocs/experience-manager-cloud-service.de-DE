@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Servi
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 100%
+source-wordcount: '2556'
+ht-degree: 97%
 
 ---
 
@@ -158,8 +158,8 @@ Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete �
 Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM as a Cloud Service führen.
 
 Wie im vorherigen Abschnitt erwähnt, ist Folgendes erforderlich, um eine effektive Überwachung von Kundenumgebungen sicherzustellen:
-* Java-Protokolle für den Produkt-Code von AEM müssen die standardmäßige Protokollebene „INFO“ beibehalten und dürfen nicht durch benutzerdefinierte Konfigurationen überschrieben werden.
-* Es ist akzeptabel, die Protokollebenen für Produkt-Code auf DEBUG zu setzen. Verwenden Sie die Option jedoch sparsam, um eine Leistungsbeeinträchtigung zu verhindern, und setzen Sie sie wieder auf INFO zurück, wenn sie nicht mehr benötigt wird.
+* Die Protokollebene der standardmäßigen Protokollkonfiguration für AEM (Apache Sling-Protokollierungskonfiguration) darf nicht von ihrem Standardwert „INFO“ geändert werden.
+* Es ist akzeptabel, die Protokollebenen für einzelne Pakete von Produkt-Code (unter Verwendung von Instanzen der OSGi-Konfigurations-Factory „Apache Sling Logging Logger Configuration„) auf DEBUG zu setzen. Verwenden Sie diese Einstellung jedoch sparsam, um eine Leistungsbeeinträchtigung zu verhindern und bei nicht mehr benötigter Konfiguration wieder auf INFO zurückzusetzen.
 * Es ist akzeptabel, die Protokollebenen für den von der Kundin oder dem Kunden entwickelten Code anzupassen.
 * Alle Protokolle müssen das standardmäßige Protokollierungsformat beibehalten. Dies gilt sowohl für den AEM-Produkt-Code als auch für den von der Kundin oder dem Kunden entwickelten Code.
 * Die Protokollausgabe muss an die Standarddatei „logs/error.log“ weitergeleitet bleiben. 
@@ -280,7 +280,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 |---|---|
 | IP-Adresse des Clients | – |
 | User | myuser@adobe.com |
-| Datum und Uhrzeit | 30. April 2020:17:37:14 +0000 |
+| Datum und Uhrzeit | &#x200B;30. April 2020:17:37:14 +0000 |
 | HTTP-Methode | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protokoll | HTTP/1.1 |
