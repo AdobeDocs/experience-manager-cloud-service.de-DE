@@ -1,12 +1,12 @@
 ---
 title: Herunterladen von Assets aus Content Hub
-description: Erfahren Sie, wie Sie Assets aus dem Content Hub-Portal herunterladen
+description: Erfahren Sie, wie Sie einzelne oder mehrere Assets und deren Ausgabedarstellungen vom Content Hub-Portal herunterladen.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
-workflow-type: ht
-source-wordcount: '938'
-ht-degree: 100%
+source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
+workflow-type: tm+mt
+source-wordcount: '888'
+ht-degree: 50%
 
 ---
 
@@ -54,61 +54,86 @@ ht-degree: 100%
 
 >[!AVAILABILITY]
 >
->Das Content Hub-Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
+> [!DNL Content Hub] Handbuch ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
 >[!BADGE Content Hub-Handbuch als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Mit Content Hub können Sie Assets herunterladen und freigeben. Auf der Content Hub-Benutzeroberfläche werden nur genehmigte Assets angezeigt. Bei diesen Assets kann es sich um Bilder, Videos oder andere digitale Inhalte handeln. Content Hub verbessert die Barrierefreiheit und Anpassungsfähigkeit und ermöglicht so eine effektive Asset-Verteilung.
+Mit dem [!DNL Content Hub] können Sie Ihre Assets herunterladen und freigeben. In der [!DNL Content Hub]-Benutzeroberfläche werden nur genehmigte Assets angezeigt. Bei diesen Assets kann es sich um Bilder, Videos oder andere digitale Inhalte handeln. Die [!DNL Content Hub] verbessert die Barrierefreiheit und Anpassungsfähigkeit für eine effektive Asset-Verteilung.
 
-Mit Content Hub können Sie einzelne oder mehrere Assets und ihre verfügbaren Ausgabedarstellungen herunterladen.
+Sie können einzelne oder mehrere Assets und deren verfügbare Ausgabedarstellungen mit [!DNL Content Hub] herunterladen.
 
-Siehe [Typen von in Content Hub verfügbaren Ausgabedarstellungen](#types-of-renditions).
+Siehe [Typen der in Content Hub verfügbaren Ausgabedarstellungen](#types-of-renditions).
 
-## Herunterladen von Assets und zugehörigen Ausgabedarstellungen {#download-asset-renditions}
+## Herunterladen von Assets und deren Ausgabedarstellungen {#download-asset-renditions}
 
-Um ein Asset und seine Ausgabedarstellungen herunterzuladen, führen Sie die folgenden Schritte aus:
+Um ein oder mehrere Assets und deren Ausgabedarstellungen herunterzuladen, führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie auf das Asset, um dessen Eigenschaften anzuzeigen.
+1. Um ein Asset herunterzuladen, wählen Sie ![Herunterladen](/help/assets/assets/download-icon.svg) auf der Asset-Karte verfügbar aus, um eine Vorschau des Assets anzuzeigen, wählen Sie die verfügbaren Ausgabedarstellungen aus und klicken Sie im Dialogfeld auf die Option **[!UICONTROL Herunterladen]**, um die ausgewählten Ausgabedarstellungen als ZIP-Datei herunterzuladen. Wenn im Dialogfeld eine Asset-Lizenz angezeigt wird (für lizenzierte Assets), akzeptieren Sie die Lizenzbedingungen und klicken Sie auf **[!UICONTROL Herunterladen]**.
+   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-1. Klicken Sie auf ![Herunterladen](/help/assets/assets/download-icon.svg), um den Download-Prozess zu starten. Im Panel „Herunterladen“ werden alle verfügbaren Asset-Ausgabedarstellungen aufgelistet.
+   Klicken Sie alternativ auf die Asset-Miniaturansicht und wählen Sie ![Herunterladen](/help/assets/assets/download-icon.svg) aus, um die verfügbaren Ausgabedarstellungen auszuwählen und im Dialogfeld anzuzeigen, bevor Sie sie herunterladen.
+
+1. Um mehrere Assets herunterzuladen, wählen Sie die Assets aus![ klicken Sie auf ](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben. Wählen Sie mindestens eine Ausgabedarstellung aus und klicken Sie auf **[!UICONTROL Herunterladen]**, um sie als einzelne ZIP-Datei herunterzuladen. Bei Auswahl von **[!UICONTROL Smartes Zuschneiden]** und **[!UICONTROL Statische Ausgabedarstellungen]** werden alle verfügbaren statischen und smarten Zuschnitt-Ausgabedarstellungen jedes ausgewählten Assets heruntergeladen.
+   ![Mehrere Assets herunterladen](/help/assets/assets/download-multiple-assets-CH.png)
+Sie können [!DNL Content Hub] während des Downloads weiter verwenden. Content Hub unterbricht Ihren Workflow während des Download-Prozesses nicht.
+   ![Mehrere Assets herunterladen](/help/assets/assets/download-assets-notification-ch.png)
+Wenn **[!UICONTROL Dialogfeld „Assets herunterladen]** Asset-Lizenzen anzeigt, wählen Sie im linken Bereich (Abschnitt [!UICONTROL T&amp;C-Dokumente]) jede Lizenz aus, um eine Vorschau der Lizenz anzuzeigen und die mit der Lizenz verknüpften Assets im mittleren Bereich des Dialogfelds anzuzeigen. Wählen Sie nach der Prüfung jeder Lizenz die Ausgabedarstellungen aus, klicken Sie auf **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** und wählen Sie **[!UICONTROL Herunterladen]** aus, um sie herunterzuladen.
+   ![Mehrere Assets herunterladen](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
    >
-   >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
-   >* Sie können alle [statischen bzw. dynamischen Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt](#types-of-renditions) beim Download eines Assets herunterladen.
+   >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche von [!UICONTROL [Konfiguration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
+   >* Benutzerinnen und Benutzer mit Zugriff auf [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und Ausgabedarstellungen für smartes Zuschneiden anzeigen und herunterladen.
+   >* Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mithilfe [!DNL Assets as a Cloud Service] Autorenumgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-1. Wählen Sie mindestens eine Ausgabedarstellung aus und klicken Sie auf **[!UICONTROL Herunterladen]**.
+<!--
 
-   ![Herunterladen von Ausgabedarstellungen einzelner Assets](/help/assets/assets/download-single-asset-renditions.png)
+## Download an asset and its renditions {#download-asset-renditions} 
+
+To download an asset and its renditions, execute the following steps: 
+
+1. Click the asset to view its properties.
+
+1. Click ![download](/help/assets/assets/download-icon.svg) to see the list of available asset renditions in the **[!UICONTROL Download]** panel.
+
+   >[!NOTE]
+   >
+   >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
+
+1. Select one or more renditions and click **[!UICONTROL Download]** to download the selected renditions as a zip file. 
+While downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** before clicking **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+   ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
 
-Wenn Sie ein lizenziertes Asset herunterladen, wählen Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** aus und klicken Sie dann auf **[!UICONTROL Herunterladen]**. Sie können auch auf **[!UICONTROL Nutzungsbedingungen]** klicken, um die Asset-Lizenz anzuzeigen. Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mithilfe der Authoring-Umgebung von Assets as a Cloud Service genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+If you are downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 >[!NOTE]
 >
-> Benutzende mit Zugriff auf [Dynamic Media mit Open API-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und Ausgabedarstellungen für den intelligenten Zuschnitt anzeigen und herunterladen.
+> The users with access to [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
 
-## Herunterladen mehrerer Assets und ihrer Ausgabedarstellungen {#download-multiple-assets-renditions}
+## Download multiple assets and their renditions {#download-multiple-assets-renditions} 
 
-Um mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führen Sie die folgenden Schritte aus:
+To download multiple assets and their renditions, execute the following steps: 
 
-1. Wählen Sie die Assets aus und klicken Sie auf ![Herunterladen](/help/assets/assets/download-icon.svg) **[!UICONTROL Herunterladen]**. Der Bildschirm [!UICONTROL Assets herunterladen] zeigt eine Liste aller ausgewählten Assets an.
-1. Klicken Sie auf **[!UICONTROL Herunterladen]**, um eine der verschiedenen Download-Optionen auszuwählen und mit dem Herunterladen zu beginnen:
+1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. The [!UICONTROL Download assets] screen displays listing all the selected assets. 
+1. Click **[!UICONTROL Download]** to select from the various download options to begin download:
 
-   * **[!UICONTROL Originale herunterladen]**: Wählen Sie diese Option aus, um die ausgewählten Assets im Originalformular herunterzuladen.
-   * **[!UICONTROL Nur statische Ausgabedarstellungen herunterladen]**: Wählen Sie diese Option aus, um alle verfügbaren statischen Ausgabedarstellungen der Assets mit Ausnahme der Original-Assets herunterzuladen.
-   * **[!UICONTROL Originale und statische Ausgabedarstellungen herunterladen]**: Wählen Sie diese Option aus, um sowohl Original- als auch statische Ausgabedarstellungen der ausgewählten Assets herunterzuladen.
+    * **Download [!UICONTROL Originals]**: Select this option to download the selected assets in the original form.
+    * **Download [!UICONTROL Static Renditions only]**: Select this option to download all available static renditions of assets except the original assets.
+    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and static renditions of the selected assets. 
 
-     ![Mehrere Ausgabedarstellungen herunterladen](/help/assets/assets/download-multiple-renditions.png)
+      ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
 
-     >[!NOTE]
-     >
-     >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [Konfiguration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
-     >* Beim Download mehrerer Assets können Sie nur [statische Ausgabedarstellungen](#types-of-renditions) herunterladen.
+      >[!NOTE]
+      >
+      >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+      >* You can only download [static renditions](#types-of-renditions) while downloading multiple assets.
 
-   Wenn es sich bei einem der ausgewählten Assets um ein lizenziertes Asset handelt, klicken Sie auf die Lizenz des Assets im linken Bereich, um die Vorschau anzuzeigen. Damit können Sie **[!UICONTROL Ich habe die oben genannten Nutzungsbedingungen gelesen und akzeptiert]** auswählen und dann auf **[!UICONTROL Herunterladen]** klicken. Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mithilfe der Authoring-Umgebung von Assets as a Cloud Service genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+    If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-   <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
@@ -142,12 +167,11 @@ The dialog box that displays depends on whether the download list includes expir
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
-
 ## Typen von Ausgabedarstellungen {#types-of-renditions}
 
 Bei Asset-Ausgabedarstellungen handelt es sich um verschiedene Darstellungen der Originaldatei eines Assets. Dazu können Miniaturansichten, optimierte Versionen für Web oder Mobilgeräte, mit Wasserzeichen versehene bzw. DRM-geschützte Dateien oder sogar dynamische Elemente wie intelligente Zuschnitte gehören. Sie müssen nicht mit dem ursprünglichen Dateityp übereinstimmen. Vielmehr dienen sie zur Darstellung des Assets in verschiedenen Anwendungsfällen.
 
-Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in Experience Manager Assets](/help/assets/renditions.md).
+Weitere Informationen über [Anzeigen und Verwalten von Ausgabedarstellungen in [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
 [!DNL Experience Manager Assets] unterstützt die folgenden Typen von Ausgabedarstellungen:
 
@@ -155,7 +179,7 @@ Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in 
 
 * [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeitversionen von Assets, um verschiedene Aktionen auszuführen, z. B. die Größenanpassung von Bildern an verschiedene Geräteauflösungen oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in der [!DNL Adobe Experience Manager Assets]-Autorenumgebung erstellt. Informationen zu den Schritten, die zum Aktivieren dynamischer Ausgabedarstellungen erforderlich sind, finden Sie unter [Aktivieren dynamischer Ausgabedarstellungen](#enable-dynamic-media-renditions).
 
-* [Intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Der intelligente Zuschnitt legt den Fokus während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Der intelligente Zuschnitt in Dynamic Media nutzt die künstliche Intelligenz von Adobe Sensei, um einen Point of Interest zu verfolgen und sicherzustellen, dass Assets auf allen Bildschirmgrößen ideal aussehen. Der intelligente Zuschnitt in [!DNL Adobe Experience Manager] zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Siehe [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Der intelligente Zuschnitt legt den Fokus während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Das smarte Zuschneiden von Dynamic Media nutzt die von Adobe Sensei unterstützte künstliche Intelligenz, um das POI zu verfolgen und sicherzustellen, dass unsere Assets auf allen Bildschirmgrößen optimal aussehen. Der intelligente Zuschnitt in [!DNL Adobe Experience Manager] zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Siehe [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   Ausgabedarstellungen für smartes Zuschneiden werden angezeigt und stehen nur dann zum Download zur Verfügung, wenn Sie Zugriff auf [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) haben. Diese Ausgabedarstellungen sind nur für Bild-Assets verfügbar.
 
@@ -175,7 +199,7 @@ So aktivieren Sie dynamische Ausgabedarstellungen:
 
 1. Speichern Sie die vorhandenen Bildvorgaben erneut, um sie in Content Hub verfügbar zu machen. Dies gilt nur, wenn Sie gerade das Onboarding bei Dynamic Media mit OpenAPI durchgeführt haben.
 
-   Um die vorhandenen Bildvorgaben erneut zu speichern, navigieren Sie zur Admin-Ansicht und wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]** aus. Wählen Sie eine Vorgabe aus, klicken Sie auf **[!UICONTROL Bearbeiten]** und dann auf **[!UICONTROL Speichern]**.
+   Um die vorhandenen Bildvorgaben erneut zu speichern, gehen Sie zur Admin-Ansicht und wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**. Wählen Sie eine Vorgabe aus, klicken Sie auf **[!UICONTROL Bearbeiten]** und dann auf **[!UICONTROL Speichern]**.
 
 
 
