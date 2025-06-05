@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 98%
+source-wordcount: '1987'
+ht-degree: 78%
 
 ---
 
@@ -156,7 +156,7 @@ Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Asse
 
    >[!NOTE]
    >
-   >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
+   >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn sich im Repository mindestens ein Asset befindet, das den Filterkriterien entspricht.
 
 Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jedem verfügbaren Filter klicken, um die Labels zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um einen vorhandenen Filter zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
 
@@ -190,7 +190,7 @@ Die auf der Konfigurationsoberfläche aktivierten Eigenschaften werden auf der S
 
 ### Asset-Karte {#asset-card}
 
-Sie können auch die wichtigsten Metadatenfelder (maximal 6) konfigurieren, die auf der **Asset-Karte** angezeigt werden sollen. Führen Sie dazu die folgenden Schritte aus:
+Sie können auch die wichtigsten Metadatenfelder konfigurieren, die Sie auf der **Asset-Karte“ anzeigen**, und zwar für maximal sechs Felder. Führen Sie dazu die folgenden Schritte aus:
 
 ![Wichtige Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-key-metadata.png)
 
@@ -212,26 +212,38 @@ Admins können die Metadatenfelder definieren, die durchsucht werden, wenn jeman
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen anzuwenden, sodass die neue Metadateneigenschaft in der Liste der Metadatenfelder angezeigt wird.
 
-Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Metadateneigenschaft klicken, um die Eigenschaft zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um eine vorhandene Eigenschaft zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
-
+Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Metadateneigenschaft klicken, um die Eigenschaft zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um eine vorhandene Eigenschaft zu löschen. Klicken Sie **[!UICONTROL Speichern]** nachdem Sie alle Änderungen vorgenommen haben, um die Änderungen anzuwenden.
 ![Suche in Content Hub in der Konfigurations-Benutzeroberfläche](assets/configuration-ui-metadata-search.png)
-
 
 ### Branding {#configure-branding-content-hub}
 
-Admins können auch den Titel und den Textkörper im Banner des Content Hub-Portals entsprechend Ihren Branding-Anforderungen personalisieren. Führen Sie dazu die folgenden Schritte aus:
+Passen Sie als Administrator Ihr [!DNL Content Hub] Portal an Ihre Branding-Anforderungen an. Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die Abschnitte **[!UICONTROL Banner]**, **[!UICONTROL Farben]** und **[!UICONTROL Bannerbild]**, um die folgenden Anpassungen auszuführen:
 
-1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Branding]**.
+1. [Ändern Sie das Bannerbild im Abschnitt [!UICONTROL Bannerbild] .](#Change-the-banner-image)
+1. [Aktualisieren Sie den Titel- und Textkörper des Banners und ändern Sie die Textfarbe im Abschnitt [!UICONTROL Banner].](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [Ändern Sie die primäre und sekundäre Farbe aus dem Abschnitt [!UICONTROL Farben], um ein Farbschema anzuwenden, das dem Design Ihrer Marke entspricht](#Change-the-primary-and-secondary-color)
 
-1. Geben Sie Text in den Feldern **[!UICONTROL Titeltext auf Banner]** und **[!UICONTROL Textkörper auf Banner]** an.
+Wählen Sie die **[!UICONTROL Standardeinstellungen zurücksetzen]**, um Ihre Änderungen rückgängig zu machen und das Standarddesign wiederherzustellen.
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
+#### Ändern des Bannerbilds{#Change-the-banner-image}
 
-![Branding in der Konfigurations-Benutzeroberfläche von Content Hub](assets/configuration-ui-branding.png)
+Führen Sie auf ![ Seite ](/help/assets/assets/ColorPalette.svg)Branding **[!UICONTROL Branding]** die folgenden Schritte aus, um das Bannerbild Ihrer [!DNL Content Hub]-Bereitstellung zu ändern:
 
-Die in der Benutzeroberfläche „Konfiguration“ aktivierten Branding-Aktualisierungen werden im Banner des Content Hub-Portals angezeigt:
+1. Klicken Sie auf ![Bild ](/help/assets/assets/Browse.svg)**[!UICONTROL Aus Galerie auswählen]**, um ein Bannerbild im Dialogfeld für die Asset-Auswahl auszuwählen. Der Asset-Wähler zeigt nur genehmigte Bilder an.
+1. Wählen Sie das Bild aus **[!UICONTROL klicken Sie auf]** und anschließend auf **[!UICONTROL Speichern]**, um es als Bannerbild Ihrer [!DNL Content Hub]-Bereitstellung anzuzeigen.
 
-![Branding in der Konfigurations-Benutzeroberfläche von Content Hub](assets/configuration-ui-branding-updates.png)
+#### Fügen Sie dem Banner Titel und Text hinzu und ändern Sie die Textfarbe{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+Verwenden Sie auf der ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die entsprechenden Felder im Abschnitt **[!UICONTROL Banner]**, um dem Banner Titel- und Textinhalte hinzuzufügen.
+Klicken Sie auf das quadratische Feld neben **[!UICONTROL Bannertextfarbe]**, um eine Textfarbe aus der Farbauswahl für Ihren Bannertext auszuwählen, oder geben Sie den Hexadezimalcode der Farbe in das Feld neben dem quadratischen Feld der Farbauswahl ein.
+
+#### Primäre und sekundäre Farbe ändern{#Change-the-primary-and-secondary-color}
+
+Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** den Abschnitt **[!UICONTROL Farben]**, um primäre und sekundäre Farben festzulegen, indem Sie diese entweder mit der Farbauswahl auswählen oder den Hexadezimalcode der Farbe definieren. Diese Farben legen die Hintergrund-, Text- und Symbolfarben von Benutzeroberflächenelementen fest, um Ihre [!DNL Content Hub]-Benutzeroberfläche an das Design Ihrer Marke anzupassen.
+
+**[!UICONTROL Primäre Farbe]:** Das Primärfarbschema gilt für Auswahlaktionen, interaktive Elemente wie Kontrollkästchen, Suchleisten und Umschalter in [!DNL Content Hub], einschließlich [!DNL Content Hub] Startseite und [!UICONTROL Konfigurationsseite]. Dies gilt auch für Aktionsoptionen, die auf primären [!DNL Content Hub] verfügbar sind, z. B. Optionen auf den Seiten **[!UICONTROL Alle Assets]** und **[!UICONTROL Sammlungen]**.
+
+**[!UICONTROL Sekundäre Farbe]:** Auf der [!DNL Content Hub]-Startseite gilt das sekundäre Farbschema für Benutzeroberflächenoptionen und Eingabefelder, die in Dialogfeldern verfügbar sind. Dies gilt für alle Konfigurationsmenüoptionen auf der Seite [!UICONTROL Konfiguration] mit Ausnahme von Auswahlaktionen, Kontrollkästchen, Suchleisten und Umschaltern.
 
 ### Abgelaufene Assets{#expired-assets-content-hub}
 
