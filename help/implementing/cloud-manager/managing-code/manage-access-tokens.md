@@ -37,7 +37,7 @@ Siehe auch [Hinzufügen externer Repositorys in Cloud Manager](/help/implementin
 
 1. Im Dialogfeld **Zugriffstoken verwalten**:
    * Alle Zugriffstoken werden aufgelistet.
-   * Sie können **** Zugriffstoken bearbeiten.
+   * Sie können **&#x200B;**&#x200B;Zugriffstoken bearbeiten.
    * Sie **nur** Zugriffstoken (löschen), die *nicht verwendet*. Wenn ein Token verwendet wird, ist die Schaltfläche ![Gliederungssymbol löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) deaktiviert.
 
 ## Bearbeiten eines Zugriffstokens {#edit-access-tokens}
