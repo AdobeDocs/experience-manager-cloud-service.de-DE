@@ -82,8 +82,8 @@ Wenn **[!UICONTROL Dialogfeld „Assets herunterladen]** Asset-Lizenzen anzeigt,
 
    >[!NOTE]
    >
-   >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche von [!UICONTROL [Konfiguration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
-   >* Benutzerinnen und Benutzer mit Zugriff auf [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und Ausgabedarstellungen für smartes Zuschneiden anzeigen und herunterladen.
+   >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche von [[!UICONTROL [Konfiguration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert ist.
+   >* Benutzerinnen und Benutzer mit Zugriff auf [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und Ausgabedarstellungen für smartes Zuschneiden anzeigen und herunterladen.
    >* Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mithilfe [!DNL Assets as a Cloud Service] Autorenumgebung genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten von lizenzierten Assets auf Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
