@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 99%
+source-wordcount: '2067'
+ht-degree: 32%
 
 ---
 
@@ -28,7 +28,8 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.4.0) ist der 24. April 2025. Die nächste Version (2025.5.0) ist für den 5. Juni 2025 geplant.
+
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.5.0) war der Freitag, 5. Juni 2025. Die nächste Version (2025.6.0) ist für den Freitag, 26. Juni 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -40,52 +41,80 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Neue Funktion in Experience Manager Sites {#enhancements-sites}
-
-**Neue Admin-Benutzeroberfläche des Inhaltsfragmentmodells**
-
-Zur weiteren Vervollständigung der Liste der neuen Client-seitigen Benutzeroberflächen beim Arbeiten mit AEM-Inhaltsfragmenten ist jetzt eine neue Admin-Benutzeroberfläche für Inhaltsfragmentmodelle verfügbar. Die neue Benutzeroberfläche bietet eine klare und moderne Listenansicht, die die Suche nach Modellen mit Filtern ermöglicht und die Modell-Tags und die vorhandenen Inhaltsfragmente anzeigt, die auf einem bestimmten Modell basieren. Die Dokumentation finden Sie [hier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media (Scene7) {#dynamic-media-scene7}
+**KI-generierte Metadaten**
 
-**Dynamic Media (Scene7) wird in erweiterten Sicherheitsumgebungen nicht unterstützt**
+AEM Assets verwendet jetzt [KI zum automatischen Generieren von Metadaten, einschließlich Titel, Beschreibung und Schlüsselwörtern](/help/assets/metadata-assets-view.md#ai-smart-tags). Diese KI-generierten Felder verbessern die Genauigkeit von Metadaten und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung manueller Tags, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher.
 
-Dynamic Media (Scene7) auf AEM as a Cloud Service ist nicht HIPAA-fähig und kann nicht in AEM-Umgebungen verwendet werden, in denen die erweiterte Sicherheit aktiviert ist.
+![KI-generierte Metadaten](/help/assets/assets/enhanced-smart-tags.png)
 
-Ab der AEM as a Cloud Service-Version April 2025 verhindert eine technische Einschränkung, dass Dynamic Media (Scene7) in Umgebungen mit verbesserter Sicherheit konfiguriert wird. Infolgedessen ist die Karte **Dynamic Media-Konfiguration** unter **Tools** > **Cloud Services** in diesen Umgebungen nicht mehr sichtbar.
+**Integration mit Figma**
 
-Kunden, die AEM 6.5 verwenden, sollten außerdem beachten, dass der Stack von Dynamic Media (Scene7) nicht HIPAA-fähig ist.
+AEM Assets lässt sich nativ mit Figma integrieren, sodass Designer direkt von der Figma-Benutzeroberfläche aus auf die in AEM Assets gespeicherten Assets zugreifen können. Sie können in AEM Assets verwaltete Inhalte in der Figma-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte im AEM Assets-Repository speichern.
 
-### Dynamic Media Classic {#dynamic-media-classic}
-
-**Reporting**
-
-Die Registerkarte „Bandbreite“ im Reporting-Dashboard von Dynamic Media Classic wird seit April 2025 nicht mehr unterstützt.
-
-Siehe [Bandbreite und Speicher, Berichtstypen](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+![Integration mit Figma](/help/assets/assets/figma-integration.png)
 
 
-## Neue Funktionen in der Assets-Ansicht {#new-features-assets-view}
+### Neue Funktionen in Content Hub {#new-features-content-hub}
 
-**Asset-Beziehungen**
+**Attributbasierte Zugriffssteuerung (ABAC)**
 
-Die Assets-Ansicht unterstützt nun das Anzeigen und Bearbeiten von Asset-Beziehungen in einem vereinfachten Bedienfeld mit Asset-Details. Fügen Sie mühelos Beziehungen wie „Quelle“ und „Bearbeitung“ zu Inhalten hinzu, damit Benutzende relevante Hero-Inhalte effektiver finden können.
+Mit Content Hub können Sie jetzt regelbasierte Einschränkungen für den Zugriff auf Assets anwenden. Asset-Berechtigungen stellen die Governance sicher und stellen außerdem sicher, dass nur die relevanten Assets für Benutzer zugänglich sind.
 
-Beispiel für eine ![Assets-Beziehung](/help/assets/assets/asset-relations-example.png)
+Die Regeln für die Asset-Einschränkung basieren auf Metadaten. Wenn die in der Regel definierten Bedingungen mit den Asset-Metadaten übereinstimmen, wird das Asset den Benutzergruppen angezeigt.
 
-**Vergleichen von Versionen eines Assets**
+Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 
-Sie können jetzt mithilfe der Assets-Ansicht schnell eine beliebige Version eines Assets auswählen und mit der neuesten Version vergleichen.
+* Beseitigt die Abhängigkeit von der Ordnerstruktur für Berechtigungen
 
-![Vergleichen von Asset-Versionen](/help/assets/assets/version-compare2.png)
+* Ermöglicht es Administratoren, Assets hochzuladen und Berechtigungsstrukturen rückwirkend zu bestimmen
+
+* Reduziert die Anzahl der Duplikate - verbessert die Integrität des Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
+
+**UI-Branding**
+
+Content Hub ermöglicht es Administratoren jetzt, die Benutzeroberfläche mit markenspezifischen Elementen anzupassen, einschließlich Bannerbildern, Bannertiteln und Textkörpern sowie Primär- und Sekundärfarben. Diese Verbesserungen tragen dazu bei, Markenkonsistenz zu gewährleisten, das Onboarding von Benutzern zu vereinfachen und Vertrauen aufzubauen.
+
+![UI-Branding](/help/assets/assets/content-hub-ui-branding.png)
+
+**Freigeben von öffentlichen Links**
+
+Content Hub unterstützt jetzt das Generieren von Freigabe-Links, damit externe Benutzende ohne Programmzugriff Asset-Metadaten anzeigen oder Assets herunterladen können.
+
+![UI-Branding](/help/assets/assets/public-and-private-link.png)
+
+**Governance von Sammlungen**
+
+Mit Content Hub können Sie jetzt den Zugriff auf Sammlungen während der Erstellung steuern, sodass nur autorisierte Benutzende gruppierte Assets anzeigen oder verwalten können. Sie sorgt für verbesserte Sicherheit, bessere Zusammenarbeit, organisiertes Asset-Management und vereinfachte Governance.
+
+![Governance von Sammlungen](/help/assets/assets/collection-permissions.png)
+
+>[!NOTE]
+>
+>Die Governance von Sammlungen ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein Support-Ticket erstellen.
+
+**Mehrere Assets als ZIP-Datei herunterladen**
+
+Mit Content Hub können Sie die ausgewählten Assets und ihre Ausgabedarstellungen jetzt auch in einer ZIP-Datei herunterladen und nicht als separate Dateien, was die Dateiverwaltung für Sie vereinfacht.
+
+**Dynamic Media-Ausgabedarstellungen in Content Hub**
+
+Greifen Sie direkt über die Content Hub-Benutzeroberfläche auf alle Dynamic Media-Vorgabenausgabedarstellungen und smarten Zuschnitte zum Herunterladen zu.
+
+&#x200B;![Dynamic Media-Ausgabedarstellungen](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Neue Funktionen in Dynamic Media {#new-features-dynamic-media}
+
+**Native Dynamic Media-Integration mit AJO B2C&#x200B;**
+
+Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C, sodass Marketing-Experten AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates und extrem personalisierte Erlebnisse bereitstellen können.
+
+&#x200B;![Dynamic Media-Ausgabedarstellungen](/help/assets/assets/dm-ajo-integration.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,94 +140,126 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 Integrationsfunktionen zwischen Forms und AEP sind jetzt für Early Adopters verfügbar.
 
-## CIF-Add-on {#cloud-services-cif}
-
-### Verbesserungen {#enhancements-cif}
-
-* Hinzufügen einer Auswahl von Produktvarianten für CIF-Produktverweis-Datentyp.
-* [Experimentell]: JSON+LD in CIF-Kernkomponenten in PDPs.
-* [Experimentell]: CIF-Fähigkeit zum Löschen des Caches
-
-### Fehlerbehebungen {#bug-fixes-cif}
-
-* Beheben eines Suchproblems im Produktfeld
-* Produkt-URL-Format funktioniert für #variant_sku nicht wie erwartet.
-* Der Produktlistenkomponente können nicht mehr als 20 SKUs hinzugefügt werden.
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
 
-### OpenAPI-basierte APIs {#open-apis}
+### Aktualisierter Prozess zur Einstellung {#updated-deprecation-process}
 
-Entwickelnde können AEM as a Cloud Service-Funktionen in ihre eigenen Anwendungen und Tools integrieren. Neue AEM as a Cloud Service-APIs folgen der OpenAPI-Spezifikation, weil sie konsistent, gut dokumentiert und benutzerfreundlich sein sollen. Anmeldeinformationen für Endpunkte, für die eine Authentifizierung erforderlich ist, werden durch Erstellen von Adobe Developer Console-Projekten generiert und unterstützen OAuth-Server-zu-Server, Web-Anwendung und Single Page Application (SPA).
+Adobe überprüft regelmäßig Funktionen, Bibliotheken, APIs und Konfigurationen, um sicherzustellen, dass sie den Leistungs-, Sicherheits- und Wertstandards entsprechen. Wenn Funktionen diese Standards nicht mehr erfüllen, werden sie als veraltet gekennzeichnet und die Verwendung muss bis zu einem bestimmten Datum für die Entfernung beendet sein. Bis zu diesem Datum erinnert Adobe Kunden mit E-Mail-Benachrichtigungen und Aktionen, die in Cloud Manager durchgeführt werden müssen, bevor sie mit neuen Builds fortfahren oder sie bereitstellen. Wenn nicht die erforderlichen Maßnahmen ergriffen werden, kann es vorkommen, dass ein Upgrade auf neue Versionen von AEM nicht möglich ist, was sich auf Sicherheit, Leistung, Zuverlässigkeit und Verfügbarkeit auswirken kann.
 
-[Sehen Sie die vollständige Liste](https://developer.adobe.com/experience-cloud/experience-manager-apis/?lang=de#openapi-based-apis) der OpenAPI-basierten APIs, [erfahren Sie mehr](/help/implementing/developing/open-api-based-apis.md) und probieren Sie ein [umfassendes Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) aus, das Konfiguration und Verwendung veranschaulicht.
+Weitere Informationen finden [ im Artikel ](/help/release-notes/deprecated-removed-features.md) .
 
-In diesem Video erfahren Sie, wie Sie ein authentifiziertes API für die spätere Verwendung konfigurieren:
+#### Veraltete Java-APIs und OSGi-Konfiguration nähern sich dem Entfernungsdatum {#deprecated-near-removals}
 
->[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigurationen anzuzeigen, die nicht mehr verwendet werden dürfen. Ausführliche Informationen, einschließlich der Zeitpläne für die Entfernung, finden Sie im Artikel Einstellung .
 
-### Verbesserungen bei der Domain-Zuordnung {#cdn-enhancements}
+<details>
+  <summary>Erweitern Sie , um die veralteten Versionen anzuzeigen</summary>
 
-Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel [Konfigurations-Pipelines konfigurieren](/help/operations/config-pipeline.md#configurations) beschrieben. Im Folgenden finden Sie einige aktuelle Funktionen:
+Java-APIs:
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
-#### Einschließen zusätzlicher Eigenschaften in CDN-Protokolle {#props-in-cdnlogs}
+OSGi-Eigenschaften
 
-Dies ist nützlich für Szenarien wie das Debugging und die Datenanalyse. Sie können über die Standardeigenschaften hinaus weitere Informationen in Ihre CDN-Protokolle aufnehmen, indem Sie die Aktion `logProperty` in [Anfrage- und Antworttransformationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) festlegen.
+* `org.apache.sling.commons.log.LogManager` (alle Eigenschaften)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
 
-#### Die Eigenschaften Region, Kontinent und Organisation als übereinstimmende Bedingungen {#matching-conditions}
+</details>
 
-CDN-Regeln können jetzt basierend auf Region, Kontinent und Organisation abgeglichen werden, einschließlich für Anwendungsfälle wie Sperren von Traffic und Umleitungen. `clientRegion` und `clientContinent` ergänzen das bereits unterstützte `clientCountry`, sodass sie auf der Grundlage der geografischen Lage abgeglichen werden, während `clientAsName` und `clientAsNumber` mit Autonomous Systems abgeglichen werden, um große ISPs, Unternehmen oder Cloud-Anbieter zu identifizieren. Erfahren Sie mehr über diese [neu verfügbar gemachte Anfrageeigenschaften](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+### Einstellung der Java 11-Laufzeit {#java11-runtime-deprecation}
 
-#### Festlegen eines Cookie-Werts {#cookie-attributes}
+Die **Java 11** Laufzeitumgebung ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere **Java 21-Laufzeitumgebung)**.
 
-Sie können Cookie-Attribute in [Antworttransformationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) festlegen.
+Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit bestimmten nächsten Schritten erhalten haben. Stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **28. August 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
 
-### Java 21-Unterstützung {#java21}
+Hinweis: Die Laufzeitversion ist von der Build-Version Ihres Codes getrennt. Es wird zwar empfohlen, mit Java 21 zu erstellen, aber Java 11-Builds werden derzeit noch unterstützt. Ein separater Hinweis zur Einstellung für Java 11-Builds wird in Zukunft freigegeben.
 
-Ab der Januar-Version können Sie Code mit Java 21 und Java 17 erstellen. Sie erhalten Zugriff auf neue Funktionen wie Mustervergleich, versiegelte Klassen und verschiedene Leistungsverbesserungen. Die Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+### Durchsetzung der Konfigurationsrichtlinie für AEM Java-Protokolle {#logconfig-policy}
 
-Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wenn ein Java 17- oder Java 21-Build erkannt wird. Adobe empfiehlt jedoch auch, sich für Umgebungen, die mit Java 11 erstellt wurden, für die Java 21 Runtime anzumelden. Senden Sie hierzu einfach eine E-Mail an [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Erfahren Sie mehr zu den [Java 21 Runtime-Anforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+Wie in den Versionshinweisen vom April erwähnt, müssen AEM Java-Protokolle einem Standardformat entsprechen, um eine zuverlässige Überwachung in allen Kundenumgebungen sicherzustellen. Benutzerdefinierte Protokollkonfigurationen - wie Änderungen an der Protokollformatierung, Ausgabedateien oder Standardprotokollebenen - werden nicht mehr unterstützt. Protokolle müssen an die Standarddateien weitergeleitet werden, und die standardmäßigen Protokollebenen für AEM-Produkt-Code müssen beibehalten werden. Ausführliche Informationen finden Sie im [Artikel zur Protokollierung](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
->[!IMPORTANT]
->
-> Die Java 21 **Runtime** wurde im Februar für Ihre Entwicklungs-/RDE-Umgebungen bereitgestellt und wird am **28. und 29. April** auf Ihre Staging-/Produktionsumgebungen angewendet. Beachten Sie, dass das **Erstellen von Code** mit Java 21 (oder Java 17) unabhängig von der Java 21-Laufzeit erfolgt. Sie müssen explizit Schritte zum Erstellen von Code mit Java 21 (oder Java 17) ausführen.
+Ab **Ende August** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse sind die meisten Kunden nicht betroffen und Adobe wird sich direkt mit allen Kunden in Verbindung setzen, deren aktuelle Konfiguration möglicherweise betroffen ist.
 
-### Durchsetzung der Protokollierungskonfigurationsrichtlinie von AEM {#logconfig-policy}
+Bitte alle nachgelagerten Prozesse überprüfen und aktualisieren, die auf benutzerdefiniertem Protokollierungsverhalten basieren. Zum Beispiel:
 
-Um eine effektive Überwachung von Kundenumgebungen zu gewährleisten, müssen die AEM-Java-Protokolle ein konsistentes Format aufweisen und sollten nicht durch benutzerdefinierte Konfigurationen überschrieben werden. Die Protokollausgabe muss an die Standarddateien weitergeleitet bleiben. Für AEM-Produkt-Code müssen die standardmäßigen Protokollebenen beibehalten werden. Es ist jedoch akzeptabel, die Protokollebenen für den von der Kundin oder dem Kunden entwickelten Code anzupassen.
+* Wenn Ihr Protokollweiterleitungssystem ein benutzerdefiniertes Protokollformat erwartet, müssen Sie möglicherweise Ihre Erfassungsregeln anpassen.
+* Wenn Sie zuvor die Ausführlichkeit des Protokolls durch Ändern der Protokollebenen reduziert haben, beachten Sie, dass eine Rückkehr zu den Standardebenen das Protokollvolumen erhöhen kann.
 
-Zu diesem Zweck sollten keine Änderungen an den folgenden OSGi-Eigenschaften vorgenommen werden:
-* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) – *alle Eigenschaften*
-* **Apache Sling Logging Logger Configuration** (werksseitige PID: `org.apache.sling.commons.log.LogManager.factory.config`):
-   * `org.apache.sling.commons.log.file`
-   * `org.apache.sling.commons.log.pattern`
+### Standardbereinigung älterer Versionen und Auditprotokolle {#mt-defaults}
 
-Mitte Mai wird AEM eine Richtlinie durchsetzen, durch die alle benutzerdefinierten Änderungen an diesen Eigenschaften ignoriert werden. Bitte überprüfen und passen Sie Ihre nachgelagerten Prozesse entsprechend an. Wenn Sie beispielsweise die Protokollweiterleitungsfunktion verwenden:
-* Wenn Ihr Protokollierungsziel ein benutzerdefiniertes (nicht standardmäßiges) Protokollformat erwartet, müssen Sie möglicherweise Ihre Aufnahmeregeln aktualisieren.
-* Wenn Änderungen an den Protokollebenen die Protokollierbarkeit reduzieren, beachten Sie, dass die standardmäßigen Protokollebenen zu einer erheblichen Steigerung des Protokollierungsvolumens führen können.
+Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben* in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, es sei denn, sie werden explizit über die entsprechenden OSGi-Eigenschaften konfiguriert.
 
-### AEM-Protokollweiterleitung an weitere Ziele – Beta-Programm {#log-forwarding-earlyadopter}
+Um jedoch die Repository-Leistung zu optimieren, ab **Ende Juni 2025** wird die Bereinigung standardmäßig aktiviert, wobei die folgenden Richtlinien befolgt werden:
 
-In der Beta-Version können Sie AEM-Protokolle an New Relic (mithilfe von HTTPS), Amazon S3 und Sumo Logic weiterleiten. Beachten Sie, dass zwar AEM-Protokolle (einschließlich Apache/Dispatcher) unterstützt werden, jedoch keine CDN-Protokolle. Schreiben Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um Zugriff zu erhalten.
+#### Inhaltsversionen {#mt-content}
 
-Die Protokolle können zwar von Cloud Manager heruntergeladen werden, aber viele Unternehmen ziehen es vor, diese Protokolle an ein bevorzugtes Protokollierungsziel weiterzuleiten. AEM unterstützt bereits die (allgemein verfügbare) AEM- und CDN-Protokollweiterleitung an Azure Blob Storage, Datadog, HTTPS, Elasticsearch (und OpenSearch) und Splunk. Diese Funktion wird eigenständig konfiguriert und mithilfe der Konfigurations-Pipeline bereitgestellt.
+* **Neue Umgebungen** (erstellt nach einem bevorstehenden Datum (wird später mitgeteilt)
+   * Versionen, die älter als **30 Tage** sind, werden regelmäßig gelöscht.
+   * Die letzten fünf Versionen der letzten 30 Tage werden zusammen mit der neuesten Version und der aktuellen Version unabhängig vom Alter beibehalten.
+
+* **Vorhandene Umgebungen** (vor diesem bevorstehenden Datum erstellt):
+   * Versionen, die älter als **7 Jahre**, werden regelmäßig gelöscht.
+   * Alle Versionen der letzten sieben Jahre werden beibehalten.
+   * Dieser hohe Standardwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
+
+* Sie können diese Standardwerte durch OSGi-Konfigurationsüberschreibungen ändern.
+
+#### Auditprotokoll {#mt-auditlogs}
+
+* **Neue Umgebungen** (erstellt nach einem bevorstehenden Datum, das separat kommuniziert wird):
+   * Replikations-, DAM- und Seiten-Auditprotokolle, die älter als **7 Tage**, werden regelmäßig gelöscht.
+   * Alle Ereignisse werden standardmäßig protokolliert.
+
+* **Vorhandene Umgebungen** (vor diesem bevorstehenden Datum erstellt):
+   * Replikations-, DAM- und Seiten-Auditprotokolle, die älter als **7 Jahre**, werden regelmäßig gelöscht.
+   * Alle Ereignisse werden standardmäßig protokolliert.
+   * Dieser hohe Standardwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
+
+* Sie können diese Standardwerte durch OSGi-Konfigurationsüberschreibungen ändern.
+
+Weitere Informationen finden Sie im Artikel [Wartungsaufgaben](/help/operations/maintenance.md#default).
+
+### Edge Computing (Alpha-Programm) {#edge-computing}
+
+Mit der Edge-Datenverarbeitung können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher an den Endbenutzer heranrückt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse am Edge.
+
+Häufige Anwendungsszenarien umfassen:
+
+* Authentifizieren von Benutzern bei einem Identitätsanbieter, bevor Zugriff auf Inhalte gewährt wird
+* Personalisieren von Inhalten basierend auf Geolokalisierung, Gerätetyp oder Benutzerattributen
+* Als Middleware zwischen dem CDN und Ihrer Herkunft
+* Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer APIs als Antworten), bevor sie an den Browser gesendet werden
+* Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
+
+Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
+
+### CDN-Konfiguration für Edge Delivery Services (Beta-Programm) {#cdn-eds-beta}
+
+Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#configurations) beschrieben.
+
+Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details ](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com.
+
+### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
+
+Die Protokolle können zwar von Cloud Manager heruntergeladen werden, aber viele Unternehmen ziehen es vor, diese Protokolle an ein bevorzugtes Protokollierungsziel weiterzuleiten. AEM unterstützt bereits die AEM- und CDN-Protokollweiterleitung an Azure Blob Storage, Datadog, HTTPS, Elasticsearch (und OpenSearch) und Splunk. Diese Funktion wird eigenständig konfiguriert und mithilfe der Konfigurations-Pipeline bereitgestellt.
+
+Jetzt in der Beta-Phase können Sie AEM-Protokolle an Amazon S3, Sumo Logic und Ihr eigenes New Relic-Konto (nicht das von Adobe bereitgestellte Konto) weiterleiten. Beachten Sie, dass AEM-Protokolle (einschließlich Apache/Dispatcher) für diese Protokollierungsziele unterstützt werden, jedoch keine CDN-Protokolle. Schreiben Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um Zugriff zu erhalten.
 
 Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
-
-Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Adobe würde gerne von Ihnen hören, ob Sie diese Technologie als nützlich für AEM Publish Delivery- und Edge Delivery Services-Projekte erachten. Teilen Sie uns bitte außerdem mit, wofür Sie sie voraussichtlich verwenden würden. Diese Information hilft uns bei der Gestaltung der Produkt-Roadmap. 
-
-Verschiedene mögliche Anwendungsfälle:
-
-* Authentifizierung mit einer IdP, um Zugriff auf Inhalte zu erhalten
-* Personalisierung durch das Rendern dynamischer Inhalte basierend auf Geolocation, Gerätetyp, Benutzerattributen usw.
-* Erweiterte Bildbearbeitung
-* Middleware zwischen dem CDN und einem Ursprung
-* Eine Ebene zwischen dem Browser und eines Dritteranbieter-APIs, möglicherweise zur Neuformatierung der API-Antwort
-* Aggregieren von Daten aus verschiedenen Quellen, um dem Client-Browser das Rendern zu erleichtern
-
-Schreiben Sie eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) mit Fragen und Kommentaren!
 
 ## [!DNL Experience Manager] Guides {#guides}
 
