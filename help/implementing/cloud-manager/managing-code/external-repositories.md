@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
-workflow-type: ht
-source-wordcount: '2074'
-ht-degree: 100%
+source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
+workflow-type: tm+mt
+source-wordcount: '2079'
+ht-degree: 99%
 
 ---
 
@@ -20,10 +20,11 @@ Kundinnen und Kunden können nun auch ihre Azure DevOps-Git-Repositorys in Cloud
 
 * Für Edge Delivery Services-Benutzende kann das integrierte Repository zum Synchronisieren und Bereitstellen von Sitecode verwendet werden.
 * Für Benutzende von AEM as a Cloud Service und Adobe Managed Services (AMS) kann das Repository mit Fullstack- und Frontend-Pipelines verknüpft werden.
-&#39;
+
 >[!NOTE]
 >
 >Die in diesem Artikel beschriebenen Funktionen sind nur über das Early-Adopter-Programm verfügbar. Weitere Informationen und die Möglichkeit, sich als Early Adopter anzumelden, werden unter [Bringen Sie Ihren eigenen Git mit](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket) beschrieben.
+
 
 ## Konfigurieren eines externen Repositorys
 
@@ -83,13 +84,16 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
    | | **Repository-Typ: Bitbucket**<ul><li>Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffs-Token ein, das Sie erstellen.<li>Erstellen Sie ein Repository-Zugriffs-Token mithilfe der [Bitbucket-Dokumentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Erforderliche Berechtigungen für das persönliche Zugriffs-Token (Personal Access Token, PAT) in Bitbucket<br>Diese Berechtigungen ermöglichen Cloud Manager den Zugriff auf Repository-Inhalte, das Verwalten von Pull-Anfragen und das Konfigurieren von oder Reagieren auf Webhook-Ereignisse.<br>Stellen Sie beim Erstellen des App-Passworts in Bitbucket sicher, dass es die folgenden erforderlichen App-Passwortberechtigungen enthält:<ul><li>Repository (schreibgeschützt)<li>Pull-Anfragen (Lesen und Schreiben)<li>Webhooks (Lesen und Schreiben)</li></li></ul></li></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
    | | **Repository-Typ: Azure DevOps**<ul><li>Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffstoken ein, das Sie erstellen.<li>Erstellen Sie ein Repository-Zugriffstoken mithilfe der [Azure DevOps-Dokumentation](https://learn.microsoft.com/de-de/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows).<li>Erforderliche Berechtigungen für das persönliche Zugrifftoken (Personal Access Token, PAT) in Azure DevOps.<br>Diese Berechtigungen ermöglichen Cloud Manager den Zugriff auf Repository-Inhalte, das Verwalten von Pull-Anfragen und das Konfigurieren von oder Reagieren auf Webhook-Ereignisse.<br>Stellen Sie beim Erstellen des App-Passworts in Azure DevOps sicher, dass es die folgenden erforderlichen App-Passwortberechtigungen enthält:<ul><li>Repository (schreibgeschützt)</li></ul></li></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
 
+   Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
    >[!IMPORTANT]
    >
    >Die Funktion **Neues Zugriffs-Token hinzufügen** befindet sich derzeit in der Early-Adopter-Phase. Zusätzliche Funktionen sind in Planung. Daher können sich die erforderlichen Berechtigungen für Zugriffs-Token ändern. Darüber hinaus kann die Benutzeroberfläche für die Verwaltung von Token aktualisiert werden, möglicherweise einschließlich Funktionen wie Ablaufdaten von Token. Dazu gehören auch automatisierte Prüfungen, um sicherzustellen, dass mit Repositorys verknüpfte Token gültig bleiben.
 
 1. Klicken Sie auf **Überprüfen**.
 
-Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
+   Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
+
 
 ## Verknüpfen eines validierten externen Repositorys mit einer Pipeline {#validate-ext-repo}
 
@@ -113,6 +117,7 @@ Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipel
 >[!TIP]
 >
 >Weitere Informationen zum Verwalten von Repositorys in Cloud Manager finden Sie unter [Cloud Manager-Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+
 
 ## Konfigurieren eines Webhooks für externe Repositorys {#configure-webhook}
 
@@ -172,6 +177,7 @@ Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis 
    | GitLab | Diese Webhook-Ereignisse ermöglichen es Cloud Manager, Pipelines bei der Push-Übertragung von Code oder beim Senden einer Zusammenführungsanfrage auszulösen. Sie verfolgen außerdem Kommentare im Zusammenhang mit der Validierung von Pull-Anfragen (durch Notizereignisse).<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Push-Ereignisse<li>Zusammenführen von Anfrageereignissen<li>Notizereignisse</li></li></li></ul></ul></ul> |
    | Bitbucket | Diese Ereignisse stellen sicher, dass Cloud Manager Pull-Anfragen validieren, auf Push-Übertragungen von Code reagieren und mit Kommentaren zur Pipeline-Koordination interagieren kann.<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Pull-Anfrage: Erstellt<li>Pull-Anfrage: Aktualisiert<li>Pull-Anfragen: Zusammengeführt<li>Pull-Anfrage: Kommentar<li>Repository: Push</li></li></li></ul></ul></ul> |
    | Azure DevOps | Diese Ereignisse stellen sicher, dass Cloud Manager Pull-Anfragen validieren, auf Push-Übertragungen von Code reagieren und mit Kommentaren zur Pipeline-Koordination interagieren kann.<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Repository: Push</li></li></ul></ul></ul> |
+
 
 ### Validierung von Pull-Anfragen mit Webhooks
 

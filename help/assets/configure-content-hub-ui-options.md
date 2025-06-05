@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
+source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 78%
+source-wordcount: '2128'
+ht-degree: 73%
 
 ---
 
@@ -112,6 +112,10 @@ Verwalten Sie als Admin die folgenden Konfigurationsoptionen für Ihre Benutzend
 * [Ausgabedarstellungen](#renditions-content-hub)
 
 * [Benutzerspezifische Links](#configure-custom-links-content-hub)
+
+* [Governance von Sammlungen](#configure-collections-content-hub)
+
+* [Freigabe öffentlicher Links aktivieren](#enable-public-link-sharing)
 
 ### Importieren {#configure-import-options-content-hub}
 
@@ -308,3 +312,29 @@ Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-loca
 Der benutzerspezifische Link wird auf der Content Hub-Startseite neben der Registerkarte „Erkenntnisse“ als neue Registerkarte angezeigt.
 
 ![Registerkarten der benutzerdefinierten Links in der Konfigurationsoberfläche in Content Hub](assets/configuration-ui-custom-link-tab.png)
+
+### Governance von Sammlungen {#configure-collections-content-hub}
+
+Admins können beim Erstellen von Sammlungen Benutzerberechtigungen definieren. Gehen Sie wie folgt vor, um diese Einstellungen zu aktivieren:
+
+1. Klicken Sie in [ Benutzeroberfläche ](#access-configuration-options-content-hub)Konfigurationen“ auf **[!UICONTROL Sammlungen und Freigabe]**.
+
+1. Aktivieren Sie den Umschalter **[!UICONTROL Schreibgeschützte Sammlungen]** , um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur vom Ersteller und Administrator bearbeitet werden können.
+
+1. Aktivieren Sie den **[!UICONTROL Öffentliche Sammlungen]** , um Sammlungen zuzulassen, die für alle zugänglich und bearbeitbar sind.
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
+
+   ![Registerkarte „Konfigurationssammlungen“ in Content Hub](assets/configuration-collections-tab.png)
+
+### Freigabe öffentlicher Links aktivieren {#enable-public-link-sharing}
+
+Aktivieren Sie die folgende Einstellung in der Konfigurationsoberfläche, damit Content Hub-Benutzer einen öffentlichen Link generieren können:
+
+1. Klicken Sie in [ Benutzeroberfläche ](#access-configuration-options-content-hub)Konfigurationen“ auf **[!UICONTROL Sammlungen und Freigabe]**.
+
+1. Aktivieren Sie den Umschalter **[!UICONTROL Öffentlichen Link aktivieren]** und klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen anzuwenden.
+
+   ![Freigabe öffentlicher Links in Content Hub aktivieren](assets/enable-public-link-sharing-tab.png)
+
+Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihrem Produktions- oder Sandbox-Programm eine
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
+source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 91%
+source-wordcount: '521'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!IMPORTANT]
 >
 >Erfahren Sie, warum Sie Ihre Edge Delivery Services-Site in Cloud Manager integrieren müssen.
->Weitere Informationen finden Sie unter [Vorteile des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>>Weitere Informationen finden Sie unter [Vorteile des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **So fügen Sie eine Edge Delivery-Site zu Cloud Manager hinzu:**
 
@@ -40,7 +40,7 @@ Klicken Sie oben rechts auf der Seite auf **Site hinzufügen**.
    | Textfeld | Beschreibung |
    | - | --- |
    | Site-Name | Geben Sie den Namen der Edge Delivery-Site ein, die Sie hinzufügen.<br>Der Name dient als eindeutige Kennung für die Site in Cloud Manager. |
-   | Repository-URL | Geben Sie das Git-Repository ein, in dem der Code Ihrer Website gespeichert ist.<br>Mit diesem Feld kann Cloud Manager den Code während des Bereitstellungsprozesses aus diesem Repository abrufen. |
+   | Edge Delivery Origin | Dieser Wert gibt den URL-Pfad zur Inhaltsquelle für Ihre Site in Edge Delivery Services an. Außerdem wird Cloud Manager mit Ihrer Live-Site verknüpft.<br>Die URL umfasst normalerweise *Verzweigung*, *Projekt* und *Mandant*, wie im folgenden Beispiel (nur zu Veranschaulichungszwecken):<br>`https://main--projectname--tenant.aem.live` |
    | Site-Beschreibung (optional) | Geben Sie eine kurze Beschreibung der Edge Delivery-Site ein, die Sie hinzufügen.<br>Eine Beschreibung hilft, die Site zu identifizieren und zu unterscheiden und so die Verwaltung und Erkennung von anderen von Ihnen hinzugefügten Sites zu vereinfachen. |
 
 1. Klicken Sie unten rechts im Dialogfeld auf **Speichern**.

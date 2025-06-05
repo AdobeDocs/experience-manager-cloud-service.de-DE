@@ -3,50 +3,85 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 95%
+source-wordcount: '1055'
+ht-degree: 57%
 
 ---
 
 # Verwalten von Sammlungen in [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -73,19 +108,41 @@ Dies ermöglicht Benutzenden, auf einfache Weise auf die verschiedenen in [!DNL 
 
 ## Voraussetzungen {#prerequisites}
 
-[Content Hub-Benutzende](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel genannten Aktionen ausführen.
+[Content Hub-Benutzer](deploy-content-hub.md#onboard-content-hub-users) können die in diesem Artikel genannten Aktionen ausführen.
 
 ## Erstellen von Sammlungen{#create-collections}
 
-Sie können [eine neue Sammlung erstellen](#create-new-collection) oder [Assets zu einer vorhandenen Sammlung hinzufügen](#add-assets-to-existing-collection).
+Bei der Verwaltung der Governance [ Sie zwischen dem Erstellen ](#create-new-collection) neuen Sammlung [ dem Hinzufügen ](#add-assets-to-existing-collection) Assets zu einer vorhandenen Sammlung.
 
 ### Erstellen einer neuen Sammlung{#create-new-collection}
 
-Wählen Sie die Assets aus, die einer Sammlung hinzugefügt werden sollen, und klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
+Führen Sie die folgenden Schritte aus, um den Zugriff beim Erstellen von Sammlungen zu steuern:
 
-![Erstellen einer Sammlung](assets/add-assets-collection.jpg)
+1. Wechseln Sie zu **[!DNL Collections]** Registerkarte und klicken Sie auf **[!UICONTROL Sammlung erstellen]**. Das Fenster Neue Sammlung wird angezeigt.
 
-Um eine neue Sammlung zu erstellen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und klicken Sie auf **[!UICONTROL Neue Sammlung erstellen]**. Geben Sie den **[!UICONTROL Titel]** ein und geben Sie eine optionale **[!UICONTROL Beschreibung]** für die Assets an. Klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Fügen Sie **[!UICONTROL Sammlung]** Titel“ und **[!UICONTROL Beschreibung]** hinzu.
+
+   ![Sammlungsberechtigungen](assets/collection-permissions.png)
+
+1. Wählen **[!UICONTROL im Dropdown-Menü]** Wer Zugriff hat“ den Zugriffssteuerungstyp aus. Die folgenden Optionen sind verfügbar:
+
+   | Zugriffsmethode | Zugriffstyp | Beschreibung |
+   |---|---|---|
+   | **Nur Sie und Administratoren können auf zugreifen** | Privat | Nur der Ersteller und die Administratoren können diese Sammlung bearbeiten und darauf zugreifen. |
+   | **Jeder kann auf zugreifen** | Öffentlich | Jeder kann auf diese Sammlung zugreifen, aber nur Ersteller und Administratoren können sie bearbeiten. |
+   | **Jeder kann auf zugreifen und bearbeiten** | Öffentlich | Diese Sammlung ist für alle offen, mit vollem Zugriff und ohne Einschränkungen gewährten Bearbeitungsberechtigungen. |
+
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. Anschließend können Sie [Assets zur Sammlung hinzufügen](#add-assets-to-existing-collection).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>Die Governance von Sammlungen ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein Support-Ticket erstellen. Nach der Aktivierung müssen Sie [Sammlungen in Content Hub konfigurieren](configure-content-hub-ui-options.md#configure-collections-content-hub).
+
+<!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
+![Create collection](assets/add-assets-collection.jpg)          
+-->
 
 ### Hinzufügen von Assets zu einer vorhandenen Sammlung{#add-assets-to-existing-collection}
 
@@ -93,13 +150,34 @@ Um Assets zu einer vorhandenen Sammlung hinzuzufügen, wählen Sie die Assets au
 
 ![Erstellen einer neuen Sammlung](assets/create-add-collection.jpg)
 
-Wählen Sie die Sammlung aus, der das Asset hinzugefügt werden soll. Sie können die vorhandene Sammlung auch über die Suchleiste durchsuchen. <br>Wählen Sie die Sammlungen aus, denen die Assets hinzugefügt werden sollen, und klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
+Wählen Sie die Sammlung aus, der das Asset hinzugefügt werden soll. Sie können die vorhandene Sammlung auch über die Suchleiste durchsuchen. <br>Wählen Sie die Sammlungen aus, denen Sie die Assets hinzufügen möchten, und klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
 
 ## Anzeigen von Sammlungen{#view-collections}
 
-Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und suchen Sie nach dem Sammlungsnamen. Um die Liste der in einer Sammlung verfügbaren Assets anzuzeigen, klicken Sie auf den Sammlungsnamen. Sie können auch Filter innerhalb einer Sammlung anwenden, um die Asset-Ergebnisse einzugrenzen.
+Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und suchen Sie nach dem Sammlungsnamen. Sie können Filter verwenden, um Ihre Suchergebnisse zu verfeinern, indem Sie bestimmte Kriterien auswählen, sodass Sie schnell die relevantesten Sammlungen finden können.
 
-Klicken Sie auf das Asset, das in einer Sammlung angezeigt werden soll. [!DNL Content Hub] zeigt die Detailansicht für das Asset an. Siehe [Asset-Details](asset-properties-content-hub.md).
+Um die Liste der in einer Sammlung verfügbaren Assets anzuzeigen, klicken Sie auf den Sammlungsnamen. Sie können auch Filter innerhalb einer Sammlung anwenden, um die Asset-Ergebnisse einzugrenzen. Klicken Sie auf das Asset, das in einer Sammlung angezeigt werden soll. [!DNL Content Hub] zeigt die Detailansicht für das Asset an. Siehe [Asset-Details](asset-properties-content-hub.md).
+
+### Sammlungen filtern Ansicht {#filter-collections-view}
+
+Mit Content Hub können Sie die Sammlungsansicht filtern, um genau das zu finden, was Sie suchen, indem Sie die Optionen entsprechend Ihren Präferenzen eingrenzen. Stellen Sie die [Konfiguration von Sammlungen in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub) sicher.
+
+Um die Ansicht „Sammlungen“ zu filtern, gehen Sie auf **[!DNL Collections]** Registerkarte und navigieren Sie zur Dropdown-Liste „Sammlungen“. Wählen Sie unter den folgenden Optionen:
+
+* **[!UICONTROL Alle Sammlungen]:** Wählen Sie diese Option aus, um alle Sammlungen anzuzeigen, die privat und für Sie freigegeben sind.
+* **[!UICONTROL Nur ich]:** Wählen Sie diese Option aus, um Sammlungen anzuzeigen, auf die Sie zugreifen können.
+* **[!UICONTROL Jeder kann anzeigen]:** Mit dieser Option können Sie Sammlungen filtern, die für alle zugänglich sind, aber nur vom Ersteller bearbeitet werden können.
+* **[!UICONTROL Jeder kann bearbeiten]:** Wählen Sie diese Option, um Sammlungen zu filtern, die für alle zugänglich und bearbeitbar sind.
+
+  ![Sammlungen filtern - Ansicht](assets/filter-collection-view.png)
+
+Um die Sammlungen -Ansicht auf der Grundlage von Zugriffsberechtigungen zu filtern, gehen Sie zur Registerkarte **[!DNL Collections]** und navigieren Sie zu einer der folgenden Optionen:
+
+* **[!UICONTROL Von jedem erstellt]:** Dieser Filter beschränkt Sie auf die Anzeige von Sammlungen, die von einem beliebigen Benutzer erstellt wurden.
+
+* **[!UICONTROL Von mir erstellt]:** Dieser Filter beschränkt Sie auf die Anzeige von Sammlungen, die von Ihnen erstellt wurden.
+
+  ![Sammlungen filtern - Ansicht](assets/filter-collection-view1.png)
 
 <!--
 ![Asset details](assets/view-collection.jpg)
@@ -119,7 +197,7 @@ Klicken Sie auf das Asset, das in einer Sammlung angezeigt werden soll. [!DNL Co
 Um in einer Sammlung verfügbare Assets herunterzuladen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**.\
 Klicken Sie auf der Sammlungskarte auf das Symbol ![Herunterladen-Symbol](assets/download-icon.svg).
 
-![Registerkarte „Sammlungen“](assets/download-collection.jpg)
+![Registerkarte „Sammlungen“](assets/download-collection.png)
 
 Alle Assets in der Sammlung werden heruntergeladen.
 
@@ -129,7 +207,9 @@ Erfahren Sie, wie Sie [ein Asset aus [!DNL Content Hub]](download-assets-content
 
 ## Freigeben von in einer Sammlung verfügbaren Assets {#share-assets-available-within-collection}
 
-Sie können auch die in einer Sammlung verfügbaren Assets freigeben. Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**. Wählen Sie auf der Sammlungskarte das Symbol ![Freigeben-Symbol](assets/share.svg) aus. Der Freigabe-Link wird kopiert. Sie können den Link an die Empfängerin oder den Empfänger weitergeben. Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
+Sie können auch die in einer Sammlung verfügbaren Assets freigeben. Stellen Sie sicher[ dass die öffentliche Link-Freigabe in Content Hub aktiviert ](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**. Wählen Sie auf der Sammlungskarte das Symbol ![Freigeben-Symbol](assets/share.svg) aus. Der Freigabe-Link wird kopiert. Sie können den Link an die Empfängerin oder den Empfänger weitergeben. Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
+
+Beim Freigeben von Sammlungen in Content Hub können Sie den Umfang des Zugriffs und die Aktionen definieren, die Empfängerinnen und Empfänger für digitale Ressourcen im System ausführen können. Content Hub Collections bietet umfassende Governance-Tools für ein effektives Asset-Management, einschließlich anpassbarer Freigabeberechtigungen und Kooperationsfunktionen. Vom schreibgeschützten Zugriff bis hin zur vollständigen administrativen Kontrolle unterstützen diese Einstellungen eine ordnungsgemäße Governance über die Asset-Verteilung.
 
 ## Bearbeiten der Details einer Sammlung {#edit-details-of-collection}
 
@@ -149,3 +229,6 @@ Die ausgewählten Assets werden erfolgreich aus der Sammlung entfernt.
 ## Löschen von Sammlungen{#delete-collection}
 
 Um eine Sammlung zu löschen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und klicken Sie auf die Sammlung, die gelöscht werden soll. Klicken Sie auf das Symbol ![Entfernen-Symbol](assets/remove-icon.svg), um die Sammlung zu löschen.
+
+
+
