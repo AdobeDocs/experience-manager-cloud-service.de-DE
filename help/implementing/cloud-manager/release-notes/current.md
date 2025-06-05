@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Cloud Manager 2025.6.0 in Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '961'
 ht-degree: 33%
 
 ---
@@ -61,7 +61,7 @@ Derzeit stehen die folgenden Möglichkeiten für eine frühzeitige Verwendung zu
 
 ### Zugriffstoken verwalten{#manage-access-tokens}
 
-Verwenden Sie die Funktion **Zugriffs-Token verwalten** in Cloud Manager, um Zugriffs-Token anzuzeigen, umzubenennen und zu löschen, die mit externen Bring-Your-Own-Git-Repositorys verknüpft sind, z. B. GitHub Enterprise, GitLab, Bitbucket und Azure DevOps.
+Verwenden Sie **Zugriffs-Token verwalten** in Cloud Manager, um Zugriffs-Token anzuzeigen, umzubenennen und zu löschen, die mit externen Bring-Your-Own-Git-Repositorys verknüpft sind, z. B. GitHub Enterprise, GitLab, Bitbucket und Azure DevOps.
 
 Siehe [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
 
@@ -76,7 +76,7 @@ Siehe [Hinzufügen einer speziellen Testumgebung](/help/implementing/cloud-manag
 
 ![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezielle Testumgebung“](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) an grp-earlyadopter_cs_advtestenvironment@adobe.com.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) an [grp-earlyadopter_cs_advtestenvironment@adobe.com.
 
 
 ### Bringen Sie Ihren eigenen Git mit – jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
@@ -111,7 +111,7 @@ Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, sen
 
 Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, wodurch diese Funktion über Cloud Service-Umgebungen hinaus erweitert wird. Sie können **Konfigurations-Pipelines** verwenden, um Einstellungen wie Traffic-Filterregeln und gegebenenfalls Konfigurationen der Web Application Firewall (WAF) zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
 
-![Edge Delivery-Pipeline hinzufügen in der Dropdown-Liste „Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline von der **Programmübersicht**&#x200B;Seite,**Pipelines**.*
+![Edge Delivery-Pipeline hinzufügen in der Dropdown-Liste „Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline von der **Programmübersicht**Seite,**Pipelines**.*
 
 ![Dialogfeld &quot;Edge Delivery-Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Dialogfeld &quot;Edge Delivery-Pipeline hinzufügen“*
 
