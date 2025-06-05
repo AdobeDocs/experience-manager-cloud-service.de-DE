@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu veralteten und entfernten Funktione
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
+source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
 workflow-type: tm+mt
-source-wordcount: '3028'
+source-wordcount: '3039'
 ht-degree: 71%
 
 ---
@@ -428,41 +428,65 @@ Diese Regeln werden während des Build-Prozesses von Cloud Manager validiert. Im
 
 Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementing/deploying/configuring-osgi.md).
 
-### Veraltete OSGi-Eigenschaften (die nicht mehr geändert werden können) {#deprecated-osgi-properties}
+### Veraltete OSGi-Eigenschaften (bald unveränderlich) {#deprecated-unmodifiable-osgi-properties}
 
-Einige Eigenschaften für die folgenden OSGi-Komponenten-PIDs können nicht mehr geändert werden. Dies wird in dem unten beschriebenen Zeitraum erzwungen.
+Eigenschaften für die folgenden OSGi-Komponenten-PIDs sind veraltet und die Verwendung sollte zum Erzwingungsdatum enden.
 
 | **OSGi-Komponenten-ID** | **Unveränderliche Eigenschaften** | **Einstellung** | **Durchsetzung** |
 |---|---|---|---|
 | **`org.apache.sling.commons.log.LogManager`** | alle | 4/24/25 | 8/31/25 (Konfiguration im Juni ignoriert) |
 | **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25 (Konfiguration im Juni ignoriert) |
-| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | alle | 2024 | 8/31/25 |
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | alle | 2024 |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | alle | 2024 | 8/31/25 |
-| **`org.apache.felix.http (Factory)`** | alle | 2024 | 8/31/25 |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | alle | 2024 | 8/31/25 |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | alle | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | alle | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.impl`** | alle | 6/3/25 | 8/31/25 |
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | alle | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | alle | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | alle | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | alle | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | alle | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | alle | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | alle | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.factory`** | alle | 6/3/25 | 8/31/25 |
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | alle | 6/3/25 | 8/31/25 |
 
-<!--
-### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+### Unveränderliche OSGi-Eigenschaften {#unmodifiable-osgi-properties}
 
-Properties for the following OSGi component PIDs cannot be modified, as described below.
--->
+Eigenschaften für die folgenden OSGi-Komponenten-PIDs können nicht geändert werden, wie unten beschrieben.
+
+| **OSGi-Komponenten-ID** | **Unveränderliche Eigenschaften** |
+|---|---|
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | alle |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | alle |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | alle |
+| **`org.apache.sling.feature.apiregions.impl`** | alle |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | alle |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | alle |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | alle |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | alle |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | alle |
+| **`org.apache.sling.feature.apiregions.factory`** | alle |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | alle |
+
+
+### Zukünftige erzwungene OSGi-Eigenschaftsbeschränkungen {#future-restrictions-osgi-properties}
+
+In Zukunft wird Adobe die folgenden Einschränkungen für OSGi-Eigenschaften durchsetzen, sodass die Verwendung gestoppt werden sollte.
+
+| OSGi-Komponenten-PID |   | Erforderlich | Typ | Einschränkung (falls zutreffend) |
+|---|---|---|---|---|
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | Zeichenfolge |   |
+|   | `smtp.port` | Ja | Ganzzahl | Entweder „465“, „587“ oder „25“ |
+|   | `smtp.user` |   | Zeichenfolge |   |
+|   | `smtp.password` |   | Zeichenfolge |   |
+|   | `from.address` |   | Zeichenfolge |   |
+|   | `smtp.ssl` |   | Zeichenfolge |   |
+|   | `smtp.starttls` |   | Boolesch |   |
+|   | `smtp.requiretls` |   | Boolesch |   |
+|   | `debug.email` |   | Boolesch |   |
+|   | `oauth.flow` |   | Boolesch |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | Ja | Zeichenfolge | Entweder „INFO“, „DEBUG“ oder &quot;TRACE&quot; |
+|   | `org.apache.sling.commons.log.names` |   | Zeichenfolgen-Array |   |
+|   | `org.apache.sling.commons.log.additiv` |   | Boolesch |   |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | Nein | Zeichenfolge[] |   |
+|   | `externalizer.encodedpath` | Nein | Boolesch |   |
+|   | `externalizer.host` | Nein | Zeichenfolge |   |
+|   | `externalizer.contextpath` | Nein | Zeichenfolge |   |
 
 ### OSGi-Eigenschaftsbeschränkungen {#restrictions-osgi-properties}
 
-Die Werte einiger OSGi-Eigenschaften sind auf die unten beschriebenen Regeln beschränkt.
+Die Werte dieser OSGi-Eigenschaften sind auf die unten beschriebenen Regeln beschränkt.
 
 | OSGi-Komponenten-PID |   | Erforderlich | Typ | Einschränkung (falls zutreffend) |
 |---|---|---|---|---|
@@ -504,19 +528,6 @@ Die Werte einiger OSGi-Eigenschaften sind auf die unten beschriebenen Regeln bes
 |   | `org.apache.felix.http.session.uniqueid` |   | Boolesch |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | Ja | Ganzzahl | >= 2048 |
 |   | `org.apache.sling.scripting.cache.additional_extensions` | Ja | Zeichenfolgen-Array | Muss „js“ enthalten |
-| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | Zeichenfolge |   |
-|   | `smtp.port` | Ja | Ganzzahl | Entweder „465“, „587“ oder „25“ |
-|   | `smtp.user` |   | Zeichenfolge |   |
-|   | `smtp.password` |   | Zeichenfolge |   |
-|   | `from.address` |   | Zeichenfolge |   |
-|   | `smtp.ssl` |   | Zeichenfolge |   |
-|   | `smtp.starttls` |   | Boolesch |   |
-|   | `smtp.requiretls` |   | Boolesch |   |
-|   | `debug.email` |   | Boolesch |   |
-|   | `oauth.flow` |   | Boolesch |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | Ja | Zeichenfolge | Entweder „INFO“, „DEBUG“ oder &quot;TRACE&quot; |
-|   | `org.apache.sling.commons.log.names` |   | Zeichenfolgen-Array |   |
-|   | `org.apache.sling.commons.log.additiv` |   | Boolesch |   |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | Nein | Zeichenfolge |   |
 |   | `request.log.outputtype` | Nein | Zeichenfolge |   |
 |   | `request.log.entry.format` | Nein | Zeichenfolge |   |
@@ -531,10 +542,6 @@ Die Werte einiger OSGi-Eigenschaften sind auf die unten beschriebenen Regeln bes
 |   | `servletresolver.defaultExtensions` | Nein | Zeichenfolge |   |
 |   | `servletresolver.mountProviders` | Nein | Boolesch |   |
 |   | `servletresolver.scriptUser` | Nein | Zeichenfolge | veraltet, nicht mehr verwenden |
-| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | Nein | Zeichenfolge[] |   |
-|   | `externalizer.encodedpath` | Nein | Boolesch |   |
-|   | `externalizer.host` | Nein | Zeichenfolge |   |
-|   | `externalizer.contextpath` | Nein | Zeichenfolge |   |
 
 ## Aktualisierung von Java Runtime auf Version 21 {#java-runtime-update-21}
 
