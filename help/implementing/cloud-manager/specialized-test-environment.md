@@ -4,7 +4,8 @@ description: Erfahren Sie, wie spezialisierte Testumgebungen in Cloud Manager ei
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
-source-git-commit: 408e472470244c619e09ef58691b1cff7cdd0188
+exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
+source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 34%
@@ -15,7 +16,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adoption-Programm verfügbar. Informationen zur Anmeldung als frühzeitiger Anwender finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adoption-Programm verfügbar. Informationen zur Anmeldung als frühzeitiger Anwender finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Die spezialisierte Testumgebung (oder DevXL) ist eine neue Art von Cloud Manager-Umgebung, die Sie erstellen können. Es wurde entwickelt, um erweiterte Anwendungsfälle wie Benutzerakzeptanztests (UAT) und Leistungsvalidierung zu unterstützen. Im Gegensatz zu herkömmlichen Entwicklungs-, Rapid Development- oder Staging-Umgebungen werden DevXL-Umgebungen außerhalb der Produktionsbereitstellungs-Pipeline ausgeführt. Auf diese Weise bieten sie Ihnen mehr Flexibilität bei gleichzeitiger strikter Isolation, um Störungen in Produktions-Workflows zu vermeiden.
 
@@ -63,7 +64,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
 
 1. Gehen Sie im Dialogfeld **Umgebung hinzufügen** wie folgt vor:
 
-   * Klicken Sie [**Spezialisierte Testumgebung**](#environment-types).
+   * Klicken Sie **Spezialisierte Testumgebung**.
    * Geben Sie einen **Namen** für die Umgebung an. Der Umgebungsname kann nach der Erstellung der Umgebung nicht mehr geändert werden.
    * (Optional) Geben Sie eine **Beschreibung** für die Umgebung an.
    * Wählen Sie eine **Primäre** aus der Dropdown-Liste aus. Nach der Erstellung ist die primäre Region der DevXL-Umgebung (z. B. *USA (Westen der USA)* gesperrt und kann nicht geändert werden.
@@ -73,4 +74,3 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
 1. Klicken Sie auf **Speichern**.
 
    Die Seite **Überblick** zeigt nun auf der Karte **Umgebungen** Ihre neue Umgebung an. Sie können jetzt Pipelines für Ihre neue Umgebung einrichten.
-
