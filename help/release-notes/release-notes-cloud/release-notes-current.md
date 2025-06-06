@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f01e5f505074ea32f313ba781ddb4e026cd47888
+source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 32%
@@ -41,7 +41,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -231,7 +231,7 @@ Um jedoch die Repository-Leistung zu optimieren, ab **Ende Juni 2025** wird die 
 
 * Sie können diese Standardwerte durch OSGi-Konfigurationsüberschreibungen ändern.
 
-Weitere Informationen finden Sie im Artikel [Wartungsaufgaben](/help/operations/maintenance.md#default).
+Weitere Informationen finden Sie im Artikel [Wartungsaufgaben](/help/operations/maintenance.md#defaults).
 
 ### Edge Computing (Alpha-Programm) {#edge-computing}
 
@@ -245,13 +245,13 @@ Häufige Anwendungsszenarien umfassen:
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer APIs als Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
-Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
+Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
 
 ### CDN-Konfiguration für Edge Delivery Services (Beta-Programm) {#cdn-eds-beta}
 
 Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#configurations) beschrieben.
 
-Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details [&#128279;](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an aemcs-cdn-config-adopter@adobe.com.
+Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details ](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com.
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 
