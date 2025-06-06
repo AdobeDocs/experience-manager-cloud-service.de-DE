@@ -3,23 +3,27 @@ title: JSON-LD-Metadaten
 description: Erfahren Sie, wie Sie die JSON+LD-Funktion in AEM CIF aktivieren und überprüfen.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 5fef97e5c0963529aac6d210cb17326864e6d248
+exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
+source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '451'
 ht-degree: 5%
 
 ---
-
 
 # JSON-LD-Metadaten {#json-ld}
 
 In diesem Handbuch wird erläutert, wie Sie die JSON+LD-Funktion in AEM CIF aktivieren und überprüfen.
 
+>[!NOTE]
+>
+> Diese Funktion ist experimentell.
+
 ## Aktivieren von JSON+LD in CIF Configuration {#enabling}
 
 Standardmäßig ist das Kontrollkästchen **JSON+LD aktivieren** in der CIF-Konfiguration nicht sichtbar. Um diese Funktion zu aktivieren, muss das Projekt die erforderliche OSGi-Konfiguration enthalten, mit der das Kontrollkästchen angezeigt werden kann. Diese Konfiguration ermöglicht es Benutzenden, die JSON+LD-Skriptunterstützung auf Produktseiten umzuschalten.
-Um das Kontrollkästchen **JSON+LD aktivieren** in der CIF-Konfiguration verfügbar zu machen, fügen Sie die folgende OSGi-Konfiguration zu Ihrem Projekt hinzu: &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+Um das Kontrollkästchen **JSON+LD aktivieren** in der CIF-Konfiguration verfügbar zu machen, fügen Sie die folgende OSGi-Konfiguration zu Ihrem Projekt hinzu: `
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
 Weitere Informationen zum Hinzufügen dieser Konfiguration finden Sie unter [Hinzufügen der Konfiguration für JSON-LD](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) im öffentlichen aem-cif-guides-venia-Repository.
 
 Sobald diese Konfiguration hinzugefügt und bereitgestellt wurde, wird das Kontrollkästchen in den CIF-Konfigurationseinstellungen angezeigt. Im Folgenden finden Sie die Schritte zum Aktivieren von **JSON+LD**:
