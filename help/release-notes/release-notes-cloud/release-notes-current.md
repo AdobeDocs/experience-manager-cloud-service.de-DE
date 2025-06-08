@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
+source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2062'
 ht-degree: 32%
 
 ---
@@ -41,7 +41,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets lässt sich nativ mit Figma integrieren, sodass Designer direkt von d
 
 **Attributbasierte Zugriffssteuerung (ABAC)**
 
-Mit Content Hub können Sie jetzt regelbasierte Einschränkungen für den Zugriff auf Assets anwenden. Asset-Berechtigungen stellen die Governance sicher und stellen außerdem sicher, dass nur die relevanten Assets für Benutzer zugänglich sind.
+Mit [Content Hub können Sie jetzt regelbasierte Einschränkungen für den Zugriff auf Assets anwenden](/help/assets/attribute-based-access-control.md). Asset-Berechtigungen stellen die Governance sicher und stellen außerdem sicher, dass nur die relevanten Assets für Benutzer zugänglich sind.
 
 Die Regeln für die Asset-Einschränkung basieren auf Metadaten. Wenn die in der Regel definierten Bedingungen mit den Asset-Metadaten übereinstimmen, wird das Asset den Benutzergruppen angezeigt.
 
@@ -78,21 +78,21 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 
 **UI-Branding**
 
-Content Hub ermöglicht es Administratoren jetzt, die Benutzeroberfläche mit markenspezifischen Elementen anzupassen, einschließlich Bannerbildern, Bannertiteln und Textkörpern sowie Primär- und Sekundärfarben. Diese Verbesserungen tragen dazu bei, Markenkonsistenz zu gewährleisten, das Onboarding von Benutzern zu vereinfachen und Vertrauen aufzubauen.
+Content Hub ermöglicht es Administratoren jetzt[ die Benutzeroberfläche mit markenspezifischen Elementen anzupassen](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) einschließlich Bannerbildern, Bannertiteln und Textkörpern sowie Primär- und Sekundärfarben. Diese Verbesserungen tragen dazu bei, Markenkonsistenz zu gewährleisten, das Onboarding von Benutzern zu vereinfachen und Vertrauen aufzubauen.
 
 ![UI-Branding](/help/assets/assets/content-hub-ui-branding.png)
 
 **Freigeben von öffentlichen Links**
 
-Content Hub unterstützt jetzt das Generieren von Freigabe-Links, damit externe Benutzende ohne Programmzugriff Asset-Metadaten anzeigen oder Assets herunterladen können.
+Content Hub unterstützt jetzt [Generieren von freigabefähigen Links, damit externe ](/help/assets/share-assets-content-hub.md##share-assets) ohne Programmzugriff Asset-Metadaten anzeigen oder Assets herunterladen können.
 
 ![UI-Branding](/help/assets/assets/public-and-private-link.png)
 
 **Governance von Sammlungen**
 
-Mit Content Hub können Sie jetzt den Zugriff auf Sammlungen während der Erstellung steuern, sodass nur autorisierte Benutzende gruppierte Assets anzeigen oder verwalten können. Sie sorgt für verbesserte Sicherheit, bessere Zusammenarbeit, organisiertes Asset-Management und vereinfachte Governance.
+Mit Content Hub können Sie jetzt [den Zugriff auf Sammlungen während der Erstellung steuern, sodass nur autorisierte Benutzende gruppierte Assets anzeigen oder verwalten können](/help/assets/collections-content-hub.md##create-collections). Sie sorgt für verbesserte Sicherheit, bessere Zusammenarbeit, organisiertes Asset-Management und vereinfachte Governance.
 
-![Governance von Sammlungen](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ Mit Content Hub können Sie jetzt den Zugriff auf Sammlungen während der Erstel
 
 **Mehrere Assets als ZIP-Datei herunterladen**
 
-Mit Content Hub können Sie die ausgewählten Assets und ihre Ausgabedarstellungen jetzt auch in einer ZIP-Datei herunterladen und nicht als separate Dateien, was die Dateiverwaltung für Sie vereinfacht.
+Mit Content Hub können Sie jetzt auch [die ausgewählten Assets und ihre Ausgabedarstellungen in einer ZIP-Datei herunterladen](/help/assets/download-assets-content-hub.md#download-asset-renditions) und nicht als separate Dateien, die die Dateiverwaltung für Sie vereinfachen.
 
 **Dynamic Media-Ausgabedarstellungen in Content Hub**
 
-Greifen Sie direkt über die Content Hub-Benutzeroberfläche auf alle Dynamic Media-Vorgabenausgabedarstellungen und smarten Zuschnitte zum Herunterladen zu.
+Greifen Sie direkt über [ Benutzeroberfläche von Content Hub auf alle Dynamic Media-Vorgabendarstellungen und smarten Zuschnitte zum Herunterladen zu](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
 &#x200B;![Dynamic Media-Ausgabedarstellungen](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Greifen Sie direkt über die Content Hub-Benutzeroberfläche auf alle Dynamic Me
 
 **Native Dynamic Media-Integration mit AJO B2C&#x200B;**
 
-Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C, sodass Marketing-Experten AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates und extrem personalisierte Erlebnisse bereitstellen können.
+[Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), sodass Marketing-Experten AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates und extrem personalisierte Erlebnisse bereitstellen können.
 
-&#x200B;![Dynamic Media-Ausgabedarstellungen](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -245,13 +245,13 @@ Häufige Anwendungsszenarien umfassen:
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer APIs als Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
-Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
+Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
 
 ### CDN-Konfiguration für Edge Delivery Services (Beta-Programm) {#cdn-eds-beta}
 
 Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#configurations) beschrieben.
 
-Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details [&#128279;](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an aemcs-cdn-config-adopter@adobe.com.
+Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details ](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com.
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 
