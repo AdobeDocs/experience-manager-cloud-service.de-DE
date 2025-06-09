@@ -61,7 +61,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtig
 
 In diesem Abschnitt erfahren Sie, wie Sie bei der Einrichtung vorgehen müssen, um AzCopy als Vorabkopieschritt mit dem Content Transfer Tool zu verwenden und Inhalte zu AEM as a Cloud Service migrieren:
 
-### 0. Bestimmen der Gesamtgröße aller Inhalte im Datenspeicher {#determine-total-size}
+### &#x200B;0. Bestimmen der Gesamtgröße aller Inhalte im Datenspeicher {#determine-total-size}
 
 Es ist aus zwei Gründen wichtig, die Gesamtgröße des Datenspeichers zu bestimmen:
 
@@ -88,7 +88,7 @@ Auf der Registerkarte zu den Metriken des Containers können Sie die Gesamtgrö�
 * Für Windows verwenden Sie den Befehl „dir“ im Datenspeicherverzeichnis, um dessen Größe zu erhalten:
   `dir /a/s [location of datastore]`.
 
-### 1. Installieren von AzCopy {#install-azcopy}
+### &#x200B;1. Installieren von AzCopy {#install-azcopy}
 
 [AzCopy](https://learn.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) ist ein von Microsoft® bereitgestelltes Befehlszeilen-Tool, das in der Quellinstanz verfügbar sein muss, um diese Funktion zu aktivieren.
 
@@ -97,7 +97,7 @@ Es empfiehlt sich also, die Linux® x86-64-Binärdatei von der [Seite mit der Az
 >[!IMPORTANT]
 >Notieren Sie sich, wo Sie die Binärdatei gespeichert haben, da Sie in einem späteren Schritt den vollständigen Speicherpfad benötigen.
 
-### 2. Installieren einer Version des Content Transfer Tool (CTT) mit AzCopy-Unterstützung {#install-ctt-azcopy-support}
+### &#x200B;2. Installieren einer Version des Content Transfer Tool (CTT) mit AzCopy-Unterstützung {#install-ctt-azcopy-support}
 
 >[!IMPORTANT]
 >Es sollte die neueste Version von CTT verwendet werden.
@@ -106,7 +106,7 @@ AzCopy-Unterstützung für Amazon S3, Azure Blob Storage und Dateidatenspeicher 
 Sie können die neueste Version von CTT vom [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-Portal herunterladen.
 Beachten Sie, dass nur die Versionen 2.0.0 und höher unterstützt werden und es ratsam ist, die neueste Version zu verwenden.
 
-### 3. Konfigurieren der Datei „azcopy.config“ {#configure-azcopy-config-file}
+### &#x200B;3. Konfigurieren der Datei „azcopy.config“ {#configure-azcopy-config-file}
 
 Erstellen Sie eine neue Datei mit dem Namen `azcopy.config` in der AEM-Quellinstanz unter `crx-quickstart/cloud-migration`.
 
@@ -156,13 +156,13 @@ Die Eigenschaft „azCopyPath“ muss den vollständigen Pfad des Speicherorts e
 
 Wenn die Eigenschaft `repository.home` in „azcopy.config“ fehlt, wird der standardmäßige Datenspeicherort `/mnt/crx/author/crx-quickstart/repository/datastore` verwendet, um eine Vorabkopie durchzuführen.
 
-### 4. Extrahieren mit AzCopy {#extracting-azcopy}
+### &#x200B;4. Extrahieren mit AzCopy {#extracting-azcopy}
 
 Mit der obigen Konfigurationsdatei wird die AzCopy-Vorabkopierphase als Teil aller nachfolgenden Extraktionen ausgeführt. Um die Ausführung zu verhindern, können Sie diese Datei umbenennen oder entfernen.
 
 >[!NOTE]
 >Wenn AzCopy nicht richtig konfiguriert ist, wird folgende Meldung in den Protokollen angezeigt:
->`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Starten Sie eine Extraktion über die CTT-Benutzeroberfläche. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) und [Extraktionsvorgang](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
@@ -201,7 +201,7 @@ Blobs, die vor Auftreten des Fehlers kopiert wurden, werden von AzCopy bei nachf
 Wenn AzCopy für „dataStore“ der Quelldatei benutzt wird, sollten Meldungen wie diese in den Protokollen angezeigt werden, die darauf hinweisen, dass Ordner verarbeitet werden:
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
-### 5. Aufnehmen mit AzCopy {#ingesting-azcopy}
+### &#x200B;5. Aufnehmen mit AzCopy {#ingesting-azcopy}
 
 Unter [Aufnehmen von Inhalten in das Ziel](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) finden Sie allgemeine Informationen zum Aufnehmen von Inhalten in das Ziel über das Dialogfeld „Neue Aufnahme“ in Cloud Acceleration Manager (CAM), darunter Anweisungen zum Verwenden von AzCopy (Vorabkopie).
 
