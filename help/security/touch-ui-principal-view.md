@@ -3,13 +3,13 @@ title: Prinzipalansicht für die Berechtigungsverwaltung
 description: Erfahren Sie mehr über die neue Touch-Benutzeroberfläche, die die Berechtigungsverwaltung erleichtert.
 feature: Security
 role: Admin
-source-git-commit: 66ec051a2412fdbfb18dec5b79c6d5d5ca496216
-workflow-type: tm+mt
+exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
+source-git-commit: bdc5249a7a48224007c1ab697343245001e03168
+workflow-type: ht
 source-wordcount: '1111'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
-
 
 # Prinzipalansicht für die Berechtigungsverwaltung {#principal-view-for-permissions-management}
 
@@ -25,7 +25,7 @@ Die Berechtigungsverwaltung, die auf der neuen Benutzeroberfläche basiert, wird
 
 Die neue Ansicht erleichtert die Anzeige aller Berechtigungen und Einschränkungen für einen bestimmten Prinzipal auf allen Pfaden, auf denen Berechtigungen explizit gewährt wurden. Dadurch entfällt die Notwendigkeit,
 
-CRXDE zum Verwalten erweiterter Berechtigungen und Einschränkungen zu verwenden. Er wurde in derselben Ansicht konsolidiert.
+CRXDE zum Verwalten erweiterter Berechtigungen und Einschränkungen zu verwenden. Dies wurde in derselben Ansicht konsolidiert.
 
 ![Berechtigungsansicht](assets/permissionView.png)
 
@@ -115,51 +115,51 @@ Zugriffssteuerungseinträge können gelöscht werden, um alle Berechtigungen zu 
 
 ## Berechtigungsansicht {#permissions-view}
 
-### Berechtigungsansicht für Touch-optimierte Benutzeroberfläche {#touch-ui-permisions-view}
+### Berechtigungsansicht auf Touch-optimierter Benutzeroberfläche {#touch-ui-permisions-view}
 
-Admins benötigen eine granularere Kontrolle und Einsicht in die Berechtigungszuweisungen auf Knotenebene, um die Sicherheit und Verwaltung in AEM zu verbessern. Zuvor war nur eine prinzipalbasierte Ansicht der Berechtigungen verfügbar, wodurch die Möglichkeit eingeschränkt wurde zu sehen, wie ACLs auf bestimmte Knoten oder gefilterte Ansichten angewendet werden. Der neue Knoten und die gefilterte Ansicht bieten eine detaillierte und kontextualisierte Perspektive auf Berechtigungszuweisungen, die eine bessere Verwaltung und Prüfung von Sicherheitskonfigurationen ermöglicht. Diese Funktion verbessert die administrative Aufsicht und vereinfacht die Berechtigungsverwaltung, verbessert die Sicherheit, reduziert Fehlkonfigurationen und optimiert die Benutzerzugriffssteuerung in AEM.
+Administrierende (Admins) benötigen eine präzisere Steuerung und Sichtbarkeit für Berechtigungszuweisungen auf Knotenebene, um die Sicherheit und Verwaltung in AEM zu verbessern. Zuvor war nur eine prinzipalbasierte Ansicht der Berechtigungen verfügbar, was es nur bedingt möglich machte, zu sehen, wie ACLs auf bestimmte Knoten oder gefilterte Ansichten angewendet werden. Die neue Knoten- und gefilterte Ansicht bietet eine detaillierte und kontextualisierte Perspektive auf Berechtigungszuweisungen und ermöglicht die bessere Verwaltung und besseres Auditing von Sicherheitskonfigurationen. Diese Funktion verbessert die administrative Überwachung und vereinfacht die Berechtigungsverwaltung, verbessert die Sicherheit, reduziert Fehlkonfigurationen und optimiert die Benutzerzugriffssteuerungen in AEM.
 
 
-Sie können auf die Ansicht der Touch-optimierten Benutzeroberfläche für Berechtigungen zugreifen, indem Sie auf **Tools - Sicherheit - Berechtigungen** klicken, wie unten dargestellt:
+Sie können auf die Berechtigungsansicht auf der Touch-optimierten Benutzeroberfläche zugreifen, indem Sie auf **Tools – Sicherheit – Berechtigungen** klicken, wie unten dargestellt:
 
-![Karte für die Touch-optimierte Benutzeroberfläche](assets/image-2025-2-5_15-37-59.png)
+![Karte „Berechtigungen“ auf der Touch-optimierten Benutzeroberfläche](assets/image-2025-2-5_15-37-59.png)
 
-Sobald Sie die Berechtigungsansicht gestartet haben, können Sie je nach Ihren bevorzugten Anzeigeoptionen in **&#x200B;**&#x200B;oberen rechten Ecke **Knotenansicht“ oder** Gefilterte Ansicht“ klicken.
+Sobald Sie die Berechtigungsansicht gestartet haben, können Sie je nach Ihren bevorzugten Anzeigeoptionen auf **Knotenansicht** oder **Gefilterte Ansicht** in der rechten oberen Ecke klicken.
 
 #### Knotenansicht
 
-In dieser Ansicht werden ACLs für jeden einzelnen Knoten (Pfad) angezeigt. Es enthält Informationen zu folgenden Themen:
+In dieser Ansicht werden ACLs für jeden einzelnen Knoten (Pfad) angezeigt. Hier finden Sie Informationen zu folgenden Themen:
 
 Lokale ACLs für den ausgewählten Knoten.
-Effektive ACLs, einschließlich ACLs, die auf jeden übergeordneten Knoten bis zum Stamm (/) angewendet werden.
+Effektive ACLs, einschließlich ACLs, die auf jeden übergeordneten Knoten bis zum Stamm (&quot;/&quot;) angewendet werden.
 Benutzende haben die Möglichkeit, ACLs hinzuzufügen, zu entfernen oder zu aktualisieren. Wenn auf einen Pfad geklickt wird, werden im linken Bereich die untergeordneten Elemente angezeigt, während auf der rechten Seite eine Tabellenansicht aller mit diesem Pfad verknüpften ACLs angezeigt wird.
 
 ![Knotenansicht](assets/image-2025-2-5_15-26-2.png)
 
 #### Gefilterte Ansicht
 
-In dieser Ansicht können Benutzer effizient nach Berechtigungen für einen angegebenen Pfad und Prinzipale suchen. In dieser Ansicht können Benutzende den Typ der Berechtigungen, die einer Gruppe von Prinzipalen für den ausgewählten Pfad gewährt werden, einfach bestimmen.
+In dieser Ansicht können Benutzende effizient nach Berechtigungen für einen angegebenen Pfad und Prinzipale suchen. In dieser Ansicht können Benutzende einfach die Art der Berechtigungen bestimmen, die einer Gruppe von Prinzipalen für den ausgewählten Pfad gewährt werden.
 Darüber hinaus bietet die gefilterte Ansicht Einblicke in effektive ACLs. Es werden die mit dem übergeordneten Knoten des ausgewählten Pfads verknüpften ACLs angezeigt, wobei der ausgewählte Prinzipal und alle allgemeinen Prinzipale berücksichtigt werden.
 
 ![Filteransicht](assets/FilteredView.png)
 
-### Die Repository-Browser-Berechtigungsansicht {#the-repository-browser-permissions-view}
+### Berechtigungsansicht im Repository-Browser {#the-repository-browser-permissions-view}
 
-Der Zugriff auf die Berechtigungsansicht ist auch über den [Repository-Browser](/help/implementing/developing/tools/repository-browser.md) möglich.
+Sie können auch über den [Repository-Browser](/help/implementing/developing/tools/repository-browser.md) auf die Berechtigungsansicht zugreifen.
 
 Sie können wie folgt darauf zugreifen:
 
-1. Öffnen Sie die Entwicklerkonsole, klicken Sie auf die Registerkarte **Repository-**) und dann auf **Repository-Browser öffnen**
+1. Öffnen Sie die Developer Console, klicken Sie auf die Registerkarte **Repository-Browser** und dann auf die Option **Repository-Browser öffnen**.
 
    ![Starten des Repository-Browsers](assets/image-2025-2-5_15-38-47.png)
 
-1. Klicken Sie im Repository-Browser auf die Registerkarte **Berechtigungen** .
+1. Klicken Sie im Repository-Browser auf die Registerkarte **Berechtigungen**.
 
    ![Registerkarte „Berechtigungen“](assets/image-2025-2-5_15-29-33.png)
 
-**Hinweis**: Zum Anzeigen der Berechtigungen sind Administratorrechte erforderlich. Führen Sie die hier [ Schritte aus](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) um auf die Berechtigungen zuzugreifen.
+**Hinweis**: Sie benötigen Administratorrechte zum Anzeigen der Berechtigungen. Befolgen Sie die [hier](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) erwähnten Schritte, um auf die Berechtigungen zuzugreifen.
 
-## Berechtigungskombinationen in der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
+## Berechtigungskombinationen auf der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
 
 In der neuen Benutzeroberfläche für Berechtigungen wird explizit der grundlegende Satz von Berechtigungen, anstelle vordefinierter Kombinationen verwendet, die nicht immer exakt die gewährten Berechtigungen wiedergegeben.
 
@@ -168,7 +168,7 @@ Das führte in der Vergangenheit zu Unklarheit, was genau konfiguriert wird. In 
 <table>
  <tbody>
   <tr>
-   <th>Berechtigungskombinationen in der klassischen Benutzeroberfläche</th>
+   <th>Berechtigungskombinationen auf der klassischen Benutzeroberfläche</th>
    <th>Berechtigungen der Berechtigungs-Benutzeroberfläche</th>
   </tr>
   <tr>
