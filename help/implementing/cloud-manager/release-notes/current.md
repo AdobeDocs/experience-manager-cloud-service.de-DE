@@ -67,7 +67,7 @@ Siehe [Hinzufügen einer speziellen Testumgebung](/help/implementing/cloud-manag
 
 ![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezielle Testumgebung“](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) an [grp-earlyadopter_cs_advtestenvironment@adobe.com.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) an grp-earlyadopter_cs_advtestenvironment@adobe.com.
 
 
 ### Bring Your Own Git (BYOG) - jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
@@ -104,14 +104,14 @@ Verwenden Sie **Zugriffstoken verwalten** in Cloud Manager, um Zugriffstoken in 
 
 Siehe [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-](mailto:grp-cloudmanager_byog@adobe.com) an [Grp-CloudManager_BYOG@adobe.com.
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-cloudmanager_byog@adobe.com) an Grp-CloudManager_BYOG@adobe.com.
 
 
 ### Hinzufügen einer Konfigurations-Pipeline für Edge Delivery {#add-eds-pipeline}
 
 Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, sodass diese Funktion über Cloud-Service-Umgebungen hinaus genutzt werden kann. Sie können **Konfigurations-Pipelines** verwenden, um ggf. Einstellungen wie Traffic-Filterregeln und Web Application Firewall (WAF)-Konfigurationen zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
 
-![Edge Delivery-Pipeline hinzufügen in der Dropdown-Liste „Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline von der **Programmübersicht**Seite,**Pipelines**.*
+![Edge Delivery-Pipeline hinzufügen in der Dropdown-Liste „Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline von der **Programmübersicht**&#x200B;Seite,**Pipelines**.*
 
 ![Dialogfeld &quot;Edge Delivery-Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Dialogfeld &quot;Edge Delivery-Pipeline hinzufügen“*
 
