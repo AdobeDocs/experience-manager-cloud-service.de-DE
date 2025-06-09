@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Fähigkeit „Erweiterbarkeit der Benut
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
-workflow-type: ht
-source-wordcount: '542'
-ht-degree: 100%
+source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 85%
 
 ---
 
@@ -85,3 +85,11 @@ Sie müssen die folgenden Anforderungen erfüllen, um die Erweiterbarkeitskompon
 1. Richten Sie Ihre lokale Umgebung ein und erstellen Sie Ihre erste Benutzeroberflächenerweiterung, um den Prozess der Entwicklung von Benutzeroberflächenerweiterungen in der [!DNL Assets View] aus erster Hand zu erleben. Weitere Informationen finden Sie unter [Schrittweise Entwicklung der Erweiterung für die AEM Assets-Ansicht](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/).
 1. Richten Sie Ihre Anwendung mithilfe der AIO-CLI ein, um die grundlegende Erweiterungsstruktur und den erforderlichen Code zu generieren. Weitere Informationen finden Sie unter [Code-Generierung für die [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
 1. Testen Sie Ihre Erweiterungen lokal, um sicherzustellen, dass sie vor der Bereitstellung wie erwartet funktionieren. Führen Sie Ihre Erweiterung in einer vollständig isolierten Umgebung oder mit teilweiser Isolierung aus und verbinden Sie Ihre Erweiterung zum Testen mit der in der Produktion eingesetzten [!DNL AEM Assets View]. Weitere Informationen finden Sie unter [Fehlerbehebung – Erweiterbarkeit der [!DNL AEM Assets View] ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
+
+## Anpassen der Schnellaktionen und Aktionsleiste in der Assets-Ansicht {#customize-quick-actions-and-actions-bar}
+
+Sie können die Aktionen anpassen, die angezeigt werden, wenn Sie ein oder mehrere Assets (Aktionsleiste) in der Assets-Ansicht auswählen. Mit der Assets-Ansicht können Sie auch die Aktionen anpassen, die angezeigt werden, wenn Sie auf Weitere Optionen (…) auf der Asset-Karte klicken. Weitere Informationen finden Sie unter [Durchsuchen-](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Benutzerdefinierte Dialogfelder in der Assets-Ansicht öffnen {#open-custom-dialogs-assets-view}
+
+Die Assets-Ansicht bietet außerdem die Möglichkeit, benutzerdefinierte Dialogfelder mit Text Ihrer Wahl zu öffnen. Sie können dem Text auch Links hinzufügen. Weitere Informationen finden Sie unter [Modale API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
