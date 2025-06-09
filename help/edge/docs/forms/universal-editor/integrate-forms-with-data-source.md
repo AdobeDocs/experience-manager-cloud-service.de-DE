@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ Durch das Integrieren von Formularen mit einem Formulardatenmodell (FDM) im univ
 
 ## Überlegungen
 
-* Wenn das Symbol **Datenquellen** in der Benutzeroberfläche des universellen Editors oder die Eigenschaft **Bindungsverweis** im rechten Eigenschaftenbereich nicht angezeigt wird, aktivieren Sie die Erweiterung **Datenquelle** in der **Extension Manager**.
+* Wenn das Symbol **Datenquellen** in der Benutzeroberfläche des universellen Editors oder die Eigenschaft **Bindungsverweis** im Panel „Eigenschaften“ auf der rechten Seite nicht angezeigt wird, aktivieren Sie die Erweiterung **Datenquelle** im **Extension Manager**.
 
-  ![Erweiterungs-Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) Sie im Artikel Extension Manager-Feature-Highlights .
+  Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 * Der Vorbefüllungsdienst für Formulare im universellen Editor wird derzeit nicht unterstützt.
 
@@ -133,23 +133,23 @@ Wenn Sie ein nicht schemabasiertes Formular erstellen, wird keine Datenquelle ko
 
    ![Erstellen eines Formulars](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-Sie können einem Formularfeld Datenbindung hinzufügen, indem Sie es aus der Eigenschaft &quot;**&quot;**. Fügen wir beispielsweise einen Datenbindungsverweis auf das Textfeld **id** hinzu, das bereits im Formular vorhanden ist.
-Um die Datenbindung für das Formularfeld aus der Datenquellenstruktur auszuwählen, führen Sie die folgenden Schritte aus:
+Sie können die Datenbindung in einem Formularfeld hinzufügen, indem Sie sie über die Eigenschaft **Bindungsverweis** auswählen. Fügen wir beispielsweise einen Datenbindungsverweis zum Textfeld **ID** hinzu, das bereits im Formular vorhanden ist.
+Führen Sie die folgenden Schritte aus, um die Datenbindung für das Formularfeld über die Datenquellstruktur auszuwählen:
 
 1. Öffnen Sie die Eigenschaften des Formularfelds, für das Sie den Datenbindungsverweis hinzufügen möchten.
-1. Wechseln Sie zur Eigenschaft **Bindungsverweis** und klicken Sie auf das Symbol **Durchsuchen**.
+1. Navigieren Sie zur Eigenschaft **Bindungsverweis** und klicken Sie auf das Symbol **Durchsuchen**.
 
    ![Manuelles Hinzufügen der Datenbindung für ein Formularfeld](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-1. Wählen Sie die Datenbindungsreferenz aus der Datenquellenstruktur im **Bindungsverweis auswählen** .
+1. Wählen Sie den Datenbindungsverweis aus der Datenquellenstruktur im Assistenten **Bindungsverweis auswählen** aus.
 
-   ![Datenbindungsverweis auswählen](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+   ![Auswählen des Datenbindungsverweises](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
 1. Wählen Sie das Datenelement in der Datenquellenstruktur aus, das Sie an das Formularfeld binden möchten, und klicken Sie auf **Auswählen**.
 
-   ![Datenelement auswählen](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+   ![Auswählen des Datenelements](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 
-   Das Formularfeld wird an das Datenelement gebunden und in der Eigenschaft &quot;**&quot;**.
+   Das Formularfeld wird an das Datenelement gebunden und in der Eigenschaft **Bindungsverweis** angezeigt.
 
    ![Automatische Datenbindung](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 

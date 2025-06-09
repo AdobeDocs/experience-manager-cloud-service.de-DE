@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1367'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -111,23 +111,23 @@ So können Sie schnell nach Assets suchen, die mit Content Hub in der AEM as a C
 
 1. Sortieren Sie Assets mit dem Feld **[!UICONTROL Änderungsdatum]**.
 
-## Warum wird die Option Mit Adobe Express bearbeiten auf meiner Asset-Karte nicht angezeigt, um Assets neu mischen zu können, um neue Varianten zu erstellen? {#edit-using-express-not-available}
+## Warum wird auf meiner Asset-Karte nicht die Option zum Bearbeiten mit Adobe Express angezeigt, damit ich Assets zum Erstellen neuer Varianten remixen kann? {#edit-using-express-not-available}
 
-Um die Option **Bearbeiten mit Adobe Express** auf der Asset-Karte anzuzeigen, muss der Benutzer über eine Berechtigung für Adobe Express Enterprise oder Teams verfügen (siehe [Pläne](https://www.adobe.com/express/pricing)) sowie über Berechtigungen für [Content Hub-Benutzer mit Berechtigungen zum Remixen von Assets in neuen Varianten](#onboard-content-hub-users-add-assets).
+Um die Option zum **Bearbeiten mit Adobe Express** auf der Asset-Karte anzuzeigen, müssen Benutzende zusätzlich zu den Berechtigungen für [Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets in neue Varianten](#onboard-content-hub-users-add-assets) über Adobe Express Enterprise- oder Teams-Berechtigungen verfügen (siehe [Abos](https://www.adobe.com/de/express/pricing)). 
 
 Es gibt einige Konfigurationen dazu, wie Benutzende [!DNL Content Hub] und [!DNL Adobe Express] zugewiesen werden:
 
-1. Das Unternehmen verfügt über eine [Assets Ultimate](/help/assets/assets-ultimate-overview.md)- oder [Assets Prime](/help/assets/assets-prime.md)-Lizenz, und der Benutzer wird einem der Experience Manager-Profile in Admin Console zugewiesen, die die Berechtigung für Adobe Express enthalten (Mitarbeiter oder Hauptbenutzer). Die Integration funktioniert ohne zusätzliche Konfiguration.
+1. Die Organisation verfügt über eine [Assets Ultimate](/help/assets/assets-ultimate-overview.md)- oder [Assets Prime](/help/assets/assets-prime.md)-Lizenz, und Benutzende werden einem der Experience Manager-Profile in Admin Console zugewiesen, die die Adobe Express-Berechtigung enthalten (mitwirkende Person oder Power-User). Die Integration funktioniert ohne zusätzliche Konfiguration.
 
-1. [!DNL Adobe Express] wird im selben [!DNL Adobe Admin Console] bereitgestellt wie [!DNL Experience Manager Assets] mit [!DNL Content Hub]. Die Integration funktioniert ohne zusätzliche Konfiguration.
+1. [!DNL Adobe Express] wird in derselben [!DNL Adobe Admin Console] bereitgestellt wie [!DNL Experience Manager Assets] mit [!DNL Content Hub]. Die Integration funktioniert ohne zusätzliche Konfiguration.
 
-1. [!DNL Adobe Express] wird in einer anderen [!DNL Adobe Admin Console] bereitgestellt als [!DNL Experience Manager Assets] mit [!DNL Content Hub]. In diesem Fall kann der [!DNL Assets] die Integration konfigurieren (siehe [Dokumentation](/help/assets/connect-assets-with-creative-cloud.md)), damit die Integration funktioniert.
+1. [!DNL Adobe Express] wird in einer anderen [!DNL Adobe Admin Console] bereitgestellt als [!DNL Experience Manager Assets] mit [!DNL Content Hub]. In diesem Fall kann die bzw. der [!DNL Assets]-Admin die Integration so konfigurieren (siehe [Dokumentation](/help/assets/connect-assets-with-creative-cloud.md)), dass die Integration funktioniert.
 
    >[!NOTE]
    >
-   >Der Benutzer, der Express- und Assets-Produktprofilen in zwei Admin Consoles zugewiesen ist, muss dieselbe E-Mail-Adresse haben und ein Unternehmenskonto (**oder Schule)**, nicht das **persönliche**-Konto. Ideal ist es, beide Admin Consoles als **Federated ID** mit einer Vertrauensbeziehung zwischen ihnen einzurichten, damit der Benutzer über ein nahtloses Single-Sign-on-Erlebnis verfügt. Einige der Express-Pläne (z. B. Express-Teams) unterstützen Federated ID/Single Sign-on nicht.
+   >Die Person, die Express- und Assets-Produktprofilen in zwei Admin Consoles zugewiesen ist, muss über dieselbe E-Mail-Adresse verfügen und ein Unternehmenskonto vom Typ **Unternehmen oder Schule** statt des **persönlichen** Kontos verwenden. In der idealen Konfiguration sind beide Admin Consoles als **Federated ID** mit einer vertrauenswürdigen Beziehung zwischen ihnen eingerichtet, damit Benutzende von einem nahtlosen Single Sign-on-Erlebnis profitieren. Einige der Express-Abos (z. B. Express Teams) unterstützen Federated ID/Single Sign-on nicht.
 
-Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass der zugewiesene Benutzer mindestens über [!UICONTROL Kann bearbeiten]-Berechtigungen für die Assets-Autorenumgebung verfügt, die Content Hub unterstützt, mindestens für die Ordnerhierarchie **[!UICONTROL # /content/dam/hydrated-assets/]**, in der Content Hub-Benutzer Inhalte speichern können, die sie mit Express erstellt haben. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder einer vereinfachten [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[#UICONTROL /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Kann ich Content Hub so einrichten, dass die Markenrichtlinien meiner Organisation als Link auf der Startseite angezeigt werden? {#content-hub-setup-brand-guidelines}
 

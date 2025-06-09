@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
 source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Aktivieren Sie zunächst bearbeitbare Vorlagen für die Konfiguration Ihrer Site
 Sobald die Konfiguration aktiviert ist, müssen Sie Vorlagen für Ihre Site zulassen.
 
 1. Verwenden Sie die **Sites**-Konsole und [wählen Sie das Stammverzeichnis Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
-1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol [&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md) **Eigenschaften** in der Symbolleiste.
+1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol ](/help/sites-cloud/authoring/sites-console/page-properties.md) [**Eigenschaften** in der Symbolleiste.
 1. Tippen oder klicken Sie auf der Registerkarte **Erweitert** des Eigenschaftsdialogs unter dem Abschnitt **Vorlageneinstellungen** auf die Schaltfläche **Hinzufügen**.
 1. Fügen Sie in dem neuen, leeren Feld, das unter **Zulässige Vorlagen** angezeigt wird, den Pfad `/conf/<site>/settings/wcm/templates/.*` hinzu.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
@@ -81,7 +81,7 @@ Schließen Sie den Assistenten wie bei jeder anderen Seite ab. Jetzt haben Sie d
 
 Seitenvorlagen definieren nur den anfänglichen Inhalt von Seiten. Seiten können dann mit dem universellen Editor vollständig bearbeitet werden.
 
-* Seiten, die aus Seitenvorlagen erstellt wurden, sind unabhängige Kopien der Vorlage.
+* Aus Seitenvorlagen erstellte Seiten sind unabhängige Kopien der Vorlage.
 * Wenn sich die Vorlage ändert, bleiben die vorhandenen Seiten, die auf dieser Vorlage basieren, unverändert.
 * Die Inhaltsautorin bzw. der Inhaltsautor kann den Inhalt der resultierenden Seite nach Bedarf ändern und aktualisieren, ohne Einschränkungen durch die Vorlage zu unterliegen.
 
@@ -89,4 +89,4 @@ Seitenvorlagen definieren nur den anfänglichen Inhalt von Seiten. Seiten könne
 
 Mit dem [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) erstellte Seiten können ebenfalls auf Vorlagen basieren. Vorlagen, die zum Erstellen von Seiten für den universellen Editor und den Seiteneditor verwendet werden, nutzen die [bearbeitbaren Vorlagen](/help/implementing/developing/components/templates.md) von AEM.
 
-Vorlagen, mit denen mit dem Seiteneditor bearbeitbare Seiten erstellt werden, nutzen alle Funktionen bearbeitbarer Vorlagen. Vorlagen, die zum Erstellen von mit dem universellen Editor bearbeitbaren Seiten verwendet werden, verwenden nur die anfängliche Inhaltsfunktion.
+Vorlagen, die zum Erstellen von mit dem Seiteneditor bearbeitbaren Seiten verwendet werden, nutzen alle Funktionen bearbeitbarer Vorlagen. Vorlagen, die zum Erstellen von mit dem universellen Editor bearbeitbaren Seiten verwendet werden, nutzen nur die Funktion für den anfänglichen Inhalt.

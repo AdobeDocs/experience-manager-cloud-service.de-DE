@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
 source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist
          * Ändern Sie die Größe der Spalte – entweder mithilfe der Aktion oder der Breitenregler
       * Ein oder mehrere Fragmente für weitere [Aktionen](#actions-selected-content-fragment) wählen
    * Das Feld [Suchen](#searching-fragments) verwenden
-   * Den [Filterbereich](#filtering-fragments) öffnen
+   * Öffnen des [Filterbereichs](#filtering-fragments)
    * In dieser Konsole stehen verschiedene [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) zur Verfügung
 
 ## Die bereitgestellten Informationen zu Ihren Inhaltsfragmenten {#information-content-fragments}
@@ -417,7 +417,7 @@ Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeige
 
 ## Filtern von Fragmenten {#filtering-fragments}
 
-Der Filterbereich bietet folgende Optionen:
+Der Panel zum Filtern bietet folgende Optionen:
 
 * eine Auswahl von Prädikaten;
    * einschließlich Inhaltsfragmentmodellen, Lokalisierung, Tags, Statusfeldern usw.

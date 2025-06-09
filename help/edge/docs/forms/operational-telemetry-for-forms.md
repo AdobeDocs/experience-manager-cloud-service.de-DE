@@ -1,23 +1,23 @@
 ---
-title: Betriebstelemetrie für Edge Delivery Services für AEM Forms as a Cloud Service
-description: Operative Telemetrie für Edge Delivery Services für AEM Forms as a Cloud Service umfasst die fortlaufende Verfolgung und Analyse von Benutzerinteraktionen mit Formularen.
+title: Betriebliche Telemetrie für Edge Delivery Services for AEM Forms as a Cloud Service
+description: Die betriebliche Telemetrie für Edge Delivery Services for AEM Forms as a Cloud Service beinhaltet das fortlaufende Tracking und die Analyse von Benutzerinteraktionen mit Formularen.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Betriebstelemetrie für Edge Delivery Services für AEM Forms as a Cloud Service
+# Betriebliche Telemetrie für Edge Delivery Services for AEM Forms as a Cloud Service
 
-Operative Telemetrie ermöglicht es Ihnen, reale Einblicke in die Interaktion von Besucherinnen und Besuchern mit Ihren Adobe Experience Manager (AEM)-Websites zu erhalten. Dieses integrierte Tool liefert wertvolle Daten, um das Benutzerverhalten zu verstehen, Leistungsprobleme zu diagnostizieren und die Effektivität von Website-Experimenten zu messen. Operative Telemetrie geht über synthetische Tests hinaus, indem Interaktionen mit der realen Verwendung erfasst werden und ein genaueres Bild der Leistung Ihrer Site bietet.
+Mit der betrieblichen Telemetrie können Sie authentische Einblicke in die Interaktion der Besuchenden mit Ihren Adobe Experience Manager(AEM)-Websites gewinnen. Dieses integrierte Tool liefert wertvolle Daten, um das Benutzerverhalten zu verstehen, Leistungsprobleme zu diagnostizieren und die Effektivität von Website-Experimenten zu messen. Die betriebliche Telemetrie geht über synthetische Tests hinaus, indem Interaktionen mit der realen Nutzung erfasst werden und ein präziseres Bild der Leistung Ihrer Site geboten wird.
 
-Die operative Telemetrie hingegen priorisiert den Datenschutz der Besucher. Es werden Stichprobenverfahren verwendet, um Daten von einer repräsentativen Untergruppe von Benutzenden zu sammeln und sicherzustellen, dass keine personenbezogenen Daten erfasst werden. Darüber hinaus wurde die operative Telemetrie im Hinblick auf die Datenminimierung entwickelt. Dabei werden nur die wesentlichen Metriken erfasst, die für die Leistungsanalyse erforderlich sind. Mit diesem Ansatz können Sie Ihre AEM-Sites optimieren und gleichzeitig das Vertrauen der Benutzenden wahren.
+Betriebliche Telemetrie priorisiert jedoch die Privatsphäre von Besuchenden. Es werden Sampling-Verfahren verwendet, um Daten von einer repräsentativen Untergruppe von Benutzenden zu sammeln und sicherzustellen, dass keine personenbezogenen Daten (PII) erfasst werden. Darüber hinaus wurde die betriebliche Telemetrie unter Berücksichtigung der Datenminimierung entwickelt und erfasst nur die wesentlichen Metriken, die für die Leistungsanalyse erforderlich sind. Mit diesem Ansatz können Sie Ihre AEM-Sites optimieren und gleichzeitig das Vertrauen der Benutzenden wahren.
 
 
 ## Voraussetzungen
@@ -26,7 +26,7 @@ Sie können das Monitoring-Dashboard für Edge Delivery Services for AEM Forms a
 
 https://data.aem.live/?ext=forms
 
-![Anmeldebildschirm für die operative Telemetrie für Edge Delivery Services für Forms](/help/edge/assets/rum-login-screen.png)
+![Anmeldebildschirm für betriebliche Telemetrie für Edge Delivery Services for Forms](/help/edge/assets/rum-login-screen.png)
 
 Geben Sie Folgendes ein, um sich auf dem Monitoring-Dashboard für Edge Delivery Services for AEM Forms as a Cloud Service anzumelden:
 
@@ -40,7 +40,7 @@ Nachdem Sie die URL und die Domain-Schlüssel auf dem Anmeldebildschirm eingegeb
 
 Die folgende Abbildung zeigt das Dashboard für Edge Delivery Services for AEM Forms as a Cloud Service:
 
-![Betriebsfernmessung Forms Dashboard](/help/edge/assets/rum-forms-dashboard.png)
+![Dashboard der betrieblichen Telemetrie für Forms](/help/edge/assets/rum-forms-dashboard.png)
 
 ### Verschiedene Schlüsselmetriken des Dashboards für Formulare {#different-metrics-operational-telemetry-dashboard-forms}
 

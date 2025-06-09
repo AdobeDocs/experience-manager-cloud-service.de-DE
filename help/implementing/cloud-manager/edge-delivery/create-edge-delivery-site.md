@@ -1,19 +1,19 @@
 ---
 title: Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick
-description: Erfahren Sie, wie Sie mit einem Klick in Cloud Manager schnell eine Edge Delivery-Site erstellen können.
+description: Erfahren Sie, wie Sie mit einem Klick auf eine Schaltfläche schnell eine Edge Delivery-Site in Cloud Manager erstellen können.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 source-git-commit: 0c4ef0eb5bb7caa5cd68dac6c788b37f564e1770
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '945'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick{#about-one-click-edge-delivery-site}
 
-Die Erstellung Ihrer ersten Edge Delivery-Site mit einem Klick hilft Ihnen bei der Automatisierung des Onboarding und der Bereitstellung von Edge Delivery-Sites in Cloud Manager. Dies vereinfacht den Prozess erheblich, da Sie nur auf eine einzige Schaltfläche klicken müssen. Mit diesem einen Klick erreichen Sie, dass die erforderliche Infrastruktur bereitgestellt, eine Integration mit GitHub zur Versionskontrolle durchgeführt und Ihr Dokument- und Asset-Speicher in Google Drive konfiguriert wird.
+Das Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick wurde entwickelt, um das Onboarding und die Bereitstellung von Edge Delivery-Sites in Cloud Manager zu automatisieren. Dies vereinfacht den Prozess erheblich, da Sie nur auf eine einzige Schaltfläche klicken müssen. Mit diesem einen Klick erreichen Sie, dass die erforderliche Infrastruktur bereitgestellt, eine Integration mit GitHub zur Versionskontrolle durchgeführt und Ihr Dokument- und Asset-Speicher in Google Drive konfiguriert wird.
 
 Diese Automatisierung trägt dazu bei, den manuellen Aufwand bei der Einrichtung Ihrer ersten Site zu reduzieren. Auf diese Weise werden nicht nur nahtlose Workflows sowie Skalierbarkeit sichergestellt, sondern auch die Leistung Ihrer Teams bei der Verwaltung von Inhalten am Edge verbessert.
 
