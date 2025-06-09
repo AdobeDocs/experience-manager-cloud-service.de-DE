@@ -7,30 +7,30 @@ exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 30%
+ht-degree: 83%
 
 ---
 
 # Generative KI in AEM as a Cloud Service {#generative-ai-in-aem-as-a-cloud-service}
 
-Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service ermöglicht es Marken, leistungsstarke Erlebnisse sowohl mit der Kopier- als auch mit der Bildgenerierung in der Bearbeitungsschnittstelle zu erstellen. Mit generativer KI können Sie autonom Inhalte erstellen, die:
+Die generative KI von Adobe für Adobe Experience Manager (AEM) as a Cloud Service ermöglicht es Marken, leistungsstarke Erlebnisse sowohl mit der Generierung von Kopien als auch mit der Bildgenerierung in der Bearbeitungsschnittstelle zu erstellen. Mit generativer KI können Sie autonom Inhalte mit folgenden Eigenschaften erstellen:
 
-* Markenbewusstsein - Erstellen Sie Inhalte, die den Markenton, Stilrichtlinien und andere spezifische Anforderungen enthalten.
-* Personalisiert nach Zielgruppe - Nutzen Sie granulare Inhalten mit Einblicken in die Content-Performance, um Inhalte für jede Rolle auf allen Kanälen anzupassen.
-* Regionsspezifisch - Übersetzen Sie nicht nur und passen Sie Ihre Inhalte an regionale Präferenzen und Verhaltensmuster an.
-* Kontinuierlich optimiert - Führen Sie Experimente durch, um zu ermitteln, welche Varianten die beste Leistung erbringen, und verwenden Sie Einblicke, um zukünftige KI-generierte Inhalte zu verbessern.
+* Markenbewusstsein: Erstellen Sie Inhalte, die die Tonalität der Marke, Stilrichtlinien und andere spezifische Anforderungen enthalten.
+* Personalisiert nach Zielgruppe: Nutzen Sie granulare Erkenntnisse zur Leistung von Inhalten, um Inhalte für jede Persona auf allen Kanälen anzupassen.
+* Regionsspezifisch: Bieten Sie mehr als nur eine Übersetzung und passen Sie Ihre Inhalte an regionale Präferenzen und Verhaltensmuster an.
+* Kontinuierlich optimiert: Führen Sie Experimente durch, um zu ermitteln, welche Varianten die beste Leistung erbringen, und verwenden Sie Erkenntnisse, um zukünftige KI-generierte Inhalte zu verbessern.
 
 Generative KI wird überall in AEM verwendet:
 
 * [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  Die Funktion „Varianten generieren“ verwendet generative künstliche Intelligenz (KI), um Inhaltsvarianten basierend auf Ihren Eingaben zu erstellen. Nachdem Sie Varianten erstellt haben, können Sie die Inhalte auf Ihrer Website verwenden und ihren Erfolg mithilfe der Experimentierfunktion von Edge Delivery Services messen.
+  Die Funktion „Varianten generieren“ verwendet generative künstliche Intelligenz (KI), um Inhaltsvarianten basierend auf Ihren Eingaben zu erstellen. Nachdem Sie Varianten erstellt haben, können Sie den Inhalt auf Ihrer Website verwenden und deren Erfolg außerdem mithilfe der Funktionalität „Experimente“ von Edge Delivery Services messen.
 
-   * Und die vorherige Version [Varianten generieren](/help/generative-ai/generate-variations.md)
+   * Und die vorherige Version der Funktion [Varianten generieren](/help/generative-ai/generate-variations.md)
 
      >[!NOTE]
      >
-     >Es wird empfohlen, auf [in AEM-Editoren integrierte Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md) zuzugreifen, da die vorherige Version in Zukunft nicht mehr unterstützt wird.
+     >Es wird empfohlen, auf [die in AEM-Editoren integrierte Funktion „Varianten generieren“](/help/generative-ai/generate-variations-integrated-editor.md) zuzugreifen, da die vorherige Version in Zukunft nicht mehr unterstützt wird.
 
    * [Versionshinweise für die Funktion „Varianten generieren“](/help/generative-ai/release-notes-generate-variations.md)
 
@@ -48,7 +48,7 @@ Generative KI wird überall in AEM verwendet:
 
 ## Weiterführende Informationen {#further-information}
 
-* [Übersicht über die Adobe-KI](https://www.adobe.com/ai/overview.html)
+* [Überblick über die Adobe-KI](https://www.adobe.com/de/ai/overview.html)
 
 * [Generative KI in Experience Cloud-Produkten](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai)
 

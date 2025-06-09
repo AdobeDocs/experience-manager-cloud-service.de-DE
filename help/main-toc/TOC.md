@@ -502,7 +502,7 @@ ht-degree: 98%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-   + [Operative Telemetrie für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+   + [Betriebliche Telemetrie für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
    + [Wesentliche Änderungen in [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -1088,7 +1088,7 @@ ht-degree: 98%
          + [Globalisieren Ihres Formulars: Anleitung zur Formularübersetzung](/help/edge/docs/forms/translate-forms.md)
          + [Schützen Ihrer Formulare: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
-         + [Überwachen der Formularleistung: Leitfäden für die operative Telemetrie](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+         + [Überwachen der Formularleistung: Handbücher zur betrieblichen Telemetrie](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Edge Delivery-Ressourcen {#resources}
       + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
@@ -1245,7 +1245,7 @@ ht-degree: 98%
          + [Hinzufügen einer Edge Delivery-Site zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Einrichten der Push-Validierung für eine Edge Delivery-Site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [Konfigurieren des Source-Inhalts](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
+         + [Konfigurieren der Inhaltsquelle](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Verwalten von Edge Delivery-Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Domain-Einstellungen {#custom-domain-names}
          + [Einführung in Domain-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)

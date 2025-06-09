@@ -7,7 +7,7 @@ exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 60%
 
 In Adobe Experience Manager (AEM) as a Cloud Service umfasst die AEM OpenAPI für die Bereitstellung von Inhaltsfragmenten Folgendes:
 
-* ist eine OpenAPI, die für die Live-Bereitstellung von AEM-Inhaltsfragmenten im JSON-Format optimiert ist
+* Sie ist ein OpenAPI, das für die Live-Bereitstellung von AEM-Inhaltsfragmenten im JSON-Format optimiert ist.
 * Sie bietet eine moderne CDN-Integration, die die Invalidierung aktiver Inhalte ermöglicht.
 * Sie konzentriert sich auf die Bereitstellung von Inhalten (Leistung, Skalierbarkeit, CDN-Integration, optimierte JSON-Steuerung und -Ausgabe).
 * Sie umfasst die Möglichkeit, JSON für referenzierte Fragmente und Assets einzubinden.

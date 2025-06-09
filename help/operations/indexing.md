@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
 workflow-type: tm+mt
 source-wordcount: '2918'
-ht-degree: 72%
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 
 Beschränkungen:
 
-* Derzeit wird die Indexverwaltung auf AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt. Das bedeutet, dass alle Indexanpassungen vom Typ `lucene` sein müssen. Die `async`-Eigenschaft kann nur eine der folgenden Eigenschaften sein: `[async]`, `[async,nrt]` oder `[fulltext-async]`.
+* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt. Das bedeutet, dass alle Indexanpassungen vom Typ `lucene` sein müssen. Die Eigenschaft `async` kann nur mit Folgendem verwendet werden: `[async]`, `[async,nrt]` oder `[fulltext-async]`.
 * Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen den `damAssetLucene`-Index geschrieben wurden, können auf AEM as a Cloud Service tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für den Benutzer nicht sichtbar. Bestimmte Tools wie die `explain`-Funktion melden jedoch einen anderen Index. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie in der [Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können kundenseitig nicht direkt konfiguriert werden.
 * Es werden nur Standard-Analyzer unterstützt (d. h. die Analyzer, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 * Die Suche nach ähnlichen Funktionsvektoren (`useInSimilarity = true`) wird nicht unterstützt.
@@ -79,8 +79,8 @@ Bereiten Sie für einen vollständig angepassten Index ein neues Indexdefinition
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
-Wie in den Abschnitten Einschränkungen erwähnt, muss der `type` der angepassten Indexdefinition immer auf `lucene` festgelegt werden, auch wenn die extrahierte Indexdefinition unter Verwendung von Package Manager einen anderen Typ aufweist (z. B. `elasticsearch`).
-Die `async`-Eigenschaft muss auch geändert werden, wenn die extrahierte Indexdefinition auf `elastic-async` festgelegt ist. Für die `async` Indexdefinition muss eine der folgenden Eigenschaften festgelegt werden: `[async]`, `[async,nrt]` oder `[fulltext-async]`.
+Wie in den Abschnitten zu den Einschränkungen erwähnt, muss der `type` der angepassten Indexdefinition immer auf `lucene` festgelegt werden, auch wenn die extrahierte Indexdefinition unter Verwendung von Package Manager einen anderen Typ aufweist (z. B. `elasticsearch`).
+Die Eigenschaft `async` muss ebenfalls geändert werden, wenn die extrahierte Indexdefinition auf `elastic-async` festgelegt ist. Die Eigenschaft `async` muss für die angepasste Indexdefinition auf eine der folgenden Eigenschaften festgelegt werden: `[async]`, `[async,nrt]` oder `[fulltext-async]`.
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 

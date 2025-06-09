@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -241,7 +241,7 @@ Gehen Sie wie folgt vor, um in kürzester Zeit über eine lokale AEM-Entwicklung
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub-Projekt klonen: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie &lt;owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und &lt;repo> mit dem Repository-Namen:
+1. GitHub-Projekt klonen: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie <owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und <repo> mit dem Repository-Namen:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -273,19 +273,19 @@ Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den adaptiven 
 >[!NOTE]
 >
 >
-> Dieser Schritt gilt für Projekte, die mit dem [AEM Boilerplate XWalk](https://github.com/adobe/aem-boilerplate) erstellt wurden. Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt haben, können Sie diesen Schritt überspringen.
+> Dieser Schritt gilt für Projekte, die mit dem [AEM-Textbaustein XWalk](https://github.com/adobe/aem-boilerplate) erstellt wurden. Wenn Sie Ihr AEM Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt haben, können Sie diesen Schritt überspringen.
 
-So integrieren Sie ihn:
+Zum Integrieren:
 
-1. Navigieren Sie zum AEM Project-Repository-Ordner auf Ihrem lokalen System.
+1. Navigieren Sie zum Ordner des AEM-Projekt-Repositorys auf Ihrem lokalen System.
 
 1. Kopieren Sie die folgenden Ordner und Dateien aus dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) und fügen Sie sie in Ihr AEM-Projekt ein:
 
-   * [Formularblock](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) Ordner
+   * Ordner [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
    * Datei [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
    * Datei [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
-1. Navigieren Sie zur `/scripts/editor-support.js` in Ihrem AEM-Projekt und aktualisieren Sie sie mit der Datei [editor-support.js“ im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. Navigieren Sie zum `/models/_section.json` in Ihrem AEM-Projekt und hängen Sie „form“ und „embed-adaptive-form“ an das Komponenten-Array des `filters`-Objekts an:
+1. Navigieren Sie zur Datei `/scripts/editor-support.js` in Ihrem AEM-Projekt und aktualisieren Sie sie mit der Datei [editor-support.js im AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js).
+1. Navigieren Sie in Ihrem AEM-Projekt zu `/models/_section.json` und hängen Sie „form“ und „embed-adaptive-form“ an das Komponenten-Array des Objekts `filters` an:
 
    ```
        "filters": [
@@ -301,7 +301,7 @@ So integrieren Sie ihn:
     }]
    ```
 
-1. (Optional) Navigieren Sie zu `/.eslintignore` in Ihrem AEM-Projekt und fügen Sie die folgenden Codezeilen hinzu:
+1. (Optional) Navigieren Sie in Ihrem AEM-Projekt zu `/.eslintignore` und fügen Sie die folgenden Code-Zeilen hinzu:
 
    ```
    blocks/form/rules/formula/*
@@ -311,7 +311,7 @@ So integrieren Sie ihn:
    scripts/editor-support-rte.js
    ```
 
-1. (Optional) Navigieren Sie zu `/.eslintrc.js` in Ihrem AEM-Projekt und fügen Sie die folgenden Codezeilen im `rules` hinzu:
+1. (Optional) Navigieren Sie in Ihrem AEM-Projekt zu `/.eslintrc.js` und fügen Sie die folgenden Code-Zeilen im Objekt `rules` hinzu:
 
    ```
    'xwalk/max-cells': ['error', {
@@ -353,7 +353,7 @@ So integrieren Sie ihn:
 
    >[!NOTE]
    >
-   > Stellen Sie vor dem Pushen der Änderungen an Ihr AEM Project-Repository auf GitHub sicher, dass die `component-definition.json`-, `component-models.json`- und `component-filters.json`-Dateien, die sich auf der Stammebene des AEM-Projekts befinden, mit den formularbezogenen Objekten aktualisiert werden.
+   > Stellen Sie vor dem Pushen der Änderungen an Ihr AEM-Projekt-Repository auf GitHub sicher, dass die Dateien `component-definition.json`, `component-models.json` und `component-filters.json`, die sich auf der Stammebene des AEM-Projekts befinden, mit den formularbezogenen Objekten aktualisiert wurden.
 
 1. Bestätigen Sie diese Änderungen und übertragen Sie sie in Ihr AEM-Projekt-Repository auf GitHub.
 
@@ -363,8 +363,8 @@ Das war&#39;s! Der adaptive Formularblock ist jetzt Teil Ihres AEM-Projekts. Sie
 
 Stellen Sie einen reibungslosen Build-Prozess in GitHub sicher, indem Sie potenzielle Probleme beheben:
 
-* **Fehler beim Beheben des Modulpfads:**
-Wenn der Fehler „Der Pfad zum Modul &quot;&#39;/scripts/lib-franklin.js&quot; kann nicht aufgelöst werden“ auftritt, navigieren Sie zur Datei [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei „lib-franklin.js“ durch die Datei „aem.js“ ersetzen.
+* **Fehler beim Auflösen des Modulpfads:**
+Wenn der Fehler „Pfad zum Modul ‚/scripts/lib-franklin.js‘ kann nicht aufgelöst werden“ auftritt, navigieren Sie zur Datei [EDS-Projekt]/blocks/forms/form.js. Aktualisieren Sie die Importanweisung, indem Sie die Datei „lib-franklin.js“ durch die Datei „aem.js“ ersetzen.
 
 * **Beheben von Linting-Fehlern:**
 Sollten Sie auf Linting-Fehler stoßen, können Sie diese umgehen. Öffnen Sie die Datei [EDS Project]/package.json und ändern Sie das Skript „lint“ von `"lint": "npm run lint:js && npm run lint:css"` zu `"lint": "echo 'skipping linting for now'"`. Speichern Sie die Datei und übertragen Sie die Änderungen auf Ihr GitHub-Projekt.
