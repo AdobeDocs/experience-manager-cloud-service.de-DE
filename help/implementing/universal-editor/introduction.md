@@ -49,7 +49,7 @@ Der universelle Editor unterstützt die beiden folgenden primären AEM-Setups:
 Der universelle Editor wird unterstützt von:
 
 * AEM as a Cloud Service (Version `2023.8.13099` oder höher)
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
 * [AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
@@ -104,7 +104,7 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bes
 Beachten Sie bei der Erkundung des universellen Editors und später bei seiner Implementierung in Ihre eigenen Projekte folgende Einschränkungen:
 
 * Auf einer einzelnen Seite sollten nicht mehr als 25 AEM-Ressourcen (Inhaltsfragmente, Seiten, Experience Fragments, Assets usw.) als Instrumentierung referenziert werden.
-* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) und [AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sind die einzigen unterstützten AEM-Backends.
+* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) und [AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sind die einzigen unterstützten AEM-Backends.
 * Für AEM as a Cloud Service ist Version `2023.8.13099` oder höher erforderlich.
 * Inhaltsautorinnen und Inhaltsautoren müssen über eigene Experience Cloud-Konten verfügen.
 * Als Teil von AEM [unterstützt der universelle Editor dieselben Desktop-Browser wie AEM](/help/overview/supported-platforms.md).
