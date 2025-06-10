@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
-workflow-type: ht
-source-wordcount: '857'
-ht-degree: 100%
+source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 90%
 
 ---
 
@@ -30,10 +30,10 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
 ![Veröffentlichen von Seiten](assets/publish-menu.png)
 
 1. Tippen oder klicken Sie im universellen Editor auf das [Symbol **Veröffentlichen** auf der Symbolleiste des universellen Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#publish).
-1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder als **Vorschau** oder zum **Veröffentlichen**.
+1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder **[Vorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (falls verfügbar) oder **Veröffentlichen**.
 1. Im Abschnitt **Elemente** werden die Inhalte aufgelistet, die in der Veröffentlichung enthalten sind, einschließlich der folgenden:
    * **Neue** Elemente, die noch nicht veröffentlicht wurden.
-   * **Geänderte** Inhalte, die veröffentlicht, aber seit der letzten Veröffentlichung geändert wurden.
+   * **Geändert** Inhalt, der veröffentlicht, aber seit der letzten Veröffentlichung geändert wurde.
    * **Veröffentlichte** Inhalte, die veröffentlicht und seit dieser Veröffentlichung nicht geändert wurden.
 
    Tippen oder klicken Sie auf die Kontrollkästchen neben den Elementen, um sie nach Bedarf in die Veröffentlichung ein- bzw. von ihr auszuschließen. Tippen oder klicken Sie auf **Erweitern**, um die einzelnen Elemente anzuzeigen, die in den Elementen dieser drei Kategorien enthalten sind, und um sie einzeln ein- oder ausschließen zu können.
@@ -44,6 +44,10 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
 
 1. Tippen oder klicken Sie auf **Veröffentlichen**, um zu veröffentlichen, oder auf **Abbrechen**, um den Vorgang abzubrechen.
 
+>[!NOTE]
+>
+>Die Option In Vorschau veröffentlichen [kann deaktiviert sein](/help/implementing/universal-editor/customizing.md#publish-preview) und wird daher möglicherweise nicht im Editor angezeigt.
+
 ## Aufheben der Veröffentlichung von Inhalten mit dem universellen Editor {#unpublishing-content}
 
 Das Aufheben der Veröffentlichung von Inhalten funktioniert ähnlich wie das Veröffentlichen von Inhalten. Wenn Sie bereit sind, Inhalte aus der Veröffentlichung zu entfernen, tippen oder klicken Sie auf das Symbol mit den Auslassungspunkten auf der Symbolleiste des universellen Editors und dann auf **Veröffentlichung aufheben**.
@@ -53,28 +57,6 @@ Dann haben Sie dieselben Optionen zum Aufheben der Veröffentlichung von Inhalte
 ## Veröffentlichen und Aufheben der Veröffentlichung über die Sites-Konsole {#publishing-sites-console}
 
 Sie können Inhalte auch [über die Sites-Konsole](/help/sites-cloud/authoring/sites-console/publishing-pages.md) veröffentlichen. Dies kann nützlich sein, wenn Sie mehrere Inhaltsseiten veröffentlichen oder die Veröffentlichung bzw. das Aufheben der Veröffentlichung planen möchten.
-
-## Ähnlichkeiten mit dem Seiteneditor {#similarities}
-
-Für Benutzende des [AEM-Seiteneditors](/help/sites-cloud/authoring/page-editor/introduction.md) funktioniert der Prozess zum Veröffentlichen von Inhalten mit dem universellen Editor wie gewohnt: Bei der Veröffentlichung in AEM wird der Inhalt von der Autorenebene in die Veröffentlichungsebene repliziert.
-
-## Unterschiede {#differences}
-
-Was die Veröffentlichung mit dem universellen Editor geringfügig unterscheidet, ist nicht so sehr der Editor selbst, sondern vielmehr das externe Hosten der App, was durch den universellen Editor möglich gemacht wird.
-
-Wenn die Web-App extern gehostet wird, muss sichergestellt werden, dass Inhalte von der Autorenebene geladen werden, wenn die App von Autorinnen oder Autoren im Editor geöffnet wird, und dass sie von der Veröffentlichungsebene geladen werden, wenn Besuchende auf die App zugreifen.
-
-## Erkennen der Ebene in der App {#detecting}
-
-Um zu bestimmen, ob auf die Autoren- oder Veröffentlichungsebene zugegriffen werden soll, können Sie durch eine einfache bedingte Anweisung in der App festlegen, dass der entsprechende Autoren- oder Veröffentlichungsendpunkt ausgewählt wird, wenn festgestellt wird, dass der Endpunkt im Editor geöffnet wird.
-
-Eine andere Möglichkeit besteht darin, die App in zwei verschiedenen Umgebungen bereitzustellen, die unterschiedlich konfiguriert sind, sodass eine Umgebung ihren Inhalt von der Autorenebene und die andere Umgebung ihn von der Veröffentlichungsebene abruft. Damit Autorinnen und Autoren die veröffentlichte URL im universellen Editor öffnen können, kann ein kleines Skript erstellt werden, um die URL auf der Veröffentlichungsseite in die entsprechende URL in der Autorenumgebung zu „konvertieren“ (z. B. durch Voranstellen einer `author`-Sub-Domain), sodass die Autorinnen und Autoren automatisch umgeleitet werden.
-
-## Zusammenfassung {#summary}
-
-Ziel des universellen Editors ist es, kein bestimmtes Muster vorzuschreiben, damit die Implementierung ihre Ziele am besten vollständig entkoppelt erreichen kann und dabei alles für die Implementierung einfach und unkompliziert bleibt.
-
-Gleichermaßen stellt der universelle Editor keine Anforderungen daran, wie ein bestimmtes Projekt die Bestimmung der Ebene durchführt, von der der Inhalt bereitgestellt werden soll. Stattdessen bietet er verschiedene Möglichkeiten und ermöglicht es dem Projekt, zu bestimmen, welche Lösung für seine eigenen Anforderungen am besten geeignet ist.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

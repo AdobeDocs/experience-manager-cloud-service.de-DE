@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 88%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
@@ -32,12 +32,20 @@ Die Schaltfläche **Veröffentlichen** kann daher in einer App vollständig unte
 
 ## Deaktivieren der Veröffentlichung in der Vorschau {#publish-preview}
 
-Bestimmte Authoring-Workflows verhindern möglicherweise die Veröffentlichung im [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (falls verfügbar).
+Bestimmte Authoring-Workflows schließen möglicherweise die Veröffentlichung im [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (falls verfügbar) aus.
 
-Die **Vorschau**-Option im Veröffentlichungsfenster kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
+Die Schaltfläche **Vorschau** im Fenster „Veröffentlichen“ kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Deaktivieren von geöffneten Seiten {#open-page}
+
+Die Schaltfläche **Seite öffnen** kann in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
 ## Filtern von Komponenten {#filtering-components}

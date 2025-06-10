@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.04.04
-description: Dies sind die Versionshinweise für die Version 2025.04.04 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.05.21
+description: Dies sind die Versionshinweise für die Version 2025.05.21 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 62%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.04.04 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.05.21 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 4. April 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version 21. Mai 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ Dies sind die Versionshinweise für die Version vom 4. April 2025 des universell
 
 ## Neue Funktionen {#what-is-new}
 
-* **Dynamic Media mit OpenAPI-Unterstützung** – [Der Asset-Wähler](/help/assets/overview-asset-selector.md#repository-switcher) im universellen Editor unterstützt jetzt [Dynamic Media mit OpenAPI und Remote-Assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **IP-Zulassungsauflistung** – Der universelle Editor unterstützt jetzt [IP-Zulassungslisten.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) Sie können die IPs des universellen Editor-Dienstes mit [diesem Endpunkt](http://universal-editor-service.adobe.io/ip-ranges) überprüfen.
-
-## Andere Verbesserungen {#other-improvements}
-
-* Der Kontext beim Entfernen eines Layouts wurde korrigiert.
-* E2E-Tests wurden verbessert.
-* Es wurden Aktualisierungen der Abhängigkeiten und eine Code-Bereinigung durchgeführt.
+* **Schaltfläche „Seite öffnen“ deaktivieren** - Die Schaltfläche &quot;[ Seite öffnen“ kann jetzt deaktiviert werden.](/help/implementing/universal-editor/customizing.md#open-page)

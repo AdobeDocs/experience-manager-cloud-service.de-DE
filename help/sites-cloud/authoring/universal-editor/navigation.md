@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: ht
-source-wordcount: '1729'
-ht-degree: 100%
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+workflow-type: tm+mt
+source-wordcount: '1756'
+ht-degree: 96%
 
 ---
 
@@ -183,9 +183,9 @@ Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröff
 >
 >Verwenden Sie den Hotkey `p`, um in den Vorschaumodus zu wechseln.
 
-#### App-Vorschau öffnen {#open-app-preview}
+#### Seite öffnen {#open-page}
 
-Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie gerade bearbeiten, auf einer eigenen Browser-Registerkarte zu öffnen (unabhängig vom Editor), um eine Vorschau der Änderungen anzuzeigen.
+Wählen Sie das Symbol Seite öffnen aus, um die aktuell bearbeitete Seite in einer eigenen Browser-Registerkarte zu öffnen, ohne dass der Editor eine Vorschau des Inhalts anzeigen kann.
 
 ![App-Vorschau öffnen](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Wählen Sie das Symbol „App-Vorschau öffnen“ aus, um die Seite, die Sie ger
 >
 >Die Vorschau-URL für Ihre App [kann angepasst werden](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>Die Schaltfläche Seite öffnen [kann deaktiviert sein](/help/implementing/universal-editor/customizing.md#open-page) und wird daher möglicherweise nicht im Editor angezeigt.
+
 #### Veröffentlichen {#publish}
 
 Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am Inhalt für Ihre Leserinnen und Leser live oder zur Prüfung in einer Vorschauumgebung zu veröffentlichen.
@@ -206,6 +210,10 @@ Wählen Sie die Schaltfläche „Veröffentlichen“ aus, um die Änderungen am 
 >[!TIP]
 >
 >Weitere Informationen zur Veröffentlichung mit dem universellen Editor finden Sie im Dokument [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md).
+
+>[!NOTE]
+>
+>Die Schaltfläche Veröffentlichen [kann deaktiviert sein](/help/implementing/universal-editor/customizing.md#disable-publish) und wird daher möglicherweise nicht im Editor angezeigt.
 
 #### Auslassungspunkte {#ellipsis}
 
