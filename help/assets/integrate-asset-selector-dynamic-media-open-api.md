@@ -3,10 +3,10 @@ title: Integrieren des Asset-Wählers mit der Open API von Dynamic Media
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 99%
+source-wordcount: '949'
+ht-degree: 97%
 
 ---
 
@@ -207,8 +207,12 @@ Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie 
 * **G**: Auswahl abbrechen
 * **H**: Einzelne oder mehrere Assets auswählen
 
+>[!NOTE]
+>
+>Ordner werden nur beim Herstellen einer Verbindung zum Autoren-Repository unterstützt, nicht aber Dynamic Media mit dem OpenAPI-Repository.
+
 >[!MORELIKETHIS]
 >
->* [Integrieren des Asset-Wählers mit verschiedenen Anwendungen](/help/assets/integrate-asset-selector.md)
+>* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
 >* [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
 >* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
