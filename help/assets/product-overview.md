@@ -2,9 +2,9 @@
 title: Überblick über Content Hub
 description: Erfahren Sie mehr über Content Hub, seine wichtigsten Vorteile, den Zugriff darauf und das Feedback zu den in Content Hub verfügbaren Optionen.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: cc6c227a566c4d4fd8c9a20d1bb39020974f494f
+source-git-commit: 038c1765fc27f71ce0c3046db4a9942d0e255235
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '755'
 ht-degree: 97%
 
 ---
@@ -57,7 +57,7 @@ Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für d
 
 >[!IMPORTANT]
 >
->[Assets Ultimate](/help/assets/assets-ultimate-overview.md) und Assets as a Cloud Service umfassen 250 Content Hub-Benutzer. [Assets Prime](/help/assets/assets-prime.md) umfasst 50 Content Hub-Benutzer.
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md) und Assets as a Cloud Service umfassen 250 Content Hub Limited-Benutzer. [Assets Prime](/help/assets/assets-prime.md) umfasst 50 Benutzer von Content Hub Limited.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
