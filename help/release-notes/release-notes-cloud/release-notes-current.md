@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
+source-git-commit: 628d254ee130d436f0ac1728ab464d24db583b81
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 32%
+source-wordcount: '2074'
+ht-degree: 31%
 
 ---
 
@@ -41,7 +41,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,9 +55,9 @@ AEM Assets verwendet jetzt [KI zum automatischen Generieren von Metadaten, einsc
 
 **Integration mit Figma**
 
-AEM Assets lässt sich nativ mit Figma integrieren, sodass Designer direkt von der Figma-Benutzeroberfläche aus auf die in AEM Assets gespeicherten Assets zugreifen können. Sie können in AEM Assets verwaltete Inhalte in der Figma-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte im AEM Assets-Repository speichern.
+AEM Assets lässt sich nativ mit Figma integrieren, sodass Designer direkt von der Figma-Benutzeroberfläche aus auf die in AEM Assets gespeicherten Assets zugreifen können. Sie können in AEM Assets verwaltete Inhalte in der Figma-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte im AEM Assets-Repository speichern. Um auf den AEM Assets Connector zuzugreifen, der auf der Figma Community-Seite verfügbar ist, klicken Sie [hier](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
-![Integration mit Figma](/help/assets/assets/figma-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
 
 ### Neue Funktionen in Content Hub {#new-features-content-hub}
@@ -112,7 +112,7 @@ Greifen Sie direkt über [ Benutzeroberfläche von Content Hub auf alle Dynamic 
 
 **Native Dynamic Media-Integration mit AJO B2C&#x200B;**
 
-[Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/combine/aem-dynamic), sodass Marketing-Experten AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates und extrem personalisierte Erlebnisse bereitstellen können.
+[Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), sodass Marketing-Experten AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates und extrem personalisierte Erlebnisse bereitstellen können.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
@@ -245,13 +245,13 @@ Häufige Anwendungsszenarien umfassen:
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer APIs als Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
-Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
+Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
 
 ### CDN-Konfiguration für Edge Delivery Services (Beta-Programm) {#cdn-eds-beta}
 
 Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#configurations) beschrieben.
 
-Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details [&#128279;](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an aemcs-cdn-config-adopter@adobe.com.
+Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details ](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com.
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 
