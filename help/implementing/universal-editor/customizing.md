@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 94%
+source-wordcount: '429'
+ht-degree: 84%
 
 ---
 
@@ -47,6 +47,18 @@ Die Schaltfläche **Seite öffnen** kann in einer App vollständig unterdrückt 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
+
+## Schaltfläche „Duplizieren“ deaktivieren {#duplicate-button}
+
+Bestimmte Authoring-Workflows müssen möglicherweise die Möglichkeit des Inhaltsautors einschränken, Komponenten zu duplizieren. Sie können das Symbol [Duplizieren](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) deaktivieren, indem Sie die folgenden Metadaten hinzufügen.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Ändern des Endpunkts {#custom-endpoint}
+
+Wenn Sie nicht den von Adobe gehosteten Service „Universeller Editor“, sondern Ihre eigene gehostete Version verwenden möchten, können Sie dies in einem Meta-Tag festlegen. AEM Weitere Informationen finden Sie [ Dokument „Erste Schritte mit dem universellen Editor in ](/help/implementing/universal-editor/getting-started.md##configuration-settings)&quot;.
 
 ## Filtern von Komponenten {#filtering-components}
 
