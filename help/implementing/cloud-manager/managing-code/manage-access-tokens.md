@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie Zugriffstoken anzeigen, bearbeiten und lösch
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
+source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '420'
 ht-degree: 14%
 
 ---
-
 
 # Verwalten von Zugriffstoken für externe Repositorys {#manage-access-tokens}
 
@@ -37,15 +37,15 @@ Siehe auch [Hinzufügen externer Repositorys in Cloud Manager](/help/implementin
 
 1. Im Dialogfeld **Zugriffstoken verwalten**:
    * Alle Zugriffstoken werden aufgelistet.
-   * Sie können **&#x200B;**&#x200B;Zugriffstoken bearbeiten.
+   * Sie können **** Zugriffstoken bearbeiten.
    * Sie **nur** Zugriffstoken (löschen), die *nicht verwendet*. Wenn ein Token verwendet wird, ist die Schaltfläche ![Gliederungssymbol löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) deaktiviert.
 
 ## Bearbeiten eines Zugriffstokens {#edit-access-tokens}
 
 1. Klicken Sie **Dialogfeld** Zugriffs-Token verwalten“ rechts neben einem Token-Namen auf ![Symbol „Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. Aktualisieren Sie **Dialogfeld „Zugriffs** Token bearbeiten“ im Textfeld **Token** den Token-Namen.
+1. Aktualisieren Sie **Dialogfeld** Zugriffs-Token bearbeiten“ den **Token-Name** oder den **Zugriffs-Token**-Wert oder beides.
 
-   Das Zugriffstoken-Geheimnis selbst kann nicht bearbeitet werden.
+   Wenn das **Zugriffs-Token** derzeit verwendet wird, werden Sie in einer Benachrichtigung darauf hingewiesen, dass alle zugehörigen Repositorys nach der Aktualisierung automatisch erneut validiert werden.
 
    ![Dialogfeld „Zugriffstoken bearbeiten“](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
