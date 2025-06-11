@@ -64,7 +64,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
 >abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/327075/?quality=12&amp;learn=on&amp;captions=ger&captions=ger" text=" Siehe Demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=ger" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service migrieren:
@@ -101,7 +101,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    >[!NOTE]
    >
-   >Der Name muss denselben Konventionen wie bei einem AEM-Knoten entsprechen, d. h., er darf keines der folgenden Zeichen enthalten: . / : [ ] | * &lt; > ^ ? { } % # &grave;&grave; oder ungewöhnliche Symbole oder Emojis.
+   >Der Name muss denselben Konventionen wie bei einem AEM-Knoten entsprechen, d. h., er darf keines der folgenden Zeichen enthalten: . / : [ ] | * &lt; > ^ ? { } % # `` oder ungewöhnliche Symbole oder Emojis.
 
 1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Klicken Sie auf Drei-Punkte-Symbol (**…**), um die Dropdown-Liste zu öffnen, und wählen Sie **Extraktionsschlüssel kopieren** aus. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
 
@@ -148,7 +148,6 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
       >Mit der CTT-Version (3.0.24) wurden neue Funktionen in das Content Transfer Tool aufgenommen, die das Ein- und Ausschließen von Pfaden optimieren. Zuvor mussten Pfade einzeln ausgewählt werden, was mühsam und zeitaufwändig war. Jetzt können Benutzer Pfade direkt über die Benutzeroberfläche einbeziehen oder eine CSV-Datei entsprechend ihren Anforderungen hochladen.  Die CSV-Datei darf nur einen Pfad pro Zeile und keine Kommas enthalten.
 
    1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl. Benutzende können nur eine Option zum Einfügen von Pfaden auswählen: entweder über die Benutzeroberfläche oder durch Hochladen einer CSV-Datei.
-
       >[!IMPORTANT]
       >Die folgenden Pfade sind beim Erstellen eines Migrationssatzes eingeschränkt:
       >* `/apps`
