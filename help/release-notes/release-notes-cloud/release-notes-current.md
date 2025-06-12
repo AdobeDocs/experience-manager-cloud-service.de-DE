@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2077'
 ht-degree: 31%
 
 ---
@@ -41,7 +41,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -112,9 +112,9 @@ Greifen Sie direkt über [ Benutzeroberfläche von Content Hub auf alle Dynamic 
 
 **Native Dynamic Media-Integration mit AJO B2C&#x200B;**
 
-[Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/combine/aem-dynamic), sodass Marketing-Experten AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates und extrem personalisierte Erlebnisse bereitstellen können.
+[Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), sodass Marketing-Experten AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates und extrem personalisierte Erlebnisse bereitstellen können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463791/?learn=on&enablevpops=&autoplay=true&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ Bitte alle nachgelagerten Prozesse überprüfen und aktualisieren, die auf benut
 
 ### Standardbereinigung älterer Versionen und Auditprotokolle {#mt-defaults}
 
-Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben* in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, es sei denn, sie werden explizit über die entsprechenden OSGi-Eigenschaften konfiguriert.
+Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben“ für Inhaltsversionen* Auditprotokolle standardmäßig deaktiviert, sodass keine Daten entfernt werden, es sei denn, diese sind explizit konfiguriert.
 
 Um jedoch die Repository-Leistung zu optimieren, ab **Ende Juni 2025** wird die Bereinigung standardmäßig aktiviert, wobei die folgenden Richtlinien befolgt werden:
 
@@ -245,13 +245,13 @@ Häufige Anwendungsszenarien umfassen:
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer APIs als Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
-Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
+Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
 
 ### CDN-Konfiguration für Edge Delivery Services (Beta-Programm) {#cdn-eds-beta}
 
 Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#configurations) beschrieben.
 
-Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details [&#128279;](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an aemcs-cdn-config-adopter@adobe.com.
+Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfragetransformationen und mehr. Wenden Sie sich mit den Details ](mailto:aemcs-cdn-config-adopter@adobe.com) Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com.
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 
