@@ -74,7 +74,7 @@ Smart-Tags werden in AEM Assets mithilfe des folgenden Workflows implementiert:
 
 ## Vorbereiten eines Assets für vorkonfiguriertes Smart-Tagging
 
-Wenn Sie [Assets hochladen](add-assets.md#upload-assets), um als [!DNL Cloud Service] zu [!DNL Adobe Experience Manager], werden die hochgeladenen Assets verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden den Assets automatisch unter [!UICONTROL Smart-Tags“ ]. Asset-Microservices verwenden [!DNL Adobe Sensei], um diese Smart-Tags zu erstellen.
+Wenn Sie [Assets hochladen](add-assets.md#upload-assets), um als [!DNL Cloud Service] zu [!DNL Adobe Experience Manager], werden die hochgeladenen Assets verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden den Assets automatisch unter [!UICONTROL Smart-Tags“ &#x200B;]. Asset-Microservices verwenden [!DNL Adobe Sensei], um diese Smart-Tags zu erstellen.
 
 ![Smart-Tags werden Videos hinzugefügt und auf der Registerkarte „Allgemein“ der Asset-Eigenschaften angezeigt.](assets/smart-tags-added-to-videos.png)
 
@@ -188,7 +188,7 @@ Die Suchergebnisse, die allen Suchbegriffen in Metadatenfeldern entsprechen, wer
 Da das automatische Tagging von Assets parallel zu anderen Asset-Verarbeitungsaufgaben wie der Erstellung von Miniaturen und der Extraktion von Metadaten ausgeführt wird, kann es sich zeitaufwendig gestalten. Um die Asset-Verarbeitung zu beschleunigen, können Sie das Smart-Tagging beim Hochladen auf Ordnerebene deaktivieren. So deaktivieren Sie die automatisierte Smart-Tags-Generierung für Assets, die in einen bestimmten Ordner hochgeladen wurden:
 
 1. Wechseln Sie zur Registerkarte [!UICONTROL Asset-Verarbeitung] im Ordner [!UICONTROL Eigenschaften].
-1. Im [!UICONTROL  „Smart-Tags für ]&quot; ist beispielsweise standardmäßig die Option [!UICONTROL Vererbt] ausgewählt und das Smart-Tag „Video“ aktiviert.
+1. Im [!UICONTROL &#x200B; „Smart-Tags für &#x200B;]&quot; ist beispielsweise standardmäßig die Option [!UICONTROL Vererbt] ausgewählt und das Smart-Tag „Video“ aktiviert.
 
    Wenn die Option [!UICONTROL Übernommen] ausgewählt ist, wird auch der Pfad des übernommenen Ordners angezeigt, zusammen mit der Information, ob die Option auf oder [!UICONTROL Aktiviert] oder [!UICONTROL Deaktiviert] festgelegt ist.
 
