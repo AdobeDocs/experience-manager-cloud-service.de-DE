@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '6242'
+source-wordcount: '6239'
 ht-degree: 98%
 
 ---
@@ -1201,14 +1201,14 @@ ht-degree: 98%
          + [Projekt-Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
-      + [Spezialisierte Testumgebungen (Early Adopter)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [Spezialisierte Testumgebungen (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Verwalten von Code {#managing-code}
          + [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Hinzufügen eines Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Hinzufügen eines privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Hinzufügen eines externen Repositorys (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [Verwalten von Zugriffstoken externer Repositorys (Early Adopter)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Externes Repository hinzufügen (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Verwalten von Zugriffstoken externer Repositorys (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

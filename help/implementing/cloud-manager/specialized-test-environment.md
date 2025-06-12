@@ -3,9 +3,9 @@ title: Hinzufügen einer speziellen Testumgebung
 description: Erfahren Sie, wie spezialisierte Testumgebungen in Cloud Manager einen dedizierten Raum für die Validierung von Funktionen unter produktionsnahen Bedingungen bieten, der sich ideal für Belastungstests und erweiterte Prüfungen vor der Bereitstellung eignet.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
+badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 34%
@@ -16,7 +16,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adoption-Programm verfügbar. Informationen zur Anmeldung als frühzeitiger Anwender finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>Die in diesem Artikel beschriebene Funktion ist nur über das private Beta-Programm verfügbar. Informationen zum Registrieren für die private Beta-Version finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Die spezialisierte Testumgebung (oder DevXL) ist eine neue Art von Cloud Manager-Umgebung, die Sie erstellen können. Es wurde entwickelt, um erweiterte Anwendungsfälle wie Benutzerakzeptanztests (UAT) und Leistungsvalidierung zu unterstützen. Im Gegensatz zu herkömmlichen Entwicklungs-, Rapid Development- oder Staging-Umgebungen werden DevXL-Umgebungen außerhalb der Produktionsbereitstellungs-Pipeline ausgeführt. Auf diese Weise bieten sie Ihnen mehr Flexibilität bei gleichzeitiger strikter Isolation, um Störungen in Produktions-Workflows zu vermeiden.
 

@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 95%
@@ -30,7 +30,7 @@ Benutzende mit den erforderlichen Berechtigungen können die folgenden Umgebungs
 
 >[!NOTE]
 >
->Die Funktion **Spezialisierte Testumgebung** ist derzeit nur über das Early-Adoption-Programm verfügbar. Informationen zur Anmeldung als frühzeitiger Anwender finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>Die Funktion **Spezialisierte Testumgebung** ist derzeit nur über das private Beta-Programm verfügbar. Informationen zum Registrieren für die private Beta-Version finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die im [Programm](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umgebung aktiviert sind.
 

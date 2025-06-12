@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
-workflow-type: ht
-source-wordcount: '5392'
-ht-degree: 100%
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+workflow-type: tm+mt
+source-wordcount: '5391'
+ht-degree: 99%
 
 ---
 
@@ -531,7 +531,7 @@ Weitere Informationen und Demonstrationen finden Sie im Video-Tutorial [Verwendu
 
 >[!NOTE]
 >
->Diese Funktion ist über das Early-Adopter-Programm verfügbar. Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com). Geben Sie unbedingt an, welche Git-Plattform Sie verwenden möchten und ob Sie sich in einer privaten/öffentlichen oder einer Unternehmens-Repository-Struktur befinden.
+>Diese Funktion ist über das Beta-Programm verfügbar. Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com). Geben Sie unbedingt an, welche Git-Plattform Sie verwenden möchten und ob Sie sich in einer privaten/öffentlichen oder einer Unternehmens-Repository-Struktur befinden.
 
 Cloud Manager unterstützt die Bereitstellung von Code in einer RDE direkt von externen Git-Anbietern bei Verwendung der [Bring Your Own Git (BYOG)-Konfiguration](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 

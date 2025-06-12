@@ -1,5 +1,5 @@
 ---
-title: KI-Assistent in Adobe Experience Manager (eingeschränktes Beta)
+title: KI-Assistent in Adobe Experience Manager (private Betaversion)
 description: Verwenden Sie den KI-Assistenten in Adobe Experience Manager, um Antworten zu finden, Fehler zu beheben und Sites, Assets, Forms und Cloud Manager zu erkunden.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,19 +7,19 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
 
 # Über den KI-Assistenten in Adobe Experience Manager {#aem-home}
 
-Der KI-Assistent in AEM (Adobe Experience Manager) bietet eine Gesprächsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre Adobe Experience Manager-bezogenen Abfragen zu optimieren. Es hilft Ihnen, auf Produktwissen zuzugreifen, Probleme zu beheben und die in Experience League verfügbaren Informationen zu erkunden. Während des eingeschränkten Beta-Programms unterstützt der KI-Assistent Adobe Experience Manager as a Cloud Service, einschließlich Sites, Assets, Forms und Cloud Manager.
+Der KI-Assistent in AEM (Adobe Experience Manager) bietet eine Gesprächsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre Adobe Experience Manager-bezogenen Abfragen zu optimieren. Es hilft Ihnen, auf Produktwissen zuzugreifen, Probleme zu beheben und die in Experience League verfügbaren Informationen zu erkunden. Während des privaten Beta-Programms unterstützt der KI-Assistent Adobe Experience Manager as a Cloud Service, einschließlich Sites, Assets, Forms und Cloud Manager.
 
 >[!IMPORTANT]
->Sie müssen die Benutzervereinbarung gelesen und eingereicht haben, damit Adobe die KI-Assistentenfunktion aktivieren kann, damit Sie sie testen und am Beta-Programm teilnehmen können.
+>Sie müssen die Benutzervereinbarung gelesen und eingereicht haben, damit Adobe die Funktion des KI-Assistenten aktivieren kann, damit Sie sie testen und am privaten Beta-Programm teilnehmen können.
 >
 >Bei Fragen senden Sie eine E-Mail an [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse.
 
@@ -74,7 +74,7 @@ Der KI-Assistent für AEM Forms ist verfügbar unter:
 
 >[!NOTE]
 >
-> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um den Zugriff anzufordern.
+> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist im Rahmen des privaten Beta-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um den Zugriff anzufordern.
 
 Weitere Informationen zur Verwendung des KI-Assistenten für AEM Forms, einschließlich detaillierter Beispiele und Best Practices, finden Sie in der Dokumentation [KI-Assistent für AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md).
 
