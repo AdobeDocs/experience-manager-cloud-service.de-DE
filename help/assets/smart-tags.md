@@ -3,13 +3,13 @@ title: Automatisches Tagging von Assets mit [!DNL Adobe Sensei] Smart-Service
 description: Kennzeichnen Sie Assets mit einem Service für künstliche Intelligenz, der kontextbezogene und beschreibende Business-Tags anwendet.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2457'
 ht-degree: 24%
 
 ---
-
 
 # Smart-Tags für AEM Assets {#using-smart-tags}
 
@@ -74,7 +74,7 @@ Smart-Tags werden in AEM Assets mithilfe des folgenden Workflows implementiert:
 
 ## Vorbereiten eines Assets für vorkonfiguriertes Smart-Tagging
 
-Wenn Sie [Assets hochladen](add-assets.md#upload-assets), um als [!DNL Cloud Service] zu [!DNL Adobe Experience Manager], werden die hochgeladenen Assets verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden den Assets automatisch unter [!UICONTROL Smart-Tags“ &#x200B;]. Asset-Microservices verwenden [!DNL Adobe Sensei], um diese Smart-Tags zu erstellen.
+Wenn Sie [Assets hochladen](add-assets.md#upload-assets), um als [!DNL Cloud Service] zu [!DNL Adobe Experience Manager], werden die hochgeladenen Assets verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden den Assets automatisch unter [!UICONTROL Smart-Tags“ ]. Asset-Microservices verwenden [!DNL Adobe Sensei], um diese Smart-Tags zu erstellen.
 
 ![Smart-Tags werden Videos hinzugefügt und auf der Registerkarte „Allgemein“ der Asset-Eigenschaften angezeigt.](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets ohne Tags in DAM {#smart-tag-existing-assets}
 
-Die vorhandenen oder älteren Assets in DAM werden nicht automatisch mit Smart-Tags versehen. Sie müssen Assets [erneut ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=de#adjusting-load), um Smart-Tags für sie zu generieren. Navigieren Sie nach Abschluss des Vorgangs zur [!UICONTROL Eigenschaften] eines beliebigen Assets im Ordner. Die automatisch hinzugefügten Tags werden auf der Registerkarte [!UICONTROL Allgemein] im Abschnitt [!UICONTROL Smart-Tags] angezeigt. Diese angewendeten Smart-Tags werden in absteigender Reihenfolge des [Konfidenzwerts) ](#confidence-score).
+Die vorhandenen oder älteren Assets in DAM werden nicht automatisch mit Smart-Tags versehen. Sie müssen Assets [erneut ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load), um Smart-Tags für sie zu generieren. Navigieren Sie nach Abschluss des Vorgangs zur [!UICONTROL Eigenschaften] eines beliebigen Assets im Ordner. Die automatisch hinzugefügten Tags werden auf der Registerkarte [!UICONTROL Allgemein] im Abschnitt [!UICONTROL Smart-Tags] angezeigt. Diese angewendeten Smart-Tags werden in absteigender Reihenfolge des [Konfidenzwerts) ](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -188,7 +188,7 @@ Die Suchergebnisse, die allen Suchbegriffen in Metadatenfeldern entsprechen, wer
 Da das automatische Tagging von Assets parallel zu anderen Asset-Verarbeitungsaufgaben wie der Erstellung von Miniaturen und der Extraktion von Metadaten ausgeführt wird, kann es sich zeitaufwendig gestalten. Um die Asset-Verarbeitung zu beschleunigen, können Sie das Smart-Tagging beim Hochladen auf Ordnerebene deaktivieren. So deaktivieren Sie die automatisierte Smart-Tags-Generierung für Assets, die in einen bestimmten Ordner hochgeladen wurden:
 
 1. Wechseln Sie zur Registerkarte [!UICONTROL Asset-Verarbeitung] im Ordner [!UICONTROL Eigenschaften].
-1. Im [!UICONTROL &#x200B; „Smart-Tags für &#x200B;]&quot; ist beispielsweise standardmäßig die Option [!UICONTROL Vererbt] ausgewählt und das Smart-Tag „Video“ aktiviert.
+1. Im [!UICONTROL  „Smart-Tags für ]&quot; ist beispielsweise standardmäßig die Option [!UICONTROL Vererbt] ausgewählt und das Smart-Tag „Video“ aktiviert.
 
    Wenn die Option [!UICONTROL Übernommen] ausgewählt ist, wird auch der Pfad des übernommenen Ordners angezeigt, zusammen mit der Information, ob die Option auf oder [!UICONTROL Aktiviert] oder [!UICONTROL Deaktiviert] festgelegt ist.
 
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## Verbessern der Inhaltssuche mit KI-generierten Smart-Tags {#ai-smart-tags}
+## Verbessern der Inhaltssuche mit KI-generierten Metadaten {#ai-smart-tags}
 
 Anstatt sich auf die manuelle Eingabe zu verlassen, weist KI digitalen Assets automatisch beschreibende Tags zu. Diese KI-generierten Tags verbessern die Metadatenqualität und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung manueller Tags, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher. Wenn das Asset beispielsweise ein Bild ist, kann KI Objekte, Szenen, Emotionen oder sogar Markenlogos darin identifizieren und relevante Tags wie „Sonnenuntergang“, „Strand“, „Urlaub“ oder „Lächeln“ generieren. KI-generierte Inhalte können die Suche nach Assets verbessern, indem sie sowohl semantische als auch lexikalische Suchtechniken nutzen. Weitere Informationen finden [Assets durchsuchen](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![Optimierte Smart-Tags](assets/enhanced-smart-tags1.png)
 
-### Verwenden von KI-generierten Smart-Tags {#using-ai-generated-smart-tags}
+### Wie werden KI-generierte Metadaten aktiviert? {#enable-ai-generated-metadata}
+
+So aktivieren Sie KI-generierte Metadaten:
+
+* Die mindestens erforderliche AEM-Release-Version ist `20626`.
+
+* Sie müssen eine GenAI Rider-Vereinbarung unterzeichnen. Weitere Informationen erhalten Sie vom Adobe-Support.
+
+  >[!IMPORTANT]
+  >
+  > Der von KI generierte Titel eines Assets wird nur dann auf der Asset-Karte angezeigt, wenn Sie den Asset-Titel nicht definiert haben. Der von Ihnen angegebene Asset-Titel wird nicht überschrieben.
+
+### Verwenden von KI-generierten Metadaten {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Sc
 
 1. Warten Sie, bis das neu hochgeladene Asset verarbeitet wurde. Navigieren Sie anschließend zu den Asset-Eigenschaften.
 
-1. Wechseln Sie **[!UICONTROL Registerkarte]** KI-generiert“. Wenn [!DNL Experience Manager] Version inkompatibel ist oder nicht aktualisiert wird, ist diese Registerkarte nicht sichtbar. Die mindestens erforderliche AEM-Release-Version ist `20626`. Die folgenden Felder sind vorhanden:
+1. Wechseln Sie **[!UICONTROL Registerkarte]** KI-generiert“. Wenn [!DNL Experience Manager] Version inkompatibel ist oder nicht aktualisiert wird, ist diese Registerkarte nicht sichtbar. Die folgenden Felder sind vorhanden:
 
    * **[!UICONTROL Erstellter Titel]:** Der Titel bietet eine klare und knappe Überschrift, die die Kernidee eines hochgeladenen Assets erfasst und es auf einen Blick leicht verständlich macht. Wenn Sie beim Hinzufügen eines Assets einen Titel angeben (in `dc:title`), wird dieser in der Ansicht zum Durchsuchen von Assets angezeigt. Wenn Sie das Feld leer lassen, wird automatisch ein von KI generierter Titel zugewiesen.
    * **[!UICONTROL Erzeugte Beschreibung]:** Die Beschreibung bietet eine kurze, aber informative Zusammenfassung dessen, worum es bei dem Asset geht, und hilft Benutzern und Suchmodulen, seine Relevanz schnell zu verstehen.

@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 86%
+source-wordcount: '2499'
+ht-degree: 84%
 
 ---
 
@@ -251,13 +251,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 Um die konfigurierten Stamm-Tags anzuzeigen, gehen Sie zur Seite mit den Asset-Details, wo die Zuordnung zwischen dem Metadatenformular und den Stamm-Tags erfolgt.
 
-## Verbessern der Inhaltssuche mit KI-generierten Smart-Tags {#ai-smart-tags}
+## Verbessern der Inhaltssuche mit KI-generierten Metadaten {#ai-smart-tags}
 
 Anstatt sich auf die manuelle Eingabe zu verlassen, weist KI digitalen Assets automatisch beschreibende Tags zu. Diese KI-generierten Tags verbessern die Metadatenqualität und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung manueller Tags, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher. Wenn das Asset beispielsweise ein Bild ist, kann KI Objekte, Szenen, Emotionen oder sogar Markenlogos darin identifizieren und relevante Tags wie „Sonnenuntergang“, „Strand“, „Urlaub“ oder „Lächeln“ generieren. KI-generierte Inhalte können die Suche nach Assets verbessern, indem sie sowohl semantische als auch lexikalische Suchtechniken nutzen. Weitere Informationen finden [Assets durchsuchen](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![Optimierte Smart-Tags](assets/enhanced-smart-tags.png)
+![KI-generierte Metadaten](/help/assets/assets/enhanced-smart-tags.png)
 
-### Verwenden von KI-generierten Smart-Tags {#using-ai-generated-smart-tags}
+### Wie werden KI-generierte Metadaten aktiviert? {#enable-ai-generated-metadata}
+
+So aktivieren Sie KI-generierte Metadaten:
+
+* Die mindestens erforderliche AEM-Release-Version ist `20626`.
+
+* Sie müssen eine GenAI Rider-Vereinbarung unterzeichnen. Weitere Informationen erhalten Sie vom Adobe-Support.
+
+  >[!IMPORTANT]
+  >
+  > Der von KI generierte Titel eines Assets wird nur dann auf der Asset-Karte angezeigt, wenn Sie den Asset-Titel nicht definiert haben. Der von Ihnen angegebene Asset-Titel wird nicht überschrieben.
+
+### Verwenden von KI-generierten Metadaten {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -270,7 +282,7 @@ Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Sc
 
 1. Warten Sie, bis das neu hochgeladene Asset verarbeitet wurde. Navigieren Sie abschließend zu den Asset-Details.
 
-1. Wechseln Sie **[!UICONTROL Registerkarte]** KI-generiert“. Wenn [!DNL Experience Manager] Version inkompatibel ist oder nicht aktualisiert wird, ist diese Registerkarte nicht sichtbar. Die mindestens erforderliche AEM-Release-Version ist `20626`. Die folgenden Felder sind vorhanden:
+1. Wechseln Sie **[!UICONTROL Registerkarte]** KI-generiert“. Wenn [!DNL Experience Manager] Version inkompatibel ist oder nicht aktualisiert wird, ist diese Registerkarte nicht sichtbar.  Die folgenden Felder sind vorhanden:
 
    * **[!UICONTROL Erstellter Titel]:** Der Titel bietet eine klare und knappe Überschrift, die die Kernidee eines hochgeladenen Assets erfasst und es auf einen Blick leicht verständlich macht. Wenn Sie beim Hinzufügen eines Assets einen Titel angeben (in `dc:title`), wird dieser in der Ansicht zum Durchsuchen von Assets angezeigt. Wenn Sie das Feld leer lassen, wird automatisch ein von KI generierter Titel zugewiesen.
    * **[!UICONTROL Erzeugte Beschreibung]:** Die Beschreibung bietet eine kurze, aber informative Zusammenfassung dessen, worum es bei dem Asset geht, und hilft Benutzern und Suchmodulen, seine Relevanz schnell zu verstehen.
