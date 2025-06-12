@@ -5,10 +5,10 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '567'
-ht-degree: 100%
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 96%
 
 ---
 
@@ -20,24 +20,14 @@ Erfahren Sie mehr über die verschiedenen Möglichkeiten, Inhalte in AEM zu erst
 
 AEM as a Cloud Service bietet verschiedene Editoren, um verschiedene Inhaltstypen zu bearbeiten und verschiedene Authoring-Anwendungsfälle zu unterstützen.
 
-* [WYSIWYG-basiertes Authoring mit dem Seiteneditor](#page-editor): Der Seiteneditor ist der klassische Editor für die Inhaltserstellung in AEM. Dieser hat sich bereits bei Tausenden von Websites bewährt.
 * [WYSIWYG-basiertes Authoring mit dem universellen Editor](#universal-editor): Der universelle Editor ist eine moderne Benutzeroberfläche, die es ermöglicht, AEM-Inhalte inhaltsunabhängig zu erstellen. Er ist die erste Wahl bei AEM-Projekten, die Edge Delivery Services nutzen.
+* [WYSIWYG-basiertes Authoring mit dem Seiteneditor](#page-editor): Der Seiteneditor ist der klassische Editor für die Inhaltserstellung in AEM. Dieser hat sich bereits bei Tausenden von Websites bewährt.
 * [Dokumentenbasiertes Authoring](#document-based): Wenn Sie Edge Delivery Services verwenden, können Sie Inhalte als herkömmliche Dokumente z. B. mit Microsoft Word oder Google Docs erstellen, und zwar komplett außerhalb der AEM-Konsolen.
 * [AEM-Inhaltsfragmenteditor](#cf-editor): Dies ist der ideale Editor für die Erstellung von Headless-Inhalten.
 
 Aufgrund der Integrierbarkeit und Skalierbarkeit von AEM können diese Methoden je nach den Anforderungen Ihres Projekts ausschließlich oder in Kombination miteinander verwendet werden.
 
 Wenden Sie sich an die Systemadministration oder das Projekt.-Management, wenn Sie nicht sicher sind, welche Authoring-Optionen Ihnen zur Verfügung stehen oder wenn Sie neue Möglichkeiten für die Inhaltserstellung kennenlernen möchten.
-
-## WYSIWYG-basiertes Authoring mit dem Seiteneditor {#page-editor}
-
-Hierbei handelt es sich um den klassischen Editor für die Inhaltserstellung in AEM. Dieser hat sich bereits bei Tausenden von Websites bewährt.
-
-![Der AEM-Seiteneditor](assets/authoring-methods-page-editor.png)
-
-Der AEM-Seiteneditor steht für eine integrierte Umgebung zum Authoring von Inhalten über eine WYSIWYG(What-you-see-is-what-you-get)-Oberfläche. Sie können vordefinierte Komponenten per Drag &amp; Drop verschieben, um eine Seite zu erstellen und Inhalte im Kontext zu bearbeiten.
-
-Weitere Informationen zum AEM-Seiteneditor finden Sie im Dokument [Der AEM-Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ## WYSIWYG-basiertes Authoring mit dem universellen Editor {#universal-editor}
 
@@ -48,6 +38,16 @@ Beim universellen Editor handelt es sich um eine moderne Benutzeroberfläche, mi
 Der universelle Editor wird über die Sites-Konsole in AEM aufgerufen, bietet jedoch die Fähigkeit und inhaltsunabhängige Flexibilität, nicht nur AEM-Inhalte, sondern auch ordnungsgemäß instrumentierte externe Inhalte zu bearbeiten.
 
 Weitere Informationen zum universellen Editor finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
+
+## WYSIWYG-basiertes Authoring mit dem Seiteneditor {#page-editor}
+
+Dies ist der klassische Editor für das Erstellen von Inhalten in herkömmlichen AEM-Projekten, der für Tausende von Websites getestet und vertrauenswürdig ist.
+
+![Der AEM-Seiteneditor](assets/authoring-methods-page-editor.png)
+
+Der AEM-Seiteneditor steht für eine integrierte Umgebung zum Authoring von Inhalten über eine WYSIWYG(What-you-see-is-what-you-get)-Oberfläche. Sie können vordefinierte Komponenten per Drag &amp; Drop verschieben, um eine Seite zu erstellen und Inhalte im Kontext zu bearbeiten.
+
+Weitere Informationen zum AEM-Seiteneditor finden Sie im Dokument [Der AEM-Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ## Dokumentenbasiertes Authoring  {#document-based}
 

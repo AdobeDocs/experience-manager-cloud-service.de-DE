@@ -5,20 +5,27 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1305'
-ht-degree: 100%
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
+workflow-type: tm+mt
+source-wordcount: '1338'
+ht-degree: 97%
 
 ---
 
-# Stilsystem{#style-system}
+
+# Stilsystem {#style-system}
 
 Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um die Komponente flexibler zu gestalten.
 
 Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jeden Stil zu entwickeln oder das Komponentendialogfeld anzupassen, um eine solche Stilfunktion zu aktivieren. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Backend-Entwicklung erforderlich ist.
 
-## Nutzungsszenario {#use-case}
+>[!NOTE]
+>
+>Das Stilsystem gilt nur für Seiten, die mit dem Seiteneditor erstellt wurden.
+>
+>Die Gestaltung von Seiten, die mit dem [universellen Editor](/help/implementing/universal-editor/introduction.md) erstellt und mit [Edge Delivery Services](/help/edge/overview.md) bereitgestellt werden, kann vollständig über Ihr GitHub-Projekt erfolgen.
+
+## Anwendungsfall {#use-case}
 
 Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern müssen auch in der Lage sein, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
 

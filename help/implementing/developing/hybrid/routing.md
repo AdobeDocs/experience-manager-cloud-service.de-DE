@@ -4,12 +4,14 @@ description: Bei Single Page Applications in AEM ist die App für das Routing ve
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
 
 ---
+
 
 # SPA-Modell-Routing {#spa-model-routing}
 

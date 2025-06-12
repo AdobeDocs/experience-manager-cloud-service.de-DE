@@ -4,16 +4,19 @@ description: Machen Sie sich mit diesem mehrteiligen Tutorial, das Sie durch Pro
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
 
 ---
 
+
 # WKND-SPA-Projekt {#wknd-spa-project}
 
 {{ue-over-spa}}
+{{traditional-aem}}
 
 Machen Sie sich mit diesem mehrteiligen Tutorial, das Sie durch Projekt-Setup, Komponentenzuordnung, Frontend-Entwicklungs-Tools und Anwendungs-Routing führt, mit der SPA-Entwicklung vertraut, um Ihr eigenes SPA-Projekt zu implementieren.
 

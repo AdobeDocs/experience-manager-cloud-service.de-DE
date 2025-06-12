@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 100%
@@ -20,8 +20,6 @@ Dieses Dokument soll einen Überblick über die grundlegende Handhabung der AEM-
 >[!TIP]
 >
 >In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Insbesondere bei der [Verwendung der Sites-Konsole](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) und [des Seiteneditors](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
-
-{{edge-delivery-authoring}}
 
 ## Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 

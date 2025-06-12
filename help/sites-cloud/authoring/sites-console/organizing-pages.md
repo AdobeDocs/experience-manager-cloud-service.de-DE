@@ -5,8 +5,8 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
 
@@ -16,8 +16,6 @@ ht-degree: 100%
 # Organisieren von Seiten {#creating-and-organizing-pages}
 
 Erfahren Sie, wie Sie Ihre Website mit AEM organisieren.  Sobald Sie wissen, wie Sie Ihre Seiten organisieren müssen, können Sie [neue Seiten erstellen](/help/sites-cloud/authoring/sites-console/creating-pages.md) und [existierende Seiten verwalten](/help/sites-cloud/authoring/sites-console/managing-pages.md).
-
-{{edge-delivery-authoring}}
 
 ## Organisieren Ihrer Site {#organizing-your-site}
 

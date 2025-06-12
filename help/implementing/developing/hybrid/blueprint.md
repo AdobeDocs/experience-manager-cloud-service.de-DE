@@ -4,12 +4,14 @@ description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vert
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
 
 ---
+
 
 # SPA-Blueprint {#spa-blueprint}
 

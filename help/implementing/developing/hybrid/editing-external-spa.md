@@ -4,12 +4,14 @@ description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen ei
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2370'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
+
 
 # Bearbeiten einer externen SPA in AEM {#editing-external-spa-within-aem}
 
@@ -17,7 +19,7 @@ Bei der Entscheidung, [welchen Grad der Integration](/help/implementing/developi
 
 {{ue-over-spa}}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 
@@ -81,7 +83,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 
 * `path` – Bei der Initialisierung wird das Modell vom definierten Pfad abgerufen und im `ModelStore` gespeichert. Auf diese Weise können Sie bei Bedarf das `rootModel` bei der Initialisierung abrufen.
 * `modelClient` – Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
-* `model` : Ein `model`, das als Parameter übergeben wird und normalerweise bei der Verwendung von SSR ausgefüllt wird.
+* `model` – Ein `model`-Objekt, das als Parameter übergeben und typischerweise bei der Verwendung von SSR befüllt wird.
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
 
@@ -109,7 +111,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
    >
    >In diesem Beispiel gibt es unterschiedliche Versionen der Komponente: in AEM eingeschlossene und nicht eingeschlossene React-Komponenten. Die eingeschlossene Version muss verwendet werden, wenn die Komponente explizit verwendet wird. Wenn die Komponente Teil einer Seite ist, können Sie weiterhin die Standardkomponente verwenden (wie derzeit im SPA-Editor).
 
-1. Rendern des Inhalts in der Komponente
+1. Rendern des Inhalts in der Komponente.
 
    Die JCR-Eigenschaften der Textkomponente werden wie folgt in AEM angezeigt.
 

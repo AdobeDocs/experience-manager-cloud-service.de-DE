@@ -5,8 +5,8 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 100%
 
@@ -23,6 +23,8 @@ Sobald Ihre Seite in der [**Sites**-Konsole](/help/sites-cloud/authoring/sites-c
 >[!NOTE]
 >
 >Damit Sie Seiten bearbeiten können, muss Ihr Konto über die entsprechenden Zugriffsrechte und Berechtigungen verfügen.  Wenden Sie sich an Ihre Systemadmins, falls Sie keine Berechtigungen haben.
+
+{{traditional-aem}}
 
 ## Ausrichtung {#orientation}
 

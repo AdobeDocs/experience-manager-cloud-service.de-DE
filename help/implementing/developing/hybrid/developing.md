@@ -4,12 +4,14 @@ description: Dieser Artikel enthält wichtige Fragen, die zu beachten sind, wenn
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 100%
 
 ---
+
 
 # Entwickeln von SPAs für AEM {#developing-spas-for-aem}
 
