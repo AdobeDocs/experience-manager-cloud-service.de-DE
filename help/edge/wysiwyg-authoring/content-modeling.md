@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
-source-wordcount: '2195'
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '2160'
 ht-degree: 100%
 
 ---
@@ -645,8 +645,3 @@ Nachdem Sie nun wissen, wie Sie Inhalte modellieren, können Sie Bausteine für 
 Im Dokument [Erstellen von für den universellen Editor instrumentierten Bausteinen](/help/edge/wysiwyg-authoring/create-block.md) erfahren Sie, wie Sie Bausteine erstellen, die für die Verwendung mit dem universellen Editor in WYSIWYG-Authoring mit Edge Delivery Services-Projekten instrumentiert sind.
 
 Wenn Sie bereits mit der Erstellung von Blöcken vertraut sind, lesen Sie bitte das [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), um Ihnen den Start mit einer neuen Adobe Experience Manager-Site zu erleichtern, wobei Sie Edge Delivery Services und den universellen Editor für die Erstellung von Inhalten verwenden.
-
->[!TIP]
->
->Eine durchgängige Anleitung zum Erstellen eines neuen Edge Delivery Services-Projekts, das für WYSIWYG-Authoring mit AEM as a Cloud Service als Inhaltsquelle aktiviert ist, finden Sie in [diesem AEM GEMs-Webinar](https://experienceleague.adobe.com/de/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
-

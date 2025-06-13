@@ -4,10 +4,10 @@ description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service Ve
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '301'
-ht-degree: 100%
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ Das Content Transfer Tool v2.0.16 wurde am 08. März 2023 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Die Benutzerzuordnung wurde optimiert und in den Schritt zur Inhaltsextraktion integriert. Es ist keine Einrichtung erforderlich. Standardmäßig erfolgt die Benutzerzuordnung automatisch, wenn Benutzende die Inhaltsextraktion starten. Benutzende haben die Möglichkeit, bei Bedarf die Benutzerzuordnung zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=de#user-mapping-detail).
+* Die Benutzerzuordnung wurde optimiert und in den Schritt zur Inhaltsextraktion integriert. Es ist keine Einrichtung erforderlich. Standardmäßig erfolgt die Benutzerzuordnung automatisch, wenn Benutzende die Inhaltsextraktion starten. Benutzende haben die Möglichkeit, die Benutzerzuordnung bei Bedarf zu deaktivieren.
 * Der Vorkopierschritt mit [AzCopy](https://learn.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) wurde in das Content Transfer Tool integriert, was die Extraktion von Inhalten erheblich beschleunigt. Vorkopie wird automatisch konfiguriert und installiert, wenn diese CTT-Version installiert ist. Wenn die Extraktion initiiert wird, wird die Vorkopie automatisch für Migrationssätze ausgeführt, die größer als 200 GB sind. Benutzende haben die Möglichkeit, sie bei Bedarf zu deaktivieren. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de).
 * CTT kann jetzt auf Windows-Servern verwendet werden.
 

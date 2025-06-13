@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.9.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 91%
+source-wordcount: '1312'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ Eine Zusammenfassung der in der Version 2024.9.0 hinzugefügten Funktionen finde
 
 #### Übersetzungs-Management {#translation-management}
 
-AEM-Übersetzungs-Workflows und API-Aktionen lösen jetzt Ereignisse aus, um Einblicke in Statusänderungen von Übersetzungsaufträgen zu bieten. Benutzende können diese Ereignisse über die Adobe Developer Console abonnieren. Weitere Informationen zur AEM-Übersetzungs-Management-API finden Sie [hier](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/).
+AEM-Übersetzungs-Workflows und API-Aktionen lösen jetzt Ereignisse aus, um Einblicke in Statusänderungen von Übersetzungsaufträgen zu bieten. Benutzer können diese Ereignisse über die Adobe Developer Console abonnieren.
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 

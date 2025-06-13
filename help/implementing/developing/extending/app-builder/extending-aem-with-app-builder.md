@@ -4,10 +4,10 @@ description: Erweitern von [!DNL Adobe Experience Manager] as a Cloud Service mi
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '488'
+ht-degree: 78%
 
 ---
 
@@ -25,8 +25,6 @@ Der App Builder bietet Kunden eine Möglichkeit, Adobe Experience Manager in ver
 * Erweiterbarkeit der Hauptdienste: Erweiterung der Kernanwendungsfunktionen durch Erweiterung des Standardverhaltens um benutzerdefinierte Funktionen und Geschäftslogik.
 * Benutzererlebnis-Erweiterbarkeit: Erweitern Sie das Kernerlebnis, um Geschäftsanforderungen zu unterstützen oder kundenspezifische digitale Eigenschaften, Storefronts und Back-Office-Apps zu erstellen.
 
-App Builder steht seit Sommer 2020 für Unternehmenskunden und -partner über die Entwicklervorschau von Adobe zur Verfügung. Die allgemeine Verfügbarkeit von App Builder ist für Dezember 2021 geplant. Adobe freut sich, dass Entwicklerinnen und Entwickler App Builder über unser [Testprogramm](https://developer.adobe.com/app-builder/trial/) ausprobieren können.
-
 >[!NOTE]
 >
 > Kunden mit AEM 6.5, die App Builder nutzen möchten, lesen bitte den Abschnitt [Erweitern von Adobe Experience Manager 6.5 mit dem Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=de).
@@ -35,16 +33,16 @@ App Builder steht seit Sommer 2020 für Unternehmenskunden und -partner über di
 
 Anstelle einer vordefinierten Lösung bietet der Adobe Developer App Builder eine gemeinsame, konsistente und standardisierte Entwicklungsplattform für die Erweiterung von Adobe Cloud-Lösungen wie AEM, einschließlich:
 
-* Adobe Developer Console – Für die Entwicklung benutzerdefinierter Microservices und Erweiterungen können Entwicklerinnen und Entwickler Projekte erstellen und verwalten, während sie auf alle nötigen Tools und APIs zugreifen können, die sie zum Erstellen von Plug-ins und Integrationen benötigen.
-* Entwicklertools – Open-Source-Tools, SDKs und Bibliotheken, mit denen Entwicklerinnen und Entwickler einfach benutzerdefinierte Erweiterungen und Integrationen erstellen können. Verwenden Sie React Spectrum (UI-Toolkit von Adobe), damit Sie über eine gemeinsame Benutzeroberfläche für alle Adobe-Apps verfügen.
-* Services – I/O Runtime für das Hosting der Infrastruktur auf der Server-losen Plattform von Adobe und I/O Events für ereignisbasierte Integrationen. Adobe bietet auch native Unterstützung für das Speichern von Daten und Dateien.
-* Adobe Experience Cloud – Entwickler können Erweiterungen und Integrationen übermitteln, die in ihrer Experience Cloud-Organisation veröffentlicht werden sollen. Systemadministratoren können diese Erweiterungen dann überprüfen, verwalten und genehmigen. Nach der Veröffentlichung finden Sie Ihre benutzerdefinierten App Builder-Erweiterungen und -Tools zusammen mit anderen Adobe Experience Cloud-Anwendungen.
+* Adobe Developer Console: Für die Entwicklung benutzerdefinierter Microservices und Erweiterungen können Entwickelnde Projekte erstellen und verwalten und dabei auf alle Tools und APIs zugreifen, die zum Erstellen von Plug-ins und Integrationen erforderlich sind.
+* Entwickler-Tools : Open-Source-Tools, SDKs und Bibliotheken, mit denen Entwickler einfach benutzerdefinierte Erweiterungen und Integrationen erstellen können. Verwenden Sie React Spectrum (UI-Toolkit von Adobe), damit Sie über eine gemeinsame Benutzeroberfläche für alle Adobe-Apps verfügen.
+* Services - I/O Runtime für das Hosting der Infrastruktur auf der Server-losen Adobe-Plattform und I/O Events für ereignisbasierte Integrationen. Adobe bietet auch native Unterstützung für das Speichern von Daten und Dateien.
+* Adobe Experience Cloud - Entwickler können Erweiterungen und Integrationen übermitteln, die in ihrer Experience Cloud-Organisation veröffentlicht werden sollen. Systemadministratoren können diese Erweiterungen dann überprüfen, verwalten und genehmigen. Nach der Veröffentlichung finden Sie Ihre benutzerdefinierten App Builder-Erweiterungen und -Tools zusammen mit anderen Adobe Experience Cloud-Anwendungen.
 
 Die folgende Abbildung zeigt, wie eine auf App Builder aufbauende Standardanwendung diese Funktionen nutzt:
 
 ![Architektur](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
-Weitere Informationen zur App Builder-Architektur finden Sie unter [Überblick über die Architektur](https://developer.adobe.com/app-builder/docs/guides/).
+Weitere Informationen zur App Builder-Architektur finden Sie unter [Architekturübersicht.](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)
 
 ## Erste Schritte mit dem App Builder {#additional-resources}
 

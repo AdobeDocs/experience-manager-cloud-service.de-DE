@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '5391'
 ht-degree: 99%
@@ -84,7 +84,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
 >Stellen Sie sicher, dass Sie Version 20 von [Node und NPM installiert haben](https://nodejs.org/en/download/), damit Adobe I/O (AIO) CLI und die zugehörigen Plug-ins richtig funktionieren.
 
 
-1. Installieren Sie die AIO-CLI-Tools gemäß dem [hier](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) beschriebenen Verfahren.
+1. Installieren Sie die AIO-CLI-Tools gemäß dem [hier](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install) beschriebenen Verfahren.
 1. So installieren Sie das AEM-RDE-Plug-in für AIO-CLI-Tools:
 
    ```

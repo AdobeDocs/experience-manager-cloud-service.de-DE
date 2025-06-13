@@ -3,10 +3,10 @@ title: Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-
 description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktionen einschränken können.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 97%
 >
 >Das Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
 >
->[!BADGE Handbuch zu Dynamic Media mit OpenAPI-Funktionen als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Handbuch zu Dynamic Media mit OpenAPI-Funktionen als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/de/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Die zentrale Asset-Governance in Experience Manager ermöglicht es DAM-Admins oder Markenverantwortlichen, den Zugriff auf verfügbare Assets mithilfe von Dynamic Media mit OpenAPI-Funktionen zu verwalten. Sie können die Bereitstellung genehmigter Assets (bis hin zu einem einzelnen Asset) auf ausgewählte [Adobe Identity Management System(IMS)-Benutzende oder -Gruppen](https://helpx.adobe.com/de/enterprise/using/users.html#user-mgt-strategy) beschränken, indem sie bestimmte Metadaten für Assets in ihrem AEM as a Cloud Service-Autorendienst konfigurieren.
 
@@ -74,7 +74,7 @@ Sie können die Bereitstellung von Assets innerhalb von [!DNL Experience Manager
 
 >[!NOTE]
 >
->Diese Funktion gibt derzeit nicht als Self-Service. Um die Asset-Bereitstellung für IMS-[Benutzende](https://helpx.adobe.com/de/enterprise/using/manage-directory-users.html) und -[Gruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html) zu beschränken, wenden Sie sich an Ihr Unternehmens-Supportteam, um zu erfahren, wie Sie die Informationen abrufen können, die zum Einschränken des Zugriffs über das [Adobe Admin Console](https://adminconsole.adobe.com/)-Portal erforderlich sind, und wie Sie den Zugriff im Autoren-Service von AEM as a Cloud Service konfigurieren.
+> Diese Funktion gibt derzeit nicht als Self-Service. Um die Asset-Bereitstellung für IMS-[Benutzende](https://helpx.adobe.com/de/enterprise/using/manage-directory-users.html) und -[Gruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html) zu beschränken, wenden Sie sich an Ihr Unternehmens-Supportteam, um zu erfahren, wie Sie die Informationen abrufen können, die zum Einschränken des Zugriffs über das [Adobe Admin Console](https://adminconsole.adobe.com/)-Portal erforderlich sind, und wie Sie den Zugriff im Autoren-Service von AEM as a Cloud Service konfigurieren.
 
 ### Beschränken der Bereitstellung von Assets mit Datum und Uhrzeit für das Ein- und Ausschalten {#restrict-delivery-assets-date-time}
 
@@ -113,7 +113,7 @@ Wenn Ihr Asset in der Assets-Ansicht nicht auf dem Standard-Metadatenschema basi
 
 ## Bereitstellung von beschränkten Assets {#delivery-restricted-assets}
 
-Die Bereitstellung beschränkter Assets basiert auf einer erfolgreichen Autorisierung für den Zugriff auf Assets. Die Autorisierung erfolgt entweder über [IMS-Bearer-Token](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (Anwendung für Anfragen, die über den [AEM Asset-Wähler](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) initiiert wird) oder ein sicheres Cookie (wenn Sie benutzerdefinierte Identitätsanbieter in Ihren AEM Veröffentlichungs-/Vorschau-Services eingerichtet haben und die Erstellung und Aufnahme von Cookies auf den Seiten eingerichtet haben).
+Die Bereitstellung beschränkter Assets basiert auf einer erfolgreichen Autorisierung für den Zugriff auf Assets. Die Autorisierung erfolgt entweder über [IMS-Bearer-Token](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (Anwendung für Anfragen, die über den [AEM Asset-Wähler](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) initiiert wird) oder ein sicheres Cookie (wenn Sie benutzerdefinierte Identitätsanbieter in Ihren AEM Veröffentlichungs-/Vorschau-Services eingerichtet haben und die Erstellung und Aufnahme von Cookies auf den Seiten eingerichtet haben).
 
 ### Bereitstellung für Anfragen von AEM Author oder vom Asset-Wähler {#delivery-aem-author-asset-selector}
 

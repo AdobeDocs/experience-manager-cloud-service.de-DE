@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2025.3.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
-source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
+source-git-commit: 81e5cfd699fee811fc2b072e3b65e9d463a338b2
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 100%
+source-wordcount: '1122'
+ht-degree: 99%
 
 ---
 
@@ -126,7 +126,7 @@ Konkret sind die unten aufgeführten API-Endpunkte im Rahmen eines Early-Adopter
 
 * [Sites-Inhaltsfragmente-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de)
 * [Assets-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites- und Assets-Ordner-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites- und Assets-Ordner-APIs
 * [Forms-Kommunikationen-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Neue AEM Developer Console (öffentliche Beta-Version) {#aem-developer-console-beta}

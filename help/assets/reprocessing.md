@@ -5,10 +5,10 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 96%
+source-wordcount: '722'
+ht-degree: 100%
 
 ---
 
@@ -104,8 +104,6 @@ Klicken Sie nach Auswahl der entsprechenden Optionen auf **[!UICONTROL Erneut ve
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Wesentlichen handelt es sich um eine Liste von Schlüsselwörtern, die Angestellte, Partner bzw. Partnerinnen und Kunden bzw. Kundinnen üblicherweise verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und danach zu suchen. Das Tagging von Assets mit taxonomiegesteuertem Vokabular stellt sicher, dass die Assets leicht identifiziert und abgerufen werden können.
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging digitaler Assets anhand einer Geschäftstaxonomie dabei, sie am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden.
-
-Lesen Sie mehr zu [Smart-Tags für Videoassets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=de).
 
 Lesen Sie mehr zum [Erneuten Verarbeiten von Farb-Tags für vorhandene Bilder in DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de#color-tags-existing-images).
 

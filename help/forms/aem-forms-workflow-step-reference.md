@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwendung von AEM-Workflows, Verwendung von Schritten zur Aufgabenzuweisung, Schritt zur Konvertierung in PDF/A, Schritt zur Generierung eines Datensatzdokuments, Verwendung von Workflows, Schritt zur Unterzeichnung eines Dokuments, Schritt zur Generierung einer gedruckten Ausgabe, Schritt zur Generierung einer nicht interaktiven PDF-Ausgabe
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '7379'
-ht-degree: 100%
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '7370'
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
     -->
 
 * **[!UICONTROL Verantwortlicher]** > **[!UICONTROL Optionen zuweisen]**: Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
-* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten dynamischen Teilnehmerschritts mit Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Teilnehmer]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. In diesem Feld können Sie Benutzende oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 
@@ -223,7 +223,7 @@ Der E-Mail-Schritt hat folgende Eigenschaften:
 
 * **[!UICONTROL Dateianhang]**: Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/.
 
-Wählen Sie die Option **[!UICONTROL Variable]**, um den in einer Variablen des Dateityps „Dokument“, XML oder JSON gespeicherte Dateianhang abzurufen.
+Wählen Sie die Option **[!UICONTROL Variable]**, um den in einer Variablen des Datentyps „Dokument“, XML oder JSON gespeicherte Dateianhang abzurufen.
 
 **[!UICONTROL Dateiname]**: Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den Originaldateinamen des Anhangs in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft oder einer Variable abgerufen werden. Verwenden Sie die Option **[!UICONTROL Literal]**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option **[!UICONTROL Variable]**, um den Dateinamen aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Verwenden Sie die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]**, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird.
 
@@ -368,13 +368,13 @@ Der Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ enthält folgende Fel
    * **[!UICONTROL Zuordnen von Eingabefeldern aus Eingabe-JSON]**: Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Dienstargumente aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Payload bzw. zu einem absoluten Pfad sein oder Sie können ein JSON-Eingabedokument mit einer Variablen vom Typ JSON oder Formulardatenmodell (FDM) auswählen.
 
 * **[!UICONTROL Eingabe für Dienste]** > **[!UICONTROL Eingabedaten mithilfe einer Variablen oder einer JSON-Datei bereitstellen]**: Wählen Sie diese Option, um Werte für alle Argumente aus einer JSON-Datei abzurufen, die unter einem absoluten Pfad, einem Pfad relativ zur Nutzlast oder in einer Variablen gespeichert wurde.
-* **[!UICONTROL Auswahl des Eingabe-JSON-Dokuments mit]**: Die JSON-Datei, die Werte für alle Service-Argumente enthält. Der Pfad der JSON-Datei kann **[!UICONTROL relativ zur Nutzlast]** oder ein **[!UICONTROL absoluter Pfad]** sein. Sie können das JSON-Eingabedokument auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell (FDM)“ abrufen.
+* **[!UICONTROL Auswahl des Eingabe-JSON-Dokuments mit]**: Die JSON-Datei, die Werte für alle Service-Argumente enthält. Der Pfad der JSON-Datei kann **[!UICONTROL relativ zur Nutzlast]** oder ein **[!UICONTROL absoluter Pfad]** sein. Sie können das JSON-Eingabedokument auch mit einer Variablen vom Datentyp „JSON“ oder „Formulardatenmodell (FDM)“ abrufen.
 
 * **[!UICONTROL JSON Dot Notation]**: Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Service-Argumente zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Argumente zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie eine JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie „insurance.customerDetails“ an, um alle Details eines Kunden als Eingabe für den Service anzugeben.
 * **[!UICONTROL Ausgabe des Service]** > **[!UICONTROL Ausgabewerte zu Variablen oder Metadaten zuordnen und schreiben]**: Wählen Sie diese Option, um die Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository zu speichern. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut aus, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu. In ähnlicher Weise können Sie die Ausgabe in einer Variablen vom Datentyp „Long“ speichern. Wenn Sie eine Eigenschaft für die Option **[!UICONTROL Zuzuordnendes Service-Ausgangsattribut]** auswählen, werden für die Option **[!UICONTROL Speichern der Ausgabe in]** nur Variablen ausgefüllt, die Daten der ausgewählten Eigenschaft speichern können.
 
 * **[!UICONTROL Ausgabe des Diensts]** > **[!UICONTROL Ausgabe in Variable oder einer JSON-Datei speichern]**: Wählen Sie diese Option aus, um die Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, einem Pfad relativ zur Nutzlast oder in einer Variablen zu speichern.
-* **[!UICONTROL Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern]**: Speichern Sie die JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell (FDM)“ speichern.
+* **[!UICONTROL Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern]**: Speichern Sie die JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen vom Datentyp „JSON“ oder „Formulardatenmodell (FDM)“ speichern.
 
 
 
