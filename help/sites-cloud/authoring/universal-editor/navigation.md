@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 96%
+source-wordcount: '1782'
+ht-degree: 95%
 
 ---
 
@@ -269,7 +269,8 @@ Im Inhaltsstruktur-Modus zeigt das Bedienfeld die Hierarchie des Seiteninhalts a
 
 ![Inhaltsstruktur-Modus](assets/content-tree-mode.png)
 
-Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu diesem Inhalt und wählt ihn aus.
+* Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu diesem Inhalt und wählt ihn aus.
+* Wenn der Editor auf ein Element in der Inhaltsstruktur doppelklickt, scrollt er zu diesem Inhalt, wählt ihn aus und öffnet die zugehörigen Eigenschaften im [Eigenschaftenmodus“](#properties-mode)
 
 ![Inhaltsstruktur](assets/content-tree.png)
 
