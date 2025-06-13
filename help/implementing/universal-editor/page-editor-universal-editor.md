@@ -4,9 +4,9 @@ description: Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der un
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 16%
 
 ---
@@ -40,7 +40,7 @@ Da die Funktionslücke zwischen den beiden Editoren ständig kleiner wird, lesen
 
 |  | Seiteneditor | Anmerkungen | Universeller Editor | Anmerkungen |
 |---|---|---|---|---|
-| [Bereitstellung von Classic AEM](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Verfügbar]{type=Positive} | Empfohlen für die Verwendung mit den Kernkomponenten | [!BADGE nicht verfügbar]{type=Negative} | Klassische AEM-Seiten basieren in der Regel auf mehreren Seiten-Editor-spezifischen Funktionen, die mit dem universellen Editor nur schwer unverändert repliziert werden können. |
+| [Versand veröffentlichen](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Verfügbar]{type=Positive} | Empfohlen für die Verwendung mit den Kernkomponenten und herkömmlichen AEM-Projekten | [!BADGE nicht verfügbar]{type=Negative} | Herkömmliche AEM-Seiten basieren in der Regel auf mehreren Seiteneditor-spezifischen Funktionen, die mit dem universellen Editor nur schwer unverändert repliziert werden können. |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE nicht verfügbar]{type=Negative} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | [Headless-Bereitstellung](/help/headless/introduction.md) | [!BADGE Teilweise verfügbar]{type=Caution} | Nur mit [dem SPA-Editor](/help/implementing/developing/hybrid/introduction.md) der [veraltet](/help/implementing/developing/hybrid/spa-editor-deprecation.md) zugunsten des universellen Editors eingestellt wurde | [!BADGE Verfügbar]{type=Positive} | Der universelle Editor ermöglicht es Entwicklern, ihre eigene Web-App zu verwenden, ohne spezielle Framework-Anforderungen oder Implementierungsbeschränkungen aufzuerlegen. |
 
@@ -103,6 +103,6 @@ Es gibt keinen direkten Migrationspfad vom Seiteneditor zum universellen Editor.
    * Dies wirkt sich auf viele Bereiche der Dialogfelder aus, z. B. auf benutzerdefinierte Widgets, Feldvalidierungen, Regeln zum Ein-/Ausblenden und vorlagenbasierte Anpassungen.
       * Obwohl solche Funktionen weiterhin möglich sind, löst der universelle Editor sie durch Konfiguration, anstatt durch benutzerdefinierte JavaScript, die in Dialogfeldern bereitgestellt werden.
 
-Während der universelle Editor die Bearbeitung für klassische AEM-Seiten (z. B. aus den Kernkomponenten) technisch aktivieren kann, sind diese Websites in der Regel auf mehrere Seiteneditor-spezifische Funktionen wie das Stilsystem, das responsive Raster, bearbeitbare Vorlagen und benutzerdefiniertes JavaScript in Dialogfeldern angewiesen.
+Während der universelle Editor die Bearbeitung von Seiten für herkömmliche AEM-Projekte (z. B. aus den Kernkomponenten) technisch aktivieren kann, sind diese Websites in der Regel auf mehrere Seiteneditor-spezifische Funktionen wie das Stilsystem, das responsive Raster, bearbeitbare Vorlagen und benutzerdefiniertes JavaScript in Dialogfeldern angewiesen.
 
 Da der universelle Editor einem rationelleren, modernen Ansatz folgt, der diese alten Funktionen nicht unterstützt, würde die Migration solcher Sites eine erhebliche Überarbeitung erfordern. Aus diesem Grund wird **Migrieren von Seiteneditor-Sites in den universellen Editor nur für Projekte empfohlen, die auf Edge Delivery Services umgestellt werden.**
