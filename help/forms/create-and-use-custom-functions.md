@@ -168,6 +168,7 @@ Sie können eine benutzerdefinierte Funktion mit oder ohne jsdoc-Kommentare erst
             // code to be executed
         }
 ```
+
 Wenn Benutzende zu einer benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügen, wird sie im Regeleditor anhand ihres Funktionsnamens aufgelistet. Es wird jedoch empfohlen, JavaScript-Anmerkungen einzubeziehen, um die Lesbarkeit der benutzerdefinierten Funktionen zu verbessern.
 
 ### Pfeilfunktion mit obligatorischen JavaScript-Anmerkungen oder -Kommentaren
