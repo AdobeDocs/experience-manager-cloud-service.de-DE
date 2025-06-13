@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Übersichtsvideo zur Version April 2024 an, das eine Zusammenfassung der Funktionen bietet, die in Version 2024.4.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3446318?quality=12&captions=ger)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
