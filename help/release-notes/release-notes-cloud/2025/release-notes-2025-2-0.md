@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2025.2.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 98%
+source-wordcount: '1527'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Assets, die in anderen AEM as a Cloud Service-Programmen als Inhaltsfragmenten g
 
 **Inhaltsfragmenteditor – Rollout**
 
-Die Aktivierung des neuen, auf der Spectrum-Benutzeroberfläche basierenden Inhaltsfragmenteditors in AEM as a Cloud Service wird fortgesetzt. Nachdem er im November 2024 bereits zur Standardeinstellung für alle Cloud Service-Entwicklungsumgebungen wurde, wird er ab dem 1. April 2025 auch für alle Staging-Umgebungen und ab dem 1. Mai 2025 für alle Produktionsumgebungen als Standard festgelegt. In allen Fällen haben Benutzende weiterhin die Möglichkeit, zum herkömmlichen Inhaltsfragmenteditor in der Touch-optimierten Benutzeroberfläche von AEM zurückzukehren.
+Die Aktivierung des neuen [Inhaltsfragment-Editors](/help/sites-cloud/administering/content-fragments/authoring.md) in AEM as a Cloud Service erfolgt weiterhin mithilfe von [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) (unter Verwendung der Spectrum-Benutzeroberfläche). Nachdem er im November 2024 bereits zur Standardeinstellung für alle Cloud Service-Entwicklungsumgebungen wurde, wird er ab dem 1. April 2025 auch für alle Staging-Umgebungen und ab dem 1. Mai 2025 für alle Produktionsumgebungen als Standard festgelegt. In allen Fällen haben Benutzende weiterhin die Möglichkeit, zum herkömmlichen Inhaltsfragmenteditor in der Touch-optimierten Benutzeroberfläche von AEM zurückzukehren.
 
 **Übersetzungs-HTTP-API**
 
