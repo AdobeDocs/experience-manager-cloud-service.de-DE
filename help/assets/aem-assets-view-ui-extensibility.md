@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Fähigkeit „Erweiterbarkeit der Benut
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 85%
+source-wordcount: '641'
+ht-degree: 83%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 85%
 </table>
 
 [!DNL AEM Assets View] unterstützt die Erweiterbarkeit der Benutzeroberfläche, sodass Sie Ihrer [!DNL Assets View]-Benutzeroberfläche benutzerdefinierte Benutzeroberflächenkomponenten für bestimmte Workflows und Geschäftsanforderungen hinzufügen können, die von den vorkonfigurierten Funktionen von [!DNL AEM Assets View] nicht erfüllt werden. Diese Erweiterbarkeitsfunktion der Benutzeroberfläche von [!DNL AEM Assets View] erhöht die Flexibilität und ermöglicht es Organisationen, die Benutzeroberfläche an bestimmte Workflows und Anforderungen anzupassen.\
-Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **&#x200B;**&#x200B;angezeigt.
+Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **** angezeigt.
 
 >[!IMPORTANT]
 >
@@ -73,7 +73,7 @@ Sie müssen die folgenden Anforderungen erfüllen, um die Erweiterbarkeitskompon
 * [Sie haben Zugriff auf  [!DNL Assets View]](#1).
 * Sie haben Zugriff auf [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/).
 * Sie verfügen über die Berechtigung für Entwickelnde der Rolle „Systemadmin“ innerhalb der Organisation. Weitere Informationen finden Sie in [dieser Dokumentation](https://developer.adobe.com/uix/docs/guides/get-access/).
-* [!DNL Adobe IO command line tool (AIO CLI)] ist auf Ihren lokalen Computern installiert. Dieses Tool ist für das Erstellen und Bereitstellen von Erweiterungsprojekten von entscheidender Bedeutung. Weitere Informationen finden Sie in [dieser Dokumentation](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up).
+* [!DNL Adobe IO command line tool (AIO CLI)] ist auf Ihren lokalen Computern installiert. Dieses Tool ist für das Erstellen und Bereitstellen von Erweiterungsprojekten von entscheidender Bedeutung. Weitere Informationen [ Sie unter „Erstellen der ersten App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up)Anwendung (Authentifizierung für den Zugriff erforderlich)“.
 * Grundlegendes Verständnis der Technologien [!DNL JavaScript], [!DNL Node.js] und [!DNL React].
 
 ## Hinzufügen der UI-Erweiterbarkeitskomponente zu [!DNL Assets View] {#ui-extensibility-in-assets-view}
