@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6263'
 ht-degree: 98%
 
 ---
@@ -1074,6 +1074,7 @@ ht-degree: 98%
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Integration eines Formulardatenmodells: Integrieren von Formularen mit dem Formulardatenmodell](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [Wiederverwendbare, modulare und eigenständige Segmente: Erstellen und Verwenden von Formularfragmenten in Formularen](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Fehlerbehebung für 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
          + [Erstellen von Formularen mit Google Tabellen oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)

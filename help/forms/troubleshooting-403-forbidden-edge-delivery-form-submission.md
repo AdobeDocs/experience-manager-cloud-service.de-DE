@@ -1,9 +1,9 @@
 ---
 title: Fehlerbehebung für 403 Forbidden Errors in Edge Delivery Services Form Submission
 description: Erfahren Sie, wie Sie 403-Fehler (Forbidden) beim Senden von Formularen von Edge Delivery Services an die AEM-Veröffentlichungsinstanz diagnostizieren und beheben können. In diesem Handbuch werden gängige Ursachen wie CORS, Dispatcher-Regeln und Probleme mit Referrer-Filtern behandelt.
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 3%
