@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Ihren eigenen universellen Editor-Dienst entw
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
-workflow-type: ht
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
+workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ Nach der Festlegung sollte jeder Inhaltsaktualisierungsaufruf an `https://localh
 
 ## Bearbeiten einer Seite mit dem lokalen Dienst „Universeller Editor“ {#editing}
 
-Mit dem [lokal ausgeführten Dienst „Universeller Editor“](#running-ue) und Ihrer [Inhaltsseite, die für die Verwendung des lokalen Dienstes instrumentiert wurde](#using-loca-ue), können Sie jetzt den Editor starten.
+Mit dem [lokal ausgeführten Dienst „Universeller Editor“](#running-ue) und Ihrer [Inhaltsseite, die für die Verwendung des lokalen Dienstes instrumentiert wurde](/help/implementing/universal-editor/getting-started.md), können Sie jetzt den Editor starten.
 
 1. Öffnen Sie in Ihrem Browser `https://localhost:8000/ping`.
 1. Weisen Sie Ihren Browser an, [Ihr selbstsigniertes Zertifikat](#ue-https) zu akzeptieren.
