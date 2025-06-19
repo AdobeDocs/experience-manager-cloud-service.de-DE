@@ -4,9 +4,9 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ Dieser Artikel ist in die folgenden Abschnitte unterteilt:
 * **Dashboard-Tooling:** Analysieren Sie Ihre CDN-Protokolle, um neue Traffic-Filterregeln zu erstellen.
 * **Empfohlene Anfangsregeln:** Ein Regelsatz für die ersten Schritte.
 * **Tutorial:** Praktisches Wissen bezüglich der Funktion, einschließlich der Verwendung der Dashboard-Werkzeuge zum Deklarieren der richtigen Regeln.
-
-Adobe lädt Sie ein, Feedback zu geben oder Fragen zu Traffic-Filterregeln zu stellen, indem Sie eine E-Mail an **aemcs-waf-adopter@adobe.com** senden.
 
 ## Traffic-Schutz – Übersicht {#traffic-protection-overview}
 
