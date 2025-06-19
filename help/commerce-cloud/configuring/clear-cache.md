@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Funktion „Clear-Cache“ in AEM CIF akt
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
+source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -31,14 +31,13 @@ Standardmäßig ist die Funktion „Cache löschen“ in der CIF-Konfiguration d
 * Aktivieren Sie den Listener, um den Cache jeder Instanz von AEM (Veröffentlichungs- und Autoreninstanz) zu löschen, indem Sie die `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` Konfiguration in Ihrem Projekt hinzufügen, wie [hier](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) dargestellt.
    * Die Konfiguration sollte sowohl für die Autoren- als auch für die Veröffentlichungsinstanz aktiviert sein.
    * Aktivieren des Dispatcher-Caches (optional): Sie können die Einstellung „Dispatcher-Cache löschen“ aktivieren, indem Sie in der obigen Konfiguration die `enableDispatcherCacheInvalidation`-Eigenschaft auf „true“ festlegen. Dies bietet die Möglichkeit, den Cache vom Dispatcher zu löschen.
-
      >[!NOTE]
      >
      > Dies funktioniert nur mit Veröffentlichungsinstanzen.
 
    * Stellen Sie außerdem sicher, dass Sie das entsprechende Muster angeben, das Ihrem Produkt, Ihrer Kategorie und Ihrer CMS-Seite entspricht. Es muss der obigen Konfigurationsdatei hinzugefügt werden, um es aus dem Dispatcher-Cache zu entfernen.
 
-* Um die Leistung von SQL-Abfragen beim Suchen der entsprechenden Seite für Produkt und Kategorie zu verbessern, fügen Sie den entsprechenden Index in Ihrem Projekt hinzu (empfohlen). Weitere Informationen finden Sie unter [cifCacheInvalidationSupport/]&#x200B;(link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
+* Um die Leistung von SQL-Abfragen beim Suchen der entsprechenden Seite für Produkt und Kategorie zu verbessern, fügen Sie den entsprechenden Index in Ihrem Projekt hinzu (empfohlen). Weitere Informationen finden Sie unter [cifCacheInvalidationSupport](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
 ## Überprüfen der Funktion „Cache löschen“ {#verify-clear-cache}
 
@@ -64,8 +63,7 @@ So überprüfen Sie nun, ob die Caches ordnungsgemäß geleert werden:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
-Wenn alles gut geht, werden die neuen Änderungen in jedem Fall widergespiegelt. Wenn Änderungen für die Veröffentlichungsinstanz nicht widergespiegelt werden, überprüfen Sie im privaten Fenster die entsprechenden PLP- und PDP-Seiten.
+Wenn alles gut geht, werden die neuen Änderungen in jedem Fall widergespiegelt. Wenn die Änderungen in der Veröffentlichungsinstanz nicht sichtbar sind, versuchen Sie, die relevanten PLP- und PDP-Seiten in einem privaten/Inkognito-Browser-Fenster aufzurufen.
 
 >[!NOTE]
 >
