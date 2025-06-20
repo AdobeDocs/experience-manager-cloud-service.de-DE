@@ -34,7 +34,7 @@ Mit der Sites-Konsole können Sie auch [die Eigenschaften mehrerer Seiten gleich
 
 Beim Durchsuchen Ihres Inhalts in der **Sites**-Konsole können Sie die Schaltfläche **Eigenschaften** in der Symbolleiste verwenden, um die Seiteneigenschaften zu bearbeiten:
 
-1. Navigieren ](/help/sites-cloud/authoring/sites-console/introduction.md) in [**Sites**-Konsole zum Speicherort der Seite, für die Sie Eigenschaften anzeigen und bearbeiten möchten.
+1. Navigieren [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md) in **Sites**-Konsole zum Speicherort der Seite, für die Sie Eigenschaften anzeigen und bearbeiten möchten.
 1. Wählen Sie die Option **Eigenschaften** für die gewünschte Seite aus, indem Sie wahlweise Folgendes verwenden:
    * [Schnellaktionen](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#selecting-resources)
