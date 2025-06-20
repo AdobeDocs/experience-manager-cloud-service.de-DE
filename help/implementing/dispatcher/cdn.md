@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 100%
+source-wordcount: '1744'
+ht-degree: 97%
 
 ---
 
@@ -78,10 +78,10 @@ Schützen Sie Inhalte für einfache Authentifizierungsfälle, einschließlich Ge
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="Kunden-CDN verweist auf AEM-verwaltetes CDN"
+>title="Kunden-CDN (oder Proxy) verweist auf von AEM verwaltetes CDN"
 >abstract="AEM as a Cloud Service bietet Kunden eine Option, ihr bestehendes CDN zu verwenden. Für die Veröffentlichungsebene können Kundinnen und Kunden optional von ihrem eigenen CDN aus darauf verweisen, welches sie verwalten müssen. Dieses Szenario wird von Fall zu Fall bei Erfüllung bestimmter Voraussetzungen gestattet, insbesondere dass die Kundin bzw. der Kunde eine Altintegration mit einem CDN-Anbieter hat, die schwer aufzugeben ist."
 
-Wenn Kundinnen oder Kunden ihr bestehendes CDN verwenden müssen, können sie es verwalten und auf das von AEM verwaltete CDN verweisen lassen, sofern folgende Voraussetzungen erfüllt sind:
+Wenn ein Kunde sein bestehendes CDN (oder einen Reverse-Proxy jedweder Art, z. B. einen Load-Balancer oder einen WAF) verwenden muss, kann er es verwalten und auf das von AEM verwaltete CDN verweisen, sofern folgende Voraussetzungen erfüllt sind:
 
 * Die Kundin bzw. der Kunde muss über ein vorhandenes CDN verfügen, dessen Ersetzung aufwendig wäre.
 * Die Kundin bzw. der Kunde muss es verwalten.
