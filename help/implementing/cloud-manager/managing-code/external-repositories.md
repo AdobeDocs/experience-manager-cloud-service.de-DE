@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: f51730be823782ba722a33be6da409fad14429eb
+source-git-commit: 54f86f7bc204c6171fb031ecb94dd3da0379dacf
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2298'
 ht-degree: 90%
 
 ---
@@ -83,8 +83,7 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Zugriffstoken-Option | Beschreibung |
 | --- | --- |
