@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 54f86f7bc204c6171fb031ecb94dd3da0379dacf
+source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2292'
 ht-degree: 90%
 
 ---
@@ -216,8 +216,7 @@ Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis 
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Erforderliche Webhook-Ereignisse |
 | --- |
@@ -261,8 +260,7 @@ Das Verhalten variiert je nach verwendetem Git-Anbieter, wie unten beschrieben.
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 Wenn die Prüfung erstellt wird, sieht sie wie der folgende Screenshot aus. Der wesentliche Unterschied zu `GitHub.com` besteht darin, dass `GitHub.com` eine Überprüfungsausführung verwendet, während GitHub Enterprise (unter Verwendung von persönlichen Zugriffs-Token) einen Commit-Status generiert:
 
