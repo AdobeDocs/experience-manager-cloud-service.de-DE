@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+source-git-commit: 72f6a0597b59efd9bf17fba0ea286e14cfa5903d
 workflow-type: tm+mt
-source-wordcount: '6263'
+source-wordcount: '6267'
 ht-degree: 98%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 98%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
-         + [2 025,5,0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
+         + [2 025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -443,6 +443,7 @@ ht-degree: 98%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analysieren der Struktur](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Inhaltsfragmente mit Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
          + [Erweiterung für Inhaltsfragmentmodelle in AJO - externe Verweise](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
