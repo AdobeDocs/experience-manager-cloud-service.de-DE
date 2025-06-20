@@ -1,28 +1,35 @@
 ---
-title: Veröffentlichen von Seiten
-description: Erfahren Sie, wie Sie Ihre Seiten mithilfe verschiedener Mechanismen in AEM veröffentlichen oder Ihre Veröffentlichung rückgängig machen können.
+title: Veröffentlichen von Seiten über die Sites-Konsole
+description: Erfahren Sie, wie Sie Ihre Seiten mit der Sites-Konsole veröffentlichen und die Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
-workflow-type: ht
-source-wordcount: '1926'
-ht-degree: 100%
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
+workflow-type: tm+mt
+source-wordcount: '1635'
+ht-degree: 89%
 
 ---
 
-# Veröffentlichen von Seiten {#publishing-pages}
+
+# Veröffentlichen von Seiten über die Sites-Konsole {#publishing-pages}
 
 Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und überprüft haben, ist es Ihr Ziel, ihn auf Ihrer [öffentlichen Website (Ihrer Publishing-Umgebung) zur Verfügung zu stellen](/help/sites-cloud/authoring/author-publish.md).
 
 Dies wird als Veröffentlichen einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als Aufheben der Veröffentlichung bezeichnet. Beim Veröffentlichen und beim Aufheben der Veröffentlichung bleibt die Seite in der Autorenumgebung für weitere Änderungen verfügbar, bis Sie diese löschen.
 
-Sie können eine Seite sofort oder zu einem vordefinierten künftigen Zeitpunkt (Datum/Uhrzeit) veröffentlichen bzw. ihre Veröffentlichung rückgängig machen.
+Sie können die [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) verwenden, um eine Seite sofort oder zu einem vordefinierten Datum/zu einer vordefinierten Uhrzeit in der Zukunft zu veröffentlichen/die Veröffentlichung rückgängig zu machen.
 
->[!NOTE]
+>[!TIP]
 >
->Das Veröffentlichen eines [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) folgt im Wesentlichen dem gleichen Verfahren wie das Veröffentlichen einer Seite, allerdings in der Konsole oder im Editor für Experience Fragments.
+>Sie können über andere Speicherorte als die Sites-Konsole veröffentlichen.
+>
+>* [Im Seiteneditor](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [Vom universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [Über die Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md)-Konsole oder den Editor
+>
+>Veröffentlichungen an diesen Orten bieten verschiedene Optionen, folgen jedoch ähnlichen Verfahren und allgemeinen Ideen, die hier beschrieben werden.
 
 ## Terminologie {#terminology}
 
@@ -38,14 +45,6 @@ Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie
    * Dies sind die technischen Begriffe, die beim Veröffentlichen einer Seite für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Services verwendet werden (z. B. vom Erstellen zur Vorschau).
    * Diese Begriffe werden hauptsächlich von Entwicklern verwendet.
 
-## Veröffentlichen von Seiten {#publishing-pages-1}
-
-Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen folgendermaßen vornehmen:
-
-* [Im Seiten-Editor](#publishing-from-the-page-editor)
-* [Im ](#publishing-from-the-sites-console)
-* [Im universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen, geschieht Folgendes:
@@ -60,50 +59,17 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 >
 >Die Seitenreihenfolge ist in folgenden Situationen nicht garantiert:
 >
->* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (da die Informationen zur Reihenfolge auf der übergeordneten Seite gespeichert sind)
->* wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
+>* Wenn nur untergeordnete Seiten für die Veröffentlichung ausgewählt werden (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
+>* Wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
 
-### Veröffentlichen vom Seiteneditor aus {#publishing-from-the-page-editor}
-
-Wenn Sie eine Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) bearbeiten, kann sie direkt im Editor veröffentlicht werden.
-
-1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen, und danach die Option **Seite veröffentlichen**.
-
-   ![Veröffentlichen einer Seite über Seitenoptionen](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. Je nachdem, ob die Seite Verweise enthält, die veröffentlicht werden müssen, geschieht Folgendes:
-
-   * Die Seite wird direkt veröffentlicht, wenn keine Verweise veröffentlicht werden müssen.
-   * Wenn die Seite dagegen Verweise enthält, die veröffentlicht werden müssen, werden diese im **Veröffentlichungsassistenten** aufgeführt, und Sie können eine der folgenden Aktionen ausführen:
-      * Geben Sie an, welche Assets, Tags usw. Sie mit der Seite veröffentlichen möchten, und wählen Sie **Veröffentlichen**, um den Vorgang abzuschließen.
-      * Mit **Abbrechen** können Sie den Vorgang abbrechen.
-
-   ![Veröffentlichen von Verweisen mit der Seite](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. Mit **Veröffentlichen** wird die Seite in der Veröffentlichungsumgebung repliziert. Im Seiteneditor wird ein Banner mit einem Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
-
-   ![Statusinfo-Banner veröffentlichen](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   Wird diese Seite in der Konsole dargestellt, ist der aktualisierte Veröffentlichungsstatus sichtbar.
-
-   ![Status der Seitenveröffentlichung in der Spaltenansicht in der Site-Konsole](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->Mit dem Seiteneditor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten Seiten werden veröffentlicht, aber keine untergeordneten Seiten.
-
->[!NOTE]
->
->Seiten, auf die im Editor über [Aliasnamen](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) zugegriffen wird, können nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-
-### Veröffentlichen über die Site-Konsole {#publishing-from-the-sites-console}
+## Veröffentlichen von Seiten über die Sites-Konsole {#publishing-from-the-sites-console}
 
 In der **Sites**-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
 * [Quick Publish](#quick-publish)
 * [Veröffentlichung verwalten](#manage-publication)
 
-#### Quick Publish {#quick-publish}
+### Quick Publish {#quick-publish}
 
 **Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
@@ -123,7 +89,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 >
 >Die Option „Schnell veröffentlichen“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht, aber keine untergeordneten Seiten.
 
-#### Veröffentlichung verwalten {#manage-publication}
+### Veröffentlichung verwalten {#manage-publication}
 
 **Veröffentlichung verwalten** bietet mehr Optionen als **Schnell veröffentlichen**. Mit diesen können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, etwas in einem Vorschau-Service veröffentlichen (sofern verfügbar), alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
@@ -149,13 +115,13 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
      Bei späterer Veröffentlichung wird ein Workflow gestartet, um die ausgewählte(n) Seite(n) zum angegebenen Zeitpunkt zu veröffentlichen. Umgekehrt startet „Veröffentlichung aufheben“ später einen Workflow zum Aufheben der Veröffentlichung der ausgewählte(n) Seite(n) zu einem angegebenen Zeitpunkt.
 
-     >[!NOTE]
+     >[!TIP]
      >
      >Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance), um den entsprechenden Workflow zu beenden.
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >Die Planung von Inhalten für die Veröffentlichung ist nicht dasselbe wie [**Einschaltzeit** und **Ausschaltzeit**, die in den Seiteneigenschaften verfügbar sind,](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) kann aber unter ähnlichen Umständen verwendet werden.
+     >Bei der Planung von Inhalten für die Veröffentlichung werden Inhalte repliziert und Veröffentlichungs-Workflows berücksichtigt. Wenn Sie bereits veröffentlichte Inhalte vorübergehend ausblenden möchten, ohne die Veröffentlichung rückgängig zu machen, sollten Sie [**Einschaltzeit** und **Ausschaltzeit** in den Seiteneigenschaften verfügbar machen.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -230,26 +196,9 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
 1. Klicken Sie auf **Veröffentlichen** oder **Später veröffentlichen**, um die Veröffentlichung abzuschließen.
 
-
-
 ## Veröffentlichen von Seiten rückgängig machen {#unpublishing-pages}
 
-Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungs- oder [Vorschauumgebung](/help/sites-cloud/authoring/sites-console/previewing-content.md) gelöscht, sodass sie nicht mehr für Ihre Leser verfügbar ist.
-
-[Ähnlich wie beim Veröffentlichen](#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten im gewünschten Ziel aufheben:
-
-* [Im Seiten-Editor](#unpublishing-from-the-editor)
-* [In der Sites-Konsole](#unpublishing-from-the-console)
-
-### Rückgängigmachen der Veröffentlichung im Editor {#unpublishing-from-the-editor}
-
-Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur **Veröffentlichung einer Seite** im Menü **Seiteninformationen** die Option [Veröffentlichung der Seite aufheben](#publishing-from-the-editor) aus.
-
->[!NOTE]
->
->Die Veröffentlichung von Seiten, auf die im Editor über [Aliasnamen](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) zugegriffen wird, kann nicht rückgängig gemacht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-
-### Rückgängigmachen der Veröffentlichung in der Konsole {#unpublishing-from-the-console}
+Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungs- oder [Vorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)Umgebung entfernt, sodass sie nicht mehr für Ihre Leser verfügbar ist.
 
 Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](#manage-publication), können Sie damit auch eine Veröffentlichung aufheben.
 

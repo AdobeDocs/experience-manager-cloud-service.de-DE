@@ -4,7 +4,7 @@ description: Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der un
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 16%
@@ -73,7 +73,7 @@ Da die Funktionslücke zwischen den beiden Editoren ständig kleiner wird, lesen
 | Inhaltsstruktur | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Ermöglicht auch die Neuanordnung innerhalb der Baumstruktur |
 | Simulation von Geräten | [!BADGE Verfügbar]{type=Positive} | [Konfigurierte Geräte können simuliert werden](/help/sites-cloud/administering/responsive-layout.md) der Benutzer kann jedoch nicht manuell andere Bildschirmabmessungen eingeben, um sie zu simulieren. | [!BADGE Verfügbar]{type=Positive} | [Alle zu simulierenden Bildschirmabmessungen können manuell eingegeben werden](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) Standardhaltepunkte können jedoch nicht konfiguriert werden. |
 | [Seitensperre](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Berücksichtigt den in der Sites-Konsole festgelegten Sperrstatus mit der Erweiterung, die zum Sperren/Entsperren von Seiten im Editor verfügbar ist |
-| [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Verfügbar von der Site-Admin mit der Erweiterung , um auch über den Editor auf die Eigenschaften von Seiten zuzugreifen |
+| [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Verfügbar von der Site-Admin mit der Erweiterung , um auch über den Editor auf die Eigenschaften von Seiten zuzugreifen |
 | Eigenschaften für mehrere Felder | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE nicht verfügbar]{type=Negative} | Geplant |
 | [Remote-DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | [Seitenversionierung](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |

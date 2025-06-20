@@ -5,8 +5,8 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Die Komponenten sind im Seiteneditor auf dem seitlichen Bedienfeld der Registerk
 
 Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer Seite ziehen. Sie können sie dann bearbeiten, indem Sie Folgendes verwenden:
 
-* [Eigenschaften konfigurieren](/help/sites-cloud/authoring/sites-console/page-properties.md)
+* [Eigenschaften konfigurieren](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 * [Bearbeiten von Inhalten](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 

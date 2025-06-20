@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -212,7 +212,7 @@ So zeigen Sie die Eigenschaften an:
 
 ### Anzeigen der Live Copies einer Blueprint-Seite {#seeing-the-live-copies-of-a-blueprint-page}
 
-Mit Blueprint-Seiten (auf die in einer Blueprint-Konfiguration verwiesen wird) erhalten Sie eine Liste der Live Copy-Seiten, die die aktuelle (Blueprint-)Seite als Quelle verwenden. In dieser Liste können Sie die Live Copies nachverfolgen. Die Liste wird auf der Registerkarte **Blueprint** der [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) angezeigt.
+Mit Blueprint-Seiten (auf die in einer Blueprint-Konfiguration verwiesen wird) erhalten Sie eine Liste der Live Copy-Seiten, die die aktuelle (Blueprint-)Seite als Quelle verwenden. In dieser Liste können Sie die Live Copies nachverfolgen. Die Liste wird auf der Registerkarte **Blueprint** der Seite [Seiteneigenschaften.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![Registerkarte „Blueprint“ der Seiteneigenschaften](../assets/live-copy-blueprint-tab.png)
 

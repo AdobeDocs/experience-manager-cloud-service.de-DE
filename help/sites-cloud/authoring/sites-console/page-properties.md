@@ -1,373 +1,283 @@
 ---
-title: Bearbeiten der Seiteneigenschaften
-description: Erfahren Sie, wie Sie die Eigenschaften definieren, die für die Verwaltung einer Seite in AEM erforderlich sind.
+title: Seiteneigenschaften
+description: Erfahren Sie mehr über die verschiedenen Eigenschaften einer Seite und darüber, wie sie das Verhalten der Seite steuern und wie sie verwaltet wird.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: ht
-source-wordcount: '2454'
-ht-degree: 100%
+mini-toc-levels: 2
+source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
+workflow-type: tm+mt
+source-wordcount: '2138'
+ht-degree: 37%
 
 ---
 
-# Bearbeiten der Seiteneigenschaften {#editing-page-properties}
 
-Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. So können beispielsweise einige Seiten mit einer Live Copy verbunden sein, andere nicht, und die Informationen der Live Copy sind je nach Bedarf verfügbar.
+# Seiteneigenschaften {#page-properties}
 
-## Seiteneigenschaften {#page-properties}
+Erfahren Sie mehr über die verschiedenen Eigenschaften einer Seite und darüber, wie sie das Verhalten der Seite steuern und wie sie verwaltet wird.
 
-Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
+>[!TIP]
+>
+>Weitere Informationen zum Bearbeiten und Ändern der Eigenschaften einer Seite finden Sie im Dokument [Bearbeiten der Seiteneigenschaften.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 
-### Allgemein {#basic}
+## Übersicht und Verfügbarkeit von Eigenschaften {#overview}
 
-* **Titel und Tags**
+Seiteneigenschaften können viele Aspekte einer Seite steuern, vom Titel und Branding der Seite bis zu ihren Berechtigungen. Die Eigenschaften sind auf mehrere Registerkarten verteilt, von denen einige je nach Seitentyp ausgeblendet sein können. Wie die meisten Eigenschaften in AEM [ Seiteneigenschaften vererbt werden.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
-   * **Titel** – Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
-      * Dies ist ein Pflichtfeld.
-   * **Tags** – Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
-      * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
-      * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
-         * Der neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
-         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
-      * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
-      * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
-      * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/sites-console/tags.md).
-   * **In der Navigation ausblenden** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll.
+>[!NOTE]
+>
+>In diesem Dokument werden alle möglichen Seiteneigenschaften beschrieben. Je nach Seitentyp sind nicht alle Eigenschaften verfügbar.
 
-* **Branding**
+## Registerkarte „Allgemein“ {#basic}
 
-  Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 oder später der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
+### Titel und Tags {#title-tags}
 
-   * **Marken-Slug**
+* **Titel** - Definiert den Meta-Titel der Seite für SEO-Zwecke sowie den im Seiteninhalt angezeigten Titel (sofern nicht überschrieben)
+   * Der Seitentitel wird an verschiedenen Stellen in der Benutzeroberfläche von AEM angezeigt, einschließlich der Karten **/** in der [Sites-Konsole.](/help/sites-cloud/authoring/sites-console/introduction.md)
+   * Dies ist ein Pflichtfeld.
+* **Tags** - Definiert die Seiten-Meta-Tags für SEO-Zwecke
+   * Sie können der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
+   * Verwenden Sie die Dropdown-Liste, um aus vorhandenen Tags auszuwählen.
+   * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
+   * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
+      * Der neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
+      * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
+   * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
+   * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags.](/help/sites-cloud/authoring/sites-console/tags.md)
+* **In der Navigation ausblenden** - Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll
 
-      * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-         * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
-      * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
-         * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
+### Branding {#branding}
 
-* **HTML-ID**
+Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-   * **ID** – HTML-ID, die auf die Komponente angewandt wird.
+* **Marken-Slug**
+   * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
+      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
+   * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
+      * Der Wert wird nach einem Pipe-Zeichen wie `Cycling Tuscany | Always ready for the WKND` an den Seitentitel angehängt
 
-* **Weitere Titel und Beschreibungen**
+### HTML-ID {#html-id}
 
-   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn dies leer gelassen wird, wird der **Titel** verwendet.
-   * **Navigationstitel**: Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen). Wenn dies leer gelassen wird, wird der **Titel** verwendet.
-   * **Untertitel**: Ein Untertitel zur Verwendung auf der Seite.
-   * **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
+* **ID** – HTML-ID, die auf die Komponente angewandt wird.
 
-* **Einschaltzeit/Ausschaltzeit**
+### Weitere Titel und Beschreibungen {#more-titles}
 
-  >[!NOTE]
-  >
-  > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [Ein- und Ausschaltzeiten – Trigger-Konfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration).
+* **Seitentitel** - Ein Titel zur Verwendung auf der Seite
+   * Dies wird normalerweise von Titelkomponenten verwendet.
+   * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+* **Navigationstitel** - Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten).
+   * Wenn leer, wird **Seitentitel** verwendet.
+* **Untertitel** - Ein Untertitel zur Verwendung auf der Seite
+* **Beschreibung** - Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten
 
-  >[!NOTE]
-  >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
+### Einschaltzeit/Ausschaltzeit {#on-off-time}
 
-   * **Einschaltzeit**: Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Publishing-Umgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
+Die Ein-/Ausschaltzeit für eine Seite ist eine praktische Methode, um bereits veröffentlichte Inhalte vorübergehend auszublenden. Der Inhalt bleibt auf der Veröffentlichungsinstanz, wenn er deaktiviert ist. Durch Deaktivieren einer Seite wird die Veröffentlichung des Inhalts nicht rückgängig gemacht.
 
-      * Wenn diese Seite bereits [(manuell) veröffentlicht wurde](/help/sites-cloud/authoring/sites-console/publishing-pages.md), wird sie bis zum Rendern am angegebenen Zeitpunkt ruhend (ausgeblendet) gehalten.
-      * Wenn die Seite nicht veröffentlicht, aber für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
-      * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
+* **Einschaltzeit**: Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Publishing-Umgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
-   * **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Publishing-Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
+   * Wenn sie bereits [veröffentlicht](/help/sites-cloud/authoring/sites-console/publishing-pages.md) ist diese Seite in der Veröffentlichungsinstanz verfügbar, ruht jedoch (ausgeblendet), bis sie zum angegebenen Zeitpunkt gerendert wird.
+   * Wenn die Seite nicht veröffentlicht und [für die automatische Replikation konfiguriert) ](/help/operations/replication.md#on-and-off-times-trigger-configuratio), wird sie automatisch veröffentlicht und zum angegebenen Zeitpunkt gerendert.
+   * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht, sodass eine 404 angezeigt wird, wenn versucht wird, auf die Seite zuzugreifen.
 
-   * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
+* **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Publishing-Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
 
-* **Vanity-URL**
+Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie veröffentlichen möchten, leer und stehen sofort zur Verfügung und stehen in der Veröffentlichungsumgebung zur Verfügung, bis sie deaktiviert werden (das normale Szenario).
 
-   * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, was es Ihnen ermöglicht, eine kürzere bzw. aussagekräftigere URL zu verwenden.
-   * Beispiel: Wenn die Vanity-URL `welcome` für die Seite mit dem Pfad `/v1.0/startpage` auf der Website `http://example.com` verwendet wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`
+>[!NOTE]
+>Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
-  >[!CAUTION]
-  >
-  >Vanity-URLs:
-  >
-  >* müssen eindeutig sein, Sie müssen also darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
-  >* unterstützen keine Regex-Muster.
-  >* sollten nicht auf eine vorhandene Seite eingestellt sein.
+>[!TIP]
+>
+>Ein-/Ausschaltzeiten behandeln ausschließlich bereits veröffentlichte Inhalte (entweder manuell oder über automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Ein-/Ausschaltzeiten ausgelöst, und Ein-/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Aus diesem Grund sind Ein-/Ausschaltzeiten am besten geeignet, um vorübergehend Inhalte anzuzeigen/auszublenden, die bereits genehmigt und veröffentlicht sind.
+>
+>Wenn Sie neue Inhalte mit allen zugehörigen Workflows veröffentlichen oder Inhalte vollständig von Ihrer Site entfernen (Veröffentlichung aufheben) möchten, sollten Sie [Veröffentlichung verwalten“](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
 
-   * **Hinzufügen** – Wählen Sie dies aus, um ein Feld anzuzeigen, in dem eine Vanity-URL für die Seite definiert wird.
-      * Wählen Sie es erneut aus, um mehrere hinzuzufügen.
-      * Wählen Sie das Symbol **Entfernen** aus, um die Vanity-URL zu löschen.
-   * **Vanity-URL umleiten** – Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
+### Vanity-URL {#vanity-url}
 
-### Erweitert {#advanced}
+Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, sodass Sie eine kürzere und/oder ausdrucksstärkere URL verwenden können. Beispiel: Wenn die Vanity-URL `welcome` für die Seite mit dem Pfad `/v1.0/startpage` auf der Website `http://example.com` verwendet wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`
 
-* **Einstellungen**
+>[!CAUTION]
+>
+>Vanity-URLs:
+>
+>* Muss eindeutig sein.
+>* unterstützen keine Regex-Muster.
+>* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
-   * **Sprache** – Die Seitensprache
-   * **Sprachstamm** – Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
-   * **Redirect** – Gibt die Seite an, zu der diese Seite automatisch mit einem HTML `302 Found`-Status weitergeleitet werden soll.
-      * **Ständige Umleitung** – Wenn diese Option aktiviert ist, wird die Seite zum Zielpfad weitergeleitet, der zusammen mit dem HTML-Status `301 Moved Permanently` bereitgestellt wird.
-   * **Design** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
-   * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
-      * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
-      * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
-      * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-cloud/authoring/sites-console/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-      * Siehe [„Lokalisierte Seitennamen“ unter „Best Practices für SEO- und URL-Verwaltung“](/help/overview/seo-and-url-management.md#localized-page-names).
+* **Hinzufügen** – Wählen Sie dies aus, um ein Feld anzuzeigen, in dem eine Vanity-URL für die Seite definiert wird.
+   * Wählen Sie es erneut aus, um mehrere hinzuzufügen.
+   * Wählen Sie das Symbol **Entfernen** aus, um die Vanity-URL zu löschen.
+* **Vanity-URL umleiten** - Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll oder ob eine Umleitung zur tatsächlichen URL der Seite erfolgen soll.
 
-* **Konfiguration**
+## Erweitert {#advanced}
 
-   * **Von &lt;path> geerbt** – Aktivierung/Deaktivierung der Vererbung; stellt die Verfügbarkeit der **Cloud-Konfiguration** zur Auswahl
+### Einstellungen {#settings}
 
-   * **Cloud-Konfiguration** – Der Pfad zur gewählten Konfiguration
+* **Sprache** – Die Seitensprache
+* **Sprachstamm** – Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
+* **Umleiten** - Gibt die Seite an, zu der diese Seite automatisch mit einem HTML-`302 Found` umgeleitet werden soll
+   * **Ständige Umleitung** – Wenn diese Option aktiviert ist, wird die Seite zum Zielpfad weitergeleitet, der zusammen mit dem HTML-Status `301 Moved Permanently` bereitgestellt wird.
+* **Design**
+* **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
+   * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
+   * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
+   * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-cloud/authoring/sites-console/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+   * Weitere [ finden Sie unter „Lokalisierte Seitennamen“ unter „Best Practices für SEO](/help/overview/seo-and-url-management.md#localized-page-names) und URL-Verwaltung“.
 
-* **Vorlageneinstellungen**
+### Konfiguration {#configuration}
 
-   * **Erlaubte Vorlagen**: [Definiert die Liste der Vorlagen, die innerhalb dieses Unterzweigs verfügbar sind](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
-   * **Seite als Vorlage verwenden**: [Erstellt eine neue Vorlage basierend auf der aktuellen Seite.](/help/sites-cloud/authoring/universal-editor/templates.md)
-      * Gilt nur für Seiten, die für den universellen Editor unter Verwendung von Edge Delivery Services erstellt wurden.
+* **Von &lt;path> geerbt** - Aktivierung/Deaktivierung der Vererbung der **Cloud-Konfiguration** für die Seite
+   * Schaltet die Verfügbarkeit der **Cloud-Konfiguration** zur Bearbeitung um
 
-* **Authentifizierungspflicht**
+* **Cloud-Konfiguration** – Der Pfad zur gewählten Konfiguration
 
-   * **Aktivieren** - Aktivieren Sie die Verwendung der Authentifizierung für den Zugriff auf die Seite.
+### Vorlageneinstellungen {#template-settings}
 
-     >[!NOTE]
-     >
-     >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
+* **Erlaubte Vorlagen**: [Definiert die Liste der Vorlagen, die innerhalb dieses Unterzweigs verfügbar sind](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
+   * Jeder Wert muss ein absoluter Pfad zu einer Vorlage sein.
+   * Verwenden Sie `/.*`, um alle Vorlagen unter diesem Pfad zuzulassen.
+* **Seite als Vorlage verwenden**: [Erstellt eine neue Vorlage basierend auf der aktuellen Seite.](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * Gilt nur für Seiten, die für den universellen Editor unter Verwendung von Edge Delivery Services erstellt wurden.
 
-   * **Anmeldeseite** - Die für die Anmeldung zu verwendende Seite
+### Authentifizierungspflicht {#authentication}
 
-* **Export**
+* **Aktivieren** - Aktiviert die Verwendung der Authentifizierung für den Zugriff auf die Seite
 
-   * **Exportkonfiguration** – Gibt eine Exportkonfiguration an
+>[!NOTE]
+>
+>Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
 
-* **SEO**
+* **Anmeldeseite** - Die für die Anmeldung zu verwendende Seite
 
-   * **Kanonische URL**: Kann verwendet werden, um die kanonische URL der Seite zu überschreiben; wenn Sie das Feld leer lassen, dient die URL der Seite als ihre kanonische URL
+### Export {#export}
 
-   * **Robots-Tags** – Wählen Sie die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
+* **Exportkonfiguration** – Gibt eine Exportkonfiguration an
 
-     >[!NOTE]
-     >
-     >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit größerer Berechtigung Vorrang.
+## SEO {#seo}
 
-   * **Sitemap generieren**: Wenn ausgewählt, wird eine sitemap.xml für diese Seite und ihre Unterseiten generiert
+* **Kanonische URL** - Wird zum Überschreiben der kanonischen URL der Seite verwendet
+   * Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL.
 
-### Bilder {#images}
+* **Robots-Tags** - Wählen Sie im Dropdown-Menü die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern
+   * Einige Optionen stehen im Konflikt miteinander, wobei in diesem Fall die Option mit größerer Berechtigung Vorrang hat.
 
-* **Vorgestelltes Bild**
+* **Sitemap generieren** - Wenn ausgewählt, wird ein `sitemap.xml` für diese Seite und ihre untergeordneten Elemente generiert.
 
-  Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
+## Bilder {#images}
 
-   * **Bild**
+### Vorgestelltes Bild {#featured-image}
 
-     Sie können ein Asset **auswählen** oder nach einer hochzuladenden Datei suchen und diese dann **bearbeiten** oder **löschen**.
+In diesem Abschnitt wird das anzuzeigende Bild ausgewählt und konfiguriert. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
-   * **Alternativtext** – Ein Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt; z. B. für die Verwendung durch Bildschirmlesehilfen.
+* **Bild** - Sie können **Asset** „Auswählen“ oder nach einer hochzuladenden Datei suchen und dann **Bearbeiten** oder **Löschen** das ausgewählte Bild auswählen.
+* **Alternativtext** - Ein Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt und häufig von Sprachausgaben verwendet wird
+* **Vererben - Aus dem DAM-Asset stammender Wert** - Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der „Metadaten`dc:description` in DAM gefüllt.
 
-   * **Vererben – aus dem DAM-Asset stammender Wert** – Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der `dc:description`-Metadaten in DAM befüllt
+### Miniaturansicht {#thumbnail}
 
-* **Miniaturansicht**
+In diesem Abschnitt können Sie die Miniaturansicht für die Seite auswählen und konfigurieren. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
-  Konfigurieren der Miniatur der Seite
+* **Vorschau generieren** – Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
+* **Bild hochladen** – Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
+* **Bild auswählen** - Wählen Sie ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
+* **Wiederherstellen** – Diese Option wird verfügbar, nachdem Sie eine Änderung an der Miniatur vorgenommen haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
 
-   * **Vorschau generieren** – Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
-   * **Bild hochladen** – Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
-   * **Bild auswählen** – Wählen Sie ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
-   * **Wiederherstellen** – Diese Option wird verfügbar, nachdem Sie eine Änderung an der Miniatur vorgenommen haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
+## Cloud Services {#cloud-services}
 
-### Cloud Services {#cloud-services}
+* **Cloud Service-Konfigurationen** - Legt fest, welche Konfiguration für Cloud-Services für die Seite verwendet werden soll
+* **Vererbt von** - Für Live Copies und Sprachkopien werden Cloud-Konfigurationen standardmäßig von der Blueprint vererbt.
+   * Deaktivieren Sie diese Option, um die Vererbung zu überschreiben
 
-* **Cloud-Service-Konfigurationen** – Eigenschaften für Cloud-Services definieren
+## Personalisierung {#personalization}
 
-### Personalisierung {#personalization}
+### ContextHub-Konfigurationen {#contexthub-config}
 
-* **ContextHub-Konfigurationen**
+* **ContextHub-Pfad** – Definieren der [ContextHub-Konfiguration](/help/sites-cloud/authoring/personalization/contexthub.md)
+* **Segmentpfad** – Definieren des [Segmentpfads](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
-   * **Von &lt;path> geerbt** – Aktivierung/Deaktivierung der Vererbung; schaltet die Verfügbarkeit des **ContextHub-Pfads** und **Segmentpfads** ein oder aus
+### Konfiguration für Targeting {#targeting-config}
 
-   * **ContextHub-Pfad** – Definieren der [ContextHub-Konfiguration](/help/sites-cloud/authoring/personalization/contexthub.md)
-   * **Segmentpfad** – Definieren des [Segmentpfads](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+* **Marke** - Definiert eine [Marke, um einen Bereich für das Targeting anzugeben](/help/sites-cloud/authoring/personalization/targeted-content.md)
+   * Für diese Option muss das Benutzerkonto der `Target Administrators` Gruppe angehören.
 
-* **Konfiguration für Targeting**
+## Berechtigungen {#permissions}
 
-   * **Marke** – Legt eine [Marke fest, um einen Bereich für das Targeting anzugeben](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Verwenden Sie die **Berechtigungen**, um festzulegen, welche Benutzenden, Gruppen oder [geschlossenen Benutzergruppen (CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=de) auf die Seite zugreifen und/oder sie ändern können.
 
-  >[!NOTE]
-  >Für diese Option muss das Benutzerkonto der `Target Administrators`-Gruppe angehören.
+* **Hinzufügen von Berechtigungen**
+* **Geschlossene Benutzergruppe bearbeiten**
+* **Effektive Berechtigungen** anzeigen 
 
-### Berechtigungen {#permissions}
-
-* **Berechtigungen**
-
-   * **Hinzufügen von Berechtigungen**
-   * **Geschlossene Benutzergruppe bearbeiten**
-   * **Effektive Berechtigungen** anzeigen 
-
-### Blueprint {#blueprint}
+## Blueprint {#blueprint}
 
 Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copys und sind Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
 
-* **Aktuelle Live Copies**: Listet Seiten auf, die auf dieser Blueprint-Seite basieren (das heißt, Live Copies dieser Seite sind).
+* **Rollout** - Initiieren eines Rollouts von Blueprint-Inhalten an die Live Copies
+* **Live Copy-Übersicht** - öffnet ein Fenster zum Durchsuchen der Live Copy-Seitenstruktur
+* **Aktuelle Live Copies** - Eine Liste der Seiten, die auf der ausgewählten Blueprint-Seite basieren (also Live Copies davon sind)
 
-* **Rollout-Konfigurationen**: Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
+## Live Copy {#live-copy}
 
-### Live Copy {#live-copy}
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie [ Blueprints sind ](#blueprint) Live Copies Teil von [Multi-Site-Management.](/help/sites-cloud/administering/msm/overview.md)
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie Blueprints sind Live Copys Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
-
-* **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
-* **Zurücksetzen** – Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.
+* **Synchronisieren** - Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
+* **Zurücksetzen** - Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.
 * **Aussetzen** – Live Copy von weiteren Änderungen beim Rollout aussetzen
-* **Trennen** – Live Copy vom Blueprint trennen
+* **Trennen** - Live Copy vom Blueprint trennen
 
-* **Quelle**
+### Quelle {#source}
 
-   * Zeigt den Pfad des Blueprints für diese Live Copy an
+* Zeigt den Pfad des Blueprints für diese Live Copy an
 
-* **Status**
+### Status {#status}
 
-   * Listet den aktuellen Live Copy-Status der Seite auf
+* Listet den aktuellen Live Copy-Status der Seite auf
 
-* **Konfiguration**
+### Konfiguration {#live-copy-config}
 
-   * **Live Copy-Vererbung** – Bei Auswahl dieser Option gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
-   * **Rollout-Konfigurationen von übergeordneter Seite übernehmen** – Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
-   * **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite erben** nicht aktiviert ist.
+* **Live Copy-Vererbung** - Bei Auswahl dieser Option gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
+* **Rollout-Konfigurationen von übergeordneter Seite übernehmen** - Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
+* **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite erben** nicht aktiviert ist.
+* **Liste der ausgeschlossenen Pfade**
 
-### Vorschau {#preview}
+## Vorschau {#preview}
 
-Wenn eine Vorschau-Umgebung aktiviert ist, sehen Sie Folgendes:
+Wenn [Vorschauumgebung](/help/sites-cloud/authoring/sites-console/previewing-content.md) aktiviert ist, sind die folgenden Details verfügbar:
 
-* Vorschau-URL – die URL, die für den Zugriff auf die Inhalte in der Vorschau-Umgebung verwendet wird
+* **Vorschau-URL** - Die URL, die für den Zugriff auf die Inhalte in der Vorschauumgebung verwendet wird
 
-### Progressive Web App {#progressive-web-app}
+## Progressive Web App {#progressive-web-app}
 
-Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt PWA (Progressive Web App)-Funktionen für in AEM Sites erstellte Erlebnisse aktivieren.
+Durch eine einfache Konfiguration kann ein Inhaltsautor Funktionen progressiver Web-Apps (PWA) für in AEM Sites erstellte Erlebnisse aktivieren. Ihre Site kann sich dann wie eine native App verhalten, indem sie auf dem Startbildschirm des Geräts der Besucher installiert und offline verfügbar wird.
+
+{{pwa-deprecation}}
+
+### Installierbares Erlebnis konfigurieren {#config-pwa}
+
+* **PWA aktivieren** - Nach der Aktivierung können Besuchende der Seite die Site als PWA installieren.
+* **Start-URL** - URL, die geladen werden soll, wenn der Benutzer die Web-Anwendung startet
+   * Wenn die URL relativ ist, wird die Manifest-URL als Basis-URL zum Auflösen verwendet
+   * Wenn leer, wird die URL der Seite verwendet, von der die App installiert wurde.
+   * Es wird empfohlen, einen Wert festzulegen.
+* **Anzeigemodus** - Legt fest, wie der Browser ausgeblendet oder den Benutzenden anderweitig auf dem lokalen Gerät präsentiert werden soll
+* **Bildschirmausrichtung** - Wie die PWA Geräteausrichtungen handhabt
+* **Themenfarbe** - Die Farbe der App, die sich darauf auswirkt, wie das Betriebssystem der lokalen Benutzenden die native Symbolleiste der Benutzeroberfläche und die Navigationssteuerelemente anzeigt
+* **Hintergrundfarbe:** Hintergrundfarbe der App, die beim Laden der App angezeigt wird
+* **Symbol** - Das Symbol, das die App auf dem Gerät der Benutzenden darstellt, wenn die PWA installiert ist
+
+### Cache-Verwaltung (Erweitert) {#cache-management}
+
+* **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung** - Definiert das Caching-Modell für Ihre PWA.
+* **Dateien zum Zwischenspeichern für die Offline-Nutzung**
+   * **Vorab-Caching von Dateien (technische Vorschau)** - In AEM gehostete Dateien werden beim Installieren des Service-Sekundärs und vor dessen Verwendung im lokalen Browsercache gespeichert.
+   * **Client-seitige Bibliotheken** - Client-seitige Bibliotheken zum Zwischenspeichern für Offline-Erlebnisse
+   * **Pfadeinschlüsse** - Netzwerkanfragen für die definierten Pfade werden abgefangen, und zwischengespeicherte Inhalte werden entsprechend der konfigurierten Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung zurückgegeben
+   * **Pfadausschlüsse** - Diese Dateien werden unabhängig von den Einstellungen zum Vorab-Caching von Dateien und zu Pfadeinschlüssen niemals zwischengespeichert.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter [Aktivieren der Progressive Web App-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
 
-{{pwa-deprecation}}
-
-* **Konfigurieren eines installierbaren Erlebnisses**
-
-   * **PWA aktivieren** – Aktivierung/Deaktivierung der Funktion; ermöglicht es Benutzenden, die Site als PWA zu installieren
-   * **StartupURL** – die bevorzugte URL zum Start
-   * **Anzeigemodus** – Legt fest, wie der Browser ausgeblendet oder den Benutzenden anderweitig auf dem lokalen Gerät präsentiert werden soll
-   * **Bildschirmausrichtung** – Wie die PWA Geräteausrichtungen handhabt
-   * **Themenfarbe** – Die Farbe der App, die sich darauf auswirkt, wie das Betriebssystem der lokalen Benutzenden die native Symbolleiste der Benutzeroberfläche und die Navigationssteuerelemente anzeigt
-   * **Hintergrundfarbe** – Die Hintergrundfarbe der App, die beim Laden der App angezeigt wird
-   * **Symbol** – Hiermit wird das Symbol definiert, das die App auf dem Gerät der Benutzenden repräsentiert
-
-* **Cache-Verwaltung (erweitert)**
-
-   * **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung** – Definiert das Caching-Modell für Ihre PWA
-   * **Dateien zum Zwischenspeichern für die Offline-Nutzung**
-      * **Vorab-Caching von Dateien (technische Vorschau)**: In AEM gehostete Dateien werden beim Installieren des Service-Worker und vor dessen Verwendung im lokalen Browser-Cache gespeichert
-      * **Client-seitige Bibliotheken** – Client-seitige Bibliotheken zum Zwischenspeichern für Offline-Erlebnisse
-      * **Pfadeinschlüsse** – Netzwerkanfragen für die definierten Pfade werden abgefangen, und zwischengespeicherte Inhalte werden entsprechend der konfigurierten Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung zurückgegeben
-      * **Pfadausschlüsse** – Diese Dateien werden unabhängig von den Einstellungen zum Vorab-Caching von Dateien und zu Pfadeinschlüssen niemals zwischengespeichert
-
-## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
-
-* In der Konsole **Sites**:
-   * [beim Erstellen einer neuen Seite](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) (ein Teil der Eigenschaften)
-   * durch Klicken oder Tippen auf **Eigenschaften**
-      * Für eine einzelne Seite
-      * Für mehrere Seiten (nur eine Teilmenge der Eigenschaften steht zur Massenbearbeitung zur Verfügung)
-* Im Seiteneditor:
-   * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
-
-### In der Sites-Konsole (einzelne Seite) {#from-the-sites-console-single-page}
-
-durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften festzulegen:
-
-1. Navigieren Sie in der **Sites-Konsole** zu der Seite, für die Sie Eigenschaften anzeigen und bearbeiten möchten.
-1. Wählen Sie die Option **Eigenschaften** für die gewünschte Seite aus, indem Sie wahlweise Folgendes verwenden:
-   * [Schnellaktionen](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
-   * [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#selecting-resources)
-   * Die Seiteneigenschaften werden in den entsprechenden Registerkarten angezeigt.
-1. Sie können die Eigenschaften nach Bedarf anzeigen oder bearbeiten.
-1. Speichern Sie dann Ihre Aktualisierungen mit **Speichern** und klicken Sie danach auf **Schließen**, um zur Konsole zurückzukehren.
-
-### Beim Bearbeiten einer Seite {#when-editing-a-page}
-
-Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die Seiteneigenschaften definieren:
-
-1. Öffnen Sie die Seite, für die Sie Eigenschaften bearbeiten möchten.
-1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Auswahlmenü zu öffnen:
-1. Wählen Sie **Eigenschaften öffnen**. Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Eigenschaften bearbeiten können. Die Eigenschaften werden nach der entsprechenden Registerkarte sortiert. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
-   * **Abbrechen**
-   * **Speichern und schließen**
-1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
-
-### In der Sites-Konsole (mehrere Seiten) {#from-the-sites-console-multiple-pages}
-
-In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
-
-Sie können mehrere Seiten für die Massenbearbeitung mit verschiedenen Methoden auswählen, darunter:
-
-* Beim Durchsuchen der **Sites**-Konsole
-* Nach Verwendung von **Suche**, um einen Seitensatz zu finden
-
-Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
-
-![Massenbearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
-
-Sie können nur Massenbearbeitungen von Seiten durchführen, die:
-
-* den gleichen Ressourcentyp haben
-* nicht Teil einer Live Copy sind
-   * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
-
-Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
-
-* **Anzeigen**
-
-   * eine Liste der betroffenen Seiten
-      * Bei Bedarf können Sie Seiten auswählen oder ihre Auswahl aufheben
-      * Registerkarten
-         * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
-   * Eine Untergruppe von Eigenschaften
-      * Eigenschaften, die auf allen ausgewählten Seiten verfügbar sind und explizit als für die Massenbearbeitung verfügbar definiert wurden, sind sichtbar.
-      * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
-   * Gemeinsame Eigenschaften mit einem gemeinsamen Wert
-      * Nur Eigenschaften mit einem gemeinsamen Wert werden im Ansichtsmodus angezeigt.
-      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), werden die Werte nur angezeigt, wenn *alle* übereinstimmen. Wenn nur einige übereinstimmen, werden sie nur bei der Bearbeitung angezeigt.
-      * Wenn keine Eigenschaften mit einem gemeinsamen Wert vorhanden sind, wird eine Meldung angezeigt.
-
-* **Bearbeiten**
-
-   * Sie können die Werte in den verfügbaren Feldern aktualisieren.
-      * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
-   * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
-
-## Vererbung von Eigenschaften {#inheritance}
-
-Wenn die Seite auf einem Blueprint basiert oder anderweitig Inhalte von einer anderen Seite erbt, wird die Vererbung im Fenster **Seiteneigenschaften** für das jeweilige Feld angezeigt.
-
-![Vererbte Eigenschaften](assets/property-inhertiance.png)
-
-Vererbte Eigenschaften können nicht bearbeitet werden. Tippen oder klicken Sie auf das Symbol **Vererbung abbrechen** neben einem bestimmten Feld, um dessen Vererbung abzubrechen.
-
-![Vererbung abbrechen](assets/cancel-inheritance.png)
-
-Bestätigen Sie den Abbruch im Modal **Vererbung abbrechen**.
-
-![Modal mit Bestätigung des Abbruchs der Vererbung](assets/cancel-inheriance-confirmation.png)
-
-Sobald die Vererbung für ein Feld abgebrochen wurde, kann es bearbeitet werden.
-
-![Abgebrochene Vererbung](assets/property-inheritance-broken.png)
-
-Um die Vererbung zu reaktivieren, tippen oder klicken Sie auf das Symbol **Vererbung wiederherstellen** neben dem Feld.
-
-![Vererbung wiederherstellen](assets/revert-inheritance.png)
-
-Bestätigen Sie die Wiederherstellung im Modal **Vererbung wiederherstellen**.
-
-![Modal mit Bestätigung der Wiederherstellung der Vererbung](assets/revert-inhertiance-confirmation.png)
-
-Wählen Sie **Seite nach Zurücksetzen der Vererbung synchronisieren** aus, um das Feld mit den neuesten Werten im Blueprint zu aktualisieren. Andernfalls werden die Werte bei der nächsten Synchronisierung der Live Copy aktualisiert.
-
->[!TIP]
->
->Weitere Informationen zur Vererbung finden Sie im Dokument [Multi-Site-Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md).

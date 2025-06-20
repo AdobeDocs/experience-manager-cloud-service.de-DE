@@ -5,8 +5,8 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 100%
 
@@ -238,7 +238,7 @@ Die Aktionssymbolleiste wird nur angezeigt, wenn eine Ressource in der Konsole a
 * **Bearbeiten**: Je nachdem, wie die ausgewählte Seite erstellt wurde, öffnet die Aktion **Bearbeiten** den entsprechenden Editor.
    * [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md): Für Seiten, die mit dem AEM-Seiteneditor erstellt wurden.
    * [Universeller Editor](/help/sites-cloud/authoring/universal-editor/authoring.md): Für mit dem universellen Editor erstellte Seiten.
-* [**Eigenschaften**](/help/sites-cloud/authoring/sites-console/page-properties.md): Öffnet das Fenster „Seiteneigenschaften“.
+* [**Eigenschaften**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md): Öffnet das Fenster „Seiteneigenschaften“.
 * [**Sperren**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page): Sperrt eine Seite, um zu verhindern, dass sie von anderen geändert wird.
 * [**Kopieren**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page): Kopiert eine Seite.
 * [**Verschieben**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page): Verschiebt eine Seite oder benennt diese um.

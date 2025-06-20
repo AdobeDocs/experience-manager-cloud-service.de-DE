@@ -5,8 +5,8 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
-workflow-type: ht
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Sie können entweder [eine neue Seite erstellen](/help/sites-cloud/authoring/sit
 
 1. Verwenden Sie die Konsole **Sites**, um [zu der neuen oder vorhandenen Seite zu navigieren](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources), die Sie als Vorlage verwenden möchten, und tippen oder klicken Sie darauf, um sie auszuwählen.
 
-1. Sobald die Seite ausgewählt ist, tippen Sie auf das Symbol [**Eigenschaften** in der Symbolleiste oder klicken Sie auf das Symbol ](/help/sites-cloud/authoring/sites-console/page-properties.md).
+1. Sobald die Seite ausgewählt ist, tippen Sie auf das Symbol [**Eigenschaften** in der Symbolleiste oder klicken Sie auf das Symbol ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
 
 1. Wählen Sie unter dem Abschnitt **Vorlageneinstellungen** im Dialogfeld „Eigenschaften“ auf der Registerkarte **Erweitert** den Umschalter **Seite als Vorlage verwenden** aus.
 
