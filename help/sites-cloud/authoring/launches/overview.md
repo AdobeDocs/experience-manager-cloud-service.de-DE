@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 83%
+source-wordcount: '977'
+ht-degree: 85%
 
 ---
 
@@ -115,11 +115,13 @@ Launches ermöglichen Folgendes:
 
 ## Die Konsole „Launches“  {#the-launches-console}
 
+<!--
 >[!NOTE]
 >
->Diese Konsole ist nur für Launches für Seiten vorgesehen.
+>This console is only for Launches for Pages. 
 >
->Informationen zum Verwalten Ihrer Inhaltsfragmente finden Sie [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, auf diese zu reagieren.
 
