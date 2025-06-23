@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '13685'
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
+workflow-type: tm+mt
+source-wordcount: '13672'
 ht-degree: 100%
 
 ---
@@ -184,7 +184,7 @@ Das Einfügen von Multimedia auf Ihren AEM-Web-Seiten entspricht in etwa dem Ein
 
 #### Zweck: Untertitel (aufgezeichnet) (1.2.2) {#purpose-captions-prerecorded}
 
-Gehörlose und schwerhörige Menschen können nicht oder nur unter großen Schwierigkeiten auf Audioinhalte zugreifen. Bei den Untertiteln handelt es sich um Textäquivalente für gesprochenen und nicht gesprochenen Ton, die während des Videos an der entsprechenden Stelle auf dem Bildschirm angezeigt werden. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was passiert.
+Menschen, die taub oder schwerhörig sind, können Audioinhalte überhaupt nicht oder nur mit großen Schwierigkeiten aufrufen. Untertitel sind Textäquivalente für gesprochene und nicht-gesprochene Audioinhalte, die zum entsprechenden Zeitpunkt während des Videos auf dem Bildschirm angezeigt werden. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was passiert.
 
 #### Erfüllen: Untertitel (aufgezeichnet) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -201,12 +201,12 @@ Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text in die Videosp
 
 #### Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Verstehen der Erfolgskriterien 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
-* [Erfüllen der Erfolgskriterien 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+* [Erfolgskriterien 1.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [Erfolgskriterien 1.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C: Synchronisiertes Multimedia](https://www.w3.org/AudioVideo/)
-* [Untertitel, Transkripte und Audiobeschreibungen – mit WebAIM](https://webaim.org/techniques/captions/)
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 -->
 
 ### Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
