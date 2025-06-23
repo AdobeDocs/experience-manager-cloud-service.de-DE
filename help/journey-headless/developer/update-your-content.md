@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) as a Cloud Service bietet mehrere APIs für die B
 
 >[!NOTE]
 >
->[Unterstützung von Inhaltsfragmenten in der Assets-HTTP](/help/assets/content-fragments/assets-api-content-fragments.md)API ist jetzt [veraltet](/help/release-notes/deprecated-removed-features.md). Sie wurde ersetzt durch [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) zusammen mit [OpenAPIs für die Verwaltung von Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md).
+>Die [Unterstützung von Inhaltsfragmenten im Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) ist jetzt [veraltet](/help/release-notes/deprecated-removed-features.md). Sie wurde ersetzt durch die [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) zusammen mit [OpenAPIs für die Verwaltung von Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md).
 
 ## So geht es weiter {#whats-next}
 

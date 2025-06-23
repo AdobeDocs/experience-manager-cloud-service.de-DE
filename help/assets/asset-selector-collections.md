@@ -1,12 +1,12 @@
 ---
 title: Sammlungen im Asset-Wähler
-description: Arbeiten mit Asset-Selektor-Sammlungen.
+description: Arbeiten mit Sammlungen im Asset-Wähler
 role: Admin,User
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
 source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Die vollständige Dokumentation finden Sie unter [Bereitstellung von AEM-Inhalts
 
 >[!IMPORTANT]
 >
->Um die Bereitstellung von Inhaltsfragmenten mit OpenAPI in AEM as a Cloud Service zu aktivieren, stellen Sie sicher, dass sie nicht bereits aktiviert ist. Senden Sie dann ein Adobe-Support-Ticket mit dem Titel **Bereitstellung von Inhaltsfragmenten mit OpenAPI aktivieren** und geben Sie Folgendes an:
+>Um die Bereitstellung von Inhaltsfragmenten mit OpenAPI in AEM as a Cloud Service zu aktivieren, stellen Sie sicher, dass sie nicht bereits aktiviert ist. Reichen Sie dann ein Adobe-Support-Ticket mit dem Titel **Bereitstellung von Inhaltsfragmenten mit OpenAPI aktivieren** ein und geben Sie Folgendes an:
 >
->* die Cloud Service-Programm- und Umgebungs-ID(s)
+>* die ID(s) des Cloud Service-Programms und der Umgebung
 >* Details des Anwendungsfalls, den Sie mit der OpenAPI für die Bereitstellung von Inhaltsfragmenten lösen möchten
 >* Details zu allen Kontakten, auf die Adobe reagieren sollte, sowie Informationen zu Anfrage und Projekt (falls erforderlich)
 
@@ -58,23 +58,23 @@ Antworten werden dann zwischengespeichert, basierend auf vordefinierten Zwischen
 * Veraltete Inhalte können mit einem Fehler bis zu 1 Tag lang bereitgestellt werden.
    * `stale-on-error`=`86400`
 
-Bereitstellung von Inhaltsfragmenten mit OpenAPI unterstützt die Invalidierung des aktiven CDN-Caches. Das bedeutet, dass bei jeder Aktualisierung oder Veröffentlichung von Inhalten die entsprechenden JSON OpenAPI-Antworten über eine Soft-Bereinigungsanfrage an Fastly automatisch invalidiert werden. Auf diese Weise können Sie Änderungen sehen, die sich in der JSON-Ausgabe widerspiegeln, bevor die tatsächliche CDN-Cache-Seite (`s-maxage`) erreicht wird.
+Die Bereitstellung von Inhaltsfragmenten mit OpenAPI unterstützt die Invalidierung des aktiven CDN-Caches. Das bedeutet, dass bei jeder Aktualisierung oder Veröffentlichung von Inhalten die entsprechenden JSON OpenAPI-Antworten über eine Soft-Bereinigungsanfrage an Fastly automatisch invalidiert werden. Auf diese Weise können Sie Änderungen sehen, die sich in der JSON-Ausgabe widerspiegeln, bevor die tatsächliche CDN-Cache-Seite (`s-maxage`) erreicht wird.
 
 ## Verfügbarkeit {#availability}
 
 Die Bereitstellung von Inhaltsfragmenten mit OpenAPI ist auf der Vorschau- und Veröffentlichungsebene verfügbar. Die OpenAPI stellt Inhaltsfragmente im JSON-Format für die Vorschau und die Live-Bereitstellung bereit.
 
-Für die Vorschau kann die Bereitstellung von Inhaltsfragmenten mit OpenAPI:
+Für die Vorschau ermöglicht die Bereitstellung von Inhaltsfragmenten mit OpenAPI Folgendes:
 
-* In Vorschau veröffentlichen
-* Aktivieren des Zugriffs für die Vorschau mit IP-Zulassungsliste
-* Vorschau-URL abrufen
+* Veröffentlichen in der Vorschau
+* Aktivieren des Zugriffs auf die Vorschau mit einer IP-Zulassungsliste
+* Abrufen der Vorschau-URL
 
 ## CORS {#cors}
 
-[Zulässige CORS-Ursprünge](/help/headless/deployment/cross-origin-resource-sharing.md) definieren die Ursprünge, die die API aufrufen können.
+[Zulässige CORS-Ursprünge](/help/headless/deployment/cross-origin-resource-sharing.md) definieren die Ursprünge, die das API aufrufen können.
 
-Die auf der Dispatcher-Konfigurationsseite definierten zulässigen CORS-Ursprünge, speziell für GraphQL, werden von dieser API nicht berücksichtigt.
+Die auf der Dispatcher-Konfigurationsseite definierten zulässigen CORS-Ursprünge, speziell für GraphQL, werden von diesem API nicht berücksichtigt.
 
 <!-- 
 ## API Rate Limits {#api-rate-limits}

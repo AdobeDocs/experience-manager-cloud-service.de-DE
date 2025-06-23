@@ -6,16 +6,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # Lizenz-Dashboard {#license-dashboard}
 
-Cloud Manager bietet ein Dashboard, über das Sie die für Ihr Unternehmen oder Ihren Mandanten verfügbaren Produktberechtigungen für Adobe Experience Manager as a Cloud Service (AEMaaCS) leicht einsehen können.
+Cloud Manager bietet ein Dashboard, über das Sie die Produktberechtigungen für Adobe Experience Manager as a Cloud Service (AEMaaCS), die für Ihre Organisation oder Ihren Mandanten verfügbar sind, einfach einsehen können.
 
 >[!IMPORTANT]
 >
@@ -41,7 +41,7 @@ Das Lizenz-Dashboard von Cloud Manager bietet einfachen Zugriff auf Berechtigung
 
 Das Dashboard ist in drei Abschnitte unterteilt, die Ihnen Folgendes zeigen:
 
-* **Lösungen** - Welche Lösungen haben Sie lizenziert? Beispielsweise Sites, Edge Delivery Services und Assets unter anderem.
+* **Lösungen**: Die von Ihnen lizenzierten Lösungen. Beispielsweise Sites, Edge Delivery Services, Assets u. a.
 
   ![Lösungsliste](assets/solutions.png)
 

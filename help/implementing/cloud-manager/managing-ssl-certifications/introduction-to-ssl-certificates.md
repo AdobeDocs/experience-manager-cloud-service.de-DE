@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1160'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Nachdem das DV-Zertifikat erstellt wurde, erneuert Adobe es automatisch alle dre
 
 >[!IMPORTANT]
 >
->Wenn Ihre Umgebung (DV) SSL-Zertifikate mit einer CNAME-basierten Validierung verwendet, beachten Sie, dass das Entfernen des CNAME-Eintrags vor der automatischen Zertifikatsverlängerung dazu führen kann, dass die Verlängerung fehlschlägt. Die Entfernung kann zur Gültigkeitsdauer des Zertifikats und zur Unterbrechung des Services führen. Um dieses Problem zu vermeiden, stellen Sie sicher, dass der CNAME-Eintrag während des gesamten Erneuerungsprozesses bestehen bleibt. Der Erneuerungsprozess beruht auf dem Vorhandensein des CNAME-Eintrags für die Domain-Eigentümervalidierung.
+>Wenn Ihre Umgebung (DV)-SSL-Zertifikate mit einer CNAME-basierten Validierung verwendet, beachten Sie, dass das Entfernen des CNAME-Eintrags vor der automatischen Zertifikatsverlängerung dazu führen kann, dass die Verlängerung fehlschlägt. Das Entfernen kann zum Ablauf des Zertifikats und zur Unterbrechung des Services führen. Um dieses Problem zu vermeiden, stellen Sie sicher, dass der CNAME-Eintrag während des gesamten Verlängerungsprozesses bestehen bleibt. Der Verlängerungsprozess basiert auf dem Vorhandensein des CNAME-Eintrags für die Validierung der Domain-Inhaberschaft.
 
 ### Kundenseitig verwaltete SSL-Zertifikate (OV/EV) {#customer-managed}
 

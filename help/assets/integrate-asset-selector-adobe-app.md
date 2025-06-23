@@ -1,12 +1,12 @@
 ---
-title: Asset-Selektor mit  [!DNL Adobe]  integrieren
+title: Integrieren des Asset-Wählers mit einer [!DNL Adobe] -Anwendung
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
 source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '813'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

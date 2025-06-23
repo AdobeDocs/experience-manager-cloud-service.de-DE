@@ -1,12 +1,12 @@
 ---
-title: Hochladen von Assets in der Asset-Auswahl
-description: Hochladen von Assets in den Asset-Wähler-Modus mithilfe der Upload-Funktion
+title: Hochladen von Assets in den Asset-Wähler
+description: Hochladen von Assets in den MFE-Asset-Wähler mithilfe der Upload-Funktion
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

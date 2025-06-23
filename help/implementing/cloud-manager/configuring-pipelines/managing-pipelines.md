@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Sie können auch auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe
 
 ![Pipeline-Aktionen](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
-### Pipeline-Favoriten markieren{#pipeline-favorites}
+### Markieren von Pipeline-Favoriten{#pipeline-favorites}
 
 Sie können bestimmte Pipelines als Favoriten markieren, damit sie oben in der Liste auf der Seite **Pipelines** angezeigt werden. Diese Funktion erleichtert das Auffinden und Ausführen häufig verwendeter Pipelines.
 
@@ -69,8 +69,8 @@ Sie können bestimmte Pipelines als Favoriten markieren, damit sie oben in der L
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte ![Registerkarte „Pipelines“ – Workflow Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
-1. Klicken Sie auf der Seite Pipelines links neben einem Pipeline-Namen und -Typ auf ![Sternsymbol für nicht bevorzugte Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg), um sie der Favoritenliste hinzuzufügen.
-Klicken Sie alternativ auf ![Sternsymbol für eine Lieblings-Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg), um die Pipeline aus Ihrer Favoritenliste zu entfernen.
+1. Klicken Sie auf der Seite „Pipelines“ links neben einem Pipeline-Namen und -Typ auf ![Sternsymbol für eine nicht favorisierte Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg), um sie der Favoritenliste hinzuzufügen.
+Klicken Sie alternativ auf ![Sternsymbol für eine favorisierte Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg), um die Pipeline aus Ihrer Favoritenliste zu entfernen.
 
 
 ## Seite „Aktivität“ {#activity}

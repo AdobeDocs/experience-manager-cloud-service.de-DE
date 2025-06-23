@@ -1,67 +1,66 @@
 ---
-title: AEM Forms AI Assistant - Prompt Library
-description: Sammlung bewährter Eingabeaufforderungsmuster und Beispiele zum Erstellen von Formularen mit KI-Unterstützung in der Forms-Verwaltungsoberfläche, im adaptiven Forms-Editor und im universellen Editor.
+title: AEM Forms KI-Assistent – Bibliothek für Prompts
+description: Sammlung bewährter Prompt-Muster und Beispiele zum Erstellen von Formularen mit KI-Unterstützung in der Benutzeroberfläche für die Formularverwaltung, im Editor für adaptive Formulare und im universellen Editor.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
-workflow-type: tm+mt
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
+workflow-type: ht
 source-wordcount: '1613'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# AEM Forms KI-Assistent – Bibliothek für Prompts
 
-
-# AEM Forms AI Assistant - Prompt Library
-
-Sammlung wiederverwendbarer Eingabeaufforderungsmuster und Beispiele für gängige Szenarien zur Formularerstellung. Stellen Sie sich diese Vorlagen vor, um sie an Ihre spezifischen Anforderungen anzupassen. In jedem Abschnitt wird ein bestimmtes Nutzungsszenario mit Hinweisen zur Verwendung und bewährten Beispielen behandelt.
+Sammlung wiederverwendbarer Prompt-Muster und Beispiele für gängige Szenarien zur Formularerstellung. Stellen Sie sich diese als Vorlagen vor, die sie an Ihre spezifischen Anforderungen anpassen können. In jedem Abschnitt wird ein bestimmter Anwendungsfall mit Hinweisen zur Verwendung und bewährten Beispielen behandelt.
 
 >[!NOTE]
 >
-> Der KI-Assistent für AEM Forms ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com , um den Zugriff anzufordern.
+> Der KI-Assistent für AEM Forms ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com, um den Zugriff anzufordern.
 
 >[!IMPORTANT]
 >
-> **Dokumentation kann sich ändern**: Diese Eingabeaufforderungsbibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Eingabeaufforderungen, Beispiele und Best Practices können sich ändern, da sich der KI-Assistent für AEM Forms während des Early-Adopter-Programms weiterentwickelt.
+> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da der KI-Assistent für AEM Forms während des Early-Adopter-Programms weiterentwickelt wird.
 
 ## Best Practices für optimale Ergebnisse
 
 Um den KI-Assistenten optimal zu nutzen, sollten Sie die folgenden Tipps beachten:
 
-### Einfach beginnen, inkrementell erstellen
+### Beginnen Sie einfach und bauen Sie inkrementell auf
 
-Beginnen Sie mit kleineren, spezifischen Befehlen (z. B. „Fügen Sie eine Texteingabe für „Vorname“ hinzu„) anstatt zu komplexer mehrstufiger Anfragen. Dieser Ansatz hilft, Genauigkeit sicherzustellen, und erleichtert die Fehlerbehebung, wenn etwas nicht wie erwartet funktioniert.
+Beginnen Sie mit einfachen, spezifischen Befehlen (z. B. „Füge eine Texteingabe für den Vornamen hinzu“) anstatt zu komplexer mehrstufiger Anfragen. Dieser Ansatz hilft, Genauigkeit sicherzustellen, und erleichtert die Fehlerbehebung, falls etwas nicht wie erwartet funktioniert.
 
-**Beispiel für einfachen Start:**
+**Beispiel für einen einfachen Start:**
 
 ```
 Add a text input field for "First Name" with placeholder "Enter your first name"
 ```
 
-**Erstellen Sie dann inkrementell:**
+**Bauen Sie dann inkrementell auf:**
 
 ```
 Make @firstName mandatory and add validation message "First name is mandatory"
 ```
 
-### Verwenden der Terminologie von AEM Forms
+### Verwenden Sie die Terminologie von AEM Forms
 
-Verwenden Sie Begriffe wie „Bedienfeld“, „Texteingabefeld“, „Kontrollkästchen-Gruppe“, „Übermittlungsaktion“, „Regel“ usw., um das Verständnis durch den Assistenten zu verbessern. Dadurch wird sichergestellt, dass die KI Ihre Anfragen im AEM Forms-Kontext korrekt interpretiert.
+Verwenden Sie Begriffe wie „Panel“, „Texteingabefeld“, „Kontrollkästchengruppe“, „Übermittlungsaktion“, „Regel“ usw., um das Verständnis durch den Assistenten zu verbessern. Dadurch wird sichergestellt, dass die KI Ihre Anfragen im Kontext von AEM Forms korrekt interpretiert.
 
 **Bevorzugte Begriffe:**
 
-- „Textfeld“ anstelle von „Textfeld“
-- „Kontrollkästchen-Gruppe“ anstelle von „Kontrollkästchen“
-- „Dropdown“ anstelle von „Liste auswählen“
-- „Bedienfeld“ anstelle von „Abschnitt“ oder „Container“
+- „Texteingabefeld“ anstelle von „Textfeld“
+- „Kontrollkästchengruppe“ anstelle von „mehrere Kontrollkästchen“
+- „Dropdown“ anstelle von „Liste zum Auswählen“ oder „Auswahlliste“
+- „Panel“ anstelle von „Abschnitt“ oder „Container“
 - „Übermittlungsaktion“ anstelle von „Formularübermittlung“
 - „Regel“ anstelle von „Logik“ oder „Bedingung“
 
-### Referenzfelder klar
+### Referenzieren Sie Felder klar
 
-Verwenden Sie beim Konfigurieren vorhandener Felder die @fieldName (z. B. &quot;@firstName obligatorisch machen„). Dies hilft der KI, genau zu erkennen, auf welches Feld Sie sich beziehen, insbesondere in komplexen Formularen mit vielen Feldern.
+Verwenden Sie beim Konfigurieren vorhandener Felder die Schreibweise @fieldName (z. B. „Mach @firstName obligatorisch“). Dies hilft der KI, genau zu erkennen, auf welches Feld Sie sich beziehen, insbesondere in komplexen Formularen mit vielen Feldern.
 
 **Beispiele:**
 
@@ -69,67 +68,67 @@ Verwenden Sie beim Konfigurieren vorhandener Felder die @fieldName (z. B. &quot;
 - `Show @spouseInfo panel when @maritalStatus equals "Married"`
 - `Set @country default value to "United States"`
 
-### Pläne immer überprüfen
+### Überprüfen Sie die Pläne immer
 
-Prüfen Sie die Pläne stets sorgfältig auf vom Assistenten vorgeschlagene Änderungen im universellen Editor, bevor Sie auf „Anwenden“ klicken. Die KI zeigt Ihnen, was sie plant - nehmen Sie sich einen Moment Zeit, um zu überprüfen, ob dies Ihren Erwartungen entspricht.
+Prüfen Sie die Pläne stets sorgfältig im universellen Editor auf vom Assistenten vorgeschlagene Änderungen, bevor Sie auf „Anwenden“ klicken. Die KI zeigt Ihnen, was sie vorhat – nehmen Sie sich einen Moment Zeit, um zu überprüfen, ob dies Ihren Erwartungen entspricht.
 
-### Manuell validieren
+### Manuelles Validieren
 
-Nachdem der Assistent Änderungen vorgenommen hat, sollten Sie Ihr Formular immer in der Vorschau anzeigen und testen, um sicherzustellen, dass es sich wie erwartet verhält und aussieht. KI ist ein leistungsstarkes Tool, aber die endgültige Validierung ist der Schlüssel zur Qualitätssicherung.
+Nachdem der Assistent Änderungen vorgenommen hat, sollten Sie Ihr Formular immer in der Vorschau anzeigen und testen, um sicherzustellen, dass es sich wie erwartet verhält und aussieht. KI ist ein leistungsstarkes Tool, aber die endgültige Validierung ist entscheidend, um die Qualität sicherzustellen.
 
 **Validierungs-Checkliste:**
 
 - Testen der Formularfunktionalität im Vorschaumodus
-- Überprüfen, ob die bedingte Logik ordnungsgemäß funktioniert
-- Reaktionsfähigkeit auf Mobilgeräte prüfen
-- Testformularübermittlung
+- Überprüfen, ob bedingte Logik ordnungsgemäß funktioniert
+- Prüfen der Reaktionsfähigkeit bei Mobilgeräten
+- Testen der Formularübermittlung
 - Validieren der Barrierefreiheitsfunktionen
 
 ### Iterieren und verfeinern
 
-Wenn die erste Eingabeaufforderung nicht das genaue Ergebnis liefert, versuchen Sie, die Anfrage neu zu formulieren oder in kleinere Schritte aufzuteilen. Die KI lernt aus dem Kontext, sodass die Bereitstellung spezifischerer Details oft die Ergebnisse verbessert.
+Wenn der erste Prompt nicht das genaue Ergebnis liefert, versuchen Sie, die Anfrage neu zu formulieren oder in kleinere Schritte aufzuteilen. Die KI lernt aus dem Kontext, sodass die Bereitstellung spezifischerer Details oft die Ergebnisse verbessert.
 
 **Iterationsbeispiel:**
 
-1. Erster Versuch: „Formular mobilfreundlich gestalten“
-2. Verfeinert: „Optimieren Sie das Formular-Layout für mobile Bildschirme unter 768 Pixel mit einspaltigem Layout und größeren Touch-Zielen“
+1. Erster Versuch: „Gestalte das Formular mobilfreundlich“
+2. Verfeinert: „Optimiere das Formular-Layout für mobile Bildschirme unter 768 Pixel mit einspaltigem Layout und größeren Touch-Zielen“
 
-### Feedback geben
+### Geben Sie Feedback
 
-Verwenden Sie den integrierten Feedback-Mechanismus, damit die Assistenzkraft lernen und sich verbessern kann. Ihr Feedback hilft dabei, die KI für alle besser zu machen.
+Verwenden Sie den integrierten Feedback-Mechanismus, damit der Assistent lernen und sich verbessern kann. Ihr Feedback hilft dabei, die KI für alle besser zu machen.
 
 
 ## Beispiele für inkrementelle Entwicklung
 
-Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, einfach anfangen und schrittweise Komplexität hinzufügen:
+Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem Sie einfach anfangen und schrittweise Komplexität hinzufügen:
 
 ### Beispiel 1: Inkrementelles Erstellen eines Kontaktformulars
 
-**Schritt 1 - Einfach starten:**
+**Schritt 1 – Einfach starten:**
 
 ```
 Create a basic contact form with name, email, and message fields
 ```
 
-**Schritt 2: Validierung hinzufügen:**
+**Schritt 2 – Validierung hinzufügen:**
 
 ```
 Make @name and @email mandatory fields with appropriate validation
 ```
 
-**Schritt 3: Verbessern des Benutzererlebnisses:**
+**Schritt 3 – Verbessern des Benutzererlebnisses:**
 
 ```
 Add placeholder text: @name "Your full name", @email "your.email@company.com", @message "Tell us how we can help"
 ```
 
-**Schritt 4: Erweiterte Funktionen hinzufügen:**
+**Schritt 4 – Erweiterte Funktionen hinzufügen:**
 
 ```
 Add a dropdown @inquiryType with options: "General Question", "Support Request", "Sales Inquiry", "Partnership"
 ```
 
-**Schritt 5: Implementieren einer bedingten Logik:**
+**Schritt 5 – Implementieren einer bedingten Logik:**
 
 ```
 Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "Support Request"
@@ -137,37 +136,37 @@ Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "S
 
 ### Beispiel 2: Inkrementelles Erstellen eines Registrierungsformulars
 
-**Schritt 1: Grundstruktur:**
+**Schritt 1 – Grundstruktur:**
 
 ```
 Create a user registration form with personal information panel
 ```
 
-**Schritt 2: Hinzufügen von Kernfeldern:**
+**Schritt 2 – Hinzufügen von Kernfeldern:**
 
 ```
 Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
 ```
 
-**Schritt 3 - Validierung hinzufügen:**
+**Schritt 3 – Hinzufügen der Validierung:**
 
 ```
 Make @firstName, @lastName, and @email mandatory with real-time validation
 ```
 
-**Schritt 4: Hinzufügen von Kontoinformationen:**
+**Schritt 4 – Hinzufügen von Kontoinformationen:**
 
 ```
 Create a new panel "Account Information" with @username and @password fields
 ```
 
-**Schritt 5: Verbesserung der Sicherheit:**
+**Schritt 5 – Verbessern der Sicherheit:**
 
 ```
 Add password confirmation field @confirmPassword with validation to match @password
 ```
 
-**Schritt 6: Voreinstellungen hinzufügen:**
+**Schritt 6 – Hinzufügen der Voreinstellungen:**
 
 ```
 Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
@@ -176,17 +175,17 @@ Create "Preferences" panel with @newsletter checkbox and @communicationMethod ra
 Dieser inkrementelle Ansatz hilft Ihnen bei Folgendem:
 
 - Probleme frühzeitig erkennen, bevor sie zunehmen
-- Testen Sie jede Funktion gründlich
-- Nehmen Sie Anpassungen auf der Grundlage des Benutzer-Feedbacks vor
+- Gründliches Testen jeder Funktion
+- Vornehmen von Anpassungen auf der Grundlage des Benutzer-Feedbacks
 - Bessere Kontrolle über den Entwicklungsprozess
 
-## Starten von New Forms
+## Starten neuer Formulare
 
-**Verwendung:** Am Anfang jedes Formularprojekts. Diese Eingabeaufforderung hilft der KI, Ihre Anforderungen zu verstehen und die Foundation-Struktur zu erstellen.
+**Verwendung:** Am Anfang jedes Formularprojekts. Dieser Prompt hilft der KI, Ihre Anforderungen zu verstehen und die grundlegende Struktur zu erstellen.
 
-**Verwendung:** Beginnen Sie mit der grundlegenden Struktur und den grundlegenden Anforderungen. Geben Sie den Formulartyp, die Zielgruppe und den Hauptzweck an. Komplexität in nachfolgenden Eingabeaufforderungen hinzufügen.
+**Verwendung:** Beginnen Sie mit der grundlegenden Struktur und den wichtigsten Anforderungen. Geben Sie den Formulartyp, die Zielgruppe und den Hauptzweck an. Fügen Sie in nachfolgenden Prompts Komplexität hinzu.
 
-**Beispielaufforderung - Einfaches Starten:**
+**Beispiel-Prompt – Einfaches Starten:**
 
 ```
 Create a **customer onboarding form** for new bank account applications with:
@@ -199,7 +198,7 @@ Create a **customer onboarding form** for new bank account applications with:
 Start with a simple layout that we can enhance step by step.
 ```
 
-**Erstellen Sie dann inkrementell:**
+**Bauen Sie dann inkrementell auf:**
 
 ```
 Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
@@ -213,7 +212,7 @@ Add employment information panel with @employer, @jobTitle, and @annualIncome fi
 Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
 ```
 
-**Alternative einfache Startaufforderungen:**
+**Alternative Prompts zum einfachen Starten:**
 
 ```
 Create a basic **event registration form** with name, email, and event selection fields
@@ -227,13 +226,13 @@ Build a simple **contact form** with name, email, and message fields
 Design a basic **feedback survey** with rating scale and comments field
 ```
 
-## Formularstruktur und -layout
+## Formularstruktur und -Layout
 
 **Verwendung:** Wenn Sie komplexe Formulare organisieren oder das Benutzererlebnis durch besseres Layout-Design verbessern müssen.
 
 **Verwendung:** Fokus auf die Benutzer-Journey und die logische Gruppierung von Informationen. Legen Sie Layout-Voreinstellungen und Navigationsmuster fest.
 
-**Beispielaufforderung - Mehrstufige Formularstruktur:**
+**Beispiel-Prompt – Mehrstufige Formularstruktur:**
 
 ```
 Convert this single-page form into a **3-step wizard** with:
@@ -258,7 +257,7 @@ Convert this single-page form into a **3-step wizard** with:
 Include "Previous" and "Next" buttons, allow users to jump between completed steps, save progress automatically.
 ```
 
-**Eingabeaufforderungen zur Layout-Optimierung:**
+**Prompts zur Layout-Optimierung:**
 
 ```
 Reorganize this form using a **wizard layout** for desktop and single column for mobile. 
@@ -274,11 +273,11 @@ Create a **vertical tabbed interface** for this form with tabs for: Basic Info, 
 
 ## Feldverwaltung und -validierung
 
-**Verwendung:** Wenn Sie Formularfelder mit bestimmten Validierungsregeln und -verhaltensweisen hinzufügen, ändern oder erweitern müssen.
+**Verwendung:** Wenn Sie Formularfelder mit bestimmten Validierungsregeln und Verhaltensweisen hinzufügen, ändern oder erweitern müssen.
 
-**Verwendung:** Sie sich speziell mit Feldtypen, Validierungsanforderungen und Erwartungen an das Benutzererlebnis. Referenzieren Sie vorhandene Felder mithilfe @fieldName Syntax.
+**Verwendung:** Seien Sie präzise in Bezug auf Feldtypen, Validierungsanforderungen und Erwartungen an das Anwendererlebnis. Referenzieren Sie vorhandene Felder mithilfe der Syntax @fieldName.
 
-**Beispielaufforderung - Feldverbesserung:**
+**Beispiel-Prompt – Feldverbesserung:**
 
 ```
 Enhance the form fields with these specific requirements:
@@ -305,7 +304,7 @@ Enhance the form fields with these specific requirements:
 - Show upload progress and file names after upload
 ```
 
-**Feldspezifische Eingabeaufforderungen:**
+**Feldspezifische Prompts:**
 
 ```
 Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
@@ -323,9 +322,9 @@ Build a **repeatable panel** for work experience where users can add/remove mult
 
 **Verwendung:** Wenn Sie ein dynamisches Formularverhalten benötigen, das auf Benutzereingaben oder Geschäftsregeln basiert.
 
-**Verwendung:** Definieren Sie die Bedingungen und die resultierenden Aktionen klar. Verwenden Sie bestimmte Feldverweise und logische Operatoren.
+**Verwendung:** Definieren Sie klar die Bedingungen und die resultierenden Aktionen. Verwenden Sie genaue Feldverweise und logische Operatoren.
 
-**Beispielaufforderung - Komplexe bedingte Logik:**
+**Beispiel-Prompt – Komplexe bedingte Logik:**
 
 ```
 Implement these conditional rules for the application form:
@@ -357,7 +356,7 @@ Implement these conditional rules for the application form:
   - Add accessibility preferences section
 ```
 
-**Regelspezifische Eingabeaufforderungen:**
+**Regelspezifische Prompts:**
 
 ```
 Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
@@ -377,7 +376,7 @@ Implement **smart defaults** where @country selection auto-sets related fields. 
 
 **Verwendung:** Beginnen Sie mit der grundlegenden Einrichtung der Übermittlung und fügen Sie dann schrittweise zusätzliche Integrationen hinzu. Geben Sie den Integrationstyp, die Datenformatanforderungen und die Voreinstellungen für die Fehlerbehandlung an.
 
-**Beispielaufforderung - Beginn mit einfacher Übermittlung:**
+**Beispiel-Prompt – Beginn mit einfacher Übermittlung:**
 
 ```
 Configure basic form submission for @applicationForm:
@@ -389,7 +388,7 @@ Configure basic form submission for @applicationForm:
 - Show error message if submission fails: "Submission failed, please try again"
 ```
 
-**Fügen Sie dann Sekundäre Aktionen schrittweise hinzu:**
+**Fügen Sie dann schrittweise sekundäre Aktionen hinzu:**
 
 ```
 Add email notification to @applicationForm: Send confirmation email to @email address with application reference number
@@ -399,7 +398,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**Beispielaufforderung - Erweiterte Multi-Channel-Übermittlung:**
+**Beispiel-Prompt – Erweiterte Multi-Channel-Übermittlung:**
 
 ```
 Configure form submission with multiple data destinations:
@@ -428,7 +427,7 @@ Configure form submission with multiple data destinations:
 - Display estimated processing timeline
 ```
 
-**Integrationsspezifische Eingabeaufforderungen:**
+**Integrationsspezifische Prompts:**
 
 ```
 Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New".
@@ -442,13 +441,13 @@ Set up **workflow trigger** when form is submitted. Pass all form data and trigg
 Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
 ```
 
-## Design-Import und -Konversion
+## Import und Konversion von Designs
 
-**Verwendung:** Wenn Sie bereits Formularentwürfe (PDF, Figma, Bilder) haben, die in funktionale AEM-Formulare konvertiert werden müssen.
+**Verwendung:** Wenn Sie bereits Formularentwürfe (PDF, Figma, Bilder) haben, die in funktionale AEM-Formulare konvertiert werden sollen.
 
-**Verwendung:** Geben Sie einen klaren Kontext zum Quell-Design an und geben Sie alle erforderlichen Änderungen oder Verbesserungen an.
+**Verwendung:** Geben Sie einen klaren Kontext zum Quell-Design an und präzisieren Sie alle erforderlichen Änderungen oder Verbesserungen.
 
-**Beispielaufforderung - PDF-Formularkonvertierung:**
+**Beispiel-Prompt – PDF-Formularkonvertierung:**
 
 ```
 Convert this uploaded **PDF application form** into a functional AEM adaptive form:
@@ -480,7 +479,7 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 Preserve all original field labels and help text, but improve the user experience with modern form interactions.
 ```
 
-**Design-Importaufforderungen:**
+**Prompts für den Design-Import:**
 
 ```
 Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
@@ -494,13 +493,13 @@ Analyze this **image of a paper form** and recreate it digitally. Improve the la
 Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes.
 ```
 
-## Optimierung und Reaktionsgeschwindigkeit von Mobilgeräten
+## Optimierung und Reaktionsgeschwindigkeit bei Mobilgeräten
 
-**Verwendung:** Formulare müssen nahtlos über alle Gerätetypen und Bildschirmgrößen hinweg funktionieren.
+**Verwendung:** Wenn Formulare nahtlos über alle Gerätetypen und Bildschirmgrößen hinweg funktionieren sollen.
 
-**Verwendung:** Sie mit der grundlegenden Optimierung für Mobilgeräte und erweitern Sie sie dann mit erweiterten Funktionen. Mobile-First-Ansatz betonen und Breakpoint-Verhalten inkrementell angeben.
+**Verwendung:** Beginnen Sie mit der grundlegenden Optimierung für Mobilgeräte und erweitern Sie sie dann mit erweiterten Funktionen. Betonen Sie den Mobile-First-Ansatz und legen Sie schrittweise das Verhalten bei Breakpoints fest.
 
-**Beispielaufforderung - Beginn mit der grundlegenden Optimierung für Mobilgeräte:**
+**Beispiel-Prompt – Beginn mit der grundlegenden Optimierung für Mobilgeräte:**
 
 ```
 Make @contactForm mobile-friendly with:
@@ -520,7 +519,7 @@ Enhance @contactForm mobile experience with:
 - Swipe gestures for multi-step navigation
 ```
 
-**Beispielaufforderung - Umfassende Mobile-First-Optimierung:**
+**Beispiel-Prompt – Umfassende Mobile-First-Optimierung:**
 
 ```
 Optimize this form for **mobile-first responsive design**:
@@ -557,7 +556,7 @@ Optimize this form for **mobile-first responsive design**:
 - Progressive enhancement approach
 ```
 
-**Mobile-spezifische einfache Eingabeaufforderungen:**
+**Mobile-spezifische einfache Prompts:**
 
 ```
 Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
@@ -577,7 +576,7 @@ Enable offline functionality for @applicationForm with local data saving
 
 **Verwendung:** Geben Sie die Anforderungen an die Barrierefreiheit und die Compliance-Standards an, die erfüllt werden müssen.
 
-**Beispielaufforderung - Implementierung der Barrierefreiheit:**
+**Beispiel-Prompt – Implementierung der Barrierefreiheit:**
 
 ```
 Make this form **WCAG 2.1 AA compliant** with these accessibility features:
@@ -619,7 +618,7 @@ Make this form **WCAG 2.1 AA compliant** with these accessibility features:
 - Validate HTML for semantic correctness
 ```
 
-**Compliance-spezifische Eingabeaufforderungen:**
+**Compliance-spezifische Prompts:**
 
 ```
 Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
@@ -633,13 +632,13 @@ Make this **financial form PCI DSS compliant** with secure payment field handlin
 Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
 ```
 
-## Assurance für Tests und Qualität
+## Tests und Qualitätssicherung
 
 **Verwendung:** Wenn Sie die Formularfunktionalität, das Benutzererlebnis und die technische Leistung überprüfen müssen.
 
 **Verwendung:** Geben Sie Testszenarien, Edge-Fälle und Qualitätskriterien an, die überprüft werden müssen.
 
-**Beispielaufforderung - Umfassende Formulartests:**
+**Beispiel-Prompt – Umfassende Formulartests:**
 
 ```
 Create a **comprehensive testing plan** for this application form:
@@ -687,7 +686,7 @@ Create a **comprehensive testing plan** for this application form:
 - Check print functionality across browsers
 ```
 
-**Testspezifische Eingabeaufforderungen:**
+**Testspezifische Prompts:**
 
 ```
 Create **automated test scripts** for this form's critical user paths: successful submission, validation errors, and conditional logic.
@@ -707,7 +706,7 @@ Set up **performance monitoring** to track form completion rates, abandonment po
 
 **Verwendung:** Definieren Sie die erweiterten Funktions- und Integrationsanforderungen klar.
 
-**Beispielaufforderung - KI-verbessertes Formular:**
+**Beispiel-Prompt – KI-verbessertes Formular:**
 
 ```
 Add **AI-powered features** to enhance this application form:
@@ -749,7 +748,7 @@ Add **AI-powered features** to enhance this application form:
 - Extract structured data from unstructured input
 ```
 
-**Eingabeaufforderungen zur erweiterten Integration:**
+**Prompts zur erweiterten Integration:**
 
 ```
 Integrate with **CRM system** to pre-populate known customer data, update records in real-time, and trigger automated follow-up sequences.
@@ -769,7 +768,7 @@ Implement **blockchain verification** for document authenticity, immutable audit
 
 **Verwendung:** Beschreiben Sie das spezifische Problem und das gewünschte Ergebnis klar und deutlich.
 
-**Beispielaufforderung - Leistungsoptimierung:**
+**Beispiel-Prompt – Leistungsoptimierung:**
 
 ```
 Optimize this form for **better performance and user experience**:
@@ -809,7 +808,7 @@ Optimize this form for **better performance and user experience**:
 - A/B test improvements with real users
 ```
 
-**Eingabeaufforderungen zur Fehlerbehebung:**
+**Prompts zur Fehlerbehebung:**
 
 ```
 **Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
@@ -823,9 +822,9 @@ Optimize this form for **better performance and user experience**:
 **Resolve validation conflicts:** Some users can't submit even with valid data. Review validation rules for conflicts and edge cases.
 ```
 
-## Umgebungsspezifische Best Practices
+## Best Practices für die Barrierefreiheit
 
-### Forms-Verwaltungsoberfläche
+### Benutzeroberfläche für die Formularverwaltung
 
 **Verwendung:** Für allgemeine Aufgaben zur Formularerstellung und -verwaltung.
 
@@ -833,7 +832,7 @@ Optimize this form for **better performance and user experience**:
 In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
 ```
 
-### Adaptiver Forms-Editor
+### Editor für adaptive Formulare
 
 **Verwendung:** Für eine detaillierte Formularkonfiguration und die Erstellung komplexer Regeln.
 
@@ -843,7 +842,7 @@ In the Adaptive Forms Editor, configure **advanced business rules** for this loa
 
 ### Universeller Editor
 
-**Verwendung:** Für Edge Delivery Services Forms mit visueller Bearbeitung.
+**Verwendung:** Für Edge Delivery Services-Formulare mit visueller Bearbeitung.
 
 ```
 In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
@@ -851,17 +850,17 @@ In Universal Editor, create a **responsive contact form** for the company websit
 
 ## Kurzanleitung zur Befehlsreferenz
 
-| Befehl | Best-Use-Case | Beispiel |
+| Befehl | Bester Anwendungsfall | Beispiel |
 |---------|---------------|---------|
 | `/create-form` | Starten neuer Formulare | `/create-form employee onboarding with personal info and benefits selection` |
 | `/add-form` | Hinzufügen von Formularen zu Seiten | `/add-form newsletter signup with email and preferences` |
 | `/update-layout` | Änderung der Formularstruktur | `/update-layout wizard with 4 steps: info, preferences, review, confirm` |
 | `/update-field` | Ändern von Feldeigenschaften | `/update-field @email to be mandatory with real-time validation` |
-| `/create-rule` | Dynamisches Verhalten hinzufügen | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
+| `/create-rule` | Hinzufügen von dynamischem Verhalten | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
 | `/create-panel` | Organisieren von Formularabschnitten | `/create-panel Employment Details with job title, company, salary fields` |
 | `/add-panel` | Konvertieren von Designs | `/add-panel from uploaded form image with field recognition` |
 | `/configure-submit` | Einrichten der Datenverarbeitung | `/configure-submit to CRM and send confirmation email` |
-| `/help` | Hilfe anfordern | `/help how to implement multi-step validation?` |
+| `/help` | Hilfe erhalten | `/help how to implement multi-step validation?` |
 
 ## Referenz zu unterstützten Komponenteneigenschaften
 
@@ -871,73 +870,73 @@ In Universal Editor, create a **responsive contact form** for the company websit
 - **Name**: Feldkennung für die Formularübermittlung
 - **Label**: Zeigt Text für das Feld an
 - **Beschreibung**: Hilfetext für das Feld
-- **Visible**: Boolesch für anfängliche Sichtbarkeit
-- **Obligatorisch**: Boolesch für erforderliche Felder
+- **Sichtbar**: Boolescher Wert für anfängliche Sichtbarkeit
+- **Obligatorisch**: Boolescher Wert für erforderliche Felder
 
-### Eingabefeld-Eigenschaften
+### Eingabefeldeigenschaften
 
 - **Wert**: Standard-/Anfangswert
 - **Platzhalter**: Hinweistext für Eingabefelder
-- **Min**: Mindestwert (für Zahlen/Daten)
-- **Max**: Höchstwert (für Zahlen/Daten)
+- **Min**: Mindestwert (für Zahlen/Datumsangaben)
+- **Max**: Höchstwert (für Zahlen/Datumsangaben)
 
-### Eigenschaften des Datei-Uploads
+### Schaltfläche „Datei hochladen“
 
-- **Accept**: Dateitypen (.pdf, .doc, .docx, .jpg, .png usw.)
-- **multiple**: Boolescher Wert für die Auswahl mehrerer Dateien
+- **Akzeptieren**: Dateitypen (.pdf, .doc, .docx, .jpg, .png usw.)
+- **Mehrere**: Boolescher Wert für die Auswahl mehrerer Dateien
 
-### Eigenschaften des Auswahlsteuerelements
+### Eigenschaften von Auswahlsteuerelementen
 
 - **Optionen**: Optionen für Dropdown-Listen (durch Kommas getrennte Liste)
-- **aktiviert**: Standardauswahl für Kontrollkästchen/Optionsfelder
+- **Aktiviert**: Standardauswahl für Kontrollkästchen/Optionsfelder
 
 ### Container-Eigenschaften
 
-- **FieldSet**: Gruppieren verwandter Felder
-- **repeatable**: Boolescher Wert für wiederholbare Abschnitte
+- **Feldsatz**: Gruppieren verwandter Felder
+- **Wiederholbar**: Boolescher Wert für wiederholbare Abschnitte
 
 ### Erweiterte Eigenschaften
 
 - **Sichtbarer Ausdruck**: Formel für bedingte Sichtbarkeit (=Formel)
-- **Wert Ausdruck**: Formel für berechnete Werte (=Formel)
+- **Wertausdruck**: Formel für berechnete Werte (=Formel)
 
 ## Zusammenfassung der Best Practices
 
 ### Technische Leitlinien
 
-- **Nur unterstützte Eigenschaften verwenden** aus der offiziellen AEM Forms-Komponentenspezifikation
+- **Verwenden Sie nur unterstützte Eigenschaften** aus der offiziellen Spezifikation der AEM Forms-Komponenten
 - **Die korrekte Syntax** für Feldverweise (@fieldName) und Ausdrücke (=Formel)
-- **Inkrementelles** nach jeder Änderung, um Probleme frühzeitig zu erkennen
-- **Planen Sie die** von Anfang an, nicht als nachträgliche Überlegung
-- **Bei jeder Design** Entscheidung werden mobile Benutzer berücksichtigt
-- **Komplexe Regeln dokumentieren** für die zukünftige Wartung und Team-Zusammenarbeit
+- **Testen Sie inkrementell** nach jeder Änderung, um Probleme frühzeitig zu erkennen
+- **Planen Sie die Barrierefreiheit** von Anfang an, nicht erst nachträglich
+- **Berücksichtigen Sie Mobile-Benutzende** bei jeder Design-Entscheidung.
+- **Dokumentieren Sie komplexe Regeln** für die zukünftige Wartung und die Zusammenarbeit im Team.
 
 ### Strategischer Ansatz
 
-- **Mit Benutzeranforderungen beginnen** - Konzentrieren Sie sich auf die Aufgaben, die Benutzer erfüllen müssen, nicht nur auf technische Funktionen
-- **Design für die Vervollständigung** - Minimieren Sie Reibung und kognitive Belastung im Formularentwurf
-- **Datenfluss planen** frühzeitig - Überlegen Sie, wie Daten verarbeitet, gespeichert und verwendet werden
-- **Für Skalierung erstellen** - Entwerfen Sie Formulare, die das erwartete Benutzervolumen und Datenwachstum verarbeiten können
-- **Progressive Verbesserung implementieren** - Sicherstellen, dass die grundlegenden Funktionen funktionieren, und dann erweiterte Funktionen hinzufügen
+- **Mit Benutzeranforderungen beginnen** – Konzentrieren Sie sich auf das, was die Benutzenden erreichen müssen, nicht nur auf technische Funktionen
+- **Design für die Vervollständigung** – Minimieren Sie beim Formularentwurf die Reibung und kognitive Belastung
+- **Planen Sie den Datenfluss** frühzeitig – Überlegen Sie, wie Daten verarbeitet, gespeichert und verwendet werden
+- **Planen Sie für Skalierung** – Entwerfen Sie Formulare, die das erwartete Nutzeraufkommen und Datenwachstum bewältigen können.
+- **Implementieren Sie progressive Verbesserungen** – Stellen Sie sicher, dass die Grundfunktionen funktionieren, und fügen Sie dann erweiterte Funktionen hinzu.
 
-### Häufige zu vermeidende Fehler
+### Häufige Fallstricke, die Sie vermeiden sollten
 
-- **Zu komplexe anfängliche Anfragen** - Unterteilen Sie große Aufgaben in kleinere, verwaltbare Schritte
-- **Verwenden nicht unterstützter Eigenschaften** nicht in der AEM Forms-Spezifikation
-- **Mobile Erlebnisse werden** bis zum Ende des Entwicklungsprozesses ignoriert
-- **Benutzertests überspringen** mit echten Szenarien und Edge-Fällen
-- **Vorausgesetzt, dass KI den Kontext versteht** ohne klare, spezifische Anweisungen zu geben
+- **Zu komplexe anfängliche Anfragen** – Unterteilen Sie große Aufgaben in kleinere, gut verwaltbare Schritte
+- **Verwenden nicht unterstützter Eigenschaften**, die nicht zur AEM Forms-Spezifikation gehören
+- **Ignorieren des mobilen Erlebnisses** bis zum Ende des Entwicklungsprozesses
+- **Überspringen der Nutzertests** mit echten Szenarien und Edge-Fällen
+- **Voraussetzen, dass die KI den Kontext versteht**, ohne ihr klare, spezifische Anweisungen zu geben
 - **Vergessen von Barrierefreiheit** und Compliance-Anforderungen
-- **Änderungen werden nicht**, bevor mit dem nächsten Schritt fortgefahren wird
+- **Fehlendes Validieren von Änderungen** vor dem Übergang zum nächsten Schritt.
 
-### Assurance-Qualitätsansatz
+### Ansatz zur Qualitätssicherung
 
-1. **Häufig Vorschau** - Überprüfen Sie Ihre Arbeit im Vorschaumodus nach jeder wichtigen Änderung.
-2. **Testen von Randfällen** - Versuchen Sie ungewöhnliche Eingaben, langen Text, Sonderzeichen
-3. **Geräteübergreifend validieren** - Testen auf Smartphones, Tablets und Desktop
-4. **Barrierefreiheit überprüfen** - Überprüfen Sie die Tastaturnavigation und die Kompatibilität der Bildschirmlesehilfen.
-5. **Leistungstest** - Sicherstellen, dass Formulare schnell geladen werden und reibungslos reagieren
-6. **Benutzerakzeptanztests** Lassen Sie echte Benutzer das Formular vor der Bereitstellung testen
+1. **Häufige Vorschauen** – Überprüfen Sie nach jeder wichtigen Änderung Ihre Arbeit im Vorschaumodus.
+2. **Testen von Randfällen** – Versuchen Sie ungewöhnliche Eingaben, langen Text, Sonderzeichen
+3. **Geräteübergreifend validieren** – Testen Sie auf Smartphone, Tablet und Desktop
+4. **Barrierefreiheit überprüfen** – Überprüfen Sie die Tastaturnavigation und die Kompatibilität mit Bildschirmlesehilfen.
+5. **Leistungstest** – Stellen Sie sicher, dass Formulare schnell geladen werden und reibungslos reagieren
+6. **Benutzerakzeptanztests** – Lassen Sie vor der Bereitstellung echte Benutzende das Formular testen
 
 
-*Diese Eingabeaufforderungsbibliothek wird laufend auf der Grundlage von Benutzer-Feedback und neuen KI-Assistenten-Funktionen aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de).*
+*Diese Prompt-Bibliothek wird laufend auf der Grundlage von Benutzer-Feedback und neuen Funktionen des KI-Assistenten aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de).*

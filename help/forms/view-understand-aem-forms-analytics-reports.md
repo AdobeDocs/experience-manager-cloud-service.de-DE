@@ -8,9 +8,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
 source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '984'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Für den AEM-Formularanalysebericht integrieren Sie zunächst Adobe Analytics ü
 
 >[!CAUTION]
 >
->Die Funktion zur Automatisierung der Einrichtung von Experience Cloud wird nicht mehr unterstützt.
+>Die Funktion zur Automatisierung der Einrichtung von Experience Cloud ist veraltet.
 
 ## Anzeigen des Berichts für adaptive Formulare von Adobe Analytics {#view-adobe-analytics-report}
 

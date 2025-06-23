@@ -5,9 +5,9 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
 source-git-commit: 7a05b5f19d9d59ad438c18ce510e0c54acd49a93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1187'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Fehlende JCR-Inhalte | Proaktiv | Fügen Sie den fehlenden JCR-Inhaltsknoten hinzu. Siehe die [Dokumentation zu Assets Content Validator](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Abgeschlossene Workflows werden nicht bereinigt | Proaktiv | Minimieren Sie die Anzahl der Workflow-Instanzen und optimieren Sie die Leistung, indem Sie mehr als 90 Tage alte Workflow-Instanzen bereinigen. Erfahren Sie, wie Sie [Wartungsaufgaben konfigurieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance). | |
 | Fehlender Sling-Ressourcentyp in Seite | Proaktiv | Fügen Sie den Knoten des fehlenden Sling-Ressourcentyps hinzu. Siehe die [Dokumentation zu Assets Content Validator](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
-| Langsame Abfrage | Proaktiv | Beheben Sie langsame Abfragen, indem Sie die richtigen Indexdefinitionen definieren, wie in der [JCR-Abfrage-Schnellübersicht](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=de) vorgeschlagen. | |
+| Langsame Abfrage | Proaktiv | Beheben Sie langsame Abfragen, indem Sie die richtigen Indexdefinitionen definieren, wie in der [JCR-Abfrage-Schnellübersicht](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) vorgeschlagen. | |
 | Abfrage ohne Index | Proaktiv | Vermeiden Sie die Ausführung von Abfragen, die keinen Index verwenden – [Link zur Indizierungsdokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/indexing) | |
-| Warnung zu veralteten Bibliotheken | Proaktiv | Ersetzen Sie veraltete Pakete durch ihre empfohlenen neueren Versionen, wie im Artikel [Veraltet](/help/release-notes/deprecated-removed-features.md) beschrieben, um die Sicherheit und Leistung Ihrer Anwendung zu gewährleisten | |
-| Warnung zu veralteter Konfiguration | Proaktiv | Ersetzen Sie veraltete Konfigurationen durch ihre empfohlenen neueren Versionen, wie im Artikel [Einstellung](/help/release-notes/deprecated-removed-features.md) beschrieben, um die Sicherheit und Leistung Ihrer Anwendung zu gewährleisten |
+| Warnung zu veralteten Bibliotheken | Proaktiv | Ersetzen Sie veraltete Pakete durch ihre empfohlenen neueren Versionen, wie im Artikel [Einstellung](/help/release-notes/deprecated-removed-features.md) beschrieben, um die Sicherheit und Leistung Ihrer Anwendung zu gewährleisten | |
+| Warnung zu veralteten Konfigurationen | Proaktiv | Ersetzen Sie veraltete Konfigurationen durch ihre empfohlenen neueren Versionen, wie im Artikel [Einstellung](/help/release-notes/deprecated-removed-features.md) beschrieben, um die Sicherheit und Leistung Ihrer Anwendung zu gewährleisten |

@@ -5,9 +5,9 @@ feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1857'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Die Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API ist jetzt [veraltet](/help/release-notes/deprecated-removed-features.md).
+>Die Unterstützung von Inhaltsfragmenten im Assets-HTTP-API ist jetzt [veraltet](/help/release-notes/deprecated-removed-features.md).
 >
->Sie wurde ersetzt durch [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) zusammen mit [OpenAPIs für die Verwaltung von Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md).
+>Sie wurde ersetzt durch die [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) zusammen mit [OpenAPIs für die Verwaltung von Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md).
 
-Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in Adobe Experience Manager (AEM).
+Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente im Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungsfunktion in Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [AEM-APIs für die strukturierte Bereitstellung und Verwaltung von Inhalten](/help/headless/apis-headless-and-content-fragments.md). Dort erhalten Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der beteiligten Konzepte.
+>Unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
 >
 >Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
 

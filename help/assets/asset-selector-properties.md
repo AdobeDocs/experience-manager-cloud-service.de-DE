@@ -1,12 +1,12 @@
 ---
-title: Asset-Selektor-Eigenschaften für die Anpassung
-description: Verwenden Sie den Asset-Selektor, um die Metadaten und Ausgabeformate von Assets in Ihrer Applikation zu suchen, zu finden und abzurufen.
+title: Eigenschaften des Asset-Wählers für die Anpassung
+description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellung von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
 source-git-commit: 89a7346f5b6bc1d65524c5ead935aa4a2a764ebb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1403'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *onFilesChange* | Funktion | Nein | | Es handelt sich dabei um eine Rückruffunktion, mit der das Verhalten des Uploads angezeigt wird, wenn eine Datei geändert wird. Sie gibt das neue Array der Dateien, die zum Hochladen ausstehen, und den Quelltyp des Uploads weiter. Der Quelltyp kann im Fehlerfall null sein. Die Syntax lautet `(newFiles: File[], uploadType: UploadType) => void` |
 | *uploadingPlaceholder* | Zeichenfolge | | | Es handelt sich dabei um ein Platzhalterbild, das das Metadatenformular ersetzt, wenn der Upload des Assets initiiert wird. Die Syntax lautet `{ href: string; alt: string; } ` |
 | *uploadConfig* | Objekt | | | Es handelt sich um ein Objekt, das benutzerdefinierte Konfigurationen für den Upload enthält. |
-| *featureSet* | Array | Zeichenfolge | | Die Eigenschaft `featureSet:[ ]` wird verwendet, um eine bestimmte Funktion in der Anwendung „Asset-Wähler“ zu aktivieren oder zu deaktivieren. Um die Komponente oder eine Funktion zu aktivieren, können Sie einen Zeichenfolgenwert im Array übergeben oder das Array leer lassen, um diese Komponente zu deaktivieren.  Wenn Sie z. B. die Upload-Funktion im Asset-Wähler aktivieren möchten, verwenden Sie die `featureSet:[0:"upload"]`. Ebenso können Sie `featureSet:[0:"collections"]` verwenden, um Sammlungen im Asset-Wähler zu aktivieren. Verwenden Sie außerdem `featureSet:[0:"detail-panel"]`, um [Detailbereich](overview-asset-selector.md#asset-details-and-metadata) eines Assets zu aktivieren. Um diese Funktionen zusammen zu verwenden, wird die Syntax `featureSet:["upload", "collections", "detail-panel"]`. |
+| *featureSet* | Array | Zeichenfolge | | Die Eigenschaft `featureSet:[ ]` wird verwendet, um eine bestimmte Funktion in der Anwendung „Asset-Wähler“ zu aktivieren oder zu deaktivieren. Um die Komponente oder eine Funktion zu aktivieren, können Sie einen Zeichenfolgewert im Array weitergeben – oder das Array leer lassen, um diese Komponente zu deaktivieren. Wenn Sie beispielsweise die Upload-Funktion im Asset-Wähler aktivieren möchten, verwenden Sie die Syntax `featureSet:[0:"upload"]`. Ebenso können Sie `featureSet:[0:"collections"]` verwenden, um Sammlungen im Asset-Wähler zu aktivieren. Außerdem können Sie `featureSet:[0:"detail-panel"]` verwenden, um [Detailbereich](overview-asset-selector.md#asset-details-and-metadata) eines Assets zu aktivieren. Um diese Funktionen zusammen zu verwenden, lautet die Syntax `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--
 | *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
@@ -109,5 +109,5 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 >
 >* [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
 >* [Integrieren des Asset-Wählers in verschiedene Anwendungen](/help/assets/integrate-asset-selector.md)
->* [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Integrieren des Asset-Wählers mit Anwendungen von Drittanbietern](/help/assets/integrate-asset-selector-non-adobe-app.md)
+>* [Integrieren des Asset-Wählers mit Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrieren des Asset-Wählers in Anwendungen von Drittanbietern](/help/assets/integrate-asset-selector-non-adobe-app.md)

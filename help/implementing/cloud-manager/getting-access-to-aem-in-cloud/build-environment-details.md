@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1547'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Die folgenden Funktionen funktionieren möglicherweise nicht ordnungsgemäß, we
 
 #### Laufzeitanforderungen {#runtime-requirements}
 
-Die Java 21-Laufzeitumgebung wurde auf alle zulässigen Umgebungen angewendet, d. h. Umgebungen auf AEM-Version 17098 oder höher, die die folgenden Kriterien erfüllen. Wenn eine Umgebung die Kriterien nicht erfüllt, müssen Sie Anpassungen vornehmen, um Leistung, Verfügbarkeit und Sicherheit sicherzustellen.
+Die Java 21-Laufzeit wurde auf alle zulässigen Umgebungen angewendet, d. h. Umgebungen in der AEM-Version 17098 oder höher, die die folgenden Kriterien erfüllen. Wenn eine Umgebung die Kriterien nicht erfüllt, müssen Sie Anpassungen vornehmen, um Leistung, Verfügbarkeit und Sicherheit sicherzustellen.
 
 * **Mindestversion von ASM:**
 Aktualisieren Sie die Verwendung des Java-Pakets`org.objectweb.asm`, das häufig in Artefakten vom Typ `org.ow2.asm.*` gebündelt ist, auf Version 9.5 oder höher, um die Unterstützung für neuere JVM-Laufzeiten sicherzustellen.
@@ -125,7 +125,7 @@ Beim lokalen Ausführen von AEM mit Java 21 schlagen die Startskripte (`crx-quic
 
 >[!IMPORTANT]
 >
->Wenn eine Umgebung noch nicht automatisch auf die Java 21-Laufzeit aktualisiert wurde, können Sie sie durch Erstellen von Triggern mit Java 17 oder 21 aktualisieren. Dies geschieht, indem `.cloudmanager/java-version` auf `21` oder `17` gesetzt wird. Wenden Sie sich bei Fragen an Adobe [&#128279;](mailto:aemcs-java-adopter@adobe.com) aemcs-java-adopter@adobe.com.
+>Wenn eine Umgebung noch nicht automatisch auf die Java 21-Laufzeit aktualisiert wurde, können Sie dies durch Erstellen mit Java 17 oder 21 auslösen. Dies geschieht, indem `.cloudmanager/java-version` auf `21` oder `17` gesetzt wird. Wenden Sie sich bei Fragen an Adobe unter [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 #### Anforderungen zur Build-Zeit: {#build-time-reqs}
 

@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: a8d64082-a23f-4919-ad66-042faad77d29
 source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1141'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 2%
 >[!NOTE]
 >
 >
-> Die Funktion KI-Assistent für AEM Forms (Forms Experience Builder) ist unter dem **Early-Adopter-Programm** verfügbar. Bei Interesse senden Sie eine kurze E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com, um den Zugriff auf die Funktion anzufordern.
+> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist unter dem **Early-Adopter-Programm** verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Arbeitsadresse an mailto:aem-forms-ea@adobe.com, um Zugriff auf die Funktion anzufordern.
 
 >[!IMPORTANT]
 >
-> **Dokumentation kann sich ändern**: Diese Dokumentation wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Funktionen, Befehle und Beispiele können sich ändern, während sich der KI-Assistent für AEM Forms während des Early-Adopter-Programms weiterentwickelt.
+> **Dokumentation kann sich ändern**: Diese Dokumentation wird derzeit mit dem Produkt getestet und unterliegt möglichen Aktualisierungen und Überarbeitungen. Funktionen, Befehle und Beispiele können sich ändern, wenn der KI-Assistent für AEM Forms während des Early-Adopter-Programms weiterentwickelt wird.
 
-Der KI-Assistent für AEM Forms transformiert die Art und Weise, wie Sie Formulare erstellen - beschreiben Sie einfach, was Sie in natürlicher Sprache benötigen, und sehen Sie zu, wie Ihre Formulare zum Leben erweckt werden. Der in der Forms-Verwaltungsoberfläche, im Editor für adaptive Forms und im universellen Editor verfügbare Editor versteht Ihre Absichten und erstellt genau das, wonach Sie suchen.
+Der KI-Assistent für AEM Forms transformiert die Art und Weise, wie Sie Formulare erstellen – beschreiben Sie einfach in natürlicher Sprache, was Sie benötigen, und sehen Sie dann zu, wie Ihre Formulare zum Leben erweckt werden. Der in der Benutzeroberfläche für die Formularverwaltung, im Editor für adaptive Formulare und im universellen Editor verfügbare Assistent versteht Ihre Absichten und erstellt genau das, wonach Sie suchen.
 
-## Erste Schritte: Sprechen Sie einfach damit
+## Erste Schritte: Sprechen Sie einfach zu ihm
 
-Der KI-Assistent funktioniert wie ein Gespräch mit einem sachkundigen Kollegen. Anstatt komplexe Menüs und Einstellungen zu lernen, beschreiben Sie einfach, was Sie erstellen möchten.
+Der KI-Assistent funktioniert wie ein Gespräch mit einer sachkundigen Kollegin oder einem sachkundigen Kollegen. Anstatt sich mit komplexen Menüs und Einstellungen vertraut zu machen, beschreiben Sie einfach, was Sie erstellen möchten.
 
 ### Schnellstart
 
@@ -38,64 +38,64 @@ Sehen Sie sich unser Einführungsvideo an, um schnell loszulegen:
 
 ### Zugriff auf den KI-Assistenten
 
-Sie können von drei verschiedenen Standorten in AEM Forms aus auf den KI-Assistenten zugreifen:
+Sie können von drei verschiedenen Stellen in AEM Forms aus auf den KI-Assistenten zugreifen:
 
-1. **Forms-Verwaltungsoberfläche**
-   - Navigieren Sie zu: Adobe Experience Manager > Forms > Forms und Dokumente
-   - Suchen Sie auf der linken Seite der Benutzeroberfläche nach dem Symbol KI-Assistent .
-   - Klicken Sie auf das Symbol, um das Bedienfeld KI-Assistent zu öffnen
+1. **Benutzeroberfläche für die Formularverwaltung**
+   - Navigieren Sie zu: „Adobe Experience Manager“ > „Formulare“ > „Formulare und Dokumente“
+   - Suchen Sie auf der linken Seite der Benutzeroberfläche nach dem Symbol „KI-Assistent“.
+   - Klicken Sie auf das Symbol, um das Bedienfeld „KI-Assistent“ zu öffnen
 
-   ![Symbol für KI-Assistenten*](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
+   ![Symbol für den KI-Assistenten*](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
 
-2. **Adaptive Forms-Editor**
-   - Navigieren Sie zu: Adobe Experience Manager > Forms > Forms und Dokumente
+2. **Editor für adaptive Formulare**
+   - Navigieren Sie zu: „Adobe Experience Manager“ > „Formulare“ > „Formulare und Dokumente“
    - Auswählen und Öffnen eines Formulars zur Bearbeitung
-   - Klicken Sie in der Editor-Benutzeroberfläche auf das Symbol KI-Assistent .
+   - Klicken Sie in der Editor-Benutzeroberfläche auf das Symbol „KI-Assistent“.
 
-   ![Symbol für KI-Assistenten*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+   ![Symbol für den KI-Assistenten*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 3. **Universeller Editor**
 
-   - Navigieren Sie zu: Adobe Experience Manager > Forms > Forms und Dokumente
-   - Suchen Sie auf der linken Seite der Benutzeroberfläche nach dem Symbol KI-Assistent .
-   - Klicken Sie in der Editor-Benutzeroberfläche auf das Symbol KI-Assistent .
+   - Navigieren Sie zu: „Adobe Experience Manager“ > „Formulare“ > „Formulare und Dokumente“
+   - Suchen Sie auf der linken Seite der Benutzeroberfläche nach dem Symbol „KI-Assistent“.
+   - Klicken Sie in der Editor-Benutzeroberfläche auf das Symbol „KI-Assistent“.
 
-### Anleitung: Einfache Unterhaltungen
+### So beginnen Sie: Einfache Unterhaltungen
 
-Der beste Weg, mit dem KI-Assistenten zu beginnen, ist durch natürliche Sprache. So geht&#39;s:
+Der beste Weg, mit dem KI-Assistenten zu beginnen, ist durch natürliche Sprache. So funktioniert es:
 
 **Beschreiben Sie einfach, was Sie benötigen:**
 
-- „Erstellen eines Kontaktformulars für meine Website“
+- „Erstelle ein Kontaktformular für meine Website“
 - „Ich benötige ein Formular für Kunden-Feedback mit Bewertungsskalen“
-- „Erstellen eines Registrierungsformulars für meine bevorstehende Veranstaltung“
-- „Machen Sie eine einfache Umfrage zur Produktzufriedenheit“
+- „Erstelle ein Registrierungsformular für meine bevorstehende Veranstaltung“
+- „Mach eine einfache Umfrage zur Produktzufriedenheit“
 
-**Fügen Sie Details hinzu, während Sie gehen:**
+**Fügen Sie nach und nach Details hinzu:**
 
-- „Erstellen Sie ein Kontaktformular mit den Feldern Name, E-Mail, Telefon und Nachricht“
+- „Erstelle ein Kontaktformular mit den Feldern Name, E-Mail, Telefon und Nachricht“
 - „Ich benötige ein mehrstufiges Anmeldeformular für eine Konferenz“
-- „Erstellen Sie ein Formular für Kunden-Feedback mit 5-Sterne-Bewertungen und Kommentar-Abschnitten“
+- „Erstelle ein Formular für Kunden-Feedback mit 5-Sterne-Bewertungen und Kommentar-Abschnitten“
 
 **Vorhandene Felder referenzieren:**
 
-- „E-Mail-Feld erforderlich machen“ (für @email)
-- „Validierung zum Telefonnummernfeld hinzufügen“ (@phoneNumber. B.)
-- „Angaben zum Ehepartner nur anzeigen, wenn Verheiratet ausgewählt ist“ (für @spouseInfo und @maritalStatus)
+- „Mach das E-Mail-Feld erforderlich“ (für @email)
+- „Füge eine Validierung zum Telefonnummernfeld hinzu“ (für @phoneNumber)
+- „Die Angaben zum Ehepartner sollen nur angezeigt werden, wenn Verheiratet ausgewählt ist“ (für @spouseInfo und @maritalStatus)
 
-### Was Sie auch tun können
+### Weitere Möglichkeiten
 
 Über die natürliche Sprache hinaus bietet der KI-Assistent zusätzliche Möglichkeiten zur Interaktion:
 
-- **Dateien hochladen**: Anhängen von Bildern, PDFs oder Figma-Designs, um der KI zu zeigen, was Sie sich vorstellen
+- **Dateien hochladen**: Hängen Sie Bilder, PDFs oder Figma-Designs an, um der KI zu zeigen, was Sie sich vorstellen
 - **Schnellbefehle verwenden**: Geben Sie `/` ein, um die verfügbaren Tastaturbefehle für häufige Aktionen anzuzeigen
-- **Referenzspezifische Felder**: Verwenden Sie `@fieldName`, um vorhandene Formularfelder zu ändern (z. B. `@firstName`, `@emailAddress`)
+- **Referenzspezifische Felder**: Verwenden Sie `@fieldName`, um vorhandene Formularfelder zu ändern (z. B. `@firstName`, `@emailAddress`)
 
 ## Was Sie erstellen können: Beispiele, die funktionieren
 
 Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlicher Sprache erreichen können:
 
-### Starten eines neuen Formulars
+### Erstellen eines neuen Formulars
 
 **Einfacher Ansatz:**
 
@@ -109,7 +109,7 @@ Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlic
 "Create a professional contact form for a law firm with fields for name, email, phone, case type, and message. Make it mobile-friendly."
 ```
 
-**Mit Konstruktionsreferenz:**
+**Mit Design-Referenz:**
 
 ```
 "Create a contact form based on the attached design mockup. Include all the fields shown in the layout."
@@ -133,7 +133,7 @@ Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlic
 "Add a country dropdown with options for USA, Canada, UK, and Germany"
 ```
 
-### Dynamisches Verhalten erstellen
+### Erstellen von dynamischem Verhalten
 
 **Einfache Logik:**
 
@@ -151,7 +151,7 @@ Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlic
 "Enable the submit button only when all required fields are completed and terms are accepted"
 ```
 
-### Formularlayout und -design
+### Formular-Layout und -Design
 
 **Änderungen am Layout:**
 
@@ -161,7 +161,7 @@ Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlic
 "Convert to an accordion layout"
 ```
 
-**Designverbesserungen:**
+**Design-Verbesserungen:**
 
 ```
 "Create a wizard-style form with 3 steps: personal info, preferences, and review"
@@ -187,63 +187,63 @@ Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlic
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
 
-## Arbeiten mit Anhängen
+## Arbeiten mit Anlagen
 
 Laden Sie Dateien hoch, damit die KI genau versteht, wonach Sie suchen:
 
 ### Unterstützte Dateitypen
 
-| Dateityp | Am besten geeignet für | Anwendungsbeispiel |
+| Dateityp | Am besten geeignet für | Beispiel |
 |-----------|----------|-------------|
-| **images** (PNG, JPG, GIF) | Formular-Layouts, UI-Mockups, Papierformular-Scans | „Erstellen eines Formulars, das diesem Layout entspricht“ |
-| **PDF-Dateien** | Bestehende Formulare zum Konvertieren, Spezifikationen | „Konvertieren dieses PDF-Formulars in ein digitales“ |
-| **FIGMA-Dateien** | Design-Prototypen, Markenrichtlinien | „Baue dieses Formular aus meinem Figma-Design“ |
-| **Design-Dateien** | Visuelle Verweise, Style Guides | „Passen Sie den Stil in diesem Design an“ |
+| **Bilder** (PNG, JPG, GIF) | Formular-Layouts, UI-Mockups, gescannte Papierformulare | „Erstelle ein Formular, das diesem Layout entspricht“ |
+| **PDF-Dateien** | Bestehende Formulare zum Konvertieren, Spezifikationen | „Konvertiere dieses PDF-Formular in ein digitales“ |
+| **Figma-Dateien** | Design-Prototypen, Markenrichtlinien | „Baue dieses Formular aus meinem Figma-Design“ |
+| **Design-Dateien** | Visuelle Verweise, Styleguides | „Passe den Stil in diesem Design an“ |
 
 ### Verwendung von Anhängen
 
 1. **Klicken Sie auf das Anlagensymbol** in der Benutzeroberfläche des KI-Assistenten
-2. **Datei auswählen** von Ihrem Gerät aus
-3. **Beschreiben Sie, was Sie** möchten, indem Sie auf die angehängte Datei verweisen:
-   - „Erstellen eines Formulars basierend auf dieser angehängten PDF&quot;
-   - „Erstellen Sie ein Kontaktformular entsprechend dem Layout in diesem Bild“
-   - „Konvertieren Sie dieses Papierformular in eine digitale Version.“
+2. **Wählen Sie die Datei** auf Ihrem Gerät aus
+3. **Beschreiben Sie, was Sie möchten**, indem Sie auf die angehängte Datei verweisen:
+   - „Erstelle ein Formular basierend auf diesem angehängten PDF&quot;
+   - „Erstelle ein Kontaktformular entsprechend dem Layout in diesem Bild“
+   - „Konvertiere dieses Papierformular in eine digitale Version.“
 
 ### Best Practices mit Anhängen
 
 - **Verwenden Sie klare, hochwertige Bilder** für eine bessere KI-Analyse
-- **Konzentration auf ein Konzept pro Anhang** (Layout, Stil usw.)
-- **Beschreiben Sie Ihre** zusammen mit dem Anhang.
-- **Dateien unter 10 MB aufbewahren** für eine optimale Verarbeitung
+- **Konzentrieren Sie sich auf nur ein Konzept pro Anhang** (Layout, Stil usw.)
+- **Beschreiben Sie, was Sie wollen** zusammen mit dem Anhang.
+- **Halten Sie die Dateien unter 10 MB** für eine optimale Verarbeitung
 
-## Tipps für beste Ergebnisse
+## Tipps, um bestmögliche Ergebnisse zu erzielen
 
-### Einfach starten, aufbauen
+### Einfach starten, dann aufbauen
 
-- Beginnen Sie mit grundlegenden Anfragen: „Erstellen eines Kontaktformulars“
-- Fügen Sie Details schrittweise hinzu: „Validierung zum E-Mail-Feld hinzufügen“
-- Testen und Verfeinern: „Telefonfeld optional machen“
+- Beginnen Sie mit grundlegenden Anfragen: „Erstelle ein Kontaktformular“
+- Fügen Sie Details schrittweise hinzu: „Füge Validierung zum E-Mail-Feld hinzu“
+- Testen und verfeinern Sie: „Mach das Telefonfeld optional“
 
 ### Seien Sie bei Bedarf spezifisch
 
-- Anstelle von: „Make it look good“
-- Probieren Sie: „Verwenden Sie professionelle Farben und saubere Typografie“
+- Anstelle von: „Lass es gut aussehen“
+- Probieren Sie: „Verwende professionelle Farben und saubere Typografie“
 
-### Natürliche Sprache verwenden
+### Verwenden Sie natürliche Sprache
 
-- Anstelle von „Texteingabekomponente hinzufügen“
-- Versuchen Sie: „Feld für Vornamen hinzufügen“
+- Anstelle von „Füge eine Texteingabekomponente hinzu“
+- Versuchen Sie: „Füge ein Feld für Vornamen hinzu“
 
-### Vorhandene Elemente referenzieren
+### Beziehen Sie sich auf vorhandene Elemente
 
-- `@fieldName` für vorhandene Felder verwenden: &quot;@email erforderlich machen“
-- Geben Sie Feldnamen ein: „Aktualisieren Sie das @phoneNumber“
+- Verwenden Sie `@fieldName` für vorhandene Felder: „Mach @email zu einem Pflichtfeld“
+- Seien Sie bei Feldnamen konkret: „Aktualisiere das Feld @phoneNumber“
 
 ### Schlüsseln Sie komplexe Anfragen auf
 
-- Anstelle einer großen Anfrage mehrere kleinere Anfragen versuchen
-- Formular Schritt für Schritt erstellen
-- Testen Sie jede Änderung, bevor Sie zur nächsten wechseln
+- Versuchen Sie es statt mit einer großen Anfrage mit mehreren kleineren
+- Bauen Sie Ihr Formular Schritt für Schritt auf
+- Testen Sie jede Änderung, bevor Sie zur nächsten übergehen
 
 ## Produkthilfe und Lernprogramme
 
@@ -257,16 +257,16 @@ Der KI-Assistent kann Sie auch über die Funktionen von AEM Forms informieren:
 - „Was sind die Best Practices für mobilfreundliche Formulare?“
 - „Wie kann ich Designs auf meine Formulare anwenden?“
 
-### Hilfe zu:
+### Holen Sie sich Hilfe zu:
 
-- Konzepte und Terminologie von AEM Forms
-- Schrittweise Anleitungen für komplexe Funktionen
-- Best Practices und Empfehlungen
-- Beheben häufiger Probleme
+- Konzepten und Terminologie von AEM Forms
+- Schrittweisen Anleitungen für komplexe Funktionen
+- Best Practices und Einschränkungen
+- Fehlerbehebung bei Indizierungsproblemen
 
 ## Referenz zu erweiterten Funktionen
 
-Für Benutzer, die erweiterte Funktionen erkunden möchten:
+Für Benutzende, die erweiterte Funktionen erkunden möchten:
 
 ### Schnellbefehle
 
@@ -279,32 +279,32 @@ Geben Sie `/` ein, um die verfügbaren Tastaturbefehle anzuzeigen:
 | `/update-layout` | Formularstruktur ändern | `/update-layout wizard with 3 steps` |
 | `/update-field` | Feldeigenschaften ändern | `/update-field @email to be required` |
 | `/create-rule` | Dynamisches Verhalten hinzufügen | `/create-rule show @spouse if married` |
-| `/create-panel` | Hinzufügen von Feld-Containern | `/create-panel Personal Information` |
-| `/configure-submit` | Einrichten der Formularübermittlung | `/configure-submit to email support` |
-| `/help` | Hilfe anfordern | `/help multi-step forms` |
+| `/create-panel` | Feld-Container hinzufügen | `/create-panel Personal Information` |
+| `/configure-submit` | Die Formularübermittlung einrichten | `/configure-submit to email support` |
+| `/help` | Hilfe erhalten | `/help multi-step forms` |
 
 ### Feldverweissyntax
 
 Verwenden Sie `@fieldName`, um auf vorhandene Felder zu verweisen:
 
-- `@firstName` - Feld Vorname
-- `@email` - E-Mail-Feld
-- `@phoneNumber` - Telefonnummernfeld
-- `@dateOfBirth` - Feld Geburtsdatum
+- `@firstName` – Feld „Vorname“
+- `@email` – Feld „E-Mail“
+- `@phoneNumber` – Feld „Telefonnummer“
+- `@dateOfBirth` – Feld „Geburtsdatum“
 
 ### Komponententypen
 
 Verwenden Sie diese Begriffe, um optimale Ergebnisse zu erzielen:
 
-- `text input` - Einzeiliges Textfeld
-- `text area` - Mehrzeiliges Textfeld
-- `dropdown` - Liste auswählen
-- `checkbox` - Einfaches Kontrollkästchen
-- `checkbox group` - Mehrere Kontrollkästchen
-- `radio group` - Optionsschaltflächengruppe
-- `date picker` - Datumsauswahl
-- `file upload` - Dateianhang
-- `panel` - Container für Gruppierungsfelder
+- `text input` – Einzeiliges Textfeld
+- `text area` – Mehrzeiliges Textfeld
+- `dropdown` – Liste auswählen
+- `checkbox` – Einfaches Kontrollkästchen
+- `checkbox group` – Mehrere Kontrollkästchen
+- `radio group` – Optionsfeldgruppe
+- `date picker` – Datumsauswahl
+- `file upload` – Dateianhang
+- `panel` – Container für Gruppierungsfelder
 
 ## Fehlerbehebung
 
@@ -312,36 +312,36 @@ Verwenden Sie diese Begriffe, um optimale Ergebnisse zu erzielen:
 
 **KI-Assistent reagiert nicht:**
 
-- Überprüfen der Internetverbindung
+- Überprüfen Sie Ihre  Internet-Verbindung
 - Stellen Sie sicher, dass Sie sich in einer unterstützten Umgebung befinden
-- Schließen Sie das Bedienfeld KI-Assistent und öffnen Sie es erneut
+- Schließen Sie das Bedienfeld „KI-Assistent“ und öffnen Sie es erneut
 
 **Unerwartete Ergebnisse:**
 
 - Formulieren Sie Ihre Anfrage genauer
-- Unterteilen komplexer Anforderungen in kleinere Schritte
-- Standardterminologie von AEM Forms verwenden
+- Unterteilen Sie komplexe Anforderungen in kleinere Schritte
+- Verwenden Sie die Standardterminologie von AEM Forms
 
 **Feldverweise funktionieren nicht:**
 
 - Überprüfen Sie, ob die Feldnamen genau so geschrieben sind, wie sie angezeigt werden
-- Verwenden `@fieldName` Syntax für vorhandene Felder
-- Sicherstellen, dass das Feld vorhanden ist, bevor darauf verwiesen wird
+- Verwenden Sie die Syntax `@fieldName` für vorhandene Felder
+- Stellen Sie sicher, dass das Feld vorhanden ist, bevor darauf verwiesen wird
 
 **Probleme beim Design-Import:**
 
-- Überprüfen, ob die Dateien klar und gut strukturiert sind
-- Unterstützte Formate verwenden (PDF, PNG, JPG, Figma)
+- Überprüfen Sie, ob die Dateien klar und gut strukturiert sind
+- Verwenden Sie unterstützte Formate (PDF, PNG, JPG, Figma)
 - Stellen Sie sicher, dass die Dateigröße weniger als 10 MB beträgt
 
-## Feedback und Support
+## Informationen und Support
 
 Helfen Sie uns, den KI-Assistenten zu verbessern:
 
-- **Feedback geben**: Verwenden Sie die Schaltfläche Feedback in der Benutzeroberfläche des KI-Assistenten
-- **Probleme melden**: Wenden Sie sich über offizielle Kanäle an den Adobe-Support
-- **Erfahrungen austauschen**: Ihre Eingabe hilft, den Assistenten für alle besser zu machen
+- **Feedback geben**: Verwenden Sie die Schaltfläche „Feedback“ in der Benutzeroberfläche des KI-Assistenten
+- **Probleme melden**: Wenden Sie sich über die offiziellen Kanäle an den Adobe-Support
+- **Erfahrungen austauschen**: Ihr Input hilft, den Assistenten für alle besser zu machen
 
-## Verwandte Ressourcen
+## Zugehörige Ressourcen
 
-[AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[AEM Forms KI-Assistent – Bibliothek für Prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)

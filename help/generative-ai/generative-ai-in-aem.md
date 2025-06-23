@@ -5,9 +5,9 @@ feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Generative KI wird überall in AEM verwendet:
 
 * [KI-generierte Smart-Tags](/help/assets/metadata-assets-view.md#ai-smart-tags)
 
-  Bei Digital Assets können Sie KI verwenden, um automatisch beschreibende Tags zuzuweisen, anstatt sich auf manuelle Eingaben zu verlassen. Diese KI-generierten Tags verbessern die Metadatenqualität und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung manueller Tags, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher.
+  Bei digitalen Assets können Sie die KI verwenden, um ihnen automatisch beschreibende Tags zuzuweisen, anstatt sich auf manuelle Eingaben zu verlassen. Diese KI-generierten Tags verbessern die Metadatenqualität und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung des manuellen Taggings, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher.
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)

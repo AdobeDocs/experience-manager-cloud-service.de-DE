@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2556'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -158,8 +158,8 @@ Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete �
 Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM as a Cloud Service führen.
 
 Wie im vorherigen Abschnitt erwähnt, ist Folgendes erforderlich, um eine effektive Überwachung von Kundenumgebungen sicherzustellen:
-* Die Protokollebene der standardmäßigen Protokollkonfiguration für AEM (Apache Sling-Protokollierungskonfiguration) darf nicht von ihrem Standardwert „INFO“ geändert werden.
-* Es ist akzeptabel, die Protokollebenen für einzelne Pakete von Produkt-Code (unter Verwendung von Instanzen der OSGi-Konfigurations-Factory „Apache Sling Logging Logger Configuration„) auf DEBUG zu setzen. Verwenden Sie diese Einstellung jedoch sparsam, um eine Leistungsbeeinträchtigung zu verhindern und bei nicht mehr benötigter Konfiguration wieder auf INFO zurückzusetzen.
+* Für die Protokollebene der standardmäßigen Protokollkonfiguration für AEM (Apache Sling-Protokollierungskonfiguration) darf der Standardwert „INFO“ nicht geändert werden.
+* Es ist akzeptabel, die Protokollebenen für einzelne Pakete von Produkt-Code (unter Verwendung von Instanzen der OSGi-Konfigurations-Factory „Apache Sling Logging Logger Configuration“) auf DEBUG zu setzen. Verwenden Sie diese Einstellung jedoch sparsam, um eine Leistungsbeeinträchtigung zu verhindern, und setzen Sie sie wieder auf „INFO“ zurück, sobald nicht mehr benötigt.
 * Es ist akzeptabel, die Protokollebenen für den von der Kundin oder dem Kunden entwickelten Code anzupassen.
 * Alle Protokolle müssen das standardmäßige Protokollierungsformat beibehalten. Dies gilt sowohl für den AEM-Produkt-Code als auch für den von der Kundin oder dem Kunden entwickelten Code.
 * Die Protokollausgabe muss an die Standarddatei „logs/error.log“ weitergeleitet bleiben. 
@@ -409,7 +409,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <td>[cm-p1234-e56789-aem-publish-b86c6b466-qpfvp]</td>
 </tr>
 <tr>
-<td>Nachricht</td>
+<td>Meldung</td>
 <td>AH00094: Befehlszeile: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
 </tr>
 </tbody>

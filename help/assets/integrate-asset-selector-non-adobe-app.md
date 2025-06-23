@@ -1,12 +1,12 @@
 ---
-title: Integrieren des Asset-Wählers mit Nicht-Adobe- oder Drittanbieterprogrammen
+title: Integrieren des Asset-Wählers mit Adobe-fremden oder Drittanbieteranwendungen
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1712'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,10 +25,10 @@ Jede dieser Optionen, einschließlich der Konfigurationssyntax, wird in einem ei
 Es gibt einen Abschnitt über das [Rotieren von Schlüsseln](#rotating-secrets), welches eine gute Sicherheitspraxis ist.
 
 >[!NOTE]
-> Geheime Daten, die als Umgebungsvariablen definiert sind, sollten als unveränderlich betrachtet werden. Anstatt den Wert zu ändern, sollten Sie neue geheime Daten mit einem neuen Namen erstellen und in der Konfiguration auf diese geheimen Daten verweisen. Andernfalls erfolgt eine unzuverlässige Aktualisierung der Geheimnisse.
+> Geheimnisse, die als Umgebungsvariablen definiert sind, sollten als unveränderlich betrachtet werden. Anstatt den Wert zu ändern, sollten Sie ein neues Geheimnis mit einem neuen Namen erstellen und in der Konfiguration auf dieses Geheimnis verweisen. Andernfalls erfolgt eine unzuverlässige Aktualisierung der Geheimnisse.
 
 >[!WARNING]
->Entfernen Sie nicht die Umgebungsvariablen, auf die in Ihrer CDN-Konfiguration verwiesen wird. Dies kann zu Fehlern bei der Aktualisierung Ihrer CDN-Konfiguration führen (z. B. beim Aktualisieren von Regeln oder benutzerdefinierten Domains und Zertifikaten).
+>Entfernen Sie nicht die Umgebungsvariablen, auf die in Ihrer CDN-Konfiguration verwiesen wird. Dies kann zu Fehlern beim Aktualisieren Ihrer CDN-Konfiguration führen (z. B. beim Aktualisieren von Regeln oder benutzerdefinierten Domains und Zertifikaten).
 
 ## HTTP-Header-Wert des kundenseitig verwalteten CDN {#CDN-HTTP-value}
 
@@ -220,11 +220,11 @@ Darüber hinaus enthält die Syntax Folgendes:
 >[!NOTE]
 >Die Kennwörter müssen als [Cloud Manager-Umgebungsvariablen vom Typ „secret“](/help/operations/config-pipeline.md#secret-env-vars) konfiguriert werden, bevor die Konfiguration, die auf sie verweist, bereitgestellt wird.
 
-## Rotieren von Geheimnissen {#rotating-secrets}
+## Wechseln von Geheimnissen {#rotating-secrets}
 
-Es empfiehlt sich, die Anmeldeinformationen regelmäßig zu ändern. Beachten Sie, dass Umgebungsvariablen nicht direkt geändert werden sollten, sondern stattdessen ein neues Geheimnis erstellen und auf den neuen Namen in der Konfiguration verweisen sollten.
+Es empfiehlt sich als gute Sicherheitspraxis, die Anmeldeinformationen regelmäßig zu ändern. Denken Sie daran, dass Umgebungsvariablen nicht direkt geändert werden sollten, sondern erstellen Sie stattdessen einen neuen geheimen Schlüssel und verweisen Sie in der Konfiguration auf den neuen Namen.
 
-Dieser Anwendungsfall wird im Folgenden am Beispiel eines Edge-Schlüssels veranschaulicht, obwohl dieselbe Strategie auch für Purge-Schlüssel verwendet werden kann.
+Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge-Schlüssels erreicht werden, wobei dieselbe Strategie auch für Bereinigungsschlüssel verwendet wird.
 
 1. Zunächst wurde nur `edgeKey1` definiert, der in diesem Fall als `${{CDN_EDGEKEY_052824}}` referenziert wird, was als empfohlene Konvention das Erstellungsdatum widerspiegelt.
 
@@ -235,7 +235,6 @@ Dieser Anwendungsfall wird im Folgenden am Beispiel eines Edge-Schlüssels veran
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. Wenn Sie den Schlüssel rotieren müssen, erstellen Sie ein neues Cloud Manager-Geheimnis, z. B. `${{CDN_EDGEKEY_041425}}`.
 1. Verweisen Sie in der Konfiguration von `edgeKey2` darauf und stellen Sie es bereit.
 
@@ -257,7 +256,6 @@ Dieser Anwendungsfall wird im Folgenden am Beispiel eines Edge-Schlüssels veran
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Löschen Sie die Referenz des alten Geheimnisses (`${{CDN_EDGEKEY_052824}}`) aus Cloud Manager aus und nehmen Sie die Bereitstellung vor.
 
 1. Wenn Sie für die nächste Rotation bereit sind, gehen Sie analog vor. Diesmal fügen Sie jedoch `edgeKey1` zu der Konfiguration hinzu, indem Sie auf ein neues Cloud Manager-Umgebungsgeheimnis verweisen, das beispielsweise den Namen `${{CDN_EDGEKEY_031426}}` hat.
@@ -271,7 +269,7 @@ Dieser Anwendungsfall wird im Folgenden am Beispiel eines Edge-Schlüssels veran
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
 
-Beim Rotieren von geheimen Daten, die in Anfrage-Headern festgelegt sind, z. B. zur Authentifizierung gegen ein Backend, wird empfohlen, die Rotation in zwei Schritten durchzuführen, um sicherzustellen, dass der Header-Wert ohne temporäre Lücken gewechselt wird.
+Beim Rotieren von geheimen Daten, die in Anfrage-Headern festgelegt sind, z. B. zur Authentifizierung gegen ein Backend, wird empfohlen, die Rotation in zwei Schritten durchzuführen, um sicherzustellen, dass der Header-Wert ohne temporäre Lücken gewechselt wird.
 
 1. Erstkonfiguration vor der Rotation. In diesem Zustand wird der alte Schlüssel an das Backend gesendet.
 
@@ -285,7 +283,7 @@ Beim Rotieren von geheimen Daten, die in Anfrage-Headern festgelegt sind, z. B. 
              value ${{API_KEY_1}}
    ```
 
-1. Führen Sie die neue `API_KEY_2` ein, indem Sie dieselbe Kopfzeile zweimal festlegen (der neue Schlüssel sollte nach dem alten Schlüssel festgelegt werden). Nach der Bereitstellung wird der neue Schlüssel im Backend angezeigt.
+1. Führen Sie den neuen Schlüssel `API_KEY_2` ein, indem Sie dieselbe Kopfzeile zweimal festlegen (der neue Schlüssel sollte dabei nach dem alten Schlüssel festgelegt werden). Nach der Bereitstellung wird der neue Schlüssel im Backend angezeigt.
 
    ```
    requestTransformations:
@@ -300,7 +298,7 @@ Beim Rotieren von geheimen Daten, die in Anfrage-Headern festgelegt sind, z. B. 
              value ${{API_KEY_2}}
    ```
 
-1. Entfernen Sie den alten `API_KEY_1` aus der Konfiguration. Nach der Bereitstellung wird der neue Schlüssel im Backend angezeigt und es ist sicher, die Umgebungsvariable des alten Schlüssels zu entfernen.
+1. Entfernen Sie den alten Schlüssel `API_KEY_1` aus der Konfiguration. Nach der Bereitstellung wird der neue Schlüssel im Backend angezeigt und die Umgebungsvariable des alten Schlüssels kann sicher entfernt werden.
 
 
    ```
