@@ -8,7 +8,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -92,7 +92,7 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
 
 Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
 
-Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+Siehe auch [Verwalten von Zugriffs-Token](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
 
@@ -105,7 +105,7 @@ Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managi
 
 Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
 
-Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+Siehe auch [Verwalten von Zugriffs-Token](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB Bitbucket]
 
@@ -118,7 +118,7 @@ Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managi
 
 Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
 
-Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+Siehe auch [Verwalten von Zugriffs-Token](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB Azure DevOps]
 
@@ -131,7 +131,7 @@ Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managi
 
 Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
 
-Siehe auch [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+Siehe auch [Verwalten von Zugriffs-Token](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!ENDTABS]
 

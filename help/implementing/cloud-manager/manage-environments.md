@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '2430'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -26,13 +26,13 @@ Benutzende mit den erforderlichen Berechtigungen können die folgenden Umgebungs
 | **Produktion + Staging** | Die Produktions- und Staging-Umgebungen sind gemeinsam verfügbar und werden für Produktions- bzw. Testzwecke verwendet. Führen Sie Leistungs- und Sicherheitstests in der Staging-Umgebung durch. Sie hat dieselbe Größe wie die Produktion. |
 | **Entwicklung** | Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird ausschließlich produktionsfremden Pipelines zugeordnet. Entwicklungsumgebungen haben nicht dieselbe Größe wie Staging- und Produktionsumgebungen und sollten nicht für Leistungs- und Sicherheitstests verwendet werden. |
 | **Schnelle Entwicklung** | Mit einer schnellen Entwicklungsumgebung (Rapid Development Environment, RDE) können Entwickelnde Änderungen schnell bereitstellen und überprüfen. Dadurch wird der Zeitaufwand für das Testen von Funktionen reduziert, die bereits in einer lokalen Entwicklungsumgebung validiert wurden. Details zur Verwendung einer RDE finden Sie in der [Dokumentation zu schnellen Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md). |
-| **Spezialisierte Testumgebung** | Spezialisierte Testumgebungen bieten dedizierten Raum für die Validierung von Funktionen unter produktionsnahen Bedingungen, ideal für Belastungstests und erweiterte Prüfungen vor der Bereitstellung. Siehe [Hinzufügen einer speziellen Testumgebung](/help/implementing/cloud-manager/specialized-test-environment.md) |
+| **Spezialisierte Testumgebung** | Spezialisierte Testumgebungen bieten einen dedizierten Raum für die Validierung von Funktionen unter produktionsnahen Bedingungen, ideal für Belastungstests und erweiterte Prüfungen vor der Bereitstellung. Siehe [Hinzufügen einer speziellen Testumgebung](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
 >[!NOTE]
 >
 >Die Funktion **Spezialisierte Testumgebung** ist derzeit nur über das private Beta-Programm verfügbar. Informationen zum Registrieren für die private Beta-Version finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
-Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die im [Programm](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umgebung aktiviert sind.
+Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [Programm](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umgebung aktiviert wurden.
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -110,7 +110,7 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
 ### Bearbeiten mehrerer Veröffentlichungsregionen {#edit-regions}
 
-Wenn Sie zunächst keine zusätzlichen Regionen angegeben haben, können Sie dies tun, nachdem die Umgebung erstellt wurde und Sie über die erforderlichen Berechtigungen verfügen.
+Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies auch nach der Erstellung der Umgebung noch tun, sofern Sie über die erforderlichen Berechtigungen verfügen.
 
 Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können jedoch in einer Transaktion Regionen nur entweder hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine andere Region entfernen müssen, fügen Sie zuerst eine hinzu, speichern Ihre Änderung und entfernen dann die andere (oder umgekehrt).
 

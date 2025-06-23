@@ -1,12 +1,12 @@
 ---
-title: Integrieren des Asset-Wählers mit der Open API von Dynamic Media
+title: Integrieren des Asset-Wählers mit Dynamic Media-OpenAPIs
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 

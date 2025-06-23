@@ -7,7 +7,7 @@ exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 83%
 </table>
 
 [!DNL AEM Assets View] unterstützt die Erweiterbarkeit der Benutzeroberfläche, sodass Sie Ihrer [!DNL Assets View]-Benutzeroberfläche benutzerdefinierte Benutzeroberflächenkomponenten für bestimmte Workflows und Geschäftsanforderungen hinzufügen können, die von den vorkonfigurierten Funktionen von [!DNL AEM Assets View] nicht erfüllt werden. Diese Erweiterbarkeitsfunktion der Benutzeroberfläche von [!DNL AEM Assets View] erhöht die Flexibilität und ermöglicht es Organisationen, die Benutzeroberfläche an bestimmte Workflows und Anforderungen anzupassen.\
-Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **&#x200B;**&#x200B;angezeigt.
+Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **** angezeigt.
 
 >[!IMPORTANT]
 >
@@ -88,8 +88,8 @@ Sie müssen die folgenden Anforderungen erfüllen, um die Erweiterbarkeitskompon
 
 ## Anpassen der Schnellaktionen und Aktionsleiste in der Assets-Ansicht {#customize-quick-actions-and-actions-bar}
 
-Sie können die Aktionen anpassen, die angezeigt werden, wenn Sie ein oder mehrere Assets (Aktionsleiste) in der Assets-Ansicht auswählen. Mit der Assets-Ansicht können Sie auch die Aktionen anpassen, die angezeigt werden, wenn Sie auf Weitere Optionen (…) auf der Asset-Karte klicken. Weitere Informationen finden Sie unter [Durchsuchen-](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+Sie können anpassen, welche Aktionen angezeigt werden, wenn Sie ein oder mehrere Assets (Aktionsleiste) in der Assets-Ansicht auswählen. Mit der Assets-Ansicht können Sie auch anpassen, welche Aktionen angezeigt werden, wenn Sie auf „Weitere Optionen“ (…) auf der Asset-Karte klicken. Weitere Informationen finden Sie unter [Ansicht für das Durchsuchen](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
 
-## Benutzerdefinierte Dialogfelder in der Assets-Ansicht öffnen {#open-custom-dialogs-assets-view}
+## Öffnen benutzerdefinierter Dialogfelder in der Assets-Ansicht {#open-custom-dialogs-assets-view}
 
-Die Assets-Ansicht bietet außerdem die Möglichkeit, benutzerdefinierte Dialogfelder mit Text Ihrer Wahl zu öffnen. Sie können dem Text auch Links hinzufügen. Weitere Informationen finden Sie unter [Modale API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
+Die Assets-Ansicht bietet außerdem die Möglichkeit, benutzerdefinierte Dialogfelder mit einem Text Ihrer Wahl zu öffnen. Sie können dem Text auch Links hinzufügen. Weitere Informationen finden Sie unter [Modales API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).

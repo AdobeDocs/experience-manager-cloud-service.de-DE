@@ -11,7 +11,7 @@ hidefromtoc: true
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Konfigurieren Sie Ihre Pipeline-Einstellungen über [!UICONTROL Cloud Manager], 
 >
 >Nach der Ersteinrichtung können Sie die [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
-## Neue Edge Delivery-Pipeline hinzufügen {#adding-production-pipeline}
+## Hinzufügen einer neuen Edge Delivery-Pipeline {#adding-production-pipeline}
 
 Sobald Sie mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] Ihr Programm eingerichtet und mindestens eine Umgebung haben, können Sie eine Produktions-Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 

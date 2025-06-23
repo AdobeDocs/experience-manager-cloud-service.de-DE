@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
 source-wordcount: '6281'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 97%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
-         + [2 025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
+         + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -448,7 +448,7 @@ ht-degree: 97%
          + [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Inhaltsfragmente mit Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-         + [Erweiterung für Inhaltsfragmentmodelle in AJO - externe Verweise](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
+         + [Erweiterung für externe AJO-Verweise in Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -701,7 +701,7 @@ ht-degree: 97%
       + [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Suchen nach Assets in Content Hub](/help/assets/search-assets-content-hub.md)
       + [Asset-Eigenschaften](/help/assets/asset-properties-content-hub.md)
-      + [Attributbasierte Zugriffssteuerung](/help/assets/attribute-based-access-control.md)
+      + [Attributbasierte Zugriffssteuerung – Übersicht](/help/assets/attribute-based-access-control.md)
       + [Freigeben von Assets im Content Hub](/help/assets/share-assets-content-hub.md)
       + [Herunterladen von Assets mit Content Hub](/help/assets/download-assets-content-hub.md)
       + [Verwalten lizenzierter Assets in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -1003,7 +1003,7 @@ ht-degree: 97%
          + [Zwischenspeicheroptionen](/help/commerce-cloud/configuring/caching.md)
          + [Benutzerdefinierte HTTP-Header](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [Einrichtung von Warenkorb und Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [Komponenten- und GraphQL-Cache löschen](/help/commerce-cloud/configuring/clear-cache.md)
+         + [Löschen von Komponenten- und GraphQL-Cache](/help/commerce-cloud/configuring/clear-cache.md)
       + Entwickeln {#developing}
          + [Entwickeln mit dem AEM Cloud Service-SDK](/help/commerce-cloud/develop.md)
          + [Festlegen des Stils von CIF-Komponenten](/help/commerce-cloud/customizing/style-cif-component.md)
@@ -1190,7 +1190,7 @@ ht-degree: 97%
    + [Varianten generieren](/help/generative-ai/generate-variations.md)
    + [Assistent (eingeschränkte Beta-Version)](/help/implementing/cloud-manager/aem-ai-assistant.md)
    + [KI-Assistent für AEM Forms (Forms Experience Builder) (Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [AEM Forms KI-Assistent – Bibliothek für Prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implementieren {#implementing}
    + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
    + Verwenden von Cloud Manager {#using-cloud-manager}
