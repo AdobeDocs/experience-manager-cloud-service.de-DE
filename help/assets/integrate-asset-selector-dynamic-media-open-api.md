@@ -3,10 +3,10 @@ title: Integrieren des Asset-Wählers mit Dynamic Media-OpenAPIs
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 96%
+source-wordcount: '982'
+ht-degree: 91%
 
 ---
 
@@ -97,7 +97,7 @@ Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, d
 | Objekt | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| API-Stamm | `/adobe/dynamicmedia/deliver` |
+| API-Stamm | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | format | `.jpg` |
@@ -105,16 +105,17 @@ Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, d
 #### API-Spezifikation für die Bereitstellung genehmigter Assets {#approved-assets-delivery-api-specification}
 
 URL-Format:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Dabei gilt Folgendes:
 
 * Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * Der API-Stamm lautet `"/adobe/assets"`
 * `<asset-id>` ist die Asset-Kennung
+* `as` ist der konstante Teil der Open-API-Spezifikation, die angibt, wie das Asset bezeichnet werden soll
 * `<seo-name>` ist der Name eines Assets
 * `<format>` ist das Ausgabeformat
-* `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt
+* `<image modification query parameters>` wie von der Bereitstellungs-API-Spezifikation der genehmigten Assets unterstützt
 
 #### API zur Bereitstellung von genehmigten Assets für die ursprüngliche Ausgabedarstellung {#approved-assets-delivery-api}
 
@@ -168,7 +169,7 @@ Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PD
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie 
 
 ![Benutzeroberfläche von Dynamic Media mit OpenAPI-Funktionen](assets/polaris-ui.png)
 
-* **A**: [Bedienfeld aus-/einblenden](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [Sortieung](#sorting)
-* **D**: [Filter](#filters)
-* **E**: [Suchleiste](#search-bar)
-* **G**: [Sortierung in auf- oder absteigender Reihenfolge](#sorting)
+* **A**: Bedienfeld aus-/einblenden
+* **B**: Assets
+* **C**: Sortierung
+* **D**: Filter
+* **E**: Suchleiste
+* **F**: Sortierung nach auf- oder absteigender Reihenfolge
 * **G**: Auswahl abbrechen
 * **H**: Einzelne oder mehrere Assets auswählen
 
