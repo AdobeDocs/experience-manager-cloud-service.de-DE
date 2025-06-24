@@ -3,10 +3,10 @@ title: Integrieren des Asset-Wählers mit Dynamic Media-OpenAPIs
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 98%
+source-wordcount: '967'
+ht-degree: 96%
 
 ---
 
@@ -105,25 +105,26 @@ Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, d
 #### API-Spezifikation für die Bereitstellung genehmigter Assets {#approved-assets-delivery-api-specification}
 
 URL-Format:
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Dabei gilt Folgendes:
 
 * Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* Der API-Stamm lautet `"/adobe/dynamicmedia/deliver"`
+* Der API-Stamm lautet `"/adobe/assets"`
 * `<asset-id>` ist die Asset-Kennung
 * `<seo-name>` ist der Name eines Assets
 * `<format>` ist das Ausgabeformat
 * `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt
 
-#### API zur Bereitstellung genehmigter Assets {#approved-assets-delivery-api}
+#### API zur Bereitstellung von genehmigten Assets für die ursprüngliche Ausgabedarstellung {#approved-assets-delivery-api}
 
 Die dynamische Versand-URL weist die folgende Syntax auf:
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, wobei Folgendes gilt:
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, wobei Folgendes gilt:
 
 * Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets/deliver"`
+* Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets"`
 * `<asset-id>` ist die Asset-Kennung
+* `/original/as` ist der konstante Teil der Open-API-Spezifikation, der angibt, wie die ursprüngliche Ausgabedarstellung bezeichnet werden soll
 * `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann
 
 ### Auswahlbereite dynamische Bereitstellungs-URL {#ready-to-pick-dynamic-delivery-url}
@@ -133,7 +134,7 @@ Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, d
 | Objekt | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| API-Stamm | `/adobe/assets/deliver` |
+| API-Stamm | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
@@ -153,12 +154,12 @@ Sobald eine PDF-Datei im Sidekick ausgewählt ist, bietet der Auswahlkontext die
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PDF-Datei in das Zielerlebnis integriert werden, wenn eine PDF-Datei erforderlich ist und nicht ihre Miniaturansicht. Zum Beispiel: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PDF-Datei in das Zielerlebnis integriert werden, wenn eine PDF-Datei erforderlich ist und nicht ihre Miniaturansicht. Zum Beispiel: `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
 * **Video:** Sie können die Video-Player-URL für die Assets vom Typ „Video“ verwenden, die einen eingebetteten iFrame verwenden. Sie können die folgenden Array-Ausgabedarstellungen im Zielerlebnis verwenden:
   <!--![Video dynamic delivery url](image.png)-->
@@ -167,7 +168,7 @@ Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PD
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -176,7 +177,7 @@ Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PD
 
   Das Code-Fragment im obigen Screenshot ist ein Beispiel für ein Video-Asset. Es enthält das Array der Ausgabedarstellungs-Links. `selection[5]` im Auszug ist das Beispiel für die Miniaturansicht eines Bildes, die als Platzhalter für die Miniaturansicht eines Videos im Zielerlebnis verwendet werden kann. `selection[5]` im Array der Ausgabedarstellungen ist für den Video-Player vorgesehen. Dies dient als HTML und kann als `src` des iFrames festgelegt werden. Es unterstützt das Streaming mit adaptiver Bitrate (die Web-optimierte Bereitstellung des Videos).
 
-  Im obigen Beispiel lautet die URL des Video-Players wie folgt: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  Im obigen Beispiel lautet die URL des Video-Players wie folgt: `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
 
 ### Konfigurieren benutzerdefinierter Filter {#configure-custom-filters-dynamic-media-open-api}
 
