@@ -258,6 +258,7 @@ Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge-Schlüssels er
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
+
 1. Wenn Sie den Schlüssel rotieren müssen, erstellen Sie ein neues Cloud Manager-Geheimnis, z. B. `${{CDN_EDGEKEY_041425}}`.
 1. Verweisen Sie in der Konfiguration von `edgeKey2` darauf und stellen Sie es bereit.
 
@@ -279,6 +280,7 @@ Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge-Schlüssels er
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
+
 1. Löschen Sie die Referenz des alten Geheimnisses (`${{CDN_EDGEKEY_052824}}`) aus Cloud Manager aus und nehmen Sie die Bereitstellung vor.
 
 1. Wenn Sie für die nächste Rotation bereit sind, gehen Sie analog vor. Diesmal fügen Sie jedoch `edgeKey1` zu der Konfiguration hinzu, indem Sie auf ein neues Cloud Manager-Umgebungsgeheimnis verweisen, das beispielsweise den Namen `${{CDN_EDGEKEY_031426}}` hat.
