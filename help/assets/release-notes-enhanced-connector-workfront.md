@@ -4,10 +4,10 @@ description: Versionshinweise für  [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
-workflow-type: ht
-source-wordcount: '1724'
-ht-degree: 100%
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 98%
 
 ---
 
@@ -52,13 +52,17 @@ ht-degree: 100%
 
 Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront for Experience Manager enhanced connector].
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.20 von [!DNL Workfront for Experience Manager enhanced connector] ist der 6. September 2024.
+Das Veröffentlichungsdatum für die neueste Version 1.9.21 von [!DNL Workfront for Experience Manager enhanced connector] ist der Donnerstag, 25. Juni 2025.
 
 ## Die Highlights der Version {#release-highlights}
 
-Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgende Fehlerbehebung:
+Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgenden Verbesserungen und Fehlerbehebungen:
 
-* Der MIME-Typ geht beim Hochladen und Erstellen einer neuen Version eines vorhandenen Assets verloren.
+* Die Protokollierung von API-Anfragen wurde verbessert, um eine falsch positive Protokollierung von Authentifizierungsfehlern zu vermeiden.
+
+* Es wurde ein Verbindungsleck bei Workfront-API-Aufrufen behoben.
+
+* Unterstützung des erweiterten Workfront-Connectors mit 6.5 LTS für Java 17- und Java 21-Versionen.
 
 >[!NOTE]
 >
@@ -75,6 +79,10 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** nicht das Ziel in Experience Manager auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt über die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**. Die Option **[!UICONTROL Senden an]** funktioniert korrekt für die Dropdown-Liste **[!UICONTROL Mehr]** und die Dropdown-Liste **[!UICONTROL Dokumentenaktionen]**, die in dem neuen Workfront-Erlebnis verfügbar sind.
 
 ## Frühere Versionen {#previous-releases}
+
+### Version September 2024 {#september-2024-release}
+
+* Der MIME-Typ geht beim Hochladen und Erstellen einer neuen Version eines vorhandenen Assets verloren.
 
 ### Version April 2024 {#april-2024-release}
 
