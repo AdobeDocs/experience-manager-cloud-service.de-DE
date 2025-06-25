@@ -4,9 +4,9 @@ description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Ser
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 3d25a9279433e5bf6cc2b2e552ae6266a811c88b
+source-git-commit: 4b729f7d06ff3ef546dee2a67065cced7e5bb3fa
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '630'
 ht-degree: 42%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 42%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2 025,5,0 |
+| Version | 2 025.5.0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 
@@ -38,7 +38,7 @@ Wenn es zum Beispiel Mai ist, können Sie bevorstehende Funktionen auswerten, di
 
 Mit diesem Rhythmus erhalten Sie ein rollierendes Fenster, in dem Sie die Auswirkungen bevorstehender Funktionen auf Ihre Projekte und Anpassungen bewerten und Rollouts für solche Funktionen, Tests und Benutzerschulungen planen können.
 
-Weitere Informationen zu kommenden Versionen finden Sie in [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service) Roadmap für Experience Manager-Versionen von .
+Weitere Informationen zu kommenden Versionen finden Sie in ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service) Roadmap für Experience Manager-Versionen von [.
 
 ## Vorbereitung auf die Veröffentlichung einer Version {#how-to-prepare}
 
@@ -67,12 +67,12 @@ Sie können auch [bekannte Probleme überprüfen](/help/release-notes/maintenanc
 
 Künftige Funktionen werden in der Regel auf eine von zwei Arten verfügbar gemacht:
 
-* Im Rahmen eines Early-Adopter-Programms
+* Im Rahmen eines Alpha-, Beta- oder eingeschränkten Verfügbarkeitsprogramms
 * Im Rahmen des Vorabversionskanals
 
 Wie eine neue Funktion verfügbar gemacht wird, wird in den [Versionshinweisen“ beschrieben](#release-notes)
 
-* Wenn es Teil eines Early-Adopter-Programms ist, müssen Sie sich in der Regel an Adobe wenden, um es zu aktivieren, wie in den Versionshinweisen beschrieben.
+* Wenn es Teil eines Programms für Alpha, Beta oder eingeschränkte Verfügbarkeit ist, müssen Sie sich in der Regel an Adobe wenden, um es zu aktivieren, wie in den Versionshinweisen beschrieben.
 * Wenn es Teil des Vorabversionskanals ist, müssen Sie [den Vorabversionskanal in einer Entwicklungs- oder Sandbox-Umgebung aktivieren“](/help/release-notes/prerelease.md)
 
 ## Schulung von Benutzenden  {#train-users}

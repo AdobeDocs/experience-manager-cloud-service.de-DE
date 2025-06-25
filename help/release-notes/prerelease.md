@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau be
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
+source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '893'
 ht-degree: 58%
 
 ---
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service bietet regelmäßig neue Funktionen.
 
 Künftige Funktionen werden in der Regel auf eine von zwei Arten verfügbar gemacht:
 
-* Im Rahmen eines Early-Adopter-Programms
+* Im Rahmen eines Alpha-, Beta- oder eingeschränkten Verfügbarkeitsprogramms
 * Im Rahmen des Vorabversionskanals
 
 In diesem Dokument wird beschrieben, wie Sie den Vorabversionskanal aktivieren. Der Vorabversionskanal bietet Zugriff auf frühe Funktionen, die in einer zukünftigen Funktionsversion von AEM eingeführt werden. Dadurch haben Sie die Möglichkeit, neue Funktionen zu validieren und deren Einführung vor der zukünftigen Version zu planen. Weitere Informationen [ AEM-Veröffentlichungszeitplan finden Sie im Dokument ](/help/release-notes/home.md)Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
