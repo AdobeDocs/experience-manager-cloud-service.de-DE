@@ -3,50 +3,85 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
+source-git-commit: c98d5ba776f13549c4b82bdbe8f9220663ccb50e
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 84%
+source-wordcount: '1110'
+ht-degree: 83%
 
 ---
 
 # Verwalten von Sammlungen in [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -134,7 +169,7 @@ Mit Content Hub können Sie die Sammlungsansicht filtern, um genau das zu finden
 
 Um die Sammlungsansicht zu filtern, gehen Sie zur Registerkarte **[!DNL Collections]** und navigieren Sie zur Dropdown-Liste „Sammlungen“. Wählen Sie unter den folgenden Optionen:
 
-* **[!UICONTROL Alle Sammlungen]:** Wählen Sie diese Option aus, um alle Sammlungen anzuzeigen, die privat und für Sie freigegeben sind.
+* **[!UICONTROL Alle Sammlungen]:** Wählen Sie diese Option aus, um alle Sammlungen anzuzeigen und zu bearbeiten, einschließlich der privaten oder freigegebenen Sammlungen.
 * **[!UICONTROL Nur ich]:** Wählen Sie diese Option aus, um Sammlungen anzuzeigen, auf die Sie zugreifen können.
 * **[!UICONTROL Alle können anzeigen]:** Mit dieser Option können Sie Sammlungen filtern, die für alle zugänglich sind, aber nur von der erstellenden Person bearbeitet werden können.
 * **[!UICONTROL Alle können bearbeiten]:** Wählen Sie diese Option, um Sammlungen zu filtern, die für alle zugänglich und bearbeitbar sind.
