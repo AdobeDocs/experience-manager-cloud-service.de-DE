@@ -3,10 +3,10 @@ title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren sowie Benutzenden mit unterschiedlichen Berechtigungstypen (Assets hochladen, Adobe Express-Benutzende) Zugriff und Administrationsberechtigungen gewähren.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: be6c75dc12d80b252131e4e7369c1c5555432215
 workflow-type: tm+mt
-source-wordcount: '1643'
-ht-degree: 98%
+source-wordcount: '1649'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,14 @@ In der folgenden Tabelle sind die verfügbaren Content Hub-Benutzertypen, ihre B
 
 ## Schritt 1: Aktivieren von Content Hub für Experience Manager Assets mithilfe von Cloud Manager {#enable-content-hub}
 
-Um auf das Content Hub-Portal zugreifen zu können, müssen Admins zunächst Content Hub für Experience Manager Assets as a Cloud Service mithilfe von Cloud Manager aktivieren. Führen Sie die folgenden Schritte aus:
+
+Für den Zugriff auf das Content Hub-Portal müssen Administratoren zunächst Content Hub für Experience Manager Assets as a Cloud Service mithilfe von Cloud Manager aktivieren.
+
+### Berechtigungen {#permissions-edit-program}
+
+Sie müssen über die Rolle Geschäftsinhaber verfügen, um Programme in Cloud Manager zu bearbeiten. Weitere Informationen finden Sie unter [Programme bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+
+So aktivieren Sie Content Hub für Experience Manager Assets:
 
 1. Melden Sie sich bei Cloud Manager an. Stellen Sie sicher, dass Sie beim Anmelden die richtige Organisation auswählen. Cloud Manager listet alle Ihre Programme auf.
 
@@ -262,4 +269,4 @@ So konfigurieren Sie Experience Manager Assets-Benutzende:
 
    >[!NOTE]
    >
-   >Sie müssen nicht zum [Content Hub-Produktprofil](#onboard-content-hub-users) für Experience Manager Assets-Benutzende hinzugefügt werden.
+   > Sie müssen nicht zum [Content Hub-Produktprofil](#onboard-content-hub-users) für Experience Manager Assets-Benutzende hinzugefügt werden.
