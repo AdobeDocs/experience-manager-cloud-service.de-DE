@@ -4,7 +4,7 @@ description: Erfahren Sie, wie  [!DNL AEM Assets]  mit  [!DNL Figma]  können, u
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
+source-git-commit: 2644c849df32af14c70e686a803b690996812046
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 11%
@@ -76,7 +76,7 @@ Alternativ können Sie auf die in [!DNL Figma] Community verfügbaren [[!DNL Ado
 
 [Greifen Sie auf das Bedienfeld [!UICONTROL Adobe Experience Manager (AEM] Assets Connector](#access-aem-assets-connector) in Ihrer [!DNL Figma]-Design-Oberfläche zu und führen Sie die folgenden Schritte aus:
 
-1. Suchen nach Assets im Bedienfeld [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]. Weitere Informationen finden Sie unter [Verwenden des Asset-Wählers](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Suchen nach Assets im Bedienfeld [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]. Weitere Informationen finden Sie unter [Verwenden des Asset-Wählers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Ziehen Sie das Asset auf die Arbeitsfläche oder wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Auswählen]**, um das Asset auf die Arbeitsfläche zu bringen.
 
@@ -101,4 +101,3 @@ Diese Integration weist derzeit die folgenden Einschränkungen auf:
 
 * Für den Import von [!DNL AEM]-Assets in Figma werden die Formate **JPEG**, **PNG** unterstützt.
 * Für den Export von Designs von [!DNL Figma] nach [!DNL AEM Assets] werden folgende Formate **PNG**, **PDF**, **JPG**, **SVG**.
-
