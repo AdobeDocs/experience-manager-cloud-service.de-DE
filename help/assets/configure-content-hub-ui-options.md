@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
-workflow-type: ht
-source-wordcount: '2110'
-ht-degree: 100%
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
+workflow-type: tm+mt
+source-wordcount: '2121'
+ht-degree: 95%
 
 ---
 
@@ -113,7 +113,9 @@ Verwalten Sie als Admin die folgenden Konfigurationsoptionen für Ihre Benutzend
 
 * [Benutzerdefinierte Links](#configure-custom-links-content-hub)
 
-* [Sammlungen und Freigabe](#configure-collections-sharing-content-hub)
+* [Sammlungen und Freigabe](#configure-collections-content-hub)
+
+<!--* [Enable public link sharing](#enable-public-link-sharing)-->
 
 ### Importieren {#configure-import-options-content-hub}
 
@@ -311,21 +313,33 @@ Der benutzerspezifische Link wird auf der Content Hub-Startseite neben der Regis
 
 ![Registerkarten der benutzerdefinierten Links in der Konfigurationsoberfläche in Content Hub](assets/configuration-ui-custom-link-tab.png)
 
-### Sammlungen und Freigabe {#configure-collections-sharing-content-hub}
+### Sammlungen und Freigabe {#configure-collections-content-hub}
 
-Admins können beim Erstellen von Sammlungen Benutzerberechtigungen definieren und Content Hub-Benutzenden erlauben, einen öffentlichen Link zu generieren. Gehen Sie wie folgt vor, um diese Einstellungen zu aktivieren:
+Admins können beim Erstellen von Sammlungen Benutzerberechtigungen definieren. Gehen Sie wie folgt vor, um diese Einstellungen zu aktivieren:
 
-1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Sammlungen und Freigabe]**.
+1. Klicken Sie in [ Benutzeroberfläche ](#access-configuration-options-content-hub)Konfigurationen“ auf **[!UICONTROL Sammlungen]**.
 
-1. Aktivieren Sie den Umschalter **[!UICONTROL Schreibgeschützte Sammlungen]**, um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur von der erstellenden Person und den Admins bearbeitet werden können.
+1. Aktivieren Sie den Umschalter **[!UICONTROL Öffentlichen Link aktivieren]**, um die Erstellung öffentlicher Links zu ermöglichen, über die externe Benutzer auf Assets zugreifen und diese herunterladen können, ohne sich bei der Content Hub anzumelden.
 
-1. Aktivieren Sie den Umschalter **[!UICONTROL Öffentliche Sammlungen]**, um Sammlungen zuzulassen, die für alle zugänglich und bearbeitbar sind.
+1. Aktivieren Sie den **[!UICONTROL Nur Sammlungen anzeigen]**-Umschalter, um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur vom Ersteller und Administrator bearbeitet werden können.
 
-1. Aktivieren Sie den Umschalter **[!UICONTROL Öffentlichen Link aktivieren]**, damit Content Hub-Benutzende einen öffentlichen Link generieren können.
+1. Aktivieren Sie den **[!UICONTROL Öffentliche Sammlungen]** , um Sammlungen zuzulassen, die für alle zugänglich und bearbeitbar sind. Wenn die **[!UICONTROL „Nur Sammlungen anzeigen]** und **[!UICONTROL Öffentliche Sammlungen]** deaktiviert sind, können Benutzende ohne Administratorrechte standardmäßig nur private Sammlungen erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu anzuwenden.
 
-   ![Registerkarte „Konfigurationssammlungen“ in Content Hub](assets/collections-link-sharing.png)
+   ![Registerkarte „Konfigurationssammlungen“ in Content Hub](assets/collections-and-sharing.png)
 
+<!--
+### Enable public link sharing {#enable-public-link-sharing}
 
-   Weitere Informationen zu Sammlungen und zur Freigabe von Assets finden Sie unter [Verwalten von Sammlungen in Content-Hub](/help/assets/collections-content-hub.md) und [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
+Enable the following setting on the Configurations user interface to allow Content Hub users to generate a public link:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and Sharing]**.
+
+1. Enable the **[!UICONTROL Enable Public Link]** toggle and click **[!UICONTROL Save]** to apply the changes.
+
+    ![Enable public link sharing in Content Hub](assets/enable-public-link-sharing-tab.png)
+
+-->
+
+Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
