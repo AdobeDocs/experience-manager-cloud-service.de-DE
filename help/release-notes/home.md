@@ -38,7 +38,7 @@ Wenn es zum Beispiel Mai ist, können Sie bevorstehende Funktionen auswerten, di
 
 Mit diesem Rhythmus erhalten Sie ein rollierendes Fenster, in dem Sie die Auswirkungen bevorstehender Funktionen auf Ihre Projekte und Anpassungen bewerten und Rollouts für solche Funktionen, Tests und Benutzerschulungen planen können.
 
-Weitere Informationen zu kommenden Versionen finden Sie in [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service) Roadmap für Experience Manager-Versionen von .
+Weitere Informationen zu kommenden Versionen finden Sie in ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service) Roadmap für Experience Manager-Versionen von [.
 
 ## Vorbereitung auf die Veröffentlichung einer Version {#how-to-prepare}
 

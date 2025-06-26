@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 54%
+ht-degree: 96%
 
 ---
 
@@ -21,9 +21,9 @@ Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as
 
 ## Veröffentlichungsdaten {#release-date}
 
-Die Version 2025.6.0 von Cloud Manager in AEM as a Cloud Service wurde am Donnerstag, den Freitag, 5. Juni 2025 veröffentlicht.
+Die Version 2025.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 5. Juni 2025 veröffentlicht.
 
-Die Veröffentlichung der nächsten Version ist für Donnerstag, den Freitag, 10. Juli 2025 geplant.
+Die Veröffentlichung der nächsten Version ist für den 10. Juli 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
@@ -37,19 +37,19 @@ Die Veröffentlichung der nächsten Version ist für Donnerstag, den Freitag, 10
 
 * **Edge Delivery-Site-Konfiguration aktualisiert**
 
-  Der Arbeitsablauf für das Hinzufügen einer Edge Delivery-Site wurde vereinfacht, indem die **Edge Delivery-Herkunft** anstelle der **Repository-URL** angefordert wurde, wodurch Onboarding und Einrichtung schneller und intuitiver <!-- CMGR-67686 --> werden
+  Der Arbeitsablauf für das Hinzufügen einer Edge Delivery-Site wurde vereinfacht, indem jetzt die **Edge Delivery-Herkunft** anstelle der **Repository-URL** angefordert wird, wodurch Onboarding und Einrichtung schneller und intuitiver werden <!-- CMGR-67686 -->.
 
-  ![Dialogfeld &quot;Edge Delivery-Site hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+  ![Dialogfeld zum Hinzufügen einer Edge Delivery-Site](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
 
   Siehe [Hinzufügen einer Edge Delivery-Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **Pipeline-Favoriten**
+* **Favoriten-Pipelines**
 
-  In dieser Version bietet Cloud Manager die Möglichkeit, Favoriten-Pipelines anzuheften, sodass Sie bestimmte Pipelines als Favoriten markieren können, sodass sie oben in der Liste auf der Seite **Pipelines** angezeigt werden. Diese Verbesserung erleichtert das Auffinden und Ausführen häufig verwendeter Pipelines. <!-- CMGR-68293 -->
+  In dieser Version bietet Cloud Manager die Möglichkeit, Favoriten-Pipelines anzuheften, wodurch Sie bestimmte Pipelines als Favoriten markieren können, sodass sie oben in der Liste auf der Seite **Pipelines** angezeigt werden. Diese Verbesserung erleichtert das Auffinden und Ausführen häufig verwendeter Pipelines. <!-- CMGR-68293 -->
 
   ![Pipelines, die als Favoriten markiert sind](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *Zwei Pipelines, die als Favoriten markiert sind.*
 
-  Siehe [Pipeline-Favoriten markieren](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
+  Siehe [Markieren von Pipeline-Favoriten](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
 ## Privates Beta-Programm {#private-beta-program}
@@ -61,16 +61,16 @@ Die folgenden privaten Beta-Gelegenheiten sind derzeit verfügbar:
 
 ### Spezialisierte Testumgebung {#specialized-test-environment}
 
-Cloud Manager unterstützt jetzt das Hinzufügen eines neuen Umgebungstyps namens &quot;**Testumgebung**. Die Umgebung soll Teams dabei helfen, Funktionen vor der Live-Schaltung unter produktionsnahen Bedingungen zu validieren. Dieser Umgebungstyp unterscheidet sich von *Produktion + Staging*, *Entwicklung* oder *Schnelle Entwicklung* und bietet einen fokussierten Raum für die Ausführung erweiterter Validierungsszenarien.
+Cloud Manager unterstützt jetzt das Hinzufügen eines neuen Umgebungstyps namens **Spezialisierte Testumgebung**. Diese Umgebung soll Teams dabei helfen, Funktionen vor der Live-Schaltung unter produktionsnahen Bedingungen zu validieren. Dieser Umgebungstyp unterscheidet sich von *Produktion + Staging*, *Entwicklung* oder *Schnelle Entwicklung* und bietet einen fokussierten Raum für die Ausführung erweiterter Validierungsszenarien.
 
-Siehe [Hinzufügen einer speziellen Testumgebung](/help/implementing/cloud-manager/specialized-test-environment.md).
+Siehe [Hinzufügen einer spezialisierten Testumgebung](/help/implementing/cloud-manager/specialized-test-environment.md).
 
-![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezielle Testumgebung“](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezialisierte Testumgebung“](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) an grp-earlyadopter_cs_advtestenvironment@adobe.com.
+Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com).
 
 
-### Bring Your Own Git (BYOG) - jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Bringen Sie Ihren eigenen Git mit (BYOG) – jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -104,16 +104,16 @@ Verwenden Sie **Zugriffstoken verwalten** in Cloud Manager, um Zugriffstoken in 
 
 Siehe [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[&#128279;](mailto:grp-cloudmanager_byog@adobe.com) an Grp-CloudManager_BYOG@adobe.com.
+Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com).
 
 
 ### Hinzufügen einer Konfigurations-Pipeline für Edge Delivery {#add-eds-pipeline}
 
 Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, sodass diese Funktion über Cloud-Service-Umgebungen hinaus genutzt werden kann. Sie können **Konfigurations-Pipelines** verwenden, um ggf. Einstellungen wie Traffic-Filterregeln und Web Application Firewall (WAF)-Konfigurationen zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
 
-![Edge Delivery-Pipeline hinzufügen in der Dropdown-Liste „Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline von der **Programmübersicht**&#x200B;Seite,**Pipelines**.*
+![„Edge Delivery-Pipeline hinzufügen“ in der Dropdown-Liste „Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline über die Seite **Programmübersicht**, Karte **Pipelines**.*
 
-![Dialogfeld &quot;Edge Delivery-Pipeline hinzufügen](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Dialogfeld &quot;Edge Delivery-Pipeline hinzufügen“*
+![Dialogfeld „Edge Delivery-Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Dialogfeld „Edge Delivery-Pipeline hinzufügen“*
 
 Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com).
 
@@ -121,7 +121,7 @@ Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, sen
 ## Fehlerbehebungen
 
 * Sandbox-Umgebungen, die zuvor als `HIBERNATED` gekennzeichnet waren, bleiben in diesem Status nicht mehr hängen, sodass die Pipeline-Ausführung oder -Bereitstellung erwartungsgemäß fortgesetzt werden kann. <!-- CMGR-67705 -->
-* AEM Cloud Manager ordnet jetzt Maven-Build-Fehler, die durch 409-Fehler (Konflikte) verursacht wurden, beim Abrufen von Kundenartefakten korrekt einem kundenbedingten Fehler zu. Diese Änderung verbessert das Fehlermeldungssystem, indem zwischen internen Fehlern und Problemen im Zusammenhang mit der Einrichtung der Kundenumgebung unterschieden wird. <!-- CMGR-66673 -->
+* AEM Cloud Manager ordnet jetzt Maven-Build-Fehler, die durch 409-Fehler (Konflikte) verursacht wurden, beim Abrufen von Kundenartefakten korrekt einem kundenbedingten Fehler zu. Diese Änderung verbessert das Fehlermeldungssystem, indem jetzt zwischen internen Fehlern und Problemen im Zusammenhang mit der Einrichtung der Kundenumgebung unterschieden wird. <!-- CMGR-66673 -->
 
 
 <!-- ## Known issues {#known-issues} -->

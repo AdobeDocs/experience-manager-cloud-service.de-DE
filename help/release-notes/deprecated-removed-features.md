@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
 workflow-type: tm+mt
 source-wordcount: '3181'
-ht-degree: 70%
+ht-degree: 96%
 
 ---
 
@@ -18,23 +18,23 @@ ht-degree: 70%
 >title="Eingestellte und entfernte Funktionen in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Auf dieser Registerkarte werden Funktionen vorgestellt, die durch ihre Cloud-nativen Gegenstücke ersetzt wurden."
 
-Adobe überprüft regelmäßig Funktionen, einschließlich APIs und Konfigurationen, um sicherzustellen, dass sie den sich entwickelnden Standards für Leistung, Sicherheit und Gesamtwert für AEM as a Cloud Service entsprechen. Basierend auf diesen Auswertungen können bestimmte Funktionen möglicherweise als veraltet gekennzeichnet werden. Wenn möglich, wird Adobe einen geeigneten Ersatz bereitstellen.
+Adobe überprüft regelmäßig Funktionen, einschließlich APIs und Konfigurationen, um sicherzustellen, dass sie den sich weiterentwickelnden Standards für Leistung, Sicherheit und Gesamtwert für AEM as a Cloud Service entsprechen. Basierend auf diesen Auswertungen können bestimmte Funktionen möglicherweise als veraltet gekennzeichnet werden. Wenn möglich, stellt Adobe einen geeigneten Ersatz bereit.
 
-Wenn eine Einstellung angekündigt wird, bleibt die Funktion nur für einen begrenzten Zeitraum verfügbar und Kunden müssen alle Nutzungsdaten vor einem angegebenen Entfernungsdatum entfernen. Adobe wird angemessene Ankündigungen und Leitlinien bereitstellen, um einen reibungslosen Übergang zu unterstützen.
+Wenn eine Einstellung angekündigt wird, bleibt die Funktion nur für einen begrenzten Zeitraum verfügbar und Kundinnen und Kunden müssen alle Nutzungsdaten vor einem angegebenen Entfernungsdatum entfernen. Adobe sorgt für angemessene Ankündigungen und Leitlinien, um einen reibungslosen Übergang zu unterstützen.
 
-Während des Zeitfensters für die Einstellung erinnert Adobe Kunden an die Maßnahmen, die sie ergreifen müssen, um die Verwendung einer Funktion durch E-Mail-Benachrichtigungen, Aktionscenter-Warnungen oder Erinnerungen in Cloud Manager zu deaktivieren.
+Während des Zeitfensters für die Einstellung erinnert Adobe die Kundinnen und Kunden durch E-Mail-Benachrichtigungen, Aktionscenter-Warnungen oder Erinnerungen in Cloud Manager an die Maßnahmen, die sie ergreifen müssen, um die Verwendung einer bestimmten Funktion einzustellen.
 
 >[!WARNING]
 >
 >In einigen Fällen kann es erforderlich sein, eine Funktion zu entfernen, bevor ein neuer Cloud Manager-Build bereitgestellt oder auf die neueste Version von AEM as a Cloud Service aktualisiert wird.
 
-## Veraltete Funktionen {#deprecated-features}
+## Veraltete Funktionalität {#deprecated-features}
 
-Die Funktion in der folgenden Tabelle wurde als veraltet angekündigt, wurde jedoch noch nicht entfernt.  Die Nutzung der Funktion muss vor dem Zieltermin für die Entfernung eingestellt werden, da ansonsten Probleme im Zusammenhang mit Leistung, Verfügbarkeit und Sicherheit auftreten könnten.
+Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, jedoch bisher noch nicht entfernt.  Die Nutzung der Funktion muss vor dem Zieltermin für die Entfernung eingestellt werden, da ansonsten Probleme im Zusammenhang mit Leistung, Verfügbarkeit und Sicherheit auftreten könnten.
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
-| Sites | [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>zusammen mit<br> [OpenAPIs zur Verwaltung von Inhaltsfragmenten und Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md) |
+| Sites | [Unterstützung von Inhaltsfragmenten in dem Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>zusammen mit<br> [OpenAPIs für das Management von Inhaltsfragmenten und Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Keine |
 | Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zur visuellen Bearbeitung<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |
@@ -49,7 +49,7 @@ Die Funktion in der folgenden Tabelle wurde als veraltet angekündigt, wurde jed
 | [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Integrationen mit Anmeldedaten, die aus Adobe Developer Console-Projekten generiert wurden, verlieren schrittweise die Unterstützung für Service-Konto-Anmeldedaten (JWT). Seit dem 1. Mai 2024 können in Adobe Developer Console keine neuen Anmeldedaten für Service-Konten (JWT) mehr erstellt werden. Vorhandene Anmeldedaten für Service-Konten (JWT) bleiben bis zum 1. Januar 2025 für konfigurierte Integrationen nutzbar. Danach funktionieren sie nicht mehr, sodass Kundinnen und Kunden zu OAuth-Server-zu-Server-Anmeldedaten migrieren müssen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
 | [!DNL Foundation] | Der Workflow für die Veröffentlichung der Inhaltsstruktur und der zugehörige Workflow-Schritt für die Veröffentlichung der Inhaltsstruktur, der für die Replikationen von Inhaltshierarchien verwendet wurde. | Verwenden Sie den [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation), der leistungsfähiger ist. |
-| [!DNL Foundation] | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. | Adobe empfiehlt Kunden, für ihre Implementierung zum Google Closure Compiler (GCC) zu wechseln. |
+| [!DNL Foundation] | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek.  | Adobe empfiehlt Kundinnen und Kunden, für ihre Implementierung zum Google Closure Compiler (GCC) zu wechseln. |
 
 ## Entfernte Funktionalität {#removed-features}
 
@@ -67,11 +67,11 @@ In diesem Abschnitt werden Funktionen aufgelistet, die entfernt wurden.
 | [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | OSGi Http Whiteboard | März 2022 |
 | [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration | März 2023 |
 | [!DNL Foundation] | Unterstützung für die Funktion org.apache.sling.serviceusermapping, um die [Dienstbenutzer-ID abzurufen](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | Nicht zutreffend | 30.08.24 |
-| [!DNL Foundation] | Java 11 Runtime ist veraltet und wurde durch Adobe mit Java 21 Runtime ersetzt. Beachten Sie, dass es akzeptabel ist, Code weiterhin mit Java 11 zu erstellen (Java 17 und 21 sind die anderen Optionen) | Die Java 21-Laufzeit wird angewendet. Um die Kompatibilität zu gewährleisten, ist es wichtig, die Bibliotheksversionen zu aktualisieren, wie unter [Laufzeitanforderungen“ beschrieben](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | 5/29/25. März |
+| [!DNL Foundation] | Java 11 Runtime ist veraltet und wurde von Adobe durch Java 21 Runtime ersetzt. Beachten Sie, dass es akzeptabel ist, Code weiterhin mit Java 11 zu erstellen (Java 17 und 21 sind die anderen Optionen) | Die Java 21-Laufzeit wird angewendet. Um die Kompatibilität sicherzustellen, müssen die Bibliotheksversionen aktualisiert werden, wie unter [Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) beschrieben. | 29.05.25 |
 
 ## Veraltete APIs {#aem-apis}
 
-Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden als veraltet angekündigt, wurden jedoch noch nicht entfernt.  Die Verwendung dieser APIs muss vor dem Zieltermin für die Entfernung eingestellt werden, da sonst Probleme im Zusammenhang mit Leistung, Verfügbarkeit und Sicherheit auftreten können. Einige APIs verweisen auf den Abschnitt „API-Entfernungsanleitung“ unten.
+Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden bereits als veraltet angekündigt, jedoch noch nicht entfernt.  Die Verwendung dieser APIs muss vor dem Zieltermin für die Entfernung beendet werden, da sonst Probleme im Zusammenhang mit Leistung, Verfügbarkeit und Sicherheit auftreten können. Einige APIs verweisen auf den Abschnitt „API-Entfernungsanleitung“ unten.
 
 <details>
   <summary>Erweitern, um die Liste veralteter APIs anzuzeigen.</summary>
@@ -132,7 +132,7 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden als 
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service unterstützt diese interne log4j-API nicht. <a href="#org.slf4j">Siehe die folgenden Hinweise zur Entfernung.</a></td>
+    <td>AEM as a Cloud Service unterstützt diese interne Log4j-API nicht. <a href="#org.slf4j">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>27.01.2022</td>
     <td>31.08.2025</td>
   </tr>
@@ -149,7 +149,7 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden als 
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service unterstützt diese interne slf4j-API nicht. <a href="#org.slf4j">Siehe die folgenden Hinweise zur Entfernung.</a></td>
+    <td>AEM as a Cloud Service unterstützt dieses interne slf4j-API nicht. <a href="#org.slf4j">Siehe die folgenden Hinweise zur Entfernung.</a></td>
     <td>11.04.2022</td>
     <td>31.08.2025</td>
   </tr> 
@@ -174,11 +174,11 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden als 
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>Die Felix-Web-Konsole wird in Cloud-Umgebungen nicht unterstützt. <a href="#org.apache.felix.webconsole">Siehe die folgenden Hinweise zur Entfernung.</a></td>
-    <td>30.04.2021</td>
+    <td>30.4.2021</td>
     <td>31.08.2025</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
-    <td>Die Verwendung dieser API wird in AEM as a Cloud Service nicht unterstützt.</td>
+    <td>Die Verwendung dieses APIs wird in AEM as a Cloud Service nicht unterstützt.</td>
     <td>31.10.2022</td>
     <td>31.08.2025</td>
   </tr>  
@@ -191,19 +191,19 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden als 
   <tr>
     <td>org.json</td>
     <td>Die Apache Johnzon-Implementierung von <a href="https://johnzon.apache.org/index.html">javax.json</a> wird empfohlen und sollte verwendet werden. </td>
-    <td>30.04.2021</td>
+    <td>30.4.2021</td>
     <td>TBD</td>
   </tr>
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2 befindet sich im Wartungsmodus. Stattdessen sollte Commons Lang 3 verwendet werden. <a href="#apache.commons">Siehe die folgenden Hinweise zur Entfernung.</a></td>
-    <td>30.04.2021</td>
+    <td>30.4.2021</td>
     <td>TBD</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Commons Collections 3 befindet sich im Wartungsmodus. Stattdessen sollte Commons Collections 4 verwendet werden. <a href="#apache.commons">Siehe die folgenden Hinweise zur Entfernung.</a></td>
-    <td>30.04.2021</td>
+    <td>30.4.2021</td>
     <td>TBD</td>
   </tr>
   <tr>
@@ -306,7 +306,7 @@ In diesem Abschnitt werden APIs aufgelistet, die veraltet sind und entfernt wurd
   </tr>
   <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
-    <td>Die Verwendung dieser API wird in AEM as a Cloud Service nicht unterstützt.</td>
+    <td>Die Verwendung dieses APIs wird in AEM as a Cloud Service nicht unterstützt.</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.cache</td>
@@ -316,9 +316,9 @@ In diesem Abschnitt werden APIs aufgelistet, die veraltet sind und entfernt wurd
 </table>
 </details>
 
-## API-Entfernungsanleitung {#api-removal-guidance}
+## Anleitung zur API-Entfernung {#api-removal-guidance}
 
-Dieser Abschnitt enthält Anleitungen zum Entfernen von APIs für verschiedene APIs in den Tabellen oben.
+Dieser Abschnitt enthält Anleitungen zum Entfernen von APIs für verschiedene APIs in den obigen Tabellen.
 
 ### Entfernung von `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -378,7 +378,7 @@ Aktionsliste:
 
 ### Entfernung von `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
 
-Entfernen Sie die Verwendung der nicht verwalteten Apache Commons-Bibliotheken und ersetzen Sie sie durch die Verwendung der Support-Versionen. In den meisten Fällen ist dies nur erforderlich, um Paketimporte anzupassen, nur in einigen Fällen wurden Klassen oder Methoden umbenannt. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
+Entfernen Sie die Verwendung der nicht verwalteten Apache Commons-Bibliotheken und ersetzen Sie sie durch die Verwendung der unterstützten Versionen. In den meisten Fällen reicht es, Paketimporte anzupassen, nur in einigen Fällen wurden Klassen oder Methoden umbenannt. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
 
 Aktionsliste:
 
@@ -404,7 +404,7 @@ Aktionsliste:
 
 ### Verwendung von `ch.qos.logback*` {#ch.qos.logback}
 
-Das Logback wird in Cloud Service nicht unterstützt. Es muss vollständig entfernt werden. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
+Logback wird in Cloud Service nicht unterstützt. Es muss vollständig entfernt werden. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
 
 Aktionsliste:
 
@@ -426,11 +426,11 @@ Wenn Sie `org.apache.log4j` verwenden, wechseln Sie entweder zu SLF4J (`org.slf4
 
 Aktionsliste:
 
-* Ersetzen Sie die Verwendung von `org.apache.log4j` durch Verwendung von `org.slf4j` (empfohlen) oder `org.apache.logging.log4j`
+* Ersetzen Sie die Verwendung von `org.apache.log4j` durch die Verwendung von `org.slf4j` (empfohlen) oder `org.apache.logging.log4j`
 
 ## OSGi-Konfiguration {#osgi-configuration}
 
-Die folgenden Abschnitte spiegeln die AEM as a Cloud Service OSGi-Konfigurationsoberfläche wider und beschreiben, was Kundinnen und Kunden konfigurieren können.
+Die folgenden Abschnitte spiegeln die OSGi-Konfigurationsoberfläche für AEM as a Cloud Service wider und beschreiben, was sich kundenseitig konfigurieren lässt.
 
 1. Kunden-Code darf die aufgelisteten OSGi-Konfigurationen nicht konfigurieren.
 1. Eine Liste der OSGi-Konfigurationen, deren Eigenschaften zwar konfiguriert werden können, aber die angegebenen Validierungsregeln einhalten müssen. Zu diesen Regeln gehört, ob die Deklaration der Eigenschaft erforderlich ist, ihr Typ und in einigen Fällen ihr zulässiger Wertebereich.
@@ -441,23 +441,23 @@ Diese Regeln werden während des Build-Prozesses von Cloud Manager validiert. Im
 
 Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementing/deploying/configuring-osgi.md).
 
-### Veraltete OSGi-Eigenschaften (bald unveränderlich) {#deprecated-unmodifiable-osgi-properties}
+### Veraltete OSGi-Eigenschaften (bald unveränderbar) {#deprecated-unmodifiable-osgi-properties}
 
-Eigenschaften für die folgenden OSGi-Komponenten-PIDs sind veraltet und die Verwendung sollte zum Erzwingungsdatum enden.
+Eigenschaften für die folgenden OSGi-Komponenten-PIDs sind veraltet, und ihre Verwendung sollte zum Durchsetzungsdatum enden.
 
-| **OSGi-Komponenten-ID** | **Unveränderliche Eigenschaften** | **Einstellung** | **Durchsetzung** |
+| **OSGi-Komponenten-ID** | **Nicht veränderbare Eigenschaften** | **Abschaffung** | **Durchsetzung** |
 |---|---|---|---|
-| **`org.apache.sling.commons.log.LogManager`** | alle | 4/24/25 | 8/31/25 (Konfiguration im Juni ignoriert) |
-| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25 (Konfiguration im Juni ignoriert) |
-| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | alle | 2024 | 8/31/25 |
-| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | alle | 6/3/25 | 8/31/25 |
-| **`org.apache.http.proxyconfigurator`** | alle | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.commons.log.LogManager`** | alle | 24.4.25 | 31.8.25 (Konfiguration im Juni ignoriert) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 24.4.25 | 31.8.25 (Konfiguration im Juni ignoriert) |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | alle | 2024 | 31.8.25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | alle | 3.6.25 | 31.8.25 |
+| **`org.apache.http.proxyconfigurator`** | alle | 3.6.25 | 31.8.25 |
 
-### Unveränderliche OSGi-Eigenschaften {#unmodifiable-osgi-properties}
+### Nicht veränderbare OSGi-Eigenschaften {#unmodifiable-osgi-properties}
 
 Eigenschaften für die folgenden OSGi-Komponenten-PIDs können nicht geändert werden, wie unten beschrieben.
 
-| **OSGi-Komponenten-ID** | **Unveränderliche Eigenschaften** |
+| **OSGi-Komponenten-ID** | **Nicht veränderbare Eigenschaften** |
 |---|---|
 | **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | alle |
@@ -473,11 +473,11 @@ Eigenschaften für die folgenden OSGi-Komponenten-PIDs können nicht geändert w
 | **`com.adobe.granite.toggle.monitor.systemproperty`** | alle |
 
 
-### Zukünftige erzwungene OSGi-Eigenschaftsbeschränkungen {#future-restrictions-osgi-properties}
+### Zukünftige erzwungene Einschränkungen für OSGi-Eigenschaften {#future-restrictions-osgi-properties}
 
-In Zukunft wird Adobe die folgenden Einschränkungen für OSGi-Eigenschaften durchsetzen, sodass die Verwendung gestoppt werden sollte.
+In Zukunft wird Adobe die folgenden Einschränkungen für OSGi-Eigenschaften durchsetzen, weswegen deren Verwendung gestoppt werden sollte.
 
-| OSGi-Komponenten-PID |   | Erforderlich | Typ | Einschränkung (falls zutreffend) |
+| PID von OSGi-Komponenten |   | Erforderlich | Typ | Einschränkung (falls anwendbar) |
 |---|---|---|---|---|
 | `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | Zeichenfolge |   |
 |   | `smtp.port` | Ja | Ganzzahl | Entweder „465“, „587“ oder „25“ |
@@ -497,17 +497,17 @@ In Zukunft wird Adobe die folgenden Einschränkungen für OSGi-Eigenschaften dur
 |   | `externalizer.host` | Nein | Zeichenfolge |   |
 |   | `externalizer.contextpath` | Nein | Zeichenfolge |   |
 
-### OSGi-Eigenschaftsbeschränkungen {#restrictions-osgi-properties}
+### Einschränkungen für OSGi-Eigenschaften {#restrictions-osgi-properties}
 
 Die Werte dieser OSGi-Eigenschaften sind auf die unten beschriebenen Regeln beschränkt.
 
-| OSGi-Komponenten-PID |   | Erforderlich | Typ | Einschränkung (falls zutreffend) |
+| PID von OSGi-Komponenten |   | Erforderlich | Typ | Einschränkung (falls anwendbar) |
 |---|---|---|---|---|
-| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | Ja | Ganzzahl | 2-100 |
-|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | Doppelte Genauigkeit | -- |
+| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | Ja | Ganzzahl | 2–100 |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | Dezimalzahl | -- |
 |   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | Ganzzahl | -- |
 |   | `org.apache.felix.eventadmin.RequireTopic` |   | Boolesch | -- |
-|   | `org.apache.felix.eventadmin.IgnoreTimeout` | Ja | Zeichenfolgen-Array | Muss mindestens alles aus `org.apache.felix*`, `org.apache.sling*`, `come.day*` und `com.adobe*` enthalten |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | Ja | Zeichenfolgen-Array | Erforderlicher Bereich: muss mindestens alles von `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*` enthalten |
 |   | `org.apache.felix.eventadmin.IgnoreTopic` |   | Zeichenfolgen-Array | -- |
 | `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | Ganzzahl |   |
 |   | `org.apache.felix.http.session.timeout` |   | Ganzzahl |   |
@@ -554,9 +554,9 @@ Die Werte dieser OSGi-Eigenschaften sind auf die unten beschriebenen Regeln besc
 |   | `servletresolver.paths` | Nein | Zeichenfolge[] |   |
 |   | `servletresolver.defaultExtensions` | Nein | Zeichenfolge |   |
 |   | `servletresolver.mountProviders` | Nein | Boolesch |   |
-|   | `servletresolver.scriptUser` | Nein | Zeichenfolge | veraltet, nicht mehr verwenden |
+|   | `servletresolver.scriptUser` | Nein | Zeichenfolge | veraltet, nicht verwenden. |
 
 ## Aktualisierung von Java Runtime auf Version 21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service ist auf die Java 21-Laufzeit umgestiegen. Um die Kompatibilität sicherzustellen, müssen die Bibliotheksversionen wie unter [Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) beschrieben aktualisiert werden.
+Adobe Experience Manager as a Cloud Service hat zur Java 21-Laufzeit gewechselt. Um die Kompatibilität sicherzustellen, müssen die Bibliotheksversionen wie unter [Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) beschrieben aktualisiert werden.
 
