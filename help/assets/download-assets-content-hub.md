@@ -3,8 +3,8 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie einzelne oder mehrere Assets und deren Ausgabedarstellungen aus dem Content Hub-Portal herunterladen.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
-workflow-type: ht
+source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
+workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 100%
 
@@ -82,8 +82,8 @@ Wenn das Dialogfeld **[!UICONTROL Assets herunterladen]** Asset-Lizenzen anzeigt
 
    >[!NOTE]
    >
-   >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [!UICONTROL [Konfiguration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
-   >* Benutzerinnen und Benutzer mit Zugriff auf [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und solche mit intelligentem Zuschnitt anzeigen und herunterladen.
+   >* Die Ausgabedarstellungen werden nur angezeigt, wenn ihre Sichtbarkeit über die Benutzeroberfläche [[!UICONTROL Konfiguration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) aktiviert wird.
+   >* Benutzerinnen und Benutzer mit Zugriff auf [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) können dynamische Ausgabedarstellungen und solche mit intelligentem Zuschnitt anzeigen und herunterladen.
    >* Die Vorschau der Lizenz wird nur angezeigt, wenn das Asset mithilfe der Authoring-Umgebung von [!DNL Assets as a Cloud Service] genehmigt wurde. Weitere Informationen finden Sie unter [Verwalten lizenzierter Assets in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
