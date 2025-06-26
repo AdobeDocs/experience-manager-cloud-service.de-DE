@@ -4,7 +4,7 @@ description: In diesem Artikel wird beschrieben, wie Sie das Metadatenformular i
 contentOwner: AG
 feature: Metadata
 role: User, Admin
-source-git-commit: 3b2014fe41f6a4918c092790462252082fabc3c7
+source-git-commit: 1ee93bee379ba48a9b42b13b5d11ff89f705b298
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 8%
@@ -55,7 +55,7 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Metadatenformulare und ih
 
 ## Bevor Sie beginnen{#prerequisites-for-importing-metadata-forms-to-assets-view}
 
-Stellen Sie sicher, dass Sie über Administratorrechte verfügen, um die Metadatenformulare und die zugehörigen Ordner aus [!DNL Admin View] in [!DNL Assets View] zu importieren.
+Stellen Sie sicher, dass Sie über Administratorrechte verfügen, um die Metadatenformulare und ihre Ordnerzuordnungen aus [!DNL Admin View] in [!DNL Assets View] zu importieren.
 
 ## Importieren von Metadatenformularen in [!DNL Assets View]{#import-metadata-forms-to-assets-view}
 
@@ -76,10 +76,8 @@ Führen Sie als Administrator die folgenden Schritte aus, um die in [!DNL Admin 
 1. Wählen Sie ein oder mehrere Formulare in der Tabelle aus und klicken Sie auf **[!UICONTROL Import starten]**, um die Metadatenformulare und die zugehörigen Ordner in [!DNL Assets View] zu importieren. Eine Verarbeitungsmeldung wird angezeigt (z. B. *Importieren von drei Metadatenformularen). Bitte warten!*). Nach Abschluss des Imports wird in einer Erfolgsmeldung bestätigt, dass die Formulare erfolgreich importiert wurden, und auf der Seite **[!UICONTROL Metadaten-Forms]** (von [!DNL Assets View]) werden sowohl kürzlich importierte als auch vorhandene Formulare angezeigt, die in [!DNL Assets View] verfügbar sind. Auf dieser Seite haben Sie folgende Möglichkeiten:
    * Klicken Sie auf die Spaltenüberschrift, um die Tabelle nach [!UICONTROL Name], [!UICONTROL Geändert] oder [!UICONTROL Autor] zu sortieren.
    * Wählen Sie das importierte Formular aus **[!UICONTROL klicken Sie auf „Aus Ordner(n) entfernen]** und überprüfen Sie dann den Ordnernamen im Ordnerpfad, um sicherzustellen, dass der Ordner korrekt portiert wurde.
-
      ![Seite Metadatenformulare überprüfen](/help/assets/assets/confirm-ported-folder.png)
-   * Wählen Sie das importierte Formular aus und klicken Sie **[!UICONTROL Bearbeiten]**, um alle unterstützten Konfigurationen des Metadatenformulars anzuzeigen. Weitere [ zu den Metadatenformularen, ihren Komponenten ](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) Feldern finden Sie unter „Einrichten von Metadaten-Forms&quot;.
-
+   * Wählen Sie das importierte Formular aus und klicken Sie **[!UICONTROL Bearbeiten]**, um alle unterstützten Konfigurationen des Metadatenformulars anzuzeigen. Weitere [ zu den Metadatenformularen, ihren Komponenten ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) Feldern finden Sie unter „Einrichten von Metadaten-Forms&quot;.
      ![Seite Metadatenformulare überprüfen](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## Überprüfen der importierten Metadatenformulare{#Verify-the-imported-metadata-forms}
@@ -87,8 +85,8 @@ Führen Sie als Administrator die folgenden Schritte aus, um die in [!DNL Admin 
 Führen Sie nach dem Import der Metadatenformulare aus [!DNL Admin View] in [!DNL Assets View] die folgenden Schritte aus, um den Import zu überprüfen:
 
 1. Navigieren Sie zu einem der zugehörigen Ordner des importierten Metadatenformulars.
-1. Navigieren Sie zur [Detailseite eines Assets](/help/assets/navigate-assets-view.md#preview-assets) und überprüfen Sie, ob die unterstützten Metadatenkomponenten, Komponentenfelder und Feldwerte mit [!DNL Admin View] synchronisiert werden. Weitere [ zu Metadatenkomponenten, Komponentenfeldern und Feldwerten finden Sie ](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/metadata) Artikel zu Metadaten in Assets Essentials .
+1. Navigieren Sie zur [Detailseite eines Assets](/help/assets/navigate-assets-view.md#preview-assets) und überprüfen Sie, ob die unterstützten Metadatenkomponenten, Komponentenfelder und Feldwerte mit [!DNL Admin View] synchronisiert werden. Weitere [ zu Metadatenkomponenten, Komponentenfeldern und Feldwerten finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) Artikel zu Metadaten in Assets Essentials .
 
    >[!NOTE]
    >
-   > Auf [[!DNL Assets View] Detailseite](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) oder [[!DNL Admin View] Eigenschaftenseite](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/metadata-schemas) werden Änderungen an den Metadateneigenschaftswerten automatisch zwischen den beiden Benutzeroberflächen synchronisiert. Strukturänderungen im Formular, z. B. das Hinzufügen oder Entfernen von Feldern oder andere Änderungen, werden jedoch nicht synchronisiert.
+   > Auf [[!DNL Assets View] Detailseite](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) oder [[!DNL Admin View] Eigenschaftenseite](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas) werden Änderungen an den Metadateneigenschaftswerten automatisch zwischen den beiden Benutzeroberflächen synchronisiert. Strukturänderungen im Formular, z. B. das Hinzufügen oder Entfernen von Feldern oder andere Änderungen, werden jedoch nicht synchronisiert.
