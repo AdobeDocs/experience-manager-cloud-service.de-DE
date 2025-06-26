@@ -77,8 +77,10 @@ Führen Sie als Administrator die folgenden Schritte aus, um die in [!DNL Admin 
 1. Wählen Sie ein oder mehrere Formulare in der Tabelle aus und klicken Sie auf **[!UICONTROL Import starten]**, um die Metadatenformulare und die zugehörigen Ordner in [!DNL Assets View] zu importieren. Eine Verarbeitungsmeldung wird angezeigt (z. B. *Importieren von drei Metadatenformularen). Bitte warten!*). Nach Abschluss des Imports wird in einer Erfolgsmeldung bestätigt, dass die Formulare erfolgreich importiert wurden, und auf der Seite **[!UICONTROL Metadaten-Forms]** (von [!DNL Assets View]) werden sowohl kürzlich importierte als auch vorhandene Formulare angezeigt, die in [!DNL Assets View] verfügbar sind. Auf dieser Seite haben Sie folgende Möglichkeiten:
    * Klicken Sie auf die Spaltenüberschrift, um die Tabelle nach [!UICONTROL Name], [!UICONTROL Geändert] oder [!UICONTROL Autor] zu sortieren.
    * Wählen Sie das importierte Formular aus **[!UICONTROL klicken Sie auf „Aus Ordner(n) entfernen]** und überprüfen Sie dann den Ordnernamen im Ordnerpfad, um sicherzustellen, dass der Ordner korrekt portiert wurde.
+
      ![Seite Metadatenformulare überprüfen](/help/assets/assets/confirm-ported-folder.png)
    * Wählen Sie das importierte Formular aus und klicken Sie **[!UICONTROL Bearbeiten]**, um alle unterstützten Konfigurationen des Metadatenformulars anzuzeigen. Weitere [ zu den Metadatenformularen, ihren Komponenten ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) Feldern finden Sie unter „Einrichten von Metadaten-Forms&quot;.
+
      ![Seite Metadatenformulare überprüfen](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## Überprüfen der importierten Metadatenformulare{#Verify-the-imported-metadata-forms}
