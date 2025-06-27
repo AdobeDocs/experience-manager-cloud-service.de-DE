@@ -83,6 +83,7 @@ Führen Sie als Administrator die folgenden Schritte aus, um die in [!DNL Admin 
 
    * Klicken Sie auf die Spaltenüberschrift, um die Tabelle nach [!UICONTROL Name], [!UICONTROL Geändert] oder [!UICONTROL Autor] zu sortieren.
    * Wählen Sie das importierte Formular aus **[!UICONTROL klicken Sie auf „Aus Ordner(n) entfernen]** und überprüfen Sie dann den Ordnernamen im Ordnerpfad, um sicherzustellen, dass der Ordner korrekt portiert wurde.
+
      ![Seite Metadatenformulare überprüfen](/help/assets/assets/confirm-ported-folder.png)
    * Wählen Sie das importierte Formular aus und klicken Sie **[!UICONTROL Bearbeiten]**, um alle unterstützten Konfigurationen des Metadatenformulars anzuzeigen. Weitere [ zu den Metadatenformularen, ihren Komponenten ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) Feldern finden Sie unter „Einrichten von Metadaten-Forms&quot;.
 
