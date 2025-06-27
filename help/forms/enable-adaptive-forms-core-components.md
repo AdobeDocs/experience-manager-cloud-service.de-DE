@@ -6,10 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1113'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,6 @@ Durch die Aktivierung der Kernkomponenten für adaptive Formulare in AEM Forms a
 
 * Wenn Ihre bestehende Cloud Service-Umgebung die Option zum [Erstellen von auf Kernkomponenten basierten adaptiven Formularen](creating-adaptive-form-core-components.md) bietet, sind Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare bereits für Ihre Umgebung aktiviert und Sie können auf Kernkomponenten basierte adaptive Formulare als Headless-Formulare für Kanäle wie Mobile, Web, native Apps und Dienste bereitstellen, die eine Headless-Darstellung von adaptiven Formularen erfordern.
 
-
 ## Aktivieren der Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare {#enable-headless-forms}
 
 Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare für eine AEM Forms as a Cloud Service-Umgebung zu aktivieren
@@ -39,7 +38,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die Ke
 ![Aktivieren der Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Klonen Sie Ihr AEM Forms as a Cloud Service-Git-Repository {#clone-git-repository}
+## &#x200B;1. Klonen Sie Ihr AEM Forms as a Cloud Service-Git-Repository {#clone-git-repository}
 
 1. Melden Sie sich bei [Cloud Manager](https://my.cloudmanager.adobe.com/) an und wählen Sie Ihre Organisation und Ihr Programm aus.
 
@@ -59,7 +58,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die Ke
    Geben Sie bei Aufforderung die Anmeldeinformationen ein. Das Repository wird auf Ihrem lokalen Computer geklont.
 
 
-## 2. Hinzufügen von Abhängigkeiten von Kernkomponenten für adaptive Formulare zu Ihrem Git-Repository {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Hinzufügen von Abhängigkeiten von Kernkomponenten für adaptive Formulare zu Ihrem Git-Repository {#add-adaptive-forms-core-components-dependencies}
 
 1. Öffnen Sie Ihren Git-Repository-Ordner in einem einfachen Texteditor. Beispiel: VS Code.
 1. Öffnen Sie die Datei `[AEM Repository Folder]\pom.xml`, um sie zu bearbeiten.
@@ -276,7 +275,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die Ke
 
 1. Speichern und schließen Sie die Datei.
 
-## 3. Erstellen und Bereitstellen des aktualisierten Codes
+## &#x200B;3. Erstellen und Bereitstellen des aktualisierten Codes
 
 Stellen Sie den aktualisierten Code in Ihren lokalen Entwicklungs- und Cloud Service-Umgebungen bereit, um die Kernkomponenten in beiden Umgebungen zu aktivieren:
 
@@ -356,6 +355,13 @@ So prüfen Sie, ob die Kernkomponenten für adaptive Formulare für Ihre Umgebun
    ![Suchen Sie das Artefakt „core-forms-components-af-core“ in „all/pom.xml“.](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Wenn die Abhängigkeiten vorhanden sind, sind die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert.
+
+### Warum können auf Kernkomponenten basierende Formulare nicht in einem Projekt gerendert werden?
+
+Kernkomponentenbasierte Formulare können aufgrund einer Versionsabweichung zwischen dem Forms-Kernkomponentenpaket und der im Projektarchetyp enthaltenen Version nicht gerendert werden. Dieses Problem tritt in der Regel auf, wenn die im Projektarchetyp angegebene Version gleich oder höher als die im Paket mit den Forms-Kernkomponenten enthaltene Version ist. Führen Sie einen der folgenden Schritte aus, um dieses Problem zu beheben:
+
+* Verwenden Sie eine niedrigere Version des Forms-Kernkomponenten-Pakets im Projektarchetyp.
+* Entfernen Sie die Forms-Kernkomponenten-Abhängigkeit aus dem Projektarchetyp, da die erforderliche Version bereits in AEM as a Cloud Service enthalten ist. Das Forms-Kernkomponentenpaket ist ab Version 20133, z. B. `AEM SDK v2025.3.20133.20250325T063357Z-250300`, im Lieferumfang von AEM as a Cloud SDK enthalten.
 
 >[!MORELIKETHIS]
 >
