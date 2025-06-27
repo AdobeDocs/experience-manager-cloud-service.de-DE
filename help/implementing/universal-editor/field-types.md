@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
-workflow-type: ht
-source-wordcount: '1500'
-ht-degree: 100%
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+workflow-type: tm+mt
+source-wordcount: '1542'
+ht-degree: 96%
 
 ---
 
@@ -91,7 +91,7 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
 | `component` | `ComponentType` | Renderer der Komponente | Ja |
-| `name` | `string` | Eigenschaft, in der die Daten beibehalten werden sollen. | Ja |
+| `name` | `string` | Eigenschaft [oder Pfad](#nesting) in der die Daten gespeichert werden sollen | Ja |
 | `label` | `FieldLabel` | Titel des Felds | Ja |
 | `description` | `FieldDescription` | Beschreibung des Felds | Nein |
 | `placeholder` | `string` | Platzhalter für das Feld | Nein |
@@ -104,6 +104,14 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | `multi` | `boolean` | Ist das Feld ein Mehrfachfeld? | Nein |
 | `validation` | `ValidationType` | Validierungsregeln oder Regeln für das Feld | Nein |
 | `raw` | `unknown` | Rohdaten, die von der Komponente verwendet werden können. | Nein |
+
+### Feldname und Verschachtelung {#nesting}
+
+Das `name` Feld kann direkt auf eine Eigenschaft der aktuellen Ressource verweisen oder im Falle von Komponenten in `cq:Pages` auch einen Pfad zu einer verschachtelten Eigenschaft verwenden. Zum Beispiel:
+
+```json
+"name": "teaser/image/fileReference"
+```
 
 ### Komponententypen {#component-types}
 
@@ -281,7 +289,7 @@ Ein boolescher Komponententyp speichert einen einfachen true/false-Wert, der als
 
 #### Container {#container}
 
-Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Er bietet eine zusätzliche Konfiguration.
+Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten einschließlich Unterstützung für mehrere Felder. Er bietet eine zusätzliche Konfiguration.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -324,7 +332,36 @@ Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten. Er bie
 
 ![Screenshot eines Container-Komponententyps](assets/component-types/container.png)
 
+>[!TAB Multifield-Unterstützung]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### Inhaltsfragment {#content-fragment}
 
