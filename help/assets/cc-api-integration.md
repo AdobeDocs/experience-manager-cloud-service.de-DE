@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 93%
+source-wordcount: '801'
+ht-degree: 100%
 
 ---
 
 # Erzeugen von Varianten von Assets mithilfe der [!DNL Adobe Creative Cloud]-Integration {#content-automation}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 Das Add-on zur Inhaltsautomatisierung integriert [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] und [!DNL Adobe Creative Cloud]-APIs zur kreativen und skalierten Verarbeitung Ihrer Assets. [!DNL Experience Manager] verwendet Cloud-basierte [Asset-Microservices](/help/assets/asset-microservices-overview.md), um die [!DNL Adobe Creative Cloud]-Funktionen zu verwenden und die Asset-Erstellung und die Medienbearbeitung zu automatisieren.
 
@@ -137,8 +100,8 @@ Um die vorhandenen Assets zu verarbeiten, wählen Sie die Assets aus, klicken Si
 
 * [!DNL Experience Manager] begrenzt die Asset-Verarbeitungen auf 300 Anforderungen pro Minute und 700 Anforderungen pro Minute für die gesamte Organisation.
 * Die Dateigröße ist bei [!DNL Adobe Photoshop]-API-Vorgängen auf 4 GB und bei [!DNL Adobe Lightroom]-Vorgängen auf 1 GB beschränkt.
-* PDF-Ausgabedarstellungen von Microsoft Office-Dokumenten (“.docx“, &quot;.doc“, &quot;.ppt“, &quot;.pptx“, &quot;.xls“, &quot;.xlsx„) sind auf Dateien mit einer Größe von 100 MB oder weniger beschränkt.
-* Die Videotranskodierung ist auf Eingabedateien mit bis zu 15 GB beschränkt.
+* PDF-Ausgabedarstellungen von Microsoft Office-Dokumenten („.docx“, „.doc“, „.ppt“, „.pptx“, „.xls“, „.xlsx“) sind auf Dateien mit einer Größe von maximal 100 MB beschränkt.
+* Die Videotranscodierung ist auf Eingabedateien mit maximal 15 GB beschränkt.
 
 **Siehe auch**
 

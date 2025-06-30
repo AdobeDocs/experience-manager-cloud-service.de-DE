@@ -2,57 +2,14 @@
 title: Integrieren der Remote-Version von AEM Assets mit AEM Sites
 description: Erfahren Sie, wie Sie AEM Sites mit genehmigtem AEM Assets konfigurieren und verbinden.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 91%
+source-wordcount: '1005'
+ht-degree: 100%
 
 ---
 
 # Integrieren der Remote-Version von AEM Assets mit AEM Sites  {#integrate-approved-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
-
->[!AVAILABILITY]
->
->Das Handbuch zu Dynamic Media mit OpenAPI-Funktionen ist jetzt im PDF-Format verfügbar. Laden Sie das gesamte Handbuch herunter und verwenden Sie den KI-Assistenten von Adobe Acrobat, um Ihre Fragen zu beantworten.
->
->[!BADGE Handbuch zu Dynamic Media mit OpenAPI-Funktionen als PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Die effektive Verwaltung digitaler Assets ist von entscheidender Bedeutung für das Bereitstellen ansprechender und konsistenter Markenerlebnisse auf verschiedenen Online-Plattformen. Dynamic Media mit OpenAPI-Funktionen verbessert die Verwaltung digitaler Assets, indem eine nahtlose Integration zwischen AEM Sites und AEM Assets as a Cloud Service ermöglicht wird. Mit dieser innovativen Funktion können Sie verschiedene Arten genehmigter digitaler Assets in zahlreichen AEM-Umgebungen freigeben und verwalten und so Workflows für Autorinnen und Autoren von Sites sowie Herausgebende von Inhalten optimieren.
 
@@ -77,7 +34,6 @@ Für die Unterstützung von Remote-Assets mit Dynamic Media mit OpenAPI-Funktion
 * Richten Sie die folgenden [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md#add-variables) für AEM as a Cloud Service ein:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
-
      `pXXXX` bezeichnet die Programm-ID <br>
      `eYYYY` bezeichnet die Umgebungs-ID
 
@@ -179,4 +135,4 @@ Sie werden aufgefordert, sich anzumelden.
 
 ### Zugriff auf Remote-Assets in Edge Delivery Services {#access-assets-eds}
 
-Sie können beim Erstellen von Inhalten in Microsoft Word, Google Docs oder im universellen Editor auf Remote-Assets zugreifen und die Inhalte dann in Edge Delivery Services veröffentlichen. Sie können Dynamic Media mit OpenAPI auch verwenden, um markengeprüfte Assets bereitzustellen und viele andere Vorteile zu nutzen, die es bietet. Weitere Informationen finden Sie unter [Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).
+Sie können beim Erstellen von Inhalten in Microsoft Word, Google Docs oder im universellen Editor auf Remote-Assets zugreifen und die Inhalte dann in Edge Delivery Services veröffentlichen. Sie können auch Dynamic Media mit OpenAPI verwenden, um markenkonforme Assets bereitzustellen und viele andere seiner Vorteile zu nutzen. Weitere Informationen finden Sie unter [Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Best Practices für Metadaten zur effek
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 98%
+source-wordcount: '1384'
+ht-degree: 100%
 
 ---
 
@@ -17,40 +17,6 @@ aem metadata
 experience manager metadata-->
 
 # Metadatenverwaltung und Best Practices {#metadata-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 Damit Ihr Unternehmen sich auszeichnet und mehr Kundinnen und Kunden anspricht, ist die Verwendung hochwertiger Visualisierungen wie Bilder, Videos und andere digitale Assets von entscheidender Bedeutung. Dazu benötigen Sie einen Prozess, der es Ihnen ermöglicht, allen digitalen Assets Metadaten hinzuzufügen, damit sie leicht durchsucht werden können. Metadaten sind die Daten, die wichtige Details zu digitalen Assets bereitstellen, einschließlich Name, Typ, Speicherort in einem Repository, Änderungsdatum und der zugehörigen Tags des Assets. Metadaten optimieren das Asset-Management, verbessern die Suchbarkeit und Barrierefreiheit und ermöglichen eine effektive Versionskontrolle.
 
@@ -120,7 +86,7 @@ Um konsistente Ergebnisse im gesamten Repository sicherzustellen, planen Sie die
 
 ### Erstellen eines Metadaten-Governance-Plans
 
-Daten-Governance stellt sicher, dass die Metadatenverwaltung des Unternehmens auf die allgemeinen Geschäftsziele abgestimmt ist.
+Data Governance stellt sicher, dass die Metadatenverwaltung des Unternehmens auf die allgemeinen Geschäftsziele abgestimmt ist.
 Die Governance-Strategie kann Folgendes umfassen:
 
 * Festlegen von Richtlinien und Verfahren für die Daten- und Metadatenverwaltung.

@@ -5,51 +5,14 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 97%
+source-wordcount: '1287'
+ht-degree: 100%
 
 ---
 
 # Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -69,8 +32,8 @@ Spätere Änderungen am ursprünglichen Asset, Order oder an der ursprünglichen
 >[!NOTE]
 >
 >Adobe empfiehlt eine gestaffelte Veröffentlichung, vorzugsweise außerhalb der Spitzenzeiten, sodass die AEM-Autoreninstanz keine übermäßigen Ressourcen belegt.
->Assets sollten in Stapeln veröffentlicht werden. Die Empfehlung für die Stapelgröße beträgt 15.000.
-> Für [!DNL Experience Manager Assets] as a [!DNL Cloud Service] beträgt die Übertragungsrate unter Laborbedingungen 1000 Assets pro Stunde. Die Rate wird bei einer durchschnittlichen Asset-Größe von 10 MB beobachtet.
+>>Assets sollten in Stapeln veröffentlicht werden. Die Empfehlung für die Stapelgröße beträgt 15.000.
+>> Für [!DNL Experience Manager Assets] as a [!DNL Cloud Service] beträgt die Übertragungsrate unter Laborbedingungen 1000 Assets pro Stunde. Die Rate wird bei einer durchschnittlichen Asset-Größe von 10 MB beobachtet.
 
 ## Veröffentlichen von Assets in Brand Portal {#publish-assets-to-bp}
 
@@ -130,12 +93,12 @@ So planen Sie die Veröffentlichung der Assets in Brand Portal zu einem spätere
 >
 > * Die vorhandenen Benutzenden, die Teil der DAM-Benutzergruppe sind, haben Lesezugriff auf den Pfad „/conf/global/settings/cloudconfigs/mediaportal“
 > * Die neuen Benutzenden (oder Benutzenden ohne Administratorrechte) benötigen die folgenden Berechtigungen für Veröffentlichungen auf dem Brand Portal.
-> Pfade:
-> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->`/libs : jcr:read`
->`/conf : jcr:read`
->`/content : jcr:read, crx:replicate`
->`/content/dam/ : jcr:read,modify, crx:replicate`
+>   > Pfade:
+>   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   >`/libs : jcr:read`
+>   >`/conf : jcr:read`
+>   >`/content : jcr:read, crx:replicate`
+>   >`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal}
 
@@ -197,7 +160,7 @@ Wenn Sie die Asset-Ordner zu einem späteren Zeitpunkt veröffentlichen möchten
 
 1. Wechseln Sie zur ![Listenansicht](assets/list-view.svg), um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![generierter Berichtsstatus](assets/report-status.JPG)
 

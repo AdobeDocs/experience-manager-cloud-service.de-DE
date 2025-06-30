@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 98%
+source-wordcount: '1034'
+ht-degree: 100%
 
 ---
 
 # Von [!DNL Assets] unterstützte Dateiformate {#supported-file-formats}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
@@ -75,18 +38,18 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 | Dateiformat | Generierung von Miniaturen | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | - | ✓ | ✓ |
-| COLLAGE | - | - | ✓ | - |
-| DN | ✓ | - | ✓ | ✓ |
-| SBSAR | ✓ | - | ✓ | ✓ |
-| IDEAS | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
-| INDT | - | - | ✓ | - |
+| AI | ✓ | – | ✓ | ✓ |
+| COLLAGE | - | – | ✓ | – |
+| DN | ✓ | – | ✓ | ✓ |
+| SBSAR | ✓ | – | ✓ | ✓ |
+| IDEAS | - | – | ✓ | - |
+| INDD | ✓ | – | ✓ | ✓ * |
+| INDT | - | – | ✓ | - |
 | PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
-| PSB | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | - | ✓ | ✓ |
-| XD | ✓ | - | ✓ | ✓ |
+| PROTO | - | – | ✓ | – |
+| PSB | ✓ | – | ✓ | ✓ |
+| PSD | ✓ | – | ✓ | ✓ |
+| XD | ✓ | – | ✓ | ✓ |
 
 \* Bei [!DNL Adobe InDesign]-Dateien (INDD) wird die Größe der Ausgabedarstellung durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen in [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), damit Sie größere Ausgabedarstellungen einbetten können.
 
@@ -95,7 +58,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe | Zuschneiden |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
-| EPS | ✓ | ✓ | - | - |
+| EPS | ✓ | ✓ | – | - |
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
@@ -103,7 +66,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | RGBA | ✓ | ✓ | ✓ | ✓ |
 | SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | - |
+| TIFF | ✓ | ✓ | ✓ | – |
 | WebP | ✓ | ✓ | ✓ | ✓ |
 
 ## 3D-Formate {#support-3d-formats}
@@ -114,15 +77,15 @@ Weitere Informationen finden Sie unter [Arbeiten mit 3D-Assets in Dynamic Media]
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniatur, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| DN | ✓ | ✓ | ✓ | – | ✓ | ✓ | – | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| gLTF | ✓ | ✓ | ✓ | – | ✓ | – | ✓ | – |
 | OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | – | ✓ | ✓ | – | – |
 
 ## [!DNL Camera Raw]-Formate {#camera-raw-formats}
 
@@ -162,52 +125,52 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Dateiformat | Generierung von Miniaturen | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) | Vollständige Dokumentvorschau |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
-| DOC | - | - | - | ✓ | ✓ | ✓ |
+| DOC | - | – | – | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ | - |
-| ODF | ✓ | ✓ | ✓ | - | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| OFG | ✓ | ✓ | ✓ | - | - | - |
+| EPUB | – | ✓ | – | – | – | - |
+| HTML | – | ✓ | – | ✓ | ✓ | – |
+| ODF | ✓ | ✓ | ✓ | – | – | - |
+| ODM | ✓ | ✓ | ✓ | – | – | - |
+| ODP | ✓ | ✓ | ✓ | – | – | - |
+| ODS | ✓ | ✓ | ✓ | – | – | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | – |
+| OFG | ✓ | ✓ | ✓ | – | – | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ | ✓ |
+| PPT | - | – | – | ✓ | ✓ | ✓ |
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PS | - | - | ✓ | - | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ | ✓ |
-| TXT | ✓ | ✓ | - | ✓ | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ | ✓ |
+| PS | - | – | ✓ | – | – | - |
+| RTF | – | ✓ | – | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | – | ✓ | ✓ | ✓ |
+| XLS | - | – | – | ✓ | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XML | - | ✓ | - | - | - | - |
+| XML | – | ✓ | – | – | – | – |
 
 ## Videoformate {#video-formats}
 
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe | Vorschau | Ausgabe |
 | ----------- | -------------------- | ------------------- | ------------ | ------- | ------- |
-| 3G2 | - | ✓ | - | - | - |
-| 3GP | - | ✓ | - | - | - |
-| AVI | ✓ | ✓ | ✓ | ✓ | - |
-| DIVX | ✓ | - | ✓ | ✓ | - |
-| F4V | ✓ | ✓ | ✓ | ✓ | - |
-| FLV | ✓ | ✓ | ✓ | ✓ | - |
-| M2T | ✓ | - | ✓ | ✓ | - |
-| M2TS | ✓ | - | ✓ | ✓ | - |
-| M2V | ✓ | - | ✓ | ✓ | - |
+| 3G2 | – | ✓ | – | – | – |
+| 3GP | – | ✓ | – | – | – |
+| AVI | ✓ | ✓ | ✓ | ✓ | – |
+| DIVX | ✓ | – | ✓ | ✓ | – |
+| F4V | ✓ | ✓ | ✓ | ✓ | – |
+| FLV | ✓ | ✓ | ✓ | ✓ | – |
+| M2T | ✓ | – | ✓ | ✓ | – |
+| M2TS | ✓ | – | ✓ | ✓ | – |
+| M2V | ✓ | – | ✓ | ✓ | – |
 | M4V | ✓ | ✓ | ✓ | ✓ | - |
-| MKV | ✓ | - | ✓ | ✓ | - |
-| MOV | ✓ | ✓ | ✓ | ✓ | - |
+| MKV | ✓ | – | ✓ | ✓ | – |
+| MOV | ✓ | ✓ | ✓ | ✓ | – |
 | MP4 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ | ✓ | - |
+| MPEG | ✓ | ✓ | ✓ | ✓ | – |
 | MPG | ✓ | ✓ | ✓ | ✓ | - |
-| MTS | ✓ | - | ✓ | ✓ | - |
-| MXF | ✓ | - | ✓ | ✓ | - |
-| OGV | ✓ | - | ✓ | ✓ | - |
-| QT | ✓ | - | ✓ | ✓ | - |
-| R3D | - | ✓ | ✓ | ✓ | - |
-| SWF | ✓ | - | ✓ | ✓ | - |
-| WebM | ✓ | - | ✓ | ✓ | ✓ |
+| MTS | ✓ | – | ✓ | ✓ | – |
+| MXF | ✓ | – | ✓ | ✓ | – |
+| OGV | ✓ | – | ✓ | ✓ | – |
+| QT | ✓ | – | ✓ | ✓ | – |
+| R3D | – | ✓ | ✓ | ✓ | – |
+| SWF | ✓ | – | ✓ | ✓ | – |
+| WebM | ✓ | – | ✓ | ✓ | ✓ |
 | WMV | ✓ | ✓ | ✓ | ✓ | - |
 
 ## Audioformate {#audio-formats}
@@ -253,8 +216,8 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| INDD | ✓ | - | - | - | - |
+| AI | ✓ | – | – | – | - |
+| INDD | ✓ | – | – | – | – |
 | PDF (siehe Hinweis unten) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
@@ -274,7 +237,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Spin](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->

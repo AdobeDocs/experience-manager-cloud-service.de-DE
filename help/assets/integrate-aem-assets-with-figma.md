@@ -4,51 +4,14 @@ description: Erfahren Sie, wie  [!DNL AEM Assets]  mit  [!DNL Figma]  können, u
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 2644c849df32af14c70e686a803b690996812046
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 11%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 # Integration von [!DNL AEM Assets] mit [!DNL Figma]{#integrate-aem-assets-with-figma}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime und Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets-Integration mit Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Erweiterbarkeit der Benutzeroberfläche</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Neu</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Aktivieren von Dynamic Media Prime und Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best Practices für die Suche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best Practices für Metadaten</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media mit OpenAPI-Funktionen</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Entwicklerdokumentation zu AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets] lässt sich nativ mit [!DNL Figma] integrieren, wodurch Designer direkt über die [!DNL Figma]-Benutzeroberfläche auf die in [!DNL AEM Assets] gespeicherten Assets zugreifen können. Sie können verwaltete Inhalte in [!DNL AEM Assets] in der [!DNL Figma] Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte im [!DNL AEM Assets]-Repository speichern.
 
@@ -76,7 +39,7 @@ Alternativ können Sie auf die in [!DNL Figma] Community verfügbaren [[!DNL Ado
 
 [Greifen Sie auf das Bedienfeld [!UICONTROL Adobe Experience Manager (AEM] Assets Connector](#access-aem-assets-connector) in Ihrer [!DNL Figma]-Design-Oberfläche zu und führen Sie die folgenden Schritte aus:
 
-1. Suchen nach Assets im Bedienfeld [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]. Weitere Informationen finden Sie unter [Verwenden des Asset-Wählers](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Suchen nach Assets im Bedienfeld [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]. Weitere Informationen finden Sie unter [Verwenden des Asset-Wählers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Ziehen Sie das Asset auf die Arbeitsfläche oder wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Auswählen]**, um das Asset auf die Arbeitsfläche zu bringen.
 
