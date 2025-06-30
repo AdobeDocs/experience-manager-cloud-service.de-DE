@@ -136,7 +136,7 @@ Das übergeordnete Element des Panels sollte Schaltflächen zum Hinzufügen und 
 >
 
 <!-- 
->For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63_de).      
 -->
 
 >[!NOTE]
