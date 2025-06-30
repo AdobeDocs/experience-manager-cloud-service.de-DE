@@ -14,7 +14,7 @@ ht-degree: 97%
 # Aktivieren der Erweiterbarkeit der Benutzeroberfläche in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
 
 [!DNL AEM Assets View] unterstützt die Erweiterbarkeit der Benutzeroberfläche, sodass Sie Ihrer [!DNL Assets View]-Benutzeroberfläche benutzerdefinierte Benutzeroberflächenkomponenten für bestimmte Workflows und Geschäftsanforderungen hinzufügen können, die von den vorkonfigurierten Funktionen von [!DNL AEM Assets View] nicht erfüllt werden. Diese Erweiterbarkeitsfunktion der Benutzeroberfläche von [!DNL AEM Assets View] erhöht die Flexibilität und ermöglicht es Organisationen, die Benutzeroberfläche an bestimmte Workflows und Anforderungen anzupassen.\
-Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **** angezeigt.
+Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **&#x200B;**&#x200B;angezeigt.
 
 >[!IMPORTANT]
 >

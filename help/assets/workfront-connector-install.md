@@ -52,7 +52,7 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. Stellen Sie sicher, dass die folgenden Überlagerungen nicht im [!DNL Experience Manager]-Repository vorhanden sind. Wenn Sie bereits vorhandene Überlagerungen auf diesen Pfaden haben, müssen Sie entweder die Überlagerungen entfernen oder das Delta der Änderungen zwischen den beiden Pfaden zusammenführen:
