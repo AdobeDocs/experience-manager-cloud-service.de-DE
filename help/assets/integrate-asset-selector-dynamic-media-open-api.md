@@ -6,7 +6,7 @@ exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -173,7 +173,7 @@ Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie 
 
 >[!NOTE]
 >
->Ordner werden nur beim Herstellen einer Verbindung zum Autoren-Repository unterstützt, nicht aber Dynamic Media mit dem OpenAPI-Repository.
+>Ordner werden nur beim Herstellen einer Verbindung zum Autoren-Repository unterstützt, nicht aber zu Dynamic Media mit dem OpenAPI-Repository.
 
 >[!MORELIKETHIS]
 >

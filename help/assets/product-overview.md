@@ -5,7 +5,7 @@ exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für d
 
 >[!IMPORTANT]
 >
->[Assets Ultimate](/help/assets/assets-ultimate-overview.md) und Assets as a Cloud Service umfassen 250 Content Hub Limited-Benutzer. [Assets Prime](/help/assets/assets-prime.md) umfasst 50 Benutzer von Content Hub Limited.
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md) und Assets as a Cloud Service umfassen 250 Content Hub Limited-Benutzende. [Assets Prime](/help/assets/assets-prime.md) umfasst 50 Content Hub Limited-Benutzende.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 

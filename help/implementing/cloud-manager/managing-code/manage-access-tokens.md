@@ -8,7 +8,7 @@ exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
 source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Siehe auch [Hinzufügen von externen Repositorys in Cloud Manager](/help/impleme
 
 >[!NOTE]
 >
->Die in diesem Artikel beschriebenen Funktionen sind nur über das private Beta-Programm verfügbar. Weitere Informationen und die Anmeldung zur privaten Beta-Version finden Sie unter [Eigenes Git ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>Die in diesem Artikel beschriebenen Funktionen sind nur über das Private Beta-Programm verfügbar. Weitere Informationen und die Möglichkeit, sich für Private Beta anzumelden, finden Sie unter [Bringen Sie Ihren eigenen Git mit](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## Anzeigen von Zugriffs-Token {#view-access-tokens}
 
@@ -43,7 +43,7 @@ Siehe auch [Hinzufügen von externen Repositorys in Cloud Manager](/help/impleme
 ## Bearbeiten eines Zugriffs-Tokens {#edit-access-tokens}
 
 1. Klicken Sie im Dialogfeld **Zugriffs-Token verwalten** rechts neben einem Token-Namen auf ![Bearbeiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. Aktualisieren Sie **Dialogfeld** Zugriffs-Token bearbeiten“ den **Token-Name** oder den **Zugriffs-Token**-Wert oder beides.
+1. Aktualisieren Sie im Dialogfeld **Zugriffs-Token bearbeiten** den Wert **Token-Name** oder **Zugriffs-Token** oder beide.
 
    ![Dialogfeld „Zugriffs-Token bearbeiten“](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
