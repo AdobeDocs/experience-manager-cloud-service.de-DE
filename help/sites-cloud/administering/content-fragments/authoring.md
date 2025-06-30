@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Dieser Editor bietet Folgendes:
 
 >[!WARNING]
 >
->Der in diesem Abschnitt beschriebene Editor ist *nur* in der [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) verfügbar, *online* Adobe Experience Manager (AEM) as a Cloud Service, keine lokale Instanz.
+>Der in diesem Abschnitt beschriebene Editor ist *nur* in der [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) verfügbar, also *online* in Adobe Experience Manager (AEM) as a Cloud Service, aber nicht in einer lokalen Instanz.
 
 ## Inhaltsfragment-Editor {#content-fragment-editor}
 
@@ -176,7 +176,7 @@ Weitere Informationen finden Sie unter [Varianten generieren – in AEM-Editoren
 
 So löschen Sie eine Variante Ihres Inhaltsfragments:
 
-    >[ !HINWEIS]
+    >[!HINWEIS]
     >
     >Sie können die **Hauptversion** nicht löschen.
 
@@ -267,7 +267,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 

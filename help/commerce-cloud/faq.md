@@ -5,9 +5,9 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Dynamische Daten wie Preis- oder Bestandsdaten werden in AEM Dispatcher nicht zw
 
 ## &#x200B;9. Wie funktioniert die Cache-Invalidierung für AEM Dispatcher mit AEM und Commerce?
 
-Es wird von Adobe empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichten, die im Dispatcher zwischengespeichert werden. Für dynamische Informationen wie Preis- oder Bestandsdaten wird empfohlen, das Datum Client-seitig zu rendern. Weitere Informationen zur TTL-basierten Cache-Invalidierung finden Sie unter [Optimieren des Dispatcher-Caches.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=de)
+Es wird von Adobe empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichten, die im Dispatcher zwischengespeichert werden. Für dynamische Informationen wie Preis- oder Bestandsdaten wird empfohlen, das Datum Client-seitig zu rendern. Weitere Informationen zur TTL-basierten Cache-Invalidierung finden Sie unter [Optimieren des Dispatcher-Cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=de).
 
 ## &#x200B;10. Gibt es Empfehlungen zur einheitlichen Suche in AEM-Inhalten mit Commerce?
 

@@ -1,20 +1,20 @@
 ---
-title: Einschränkungen beim Seiteneditor
-description: Der Seiteneditor nutzt Überlagerungen zur Interaktion mit Inhalten, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickelnde.
+title: Einschränkungen des Seiteneditors
+description: Der Seiteneditor verwendet Überlagerungen, um mit den in einem iframe eingeschlossenen Inhalten zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwicklerinnen und Entwickler.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# Einschränkungen beim Seiteneditor {#editor-limitations}
+# Einschränkungen des Seiteneditors {#editor-limitations}
 
-[Der Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verwendet Überlagerungen zur Interaktion mit Inhalten, die in einem iframe eingeschlossen sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
+[Der Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md) verwendet Überlagerungen, um mit den in einem iframe eingeschlossenen Inhalten zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
 
 ## Funktionale Einschränkungen {#functional-limitations}
 

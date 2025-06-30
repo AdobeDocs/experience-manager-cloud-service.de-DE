@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,10 +30,10 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
 ![Veröffentlichen von Seiten](assets/publish-menu.png)
 
 1. Tippen oder klicken Sie im universellen Editor auf das [Symbol **Veröffentlichen** auf der Symbolleiste des universellen Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#publish).
-1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder **[Vorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (falls verfügbar) oder **Veröffentlichen**.
+1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder als **[Vorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (falls verfügbar) oder zum **Veröffentlichen**.
 1. Im Abschnitt **Elemente** werden die Inhalte aufgelistet, die in der Veröffentlichung enthalten sind, einschließlich der folgenden:
    * **Neue** Elemente, die noch nicht veröffentlicht wurden.
-   * **Geändert** Inhalt, der veröffentlicht, aber seit der letzten Veröffentlichung geändert wurde.
+   * **Geänderte** Inhalte, die veröffentlicht, aber seit der letzten Veröffentlichung geändert wurden.
    * **Veröffentlichte** Inhalte, die veröffentlicht und seit dieser Veröffentlichung nicht geändert wurden.
 
    Tippen oder klicken Sie auf die Kontrollkästchen neben den Elementen, um sie nach Bedarf in die Veröffentlichung ein- bzw. von ihr auszuschließen. Tippen oder klicken Sie auf **Erweitern**, um die einzelnen Elemente anzuzeigen, die in den Elementen dieser drei Kategorien enthalten sind, und um sie einzeln ein- oder ausschließen zu können.
@@ -46,7 +46,7 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
 
 >[!NOTE]
 >
->Die Option In Vorschau veröffentlichen [kann deaktiviert sein](/help/implementing/universal-editor/customizing.md#publish-preview) und wird daher möglicherweise nicht im Editor angezeigt.
+>Die Option zum Veröffentlichen in der Vorschau [kann deaktiviert sein](/help/implementing/universal-editor/customizing.md#publish-preview) und wird daher möglicherweise nicht im Editor angezeigt.
 
 ## Aufheben der Veröffentlichung von Inhalten mit dem universellen Editor {#unpublishing-content}
 

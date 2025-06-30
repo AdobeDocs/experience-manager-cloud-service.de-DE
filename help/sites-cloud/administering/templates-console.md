@@ -6,9 +6,9 @@ feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
 source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Wenn eine Autorin bzw. ein Autor beginnt, eine mit dem Vorlageneditor erstellte 
 
 ## Eigenschaften {#properties}
 
-Sie können die [Eigenschaften der Vorlage](/help/sites-cloud/authoring/page-editor/templates.md) ähnlich wie [Seiteneigenschaften bearbeiten.Zu den ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) gehören:
+Sie können die [Eigenschaften der Vorlage](/help/sites-cloud/authoring/page-editor/templates.md) ähnlich wie [Seiteneigenschaften bearbeiten.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) Vorlageneigenschaften umfassen Folgendes:
 
 * Vorlagentitel
 * Beschreibung

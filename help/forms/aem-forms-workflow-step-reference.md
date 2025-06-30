@@ -7,9 +7,9 @@ keywords: Verwendung von AEM-Workflows, Verwendung von Schritten zur Aufgabenzuw
 feature: Adaptive Forms, Workflow
 role: Admin, User
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7370'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
     -->
 
 * **[!UICONTROL Verantwortlicher]** > **[!UICONTROL Optionen zuweisen]**: Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
-* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten dynamischen Teilnehmerschritts mit Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer“ in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Teilnehmer]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. In diesem Feld können Sie Benutzende oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 

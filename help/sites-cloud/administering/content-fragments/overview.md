@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
 source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2014'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfrag
 
 >[!IMPORTANT]
 >
->Viele in diesem Abschnitt beschriebene Funktionen sind *nur* in der [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) verfügbar; *online* Adobe Experience Manager (AEM) as a Cloud Service, keine lokale Instanz.
+>Viele der in diesem Abschnitt beschriebenen Funktionen sind *nur* in der [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) verfügbar, also *online* in Adobe Experience Manager (AEM) as a Cloud Service, aber nicht in einer lokalen Instanz.
 
 >[!IMPORTANT]
 >

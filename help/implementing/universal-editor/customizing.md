@@ -5,9 +5,9 @@ exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Die Schaltfläche **Vorschau** im Fenster „Veröffentlichen“ kann daher in e
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
-## Deaktivieren von geöffneten Seiten {#open-page}
+## Deaktivieren der Seitenöffnung {#open-page}
 
 Die Schaltfläche **Seite öffnen** kann in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
 
@@ -48,9 +48,9 @@ Die Schaltfläche **Seite öffnen** kann in einer App vollständig unterdrückt 
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
-## Schaltfläche „Duplizieren“ deaktivieren {#duplicate-button}
+## Deaktivieren der Schaltfläche „Duplizieren“ {#duplicate-button}
 
-Bestimmte Authoring-Workflows müssen möglicherweise die Möglichkeit des Inhaltsautors einschränken, Komponenten zu duplizieren. Sie können das Symbol [Duplizieren](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) deaktivieren, indem Sie die folgenden Metadaten hinzufügen.
+Für bestimmte Authoring-Workflows muss möglicherweise die Möglichkeit der Inhaltsautorin bzw. des Inhaltsautors eingeschränkt werden, Komponenten zu duplizieren. Sie können das Symbol [Duplizieren](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) deaktivieren, indem Sie die folgenden Metadaten hinzufügen.
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
@@ -58,7 +58,7 @@ Bestimmte Authoring-Workflows müssen möglicherweise die Möglichkeit des Inhal
 
 ## Ändern des Endpunkts {#custom-endpoint}
 
-Wenn Sie nicht den von Adobe gehosteten Service „Universeller Editor“, sondern Ihre eigene gehostete Version verwenden möchten, können Sie dies in einem Meta-Tag festlegen. AEM Weitere Informationen finden Sie [ Dokument „Erste Schritte mit dem universellen Editor in ](/help/implementing/universal-editor/getting-started.md##configuration-settings)&quot;.
+Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sondern Ihre eigene gehostete Version verwenden möchten, können Sie dies in einem Meta-Tag festlegen. Weitere Informationen finden Sie im Dokument [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings).
 
 ## Filtern von Komponenten {#filtering-components}
 

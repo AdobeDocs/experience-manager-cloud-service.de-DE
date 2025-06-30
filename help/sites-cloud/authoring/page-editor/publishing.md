@@ -4,13 +4,13 @@ description: Erfahren Sie, wie der Seiteneditor Inhalte veröffentlicht.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5871e04d3bd78bdd8df55d42e7619c98ea3f38ca
-workflow-type: tm+mt
+exl-id: dc11ac02-2a8d-4d82-ae10-e0fb97025063
+source-git-commit: 0fcdea7803110156d589ab6bbf960373f212747d
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
-
 
 # Veröffentlichen von Inhalten mit dem Sites-Editor {#publishing}
 
@@ -49,9 +49,9 @@ Wenn Sie eine Seite im [Seiteneditor](/help/sites-cloud/authoring/page-editor/in
 >
 >Seiten, auf die im Editor über [Aliasnamen](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) zugegriffen wird, können nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
 
-## Rückgängigmachen der Veröffentlichung im Seiteneditor {#unpublishing}
+## Rückgängigmachen von Veröffentlichungen im Seiteneditor {#unpublishing}
 
-Wenn Sie beim Bearbeiten einer Seite mit dem Seiteneditor die Veröffentlichung der Seite rückgängig machen möchten, wählen Sie **Veröffentlichung der Seite rückgängig machen** im Menü **Seiteninformationen** aus, genau wie [die Seite veröffentlichen](#publishing-from-the-editor).
+Wenn Sie bei der Bearbeitung einer Seite im Seiteneditor die Veröffentlichung dieser Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
 
 >[!NOTE]
 >

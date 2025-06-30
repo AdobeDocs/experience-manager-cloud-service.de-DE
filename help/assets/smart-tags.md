@@ -5,9 +5,9 @@ feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2457'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -229,7 +229,7 @@ So aktivieren Sie KI-generierte Metadaten:
 
   >[!IMPORTANT]
   >
-  > Der von KI generierte Titel eines Assets wird nur dann auf der Asset-Karte angezeigt, wenn Sie den Asset-Titel nicht definiert haben. Der von Ihnen angegebene Asset-Titel wird nicht überschrieben.
+  > Der KI-generierte Titel eines Assets wird nur dann auf der Asset-Karte angezeigt, wenn Sie den Asset-Titel nicht definiert haben. Ein von Ihnen angegebener Asset-Titel wird nicht überschrieben.
 
 ### Verwenden von KI-generierten Metadaten {#using-ai-generated-smart-tags}
 

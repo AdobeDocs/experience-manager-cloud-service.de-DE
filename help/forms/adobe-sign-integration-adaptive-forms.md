@@ -6,9 +6,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 82a3016149645701abe829ad89c493f480956267
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government?lang=de) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=de#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 [!DNL Adobe Acrobat Sign] ermöglicht E-Signatur-Workflows für adaptive Formulare und AEM-Workflows. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
@@ -34,7 +34,7 @@ Um **[!DNL AEM Forms]** mit **[!DNL Adobe Acrobat Sign]** zu verbinden, richten 
 
 Um [!DNL Adobe Acrobat Sign] mit [!DNL AEM Forms] zu integrieren, benötigen Sie das folgende Setup:
 
-1. Ein gültiges [Adobe Acrobat Sign-Entwicklerkonto.](https://www.adobe.com/acrobat/business/developer-form.html)
+1. Ein gültiges [Adobe Acrobat Sign-Entwicklerkonto](https://www.adobe.com/acrobat/business/developer-form.html).
 1. Eine [Adobe Acrobat Sign API-Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. Anmeldeinformationen (Client-ID und Client Secret) der [!DNL Adobe Acrobat Sign]-API-Anwendung.
 1. (Nur für Authentifizierung mit amtlichem Lichtbildausweis) [Aktivieren Sie die Authentifizierungsmethode](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html#AuditReport) für die Authentifizierung mit amtlichem Lichtbildausweis.
@@ -84,7 +84,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
    Hierbei gilt:
 
-   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL &#x200B; Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
+   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL  Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ Die Kontaktperson generiert Anmeldeinformationen und teilt Ihnen diese mit. Im n
 
    Hierbei gilt:
 
-   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL &#x200B; Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
+   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL  Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
 
    >[!NOTE]
    >

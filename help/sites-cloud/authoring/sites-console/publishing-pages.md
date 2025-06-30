@@ -1,14 +1,14 @@
 ---
 title: Veröffentlichen von Seiten über die Sites-Konsole
-description: Erfahren Sie, wie Sie Ihre Seiten mit der Sites-Konsole veröffentlichen und die Veröffentlichung rückgängig machen können.
+description: Erfahren Sie, wie Sie Ihre Seiten über die Sites-Konsole veröffentlichen oder ihre Veröffentlichung rückgängig machen können.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1635'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,17 +19,17 @@ Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und überprüft habe
 
 Dies wird als Veröffentlichen einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als Aufheben der Veröffentlichung bezeichnet. Beim Veröffentlichen und beim Aufheben der Veröffentlichung bleibt die Seite in der Autorenumgebung für weitere Änderungen verfügbar, bis Sie diese löschen.
 
-Sie können die [**Sites**-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) verwenden, um eine Seite sofort oder zu einem vordefinierten Datum/zu einer vordefinierten Uhrzeit in der Zukunft zu veröffentlichen/die Veröffentlichung rückgängig zu machen.
+Sie können die [**Sites-Konsole**](/help/sites-cloud/authoring/sites-console/introduction.md) verwenden, um eine Seite sofort oder zu einem vordefinierten Datum/Zeitpunkt in der Zukunft zu veröffentlichen oder die Veröffentlichung rückgängig zu machen.
 
 >[!TIP]
 >
->Sie können über andere Speicherorte als die Sites-Konsole veröffentlichen.
+>Sie können auch über andere Speicherorte als die Sites-Konsole veröffentlichen.
 >
 >* [Im Seiteneditor](/help/sites-cloud/authoring/page-editor/publishing.md)
->* [Vom universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
->* [Über die Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md)-Konsole oder den Editor
+>* [Im universellen Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [Über die Experience Fragment-Konsole](/help/sites-cloud/authoring/fragments/experience-fragments.md) oder den -Editor
 >
->Veröffentlichungen an diesen Orten bieten verschiedene Optionen, folgen jedoch ähnlichen Verfahren und allgemeinen Ideen, die hier beschrieben werden.
+>Veröffentlichungen über diese Speicherorte bieten jeweils verschiedene Optionen, folgen jedoch ähnlichen Verfahren und allgemeinen Ideen, die hier beschrieben werden.
 
 ## Terminologie {#terminology}
 
@@ -43,7 +43,7 @@ Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie
    * Diese Begriffe wurden in früheren Versionen von AEM verwendet.
 * **Replizieren/Replikation**
    * Dies sind die technischen Begriffe, die beim Veröffentlichen einer Seite für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Services verwendet werden (z. B. vom Erstellen zur Vorschau).
-   * Diese Begriffe werden hauptsächlich von Entwicklern verwendet.
+   * Diese Begriffe werden hauptsächlich von Entwicklerinnen und Entwicklern verwendet.
 
 >[!NOTE]
 >
@@ -59,8 +59,8 @@ Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie
 >
 >Die Seitenreihenfolge ist in folgenden Situationen nicht garantiert:
 >
->* Wenn nur untergeordnete Seiten für die Veröffentlichung ausgewählt werden (da die Bestellinformationen auf der übergeordneten Seite gespeichert werden)
->* Wenn die übergeordneten und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
+>* wenn nur untergeordnete Seiten zur Veröffentlichung ausgewählt sind (die Informationen zur Reihenfolge sind nämlich auf der übergeordneten Seite gespeichert)
+>* wenn die über- und untergeordneten Seiten in separaten Aktionen veröffentlicht werden
 
 ## Veröffentlichen von Seiten über die Sites-Konsole {#publishing-from-the-sites-console}
 
@@ -121,7 +121,7 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
      >[!TIP]
      >
-     >Bei der Planung von Inhalten für die Veröffentlichung werden Inhalte repliziert und Veröffentlichungs-Workflows berücksichtigt. Wenn Sie bereits veröffentlichte Inhalte vorübergehend ausblenden möchten, ohne die Veröffentlichung rückgängig zu machen, sollten Sie [**Einschaltzeit** und **Ausschaltzeit** in den Seiteneigenschaften verfügbar machen.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
+     >Bei der Planung von Inhalten für die Veröffentlichung werden Inhalte repliziert und Veröffentlichungs-Workflows berücksichtigt. Wenn Sie bereits veröffentlichte Inhalte vorübergehend ausblenden möchten, ohne die Veröffentlichung rückgängig zu machen, sollten Sie die in den Seiteneigenschaften verfügbare [**Einschaltzeit** und **Ausschaltzeit** in Erwägung ziehen.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -198,7 +198,7 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
 ## Veröffentlichen von Seiten rückgängig machen {#unpublishing-pages}
 
-Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungs- oder [Vorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)Umgebung entfernt, sodass sie nicht mehr für Ihre Leser verfügbar ist.
+Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungs- oder [Vorschauumgebung](/help/sites-cloud/authoring/sites-console/previewing-content.md) gelöscht, sodass sie nicht mehr für Ihre Leserschaft verfügbar ist.
 
 Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](#manage-publication), können Sie damit auch eine Veröffentlichung aufheben.
 

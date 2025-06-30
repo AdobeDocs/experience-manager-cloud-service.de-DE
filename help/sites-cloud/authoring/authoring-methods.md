@@ -6,9 +6,9 @@ exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
 source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie mehr über die verschiedenen Möglichkeiten, Inhalte in AEM zu erst
 AEM as a Cloud Service bietet verschiedene Editoren, um verschiedene Inhaltstypen zu bearbeiten und verschiedene Authoring-Anwendungsfälle zu unterstützen.
 
 * [WYSIWYG-basiertes Authoring mit dem universellen Editor](#universal-editor): Der universelle Editor ist eine moderne Benutzeroberfläche, die es ermöglicht, AEM-Inhalte inhaltsunabhängig zu erstellen. Er ist die erste Wahl bei AEM-Projekten, die Edge Delivery Services nutzen.
-* [WYSIWYG-basiertes Authoring mit dem Seiteneditor](#page-editor): Der Seiteneditor ist der klassische Editor für die Inhaltserstellung in AEM. Dieser hat sich bereits bei Tausenden von Websites bewährt.
+* [WYSIWYG-basiertes Authoring mit dem Seiteneditor](#page-editor): Der Seiteneditor ist der klassische Editor für die Inhaltserstellung in AEM. Er hat sich bereits bei Tausenden von Websites bewährt.
 * [Dokumentenbasiertes Authoring](#document-based): Wenn Sie Edge Delivery Services verwenden, können Sie Inhalte als herkömmliche Dokumente z. B. mit Microsoft Word oder Google Docs erstellen, und zwar komplett außerhalb der AEM-Konsolen.
 * [AEM-Inhaltsfragmenteditor](#cf-editor): Dies ist der ideale Editor für die Erstellung von Headless-Inhalten.
 
@@ -41,7 +41,7 @@ Weitere Informationen zum universellen Editor finden Sie im Dokument [Inhaltsers
 
 ## WYSIWYG-basiertes Authoring mit dem Seiteneditor {#page-editor}
 
-Dies ist der klassische Editor für das Erstellen von Inhalten in herkömmlichen AEM-Projekten, der für Tausende von Websites getestet und vertrauenswürdig ist.
+Hierbei handelt es sich um den klassischen Editor für die Inhaltserstellung in herkömmlichen AEM-Projekten. Er hat sich bereits bei Tausenden von Websites bewährt.
 
 ![Der AEM-Seiteneditor](assets/authoring-methods-page-editor.png)
 

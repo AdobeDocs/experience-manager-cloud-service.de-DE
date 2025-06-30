@@ -1,22 +1,22 @@
 ---
 title: Launches für Seiten
-description: Erfahren Sie, wie Sie in Adobe Experience Manager as a Cloud Service Launches für Seiten verwenden. Launches ermöglichen es Ihnen, Inhalte für eine zukünftige Version effizient zu entwickeln und dabei Ihre aktuellen Seiten beizubehalten.
+description: Erfahren Sie, wie Sie Launches für Seiten in Adobe Experience Manager as a Cloud Service verwenden können. Mit Launches können Sie den Inhalt für eine zukünftige Veröffentlichung effizient entwickeln und gleichzeitig Ihre aktuellen Seiten beibehalten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
 source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '977'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Launches für Seiten {#launches-for-pages}
 
-In Adobe Experience Manager (AEM) as a Cloud Service ermöglichen Launches die effiziente Entwicklung von Inhalten für eine zukünftige Version.
+In Adobe Experience Manager (AEM) as a Cloud Service helfen Ihnen Launches, Inhalte für eine künftige Version effizient zu entwickeln.
 
-Ein *Launch* wird erstellt, um Ihnen Änderungen zur Vorbereitung auf eine zukünftige Veröffentlichung zu ermöglichen und gleichzeitig Ihre aktuellen Inhalte zu pflegen. Für AEM-Seiten bedeutet dies, dass Sie effektiv zwei Versionen gleichzeitig bearbeiten: derzeit veröffentlichte Seiten und eine Version dieser Seiten, die zu einem späteren Zeitpunkt veröffentlicht werden sollen. Sobald diese Zeit gekommen ist, können Sie die Originalseiten ersetzen und die neuen Versionen veröffentlichen.
+Ein *Launch* wird erstellt, damit Sie Änderungen zur Vorbereitung auf spätere Veröffentlichungen vornehmen und gleichzeitig die aktuellen Inhalte pflegen können. Für AEM-Seiten bedeutet dies, dass Sie tatsächlich zwei Versionen gleichzeitig bearbeiten: Seiten, die derzeit veröffentlicht sind, und eine Version dieser Seiten, die zu einem späteren Zeitpunkt veröffentlicht werden soll. Wenn es so weit ist, können Sie die Originalseiten ersetzen und die neuen Versionen veröffentlichen.
 
 <!--
 >[!NOTE]
@@ -36,7 +36,7 @@ Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Qu
 Sie können auch Folgendes durchführen:
 
 * Navigieren durch Inhalte in der Launch-Verzweigung; Hinzufügen oder Entfernen von Seiten nach Bedarf
-* Vorschau, wie veröffentlichte Inhalte auf ein bestimmtes Datum in der Zukunft blicken werden.
+* Anzeigen in der Vorschau, wie veröffentlichte Inhalte zu einem bestimmten Zeitpunkt in der Zukunft aussehen werden
 
 Wenn ein neues Quartal beginnt, leiten Sie die Launch-Seiten weiter, damit Sie die Quellseiten veröffentlichen können, die den aktualisierten Inhalt enthalten. Sie können entweder alle Seiten weiterleiten oder nur die Seiten, die Sie geändert haben.
 

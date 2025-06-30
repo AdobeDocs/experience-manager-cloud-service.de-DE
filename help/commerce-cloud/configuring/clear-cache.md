@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '883'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,6 @@ Standardmäßig ist die Funktion zum Löschen des Cache in der CIF-Konfiguration
 * Aktivieren Sie den Listener, um den Cache jeder Instanz von AEM (Veröffentlichungs- und Autoreninstanz) zu löschen, indem Sie die Konfiguration `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` in Ihrem Projekt hinzufügen, wie [hier](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) dargestellt.
    * Die Konfiguration sollte sowohl für die Autoren- als auch für die Veröffentlichungsinstanz aktiviert sein.
    * Aktivieren des Dispatcher-Caches (optional): Sie können die Einstellung „Dispatcher-Cache löschen“ aktivieren, indem Sie in der obigen Konfiguration die Eigenschaft `enableDispatcherCacheInvalidation` auf „true“ festlegen. Dies bietet die Möglichkeit, den Cache vom Dispatcher zu löschen.
-
      >[!NOTE]
      >
      > Dies funktioniert nur mit Veröffentlichungsinstanzen.
@@ -64,8 +63,7 @@ So überprüfen Sie nun, ob die Caches ordnungsgemäß geleert werden:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
-Wenn alles gut geht, werden die neuen Änderungen in jeder Instanz widergespiegelt. Wenn die Änderungen in der Veröffentlichungsinstanz nicht sichtbar sind, versuchen Sie, die relevanten PLP- und PDP-Seiten in einem privaten/Inkognito-Browser-Fenster aufzurufen.
+Wenn alles gut geht, werden die neuen Änderungen in jeder Instanz widergespiegelt. Wenn die Änderungen nicht in der Veröffentlichungsinstanz sichtbar sind, versuchen Sie, die relevanten PLP- und PDP-Seiten in einem privaten/Inkognito-Browser-Fenster aufzurufen.
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -153,4 +153,4 @@ Die Eigentümerin bzw. der Eigentümer eines Workflow-Modells ist nicht in der L
 
 1. [Erstellen Sie einen Eigenschaftsindex und weisen Sie ihm „true“ zu](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=de#the-property-index).
 
-1. Nachdem Sie Indizes in CRX DE konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie das Repository erneut.
+1. Nachdem Sie in CRX DE Indizes konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie das Repository erneut.

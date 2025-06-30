@@ -5,9 +5,9 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '948'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Der universelle Editor wird unterstützt von:
 * [AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
 
-Diese Dokumentation ist für die Verwendung des universellen Editors mit AEM as a Cloud Service vorgesehen.
+Diese Dokumentation ist für die Verwendung des universellen Editors mit AEM as a Cloud Service vorgesehen. 
 
 ## Funktionen {#features}
 

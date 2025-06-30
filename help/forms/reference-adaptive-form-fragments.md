@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '395'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 Adaptives Formularfragment steht für eine Gruppe von Feldern oder einen Bereich, der eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag und Drop in ein Formular mit dem Asset-Browser in der Seitenleiste einfügen und es im Formulareditor bearbeiten.
 
-Für Autoren von adaptiven Forms werden Referenzfragmente im [!DNL AEM Forms]-Paket [!DNL AEM FORMS] REFERENCE FRAGMENTS bereitgestellt. Es beinhaltet folgende Fragmente:
+Für Entwicklerinnen und Entwickler adaptiver Formulare werden Referenzfragmente im [!DNL AEM Forms]-Paket [!DNL AEM FORMS] REFERENCE FRAGMENTS bereitgestellt. Es beinhaltet folgende Fragmente:
 
 * Adresse
 * Kontaktangaben

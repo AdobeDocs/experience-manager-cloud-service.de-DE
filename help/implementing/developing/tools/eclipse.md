@@ -5,9 +5,9 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 * Laden Sie die [Eclipse-IDE für Enterprise Java™-Entwicklerinnen und -Entwickler](https://www.eclipse.org/downloads/packages/) herunter und installieren Sie sie.
-* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei bearbeiten, wie in den häufig gestellten Fragen zu [ beschrieben](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
+* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre Konfigurationsdatei `eclipse.ini` bearbeiten, wie in den [häufig gestellten Fragen zu Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das Benutzerhandbuch[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html) zu **Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
+* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

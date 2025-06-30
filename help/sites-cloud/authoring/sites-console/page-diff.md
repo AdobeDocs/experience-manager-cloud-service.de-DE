@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '635'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile au
 
 Es gibt Situationen, in denen der Seitenvergleich möglicherweise Unterschiede nicht wie erwartet erkennt.
 
-* Bei unterschiedlichen Seiten, die für die Verwendung mit der [Edge Delivery Services erstellt wurden](/help/edge/overview.md) werden die Seiten zum bequemen Vergleich nebeneinander angezeigt, aber die Unterschiede werden nicht hervorgehoben.
+* Bei unterschiedlichen Seiten, die für die Verwendung mit den [Edge Delivery Services](/help/edge/overview.md) erstellt wurden, werden die Seiten zum bequemen Vergleich nebeneinander angezeigt, aber die Unterschiede werden nicht hervorgehoben.
 * Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihrer Inhalte nutzen).
 * Bei Versionen erstellt der Vergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mehr mit Versionen durchführen, die vor dem Verschieben erstellt wurden.
