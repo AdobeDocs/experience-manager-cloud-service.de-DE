@@ -140,7 +140,7 @@ Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Me
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Voraussetzungen {#prereqs-dynamic-media-delivery-reports}
