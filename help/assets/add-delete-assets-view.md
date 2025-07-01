@@ -4,10 +4,10 @@ description: Hochladen von Assets in  [!DNL Assets view], Anzeigen des Upload-St
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ Um neue Assets hinzuzufügen, mit denen Sie arbeiten können, laden Sie einige A
 Sie können die folgenden Methoden verwenden, um ein oder mehrere Assets oder einen Ordner mit Assets hochzuladen:
 
 * Ziehen Sie Assets oder Ordner auf die Benutzeroberfläche und befolgen Sie die Anweisungen auf dem Bildschirm.
-* Klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Assets hinzufügen]** und fügen Sie einige Dateien zum Upload-Dialogfeld hinzu.
+* Klicken Sie in **[!UICONTROL Symbolleiste auf]** Option &quot;Assets hinzufügen“ und fügen Sie einige Dateien zum Upload-Dialogfeld hinzu.
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
@@ -108,4 +108,4 @@ Benutzer können nicht mehr benötigte einzelne Assets oder Ordner löschen. Fü
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)

@@ -3,16 +3,16 @@ title: Integration von Content Credentials
 description: Content Credentials sind in AEM Assets integriert und in der Assets-Ansicht enthalten. Sie können Kontext für den Verlauf eines Assets bieten, einschließlich Informationen dazu, wie es erstellt wurde und wer an dessen Erstellung beteiligt war. Content Credentials können, ähnlich einer Nährwertkennzeichnung für digitale Inhalte, dazu beitragen, die Transparenz zu erhöhen und Vertrauen bei den Zielgruppen zu schaffen.
 role: User
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Content Credentials {#content-credentials}
 
-Marken machen sich mehr denn je Gedanken um die Transparenz von Inhalten, die Offenlegung von KI und die Verhinderung der Manipulation von Assets. Die Content Authenticity Initiative (CAI) von Adobe erstellt Tools, die mit dem technischen Standard der [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) konform sind. Content Credentials sind eine neue Art verschlüsselter, manipulationssicherer Metadaten. Sie können Betrachtende dabei unterstützen, die Herkunft von Inhalten zu verstehen und dazu beitragen, die Integrität von Marken-Assets sicherzustellen. Sie können eine breite Palette von Herkunftsdaten enthalten, die Einblicke in den Verlauf eines digitalen Assets bieten.
+Marken machen sich mehr denn je Gedanken um die Transparenz von Inhalten, die Offenlegung von KI und die Verhinderung der Manipulation von Assets. Die Content Authenticity Initiative (CAI) von Adobe erstellt Tools, die mit dem technischen Standard der [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) konform sind. Content Credentials sind eine neue Art verschlüsselter, manipulationssicherer Metadaten. Sie können Betrachtende dabei unterstützen, die Herkunft von Inhalten zu verstehen und dazu beitragen, die Integrität von Marken-Assets sicherzustellen. Sie können eine breite Palette von Provenienzdaten enthalten, die insight in die Historie eines digitalen Assets einschließen.
 
 Diese Daten können Folgendes beinhalten:
 
