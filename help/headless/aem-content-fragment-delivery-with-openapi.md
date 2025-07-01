@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Bereitstellung von AEM-Inhaltsfragmente
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 90%
 
 ---
 
@@ -76,9 +76,11 @@ Für die Vorschau ermöglicht die Bereitstellung von Inhaltsfragmenten mit OpenA
 
 Die auf der Dispatcher-Konfigurationsseite definierten zulässigen CORS-Ursprünge, speziell für GraphQL, werden von diesem API nicht berücksichtigt.
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## API-Ratenbeschränkungen {#api-rate-limits}
+
+Die -API ermöglicht neue Anfragen mit einer Rate von bis zu 200 Anfragen pro Sekunde und Umgebung.
+
+Sobald dieses Limit überschritten wird, sendet die API 429-Fehler. Diese Fehler müssen von allen Client-Anwendungen verarbeitet werden, und fehlgeschlagene Anfragen müssen nach einem exponentiellen Backoff-Versuch erneut versucht werden.
 
 <!-- 
 ## Limitations {#limitations}
