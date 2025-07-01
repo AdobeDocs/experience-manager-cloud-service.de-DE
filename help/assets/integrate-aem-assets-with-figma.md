@@ -40,7 +40,7 @@ Alternativ können Sie auf die in [!DNL Figma] Community verfügbaren [[!DNL Ado
 
 [Greifen Sie auf das Bedienfeld [!UICONTROL Adobe Experience Manager (AEM] Assets Connector](#access-aem-assets-connector) in Ihrer [!DNL Figma]-Design-Oberfläche zu und führen Sie die folgenden Schritte aus:
 
-1. Suchen nach Assets im Bedienfeld [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]. Weitere Informationen finden Sie unter [Verwenden des Asset-Wählers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Suchen nach Assets im Bedienfeld [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]. Weitere Informationen finden Sie unter [Verwenden des Asset-Wählers](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Ziehen Sie das Asset auf die Arbeitsfläche oder wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Auswählen]**, um das Asset auf die Arbeitsfläche zu bringen.
 
