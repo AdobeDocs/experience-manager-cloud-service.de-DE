@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 33%
+ht-degree: 37%
 
 ---
 
@@ -22,9 +22,9 @@ Es ist kein Ersatz für ein Content Delivery Network (CDN), sondern lässt sich 
 
 >[!TIP]
 >
->**Willst du sofort mit anpacken?**
+>**Wollen Sie sofort beginnen?**
 >
->Wenn Sie sofort praktische Erfahrungen sammeln möchten, können Sie in weniger als 30 Minuten Ihr eigenes Edge Delivery Services-Projekt mit AEM-Authoring starten, [ Sie sich das Tutorial auf aem.live ansehen](https://www.aem.live/developer/ue-tutorial)
+>Wenn Sie sofort praktische Erfahrungen sammeln möchten, können Sie in weniger als 30 Minuten Ihr eigenes Edge Delivery Services-Projekt mit AEM-Authoring starten, indem Sie [sich das Tutorial auf aem.live ansehen.](https://www.aem.live/developer/ue-tutorial)
 
 
 ## Warum Edge Delivery Services? {#why-edge}

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
 workflow-type: tm+mt
 source-wordcount: '1332'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -121,7 +121,7 @@ Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf e
 
 ### Standardmäßige Bereinigung älterer Versionen und Auditprotokolle {#mt-defaults}
 
-Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben“ für Inhaltsversionen* Auditprotokolle standardmäßig deaktiviert, sodass keine Daten entfernt werden, es sei denn, diese sind explizit konfiguriert.
+Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben* in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, außer dies ist explizit konfiguriert.
 
 Um jedoch die Repository-Leistung zu optimieren, wird ab **Anfang Juli 2025** die Bereinigung standardmäßig aktiviert. Befolgen Sie dabei die folgenden Richtlinien:
 
@@ -136,7 +136,7 @@ Um jedoch die Repository-Leistung zu optimieren, wird ab **Anfang Juli 2025** di
    * Alle Versionen der letzten 7 Jahre werden beibehalten.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
-* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die mithilfe der Konfigurations-Pipeline bereitgestellt wird.
+* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die über die Konfigurations-Pipeline bereitgestellt wird.
 
 #### Auditprotokoll {#mt-auditlogs}
 
@@ -149,7 +149,7 @@ Um jedoch die Repository-Leistung zu optimieren, wird ab **Anfang Juli 2025** di
    * Alle Ereignisse werden standardmäßig protokolliert.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
-* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die mithilfe der Konfigurations-Pipeline bereitgestellt wird.
+* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die über die Konfigurations-Pipeline bereitgestellt wird.
 
 Weitere Details finden Sie im [Artikel zu Wartungsaufgaben](/help/operations/maintenance.md#defaults).
 

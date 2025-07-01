@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront for Experience Manager enhanced connector]
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.21 von [!DNL Workfront for Experience Manager enhanced connector] ist der Donnerstag, 25. Juni 2025.
+Das Veröffentlichungsdatum für die neueste Version 1.9.21 von [!DNL Workfront for Experience Manager enhanced connector] ist der 25. Juni 2025.
 
 ## Die Highlights der Version {#release-highlights}
 
@@ -25,7 +25,7 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 * Es wurde ein Verbindungsleck bei Workfront-API-Aufrufen behoben.
 
-* Unterstützung des erweiterten Workfront-Connectors mit 6.5 LTS für Java 17- und Java 21-Versionen.
+* Unterstützung des erweiterten Workfront-Connectors mit 6.5 LTS für Java 17- und Java 21-Versionen.
 
 >[!NOTE]
 >
