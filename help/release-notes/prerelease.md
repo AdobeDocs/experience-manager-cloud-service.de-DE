@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '893'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -18,35 +18,35 @@ Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau bevorstehender 
 
 ## Einführung {#introduction}
 
-Adobe Experience Manager as a Cloud Service bietet regelmäßig neue Funktionen. Die Liste neuer und bevorstehender Funktionen für eine bestimmte Funktionsversion wird in den [Versionshinweisen.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+Adobe Experience Manager as a Cloud Service führt regelmäßig neue Funktionen ein. Die Liste der neuen und bevorstehenden Funktionen bestimmter Funktionsveröffentlichungen finden Sie in den [Versionshinweisen.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-Künftige Funktionen werden in der Regel auf eine von zwei Arten verfügbar gemacht:
+Bevorstehende Funktionen werden in der Regel auf eine von zwei Arten verfügbar gemacht:
 
-* Im Rahmen eines Alpha-, Beta- oder eingeschränkten Verfügbarkeitsprogramms
+* Im Rahmen eines Alpha- oder Beta-Programms bzw. als Funktion mit eingeschränkter Verfügbarkeit
 * Im Rahmen des Vorabversionskanals
 
-In diesem Dokument wird beschrieben, wie Sie den Vorabversionskanal aktivieren. Der Vorabversionskanal bietet Zugriff auf frühe Funktionen, die in einer zukünftigen Funktionsversion von AEM eingeführt werden. Dadurch haben Sie die Möglichkeit, neue Funktionen zu validieren und deren Einführung vor der zukünftigen Version zu planen. Weitere Informationen [ AEM-Veröffentlichungszeitplan finden Sie im Dokument ](/help/release-notes/home.md)Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
+In diesem Dokument wird das Aktivieren des Vorabversionskanals beschrieben. Der Vorabversionskanal bietet Zugriff auf neue Funktionen, die in einer zukünftigen Funktionsversion von AEM eingeführt werden. Dadurch haben Sie die Möglichkeit, neue Funktionen zu prüfen und deren Einführung vor ihrer zukünftigen Veröffentlichung zu planen. Weitere Informationen zum AEM-Veröffentlichungszeitplan finden Sie im Dokument [Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md).
 
-## Aktivieren des Vorabversionskanals für den Zugriff auf bevorstehende Funktionen {#enable-prerelease}
+## Aktivieren des Vorabversionskanals für das Zugreifen auf und Ausprobieren von bevorstehenden Funktionen {#enable-prerelease}
 
-Der Vorabversionskanals kann in jeder beliebigen Entwicklungs- oder Sandbox-Umgebung aktiviert werden. Der Vorabversionskanal kann in Staging- oder Produktionsumgebungen nicht aktiviert werden.
+Der Vorabversionskanal kann in jeder beliebigen Entwicklungs- oder Sandbox-Umgebung aktiviert werden. Der Vorabversionskanal kann nicht in Staging- oder Produktionsumgebungen aktiviert werden.
 
-Der Vorabversionskanal kann auf zwei verschiedene Arten aufgerufen werden:
+Es kann auf zwei unterschiedliche Arten auf den Vorabversionskanal zugegriffen werden:
 
 * [Cloud-Umgebungen](#cloud-environments)
 * [Lokales SDK](#local-sdk)
 
 ### Cloud-Umgebungen {#cloud-environments}
 
-Um eine Cloud-Umgebung für die Verwendung des Vorabversionskanals zu aktualisieren, müssen Sie eine neue Umgebungsvariable hinzufügen. Dies ist entweder über die Cloud Manager-Benutzeroberfläche oder über die CLI möglich.
+Um eine Cloud-Umgebung zu aktualisieren und den Vorabversionskanal zu verwenden, müssen Sie eine neue Umgebungsvariable hinzufügen. Dies ist entweder über die Cloud Manager-Benutzeroberfläche oder über die CLI möglich.
 
 #### Hinzufügen der Umgebungsvariable über die Benutzeroberfläche {#add-with-ui}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Navigieren Sie zu dem Programm, in dem Sie den Vorabversionskanal aktivieren möchten.
+1. Navigieren Sie zu dem Programm, für das Sie den Vorabversionskanal aktivieren möchten.
 
-1. Wählen Sie die Umgebung aus, in der Sie den Vorabversionskanal aktivieren möchten, und greifen Sie über **Programm** > **Umgebung** > **Umgebungskonfiguration** auf seine Konfiguration zu.
+1. Wählen Sie die Umgebung aus, in der Sie den Vorabversionskanal aktivieren möchten, und greifen Sie über **Programm** > **Umgebung** > **Umgebungskonfiguration** auf ihre Konfiguration zu.
 
 1. Fügen Sie eine neue [Umgebungsvariable](/help/implementing/cloud-manager/environment-variables.md) hinzu:
 
@@ -54,7 +54,7 @@ Um eine Cloud-Umgebung für die Verwendung des Vorabversionskanals zu aktualisie
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | Alle | Variable |
 
-1. Speichern Sie die Änderungen, und die Umgebung wird mit aktiviertem Vorabversionskanal aktualisiert.
+1. Speichern Sie die Änderungen und die Umgebung wird aktualisiert, wenn der Vorabversionskanal aktiviert ist.
 
    ![Neue Umgebungsvariable](assets/env-configuration-prerelease.png)
 
@@ -81,15 +81,15 @@ Sie können auch die Cloud Manager-API und -CLI verwenden, um die Umgebungsvaria
   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
   ```
 
-Die Variable kann gelöscht werden, wenn Sie die Umgebung auf das Standardverhalten (nicht den Vorabversionskanal) zurücksetzen möchten.
+Die Variable kann gelöscht werden, wenn Sie die Umgebung auf das Standardverhalten (nicht das Verhalten des Vorabversionskanals) zurücksetzen möchten.
 
 ### Lokales SDK {#local-sdk}
 
-Sie können auf bevorstehende Funktionen im Vorabversionskanal in Ihrer lokalen Schnellstart-SDK zugreifen und Code für neue APIs erstellen, indem Sie Ihr Maven-Projekt so konfigurieren, dass es auf die Vorabversionskanal-`API Jar` in Maven Central verweist. Sie können auch auf den Vorabversionskanal in Ihrer lokalen Entwicklungsumgebung zugreifen, indem Sie die reguläre Schnellstart-SDK im Vorabversionsmodus starten.
+Sie können im Vorabversionskanal in Ihrem lokalen Schnellstart-SDK auf bevorstehende Funktionen zugreifen und Code für neue APIs erstellen, indem Sie Ihr Maven-Projekt auf den Vorabversionskanal `API Jar` in Maven Central verweisen. Sie können auch auf den Vorabversionskanal in Ihrer lokalen Entwicklungsumgebung zugreifen, indem Sie das reguläre Schnellstart-SDK im Vorabversionsmodus starten.
 
 #### Starten des Schnellstart-SDK im Vorabversionsmodus {#prerelease-mode}
 
-1. Laden Sie die SDK von Software Distribution herunter und installieren Sie sie wie unter [Zugriff auf die AEM as a Cloud Service SDK&quot; beschrieben](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Laden Sie das SDK vom Software Distribution-Portal herunter und installieren Sie es wie unter [Zugriff auf das AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) beschrieben.
 1. Fügen Sie beim Starten des QuickStart-SDK das Argument `-r prerelease` hinzu.
 
 Der Wert bleibt erhalten und kann deshalb nur beim ersten Starten ausgewählt werden. Installieren Sie das SDK neu, um die Befehlszeilenoption zu ändern.
@@ -146,7 +146,7 @@ Javadocs werden in Maven Central veröffentlicht.
 
 1. Die Bereitstellung erfolgt auf Ihrem lokalen Server.
 
-1. Wenn Sie sich vergewissert haben, dass die Bereitstellung lokal wie erwartet erfolgt, übertragen Sie den Code auf einen Entwicklungszweig und verwenden Sie eine produktionsfremde Cloud Manager-Pipeline, um die Bereitstellung in einer [Umgebung mit aktiviertem Vorabversionskanal“ durchzuführen](#cloud-environments)
+1. Wenn Sie sich vergewissert haben, dass die Bereitstellung lokal wie erwartet funktioniert, übertragen Sie den Code in eine Entwicklungsverzweigung und verwenden Sie eine produktionsfremde Pipeline von Cloud Manager, um die Bereitstellung in einer [Umgebung durchzuführen, die den Vorabversionskanal aktiviert hat.](#cloud-environments)
 
 >[!CAUTION]
 > 
@@ -160,6 +160,6 @@ Beim Verwenden des Vorabversionskanals sind einige Aspekte zu beachten.
 
 * Der Vorabversionskanal enthält nicht unbedingt alle neuen Funktionen, die in der folgenden Version eingeführt werden sollen.
 * Die Vorabversionsfunktionen durchlaufen eine strenge Kontrolle zur Qualitätssicherung und sind eher als vollständige Funktionen denn als Betaversionen konzipiert. Wenn Sie Probleme bemerken, melden Sie diese, genau wie Sie es tun würden, wenn Sie Fehler bei Funktionen in regulären AEM-Versionen vermuten.
-* Um festzustellen, ob eine Umgebung für den Vorabversionskanal konfiguriert ist, wechseln Sie zur Seite &quot;**&quot; der AEM-Konsole** überprüfen Sie, ob die AEM-Versionsnummer ein `PRERELEASE` Suffix wie `Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE` enthält.
+* Um festzustellen, ob eine Umgebung für den Vorabversionskanal konfiguriert ist, wechseln Sie zur Info-**Seite** der AEM-Konsole und überprüfen Sie, ob die AEM-Versionsnummer ein `PRERELEASE`-Suffix wie `Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE` aufweist.
 
 ![Info](/help/release-notes/assets/about.png)
