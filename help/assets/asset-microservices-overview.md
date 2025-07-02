@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Adobe Experience Manager as a [!DNL Cloud Service] bietet eine Cloud-native Möglichkeit, Experience Manager-Programme und -Funktionen zu nutzen. Eines der Schlüsselelemente dieser neuen Architektur ist die auf Asset-Microservices basierende Erfassung und Verarbeitung von Assets. Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Die wichtigsten Vorteile von Cloud-nativen Asset-Microservices sind:
 
-* Skalierbare Architektur für eine nahtlose Verarbeitung für ressourcenintensive Vorgänge.
+* Skalierbare Architektur, die eine nahtlose Verarbeitung für ressourcenintensive Vorgänge ermöglicht.
 * Effiziente Indizierung und Textextraktion, die die Leistung Ihrer Experience Manager-Umgebungen nicht beeinträchtigen.
 * Minimieren des Bedarfs an Workflows zur Verarbeitung von Assets in der Experience Manager-Umgebung. Dadurch werden Ressourcen freigesetzt, die Belastung von Experience Manager minimiert und Skalierbarkeit gewährleistet.
 * Verbesserte Ausfallsicherheit bei der Verarbeitung von Assets. Potenzielle Probleme beim Umgang mit atypischen Dateien, wie beschädigten oder extrem großen Dateien, wirken sich nicht mehr auf die Leistung der Bereitstellung aus.

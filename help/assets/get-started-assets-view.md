@@ -4,10 +4,10 @@ description: Wie Sie auf  [!DNL Assets View] zugreifen können, wie Sie sich anm
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Die Verwaltung digitaler Assets mit [!DNL Assets View] erfordert nur drei einfac
 * **Schritt 2**: [Durchsuchen](/help/assets/search-assets-view.md) und [Herunterladen](/help/assets/manage-organize-assets-view.md#download) von Assets.
 * **Schritt 3**: [Verwalten und Organisieren](/help/assets/manage-organize-assets-view.md) der Assets.
 
-Um [!DNL Assets View] zu verwenden, melden Sie sich unter [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) an. Wählen Sie beim Anmelden `Company or School Account` aus. Wenden Sie sich an den Administrator Ihrer Organisation, um Zugriff zu erhalten.
+Um [!DNL Assets View] zu verwenden, melden Sie sich unter [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) an. Wählen Sie beim Anmelden `Company or School Account` aus. Wenden Sie sich an die Admins Ihrer Organisation, um Zugriff zu erhalten.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
@@ -66,7 +66,7 @@ Nachfolgend finden Sie die verschiedenen DAM-Aufgaben (Digital Asset Management)
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

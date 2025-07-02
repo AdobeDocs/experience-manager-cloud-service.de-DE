@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie einzelne oder mehrere Assets und deren Ausgabedarstellungen aus dem Content Hub-Portal herunterladen.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Mit [!DNL Content Hub] können Sie Assets herunterladen und freigeben. Auf der [
 
 Sie können mit [!DNL Content Hub] einzelne oder mehrere Assets und ihre verfügbaren Ausgabedarstellungen herunterladen.
 
-Siehe [In Content Hub verfügbare Ausgabedarstellungen](#types-of-renditions)..
+Siehe [Typen von in Content Hub verfügbaren Ausgabedarstellungen](#types-of-renditions).
 
 ## Herunterladen von Assets und deren Ausgabedarstellungen {#download-asset-renditions}
 
