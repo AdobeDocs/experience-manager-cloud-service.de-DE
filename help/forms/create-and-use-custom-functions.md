@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 54%
+source-wordcount: '1336'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 54%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzende JavaScript-Funktionen definieren können, um komplexe Geschäftsregeln zu implementieren. Diese benutzerdefinierten Funktionen erweitern die Funktionen von Formularen durch die Erleichterung der Bearbeitung und Verarbeitung der eingegebenen Daten, um bestimmte Anforderungen zu erfüllen. Sie ermöglichen eine dynamische Änderung des Formularverhaltens auf der Grundlage vordefinierter Kriterien. Mit benutzerdefinierten Funktionen können Entwicklerinnen und Entwickler auch komplexe Validierungslogiken durchsetzen, dynamische Berechnungen durchführen und die Anzeige oder das Verhalten von Formularelementen basierend auf Benutzerinteraktionen oder vordefinierten Kriterien steuern.
@@ -214,6 +214,16 @@ Um benutzerdefinierte Funktionen im Regeleditor eines adaptiven Formulars aufzul
 ```
 
 Wenn Benutzende der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hinzufügen, wird die benutzerdefinierte Funktion nicht im Regeleditor eines adaptiven Formulars aufgeführt.
+
+## Bekanntes Problem
+
+* Benutzerdefinierte Funktionen unterstützen keine Literale für reguläre Ausdrücke in JavaScript. Die Verwendung von Regex-Literalen in einer benutzerdefinierten Funktion führt zu Fehlern während der Ausführung. Zum Beispiel:
+  `const pattern = /^abc$/;`
+
+  Um die Kompatibilität zu gewährleisten, verwenden Sie den RegExp-Konstruktor in den benutzerdefinierten Funktionen.
+
+  `const pattern = new RegExp("^abc$");`
+Refaktorieren Sie reguläre Ausdrücke so, dass der RegExp-Konstruktor verwendet wird, um eine konsistente und zuverlässige Ausführung zu gewährleisten.
 
 ## Nächster Schritt
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 34%
 
 ---
@@ -513,10 +513,19 @@ Die nachstehende GIF-Datei zeigt, dass beim Klicken auf die Schaltfläche `Delet
 
 ![Bedienfeld löschen](/help/forms/assets/custom-function-delete-panel.gif)
 
+## Bekanntes Problem
+
+* Benutzerdefinierte Funktionen unterstützen keine Literale für reguläre Ausdrücke in JavaScript. Die Verwendung von Regex-Literalen in einer benutzerdefinierten Funktion führt zu Fehlern während der Ausführung. Zum Beispiel:
+  `const pattern = /^abc$/;`
+
+  Um die Kompatibilität zu gewährleisten, verwenden Sie den RegExp-Konstruktor in den benutzerdefinierten Funktionen.
+
+  `const pattern = new RegExp("^abc$");`
+Refaktorieren Sie reguläre Ausdrücke so, dass der RegExp-Konstruktor verwendet wird, um eine konsistente und zuverlässige Ausführung zu gewährleisten.
 
 ## Fehlerbehebung
 
-* Wenn der benutzerdefinierte Übermittlungs-Handler in bestehenden AEM-Projekten oder Formularen nicht wie erwartet funktioniert, führen Sie die folgenden Schritte aus:
+* Wenn der benutzerdefinierte Übermittlungs-Handler in bestehenden AEM-Projekten oder -Formularen nicht wie erwartet funktioniert, führen Sie die folgenden Schritte aus:
    * Stellen Sie sicher[ dass die Kernkomponentenversion auf Version 3.0.18 und höher aktualisiert ](https://github.com/adobe/aem-core-forms-components). Für bestehende AEM-Projekte und -Formulare müssen jedoch zusätzliche Schritte ausgeführt werden:
 
    * Für das AEM-Projekt sollte der Benutzer alle Instanzen von `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()` ersetzen und das Projekt über die Cloud Manager-Pipeline bereitstellen.
