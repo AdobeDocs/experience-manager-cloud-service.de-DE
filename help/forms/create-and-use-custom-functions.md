@@ -19,7 +19,7 @@ ht-degree: 53%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzende JavaScript-Funktionen definieren können, um komplexe Geschäftsregeln zu implementieren. Diese benutzerdefinierten Funktionen erweitern die Funktionen von Formularen durch die Erleichterung der Bearbeitung und Verarbeitung der eingegebenen Daten, um bestimmte Anforderungen zu erfüllen. Sie ermöglichen eine dynamische Änderung des Formularverhaltens auf der Grundlage vordefinierter Kriterien. Mit benutzerdefinierten Funktionen können Entwicklerinnen und Entwickler auch komplexe Validierungslogiken durchsetzen, dynamische Berechnungen durchführen und die Anzeige oder das Verhalten von Formularelementen basierend auf Benutzerinteraktionen oder vordefinierten Kriterien steuern.
