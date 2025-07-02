@@ -4,7 +4,7 @@ description: Erfahren Sie, wie AEM as a Cloud Service von der Leistung und den p
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
+source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 37%
@@ -53,7 +53,7 @@ Ob Headless oder Headful, Sie können die richtigen Inhalte im richtigen Format 
 
 Edge Delivery Services ist ein zusammenstellbarer Satz von Services, der eine hohe Flexibilität bei der Erstellung von Inhalten auf Ihrer Website ermöglicht. Es ersetzt AEM Publish/Dispatcher und die herkömmliche Methode zum Erstellen von Erlebnissen durch AEM-Kernkomponenten durch eine Multi-Cloud-SaaS-Lösung und einen reinen Frontend-Entwicklungsansatz.
 
-![Architektur von Edge Delivery](assets/AEM-with-EDS-architecture.png)
+![Architektur von Edge Delivery](assets/aem-with-eds-architecture.png)
 
 Edge Delivery Services nutzt GitHub, damit Sie Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Neue Inhalte werden sofort und ohne Neuerstellungsprozess hinzugefügt.
 
