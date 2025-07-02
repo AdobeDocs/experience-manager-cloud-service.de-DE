@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1768'
 ht-degree: 83%
 
 ---
@@ -146,7 +146,7 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 
 ### Bekannte Probleme {#known-issues-21331}
 
-Keine.
+* SITES-33177: Abschnittsstile, die als kommagetrennte Zeichenfolgen gespeichert sind, sind fehlerhaft.
 
 ### Eingestellte Funktionen und APIs {#deprecated-21331}
 
