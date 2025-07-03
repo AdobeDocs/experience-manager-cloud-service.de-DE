@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -37,8 +37,8 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * SITES-19754: Edge Delivery mit universellem Editor: Hinzufügen einer für Menschen lesbaren Fehlermeldung, wenn die Integration Probleme aufweist.
 * SITES-23499: Edge Delivery mit universellem Editor: Hinzufügen der Unterstützung mehrerer Felder, die für Blockoptionen verwendet werden sollen.
 * SITES-23518: Edge Delivery mit Universal Editor: Hinzufügen der Unterstützung für Asset-Ausgabedarstellungen spezifisch für Edge Delivery.
-* SITES-24436: Inhaltsfragmente-REST-API: Einführung eines lokalen Caches, um das Abrufen doppelter Verweise zu beschleunigen.
-* SITES-25155: Inhaltsfragmente-REST-API: Veraltete Abfrageparameter „enabledForFolder“ in der Modellliste entfernen.
+* SITES-24436: Inhaltsfragment-REST-API: Einführung eines lokalen Caches zur Beschleunigung des Abrufs doppelter Verweise.
+* SITES-25155: Inhaltsfragment-REST-API: Entfernen veralteter Abfrageparameter des Typs „enabledForFolder“ aus der Modellliste.
 * SITES-25913: Inhaltsfragment-REST-API: Zeitgesteuerte Validierung von Ressourcen vor dem Start des Veröffentlichungs-Workflows.
 * SITES-25976: Links in Experience Fragments werden nach dem MSM-Rollout nicht angepasst.
 * SITES-26271: Inhaltsfragment-REST-API: Wechsel zum BFS-Durchlauf für den GET-Varianten-Endpunkt.
@@ -46,16 +46,16 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * SITES-27775: Optimierte Suche nach Verweisen während der Veröffentlichung (verzögertes Laden von Metadaten).
 * SITES-27782: Edge Delivery mit universellem Editor: Hinzufügen einer spezifischen Publisher-Abonnenten-Implementierung, um Inhalte in Edge Delivery zu veröffentlichen (vorzeitiger Zugriff).
 * SITES-27792: Edge Delivery mit universellem Editor: Hinzufügen einer dedizierten Edge Delivery Service-Konfigurationsvorlage.
-* SITES-28557: Inhaltsfragment-REST-API: Zulassen, dass E-Tags verwendet werden, die durch den Aufruf von `/cf/fragments/{fragmentId}` mit `references=direct` abgerufen wurden, um ein Inhaltsfragment zu patchen.
+* SITES-28557: Inhaltsfragment-REST-API: Zulassen, dass durch den Aufruf von `/cf/fragments/{fragmentId}` mit `references=direct` abgerufene ETags zum Patchen eines Inhaltsfragments verwendet werden.
 * SITES-28683: Zulassen, dass MSM LiveRelationship-Suchen den erweiterten Status überspringen.
-* SITES-29601: Inhaltsfragment-REST-API: Validierung für Inhaltsfragmentverweise in Langtextfeldern.
-* SITES-29614: Inhaltsfragment-REST-API: Rufen Sie einen Workflow mithilfe des `/cf/workflows/{workflowInstanceId}`-Endpunkts ab, wobei „workflowInstanceIda“ die von der Veröffentlichungsanfrage zurückgegebene ID ist.
-* SITES-29615: Inhaltsfragment-REST-API: Listet alle Batch-Anfragen auf, die über POST-`/cf/batch` mithilfe von `GET /cf/batch` erstellt wurden.
-* SITES-29874: Inhaltsfragmente-REST-API: Verweise aus Langtextfeldern von Inhaltsfragmenten werden jetzt abgerufen und hydriert.
+* SITES-29601: Inhaltsfragment-REST-API: Validierung für Inhaltsfragmentverweise langer Textfelder.
+* SITES-29614: Inhaltsfragment-REST-API: Abrufen eines Workflows mithilfe des `/cf/workflows/{workflowInstanceId}`-Endpunkts, wobei „workflowInstanceIda“ die von der Veröffentlichungsanfrage zurückgegebene ID ist.
+* SITES-29615: Inhaltsfragment-REST-API: Auflisten aller über POST `/cf/batch` mithilfe von `GET /cf/batch` erstellten Batch-Anfragen.
+* SITES-29874: Inhaltsfragment-REST-API: Verweise aus langen Textfeldern von Inhaltsfragmenten werden jetzt abgerufen und eingebunden.
 * SITES-29930: Inhaltsfragment-REST-API: Hinzufügen von Metriken für den Workflow zum Veröffentlichen von Inhaltsfragmenten.
 * SITES-29986: Inhaltsfragment-REST-API: Unterstützung der technischen Benennung des Inhaltsfragmentmodells.
 * SITES-30088: Inhaltsfragment-REST-API: Veröffentlichung von Inhaltsfragmenten – Überspringen des Abrufs von Verweisen, wenn filterReferencesByStatus leer ist.
-* SITES-30126: Inhaltsfragmente-REST-API: CF Leistungsverbesserung der Veröffentlichung: Überprüfung, ob eine Ressource ein Fragment ist, durch eine minimale Überprüfung ersetzt.
+* SITES-30126: Inhaltsfragment-REST-API: Leistungsverbesserung bei der Veröffentlichung von Inhaltsfragmenten: Die Überprüfung, ob eine Ressource ein Fragment ist, wurde durch eine minimale Überprüfung ersetzt.
 * SITES-30328: Edge Delivery mit universellem Editor: Hinzufügen der Unterstützung der Vorschau von Sidekick.
 * SITES-30445: Inhaltsfragment-REST-API: Benutzeroberflächenschema des Inhaltsfragmentmodells: Hinzufügen einer Option, um den Anfangsstatus von reduzierbaren Elementen zu steuern.
 * SITES-30604: Inhaltsfragmente-REST-API: Unterstützung der Einführung von Modell-Metadatenschemata in der neuen Benutzeroberfläche.
@@ -66,9 +66,9 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * SITES-31111: Inhaltsfragment-REST-API: Zulassen, dass die Varianten-Patch-API Inhaltsfragmentverweise innerhalb von Inhaltsfragment-Launches akzeptiert.
 * SITES-31343: Inhaltsfragment-REST-API: Hinzufügen von Filterung und Paginierung nach Datum zum Endpunkt, der Batch-Anfragen auflistet.
 * SITES-31472: Das Löschen eines Launch kann dazu führen, dass das Repository angehalten wird, wenn der Launch sehr umfangreich ist.
-* SITES-31641: Inhaltsfragmente-REST-API: Eigenschaft zu Modellfeldern hinzufügen, um dynamische Zuordnungen zu Erweiterungen zu speichern.
+* SITES-31641: Inhaltsfragment-REST-API: Hinzufügen einer Eigenschaft zu Modellfeldern, um dynamische Zuordnungen zu Erweiterungen zu speichern.
 * SITES-31677: Benutzerdefinierter Arbeitsbereich unterstützt den Export von AEM-Inhaltsfragmenten zu Target.
-* SITES-31770: Inhaltsfragment-REST-API: Leistungsverbesserungen bei PATCH.
+* SITES-31770: Inhaltsfragment-REST-API: PATCH-Leistungsverbesserungen.
 * SITES-31782: Inhaltsfragment-REST-API: Hinzufügen einer Beschreibung für lokale Assets.
 * SITES-32175: Zulassen von Zwischen-Commits für Live Copy-Erstellung und MSM-Seiten-Rollout.
 
@@ -97,7 +97,7 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * SITES-25235: Die Meldung zum Laden von Inhalten der Filterleiste wird von der Bildschirmlesehilfe nicht vorgelesen.
 * SITES-25254: Die horizontale Bildlaufleiste wird im Karussell-Modal angezeigt, wenn Inhalte mit 320 Pixel angezeigt werden.
 * SITES-25433: Edge Delivery mit universellem Editor: Korrektur des Renderings von Seitenversionen für mehrsprachige Site-Strukturen.
-* SITES-26064: Inhaltsfragment-REST-API: Korrigieren Sie den Status-Code, der beim Erstellen eines Fragments und Abrufen einer `AccessDeniedException` im Backend zurückgegeben wird.
+* SITES-26064: Inhaltsfragment-REST-API: Korrektur des Status-Codes, der beim Erstellen eines Fragments und Abrufen einer `AccessDeniedException` im Backend zurückgegeben wird.
 * SITES-26890: Bei Verwendung der Tastatur ist der Tastaturfokus „Tabellenüberschriften“ auf der Seite „Veröffentlichung verwalten“ nicht sichtbar.
 * SITES-29075: Live Copy-Überblick funktioniert für Websites mit hohem Volumen nicht.
 * SITES-29514: Edge Delivery mit universellem Editor: GitHub-/Projekt-URL wird beim Erstellen einer neuen Site obligatorisch gemacht.
@@ -124,12 +124,12 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * SITES-30899: Mit der Option des späteren Rollouts können Sie fortfahren, ohne dass ein Datum ausgewählt ist.
 * SITES-30947: Null-Pointer-Ausnahme aufgrund fehlender Verhaltenseigenschaft im Blueprint beim Rollout.
 * SITES-31157: Inhaltsfragment-REST-API: Fehlschlagen des Patches ist ein Sonderfall.
-* SITES-31162: Inhaltsfragmente-REST-API: Beheben Sie das Umwandlungsproblem für `DateTimeField` Feld in `ModelFieldMapper`.
+* SITES-31162: Inhaltsfragmente-REST-API: Behebung des Umwandlungsproblems in Feld `DateTimeField` in `ModelFieldMapper`.
 * SITES-31174: Inhaltsfragment-REST-API: Tags wurden nicht zusammen mit der Veröffentlichungsanfrage veröffentlicht.
 * SITES-31272: Sprachkopie von Assets kann nicht über PageManager.copy erstellt werden.
 * SITES-31327: Inhaltsfragment-REST-API: Entfernen der ETag-Validierung in der GET-Fragmentanfrage.
 * SITES-31387: JavaScript-Fehler „ns.ui.alert ist keine Funktion“ bei der erneuten Aktivierung der Vererbung von Ghost-Komponenten.
-* SITES-31454: Inhaltsfragmente-REST-API: Entspannen Sie das Muster für Fragmentverweisfelder, um auch UUIDs zu akzeptieren.
+* SITES-31454: Inhaltsfragment-REST-API: Lockerung des Musters für Fragmentverweisfelder, damit auch UUIDs akzeptiert werden.
 * SITES-31455: Inhaltsfragment-REST-API: Beheben von ETag-Abweichungen zwischen Endpunkten für dasselbe Inhaltsfragmentmodell.
 * SITES-31459: Inhaltsfragment-REST-API: Live Copy eines Inhaltsfragments kann nicht bearbeitet werden, wenn ein Inhaltsverweisfeld vorhanden ist.
 * SITES-31467: JS-Fehler aus contexthub.authoring-hook.js im Seiteneditor.
