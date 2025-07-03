@@ -4,7 +4,8 @@ description: Erfahren Sie, wie Sie die AEM CIF-Produktkarussellkomponente erweit
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
-source-git-commit: 11dfb2a69cd8e64c8105e5dd3945b0c341bcdf3b
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 100%

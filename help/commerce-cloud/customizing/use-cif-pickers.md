@@ -9,7 +9,8 @@ audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 100%
@@ -48,7 +49,7 @@ Außerdem werden die Standardeigenschaften von Dialogfeldern wie `name`, `fieldL
 >[!CAUTION]
 >
 >Für die Komponente `cifproductfield` ist die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft „extraClientlibs“ verwenden.
->[!CAUTION]
+>>[!CAUTION]
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt die Verwendung von `sku` oder `slug` als Produktkennung. Adobe unterstützt `id` weiterhin nur für Projekte, die CIF-Kernkomponenten Version 1.x verwenden.
 
@@ -78,7 +79,7 @@ Außerdem werden die Standardeigenschaften von Dialogfeldern wie `name`, `fieldL
 >[!CAUTION]
 >
 >Wie für die Komponente `cifproductfield` ist für die Komponente `cifcategoryfield` ebenfalls die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
->[!CAUTION]
+>>[!CAUTION]
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt die Verwendung von `uid` oder `urlPath` als Kategoriekennung. Adobe unterstützt `id` und `idAndUrlPath` weiterhin nur für Projekte, die CIF-Kernkomponenten Version 1.x verwenden.
 

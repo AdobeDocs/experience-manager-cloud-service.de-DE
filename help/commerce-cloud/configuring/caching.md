@@ -4,7 +4,8 @@ description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfiguratio
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 100%
