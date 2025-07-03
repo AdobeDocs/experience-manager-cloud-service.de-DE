@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: ccf148d66fbee68e057b05afc69e4bf9eef65c77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2 025,6,0 |
+| Version | 2025.6.0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 

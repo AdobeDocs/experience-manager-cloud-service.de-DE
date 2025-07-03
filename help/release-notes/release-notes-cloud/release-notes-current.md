@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.6.0) war der Freitag, 26. Juni 2025. Die nächste Version (2025.7.0) ist für den Freitag, 31. Juli 2025 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.6.0) war der 26. Juni 2025. Die nächste Version (2025.7.0) ist für den 31. Juli 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -40,15 +40,15 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Verbesserte Metadatenformularverwaltung in der Assets-Ansicht**
+**Verbesserte Verwaltung von Metadatenformularen in der Assets-Ansicht**
 
-Sie können jetzt Metadatenformulare aus der Admin-Ansicht direkt in die Assets-Ansicht importieren. Alle Aktualisierungen, die an diesen Formularen in der Assets-Ansicht vorgenommen werden, werden automatisch in der Admin-Ansicht übernommen, wodurch die Konsistenz beider Erlebnisse sichergestellt wird. Diese Funktion unterstützt einen nahtlosen Übergang zur neuen Assets-Ansicht und wahrt gleichzeitig die Kontinuität mit Ihren vorhandenen Metadatenkonfigurationen.
+Sie können jetzt Metadatenformulare aus der Admin-Ansicht direkt in die Assets-Ansicht importieren. Alle Aktualisierungen, die an diesen Formularen in der Assets-Ansicht vorgenommen werden, werden automatisch in der Admin-Ansicht übernommen, wodurch die Konsistenz beider Ansichten sichergestellt wird. Diese Funktion unterstützt einen nahtlosen Übergang zur neuen Assets-Ansicht und gewährleistet gleichzeitig die Kontinuität mit Ihren vorhandenen Metadatenkonfigurationen.
 
 ![KI-generierte Metadaten](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -104,7 +104,7 @@ OSGi-Eigenschaften:
 
 Die **Java 11-Laufzeitumgebung** ist jetzt veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere **Java 21-Laufzeitumgebung** aktualisiert.
 
-Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit bestimmten nächsten Schritten erhalten haben. Bitte stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **28. August 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
+Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Bitte stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **28. August 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
 
 Hinweis: Die Laufzeitversion ist von der Build-Version Ihres Codes getrennt. Es wird zwar empfohlen, Builds mit Java 21 durchzuführen, aber Java 11-Builds werden derzeit noch unterstützt. Ein separater Hinweis zur Abschaffung von Java 11 für Builds wird in Zukunft freigegeben.
 
@@ -112,7 +112,7 @@ Hinweis: Die Laufzeitversion ist von der Build-Version Ihres Codes getrennt. Es 
 
 Wie in den Versionshinweisen vom April erwähnt, müssen AEM-Java-Protokolle einem Standardformat entsprechen, um eine zuverlässige Überwachung in allen Kundenumgebungen sicherzustellen. Benutzerdefinierte Protokollkonfigurationen – wie etwa Änderungen an der Protokollformatierung, Ausgabedateien oder Standardprotokollebenen – werden nicht mehr unterstützt. Protokolle müssen an die Standarddateien weitergeleitet werden, und die standardmäßigen Protokollebenen für AEM-Produkt-Code müssen beibehalten werden. Ausführliche Informationen finden Sie im [Artikel zur Protokollierung](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Ab **Ende August** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Unsere Analyse hat ergeben, dass die meisten Kunden nicht betroffen sind und Adobe Kunden kontaktiert hat, deren aktuelle Konfiguration möglicherweise betroffen ist.
+Ab **Ende August** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
 
 Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf einem benutzerdefinierten Protokollierungsverhalten basieren. Zum Beispiel:
 
@@ -123,7 +123,7 @@ Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf e
 
 Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben* in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, außer dies ist explizit konfiguriert.
 
-Um jedoch die Repository-Leistung zu optimieren, wird ab **Anfang Juli 2025** die Bereinigung standardmäßig aktiviert. Befolgen Sie dabei die folgenden Richtlinien:
+Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung **ab Anfang Juli 2025** standardmäßig aktiviert, wobei die folgenden Richtlinien befolgt werden:
 
 #### Inhaltsversionen {#mt-content}
 
@@ -162,7 +162,7 @@ Häufige Anwendungsszenarien umfassen:
 * Authentifizieren von Benutzenden bei einem Identitätsanbieter, bevor Zugriff auf Inhalte gewährt wird
 * Personalisieren von Inhalten basierend auf Geolokalisierung, Gerätetyp oder Benutzerattributen
 * Fungieren als Middleware zwischen dem CDN und Ihrer Herkunft
-* Formatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer APIs als Antworten) vor deren Bereitstellung im Browser
+* Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
 Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.
