@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +33,12 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | ✓ | Unterstützt |
 | * | Siehe Anmerkungen unterhalb der Tabelle |
 | - | Nicht zutreffend |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets] unterstützt nur die in diesem Artikel aufgeführten Dateiformate.
+>>Einige Funktionen scheinen möglicherweise mit anderen Formaten zu funktionieren, diese Formate werden jedoch nicht offiziell unterstützt. Die Ergebnisse können inkonsistent sein, und die Funktionen funktionieren möglicherweise nicht wie erwartet.
+>>Verwenden Sie nur die unterstützten Formate, um konsistente und zuverlässige Ergebnisse zu gewährleisten.
 
 ## Adobe-Formate {#adobe-formats}
 
