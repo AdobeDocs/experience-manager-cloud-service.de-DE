@@ -2,7 +2,7 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: a60b0e8ccba2680b0f053f3349adca21b65c3045
+source-git-commit: 4fb2ca8123dfd5a0d3244b9d5966cd8bb7eeaf09
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 81%
@@ -96,10 +96,10 @@ Klicken Sie auf den Umschalter **[!UICONTROL Automatische Genehmigung]**, wenn a
 
 Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
 
-![Upload-Details in der Konfigurationsoberfläche in Content Hub](/help/assets/assets/import-content-hub.png)
+![Upload-Details in der Konfigurationsoberfläche in Content Hub](/help/assets/assets/import-content-hub1.png)
 
 Metadaten, die in der Benutzeroberfläche „Konfiguration“ aktiviert sind, werden auf der Seite „Asset-Upload“ angezeigt:
-![Hochladen von Metadaten auf Content Hub](assets/add-assets-for-approval.png)
+![Hochladen von Metadaten auf Content Hub](assets/add-assets-for-approval1.png)
 
 ### Filter {#configure-filters-content-hub}
 
@@ -119,11 +119,10 @@ Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Asse
    >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
 
 Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jedem verfügbaren Filter klicken, um die Labels zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um einen vorhandenen Filter zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
-![Filter in der Konfigurationsoberfläche in Content Hub](assets/configuration-filter.png)
+![Filter in der Konfigurationsoberfläche in Content Hub](assets/configuration-filter1.png)
 
 Die in der Konfigurations-Benutzeroberfläche aktivierten Filter werden auf der Seite „Suchen“ angezeigt:
-![Suche in Content Hub](assets/content-hub-filters.png)
-
+![Suche in Content Hub](assets/content-hub-filters1.png)
 
 ### Asset-Details {#configure-asset-details-content-hub}
 
@@ -144,7 +143,7 @@ Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) 
 
 Die auf der Konfigurationsoberfläche aktivierten Eigenschaften werden auf der Seite „Asset-Details“ angezeigt:
 
-![Asset-Eigenschaften in Content Hub](assets/asset-details-page-content-hub.png)
+![Asset-Eigenschaften in Content Hub](assets/asset-details-page-content-hub1.png)
 
 ### Asset-Karte {#asset-card}
 
@@ -156,7 +155,7 @@ Führen Sie die folgenden Schritte aus, um die Metadateneigenschaften zu konfigu
 2. Klicken Sie auf **Metadaten hinzufügen**. Das Dialogfeld **Asset-Karten-Metadaten hinzufügen** wird angezeigt.
 3. Geben Sie den Metadatennamen im Feld **Label** an und wählen Sie eine Metadateneigenschaft im Feld **Metadaten** aus.
 4. Klicken Sie auf **Bestätigen** und dann auf **Speichern**, um die Änderungen anzuwenden, sodass die neue Eigenschaft auf der Seite „Asset-Details“ angezeigt wird.
-   ![Asset-Karte](/help/assets/assets/configuration-asset-card.png)
+   ![Asset-Karte](/help/assets/assets/configuration-asset-card1.png)
 Klicken Sie auf ähnliche Weise ![Bearbeiten](/help/assets/assets/edit-content-hub.svg), das neben jeder verfügbaren Eigenschaft verfügbar ist, um die erforderlichen Änderungen vorzunehmen, oder klicken Sie auf ![Löschen](/help/assets/assets/delete-content-hub.svg), um eine vorhandene Metadateneigenschaft zu löschen. Klicken Sie auf **Speichern**, um alle vorgenommenen Änderungen zu übernehmen.
 
 ### Suchen {#configure-metadata-search-content-hub}
@@ -190,7 +189,7 @@ Führen Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!
 
 1. Klicken Sie auf ![Bild auswählen](/help/assets/assets/Browse.svg) **[!UICONTROL Aus Galerie auswählen]**, um im Dialogfeld für die Asset-Auswahl ein Bannerbild auszuwählen. Der Asset-Wähler zeigt nur genehmigte Bilder an.
 1. Wählen Sie das Bild aus, klicken Sie auf **[!UICONTROL Auswählen]** und anschließend auf **[!UICONTROL Speichern]**, um es als Bannerbild Ihrer [!DNL Content Hub]-Bereitstellung anzuzeigen.
-   ![Bannerbild](/help/assets/assets/banner-image-content-hub.png)
+   ![Bannerbild](/help/assets/assets/banner-image-content-hub1.png)
 
 #### Fügen Sie dem Banner Titel und Textinhalte hinzu und ändern Sie die Textfarbe{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
@@ -201,7 +200,7 @@ Klicken Sie auf das quadratische Feld neben **[!UICONTROL Bannertextfarbe]**, um
 #### Ändern der primären und sekundären Farbe{#Change-the-primary-and-secondary-color}
 
 Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** den Abschnitt **[!UICONTROL Farben]**, um primäre und sekundäre Farben festzulegen, indem Sie diese entweder mit dem Farbwähler auswählen oder den Hexadezimal-Code der Farbe definieren. Diese Farben legen die Hintergrund-, Text- und Symbolfarben von Benutzeroberflächenelementen fest, um Ihre [!DNL Content Hub]-Benutzeroberfläche an das Design Ihrer Marke anzupassen.
-![Primär- und Sekundärfarbe](/help/assets/assets/primary-secondary-color-content-hub.png)
+![Primär- und Sekundärfarbe](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL Primäre Farbe]:** Das Primärfarbschema gilt für Auswahlaktionen, interaktive Elemente wie Kontrollkästchen, Suchleisten und Umschalter in [!DNL Content Hub], einschließlich [!DNL Content Hub] Startseite und [!UICONTROL Konfigurationsseite]. Dies gilt auch für Aktionsoptionen, die auf primären [!DNL Content Hub]-Oberflächen verfügbar sind, z. B. Optionen auf den Seiten **[!UICONTROL Alle Assets]** und **[!UICONTROL Sammlungen]**.
 
 **[!UICONTROL Sekundäre Farbe]:** Auf der [!DNL Content Hub]-Startseite gilt das sekundäre Farbschema für Benutzeroberflächenoptionen und Eingabefelder, die in Dialogfeldern verfügbar sind. Dies gilt für alle Konfigurationsmenüoptionen auf der Seite [!UICONTROL Konfiguration] mit Ausnahme von Auswahlaktionen, Kontrollkästchen, Suchleisten und Umschaltern.
@@ -222,7 +221,7 @@ Führen Sie dazu die folgenden Schritte aus:
 1. Aktivieren Sie den **[!UICONTROL Zulassen, dass Benutzer für die Bereitstellung genehmigte Assets anzeigen können]**-Umschalter, um alle für die Bereitstellung genehmigten Assets in Content Hub anzuzeigen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-   ![Abgelaufene Assets in Content Hub](assets/asset-visibility-content-hub.png)
+   ![Abgelaufene Assets in Content Hub](assets/asset-visibility-content-hub1.png)
 
 Nachdem Sie die Sichtbarkeit von Assets aktiviert haben, können Sie die abgelaufenen Assets in Content Hub anzeigen, wie in der folgenden Abbildung dargestellt:
 
@@ -244,7 +243,7 @@ Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-o
 
 * Aktivieren oder deaktivieren Sie den Umschalter **[!UICONTROL Download der Original-Assets zulassen]**, um zu steuern, ob Original-Assets heruntergeladen werden können.
 
-  ![Konfigurieren von Assets in Content-Hub](assets/configuration-renditions.png)
+  ![Konfigurieren von Assets in Content-Hub](assets/configuration-renditions1.png)
 
 Informationen zum Anzeigen und Herunterladen von Ausgabedarstellungen in Content Hub finden Sie unter [Herunterladen von Assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
@@ -263,7 +262,7 @@ Zusätzlich zu den Standardregisterkarten **[!UICONTROL Alle Assets]**, **[!UICO
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
 Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Metadateneigenschaft klicken, um die Links zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um eine vorhandene URL zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
-![Benutzerdefinierte Links in der Konfigurationsoberfläche in Content Hub](assets/configuration-custom-links.png)
+![Benutzerdefinierte Links in der Konfigurationsoberfläche in Content Hub](assets/configuration-custom-links1.png)
 
 Der benutzerdefinierte Link wird als neue Registerkarte neben der Registerkarte Insights auf der Content Hub-Startseite angezeigt.
 ![Registerkarten der benutzerdefinierten Links in der Konfigurationsoberfläche in Content Hub](assets/configuration-ui-custom-link-tab.png)
@@ -282,7 +281,7 @@ Admins können beim Erstellen von Sammlungen Benutzerberechtigungen definieren. 
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu anzuwenden.
 
-   ![Registerkarte „Konfigurationssammlungen“ in Content Hub](assets/collections-and-sharing.png)
+   ![Registerkarte „Konfigurationssammlungen“ in Content Hub](assets/collections-and-sharing1.png)
 
 <!--
 ### Enable public link sharing {#enable-public-link-sharing}
