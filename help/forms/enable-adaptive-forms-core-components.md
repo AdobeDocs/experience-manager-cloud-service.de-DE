@@ -7,9 +7,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1113'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -358,10 +358,10 @@ So prüfen Sie, ob die Kernkomponenten für adaptive Formulare für Ihre Umgebun
 
 ### Warum können auf Kernkomponenten basierende Formulare nicht in einem Projekt gerendert werden?
 
-Kernkomponentenbasierte Formulare können aufgrund einer Versionsabweichung zwischen dem Forms-Kernkomponentenpaket und der im Projektarchetyp enthaltenen Version nicht gerendert werden. Dieses Problem tritt in der Regel auf, wenn die im Projektarchetyp angegebene Version gleich oder höher als die im Paket mit den Forms-Kernkomponenten enthaltene Version ist. Führen Sie einen der folgenden Schritte aus, um dieses Problem zu beheben:
+Auf Kernkomponenten basierende Formulare können aufgrund einer Versionsabweichung zwischen dem Paket „Forms-Kernkomponenten“ und der im Projektarchetyp enthaltenen Version nicht gerendert werden. Dieses Problem tritt in der Regel auf, wenn die im Projektarchetyp angegebene Version gleich oder höher als die im Paket „Forms-Kernkomponenten“ enthaltene Version ist. Um dieses Problem zu beheben, führen Sie eine der folgenden Aktionen aus:
 
-* Verwenden Sie eine niedrigere Version des Forms-Kernkomponenten-Pakets im Projektarchetyp.
-* Entfernen Sie die Forms-Kernkomponenten-Abhängigkeit aus dem Projektarchetyp, da die erforderliche Version bereits in AEM as a Cloud Service enthalten ist. Das Forms-Kernkomponentenpaket ist ab Version 20133, z. B. `AEM SDK v2025.3.20133.20250325T063357Z-250300`, im Lieferumfang von AEM as a Cloud SDK enthalten.
+* Verwenden Sie eine niedrigere Version des Paket „Forms-Kernkomponenten“ im Projektarchetyp.
+* Entfernen Sie die Abhängigkeit „Forms-Kernkomponenten“ aus dem Projektarchetyp, da die erforderliche Version bereits in AEM as a Cloud Service enthalten ist. Das Paket „Forms-Kernkomponenten“ ist ab Version 20133, z. B. `AEM SDK v2025.3.20133.20250325T063357Z-250300`, im Lieferumfang von AEM as a Cloud SDK enthalten.
 
 >[!MORELIKETHIS]
 >

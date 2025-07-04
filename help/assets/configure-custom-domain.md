@@ -3,7 +3,7 @@ title: Konfigurieren einer benutzerdefinierten Domain für die Veröffentlichung
 description: Erfahren Sie, wie Sie eine benutzerdefinierte Domain für die Veröffentlichungsebene in Adobe Cloud Manager konfigurieren.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
 ht-degree: 100%
 

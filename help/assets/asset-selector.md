@@ -6,9 +6,9 @@ feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5372'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -454,12 +454,12 @@ Dabei gilt Folgendes:
 * Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * Der API-Stamm lautet `"/adobe/assets"`
 * `<asset-id>` ist die Asset-Kennung
-* `as` ist der konstante Teil der Open-API-Spezifikation, die angibt, wie das Asset bezeichnet werden soll
+* `as` ist der konstante Teil der OpenAPI-Spezifikation, der angibt, wie das Asset bezeichnet werden soll
 * `<seo-name>` ist der Name eines Assets
 * `<format>` ist das Ausgabeformat
 * `<image modification query parameters>`, wie von der API-Spezifikation für die Bereitstellung genehmigter Assets unterstützt
 
-**API zur Bereitstellung von genehmigten Assets für die ursprüngliche Ausgabedarstellung**
+**API für die Bereitstellung genehmigter Assets für die Original-Ausgabedarstellung**
 
 Die dynamische Versand-URL weist die folgende Syntax auf:
 `https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, wobei Folgendes gilt:
@@ -467,7 +467,7 @@ Die dynamische Versand-URL weist die folgende Syntax auf:
 * Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets"`
 * `<asset-id>` ist die Asset-Kennung
-* `/original/as` ist der konstante Teil der Open-API-Spezifikation, der angibt, wie die ursprüngliche Ausgabedarstellung bezeichnet werden soll
+* `/original/as` ist der konstante Teil der OpenAPI-Spezifikation, der angibt, wie die Original-Ausgabedarstellung bezeichnet werden soll
 * `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann.
 
 +++

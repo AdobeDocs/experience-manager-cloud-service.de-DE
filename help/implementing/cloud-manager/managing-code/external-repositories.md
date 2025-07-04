@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2322'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -244,7 +244,7 @@ Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis 
 
 | Erforderliche Webhook-Ereignisse und Authentifizierung |
 | --- |
-| Diese Ereignisse stellen sicher, dass Cloud Manager Pull-Anfragen validieren, auf Push-Übertragungen von Code reagieren und mit Kommentaren zur Pipeline-Koordination interagieren kann.<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Repository: Push</li></ul>Authentifizierung festlegen:<br>1. Geben Sie in **Feld „Benutzername** Standardauthentifizierung“ `cloudmanager` ein.<br>2. Geben Sie im Feld **Standardauthentifizierungs** Passwort) das in der Benutzeroberfläche von Cloud Manager generierte Webhook-Geheimnis ein. |
+| Diese Ereignisse stellen sicher, dass Cloud Manager Pull-Anfragen validieren, auf Push-Übertragungen von Code reagieren und mit Kommentaren zur Pipeline-Koordination interagieren kann.<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Repository: Push</li></ul>Festlegen der Authentifizierung:<br>1. Geben Sie in das Feld **Benutzername für Standardauthentifizierung** `cloudmanager` ein.<br>2. Geben Sie in das Feld **Kennwort für die Standardauthentifizierung** das in der Benutzeroberfläche von Cloud Manager generierte Webhook-Geheimnis ein. |
 
 >[!ENDTABS]
 

@@ -3,7 +3,7 @@ title: Verwalten lizenzierter Assets in Content Hub
 description: Erfahren Sie, wie Sie ein Lizenzfeld zum Metadatenformular für Assets hinzufügen, die Metadateneigenschaft „Lizenz“ auf Asset-Ordner anwenden und Assets mit Lizenzen zur Nutzung genehmigen.
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
 ht-degree: 100%
 

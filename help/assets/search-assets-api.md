@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die API zum Durchsuchen von Assets verwenden.
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '450'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fre
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
 ht-degree: 100%
 

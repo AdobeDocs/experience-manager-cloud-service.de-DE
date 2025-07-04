@@ -5,9 +5,9 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1542'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
 | `component` | `ComponentType` | Renderer der Komponente | Ja |
-| `name` | `string` | Eigenschaft [oder Pfad](#nesting) in der die Daten gespeichert werden sollen | Ja |
+| `name` | `string` | Eigenschaft [oder Pfad](#nesting), in der bzw. dem die Daten beibehalten werden sollen | Ja |
 | `label` | `FieldLabel` | Titel des Felds | Ja |
 | `description` | `FieldDescription` | Beschreibung des Felds | Nein |
 | `placeholder` | `string` | Platzhalter für das Feld | Nein |
@@ -105,9 +105,9 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | `validation` | `ValidationType` | Validierungsregeln oder Regeln für das Feld | Nein |
 | `raw` | `unknown` | Rohdaten, die von der Komponente verwendet werden können. | Nein |
 
-### Feldname und Verschachtelung {#nesting}
+### Feld „Name“ und Verschachtelung {#nesting}
 
-Das `name` Feld kann direkt auf eine Eigenschaft der aktuellen Ressource verweisen oder im Falle von Komponenten in `cq:Pages` auch einen Pfad zu einer verschachtelten Eigenschaft verwenden. Zum Beispiel:
+Das Feld `name` kann direkt auf eine Eigenschaft der aktuellen Ressource verweisen oder im Falle von Komponenten in `cq:Pages` auch einen Pfad zu einer verschachtelten Eigenschaft verwenden. Zum Beispiel:
 
 ```json
 "name": "teaser/image/fileReference"
@@ -289,7 +289,7 @@ Ein boolescher Komponententyp speichert einen einfachen true/false-Wert, der als
 
 #### Container {#container}
 
-Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten einschließlich Unterstützung für mehrere Felder. Er bietet eine zusätzliche Konfiguration.
+Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten, einschließlich Mehrfachfeld-Unterstützung. Er bietet eine zusätzliche Konfiguration.
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|
@@ -332,7 +332,7 @@ Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten einschl
 
 ![Screenshot eines Container-Komponententyps](assets/component-types/container.png)
 
->[!TAB Multifield-Unterstützung]
+>[!TAB Mehrfachfeld-Unterstützung]
 
 ```json
 {

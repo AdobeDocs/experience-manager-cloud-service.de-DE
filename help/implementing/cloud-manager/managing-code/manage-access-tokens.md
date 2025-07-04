@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
 source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Siehe auch [Hinzufügen von externen Repositorys in Cloud Manager](/help/impleme
 1. Klicken Sie im Dialogfeld **Zugriffs-Token verwalten** rechts neben einem Token-Namen auf ![Bearbeiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
 1. Aktualisieren Sie im Dialogfeld **Zugriffs-Token bearbeiten** den Wert **Token-Name** oder **Zugriffs-Token** oder beide.
 
-   ![Dialogfeld „Zugriffs-Token bearbeiten“](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
+   ![Dialogfeld „Zugriffstoken bearbeiten“](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
 1. Wenn das **Zugriffs-Token** derzeit verwendet wird, werden Sie in einer Benachrichtigung darauf hingewiesen, dass alle zugehörigen Repositorys nach der Aktualisierung automatisch erneut validiert werden.
 

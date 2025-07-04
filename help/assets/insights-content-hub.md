@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Asset Insights in [!DNL Content Hub] anzeigen
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
 ht-degree: 100%
 

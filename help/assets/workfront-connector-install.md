@@ -5,9 +5,9 @@ role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
+   >
    >    ```
 
 1. Stellen Sie sicher, dass die folgenden Überlagerungen nicht im [!DNL Experience Manager]-Repository vorhanden sind. Wenn Sie bereits vorhandene Überlagerungen auf diesen Pfaden haben, müssen Sie entweder die Überlagerungen entfernen oder das Delta der Änderungen zwischen den beiden Pfaden zusammenführen:

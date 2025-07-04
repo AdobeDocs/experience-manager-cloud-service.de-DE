@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1104'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Assets as a Cloud Service Prime enthält ein einfaches DAM, mit dem Sie verschie
 
   >[!NOTE]
   >
-  >Dynamic Media mit OpenAPI-Funktionen, die Ihnen Zugriff auf grundlegende Bildmodifikatoren wie Drehen, Zuschneiden (nur manuell - kein smartes Zuschneiden), Spiegeln, Höhe, Breite, Qualität, Format und adaptives Video-Streaming bieten, sind ebenfalls in Assets Prime verfügbar. Wenden Sie sich an das Adobe-Accountteam, um mehr zu erfahren.
+  >Dynamic Media mit OpenAPI-Funktionen, die Ihnen Zugriff auf grundlegende Bildmodifikatoren wie Drehen, Zuschneiden (nur manuell – kein intelligenter Zuschnitt), Spiegeln, Höhe, Breite, Qualität, Format und adaptives Video-Streaming bieten, ist auch mit Assets Prime verfügbar. Wenden Sie sich an das Adobe-Accountteam, um mehr zu erfahren.
 
 1. [Erstellen Sie ein neues Programm](/help/journey-onboarding/create-program.md).
 

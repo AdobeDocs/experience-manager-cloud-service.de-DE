@@ -3,7 +3,7 @@ title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1230'
 ht-degree: 100%
 

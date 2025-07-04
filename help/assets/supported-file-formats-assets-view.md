@@ -6,7 +6,7 @@ contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 | PSD und PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Andere Binärdateien | ✓ | − | ✓ | ✓ | ✓ |
 
-Benutzer von [!DNL Adobe Asset Link] können Dateien aus den unterstützten Desktop-Programmen von [!DNL Adobe Creative Cloud] in das [!DNL Assets view]-Repository hochladen und einchecken (eine neue Version hochladen).
+Benutzende von [!DNL Adobe Asset Link] können Dateien aus den unterstützten Desktop-Programmen von [!DNL Adobe Creative Cloud] in das [!DNL Assets view]-Repository hochladen und einchecken (eine neue Version hochladen).
 
 <!-- TBD: Saving the template table separately for later use.
 | Asset type    | Features |

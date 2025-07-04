@@ -3,7 +3,7 @@ title: Bearbeiten von Bildern in Content Hub mit Adobe Express
 description: Bearbeiten von Bildern in Content Hub mit Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
 ht-degree: 100%
 

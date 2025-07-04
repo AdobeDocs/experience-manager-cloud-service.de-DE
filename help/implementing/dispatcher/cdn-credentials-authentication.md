@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1939'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -119,23 +119,23 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 Nach erfolgreichem Testen kann die zusätzliche Bedingung entfernt und die Konfiguration neu bereitgestellt werden.
 
-### Migrationsprozess, wenn der Adobe-Support zuvor den `X-AEM-Edge-Key` HTTP-Header-Wert generiert hat {#migrating-legacy}
+### Migrationsprozess, wenn der Adobe-Support zuvor den HTTP-Header-Wert `X-AEM-Edge-Key` generiert hat {#migrating-legacy}
 
 >[!NOTE]
 >Bevor Sie mit der Migration fortfahren, planen Sie eine Testmigration in der Staging-Umgebung, um die Strategie zu überprüfen.
 
 >[!WARNING]
-> Ändern Sie den Schlüssel im vom Kunden verwalteten CDN erst in Schritt 4.
+> Ändern Sie den Schlüssel im kundenseitig verwalteten CDN erst in Schritt 4.
 
-Zuvor umfasste der Prozess der Integration in ein vom Kunden verwaltetes CDN, dass Kunden einen Wert für die X-AEM-Edge-Key-HTTP-Kopfzeile vom Adobe-Support anforderten, anstatt den Wert selbst zu definieren. Um zu dem neueren Self-Service-Ansatz zu migrieren, bei dem Sie Ihre eigenen Edge-Schlüsselwerte definieren, führen Sie die folgenden Schritte aus, um einen reibungslosen Übergang ohne Ausfallzeiten sicherzustellen:
+Zuvor umfasste der Prozess zur Integration in ein kundenseitig verwaltetes CDN, dass Kundinnen und Kunden den HTTP-Header-Wert „X-AEM-Edge-Key“ vom Adobe Support anforderten, anstatt den Wert selbst zu definieren. Um zu dem neueren Self-Service-Ansatz zu migrieren, bei dem Sie Ihre eigenen Edge-Schlüsselwerte definieren, führen Sie die folgenden Schritte aus, um einen reibungslosen Übergang ohne Ausfallzeiten sicherzustellen:
 
-1. Konfigurieren Sie die CDN-Konfiguration so, dass sowohl die neuen (kundengenerierten) als auch die alten (Adobe-generierten) Geheimnisse als `edgeKey1` und `edgeKey2` angegeben werden. Dies ist eine Variante der Dokumentation [rotierende Geheimnisse](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets).
+1. Konfigurieren Sie die CDN-Konfiguration so, dass sowohl die neuen (kundenseitig generierten) als auch die alten (von Adobe generierten) Geheimnisse als `edgeKey1` und `edgeKey2` angegeben werden. Dies ist eine Variante der Dokumentation [rotierende Geheimnisse](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets).
 
-2. Bereitstellen der geheimen Daten und der Self-Service-CDN-Konfiguration. Zu diesem Zeitpunkt des Prozesses sollte der alte, von Adobe definierte geheime Schlüssel weiterhin als der vom kundenverwalteten CDN übergebene Wert „X-AEM-Edge-Key“ bestehen bleiben.
+2. Stellen Sie die Geheimnisse und die Self-Service-CDN-Konfiguration bereit. Zu diesem Zeitpunkt des Prozesses sollte der alte, von Adobe definierte, geheime Schlüssel weiterhin als der vom kundenseitig verwalteten CDN übergebene Wert „X-AEM-Edge-Key“ bestehen bleiben.
 
-3. Wenden Sie sich an den Adobe-Support und fordern Sie Adobe auf, die Self-Service-Konfiguration zu verwenden. Geben Sie dabei an, dass Sie sie bereits bereitgestellt haben.
+3. Wenden Sie sich an den Adobe Support und fordern Sie Adobe auf, die Self-Service-Konfiguration zu verwenden. Geben Sie dabei an, dass Sie diese bereits bereitgestellt haben.
 
-4. Nachdem Adobe bestätigt hat, dass diese Aktion ausgeführt wurde, konfigurieren Sie Ihr kundenverwaltetes CDN so, dass der neue, kundendefinierte Schlüssel für den Wert der `X-AEM-Edge-Key`-HTTP-Kopfzeile verwendet wird.
+4. Nachdem Adobe bestätigt hat, dass diese Aktion ausgeführt wurde, konfigurieren Sie Ihr kundenseitig verwaltetes CDN so, dass der neue, kundenseitig definierte Schlüssel für den HTTP-Header-Wert `X-AEM-Edge-Key` verwendet wird.
 
 5. Entfernen Sie den alten Schlüssel aus der CDN-Konfiguration und stellen Sie die Konfigurations-Pipeline erneut bereit.
 
@@ -258,7 +258,6 @@ Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge-Schlüssels er
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. Wenn Sie den Schlüssel rotieren müssen, erstellen Sie ein neues Cloud Manager-Geheimnis, z. B. `${{CDN_EDGEKEY_041425}}`.
 1. Verweisen Sie in der Konfiguration von `edgeKey2` darauf und stellen Sie es bereit.
 
@@ -280,7 +279,6 @@ Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge-Schlüssels er
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Löschen Sie die Referenz des alten Geheimnisses (`${{CDN_EDGEKEY_052824}}`) aus Cloud Manager aus und nehmen Sie die Bereitstellung vor.
 
 1. Wenn Sie für die nächste Rotation bereit sind, gehen Sie analog vor. Diesmal fügen Sie jedoch `edgeKey1` zu der Konfiguration hinzu, indem Sie auf ein neues Cloud Manager-Umgebungsgeheimnis verweisen, das beispielsweise den Namen `${{CDN_EDGEKEY_031426}}` hat.

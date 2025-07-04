@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1036'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -50,13 +50,13 @@ Führen Sie die folgenden Schritte aus, um den Zugriff beim Erstellen von Sammlu
 
    | Zugriffsmethode | Zugriffstyp | Beschreibung |
    |---|---|---|
-   | **Nur Sie und Administratoren können bearbeiten** | Privat | Nur der Ersteller und die Administratoren können diese Sammlung bearbeiten und darauf zugreifen. |
-   | **Jeder kann anzeigen** | Öffentlich | Jeder kann auf diese Sammlung zugreifen, aber nur die erstellende Person und die Admins können sie bearbeiten. |
-   | **Jeder kann anzeigen und bearbeiten** | Öffentlich | Diese Sammlung ist für alle zugänglich, mit uneingeschränktem Zugriff und Bearbeitungsrechten ohne Einschränkungen. |
+   | **Nur Sie und Admins können bearbeiten** | Privat | Nur die erstellende Person und die Admins können diese Sammlung bearbeiten und darauf zugreifen. |
+   | **Alle können anzeigen** | Öffentlich | Jeder kann auf diese Sammlung zugreifen, aber nur die erstellende Person und die Admins können sie bearbeiten. |
+   | **Alle können anzeigen und bearbeiten** | Öffentlich | Diese Sammlung ist für alle zugänglich, mit uneingeschränktem Zugriff und Bearbeitungsrechten ohne Einschränkungen. |
 
    >[!NOTE]
    >
-   > [!DNL Content Hub] Administrator kann alle Optionen anzeigen, die in der Dropdown-Liste **[!UICONTROL Zugriff möglich]** verfügbar sind. Für reguläre Benutzer müssen Sie dagegen [angeben und konfigurieren](configure-content-hub-ui-options.md) auf welche Optionen sie zugreifen können.
+   > Die oder der [!DNL Content Hub]-Admin kann alle Optionen anzeigen, die im Dropdown-Menü **[!UICONTROL Wer hat Zugriff]** verfügbar sind. Für reguläre Benutzende müssen Sie dagegen [angeben und konfigurieren](configure-content-hub-ui-options.md), auf welche Optionen sie zugreifen können.
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Anschließend können Sie [Assets zur Sammlung hinzufügen](#add-assets-to-existing-collection).
 
@@ -91,7 +91,7 @@ Mit Content Hub können Sie die Sammlungsansicht filtern, um genau das zu finden
 
 Um die Sammlungsansicht zu filtern, gehen Sie zur Registerkarte **[!DNL Collections]** und navigieren Sie zur Dropdown-Liste „Sammlungen“. Wählen Sie unter den folgenden Optionen:
 
-* **[!UICONTROL Alle Sammlungen]:** Wählen Sie diese Option aus, um alle Sammlungen anzuzeigen und zu bearbeiten, einschließlich der privaten oder freigegebenen Sammlungen.
+* **[!UICONTROL Alle Sammlungen]:** Wählen Sie diese Option aus, um alle Sammlungen anzuzeigen und zu bearbeiten, die privat und für Sie freigegeben sind.
 * **[!UICONTROL Nur ich]:** Wählen Sie diese Option aus, um Sammlungen anzuzeigen, auf die Sie zugreifen können.
 * **[!UICONTROL Alle können anzeigen]:** Mit dieser Option können Sie Sammlungen filtern, die für alle zugänglich sind, aber nur von der erstellenden Person bearbeitet werden können.
 * **[!UICONTROL Alle können bearbeiten]:** Wählen Sie diese Option, um Sammlungen zu filtern, die für alle zugänglich und bearbeitbar sind.
@@ -136,21 +136,21 @@ Erfahren Sie, wie Sie [ein Asset aus [!DNL Content Hub]](download-assets-content
 
 Sie können auch die in einer Sammlung verfügbaren Assets freigeben. Stellen Sie sicher, dass [die öffentliche Link-Freigabe in Content Hub aktiviert ist](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**. Wählen Sie auf der Sammlungskarte das Symbol ![Freigeben-Symbol](assets/share.svg) aus. Der Freigabe-Link wird kopiert. Sie können den Link an die Empfängerin oder den Empfänger weitergeben. Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
 
-Content Hub Collections bietet umfassende Governance-Tools für ein effektives Asset-Management, einschließlich anpassbarer Freigabeberechtigungen und Zusammenarbeitsfunktionen. Vom schreibgeschützten Zugriff bis hin zur vollständigen administrativen Kontrolle unterstützen diese Einstellungen eine ordnungsgemäße Governance über die Asset-Verteilung. Beim Freigeben eines Assets entweder einzeln oder als Teil einer Sammlung wird der Zugriffsbereich durch die aktuelle Zugriffsebene der Sammlung bestimmt, die dem Benutzer zugewiesen ist. Alternativ können Sie keine private Sammlung freigeben.
+Content Hub Collections bietet umfassende Governance-Tools für ein effektives Asset-Management, einschließlich anpassbarer Freigabeberechtigungen und Zusammenarbeitsfunktionen. Vom schreibgeschützten Zugriff bis hin zur vollständigen administrativen Kontrolle unterstützen diese Einstellungen eine ordnungsgemäße Governance über die Asset-Verteilung. Beim Freigeben eines Assets entweder einzeln oder als Teil einer Sammlung wird der Zugriffsbereich durch die aktuelle Zugriffsebene der Sammlung bestimmt, die der Benutzerin bzw. dem Benutzer zugewiesen ist. Alternativ können Sie keine private Sammlung freigeben.
 
 ## Bearbeiten der Details einer Sammlung {#edit-details-of-collection}
 
-Um den **[!UICONTROL Titel]** und die **[!UICONTROL Beschreibung]** einer Sammlung zu bearbeiten, klicken Sie auf den Sammlungsnamen und dann auf das Symbol ![Info-Symbol](assets/info-icon.svg). Der Bildschirm [!UICONTROL Details zur Sammlung] wird angezeigt. Dort können Sie den **[!UICONTROL Titel]** und die **[!UICONTROL Beschreibung]** einer Sammlung bearbeiten. Klicken Sie **[!UICONTROL Änderungen speichern]**, um die Änderungen zu bestätigen. Darüber hinaus können Sie den Zugriff auf die Sammlung je nach Konfiguration über das Dialogfeld „Sammlung bearbeiten“ aktualisieren.
+Um den **[!UICONTROL Titel]** und die **[!UICONTROL Beschreibung]** einer Sammlung zu bearbeiten, klicken Sie auf den Sammlungsnamen und dann auf das Symbol ![Info-Symbol](assets/info-icon.svg). Der Bildschirm [!UICONTROL Details zur Sammlung] wird angezeigt. Dort können Sie den **[!UICONTROL Titel]** und die **[!UICONTROL Beschreibung]** einer Sammlung bearbeiten. Klicken Sie auf **[!UICONTROL Änderungen speichern]**, um die Änderungen zu bestätigen. Darüber hinaus können Sie den Zugriff auf die Sammlung je nach Konfiguration über das Dialogfeld „Sammlung bearbeiten“ aktualisieren.
 
 ![Details zur Sammlung](assets/collection-details.png)
 
 ## Entfernen von Assets aus einer Sammlung{#remove-assets-from-a-collection}
 
-Die folgenden Benutzer können einzelne oder mehrere Assets aus einer Sammlung entfernen:
+Folgende Benutzende können ein Asset oder mehrere Assets aus einer Sammlung entfernen:
 
-* Ein Administrator
-* Inhaber der Sammlung
-* Benutzer ohne Administratorrechte mit Bearbeitungsrechten
+* Eine oder ein Admin
+* Inhaberin oder Inhaber der Sammlung
+* Benutzerin oder Benutzer ohne Administratorrechte mit Bearbeitungsrechten
 
 Um Assets aus einer Sammlung zu entfernen, klicken Sie auf die Sammlung, aus der Assets entfernt werden sollen, wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Aus Sammlung löschen]**.
 
@@ -161,7 +161,7 @@ Die ausgewählten Assets werden erfolgreich aus der Sammlung entfernt.
 
 ## Löschen von Sammlungen{#delete-collection}
 
-Nur Administratoren und Ersteller können eine Sammlung löschen. Um eine Sammlung zu löschen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und klicken Sie auf die Sammlung, die gelöscht werden soll. Klicken Sie auf ![delete icon](assets/delete-icon.svg), um die Sammlung zu löschen.
+Nur Admins und erstellende Personen können eine Sammlung löschen. Um eine Sammlung zu löschen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und klicken Sie auf die Sammlung, die gelöscht werden soll. Klicken Sie auf das Symbol ![Entfernen-Symbol](assets/delete-icon.svg), um die Sammlung zu löschen.
 
 
 
