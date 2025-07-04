@@ -6,7 +6,7 @@ exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ In der folgenden Tabelle sind die verfügbaren Content Hub-Benutzertypen, ihre B
 ## Schritt 1: Aktivieren von Content Hub für Experience Manager Assets mithilfe von Cloud Manager {#enable-content-hub}
 
 
-Für den Zugriff auf das Content Hub-Portal müssen Administratoren zunächst Content Hub für Experience Manager Assets as a Cloud Service mithilfe von Cloud Manager aktivieren.
+Um auf das Content Hub-Portal zugreifen zu können, müssen Admins zunächst Content Hub für Experience Manager Assets as a Cloud Service mithilfe von Cloud Manager aktivieren. 
 
 ### Berechtigungen {#permissions-edit-program}
 
-Sie müssen über die Rolle Geschäftsinhaber verfügen, um Programme in Cloud Manager zu bearbeiten. Weitere Informationen finden Sie unter [Programme bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+Sie müssen über die Rolle „Geschäftsinhaber“ verfügen, um Programme in Cloud Manager bearbeiten zu können. Weitere Informationen finden Sie unter [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 So aktivieren Sie Content Hub für Experience Manager Assets:
 

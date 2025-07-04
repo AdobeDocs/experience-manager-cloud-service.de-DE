@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 4fb2ca8123dfd5a0d3244b9d5966cd8bb7eeaf09
 workflow-type: tm+mt
 source-wordcount: '2089'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -271,13 +271,13 @@ Der benutzerdefinierte Link wird als neue Registerkarte neben der Registerkarte 
 
 Admins können beim Erstellen von Sammlungen Benutzerberechtigungen definieren. Gehen Sie wie folgt vor, um diese Einstellungen zu aktivieren:
 
-1. Klicken Sie in [ Benutzeroberfläche ](#access-configuration-options-content-hub)Konfigurationen“ auf **[!UICONTROL Sammlungen]**.
+1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Sammlungen]**.
 
-1. Aktivieren Sie den Umschalter **[!UICONTROL Öffentlichen Link aktivieren]**, um die Erstellung öffentlicher Links zu ermöglichen, über die externe Benutzer auf Assets zugreifen und diese herunterladen können, ohne sich bei der Content Hub anzumelden.
+1. Aktivieren Sie den Umschalter **[!UICONTROL Öffentlichen Link aktivieren]**, um die Erstellung öffentlicher Links zuzulassen, über die externe Benutzende auf Assets zugreifen und diese herunterladen können, ohne sich bei Content-Hub anzumelden.
 
-1. Aktivieren Sie den **[!UICONTROL Nur Sammlungen anzeigen]**-Umschalter, um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur vom Ersteller und Administrator bearbeitet werden können.
+1. Aktivieren Sie den Umschalter **[!UICONTROL Nur schreibgeschützte Sammlungen]**, um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur von der erstellenden Person und den Admins bearbeitet werden können.
 
-1. Aktivieren Sie den **[!UICONTROL Öffentliche Sammlungen]** , um Sammlungen zuzulassen, die für alle zugänglich und bearbeitbar sind. Wenn die **[!UICONTROL „Nur Sammlungen anzeigen]** und **[!UICONTROL Öffentliche Sammlungen]** deaktiviert sind, können Benutzende ohne Administratorrechte standardmäßig nur private Sammlungen erstellen.
+1. Aktivieren Sie den Umschalter **[!UICONTROL Öffentliche Sammlungen]**, um Sammlungen zuzulassen, die für alle zugänglich und bearbeitbar sind. Wenn die Umschalter **[!UICONTROL Nur schreibgeschützte Sammlungen]** und **[!UICONTROL Öffentliche Sammlungen]** deaktiviert sind, können Benutzende ohne Administratorrechte standardmäßig nur private Sammlungen erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu anzuwenden.
 

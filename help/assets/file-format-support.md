@@ -32,27 +32,27 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | ------------- | --------------------------- |
 | ✓ | Unterstützt |
 | * | Siehe Anmerkungen unterhalb der Tabelle |
-| - | Nicht zutreffend |
+| – | Nicht zutreffend |
 
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] unterstützt nur die in diesem Artikel aufgeführten Dateiformate.
->&#x200B;>Einige Funktionen scheinen möglicherweise mit anderen Formaten zu funktionieren, diese Formate werden jedoch nicht offiziell unterstützt. Die Ergebnisse können inkonsistent sein, und die Funktionen funktionieren möglicherweise nicht wie erwartet.
->&#x200B;>Verwenden Sie nur die unterstützten Formate, um konsistente und zuverlässige Ergebnisse zu gewährleisten.
+>>Einige Funktionen scheinen möglicherweise mit anderen Formaten zu funktionieren, diese Formate werden jedoch nicht offiziell unterstützt. Die Ergebnisse können inkonsistent sein, und die Funktionen funktionieren möglicherweise nicht wie erwartet.
+>>Verwenden Sie nur die unterstützten Formate, um konsistente und zuverlässige Ergebnisse zu gewährleisten.
 
 ## Adobe-Formate {#adobe-formats}
 
 | Dateiformat | Generierung von Miniaturen | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | – | ✓ | ✓ |
-| COLLAGE | - | – | ✓ | – |
+| COLLAGE | – | – | ✓ | – |
 | DN | ✓ | – | ✓ | ✓ |
 | SBSAR | ✓ | – | ✓ | ✓ |
-| IDEAS | - | – | ✓ | - |
+| IDEAS | – | – | ✓ | – |
 | INDD | ✓ | – | ✓ | ✓ * |
-| INDT | - | – | ✓ | - |
+| INDT | – | – | ✓ | – |
 | PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | – | ✓ | – |
+| PROTO | – | – | ✓ | – |
 | PSB | ✓ | – | ✓ | ✓ |
 | PSD | ✓ | – | ✓ | ✓ |
 | XD | ✓ | – | ✓ | ✓ |
@@ -63,15 +63,15 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe | Zuschneiden |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | - | ✓ | ✓ |
-| EPS | ✓ | ✓ | – | - |
+| BMP | ✓ | – | ✓ | ✓ |
+| EPS | ✓ | ✓ | – | – |
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
 | SGI™ | ✓ | ✓ | ✓ | ✓ |
-| SVG | ✓ | - | ✓ | ✓ |
+| SVG | ✓ | – | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | – |
 | WebP | ✓ | ✓ | ✓ | ✓ |
 
@@ -83,7 +83,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit 3D-Assets in Dynamic Media]
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniatur, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | – | ✓ | ✓ | – | - |
+| DN | ✓ | ✓ | ✓ | – | ✓ | ✓ | – | – |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | – | ✓ | – | ✓ | – |
 | OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -131,23 +131,23 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Dateiformat | Generierung von Miniaturen | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) | Vollständige Dokumentvorschau |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
-| DOC | - | – | – | ✓ | ✓ | ✓ |
+| DOC | – | – | – | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | – | ✓ | – | – | – | - |
+| EPUB | – | ✓ | – | – | – | – |
 | HTML | – | ✓ | – | ✓ | ✓ | – |
-| ODF | ✓ | ✓ | ✓ | – | – | - |
-| ODM | ✓ | ✓ | ✓ | – | – | - |
-| ODP | ✓ | ✓ | ✓ | – | – | - |
-| ODS | ✓ | ✓ | ✓ | – | – | - |
+| ODF | ✓ | ✓ | ✓ | – | – | – |
+| ODM | ✓ | ✓ | ✓ | – | – | – |
+| ODP | ✓ | ✓ | ✓ | – | – | – |
+| ODS | ✓ | ✓ | ✓ | – | – | – |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ | – |
-| OFG | ✓ | ✓ | ✓ | – | – | - |
+| OFG | ✓ | ✓ | ✓ | – | – | – |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | – | – | ✓ | ✓ | ✓ |
+| PPT | – | – | – | ✓ | ✓ | ✓ |
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PS | - | – | ✓ | – | – | - |
+| PS | – | – | ✓ | – | – | – |
 | RTF | – | ✓ | – | ✓ | ✓ | ✓ |
 | TXT | ✓ | ✓ | – | ✓ | ✓ | ✓ |
-| XLS | - | – | – | ✓ | ✓ | ✓ |
+| XLS | – | – | – | ✓ | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | – | ✓ | – | – | – | – |
 
@@ -164,12 +164,12 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | M2T | ✓ | – | ✓ | ✓ | – |
 | M2TS | ✓ | – | ✓ | ✓ | – |
 | M2V | ✓ | – | ✓ | ✓ | – |
-| M4V | ✓ | ✓ | ✓ | ✓ | - |
+| M4V | ✓ | ✓ | ✓ | ✓ | – |
 | MKV | ✓ | – | ✓ | ✓ | – |
 | MOV | ✓ | ✓ | ✓ | ✓ | – |
 | MP4 | ✓ | ✓ | ✓ | ✓ | ✓ |
 | MPEG | ✓ | ✓ | ✓ | ✓ | – |
-| MPG | ✓ | ✓ | ✓ | ✓ | - |
+| MPG | ✓ | ✓ | ✓ | ✓ | – |
 | MTS | ✓ | – | ✓ | ✓ | – |
 | MXF | ✓ | – | ✓ | ✓ | – |
 | OGV | ✓ | – | ✓ | ✓ | – |
@@ -177,7 +177,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | R3D | – | ✓ | ✓ | ✓ | – |
 | SWF | ✓ | – | ✓ | ✓ | – |
 | WebM | ✓ | – | ✓ | ✓ | ✓ |
-| WMV | ✓ | ✓ | ✓ | ✓ | - |
+| WMV | ✓ | ✓ | ✓ | ✓ | – |
 
 ## Audioformate {#audio-formats}
 
@@ -222,7 +222,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | – | – | – | - |
+| AI | ✓ | – | – | – | – |
 | INDD | ✓ | – | – | – | – |
 | PDF (siehe Hinweis unten) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
