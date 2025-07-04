@@ -160,7 +160,7 @@ Wenn Sie die Asset-Ordner zu einem späteren Zeitpunkt veröffentlichen möchten
 
 1. Wechseln Sie zur ![Listenansicht](assets/list-view.svg), um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![generierter Berichtsstatus](assets/report-status.JPG)
 
