@@ -148,7 +148,7 @@ Verwenden Sie einen der folgenden Ansätze, um eine größere Anzahl von Dateien
 
 Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich eine Video-Anleitung zur Konfiguration und Aufnahme an.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341385/?quality=12&learn=on&captions=ger)
 
 Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in Experience Manager aus einem Datenspeicher:
 
