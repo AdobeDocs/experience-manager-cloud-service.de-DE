@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Ser
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1338'
-ht-degree: 100%
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
+workflow-type: tm+mt
+source-wordcount: '1339'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Standardmäßig ist keine Benutzerin und kein Benutzer berechtigt, Inhaltswieder
 
 1. Erstellen Sie ein Produktprofil mit einem ausdrucksstarken Namen, der auf die Inhaltswiederherstellung verweist.
 1. Stellen Sie die **Programmzugriff**-Berechtigung für das erforderliche Programm bereit.
-1. Stellen Sie die **Inhaltswiederherstellungs**-Berechtigung je nach Anwendungsfall für die erforderliche Umgebung oder alle Umgebungen des Programms bereit.
+1. Geben Sie die **Umgebung wiederherstellen Erstellen** für die erforderliche Umgebung oder alle Umgebungen des Programms an, je nach Anwendungsfall.
 1. Weisen Sie dem Profil Benutzende zu.
 
 Weitere Informationen zum Verwalten von Berechtigungen finden Sie in der Dokumentation [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
