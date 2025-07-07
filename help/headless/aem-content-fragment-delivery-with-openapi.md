@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -76,11 +76,11 @@ Für die Vorschau ermöglicht die Bereitstellung von Inhaltsfragmenten mit OpenA
 
 Die auf der Dispatcher-Konfigurationsseite definierten zulässigen CORS-Ursprünge, speziell für GraphQL, werden von diesem API nicht berücksichtigt.
 
-## API-Ratenbeschränkungen {#api-rate-limits}
+## API-Ratenbegrenzung {#api-rate-limits}
 
-Die -API ermöglicht neue Anfragen mit einer Rate von bis zu 200 Anfragen pro Sekunde und Umgebung.
+Das API ermöglicht neue Anfragen mit einer Rate von bis zu 200 Anfragen pro Sekunde und Umgebung.
 
-Sobald dieses Limit überschritten wird, beginnt die API mit dem Senden von [429](https://www.rfc-editor.org/rfc/rfc6585#section-4)Fehlerantworten. Diese Fehler müssen von allen Client-Anwendungen verarbeitet werden, und fehlgeschlagene Anfragen müssen nach einem exponentiellen Backoff-Versuch erneut versucht werden. Die HTTP-Antwort enthält eine bestimmte Kopfzeile, `Retry-After`, die dem Client angibt, wie lange er warten muss, bevor er die Anfrage erneut sendet.
+Sobald diese Begrenzung überschritten wird, beginnt das API mit dem Senden von [429-Fehlerantworten](https://www.rfc-editor.org/rfc/rfc6585#section-4). Diese Fehler müssen von allen Client-Anwendungen verarbeitet werden, und fehlgeschlagene Anfragen müssen nach einem exponentiellen Backoff-Versuch erneut versucht werden. Die HTTP-Antwort enthält einen bestimmten Header, `Retry-After`, der dem Client angibt, wie lange er warten muss, bevor er die Anfrage erneut sendet.
 
 <!-- 
 ## Limitations {#limitations}

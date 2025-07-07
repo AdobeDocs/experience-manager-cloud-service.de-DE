@@ -13,7 +13,7 @@ exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
 index: false
 source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '178'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) bieten Autoren von Inhalten die Möglichkeit, zusätzliche Kategorie- und Produktseiten zu erstellen. Diese Seiten können mit zusätzlichen Marketing-Inhalten angereichert und so konfiguriert werden, dass sie auf bestimmte Kategorien und Produkte ausgerichtet sind. Das folgende Video erläutert die Einrichtung dieser Funktion.
 
->[!VIDEO](https://video.tv.adobe.com/v/32784/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 Bestimmte Produktseiten können entweder nach SKU oder nach Produktkategorie ausgewählt werden. Letzteres wird nur von einigen der verfügbaren standardmäßigen Produktseiten-URL-Formate unterstützt, da Kategorieinformationen in der Produkt-URL kodiert werden müssen.
 

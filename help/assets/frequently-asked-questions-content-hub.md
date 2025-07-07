@@ -3,7 +3,7 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1293'
 ht-degree: 100%
 

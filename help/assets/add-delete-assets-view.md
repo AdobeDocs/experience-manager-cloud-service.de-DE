@@ -5,7 +5,7 @@ role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -108,4 +108,4 @@ Benutzer können nicht mehr benötigte einzelne Assets oder Ordner löschen. Fü
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)

@@ -1,14 +1,14 @@
 ---
-title: CIF-Popover-Komponente [!DNL Live Search]
+title: '[!DNL Live Search]-Popover-CIF-Komponente'
 description: Verwenden von CIF-Komponenten zum Aktivieren von [!DNL Live Search] -Popover-Komponenten auf einer AEM-Site
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
 index: false
 source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

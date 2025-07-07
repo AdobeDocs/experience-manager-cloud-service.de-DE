@@ -13,7 +13,7 @@ exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
 index: false
 source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Die CIF-Kernkomponenten von Adobe Experience Manager (AEM) können auf mehreren 
 
 Videoeinführung mit detaillierten Optionen zur Integration mehrerer Adobe Commerce-Store-Ansichten mit Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32818/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 AEM-Funktionen zur Verwaltung mehrerer Websites von Live Copy und Sprachkopie werden mit dem Commerce Integration Framework verwendet, um global Sites über Regionen und Gebietsschemata hinweg zu verwalten.
 
