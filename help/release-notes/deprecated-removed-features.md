@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -453,9 +453,9 @@ Eigenschaften für die folgenden OSGi-Komponenten-PIDs sind veraltet, und ihre V
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | alle | 3.6.25 | 31.8.25 |
 | **`org.apache.http.proxyconfigurator`** | alle | 3.6.25 | 31.8.25 |
 
-### Unveränderliche OSGi-Konfigurationen {#unmodifiable-osgi-properties}
+### Nicht veränderbare OSGi-Konfigurationen {#unmodifiable-osgi-properties}
 
-Eigenschaften für die folgenden OSGi-Komponenten-PIDs können nicht geändert werden. Daher dürfen diese nicht konfiguriert werden.
+Eigenschaften für die folgenden OSGi-Komponenten-PIDs können nicht verändert werden. Daher dürfen diese nicht konfiguriert werden.
 
 | **OSGi-Komponenten-ID** | **Nicht veränderbare Eigenschaften** |
 |---|---|
@@ -475,7 +475,7 @@ Eigenschaften für die folgenden OSGi-Komponenten-PIDs können nicht geändert w
 
 ### Zukünftige erzwungene Einschränkungen für OSGi-Eigenschaften {#future-restrictions-osgi-properties}
 
-In Zukunft wird Adobe die folgenden OSGi-Eigenschaftsbeschränkungen durchsetzen. Für die genannten PIDs dürfen nur die aufgelisteten Eigenschaften konfiguriert werden.
+In Zukunft wird Adobe die folgenden Einschränkungen für OSGi-Eigenschaften durchsetzen. Für die genannten PIDs dürfen nur die aufgelisteten Eigenschaften konfiguriert werden.
 
 | PID von OSGi-Komponenten |   | Erforderlich | Typ | Einschränkung (falls anwendbar) |
 |---|---|---|---|---|
