@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1612'
-ht-degree: 100%
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 99%
 
 ---
 
@@ -31,6 +31,10 @@ Darüber hinaus können Sie mit dem Editor den vorhandenen Inhalt auf Ihrer Seit
 * [Verschieben von Komponenten](#moving-components)
 * [Bearbeiten des Komponenten-Layouts](#editing-component-layout)
 * [Bearbeiten der Komponentenvererbung](#inherited-components)
+
+>[!NOTE]
+>
+>Ihr Projekt-Team kann die Konsole bei Bedarf anpassen. Siehe [Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md) für weitere Details.
 
 ## Hinzufügen von Komponenten {#adding-components}
 
@@ -227,7 +231,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
    ![Komponente im Layout-Modus](assets/edit-content-layout-mode.png)
 
-1. Wenn Sie alle Änderungen wie gewünscht vorgenommen haben, tippen oder klicken Sie im Aktionsmenü der Komponente auf die Schaltfläche **Schließen**, um die Layout-Anpassung zu beenden. In der Komponenten-Symbolleiste stehen nun wieder die Standard-Bearbeitungsfunktionen zur Verfügung.
+1. Wenn Sie alle Änderungen wie gewünscht vorgenommen haben, tippen oder klicken Sie im Aktionsmenü der Komponente auf die Schaltfläche **Schließen**, um die Layout-Anpassung zu stoppen. In der Komponenten-Symbolleiste stehen nun wieder die Standard-Bearbeitungsfunktionen zur Verfügung.
 
    ![Komponenten-Symbolleiste einer Seitenkomponente](assets/edit-content-layout-close.png)
 
