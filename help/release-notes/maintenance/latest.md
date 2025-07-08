@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1780'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 ### Bekannte Probleme {#known-issues-21331}
 
 * SITES-33177: Als kommagetrennte Zeichenfolgen gespeicherte Abschnittsstile sind fehlerhaft.
-* SITES-33262: Bei Blöcken ohne Namen der Eigenschaft schlägt das Rendern und Veröffentlichen der Seite fehl.
+* SITES-33262: Bei Blöcken ohne Namenseigenschaft schlagen Rendering und Veröffentlichung der Seite fehl.
 
 ### Eingestellte Funktionen und APIs {#deprecated-21331}
 
