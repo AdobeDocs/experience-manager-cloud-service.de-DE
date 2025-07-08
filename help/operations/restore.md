@@ -5,9 +5,9 @@ exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
 source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1339'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Standardmäßig ist keine Benutzerin und kein Benutzer berechtigt, Inhaltswieder
 
 1. Erstellen Sie ein Produktprofil mit einem ausdrucksstarken Namen, der auf die Inhaltswiederherstellung verweist.
 1. Stellen Sie die **Programmzugriff**-Berechtigung für das erforderliche Programm bereit.
-1. Geben Sie die **Umgebung wiederherstellen Erstellen** für die erforderliche Umgebung oder alle Umgebungen des Programms an, je nach Anwendungsfall.
+1. Stellen Sie die Berechtigung **Umgebungswiederherstellung erstellen** je nach Anwendungsfall für die erforderliche Umgebung oder für alle Umgebungen des Programms bereit.
 1. Weisen Sie dem Profil Benutzende zu.
 
 Weitere Informationen zum Verwalten von Berechtigungen finden Sie in der Dokumentation [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
