@@ -46,6 +46,7 @@ Der [Forms-Übermittlungsdienst](/help/forms/forms-submission-service.md) ist ei
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Forms-Übermittlung](/help/forms/assets/eds-fss.png)
 
 Dieses Diagramm zeigt, wie der Forms Submission Service gesendete Daten an eine konfigurierte Tabelle oder E-Mail sendet.
@@ -144,6 +145,7 @@ Die Seite, auf der das Formular angezeigt werden soll (nennen wir sie „Host-Se
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![Eingebettete Formulararchitektur](/help/forms/assets/eds-embedded-form.png)
 Dieses Diagramm zeigt, wie die Host-Seite Formular-HTML aus dem Formular-Source abruft und anzeigt. Für die Übermittlung wird der konfigurierte Endpunkt des ursprünglichen Formulars verwendet.
 
