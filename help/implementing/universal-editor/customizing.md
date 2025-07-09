@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
-workflow-type: ht
-source-wordcount: '429'
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
+workflow-type: tm+mt
+source-wordcount: '409'
 ht-degree: 100%
 
 ---
@@ -108,8 +108,6 @@ Bedingungen können mithilfe des [JsonLogic-Schemas](https://jsonlogic.com/) def
 ## Benutzerdefinierte Vorschau-URLs {#custom-preview-urls}
 
 Sie können eine benutzerdefinierte Vorschau-URL über eine Meta-Konfiguration `urn:adobe:aue:config:preview` angeben, die beim Klicken auf die Schaltfläche **Seite öffnen** in der [oberen rechten Symbolleiste des Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) geöffnet wird.
-
-Dies ist besonders nützlich für Anwendungen mit bestimmten Vorschauanforderungen, z. B. bei der [Verwendung von Edge Delivery Services mit WYSIWYG-Authoring](/help/edge/wysiwyg-authoring/authoring.md).
 
 Fügen Sie dazu einfach die gewünschte Vorschau-URL wie im folgenden Beispiel in ein Meta-Tag der instrumentierten App ein.
 
