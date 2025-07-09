@@ -4,10 +4,12 @@ description: Erfahren Sie mehr über die verschiedenen Formularerstellungsplattf
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +21,7 @@ Adobe Experience Manager (AEM) bietet eine flexible Plattform zum Erstellen ansp
 
 AEM bietet mehrere Möglichkeiten zum Erstellen interaktiver und ansprechender Formulare. Beachten Sie bei der Auswahl einer Authoring-Umgebung für Formulare die folgenden Faktoren:
 
-| ?? **Überlegung** | ?? **Welche Fragen sollten gestellt werden** |
+| 📝 **Berücksichtigung** | 💡 **Was zu fragen** |
 |----------------------|--------------------|
 | **Benutzerkompetenz** | Wer erstellt die Formulare – Entwickelnde, Geschäftsbenutzende oder Inhaltsverfassende? |
 | **Formularkomplexität** | Benötigt das Formular erweiterte Regeln, dynamische Abschnitte oder Integrationen? |
@@ -81,25 +83,25 @@ Die folgende Tabelle bietet einen detaillierten Vergleich der wichtigsten Funkti
 | **CAPTCHA-Unterstützung** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Benutzerdefinierte Integration erforderlich |
 | **Übermittlungsfunktionen** | REST-Endpunkt, E-Mail, Formulardatenmodell (FDM), AEM-Workflow aufrufen, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST-Endpunkt, E-Mail, Formulardatenmodell (FDM), AEM-Workflow aufrufen, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST-Endpunkt, E-Mail, Formulardatenmodell (FDM), AEM-Workflow aufrufen, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Nur Kalkulationstabelle | Benutzerdefinierte API-Endpunkte |
 | **Datenschema** | FDM, benutzerdefiniert | FDM, benutzerdefiniert | FDM, benutzerdefiniert | Benutzerdefiniert | Benutzerdefiniert |
-| **Vorausfüllen** | ✅ | ✅ | ?? (über Assistenten) | ✅ | Benutzerdefinierte Implementierung |
+| **Vorausfüllen** | ✅ | ✅ | 💡 (über Assistenten) | ✅ | Benutzerdefinierte Implementierung |
 | **Fragmente** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Visueller Regeleditor** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Lokalisierung** | ✅ | ✅ | ?? (über Sites) | ℹ️ (Excel – manuell, Google Sheets-Funktion) | Benutzerdefinierte Implementierung |
-| **Datenschema (Datenstruktur)** | ✅ | ✅ | ?? (über UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
+| **Lokalisierung** | ✅ | ✅ | 💡 (über Sites) | ℹ️ (Excel – manuell, Google Sheets-Funktion) | Benutzerdefinierte Implementierung |
+| **Datenschema (Datenstruktur)** | ✅ | ✅ | 💡 (über die UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
 | **Vorlagenunterstützung** | ✅ | ✅ | Nur anfänglicher Inhalt, keine Richtlinie | ❌ | Benutzerdefinierte Implementierung |
 | **Portal** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **DoR-Authoring** | ✅ | ✅ | ?? (über Derlina) | ❌ | ❌ |
-| **DoR-Generierung** | ✅ | ✅ | ?? (FORMS-2475 Neu) | ❌ | ❌ |
+| **DoR-Authoring** | ✅ | ✅ | 💡 (via Derlina) | ❌ | ❌ |
+| **DoR-Generierung** | ✅ | ✅ | 💡 (FORMS-2475 NEU) | ❌ | ❌ |
 | **Desing** | ✅ | ✅ | ℹ️ (auf Projektebene) | ℹ️ (auf Projektebene) | Benutzerdefinierte Implementierung |
 | **Benutzerdefinierte Komponente** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB und benutzerdefinierte Funktionen** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Fragmentreferenz** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Sign-Integration** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **RTL-Unterstützung** | ❌ | ✅ | ?? | ?? | Benutzerdefinierte Implementierung |
+| **RTL-Unterstützung** | ❌ | ✅ | 💡 | 💡 | Benutzerdefinierte Implementierung |
 | **Experimente** | ❌ | ❌ | ✅ | ✅ | Benutzerdefinierte Implementierung |
 | **Aufgabenverwaltung über Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **Personalisierungserweiterung** | ❌ | ❌ | ?? | ❌ | Benutzerdefinierte Implementierung |
-| **Editoranpassung** | ❌ | ❌ | ✅ (über UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
+| **Personalisierungserweiterung** | ❌ | ❌ | 💡 | ❌ | Benutzerdefinierte Implementierung |
+| **Editoranpassung** | ❌ | ❌ | ✅ (über die UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
 | **Übermitteln-Aktion** | ✅ | ✅ | ✅ | Nur Kalkulationstabelle | Benutzerdefinierte Implementierung |
 
 
