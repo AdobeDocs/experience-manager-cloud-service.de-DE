@@ -3,13 +3,13 @@ title: Konfigurieren von Übermittlungsaktionen für AEM Forms mit Edge Delivery
 description: Erfahren Sie, wie Sie mithilfe von Edge Delivery Services Übermittlungsaktionen in AEM Forms konfigurieren. Wählen Sie zwischen Forms Submission Service und AEM Publish Submit Action , um Formulardaten sicher und effizient zu verarbeiten.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurieren von Formularübermittlungen: Wohin gehen Ihre Daten?
 
@@ -46,7 +46,6 @@ Der [Forms-Übermittlungsdienst](/help/forms/forms-submission-service.md) ist ei
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Forms-Übermittlung](/help/forms/assets/eds-fss.png)
 
 Dieses Diagramm zeigt, wie der Forms Submission Service gesendete Daten an eine konfigurierte Tabelle oder E-Mail sendet.
@@ -145,7 +144,6 @@ Die Seite, auf der das Formular angezeigt werden soll (nennen wir sie „Host-Se
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Eingebettete Formulararchitektur](/help/forms/assets/eds-embedded-form.png)
 Dieses Diagramm zeigt, wie die Host-Seite Formular-HTML aus dem Formular-Source abruft und anzeigt. Für die Übermittlung wird der konfigurierte Endpunkt des ursprünglichen Formulars verwendet.
 

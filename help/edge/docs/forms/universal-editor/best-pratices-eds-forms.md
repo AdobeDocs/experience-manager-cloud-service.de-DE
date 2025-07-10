@@ -3,7 +3,8 @@ title: Best Practices für die Entwicklung von Forms mit hoher Leistung
 description: Erfahren Sie mehr über die wichtigsten Best Practices für die Erstellung benutzerfreundlicher, barrierefreier und leistungsstarker Formulare mit AEM Forms. Verbessern Sie die Datenqualität, das Benutzererlebnis und die Erfolgsraten bei der Übermittlung.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -64,4 +65,4 @@ Dieses Handbuch bietet einen Überblick über die Verwendung von Formularen mit 
 * [Dokumentenbasiertes Authoring mit Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 * [Universeller Editor mit Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [Dokumenterstellung (Document Authoring, DA) und Einbetten von Inhalten](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [AEM Forms-Sendedienst](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
