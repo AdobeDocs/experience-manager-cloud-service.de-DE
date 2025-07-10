@@ -49,15 +49,15 @@ Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste Kunden-Quell-Code nicht wie erwartet funktioniert. Es ist nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie den Kunden-Quell-Code über die Karte Umgebungen ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)Karte *Umgebungen oben mit der Option **Wiederherstellen**>**Vorheriger Code bereitgestellt**für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie den Kunden-Quell-Code über die Karte Umgebungen ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)Karte *Umgebungen oben mit der Option **Wiederherstellen**>**Vorheriger Code bereitgestellt**&#x200B;für eine ausgewählte Umgebung wieder her.*
 
 
 ![Dialogfeld „Zugewiesenen Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Vorherigen Code bereitgestellt wiederherstellen**die aktuell bereitgestellte Version und die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Vorherigen Code bereitgestellt wiederherstellen**&#x200B;die aktuell bereitgestellte Version und die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager setzt die Umgebung wieder auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung **Wiederherstellen**bis die Bereitstellung abgeschlossen ist.*
+*Cloud Manager setzt die Umgebung wieder auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung **Wiederherstellen**&#x200B;bis die Bereitstellung abgeschlossen ist.*
 
 
 ![Verwendete Source](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png)Code-Version *(Die Ansicht „Umgebungsdetails“, wie oben gezeigt, zeigt jetzt auch die verwendete aktive Quell-Code-Version.*
