@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: ht
-source-wordcount: '2430'
-ht-degree: 100%
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+workflow-type: tm+mt
+source-wordcount: '2474'
+ht-degree: 95%
 
 ---
 
@@ -130,22 +130,25 @@ Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können 
 
 Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) für das Programm bereitstellen möchten, wird empfohlen, diese Bereitstellung vor dem Hinzufügen zusätzlicher Veröffentlichungsregionen zu den Umgebungen durchzuführen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
 
-## Zugreifen auf Umgebungsdetails {#viewing-environment}
+## Anzeigen von Details einer Umgebung {#viewing-environment}
 
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Führen Sie einen der folgenden Schritte aus, um auf Umgebungsdetails zuzugreifen:
+1. Klicken Sie in **[Konsole](/help/implementing/cloud-manager/navigation.md#my-programs)** Meine Programme“ auf das Programm, für das Sie Details zu einer Umgebung anzeigen möchten.
 
-   * Klicken Sie auf der Seite **Überblick** im linken Menü auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
+1. Führen Sie eine der folgenden Aktionen aus, um alle Umgebungen für das Programm aufzulisten:
 
-   ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
+   * Klicken Sie im linken Menü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
 
-   * Klicken Sie auf der Karte **Umgebungen** auf ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Alle anzeigen**.
+   ![Registerkarte „Umgebungen“](assets/environments-1.png)
 
-     ![Option „Alle anzeigen“](assets/environment-showall.png)
+   * Klicken Sie im linken Menü unter **Programm** auf **Übersicht** und dann auf der Karte **Umgebungen** auf ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Alle anzeigen**.
 
-   Die Seite **Umgebungen** wird geöffnet. Darin sind alle Umgebungen für das Programm aufgelistet.
+     ![Option „Alle anzeigen“](assets/environments-2.png)
 
-   ![Registerkarte „Umgebungen“](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie **der Karte** Alle anzeigen“, um *alle* Umgebungen des Programms anzuzeigen.
 
 1. Führen Sie auf der Seite „Umgebungen“ eine der folgenden Schritte aus:
 
@@ -157,9 +160,11 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
    ![Anzeigen von Umgebungsdetails](assets/view-environment-details.png)
 
->[!NOTE]
->
->Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf der Karte auf **Alle anzeigen**, um alle Umgebungen des Programms anzuzeigen.
+
+## Wiederherstellen des Inhalts einer Umgebung (Alpha) {#restore-environment}
+
+Siehe [Inhaltswiederherstellung in AEM as a Cloud Service](/help/operations/restore.md).
+
 
 ### Zugriff auf den Vorschau-Service {#access-preview-service}
 

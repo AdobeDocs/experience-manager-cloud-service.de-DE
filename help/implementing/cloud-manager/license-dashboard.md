@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 96%
 
 ---
 
@@ -77,6 +77,8 @@ Das Fenster **Details zur Site-Nutzung** enthält Diagramme, die einen Überblic
 Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Aufschlüsselung des Vertrags für das im Dropdown-Menü **Vertragsjahr anzeigen** ausgewählte Vertragsjahr.
 
 Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Wenn Sie den Mauszeiger darüber bewegen, wird ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt angezeigt.
+
+In der rechten oberen Ecke der Dashboard-Seite können Sie auf **Bericht herunterladen** klicken, um die Daten als CSV-Datei zu exportieren. Dieser Download vereinfacht die Analyse und Freigabe von Nutzungstrends.
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}

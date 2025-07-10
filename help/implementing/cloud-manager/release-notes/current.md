@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Cloud Manager 2025.7.0 in Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 26fbc60b1348e8c5f42adc8fd0e596b639fe9b44
+source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 66%
+source-wordcount: '1198'
+ht-degree: 60%
 
 ---
 
@@ -37,34 +37,50 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 7. August 2025
 
   ![Seite mit Nutzungsdetails für Sites](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+  Siehe [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+
 ## Early-Adopter-Programme {#private-beta-program}
 
 Nehmen Sie an den Alpha- und Beta-Programmen von Cloud Manager teil, um exklusiven frühzeitigen Zugriff auf kommende Funktionen vor deren allgemeiner Veröffentlichung zu erhalten.
 
 Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
-
 ### Rollback mit einem Klick für Pipeline-Bereitstellungen {#one-click-rollback}
 
-Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste Code nicht wie erwartet funktioniert. Sie müssen nicht die vollständige Pipeline erneut ausführen oder Commits manuell zurücksetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste Kunden-Quell-Code nicht wie erwartet funktioniert. Es ist nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+![Stellen Sie den Kunden-Quell-Code über die Karte Umgebungen ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)Karte *Umgebungen oben mit der Option **Wiederherstellen**>**Vorheriger Code bereitgestellt**für eine ausgewählte Umgebung wieder her.*
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+![Dialogfeld „Zugewiesenen Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+*Überprüfen Sie im Dialogfeld **Vorherigen Code bereitgestellt wiederherstellen**die aktuell bereitgestellte Version und die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+
+
+![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager setzt die Umgebung wieder auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung **Wiederherstellen**bis die Bereitstellung abgeschlossen ist.*
+
+
+![Verwendete Source](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png)Code-Version *(Die Ansicht „Umgebungsdetails“, wie oben gezeigt, zeigt jetzt auch die verwendete aktive Quell-Code-Version.*
+
+Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[ an ](mailto:restorecode@adobe.com)restorecode@adobe.com.
+
+Siehe auch [Inhaltswiederherstellung in AEM as a Cloud Service](/help/operations/restore.md).
+
+
+### Spezialisierte Testumgebung {#specialized-test-environment}
+
+Cloud Manager unterstützt jetzt das Hinzufügen eines neuen Umgebungstyps namens **Spezialisierte Testumgebung**. Diese Umgebung soll Teams dabei helfen, Funktionen vor der Live-Schaltung unter produktionsnahen Bedingungen zu validieren. Dieser Umgebungstyp unterscheidet sich von *Produktion + Staging*, *Entwicklung* oder *Schnelle Entwicklung* und bietet einen fokussierten Raum für die Ausführung erweiterter Validierungsszenarien.
+
+Neueste Verbesserung: Sie können jetzt spezialisierte Testumgebungen für eine produktionsfremde Pipeline durch einen einfacheren, intuitiveren Workflow konfigurieren. Die optimierte Einrichtung beschleunigt den Abschluss und reduziert Konfigurationsfehler.
+
+Siehe [Hinzufügen einer spezialisierten Testumgebung](/help/implementing/cloud-manager/specialized-test-environment.md).
+
+![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezialisierte Testumgebung“](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com).
+
+
+### Bringen Sie Ihren eigenen Git mit (BYOG) – jetzt mit Unterstützung für Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
