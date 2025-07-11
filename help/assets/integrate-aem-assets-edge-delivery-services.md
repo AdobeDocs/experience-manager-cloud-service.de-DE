@@ -3,9 +3,9 @@ title: Integrieren  [!DNL AEM Assets]  Erstellen von Inhalten für [!DNL Edge De
 description: Erfahren Sie, wie Sie  [!DNL AEM Assets] mit [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] mit [!DNL Microsoft Word] und [!DNL Google Docs], integrate [!DNL AEM Assets] mit [!DNL Universal Editor], integrate [!DNL Dynamic Media] mit [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] mit [!DNL Universal Editor]  und  [!DNL Dynamic Media with OpenAPI capabilities] mit [!DNL Microsoft Word] und [!DNL Google Docs] integrieren.
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ Sie können auch Assets verwenden, die mithilfe von [!DNL Dynamic Media with Ope
 * Governance (Verweise vs. Kopien des Assets), die bei der automatischen Weiterleitung von Asset-Lebenszyklus-Ereignissen wie Ablauf, Löschung und Aktualisierungen hilft.
 * Dynamische Bildausgabedarstellungen und smartes Zuschneiden.
 * Optimierung und Bereitstellung von Rich-Media, z. B. standardmäßig adaptives Video-Streaming und Bereitstellung von Original-Assets für PDFs.
-* Impressionsbericht auf Asset-Ebene ([begrenzte Verfügbarkeit](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+<!--
+
+* Asset-level impressions report ([limited availability](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+
+-->
 
 Weitere Informationen zu den Funktionen finden Sie in [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) Dokumentation.
 
@@ -86,4 +90,4 @@ Siehe [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-
 Einrichten der [!DNL Universal Editor] für die Integration mit [!DNL AEM Assets]. Durch diese Integration können Sie [!DNL Dynamic Media with OpenAPI capabilities] verwenden, um Assets bereitzustellen.
 
 * Unter [Konfiguration in [!DNL Edge Delivery] Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) erfahren Sie, wie Sie eine benutzerdefinierte Asset-Auswahlfunktion in [!DNL Universal Editor] hinzufügen. Mit der benutzerdefinierten Asset-Auswahl können Sie Assets direkt in Ihre [!DNL Universal Editor] einfügen.
-* Unter [Übersicht über Erweiterungen](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) erfahren Sie, wie Sie beim Authoring in [!DNL Universal Editor] auf [!DNL AEM Assets] zugreifen und die Assets einfügen können.
+* Unter [Übersicht über Erweiterungen](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) erfahren Sie, wie Sie beim Authoring in [!DNL AEM Assets] auf [!DNL Universal Editor] zugreifen und die Assets einfügen können.
