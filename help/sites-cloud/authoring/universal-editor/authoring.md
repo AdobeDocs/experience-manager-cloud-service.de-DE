@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
-workflow-type: ht
-source-wordcount: '2222'
-ht-degree: 100%
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+workflow-type: tm+mt
+source-wordcount: '2252'
+ht-degree: 98%
 
 ---
 
@@ -129,6 +129,8 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 1. Wählen Sie dann das Symbol „Hinzufügen“ im Bedienfeld „Eigenschaften“ aus.
 
    ![Auswählen des Symbols „Hinzufügen“](assets/add-icon.png)
+
+1. Wenn mehr als eine Komponente für den Container zulässig ist, wählen Sie aus der Dropdown-Liste die Komponente aus, die Sie einfügen möchten. Wenn nur eine Komponente zulässig ist, wird sie automatisch eingefügt.
 
 Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet werden.
 

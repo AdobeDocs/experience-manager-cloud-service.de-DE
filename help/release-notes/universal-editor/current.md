@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.06.19
-description: Dies sind die Versionshinweise für die Version 2025.06.19 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.07.09
+description: Dies sind die Versionshinweise für die Version 2025.07.09 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5ffae9e548ca952975b3ea805808e227102ec99f
-workflow-type: ht
-source-wordcount: '297'
-ht-degree: 100%
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 25%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.06.19 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.07.09 {#release-notes}
 
-Dies sind die Versionshinweise für die Version des universellen Editors vom 19. Juni 2025.
+Dies sind die Versionshinweise für die Version vom 9. Juli 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -22,29 +22,35 @@ Dies sind die Versionshinweise für die Version des universellen Editors vom 19.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Unterstützung mehrerer Felder in der Eigenschaftenleiste**:
-  [Die Container-Komponente](/help/implementing/universal-editor/field-types.md#container) kann jetzt zum Erstellen von Eigenschaften für mehrere Felder verwendet werden.
-* **Unterstützung verschachtelter Eigenschaften**: Das [`name`-Feld](/help/implementing/universal-editor/field-types.md#nesting) unterstützt jetzt Pfade zum Aktivieren der Verschachtelung von Eigenschaften.
-* **Größenänderung des rechten Panels**: Die Größe des seitlichen Panels kann jetzt geändert werden, um die im seitlichen Panel angezeigten längeren Inhalte besser darzustellen.
+* [Wenn auf die Schaltfläche **Hinzufügen** in Containern geklickt wird, ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) nur ein Komponententyp zulässig ist, wird er sofort eingefügt, ohne dass eine Auswahl aus dem Dropdown-Menü erforderlich ist.
+* [Die Option „Authentifizierungs-Kopfzeilen](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) wurde hinter einem Feature-Umschalter platziert, da sie in den meisten Fällen nicht nützlich ist.
+* [Da die Container-Verschachtelung für mehrere Felder im Eigenschaftenbereich nicht zulässig ist, filtert ](/help/implementing/universal-editor/field-types.md#fields) Rendering-Routine jetzt verschachtelte Container aus der Feldliste heraus, um eine ungültige Verschachtelung zu verhindern.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
-Um einige bevorstehende Funktionen testen zu können, müssen Sie Teil des Early-Adopter-Programms von Adobe sein.
+Wenn Sie diese kommenden Funktionen testen und Ihr Feedback geben möchten, senden Sie eine E-Mail an Ihren Adobe Customer Success Manager über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse.
 
-### **Rückgängig/Wiederherstellen** {#undo-redo}
+### Neuer RTE {#new-rte}
+
+Der neue ProseMirror RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten Panel verfügbar.
+
+### Rückgängig/Wiederholen {#undo-redo}
 
 Die Funktionen „Rückgängig“ und „Wiederherstellen“ sind jetzt für Autorinnen und Autoren von Inhalten im universellen Editor verfügbar.
 
 * Sie können auf kontextbezogene Bearbeitungen, Bearbeitungen über das Panel „Eigenschaften“ sowie beim Hinzufügen (oder Duplizieren), Verschieben und Löschen von Blöcken angewendet werden.
 * Die Funktionen „Rückgängig“ und „Wiederherstellen“ sind auf die aktuelle Browser-Sitzung beschränkt.
 
-Wenn Sie diese neue Funktion testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an Ihren Adobe-Kontakt für Customer Success.
-
 ## Andere Verbesserungen {#other-improvements}
 
-* Fehler aufgrund von Konflikten bei Ressourcenschlüsseln beim Verschieben von Blöcken zwischen Containern wurden behoben.
-* Es wurde ein Problem behoben, durch das das Duplizieren des letzten Blocks eines Containers fehlschlug.
-* In der Dropdown-Liste „Aktion hinzufügen“ werden jetzt nur noch Komponenten aufgeführt, für die in der Datei `component-definition.json` ein geeignetes Plug-in definiert ist.
-* Das Problem mit dem vom Dialogfeld „Veröffentlichen“ verwendeten Änderungsdatum wurde behoben, durch das Seiten unter bestimmten Umständen nicht als geändert erkannt und nicht erneut veröffentlicht wurden.
-* Das Problem des MSM-Vererbungsverhaltens wurde behoben, bei dem durch Bearbeiten eines Containers die Vererbung für untergeordnete Knoten abgebrochen wurde.
-* Das Problem mit `fetchUrl` wurde behoben, wodurch Blöcke wieder von einem Container in einen anderen bewegt werden können.
+* Es wurde ein Problem behoben, bei dem das Entfernen einzelner Asset-Verweise bei der Bearbeitung über die Eigenschaftenleiste nicht möglich war.
+* Es wurde ein Problem behoben, bei dem das Bedienfeld Eigenschaften unbegrenzt geladen wurde, da Asset-Verweise automatisch in Arrays konvertiert wurden, was zu einem unendlichen Ladestatus führte.
+   * Asset-Referenzwerte werden jetzt unverändert gespeichert, ohne dass sie automatisch in Arrays konvertiert werden.
+* Es wurde ein Problem behoben, bei dem im Bedienfeld Eigenschaften beim Definieren eines Modells keine Felder angezeigt wurden, die jedoch keinen Inhalt enthielten.
+   * Dies führte zu einem unendlichen Ladestatus für den Bereich „Eigenschaften“ für leere Detailantworten, wie leere Inhaltsfragmente.
+* Die ESLint-Konfiguration wurde aus Gründen der Kompatibilität mit Version 9 überarbeitet, einschließlich aktualisierter Regeln und Plug-in-Unterstützung.
+
+## Veraltete Funktionen {#deprecations}
+
+* Die `text-input` Komponente ist jetzt offiziell veraltet.
+   * Verwenden Sie in `model-definition.json` die Textkomponente , um Texteingaben für das Bedienfeld Eigenschaften zu erstellen.

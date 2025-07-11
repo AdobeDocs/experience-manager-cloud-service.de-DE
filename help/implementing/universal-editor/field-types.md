@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
-workflow-type: ht
-source-wordcount: '1542'
-ht-degree: 100%
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+workflow-type: tm+mt
+source-wordcount: '1568'
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | `readOnly` | `boolean` | Ist das Feld schreibgeschützt? | Nein |
 | `hidden` | `boolean` | Ist das Feld standardmäßig ausgeblendet? | Nein |
 | `condition` | `RulesLogic` | Regel zum Anzeigen oder Ausblenden des Felds basierend auf einer [Bedingung](/help/implementing/universal-editor/customizing.md#conditionally-hide). | Nein |
-| `multi` | `boolean` | Ist das Feld ein Mehrfachfeld? | Nein |
+| `multi` | `boolean` | Ist das Feld ein Mehrfachfeld<br/> Beachten Sie, dass eine Container-Verschachtelung für Mehrfachfelder im Eigenschaftenbereich nicht zulässig ist | Nein |
 | `validation` | `ValidationType` | Validierungsregeln oder Regeln für das Feld | Nein |
 | `raw` | `unknown` | Rohdaten, die von der Komponente verwendet werden können. | Nein |
 
@@ -289,7 +289,7 @@ Ein boolescher Komponententyp speichert einen einfachen true/false-Wert, der als
 
 #### Container {#container}
 
-Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten, einschließlich Mehrfachfeld-Unterstützung. Er bietet eine zusätzliche Konfiguration.
+Ein Container-Komponententyp ermöglicht die Gruppierung von Komponenten, einschließlich Mehrfachfeld-Unterstützung. Es bietet eine zusätzliche Konfiguration. Beachten Sie, dass eine Container-Verschachtelung für Mehrfachfelder im Eigenschaftenbereich nicht zulässig ist
 
 | Konfiguration | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Datenattribute und Elementtypen, die de
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
-workflow-type: ht
-source-wordcount: '557'
-ht-degree: 100%
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 94%
 
 ---
 
@@ -52,6 +52,6 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 * Er ist nicht direkt auf dem Tag erforderlich, wo der `data-aue-type` festgelegt ist.
 * Ist er nicht festgelegt, wird das Attribut `data-aue-resource` des nächsten übergeordneten Elements verwendet.
 
-`data-aue-prop` ist immer dann erforderlich, wenn Sie eine Bearbeitung im Kontext vornehmen möchten, außer bei einem Container, bei dem dies optional ist (falls festgelegt, ist der Container ein Inhaltsfragment und die Eigenschaft verweist auf ein Feld mit mehreren Verweisen).
+`data-aue-prop` ist erforderlich, wenn Sie im Kontext bearbeiten möchten, mit Ausnahme eines Containers, bei dem es optional ist (wenn der Container ein Inhaltsfragment ist und die Eigenschaft auf ein Feld mit mehreren Verweisen verweist).
 
 * Die `data-aue-prop` ist das Attribut, das für den Primärschlüssel von `data-aue-resource` aktualisiert werden soll.
