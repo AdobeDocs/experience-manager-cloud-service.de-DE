@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 87%
 
 ---
 
@@ -97,3 +97,42 @@ Adobe bietet Unterstützung bei der Migration von Brand Portal nach Content Hub.
 ## Warum kann ich die Option „Produkteinstellungen/Konfiguration“ in Content Hub nicht sehen? {#ui-configuration-option-missing}
 
 Um auf die [Konfigurationsoberfläche](/help/assets/configure-content-hub-ui-options.md) zugreifen zu können, müssen Sie [Content Hub-Admin](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator) sein. Wenn Sie dem Produktprofil für AEM-Admins in der Produktions-Autoreninstanz in der Adobe Admin Console zugewiesen sind und die Konfigurationsoption trotzdem nicht angezeigt wird, stellen Sie sicher, dass das Produktprofil für AEM-Admins nicht umbenannt wurde. Weitere Informationen finden Sie unter [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
+
+## Wie geht Content Hub mit den Einschränkungen von Brand Portal um? {#content-hub-brand-portal-comparison}
+
+
+In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden Lösungen aufgeführt:
+
+| Flächendiagramm | Funktion | Content Hub | Brand Portal |
+|---|---|----|----|
+| Konfigurieren des Verteilungserlebnisses | Konfigurieren von Metadaten für Filter, Asset-Details und Hinzufügen von Assets | ✓ | − |
+|  | Konfigurieren von externen Links über das Portal | ✓ | − |
+|  | Konfigurieren von Bannernachrichten | ✓ | ✓ |
+|  | Bannerbild für Branding konfigurieren | ✓ | ✓ |
+|  | Konfigurieren von primären und sekundären Farben für die Benutzeroberfläche gemäß den Branding-Anforderungen | ✓ | − |
+| Freigeben von Assets aus dem DAM | Freigeben von ursprünglich genehmigten Assets aus DAM | ✓ | ✓ |
+|  | Genehmigte Asset-Änderungen werden automatisch synchronisiert | ✓ | − |
+| Suche und Filter | Dynamische Filter (Optionen werden basierend auf angezeigten Assets dynamisch angezeigt) | ✓ | − |
+|  | Suchverlauf | ✓ | − |
+| Asset-Upload | Lokales Laufwerk | ✓ | ✓ |
+|  | Hinzufügen konfigurierbarer Metadaten beim Hochladen von Assets | ✓ | − |
+| Herunterladen und Ausgabedarstellungen | Original-Asset herunterladen | ✓ | ✓ |
+|  | Freigeben und Herunterladen statischer Ausgabedarstellungen von DAM | ✓ | ✓ |
+|  | Herunterladen dynamischer Ausgabedarstellungen (Voreinstellung und smartes Zuschneiden) | ✓ | ✓ |
+|  | Möglichkeit, die Anzeige und den Download abgelaufener Assets einzuschränken | ✓ | − |
+| Link-Freigabe und Sammlungen | Linkfreigabe für angemeldete Benutzer | ✓ | ✓ |
+|  | Öffentliche Sammlungen | ✓ | ✓ |
+|  | Suchen in Sammlungen | ✓ | − |
+|  | Anonyme Linkfreigabe | ✓ | ✓ |
+|  | Private Sammlungen | ✓ | ✓ |
+| Berechtigungen | ACL-basierte Berechtigungen | − | ✓ |
+|  | Attributbasierte Zugriffssteuerung – Übersicht | ✓ | − |
+| Express-Integration | Content Hub Assets in Adobe Express bearbeiten und im DAM speichern | ✓ | − |
+| Dashboards und Berichte | Insights-Dashboard | ✓ | − |
+| Erweiterbarkeit der Benutzeroberfläche | Benutzerdefinierte Erweiterungspunkte auf der Seite „Asset-Details“ | Eingeschränkte Verfügbarkeit | − |
+| Innovationen in Kürze verfügbar | Favoriten für Sammlungen nach Benutzer | ✓ | − |
+|  | Angeheftete Sammlungen von Admin | ✓ | − |
+|  | Semantische Suche | ✓ | − |
+|  | Lokalisierte Suche und Anzeige von Metadaten | ✓ | − |
+
+

@@ -3,9 +3,9 @@ title: Hochladen Ihrer markenkonformen Assets in [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markenkonformen Assets in Content Hub hochladen
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '940'
+source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
+workflow-type: tm+mt
+source-wordcount: '761'
 ht-degree: 100%
 
 ---
@@ -61,21 +61,6 @@ Um Assets zu Content Hub hinzuzufügen, führen Sie die folgenden Schritte aus:
 1. Klicken Sie auf **[!UICONTROL Hochladen]**, um Assets in Content Hub hochzuladen. Das Bestätigungsfeld [!UICONTROL Details überprüfen] wird angezeigt. Klicken Sie auf [!UICONTROL Weiter].
 
 1. Der Asset-Upload wird gestartet. Klicken Sie auf [!UICONTROL Neuer Upload], um den Upload neu zu starten. Klicken Sie auf [!UICONTROL Fertig], um den Upload abzuschließen.
-
-Admins können auch die obligatorischen und optionalen Felder konfigurieren, die beim Hochladen von Assets Hub angezeigt werden, z. B. Kampagnenname, Keywords oder Kanäle. Weitere Informationen finden Sie unter [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
-
-
-## Hinzufügen von Assets zu Content Hub aus OneDrive- oder Dropbox-Datenquellen {#add-assets-onedrive-dropbox}
-
-So fügen Sie Assets aus OneDrive- oder Dropbox-Datenquellen zu Content Hub hinzu:
-
-1. Klicken Sie auf **[!UICONTROL Assets hinzufügen]**, um das Dialogfeld **[!UICONTROL Genehmigte Assets hinzufügen]** anzuzeigen, mit dem Sie Assets aus OneDrive oder Dropbox importieren können.
-
-1. Klicken Sie auf **[!UICONTROL OneDrive]** oder **[!UICONTROL Dropbox]**, um den Import zu starten. Content Hub fordert Sie auf, sich bei Ihrem OneDrive- oder Dropbox-Konto anzumelden und zeigt dann Ihre OneDrive- bzw. Dropbox-Ordnerstruktur im linken Bereich an.
-
-1. Klicken Sie auf das Symbol „+“ neben dem Datei- oder Ordnernamen, um das Element in der Liste der ausgewählten Elemente anzuzeigen. Nachdem Sie alle Dateien ausgewählt haben, die Sie zum Content Hub-Portal hinzufügen möchten, wiederholen Sie die Schritte 3 bis 6 von [Hinzufügen von Assets aus dem lokalen Dateisystem zu Content Hub](#add-assets-local-file-system), um das Hochladen abzuschließen.
-
-   ![Hochladen von Assets von OneDrive oder Dropbox in Content Hub](assets/add-assets-onedrive-dropbox.png)
 
 Admins können auch die obligatorischen und optionalen Felder konfigurieren, die beim Hochladen von Assets Hub angezeigt werden, z. B. Kampagnenname, Keywords oder Kanäle. Weitere Informationen finden Sie unter [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
