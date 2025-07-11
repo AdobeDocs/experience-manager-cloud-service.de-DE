@@ -4,10 +4,10 @@ description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) f
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: ht
-source-wordcount: '4170'
-ht-degree: 100%
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+workflow-type: tm+mt
+source-wordcount: '4225'
+ht-degree: 98%
 
 ---
 
@@ -395,6 +395,14 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
    ```
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Branding-Änderungen zu speichern.
+
+>[!NOTE]
+> 
+> Um einen benutzerdefinierten Formulartitel in Ihrem Datensatzdokument anzuzeigen, bearbeiten Sie den **benutzerdefinierten Formulartitel** unter **Eigenschaften des Datensatzdokuments** > **Eigenschaften der Musterseite**. Dieser benutzerdefinierte Titel:
+> 
+> * Erscheint in der Kopfzeile der generierten PDF
+> * Wird als Titel in den Dokumenteigenschaften von PDF angezeigt
+> * Wird beim Öffnen der PDF als Ansichtstitel angezeigt
 
 ## Unterstützung von Datensatzdokumenten im Editor für adaptive Formulare {#dor-support-in-adaptiveform}
 

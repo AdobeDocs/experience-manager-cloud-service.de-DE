@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: 9f037a7e7d07916cec56f230d5751209c6c254a8
+source-git-commit: 7d5e9690d84d2389576eb85b2030271b76588488
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 82%
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 # Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren
 
-Die auf Kernkomponenten basierende Benutzeroberfläche des Regeleditors für adaptive Forms verbessert den Prozess der Formularerstellung in Adobe Experience Manager (AEM). Es ermöglicht Geschäftsbenutzern und Entwicklern, dynamisches Verhalten und komplexe Logik in Formulare zu implementieren, indem Regeln geschrieben werden, die Trigger-Aktionen basierend auf vordefinierten Bedingungen, Benutzereingaben und Interaktionen erstellen. Diese Funktion unterstützt moderne JavaScript-Funktionen, einschließlich ES10-Funktionen, und bietet einen intuitiven visuellen Editor, der den Regelerstellungsprozess vereinfacht.
+Die auf Kernkomponenten basierende Benutzeroberfläche des Regeleditors für adaptive Forms verbessert den Prozess der Formularerstellung in Adobe Experience Manager (AEM). Es ermöglicht Geschäftsbenutzern und Entwicklern, dynamisches Verhalten und komplexe Logik in Formulare zu implementieren, indem Regeln geschrieben werden, die Trigger-Aktionen basierend auf vordefinierten Bedingungen, Benutzereingaben und Interaktionen erstellen. Diese Funktion unterstützt moderne JavaScript-Funktionen bis ES2022 und bietet einen intuitiven visuellen Editor, der den Regelerstellungsprozess vereinfacht.
 Der Regeleditor ist für das optimierte Ausfüllen des Formulars von entscheidender Bedeutung, da er sowohl Genauigkeit als auch Effizienz gewährleistet. Dies ermöglicht die Validierung oder das Zurücksetzen von Bereichen und Formularen sowie die Ausführung benutzerdefinierter Funktionen zum Berechnen von Werten von Formularobjekten. Durch die Unterstützung verschachtelter Bedingungen und die Möglichkeit, Formulardatenmodell-Services aufzurufen, ist die Benutzeroberfläche des Regeleditors eine zentrale Komponente für die Erstellung responsiver, benutzerfreundlicher und adaptiver Formulare.
 
 ## Grundlegendes zur Benutzeroberfläche des Regeleditors {#understanding-the-rule-editor-user-interface}
@@ -175,13 +175,13 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
+1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
 1. Gehen Sie in diesem Ausdrucksfeld wie folgt vor:
 
-   * Wählen Sie das Feld **[!UICONTROL Gehalt]**   im ersten Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]** aus oder ziehen Sie es von der Registerkarte „Formularobjekt“ hierhin.
+   * Wählen Sie das Feld **[!UICONTROL Gehalt]** im ersten Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]** aus oder ziehen Sie es von der Registerkarte „Formularobjekt“ hierhin.
 
    * Wählen Sie aus dem Feld **[!UICONTROL Operator auswählen]** die Option **[!UICONTROL plus]** aus.
 
@@ -238,7 +238,7 @@ Sie können eine kombinierte Regel erstellen, die die Sichtbarkeit des Felds fü
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -340,7 +340,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=de#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument für 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
-workflow-type: ht
-source-wordcount: '3152'
-ht-degree: 100%
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+workflow-type: tm+mt
+source-wordcount: '3207'
+ht-degree: 98%
 
 ---
 
@@ -378,9 +378,15 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
    </proto>
    ```
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**, um die Branding-Änderungen zu speichern.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Branding-Änderungen zu speichern.
 
-
+>[!NOTE]
+> 
+> Um einen benutzerdefinierten Formulartitel in Ihrem Datensatzdokument anzuzeigen, bearbeiten Sie den **benutzerdefinierten Formulartitel** unter **Eigenschaften des Datensatzdokuments** > **Eigenschaften der Musterseite**. Dieser benutzerdefinierte Titel:
+> 
+> * Erscheint in der Kopfzeile der generierten PDF
+> * Wird als Titel in den Dokumenteigenschaften von PDF angezeigt
+> * Wird beim Öffnen der PDF als Ansichtstitel angezeigt
 
 ## Tabellen- und Spalten-Layouts für Bereiche im Datensatzdokument {#table-and-column-layouts-for-panels-in-document-of-record}
 

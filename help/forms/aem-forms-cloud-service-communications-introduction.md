@@ -1,50 +1,50 @@
 ---
-title: AEM Forms as a Cloud Service – Kommunikations-APIs
-description: Erstellen, Bearbeiten und Schützen von Dokumenten mit AEM Forms Communication APIs in der Cloud
+title: AEM Forms as a Cloud Service – Kommunikations-APIs
+description: Erstellen, Bearbeiten und Schützen von Dokumenten mit AEM Forms-Kommunikations-APIs in der Cloud
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 90%
+source-wordcount: '2663'
+ht-degree: 89%
 
 ---
 
 
-# AEM Forms as a Cloud Service – Kommunikations-APIs {#communications-apis-overview}
+# AEM Forms as a Cloud Service – Kommunikations-APIs {#communications-apis-overview}
 
 > **Versionsverfügbarkeit**
 >
-> * **AEM 6.5**: [Überblick über AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=de)
+> * **AEM 6.5**: [Überblick über Dokumenten-Services in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=de)
 > * **AEM as a Cloud Service**: Dieser Artikel
 
 ## Einführung
 
-Mithilfe von Kommunikations-APIs in AEM Forms as a Cloud Service können Sie markengeprüfte, personalisierte und standardisierte Dokumente für Ihre Geschäftsanforderungen erstellen. Diese leistungsstarken APIs ermöglichen es Ihnen, Dokumente programmgesteuert zu generieren, zu bearbeiten und zu sichern, ob bei Bedarf oder in Batch-Prozessen mit hohem Volumen.
+Mithilfe von Kommunikations-APIs in AEM Forms as a Cloud Service können Sie markenkonforme, personalisierte und standardisierte Dokumente für Ihre Geschäftsanforderungen erstellen. Diese leistungsstarken APIs ermöglichen es Ihnen, Dokumente programmgesteuert zu erstellen, zu bearbeiten und zu schützen, sei es bei Bedarf oder in Batch-Prozessen mit hohem Volumen.
 
-### Die wichtigsten Vorteile
+### Wichtigste Vorteile
 
-* **Optimierte Dokumenterstellung** - Erstellen personalisierter Dokumente durch Zusammenführen von Vorlagen mit Kundendaten
-* **Leistungsstarke Dokumentbearbeitung** - PDF-Dokumente programmgesteuert kombinieren, neu anordnen und validieren
-* **Flexible Bereitstellungsoptionen** - Verwenden Sie On-Demand-APIs für Anforderungen mit geringer Latenz oder Batch-APIs für Vorgänge mit hohem Durchsatz.
-* **Verbesserte Sicherheit** - Anwenden digitaler Signaturen, Zertifizierung und Verschlüsselung zum Schutz sensibler Dokumente
-* **Cloud-native Architektur** - Nutzung skalierbarer, sicherer Cloud-Infrastrukturen ohne Wartungsaufwand
+* **Optimierte Dokumenterstellung**: Erstellen Sie personalisierte Dokumente durch Zusammenführen von Vorlagen mit Kundendaten.
+* **Leistungsstarke Dokumentbearbeitung**: Nutzen Sie die Möglichkeit, PDF-Dokumente programmgesteuert zu kombinieren, neu anzuordnen und zu validieren.
+* **Flexible Bereitstellungsoptionen**: Verwenden Sie On-Demand-APIs für Anforderungen mit geringer Latenz oder Batch-APIs für Vorgänge mit hohem Durchsatz.
+* **Verbesserte Sicherheit**: Wenden Sie digitale Signaturen, Zertifizierung und Verschlüsselung zum Schutz vertraulicher Dokumente an.
+* **Cloud-native Architektur**: Nutzen Sie eine skalierbare, sichere Cloud-Infrastruktur ohne Wartungsaufwand.
 
-## Übersicht über API-Funktionen
+## Überblick über API-Funktionen
 
 Kommunikations-APIs bieten einen umfassenden Satz an Dokumentverarbeitungsfunktionen, die in die folgenden Funktionsbereiche unterteilt sind:
 
-| Erstellen von Dokumenten | Bearbeitung von Dokumenten | Dokumentenextraktion | Dokumentenkonvertierung | Document Assurance |
+| Dokumenterstellung | Dokumentbearbeitung | Dokumentextraktion | Dokumentkonvertierung | Dokumentsicherung |
 |---------------------|----------------------|---------------------|---------------------|-------------------|
-| Erzeugen Sie personalisierte Dokumente durch Zusammenführen von Vorlagen mit Daten in verschiedenen Formaten, einschließlich PDF und Druckformaten. | PDF-Dokumente programmgesteuert kombinieren, neu anordnen und validieren, um neue Dokumentpakete zu erstellen. | Extrahieren Sie Eigenschaften, Metadaten und Inhalte aus PDF-Dokumenten für die weitere Verarbeitung. | Konvertieren von Dokumenten zwischen Formaten, einschließlich PDF/A-Compliance-Validierung für Archivierungsanforderungen. | Anwenden digitaler Signaturen, Zertifizierung und Verschlüsselung zum Sichern und Schützen von Dokumenten. |
+| Erstellen personalisierter Dokumente durch Zusammenführen von Vorlagen mit Daten in verschiedenen Formaten, einschließlich PDF- und Druckformaten | Programmgesteuertes Kombinieren, Neuanordnen und Validieren von PDF-Dokumenten, um neue Dokumentpakete zu erstellen | Extrahieren von Eigenschaften, Metadaten und Inhalte aus PDF-Dokumenten für die weitere Verarbeitung | Konvertieren von Dokumenten zwischen Formaten, einschließlich PDF/A-Compliance-Validierung für Archivierungsanforderungen | Anwenden von digitalen Signaturen, Zertifizierung und Verschlüsselung zum Sichern und Schützen von Dokumenten |
 
 Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und sie in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
 
-## Erstellen von Dokumenten
+## Dokumenterstellung
 
-APIs zur Generierung von Kommunikationsdokumenten ermöglichen Ihnen durch die Kombination einer Vorlage (XFA oder PDF) mit Kundendaten (XML-Daten) Dokumente in PDF- und Druckformaten wie PS, PCL, DPL, IPL und ZPL zu erstellen. Diese APIs verwenden PDF- und XFA-Vorlagen mit [XML-Daten](communications-known-issues-limitations.md#form-data), um auf Anfrage ein einzelnes Dokument oder mehrere Dokumente mithilfe eines Batch-Vorgangs zu erzeugen.
+APIs zur Generierung von Kommunikationsdokumenten helfen Ihnen, eine Vorlage (XFA oder PDF) mit Kundendaten (XML) zu kombinieren, um Dokumente in den Formaten PDF, AFP (Advanced Function Presentation) und Druckformate wie PS, PCL, DPL, IPL und ZPL zu generieren. Diese APIs verwenden PDF- und XFA-Vorlagen mit [XML-Daten](communications-known-issues-limitations.md#form-data) um bei Bedarf ein einzelnes Dokument oder mehrere Dokumente mithilfe eines Batch-Vorgangs zu generieren.
 
 Normalerweise erstellen Sie eine Vorlage mit [Designer](use-forms-designer.md) und verwenden Communications-APIs, um Daten mit der Vorlage zusammenzuführen. Ihr Programm kann das Ausgabedokument zur Archivierung an einen Netzwerkdrucker, einen lokalen Drucker oder an ein Speichersystem senden. Typische vorkonfigurierte und benutzerdefinierte Workflows sehen wie folgt aus:
 
@@ -52,16 +52,30 @@ Normalerweise erstellen Sie eine Vorlage mit [Designer](use-forms-designer.md) u
 
 Je nach Anwendungsfall können Sie diese Dokumente auch über Ihre Website oder einen Speicher-Server zum Download bereitstellen.
 
-### Wichtige Funktionen zur Dokumenterstellung
+### Wichtige Funktionen für die Dokumenterstellung
 
-#### Erstellen von PDF-Dokumenten {#create-pdf-documents}
+#### Erstellen von Dokumenten in elektronischen PDF/AFP-Formaten
 
-Sie können die API zum Erzeugen von Dokumenten verwenden, um ein PDF-Dokument zu erstellen, das auf einem Formular-Design und XML-Formulardaten basiert. Die Ausgabe ist ein nicht interaktives PDF-Dokument. Das heißt, Benutzer können keine Formulardaten eingeben oder ändern. Ein einfacher Workflow besteht darin, XML-Formulardaten mit einem Formular-Design zusammenzuführen, um ein PDF-Dokument zu erstellen. Die folgende Abbildung zeigt die Zusammenführung von Formular-Designs und XML-Formulardaten zur Erstellung eines PDF-Dokuments.
+Sie können die APIs zur Dokumenterstellung verwenden, um ein Dokument im PDF- oder AFP-Format zu erstellen, das auf einem Formularentwurf und XML-Formulardaten basiert. Die Ausgabe ist ein nicht interaktives Dokument. Das heißt, Benutzer können keine Formulardaten eingeben oder ändern. Ein einfacher Workflow besteht darin, XML-Formulardaten mit einem Formularentwurf zusammenzuführen, um ein Dokument zu erstellen. Die folgende Abbildung zeigt die Zusammenführung von Formular-Designs und XML-Formulardaten zur Erstellung eines PDF-Dokuments.
 
 ![Erstellen von PDF-Dokumenten](assets/outPutPDF_popup.png)
-Abbildung: Typischer Workflow zum Erstellen eines PDF-Dokuments
+Abbildung: Typischer Workflow zum Erstellen eines Dokuments
 
-Die API zur Dokumenterstellung gibt das generierte PDF-Dokument zurück. Optional können Sie auch die generierten PDF-Dateien in Azure Blob Storage hochladen.
+In der folgenden Tabelle wird der Unterschied zwischen dem AFP- und dem PDF-Format angezeigt:
+
+| **Funktion** | **AFP (Advanced Function Presentation)** | **PDF (Portable Document Format)** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **Zweck** | Drucken großer Mengen und Erstellen von Transaktionsdokumenten | Freigeben und Anzeigen von Dokumenten für allgemeine Zwecke |
+| **Nutzungsszenario** | Bankauszüge, Rechnungen, Rechnungen, Versicherungsdokumente | E-Books, Formulare, Berichte, Lebensläufe, Handbücher |
+| **Platform-Herkunft** | Entwickelt von IBM | Entwickelt von Adobe |
+| **Struktur** | Seitenorientiertes Format mit strukturierten Feldern und Objekten | Seitenorientiert, aber mit festem Layout |
+| **Bearbeitbarkeit** | Entwickelt für den Produktionsdruck und wird selten bearbeitet | Kann mit verschiedenen Tools bearbeitet werden, z. B. Adobe Acrobat |
+| **Dateigröße und Leistung** | Optimiert für Leistung in schnellen Druckumgebungen | Größer und für die Massenausgabe weniger optimiert sein |
+| **Interaktivität** | Minimal bis keine; statische Seiten | Unterstützt interaktive Elemente wie Formulare, Links und JavaScript |
+| **Ausgabesteuerung** | Fein abgestimmte Steuerung des Layouts für Drucker | Visuelles Layout optimiert für Bildschirm und Druck |
+| **Schriftarten und Grafiken** | Verwendet Schriftart- und Ressourcenverweise; erfordert, dass Renderer Folgendes interpretieren | Bettet Schriftarten und Bilder direkt in die Datei ein |
+
+Die Dokumenterstellungs-API gibt das generierte PDF-Dokument oder AFP-Dokument zurück. Optional können Sie auch die generierten PDF-Dateien in Azure Blob Storage hochladen.
 
 <span class="preview"> Das Hochladen der generierten PDF-Dateien mit der API zur Dokumenterstellung in die Azure Blob Storage-Funktion erfolgt im Rahmen des [Early-Adopter-Programms](/help/forms/early-access-ea-features.md). Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
@@ -75,11 +89,11 @@ Sie können APIs zum Erzeugen von Dokumenten verwenden, um separate Dokumente f�
 
 ![Erstellen von PDF-Dokumenten](assets/ou_OutputBatchMany_popup.png)
 
-## Bearbeitung von Dokumenten
+## Dokumentbearbeitung
 
-APIs zum Bearbeiten (Umwandeln) von Kommunikationsdokumenten helfen beim Kombinieren und Neuanordnen von PDF-Dokumenten. In der Regel erstellen Sie ein DDX und übermitteln es an APIs zur Dokumentenbearbeitung, um ein Dokument zusammenzustellen oder neu anzuordnen. Das [DDX-Dokument](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) enthält Anweisungen dazu, wie die Quelldokumente zum Erzeugen eines Satzes von erforderlichen Dokumenten verwendet werden. Die DDX-Referenzdokumentation enthält detaillierte Informationen zu allen unterstützten Vorgängen.
+APIs zum Bearbeiten (Umwandeln) von Kommunikationsdokumenten helfen beim Kombinieren und Neuanordnen von PDF-Dokumenten. In der Regel erstellen Sie ein DDX und übermitteln es an APIs zur Dokumentenbearbeitung, um ein Dokument zusammenzustellen oder neu anzuordnen. Das [DDX-Dokument](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) enthält Anweisungen dazu, wie die Quelldokumente zum Erzeugen eines Satzes von erforderlichen Dokumenten verwendet werden. Die DDX-Referenzdokumentation enthält detaillierte Informationen zu allen unterstützten Vorgängen. 
 
-### Wichtige Funktionen zur Dokumentbearbeitung
+### Wichtige Funktionen für die Dokumentbearbeitung
 
 #### Zusammenstellen von PDF-Dokumenten
 
@@ -108,7 +122,7 @@ Abbildung: Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere D
 >
 > AEM Forms bietet eine Vielzahl integrierter Schriftarten, die nahtlos in PDF-Dateien integriert werden können. Um die Liste der unterstützten Schriftarten anzuzeigen, [klicken Sie hier](/help/forms/supported-out-of-the-box-fonts.md).
 
-## Dokumentenextraktion
+## Dokumentextraktion
 
 <span class="preview"> Die Funktion zur Dokumentenextraktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
@@ -120,7 +134,7 @@ Der Dokumentenextraktionsdienst bietet Ihnen die Möglichkeit, die Eigenschaften
 
 Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und den Diensten, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und sie in Postman hochladen, um die Funktionalität von APIs zu überprüfen.
 
-## Dokumentenkonvertierung
+## Dokumentkonvertierung
 
 ### Konvertieren in PDF/A-konforme Dokumente und Validieren
 
@@ -132,7 +146,7 @@ Mithilfe von APIs zur Konvertierung von Kommunikationsdokumenten können Sie ein
 
 Konvertiert ein PDF-Dokument in eine XDP-Datei. Damit ein PDF-Dokument in eine XDP-Datei konvertiert werden kann, muss es einen XFA-Stream im Wörterbuch enthalten.
 
-## Document Assurance {#doc-assurance}
+## Dokumentsicherung {#doc-assurance}
 
 Der DocAssurance-Dienst umfasst die Signature- und Verschlüsselungs-APIs:
 
@@ -257,6 +271,6 @@ So aktivieren Sie nach dem Onboarding die Kommunikationsfunktion für Ihre Forms
 
 * [Kommunikationsverarbeitung – Synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
 * [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [Architektur von AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-architecture.md)
+* [AEM Forms as a Cloud Service – Architektur](/help/forms/aem-forms-cloud-service-architecture.md)
 * [API-Referenzdokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [Early-Adopter-Programmfunktionen](/help/forms/early-access-ea-features.md)
+* [Funktionen des Early-Adopter-Programms](/help/forms/early-access-ea-features.md)

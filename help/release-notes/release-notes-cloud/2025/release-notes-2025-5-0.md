@@ -3,10 +3,11 @@ title: Versionshinweise für Version 2025.5.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
+exl-id: b7a21533-9db1-4111-814c-cab917041be4
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 94%
+source-wordcount: '2162'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2025.5.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version vom Mai 2025:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464359?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -48,7 +49,7 @@ AEM Assets verwendet jetzt [KI zum automatischen Generieren von Metadaten, einsc
 
 **Integration mit Figma**
 
-Dank der nativen Integration von AEM Assets mit Figma können Sie über die Figma-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen. Sie können in AEM Assets verwaltete Inhalte in der Figma-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte im AEM Assets-Repository speichern. Um auf den AEM Assets Connector zuzugreifen, der auf der Figma Community-Seite verfügbar ist, klicken Sie [hier](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+Dank der nativen Integration von AEM Assets mit Figma können Sie über die Figma-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen. Sie können in AEM Assets verwaltete Inhalte auf der Figma-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern. Um auf den auf der Figma Community-Seite verfügbaren AEM Assets-Connector zuzugreifen, klicken Sie [hier](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -107,13 +108,13 @@ Greifen Sie [direkt über die Benutzeroberfläche von Content Hub auf alle vorei
 
 [Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/combine/aem-dynamic), sodass Marketing-Fachleute AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates sowie extrem personalisierte Erlebnisse bereitstellen können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463791/?learn=on&enablevpops=&autoplay=true&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Funktionen der Vorabversion
 
-* [Universeller Editor – Formularfragmente](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): Mit dem universellen Editor können Sie jetzt Formularfragmente für adaptive Formulare erstellen und wiederverwenden. Bei diesen Fragmenten handelt es sich um wiederverwendbare Formularabschnitte (z. B. Kontaktdaten, Einverständnisfelder), die einmal erstellt und auf mehrere Formulare angewendet werden können. Diese Funktion optimiert die Formularerstellung, stellt Konsistenz sicher und verbessert die Effizienz bei der Bearbeitung.
+* [Universeller Editor für adaptive Forms und Formularfragmente](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Der universelle Editor unterstützt jetzt die Erstellung von sowohl adaptiven Forms als auch wiederverwendbaren Formularfragmenten. Autorinnen und Autoren können in einer vereinfachten WYSIWYG-Authoring-Umgebung Formulare visuell erstellen, Übermittlungsaktionen konfigurieren und eine reCAPTCHA-Validierung hinzufügen. Diese Funktion beschleunigt die Formularerstellung, erhöht die Konsistenz und verbessert den Schutz vor Spam und automatisiertem Missbrauch.
 
 * [SharePoint-Dokumentbibliothek – Anhänge mit Originaldateinamen speichern](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): Sie haben jetzt die Möglichkeit, Formularanhänge unter Verwendung ihrer Originaldateinamen zu speichern, wenn Sie sie in einer SharePoint-Dokumentbibliothek speichern. Diese Verbesserung vereinfacht die Identifizierung und Verwaltung hochgeladener Dateien.
 
@@ -131,7 +132,7 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 #### Integration von Adobe Experience Platform (AEP) mit Forms
 
-Integrationsfunktionen zwischen Forms und AEP sind jetzt für Early Adopters verfügbar.
+* [Integration von AEM Forms mit Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): Der AEM Forms-zu-Adobe Experience Platform-Connector ermöglicht eine nahtlose Integration zwischen Adaptive Forms und Adobe Experience Platform. Mit dieser Funktion können Formulardaten XDM-Schemata zugeordnet und direkt in Echtzeit an AEP gesendet werden. Es optimiert die Datenerfassung für Anwendungsfälle zur Personalisierung und Aktivierung in allen Adobe Experience Cloud-Lösungen.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
 
@@ -194,7 +195,7 @@ Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf e
 
 ### Standardmäßige Bereinigung älterer Versionen und Auditprotokolle {#mt-defaults}
 
-Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben“ für Inhaltsversionen* Auditprotokolle standardmäßig deaktiviert, sodass keine Daten entfernt werden, es sei denn, diese sind explizit konfiguriert.
+Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben* in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, außer dies ist explizit konfiguriert.
 
 Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung ab **Ende Juni 2025** standardmäßig aktiviert, wobei die folgenden Richtlinien befolgt werden:
 
@@ -209,7 +210,7 @@ Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung ab **Ende 
    * Alle Versionen der letzten 7 Jahre werden beibehalten.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
-* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die mithilfe der Konfigurations-Pipeline bereitgestellt wird.
+* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die über die Konfigurations-Pipeline bereitgestellt wird.
 
 #### Auditprotokoll {#mt-auditlogs}
 
@@ -222,7 +223,7 @@ Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung ab **Ende 
    * Alle Ereignisse werden standardmäßig protokolliert.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
-* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die mithilfe der Konfigurations-Pipeline bereitgestellt wird.
+* Sie können diese Standardwerte über die YAML-Konfiguration ändern, die über die Konfigurations-Pipeline bereitgestellt wird.
 
 Weitere Details finden Sie im [Artikel zu Wartungsaufgaben](/help/operations/maintenance.md#defaults).
 
@@ -235,7 +236,7 @@ Häufige Anwendungsszenarien umfassen:
 * Authentifizieren von Benutzenden bei einem Identitätsanbieter, bevor Zugriff auf Inhalte gewährt wird
 * Personalisieren von Inhalten basierend auf Geolokalisierung, Gerätetyp oder Benutzerattributen
 * Fungieren als Middleware zwischen dem CDN und Ihrer Herkunft
-* Formatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer APIs als Antworten) vor deren Bereitstellung im Browser
+* Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
 Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentlichungsbereitstellung oder Edge Delivery Services-Projekte für Live-Produktions-Sites. Wenn Sie an einer Teilnahme interessiert sind oder mehr erfahren möchten, senden Sie eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls.

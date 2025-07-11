@@ -6,10 +6,10 @@ keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Fo
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 93%
 
 ---
 
@@ -119,15 +119,14 @@ Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven For
 
 ![Verwenden mehrerer Fragmente in einem adaptiven Formular](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
+## Unterstützung der automatischen Zuordnung für Fragmente in einem adaptiven Formular
 
-## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
+Wenn Sie ein adaptives Formularfragment erstellen, das auf einer JSON-Schemadefinition basiert, kann es automatisch in Formularen wiederverwendet werden, die aus demselben Schema erstellt wurden.
+Wenn Sie ein Schemaobjekt oder verschachtelte Objekte, die der JSON-Schemadefinitionszuordnung eines adaptiven Formularfragments entsprechen, per Drag-and-Drop verschieben, wird das Objekt durch das entsprechende adaptive Formularfragment ersetzt. Anstatt ein Bedienfeld mit einzelnen Feldern hinzuzufügen, fügt das Formular das zugeordnete adaptive Formularfragment ein.
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+![Fragment per Drag-and-Drop verschieben](/help/forms/assets/fragment.png)
 
-You can change the fragment asset and its bindings from the Edit component dialog.
-
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+Sie können auch per Drag-and-Drop ein gebundenes adaptives Formularfragment aus der adaptiven Formularfragment-Bibliothek in der AEM-Inhaltssuche ziehen und den richtigen Bindungsverweis aus dem Dialogfeld „Komponente bearbeiten“ des Bereichs „Adaptives Formularfragment“ angeben.
 
 ## Verwalten von Fragmenten {#manage-fragments}
 
@@ -152,11 +151,11 @@ Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit ad
    <td><p>Enthält Optionen zum Anzeigen einer HTML- oder benutzerdefinierten Vorschau des Fragments durch Zusammenführen von Daten aus einer XML-Datei und dem Fragment. Weitere Informationen finden Sie unter <a>Erstellen einer Vorschau für ein Formular</a>. <br /><br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Download</p> </td>
+   <td><p>Herunterladen</p> </td>
    <td><p>Lädt das ausgewählte Fragment herunter.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Review starten/verwalten</p> </td>
+   <td><p>Überprüfung starten/Überprüfung verwalten</p> </td>
    <td><p>Initiieren und Verwalten einer Review des ausgewählten Fragments. Weitere Informationen finden Sie unter <a>Erstellen und Verwalten von Reviews</a>. <br /><br /> </p> </td>
   </tr>
   <tr>
