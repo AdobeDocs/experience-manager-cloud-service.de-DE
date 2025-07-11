@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Cloud Manager 2025.7.0 in Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1210'
 ht-degree: 60%
 
 ---
@@ -49,20 +49,22 @@ Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste Kunden-Quell-Code nicht wie erwartet funktioniert. Es ist nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie den Kunden-Quell-Code über die Karte Umgebungen ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)Karte *Umgebungen oben mit der Option **Wiederherstellen**>**Vorheriger Code bereitgestellt**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie den Kunden-Quell-Code über die Karte Umgebungen ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)Karte *Umgebungen oben mit der Option **Wiederherstellen**>**Vorheriger Code bereitgestellt**für eine ausgewählte Umgebung wieder her.*
 
 
 ![Dialogfeld „Zugewiesenen Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Vorherigen Code bereitgestellt wiederherstellen**&#x200B;die aktuell bereitgestellte Version und die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Vorherigen Code bereitgestellt wiederherstellen**die aktuell bereitgestellte Version und die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager setzt die Umgebung wieder auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung **Wiederherstellen**&#x200B;bis die Bereitstellung abgeschlossen ist.*
+*Cloud Manager setzt die Umgebung wieder auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung **Wiederherstellen**bis die Bereitstellung abgeschlossen ist.*
 
 
 ![Verwendete Source](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png)Code-Version *(Die Ansicht „Umgebungsdetails“, wie oben gezeigt, zeigt jetzt auch die verwendete aktive Quell-Code-Version.*
 
 Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-[ an ](mailto:restorecode@adobe.com)restorecode@adobe.com.
+
+Siehe [Wiederherstellen des vorherigen in AEM as a Cloud Service bereitgestellten Codes](/help/operations/restore-previous-code-deployed.md).
 
 Siehe auch [Inhaltswiederherstellung in AEM as a Cloud Service](/help/operations/restore.md).
 

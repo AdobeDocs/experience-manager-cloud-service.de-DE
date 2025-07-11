@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2488'
 ht-degree: 95%
 
 ---
@@ -161,9 +161,13 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
    ![Anzeigen von Umgebungsdetails](assets/view-environment-details.png)
 
 
-## Wiederherstellen des Inhalts einer Umgebung (Alpha) {#restore-environment}
+## Wiederherstellen des Inhalts einer Umgebung {#restore-environment}
 
-Siehe [Inhaltswiederherstellung in AEM as a Cloud Service](/help/operations/restore.md).
+Siehe [Inhalt in AEM as a Cloud Service wiederherstellen](/help/operations/restore.md).
+
+## Wiederherstellen des bereitgestellten vorherigen Codes {#restore-previous-code-deployed}
+
+Siehe [Wiederherstellen von vorherigem in AEM as a Cloud Service bereitgestelltem Code](/help/operations/restore-previous-code-deployed.md).
 
 
 ### Zugriff auf den Vorschau-Service {#access-preview-service}

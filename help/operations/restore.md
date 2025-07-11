@@ -1,18 +1,18 @@
 ---
-title: Wiederherstellung von Inhalten in AEM as a Cloud Service
+title: Wiederherstellen von Inhalten in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus einer Sicherungskopie wiederherstellen können.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 50%
+source-wordcount: '1359'
+ht-degree: 46%
 
 ---
 
 
-# Wiederherstellung von Inhalten in AEM as a Cloud Service {#content-restore}
+# Wiederherstellen von Inhalten in AEM as a Cloud Service {#content-restore}
 
 Sie können Ihren AEM as a Cloud Service-Inhalt mithilfe von Cloud Manager aus einer Sicherung wiederherstellen.
 
@@ -20,7 +20,7 @@ Sie können Ihren AEM as a Cloud Service-Inhalt mithilfe von Cloud Manager aus e
 
 Der Self-Service-Wiederherstellungsprozess von Cloud Manager kopiert Daten aus Adobe-Systemsicherungen und stellt sie in der Originalumgebung wieder her. Eine Wiederherstellung wird durchgeführt, um Daten, die verloren gegangen, beschädigt oder versehentlich gelöscht wurden, in ihren ursprünglichen Zustand zurückzuversetzen.
 
-Der Wiederherstellungsprozess wirkt sich nur auf die Inhalte aus, sodass Ihr Code und Ihre Version von AEM unverändert bleiben. Sie können jederzeit einen Wiederherstellungsvorgang für einzelne Umgebungen starten.
+Der Wiederherstellungsprozess wirkt sich nur auf die Inhalte aus, sodass Ihr Code und Ihre Version von AEM unverändert bleiben. Sie können jederzeit einen Wiederherstellungsvorgang für einzelne Umgebungen starten. (Wenn Sie zuvor bereitgestellten Quell-Code einfach und schnell wiederherstellen müssen, ohne eine neue Pipeline-Ausführung starten zu müssen, können Sie [Wiederherstellen des zuvor bereitgestellten Codes](/help/operations/restore-previous-code-deployed.md) verwenden.
 
 Cloud Manager bietet zwei Arten von Sicherungskopien, mit denen Sie Inhalte wiederherstellen können.
 
@@ -87,7 +87,7 @@ Weitere Informationen über die Verwaltung von Berechtigungen finden Sie unter [
      >
      >Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie **der Karte** Alle anzeigen“, um *alle* Umgebungen des Programms anzuzeigen.
 
-1. Klicken Sie in der Tabelle Umgebungen rechts neben einer Umgebung, deren Inhalt Sie wiederherstellen möchten, auf ![Mehr-](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Inhalt wiederherstellen**.
+1. Klicken Sie in der Tabelle Umgebungen rechts neben einer Umgebung, deren Inhalt Sie wiederherstellen möchten, auf ![Mehr-Symbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)-Symbol) und dann auf **Inhalt wiederherstellen**.
 
    ![Option „Inhalt wiederherstellen“ über das Menü mit den Auslassungspunkten](/help/operations/assets/environments-ellipsis-menu.png)
 
