@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1628'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Darüber hinaus können Sie mit dem Editor den vorhandenen Inhalt auf Ihrer Seit
 
 >[!NOTE]
 >
->Ihr Projekt-Team kann die Konsole bei Bedarf anpassen. Siehe [Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md) für weitere Details.
+>Ihr Projekt-Team kann die Konsole bei Bedarf anpassen. Weitere Details finden Sie unter [Anpassen der Seitenbearbeitung](/help/implementing/developing/extending/page-authoring.md).
 
 ## Hinzufügen von Komponenten {#adding-components}
 
