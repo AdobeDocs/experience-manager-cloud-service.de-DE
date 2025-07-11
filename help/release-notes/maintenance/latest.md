@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Keine.
 
 #### AEM Guides {#guides-21484}
 
-* GUIDES-29781: Wenn ein XML-Kommentar innerhalb eines Elements in der Source-Ansicht hinzugefügt wird, gehen die führenden und nachfolgenden Leerzeichen um den Kommentar verloren, wenn die Ansicht gewechselt wird.
-* GUIDES-29078: Beim Öffnen eines Themas in der Autorenansicht nach einer Browser-Aktualisierung werden zuvor angewendete Tags im Bedienfeld Dateieigenschaften nicht beibehalten und das Hinzufügen neuer Tags überschreibt die vorhandenen, insbesondere wenn eine große Anzahl von Tags zur Auswahl verfügbar ist.
+* GUIDES-29781: Wenn ein XML-Kommentar innerhalb eines Elements in der Quellansicht hinzugefügt wird, gehen beim Wechseln der Ansicht die führenden und nachgestellten Leerzeichen um den Kommentar verloren.
+* GUIDES-29078: Wenn nach einer Browser-Aktualisierung ein Thema in der Autorenansicht geöffnet wird, werden zuvor angewendete Tags im Bedienfeld „Dateieigenschaften“ nicht beibehalten. Außerdem werden beim Hinzufügen neuer Tags die vorhandenen Tags überschrieben, insbesondere wenn eine große Anzahl von Tags zur Auswahl verfügbar ist.
 * GUIDES-28214: Versuche, Überprüfungsaufgaben über den AEM-Workflow zu erstellen, schlagen konsequent fehl, da der Überprüfungsknoten nicht erstellt wird.
-* GUIDES-28104: Beim Veröffentlichen einer DITA-Zuordnung mit `chunk=to-content` Attribut werden doppelte JCR-Knoten in der neuen AEM Sites-Ausgabe erstellt, was zu einer redundanten Inhaltsstruktur in AEM Sites führt.
-* GUIDES-29065, GUIDES-28793: Bei der Arbeit mit großen Sammlungen treten Leistungsprobleme wie längere Ladezeiten und intermittierende Zeitüberschreitungen auf.
+* GUIDES-28104: Beim Veröffentlichen einer DITA Map mit dem Attribut `chunk=to-content` werden doppelte JCR-Knoten in der neuen AEM Sites-Ausgabe erstellt, was zu einer redundanten Inhaltsstruktur in AEM Sites führt.
+* GUIDES-29065, GUIDES-28793: Bei der Arbeit mit großen Sammlungen treten Leistungsprobleme wie längere Ladezeiten und zeitweise Timeouts auf.
 
 Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
