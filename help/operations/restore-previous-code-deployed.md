@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adopter-Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adopter-Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Verwenden Sie **vorherigen Code bereitstellen** um eine Umgebung sofort auf den letzten erfolgreichen Build zurückzusetzen - keine Pipeline-Ausführung erforderlich.
 
