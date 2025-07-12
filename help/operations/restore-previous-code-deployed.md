@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie eine Umgebung ohne Pipeline-Ausführung auf i
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
+exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
+source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 7%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adopter-Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adopter-Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Verwenden Sie **vorherigen Code bereitstellen** um eine Umgebung sofort auf den letzten erfolgreichen Build zurückzusetzen - keine Pipeline-Ausführung erforderlich.
 
@@ -29,12 +30,12 @@ Sie öffnen einfach das Menü der ausgewählten Umgebung ![Mehr-Symbol oder ](ht
 
 Die Funktion **Vorherigen Code bereitgestellt** wiederherstellen“ ist nur verfügbar, wenn **alle** Bedingungen unten erfüllt sind:
 
-* Sie haben die **„Umgebung wiederherstellen** erstellen“. Weitere Informationen über die Verwaltung von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
+* Sie verfügen über **Berechtigungen zum Erstellen der**). Weitere Informationen über die Verwaltung von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 * Ihre Organisation ist für das Early-Adopter-Programm registriert und das Feature Flag ist aktiviert.
-* Das Programm läuft auf **AEM as a Cloud Service**.
-* Die ausgewählte Umgebung ist eine **DEV**-Umgebung (temporäres Alpha-Limit).
-* Die letzte Pipeline für diese Umgebung wurde **erfolgreich** abgeschlossen und wurde **vor weniger als 10**) ausgeführt.
-* Der Umgebungsstatus lautet **Wird ausgeführt** und es wird keine Pipeline ausgeführt.
+* Das Programm läuft auf AEM as a Cloud Service.
+* Die ausgewählte Umgebung ist eine `Development` Umgebung (temporäres Alpha-Limit).
+* Die letzte Pipeline für diese Umgebung wurde erfolgreich beendet und wurde vor **Tagen** ausgeführt.
+* Der Umgebungsstatus lautet *Wird ausgeführt* und es wird keine Pipeline ausgeführt.
 * Die Ziel-Quellcodeversion, die Sie wiederherstellen möchten, wurde bereitgestellt **innerhalb von 30 Tagen**.
 
 Wenn eine Überprüfung fehlschlägt, öffnet Cloud Manager das folgende Dialogfeld, in dem eine oder mehrere nicht erfüllte Bedingungen aufgelistet und **Bestätigen** deaktiviert werden, um die Wiederherstellung zu verhindern.
