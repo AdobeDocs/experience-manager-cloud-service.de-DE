@@ -1,12 +1,12 @@
 ---
-title: Wiederherstellen des vorherigen in AEM as a Cloud Service bereitgestellten Source-Codes
+title: Wiederherstellen des vorherigen bereitgestellten Source-Codes
 description: Erfahren Sie, wie Sie eine Umgebung ohne Pipeline-Ausführung auf ihren letzten erfolgreichen Build &ndash; zurücksetzen.
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '523'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adopter-Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>>Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adopter-Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Verwenden Sie **vorherigen Code bereitstellen** um eine Umgebung sofort auf den letzten erfolgreichen Build zurückzusetzen - keine Pipeline-Ausführung erforderlich.
 
