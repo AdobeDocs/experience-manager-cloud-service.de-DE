@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erst
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
-workflow-type: ht
-source-wordcount: '1355'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1401'
+ht-degree: 96%
 
 ---
 
@@ -108,7 +108,7 @@ Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt
 
    Im folgenden Screenshot sehen Sie das im universellen Editor erstellte `contact fragment`.
 
-   ![Kontaktfragment](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![Screenshot eines ausgefüllten Formularfragments für Kontaktdetails im universellen Editor mit Feldern für Name, Telefon, E-Mail und Adresse, die in mehreren Formularen wiederverwendet werden können](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    Nachdem Sie das Fragment erstellt haben, können Sie [das erstellte Fragment in den Edge Delivery Services-Formularen hinzufügen](#adding-form-fragments-in-forms).
 
@@ -140,7 +140,7 @@ Erstellen wir ein nun einfaches Formular „`Employee Details`“, das Informati
 
    Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert. 
 
-   ![Fragment im Formular](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ erfolgreich in ein Mitarbeiterformular im universellen Editor integriert wurde, und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    Sie können das Formular in einer Vorschau anzeigen, um zu sehen, wie das Formular im Modus **Vorschau** aussieht.
 

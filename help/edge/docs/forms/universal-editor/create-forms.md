@@ -4,10 +4,10 @@ description: In diesem Artikel wird erläutert, wie Sie adaptive Formulare erste
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Ein Entscheidungsflussdiagramm, das die Einrichtung und Veröffentlichung von ad
 
 Führen Sie die folgenden Schritte aus, um Formulare in AEM zu erstellen und in Edge Delivery Services zu veröffentlichen:
 
-[1. Vorlage auswählen und Formular erstellen](#choose-a-template-and-create-the-form)
+[&#x200B;1. Vorlage auswählen und Formular erstellen](#choose-a-template-and-create-the-form)
 
-[2. Formular gestalten](#author-the-form)
+[&#x200B;2. Formular gestalten](#author-the-form)
 
-[3. Formular veröffentlichen](#publish-a-form)
+[&#x200B;3. Formular veröffentlichen](#publish-a-form)
 
 ### Auswählen einer Vorlage und Erstellen des Formulars
 
@@ -85,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 
    Wenn Sie auf **[!UICONTROL Erstellen]** klicken, wird das Formular zur Erstellung im universellen Editor geöffnet.
 
-   ![Erstellen des Formulars](/help/edge/assets/author-form.png)
+   ![Screenshot des universellen Editors, der ein in Bearbeitung befindliches Formular mit der Komponentenpalette auf der linken Seite, der Formulararbeitsfläche in der Mitte und dem Bedienfeld „Eigenschaften“ auf der rechten Seite zeigt](/help/edge/assets/author-form.png)
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um das Formular zu erstellen. Jetzt können Sie das [Formular mit dem universellen Editor erstellen](#author-the-form).
 
 >[!TAB Kernkomponentenbasierte Vorlage]
@@ -135,7 +135,7 @@ Führen Sie die folgenden Schritte aus, um Formulare mit dem universellen Editor
 
    Im folgenden Screenshot sehen Sie das `Registration Form`, das im universellen Editor erstellt wurde:
 
-   ![Kontaktformular](/help/edge/assets/contact-us.png)
+   ![Screenshot eines ausgefüllten Kontaktformulars im universellen Editor mit Formularfeldern für Name, E-Mail, Telefon und Nachricht mit korrektem Stil und Layout](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Um in Edge Delivery Services auf das Formular zuzugreifen, muss das Formular ver
 
 1. Veröffentlichen Sie das Formular nun in Edge Delivery Services, indem Sie oben rechts im universellen Editor auf die Schaltfläche **[!UICONTROL Veröffentlichen]** klicken.
 
-![Veröffentlichen des Formulars](/help/edge/assets/publish-form.png)
+![Screenshot des universellen Editors mit dem Dialogfeld „Veröffentlichen“ mit Formularveröffentlichungsoptionen und Bestätigungsschaltflächen](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >

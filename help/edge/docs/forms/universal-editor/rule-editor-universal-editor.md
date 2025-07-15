@@ -4,17 +4,17 @@ description: Der Regeleditor im universellen Editor ermöglicht es Ihnen, ohne P
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 99%
+source-wordcount: '2253'
+ht-degree: 98%
 
 ---
 
 
 # Einführung in den Regeleditor im WYSIWYG-Authoring
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Namen des Repositorys von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
 
 Sie können ein dynamisches Formularverhalten mit dem Regeleditor hinzufügen, mit dem Sie Regeln erstellen können. Diese Regeln ermöglichen eine bedingte Sichtbarkeit von Feldern oder die Automatisierung von Berechnungen auf der Grundlage von Benutzereingaben, was das allgemeine Anwendererlebnis verbessert. Durch das Optimieren der Formularausfüllung trägt der Regeleditor zur Genauigkeit und Effizienz bei.
@@ -188,7 +188,7 @@ Sehen wir uns nun an, wie [Regeln im Regeleditor geschrieben werden](#write-rule
 
 Um zu verstehen, wie Regeln im visuellen Regeleditor geschrieben werden, sehen wir uns ein einfaches Beispiel für ein Steuerberechnungsformular an:
 
-![Beispiel für den Regeleditor](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Screenshot der Benutzeroberfläche des Regeleditors, der die Erstellung einer bedingten Regel mit Wenn-Dann-Logik für die Sichtbarkeit des Formularfelds zeigt](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 In der oben beschriebenen Form geben Benutzende das Bruttogehalt ein. Basierend auf dieser Eingabe wird ein bedingtes Feld angezeigt und die fällige Steuer berechnet.
 
@@ -209,7 +209,7 @@ In der oben beschriebenen Form geben Benutzende das Bruttogehalt ein. Basierend 
 
 Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
-### 1. Formular erstellen
+### &#x200B;1. Formular erstellen
 
 So erstellen Sie ein Formular im universellen Editor:
 
@@ -223,9 +223,9 @@ So erstellen Sie ein Formular im universellen Editor:
    * Senden (Schaltfläche „Senden“)
 1. Blenden Sie das Formularfeld `Additional Deduction` aus, indem Sie dessen `Properties` öffnen.
 
-   ![Beispiel für den Regeleditor](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Screenshot eines Steuerberechnungsformulars mit Eingabefeldern für Bruttogehalt, Familienstand und unterhaltsberechtigte Kinder, auf denen die Formularstruktur vor der Anwendung von Regeln veranschaulicht wird](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. Eine bedingte Regel für ein Formularfeld hinzufügen
+### &#x200B;2. Eine bedingte Regel für ein Formularfeld hinzufügen
 
 Nachdem Sie das Formular erstellt haben, schreiben Sie die erste Regel, damit das Feld `Additional Deduction` nur angezeigt wird, wenn das Bruttogehalt 50.000 US-Dollar überschreitet. So fügen Sie eine bedingte Regel hinzu:
 
@@ -261,7 +261,7 @@ Die Regel wird im Regeleditor wie folgt angezeigt.
 >
 > Alternativ können Sie dieses Verhalten auch implementieren, indem Sie eine Anzeige-Regel für das Feld „Zusätzlicher Abzug“ anstelle einer Wenn-Regel für das Feld „Bruttogehalt“ erstellen.
 
-### 3. Hinzufügen von Berechnungsregeln für die Formularfelder
+### &#x200B;3. Hinzufügen von Berechnungsregeln für die Formularfelder
 
 Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Dies ist die Differenz zwischen `Gross Salary` und `Additional Deduction` (falls vorhanden). Um eine Berechnungsregel für das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** hinzuzufügen, führen Sie die folgenden Schritte aus:
 
@@ -278,7 +278,6 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
    * Wählen Sie **[!UICONTROL Minus]** aus dem Feld **[!UICONTROL Operator wählen]**.
 
    * Wählen Sie das Feld **[!UICONTROL Zusätzlicher Abzug]** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das andere Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**.
-
      ![Beispiel15 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
@@ -296,7 +295,6 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
    * Wählen Sie **[!UICONTROL Multipliziert mit]** aus dem Feld **[!UICONTROL Operator wählen]**.
 
    * Wählen Sie **Zahl** aus dem Feld **[!UICONTROL Option auswählen]** und geben Sie den Wert als `10` in das Feld **[!UICONTROL Zahl eingeben]** ein.
-
      ![Beispiel18 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Klicken Sie als Nächstes in den hervorgehobenen Bereich um das Ausdrucksfeld und wählen Sie dann **[!UICONTROL Ausdruck erweitern]** aus.
    ![Beispiel19 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -304,7 +302,7 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
    ![Beispiel20 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
-### 4. Anzeigen der Vorschau eines Formulars
+### &#x200B;4. Anzeigen der Vorschau eines Formulars
 
 Wenn Sie jetzt das Formular in der Vorschau anzeigen und das **Bruttogehalt** als `60,000` eingeben, wird das Feld **Zusätzlicher Abzug** angezeigt und **Steuerpflichtiges Einkommen** und **Zu zahlende Steuer** werden entsprechend berechnet.
 
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Hinzufügen einer benutzerdefinierten Funktion](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Verwenden einer benutzerdefinierten Funktion im Regeleditor

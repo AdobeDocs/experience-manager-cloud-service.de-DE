@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2219'
 ht-degree: 28%
 
 ---
@@ -73,21 +73,6 @@ Hier finden Sie weitere Funktionen von Conversational Forms:
 
 Conversational Forms sind mehr als nur ein neuer Look - sie sind eine Wende im Benutzererlebnis.  Verstärken Sie die Interaktion, reduzieren Sie den Formularabbruch und gestalten Sie die Interaktion mit Ihrer Website zu einem angenehmeren Erlebnis für alle.
 
-
-### WYSIWYG-Authoring für Edge Delivery Services
-
-WYSIWYG-Authoring bietet WYSIWYG-Schnittstellen (universeller Editor und adaptiver Forms-Editor) zum Erstellen und Veröffentlichen adaptiver Formulare in Edge Delivery Services. WYSIWYG Authoring bietet alle Funktionen [Dokumentenbasierten Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features) sowie eine Vielzahl zusätzlicher Funktionen:
-
-* Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
-* Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
-* WYSIWYG-Bearbeitungserlebnis für einfache Formularerstellung und -visualisierung.
-* Dokument der Datensatzfunktionalität zum Erstellen fälschungssicherer Archive übermittelter Daten.
-* Integration in Adobe Sign für elektronische Signaturen.
-* Integration in verschiedene Datenquellen zum Vorausfüllen von Formularen und zum Übermitteln von Daten.
-* Formulardatenmodell (FDM) zum Definieren der Datenstruktur und der Interaktionen mit verschiedenen Datenquellen.
-* Möglichkeit zur Auswahl aus mehreren Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen, einschließlich des Übermittelns von Daten an Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics und viele mehr Datenquellen.
-
-
 ### Connector von AEM Forms zu Marketo
 
 Der [Connector von AEM Forms zu Marketo](/help/forms/integrate-form-to-marketo-engage.md) schließt die Lücke zwischen Ihren mit Adobe Experience Manager (AEM) erstellten Web-Formularen (adaptiven Forms) und Ihrer Marketing-Automatisierungsplattform, Marketo.
@@ -138,7 +123,7 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 

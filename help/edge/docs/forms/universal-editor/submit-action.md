@@ -4,14 +4,52 @@ description: Konfigurieren Sie Übermittlungsaktionen für ein adaptives Formula
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 79%
 
 ---
 
 # Übermittlungsaktion für adaptive Formulare
+
+## Überblick
+
+Die Formularübermittlung ist der entscheidende letzte Schritt auf der Benutzer-Journey. Dort werden die erfassten Daten verarbeitet und Aktionen durchgeführt. Dieses Dokument enthält eine umfassende Anleitung zum Konfigurieren und Verwalten von Übermittlungsaktionen für adaptive Forms im universellen Editor.
+
+### Lerninhalte
+
+Am Ende dieses Dokuments erfahren Sie, wie Sie:
+
+* Konfigurieren verschiedener Arten von Übermittlungsaktionen für Ihre Formulare
+* Einrichten von REST-Endpunktübermittlungen für die Integration mit externen Systemen
+* Konfigurieren von E-Mail-Sendungen für Formularantworten
+* Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Geschäftsanforderungen
+* Formularvalidierung und Fehlerszenarien bei der Übermittlung handhaben
+
+### Zielgruppe
+
+Dieses Handbuch wurde für folgende Zwecke entwickelt:
+
+* **Formularentwickler** Implementieren der Übermittlungslogik
+* **Systemintegratoren** Verbinden von Formularen mit Backend-Systemen
+* **Geschäftsanalysten** Definieren von Formular-Workflows
+* **Technische Architekten** Entwerfen von Formularübermittlungsprozessen
+
+### Verfügbare Übermittlungsaktionen
+
+Der universelle Editor bietet zwei primäre Typen von Übermittlungsaktionen:
+
+1. **An REST-Endpunkt übermitteln** * Formulardaten an API-Endpunkte senden
+2. **E-Mail senden** * Formularantworten per E-Mail versenden
+
+### Voraussetzungen
+
+Bevor Sie Übermittlungsaktionen konfigurieren, stellen Sie Folgendes sicher:
+
+* Zugriff auf den universellen Editor
+* Ordnungsgemäße Berechtigungen für die Formularkonfiguration
+* Erläuterung des Zielübermittlungsendpunkts oder der E-Mail-Konfiguration
 
 Eine Übermittlungsaktion gibt das Ziel für die Daten an, die über ein adaptives Formular erfasst werden. Der Übermittlungsprozess beginnt, wenn die Benutzenden im Formular auf die Schaltfläche **[!UICONTROL Senden]** klicken. AEM Forms bietet zwei Arten von Übermittlungsaktionen, die unten beschrieben werden, und ermöglicht es Ihnen, benutzerdefinierte Übermittlungsaktionen zu erstellen und zu verwenden, die Ihre spezifischen Anforderungen erfüllen. Vordefinierte Übermittlungsaktionen:
 
@@ -42,7 +80,7 @@ So konfigurieren Sie einen REST-Endpunkt:
 1. Geben Sie die URL des REST-Endpunkts an.
 1. Sie können auch **POST-Anforderungen aktivieren** und eine URL eingeben, um die Anforderung zu veröffentlichen.
 
-![Aktivieren einer POST-Anforderung für adaptive Formulare](/help/forms/assets/enable-post-request-ue.png)
+![Screenshot des Bedienfelds für den universellen Editor mit den REST-Endpunktkonfigurationsfeldern, einschließlich URL-Eingabe und Umschalter „POST-Anfrage aktivieren“ für die Formularübermittlung](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ So konfigurieren Sie für die Übermittlung Ihres Formulars eine Übermittlungsa
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 

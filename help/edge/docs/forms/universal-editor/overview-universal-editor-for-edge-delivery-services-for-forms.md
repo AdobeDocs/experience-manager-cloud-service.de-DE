@@ -4,17 +4,17 @@ description: Verwenden Sie den universellen Editor für Edge Delivery Services f
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 97%
+source-wordcount: '1049'
+ht-degree: 99%
 
 ---
 
 
 # Universeller Editor für Edge Delivery Services for Forms
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
+<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Namen des Repositorys von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
 
 Der universelle Editor revolutioniert die Formularerstellung für Adobe Edge Delivery Services, indem er eine einfache, visuelle und intuitive WYSIWYG-Benutzeroberfläche (What You See Is What You Get) bereitstellt. Er wurde für Personen, die Inhalte und Formulare erstellen, entwickelt und vereinfacht die herkömmlichen komplexen Formularerstellungsprozesse, sodass er auch von Benutzenden ohne technischen Hintergrund verwendet werden kann.
 
@@ -45,7 +45,7 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
 
 | ![Analyse und Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Formularfragmente](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Datenbindung](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analyse und Tracking**](https://www.aem.live/developer/martech-integration) | **Formularfragmente** (in Kürze verfügbar) | **Datenbindung** (in Kürze verfügbar) |
+| [**Analyse und Tracking**](https://www.aem.live/developer/martech-integration) | **Formularfragmente** (in Kürze verfügbar) | [**Datenbindung**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
 | Verschaffen Sie sich mit der integrierten Analyse- und Tracking-Funktion Erkenntnisse zum Benutzerverhalten sowie zu Formularinteraktionen und Übermittlungsraten, um eine datengesteuerte Formularoptimierung zu ermöglichen. | Formularfragmente ermöglichen die Wiederverwendbarkeit, indem häufig verwendete Abschnitte einmal erstellt und in mehreren Formularen wiederverwendet werden können. Dies sorgt für Konsistenz und reduziert den Wartungsaufwand. | Die Datenbindung ermöglicht direkte Verbindungen zwischen Formularfeldern und Backend-Datenquellen und unterstützt Echtzeitaktualisierungen und erweiterte Datenzuordnungen. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Einbetten von Formularen](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Danksagungskonfiguration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Onboarding
 
-Um den universellen Editor und seine erweiterten Funktionen wie den Regeleditor zu aktivieren, senden Sie eine E-Mail mit Ihrer offiziellen E-Mail-ID an aem-forms-ea@adobe.com. Das Team von Adobe unterstützt Sie dabei, Ihre Formularerstellung zu transformieren.
+<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
 
 ## Häufig gestellte Fragen (FAQ)
 
