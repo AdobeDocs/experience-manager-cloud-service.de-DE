@@ -3,10 +3,10 @@ title: Anwendung zum Anpassen des Asset-Wählers
 description: Verwenden Sie Funktionen zum Anpassen des Asset-Wählers in Ihrer Anwendung.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '1246'
-ht-degree: 100%
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+workflow-type: tm+mt
+source-wordcount: '1261'
+ht-degree: 97%
 
 ---
 
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## Hochladen in den Asset-Wähler {#upload-in-asset-selector}
 
-Sie können Dateien oder Ordner aus Ihrem lokalen Dateisystem in den Asset-Wähler hochladen. Um Dateien mit dem lokalen Dateisystem hochzuladen, müssen Sie im Allgemeinen eine Upload-Funktion verwenden, die von einer Mikro-Frontend-Anwendung des Asset-Wählers bereitgestellt wird. Zu den verschiedenen Code-Snippets, die zum Aufrufen des Uploads im Asset-Wähler erforderlich sind, gehören:
+Sie können Dateien oder Ordner aus Ihrem lokalen Dateisystem in den Asset-Wähler hochladen. Um Dateien mit dem lokalen Dateisystem hochzuladen, müssen Sie im Allgemeinen eine Upload-Funktion verwenden, die von einer Mikro-Frontend-Anwendung des Asset-Wählers bereitgestellt wird. Die `upload` Verschiedenen Codeausschnitte, die zum Aufrufen von Upload in der Asset-Auswahl erforderlich sind, umfassen:
 
 * [Code-Snippet für einfache Upload-Formulare](#basic-upload)
+* [Konfiguration hochladen](#upload-config)
 * [Hochladen mit Metadaten](#upload-with-metadata)
 * [Benutzerdefinierter Upload](#customized-upload)
 * [Hochladen mit Drittanbieterquellen](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### Konfiguration hochladen {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*Weitere Eigenschaften umfassen `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Weitere Informationen finden [ unter ](#asset-selector-properties.md)Asset-Wählereigenschaften).
 
 ### Hochladen mit Metadaten {#upload-with-metadata}
 

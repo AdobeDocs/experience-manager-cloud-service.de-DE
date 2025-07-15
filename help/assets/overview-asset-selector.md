@@ -3,8 +3,8 @@ title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellungen von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: a57bcc24798dbb3acd3d19526848c4dd9adf3d1f
+workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 100%
 
@@ -202,7 +202,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -230,7 +230,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <p>
         <em>Entdecken Sie die Funktionen zum Integrieren des Asset-Wählers in Adobe-fremde Anwendungen.</em>
         </p>
-    </td>
+    </td>   
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Grafik zum Integrieren des Asset-Wählers"><br/>
 <a href="integrate-asset-selector-dynamic-media-open-api.md">Integrieren des Asset-Wählers in Dynamic Media-OpenAPIs</a>

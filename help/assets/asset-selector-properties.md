@@ -3,10 +3,10 @@ title: Eigenschaften des Asset-Wählers für die Anpassung
 description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellung von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '1357'
-ht-degree: 100%
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 93%
 
 ---
 
@@ -47,16 +47,16 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *filterRepoList* | Funktion | Nein |  | Sie können die Rückruffunktion `filterRepoList` verwenden, die das Experience Manager-Repository aufruft und eine gefilterte Liste von Repositorys zurückgibt. |
 | *expiryOptions* | Funktion | | | Sie können eine der beiden folgenden Eigenschaften verwenden: **getExpiryStatus**, was den Status eines abgelaufenen Assets angibt. Die Funktion gibt je nach dem Ablaufdatum eines von Ihnen angegebenen Assets `EXPIRED`, `EXPIRING_SOON` oder `NOT_EXPIRED` zurück. Siehe [Anpassen abgelaufener Assets](/help/assets/asset-selector-customization.md#customize-expired-assets). Darüber hinaus können Sie die Option **allowSelectionAndDrag** verwenden, in der der Wert der Funktion entweder `true` oder `false` sein kann. Wenn der Wert auf `false` festgelegt ist, kann das abgelaufene Asset weder ausgewählt noch auf die Arbeitsfläche gezogen werden. |
 | *showToast* | | Nein | | Dadurch kann der Asset-Wähler eine benutzerdefinierte Popup-Meldung für das abgelaufene Asset anzeigen. |
-| *metadataSchema* | Array | Nein | | Fügen Sie ein Array von Feldern hinzu, die Sie bereitstellen, um Metadaten von der Benutzerin oder dem Benutzer zu erfassen. Mit dieser Eigenschaft können Sie auch versteckte Metadaten verwenden, die einem Asset automatisch zugewiesen werden, für die Benutzerin bzw. den Benutzer jedoch nicht sichtbar sind. |
-| *onMetadataFormChange* | Rückruffunktion | Nein | | Sie besteht aus `property` und `value`. `Property` entspricht der *mapToProperty* des Felds, das vom *metadataSchema* übergeben wird, dessen Wert aktualisiert wird. Dahingegen entspricht`value` dem neuen Wert und wird als Eingabe bereitgestellt. |
-| *targetUploadPath* | Zeichenfolge |  | `"/content/dam"` | Der Ziel-Upload-Pfad für die Dateien, der standardmäßig auf den Stamm des Assets-Repositorys festgelegt ist. |
-| *hideUploadButton* | Boolesch | | False | Gibt an, ob die interne Hochladen-Schaltfläche ausgeblendet werden soll oder nicht. |
-| *onUploadStart* | Funktion | Nein |  | Es handelt sich dabei um eine Rückruffunktion, mit der die Upload-Quelle zwischen Dropbox, OneDrive oder lokalem Verzeichnis weitergegeben wird. Die Syntax lautet `(uploadInfo: UploadInfo) => void` |
-| *importSettings* | Funktion | | | Ermöglicht die Unterstützung des Imports von Assets aus Drittanbieterquellen. `sourceTypes` verwendet ein Array der Importquellen, die Sie aktivieren möchten. Die unterstützten Quellen sind Onedrive und Dropbox. Die Syntax lautet `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
-| *onUploadComplete* | Funktion | Nein | | Es handelt sich dabei um eine Rückruffunktion, mit der der Status des Uploads („Erfolgreich“, „Fehlgeschlagen“ oder „Duplikat“) weitergegeben wird. Die Syntax lautet `(uploadStats: UploadStats) => void` |
-| *onFilesChange* | Funktion | Nein | | Es handelt sich dabei um eine Rückruffunktion, mit der das Verhalten des Uploads angezeigt wird, wenn eine Datei geändert wird. Sie gibt das neue Array der Dateien, die zum Hochladen ausstehen, und den Quelltyp des Uploads weiter. Der Quelltyp kann im Fehlerfall null sein. Die Syntax lautet `(newFiles: File[], uploadType: UploadType) => void` |
-| *uploadingPlaceholder* | Zeichenfolge | | | Es handelt sich dabei um ein Platzhalterbild, das das Metadatenformular ersetzt, wenn der Upload des Assets initiiert wird. Die Syntax lautet `{ href: string; alt: string; } ` |
-| *uploadConfig* | Objekt | | | Es handelt sich um ein Objekt, das benutzerdefinierte Konfigurationen für den Upload enthält. |
+| *uploadConfig* | Objekt | | | Es ist ein -Objekt, das eine benutzerdefinierte Konfiguration für den Upload enthält. Siehe [Upload-Konfiguration](#asset-selector-customization.md#upload-config) für die Benutzerfreundlichkeit. |
+| *metadataSchema* | Array | Nein | | Diese Eigenschaft ist unter `uploadConfig` Eigenschaft verschachtelt. Fügen Sie ein Array von Feldern hinzu, die Sie bereitstellen, um Metadaten von der Benutzerin oder dem Benutzer zu erfassen. Mit dieser Eigenschaft können Sie auch versteckte Metadaten verwenden, die einem Asset automatisch zugewiesen werden, für die Benutzerin bzw. den Benutzer jedoch nicht sichtbar sind. |
+| *onMetadataFormChange* | Rückruffunktion | Nein | | Diese Eigenschaft ist unter `uploadConfig` Eigenschaft verschachtelt. Sie besteht aus `property` und `value`. `Property` entspricht der *mapToProperty* des Felds, das vom *metadataSchema* übergeben wird, dessen Wert aktualisiert wird. Dahingegen entspricht`value` dem neuen Wert und wird als Eingabe bereitgestellt. |
+| *targetUploadPath* | Zeichenfolge |  | `"/content/dam"` | Diese Eigenschaft ist unter `uploadConfig` Eigenschaft verschachtelt. Der Ziel-Upload-Pfad für die Dateien, der standardmäßig auf den Stamm des Assets-Repositorys festgelegt ist. |
+| *hideUploadButton* | Boolesch | | False | Dadurch wird sichergestellt, ob die interne Upload-Schaltfläche ausgeblendet werden soll oder nicht. Diese Eigenschaft ist unter `uploadConfig` Eigenschaft verschachtelt. |
+| *onUploadStart* | Funktion | Nein |  | Es handelt sich dabei um eine Rückruffunktion, mit der die Upload-Quelle zwischen Dropbox, OneDrive oder lokalem Verzeichnis weitergegeben wird. Die Syntax ist `(uploadInfo: UploadInfo) => void`. Diese Eigenschaft ist unter `uploadConfig` Eigenschaft verschachtelt. |
+| *importSettings* | Funktion | | | Ermöglicht die Unterstützung des Imports von Assets aus Drittanbieterquellen. `sourceTypes` verwendet ein Array der Importquellen, die Sie aktivieren möchten. Die unterstützten Quellen sind Onedrive und Dropbox. Die Syntax ist `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`. Darüber hinaus ist diese Eigenschaft unter `uploadConfig` Eigenschaft verschachtelt. |
+| *onUploadComplete* | Funktion | Nein | | Es handelt sich dabei um eine Rückruffunktion, mit der der Status des Uploads („Erfolgreich“, „Fehlgeschlagen“ oder „Duplikat“) weitergegeben wird. Die Syntax ist `(uploadStats: UploadStats) => void`. Darüber hinaus ist diese Eigenschaft unter `uploadConfig` Eigenschaft verschachtelt. |
+| *onFilesChange* | Funktion | Nein | | Diese Eigenschaft ist unter `uploadConfig` Eigenschaft verschachtelt. Es handelt sich dabei um eine Rückruffunktion, mit der das Verhalten des Uploads angezeigt wird, wenn eine Datei geändert wird. Sie gibt das neue Array der Dateien, die zum Hochladen ausstehen, und den Quelltyp des Uploads weiter. Der Quelltyp kann im Fehlerfall null sein. Die Syntax lautet `(newFiles: File[], uploadType: UploadType) => void` |
+| *uploadingPlaceholder* | Zeichenfolge | | | Es handelt sich dabei um ein Platzhalterbild, das das Metadatenformular ersetzt, wenn der Upload des Assets initiiert wird. Die Syntax ist `{ href: string; alt: string; }`. Außerdem ist diese Eigenschaft unter `uploadConfig` Eigenschaft verschachtelt. |
 | *featureSet* | Array | Zeichenfolge | | Die Eigenschaft `featureSet:[ ]` wird verwendet, um eine bestimmte Funktion in der Anwendung „Asset-Wähler“ zu aktivieren oder zu deaktivieren. Um die Komponente oder eine Funktion zu aktivieren, können Sie einen Zeichenfolgewert im Array weitergeben – oder das Array leer lassen, um diese Komponente zu deaktivieren. Wenn Sie beispielsweise die Upload-Funktion im Asset-Wähler aktivieren möchten, verwenden Sie die Syntax `featureSet:[0:"upload"]`. Ebenso können Sie `featureSet:[0:"collections"]` verwenden, um Sammlungen im Asset-Wähler zu aktivieren. Außerdem können Sie `featureSet:[0:"detail-panel"]` verwenden, um [Detailbereich](overview-asset-selector.md#asset-details-and-metadata) eines Assets zu aktivieren. Um diese Funktionen zusammen zu verwenden, lautet die Syntax `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--
