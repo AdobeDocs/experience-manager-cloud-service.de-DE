@@ -4,11 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -37,7 +39,7 @@ Im Folgenden finden Sie die Voraussetzungen für die Verwendung des Forms-Überm
 
 ## Konfigurieren des Forms-Sendedienstes
 
-Erstellen Sie ein neues AEM-Projekt, das mit dem adaptiven Forms-Block konfiguriert ist. Weitere Informationen zum Erstellen [ neuen AEM-Projekts finden Sie ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) Artikel Erste Schritte - Entwickler-Tutorial . Aktualisieren Sie die `fstab.yaml` in Ihrem Projekt. Ersetzen Sie den vorhandenen Verweis durch den Pfad zu dem Ordner, den Sie für die `forms@adobe.com` freigegeben haben.
+Erstellen Sie ein neues AEM-Projekt, das mit dem adaptiven Forms-Block konfiguriert ist. Weitere Informationen zum Erstellen [ neuen AEM-Projekts finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) Artikel Erste Schritte - Entwickler-Tutorial . Aktualisieren Sie die `fstab.yaml` in Ihrem Projekt. Ersetzen Sie den vorhandenen Verweis durch den Pfad zu dem Ordner, den Sie für die `forms@adobe.com` freigegeben haben.
 
 Sie können [den Forms-Übermittlungsdienst manuell konfigurieren](#configuring-the-forms-submission-service-manually) oder [den Forms-Übermittlungsdienst mithilfe der API konfigurieren](#configuring-the-forms-submission-service-using-api).
 
@@ -47,7 +49,7 @@ Sie können [den Forms-Übermittlungsdienst manuell konfigurieren](#configuring-
 
 #### &#x200B;1. Erstellen eines Formulars mit einer Formulardefinition
 
-Erstellen Sie ein Formular mit Google Sheets oder Microsoft Excel. Um zu erfahren, wie Sie ein Formular mithilfe einer Formulardefinition in Microsoft Excel oder Google Sheets erstellen, klicken [ hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Erstellen Sie ein Formular mit Google Sheets oder Microsoft Excel. Um zu erfahren, wie Sie ein Formular mithilfe einer Formulardefinition in Microsoft Excel oder Google Sheets erstellen, klicken [ hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 Im folgenden Screenshot wird die Formulardefinition angezeigt, die zum Erstellen eines Formulars verwendet wird:
 
@@ -55,11 +57,11 @@ Im folgenden Screenshot wird die Formulardefinition angezeigt, die zum Erstellen
 
 >[!IMPORTANT]
 >
->**Das Blatt, in dem das Formular erstellt wurde, unterliegt Einschränkungen hinsichtlich dessen, welchen Namen es haben kann. Nur `helix-default` und `shared-aem` können als Tabellennamen verwendet werden.**
+>**Das Blatt, in dem das Formular erstellt wird, unterliegt Einschränkungen in Bezug auf seinen Namen. Nur `helix-default` und `shared-aem` können als Blattnamen verwendet werden.**
 
 #### &#x200B;2. Aktivieren Sie das Arbeitsblatt, um Daten zu akzeptieren.
 
-Nachdem Sie das Formular erstellt und in der Vorschau angezeigt haben, aktivieren Sie die entsprechende Tabelle, um mit dem Empfang von Daten zu beginnen. Fügen Sie wie `incoming` ein neues Blatt hinzu. Sie können [manuell aktivieren, damit die Tabelle Daten akzeptiert](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+Nachdem Sie das Formular erstellt und in der Vorschau angezeigt haben, aktivieren Sie die entsprechende Tabelle, um mit dem Empfang von Daten zu beginnen. Fügen Sie wie `incoming` ein neues Blatt hinzu. Sie können [manuell aktivieren, damit die Tabelle Daten akzeptiert](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Eingehendes Blatt](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -157,8 +159,8 @@ Führen Sie beispielsweise den folgenden Befehl nach dem Ersetzen im Terminal od
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header „Content-Type: application/json“ \
     —header „x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &#39;&lbrace;
-    „data“: &lbrace;
+    —data &#39;{
+    „data“: {
     „startDate“: „2025-01-10“,
     „endDate“: „2025-01-25“,
     „destination“: „Australia“,
@@ -169,8 +171,8 @@ Führen Sie beispielsweise den folgenden Befehl nach dem Ersetzen im Terminal od
     „Alter“: „35“,
     „Abonnieren“: null,
     „EMail“: &quot;mary@gmail.com&quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
@@ -181,7 +183,7 @@ Führen Sie beispielsweise den folgenden Befehl nach dem Ersetzen im Terminal od
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
     —Header „Content-Type: application/json“ ^
     —Header „x-adobe-routing: tier=live,bucket=main—[site/repository]—[organisation]&quot; ^
-    —data &quot;&lbrace;\„data\&quot;: {\„startDate\&quot;: \„2025-01-10\&quot;, \„endDate\&quot;: \„2025-01-25\&quot;, \„destination\&quot;: \„Australia\&quot;, \„class\&quot; \„Erste Klasse\&quot;, \„budget\&quot;: \„2000\&quot;, \„amount\&quot;: \„1000000\&quot;, \„name\&quot;: \„Joe\&quot;, \„age\&quot;: \„35\&quot;, \„subscribe\&quot;: null, \„email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
+    —data &quot;{\„data\&quot;: {\„startDate\&quot;: \„2025-01-10\&quot;, \„endDate\&quot;: \„2025-01-25\&quot;, \„destination\&quot;: \„Australia\&quot;, \„class\&quot; \„Erste Klasse\&quot;, \„budget\&quot;: \„2000\&quot;, \„amount\&quot;: \„1000000\&quot;, \„name\&quot;: \„Joe\&quot;, \„age\&quot;: \„35\&quot;, \„subscribe\&quot;: null, \„email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 

@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '6362'
 ht-degree: 99%
@@ -1075,7 +1075,6 @@ ht-degree: 99%
       + [Überblick](/help/edge/docs/forms/overview.md)
       + [Konfigurieren der Übermittlung für Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Häufig gestellte Fragen](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-      + [Best Practices für die Erstellung von Formularen](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
       + WYSIWYG-Authoring {#universal-editor}
          + [Einführung in den universellen Editor von Forms für Edge Delivery Services – vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Erste Schritte beim Erstellen mit dem universellen Editor – Schrittweises Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1110,6 +1109,7 @@ ht-degree: 99%
          + [Schützen Ihrer Formulare: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/recaptacha-forms.md)
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
          + [Überwachen der Formularleistung: Handbücher zur betrieblichen Telemetrie](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+   + [Best Practices für die Erstellung von Formularen](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Edge Delivery-Ressourcen {#resources}
       + Sidekick {#sidekick}
          + [Verwenden des Sidekicks](/help/edge/docs/sidekick.md)
