@@ -57,6 +57,7 @@ Um die sichere Formularübermittlung zu gewährleisten, müssen Sie einen **Refe
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
+
 **Für die lokale Entwicklung:**
 
 ```js
@@ -79,6 +80,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
+
 Informationen zur lokalen Entwicklung finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter), um CORS über die **Host-URL Ihrer Entwicklungsbenutzeroberfläche** zu aktivieren.
 
 ### Konfigurieren des Referrer-Filters
